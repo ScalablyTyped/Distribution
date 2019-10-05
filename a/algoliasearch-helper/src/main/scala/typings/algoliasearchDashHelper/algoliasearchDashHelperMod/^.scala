@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("algoliasearch-helper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val version: String = js.native
   /**
     * The algoliasearchHelper module is the function that will let its
     * contains everything needed to use the Algoliasearch

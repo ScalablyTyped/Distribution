@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/eachWeekendOfInterval", JSImport.Namespace)
 @js.native
 object esmEachWeekendOfIntervalMod extends js.Object {
-  def default(interval: Interval): js.Array[Date] = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(interval: Interval): js.Array[Date] = js.native
+  }
+  
 }
 

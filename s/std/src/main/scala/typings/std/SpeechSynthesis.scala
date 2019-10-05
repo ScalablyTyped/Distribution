@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.voiceschanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,9 +51,9 @@ trait SpeechSynthesis extends EventTarget {
 
 @JSGlobal("SpeechSynthesis")
 @js.native
-class SpeechSynthesisCls () extends SpeechSynthesis
-
-@JSGlobal("SpeechSynthesis")
-@js.native
 object SpeechSynthesis extends Instantiable0[SpeechSynthesis]
+
+@JSGlobal("speechSynthesis")
+@js.native
+object speechSynthesis extends TopLevel[SpeechSynthesis]
 

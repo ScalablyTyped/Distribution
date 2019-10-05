@@ -1,8 +1,8 @@
 package typings.arangodb
 
-import typings.arangodb.FoxxNs.Endpoint
-import typings.arangodb.FoxxNs.Handler
-import typings.arangodb.FoxxNs.SimpleMiddleware
+import typings.arangodb.Foxx.Endpoint
+import typings.arangodb.Foxx.Handler
+import typings.arangodb.Foxx.SimpleMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

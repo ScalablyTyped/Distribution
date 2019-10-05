@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashGoogleDashMapsDashLoaderMod {
   import typings.react.reactMod.Component
-  import typings.reactDashGoogleDashMapsDashLoader.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
+  import typings.reactDashGoogleDashMapsDashLoader.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoader.Props
 
   type ReactGoogleMapsLoader = Component[Props, js.Object, js.Any]
 }

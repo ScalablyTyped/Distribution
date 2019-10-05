@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object autobahnMod {
-  import typings.when.WhenNs.Promise
+  import typings.when.When.Promise
 
   // Workaround to get intellisense on type unions of 'literals' | string. 
   // See https://github.com/Microsoft/TypeScript/issues/29729

@@ -15,9 +15,9 @@ trait DescribeScheduleRequest extends js.Object {
 
 object DescribeScheduleRequest {
   @scala.inline
-  def apply(ChannelId: __string, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: __string = null): DescribeScheduleRequest = {
+  def apply(ChannelId: __string, MaxResults: Int | Double = null, NextToken: __string = null): DescribeScheduleRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeScheduleRequest]
   }

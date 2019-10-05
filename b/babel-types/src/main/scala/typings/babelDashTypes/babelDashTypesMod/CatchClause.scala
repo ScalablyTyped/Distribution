@@ -35,3 +35,11 @@ object CatchClause {
   }
 }
 
+@JSImport("babel-types", "catchClause")
+@js.native
+object catchClause extends js.Object {
+  def apply(): CatchClause = js.native
+  def apply(param: Identifier): CatchClause = js.native
+  def apply(param: Identifier, body: BlockStatement): CatchClause = js.native
+}
+

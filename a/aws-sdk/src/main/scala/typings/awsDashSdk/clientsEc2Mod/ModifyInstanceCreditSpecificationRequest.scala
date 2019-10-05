@@ -24,7 +24,7 @@ object ModifyInstanceCreditSpecificationRequest {
   def apply(
     InstanceCreditSpecifications: InstanceCreditSpecificationListRequest,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyInstanceCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(InstanceCreditSpecifications = InstanceCreditSpecifications)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)

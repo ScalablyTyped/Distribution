@@ -40,3 +40,10 @@ object TSTypeOperator {
   }
 }
 
+@JSImport("@babel/types", "tsTypeOperator")
+@js.native
+object tsTypeOperator extends js.Object {
+  def apply(typeAnnotation: TSType): TSTypeOperator = js.native
+  def apply(typeAnnotation: TSType, operator: String): TSTypeOperator = js.native
+}
+

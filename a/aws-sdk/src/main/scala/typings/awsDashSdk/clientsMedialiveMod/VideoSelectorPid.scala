@@ -13,9 +13,9 @@ trait VideoSelectorPid extends js.Object {
 
 object VideoSelectorPid {
   @scala.inline
-  def apply(Pid: js.UndefOr[__integerMin0Max8191] = js.undefined): VideoSelectorPid = {
+  def apply(Pid: Int | Double = null): VideoSelectorPid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid)
+    if (Pid != null) __obj.updateDynamic("Pid")(Pid.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelectorPid]
   }
 }

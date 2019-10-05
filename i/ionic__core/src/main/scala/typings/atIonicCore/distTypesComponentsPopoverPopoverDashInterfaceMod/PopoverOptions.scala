@@ -4,6 +4,7 @@ import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
 import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.std.Event
 import scala.scalajs.js
@@ -36,11 +37,11 @@ object PopoverOptions {
     componentProps: ComponentProps[T] = null,
     cssClass: String | js.Array[String] = null,
     delegate: FrameworkDelegate = null,
-    enterAnimation: AnimationBuilder = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     event: Event = null,
     id: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: AnimationBuilder = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: Mode = null,
     showBackdrop: js.UndefOr[Boolean] = js.undefined,
     translucent: js.UndefOr[Boolean] = js.undefined
@@ -51,11 +52,11 @@ object PopoverOptions {
     if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate)
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (event != null) __obj.updateDynamic("event")(event)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose)
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop)
     if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)

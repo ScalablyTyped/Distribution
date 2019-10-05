@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.ArrayPatternKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.ObjectPatternKind
 import typings.astDashTypes.genKindsMod.RestElementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSConstructorType
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSConstructorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

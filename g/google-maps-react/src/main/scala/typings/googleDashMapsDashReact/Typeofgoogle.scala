@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofgoogle extends js.Object {
-  val mapsNs: Typeofmaps
+  val maps: Typeofmaps
 }
 
 object Typeofgoogle {
   @scala.inline
-  def apply(mapsNs: Typeofmaps): Typeofgoogle = {
-    val __obj = js.Dynamic.literal(mapsNs = mapsNs)
+  def apply(maps: Typeofmaps): Typeofgoogle = {
+    val __obj = js.Dynamic.literal(maps = maps)
   
     __obj.asInstanceOf[Typeofgoogle]
   }

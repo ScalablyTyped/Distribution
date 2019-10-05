@@ -1,5 +1,7 @@
 package typings.atBlueprintjsSelect.libEsmCommonItemRendererMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -19,12 +21,12 @@ trait IItemRendererProps extends js.Object {
 object IItemRendererProps {
   @scala.inline
   def apply(
-    handleClick: MouseEventHandler[HTMLElement],
+    handleClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
     modifiers: IItemModifiers,
     query: String,
     index: Int | Double = null
   ): IItemRendererProps = {
-    val __obj = js.Dynamic.literal(handleClick = handleClick, modifiers = modifiers, query = query)
+    val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction1(handleClick), modifiers = modifiers, query = query)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemRendererProps]
   }

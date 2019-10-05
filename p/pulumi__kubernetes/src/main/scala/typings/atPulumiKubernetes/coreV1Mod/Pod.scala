@@ -19,10 +19,10 @@ class Pod protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Pod) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.Pod) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Pod,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.Pod,
     opts: CustomResourceOptions
   ) = this()
 }

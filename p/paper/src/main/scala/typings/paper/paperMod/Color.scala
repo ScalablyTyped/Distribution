@@ -1,8 +1,8 @@
 package typings.paper.paperMod
 
-import typings.paper.paperNs.IGradientColor
-import typings.paper.paperNs.IHSBColor
-import typings.paper.paperNs.IHSLColor
+import typings.paper.paper.IGradientColor
+import typings.paper.paper.IHSBColor
+import typings.paper.paper.IHSLColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Color")
 @js.native
 class Color protected ()
-  extends typings.paper.paperNs.Color {
+  extends typings.paper.paper.Color {
   /**
     * Creates a RGB Color object from CSS string
     * @param css - the RGB color in hex, i.e. #000000, rbga, i.e. rgba(0,0,0,0) or named color.
@@ -38,9 +38,9 @@ class Color protected ()
     * @param highlight [optional] -
     */
   def this(
-    color: typings.paper.paperNs.Gradient,
-    origin: typings.paper.paperNs.Point,
-    destination: typings.paper.paperNs.Point
+    color: typings.paper.paper.Gradient,
+    origin: typings.paper.paper.Point,
+    destination: typings.paper.paper.Point
   ) = this()
   /**
     * Creates a RGB Color object.
@@ -51,10 +51,10 @@ class Color protected ()
     */
   def this(red: Double, green: Double, blue: Double) = this()
   def this(
-    color: typings.paper.paperNs.Gradient,
-    origin: typings.paper.paperNs.Point,
-    destination: typings.paper.paperNs.Point,
-    highlight: typings.paper.paperNs.Point
+    color: typings.paper.paper.Gradient,
+    origin: typings.paper.paper.Point,
+    destination: typings.paper.paper.Point,
+    highlight: typings.paper.paper.Point
   ) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
 }

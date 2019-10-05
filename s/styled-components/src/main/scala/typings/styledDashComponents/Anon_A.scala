@@ -11,14 +11,14 @@ trait Anon_A extends js.Object {
     * String types need to be cast to themselves to become literal types (as={'a' as 'a'}).
     */
   var as: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
 }
 
 object Anon_A {
   @scala.inline
   def apply(
-    as: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 176 */ js.Any = null
+    as: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
   ): Anon_A = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as)

@@ -66,9 +66,9 @@ trait HostReservation extends js.Object {
 object HostReservation {
   @scala.inline
   def apply(
-    Count: js.UndefOr[Integer] = js.undefined,
+    Count: Int | scala.Double = null,
     CurrencyCode: CurrencyCodeValues = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
+    Duration: Int | scala.Double = null,
     End: DateTime = null,
     HostIdSet: ResponseHostIdSet = null,
     HostReservationId: String = null,
@@ -82,9 +82,9 @@ object HostReservation {
     UpfrontPrice: String = null
   ): HostReservation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (End != null) __obj.updateDynamic("End")(End)
     if (HostIdSet != null) __obj.updateDynamic("HostIdSet")(HostIdSet)
     if (HostReservationId != null) __obj.updateDynamic("HostReservationId")(HostReservationId)

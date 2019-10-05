@@ -1,6 +1,6 @@
 package typings.atPhosphorDatagrid.atPhosphorDatagridMod
 
-import typings.atPhosphorDatagrid.libRenderermapMod.RendererMapNs.IOptions
+import typings.atPhosphorDatagrid.libRenderermapMod.RendererMap.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -133,9 +133,8 @@ object pureMod extends js.Object {
   def waitForElement[T](callback: js.Function0[T], options: WaitForElementOptions): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: js.Function0[T], options: Anon_Container): js.Promise[T] = js.native
-  @JSName("queries")
   @js.native
-  object queriesNs extends js.Object {
+  object queries extends js.Object {
     val findAllByAltText: FindAllByBoundAttribute = js.native
     val findAllByDisplayValue: FindAllByBoundAttribute = js.native
     val findAllByLabelText: FindAllByText = js.native
@@ -186,9 +185,8 @@ object pureMod extends js.Object {
     val queryByTitle: QueryByBoundAttribute = js.native
   }
   
-  @JSName("queryHelpers")
   @js.native
-  object queryHelpersNs extends js.Object {
+  object queryHelpers extends js.Object {
     val queryAllByAttribute: AllByAttribute = js.native
     val queryByAttribute: QueryByAttribute = js.native
     def buildQueries[Arguments /* <: js.Array[_] */](

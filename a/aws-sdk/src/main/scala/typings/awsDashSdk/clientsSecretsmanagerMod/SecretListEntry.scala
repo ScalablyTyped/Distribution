@@ -72,7 +72,7 @@ object SecretListEntry {
     LastRotatedDate: LastRotatedDateType = null,
     Name: SecretNameType = null,
     OwningService: OwningServiceType = null,
-    RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
+    RotationEnabled: js.UndefOr[Boolean] = js.undefined,
     RotationLambdaARN: RotationLambdaARNType = null,
     RotationRules: RotationRulesType = null,
     SecretVersionsToStages: SecretVersionsToStagesMapType = null,

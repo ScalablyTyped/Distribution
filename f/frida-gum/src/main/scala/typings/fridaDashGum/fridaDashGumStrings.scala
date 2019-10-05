@@ -1,6 +1,6 @@
 package typings.fridaDashGum
 
-import typings.fridaDashGum.ObjCNs.ObjectKind
+import typings.fridaDashGum.ObjC.ObjectKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

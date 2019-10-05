@@ -2,6 +2,8 @@ package typings.node.tlsMod
 
 import typings.node.Buffer
 import typings.node.Error
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.node.netMod.Socket
 import typings.std.Uint8Array
@@ -46,7 +48,12 @@ object ConnectionOptions {
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
     host: java.lang.String = null,
     key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    lookup: LookupFunction = null,
+    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* address */ java.lang.String, 
+      /* family */ Double, 
+      Unit
+    ]) => Unit = null,
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
     minVersion: SecureVersion = null,
@@ -80,7 +87,7 @@ object ConnectionOptions {
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
     if (host != null) __obj.updateDynamic("host")(host)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
     if (minDHSize != null) __obj.updateDynamic("minDHSize")(minDHSize.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)

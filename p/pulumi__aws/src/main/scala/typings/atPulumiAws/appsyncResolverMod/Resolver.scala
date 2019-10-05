@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appsyncResolverMod
 
-import typings.atPulumiAws.typesOutputMod.appsyncNs.ResolverPipelineConfig
+import typings.atPulumiAws.typesOutputMod.appsync.ResolverPipelineConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriSupportActionsActionButtonMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionButton
+import typings.arcgisDashJsDashApi.__esri.ActionButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

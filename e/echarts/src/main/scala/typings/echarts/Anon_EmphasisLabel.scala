@@ -12,9 +12,7 @@ trait Anon_EmphasisLabel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.label
     */
-  var label: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
-  ] = js.undefined
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * Line style of edges.
     *
@@ -69,7 +67,7 @@ object Anon_EmphasisLabel {
   @scala.inline
   def apply(
     emphasis: Anon_LabelLineStyle = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     lineStyle: Anon_ColorCurvenessOpacity = null,
     source: String = null,
     symbol: js.Array[_] | String = null,

@@ -28,7 +28,7 @@ object ListBucketAnalyticsConfigurationsOutput {
   def apply(
     AnalyticsConfigurationList: AnalyticsConfigurationList = null,
     ContinuationToken: Token = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     NextContinuationToken: NextToken = null
   ): ListBucketAnalyticsConfigurationsOutput = {
     val __obj = js.Dynamic.literal()

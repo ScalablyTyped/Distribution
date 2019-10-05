@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsR
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -69,7 +70,7 @@ object IDetailsRowCheckProps {
     compact: js.UndefOr[Boolean] = js.undefined,
     isHeader: js.UndefOr[Boolean] = js.undefined,
     isVisible: js.UndefOr[Boolean] = js.undefined,
-    onRenderDetailsCheckbox: IRenderFunction[IDetailsCheckboxProps] = null,
+    onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IDetailsRowCheckStyleProps, IDetailsRowCheckStyles] = null,
     theme: ITheme = null,
@@ -83,7 +84,7 @@ object IDetailsRowCheckProps {
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
     if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(onRenderDetailsCheckbox)
+    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2(onRenderDetailsCheckbox))
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

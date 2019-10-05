@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libCommandlinkerMod.CommandLinkerNs.IOptions
+import typings.atJupyterlabApputils.libCommandlinkerMod.CommandLinker.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

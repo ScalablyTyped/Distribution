@@ -1,5 +1,6 @@
 package typings.atOracleOraclejet.ojbuttonMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
@@ -13,7 +14,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.full
 import typings.atOracleOraclejet.atOracleOraclejetStrings.half
 import typings.atOracleOraclejet.atOracleOraclejetStrings.icons
 import typings.atOracleOraclejet.atOracleOraclejetStrings.outlined
-import typings.atOracleOraclejet.ojbuttonMod.ojButtonNs.ojAction
+import typings.atOracleOraclejet.ojbuttonMod.ojButton.ojAction
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -82,5 +84,11 @@ trait ojButton[SP /* <: ojButtonSettableProperties */] extends baseComponent[SP]
   def setProperty(property: display, value: icons): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojbutton", "ojButton")
+@js.native
+object ojButton extends js.Object {
+  type ojAction = CustomEvent[StringDictionary[js.Any]]
 }
 

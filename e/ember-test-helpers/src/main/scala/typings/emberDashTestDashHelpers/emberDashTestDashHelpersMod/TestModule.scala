@@ -1,7 +1,7 @@
 package typings.emberDashTestDashHelpers.emberDashTestDashHelpersMod
 
-import typings.ember.emberMod.defaultNs.Resolver
-import typings.rsvp.rsvpMod.defaultNs.Promise
+import typings.ember.emberMod.default.Resolver
+import typings.rsvp.rsvpMod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

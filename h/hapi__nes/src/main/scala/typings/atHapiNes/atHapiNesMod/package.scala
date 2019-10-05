@@ -17,11 +17,11 @@ package object atHapiNesMod {
     *          ClientSubscribeFlags)
     */
   type Client = typings.atHapiNes.libClientMod.Client
-  type ClientConnectOptions = typings.atHapiNes.libClientMod.ClientNs.ClientConnectOptions
-  type ClientOptions = typings.atHapiNes.libClientMod.ClientNs.ClientOptions
-  type ClientRequestOptions = typings.atHapiNes.libClientMod.ClientNs.ClientRequestOptions
-  type ClientSubscribeFlags = typings.atHapiNes.libClientMod.ClientNs.ClientSubscribeFlags
-  type Handler = typings.atHapiNes.libClientMod.ClientNs.Handler
+  type ClientConnectOptions = typings.atHapiNes.libClientMod.Client.ClientConnectOptions
+  type ClientOptions = typings.atHapiNes.libClientMod.Client.ClientOptions
+  type ClientRequestOptions = typings.atHapiNes.libClientMod.Client.ClientRequestOptions
+  type ClientSubscribeFlags = typings.atHapiNes.libClientMod.Client.ClientSubscribeFlags
+  type Handler = typings.atHapiNes.libClientMod.Client.Handler
   type ServerOnSubscribe = ServerOnSubscribeWithParams | ServerOnSubscribeWithoutParams
   type ServerOnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ js.Any, js.Promise[js.Any]]
   type ServerOnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, js.Promise[js.Any]]

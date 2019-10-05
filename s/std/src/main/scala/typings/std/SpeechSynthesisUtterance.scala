@@ -241,12 +241,6 @@ trait SpeechSynthesisUtterance extends EventTarget {
 
 @JSGlobal("SpeechSynthesisUtterance")
 @js.native
-class SpeechSynthesisUtteranceCls () extends SpeechSynthesisUtterance {
-  def this(text: java.lang.String) = this()
-}
-
-@JSGlobal("SpeechSynthesisUtterance")
-@js.native
 object SpeechSynthesisUtterance
   extends Instantiable0[SpeechSynthesisUtterance]
      with Instantiable1[/* text */ java.lang.String, SpeechSynthesisUtterance]

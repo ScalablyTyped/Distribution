@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mediapackageChannelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.mediapackageNs.ChannelHlsIngest
+import typings.atPulumiAws.typesOutputMod.mediapackage.ChannelHlsIngest
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

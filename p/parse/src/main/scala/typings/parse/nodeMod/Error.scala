@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "Error")
 @js.native
 class Error protected ()
-  extends typings.parse.ParseNs.Error {
+  extends typings.parse.Parse.Error {
   def this(code: ErrorCode, message: String) = this()
 }
 

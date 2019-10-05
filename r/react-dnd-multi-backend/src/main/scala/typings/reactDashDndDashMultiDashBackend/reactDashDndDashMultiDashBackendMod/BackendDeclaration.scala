@@ -1,6 +1,8 @@
 package typings.reactDashDndDashMultiDashBackend.reactDashDndDashMultiDashBackendMod
 
+import typings.dndDashCore.libInterfacesMod.Backend
 import typings.dndDashCore.libInterfacesMod.BackendFactory
+import typings.dndDashCore.libInterfacesMod.DragDropManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,12 +31,12 @@ trait BackendDeclaration extends js.Object {
 object BackendDeclaration {
   @scala.inline
   def apply(
-    backend: BackendFactory,
+    backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => Backend,
     options: js.Object = null,
     preview: js.UndefOr[Boolean] = js.undefined,
     transition: Transition = null
   ): BackendDeclaration = {
-    val __obj = js.Dynamic.literal(backend = backend)
+    val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
     if (options != null) __obj.updateDynamic("options")(options)
     if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
     if (transition != null) __obj.updateDynamic("transition")(transition)

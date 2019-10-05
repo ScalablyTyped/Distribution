@@ -1,9 +1,9 @@
 package typings.hexo.hexoMod
 
 import typings.hexo.Anon_Args
-import typings.hexo.hexoMod.LocalsNs.Category
-import typings.hexo.hexoMod.LocalsNs.Page
-import typings.hexo.hexoMod.LocalsNs.Tag
+import typings.hexo.hexoMod.Locals.Category
+import typings.hexo.hexoMod.Locals.Page
+import typings.hexo.hexoMod.Locals.Tag
 import typings.underscore.underscoreMod.Dictionary
 import typings.underscore.underscoreMod.List
 import typings.underscore.underscoreMod.TypeOfDictionary
@@ -26,7 +26,7 @@ trait TemplateLocals extends js.Object {
   var config: HexoConfig = js.native
   var env: Anon_Args = js.native
   var layout: String = js.native
-  var page: typings.hexo.hexoMod.LocalsNs.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage = js.native
+  var page: typings.hexo.hexoMod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage = js.native
   var path: String = js.native
   var site: js.Any = js.native
   var theme: HexoConfig = js.native

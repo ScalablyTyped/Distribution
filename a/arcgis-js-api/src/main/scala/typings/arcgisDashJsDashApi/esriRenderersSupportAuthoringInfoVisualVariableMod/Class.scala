@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSupportAuthoringInfoVisualVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AuthoringInfoVisualVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AuthoringInfoVisualVariableProperties
+import typings.arcgisDashJsDashApi.__esri.AuthoringInfoVisualVariable
+import typings.arcgisDashJsDashApi.__esri.AuthoringInfoVisualVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

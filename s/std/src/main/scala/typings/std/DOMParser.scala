@@ -12,12 +12,5 @@ trait DOMParser extends js.Object {
 
 @JSGlobal("DOMParser")
 @js.native
-class DOMParserCls () extends DOMParser {
-  /* CompleteClass */
-  override def parseFromString(str: java.lang.String, `type`: SupportedType): Document = js.native
-}
-
-@JSGlobal("DOMParser")
-@js.native
 object DOMParser extends Instantiable0[DOMParser]
 

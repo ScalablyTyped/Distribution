@@ -2,6 +2,7 @@ package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.Anon_N
 import typings.mongodb.mongodbMod.BulkWriteOpResultObject
 import typings.mongodb.mongodbMod.ChangeStream
@@ -16,7 +17,7 @@ import typings.mongoose.Anon_NewTrue
 import typings.mongoose.Anon_Ordered
 import typings.mongoose.Anon_RawResult
 import typings.mongoose.Anon_Session
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -780,5 +781,19 @@ Instantiable0[T]
   /** Creates a Query, applies the passed conditions, and returns the Query. */
   def where(path: String): Query[_] with QueryHelpers = js.native
   def where(path: String, `val`: js.Any): Query[_] with QueryHelpers = js.native
+}
+
+@JSImport("mongoose", "Model")
+@js.native
+object Model
+  extends TopLevel[Model[js.Any, js.Object]]
+
+@JSImport("mongoose", "model")
+@js.native
+object model extends js.Object {
+  def apply[T /* <: Document */](name: String): Model[T, js.Object] = js.native
+  def apply[T /* <: Document */](name: String, schema: Schema[_]): Model[T, js.Object] = js.native
+  def apply[T /* <: Document */](name: String, schema: Schema[_], collection: String): Model[T, js.Object] = js.native
+  def apply[T /* <: Document */](name: String, schema: Schema[_], collection: String, skipInit: Boolean): Model[T, js.Object] = js.native
 }
 

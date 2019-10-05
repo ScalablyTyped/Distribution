@@ -22,7 +22,7 @@ trait ApplicationSettingsResponse extends js.Object {
 object ApplicationSettingsResponse {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     S3BucketName: String = null,
     SettingsGroup: SettingsGroup = null
   ): ApplicationSettingsResponse = {

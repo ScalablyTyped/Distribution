@@ -6,7 +6,7 @@ import typings.antd.Anon_SourceSelectedKeys
 import typings.antd.TypeofClassList
 import typings.antd.TypeofClassSearchDefaultProps
 import typings.antd.esTransferOperationMod.TransferOperationProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

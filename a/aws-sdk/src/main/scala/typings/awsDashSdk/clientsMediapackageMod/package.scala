@@ -40,6 +40,12 @@ package object clientsMediapackageMod {
   type ManifestLayout = _ManifestLayout | String
   type MaxResults = Double
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW
+    - typings.awsDashSdk.awsDashSdkStrings.DENY
+    - java.lang.String
+  */
+  type Origination = _Origination | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.EVENT
     - typings.awsDashSdk.awsDashSdkStrings.VOD
@@ -59,6 +65,13 @@ package object clientsMediapackageMod {
     - java.lang.String
   */
   type SegmentTemplateFormat = _SegmentTemplateFormat | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.SUCCEEDED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type Status = _Status | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ORIGINAL
     - typings.awsDashSdk.awsDashSdkStrings.VIDEO_BITRATE_ASCENDING
@@ -83,6 +96,7 @@ package object clientsMediapackageMod {
   type __boolean = Boolean
   type __integer = Double
   type __listOfChannel = js.Array[Channel]
+  type __listOfHarvestJob = js.Array[HarvestJob]
   type __listOfHlsManifest = js.Array[HlsManifest]
   type __listOfHlsManifestCreateOrUpdateParameters = js.Array[HlsManifestCreateOrUpdateParameters]
   type __listOfIngestEndpoint = js.Array[IngestEndpoint]

@@ -1,7 +1,7 @@
 package typings.bullDashArena.bullDashArenaMod
 
-import typings.bullDashArena.bullDashArenaMod.BullArenaNs.MiddlewareListenOptions
-import typings.bullDashArena.bullDashArenaMod.BullArenaNs.MiddlewareOptions
+import typings.bullDashArena.bullDashArenaMod.BullArena.MiddlewareListenOptions
+import typings.bullDashArena.bullDashArenaMod.BullArena.MiddlewareOptions
 import typings.express.expressMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.countryDashSelectDashJs
 
-import typings.countryDashSelectDashJs.CountrySelectJsNs.CountryData
-import typings.countryDashSelectDashJs.CountrySelectJsNs.Options
+import typings.countryDashSelectDashJs.CountrySelectJs.CountryData
+import typings.countryDashSelectDashJs.CountrySelectJs.Options
 import typings.countryDashSelectDashJs.countryDashSelectDashJsStrings.destroy
 import typings.countryDashSelectDashJs.countryDashSelectDashJsStrings.getSelectedCountryData
 import typings.jquery.JQueryDeferred

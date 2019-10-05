@@ -1,12 +1,12 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.DevicesNs.SmsNs.ISmsMessage
-import typings.winrt.WindowsNs.FoundationNs.AsyncOperationCompletedHandler
-import typings.winrt.WindowsNs.FoundationNs.AsyncOperationProgressHandler
-import typings.winrt.WindowsNs.FoundationNs.AsyncStatus
-import typings.winrt.WindowsNs.FoundationNs.CollectionsNs.IVectorView
-import typings.winrt.WindowsNs.FoundationNs.IAsyncOperation
-import typings.winrt.WindowsNs.FoundationNs.IAsyncOperationWithProgress
+import typings.winrt.Windows.Devices.Sms.ISmsMessage
+import typings.winrt.Windows.Foundation.AsyncOperationCompletedHandler
+import typings.winrt.Windows.Foundation.AsyncOperationProgressHandler
+import typings.winrt.Windows.Foundation.AsyncStatus
+import typings.winrt.Windows.Foundation.Collections.IVectorView
+import typings.winrt.Windows.Foundation.IAsyncOperation
+import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,9 +9,9 @@ package object distSdkInternalDeltasDeltasMod {
     - scala.Boolean
     - scala.Double
     - java.lang.String
-    - typings.mendixmodelsdk.distCommonMod.commonNs.IPoint
-    - typings.mendixmodelsdk.distCommonMod.commonNs.ISize
-    - typings.mendixmodelsdk.distCommonMod.commonNs.IColor
+    - typings.mendixmodelsdk.distCommonMod.common.IPoint
+    - typings.mendixmodelsdk.distCommonMod.common.ISize
+    - typings.mendixmodelsdk.distCommonMod.common.IColor
   */
   type PrimitiveValue = _PrimitiveValue | Boolean | Double | String
 }

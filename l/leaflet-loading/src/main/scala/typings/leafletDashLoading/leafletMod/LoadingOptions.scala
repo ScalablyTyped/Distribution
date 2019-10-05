@@ -1,6 +1,6 @@
 package typings.leafletDashLoading.leafletMod
 
-import typings.leaflet.leafletMod.ControlNs.Zoom
+import typings.leaflet.leafletMod.Control.Zoom
 import typings.leaflet.leafletMod.ControlOptions
 import typings.leaflet.leafletMod.ControlPosition
 import typings.leafletDashLoading.Anon_Length

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "egg_dot_js"
-version := "0.0.1-dt-20190322Z-ef24e5"
-scalaVersion := "2.12.9"
+version := "0.0.1-dt-20190322Z-000566"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

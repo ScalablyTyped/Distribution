@@ -34,19 +34,19 @@ trait SummarizedCounter extends js.Object {
 object SummarizedCounter {
   @scala.inline
   def apply(
-    Average: js.UndefOr[Double] = js.undefined,
-    Max: js.UndefOr[Double] = js.undefined,
-    N: js.UndefOr[Integer] = js.undefined,
+    Average: Int | scala.Double = null,
+    Max: Int | scala.Double = null,
+    N: Int | scala.Double = null,
     Name: String = null,
-    Sum: js.UndefOr[Double] = js.undefined,
+    Sum: Int | scala.Double = null,
     Unit: String = null
   ): SummarizedCounter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average)
-    if (!js.isUndefined(Max)) __obj.updateDynamic("Max")(Max)
-    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N)
+    if (Average != null) __obj.updateDynamic("Average")(Average.asInstanceOf[js.Any])
+    if (Max != null) __obj.updateDynamic("Max")(Max.asInstanceOf[js.Any])
+    if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum)
+    if (Sum != null) __obj.updateDynamic("Sum")(Sum.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit)
     __obj.asInstanceOf[SummarizedCounter]
   }

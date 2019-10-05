@@ -1,6 +1,8 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +14,7 @@ import scala.scalajs.js.annotation._
   * Instead, we expose static `Variable.variable` method below, which will be
   * added to global namespace.
   */
-class Variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */] protected ()
+class Variable[R /* <: Rank */] protected ()
   extends typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R]
 
 /* static members */
@@ -34,18 +36,25 @@ object Variable extends js.Object {
     * @param dtype If set, initialValue will be converted to the given type.
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
-  def variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R]): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R], trainable: Boolean): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def variable[R /* <: Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R]): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
+  def variable[R /* <: Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R], trainable: Boolean): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
+  def variable[R /* <: Rank */](
     initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R],
     trainable: Boolean,
     name: String
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def variable[R /* <: Rank */](
     initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R],
     trainable: Boolean,
     name: String,
     dtype: DataType
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
 }
+
+@JSImport("@tensorflow/tfjs-core", "variable")
+@js.native
+object variable
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any
+    ]
 

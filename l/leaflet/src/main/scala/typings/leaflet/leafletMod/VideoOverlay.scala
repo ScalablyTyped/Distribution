@@ -28,3 +28,14 @@ class VideoOverlay protected () extends Layer {
   def setUrl(url: String): this.type = js.native
 }
 
+@JSImport("leaflet", "videoOverlay")
+@js.native
+object videoOverlay extends js.Object {
+  def apply(video: String, bounds: LatLngBoundsExpression): VideoOverlay = js.native
+  def apply(video: String, bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay = js.native
+  def apply(video: js.Array[String], bounds: LatLngBoundsExpression): VideoOverlay = js.native
+  def apply(video: js.Array[String], bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay = js.native
+  def apply(video: HTMLVideoElement, bounds: LatLngBoundsExpression): VideoOverlay = js.native
+  def apply(video: HTMLVideoElement, bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay = js.native
+}
+

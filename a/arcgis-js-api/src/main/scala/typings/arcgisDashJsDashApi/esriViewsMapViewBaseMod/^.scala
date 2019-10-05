@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsMapViewBaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapViewBaseConstructor
+import typings.arcgisDashJsDashApi.__esri.MapViewBaseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

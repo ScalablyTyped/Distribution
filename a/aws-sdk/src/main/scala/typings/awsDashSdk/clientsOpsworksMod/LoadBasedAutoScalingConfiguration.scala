@@ -27,7 +27,7 @@ object LoadBasedAutoScalingConfiguration {
   @scala.inline
   def apply(
     DownScaling: AutoScalingThresholds = null,
-    Enable: js.UndefOr[Boolean] = js.undefined,
+    Enable: js.UndefOr[scala.Boolean] = js.undefined,
     LayerId: String = null,
     UpScaling: AutoScalingThresholds = null
   ): LoadBasedAutoScalingConfiguration = {

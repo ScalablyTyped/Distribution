@@ -1,5 +1,6 @@
 package typings.iron.ironMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.iron.Anon_IvBits
 import typings.iron.Anon_KeyBits
 import scala.scalajs.js
@@ -21,4 +22,8 @@ object Algorithms {
     __obj.asInstanceOf[Algorithms]
   }
 }
+
+@JSImport("iron", "algorithms")
+@js.native
+object algorithms extends TopLevel[Algorithms]
 

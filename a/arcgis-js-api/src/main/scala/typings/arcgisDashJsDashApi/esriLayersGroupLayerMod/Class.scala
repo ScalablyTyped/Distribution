@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersGroupLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GroupLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GroupLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
+import typings.arcgisDashJsDashApi.__esri.GroupLayer
+import typings.arcgisDashJsDashApi.__esri.GroupLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

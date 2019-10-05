@@ -127,13 +127,13 @@ trait Typeofreact extends js.Object {
   def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): FunctionComponentElement[P] = js.native
   def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
   def createElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
+  def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
   def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     children: ReactNode*
   ): ReactSVGElement = js.native
   def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: ClassAttributes[T] with P,
     children: ReactNode*
   ): ReactSVGElement = js.native
@@ -145,15 +145,15 @@ trait Typeofreact extends js.Object {
   @JSName("createElement")
   def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, children: ReactNode*): DOMElement[P, T] = js.native
   @JSName("createElement")
-  def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
+  def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
   @JSName("createElement")
   def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = js.native
   @JSName("createElement")
   def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
     props: ClassAttributes[T] with P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = js.native
@@ -175,7 +175,7 @@ trait Typeofreact extends js.Object {
     props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
     children: ReactNode*
   ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-  def createFactory(`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any): SVGFactory = js.native
+  def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): SVGFactory = js.native
   def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = js.native
   def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = js.native
   // Custom components
@@ -187,7 +187,7 @@ trait Typeofreact extends js.Object {
   // ----------------------------------------------------------------------
   // DOM Elements
   @JSName("createFactory")
-  def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
+  def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
   def createRef[T](): RefObject[T] = js.native
   def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
   def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native

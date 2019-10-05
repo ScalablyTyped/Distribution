@@ -31,14 +31,14 @@ object DescribeAnomalyDetectorsInput {
   @scala.inline
   def apply(
     Dimensions: Dimensions = null,
-    MaxResults: js.UndefOr[MaxReturnedResultsCount] = js.undefined,
+    MaxResults: Int | Double = null,
     MetricName: MetricName = null,
     Namespace: Namespace = null,
     NextToken: NextToken = null
   ): DescribeAnomalyDetectorsInput = {
     val __obj = js.Dynamic.literal()
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName)
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

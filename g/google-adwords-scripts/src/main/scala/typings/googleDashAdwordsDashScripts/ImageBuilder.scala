@@ -1,6 +1,6 @@
 package typings.googleDashAdwordsDashScripts
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

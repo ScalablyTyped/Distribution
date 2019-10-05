@@ -1,6 +1,6 @@
 package typings.webpack
 
-import typings.webpack.webpackMod.compilationNs.ModuleTemplate
+import typings.webpack.webpackMod.compilation.ModuleTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

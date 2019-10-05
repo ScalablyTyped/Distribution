@@ -19,10 +19,10 @@ class Node protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Node) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.Node) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Node,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.Node,
     opts: CustomResourceOptions
   ) = this()
 }

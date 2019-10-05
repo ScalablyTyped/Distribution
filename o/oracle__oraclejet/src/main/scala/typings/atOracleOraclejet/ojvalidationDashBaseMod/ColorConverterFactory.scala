@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojvalidationDashBaseMod
 
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ColorConverterNs.ConverterOptions
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.ColorConverter.ConverterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

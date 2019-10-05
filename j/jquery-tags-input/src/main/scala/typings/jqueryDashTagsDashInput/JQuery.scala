@@ -1,6 +1,6 @@
 package typings.jqueryDashTagsDashInput
 
-import typings.jqueryDashTagsDashInput.jQueryTagsInputNs.Options
+import typings.jqueryDashTagsDashInput.jQueryTagsInput.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

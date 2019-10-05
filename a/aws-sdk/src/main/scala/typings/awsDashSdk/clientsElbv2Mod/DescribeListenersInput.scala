@@ -29,13 +29,13 @@ object DescribeListenersInput {
     ListenerArns: ListenerArns = null,
     LoadBalancerArn: LoadBalancerArn = null,
     Marker: Marker = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined
+    PageSize: Int | Double = null
   ): DescribeListenersInput = {
     val __obj = js.Dynamic.literal()
     if (ListenerArns != null) __obj.updateDynamic("ListenerArns")(ListenerArns)
     if (LoadBalancerArn != null) __obj.updateDynamic("LoadBalancerArn")(LoadBalancerArn)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeListenersInput]
   }
 }

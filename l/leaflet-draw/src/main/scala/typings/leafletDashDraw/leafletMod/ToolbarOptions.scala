@@ -1,10 +1,10 @@
 package typings.leafletDashDraw.leafletMod
 
-import typings.leafletDashDraw.leafletMod.DrawOptionsNs.CircleOptions
-import typings.leafletDashDraw.leafletMod.DrawOptionsNs.MarkerOptions
-import typings.leafletDashDraw.leafletMod.DrawOptionsNs.PolygonOptions
-import typings.leafletDashDraw.leafletMod.DrawOptionsNs.PolylineOptions
-import typings.leafletDashDraw.leafletMod.DrawOptionsNs.RectangleOptions
+import typings.leafletDashDraw.leafletMod.DrawOptions.CircleOptions
+import typings.leafletDashDraw.leafletMod.DrawOptions.MarkerOptions
+import typings.leafletDashDraw.leafletMod.DrawOptions.PolygonOptions
+import typings.leafletDashDraw.leafletMod.DrawOptions.PolylineOptions
+import typings.leafletDashDraw.leafletMod.DrawOptions.RectangleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -135,3 +135,9 @@ object FormatSpecifier {
   }
 }
 
+@JSImport("d3-format", "formatSpecifier")
+@js.native
+object formatSpecifier extends js.Object {
+  def apply(specifier: String): FormatSpecifier = js.native
+}
+

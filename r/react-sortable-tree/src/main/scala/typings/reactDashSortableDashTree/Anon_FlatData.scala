@@ -1,5 +1,7 @@
 package typings.reactDashSortableDashTree
 
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeIndex
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeNode
 import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.FlattenedData
 import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction
 import scala.scalajs.js
@@ -17,13 +19,13 @@ object Anon_FlatData {
   @scala.inline
   def apply(
     flatData: FlattenedData,
-    getKey: GetNodeKeyFunction = null,
-    getParentKey: GetNodeKeyFunction = null,
+    getKey: /* data */ TreeIndex with TreeNode => String | Double = null,
+    getParentKey: /* data */ TreeIndex with TreeNode => String | Double = null,
     rootKey: String | Double = null
   ): Anon_FlatData = {
     val __obj = js.Dynamic.literal(flatData = flatData)
-    if (getKey != null) __obj.updateDynamic("getKey")(getKey)
-    if (getParentKey != null) __obj.updateDynamic("getParentKey")(getParentKey)
+    if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction1(getKey))
+    if (getParentKey != null) __obj.updateDynamic("getParentKey")(js.Any.fromFunction1(getParentKey))
     if (rootKey != null) __obj.updateDynamic("rootKey")(rootKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FlatData]
   }

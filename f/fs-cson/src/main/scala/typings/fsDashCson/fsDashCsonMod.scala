@@ -1,6 +1,6 @@
 package typings.fsDashCson
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

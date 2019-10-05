@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BatchGroup")
 @js.native
 class BatchGroup protected ()
-  extends typings.playcanvas.pcNs.BatchGroup {
+  extends typings.playcanvas.pc.BatchGroup {
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double) = this()
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double, layers: js.Array[Number]) = this()
 }

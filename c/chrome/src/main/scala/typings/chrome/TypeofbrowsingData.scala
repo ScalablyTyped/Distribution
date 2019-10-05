@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.browsingDataNs.DataTypeSet
-import typings.chrome.chromeNs.browsingDataNs.RemovalOptions
-import typings.chrome.chromeNs.browsingDataNs.SettingsCallback
+import typings.chrome.chrome.browsingData.DataTypeSet
+import typings.chrome.chrome.browsingData.RemovalOptions
+import typings.chrome.chrome.browsingData.SettingsCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

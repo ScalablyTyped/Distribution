@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupContentBarChartMediaInfoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BarChartMediaInfoConstructor
+import typings.arcgisDashJsDashApi.__esri.BarChartMediaInfoConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,6 +9,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotTypesMo
 import typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotTypesMod.IOverlayProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotBaseMod.PanelBase
 import typings.react.Event
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.SyntheticEvent
 import typings.std.HTMLElement
@@ -209,12 +210,12 @@ object IPanelProps {
     onOpen: () => Unit = null,
     onOpened: () => Unit = null,
     onOuterClick: () => Unit = null,
-    onRenderBody: IRenderFunction[IPanelProps] = null,
-    onRenderFooter: IRenderFunction[IPanelProps] = null,
-    onRenderFooterContent: IRenderFunction[IPanelProps] = null,
+    onRenderBody: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
+    onRenderFooter: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
+    onRenderFooterContent: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
     onRenderHeader: IPanelHeaderRenderer = null,
-    onRenderNavigation: IRenderFunction[IPanelProps] = null,
-    onRenderNavigationContent: IRenderFunction[IPanelProps] = null,
+    onRenderNavigation: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
+    onRenderNavigationContent: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
     overlayProps: IOverlayProps = null,
     styles: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles] = null,
     theme: ITheme = null,
@@ -247,12 +248,12 @@ object IPanelProps {
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
     if (onOuterClick != null) __obj.updateDynamic("onOuterClick")(js.Any.fromFunction0(onOuterClick))
-    if (onRenderBody != null) __obj.updateDynamic("onRenderBody")(onRenderBody)
-    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(onRenderFooter)
-    if (onRenderFooterContent != null) __obj.updateDynamic("onRenderFooterContent")(onRenderFooterContent)
+    if (onRenderBody != null) __obj.updateDynamic("onRenderBody")(js.Any.fromFunction2(onRenderBody))
+    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(js.Any.fromFunction2(onRenderFooter))
+    if (onRenderFooterContent != null) __obj.updateDynamic("onRenderFooterContent")(js.Any.fromFunction2(onRenderFooterContent))
     if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(onRenderHeader)
-    if (onRenderNavigation != null) __obj.updateDynamic("onRenderNavigation")(onRenderNavigation)
-    if (onRenderNavigationContent != null) __obj.updateDynamic("onRenderNavigationContent")(onRenderNavigationContent)
+    if (onRenderNavigation != null) __obj.updateDynamic("onRenderNavigation")(js.Any.fromFunction2(onRenderNavigation))
+    if (onRenderNavigationContent != null) __obj.updateDynamic("onRenderNavigationContent")(js.Any.fromFunction2(onRenderNavigationContent))
     if (overlayProps != null) __obj.updateDynamic("overlayProps")(overlayProps)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

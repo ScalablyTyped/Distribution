@@ -1,9 +1,9 @@
 package typings.naverDashWhale
 
-import typings.naverDashWhale.whaleNs.contentSettingsNs.ScopeEnum
-import typings.naverDashWhale.whaleNs.omniboxNs.OnInputEnteredDisposition
-import typings.naverDashWhale.whaleNs.runtimeNs.RequestUpdateCheckStatus
-import typings.naverDashWhale.whaleNs.webRequestNs.ResourceType
+import typings.naverDashWhale.whale.contentSettings.ScopeEnum
+import typings.naverDashWhale.whale.omnibox.OnInputEnteredDisposition
+import typings.naverDashWhale.whale.runtime.RequestUpdateCheckStatus
+import typings.naverDashWhale.whale.webRequest.ResourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

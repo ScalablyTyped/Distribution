@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersPointCloudClassBreaksRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudClassBreaksRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudClassBreaksRendererProperties
+import typings.arcgisDashJsDashApi.__esri.PointCloudClassBreaksRenderer
+import typings.arcgisDashJsDashApi.__esri.PointCloudClassBreaksRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

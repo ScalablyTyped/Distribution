@@ -28,11 +28,11 @@ object ListCreatedArtifactsRequest {
   def apply(
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    MaxResults: js.UndefOr[MaxResultsCreatedArtifacts] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null
   ): ListCreatedArtifactsRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListCreatedArtifactsRequest]
   }

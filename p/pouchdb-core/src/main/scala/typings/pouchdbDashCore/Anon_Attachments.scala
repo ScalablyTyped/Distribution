@@ -1,8 +1,8 @@
 package typings.pouchdbDashCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.Attachments
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.RevisionId
+import typings.pouchdbDashCore.PouchDB.Core.Attachments
+import typings.pouchdbDashCore.PouchDB.Core.RevisionId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

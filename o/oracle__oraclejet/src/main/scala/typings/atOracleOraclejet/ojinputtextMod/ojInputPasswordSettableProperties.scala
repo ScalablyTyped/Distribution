@@ -12,7 +12,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

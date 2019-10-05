@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsPictureFillSymbolMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PictureFillSymbol
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PictureFillSymbolProperties
+import typings.arcgisDashJsDashApi.__esri.PictureFillSymbol
+import typings.arcgisDashJsDashApi.__esri.PictureFillSymbolProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

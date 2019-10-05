@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.telemetryNs.EventData
-import typings.firefoxDashWebextDashBrowser.browserNs.telemetryNs.ScalarData
+import typings.firefoxDashWebextDashBrowser.browser.telemetry.EventData
+import typings.firefoxDashWebextDashBrowser.browser.telemetry.ScalarData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

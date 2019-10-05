@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_Blocks
 import typings.astDashTypes.genKindsMod.ComprehensionBlockKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.GeneratorExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.GeneratorExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

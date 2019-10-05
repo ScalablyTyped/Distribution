@@ -45,3 +45,11 @@ object TypeAlias {
   }
 }
 
+@JSImport("@babel/types", "typeAlias")
+@js.native
+object typeAlias extends js.Object {
+  def apply(id: Identifier, typeParameters: js.UndefOr[scala.Nothing], right: FlowType): TypeAlias = js.native
+  def apply(id: Identifier, typeParameters: Null, right: FlowType): TypeAlias = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration, right: FlowType): TypeAlias = js.native
+}
+

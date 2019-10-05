@@ -46,3 +46,9 @@ object BrowserLocalStorage extends js.Object {
   val URL_SCHEME: `localstorage://` = js.native
 }
 
+@JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "browserLocalStorage")
+@js.native
+object browserLocalStorage extends js.Object {
+  def apply(modelPath: String): IOHandler = js.native
+}
+

@@ -43,11 +43,11 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "MeshInstance")
 @js.native
 class MeshInstance protected ()
-  extends typings.playcanvas.pcNs.MeshInstance {
+  extends typings.playcanvas.pc.MeshInstance {
   def this(
-    node: typings.playcanvas.pcNs.GraphNode,
-    mesh: typings.playcanvas.pcNs.Mesh,
-    material: typings.playcanvas.pcNs.Material
+    node: typings.playcanvas.pc.GraphNode,
+    mesh: typings.playcanvas.pc.Mesh,
+    material: typings.playcanvas.pc.Material
   ) = this()
 }
 

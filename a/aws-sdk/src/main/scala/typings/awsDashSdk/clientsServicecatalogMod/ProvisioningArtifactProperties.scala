@@ -32,7 +32,7 @@ object ProvisioningArtifactProperties {
   def apply(
     Info: ProvisioningArtifactInfo,
     Description: ProvisioningArtifactDescription = null,
-    DisableTemplateValidation: js.UndefOr[DisableTemplateValidation] = js.undefined,
+    DisableTemplateValidation: js.UndefOr[Boolean] = js.undefined,
     Name: ProvisioningArtifactName = null,
     Type: ProvisioningArtifactType = null
   ): ProvisioningArtifactProperties = {

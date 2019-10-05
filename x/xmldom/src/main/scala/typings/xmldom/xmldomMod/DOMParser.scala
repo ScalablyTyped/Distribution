@@ -1,5 +1,6 @@
 package typings.xmldom.xmldomMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,5 @@ trait DOMParser extends js.Object {
 
 @JSImport("xmldom", "DOMParser")
 @js.native
-class DOMParserCls () extends DOMParser {
-  def this(options: Options) = this()
-}
+object DOMParser extends TopLevel[DOMParserStatic]
 

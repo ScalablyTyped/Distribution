@@ -1,5 +1,6 @@
 package typings.eventemitter3.eventemitter3Mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +65,5 @@ trait EventEmitter[EventTypes /* <: String | js.Symbol | (/* import warning: Imp
 
 @JSImport("eventemitter3", "EventEmitter")
 @js.native
-class EventEmitterCls[EventTypes /* <: String | js.Symbol | (/* import warning: ImportType.apply c Unsupported type mapping: 
-{[ K in keyof EventTypes ]: std.Array<any>}
-  */ typings.eventemitter3.eventemitter3Strings.EventEmitterCls with js.Any) */] () extends EventEmitter[EventTypes]
+object EventEmitter extends TopLevel[EventEmitterStatic]
 

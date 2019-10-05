@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriPopupContentImageMediaInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMediaInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMediaInfoProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMediaInfoValue
+import typings.arcgisDashJsDashApi.__esri.ImageMediaInfo
+import typings.arcgisDashJsDashApi.__esri.ImageMediaInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ImageMediaInfoValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

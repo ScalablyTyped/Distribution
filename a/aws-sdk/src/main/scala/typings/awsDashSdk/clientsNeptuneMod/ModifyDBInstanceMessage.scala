@@ -155,54 +155,54 @@ object ModifyDBInstanceMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
+    AllowMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CACertificateIdentifier: String = null,
     CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBInstanceClass: String = null,
     DBParameterGroupName: String = null,
-    DBPortNumber: js.UndefOr[IntegerOptional] = js.undefined,
+    DBPortNumber: Int | scala.Double = null,
     DBSecurityGroups: DBSecurityGroupNameList = null,
     DBSubnetGroupName: String = null,
     Domain: String = null,
     DomainIAMRoleName: String = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
-    EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
+    EnablePerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     LicenseModel: String = null,
     MasterUserPassword: String = null,
-    MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
+    MonitoringInterval: Int | scala.Double = null,
     MonitoringRoleArn: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     NewDBInstanceIdentifier: String = null,
     OptionGroupName: String = null,
     PerformanceInsightsKMSKeyId: String = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PromotionTier: Int | scala.Double = null,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     StorageType: String = null,
     TdeCredentialArn: String = null,
     TdeCredentialPassword: String = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): ModifyDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (!js.isUndefined(AllowMajorVersionUpgrade)) __obj.updateDynamic("AllowMajorVersionUpgrade")(AllowMajorVersionUpgrade)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
     if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName)
-    if (!js.isUndefined(DBPortNumber)) __obj.updateDynamic("DBPortNumber")(DBPortNumber)
+    if (DBPortNumber != null) __obj.updateDynamic("DBPortNumber")(DBPortNumber.asInstanceOf[js.Any])
     if (DBSecurityGroups != null) __obj.updateDynamic("DBSecurityGroups")(DBSecurityGroups)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (Domain != null) __obj.updateDynamic("Domain")(Domain)
@@ -210,10 +210,10 @@ object ModifyDBInstanceMessage {
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (!js.isUndefined(EnablePerformanceInsights)) __obj.updateDynamic("EnablePerformanceInsights")(EnablePerformanceInsights)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
-    if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval)
+    if (MonitoringInterval != null) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval.asInstanceOf[js.Any])
     if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (NewDBInstanceIdentifier != null) __obj.updateDynamic("NewDBInstanceIdentifier")(NewDBInstanceIdentifier)
@@ -221,7 +221,7 @@ object ModifyDBInstanceMessage {
     if (PerformanceInsightsKMSKeyId != null) __obj.updateDynamic("PerformanceInsightsKMSKeyId")(PerformanceInsightsKMSKeyId)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier)
+    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)
     if (TdeCredentialArn != null) __obj.updateDynamic("TdeCredentialArn")(TdeCredentialArn)

@@ -1,0 +1,32 @@
+package typings.weixinDashApp.wx
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+	 * 定义了云开发的默认配置，该配置会作为之后调用其他所有云 API 的默认配置
+	 */
+trait InitCloudOptions extends js.Object {
+  /**
+  		 * 默认环境配置，传入字符串形式的环境 ID 可以指定所有服务的默认环境，传入对象 initCloudEnvOptions 可以分别指定各个服务的默认环境
+  		 * 默认值： default
+  		 */
+  var env: js.UndefOr[String | InitCloudEnvOptions] = js.undefined
+  /**
+  		 * 是否在将用户访问记录到用户管理中，在控制台中可见
+  		 * 默认值： false
+  		 */
+  var traceUser: js.UndefOr[Boolean] = js.undefined
+}
+
+object InitCloudOptions {
+  @scala.inline
+  def apply(env: String | InitCloudEnvOptions = null, traceUser: js.UndefOr[Boolean] = js.undefined): InitCloudOptions = {
+    val __obj = js.Dynamic.literal()
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser)
+    __obj.asInstanceOf[InitCloudOptions]
+  }
+}
+

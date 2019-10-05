@@ -1,9 +1,9 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.OlMouseButton
-import typings.activexDashOutlook.OutlookNs.OlShiftState
-import typings.activexDashStdole.stdoleNs.OLE_XPOS_CONTAINER
-import typings.activexDashStdole.stdoleNs.OLE_YPOS_CONTAINER
+import typings.activexDashOutlook.Outlook.OlMouseButton
+import typings.activexDashOutlook.Outlook.OlShiftState
+import typings.activexDashStdole.stdole.OLE_XPOS_CONTAINER
+import typings.activexDashStdole.stdole.OLE_YPOS_CONTAINER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

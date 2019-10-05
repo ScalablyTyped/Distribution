@@ -1,7 +1,7 @@
 package typings.pouchDashReduxDashMiddleware.pouchDashReduxDashMiddlewareMod
 
 import typings.pouchDashReduxDashMiddleware.Anon_BatchInsert
-import typings.pouchdbDashCore.PouchDBNs.Database
+import typings.pouchdbDashCore.PouchDB.Database
 import typings.redux.reduxMod.Dispatch
 import typings.std.Error
 import scala.scalajs.js

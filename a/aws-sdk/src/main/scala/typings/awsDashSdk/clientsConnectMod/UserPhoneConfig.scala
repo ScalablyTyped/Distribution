@@ -27,12 +27,12 @@ object UserPhoneConfig {
   @scala.inline
   def apply(
     PhoneType: PhoneType,
-    AfterContactWorkTimeLimit: js.UndefOr[AfterContactWorkTimeLimit] = js.undefined,
-    AutoAccept: js.UndefOr[AutoAccept] = js.undefined,
+    AfterContactWorkTimeLimit: Int | Double = null,
+    AutoAccept: js.UndefOr[Boolean] = js.undefined,
     DeskPhoneNumber: PhoneNumber = null
   ): UserPhoneConfig = {
     val __obj = js.Dynamic.literal(PhoneType = PhoneType.asInstanceOf[js.Any])
-    if (!js.isUndefined(AfterContactWorkTimeLimit)) __obj.updateDynamic("AfterContactWorkTimeLimit")(AfterContactWorkTimeLimit)
+    if (AfterContactWorkTimeLimit != null) __obj.updateDynamic("AfterContactWorkTimeLimit")(AfterContactWorkTimeLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(AutoAccept)) __obj.updateDynamic("AutoAccept")(AutoAccept)
     if (DeskPhoneNumber != null) __obj.updateDynamic("DeskPhoneNumber")(DeskPhoneNumber)
     __obj.asInstanceOf[UserPhoneConfig]

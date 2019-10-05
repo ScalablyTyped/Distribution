@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.pageCaptureNs.SaveDetails
+import typings.chrome.chrome.pageCapture.SaveDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

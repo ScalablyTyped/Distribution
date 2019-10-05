@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashOnsenui.reactDashOnsenuiMod.AnimationOptions
 import typings.reactDashOnsenui.reactDashOnsenuiMod.Navigator
 import typings.reactDashOnsenui.reactDashOnsenuiMod.NavigatorAnimationTypes

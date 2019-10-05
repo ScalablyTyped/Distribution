@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Vec3")
 @js.native
 class Vec3 ()
-  extends typings.cannon.CANNONNs.Vec3 {
+  extends typings.cannon.CANNON.Vec3 {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
@@ -17,6 +17,6 @@ class Vec3 ()
 @JSImport("cannon", "Vec3")
 @js.native
 object Vec3 extends js.Object {
-  var ZERO: typings.cannon.CANNONNs.Vec3 = js.native
+  var ZERO: typings.cannon.CANNON.Vec3 = js.native
 }
 

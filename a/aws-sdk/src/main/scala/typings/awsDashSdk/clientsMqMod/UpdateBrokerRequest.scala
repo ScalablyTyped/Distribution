@@ -39,7 +39,7 @@ object UpdateBrokerRequest {
   @scala.inline
   def apply(
     BrokerId: __string,
-    AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     Configuration: ConfigurationId = null,
     EngineVersion: __string = null,
     HostInstanceType: __string = null,

@@ -16,7 +16,7 @@ trait Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor extends js
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessShadowBlurShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorCurvenessShadowBlur] = js.undefined
 }
 
 object Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor {
@@ -24,7 +24,7 @@ object Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor {
   def apply(
     itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColor = null,
-    lineStyle: Anon_ColorCurvenessShadowBlurShadowColor = null
+    lineStyle: Anon_ColorCurvenessShadowBlur = null
   ): Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)

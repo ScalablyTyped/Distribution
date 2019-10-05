@@ -15,13 +15,6 @@ trait RTCPeerConnectionIceEvent extends Event {
 
 @JSGlobal("RTCPeerConnectionIceEvent")
 @js.native
-class RTCPeerConnectionIceEventCls protected () extends RTCPeerConnectionIceEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: RTCPeerConnectionIceEventInit) = this()
-}
-
-@JSGlobal("RTCPeerConnectionIceEvent")
-@js.native
 object RTCPeerConnectionIceEvent
   extends Instantiable1[/* type */ java.lang.String, RTCPeerConnectionIceEvent]
      with Instantiable2[

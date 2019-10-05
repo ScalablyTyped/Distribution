@@ -1,6 +1,6 @@
 package typings.intlDashTelDashInput
 
-import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
+import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtils.placeholderNumberType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

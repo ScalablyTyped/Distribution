@@ -1,10 +1,10 @@
 package typings.activexDashAdodb
 
-import typings.activexDashAdodb.ADODBNs.Error
-import typings.activexDashAdodb.ADODBNs.EventReasonEnum
-import typings.activexDashAdodb.ADODBNs.EventStatusEnum
-import typings.activexDashAdodb.ADODBNs.Field
-import typings.activexDashAdodb.ADODBNs.Recordset
+import typings.activexDashAdodb.ADODB.Error
+import typings.activexDashAdodb.ADODB.EventReasonEnum
+import typings.activexDashAdodb.ADODB.EventStatusEnum
+import typings.activexDashAdodb.ADODB.Field
+import typings.activexDashAdodb.ADODB.Recordset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

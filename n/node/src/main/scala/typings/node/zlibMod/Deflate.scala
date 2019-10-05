@@ -1,7 +1,7 @@
 package typings.node.zlibMod
 
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,5 +74,12 @@ trait Deflate
   override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */
   override def setMaxListeners(n: Double): this.type = js.native
+}
+
+@JSImport("zlib", "deflate")
+@js.native
+object deflate extends js.Object {
+  def apply(buf: InputType, callback: CompressCallback): Unit = js.native
+  def apply(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
 }
 

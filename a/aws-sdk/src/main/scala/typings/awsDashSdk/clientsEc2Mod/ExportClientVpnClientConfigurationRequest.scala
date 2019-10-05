@@ -17,7 +17,7 @@ trait ExportClientVpnClientConfigurationRequest extends js.Object {
 
 object ExportClientVpnClientConfigurationRequest {
   @scala.inline
-  def apply(ClientVpnEndpointId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ExportClientVpnClientConfigurationRequest = {
+  def apply(ClientVpnEndpointId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ExportClientVpnClientConfigurationRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ExportClientVpnClientConfigurationRequest]

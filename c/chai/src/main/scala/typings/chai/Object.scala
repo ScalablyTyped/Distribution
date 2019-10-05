@@ -1,6 +1,6 @@
 package typings.chai
 
-import typings.chai.ChaiNs.Assertion
+import typings.chai.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

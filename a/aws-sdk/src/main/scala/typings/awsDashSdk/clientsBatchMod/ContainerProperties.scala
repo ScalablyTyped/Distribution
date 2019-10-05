@@ -76,14 +76,14 @@ object ContainerProperties {
     instanceType: String = null,
     jobRoleArn: String = null,
     linuxParameters: LinuxParameters = null,
-    memory: js.UndefOr[Integer] = js.undefined,
+    memory: Int | Double = null,
     mountPoints: MountPoints = null,
-    privileged: js.UndefOr[Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
+    privileged: js.UndefOr[scala.Boolean] = js.undefined,
+    readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined,
     resourceRequirements: ResourceRequirements = null,
     ulimits: Ulimits = null,
     user: String = null,
-    vcpus: js.UndefOr[Integer] = js.undefined,
+    vcpus: Int | Double = null,
     volumes: Volumes = null
   ): ContainerProperties = {
     val __obj = js.Dynamic.literal()
@@ -93,14 +93,14 @@ object ContainerProperties {
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType)
     if (jobRoleArn != null) __obj.updateDynamic("jobRoleArn")(jobRoleArn)
     if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters)
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory)
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints)
     if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged)
     if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem)
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements)
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits)
     if (user != null) __obj.updateDynamic("user")(user)
-    if (!js.isUndefined(vcpus)) __obj.updateDynamic("vcpus")(vcpus)
+    if (vcpus != null) __obj.updateDynamic("vcpus")(vcpus.asInstanceOf[js.Any])
     if (volumes != null) __obj.updateDynamic("volumes")(volumes)
     __obj.asInstanceOf[ContainerProperties]
   }

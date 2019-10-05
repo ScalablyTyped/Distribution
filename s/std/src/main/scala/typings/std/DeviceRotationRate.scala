@@ -14,16 +14,5 @@ trait DeviceRotationRate extends js.Object {
 
 @JSGlobal("DeviceRotationRate")
 @js.native
-class DeviceRotationRateCls () extends DeviceRotationRate {
-  /* CompleteClass */
-  override val alpha: Double | Null = js.native
-  /* CompleteClass */
-  override val beta: Double | Null = js.native
-  /* CompleteClass */
-  override val gamma: Double | Null = js.native
-}
-
-@JSGlobal("DeviceRotationRate")
-@js.native
 object DeviceRotationRate extends Instantiable0[DeviceRotationRate]
 

@@ -1,8 +1,8 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.openpgpMod.cleartextNs.CleartextMessage
-import typings.openpgp.openpgpMod.keyNs.Key
-import typings.openpgp.openpgpMod.messageNs.Message
+import typings.openpgp.openpgpMod.cleartext.CleartextMessage
+import typings.openpgp.openpgpMod.key.Key
+import typings.openpgp.openpgpMod.message.Message
 import typings.openpgp.openpgpNumbers.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web

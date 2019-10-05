@@ -25,7 +25,7 @@ import typings.reactDashNative.reactDashNativeStrings.polite
 import typings.reactDashNative.reactDashNativeStrings.radiobutton_checked
 import typings.reactDashNative.reactDashNativeStrings.radiobutton_unchecked
 import typings.reactDashNative.reactDashNativeStrings.yes
-import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
+import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.rippleLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ trait MKRippleProperties extends ViewProps {
   var rippleColor: js.UndefOr[String] = js.undefined
   var rippleDuration: js.UndefOr[Double] = js.undefined
   var rippleLocation: js.UndefOr[
-    typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
+    typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.rippleLocation
   ] = js.undefined
   var shadowAniEnabled: js.UndefOr[Boolean] = js.undefined
 }

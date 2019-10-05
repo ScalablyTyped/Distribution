@@ -29,13 +29,13 @@ object PendingModifiedValues {
     CacheNodeIdsToRemove: CacheNodeIdsList = null,
     CacheNodeType: String = null,
     EngineVersion: String = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined
+    NumCacheNodes: Int | scala.Double = null
   ): PendingModifiedValues = {
     val __obj = js.Dynamic.literal()
     if (CacheNodeIdsToRemove != null) __obj.updateDynamic("CacheNodeIdsToRemove")(CacheNodeIdsToRemove)
     if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes)
+    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingModifiedValues]
   }
 }

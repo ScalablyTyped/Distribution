@@ -87,13 +87,13 @@ object DBClusterSnapshot {
     EngineVersion: String = null,
     KmsKeyId: String = null,
     MasterUsername: String = null,
-    PercentProgress: js.UndefOr[Integer] = js.undefined,
-    Port: js.UndefOr[Integer] = js.undefined,
+    PercentProgress: Int | Double = null,
+    Port: Int | Double = null,
     SnapshotCreateTime: TStamp = null,
     SnapshotType: String = null,
     SourceDBClusterSnapshotArn: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     VpcId: String = null
   ): DBClusterSnapshot = {
     val __obj = js.Dynamic.literal()
@@ -106,8 +106,8 @@ object DBClusterSnapshot {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
-    if (!js.isUndefined(PercentProgress)) __obj.updateDynamic("PercentProgress")(PercentProgress)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime)
     if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType)
     if (SourceDBClusterSnapshotArn != null) __obj.updateDynamic("SourceDBClusterSnapshotArn")(SourceDBClusterSnapshotArn)

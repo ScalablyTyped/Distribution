@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.KeyName
+import typings.firefoxDashWebextDashBrowser.browser._manifest.KeyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

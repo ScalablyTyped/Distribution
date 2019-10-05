@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBasemapToggleMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapToggle
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapToggleProperties
+import typings.arcgisDashJsDashApi.__esri.BasemapToggle
+import typings.arcgisDashJsDashApi.__esri.BasemapToggleProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

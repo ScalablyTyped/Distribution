@@ -18,11 +18,11 @@ object Anon_ExtensionASTNodesExtensionsFields {
   @scala.inline
   def apply(
     extensionASTNodes: js.Array[InputObjectTypeExtensionNode],
-    extensions: Maybe[Record[String, _]],
-    fields: GraphQLInputFieldConfigMap
+    fields: GraphQLInputFieldConfigMap,
+    extensions: Maybe[Record[String, _]] = null
   ): Anon_ExtensionASTNodesExtensionsFields = {
-    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes, extensions = extensions.asInstanceOf[js.Any], fields = fields)
-  
+    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes, fields = fields)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtensionASTNodesExtensionsFields]
   }
 }

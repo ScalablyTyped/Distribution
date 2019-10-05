@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISeparatedSyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISeparatedSyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "EnumDeclarationSyntax")
 @js.native
 class EnumDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.EnumDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.EnumDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
     enumKeyword: ISyntaxToken,
@@ -31,7 +31,7 @@ object EnumDeclarationSyntax extends js.Object {
     identifier: ISyntaxToken,
     openBraceToken: ISyntaxToken,
     closeBraceToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.EnumDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.EnumDeclarationSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.EnumDeclarationSyntax = js.native
+  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScript.EnumDeclarationSyntax = js.native
 }
 

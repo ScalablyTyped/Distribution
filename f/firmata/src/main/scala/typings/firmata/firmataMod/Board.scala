@@ -3,7 +3,7 @@ package typings.firmata.firmataMod
 import typings.firmata.Anon_Address
 import typings.firmata.Anon_Baud
 import typings.firmata.Anon_Delay
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof react-loadable.LoadableExport.CommonOptions, 'loading' | 'modules'> ]: react-loadable.LoadableExport.CommonOptions[P]} */ trait NextDynamicOptionsBase extends js.Object {
   var loadableGenerated: js.UndefOr[Anon_Modules] = js.undefined
   var loading: js.UndefOr[
-    ComponentType[typings.reactDashLoadable.LoadableExportNs.LoadingComponentProps] | js.Function0[Null]
+    ComponentType[typings.reactDashLoadable.LoadableExport.LoadingComponentProps] | js.Function0[Null]
   ] = js.undefined
    // optional
   var ssr: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +21,7 @@ object NextDynamicOptionsBase {
   @scala.inline
   def apply(
     loadableGenerated: Anon_Modules = null,
-    loading: ComponentType[typings.reactDashLoadable.LoadableExportNs.LoadingComponentProps] | js.Function0[Null] = null,
+    loading: ComponentType[typings.reactDashLoadable.LoadableExport.LoadingComponentProps] | js.Function0[Null] = null,
     ssr: js.UndefOr[Boolean] = js.undefined
   ): NextDynamicOptionsBase = {
     val __obj = js.Dynamic.literal()

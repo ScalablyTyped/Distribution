@@ -1,9 +1,9 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.FoundationNs.AsyncOperationCompletedHandler
-import typings.winrt.WindowsNs.FoundationNs.AsyncStatus
-import typings.winrt.WindowsNs.FoundationNs.IAsyncOperation
-import typings.winrt.WindowsNs.SecurityNs.AuthenticationNs.OnlineIdNs.UserIdentity
+import typings.winrt.Windows.Foundation.AsyncOperationCompletedHandler
+import typings.winrt.Windows.Foundation.AsyncStatus
+import typings.winrt.Windows.Foundation.IAsyncOperation
+import typings.winrt.Windows.Security.Authentication.OnlineId.UserIdentity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "popmotion__easing"
-version := "1.0.2-ce16ed"
-scalaVersion := "2.12.9"
+version := "1.0.2-c509da"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

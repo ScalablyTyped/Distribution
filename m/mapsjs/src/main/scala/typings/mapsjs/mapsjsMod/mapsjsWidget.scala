@@ -2,7 +2,7 @@ package typings.mapsjs.mapsjsMod
 
 import typings.mapsjs.Anon_Delta
 import typings.mapsjs.Anon_H
-import typings.mapsjs.mapsjsMod.tileNs.layer
+import typings.mapsjs.mapsjsMod.tile.layer
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js

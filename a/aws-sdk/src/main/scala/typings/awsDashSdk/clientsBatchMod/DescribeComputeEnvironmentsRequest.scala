@@ -21,14 +21,10 @@ trait DescribeComputeEnvironmentsRequest extends js.Object {
 
 object DescribeComputeEnvironmentsRequest {
   @scala.inline
-  def apply(
-    computeEnvironments: StringList = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: String = null
-  ): DescribeComputeEnvironmentsRequest = {
+  def apply(computeEnvironments: StringList = null, maxResults: Int | Double = null, nextToken: String = null): DescribeComputeEnvironmentsRequest = {
     val __obj = js.Dynamic.literal()
     if (computeEnvironments != null) __obj.updateDynamic("computeEnvironments")(computeEnvironments)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeComputeEnvironmentsRequest]
   }

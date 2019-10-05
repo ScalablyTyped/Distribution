@@ -25,12 +25,11 @@ trait RenameFile extends ResourceOperation {
   var options: js.UndefOr[RenameFileOptions] = js.undefined
 }
 
-object RenameFile {
-  @scala.inline
-  def apply(kind: rename, newUri: String, oldUri: String, options: RenameFileOptions = null): RenameFile = {
-    val __obj = js.Dynamic.literal(kind = kind, newUri = newUri, oldUri = oldUri)
-    if (options != null) __obj.updateDynamic("options")(options)
-    __obj.asInstanceOf[RenameFile]
-  }
+@JSImport("vscode-languageserver-types", "RenameFile")
+@js.native
+object RenameFile extends js.Object {
+  def create(oldUri: String, newUri: String): RenameFile = js.native
+  def create(oldUri: String, newUri: String, options: RenameFileOptions): RenameFile = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = js.native
 }
 

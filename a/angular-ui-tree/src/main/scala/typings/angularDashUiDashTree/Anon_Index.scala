@@ -1,6 +1,6 @@
 package typings.angularDashUiDashTree
 
-import typings.angularDashUiDashTree.AngularUITreeNs.IParentTreeNodeScope
+import typings.angularDashUiDashTree.AngularUITree.IParentTreeNodeScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

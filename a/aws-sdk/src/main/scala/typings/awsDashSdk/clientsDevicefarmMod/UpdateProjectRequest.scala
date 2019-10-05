@@ -21,13 +21,9 @@ trait UpdateProjectRequest extends js.Object {
 
 object UpdateProjectRequest {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName,
-    defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
-    name: Name = null
-  ): UpdateProjectRequest = {
+  def apply(arn: AmazonResourceName, defaultJobTimeoutMinutes: Int | scala.Double = null, name: Name = null): UpdateProjectRequest = {
     val __obj = js.Dynamic.literal(arn = arn)
-    if (!js.isUndefined(defaultJobTimeoutMinutes)) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes)
+    if (defaultJobTimeoutMinutes != null) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[UpdateProjectRequest]
   }

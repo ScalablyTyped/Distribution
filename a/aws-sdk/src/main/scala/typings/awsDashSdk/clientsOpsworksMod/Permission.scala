@@ -30,8 +30,8 @@ trait Permission extends js.Object {
 object Permission {
   @scala.inline
   def apply(
-    AllowSsh: js.UndefOr[Boolean] = js.undefined,
-    AllowSudo: js.UndefOr[Boolean] = js.undefined,
+    AllowSsh: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowSudo: js.UndefOr[scala.Boolean] = js.undefined,
     IamUserArn: String = null,
     Level: String = null,
     StackId: String = null

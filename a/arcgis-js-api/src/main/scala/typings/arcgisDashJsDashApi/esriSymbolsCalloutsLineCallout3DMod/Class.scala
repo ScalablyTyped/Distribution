@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsCalloutsLineCallout3DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LineCallout3D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LineCallout3DProperties
+import typings.arcgisDashJsDashApi.__esri.LineCallout3D
+import typings.arcgisDashJsDashApi.__esri.LineCallout3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

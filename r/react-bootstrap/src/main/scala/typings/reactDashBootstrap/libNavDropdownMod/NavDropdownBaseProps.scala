@@ -19,7 +19,6 @@ object NavDropdownBaseProps {
   @scala.inline
   def apply(
     id: String,
-    title: ReactNode,
     active: js.UndefOr[Boolean] = js.undefined,
     bsClass: String = null,
     componentClass: ReactType[_] = null,
@@ -32,9 +31,10 @@ object NavDropdownBaseProps {
     onToggle: /* isOpen */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     pullRight: js.UndefOr[Boolean] = js.undefined,
-    role: String = null
+    role: String = null,
+    title: ReactNode = null
   ): NavDropdownBaseProps = {
-    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
@@ -48,6 +48,7 @@ object NavDropdownBaseProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
     if (role != null) __obj.updateDynamic("role")(role)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavDropdownBaseProps]
   }
 }

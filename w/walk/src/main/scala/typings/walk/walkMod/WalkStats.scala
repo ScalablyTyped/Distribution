@@ -1,6 +1,6 @@
 package typings.walk.walkMod
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import typings.walk.walkStrings.FIFO
 import typings.walk.walkStrings.blockDevice

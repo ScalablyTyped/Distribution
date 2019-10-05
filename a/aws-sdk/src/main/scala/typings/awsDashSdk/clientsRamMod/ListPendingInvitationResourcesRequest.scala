@@ -21,13 +21,9 @@ trait ListPendingInvitationResourcesRequest extends js.Object {
 
 object ListPendingInvitationResourcesRequest {
   @scala.inline
-  def apply(
-    resourceShareInvitationArn: String,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: String = null
-  ): ListPendingInvitationResourcesRequest = {
+  def apply(resourceShareInvitationArn: String, maxResults: Int | Double = null, nextToken: String = null): ListPendingInvitationResourcesRequest = {
     val __obj = js.Dynamic.literal(resourceShareInvitationArn = resourceShareInvitationArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListPendingInvitationResourcesRequest]
   }

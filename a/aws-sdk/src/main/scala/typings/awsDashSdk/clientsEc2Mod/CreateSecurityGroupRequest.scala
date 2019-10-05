@@ -28,7 +28,7 @@ object CreateSecurityGroupRequest {
   def apply(
     Description: String,
     GroupName: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     VpcId: String = null
   ): CreateSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(Description = Description, GroupName = GroupName)

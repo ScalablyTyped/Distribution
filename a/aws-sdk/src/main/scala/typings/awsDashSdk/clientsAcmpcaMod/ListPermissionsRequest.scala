@@ -21,13 +21,9 @@ trait ListPermissionsRequest extends js.Object {
 
 object ListPermissionsRequest {
   @scala.inline
-  def apply(
-    CertificateAuthorityArn: Arn,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListPermissionsRequest = {
+  def apply(CertificateAuthorityArn: Arn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListPermissionsRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListPermissionsRequest]
   }

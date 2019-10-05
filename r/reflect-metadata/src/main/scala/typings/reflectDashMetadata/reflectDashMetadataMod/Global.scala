@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object Global extends js.Object {
-  @JSName("Reflect")
   @js.native
-  object ReflectNs extends js.Object {
+  object Reflect extends js.Object {
     /**
       * Applies a set of decorators to a target object.
       * @param decorators An array of decorators.

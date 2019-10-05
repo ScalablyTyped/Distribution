@@ -1,11 +1,16 @@
 package typings.reactDashNumericDashInput.reactDashNumericDashInputMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.Event
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.ReactEventHandler
+import typings.react.reactMod.SyntheticEvent
 import typings.reactDashNumericDashInput.reactDashNumericDashInputStrings.auto
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
@@ -64,13 +69,13 @@ object NumericInputProps {
     mobile: Boolean | auto | (js.Function1[/* component */ NumericInput, Boolean]) = null,
     noStyle: js.UndefOr[Boolean] = js.undefined,
     noValidate: Boolean | String = null,
-    onBlur: FocusEventHandler[HTMLDivElement | HTMLInputElement] = null,
+    onBlur: FocusEvent[HTMLDivElement | HTMLInputElement] => Unit = null,
     onChange: (/* value */ Double | Null, /* stringValue */ String, /* input */ HTMLInputElement) => Unit = null,
-    onFocus: FocusEventHandler[HTMLDivElement | HTMLInputElement] = null,
-    onInput: FormEventHandler[HTMLInputElement] = null,
+    onFocus: FocusEvent[HTMLDivElement | HTMLInputElement] => Unit = null,
+    onInput: FormEvent[HTMLInputElement] => Unit = null,
     onInvalid: (/* error */ String, /* value */ Double | Null, /* stringValue */ String) => Unit = null,
-    onKeyDown: KeyboardEventHandler[HTMLDivElement | HTMLInputElement] = null,
-    onSelect: ReactEventHandler[HTMLInputElement] = null,
+    onKeyDown: KeyboardEvent[HTMLDivElement | HTMLInputElement] => Unit = null,
+    onSelect: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
     onValid: (/* value */ Double | Null, /* stringValue */ String) => Unit = null,
     parse: /* stringValue */ String => Double | Null = null,
     precision: Double | (js.Function1[/* component */ NumericInput, js.UndefOr[Double | Null]]) = null,
@@ -90,13 +95,13 @@ object NumericInputProps {
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (!js.isUndefined(noStyle)) __obj.updateDynamic("noStyle")(noStyle)
     if (noValidate != null) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction3(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onValid != null) __obj.updateDynamic("onValid")(js.Any.fromFunction2(onValid))
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])

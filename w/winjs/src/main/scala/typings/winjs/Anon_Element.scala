@@ -1,7 +1,7 @@
 package typings.winjs
 
 import typings.std.HTMLElement
-import typings.winjs.WinJSNs.Promise
+import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -25,3 +25,9 @@ abstract class CookieJar () extends js.Object {
   def set(name: String, value: String, options: CookieOptions): Unit = js.native
 }
 
+@JSImport("k6/http", "cookieJar")
+@js.native
+object cookieJar extends js.Object {
+  def apply(): CookieJar = js.native
+}
+

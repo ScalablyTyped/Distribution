@@ -1,5 +1,6 @@
 package typings.nise.niseMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -116,4 +117,8 @@ trait FakeServer extends FakeServerOptions {
   def respondWith(url: RegExp, response: js.Array[_]): Unit = js.native
   def restore(): Unit = js.native
 }
+
+@JSImport("nise", "fakeServer")
+@js.native
+object fakeServer extends TopLevel[FakeServerStatic]
 

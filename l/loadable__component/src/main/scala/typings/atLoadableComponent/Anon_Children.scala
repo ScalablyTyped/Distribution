@@ -1,6 +1,6 @@
 package typings.atLoadableComponent
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
 import scala.scalajs.js

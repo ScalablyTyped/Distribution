@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportRangeDomainMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RangeDomain
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RangeDomainProperties
+import typings.arcgisDashJsDashApi.__esri.RangeDomain
+import typings.arcgisDashJsDashApi.__esri.RangeDomainProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

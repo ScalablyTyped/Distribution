@@ -28,12 +28,12 @@ object GetEffectivePermissionsForPathRequest {
   def apply(
     ResourceArn: ResourceArnString,
     CatalogId: CatalogIdString = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null
   ): GetEffectivePermissionsForPathRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetEffectivePermissionsForPathRequest]
   }

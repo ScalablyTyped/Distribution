@@ -21,13 +21,9 @@ trait ListRetirableGrantsRequest extends js.Object {
 
 object ListRetirableGrantsRequest {
   @scala.inline
-  def apply(
-    RetiringPrincipal: PrincipalIdType,
-    Limit: js.UndefOr[LimitType] = js.undefined,
-    Marker: MarkerType = null
-  ): ListRetirableGrantsRequest = {
+  def apply(RetiringPrincipal: PrincipalIdType, Limit: Int | Double = null, Marker: MarkerType = null): ListRetirableGrantsRequest = {
     val __obj = js.Dynamic.literal(RetiringPrincipal = RetiringPrincipal)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[ListRetirableGrantsRequest]
   }

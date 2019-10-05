@@ -40,7 +40,7 @@ object JobListEntry {
   def apply(
     CreationDate: Timestamp = null,
     Description: String = null,
-    IsMaster: js.UndefOr[Boolean] = js.undefined,
+    IsMaster: js.UndefOr[scala.Boolean] = js.undefined,
     JobId: String = null,
     JobState: JobState = null,
     JobType: JobType = null,

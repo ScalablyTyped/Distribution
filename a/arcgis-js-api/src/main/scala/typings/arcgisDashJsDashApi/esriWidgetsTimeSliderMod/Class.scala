@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsTimeSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeSlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeSliderProperties
+import typings.arcgisDashJsDashApi.__esri.TimeSlider
+import typings.arcgisDashJsDashApi.__esri.TimeSliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

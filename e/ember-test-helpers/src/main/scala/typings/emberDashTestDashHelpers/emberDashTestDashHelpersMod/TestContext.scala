@@ -1,17 +1,17 @@
 package typings.emberDashTestDashHelpers.emberDashTestDashHelpersMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ember.emberMod.defaultNs.Application
-import typings.ember.emberMod.defaultNs.ApplicationInstance
-import typings.ember.emberMod.defaultNs.Container
-import typings.ember.emberMod.defaultNs.EventDispatcher
-import typings.ember.emberMod.defaultNs.Registry
+import typings.ember.emberMod.default.Application
+import typings.ember.emberMod.default.ApplicationInstance
+import typings.ember.emberMod.default.Container
+import typings.ember.emberMod.default.EventDispatcher
+import typings.ember.emberMod.default.Registry
 import typings.emberDashTestDashHelpers.Anon_Controller
 import typings.emberDashTestDashHelpers.Anon_FactoryFor
 import typings.jquery.JQuery
-import typings.jquery.JQueryNs.PlainObject
-import typings.jquery.JQueryNs.Selector
-import typings.jquery.JQueryNs.htmlString
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.htmlString
 import typings.jquery.JQueryStatic
 import typings.std.ArrayLike
 import typings.std.Document

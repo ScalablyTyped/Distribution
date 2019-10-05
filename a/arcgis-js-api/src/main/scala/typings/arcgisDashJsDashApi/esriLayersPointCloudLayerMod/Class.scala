@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersPointCloudLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneServiceVersion
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.PointCloudLayer
+import typings.arcgisDashJsDashApi.__esri.PointCloudLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.SceneServiceVersion
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,16 +13,5 @@ trait MSGesture extends js.Object {
 
 @JSGlobal("MSGesture")
 @js.native
-class MSGestureCls () extends MSGesture {
-  /* CompleteClass */
-  override var target: Element = js.native
-  /* CompleteClass */
-  override def addPointer(pointerId: Double): Unit = js.native
-  /* CompleteClass */
-  override def stop(): Unit = js.native
-}
-
-@JSGlobal("MSGesture")
-@js.native
 object MSGesture extends Instantiable0[MSGesture]
 

@@ -46,11 +46,11 @@ trait DescribeLaunchTemplateVersionsRequest extends js.Object {
 object DescribeLaunchTemplateVersionsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     MaxVersion: String = null,
     MinVersion: String = null,
     NextToken: String = null,
@@ -61,7 +61,7 @@ object DescribeLaunchTemplateVersionsRequest {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId)
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (MaxVersion != null) __obj.updateDynamic("MaxVersion")(MaxVersion)
     if (MinVersion != null) __obj.updateDynamic("MinVersion")(MinVersion)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

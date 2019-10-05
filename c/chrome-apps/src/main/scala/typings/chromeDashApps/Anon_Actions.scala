@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
+import typings.chromeDashApps.chrome.webViewRequest.DeclarativeWebRequestEventList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

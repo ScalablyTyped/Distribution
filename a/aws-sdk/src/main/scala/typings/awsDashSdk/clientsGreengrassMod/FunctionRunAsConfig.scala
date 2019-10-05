@@ -17,10 +17,10 @@ trait FunctionRunAsConfig extends js.Object {
 
 object FunctionRunAsConfig {
   @scala.inline
-  def apply(Gid: js.UndefOr[__integer] = js.undefined, Uid: js.UndefOr[__integer] = js.undefined): FunctionRunAsConfig = {
+  def apply(Gid: Int | Double = null, Uid: Int | Double = null): FunctionRunAsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Gid)) __obj.updateDynamic("Gid")(Gid)
-    if (!js.isUndefined(Uid)) __obj.updateDynamic("Uid")(Uid)
+    if (Gid != null) __obj.updateDynamic("Gid")(Gid.asInstanceOf[js.Any])
+    if (Uid != null) __obj.updateDynamic("Uid")(Uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionRunAsConfig]
   }
 }

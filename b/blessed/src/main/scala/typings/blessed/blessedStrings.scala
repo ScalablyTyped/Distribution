@@ -1,13 +1,13 @@
 package typings.blessed
 
-import typings.blessed.blessedMod.WidgetsNs.ListElementEventType
-import typings.blessed.blessedMod.WidgetsNs.NodeEventType
-import typings.blessed.blessedMod.WidgetsNs.NodeGenericEventType
-import typings.blessed.blessedMod.WidgetsNs.NodeMouseEventType
-import typings.blessed.blessedMod.WidgetsNs.NodeScreenEventType
-import typings.blessed.blessedMod.WidgetsNs.TextareaElementEventType
-import typings.blessed.blessedMod.WidgetsNs.TypesNs.TAlign
-import typings.blessed.blessedMod.WidgetsNs.TypesNs.TMouseAction
+import typings.blessed.blessedMod.Widgets.ListElementEventType
+import typings.blessed.blessedMod.Widgets.NodeEventType
+import typings.blessed.blessedMod.Widgets.NodeGenericEventType
+import typings.blessed.blessedMod.Widgets.NodeMouseEventType
+import typings.blessed.blessedMod.Widgets.NodeScreenEventType
+import typings.blessed.blessedMod.Widgets.TextareaElementEventType
+import typings.blessed.blessedMod.Widgets.Types.TAlign
+import typings.blessed.blessedMod.Widgets.Types.TMouseAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

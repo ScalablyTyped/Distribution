@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.GlobalizationNs.CollationNs.CharacterGrouping
+import typings.winrt.Windows.Globalization.Collation.CharacterGrouping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

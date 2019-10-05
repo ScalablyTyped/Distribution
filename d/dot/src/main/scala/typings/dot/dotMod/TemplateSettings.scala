@@ -1,5 +1,6 @@
 package typings.dot.dotMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,4 +44,8 @@ object TemplateSettings {
     __obj.asInstanceOf[TemplateSettings]
   }
 }
+
+@JSImport("dot", "templateSettings")
+@js.native
+object templateSettings extends TopLevel[TemplateSettings]
 

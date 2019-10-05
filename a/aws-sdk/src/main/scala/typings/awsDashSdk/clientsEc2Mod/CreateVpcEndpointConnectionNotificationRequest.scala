@@ -37,7 +37,7 @@ object CreateVpcEndpointConnectionNotificationRequest {
     ConnectionEvents: ValueStringList,
     ConnectionNotificationArn: String,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ServiceId: String = null,
     VpcEndpointId: String = null
   ): CreateVpcEndpointConnectionNotificationRequest = {

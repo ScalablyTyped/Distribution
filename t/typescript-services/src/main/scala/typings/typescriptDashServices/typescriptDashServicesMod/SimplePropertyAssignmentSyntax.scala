@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SimplePropertyAssignmentSyntax")
 @js.native
 class SimplePropertyAssignmentSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SimplePropertyAssignmentSyntax {
+  extends typings.typescriptDashServices.TypeScript.SimplePropertyAssignmentSyntax {
   def this(
     propertyName: ISyntaxToken,
     colonToken: ISyntaxToken,
@@ -22,6 +22,6 @@ class SimplePropertyAssignmentSyntax protected ()
 @JSImport("typescript-services", "SimplePropertyAssignmentSyntax")
 @js.native
 object SimplePropertyAssignmentSyntax extends js.Object {
-  def create1(propertyName: ISyntaxToken, expression: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.SimplePropertyAssignmentSyntax = js.native
+  def create1(propertyName: ISyntaxToken, expression: IExpressionSyntax): typings.typescriptDashServices.TypeScript.SimplePropertyAssignmentSyntax = js.native
 }
 

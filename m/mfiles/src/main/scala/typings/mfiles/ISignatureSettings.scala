@@ -1,6 +1,6 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFSignaturePromptInfoType
+import typings.mfiles.MFiles.MFSignaturePromptInfoType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

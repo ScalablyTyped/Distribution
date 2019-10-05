@@ -14,11 +14,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashLeaflet.reactDashLeafletMod.MapComponentProps because var conflicts: pane. Inlined leaflet
 - typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait CircleProps
   extends CircleMarkerOptions
      with PathEvents {
   var center: LatLngExpression
   var children: js.UndefOr[Children] = js.undefined
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   @JSName("radius")
   var radius_CircleProps: Double
 }

@@ -18,7 +18,7 @@ trait VpnConnectionOptionsSpecification extends js.Object {
 object VpnConnectionOptionsSpecification {
   @scala.inline
   def apply(
-    StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined,
+    StaticRoutesOnly: js.UndefOr[scala.Boolean] = js.undefined,
     TunnelOptions: VpnTunnelOptionsSpecificationsList = null
   ): VpnConnectionOptionsSpecification = {
     val __obj = js.Dynamic.literal()

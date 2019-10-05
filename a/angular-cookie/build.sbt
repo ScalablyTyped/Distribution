@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "angular-cookie"
-version := "v4.1.0-dt-20190322Z-8a9e42"
-scalaVersion := "2.12.9"
+version := "v4.1.0-dt-20190322Z-d595fb"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

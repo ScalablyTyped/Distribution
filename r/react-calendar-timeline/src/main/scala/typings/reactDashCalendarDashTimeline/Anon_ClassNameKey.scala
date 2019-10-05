@@ -1,10 +1,15 @@
 package typings.reactDashCalendarDashTimeline
 
 import typings.react.Element
+import typings.react.Event
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.Ref
+import typings.react.reactMod.SyntheticEvent
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,17 +33,17 @@ object Anon_ClassNameKey {
   def apply(
     className: String,
     key: Double,
-    onContextMenu: ReactEventHandler[Element],
-    onDoubleClick: MouseEventHandler[Element],
-    onMouseDown: MouseEventHandler[Element],
-    onMouseUp: MouseEventHandler[Element],
-    onTouchEnd: TouchEventHandler[Element],
-    onTouchStart: TouchEventHandler[Element],
-    ref: Ref[_],
-    style: CSSProperties
+    onContextMenu: SyntheticEvent[Element, Event] => Unit,
+    onDoubleClick: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseUp: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onTouchEnd: TouchEvent[Element] => Unit,
+    onTouchStart: TouchEvent[Element] => Unit,
+    style: CSSProperties,
+    ref: Ref[_] = null
   ): Anon_ClassNameKey = {
-    val __obj = js.Dynamic.literal(className = className, key = key, onContextMenu = onContextMenu, onDoubleClick = onDoubleClick, onMouseDown = onMouseDown, onMouseUp = onMouseUp, onTouchEnd = onTouchEnd, onTouchStart = onTouchStart, ref = ref.asInstanceOf[js.Any], style = style)
-  
+    val __obj = js.Dynamic.literal(className = className, key = key, onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassNameKey]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.MarkerClusterGroup")
+@JSImport("leaflet", "MarkerClusterGroup")
 @js.native
 class MarkerClusterGroup ()
   extends FeatureGroup[js.Any] {
@@ -47,5 +47,15 @@ class MarkerClusterGroup ()
     */
   def zoomToShowLayer(layer: Layer): Unit = js.native
   def zoomToShowLayer(layer: Layer, callback: js.Function0[Unit]): Unit = js.native
+}
+
+@JSImport("leaflet", "markerClusterGroup")
+@js.native
+object markerClusterGroup extends js.Object {
+  /*
+    * Create a marker cluster group, optionally given marker cluster group options.
+    */
+  def apply(): MarkerClusterGroup = js.native
+  def apply(options: MarkerClusterGroupOptions): MarkerClusterGroup = js.native
 }
 

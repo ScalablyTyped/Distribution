@@ -1,10 +1,10 @@
 package typings.reactDashDates.reactDashDatesMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashDates.Anon_CurrentMonth
 import typings.reactDashDates.Anon_EndDateStartDate
 import typings.reactDashDates.Anon_Focused
-import typings.reactDashDates.reactDashDatesMod.momentPropTypesNs.momentObj
+import typings.reactDashDates.reactDashDatesMod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

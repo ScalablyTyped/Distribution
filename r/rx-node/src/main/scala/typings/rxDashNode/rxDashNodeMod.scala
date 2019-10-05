@@ -1,11 +1,11 @@
 package typings.rxDashNode
 
-import typings.node.NodeJSNs.ReadWriteStream
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
-import typings.rxDashLite.RxNs.Disposable
-import typings.rxDashLiteDashAggregates.RxNs.Observable
-import typings.rxDashNode.RxNodeNs.PublishableEventEmitter
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
+import typings.rxDashLite.Rx.Disposable
+import typings.rxDashLiteDashAggregates.Rx.Observable
+import typings.rxDashNode.RxNode.PublishableEventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

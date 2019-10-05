@@ -1,8 +1,8 @@
 package typings.inversifyDashRestifyDashUtils
 
-import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfacesNs.HandlerDecorator
-import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfacesNs.Middleware
-import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfacesNs.RouteOptions
+import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfaces.HandlerDecorator
+import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfaces.Middleware
+import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfaces.RouteOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

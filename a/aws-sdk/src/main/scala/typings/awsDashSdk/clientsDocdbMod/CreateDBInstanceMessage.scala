@@ -50,17 +50,17 @@ object CreateDBInstanceMessage {
     DBInstanceClass: String,
     DBInstanceIdentifier: String,
     Engine: String,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
     PreferredMaintenanceWindow: String = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined,
+    PromotionTier: Int | Double = null,
     Tags: TagList = null
   ): CreateDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, DBInstanceClass = DBInstanceClass, DBInstanceIdentifier = DBInstanceIdentifier, Engine = Engine)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier)
+    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateDBInstanceMessage]
   }

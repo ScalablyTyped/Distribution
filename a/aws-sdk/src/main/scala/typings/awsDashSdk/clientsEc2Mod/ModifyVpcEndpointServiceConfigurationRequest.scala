@@ -31,9 +31,9 @@ object ModifyVpcEndpointServiceConfigurationRequest {
   @scala.inline
   def apply(
     ServiceId: String,
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     AddNetworkLoadBalancerArns: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RemoveNetworkLoadBalancerArns: ValueStringList = null
   ): ModifyVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId)

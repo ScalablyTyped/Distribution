@@ -27,7 +27,7 @@ object ConfigProviderProps {
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     locale: Locale = null,
     prefixCls: String = null,
-    renderEmpty: RenderEmptyHandler = null
+    renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null
   ): ConfigProviderProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton)
@@ -36,7 +36,7 @@ object ConfigProviderProps {
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(renderEmpty)
+    if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(js.Any.fromFunction1(renderEmpty))
     __obj.asInstanceOf[ConfigProviderProps]
   }
 }

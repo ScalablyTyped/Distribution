@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBookmarksMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Bookmarks
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BookmarksProperties
+import typings.arcgisDashJsDashApi.__esri.Bookmarks
+import typings.arcgisDashJsDashApi.__esri.BookmarksProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

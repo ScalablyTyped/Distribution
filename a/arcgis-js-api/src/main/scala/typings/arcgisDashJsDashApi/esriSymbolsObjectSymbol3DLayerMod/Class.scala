@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsObjectSymbol3DLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ObjectSymbol3DLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ObjectSymbol3DLayerProperties
+import typings.arcgisDashJsDashApi.__esri.ObjectSymbol3DLayer
+import typings.arcgisDashJsDashApi.__esri.ObjectSymbol3DLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

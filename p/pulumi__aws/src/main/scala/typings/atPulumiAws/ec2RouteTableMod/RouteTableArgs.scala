@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2RouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.RouteTableRoute
+import typings.atPulumiAws.typesInputMod.ec2.RouteTableRoute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

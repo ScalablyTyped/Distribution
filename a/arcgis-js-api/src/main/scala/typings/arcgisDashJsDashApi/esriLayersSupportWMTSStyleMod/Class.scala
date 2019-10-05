@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportWMTSStyleMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WMTSStyle
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WMTSStyleProperties
+import typings.arcgisDashJsDashApi.__esri.WMTSStyle
+import typings.arcgisDashJsDashApi.__esri.WMTSStyleProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

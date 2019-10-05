@@ -50,10 +50,10 @@ object DescribeDBSnapshotsMessage {
     DBSnapshotIdentifier: String = null,
     DbiResourceId: String = null,
     Filters: FilterList = null,
-    IncludePublic: js.UndefOr[Boolean] = js.undefined,
-    IncludeShared: js.UndefOr[Boolean] = js.undefined,
+    IncludePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeShared: js.UndefOr[scala.Boolean] = js.undefined,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     SnapshotType: String = null
   ): DescribeDBSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
@@ -64,7 +64,7 @@ object DescribeDBSnapshotsMessage {
     if (!js.isUndefined(IncludePublic)) __obj.updateDynamic("IncludePublic")(IncludePublic)
     if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType)
     __obj.asInstanceOf[DescribeDBSnapshotsMessage]
   }

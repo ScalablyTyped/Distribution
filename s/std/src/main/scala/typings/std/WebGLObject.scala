@@ -9,9 +9,5 @@ trait WebGLObject extends js.Object
 
 @JSGlobal("WebGLObject")
 @js.native
-class WebGLObjectCls () extends WebGLObject
-
-@JSGlobal("WebGLObject")
-@js.native
 object WebGLObject extends Instantiable0[WebGLObject]
 

@@ -1,6 +1,7 @@
 package typings.tern.libInferMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.tern.Anon_Constraint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,4 +44,8 @@ object Constraint {
     __obj.asInstanceOf[Constraint]
   }
 }
+
+@JSImport("tern/lib/infer", "constraint")
+@js.native
+object constraint extends TopLevel[ConstraintConstructor]
 

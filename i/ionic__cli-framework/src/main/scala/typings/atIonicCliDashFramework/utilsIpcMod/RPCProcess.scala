@@ -1,6 +1,6 @@
 package typings.atIonicCliDashFramework.utilsIpcMod
 
-import typings.node.NodeJSNs.Process
+import typings.node.NodeJS.Process
 import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.std.Map
 import scala.scalajs.js

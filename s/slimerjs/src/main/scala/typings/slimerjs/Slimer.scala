@@ -1,5 +1,6 @@
 package typings.slimerjs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,4 +16,8 @@ trait Slimer extends js.Object {
   def isExiting(): Boolean = js.native
   def wait(milliseconds: Double): Unit = js.native
 }
+
+@JSGlobal("slimer")
+@js.native
+object slimer extends TopLevel[Slimer]
 

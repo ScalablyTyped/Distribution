@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/math/Math", JSImport.Namespace)
 @js.native
 object srcMathMathMod extends js.Object {
-  @JSName("_Math")
   @js.native
-  object underscoreMathNs extends js.Object {
+  object _Math extends js.Object {
     val DEG2RAD: Double = js.native
     val RAD2DEG: Double = js.native
     def ceilPowerOfTwo(value: Double): Double = js.native

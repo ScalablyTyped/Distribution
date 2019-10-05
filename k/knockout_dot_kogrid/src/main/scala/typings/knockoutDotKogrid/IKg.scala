@@ -1,6 +1,6 @@
 package typings.knockoutDotKogrid
 
-import typings.knockoutDotKogrid.kgNs.DomUtilityService
+import typings.knockoutDotKogrid.kg.DomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

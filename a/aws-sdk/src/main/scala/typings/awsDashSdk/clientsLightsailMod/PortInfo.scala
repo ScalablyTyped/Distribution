@@ -21,15 +21,11 @@ trait PortInfo extends js.Object {
 
 object PortInfo {
   @scala.inline
-  def apply(
-    fromPort: js.UndefOr[Port] = js.undefined,
-    protocol: NetworkProtocol = null,
-    toPort: js.UndefOr[Port] = js.undefined
-  ): PortInfo = {
+  def apply(fromPort: Int | Double = null, protocol: NetworkProtocol = null, toPort: Int | Double = null): PortInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fromPort)) __obj.updateDynamic("fromPort")(fromPort)
+    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPort)) __obj.updateDynamic("toPort")(toPort)
+    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortInfo]
   }
 }

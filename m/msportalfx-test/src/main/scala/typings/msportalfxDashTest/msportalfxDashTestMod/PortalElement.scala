@@ -1,6 +1,6 @@
 package typings.msportalfxDashTest.msportalfxDashTestMod
 
-import typings.msportalfxDashTest.msportalfxDashTestMod.LocatorsNs.Locator
+import typings.msportalfxDashTest.msportalfxDashTestMod.Locators.Locator
 import typings.q.qMod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`

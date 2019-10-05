@@ -34,7 +34,7 @@ object reactDashFnsComponents extends reactDashFnsProps {
   def Locales: ComponentType[SharedRenderProps[typings.reactDashFns.distLocalesLocalesMod.LocalesProps]] = js.constructorOf[typings.reactDashFns.distLocalesMod.Locales].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashFns.distTypesMod.SharedRenderProps[typings.reactDashFns.distLocalesLocalesMod.LocalesProps]]]
   @scala.inline
-  def Media: ComponentType[SharedRenderProps[typings.reactDashFns.distMediaMediaMod.MediaProps]] = typings.reactDashFns.reactDashFnsMod.^.Media.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Media: ComponentType[SharedRenderProps[typings.reactDashFns.distMediaMediaMod.MediaProps]] = typings.reactDashFns.distMediaMod.Media.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashFns.distTypesMod.SharedRenderProps[typings.reactDashFns.distMediaMediaMod.MediaProps]]]
   @scala.inline
   def Network: ComponentType[SharedRenderProps[typings.reactDashFns.distNetworkNetworkMod.NetworkProps]] = js.constructorOf[typings.reactDashFns.distNetworkMod.Network].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -45,8 +45,5 @@ object reactDashFnsComponents extends reactDashFnsProps {
   @scala.inline
   def WindowSize: ComponentType[WindowSizeConfig with SharedRenderProps[WindowSizeProps]] = js.constructorOf[typings.reactDashFns.reactDashFnsMod.WindowSize].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashFns.distWindowSizeWindowSizeMod.WindowSizeConfig with typings.reactDashFns.distTypesMod.SharedRenderProps[typings.reactDashFns.distWindowSizeWindowSizeMod.WindowSizeProps]]]
-  @scala.inline
-  def distMediaModMedia: ComponentType[SharedRenderProps[typings.reactDashFns.distMediaMediaMod.MediaProps]] = typings.reactDashFns.distMediaMod.Media.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashFns.distTypesMod.SharedRenderProps[typings.reactDashFns.distMediaMediaMod.MediaProps]]]
 }
 

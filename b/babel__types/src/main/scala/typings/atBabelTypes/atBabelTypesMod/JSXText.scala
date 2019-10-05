@@ -38,3 +38,9 @@ object JSXText {
   }
 }
 
+@JSImport("@babel/types", "jsxText")
+@js.native
+object jsxText extends js.Object {
+  def apply(value: String): JSXText = js.native
+}
+

@@ -5,7 +5,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSugges
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsControlProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

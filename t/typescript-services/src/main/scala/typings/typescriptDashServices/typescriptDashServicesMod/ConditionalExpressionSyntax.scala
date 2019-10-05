@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ConditionalExpressionSyntax")
 @js.native
 class ConditionalExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ConditionalExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.ConditionalExpressionSyntax {
   def this(
     condition: IExpressionSyntax,
     questionToken: ISyntaxToken,
@@ -24,6 +24,6 @@ class ConditionalExpressionSyntax protected ()
 @JSImport("typescript-services", "ConditionalExpressionSyntax")
 @js.native
 object ConditionalExpressionSyntax extends js.Object {
-  def create1(condition: IExpressionSyntax, whenTrue: IExpressionSyntax, whenFalse: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.ConditionalExpressionSyntax = js.native
+  def create1(condition: IExpressionSyntax, whenTrue: IExpressionSyntax, whenFalse: IExpressionSyntax): typings.typescriptDashServices.TypeScript.ConditionalExpressionSyntax = js.native
 }
 

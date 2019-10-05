@@ -25,9 +25,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-dialogflow", JSImport.Namespace)
 @js.native
 object reactDashNativeDashDialogflowMod extends js.Object {
-  @JSName("Dialogflow")
   @js.native
-  object DialogflowNs extends js.Object {
+  object Dialogflow extends js.Object {
     val LANG_CHINESE_CHINA: `zh-CN` = js.native
     val LANG_CHINESE_HONGKONG: `zh-HK` = js.native
     val LANG_CHINESE_TAIWAN: `zh-TW` = js.native
@@ -74,9 +73,8 @@ object reactDashNativeDashDialogflowMod extends js.Object {
     ): Unit = js.native
   }
   
-  @JSName("Dialogflow_V2")
   @js.native
-  object DialogflowUnderscoreV2Ns extends js.Object {
+  object Dialogflow_V2 extends js.Object {
     val LANG_CHINESE_CHINA: `zh-CN` = js.native
     val LANG_CHINESE_HONGKONG: `zh-HK` = js.native
     val LANG_CHINESE_TAIWAN: `zh-TW` = js.native

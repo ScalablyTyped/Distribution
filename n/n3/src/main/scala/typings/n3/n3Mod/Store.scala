@@ -1,5 +1,6 @@
 package typings.n3.n3Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.eventsMod.EventEmitter
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js
@@ -24,4 +25,8 @@ class Store[Q_RDF /* <: typings.rdfDashJs.rdfDashJsMod.BaseQuad */, Q_N3 /* <: B
   /* CompleteClass */
   override def `import`(stream: Stream[Q_RDF]): EventEmitter = js.native
 }
+
+@JSImport("n3", "Store")
+@js.native
+object Store extends TopLevel[StoreConstructor]
 

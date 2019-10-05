@@ -1,11 +1,11 @@
 package typings.atPulumiAws.cloudwatchEventTargetMod
 
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetBatchTarget
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetEcsTarget
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetInputTransformer
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetKinesisTarget
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetRunCommandTarget
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.EventTargetSqsTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetBatchTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetEcsTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetInputTransformer
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetKinesisTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetRunCommandTarget
+import typings.atPulumiAws.typesOutputMod.cloudwatch.EventTargetSqsTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

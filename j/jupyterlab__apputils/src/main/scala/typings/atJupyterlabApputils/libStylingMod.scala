@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/apputils/lib/styling", JSImport.Namespace)
 @js.native
 object libStylingMod extends js.Object {
-  @JSName("Styling")
   @js.native
-  object StylingNs extends js.Object {
+  object Styling extends js.Object {
     /**
       * Style a node and its child elements with the default tag names.
       *

@@ -19,7 +19,7 @@ object Options {
     allowUnknownAttributes: js.UndefOr[Boolean] = js.undefined,
     base: String = null,
     propertyName: String = null,
-    rewrite: RewriteFunction = null,
+    rewrite: (/* instance */ js.Any, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => js.Any = null,
     skipAttributes: js.Array[String] = null,
     throwError: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -27,7 +27,7 @@ object Options {
     if (!js.isUndefined(allowUnknownAttributes)) __obj.updateDynamic("allowUnknownAttributes")(allowUnknownAttributes)
     if (base != null) __obj.updateDynamic("base")(base)
     if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
-    if (rewrite != null) __obj.updateDynamic("rewrite")(rewrite)
+    if (rewrite != null) __obj.updateDynamic("rewrite")(js.Any.fromFunction4(rewrite))
     if (skipAttributes != null) __obj.updateDynamic("skipAttributes")(skipAttributes)
     if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError)
     __obj.asInstanceOf[Options]

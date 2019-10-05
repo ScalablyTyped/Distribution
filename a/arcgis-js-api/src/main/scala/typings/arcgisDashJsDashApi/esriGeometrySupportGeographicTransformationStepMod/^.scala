@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportGeographicTransformationStepMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeographicTransformationStepConstructor
+import typings.arcgisDashJsDashApi.__esri.GeographicTransformationStepConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

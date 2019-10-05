@@ -17,8 +17,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.sm
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.atOracleOraclejetStrings.xs
 import typings.atOracleOraclejet.ojcolorMod.^
-import typings.atOracleOraclejet.ojcolorpaletteMod.ojColorPaletteNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojcolorpaletteMod.ojColorPaletteNs.ojAnimateStart
+import typings.atOracleOraclejet.ojcolorpaletteMod.ojColorPalette.ojAnimateEnd
+import typings.atOracleOraclejet.ojcolorpaletteMod.ojColorPalette.ojAnimateStart
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent

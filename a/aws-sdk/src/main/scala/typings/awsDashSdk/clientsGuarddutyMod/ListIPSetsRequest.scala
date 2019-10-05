@@ -21,13 +21,9 @@ trait ListIPSetsRequest extends js.Object {
 
 object ListIPSetsRequest {
   @scala.inline
-  def apply(
-    DetectorId: DetectorId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: String = null
-  ): ListIPSetsRequest = {
+  def apply(DetectorId: DetectorId, MaxResults: Int | scala.Double = null, NextToken: String = null): ListIPSetsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListIPSetsRequest]
   }

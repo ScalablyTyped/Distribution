@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-ouralabs"
-version := "1.1.0-dt-20190322Z-d332cf"
-scalaVersion := "2.12.9"
+version := "1.1.0-dt-20190322Z-017b2b"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

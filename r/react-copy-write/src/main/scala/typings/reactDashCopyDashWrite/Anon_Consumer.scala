@@ -2,6 +2,7 @@ package typings.reactDashCopyDashWrite
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.Consumer
+import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.MutateFn
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.Mutator
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.Provider
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.SelectorFn
@@ -21,10 +22,10 @@ object Anon_Consumer {
   def apply[T /* <: js.Object */](
     Consumer: Instantiable0[Consumer[T]],
     Provider: Instantiable0[Provider[T]],
-    createSelector: SelectorFn[T],
-    mutate: Mutator[T]
+    createSelector: T => AnyDeepMemberOfState[T],
+    mutate: /* mutator */ MutateFn[T] => Unit
   ): Anon_Consumer[T] = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider, createSelector = createSelector, mutate = mutate)
+    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider, createSelector = js.Any.fromFunction1(createSelector), mutate = js.Any.fromFunction1(mutate))
   
     __obj.asInstanceOf[Anon_Consumer[T]]
   }

@@ -1,6 +1,6 @@
 package typings.binaryDashParser
 
-import typings.binaryDashParser.binaryDashParserMod.ParserNs.Endianness
+import typings.binaryDashParser.binaryDashParserMod.Parser.Endianness
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

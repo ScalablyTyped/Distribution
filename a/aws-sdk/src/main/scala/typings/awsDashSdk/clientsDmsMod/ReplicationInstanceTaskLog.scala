@@ -22,12 +22,12 @@ trait ReplicationInstanceTaskLog extends js.Object {
 object ReplicationInstanceTaskLog {
   @scala.inline
   def apply(
-    ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.undefined,
+    ReplicationInstanceTaskLogSize: Int | Double = null,
     ReplicationTaskArn: String = null,
     ReplicationTaskName: String = null
   ): ReplicationInstanceTaskLog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReplicationInstanceTaskLogSize)) __obj.updateDynamic("ReplicationInstanceTaskLogSize")(ReplicationInstanceTaskLogSize)
+    if (ReplicationInstanceTaskLogSize != null) __obj.updateDynamic("ReplicationInstanceTaskLogSize")(ReplicationInstanceTaskLogSize.asInstanceOf[js.Any])
     if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn)
     if (ReplicationTaskName != null) __obj.updateDynamic("ReplicationTaskName")(ReplicationTaskName)
     __obj.asInstanceOf[ReplicationInstanceTaskLog]

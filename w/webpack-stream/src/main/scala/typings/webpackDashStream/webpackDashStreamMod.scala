@@ -1,7 +1,7 @@
 package typings.webpackDashStream
 
-import typings.node.NodeJSNs.ReadWriteStream
-import typings.webpack.webpackMod.CompilerNs.Handler
+import typings.node.NodeJS.ReadWriteStream
+import typings.webpack.webpackMod.Compiler.Handler
 import typings.webpack.webpackMod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`

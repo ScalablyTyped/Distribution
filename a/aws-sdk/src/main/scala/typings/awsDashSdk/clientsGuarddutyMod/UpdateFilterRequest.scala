@@ -39,13 +39,13 @@ object UpdateFilterRequest {
     Action: FilterAction = null,
     Description: FilterDescription = null,
     FindingCriteria: FindingCriteria = null,
-    Rank: js.UndefOr[FilterRank] = js.undefined
+    Rank: Int | scala.Double = null
   ): UpdateFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FilterName = FilterName)
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (FindingCriteria != null) __obj.updateDynamic("FindingCriteria")(FindingCriteria)
-    if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank)
+    if (Rank != null) __obj.updateDynamic("Rank")(Rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFilterRequest]
   }
 }

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait AdminSetUserSettingsRequest extends js.Object {
   /**
-    * Specifies the options for MFA (e.g., email or phone number).
+    * You can use this parameter only to set an SMS configuration that uses SMS for delivery.
     */
   var MFAOptions: MFAOptionListType
   /**
-    * The user pool ID for the user pool where you want to set the user's settings, such as MFA options.
+    * The ID of the user pool that contains the user that you are setting options for.
     */
   var UserPoolId: UserPoolIdType
   /**
-    * The user name of the user for whom you wish to set user settings.
+    * The user name of the user that you are setting options for.
     */
   var Username: UsernameType
 }

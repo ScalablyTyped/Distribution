@@ -1,7 +1,7 @@
 package typings.atPulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atPulumiPulumi.outputMod.Output
-import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,14 +35,5 @@ trait Service extends js.Object {
 
 @JSImport("@pulumi/cloud/service", "Service")
 @js.native
-class ServiceCls protected () extends Service {
-  /**
-    * Construct a new Service, which is one or more managed replicas of a group of one or more Containers.
-    *
-    * @param name The unique name of the service.
-    * @param opts A bag of options that controls how this resource behaves.
-    */
-  def this(name: String, args: ServiceArguments) = this()
-  def this(name: String, args: ServiceArguments, opts: ResourceOptions) = this()
-}
+object Service extends TopLevel[ServiceConstructor]
 

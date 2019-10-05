@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashDropdown.reactDashNativeDashMaterialDashDropdownMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole

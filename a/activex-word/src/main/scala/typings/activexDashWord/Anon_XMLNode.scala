@@ -1,12 +1,12 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.XMLNode
+import typings.activexDashWord.Word.XMLNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_XMLNode extends js.Object {
-  val XMLNode: typings.activexDashWord.WordNs.XMLNode
+  val XMLNode: typings.activexDashWord.Word.XMLNode
 }
 
 object Anon_XMLNode {

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticacheParameterGroupMod
 
-import typings.atPulumiAws.typesInputMod.elasticacheNs.ParameterGroupParameter
+import typings.atPulumiAws.typesInputMod.elasticache.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

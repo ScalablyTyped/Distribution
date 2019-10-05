@@ -1,0 +1,19 @@
+package typings.activexDashInfopath.InfoPath
+
+import typings.activexDashMsxml2.MSXML2.IXMLDOMNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("InfoPath.ErrorObject")
+@js.native
+class ErrorObject protected () extends js.Object {
+  val ConditionName: js.Any = js.native
+  var DetailedErrorMessage: String = js.native
+  var ErrorCode: Double = js.native
+  var `InfoPath.ErrorObject_typekey`: ErrorObject = js.native
+  val Node: IXMLDOMNode = js.native
+  var ShortErrorMessage: String = js.native
+  val Type: String = js.native
+}
+

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "IndexSignature")
 @js.native
 class IndexSignature protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.IndexSignature {
+  extends typings.typescriptDashServices.TypeScript.IndexSignature {
   def this(
-    parameter: typings.typescriptDashServices.TypeScriptNs.Parameter,
-    typeAnnotation: typings.typescriptDashServices.TypeScriptNs.TypeAnnotation
+    parameter: typings.typescriptDashServices.TypeScript.Parameter,
+    typeAnnotation: typings.typescriptDashServices.TypeScript.TypeAnnotation
   ) = this()
 }
 

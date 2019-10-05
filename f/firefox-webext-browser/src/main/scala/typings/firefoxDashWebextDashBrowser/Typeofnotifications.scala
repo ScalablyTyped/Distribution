@@ -1,9 +1,9 @@
 package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.notificationsNs.CreateNotificationOptions
-import typings.firefoxDashWebextDashBrowser.browserNs.notificationsNs.PermissionLevel
-import typings.firefoxDashWebextDashBrowser.browserNs.notificationsNs.UpdateNotificationOptions
+import typings.firefoxDashWebextDashBrowser.browser.notifications.CreateNotificationOptions
+import typings.firefoxDashWebextDashBrowser.browser.notifications.PermissionLevel
+import typings.firefoxDashWebextDashBrowser.browser.notifications.UpdateNotificationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.CoreNs.Node
+import typings.webgme.Core.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

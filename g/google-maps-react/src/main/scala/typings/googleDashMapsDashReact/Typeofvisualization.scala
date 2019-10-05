@@ -2,23 +2,23 @@ package typings.googleDashMapsDashReact
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.googlemaps.googleNs.mapsNs.visualizationNs.HeatmapLayer
-import typings.googlemaps.googleNs.mapsNs.visualizationNs.MapsEngineLayer
-import typings.googlemaps.googleNs.mapsNs.visualizationNs.MapsEngineLayerOptions
-import typings.googlemaps.googleNs.mapsNs.visualizationNs.MapsEventListener
-import typings.googlemaps.googleNs.mapsNs.visualizationNs.MouseEvent
+import typings.googlemaps.google.maps.visualization.HeatmapLayer
+import typings.googlemaps.google.maps.visualization.MapsEngineLayer
+import typings.googlemaps.google.maps.visualization.MapsEngineLayerOptions
+import typings.googlemaps.google.maps.visualization.MapsEventListener
+import typings.googlemaps.google.maps.visualization.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofvisualization extends js.Object {
-  var HeatmapLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.visualizationNs.HeatmapLayer]
+  var HeatmapLayer: Instantiable0[typings.googlemaps.google.maps.visualization.HeatmapLayer]
   var MapsEngineLayer: Instantiable1[
     /* options */ MapsEngineLayerOptions, 
-    typings.googlemaps.googleNs.mapsNs.visualizationNs.MapsEngineLayer
+    typings.googlemaps.google.maps.visualization.MapsEngineLayer
   ]
-  var MapsEventListener: Instantiable0[typings.googlemaps.googleNs.mapsNs.visualizationNs.MapsEventListener]
-  var MouseEvent: Instantiable0[typings.googlemaps.googleNs.mapsNs.visualizationNs.MouseEvent]
+  var MapsEventListener: Instantiable0[typings.googlemaps.google.maps.visualization.MapsEventListener]
+  var MouseEvent: Instantiable0[typings.googlemaps.google.maps.visualization.MouseEvent]
 }
 
 object Typeofvisualization {

@@ -84,7 +84,7 @@ object CreateChangeSetInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
+    UsePreviousTemplate: js.UndefOr[Boolean] = js.undefined
   ): CreateChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName, StackName = StackName)
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities)

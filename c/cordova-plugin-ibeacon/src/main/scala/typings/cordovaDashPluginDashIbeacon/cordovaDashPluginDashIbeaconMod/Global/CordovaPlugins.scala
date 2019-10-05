@@ -1,6 +1,6 @@
 package typings.cordovaDashPluginDashIbeacon.cordovaDashPluginDashIbeaconMod.Global
 
-import typings.cordovaDashPluginDashIbeacon.cordovaDashPluginDashIbeaconMod.Global.BeaconPluginNs.LocationManager
+import typings.cordovaDashPluginDashIbeacon.cordovaDashPluginDashIbeaconMod.Global.BeaconPlugin.LocationManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

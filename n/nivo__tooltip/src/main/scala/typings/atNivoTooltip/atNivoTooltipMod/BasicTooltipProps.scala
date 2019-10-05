@@ -24,19 +24,20 @@ object BasicTooltipProps {
   @scala.inline
   def apply(
     color: String,
-    id: ReactNode,
     theme: Pick[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ _, 
       tooltip
     ],
     enableChip: js.UndefOr[Boolean] = js.undefined,
     format: /* value */ Double | String => Double | String = null,
+    id: ReactNode = null,
     renderContent: () => ReactNode = null,
     value: String | Double = null
   ): BasicTooltipProps = {
-    val __obj = js.Dynamic.literal(color = color, id = id.asInstanceOf[js.Any], theme = theme)
+    val __obj = js.Dynamic.literal(color = color, theme = theme)
     if (!js.isUndefined(enableChip)) __obj.updateDynamic("enableChip")(enableChip)
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (renderContent != null) __obj.updateDynamic("renderContent")(js.Any.fromFunction0(renderContent))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicTooltipProps]

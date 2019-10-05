@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsConsequent
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.StatementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.SwitchCase
+import typings.astDashTypes.genNamedTypesMod.namedTypes.SwitchCase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

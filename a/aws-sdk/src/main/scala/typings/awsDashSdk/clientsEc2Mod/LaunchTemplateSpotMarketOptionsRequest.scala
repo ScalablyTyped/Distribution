@@ -30,14 +30,14 @@ trait LaunchTemplateSpotMarketOptionsRequest extends js.Object {
 object LaunchTemplateSpotMarketOptionsRequest {
   @scala.inline
   def apply(
-    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
+    BlockDurationMinutes: Int | scala.Double = null,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
     MaxPrice: String = null,
     SpotInstanceType: SpotInstanceType = null,
     ValidUntil: DateTime = null
   ): LaunchTemplateSpotMarketOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes)
+    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
     if (MaxPrice != null) __obj.updateDynamic("MaxPrice")(MaxPrice)
     if (SpotInstanceType != null) __obj.updateDynamic("SpotInstanceType")(SpotInstanceType.asInstanceOf[js.Any])

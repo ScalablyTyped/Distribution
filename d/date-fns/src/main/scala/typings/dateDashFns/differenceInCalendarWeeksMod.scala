@@ -8,13 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/differenceInCalendarWeeks", JSImport.Namespace)
 @js.native
 object differenceInCalendarWeeksMod extends js.Object {
-  def default(dateLeft: Double, dateRight: Double): Double = js.native
-  def default(dateLeft: Double, dateRight: Double, options: Anon_01): Double = js.native
-  def default(dateLeft: Double, dateRight: Date): Double = js.native
-  def default(dateLeft: Double, dateRight: Date, options: Anon_01): Double = js.native
-  def default(dateLeft: Date, dateRight: Double): Double = js.native
-  def default(dateLeft: Date, dateRight: Double, options: Anon_01): Double = js.native
-  def default(dateLeft: Date, dateRight: Date): Double = js.native
-  def default(dateLeft: Date, dateRight: Date, options: Anon_01): Double = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(dateLeft: Double, dateRight: Double): Double = js.native
+    def apply(dateLeft: Double, dateRight: Double, options: Anon_01): Double = js.native
+    def apply(dateLeft: Double, dateRight: Date): Double = js.native
+    def apply(dateLeft: Double, dateRight: Date, options: Anon_01): Double = js.native
+    def apply(dateLeft: Date, dateRight: Double): Double = js.native
+    def apply(dateLeft: Date, dateRight: Double, options: Anon_01): Double = js.native
+    def apply(dateLeft: Date, dateRight: Date): Double = js.native
+    def apply(dateLeft: Date, dateRight: Date, options: Anon_01): Double = js.native
+  }
+  
 }
 

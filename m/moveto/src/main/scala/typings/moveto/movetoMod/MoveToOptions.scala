@@ -32,14 +32,14 @@ trait MoveToOptions extends js.Object {
 object MoveToOptions {
   @scala.inline
   def apply(
-    callback: callbackType = null,
+    callback: /* target */ HTMLElement | Double => Unit = null,
     container: Window | HTMLElement = null,
     duration: Int | Double = null,
     easing: String = null,
     tolerance: Int | Double = null
   ): MoveToOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)

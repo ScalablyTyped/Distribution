@@ -17,9 +17,12 @@ trait IDatePickerStyles extends js.Object {
 
 object IDatePickerStyles {
   @scala.inline
-  def apply(callout: IStyle, icon: IStyle, root: IStyle, textField: IStyle): IDatePickerStyles = {
-    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], textField = textField.asInstanceOf[js.Any])
-  
+  def apply(callout: IStyle = null, icon: IStyle = null, root: IStyle = null, textField: IStyle = null): IDatePickerStyles = {
+    val __obj = js.Dynamic.literal()
+    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerStyles]
   }
 }

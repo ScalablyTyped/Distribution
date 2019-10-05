@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Sound")
 @js.native
 class Sound protected ()
-  extends typings.playcanvas.pcNs.Sound {
+  extends typings.playcanvas.pc.Sound {
   def this(resource: AudioBuffer) = this()
   def this(resource: HTMLAudioElement) = this()
 }

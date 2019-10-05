@@ -1,7 +1,7 @@
 package typings.shopifyDashBuy
 
-import typings.shopifyDashBuy.ShopifyBuyNs.Client
-import typings.shopifyDashBuy.ShopifyBuyNs.Config
+import typings.shopifyDashBuy.ShopifyBuy.Client
+import typings.shopifyDashBuy.ShopifyBuy.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

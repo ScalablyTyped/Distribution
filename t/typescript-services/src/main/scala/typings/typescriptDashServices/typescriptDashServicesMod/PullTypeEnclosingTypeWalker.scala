@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullTypeEnclosingTypeWalker")
 @js.native
 class PullTypeEnclosingTypeWalker ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullTypeEnclosingTypeWalker
+  extends typings.typescriptDashServices.TypeScript.PullTypeEnclosingTypeWalker
 
 /* static members */
 @JSImport("typescript-services", "PullTypeEnclosingTypeWalker")

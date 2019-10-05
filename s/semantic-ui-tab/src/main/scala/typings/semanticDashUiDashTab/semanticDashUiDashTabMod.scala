@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashTab
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashTab.SemanticUINs.Tab
+import typings.semanticDashUiDashTab.SemanticUI.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

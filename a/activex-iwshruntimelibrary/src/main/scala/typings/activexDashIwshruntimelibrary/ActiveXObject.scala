@@ -1,6 +1,6 @@
 package typings.activexDashIwshruntimelibrary
 
-import typings.activexDashIwshruntimelibrary.IWshRuntimeLibraryNs.WshEnvironment
+import typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary.WshEnvironment
 import typings.activexDashIwshruntimelibrary.activexDashIwshruntimelibraryStrings.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-ga
 
-Typings are for version 2.6.0
+Typings are for version 2.7.0
 
 ## Library description:
 React Google Analytics Module.

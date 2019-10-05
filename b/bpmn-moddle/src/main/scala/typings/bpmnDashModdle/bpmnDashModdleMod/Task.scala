@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:no-empty-interface
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
 - typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait Task extends Activity {
   var incomingConversationLinks: js.Array[ConversationLink]
   var outgoingConversationLinks: js.Array[ConversationLink]

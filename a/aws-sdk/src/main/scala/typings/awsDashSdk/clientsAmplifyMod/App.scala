@@ -111,7 +111,7 @@ object App {
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
     customRules: CustomRules = null,
-    enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
+    enableAutoBranchCreation: js.UndefOr[Boolean] = js.undefined,
     iamServiceRoleArn: ServiceRoleArn = null,
     productionBranch: ProductionBranch = null,
     tags: TagMap = null

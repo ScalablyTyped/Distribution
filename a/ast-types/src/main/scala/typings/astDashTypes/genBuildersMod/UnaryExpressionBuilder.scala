@@ -9,7 +9,7 @@ import typings.astDashTypes.astDashTypesStrings.delete
 import typings.astDashTypes.astDashTypesStrings.typeof
 import typings.astDashTypes.astDashTypesStrings.void
 import typings.astDashTypes.genKindsMod.ExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.UnaryExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.UnaryExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

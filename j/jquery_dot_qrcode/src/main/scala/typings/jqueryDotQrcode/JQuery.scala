@@ -1,6 +1,6 @@
 package typings.jqueryDotQrcode
 
-import typings.jqueryDotQrcode.JQueryQRCodeNs.Options
+import typings.jqueryDotQrcode.JQueryQRCode.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

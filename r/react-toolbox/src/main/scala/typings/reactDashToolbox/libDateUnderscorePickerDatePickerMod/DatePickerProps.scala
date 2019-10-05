@@ -3,7 +3,7 @@ package typings.reactDashToolbox.libDateUnderscorePickerDatePickerMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.`zh-cn`
 import typings.reactDashToolbox.reactDashToolboxStrings.`zh-hk`
 import typings.reactDashToolbox.reactDashToolboxStrings.`zh-tw`

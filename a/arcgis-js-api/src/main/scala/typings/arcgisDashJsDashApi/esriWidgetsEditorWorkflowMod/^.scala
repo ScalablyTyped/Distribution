@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsEditorWorkflowMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WorkflowConstructor
+import typings.arcgisDashJsDashApi.__esri.WorkflowConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

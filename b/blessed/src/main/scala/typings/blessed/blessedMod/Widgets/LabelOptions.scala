@@ -1,0 +1,21 @@
+package typings.blessed.blessedMod.Widgets
+
+import typings.blessed.blessedMod.Widgets.Types.TAlign
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LabelOptions extends js.Object {
+  var side: TAlign
+  var text: String
+}
+
+object LabelOptions {
+  @scala.inline
+  def apply(side: TAlign, text: String): LabelOptions = {
+    val __obj = js.Dynamic.literal(side = side, text = text)
+  
+    __obj.asInstanceOf[LabelOptions]
+  }
+}
+

@@ -1,7 +1,7 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.LogoOptions
-import typings.openlayers.openlayersMod.sourceNs.State
+import typings.openlayers.openlayersMod.olx.LogoOptions
+import typings.openlayers.openlayersMod.source.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,15 +17,16 @@ trait SourceSourceOptions extends js.Object {
 object SourceSourceOptions {
   @scala.inline
   def apply(
-    projection: ProjectionLike,
     attributions: AttributionLike = null,
     logo: String | LogoOptions = null,
+    projection: ProjectionLike = null,
     state: State = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): SourceSourceOptions = {
-    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
     __obj.asInstanceOf[SourceSourceOptions]

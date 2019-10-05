@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsSimpleLineSymbolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleLineSymbolConstructor
+import typings.arcgisDashJsDashApi.__esri.SimpleLineSymbolConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

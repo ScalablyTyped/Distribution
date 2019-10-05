@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/endOfSecond", JSImport.Namespace)
 @js.native
 object esmEndOfSecondMod extends js.Object {
-  def default(date: Double): Date = js.native
-  def default(date: Date): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double): Date = js.native
+    def apply(date: Date): Date = js.native
+  }
+  
 }
 

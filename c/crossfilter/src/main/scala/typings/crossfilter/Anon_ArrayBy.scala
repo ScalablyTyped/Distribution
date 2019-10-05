@@ -1,7 +1,7 @@
 package typings.crossfilter
 
-import typings.crossfilter.CrossFilterNs.HeapSelect
-import typings.crossfilter.CrossFilterNs.Selector
+import typings.crossfilter.CrossFilter.HeapSelect
+import typings.crossfilter.CrossFilter.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

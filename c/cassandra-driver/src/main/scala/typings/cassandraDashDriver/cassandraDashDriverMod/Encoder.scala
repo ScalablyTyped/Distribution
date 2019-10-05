@@ -1,5 +1,6 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.cassandraDashDriver.Anon_Code
 import typings.node.Buffer
 import scala.scalajs.js
@@ -17,7 +18,5 @@ trait Encoder extends js.Object {
 
 @JSImport("cassandra-driver", "Encoder")
 @js.native
-class EncoderCls protected () extends Encoder {
-  def this(protocolVersion: Double, options: ClientOptions) = this()
-}
+object Encoder extends TopLevel[EncoderStatic]
 

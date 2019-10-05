@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.ScreenshotDefaultsOptions
+import typings.cypress.Cypress.ScreenshotDefaultsOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

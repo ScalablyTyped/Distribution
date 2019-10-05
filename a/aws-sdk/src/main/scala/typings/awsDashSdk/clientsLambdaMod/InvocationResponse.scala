@@ -34,14 +34,14 @@ object InvocationResponse {
     FunctionError: String = null,
     LogResult: String = null,
     Payload: _Blob = null,
-    StatusCode: js.UndefOr[Integer] = js.undefined
+    StatusCode: Int | Double = null
   ): InvocationResponse = {
     val __obj = js.Dynamic.literal()
     if (ExecutedVersion != null) __obj.updateDynamic("ExecutedVersion")(ExecutedVersion)
     if (FunctionError != null) __obj.updateDynamic("FunctionError")(FunctionError)
     if (LogResult != null) __obj.updateDynamic("LogResult")(LogResult)
     if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvocationResponse]
   }
 }

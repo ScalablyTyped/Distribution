@@ -1,6 +1,6 @@
 package typings.atIonicCliDashFramework.libLoggerMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,11 @@ object StreamHandlerOptions {
   def apply(
     stream: WritableStream,
     filter: /* record */ LogRecord => Boolean = null,
-    formatter: LoggerFormatter = null
+    formatter: /* record */ LogRecord => String = null
   ): StreamHandlerOptions = {
     val __obj = js.Dynamic.literal(stream = stream)
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[StreamHandlerOptions]
   }
 }

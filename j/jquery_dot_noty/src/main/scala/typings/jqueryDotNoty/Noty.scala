@@ -1,5 +1,6 @@
 package typings.jqueryDotNoty
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,4 +16,8 @@ trait Noty extends js.Object {
   def setType(`type`: String): js.Any = js.native
   def show(): js.Any = js.native
 }
+
+@JSGlobal("noty")
+@js.native
+object noty extends TopLevel[Noty]
 

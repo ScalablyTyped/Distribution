@@ -1,6 +1,6 @@
 package typings.reactDashImgpro
 
-import typings.reactDashImgpro.reactDashImgproMod.ReactImgproNs.Mode
+import typings.reactDashImgpro.reactDashImgproMod.ReactImgpro.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -51,25 +51,25 @@ object Value {
   @scala.inline
   def apply(
     arrayValues: ArrayValueList = null,
-    bigIntValue: js.UndefOr[BoxedLong] = js.undefined,
-    bitValue: js.UndefOr[BoxedBoolean] = js.undefined,
+    bigIntValue: Int | Double = null,
+    bitValue: js.UndefOr[scala.Boolean] = js.undefined,
     blobValue: _Blob = null,
-    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
-    intValue: js.UndefOr[BoxedInteger] = js.undefined,
-    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
-    realValue: js.UndefOr[BoxedFloat] = js.undefined,
+    doubleValue: Int | Double = null,
+    intValue: Int | Double = null,
+    isNull: js.UndefOr[scala.Boolean] = js.undefined,
+    realValue: Int | Double = null,
     stringValue: String = null,
     structValue: StructValue = null
   ): Value = {
     val __obj = js.Dynamic.literal()
     if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
-    if (!js.isUndefined(bigIntValue)) __obj.updateDynamic("bigIntValue")(bigIntValue)
+    if (bigIntValue != null) __obj.updateDynamic("bigIntValue")(bigIntValue.asInstanceOf[js.Any])
     if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue)
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue)
-    if (!js.isUndefined(intValue)) __obj.updateDynamic("intValue")(intValue)
+    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
     if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull)
-    if (!js.isUndefined(realValue)) __obj.updateDynamic("realValue")(realValue)
+    if (realValue != null) __obj.updateDynamic("realValue")(realValue.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
     if (structValue != null) __obj.updateDynamic("structValue")(structValue)
     __obj.asInstanceOf[Value]

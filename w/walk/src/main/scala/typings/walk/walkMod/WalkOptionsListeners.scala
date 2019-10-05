@@ -19,26 +19,26 @@ trait WalkOptionsListeners extends js.Object {
 object WalkOptionsListeners {
   @scala.inline
   def apply(
-    directories: WalkStatArrayEventCallback = null,
-    directory: WalkStatEventCallback = null,
-    directoryError: WalkStatArrayEventCallback = null,
-    end: WalkStatArrayEventCallback = null,
-    errors: WalkStatArrayEventCallback = null,
-    file: WalkStatEventCallback = null,
-    files: WalkStatArrayEventCallback = null,
-    names: WalkNamesEventCallback = null,
-    nodeError: WalkStatArrayEventCallback = null
+    directories: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
+    directory: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit = null,
+    directoryError: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
+    end: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
+    errors: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
+    file: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit = null,
+    files: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
+    names: (/* base */ String, /* names */ js.Array[String], /* next */ WalkNext) => Unit = null,
+    nodeError: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null
   ): WalkOptionsListeners = {
     val __obj = js.Dynamic.literal()
-    if (directories != null) __obj.updateDynamic("directories")(directories)
-    if (directory != null) __obj.updateDynamic("directory")(directory)
-    if (directoryError != null) __obj.updateDynamic("directoryError")(directoryError)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (names != null) __obj.updateDynamic("names")(names)
-    if (nodeError != null) __obj.updateDynamic("nodeError")(nodeError)
+    if (directories != null) __obj.updateDynamic("directories")(js.Any.fromFunction3(directories))
+    if (directory != null) __obj.updateDynamic("directory")(js.Any.fromFunction3(directory))
+    if (directoryError != null) __obj.updateDynamic("directoryError")(js.Any.fromFunction3(directoryError))
+    if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction3(end))
+    if (errors != null) __obj.updateDynamic("errors")(js.Any.fromFunction3(errors))
+    if (file != null) __obj.updateDynamic("file")(js.Any.fromFunction3(file))
+    if (files != null) __obj.updateDynamic("files")(js.Any.fromFunction3(files))
+    if (names != null) __obj.updateDynamic("names")(js.Any.fromFunction3(names))
+    if (nodeError != null) __obj.updateDynamic("nodeError")(js.Any.fromFunction3(nodeError))
     __obj.asInstanceOf[WalkOptionsListeners]
   }
 }

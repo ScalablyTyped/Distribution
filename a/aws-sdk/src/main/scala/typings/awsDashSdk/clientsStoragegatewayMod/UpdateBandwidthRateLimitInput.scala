@@ -20,12 +20,12 @@ object UpdateBandwidthRateLimitInput {
   @scala.inline
   def apply(
     GatewayARN: GatewayARN,
-    AverageDownloadRateLimitInBitsPerSec: js.UndefOr[BandwidthDownloadRateLimit] = js.undefined,
-    AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined
+    AverageDownloadRateLimitInBitsPerSec: Int | Double = null,
+    AverageUploadRateLimitInBitsPerSec: Int | Double = null
   ): UpdateBandwidthRateLimitInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN)
-    if (!js.isUndefined(AverageDownloadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageDownloadRateLimitInBitsPerSec")(AverageDownloadRateLimitInBitsPerSec)
-    if (!js.isUndefined(AverageUploadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageUploadRateLimitInBitsPerSec")(AverageUploadRateLimitInBitsPerSec)
+    if (AverageDownloadRateLimitInBitsPerSec != null) __obj.updateDynamic("AverageDownloadRateLimitInBitsPerSec")(AverageDownloadRateLimitInBitsPerSec.asInstanceOf[js.Any])
+    if (AverageUploadRateLimitInBitsPerSec != null) __obj.updateDynamic("AverageUploadRateLimitInBitsPerSec")(AverageUploadRateLimitInBitsPerSec.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBandwidthRateLimitInput]
   }
 }

@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.BooleanDelta
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.DoubleDelta
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.StringDelta
+import typings.firefoxDashWebextDashBrowser.browser.downloads.BooleanDelta
+import typings.firefoxDashWebextDashBrowser.browser.downloads.DoubleDelta
+import typings.firefoxDashWebextDashBrowser.browser.downloads.StringDelta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

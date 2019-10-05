@@ -31,13 +31,9 @@ trait ListVirtualServicesInput extends js.Object {
 
 object ListVirtualServicesInput {
   @scala.inline
-  def apply(
-    meshName: ResourceName,
-    limit: js.UndefOr[ListVirtualServicesLimit] = js.undefined,
-    nextToken: String = null
-  ): ListVirtualServicesInput = {
+  def apply(meshName: ResourceName, limit: Int | Double = null, nextToken: String = null): ListVirtualServicesInput = {
     val __obj = js.Dynamic.literal(meshName = meshName)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListVirtualServicesInput]
   }

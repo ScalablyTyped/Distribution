@@ -2,7 +2,7 @@ package typings.angular
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.angularMod.IScope
-import typings.angular.angularMod.autoNs.IInjectorService
+import typings.angular.angularMod.auto.IInjectorService
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Text

@@ -11,9 +11,9 @@ trait IDocumentCardStatusStyles extends js.Object {
 
 object IDocumentCardStatusStyles {
   @scala.inline
-  def apply(root: IStyle): IDocumentCardStatusStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IDocumentCardStatusStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardStatusStyles]
   }
 }

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("gsap", "Power3")
 @js.native
 class Power3 ()
-  extends typings.gsap.gsapNs.Quart
+  extends typings.gsap.gsap.Quart
 
 @JSImport("gsap", "Power3")
 @js.native
 object Power3
-  extends Instantiable0[typings.gsap.gsapNs.Quart] {
-  var easeIn: typings.gsap.gsapNs.Quart = js.native
-  var easeInOut: typings.gsap.gsapNs.Quart = js.native
-  var easeOut: typings.gsap.gsapNs.Quart = js.native
+  extends Instantiable0[typings.gsap.gsap.Quart] {
+  var easeIn: typings.gsap.gsap.Quart = js.native
+  var easeInOut: typings.gsap.gsap.Quart = js.native
+  var easeOut: typings.gsap.gsap.Quart = js.native
 }
 

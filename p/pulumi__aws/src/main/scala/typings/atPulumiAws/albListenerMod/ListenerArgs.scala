@@ -1,6 +1,6 @@
 package typings.atPulumiAws.albListenerMod
 
-import typings.atPulumiAws.typesInputMod.albNs.ListenerDefaultAction
+import typings.atPulumiAws.typesInputMod.alb.ListenerDefaultAction
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

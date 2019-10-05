@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotAnalytics
 
-import typings.gapiDotClientDotAnalytics.gapiNs.clientNs.analyticsNs.IncludeConditions
+import typings.gapiDotClientDotAnalytics.gapi.client.analytics.IncludeConditions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

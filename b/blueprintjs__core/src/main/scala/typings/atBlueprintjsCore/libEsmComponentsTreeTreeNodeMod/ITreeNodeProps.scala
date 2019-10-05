@@ -3,7 +3,7 @@ package typings.atBlueprintjsCore.libEsmComponentsTreeTreeNodeMod
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement

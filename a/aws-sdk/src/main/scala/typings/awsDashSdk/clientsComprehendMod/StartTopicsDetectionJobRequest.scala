@@ -47,14 +47,14 @@ object StartTopicsDetectionJobRequest {
     OutputDataConfig: OutputDataConfig,
     ClientRequestToken: ClientRequestTokenString = null,
     JobName: JobName = null,
-    NumberOfTopics: js.UndefOr[NumberOfTopicsInteger] = js.undefined,
+    NumberOfTopics: Int | scala.Double = null,
     VolumeKmsKeyId: KmsKeyId = null,
     VpcConfig: VpcConfig = null
   ): StartTopicsDetectionJobRequest = {
     val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn, InputDataConfig = InputDataConfig, OutputDataConfig = OutputDataConfig)
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
-    if (!js.isUndefined(NumberOfTopics)) __obj.updateDynamic("NumberOfTopics")(NumberOfTopics)
+    if (NumberOfTopics != null) __obj.updateDynamic("NumberOfTopics")(NumberOfTopics.asInstanceOf[js.Any])
     if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId)
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[StartTopicsDetectionJobRequest]

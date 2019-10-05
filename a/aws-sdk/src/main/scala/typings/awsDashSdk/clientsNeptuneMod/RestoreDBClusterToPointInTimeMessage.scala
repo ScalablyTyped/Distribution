@@ -71,14 +71,14 @@ object RestoreDBClusterToPointInTimeMessage {
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     RestoreToTime: TStamp = null,
     RestoreType: String = null,
     Tags: TagList = null,
-    UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined,
+    UseLatestRestorableTime: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBClusterToPointInTimeMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, SourceDBClusterIdentifier = SourceDBClusterIdentifier)
@@ -88,7 +88,7 @@ object RestoreDBClusterToPointInTimeMessage {
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (RestoreToTime != null) __obj.updateDynamic("RestoreToTime")(RestoreToTime)
     if (RestoreType != null) __obj.updateDynamic("RestoreType")(RestoreType)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

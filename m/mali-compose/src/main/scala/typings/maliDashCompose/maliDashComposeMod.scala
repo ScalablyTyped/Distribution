@@ -1,5 +1,6 @@
 package typings.maliDashCompose
 
+import typings.mali.maliMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,16 +10,8 @@ import scala.scalajs.js.annotation._
 object maliDashComposeMod extends js.Object {
   def apply(
     middleware: js.Array[
-      js.Function2[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Context */ /* ctx */ _, 
-        /* next */ js.Function0[js.Promise[Unit]], 
-        js.Promise[Unit]
-      ]
+      js.Function2[/* ctx */ Context, /* next */ js.Function0[js.Promise[Unit]], js.Promise[Unit]]
     ]
-  ): js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Context */ /* context */ js.Any, 
-    /* next */ js.Function0[js.Promise[Unit]], 
-    js.Promise[Unit]
-  ] = js.native
+  ): js.Function2[/* context */ Context, /* next */ js.Function0[js.Promise[Unit]], js.Promise[Unit]] = js.native
 }
 

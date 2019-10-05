@@ -1,6 +1,7 @@
 package typings.anydbDashSqlDashMigrations.anydbDashSqlDashMigrationsMod
 
 import typings.anydbDashSql.anydbDashSqlMod.Transaction
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ trait MigrationTask extends js.Object {
   var name: String = js.native
   @JSName("up")
   var up_Original: MigFn = js.native
-  def down(tx: Transaction): typings.bluebird.bluebirdMod.^[_] = js.native
-  def up(tx: Transaction): typings.bluebird.bluebirdMod.^[_] = js.native
+  def down(tx: Transaction): ^[_] = js.native
+  def up(tx: Transaction): ^[_] = js.native
 }
 

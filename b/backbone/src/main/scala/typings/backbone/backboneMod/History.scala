@@ -1,5 +1,6 @@
 package typings.backbone.backboneMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Location
 import typings.std.RegExp
 import typings.std.Window
@@ -42,4 +43,8 @@ class History () extends js.Object {
 object History extends js.Object {
   var started: Boolean = js.native
 }
+
+@JSImport("backbone", "history")
+@js.native
+object history extends TopLevel[History]
 

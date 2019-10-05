@@ -2,6 +2,8 @@ package typings.atNivoGeo.atNivoGeoMod
 
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +31,10 @@ object GeoMapCommonProps {
     graticuleLineWidth: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     margin: /* InlineNestedIdentityAlias: typings.std.Partial*/ Box = null,
-    onClick: GeoMapEventHandler = null,
-    onMouseEnter: GeoMapEventHandler = null,
-    onMouseLeave: GeoMapEventHandler = null,
-    onMouseMove: GeoMapEventHandler = null,
+    onClick: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseMove: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     projectionRotation: js.Tuple3[Double, Double, Double] = null,
     projectionScale: Int | Double = null,
     projectionTranslation: js.Tuple2[Double, Double] = null,
@@ -49,10 +51,10 @@ object GeoMapCommonProps {
     if (graticuleLineWidth != null) __obj.updateDynamic("graticuleLineWidth")(graticuleLineWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive)
     if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (projectionRotation != null) __obj.updateDynamic("projectionRotation")(projectionRotation)
     if (projectionScale != null) __obj.updateDynamic("projectionScale")(projectionScale.asInstanceOf[js.Any])
     if (projectionTranslation != null) __obj.updateDynamic("projectionTranslation")(projectionTranslation)

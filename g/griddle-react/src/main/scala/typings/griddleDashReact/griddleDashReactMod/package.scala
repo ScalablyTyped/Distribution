@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object griddleDashReactMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.griddleDashReact.griddleDashReactMod.componentsNs.ColumnDefinitionProps
-  import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowDefinitionProps
+  import typings.griddleDashReact.griddleDashReactMod.components.ColumnDefinitionProps
+  import typings.griddleDashReact.griddleDashReactMod.components.RowDefinitionProps
   import typings.immutable.immutableMod.List
   import typings.react.reactMod.Component
   import typings.react.reactMod.ComponentClass

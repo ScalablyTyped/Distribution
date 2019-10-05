@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.EasingFunctionNs.Callback
+import typings.cesium.cesiumMod.EasingFunction.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,5 +107,6 @@ object EasingFunction extends js.Object {
   def SINUSOIDAL_IN(time: Double): Double = js.native
   def SINUSOIDAL_IN_OUT(time: Double): Double = js.native
   def SINUSOIDAL_OUT(time: Double): Double = js.native
+  type Callback = js.Function1[/* time */ Double, Double]
 }
 

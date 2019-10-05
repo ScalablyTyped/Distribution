@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRateBasedRuleMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.RateBasedRulePredicate
+import typings.atPulumiAws.typesInputMod.wafregional.RateBasedRulePredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

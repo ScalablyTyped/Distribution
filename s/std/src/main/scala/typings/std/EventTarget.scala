@@ -52,9 +52,5 @@ trait EventTarget extends js.Object {
 
 @JSGlobal("EventTarget")
 @js.native
-class EventTargetCls () extends EventTarget
-
-@JSGlobal("EventTarget")
-@js.native
 object EventTarget extends Instantiable0[EventTarget]
 

@@ -4,7 +4,9 @@ import typings.antd.antdStrings.error
 import typings.antd.antdStrings.info
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.warning
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
@@ -42,7 +44,6 @@ trait AlertProps extends js.Object {
 object AlertProps {
   @scala.inline
   def apply(
-    message: ReactNode,
     afterClose: () => Unit = null,
     banner: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -51,13 +52,14 @@ object AlertProps {
     description: ReactNode = null,
     icon: ReactNode = null,
     iconType: String = null,
-    onClose: MouseEventHandler[HTMLButtonElement] = null,
+    message: ReactNode = null,
+    onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     `type`: success | info | warning | error = null
   ): AlertProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner)
     if (className != null) __obj.updateDynamic("className")(className)
@@ -66,7 +68,8 @@ object AlertProps {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconType != null) __obj.updateDynamic("iconType")(iconType)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
     if (style != null) __obj.updateDynamic("style")(style)

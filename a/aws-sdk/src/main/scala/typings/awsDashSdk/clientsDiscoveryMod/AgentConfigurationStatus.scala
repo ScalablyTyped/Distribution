@@ -24,7 +24,7 @@ object AgentConfigurationStatus {
   def apply(
     agentId: String = null,
     description: String = null,
-    operationSucceeded: js.UndefOr[Boolean] = js.undefined
+    operationSucceeded: js.UndefOr[scala.Boolean] = js.undefined
   ): AgentConfigurationStatus = {
     val __obj = js.Dynamic.literal()
     if (agentId != null) __obj.updateDynamic("agentId")(agentId)

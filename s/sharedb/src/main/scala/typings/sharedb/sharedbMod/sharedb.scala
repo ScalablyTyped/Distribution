@@ -1,16 +1,16 @@
 package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharedb.sharedbMod.middlewareNs.ApplyContext
-import typings.sharedb.sharedbMod.middlewareNs.CommitContext
-import typings.sharedb.sharedbMod.middlewareNs.ConnectContext
-import typings.sharedb.sharedbMod.middlewareNs.DocContext
-import typings.sharedb.sharedbMod.middlewareNs.OpContext
-import typings.sharedb.sharedbMod.middlewareNs.QueryContext
-import typings.sharedb.sharedbMod.middlewareNs.ReadSnapshotsContext
-import typings.sharedb.sharedbMod.middlewareNs.ReceiveContext
-import typings.sharedb.sharedbMod.middlewareNs.ReplyContext
-import typings.sharedb.sharedbMod.middlewareNs.SubmitContext
+import typings.sharedb.sharedbMod.middleware.ApplyContext
+import typings.sharedb.sharedbMod.middleware.CommitContext
+import typings.sharedb.sharedbMod.middleware.ConnectContext
+import typings.sharedb.sharedbMod.middleware.DocContext
+import typings.sharedb.sharedbMod.middleware.OpContext
+import typings.sharedb.sharedbMod.middleware.QueryContext
+import typings.sharedb.sharedbMod.middleware.ReadSnapshotsContext
+import typings.sharedb.sharedbMod.middleware.ReceiveContext
+import typings.sharedb.sharedbMod.middleware.ReplyContext
+import typings.sharedb.sharedbMod.middleware.SubmitContext
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.apply
 import typings.sharedb.sharedbStrings.commit

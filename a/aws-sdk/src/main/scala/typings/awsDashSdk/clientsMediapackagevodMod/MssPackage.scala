@@ -21,11 +21,11 @@ object MssPackage {
   def apply(
     MssManifests: __listOfMssManifest,
     Encryption: MssEncryption = null,
-    SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined
+    SegmentDurationSeconds: Int | Double = null
   ): MssPackage = {
     val __obj = js.Dynamic.literal(MssManifests = MssManifests)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds)
+    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MssPackage]
   }
 }

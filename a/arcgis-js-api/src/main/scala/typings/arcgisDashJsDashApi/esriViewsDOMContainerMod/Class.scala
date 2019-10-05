@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriViewsDOMContainerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DOMContainer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DefaultUI
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Popup
+import typings.arcgisDashJsDashApi.__esri.DOMContainer
+import typings.arcgisDashJsDashApi.__esri.DefaultUI
+import typings.arcgisDashJsDashApi.__esri.Popup
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -22,16 +22,16 @@ object InputMomentProps {
     hourStep: Int | Double = null,
     minStep: Int | Double = null,
     nextMonthIcon: String = null,
-    onChange: OnChangeListener = null,
-    onSave: OnSaveListener = null,
+    onChange: /* m */ Moment => Unit = null,
+    onSave: () => Unit = null,
     prevMonthIcon: String = null
   ): InputMomentProps = {
     val __obj = js.Dynamic.literal(moment = moment)
     if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
     if (minStep != null) __obj.updateDynamic("minStep")(minStep.asInstanceOf[js.Any])
     if (nextMonthIcon != null) __obj.updateDynamic("nextMonthIcon")(nextMonthIcon)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onSave != null) __obj.updateDynamic("onSave")(onSave)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onSave != null) __obj.updateDynamic("onSave")(js.Any.fromFunction0(onSave))
     if (prevMonthIcon != null) __obj.updateDynamic("prevMonthIcon")(prevMonthIcon)
     __obj.asInstanceOf[InputMomentProps]
   }

@@ -1,8 +1,10 @@
 package typings.grommet.grommetMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsAccordionPanelMod.AccordionPanelProps
 import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
@@ -24,4 +26,13 @@ class AccordionPanel protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet", "AccordionPanel")
+@js.native
+object AccordionPanel extends TopLevel[
+      ComponentClass[
+        AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+        ComponentState
+      ]
+    ]
 

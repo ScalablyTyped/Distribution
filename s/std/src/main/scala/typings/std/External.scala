@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,16 +15,10 @@ trait External extends js.Object {
 
 @JSGlobal("External")
 @js.native
-class ExternalCls () extends External {
-  /** @deprecated */
-  /* CompleteClass */
-  override def AddSearchProvider(): Unit = js.native
-  /** @deprecated */
-  /* CompleteClass */
-  override def IsSearchProviderInstalled(): Unit = js.native
-}
-
-@JSGlobal("External")
-@js.native
 object External extends Instantiable0[External]
+
+/** @deprecated */
+@JSGlobal("external")
+@js.native
+object external extends TopLevel[External]
 

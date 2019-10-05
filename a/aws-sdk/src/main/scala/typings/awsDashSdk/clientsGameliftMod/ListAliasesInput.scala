@@ -26,13 +26,13 @@ trait ListAliasesInput extends js.Object {
 object ListAliasesInput {
   @scala.inline
   def apply(
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
+    Limit: Int | scala.Double = null,
     Name: NonEmptyString = null,
     NextToken: NonEmptyString = null,
     RoutingStrategyType: RoutingStrategyType = null
   ): ListAliasesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (RoutingStrategyType != null) __obj.updateDynamic("RoutingStrategyType")(RoutingStrategyType.asInstanceOf[js.Any])

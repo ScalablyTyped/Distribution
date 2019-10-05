@@ -1,6 +1,6 @@
 package typings.arangodb
 
-import typings.arangodb.FoxxNs.Context
+import typings.arangodb.Foxx.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

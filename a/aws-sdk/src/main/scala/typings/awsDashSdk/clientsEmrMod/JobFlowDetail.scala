@@ -79,7 +79,7 @@ object JobFlowDetail {
     ServiceRole: XmlString = null,
     Steps: StepDetailList = null,
     SupportedProducts: SupportedProductsList = null,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
+    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
   ): JobFlowDetail = {
     val __obj = js.Dynamic.literal(ExecutionStatusDetail = ExecutionStatusDetail, Instances = Instances, JobFlowId = JobFlowId, Name = Name)
     if (AmiVersion != null) __obj.updateDynamic("AmiVersion")(AmiVersion)

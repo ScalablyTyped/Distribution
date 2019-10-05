@@ -17,13 +17,10 @@ trait GetSnowballUsageResult extends js.Object {
 
 object GetSnowballUsageResult {
   @scala.inline
-  def apply(
-    SnowballLimit: js.UndefOr[Integer] = js.undefined,
-    SnowballsInUse: js.UndefOr[Integer] = js.undefined
-  ): GetSnowballUsageResult = {
+  def apply(SnowballLimit: Int | Double = null, SnowballsInUse: Int | Double = null): GetSnowballUsageResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SnowballLimit)) __obj.updateDynamic("SnowballLimit")(SnowballLimit)
-    if (!js.isUndefined(SnowballsInUse)) __obj.updateDynamic("SnowballsInUse")(SnowballsInUse)
+    if (SnowballLimit != null) __obj.updateDynamic("SnowballLimit")(SnowballLimit.asInstanceOf[js.Any])
+    if (SnowballsInUse != null) __obj.updateDynamic("SnowballsInUse")(SnowballsInUse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnowballUsageResult]
   }
 }

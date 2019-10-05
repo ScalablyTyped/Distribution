@@ -48,23 +48,23 @@ object ModifyTrafficMirrorSessionRequest {
   def apply(
     TrafficMirrorSessionId: String,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PacketLength: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    PacketLength: Int | scala.Double = null,
     RemoveFields: TrafficMirrorSessionFieldList = null,
-    SessionNumber: js.UndefOr[Integer] = js.undefined,
+    SessionNumber: Int | scala.Double = null,
     TrafficMirrorFilterId: String = null,
     TrafficMirrorTargetId: String = null,
-    VirtualNetworkId: js.UndefOr[Integer] = js.undefined
+    VirtualNetworkId: Int | scala.Double = null
   ): ModifyTrafficMirrorSessionRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorSessionId = TrafficMirrorSessionId)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(PacketLength)) __obj.updateDynamic("PacketLength")(PacketLength)
+    if (PacketLength != null) __obj.updateDynamic("PacketLength")(PacketLength.asInstanceOf[js.Any])
     if (RemoveFields != null) __obj.updateDynamic("RemoveFields")(RemoveFields)
-    if (!js.isUndefined(SessionNumber)) __obj.updateDynamic("SessionNumber")(SessionNumber)
+    if (SessionNumber != null) __obj.updateDynamic("SessionNumber")(SessionNumber.asInstanceOf[js.Any])
     if (TrafficMirrorFilterId != null) __obj.updateDynamic("TrafficMirrorFilterId")(TrafficMirrorFilterId)
     if (TrafficMirrorTargetId != null) __obj.updateDynamic("TrafficMirrorTargetId")(TrafficMirrorTargetId)
-    if (!js.isUndefined(VirtualNetworkId)) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId)
+    if (VirtualNetworkId != null) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorSessionRequest]
   }
 }

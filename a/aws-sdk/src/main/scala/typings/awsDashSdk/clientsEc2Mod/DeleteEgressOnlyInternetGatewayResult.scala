@@ -13,7 +13,7 @@ trait DeleteEgressOnlyInternetGatewayResult extends js.Object {
 
 object DeleteEgressOnlyInternetGatewayResult {
   @scala.inline
-  def apply(ReturnCode: js.UndefOr[Boolean] = js.undefined): DeleteEgressOnlyInternetGatewayResult = {
+  def apply(ReturnCode: js.UndefOr[scala.Boolean] = js.undefined): DeleteEgressOnlyInternetGatewayResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ReturnCode)) __obj.updateDynamic("ReturnCode")(ReturnCode)
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayResult]

@@ -1,9 +1,9 @@
 package typings.activexDashShdocvw
 
-import typings.activexDashShdocvw.SHDocVwNs.InternetExplorer
-import typings.activexDashShdocvw.SHDocVwNs.ShellNameSpace
-import typings.activexDashShdocvw.SHDocVwNs.ShellUIHelper
-import typings.activexDashShdocvw.SHDocVwNs.WebBrowser
+import typings.activexDashShdocvw.SHDocVw.InternetExplorer
+import typings.activexDashShdocvw.SHDocVw.ShellNameSpace
+import typings.activexDashShdocvw.SHDocVw.ShellUIHelper
+import typings.activexDashShdocvw.SHDocVw.WebBrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

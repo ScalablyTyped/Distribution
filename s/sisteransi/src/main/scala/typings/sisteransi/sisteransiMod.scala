@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 object sisteransiMod extends js.Object {
   val beep: String = js.native
   val clear: String = js.native
-  @JSName("cursor")
   @js.native
-  object cursorNs extends js.Object {
+  object cursor extends js.Object {
     val hide: String = js.native
     val left: String = js.native
     val restore: String = js.native
@@ -27,9 +26,8 @@ object sisteransiMod extends js.Object {
     def up(count: Double): String = js.native
   }
   
-  @JSName("erase")
   @js.native
-  object eraseNs extends js.Object {
+  object erase extends js.Object {
     val line: String = js.native
     val lineEnd: String = js.native
     val lineStart: String = js.native
@@ -39,9 +37,8 @@ object sisteransiMod extends js.Object {
     def up(count: Double): String = js.native
   }
   
-  @JSName("scroll")
   @js.native
-  object scrollNs extends js.Object {
+  object scroll extends js.Object {
     def down(count: Double): String = js.native
     def up(count: Double): String = js.native
   }

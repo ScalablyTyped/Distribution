@@ -12,3 +12,10 @@ class Rectangle[P] protected () extends Polygon[P] {
   def setBounds(latLngBounds: LatLngBoundsExpression): this.type = js.native
 }
 
+@JSImport("leaflet", "rectangle")
+@js.native
+object rectangle extends js.Object {
+  def apply(latLngBounds: LatLngBoundsExpression): Rectangle[_] = js.native
+  def apply(latLngBounds: LatLngBoundsExpression, options: PolylineOptions): Rectangle[_] = js.native
+}
+

@@ -26,16 +26,16 @@ trait Rectangle extends js.Object {
 object Rectangle {
   @scala.inline
   def apply(
-    Height: js.UndefOr[__integerMin2Max2147483647] = js.undefined,
-    Width: js.UndefOr[__integerMin2Max2147483647] = js.undefined,
-    X: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
-    Y: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+    Height: Int | Double = null,
+    Width: Int | Double = null,
+    X: Int | Double = null,
+    Y: Int | Double = null
   ): Rectangle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
-    if (!js.isUndefined(X)) __obj.updateDynamic("X")(X)
-    if (!js.isUndefined(Y)) __obj.updateDynamic("Y")(Y)
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
+    if (X != null) __obj.updateDynamic("X")(X.asInstanceOf[js.Any])
+    if (Y != null) __obj.updateDynamic("Y")(Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rectangle]
   }
 }

@@ -11,8 +11,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.OptionContext
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.OptionsKeys
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.OptionContext
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.OptionsKeys
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.dygraphs
 
-import typings.dygraphs.dygraphsNs.PerAxisOptions
+import typings.dygraphs.dygraphs.PerAxisOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

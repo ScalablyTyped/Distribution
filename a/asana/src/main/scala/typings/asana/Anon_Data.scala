@@ -1,7 +1,7 @@
 package typings.asana
 
-import typings.asana.asanaMod.resourcesNs.NextPage
-import typings.asana.asanaMod.resourcesNs.Resource
+import typings.asana.asanaMod.resources.NextPage
+import typings.asana.asanaMod.resources.Resource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

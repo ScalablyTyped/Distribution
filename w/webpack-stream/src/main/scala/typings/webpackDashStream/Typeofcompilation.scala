@@ -2,42 +2,42 @@ package typings.webpackDashStream
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.webpack.webpackMod.compilationNs.Asset
-import typings.webpack.webpackMod.compilationNs.Chunk
-import typings.webpack.webpackMod.compilationNs.ChunkGroup
-import typings.webpack.webpackMod.compilationNs.ChunkHash
-import typings.webpack.webpackMod.compilationNs.ChunkTemplate
-import typings.webpack.webpackMod.compilationNs.Compilation
-import typings.webpack.webpackMod.compilationNs.ContextModuleFactory
-import typings.webpack.webpackMod.compilationNs.DllModuleFactory
-import typings.webpack.webpackMod.compilationNs.HotUpdateChunkTemplate
-import typings.webpack.webpackMod.compilationNs.MainTemplate
-import typings.webpack.webpackMod.compilationNs.Module
-import typings.webpack.webpackMod.compilationNs.ModuleTemplate
-import typings.webpack.webpackMod.compilationNs.NormalModuleFactory
-import typings.webpack.webpackMod.compilationNs.Record
-import typings.webpack.webpackMod.compilationNs.RuntimeTemplate
+import typings.webpack.webpackMod.compilation.Asset
+import typings.webpack.webpackMod.compilation.Chunk
+import typings.webpack.webpackMod.compilation.ChunkGroup
+import typings.webpack.webpackMod.compilation.ChunkHash
+import typings.webpack.webpackMod.compilation.ChunkTemplate
+import typings.webpack.webpackMod.compilation.Compilation
+import typings.webpack.webpackMod.compilation.ContextModuleFactory
+import typings.webpack.webpackMod.compilation.DllModuleFactory
+import typings.webpack.webpackMod.compilation.HotUpdateChunkTemplate
+import typings.webpack.webpackMod.compilation.MainTemplate
+import typings.webpack.webpackMod.compilation.Module
+import typings.webpack.webpackMod.compilation.ModuleTemplate
+import typings.webpack.webpackMod.compilation.NormalModuleFactory
+import typings.webpack.webpackMod.compilation.Record
+import typings.webpack.webpackMod.compilation.RuntimeTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofcompilation extends js.Object {
-  var Asset: Instantiable0[typings.webpack.webpackMod.compilationNs.Asset]
-  var Chunk: Instantiable1[/* name */ String, typings.webpack.webpackMod.compilationNs.Chunk]
-  var ChunkGroup: Instantiable0[typings.webpack.webpackMod.compilationNs.ChunkGroup]
-  var ChunkHash: Instantiable0[typings.webpack.webpackMod.compilationNs.ChunkHash]
-  var ChunkTemplate: Instantiable0[typings.webpack.webpackMod.compilationNs.ChunkTemplate]
-  var Compilation: Instantiable0[typings.webpack.webpackMod.compilationNs.Compilation]
-  var ContextModuleFactory: Instantiable0[typings.webpack.webpackMod.compilationNs.ContextModuleFactory]
+  var Asset: Instantiable0[typings.webpack.webpackMod.compilation.Asset]
+  var Chunk: Instantiable1[/* name */ String, typings.webpack.webpackMod.compilation.Chunk]
+  var ChunkGroup: Instantiable0[typings.webpack.webpackMod.compilation.ChunkGroup]
+  var ChunkHash: Instantiable0[typings.webpack.webpackMod.compilation.ChunkHash]
+  var ChunkTemplate: Instantiable0[typings.webpack.webpackMod.compilation.ChunkTemplate]
+  var Compilation: Instantiable0[typings.webpack.webpackMod.compilation.Compilation]
+  var ContextModuleFactory: Instantiable0[typings.webpack.webpackMod.compilation.ContextModuleFactory]
   var Dependency: TypeofClassDependency
-  var DllModuleFactory: Instantiable0[typings.webpack.webpackMod.compilationNs.DllModuleFactory]
-  var HotUpdateChunkTemplate: Instantiable0[typings.webpack.webpackMod.compilationNs.HotUpdateChunkTemplate]
-  var MainTemplate: Instantiable0[typings.webpack.webpackMod.compilationNs.MainTemplate]
-  var Module: Instantiable0[typings.webpack.webpackMod.compilationNs.Module]
-  var ModuleTemplate: Instantiable0[typings.webpack.webpackMod.compilationNs.ModuleTemplate]
-  var NormalModuleFactory: Instantiable0[typings.webpack.webpackMod.compilationNs.NormalModuleFactory]
-  var Record: Instantiable0[typings.webpack.webpackMod.compilationNs.Record]
-  var RuntimeTemplate: Instantiable0[typings.webpack.webpackMod.compilationNs.RuntimeTemplate]
+  var DllModuleFactory: Instantiable0[typings.webpack.webpackMod.compilation.DllModuleFactory]
+  var HotUpdateChunkTemplate: Instantiable0[typings.webpack.webpackMod.compilation.HotUpdateChunkTemplate]
+  var MainTemplate: Instantiable0[typings.webpack.webpackMod.compilation.MainTemplate]
+  var Module: Instantiable0[typings.webpack.webpackMod.compilation.Module]
+  var ModuleTemplate: Instantiable0[typings.webpack.webpackMod.compilation.ModuleTemplate]
+  var NormalModuleFactory: Instantiable0[typings.webpack.webpackMod.compilation.NormalModuleFactory]
+  var Record: Instantiable0[typings.webpack.webpackMod.compilation.Record]
+  var RuntimeTemplate: Instantiable0[typings.webpack.webpackMod.compilation.RuntimeTemplate]
 }
 
 object Typeofcompilation {

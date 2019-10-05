@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsTemporalLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TemporalLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.TemporalLayer
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

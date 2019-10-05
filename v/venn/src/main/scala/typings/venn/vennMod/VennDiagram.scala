@@ -19,3 +19,9 @@ trait VennDiagram extends js.Object {
   def width(w: Double): VennDiagram = js.native
 }
 
+@JSImport("venn", "VennDiagram")
+@js.native
+object VennDiagram extends js.Object {
+  def apply(): VennDiagram = js.native
+}
+

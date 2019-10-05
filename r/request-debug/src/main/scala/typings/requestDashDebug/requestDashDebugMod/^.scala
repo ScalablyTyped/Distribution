@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("request-debug", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val log: LogCallback[Request, CoreOptions, RequiredUriUrl] = js.native
   def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](request: RequestAPI[TRequest, TOptions, TUriUrlOptions]): Unit = js.native
   def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](
     request: RequestAPI[TRequest, TOptions, TUriUrlOptions],

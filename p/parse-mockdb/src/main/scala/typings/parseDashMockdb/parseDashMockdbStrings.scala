@@ -1,6 +1,6 @@
 package typings.parseDashMockdb
 
-import typings.parseDashMockdb.ParseMockDBNs.HookType
+import typings.parseDashMockdb.ParseMockDB.HookType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

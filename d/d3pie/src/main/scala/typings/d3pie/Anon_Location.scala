@@ -1,6 +1,6 @@
 package typings.d3pie
 
-import typings.d3pie.d3pieNs.ID3PieTextOptions
+import typings.d3pie.d3pie.ID3PieTextOptions
 import typings.d3pie.d3pieStrings.`pie-center`
 import typings.d3pie.d3pieStrings.`top-center`
 import typings.d3pie.d3pieStrings.`top-left`

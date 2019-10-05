@@ -3,7 +3,7 @@ package typings.antd.esMentionMod
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

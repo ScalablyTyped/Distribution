@@ -1,15 +1,15 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSearchSearchSourceMod
 
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GetResultsParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GetSuggestionsParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PopupTemplate
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchSource
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchSourceFilter
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchSourceProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SuggestResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Symbol
+import typings.arcgisDashJsDashApi.__esri.GetResultsParameters
+import typings.arcgisDashJsDashApi.__esri.GetSuggestionsParameters
+import typings.arcgisDashJsDashApi.__esri.PopupTemplate
+import typings.arcgisDashJsDashApi.__esri.SearchResult
+import typings.arcgisDashJsDashApi.__esri.SearchSource
+import typings.arcgisDashJsDashApi.__esri.SearchSourceFilter
+import typings.arcgisDashJsDashApi.__esri.SearchSourceProperties
+import typings.arcgisDashJsDashApi.__esri.SuggestResult
+import typings.arcgisDashJsDashApi.__esri.Symbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

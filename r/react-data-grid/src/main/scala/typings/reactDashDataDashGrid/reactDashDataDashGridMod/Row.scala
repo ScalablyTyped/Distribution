@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-data-grid", "Row")
 @js.native
 class Row ()
-  extends typings.reactDashDataDashGrid.AdazzleReactDataGridNs.ReactDataGridNs.Row
+  extends typings.reactDashDataDashGrid.AdazzleReactDataGrid.ReactDataGrid.Row
 

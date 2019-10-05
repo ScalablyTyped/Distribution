@@ -32,16 +32,16 @@ object ProvisionedThroughputDescription {
   def apply(
     LastDecreaseDateTime: _Date = null,
     LastIncreaseDateTime: _Date = null,
-    NumberOfDecreasesToday: js.UndefOr[PositiveLongObject] = js.undefined,
-    ReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined,
-    WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
+    NumberOfDecreasesToday: Int | scala.Double = null,
+    ReadCapacityUnits: Int | scala.Double = null,
+    WriteCapacityUnits: Int | scala.Double = null
   ): ProvisionedThroughputDescription = {
     val __obj = js.Dynamic.literal()
     if (LastDecreaseDateTime != null) __obj.updateDynamic("LastDecreaseDateTime")(LastDecreaseDateTime)
     if (LastIncreaseDateTime != null) __obj.updateDynamic("LastIncreaseDateTime")(LastIncreaseDateTime)
-    if (!js.isUndefined(NumberOfDecreasesToday)) __obj.updateDynamic("NumberOfDecreasesToday")(NumberOfDecreasesToday)
-    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits)
-    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits)
+    if (NumberOfDecreasesToday != null) __obj.updateDynamic("NumberOfDecreasesToday")(NumberOfDecreasesToday.asInstanceOf[js.Any])
+    if (ReadCapacityUnits != null) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.asInstanceOf[js.Any])
+    if (WriteCapacityUnits != null) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedThroughputDescription]
   }
 }

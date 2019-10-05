@@ -39,20 +39,20 @@ object RadarProps {
     label: js.Object | ReactElement | ContentRenderer[_] | Boolean = null,
     legendType: LegendType = null,
     name: String = null,
-    onAnimationEnd: RechartsFunction = null,
-    onAnimationStart: RechartsFunction = null,
-    onClick: RechartsFunction = null,
-    onMouseDown: RechartsFunction = null,
-    onMouseEnter: RechartsFunction = null,
-    onMouseLeave: RechartsFunction = null,
-    onMouseMove: RechartsFunction = null,
-    onMouseOut: RechartsFunction = null,
-    onMouseOver: RechartsFunction = null,
-    onMouseUp: RechartsFunction = null,
-    onTouchCancel: RechartsFunction = null,
-    onTouchEnd: RechartsFunction = null,
-    onTouchMove: RechartsFunction = null,
-    onTouchStart: RechartsFunction = null,
+    onAnimationEnd: /* repeated */ js.Any => Unit = null,
+    onAnimationStart: /* repeated */ js.Any => Unit = null,
+    onClick: /* repeated */ js.Any => Unit = null,
+    onMouseDown: /* repeated */ js.Any => Unit = null,
+    onMouseEnter: /* repeated */ js.Any => Unit = null,
+    onMouseLeave: /* repeated */ js.Any => Unit = null,
+    onMouseMove: /* repeated */ js.Any => Unit = null,
+    onMouseOut: /* repeated */ js.Any => Unit = null,
+    onMouseOver: /* repeated */ js.Any => Unit = null,
+    onMouseUp: /* repeated */ js.Any => Unit = null,
+    onTouchCancel: /* repeated */ js.Any => Unit = null,
+    onTouchEnd: /* repeated */ js.Any => Unit = null,
+    onTouchMove: /* repeated */ js.Any => Unit = null,
+    onTouchStart: /* repeated */ js.Any => Unit = null,
     points: js.Array[RadarPoint] = null,
     shape: ReactElement | ContentRenderer[RadarProps] = null
   ): RadarProps = {
@@ -70,20 +70,20 @@ object RadarProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (legendType != null) __obj.updateDynamic("legendType")(legendType)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
+    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (points != null) __obj.updateDynamic("points")(points)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadarProps]

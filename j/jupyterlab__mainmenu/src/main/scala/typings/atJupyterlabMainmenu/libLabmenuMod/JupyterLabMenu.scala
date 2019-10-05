@@ -1,7 +1,7 @@
 package typings.atJupyterlabMainmenu.libLabmenuMod
 
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Menu
-import typings.atPhosphorWidgets.libMenuMod.MenuNs.IOptions
+import typings.atPhosphorWidgets.libMenuMod.Menu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

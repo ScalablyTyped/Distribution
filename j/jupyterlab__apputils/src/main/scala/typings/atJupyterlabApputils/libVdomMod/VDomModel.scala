@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.libVdomMod
 
-import typings.atJupyterlabApputils.libVdomMod.VDomRendererNs.IModel
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer.IModel
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.Signal
 import scala.scalajs.js

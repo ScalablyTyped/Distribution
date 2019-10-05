@@ -39,19 +39,19 @@ object UpdateProvisioningPreferences {
   @scala.inline
   def apply(
     StackSetAccounts: StackSetAccounts = null,
-    StackSetFailureToleranceCount: js.UndefOr[StackSetFailureToleranceCount] = js.undefined,
-    StackSetFailureTolerancePercentage: js.UndefOr[StackSetFailureTolerancePercentage] = js.undefined,
-    StackSetMaxConcurrencyCount: js.UndefOr[StackSetMaxConcurrencyCount] = js.undefined,
-    StackSetMaxConcurrencyPercentage: js.UndefOr[StackSetMaxConcurrencyPercentage] = js.undefined,
+    StackSetFailureToleranceCount: Int | Double = null,
+    StackSetFailureTolerancePercentage: Int | Double = null,
+    StackSetMaxConcurrencyCount: Int | Double = null,
+    StackSetMaxConcurrencyPercentage: Int | Double = null,
     StackSetOperationType: StackSetOperationType = null,
     StackSetRegions: StackSetRegions = null
   ): UpdateProvisioningPreferences = {
     val __obj = js.Dynamic.literal()
     if (StackSetAccounts != null) __obj.updateDynamic("StackSetAccounts")(StackSetAccounts)
-    if (!js.isUndefined(StackSetFailureToleranceCount)) __obj.updateDynamic("StackSetFailureToleranceCount")(StackSetFailureToleranceCount)
-    if (!js.isUndefined(StackSetFailureTolerancePercentage)) __obj.updateDynamic("StackSetFailureTolerancePercentage")(StackSetFailureTolerancePercentage)
-    if (!js.isUndefined(StackSetMaxConcurrencyCount)) __obj.updateDynamic("StackSetMaxConcurrencyCount")(StackSetMaxConcurrencyCount)
-    if (!js.isUndefined(StackSetMaxConcurrencyPercentage)) __obj.updateDynamic("StackSetMaxConcurrencyPercentage")(StackSetMaxConcurrencyPercentage)
+    if (StackSetFailureToleranceCount != null) __obj.updateDynamic("StackSetFailureToleranceCount")(StackSetFailureToleranceCount.asInstanceOf[js.Any])
+    if (StackSetFailureTolerancePercentage != null) __obj.updateDynamic("StackSetFailureTolerancePercentage")(StackSetFailureTolerancePercentage.asInstanceOf[js.Any])
+    if (StackSetMaxConcurrencyCount != null) __obj.updateDynamic("StackSetMaxConcurrencyCount")(StackSetMaxConcurrencyCount.asInstanceOf[js.Any])
+    if (StackSetMaxConcurrencyPercentage != null) __obj.updateDynamic("StackSetMaxConcurrencyPercentage")(StackSetMaxConcurrencyPercentage.asInstanceOf[js.Any])
     if (StackSetOperationType != null) __obj.updateDynamic("StackSetOperationType")(StackSetOperationType.asInstanceOf[js.Any])
     if (StackSetRegions != null) __obj.updateDynamic("StackSetRegions")(StackSetRegions)
     __obj.asInstanceOf[UpdateProvisioningPreferences]

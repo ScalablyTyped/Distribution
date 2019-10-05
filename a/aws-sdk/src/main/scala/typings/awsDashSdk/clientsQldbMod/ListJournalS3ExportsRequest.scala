@@ -17,9 +17,9 @@ trait ListJournalS3ExportsRequest extends js.Object {
 
 object ListJournalS3ExportsRequest {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListJournalS3ExportsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null): ListJournalS3ExportsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListJournalS3ExportsRequest]
   }

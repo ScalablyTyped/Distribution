@@ -1,6 +1,9 @@
 package typings.reactDashSelect
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.reactDashSelect.srcTypesMod.MouseEventHandler
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +31,11 @@ object Anon_Data {
     isFocused: Boolean,
     isSelected: Boolean,
     label: String,
-    onClick: MouseEventHandler,
-    onMouseOver: MouseEventHandler,
+    onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+    onMouseOver: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
     value: js.Any
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, id = id, index = index, isDisabled = isDisabled, isFocused = isFocused, isSelected = isSelected, label = label, onClick = onClick, onMouseOver = onMouseOver, value = value)
+    val __obj = js.Dynamic.literal(data = data, id = id, index = index, isDisabled = isDisabled, isFocused = isFocused, isSelected = isSelected, label = label, onClick = js.Any.fromFunction1(onClick), onMouseOver = js.Any.fromFunction1(onMouseOver), value = value)
   
     __obj.asInstanceOf[Anon_Data]
   }

@@ -28,13 +28,13 @@ object DescribePendingMaintenanceActionsMessage {
   def apply(
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | Double = null,
     ReplicationInstanceArn: String = null
   ): DescribePendingMaintenanceActionsMessage = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReplicationInstanceArn != null) __obj.updateDynamic("ReplicationInstanceArn")(ReplicationInstanceArn)
     __obj.asInstanceOf[DescribePendingMaintenanceActionsMessage]
   }

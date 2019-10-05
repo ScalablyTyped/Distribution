@@ -1,7 +1,7 @@
 package typings.steamDashClient.steamDashClientMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.steamDashClient.Anon_False
 import typings.steamDashClient.steamDashClientNumbers.`false`
 import typings.steamDashClient.steamDashClientStrings.message

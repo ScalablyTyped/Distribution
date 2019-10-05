@@ -24,7 +24,7 @@ object ResetDBParameterGroupMessage {
   def apply(
     DBParameterGroupName: String,
     Parameters: ParametersList = null,
-    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
+    ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): ResetDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupName = DBParameterGroupName)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)

@@ -7,7 +7,7 @@ import typings.antd.antdStrings.targetSelectedKeys
 import typings.antd.esCollapseCollapseMod.ExpandIconPosition
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.std.Event

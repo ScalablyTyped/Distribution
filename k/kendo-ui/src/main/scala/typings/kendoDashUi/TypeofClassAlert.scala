@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.Alert
-import typings.kendoDashUi.kendoNs.uiNs.AlertOptions
+import typings.kendoDashUi.kendo.ui.Alert
+import typings.kendoDashUi.kendo.ui.AlertOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

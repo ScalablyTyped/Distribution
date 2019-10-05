@@ -22,17 +22,24 @@ trait IPivotStyles extends js.Object {
 object IPivotStyles {
   @scala.inline
   def apply(
-    count: IStyle,
-    icon: IStyle,
-    link: IStyle,
-    linkContent: IStyle,
-    linkIsSelected: IStyle,
-    root: IStyle,
-    text: IStyle,
-    itemContainer: IStyle = null
+    count: IStyle = null,
+    icon: IStyle = null,
+    itemContainer: IStyle = null,
+    link: IStyle = null,
+    linkContent: IStyle = null,
+    linkIsSelected: IStyle = null,
+    root: IStyle = null,
+    text: IStyle = null
   ): IPivotStyles = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkContent = linkContent.asInstanceOf[js.Any], linkIsSelected = linkIsSelected.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (itemContainer != null) __obj.updateDynamic("itemContainer")(itemContainer.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (linkContent != null) __obj.updateDynamic("linkContent")(linkContent.asInstanceOf[js.Any])
+    if (linkIsSelected != null) __obj.updateDynamic("linkIsSelected")(linkIsSelected.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPivotStyles]
   }
 }

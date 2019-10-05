@@ -29,13 +29,13 @@ object ListGroupMembershipsResponse {
     GroupMemberList: GroupMemberList = null,
     NextToken: String = null,
     RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
+    Status: Int | Double = null
   ): ListGroupMembershipsResponse = {
     val __obj = js.Dynamic.literal()
     if (GroupMemberList != null) __obj.updateDynamic("GroupMemberList")(GroupMemberList)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status)
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupMembershipsResponse]
   }
 }

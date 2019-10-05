@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsCardCardMod
 
 import typings.atBlueprintjsCore.libEsmCommonElevationMod.Elevation
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
@@ -42,14 +41,12 @@ object ICardProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    IProps: IProps = null,
     elevation: Elevation = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
     onClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null
   ): ICardProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

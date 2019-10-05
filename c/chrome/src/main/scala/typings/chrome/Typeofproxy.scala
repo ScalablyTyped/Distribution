@@ -1,7 +1,7 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.proxyNs.ProxyErrorEvent
-import typings.chrome.chromeNs.typesNs.ChromeSetting
+import typings.chrome.chrome.proxy.ProxyErrorEvent
+import typings.chrome.chrome.types.ChromeSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

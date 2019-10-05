@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-version-check", JSImport.Namespace)
 @js.native
 object reactDashNativeDashVersionDashCheckMod extends js.Object {
-  @JSName("default")
   @js.native
-  object defaultNs extends js.Object {
+  object default extends js.Object {
     /**
       * Returns url of App Store of app.
       */

@@ -40,3 +40,10 @@ object JSXMemberExpression {
   }
 }
 
+@JSImport("@babel/types", "jsxMemberExpression")
+@js.native
+object jsxMemberExpression extends js.Object {
+  def apply(`object`: JSXIdentifier, property: JSXIdentifier): JSXMemberExpression = js.native
+  def apply(`object`: JSXMemberExpression, property: JSXIdentifier): JSXMemberExpression = js.native
+}
+

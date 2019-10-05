@@ -17,3 +17,9 @@ object TokenCache {
   }
 }
 
+@JSImport("axios-token-interceptor", "tokenCache")
+@js.native
+object tokenCache extends js.Object {
+  def apply(getToken: js.Promise[String], options: TokenCacheOptions): TokenCache = js.native
+}
+

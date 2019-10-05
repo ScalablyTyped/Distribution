@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.StorageNs.StorageFile
+import typings.winrtDashUwp.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

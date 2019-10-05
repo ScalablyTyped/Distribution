@@ -10,8 +10,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var csi: SinonSpy = js.native
   var loadTimes: SinonSpy = js.native
-  def flush(): Unit = js.native
-  def registerPlugin(plugin: js.Object): Unit = js.native
-  def reset(): Unit = js.native
 }
 

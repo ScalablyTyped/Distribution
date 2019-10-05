@@ -1,6 +1,6 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.domNs.node
+import typings.ckeditor.CKEDITOR.dom.node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

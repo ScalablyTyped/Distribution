@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashScrollableDashTabDashView
 
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.react.reactMod.Global.JSX.Element
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

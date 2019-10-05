@@ -21,13 +21,9 @@ trait ListExclusionsRequest extends js.Object {
 
 object ListExclusionsRequest {
   @scala.inline
-  def apply(
-    assessmentRunArn: Arn,
-    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
-    nextToken: PaginationToken = null
-  ): ListExclusionsRequest = {
+  def apply(assessmentRunArn: Arn, maxResults: Int | Double = null, nextToken: PaginationToken = null): ListExclusionsRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListExclusionsRequest]
   }

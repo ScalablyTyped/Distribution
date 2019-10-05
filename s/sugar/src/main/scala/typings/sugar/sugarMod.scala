@@ -1,7 +1,7 @@
 package typings.sugar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sugar.sugarjsNs.Sugar
+import typings.sugar.sugarjs.Sugar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

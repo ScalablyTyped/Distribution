@@ -1,7 +1,7 @@
 package typings.hapi.hapiMod
 
 import typings.hapi.Anon_Payload
-import typings.hapi.hapiMod.LifecycleNs.ReturnValue
+import typings.hapi.hapiMod.Lifecycle.ReturnValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

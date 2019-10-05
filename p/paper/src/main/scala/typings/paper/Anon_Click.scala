@@ -1,7 +1,7 @@
 package typings.paper
 
-import typings.paper.paperNs.IFrameEvent
-import typings.paper.paperNs.MouseEvent
+import typings.paper.paper.IFrameEvent
+import typings.paper.paper.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

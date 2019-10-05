@@ -1,6 +1,6 @@
 package typings.ssh2.ssh2Mod
 
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.ssh2.ssh2Numbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

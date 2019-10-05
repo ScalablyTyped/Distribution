@@ -1,6 +1,6 @@
 package typings.cordovaDashPluginDashXDashSocialsharing
 
-import typings.cordovaDashPluginDashXDashSocialsharing.SocialSharingPluginNs.SocialSharing
+import typings.cordovaDashPluginDashXDashSocialsharing.SocialSharingPlugin.SocialSharing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

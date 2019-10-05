@@ -29,13 +29,13 @@ object PipelineSummary {
     created: Timestamp = null,
     name: PipelineName = null,
     updated: Timestamp = null,
-    version: js.UndefOr[PipelineVersion] = js.undefined
+    version: Int | Double = null
   ): PipelineSummary = {
     val __obj = js.Dynamic.literal()
     if (created != null) __obj.updateDynamic("created")(created)
     if (name != null) __obj.updateDynamic("name")(name)
     if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineSummary]
   }
 }

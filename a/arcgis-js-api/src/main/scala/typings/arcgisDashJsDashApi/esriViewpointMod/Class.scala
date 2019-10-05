@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewpointMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Viewpoint
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewpointProperties
+import typings.arcgisDashJsDashApi.__esri.Viewpoint
+import typings.arcgisDashJsDashApi.__esri.ViewpointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

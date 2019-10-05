@@ -1,12 +1,12 @@
 package typings.atPulumiAws.ecsServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ecsNs.ServiceDeploymentController
-import typings.atPulumiAws.typesInputMod.ecsNs.ServiceLoadBalancer
-import typings.atPulumiAws.typesInputMod.ecsNs.ServiceNetworkConfiguration
-import typings.atPulumiAws.typesInputMod.ecsNs.ServiceOrderedPlacementStrategy
-import typings.atPulumiAws.typesInputMod.ecsNs.ServicePlacementConstraint
-import typings.atPulumiAws.typesInputMod.ecsNs.ServiceServiceRegistries
+import typings.atPulumiAws.typesInputMod.ecs.ServiceDeploymentController
+import typings.atPulumiAws.typesInputMod.ecs.ServiceLoadBalancer
+import typings.atPulumiAws.typesInputMod.ecs.ServiceNetworkConfiguration
+import typings.atPulumiAws.typesInputMod.ecs.ServiceOrderedPlacementStrategy
+import typings.atPulumiAws.typesInputMod.ecs.ServicePlacementConstraint
+import typings.atPulumiAws.typesInputMod.ecs.ServiceServiceRegistries
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

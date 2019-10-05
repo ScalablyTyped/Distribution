@@ -1,5 +1,6 @@
 package typings.nblas.nblasMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.nblas.nblasNumbers.`111`
 import typings.nblas.nblasNumbers.`112`
 import typings.nblas.nblasNumbers.`113`
@@ -24,4 +25,8 @@ object TRANS {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
+
+@JSImport("nblas", "Trans")
+@js.native
+object Trans extends TopLevel[`112`]
 

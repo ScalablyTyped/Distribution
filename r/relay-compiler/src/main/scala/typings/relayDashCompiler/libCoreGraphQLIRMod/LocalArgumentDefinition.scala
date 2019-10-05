@@ -24,12 +24,13 @@ object LocalArgumentDefinition {
     defaultValue: js.Any,
     kind: typings.relayDashCompiler.relayDashCompilerStrings.LocalArgumentDefinition,
     loc: Location,
-    metadata: Metadata,
     name: String,
-    `type`: GraphQLInputType
+    `type`: GraphQLInputType,
+    metadata: Metadata = null
   ): LocalArgumentDefinition = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, kind = kind, loc = loc, name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalArgumentDefinition]
   }
 }

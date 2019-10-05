@@ -44,7 +44,7 @@ object CreateEventSubscriptionMessage {
   def apply(
     SnsTopicArn: String,
     SubscriptionName: String,
-    Enabled: js.UndefOr[BooleanOptional] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     EventCategories: EventCategoriesList = null,
     Severity: String = null,
     SourceIds: SourceIdsList = null,

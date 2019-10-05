@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.asn1js.asn1jsMod.LocalBaseBlockParams because Already inherited
 - typings.asn1js.asn1jsMod.LocalHexBlockParams because var conflicts: blockLength, error, valueBeforeDecode, warnings. Inlined isHexOnly, valueHex */ trait LocalBitStringValueBlockParams extends LocalConstructedValueBlockParams {
   var isConstructed: js.UndefOr[scala.Boolean] = js.undefined
   var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined

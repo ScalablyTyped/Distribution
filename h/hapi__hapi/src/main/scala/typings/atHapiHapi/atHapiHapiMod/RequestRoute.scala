@@ -1,7 +1,7 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Access
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS_PARTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

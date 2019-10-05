@@ -2,6 +2,7 @@ package typings.jqueryDotAjaxfile
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Text
@@ -1982,4 +1983,8 @@ trait JQuery
   def wrapInner(wrappingElement: JQuery): JQuery = js.native
   def wrapInner(wrappingElement: Element): JQuery = js.native
 }
+
+@JSGlobal("jQuery")
+@js.native
+object jQuery extends TopLevel[JQueryStatic]
 

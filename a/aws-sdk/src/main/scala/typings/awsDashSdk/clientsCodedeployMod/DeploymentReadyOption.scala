@@ -17,13 +17,10 @@ trait DeploymentReadyOption extends js.Object {
 
 object DeploymentReadyOption {
   @scala.inline
-  def apply(
-    actionOnTimeout: DeploymentReadyAction = null,
-    waitTimeInMinutes: js.UndefOr[Duration] = js.undefined
-  ): DeploymentReadyOption = {
+  def apply(actionOnTimeout: DeploymentReadyAction = null, waitTimeInMinutes: Int | Double = null): DeploymentReadyOption = {
     val __obj = js.Dynamic.literal()
     if (actionOnTimeout != null) __obj.updateDynamic("actionOnTimeout")(actionOnTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitTimeInMinutes)) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes)
+    if (waitTimeInMinutes != null) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentReadyOption]
   }
 }

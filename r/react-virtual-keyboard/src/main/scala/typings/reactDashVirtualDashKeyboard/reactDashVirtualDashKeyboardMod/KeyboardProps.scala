@@ -1,5 +1,7 @@
 package typings.reactDashVirtualDashKeyboard.reactDashVirtualDashKeyboardMod
 
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,19 +19,19 @@ trait KeyboardProps extends js.Object {
 object KeyboardProps {
   @scala.inline
   def apply(
-    callbackParent: kbEvents = null,
+    callbackParent: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
     name: String = null,
-    onAccepted: kbEvents = null,
-    onChange: kbEvents = null,
+    onAccepted: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
+    onChange: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit = null,
     options: ReactKeyboardOptions = null,
     placeholder: String = null,
     value: String = null
   ): KeyboardProps = {
     val __obj = js.Dynamic.literal()
-    if (callbackParent != null) __obj.updateDynamic("callbackParent")(callbackParent)
+    if (callbackParent != null) __obj.updateDynamic("callbackParent")(js.Any.fromFunction3(callbackParent))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onAccepted != null) __obj.updateDynamic("onAccepted")(onAccepted)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onAccepted != null) __obj.updateDynamic("onAccepted")(js.Any.fromFunction3(onAccepted))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (options != null) __obj.updateDynamic("options")(options)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -1,6 +1,6 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFObjectWindowResultCode
+import typings.mfiles.MFiles.MFObjectWindowResultCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

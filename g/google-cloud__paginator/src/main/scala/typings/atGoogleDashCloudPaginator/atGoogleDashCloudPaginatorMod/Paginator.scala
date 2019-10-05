@@ -1,6 +1,7 @@
 package typings.atGoogleDashCloudPaginator.atGoogleDashCloudPaginatorMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -77,4 +78,8 @@ class Paginator () extends js.Object {
     typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod.ResourceStream[T]
   ] = js.native
 }
+
+@JSImport("@google-cloud/paginator", "paginator")
+@js.native
+object paginator extends TopLevel[Paginator]
 

@@ -1,9 +1,9 @@
 package typings.pouchdb.pouchdbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pouchdbDashAdapterDashFruitdown.PouchDBNs.FruitDOWNAdapterNs.FruitDOWNAdapterConfiguration
-import typings.pouchdbDashAdapterDashFruitdown.PouchDBNs.Static
-import typings.pouchdbDashCore.PouchDBNs.Database
+import typings.pouchdbDashAdapterDashFruitdown.PouchDB.FruitDOWNAdapter.FruitDOWNAdapterConfiguration
+import typings.pouchdbDashAdapterDashFruitdown.PouchDB.Static
+import typings.pouchdbDashCore.PouchDB.Database
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

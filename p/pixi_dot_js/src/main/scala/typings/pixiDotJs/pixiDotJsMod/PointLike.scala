@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "PointLike")
 @js.native
 class PointLike ()
-  extends typings.pixiDotJs.PIXINs.PointLike
+  extends typings.pixiDotJs.PIXI.PointLike
 

@@ -5,7 +5,7 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLButtonElement
 import scala.scalajs.js

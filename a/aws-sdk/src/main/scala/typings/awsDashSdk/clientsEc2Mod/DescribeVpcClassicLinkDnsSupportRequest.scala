@@ -22,12 +22,12 @@ trait DescribeVpcClassicLinkDnsSupportRequest extends js.Object {
 object DescribeVpcClassicLinkDnsSupportRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[DescribeVpcClassicLinkDnsSupportMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: DescribeVpcClassicLinkDnsSupportNextToken = null,
     VpcIds: VpcClassicLinkIdList = null
   ): DescribeVpcClassicLinkDnsSupportRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (VpcIds != null) __obj.updateDynamic("VpcIds")(VpcIds)
     __obj.asInstanceOf[DescribeVpcClassicLinkDnsSupportRequest]

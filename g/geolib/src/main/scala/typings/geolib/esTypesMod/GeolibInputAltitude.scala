@@ -14,16 +14,16 @@ trait GeolibInputAltitude extends js.Object {
 object GeolibInputAltitude {
   @scala.inline
   def apply(
-    alt: js.UndefOr[GeolibAltitudeInputValue] = js.undefined,
-    altitude: js.UndefOr[GeolibAltitudeInputValue] = js.undefined,
-    elev: js.UndefOr[GeolibAltitudeInputValue] = js.undefined,
-    elevation: js.UndefOr[GeolibAltitudeInputValue] = js.undefined
+    alt: Int | Double = null,
+    altitude: Int | Double = null,
+    elev: Int | Double = null,
+    elevation: Int | Double = null
   ): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
-    if (!js.isUndefined(elev)) __obj.updateDynamic("elev")(elev)
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (elev != null) __obj.updateDynamic("elev")(elev.asInstanceOf[js.Any])
+    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]
   }
 }

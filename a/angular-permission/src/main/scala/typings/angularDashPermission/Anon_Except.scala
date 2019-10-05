@@ -2,7 +2,7 @@ package typings.angularDashPermission
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.angularMod.IPromise
-import typings.angularDashPermission.angularMod.permissionNs.PermissionRedirectConfigation
+import typings.angularDashPermission.angularMod.permission.PermissionRedirectConfigation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

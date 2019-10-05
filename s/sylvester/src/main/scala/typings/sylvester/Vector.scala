@@ -1,5 +1,7 @@
 package typings.sylvester
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sylvester.Sylvester.VectorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -193,4 +195,8 @@ trait Vector extends js.Object {
     */
   def x(k: Double): Vector = js.native
 }
+
+@JSGlobal("Vector")
+@js.native
+object Vector extends TopLevel[VectorStatic]
 

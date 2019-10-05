@@ -1,6 +1,6 @@
 package typings.picturefill.picturefillMod
 
-import typings.picturefill.picturefillMod.PicturefillNs.EvaluateArg
+import typings.picturefill.picturefillMod.Picturefill.EvaluateArg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

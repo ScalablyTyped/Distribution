@@ -26,31 +26,9 @@ trait Try[A] extends js.Object {
   def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ Error, Try[B]]): Try[B]
 }
 
-object Try {
-  @scala.inline
-  def apply[A](
-    apply1: (Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Try[js.Any],
-    apply2: (Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Try[js.Any],
-    chain: Try[js.Any] => TryBuilder1[A, js.Any],
-    failed: () => Try[A],
-    filter: js.Function1[/* a */ A, Boolean] => Try[A],
-    flatMap: js.Function1[/* a */ A, Try[js.Any]] => Try[js.Any],
-    fold: (js.Function1[/* e */ Error, js.Any], js.Function1[/* a */ A, js.Any]) => js.Any,
-    foreach: js.Function1[/* a */ A, Unit] => Unit,
-    get: () => A,
-    getError: () => Error,
-    getOrElse: js.Any => A,
-    isFailure: Boolean,
-    isSuccess: Boolean,
-    map: js.Function1[/* a */ A, js.Any] => Try[js.Any],
-    orElse: Try[js.Any] => Try[A],
-    recover: js.Function1[/* e */ Error, Optional[Try[js.Any]]] => Try[A],
-    toOptional: () => Optional[A],
-    transform: (js.Function1[/* a */ A, Try[js.Any]], js.Function1[/* e */ Error, Try[js.Any]]) => Try[js.Any]
-  ): Try[A] = {
-    val __obj = js.Dynamic.literal(apply1 = js.Any.fromFunction2(apply1), apply2 = js.Any.fromFunction3(apply2), chain = js.Any.fromFunction1(chain), failed = js.Any.fromFunction0(failed), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), fold = js.Any.fromFunction2(fold), foreach = js.Any.fromFunction1(foreach), get = js.Any.fromFunction0(get), getError = js.Any.fromFunction0(getError), getOrElse = js.Any.fromFunction1(getOrElse), isFailure = isFailure, isSuccess = isSuccess, map = js.Any.fromFunction1(map), orElse = js.Any.fromFunction1(orElse), recover = js.Any.fromFunction1(recover), toOptional = js.Any.fromFunction0(toOptional), transform = js.Any.fromFunction2(transform))
-  
-    __obj.asInstanceOf[Try[A]]
-  }
+@JSImport("scalike", "Try")
+@js.native
+object Try extends js.Object {
+  def apply[A](f: js.Function0[A]): Try[A] = js.native
 }
 

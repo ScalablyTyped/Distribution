@@ -1,14 +1,14 @@
 package typings.atPulumiAws.cloudfrontDistributionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionCustomErrorResponse
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionDefaultCacheBehavior
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionLoggingConfig
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrderedCacheBehavior
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOrigin
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionOriginGroup
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionRestrictions
-import typings.atPulumiAws.typesInputMod.cloudfrontNs.DistributionViewerCertificate
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionCustomErrorResponse
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionDefaultCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionLoggingConfig
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionOrderedCacheBehavior
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionOrigin
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionOriginGroup
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionRestrictions
+import typings.atPulumiAws.typesInputMod.cloudfront.DistributionViewerCertificate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

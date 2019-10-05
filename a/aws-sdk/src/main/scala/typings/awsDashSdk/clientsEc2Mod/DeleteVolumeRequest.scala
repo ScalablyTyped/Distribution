@@ -17,7 +17,7 @@ trait DeleteVolumeRequest extends js.Object {
 
 object DeleteVolumeRequest {
   @scala.inline
-  def apply(VolumeId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVolumeRequest = {
+  def apply(VolumeId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteVolumeRequest]

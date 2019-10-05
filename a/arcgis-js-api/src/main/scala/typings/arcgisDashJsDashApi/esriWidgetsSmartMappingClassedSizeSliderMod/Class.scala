@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSmartMappingClassedSizeSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassedSizeSlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassedSizeSliderProperties
+import typings.arcgisDashJsDashApi.__esri.ClassedSizeSlider
+import typings.arcgisDashJsDashApi.__esri.ClassedSizeSliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

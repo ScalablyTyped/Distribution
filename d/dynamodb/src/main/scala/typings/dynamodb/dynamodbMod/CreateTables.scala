@@ -1,5 +1,6 @@
 package typings.dynamodb.dynamodbMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.dynamodb.callbackMod.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,4 +13,8 @@ trait CreateTables extends js.Object {
   def apply(options: CreateTablesOptions): js.Promise[_] = js.native
   def apply(options: CreateTablesOptions, callback: Callback): Unit = js.native
 }
+
+@JSImport("dynamodb", "createTables")
+@js.native
+object createTables extends TopLevel[CreateTables]
 

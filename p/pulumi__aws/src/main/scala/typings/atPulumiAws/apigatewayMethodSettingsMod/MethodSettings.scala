@@ -1,7 +1,7 @@
 package typings.atPulumiAws.apigatewayMethodSettingsMod
 
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.MethodSettingsSettings
+import typings.atPulumiAws.typesOutputMod.apigateway.MethodSettingsSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

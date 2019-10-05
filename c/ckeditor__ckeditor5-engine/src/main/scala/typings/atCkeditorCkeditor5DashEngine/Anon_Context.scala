@@ -1,6 +1,6 @@
 package typings.atCkeditorCkeditor5DashEngine
 
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.modelNs.SchemaContextDefinition
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.SchemaContextDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

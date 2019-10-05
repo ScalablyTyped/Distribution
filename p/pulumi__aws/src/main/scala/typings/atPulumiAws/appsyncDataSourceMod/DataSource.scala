@@ -1,9 +1,9 @@
 package typings.atPulumiAws.appsyncDataSourceMod
 
-import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceDynamodbConfig
-import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceElasticsearchConfig
-import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceHttpConfig
-import typings.atPulumiAws.typesOutputMod.appsyncNs.DataSourceLambdaConfig
+import typings.atPulumiAws.typesOutputMod.appsync.DataSourceDynamodbConfig
+import typings.atPulumiAws.typesOutputMod.appsync.DataSourceElasticsearchConfig
+import typings.atPulumiAws.typesOutputMod.appsync.DataSourceHttpConfig
+import typings.atPulumiAws.typesOutputMod.appsync.DataSourceLambdaConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

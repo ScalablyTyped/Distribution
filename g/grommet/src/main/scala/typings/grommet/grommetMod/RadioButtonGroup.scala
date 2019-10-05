@@ -1,8 +1,10 @@
 package typings.grommet.grommetMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsBoxMod.BoxProps
 import typings.grommet.componentsRadioButtonGroupMod.RadioButtonGroupProps
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,4 +17,8 @@ class RadioButtonGroup protected ()
   def this(props: RadioButtonGroupProps with BoxProps) = this()
   def this(props: RadioButtonGroupProps with BoxProps, context: js.Any) = this()
 }
+
+@JSImport("grommet", "RadioButtonGroup")
+@js.native
+object RadioButtonGroup extends TopLevel[ComponentClass[RadioButtonGroupProps with BoxProps, ComponentState]]
 

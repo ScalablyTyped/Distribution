@@ -35,7 +35,7 @@ object GetAccountAuthorizationDetailsResponse {
   @scala.inline
   def apply(
     GroupDetailList: groupDetailListType = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null,
     Policies: ManagedPolicyDetailListType = null,
     RoleDetailList: roleDetailListType = null,

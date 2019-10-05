@@ -4,7 +4,7 @@ import typings.sharedb.libSharedbMod.DocEvent
 import typings.sharedb.libSharedbMod.OTType
 import typings.sharedb.libSharedbMod.QueryEvent
 import typings.sharedb.libSharedbMod.RequestAction
-import typings.sharedb.sharedbMod.middlewareNs.SnapshotType
+import typings.sharedb.sharedbMod.middleware.SnapshotType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

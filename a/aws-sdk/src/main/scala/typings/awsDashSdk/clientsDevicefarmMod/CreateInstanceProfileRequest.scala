@@ -33,8 +33,8 @@ object CreateInstanceProfileRequest {
     name: Name,
     description: Message = null,
     excludeAppPackagesFromCleanup: PackageIds = null,
-    packageCleanup: js.UndefOr[Boolean] = js.undefined,
-    rebootAfterUse: js.UndefOr[Boolean] = js.undefined
+    packageCleanup: js.UndefOr[scala.Boolean] = js.undefined,
+    rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)

@@ -46,14 +46,14 @@ object ListContactsRequest {
     startTime: Timestamp,
     statusList: StatusList,
     groundStation: String = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | scala.Double = null,
     missionProfileArn: MissionProfileArn = null,
     nextToken: String = null,
     satelliteArn: satelliteArn = null
   ): ListContactsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime, statusList = statusList)
     if (groundStation != null) __obj.updateDynamic("groundStation")(groundStation)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn)

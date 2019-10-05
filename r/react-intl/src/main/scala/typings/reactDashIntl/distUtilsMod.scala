@@ -13,8 +13,8 @@ import typings.reactDashIntl.reactDashIntlStrings.relative
 import typings.reactDashIntl.reactDashIntlStrings.textComponent
 import typings.reactDashIntl.reactDashIntlStrings.timeZone
 import typings.std.Error
-import typings.std.IntlNs.DateTimeFormatOptions
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.DateTimeFormatOptions
+import typings.std.Intl.NumberFormatOptions
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.Record

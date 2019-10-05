@@ -46,7 +46,7 @@ trait ServerLaunchConfiguration extends js.Object {
 object ServerLaunchConfiguration {
   @scala.inline
   def apply(
-    associatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined,
+    associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
     ec2KeyName: EC2KeyName = null,
     instanceType: InstanceType = null,
     logicalId: LogicalId = null,

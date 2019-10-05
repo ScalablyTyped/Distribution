@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "EntityChangedEvent")
 @js.native
 class EntityChangedEvent ()
-  extends typings.breeze.breezeNs.EntityChangedEvent
+  extends typings.breeze.breeze.EntityChangedEvent
 

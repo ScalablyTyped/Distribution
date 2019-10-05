@@ -125,7 +125,7 @@ trait IPopoverSharedProps
     * @default "span"
     */
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   /**
     * HTML tag name for the wrapper element, which also receives the
@@ -133,7 +133,7 @@ trait IPopoverSharedProps
     * @default "span"
     */
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
 }
 
@@ -167,10 +167,10 @@ object IPopoverSharedProps {
     position: PopoverPosition = null,
     targetClassName: String = null,
     targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     transitionDuration: Int | Double = null,
     usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
   ): IPopoverSharedProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

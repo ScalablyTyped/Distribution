@@ -27,14 +27,14 @@ object AssignPrivateIpAddressesRequest {
   @scala.inline
   def apply(
     NetworkInterfaceId: String,
-    AllowReassignment: js.UndefOr[Boolean] = js.undefined,
+    AllowReassignment: js.UndefOr[scala.Boolean] = js.undefined,
     PrivateIpAddresses: PrivateIpAddressStringList = null,
-    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
+    SecondaryPrivateIpAddressCount: Int | scala.Double = null
   ): AssignPrivateIpAddressesRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId)
     if (!js.isUndefined(AllowReassignment)) __obj.updateDynamic("AllowReassignment")(AllowReassignment)
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses)
-    if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount)
+    if (SecondaryPrivateIpAddressCount != null) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignPrivateIpAddressesRequest]
   }
 }

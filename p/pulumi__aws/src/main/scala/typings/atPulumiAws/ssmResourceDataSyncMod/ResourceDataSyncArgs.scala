@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmResourceDataSyncMod
 
-import typings.atPulumiAws.typesInputMod.ssmNs.ResourceDataSyncS3Destination
+import typings.atPulumiAws.typesInputMod.ssm.ResourceDataSyncS3Destination
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

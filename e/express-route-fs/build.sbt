@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "express-route-fs"
-version := "v0.1.0-dt-20190819Z-96eb01"
-scalaVersion := "2.12.9"
+version := "v0.1.0-dt-20190819Z-683845"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "FontHandler")
 @js.native
 class FontHandler protected ()
-  extends typings.playcanvas.pcNs.FontHandler {
-  def this(loader: typings.playcanvas.pcNs.ResourceLoader) = this()
+  extends typings.playcanvas.pc.FontHandler {
+  def this(loader: typings.playcanvas.pc.ResourceLoader) = this()
 }
 

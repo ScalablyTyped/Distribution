@@ -1,6 +1,6 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Reminder
+import typings.activexDashOutlook.Outlook.Reminder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

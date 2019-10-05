@@ -144,6 +144,9 @@ object relayDashRuntimeStrings {
   sealed trait insert extends js.Object
   
   @js.native
+  sealed trait linked extends js.Object
+  
+  @js.native
   sealed trait missing extends js.Object
   
   @js.native
@@ -153,7 +156,13 @@ object relayDashRuntimeStrings {
   sealed trait pageInfo extends js.Object
   
   @js.native
+  sealed trait pluralLinked extends js.Object
+  
+  @js.native
   sealed trait prepend extends RangeOperations
+  
+  @js.native
+  sealed trait scalar extends js.Object
   
   @js.native
   sealed trait startCursor extends js.Object
@@ -255,13 +264,19 @@ object relayDashRuntimeStrings {
   @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
   @scala.inline
+  def linked: linked = "linked".asInstanceOf[linked]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
   def pageInfo: pageInfo = "pageInfo".asInstanceOf[pageInfo]
   @scala.inline
+  def pluralLinked: pluralLinked = "pluralLinked".asInstanceOf[pluralLinked]
+  @scala.inline
   def prepend: prepend = "prepend".asInstanceOf[prepend]
+  @scala.inline
+  def scalar: scalar = "scalar".asInstanceOf[scalar]
   @scala.inline
   def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
   @scala.inline

@@ -17,7 +17,7 @@ trait Certificate extends js.Object {
 
 object Certificate {
   @scala.inline
-  def apply(CertificateArn: CertificateArn = null, IsDefault: js.UndefOr[Default] = js.undefined): Certificate = {
+  def apply(CertificateArn: CertificateArn = null, IsDefault: js.UndefOr[Boolean] = js.undefined): Certificate = {
     val __obj = js.Dynamic.literal()
     if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn)
     if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)

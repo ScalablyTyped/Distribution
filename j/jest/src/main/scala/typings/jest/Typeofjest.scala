@@ -1,12 +1,12 @@
 package typings.jest
 
-import typings.jest.jestMod.jasmineNs.CustomMatcherFactories
-import typings.jest.jestMod.jestNs.ArgsType
-import typings.jest.jestMod.jestNs.FunctionPropertyNames
-import typings.jest.jestMod.jestNs.Mock
-import typings.jest.jestMod.jestNs.MockOptions
-import typings.jest.jestMod.jestNs.NonFunctionPropertyNames
-import typings.jest.jestMod.jestNs.SpyInstance
+import typings.jest.jestMod.jasmine.CustomMatcherFactories
+import typings.jest.jestMod.jest.ArgsType
+import typings.jest.jestMod.jest.FunctionPropertyNames
+import typings.jest.jestMod.jest.Mock
+import typings.jest.jestMod.jest.MockOptions
+import typings.jest.jestMod.jest.NonFunctionPropertyNames
+import typings.jest.jestMod.jest.SpyInstance
 import typings.jest.jestStrings.get
 import typings.jest.jestStrings.set
 import typings.std.Required

@@ -17,9 +17,9 @@ trait Scte27SourceSettings extends js.Object {
 
 object Scte27SourceSettings {
   @scala.inline
-  def apply(Pid: js.UndefOr[__integerMin1] = js.undefined): Scte27SourceSettings = {
+  def apply(Pid: Int | Double = null): Scte27SourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid)
+    if (Pid != null) __obj.updateDynamic("Pid")(Pid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte27SourceSettings]
   }
 }

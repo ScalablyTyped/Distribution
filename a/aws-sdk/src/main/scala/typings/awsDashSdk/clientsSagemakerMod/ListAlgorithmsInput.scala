@@ -40,7 +40,7 @@ object ListAlgorithmsInput {
   def apply(
     CreationTimeAfter: CreationTime = null,
     CreationTimeBefore: CreationTime = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NameContains: NameContains = null,
     NextToken: NextToken = null,
     SortBy: AlgorithmSortBy = null,
@@ -49,7 +49,7 @@ object ListAlgorithmsInput {
     val __obj = js.Dynamic.literal()
     if (CreationTimeAfter != null) __obj.updateDynamic("CreationTimeAfter")(CreationTimeAfter)
     if (CreationTimeBefore != null) __obj.updateDynamic("CreationTimeBefore")(CreationTimeBefore)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])

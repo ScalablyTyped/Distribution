@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.tsutilsMaybeMod.Maybe
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import typings.std.Record
 import scala.scalajs.js
@@ -27,18 +28,18 @@ object SubscriptionArgs {
     document: DocumentNode,
     schema: GraphQLSchema,
     contextValue: js.Any = null,
-    fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]] = null,
+    fieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
     operationName: Maybe[String] = null,
     rootValue: js.Any = null,
-    subscribeFieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]] = null,
+    subscribeFieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
     variableValues: Maybe[Record[String, _]] = null
   ): SubscriptionArgs = {
     val __obj = js.Dynamic.literal(document = document, schema = schema)
     if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver.asInstanceOf[js.Any])
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
-    if (subscribeFieldResolver != null) __obj.updateDynamic("subscribeFieldResolver")(subscribeFieldResolver.asInstanceOf[js.Any])
+    if (subscribeFieldResolver != null) __obj.updateDynamic("subscribeFieldResolver")(js.Any.fromFunction4(subscribeFieldResolver))
     if (variableValues != null) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionArgs]
   }

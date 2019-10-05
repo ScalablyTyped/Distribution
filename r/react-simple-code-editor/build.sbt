@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-simple-code-editor"
-version := "0.10.0-9109fb"
-scalaVersion := "2.12.9"
+version := "0.10.0-b592d9"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

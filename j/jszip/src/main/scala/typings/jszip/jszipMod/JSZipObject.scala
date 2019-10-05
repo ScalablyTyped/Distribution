@@ -10,7 +10,7 @@ import typings.jszip.jszipStrings.nodestream
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Date

@@ -3,9 +3,9 @@ package typings.knockoutDashTransformations
 import org.scalablytyped.runtime.StringDictionary
 import typings.knockout.KnockoutObservable
 import typings.knockout.KnockoutObservableArray
-import typings.knockoutDashTransformations.KnockoutTransformationsNs.Mapping
-import typings.knockoutDashTransformations.KnockoutTransformationsNs.MappingOption
-import typings.knockoutDashTransformations.KnockoutTransformationsNs.MappingWithDisposeCallbackOption
+import typings.knockoutDashTransformations.KnockoutTransformations.Mapping
+import typings.knockoutDashTransformations.KnockoutTransformations.MappingOption
+import typings.knockoutDashTransformations.KnockoutTransformations.MappingWithDisposeCallbackOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

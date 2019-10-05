@@ -1,5 +1,6 @@
 package typings.wonderDotJs.distEs2015Mod
 
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,6 @@ class EventNameHandler ()
 @JSImport("wonder.js/dist/es2015", "EventNameHandler")
 @js.native
 object EventNameHandler extends js.Object {
-  def handleEventName(domEventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName): js.Any = js.native
+  def handleEventName(domEventName: EEventName): js.Any = js.native
 }
 

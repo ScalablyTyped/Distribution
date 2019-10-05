@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Badge")
 @js.native
 class Badge ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Badge
+  extends typings.materialDashUi.__MaterialUI.Badge
 

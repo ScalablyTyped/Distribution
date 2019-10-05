@@ -1,5 +1,6 @@
 package typings.fastDashGlob.outManagersOptionsMod
 
+import typings.fastDashGlob.outTypesEntriesMod.EntryItem
 import typings.fastDashGlob.outTypesPatternsMod.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -118,11 +119,11 @@ object IOptions {
     onlyFiles: Boolean,
     stats: Boolean,
     unique: Boolean,
-    transform: TransformFunction[T] = null
+    transform: /* entry */ EntryItem => T = null
   ): IOptions[T] = {
     val __obj = js.Dynamic.literal(absolute = absolute, brace = brace, cwd = cwd, deep = deep.asInstanceOf[js.Any], dot = dot, extension = extension, followSymlinkedDirectories = followSymlinkedDirectories, globstar = globstar, ignore = ignore, markDirectories = markDirectories, matchBase = matchBase, nobrace = nobrace, nocase = nocase, noext = noext, noglobstar = noglobstar, onlyDirectories = onlyDirectories, onlyFiles = onlyFiles, stats = stats, unique = unique)
     __obj.updateDynamic("case")(`case`)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[IOptions[T]]
   }
 }

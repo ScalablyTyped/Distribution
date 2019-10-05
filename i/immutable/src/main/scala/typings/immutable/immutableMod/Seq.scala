@@ -1,5 +1,9 @@
 package typings.immutable.immutableMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.immutable.immutableMod.Seq.Indexed
+import typings.immutable.immutableMod.Seq.Keyed
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,5 +57,67 @@ trait Seq[K, V] extends Collection[K, V] {
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
   ): Seq[K, F] = js.native
+}
+
+@JSImport("immutable", "Seq")
+@js.native
+object Seq extends js.Object {
+  @js.native
+  trait Indexed[T]
+    extends Seq[Double, T]
+       with typings.immutable.immutableMod.Collection.Indexed[T]
+  
+  @js.native
+  trait Keyed[K, V]
+    extends Seq[K, V]
+       with typings.immutable.immutableMod.Collection.Keyed[K, V]
+  
+  @js.native
+  trait Set[T]
+    extends Seq[T, T]
+       with typings.immutable.immutableMod.Collection.Set[T]
+  
+  def apply(): Seq[_, _] = js.native
+  def apply[T](collection: typings.immutable.immutableMod.Collection.Indexed[T]): Indexed[T] = js.native
+  def apply[T](collection: typings.immutable.immutableMod.Collection.Set[T]): typings.immutable.immutableMod.Seq.Set[T] = js.native
+  def apply[T](collection: Iterable[T]): Indexed[T] = js.native
+  def apply[V](obj: StringDictionary[V]): Keyed[String, V] = js.native
+  def apply[S /* <: Seq[_, _] */](seq: S): S = js.native
+  def apply[K, V](collection: typings.immutable.immutableMod.Collection.Keyed[K, V]): Keyed[K, V] = js.native
+  /**
+    * True if `maybeSeq` is a Seq, it is not backed by a concrete
+    * structure such as Map, List, or Set.
+    */
+  def isSeq(maybeSeq: js.Any): Boolean = js.native
+  /**
+    * `Seq` which represents an ordered indexed list of values.
+    */
+  @js.native
+  object Indexed extends js.Object {
+    def apply(): Indexed[_] = js.native
+    def apply[T](collection: Iterable[T]): Indexed[T] = js.native
+    /**
+      * Provides an Seq.Indexed of the values provided.
+      */
+    def of[T](values: T*): Indexed[T] = js.native
+  }
+  
+  @js.native
+  object Keyed extends js.Object {
+    def apply(): Keyed[_, _] = js.native
+    def apply[V](obj: StringDictionary[V]): Keyed[String, V] = js.native
+    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): Keyed[K, V] = js.native
+  }
+  
+  @js.native
+  object Set extends js.Object {
+    def apply(): typings.immutable.immutableMod.Seq.Set[_] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Seq.Set[T] = js.native
+    /**
+      * Returns a Seq.Set of the provided values
+      */
+    def of[T](values: T*): typings.immutable.immutableMod.Seq.Set[T] = js.native
+  }
+  
 }
 

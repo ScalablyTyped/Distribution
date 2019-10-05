@@ -1,7 +1,7 @@
 package typings.mockDashAwsDashS3.mockDashAwsDashS3Mod
 
 import typings.awsDashSdk.libConfigMod.ConfigurationOptions
-import typings.awsDashSdk.libCredentialsWebUnderscoreIdentityUnderscoreCredentialsMod.WebIdentityCredentialsNs.WebIdentityCredentialsOptions
+import typings.awsDashSdk.libCredentialsWebUnderscoreIdentityUnderscoreCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,4 +22,9 @@ class WebIdentityCredentials ()
   def this(options: WebIdentityCredentialsOptions) = this()
   def this(options: WebIdentityCredentialsOptions, clientConfig: ConfigurationOptions) = this()
 }
+
+// Needed to expose interfaces on the class
+@JSImport("mock-aws-s3", "WebIdentityCredentials")
+@js.native
+object WebIdentityCredentials extends js.Object
 

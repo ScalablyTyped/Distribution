@@ -17,7 +17,7 @@ trait ConfirmProductInstanceResult extends js.Object {
 
 object ConfirmProductInstanceResult {
   @scala.inline
-  def apply(OwnerId: String = null, Return: js.UndefOr[Boolean] = js.undefined): ConfirmProductInstanceResult = {
+  def apply(OwnerId: String = null, Return: js.UndefOr[scala.Boolean] = js.undefined): ConfirmProductInstanceResult = {
     val __obj = js.Dynamic.literal()
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId)
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)

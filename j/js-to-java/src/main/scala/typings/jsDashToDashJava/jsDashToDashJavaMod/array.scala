@@ -1,0 +1,42 @@
+package typings.jsDashToDashJava.jsDashToDashJavaMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("js-to-java", "array")
+@js.native
+object array extends js.Object {
+  def apply(className: String, value: js.Array[_]): js.Object = js.native
+  def BigDecimal(`val`: js.Array[String]): js.Object = js.native
+  def Boolean(value: js.Array[scala.Boolean]): js.Object = js.native
+  def Byte(value: js.Array[Double]): js.Object = js.native
+  def Character(value: js.Array[String]): js.Object = js.native
+  def Class(className: js.Array[String]): js.Object = js.native
+  // Note: it doesn't allow [null, "test"], actually it should be allowed
+  def Currency(value: js.Array[typings.jsDashToDashJava.jsDashToDashJavaMod.Currency | Null | String]): js.Object = js.native
+  def Dictionary(value: js.Array[js.Object]): js.Object = js.native
+  def Double(value: js.Array[scala.Double]): js.Object = js.native
+  def Enumeration(value: js.Array[js.Object]): js.Object = js.native
+  def Float(value: js.Array[Double]): js.Object = js.native
+  def HashMap(value: js.Array[js.Object]): js.Object = js.native
+  def Integer(value: js.Array[Double]): js.Object = js.native
+  def Iterator(value: js.Array[js.Object]): js.Object = js.native
+  def List[T](value: js.Array[T]): js.Object = js.native
+  def Locale(locale: js.Array[String], handle: String): js.Object = js.native
+  def Long(value: js.Array[Double]): js.Object = js.native
+  def Map(value: js.Array[js.Object]): js.Object = js.native
+  def Set(value: js.Array[js.Object]): js.Object = js.native
+  def Short(value: js.Array[Double]): js.Object = js.native
+  def String(value: js.Array[java.lang.String]): js.Object = js.native
+  def boolean(value: js.Array[Boolean]): js.Object = js.native
+  def byte(value: js.Array[Double]): js.Object = js.native
+  def char(value: js.Array[String]): js.Object = js.native
+  def chars(value: js.Array[String]): js.Object = js.native
+  def double(value: js.Array[Double]): js.Object = js.native
+  def float(value: js.Array[Double]): js.Object = js.native
+  def int(value: js.Array[Double]): js.Object = js.native
+  def long(value: js.Array[Double]): js.Object = js.native
+  def short(value: js.Array[Double]): js.Object = js.native
+}
+

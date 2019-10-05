@@ -23,7 +23,7 @@ object CreateTransitGatewayRouteTableRequest {
   @scala.inline
   def apply(
     TransitGatewayId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null
   ): CreateTransitGatewayRouteTableRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayId = TransitGatewayId)

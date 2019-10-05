@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.permissionsNs.Permissions
-import typings.chrome.chromeNs.permissionsNs.PermissionsAddedEvent
-import typings.chrome.chromeNs.permissionsNs.PermissionsRemovedEvent
+import typings.chrome.chrome.permissions.Permissions
+import typings.chrome.chrome.permissions.PermissionsAddedEvent
+import typings.chrome.chrome.permissions.PermissionsRemovedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

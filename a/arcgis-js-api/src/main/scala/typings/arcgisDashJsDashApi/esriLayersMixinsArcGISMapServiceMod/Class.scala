@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsArcGISMapServiceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISMapService
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISMapServiceCapabilities
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISMapServiceProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Extent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.ArcGISMapService
+import typings.arcgisDashJsDashApi.__esri.ArcGISMapServiceCapabilities
+import typings.arcgisDashJsDashApi.__esri.ArcGISMapServiceProperties
+import typings.arcgisDashJsDashApi.__esri.Extent
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

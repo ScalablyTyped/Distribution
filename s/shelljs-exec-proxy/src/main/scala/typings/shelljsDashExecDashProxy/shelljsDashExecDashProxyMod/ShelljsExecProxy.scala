@@ -1,7 +1,7 @@
 package typings.shelljsDashExecDashProxy.shelljsDashExecDashProxyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.shelljs.Anon_Async
 import typings.shelljs.Anon_AsyncTrue

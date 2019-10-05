@@ -17,9 +17,9 @@ trait GPSPointDimension extends js.Object {
 
 object GPSPointDimension {
   @scala.inline
-  def apply(Coordinates: GPSCoordinates, RangeInKilometers: js.UndefOr[__double] = js.undefined): GPSPointDimension = {
+  def apply(Coordinates: GPSCoordinates, RangeInKilometers: Int | Double = null): GPSPointDimension = {
     val __obj = js.Dynamic.literal(Coordinates = Coordinates)
-    if (!js.isUndefined(RangeInKilometers)) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers)
+    if (RangeInKilometers != null) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPSPointDimension]
   }
 }

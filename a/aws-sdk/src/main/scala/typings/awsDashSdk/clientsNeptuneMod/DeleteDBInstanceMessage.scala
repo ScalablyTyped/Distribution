@@ -24,7 +24,7 @@ object DeleteDBInstanceMessage {
   def apply(
     DBInstanceIdentifier: String,
     FinalDBSnapshotIdentifier: String = null,
-    SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
+    SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
     if (FinalDBSnapshotIdentifier != null) __obj.updateDynamic("FinalDBSnapshotIdentifier")(FinalDBSnapshotIdentifier)

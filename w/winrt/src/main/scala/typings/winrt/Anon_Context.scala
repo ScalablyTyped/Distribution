@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationContext
+import typings.winrt.Windows.Networking.NetworkOperators.HotspotAuthenticationContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

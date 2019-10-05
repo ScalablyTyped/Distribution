@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersBingMapsLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BingMapsLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BingMapsLayerProperties
+import typings.arcgisDashJsDashApi.__esri.BingMapsLayer
+import typings.arcgisDashJsDashApi.__esri.BingMapsLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

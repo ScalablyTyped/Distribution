@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var ucs2: typings.easyDashXapiDashSupertest.punycodeMod.ucs2 = js.native
   var version: js.Any = js.native
-  def decode(string: String): String = js.native
-  def encode(string: String): String = js.native
-  def toASCII(domain: String): String = js.native
-  def toUnicode(domain: String): String = js.native
 }
 

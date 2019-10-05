@@ -15,18 +15,18 @@ trait MockJaxStandardLogger extends js.Object {
 object MockJaxStandardLogger {
   @scala.inline
   def apply(
-    debug: MockJaxLoggingFunction = null,
-    error: MockJaxLoggingFunction = null,
-    info: MockJaxLoggingFunction = null,
-    log: MockJaxLoggingFunction = null,
-    warn: MockJaxLoggingFunction = null
+    debug: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
+    error: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
+    info: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
+    log: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
+    warn: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null
   ): MockJaxStandardLogger = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction2(debug))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
+    if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction2(info))
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
+    if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction2(warn))
     __obj.asInstanceOf[MockJaxStandardLogger]
   }
 }

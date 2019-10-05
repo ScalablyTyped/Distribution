@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojinputnumberMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_NumberRange
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.asyncValidators
@@ -35,13 +37,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.value
 import typings.atOracleOraclejet.atOracleOraclejetStrings.virtualKeyboard
 import typings.atOracleOraclejet.atOracleOraclejetStrings.virtualKeyboardChanged
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
-import typings.atOracleOraclejet.ojinputnumberMod.ojInputNumberNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputnumberMod.ojInputNumberNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputnumberMod.ojInputNumber.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputnumberMod.ojInputNumber.ojAnimateStart
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -326,5 +329,12 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   def stepUp(): Unit = js.native
   def stepUp(steps: Double): Unit = js.native
   def validate(): js.Promise[String] = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojinputnumber", "ojInputNumber")
+@js.native
+object ojInputNumber extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

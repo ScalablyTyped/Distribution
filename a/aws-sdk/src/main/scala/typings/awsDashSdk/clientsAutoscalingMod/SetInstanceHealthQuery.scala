@@ -24,7 +24,7 @@ object SetInstanceHealthQuery {
   def apply(
     HealthStatus: XmlStringMaxLen32,
     InstanceId: XmlStringMaxLen19,
-    ShouldRespectGracePeriod: js.UndefOr[ShouldRespectGracePeriod] = js.undefined
+    ShouldRespectGracePeriod: js.UndefOr[Boolean] = js.undefined
   ): SetInstanceHealthQuery = {
     val __obj = js.Dynamic.literal(HealthStatus = HealthStatus, InstanceId = InstanceId)
     if (!js.isUndefined(ShouldRespectGracePeriod)) __obj.updateDynamic("ShouldRespectGracePeriod")(ShouldRespectGracePeriod)

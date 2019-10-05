@@ -17,5 +17,6 @@ package object jqueryDotAjaxfile {
     /* repeated */ JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]], 
     JQueryPromise[U]
   ]
+  type Mocha = Mocha_
   type MochaDone = js.Function1[/* error */ js.UndefOr[Error], Unit]
 }

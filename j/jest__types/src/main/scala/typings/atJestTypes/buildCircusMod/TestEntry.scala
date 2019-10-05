@@ -28,14 +28,14 @@ object TestEntry {
     name: TestName,
     parent: DescribeBlock,
     duration: Int | Double = null,
-    fn: TestFn = null,
+    fn: /* done */ js.UndefOr[typings.atJestTypes.buildGlobalMod.DoneFn] => js.UndefOr[js.Promise[js.Any] | Unit] = null,
     startedAt: Int | Double = null,
     status: TestStatus = null,
     timeout: Int | Double = null
   ): TestEntry = {
     val __obj = js.Dynamic.literal(asyncError = asyncError, errors = errors.asInstanceOf[js.Any], invocations = invocations, mode = mode.asInstanceOf[js.Any], name = name, parent = parent)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction1(fn))
     if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

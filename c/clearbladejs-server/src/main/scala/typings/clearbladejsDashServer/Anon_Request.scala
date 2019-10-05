@@ -1,6 +1,6 @@
 package typings.clearbladejsDashServer
 
-import typings.clearbladejsDashServer.CbServerNs.BasicReq
+import typings.clearbladejsDashServer.CbServer.BasicReq
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

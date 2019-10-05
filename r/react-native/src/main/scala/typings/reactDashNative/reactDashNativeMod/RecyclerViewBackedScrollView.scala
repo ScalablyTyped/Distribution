@@ -1,7 +1,7 @@
 package typings.reactDashNative.reactDashNativeMod
 
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.Anon_Animated
 import scala.scalajs.js
 import scala.scalajs.js.`|`

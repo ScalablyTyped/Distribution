@@ -31,17 +31,17 @@ object OriginationRoute {
   @scala.inline
   def apply(
     Host: String = null,
-    Port: js.UndefOr[Port] = js.undefined,
-    Priority: js.UndefOr[OriginationRoutePriority] = js.undefined,
+    Port: Int | Double = null,
+    Priority: Int | Double = null,
     Protocol: OriginationRouteProtocol = null,
-    Weight: js.UndefOr[OriginationRouteWeight] = js.undefined
+    Weight: Int | Double = null
   ): OriginationRoute = {
     val __obj = js.Dynamic.literal()
     if (Host != null) __obj.updateDynamic("Host")(Host)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight)
+    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginationRoute]
   }
 }

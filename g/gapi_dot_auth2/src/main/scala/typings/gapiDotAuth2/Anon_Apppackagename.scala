@@ -1,6 +1,6 @@
 package typings.gapiDotAuth2
 
-import typings.gapiDotAuth2.gapiNs.auth2Ns.GoogleUser
+import typings.gapiDotAuth2.gapi.auth2.GoogleUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

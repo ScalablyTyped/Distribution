@@ -68,15 +68,15 @@ object WriteCampaignRequest {
   def apply(
     AdditionalTreatments: ListOfWriteTreatmentResource = null,
     Description: __string = null,
-    HoldoutPercent: js.UndefOr[__integer] = js.undefined,
+    HoldoutPercent: Int | Double = null,
     Hook: CampaignHook = null,
-    IsPaused: js.UndefOr[__boolean] = js.undefined,
+    IsPaused: js.UndefOr[Boolean] = js.undefined,
     Limits: CampaignLimits = null,
     MessageConfiguration: MessageConfiguration = null,
     Name: __string = null,
     Schedule: Schedule = null,
     SegmentId: __string = null,
-    SegmentVersion: js.UndefOr[__integer] = js.undefined,
+    SegmentVersion: Int | Double = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null,
     tags: MapOf__string = null
@@ -84,7 +84,7 @@ object WriteCampaignRequest {
     val __obj = js.Dynamic.literal()
     if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(HoldoutPercent)) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent)
+    if (HoldoutPercent != null) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.asInstanceOf[js.Any])
     if (Hook != null) __obj.updateDynamic("Hook")(Hook)
     if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused)
     if (Limits != null) __obj.updateDynamic("Limits")(Limits)
@@ -92,7 +92,7 @@ object WriteCampaignRequest {
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
-    if (!js.isUndefined(SegmentVersion)) __obj.updateDynamic("SegmentVersion")(SegmentVersion)
+    if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
     if (tags != null) __obj.updateDynamic("tags")(tags)

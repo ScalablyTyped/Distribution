@@ -36,3 +36,9 @@ object TSInterfaceBody {
   }
 }
 
+@JSImport("@babel/types", "tsInterfaceBody")
+@js.native
+object tsInterfaceBody extends js.Object {
+  def apply(body: js.Array[TSTypeElement]): TSInterfaceBody = js.native
+}
+

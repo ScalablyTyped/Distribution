@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.searchNs.SearchEngine
+import typings.firefoxDashWebextDashBrowser.browser.search.SearchEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

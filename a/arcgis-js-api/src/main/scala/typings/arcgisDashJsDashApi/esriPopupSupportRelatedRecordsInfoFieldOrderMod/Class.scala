@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupSupportRelatedRecordsInfoFieldOrderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelatedRecordsInfoFieldOrder
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelatedRecordsInfoFieldOrderProperties
+import typings.arcgisDashJsDashApi.__esri.RelatedRecordsInfoFieldOrder
+import typings.arcgisDashJsDashApi.__esri.RelatedRecordsInfoFieldOrderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

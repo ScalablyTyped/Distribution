@@ -3,7 +3,7 @@ package typings.nock.nockMod
 import typings.nock.Anon_Body
 import typings.nock.Anon_Pass
 import typings.nock.Fn_ParsedObj
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.urlMod.URLSearchParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`

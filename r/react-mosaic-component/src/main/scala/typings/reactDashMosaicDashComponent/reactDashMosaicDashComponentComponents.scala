@@ -1,7 +1,7 @@
 package typings.reactDashMosaicDashComponent
 
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
 import typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.additionalControlButtonText
@@ -59,7 +59,7 @@ object reactDashMosaicDashComponentComponents extends reactDashMosaicDashCompone
       ]
     ]
   ] = js.constructorOf[typings.reactDashMosaicDashComponent.libMosaicWindowMod.SourceConnectedInternalMosaicWindow].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes[
+  typings.react.reactMod.Global.JSX.LibraryManagedAttributes[
     typings.reactDashMosaicDashComponent.TypeofClassInternalMosaicWindow, 
     typings.std.Pick[
       typings.reactDashMosaicDashComponent.libMosaicWindowMod.InternalMosaicWindowProps[js.Any | scala.Double | java.lang.String], 
@@ -68,7 +68,7 @@ object reactDashMosaicDashComponentComponents extends reactDashMosaicDashCompone
   ]]]
   @scala.inline
   def SourceDropConnectedInternalMosaicWindow: ComponentType[LibraryManagedAttributes[js.Any, Pick[js.Any, scala.Nothing]]] = js.constructorOf[typings.reactDashMosaicDashComponent.libMosaicWindowMod.SourceDropConnectedInternalMosaicWindow].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes[js.Any, typings.std.Pick[js.Any, scala.Nothing]]]]
+  typings.react.reactMod.Global.JSX.LibraryManagedAttributes[js.Any, typings.std.Pick[js.Any, scala.Nothing]]]]
   @scala.inline
   def SplitButton: ComponentType[MosaicButtonProps] = js.constructorOf[typings.reactDashMosaicDashComponent.libButtonsSplitButtonMod.SplitButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps]]
 }

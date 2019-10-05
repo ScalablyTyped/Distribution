@@ -1,6 +1,6 @@
 package typings.openjscad
 
-import typings.openjscad.CSGNs.PolygonNs.Shared
+import typings.openjscad.CSG.Polygon.Shared
 import typings.std.Float64Array
 import typings.std.Uint32Array
 import scala.scalajs.js

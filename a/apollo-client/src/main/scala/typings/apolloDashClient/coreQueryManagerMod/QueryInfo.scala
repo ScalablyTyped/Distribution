@@ -1,6 +1,6 @@
 package typings.apolloDashClient.coreQueryManagerMod
 
-import typings.apolloDashCache.libTypesCacheMod.CacheNs.DiffResult
+import typings.apolloDashCache.libTypesCacheMod.Cache.DiffResult
 import typings.apolloDashClient.coreObservableQueryMod.ObservableQuery
 import typings.apolloDashClient.coreTypesMod.OperationVariables
 import typings.apolloDashClient.coreTypesMod.QueryListener

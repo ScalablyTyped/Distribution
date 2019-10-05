@@ -1,11 +1,11 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.managementNs.ExtensionInfo
-import typings.chrome.chromeNs.managementNs.ManagementDisabledEvent
-import typings.chrome.chromeNs.managementNs.ManagementEnabledEvent
-import typings.chrome.chromeNs.managementNs.ManagementInstalledEvent
-import typings.chrome.chromeNs.managementNs.ManagementUninstalledEvent
-import typings.chrome.chromeNs.managementNs.UninstallOptions
+import typings.chrome.chrome.management.ExtensionInfo
+import typings.chrome.chrome.management.ManagementDisabledEvent
+import typings.chrome.chrome.management.ManagementEnabledEvent
+import typings.chrome.chrome.management.ManagementInstalledEvent
+import typings.chrome.chrome.management.ManagementUninstalledEvent
+import typings.chrome.chrome.management.UninstallOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRuleMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.RulePredicate
+import typings.atPulumiAws.typesInputMod.waf.RulePredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

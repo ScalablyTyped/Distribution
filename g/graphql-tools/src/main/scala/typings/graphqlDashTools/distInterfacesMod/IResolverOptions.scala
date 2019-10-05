@@ -1,8 +1,14 @@
 package typings.graphqlDashTools.distInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
+import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.graphql.typeDefinitionMod.GraphQLAbstractType
 import typings.graphql.typeDefinitionMod.GraphQLIsTypeOfFn
+import typings.graphql.typeDefinitionMod.GraphQLObjectType
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
+import typings.graphqlDashTools.Anon_MergeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,18 +24,18 @@ trait IResolverOptions[TSource, TContext, TArgs] extends js.Object {
 object IResolverOptions {
   @scala.inline
   def apply[TSource, TContext, TArgs](
-    __isTypeOf: GraphQLIsTypeOfFn[TSource, TContext] = null,
-    __resolveType: GraphQLTypeResolver[TSource, TContext, StringDictionary[_]] = null,
+    __isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null,
+    __resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null,
     fragment: String = null,
-    resolve: IFieldResolver[TSource, TContext, TArgs] = null,
-    subscribe: IFieldResolver[TSource, TContext, TArgs] = null
+    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo with Anon_MergeInfo) => js.Any = null,
+    subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo with Anon_MergeInfo) => js.Any = null
   ): IResolverOptions[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal()
-    if (__isTypeOf != null) __obj.updateDynamic("__isTypeOf")(__isTypeOf)
-    if (__resolveType != null) __obj.updateDynamic("__resolveType")(__resolveType)
+    if (__isTypeOf != null) __obj.updateDynamic("__isTypeOf")(js.Any.fromFunction3(__isTypeOf))
+    if (__resolveType != null) __obj.updateDynamic("__resolveType")(js.Any.fromFunction4(__resolveType))
     if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[IResolverOptions[TSource, TContext, TArgs]]
   }
 }

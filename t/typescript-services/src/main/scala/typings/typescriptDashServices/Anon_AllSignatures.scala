@@ -1,6 +1,6 @@
 package typings.typescriptDashServices
 
-import typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol
+import typings.typescriptDashServices.TypeScript.PullSignatureSymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

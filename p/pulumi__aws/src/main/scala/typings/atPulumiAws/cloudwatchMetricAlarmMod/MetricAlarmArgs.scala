@@ -2,7 +2,7 @@ package typings.atPulumiAws.cloudwatchMetricAlarmMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.snsTopicMod.Topic
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.MetricAlarmMetricQuery
+import typings.atPulumiAws.typesInputMod.cloudwatch.MetricAlarmMetricQuery
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.atJupyterlabImageviewerDashExtension
 
 import typings.atJupyterlabApplication.atJupyterlabApplicationMod.JupyterFrontEnd
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
 import typings.atJupyterlabImageviewer.libTokensMod.IImageTracker
 import scala.scalajs.js

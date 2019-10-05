@@ -1,6 +1,7 @@
 package typings.nukaDashCarousel.nukaDashCarouselMod
 
 import typings.nukaDashCarousel.nukaDashCarouselStrings.zoom
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -248,15 +249,15 @@ object CarouselProps {
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    renderBottomCenterControls: CarouselRenderControl = null,
-    renderBottomLeftControls: CarouselRenderControl = null,
-    renderBottomRightControls: CarouselRenderControl = null,
-    renderCenterCenterControls: CarouselRenderControl = null,
-    renderCenterLeftControls: CarouselRenderControl = null,
-    renderCenterRightControls: CarouselRenderControl = null,
-    renderTopCenterControls: CarouselRenderControl = null,
-    renderTopLeftControls: CarouselRenderControl = null,
-    renderTopRightControls: CarouselRenderControl = null,
+    renderBottomCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderBottomLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderBottomRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderCenterCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderCenterLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderCenterRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderTopCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderTopLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    renderTopRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     slideIndex: Int | Double = null,
     slideWidth: CarouselSlideWidthProp = null,
     slidesToScroll: CarouselSlidesToScrollProp = null,
@@ -296,15 +297,15 @@ object CarouselProps {
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
-    if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(renderBottomCenterControls)
-    if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(renderBottomLeftControls)
-    if (renderBottomRightControls != null) __obj.updateDynamic("renderBottomRightControls")(renderBottomRightControls)
-    if (renderCenterCenterControls != null) __obj.updateDynamic("renderCenterCenterControls")(renderCenterCenterControls)
-    if (renderCenterLeftControls != null) __obj.updateDynamic("renderCenterLeftControls")(renderCenterLeftControls)
-    if (renderCenterRightControls != null) __obj.updateDynamic("renderCenterRightControls")(renderCenterRightControls)
-    if (renderTopCenterControls != null) __obj.updateDynamic("renderTopCenterControls")(renderTopCenterControls)
-    if (renderTopLeftControls != null) __obj.updateDynamic("renderTopLeftControls")(renderTopLeftControls)
-    if (renderTopRightControls != null) __obj.updateDynamic("renderTopRightControls")(renderTopRightControls)
+    if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(js.Any.fromFunction1(renderBottomCenterControls))
+    if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(js.Any.fromFunction1(renderBottomLeftControls))
+    if (renderBottomRightControls != null) __obj.updateDynamic("renderBottomRightControls")(js.Any.fromFunction1(renderBottomRightControls))
+    if (renderCenterCenterControls != null) __obj.updateDynamic("renderCenterCenterControls")(js.Any.fromFunction1(renderCenterCenterControls))
+    if (renderCenterLeftControls != null) __obj.updateDynamic("renderCenterLeftControls")(js.Any.fromFunction1(renderCenterLeftControls))
+    if (renderCenterRightControls != null) __obj.updateDynamic("renderCenterRightControls")(js.Any.fromFunction1(renderCenterRightControls))
+    if (renderTopCenterControls != null) __obj.updateDynamic("renderTopCenterControls")(js.Any.fromFunction1(renderTopCenterControls))
+    if (renderTopLeftControls != null) __obj.updateDynamic("renderTopLeftControls")(js.Any.fromFunction1(renderTopLeftControls))
+    if (renderTopRightControls != null) __obj.updateDynamic("renderTopRightControls")(js.Any.fromFunction1(renderTopRightControls))
     if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
     if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
     if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])

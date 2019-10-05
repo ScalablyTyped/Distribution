@@ -18,9 +18,9 @@ trait RefProps extends js.Object {
 
 object RefProps {
   @scala.inline
-  def apply(children: ReactElement, innerRef: Ref[_]): RefProps = {
-    val __obj = js.Dynamic.literal(children = children, innerRef = innerRef.asInstanceOf[js.Any])
-  
+  def apply(children: ReactElement, innerRef: Ref[_] = null): RefProps = {
+    val __obj = js.Dynamic.literal(children = children)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefProps]
   }
 }

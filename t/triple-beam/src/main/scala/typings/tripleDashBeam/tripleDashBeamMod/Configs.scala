@@ -1,5 +1,6 @@
 package typings.tripleDashBeam.tripleDashBeamMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ object Configs {
     __obj.asInstanceOf[Configs]
   }
 }
+
+@JSImport("triple-beam", "configs")
+@js.native
+object configs extends TopLevel[Configs]
 

@@ -61,9 +61,9 @@ object PutBotRequest {
     abortStatement: Statement = null,
     checksum: String = null,
     clarificationPrompt: Prompt = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
+    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     description: Description = null,
-    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
+    idleSessionTTLInSeconds: Int | Double = null,
     intents: IntentList = null,
     processBehavior: ProcessBehavior = null,
     voiceId: String = null
@@ -74,7 +74,7 @@ object PutBotRequest {
     if (clarificationPrompt != null) __obj.updateDynamic("clarificationPrompt")(clarificationPrompt)
     if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds)
+    if (idleSessionTTLInSeconds != null) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents)
     if (processBehavior != null) __obj.updateDynamic("processBehavior")(processBehavior.asInstanceOf[js.Any])
     if (voiceId != null) __obj.updateDynamic("voiceId")(voiceId)

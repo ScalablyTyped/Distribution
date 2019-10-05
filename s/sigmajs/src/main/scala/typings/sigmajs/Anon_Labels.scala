@@ -1,9 +1,9 @@
 package typings.sigmajs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sigmajs.SigmaJsNs.Edge
-import typings.sigmajs.SigmaJsNs.SVGEdgeLabels
-import typings.sigmajs.SigmaJsNs.SVGObject
+import typings.sigmajs.SigmaJs.Edge
+import typings.sigmajs.SigmaJs.SVGEdgeLabels
+import typings.sigmajs.SigmaJs.SVGObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

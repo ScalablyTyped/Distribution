@@ -1,0 +1,34 @@
+package typings.firefoxDashWebextDashBrowser.browser.downloads
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_FAILED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_ACCESS_DENIED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_NO_SPACE
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_NAME_TOO_LONG
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_TOO_LARGE
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_VIRUS_INFECTED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_TRANSIENT_ERROR
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_BLOCKED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_SECURITY_CHECK_FAILED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.FILE_TOO_SHORT
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.NETWORK_FAILED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.NETWORK_TIMEOUT
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.NETWORK_DISCONNECTED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.NETWORK_SERVER_DOWN
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.NETWORK_INVALID_REQUEST
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_FAILED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_NO_RANGE
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_BAD_CONTENT
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_UNAUTHORIZED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_CERT_PROBLEM
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.SERVER_FORBIDDEN
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.USER_CANCELED
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.USER_SHUTDOWN
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.CRASH
+*/
+trait InterruptReason extends js.Object
+

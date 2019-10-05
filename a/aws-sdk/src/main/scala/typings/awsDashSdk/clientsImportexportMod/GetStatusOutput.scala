@@ -30,7 +30,7 @@ object GetStatusOutput {
     Carrier: Carrier = null,
     CreationDate: CreationDate = null,
     CurrentManifest: CurrentManifest = null,
-    ErrorCount: js.UndefOr[ErrorCount] = js.undefined,
+    ErrorCount: Int | Double = null,
     JobId: JobId = null,
     JobType: JobType = null,
     LocationCode: LocationCode = null,
@@ -48,7 +48,7 @@ object GetStatusOutput {
     if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (CurrentManifest != null) __obj.updateDynamic("CurrentManifest")(CurrentManifest)
-    if (!js.isUndefined(ErrorCount)) __obj.updateDynamic("ErrorCount")(ErrorCount)
+    if (ErrorCount != null) __obj.updateDynamic("ErrorCount")(ErrorCount.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId)
     if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
     if (LocationCode != null) __obj.updateDynamic("LocationCode")(LocationCode)

@@ -2,6 +2,8 @@ package typings.atNivoGeo.atNivoGeoMod
 
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,10 +44,10 @@ object ChoroplethCommonProps {
     label: String | (FeatureAccessor[_, String]) = null,
     margin: /* InlineNestedIdentityAlias: typings.std.Partial*/ Box = null,
     `match`: String | DatumMatcher = null,
-    onClick: ChoroplethEventHandler = null,
-    onMouseEnter: ChoroplethEventHandler = null,
-    onMouseLeave: ChoroplethEventHandler = null,
-    onMouseMove: ChoroplethEventHandler = null,
+    onClick: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseMove: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     projectionRotation: js.Tuple3[Double, Double, Double] = null,
     projectionScale: Int | Double = null,
     projectionTranslation: js.Tuple2[Double, Double] = null,
@@ -68,10 +70,10 @@ object ChoroplethCommonProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (projectionRotation != null) __obj.updateDynamic("projectionRotation")(projectionRotation)
     if (projectionScale != null) __obj.updateDynamic("projectionScale")(projectionScale.asInstanceOf[js.Any])
     if (projectionTranslation != null) __obj.updateDynamic("projectionTranslation")(projectionTranslation)

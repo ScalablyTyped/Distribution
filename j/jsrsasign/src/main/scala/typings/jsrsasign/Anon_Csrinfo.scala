@@ -1,6 +1,6 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.csrNs.CertificationRequestInfo
+import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

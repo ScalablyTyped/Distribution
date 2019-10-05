@@ -1,12 +1,12 @@
 package typings.emberDashData
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ember.emberMod.EmberNs.NativeArray
-import typings.ember.emberMod.defaultNs.ComputedProperty
-import typings.ember.emberMod.defaultNs.Map
+import typings.ember.emberMod.Ember.NativeArray
+import typings.ember.emberMod.default.ComputedProperty
+import typings.ember.emberMod.default.Map
 import typings.emberDashData.emberDashDataMod.AttributeMeta
-import typings.emberDashData.emberDashDataMod.DSNs.Model
-import typings.emberDashData.emberDashDataMod.DSNs.Store
+import typings.emberDashData.emberDashDataMod.DS.Model
+import typings.emberDashData.emberDashDataMod.DS.Store
 import typings.emberDashData.emberDashDataMod.RelationshipMeta
 import typings.std.InstanceType
 import scala.scalajs.js

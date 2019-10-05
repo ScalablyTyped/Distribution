@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.StringLiteralKind
 import typings.astDashTypes.genKindsMod.TSQualifiedNameKind
 import typings.astDashTypes.genKindsMod.TSTypeParameterInstantiationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSImportType
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSImportType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(options: Options): RequestHandler = js.native
-  def validator(options: Options): RequestHandler = js.native
 }
 

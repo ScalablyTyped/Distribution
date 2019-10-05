@@ -1,15 +1,15 @@
 package typings.ngDashGrid
 
-import typings.ngDashGrid.ngGridNs.IAggregateStatic
-import typings.ngDashGrid.ngGridNs.IColumnStatic
-import typings.ngDashGrid.ngGridNs.IDimensionStatic
-import typings.ngDashGrid.ngGridNs.IEventProviderStatic
-import typings.ngDashGrid.ngGridNs.IFooterStatic
-import typings.ngDashGrid.ngGridNs.IRenderedRangeStatic
-import typings.ngDashGrid.ngGridNs.IRowStatic
-import typings.ngDashGrid.ngGridNs.ISearchProviderStatic
-import typings.ngDashGrid.ngGridNs.ISelectionProviderStatic
-import typings.ngDashGrid.ngGridNs.IStyleProviderStatic
+import typings.ngDashGrid.ngGrid.IAggregateStatic
+import typings.ngDashGrid.ngGrid.IColumnStatic
+import typings.ngDashGrid.ngGrid.IDimensionStatic
+import typings.ngDashGrid.ngGrid.IEventProviderStatic
+import typings.ngDashGrid.ngGrid.IFooterStatic
+import typings.ngDashGrid.ngGrid.IRenderedRangeStatic
+import typings.ngDashGrid.ngGrid.IRowStatic
+import typings.ngDashGrid.ngGrid.ISearchProviderStatic
+import typings.ngDashGrid.ngGrid.ISelectionProviderStatic
+import typings.ngDashGrid.ngGrid.IStyleProviderStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

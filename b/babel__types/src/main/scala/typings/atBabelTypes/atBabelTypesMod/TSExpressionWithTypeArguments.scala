@@ -40,3 +40,10 @@ object TSExpressionWithTypeArguments {
   }
 }
 
+@JSImport("@babel/types", "tsExpressionWithTypeArguments")
+@js.native
+object tsExpressionWithTypeArguments extends js.Object {
+  def apply(expression: TSEntityName): TSExpressionWithTypeArguments = js.native
+  def apply(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSExpressionWithTypeArguments = js.native
+}
+

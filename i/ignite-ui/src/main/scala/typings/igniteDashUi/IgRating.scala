@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -154,7 +155,7 @@ object IgRating {
   /* optionName */ StringDictionary[js.Any] = null,
     cssVotes: js.Any = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
-    hoverChange: HoverChangeEvent = null,
+    hoverChange: (/* event */ Event, /* ui */ HoverChangeEventUIParam) => Unit = null,
     language: String = null,
     locale: js.Any = null,
     precision: String = null,
@@ -166,7 +167,7 @@ object IgRating {
     validatorOptions: js.Any = null,
     value: Double | String = null,
     valueAsPercent: js.UndefOr[Boolean] = js.undefined,
-    valueChange: ValueChangeEvent = null,
+    valueChange: (/* event */ Event, /* ui */ ValueChangeEventUIParam) => Unit = null,
     valueHover: Double | String = null,
     vertical: js.UndefOr[Boolean] = js.undefined,
     voteCount: Int | Double = null,
@@ -177,7 +178,7 @@ object IgRating {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cssVotes != null) __obj.updateDynamic("cssVotes")(cssVotes)
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
-    if (hoverChange != null) __obj.updateDynamic("hoverChange")(hoverChange)
+    if (hoverChange != null) __obj.updateDynamic("hoverChange")(js.Any.fromFunction2(hoverChange))
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (precision != null) __obj.updateDynamic("precision")(precision)
@@ -189,7 +190,7 @@ object IgRating {
     if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (!js.isUndefined(valueAsPercent)) __obj.updateDynamic("valueAsPercent")(valueAsPercent)
-    if (valueChange != null) __obj.updateDynamic("valueChange")(valueChange)
+    if (valueChange != null) __obj.updateDynamic("valueChange")(js.Any.fromFunction2(valueChange))
     if (valueHover != null) __obj.updateDynamic("valueHover")(valueHover.asInstanceOf[js.Any])
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
     if (voteCount != null) __obj.updateDynamic("voteCount")(voteCount.asInstanceOf[js.Any])

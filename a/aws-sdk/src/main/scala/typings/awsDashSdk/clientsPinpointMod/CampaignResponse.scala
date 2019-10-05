@@ -108,9 +108,9 @@ object CampaignResponse {
     AdditionalTreatments: ListOfTreatmentResource = null,
     DefaultState: CampaignState = null,
     Description: __string = null,
-    HoldoutPercent: js.UndefOr[__integer] = js.undefined,
+    HoldoutPercent: Int | Double = null,
     Hook: CampaignHook = null,
-    IsPaused: js.UndefOr[__boolean] = js.undefined,
+    IsPaused: js.UndefOr[Boolean] = js.undefined,
     Limits: CampaignLimits = null,
     MessageConfiguration: MessageConfiguration = null,
     Name: __string = null,
@@ -118,14 +118,14 @@ object CampaignResponse {
     State: CampaignState = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null,
-    Version: js.UndefOr[__integer] = js.undefined,
+    Version: Int | Double = null,
     tags: MapOf__string = null
   ): CampaignResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, Arn = Arn, CreationDate = CreationDate, Id = Id, LastModifiedDate = LastModifiedDate, SegmentId = SegmentId, SegmentVersion = SegmentVersion)
     if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments)
     if (DefaultState != null) __obj.updateDynamic("DefaultState")(DefaultState)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(HoldoutPercent)) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent)
+    if (HoldoutPercent != null) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.asInstanceOf[js.Any])
     if (Hook != null) __obj.updateDynamic("Hook")(Hook)
     if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused)
     if (Limits != null) __obj.updateDynamic("Limits")(Limits)
@@ -135,7 +135,7 @@ object CampaignResponse {
     if (State != null) __obj.updateDynamic("State")(State)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CampaignResponse]
   }

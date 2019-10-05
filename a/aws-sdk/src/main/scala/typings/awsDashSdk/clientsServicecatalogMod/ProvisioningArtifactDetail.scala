@@ -38,7 +38,7 @@ trait ProvisioningArtifactDetail extends js.Object {
 object ProvisioningArtifactDetail {
   @scala.inline
   def apply(
-    Active: js.UndefOr[ProvisioningArtifactActive] = js.undefined,
+    Active: js.UndefOr[Boolean] = js.undefined,
     CreatedTime: CreationTime = null,
     Description: ProvisioningArtifactName = null,
     Guidance: ProvisioningArtifactGuidance = null,

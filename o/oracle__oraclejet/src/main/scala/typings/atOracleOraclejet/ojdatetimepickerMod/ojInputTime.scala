@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojdatetimepickerMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_AmpmWheelLabel
 import typings.atOracleOraclejet.Anon_Class
 import typings.atOracleOraclejet.Anon_Focus
@@ -23,11 +25,12 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.renderModeChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.timePicker
 import typings.atOracleOraclejet.atOracleOraclejetStrings.timePickerChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputTimeNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputTimeNs.ojAnimateStart
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputTime.ojAnimateEnd
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputTime.ojAnimateStart
 import typings.atOracleOraclejet.ojinputtextMod.inputBase
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -175,5 +178,12 @@ trait ojInputTime extends inputBase[String, ojInputTimeSettableProperties, Strin
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: Anon_AmpmWheelLabel): Unit = js.native
   def show(): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojdatetimepicker", "ojInputTime")
+@js.native
+object ojInputTime extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

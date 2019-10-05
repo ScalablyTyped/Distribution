@@ -37,3 +37,9 @@ object JSXIdentifier {
   }
 }
 
+@JSImport("@babel/types", "jsxIdentifier")
+@js.native
+object jsxIdentifier extends js.Object {
+  def apply(name: String): JSXIdentifier = js.native
+}
+

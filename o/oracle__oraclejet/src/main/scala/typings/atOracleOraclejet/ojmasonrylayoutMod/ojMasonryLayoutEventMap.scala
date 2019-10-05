@@ -2,16 +2,16 @@ package typings.atOracleOraclejet.ojmasonrylayoutMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateStart
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeInsert
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeRemove
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeReorder
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeResize
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojInsert
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojRemove
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojReorder
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojResize
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -33,16 +33,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ojMasonryLayoutEventMap extends baseComponentEventMap[ojMasonryLayoutSettableProperties] {
-  var ojAnimateEnd: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateStart
-  var ojBeforeInsert: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeInsert
-  var ojBeforeRemove: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeRemove
-  var ojBeforeReorder: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeReorder
-  var ojBeforeResize: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeResize
-  var ojInsert: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojInsert
-  var ojRemove: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojRemove
-  var ojReorder: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojReorder
-  var ojResize: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojResize
+  var ojAnimateEnd: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart
+  var ojBeforeInsert: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert
+  var ojBeforeRemove: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove
+  var ojBeforeReorder: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder
+  var ojBeforeResize: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize
+  var ojInsert: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert
+  var ojRemove: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove
+  var ojReorder: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder
+  var ojResize: typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize
   var reorderHandleChanged: JetElementCustomEvent[String | Null]
 }
 

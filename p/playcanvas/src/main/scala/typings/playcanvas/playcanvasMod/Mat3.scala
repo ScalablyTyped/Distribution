@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Mat3")
 @js.native
 class Mat3 ()
-  extends typings.playcanvas.pcNs.Mat3
+  extends typings.playcanvas.pc.Mat3
 
 /* static members */
 @JSImport("playcanvas", "Mat3")
@@ -28,7 +28,7 @@ object Mat3 extends js.Object {
     * @name pc.Mat3.IDENTITY
     * @description A constant matrix set to the identity.
     */
-  val IDENTITY: typings.playcanvas.pcNs.Mat3 = js.native
+  val IDENTITY: typings.playcanvas.pc.Mat3 = js.native
   /**
     * @field
     * @static
@@ -37,6 +37,6 @@ object Mat3 extends js.Object {
     * @name pc.Mat3.ZERO
     * @description A constant matrix with all elements set to 0.
     */
-  val ZERO: typings.playcanvas.pcNs.Mat3 = js.native
+  val ZERO: typings.playcanvas.pc.Mat3 = js.native
 }
 

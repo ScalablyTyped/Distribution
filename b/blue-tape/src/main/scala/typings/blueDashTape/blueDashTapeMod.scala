@@ -1,7 +1,6 @@
 package typings.blueDashTape
 
-import typings.node.NodeJSNs.ReadableStream
-import typings.tape.Fn_Cb
+import typings.node.NodeJS.ReadableStream
 import typings.tape.tapeMod.StreamOptions
 import typings.tape.tapeMod.TestCase
 import typings.tape.tapeMod.TestOptions
@@ -21,7 +20,7 @@ object blueDashTapeMod extends js.Object {
   def apply(name: String, cb: TestCase): Unit = js.native
   def apply(name: String, opts: TestOptions, cb: TestCase): Unit = js.native
   def apply(opts: TestOptions, cb: TestCase): Unit = js.native
-  def createHarness(): Fn_Cb = js.native
+  def createHarness(): js.Any = js.native
   def createStream(): ReadableStream = js.native
   def createStream(opts: StreamOptions): ReadableStream = js.native
   def onFinish(cb: js.Function0[Unit]): Unit = js.native

@@ -1,10 +1,10 @@
 package typings.atPulumiAws.glueCrawlerMod
 
-import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerCatalogTarget
-import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerDynamodbTarget
-import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerJdbcTarget
-import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerS3Target
-import typings.atPulumiAws.typesOutputMod.glueNs.CrawlerSchemaChangePolicy
+import typings.atPulumiAws.typesOutputMod.glue.CrawlerCatalogTarget
+import typings.atPulumiAws.typesOutputMod.glue.CrawlerDynamodbTarget
+import typings.atPulumiAws.typesOutputMod.glue.CrawlerJdbcTarget
+import typings.atPulumiAws.typesOutputMod.glue.CrawlerS3Target
+import typings.atPulumiAws.typesOutputMod.glue.CrawlerSchemaChangePolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

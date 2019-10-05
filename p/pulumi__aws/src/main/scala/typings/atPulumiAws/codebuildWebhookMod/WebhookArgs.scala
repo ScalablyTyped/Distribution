@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codebuildWebhookMod
 
-import typings.atPulumiAws.typesInputMod.codebuildNs.WebhookFilterGroup
+import typings.atPulumiAws.typesInputMod.codebuild.WebhookFilterGroup
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

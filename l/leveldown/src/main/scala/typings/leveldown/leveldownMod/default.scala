@@ -1,5 +1,6 @@
 package typings.leveldown.leveldownMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,4 +10,8 @@ import scala.scalajs.js.annotation._
 class default protected () extends LevelDown {
   def this(location: String) = this()
 }
+
+@JSImport("leveldown", JSImport.Default)
+@js.native
+object default extends TopLevel[LevelDownConstructor]
 

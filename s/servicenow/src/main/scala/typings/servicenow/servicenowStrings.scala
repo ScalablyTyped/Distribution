@@ -1,8 +1,8 @@
 package typings.servicenow
 
-import typings.servicenow.servicenowNs.GlideRecordOperation
-import typings.servicenow.servicenowNs.QueryOperator
-import typings.servicenow.servicenowNs.RestHTTPMethods
+import typings.servicenow.servicenow.GlideRecordOperation
+import typings.servicenow.servicenow.QueryOperator
+import typings.servicenow.servicenow.RestHTTPMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

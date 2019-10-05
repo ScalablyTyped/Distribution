@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,36 +81,36 @@ object IgSlider {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     animate: js.UndefOr[Boolean] = js.undefined,
-    bookmarkClick: BookmarkClickEvent = null,
-    bookmarkHit: BookmarkHitEvent = null,
+    bookmarkClick: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit = null,
+    bookmarkHit: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit = null,
     bookmarks: IgSliderBookmarks = null,
-    change: ChangeEvent = null,
+    change: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit = null,
     max: Int | Double = null,
     min: Int | Double = null,
     orientation: js.Any = null,
     showBookmarkTitle: js.UndefOr[Boolean] = js.undefined,
-    slide: SlideEvent = null,
-    start: StartEvent = null,
+    slide: (/* event */ Event, /* ui */ SlideEventUIParam) => Unit = null,
+    start: (/* event */ Event, /* ui */ StartEventUIParam) => Unit = null,
     step: Int | Double = null,
-    stop: StopEvent = null,
+    stop: (/* event */ Event, /* ui */ StopEventUIParam) => Unit = null,
     syncHandleWithBookmark: js.UndefOr[Boolean] = js.undefined,
     value: Int | Double = null
   ): IgSlider = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(bookmarkClick)
-    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(bookmarkHit)
+    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(js.Any.fromFunction2(bookmarkClick))
+    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(js.Any.fromFunction2(bookmarkHit))
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (!js.isUndefined(showBookmarkTitle)) __obj.updateDynamic("showBookmarkTitle")(showBookmarkTitle)
-    if (slide != null) __obj.updateDynamic("slide")(slide)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (!js.isUndefined(syncHandleWithBookmark)) __obj.updateDynamic("syncHandleWithBookmark")(syncHandleWithBookmark)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSlider]

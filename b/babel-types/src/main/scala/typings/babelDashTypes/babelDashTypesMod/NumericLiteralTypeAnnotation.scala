@@ -32,3 +32,9 @@ object NumericLiteralTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "numericLiteralTypeAnnotation")
+@js.native
+object numericLiteralTypeAnnotation extends js.Object {
+  def apply(): NumericLiteralTypeAnnotation = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.thrift.thriftMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`

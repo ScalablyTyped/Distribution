@@ -1,6 +1,6 @@
 package typings.reactDashLeaflet.reactDashLeafletMod
 
-import typings.leaflet.leafletMod.ControlNs.Zoom
+import typings.leaflet.leafletMod.Control.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

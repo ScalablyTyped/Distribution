@@ -41,3 +41,12 @@ object ExportNamedDeclaration {
   }
 }
 
+@JSImport("babel-types", "exportNamedDeclaration")
+@js.native
+object exportNamedDeclaration extends js.Object {
+  def apply(): ExportNamedDeclaration = js.native
+  def apply(declaration: Declaration): ExportNamedDeclaration = js.native
+  def apply(declaration: Declaration, specifiers: js.Array[ExportSpecifier]): ExportNamedDeclaration = js.native
+  def apply(declaration: Declaration, specifiers: js.Array[ExportSpecifier], source: StringLiteral): ExportNamedDeclaration = js.native
+}
+

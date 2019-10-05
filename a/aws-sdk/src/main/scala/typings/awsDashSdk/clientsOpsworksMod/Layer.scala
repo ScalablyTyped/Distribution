@@ -104,8 +104,8 @@ object Layer {
   def apply(
     Arn: String = null,
     Attributes: LayerAttributes = null,
-    AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined,
-    AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined,
+    AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined,
     CloudWatchLogsConfiguration: CloudWatchLogsConfiguration = null,
     CreatedAt: DateTime = null,
     CustomInstanceProfileArn: String = null,
@@ -114,8 +114,8 @@ object Layer {
     CustomSecurityGroupIds: Strings = null,
     DefaultRecipes: Recipes = null,
     DefaultSecurityGroupNames: Strings = null,
-    EnableAutoHealing: js.UndefOr[Boolean] = js.undefined,
-    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
+    EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined,
+    InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined,
     LayerId: String = null,
     LifecycleEventConfiguration: LifecycleEventConfiguration = null,
     Name: String = null,
@@ -123,7 +123,7 @@ object Layer {
     Shortname: String = null,
     StackId: String = null,
     Type: LayerType = null,
-    UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined,
+    UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined,
     VolumeConfigurations: VolumeConfigurations = null
   ): Layer = {
     val __obj = js.Dynamic.literal()

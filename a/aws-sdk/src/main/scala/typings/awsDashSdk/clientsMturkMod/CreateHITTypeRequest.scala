@@ -42,12 +42,12 @@ object CreateHITTypeRequest {
     Description: String,
     Reward: CurrencyAmount,
     Title: String,
-    AutoApprovalDelayInSeconds: js.UndefOr[Long] = js.undefined,
+    AutoApprovalDelayInSeconds: Int | Double = null,
     Keywords: String = null,
     QualificationRequirements: QualificationRequirementList = null
   ): CreateHITTypeRequest = {
     val __obj = js.Dynamic.literal(AssignmentDurationInSeconds = AssignmentDurationInSeconds, Description = Description, Reward = Reward, Title = Title)
-    if (!js.isUndefined(AutoApprovalDelayInSeconds)) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds)
+    if (AutoApprovalDelayInSeconds != null) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.asInstanceOf[js.Any])
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords)
     if (QualificationRequirements != null) __obj.updateDynamic("QualificationRequirements")(QualificationRequirements)
     __obj.asInstanceOf[CreateHITTypeRequest]

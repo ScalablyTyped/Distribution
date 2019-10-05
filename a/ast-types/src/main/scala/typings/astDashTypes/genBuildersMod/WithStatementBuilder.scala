@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_BodyCommentsLoc
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.StatementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.WithStatement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.WithStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

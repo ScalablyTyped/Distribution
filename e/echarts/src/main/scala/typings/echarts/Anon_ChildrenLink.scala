@@ -46,7 +46,7 @@ trait Anon_ChildrenLink extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColorBorderWidth] = js.undefined
+  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
 }
 
 object Anon_ChildrenLink {
@@ -55,7 +55,7 @@ object Anon_ChildrenLink {
     children: js.Array[_] = null,
     link: String = null,
     target: String = null,
-    tooltip: Anon_BackgroundColorBorderColorBorderWidth = null
+    tooltip: Anon_BackgroundColorBorderColor = null
   ): Anon_ChildrenLink = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children)

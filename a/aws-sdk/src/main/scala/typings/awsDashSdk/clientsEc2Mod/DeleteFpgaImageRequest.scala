@@ -17,7 +17,7 @@ trait DeleteFpgaImageRequest extends js.Object {
 
 object DeleteFpgaImageRequest {
   @scala.inline
-  def apply(FpgaImageId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteFpgaImageRequest = {
+  def apply(FpgaImageId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteFpgaImageRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteFpgaImageRequest]

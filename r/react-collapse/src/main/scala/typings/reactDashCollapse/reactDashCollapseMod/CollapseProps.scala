@@ -29,9 +29,9 @@ trait CollapseProps extends HTMLProps[Collapse] {
 object CollapseProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     isOpened: Boolean,
     HTMLProps: HTMLProps[Collapse] = null,
+    children: ReactNode = null,
     fixedHeight: Int | Double = null,
     forceInitialAnimation: js.UndefOr[Boolean] = js.undefined,
     hasNestedCollapse: js.UndefOr[Boolean] = js.undefined,
@@ -42,8 +42,9 @@ object CollapseProps {
     style: CSSProperties = null,
     theme: Anon_Collapse = null
   ): CollapseProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpened = isOpened)
+    val __obj = js.Dynamic.literal(isOpened = isOpened)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (fixedHeight != null) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(forceInitialAnimation)) __obj.updateDynamic("forceInitialAnimation")(forceInitialAnimation)
     if (!js.isUndefined(hasNestedCollapse)) __obj.updateDynamic("hasNestedCollapse")(hasNestedCollapse)

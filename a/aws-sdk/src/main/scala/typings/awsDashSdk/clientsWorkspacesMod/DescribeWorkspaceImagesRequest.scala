@@ -23,12 +23,12 @@ object DescribeWorkspaceImagesRequest {
   @scala.inline
   def apply(
     ImageIds: WorkspaceImageIdList = null,
-    MaxResults: js.UndefOr[Limit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null
   ): DescribeWorkspaceImagesRequest = {
     val __obj = js.Dynamic.literal()
     if (ImageIds != null) __obj.updateDynamic("ImageIds")(ImageIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeWorkspaceImagesRequest]
   }

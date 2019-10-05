@@ -1,8 +1,8 @@
 package typings.atPulumiAws.sesEventDestinationMod
 
-import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationCloudwatchDestination
-import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationKinesisDestination
-import typings.atPulumiAws.typesInputMod.sesNs.EventDestinationSnsDestination
+import typings.atPulumiAws.typesInputMod.ses.EventDestinationCloudwatchDestination
+import typings.atPulumiAws.typesInputMod.ses.EventDestinationKinesisDestination
+import typings.atPulumiAws.typesInputMod.ses.EventDestinationSnsDestination
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

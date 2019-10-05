@@ -1,12 +1,12 @@
 package typings.leafletDashDraw.leafletMod
 
-import typings.leafletDashDraw.leafletMod.ControlNs.DrawConstructorOptions
-import typings.leafletDashDraw.leafletMod.DrawNs.Feature
+import typings.leafletDashDraw.leafletMod.Control.DrawConstructorOptions
+import typings.leafletDashDraw.leafletMod.Draw.Feature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.DrawToolbar")
+@JSImport("leaflet", "DrawToolbar")
 @js.native
 class DrawToolbar () extends Toolbar {
   def getActions(handler: Feature): js.Array[ToolbarAction] = js.native

@@ -1,7 +1,7 @@
 package typings.mockDashAwsDashS3.mockDashAwsDashS3Mod
 
 import typings.awsDashSdk.libConfigMod.ConfigurationOptions
-import typings.awsDashSdk.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityOptions
+import typings.awsDashSdk.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentials.CognitoIdentityOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +19,9 @@ class CognitoIdentityCredentials ()
   def this(options: CognitoIdentityOptions) = this()
   def this(options: CognitoIdentityOptions, clientConfig: ConfigurationOptions) = this()
 }
+
+// Needed to expose interfaces on the class
+@JSImport("mock-aws-s3", "CognitoIdentityCredentials")
+@js.native
+object CognitoIdentityCredentials extends js.Object
 

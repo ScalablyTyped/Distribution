@@ -22,12 +22,12 @@ trait ServerGroupLaunchConfiguration extends js.Object {
 object ServerGroupLaunchConfiguration {
   @scala.inline
   def apply(
-    launchOrder: js.UndefOr[LaunchOrder] = js.undefined,
+    launchOrder: Int | Double = null,
     serverGroupId: ServerGroupId = null,
     serverLaunchConfigurations: ServerLaunchConfigurations = null
   ): ServerGroupLaunchConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchOrder)) __obj.updateDynamic("launchOrder")(launchOrder)
+    if (launchOrder != null) __obj.updateDynamic("launchOrder")(launchOrder.asInstanceOf[js.Any])
     if (serverGroupId != null) __obj.updateDynamic("serverGroupId")(serverGroupId)
     if (serverLaunchConfigurations != null) __obj.updateDynamic("serverLaunchConfigurations")(serverLaunchConfigurations)
     __obj.asInstanceOf[ServerGroupLaunchConfiguration]

@@ -72,7 +72,7 @@ object MLModel {
   @scala.inline
   def apply(
     Algorithm: Algorithm = null,
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
+    ComputeTime: Int | Double = null,
     CreatedAt: EpochTime = null,
     CreatedByIamUser: AwsUserArn = null,
     EndpointInfo: RealtimeEndpointInfo = null,
@@ -83,9 +83,9 @@ object MLModel {
     MLModelType: MLModelType = null,
     Message: Message = null,
     Name: MLModelName = null,
-    ScoreThreshold: js.UndefOr[ScoreThreshold] = js.undefined,
+    ScoreThreshold: Int | Double = null,
     ScoreThresholdLastUpdatedAt: EpochTime = null,
-    SizeInBytes: js.UndefOr[LongType] = js.undefined,
+    SizeInBytes: Int | Double = null,
     StartedAt: EpochTime = null,
     Status: EntityStatus = null,
     TrainingDataSourceId: EntityId = null,
@@ -93,7 +93,7 @@ object MLModel {
   ): MLModel = {
     val __obj = js.Dynamic.literal()
     if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime)
+    if (ComputeTime != null) __obj.updateDynamic("ComputeTime")(ComputeTime.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser)
     if (EndpointInfo != null) __obj.updateDynamic("EndpointInfo")(EndpointInfo)
@@ -104,9 +104,9 @@ object MLModel {
     if (MLModelType != null) __obj.updateDynamic("MLModelType")(MLModelType.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(ScoreThreshold)) __obj.updateDynamic("ScoreThreshold")(ScoreThreshold)
+    if (ScoreThreshold != null) __obj.updateDynamic("ScoreThreshold")(ScoreThreshold.asInstanceOf[js.Any])
     if (ScoreThresholdLastUpdatedAt != null) __obj.updateDynamic("ScoreThresholdLastUpdatedAt")(ScoreThresholdLastUpdatedAt)
-    if (!js.isUndefined(SizeInBytes)) __obj.updateDynamic("SizeInBytes")(SizeInBytes)
+    if (SizeInBytes != null) __obj.updateDynamic("SizeInBytes")(SizeInBytes.asInstanceOf[js.Any])
     if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TrainingDataSourceId != null) __obj.updateDynamic("TrainingDataSourceId")(TrainingDataSourceId)

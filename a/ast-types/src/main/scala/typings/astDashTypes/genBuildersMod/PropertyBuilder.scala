@@ -8,7 +8,7 @@ import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.LiteralKind
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.Property
+import typings.astDashTypes.genNamedTypesMod.namedTypes.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

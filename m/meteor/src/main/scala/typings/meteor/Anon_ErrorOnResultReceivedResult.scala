@@ -1,6 +1,6 @@
 package typings.meteor
 
-import typings.meteor.meteorMeteorMod.MeteorNs.Error
+import typings.meteor.meteorMeteorMod.Meteor.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

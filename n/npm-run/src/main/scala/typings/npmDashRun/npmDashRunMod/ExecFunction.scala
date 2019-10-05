@@ -18,14 +18,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExecFunction extends js.Object {
+  // no `options` definitely means stdout/stderr are `string`.
   def apply(command: String): ChildProcess = js.native
   def apply(
     command: String,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
+  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def apply(command: String, options: Anon_EncodingNull with ExecOptions): ChildProcess = js.native
+  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
+  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
   def apply(command: String, options: Anon_EncodingString with ExecOptions): ChildProcess = js.native
+  // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   def apply(command: String, options: Anon_Buffer with ExecOptions): ChildProcess = js.native
+  // `options` with well known `encoding` means stdout/stderr are definitely `string`.
   def apply(command: String, options: Anon_Encoding with ExecOptions): ChildProcess = js.native
   def apply(
     command: String,
@@ -77,6 +83,7 @@ trait ExecFunction extends js.Object {
       Unit
     ]
   ): ChildProcess = js.native
+  // `options` without an `encoding` means stdout/stderr are definitely `string`.
   def apply(command: String, options: ExecOptions): ChildProcess = js.native
   def apply(
     command: String,

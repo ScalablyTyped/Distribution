@@ -22,14 +22,14 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ElementTouchEvent")
 @js.native
 class ElementTouchEvent protected ()
-  extends typings.playcanvas.pcNs.ElementTouchEvent {
+  extends typings.playcanvas.pc.ElementTouchEvent {
   def this(
-    event: typings.playcanvas.pcNs.TouchEvent,
-    element: typings.playcanvas.pcNs.ElementComponent,
-    camera: typings.playcanvas.pcNs.CameraComponent,
+    event: typings.playcanvas.pc.TouchEvent,
+    element: typings.playcanvas.pc.ElementComponent,
+    camera: typings.playcanvas.pc.CameraComponent,
     x: Double,
     y: Double,
-    input: typings.playcanvas.pcNs.ElementInput
+    input: typings.playcanvas.pc.ElementInput
   ) = this()
 }
 

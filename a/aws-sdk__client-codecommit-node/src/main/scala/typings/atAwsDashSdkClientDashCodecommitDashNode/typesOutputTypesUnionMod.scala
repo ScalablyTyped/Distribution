@@ -1,0 +1,54 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-codecommit-node/types/OutputTypesUnion", JSImport.Namespace)
+@js.native
+object typesOutputTypesUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesBatchGetRepositoriesOutputMod.BatchGetRepositoriesOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCreateBranchOutputMod.CreateBranchOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCreatePullRequestOutputMod.CreatePullRequestOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCreateRepositoryOutputMod.CreateRepositoryOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteBranchOutputMod.DeleteBranchOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteCommentContentOutputMod.DeleteCommentContentOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteFileOutputMod.DeleteFileOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesDeleteRepositoryOutputMod.DeleteRepositoryOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesDescribePullRequestEventsOutputMod.DescribePullRequestEventsOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetBlobOutputMod.GetBlobOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetBranchOutputMod.GetBranchOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentOutputMod.GetCommentOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForComparedCommitOutputMod.GetCommentsForComparedCommitOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForPullRequestOutputMod.GetCommentsForPullRequestOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommitOutputMod.GetCommitOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetDifferencesOutputMod.GetDifferencesOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetFileOutputMod.GetFileOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetFolderOutputMod.GetFolderOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetMergeConflictsOutputMod.GetMergeConflictsOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetPullRequestOutputMod.GetPullRequestOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetRepositoryOutputMod.GetRepositoryOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetRepositoryTriggersOutputMod.GetRepositoryTriggersOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesListBranchesOutputMod.ListBranchesOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesListPullRequestsOutputMod.ListPullRequestsOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesListRepositoriesOutputMod.ListRepositoriesOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesMergePullRequestByFastForwardOutputMod.MergePullRequestByFastForwardOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForComparedCommitOutputMod.PostCommentForComparedCommitOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForPullRequestOutputMod.PostCommentForPullRequestOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentReplyOutputMod.PostCommentReplyOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPutFileOutputMod.PutFileOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPutRepositoryTriggersOutputMod.PutRepositoryTriggersOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesTestRepositoryTriggersOutputMod.TestRepositoryTriggersOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateCommentOutputMod.UpdateCommentOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateDefaultBranchOutputMod.UpdateDefaultBranchOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdatePullRequestDescriptionOutputMod.UpdatePullRequestDescriptionOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdatePullRequestStatusOutputMod.UpdatePullRequestStatusOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdatePullRequestTitleOutputMod.UpdatePullRequestTitleOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryDescriptionOutputMod.UpdateRepositoryDescriptionOutput
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryNameOutputMod.UpdateRepositoryNameOutput
+  */
+  trait OutputTypesUnion extends js.Object
+  
+}
+

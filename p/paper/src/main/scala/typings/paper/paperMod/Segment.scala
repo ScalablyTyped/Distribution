@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation._
   * @param handleOut [optional] - the handle point relative to the anchor point of the segment that describes the out tangent of the segment default: {x: 0, y: 0}
   */
 class Segment ()
-  extends typings.paper.paperNs.Segment {
+  extends typings.paper.paper.Segment {
   def this(`object`: js.Any) = this()
-  def this(point: typings.paper.paperNs.Point) = this()
-  def this(point: typings.paper.paperNs.Point, handleIn: typings.paper.paperNs.Point) = this()
+  def this(point: typings.paper.paper.Point) = this()
+  def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
   def this(
-    point: typings.paper.paperNs.Point,
-    handleIn: typings.paper.paperNs.Point,
-    handleOut: typings.paper.paperNs.Point
+    point: typings.paper.paper.Point,
+    handleIn: typings.paper.paper.Point,
+    handleOut: typings.paper.paper.Point
   ) = this()
 }
 

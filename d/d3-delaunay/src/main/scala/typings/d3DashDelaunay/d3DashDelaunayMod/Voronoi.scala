@@ -1,11 +1,11 @@
 package typings.d3DashDelaunay.d3DashDelaunayMod
 
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.Bounds
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.ClosableContext
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.LineContext
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.MoveContext
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.Polygon
-import typings.d3DashDelaunay.d3DashDelaunayMod.DelaunayNs.RectContext
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.Bounds
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.ClosableContext
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.LineContext
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.MoveContext
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.Polygon
+import typings.d3DashDelaunay.d3DashDelaunayMod.Delaunay.RectContext
 import typings.std.Float64Array
 import typings.std.IterableIterator
 import scala.scalajs.js

@@ -33,11 +33,11 @@ object ListUserGroupsRequest {
     AwsAccountId: AwsAccountId,
     Namespace: Namespace,
     UserName: UserName,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListUserGroupsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, Namespace = Namespace, UserName = UserName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListUserGroupsRequest]
   }

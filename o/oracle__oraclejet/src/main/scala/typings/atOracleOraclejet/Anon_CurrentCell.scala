@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.CurrentCell
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

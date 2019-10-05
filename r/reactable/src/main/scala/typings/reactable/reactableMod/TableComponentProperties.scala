@@ -37,7 +37,7 @@ object TableComponentProperties {
     id: String = null,
     itemsPerPage: Int | Double = null,
     noDataText: String = null,
-    onFilter: FilterMethodType = null,
+    onFilter: /* text */ String => Unit = null,
     pageButtonLimit: Int | Double = null,
     sortBy: js.UndefOr[Boolean] = js.undefined,
     sortable: js.Array[String] | Boolean = null
@@ -54,7 +54,7 @@ object TableComponentProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
     if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText)
-    if (onFilter != null) __obj.updateDynamic("onFilter")(onFilter)
+    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
     if (pageButtonLimit != null) __obj.updateDynamic("pageButtonLimit")(pageButtonLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(sortBy)) __obj.updateDynamic("sortBy")(sortBy)
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])

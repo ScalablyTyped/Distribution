@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "TextItem")
 @js.native
 class TextItem ()
-  extends typings.paper.paperNs.TextItem
+  extends typings.paper.paper.TextItem
 

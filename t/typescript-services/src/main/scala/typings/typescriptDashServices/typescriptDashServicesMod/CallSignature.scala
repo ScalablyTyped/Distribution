@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CallSignature")
 @js.native
 class CallSignature protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.CallSignature {
+  extends typings.typescriptDashServices.TypeScript.CallSignature {
   def this(
-    typeParameterList: typings.typescriptDashServices.TypeScriptNs.TypeParameterList,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterList,
-    typeAnnotation: typings.typescriptDashServices.TypeScriptNs.TypeAnnotation
+    typeParameterList: typings.typescriptDashServices.TypeScript.TypeParameterList,
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterList,
+    typeAnnotation: typings.typescriptDashServices.TypeScript.TypeAnnotation
   ) = this()
 }
 

@@ -14,12 +14,6 @@ trait MSMediaKeys extends js.Object {
 
 @JSGlobal("MSMediaKeys")
 @js.native
-class MSMediaKeysCls protected () extends MSMediaKeys {
-  def this(keySystem: java.lang.String) = this()
-}
-
-@JSGlobal("MSMediaKeys")
-@js.native
 object MSMediaKeys
   extends Instantiable1[/* keySystem */ java.lang.String, MSMediaKeys] {
   def isTypeSupported(keySystem: java.lang.String): scala.Boolean = js.native

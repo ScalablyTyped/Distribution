@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxQueuesMod
 
-import typings.arangodb.ArangoDBNs.Document
+import typings.arangodb.ArangoDB.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.SparklineNs.Model
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Sparkline
+import typings.ejDotWebDotAll.ej.Sparkline.Model
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

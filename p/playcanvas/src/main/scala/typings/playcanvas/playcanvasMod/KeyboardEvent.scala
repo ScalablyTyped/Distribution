@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "KeyboardEvent")
 @js.native
 class KeyboardEvent protected ()
-  extends typings.playcanvas.pcNs.KeyboardEvent {
-  def this(keyboard: typings.playcanvas.pcNs.Keyboard, event: typings.playcanvas.pcNs.KeyboardEvent) = this()
+  extends typings.playcanvas.pc.KeyboardEvent {
+  def this(keyboard: typings.playcanvas.pc.Keyboard, event: typings.playcanvas.pc.KeyboardEvent) = this()
 }
 

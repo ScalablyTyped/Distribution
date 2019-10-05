@@ -1,7 +1,7 @@
 package typings.atJupyterlabLauncher.atJupyterlabLauncherMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
-import typings.atJupyterlabLauncher.atJupyterlabLauncherMod.ILauncherNs.IItemOptions
+import typings.atJupyterlabLauncher.atJupyterlabLauncherMod.ILauncher.IItemOptions
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
@@ -24,7 +24,7 @@ class LauncherModel ()
     * re-render event for parent widget.
     *
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override def add(options: IItemOptions): IDisposable = js.native
   /**
     * Dispose of the resources held by the object.

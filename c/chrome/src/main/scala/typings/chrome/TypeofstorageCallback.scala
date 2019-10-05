@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.systemNs.storageNs.StorageCapacityInfo
-import typings.chrome.chromeNs.systemNs.storageNs.StorageUnitInfo
-import typings.chrome.chromeNs.systemNs.storageNs.SystemStorageAttachedEvent
-import typings.chrome.chromeNs.systemNs.storageNs.SystemStorageDetachedEvent
+import typings.chrome.chrome.system.storage.StorageCapacityInfo
+import typings.chrome.chrome.system.storage.StorageUnitInfo
+import typings.chrome.chrome.system.storage.SystemStorageAttachedEvent
+import typings.chrome.chrome.system.storage.SystemStorageDetachedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

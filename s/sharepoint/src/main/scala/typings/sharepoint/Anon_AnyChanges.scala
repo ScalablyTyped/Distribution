@@ -1,6 +1,6 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPNs.JsGridNs.IChangeKey
+import typings.sharepoint.SP.JsGrid.IChangeKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,11 +21,11 @@ object ClientExtension {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ClientExtension,
     loc: Location,
-    metadata: Metadata,
-    selections: js.Array[Selection]
+    selections: js.Array[Selection],
+    metadata: Metadata = null
   ): ClientExtension = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], selections = selections)
-  
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, selections = selections)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientExtension]
   }
 }

@@ -1,7 +1,7 @@
 package typings.breeze
 
-import typings.breeze.breezeNs.EntityError
-import typings.breeze.breezeNs.HttpResponse
+import typings.breeze.breeze.EntityError
+import typings.breeze.breeze.HttpResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

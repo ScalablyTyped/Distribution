@@ -1,6 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
-import typings.atPulumiAws.typesOutputMod.resourcegroupsNs.GroupResourceQuery
+import typings.atPulumiAws.typesOutputMod.resourcegroups.GroupResourceQuery
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

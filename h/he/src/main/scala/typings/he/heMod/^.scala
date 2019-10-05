@@ -10,6 +10,5 @@ object ^ extends js.Object {
   var decode: Decode = js.native
   var unescape: Decode = js.native
   var version: String = js.native
-  def escape(text: String): String = js.native
 }
 

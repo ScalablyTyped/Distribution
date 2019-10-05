@@ -2,6 +2,7 @@ package typings.reactDashWindow.reactDashWindowMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Key
 import typings.react.reactMod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -102,7 +103,7 @@ object ListProps {
     innerRef: Ref[_] = null,
     innerTagName: String = null,
     itemData: js.Any = null,
-    itemKey: ListItemKeySelector = null,
+    itemKey: (/* index */ Double, /* data */ js.Any) => Key = null,
     layout: Layout = null,
     onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
     onScroll: /* props */ ListOnScrollProps => _ = null,
@@ -121,7 +122,7 @@ object ListProps {
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
     if (itemData != null) __obj.updateDynamic("itemData")(itemData)
-    if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
+    if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction2(itemKey))
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))

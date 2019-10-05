@@ -1,6 +1,5 @@
 package typings.reactDashNativeDashIndicators.reactDashNativeDashIndicatorsMod
 
-import typings.reactDashNative.reactDashNativeMod.EasingFunction
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
@@ -30,7 +29,7 @@ object DotIndicatorProps {
   def apply(
     animating: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
-    animationEasing: EasingFunction = null,
+    animationEasing: /* value */ Double => Double = null,
     color: String = null,
     count: Int | Double = null,
     interaction: js.UndefOr[Boolean] = js.undefined,
@@ -40,7 +39,7 @@ object DotIndicatorProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1(animationEasing))
     if (color != null) __obj.updateDynamic("color")(color)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction)

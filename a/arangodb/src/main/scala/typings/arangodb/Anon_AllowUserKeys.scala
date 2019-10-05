@@ -1,6 +1,6 @@
 package typings.arangodb
 
-import typings.arangodb.ArangoDBNs.KeyGeneratorType
+import typings.arangodb.ArangoDB.KeyGeneratorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

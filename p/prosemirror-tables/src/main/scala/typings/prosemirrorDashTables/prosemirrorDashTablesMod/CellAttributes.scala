@@ -1,5 +1,6 @@
 package typings.prosemirrorDashTables.prosemirrorDashTablesMod
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +13,14 @@ trait CellAttributes extends js.Object {
 
 object CellAttributes {
   @scala.inline
-  def apply(default: js.Any, getFromDOM: getFromDOM = null, setDOMAttr: setDOMAttr = null): CellAttributes = {
+  def apply(
+    default: js.Any,
+    getFromDOM: /* dom */ Element => js.Any = null,
+    setDOMAttr: (/* value */ js.Any, /* attrs */ js.Any) => js.Any = null
+  ): CellAttributes = {
     val __obj = js.Dynamic.literal(default = default)
-    if (getFromDOM != null) __obj.updateDynamic("getFromDOM")(getFromDOM)
-    if (setDOMAttr != null) __obj.updateDynamic("setDOMAttr")(setDOMAttr)
+    if (getFromDOM != null) __obj.updateDynamic("getFromDOM")(js.Any.fromFunction1(getFromDOM))
+    if (setDOMAttr != null) __obj.updateDynamic("setDOMAttr")(js.Any.fromFunction2(setDOMAttr))
     __obj.asInstanceOf[CellAttributes]
   }
 }

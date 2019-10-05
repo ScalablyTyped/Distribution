@@ -1,8 +1,8 @@
 package typings.reactDashGoogleDashPlacesDashSuggest
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.Polygon
-import typings.googlemaps.googleNs.mapsNs.Polyline
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.Polygon
+import typings.googlemaps.google.maps.Polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -45,7 +45,7 @@ object DocumentVersionInfo {
     CreatedDate: DateTime = null,
     DocumentFormat: DocumentFormat = null,
     DocumentVersion: DocumentVersion = null,
-    IsDefaultVersion: js.UndefOr[Boolean] = js.undefined,
+    IsDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
     Name: DocumentName = null,
     Status: DocumentStatus = null,
     StatusInformation: DocumentStatusInformation = null,

@@ -2,6 +2,7 @@ package typings.rsmqDashWorker.rsmqDashWorkerMod
 
 import typings.redis.redisMod.ClientOpts
 import typings.redis.redisMod.RedisClient
+import typings.rsmq.rsmqMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ object Options {
   @scala.inline
   def apply(
     autostart: js.UndefOr[Boolean] = js.undefined,
-    customExceedCheck: CustomExceedCheckCallback = null,
+    customExceedCheck: /* message */ Message => Boolean = null,
     defaultDelay: Int | Double = null,
     host: String = null,
     interval: Int | Double = null,
@@ -41,7 +42,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
-    if (customExceedCheck != null) __obj.updateDynamic("customExceedCheck")(customExceedCheck)
+    if (customExceedCheck != null) __obj.updateDynamic("customExceedCheck")(js.Any.fromFunction1(customExceedCheck))
     if (defaultDelay != null) __obj.updateDynamic("defaultDelay")(defaultDelay.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

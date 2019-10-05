@@ -32,13 +32,13 @@ object ListConfigurationsRequest {
   def apply(
     configurationType: ConfigurationItemType,
     filters: Filters = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     orderBy: OrderByList = null
   ): ListConfigurationsRequest = {
     val __obj = js.Dynamic.literal(configurationType = configurationType.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
     __obj.asInstanceOf[ListConfigurationsRequest]

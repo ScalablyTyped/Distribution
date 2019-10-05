@@ -11,7 +11,9 @@ object ^ extends js.Object {
     * @param url a string URL to append to
     * @param query a string or object containing query params to append
     */
-  def apply(url: String, query: String | Query): String = js.native
-  def apply(url: String, query: String | Query, options: Options): String = js.native
+  def apply(url: String, query: String): String = js.native
+  def apply(url: String, query: String, options: Options): String = js.native
+  def apply(url: String, query: Query): String = js.native
+  def apply(url: String, query: Query, options: Options): String = js.native
 }
 

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.twilio.twilioMod.Resource because Already inherited
 - typings.twilio.twilioMod.ListableResource because var conflicts: get_Original. Inlined list, list, list, list_Original */ @js.native
 trait CallResource extends CreatableMappedResource[CallInstance] {
   var feedbackSummary: CallFeedbackSummaryResource = js.native

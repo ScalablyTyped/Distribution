@@ -1,5 +1,8 @@
 package typings.node.osMod
 
+import typings.node.Anon_BufferEncoding
+import typings.node.Anon_EncodingString
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +22,13 @@ object UserInfo {
   
     __obj.asInstanceOf[UserInfo[T]]
   }
+}
+
+@JSImport("os", "userInfo")
+@js.native
+object userInfo extends js.Object {
+  def apply(): UserInfo[java.lang.String] = js.native
+  def apply(options: Anon_BufferEncoding): UserInfo[Buffer] = js.native
+  def apply(options: Anon_EncodingString): UserInfo[java.lang.String] = js.native
 }
 

@@ -28,13 +28,13 @@ object DescribeBackupsRequest {
   def apply(
     BackupIds: BackupIds = null,
     Filters: Filters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeBackupsRequest = {
     val __obj = js.Dynamic.literal()
     if (BackupIds != null) __obj.updateDynamic("BackupIds")(BackupIds)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeBackupsRequest]
   }

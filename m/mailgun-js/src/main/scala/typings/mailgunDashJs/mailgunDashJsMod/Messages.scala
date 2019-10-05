@@ -1,9 +1,9 @@
 package typings.mailgunDashJs.mailgunDashJsMod
 
-import typings.mailgunDashJs.mailgunDashJsMod.messagesNs.BatchData
-import typings.mailgunDashJs.mailgunDashJsMod.messagesNs.SendData
-import typings.mailgunDashJs.mailgunDashJsMod.messagesNs.SendResponse
-import typings.mailgunDashJs.mailgunDashJsMod.messagesNs.SendTemplateData
+import typings.mailgunDashJs.mailgunDashJsMod.messages.BatchData
+import typings.mailgunDashJs.mailgunDashJsMod.messages.SendData
+import typings.mailgunDashJs.mailgunDashJsMod.messages.SendResponse
+import typings.mailgunDashJs.mailgunDashJsMod.messages.SendTemplateData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -24,7 +24,7 @@ object AssociateTransitGatewayRouteTableRequest {
   def apply(
     TransitGatewayAttachmentId: String,
     TransitGatewayRouteTableId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): AssociateTransitGatewayRouteTableRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId, TransitGatewayRouteTableId = TransitGatewayRouteTableId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

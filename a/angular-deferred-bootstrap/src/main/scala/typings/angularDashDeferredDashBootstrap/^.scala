@@ -1,6 +1,6 @@
 package typings.angularDashDeferredDashBootstrap
 
-import typings.angularDashDeferredDashBootstrap.angularNs.IDeferredBootstrapperStatic
+import typings.angularDashDeferredDashBootstrap.angular.IDeferredBootstrapperStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

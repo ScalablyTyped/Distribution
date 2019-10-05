@@ -46,10 +46,10 @@ trait ListRecordsResponse extends js.Object {
 object ListRecordsResponse {
   @scala.inline
   def apply(
-    Count: js.UndefOr[Integer] = js.undefined,
-    DatasetDeletedAfterRequestedSyncCount: js.UndefOr[Boolean] = js.undefined,
-    DatasetExists: js.UndefOr[Boolean] = js.undefined,
-    DatasetSyncCount: js.UndefOr[Long] = js.undefined,
+    Count: Int | Double = null,
+    DatasetDeletedAfterRequestedSyncCount: js.UndefOr[scala.Boolean] = js.undefined,
+    DatasetExists: js.UndefOr[scala.Boolean] = js.undefined,
+    DatasetSyncCount: Int | Double = null,
     LastModifiedBy: String = null,
     MergedDatasetNames: MergedDatasetNameList = null,
     NextToken: String = null,
@@ -57,10 +57,10 @@ object ListRecordsResponse {
     SyncSessionToken: String = null
   ): ListRecordsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (!js.isUndefined(DatasetDeletedAfterRequestedSyncCount)) __obj.updateDynamic("DatasetDeletedAfterRequestedSyncCount")(DatasetDeletedAfterRequestedSyncCount)
     if (!js.isUndefined(DatasetExists)) __obj.updateDynamic("DatasetExists")(DatasetExists)
-    if (!js.isUndefined(DatasetSyncCount)) __obj.updateDynamic("DatasetSyncCount")(DatasetSyncCount)
+    if (DatasetSyncCount != null) __obj.updateDynamic("DatasetSyncCount")(DatasetSyncCount.asInstanceOf[js.Any])
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (MergedDatasetNames != null) __obj.updateDynamic("MergedDatasetNames")(MergedDatasetNames)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

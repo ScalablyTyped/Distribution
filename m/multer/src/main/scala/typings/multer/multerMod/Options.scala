@@ -1,8 +1,8 @@
 package typings.multer.multerMod
 
 import typings.multer.Anon_FieldNameSize
-import typings.multer.multerMod.Global.ExpressNs.MulterNs.File
-import typings.multer.multerMod.Global.ExpressNs.Request
+import typings.multer.multerMod.Global.Express.Multer.File
+import typings.multer.multerMod.Global.Express.Request
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

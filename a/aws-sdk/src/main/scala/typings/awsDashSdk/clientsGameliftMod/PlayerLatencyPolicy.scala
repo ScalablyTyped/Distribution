@@ -18,12 +18,12 @@ trait PlayerLatencyPolicy extends js.Object {
 object PlayerLatencyPolicy {
   @scala.inline
   def apply(
-    MaximumIndividualPlayerLatencyMilliseconds: js.UndefOr[WholeNumber] = js.undefined,
-    PolicyDurationSeconds: js.UndefOr[WholeNumber] = js.undefined
+    MaximumIndividualPlayerLatencyMilliseconds: Int | scala.Double = null,
+    PolicyDurationSeconds: Int | scala.Double = null
   ): PlayerLatencyPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaximumIndividualPlayerLatencyMilliseconds)) __obj.updateDynamic("MaximumIndividualPlayerLatencyMilliseconds")(MaximumIndividualPlayerLatencyMilliseconds)
-    if (!js.isUndefined(PolicyDurationSeconds)) __obj.updateDynamic("PolicyDurationSeconds")(PolicyDurationSeconds)
+    if (MaximumIndividualPlayerLatencyMilliseconds != null) __obj.updateDynamic("MaximumIndividualPlayerLatencyMilliseconds")(MaximumIndividualPlayerLatencyMilliseconds.asInstanceOf[js.Any])
+    if (PolicyDurationSeconds != null) __obj.updateDynamic("PolicyDurationSeconds")(PolicyDurationSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLatencyPolicy]
   }
 }

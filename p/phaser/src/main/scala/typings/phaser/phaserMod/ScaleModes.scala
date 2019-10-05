@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @JSImport("phaser", "ScaleModes")
 @js.native
 object ScaleModes extends js.Object {
-  /* 0 */ val DEFAULT: typings.phaser.PhaserNs.ScaleModes.DEFAULT with Double = js.native
-  /* 1 */ val LINEAR: typings.phaser.PhaserNs.ScaleModes.LINEAR with Double = js.native
-  /* 2 */ val NEAREST: typings.phaser.PhaserNs.ScaleModes.NEAREST with Double = js.native
+  /* 0 */ val DEFAULT: typings.phaser.Phaser.ScaleModes.DEFAULT with Double = js.native
+  /* 1 */ val LINEAR: typings.phaser.Phaser.ScaleModes.LINEAR with Double = js.native
+  /* 2 */ val NEAREST: typings.phaser.Phaser.ScaleModes.NEAREST with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.phaser.PhaserNs.ScaleModes with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.phaser.Phaser.ScaleModes with Double] = js.native
 }
 

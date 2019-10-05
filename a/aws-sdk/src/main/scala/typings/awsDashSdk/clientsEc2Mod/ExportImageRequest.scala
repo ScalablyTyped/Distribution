@@ -43,7 +43,7 @@ object ExportImageRequest {
     S3ExportLocation: ExportTaskS3LocationRequest,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RoleName: String = null
   ): ExportImageRequest = {
     val __obj = js.Dynamic.literal(DiskImageFormat = DiskImageFormat.asInstanceOf[js.Any], ImageId = ImageId, S3ExportLocation = S3ExportLocation)

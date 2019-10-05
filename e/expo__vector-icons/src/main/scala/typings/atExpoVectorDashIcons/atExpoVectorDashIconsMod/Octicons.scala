@@ -15,6 +15,22 @@ class Octicons () extends default
 @JSImport("@expo/vector-icons", "Octicons")
 @js.native
 object Octicons extends js.Object {
+  @js.native
+  class Button ()
+    extends typings.reactDashNativeDashVectorDashIcons.octiconsMod.default.Button
+  
+  @js.native
+  class TabBarItem ()
+    extends typings.reactDashNativeDashVectorDashIcons.octiconsMod.default.TabBarItem
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends typings.reactDashNativeDashVectorDashIcons.octiconsMod.default.TabBarItemIOS
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends typings.reactDashNativeDashVectorDashIcons.octiconsMod.default.ToolbarAndroid
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

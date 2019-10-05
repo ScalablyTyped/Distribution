@@ -24,7 +24,9 @@ object ^ extends js.Object {
   })();
   ```
   */
-  def apply(targets: String | js.Array[String]): js.Promise[Boolean] = js.native
-  def apply(targets: String | js.Array[String], options: Options): js.Promise[Boolean] = js.native
+  def apply(targets: String): js.Promise[Boolean] = js.native
+  def apply(targets: String, options: Options): js.Promise[Boolean] = js.native
+  def apply(targets: js.Array[String]): js.Promise[Boolean] = js.native
+  def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = js.native
 }
 

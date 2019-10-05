@@ -1,5 +1,6 @@
 package typings.lscache
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,4 +72,8 @@ trait LSCache extends js.Object {
     */
   def supported(): Boolean = js.native
 }
+
+@JSGlobal("lscache")
+@js.native
+object lscache extends TopLevel[LSCache]
 

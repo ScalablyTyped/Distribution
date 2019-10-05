@@ -18,10 +18,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * If `align` is not set in `rich`, `align` in parent level
     * will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.align
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.align
     */
   var align: js.UndefOr[String] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -42,7 +42,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.backgroundColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -54,21 +54,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.borderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.borderRadius
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.borderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -80,7 +80,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * ""#fff""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -94,7 +94,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.distance
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
   /**
@@ -104,7 +104,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.ellipsis
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.ellipsis
     */
   var ellipsis: js.UndefOr[Boolean] = js.undefined
   /**
@@ -115,7 +115,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.fontFamily
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -124,7 +124,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * 12
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.fontSize
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -139,7 +139,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.fontStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -156,7 +156,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.fontWeight
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -196,10 +196,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * where `params` is the single dataset needed by formatter,
     * which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.formatter
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -208,7 +208,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * 20
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.height
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -217,10 +217,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * If `lineHeight` is not set in `rich`, `lineHeight` in
     * parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.lineHeight
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -229,7 +229,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * and move `40` vertically.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.offset
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.offset
     */
   var offset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -244,7 +244,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * height of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.padding
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -258,7 +258,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * represent position of label relative to top-left corner
     * of bounding box. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * + 'top'
     *
@@ -282,25 +282,25 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "inside"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.position
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.position
     */
   var position: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * For more details, see
     * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.rich
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
@@ -313,14 +313,14 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.rotate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.rotate
     */
   var rotate: js.UndefOr[Double] = js.undefined
   /**
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -329,28 +329,28 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
     * Whether to show label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.show
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -362,21 +362,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textBorderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textBorderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textShadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -385,21 +385,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textShadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textShadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.textShadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -414,10 +414,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * If `verticalAlign` is not set in `rich`, `verticalAlign`
     * in parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.levels.upperLabel)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.verticalAlign
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.verticalAlign
     */
   var verticalAlign: js.UndefOr[String] = js.undefined
   /**
@@ -441,7 +441,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.width
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -468,7 +468,7 @@ object Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceE
     padding: js.Array[_] | Double = null,
     position: js.Array[_] | String = null,
     rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     rotate: Int | Double = null,

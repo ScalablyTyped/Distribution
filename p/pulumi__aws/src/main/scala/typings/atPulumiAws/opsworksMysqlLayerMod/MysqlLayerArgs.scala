@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksMysqlLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.MysqlLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.MysqlLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

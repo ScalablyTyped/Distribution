@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportFindParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindParametersProperties
+import typings.arcgisDashJsDashApi.__esri.FindParameters
+import typings.arcgisDashJsDashApi.__esri.FindParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

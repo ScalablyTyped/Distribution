@@ -12,14 +12,5 @@ trait SpeechGrammar extends js.Object {
 
 @JSGlobal("SpeechGrammar")
 @js.native
-class SpeechGrammarCls () extends SpeechGrammar {
-  /* CompleteClass */
-  override var src: java.lang.String = js.native
-  /* CompleteClass */
-  override var weight: Double = js.native
-}
-
-@JSGlobal("SpeechGrammar")
-@js.native
 object SpeechGrammar extends Instantiable0[SpeechGrammar]
 

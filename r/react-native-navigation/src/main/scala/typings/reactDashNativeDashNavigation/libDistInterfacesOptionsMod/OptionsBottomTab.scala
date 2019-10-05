@@ -93,11 +93,11 @@ object OptionsBottomTab {
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
     fontWeight: FontWeight = null,
-    icon: js.UndefOr[ImageRequireSource] = js.undefined,
+    icon: Int | Double = null,
     iconColor: Color = null,
     iconInsets: Insets = null,
     selectedFontSize: Int | Double = null,
-    selectedIcon: js.UndefOr[ImageRequireSource] = js.undefined,
+    selectedIcon: Int | Double = null,
     selectedIconColor: Color = null,
     selectedTextColor: Color = null,
     testID: String = null,
@@ -112,11 +112,11 @@ object OptionsBottomTab {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
     if (selectedFontSize != null) __obj.updateDynamic("selectedFontSize")(selectedFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectedIcon)) __obj.updateDynamic("selectedIcon")(selectedIcon)
+    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
     if (selectedIconColor != null) __obj.updateDynamic("selectedIconColor")(selectedIconColor)
     if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor)
     if (testID != null) __obj.updateDynamic("testID")(testID)

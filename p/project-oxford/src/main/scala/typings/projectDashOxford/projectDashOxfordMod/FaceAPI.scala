@@ -1,11 +1,11 @@
 package typings.projectDashOxford.projectDashOxfordMod
 
 import typings.bluebird.bluebirdMod.^
-import typings.projectDashOxford.projectDashOxfordMod.FaceResponsesNs.Grouping
-import typings.projectDashOxford.projectDashOxfordMod.FaceResponsesNs.Similar
-import typings.projectDashOxford.projectDashOxfordMod.FaceResponsesNs.Verify
-import typings.projectDashOxford.projectDashOxfordMod.OptionsNs.Detect
-import typings.projectDashOxford.projectDashOxfordMod.OptionsNs.Identify
+import typings.projectDashOxford.projectDashOxfordMod.FaceResponses.Grouping
+import typings.projectDashOxford.projectDashOxfordMod.FaceResponses.Similar
+import typings.projectDashOxford.projectDashOxfordMod.FaceResponses.Verify
+import typings.projectDashOxford.projectDashOxfordMod.Options.Detect
+import typings.projectDashOxford.projectDashOxfordMod.Options.Identify
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ class FaceAPI () extends js.Object {
     * @param  {boolean} options.analyzesHeadPose       - Analyze headpose?
     * @return {Promise}                                - Promise resolving with the resulting JSON
     */
-  def detect(options: Detect): ^[js.Array[typings.projectDashOxford.projectDashOxfordMod.FaceResponsesNs.Detect]] = js.native
+  def detect(options: Detect): ^[js.Array[typings.projectDashOxford.projectDashOxfordMod.FaceResponses.Detect]] = js.native
   /**
     * Divides candidate faces into groups based on face similarity using faceIds.
     * The output is one or more disjointed face groups and a MessyGroup.
@@ -63,9 +63,7 @@ class FaceAPI () extends js.Object {
     * @param  {string[]} faces     - Array of faceIds to use
     * @return {Promise}            - Promise resolving with the resulting JSON
     */
-  def identify(faceIDs: js.Array[String], options: Identify): ^[
-    js.Array[typings.projectDashOxford.projectDashOxfordMod.FaceResponsesNs.Identify]
-  ] = js.native
+  def identify(faceIDs: js.Array[String], options: Identify): ^[js.Array[typings.projectDashOxford.projectDashOxfordMod.FaceResponses.Identify]] = js.native
   /**
     * Detect similar faces using faceIds (as returned from the detect API)
     * @param  {string} sourceFace          - String of faceId for the source face

@@ -1,7 +1,7 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.UINs.TextNs.TabAlignment
-import typings.winrt.WindowsNs.UINs.TextNs.TabLeader
+import typings.winrt.Windows.UI.Text.TabAlignment
+import typings.winrt.Windows.UI.Text.TabLeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

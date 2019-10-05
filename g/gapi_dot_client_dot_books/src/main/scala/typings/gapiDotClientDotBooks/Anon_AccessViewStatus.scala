@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotBooks
 
-import typings.gapiDotClientDotBooks.gapiNs.clientNs.booksNs.DownloadAccessRestriction
+import typings.gapiDotClientDotBooks.gapi.client.books.DownloadAccessRestriction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

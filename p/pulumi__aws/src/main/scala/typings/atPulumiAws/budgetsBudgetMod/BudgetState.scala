@@ -1,8 +1,8 @@
 package typings.atPulumiAws.budgetsBudgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.budgetsNs.BudgetCostTypes
-import typings.atPulumiAws.typesInputMod.budgetsNs.BudgetNotification
+import typings.atPulumiAws.typesInputMod.budgets.BudgetCostTypes
+import typings.atPulumiAws.typesInputMod.budgets.BudgetNotification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

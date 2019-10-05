@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_Body
 import typings.astDashTypes.genKindsMod.StatementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.Program
+import typings.astDashTypes.genNamedTypesMod.namedTypes.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

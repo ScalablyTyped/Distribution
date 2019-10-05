@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.topSitesNs.MostVisitedURL
+import typings.chrome.chrome.topSites.MostVisitedURL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -24,13 +24,6 @@ trait ReadableStream[R] extends js.Object {
 
 @JSGlobal("ReadableStream")
 @js.native
-class ReadableStreamCls[R] () extends ReadableStream[R] {
-  def this(underlyingSource: UnderlyingSource[R]) = this()
-  def this(underlyingSource: UnderlyingSource[R], strategy: QueuingStrategy[R]) = this()
-}
-
-@JSGlobal("ReadableStream")
-@js.native
 object ReadableStream
   extends Instantiable0[ReadableStream[js.Object]]
      with Instantiable2[

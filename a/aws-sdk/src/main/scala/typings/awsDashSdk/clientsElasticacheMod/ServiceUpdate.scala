@@ -58,7 +58,7 @@ trait ServiceUpdate extends js.Object {
 object ServiceUpdate {
   @scala.inline
   def apply(
-    AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     EstimatedUpdateTime: String = null,

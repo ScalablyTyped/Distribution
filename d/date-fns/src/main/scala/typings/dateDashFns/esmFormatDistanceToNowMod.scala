@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/formatDistanceToNow", JSImport.Namespace)
 @js.native
 object esmFormatDistanceToNowMod extends js.Object {
-  def default(date: Double): String = js.native
-  def default(date: Double, options: Anon_AddSuffixIncludeSeconds): String = js.native
-  def default(date: Date): String = js.native
-  def default(date: Date, options: Anon_AddSuffixIncludeSeconds): String = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double): String = js.native
+    def apply(date: Double, options: Anon_AddSuffixIncludeSeconds): String = js.native
+    def apply(date: Date): String = js.native
+    def apply(date: Date, options: Anon_AddSuffixIncludeSeconds): String = js.native
+  }
+  
 }
 

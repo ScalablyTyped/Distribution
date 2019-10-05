@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IReferenceResolverHost
+import typings.typescriptDashServices.TypeScript.IReferenceResolverHost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ReferenceResolver")
 @js.native
 class ReferenceResolver protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ReferenceResolver {
+  extends typings.typescriptDashServices.TypeScript.ReferenceResolver {
   def this(
     inputFileNames: js.Array[String],
     host: IReferenceResolverHost,
@@ -24,6 +24,6 @@ object ReferenceResolver extends js.Object {
     inputFileNames: js.Array[String],
     host: IReferenceResolverHost,
     useCaseSensitiveFileResolution: Boolean
-  ): typings.typescriptDashServices.TypeScriptNs.ReferenceResolutionResult = js.native
+  ): typings.typescriptDashServices.TypeScript.ReferenceResolutionResult = js.native
 }
 

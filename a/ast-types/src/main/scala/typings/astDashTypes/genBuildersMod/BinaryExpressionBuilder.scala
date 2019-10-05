@@ -22,7 +22,7 @@ import typings.astDashTypes.astDashTypesStrings.`_backtick^_backtick`
 import typings.astDashTypes.astDashTypesStrings.in
 import typings.astDashTypes.astDashTypesStrings.instanceof
 import typings.astDashTypes.genKindsMod.ExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.BinaryExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.BinaryExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersPointCloudRendererMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudRendererConstructor
+import typings.arcgisDashJsDashApi.__esri.PointCloudRendererConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

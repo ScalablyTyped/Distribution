@@ -1,6 +1,6 @@
 package typings.kiiDashCloudDashSdk
 
-import typings.kiiDashCloudDashSdk.KiiCloudNs.KiiUser
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

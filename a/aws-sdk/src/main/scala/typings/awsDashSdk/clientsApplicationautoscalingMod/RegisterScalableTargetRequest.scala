@@ -41,14 +41,14 @@ object RegisterScalableTargetRequest {
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
     ServiceNamespace: ServiceNamespace,
-    MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
-    MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
+    MaxCapacity: Int | Double = null,
+    MinCapacity: Int | Double = null,
     RoleARN: ResourceIdMaxLen1600 = null,
     SuspendedState: SuspendedState = null
   ): RegisterScalableTargetRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId, ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (MinCapacity != null) __obj.updateDynamic("MinCapacity")(MinCapacity.asInstanceOf[js.Any])
     if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN)
     if (SuspendedState != null) __obj.updateDynamic("SuspendedState")(SuspendedState)
     __obj.asInstanceOf[RegisterScalableTargetRequest]

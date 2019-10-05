@@ -29,7 +29,7 @@ object ApplySecurityGroupsToClientVpnTargetNetworkRequest {
     ClientVpnEndpointId: String,
     SecurityGroupIds: ClientVpnSecurityGroupIdSet,
     VpcId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ApplySecurityGroupsToClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, SecurityGroupIds = SecurityGroupIds, VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

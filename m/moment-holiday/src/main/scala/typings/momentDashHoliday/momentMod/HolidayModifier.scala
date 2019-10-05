@@ -13,11 +13,7 @@ trait HolidayModifier extends js.Object {
   def add(holidays: HolidaysMapping, specifics: js.Any): HolidayModifier = js.native
   @JSName("extendParser")
   def extendParser_false(
-    parserFunc: js.Function2[
-      /* m */ typings.moment.momentMod.Moment, 
-      /* date */ String, 
-      typings.moment.momentMod.Moment | js.Array[typings.moment.momentMod.Moment] | `false` | Unit
-    ]
+    parserFunc: js.Function2[/* m */ Moment, /* date */ String, Moment | js.Array[Moment] | `false` | Unit]
   ): HolidayModifier = js.native
   def load(locales: String): HolidayModifier = js.native
   def load(locales: js.Array[String]): HolidayModifier = js.native

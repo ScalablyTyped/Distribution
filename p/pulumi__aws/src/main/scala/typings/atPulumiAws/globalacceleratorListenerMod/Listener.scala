@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorListenerMod
 
-import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.ListenerPortRange
+import typings.atPulumiAws.typesOutputMod.globalaccelerator.ListenerPortRange
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

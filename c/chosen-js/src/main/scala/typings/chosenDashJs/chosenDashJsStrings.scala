@@ -1,7 +1,7 @@
 package typings.chosenDashJs
 
-import typings.chosenDashJs.ChosenNs.OnEvent
-import typings.chosenDashJs.ChosenNs.TriggerEvent
+import typings.chosenDashJs.Chosen.OnEvent
+import typings.chosenDashJs.Chosen.TriggerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

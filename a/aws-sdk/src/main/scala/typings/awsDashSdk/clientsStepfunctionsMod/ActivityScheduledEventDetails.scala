@@ -27,14 +27,14 @@ object ActivityScheduledEventDetails {
   @scala.inline
   def apply(
     resource: Arn,
-    heartbeatInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined,
+    heartbeatInSeconds: Int | Double = null,
     input: SensitiveData = null,
-    timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
+    timeoutInSeconds: Int | Double = null
   ): ActivityScheduledEventDetails = {
     val __obj = js.Dynamic.literal(resource = resource)
-    if (!js.isUndefined(heartbeatInSeconds)) __obj.updateDynamic("heartbeatInSeconds")(heartbeatInSeconds)
+    if (heartbeatInSeconds != null) __obj.updateDynamic("heartbeatInSeconds")(heartbeatInSeconds.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input)
-    if (!js.isUndefined(timeoutInSeconds)) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds)
+    if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityScheduledEventDetails]
   }
 }

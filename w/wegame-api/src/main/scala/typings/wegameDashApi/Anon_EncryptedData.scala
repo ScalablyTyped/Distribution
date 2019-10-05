@@ -1,6 +1,6 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.UserInfo
+import typings.wegameDashApi.wx.types.UserInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

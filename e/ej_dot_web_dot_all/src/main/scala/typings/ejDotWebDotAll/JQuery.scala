@@ -1,5 +1,92 @@
 package typings.ejDotWebDotAll
 
+import typings.ejDotWebDotAll.ej.Accordion
+import typings.ejDotWebDotAll.ej.Accordion.Model
+import typings.ejDotWebDotAll.ej.Autocomplete
+import typings.ejDotWebDotAll.ej.Button
+import typings.ejDotWebDotAll.ej.Captcha
+import typings.ejDotWebDotAll.ej.CheckBox
+import typings.ejDotWebDotAll.ej.ColorPicker
+import typings.ejDotWebDotAll.ej.ComboBox
+import typings.ejDotWebDotAll.ej.CurrencyTextbox
+import typings.ejDotWebDotAll.ej.DatePicker
+import typings.ejDotWebDotAll.ej.DateRangePicker
+import typings.ejDotWebDotAll.ej.DateTimePicker
+import typings.ejDotWebDotAll.ej.Dialog
+import typings.ejDotWebDotAll.ej.DocumentEditor
+import typings.ejDotWebDotAll.ej.Draggable
+import typings.ejDotWebDotAll.ej.DropDownList
+import typings.ejDotWebDotAll.ej.DropDownTree
+import typings.ejDotWebDotAll.ej.Droppable
+import typings.ejDotWebDotAll.ej.FileExplorer
+import typings.ejDotWebDotAll.ej.Gantt
+import typings.ejDotWebDotAll.ej.Grid
+import typings.ejDotWebDotAll.ej.GroupButton
+import typings.ejDotWebDotAll.ej.Kanban
+import typings.ejDotWebDotAll.ej.ListBox
+import typings.ejDotWebDotAll.ej.ListView
+import typings.ejDotWebDotAll.ej.MaskEdit
+import typings.ejDotWebDotAll.ej.Menu
+import typings.ejDotWebDotAll.ej.NavigationDrawer
+import typings.ejDotWebDotAll.ej.NumericTextbox
+import typings.ejDotWebDotAll.ej.Pager
+import typings.ejDotWebDotAll.ej.PdfViewer
+import typings.ejDotWebDotAll.ej.PercentageTextbox
+import typings.ejDotWebDotAll.ej.PivotChart
+import typings.ejDotWebDotAll.ej.PivotClient
+import typings.ejDotWebDotAll.ej.PivotGauge
+import typings.ejDotWebDotAll.ej.PivotGrid
+import typings.ejDotWebDotAll.ej.PivotPager
+import typings.ejDotWebDotAll.ej.PivotSchemaDesigner
+import typings.ejDotWebDotAll.ej.PivotTreeMap
+import typings.ejDotWebDotAll.ej.Print
+import typings.ejDotWebDotAll.ej.ProgressBar
+import typings.ejDotWebDotAll.ej.RTE
+import typings.ejDotWebDotAll.ej.RadialMenu
+import typings.ejDotWebDotAll.ej.RadialSlider
+import typings.ejDotWebDotAll.ej.RadioButton
+import typings.ejDotWebDotAll.ej.Rating
+import typings.ejDotWebDotAll.ej.RecurrenceEditor
+import typings.ejDotWebDotAll.ej.ReportDesigner
+import typings.ejDotWebDotAll.ej.ReportViewer
+import typings.ejDotWebDotAll.ej.Resizable
+import typings.ejDotWebDotAll.ej.Ribbon
+import typings.ejDotWebDotAll.ej.Rotator
+import typings.ejDotWebDotAll.ej.Schedule
+import typings.ejDotWebDotAll.ej.Scroller
+import typings.ejDotWebDotAll.ej.Signature
+import typings.ejDotWebDotAll.ej.Slider
+import typings.ejDotWebDotAll.ej.SpellCheck
+import typings.ejDotWebDotAll.ej.SplitButton
+import typings.ejDotWebDotAll.ej.Splitter
+import typings.ejDotWebDotAll.ej.Spreadsheet
+import typings.ejDotWebDotAll.ej.Tab
+import typings.ejDotWebDotAll.ej.TagCloud
+import typings.ejDotWebDotAll.ej.Tile
+import typings.ejDotWebDotAll.ej.TimePicker
+import typings.ejDotWebDotAll.ej.ToggleButton
+import typings.ejDotWebDotAll.ej.Toolbar
+import typings.ejDotWebDotAll.ej.Tooltip
+import typings.ejDotWebDotAll.ej.TreeGrid
+import typings.ejDotWebDotAll.ej.TreeView
+import typings.ejDotWebDotAll.ej.Uploadbox
+import typings.ejDotWebDotAll.ej.WaitingPopup
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
+import typings.ejDotWebDotAll.ej.datavisualization.Chart
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMapLegend
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
+import typings.ejDotWebDotAll.ej.datavisualization.Map
+import typings.ejDotWebDotAll.ej.datavisualization.Overview
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline
+import typings.ejDotWebDotAll.ej.datavisualization.SunburstChart
+import typings.ejDotWebDotAll.ej.datavisualization.SymbolPalette
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejAccordion
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejAutocomplete
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejBarcode
@@ -86,93 +173,6 @@ import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejTreeMap
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejTreeView
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejUploadbox
 import typings.ejDotWebDotAll.ejDotWebDotAllStrings.ejWaitingPopup
-import typings.ejDotWebDotAll.ejNs.Accordion
-import typings.ejDotWebDotAll.ejNs.AccordionNs.Model
-import typings.ejDotWebDotAll.ejNs.Autocomplete
-import typings.ejDotWebDotAll.ejNs.Button
-import typings.ejDotWebDotAll.ejNs.Captcha
-import typings.ejDotWebDotAll.ejNs.CheckBox
-import typings.ejDotWebDotAll.ejNs.ColorPicker
-import typings.ejDotWebDotAll.ejNs.ComboBox
-import typings.ejDotWebDotAll.ejNs.CurrencyTextbox
-import typings.ejDotWebDotAll.ejNs.DatePicker
-import typings.ejDotWebDotAll.ejNs.DateRangePicker
-import typings.ejDotWebDotAll.ejNs.DateTimePicker
-import typings.ejDotWebDotAll.ejNs.Dialog
-import typings.ejDotWebDotAll.ejNs.DocumentEditor
-import typings.ejDotWebDotAll.ejNs.Draggable
-import typings.ejDotWebDotAll.ejNs.DropDownList
-import typings.ejDotWebDotAll.ejNs.DropDownTree
-import typings.ejDotWebDotAll.ejNs.Droppable
-import typings.ejDotWebDotAll.ejNs.FileExplorer
-import typings.ejDotWebDotAll.ejNs.Gantt
-import typings.ejDotWebDotAll.ejNs.Grid
-import typings.ejDotWebDotAll.ejNs.GroupButton
-import typings.ejDotWebDotAll.ejNs.Kanban
-import typings.ejDotWebDotAll.ejNs.ListBox
-import typings.ejDotWebDotAll.ejNs.ListView
-import typings.ejDotWebDotAll.ejNs.MaskEdit
-import typings.ejDotWebDotAll.ejNs.Menu
-import typings.ejDotWebDotAll.ejNs.NavigationDrawer
-import typings.ejDotWebDotAll.ejNs.NumericTextbox
-import typings.ejDotWebDotAll.ejNs.Pager
-import typings.ejDotWebDotAll.ejNs.PdfViewer
-import typings.ejDotWebDotAll.ejNs.PercentageTextbox
-import typings.ejDotWebDotAll.ejNs.PivotChart
-import typings.ejDotWebDotAll.ejNs.PivotClient
-import typings.ejDotWebDotAll.ejNs.PivotGauge
-import typings.ejDotWebDotAll.ejNs.PivotGrid
-import typings.ejDotWebDotAll.ejNs.PivotPager
-import typings.ejDotWebDotAll.ejNs.PivotSchemaDesigner
-import typings.ejDotWebDotAll.ejNs.PivotTreeMap
-import typings.ejDotWebDotAll.ejNs.Print
-import typings.ejDotWebDotAll.ejNs.ProgressBar
-import typings.ejDotWebDotAll.ejNs.RTE
-import typings.ejDotWebDotAll.ejNs.RadialMenu
-import typings.ejDotWebDotAll.ejNs.RadialSlider
-import typings.ejDotWebDotAll.ejNs.RadioButton
-import typings.ejDotWebDotAll.ejNs.Rating
-import typings.ejDotWebDotAll.ejNs.RecurrenceEditor
-import typings.ejDotWebDotAll.ejNs.ReportDesigner
-import typings.ejDotWebDotAll.ejNs.ReportViewer
-import typings.ejDotWebDotAll.ejNs.Resizable
-import typings.ejDotWebDotAll.ejNs.Ribbon
-import typings.ejDotWebDotAll.ejNs.Rotator
-import typings.ejDotWebDotAll.ejNs.Schedule
-import typings.ejDotWebDotAll.ejNs.Scroller
-import typings.ejDotWebDotAll.ejNs.Signature
-import typings.ejDotWebDotAll.ejNs.Slider
-import typings.ejDotWebDotAll.ejNs.SpellCheck
-import typings.ejDotWebDotAll.ejNs.SplitButton
-import typings.ejDotWebDotAll.ejNs.Splitter
-import typings.ejDotWebDotAll.ejNs.Spreadsheet
-import typings.ejDotWebDotAll.ejNs.Tab
-import typings.ejDotWebDotAll.ejNs.TagCloud
-import typings.ejDotWebDotAll.ejNs.Tile
-import typings.ejDotWebDotAll.ejNs.TimePicker
-import typings.ejDotWebDotAll.ejNs.ToggleButton
-import typings.ejDotWebDotAll.ejNs.Toolbar
-import typings.ejDotWebDotAll.ejNs.Tooltip
-import typings.ejDotWebDotAll.ejNs.TreeGrid
-import typings.ejDotWebDotAll.ejNs.TreeView
-import typings.ejDotWebDotAll.ejNs.Uploadbox
-import typings.ejDotWebDotAll.ejNs.WaitingPopup
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Barcode
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.BulletGraph
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Chart
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.CircularGauge
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Diagram
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.DigitalGauge
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.HeatMap
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.HeatMapLegend
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.LinearGauge
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Map
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Overview
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.RangeNavigator
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.Sparkline
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.SunburstChart
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.SymbolPalette
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.TreeMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -361,426 +361,426 @@ trait JQuery extends js.Object {
   def ejAutocomplete(memberName: js.Any): js.Any = js.native
   def ejAutocomplete(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejAutocomplete(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejAutocomplete(options: typings.ejDotWebDotAll.ejNs.AutocompleteNs.Model): JQuery = js.native
+  def ejAutocomplete(options: typings.ejDotWebDotAll.ej.Autocomplete.Model): JQuery = js.native
   def ejBarcode(): JQuery = js.native
   def ejBarcode(memberName: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejBarcode(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejBarcode(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejBulletGraph(): JQuery = js.native
   def ejBulletGraph(memberName: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejBulletGraph(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejBulletGraph(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejButton(): JQuery = js.native
   def ejButton(memberName: js.Any): js.Any = js.native
   def ejButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejButton(options: typings.ejDotWebDotAll.ejNs.ButtonNs.Model): JQuery = js.native
+  def ejButton(options: typings.ejDotWebDotAll.ej.Button.Model): JQuery = js.native
   def ejCaptcha(): JQuery = js.native
   def ejCaptcha(memberName: js.Any): js.Any = js.native
   def ejCaptcha(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCaptcha(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejCaptcha(options: typings.ejDotWebDotAll.ejNs.CaptchaNs.Model): JQuery = js.native
+  def ejCaptcha(options: typings.ejDotWebDotAll.ej.Captcha.Model): JQuery = js.native
   def ejChart(): JQuery = js.native
   def ejChart(memberName: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejChart(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejChart(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejCheckBox(): JQuery = js.native
   def ejCheckBox(memberName: js.Any): js.Any = js.native
   def ejCheckBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCheckBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejCheckBox(options: typings.ejDotWebDotAll.ejNs.CheckBoxNs.Model): JQuery = js.native
+  def ejCheckBox(options: typings.ejDotWebDotAll.ej.CheckBox.Model): JQuery = js.native
   def ejCircularGauge(): JQuery = js.native
   def ejCircularGauge(memberName: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejCircularGauge(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejCircularGauge(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejColorPicker(): JQuery = js.native
   def ejColorPicker(memberName: js.Any): js.Any = js.native
   def ejColorPicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejColorPicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejColorPicker(options: typings.ejDotWebDotAll.ejNs.ColorPickerNs.Model): JQuery = js.native
+  def ejColorPicker(options: typings.ejDotWebDotAll.ej.ColorPicker.Model): JQuery = js.native
   def ejComboBox(): JQuery = js.native
   def ejComboBox(memberName: js.Any): js.Any = js.native
   def ejComboBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejComboBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejComboBox(options: typings.ejDotWebDotAll.ejNs.ComboBoxNs.Model): JQuery = js.native
+  def ejComboBox(options: typings.ejDotWebDotAll.ej.ComboBox.Model): JQuery = js.native
   def ejCurrencyTextbox(): JQuery = js.native
   def ejCurrencyTextbox(memberName: js.Any): js.Any = js.native
   def ejCurrencyTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCurrencyTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejCurrencyTextbox(options: typings.ejDotWebDotAll.ejNs.EditorNs.Model): JQuery = js.native
+  def ejCurrencyTextbox(options: typings.ejDotWebDotAll.ej.Editor.Model): JQuery = js.native
   def ejDatePicker(): JQuery = js.native
   def ejDatePicker(memberName: js.Any): js.Any = js.native
   def ejDatePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDatePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDatePicker(options: typings.ejDotWebDotAll.ejNs.DatePickerNs.Model): JQuery = js.native
+  def ejDatePicker(options: typings.ejDotWebDotAll.ej.DatePicker.Model): JQuery = js.native
   def ejDateRangePicker(): JQuery = js.native
   def ejDateRangePicker(memberName: js.Any): js.Any = js.native
   def ejDateRangePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDateRangePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDateRangePicker(options: typings.ejDotWebDotAll.ejNs.DateRangePickerNs.Model): JQuery = js.native
+  def ejDateRangePicker(options: typings.ejDotWebDotAll.ej.DateRangePicker.Model): JQuery = js.native
   def ejDateTimePicker(): JQuery = js.native
   def ejDateTimePicker(memberName: js.Any): js.Any = js.native
   def ejDateTimePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDateTimePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDateTimePicker(options: typings.ejDotWebDotAll.ejNs.DateTimePickerNs.Model): JQuery = js.native
+  def ejDateTimePicker(options: typings.ejDotWebDotAll.ej.DateTimePicker.Model): JQuery = js.native
   def ejDiagram(): JQuery = js.native
   def ejDiagram(memberName: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDiagram(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejDiagram(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejDialog(): JQuery = js.native
   def ejDialog(memberName: js.Any): js.Any = js.native
   def ejDialog(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDialog(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDialog(options: typings.ejDotWebDotAll.ejNs.DialogNs.Model): JQuery = js.native
+  def ejDialog(options: typings.ejDotWebDotAll.ej.Dialog.Model): JQuery = js.native
   def ejDigitalGauge(): JQuery = js.native
   def ejDigitalGauge(memberName: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDigitalGauge(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejDigitalGauge(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejDocumentEditor(): JQuery = js.native
   def ejDocumentEditor(memberName: js.Any): js.Any = js.native
   def ejDocumentEditor(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDocumentEditor(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDocumentEditor(options: typings.ejDotWebDotAll.ejNs.DocumentEditorNs.Model): JQuery = js.native
+  def ejDocumentEditor(options: typings.ejDotWebDotAll.ej.DocumentEditor.Model): JQuery = js.native
   def ejDraggable(): JQuery = js.native
   def ejDraggable(memberName: js.Any): js.Any = js.native
   def ejDraggable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDraggable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDraggable(options: typings.ejDotWebDotAll.ejNs.DraggableNs.Model): JQuery = js.native
+  def ejDraggable(options: typings.ejDotWebDotAll.ej.Draggable.Model): JQuery = js.native
   def ejDropDownList(): JQuery = js.native
   def ejDropDownList(memberName: js.Any): js.Any = js.native
   def ejDropDownList(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDropDownList(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDropDownList(options: typings.ejDotWebDotAll.ejNs.DropDownListNs.Model): JQuery = js.native
+  def ejDropDownList(options: typings.ejDotWebDotAll.ej.DropDownList.Model): JQuery = js.native
   def ejDropDownTree(): JQuery = js.native
   def ejDropDownTree(memberName: js.Any): js.Any = js.native
   def ejDropDownTree(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDropDownTree(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDropDownTree(options: typings.ejDotWebDotAll.ejNs.DropDownTreeNs.Model): JQuery = js.native
+  def ejDropDownTree(options: typings.ejDotWebDotAll.ej.DropDownTree.Model): JQuery = js.native
   def ejDroppable(): JQuery = js.native
   def ejDroppable(memberName: js.Any): js.Any = js.native
   def ejDroppable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDroppable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDroppable(options: typings.ejDotWebDotAll.ejNs.DroppableNs.Model): JQuery = js.native
+  def ejDroppable(options: typings.ejDotWebDotAll.ej.Droppable.Model): JQuery = js.native
   def ejFileExplorer(): JQuery = js.native
   def ejFileExplorer(memberName: js.Any): js.Any = js.native
   def ejFileExplorer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejFileExplorer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejFileExplorer(options: typings.ejDotWebDotAll.ejNs.FileExplorerNs.Model): JQuery = js.native
+  def ejFileExplorer(options: typings.ejDotWebDotAll.ej.FileExplorer.Model): JQuery = js.native
   def ejGantt(): JQuery = js.native
   def ejGantt(memberName: js.Any): js.Any = js.native
   def ejGantt(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGantt(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejGantt(options: typings.ejDotWebDotAll.ejNs.GanttNs.Model): JQuery = js.native
+  def ejGantt(options: typings.ejDotWebDotAll.ej.Gantt.Model): JQuery = js.native
   def ejGrid(): JQuery = js.native
   def ejGrid(memberName: js.Any): js.Any = js.native
   def ejGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejGrid(options: typings.ejDotWebDotAll.ejNs.GridNs.Model): JQuery = js.native
+  def ejGrid(options: typings.ejDotWebDotAll.ej.Grid.Model): JQuery = js.native
   def ejGroupButton(): JQuery = js.native
   def ejGroupButton(memberName: js.Any): js.Any = js.native
   def ejGroupButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejGroupButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejGroupButton(options: typings.ejDotWebDotAll.ejNs.GroupButtonNs.Model): JQuery = js.native
+  def ejGroupButton(options: typings.ejDotWebDotAll.ej.GroupButton.Model): JQuery = js.native
   def ejHeatMap(): JQuery = js.native
   def ejHeatMap(memberName: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejHeatMap(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejHeatMap(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejHeatMapLegend(): JQuery = js.native
   def ejHeatMapLegend(memberName: js.Any): js.Any = js.native
   def ejHeatMapLegend(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejHeatMapLegend(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejHeatMapLegend(options: typings.ejDotWebDotAll.ejNs.datavisualizationNs.HeatMapLegendNs.Model): JQuery = js.native
+  def ejHeatMapLegend(options: typings.ejDotWebDotAll.ej.datavisualization.HeatMapLegend.Model): JQuery = js.native
   def ejKanban(): JQuery = js.native
   def ejKanban(memberName: js.Any): js.Any = js.native
   def ejKanban(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejKanban(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejKanban(options: typings.ejDotWebDotAll.ejNs.KanbanNs.Model): JQuery = js.native
+  def ejKanban(options: typings.ejDotWebDotAll.ej.Kanban.Model): JQuery = js.native
   def ejLinearGauge(): JQuery = js.native
   def ejLinearGauge(memberName: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejLinearGauge(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejLinearGauge(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejListBox(): JQuery = js.native
   def ejListBox(memberName: js.Any): js.Any = js.native
   def ejListBox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejListBox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejListBox(options: typings.ejDotWebDotAll.ejNs.ListBoxNs.Model): JQuery = js.native
+  def ejListBox(options: typings.ejDotWebDotAll.ej.ListBox.Model): JQuery = js.native
   def ejListView(): JQuery = js.native
   def ejListView(memberName: js.Any): js.Any = js.native
   def ejListView(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejListView(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejListView(options: typings.ejDotWebDotAll.ejNs.ListViewNs.Model): JQuery = js.native
+  def ejListView(options: typings.ejDotWebDotAll.ej.ListView.Model): JQuery = js.native
   def ejMap(): JQuery = js.native
   def ejMap(memberName: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejMap(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejMap(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejMaskEdit(): JQuery = js.native
   def ejMaskEdit(memberName: js.Any): js.Any = js.native
   def ejMaskEdit(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMaskEdit(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejMaskEdit(options: typings.ejDotWebDotAll.ejNs.MaskEditNs.Model): JQuery = js.native
+  def ejMaskEdit(options: typings.ejDotWebDotAll.ej.MaskEdit.Model): JQuery = js.native
   def ejMenu(): JQuery = js.native
   def ejMenu(memberName: js.Any): js.Any = js.native
   def ejMenu(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMenu(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejMenu(options: typings.ejDotWebDotAll.ejNs.MenuNs.Model): JQuery = js.native
+  def ejMenu(options: typings.ejDotWebDotAll.ej.Menu.Model): JQuery = js.native
   def ejNavigationDrawer(): JQuery = js.native
   def ejNavigationDrawer(memberName: js.Any): js.Any = js.native
   def ejNavigationDrawer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejNavigationDrawer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejNavigationDrawer(options: typings.ejDotWebDotAll.ejNs.NavigationDrawerNs.Model): JQuery = js.native
+  def ejNavigationDrawer(options: typings.ejDotWebDotAll.ej.NavigationDrawer.Model): JQuery = js.native
   def ejNumericTextbox(): JQuery = js.native
   def ejNumericTextbox(memberName: js.Any): js.Any = js.native
   def ejNumericTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejNumericTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejNumericTextbox(options: typings.ejDotWebDotAll.ejNs.EditorNs.Model): JQuery = js.native
+  def ejNumericTextbox(options: typings.ejDotWebDotAll.ej.Editor.Model): JQuery = js.native
   def ejOverview(): JQuery = js.native
   def ejOverview(memberName: js.Any): js.Any = js.native
   def ejOverview(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejOverview(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejOverview(options: typings.ejDotWebDotAll.ejNs.datavisualizationNs.OverviewNs.Model): JQuery = js.native
+  def ejOverview(options: typings.ejDotWebDotAll.ej.datavisualization.Overview.Model): JQuery = js.native
   def ejPager(): JQuery = js.native
   def ejPager(memberName: js.Any): js.Any = js.native
   def ejPager(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPager(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPager(options: typings.ejDotWebDotAll.ejNs.PagerNs.Model): JQuery = js.native
+  def ejPager(options: typings.ejDotWebDotAll.ej.Pager.Model): JQuery = js.native
   def ejPdfViewer(): JQuery = js.native
   def ejPdfViewer(memberName: js.Any): js.Any = js.native
   def ejPdfViewer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPdfViewer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPdfViewer(options: typings.ejDotWebDotAll.ejNs.PdfViewerNs.Model): JQuery = js.native
+  def ejPdfViewer(options: typings.ejDotWebDotAll.ej.PdfViewer.Model): JQuery = js.native
   def ejPercentageTextbox(): JQuery = js.native
   def ejPercentageTextbox(memberName: js.Any): js.Any = js.native
   def ejPercentageTextbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPercentageTextbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPercentageTextbox(options: typings.ejDotWebDotAll.ejNs.EditorNs.Model): JQuery = js.native
+  def ejPercentageTextbox(options: typings.ejDotWebDotAll.ej.Editor.Model): JQuery = js.native
   def ejPivotChart(): JQuery = js.native
   def ejPivotChart(memberName: js.Any): js.Any = js.native
   def ejPivotChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotChart(options: typings.ejDotWebDotAll.ejNs.PivotChartNs.Model): JQuery = js.native
+  def ejPivotChart(options: typings.ejDotWebDotAll.ej.PivotChart.Model): JQuery = js.native
   def ejPivotClient(): JQuery = js.native
   def ejPivotClient(memberName: js.Any): js.Any = js.native
   def ejPivotClient(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotClient(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotClient(options: typings.ejDotWebDotAll.ejNs.PivotClientNs.Model): JQuery = js.native
+  def ejPivotClient(options: typings.ejDotWebDotAll.ej.PivotClient.Model): JQuery = js.native
   def ejPivotGauge(): JQuery = js.native
   def ejPivotGauge(memberName: js.Any): js.Any = js.native
   def ejPivotGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotGauge(options: typings.ejDotWebDotAll.ejNs.PivotGaugeNs.Model): JQuery = js.native
+  def ejPivotGauge(options: typings.ejDotWebDotAll.ej.PivotGauge.Model): JQuery = js.native
   def ejPivotGrid(): JQuery = js.native
   def ejPivotGrid(memberName: js.Any): js.Any = js.native
   def ejPivotGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotGrid(options: typings.ejDotWebDotAll.ejNs.PivotGridNs.Model): JQuery = js.native
+  def ejPivotGrid(options: typings.ejDotWebDotAll.ej.PivotGrid.Model): JQuery = js.native
   def ejPivotPager(): JQuery = js.native
   def ejPivotPager(memberName: js.Any): js.Any = js.native
   def ejPivotPager(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotPager(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotPager(options: typings.ejDotWebDotAll.ejNs.PivotPagerNs.Model): JQuery = js.native
+  def ejPivotPager(options: typings.ejDotWebDotAll.ej.PivotPager.Model): JQuery = js.native
   def ejPivotSchemaDesigner(): JQuery = js.native
   def ejPivotSchemaDesigner(memberName: js.Any): js.Any = js.native
   def ejPivotSchemaDesigner(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotSchemaDesigner(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotSchemaDesigner(options: typings.ejDotWebDotAll.ejNs.PivotSchemaDesignerNs.Model): JQuery = js.native
+  def ejPivotSchemaDesigner(options: typings.ejDotWebDotAll.ej.PivotSchemaDesigner.Model): JQuery = js.native
   def ejPivotTreeMap(): JQuery = js.native
   def ejPivotTreeMap(memberName: js.Any): js.Any = js.native
   def ejPivotTreeMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPivotTreeMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPivotTreeMap(options: typings.ejDotWebDotAll.ejNs.PivotTreeMapNs.Model): JQuery = js.native
+  def ejPivotTreeMap(options: typings.ejDotWebDotAll.ej.PivotTreeMap.Model): JQuery = js.native
   def ejPrint(): JQuery = js.native
   def ejPrint(memberName: js.Any): js.Any = js.native
   def ejPrint(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejPrint(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejPrint(options: typings.ejDotWebDotAll.ejNs.PrintNs.Model): JQuery = js.native
+  def ejPrint(options: typings.ejDotWebDotAll.ej.Print.Model): JQuery = js.native
   def ejProgressBar(): JQuery = js.native
   def ejProgressBar(memberName: js.Any): js.Any = js.native
   def ejProgressBar(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejProgressBar(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejProgressBar(options: typings.ejDotWebDotAll.ejNs.ProgressBarNs.Model): JQuery = js.native
+  def ejProgressBar(options: typings.ejDotWebDotAll.ej.ProgressBar.Model): JQuery = js.native
   def ejRTE(): JQuery = js.native
   def ejRTE(memberName: js.Any): js.Any = js.native
   def ejRTE(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRTE(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRTE(options: typings.ejDotWebDotAll.ejNs.RTENs.Model): JQuery = js.native
+  def ejRTE(options: typings.ejDotWebDotAll.ej.RTE.Model): JQuery = js.native
   def ejRadialMenu(): JQuery = js.native
   def ejRadialMenu(memberName: js.Any): js.Any = js.native
   def ejRadialMenu(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadialMenu(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRadialMenu(options: typings.ejDotWebDotAll.ejNs.RadialMenuNs.Model): JQuery = js.native
+  def ejRadialMenu(options: typings.ejDotWebDotAll.ej.RadialMenu.Model): JQuery = js.native
   def ejRadialSlider(): JQuery = js.native
   def ejRadialSlider(memberName: js.Any): js.Any = js.native
   def ejRadialSlider(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadialSlider(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRadialSlider(options: typings.ejDotWebDotAll.ejNs.RadialSliderNs.Model): JQuery = js.native
+  def ejRadialSlider(options: typings.ejDotWebDotAll.ej.RadialSlider.Model): JQuery = js.native
   def ejRadioButton(): JQuery = js.native
   def ejRadioButton(memberName: js.Any): js.Any = js.native
   def ejRadioButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRadioButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRadioButton(options: typings.ejDotWebDotAll.ejNs.RadioButtonNs.Model): JQuery = js.native
+  def ejRadioButton(options: typings.ejDotWebDotAll.ej.RadioButton.Model): JQuery = js.native
   def ejRangeNavigator(): JQuery = js.native
   def ejRangeNavigator(memberName: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRangeNavigator(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejRangeNavigator(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejRating(): JQuery = js.native
   def ejRating(memberName: js.Any): js.Any = js.native
   def ejRating(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRating(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRating(options: typings.ejDotWebDotAll.ejNs.RatingNs.Model): JQuery = js.native
+  def ejRating(options: typings.ejDotWebDotAll.ej.Rating.Model): JQuery = js.native
   def ejRecurrenceEditor(): JQuery = js.native
   def ejRecurrenceEditor(memberName: js.Any): js.Any = js.native
   def ejRecurrenceEditor(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRecurrenceEditor(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRecurrenceEditor(options: typings.ejDotWebDotAll.ejNs.RecurrenceEditorNs.Model): JQuery = js.native
+  def ejRecurrenceEditor(options: typings.ejDotWebDotAll.ej.RecurrenceEditor.Model): JQuery = js.native
   def ejReportDesigner(): JQuery = js.native
   def ejReportDesigner(memberName: js.Any): js.Any = js.native
   def ejReportDesigner(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejReportDesigner(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejReportDesigner(options: typings.ejDotWebDotAll.ejNs.ReportDesignerNs.Model): JQuery = js.native
+  def ejReportDesigner(options: typings.ejDotWebDotAll.ej.ReportDesigner.Model): JQuery = js.native
   def ejReportViewer(): JQuery = js.native
   def ejReportViewer(memberName: js.Any): js.Any = js.native
   def ejReportViewer(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejReportViewer(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejReportViewer(options: typings.ejDotWebDotAll.ejNs.ReportViewerNs.Model): JQuery = js.native
+  def ejReportViewer(options: typings.ejDotWebDotAll.ej.ReportViewer.Model): JQuery = js.native
   def ejResizable(): JQuery = js.native
   def ejResizable(memberName: js.Any): js.Any = js.native
   def ejResizable(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejResizable(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejResizable(options: typings.ejDotWebDotAll.ejNs.ResizableNs.Model): JQuery = js.native
+  def ejResizable(options: typings.ejDotWebDotAll.ej.Resizable.Model): JQuery = js.native
   def ejRibbon(): JQuery = js.native
   def ejRibbon(memberName: js.Any): js.Any = js.native
   def ejRibbon(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRibbon(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRibbon(options: typings.ejDotWebDotAll.ejNs.RibbonNs.Model): JQuery = js.native
+  def ejRibbon(options: typings.ejDotWebDotAll.ej.Ribbon.Model): JQuery = js.native
   def ejRotator(): JQuery = js.native
   def ejRotator(memberName: js.Any): js.Any = js.native
   def ejRotator(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRotator(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRotator(options: typings.ejDotWebDotAll.ejNs.RotatorNs.Model): JQuery = js.native
+  def ejRotator(options: typings.ejDotWebDotAll.ej.Rotator.Model): JQuery = js.native
   def ejSchedule(): JQuery = js.native
   def ejSchedule(memberName: js.Any): js.Any = js.native
   def ejSchedule(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSchedule(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSchedule(options: typings.ejDotWebDotAll.ejNs.ScheduleNs.Model): JQuery = js.native
+  def ejSchedule(options: typings.ejDotWebDotAll.ej.Schedule.Model): JQuery = js.native
   def ejScroller(): JQuery = js.native
   def ejScroller(memberName: js.Any): js.Any = js.native
   def ejScroller(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejScroller(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejScroller(options: typings.ejDotWebDotAll.ejNs.ScrollerNs.Model): JQuery = js.native
+  def ejScroller(options: typings.ejDotWebDotAll.ej.Scroller.Model): JQuery = js.native
   def ejSignature(): JQuery = js.native
   def ejSignature(memberName: js.Any): js.Any = js.native
   def ejSignature(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSignature(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSignature(options: typings.ejDotWebDotAll.ejNs.SignatureNs.Model): JQuery = js.native
+  def ejSignature(options: typings.ejDotWebDotAll.ej.Signature.Model): JQuery = js.native
   def ejSlider(): JQuery = js.native
   def ejSlider(memberName: js.Any): js.Any = js.native
   def ejSlider(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSlider(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSlider(options: typings.ejDotWebDotAll.ejNs.SliderNs.Model): JQuery = js.native
+  def ejSlider(options: typings.ejDotWebDotAll.ej.Slider.Model): JQuery = js.native
   def ejSparkline(): JQuery = js.native
   def ejSparkline(memberName: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSparkline(options: typings.ejDotWebDotAll.ejNs.SparklineNs.Model): JQuery = js.native
+  def ejSparkline(options: typings.ejDotWebDotAll.ej.Sparkline.Model): JQuery = js.native
   def ejSpellCheck(): JQuery = js.native
   def ejSpellCheck(memberName: js.Any): js.Any = js.native
   def ejSpellCheck(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSpellCheck(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSpellCheck(options: typings.ejDotWebDotAll.ejNs.SpellCheckNs.Model): JQuery = js.native
+  def ejSpellCheck(options: typings.ejDotWebDotAll.ej.SpellCheck.Model): JQuery = js.native
   def ejSplitButton(): JQuery = js.native
   def ejSplitButton(memberName: js.Any): js.Any = js.native
   def ejSplitButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSplitButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSplitButton(options: typings.ejDotWebDotAll.ejNs.SplitButtonNs.Model): JQuery = js.native
+  def ejSplitButton(options: typings.ejDotWebDotAll.ej.SplitButton.Model): JQuery = js.native
   def ejSplitter(): JQuery = js.native
   def ejSplitter(memberName: js.Any): js.Any = js.native
   def ejSplitter(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSplitter(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSplitter(options: typings.ejDotWebDotAll.ejNs.SplitterNs.Model): JQuery = js.native
+  def ejSplitter(options: typings.ejDotWebDotAll.ej.Splitter.Model): JQuery = js.native
   def ejSpreadsheet(): JQuery = js.native
   def ejSpreadsheet(memberName: js.Any): js.Any = js.native
   def ejSpreadsheet(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSpreadsheet(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSpreadsheet(options: typings.ejDotWebDotAll.ejNs.SpreadsheetNs.Model): JQuery = js.native
+  def ejSpreadsheet(options: typings.ejDotWebDotAll.ej.Spreadsheet.Model): JQuery = js.native
   def ejSunburstChart(): JQuery = js.native
   def ejSunburstChart(memberName: js.Any): js.Any = js.native
   def ejSunburstChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSunburstChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSunburstChart(options: typings.ejDotWebDotAll.ejNs.datavisualizationNs.SunburstChartNs.Model): JQuery = js.native
+  def ejSunburstChart(options: typings.ejDotWebDotAll.ej.datavisualization.SunburstChart.Model): JQuery = js.native
   def ejSymbolPalette(): JQuery = js.native
   def ejSymbolPalette(memberName: js.Any): js.Any = js.native
   def ejSymbolPalette(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSymbolPalette(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSymbolPalette(options: typings.ejDotWebDotAll.ejNs.datavisualizationNs.SymbolPaletteNs.Model): JQuery = js.native
+  def ejSymbolPalette(options: typings.ejDotWebDotAll.ej.datavisualization.SymbolPalette.Model): JQuery = js.native
   def ejTab(): JQuery = js.native
   def ejTab(memberName: js.Any): js.Any = js.native
   def ejTab(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTab(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTab(options: typings.ejDotWebDotAll.ejNs.TabNs.Model): JQuery = js.native
+  def ejTab(options: typings.ejDotWebDotAll.ej.Tab.Model): JQuery = js.native
   def ejTagCloud(): JQuery = js.native
   def ejTagCloud(memberName: js.Any): js.Any = js.native
   def ejTagCloud(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTagCloud(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTagCloud(options: typings.ejDotWebDotAll.ejNs.TagCloudNs.Model): JQuery = js.native
+  def ejTagCloud(options: typings.ejDotWebDotAll.ej.TagCloud.Model): JQuery = js.native
   def ejTile(): JQuery = js.native
   def ejTile(memberName: js.Any): js.Any = js.native
   def ejTile(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTile(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTile(options: typings.ejDotWebDotAll.ejNs.TileNs.Model): JQuery = js.native
+  def ejTile(options: typings.ejDotWebDotAll.ej.Tile.Model): JQuery = js.native
   def ejTimePicker(): JQuery = js.native
   def ejTimePicker(memberName: js.Any): js.Any = js.native
   def ejTimePicker(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTimePicker(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTimePicker(options: typings.ejDotWebDotAll.ejNs.TimePickerNs.Model): JQuery = js.native
+  def ejTimePicker(options: typings.ejDotWebDotAll.ej.TimePicker.Model): JQuery = js.native
   def ejToggleButton(): JQuery = js.native
   def ejToggleButton(memberName: js.Any): js.Any = js.native
   def ejToggleButton(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejToggleButton(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejToggleButton(options: typings.ejDotWebDotAll.ejNs.ToggleButtonNs.Model): JQuery = js.native
+  def ejToggleButton(options: typings.ejDotWebDotAll.ej.ToggleButton.Model): JQuery = js.native
   def ejToolbar(): JQuery = js.native
   def ejToolbar(memberName: js.Any): js.Any = js.native
   def ejToolbar(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejToolbar(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejToolbar(options: typings.ejDotWebDotAll.ejNs.ToolbarNs.Model): JQuery = js.native
+  def ejToolbar(options: typings.ejDotWebDotAll.ej.Toolbar.Model): JQuery = js.native
   def ejTooltip(): JQuery = js.native
   def ejTooltip(memberName: js.Any): js.Any = js.native
   def ejTooltip(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTooltip(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTooltip(options: typings.ejDotWebDotAll.ejNs.TooltipNs.Model): JQuery = js.native
+  def ejTooltip(options: typings.ejDotWebDotAll.ej.Tooltip.Model): JQuery = js.native
   def ejTreeGrid(): JQuery = js.native
   def ejTreeGrid(memberName: js.Any): js.Any = js.native
   def ejTreeGrid(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeGrid(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTreeGrid(options: typings.ejDotWebDotAll.ejNs.TreeGridNs.Model): JQuery = js.native
+  def ejTreeGrid(options: typings.ejDotWebDotAll.ej.TreeGrid.Model): JQuery = js.native
   def ejTreeMap(): JQuery = js.native
   def ejTreeMap(memberName: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTreeMap(options: typings.ejDotWebDotAll.ejNs.Model): JQuery = js.native
+  def ejTreeMap(options: typings.ejDotWebDotAll.ej.Model): JQuery = js.native
   def ejTreeView(): JQuery = js.native
   def ejTreeView(memberName: js.Any): js.Any = js.native
   def ejTreeView(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeView(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTreeView(options: typings.ejDotWebDotAll.ejNs.TreeViewNs.Model): JQuery = js.native
+  def ejTreeView(options: typings.ejDotWebDotAll.ej.TreeView.Model): JQuery = js.native
   def ejUploadbox(): JQuery = js.native
   def ejUploadbox(memberName: js.Any): js.Any = js.native
   def ejUploadbox(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejUploadbox(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejUploadbox(options: typings.ejDotWebDotAll.ejNs.UploadboxNs.Model): JQuery = js.native
+  def ejUploadbox(options: typings.ejDotWebDotAll.ej.Uploadbox.Model): JQuery = js.native
   def ejWaitingPopup(): JQuery = js.native
   def ejWaitingPopup(memberName: js.Any): js.Any = js.native
   def ejWaitingPopup(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejWaitingPopup(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejWaitingPopup(options: typings.ejDotWebDotAll.ejNs.WaitingPopupNs.Model): JQuery = js.native
+  def ejWaitingPopup(options: typings.ejDotWebDotAll.ej.WaitingPopup.Model): JQuery = js.native
 }
 

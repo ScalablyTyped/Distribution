@@ -48,23 +48,23 @@ object AuthorizeSecurityGroupEgressRequest {
   def apply(
     GroupId: String,
     CidrIp: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    FromPort: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    FromPort: Int | scala.Double = null,
     IpPermissions: IpPermissionList = null,
     IpProtocol: String = null,
     SourceSecurityGroupName: String = null,
     SourceSecurityGroupOwnerId: String = null,
-    ToPort: js.UndefOr[Integer] = js.undefined
+    ToPort: Int | scala.Double = null
   ): AuthorizeSecurityGroupEgressRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId)
     if (CidrIp != null) __obj.updateDynamic("CidrIp")(CidrIp)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort)
+    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
     if (IpPermissions != null) __obj.updateDynamic("IpPermissions")(IpPermissions)
     if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol)
     if (SourceSecurityGroupName != null) __obj.updateDynamic("SourceSecurityGroupName")(SourceSecurityGroupName)
     if (SourceSecurityGroupOwnerId != null) __obj.updateDynamic("SourceSecurityGroupOwnerId")(SourceSecurityGroupOwnerId)
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort)
+    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeSecurityGroupEgressRequest]
   }
 }

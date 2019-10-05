@@ -1,6 +1,6 @@
 package typings.breeze
 
-import typings.breeze.breezeNs.MergeStrategySymbol
+import typings.breeze.breeze.MergeStrategySymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

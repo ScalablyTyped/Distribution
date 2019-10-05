@@ -1,7 +1,7 @@
 package typings.cesium
 
 import typings.cesium.cesiumMod.Material
-import typings.cesium.cesiumMod.MaterialAppearanceNs.MaterialSupport
+import typings.cesium.cesiumMod.MaterialAppearance.MaterialSupport
 import typings.cesium.cesiumMod.RenderState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

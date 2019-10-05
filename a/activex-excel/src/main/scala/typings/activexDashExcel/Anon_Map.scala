@@ -1,8 +1,8 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.Workbook
-import typings.activexDashExcel.ExcelNs.XlXmlExportResult
-import typings.activexDashExcel.ExcelNs.XmlMap
+import typings.activexDashExcel.Excel.Workbook
+import typings.activexDashExcel.Excel.XlXmlExportResult
+import typings.activexDashExcel.Excel.XmlMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

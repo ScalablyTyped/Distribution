@@ -97,11 +97,11 @@ object Input {
     DenoiseFilter: InputDenoiseFilter = null,
     FileInput: __stringPatternHttpHttpsS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = null,
     FilterEnable: InputFilterEnable = null,
-    FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined,
+    FilterStrength: Int | Double = null,
     ImageInserter: ImageInserter = null,
     InputClippings: __listOfInputClipping = null,
     Position: Rectangle = null,
-    ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    ProgramNumber: Int | Double = null,
     PsiControl: InputPsiControl = null,
     SupplementalImps: __listOf__stringPatternS3ASSETMAPXml = null,
     TimecodeSource: InputTimecodeSource = null,
@@ -118,11 +118,11 @@ object Input {
     if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
     if (FileInput != null) __obj.updateDynamic("FileInput")(FileInput)
     if (FilterEnable != null) __obj.updateDynamic("FilterEnable")(FilterEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength)
+    if (FilterStrength != null) __obj.updateDynamic("FilterStrength")(FilterStrength.asInstanceOf[js.Any])
     if (ImageInserter != null) __obj.updateDynamic("ImageInserter")(ImageInserter)
     if (InputClippings != null) __obj.updateDynamic("InputClippings")(InputClippings)
     if (Position != null) __obj.updateDynamic("Position")(Position)
-    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber)
+    if (ProgramNumber != null) __obj.updateDynamic("ProgramNumber")(ProgramNumber.asInstanceOf[js.Any])
     if (PsiControl != null) __obj.updateDynamic("PsiControl")(PsiControl.asInstanceOf[js.Any])
     if (SupplementalImps != null) __obj.updateDynamic("SupplementalImps")(SupplementalImps)
     if (TimecodeSource != null) __obj.updateDynamic("TimecodeSource")(TimecodeSource.asInstanceOf[js.Any])

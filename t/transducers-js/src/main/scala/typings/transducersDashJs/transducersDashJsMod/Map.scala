@@ -16,3 +16,9 @@ class Map[TResult, TInput, TOutput] protected () extends Transformer[TResult, TI
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "map")
+@js.native
+object map extends js.Object {
+  def apply[TInput, TOutput](f: js.Function1[/* x */ TInput, TOutput]): Transducer[TInput, TOutput] = js.native
+}
+

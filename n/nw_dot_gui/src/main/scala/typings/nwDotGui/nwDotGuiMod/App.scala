@@ -1,5 +1,6 @@
 package typings.nwDotGui.nwDotGuiMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,4 +33,8 @@ trait App extends EventEmitter {
   def setCrashDumpDir(dir: String): Unit = js.native
   def unregisterGlobalHotKey(shortcut: Shortcut): Unit = js.native
 }
+
+@JSImport("nw.gui", "App")
+@js.native
+object App extends TopLevel[App]
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDashTagcloudProps {
   @scala.inline
-  def TagCloudProps: typings.reactDashTagcloud.ReactTagCloudNs.TagCloudProps.type = typings.reactDashTagcloud.ReactTagCloudNs.TagCloudProps
-  type TagCloudProps = typings.reactDashTagcloud.ReactTagCloudNs.TagCloudProps
+  def TagCloudProps: typings.reactDashTagcloud.ReactTagCloud.TagCloudProps.type = typings.reactDashTagcloud.ReactTagCloud.TagCloudProps
+  type TagCloudProps = typings.reactDashTagcloud.ReactTagCloud.TagCloudProps
 }
 

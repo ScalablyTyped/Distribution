@@ -9,7 +9,7 @@ package object atEmotionStyledDashBaseMod {
   import typings.atEmotionStyledDashBase.Anon_ThemeT
   import typings.atEmotionStyledDashBase.typesHelperMod.PropsOf
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.IntrinsicElements
+  import typings.react.reactMod.Global.JSX.IntrinsicElements
 
   type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[_] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   type CreateStyledComponentIntrinsic[Tag /* <: String */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[

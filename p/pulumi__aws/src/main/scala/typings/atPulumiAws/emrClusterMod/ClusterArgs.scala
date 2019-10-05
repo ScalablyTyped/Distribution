@@ -1,13 +1,13 @@
 package typings.atPulumiAws.emrClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterBootstrapAction
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterCoreInstanceGroup
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterEc2Attributes
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterInstanceGroup
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterKerberosAttributes
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterMasterInstanceGroup
-import typings.atPulumiAws.typesInputMod.emrNs.ClusterStep
+import typings.atPulumiAws.typesInputMod.emr.ClusterBootstrapAction
+import typings.atPulumiAws.typesInputMod.emr.ClusterCoreInstanceGroup
+import typings.atPulumiAws.typesInputMod.emr.ClusterEc2Attributes
+import typings.atPulumiAws.typesInputMod.emr.ClusterInstanceGroup
+import typings.atPulumiAws.typesInputMod.emr.ClusterKerberosAttributes
+import typings.atPulumiAws.typesInputMod.emr.ClusterMasterInstanceGroup
+import typings.atPulumiAws.typesInputMod.emr.ClusterStep
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

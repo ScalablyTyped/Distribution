@@ -12,9 +12,5 @@ trait SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
 
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
-class SpeechSynthesisErrorEventCls () extends SpeechSynthesisErrorEvent
-
-@JSGlobal("SpeechSynthesisErrorEvent")
-@js.native
 object SpeechSynthesisErrorEvent extends Instantiable0[SpeechSynthesisErrorEvent]
 

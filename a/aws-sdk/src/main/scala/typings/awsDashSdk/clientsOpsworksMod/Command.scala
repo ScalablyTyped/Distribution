@@ -55,7 +55,7 @@ object Command {
     CompletedAt: DateTime = null,
     CreatedAt: DateTime = null,
     DeploymentId: String = null,
-    ExitCode: js.UndefOr[Integer] = js.undefined,
+    ExitCode: Int | scala.Double = null,
     InstanceId: String = null,
     LogUrl: String = null,
     Status: String = null,
@@ -67,7 +67,7 @@ object Command {
     if (CompletedAt != null) __obj.updateDynamic("CompletedAt")(CompletedAt)
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId)
-    if (!js.isUndefined(ExitCode)) __obj.updateDynamic("ExitCode")(ExitCode)
+    if (ExitCode != null) __obj.updateDynamic("ExitCode")(ExitCode.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
     if (LogUrl != null) __obj.updateDynamic("LogUrl")(LogUrl)
     if (Status != null) __obj.updateDynamic("Status")(Status)

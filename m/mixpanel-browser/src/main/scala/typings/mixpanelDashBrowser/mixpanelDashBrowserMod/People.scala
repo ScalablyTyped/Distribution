@@ -1,5 +1,6 @@
 package typings.mixpanelDashBrowser.mixpanelDashBrowserMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,4 +48,8 @@ trait People extends js.Object {
   def unset(prop: js.Array[String]): Unit = js.native
   def unset(prop: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
 }
+
+@JSImport("mixpanel-browser", "people")
+@js.native
+object people extends TopLevel[People]
 

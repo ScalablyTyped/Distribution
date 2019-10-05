@@ -84,7 +84,7 @@ object ADMMessage {
     ImageUrl: __string = null,
     MD5: __string = null,
     RawContent: __string = null,
-    SilentPush: js.UndefOr[__boolean] = js.undefined,
+    SilentPush: js.UndefOr[Boolean] = js.undefined,
     SmallImageIconUrl: __string = null,
     Sound: __string = null,
     Substitutions: MapOfListOf__string = null,

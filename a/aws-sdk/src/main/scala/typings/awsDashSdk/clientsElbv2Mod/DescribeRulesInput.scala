@@ -28,13 +28,13 @@ object DescribeRulesInput {
   def apply(
     ListenerArn: ListenerArn = null,
     Marker: Marker = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
+    PageSize: Int | Double = null,
     RuleArns: RuleArns = null
   ): DescribeRulesInput = {
     val __obj = js.Dynamic.literal()
     if (ListenerArn != null) __obj.updateDynamic("ListenerArn")(ListenerArn)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (RuleArns != null) __obj.updateDynamic("RuleArns")(RuleArns)
     __obj.asInstanceOf[DescribeRulesInput]
   }

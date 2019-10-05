@@ -1,7 +1,7 @@
 package typings.sipml
 
-import typings.sipml.SIPmlNs.StackNs.Event
-import typings.sipml.SIPmlNs.StackNs.EventSubscriptionType
+import typings.sipml.SIPml.Stack.Event
+import typings.sipml.SIPml.Stack.EventSubscriptionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

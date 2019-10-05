@@ -64,7 +64,7 @@ object DescribedServer {
     ServerId: ServerId = null,
     State: State = null,
     Tags: Tags = null,
-    UserCount: js.UndefOr[UserCount] = js.undefined
+    UserCount: Int | Double = null
   ): DescribedServer = {
     val __obj = js.Dynamic.literal(Arn = Arn)
     if (EndpointDetails != null) __obj.updateDynamic("EndpointDetails")(EndpointDetails)
@@ -76,7 +76,7 @@ object DescribedServer {
     if (ServerId != null) __obj.updateDynamic("ServerId")(ServerId)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(UserCount)) __obj.updateDynamic("UserCount")(UserCount)
+    if (UserCount != null) __obj.updateDynamic("UserCount")(UserCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribedServer]
   }
 }

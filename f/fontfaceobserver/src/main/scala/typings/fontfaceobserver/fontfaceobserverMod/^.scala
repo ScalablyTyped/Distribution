@@ -1,7 +1,7 @@
 package typings.fontfaceobserver.fontfaceobserverMod
 
 import typings.fontfaceobserver.FontFaceObserver
-import typings.fontfaceobserver.FontFaceObserverNs.FontVariant
+import typings.fontfaceobserver.FontFaceObserver.FontVariant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

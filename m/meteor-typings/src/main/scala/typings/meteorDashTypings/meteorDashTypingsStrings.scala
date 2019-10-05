@@ -1,6 +1,6 @@
 package typings.meteorDashTypings
 
-import typings.meteorDashTypings.DDPNs.Status
+import typings.meteorDashTypings.meteorDdpMod.DDP.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,27 +9,27 @@ object meteorDashTypingsStrings {
   @js.native
   sealed trait connected
     extends Status
-       with typings.meteorDashTypings.meteorDdpMod.DDPNs.Status
+       with typings.meteorDashTypings.DDP.Status
   
   @js.native
   sealed trait connecting
     extends Status
-       with typings.meteorDashTypings.meteorDdpMod.DDPNs.Status
+       with typings.meteorDashTypings.DDP.Status
   
   @js.native
   sealed trait failed
     extends Status
-       with typings.meteorDashTypings.meteorDdpMod.DDPNs.Status
+       with typings.meteorDashTypings.DDP.Status
   
   @js.native
   sealed trait offline
     extends Status
-       with typings.meteorDashTypings.meteorDdpMod.DDPNs.Status
+       with typings.meteorDashTypings.DDP.Status
   
   @js.native
   sealed trait waiting
     extends Status
-       with typings.meteorDashTypings.meteorDdpMod.DDPNs.Status
+       with typings.meteorDashTypings.DDP.Status
   
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]

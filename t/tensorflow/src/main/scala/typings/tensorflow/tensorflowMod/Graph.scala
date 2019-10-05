@@ -1,5 +1,6 @@
 package typings.tensorflow.tensorflowMod
 
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,5 +17,13 @@ object Graph {
   
     __obj.asInstanceOf[Graph]
   }
+}
+
+@JSImport("tensorflow", "graph")
+@js.native
+object graph extends js.Object {
+  def apply(graphDef: String): Graph = js.native
+  def apply(graphDef: js.Object): Graph = js.native
+  def apply(graphDef: Buffer): Graph = js.native
 }
 

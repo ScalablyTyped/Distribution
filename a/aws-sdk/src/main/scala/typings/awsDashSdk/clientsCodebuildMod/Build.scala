@@ -116,7 +116,7 @@ object Build {
   def apply(
     arn: NonEmptyString = null,
     artifacts: BuildArtifacts = null,
-    buildComplete: js.UndefOr[Boolean] = js.undefined,
+    buildComplete: js.UndefOr[scala.Boolean] = js.undefined,
     buildStatus: StatusType = null,
     cache: ProjectCache = null,
     currentPhase: String = null,
@@ -129,7 +129,7 @@ object Build {
     networkInterface: NetworkInterface = null,
     phases: BuildPhases = null,
     projectName: NonEmptyString = null,
-    queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
+    queuedTimeoutInMinutes: Int | Double = null,
     resolvedSourceVersion: NonEmptyString = null,
     secondaryArtifacts: BuildArtifactsList = null,
     secondarySourceVersions: ProjectSecondarySourceVersions = null,
@@ -138,7 +138,7 @@ object Build {
     source: ProjectSource = null,
     sourceVersion: NonEmptyString = null,
     startTime: Timestamp = null,
-    timeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
+    timeoutInMinutes: Int | Double = null,
     vpcConfig: VpcConfig = null
   ): Build = {
     val __obj = js.Dynamic.literal()
@@ -157,7 +157,7 @@ object Build {
     if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface)
     if (phases != null) __obj.updateDynamic("phases")(phases)
     if (projectName != null) __obj.updateDynamic("projectName")(projectName)
-    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes)
+    if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
     if (resolvedSourceVersion != null) __obj.updateDynamic("resolvedSourceVersion")(resolvedSourceVersion)
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts)
     if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions)
@@ -166,7 +166,7 @@ object Build {
     if (source != null) __obj.updateDynamic("source")(source)
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig)
     __obj.asInstanceOf[Build]
   }

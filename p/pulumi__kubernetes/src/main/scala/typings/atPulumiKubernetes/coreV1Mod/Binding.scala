@@ -19,10 +19,10 @@ class Binding protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Binding) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.Binding) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.Binding,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.Binding,
     opts: CustomResourceOptions
   ) = this()
 }

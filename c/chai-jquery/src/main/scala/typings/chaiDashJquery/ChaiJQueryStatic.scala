@@ -141,8 +141,8 @@ trait ChaiJQueryStatic extends js.Object {
   jQuery( "body" ).trigger( e );
   ```
     */
-  def Event[T /* <: js.Object */](event: String): typings.jquery.JQueryNs.Event with T = js.native
-  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQueryNs.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event with T = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     *

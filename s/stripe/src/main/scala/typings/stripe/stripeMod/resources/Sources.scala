@@ -1,0 +1,62 @@
+package typings.stripe.stripeMod.resources
+
+import typings.stripe.stripeMod.HeaderOptions
+import typings.stripe.stripeMod.IResponseFn
+import typings.stripe.stripeMod.StripeResource
+import typings.stripe.stripeMod.sources.ISourceCreationOptions
+import typings.stripe.stripeMod.sources.ISourceRetrieveOptions
+import typings.stripe.stripeMod.sources.ISourceUpdateOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("stripe", "resources.Sources")
+@js.native
+class Sources () extends StripeResource {
+  def create(data: ISourceCreationOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  /** Create Source: https://stripe.com/docs/api/sources/create */
+  def create(data: ISourceCreationOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def create(
+    data: ISourceCreationOptions,
+    options: HeaderOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def create(data: ISourceCreationOptions, response: IResponseFn[typings.stripe.stripeMod.sources.ISource]): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(id: String): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(id: String, data: js.UndefOr[scala.Nothing], options: HeaderOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(
+    id: String,
+    data: js.UndefOr[scala.Nothing],
+    options: HeaderOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(id: String, data: ISourceRetrieveOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  /** Retrieve Source: https://stripe.com/docs/api/sources/retrieve */
+  def retrieve(id: String, data: ISourceRetrieveOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(
+    id: String,
+    data: ISourceRetrieveOptions,
+    options: HeaderOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def retrieve(
+    id: String,
+    data: ISourceRetrieveOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def update(id: String, data: ISourceUpdateOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  /** Update Source: https://stripe.com/docs/api/sources/update */
+  def update(id: String, data: ISourceUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def update(
+    id: String,
+    data: ISourceUpdateOptions,
+    options: HeaderOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def update(
+    id: String,
+    data: ISourceUpdateOptions,
+    response: IResponseFn[typings.stripe.stripeMod.sources.ISource]
+  ): js.Promise[typings.stripe.stripeMod.sources.ISource] = js.native
+}
+

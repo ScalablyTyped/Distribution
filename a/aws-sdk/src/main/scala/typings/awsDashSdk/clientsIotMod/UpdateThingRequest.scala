@@ -32,13 +32,13 @@ object UpdateThingRequest {
   def apply(
     thingName: ThingName,
     attributePayload: AttributePayload = null,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined,
-    removeThingType: js.UndefOr[RemoveThingType] = js.undefined,
+    expectedVersion: Int | Double = null,
+    removeThingType: js.UndefOr[scala.Boolean] = js.undefined,
     thingTypeName: ThingTypeName = null
   ): UpdateThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName)
     if (attributePayload != null) __obj.updateDynamic("attributePayload")(attributePayload)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(removeThingType)) __obj.updateDynamic("removeThingType")(removeThingType)
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName)
     __obj.asInstanceOf[UpdateThingRequest]

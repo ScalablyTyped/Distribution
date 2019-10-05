@@ -36,3 +36,9 @@ object Writer extends js.Object {
   def writer[S, T](story: js.Array[S], value: T): Writer[S, T] = js.native
 }
 
+@JSImport("tsmonad/lib/src/writer", "writer")
+@js.native
+object writer extends js.Object {
+  def apply[S, T](story: js.Array[S], value: T): Writer[S, T] = js.native
+}
+

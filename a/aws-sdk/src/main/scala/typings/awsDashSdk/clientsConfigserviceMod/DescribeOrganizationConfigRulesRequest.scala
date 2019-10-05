@@ -22,12 +22,12 @@ trait DescribeOrganizationConfigRulesRequest extends js.Object {
 object DescribeOrganizationConfigRulesRequest {
   @scala.inline
   def apply(
-    Limit: js.UndefOr[CosmosPageLimit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: String = null,
     OrganizationConfigRuleNames: OrganizationConfigRuleNames = null
   ): DescribeOrganizationConfigRulesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (OrganizationConfigRuleNames != null) __obj.updateDynamic("OrganizationConfigRuleNames")(OrganizationConfigRuleNames)
     __obj.asInstanceOf[DescribeOrganizationConfigRulesRequest]

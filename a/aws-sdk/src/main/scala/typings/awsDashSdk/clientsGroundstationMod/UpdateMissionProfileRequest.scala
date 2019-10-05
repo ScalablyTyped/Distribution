@@ -40,18 +40,18 @@ object UpdateMissionProfileRequest {
   @scala.inline
   def apply(
     missionProfileId: String,
-    contactPostPassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
-    contactPrePassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
+    contactPostPassDurationSeconds: Int | scala.Double = null,
+    contactPrePassDurationSeconds: Int | scala.Double = null,
     dataflowEdges: DataflowEdgeList = null,
-    minimumViableContactDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
+    minimumViableContactDurationSeconds: Int | scala.Double = null,
     name: SafeName = null,
     trackingConfigArn: ConfigArn = null
   ): UpdateMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId)
-    if (!js.isUndefined(contactPostPassDurationSeconds)) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds)
-    if (!js.isUndefined(contactPrePassDurationSeconds)) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds)
+    if (contactPostPassDurationSeconds != null) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds.asInstanceOf[js.Any])
+    if (contactPrePassDurationSeconds != null) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds.asInstanceOf[js.Any])
     if (dataflowEdges != null) __obj.updateDynamic("dataflowEdges")(dataflowEdges)
-    if (!js.isUndefined(minimumViableContactDurationSeconds)) __obj.updateDynamic("minimumViableContactDurationSeconds")(minimumViableContactDurationSeconds)
+    if (minimumViableContactDurationSeconds != null) __obj.updateDynamic("minimumViableContactDurationSeconds")(minimumViableContactDurationSeconds.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (trackingConfigArn != null) __obj.updateDynamic("trackingConfigArn")(trackingConfigArn)
     __obj.asInstanceOf[UpdateMissionProfileRequest]

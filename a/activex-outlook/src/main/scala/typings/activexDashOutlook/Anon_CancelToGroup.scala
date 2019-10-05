@@ -1,6 +1,6 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.OutlookBarGroup
+import typings.activexDashOutlook.Outlook.OutlookBarGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSmartMappingSizeSliderSizeSliderViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeSliderViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeSliderViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.SizeSliderViewModel
+import typings.arcgisDashJsDashApi.__esri.SizeSliderViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

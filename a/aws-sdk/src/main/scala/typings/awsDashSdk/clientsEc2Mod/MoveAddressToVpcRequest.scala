@@ -17,7 +17,7 @@ trait MoveAddressToVpcRequest extends js.Object {
 
 object MoveAddressToVpcRequest {
   @scala.inline
-  def apply(PublicIp: String, DryRun: js.UndefOr[Boolean] = js.undefined): MoveAddressToVpcRequest = {
+  def apply(PublicIp: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): MoveAddressToVpcRequest = {
     val __obj = js.Dynamic.literal(PublicIp = PublicIp)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[MoveAddressToVpcRequest]

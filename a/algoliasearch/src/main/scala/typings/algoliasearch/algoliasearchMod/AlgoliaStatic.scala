@@ -1,6 +1,6 @@
 package typings.algoliasearch.algoliasearchMod
 
-import typings.algoliasearch.algoliasearchMod.PlacesNs.PlaceInterface
+import typings.algoliasearch.algoliasearchMod.Places.PlaceInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

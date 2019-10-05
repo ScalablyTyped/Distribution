@@ -3,8 +3,8 @@ package typings.pouchdbDashCore
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.pouchdbDashCore.PouchDBNs.ConfigurationNs.DatabaseConfiguration
-import typings.pouchdbDashCore.PouchDBNs.Database
+import typings.pouchdbDashCore.PouchDB.Configuration.DatabaseConfiguration
+import typings.pouchdbDashCore.PouchDB.Database
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

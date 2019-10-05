@@ -1,6 +1,6 @@
 package typings.azureDashSb
 
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.DateString
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.DateString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

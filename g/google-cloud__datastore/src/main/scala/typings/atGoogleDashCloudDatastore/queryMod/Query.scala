@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudDatastore.queryMod
 
 import typings.atGoogleDashCloudDatastore.entityMod.DatastoreKey
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

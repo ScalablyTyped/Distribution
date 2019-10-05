@@ -1,11 +1,11 @@
 package typings.webdriver
 
-import typings.webdriver.WebDriverNs.FirefoxLogLevels
-import typings.webdriver.WebDriverNs.LoggingPreferenceType
-import typings.webdriver.WebDriverNs.PageLoadingStrategy
-import typings.webdriver.WebDriverNs.ProxyTypes
-import typings.webdriver.WebDriverNs.Timeouts
-import typings.webdriver.WebDriverNs.WebDriverLogTypes
+import typings.webdriver.WebDriver.FirefoxLogLevels
+import typings.webdriver.WebDriver.LoggingPreferenceType
+import typings.webdriver.WebDriver.PageLoadingStrategy
+import typings.webdriver.WebDriver.ProxyTypes
+import typings.webdriver.WebDriver.Timeouts
+import typings.webdriver.WebDriver.WebDriverLogTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

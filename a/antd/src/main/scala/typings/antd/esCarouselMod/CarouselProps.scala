@@ -1,7 +1,7 @@
 package typings.antd.esCarouselMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.reactDashSlick.reactDashSlickMod.LazyLoadTypes
 import typings.reactDashSlick.reactDashSlickMod.ResponsiveObject

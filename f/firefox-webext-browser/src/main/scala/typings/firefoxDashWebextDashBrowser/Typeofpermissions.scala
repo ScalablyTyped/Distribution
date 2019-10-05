@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.permissionsNs.AnyPermissions
-import typings.firefoxDashWebextDashBrowser.browserNs.permissionsNs.Permissions
+import typings.firefoxDashWebextDashBrowser.browser.permissions.AnyPermissions
+import typings.firefoxDashWebextDashBrowser.browser.permissions.Permissions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

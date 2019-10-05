@@ -1,5 +1,6 @@
 package typings.momentDashStrftime2.momentDashStrftime2Mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -141,4 +142,8 @@ object Modifiers {
     __obj.asInstanceOf[Modifiers]
   }
 }
+
+@JSImport("moment-strftime2", "modifiers")
+@js.native
+object modifiers extends TopLevel[Modifiers]
 

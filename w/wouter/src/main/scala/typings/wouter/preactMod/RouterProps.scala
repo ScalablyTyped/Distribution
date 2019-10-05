@@ -11,8 +11,8 @@ trait RouterProps extends js.Object {
 
 object RouterProps {
   @scala.inline
-  def apply(hook: () => LocationTuple, matcher: MatcherFn): RouterProps = {
-    val __obj = js.Dynamic.literal(hook = js.Any.fromFunction0(hook), matcher = matcher)
+  def apply(hook: () => LocationTuple, matcher: (/* pattern */ String, /* path */ Path) => Match): RouterProps = {
+    val __obj = js.Dynamic.literal(hook = js.Any.fromFunction0(hook), matcher = js.Any.fromFunction2(matcher))
   
     __obj.asInstanceOf[RouterProps]
   }

@@ -1,6 +1,6 @@
 package typings.pubsubDashJs
 
-import typings.pubsubDashJs.PubSubJSNs.Base
+import typings.pubsubDashJs.PubSubJS.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

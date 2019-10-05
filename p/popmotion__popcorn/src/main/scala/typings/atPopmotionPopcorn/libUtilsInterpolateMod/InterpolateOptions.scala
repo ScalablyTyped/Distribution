@@ -12,11 +12,11 @@ trait InterpolateOptions[T] extends js.Object {
 
 object InterpolateOptions {
   @scala.inline
-  def apply[T](clamp: js.UndefOr[Boolean] = js.undefined, ease: MixEasing = null, mixer: MixerFactory[T] = null): InterpolateOptions[T] = {
+  def apply[T](clamp: js.UndefOr[Boolean] = js.undefined, ease: MixEasing = null, mixer: (T, T) => Mix[T] = null): InterpolateOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clamp)) __obj.updateDynamic("clamp")(clamp)
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (mixer != null) __obj.updateDynamic("mixer")(mixer)
+    if (mixer != null) __obj.updateDynamic("mixer")(js.Any.fromFunction2(mixer))
     __obj.asInstanceOf[InterpolateOptions[T]]
   }
 }

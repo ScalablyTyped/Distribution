@@ -920,3 +920,10 @@ trait KPainter extends js.Object {
   def updateUIOnResize(isLazy: Boolean, callback: js.Function0[Unit]): Unit = js.native
 }
 
+@JSGlobal("KPainter")
+@js.native
+object KPainter extends js.Object {
+  def apply(): Unit = js.native
+  def apply(mbcKey: String): Unit = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.angularDashMeteor
 
-import typings.angularDashMeteor.angularMod.meteorNs.IScope
+import typings.angularDashMeteor.angularMod.meteor.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

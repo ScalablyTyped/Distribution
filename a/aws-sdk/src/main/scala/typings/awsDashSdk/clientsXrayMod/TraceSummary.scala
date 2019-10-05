@@ -92,29 +92,29 @@ object TraceSummary {
   def apply(
     Annotations: Annotations = null,
     AvailabilityZones: TraceAvailabilityZones = null,
-    Duration: js.UndefOr[NullableDouble] = js.undefined,
+    Duration: Int | scala.Double = null,
     EntryPoint: ServiceId = null,
     ErrorRootCauses: ErrorRootCauses = null,
     FaultRootCauses: FaultRootCauses = null,
-    HasError: js.UndefOr[NullableBoolean] = js.undefined,
-    HasFault: js.UndefOr[NullableBoolean] = js.undefined,
-    HasThrottle: js.UndefOr[NullableBoolean] = js.undefined,
+    HasError: js.UndefOr[scala.Boolean] = js.undefined,
+    HasFault: js.UndefOr[scala.Boolean] = js.undefined,
+    HasThrottle: js.UndefOr[scala.Boolean] = js.undefined,
     Http: Http = null,
     Id: TraceId = null,
     InstanceIds: TraceInstanceIds = null,
-    IsPartial: js.UndefOr[NullableBoolean] = js.undefined,
+    IsPartial: js.UndefOr[scala.Boolean] = js.undefined,
     MatchedEventTime: Timestamp = null,
     ResourceARNs: TraceResourceARNs = null,
-    ResponseTime: js.UndefOr[NullableDouble] = js.undefined,
+    ResponseTime: Int | scala.Double = null,
     ResponseTimeRootCauses: ResponseTimeRootCauses = null,
-    Revision: js.UndefOr[Integer] = js.undefined,
+    Revision: Int | scala.Double = null,
     ServiceIds: ServiceIds = null,
     Users: TraceUsers = null
   ): TraceSummary = {
     val __obj = js.Dynamic.literal()
     if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (EntryPoint != null) __obj.updateDynamic("EntryPoint")(EntryPoint)
     if (ErrorRootCauses != null) __obj.updateDynamic("ErrorRootCauses")(ErrorRootCauses)
     if (FaultRootCauses != null) __obj.updateDynamic("FaultRootCauses")(FaultRootCauses)
@@ -127,9 +127,9 @@ object TraceSummary {
     if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial)
     if (MatchedEventTime != null) __obj.updateDynamic("MatchedEventTime")(MatchedEventTime)
     if (ResourceARNs != null) __obj.updateDynamic("ResourceARNs")(ResourceARNs)
-    if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime)
+    if (ResponseTime != null) __obj.updateDynamic("ResponseTime")(ResponseTime.asInstanceOf[js.Any])
     if (ResponseTimeRootCauses != null) __obj.updateDynamic("ResponseTimeRootCauses")(ResponseTimeRootCauses)
-    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision)
+    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
     if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds)
     if (Users != null) __obj.updateDynamic("Users")(Users)
     __obj.asInstanceOf[TraceSummary]

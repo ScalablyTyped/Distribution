@@ -1,6 +1,6 @@
 package typings.rxDashLite
 
-import typings.rxDashCore.RxNs.IDisposable
+import typings.rxDashCore.Rx.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

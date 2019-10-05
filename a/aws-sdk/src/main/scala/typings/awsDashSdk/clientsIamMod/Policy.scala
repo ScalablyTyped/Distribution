@@ -52,26 +52,26 @@ object Policy {
   @scala.inline
   def apply(
     Arn: arnType = null,
-    AttachmentCount: js.UndefOr[attachmentCountType] = js.undefined,
+    AttachmentCount: Int | Double = null,
     CreateDate: dateType = null,
     DefaultVersionId: policyVersionIdType = null,
     Description: policyDescriptionType = null,
-    IsAttachable: js.UndefOr[booleanType] = js.undefined,
+    IsAttachable: js.UndefOr[Boolean] = js.undefined,
     Path: policyPathType = null,
-    PermissionsBoundaryUsageCount: js.UndefOr[attachmentCountType] = js.undefined,
+    PermissionsBoundaryUsageCount: Int | Double = null,
     PolicyId: idType = null,
     PolicyName: policyNameType = null,
     UpdateDate: dateType = null
   ): Policy = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (!js.isUndefined(AttachmentCount)) __obj.updateDynamic("AttachmentCount")(AttachmentCount)
+    if (AttachmentCount != null) __obj.updateDynamic("AttachmentCount")(AttachmentCount.asInstanceOf[js.Any])
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate)
     if (DefaultVersionId != null) __obj.updateDynamic("DefaultVersionId")(DefaultVersionId)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(IsAttachable)) __obj.updateDynamic("IsAttachable")(IsAttachable)
     if (Path != null) __obj.updateDynamic("Path")(Path)
-    if (!js.isUndefined(PermissionsBoundaryUsageCount)) __obj.updateDynamic("PermissionsBoundaryUsageCount")(PermissionsBoundaryUsageCount)
+    if (PermissionsBoundaryUsageCount != null) __obj.updateDynamic("PermissionsBoundaryUsageCount")(PermissionsBoundaryUsageCount.asInstanceOf[js.Any])
     if (PolicyId != null) __obj.updateDynamic("PolicyId")(PolicyId)
     if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName)
     if (UpdateDate != null) __obj.updateDynamic("UpdateDate")(UpdateDate)

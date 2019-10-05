@@ -1,6 +1,7 @@
 package typings.sarif.sarifMod
 
-import typings.sarif.sarifMod.ExternalPropertiesNs.version
+import typings.sarif.sarifMod.ExternalProperties.version
+import typings.sarif.sarifStrings.`2DOT1DOT0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,7 +82,7 @@ trait ExternalProperties extends js.Object {
   /**
     * The SARIF format version of this external properties object.
     */
-  var version: js.UndefOr[typings.sarif.sarifMod.ExternalPropertiesNs.version] = js.undefined
+  var version: js.UndefOr[version] = js.undefined
   /**
     * Requests that will be merged with a separate run.
     */
@@ -92,54 +93,9 @@ trait ExternalProperties extends js.Object {
   var webResponses: js.UndefOr[js.Array[WebResponse]] = js.undefined
 }
 
-object ExternalProperties {
-  @scala.inline
-  def apply(
-    addresses: js.Array[Address] = null,
-    artifacts: js.Array[Artifact] = null,
-    conversion: Conversion = null,
-    driver: ToolComponent = null,
-    extensions: js.Array[ToolComponent] = null,
-    externalizedProperties: PropertyBag = null,
-    graphs: js.Array[Graph] = null,
-    guid: String = null,
-    invocations: js.Array[Invocation] = null,
-    logicalLocations: js.Array[LogicalLocation] = null,
-    policies: js.Array[ToolComponent] = null,
-    properties: PropertyBag = null,
-    results: js.Array[Result] = null,
-    runGuid: String = null,
-    schema: String = null,
-    taxonomies: js.Array[ToolComponent] = null,
-    threadFlowLocations: js.Array[ThreadFlowLocation] = null,
-    translations: js.Array[ToolComponent] = null,
-    version: version = null,
-    webRequests: js.Array[WebRequest] = null,
-    webResponses: js.Array[WebResponse] = null
-  ): ExternalProperties = {
-    val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
-    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
-    if (driver != null) __obj.updateDynamic("driver")(driver)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (externalizedProperties != null) __obj.updateDynamic("externalizedProperties")(externalizedProperties)
-    if (graphs != null) __obj.updateDynamic("graphs")(graphs)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (invocations != null) __obj.updateDynamic("invocations")(invocations)
-    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
-    if (policies != null) __obj.updateDynamic("policies")(policies)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (runGuid != null) __obj.updateDynamic("runGuid")(runGuid)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
-    if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (webRequests != null) __obj.updateDynamic("webRequests")(webRequests)
-    if (webResponses != null) __obj.updateDynamic("webResponses")(webResponses)
-    __obj.asInstanceOf[ExternalProperties]
-  }
+@JSImport("sarif", "ExternalProperties")
+@js.native
+object ExternalProperties extends js.Object {
+  type version = `2DOT1DOT0`
 }
 

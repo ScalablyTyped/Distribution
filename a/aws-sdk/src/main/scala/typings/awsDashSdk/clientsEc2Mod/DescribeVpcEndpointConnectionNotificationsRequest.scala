@@ -31,16 +31,16 @@ object DescribeVpcEndpointConnectionNotificationsRequest {
   @scala.inline
   def apply(
     ConnectionNotificationId: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeVpcEndpointConnectionNotificationsRequest = {
     val __obj = js.Dynamic.literal()
     if (ConnectionNotificationId != null) __obj.updateDynamic("ConnectionNotificationId")(ConnectionNotificationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeVpcEndpointConnectionNotificationsRequest]
   }

@@ -1,7 +1,7 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiMod.LifecycleNs.Method
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
+import typings.hapi.hapiMod.Lifecycle.Method
+import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

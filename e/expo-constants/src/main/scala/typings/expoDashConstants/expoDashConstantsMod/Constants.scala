@@ -1,6 +1,7 @@
 package typings.expoDashConstants.expoDashConstantsMod
 
 import typings.expoDashConstants.buildConstantsDotTypesMod.AppManifest
+import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership
 import typings.expoDashConstants.buildConstantsDotTypesMod.NativeConstants
 import typings.expoDashConstants.buildConstantsDotTypesMod.PlatformManifest
 import typings.expoDashConstants.expoDashConstantsStrings.ExponentConstants
@@ -16,7 +17,7 @@ trait Constants extends NativeConstants {
 object Constants {
   @scala.inline
   def apply(
-    appOwnership: typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership,
+    appOwnership: AppOwnership,
     debugMode: Boolean,
     experienceUrl: String,
     expoRuntimeVersion: String,

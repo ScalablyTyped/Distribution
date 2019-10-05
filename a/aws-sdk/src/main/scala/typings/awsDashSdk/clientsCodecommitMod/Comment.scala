@@ -47,7 +47,7 @@ object Comment {
     commentId: CommentId = null,
     content: Content = null,
     creationDate: CreationDate = null,
-    deleted: js.UndefOr[IsCommentDeleted] = js.undefined,
+    deleted: js.UndefOr[Boolean] = js.undefined,
     inReplyTo: CommentId = null,
     lastModifiedDate: LastModifiedDate = null
   ): Comment = {

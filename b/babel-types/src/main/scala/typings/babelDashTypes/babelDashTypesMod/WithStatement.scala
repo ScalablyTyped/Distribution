@@ -36,3 +36,12 @@ object WithStatement {
   }
 }
 
+@JSImport("babel-types", "withStatement")
+@js.native
+object withStatement extends js.Object {
+  def apply(): WithStatement = js.native
+  def apply(`object`: Expression): WithStatement = js.native
+  def apply(`object`: Expression, body: BlockStatement): WithStatement = js.native
+  def apply(`object`: Expression, body: Statement): WithStatement = js.native
+}
+

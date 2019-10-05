@@ -3,7 +3,7 @@ package typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDas
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreNumbers.`false`
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.`set-cookie`
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.rangeDashParser.rangeDashParserMod.Options
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Request[P /* <: Params */]
   extends IncomingMessage
-     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request {
+     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Request {
   /**
     * Return an array of Accepted media types
     * ordered from highest quality to lowest.

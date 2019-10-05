@@ -1,11 +1,11 @@
 package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharepoint.SPNs.Guid
-import typings.sharepoint.SPNs.StringResult
-import typings.sharepoint.SPNs.UINs.ApplicationPagesNs.ClientPeoplePickerQueryParameters
-import typings.sharepoint.SPNs.UtilitiesNs.PrincipalSource
-import typings.sharepoint.SPNs.UtilitiesNs.PrincipalType
+import typings.sharepoint.SP.Guid
+import typings.sharepoint.SP.StringResult
+import typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
+import typings.sharepoint.SP.Utilities.PrincipalSource
+import typings.sharepoint.SP.Utilities.PrincipalType
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,7 +80,7 @@ class SPClientPeoplePicker () extends js.Object {
   var UnresolvedUserCount: Double = js.native
    // ';',
   var UnresolvedUserElmIdToReplace: String = js.native
-  var UrlZone: typings.sharepoint.SPNs.UrlZone = js.native
+  var UrlZone: typings.sharepoint.SP.UrlZone = js.native
   var UseLocalSuggestionCache: Boolean = js.native
    // 0,
   var UserQueryDict: StringDictionary[StringResult] = js.native

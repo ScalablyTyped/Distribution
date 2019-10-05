@@ -1,5 +1,6 @@
 package typings.signalsDotJs.libOrgOsflashSignalsISlotMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,22 +58,8 @@ trait ISlot extends js.Object {
   def remove(): Unit
 }
 
-object ISlot {
-  @scala.inline
-  def apply(
-    enabled: Boolean,
-    execute: js.Array[_] => Unit,
-    execute0: () => Unit,
-    execute1: js.Object => Unit,
-    listener: js.Function,
-    once: Boolean,
-    params: js.Array[_],
-    priority: Double,
-    remove: () => Unit
-  ): ISlot = {
-    val __obj = js.Dynamic.literal(enabled = enabled, execute = js.Any.fromFunction1(execute), execute0 = js.Any.fromFunction0(execute0), execute1 = js.Any.fromFunction1(execute1), listener = listener, once = once, params = params, priority = priority, remove = js.Any.fromFunction0(remove))
-  
-    __obj.asInstanceOf[ISlot]
-  }
-}
+@JSImport("signals.js/lib/org/osflash/signals/ISlot", "ISlot")
+@js.native
+object ISlot
+  extends TopLevel[js.Symbol]
 

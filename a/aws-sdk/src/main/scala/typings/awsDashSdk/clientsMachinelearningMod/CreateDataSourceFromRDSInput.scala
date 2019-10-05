@@ -33,7 +33,7 @@ object CreateDataSourceFromRDSInput {
     DataSourceId: EntityId,
     RDSData: RDSDataSpec,
     RoleARN: RoleARN,
-    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
+    ComputeStatistics: js.UndefOr[Boolean] = js.undefined,
     DataSourceName: EntityName = null
   ): CreateDataSourceFromRDSInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId, RDSData = RDSData, RoleARN = RoleARN)

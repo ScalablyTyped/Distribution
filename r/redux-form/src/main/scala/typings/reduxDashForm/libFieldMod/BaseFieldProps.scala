@@ -27,22 +27,22 @@ object BaseFieldProps {
   def apply[P](
     name: String,
     component: (ComponentType[WrappedFieldProps with P]) | input | select | textarea = null,
-    format: Formatter = null,
+    format: (/* value */ js.Any, /* name */ String) => js.Any = null,
     forwardRef: js.UndefOr[Boolean] = js.undefined,
     immutableProps: js.Array[String] = null,
-    normalize: Normalizer = null,
-    parse: Parser = null,
+    normalize: (/* value */ js.Any, /* previousValue */ js.UndefOr[js.Any], /* allValues */ js.UndefOr[js.Any], /* previousAllValues */ js.UndefOr[js.Any]) => js.Any = null,
+    parse: (/* value */ js.Any, /* name */ String) => js.Any = null,
     props: P = null,
     validate: Validator | js.Array[Validator] = null,
     warn: Validator | js.Array[Validator] = null
   ): BaseFieldProps[P] = {
     val __obj = js.Dynamic.literal(name = name)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
     if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef)
     if (immutableProps != null) __obj.updateDynamic("immutableProps")(immutableProps)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction4(normalize))
+    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction2(parse))
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     if (warn != null) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])

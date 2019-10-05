@@ -1,6 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IScriptSnapshot
+import typings.typescriptDashServices.TypeScript.ByteOrderMark
+import typings.typescriptDashServices.TypeScript.IScriptSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Document")
 @js.native
 class Document protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.Document {
+  extends typings.typescriptDashServices.TypeScript.Document {
   def this(
-    _compiler: typings.typescriptDashServices.TypeScriptNs.TypeScriptCompiler,
-    _semanticInfoChain: typings.typescriptDashServices.TypeScriptNs.SemanticInfoChain,
+    _compiler: typings.typescriptDashServices.TypeScript.TypeScriptCompiler,
+    _semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain,
     fileName: String,
     referencedFiles: js.Array[String],
     _scriptSnapshot: IScriptSnapshot,
-    byteOrderMark: typings.typescriptDashServices.TypeScriptNs.ByteOrderMark,
+    byteOrderMark: ByteOrderMark,
     version: Double,
     isOpen: Boolean,
-    _syntaxTree: typings.typescriptDashServices.TypeScriptNs.SyntaxTree,
-    _topLevelDecl: typings.typescriptDashServices.TypeScriptNs.PullDecl
+    _syntaxTree: typings.typescriptDashServices.TypeScript.SyntaxTree,
+    _topLevelDecl: typings.typescriptDashServices.TypeScript.PullDecl
   ) = this()
 }
 
@@ -28,14 +29,14 @@ class Document protected ()
 @js.native
 object Document extends js.Object {
   def create(
-    compiler: typings.typescriptDashServices.TypeScriptNs.TypeScriptCompiler,
-    semanticInfoChain: typings.typescriptDashServices.TypeScriptNs.SemanticInfoChain,
+    compiler: typings.typescriptDashServices.TypeScript.TypeScriptCompiler,
+    semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain,
     fileName: String,
     scriptSnapshot: IScriptSnapshot,
-    byteOrderMark: typings.typescriptDashServices.TypeScriptNs.ByteOrderMark,
+    byteOrderMark: ByteOrderMark,
     version: Double,
     isOpen: Boolean,
     referencedFiles: js.Array[String]
-  ): typings.typescriptDashServices.TypeScriptNs.Document = js.native
+  ): typings.typescriptDashServices.TypeScript.Document = js.native
 }
 

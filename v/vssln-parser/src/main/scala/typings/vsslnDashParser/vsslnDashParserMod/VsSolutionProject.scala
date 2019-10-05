@@ -23,7 +23,7 @@ object VsSolutionProject {
     projectGuid: String,
     `type`: String,
     typeGuid: String,
-    StringDictionary: StringDictionary[VsSolutionSection] = null,
+    StringDictionary: StringDictionary[js.Any] = null,
     projectDependencies: VsSolutionSection = null
   ): VsSolutionProject = {
     val __obj = js.Dynamic.literal(name = name, path = path, projectGuid = projectGuid, typeGuid = typeGuid)

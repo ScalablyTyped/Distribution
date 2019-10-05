@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */] extends TransitionActions {
+trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any */] extends TransitionActions {
   var component: js.UndefOr[T | Null] = js.undefined
 }
 
 object IntrinsicTransitionGroupProps {
   @scala.inline
-  def apply[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */](
+  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any */](
     appear: js.UndefOr[Boolean] = js.undefined,
     component: T = null,
     enter: js.UndefOr[Boolean] = js.undefined,

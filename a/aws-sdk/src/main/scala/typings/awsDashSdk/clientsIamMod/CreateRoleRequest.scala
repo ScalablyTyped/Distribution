@@ -41,14 +41,14 @@ object CreateRoleRequest {
     AssumeRolePolicyDocument: policyDocumentType,
     RoleName: roleNameType,
     Description: roleDescriptionType = null,
-    MaxSessionDuration: js.UndefOr[roleMaxSessionDurationType] = js.undefined,
+    MaxSessionDuration: Int | Double = null,
     Path: pathType = null,
     PermissionsBoundary: arnType = null,
     Tags: tagListType = null
   ): CreateRoleRequest = {
     val __obj = js.Dynamic.literal(AssumeRolePolicyDocument = AssumeRolePolicyDocument, RoleName = RoleName)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration)
+    if (MaxSessionDuration != null) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.asInstanceOf[js.Any])
     if (Path != null) __obj.updateDynamic("Path")(Path)
     if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

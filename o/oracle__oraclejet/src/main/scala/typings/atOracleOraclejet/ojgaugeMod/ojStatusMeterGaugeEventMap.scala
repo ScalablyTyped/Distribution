@@ -4,7 +4,7 @@ import typings.atOracleOraclejet.Anon_AutoBillionCenter
 import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
@@ -17,8 +17,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.onIndicator
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGaugeNs.ReferenceLine
-import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGaugeNs.Threshold
+import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
+import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -66,7 +66,7 @@ trait ojStatusMeterGaugeEventMap extends dvtBaseComponentEventMap[ojStatusMeterG
   ]
   var thresholdDisplayChanged: JetElementCustomEvent[currentOnly | all | onIndicator]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
-  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836]
+  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
   var valueChanged: JetElementCustomEvent[Double | Null]
   var visualEffectsChanged: JetElementCustomEvent[none | auto]
@@ -183,7 +183,7 @@ object ojStatusMeterGaugeEventMap {
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],
     timeupdate: Event,
     toggle: Event,
-    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836],
+    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,

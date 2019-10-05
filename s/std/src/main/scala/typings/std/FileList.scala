@@ -17,9 +17,5 @@ trait FileList extends /* index */ NumberDictionary[File] {
 
 @JSGlobal("FileList")
 @js.native
-class FileListCls () extends FileList
-
-@JSGlobal("FileList")
-@js.native
 object FileList extends Instantiable0[FileList]
 

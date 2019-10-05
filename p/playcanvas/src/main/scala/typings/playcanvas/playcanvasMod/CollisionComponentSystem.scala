@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "CollisionComponentSystem")
 @js.native
 class CollisionComponentSystem protected ()
-  extends typings.playcanvas.pcNs.CollisionComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.CollisionComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

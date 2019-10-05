@@ -1,7 +1,9 @@
 package typings.observeDashJs.observeDashJsMod
 
-import typings.observeDashJs.observeDashJsMod.observejsNs.Observable
-import typings.observeDashJs.observeDashJsMod.observejsNs.ObserverTransform_instance
+import org.scalablytyped.runtime.TopLevel
+import typings.observeDashJs.observeDashJsMod.observejs.Observable
+import typings.observeDashJs.observeDashJsMod.observejs.ObserverTransform_instance
+import typings.observeDashJs.observeDashJsMod.observejs.ObserverTransform_static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,4 +29,8 @@ class ObserverTransform protected () extends ObserverTransform_instance {
     setValue: js.Function1[/* value */ js.Any, _]
   ) = this()
 }
+
+@JSImport("observe-js", "ObserverTransform")
+@js.native
+object ObserverTransform extends TopLevel[ObserverTransform_static]
 

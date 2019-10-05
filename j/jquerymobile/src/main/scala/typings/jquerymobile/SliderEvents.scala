@@ -1,5 +1,6 @@
 package typings.jquerymobile
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +14,14 @@ trait SliderEvents extends js.Object {
 object SliderEvents {
   @scala.inline
   def apply(
-    create: JQueryMobileEvent = null,
-    slidestart: JQueryMobileEvent = null,
-    slidestop: JQueryMobileEvent = null
+    create: (/* event */ Event, /* ui */ js.Any) => Unit = null,
+    slidestart: (/* event */ Event, /* ui */ js.Any) => Unit = null,
+    slidestop: (/* event */ Event, /* ui */ js.Any) => Unit = null
   ): SliderEvents = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (slidestart != null) __obj.updateDynamic("slidestart")(slidestart)
-    if (slidestop != null) __obj.updateDynamic("slidestop")(slidestop)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (slidestart != null) __obj.updateDynamic("slidestart")(js.Any.fromFunction2(slidestart))
+    if (slidestop != null) __obj.updateDynamic("slidestop")(js.Any.fromFunction2(slidestop))
     __obj.asInstanceOf[SliderEvents]
   }
 }

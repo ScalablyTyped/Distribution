@@ -30,11 +30,11 @@ trait RedshiftInstanceDetails extends js.Object {
 object RedshiftInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
     Family: GenericString = null,
     NodeType: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
   ): RedshiftInstanceDetails = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration)

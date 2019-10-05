@@ -23,7 +23,7 @@ object DeleteRepositoryRequest {
   @scala.inline
   def apply(
     repositoryName: RepositoryName,
-    force: js.UndefOr[ForceFlag] = js.undefined,
+    force: js.UndefOr[Boolean] = js.undefined,
     registryId: RegistryId = null
   ): DeleteRepositoryRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName)

@@ -1,7 +1,7 @@
 package typings.mocha.libInterfacesCommonMod
 
 import typings.mocha.Mocha
-import typings.mocha.MochaNs.Test
+import typings.mocha.Mocha.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

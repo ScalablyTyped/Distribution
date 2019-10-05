@@ -28,12 +28,12 @@ object DescribeCacheParametersMessage {
   def apply(
     CacheParameterGroupName: String,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     Source: String = null
   ): DescribeCacheParametersMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (Source != null) __obj.updateDynamic("Source")(Source)
     __obj.asInstanceOf[DescribeCacheParametersMessage]
   }

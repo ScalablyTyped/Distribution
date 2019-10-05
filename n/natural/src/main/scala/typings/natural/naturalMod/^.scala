@@ -16,10 +16,5 @@ object ^ extends js.Object {
   var PorterStemmerNo: Stemmer = js.native
   var PorterStemmerPt: Stemmer = js.native
   var PorterStemmerRu: Stemmer = js.native
-  def DiceCoefficient(str1: String, str2: String): Double = js.native
-  def JaroWinklerDistance(s1: String, s2: String): Double = js.native
-  def JaroWinklerDistance(s1: String, s2: String, dt: Double): Double = js.native
-  def LevenshteinDistance(source: String, target: String): Double = js.native
-  def LevenshteinDistance(source: String, target: String, options: js.Any): Double = js.native
 }
 

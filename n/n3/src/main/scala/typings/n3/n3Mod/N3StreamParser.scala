@@ -2,8 +2,8 @@ package typings.n3.n3Mod
 
 import typings.n3.Anon_End
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.rdfDashJs.rdfDashJsMod.Sink
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js

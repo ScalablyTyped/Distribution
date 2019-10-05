@@ -40,7 +40,7 @@ object VolumeInfo {
     VolumeARN: VolumeARN = null,
     VolumeAttachmentStatus: VolumeAttachmentStatus = null,
     VolumeId: VolumeId = null,
-    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
+    VolumeSizeInBytes: Int | Double = null,
     VolumeType: VolumeType = null
   ): VolumeInfo = {
     val __obj = js.Dynamic.literal()
@@ -49,7 +49,7 @@ object VolumeInfo {
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN)
     if (VolumeAttachmentStatus != null) __obj.updateDynamic("VolumeAttachmentStatus")(VolumeAttachmentStatus)
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
-    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes)
+    if (VolumeSizeInBytes != null) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType)
     __obj.asInstanceOf[VolumeInfo]
   }

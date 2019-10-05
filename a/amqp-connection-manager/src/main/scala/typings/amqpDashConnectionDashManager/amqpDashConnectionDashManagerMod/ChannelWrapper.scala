@@ -5,8 +5,8 @@ import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerString
 import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect
 import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.error
 import typings.amqplib.propertiesMod.Message
-import typings.amqplib.propertiesMod.OptionsNs.Publish
-import typings.amqplib.propertiesMod.RepliesNs.Empty
+import typings.amqplib.propertiesMod.Options.Publish
+import typings.amqplib.propertiesMod.Replies.Empty
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error

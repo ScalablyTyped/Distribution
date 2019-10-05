@@ -1,5 +1,6 @@
 package typings.es6DashShim
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,5 @@ trait Map[K, V] extends js.Object {
 
 @JSGlobal("Map")
 @js.native
-class MapCls[K, V] () extends Map[K, V] {
-  def this(iterable: IterableShim[js.Tuple2[K, V]]) = this()
-}
+object Map extends TopLevel[MapConstructor]
 

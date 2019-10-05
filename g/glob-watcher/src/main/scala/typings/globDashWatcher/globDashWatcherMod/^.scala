@@ -14,16 +14,28 @@ object ^ extends js.Object {
     * Globs are executed in order, so negations should follow positive globs
     * fs.src(['!b*.js', '*.js']) would not exclude any files, but this would: fs.src(['*.js', '!b*.js'])
     */
-  def apply(globs: js.Array[String] | String): FSWatcher = js.native
+  def apply(globs: String): FSWatcher = js.native
+  def apply(globs: String, cb: js.Function0[AsyncType]): FSWatcher = js.native
+  def apply(globs: String, cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): FSWatcher = js.native
+  def apply(globs: String, opt: WatchOptions): FSWatcher = js.native
+  def apply(globs: String, opt: WatchOptions, cb: js.Function0[AsyncType]): FSWatcher = js.native
   def apply(
-    globs: String | js.Array[String],
-    cb: (js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]) | js.Function0[AsyncType]
-  ): FSWatcher = js.native
-  def apply(globs: String | js.Array[String], opt: WatchOptions): FSWatcher = js.native
-  def apply(
-    globs: String | js.Array[String],
+    globs: String,
     opt: WatchOptions,
-    cb: (js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]) | js.Function0[AsyncType]
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+  ): FSWatcher = js.native
+  def apply(globs: js.Array[String]): FSWatcher = js.native
+  def apply(globs: js.Array[String], cb: js.Function0[AsyncType]): FSWatcher = js.native
+  def apply(
+    globs: js.Array[String],
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+  ): FSWatcher = js.native
+  def apply(globs: js.Array[String], opt: WatchOptions): FSWatcher = js.native
+  def apply(globs: js.Array[String], opt: WatchOptions, cb: js.Function0[AsyncType]): FSWatcher = js.native
+  def apply(
+    globs: js.Array[String],
+    opt: WatchOptions,
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
   ): FSWatcher = js.native
 }
 

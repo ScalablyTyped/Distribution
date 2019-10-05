@@ -189,48 +189,48 @@ object RestoreDBInstanceFromS3Message {
     S3IngestionRoleArn: String,
     SourceEngine: String,
     SourceEngineVersion: String,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    BackupRetentionPeriod: Int | scala.Double = null,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBName: String = null,
     DBParameterGroupName: String = null,
     DBSecurityGroups: DBSecurityGroupNameList = null,
     DBSubnetGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
-    EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
+    EnablePerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
     LicenseModel: String = null,
     MasterUserPassword: String = null,
     MasterUsername: String = null,
-    MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
+    MonitoringInterval: Int | scala.Double = null,
     MonitoringRoleArn: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OptionGroupName: String = null,
     PerformanceInsightsKMSKeyId: String = null,
-    PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    PerformanceInsightsRetentionPeriod: Int | scala.Double = null,
+    Port: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ProcessorFeatures: ProcessorFeatureList = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     S3Prefix: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     StorageType: String = null,
     Tags: TagList = null,
-    UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined,
+    UseDefaultProcessorFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBInstanceFromS3Message = {
     val __obj = js.Dynamic.literal(DBInstanceClass = DBInstanceClass, DBInstanceIdentifier = DBInstanceIdentifier, Engine = Engine, S3BucketName = S3BucketName, S3IngestionRoleArn = S3IngestionRoleArn, SourceEngine = SourceEngine, SourceEngineVersion = SourceEngineVersion)
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBName != null) __obj.updateDynamic("DBName")(DBName)
     if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName)
@@ -241,18 +241,18 @@ object RestoreDBInstanceFromS3Message {
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (!js.isUndefined(EnablePerformanceInsights)) __obj.updateDynamic("EnablePerformanceInsights")(EnablePerformanceInsights)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
-    if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval)
+    if (MonitoringInterval != null) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval.asInstanceOf[js.Any])
     if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
     if (PerformanceInsightsKMSKeyId != null) __obj.updateDynamic("PerformanceInsightsKMSKeyId")(PerformanceInsightsKMSKeyId)
-    if (!js.isUndefined(PerformanceInsightsRetentionPeriod)) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (PerformanceInsightsRetentionPeriod != null) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)

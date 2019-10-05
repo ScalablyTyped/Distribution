@@ -54,3 +54,29 @@ object DeclareInterface {
   }
 }
 
+@JSImport("@babel/types", "declareInterface")
+@js.native
+object declareInterface extends js.Object {
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation
+  ): DeclareInterface = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation,
+    _implements: js.Array[ClassImplements]
+  ): DeclareInterface = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation,
+    _implements: js.Array[ClassImplements],
+    mixins: js.Array[InterfaceExtends]
+  ): DeclareInterface = js.native
+}
+

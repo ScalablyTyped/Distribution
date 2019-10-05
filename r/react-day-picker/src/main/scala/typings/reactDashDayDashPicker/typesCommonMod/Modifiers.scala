@@ -14,12 +14,14 @@ trait Modifiers
 object Modifiers {
   @scala.inline
   def apply(
-    outside: Modifier | js.Array[Modifier],
-    today: Modifier | js.Array[Modifier],
-    StringDictionary: /* other */ StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] = null
+    StringDictionary: /* other */ StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] = null,
+    outside: Modifier | js.Array[Modifier] = null,
+    today: Modifier | js.Array[Modifier] = null
   ): Modifiers = {
-    val __obj = js.Dynamic.literal(outside = outside.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (outside != null) __obj.updateDynamic("outside")(outside.asInstanceOf[js.Any])
+    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modifiers]
   }
 }

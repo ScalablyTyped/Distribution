@@ -62,13 +62,13 @@ object UpdatePatchBaselineRequest {
     ApprovalRules: PatchRuleGroup = null,
     ApprovedPatches: PatchIdList = null,
     ApprovedPatchesComplianceLevel: PatchComplianceLevel = null,
-    ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined,
+    ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined,
     Description: BaselineDescription = null,
     GlobalFilters: PatchFilterGroup = null,
     Name: BaselineName = null,
     RejectedPatches: PatchIdList = null,
     RejectedPatchesAction: PatchAction = null,
-    Replace: js.UndefOr[Boolean] = js.undefined,
+    Replace: js.UndefOr[scala.Boolean] = js.undefined,
     Sources: PatchSourceList = null
   ): UpdatePatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId)

@@ -16,11 +16,11 @@ object AssignAction {
   def apply[TContext, TEvent /* <: EventObject */](
     assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent]),
     `type`: Assign,
-    exec: ActionFunction[TContext, TEvent] = null
+    exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): AssignAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(assignment = assignment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[AssignAction[TContext, TEvent]]
   }
 }

@@ -24,7 +24,7 @@ object ImportMigrationTaskRequest {
   def apply(
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ImportMigrationTaskRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

@@ -1,14 +1,14 @@
 package typings.browserDashBunyan
 
-import typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyanNs.ConsoleFormattedStream
-import typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyanNs.ConsoleRawStream
+import typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyan.ConsoleFormattedStream
+import typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyan.ConsoleRawStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ConsoleFormattedStream extends js.Object {
-  var ConsoleFormattedStream: typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyanNs.ConsoleFormattedStream
-  var ConsoleRawStream: typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyanNs.ConsoleRawStream
+  var ConsoleFormattedStream: typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyan.ConsoleFormattedStream
+  var ConsoleRawStream: typings.browserDashBunyan.browserDashBunyanMod.BrowserBunyan.ConsoleRawStream
 }
 
 object Anon_ConsoleFormattedStream {

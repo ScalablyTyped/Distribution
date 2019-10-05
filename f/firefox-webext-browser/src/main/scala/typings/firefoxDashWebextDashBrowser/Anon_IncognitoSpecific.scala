@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.typesNs.LevelOfControl
+import typings.firefoxDashWebextDashBrowser.browser.types.LevelOfControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

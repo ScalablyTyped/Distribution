@@ -21,7 +21,7 @@ trait UpdateCondition extends js.Object {
 
 object UpdateCondition {
   @scala.inline
-  def apply(Exists: js.UndefOr[Boolean] = js.undefined, Name: String = null, Value: String = null): UpdateCondition = {
+  def apply(Exists: js.UndefOr[scala.Boolean] = js.undefined, Name: String = null, Value: String = null): UpdateCondition = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Exists)) __obj.updateDynamic("Exists")(Exists)
     if (Name != null) __obj.updateDynamic("Name")(Name)

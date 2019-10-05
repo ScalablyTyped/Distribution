@@ -1,12 +1,12 @@
 package typings.activexDashVbide
 
-import typings.activexDashVbide.VBIDENs.Reference
+import typings.activexDashVbide.VBIDE.Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Reference extends js.Object {
-  val Reference: typings.activexDashVbide.VBIDENs.Reference
+  val Reference: typings.activexDashVbide.VBIDE.Reference
 }
 
 object Anon_Reference {

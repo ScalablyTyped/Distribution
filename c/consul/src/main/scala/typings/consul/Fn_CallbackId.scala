@@ -1,6 +1,6 @@
 package typings.consul
 
-import typings.consul.consulMod.AclNs.DestroyOptions
+import typings.consul.consulMod.Acl.DestroyOptions
 import typings.consul.consulMod.Callback
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js

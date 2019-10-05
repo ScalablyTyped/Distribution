@@ -32,7 +32,7 @@ object ApolloClientOptions {
     assumeImmutableResults: js.UndefOr[Boolean] = js.undefined,
     connectToDevTools: js.UndefOr[Boolean] = js.undefined,
     defaultOptions: DefaultOptions = null,
-    fragmentMatcher: FragmentMatcher = null,
+    fragmentMatcher: (/* rootValue */ js.Any, /* typeCondition */ String, /* context */ js.Any) => Boolean = null,
     link: ApolloLink = null,
     name: String = null,
     queryDeduplication: js.UndefOr[Boolean] = js.undefined,
@@ -46,7 +46,7 @@ object ApolloClientOptions {
     if (!js.isUndefined(assumeImmutableResults)) __obj.updateDynamic("assumeImmutableResults")(assumeImmutableResults)
     if (!js.isUndefined(connectToDevTools)) __obj.updateDynamic("connectToDevTools")(connectToDevTools)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
-    if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(fragmentMatcher)
+    if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(js.Any.fromFunction3(fragmentMatcher))
     if (link != null) __obj.updateDynamic("link")(link)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(queryDeduplication)) __obj.updateDynamic("queryDeduplication")(queryDeduplication)

@@ -1,7 +1,7 @@
 package typings.paper
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.paper.paperNs.PaperScope
+import typings.paper.paper.PaperScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

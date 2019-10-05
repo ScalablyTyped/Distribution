@@ -28,14 +28,10 @@ trait ListClustersRequest extends js.Object {
 
 object ListClustersRequest {
   @scala.inline
-  def apply(
-    ClusterNameFilter: __string = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: __string = null
-  ): ListClustersRequest = {
+  def apply(ClusterNameFilter: __string = null, MaxResults: Int | Double = null, NextToken: __string = null): ListClustersRequest = {
     val __obj = js.Dynamic.literal()
     if (ClusterNameFilter != null) __obj.updateDynamic("ClusterNameFilter")(ClusterNameFilter)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListClustersRequest]
   }

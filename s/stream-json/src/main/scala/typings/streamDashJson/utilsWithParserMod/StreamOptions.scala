@@ -7,7 +7,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import typings.node.streamMod.Writable
-import typings.streamDashJson.streamersStreamBaseMod.ObjectFilterFunction
+import typings.streamDashJson.assemblerMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,7 +67,7 @@ object StreamOptions {
     highWaterMark: Int | Double = null,
     includeUndecided: js.UndefOr[Boolean] = js.undefined,
     jsonStreaming: js.UndefOr[Boolean] = js.undefined,
-    objectFilter: ObjectFilterFunction = null,
+    objectFilter: /* asm */ ^ => js.UndefOr[Boolean] = null,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     packKeys: js.UndefOr[Boolean] = js.undefined,
     packNumbers: js.UndefOr[Boolean] = js.undefined,
@@ -132,7 +132,7 @@ object StreamOptions {
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(includeUndecided)) __obj.updateDynamic("includeUndecided")(includeUndecided)
     if (!js.isUndefined(jsonStreaming)) __obj.updateDynamic("jsonStreaming")(jsonStreaming)
-    if (objectFilter != null) __obj.updateDynamic("objectFilter")(objectFilter)
+    if (objectFilter != null) __obj.updateDynamic("objectFilter")(js.Any.fromFunction1(objectFilter))
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
     if (!js.isUndefined(packKeys)) __obj.updateDynamic("packKeys")(packKeys)
     if (!js.isUndefined(packNumbers)) __obj.updateDynamic("packNumbers")(packNumbers)

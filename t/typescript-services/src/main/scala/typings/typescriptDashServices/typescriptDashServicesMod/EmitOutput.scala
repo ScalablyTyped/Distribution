@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
+import typings.typescriptDashServices.TypeScript.EmitOutputResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "EmitOutput")
 @js.native
 class EmitOutput ()
-  extends typings.typescriptDashServices.TypeScriptNs.EmitOutput {
-  def this(emitOutputResult: typings.typescriptDashServices.TypeScriptNs.EmitOutputResult) = this()
+  extends typings.typescriptDashServices.TypeScript.EmitOutput {
+  def this(emitOutputResult: EmitOutputResult) = this()
 }
 

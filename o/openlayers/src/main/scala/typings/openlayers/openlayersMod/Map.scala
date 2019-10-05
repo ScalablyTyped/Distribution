@@ -1,12 +1,12 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.controlNs.Control
-import typings.openlayers.openlayersMod.interactionNs.Interaction
-import typings.openlayers.openlayersMod.layerNs.Base
-import typings.openlayers.openlayersMod.layerNs.Group
-import typings.openlayers.openlayersMod.layerNs.Layer
-import typings.openlayers.openlayersMod.olxNs.AtPixelOptions
-import typings.openlayers.openlayersMod.olxNs.MapOptions
+import typings.openlayers.openlayersMod.control.Control
+import typings.openlayers.openlayersMod.interaction.Interaction
+import typings.openlayers.openlayersMod.layer.Base
+import typings.openlayers.openlayersMod.layer.Group
+import typings.openlayers.openlayersMod.layer.Layer
+import typings.openlayers.openlayersMod.olx.AtPixelOptions
+import typings.openlayers.openlayersMod.olx.MapOptions
 import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
@@ -111,7 +111,7 @@ class Map protected () extends Object {
   def forEachFeatureAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[
-      /* feature */ Feature | typings.openlayers.openlayersMod.renderNs.Feature, 
+      /* feature */ Feature | typings.openlayers.openlayersMod.render.Feature, 
       /* layer */ Layer, 
       T
     ]
@@ -119,7 +119,7 @@ class Map protected () extends Object {
   def forEachFeatureAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[
-      /* feature */ Feature | typings.openlayers.openlayersMod.renderNs.Feature, 
+      /* feature */ Feature | typings.openlayers.openlayersMod.render.Feature, 
       /* layer */ Layer, 
       T
     ],
@@ -199,8 +199,8 @@ class Map protected () extends Object {
     * @return The detected features or null if none were found.
     * @api stable
     */
-  def getFeaturesAtPixel(pixel: Pixel): (js.Array[Feature | typings.openlayers.openlayersMod.renderNs.Feature]) | Null = js.native
-  def getFeaturesAtPixel(pixel: Pixel, opt_options: AtPixelOptions): (js.Array[Feature | typings.openlayers.openlayersMod.renderNs.Feature]) | Null = js.native
+  def getFeaturesAtPixel(pixel: Pixel): (js.Array[Feature | typings.openlayers.openlayersMod.render.Feature]) | Null = js.native
+  def getFeaturesAtPixel(pixel: Pixel, opt_options: AtPixelOptions): (js.Array[Feature | typings.openlayers.openlayersMod.render.Feature]) | Null = js.native
   /**
     * Get the map interactions. Modifying this collection changes the interactions
     * associated with the map.

@@ -21,9 +21,9 @@ trait ListApplicationVersionsRequest extends js.Object {
 
 object ListApplicationVersionsRequest {
   @scala.inline
-  def apply(ApplicationId: __string, MaxItems: js.UndefOr[MaxItems] = js.undefined, NextToken: __string = null): ListApplicationVersionsRequest = {
+  def apply(ApplicationId: __string, MaxItems: Int | Double = null, NextToken: __string = null): ListApplicationVersionsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListApplicationVersionsRequest]
   }

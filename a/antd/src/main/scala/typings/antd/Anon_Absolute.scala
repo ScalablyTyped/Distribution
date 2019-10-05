@@ -305,7 +305,7 @@ trait Anon_Absolute extends js.Object {
   var MozAnimationPlayState: js.UndefOr[String] = js.undefined
   var MozAnimationTimingFunction: js.UndefOr[String] = js.undefined
   var MozAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
   ] = js.undefined
   var MozBackfaceVisibility: js.UndefOr[inherit | hidden | visible | `-moz-initial` | initial | revert | unset] = js.undefined
   var MozBackgroundClip: js.UndefOr[String] = js.undefined
@@ -459,7 +459,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitAnimationPlayState: js.UndefOr[String] = js.undefined
   var WebkitAnimationTimingFunction: js.UndefOr[String] = js.undefined
   var WebkitAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
   ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[String] = js.undefined
   var WebkitBackfaceVisibility: js.UndefOr[inherit | hidden | visible | `-moz-initial` | initial | revert | unset] = js.undefined
@@ -1280,7 +1280,7 @@ object Anon_Absolute {
     MozAnimationName: String = null,
     MozAnimationPlayState: String = null,
     MozAnimationTimingFunction: String = null,
-    MozAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any = null,
+    MozAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
     MozBackfaceVisibility: inherit | hidden | visible | `-moz-initial` | initial | revert | unset = null,
     MozBackgroundClip: String = null,
     MozBackgroundInlinePolicy: slice | inherit | `-moz-initial` | initial | revert | unset | clone = null,
@@ -1398,7 +1398,7 @@ object Anon_Absolute {
     WebkitAnimationName: String = null,
     WebkitAnimationPlayState: String = null,
     WebkitAnimationTimingFunction: String = null,
-    WebkitAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any = null,
+    WebkitAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any = null,
     WebkitBackdropFilter: String = null,
     WebkitBackfaceVisibility: inherit | hidden | visible | `-moz-initial` | initial | revert | unset = null,
     WebkitBackgroundClip: String = null,

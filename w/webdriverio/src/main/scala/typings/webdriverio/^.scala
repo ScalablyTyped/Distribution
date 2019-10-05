@@ -1,6 +1,6 @@
 package typings.webdriverio
 
-import typings.webdriverio.WebdriverIOAsyncNs.BrowserObject
+import typings.webdriverio.WebdriverIOAsync.BrowserObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

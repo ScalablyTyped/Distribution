@@ -36,9 +36,9 @@ object ReceiptRule {
   def apply(
     Name: ReceiptRuleName,
     Actions: ReceiptActionsList = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     Recipients: RecipientsList = null,
-    ScanEnabled: js.UndefOr[Enabled] = js.undefined,
+    ScanEnabled: js.UndefOr[Boolean] = js.undefined,
     TlsPolicy: TlsPolicy = null
   ): ReceiptRule = {
     val __obj = js.Dynamic.literal(Name = Name)

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCommandpaletteMod {
-  import typings.atPhosphorWidgets.libCommandpaletteMod.CommandPaletteNs.IItemOptions
+  import typings.atPhosphorWidgets.libCommandpaletteMod.CommandPalette.IItemOptions
 
   type IPaletteItem = IItemOptions
 }

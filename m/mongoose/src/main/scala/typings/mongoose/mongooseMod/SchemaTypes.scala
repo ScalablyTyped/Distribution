@@ -16,10 +16,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Extracted nested Instantiables into classes in SchemaTypesNs */
 @JSImport("mongoose", "SchemaTypes")
 @js.native
 object SchemaTypes extends js.Object {
+  /*
+    * section schema/embedded.js
+    * http://mongoosejs.com/docs/api.html#schema-embedded-js
+    */
+  @js.native
+  class Embedded protected ()
+    extends typings.mongoose.mongooseMod.Schema.Types.Embedded {
+    /** Sub-schema schematype constructor */
+    def this(schema: Schema[_], key: String) = this()
+    def this(schema: Schema[_], key: String, options: js.Any) = this()
+  }
+  
+  /**
+    * section schema/map.js
+    * https://mongoosejs.com/docs/schematypes.html#maps
+    */
+  @js.native
+  class Map protected ()
+    extends typings.mongoose.mongooseMod.Schema.Types.Map {
+    /** Sub-schema schematype constructor */
+    def this(key: String) = this()
+    def this(key: String, options: js.Any) = this()
+  }
+  
   /*
     * section schema/array.js
     * http://mongoosejs.com/docs/api.html#schema-array-js
@@ -58,7 +81,7 @@ object SchemaTypes extends js.Object {
     /* schema */ Schema[js.Any], 
     /* key */ String, 
     js.UndefOr[/* options */ js.Any], 
-    typings.mongoose.mongooseMod.SchemaNs.TypesNs.Embedded
+    typings.mongoose.mongooseMod.Schema.Types.Embedded
   ] = js.native
   /**
     * section schema/map.js
@@ -67,7 +90,7 @@ object SchemaTypes extends js.Object {
   var Map: Instantiable2[
     /* key */ String, 
     js.UndefOr[/* options */ js.Any], 
-    typings.mongoose.mongooseMod.SchemaNs.TypesNs.Map
+    typings.mongoose.mongooseMod.Schema.Types.Map
   ] = js.native
   /*
     * section schema/mixed.js

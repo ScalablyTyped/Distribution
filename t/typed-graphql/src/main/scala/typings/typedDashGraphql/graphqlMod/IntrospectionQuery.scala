@@ -1,5 +1,6 @@
 package typings.typedDashGraphql.graphqlMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,4 +17,8 @@ object IntrospectionQuery {
     __obj.asInstanceOf[IntrospectionQuery]
   }
 }
+
+@JSImport("graphql", "introspectionQuery")
+@js.native
+object introspectionQuery extends TopLevel[String]
 

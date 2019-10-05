@@ -29,13 +29,13 @@ object DiskInfo {
     isSystemDisk: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     path: NonEmptyString = null,
-    sizeInGb: js.UndefOr[integer] = js.undefined
+    sizeInGb: Int | Double = null
   ): DiskInfo = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isSystemDisk)) __obj.updateDynamic("isSystemDisk")(isSystemDisk)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb)
+    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskInfo]
   }
 }

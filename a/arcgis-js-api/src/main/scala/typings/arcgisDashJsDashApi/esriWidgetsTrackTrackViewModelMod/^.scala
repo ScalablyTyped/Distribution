@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsTrackTrackViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrackViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.TrackViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

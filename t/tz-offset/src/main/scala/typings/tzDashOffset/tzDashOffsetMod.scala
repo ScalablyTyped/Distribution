@@ -1,0 +1,155 @@
+package typings.tzDashOffset
+
+import typings.std.Date
+import typings.tzDashOffset.tzDashOffsetMod.Timezone
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tz-offset", JSImport.Namespace)
+@js.native
+object tzDashOffsetMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.tzDashOffset.tzDashOffsetStrings.`Etc/GMT+12`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Pago_Pago`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Midway`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Honolulu`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Juneau`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Los_Angeles`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Tijuana`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Phoenix`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Chihuahua`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Mazatlan`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Denver`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Guatemala`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Chicago`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Mexico_City`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Monterrey`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Regina`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Bogota`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/New_York`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Indiana/Indianapolis`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Lima`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Halifax`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Caracas`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Guyana`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/La_Paz`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Puerto_Rico`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Santiago`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/St_Johns`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Sao_Paulo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Argentina/Buenos_Aires`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Godthab`
+    - typings.tzDashOffset.tzDashOffsetStrings.`America/Montevideo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Atlantic/South_Georgia`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Atlantic/Azores`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Atlantic/Cape_Verde`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Casablanca`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/London`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Lisbon`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Monrovia`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Etc/UTC`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Amsterdam`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Belgrade`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Berlin`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Zurich`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Bratislava`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Brussels`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Budapest`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Copenhagen`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Dublin`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Ljubljana`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Madrid`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Paris`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Prague`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Rome`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Sarajevo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Skopje`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Stockholm`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Vienna`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Warsaw`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Algiers`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Zagreb`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Athens`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Bucharest`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Cairo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Harare`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Helsinki`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Jerusalem`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Kaliningrad`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Kiev`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Johannesburg`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Riga`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Sofia`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Tallinn`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Vilnius`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Baghdad`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Istanbul`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kuwait`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Minsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Moscow`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Africa/Nairobi`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Riyadh`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Volgograd`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Tehran`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Muscat`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Baku`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Europe/Samara`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Tbilisi`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Yerevan`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kabul`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Yekaterinburg`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Karachi`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Tashkent`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kolkata`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Colombo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kathmandu`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Almaty`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Dhaka`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Urumqi`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Rangoon`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Bangkok`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Jakarta`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Krasnoyarsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Novosibirsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Shanghai`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Chongqing`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Hong_Kong`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Irkutsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kuala_Lumpur`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Perth`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Singapore`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Taipei`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Ulaanbaatar`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Tokyo`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Seoul`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Yakutsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Adelaide`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Darwin`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Brisbane`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Melbourne`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Guam`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Hobart`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Port_Moresby`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Australia/Sydney`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Vladivostok`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Magadan`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Noumea`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Guadalcanal`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Srednekolymsk`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Auckland`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Fiji`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Asia/Kamchatka`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Majuro`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Chatham`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Tongatapu`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Apia`
+    - typings.tzDashOffset.tzDashOffsetStrings.`Pacific/Fakaofo`
+  */
+  trait Timezone extends js.Object
+  
+  def offsetOf(timezone: Timezone): Double = js.native
+  def removeOffset(date: Date): Double = js.native
+  def timeAt(date: Date, timezone: Timezone): Date = js.native
+}
+

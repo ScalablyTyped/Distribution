@@ -1,7 +1,7 @@
 package typings.flightplan
 
 import org.scalablytyped.runtime.TopLevel
-import typings.flightplan.FlightplanInterfacesNs.Flightplan
+import typings.flightplan.FlightplanInterfaces.Flightplan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

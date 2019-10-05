@@ -19,10 +19,10 @@ class ReplicaSet protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.ReplicaSet) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.ReplicaSet) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.ReplicaSet,
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.ReplicaSet,
     opts: CustomResourceOptions
   ) = this()
 }

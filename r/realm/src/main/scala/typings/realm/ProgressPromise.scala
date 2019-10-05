@@ -1,6 +1,6 @@
 package typings.realm
 
-import typings.realm.RealmNs.SyncNs.ProgressNotificationCallback
+import typings.realm.Realm.Sync.ProgressNotificationCallback
 import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`

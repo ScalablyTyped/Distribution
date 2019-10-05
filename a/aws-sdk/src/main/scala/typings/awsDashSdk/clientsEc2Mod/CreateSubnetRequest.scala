@@ -38,7 +38,7 @@ object CreateSubnetRequest {
     VpcId: String,
     AvailabilityZone: String = null,
     AvailabilityZoneId: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Ipv6CidrBlock: String = null
   ): CreateSubnetRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock, VpcId = VpcId)

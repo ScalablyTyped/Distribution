@@ -37,3 +37,11 @@ object TypeCastExpression {
   }
 }
 
+@JSImport("babel-types", "typeCastExpression")
+@js.native
+object typeCastExpression extends js.Object {
+  def apply(): TypeCastExpression = js.native
+  def apply(expression: Expression): TypeCastExpression = js.native
+  def apply(expression: Expression, typeAnnotation: FlowTypeAnnotation): TypeCastExpression = js.native
+}
+

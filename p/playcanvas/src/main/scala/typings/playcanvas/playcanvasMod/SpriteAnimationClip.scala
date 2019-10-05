@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SpriteAnimationClip")
 @js.native
 class SpriteAnimationClip protected ()
-  extends typings.playcanvas.pcNs.SpriteAnimationClip {
-  def this(component: typings.playcanvas.pcNs.SpriteComponent, data: Anon_Fps) = this()
+  extends typings.playcanvas.pc.SpriteAnimationClip {
+  def this(component: typings.playcanvas.pc.SpriteComponent, data: Anon_Fps) = this()
 }
 

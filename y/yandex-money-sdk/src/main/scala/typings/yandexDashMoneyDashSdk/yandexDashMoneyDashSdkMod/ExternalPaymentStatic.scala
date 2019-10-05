@@ -1,7 +1,7 @@
 package typings.yandexDashMoneyDashSdk.yandexDashMoneyDashSdkMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.yandexDashMoneyDashSdk.YandexMoneySDKNs.ExternalPaymentNs.GetInstanceIdResult
+import typings.yandexDashMoneyDashSdk.YandexMoneySDK.ExternalPayment.GetInstanceIdResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * intended for internal use in the GreenSock tweening platform. It is meant to be very fast and lightweight.
   */
 class SimpleTimeline ()
-  extends typings.gsap.gsapNs.SimpleTimeline {
+  extends typings.gsap.gsap.SimpleTimeline {
   def this(vars: js.Any) = this()
 }
 

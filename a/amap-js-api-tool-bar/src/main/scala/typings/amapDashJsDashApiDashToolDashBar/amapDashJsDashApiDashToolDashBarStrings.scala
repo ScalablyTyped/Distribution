@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashToolDashBar
 
-import typings.amapDashJsDashApiDashToolDashBar.AMapNs.ToolBarNs.Position
+import typings.amapDashJsDashApiDashToolDashBar.AMap.ToolBar.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

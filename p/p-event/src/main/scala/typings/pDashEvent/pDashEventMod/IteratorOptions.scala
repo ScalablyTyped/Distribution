@@ -20,7 +20,7 @@ trait IteratorOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedT
 object IteratorOptions {
   @scala.inline
   def apply[EmittedType /* <: js.Array[_] */](
-    filter: FilterFunction[EmittedType] = null,
+    filter: EmittedType => Boolean = null,
     limit: Int | Double = null,
     multiArgs: js.UndefOr[Boolean] = js.undefined,
     rejectionEvents: js.Array[String | js.Symbol] = null,
@@ -28,7 +28,7 @@ object IteratorOptions {
     timeout: Int | Double = null
   ): IteratorOptions[EmittedType] = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)

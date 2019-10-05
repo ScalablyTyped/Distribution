@@ -17,13 +17,14 @@ object SettingItemProps {
   @scala.inline
   def apply(
     action: ReactElement,
-    title: ReactNode,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledReason: ReactNode = null
+    disabledReason: ReactNode = null,
+    title: ReactNode = null
   ): SettingItemProps = {
-    val __obj = js.Dynamic.literal(action = action, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingItemProps]
   }
 }

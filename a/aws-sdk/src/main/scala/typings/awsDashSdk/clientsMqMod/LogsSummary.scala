@@ -30,9 +30,9 @@ trait LogsSummary extends js.Object {
 object LogsSummary {
   @scala.inline
   def apply(
-    Audit: js.UndefOr[__boolean] = js.undefined,
+    Audit: js.UndefOr[Boolean] = js.undefined,
     AuditLogGroup: __string = null,
-    General: js.UndefOr[__boolean] = js.undefined,
+    General: js.UndefOr[Boolean] = js.undefined,
     GeneralLogGroup: __string = null,
     Pending: PendingLogs = null
   ): LogsSummary = {

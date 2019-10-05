@@ -24,11 +24,11 @@ object GlobalTableGlobalSecondaryIndexSettingsUpdate {
   def apply(
     IndexName: IndexName,
     ProvisionedWriteCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
-    ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+    ProvisionedWriteCapacityUnits: Int | scala.Double = null
   ): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
     val __obj = js.Dynamic.literal(IndexName = IndexName)
     if (ProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettingsUpdate")(ProvisionedWriteCapacityAutoScalingSettingsUpdate)
-    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits)
+    if (ProvisionedWriteCapacityUnits != null) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
   }
 }

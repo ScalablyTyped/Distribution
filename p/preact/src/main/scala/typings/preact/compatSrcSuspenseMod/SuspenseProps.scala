@@ -12,9 +12,10 @@ trait SuspenseProps extends js.Object {
 
 object SuspenseProps {
   @scala.inline
-  def apply(fallback: ComponentChildren, children: ComponentChildren = null): SuspenseProps = {
-    val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
+  def apply(children: ComponentChildren = null, fallback: ComponentChildren = null): SuspenseProps = {
+    val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseProps]
   }
 }

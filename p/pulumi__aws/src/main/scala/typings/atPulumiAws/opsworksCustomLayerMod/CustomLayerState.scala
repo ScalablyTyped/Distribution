@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksCustomLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.CustomLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.CustomLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

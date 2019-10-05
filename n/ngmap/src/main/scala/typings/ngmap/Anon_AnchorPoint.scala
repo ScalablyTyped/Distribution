@@ -1,12 +1,12 @@
 package typings.ngmap
 
-import typings.googlemaps.googleNs.mapsNs.Animation
-import typings.googlemaps.googleNs.mapsNs.Icon
-import typings.googlemaps.googleNs.mapsNs.Map
-import typings.googlemaps.googleNs.mapsNs.MarkerShape
-import typings.googlemaps.googleNs.mapsNs.Point
-import typings.googlemaps.googleNs.mapsNs.StreetViewPanorama
-import typings.googlemaps.googleNs.mapsNs.Symbol
+import typings.googlemaps.google.maps.Animation
+import typings.googlemaps.google.maps.Icon
+import typings.googlemaps.google.maps.Map
+import typings.googlemaps.google.maps.MarkerShape
+import typings.googlemaps.google.maps.Point
+import typings.googlemaps.google.maps.StreetViewPanorama
+import typings.googlemaps.google.maps.Symbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

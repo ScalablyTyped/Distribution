@@ -1,6 +1,6 @@
 package typings.reactDashImgpro.reactDashImgproMod
 
-import typings.reactDashImgpro.reactDashImgproMod.ReactImgproNs.ProcessImage
+import typings.reactDashImgpro.reactDashImgproMod.ReactImgpro.ProcessImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

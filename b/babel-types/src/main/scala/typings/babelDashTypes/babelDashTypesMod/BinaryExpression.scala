@@ -58,3 +58,21 @@ object BinaryExpression {
   }
 }
 
+@JSImport("babel-types", "binaryExpression")
+@js.native
+object binaryExpression extends js.Object {
+  def apply(): BinaryExpression = js.native
+  def apply(
+    operator: `+` | `-` | `/` | `%` | typings.babelDashTypes.babelDashTypesStrings.`*` | `**` | `&` | typings.babelDashTypes.babelDashTypesStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`
+  ): BinaryExpression = js.native
+  def apply(
+    operator: `+` | `-` | `/` | `%` | typings.babelDashTypes.babelDashTypesStrings.`*` | `**` | `&` | typings.babelDashTypes.babelDashTypesStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`,
+    left: Expression
+  ): BinaryExpression = js.native
+  def apply(
+    operator: `+` | `-` | `/` | `%` | typings.babelDashTypes.babelDashTypesStrings.`*` | `**` | `&` | typings.babelDashTypes.babelDashTypesStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`,
+    left: Expression,
+    right: Expression
+  ): BinaryExpression = js.native
+}
+

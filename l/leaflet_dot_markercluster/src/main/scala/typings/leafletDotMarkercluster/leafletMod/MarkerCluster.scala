@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.MarkerCluster")
+@JSImport("leaflet", "MarkerCluster")
 @js.native
 class MarkerCluster ()
   extends Marker[js.Any] {

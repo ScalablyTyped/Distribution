@@ -50,3 +50,52 @@ object DeclareExportDeclaration {
   }
 }
 
+@JSImport("@babel/types", "declareExportDeclaration")
+@js.native
+object declareExportDeclaration extends js.Object {
+  def apply(): DeclareExportDeclaration = js.native
+  def apply(declaration: Null, specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier]): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Null,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: Null,
+    _default: Boolean
+  ): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Null,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral
+  ): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Null,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    _default: Boolean
+  ): DeclareExportDeclaration = js.native
+  def apply(declaration: Null, specifiers: Null, source: Null, _default: Boolean): DeclareExportDeclaration = js.native
+  def apply(declaration: Null, specifiers: Null, source: StringLiteral): DeclareExportDeclaration = js.native
+  def apply(declaration: Null, specifiers: Null, source: StringLiteral, _default: Boolean): DeclareExportDeclaration = js.native
+  def apply(declaration: Flow): DeclareExportDeclaration = js.native
+  def apply(declaration: Flow, specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier]): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Flow,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: Null,
+    _default: Boolean
+  ): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Flow,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral
+  ): DeclareExportDeclaration = js.native
+  def apply(
+    declaration: Flow,
+    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    _default: Boolean
+  ): DeclareExportDeclaration = js.native
+  def apply(declaration: Flow, specifiers: Null, source: Null, _default: Boolean): DeclareExportDeclaration = js.native
+  def apply(declaration: Flow, specifiers: Null, source: StringLiteral): DeclareExportDeclaration = js.native
+  def apply(declaration: Flow, specifiers: Null, source: StringLiteral, _default: Boolean): DeclareExportDeclaration = js.native
+}
+

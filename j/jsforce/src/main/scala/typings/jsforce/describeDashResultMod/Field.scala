@@ -104,23 +104,23 @@ object Field {
     controllerName: maybe[String] = null,
     defaultValue: maybe[String | Boolean] = null,
     defaultValueFormula: maybe[String] = null,
-    digits: maybe[Double] = null,
-    displayLocationInDecimal: maybe[Boolean] = null,
+    digits: Int | Double = null,
+    displayLocationInDecimal: js.UndefOr[Boolean] = js.undefined,
     encrypted: maybe[`true`] = null,
     extraTypeInfo: maybe[ExtraTypeInfo] = null,
     filteredLookupInfo: maybe[FilteredLookupInfo] = null,
     formula: maybe[String] = null,
-    highScaleNumber: maybe[Boolean] = null,
+    highScaleNumber: js.UndefOr[Boolean] = js.undefined,
     inlineHelpText: maybe[String] = null,
     mask: maybe[String] = null,
     maskType: maybe[String] = null,
     picklistValues: maybe[js.Array[PicklistEntry]] = null,
-    precision: maybe[Double] = null,
+    precision: Int | Double = null,
     referenceTargetField: maybe[String] = null,
     referenceTo: maybe[js.Array[String]] = null,
     relationshipName: maybe[String] = null,
-    relationshipOrder: maybe[Double] = null,
-    writeRequiresMasterRead: maybe[Boolean] = null
+    relationshipOrder: Int | Double = null,
+    writeRequiresMasterRead: js.UndefOr[Boolean] = js.undefined
   ): Field = {
     val __obj = js.Dynamic.literal(aggregatable = aggregatable, autonumber = autonumber, byteLength = byteLength, calculated = calculated, cascadeDelete = cascadeDelete, caseSensitive = caseSensitive, createable = createable, custom = custom, defaultedOnCreate = defaultedOnCreate, dependentPicklist = dependentPicklist, deprecatedAndHidden = deprecatedAndHidden, externalId = externalId, filterable = filterable, groupable = groupable, htmlFormatted = htmlFormatted, idLookup = idLookup, label = label, length = length, name = name, nameField = nameField, namePointing = namePointing, nillable = nillable, permissionable = permissionable, polymorphicForeignKey = polymorphicForeignKey, queryByDistance = queryByDistance, restrictedPicklist = restrictedPicklist, scale = scale, searchPrefilterable = searchPrefilterable, soapType = soapType, sortable = sortable, unique = unique, updateable = updateable)
     __obj.updateDynamic("type")(`type`)
@@ -130,12 +130,12 @@ object Field {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (defaultValueFormula != null) __obj.updateDynamic("defaultValueFormula")(defaultValueFormula.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (displayLocationInDecimal != null) __obj.updateDynamic("displayLocationInDecimal")(displayLocationInDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayLocationInDecimal)) __obj.updateDynamic("displayLocationInDecimal")(displayLocationInDecimal)
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (extraTypeInfo != null) __obj.updateDynamic("extraTypeInfo")(extraTypeInfo.asInstanceOf[js.Any])
     if (filteredLookupInfo != null) __obj.updateDynamic("filteredLookupInfo")(filteredLookupInfo.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (highScaleNumber != null) __obj.updateDynamic("highScaleNumber")(highScaleNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(highScaleNumber)) __obj.updateDynamic("highScaleNumber")(highScaleNumber)
     if (inlineHelpText != null) __obj.updateDynamic("inlineHelpText")(inlineHelpText.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (maskType != null) __obj.updateDynamic("maskType")(maskType.asInstanceOf[js.Any])
@@ -145,7 +145,7 @@ object Field {
     if (referenceTo != null) __obj.updateDynamic("referenceTo")(referenceTo.asInstanceOf[js.Any])
     if (relationshipName != null) __obj.updateDynamic("relationshipName")(relationshipName.asInstanceOf[js.Any])
     if (relationshipOrder != null) __obj.updateDynamic("relationshipOrder")(relationshipOrder.asInstanceOf[js.Any])
-    if (writeRequiresMasterRead != null) __obj.updateDynamic("writeRequiresMasterRead")(writeRequiresMasterRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeRequiresMasterRead)) __obj.updateDynamic("writeRequiresMasterRead")(writeRequiresMasterRead)
     __obj.asInstanceOf[Field]
   }
 }

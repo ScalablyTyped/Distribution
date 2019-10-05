@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSticky
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashSticky.SemanticUINs.Sticky
+import typings.semanticDashUiDashSticky.SemanticUI.Sticky
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

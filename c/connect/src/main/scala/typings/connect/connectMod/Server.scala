@@ -1,6 +1,6 @@
 package typings.connect.connectMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js

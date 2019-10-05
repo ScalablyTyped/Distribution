@@ -3,7 +3,7 @@ package typings.atOracleOraclejet
 import typings.atOracleOraclejet.atOracleOraclejetStrings.edit
 import typings.atOracleOraclejet.atOracleOraclejetStrings.navigation
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ContextStatus
+import typings.atOracleOraclejet.ojtableMod.ojTable.ContextStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

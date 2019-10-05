@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotBooks
 
-import typings.gapiDotClientDotBooks.gapiNs.clientNs.booksNs.Volumeseriesinfo
+import typings.gapiDotClientDotBooks.gapi.client.books.Volumeseriesinfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

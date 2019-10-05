@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.scaleRange
+import typings.arcgisDashJsDashApi.__esri.scaleRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

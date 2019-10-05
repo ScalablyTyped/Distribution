@@ -33,15 +33,15 @@ object PublicIpv4Pool {
     Description: String = null,
     PoolAddressRanges: PublicIpv4PoolRangeSet = null,
     PoolId: String = null,
-    TotalAddressCount: js.UndefOr[Integer] = js.undefined,
-    TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
+    TotalAddressCount: Int | scala.Double = null,
+    TotalAvailableAddressCount: Int | scala.Double = null
   ): PublicIpv4Pool = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (PoolAddressRanges != null) __obj.updateDynamic("PoolAddressRanges")(PoolAddressRanges)
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId)
-    if (!js.isUndefined(TotalAddressCount)) __obj.updateDynamic("TotalAddressCount")(TotalAddressCount)
-    if (!js.isUndefined(TotalAvailableAddressCount)) __obj.updateDynamic("TotalAvailableAddressCount")(TotalAvailableAddressCount)
+    if (TotalAddressCount != null) __obj.updateDynamic("TotalAddressCount")(TotalAddressCount.asInstanceOf[js.Any])
+    if (TotalAvailableAddressCount != null) __obj.updateDynamic("TotalAvailableAddressCount")(TotalAvailableAddressCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicIpv4Pool]
   }
 }

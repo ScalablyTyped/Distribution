@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRuleGroupMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.RuleGroupActivatedRule
+import typings.atPulumiAws.typesInputMod.wafregional.RuleGroupActivatedRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

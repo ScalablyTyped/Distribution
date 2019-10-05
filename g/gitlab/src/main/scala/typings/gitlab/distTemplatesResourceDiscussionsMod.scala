@@ -1,0 +1,68 @@
+package typings.gitlab
+
+import typings.gitlab.distInfrastructureMod.BaseRequestOptions
+import typings.gitlab.distInfrastructureMod.BaseService
+import typings.gitlab.distInfrastructureMod.BaseServiceOptions
+import typings.gitlab.distInfrastructureMod.GetResponse
+import typings.gitlab.distInfrastructureMod.PaginatedRequestOptions
+import typings.gitlab.distInfrastructureMod.Sudo
+import typings.gitlab.distServicesMod.DiscussionId
+import typings.gitlab.distServicesMod.NoteId
+import typings.gitlab.distServicesMod.ResourceId
+import typings.gitlab.distTemplatesResourceDiscussionsMod.ResourceDiscussions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("gitlab/dist/templates/ResourceDiscussions", JSImport.Namespace)
+@js.native
+object distTemplatesResourceDiscussionsMod extends js.Object {
+  @js.native
+  trait ResourceDiscussions extends BaseService {
+    var resource2Type: String = js.native
+    def addNote(
+      resourceId: ResourceId,
+      resource2Id: ResourceId,
+      discussionId: DiscussionId,
+      noteId: NoteId,
+      content: String
+    ): js.Promise[js.Object] = js.native
+    def addNote(
+      resourceId: ResourceId,
+      resource2Id: ResourceId,
+      discussionId: DiscussionId,
+      noteId: NoteId,
+      content: String,
+      options: BaseRequestOptions
+    ): js.Promise[js.Object] = js.native
+    def all(resourceId: ResourceId, resource2Id: ResourceId): js.Promise[GetResponse] = js.native
+    def all(resourceId: ResourceId, resource2Id: ResourceId, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def create(resourceId: ResourceId, resource2Id: ResourceId, content: String): js.Promise[js.Object] = js.native
+    def create(resourceId: ResourceId, resource2Id: ResourceId, content: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def editNote(resourceId: ResourceId, resource2Id: ResourceId, discussionId: DiscussionId, noteId: NoteId): js.Promise[js.Object] = js.native
+    def editNote(
+      resourceId: ResourceId,
+      resource2Id: ResourceId,
+      discussionId: DiscussionId,
+      noteId: NoteId,
+      options: BaseRequestOptions
+    ): js.Promise[js.Object] = js.native
+    def removeNote(resourceId: ResourceId, resource2Id: ResourceId, discussionId: DiscussionId, noteId: NoteId): js.Promise[js.Object] = js.native
+    def removeNote(
+      resourceId: ResourceId,
+      resource2Id: ResourceId,
+      discussionId: DiscussionId,
+      noteId: NoteId,
+      options: Sudo
+    ): js.Promise[js.Object] = js.native
+    def show(resourceId: ResourceId, resource2Id: ResourceId, discussionId: DiscussionId): js.Promise[GetResponse] = js.native
+    def show(resourceId: ResourceId, resource2Id: ResourceId, discussionId: DiscussionId, options: Sudo): js.Promise[GetResponse] = js.native
+  }
+  
+  @js.native
+  class default protected () extends ResourceDiscussions {
+    def this(resourceType: String, resource2Type: String, options: BaseServiceOptions) = this()
+  }
+  
+}
+

@@ -26,7 +26,7 @@ trait ResultByTime extends js.Object {
 object ResultByTime {
   @scala.inline
   def apply(
-    Estimated: js.UndefOr[Estimated] = js.undefined,
+    Estimated: js.UndefOr[Boolean] = js.undefined,
     Groups: Groups = null,
     TimePeriod: DateInterval = null,
     Total: Metrics = null

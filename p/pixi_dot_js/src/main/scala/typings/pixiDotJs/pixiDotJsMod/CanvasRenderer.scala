@@ -2,7 +2,7 @@ package typings.pixiDotJs.pixiDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pixiDotJs.Anon_Renderer
-import typings.pixiDotJs.PIXINs.RendererOptions
+import typings.pixiDotJs.PIXI.RendererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 // plugintarget mixin end
 class CanvasRenderer ()
-  extends typings.pixiDotJs.PIXINs.CanvasRenderer {
+  extends typings.pixiDotJs.PIXI.CanvasRenderer {
   def this(options: RendererOptions) = this()
   def this(screenWidth: Double) = this()
   def this(screenWidth: Double, screenHeight: Double) = this()

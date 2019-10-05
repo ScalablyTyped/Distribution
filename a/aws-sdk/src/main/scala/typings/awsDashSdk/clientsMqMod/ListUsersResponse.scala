@@ -27,13 +27,13 @@ object ListUsersResponse {
   @scala.inline
   def apply(
     BrokerId: __string = null,
-    MaxResults: js.UndefOr[__integerMin5Max100] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: __string = null,
     Users: __listOfUserSummary = null
   ): ListUsersResponse = {
     val __obj = js.Dynamic.literal()
     if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Users != null) __obj.updateDynamic("Users")(Users)
     __obj.asInstanceOf[ListUsersResponse]

@@ -1,5 +1,6 @@
 package typings.pg.pgMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Duplex
 import typings.pg.pgNumbers.`false`
 import scala.scalajs.js
@@ -54,4 +55,8 @@ object Defaults {
     __obj.asInstanceOf[Defaults]
   }
 }
+
+@JSImport("pg", "defaults")
+@js.native
+object defaults extends TopLevel[Defaults with ClientConfig]
 

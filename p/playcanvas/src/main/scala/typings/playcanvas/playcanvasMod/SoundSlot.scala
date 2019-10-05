@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SoundSlot")
 @js.native
 class SoundSlot protected ()
-  extends typings.playcanvas.pcNs.SoundSlot {
-  def this(component: typings.playcanvas.pcNs.SoundComponent, name: String, options: Anon_Asset) = this()
+  extends typings.playcanvas.pc.SoundSlot {
+  def this(component: typings.playcanvas.pc.SoundComponent, name: String, options: Anon_Asset) = this()
 }
 

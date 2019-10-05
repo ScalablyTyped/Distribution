@@ -39,3 +39,9 @@ object JSXNamespacedName {
   }
 }
 
+@JSImport("@babel/types", "jsxNamespacedName")
+@js.native
+object jsxNamespacedName extends js.Object {
+  def apply(namespace: JSXIdentifier, name: JSXIdentifier): JSXNamespacedName = js.native
+}
+

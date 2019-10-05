@@ -1,7 +1,7 @@
 package typings.gulpDashStripDashComments.gulpDashStripDashCommentsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.gulpDashStripDashComments.gulpDashStripDashCommentsMod.stripCommentsNs.Strip
+import typings.gulpDashStripDashComments.gulpDashStripDashCommentsMod.stripComments.Strip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

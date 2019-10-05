@@ -16,13 +16,14 @@ object Anon_BlankTarget {
   @scala.inline
   def apply(
     href: String,
-    title: ReactNode,
     blankTarget: js.UndefOr[Boolean] = js.undefined,
-    key: String = null
+    key: String = null,
+    title: ReactNode = null
   ): Anon_BlankTarget = {
-    val __obj = js.Dynamic.literal(href = href, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href)
     if (!js.isUndefined(blankTarget)) __obj.updateDynamic("blankTarget")(blankTarget)
     if (key != null) __obj.updateDynamic("key")(key)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlankTarget]
   }
 }

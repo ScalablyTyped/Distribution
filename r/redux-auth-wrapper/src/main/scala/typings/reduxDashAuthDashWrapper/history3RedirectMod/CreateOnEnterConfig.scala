@@ -17,18 +17,18 @@ trait CreateOnEnterConfig[State] extends AuthConfig {
 object CreateOnEnterConfig {
   @scala.inline
   def apply[State](
-    authenticatedSelector: StateMutateSelector[State, Boolean],
+    authenticatedSelector: (State, State) => Boolean,
     redirectPath: String | (StateMutateSelector[State, String]),
     AuthenticatingComponent: ReactType[_] = null,
     allowRedirectBack: Boolean | (StateMutateSelector[State, Boolean]) = null,
-    authenticatingSelector: StateMutateSelector[State, Boolean] = null,
+    authenticatingSelector: (State, State) => Boolean = null,
     redirectQueryParamName: String = null,
     wrapperDisplayName: String = null
   ): CreateOnEnterConfig[State] = {
-    val __obj = js.Dynamic.literal(authenticatedSelector = authenticatedSelector, redirectPath = redirectPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authenticatedSelector = js.Any.fromFunction2(authenticatedSelector), redirectPath = redirectPath.asInstanceOf[js.Any])
     if (AuthenticatingComponent != null) __obj.updateDynamic("AuthenticatingComponent")(AuthenticatingComponent.asInstanceOf[js.Any])
     if (allowRedirectBack != null) __obj.updateDynamic("allowRedirectBack")(allowRedirectBack.asInstanceOf[js.Any])
-    if (authenticatingSelector != null) __obj.updateDynamic("authenticatingSelector")(authenticatingSelector)
+    if (authenticatingSelector != null) __obj.updateDynamic("authenticatingSelector")(js.Any.fromFunction2(authenticatingSelector))
     if (redirectQueryParamName != null) __obj.updateDynamic("redirectQueryParamName")(redirectQueryParamName)
     if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName)
     __obj.asInstanceOf[CreateOnEnterConfig[State]]

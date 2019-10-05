@@ -1,7 +1,7 @@
 package typings.blissfuljs
 
-import typings.blissfuljs.BlissNSNs.BlissStatic
-import typings.blissfuljs.BlissNSNs.BlissStaticCollection
+import typings.blissfuljs.BlissNS.BlissStatic
+import typings.blissfuljs.BlissNS.BlissStaticCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

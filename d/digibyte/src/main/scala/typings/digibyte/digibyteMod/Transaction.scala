@@ -1,9 +1,9 @@
 package typings.digibyte.digibyteMod
 
-import typings.digibyte.digibyteMod.TransactionNs.Input
-import typings.digibyte.digibyteMod.TransactionNs.Output
-import typings.digibyte.digibyteMod.TransactionNs.UnspentOutput
-import typings.digibyte.digibyteMod.cryptoNs.Signature
+import typings.digibyte.digibyteMod.Transaction.Input
+import typings.digibyte.digibyteMod.Transaction.Output
+import typings.digibyte.digibyteMod.Transaction.UnspentOutput
+import typings.digibyte.digibyteMod.crypto.Signature
 import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
@@ -46,5 +46,49 @@ class Transaction () extends js.Object {
   def to(address: js.Array[Address], amount: Double): this.type = js.native
   def to(address: Address, amount: Double): this.type = js.native
   def verify(): String | Boolean = js.native
+}
+
+@JSImport("digibyte", "Transaction")
+@js.native
+object Transaction extends js.Object {
+  @js.native
+  class Input () extends js.Object {
+    val output: js.UndefOr[Output] = js.native
+    val outputIndex: Double = js.native
+    val prevTxId: Buffer = js.native
+    val script: Script = js.native
+    val sequenceNumber: Double = js.native
+  }
+  
+  @js.native
+  class Output protected () extends js.Object {
+    def this(data: js.Object) = this()
+    val satoshis: Double = js.native
+    val script: Script = js.native
+    def inspect(): String = js.native
+    def setScript(script: String): this.type = js.native
+    def setScript(script: Script): this.type = js.native
+    def setScript(script: Buffer): this.type = js.native
+    def toObject(): js.Object = js.native
+  }
+  
+  @js.native
+  class UnspentOutput protected () extends js.Object {
+    def this(data: js.Object) = this()
+    val address: Address = js.native
+    val outputIndex: Double = js.native
+    val satoshis: Double = js.native
+    val script: Script = js.native
+    val txId: String = js.native
+    def inspect(): String = js.native
+    def toObject(): this.type = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object UnspentOutput extends js.Object {
+    def fromObject(o: js.Object): UnspentOutput = js.native
+  }
+  
 }
 

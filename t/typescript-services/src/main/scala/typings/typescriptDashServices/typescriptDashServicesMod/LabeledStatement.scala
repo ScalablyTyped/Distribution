@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "LabeledStatement")
 @js.native
 class LabeledStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.LabeledStatement {
+  extends typings.typescriptDashServices.TypeScript.LabeledStatement {
   def this(
-    identifier: typings.typescriptDashServices.TypeScriptNs.Identifier,
-    statement: typings.typescriptDashServices.TypeScriptNs.AST
+    identifier: typings.typescriptDashServices.TypeScript.Identifier,
+    statement: typings.typescriptDashServices.TypeScript.AST
   ) = this()
 }
 

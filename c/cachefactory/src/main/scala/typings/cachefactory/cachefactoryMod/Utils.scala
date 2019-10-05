@@ -1,5 +1,6 @@
 package typings.cachefactory.cachefactoryMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,4 +32,8 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
 }
+
+@JSImport("cachefactory", "utils")
+@js.native
+object utils extends TopLevel[Utils]
 

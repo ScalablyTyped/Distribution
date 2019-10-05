@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPortalPortalItemMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItemProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.PortalItemProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

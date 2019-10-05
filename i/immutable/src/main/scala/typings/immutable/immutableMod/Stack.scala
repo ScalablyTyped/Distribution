@@ -1,6 +1,6 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.CollectionNs.Indexed
+import typings.immutable.immutableMod.Collection.Indexed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -103,5 +103,20 @@ trait Stack[T] extends Indexed[T] {
     * @see `Map#withMutations`
     */
   def withMutations(mutator: js.Function1[/* mutable */ this.type, _]): this.type = js.native
+}
+
+@JSImport("immutable", "Stack")
+@js.native
+object Stack extends js.Object {
+  def apply(): Stack[_] = js.native
+  def apply[T](collection: Iterable[T]): Stack[T] = js.native
+  /**
+    * True if the provided value is a Stack
+    */
+  def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ Boolean = js.native
+  /**
+    * Creates a new Stack containing `values`.
+    */
+  def of[T](values: T*): Stack[T] = js.native
 }
 

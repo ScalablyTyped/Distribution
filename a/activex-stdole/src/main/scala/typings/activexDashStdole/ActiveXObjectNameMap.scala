@@ -1,14 +1,14 @@
 package typings.activexDashStdole
 
-import typings.activexDashStdole.stdoleNs.StdFont
-import typings.activexDashStdole.stdoleNs.StdPicture
+import typings.activexDashStdole.stdole.StdFont
+import typings.activexDashStdole.stdole.StdPicture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var StdFont: typings.activexDashStdole.stdoleNs.StdFont
-  var StdPicture: typings.activexDashStdole.stdoleNs.StdPicture
+  var StdFont: typings.activexDashStdole.stdole.StdFont
+  var StdPicture: typings.activexDashStdole.stdole.StdPicture
 }
 
 object ActiveXObjectNameMap {

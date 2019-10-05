@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_notify"
-version := "1.5-dt-20190213Z-ee1dfd"
-scalaVersion := "2.12.9"
+version := "1.5-dt-20190213Z-b11493"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,8 +1,8 @@
 package typings.activexDashDiskquota
 
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.AccountStatusConstants
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.QuotaStateConstants
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.UserNameResolutionConstants
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.AccountStatusConstants
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.QuotaStateConstants
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.UserNameResolutionConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

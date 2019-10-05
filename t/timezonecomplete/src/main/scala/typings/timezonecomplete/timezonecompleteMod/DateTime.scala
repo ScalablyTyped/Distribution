@@ -1,6 +1,7 @@
 package typings.timezonecomplete.timezonecompleteMod
 
 import typings.std.Date
+import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
 import typings.timezonecomplete.distLibLocaleMod.PartialLocale
 import typings.timezonecomplete.distLibTimesourceMod.TimeSource
 import scala.scalajs.js
@@ -75,7 +76,7 @@ class DateTime ()
     * @throws timezonecomplete.Argument.GetFuncs if the getFuncs argument is invalid
     * @throws timezonecomplete.Argument.TimeZone if the time zone argument is invalid
     */
-  def this(date: Date, getFuncs: typings.timezonecomplete.distLibJavascriptMod.DateFunctions) = this()
+  def this(date: Date, getFuncs: DateFunctions) = this()
   def this(isoString: String, timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone) = this()
   def this(
     tm: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
@@ -89,7 +90,7 @@ class DateTime ()
   ) = this()
   def this(
     date: Date,
-    getFuncs: typings.timezonecomplete.distLibJavascriptMod.DateFunctions,
+    getFuncs: DateFunctions,
     timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
   ) = this()
   /**

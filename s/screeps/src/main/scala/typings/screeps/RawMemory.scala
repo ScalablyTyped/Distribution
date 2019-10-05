@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,4 +76,8 @@ trait RawMemory extends js.Object {
     */
   def setPublicSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
 }
+
+@JSGlobal("RawMemory")
+@js.native
+object RawMemory extends TopLevel[RawMemory]
 

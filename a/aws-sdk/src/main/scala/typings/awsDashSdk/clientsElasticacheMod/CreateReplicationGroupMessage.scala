@@ -128,10 +128,10 @@ object CreateReplicationGroupMessage {
   def apply(
     ReplicationGroupDescription: String,
     ReplicationGroupId: String,
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     AuthToken: String = null,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomaticFailoverEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
     CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
@@ -141,20 +141,20 @@ object CreateReplicationGroupMessage {
     KmsKeyId: String = null,
     NodeGroupConfiguration: NodeGroupConfigurationList = null,
     NotificationTopicArn: String = null,
-    NumCacheClusters: js.UndefOr[IntegerOptional] = js.undefined,
-    NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    NumCacheClusters: Int | scala.Double = null,
+    NumNodeGroups: Int | scala.Double = null,
+    Port: Int | scala.Double = null,
     PreferredCacheClusterAZs: AvailabilityZonesList = null,
     PreferredMaintenanceWindow: String = null,
     PrimaryClusterId: String = null,
-    ReplicasPerNodeGroup: js.UndefOr[IntegerOptional] = js.undefined,
+    ReplicasPerNodeGroup: Int | scala.Double = null,
     SecurityGroupIds: SecurityGroupIdsList = null,
     SnapshotArns: SnapshotArnsList = null,
     SnapshotName: String = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null,
     Tags: TagList = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupDescription = ReplicationGroupDescription, ReplicationGroupId = ReplicationGroupId)
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled)
@@ -170,17 +170,17 @@ object CreateReplicationGroupMessage {
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (NodeGroupConfiguration != null) __obj.updateDynamic("NodeGroupConfiguration")(NodeGroupConfiguration)
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn)
-    if (!js.isUndefined(NumCacheClusters)) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters)
-    if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (NumCacheClusters != null) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters.asInstanceOf[js.Any])
+    if (NumNodeGroups != null) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredCacheClusterAZs != null) __obj.updateDynamic("PreferredCacheClusterAZs")(PreferredCacheClusterAZs)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (PrimaryClusterId != null) __obj.updateDynamic("PrimaryClusterId")(PrimaryClusterId)
-    if (!js.isUndefined(ReplicasPerNodeGroup)) __obj.updateDynamic("ReplicasPerNodeGroup")(ReplicasPerNodeGroup)
+    if (ReplicasPerNodeGroup != null) __obj.updateDynamic("ReplicasPerNodeGroup")(ReplicasPerNodeGroup.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
     if (SnapshotArns != null) __obj.updateDynamic("SnapshotArns")(SnapshotArns)
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled)

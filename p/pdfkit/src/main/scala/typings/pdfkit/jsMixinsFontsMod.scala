@@ -1,7 +1,7 @@
 package typings.pdfkit
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pdfkit.PDFKitNs.MixinsNs.PDFFont
+import typings.pdfkit.PDFKit.Mixins.PDFFont
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,14 +13,5 @@ trait SVGAnimatedString extends js.Object {
 
 @JSGlobal("SVGAnimatedString")
 @js.native
-class SVGAnimatedStringCls () extends SVGAnimatedString {
-  /* CompleteClass */
-  override val animVal: java.lang.String = js.native
-  /* CompleteClass */
-  override var baseVal: java.lang.String = js.native
-}
-
-@JSGlobal("SVGAnimatedString")
-@js.native
 object SVGAnimatedString extends Instantiable0[SVGAnimatedString]
 

@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObject
+import typings.winrtDashUwp.Windows.Devices.Enumeration.Pnp.PnpObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

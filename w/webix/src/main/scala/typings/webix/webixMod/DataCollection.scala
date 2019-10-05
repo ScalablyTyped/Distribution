@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,7 +108,5 @@ trait DataCollection extends js.Object {
 
 @JSImport("webix", "DataCollection")
 @js.native
-class DataCollectionCls () extends DataCollection {
-  def this(config: DataCollectionConfig) = this()
-}
+object DataCollection extends TopLevel[DataCollectionFactory]
 

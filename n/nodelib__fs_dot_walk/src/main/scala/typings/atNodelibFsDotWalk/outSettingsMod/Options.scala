@@ -1,6 +1,8 @@
 package typings.atNodelibFsDotWalk.outSettingsMod
 
 import typings.atNodelibFsDotScandir.outAdaptersFsMod.FileSystemAdapter
+import typings.atNodelibFsDotWalk.outTypesMod.Entry
+import typings.atNodelibFsDotWalk.outTypesMod.Errno
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,9 +26,9 @@ object Options {
   def apply(
     basePath: String = null,
     concurrency: Int | Double = null,
-    deepFilter: DeepFilterFunction = null,
-    entryFilter: EntryFilterFunction = null,
-    errorFilter: ErrorFilterFunction = null,
+    deepFilter: Entry => Boolean = null,
+    entryFilter: Entry => Boolean = null,
+    errorFilter: Errno => Boolean = null,
     followSymbolicLinks: js.UndefOr[Boolean] = js.undefined,
     fs: Partial[FileSystemAdapter] = null,
     pathSegmentSeparator: String = null,
@@ -36,9 +38,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath)
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (deepFilter != null) __obj.updateDynamic("deepFilter")(deepFilter)
-    if (entryFilter != null) __obj.updateDynamic("entryFilter")(entryFilter)
-    if (errorFilter != null) __obj.updateDynamic("errorFilter")(errorFilter)
+    if (deepFilter != null) __obj.updateDynamic("deepFilter")(js.Any.fromFunction1(deepFilter))
+    if (entryFilter != null) __obj.updateDynamic("entryFilter")(js.Any.fromFunction1(entryFilter))
+    if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction1(errorFilter))
     if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks)
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (pathSegmentSeparator != null) __obj.updateDynamic("pathSegmentSeparator")(pathSegmentSeparator)

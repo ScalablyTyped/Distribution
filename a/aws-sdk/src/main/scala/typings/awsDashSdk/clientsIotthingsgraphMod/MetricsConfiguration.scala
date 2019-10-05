@@ -17,7 +17,7 @@ trait MetricsConfiguration extends js.Object {
 
 object MetricsConfiguration {
   @scala.inline
-  def apply(cloudMetricEnabled: js.UndefOr[Enabled] = js.undefined, metricRuleRoleArn: RoleArn = null): MetricsConfiguration = {
+  def apply(cloudMetricEnabled: js.UndefOr[Boolean] = js.undefined, metricRuleRoleArn: RoleArn = null): MetricsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cloudMetricEnabled)) __obj.updateDynamic("cloudMetricEnabled")(cloudMetricEnabled)
     if (metricRuleRoleArn != null) __obj.updateDynamic("metricRuleRoleArn")(metricRuleRoleArn)

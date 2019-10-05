@@ -13,6 +13,5 @@ object ^ extends js.Object {
   def apply(requestOpts: typings.request.requestMod.Options, callback: RequestCallback): Anon_Abort = js.native
   def apply(requestOpts: typings.request.requestMod.Options, opts: Options): Anon_Abort = js.native
   def apply(requestOpts: typings.request.requestMod.Options, opts: Options, callback: RequestCallback): Anon_Abort = js.native
-  def getNextRetryDelay(retryNumber: Double): Unit = js.native
 }
 

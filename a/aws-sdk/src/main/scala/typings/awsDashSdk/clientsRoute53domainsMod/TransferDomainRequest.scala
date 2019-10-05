@@ -64,12 +64,12 @@ object TransferDomainRequest {
     RegistrantContact: ContactDetail,
     TechContact: ContactDetail,
     AuthCode: DomainAuthCode = null,
-    AutoRenew: js.UndefOr[Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
     IdnLangCode: LangCode = null,
     Nameservers: NameserverList = null,
-    PrivacyProtectAdminContact: js.UndefOr[Boolean] = js.undefined,
-    PrivacyProtectRegistrantContact: js.UndefOr[Boolean] = js.undefined,
-    PrivacyProtectTechContact: js.UndefOr[Boolean] = js.undefined
+    PrivacyProtectAdminContact: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivacyProtectRegistrantContact: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivacyProtectTechContact: js.UndefOr[scala.Boolean] = js.undefined
   ): TransferDomainRequest = {
     val __obj = js.Dynamic.literal(AdminContact = AdminContact, DomainName = DomainName, DurationInYears = DurationInYears, RegistrantContact = RegistrantContact, TechContact = TechContact)
     if (AuthCode != null) __obj.updateDynamic("AuthCode")(AuthCode)

@@ -76,3 +76,24 @@ object TSDeclareMethod {
   }
 }
 
+@JSImport("@babel/types", "tsDeclareMethod")
+@js.native
+object tsDeclareMethod extends js.Object {
+  def apply(
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    key: Identifier | StringLiteral | NumericLiteral | Expression,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    returnType: js.UndefOr[TSTypeAnnotation | Noop | Null],
+    `abstract`: js.UndefOr[Boolean | Null],
+    access: js.UndefOr[public | `private` | `protected` | Null],
+    accessibility: js.UndefOr[public | `private` | `protected` | Null],
+    async: js.UndefOr[Boolean],
+    computed: js.UndefOr[Boolean],
+    generator: js.UndefOr[Boolean],
+    kind: js.UndefOr[get | set | method | constructor],
+    optional: js.UndefOr[Boolean | Null],
+    _static: js.UndefOr[Boolean]
+  ): TSDeclareMethod = js.native
+}
+

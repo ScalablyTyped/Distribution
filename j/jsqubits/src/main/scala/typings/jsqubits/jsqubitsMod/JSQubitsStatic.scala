@@ -1,7 +1,7 @@
 package typings.jsqubits.jsqubitsMod
 
-import typings.jsqubits.jsqubitsMod.jsqubitsNs.Complex
-import typings.jsqubits.jsqubitsMod.jsqubitsNs.QState
+import typings.jsqubits.jsqubitsMod.jsqubits.Complex
+import typings.jsqubits.jsqubitsMod.jsqubits.QState
 import typings.jsqubits.jsqubitsNumbers.`0DOT0000001`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

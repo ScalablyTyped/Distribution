@@ -1,6 +1,6 @@
 package typings.paypalDashCordovaDashPlugin
 
-import typings.paypalDashCordovaDashPlugin.PayPalCordovaPluginNs.PayPalMobileStatic
+import typings.paypalDashCordovaDashPlugin.PayPalCordovaPlugin.PayPalMobileStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

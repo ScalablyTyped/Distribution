@@ -26,7 +26,7 @@ object AddIpRoutesRequest {
   def apply(
     DirectoryId: DirectoryId,
     IpRoutes: IpRoutes,
-    UpdateSecurityGroupForDirectoryControllers: js.UndefOr[UpdateSecurityGroupForDirectoryControllers] = js.undefined
+    UpdateSecurityGroupForDirectoryControllers: js.UndefOr[Boolean] = js.undefined
   ): AddIpRoutesRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId, IpRoutes = IpRoutes)
     if (!js.isUndefined(UpdateSecurityGroupForDirectoryControllers)) __obj.updateDynamic("UpdateSecurityGroupForDirectoryControllers")(UpdateSecurityGroupForDirectoryControllers)

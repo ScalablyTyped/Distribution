@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotBigquery
 
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.TableReference
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.TableReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

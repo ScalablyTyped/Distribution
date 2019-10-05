@@ -1,6 +1,6 @@
 package typings.activexDashWord
 
-import typings.activexDashOffice.OfficeNs.MsoSyncEventType
+import typings.activexDashOffice.Office.MsoSyncEventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

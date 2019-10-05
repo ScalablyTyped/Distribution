@@ -17,7 +17,7 @@ trait ProjectBadge extends js.Object {
 
 object ProjectBadge {
   @scala.inline
-  def apply(badgeEnabled: js.UndefOr[Boolean] = js.undefined, badgeRequestUrl: String = null): ProjectBadge = {
+  def apply(badgeEnabled: js.UndefOr[scala.Boolean] = js.undefined, badgeRequestUrl: String = null): ProjectBadge = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(badgeEnabled)) __obj.updateDynamic("badgeEnabled")(badgeEnabled)
     if (badgeRequestUrl != null) __obj.updateDynamic("badgeRequestUrl")(badgeRequestUrl)

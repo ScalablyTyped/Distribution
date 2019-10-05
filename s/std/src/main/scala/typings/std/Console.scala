@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,9 +59,9 @@ trait Console extends js.Object {
 
 @JSGlobal("Console")
 @js.native
-class ConsoleCls () extends Console
-
-@JSGlobal("Console")
-@js.native
 object Console extends Instantiable0[Console]
+
+@JSGlobal("console")
+@js.native
+object console extends TopLevel[Console]
 

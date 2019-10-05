@@ -42,24 +42,24 @@ trait CPUUtilization extends js.Object {
 object CPUUtilization {
   @scala.inline
   def apply(
-    IOWait: js.UndefOr[NullableDouble] = js.undefined,
-    IRQ: js.UndefOr[NullableDouble] = js.undefined,
-    Idle: js.UndefOr[NullableDouble] = js.undefined,
-    Nice: js.UndefOr[NullableDouble] = js.undefined,
-    Privileged: js.UndefOr[NullableDouble] = js.undefined,
-    SoftIRQ: js.UndefOr[NullableDouble] = js.undefined,
-    System: js.UndefOr[NullableDouble] = js.undefined,
-    User: js.UndefOr[NullableDouble] = js.undefined
+    IOWait: Int | Double = null,
+    IRQ: Int | Double = null,
+    Idle: Int | Double = null,
+    Nice: Int | Double = null,
+    Privileged: Int | Double = null,
+    SoftIRQ: Int | Double = null,
+    System: Int | Double = null,
+    User: Int | Double = null
   ): CPUUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IOWait)) __obj.updateDynamic("IOWait")(IOWait)
-    if (!js.isUndefined(IRQ)) __obj.updateDynamic("IRQ")(IRQ)
-    if (!js.isUndefined(Idle)) __obj.updateDynamic("Idle")(Idle)
-    if (!js.isUndefined(Nice)) __obj.updateDynamic("Nice")(Nice)
-    if (!js.isUndefined(Privileged)) __obj.updateDynamic("Privileged")(Privileged)
-    if (!js.isUndefined(SoftIRQ)) __obj.updateDynamic("SoftIRQ")(SoftIRQ)
-    if (!js.isUndefined(System)) __obj.updateDynamic("System")(System)
-    if (!js.isUndefined(User)) __obj.updateDynamic("User")(User)
+    if (IOWait != null) __obj.updateDynamic("IOWait")(IOWait.asInstanceOf[js.Any])
+    if (IRQ != null) __obj.updateDynamic("IRQ")(IRQ.asInstanceOf[js.Any])
+    if (Idle != null) __obj.updateDynamic("Idle")(Idle.asInstanceOf[js.Any])
+    if (Nice != null) __obj.updateDynamic("Nice")(Nice.asInstanceOf[js.Any])
+    if (Privileged != null) __obj.updateDynamic("Privileged")(Privileged.asInstanceOf[js.Any])
+    if (SoftIRQ != null) __obj.updateDynamic("SoftIRQ")(SoftIRQ.asInstanceOf[js.Any])
+    if (System != null) __obj.updateDynamic("System")(System.asInstanceOf[js.Any])
+    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUUtilization]
   }
 }

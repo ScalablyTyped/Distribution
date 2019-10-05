@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashPopup
 
-import typings.semanticDashUiDashPopup.SemanticUINs.Popup
-import typings.semanticDashUiDashPopup.SemanticUINs.PopupSettings
+import typings.semanticDashUiDashPopup.SemanticUI.Popup
+import typings.semanticDashUiDashPopup.SemanticUI.PopupSettings
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.`bind clickaway`
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.`bind close on scroll`
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.`bind touch close`

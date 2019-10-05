@@ -1,7 +1,7 @@
 package typings.googleDotVisualization
 
-import typings.googleDotVisualization.googleNs.visualizationNs.ChartLegendAlignment
-import typings.googleDotVisualization.googleNs.visualizationNs.ChartLegendPosition
+import typings.googleDotVisualization.google.visualization.ChartLegendAlignment
+import typings.googleDotVisualization.google.visualization.ChartLegendPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

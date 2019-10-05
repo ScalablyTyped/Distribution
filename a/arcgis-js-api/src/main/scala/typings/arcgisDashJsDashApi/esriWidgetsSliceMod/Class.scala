@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSliceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Slice
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliceProperties
+import typings.arcgisDashJsDashApi.__esri.Slice
+import typings.arcgisDashJsDashApi.__esri.SliceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

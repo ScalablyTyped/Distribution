@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.languageAstMod.FieldDefinitionNode
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
 import typings.graphql.typeDefinitionMod.GraphQLOutputType
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
 import typings.graphqlDashCompose.libUtilsDefinitionsMod.Thunk
 import scala.scalajs.js
@@ -35,8 +36,8 @@ object ComposeFieldConfigAsObject {
     deprecationReason: String = null,
     description: String = null,
     extensions: Extensions = null,
-    resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
-    subscribe: GraphQLFieldResolver[TSource, TContext, StringDictionary[_]] = null
+    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
+    subscribe: (TSource, StringDictionary[_], TContext, /* info */ GraphQLResolveInfo) => js.Any = null
   ): ComposeFieldConfigAsObject[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -47,8 +48,8 @@ object ComposeFieldConfigAsObject {
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
     if (description != null) __obj.updateDynamic("description")(description)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[ComposeFieldConfigAsObject[TSource, TContext, TArgs]]
   }
 }

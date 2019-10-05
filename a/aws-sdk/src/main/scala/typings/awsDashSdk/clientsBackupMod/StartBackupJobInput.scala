@@ -45,18 +45,18 @@ object StartBackupJobInput {
     BackupVaultName: BackupVaultName,
     IamRoleArn: IAMRoleArn,
     ResourceArn: ARN,
-    CompleteWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined,
+    CompleteWindowMinutes: Int | Double = null,
     IdempotencyToken: String = null,
     Lifecycle: Lifecycle = null,
     RecoveryPointTags: Tags = null,
-    StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
+    StartWindowMinutes: Int | Double = null
   ): StartBackupJobInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName, IamRoleArn = IamRoleArn, ResourceArn = ResourceArn)
-    if (!js.isUndefined(CompleteWindowMinutes)) __obj.updateDynamic("CompleteWindowMinutes")(CompleteWindowMinutes)
+    if (CompleteWindowMinutes != null) __obj.updateDynamic("CompleteWindowMinutes")(CompleteWindowMinutes.asInstanceOf[js.Any])
     if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken)
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle)
     if (RecoveryPointTags != null) __obj.updateDynamic("RecoveryPointTags")(RecoveryPointTags)
-    if (!js.isUndefined(StartWindowMinutes)) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes)
+    if (StartWindowMinutes != null) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBackupJobInput]
   }
 }

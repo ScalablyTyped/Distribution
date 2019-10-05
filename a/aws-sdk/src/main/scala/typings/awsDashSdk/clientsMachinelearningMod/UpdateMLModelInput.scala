@@ -21,14 +21,10 @@ trait UpdateMLModelInput extends js.Object {
 
 object UpdateMLModelInput {
   @scala.inline
-  def apply(
-    MLModelId: EntityId,
-    MLModelName: EntityName = null,
-    ScoreThreshold: js.UndefOr[ScoreThreshold] = js.undefined
-  ): UpdateMLModelInput = {
+  def apply(MLModelId: EntityId, MLModelName: EntityName = null, ScoreThreshold: Int | Double = null): UpdateMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId)
     if (MLModelName != null) __obj.updateDynamic("MLModelName")(MLModelName)
-    if (!js.isUndefined(ScoreThreshold)) __obj.updateDynamic("ScoreThreshold")(ScoreThreshold)
+    if (ScoreThreshold != null) __obj.updateDynamic("ScoreThreshold")(ScoreThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMLModelInput]
   }
 }

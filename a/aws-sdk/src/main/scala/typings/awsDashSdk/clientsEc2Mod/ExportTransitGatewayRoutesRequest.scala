@@ -28,7 +28,7 @@ object ExportTransitGatewayRoutesRequest {
   def apply(
     S3Bucket: String,
     TransitGatewayRouteTableId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null
   ): ExportTransitGatewayRoutesRequest = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket, TransitGatewayRouteTableId = TransitGatewayRouteTableId)

@@ -22,7 +22,7 @@ trait SSESpecification extends js.Object {
 object SSESpecification {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[SSEEnabled] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     KMSMasterKeyId: KMSMasterKeyId = null,
     SSEType: SSEType = null
   ): SSESpecification = {

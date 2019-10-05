@@ -22,14 +22,14 @@ trait BulkDeploymentMetrics extends js.Object {
 object BulkDeploymentMetrics {
   @scala.inline
   def apply(
-    InvalidInputRecords: js.UndefOr[__integer] = js.undefined,
-    RecordsProcessed: js.UndefOr[__integer] = js.undefined,
-    RetryAttempts: js.UndefOr[__integer] = js.undefined
+    InvalidInputRecords: Int | Double = null,
+    RecordsProcessed: Int | Double = null,
+    RetryAttempts: Int | Double = null
   ): BulkDeploymentMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InvalidInputRecords)) __obj.updateDynamic("InvalidInputRecords")(InvalidInputRecords)
-    if (!js.isUndefined(RecordsProcessed)) __obj.updateDynamic("RecordsProcessed")(RecordsProcessed)
-    if (!js.isUndefined(RetryAttempts)) __obj.updateDynamic("RetryAttempts")(RetryAttempts)
+    if (InvalidInputRecords != null) __obj.updateDynamic("InvalidInputRecords")(InvalidInputRecords.asInstanceOf[js.Any])
+    if (RecordsProcessed != null) __obj.updateDynamic("RecordsProcessed")(RecordsProcessed.asInstanceOf[js.Any])
+    if (RetryAttempts != null) __obj.updateDynamic("RetryAttempts")(RetryAttempts.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkDeploymentMetrics]
   }
 }

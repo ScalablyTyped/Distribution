@@ -3,6 +3,7 @@ package typings.atAwsDashSdkTypes.buildClientMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atAwsDashSdkTypes.Fn_Config
 import typings.atAwsDashSdkTypes.Fn_ConfigValue
+import typings.atAwsDashSdkTypes.buildMiddlewareMod.MiddlewareStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +39,14 @@ trait ConfigurationPropertyDefinition[InputType, ResolvedType /* <: InputType */
 object ConfigurationPropertyDefinition {
   @scala.inline
   def apply[InputType, ResolvedType /* <: InputType */, ServiceConfiguration /* <: StringDictionary[js.Any] */, ResolvedConfiguration /* <: ServiceConfiguration */](
-    apply: ConfigApplicator[ResolvedConfiguration] = null,
+    apply: (ResolvedConfiguration, /* clientMiddlewareStack */ MiddlewareStack[js.Any, js.Any, js.Any]) => Unit = null,
     defaultProvider: Fn_Config[ResolvedConfiguration, ResolvedType] = null,
     defaultValue: ResolvedType = null,
     normalize: Fn_ConfigValue[InputType, ResolvedConfiguration, ResolvedType] = null,
     required: js.UndefOr[Boolean] = js.undefined
   ): ConfigurationPropertyDefinition[InputType, ResolvedType, ServiceConfiguration, ResolvedConfiguration] = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction2(apply))
     if (defaultProvider != null) __obj.updateDynamic("defaultProvider")(defaultProvider)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(normalize)

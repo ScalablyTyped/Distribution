@@ -1,6 +1,6 @@
 package typings.phaser.phaserMod
 
-import typings.phaser.PhaserNs.TypesNs.CoreNs.GameConfig
+import typings.phaser.Phaser.Types.Core.GameConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * @param GameConfig The configuration object for your Phaser Game instance.
   */
 class Game ()
-  extends typings.phaser.PhaserNs.Game {
+  extends typings.phaser.Phaser.Game {
   def this(GameConfig: GameConfig) = this()
 }
 

@@ -17,9 +17,5 @@ trait StyleSheetList extends /* index */ NumberDictionary[StyleSheet] {
 
 @JSGlobal("StyleSheetList")
 @js.native
-class StyleSheetListCls () extends StyleSheetList
-
-@JSGlobal("StyleSheetList")
-@js.native
 object StyleSheetList extends Instantiable0[StyleSheetList]
 

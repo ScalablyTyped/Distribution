@@ -25,13 +25,13 @@ object UpdateServerRequest {
   @scala.inline
   def apply(
     ServerName: ServerName,
-    BackupRetentionCount: js.UndefOr[Integer] = js.undefined,
-    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
+    BackupRetentionCount: Int | Double = null,
+    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
     PreferredBackupWindow: TimeWindowDefinition = null,
     PreferredMaintenanceWindow: TimeWindowDefinition = null
   ): UpdateServerRequest = {
     val __obj = js.Dynamic.literal(ServerName = ServerName)
-    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount)
+    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
     if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

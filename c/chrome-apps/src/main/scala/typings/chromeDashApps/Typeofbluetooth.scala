@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.bluetoothNs.AdapterState
-import typings.chromeDashApps.chromeNs.bluetoothNs.BluetoothEvent
-import typings.chromeDashApps.chromeNs.bluetoothNs.Device
-import typings.chromeDashApps.chromeNs.bluetoothNs.DeviceFilter
+import typings.chromeDashApps.chrome.bluetooth.AdapterState
+import typings.chromeDashApps.chrome.bluetooth.BluetoothEvent
+import typings.chromeDashApps.chrome.bluetooth.Device
+import typings.chromeDashApps.chrome.bluetooth.DeviceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

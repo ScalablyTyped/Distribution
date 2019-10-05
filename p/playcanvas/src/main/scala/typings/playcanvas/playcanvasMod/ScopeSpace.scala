@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScopeSpace")
 @js.native
 class ScopeSpace protected ()
-  extends typings.playcanvas.pcNs.ScopeSpace {
+  extends typings.playcanvas.pc.ScopeSpace {
   def this(name: String) = this()
 }
 

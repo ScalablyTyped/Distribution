@@ -40,3 +40,9 @@ object ExportAllDeclaration {
   }
 }
 
+@JSImport("@babel/types", "exportAllDeclaration")
+@js.native
+object exportAllDeclaration extends js.Object {
+  def apply(source: StringLiteral): ExportAllDeclaration = js.native
+}
+

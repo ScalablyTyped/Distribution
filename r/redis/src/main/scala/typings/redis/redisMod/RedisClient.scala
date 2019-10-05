@@ -1,5 +1,7 @@
 package typings.redis.redisMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Duplex
 import typings.redis.redisStrings.message
@@ -140,4 +142,8 @@ trait RedisClient
   def uncork(): Unit = js.native
   def unref(): Unit = js.native
 }
+
+@JSImport("redis", "RedisClient")
+@js.native
+object RedisClient extends TopLevel[Instantiable1[/* options */ ClientOpts, RedisClient]]
 

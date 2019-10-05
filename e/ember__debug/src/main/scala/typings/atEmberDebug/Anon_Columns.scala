@@ -1,6 +1,6 @@
 package typings.atEmberDebug
 
-import typings.atEmberDebug.dataDashAdapterMod.DataAdapterNs.Column
+import typings.atEmberDebug.dataDashAdapterMod.DataAdapter.Column
 import typings.std.ObjectConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`

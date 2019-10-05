@@ -1,5 +1,6 @@
 package typings.dynogels.dynogelsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ object Log {
     __obj.asInstanceOf[Log]
   }
 }
+
+@JSImport("dynogels", "log")
+@js.native
+object log extends TopLevel[Log]
 

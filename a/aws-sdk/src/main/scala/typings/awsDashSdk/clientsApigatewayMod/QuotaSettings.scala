@@ -22,13 +22,13 @@ trait QuotaSettings extends js.Object {
 object QuotaSettings {
   @scala.inline
   def apply(
-    limit: js.UndefOr[Integer] = js.undefined,
-    offset: js.UndefOr[Integer] = js.undefined,
+    limit: Int | scala.Double = null,
+    offset: Int | scala.Double = null,
     period: QuotaPeriodType = null
   ): QuotaSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaSettings]
   }

@@ -9,7 +9,7 @@ import typings.phin.Fn_Opts
 import typings.phin.Fn_OptsOrUrl
 import typings.phin.Fn_OptsOrUrlAnonFalse
 import typings.phin.Fn_OptsOrUrlAnonFalseJsonParseStream
-import typings.phin.Fn_OptsOrUrlAnonFalseJsonParseStream1840517126
+import typings.phin.Fn_OptsOrUrlAnonFalseJsonParseStream24331797
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait PhinFactory extends js.Object {
   @JSName("defaults")
   def defaults_Fn_OptsOrUrlAnonFalseJsonParseStream(defaultOpts: DefaultOpts with Anon_Json): Fn_OptsOrUrlAnonFalseJsonParseStream = js.native
   @JSName("defaults")
-  def defaults_Fn_OptsOrUrlAnonFalseJsonParseStream1840517126(defaultOpts: DefaultOpts): Fn_OptsOrUrlAnonFalseJsonParseStream1840517126 = js.native
+  def defaults_Fn_OptsOrUrlAnonFalseJsonParseStream24331797(defaultOpts: DefaultOpts): Fn_OptsOrUrlAnonFalseJsonParseStream24331797 = js.native
   def promisified(optsOrUrl: (Options with (Anon_False | Anon_FalseJson | Anon_Stream)) | Options): js.Promise[BufferResponse] = js.native
   def promisified(optsOrUrl: String): js.Promise[BufferResponse] = js.native
   def unpromisified(

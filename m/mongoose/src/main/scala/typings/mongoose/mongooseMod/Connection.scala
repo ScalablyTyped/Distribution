@@ -1,5 +1,6 @@
 package typings.mongoose.mongooseMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.mongodbMod.SessionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,4 +25,8 @@ trait Connection extends ConnectionBase {
     */
   def useDb(name: String): Connection = js.native
 }
+
+@JSImport("mongoose", "connection")
+@js.native
+object connection extends TopLevel[Connection]
 

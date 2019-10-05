@@ -1,6 +1,5 @@
 package typings.antdDashMobile.libTextareaDashItemMod
 
-import typings.antdDashMobile.libTextareaDashItemPropsTypeMod.TextAreaEventHandle
 import typings.antdDashMobile.libTextareaDashItemPropsTypeMod.TextAreaItemPropsType
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -26,10 +25,10 @@ object TextareaItemProps {
     labelNumber: Int | Double = null,
     maxLength: Int | Double = null,
     name: String = null,
-    onBlur: TextAreaEventHandle = null,
-    onChange: TextAreaEventHandle = null,
+    onBlur: /* val */ js.UndefOr[String] => Unit = null,
+    onChange: /* val */ js.UndefOr[String] => Unit = null,
     onErrorClick: () => Unit = null,
-    onFocus: TextAreaEventHandle = null,
+    onFocus: /* val */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     prefixCls: String = null,
     prefixListCls: String = null,
@@ -48,10 +47,10 @@ object TextareaItemProps {
     if (labelNumber != null) __obj.updateDynamic("labelNumber")(labelNumber.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction0(onErrorClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (prefixListCls != null) __obj.updateDynamic("prefixListCls")(prefixListCls)

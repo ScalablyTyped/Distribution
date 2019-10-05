@@ -26,14 +26,14 @@ trait PublicIpv4PoolRange extends js.Object {
 object PublicIpv4PoolRange {
   @scala.inline
   def apply(
-    AddressCount: js.UndefOr[Integer] = js.undefined,
-    AvailableAddressCount: js.UndefOr[Integer] = js.undefined,
+    AddressCount: Int | scala.Double = null,
+    AvailableAddressCount: Int | scala.Double = null,
     FirstAddress: String = null,
     LastAddress: String = null
   ): PublicIpv4PoolRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AddressCount)) __obj.updateDynamic("AddressCount")(AddressCount)
-    if (!js.isUndefined(AvailableAddressCount)) __obj.updateDynamic("AvailableAddressCount")(AvailableAddressCount)
+    if (AddressCount != null) __obj.updateDynamic("AddressCount")(AddressCount.asInstanceOf[js.Any])
+    if (AvailableAddressCount != null) __obj.updateDynamic("AvailableAddressCount")(AvailableAddressCount.asInstanceOf[js.Any])
     if (FirstAddress != null) __obj.updateDynamic("FirstAddress")(FirstAddress)
     if (LastAddress != null) __obj.updateDynamic("LastAddress")(LastAddress)
     __obj.asInstanceOf[PublicIpv4PoolRange]

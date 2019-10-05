@@ -20,3 +20,14 @@ object Tensor {
   }
 }
 
+@JSImport("tensorflow", "tensor")
+@js.native
+object tensor extends js.Object {
+  def apply(value: Buffer): Tensor = js.native
+  def apply(value: Buffer, `type`: Types): Tensor = js.native
+  def apply(value: Buffer, `type`: Types, shape: js.Array[Double]): Tensor = js.native
+  def apply(value: TensorValue): Tensor = js.native
+  def apply(value: TensorValue, `type`: Types): Tensor = js.native
+  def apply(value: TensorValue, `type`: Types, shape: js.Array[Double]): Tensor = js.native
+}
+

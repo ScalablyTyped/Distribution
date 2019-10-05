@@ -1,7 +1,7 @@
 package typings.pixiDotJs
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.pixiDotJs.PIXINs.glCoreNs.GLFramebuffer
+import typings.pixiDotJs.PIXI.glCore.GLFramebuffer
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.WebGLRenderingContext

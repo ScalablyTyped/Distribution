@@ -26,16 +26,16 @@ trait SentimentScore extends js.Object {
 object SentimentScore {
   @scala.inline
   def apply(
-    Mixed: js.UndefOr[Float] = js.undefined,
-    Negative: js.UndefOr[Float] = js.undefined,
-    Neutral: js.UndefOr[Float] = js.undefined,
-    Positive: js.UndefOr[Float] = js.undefined
+    Mixed: Int | scala.Double = null,
+    Negative: Int | scala.Double = null,
+    Neutral: Int | scala.Double = null,
+    Positive: Int | scala.Double = null
   ): SentimentScore = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Mixed)) __obj.updateDynamic("Mixed")(Mixed)
-    if (!js.isUndefined(Negative)) __obj.updateDynamic("Negative")(Negative)
-    if (!js.isUndefined(Neutral)) __obj.updateDynamic("Neutral")(Neutral)
-    if (!js.isUndefined(Positive)) __obj.updateDynamic("Positive")(Positive)
+    if (Mixed != null) __obj.updateDynamic("Mixed")(Mixed.asInstanceOf[js.Any])
+    if (Negative != null) __obj.updateDynamic("Negative")(Negative.asInstanceOf[js.Any])
+    if (Neutral != null) __obj.updateDynamic("Neutral")(Neutral.asInstanceOf[js.Any])
+    if (Positive != null) __obj.updateDynamic("Positive")(Positive.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentScore]
   }
 }

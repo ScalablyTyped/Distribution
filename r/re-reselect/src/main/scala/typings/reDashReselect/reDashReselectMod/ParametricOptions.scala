@@ -1,5 +1,6 @@
 package typings.reDashReselect.reDashReselectMod
 
+import typings.reDashReselect.Anon_InputSelectorsKeySelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +16,14 @@ object ParametricOptions {
   @scala.inline
   def apply[S, P, C, D](
     cacheObject: ICacheObject = null,
-    keySelector: ParametricKeySelector[S, P] = null,
-    keySelectorCreator: ParametricKeySelectorCreator[S, P, C, D] = null,
+    keySelector: (S, P, /* repeated */ js.Any) => js.Any = null,
+    keySelectorCreator: /* selectorInputs */ Anon_InputSelectorsKeySelector[D, C, S, P] => ParametricKeySelector[S, P] = null,
     selectorCreator: CreateSelectorInstance = null
   ): ParametricOptions[S, P, C, D] = {
     val __obj = js.Dynamic.literal()
     if (cacheObject != null) __obj.updateDynamic("cacheObject")(cacheObject)
-    if (keySelector != null) __obj.updateDynamic("keySelector")(keySelector)
-    if (keySelectorCreator != null) __obj.updateDynamic("keySelectorCreator")(keySelectorCreator)
+    if (keySelector != null) __obj.updateDynamic("keySelector")(js.Any.fromFunction3(keySelector))
+    if (keySelectorCreator != null) __obj.updateDynamic("keySelectorCreator")(js.Any.fromFunction1(keySelectorCreator))
     if (selectorCreator != null) __obj.updateDynamic("selectorCreator")(selectorCreator)
     __obj.asInstanceOf[ParametricOptions[S, P, C, D]]
   }

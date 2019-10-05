@@ -93,7 +93,7 @@ import typings.reactDashNative.reactDashNativeStrings.top
 import typings.reactDashNative.reactDashNativeStrings.username
 import typings.reactDashNative.reactDashNativeStrings.words
 import typings.reactDashNative.reactDashNativeStrings.yes
-import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.font
+import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.font
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,10 +17,10 @@ trait ArrayPropertiesSummary extends js.Object {
 
 object ArrayPropertiesSummary {
   @scala.inline
-  def apply(index: js.UndefOr[Integer] = js.undefined, size: js.UndefOr[Integer] = js.undefined): ArrayPropertiesSummary = {
+  def apply(index: Int | Double = null, size: Int | Double = null): ArrayPropertiesSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayPropertiesSummary]
   }
 }

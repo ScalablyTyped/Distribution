@@ -105,7 +105,7 @@ trait reactDashMdlProps {
   def ListItemContentProps: typings.reactDashMdl.reactDashMdlMod.ListItemContentProps.type = typings.reactDashMdl.reactDashMdlMod.ListItemContentProps
   type ListItemContentProps = typings.reactDashMdl.reactDashMdlMod.ListItemContentProps
   @scala.inline
-  def MDLComponentProps: Anon_Recursive.type = typings.reactDashMdl.Anon_Recursive
+  def MDLComponentProps: typings.reactDashMdl.Anon_Recursive.type = typings.reactDashMdl.Anon_Recursive
   type MDLComponentProps = Anon_Recursive
   @scala.inline
   def MenuProps: typings.reactDashMdl.reactDashMdlMod.MenuProps.type = typings.reactDashMdl.reactDashMdlMod.MenuProps

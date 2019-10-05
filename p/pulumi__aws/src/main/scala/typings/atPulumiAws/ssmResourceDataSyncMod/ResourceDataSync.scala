@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmResourceDataSyncMod
 
-import typings.atPulumiAws.typesOutputMod.ssmNs.ResourceDataSyncS3Destination
+import typings.atPulumiAws.typesOutputMod.ssm.ResourceDataSyncS3Destination
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -21,11 +21,11 @@ trait DescribeSSLPoliciesInput extends js.Object {
 
 object DescribeSSLPoliciesInput {
   @scala.inline
-  def apply(Marker: Marker = null, Names: SslPolicyNames = null, PageSize: js.UndefOr[PageSize] = js.undefined): DescribeSSLPoliciesInput = {
+  def apply(Marker: Marker = null, Names: SslPolicyNames = null, PageSize: Int | Double = null): DescribeSSLPoliciesInput = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (Names != null) __obj.updateDynamic("Names")(Names)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSSLPoliciesInput]
   }
 }

@@ -1,5 +1,7 @@
 package typings.atJupyterlabApputils.libCommandpaletteMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,12 +26,7 @@ trait ICommandPalette extends js.Object {
   def addItem(options: IPaletteItem): IDisposable
 }
 
-object ICommandPalette {
-  @scala.inline
-  def apply(activate: () => Unit, addItem: IPaletteItem => IDisposable, placeholder: String): ICommandPalette = {
-    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), addItem = js.Any.fromFunction1(addItem), placeholder = placeholder)
-  
-    __obj.asInstanceOf[ICommandPalette]
-  }
-}
+@JSImport("@jupyterlab/apputils/lib/commandpalette", "ICommandPalette")
+@js.native
+object ICommandPalette extends TopLevel[Token[ICommandPalette]]
 

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("yeoman-assert", "assert")
+/* augmented module */
+@JSImport("assert", JSImport.Namespace)
 @js.native
 object assertMod extends js.Object {
   /**

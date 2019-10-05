@@ -21,15 +21,11 @@ trait Range extends js.Object {
 
 object Range {
   @scala.inline
-  def apply(
-    From: js.UndefOr[Integer] = js.undefined,
-    Step: js.UndefOr[IntegerOptional] = js.undefined,
-    To: js.UndefOr[Integer] = js.undefined
-  ): Range = {
+  def apply(From: Int | scala.Double = null, Step: Int | scala.Double = null, To: Int | scala.Double = null): Range = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(From)) __obj.updateDynamic("From")(From)
-    if (!js.isUndefined(Step)) __obj.updateDynamic("Step")(Step)
-    if (!js.isUndefined(To)) __obj.updateDynamic("To")(To)
+    if (From != null) __obj.updateDynamic("From")(From.asInstanceOf[js.Any])
+    if (Step != null) __obj.updateDynamic("Step")(Step.asInstanceOf[js.Any])
+    if (To != null) __obj.updateDynamic("To")(To.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
 }

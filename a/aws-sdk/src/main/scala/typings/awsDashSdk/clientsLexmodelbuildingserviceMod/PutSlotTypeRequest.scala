@@ -33,7 +33,7 @@ object PutSlotTypeRequest {
   def apply(
     name: SlotTypeName,
     checksum: String = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
+    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     description: Description = null,
     enumerationValues: EnumerationValues = null,
     valueSelectionStrategy: SlotValueSelectionStrategy = null

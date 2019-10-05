@@ -194,8 +194,8 @@ trait Cluster extends js.Object {
 object Cluster {
   @scala.inline
   def apply(
-    AllowVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
+    AllowVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
     AvailabilityZone: String = null,
     ClusterAvailabilityStatus: String = null,
     ClusterCreateTime: TStamp = null,
@@ -214,25 +214,25 @@ object Cluster {
     DeferredMaintenanceWindows: DeferredMaintenanceWindowsList = null,
     ElasticIpStatus: ElasticIpStatus = null,
     ElasticResizeNumberOfNodeOptions: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Endpoint: Endpoint = null,
-    EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
     ExpectedNextSnapshotScheduleTime: TStamp = null,
     ExpectedNextSnapshotScheduleTimeStatus: String = null,
     HsmStatus: HsmStatus = null,
     IamRoles: ClusterIamRoleList = null,
     KmsKeyId: String = null,
     MaintenanceTrackName: String = null,
-    ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
+    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
     MasterUsername: String = null,
     ModifyStatus: String = null,
     NextMaintenanceWindowStartTime: TStamp = null,
     NodeType: String = null,
-    NumberOfNodes: js.UndefOr[Integer] = js.undefined,
+    NumberOfNodes: Int | scala.Double = null,
     PendingActions: PendingActionsList = null,
     PendingModifiedValues: PendingModifiedValues = null,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     ResizeInfo: ResizeInfo = null,
     RestoreStatus: RestoreStatus = null,
     SnapshotScheduleIdentifier: String = null,
@@ -243,7 +243,7 @@ object Cluster {
   ): Cluster = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade)
-    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod)
+    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (ClusterAvailabilityStatus != null) __obj.updateDynamic("ClusterAvailabilityStatus")(ClusterAvailabilityStatus)
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
@@ -271,12 +271,12 @@ object Cluster {
     if (IamRoles != null) __obj.updateDynamic("IamRoles")(IamRoles)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
+    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (ModifyStatus != null) __obj.updateDynamic("ModifyStatus")(ModifyStatus)
     if (NextMaintenanceWindowStartTime != null) __obj.updateDynamic("NextMaintenanceWindowStartTime")(NextMaintenanceWindowStartTime)
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
     if (PendingActions != null) __obj.updateDynamic("PendingActions")(PendingActions)
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

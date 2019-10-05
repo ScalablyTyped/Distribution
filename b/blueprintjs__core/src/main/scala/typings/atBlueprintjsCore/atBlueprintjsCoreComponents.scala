@@ -84,10 +84,10 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def AnchorButton: ComponentType[IButtonProps with AnchorHTMLAttributes[HTMLAnchorElement]] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.AnchorButton].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atBlueprintjsCore.libEsmComponentsButtonAbstractButtonMod.IButtonProps with typings.react.reactMod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement]]]
   @scala.inline
-  def Blockquote: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Blockquote.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Blockquote: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.Blockquote.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLElement]]]
   @scala.inline
-  def Breadcrumb: ComponentType[IBreadcrumbProps] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Breadcrumb.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Breadcrumb: ComponentType[IBreadcrumbProps] = typings.atBlueprintjsCore.libEsmComponentsMod.Breadcrumb.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atBlueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps]]
   @scala.inline
   def Breadcrumbs: ComponentType[IBreadcrumbsProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Breadcrumbs].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -104,7 +104,7 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def Checkbox: ComponentType[ICheckboxProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Checkbox].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.ICheckboxProps]]
   @scala.inline
-  def Code: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Code.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Code: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.Code.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLElement]]]
   @scala.inline
   def Collapse: ComponentType[ICollapseProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Collapse].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.ICollapseProps]]
@@ -124,28 +124,30 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def EditableText: ComponentType[IEditableTextProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.EditableText].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atBlueprintjsCore.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps]]
   @scala.inline
-  def Expander: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Expander.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def EnsureElement: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmCommonUtilsMod.ensureElement.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def Expander: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmComponentsMod.Expander.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def FileInput: ComponentType[IFileInputProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.FileInput].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod.IFileInputProps]]
   @scala.inline
   def FormGroup: ComponentType[IFormGroupProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.FormGroup].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsFormsFormGroupMod.IFormGroupProps]]
   @scala.inline
-  def H1: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H1.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H1: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H1.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
-  def H2: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H2.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H2: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H2.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
-  def H3: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H3.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H3: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H3.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
-  def H4: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H4.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H4: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H4.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
-  def H5: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H5.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H5: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H5.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
-  def H6: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.H6.asInstanceOf[typings.react.reactMod.ComponentType[
+  def H6: ComponentType[HTMLProps[HTMLHeadingElement] with IElementRefProps[HTMLHeadingElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.H6.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLHeadingElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
   @scala.inline
   def HTMLSelect: ComponentType[IHTMLSelectProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.HTMLSelect].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -166,7 +168,7 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def KeyCombo: ComponentType[IKeyComboProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.KeyCombo].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsHotkeysKeyComboMod.IKeyComboProps]]
   @scala.inline
-  def Label: ComponentType[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Label.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Label: ComponentType[HTMLProps[HTMLLabelElement] with IElementRefProps[HTMLLabelElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.Label.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLLabelElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLLabelElement]]]
   @scala.inline
   def Menu: ComponentType[IMenuProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsMenuMenuMod.IMenuProps]]
@@ -196,7 +198,7 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def NumericInput: ComponentType[HTMLInputProps with INumericInputProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.NumericInput].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps with typings.atBlueprintjsCore.libEsmComponentsFormsNumericInputMod.INumericInputProps]]
   @scala.inline
-  def OL: ComponentType[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.OL.asInstanceOf[typings.react.reactMod.ComponentType[
+  def OL: ComponentType[HTMLProps[HTMLOListElement] with IElementRefProps[HTMLOListElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.OL.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLOListElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLOListElement]]]
   @scala.inline
   def OverflowList[T]: ComponentType[IOverflowListProps[T]] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.OverflowList[T]].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -211,7 +213,7 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def Portal: ComponentType[IPortalProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Portal].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps]]
   @scala.inline
-  def Pre: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.Pre.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Pre: ComponentType[HTMLProps[HTMLElement] with IElementRefProps[HTMLElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.Pre.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLElement]]]
   @scala.inline
   def ProgressBar: ComponentType[IProgressBarProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.ProgressBar].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -256,7 +258,7 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def TreeNode[T]: ComponentType[ITreeNodeProps[T]] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.TreeNode[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T]]]
   @scala.inline
-  def UL: ComponentType[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.^.UL.asInstanceOf[typings.react.reactMod.ComponentType[
+  def UL: ComponentType[HTMLProps[HTMLUListElement] with IElementRefProps[HTMLUListElement]] = typings.atBlueprintjsCore.libEsmComponentsMod.UL.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.HTMLProps[typings.std.HTMLUListElement] with typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps[typings.std.HTMLUListElement]]]
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "ListItem")
 @js.native
 class ListItem ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.ListNs.ListItem
+  extends typings.materialDashUi.__MaterialUI.List.ListItem
 

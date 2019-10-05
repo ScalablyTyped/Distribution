@@ -136,9 +136,8 @@ object libStylesMod extends js.Object {
   def registerDefaultFontFaces(baseUrl: String): Unit = js.native
   def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
   def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
-  @JSName("FontSizes")
   @js.native
-  object FontSizesNs extends js.Object {
+  object FontSizes extends js.Object {
     val icon: String = js.native
     val large: String = js.native
     val medium: String = js.native
@@ -155,9 +154,8 @@ object libStylesMod extends js.Object {
     val xxLargePlus: String = js.native
   }
   
-  @JSName("FontWeights")
   @js.native
-  object FontWeightsNs extends js.Object {
+  object FontWeights extends js.Object {
     val bold: IFontWeight = js.native
     val light: IFontWeight = js.native
     val regular: IFontWeight = js.native
@@ -165,9 +163,8 @@ object libStylesMod extends js.Object {
     val semilight: IFontWeight = js.native
   }
   
-  @JSName("IconFontSizes")
   @js.native
-  object IconFontSizesNs extends js.Object {
+  object IconFontSizes extends js.Object {
     val large: String = js.native
     val medium: String = js.native
     val small: String = js.native
@@ -195,9 +192,8 @@ object libStylesMod extends js.Object {
     var createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
   }
   
-  @JSName("ZIndexes")
   @js.native
-  object ZIndexesNs extends js.Object {
+  object ZIndexes extends js.Object {
     val Coachmark: Double = js.native
     val FocusStyle: Double = js.native
     val KeytipLayer: Double = js.native

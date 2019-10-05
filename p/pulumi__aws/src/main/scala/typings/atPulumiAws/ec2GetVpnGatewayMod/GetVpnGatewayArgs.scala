@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpnGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpnGatewayFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetVpnGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

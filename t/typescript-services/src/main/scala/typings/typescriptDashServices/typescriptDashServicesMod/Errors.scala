@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Errors")
 @js.native
 class Errors ()
-  extends typings.typescriptDashServices.TypeScriptNs.Errors
+  extends typings.typescriptDashServices.TypeScript.Errors
 
 /* static members */
 @JSImport("typescript-services", "Errors")

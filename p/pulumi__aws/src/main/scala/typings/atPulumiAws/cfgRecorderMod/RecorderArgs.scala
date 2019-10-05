@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgRecorderMod
 
-import typings.atPulumiAws.typesInputMod.cfgNs.RecorderRecordingGroup
+import typings.atPulumiAws.typesInputMod.cfg.RecorderRecordingGroup
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

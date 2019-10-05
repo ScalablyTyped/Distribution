@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.IStatementSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.IStatementSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "DoStatementSyntax")
 @js.native
 class DoStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.DoStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.DoStatementSyntax {
   def this(
     doKeyword: ISyntaxToken,
     statement: IStatementSyntax,
@@ -27,6 +27,6 @@ class DoStatementSyntax protected ()
 @JSImport("typescript-services", "DoStatementSyntax")
 @js.native
 object DoStatementSyntax extends js.Object {
-  def create1(statement: IStatementSyntax, condition: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.DoStatementSyntax = js.native
+  def create1(statement: IStatementSyntax, condition: IExpressionSyntax): typings.typescriptDashServices.TypeScript.DoStatementSyntax = js.native
 }
 

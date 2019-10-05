@@ -1,8 +1,8 @@
 package typings.cypress
 
-import typings.cypress.MochaNs.Test
-import typings.cypress.MochaNs.reportersNs.BaseNs.ColorMap
-import typings.cypress.MochaNs.reportersNs.BaseNs.SymbolMap
+import typings.cypress.Mocha.Test
+import typings.cypress.Mocha.reporters.Base.ColorMap
+import typings.cypress.Mocha.reporters.Base.SymbolMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait TypeofBase extends js.Object {
     *
     * @see https://mochajs.org/api/module-base#.cursor
     */
-  val cursorNs: Typeofcursor
+  val cursor: Typeofcursor
   /**
     * Inline diffs instead of +/-
     *
@@ -69,7 +69,7 @@ object TypeofBase {
   def apply(
     color: (String, String) => String,
     colors: ColorMap,
-    cursorNs: Typeofcursor,
+    cursor: Typeofcursor,
     generateDiff: (String, String) => String,
     inlineDiffs: Boolean,
     list: js.Array[Test] => Unit,
@@ -77,7 +77,7 @@ object TypeofBase {
     useColors: Boolean,
     window: Anon_Width
   ): TypeofBase = {
-    val __obj = js.Dynamic.literal(color = js.Any.fromFunction2(color), colors = colors, cursorNs = cursorNs, generateDiff = js.Any.fromFunction2(generateDiff), inlineDiffs = inlineDiffs, list = js.Any.fromFunction1(list), symbols = symbols, useColors = useColors, window = window)
+    val __obj = js.Dynamic.literal(color = js.Any.fromFunction2(color), colors = colors, cursor = cursor, generateDiff = js.Any.fromFunction2(generateDiff), inlineDiffs = inlineDiffs, list = js.Any.fromFunction1(list), symbols = symbols, useColors = useColors, window = window)
   
     __obj.asInstanceOf[TypeofBase]
   }

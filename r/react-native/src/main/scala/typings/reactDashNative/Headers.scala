@@ -19,12 +19,6 @@ trait Headers extends js.Object {
 
 @JSGlobal("Headers")
 @js.native
-class HeadersCls () extends Headers {
-  def this(init: HeadersInit_) = this()
-}
-
-@JSGlobal("Headers")
-@js.native
 object Headers
   extends Instantiable0[Headers]
      with Instantiable1[/* init */ HeadersInit_, Headers]

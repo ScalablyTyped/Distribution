@@ -28,13 +28,13 @@ object DescribeIamInstanceProfileAssociationsRequest {
   def apply(
     AssociationIds: AssociationIdList = null,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeIamInstanceProfileAssociationsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null
   ): DescribeIamInstanceProfileAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     if (AssociationIds != null) __obj.updateDynamic("AssociationIds")(AssociationIds)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeIamInstanceProfileAssociationsRequest]
   }

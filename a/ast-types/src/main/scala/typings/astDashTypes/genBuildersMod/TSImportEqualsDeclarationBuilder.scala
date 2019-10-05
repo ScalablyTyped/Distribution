@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsIdIsExport
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.TSExternalModuleReferenceKind
 import typings.astDashTypes.genKindsMod.TSQualifiedNameKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSImportEqualsDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSImportEqualsDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

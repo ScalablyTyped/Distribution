@@ -2,28 +2,29 @@ package typings.relayDashRuntime.libStoreRelayStoreTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayDashRuntime.libStoreRelayRecordStateMod.RecordState
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.DataID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MutableRecordSource extends RecordSource {
   def clear(): Unit
-  def delete(dataID: String): Unit
-  def remove(dataID: String): Unit
-  def set(dataID: String, record: Record): Unit
+  def delete(dataID: DataID): Unit
+  def remove(dataID: DataID): Unit
+  def set(dataID: DataID, record: Record): Unit
 }
 
 object MutableRecordSource {
   @scala.inline
   def apply(
     clear: () => Unit,
-    delete: String => Unit,
-    get: String => Record,
-    getRecordIDs: () => js.Array[String],
-    getStatus: String => RecordState,
-    has: String => Boolean,
-    remove: String => Unit,
-    set: (String, Record) => Unit,
+    delete: DataID => Unit,
+    get: DataID => js.UndefOr[Record | Null],
+    getRecordIDs: () => js.Array[DataID],
+    getStatus: DataID => RecordState,
+    has: DataID => Boolean,
+    remove: DataID => Unit,
+    set: (DataID, Record) => Unit,
     size: () => Double,
     toJSON: () => StringDictionary[Record]
   ): MutableRecordSource = {

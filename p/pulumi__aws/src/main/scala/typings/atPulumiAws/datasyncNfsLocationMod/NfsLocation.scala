@@ -1,7 +1,7 @@
 package typings.atPulumiAws.datasyncNfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.datasyncNs.NfsLocationOnPremConfig
+import typings.atPulumiAws.typesOutputMod.datasync.NfsLocationOnPremConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

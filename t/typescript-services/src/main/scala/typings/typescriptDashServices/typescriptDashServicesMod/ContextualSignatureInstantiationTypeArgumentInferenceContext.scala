@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ContextualSignatureInstantiationTypeArgumentInferenceContext")
 @js.native
 class ContextualSignatureInstantiationTypeArgumentInferenceContext protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ContextualSignatureInstantiationTypeArgumentInferenceContext {
+  extends typings.typescriptDashServices.TypeScript.ContextualSignatureInstantiationTypeArgumentInferenceContext {
   def this(
-    resolver: typings.typescriptDashServices.TypeScriptNs.PullTypeResolver,
-    context: typings.typescriptDashServices.TypeScriptNs.PullTypeResolutionContext,
-    signatureBeingInferred: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol,
-    contextualSignature: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol,
+    resolver: typings.typescriptDashServices.TypeScript.PullTypeResolver,
+    context: typings.typescriptDashServices.TypeScript.PullTypeResolutionContext,
+    signatureBeingInferred: typings.typescriptDashServices.TypeScript.PullSignatureSymbol,
+    contextualSignature: typings.typescriptDashServices.TypeScript.PullSignatureSymbol,
     shouldFixContextualSignatureParameterTypes: Boolean
   ) = this()
 }

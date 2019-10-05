@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceCandidate
+import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Core.ResourceCandidate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,12 +11,9 @@ trait Disposable extends js.Object {
   def dispose(): Unit
 }
 
-object Disposable {
-  @scala.inline
-  def apply(dispose: () => Unit): Disposable = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
-  
-    __obj.asInstanceOf[Disposable]
-  }
+@JSImport("vscode-jsonrpc/lib/events", "Disposable")
+@js.native
+object Disposable extends js.Object {
+  def create(func: js.Function0[Unit]): Disposable = js.native
 }
 

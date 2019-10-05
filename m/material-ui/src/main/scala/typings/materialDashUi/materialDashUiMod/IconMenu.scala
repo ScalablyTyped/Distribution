@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "IconMenu")
 @js.native
 class IconMenu ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.IconMenu
+  extends typings.materialDashUi.__MaterialUI.Menus.IconMenu
 

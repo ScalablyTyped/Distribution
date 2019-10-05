@@ -1,8 +1,8 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.electron.ElectronNs.FromPartitionOptions
-import typings.electron.ElectronNs.Session
+import typings.electron.Electron.FromPartitionOptions
+import typings.electron.Electron.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

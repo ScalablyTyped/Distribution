@@ -1,7 +1,7 @@
 package typings.activexDashShdocvw
 
-import typings.activexDashShdocvw.SHDocVwNs.BrowserBarConstants
-import typings.activexDashShdocvw.SHDocVwNs.TargetFrameValues
+import typings.activexDashShdocvw.SHDocVw.BrowserBarConstants
+import typings.activexDashShdocvw.SHDocVw.TargetFrameValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

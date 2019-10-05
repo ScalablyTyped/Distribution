@@ -33,13 +33,13 @@ object ListedUser {
     Arn: Arn,
     HomeDirectory: HomeDirectory = null,
     Role: Role = null,
-    SshPublicKeyCount: js.UndefOr[SshPublicKeyCount] = js.undefined,
+    SshPublicKeyCount: Int | Double = null,
     UserName: UserName = null
   ): ListedUser = {
     val __obj = js.Dynamic.literal(Arn = Arn)
     if (HomeDirectory != null) __obj.updateDynamic("HomeDirectory")(HomeDirectory)
     if (Role != null) __obj.updateDynamic("Role")(Role)
-    if (!js.isUndefined(SshPublicKeyCount)) __obj.updateDynamic("SshPublicKeyCount")(SshPublicKeyCount)
+    if (SshPublicKeyCount != null) __obj.updateDynamic("SshPublicKeyCount")(SshPublicKeyCount.asInstanceOf[js.Any])
     if (UserName != null) __obj.updateDynamic("UserName")(UserName)
     __obj.asInstanceOf[ListedUser]
   }

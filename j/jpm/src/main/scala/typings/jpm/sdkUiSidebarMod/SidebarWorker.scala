@@ -1,6 +1,6 @@
 package typings.jpm.sdkUiSidebarMod
 
-import typings.jpm.FFAddonSDKNs.Port
+import typings.jpm.FFAddonSDK.Port
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

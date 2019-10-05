@@ -10,12 +10,11 @@ trait Currency
   var currencyCode: String
 }
 
-object Currency {
-  @scala.inline
-  def apply(currencyCode: String, StringDictionary: /* k */ StringDictionary[js.Any] = null): Currency = {
-    val __obj = js.Dynamic.literal(currencyCode = currencyCode)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[Currency]
-  }
+@JSImport("js-to-java", "Currency")
+@js.native
+object Currency extends js.Object {
+  def apply(): js.Object = js.native
+  def apply(value: String): js.Object = js.native
+  def apply(value: Currency): js.Object = js.native
 }
 

@@ -81,3 +81,55 @@ class list[T] ()
   def this(size: Double, `val`: T) = this()
 }
 
+@JSImport("tstl/container", "List")
+@js.native
+object List extends js.Object {
+  /**
+    * Iterator of the List.
+    *
+    * @author Jeongho Nam <http://samchon.org>
+    */
+  @js.native
+  /**
+    * @hidden
+    */
+  class Iterator[T] protected ()
+    extends typings.tstl.containerListMod.List.Iterator[T]
+  
+  /**
+    * Reverse iterator of the List.
+    *
+    * @author Jeongho Nam <http://samchon.org>
+    */
+  @js.native
+  class ReverseIterator[T] ()
+    extends typings.tstl.containerListMod.List.ReverseIterator[T]
+  
+}
+
+@JSImport("tstl/container", "list")
+@js.native
+object list extends js.Object {
+  /**
+    * Iterator of the List.
+    *
+    * @author Jeongho Nam <http://samchon.org>
+    */
+  @js.native
+  /**
+    * @hidden
+    */
+  class Iterator[T] protected ()
+    extends typings.tstl.containerListMod.list.Iterator[T]
+  
+  /**
+    * Reverse iterator of the List.
+    *
+    * @author Jeongho Nam <http://samchon.org>
+    */
+  @js.native
+  class ReverseIterator[T] ()
+    extends typings.tstl.containerListMod.list.ReverseIterator[T]
+  
+}
+

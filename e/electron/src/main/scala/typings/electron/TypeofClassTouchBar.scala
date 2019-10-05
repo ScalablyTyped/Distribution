@@ -1,8 +1,8 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.electron.ElectronNs.TouchBar
-import typings.electron.ElectronNs.TouchBarConstructorOptions
+import typings.electron.Electron.TouchBar
+import typings.electron.Electron.TouchBarConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

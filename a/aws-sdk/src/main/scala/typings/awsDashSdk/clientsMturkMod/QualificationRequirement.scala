@@ -39,7 +39,7 @@ object QualificationRequirement {
     ActionsGuarded: HITAccessActions = null,
     IntegerValues: IntegerList = null,
     LocaleValues: LocaleList = null,
-    RequiredToPreview: js.UndefOr[Boolean] = js.undefined
+    RequiredToPreview: js.UndefOr[scala.Boolean] = js.undefined
   ): QualificationRequirement = {
     val __obj = js.Dynamic.literal(Comparator = Comparator.asInstanceOf[js.Any], QualificationTypeId = QualificationTypeId)
     if (ActionsGuarded != null) __obj.updateDynamic("ActionsGuarded")(ActionsGuarded.asInstanceOf[js.Any])

@@ -47,24 +47,24 @@ object FilterLogEventsRequest {
   @scala.inline
   def apply(
     logGroupName: LogGroupName,
-    endTime: js.UndefOr[Timestamp] = js.undefined,
+    endTime: Int | Double = null,
     filterPattern: FilterPattern = null,
-    interleaved: js.UndefOr[Interleaved] = js.undefined,
-    limit: js.UndefOr[EventsLimit] = js.undefined,
+    interleaved: js.UndefOr[Boolean] = js.undefined,
+    limit: Int | Double = null,
     logStreamNamePrefix: LogStreamName = null,
     logStreamNames: InputLogStreamNames = null,
     nextToken: NextToken = null,
-    startTime: js.UndefOr[Timestamp] = js.undefined
+    startTime: Int | Double = null
   ): FilterLogEventsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName)
-    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern)
     if (!js.isUndefined(interleaved)) __obj.updateDynamic("interleaved")(interleaved)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (logStreamNamePrefix != null) __obj.updateDynamic("logStreamNamePrefix")(logStreamNamePrefix)
     if (logStreamNames != null) __obj.updateDynamic("logStreamNames")(logStreamNames)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
-    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLogEventsRequest]
   }
 }

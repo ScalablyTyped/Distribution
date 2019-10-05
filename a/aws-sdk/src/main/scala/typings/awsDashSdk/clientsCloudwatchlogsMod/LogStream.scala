@@ -43,22 +43,22 @@ object LogStream {
   @scala.inline
   def apply(
     arn: Arn = null,
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
-    firstEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
-    lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
-    lastIngestionTime: js.UndefOr[Timestamp] = js.undefined,
+    creationTime: Int | Double = null,
+    firstEventTimestamp: Int | Double = null,
+    lastEventTimestamp: Int | Double = null,
+    lastIngestionTime: Int | Double = null,
     logStreamName: LogStreamName = null,
-    storedBytes: js.UndefOr[StoredBytes] = js.undefined,
+    storedBytes: Int | Double = null,
     uploadSequenceToken: SequenceToken = null
   ): LogStream = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime)
-    if (!js.isUndefined(firstEventTimestamp)) __obj.updateDynamic("firstEventTimestamp")(firstEventTimestamp)
-    if (!js.isUndefined(lastEventTimestamp)) __obj.updateDynamic("lastEventTimestamp")(lastEventTimestamp)
-    if (!js.isUndefined(lastIngestionTime)) __obj.updateDynamic("lastIngestionTime")(lastIngestionTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (firstEventTimestamp != null) __obj.updateDynamic("firstEventTimestamp")(firstEventTimestamp.asInstanceOf[js.Any])
+    if (lastEventTimestamp != null) __obj.updateDynamic("lastEventTimestamp")(lastEventTimestamp.asInstanceOf[js.Any])
+    if (lastIngestionTime != null) __obj.updateDynamic("lastIngestionTime")(lastIngestionTime.asInstanceOf[js.Any])
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName)
-    if (!js.isUndefined(storedBytes)) __obj.updateDynamic("storedBytes")(storedBytes)
+    if (storedBytes != null) __obj.updateDynamic("storedBytes")(storedBytes.asInstanceOf[js.Any])
     if (uploadSequenceToken != null) __obj.updateDynamic("uploadSequenceToken")(uploadSequenceToken)
     __obj.asInstanceOf[LogStream]
   }

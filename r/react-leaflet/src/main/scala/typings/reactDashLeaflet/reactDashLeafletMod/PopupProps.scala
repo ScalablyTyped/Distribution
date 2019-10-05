@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.leaflet.leafletMod.DivOverlayOptions because Already inherited
 - typings.leaflet.leafletMod.PopupOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined autoClose, autoPan, autoPanPadding, autoPanPaddingBottomRight, autoPanPaddingTopLeft, closeButton, closeOnClick, closeOnEscapeKey, keepInView, maxHeight, maxWidth, minWidth */ trait PopupProps extends DivOverlayProps {
   var autoClose: js.UndefOr[Boolean] = js.undefined
   var autoPan: js.UndefOr[Boolean] = js.undefined
@@ -26,12 +27,12 @@ import scala.scalajs.js.annotation._
 object PopupProps {
   @scala.inline
   def apply(
-    children: Children,
     autoClose: js.UndefOr[Boolean] = js.undefined,
     autoPan: js.UndefOr[Boolean] = js.undefined,
     autoPanPadding: PointExpression = null,
     autoPanPaddingBottomRight: PointExpression = null,
     autoPanPaddingTopLeft: PointExpression = null,
+    children: Children = null,
     className: String = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
@@ -48,12 +49,13 @@ object PopupProps {
     position: LatLngExpression = null,
     zoomAnimation: js.UndefOr[Boolean] = js.undefined
   ): PopupProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan)
     if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])
     if (autoPanPaddingBottomRight != null) __obj.updateDynamic("autoPanPaddingBottomRight")(autoPanPaddingBottomRight.asInstanceOf[js.Any])
     if (autoPanPaddingTopLeft != null) __obj.updateDynamic("autoPanPaddingTopLeft")(autoPanPaddingTopLeft.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)

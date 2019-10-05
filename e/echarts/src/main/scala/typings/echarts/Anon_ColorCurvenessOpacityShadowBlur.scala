@@ -6,39 +6,30 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ColorCurvenessOpacityShadowBlur extends js.Object {
   /**
-    * Line color.
-    *
-    * > Color can be represented in RGB, for example `'rgb(128,
-    * 128, 128)'`.
-    * RGBA can be used when you need alpha channel, for example
-    * `'rgba(128, 128, 128, 0.5)'`.
-    * You may also use hexadecimal format, for example `'#ccc'`.
-    * Gradient color and texture are also supported besides
-    * single colors.
-    * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines.data.lineStyle)
+    * The color of the edge in sankey graphs.
     *
     *
     * @default
-    * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.color
+    * "'#314656"
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
-    * Edge curvature, which supports value from 0 to 1.
-    * The larger the value, the greater the curvature.
+    * The curveness of the edge in sankey graph.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.curveness
+    * @default
+    * 0.5
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.curveness
     */
   var curveness: js.UndefOr[Double] = js.undefined
   /**
-    * Opacity of the component.
-    * Supports value from 0 to 1, and the component will not
-    * be drawn when set to 0.
+    * The opacity of the edge in sankey graph.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.opacity
+    * @default
+    * 0.2
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -48,55 +39,33 @@ trait Anon_ColorCurvenessOpacityShadowBlur extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines.data.lineStyle)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey.links.emphasis.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
-  /**
-    * line type.
-    *
-    * Options are:
-    *
-    * + `'solid'`
-    * + `'dashed'`
-    * + `'dotted'`
-    *
-    *
-    * @default
-    * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.type
-    */
-  var `type`: js.UndefOr[String] = js.undefined
-  /**
-    * line width.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle.width
-    */
-  var width: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_ColorCurvenessOpacityShadowBlur {
@@ -108,9 +77,7 @@ object Anon_ColorCurvenessOpacityShadowBlur {
     shadowBlur: Int | Double = null,
     shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
-    shadowOffsetY: Int | Double = null,
-    `type`: String = null,
-    width: Int | Double = null
+    shadowOffsetY: Int | Double = null
   ): Anon_ColorCurvenessOpacityShadowBlur = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
@@ -120,8 +87,6 @@ object Anon_ColorCurvenessOpacityShadowBlur {
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorCurvenessOpacityShadowBlur]
   }
 }

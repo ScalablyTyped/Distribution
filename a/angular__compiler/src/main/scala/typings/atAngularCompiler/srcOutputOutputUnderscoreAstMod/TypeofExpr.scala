@@ -15,3 +15,9 @@ class TypeofExpr protected () extends Expression {
   var expr: Expression = js.native
 }
 
+@JSImport("@angular/compiler/src/output/output_ast", "typeofExpr")
+@js.native
+object typeofExpr extends js.Object {
+  def apply(expr: Expression): TypeofExpr = js.native
+}
+

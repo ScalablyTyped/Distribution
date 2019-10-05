@@ -28,11 +28,11 @@ object ListResolversByFunctionRequest {
   def apply(
     apiId: String,
     functionId: String,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: PaginationToken = null
   ): ListResolversByFunctionRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId, functionId = functionId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListResolversByFunctionRequest]
   }

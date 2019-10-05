@@ -21,7 +21,7 @@ trait AssociateRouteTableRequest extends js.Object {
 
 object AssociateRouteTableRequest {
   @scala.inline
-  def apply(RouteTableId: String, SubnetId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AssociateRouteTableRequest = {
+  def apply(RouteTableId: String, SubnetId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): AssociateRouteTableRequest = {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId, SubnetId = SubnetId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AssociateRouteTableRequest]

@@ -9,8 +9,8 @@ import typings.htmlDashWebpackDashPlugin.htmlDashWebpackDashPluginStrings.depend
 import typings.htmlDashWebpackDashPlugin.htmlDashWebpackDashPluginStrings.head
 import typings.htmlDashWebpackDashPlugin.htmlDashWebpackDashPluginStrings.manual
 import typings.htmlDashWebpackDashPlugin.htmlDashWebpackDashPluginStrings.none
-import typings.webpack.webpackMod.compilationNs.Chunk
-import typings.webpack.webpackMod.compilationNs.Compilation
+import typings.webpack.webpackMod.compilation.Chunk
+import typings.webpack.webpackMod.compilation.Compilation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

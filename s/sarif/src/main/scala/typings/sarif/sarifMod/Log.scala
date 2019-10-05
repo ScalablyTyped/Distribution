@@ -1,6 +1,7 @@
 package typings.sarif.sarifMod
 
-import typings.sarif.sarifMod.LogNs.version
+import typings.sarif.sarifMod.Log.version
+import typings.sarif.sarifStrings.`2DOT1DOT0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,23 +27,12 @@ trait Log extends js.Object {
   /**
     * The SARIF format version of this log file.
     */
-  var version: typings.sarif.sarifMod.LogNs.version
+  var version: version
 }
 
-object Log {
-  @scala.inline
-  def apply(
-    runs: js.Array[Run],
-    version: version,
-    $schema: String = null,
-    inlineExternalProperties: js.Array[ExternalProperties] = null,
-    properties: PropertyBag = null
-  ): Log = {
-    val __obj = js.Dynamic.literal(runs = runs, version = version)
-    if ($schema != null) __obj.updateDynamic("$schema")($schema)
-    if (inlineExternalProperties != null) __obj.updateDynamic("inlineExternalProperties")(inlineExternalProperties)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    __obj.asInstanceOf[Log]
-  }
+@JSImport("sarif", "Log")
+@js.native
+object Log extends js.Object {
+  type version = `2DOT1DOT0`
 }
 

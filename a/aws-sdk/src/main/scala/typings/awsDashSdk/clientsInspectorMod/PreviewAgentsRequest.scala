@@ -21,13 +21,9 @@ trait PreviewAgentsRequest extends js.Object {
 
 object PreviewAgentsRequest {
   @scala.inline
-  def apply(
-    previewAgentsArn: Arn,
-    maxResults: js.UndefOr[PreviewAgentsMaxResults] = js.undefined,
-    nextToken: PaginationToken = null
-  ): PreviewAgentsRequest = {
+  def apply(previewAgentsArn: Arn, maxResults: Int | Double = null, nextToken: PaginationToken = null): PreviewAgentsRequest = {
     val __obj = js.Dynamic.literal(previewAgentsArn = previewAgentsArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[PreviewAgentsRequest]
   }

@@ -7,7 +7,7 @@ import typings.astDashTypes.astDashTypesStrings.method
 import typings.astDashTypes.astDashTypesStrings.set
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.FunctionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.MethodDefinition
+import typings.astDashTypes.genNamedTypesMod.namedTypes.MethodDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

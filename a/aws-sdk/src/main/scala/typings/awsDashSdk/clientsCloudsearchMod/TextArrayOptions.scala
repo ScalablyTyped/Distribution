@@ -32,8 +32,8 @@ object TextArrayOptions {
   def apply(
     AnalysisScheme: Word = null,
     DefaultValue: FieldValue = null,
-    HighlightEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
+    HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     SourceFields: FieldNameCommaList = null
   ): TextArrayOptions = {
     val __obj = js.Dynamic.literal()

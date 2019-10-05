@@ -16,9 +16,5 @@ trait SpeechSynthesisEvent extends Event {
 
 @JSGlobal("SpeechSynthesisEvent")
 @js.native
-class SpeechSynthesisEventCls () extends SpeechSynthesisEvent
-
-@JSGlobal("SpeechSynthesisEvent")
-@js.native
 object SpeechSynthesisEvent extends Instantiable0[SpeechSynthesisEvent]
 

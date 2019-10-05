@@ -29,7 +29,7 @@ object DisassociateDiscoveredResourceRequest {
     ConfigurationId: ConfigurationId,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DisassociateDiscoveredResourceRequest = {
     val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId, MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

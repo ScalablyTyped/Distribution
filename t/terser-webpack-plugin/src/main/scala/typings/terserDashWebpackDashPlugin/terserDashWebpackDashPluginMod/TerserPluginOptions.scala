@@ -2,7 +2,7 @@ package typings.terserDashWebpackDashPlugin.terserDashWebpackDashPluginMod
 
 import typings.std.RegExp
 import typings.terser.terserMod.MinifyOptions
-import typings.webpack.webpackMod.compilationNs.Chunk
+import typings.webpack.webpackMod.compilation.Chunk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

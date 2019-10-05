@@ -17,9 +17,9 @@ trait EbsBlockDeviceConfig extends js.Object {
 
 object EbsBlockDeviceConfig {
   @scala.inline
-  def apply(VolumeSpecification: VolumeSpecification, VolumesPerInstance: js.UndefOr[Integer] = js.undefined): EbsBlockDeviceConfig = {
+  def apply(VolumeSpecification: VolumeSpecification, VolumesPerInstance: Int | Double = null): EbsBlockDeviceConfig = {
     val __obj = js.Dynamic.literal(VolumeSpecification = VolumeSpecification)
-    if (!js.isUndefined(VolumesPerInstance)) __obj.updateDynamic("VolumesPerInstance")(VolumesPerInstance)
+    if (VolumesPerInstance != null) __obj.updateDynamic("VolumesPerInstance")(VolumesPerInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsBlockDeviceConfig]
   }
 }

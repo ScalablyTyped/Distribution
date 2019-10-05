@@ -1,8 +1,9 @@
 package typings.meteorDashTypings
 
-import typings.meteorDashTypings.BlazeNs.EventsMap
-import typings.meteorDashTypings.BlazeNs.HelpersMap
-import typings.meteorDashTypings.BlazeNs.View
+import org.scalablytyped.runtime.TopLevel
+import typings.meteorDashTypings.Blaze.EventsMap
+import typings.meteorDashTypings.Blaze.HelpersMap
+import typings.meteorDashTypings.Blaze.View
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Template")
 @js.native
 class Template ()
-  extends typings.meteorDashTypings.BlazeNs.Template {
+  extends typings.meteorDashTypings.Blaze.Template {
   def this(viewName: String) = this()
   def this(viewName: String, renderFunction: js.Function) = this()
   /* CompleteClass */
@@ -22,7 +23,7 @@ class Template ()
   /* CompleteClass */
   override var destroyed: js.Function = js.native
   /* CompleteClass */
-  override var head: typings.meteorDashTypings.BlazeNs.Template = js.native
+  override var head: typings.meteorDashTypings.Blaze.Template = js.native
   /* CompleteClass */
   override var renderFunction: js.Function = js.native
   /* CompleteClass */
@@ -46,4 +47,8 @@ class Template ()
   /* CompleteClass */
   override def onRendered(cb: js.Function): Unit = js.native
 }
+
+@JSGlobal("Template")
+@js.native
+object Template extends TopLevel[TemplateStatic]
 

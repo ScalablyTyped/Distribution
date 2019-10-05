@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object html2canvas {
-  import typings.html2canvas.Html2CanvasNs.Html2CanvasOptions
+  import typings.html2canvas.Html2Canvas.Html2CanvasOptions
   import typings.std.HTMLCanvasElement
   import typings.std.HTMLElement
 

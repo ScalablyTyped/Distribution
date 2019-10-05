@@ -1,5 +1,6 @@
 package typings.inquirer.inquirerMod
 
+import typings.inquirer.libObjectsChoiceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ trait ExpandChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
 object ExpandChoiceMap {
   @scala.inline
   def apply[T /* <: Answers */](
-    Choice: typings.inquirer.libObjectsChoiceMod.^[T],
+    Choice: ^[T],
     ChoiceOptions: ChoiceOptions[T],
     ExpandChoiceOptions: ExpandChoiceOptions[T],
     Separator: typings.inquirer.libObjectsSeparatorMod.^,

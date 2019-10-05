@@ -19,17 +19,18 @@ trait TooltipProps
 object TooltipProps {
   @scala.inline
   def apply(
-    label: ReactNode,
     DOMAttributes: DOMAttributes[Tooltip] = null,
     MDLHTMLAttributes: MDLHTMLAttributes = null,
+    label: ReactNode = null,
     large: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     position: String = null,
     title: String = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (name != null) __obj.updateDynamic("name")(name)
     if (position != null) __obj.updateDynamic("position")(position)

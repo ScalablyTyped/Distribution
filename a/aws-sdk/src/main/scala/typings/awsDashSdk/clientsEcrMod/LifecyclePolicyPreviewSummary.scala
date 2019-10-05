@@ -13,9 +13,9 @@ trait LifecyclePolicyPreviewSummary extends js.Object {
 
 object LifecyclePolicyPreviewSummary {
   @scala.inline
-  def apply(expiringImageTotalCount: js.UndefOr[ImageCount] = js.undefined): LifecyclePolicyPreviewSummary = {
+  def apply(expiringImageTotalCount: Int | Double = null): LifecyclePolicyPreviewSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expiringImageTotalCount)) __obj.updateDynamic("expiringImageTotalCount")(expiringImageTotalCount)
+    if (expiringImageTotalCount != null) __obj.updateDynamic("expiringImageTotalCount")(expiringImageTotalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicyPreviewSummary]
   }
 }

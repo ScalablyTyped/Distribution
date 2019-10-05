@@ -16,12 +16,12 @@ trait Typeofpath extends js.Object {
     * The platform-specific file delimiter. ';' or ':'.
     */
   val delimiter: `;` | `:` = js.native
-  val posixNs: Typeofposix = js.native
+  val posix: Typeofposix = js.native
   /**
     * The platform-specific file separator. '\\' or '/'.
     */
   val sep: BACKSLASHBACKSLASH | `/` = js.native
-  val win32Ns: Typeofwin32 = js.native
+  val win32: Typeofwin32 = js.native
   /**
     * Return the last portion of a path. Similar to the Unix basename command.
     * Often used to extract the file name from a fully qualified path.

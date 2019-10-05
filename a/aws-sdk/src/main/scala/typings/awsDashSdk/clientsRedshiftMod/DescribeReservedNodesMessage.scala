@@ -21,14 +21,10 @@ trait DescribeReservedNodesMessage extends js.Object {
 
 object DescribeReservedNodesMessage {
   @scala.inline
-  def apply(
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    ReservedNodeId: String = null
-  ): DescribeReservedNodesMessage = {
+  def apply(Marker: String = null, MaxRecords: Int | scala.Double = null, ReservedNodeId: String = null): DescribeReservedNodesMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReservedNodeId != null) __obj.updateDynamic("ReservedNodeId")(ReservedNodeId)
     __obj.asInstanceOf[DescribeReservedNodesMessage]
   }

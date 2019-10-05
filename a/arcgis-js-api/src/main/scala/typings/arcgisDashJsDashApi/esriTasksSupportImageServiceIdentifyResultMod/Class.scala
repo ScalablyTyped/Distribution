@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportImageServiceIdentifyResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageServiceIdentifyResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageServiceIdentifyResultProperties
+import typings.arcgisDashJsDashApi.__esri.ImageServiceIdentifyResult
+import typings.arcgisDashJsDashApi.__esri.ImageServiceIdentifyResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

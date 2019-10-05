@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rechoir"
-version := "0.6-dt-20190212Z-baf36d"
-scalaVersion := "2.12.9"
+version := "0.6-dt-20190212Z-ca3fee"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-3dd654",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-267e36",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

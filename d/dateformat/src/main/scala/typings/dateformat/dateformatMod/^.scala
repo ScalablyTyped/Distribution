@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var i18n: DateFormatI18n = js.native
-  val masks: DateFormatMasks = js.native
   /**
     * dateFormat()
     *
@@ -21,11 +20,18 @@ object ^ extends js.Object {
     * https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L18
     */
   def apply(): String = js.native
-  def apply(date: Date | String | Double): String = js.native
-  def apply(date: Date | String | Double, mask: String): String = js.native
-  def apply(date: Date | String | Double, mask: String, utc: Boolean): String = js.native
-  def apply(date: Date | String | Double, mask: String, utc: Boolean, gmt: Boolean): String = js.native
-  def apply(mask: String): String = js.native
+  def apply(date: String): String = js.native
+  def apply(date: String, mask: String): String = js.native
+  def apply(date: String, mask: String, utc: Boolean): String = js.native
+  def apply(date: String, mask: String, utc: Boolean, gmt: Boolean): String = js.native
+  def apply(date: Double): String = js.native
+  def apply(date: Double, mask: String): String = js.native
+  def apply(date: Double, mask: String, utc: Boolean): String = js.native
+  def apply(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = js.native
+  def apply(date: Date): String = js.native
+  def apply(date: Date, mask: String): String = js.native
+  def apply(date: Date, mask: String, utc: Boolean): String = js.native
+  def apply(date: Date, mask: String, utc: Boolean, gmt: Boolean): String = js.native
   def apply(mask: String, utc: Boolean): String = js.native
   def apply(mask: String, utc: Boolean, gmt: Boolean): String = js.native
 }

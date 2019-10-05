@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "miniprogram-wxs"
-version := "2.6-dt-20190617Z-9fb022"
-scalaVersion := "2.12.9"
+version := "2.6-dt-20190617Z-d71026"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

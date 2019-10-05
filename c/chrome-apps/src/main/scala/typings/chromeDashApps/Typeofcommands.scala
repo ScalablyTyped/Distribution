@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.commandsNs.Command
-import typings.chromeDashApps.chromeNs.commandsNs.CommandEvent
+import typings.chromeDashApps.chrome.commands.Command
+import typings.chromeDashApps.chrome.commands.CommandEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

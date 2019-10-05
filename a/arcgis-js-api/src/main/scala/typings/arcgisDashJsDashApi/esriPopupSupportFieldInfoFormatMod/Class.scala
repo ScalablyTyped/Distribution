@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupSupportFieldInfoFormatMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldInfoFormat
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldInfoFormatProperties
+import typings.arcgisDashJsDashApi.__esri.FieldInfoFormat
+import typings.arcgisDashJsDashApi.__esri.FieldInfoFormatProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

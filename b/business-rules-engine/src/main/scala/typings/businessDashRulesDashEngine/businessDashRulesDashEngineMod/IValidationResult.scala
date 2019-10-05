@@ -28,11 +28,11 @@ object IValidationResult {
     HasErrorsDirty: Boolean,
     Name: String,
     Remove: Double => Unit,
-    Optional: IOptional = null,
+    Optional: () => Boolean = null,
     TranslateArgs: js.Array[IErrorTranslateArgs] = null
   ): IValidationResult = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Children = Children, ErrorCount = ErrorCount, ErrorMessage = ErrorMessage, HasErrors = HasErrors, HasErrorsDirty = HasErrorsDirty, Name = Name, Remove = js.Any.fromFunction1(Remove))
-    if (Optional != null) __obj.updateDynamic("Optional")(Optional)
+    if (Optional != null) __obj.updateDynamic("Optional")(js.Any.fromFunction0(Optional))
     if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
     __obj.asInstanceOf[IValidationResult]
   }

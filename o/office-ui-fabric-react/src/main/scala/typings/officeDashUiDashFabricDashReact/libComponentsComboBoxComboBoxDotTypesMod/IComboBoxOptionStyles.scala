@@ -23,8 +23,6 @@ trait IComboBoxOptionStyles extends IButtonStyles {
 object IComboBoxOptionStyles {
   @scala.inline
   def apply(
-    optionText: IStyle,
-    optionTextWrapper: IStyle,
     description: IStyle = null,
     descriptionChecked: IStyle = null,
     descriptionDisabled: IStyle = null,
@@ -49,6 +47,8 @@ object IComboBoxOptionStyles {
     menuIconExpandedHovered: IStyle = null,
     menuIconHovered: IStyle = null,
     menuIconPressed: IStyle = null,
+    optionText: IStyle = null,
+    optionTextWrapper: IStyle = null,
     root: IStyle = null,
     rootChecked: IStyle = null,
     rootCheckedDisabled: IStyle = null,
@@ -80,7 +80,7 @@ object IComboBoxOptionStyles {
     splitButtonMenuIconDisabled: IStyle = null,
     textContainer: IStyle = null
   ): IComboBoxOptionStyles = {
-    val __obj = js.Dynamic.literal(optionText = optionText.asInstanceOf[js.Any], optionTextWrapper = optionTextWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (descriptionChecked != null) __obj.updateDynamic("descriptionChecked")(descriptionChecked.asInstanceOf[js.Any])
     if (descriptionDisabled != null) __obj.updateDynamic("descriptionDisabled")(descriptionDisabled.asInstanceOf[js.Any])
@@ -105,6 +105,8 @@ object IComboBoxOptionStyles {
     if (menuIconExpandedHovered != null) __obj.updateDynamic("menuIconExpandedHovered")(menuIconExpandedHovered.asInstanceOf[js.Any])
     if (menuIconHovered != null) __obj.updateDynamic("menuIconHovered")(menuIconHovered.asInstanceOf[js.Any])
     if (menuIconPressed != null) __obj.updateDynamic("menuIconPressed")(menuIconPressed.asInstanceOf[js.Any])
+    if (optionText != null) __obj.updateDynamic("optionText")(optionText.asInstanceOf[js.Any])
+    if (optionTextWrapper != null) __obj.updateDynamic("optionTextWrapper")(optionTextWrapper.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (rootChecked != null) __obj.updateDynamic("rootChecked")(rootChecked.asInstanceOf[js.Any])
     if (rootCheckedDisabled != null) __obj.updateDynamic("rootCheckedDisabled")(rootCheckedDisabled.asInstanceOf[js.Any])

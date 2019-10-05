@@ -1,8 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod
 
 import typings.atBlueprintjsCore.libEsmCommonAlignmentMod.Alignment
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.InputHTMLAttributes
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLInputElement
@@ -48,14 +47,13 @@ import scala.scalajs.js.annotation._
     * @default "label"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
 }
 
 object IControlProps {
   @scala.inline
   def apply(
-    IProps: IProps = null,
     InputHTMLAttributes: InputHTMLAttributes[HTMLInputElement] = null,
     alignIndicator: Alignment = null,
     checked: js.UndefOr[Boolean] = js.undefined,
@@ -67,11 +65,10 @@ object IControlProps {
     label: String = null,
     labelElement: ReactNode = null,
     large: js.UndefOr[Boolean] = js.undefined,
-    onChange: FormEventHandler[HTMLInputElement] = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
+    onChange: FormEvent[HTMLInputElement] => Unit = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
   ): IControlProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IProps)
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
     if (alignIndicator != null) __obj.updateDynamic("alignIndicator")(alignIndicator)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
@@ -83,7 +80,7 @@ object IControlProps {
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelElement != null) __obj.updateDynamic("labelElement")(labelElement.asInstanceOf[js.Any])
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IControlProps]
   }

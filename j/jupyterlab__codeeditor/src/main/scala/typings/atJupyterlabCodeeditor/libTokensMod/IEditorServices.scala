@@ -1,7 +1,9 @@
 package typings.atJupyterlabCodeeditor.libTokensMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJupyterlabCodeeditor.libFactoryMod.IEditorFactoryService
 import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +19,7 @@ trait IEditorServices extends js.Object {
   val mimeTypeService: IEditorMimeTypeService
 }
 
-object IEditorServices {
-  @scala.inline
-  def apply(factoryService: IEditorFactoryService, mimeTypeService: IEditorMimeTypeService): IEditorServices = {
-    val __obj = js.Dynamic.literal(factoryService = factoryService, mimeTypeService = mimeTypeService)
-  
-    __obj.asInstanceOf[IEditorServices]
-  }
-}
+@JSImport("@jupyterlab/codeeditor/lib/tokens", "IEditorServices")
+@js.native
+object IEditorServices extends TopLevel[Token[IEditorServices]]
 

@@ -1,7 +1,7 @@
 package typings.stringDashTemplate
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stringDashTemplate.StringTemplateNs.Compile
+import typings.stringDashTemplate.StringTemplate.Compile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

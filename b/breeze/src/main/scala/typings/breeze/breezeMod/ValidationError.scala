@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "ValidationError")
 @js.native
 class ValidationError protected ()
-  extends typings.breeze.breezeNs.ValidationError {
-  def this(validator: typings.breeze.breezeNs.Validator, context: js.Any, errorMessage: String, key: String) = this()
+  extends typings.breeze.breeze.ValidationError {
+  def this(validator: typings.breeze.breeze.Validator, context: js.Any, errorMessage: String, key: String) = this()
 }
 

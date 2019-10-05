@@ -1,6 +1,6 @@
 package typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod
 
-import typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod.connectMongodbSessionNs.MongoDBStore
+import typings.connectDashMongodbDashSession.connectDashMongodbDashSessionMod.connectMongodbSession.MongoDBStore
 import typings.express.expressMod.RequestHandler
 import typings.expressDashSession.expressDashSessionMod.SessionOptions
 import scala.scalajs.js

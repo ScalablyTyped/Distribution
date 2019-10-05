@@ -1,6 +1,6 @@
 package typings.activexDashMsforms
 
-import typings.activexDashMsforms.MSFormsNs.ReturnBoolean
+import typings.activexDashMsforms.MSForms.ReturnBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,16 +32,16 @@ object DescribeNamespaceResponse {
   def apply(
     namespaceArn: Arn = null,
     namespaceName: NamespaceName = null,
-    namespaceVersion: js.UndefOr[Version] = js.undefined,
+    namespaceVersion: Int | Double = null,
     trackingNamespaceName: NamespaceName = null,
-    trackingNamespaceVersion: js.UndefOr[Version] = js.undefined
+    trackingNamespaceVersion: Int | Double = null
   ): DescribeNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     if (namespaceArn != null) __obj.updateDynamic("namespaceArn")(namespaceArn)
     if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName)
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion)
+    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
     if (trackingNamespaceName != null) __obj.updateDynamic("trackingNamespaceName")(trackingNamespaceName)
-    if (!js.isUndefined(trackingNamespaceVersion)) __obj.updateDynamic("trackingNamespaceVersion")(trackingNamespaceVersion)
+    if (trackingNamespaceVersion != null) __obj.updateDynamic("trackingNamespaceVersion")(trackingNamespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNamespaceResponse]
   }
 }

@@ -1,5 +1,6 @@
 package typings.aureliaDashTemplating.aureliaDashTemplatingMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,4 +28,9 @@ trait ViewStrategy extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
 }
+
+@JSImport("aurelia-templating", "viewStrategy")
+@js.native
+object viewStrategy
+  extends TopLevel[js.Function]
 

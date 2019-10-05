@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Color")
 @js.native
 class Color ()
-  extends typings.playcanvas.pcNs.Color {
+  extends typings.playcanvas.pc.Color {
   def this(r: js.Array[Number]) = this()
   def this(r: Double) = this()
   def this(r: js.Array[Number], g: Double) = this()

@@ -1,8 +1,8 @@
 package typings.stacktraceDashJs
 
-import typings.stacktraceDashJs.StackTraceNs.RequestOptions
-import typings.stacktraceDashJs.StackTraceNs.StackFrame
-import typings.stacktraceDashJs.StackTraceNs.StackTraceOptions
+import typings.stacktraceDashJs.StackTrace.RequestOptions
+import typings.stacktraceDashJs.StackTrace.StackFrame
+import typings.stacktraceDashJs.StackTrace.StackTraceOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

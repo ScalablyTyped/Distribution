@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesSupportOpacityStopMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacityStop
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacityStopProperties
+import typings.arcgisDashJsDashApi.__esri.OpacityStop
+import typings.arcgisDashJsDashApi.__esri.OpacityStopProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

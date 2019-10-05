@@ -385,12 +385,6 @@ trait RTCPeerConnection extends EventTarget {
 
 @JSGlobal("RTCPeerConnection")
 @js.native
-class RTCPeerConnectionCls () extends RTCPeerConnection {
-  def this(configuration: RTCConfiguration) = this()
-}
-
-@JSGlobal("RTCPeerConnection")
-@js.native
 object RTCPeerConnection
   extends Instantiable0[RTCPeerConnection]
      with Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {

@@ -16,13 +16,14 @@ trait GetMarkupFromTreeOptions extends js.Object {
 object GetMarkupFromTreeOptions {
   @scala.inline
   def apply(
-    tree: ReactNode,
     context: StringDictionary[js.Any] = null,
-    renderFunction: /* tree */ ReactElement => String = null
+    renderFunction: /* tree */ ReactElement => String = null,
+    tree: ReactNode = null
   ): GetMarkupFromTreeOptions = {
-    val __obj = js.Dynamic.literal(tree = tree.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
     if (renderFunction != null) __obj.updateDynamic("renderFunction")(js.Any.fromFunction1(renderFunction))
+    if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMarkupFromTreeOptions]
   }
 }

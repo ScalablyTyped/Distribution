@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "FlatButton")
 @js.native
 class FlatButton ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.FlatButton
+  extends typings.materialDashUi.__MaterialUI.FlatButton
 

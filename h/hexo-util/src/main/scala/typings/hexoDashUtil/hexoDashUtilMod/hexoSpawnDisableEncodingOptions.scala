@@ -2,7 +2,7 @@ package typings.hexoDashUtil.hexoDashUtilMod
 
 import typings.hexoDashUtil.hexoDashUtilNumbers.`false`
 import typings.hexoDashUtil.hexoDashUtilStrings.Empty
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.node.childUnderscoreProcessMod.SpawnOptions
 import typings.node.childUnderscoreProcessMod.StdioOptions
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.amapDashJsDashApiDashGeolocation
 
-import typings.amapDashJsDashApiDashGeolocation.AMapNs.GeolocationNs.ButtonPosition
-import typings.amapDashJsDashApiDashGeolocation.AMapNs.GeolocationNs.LocationType
-import typings.amapDashJsDashApiDashGeolocation.AMapNs.GeolocationNs.SearchStatus
+import typings.amapDashJsDashApiDashGeolocation.AMap.Geolocation.ButtonPosition
+import typings.amapDashJsDashApiDashGeolocation.AMap.Geolocation.LocationType
+import typings.amapDashJsDashApiDashGeolocation.AMap.Geolocation.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

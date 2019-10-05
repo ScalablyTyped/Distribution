@@ -1,5 +1,6 @@
 package typings.sicDashEcies.sicDashEciesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.bitcoreDashLib.bitcoreDashLibMod.PrivateKey
 import typings.bitcoreDashLib.bitcoreDashLibMod.PublicKey
 import typings.node.Buffer
@@ -23,4 +24,8 @@ trait ECIES extends js.Object {
   def privateKey(privateKey: PrivateKey): ECIES = js.native
   def publicKey(publicKey: PublicKey): ECIES = js.native
 }
+
+@JSImport("sic-ecies", "ECIES")
+@js.native
+object ECIES extends TopLevel[ECIES]
 

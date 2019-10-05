@@ -28,12 +28,12 @@ object GetResourcesRequest {
   def apply(
     restApiId: String,
     embed: ListOfString = null,
-    limit: js.UndefOr[NullableInteger] = js.undefined,
+    limit: Int | scala.Double = null,
     position: String = null
   ): GetResourcesRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)
     if (embed != null) __obj.updateDynamic("embed")(embed)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[GetResourcesRequest]
   }

@@ -2,10 +2,10 @@ package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.seleniumDashWebdriver.Anon_Error
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ErrorCodeType
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ErrorData
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.MaybeLegacyResponse
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.Response
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ErrorCodeType
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ErrorData
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.MaybeLegacyResponse
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Typeoferror extends js.Object {
     * page.
     */
   var ElementClickInterceptedError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ElementClickInterceptedError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ElementClickInterceptedError
   ] = js.native
   /**
     * Indicates a command could not be completed because the target element is
@@ -27,41 +27,41 @@ trait Typeoferror extends js.Object {
     * "display: none").
     */
   var ElementNotInteractableError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ElementNotInteractableError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ElementNotInteractableError
   ] = js.native
   /**
     * An attempt was made to select an element that cannot be selected.
     */
   var ElementNotSelectableError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ElementNotSelectableError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ElementNotSelectableError
   ] = js.native
   val ErrorCode: ErrorCodeType = js.native
-  var IError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.IError] = js.native
+  var IError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.IError] = js.native
   /**
     * Indicates a navigation event caused the browser to generate a certificate
     * warning. This is usually caused by an expired or invalid TLS certificate.
     */
   var InsecureCertificateError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InsecureCertificateError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InsecureCertificateError
   ] = js.native
   /**
     * The arguments passed to a command are either invalid or malformed.
     */
   var InvalidArgumentError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InvalidArgumentError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InvalidArgumentError
   ] = js.native
   /**
     * An illegal attempt was made to set a cookie under a different domain than
     * the current page.
     */
   var InvalidCookieDomainError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InvalidCookieDomainError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InvalidCookieDomainError
   ] = js.native
   /**
     * The coordinates provided to an interactions operation are invalid.
     */
   var InvalidCoordinatesError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InvalidCoordinatesError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InvalidCoordinatesError
   ] = js.native
   /**
     * An element command could not be completed because the element is in an
@@ -69,122 +69,112 @@ trait Typeoferror extends js.Object {
     * attached to the document.
     */
   var InvalidElementStateError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InvalidElementStateError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InvalidElementStateError
   ] = js.native
   /**
     * Argument was an invalid selector.
     */
   var InvalidSelectorError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.InvalidSelectorError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.InvalidSelectorError
   ] = js.native
   /**
     * An error occurred while executing JavaScript supplied by the user.
     */
-  var JavascriptError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.JavascriptError] = js.native
+  var JavascriptError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.JavascriptError] = js.native
   /**
     * The target for mouse interaction is not in the browser’s viewport and
     * cannot be brought into that viewport.
     */
   var MoveTargetOutOfBoundsError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.MoveTargetOutOfBoundsError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.MoveTargetOutOfBoundsError
   ] = js.native
   /**
     * An attempt was made to operate on a modal dialog when one was not open.
     */
-  var NoSuchAlertError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchAlertError] = js.native
+  var NoSuchAlertError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchAlertError] = js.native
   /**
     * Indicates a named cookie could not be found in the cookie jar for the
     * currently selected document.
     */
-  var NoSuchCookieError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchCookieError] = js.native
+  var NoSuchCookieError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchCookieError] = js.native
   /**
     * An element could not be located on the page using the given search
     * parameters.
     */
-  var NoSuchElementError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchElementError
-  ] = js.native
+  var NoSuchElementError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchElementError] = js.native
   /**
     * A request to switch to a frame could not be satisfied because the frame
     * could not be found.
     */
-  var NoSuchFrameError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchFrameError] = js.native
+  var NoSuchFrameError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchFrameError] = js.native
   /**
     * Occurs when a command is directed to a session that does not exist.
     */
-  var NoSuchSessionError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchSessionError
-  ] = js.native
+  var NoSuchSessionError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchSessionError] = js.native
   /**
     * A request to switch to a window could not be satisfied because the window
     * could not be found.
     */
-  var NoSuchWindowError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.NoSuchWindowError] = js.native
+  var NoSuchWindowError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.NoSuchWindowError] = js.native
   /**
     * A script did not complete before its timeout expired.
     */
-  var ScriptTimeoutError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.ScriptTimeoutError
-  ] = js.native
+  var ScriptTimeoutError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.ScriptTimeoutError] = js.native
   /**
     * A new session could not be created.
     */
   var SessionNotCreatedError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.SessionNotCreatedError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.SessionNotCreatedError
   ] = js.native
   /**
     * An element command failed because the referenced element is no longer
     * attached to the DOM.
     */
   var StaleElementReferenceError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.StaleElementReferenceError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.StaleElementReferenceError
   ] = js.native
   /**
     * An operation did not completErrorCodee before its timeout expired.
     */
-  var TimeoutError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.TimeoutError] = js.native
+  var TimeoutError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.TimeoutError] = js.native
   /**
     * A screen capture operation was not possible.
     */
   var UnableToCaptureScreenError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnableToCaptureScreenError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnableToCaptureScreenError
   ] = js.native
   /**
     * A request to set a cookie’s value could not be satisfied.
     */
   var UnableToSetCookieError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnableToSetCookieError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnableToSetCookieError
   ] = js.native
   /**
     * A modal dialog was open, blocking this operation.
     */
   var UnexpectedAlertOpenError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnexpectedAlertOpenError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnexpectedAlertOpenError
   ] = js.native
   /**
     * A command could not be executed because the remote end is not aware of it.
     */
-  var UnknownCommandError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnknownCommandError
-  ] = js.native
+  var UnknownCommandError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnknownCommandError] = js.native
   /**
     * The requested command matched a known URL but did not match an method for
     * that URL.
     */
-  var UnknownMethodError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnknownMethodError
-  ] = js.native
+  var UnknownMethodError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnknownMethodError] = js.native
   /**
     * Reports an unsupport operation.
     */
   var UnsupportedOperationError: Instantiable0[
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.UnsupportedOperationError
+    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.UnsupportedOperationError
   ] = js.native
   /**
     * The base WebDriver error type. This error type is only used directly when a
     * more appropriate category is not defined for the offending error.
     */
-  var WebDriverError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.errorNs.WebDriverError] = js.native
+  var WebDriverError: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.error.WebDriverError] = js.native
   /**
     * Checks a legacy response from the Selenium 2.0 wire protocol for an error.
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "BaseRenderTexture")
 @js.native
 class BaseRenderTexture ()
-  extends typings.pixiDotJs.PIXINs.BaseRenderTexture {
+  extends typings.pixiDotJs.PIXI.BaseRenderTexture {
   def this(width: Double) = this()
   def this(width: Double, height: Double) = this()
   def this(width: Double, height: Double, scaleMode: Double) = this()

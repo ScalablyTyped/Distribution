@@ -1,6 +1,6 @@
 package typings.azureDashSb.libWnsserviceMod
 
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

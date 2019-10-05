@@ -1,7 +1,7 @@
 package typings.zipkinDashTransportDashHttp.zipkinDashTransportDashHttpMod
 
 import typings.zipkin.zipkinMod.Logger
-import typings.zipkin.zipkinMod.modelNs.Span
+import typings.zipkin.zipkinMod.model.Span
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

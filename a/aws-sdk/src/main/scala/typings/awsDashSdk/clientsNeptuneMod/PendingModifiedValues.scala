@@ -66,35 +66,35 @@ trait PendingModifiedValues extends js.Object {
 object PendingModifiedValues {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CACertificateIdentifier: String = null,
     DBInstanceClass: String = null,
     DBInstanceIdentifier: String = null,
     DBSubnetGroupName: String = null,
     EngineVersion: String = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     LicenseModel: String = null,
     MasterUserPassword: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PendingCloudwatchLogsExports: PendingCloudwatchLogsExports = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     StorageType: String = null
   ): PendingModifiedValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (PendingCloudwatchLogsExports != null) __obj.updateDynamic("PendingCloudwatchLogsExports")(PendingCloudwatchLogsExports)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)
     __obj.asInstanceOf[PendingModifiedValues]
   }

@@ -72,7 +72,7 @@ object S3CopyObjectOperation {
     ObjectLockMode: S3ObjectLockMode = null,
     ObjectLockRetainUntilDate: TimeStamp = null,
     RedirectLocation: NonEmptyMaxLength2048String = null,
-    RequesterPays: js.UndefOr[Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
     SSEAwsKmsKeyId: KmsKeyArnString = null,
     StorageClass: S3StorageClass = null,
     TargetKeyPrefix: NonEmptyMaxLength1024String = null,

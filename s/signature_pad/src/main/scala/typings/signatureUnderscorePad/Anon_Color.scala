@@ -1,6 +1,6 @@
 package typings.signatureUnderscorePad
 
-import typings.signatureUnderscorePad.signatureUnderscorePadMod.SignaturePadNs.Point
+import typings.signatureUnderscorePad.signatureUnderscorePadMod.SignaturePad.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

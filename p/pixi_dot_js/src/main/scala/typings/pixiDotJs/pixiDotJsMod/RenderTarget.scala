@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "RenderTarget")
 @js.native
 class RenderTarget protected ()
-  extends typings.pixiDotJs.PIXINs.RenderTarget {
+  extends typings.pixiDotJs.PIXI.RenderTarget {
   def this(gl: WebGLRenderingContext, width: Double, height: Double, scaleMode: Double, resolution: Double) = this()
   def this(
     gl: WebGLRenderingContext,

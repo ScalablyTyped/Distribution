@@ -22,7 +22,7 @@ trait GetTimeSeriesServiceStatisticsResult extends js.Object {
 object GetTimeSeriesServiceStatisticsResult {
   @scala.inline
   def apply(
-    ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined,
+    ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined,
     NextToken: String = null,
     TimeSeriesServiceStatistics: TimeSeriesServiceStatisticsList = null
   ): GetTimeSeriesServiceStatisticsResult = {

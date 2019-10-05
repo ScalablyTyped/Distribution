@@ -21,7 +21,7 @@ trait ImportKeyPairRequest extends js.Object {
 
 object ImportKeyPairRequest {
   @scala.inline
-  def apply(KeyName: String, PublicKeyMaterial: _Blob, DryRun: js.UndefOr[Boolean] = js.undefined): ImportKeyPairRequest = {
+  def apply(KeyName: String, PublicKeyMaterial: _Blob, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ImportKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName, PublicKeyMaterial = PublicKeyMaterial.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ImportKeyPairRequest]

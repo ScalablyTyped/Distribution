@@ -1,6 +1,6 @@
 package typings.awsDashSdk.clientsStsMod
 
-import typings.awsDashSdk.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityCredentialsInputs
+import typings.awsDashSdk.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentials.CognitoIdentityCredentialsInputs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,13 +42,13 @@ object AssumeRoleWithWebIdentityRequest {
     RoleArn: arnType,
     RoleSessionName: roleSessionNameType,
     WebIdentityToken: clientTokenType,
-    DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
+    DurationSeconds: Int | Double = null,
     Policy: sessionPolicyDocumentType = null,
     PolicyArns: policyDescriptorListType = null,
     ProviderId: urlType = null
   ): AssumeRoleWithWebIdentityRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn, RoleSessionName = RoleSessionName, WebIdentityToken = WebIdentityToken)
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds)
+    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy)
     if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns)
     if (ProviderId != null) __obj.updateDynamic("ProviderId")(ProviderId)

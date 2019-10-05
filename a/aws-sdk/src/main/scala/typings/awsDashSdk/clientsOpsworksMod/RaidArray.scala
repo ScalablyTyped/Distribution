@@ -66,13 +66,13 @@ object RaidArray {
     CreatedAt: DateTime = null,
     Device: String = null,
     InstanceId: String = null,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    Iops: Int | scala.Double = null,
     MountPoint: String = null,
     Name: String = null,
-    NumberOfDisks: js.UndefOr[Integer] = js.undefined,
+    NumberOfDisks: Int | scala.Double = null,
     RaidArrayId: String = null,
-    RaidLevel: js.UndefOr[Integer] = js.undefined,
-    Size: js.UndefOr[Integer] = js.undefined,
+    RaidLevel: Int | scala.Double = null,
+    Size: Int | scala.Double = null,
     StackId: String = null,
     VolumeType: String = null
   ): RaidArray = {
@@ -81,13 +81,13 @@ object RaidArray {
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (Device != null) __obj.updateDynamic("Device")(Device)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (MountPoint != null) __obj.updateDynamic("MountPoint")(MountPoint)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(NumberOfDisks)) __obj.updateDynamic("NumberOfDisks")(NumberOfDisks)
+    if (NumberOfDisks != null) __obj.updateDynamic("NumberOfDisks")(NumberOfDisks.asInstanceOf[js.Any])
     if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId)
-    if (!js.isUndefined(RaidLevel)) __obj.updateDynamic("RaidLevel")(RaidLevel)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (RaidLevel != null) __obj.updateDynamic("RaidLevel")(RaidLevel.asInstanceOf[js.Any])
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId)
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType)
     __obj.asInstanceOf[RaidArray]

@@ -210,9 +210,8 @@ object zlibMod extends js.Object {
   def unzip(buf: InputType, options: ZlibOptions, callback: CompressCallback): Unit = js.native
   def unzipSync(buf: InputType): Buffer = js.native
   def unzipSync(buf: InputType, options: ZlibOptions): Buffer = js.native
-  @JSName("constants")
   @js.native
-  object constantsNs extends js.Object {
+  object constants extends js.Object {
     val BROTLI_DECODE: Double = js.native
     val BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: Double = js.native
     val BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP: Double = js.native

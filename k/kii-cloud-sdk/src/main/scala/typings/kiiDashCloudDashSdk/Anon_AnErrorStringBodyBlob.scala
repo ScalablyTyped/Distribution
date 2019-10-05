@@ -1,6 +1,6 @@
 package typings.kiiDashCloudDashSdk
 
-import typings.kiiDashCloudDashSdk.KiiCloudNs.KiiObject
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiObject
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,22 +28,22 @@ object MouseWrapper {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     cancel: String = null,
-    capture: CaptureEvent = null,
+    capture: (/* event */ Event, /* ui */ CaptureEventUIParam) => Unit = null,
     delay: Int | Double = null,
     distance: Int | Double = null,
-    drag: DragEvent = null,
-    start: StartEvent = null,
-    stop: StopEvent = null
+    drag: (/* event */ Event, /* ui */ DragEventUIParam) => Unit = null,
+    start: (/* event */ Event, /* ui */ StartEventUIParam) => Unit = null,
+    stop: (/* event */ Event, /* ui */ StopEventUIParam) => Unit = null
   ): MouseWrapper = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
+    if (capture != null) __obj.updateDynamic("capture")(js.Any.fromFunction2(capture))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[MouseWrapper]
   }
 }

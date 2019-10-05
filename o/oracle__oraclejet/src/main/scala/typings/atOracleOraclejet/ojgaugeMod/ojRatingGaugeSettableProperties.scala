@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojgaugeMod
 
 import typings.atOracleOraclejet.Anon_BorderColorCircle
 import typings.atOracleOraclejet.Anon_ComponentNameLabelAndValue
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0DOT5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
@@ -12,7 +12,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.off
 import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
-import typings.atOracleOraclejet.ojgaugeMod.ojRatingGaugeNs.Threshold
+import typings.atOracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait ojRatingGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var selectedState: Anon_BorderColorCircle
   var step: `0DOT5` | `1`
   var thresholds: js.Array[Threshold]
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912
   val transientValue: Double | Null
   var unselectedState: Anon_BorderColorCircle
   var value: Double | Null
@@ -50,7 +50,7 @@ object ojRatingGaugeSettableProperties {
     selectedState: Anon_BorderColorCircle,
     step: `0DOT5` | `1`,
     thresholds: js.Array[Threshold],
-    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288,
+    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912,
     trackResize: on | off,
     translations: Anon_ComponentNameLabelAndValue,
     unselectedState: Anon_BorderColorCircle,

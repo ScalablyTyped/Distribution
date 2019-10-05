@@ -22,12 +22,17 @@ trait CodeActionContext extends js.Object {
   var only: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
 }
 
-object CodeActionContext {
-  @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind] = null): CodeActionContext = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics)
-    if (only != null) __obj.updateDynamic("only")(only)
-    __obj.asInstanceOf[CodeActionContext]
-  }
+@JSImport("vscode-languageserver-types", "CodeActionContext")
+@js.native
+object CodeActionContext extends js.Object {
+  /**
+    * Creates a new CodeActionContext literal.
+    */
+  def create(diagnostics: js.Array[Diagnostic]): CodeActionContext = js.native
+  def create(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind]): CodeActionContext = js.native
+  /**
+    * Checks whether the given literal conforms to the [CodeActionContext](#CodeActionContext) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = js.native
 }
 

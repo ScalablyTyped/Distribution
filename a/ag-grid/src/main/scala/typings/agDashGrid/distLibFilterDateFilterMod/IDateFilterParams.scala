@@ -5,6 +5,7 @@ import typings.agDashGrid.distLibEntitiesColumnMod.Column
 import typings.agDashGrid.distLibEntitiesRowNodeMod.RowNode
 import typings.agDashGrid.distLibFilterBaseFilterMod.IComparableFilterParams
 import typings.agDashGrid.distLibInterfacesIRowModelMod.IRowModel
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +31,7 @@ object IDateFilterParams {
     applyButton: js.UndefOr[Boolean] = js.undefined,
     browserDatePicker: js.UndefOr[Boolean] = js.undefined,
     clearButton: js.UndefOr[Boolean] = js.undefined,
-    comparator: IDateComparatorFunc = null,
+    comparator: (/* filterLocalDateAtMidnight */ Date, /* cellValue */ js.Any) => Double = null,
     defaultOption: String = null,
     filterOptions: js.Array[String] = null,
     newRowsAction: String = null,
@@ -40,7 +41,7 @@ object IDateFilterParams {
     if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton)
     if (!js.isUndefined(browserDatePicker)) __obj.updateDynamic("browserDatePicker")(browserDatePicker)
     if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton)
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
     if (defaultOption != null) __obj.updateDynamic("defaultOption")(defaultOption)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
     if (newRowsAction != null) __obj.updateDynamic("newRowsAction")(newRowsAction)

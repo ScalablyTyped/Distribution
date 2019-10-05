@@ -1,10 +1,10 @@
 package typings.reactDashPlacesDashAutocomplete
 
-import typings.googlemaps.googleNs.mapsNs.GeocoderComponentRestrictions
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngBounds
-import typings.googlemaps.googleNs.mapsNs.LatLngBoundsLiteral
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
+import typings.googlemaps.google.maps.GeocoderComponentRestrictions
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngBounds
+import typings.googlemaps.google.maps.LatLngBoundsLiteral
+import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

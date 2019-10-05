@@ -89,7 +89,7 @@ object UpdateStackInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
+    UsePreviousTemplate: js.UndefOr[Boolean] = js.undefined
   ): UpdateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName)
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities)

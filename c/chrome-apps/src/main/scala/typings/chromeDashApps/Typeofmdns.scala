@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.FilteredEvent
-import typings.chromeDashApps.chromeNs.integer
-import typings.chromeDashApps.chromeNs.mdnsNs.Service
-import typings.chromeDashApps.chromeNs.mdnsNs.ServiceTypes
+import typings.chromeDashApps.chrome.events.FilteredEvent
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.mdns.Service
+import typings.chromeDashApps.chrome.mdns.ServiceTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,12 +15,12 @@ object AlertComponentPropsWithStyle {
   def apply(
     close: () => Unit,
     id: String,
-    message: ReactNode,
     options: AlertCustomOptionsWithType,
-    style: CSSProperties
+    style: CSSProperties,
+    message: ReactNode = null
   ): AlertComponentPropsWithStyle = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id, message = message.asInstanceOf[js.Any], options = options, style = style)
-  
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id, options = options, style = style)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertComponentPropsWithStyle]
   }
 }

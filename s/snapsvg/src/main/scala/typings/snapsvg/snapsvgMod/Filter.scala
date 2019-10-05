@@ -1,5 +1,6 @@
 package typings.snapsvg.snapsvgMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,8 @@ trait Filter extends js.Object {
   def shadow(dx: Double, dy: Double, color: String, opacity: Double): String = js.native
   def shadow(dx: Double, dy: Double, opacity: Double): String = js.native
 }
+
+@JSImport("snapsvg", "filter")
+@js.native
+object filter extends TopLevel[Filter]
 

@@ -13,7 +13,7 @@ trait SpotFleetMonitoring extends js.Object {
 
 object SpotFleetMonitoring {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): SpotFleetMonitoring = {
+  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined): SpotFleetMonitoring = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[SpotFleetMonitoring]

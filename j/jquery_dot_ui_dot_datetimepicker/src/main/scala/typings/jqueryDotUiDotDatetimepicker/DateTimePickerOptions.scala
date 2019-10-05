@@ -1,6 +1,6 @@
 package typings.jqueryDotUiDotDatetimepicker
 
-import typings.jqueryui.JQueryUINs.DatepickerOptions
+import typings.jqueryui.JQueryUI.DatepickerOptions
 import typings.std.Date
 import typings.std.Element
 import scala.scalajs.js

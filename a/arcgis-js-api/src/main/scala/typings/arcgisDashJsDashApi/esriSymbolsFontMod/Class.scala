@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsFontMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Font
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FontProperties
+import typings.arcgisDashJsDashApi.__esri.Font
+import typings.arcgisDashJsDashApi.__esri.FontProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,9 +6,9 @@ import typings.tstl.baseDisposableIPartialContainersMod._IInsert
 import typings.tstl.baseDisposableIPartialContainersMod._IPushBack
 import typings.tstl.baseDisposableIPartialContainersMod._IPushFront
 import typings.tstl.containerVectorMod.Vector
-import typings.tstl.containerVectorMod.VectorNs.Iterator
-import typings.tstl.containerVectorMod.VectorNs.ReverseIterator
-import typings.tstl.functionalIPointerMod.IPointerNs.ValueType
+import typings.tstl.containerVectorMod.Vector.Iterator
+import typings.tstl.containerVectorMod.Vector.ReverseIterator
+import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorBackInsertIteratorMod.BackInsertIterator
 import typings.tstl.iteratorFrontInsertIteratorMod.FrontInsertIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator

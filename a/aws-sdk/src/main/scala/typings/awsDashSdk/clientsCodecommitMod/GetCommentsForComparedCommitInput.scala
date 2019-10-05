@@ -33,12 +33,12 @@ object GetCommentsForComparedCommitInput {
     afterCommitId: CommitId,
     repositoryName: RepositoryName,
     beforeCommitId: CommitId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): GetCommentsForComparedCommitInput = {
     val __obj = js.Dynamic.literal(afterCommitId = afterCommitId, repositoryName = repositoryName)
     if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetCommentsForComparedCommitInput]
   }

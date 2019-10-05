@@ -25,7 +25,7 @@ object DescribeSMBSettingsOutput {
   def apply(
     DomainName: DomainName = null,
     GatewayARN: GatewayARN = null,
-    SMBGuestPasswordSet: js.UndefOr[Boolean] = js.undefined,
+    SMBGuestPasswordSet: js.UndefOr[scala.Boolean] = js.undefined,
     SMBSecurityStrategy: SMBSecurityStrategy = null
   ): DescribeSMBSettingsOutput = {
     val __obj = js.Dynamic.literal()

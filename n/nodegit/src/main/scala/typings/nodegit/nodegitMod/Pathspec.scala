@@ -21,5 +21,6 @@ object Pathspec extends js.Object {
   def matchListEntrycount(m: js.Any): Double = js.native
   def matchListFailedEntry(m: js.Any, pos: Double): String = js.native
   def matchListFailedEntrycount(m: js.Any): Double = js.native
+  type FLAG = typings.nodegit.pathDashSpecMod.Pathspec.FLAG
 }
 

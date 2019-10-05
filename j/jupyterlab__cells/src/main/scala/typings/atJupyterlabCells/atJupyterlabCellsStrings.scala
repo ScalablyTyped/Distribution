@@ -1,6 +1,6 @@
 package typings.atJupyterlabCells
 
-import typings.atJupyterlabCells.libCelldragutilsMod.CellDragUtilsNs.ICellTargetArea
+import typings.atJupyterlabCells.libCelldragutilsMod.CellDragUtils.ICellTargetArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

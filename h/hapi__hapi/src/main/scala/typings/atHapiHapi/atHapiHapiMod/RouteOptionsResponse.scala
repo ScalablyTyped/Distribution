@@ -1,7 +1,7 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.FailAction
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.FailAction
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
 import typings.atHapiHapi.atHapiHapiNumbers.`200`
 import typings.atHapiHapi.atHapiHapiNumbers.`204`
 import typings.atHapiJoi.atHapiJoiMod.ValidationOptions

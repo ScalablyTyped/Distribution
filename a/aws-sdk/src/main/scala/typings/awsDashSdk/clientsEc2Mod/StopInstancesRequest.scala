@@ -27,9 +27,9 @@ object StopInstancesRequest {
   @scala.inline
   def apply(
     InstanceIds: InstanceIdStringList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Force: js.UndefOr[Boolean] = js.undefined,
-    Hibernate: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Force: js.UndefOr[scala.Boolean] = js.undefined,
+    Hibernate: js.UndefOr[scala.Boolean] = js.undefined
   ): StopInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

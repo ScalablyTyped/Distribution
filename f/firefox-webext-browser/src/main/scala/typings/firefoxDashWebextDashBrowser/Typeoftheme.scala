@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.themeNs.ThemeUpdateInfo
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.ThemeType
+import typings.firefoxDashWebextDashBrowser.browser._manifest.ThemeType
+import typings.firefoxDashWebextDashBrowser.browser.theme.ThemeUpdateInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

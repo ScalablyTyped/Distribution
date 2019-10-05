@@ -1,13 +1,13 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.browserActionNs.BadgeBackgroundColorDetails
-import typings.chrome.chromeNs.browserActionNs.BadgeTextDetails
-import typings.chrome.chromeNs.browserActionNs.BrowserClickedEvent
-import typings.chrome.chromeNs.browserActionNs.ColorArray
-import typings.chrome.chromeNs.browserActionNs.PopupDetails
-import typings.chrome.chromeNs.browserActionNs.TabDetails
-import typings.chrome.chromeNs.browserActionNs.TabIconDetails
-import typings.chrome.chromeNs.browserActionNs.TitleDetails
+import typings.chrome.chrome.browserAction.BadgeBackgroundColorDetails
+import typings.chrome.chrome.browserAction.BadgeTextDetails
+import typings.chrome.chrome.browserAction.BrowserClickedEvent
+import typings.chrome.chrome.browserAction.ColorArray
+import typings.chrome.chrome.browserAction.PopupDetails
+import typings.chrome.chrome.browserAction.TabDetails
+import typings.chrome.chrome.browserAction.TabIconDetails
+import typings.chrome.chrome.browserAction.TitleDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

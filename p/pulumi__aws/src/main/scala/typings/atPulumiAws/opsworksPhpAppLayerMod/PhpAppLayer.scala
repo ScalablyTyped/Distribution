@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksPhpAppLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.PhpAppLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.PhpAppLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

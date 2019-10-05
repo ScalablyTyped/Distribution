@@ -1,10 +1,10 @@
 package typings.openpgp.openpgpMod
 
 import typings.openpgp.Anon_Algorithm
-import typings.openpgp.openpgpMod.enumsNs.compression
-import typings.openpgp.openpgpMod.keyNs.Key
-import typings.openpgp.openpgpMod.messageNs.Message
-import typings.openpgp.openpgpMod.signatureNs.Signature
+import typings.openpgp.openpgpMod.enums.compression
+import typings.openpgp.openpgpMod.key.Key
+import typings.openpgp.openpgpMod.message.Message
+import typings.openpgp.openpgpMod.signature.Signature
 import typings.openpgp.openpgpNumbers.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
@@ -21,7 +21,7 @@ trait EncryptOptions extends js.Object {
   /**
     * (optional) which compression algorithm to compress the message with, defaults to what is specified in config
     */
-  var compression: js.UndefOr[typings.openpgp.openpgpMod.enumsNs.compression] = js.undefined
+  var compression: js.UndefOr[typings.openpgp.openpgpMod.enums.compression] = js.undefined
   /**
     * (optional) override the creation date of the message signature
     */

@@ -1,6 +1,6 @@
 package typings.validator
 
-import typings.validator.ValidatorJSNs.IsByteLengthOptions
+import typings.validator.ValidatorJS.IsByteLengthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

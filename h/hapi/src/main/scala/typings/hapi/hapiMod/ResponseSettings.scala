@@ -1,6 +1,6 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiMod.JsonNs.StringifyArguments
+import typings.hapi.hapiMod.Json.StringifyArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

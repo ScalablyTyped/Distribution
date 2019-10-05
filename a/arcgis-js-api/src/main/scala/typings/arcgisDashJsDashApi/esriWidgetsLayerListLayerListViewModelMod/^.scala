@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLayerListLayerListViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerListViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.LayerListViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

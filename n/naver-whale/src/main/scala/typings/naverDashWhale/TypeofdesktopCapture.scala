@@ -1,6 +1,6 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.tabsNs.Tab
+import typings.chrome.chrome.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

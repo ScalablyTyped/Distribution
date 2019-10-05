@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "BatchBuffer")
 @js.native
 class BatchBuffer ()
-  extends typings.pixiDotJs.PIXINs.BatchBuffer
+  extends typings.pixiDotJs.PIXI.BatchBuffer
 

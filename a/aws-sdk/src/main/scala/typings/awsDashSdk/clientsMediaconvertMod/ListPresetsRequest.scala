@@ -32,14 +32,14 @@ object ListPresetsRequest {
   def apply(
     Category: __string = null,
     ListBy: PresetListBy = null,
-    MaxResults: js.UndefOr[__integerMin1Max20] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: __string = null,
     Order: Order = null
   ): ListPresetsRequest = {
     val __obj = js.Dynamic.literal()
     if (Category != null) __obj.updateDynamic("Category")(Category)
     if (ListBy != null) __obj.updateDynamic("ListBy")(ListBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPresetsRequest]

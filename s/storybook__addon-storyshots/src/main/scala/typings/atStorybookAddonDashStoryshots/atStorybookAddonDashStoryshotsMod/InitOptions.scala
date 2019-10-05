@@ -1,6 +1,7 @@
 package typings.atStorybookAddonDashStoryshots.atStorybookAddonDashStoryshotsMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.atStorybookAddonDashStoryshots.Anon_Context
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +30,7 @@ object InitOptions {
     storyKindRegex: RegExp = null,
     storyNameRegex: RegExp = null,
     suite: String = null,
-    test: Test = null
+    test: /* options */ Anon_Context => js.UndefOr[Unit | js.Promise[Unit]] = null
   ): InitOptions[Rendered] = {
     val __obj = js.Dynamic.literal()
     if (configPath != null) __obj.updateDynamic("configPath")(configPath)
@@ -40,7 +41,7 @@ object InitOptions {
     if (storyKindRegex != null) __obj.updateDynamic("storyKindRegex")(storyKindRegex)
     if (storyNameRegex != null) __obj.updateDynamic("storyNameRegex")(storyNameRegex)
     if (suite != null) __obj.updateDynamic("suite")(suite)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[InitOptions[Rendered]]
   }
 }

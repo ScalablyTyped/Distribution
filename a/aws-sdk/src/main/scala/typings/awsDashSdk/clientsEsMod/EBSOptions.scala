@@ -26,15 +26,15 @@ trait EBSOptions extends js.Object {
 object EBSOptions {
   @scala.inline
   def apply(
-    EBSEnabled: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[IntegerClass] = js.undefined,
-    VolumeSize: js.UndefOr[IntegerClass] = js.undefined,
+    EBSEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
+    VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): EBSOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(EBSEnabled)) __obj.updateDynamic("EBSEnabled")(EBSEnabled)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBSOptions]
   }

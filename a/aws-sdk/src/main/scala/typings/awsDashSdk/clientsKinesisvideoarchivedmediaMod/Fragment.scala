@@ -30,16 +30,16 @@ trait Fragment extends js.Object {
 object Fragment {
   @scala.inline
   def apply(
-    FragmentLengthInMilliseconds: js.UndefOr[Long] = js.undefined,
+    FragmentLengthInMilliseconds: Int | Double = null,
     FragmentNumber: String = null,
-    FragmentSizeInBytes: js.UndefOr[Long] = js.undefined,
+    FragmentSizeInBytes: Int | Double = null,
     ProducerTimestamp: Timestamp = null,
     ServerTimestamp: Timestamp = null
   ): Fragment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FragmentLengthInMilliseconds)) __obj.updateDynamic("FragmentLengthInMilliseconds")(FragmentLengthInMilliseconds)
+    if (FragmentLengthInMilliseconds != null) __obj.updateDynamic("FragmentLengthInMilliseconds")(FragmentLengthInMilliseconds.asInstanceOf[js.Any])
     if (FragmentNumber != null) __obj.updateDynamic("FragmentNumber")(FragmentNumber)
-    if (!js.isUndefined(FragmentSizeInBytes)) __obj.updateDynamic("FragmentSizeInBytes")(FragmentSizeInBytes)
+    if (FragmentSizeInBytes != null) __obj.updateDynamic("FragmentSizeInBytes")(FragmentSizeInBytes.asInstanceOf[js.Any])
     if (ProducerTimestamp != null) __obj.updateDynamic("ProducerTimestamp")(ProducerTimestamp)
     if (ServerTimestamp != null) __obj.updateDynamic("ServerTimestamp")(ServerTimestamp)
     __obj.asInstanceOf[Fragment]

@@ -40,3 +40,12 @@ object DeclareTypeAlias {
   }
 }
 
+@JSImport("babel-types", "declareTypeAlias")
+@js.native
+object declareTypeAlias extends js.Object {
+  def apply(): DeclareTypeAlias = js.native
+  def apply(id: Identifier): DeclareTypeAlias = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration): DeclareTypeAlias = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration, right: FlowTypeAnnotation): DeclareTypeAlias = js.native
+}
+

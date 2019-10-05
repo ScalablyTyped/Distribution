@@ -36,3 +36,11 @@ object RestElement {
   }
 }
 
+@JSImport("babel-types", "restElement")
+@js.native
+object restElement extends js.Object {
+  def apply(): RestElement = js.native
+  def apply(argument: LVal): RestElement = js.native
+  def apply(argument: LVal, typeAnnotation: TypeAnnotation): RestElement = js.native
+}
+

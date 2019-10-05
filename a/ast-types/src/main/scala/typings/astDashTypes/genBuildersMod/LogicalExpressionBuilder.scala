@@ -5,7 +5,7 @@ import typings.astDashTypes.astDashTypesStrings.`&&`
 import typings.astDashTypes.astDashTypesStrings.`??`
 import typings.astDashTypes.astDashTypesStrings.`||`
 import typings.astDashTypes.genKindsMod.ExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.LogicalExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.LogicalExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

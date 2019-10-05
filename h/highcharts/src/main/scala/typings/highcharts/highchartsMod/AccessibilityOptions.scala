@@ -1,5 +1,6 @@
 package typings.highcharts.highchartsMod
 
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -192,17 +193,17 @@ object AccessibilityOptions {
     highContrastTheme: js.Object = null,
     keyboardNavigation: AccessibilityKeyboardNavigationOptions = null,
     landmarkVerbosity: OptionsLandmarkVerbosityValue = null,
-    onTableAnchorClick: ScreenReaderClickCallbackFunction = null,
+    onTableAnchorClick: /* evt */ MouseEvent => Unit = null,
     pointDateFormat: String = null,
-    pointDateFormatter: ScreenReaderFormatterCallbackFunction[Point] = null,
-    pointDescriptionFormatter: ScreenReaderFormatterCallbackFunction[Point] = null,
+    pointDateFormatter: Point => String = null,
+    pointDescriptionFormatter: Point => String = null,
     pointDescriptionThreshold: Boolean | Double = null,
     pointNavigationThreshold: Boolean | Double = null,
     pointValueDecimals: String = null,
     pointValuePrefix: String = null,
     pointValueSuffix: String = null,
-    screenReaderSectionFormatter: ScreenReaderFormatterCallbackFunction[Chart] = null,
-    seriesDescriptionFormatter: ScreenReaderFormatterCallbackFunction[Series] = null,
+    screenReaderSectionFormatter: Chart => String = null,
+    seriesDescriptionFormatter: Series => String = null,
     typeDescription: String = null
   ): AccessibilityOptions = {
     val __obj = js.Dynamic.literal()
@@ -216,17 +217,17 @@ object AccessibilityOptions {
     if (highContrastTheme != null) __obj.updateDynamic("highContrastTheme")(highContrastTheme)
     if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation)
     if (landmarkVerbosity != null) __obj.updateDynamic("landmarkVerbosity")(landmarkVerbosity)
-    if (onTableAnchorClick != null) __obj.updateDynamic("onTableAnchorClick")(onTableAnchorClick)
+    if (onTableAnchorClick != null) __obj.updateDynamic("onTableAnchorClick")(js.Any.fromFunction1(onTableAnchorClick))
     if (pointDateFormat != null) __obj.updateDynamic("pointDateFormat")(pointDateFormat)
-    if (pointDateFormatter != null) __obj.updateDynamic("pointDateFormatter")(pointDateFormatter)
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
+    if (pointDateFormatter != null) __obj.updateDynamic("pointDateFormatter")(js.Any.fromFunction1(pointDateFormatter))
+    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(js.Any.fromFunction1(pointDescriptionFormatter))
     if (pointDescriptionThreshold != null) __obj.updateDynamic("pointDescriptionThreshold")(pointDescriptionThreshold.asInstanceOf[js.Any])
     if (pointNavigationThreshold != null) __obj.updateDynamic("pointNavigationThreshold")(pointNavigationThreshold.asInstanceOf[js.Any])
     if (pointValueDecimals != null) __obj.updateDynamic("pointValueDecimals")(pointValueDecimals)
     if (pointValuePrefix != null) __obj.updateDynamic("pointValuePrefix")(pointValuePrefix)
     if (pointValueSuffix != null) __obj.updateDynamic("pointValueSuffix")(pointValueSuffix)
-    if (screenReaderSectionFormatter != null) __obj.updateDynamic("screenReaderSectionFormatter")(screenReaderSectionFormatter)
-    if (seriesDescriptionFormatter != null) __obj.updateDynamic("seriesDescriptionFormatter")(seriesDescriptionFormatter)
+    if (screenReaderSectionFormatter != null) __obj.updateDynamic("screenReaderSectionFormatter")(js.Any.fromFunction1(screenReaderSectionFormatter))
+    if (seriesDescriptionFormatter != null) __obj.updateDynamic("seriesDescriptionFormatter")(js.Any.fromFunction1(seriesDescriptionFormatter))
     if (typeDescription != null) __obj.updateDynamic("typeDescription")(typeDescription)
     __obj.asInstanceOf[AccessibilityOptions]
   }

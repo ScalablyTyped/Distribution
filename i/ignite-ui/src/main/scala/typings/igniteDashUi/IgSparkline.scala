@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -329,8 +330,8 @@ object IgSparkline {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     brush: String = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
@@ -341,7 +342,7 @@ object IgSparkline {
     firstMarkerVisibility: String = null,
     formatLabel: js.Any = null,
     height: String | Double = null,
-    hideTooltip: HideTooltipEvent = null,
+    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
     highMarkerBrush: String = null,
     highMarkerSize: Int | Double = null,
     highMarkerVisibility: String = null,
@@ -377,7 +378,7 @@ object IgSparkline {
     trendLineThickness: Int | Double = null,
     trendLineType: String = null,
     unknownValuePlotting: String = null,
-    updateTooltip: UpdateTooltipEvent = null,
+    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
     valueMemberPath: String = null,
     verticalAxisBrush: String = null,
     verticalAxisLabel: js.Any = null,
@@ -387,8 +388,8 @@ object IgSparkline {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (brush != null) __obj.updateDynamic("brush")(brush)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
@@ -399,7 +400,7 @@ object IgSparkline {
     if (firstMarkerVisibility != null) __obj.updateDynamic("firstMarkerVisibility")(firstMarkerVisibility)
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
     if (highMarkerBrush != null) __obj.updateDynamic("highMarkerBrush")(highMarkerBrush)
     if (highMarkerSize != null) __obj.updateDynamic("highMarkerSize")(highMarkerSize.asInstanceOf[js.Any])
     if (highMarkerVisibility != null) __obj.updateDynamic("highMarkerVisibility")(highMarkerVisibility)
@@ -435,7 +436,7 @@ object IgSparkline {
     if (trendLineThickness != null) __obj.updateDynamic("trendLineThickness")(trendLineThickness.asInstanceOf[js.Any])
     if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType)
     if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting)
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
     if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
     if (verticalAxisBrush != null) __obj.updateDynamic("verticalAxisBrush")(verticalAxisBrush)
     if (verticalAxisLabel != null) __obj.updateDynamic("verticalAxisLabel")(verticalAxisLabel)

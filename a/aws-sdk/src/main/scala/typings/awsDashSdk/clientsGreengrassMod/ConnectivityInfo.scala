@@ -29,13 +29,13 @@ object ConnectivityInfo {
     HostAddress: __string = null,
     Id: __string = null,
     Metadata: __string = null,
-    PortNumber: js.UndefOr[__integer] = js.undefined
+    PortNumber: Int | Double = null
   ): ConnectivityInfo = {
     val __obj = js.Dynamic.literal()
     if (HostAddress != null) __obj.updateDynamic("HostAddress")(HostAddress)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
-    if (!js.isUndefined(PortNumber)) __obj.updateDynamic("PortNumber")(PortNumber)
+    if (PortNumber != null) __obj.updateDynamic("PortNumber")(PortNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectivityInfo]
   }
 }

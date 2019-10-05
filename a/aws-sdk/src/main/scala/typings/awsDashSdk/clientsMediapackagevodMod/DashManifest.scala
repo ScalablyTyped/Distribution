@@ -24,13 +24,13 @@ object DashManifest {
   @scala.inline
   def apply(
     ManifestName: __string = null,
-    MinBufferTimeSeconds: js.UndefOr[__integer] = js.undefined,
+    MinBufferTimeSeconds: Int | Double = null,
     Profile: Profile = null,
     StreamSelection: StreamSelection = null
   ): DashManifest = {
     val __obj = js.Dynamic.literal()
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName)
-    if (!js.isUndefined(MinBufferTimeSeconds)) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds)
+    if (MinBufferTimeSeconds != null) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection)
     __obj.asInstanceOf[DashManifest]

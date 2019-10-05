@@ -1,0 +1,21 @@
+package typings.atPopmotionPopcorn
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPopmotionPopcorn.libUtilsMixDashComplexMod.BlendableObject
+import typings.atPopmotionPopcorn.libUtilsMixDashComplexMod.MixComplex
+import typings.styleDashValueDashTypes.libTypesMod.HSLA
+import typings.styleDashValueDashTypes.libTypesMod.RGBA
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@popmotion/popcorn/lib/utils/mix-complex", JSImport.Namespace)
+@js.native
+object libUtilsMixDashComplexMod extends js.Object {
+  def mixArray(from: js.Array[String | Double | RGBA | HSLA], to: js.Array[String | Double | RGBA | HSLA]): js.Function1[/* v */ Double, js.Array[String | Double | RGBA | HSLA]] = js.native
+  def mixComplex(origin: String, target: String): MixComplex = js.native
+  def mixObject(origin: BlendableObject, target: BlendableObject): js.Function1[/* v */ Double, StringDictionary[String | Double | RGBA | HSLA]] = js.native
+  type BlendableObject = StringDictionary[String | Double | RGBA | HSLA]
+  type MixComplex = js.Function1[/* p */ Double, String]
+}
+

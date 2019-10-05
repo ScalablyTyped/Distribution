@@ -1,16 +1,16 @@
 package typings.activexDashMsxml2
 
-import typings.activexDashMsxml2.MSXML2Ns.DOMDocument60
-import typings.activexDashMsxml2.MSXML2Ns.FreeThreadedDOMDocument60
-import typings.activexDashMsxml2.MSXML2Ns.MXHTMLWriter60
-import typings.activexDashMsxml2.MSXML2Ns.MXNamespaceManager60
-import typings.activexDashMsxml2.MSXML2Ns.MXXMLWriter60
-import typings.activexDashMsxml2.MSXML2Ns.SAXAttributes60
-import typings.activexDashMsxml2.MSXML2Ns.SAXXMLReader60
-import typings.activexDashMsxml2.MSXML2Ns.ServerXMLHTTP60
-import typings.activexDashMsxml2.MSXML2Ns.XMLHTTP60
-import typings.activexDashMsxml2.MSXML2Ns.XMLSchemaCache60
-import typings.activexDashMsxml2.MSXML2Ns.XSLTemplate60
+import typings.activexDashMsxml2.MSXML2.DOMDocument60
+import typings.activexDashMsxml2.MSXML2.FreeThreadedDOMDocument60
+import typings.activexDashMsxml2.MSXML2.MXHTMLWriter60
+import typings.activexDashMsxml2.MSXML2.MXNamespaceManager60
+import typings.activexDashMsxml2.MSXML2.MXXMLWriter60
+import typings.activexDashMsxml2.MSXML2.SAXAttributes60
+import typings.activexDashMsxml2.MSXML2.SAXXMLReader60
+import typings.activexDashMsxml2.MSXML2.ServerXMLHTTP60
+import typings.activexDashMsxml2.MSXML2.XMLHTTP60
+import typings.activexDashMsxml2.MSXML2.XMLSchemaCache60
+import typings.activexDashMsxml2.MSXML2.XSLTemplate60
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.bunyan.bunyanMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

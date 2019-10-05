@@ -11,7 +11,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.modeless
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.resizable
 import typings.atOracleOraclejet.atOracleOraclejetStrings.show
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.Position
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -47,3 +47,11 @@ object Either extends js.Object {
   def right[L, R](r: R): Either[L, R] = js.native
 }
 
+@JSImport("tsmonad/lib/src/either", "either")
+@js.native
+object either extends js.Object {
+  def apply[L, R](): Either[L, R] = js.native
+  def apply[L, R](l: L): Either[L, R] = js.native
+  def apply[L, R](l: L, r: R): Either[L, R] = js.native
+}
+

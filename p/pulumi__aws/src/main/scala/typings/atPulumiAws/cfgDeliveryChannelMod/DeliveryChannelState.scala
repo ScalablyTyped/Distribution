@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgDeliveryChannelMod
 
-import typings.atPulumiAws.typesInputMod.cfgNs.DeliveryChannelSnapshotDeliveryProperties
+import typings.atPulumiAws.typesInputMod.cfg.DeliveryChannelSnapshotDeliveryProperties
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

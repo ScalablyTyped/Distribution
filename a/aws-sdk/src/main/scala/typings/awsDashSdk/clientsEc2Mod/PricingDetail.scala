@@ -17,10 +17,10 @@ trait PricingDetail extends js.Object {
 
 object PricingDetail {
   @scala.inline
-  def apply(Count: js.UndefOr[Integer] = js.undefined, Price: js.UndefOr[Double] = js.undefined): PricingDetail = {
+  def apply(Count: Int | scala.Double = null, Price: Int | scala.Double = null): PricingDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
-    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (Price != null) __obj.updateDynamic("Price")(Price.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingDetail]
   }
 }

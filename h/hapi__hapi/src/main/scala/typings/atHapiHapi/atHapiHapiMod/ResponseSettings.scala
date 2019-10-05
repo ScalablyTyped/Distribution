@@ -1,6 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiHapi.atHapiHapiMod.JsonNs.StringifyArguments
+import typings.atHapiHapi.atHapiHapiMod.Json.StringifyArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

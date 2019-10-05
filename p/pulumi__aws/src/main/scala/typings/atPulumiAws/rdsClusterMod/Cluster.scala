@@ -3,8 +3,8 @@ package typings.atPulumiAws.rdsClusterMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.rdsEngineModeMod.EngineMode
 import typings.atPulumiAws.rdsEngineTypeMod.EngineType
-import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterS3Import
-import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterScalingConfiguration
+import typings.atPulumiAws.typesOutputMod.rds.ClusterS3Import
+import typings.atPulumiAws.typesOutputMod.rds.ClusterScalingConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

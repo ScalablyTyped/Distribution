@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.appNs.ChromeAppWindow
+import typings.chromeDashApps.chrome.app.ChromeAppWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,14 +24,14 @@ trait Typeofapp extends js.Object {
     * The app runtime manages app installation, controls the event page,
     * and can shut down the app at anytime.
     */
-  val runtimeNs: Typeofruntime
+  val runtime: Typeofruntime
   val window: ChromeAppWindow
 }
 
 object Typeofapp {
   @scala.inline
-  def apply(_State: Anon_FULLSCREEN, runtimeNs: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
-    val __obj = js.Dynamic.literal(_State = _State, runtimeNs = runtimeNs, window = window)
+  def apply(_State: Anon_FULLSCREEN, runtime: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
+    val __obj = js.Dynamic.literal(_State = _State, runtime = runtime, window = window)
   
     __obj.asInstanceOf[Typeofapp]
   }

@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distRegularizersMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serializationNs.Serializable
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serialization.Serializable
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js

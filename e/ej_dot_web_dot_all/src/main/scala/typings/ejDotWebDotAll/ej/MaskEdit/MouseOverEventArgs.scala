@@ -1,0 +1,43 @@
+package typings.ejDotWebDotAll.ej.MaskEdit
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MouseOverEventArgs extends js.Object {
+  /** if the event should be canceled; otherwise, false.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** returns the mask edit model
+    */
+  var model: js.UndefOr[typings.ejDotWebDotAll.ej.MaskEdit.Model] = js.undefined
+  /** returns the name of the event
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+  /** returns unstripped value in mask edit textbox control.
+    */
+  var unmaskedValue: js.UndefOr[String] = js.undefined
+  /** returns the mask edit value
+    */
+  var value: js.UndefOr[Double] = js.undefined
+}
+
+object MouseOverEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    model: typings.ejDotWebDotAll.ej.MaskEdit.Model = null,
+    `type`: String = null,
+    unmaskedValue: String = null,
+    value: Int | Double = null
+  ): MouseOverEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unmaskedValue != null) __obj.updateDynamic("unmaskedValue")(unmaskedValue)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseOverEventArgs]
+  }
+}
+

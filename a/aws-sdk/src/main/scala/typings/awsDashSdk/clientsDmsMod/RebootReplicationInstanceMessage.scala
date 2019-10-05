@@ -17,7 +17,7 @@ trait RebootReplicationInstanceMessage extends js.Object {
 
 object RebootReplicationInstanceMessage {
   @scala.inline
-  def apply(ReplicationInstanceArn: String, ForceFailover: js.UndefOr[BooleanOptional] = js.undefined): RebootReplicationInstanceMessage = {
+  def apply(ReplicationInstanceArn: String, ForceFailover: js.UndefOr[scala.Boolean] = js.undefined): RebootReplicationInstanceMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceArn = ReplicationInstanceArn)
     if (!js.isUndefined(ForceFailover)) __obj.updateDynamic("ForceFailover")(ForceFailover)
     __obj.asInstanceOf[RebootReplicationInstanceMessage]

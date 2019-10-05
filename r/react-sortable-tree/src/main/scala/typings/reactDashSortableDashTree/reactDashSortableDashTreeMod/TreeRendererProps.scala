@@ -1,8 +1,10 @@
 package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod.ReactElement
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDropTarget
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
 import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
@@ -37,7 +39,7 @@ object TreeRendererProps {
   @scala.inline
   def apply(
     children: js.Array[Element],
-    connectDropTarget: ConnectDropTarget,
+    connectDropTarget: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null,
     getPrevRow: () => FlatDataItem | Null,
     isOver: Boolean,
     listIndex: Double,
@@ -55,7 +57,7 @@ object TreeRendererProps {
     swapFrom: Int | Double = null,
     swapLength: Int | Double = null
   ): TreeRendererProps = {
-    val __obj = js.Dynamic.literal(children = children, connectDropTarget = connectDropTarget, getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, treeId = treeId, treeIndex = treeIndex)
+    val __obj = js.Dynamic.literal(children = children, connectDropTarget = js.Any.fromFunction2(connectDropTarget), getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, treeId = treeId, treeIndex = treeIndex)
     if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop)
     if (draggedNode != null) __obj.updateDynamic("draggedNode")(draggedNode)
     if (rowDirection != null) __obj.updateDynamic("rowDirection")(rowDirection.asInstanceOf[js.Any])

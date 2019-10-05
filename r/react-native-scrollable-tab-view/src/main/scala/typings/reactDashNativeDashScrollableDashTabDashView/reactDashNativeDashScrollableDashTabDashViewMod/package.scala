@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashScrollableDashTabDashViewMod {
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
   import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
   import typings.reactDashNativeDashScrollableDashTabDashView.Anon_ActiveTab
   import typings.reactDashNativeDashScrollableDashTabDashView.Anon_TabLabel

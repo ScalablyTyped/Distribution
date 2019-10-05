@@ -67,8 +67,8 @@ object DBEngineVersion {
     ExportableLogTypes: LogTypeList = null,
     SupportedCharacterSets: SupportedCharacterSetsList = null,
     SupportedTimezones: SupportedTimezonesList = null,
-    SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined,
-    SupportsReadReplica: js.UndefOr[Boolean] = js.undefined,
+    SupportsLogExportsToCloudwatchLogs: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsReadReplica: js.UndefOr[scala.Boolean] = js.undefined,
     ValidUpgradeTarget: ValidUpgradeTargetList = null
   ): DBEngineVersion = {
     val __obj = js.Dynamic.literal()

@@ -24,10 +24,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.withinCell
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentSettableProperties
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Cell
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Column
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.CountLabelContext
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Row
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Cell
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Column
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.CountLabelContext
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Row
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

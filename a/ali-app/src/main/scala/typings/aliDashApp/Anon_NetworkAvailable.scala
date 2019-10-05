@@ -1,6 +1,6 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.NetworkType
+import typings.aliDashApp.my.NetworkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

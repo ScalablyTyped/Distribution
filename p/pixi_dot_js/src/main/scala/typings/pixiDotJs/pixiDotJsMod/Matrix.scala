@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Matrix")
 @js.native
 class Matrix protected ()
-  extends typings.pixiDotJs.PIXINs.Matrix {
+  extends typings.pixiDotJs.PIXI.Matrix {
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],
@@ -29,7 +29,7 @@ class Matrix protected ()
 @JSImport("pixi.js", "Matrix")
 @js.native
 object Matrix extends js.Object {
-  var IDENTITY: typings.pixiDotJs.PIXINs.Matrix = js.native
-  var TEMP_MATRIX: typings.pixiDotJs.PIXINs.Matrix = js.native
+  var IDENTITY: typings.pixiDotJs.PIXI.Matrix = js.native
+  var TEMP_MATRIX: typings.pixiDotJs.PIXI.Matrix = js.native
 }
 

@@ -38,3 +38,9 @@ object JSXSpreadChild {
   }
 }
 
+@JSImport("@babel/types", "jsxSpreadChild")
+@js.native
+object jsxSpreadChild extends js.Object {
+  def apply(expression: Expression): JSXSpreadChild = js.native
+}
+

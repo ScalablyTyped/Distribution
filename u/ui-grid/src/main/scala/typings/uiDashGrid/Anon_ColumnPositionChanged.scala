@@ -1,7 +1,7 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.moveColumnsNs.columnPositionChangedHandler
+import typings.uiDashGrid.uiDashGridMod.moveColumns.columnPositionChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.reactDashFlipDashMove
 
-import typings.reactDashFlipDashMove.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
+import typings.reactDashFlipDashMove.reactDashFlipDashMoveMod.FlipMove.AnimationPreset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

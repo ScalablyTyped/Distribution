@@ -17,9 +17,5 @@ trait CredentialsContainer extends js.Object {
 
 @JSGlobal("CredentialsContainer")
 @js.native
-class CredentialsContainerCls () extends CredentialsContainer
-
-@JSGlobal("CredentialsContainer")
-@js.native
 object CredentialsContainer extends Instantiable0[CredentialsContainer]
 

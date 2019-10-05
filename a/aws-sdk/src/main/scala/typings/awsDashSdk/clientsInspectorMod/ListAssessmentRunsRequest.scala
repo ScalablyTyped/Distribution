@@ -28,13 +28,13 @@ object ListAssessmentRunsRequest {
   def apply(
     assessmentTemplateArns: ListParentArnList = null,
     filter: AssessmentRunFilter = null,
-    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: PaginationToken = null
   ): ListAssessmentRunsRequest = {
     val __obj = js.Dynamic.literal()
     if (assessmentTemplateArns != null) __obj.updateDynamic("assessmentTemplateArns")(assessmentTemplateArns)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListAssessmentRunsRequest]
   }

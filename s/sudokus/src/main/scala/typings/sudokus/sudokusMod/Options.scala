@@ -10,9 +10,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(onProgress: ProgressFn = null): Options = {
+  def apply(onProgress: /* state */ js.Array[js.Array[Cell]] => Unit = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     __obj.asInstanceOf[Options]
   }
 }

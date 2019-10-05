@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "ACL")
 @js.native
 class ACL ()
-  extends typings.parse.ParseNs.ACL {
+  extends typings.parse.Parse.ACL {
   def this(arg1: js.Any) = this()
 }
 

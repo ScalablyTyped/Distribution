@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsTimeSliderTimeSliderViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeSliderViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.TimeSliderViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

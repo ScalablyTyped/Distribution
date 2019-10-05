@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ecsGetClusterMod
 
-import typings.atPulumiAws.typesOutputMod.ecsNs.GetClusterSetting
+import typings.atPulumiAws.typesOutputMod.ecs.GetClusterSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

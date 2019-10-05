@@ -23,13 +23,13 @@ object DeviceSelectionResult {
   @scala.inline
   def apply(
     filters: DeviceFilters = null,
-    matchedDevicesCount: js.UndefOr[Integer] = js.undefined,
-    maxDevices: js.UndefOr[Integer] = js.undefined
+    matchedDevicesCount: Int | scala.Double = null,
+    maxDevices: Int | scala.Double = null
   ): DeviceSelectionResult = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(matchedDevicesCount)) __obj.updateDynamic("matchedDevicesCount")(matchedDevicesCount)
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices)
+    if (matchedDevicesCount != null) __obj.updateDynamic("matchedDevicesCount")(matchedDevicesCount.asInstanceOf[js.Any])
+    if (maxDevices != null) __obj.updateDynamic("maxDevices")(maxDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceSelectionResult]
   }
 }

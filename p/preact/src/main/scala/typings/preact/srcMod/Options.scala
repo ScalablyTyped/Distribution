@@ -1,5 +1,6 @@
 package typings.preact.srcMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.FrameRequestCallback
 import scala.scalajs.js
@@ -47,4 +48,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
 }
+
+@JSImport("preact/src", "options")
+@js.native
+object options extends TopLevel[Options]
 

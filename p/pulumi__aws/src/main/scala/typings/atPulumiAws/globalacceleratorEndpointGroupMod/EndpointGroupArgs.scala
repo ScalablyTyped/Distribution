@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorEndpointGroupMod
 
-import typings.atPulumiAws.typesInputMod.globalacceleratorNs.EndpointGroupEndpointConfiguration
+import typings.atPulumiAws.typesInputMod.globalaccelerator.EndpointGroupEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

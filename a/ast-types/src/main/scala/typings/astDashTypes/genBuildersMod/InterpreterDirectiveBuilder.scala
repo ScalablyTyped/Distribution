@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocValueArrayCommentKindNull
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.InterpreterDirective
+import typings.astDashTypes.genNamedTypesMod.namedTypes.InterpreterDirective
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

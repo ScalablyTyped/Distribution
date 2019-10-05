@@ -1,6 +1,6 @@
 package typings.easyDashXDashHeaders.streamMod
 
-import typings.easyDashXDashHeaders.NodeJSNs.ReadableStream
+import typings.easyDashXDashHeaders.NodeJS.ReadableStream
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

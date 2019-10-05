@@ -46,7 +46,7 @@ trait RDSInstanceDetails extends js.Object {
 object RDSInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
     DatabaseEdition: GenericString = null,
     DatabaseEngine: GenericString = null,
     DeploymentOption: GenericString = null,
@@ -54,7 +54,7 @@ object RDSInstanceDetails {
     InstanceType: GenericString = null,
     LicenseModel: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
   ): RDSInstanceDetails = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration)

@@ -70,11 +70,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.withoutRescale
 import typings.atOracleOraclejet.atOracleOraclejetStrings.x
 import typings.atOracleOraclejet.atOracleOraclejetStrings.y
 import typings.atOracleOraclejet.atOracleOraclejetStrings.zoom
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.DataLabelContext
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.ojDrill
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.ojSelectInput
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.ojViewportChange
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.ojViewportChangeInput
+import typings.atOracleOraclejet.ojchartMod.ojChart.DataLabelContext
+import typings.atOracleOraclejet.ojchartMod.ojChart.ojDrill
+import typings.atOracleOraclejet.ojchartMod.ojChart.ojSelectInput
+import typings.atOracleOraclejet.ojchartMod.ojChart.ojViewportChange
+import typings.atOracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
 import typings.std.AnimationEvent
@@ -118,10 +118,10 @@ trait ojChartEventMap[K, D] extends dvtBaseComponentEventMap[ojChartSettableProp
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var initialZoomingChanged: JetElementCustomEvent[first | last | none]
   var legendChanged: JetElementCustomEvent[Anon_AsNeeded]
-  var ojDrill: typings.atOracleOraclejet.ojchartMod.ojChartNs.ojDrill
-  var ojSelectInput: typings.atOracleOraclejet.ojchartMod.ojChartNs.ojSelectInput
-  var ojViewportChange: typings.atOracleOraclejet.ojchartMod.ojChartNs.ojViewportChange
-  var ojViewportChangeInput: typings.atOracleOraclejet.ojchartMod.ojChartNs.ojViewportChangeInput
+  var ojDrill: typings.atOracleOraclejet.ojchartMod.ojChart.ojDrill
+  var ojSelectInput: typings.atOracleOraclejet.ojchartMod.ojChart.ojSelectInput
+  var ojViewportChange: typings.atOracleOraclejet.ojchartMod.ojChart.ojViewportChange
+  var ojViewportChangeInput: typings.atOracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput
   var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   var otherThresholdChanged: JetElementCustomEvent[Double]
   var overviewChanged: JetElementCustomEvent[Anon_Content]

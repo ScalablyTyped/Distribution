@@ -154,10 +154,10 @@ trait DBCluster extends js.Object {
 object DBCluster {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
     AssociatedRoles: DBClusterRoles = null,
     AvailabilityZones: AvailabilityZones = null,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CharacterSetName: String = null,
     CloneGroupId: String = null,
     ClusterCreateTime: TStamp = null,
@@ -175,27 +175,27 @@ object DBCluster {
     Engine: String = null,
     EngineVersion: String = null,
     HostedZoneId: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     LatestRestorableTime: TStamp = null,
     MasterUsername: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PercentProgress: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ReadReplicaIdentifiers: ReadReplicaIdentifierList = null,
     ReaderEndpoint: String = null,
     ReplicationSourceIdentifier: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBCluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName)
     if (CloneGroupId != null) __obj.updateDynamic("CloneGroupId")(CloneGroupId)
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
@@ -219,7 +219,7 @@ object DBCluster {
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ReadReplicaIdentifiers != null) __obj.updateDynamic("ReadReplicaIdentifiers")(ReadReplicaIdentifiers)

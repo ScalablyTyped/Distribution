@@ -1,7 +1,7 @@
 package typings.eslint
 
-import typings.eslint.eslintMod.RuleTesterNs.InvalidTestCase
-import typings.eslint.eslintMod.RuleTesterNs.ValidTestCase
+import typings.eslint.eslintMod.RuleTester.InvalidTestCase
+import typings.eslint.eslintMod.RuleTester.ValidTestCase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

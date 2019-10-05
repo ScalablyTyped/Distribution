@@ -1,8 +1,10 @@
 package typings.cesium
 
+import typings.cesium.cesiumMod.DataSource
 import typings.cesium.cesiumMod.DataSourceCollection
-import typings.cesium.cesiumMod.DataSourceDisplayNs.VisualizersCallback
+import typings.cesium.cesiumMod.DataSourceDisplay.VisualizersCallback
 import typings.cesium.cesiumMod.Scene
+import typings.cesium.cesiumMod.Visualizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,10 +20,10 @@ object Anon_DataSourceCollection {
   def apply(
     dataSourceCollection: DataSourceCollection,
     scene: Scene,
-    visualizersCallback: VisualizersCallback = null
+    visualizersCallback: (/* scene */ Scene, /* dataSource */ DataSource) => js.Array[Visualizer] = null
   ): Anon_DataSourceCollection = {
     val __obj = js.Dynamic.literal(dataSourceCollection = dataSourceCollection, scene = scene)
-    if (visualizersCallback != null) __obj.updateDynamic("visualizersCallback")(visualizersCallback)
+    if (visualizersCallback != null) __obj.updateDynamic("visualizersCallback")(js.Any.fromFunction2(visualizersCallback))
     __obj.asInstanceOf[Anon_DataSourceCollection]
   }
 }

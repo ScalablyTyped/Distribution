@@ -18,9 +18,10 @@ trait IColorPickerGridCellStyles extends js.Object {
 
 object IColorPickerGridCellStyles {
   @scala.inline
-  def apply(colorCell: IStyle, svg: IStyle): IColorPickerGridCellStyles = {
-    val __obj = js.Dynamic.literal(colorCell = colorCell.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
-  
+  def apply(colorCell: IStyle = null, svg: IStyle = null): IColorPickerGridCellStyles = {
+    val __obj = js.Dynamic.literal()
+    if (colorCell != null) __obj.updateDynamic("colorCell")(colorCell.asInstanceOf[js.Any])
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerGridCellStyles]
   }
 }

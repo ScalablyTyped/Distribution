@@ -34,20 +34,20 @@ trait ColorCorrector extends js.Object {
 object ColorCorrector {
   @scala.inline
   def apply(
-    Brightness: js.UndefOr[__integerMin1Max100] = js.undefined,
+    Brightness: Int | Double = null,
     ColorSpaceConversion: ColorSpaceConversion = null,
-    Contrast: js.UndefOr[__integerMin1Max100] = js.undefined,
+    Contrast: Int | Double = null,
     Hdr10Metadata: Hdr10Metadata = null,
-    Hue: js.UndefOr[__integerMinNegative180Max180] = js.undefined,
-    Saturation: js.UndefOr[__integerMin1Max100] = js.undefined
+    Hue: Int | Double = null,
+    Saturation: Int | Double = null
   ): ColorCorrector = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Brightness)) __obj.updateDynamic("Brightness")(Brightness)
+    if (Brightness != null) __obj.updateDynamic("Brightness")(Brightness.asInstanceOf[js.Any])
     if (ColorSpaceConversion != null) __obj.updateDynamic("ColorSpaceConversion")(ColorSpaceConversion.asInstanceOf[js.Any])
-    if (!js.isUndefined(Contrast)) __obj.updateDynamic("Contrast")(Contrast)
+    if (Contrast != null) __obj.updateDynamic("Contrast")(Contrast.asInstanceOf[js.Any])
     if (Hdr10Metadata != null) __obj.updateDynamic("Hdr10Metadata")(Hdr10Metadata)
-    if (!js.isUndefined(Hue)) __obj.updateDynamic("Hue")(Hue)
-    if (!js.isUndefined(Saturation)) __obj.updateDynamic("Saturation")(Saturation)
+    if (Hue != null) __obj.updateDynamic("Hue")(Hue.asInstanceOf[js.Any])
+    if (Saturation != null) __obj.updateDynamic("Saturation")(Saturation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorCorrector]
   }
 }

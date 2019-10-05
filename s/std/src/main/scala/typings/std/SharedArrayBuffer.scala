@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,5 @@ trait SharedArrayBuffer extends ArrayBufferLike {
 
 @JSGlobal("SharedArrayBuffer")
 @js.native
-class SharedArrayBufferCls protected () extends SharedArrayBuffer {
-  def this(byteLength: Double) = this()
-}
+object SharedArrayBuffer extends TopLevel[SharedArrayBufferConstructor]
 

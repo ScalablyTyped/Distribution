@@ -15,6 +15,22 @@ class Ionicons () extends default
 @JSImport("@expo/vector-icons", "Ionicons")
 @js.native
 object Ionicons extends js.Object {
+  @js.native
+  class Button ()
+    extends typings.reactDashNativeDashVectorDashIcons.ioniconsMod.default.Button
+  
+  @js.native
+  class TabBarItem ()
+    extends typings.reactDashNativeDashVectorDashIcons.ioniconsMod.default.TabBarItem
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends typings.reactDashNativeDashVectorDashIcons.ioniconsMod.default.TabBarItemIOS
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends typings.reactDashNativeDashVectorDashIcons.ioniconsMod.default.ToolbarAndroid
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

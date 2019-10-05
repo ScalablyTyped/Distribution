@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.Point
+import typings.winrtDashUwp.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

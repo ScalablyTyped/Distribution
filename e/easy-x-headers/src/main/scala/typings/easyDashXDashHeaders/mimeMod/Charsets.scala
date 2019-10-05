@@ -1,5 +1,6 @@
 package typings.easyDashXDashHeaders.mimeMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,4 +17,8 @@ object Charsets {
     __obj.asInstanceOf[Charsets]
   }
 }
+
+@JSImport("mime", "charsets")
+@js.native
+object charsets extends TopLevel[Charsets]
 

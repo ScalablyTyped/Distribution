@@ -1,5 +1,6 @@
 package typings.ol.sourceImageMapGuideMod
 
+import typings.ol.imageMod.ImageWrapper
 import typings.ol.imageMod.LoadFunction
 import typings.ol.projMod.ProjectionLike
 import scala.scalajs.js
@@ -26,7 +27,7 @@ object Options {
     crossOrigin: String = null,
     displayDpi: Int | Double = null,
     hidpi: js.UndefOr[Boolean] = js.undefined,
-    imageLoadFunction: LoadFunction = null,
+    imageLoadFunction: (/* p0 */ ImageWrapper, /* p1 */ String) => Unit = null,
     metersPerUnit: Int | Double = null,
     params: js.Any = null,
     projection: ProjectionLike = null,
@@ -39,7 +40,7 @@ object Options {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (displayDpi != null) __obj.updateDynamic("displayDpi")(displayDpi.asInstanceOf[js.Any])
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
-    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(js.Any.fromFunction2(imageLoadFunction))
     if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params)
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])

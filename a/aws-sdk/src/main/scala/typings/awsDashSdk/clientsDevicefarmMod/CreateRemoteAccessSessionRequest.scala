@@ -65,10 +65,10 @@ object CreateRemoteAccessSessionRequest {
     instanceArn: AmazonResourceName = null,
     interactionMode: InteractionMode = null,
     name: Name = null,
-    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
+    remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     remoteRecordAppArn: AmazonResourceName = null,
-    remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined,
-    skipAppResign: js.UndefOr[Boolean] = js.undefined,
+    remoteRecordEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
     sshPublicKey: SshPublicKey = null
   ): CreateRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(deviceArn = deviceArn, projectArn = projectArn)

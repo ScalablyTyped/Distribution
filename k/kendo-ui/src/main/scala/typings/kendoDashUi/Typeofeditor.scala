@@ -1,13 +1,13 @@
 package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.kendoDashUi.kendoNs.uiNs.editorNs.Toolbar
+import typings.kendoDashUi.kendo.ui.editor.Toolbar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofeditor extends js.Object {
-  var Toolbar: Instantiable0[typings.kendoDashUi.kendoNs.uiNs.editorNs.Toolbar]
+  var Toolbar: Instantiable0[typings.kendoDashUi.kendo.ui.editor.Toolbar]
 }
 
 object Typeofeditor {

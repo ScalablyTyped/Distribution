@@ -43,14 +43,14 @@ object ListOutgoingTypedLinksRequest {
     ConsistencyLevel: ConsistencyLevel = null,
     FilterAttributeRanges: TypedLinkAttributeRangeList = null,
     FilterTypedLink: TypedLinkSchemaAndFacetName = null,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListOutgoingTypedLinksRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn, ObjectReference = ObjectReference)
     if (ConsistencyLevel != null) __obj.updateDynamic("ConsistencyLevel")(ConsistencyLevel.asInstanceOf[js.Any])
     if (FilterAttributeRanges != null) __obj.updateDynamic("FilterAttributeRanges")(FilterAttributeRanges)
     if (FilterTypedLink != null) __obj.updateDynamic("FilterTypedLink")(FilterTypedLink)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListOutgoingTypedLinksRequest]
   }

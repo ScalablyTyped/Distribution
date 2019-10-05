@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "TupleDictionary")
 @js.native
 class TupleDictionary ()
-  extends typings.cannon.CANNONNs.TupleDictionary
+  extends typings.cannon.CANNON.TupleDictionary
 

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaAliasMod
 
-import typings.atPulumiAws.typesOutputMod.lambdaNs.AliasRoutingConfig
+import typings.atPulumiAws.typesOutputMod.lambda.AliasRoutingConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -34,14 +34,14 @@ object ThingAttribute {
     thingArn: ThingArn = null,
     thingName: ThingName = null,
     thingTypeName: ThingTypeName = null,
-    version: js.UndefOr[Version] = js.undefined
+    version: Int | Double = null
   ): ThingAttribute = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn)
     if (thingName != null) __obj.updateDynamic("thingName")(thingName)
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingAttribute]
   }
 }

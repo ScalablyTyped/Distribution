@@ -1,6 +1,6 @@
 package typings.electron.electronMod
 
-import typings.electron.ElectronNs.MenuItemConstructorOptions
+import typings.electron.Electron.MenuItemConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "Menu")
 @js.native
 class Menu ()
-  extends typings.electron.ElectronNs.Menu
+  extends typings.electron.Electron.Menu
 
 /* static members */
 @JSImport("electron", "Menu")
@@ -19,12 +19,12 @@ object Menu extends js.Object {
     * usage can be referenced above. You can also attach other fields to the element
     * of the template and they will become properties of the constructed menu items.
     */
-  def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.ElectronNs.MenuItem]): typings.electron.ElectronNs.Menu = js.native
+  def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = js.native
   /**
     * Note: The returned Menu instance doesn't support dynamic addition or removal of
     * menu items. Instance properties can still be dynamically modified.
     */
-  def getApplicationMenu(): typings.electron.ElectronNs.Menu | Null = js.native
+  def getApplicationMenu(): typings.electron.Electron.Menu | Null = js.native
   /**
     * Sends the action to the first responder of application. This is used for
     * emulating default macOS menu behaviors. Usually you would use the role property
@@ -46,6 +46,6 @@ object Menu extends js.Object {
     * not set one. It contains standard items such as File, Edit, View, Window and
     * Help.
     */
-  def setApplicationMenu(menu: typings.electron.ElectronNs.Menu): Unit = js.native
+  def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-spinner"
-version := "1.0.0-dt-20190322Z-feb969"
-scalaVersion := "2.12.9"
+version := "1.0.0-dt-20190322Z-37223e"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

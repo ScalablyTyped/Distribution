@@ -1,15 +1,15 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.eventsNs.Event
-import typings.chrome.chromeNs.systemNs.displayNs.Bounds
-import typings.chrome.chromeNs.systemNs.displayNs.DisplayInfo
-import typings.chrome.chromeNs.systemNs.displayNs.DisplayInfoFlags
-import typings.chrome.chromeNs.systemNs.displayNs.DisplayLayout
-import typings.chrome.chromeNs.systemNs.displayNs.DisplayPropertiesInfo
-import typings.chrome.chromeNs.systemNs.displayNs.Insets
-import typings.chrome.chromeNs.systemNs.displayNs.MirrorModeInfo
-import typings.chrome.chromeNs.systemNs.displayNs.MirrorModeInfoMixed
-import typings.chrome.chromeNs.systemNs.displayNs.TouchCalibrationPairs
+import typings.chrome.chrome.events.Event
+import typings.chrome.chrome.system.display.Bounds
+import typings.chrome.chrome.system.display.DisplayInfo
+import typings.chrome.chrome.system.display.DisplayInfoFlags
+import typings.chrome.chrome.system.display.DisplayLayout
+import typings.chrome.chrome.system.display.DisplayPropertiesInfo
+import typings.chrome.chrome.system.display.Insets
+import typings.chrome.chrome.system.display.MirrorModeInfo
+import typings.chrome.chrome.system.display.MirrorModeInfoMixed
+import typings.chrome.chrome.system.display.TouchCalibrationPairs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

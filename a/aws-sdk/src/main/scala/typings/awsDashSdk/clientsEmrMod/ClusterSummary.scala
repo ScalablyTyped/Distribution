@@ -28,13 +28,13 @@ object ClusterSummary {
   def apply(
     Id: ClusterId = null,
     Name: String = null,
-    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
+    NormalizedInstanceHours: Int | Double = null,
     Status: ClusterStatus = null
   ): ClusterSummary = {
     val __obj = js.Dynamic.literal()
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours)
+    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status)
     __obj.asInstanceOf[ClusterSummary]
   }

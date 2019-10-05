@@ -18,7 +18,6 @@ trait TooltipPropsWithTitle
 object TooltipPropsWithTitle {
   @scala.inline
   def apply(
-    title: ReactNode | RenderFunction,
     align: TooltipAlignConfig = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
@@ -39,11 +38,12 @@ object TooltipPropsWithTitle {
     placement: TooltipPlacement = null,
     prefixCls: String = null,
     style: CSSProperties = null,
+    title: ReactNode | RenderFunction = null,
     transitionName: String = null,
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipPropsWithTitle = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
@@ -64,6 +64,7 @@ object TooltipPropsWithTitle {
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

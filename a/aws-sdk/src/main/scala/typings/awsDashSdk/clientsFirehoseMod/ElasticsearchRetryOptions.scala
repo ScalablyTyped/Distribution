@@ -13,9 +13,9 @@ trait ElasticsearchRetryOptions extends js.Object {
 
 object ElasticsearchRetryOptions {
   @scala.inline
-  def apply(DurationInSeconds: js.UndefOr[ElasticsearchRetryDurationInSeconds] = js.undefined): ElasticsearchRetryOptions = {
+  def apply(DurationInSeconds: Int | Double = null): ElasticsearchRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationInSeconds)) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds)
+    if (DurationInSeconds != null) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchRetryOptions]
   }
 }

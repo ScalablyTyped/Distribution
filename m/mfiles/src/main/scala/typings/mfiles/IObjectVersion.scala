@@ -1,9 +1,9 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInDocumentClass
-import typings.mfiles.MFilesNs.MFBuiltInObjectClass
-import typings.mfiles.MFilesNs.MFObjectVersionFlag
-import typings.mfiles.MFilesNs.MFSpecialObjectFlag
+import typings.mfiles.MFiles.MFBuiltInDocumentClass
+import typings.mfiles.MFiles.MFBuiltInObjectClass
+import typings.mfiles.MFiles.MFObjectVersionFlag
+import typings.mfiles.MFiles.MFSpecialObjectFlag
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

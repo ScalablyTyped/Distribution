@@ -1,6 +1,6 @@
 package typings.inversify
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Metadata
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Metadata
 import typings.std.ClassDecorator
 import typings.std.MethodDecorator
 import typings.std.ParameterDecorator

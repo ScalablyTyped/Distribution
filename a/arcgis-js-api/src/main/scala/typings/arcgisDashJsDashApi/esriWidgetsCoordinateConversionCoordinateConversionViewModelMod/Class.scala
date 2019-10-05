@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsCoordinateConversionCoordinateConversionViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CoordinateConversionViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CoordinateConversionViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.CoordinateConversionViewModel
+import typings.arcgisDashJsDashApi.__esri.CoordinateConversionViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

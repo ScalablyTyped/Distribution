@@ -44,7 +44,7 @@ object ListedServer {
     LoggingRole: Role = null,
     ServerId: ServerId = null,
     State: State = null,
-    UserCount: js.UndefOr[UserCount] = js.undefined
+    UserCount: Int | Double = null
   ): ListedServer = {
     val __obj = js.Dynamic.literal(Arn = Arn)
     if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object ListedServer {
     if (LoggingRole != null) __obj.updateDynamic("LoggingRole")(LoggingRole)
     if (ServerId != null) __obj.updateDynamic("ServerId")(ServerId)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserCount)) __obj.updateDynamic("UserCount")(UserCount)
+    if (UserCount != null) __obj.updateDynamic("UserCount")(UserCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedServer]
   }
 }

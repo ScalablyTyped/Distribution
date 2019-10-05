@@ -86,15 +86,15 @@ object JobFlowInstancesConfig {
     EmrManagedMasterSecurityGroup: XmlStringMaxLen256 = null,
     EmrManagedSlaveSecurityGroup: XmlStringMaxLen256 = null,
     HadoopVersion: XmlStringMaxLen256 = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
+    InstanceCount: Int | Double = null,
     InstanceFleets: InstanceFleetConfigList = null,
     InstanceGroups: InstanceGroupConfigList = null,
-    KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined,
+    KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined,
     MasterInstanceType: InstanceType = null,
     Placement: PlacementType = null,
     ServiceAccessSecurityGroup: XmlStringMaxLen256 = null,
     SlaveInstanceType: InstanceType = null,
-    TerminationProtected: js.UndefOr[Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
   ): JobFlowInstancesConfig = {
     val __obj = js.Dynamic.literal()
     if (AdditionalMasterSecurityGroups != null) __obj.updateDynamic("AdditionalMasterSecurityGroups")(AdditionalMasterSecurityGroups)
@@ -105,7 +105,7 @@ object JobFlowInstancesConfig {
     if (EmrManagedMasterSecurityGroup != null) __obj.updateDynamic("EmrManagedMasterSecurityGroup")(EmrManagedMasterSecurityGroup)
     if (EmrManagedSlaveSecurityGroup != null) __obj.updateDynamic("EmrManagedSlaveSecurityGroup")(EmrManagedSlaveSecurityGroup)
     if (HadoopVersion != null) __obj.updateDynamic("HadoopVersion")(HadoopVersion)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (InstanceFleets != null) __obj.updateDynamic("InstanceFleets")(InstanceFleets)
     if (InstanceGroups != null) __obj.updateDynamic("InstanceGroups")(InstanceGroups)
     if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps)

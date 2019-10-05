@@ -24,3 +24,9 @@ object Ribbon {
   }
 }
 
+@JSImport("d3-chord", "ribbon")
+@js.native
+object ribbon extends js.Object {
+  def apply(): RibbonGenerator[_, Ribbon, RibbonSubgroup] = js.native
+}
+

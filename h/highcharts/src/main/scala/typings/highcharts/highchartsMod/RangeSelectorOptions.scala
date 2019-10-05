@@ -144,7 +144,7 @@ object RangeSelectorOptions {
     inputBoxHeight: Int | Double = null,
     inputBoxWidth: Int | Double = null,
     inputDateFormat: String = null,
-    inputDateParser: RangeSelectorParseCallbackFunction = null,
+    inputDateParser: /* value */ String => Double = null,
     inputEditDateFormat: String = null,
     inputEnabled: js.UndefOr[Boolean] = js.undefined,
     inputPosition: RangeSelectorInputPositionOptions = null,
@@ -167,7 +167,7 @@ object RangeSelectorOptions {
     if (inputBoxHeight != null) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.asInstanceOf[js.Any])
     if (inputBoxWidth != null) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.asInstanceOf[js.Any])
     if (inputDateFormat != null) __obj.updateDynamic("inputDateFormat")(inputDateFormat)
-    if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(inputDateParser)
+    if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(js.Any.fromFunction1(inputDateParser))
     if (inputEditDateFormat != null) __obj.updateDynamic("inputEditDateFormat")(inputEditDateFormat)
     if (!js.isUndefined(inputEnabled)) __obj.updateDynamic("inputEnabled")(inputEnabled)
     if (inputPosition != null) __obj.updateDynamic("inputPosition")(inputPosition)

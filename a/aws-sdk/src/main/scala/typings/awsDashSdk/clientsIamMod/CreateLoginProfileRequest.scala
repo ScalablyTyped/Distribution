@@ -24,7 +24,7 @@ object CreateLoginProfileRequest {
   def apply(
     Password: passwordType,
     UserName: userNameType,
-    PasswordResetRequired: js.UndefOr[booleanType] = js.undefined
+    PasswordResetRequired: js.UndefOr[Boolean] = js.undefined
   ): CreateLoginProfileRequest = {
     val __obj = js.Dynamic.literal(Password = Password, UserName = UserName)
     if (!js.isUndefined(PasswordResetRequired)) __obj.updateDynamic("PasswordResetRequired")(PasswordResetRequired)

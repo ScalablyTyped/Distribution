@@ -7,6 +7,7 @@ import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
 import typings.react.NativeMouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -113,8 +114,8 @@ object INavProps {
     linkAs: IComponentAs[IButtonProps] = null,
     onLinkClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit = null,
     onLinkExpandClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit = null,
-    onRenderGroupHeader: IRenderFunction[INavLinkGroup] = null,
-    onRenderLink: IRenderFunction[INavLink] = null,
+    onRenderGroupHeader: (/* props */ js.UndefOr[INavLinkGroup], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLinkGroup], Element | Null]]) => Element | Null = null,
+    onRenderLink: (/* props */ js.UndefOr[INavLink], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLink], Element | Null]]) => Element | Null = null,
     selectedAriaLabel: String = null,
     selectedKey: String = null,
     styles: IStyleFunctionOrObject[INavStyleProps, INavStyles] = null,
@@ -131,8 +132,8 @@ object INavProps {
     if (linkAs != null) __obj.updateDynamic("linkAs")(linkAs.asInstanceOf[js.Any])
     if (onLinkClick != null) __obj.updateDynamic("onLinkClick")(js.Any.fromFunction2(onLinkClick))
     if (onLinkExpandClick != null) __obj.updateDynamic("onLinkExpandClick")(js.Any.fromFunction2(onLinkExpandClick))
-    if (onRenderGroupHeader != null) __obj.updateDynamic("onRenderGroupHeader")(onRenderGroupHeader)
-    if (onRenderLink != null) __obj.updateDynamic("onRenderLink")(onRenderLink)
+    if (onRenderGroupHeader != null) __obj.updateDynamic("onRenderGroupHeader")(js.Any.fromFunction2(onRenderGroupHeader))
+    if (onRenderLink != null) __obj.updateDynamic("onRenderLink")(js.Any.fromFunction2(onRenderLink))
     if (selectedAriaLabel != null) __obj.updateDynamic("selectedAriaLabel")(selectedAriaLabel)
     if (selectedKey != null) __obj.updateDynamic("selectedKey")(selectedKey)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

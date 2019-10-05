@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "trim"
-version := "0.01-dt-20190322Z-b5d1b7"
-scalaVersion := "2.12.9"
+version := "0.01-dt-20190322Z-38fbef"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

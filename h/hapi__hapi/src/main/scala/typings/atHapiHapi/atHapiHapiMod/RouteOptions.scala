@@ -4,9 +4,9 @@ import typings.atHapiHapi.Anon_Collect
 import typings.atHapiHapi.Anon_FailAction
 import typings.atHapiHapi.Anon_RelativeTo
 import typings.atHapiHapi.Anon_Server
-import typings.atHapiHapi.atHapiHapiMod.JsonNs.StringifyArguments
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.Method
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Json.StringifyArguments
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
 import typings.atHapiHapi.atHapiHapiNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

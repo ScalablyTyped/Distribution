@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.usbNs.DeviceFilter
+import typings.chromeDashApps.chrome.usb.DeviceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,5 +21,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "LayerComposition")
 @js.native
 class LayerComposition ()
-  extends typings.playcanvas.pcNs.LayerComposition
+  extends typings.playcanvas.pc.LayerComposition
 

@@ -242,14 +242,14 @@ trait DBInstance extends js.Object {
 object DBInstance {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
     AssociatedRoles: DBInstanceRoles = null,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
-    BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CACertificateIdentifier: String = null,
     CharacterSetName: String = null,
-    CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBClusterIdentifier: String = null,
     DBInstanceArn: String = null,
     DBInstanceClass: String = null,
@@ -259,54 +259,54 @@ object DBInstance {
     DBParameterGroups: DBParameterGroupStatusList = null,
     DBSecurityGroups: DBSecurityGroupMembershipList = null,
     DBSubnetGroup: DBSubnetGroup = null,
-    DbInstancePort: js.UndefOr[Integer] = js.undefined,
+    DbInstancePort: Int | scala.Double = null,
     DbiResourceId: String = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     DomainMemberships: DomainMembershipList = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
     Endpoint: Endpoint = null,
     Engine: String = null,
     EngineVersion: String = null,
     EnhancedMonitoringResourceArn: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceCreateTime: TStamp = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
     LatestRestorableTime: TStamp = null,
     LicenseModel: String = null,
     ListenerEndpoint: Endpoint = null,
     MasterUsername: String = null,
-    MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxAllocatedStorage: Int | scala.Double = null,
+    MonitoringInterval: Int | scala.Double = null,
     MonitoringRoleArn: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OptionGroupMemberships: OptionGroupMembershipList = null,
     PendingModifiedValues: PendingModifiedValues = null,
-    PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    PerformanceInsightsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     PerformanceInsightsKMSKeyId: String = null,
-    PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    PerformanceInsightsRetentionPeriod: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ProcessorFeatures: ProcessorFeatureList = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
+    PromotionTier: Int | scala.Double = null,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     ReadReplicaDBClusterIdentifiers: ReadReplicaDBClusterIdentifierList = null,
     ReadReplicaDBInstanceIdentifiers: ReadReplicaDBInstanceIdentifierList = null,
     ReadReplicaSourceDBInstanceIdentifier: String = null,
     SecondaryAvailabilityZone: String = null,
     StatusInfos: DBInstanceStatusInfoList = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     StorageType: String = null,
     TdeCredentialArn: String = null,
     Timezone: String = null,
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
@@ -319,7 +319,7 @@ object DBInstance {
     if (DBParameterGroups != null) __obj.updateDynamic("DBParameterGroups")(DBParameterGroups)
     if (DBSecurityGroups != null) __obj.updateDynamic("DBSecurityGroups")(DBSecurityGroups)
     if (DBSubnetGroup != null) __obj.updateDynamic("DBSubnetGroup")(DBSubnetGroup)
-    if (!js.isUndefined(DbInstancePort)) __obj.updateDynamic("DbInstancePort")(DbInstancePort)
+    if (DbInstancePort != null) __obj.updateDynamic("DbInstancePort")(DbInstancePort.asInstanceOf[js.Any])
     if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId)
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (DomainMemberships != null) __obj.updateDynamic("DomainMemberships")(DomainMemberships)
@@ -330,25 +330,25 @@ object DBInstance {
     if (EnhancedMonitoringResourceArn != null) __obj.updateDynamic("EnhancedMonitoringResourceArn")(EnhancedMonitoringResourceArn)
     if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled)
     if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (LatestRestorableTime != null) __obj.updateDynamic("LatestRestorableTime")(LatestRestorableTime)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (ListenerEndpoint != null) __obj.updateDynamic("ListenerEndpoint")(ListenerEndpoint)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
-    if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage)
-    if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval)
+    if (MaxAllocatedStorage != null) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage.asInstanceOf[js.Any])
+    if (MonitoringInterval != null) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval.asInstanceOf[js.Any])
     if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OptionGroupMemberships != null) __obj.updateDynamic("OptionGroupMemberships")(OptionGroupMemberships)
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)
     if (!js.isUndefined(PerformanceInsightsEnabled)) __obj.updateDynamic("PerformanceInsightsEnabled")(PerformanceInsightsEnabled)
     if (PerformanceInsightsKMSKeyId != null) __obj.updateDynamic("PerformanceInsightsKMSKeyId")(PerformanceInsightsKMSKeyId)
-    if (!js.isUndefined(PerformanceInsightsRetentionPeriod)) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod)
+    if (PerformanceInsightsRetentionPeriod != null) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier)
+    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (ReadReplicaDBClusterIdentifiers != null) __obj.updateDynamic("ReadReplicaDBClusterIdentifiers")(ReadReplicaDBClusterIdentifiers)
     if (ReadReplicaDBInstanceIdentifiers != null) __obj.updateDynamic("ReadReplicaDBInstanceIdentifiers")(ReadReplicaDBInstanceIdentifiers)

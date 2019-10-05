@@ -1,6 +1,6 @@
 package typings.phaser.phaserMod
 
-import typings.phaser.PhaserNs.TypesNs.ScenesNs.SettingsConfig
+import typings.phaser.Phaser.Types.Scenes.SettingsConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("phaser", "Scene")
 @js.native
 class Scene protected ()
-  extends typings.phaser.PhaserNs.Scene {
+  extends typings.phaser.Phaser.Scene {
   /**
     * 
     * @param config Scene specific configuration settings.

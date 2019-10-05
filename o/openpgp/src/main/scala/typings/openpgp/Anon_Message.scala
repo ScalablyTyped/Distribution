@@ -1,6 +1,6 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpMod.messageNs.Message
+import typings.openpgp.openpgpMod.message.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

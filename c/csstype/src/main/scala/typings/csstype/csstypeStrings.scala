@@ -3589,7 +3589,9 @@ object csstypeStrings {
        with _CounterStyleRangeProperty
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.csstype.csstypeMod.PointerEventsProperty because Already inherited- typings.csstype.csstypeMod.BoxOrientProperty because Already inherited- typings.csstype.csstypeMod.BoxDirectionProperty because Already inherited */ @js.native
+  - typings.csstype.csstypeMod.PointerEventsProperty because Already inherited
+  - typings.csstype.csstypeMod.BoxOrientProperty because Already inherited
+  - typings.csstype.csstypeMod.BoxDirectionProperty because Already inherited */ @js.native
   sealed trait inherit extends Globals
   
   @js.native
@@ -4226,6 +4228,7 @@ object csstypeStrings {
   sealed trait `non-scaling-stroke` extends VectorEffectProperty
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.csstype.csstypeMod._AnimationProperty because Already inherited
   - typings.csstype.csstypeMod._SingleAnimation because Already inherited */ @js.native
   sealed trait none
     extends LineStyle

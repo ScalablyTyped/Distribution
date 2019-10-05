@@ -1,6 +1,6 @@
 package typings.inversifyDashInjectDashDecorators
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Container
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

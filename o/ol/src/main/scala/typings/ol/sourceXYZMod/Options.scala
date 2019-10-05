@@ -4,7 +4,9 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import typings.ol.tileMod.UrlFunction
+import typings.ol.tilecoordMod.TileCoord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,10 +45,10 @@ object Options {
     projection: ProjectionLike = null,
     reprojectionErrorThreshold: Int | Double = null,
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     tilePixelRatio: Int | Double = null,
     tileSize: Double | Size = null,
-    tileUrlFunction: UrlFunction = null,
+    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => js.UndefOr[String] = null,
     transition: Int | Double = null,
     url: String = null,
     urls: js.Array[String] = null,
@@ -63,10 +65,10 @@ object Options {
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(tileUrlFunction)
+    if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(js.Any.fromFunction3(tileUrlFunction))
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (urls != null) __obj.updateDynamic("urls")(urls)

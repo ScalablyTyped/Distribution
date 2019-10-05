@@ -26,16 +26,16 @@ trait ParallelismConfigurationUpdate extends js.Object {
 object ParallelismConfigurationUpdate {
   @scala.inline
   def apply(
-    AutoScalingEnabledUpdate: js.UndefOr[BooleanObject] = js.undefined,
+    AutoScalingEnabledUpdate: js.UndefOr[Boolean] = js.undefined,
     ConfigurationTypeUpdate: ConfigurationType = null,
-    ParallelismPerKPUUpdate: js.UndefOr[ParallelismPerKPU] = js.undefined,
-    ParallelismUpdate: js.UndefOr[Parallelism] = js.undefined
+    ParallelismPerKPUUpdate: Int | Double = null,
+    ParallelismUpdate: Int | Double = null
   ): ParallelismConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoScalingEnabledUpdate)) __obj.updateDynamic("AutoScalingEnabledUpdate")(AutoScalingEnabledUpdate)
     if (ConfigurationTypeUpdate != null) __obj.updateDynamic("ConfigurationTypeUpdate")(ConfigurationTypeUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParallelismPerKPUUpdate)) __obj.updateDynamic("ParallelismPerKPUUpdate")(ParallelismPerKPUUpdate)
-    if (!js.isUndefined(ParallelismUpdate)) __obj.updateDynamic("ParallelismUpdate")(ParallelismUpdate)
+    if (ParallelismPerKPUUpdate != null) __obj.updateDynamic("ParallelismPerKPUUpdate")(ParallelismPerKPUUpdate.asInstanceOf[js.Any])
+    if (ParallelismUpdate != null) __obj.updateDynamic("ParallelismUpdate")(ParallelismUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelismConfigurationUpdate]
   }
 }

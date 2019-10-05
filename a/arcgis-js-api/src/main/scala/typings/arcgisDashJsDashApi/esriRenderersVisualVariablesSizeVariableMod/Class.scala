@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesSizeVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeVariableProperties
+import typings.arcgisDashJsDashApi.__esri.SizeVariable
+import typings.arcgisDashJsDashApi.__esri.SizeVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

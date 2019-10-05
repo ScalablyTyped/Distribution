@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportAlgorithmicColorRampMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AlgorithmicColorRamp
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AlgorithmicColorRampProperties
+import typings.arcgisDashJsDashApi.__esri.AlgorithmicColorRamp
+import typings.arcgisDashJsDashApi.__esri.AlgorithmicColorRampProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "BehaviorSubjectCls")
 @js.native
 class BehaviorSubjectCls[T] protected ()
-  extends typings.rxDashCoreDashBinding.RxNs.BehaviorSubjectCls[T] {
+  extends typings.rxDashCoreDashBinding.Rx.BehaviorSubjectCls[T] {
   def this(initialValue: T) = this()
 }
 

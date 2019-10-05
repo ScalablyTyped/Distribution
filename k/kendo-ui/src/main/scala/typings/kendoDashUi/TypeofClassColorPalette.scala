@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.ColorPalette
-import typings.kendoDashUi.kendoNs.uiNs.ColorPaletteOptions
+import typings.kendoDashUi.kendo.ui.ColorPalette
+import typings.kendoDashUi.kendo.ui.ColorPaletteOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

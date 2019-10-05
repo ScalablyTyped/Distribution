@@ -1,8 +1,8 @@
 package typings.iobroker
 
-import typings.iobroker.iobrokerMod.Global.ioBrokerNs.CommonType
-import typings.iobroker.iobrokerMod.Global.ioBrokerNs.LogLevel
-import typings.iobroker.iobrokerMod.Global.ioBrokerNs.ObjectType
+import typings.iobroker.iobrokerMod.Global.ioBroker.CommonType
+import typings.iobroker.iobrokerMod.Global.ioBroker.LogLevel
+import typings.iobroker.iobrokerMod.Global.ioBroker.ObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

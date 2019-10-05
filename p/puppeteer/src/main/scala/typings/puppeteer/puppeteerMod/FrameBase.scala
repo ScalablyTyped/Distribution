@@ -1,6 +1,6 @@
 package typings.puppeteer.puppeteerMod
 
-import typings.puppeteer.Anon_DelayNumber_507099768
+import typings.puppeteer.Anon_DelayNumber_574745146
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -90,7 +90,7 @@ trait FrameBase
     * @param options: The typing parameters.
     */
   def `type`(selector: String, text: String): js.Promise[Unit] = js.native
-  def `type`(selector: String, text: String, options: Anon_DelayNumber_507099768): js.Promise[Unit] = js.native
+  def `type`(selector: String, text: String, options: Anon_DelayNumber_574745146): js.Promise[Unit] = js.native
   /** Returns frame's url. */
   def url(): String = js.native
   /**

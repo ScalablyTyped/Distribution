@@ -28,13 +28,13 @@ object ListQualificationTypesRequest {
   @scala.inline
   def apply(
     MustBeRequestable: Boolean,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
-    MustBeOwnedByCaller: js.UndefOr[Boolean] = js.undefined,
+    MaxResults: Int | Double = null,
+    MustBeOwnedByCaller: js.UndefOr[scala.Boolean] = js.undefined,
     NextToken: PaginationToken = null,
     Query: String = null
   ): ListQualificationTypesRequest = {
     val __obj = js.Dynamic.literal(MustBeRequestable = MustBeRequestable)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (!js.isUndefined(MustBeOwnedByCaller)) __obj.updateDynamic("MustBeOwnedByCaller")(MustBeOwnedByCaller)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Query != null) __obj.updateDynamic("Query")(Query)

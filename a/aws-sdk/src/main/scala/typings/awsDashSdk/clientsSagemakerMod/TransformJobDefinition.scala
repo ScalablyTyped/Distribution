@@ -43,14 +43,14 @@ object TransformJobDefinition {
     TransformResources: TransformResources,
     BatchStrategy: BatchStrategy = null,
     Environment: TransformEnvironmentMap = null,
-    MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
-    MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined
+    MaxConcurrentTransforms: Int | Double = null,
+    MaxPayloadInMB: Int | Double = null
   ): TransformJobDefinition = {
     val __obj = js.Dynamic.literal(TransformInput = TransformInput, TransformOutput = TransformOutput, TransformResources = TransformResources)
     if (BatchStrategy != null) __obj.updateDynamic("BatchStrategy")(BatchStrategy.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
-    if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms)
-    if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB)
+    if (MaxConcurrentTransforms != null) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.asInstanceOf[js.Any])
+    if (MaxPayloadInMB != null) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformJobDefinition]
   }
 }

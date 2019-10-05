@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.cookiesNs.SameSiteStatus
+import typings.firefoxDashWebextDashBrowser.browser.cookies.SameSiteStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

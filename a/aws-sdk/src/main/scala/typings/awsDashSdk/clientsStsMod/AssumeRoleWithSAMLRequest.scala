@@ -37,12 +37,12 @@ object AssumeRoleWithSAMLRequest {
     PrincipalArn: arnType,
     RoleArn: arnType,
     SAMLAssertion: SAMLAssertionType,
-    DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
+    DurationSeconds: Int | Double = null,
     Policy: sessionPolicyDocumentType = null,
     PolicyArns: policyDescriptorListType = null
   ): AssumeRoleWithSAMLRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn, RoleArn = RoleArn, SAMLAssertion = SAMLAssertion)
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds)
+    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy)
     if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns)
     __obj.asInstanceOf[AssumeRoleWithSAMLRequest]

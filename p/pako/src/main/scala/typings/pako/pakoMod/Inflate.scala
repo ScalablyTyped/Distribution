@@ -1,6 +1,7 @@
 package typings.pako.pakoMod
 
 import typings.std.ArrayBuffer
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,5 +23,12 @@ class Inflate () extends js.Object {
   def push(data: ArrayBuffer): Boolean = js.native
   def push(data: ArrayBuffer, mode: Boolean): Boolean = js.native
   def push(data: ArrayBuffer, mode: FlushValues): Boolean = js.native
+}
+
+@JSImport("pako", "inflate")
+@js.native
+object inflate extends js.Object {
+  def apply(data: Data): Uint8Array = js.native
+  def apply(data: Data, options: InflateFunctionOptions): Uint8Array = js.native
 }
 

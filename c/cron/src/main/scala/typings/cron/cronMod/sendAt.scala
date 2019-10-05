@@ -1,0 +1,16 @@
+package typings.cron.cronMod
+
+import typings.moment.momentMod.Moment
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("cron", "sendAt")
+@js.native
+object sendAt extends js.Object {
+  def apply(cronTime: String): Moment = js.native
+  def apply(cronTime: Moment): Moment = js.native
+  def apply(cronTime: Date): Moment = js.native
+}
+

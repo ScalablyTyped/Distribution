@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTimeExtentMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeExtent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeExtentProperties
+import typings.arcgisDashJsDashApi.__esri.TimeExtent
+import typings.arcgisDashJsDashApi.__esri.TimeExtentProperties
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

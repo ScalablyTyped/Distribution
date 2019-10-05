@@ -1,6 +1,6 @@
 package typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultNodeWidgetMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

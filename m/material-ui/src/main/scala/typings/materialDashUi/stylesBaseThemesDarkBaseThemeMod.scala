@@ -1,6 +1,6 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.StylesNs.RawTheme
+import typings.materialDashUi.__MaterialUI.Styles.RawTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

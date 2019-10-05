@@ -1,6 +1,6 @@
 package typings.reactDashDatagrid.reactDashDatagridMod
 
-import typings.reactDashDatagrid.reactDashDatagridMod.ReactDataGridNs.DataGrid
+import typings.reactDashDatagrid.reactDashDatagridMod.ReactDataGrid.DataGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

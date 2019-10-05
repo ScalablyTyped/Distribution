@@ -1,0 +1,30 @@
+package typings.googleDashAppsDashScript.GoogleAppsScript.AdminDirectory.Schema
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UserWebsite extends js.Object {
+  var customType: js.UndefOr[String] = js.undefined
+  var primary: js.UndefOr[Boolean] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.undefined
+}
+
+object UserWebsite {
+  @scala.inline
+  def apply(
+    customType: String = null,
+    primary: js.UndefOr[Boolean] = js.undefined,
+    `type`: String = null,
+    value: String = null
+  ): UserWebsite = {
+    val __obj = js.Dynamic.literal()
+    if (customType != null) __obj.updateDynamic("customType")(customType)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[UserWebsite]
+  }
+}
+

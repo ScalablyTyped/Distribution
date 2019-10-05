@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojswipeactionsMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
-import typings.atOracleOraclejet.ojswipeactionsMod.ojSwipeActionsNs.ojAction
+import typings.atOracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -24,7 +24,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ojSwipeActionsEventMap extends baseComponentEventMap[ojSwipeActionsSettableProperties] {
-  var ojAction: typings.atOracleOraclejet.ojswipeactionsMod.ojSwipeActionsNs.ojAction
+  var ojAction: typings.atOracleOraclejet.ojswipeactionsMod.ojSwipeActions.ojAction
 }
 
 object ojSwipeActionsEventMap {

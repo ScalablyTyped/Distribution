@@ -1,8 +1,8 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInPropertyDef
-import typings.mfiles.MFilesNs.MFDefaultPropertyType
-import typings.mfiles.MFilesNs.MFEmailField
+import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import typings.mfiles.MFiles.MFDefaultPropertyType
+import typings.mfiles.MFiles.MFEmailField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,12 @@
 package typings.atOracleOraclejet.ojdatetimepickerMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.atOracleOraclejetStrings.disabled
 import typings.atOracleOraclejet.atOracleOraclejetStrings.jet
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojDatePickerNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojDatePickerNs.ojAnimateStart
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojDatePicker.ojAnimateEnd
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojDatePicker.ojAnimateStart
+import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +22,12 @@ trait ojDatePicker extends ojInputDate[ojDatePickerSettableProperties] {
   @JSName("renderMode")
   var renderMode_ojDatePicker: jet = js.native
   def setProperties(properties: ojDatePickerSettablePropertiesLenient): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojdatetimepicker", "ojDatePicker")
+@js.native
+object ojDatePicker extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

@@ -1,14 +1,16 @@
 package typings.openjscad
 
-import typings.openjscad.CAGNs.Side
-import typings.openjscad.CSGNs.ICircleOptions
-import typings.openjscad.CSGNs.IRectangleOptions
-import typings.openjscad.CSGNs.Matrix4x4
-import typings.openjscad.CSGNs.OrthoNormalBasis
-import typings.openjscad.CSGNs.Path2D
-import typings.openjscad.CSGNs.Polygon
-import typings.openjscad.CSGNs.Vector2D
-import typings.openjscad.CSGNs.Vector3D
+import typings.openjscad.CAG.Side
+import typings.openjscad.CAG.Vertex
+import typings.openjscad.CSG.ICircleOptions
+import typings.openjscad.CSG.IRectangleOptions
+import typings.openjscad.CSG.Matrix4x4
+import typings.openjscad.CSG.OrthoNormalBasis
+import typings.openjscad.CSG.Path2D
+import typings.openjscad.CSG.Polygon
+import typings.openjscad.CSG.Vector2D
+import typings.openjscad.CSG.Vector3D
+import typings.openjscad.CSG.fuzzyFactory
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,6 +58,36 @@ class CAG ()
 @JSGlobal("CAG")
 @js.native
 object CAG extends js.Object {
+  @js.native
+  class Side protected () extends CxG {
+    def this(vertex0: Vertex, vertex1: Vertex) = this()
+    var tag: Double = js.native
+    var vertex0: Vertex = js.native
+    var vertex1: Vertex = js.native
+    def direction(): Vector2D = js.native
+    def flipped(): Side = js.native
+    def getTag(): Double = js.native
+    def length(): Double = js.native
+    def lengthSquared(): Double = js.native
+    def toPolygon3D(z0: js.Any, z1: js.Any): Polygon = js.native
+  }
+  
+  @js.native
+  class Vertex protected () extends js.Object {
+    def this(pos: Vector2D) = this()
+    var pos: Vector2D = js.native
+    var tag: Double = js.native
+    def getTag(): Double = js.native
+  }
+  
+  @js.native
+  class fuzzyCAGFactory () extends js.Object {
+    var vertexfactory: fuzzyFactory = js.native
+    def getCAG(sourcecag: CAG): CAG = js.native
+    def getSide(sourceside: Side): Side = js.native
+    def getVertex(sourcevertex: Vertex): Vertex = js.native
+  }
+  
   def PathsToDxf(paths: js.Array[Path2D]): Blob = js.native
   def circle(options: ICircleOptions): CAG = js.native
   def fromCompactBinary(bin: js.Any): CAG = js.native
@@ -66,5 +98,11 @@ object CAG extends js.Object {
   def linesIntersect(p0start: Vector2D, p0end: Vector2D, p1start: Vector2D, p1end: Vector2D): Boolean = js.native
   def rectangle(options: IRectangleOptions): CAG = js.native
   def roundedRectangle(options: js.Any): CAG = js.native
+  /* static members */
+  @js.native
+  object Side extends js.Object {
+    def _fromFakePolygon(polygon: Polygon): Side = js.native
+  }
+  
 }
 

@@ -1,9 +1,9 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.storageNs.LocalStorageArea
-import typings.chrome.chromeNs.storageNs.StorageArea
-import typings.chrome.chromeNs.storageNs.StorageChangedEvent
-import typings.chrome.chromeNs.storageNs.SyncStorageArea
+import typings.chrome.chrome.storage.LocalStorageArea
+import typings.chrome.chrome.storage.StorageArea
+import typings.chrome.chrome.storage.StorageChangedEvent
+import typings.chrome.chrome.storage.SyncStorageArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

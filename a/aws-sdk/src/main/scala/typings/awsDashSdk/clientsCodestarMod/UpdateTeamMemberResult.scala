@@ -23,7 +23,7 @@ object UpdateTeamMemberResult {
   @scala.inline
   def apply(
     projectRole: Role = null,
-    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined,
+    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined,
     userArn: UserArn = null
   ): UpdateTeamMemberResult = {
     val __obj = js.Dynamic.literal()

@@ -1,8 +1,8 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFLicenseType
-import typings.mfiles.MFilesNs.MFLoginAccountType
-import typings.mfiles.MFilesNs.MFLoginServerRole
+import typings.mfiles.MFiles.MFLicenseType
+import typings.mfiles.MFiles.MFLoginAccountType
+import typings.mfiles.MFiles.MFLoginServerRole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

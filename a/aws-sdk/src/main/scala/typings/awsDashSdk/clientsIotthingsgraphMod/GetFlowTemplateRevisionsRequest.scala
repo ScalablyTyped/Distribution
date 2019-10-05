@@ -21,9 +21,9 @@ trait GetFlowTemplateRevisionsRequest extends js.Object {
 
 object GetFlowTemplateRevisionsRequest {
   @scala.inline
-  def apply(id: Urn, maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): GetFlowTemplateRevisionsRequest = {
+  def apply(id: Urn, maxResults: Int | Double = null, nextToken: NextToken = null): GetFlowTemplateRevisionsRequest = {
     val __obj = js.Dynamic.literal(id = id)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetFlowTemplateRevisionsRequest]
   }

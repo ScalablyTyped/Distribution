@@ -23,7 +23,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.LocateOptions because var conflicts: maxZoom. Inlined enableHighAccuracy, maximumAge, setView, timeout, watch- typings.leaflet.leafletMod.MapOptions because var conflicts: easeLinearity, maxZoom. Inlined attributionControl, bounceAtZoomLimits, boxZoom, center, closePopupOnClick, crs, doubleClickZoom, dragging, fadeAnimation, inertia, inertiaDeceleration, inertiaMaxSpeed, keyboard, keyboardPanDelta, layers, markerZoomAnimation, maxBounds, maxBoundsViscosity, minZoom, preferCanvas, renderer, scrollWheelZoom, tap, tapTolerance, touchZoom, trackResize, transform3DLimit, wheelDebounceTime, wheelPxPerZoomLevel, worldCopyJump, zoom, zoomAnimation, zoomAnimationThreshold, zoomControl, zoomDelta, zoomSnap */ trait MapProps
+- typings.leaflet.leafletMod.LocateOptions because var conflicts: maxZoom. Inlined enableHighAccuracy, maximumAge, setView, timeout, watch
+- typings.leaflet.leafletMod.MapOptions because var conflicts: easeLinearity, maxZoom. Inlined attributionControl, bounceAtZoomLimits, boxZoom, center, closePopupOnClick, crs, doubleClickZoom, dragging, fadeAnimation, inertia, inertiaDeceleration, inertiaMaxSpeed, keyboard, keyboardPanDelta, layers, markerZoomAnimation, maxBounds, maxBoundsViscosity, minZoom, preferCanvas, renderer, scrollWheelZoom, tap, tapTolerance, touchZoom, trackResize, transform3DLimit, wheelDebounceTime, wheelPxPerZoomLevel, worldCopyJump, zoom, zoomAnimation, zoomAnimationThreshold, zoomControl, zoomDelta, zoomSnap */ trait MapProps
   extends FitBoundsOptions
      with MapEvents {
   // Control options
@@ -91,7 +92,6 @@ import scala.scalajs.js.annotation._
 object MapProps {
   @scala.inline
   def apply(
-    children: Children,
     animate: js.UndefOr[Boolean] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
     bounceAtZoomLimits: js.UndefOr[Boolean] = js.undefined,
@@ -99,6 +99,7 @@ object MapProps {
     boundsOptions: FitBoundsOptions = null,
     boxZoom: js.UndefOr[Boolean] = js.undefined,
     center: LatLngExpression = null,
+    children: Children = null,
     className: String = null,
     closePopupOnClick: js.UndefOr[Boolean] = js.undefined,
     crs: CRS = null,
@@ -186,7 +187,7 @@ object MapProps {
     zoomDelta: Int | Double = null,
     zoomSnap: Int | Double = null
   ): MapProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (!js.isUndefined(bounceAtZoomLimits)) __obj.updateDynamic("bounceAtZoomLimits")(bounceAtZoomLimits)
@@ -194,6 +195,7 @@ object MapProps {
     if (boundsOptions != null) __obj.updateDynamic("boundsOptions")(boundsOptions)
     if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closePopupOnClick)) __obj.updateDynamic("closePopupOnClick")(closePopupOnClick)
     if (crs != null) __obj.updateDynamic("crs")(crs)

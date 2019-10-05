@@ -17,10 +17,10 @@ trait Layer extends js.Object {
 
 object Layer {
   @scala.inline
-  def apply(Arn: LayerVersionArn = null, CodeSize: js.UndefOr[Long] = js.undefined): Layer = {
+  def apply(Arn: LayerVersionArn = null, CodeSize: Int | Double = null): Layer = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize)
+    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
 }

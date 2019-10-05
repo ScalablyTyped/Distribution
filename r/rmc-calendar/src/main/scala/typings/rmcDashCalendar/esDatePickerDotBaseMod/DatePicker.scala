@@ -4,8 +4,8 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.rmcDashCalendar.Anon_Client
 import typings.rmcDashCalendar.Anon_FirstDate
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.CellData
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.MonthData
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.CellData
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.MonthData
 import typings.rmcDashCalendar.esDatePickerPropsMod.PropsType
 import typings.std.Date
 import scala.scalajs.js

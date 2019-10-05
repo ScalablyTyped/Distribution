@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ConstructorDeclarationSyntax")
 @js.native
 class ConstructorDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ConstructorDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.ConstructorDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
     constructorKeyword: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     semicolonToken: ISyntaxToken,
     parsedInStrictMode: Boolean
   ) = this()
@@ -26,8 +26,8 @@ class ConstructorDeclarationSyntax protected ()
 object ConstructorDeclarationSyntax extends js.Object {
   def create(
     constructorKeyword: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.ConstructorDeclarationSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ConstructorDeclarationSyntax = js.native
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax
+  ): typings.typescriptDashServices.TypeScript.ConstructorDeclarationSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ConstructorDeclarationSyntax = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.mochaDashPhantomjs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,4 +32,8 @@ object MochaPhantomJS {
     __obj.asInstanceOf[MochaPhantomJS]
   }
 }
+
+@JSGlobal("mochaPhantomJS")
+@js.native
+object mochaPhantomJS extends TopLevel[MochaPhantomJS]
 

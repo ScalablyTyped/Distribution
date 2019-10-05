@@ -30,6 +30,12 @@ trait OriginEndpoint extends js.Object {
   var ManifestName: js.UndefOr[__string] = js.undefined
   var MssPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.MssPackage] = js.undefined
   /**
+    * Control whether origination of video is allowed for this OriginEndpoint. If set to ALLOW, the OriginEndpoint
+  may by requested, pursuant to any other form of access control. If set to DENY, the OriginEndpoint may not be
+  requested. This can be helpful for Live to VOD harvesting, or for temporarily disabling origination
+    */
+  var Origination: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.Origination] = js.undefined
+  /**
     * Maximum duration (seconds) of content to retain for startover playback.
   If not specified, startover playback will be disabled for the OriginEndpoint.
     */
@@ -62,9 +68,10 @@ object OriginEndpoint {
     Id: __string = null,
     ManifestName: __string = null,
     MssPackage: MssPackage = null,
-    StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined,
+    Origination: Origination = null,
+    StartoverWindowSeconds: Int | Double = null,
     Tags: Tags = null,
-    TimeDelaySeconds: js.UndefOr[__integer] = js.undefined,
+    TimeDelaySeconds: Int | Double = null,
     Url: __string = null,
     Whitelist: __listOf__string = null
   ): OriginEndpoint = {
@@ -78,9 +85,10 @@ object OriginEndpoint {
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName)
     if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage)
-    if (!js.isUndefined(StartoverWindowSeconds)) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds)
+    if (Origination != null) __obj.updateDynamic("Origination")(Origination.asInstanceOf[js.Any])
+    if (StartoverWindowSeconds != null) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(TimeDelaySeconds)) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds)
+    if (TimeDelaySeconds != null) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url)
     if (Whitelist != null) __obj.updateDynamic("Whitelist")(Whitelist)
     __obj.asInstanceOf[OriginEndpoint]

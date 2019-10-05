@@ -17,9 +17,9 @@ trait RemotePortDetails extends js.Object {
 
 object RemotePortDetails {
   @scala.inline
-  def apply(Port: js.UndefOr[Integer] = js.undefined, PortName: String = null): RemotePortDetails = {
+  def apply(Port: Int | scala.Double = null, PortName: String = null): RemotePortDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PortName != null) __obj.updateDynamic("PortName")(PortName)
     __obj.asInstanceOf[RemotePortDetails]
   }

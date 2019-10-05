@@ -21,14 +21,10 @@ trait DescribeExportConfigurationsRequest extends js.Object {
 
 object DescribeExportConfigurationsRequest {
   @scala.inline
-  def apply(
-    exportIds: ExportIds = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: NextToken = null
-  ): DescribeExportConfigurationsRequest = {
+  def apply(exportIds: ExportIds = null, maxResults: Int | Double = null, nextToken: NextToken = null): DescribeExportConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     if (exportIds != null) __obj.updateDynamic("exportIds")(exportIds)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeExportConfigurationsRequest]
   }

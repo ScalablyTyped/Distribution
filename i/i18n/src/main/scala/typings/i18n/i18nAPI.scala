@@ -1,11 +1,11 @@
 package typings.i18n
 
-import typings.i18n.i18nNs.GlobalCatalog
-import typings.i18n.i18nNs.HashedList
-import typings.i18n.i18nNs.LocaleCatalog
-import typings.i18n.i18nNs.PluralOptions
-import typings.i18n.i18nNs.Replacements
-import typings.i18n.i18nNs.TranslateOptions
+import typings.i18n.i18n.GlobalCatalog
+import typings.i18n.i18n.HashedList
+import typings.i18n.i18n.LocaleCatalog
+import typings.i18n.i18n.PluralOptions
+import typings.i18n.i18n.Replacements
+import typings.i18n.i18n.TranslateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,18 +89,18 @@ trait i18nAPI extends js.Object {
     */
   def __n(singular: String, plural: String, count: Double): String = js.native
   /**
-    * Get the current global catalog
-    * @returns The current global catalog
-    */
-  def getCatalog(): GlobalCatalog = js.native
-  def getCatalog(locale: String): LocaleCatalog = js.native
-  /**
     * Get the catalog for the given locale
     * @param locale - The locale to get catalog for
     * @returns The specified locale catalog
     */
+  def getCatalog(): LocaleCatalog = js.native
+  def getCatalog(locale: String): LocaleCatalog = js.native
+  /**
+    * Get the current global catalog
+    * @returns The current global catalog
+    */
   @JSName("getCatalog")
-  def getCatalog_LocaleCatalog(): LocaleCatalog = js.native
+  def getCatalog_GlobalCatalog(): GlobalCatalog = js.native
   //#endregion
   /**
     * Get the current active locale

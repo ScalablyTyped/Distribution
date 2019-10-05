@@ -1,6 +1,6 @@
 package typings.elasticDashApmDashNode
 
-import typings.elasticDashApmDashNode.elasticDashApmDashNodeMod.ConnectNs.ErrorHandleFunction
+import typings.elasticDashApmDashNode.elasticDashApmDashNodeMod.Connect.ErrorHandleFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

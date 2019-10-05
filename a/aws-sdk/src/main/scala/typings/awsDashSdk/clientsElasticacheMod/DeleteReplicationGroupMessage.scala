@@ -24,7 +24,7 @@ object DeleteReplicationGroupMessage {
   def apply(
     ReplicationGroupId: String,
     FinalSnapshotIdentifier: String = null,
-    RetainPrimaryCluster: js.UndefOr[BooleanOptional] = js.undefined
+    RetainPrimaryCluster: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId)
     if (FinalSnapshotIdentifier != null) __obj.updateDynamic("FinalSnapshotIdentifier")(FinalSnapshotIdentifier)

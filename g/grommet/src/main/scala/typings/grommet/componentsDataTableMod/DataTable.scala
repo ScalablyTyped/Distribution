@@ -1,7 +1,9 @@
 package typings.grommet.componentsDataTableMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLTableElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.TableHTMLAttributes
@@ -23,4 +25,13 @@ class DataTable protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/DataTable", "DataTable")
+@js.native
+object DataTable extends TopLevel[
+      ComponentClass[
+        DataTableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]), 
+        ComponentState
+      ]
+    ]
 

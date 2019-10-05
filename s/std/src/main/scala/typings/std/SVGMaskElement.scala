@@ -18,26 +18,5 @@ trait SVGMaskElement extends SVGElement {
 
 @JSGlobal("SVGMaskElement")
 @js.native
-class SVGMaskElementCls () extends SVGMaskElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-}
-
-@JSGlobal("SVGMaskElement")
-@js.native
 object SVGMaskElement extends Instantiable0[SVGMaskElement]
 

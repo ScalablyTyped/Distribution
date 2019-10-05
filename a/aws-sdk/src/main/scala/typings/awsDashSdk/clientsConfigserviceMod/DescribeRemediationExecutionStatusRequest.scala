@@ -27,12 +27,12 @@ object DescribeRemediationExecutionStatusRequest {
   @scala.inline
   def apply(
     ConfigRuleName: ConfigRuleName,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: String = null,
     ResourceKeys: ResourceKeys = null
   ): DescribeRemediationExecutionStatusRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResourceKeys != null) __obj.updateDynamic("ResourceKeys")(ResourceKeys)
     __obj.asInstanceOf[DescribeRemediationExecutionStatusRequest]

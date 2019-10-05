@@ -38,3 +38,9 @@ object ObjectTypeSpreadProperty {
   }
 }
 
+@JSImport("@babel/types", "objectTypeSpreadProperty")
+@js.native
+object objectTypeSpreadProperty extends js.Object {
+  def apply(argument: FlowType): ObjectTypeSpreadProperty = js.native
+}
+

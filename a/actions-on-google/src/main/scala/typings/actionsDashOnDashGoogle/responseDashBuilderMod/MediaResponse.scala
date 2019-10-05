@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle.responseDashBuilderMod
 
-import typings.actionsDashOnDashGoogle.responseDashBuilderMod.MediaValuesNs.Type
+import typings.actionsDashOnDashGoogle.responseDashBuilderMod.MediaValues.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

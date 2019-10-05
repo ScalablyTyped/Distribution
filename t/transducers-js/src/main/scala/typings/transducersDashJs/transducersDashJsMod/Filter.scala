@@ -16,3 +16,9 @@ class Filter[TResult, TInput] protected () extends Transformer[TResult, TInput] 
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "filter")
+@js.native
+object filter extends js.Object {
+  def apply[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+}
+

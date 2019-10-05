@@ -14,7 +14,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.downplay
     */
   var downplay: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
@@ -25,7 +25,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
@@ -36,7 +36,7 @@ trait Anon_Downplay extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.highlight
     */
   var highlight: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType
+    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Style of Sunburst sectors.
@@ -95,19 +95,17 @@ trait Anon_Downplay extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.label
     */
-  var label: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
-  ] = js.undefined
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
 }
 
 object Anon_Downplay {
   @scala.inline
   def apply(
-    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
-    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColorBorderType = null,
+    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
     itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null
   ): Anon_Downplay = {
     val __obj = js.Dynamic.literal()
     if (downplay != null) __obj.updateDynamic("downplay")(downplay)

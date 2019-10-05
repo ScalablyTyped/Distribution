@@ -1,6 +1,6 @@
 package typings.loadDashGoogleDashMapsDashApi
 
-import typings.googlemaps.googleNs.mapsNs.MapsEventListener
+import typings.googlemaps.google.maps.MapsEventListener
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

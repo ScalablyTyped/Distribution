@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureFormFieldGroupConfigMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldGroupConfig
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldGroupConfigProperties
+import typings.arcgisDashJsDashApi.__esri.FieldGroupConfig
+import typings.arcgisDashJsDashApi.__esri.FieldGroupConfigProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

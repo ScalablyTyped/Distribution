@@ -1,6 +1,6 @@
 package typings.gulp.gulpMod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.vinylMod.File
 import typings.vinylDashFs.vinylDashFsMod.DestOptions
 import scala.scalajs.js

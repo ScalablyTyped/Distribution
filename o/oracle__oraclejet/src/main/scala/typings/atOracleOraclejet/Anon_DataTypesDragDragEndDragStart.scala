@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.DragRowContext
+import typings.atOracleOraclejet.ojtableMod.ojTable.DragRowContext
 import typings.std.DragEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -30,15 +30,15 @@ trait GetInventorySchemaRequest extends js.Object {
 object GetInventorySchemaRequest {
   @scala.inline
   def apply(
-    Aggregator: js.UndefOr[AggregatorSchemaOnly] = js.undefined,
-    MaxResults: js.UndefOr[GetInventorySchemaMaxResults] = js.undefined,
+    Aggregator: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
-    SubType: js.UndefOr[IsSubTypeSchema] = js.undefined,
+    SubType: js.UndefOr[scala.Boolean] = js.undefined,
     TypeName: InventoryItemTypeNameFilter = null
   ): GetInventorySchemaRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Aggregator)) __obj.updateDynamic("Aggregator")(Aggregator)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (!js.isUndefined(SubType)) __obj.updateDynamic("SubType")(SubType)
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName)

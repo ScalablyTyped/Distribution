@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchComputeEnvironmentMod
 
-import typings.atPulumiAws.typesOutputMod.batchNs.ComputeEnvironmentComputeResources
+import typings.atPulumiAws.typesOutputMod.batch.ComputeEnvironmentComputeResources
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,7 +1,7 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.Application
-import typings.activexDashPowerpoint.PowerPointNs.OLEControl
+import typings.activexDashPowerpoint.PowerPoint.Application
+import typings.activexDashPowerpoint.PowerPoint.OLEControl
 import typings.activexDashPowerpoint.activexDashPowerpointStrings.AfterNewPresentation
 import typings.activexDashPowerpoint.activexDashPowerpointStrings.AfterPresentationOpen
 import typings.activexDashPowerpoint.activexDashPowerpointStrings.Cancel

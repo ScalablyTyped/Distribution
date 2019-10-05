@@ -1,7 +1,7 @@
 package typings.jqueryDashCropbox
 
-import typings.jqueryDashCropbox.jQueryCropBoxNs.Cropbox
-import typings.jqueryDashCropbox.jQueryCropBoxNs.CropboxOptions
+import typings.jqueryDashCropbox.jQueryCropBox.Cropbox
+import typings.jqueryDashCropbox.jQueryCropBox.CropboxOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

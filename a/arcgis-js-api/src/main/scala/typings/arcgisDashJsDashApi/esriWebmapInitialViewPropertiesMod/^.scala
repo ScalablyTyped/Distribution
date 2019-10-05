@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebmapInitialViewPropertiesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InitialViewPropertiesConstructor
+import typings.arcgisDashJsDashApi.__esri.InitialViewPropertiesConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

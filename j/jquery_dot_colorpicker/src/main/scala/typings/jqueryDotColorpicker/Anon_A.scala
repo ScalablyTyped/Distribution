@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.Color
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

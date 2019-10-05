@@ -1,6 +1,6 @@
 package typings.emailDashAddresses
 
-import typings.emailDashAddresses.emailAddressesNs.ASTNode
+import typings.emailDashAddresses.emailAddresses.ASTNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

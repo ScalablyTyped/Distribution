@@ -12,9 +12,5 @@ trait RTCIceGathererEvent extends Event {
 
 @JSGlobal("RTCIceGathererEvent")
 @js.native
-class RTCIceGathererEventCls () extends RTCIceGathererEvent
-
-@JSGlobal("RTCIceGathererEvent")
-@js.native
 object RTCIceGathererEvent extends Instantiable0[RTCIceGathererEvent]
 

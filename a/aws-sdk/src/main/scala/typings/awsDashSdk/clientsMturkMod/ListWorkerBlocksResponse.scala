@@ -20,12 +20,12 @@ object ListWorkerBlocksResponse {
   @scala.inline
   def apply(
     NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined,
+    NumResults: Int | Double = null,
     WorkerBlocks: WorkerBlockList = null
   ): ListWorkerBlocksResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     if (WorkerBlocks != null) __obj.updateDynamic("WorkerBlocks")(WorkerBlocks)
     __obj.asInstanceOf[ListWorkerBlocksResponse]
   }

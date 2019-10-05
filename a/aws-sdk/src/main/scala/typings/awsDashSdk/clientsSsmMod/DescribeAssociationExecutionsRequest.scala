@@ -28,12 +28,12 @@ object DescribeAssociationExecutionsRequest {
   def apply(
     AssociationId: AssociationId,
     Filters: AssociationExecutionFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeAssociationExecutionsRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeAssociationExecutionsRequest]
   }

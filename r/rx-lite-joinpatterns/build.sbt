@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "rx-lite-joinpatterns"
-version := "4.0-dt-20180214Z-c5ebb6"
-scalaVersion := "2.12.9"
+version := "4.0-dt-20180214Z-e36031"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

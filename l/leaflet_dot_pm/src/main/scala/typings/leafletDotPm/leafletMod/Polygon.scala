@@ -1,6 +1,6 @@
 package typings.leafletDotPm.leafletMod
 
-import typings.leafletDotPm.leafletMod.PMNs.EditNs.Line
+import typings.leafletDotPm.leafletMod.PM.Edit.Line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

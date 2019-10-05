@@ -31,3 +31,10 @@ object ClassBody {
   }
 }
 
+@JSImport("babel-types", "classBody")
+@js.native
+object classBody extends js.Object {
+  def apply(): ClassBody = js.native
+  def apply(body: js.Array[ClassMethod | ClassProperty]): ClassBody = js.native
+}
+

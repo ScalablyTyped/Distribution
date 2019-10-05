@@ -1,0 +1,27 @@
+package typings.facebookDashInstantDashGames.FBInstant
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.ADS_FREQUENT_LOAD
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.ADS_NO_FILL
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.ADS_NOT_LOADED
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.ADS_TOO_MANY_INSTANCES
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.ANALYTICS_POST_EXCEPTION
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.CLIENT_REQUIRES_UPDATE
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.CLIENT_UNSUPPORTED_OPERATION
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.INVALID_OPERATION
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.INVALID_PARAM
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.LEADERBOARD_NOT_FOUND
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.LEADERBOARD_WRONG_CONTEXT
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.NETWORK_FAILURE
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.PENDING_REQUEST
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.RATE_LIMITED
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.SAME_CONTEXT
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.UNKNOWN
+  - typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.USER_INPUT
+*/
+trait ErrorCodeType extends js.Object
+

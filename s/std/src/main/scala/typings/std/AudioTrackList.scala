@@ -110,9 +110,5 @@ trait AudioTrackList
 
 @JSGlobal("AudioTrackList")
 @js.native
-class AudioTrackListCls () extends AudioTrackList
-
-@JSGlobal("AudioTrackList")
-@js.native
 object AudioTrackList extends Instantiable0[AudioTrackList]
 

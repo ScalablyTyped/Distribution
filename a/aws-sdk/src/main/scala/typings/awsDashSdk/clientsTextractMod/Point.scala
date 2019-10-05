@@ -17,10 +17,10 @@ trait Point extends js.Object {
 
 object Point {
   @scala.inline
-  def apply(X: js.UndefOr[Float] = js.undefined, Y: js.UndefOr[Float] = js.undefined): Point = {
+  def apply(X: Int | Double = null, Y: Int | Double = null): Point = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(X)) __obj.updateDynamic("X")(X)
-    if (!js.isUndefined(Y)) __obj.updateDynamic("Y")(Y)
+    if (X != null) __obj.updateDynamic("X")(X.asInstanceOf[js.Any])
+    if (Y != null) __obj.updateDynamic("Y")(Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

@@ -27,12 +27,12 @@ object GetResourcePoliciesRequest {
   @scala.inline
   def apply(
     resourceArns: ResourceArnList,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: String = null,
     principal: String = null
   ): GetResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal(resourceArns = resourceArns)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (principal != null) __obj.updateDynamic("principal")(principal)
     __obj.asInstanceOf[GetResourcePoliciesRequest]

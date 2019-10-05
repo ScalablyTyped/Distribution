@@ -1,7 +1,7 @@
 package typings.atJupyterlabApplication.libStatusMod
 
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js

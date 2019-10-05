@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3InventoryMod
 
-import typings.atPulumiAws.typesOutputMod.s3Ns.InventoryDestination
-import typings.atPulumiAws.typesOutputMod.s3Ns.InventoryFilter
-import typings.atPulumiAws.typesOutputMod.s3Ns.InventorySchedule
+import typings.atPulumiAws.typesOutputMod.s3.InventoryDestination
+import typings.atPulumiAws.typesOutputMod.s3.InventoryFilter
+import typings.atPulumiAws.typesOutputMod.s3.InventorySchedule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

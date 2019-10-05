@@ -16,9 +16,5 @@ trait ClientRectList extends /* index */ NumberDictionary[ClientRect] {
 
 @JSGlobal("ClientRectList")
 @js.native
-class ClientRectListCls () extends ClientRectList
-
-@JSGlobal("ClientRectList")
-@js.native
 object ClientRectList extends Instantiable0[ClientRectList]
 

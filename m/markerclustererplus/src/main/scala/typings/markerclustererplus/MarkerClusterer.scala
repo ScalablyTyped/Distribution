@@ -1,10 +1,10 @@
 package typings.markerclustererplus
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngBounds
-import typings.googlemaps.googleNs.mapsNs.Map
-import typings.googlemaps.googleNs.mapsNs.Marker
-import typings.googlemaps.googleNs.mapsNs.OverlayView
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngBounds
+import typings.googlemaps.google.maps.Map
+import typings.googlemaps.google.maps.Marker
+import typings.googlemaps.google.maps.OverlayView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,9 @@
 package typings.yui
 
-import typings.yui.YNs.IConfig
-import typings.yui.YUITestNs.IAssert
-import typings.yui.YUITestNs.YUITestStatic
+import org.scalablytyped.runtime.TopLevel
+import typings.yui.Y.IConfig
+import typings.yui.YUITest.IAssert
+import typings.yui.YUITest.YUITestStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,4 +95,8 @@ trait YUI extends js.Object {
     merge: Boolean
   ): js.Any = js.native
 }
+
+@JSGlobal("YUI")
+@js.native
+object YUI extends TopLevel[YUI]
 

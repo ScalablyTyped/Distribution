@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportLinearUnitMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LinearUnit
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LinearUnitProperties
+import typings.arcgisDashJsDashApi.__esri.LinearUnit
+import typings.arcgisDashJsDashApi.__esri.LinearUnitProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.winreg
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.winreg.WinregNs.Options
-import typings.winreg.WinregNs.Registry
+import typings.winreg.Winreg.Options
+import typings.winreg.Winreg.Registry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

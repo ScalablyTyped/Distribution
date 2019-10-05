@@ -45,9 +45,5 @@ trait ScreenOrientation extends EventTarget {
 
 @JSGlobal("ScreenOrientation")
 @js.native
-class ScreenOrientationCls () extends ScreenOrientation
-
-@JSGlobal("ScreenOrientation")
-@js.native
 object ScreenOrientation extends Instantiable0[ScreenOrientation]
 

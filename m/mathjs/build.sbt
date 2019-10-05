@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mathjs"
-version := "6.0-dt-20190826Z-1a1f7a"
-scalaVersion := "2.12.9"
+version := "6.0-dt-20190826Z-373dc5"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "decimal_dot_js" % "10.2.0-0f94d5",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "decimal_dot_js" % "10.2.0-ed5603",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

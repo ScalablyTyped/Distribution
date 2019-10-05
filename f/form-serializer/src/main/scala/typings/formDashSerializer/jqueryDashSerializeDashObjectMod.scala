@@ -1,6 +1,6 @@
 package typings.formDashSerializer
 
-import typings.formDashSerializer.FormSerializerNs.FormSerializerPatterns
+import typings.formDashSerializer.FormSerializer.FormSerializerPatterns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

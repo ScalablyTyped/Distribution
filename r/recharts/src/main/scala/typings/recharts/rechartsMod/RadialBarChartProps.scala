@@ -35,12 +35,12 @@ object RadialBarChartProps {
     layout: radial = null,
     margin: Partial[Margin] = null,
     maxBarSize: Int | Double = null,
-    onClick: RechartsFunction = null,
-    onMouseDown: RechartsFunction = null,
-    onMouseEnter: RechartsFunction = null,
-    onMouseLeave: RechartsFunction = null,
-    onMouseMove: RechartsFunction = null,
-    onMouseUp: RechartsFunction = null,
+    onClick: /* repeated */ js.Any => Unit = null,
+    onMouseDown: /* repeated */ js.Any => Unit = null,
+    onMouseEnter: /* repeated */ js.Any => Unit = null,
+    onMouseLeave: /* repeated */ js.Any => Unit = null,
+    onMouseMove: /* repeated */ js.Any => Unit = null,
+    onMouseUp: /* repeated */ js.Any => Unit = null,
     outerRadius: String | Double = null,
     reverseStackOrder: js.UndefOr[Boolean] = js.undefined,
     stackOffset: StackOffsetType = null,
@@ -67,12 +67,12 @@ object RadialBarChartProps {
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (maxBarSize != null) __obj.updateDynamic("maxBarSize")(maxBarSize.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
     if (!js.isUndefined(reverseStackOrder)) __obj.updateDynamic("reverseStackOrder")(reverseStackOrder)
     if (stackOffset != null) __obj.updateDynamic("stackOffset")(stackOffset)

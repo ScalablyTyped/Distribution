@@ -1,8 +1,8 @@
 package typings.atPulumiAws.albGetLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.albNs.GetLoadBalancerAccessLogs
-import typings.atPulumiAws.typesOutputMod.albNs.GetLoadBalancerSubnetMapping
+import typings.atPulumiAws.typesOutputMod.alb.GetLoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.alb.GetLoadBalancerSubnetMapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

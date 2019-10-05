@@ -29,7 +29,7 @@ object RemoveTargetsRequest {
     Ids: TargetIdList,
     Rule: RuleName,
     EventBusName: EventBusName = null,
-    Force: js.UndefOr[Boolean] = js.undefined
+    Force: js.UndefOr[scala.Boolean] = js.undefined
   ): RemoveTargetsRequest = {
     val __obj = js.Dynamic.literal(Ids = Ids, Rule = Rule)
     if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)

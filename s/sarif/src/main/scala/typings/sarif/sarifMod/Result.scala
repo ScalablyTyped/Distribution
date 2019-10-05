@@ -1,9 +1,9 @@
 package typings.sarif.sarifMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sarif.sarifMod.ResultNs.baselineState
-import typings.sarif.sarifMod.ResultNs.kind
-import typings.sarif.sarifMod.ResultNs.level
+import typings.sarif.sarifMod.Result.baselineState
+import typings.sarif.sarifMod.Result.kind
+import typings.sarif.sarifMod.Result.level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Result extends js.Object {
   /**
     * The state of a result relative to a baseline of a previous run.
     */
-  var baselineState: js.UndefOr[typings.sarif.sarifMod.ResultNs.baselineState] = js.undefined
+  var baselineState: js.UndefOr[baselineState] = js.undefined
   /**
     * An array of 'codeFlow' objects relevant to the result.
     */
@@ -58,11 +58,11 @@ trait Result extends js.Object {
   /**
     * A value that categorizes results by evaluation state.
     */
-  var kind: js.UndefOr[typings.sarif.sarifMod.ResultNs.kind] = js.undefined
+  var kind: js.UndefOr[kind] = js.undefined
   /**
     * A value specifying the severity level of the result.
     */
-  var level: js.UndefOr[typings.sarif.sarifMod.ResultNs.level] = js.undefined
+  var level: js.UndefOr[level] = js.undefined
   /**
     * The set of locations where the result was detected. Specify only one location unless the problem indicated by
     * the result can only be corrected by making a change at every specified location.
@@ -136,71 +136,34 @@ trait Result extends js.Object {
   var workItemUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 
-object Result {
-  @scala.inline
-  def apply(
-    message: Message,
-    analysisTarget: ArtifactLocation = null,
-    attachments: js.Array[Attachment] = null,
-    baselineState: baselineState = null,
-    codeFlows: js.Array[CodeFlow] = null,
-    correlationGuid: String = null,
-    fingerprints: StringDictionary[String] = null,
-    fixes: js.Array[Fix] = null,
-    graphTraversals: js.Array[GraphTraversal] = null,
-    graphs: js.Array[Graph] = null,
-    guid: String = null,
-    hostedViewerUri: String = null,
-    kind: kind = null,
-    level: level = null,
-    locations: js.Array[Location] = null,
-    occurrenceCount: Int | Double = null,
-    partialFingerprints: StringDictionary[String] = null,
-    properties: PropertyBag = null,
-    provenance: ResultProvenance = null,
-    rank: Int | Double = null,
-    relatedLocations: js.Array[Location] = null,
-    rule: ReportingDescriptorReference = null,
-    ruleId: String = null,
-    ruleIndex: Int | Double = null,
-    stacks: js.Array[Stack] = null,
-    suppressions: js.Array[Suppression] = null,
-    taxa: js.Array[ReportingDescriptorReference] = null,
-    webRequest: WebRequest = null,
-    webResponse: WebResponse = null,
-    workItemUris: js.Array[String] = null
-  ): Result = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (analysisTarget != null) __obj.updateDynamic("analysisTarget")(analysisTarget)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (baselineState != null) __obj.updateDynamic("baselineState")(baselineState)
-    if (codeFlows != null) __obj.updateDynamic("codeFlows")(codeFlows)
-    if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid)
-    if (fingerprints != null) __obj.updateDynamic("fingerprints")(fingerprints)
-    if (fixes != null) __obj.updateDynamic("fixes")(fixes)
-    if (graphTraversals != null) __obj.updateDynamic("graphTraversals")(graphTraversals)
-    if (graphs != null) __obj.updateDynamic("graphs")(graphs)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (hostedViewerUri != null) __obj.updateDynamic("hostedViewerUri")(hostedViewerUri)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (occurrenceCount != null) __obj.updateDynamic("occurrenceCount")(occurrenceCount.asInstanceOf[js.Any])
-    if (partialFingerprints != null) __obj.updateDynamic("partialFingerprints")(partialFingerprints)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (provenance != null) __obj.updateDynamic("provenance")(provenance)
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (relatedLocations != null) __obj.updateDynamic("relatedLocations")(relatedLocations)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
-    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
-    if (stacks != null) __obj.updateDynamic("stacks")(stacks)
-    if (suppressions != null) __obj.updateDynamic("suppressions")(suppressions)
-    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
-    if (webRequest != null) __obj.updateDynamic("webRequest")(webRequest)
-    if (webResponse != null) __obj.updateDynamic("webResponse")(webResponse)
-    if (workItemUris != null) __obj.updateDynamic("workItemUris")(workItemUris)
-    __obj.asInstanceOf[Result]
-  }
+@JSImport("sarif", "Result")
+@js.native
+object Result extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.`new`
+    - typings.sarif.sarifStrings.unchanged
+    - typings.sarif.sarifStrings.updated
+    - typings.sarif.sarifStrings.absent
+  */
+  trait baselineState extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.notApplicable
+    - typings.sarif.sarifStrings.pass
+    - typings.sarif.sarifStrings.fail
+    - typings.sarif.sarifStrings.review
+    - typings.sarif.sarifStrings.open
+    - typings.sarif.sarifStrings.informational
+  */
+  trait kind extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.none
+    - typings.sarif.sarifStrings.note
+    - typings.sarif.sarifStrings.warning
+    - typings.sarif.sarifStrings.error
+  */
+  trait level extends js.Object
+  
 }
 

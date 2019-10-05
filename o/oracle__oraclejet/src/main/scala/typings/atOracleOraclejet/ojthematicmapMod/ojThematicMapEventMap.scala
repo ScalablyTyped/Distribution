@@ -23,7 +23,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.zoom
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojthematicmapMod.ojThematicMapNs.RendererContext
+import typings.atOracleOraclejet.ojthematicmapMod.ojThematicMap.RendererContext
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -90,7 +90,7 @@ trait ojThematicMapEventMap[K1, K2, K3, D1, D2, D3] extends dvtBaseComponentEven
     ]) | Null
   ]
   var styleDefaultsChanged: JetElementCustomEvent[Anon_AreaSvgStyle]
-  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K3, D3, K2, D2, D1]]
+  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultD1[D3, K1, K2, D1, K3, D2]]
   var tooltipDisplayChanged: JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc]
   var touchResponseChanged: JetElementCustomEvent[touchStart | auto]
   var zoomingChanged: JetElementCustomEvent[auto | none]
@@ -226,7 +226,7 @@ object ojThematicMapEventMap {
     suspend: Event,
     timeupdate: Event,
     toggle: Event,
-    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K3, D3, K2, D2, D1]],
+    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultD1[D3, K1, K2, D1, K3, D2]],
     tooltipDisplayChanged: JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc],
     touchResponseChanged: JetElementCustomEvent[touchStart | auto],
     touchcancel: TouchEvent,

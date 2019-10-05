@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object storybookDashReadmeMod {
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
   import typings.storybookDashReadme.Anon_Kind
 
   type DecoratorPattern = js.Function2[/* story */ RenderFunction, /* context */ Anon_Kind, Renderable | Null]

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.organizationsOrganizationMod
 
-import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationAccount
-import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationNonMasterAccount
-import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationRoot
+import typings.atPulumiAws.typesOutputMod.organizations.OrganizationAccount
+import typings.atPulumiAws.typesOutputMod.organizations.OrganizationNonMasterAccount
+import typings.atPulumiAws.typesOutputMod.organizations.OrganizationRoot
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

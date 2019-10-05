@@ -1,0 +1,20 @@
+package typings.semanticDashUiDashSidebar.SemanticUI.Sidebar.DefaultTransitionSettings
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _Impl extends js.Object {
+  var computer: ComputerSettings
+  var mobile: MobileSettings
+}
+
+object _Impl {
+  @scala.inline
+  def apply(computer: ComputerSettings, mobile: MobileSettings): _Impl = {
+    val __obj = js.Dynamic.literal(computer = computer, mobile = mobile)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

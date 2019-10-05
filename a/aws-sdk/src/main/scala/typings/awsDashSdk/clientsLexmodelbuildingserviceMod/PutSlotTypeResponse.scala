@@ -44,7 +44,7 @@ object PutSlotTypeResponse {
   @scala.inline
   def apply(
     checksum: String = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
+    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     createdDate: Timestamp = null,
     description: Description = null,
     enumerationValues: EnumerationValues = null,

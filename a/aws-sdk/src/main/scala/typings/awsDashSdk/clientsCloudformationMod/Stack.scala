@@ -105,9 +105,9 @@ object Stack {
     ChangeSetId: ChangeSetId = null,
     DeletionTime: DeletionTime = null,
     Description: Description = null,
-    DisableRollback: js.UndefOr[DisableRollback] = js.undefined,
+    DisableRollback: js.UndefOr[Boolean] = js.undefined,
     DriftInformation: StackDriftInformation = null,
-    EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined,
+    EnableTerminationProtection: js.UndefOr[Boolean] = js.undefined,
     LastUpdatedTime: LastUpdatedTime = null,
     NotificationARNs: NotificationARNs = null,
     Outputs: Outputs = null,
@@ -119,7 +119,7 @@ object Stack {
     StackId: StackId = null,
     StackStatusReason: StackStatusReason = null,
     Tags: Tags = null,
-    TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
+    TimeoutInMinutes: Int | Double = null
   ): Stack = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, StackName = StackName, StackStatus = StackStatus.asInstanceOf[js.Any])
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities)
@@ -140,7 +140,7 @@ object Stack {
     if (StackId != null) __obj.updateDynamic("StackId")(StackId)
     if (StackStatusReason != null) __obj.updateDynamic("StackStatusReason")(StackStatusReason)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes)
+    if (TimeoutInMinutes != null) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stack]
   }
 }

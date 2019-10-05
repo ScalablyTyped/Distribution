@@ -67,9 +67,9 @@ trait Step extends OverridableProps {
 object Step {
   @scala.inline
   def apply(
-    content: ReactNode | String,
     target: HTMLElement | String,
     beaconComponent: ReactNode = null,
+    content: ReactNode | String = null,
     disableBeacon: js.UndefOr[Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
     disableOverlay: js.UndefOr[Boolean] = js.undefined,
@@ -91,8 +91,9 @@ object Step {
     title: ReactNode | String = null,
     tooltipComponent: ReactNode = null
   ): Step = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(disableBeacon)) __obj.updateDynamic("disableBeacon")(disableBeacon)
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
     if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay)

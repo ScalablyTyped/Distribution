@@ -30,7 +30,7 @@ trait CreateVpcPeeringConnectionRequest extends js.Object {
 object CreateVpcPeeringConnectionRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PeerOwnerId: String = null,
     PeerRegion: String = null,
     PeerVpcId: String = null,

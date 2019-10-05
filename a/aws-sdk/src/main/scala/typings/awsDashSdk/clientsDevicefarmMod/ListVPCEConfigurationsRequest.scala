@@ -17,9 +17,9 @@ trait ListVPCEConfigurationsRequest extends js.Object {
 
 object ListVPCEConfigurationsRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[Integer] = js.undefined, nextToken: PaginationToken = null): ListVPCEConfigurationsRequest = {
+  def apply(maxResults: Int | scala.Double = null, nextToken: PaginationToken = null): ListVPCEConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListVPCEConfigurationsRequest]
   }

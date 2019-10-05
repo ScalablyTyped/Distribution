@@ -3,8 +3,8 @@ package typings.draftDashConvert.draftDashConvertMod
 import typings.draftDashConvert.Anon_Data
 import typings.draftDashConvert.Anon_Entity
 import typings.draftDashConvert.draftDashConvertNumbers.`false`
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftInlineStyleType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftBlockType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftInlineStyleType
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

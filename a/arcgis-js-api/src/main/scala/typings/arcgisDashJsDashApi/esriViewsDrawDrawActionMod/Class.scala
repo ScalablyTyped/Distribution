@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawDrawActionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DrawAction
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DrawActionProperties
+import typings.arcgisDashJsDashApi.__esri.DrawAction
+import typings.arcgisDashJsDashApi.__esri.DrawActionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,10 +19,10 @@ class ReplicationController protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationController) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.ReplicationController) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ReplicationController,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.ReplicationController,
     opts: CustomResourceOptions
   ) = this()
 }

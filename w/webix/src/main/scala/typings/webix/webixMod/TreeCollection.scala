@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
-import typings.webix.webixMod.uiNs.baseview
+import org.scalablytyped.runtime.TopLevel
+import typings.webix.webixMod.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,7 +127,5 @@ trait TreeCollection extends js.Object {
 
 @JSImport("webix", "TreeCollection")
 @js.native
-class TreeCollectionCls () extends TreeCollection {
-  def this(config: TreeCollectionConfig) = this()
-}
+object TreeCollection extends TopLevel[TreeCollectionFactory]
 

@@ -8,9 +8,7 @@ trait Anon_LabelLineStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.emphasis.label
     */
-  var label: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
-  ] = js.undefined
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.emphasis.lineStyle
     */
@@ -20,7 +18,7 @@ trait Anon_LabelLineStyle extends js.Object {
 object Anon_LabelLineStyle {
   @scala.inline
   def apply(
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null
   ): Anon_LabelLineStyle = {
     val __obj = js.Dynamic.literal()

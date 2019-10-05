@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashPlaceDashSearch
 
-import typings.amapDashJsDashApi.AMapNs.LocationValue
+import typings.amapDashJsDashApi.AMap.LocationValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

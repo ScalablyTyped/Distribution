@@ -13,9 +13,5 @@ trait SpeechRecognitionError extends Event {
 
 @JSGlobal("SpeechRecognitionError")
 @js.native
-class SpeechRecognitionErrorCls () extends SpeechRecognitionError
-
-@JSGlobal("SpeechRecognitionError")
-@js.native
 object SpeechRecognitionError extends Instantiable0[SpeechRecognitionError]
 

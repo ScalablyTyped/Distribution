@@ -1,5 +1,6 @@
 package typings.history.historyMod
 
+import typings.history.historyNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,5 +25,25 @@ trait History[HistoryLocationState] extends js.Object {
   def replace(location: LocationDescriptorObject[HistoryLocationState]): Unit = js.native
   def replace(path: Path): Unit = js.native
   def replace(path: Path, state: HistoryLocationState): Unit = js.native
+}
+
+@JSImport("history", "History")
+@js.native
+object History extends js.Object {
+  type Hash = String
+  type Href = String
+  type LocationDescriptor[S] = typings.history.historyMod.History.Path | LocationDescriptorObject[S]
+  type LocationKey = String
+  type LocationListener[S] = js.Function2[/* location */ Location[S], /* action */ Action, Unit]
+  type LocationState = js.Any
+  type Path = String
+  type Pathname = String
+  type Search = String
+  type TransitionHook[S] = js.Function2[
+    /* location */ Location[S], 
+    /* callback */ js.Function1[/* result */ js.Any, Unit], 
+    js.Any
+  ]
+  type TransitionPromptHook[S] = js.Function2[/* location */ Location[S], /* action */ Action, String | `false` | Unit]
 }
 

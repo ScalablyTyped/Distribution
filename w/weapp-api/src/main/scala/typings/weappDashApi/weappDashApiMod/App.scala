@@ -1,5 +1,6 @@
 package typings.weappDashApi.weappDashApiMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,7 @@ trait App extends js.Object {
   def getCurrentPage(): Page
 }
 
-object App {
-  @scala.inline
-  def apply(getCurrentPage: () => Page): App = {
-    val __obj = js.Dynamic.literal(getCurrentPage = js.Any.fromFunction0(getCurrentPage))
-  
-    __obj.asInstanceOf[App]
-  }
-}
+@JSImport("weapp-api", "App")
+@js.native
+object App extends TopLevel[AppConstructor]
 

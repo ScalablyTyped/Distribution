@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fast-memory-cache"
-version := "2.0-dt-20190924Z-ade09c"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20190924Z-d754ab"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

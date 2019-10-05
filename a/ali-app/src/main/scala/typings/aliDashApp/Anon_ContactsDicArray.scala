@@ -1,6 +1,6 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.ContactsDic
+import typings.aliDashApp.my.ContactsDic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

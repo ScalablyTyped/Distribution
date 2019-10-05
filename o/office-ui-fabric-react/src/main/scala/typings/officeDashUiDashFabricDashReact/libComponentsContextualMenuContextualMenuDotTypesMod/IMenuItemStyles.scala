@@ -40,30 +40,29 @@ trait IMenuItemStyles extends IButtonStyles {
 object IMenuItemStyles {
   @scala.inline
   def apply(
-    anchorLink: IStyle,
-    checkmarkIcon: IStyle,
-    divider: IStyle,
-    iconColor: IStyle,
-    item: IStyle,
-    linkContent: IStyle,
-    subMenuIcon: IStyle,
+    anchorLink: IStyle = null,
+    checkmarkIcon: IStyle = null,
     description: IStyle = null,
     descriptionChecked: IStyle = null,
     descriptionDisabled: IStyle = null,
     descriptionHovered: IStyle = null,
     descriptionPressed: IStyle = null,
+    divider: IStyle = null,
     flexContainer: IStyle = null,
     icon: IStyle = null,
     iconChecked: IStyle = null,
+    iconColor: IStyle = null,
     iconDisabled: IStyle = null,
     iconExpanded: IStyle = null,
     iconExpandedHovered: IStyle = null,
     iconHovered: IStyle = null,
     iconPressed: IStyle = null,
+    item: IStyle = null,
     label: IStyle = null,
     labelChecked: IStyle = null,
     labelDisabled: IStyle = null,
     labelHovered: IStyle = null,
+    linkContent: IStyle = null,
     menuIcon: IStyle = null,
     menuIconChecked: IStyle = null,
     menuIconDisabled: IStyle = null,
@@ -100,26 +99,33 @@ object IMenuItemStyles {
     splitButtonMenuButtonExpanded: IStyle = null,
     splitButtonMenuIcon: IStyle = null,
     splitButtonMenuIconDisabled: IStyle = null,
+    subMenuIcon: IStyle = null,
     textContainer: IStyle = null
   ): IMenuItemStyles = {
-    val __obj = js.Dynamic.literal(anchorLink = anchorLink.asInstanceOf[js.Any], checkmarkIcon = checkmarkIcon.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], iconColor = iconColor.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], linkContent = linkContent.asInstanceOf[js.Any], subMenuIcon = subMenuIcon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (anchorLink != null) __obj.updateDynamic("anchorLink")(anchorLink.asInstanceOf[js.Any])
+    if (checkmarkIcon != null) __obj.updateDynamic("checkmarkIcon")(checkmarkIcon.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (descriptionChecked != null) __obj.updateDynamic("descriptionChecked")(descriptionChecked.asInstanceOf[js.Any])
     if (descriptionDisabled != null) __obj.updateDynamic("descriptionDisabled")(descriptionDisabled.asInstanceOf[js.Any])
     if (descriptionHovered != null) __obj.updateDynamic("descriptionHovered")(descriptionHovered.asInstanceOf[js.Any])
     if (descriptionPressed != null) __obj.updateDynamic("descriptionPressed")(descriptionPressed.asInstanceOf[js.Any])
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
     if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconChecked != null) __obj.updateDynamic("iconChecked")(iconChecked.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (iconDisabled != null) __obj.updateDynamic("iconDisabled")(iconDisabled.asInstanceOf[js.Any])
     if (iconExpanded != null) __obj.updateDynamic("iconExpanded")(iconExpanded.asInstanceOf[js.Any])
     if (iconExpandedHovered != null) __obj.updateDynamic("iconExpandedHovered")(iconExpandedHovered.asInstanceOf[js.Any])
     if (iconHovered != null) __obj.updateDynamic("iconHovered")(iconHovered.asInstanceOf[js.Any])
     if (iconPressed != null) __obj.updateDynamic("iconPressed")(iconPressed.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelChecked != null) __obj.updateDynamic("labelChecked")(labelChecked.asInstanceOf[js.Any])
     if (labelDisabled != null) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
     if (labelHovered != null) __obj.updateDynamic("labelHovered")(labelHovered.asInstanceOf[js.Any])
+    if (linkContent != null) __obj.updateDynamic("linkContent")(linkContent.asInstanceOf[js.Any])
     if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon.asInstanceOf[js.Any])
     if (menuIconChecked != null) __obj.updateDynamic("menuIconChecked")(menuIconChecked.asInstanceOf[js.Any])
     if (menuIconDisabled != null) __obj.updateDynamic("menuIconDisabled")(menuIconDisabled.asInstanceOf[js.Any])
@@ -156,6 +162,7 @@ object IMenuItemStyles {
     if (splitButtonMenuButtonExpanded != null) __obj.updateDynamic("splitButtonMenuButtonExpanded")(splitButtonMenuButtonExpanded.asInstanceOf[js.Any])
     if (splitButtonMenuIcon != null) __obj.updateDynamic("splitButtonMenuIcon")(splitButtonMenuIcon.asInstanceOf[js.Any])
     if (splitButtonMenuIconDisabled != null) __obj.updateDynamic("splitButtonMenuIconDisabled")(splitButtonMenuIconDisabled.asInstanceOf[js.Any])
+    if (subMenuIcon != null) __obj.updateDynamic("subMenuIcon")(subMenuIcon.asInstanceOf[js.Any])
     if (textContainer != null) __obj.updateDynamic("textContainer")(textContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMenuItemStyles]
   }

@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.IconPath
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.ThemeIcons
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
+import typings.firefoxDashWebextDashBrowser.browser._manifest.IconPath
+import typings.firefoxDashWebextDashBrowser.browser._manifest.ThemeIcons
+import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestBrowserActionDefaultArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

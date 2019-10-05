@@ -50,36 +50,6 @@ trait Range extends AbstractRange {
 
 @JSGlobal("Range")
 @js.native
-class RangeCls () extends Range {
-  /**
-    * Returns true if range is collapsed, and false otherwise.
-    */
-  /* CompleteClass */
-  override val collapsed: scala.Boolean = js.native
-  /**
-    * Returns range's end node.
-    */
-  /* CompleteClass */
-  override val endContainer: Node = js.native
-  /**
-    * Returns range's end offset.
-    */
-  /* CompleteClass */
-  override val endOffset: Double = js.native
-  /**
-    * Returns range's start node.
-    */
-  /* CompleteClass */
-  override val startContainer: Node = js.native
-  /**
-    * Returns range's start offset.
-    */
-  /* CompleteClass */
-  override val startOffset: Double = js.native
-}
-
-@JSGlobal("Range")
-@js.native
 object Range extends Instantiable0[Range] {
   val END_TO_END: Double = js.native
   val END_TO_START: Double = js.native

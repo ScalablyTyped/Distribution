@@ -1,7 +1,7 @@
 package typings.crossfilter
 
 import org.scalablytyped.runtime.TopLevel
-import typings.crossfilter.CrossFilterNs.CrossFilterStatic
+import typings.crossfilter.CrossFilter.CrossFilterStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

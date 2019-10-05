@@ -1,7 +1,7 @@
 package typings.cesium
 
 import typings.cesium.cesiumMod.Command
-import typings.cesium.cesiumMod.ProviderViewModelNs.CreationFunction
+import typings.cesium.cesiumMod.ProviderViewModel.CreationFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -86,9 +86,5 @@ trait ServiceWorker
 
 @JSGlobal("ServiceWorker")
 @js.native
-class ServiceWorkerCls () extends ServiceWorker
-
-@JSGlobal("ServiceWorker")
-@js.native
 object ServiceWorker extends Instantiable0[ServiceWorker]
 

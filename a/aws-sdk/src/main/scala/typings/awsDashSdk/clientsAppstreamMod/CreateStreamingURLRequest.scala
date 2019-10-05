@@ -39,12 +39,12 @@ object CreateStreamingURLRequest {
     UserId: StreamingUrlUserId,
     ApplicationId: String = null,
     SessionContext: String = null,
-    Validity: js.UndefOr[Long] = js.undefined
+    Validity: Int | Double = null
   ): CreateStreamingURLRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName, StackName = StackName, UserId = UserId)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
     if (SessionContext != null) __obj.updateDynamic("SessionContext")(SessionContext)
-    if (!js.isUndefined(Validity)) __obj.updateDynamic("Validity")(Validity)
+    if (Validity != null) __obj.updateDynamic("Validity")(Validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamingURLRequest]
   }
 }

@@ -1,6 +1,6 @@
 package typings.azureDashMobileDashServicesDashClient
 
-import typings.azureDashMobileDashServicesDashClient.MicrosoftNs.WindowsAzureNs.WindowsAzureStatic
+import typings.azureDashMobileDashServicesDashClient.Microsoft.WindowsAzure.WindowsAzureStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

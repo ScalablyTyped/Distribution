@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionPropertyAssignment")
 @js.native
 class FunctionPropertyAssignment protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionPropertyAssignment {
+  extends typings.typescriptDashServices.TypeScript.FunctionPropertyAssignment {
   def this(
-    propertyName: typings.typescriptDashServices.TypeScriptNs.Identifier,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignature,
-    block: typings.typescriptDashServices.TypeScriptNs.Block
+    propertyName: typings.typescriptDashServices.TypeScript.Identifier,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignature,
+    block: typings.typescriptDashServices.TypeScript.Block
   ) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.requirejs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,4 +66,8 @@ trait Require extends js.Object {
   	**/
   def undef(module: String): Unit = js.native
 }
+
+@JSGlobal("require")
+@js.native
+object require extends TopLevel[Require]
 

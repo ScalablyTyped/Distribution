@@ -21,13 +21,9 @@ trait ListBuildsInput extends js.Object {
 
 object ListBuildsInput {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
-    NextToken: NonEmptyString = null,
-    Status: BuildStatus = null
-  ): ListBuildsInput = {
+  def apply(Limit: Int | scala.Double = null, NextToken: NonEmptyString = null, Status: BuildStatus = null): ListBuildsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBuildsInput]

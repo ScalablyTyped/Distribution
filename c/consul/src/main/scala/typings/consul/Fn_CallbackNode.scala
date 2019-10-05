@@ -1,6 +1,6 @@
 package typings.consul
 
-import typings.consul.consulMod.AgentNs.ForceLeaveOptions
+import typings.consul.consulMod.Agent.ForceLeaveOptions
 import typings.consul.consulMod.Callback
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js

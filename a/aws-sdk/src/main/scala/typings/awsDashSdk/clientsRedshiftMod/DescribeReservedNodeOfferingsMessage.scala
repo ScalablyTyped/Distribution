@@ -23,12 +23,12 @@ object DescribeReservedNodeOfferingsMessage {
   @scala.inline
   def apply(
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     ReservedNodeOfferingId: String = null
   ): DescribeReservedNodeOfferingsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReservedNodeOfferingId != null) __obj.updateDynamic("ReservedNodeOfferingId")(ReservedNodeOfferingId)
     __obj.asInstanceOf[DescribeReservedNodeOfferingsMessage]
   }

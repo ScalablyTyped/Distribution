@@ -1,10 +1,10 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.SocketCloseParams
-import typings.wegameDashApi.wxNs.typesNs.SocketErrorCallback
-import typings.wegameDashApi.wxNs.typesNs.SocketMessageCallback
-import typings.wegameDashApi.wxNs.typesNs.SocketOpenCallback
-import typings.wegameDashApi.wxNs.typesNs.SocketSendParams
+import typings.wegameDashApi.wx.types.SocketCloseParams
+import typings.wegameDashApi.wx.types.SocketErrorCallback
+import typings.wegameDashApi.wx.types.SocketMessageCallback
+import typings.wegameDashApi.wx.types.SocketOpenCallback
+import typings.wegameDashApi.wx.types.SocketSendParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

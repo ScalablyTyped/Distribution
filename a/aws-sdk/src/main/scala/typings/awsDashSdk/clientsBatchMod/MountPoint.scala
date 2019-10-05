@@ -23,7 +23,7 @@ object MountPoint {
   @scala.inline
   def apply(
     containerPath: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     sourceVolume: String = null
   ): MountPoint = {
     val __obj = js.Dynamic.literal()

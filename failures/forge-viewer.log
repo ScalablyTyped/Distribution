@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:88 Failure, [forge-viewer => Couldn't resolve THREE] [id => forge-viewer, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [forge-viewer => Couldn't resolve THREE] [id => forge-viewer, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [forge-viewer => Couldn't resolve THREE] [id => forge-viewer, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [forge-viewer => Couldn't resolve THREE] [id => forge-viewer, phase => publish] 

@@ -54,11 +54,11 @@ object DashIsoGroupSettings {
     Destination: __stringPatternS3 = null,
     DestinationSettings: DestinationSettings = null,
     Encryption: DashIsoEncryptionSettings = null,
-    FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    FragmentLength: Int | Double = null,
     HbbtvCompliance: DashIsoHbbtvCompliance = null,
-    MinBufferTime: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
+    MinBufferTime: Int | Double = null,
     SegmentControl: DashIsoSegmentControl = null,
-    SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    SegmentLength: Int | Double = null,
     WriteSegmentTimelineInRepresentation: DashIsoWriteSegmentTimelineInRepresentation = null
   ): DashIsoGroupSettings = {
     val __obj = js.Dynamic.literal()
@@ -66,11 +66,11 @@ object DashIsoGroupSettings {
     if (Destination != null) __obj.updateDynamic("Destination")(Destination)
     if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength)
+    if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
     if (HbbtvCompliance != null) __obj.updateDynamic("HbbtvCompliance")(HbbtvCompliance.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBufferTime)) __obj.updateDynamic("MinBufferTime")(MinBufferTime)
+    if (MinBufferTime != null) __obj.updateDynamic("MinBufferTime")(MinBufferTime.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength)
+    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
     if (WriteSegmentTimelineInRepresentation != null) __obj.updateDynamic("WriteSegmentTimelineInRepresentation")(WriteSegmentTimelineInRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashIsoGroupSettings]
   }

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dlmLifecyclePolicyMod
 
-import typings.atPulumiAws.typesOutputMod.dlmNs.LifecyclePolicyPolicyDetails
+import typings.atPulumiAws.typesOutputMod.dlm.LifecyclePolicyPolicyDetails
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

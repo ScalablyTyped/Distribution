@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/startOfYesterday", JSImport.Namespace)
 @js.native
 object startOfYesterdayMod extends js.Object {
-  def default(): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(): Date = js.native
+  }
+  
 }
 

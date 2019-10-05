@@ -50,24 +50,24 @@ trait Cluster extends js.Object {
 object Cluster {
   @scala.inline
   def apply(
-    activeServicesCount: js.UndefOr[Integer] = js.undefined,
+    activeServicesCount: Int | scala.Double = null,
     clusterArn: String = null,
     clusterName: String = null,
-    pendingTasksCount: js.UndefOr[Integer] = js.undefined,
-    registeredContainerInstancesCount: js.UndefOr[Integer] = js.undefined,
-    runningTasksCount: js.UndefOr[Integer] = js.undefined,
+    pendingTasksCount: Int | scala.Double = null,
+    registeredContainerInstancesCount: Int | scala.Double = null,
+    runningTasksCount: Int | scala.Double = null,
     settings: ClusterSettings = null,
     statistics: Statistics = null,
     status: String = null,
     tags: Tags = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeServicesCount)) __obj.updateDynamic("activeServicesCount")(activeServicesCount)
+    if (activeServicesCount != null) __obj.updateDynamic("activeServicesCount")(activeServicesCount.asInstanceOf[js.Any])
     if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn)
     if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
-    if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount)
-    if (!js.isUndefined(registeredContainerInstancesCount)) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount)
-    if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount)
+    if (pendingTasksCount != null) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.asInstanceOf[js.Any])
+    if (registeredContainerInstancesCount != null) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount.asInstanceOf[js.Any])
+    if (runningTasksCount != null) __obj.updateDynamic("runningTasksCount")(runningTasksCount.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (status != null) __obj.updateDynamic("status")(status)

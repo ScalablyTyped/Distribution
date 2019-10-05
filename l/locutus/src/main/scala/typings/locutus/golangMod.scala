@@ -7,21 +7,36 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/golang", JSImport.Namespace)
 @js.native
 object golangMod extends js.Object {
-  @JSName("strings")
   @js.native
-  object stringsNs extends js.Object {
-    def Contains(): js.Any = js.native
-    def Contains(s: js.Any): js.Any = js.native
-    def Contains(s: js.Any, substr: js.Any): js.Any = js.native
-    def Count(): js.Any = js.native
-    def Count(s: js.Any): js.Any = js.native
-    def Count(s: js.Any, sep: js.Any): js.Any = js.native
-    def Index(): js.Any = js.native
-    def Index(s: js.Any): js.Any = js.native
-    def Index(s: js.Any, sep: js.Any): js.Any = js.native
-    def LastIndex(): js.Any = js.native
-    def LastIndex(s: js.Any): js.Any = js.native
-    def LastIndex(s: js.Any, sep: js.Any): js.Any = js.native
+  object strings extends js.Object {
+    @js.native
+    object Contains extends js.Object {
+      def apply(): js.Any = js.native
+      def apply(s: js.Any): js.Any = js.native
+      def apply(s: js.Any, substr: js.Any): js.Any = js.native
+    }
+    
+    @js.native
+    object Count extends js.Object {
+      def apply(): js.Any = js.native
+      def apply(s: js.Any): js.Any = js.native
+      def apply(s: js.Any, sep: js.Any): js.Any = js.native
+    }
+    
+    @js.native
+    object Index extends js.Object {
+      def apply(): js.Any = js.native
+      def apply(s: js.Any): js.Any = js.native
+      def apply(s: js.Any, sep: js.Any): js.Any = js.native
+    }
+    
+    @js.native
+    object LastIndex extends js.Object {
+      def apply(): js.Any = js.native
+      def apply(s: js.Any): js.Any = js.native
+      def apply(s: js.Any, sep: js.Any): js.Any = js.native
+    }
+    
   }
   
 }

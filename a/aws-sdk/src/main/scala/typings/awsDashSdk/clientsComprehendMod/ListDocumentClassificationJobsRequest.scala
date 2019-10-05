@@ -23,12 +23,12 @@ object ListDocumentClassificationJobsRequest {
   @scala.inline
   def apply(
     Filter: DocumentClassificationJobFilter = null,
-    MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): ListDocumentClassificationJobsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDocumentClassificationJobsRequest]
   }

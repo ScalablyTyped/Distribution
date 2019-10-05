@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,7 @@ trait clipbuffer extends js.Object {
   def set(text: String): Unit
 }
 
-object clipbuffer {
-  @scala.inline
-  def apply(destructor: () => Unit, focus: () => Unit, init: () => Unit, set: String => Unit): clipbuffer = {
-    val __obj = js.Dynamic.literal(destructor = js.Any.fromFunction0(destructor), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), set = js.Any.fromFunction1(set))
-  
-    __obj.asInstanceOf[clipbuffer]
-  }
-}
+@JSImport("webix", "clipbuffer")
+@js.native
+object clipbuffer extends TopLevel[clipbuffer]
 

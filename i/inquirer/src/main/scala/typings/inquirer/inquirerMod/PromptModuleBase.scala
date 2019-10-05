@@ -1,6 +1,6 @@
 package typings.inquirer.inquirerMod
 
-import typings.inquirer.inquirerMod.promptsNs.PromptConstructor
+import typings.inquirer.inquirerMod.prompts.PromptConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

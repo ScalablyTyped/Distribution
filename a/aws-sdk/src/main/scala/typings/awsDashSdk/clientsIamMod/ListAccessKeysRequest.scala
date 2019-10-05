@@ -21,14 +21,10 @@ trait ListAccessKeysRequest extends js.Object {
 
 object ListAccessKeysRequest {
   @scala.inline
-  def apply(
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
-    UserName: existingUserNameType = null
-  ): ListAccessKeysRequest = {
+  def apply(Marker: markerType = null, MaxItems: Int | Double = null, UserName: existingUserNameType = null): ListAccessKeysRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (UserName != null) __obj.updateDynamic("UserName")(UserName)
     __obj.asInstanceOf[ListAccessKeysRequest]
   }

@@ -37,3 +37,9 @@ object Fetcher extends js.Object {
   var HANDLERS: Anon_HTMLHandler = js.native
 }
 
+@JSImport("rdflib", "fetcher")
+@js.native
+object fetcher extends js.Object {
+  def apply(store: Formula, options: js.Any): Fetcher = js.native
+}
+

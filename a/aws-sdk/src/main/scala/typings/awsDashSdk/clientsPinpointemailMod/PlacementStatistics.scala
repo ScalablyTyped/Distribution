@@ -30,18 +30,18 @@ trait PlacementStatistics extends js.Object {
 object PlacementStatistics {
   @scala.inline
   def apply(
-    DkimPercentage: js.UndefOr[Percentage] = js.undefined,
-    InboxPercentage: js.UndefOr[Percentage] = js.undefined,
-    MissingPercentage: js.UndefOr[Percentage] = js.undefined,
-    SpamPercentage: js.UndefOr[Percentage] = js.undefined,
-    SpfPercentage: js.UndefOr[Percentage] = js.undefined
+    DkimPercentage: Int | Double = null,
+    InboxPercentage: Int | Double = null,
+    MissingPercentage: Int | Double = null,
+    SpamPercentage: Int | Double = null,
+    SpfPercentage: Int | Double = null
   ): PlacementStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DkimPercentage)) __obj.updateDynamic("DkimPercentage")(DkimPercentage)
-    if (!js.isUndefined(InboxPercentage)) __obj.updateDynamic("InboxPercentage")(InboxPercentage)
-    if (!js.isUndefined(MissingPercentage)) __obj.updateDynamic("MissingPercentage")(MissingPercentage)
-    if (!js.isUndefined(SpamPercentage)) __obj.updateDynamic("SpamPercentage")(SpamPercentage)
-    if (!js.isUndefined(SpfPercentage)) __obj.updateDynamic("SpfPercentage")(SpfPercentage)
+    if (DkimPercentage != null) __obj.updateDynamic("DkimPercentage")(DkimPercentage.asInstanceOf[js.Any])
+    if (InboxPercentage != null) __obj.updateDynamic("InboxPercentage")(InboxPercentage.asInstanceOf[js.Any])
+    if (MissingPercentage != null) __obj.updateDynamic("MissingPercentage")(MissingPercentage.asInstanceOf[js.Any])
+    if (SpamPercentage != null) __obj.updateDynamic("SpamPercentage")(SpamPercentage.asInstanceOf[js.Any])
+    if (SpfPercentage != null) __obj.updateDynamic("SpfPercentage")(SpfPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementStatistics]
   }
 }

@@ -48,11 +48,11 @@ object ProjectArtifacts {
   def apply(
     `type`: ArtifactsType,
     artifactIdentifier: String = null,
-    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     location: String = null,
     name: String = null,
     namespaceType: ArtifactNamespace = null,
-    overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined,
+    overrideArtifactName: js.UndefOr[scala.Boolean] = js.undefined,
     packaging: ArtifactPackaging = null,
     path: String = null
   ): ProjectArtifacts = {

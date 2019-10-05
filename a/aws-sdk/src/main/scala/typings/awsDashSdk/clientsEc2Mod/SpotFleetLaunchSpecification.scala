@@ -84,7 +84,7 @@ object SpotFleetLaunchSpecification {
   def apply(
     AddressingType: String = null,
     BlockDeviceMappings: BlockDeviceMappingList = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     IamInstanceProfile: IamInstanceProfileSpecification = null,
     ImageId: String = null,
     InstanceType: InstanceType = null,
@@ -99,7 +99,7 @@ object SpotFleetLaunchSpecification {
     SubnetId: String = null,
     TagSpecifications: SpotFleetTagSpecificationList = null,
     UserData: String = null,
-    WeightedCapacity: js.UndefOr[Double] = js.undefined
+    WeightedCapacity: Int | scala.Double = null
   ): SpotFleetLaunchSpecification = {
     val __obj = js.Dynamic.literal()
     if (AddressingType != null) __obj.updateDynamic("AddressingType")(AddressingType)
@@ -119,7 +119,7 @@ object SpotFleetLaunchSpecification {
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
     if (UserData != null) __obj.updateDynamic("UserData")(UserData)
-    if (!js.isUndefined(WeightedCapacity)) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity)
+    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetLaunchSpecification]
   }
 }

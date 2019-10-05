@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayNfsFileShareMod
 
-import typings.atPulumiAws.typesInputMod.storagegatewayNs.NfsFileShareNfsFileShareDefaults
+import typings.atPulumiAws.typesInputMod.storagegateway.NfsFileShareNfsFileShareDefaults
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

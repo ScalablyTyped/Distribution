@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersUnsupportedLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnsupportedLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnsupportedLayerProperties
+import typings.arcgisDashJsDashApi.__esri.UnsupportedLayer
+import typings.arcgisDashJsDashApi.__esri.UnsupportedLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

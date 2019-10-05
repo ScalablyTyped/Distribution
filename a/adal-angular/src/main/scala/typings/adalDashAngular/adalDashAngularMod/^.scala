@@ -11,9 +11,3 @@ class ^ protected () extends AuthenticationContext {
   def this(options: Options) = this()
 }
 
-@JSImport("adal-angular", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  def inject(config: Options): AuthenticationContext = js.native
-}
-

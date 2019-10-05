@@ -46,7 +46,7 @@ object ListReservationsRequest {
   def apply(
     ChannelClass: __string = null,
     Codec: __string = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     MaximumBitrate: __string = null,
     MaximumFramerate: __string = null,
     NextToken: __string = null,
@@ -58,7 +58,7 @@ object ListReservationsRequest {
     val __obj = js.Dynamic.literal()
     if (ChannelClass != null) __obj.updateDynamic("ChannelClass")(ChannelClass)
     if (Codec != null) __obj.updateDynamic("Codec")(Codec)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (MaximumBitrate != null) __obj.updateDynamic("MaximumBitrate")(MaximumBitrate)
     if (MaximumFramerate != null) __obj.updateDynamic("MaximumFramerate")(MaximumFramerate)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

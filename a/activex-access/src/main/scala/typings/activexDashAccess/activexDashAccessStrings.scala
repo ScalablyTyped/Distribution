@@ -1,9 +1,9 @@
 package typings.activexDashAccess
 
-import typings.activexDashAccess.AccessNs.AcOutputFormat
-import typings.activexDashAccess.AccessNs.Constants
-import typings.activexDashAccess.AccessNs.DatabaseType
-import typings.activexDashAccess.AccessNs.OldConstants
+import typings.activexDashAccess.Access.AcOutputFormat
+import typings.activexDashAccess.Access.Constants
+import typings.activexDashAccess.Access.DatabaseType
+import typings.activexDashAccess.Access.OldConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

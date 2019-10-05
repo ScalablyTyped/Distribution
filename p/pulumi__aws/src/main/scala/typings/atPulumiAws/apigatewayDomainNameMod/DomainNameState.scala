@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDomainNameMod
 
-import typings.atPulumiAws.typesInputMod.apigatewayNs.DomainNameEndpointConfiguration
+import typings.atPulumiAws.typesInputMod.apigateway.DomainNameEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

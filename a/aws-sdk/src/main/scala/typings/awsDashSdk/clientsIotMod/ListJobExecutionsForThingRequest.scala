@@ -27,12 +27,12 @@ object ListJobExecutionsForThingRequest {
   @scala.inline
   def apply(
     thingName: ThingName,
-    maxResults: js.UndefOr[LaserMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     status: JobExecutionStatus = null
   ): ListJobExecutionsForThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobExecutionsForThingRequest]

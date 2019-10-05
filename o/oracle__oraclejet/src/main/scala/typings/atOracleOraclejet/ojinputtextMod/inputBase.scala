@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojinputtextMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_Regexp
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.asyncValidators
@@ -22,11 +24,12 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
 import typings.atOracleOraclejet.atOracleOraclejetStrings.validators
 import typings.atOracleOraclejet.atOracleOraclejetStrings.validatorsChanged
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
-import typings.atOracleOraclejet.ojinputtextMod.inputBaseNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputtextMod.inputBaseNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputtextMod.inputBase.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputtextMod.inputBase.ojAnimateStart
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -201,5 +204,12 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   @JSName("setProperty")
   def setProperty_validators(property: validators, value: js.Array[Validator[V] | RegisteredValidator]): Unit = js.native
   def validate(): js.Promise[typings.atOracleOraclejet.atOracleOraclejetStrings.valid | invalid] = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojinputtext", "inputBase")
+@js.native
+object inputBase extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

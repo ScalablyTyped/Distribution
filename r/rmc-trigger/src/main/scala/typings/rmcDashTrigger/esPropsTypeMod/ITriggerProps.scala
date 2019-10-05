@@ -34,7 +34,6 @@ trait ITriggerProps extends js.Object {
 object ITriggerProps {
   @scala.inline
   def apply(
-    popup: ReactNode | js.Function,
     afterPopupVisibleChange: js.Function = null,
     builtinPlacements: js.Any = null,
     defaultPopupVisible: js.UndefOr[Boolean] = js.undefined,
@@ -48,6 +47,7 @@ object ITriggerProps {
     maskTransitionName: String | js.Object = null,
     onPopupAlign: js.Function = null,
     onPopupVisibleChange: js.Function = null,
+    popup: ReactNode | js.Function = null,
     popupAlign: js.Any = null,
     popupAnimation: js.Any = null,
     popupClassName: String = null,
@@ -58,7 +58,7 @@ object ITriggerProps {
     prefixCls: String = null,
     zIndex: Int | Double = null
   ): ITriggerProps = {
-    val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (afterPopupVisibleChange != null) __obj.updateDynamic("afterPopupVisibleChange")(afterPopupVisibleChange)
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements)
     if (!js.isUndefined(defaultPopupVisible)) __obj.updateDynamic("defaultPopupVisible")(defaultPopupVisible)
@@ -72,6 +72,7 @@ object ITriggerProps {
     if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
     if (onPopupAlign != null) __obj.updateDynamic("onPopupAlign")(onPopupAlign)
     if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(onPopupVisibleChange)
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (popupAlign != null) __obj.updateDynamic("popupAlign")(popupAlign)
     if (popupAnimation != null) __obj.updateDynamic("popupAnimation")(popupAnimation)
     if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName)

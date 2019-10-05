@@ -1,7 +1,7 @@
 package typings.activexDashAccess
 
-import typings.activexDashStdole.stdoleNs.OLE_XPOS_PIXELS
-import typings.activexDashStdole.stdoleNs.OLE_YPOS_PIXELS
+import typings.activexDashStdole.stdole.OLE_XPOS_PIXELS
+import typings.activexDashStdole.stdole.OLE_YPOS_PIXELS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

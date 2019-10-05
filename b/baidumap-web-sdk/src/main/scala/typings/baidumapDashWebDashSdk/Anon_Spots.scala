@@ -1,6 +1,6 @@
 package typings.baidumapDashWebDashSdk
 
-import typings.baidumapDashWebDashSdk.BMapNs.HotspotOptions
+import typings.baidumapDashWebDashSdk.BMap.HotspotOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

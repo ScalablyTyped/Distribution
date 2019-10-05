@@ -1,5 +1,6 @@
 package typings.arangodb.atArangodbFoxxQueuesMod
 
+import typings.arangodb.ArangoDB.Document
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,22 +22,22 @@ object JobOptions {
   def apply(
     backOff: (js.Function1[/* failureCount */ Double, Double]) | Double = null,
     delayUntil: Double | Date = null,
-    failure: JobCallback = null,
+    failure: (/* result */ js.Any, /* jobData */ js.Any, /* job */ Document[Job]) => Unit = null,
     maxFailures: Int | Double = null,
     repeatDelay: Int | Double = null,
     repeatTimes: Int | Double = null,
     repeatUntil: Double | Date = null,
-    success: JobCallback = null
+    success: (/* result */ js.Any, /* jobData */ js.Any, /* job */ Document[Job]) => Unit = null
   ): JobOptions = {
     val __obj = js.Dynamic.literal()
     if (backOff != null) __obj.updateDynamic("backOff")(backOff.asInstanceOf[js.Any])
     if (delayUntil != null) __obj.updateDynamic("delayUntil")(delayUntil.asInstanceOf[js.Any])
-    if (failure != null) __obj.updateDynamic("failure")(failure)
+    if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction3(failure))
     if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
     if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
     if (repeatTimes != null) __obj.updateDynamic("repeatTimes")(repeatTimes.asInstanceOf[js.Any])
     if (repeatUntil != null) __obj.updateDynamic("repeatUntil")(repeatUntil.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     __obj.asInstanceOf[JobOptions]
   }
 }

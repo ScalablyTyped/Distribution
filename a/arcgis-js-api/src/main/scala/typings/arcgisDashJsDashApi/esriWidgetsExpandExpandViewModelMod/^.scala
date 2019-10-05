@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsExpandExpandViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExpandViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.ExpandViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,3 +21,9 @@ object Keyword {
   }
 }
 
+@JSImport("css-tree", "keyword")
+@js.native
+object keyword extends js.Object {
+  def apply(value: String): Keyword = js.native
+}
+

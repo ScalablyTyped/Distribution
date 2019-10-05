@@ -32,15 +32,15 @@ object InstanceNetworkInterfaceAttachment {
   def apply(
     AttachTime: DateTime = null,
     AttachmentId: String = null,
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    DeviceIndex: js.UndefOr[Integer] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    DeviceIndex: Int | scala.Double = null,
     Status: AttachmentStatus = null
   ): InstanceNetworkInterfaceAttachment = {
     val __obj = js.Dynamic.literal()
     if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime)
     if (AttachmentId != null) __obj.updateDynamic("AttachmentId")(AttachmentId)
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
-    if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex)
+    if (DeviceIndex != null) __obj.updateDynamic("DeviceIndex")(DeviceIndex.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceNetworkInterfaceAttachment]
   }

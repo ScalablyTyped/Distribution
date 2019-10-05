@@ -2,7 +2,7 @@ package typings.iconv.iconvMod
 
 import typings.iconv.Anon_End
 import typings.node.Buffer
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

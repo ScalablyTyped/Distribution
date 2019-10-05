@@ -13,9 +13,5 @@ trait Worklet extends js.Object {
 
 @JSGlobal("Worklet")
 @js.native
-class WorkletCls () extends Worklet
-
-@JSGlobal("Worklet")
-@js.native
 object Worklet extends Instantiable0[Worklet]
 

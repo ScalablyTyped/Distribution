@@ -21,3 +21,10 @@ object GetMoonTimes {
   }
 }
 
+@JSImport("suncalc", "getMoonTimes")
+@js.native
+object getMoonTimes extends js.Object {
+  def apply(date: Date, latitude: Double, longitude: Double): GetMoonTimes = js.native
+  def apply(date: Date, latitude: Double, longitude: Double, inUTC: Boolean): GetMoonTimes = js.native
+}
+

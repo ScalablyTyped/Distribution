@@ -1,5 +1,6 @@
 package typings.karma.karmaMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.karma.Anon_Layout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,4 +48,8 @@ object Constants {
     __obj.asInstanceOf[Constants]
   }
 }
+
+@JSImport("karma", "constants")
+@js.native
+object constants extends TopLevel[Constants]
 

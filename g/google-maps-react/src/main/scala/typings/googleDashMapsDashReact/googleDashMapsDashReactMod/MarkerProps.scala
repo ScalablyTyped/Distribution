@@ -1,7 +1,7 @@
 package typings.googleDashMapsDashReact.googleDashMapsDashReactMod
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,13 @@ object MarkerProps {
   @scala.inline
   def apply(
     mapCenter: LatLng | LatLngLiteral = null,
-    onClick: markerEventHandler = null,
-    onMouseover: markerEventHandler = null
+    onClick: (/* props */ js.UndefOr[MarkerProps], /* marker */ js.UndefOr[typings.googlemaps.google.maps.Marker], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onMouseover: (/* props */ js.UndefOr[MarkerProps], /* marker */ js.UndefOr[typings.googlemaps.google.maps.Marker], /* event */ js.UndefOr[js.Any]) => js.Any = null
   ): MarkerProps = {
     val __obj = js.Dynamic.literal()
     if (mapCenter != null) __obj.updateDynamic("mapCenter")(mapCenter.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(js.Any.fromFunction3(onMouseover))
     __obj.asInstanceOf[MarkerProps]
   }
 }

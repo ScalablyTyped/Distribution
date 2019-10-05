@@ -25,16 +25,9 @@ trait WorkspaceEdit extends js.Object {
   var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.undefined
 }
 
-object WorkspaceEdit {
-  @scala.inline
-  def apply(
-    changes: StringDictionary[js.Array[TextEdit]] = null,
-    documentChanges: js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile] = null
-  ): WorkspaceEdit = {
-    val __obj = js.Dynamic.literal()
-    if (changes != null) __obj.updateDynamic("changes")(changes)
-    if (documentChanges != null) __obj.updateDynamic("documentChanges")(documentChanges)
-    __obj.asInstanceOf[WorkspaceEdit]
-  }
+@JSImport("vscode-languageserver-types", "WorkspaceEdit")
+@js.native
+object WorkspaceEdit extends js.Object {
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = js.native
 }
 

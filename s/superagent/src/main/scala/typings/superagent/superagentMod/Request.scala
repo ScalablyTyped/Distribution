@@ -2,7 +2,7 @@ package typings.superagent.superagentMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
 import typings.std.Promise
 import typings.superagent.Anon_Auto

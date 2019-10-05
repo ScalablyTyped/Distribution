@@ -11,17 +11,14 @@ trait LibraVerificationStatusError extends js.Object {
   var status: LibraVerificationStatusKind
 }
 
-object LibraVerificationStatusError {
-  @scala.inline
+@JSImport("libra-core", "LibraVerificationStatusError")
+@js.native
+object LibraVerificationStatusError extends js.Object {
   def apply(
-    error: LibraVerificationError,
-    message: String,
+    status: LibraVerificationStatusKind,
     moduleIndex: Double,
-    status: LibraVerificationStatusKind
-  ): LibraVerificationStatusError = {
-    val __obj = js.Dynamic.literal(error = error, message = message, moduleIndex = moduleIndex, status = status)
-  
-    __obj.asInstanceOf[LibraVerificationStatusError]
-  }
+    error: LibraVerificationError,
+    message: String
+  ): Unit = js.native
 }
 

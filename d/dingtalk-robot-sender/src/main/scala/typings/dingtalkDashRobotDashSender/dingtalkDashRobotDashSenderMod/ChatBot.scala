@@ -4,7 +4,7 @@ import typings.axios.axiosMod.AxiosResponse
 import typings.dingtalkDashRobotDashSender.Anon_0
 import typings.dingtalkDashRobotDashSender.Anon_AtMobiles
 import typings.dingtalkDashRobotDashSender.Anon_MessageUrl
-import typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.FeedCardItem
+import typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.FeedCardItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

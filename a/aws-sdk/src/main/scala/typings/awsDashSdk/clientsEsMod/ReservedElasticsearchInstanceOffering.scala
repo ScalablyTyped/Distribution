@@ -43,23 +43,23 @@ object ReservedElasticsearchInstanceOffering {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
+    Duration: Int | scala.Double = null,
     ElasticsearchInstanceType: ESPartitionInstanceType = null,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
+    FixedPrice: Int | scala.Double = null,
     PaymentOption: ReservedElasticsearchInstancePaymentOption = null,
     RecurringCharges: RecurringChargeList = null,
     ReservedElasticsearchInstanceOfferingId: GUID = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedElasticsearchInstanceOffering = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (ElasticsearchInstanceType != null) __obj.updateDynamic("ElasticsearchInstanceType")(ElasticsearchInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges)
     if (ReservedElasticsearchInstanceOfferingId != null) __obj.updateDynamic("ReservedElasticsearchInstanceOfferingId")(ReservedElasticsearchInstanceOfferingId)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedElasticsearchInstanceOffering]
   }
 }

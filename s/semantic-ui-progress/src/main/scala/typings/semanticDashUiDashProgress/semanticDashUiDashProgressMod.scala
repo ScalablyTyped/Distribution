@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashProgress
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashProgress.SemanticUINs.Progress
+import typings.semanticDashUiDashProgress.SemanticUI.Progress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

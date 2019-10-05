@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SetAccessorSyntax")
 @js.native
 class SetAccessorSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SetAccessorSyntax {
+  extends typings.typescriptDashServices.TypeScript.SetAccessorSyntax {
   def this(
     modifiers: ISyntaxList,
     setKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterListSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -27,9 +27,9 @@ object SetAccessorSyntax extends js.Object {
   def create(
     setKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.SetAccessorSyntax = js.native
-  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.SetAccessorSyntax = js.native
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterListSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax
+  ): typings.typescriptDashServices.TypeScript.SetAccessorSyntax = js.native
+  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScript.SetAccessorSyntax = js.native
 }
 

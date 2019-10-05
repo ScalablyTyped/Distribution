@@ -21,13 +21,9 @@ trait ListV2LoggingLevelsRequest extends js.Object {
 
 object ListV2LoggingLevelsRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[SkyfallMaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    targetType: LogTargetType = null
-  ): ListV2LoggingLevelsRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: NextToken = null, targetType: LogTargetType = null): ListV2LoggingLevelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListV2LoggingLevelsRequest]

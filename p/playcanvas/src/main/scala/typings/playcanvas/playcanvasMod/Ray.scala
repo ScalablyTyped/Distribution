@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Ray")
 @js.native
 class Ray ()
-  extends typings.playcanvas.pcNs.Ray {
-  def this(origin: typings.playcanvas.pcNs.Vec3) = this()
-  def this(origin: typings.playcanvas.pcNs.Vec3, direction: typings.playcanvas.pcNs.Vec3) = this()
+  extends typings.playcanvas.pc.Ray {
+  def this(origin: typings.playcanvas.pc.Vec3) = this()
+  def this(origin: typings.playcanvas.pc.Vec3, direction: typings.playcanvas.pc.Vec3) = this()
 }
 

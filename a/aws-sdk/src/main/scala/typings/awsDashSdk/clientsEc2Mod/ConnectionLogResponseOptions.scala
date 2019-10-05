@@ -24,7 +24,7 @@ object ConnectionLogResponseOptions {
   def apply(
     CloudwatchLogGroup: String = null,
     CloudwatchLogStream: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ConnectionLogResponseOptions = {
     val __obj = js.Dynamic.literal()
     if (CloudwatchLogGroup != null) __obj.updateDynamic("CloudwatchLogGroup")(CloudwatchLogGroup)

@@ -84,3 +84,25 @@ object ClassPrivateMethod {
   }
 }
 
+@JSImport("@babel/types", "classPrivateMethod")
+@js.native
+object classPrivateMethod extends js.Object {
+  def apply(
+    kind: js.UndefOr[get | set | method | constructor],
+    key: PrivateName,
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    _static: js.UndefOr[Boolean],
+    `abstract`: js.UndefOr[Boolean | Null],
+    access: js.UndefOr[public | `private` | `protected` | Null],
+    accessibility: js.UndefOr[public | `private` | `protected` | Null],
+    async: js.UndefOr[Boolean],
+    computed: js.UndefOr[Boolean],
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    generator: js.UndefOr[Boolean],
+    optional: js.UndefOr[Boolean | Null],
+    returnType: js.UndefOr[js.Any | Null],
+    typeParameters: js.UndefOr[js.Any | Null]
+  ): ClassPrivateMethod = js.native
+}
+

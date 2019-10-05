@@ -1,7 +1,7 @@
 package typings.validator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.validator.ValidatorJSNs.AlphaLocale
+import typings.validator.ValidatorJS.AlphaLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

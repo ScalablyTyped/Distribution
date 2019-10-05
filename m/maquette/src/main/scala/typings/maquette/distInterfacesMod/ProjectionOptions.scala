@@ -1,6 +1,8 @@
 package typings.maquette.distInterfacesMod
 
+import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,15 +29,15 @@ trait ProjectionOptions extends ProjectorOptions {
 object ProjectionOptions {
   @scala.inline
   def apply(
-    eventHandlerInterceptor: EventHandlerInterceptor = null,
+    eventHandlerInterceptor: (/* propertyName */ String, /* eventHandler */ js.Function, /* domNode */ Node, /* properties */ VNodeProperties) => js.UndefOr[js.Function] = null,
     namespace: String = null,
-    performanceLogger: ProjectorPerformanceLogger = null,
+    performanceLogger: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event]) => Unit = null,
     styleApplyer: (/* domNode */ HTMLElement, /* styleName */ String, /* value */ String) => Unit = null
   ): ProjectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (eventHandlerInterceptor != null) __obj.updateDynamic("eventHandlerInterceptor")(eventHandlerInterceptor)
+    if (eventHandlerInterceptor != null) __obj.updateDynamic("eventHandlerInterceptor")(js.Any.fromFunction4(eventHandlerInterceptor))
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (performanceLogger != null) __obj.updateDynamic("performanceLogger")(performanceLogger)
+    if (performanceLogger != null) __obj.updateDynamic("performanceLogger")(js.Any.fromFunction2(performanceLogger))
     if (styleApplyer != null) __obj.updateDynamic("styleApplyer")(js.Any.fromFunction3(styleApplyer))
     __obj.asInstanceOf[ProjectionOptions]
   }

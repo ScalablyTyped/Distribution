@@ -1,17 +1,19 @@
 package typings.asana.asanaMod
 
-import typings.asana.asanaMod.authNs.App
-import typings.asana.asanaMod.authNs.OauthAuthenticatorOptions
-import typings.asana.asanaMod.resourcesNs.Attachments
-import typings.asana.asanaMod.resourcesNs.Events
-import typings.asana.asanaMod.resourcesNs.Projects
-import typings.asana.asanaMod.resourcesNs.Sections
-import typings.asana.asanaMod.resourcesNs.Stories
-import typings.asana.asanaMod.resourcesNs.Tags
-import typings.asana.asanaMod.resourcesNs.Tasks
-import typings.asana.asanaMod.resourcesNs.Teams
-import typings.asana.asanaMod.resourcesNs.Users
-import typings.asana.asanaMod.resourcesNs.Workspaces
+import org.scalablytyped.runtime.TopLevel
+import typings.asana.asanaMod.auth.App
+import typings.asana.asanaMod.auth.OauthAuthenticatorOptions
+import typings.asana.asanaMod.resources.Attachments
+import typings.asana.asanaMod.resources.Events
+import typings.asana.asanaMod.resources.Projects
+import typings.asana.asanaMod.resources.Sections
+import typings.asana.asanaMod.resources.Stories
+import typings.asana.asanaMod.resources.Tags
+import typings.asana.asanaMod.resources.Tasks
+import typings.asana.asanaMod.resources.Teams
+import typings.asana.asanaMod.resources.Users
+import typings.asana.asanaMod.resources.Workspaces
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +88,7 @@ trait Client extends js.Object {
     * @returns {Promise<Client>} A promise that resolves to this client when
     *     authorization is complete.
     */
-  def authorize(): typings.bluebird.bluebirdMod.^[Client] = js.native
+  def authorize(): ^[Client] = js.native
   /**
     * Configure the client to authenticate using a Personal Access Token.
     * @param  {String} accessToken The Personal Access Token to use for
@@ -124,4 +126,8 @@ trait Client extends js.Object {
   def useOauth(): this.type = js.native
   def useOauth(options: OauthAuthenticatorOptions): this.type = js.native
 }
+
+@JSImport("asana", "Client")
+@js.native
+object Client extends TopLevel[ClientStatic]
 

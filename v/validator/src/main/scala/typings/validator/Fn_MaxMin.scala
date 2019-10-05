@@ -1,6 +1,6 @@
 package typings.validator
 
-import typings.validator.ValidatorJSNs.IsLengthOptions
+import typings.validator.ValidatorJS.IsLengthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

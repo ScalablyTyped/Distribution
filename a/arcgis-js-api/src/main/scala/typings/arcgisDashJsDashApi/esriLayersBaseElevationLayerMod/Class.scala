@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersBaseElevationLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseElevationLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseElevationLayerProperties
+import typings.arcgisDashJsDashApi.__esri.BaseElevationLayer
+import typings.arcgisDashJsDashApi.__esri.BaseElevationLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

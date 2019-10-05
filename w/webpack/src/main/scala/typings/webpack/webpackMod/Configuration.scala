@@ -1,9 +1,9 @@
 package typings.webpack.webpackMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.webpackMod.OptionsNs.Devtool
-import typings.webpack.webpackMod.OptionsNs.Optimization
-import typings.webpack.webpackMod.OptionsNs.Performance
+import typings.webpack.webpackMod.Options.Devtool
+import typings.webpack.webpackMod.Options.Optimization
+import typings.webpack.webpackMod.Options.Performance
 import typings.webpack.webpackNumbers.`false`
 import typings.webpack.webpackStrings.`async-node`
 import typings.webpack.webpackStrings.`electron-main`
@@ -74,7 +74,7 @@ trait Configuration extends js.Object {
   /** Like resolve but for loaders. */
   var resolveLoader: js.UndefOr[ResolveLoader] = js.undefined
   /** Stats options for logging  */
-  var stats: js.UndefOr[typings.webpack.webpackMod.OptionsNs.Stats] = js.undefined
+  var stats: js.UndefOr[typings.webpack.webpackMod.Options.Stats] = js.undefined
   /**
     * - "web" Compile for usage in a browser-like environment (default).
     * - "webworker" Compile as WebWorker.
@@ -93,7 +93,7 @@ trait Configuration extends js.Object {
   ] = js.undefined
   /** Enter watch mode, which rebuilds on file change. */
   var watch: js.UndefOr[Boolean] = js.undefined
-  var watchOptions: js.UndefOr[typings.webpack.webpackMod.OptionsNs.WatchOptions] = js.undefined
+  var watchOptions: js.UndefOr[typings.webpack.webpackMod.Options.WatchOptions] = js.undefined
 }
 
 object Configuration {
@@ -122,10 +122,10 @@ object Configuration {
     recordsPath: String = null,
     resolve: Resolve = null,
     resolveLoader: ResolveLoader = null,
-    stats: typings.webpack.webpackMod.OptionsNs.Stats = null,
+    stats: typings.webpack.webpackMod.Options.Stats = null,
     target: web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit]) = null,
     watch: js.UndefOr[Boolean] = js.undefined,
-    watchOptions: typings.webpack.webpackMod.OptionsNs.WatchOptions = null
+    watchOptions: typings.webpack.webpackMod.Options.WatchOptions = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (amd != null) __obj.updateDynamic("amd")(amd)

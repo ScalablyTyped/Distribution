@@ -1,7 +1,7 @@
 package typings.microsoftDashLiveDashConnect
 
-import typings.microsoftDashLiveDashConnect.MicrosoftNs.LiveNs.IFile
-import typings.microsoftDashLiveDashConnect.MicrosoftNs.LiveNs.IFolder
+import typings.microsoftDashLiveDashConnect.Microsoft.Live.IFile
+import typings.microsoftDashLiveDashConnect.Microsoft.Live.IFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

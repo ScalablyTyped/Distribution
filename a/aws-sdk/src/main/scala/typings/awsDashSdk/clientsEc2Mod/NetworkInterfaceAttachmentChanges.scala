@@ -17,7 +17,7 @@ trait NetworkInterfaceAttachmentChanges extends js.Object {
 
 object NetworkInterfaceAttachmentChanges {
   @scala.inline
-  def apply(AttachmentId: String = null, DeleteOnTermination: js.UndefOr[Boolean] = js.undefined): NetworkInterfaceAttachmentChanges = {
+  def apply(AttachmentId: String = null, DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined): NetworkInterfaceAttachmentChanges = {
     val __obj = js.Dynamic.literal()
     if (AttachmentId != null) __obj.updateDynamic("AttachmentId")(AttachmentId)
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)

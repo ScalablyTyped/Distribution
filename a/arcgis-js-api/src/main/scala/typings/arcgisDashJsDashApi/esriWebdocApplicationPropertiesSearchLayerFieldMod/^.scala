@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebdocApplicationPropertiesSearchLayerFieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchLayerFieldConstructor
+import typings.arcgisDashJsDashApi.__esri.SearchLayerFieldConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.rowEditNs.saveRowHandler
+import typings.uiDashGrid.uiDashGridMod.rowEdit.saveRowHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

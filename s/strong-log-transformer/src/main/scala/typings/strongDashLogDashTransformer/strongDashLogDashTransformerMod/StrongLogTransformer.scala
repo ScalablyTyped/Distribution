@@ -1,6 +1,6 @@
 package typings.strongDashLogDashTransformer.strongDashLogDashTransformerMod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

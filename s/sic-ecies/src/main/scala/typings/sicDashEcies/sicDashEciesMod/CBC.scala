@@ -1,5 +1,6 @@
 package typings.sicDashEcies.sicDashEciesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,4 +21,8 @@ trait CBC extends js.Object {
   def pkcs7unpad(paddedbuf: Buffer): Buffer = js.native
   def xorbufs(buf1: Buffer, buf2: Buffer): Buffer = js.native
 }
+
+@JSImport("sic-ecies", "CBC")
+@js.native
+object CBC extends TopLevel[CBC]
 

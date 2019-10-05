@@ -5,7 +5,7 @@ import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ComponentNameLabelAndValue
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
 import typings.atOracleOraclejet.atOracleOraclejetStrings.circular
@@ -16,8 +16,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.off
 import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.onIndicator
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
-import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGaugeNs.ReferenceLine
-import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGaugeNs.Threshold
+import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
+import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +47,7 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var svgStyle: js.Object
   var thresholdDisplay: currentOnly | all | onIndicator
   var thresholds: js.Array[Threshold]
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142
   val transientValue: Double | Null
   var value: Double | Null
   var visualEffects: none | auto
@@ -78,7 +78,7 @@ object ojStatusMeterGaugeSettableProperties {
     svgStyle: js.Object,
     thresholdDisplay: currentOnly | all | onIndicator,
     thresholds: js.Array[Threshold],
-    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836,
+    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142,
     trackResize: on | off,
     translations: Anon_ComponentNameLabelAndValue,
     visualEffects: none | auto,

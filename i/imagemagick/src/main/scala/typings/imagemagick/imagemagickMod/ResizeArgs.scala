@@ -18,3 +18,9 @@ object ResizeArgs {
   }
 }
 
+@JSImport("imagemagick", "resizeArgs")
+@js.native
+object resizeArgs extends js.Object {
+  def apply(options: Options): ResizeArgs = js.native
+}
+

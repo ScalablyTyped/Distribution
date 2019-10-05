@@ -8,12 +8,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurveyElement because Already inherited
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IElement because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name. Inlined visible, parent, renderWidth, width, rightIndent, startWithNewLine, isPanel, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, clearIncorrectValues, clearErrors
 - typings.surveyDashKnockout.surveyDashKnockoutMod.IQuestion because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
      with IValidatorOwner
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[js.Any]
+     with ISurveyErrorOwner
+     with IConditionRunner {
   def this(name: String) = this()
   /**
     * The question comment value.
@@ -248,11 +252,15 @@ class Question protected ()
     * Call this function to clear all errors in the question
     */
   def clearErrors(): Unit = js.native
+  @JSName("clearErrors")
+  def clearErrors_Any(): js.Any = js.native
   /**
     * Call this function to remove values from the current question, that end-user will not be able to enter.
     * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.
     */
   def clearIncorrectValues(): Unit = js.native
+  @JSName("clearIncorrectValues")
+  def clearIncorrectValues_Any(): js.Any = js.native
   def clearUnusedValues(): Unit = js.native
   @JSName("clearUnusedValues")
   def clearUnusedValues_Any(): js.Any = js.native
@@ -293,17 +301,16 @@ class Question protected ()
     */
   def getDisplayValue(keysAsText: Boolean): js.Any = js.native
   /* protected */ def getDisplayValueCore(keyAsText: Boolean): js.Any = js.native
-  def getErrorCustomText(text: String, error: SurveyError): String = js.native
+  /* CompleteClass */
+  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* protected */ def getFirstErrorInputElementId(): String = js.native
   /* protected */ def getFirstInputElementId(): String = js.native
   /* protected */ def getIsRunningValidators(): Boolean = js.native
   def getLayoutType(): String = js.native
-  /**
-    * Returns the current survey locale
-    * @see SurveyModel.locale
-    */
-  def getLocale(): String = js.native
-  def getMarkdownHtml(text: String): String = js.native
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
   def getOthersMaxLength(): js.Any = js.native
   def getPanel(): IPanel = js.native
   /**
@@ -313,7 +320,8 @@ class Question protected ()
     */
   def getPlainData(): js.Any = js.native
   def getPlainData(options: Anon_Calculations): js.Any = js.native
-  def getProcessedText(text: String): String = js.native
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
   /* protected */ def getQuestionTitleTemplate(): String = js.native
@@ -364,6 +372,8 @@ class Question protected ()
   def moveTo(container: IPanel): Boolean = js.native
   def moveTo(container: IPanel, insertBefore: js.Any): Boolean = js.native
   def onAnyValueChanged(name: String): Unit = js.native
+  @JSName("onAnyValueChanged")
+  def onAnyValueChanged_Any(name: String): js.Any = js.native
   /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): Unit = js.native
   def onCompletedAsyncValidators(hasErrors: Boolean): Unit = js.native
   /* protected */ def onCreating(): Unit = js.native
@@ -382,15 +392,8 @@ class Question protected ()
     * @param error
     */
   def removeError(error: SurveyError): Unit = js.native
-  /**
-    * Run visibleIf and enableIf expressions. If visibleIf or/and enabledIf are not empty, then the results of performing the expression (true or false) set to the visible/readOnly properties.
-    * @param values Typically survey results
-    * @see visible
-    * @see visibleIf
-    * @see readOnly
-    * @see enableIf
-    */
-  def runCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  /* CompleteClass */
+  override def runCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
   /* protected */ def runValidators(): js.Array[SurveyError] = js.native
   /* protected */ def setComment(newValue: String): Unit = js.native
   /* protected */ def setDefaultValue(): Unit = js.native

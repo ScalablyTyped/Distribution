@@ -1,7 +1,9 @@
 package typings.grommet.componentsCollapsibleMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
@@ -23,4 +25,13 @@ class Collapsible protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/Collapsible", "Collapsible")
+@js.native
+object Collapsible extends TopLevel[
+      ComponentClass[
+        CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+        ComponentState
+      ]
+    ]
 

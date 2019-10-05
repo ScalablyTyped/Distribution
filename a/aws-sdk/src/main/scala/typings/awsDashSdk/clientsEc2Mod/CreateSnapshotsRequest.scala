@@ -33,7 +33,7 @@ object CreateSnapshotsRequest {
     InstanceSpecification: InstanceSpecification,
     CopyTagsFromSource: CopyTagsFromSource = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null
   ): CreateSnapshotsRequest = {
     val __obj = js.Dynamic.literal(InstanceSpecification = InstanceSpecification)

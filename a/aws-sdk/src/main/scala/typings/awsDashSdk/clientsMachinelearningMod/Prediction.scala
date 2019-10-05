@@ -23,13 +23,13 @@ object Prediction {
     details: DetailsMap = null,
     predictedLabel: Label = null,
     predictedScores: ScoreValuePerLabelMap = null,
-    predictedValue: js.UndefOr[floatLabel] = js.undefined
+    predictedValue: Int | Double = null
   ): Prediction = {
     val __obj = js.Dynamic.literal()
     if (details != null) __obj.updateDynamic("details")(details)
     if (predictedLabel != null) __obj.updateDynamic("predictedLabel")(predictedLabel)
     if (predictedScores != null) __obj.updateDynamic("predictedScores")(predictedScores)
-    if (!js.isUndefined(predictedValue)) __obj.updateDynamic("predictedValue")(predictedValue)
+    if (predictedValue != null) __obj.updateDynamic("predictedValue")(predictedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prediction]
   }
 }

@@ -17,13 +17,10 @@ trait PutPartnerEventsResponse extends js.Object {
 
 object PutPartnerEventsResponse {
   @scala.inline
-  def apply(
-    Entries: PutPartnerEventsResultEntryList = null,
-    FailedEntryCount: js.UndefOr[Integer] = js.undefined
-  ): PutPartnerEventsResponse = {
+  def apply(Entries: PutPartnerEventsResultEntryList = null, FailedEntryCount: Int | Double = null): PutPartnerEventsResponse = {
     val __obj = js.Dynamic.literal()
     if (Entries != null) __obj.updateDynamic("Entries")(Entries)
-    if (!js.isUndefined(FailedEntryCount)) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount)
+    if (FailedEntryCount != null) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPartnerEventsResponse]
   }
 }

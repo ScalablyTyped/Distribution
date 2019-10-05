@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Express = js.native
-  def apply(options: Options | String): Express = js.native
+  def apply(options: String): Express = js.native
+  def apply(options: Options): Express = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.reapop.reapopMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reapop.Anon_Payload
 import typings.reapop.Anon_Type
 import scala.scalajs.js
@@ -27,4 +28,8 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
 }
+
+@JSImport("reapop", "actions")
+@js.native
+object actions extends TopLevel[Actions]
 

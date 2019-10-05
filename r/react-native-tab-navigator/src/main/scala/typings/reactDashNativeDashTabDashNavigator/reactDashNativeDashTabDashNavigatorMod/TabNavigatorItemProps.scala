@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js

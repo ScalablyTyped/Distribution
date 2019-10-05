@@ -17,9 +17,9 @@ trait ListMissionProfilesRequest extends js.Object {
 
 object ListMissionProfilesRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[Integer] = js.undefined, nextToken: String = null): ListMissionProfilesRequest = {
+  def apply(maxResults: Int | scala.Double = null, nextToken: String = null): ListMissionProfilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListMissionProfilesRequest]
   }

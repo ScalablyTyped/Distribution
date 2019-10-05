@@ -1,6 +1,6 @@
 package typings.scroller
 
-import typings.scroller.ScrollerNs.Options
+import typings.scroller.Scroller.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

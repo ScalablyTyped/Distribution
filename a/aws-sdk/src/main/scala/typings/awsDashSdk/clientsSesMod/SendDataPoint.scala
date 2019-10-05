@@ -30,17 +30,17 @@ trait SendDataPoint extends js.Object {
 object SendDataPoint {
   @scala.inline
   def apply(
-    Bounces: js.UndefOr[Counter] = js.undefined,
-    Complaints: js.UndefOr[Counter] = js.undefined,
-    DeliveryAttempts: js.UndefOr[Counter] = js.undefined,
-    Rejects: js.UndefOr[Counter] = js.undefined,
+    Bounces: Int | Double = null,
+    Complaints: Int | Double = null,
+    DeliveryAttempts: Int | Double = null,
+    Rejects: Int | Double = null,
     Timestamp: Timestamp = null
   ): SendDataPoint = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bounces)) __obj.updateDynamic("Bounces")(Bounces)
-    if (!js.isUndefined(Complaints)) __obj.updateDynamic("Complaints")(Complaints)
-    if (!js.isUndefined(DeliveryAttempts)) __obj.updateDynamic("DeliveryAttempts")(DeliveryAttempts)
-    if (!js.isUndefined(Rejects)) __obj.updateDynamic("Rejects")(Rejects)
+    if (Bounces != null) __obj.updateDynamic("Bounces")(Bounces.asInstanceOf[js.Any])
+    if (Complaints != null) __obj.updateDynamic("Complaints")(Complaints.asInstanceOf[js.Any])
+    if (DeliveryAttempts != null) __obj.updateDynamic("DeliveryAttempts")(DeliveryAttempts.asInstanceOf[js.Any])
+    if (Rejects != null) __obj.updateDynamic("Rejects")(Rejects.asInstanceOf[js.Any])
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
     __obj.asInstanceOf[SendDataPoint]
   }

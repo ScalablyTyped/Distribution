@@ -22,15 +22,6 @@ trait DOMPointReadOnly extends js.Object {
 
 @JSGlobal("DOMPointReadOnly")
 @js.native
-class DOMPointReadOnlyCls () extends DOMPointReadOnly {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Double, z: Double, w: Double) = this()
-}
-
-@JSGlobal("DOMPointReadOnly")
-@js.native
 object DOMPointReadOnly
   extends Instantiable0[DOMPointReadOnly]
      with Instantiable1[/* x */ Double, DOMPointReadOnly]

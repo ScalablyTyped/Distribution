@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "uuid-validate"
-version := "0.0-dt-20190212Z-ddfa03"
-scalaVersion := "2.12.9"
+version := "0.0-dt-20190212Z-e8f517"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -28,11 +28,11 @@ object Session {
   def apply(
     Id: __string,
     StartTimestamp: __string,
-    Duration: js.UndefOr[__integer] = js.undefined,
+    Duration: Int | Double = null,
     StopTimestamp: __string = null
   ): Session = {
     val __obj = js.Dynamic.literal(Id = Id, StartTimestamp = StartTimestamp)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (StopTimestamp != null) __obj.updateDynamic("StopTimestamp")(StopTimestamp)
     __obj.asInstanceOf[Session]
   }

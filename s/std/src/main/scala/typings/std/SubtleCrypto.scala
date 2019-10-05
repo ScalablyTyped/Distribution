@@ -443,9 +443,5 @@ trait SubtleCrypto extends js.Object {
 
 @JSGlobal("SubtleCrypto")
 @js.native
-class SubtleCryptoCls () extends SubtleCrypto
-
-@JSGlobal("SubtleCrypto")
-@js.native
 object SubtleCrypto extends Instantiable0[SubtleCrypto]
 

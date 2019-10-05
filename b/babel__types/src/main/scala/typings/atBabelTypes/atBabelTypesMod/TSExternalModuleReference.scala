@@ -36,3 +36,9 @@ object TSExternalModuleReference {
   }
 }
 
+@JSImport("@babel/types", "tsExternalModuleReference")
+@js.native
+object tsExternalModuleReference extends js.Object {
+  def apply(expression: StringLiteral): TSExternalModuleReference = js.native
+}
+

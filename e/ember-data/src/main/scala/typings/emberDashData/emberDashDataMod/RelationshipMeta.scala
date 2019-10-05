@@ -1,6 +1,6 @@
 package typings.emberDashData.emberDashDataMod
 
-import typings.emberDashData.emberDashDataMod.DSNs.Model
+import typings.emberDashData.emberDashDataMod.DS.Model
 import typings.emberDashData.emberDashDataNumbers.`true`
 import typings.emberDashData.emberDashDataStrings.belongsTo
 import typings.emberDashData.emberDashDataStrings.hasMany

@@ -39,3 +39,10 @@ object TSTypePredicate {
   }
 }
 
+@JSImport("@babel/types", "tsTypePredicate")
+@js.native
+object tsTypePredicate extends js.Object {
+  def apply(parameterName: Identifier, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
+  def apply(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
+}
+

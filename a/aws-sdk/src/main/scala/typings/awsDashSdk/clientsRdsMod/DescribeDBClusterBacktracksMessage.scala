@@ -34,13 +34,13 @@ object DescribeDBClusterBacktracksMessage {
     BacktrackIdentifier: String = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    MaxRecords: Int | scala.Double = null
   ): DescribeDBClusterBacktracksMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier)
     if (BacktrackIdentifier != null) __obj.updateDynamic("BacktrackIdentifier")(BacktrackIdentifier)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBClusterBacktracksMessage]
   }
 }

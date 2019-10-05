@@ -32,7 +32,7 @@ object KeysAndAttributes {
   def apply(
     Keys: KeyList,
     AttributesToGet: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ProjectionExpression: ProjectionExpression = null
   ): KeysAndAttributes = {

@@ -1,6 +1,6 @@
 package typings.reactDashStripeDashElements
 
-import typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElementsNs.TokenType
+import typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.TokenType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

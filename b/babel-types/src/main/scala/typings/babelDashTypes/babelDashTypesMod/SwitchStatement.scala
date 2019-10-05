@@ -37,3 +37,11 @@ object SwitchStatement {
   }
 }
 
+@JSImport("babel-types", "switchStatement")
+@js.native
+object switchStatement extends js.Object {
+  def apply(): SwitchStatement = js.native
+  def apply(discriminant: Expression): SwitchStatement = js.native
+  def apply(discriminant: Expression, cases: js.Array[SwitchCase]): SwitchStatement = js.native
+}
+

@@ -1,5 +1,6 @@
 package typings.aureliaDashPal.aureliaDashPalMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,10 @@ trait Feature extends js.Object {
     */
   var shadowDOM: Boolean
 }
+
+@JSImport("aurelia-pal", "FEATURE")
+@js.native
+object FEATURE extends TopLevel[Feature]
 
 object Feature {
   @scala.inline

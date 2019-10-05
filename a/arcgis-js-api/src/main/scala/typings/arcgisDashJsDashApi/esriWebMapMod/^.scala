@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebMapMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WebMapConstructor
+import typings.arcgisDashJsDashApi.__esri.WebMapConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

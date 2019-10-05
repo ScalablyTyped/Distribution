@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BatchManager")
 @js.native
 class BatchManager protected ()
-  extends typings.playcanvas.pcNs.BatchManager {
+  extends typings.playcanvas.pc.BatchManager {
   def this(
-    device: typings.playcanvas.pcNs.GraphicsDevice,
-    root: typings.playcanvas.pcNs.Entity,
-    scene: typings.playcanvas.pcNs.Scene
+    device: typings.playcanvas.pc.GraphicsDevice,
+    root: typings.playcanvas.pc.Entity,
+    scene: typings.playcanvas.pc.Scene
   ) = this()
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "CanvasGraphicsRenderer")
 @js.native
 class CanvasGraphicsRenderer protected ()
-  extends typings.pixiDotJs.PIXINs.CanvasGraphicsRenderer {
-  def this(renderer: typings.pixiDotJs.PIXINs.SystemRenderer) = this()
+  extends typings.pixiDotJs.PIXI.CanvasGraphicsRenderer {
+  def this(renderer: typings.pixiDotJs.PIXI.SystemRenderer) = this()
 }
 

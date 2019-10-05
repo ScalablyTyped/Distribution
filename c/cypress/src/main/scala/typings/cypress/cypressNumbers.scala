@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.JQueryNs.Key
-import typings.cypress.JQueryNs.Mouse
+import typings.cypress.JQuery.Key
+import typings.cypress.JQuery.Mouse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

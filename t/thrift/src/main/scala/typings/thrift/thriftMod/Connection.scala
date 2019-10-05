@@ -1,7 +1,7 @@
 package typings.thrift.thriftMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.node.netMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`

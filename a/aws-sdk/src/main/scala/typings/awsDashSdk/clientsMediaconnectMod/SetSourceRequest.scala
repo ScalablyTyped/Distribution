@@ -53,9 +53,9 @@ object SetSourceRequest {
     Decryption: Encryption = null,
     Description: __string = null,
     EntitlementArn: __string = null,
-    IngestPort: js.UndefOr[__integer] = js.undefined,
-    MaxBitrate: js.UndefOr[__integer] = js.undefined,
-    MaxLatency: js.UndefOr[__integer] = js.undefined,
+    IngestPort: Int | Double = null,
+    MaxBitrate: Int | Double = null,
+    MaxLatency: Int | Double = null,
     Name: __string = null,
     Protocol: Protocol = null,
     StreamId: __string = null,
@@ -65,9 +65,9 @@ object SetSourceRequest {
     if (Decryption != null) __obj.updateDynamic("Decryption")(Decryption)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn)
-    if (!js.isUndefined(IngestPort)) __obj.updateDynamic("IngestPort")(IngestPort)
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate)
-    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency)
+    if (IngestPort != null) __obj.updateDynamic("IngestPort")(IngestPort.asInstanceOf[js.Any])
+    if (MaxBitrate != null) __obj.updateDynamic("MaxBitrate")(MaxBitrate.asInstanceOf[js.Any])
+    if (MaxLatency != null) __obj.updateDynamic("MaxLatency")(MaxLatency.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId)

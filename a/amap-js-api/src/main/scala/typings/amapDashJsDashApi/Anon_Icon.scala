@@ -1,7 +1,7 @@
 package typings.amapDashJsDashApi
 
-import typings.amapDashJsDashApi.AMapNs.LabelMarkerNs.IconOptions
-import typings.amapDashJsDashApi.AMapNs.LabelMarkerNs.TextOptions
+import typings.amapDashJsDashApi.AMap.LabelMarker.IconOptions
+import typings.amapDashJsDashApi.AMap.LabelMarker.TextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.winston.libWinstonTransportsMod
 
 import typings.logform.logformMod.Format
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.winstonDashTransport.winstonDashTransportMod.TransportStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

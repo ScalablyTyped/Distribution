@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/setISOWeekYear", JSImport.Namespace)
 @js.native
 object esmSetISOWeekYearMod extends js.Object {
-  def default(date: Double, isoWeekYear: Double): Date = js.native
-  def default(date: Date, isoWeekYear: Double): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double, isoWeekYear: Double): Date = js.native
+    def apply(date: Date, isoWeekYear: Double): Date = js.native
+  }
+  
 }
 

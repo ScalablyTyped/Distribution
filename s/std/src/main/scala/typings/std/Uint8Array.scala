@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.UInt8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -335,12 +336,5 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
 
 @JSGlobal("Uint8Array")
 @js.native
-class Uint8ArrayCls () extends Uint8Array {
-  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
-  def this(arrayOrArrayBuffer: ArrayLike[Double]) = this()
-  def this(elements: Iterable[Double]) = this()
-  def this(length: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
-}
+object Uint8Array extends TopLevel[Uint8ArrayConstructor]
 

@@ -3,6 +3,7 @@ package typings.antd.esTransferListMod
 import typings.antd.esTransferMod.RenderResult
 import typings.antd.esTransferMod.TransferDirection
 import typings.antd.esTransferMod.TransferItem
+import typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
@@ -53,7 +54,6 @@ object TransferListProps {
     handleSelectAll: (js.Array[TransferItem], Boolean) => Unit,
     itemUnit: String,
     itemsUnit: String,
-    notFoundContent: ReactNode,
     onItemSelect: (String, Boolean) => Unit,
     onItemSelectAll: (js.Array[String], Boolean) => Unit,
     onScroll: js.Function,
@@ -65,20 +65,22 @@ object TransferListProps {
     filterOption: (/* filterText */ String, /* item */ TransferItem) => Boolean = null,
     footer: /* props */ TransferListProps => ReactNode = null,
     `lazy`: Boolean | js.Object = null,
+    notFoundContent: ReactNode = null,
     render: /* item */ TransferItem => RenderResult = null,
-    renderList: RenderListFunction = null,
+    renderList: /* props */ TransferListBodyProps => ReactNode = null,
     showSearch: js.UndefOr[Boolean] = js.undefined,
     showSelectAll: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): TransferListProps = {
-    val __obj = js.Dynamic.literal(checkedKeys = checkedKeys, dataSource = dataSource, direction = direction, handleClear = js.Any.fromFunction0(handleClear), handleFilter = js.Any.fromFunction1(handleFilter), handleSelect = js.Any.fromFunction2(handleSelect), handleSelectAll = js.Any.fromFunction2(handleSelectAll), itemUnit = itemUnit, itemsUnit = itemsUnit, notFoundContent = notFoundContent.asInstanceOf[js.Any], onItemSelect = js.Any.fromFunction2(onItemSelect), onItemSelectAll = js.Any.fromFunction2(onItemSelectAll), onScroll = onScroll, prefixCls = prefixCls, searchPlaceholder = searchPlaceholder, titleText = titleText)
+    val __obj = js.Dynamic.literal(checkedKeys = checkedKeys, dataSource = dataSource, direction = direction, handleClear = js.Any.fromFunction0(handleClear), handleFilter = js.Any.fromFunction1(handleFilter), handleSelect = js.Any.fromFunction2(handleSelect), handleSelectAll = js.Any.fromFunction2(handleSelectAll), itemUnit = itemUnit, itemsUnit = itemsUnit, onItemSelect = js.Any.fromFunction2(onItemSelect), onItemSelectAll = js.Any.fromFunction2(onItemSelectAll), onScroll = onScroll, prefixCls = prefixCls, searchPlaceholder = searchPlaceholder, titleText = titleText)
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1(body))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (renderList != null) __obj.updateDynamic("renderList")(renderList)
+    if (renderList != null) __obj.updateDynamic("renderList")(js.Any.fromFunction1(renderList))
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
     if (!js.isUndefined(showSelectAll)) __obj.updateDynamic("showSelectAll")(showSelectAll)
     if (style != null) __obj.updateDynamic("style")(style)

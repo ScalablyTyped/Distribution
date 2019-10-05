@@ -17,13 +17,10 @@ trait Scte20SourceSettings extends js.Object {
 
 object Scte20SourceSettings {
   @scala.inline
-  def apply(
-    Convert608To708: Scte20Convert608To708 = null,
-    Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined
-  ): Scte20SourceSettings = {
+  def apply(Convert608To708: Scte20Convert608To708 = null, Source608ChannelNumber: Int | Double = null): Scte20SourceSettings = {
     val __obj = js.Dynamic.literal()
     if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
-    if (!js.isUndefined(Source608ChannelNumber)) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber)
+    if (Source608ChannelNumber != null) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte20SourceSettings]
   }
 }

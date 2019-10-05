@@ -17,12 +17,12 @@ class Boot () extends js.Object {
     * The instance of app
     * @member {Application}
     */
-  var app: typings.eggDashView.eggMod.Application = js.native
+  var app: Application = js.native
   /**
     * The configuration of application
     * @member {EggAppConfig}
     */
-  var config: typings.eggDashView.eggMod.EggAppConfig = js.native
+  var config: EggAppConfig = js.native
   /**
     * logger
     * @member {EggLogger}

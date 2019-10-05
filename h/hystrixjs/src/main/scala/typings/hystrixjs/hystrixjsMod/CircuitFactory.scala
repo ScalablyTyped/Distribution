@@ -1,5 +1,6 @@
 package typings.hystrixjs.hystrixjsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,4 +23,8 @@ object CircuitFactory {
     __obj.asInstanceOf[CircuitFactory]
   }
 }
+
+@JSImport("hystrixjs", "circuitFactory")
+@js.native
+object circuitFactory extends TopLevel[CircuitFactory]
 

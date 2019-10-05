@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.RiskAssessment
+import typings.fhir.fhir.RiskAssessment
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

@@ -1,5 +1,6 @@
 package typings.httpDashStatus
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -230,4 +231,8 @@ object HttpStatus {
     __obj.asInstanceOf[HttpStatus]
   }
 }
+
+@JSGlobal("httpStatus")
+@js.native
+object httpStatus extends TopLevel[HttpStatus]
 

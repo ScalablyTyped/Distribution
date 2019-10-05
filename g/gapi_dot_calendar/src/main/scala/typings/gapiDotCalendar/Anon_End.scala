@@ -1,6 +1,6 @@
 package typings.gapiDotCalendar
 
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.datetime
+import typings.gapiDotCalendar.gapi.client.calendar.datetime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

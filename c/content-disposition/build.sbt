@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "content-disposition"
-version := "0.5-dt-20180214Z-a4aabb"
-scalaVersion := "2.12.9"
+version := "0.5-dt-20180214Z-1dee56"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

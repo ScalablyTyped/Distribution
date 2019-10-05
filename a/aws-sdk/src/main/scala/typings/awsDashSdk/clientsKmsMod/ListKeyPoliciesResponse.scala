@@ -24,7 +24,7 @@ object ListKeyPoliciesResponse {
   def apply(
     NextMarker: MarkerType = null,
     PolicyNames: PolicyNameList = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
+    Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListKeyPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)

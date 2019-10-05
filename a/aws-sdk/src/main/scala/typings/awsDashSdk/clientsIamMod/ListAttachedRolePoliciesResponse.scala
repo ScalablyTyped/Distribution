@@ -23,7 +23,7 @@ object ListAttachedRolePoliciesResponse {
   @scala.inline
   def apply(
     AttachedPolicies: attachedPoliciesListType = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListAttachedRolePoliciesResponse = {
     val __obj = js.Dynamic.literal()

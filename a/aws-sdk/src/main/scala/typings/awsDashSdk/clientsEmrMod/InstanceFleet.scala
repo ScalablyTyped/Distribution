@@ -55,11 +55,11 @@ object InstanceFleet {
     InstanceTypeSpecifications: InstanceTypeSpecificationList = null,
     LaunchSpecifications: InstanceFleetProvisioningSpecifications = null,
     Name: XmlStringMaxLen256 = null,
-    ProvisionedOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
-    ProvisionedSpotCapacity: js.UndefOr[WholeNumber] = js.undefined,
+    ProvisionedOnDemandCapacity: Int | Double = null,
+    ProvisionedSpotCapacity: Int | Double = null,
     Status: InstanceFleetStatus = null,
-    TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
-    TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
+    TargetOnDemandCapacity: Int | Double = null,
+    TargetSpotCapacity: Int | Double = null
   ): InstanceFleet = {
     val __obj = js.Dynamic.literal()
     if (Id != null) __obj.updateDynamic("Id")(Id)
@@ -67,11 +67,11 @@ object InstanceFleet {
     if (InstanceTypeSpecifications != null) __obj.updateDynamic("InstanceTypeSpecifications")(InstanceTypeSpecifications)
     if (LaunchSpecifications != null) __obj.updateDynamic("LaunchSpecifications")(LaunchSpecifications)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(ProvisionedOnDemandCapacity)) __obj.updateDynamic("ProvisionedOnDemandCapacity")(ProvisionedOnDemandCapacity)
-    if (!js.isUndefined(ProvisionedSpotCapacity)) __obj.updateDynamic("ProvisionedSpotCapacity")(ProvisionedSpotCapacity)
+    if (ProvisionedOnDemandCapacity != null) __obj.updateDynamic("ProvisionedOnDemandCapacity")(ProvisionedOnDemandCapacity.asInstanceOf[js.Any])
+    if (ProvisionedSpotCapacity != null) __obj.updateDynamic("ProvisionedSpotCapacity")(ProvisionedSpotCapacity.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status)
-    if (!js.isUndefined(TargetOnDemandCapacity)) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity)
-    if (!js.isUndefined(TargetSpotCapacity)) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity)
+    if (TargetOnDemandCapacity != null) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.asInstanceOf[js.Any])
+    if (TargetSpotCapacity != null) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleet]
   }
 }

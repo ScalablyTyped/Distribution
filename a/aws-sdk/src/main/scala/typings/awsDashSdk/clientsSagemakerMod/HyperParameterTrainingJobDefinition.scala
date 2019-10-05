@@ -61,9 +61,9 @@ object HyperParameterTrainingJobDefinition {
     RoleArn: RoleArn,
     StoppingCondition: StoppingCondition,
     CheckpointConfig: CheckpointConfig = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
     InputDataConfig: InputDataConfig = null,
     StaticHyperParameters: HyperParameters = null,
     VpcConfig: VpcConfig = null

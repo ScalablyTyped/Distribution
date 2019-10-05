@@ -1,7 +1,7 @@
 package typings.atJupyterlabObservables
 
 import typings.atJupyterlabObservables.libModeldbMod.ObservableType
-import typings.atJupyterlabObservables.libObservablelistMod.IObservableListNs.ChangeType
+import typings.atJupyterlabObservables.libObservablelistMod.IObservableList.ChangeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,29 +22,29 @@ object atJupyterlabObservablesStrings {
   @js.native
   sealed trait add
     extends ChangeType
-       with typings.atJupyterlabObservables.libObservablemapMod.IObservableMapNs.ChangeType
+       with typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
   
   @js.native
   sealed trait change
-    extends typings.atJupyterlabObservables.libObservablemapMod.IObservableMapNs.ChangeType
+    extends typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
   
   @js.native
   sealed trait insert
-    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableStringNs.ChangeType
+    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
   
   @js.native
   sealed trait move extends ChangeType
   
   @js.native
   sealed trait remove
-    extends ChangeType
-       with typings.atJupyterlabObservables.libObservablemapMod.IObservableMapNs.ChangeType
-       with typings.atJupyterlabObservables.libObservablestringMod.IObservableStringNs.ChangeType
+    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
+       with ChangeType
+       with typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
   
   @js.native
   sealed trait set
-    extends ChangeType
-       with typings.atJupyterlabObservables.libObservablestringMod.IObservableStringNs.ChangeType
+    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
+       with ChangeType
   
   @scala.inline
   def List: List = "List".asInstanceOf[List]

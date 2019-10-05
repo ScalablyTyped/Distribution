@@ -21,7 +21,11 @@ trait CancelConversionRequest extends js.Object {
 
 object CancelConversionRequest {
   @scala.inline
-  def apply(ConversionTaskId: String, DryRun: js.UndefOr[Boolean] = js.undefined, ReasonMessage: String = null): CancelConversionRequest = {
+  def apply(
+    ConversionTaskId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    ReasonMessage: String = null
+  ): CancelConversionRequest = {
     val __obj = js.Dynamic.literal(ConversionTaskId = ConversionTaskId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (ReasonMessage != null) __obj.updateDynamic("ReasonMessage")(ReasonMessage)

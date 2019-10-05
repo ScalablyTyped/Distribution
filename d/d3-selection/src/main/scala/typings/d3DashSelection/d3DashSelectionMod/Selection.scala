@@ -1,5 +1,6 @@
 package typings.d3DashSelection.d3DashSelectionMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.d3DashSelection.d3DashSelectionStrings.`object`
 import typings.d3DashSelection.d3DashSelectionStrings.`var`
 import typings.d3DashSelection.d3DashSelectionStrings.a
@@ -4181,4 +4182,8 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("text")
   def text_String(): String = js.native
 }
+
+@JSImport("d3-selection", "selection")
+@js.native
+object selection extends TopLevel[SelectionFn]
 

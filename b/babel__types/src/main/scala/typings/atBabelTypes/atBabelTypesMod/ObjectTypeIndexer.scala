@@ -49,3 +49,26 @@ object ObjectTypeIndexer {
   }
 }
 
+@JSImport("@babel/types", "objectTypeIndexer")
+@js.native
+object objectTypeIndexer extends js.Object {
+  def apply(id: js.UndefOr[scala.Nothing], key: FlowType, value: FlowType): ObjectTypeIndexer = js.native
+  def apply(id: js.UndefOr[scala.Nothing], key: FlowType, value: FlowType, variance: Null, _static: Boolean): ObjectTypeIndexer = js.native
+  def apply(id: js.UndefOr[scala.Nothing], key: FlowType, value: FlowType, variance: Variance): ObjectTypeIndexer = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    key: FlowType,
+    value: FlowType,
+    variance: Variance,
+    _static: Boolean
+  ): ObjectTypeIndexer = js.native
+  def apply(id: Null, key: FlowType, value: FlowType): ObjectTypeIndexer = js.native
+  def apply(id: Null, key: FlowType, value: FlowType, variance: Null, _static: Boolean): ObjectTypeIndexer = js.native
+  def apply(id: Null, key: FlowType, value: FlowType, variance: Variance): ObjectTypeIndexer = js.native
+  def apply(id: Null, key: FlowType, value: FlowType, variance: Variance, _static: Boolean): ObjectTypeIndexer = js.native
+  def apply(id: Identifier, key: FlowType, value: FlowType): ObjectTypeIndexer = js.native
+  def apply(id: Identifier, key: FlowType, value: FlowType, variance: Null, _static: Boolean): ObjectTypeIndexer = js.native
+  def apply(id: Identifier, key: FlowType, value: FlowType, variance: Variance): ObjectTypeIndexer = js.native
+  def apply(id: Identifier, key: FlowType, value: FlowType, variance: Variance, _static: Boolean): ObjectTypeIndexer = js.native
+}
+

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -246,38 +247,38 @@ object IgGridUpdating {
     cancelLabel: String = null,
     cancelTooltip: String = null,
     columnSettings: js.Array[IgGridUpdatingColumnSetting] = null,
-    dataDirty: DataDirtyEvent = null,
+    dataDirty: (/* event */ Event, /* ui */ DataDirtyEventUIParam) => Unit = null,
     deleteRowLabel: String = null,
     deleteRowTooltip: String = null,
     dialogWidget: String = null,
     doneLabel: String = null,
     doneTooltip: String = null,
-    editCellEnded: EditCellEndedEvent = null,
-    editCellEnding: EditCellEndingEvent = null,
-    editCellStarted: EditCellStartedEvent = null,
-    editCellStarting: EditCellStartingEvent = null,
+    editCellEnded: (/* event */ Event, /* ui */ EditCellEndedEventUIParam) => Unit = null,
+    editCellEnding: (/* event */ Event, /* ui */ EditCellEndingEventUIParam) => Unit = null,
+    editCellStarted: (/* event */ Event, /* ui */ EditCellStartedEventUIParam) => Unit = null,
+    editCellStarting: (/* event */ Event, /* ui */ EditCellStartingEventUIParam) => Unit = null,
     editMode: String = null,
-    editRowEnded: EditRowEndedEvent = null,
-    editRowEnding: EditRowEndingEvent = null,
-    editRowStarted: EditRowStartedEvent = null,
-    editRowStarting: EditRowStartingEvent = null,
+    editRowEnded: (/* event */ Event, /* ui */ EditRowEndedEventUIParam) => Unit = null,
+    editRowEnding: (/* event */ Event, /* ui */ EditRowEndingEventUIParam) => Unit = null,
+    editRowStarted: (/* event */ Event, /* ui */ EditRowStartedEventUIParam) => Unit = null,
+    editRowStarting: (/* event */ Event, /* ui */ EditRowStartingEventUIParam) => Unit = null,
     enableAddRow: js.UndefOr[Boolean] = js.undefined,
     enableDataDirtyException: js.UndefOr[Boolean] = js.undefined,
     enableDeleteRow: js.UndefOr[Boolean] = js.undefined,
     excelNavigationMode: js.UndefOr[Boolean] = js.undefined,
-    generatePrimaryKeyValue: GeneratePrimaryKeyValueEvent = null,
+    generatePrimaryKeyValue: (/* event */ Event, /* ui */ GeneratePrimaryKeyValueEventUIParam) => Unit = null,
     horizontalMoveOnEnter: js.UndefOr[Boolean] = js.undefined,
     inherit: js.UndefOr[Boolean] = js.undefined,
     locale: IgGridUpdatingLocale = null,
-    rowAdded: RowAddedEvent = null,
-    rowAdding: RowAddingEvent = null,
-    rowDeleted: RowDeletedEvent = null,
-    rowDeleting: RowDeletingEvent = null,
-    rowEditDialogAfterClose: RowEditDialogAfterCloseEvent = null,
-    rowEditDialogAfterOpen: RowEditDialogAfterOpenEvent = null,
-    rowEditDialogBeforeClose: RowEditDialogBeforeCloseEvent = null,
-    rowEditDialogBeforeOpen: RowEditDialogBeforeOpenEvent = null,
-    rowEditDialogContentsRendered: RowEditDialogContentsRenderedEvent = null,
+    rowAdded: (/* event */ Event, /* ui */ RowAddedEventUIParam) => Unit = null,
+    rowAdding: (/* event */ Event, /* ui */ RowAddingEventUIParam) => Unit = null,
+    rowDeleted: (/* event */ Event, /* ui */ RowDeletedEventUIParam) => Unit = null,
+    rowDeleting: (/* event */ Event, /* ui */ RowDeletingEventUIParam) => Unit = null,
+    rowEditDialogAfterClose: (/* event */ Event, /* ui */ RowEditDialogAfterCloseEventUIParam) => Unit = null,
+    rowEditDialogAfterOpen: (/* event */ Event, /* ui */ RowEditDialogAfterOpenEventUIParam) => Unit = null,
+    rowEditDialogBeforeClose: (/* event */ Event, /* ui */ RowEditDialogBeforeCloseEventUIParam) => Unit = null,
+    rowEditDialogBeforeOpen: (/* event */ Event, /* ui */ RowEditDialogBeforeOpenEventUIParam) => Unit = null,
+    rowEditDialogContentsRendered: (/* event */ Event, /* ui */ RowEditDialogContentsRenderedEventUIParam) => Unit = null,
     rowEditDialogOptions: IgGridUpdatingRowEditDialogOptions = null,
     saveChangesErrorHandler: js.Function | String = null,
     saveChangesSuccessHandler: js.Function | String = null,
@@ -294,38 +295,38 @@ object IgGridUpdating {
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
     if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip)
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (dataDirty != null) __obj.updateDynamic("dataDirty")(dataDirty)
+    if (dataDirty != null) __obj.updateDynamic("dataDirty")(js.Any.fromFunction2(dataDirty))
     if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel)
     if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip)
     if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
     if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel)
     if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip)
-    if (editCellEnded != null) __obj.updateDynamic("editCellEnded")(editCellEnded)
-    if (editCellEnding != null) __obj.updateDynamic("editCellEnding")(editCellEnding)
-    if (editCellStarted != null) __obj.updateDynamic("editCellStarted")(editCellStarted)
-    if (editCellStarting != null) __obj.updateDynamic("editCellStarting")(editCellStarting)
+    if (editCellEnded != null) __obj.updateDynamic("editCellEnded")(js.Any.fromFunction2(editCellEnded))
+    if (editCellEnding != null) __obj.updateDynamic("editCellEnding")(js.Any.fromFunction2(editCellEnding))
+    if (editCellStarted != null) __obj.updateDynamic("editCellStarted")(js.Any.fromFunction2(editCellStarted))
+    if (editCellStarting != null) __obj.updateDynamic("editCellStarting")(js.Any.fromFunction2(editCellStarting))
     if (editMode != null) __obj.updateDynamic("editMode")(editMode)
-    if (editRowEnded != null) __obj.updateDynamic("editRowEnded")(editRowEnded)
-    if (editRowEnding != null) __obj.updateDynamic("editRowEnding")(editRowEnding)
-    if (editRowStarted != null) __obj.updateDynamic("editRowStarted")(editRowStarted)
-    if (editRowStarting != null) __obj.updateDynamic("editRowStarting")(editRowStarting)
+    if (editRowEnded != null) __obj.updateDynamic("editRowEnded")(js.Any.fromFunction2(editRowEnded))
+    if (editRowEnding != null) __obj.updateDynamic("editRowEnding")(js.Any.fromFunction2(editRowEnding))
+    if (editRowStarted != null) __obj.updateDynamic("editRowStarted")(js.Any.fromFunction2(editRowStarted))
+    if (editRowStarting != null) __obj.updateDynamic("editRowStarting")(js.Any.fromFunction2(editRowStarting))
     if (!js.isUndefined(enableAddRow)) __obj.updateDynamic("enableAddRow")(enableAddRow)
     if (!js.isUndefined(enableDataDirtyException)) __obj.updateDynamic("enableDataDirtyException")(enableDataDirtyException)
     if (!js.isUndefined(enableDeleteRow)) __obj.updateDynamic("enableDeleteRow")(enableDeleteRow)
     if (!js.isUndefined(excelNavigationMode)) __obj.updateDynamic("excelNavigationMode")(excelNavigationMode)
-    if (generatePrimaryKeyValue != null) __obj.updateDynamic("generatePrimaryKeyValue")(generatePrimaryKeyValue)
+    if (generatePrimaryKeyValue != null) __obj.updateDynamic("generatePrimaryKeyValue")(js.Any.fromFunction2(generatePrimaryKeyValue))
     if (!js.isUndefined(horizontalMoveOnEnter)) __obj.updateDynamic("horizontalMoveOnEnter")(horizontalMoveOnEnter)
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (rowAdded != null) __obj.updateDynamic("rowAdded")(rowAdded)
-    if (rowAdding != null) __obj.updateDynamic("rowAdding")(rowAdding)
-    if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(rowDeleted)
-    if (rowDeleting != null) __obj.updateDynamic("rowDeleting")(rowDeleting)
-    if (rowEditDialogAfterClose != null) __obj.updateDynamic("rowEditDialogAfterClose")(rowEditDialogAfterClose)
-    if (rowEditDialogAfterOpen != null) __obj.updateDynamic("rowEditDialogAfterOpen")(rowEditDialogAfterOpen)
-    if (rowEditDialogBeforeClose != null) __obj.updateDynamic("rowEditDialogBeforeClose")(rowEditDialogBeforeClose)
-    if (rowEditDialogBeforeOpen != null) __obj.updateDynamic("rowEditDialogBeforeOpen")(rowEditDialogBeforeOpen)
-    if (rowEditDialogContentsRendered != null) __obj.updateDynamic("rowEditDialogContentsRendered")(rowEditDialogContentsRendered)
+    if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction2(rowAdded))
+    if (rowAdding != null) __obj.updateDynamic("rowAdding")(js.Any.fromFunction2(rowAdding))
+    if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(js.Any.fromFunction2(rowDeleted))
+    if (rowDeleting != null) __obj.updateDynamic("rowDeleting")(js.Any.fromFunction2(rowDeleting))
+    if (rowEditDialogAfterClose != null) __obj.updateDynamic("rowEditDialogAfterClose")(js.Any.fromFunction2(rowEditDialogAfterClose))
+    if (rowEditDialogAfterOpen != null) __obj.updateDynamic("rowEditDialogAfterOpen")(js.Any.fromFunction2(rowEditDialogAfterOpen))
+    if (rowEditDialogBeforeClose != null) __obj.updateDynamic("rowEditDialogBeforeClose")(js.Any.fromFunction2(rowEditDialogBeforeClose))
+    if (rowEditDialogBeforeOpen != null) __obj.updateDynamic("rowEditDialogBeforeOpen")(js.Any.fromFunction2(rowEditDialogBeforeOpen))
+    if (rowEditDialogContentsRendered != null) __obj.updateDynamic("rowEditDialogContentsRendered")(js.Any.fromFunction2(rowEditDialogContentsRendered))
     if (rowEditDialogOptions != null) __obj.updateDynamic("rowEditDialogOptions")(rowEditDialogOptions)
     if (saveChangesErrorHandler != null) __obj.updateDynamic("saveChangesErrorHandler")(saveChangesErrorHandler.asInstanceOf[js.Any])
     if (saveChangesSuccessHandler != null) __obj.updateDynamic("saveChangesSuccessHandler")(saveChangesSuccessHandler.asInstanceOf[js.Any])

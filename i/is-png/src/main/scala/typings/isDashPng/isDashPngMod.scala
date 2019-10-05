@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("is-png", JSImport.Namespace)
 @js.native
 object isDashPngMod extends js.Object {
+  def apply(buffer: Buffer): Boolean = js.native
   /**
   Check if a Buffer/Uint8Array is a [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) image.
   @param buffer - The buffer to check. It only needs the first 8 bytes.
@@ -30,6 +31,6 @@ object isDashPngMod extends js.Object {
   })();
   ```
   */
-  def apply(buffer: Uint8Array | Buffer): Boolean = js.native
+  def apply(buffer: Uint8Array): Boolean = js.native
 }
 

@@ -1,11 +1,11 @@
 package typings.typeDashFest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typeDashFest.sourcePackageDashJsonMod.PackageJsonNs.BugsLocation
-import typings.typeDashFest.sourcePackageDashJsonMod.PackageJsonNs.Dependency
-import typings.typeDashFest.sourcePackageDashJsonMod.PackageJsonNs.DirectoryLocations
-import typings.typeDashFest.sourcePackageDashJsonMod.PackageJsonNs.Person
-import typings.typeDashFest.sourcePackageDashJsonMod.PackageJsonNs.Scripts
+import typings.typeDashFest.sourcePackageDashJsonMod.PackageJson.BugsLocation
+import typings.typeDashFest.sourcePackageDashJsonMod.PackageJson.Dependency
+import typings.typeDashFest.sourcePackageDashJsonMod.PackageJson.DirectoryLocations
+import typings.typeDashFest.sourcePackageDashJsonMod.PackageJson.Person
+import typings.typeDashFest.sourcePackageDashJsonMod.PackageJson.Scripts
 import typings.typeDashFest.typeDashFestMod.LiteralUnion
 import typings.typeDashFest.typeDashFestStrings.DOT
 import typings.typeDashFest.typeDashFestStrings.`!aix`

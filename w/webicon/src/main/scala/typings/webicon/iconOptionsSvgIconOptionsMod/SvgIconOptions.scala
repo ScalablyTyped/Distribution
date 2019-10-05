@@ -8,6 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.webicon.iconSizeableMod.Sizeable because Already inherited
+- typings.webicon.iconIconMod.Icon because Already inherited
 - typings.webicon.iconSvgIconMod.SvgIcon because var conflicts: iconIdParser, iconSize. Inlined viewBox */ trait SvgIconOptions
   extends ImageIconOptions
      with SizeableOptions {

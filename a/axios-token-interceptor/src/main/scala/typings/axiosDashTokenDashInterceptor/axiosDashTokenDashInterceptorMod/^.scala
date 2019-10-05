@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   // Module
   def apply(Options: InterceptorOptions): TokenProvider = js.native
-  def tokenCache(getToken: js.Promise[String], options: TokenCacheOptions): TokenCache = js.native
 }
 

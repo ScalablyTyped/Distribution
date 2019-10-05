@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "TextureAtlasHandler")
 @js.native
 class TextureAtlasHandler protected ()
-  extends typings.playcanvas.pcNs.TextureAtlasHandler {
-  def this(loader: typings.playcanvas.pcNs.ResourceLoader) = this()
+  extends typings.playcanvas.pc.TextureAtlasHandler {
+  def this(loader: typings.playcanvas.pc.ResourceLoader) = this()
 }
 

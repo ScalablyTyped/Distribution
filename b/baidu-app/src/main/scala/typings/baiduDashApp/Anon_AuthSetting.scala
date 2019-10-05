@@ -1,6 +1,6 @@
 package typings.baiduDashApp
 
-import typings.baiduDashApp.swanNs.AuthSetting
+import typings.baiduDashApp.swan.AuthSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

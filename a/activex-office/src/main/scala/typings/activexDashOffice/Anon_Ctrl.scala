@@ -1,6 +1,6 @@
 package typings.activexDashOffice
 
-import typings.activexDashOffice.OfficeNs.CommandBarComboBox
+import typings.activexDashOffice.Office.CommandBarComboBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

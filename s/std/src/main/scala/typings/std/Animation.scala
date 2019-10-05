@@ -101,14 +101,6 @@ trait Animation extends EventTarget {
 
 @JSGlobal("Animation")
 @js.native
-class AnimationCls () extends Animation {
-  def this(effect: AnimationEffect) = this()
-  def this(effect: Null, timeline: AnimationTimeline) = this()
-  def this(effect: AnimationEffect, timeline: AnimationTimeline) = this()
-}
-
-@JSGlobal("Animation")
-@js.native
 object Animation
   extends Instantiable0[Animation]
      with Instantiable2[

@@ -31,9 +31,5 @@ trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
 
 @JSGlobal("HTMLAllCollection")
 @js.native
-class HTMLAllCollectionCls () extends HTMLAllCollection
-
-@JSGlobal("HTMLAllCollection")
-@js.native
 object HTMLAllCollection extends Instantiable0[HTMLAllCollection]
 

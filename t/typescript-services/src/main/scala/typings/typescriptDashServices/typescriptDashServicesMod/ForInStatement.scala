@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ForInStatement")
 @js.native
 class ForInStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ForInStatement {
+  extends typings.typescriptDashServices.TypeScript.ForInStatement {
   def this(
-    variableDeclaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclaration,
-    left: typings.typescriptDashServices.TypeScriptNs.AST,
-    expression: typings.typescriptDashServices.TypeScriptNs.AST,
-    statement: typings.typescriptDashServices.TypeScriptNs.AST
+    variableDeclaration: typings.typescriptDashServices.TypeScript.VariableDeclaration,
+    left: typings.typescriptDashServices.TypeScript.AST,
+    expression: typings.typescriptDashServices.TypeScript.AST,
+    statement: typings.typescriptDashServices.TypeScript.AST
   ) = this()
 }
 

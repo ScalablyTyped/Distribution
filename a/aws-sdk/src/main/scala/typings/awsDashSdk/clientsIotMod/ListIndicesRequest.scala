@@ -17,9 +17,9 @@ trait ListIndicesRequest extends js.Object {
 
 object ListIndicesRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[QueryMaxResults] = js.undefined, nextToken: NextToken = null): ListIndicesRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: NextToken = null): ListIndicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListIndicesRequest]
   }

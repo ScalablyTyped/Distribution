@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baconjs", "Next")
 @js.native
 class Next[A] protected ()
-  extends typings.baconjs.BaconNs.Next[A] {
+  extends typings.baconjs.Bacon.Next[A] {
   /**
     * @callback Next#constructor
     * @returns {A}

@@ -83,15 +83,15 @@ object Disk {
     attachedTo: ResourceName = null,
     attachmentState: String = null,
     createdAt: IsoDate = null,
-    gbInUse: js.UndefOr[integer] = js.undefined,
-    iops: js.UndefOr[integer] = js.undefined,
+    gbInUse: Int | Double = null,
+    iops: Int | Double = null,
     isAttached: js.UndefOr[Boolean] = js.undefined,
     isSystemDisk: js.UndefOr[Boolean] = js.undefined,
     location: ResourceLocation = null,
     name: ResourceName = null,
     path: String = null,
     resourceType: ResourceType = null,
-    sizeInGb: js.UndefOr[integer] = js.undefined,
+    sizeInGb: Int | Double = null,
     state: DiskState = null,
     supportCode: String = null,
     tags: TagList = null
@@ -102,15 +102,15 @@ object Disk {
     if (attachedTo != null) __obj.updateDynamic("attachedTo")(attachedTo)
     if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState)
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
-    if (!js.isUndefined(gbInUse)) __obj.updateDynamic("gbInUse")(gbInUse)
-    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops)
+    if (gbInUse != null) __obj.updateDynamic("gbInUse")(gbInUse.asInstanceOf[js.Any])
+    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached)
     if (!js.isUndefined(isSystemDisk)) __obj.updateDynamic("isSystemDisk")(isSystemDisk)
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb)
+    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode)
     if (tags != null) __obj.updateDynamic("tags")(tags)

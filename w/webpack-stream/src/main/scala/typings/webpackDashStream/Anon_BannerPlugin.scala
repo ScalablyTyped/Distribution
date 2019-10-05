@@ -7,11 +7,10 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.webpack.webpackMod.Compiler
-import typings.webpack.webpackMod.CompilerNs.Watching
+import typings.webpack.webpackMod.Compiler.Watching
 import typings.webpack.webpackMod.Configuration
-import typings.webpack.webpackMod.DllPluginNs.Options
 import typings.webpack.webpackMod.MultiCompiler
-import typings.webpack.webpackMod.MultiCompilerNs.Handler
+import typings.webpack.webpackMod.MultiCompiler.Handler
 import typings.webpack.webpackMod.MultiWatching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,33 +21,30 @@ trait Anon_BannerPlugin extends js.Object {
   /**
     * Plugins
     */
-  var BannerPlugin: Instantiable1[/* options */ String, typings.webpack.webpackMod.BannerPlugin] = js.native
-  val BannerPluginNs: js.Any = js.native
-  var Compiler: Instantiable0[typings.webpack.webpackMod.Compiler] = js.native
-  val CompilerNs: TypeofCompiler = js.native
+  var BannerPlugin: js.Any | (Instantiable1[/* options */ String, typings.webpack.webpackMod.BannerPlugin]) = js.native
+  var Compiler: Instantiable0[typings.webpack.webpackMod.Compiler] | TypeofCompiler = js.native
   var ContextReplacementPlugin: Instantiable1[/* resourceRegExp */ js.Any, typings.webpack.webpackMod.ContextReplacementPlugin] = js.native
   var DefinePlugin: Instantiable1[
     /* definitions */ StringDictionary[js.Any], 
     typings.webpack.webpackMod.DefinePlugin
   ] = js.native
-  var DllPlugin: Instantiable1[/* options */ Options, typings.webpack.webpackMod.DllPlugin] = js.native
-  val DllPluginNs: js.Any = js.native
-  var DllReferencePlugin: Instantiable1[
-    /* options */ typings.webpack.webpackMod.DllReferencePluginNs.Options, 
+  var DllPlugin: js.Any | (Instantiable1[
+    /* options */ typings.webpack.webpackMod.DllPlugin.Options, 
+    typings.webpack.webpackMod.DllPlugin
+  ]) = js.native
+  var DllReferencePlugin: js.Any | (Instantiable1[
+    /* options */ typings.webpack.webpackMod.DllReferencePlugin.Options, 
     typings.webpack.webpackMod.DllReferencePlugin
-  ] = js.native
-  val DllReferencePluginNs: js.Any = js.native
+  ]) = js.native
   var EnvironmentPlugin: Instantiable1[/* envs */ js.Array[String], typings.webpack.webpackMod.EnvironmentPlugin] = js.native
-  var EvalSourceMapDevToolPlugin: Instantiable0[typings.webpack.webpackMod.EvalSourceMapDevToolPlugin] = js.native
-  val EvalSourceMapDevToolPluginNs: js.Any = js.native
+  var EvalSourceMapDevToolPlugin: js.Any | Instantiable0[typings.webpack.webpackMod.EvalSourceMapDevToolPlugin] = js.native
   var ExtendedAPIPlugin: Instantiable0[typings.webpack.webpackMod.ExtendedAPIPlugin] = js.native
   var HashedModuleIdsPlugin: Instantiable0[typings.webpack.webpackMod.HashedModuleIdsPlugin] = js.native
   var HotModuleReplacementPlugin: Instantiable0[typings.webpack.webpackMod.HotModuleReplacementPlugin] = js.native
-  val ICompilerNs: js.Any = js.native
+  val ICompiler: js.Any = js.native
   var IgnorePlugin: Instantiable1[/* requestRegExp */ js.Any, typings.webpack.webpackMod.IgnorePlugin] = js.native
   var LoaderOptionsPlugin: Instantiable1[/* options */ js.Any, typings.webpack.webpackMod.LoaderOptionsPlugin] = js.native
-  var MultiCompiler: Instantiable0[typings.webpack.webpackMod.MultiCompiler] = js.native
-  val MultiCompilerNs: js.Any = js.native
+  var MultiCompiler: js.Any | Instantiable0[typings.webpack.webpackMod.MultiCompiler] = js.native
   var MultiWatching: Instantiable0[typings.webpack.webpackMod.MultiWatching] = js.native
   var NamedChunksPlugin: Instantiable0[typings.webpack.webpackMod.NamedChunksPlugin] = js.native
   /** @deprecated use config.optimization.namedModules */
@@ -60,7 +56,7 @@ trait Anon_BannerPlugin extends js.Object {
     /* newResource */ js.Any, 
     typings.webpack.webpackMod.NormalModuleReplacementPlugin
   ] = js.native
-  val OptionsNs: js.Any = js.native
+  val Options: js.Any = js.native
   var Plugin: Instantiable0[typings.webpack.webpackMod.Plugin] = js.native
   var PrefetchPlugin: Instantiable2[
     /* context */ js.Any, 
@@ -79,29 +75,27 @@ trait Anon_BannerPlugin extends js.Object {
     /* name */ String, 
     typings.webpack.webpackMod.SingleEntryPlugin
   ] = js.native
-  var SourceMapDevToolPlugin: Instantiable0[typings.webpack.webpackMod.SourceMapDevToolPlugin] = js.native
-  val SourceMapDevToolPluginNs: js.Any = js.native
+  var SourceMapDevToolPlugin: js.Any | Instantiable0[typings.webpack.webpackMod.SourceMapDevToolPlugin] = js.native
   var SplitChunksPlugin: Instantiable0[typings.webpack.webpackMod.SplitChunksPlugin] = js.native
-  var Stats: Instantiable0[typings.webpack.webpackMod.Stats] = js.native
-  val StatsNs: js.Any = js.native
-  val TemplateNs: TypeofTemplate = js.native
+  var Stats: js.Any | Instantiable0[typings.webpack.webpackMod.Stats] = js.native
+  val Template: TypeofTemplate = js.native
   var WatchIgnorePlugin: Instantiable1[
     /* paths */ js.Array[String | RegExp], 
     typings.webpack.webpackMod.WatchIgnorePlugin
   ] = js.native
-  val compilationNs: Typeofcompilation = js.native
+  val compilation: Typeofcompilation = js.native
   /** @deprecated */
-  val compilerNs: js.Any = js.native
-  val debugNs: Typeofdebug = js.native
-  val dependenciesNs: js.Any = js.native
-  val loaderNs: js.Any = js.native
-  val optimizeNs: Typeofoptimize = js.native
+  val compiler: js.Any = js.native
+  val debug: Typeofdebug = js.native
+  val dependencies: js.Any = js.native
+  val loader: js.Any = js.native
+  val optimize: Typeofoptimize = js.native
   /** Webpack package version. */
   val version: js.UndefOr[String] = js.native
   def apply(): Compiler = js.native
   def apply(options: js.Array[Configuration]): MultiCompiler = js.native
   def apply(options: js.Array[Configuration], handler: Handler): MultiWatching | MultiCompiler = js.native
   def apply(options: Configuration): Compiler = js.native
-  def apply(options: Configuration, handler: typings.webpack.webpackMod.CompilerNs.Handler): Watching | Compiler = js.native
+  def apply(options: Configuration, handler: typings.webpack.webpackMod.Compiler.Handler): Watching | Compiler = js.native
 }
 

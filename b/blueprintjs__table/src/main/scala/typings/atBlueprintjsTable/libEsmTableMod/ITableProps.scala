@@ -8,14 +8,19 @@ import typings.atBlueprintjsTable.libEsmCommonRenderModeMod.RenderMode
 import typings.atBlueprintjsTable.libEsmHeadersColumnHeaderMod.IColumnWidths
 import typings.atBlueprintjsTable.libEsmHeadersRowHeaderMod.IRowHeaderRenderer
 import typings.atBlueprintjsTable.libEsmHeadersRowHeaderMod.IRowHeights
+import typings.atBlueprintjsTable.libEsmInteractionsDraggableMod.ICoordinateData
 import typings.atBlueprintjsTable.libEsmInteractionsMenusMenuContextMod.IContextMenuRenderer
+import typings.atBlueprintjsTable.libEsmInteractionsMenusMenuContextMod.IMenuContext
 import typings.atBlueprintjsTable.libEsmInteractionsResizableMod.IIndexedResizeCallback
 import typings.atBlueprintjsTable.libEsmInteractionsSelectableMod.ISelectedRegionTransform
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
 import typings.atBlueprintjsTable.libEsmRegionsMod.IStyledRegionGroup
 import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality
 import typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -263,7 +268,7 @@ trait ITableProps
 object ITableProps {
   @scala.inline
   def apply(
-    bodyContextMenuRenderer: IContextMenuRenderer = null,
+    bodyContextMenuRenderer: /* context */ IMenuContext => Element = null,
     children: ReactElement | js.Array[ReactElement] = null,
     className: String = null,
     columnWidths: js.Array[js.UndefOr[Double | Null]] = null,
@@ -289,25 +294,25 @@ object ITableProps {
     numFrozenColumns: Int | Double = null,
     numFrozenRows: Int | Double = null,
     numRows: Int | Double = null,
-    onColumnWidthChanged: IIndexedResizeCallback = null,
+    onColumnWidthChanged: (/* index */ Double, /* size */ Double) => Unit = null,
     onColumnsReordered: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit = null,
     onCompleteRender: () => Unit = null,
     onCopy: /* success */ Boolean => Unit = null,
     onFocusedCell: /* focusedCell */ IFocusedCellCoordinates => Unit = null,
-    onRowHeightChanged: IIndexedResizeCallback = null,
+    onRowHeightChanged: (/* index */ Double, /* size */ Double) => Unit = null,
     onRowsReordered: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit = null,
     onSelection: /* selectedRegions */ js.Array[IRegion] => Unit = null,
     onVisibleCellsChange: (/* rowIndices */ IRowIndices, /* columnIndices */ IColumnIndices) => Unit = null,
     renderMode: RenderMode = null,
-    rowHeaderCellRenderer: IRowHeaderRenderer = null,
+    rowHeaderCellRenderer: /* rowIndex */ Double => ReactElement = null,
     rowHeights: js.Array[js.UndefOr[Double | Null]] = null,
-    selectedRegionTransform: ISelectedRegionTransform = null,
+    selectedRegionTransform: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => IRegion = null,
     selectedRegions: js.Array[IRegion] = null,
     selectionModes: js.Array[RegionCardinality] = null,
     styledRegionGroups: js.Array[IStyledRegionGroup] = null
   ): ITableProps = {
     val __obj = js.Dynamic.literal()
-    if (bodyContextMenuRenderer != null) __obj.updateDynamic("bodyContextMenuRenderer")(bodyContextMenuRenderer)
+    if (bodyContextMenuRenderer != null) __obj.updateDynamic("bodyContextMenuRenderer")(js.Any.fromFunction1(bodyContextMenuRenderer))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths)
@@ -333,19 +338,19 @@ object ITableProps {
     if (numFrozenColumns != null) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.asInstanceOf[js.Any])
     if (numFrozenRows != null) __obj.updateDynamic("numFrozenRows")(numFrozenRows.asInstanceOf[js.Any])
     if (numRows != null) __obj.updateDynamic("numRows")(numRows.asInstanceOf[js.Any])
-    if (onColumnWidthChanged != null) __obj.updateDynamic("onColumnWidthChanged")(onColumnWidthChanged)
+    if (onColumnWidthChanged != null) __obj.updateDynamic("onColumnWidthChanged")(js.Any.fromFunction2(onColumnWidthChanged))
     if (onColumnsReordered != null) __obj.updateDynamic("onColumnsReordered")(js.Any.fromFunction3(onColumnsReordered))
     if (onCompleteRender != null) __obj.updateDynamic("onCompleteRender")(js.Any.fromFunction0(onCompleteRender))
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
     if (onFocusedCell != null) __obj.updateDynamic("onFocusedCell")(js.Any.fromFunction1(onFocusedCell))
-    if (onRowHeightChanged != null) __obj.updateDynamic("onRowHeightChanged")(onRowHeightChanged)
+    if (onRowHeightChanged != null) __obj.updateDynamic("onRowHeightChanged")(js.Any.fromFunction2(onRowHeightChanged))
     if (onRowsReordered != null) __obj.updateDynamic("onRowsReordered")(js.Any.fromFunction3(onRowsReordered))
     if (onSelection != null) __obj.updateDynamic("onSelection")(js.Any.fromFunction1(onSelection))
     if (onVisibleCellsChange != null) __obj.updateDynamic("onVisibleCellsChange")(js.Any.fromFunction2(onVisibleCellsChange))
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode)
-    if (rowHeaderCellRenderer != null) __obj.updateDynamic("rowHeaderCellRenderer")(rowHeaderCellRenderer)
+    if (rowHeaderCellRenderer != null) __obj.updateDynamic("rowHeaderCellRenderer")(js.Any.fromFunction1(rowHeaderCellRenderer))
     if (rowHeights != null) __obj.updateDynamic("rowHeights")(rowHeights)
-    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(selectedRegionTransform)
+    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(js.Any.fromFunction3(selectedRegionTransform))
     if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions)
     if (selectionModes != null) __obj.updateDynamic("selectionModes")(selectionModes)
     if (styledRegionGroups != null) __obj.updateDynamic("styledRegionGroups")(styledRegionGroups)

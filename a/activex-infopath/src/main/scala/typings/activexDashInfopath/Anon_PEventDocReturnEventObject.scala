@@ -1,6 +1,6 @@
 package typings.activexDashInfopath
 
-import typings.activexDashInfopath.InfoPathNs.DocReturnEventObject
+import typings.activexDashInfopath.InfoPath.DocReturnEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

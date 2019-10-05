@@ -1,7 +1,8 @@
 package typings.yogDashBigpipe.yogDashBigpipeMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.status
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ class Pagelet protected () extends EventEmitter {
   var id: String = js.native
   @JSName("js")
   var js_ : js.Array[String] = js.native
-  var mode: typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode = js.native
+  var mode: mode = js.native
   var reqID: String = js.native
   var scripts: js.Array[String] = js.native
   var skipAnalysis: Boolean = js.native
@@ -42,5 +43,25 @@ class Pagelet protected () extends EventEmitter {
   def destroy(): Unit = js.native
   def start(provider: js.Promise[_], sync: Boolean): Unit = js.native
   def toJson(): PageletData = js.native
+}
+
+@JSImport("yog-bigpipe", "Pagelet")
+@js.native
+object Pagelet extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.async
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.pipeline
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.quickling
+  */
+  trait mode extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.pending
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.rendering
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.fulfilled
+    - typings.yogDashBigpipe.yogDashBigpipeStrings.failed
+  */
+  trait status extends js.Object
+  
 }
 

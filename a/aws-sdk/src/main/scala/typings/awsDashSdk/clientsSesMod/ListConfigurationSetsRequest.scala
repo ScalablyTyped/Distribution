@@ -17,9 +17,9 @@ trait ListConfigurationSetsRequest extends js.Object {
 
 object ListConfigurationSetsRequest {
   @scala.inline
-  def apply(MaxItems: js.UndefOr[MaxItems] = js.undefined, NextToken: NextToken = null): ListConfigurationSetsRequest = {
+  def apply(MaxItems: Int | Double = null, NextToken: NextToken = null): ListConfigurationSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListConfigurationSetsRequest]
   }

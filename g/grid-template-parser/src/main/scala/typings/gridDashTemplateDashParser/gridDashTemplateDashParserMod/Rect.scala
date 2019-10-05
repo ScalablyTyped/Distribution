@@ -1,5 +1,6 @@
 package typings.gridDashTemplateDashParser.gridDashTemplateDashParserMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,5 +19,12 @@ object Rect {
   
     __obj.asInstanceOf[Rect]
   }
+}
+
+@JSImport("grid-template-parser", "rect")
+@js.native
+object rect extends js.Object {
+  def apply(): Rect = js.native
+  def apply(area: Partial[Area]): Rect = js.native
 }
 

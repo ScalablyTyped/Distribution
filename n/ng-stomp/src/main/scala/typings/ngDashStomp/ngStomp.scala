@@ -1,7 +1,8 @@
 package typings.ngDashStomp
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.angular.angularMod.IHttpPromise
-import typings.ngDashStomp.ngStompNs.Headers
+import typings.ngDashStomp.ngStomp.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,5 +34,11 @@ trait ngStomp extends js.Object {
     scope: js.Any
   ): js.Any = js.native
   def unsubscribe(): js.Any = js.native
+}
+
+@JSGlobal("ngStomp")
+@js.native
+object ngStomp extends js.Object {
+  type Headers = StringDictionary[js.Any]
 }
 

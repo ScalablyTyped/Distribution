@@ -60,28 +60,28 @@ object Condition {
   def apply(
     Eq: Eq = null,
     Equals: Equals = null,
-    GreaterThan: js.UndefOr[Long] = js.undefined,
-    GreaterThanOrEqual: js.UndefOr[Long] = js.undefined,
-    Gt: js.UndefOr[Integer] = js.undefined,
-    Gte: js.UndefOr[Integer] = js.undefined,
-    LessThan: js.UndefOr[Long] = js.undefined,
-    LessThanOrEqual: js.UndefOr[Long] = js.undefined,
-    Lt: js.UndefOr[Integer] = js.undefined,
-    Lte: js.UndefOr[Integer] = js.undefined,
+    GreaterThan: Int | scala.Double = null,
+    GreaterThanOrEqual: Int | scala.Double = null,
+    Gt: Int | scala.Double = null,
+    Gte: Int | scala.Double = null,
+    LessThan: Int | scala.Double = null,
+    LessThanOrEqual: Int | scala.Double = null,
+    Lt: Int | scala.Double = null,
+    Lte: Int | scala.Double = null,
     Neq: Neq = null,
     NotEquals: NotEquals = null
   ): Condition = {
     val __obj = js.Dynamic.literal()
     if (Eq != null) __obj.updateDynamic("Eq")(Eq)
     if (Equals != null) __obj.updateDynamic("Equals")(Equals)
-    if (!js.isUndefined(GreaterThan)) __obj.updateDynamic("GreaterThan")(GreaterThan)
-    if (!js.isUndefined(GreaterThanOrEqual)) __obj.updateDynamic("GreaterThanOrEqual")(GreaterThanOrEqual)
-    if (!js.isUndefined(Gt)) __obj.updateDynamic("Gt")(Gt)
-    if (!js.isUndefined(Gte)) __obj.updateDynamic("Gte")(Gte)
-    if (!js.isUndefined(LessThan)) __obj.updateDynamic("LessThan")(LessThan)
-    if (!js.isUndefined(LessThanOrEqual)) __obj.updateDynamic("LessThanOrEqual")(LessThanOrEqual)
-    if (!js.isUndefined(Lt)) __obj.updateDynamic("Lt")(Lt)
-    if (!js.isUndefined(Lte)) __obj.updateDynamic("Lte")(Lte)
+    if (GreaterThan != null) __obj.updateDynamic("GreaterThan")(GreaterThan.asInstanceOf[js.Any])
+    if (GreaterThanOrEqual != null) __obj.updateDynamic("GreaterThanOrEqual")(GreaterThanOrEqual.asInstanceOf[js.Any])
+    if (Gt != null) __obj.updateDynamic("Gt")(Gt.asInstanceOf[js.Any])
+    if (Gte != null) __obj.updateDynamic("Gte")(Gte.asInstanceOf[js.Any])
+    if (LessThan != null) __obj.updateDynamic("LessThan")(LessThan.asInstanceOf[js.Any])
+    if (LessThanOrEqual != null) __obj.updateDynamic("LessThanOrEqual")(LessThanOrEqual.asInstanceOf[js.Any])
+    if (Lt != null) __obj.updateDynamic("Lt")(Lt.asInstanceOf[js.Any])
+    if (Lte != null) __obj.updateDynamic("Lte")(Lte.asInstanceOf[js.Any])
     if (Neq != null) __obj.updateDynamic("Neq")(Neq)
     if (NotEquals != null) __obj.updateDynamic("NotEquals")(NotEquals)
     __obj.asInstanceOf[Condition]

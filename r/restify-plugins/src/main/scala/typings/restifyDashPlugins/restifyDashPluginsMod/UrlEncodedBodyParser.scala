@@ -1,5 +1,6 @@
 package typings.restifyDashPlugins.restifyDashPluginsMod
 
+import typings.restify.restifyMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,5 +18,12 @@ object UrlEncodedBodyParser {
     if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
     __obj.asInstanceOf[UrlEncodedBodyParser]
   }
+}
+
+@JSImport("restify-plugins", "urlEncodedBodyParser")
+@js.native
+object urlEncodedBodyParser extends js.Object {
+  def apply(): js.Array[RequestHandler] = js.native
+  def apply(options: UrlEncodedBodyParser): js.Array[RequestHandler] = js.native
 }
 

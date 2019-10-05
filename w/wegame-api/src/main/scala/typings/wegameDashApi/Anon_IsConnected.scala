@@ -1,6 +1,6 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.NetworkType
+import typings.wegameDashApi.wx.types.NetworkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

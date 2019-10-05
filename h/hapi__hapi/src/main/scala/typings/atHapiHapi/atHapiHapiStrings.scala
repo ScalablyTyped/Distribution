@@ -2,16 +2,16 @@ package typings.atHapiHapi
 
 import typings.atHapiHapi.atHapiHapiMod.AccessEntity
 import typings.atHapiHapi.atHapiHapiMod.AuthMode
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs._FailAction
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle._FailAction
 import typings.atHapiHapi.atHapiHapiMod.PayloadOutput
 import typings.atHapiHapi.atHapiHapiMod.ReferrerPolicy
 import typings.atHapiHapi.atHapiHapiMod.RequestEventType
 import typings.atHapiHapi.atHapiHapiMod.RouteRequestExtType
 import typings.atHapiHapi.atHapiHapiMod.ServerExtType
 import typings.atHapiHapi.atHapiHapiMod.ServerRequestExtType
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS_PARTIAL
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

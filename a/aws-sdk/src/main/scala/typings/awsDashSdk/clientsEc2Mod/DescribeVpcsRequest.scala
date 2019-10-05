@@ -30,16 +30,16 @@ trait DescribeVpcsRequest extends js.Object {
 object DescribeVpcsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeVpcsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     VpcIds: VpcIdStringList = null
   ): DescribeVpcsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (VpcIds != null) __obj.updateDynamic("VpcIds")(VpcIds)
     __obj.asInstanceOf[DescribeVpcsRequest]

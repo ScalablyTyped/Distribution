@@ -1,7 +1,7 @@
 package typings.reactDashStripeDashElements.reactDashStripeDashElementsMod
 
 import typings.react.reactMod.Component
-import typings.stripeDashV3.stripeNs.elementsNs.ElementsCreateOptions
+import typings.stripeDashV3.stripe.elements.ElementsCreateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

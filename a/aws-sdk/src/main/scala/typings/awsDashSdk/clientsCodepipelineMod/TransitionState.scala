@@ -27,7 +27,7 @@ object TransitionState {
   @scala.inline
   def apply(
     disabledReason: DisabledReason = null,
-    enabled: js.UndefOr[Enabled] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     lastChangedAt: LastChangedAt = null,
     lastChangedBy: LastChangedBy = null
   ): TransitionState = {

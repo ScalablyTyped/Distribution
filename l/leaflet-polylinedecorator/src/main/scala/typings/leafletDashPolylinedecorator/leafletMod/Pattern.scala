@@ -1,8 +1,8 @@
 package typings.leafletDashPolylinedecorator.leafletMod
 
-import typings.leafletDashPolylinedecorator.leafletMod.SymbolNs.ArrowHead
-import typings.leafletDashPolylinedecorator.leafletMod.SymbolNs.Dash
-import typings.leafletDashPolylinedecorator.leafletMod.SymbolNs.Marker
+import typings.leafletDashPolylinedecorator.leafletMod.Symbol.ArrowHead
+import typings.leafletDashPolylinedecorator.leafletMod.Symbol.Dash
+import typings.leafletDashPolylinedecorator.leafletMod.Symbol.Marker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

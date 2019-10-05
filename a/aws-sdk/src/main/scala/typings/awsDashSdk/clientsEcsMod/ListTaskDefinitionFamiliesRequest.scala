@@ -27,13 +27,13 @@ object ListTaskDefinitionFamiliesRequest {
   @scala.inline
   def apply(
     familyPrefix: String = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
+    maxResults: Int | scala.Double = null,
     nextToken: String = null,
     status: TaskDefinitionFamilyStatus = null
   ): ListTaskDefinitionFamiliesRequest = {
     val __obj = js.Dynamic.literal()
     if (familyPrefix != null) __obj.updateDynamic("familyPrefix")(familyPrefix)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTaskDefinitionFamiliesRequest]

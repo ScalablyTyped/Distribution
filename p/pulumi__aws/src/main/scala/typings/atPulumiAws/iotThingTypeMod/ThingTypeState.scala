@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iotThingTypeMod
 
-import typings.atPulumiAws.typesInputMod.iotNs.ThingTypeProperties
+import typings.atPulumiAws.typesInputMod.iot.ThingTypeProperties
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

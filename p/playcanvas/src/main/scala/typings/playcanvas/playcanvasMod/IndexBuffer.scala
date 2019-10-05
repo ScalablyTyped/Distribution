@@ -24,16 +24,16 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "IndexBuffer")
 @js.native
 class IndexBuffer protected ()
-  extends typings.playcanvas.pcNs.IndexBuffer {
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice, format: Double, numIndices: Double) = this()
+  extends typings.playcanvas.pc.IndexBuffer {
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, format: Double, numIndices: Double) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: Double,
     numIndices: Double,
     usage: Double
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: Double,
     numIndices: Double,
     usage: Double,

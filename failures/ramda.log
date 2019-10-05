@@ -1373,3 +1373,4 @@
 [E] Failed to compile 'ramda'
  [id => ramda, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [ramda => Compilation failed] [id => ramda, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [ramda => Compilation failed] [id => ramda, phase => publish] 

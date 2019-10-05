@@ -27,17 +27,23 @@ trait ISuggestionsStyles extends js.Object {
 object ISuggestionsStyles {
   @scala.inline
   def apply(
-    forceResolveButton: IStyle,
-    noSuggestions: IStyle,
-    root: IStyle,
-    searchForMoreButton: IStyle,
     subComponentStyles: ISuggestionsSubComponentStyles,
-    suggestionsAvailable: IStyle,
-    suggestionsContainer: IStyle,
-    title: IStyle
+    forceResolveButton: IStyle = null,
+    noSuggestions: IStyle = null,
+    root: IStyle = null,
+    searchForMoreButton: IStyle = null,
+    suggestionsAvailable: IStyle = null,
+    suggestionsContainer: IStyle = null,
+    title: IStyle = null
   ): ISuggestionsStyles = {
-    val __obj = js.Dynamic.literal(forceResolveButton = forceResolveButton.asInstanceOf[js.Any], noSuggestions = noSuggestions.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], searchForMoreButton = searchForMoreButton.asInstanceOf[js.Any], subComponentStyles = subComponentStyles, suggestionsAvailable = suggestionsAvailable.asInstanceOf[js.Any], suggestionsContainer = suggestionsContainer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    if (forceResolveButton != null) __obj.updateDynamic("forceResolveButton")(forceResolveButton.asInstanceOf[js.Any])
+    if (noSuggestions != null) __obj.updateDynamic("noSuggestions")(noSuggestions.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (searchForMoreButton != null) __obj.updateDynamic("searchForMoreButton")(searchForMoreButton.asInstanceOf[js.Any])
+    if (suggestionsAvailable != null) __obj.updateDynamic("suggestionsAvailable")(suggestionsAvailable.asInstanceOf[js.Any])
+    if (suggestionsContainer != null) __obj.updateDynamic("suggestionsContainer")(suggestionsContainer.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestionsStyles]
   }
 }

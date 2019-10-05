@@ -1,5 +1,6 @@
 package typings.graphqlDashReact
 
+import typings.graphqlDashReact.graphqlDashReactMod.GraphQLFetchOptions
 import typings.graphqlDashReact.graphqlDashReactMod.GraphQLFetchOptionsOverride
 import typings.graphqlDashReact.graphqlDashReactMod.GraphQLOperation
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object Anon_FetchOptionsOverrideLoadOnMount {
   @scala.inline
   def apply[V](
     operation: GraphQLOperation[V],
-    fetchOptionsOverride: GraphQLFetchOptionsOverride = null,
+    fetchOptionsOverride: /* options */ GraphQLFetchOptions => Unit = null,
     loadOnMount: js.UndefOr[Boolean] = js.undefined,
     loadOnReload: js.UndefOr[Boolean] = js.undefined,
     loadOnReset: js.UndefOr[Boolean] = js.undefined,
@@ -28,7 +29,7 @@ object Anon_FetchOptionsOverrideLoadOnMount {
     resetOnLoad: js.UndefOr[Boolean] = js.undefined
   ): Anon_FetchOptionsOverrideLoadOnMount[V] = {
     val __obj = js.Dynamic.literal(operation = operation)
-    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(fetchOptionsOverride)
+    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(js.Any.fromFunction1(fetchOptionsOverride))
     if (!js.isUndefined(loadOnMount)) __obj.updateDynamic("loadOnMount")(loadOnMount)
     if (!js.isUndefined(loadOnReload)) __obj.updateDynamic("loadOnReload")(loadOnReload)
     if (!js.isUndefined(loadOnReset)) __obj.updateDynamic("loadOnReset")(loadOnReset)

@@ -1,0 +1,19 @@
+package typings.backlogDashJs.backlogDashJsMod.Option.Project
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PostCustomFieldItemParams extends js.Object {
+  var name: String
+}
+
+object PostCustomFieldItemParams {
+  @scala.inline
+  def apply(name: String): PostCustomFieldItemParams = {
+    val __obj = js.Dynamic.literal(name = name)
+  
+    __obj.asInstanceOf[PostCustomFieldItemParams]
+  }
+}
+

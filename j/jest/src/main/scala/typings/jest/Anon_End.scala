@@ -1,6 +1,6 @@
 package typings.jest
 
-import typings.jest.jestMod.jestNs.Milliseconds
+import typings.jest.jestMod.jest.Milliseconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

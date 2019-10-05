@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2DefaultSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultSecurityGroupEgress
-import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultSecurityGroupIngress
+import typings.atPulumiAws.typesOutputMod.ec2.DefaultSecurityGroupEgress
+import typings.atPulumiAws.typesOutputMod.ec2.DefaultSecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

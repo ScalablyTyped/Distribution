@@ -83,12 +83,12 @@ object DescribeReservationResponse {
   @scala.inline
   def apply(
     Arn: __string = null,
-    Count: js.UndefOr[__integer] = js.undefined,
+    Count: Int | Double = null,
     CurrencyCode: __string = null,
-    Duration: js.UndefOr[__integer] = js.undefined,
+    Duration: Int | Double = null,
     DurationUnits: OfferingDurationUnits = null,
     End: __string = null,
-    FixedPrice: js.UndefOr[__double] = js.undefined,
+    FixedPrice: Int | Double = null,
     Name: __string = null,
     OfferingDescription: __string = null,
     OfferingId: __string = null,
@@ -99,16 +99,16 @@ object DescribeReservationResponse {
     Start: __string = null,
     State: ReservationState = null,
     Tags: Tags = null,
-    UsagePrice: js.UndefOr[__double] = js.undefined
+    UsagePrice: Int | Double = null
   ): DescribeReservationResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (DurationUnits != null) __obj.updateDynamic("DurationUnits")(DurationUnits.asInstanceOf[js.Any])
     if (End != null) __obj.updateDynamic("End")(End)
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (OfferingDescription != null) __obj.updateDynamic("OfferingDescription")(OfferingDescription)
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId)
@@ -119,7 +119,7 @@ object DescribeReservationResponse {
     if (Start != null) __obj.updateDynamic("Start")(Start)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservationResponse]
   }
 }

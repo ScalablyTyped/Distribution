@@ -21,9 +21,9 @@ trait ListBranchesRequest extends js.Object {
 
 object ListBranchesRequest {
   @scala.inline
-  def apply(appId: AppId, maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): ListBranchesRequest = {
+  def apply(appId: AppId, maxResults: Int | Double = null, nextToken: NextToken = null): ListBranchesRequest = {
     val __obj = js.Dynamic.literal(appId = appId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListBranchesRequest]
   }

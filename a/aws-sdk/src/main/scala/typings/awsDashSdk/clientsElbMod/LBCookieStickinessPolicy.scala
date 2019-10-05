@@ -17,12 +17,9 @@ trait LBCookieStickinessPolicy extends js.Object {
 
 object LBCookieStickinessPolicy {
   @scala.inline
-  def apply(
-    CookieExpirationPeriod: js.UndefOr[CookieExpirationPeriod] = js.undefined,
-    PolicyName: PolicyName = null
-  ): LBCookieStickinessPolicy = {
+  def apply(CookieExpirationPeriod: Int | Double = null, PolicyName: PolicyName = null): LBCookieStickinessPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CookieExpirationPeriod)) __obj.updateDynamic("CookieExpirationPeriod")(CookieExpirationPeriod)
+    if (CookieExpirationPeriod != null) __obj.updateDynamic("CookieExpirationPeriod")(CookieExpirationPeriod.asInstanceOf[js.Any])
     if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName)
     __obj.asInstanceOf[LBCookieStickinessPolicy]
   }

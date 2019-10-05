@@ -27,5 +27,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BasicMaterial")
 @js.native
 class BasicMaterial ()
-  extends typings.playcanvas.pcNs.BasicMaterial
+  extends typings.playcanvas.pc.BasicMaterial
 

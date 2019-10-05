@@ -1,6 +1,6 @@
 package typings.atPulumiAws.glueSecurityConfigurationMod
 
-import typings.atPulumiAws.typesOutputMod.glueNs.SecurityConfigurationEncryptionConfiguration
+import typings.atPulumiAws.typesOutputMod.glue.SecurityConfigurationEncryptionConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

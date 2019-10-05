@@ -42,3 +42,12 @@ object VariableDeclarator {
   }
 }
 
+@JSImport("@babel/types", "variableDeclarator")
+@js.native
+object variableDeclarator extends js.Object {
+  def apply(id: LVal): VariableDeclarator = js.native
+  def apply(id: LVal, init: Null, definite: Boolean): VariableDeclarator = js.native
+  def apply(id: LVal, init: Expression): VariableDeclarator = js.native
+  def apply(id: LVal, init: Expression, definite: Boolean): VariableDeclarator = js.native
+}
+

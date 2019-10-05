@@ -1,11 +1,13 @@
 package typings.grommet.componentsDropButtonMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsButtonMod.ButtonProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLButtonElement
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import scala.scalajs.js
@@ -35,4 +37,16 @@ class DropButton protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/DropButton", "DropButton")
+@js.native
+object DropButton extends TopLevel[
+      ComponentClass[
+        DropButtonProps with ButtonProps with (Omit[
+          DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+          color
+        ]), 
+        ComponentState
+      ]
+    ]
 

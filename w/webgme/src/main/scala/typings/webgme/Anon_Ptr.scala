@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.MetaCardRule
+import typings.webgme.GmeCommon.MetaCardRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

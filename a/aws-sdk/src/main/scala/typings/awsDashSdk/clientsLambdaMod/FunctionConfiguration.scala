@@ -91,7 +91,7 @@ object FunctionConfiguration {
   @scala.inline
   def apply(
     CodeSha256: String = null,
-    CodeSize: js.UndefOr[Long] = js.undefined,
+    CodeSize: Int | Double = null,
     DeadLetterConfig: DeadLetterConfig = null,
     Description: Description = null,
     Environment: EnvironmentResponse = null,
@@ -102,18 +102,18 @@ object FunctionConfiguration {
     LastModified: Timestamp = null,
     Layers: LayersReferenceList = null,
     MasterArn: FunctionArn = null,
-    MemorySize: js.UndefOr[MemorySize] = js.undefined,
+    MemorySize: Int | Double = null,
     RevisionId: String = null,
     Role: RoleArn = null,
     Runtime: Runtime = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
+    Timeout: Int | Double = null,
     TracingConfig: TracingConfigResponse = null,
     Version: Version = null,
     VpcConfig: VpcConfigResponse = null
   ): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256)
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize)
+    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
     if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
@@ -124,11 +124,11 @@ object FunctionConfiguration {
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
     if (Layers != null) __obj.updateDynamic("Layers")(Layers)
     if (MasterArn != null) __obj.updateDynamic("MasterArn")(MasterArn)
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize)
+    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
     if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
     if (Role != null) __obj.updateDynamic("Role")(Role)
     if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig)
     if (Version != null) __obj.updateDynamic("Version")(Version)
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)

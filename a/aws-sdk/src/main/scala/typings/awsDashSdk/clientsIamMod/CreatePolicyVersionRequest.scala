@@ -24,7 +24,7 @@ object CreatePolicyVersionRequest {
   def apply(
     PolicyArn: arnType,
     PolicyDocument: policyDocumentType,
-    SetAsDefault: js.UndefOr[booleanType] = js.undefined
+    SetAsDefault: js.UndefOr[Boolean] = js.undefined
   ): CreatePolicyVersionRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn, PolicyDocument = PolicyDocument)
     if (!js.isUndefined(SetAsDefault)) __obj.updateDynamic("SetAsDefault")(SetAsDefault)

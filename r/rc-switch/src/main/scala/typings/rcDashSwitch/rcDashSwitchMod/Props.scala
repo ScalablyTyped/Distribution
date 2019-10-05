@@ -23,10 +23,9 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    checkedChildren: ReactNode,
-    unCheckedChildren: ReactNode,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     checked: js.UndefOr[Boolean] = js.undefined,
+    checkedChildren: ReactNode = null,
     className: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -34,11 +33,13 @@ object Props {
     onChange: /* checked */ Boolean => Unit = null,
     onClick: /* checked */ Boolean => Unit = null,
     prefixCls: String = null,
-    tabIndex: Int | Double = null
+    tabIndex: Int | Double = null,
+    unCheckedChildren: ReactNode = null
   ): Props = {
-    val __obj = js.Dynamic.literal(checkedChildren = checkedChildren.asInstanceOf[js.Any], unCheckedChildren = unCheckedChildren.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (checkedChildren != null) __obj.updateDynamic("checkedChildren")(checkedChildren.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
@@ -47,6 +48,7 @@ object Props {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (unCheckedChildren != null) __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -17,9 +17,9 @@ trait PurchaseReservedNodeOfferingMessage extends js.Object {
 
 object PurchaseReservedNodeOfferingMessage {
   @scala.inline
-  def apply(ReservedNodeOfferingId: String, NodeCount: js.UndefOr[IntegerOptional] = js.undefined): PurchaseReservedNodeOfferingMessage = {
+  def apply(ReservedNodeOfferingId: String, NodeCount: Int | scala.Double = null): PurchaseReservedNodeOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeOfferingId = ReservedNodeOfferingId)
-    if (!js.isUndefined(NodeCount)) __obj.updateDynamic("NodeCount")(NodeCount)
+    if (NodeCount != null) __obj.updateDynamic("NodeCount")(NodeCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedNodeOfferingMessage]
   }
 }

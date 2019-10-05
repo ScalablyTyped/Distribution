@@ -21,7 +21,11 @@ trait DisassociateClientVpnTargetNetworkRequest extends js.Object {
 
 object DisassociateClientVpnTargetNetworkRequest {
   @scala.inline
-  def apply(AssociationId: String, ClientVpnEndpointId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DisassociateClientVpnTargetNetworkRequest = {
+  def apply(
+    AssociationId: String,
+    ClientVpnEndpointId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DisassociateClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId, ClientVpnEndpointId = ClientVpnEndpointId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DisassociateClientVpnTargetNetworkRequest]

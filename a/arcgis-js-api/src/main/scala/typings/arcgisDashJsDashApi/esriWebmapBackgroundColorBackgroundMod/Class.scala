@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriWebmapBackgroundColorBackgroundMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Color
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorBackground
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorBackgroundProperties
+import typings.arcgisDashJsDashApi.__esri.Color
+import typings.arcgisDashJsDashApi.__esri.ColorBackground
+import typings.arcgisDashJsDashApi.__esri.ColorBackgroundProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

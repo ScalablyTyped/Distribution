@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPolylineMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolylineConstructor
+import typings.arcgisDashJsDashApi.__esri.PolylineConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

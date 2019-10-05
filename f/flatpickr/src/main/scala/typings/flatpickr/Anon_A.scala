@@ -46,11 +46,11 @@ trait Anon_A extends js.Object {
     handler: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
   ): Unit = js.native
   def _createElement[E /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
     className: String
   ): E = js.native
   def _createElement[E /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any,
     className: String,
     content: String
   ): E = js.native

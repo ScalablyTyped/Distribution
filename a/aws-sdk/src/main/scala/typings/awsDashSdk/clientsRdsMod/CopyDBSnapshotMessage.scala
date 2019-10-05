@@ -41,7 +41,7 @@ object CopyDBSnapshotMessage {
   def apply(
     SourceDBSnapshotIdentifier: String,
     TargetDBSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTags: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
     PreSignedUrl: String = null,

@@ -30,7 +30,7 @@ trait DockerVolumeConfiguration extends js.Object {
 object DockerVolumeConfiguration {
   @scala.inline
   def apply(
-    autoprovision: js.UndefOr[BoxedBoolean] = js.undefined,
+    autoprovision: js.UndefOr[scala.Boolean] = js.undefined,
     driver: String = null,
     driverOpts: StringMap = null,
     labels: StringMap = null,

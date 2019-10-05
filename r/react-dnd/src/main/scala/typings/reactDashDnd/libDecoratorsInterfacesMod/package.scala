@@ -9,7 +9,7 @@ package object libDecoratorsInterfacesMod {
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
   import typings.reactDashDnd.Anon_DecoratedComponent
   import typings.reactDashDnd.libInterfacesMonitorsMod.DragLayerMonitor
   import typings.reactDashDnd.libInterfacesMonitorsMod.DragSourceMonitor

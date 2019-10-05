@@ -2,7 +2,7 @@ package typings.twilioDashVideo.twilioDashVideoMod
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Map
-import typings.twilioDashVideo.twilioDashVideoMod.ParticipantNs.SID
+import typings.twilioDashVideo.twilioDashVideoMod.Participant.SID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,15 @@ class Room () extends EventEmitter {
   var localParticipant: LocalParticipant = js.native
   var name: String = js.native
   var participants: Map[SID, RemoteParticipant] = js.native
-  var sid: typings.twilioDashVideo.twilioDashVideoMod.RoomNs.SID = js.native
+  var sid: typings.twilioDashVideo.twilioDashVideoMod.Room.SID = js.native
   var state: String = js.native
   def disconnect(): Room = js.native
   def getStats(): js.Promise[js.Array[StatsReport]] = js.native
+}
+
+@JSImport("twilio-video", "Room")
+@js.native
+object Room extends js.Object {
+  type SID = String
 }
 

@@ -1,6 +1,6 @@
 package typings.ace
 
-import typings.ace.AceAjaxNs.Ace
+import typings.ace.AceAjax.Ace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

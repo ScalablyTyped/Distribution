@@ -22,11 +22,11 @@ object CmafPackage {
   def apply(
     HlsManifests: __listOfHlsManifest,
     Encryption: CmafEncryption = null,
-    SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined
+    SegmentDurationSeconds: Int | Double = null
   ): CmafPackage = {
     val __obj = js.Dynamic.literal(HlsManifests = HlsManifests)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds)
+    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafPackage]
   }
 }

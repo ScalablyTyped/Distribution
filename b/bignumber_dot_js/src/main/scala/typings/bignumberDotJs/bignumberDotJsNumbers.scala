@@ -1,7 +1,7 @@
 package typings.bignumberDotJs
 
-import typings.bignumberDotJs.bignumberDotJsMod.BigNumberNs.ModuloMode
-import typings.bignumberDotJs.bignumberDotJsMod.BigNumberNs.RoundingMode
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.ModuloMode
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.RoundingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

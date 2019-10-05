@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsEdgesSolidEdges3DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SolidEdges3D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SolidEdges3DProperties
+import typings.arcgisDashJsDashApi.__esri.SolidEdges3D
+import typings.arcgisDashJsDashApi.__esri.SolidEdges3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

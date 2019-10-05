@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashEmbed
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashEmbed.SemanticUINs.Embed
+import typings.semanticDashUiDashEmbed.SemanticUI.Embed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

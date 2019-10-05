@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashAccordion
 
-import typings.semanticDashUiDashAccordion.SemanticUINs.Accordion
-import typings.semanticDashUiDashAccordion.SemanticUINs.AccordionSettings
+import typings.semanticDashUiDashAccordion.SemanticUI.Accordion
+import typings.semanticDashUiDashAccordion.SemanticUI.AccordionSettings
 import typings.semanticDashUiDashAccordion.semanticDashUiDashAccordionStrings.`close others`
 import typings.semanticDashUiDashAccordion.semanticDashUiDashAccordionStrings.close
 import typings.semanticDashUiDashAccordion.semanticDashUiDashAccordionStrings.destroy

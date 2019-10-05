@@ -56,10 +56,10 @@ object CreateDeploymentInput {
     deploymentGroupName: DeploymentGroupName = null,
     description: Description = null,
     fileExistsBehavior: FileExistsBehavior = null,
-    ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined,
+    ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined,
     revision: RevisionLocation = null,
     targetInstances: TargetInstances = null,
-    updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
+    updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateDeploymentInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName)
     if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration)

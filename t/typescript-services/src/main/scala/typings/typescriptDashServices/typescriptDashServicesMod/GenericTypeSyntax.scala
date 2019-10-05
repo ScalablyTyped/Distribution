@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.INameSyntax
+import typings.typescriptDashServices.TypeScript.INameSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "GenericTypeSyntax")
 @js.native
 class GenericTypeSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.GenericTypeSyntax {
+  extends typings.typescriptDashServices.TypeScript.GenericTypeSyntax {
   def this(
     name: INameSyntax,
-    typeArgumentList: typings.typescriptDashServices.TypeScriptNs.TypeArgumentListSyntax,
+    typeArgumentList: typings.typescriptDashServices.TypeScript.TypeArgumentListSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -20,6 +20,6 @@ class GenericTypeSyntax protected ()
 @JSImport("typescript-services", "GenericTypeSyntax")
 @js.native
 object GenericTypeSyntax extends js.Object {
-  def create1(name: INameSyntax): typings.typescriptDashServices.TypeScriptNs.GenericTypeSyntax = js.native
+  def create1(name: INameSyntax): typings.typescriptDashServices.TypeScript.GenericTypeSyntax = js.native
 }
 

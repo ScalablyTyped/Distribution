@@ -1,6 +1,6 @@
 package typings.webgme.blobBlobMetadataMod
 
-import typings.webgme.CoreNs.DataObject
+import typings.webgme.Core.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

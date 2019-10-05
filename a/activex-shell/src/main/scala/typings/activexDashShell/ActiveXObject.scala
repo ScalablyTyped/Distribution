@@ -1,7 +1,7 @@
 package typings.activexDashShell
 
-import typings.activexDashShell.Shell32Ns.ShellFolderView
-import typings.activexDashShell.Shell32Ns.ShellFolderViewOC
+import typings.activexDashShell.Shell32.ShellFolderView
+import typings.activexDashShell.Shell32.ShellFolderViewOC
 import typings.activexDashShell.activexDashShellStrings.BeginDrag
 import typings.activexDashShell.activexDashShellStrings.DefaultVerbInvoked
 import typings.activexDashShell.activexDashShellStrings.EnumDone

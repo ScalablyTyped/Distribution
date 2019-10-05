@@ -1,6 +1,7 @@
 package typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,10 +28,10 @@ object PickerOptions {
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     buttons: js.Array[PickerButton] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: AnimationBuilder = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     id: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: AnimationBuilder = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: Mode = null
   ): PickerOptions = {
     val __obj = js.Dynamic.literal(columns = columns)
@@ -38,10 +39,10 @@ object PickerOptions {
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose)
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     __obj.asInstanceOf[PickerOptions]
   }

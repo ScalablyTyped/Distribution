@@ -55,10 +55,10 @@ object Options {
     auth: AuthenticationType = null,
     authMethod: String = null,
     connection: Socket = null,
-    connectionTimeout: js.UndefOr[ms] = js.undefined,
+    connectionTimeout: Int | Double = null,
     customAuth: CustomAuthenticationHandlers = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    greetingTimeout: js.UndefOr[ms] = js.undefined,
+    greetingTimeout: Int | Double = null,
     host: String = null,
     ignoreTLS: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
@@ -69,7 +69,7 @@ object Options {
     requireTLS: js.UndefOr[Boolean] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
     socket: Socket = null,
-    socketTimeout: js.UndefOr[ms] = js.undefined,
+    socketTimeout: Int | Double = null,
     tls: ConnectionOptions = null,
     transactionLog: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -77,10 +77,10 @@ object Options {
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
     if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
+    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
@@ -91,7 +91,7 @@ object Options {
     if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS)
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
     if (socket != null) __obj.updateDynamic("socket")(socket)
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls)
     if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog)
     __obj.asInstanceOf[Options]

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsGroundViewMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GroundViewConstructor
+import typings.arcgisDashJsDashApi.__esri.GroundViewConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

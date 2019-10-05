@@ -2,11 +2,11 @@ package typings.stellarDashSdk.stellarDashSdkMod
 
 import typings.node.Buffer
 import typings.stellarDashBase.stellarDashBaseMod.MemoType
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Hash
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.ID
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.None
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Return
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Text
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Hash
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.ID
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.None
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Return
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Text
 import typings.stellarDashBase.stellarDashBaseMod.MemoValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ class Memo[T /* <: MemoType */] protected ()
 @JSImport("stellar-sdk", "Memo")
 @js.native
 object Memo extends js.Object {
-  def fromXDRObject(memo: typings.stellarDashBase.stellarDashBaseMod.xdrNs.Memo): typings.stellarDashBase.stellarDashBaseMod.Memo[MemoType] = js.native
+  def fromXDRObject(memo: typings.stellarDashBase.stellarDashBaseMod.xdr.Memo): typings.stellarDashBase.stellarDashBaseMod.Memo[MemoType] = js.native
   def hash(hash: String): typings.stellarDashBase.stellarDashBaseMod.Memo[Hash] = js.native
   def id(id: String): typings.stellarDashBase.stellarDashBaseMod.Memo[ID] = js.native
   def none(): typings.stellarDashBase.stellarDashBaseMod.Memo[None] = js.native

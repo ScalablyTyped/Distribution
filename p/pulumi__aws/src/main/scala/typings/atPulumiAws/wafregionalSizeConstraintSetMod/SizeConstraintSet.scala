@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalSizeConstraintSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.SizeConstraintSetSizeConstraint
+import typings.atPulumiAws.typesOutputMod.wafregional.SizeConstraintSetSizeConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

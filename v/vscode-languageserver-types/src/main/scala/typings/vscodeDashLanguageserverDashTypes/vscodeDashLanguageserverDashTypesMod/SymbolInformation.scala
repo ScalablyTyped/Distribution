@@ -38,19 +38,20 @@ trait SymbolInformation extends js.Object {
   var name: String
 }
 
-object SymbolInformation {
-  @scala.inline
-  def apply(
-    kind: SymbolKind,
-    location: Location,
-    name: String,
-    containerName: String = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined
-  ): SymbolInformation = {
-    val __obj = js.Dynamic.literal(kind = kind, location = location, name = name)
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    __obj.asInstanceOf[SymbolInformation]
-  }
+@JSImport("vscode-languageserver-types", "SymbolInformation")
+@js.native
+object SymbolInformation extends js.Object {
+  /**
+    * Creates a new symbol information literal.
+    *
+    * @param name The name of the symbol.
+    * @param kind The kind of the symbol.
+    * @param range The range of the location of the symbol.
+    * @param uri The resource of the location of symbol, defaults to the current document.
+    * @param containerName The name of the symbol containing the symbol.
+    */
+  def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = js.native
+  def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = js.native
+  def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = js.native
 }
 

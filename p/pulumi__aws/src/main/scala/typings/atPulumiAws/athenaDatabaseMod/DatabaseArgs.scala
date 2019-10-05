@@ -1,6 +1,6 @@
 package typings.atPulumiAws.athenaDatabaseMod
 
-import typings.atPulumiAws.typesInputMod.athenaNs.DatabaseEncryptionConfiguration
+import typings.atPulumiAws.typesInputMod.athena.DatabaseEncryptionConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object protobufjsMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.protobufjs.protobufjsMod.rpcNs.ServiceMethod
+  import typings.protobufjs.protobufjsMod.rpc.ServiceMethod
   import typings.std.Error
   import typings.std.Uint8Array
 

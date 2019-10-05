@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "VrManager")
 @js.native
 class VrManager protected ()
-  extends typings.playcanvas.pcNs.VrManager {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.VrManager {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 
 /* static members */

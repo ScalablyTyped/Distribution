@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotSheets
 
-import typings.gapiDotClientDotSheets.gapiNs.clientNs.sheetsNs.Spreadsheet
+import typings.gapiDotClientDotSheets.gapi.client.sheets.Spreadsheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

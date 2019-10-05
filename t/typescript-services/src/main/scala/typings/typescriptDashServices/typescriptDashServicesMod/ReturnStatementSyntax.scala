@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ReturnStatementSyntax")
 @js.native
 class ReturnStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ReturnStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.ReturnStatementSyntax {
   def this(
     returnKeyword: ISyntaxToken,
     expression: IExpressionSyntax,
@@ -22,7 +22,7 @@ class ReturnStatementSyntax protected ()
 @JSImport("typescript-services", "ReturnStatementSyntax")
 @js.native
 object ReturnStatementSyntax extends js.Object {
-  def create(returnKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ReturnStatementSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ReturnStatementSyntax = js.native
+  def create(returnKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptDashServices.TypeScript.ReturnStatementSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ReturnStatementSyntax = js.native
 }
 

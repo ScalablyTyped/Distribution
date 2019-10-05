@@ -1,7 +1,7 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.commandsNs.Command
-import typings.chrome.chromeNs.commandsNs.CommandEvent
+import typings.chrome.chrome.commands.Command
+import typings.chrome.chrome.commands.CommandEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

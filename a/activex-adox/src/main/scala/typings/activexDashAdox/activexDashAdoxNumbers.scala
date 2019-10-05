@@ -1,14 +1,14 @@
 package typings.activexDashAdox
 
-import typings.activexDashAdox.ADOXNs.ActionEnum
-import typings.activexDashAdox.ADOXNs.AllowNullsEnum
-import typings.activexDashAdox.ADOXNs.ColumnAttributesEnum
-import typings.activexDashAdox.ADOXNs.InheritTypeEnum
-import typings.activexDashAdox.ADOXNs.KeyTypeEnum
-import typings.activexDashAdox.ADOXNs.ObjectTypeEnum
-import typings.activexDashAdox.ADOXNs.RightsEnum
-import typings.activexDashAdox.ADOXNs.RuleEnum
-import typings.activexDashAdox.ADOXNs.SortOrderEnum
+import typings.activexDashAdox.ADOX.ActionEnum
+import typings.activexDashAdox.ADOX.AllowNullsEnum
+import typings.activexDashAdox.ADOX.ColumnAttributesEnum
+import typings.activexDashAdox.ADOX.InheritTypeEnum
+import typings.activexDashAdox.ADOX.KeyTypeEnum
+import typings.activexDashAdox.ADOX.ObjectTypeEnum
+import typings.activexDashAdox.ADOX.RightsEnum
+import typings.activexDashAdox.ADOX.RuleEnum
+import typings.activexDashAdox.ADOX.SortOrderEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

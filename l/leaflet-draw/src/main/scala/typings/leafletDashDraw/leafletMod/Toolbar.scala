@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.Toolbar")
+@JSImport("leaflet", "Toolbar")
 @js.native
 class Toolbar () extends Class {
   def this(options: ToolbarOptions) = this()

@@ -1,7 +1,7 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Buffer
-import typings.titanium.TitaniumNs.IOStream
+import typings.titanium.Titanium.Buffer
+import typings.titanium.Titanium.IOStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

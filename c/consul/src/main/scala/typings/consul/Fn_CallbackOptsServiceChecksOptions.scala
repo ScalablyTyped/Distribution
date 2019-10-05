@@ -1,7 +1,7 @@
 package typings.consul
 
 import typings.consul.consulMod.Callback
-import typings.consul.consulMod.HealthNs.ChecksOptions
+import typings.consul.consulMod.Health.ChecksOptions
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

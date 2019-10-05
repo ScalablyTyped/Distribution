@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashSwiper.reactDashNativeDashSwiperMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.Props

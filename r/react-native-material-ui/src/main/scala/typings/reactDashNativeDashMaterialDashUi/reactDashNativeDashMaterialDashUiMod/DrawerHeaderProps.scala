@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.Image
 import typings.reactDashNativeDashMaterialDashUi.Anon_ContainerContentContainer
 import scala.scalajs.js

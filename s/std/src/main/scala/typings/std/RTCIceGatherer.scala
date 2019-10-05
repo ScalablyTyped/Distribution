@@ -81,11 +81,5 @@ trait RTCIceGatherer extends RTCStatsProvider {
 
 @JSGlobal("RTCIceGatherer")
 @js.native
-class RTCIceGathererCls protected () extends RTCIceGatherer {
-  def this(options: RTCIceGatherOptions) = this()
-}
-
-@JSGlobal("RTCIceGatherer")
-@js.native
 object RTCIceGatherer extends Instantiable1[/* options */ RTCIceGatherOptions, RTCIceGatherer]
 

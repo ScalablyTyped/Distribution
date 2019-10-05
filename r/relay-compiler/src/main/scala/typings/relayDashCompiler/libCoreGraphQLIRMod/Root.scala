@@ -34,14 +34,15 @@ object Root {
     directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Root,
     loc: Location,
-    metadata: Metadata,
     name: String,
     operation: query | mutation | subscription,
     selections: Selection,
-    `type`: GraphQLCompositeType
+    `type`: GraphQLCompositeType,
+    metadata: Metadata = null
   ): Root = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, directives = directives, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, operation = operation.asInstanceOf[js.Any], selections = selections)
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, directives = directives, kind = kind, loc = loc, name = name, operation = operation.asInstanceOf[js.Any], selections = selections)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Root]
   }
 }

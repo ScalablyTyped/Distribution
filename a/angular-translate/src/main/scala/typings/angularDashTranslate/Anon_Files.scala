@@ -1,6 +1,6 @@
 package typings.angularDashTranslate
 
-import typings.angularDashTranslate.angularDashTranslateMod.angularMod.translateNs.IStaticFilesLoaderOptions
+import typings.angularDashTranslate.angularDashTranslateMod.angularMod.translate.IStaticFilesLoaderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

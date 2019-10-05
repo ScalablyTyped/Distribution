@@ -68,21 +68,21 @@ object CreateReplicationInstanceMessage {
   def apply(
     ReplicationInstanceClass: String,
     ReplicationInstanceIdentifier: String,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AllocatedStorage: Int | Double = null,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
     DnsNameServers: String = null,
     EngineVersion: String = null,
     KmsKeyId: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     ReplicationSubnetGroupIdentifier: String = null,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): CreateReplicationInstanceMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceClass = ReplicationInstanceClass, ReplicationInstanceIdentifier = ReplicationInstanceIdentifier)
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (DnsNameServers != null) __obj.updateDynamic("DnsNameServers")(DnsNameServers)

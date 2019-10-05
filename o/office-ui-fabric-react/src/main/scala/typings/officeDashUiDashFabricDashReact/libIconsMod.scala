@@ -1,0 +1,16 @@
+package typings.officeDashUiDashFabricDashReact
+
+import typings.atUifabricStyling.libUtilitiesIconsMod.IIconOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("office-ui-fabric-react/lib/Icons", JSImport.Namespace)
+@js.native
+object libIconsMod extends js.Object {
+  def initializeIcons(): Unit = js.native
+  def initializeIcons(baseUrl: String): Unit = js.native
+  def initializeIcons(baseUrl: String, options: IIconOptions): Unit = js.native
+  type IconNames = typings.atUifabricIcons.libIconNamesMod.IconNames
+}
+

@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -264,6 +265,10 @@ trait Color extends js.Object {
   var yellowA400: String
   var yellowA700: String
 }
+
+@JSImport("react-native-material-ui", "COLOR")
+@js.native
+object COLOR extends TopLevel[Color]
 
 object Color {
   @scala.inline

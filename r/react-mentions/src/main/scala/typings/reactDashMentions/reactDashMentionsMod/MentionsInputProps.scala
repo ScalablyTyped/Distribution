@@ -6,6 +6,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.RefObject
 import typings.react.reactMod.UIEvent
+import typings.reactDashMentions.Anon_Target
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
@@ -54,7 +55,7 @@ object MentionsInputProps {
     classNames: js.Any = null,
     inputRef: RefObject[HTMLInputElement | HTMLTextAreaElement] = null,
     onBlur: (/* event */ FocusEvent[HTMLInputElement | HTMLTextAreaElement], /* clickedSuggestion */ Boolean) => Unit = null,
-    onChange: OnChangeHandlerFunc = null,
+    onChange: (/* event */ Anon_Target, /* newValue */ String, /* newPlainTextValue */ String, /* mentions */ js.Array[MentionItem]) => Unit = null,
     onKeyDown: /* event */ KeyboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit = null,
     onSelect: /* event */ UIEvent[Element] => Unit = null,
     placeholder: String = null,
@@ -69,7 +70,7 @@ object MentionsInputProps {
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

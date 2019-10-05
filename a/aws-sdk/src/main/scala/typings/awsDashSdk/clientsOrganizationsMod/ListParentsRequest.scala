@@ -21,9 +21,9 @@ trait ListParentsRequest extends js.Object {
 
 object ListParentsRequest {
   @scala.inline
-  def apply(ChildId: ChildId, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListParentsRequest = {
+  def apply(ChildId: ChildId, MaxResults: Int | Double = null, NextToken: NextToken = null): ListParentsRequest = {
     val __obj = js.Dynamic.literal(ChildId = ChildId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListParentsRequest]
   }

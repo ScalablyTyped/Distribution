@@ -81,18 +81,18 @@ object HealthCheckConfig {
     Type: HealthCheckType,
     AlarmIdentifier: AlarmIdentifier = null,
     ChildHealthChecks: ChildHealthCheckList = null,
-    Disabled: js.UndefOr[Disabled] = js.undefined,
-    EnableSNI: js.UndefOr[EnableSNI] = js.undefined,
-    FailureThreshold: js.UndefOr[FailureThreshold] = js.undefined,
+    Disabled: js.UndefOr[Boolean] = js.undefined,
+    EnableSNI: js.UndefOr[Boolean] = js.undefined,
+    FailureThreshold: Int | Double = null,
     FullyQualifiedDomainName: FullyQualifiedDomainName = null,
-    HealthThreshold: js.UndefOr[HealthThreshold] = js.undefined,
+    HealthThreshold: Int | Double = null,
     IPAddress: IPAddress = null,
     InsufficientDataHealthStatus: InsufficientDataHealthStatus = null,
-    Inverted: js.UndefOr[Inverted] = js.undefined,
-    MeasureLatency: js.UndefOr[MeasureLatency] = js.undefined,
-    Port: js.UndefOr[Port] = js.undefined,
+    Inverted: js.UndefOr[Boolean] = js.undefined,
+    MeasureLatency: js.UndefOr[Boolean] = js.undefined,
+    Port: Int | Double = null,
     Regions: HealthCheckRegionList = null,
-    RequestInterval: js.UndefOr[RequestInterval] = js.undefined,
+    RequestInterval: Int | Double = null,
     ResourcePath: ResourcePath = null,
     SearchString: SearchString = null
   ): HealthCheckConfig = {
@@ -101,16 +101,16 @@ object HealthCheckConfig {
     if (ChildHealthChecks != null) __obj.updateDynamic("ChildHealthChecks")(ChildHealthChecks)
     if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled)
     if (!js.isUndefined(EnableSNI)) __obj.updateDynamic("EnableSNI")(EnableSNI)
-    if (!js.isUndefined(FailureThreshold)) __obj.updateDynamic("FailureThreshold")(FailureThreshold)
+    if (FailureThreshold != null) __obj.updateDynamic("FailureThreshold")(FailureThreshold.asInstanceOf[js.Any])
     if (FullyQualifiedDomainName != null) __obj.updateDynamic("FullyQualifiedDomainName")(FullyQualifiedDomainName)
-    if (!js.isUndefined(HealthThreshold)) __obj.updateDynamic("HealthThreshold")(HealthThreshold)
+    if (HealthThreshold != null) __obj.updateDynamic("HealthThreshold")(HealthThreshold.asInstanceOf[js.Any])
     if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress)
     if (InsufficientDataHealthStatus != null) __obj.updateDynamic("InsufficientDataHealthStatus")(InsufficientDataHealthStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(Inverted)) __obj.updateDynamic("Inverted")(Inverted)
     if (!js.isUndefined(MeasureLatency)) __obj.updateDynamic("MeasureLatency")(MeasureLatency)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Regions != null) __obj.updateDynamic("Regions")(Regions)
-    if (!js.isUndefined(RequestInterval)) __obj.updateDynamic("RequestInterval")(RequestInterval)
+    if (RequestInterval != null) __obj.updateDynamic("RequestInterval")(RequestInterval.asInstanceOf[js.Any])
     if (ResourcePath != null) __obj.updateDynamic("ResourcePath")(ResourcePath)
     if (SearchString != null) __obj.updateDynamic("SearchString")(SearchString)
     __obj.asInstanceOf[HealthCheckConfig]

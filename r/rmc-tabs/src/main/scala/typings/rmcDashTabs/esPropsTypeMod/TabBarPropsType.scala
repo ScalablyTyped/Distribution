@@ -2,7 +2,7 @@ package typings.rmcDashTabs.esPropsTypeMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
-import typings.rmcDashTabs.esModelsMod.ModelsNs.TabData
+import typings.rmcDashTabs.esModelsMod.Models.TabData
 import typings.rmcDashTabs.rmcDashTabsStrings.bottom
 import typings.rmcDashTabs.rmcDashTabsStrings.left
 import typings.rmcDashTabs.rmcDashTabsStrings.right

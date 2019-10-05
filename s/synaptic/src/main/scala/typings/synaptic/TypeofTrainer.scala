@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofTrainer extends js.Object {
-  val costNs: Typeofcost
+  val cost: Typeofcost
 }
 
 object TypeofTrainer {
   @scala.inline
-  def apply(costNs: Typeofcost): TypeofTrainer = {
-    val __obj = js.Dynamic.literal(costNs = costNs)
+  def apply(cost: Typeofcost): TypeofTrainer = {
+    val __obj = js.Dynamic.literal(cost = cost)
   
     __obj.asInstanceOf[TypeofTrainer]
   }

@@ -35,7 +35,7 @@ object CreateResourceShareRequest {
   @scala.inline
   def apply(
     name: String,
-    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
     clientToken: String = null,
     principals: PrincipalArnOrIdList = null,
     resourceArns: ResourceArnList = null,

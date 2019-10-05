@@ -16,9 +16,5 @@ trait SVGZoomEvent extends UIEvent {
 
 @JSGlobal("SVGZoomEvent")
 @js.native
-class SVGZoomEventCls () extends SVGZoomEvent
-
-@JSGlobal("SVGZoomEvent")
-@js.native
 object SVGZoomEvent extends Instantiable0[SVGZoomEvent]
 

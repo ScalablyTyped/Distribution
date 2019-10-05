@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object handlebars {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.handlebars.HandlebarsNs.TemplateDelegate
+  import typings.handlebars.Handlebars.TemplateDelegate
 
   type CompilerInfo = js.Tuple2[Double, String]
   type CustomHelperName = String
@@ -17,5 +17,5 @@ package object handlebars {
   {[ name in handlebars.BuiltinHelperName | handlebars.CustomHelperName ]: boolean}
     */ typings.handlebars.handlebarsStrings.KnownHelpers with js.Any
   // for backward compatibility of this typing
-  type RuntimeOptions = typings.handlebars.HandlebarsNs.RuntimeOptions
+  type RuntimeOptions = typings.handlebars.Handlebars.RuntimeOptions
 }

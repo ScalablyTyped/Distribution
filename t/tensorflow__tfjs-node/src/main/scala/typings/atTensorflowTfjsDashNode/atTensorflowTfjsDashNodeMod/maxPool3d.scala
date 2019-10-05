@@ -5,6 +5,9 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor5D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCDHW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NDHWC
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -25,14 +28,14 @@ object maxPool3d extends js.Object {
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
+    dimRoundingMode: floor | round | ceil
   ): T = js.native
   def apply[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
+    dimRoundingMode: floor | round | ceil,
     dataFormat: NDHWC | NCDHW
   ): T = js.native
   def apply[T /* <: Tensor4D | Tensor5D */](
@@ -40,7 +43,7 @@ object maxPool3d extends js.Object {
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
+    dimRoundingMode: floor | round | ceil,
     dataFormat: NDHWC | NCDHW,
     dilations: (js.Tuple3[Double, Double, Double]) | Double
   ): T = js.native

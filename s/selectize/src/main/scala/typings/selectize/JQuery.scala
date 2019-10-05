@@ -1,6 +1,6 @@
 package typings.selectize
 
-import typings.selectize.SelectizeNs.IOptions
+import typings.selectize.Selectize.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

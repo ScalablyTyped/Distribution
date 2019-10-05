@@ -21,9 +21,9 @@ trait TelemetryMetadata extends js.Object {
 
 object TelemetryMetadata {
   @scala.inline
-  def apply(count: Long, messageType: MessageType, dataSize: js.UndefOr[Long] = js.undefined): TelemetryMetadata = {
+  def apply(count: Long, messageType: MessageType, dataSize: Int | Double = null): TelemetryMetadata = {
     val __obj = js.Dynamic.literal(count = count, messageType = messageType)
-    if (!js.isUndefined(dataSize)) __obj.updateDynamic("dataSize")(dataSize)
+    if (dataSize != null) __obj.updateDynamic("dataSize")(dataSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryMetadata]
   }
 }

@@ -21,9 +21,9 @@ trait GetTagsRequest extends js.Object {
 
 object GetTagsRequest {
   @scala.inline
-  def apply(resourceArn: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetTagsRequest = {
+  def apply(resourceArn: String, limit: Int | scala.Double = null, position: String = null): GetTagsRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[GetTagsRequest]
   }

@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IMemberExpressionSyntax
+import typings.typescriptDashServices.TypeScript.IMemberExpressionSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "InvocationExpressionSyntax")
 @js.native
 class InvocationExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.InvocationExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.InvocationExpressionSyntax {
   def this(
     expression: IMemberExpressionSyntax,
-    argumentList: typings.typescriptDashServices.TypeScriptNs.ArgumentListSyntax,
+    argumentList: typings.typescriptDashServices.TypeScript.ArgumentListSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -20,6 +20,6 @@ class InvocationExpressionSyntax protected ()
 @JSImport("typescript-services", "InvocationExpressionSyntax")
 @js.native
 object InvocationExpressionSyntax extends js.Object {
-  def create1(expression: IMemberExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.InvocationExpressionSyntax = js.native
+  def create1(expression: IMemberExpressionSyntax): typings.typescriptDashServices.TypeScript.InvocationExpressionSyntax = js.native
 }
 

@@ -62,33 +62,33 @@ trait LaunchTemplateInstanceNetworkInterfaceSpecification extends js.Object {
 object LaunchTemplateInstanceNetworkInterfaceSpecification {
   @scala.inline
   def apply(
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
     Description: String = null,
-    DeviceIndex: js.UndefOr[Integer] = js.undefined,
+    DeviceIndex: Int | scala.Double = null,
     Groups: GroupIdStringList = null,
     InterfaceType: String = null,
-    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
+    Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     NetworkInterfaceId: String = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddressSpecificationList = null,
-    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined,
+    SecondaryPrivateIpAddressCount: Int | scala.Double = null,
     SubnetId: String = null
   ): LaunchTemplateInstanceNetworkInterfaceSpecification = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress)
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex)
+    if (DeviceIndex != null) __obj.updateDynamic("DeviceIndex")(DeviceIndex.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
     if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType)
-    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
+    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress)
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses)
-    if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount)
+    if (SecondaryPrivateIpAddressCount != null) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
     __obj.asInstanceOf[LaunchTemplateInstanceNetworkInterfaceSpecification]
   }

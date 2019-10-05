@@ -21,15 +21,11 @@ trait FailureInfo extends js.Object {
 
 object FailureInfo {
   @scala.inline
-  def apply(
-    ErrorCode: ErrorCode = null,
-    ErrorMessage: ErrorMessage = null,
-    StatusCode: js.UndefOr[StatusCode] = js.undefined
-  ): FailureInfo = {
+  def apply(ErrorCode: ErrorCode = null, ErrorMessage: ErrorMessage = null, StatusCode: Int | Double = null): FailureInfo = {
     val __obj = js.Dynamic.literal()
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailureInfo]
   }
 }

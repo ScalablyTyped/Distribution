@@ -11,6 +11,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -89,7 +90,7 @@ object SelectProps {
     onInputKeyDown: /* e */ KeyboardEvent[HTMLInputElement] => Unit = null,
     onMouseEnter: /* e */ MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: /* e */ MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onPopupScroll: UIEventHandler[HTMLDivElement] = null,
+    onPopupScroll: UIEvent[HTMLDivElement] => Unit = null,
     onSearch: /* value */ String => Unit = null,
     onSelect: (/* value */ T, /* option */ ReactElement) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
@@ -146,7 +147,7 @@ object SelectProps {
     if (onInputKeyDown != null) __obj.updateDynamic("onInputKeyDown")(js.Any.fromFunction1(onInputKeyDown))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onPopupScroll != null) __obj.updateDynamic("onPopupScroll")(onPopupScroll)
+    if (onPopupScroll != null) __obj.updateDynamic("onPopupScroll")(js.Any.fromFunction1(onPopupScroll))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)

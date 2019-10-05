@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout
 
-import typings.atAntDashDesignProDashLayout.libDefaultSettingsMod.ContentWidth
+import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ object atAntDashDesignProDashLayoutStrings {
   @js.native
   sealed trait Fixed
     extends ContentWidth
-       with typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
+       with typings.atAntDashDesignProDashLayout.libDefaultSettingsMod.ContentWidth
   
   @js.native
   sealed trait Fluid
     extends ContentWidth
-       with typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
+       with typings.atAntDashDesignProDashLayout.libDefaultSettingsMod.ContentWidth
   
   @js.native
   sealed trait `en-US` extends js.Object

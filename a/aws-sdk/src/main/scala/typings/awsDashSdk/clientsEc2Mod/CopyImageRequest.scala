@@ -47,8 +47,8 @@ object CopyImageRequest {
     SourceRegion: String,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null
   ): CopyImageRequest = {
     val __obj = js.Dynamic.literal(Name = Name, SourceImageId = SourceImageId, SourceRegion = SourceRegion)

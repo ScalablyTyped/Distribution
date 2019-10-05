@@ -35,7 +35,7 @@ object PolicySummary {
   @scala.inline
   def apply(
     Arn: PolicyArn = null,
-    AwsManaged: js.UndefOr[AwsManagedPolicy] = js.undefined,
+    AwsManaged: js.UndefOr[Boolean] = js.undefined,
     Description: PolicyDescription = null,
     Id: PolicyId = null,
     Name: PolicyName = null,

@@ -1,5 +1,6 @@
 package typings.ecore.ecoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,4 +13,8 @@ trait EPackageRegistry extends EObject {
   def getEPackage(nsURI: String): EPackage = js.native
   def register(ePackage: EPackage): Unit = js.native
 }
+
+@JSImport("ecore", "EPackageRegistry")
+@js.native
+object EPackageRegistry extends TopLevel[EPackageRegistry]
 

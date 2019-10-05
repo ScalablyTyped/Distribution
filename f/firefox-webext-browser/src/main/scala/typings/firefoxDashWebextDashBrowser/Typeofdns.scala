@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.dnsNs.DNSRecord
-import typings.firefoxDashWebextDashBrowser.browserNs.dnsNs.ResolveFlags
+import typings.firefoxDashWebextDashBrowser.browser.dns.DNSRecord
+import typings.firefoxDashWebextDashBrowser.browser.dns.ResolveFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

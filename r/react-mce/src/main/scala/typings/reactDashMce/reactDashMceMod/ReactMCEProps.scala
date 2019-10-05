@@ -1,5 +1,6 @@
 package typings.reactDashMce.reactDashMceMod
 
+import typings.tinymce.tinymceMod.Editor
 import typings.tinymce.tinymceMod.Settings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,135 +81,135 @@ object ReactMCEProps {
   def apply(
     config: Settings,
     content: String = null,
-    onActivate: EventHandler = null,
-    onAddUndo: EventHandler = null,
-    onBeforeAddUndo: EventHandler = null,
-    onBeforeExecCommand: EventHandler = null,
-    onBeforeGetContent: EventHandler = null,
-    onBeforeRenderUI: EventHandler = null,
-    onBeforeSetContent: EventHandler = null,
-    onBeforepaste: EventHandler = null,
-    onBlur: EventHandler = null,
-    onChange: EventHandler = null,
-    onClearUndos: EventHandler = null,
-    onClick: EventHandler = null,
-    onContextmenu: EventHandler = null,
-    onCopy: EventHandler = null,
-    onCut: EventHandler = null,
-    onDblclick: EventHandler = null,
-    onDeactivate: EventHandler = null,
-    onDirty: EventHandler = null,
-    onDrag: EventHandler = null,
-    onDragdrop: EventHandler = null,
-    onDragend: EventHandler = null,
-    onDraggesture: EventHandler = null,
-    onDragover: EventHandler = null,
-    onDrop: EventHandler = null,
-    onExecCommand: EventHandler = null,
-    onFocus: EventHandler = null,
-    onFocusin: EventHandler = null,
-    onFocusout: EventHandler = null,
-    onGetContent: EventHandler = null,
-    onHide: EventHandler = null,
-    onInit: EventHandler = null,
-    onKeydown: EventHandler = null,
-    onKeypress: EventHandler = null,
-    onKeyup: EventHandler = null,
-    onLoadContent: EventHandler = null,
-    onMousedown: EventHandler = null,
-    onMouseenter: EventHandler = null,
-    onMouseleave: EventHandler = null,
-    onMousemove: EventHandler = null,
-    onMouseout: EventHandler = null,
-    onMouseover: EventHandler = null,
-    onMouseup: EventHandler = null,
-    onNodeChange: EventHandler = null,
-    onObjectResizeStart: EventHandler = null,
-    onObjectResized: EventHandler = null,
-    onObjectSelected: EventHandler = null,
-    onPaste: EventHandler = null,
-    onPostProcess: EventHandler = null,
-    onPostRender: EventHandler = null,
-    onPreInit: EventHandler = null,
-    onPreProcess: EventHandler = null,
-    onProgressState: EventHandler = null,
-    onRedo: EventHandler = null,
-    onRemove: EventHandler = null,
-    onReset: EventHandler = null,
-    onSaveContent: EventHandler = null,
-    onSelectionchange: EventHandler = null,
-    onSetAttrib: EventHandler = null,
-    onSetContent: EventHandler = null,
-    onShow: EventHandler = null,
-    onSubmit: EventHandler = null,
-    onUndo: EventHandler = null,
-    onVisualAid: EventHandler = null
+    onActivate: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onAddUndo: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforeAddUndo: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforeExecCommand: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforeGetContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforeRenderUI: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforeSetContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBeforepaste: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onBlur: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onChange: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onClearUndos: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onClick: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onContextmenu: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onCopy: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onCut: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDblclick: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDeactivate: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDirty: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDrag: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDragdrop: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDragend: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDraggesture: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDragover: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onDrop: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onExecCommand: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onFocus: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onFocusin: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onFocusout: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onGetContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onHide: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onInit: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onKeydown: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onKeypress: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onKeyup: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onLoadContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMousedown: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMouseenter: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMouseleave: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMousemove: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMouseout: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMouseover: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onMouseup: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onNodeChange: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onObjectResizeStart: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onObjectResized: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onObjectSelected: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onPaste: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onPostProcess: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onPostRender: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onPreInit: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onPreProcess: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onProgressState: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onRedo: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onRemove: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onReset: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onSaveContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onSelectionchange: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onSetAttrib: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onSetContent: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onShow: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onSubmit: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onUndo: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
+    onVisualAid: (/* event */ js.Any, /* editor */ Editor) => Unit = null
   ): ReactMCEProps = {
     val __obj = js.Dynamic.literal(config = config)
     if (content != null) __obj.updateDynamic("content")(content)
-    if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
-    if (onAddUndo != null) __obj.updateDynamic("onAddUndo")(onAddUndo)
-    if (onBeforeAddUndo != null) __obj.updateDynamic("onBeforeAddUndo")(onBeforeAddUndo)
-    if (onBeforeExecCommand != null) __obj.updateDynamic("onBeforeExecCommand")(onBeforeExecCommand)
-    if (onBeforeGetContent != null) __obj.updateDynamic("onBeforeGetContent")(onBeforeGetContent)
-    if (onBeforeRenderUI != null) __obj.updateDynamic("onBeforeRenderUI")(onBeforeRenderUI)
-    if (onBeforeSetContent != null) __obj.updateDynamic("onBeforeSetContent")(onBeforeSetContent)
-    if (onBeforepaste != null) __obj.updateDynamic("onBeforepaste")(onBeforepaste)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClearUndos != null) __obj.updateDynamic("onClearUndos")(onClearUndos)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onContextmenu != null) __obj.updateDynamic("onContextmenu")(onContextmenu)
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCut != null) __obj.updateDynamic("onCut")(onCut)
-    if (onDblclick != null) __obj.updateDynamic("onDblclick")(onDblclick)
-    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(onDeactivate)
-    if (onDirty != null) __obj.updateDynamic("onDirty")(onDirty)
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragdrop != null) __obj.updateDynamic("onDragdrop")(onDragdrop)
-    if (onDragend != null) __obj.updateDynamic("onDragend")(onDragend)
-    if (onDraggesture != null) __obj.updateDynamic("onDraggesture")(onDraggesture)
-    if (onDragover != null) __obj.updateDynamic("onDragover")(onDragover)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onExecCommand != null) __obj.updateDynamic("onExecCommand")(onExecCommand)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onFocusin != null) __obj.updateDynamic("onFocusin")(onFocusin)
-    if (onFocusout != null) __obj.updateDynamic("onFocusout")(onFocusout)
-    if (onGetContent != null) __obj.updateDynamic("onGetContent")(onGetContent)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
-    if (onKeydown != null) __obj.updateDynamic("onKeydown")(onKeydown)
-    if (onKeypress != null) __obj.updateDynamic("onKeypress")(onKeypress)
-    if (onKeyup != null) __obj.updateDynamic("onKeyup")(onKeyup)
-    if (onLoadContent != null) __obj.updateDynamic("onLoadContent")(onLoadContent)
-    if (onMousedown != null) __obj.updateDynamic("onMousedown")(onMousedown)
-    if (onMouseenter != null) __obj.updateDynamic("onMouseenter")(onMouseenter)
-    if (onMouseleave != null) __obj.updateDynamic("onMouseleave")(onMouseleave)
-    if (onMousemove != null) __obj.updateDynamic("onMousemove")(onMousemove)
-    if (onMouseout != null) __obj.updateDynamic("onMouseout")(onMouseout)
-    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
-    if (onMouseup != null) __obj.updateDynamic("onMouseup")(onMouseup)
-    if (onNodeChange != null) __obj.updateDynamic("onNodeChange")(onNodeChange)
-    if (onObjectResizeStart != null) __obj.updateDynamic("onObjectResizeStart")(onObjectResizeStart)
-    if (onObjectResized != null) __obj.updateDynamic("onObjectResized")(onObjectResized)
-    if (onObjectSelected != null) __obj.updateDynamic("onObjectSelected")(onObjectSelected)
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
-    if (onPostProcess != null) __obj.updateDynamic("onPostProcess")(onPostProcess)
-    if (onPostRender != null) __obj.updateDynamic("onPostRender")(onPostRender)
-    if (onPreInit != null) __obj.updateDynamic("onPreInit")(onPreInit)
-    if (onPreProcess != null) __obj.updateDynamic("onPreProcess")(onPreProcess)
-    if (onProgressState != null) __obj.updateDynamic("onProgressState")(onProgressState)
-    if (onRedo != null) __obj.updateDynamic("onRedo")(onRedo)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset)
-    if (onSaveContent != null) __obj.updateDynamic("onSaveContent")(onSaveContent)
-    if (onSelectionchange != null) __obj.updateDynamic("onSelectionchange")(onSelectionchange)
-    if (onSetAttrib != null) __obj.updateDynamic("onSetAttrib")(onSetAttrib)
-    if (onSetContent != null) __obj.updateDynamic("onSetContent")(onSetContent)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
-    if (onUndo != null) __obj.updateDynamic("onUndo")(onUndo)
-    if (onVisualAid != null) __obj.updateDynamic("onVisualAid")(onVisualAid)
+    if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction2(onActivate))
+    if (onAddUndo != null) __obj.updateDynamic("onAddUndo")(js.Any.fromFunction2(onAddUndo))
+    if (onBeforeAddUndo != null) __obj.updateDynamic("onBeforeAddUndo")(js.Any.fromFunction2(onBeforeAddUndo))
+    if (onBeforeExecCommand != null) __obj.updateDynamic("onBeforeExecCommand")(js.Any.fromFunction2(onBeforeExecCommand))
+    if (onBeforeGetContent != null) __obj.updateDynamic("onBeforeGetContent")(js.Any.fromFunction2(onBeforeGetContent))
+    if (onBeforeRenderUI != null) __obj.updateDynamic("onBeforeRenderUI")(js.Any.fromFunction2(onBeforeRenderUI))
+    if (onBeforeSetContent != null) __obj.updateDynamic("onBeforeSetContent")(js.Any.fromFunction2(onBeforeSetContent))
+    if (onBeforepaste != null) __obj.updateDynamic("onBeforepaste")(js.Any.fromFunction2(onBeforepaste))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClearUndos != null) __obj.updateDynamic("onClearUndos")(js.Any.fromFunction2(onClearUndos))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onContextmenu != null) __obj.updateDynamic("onContextmenu")(js.Any.fromFunction2(onContextmenu))
+    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction2(onCopy))
+    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction2(onCut))
+    if (onDblclick != null) __obj.updateDynamic("onDblclick")(js.Any.fromFunction2(onDblclick))
+    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction2(onDeactivate))
+    if (onDirty != null) __obj.updateDynamic("onDirty")(js.Any.fromFunction2(onDirty))
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction2(onDrag))
+    if (onDragdrop != null) __obj.updateDynamic("onDragdrop")(js.Any.fromFunction2(onDragdrop))
+    if (onDragend != null) __obj.updateDynamic("onDragend")(js.Any.fromFunction2(onDragend))
+    if (onDraggesture != null) __obj.updateDynamic("onDraggesture")(js.Any.fromFunction2(onDraggesture))
+    if (onDragover != null) __obj.updateDynamic("onDragover")(js.Any.fromFunction2(onDragover))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction2(onDrop))
+    if (onExecCommand != null) __obj.updateDynamic("onExecCommand")(js.Any.fromFunction2(onExecCommand))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
+    if (onFocusin != null) __obj.updateDynamic("onFocusin")(js.Any.fromFunction2(onFocusin))
+    if (onFocusout != null) __obj.updateDynamic("onFocusout")(js.Any.fromFunction2(onFocusout))
+    if (onGetContent != null) __obj.updateDynamic("onGetContent")(js.Any.fromFunction2(onGetContent))
+    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction2(onInit))
+    if (onKeydown != null) __obj.updateDynamic("onKeydown")(js.Any.fromFunction2(onKeydown))
+    if (onKeypress != null) __obj.updateDynamic("onKeypress")(js.Any.fromFunction2(onKeypress))
+    if (onKeyup != null) __obj.updateDynamic("onKeyup")(js.Any.fromFunction2(onKeyup))
+    if (onLoadContent != null) __obj.updateDynamic("onLoadContent")(js.Any.fromFunction2(onLoadContent))
+    if (onMousedown != null) __obj.updateDynamic("onMousedown")(js.Any.fromFunction2(onMousedown))
+    if (onMouseenter != null) __obj.updateDynamic("onMouseenter")(js.Any.fromFunction2(onMouseenter))
+    if (onMouseleave != null) __obj.updateDynamic("onMouseleave")(js.Any.fromFunction2(onMouseleave))
+    if (onMousemove != null) __obj.updateDynamic("onMousemove")(js.Any.fromFunction2(onMousemove))
+    if (onMouseout != null) __obj.updateDynamic("onMouseout")(js.Any.fromFunction2(onMouseout))
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(js.Any.fromFunction2(onMouseover))
+    if (onMouseup != null) __obj.updateDynamic("onMouseup")(js.Any.fromFunction2(onMouseup))
+    if (onNodeChange != null) __obj.updateDynamic("onNodeChange")(js.Any.fromFunction2(onNodeChange))
+    if (onObjectResizeStart != null) __obj.updateDynamic("onObjectResizeStart")(js.Any.fromFunction2(onObjectResizeStart))
+    if (onObjectResized != null) __obj.updateDynamic("onObjectResized")(js.Any.fromFunction2(onObjectResized))
+    if (onObjectSelected != null) __obj.updateDynamic("onObjectSelected")(js.Any.fromFunction2(onObjectSelected))
+    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction2(onPaste))
+    if (onPostProcess != null) __obj.updateDynamic("onPostProcess")(js.Any.fromFunction2(onPostProcess))
+    if (onPostRender != null) __obj.updateDynamic("onPostRender")(js.Any.fromFunction2(onPostRender))
+    if (onPreInit != null) __obj.updateDynamic("onPreInit")(js.Any.fromFunction2(onPreInit))
+    if (onPreProcess != null) __obj.updateDynamic("onPreProcess")(js.Any.fromFunction2(onPreProcess))
+    if (onProgressState != null) __obj.updateDynamic("onProgressState")(js.Any.fromFunction2(onProgressState))
+    if (onRedo != null) __obj.updateDynamic("onRedo")(js.Any.fromFunction2(onRedo))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
+    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction2(onReset))
+    if (onSaveContent != null) __obj.updateDynamic("onSaveContent")(js.Any.fromFunction2(onSaveContent))
+    if (onSelectionchange != null) __obj.updateDynamic("onSelectionchange")(js.Any.fromFunction2(onSelectionchange))
+    if (onSetAttrib != null) __obj.updateDynamic("onSetAttrib")(js.Any.fromFunction2(onSetAttrib))
+    if (onSetContent != null) __obj.updateDynamic("onSetContent")(js.Any.fromFunction2(onSetContent))
+    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction2(onShow))
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction2(onSubmit))
+    if (onUndo != null) __obj.updateDynamic("onUndo")(js.Any.fromFunction2(onUndo))
+    if (onVisualAid != null) __obj.updateDynamic("onVisualAid")(js.Any.fromFunction2(onVisualAid))
     __obj.asInstanceOf[ReactMCEProps]
   }
 }

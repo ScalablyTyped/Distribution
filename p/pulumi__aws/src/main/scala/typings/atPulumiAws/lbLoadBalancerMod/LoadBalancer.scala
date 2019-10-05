@@ -1,8 +1,8 @@
 package typings.atPulumiAws.lbLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.lbNs.LoadBalancerAccessLogs
-import typings.atPulumiAws.typesOutputMod.lbNs.LoadBalancerSubnetMapping
+import typings.atPulumiAws.typesOutputMod.lb.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.lb.LoadBalancerSubnetMapping
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

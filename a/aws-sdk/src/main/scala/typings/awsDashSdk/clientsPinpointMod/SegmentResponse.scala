@@ -68,7 +68,7 @@ object SegmentResponse {
     LastModifiedDate: __string = null,
     Name: __string = null,
     SegmentGroups: SegmentGroupList = null,
-    Version: js.UndefOr[__integer] = js.undefined,
+    Version: Int | Double = null,
     tags: MapOf__string = null
   ): SegmentResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, Arn = Arn, CreationDate = CreationDate, Id = Id, SegmentType = SegmentType.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object SegmentResponse {
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[SegmentResponse]
   }

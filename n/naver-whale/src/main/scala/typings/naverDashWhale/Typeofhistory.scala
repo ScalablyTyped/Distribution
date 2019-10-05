@@ -1,12 +1,12 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.historyNs.HistoryItem
-import typings.chrome.chromeNs.historyNs.HistoryQuery
-import typings.chrome.chromeNs.historyNs.HistoryVisitRemovedEvent
-import typings.chrome.chromeNs.historyNs.HistoryVisitedEvent
-import typings.chrome.chromeNs.historyNs.Range
-import typings.chrome.chromeNs.historyNs.Url
-import typings.chrome.chromeNs.historyNs.VisitItem
+import typings.chrome.chrome.history.HistoryItem
+import typings.chrome.chrome.history.HistoryQuery
+import typings.chrome.chrome.history.HistoryVisitRemovedEvent
+import typings.chrome.chrome.history.HistoryVisitedEvent
+import typings.chrome.chrome.history.Range
+import typings.chrome.chrome.history.Url
+import typings.chrome.chrome.history.VisitItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

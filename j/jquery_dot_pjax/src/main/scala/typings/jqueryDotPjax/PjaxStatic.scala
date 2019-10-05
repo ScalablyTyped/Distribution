@@ -1,6 +1,6 @@
 package typings.jqueryDotPjax
 
-import typings.jquery.JQueryNs.Event
+import typings.jquery.JQuery.Event
 import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`

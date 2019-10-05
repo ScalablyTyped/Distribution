@@ -33,13 +33,13 @@ object RunScheduledInstancesRequest {
     LaunchSpecification: ScheduledInstancesLaunchSpecification,
     ScheduledInstanceId: String,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    InstanceCount: Int | scala.Double = null
   ): RunScheduledInstancesRequest = {
     val __obj = js.Dynamic.literal(LaunchSpecification = LaunchSpecification, ScheduledInstanceId = ScheduledInstanceId)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunScheduledInstancesRequest]
   }
 }

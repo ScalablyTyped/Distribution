@@ -1,6 +1,6 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.cadesNs.SignaturePolicyIdentifier
+import typings.jsrsasign.jsrsasign.KJUR.asn1.cades.SignaturePolicyIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

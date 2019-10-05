@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersTileLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Sublayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileLayerProperties
+import typings.arcgisDashJsDashApi.__esri.Collection
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.Sublayer
+import typings.arcgisDashJsDashApi.__esri.TileLayer
+import typings.arcgisDashJsDashApi.__esri.TileLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

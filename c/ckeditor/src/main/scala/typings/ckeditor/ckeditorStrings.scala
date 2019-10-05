@@ -1,6 +1,6 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.pluginsNs.notificationNs.`type`
+import typings.ckeditor.CKEDITOR.plugins.notification.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

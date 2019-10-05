@@ -1,5 +1,9 @@
 package typings.flushDashWriteDashStream.flushDashWriteDashStreamMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import scala.scalajs.js
@@ -17,7 +21,9 @@ class ^ protected () extends Writable {
 
 @JSImport("flush-write-stream", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
+object ^ extends TopLevel[
+      (Instantiable2[/* opts */ WritableOptions, /* write */ Write, Writable]) with (Instantiable3[/* opts */ WritableOptions, /* write */ Write, /* flush */ Flush, Writable]) with (Instantiable1[/* write */ Write, Writable]) with (Instantiable2[/* write */ Write, /* flush */ Flush, Writable])
+    ] {
   def apply(opts: WritableOptions, write: Write): Writable = js.native
   def apply(opts: WritableOptions, write: Write, flush: Flush): Writable = js.native
   def apply(write: Write): Writable = js.native

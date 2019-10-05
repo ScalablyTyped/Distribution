@@ -28,13 +28,13 @@ object DescribeEventTypesRequest {
   def apply(
     filter: EventTypeFilter = null,
     locale: locale = null,
-    maxResults: js.UndefOr[maxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: nextToken = null
   ): DescribeEventTypesRequest = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeEventTypesRequest]
   }

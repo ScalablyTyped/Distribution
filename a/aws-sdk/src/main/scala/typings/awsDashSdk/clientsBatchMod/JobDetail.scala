@@ -91,28 +91,28 @@ object JobDetail {
     arrayProperties: ArrayPropertiesDetail = null,
     attempts: AttemptDetails = null,
     container: ContainerDetail = null,
-    createdAt: js.UndefOr[Long] = js.undefined,
+    createdAt: Int | Double = null,
     dependsOn: JobDependencyList = null,
     nodeDetails: NodeDetails = null,
     nodeProperties: NodeProperties = null,
     parameters: ParametersMap = null,
     retryStrategy: RetryStrategy = null,
     statusReason: String = null,
-    stoppedAt: js.UndefOr[Long] = js.undefined,
+    stoppedAt: Int | Double = null,
     timeout: JobTimeout = null
   ): JobDetail = {
     val __obj = js.Dynamic.literal(jobDefinition = jobDefinition, jobId = jobId, jobName = jobName, jobQueue = jobQueue, startedAt = startedAt, status = status.asInstanceOf[js.Any])
     if (arrayProperties != null) __obj.updateDynamic("arrayProperties")(arrayProperties)
     if (attempts != null) __obj.updateDynamic("attempts")(attempts)
     if (container != null) __obj.updateDynamic("container")(container)
-    if (!js.isUndefined(createdAt)) __obj.updateDynamic("createdAt")(createdAt)
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn)
     if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
     if (nodeProperties != null) __obj.updateDynamic("nodeProperties")(nodeProperties)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy)
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
-    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt)
+    if (stoppedAt != null) __obj.updateDynamic("stoppedAt")(stoppedAt.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout)
     __obj.asInstanceOf[JobDetail]
   }

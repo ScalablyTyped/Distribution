@@ -13,8 +13,9 @@ trait GridContentProps extends js.Object {
 
 object GridContentProps {
   @scala.inline
-  def apply(children: ReactNode, contentWidth: ContentWidth = null): GridContentProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def apply(children: ReactNode = null, contentWidth: ContentWidth = null): GridContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
     __obj.asInstanceOf[GridContentProps]
   }

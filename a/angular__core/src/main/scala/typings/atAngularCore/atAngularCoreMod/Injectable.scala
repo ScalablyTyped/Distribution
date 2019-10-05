@@ -1,6 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
-import typings.atAngularCore.Anon_ProvidedIn
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.atAngularCoreStrings.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,16 +18,5 @@ trait Injectable extends js.Object {
 
 @JSImport("@angular/core", "Injectable")
 @js.native
-class InjectableCls () extends Injectable {
-  def this(options: Anon_ProvidedIn with InjectableProvider) = this()
-}
-
-object Injectable {
-  @scala.inline
-  def apply(providedIn: Type[_] | root = null): Injectable = {
-    val __obj = js.Dynamic.literal()
-    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Injectable]
-  }
-}
+object Injectable extends TopLevel[InjectableDecorator]
 

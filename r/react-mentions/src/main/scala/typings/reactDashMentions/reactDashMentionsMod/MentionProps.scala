@@ -36,7 +36,7 @@ object MentionProps {
     trigger: String | RegExp,
     appendSpaceOnAdd: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    displayTransform: DisplayTransformFunc = null,
+    displayTransform: (/* id */ String, /* display */ String) => String = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     markup: String = null,
     onAdd: (/* id */ String | Double, /* display */ String) => Unit = null,
@@ -47,7 +47,7 @@ object MentionProps {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(appendSpaceOnAdd)) __obj.updateDynamic("appendSpaceOnAdd")(appendSpaceOnAdd)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (displayTransform != null) __obj.updateDynamic("displayTransform")(displayTransform)
+    if (displayTransform != null) __obj.updateDynamic("displayTransform")(js.Any.fromFunction2(displayTransform))
     if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading)
     if (markup != null) __obj.updateDynamic("markup")(markup)
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))

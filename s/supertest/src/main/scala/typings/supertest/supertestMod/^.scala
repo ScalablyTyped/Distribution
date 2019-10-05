@@ -8,8 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(app: js.Any): SuperTest[Test] = js.native
-  def agent(): SuperTest[Test] = js.native
-  def agent(app: js.Any): SuperTest[Test] = js.native
-  def agent(app: js.Any, options: AgentOptions): SuperTest[Test] = js.native
 }
 

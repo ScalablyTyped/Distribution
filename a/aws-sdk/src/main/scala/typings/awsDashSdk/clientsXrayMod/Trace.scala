@@ -21,13 +21,9 @@ trait Trace extends js.Object {
 
 object Trace {
   @scala.inline
-  def apply(
-    Duration: js.UndefOr[NullableDouble] = js.undefined,
-    Id: TraceId = null,
-    Segments: SegmentList = null
-  ): Trace = {
+  def apply(Duration: Int | scala.Double = null, Id: TraceId = null, Segments: SegmentList = null): Trace = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Segments != null) __obj.updateDynamic("Segments")(Segments)
     __obj.asInstanceOf[Trace]

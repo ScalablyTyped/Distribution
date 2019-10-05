@@ -1,6 +1,7 @@
 package typings.anydbDashSql.anydbDashSqlMod
 
 import typings.anydbDashSql.Anon_LOWER
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,6 @@ trait AnydbSql extends DatabaseConnection {
   def getPool(): AnyDBPool = js.native
   def makeFunction(name: String): js.Function = js.native
   def open(): Unit = js.native
-  def transaction[T](fn: js.Function1[/* tx */ Transaction, typings.bluebird.bluebirdMod.^[T]]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def transaction[T](fn: js.Function1[/* tx */ Transaction, ^[T]]): ^[T] = js.native
 }
 

@@ -140,3 +140,10 @@ trait ForceLink[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: Simulati
   def strength(strength: Double): this.type = js.native
 }
 
+@JSImport("d3-force", "forceLink")
+@js.native
+object forceLink extends js.Object {
+  def apply[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink[NodeDatum, LinksDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink[NodeDatum, LinksDatum] = js.native
+}
+

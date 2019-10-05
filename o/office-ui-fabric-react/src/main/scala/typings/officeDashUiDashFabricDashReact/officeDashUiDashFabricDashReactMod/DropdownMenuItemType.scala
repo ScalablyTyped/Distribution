@@ -1,5 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
+import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod.SelectableOptionMenuItemType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +12,6 @@ object DropdownMenuItemType extends js.Object {
   /* 2 */ val Header: typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod.SelectableOptionMenuItemType.Header with Double = js.native
   /* 0 */ val Normal: typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod.SelectableOptionMenuItemType.Normal with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod.SelectableOptionMenuItemType with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType with Double] = js.native
 }
 

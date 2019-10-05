@@ -1,6 +1,6 @@
 package typings.cordovaDashPluginDashInsomnia
 
-import typings.cordovaDashPluginDashInsomnia.InsomniaPluginNs.Insomnia
+import typings.cordovaDashPluginDashInsomnia.InsomniaPlugin.Insomnia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

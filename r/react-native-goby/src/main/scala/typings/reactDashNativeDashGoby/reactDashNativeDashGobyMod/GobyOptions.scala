@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod
 
-import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.GobyNs.CheckFrequency
-import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.GobyNs.InstallMode
+import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.Goby.CheckFrequency
+import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.Goby.InstallMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

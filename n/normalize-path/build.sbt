@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "normalize-path"
-version := "3.0-dt-20181225Z-18ffc5"
-scalaVersion := "2.12.9"
+version := "3.0-dt-20181225Z-b4ab9c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

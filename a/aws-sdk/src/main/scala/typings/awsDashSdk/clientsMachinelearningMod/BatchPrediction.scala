@@ -61,12 +61,12 @@ object BatchPrediction {
   def apply(
     BatchPredictionDataSourceId: EntityId = null,
     BatchPredictionId: EntityId = null,
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
+    ComputeTime: Int | Double = null,
     CreatedAt: EpochTime = null,
     CreatedByIamUser: AwsUserArn = null,
     FinishedAt: EpochTime = null,
     InputDataLocationS3: S3Url = null,
-    InvalidRecordCount: js.UndefOr[LongType] = js.undefined,
+    InvalidRecordCount: Int | Double = null,
     LastUpdatedAt: EpochTime = null,
     MLModelId: EntityId = null,
     Message: Message = null,
@@ -74,17 +74,17 @@ object BatchPrediction {
     OutputUri: S3Url = null,
     StartedAt: EpochTime = null,
     Status: EntityStatus = null,
-    TotalRecordCount: js.UndefOr[LongType] = js.undefined
+    TotalRecordCount: Int | Double = null
   ): BatchPrediction = {
     val __obj = js.Dynamic.literal()
     if (BatchPredictionDataSourceId != null) __obj.updateDynamic("BatchPredictionDataSourceId")(BatchPredictionDataSourceId)
     if (BatchPredictionId != null) __obj.updateDynamic("BatchPredictionId")(BatchPredictionId)
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime)
+    if (ComputeTime != null) __obj.updateDynamic("ComputeTime")(ComputeTime.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser)
     if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt)
     if (InputDataLocationS3 != null) __obj.updateDynamic("InputDataLocationS3")(InputDataLocationS3)
-    if (!js.isUndefined(InvalidRecordCount)) __obj.updateDynamic("InvalidRecordCount")(InvalidRecordCount)
+    if (InvalidRecordCount != null) __obj.updateDynamic("InvalidRecordCount")(InvalidRecordCount.asInstanceOf[js.Any])
     if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt)
     if (MLModelId != null) __obj.updateDynamic("MLModelId")(MLModelId)
     if (Message != null) __obj.updateDynamic("Message")(Message)
@@ -92,7 +92,7 @@ object BatchPrediction {
     if (OutputUri != null) __obj.updateDynamic("OutputUri")(OutputUri)
     if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalRecordCount)) __obj.updateDynamic("TotalRecordCount")(TotalRecordCount)
+    if (TotalRecordCount != null) __obj.updateDynamic("TotalRecordCount")(TotalRecordCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPrediction]
   }
 }

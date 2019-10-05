@@ -11,7 +11,7 @@ trait Anon_ColorCurvenessShadowBlur extends js.Object {
     *
     * @default
     * ""#ccc""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait Anon_ColorCurvenessShadowBlur extends js.Object {
     *
     * @default
     * 0.5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.curveness
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.curveness
     */
   var curveness: js.UndefOr[Double] = js.undefined
   /**
@@ -30,31 +30,31 @@ trait Anon_ColorCurvenessShadowBlur extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.lineStyle)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.emphasis.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait Anon_ColorCurvenessShadowBlur extends js.Object {
     *
     * @default
     * 1.5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle.width
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

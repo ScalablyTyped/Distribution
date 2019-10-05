@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.dgramMod.Socket
 import typings.winstonDashSyslog.winstonDashSyslogNumbers.`true`
+import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait SyslogTransportInstance
-  extends typings.winstonDashTransport.winstonDashTransportMod.^
+  extends ^
      with Instantiable0[SyslogTransportInstance]
      with Instantiable1[/* options */ SyslogTransportOptions, SyslogTransportInstance] {
   var producer: js.Any = js.native

@@ -21,9 +21,9 @@ trait GetDeploymentsRequest extends js.Object {
 
 object GetDeploymentsRequest {
   @scala.inline
-  def apply(restApiId: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetDeploymentsRequest = {
+  def apply(restApiId: String, limit: Int | scala.Double = null, position: String = null): GetDeploymentsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[GetDeploymentsRequest]
   }

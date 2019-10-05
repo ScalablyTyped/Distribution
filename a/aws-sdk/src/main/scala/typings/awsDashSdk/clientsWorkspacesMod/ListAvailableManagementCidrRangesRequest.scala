@@ -23,11 +23,11 @@ object ListAvailableManagementCidrRangesRequest {
   @scala.inline
   def apply(
     ManagementCidrRangeConstraint: ManagementCidrRangeConstraint,
-    MaxResults: js.UndefOr[ManagementCidrRangeMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null
   ): ListAvailableManagementCidrRangesRequest = {
     val __obj = js.Dynamic.literal(ManagementCidrRangeConstraint = ManagementCidrRangeConstraint)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListAvailableManagementCidrRangesRequest]
   }

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsLayersFeatureLayerViewMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureLayerViewConstructor
+import typings.arcgisDashJsDashApi.__esri.FeatureLayerViewConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

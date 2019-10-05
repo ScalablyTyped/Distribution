@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaLambdaMixinsMod
 
-import typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function
+import typings.atPulumiAws.lambdaFunctionMod.Function
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

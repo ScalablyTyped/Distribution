@@ -1,7 +1,7 @@
 package typings.rxDashJquery.rxDashJqueryMod
 
-import typings.rxDashCore.RxNs.IDisposable
-import typings.rxDashLite.RxNs.IScheduler
+import typings.rxDashCore.Rx.IDisposable
+import typings.rxDashLite.Rx.IScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "SchedulerCls")
 @js.native
 class SchedulerCls protected ()
-  extends typings.rxDashLite.RxNs.SchedulerCls {
+  extends typings.rxDashLite.Rx.SchedulerCls {
   def this(
     now: js.Function0[Double],
     schedule: js.Function2[

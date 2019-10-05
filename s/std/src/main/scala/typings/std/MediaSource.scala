@@ -112,10 +112,6 @@ trait MediaSource extends EventTarget {
 
 @JSGlobal("MediaSource")
 @js.native
-class MediaSourceCls () extends MediaSource
-
-@JSGlobal("MediaSource")
-@js.native
 object MediaSource extends Instantiable0[MediaSource] {
   def isTypeSupported(`type`: java.lang.String): scala.Boolean = js.native
 }

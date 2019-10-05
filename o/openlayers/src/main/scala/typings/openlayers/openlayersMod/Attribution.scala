@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.AttributionOptions
+import typings.openlayers.openlayersMod.olx.AttributionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

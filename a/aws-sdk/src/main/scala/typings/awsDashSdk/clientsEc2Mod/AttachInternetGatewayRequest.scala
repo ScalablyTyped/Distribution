@@ -21,7 +21,7 @@ trait AttachInternetGatewayRequest extends js.Object {
 
 object AttachInternetGatewayRequest {
   @scala.inline
-  def apply(InternetGatewayId: String, VpcId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AttachInternetGatewayRequest = {
+  def apply(InternetGatewayId: String, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): AttachInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId, VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AttachInternetGatewayRequest]

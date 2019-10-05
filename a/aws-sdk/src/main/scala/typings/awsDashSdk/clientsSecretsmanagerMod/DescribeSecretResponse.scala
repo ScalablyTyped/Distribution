@@ -72,7 +72,7 @@ object DescribeSecretResponse {
     LastRotatedDate: LastRotatedDateType = null,
     Name: SecretNameType = null,
     OwningService: OwningServiceType = null,
-    RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
+    RotationEnabled: js.UndefOr[Boolean] = js.undefined,
     RotationLambdaARN: RotationLambdaARNType = null,
     RotationRules: RotationRulesType = null,
     Tags: TagListType = null,

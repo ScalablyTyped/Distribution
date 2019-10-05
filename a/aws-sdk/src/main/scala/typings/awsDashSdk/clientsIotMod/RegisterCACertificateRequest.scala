@@ -32,9 +32,9 @@ object RegisterCACertificateRequest {
   def apply(
     caCertificate: CertificatePem,
     verificationCertificate: CertificatePem,
-    allowAutoRegistration: js.UndefOr[AllowAutoRegistration] = js.undefined,
+    allowAutoRegistration: js.UndefOr[scala.Boolean] = js.undefined,
     registrationConfig: RegistrationConfig = null,
-    setAsActive: js.UndefOr[SetAsActive] = js.undefined
+    setAsActive: js.UndefOr[scala.Boolean] = js.undefined
   ): RegisterCACertificateRequest = {
     val __obj = js.Dynamic.literal(caCertificate = caCertificate, verificationCertificate = verificationCertificate)
     if (!js.isUndefined(allowAutoRegistration)) __obj.updateDynamic("allowAutoRegistration")(allowAutoRegistration)

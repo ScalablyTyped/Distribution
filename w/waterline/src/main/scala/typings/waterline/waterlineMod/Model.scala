@@ -1,6 +1,6 @@
 package typings.waterline.waterlineMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.sequelize.sequelizeMod
 
-import typings.validator.ValidatorJSNs.ValidatorStatic
+import typings.validator.ValidatorJS.ValidatorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

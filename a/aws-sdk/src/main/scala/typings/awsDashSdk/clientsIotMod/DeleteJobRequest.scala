@@ -17,7 +17,7 @@ trait DeleteJobRequest extends js.Object {
 
 object DeleteJobRequest {
   @scala.inline
-  def apply(jobId: JobId, force: js.UndefOr[ForceFlag] = js.undefined): DeleteJobRequest = {
+  def apply(jobId: JobId, force: js.UndefOr[scala.Boolean] = js.undefined): DeleteJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     __obj.asInstanceOf[DeleteJobRequest]

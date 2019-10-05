@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.Tab
+import typings.jpm.FFAddonSDK.Tab
 import typings.jpm.jpmStrings.activate
 import typings.jpm.jpmStrings.close
 import typings.jpm.jpmStrings.deactivate

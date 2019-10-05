@@ -1,6 +1,6 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AndroidNs.Intent
+import typings.titanium.Titanium.Android.Intent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

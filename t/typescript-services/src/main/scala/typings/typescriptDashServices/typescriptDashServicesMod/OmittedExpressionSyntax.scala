@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "OmittedExpressionSyntax")
 @js.native
 class OmittedExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.OmittedExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.OmittedExpressionSyntax {
   def this(parsedInStrictMode: Boolean) = this()
 }
 

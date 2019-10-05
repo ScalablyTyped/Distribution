@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSearchSearchResultRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchResultRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchResultRendererProperties
+import typings.arcgisDashJsDashApi.__esri.SearchResultRenderer
+import typings.arcgisDashJsDashApi.__esri.SearchResultRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

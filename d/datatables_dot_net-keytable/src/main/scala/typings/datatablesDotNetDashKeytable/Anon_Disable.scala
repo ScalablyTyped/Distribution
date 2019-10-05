@@ -1,6 +1,6 @@
 package typings.datatablesDotNetDashKeytable
 
-import typings.datatablesDotNetDashKeytable.DataTablesNs.Api
+import typings.datatablesDotNetDashKeytable.DataTables.Api
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

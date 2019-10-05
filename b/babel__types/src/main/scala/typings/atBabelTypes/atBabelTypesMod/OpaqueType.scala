@@ -48,3 +48,27 @@ object OpaqueType {
   }
 }
 
+@JSImport("@babel/types", "opaqueType")
+@js.native
+object opaqueType extends js.Object {
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    supertype: js.UndefOr[scala.Nothing],
+    impltype: FlowType
+  ): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: js.UndefOr[scala.Nothing], supertype: Null, impltype: FlowType): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: js.UndefOr[scala.Nothing], supertype: FlowType, impltype: FlowType): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: Null, supertype: js.UndefOr[scala.Nothing], impltype: FlowType): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: Null, supertype: Null, impltype: FlowType): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: Null, supertype: FlowType, impltype: FlowType): OpaqueType = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: TypeParameterDeclaration,
+    supertype: js.UndefOr[scala.Nothing],
+    impltype: FlowType
+  ): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration, supertype: Null, impltype: FlowType): OpaqueType = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration, supertype: FlowType, impltype: FlowType): OpaqueType = js.native
+}
+

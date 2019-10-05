@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.PaymentNotice
+import typings.fhir.fhir.PaymentNotice
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

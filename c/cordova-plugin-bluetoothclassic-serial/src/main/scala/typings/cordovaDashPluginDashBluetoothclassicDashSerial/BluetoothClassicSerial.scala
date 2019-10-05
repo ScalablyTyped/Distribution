@@ -1,5 +1,6 @@
 package typings.cordovaDashPluginDashBluetoothclassicDashSerial
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,4 +113,8 @@ trait BluetoothClassicSerial extends js.Object {
     fail_cb: js.Function1[/* error */ js.Any, _]
   ): Unit = js.native
 }
+
+@JSGlobal("bluetoothClassicSerial")
+@js.native
+object bluetoothClassicSerial extends TopLevel[BluetoothClassicSerial]
 

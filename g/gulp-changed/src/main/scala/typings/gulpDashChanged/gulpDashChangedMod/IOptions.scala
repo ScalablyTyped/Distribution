@@ -1,5 +1,7 @@
 package typings.gulpDashChanged.gulpDashChangedMod
 
+import typings.node.streamMod.Transform
+import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +32,13 @@ object IOptions {
   def apply(
     cwd: String = null,
     extension: String = null,
-    hasChanged: IComparator = null,
+    hasChanged: (/* stream */ Transform, /* callback */ js.Function, /* sourceFile */ File, /* destPath */ String) => Unit = null,
     transformPath: /* destPath */ String => String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (hasChanged != null) __obj.updateDynamic("hasChanged")(hasChanged)
+    if (hasChanged != null) __obj.updateDynamic("hasChanged")(js.Any.fromFunction4(hasChanged))
     if (transformPath != null) __obj.updateDynamic("transformPath")(js.Any.fromFunction1(transformPath))
     __obj.asInstanceOf[IOptions]
   }

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksCustomLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.CustomLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.CustomLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

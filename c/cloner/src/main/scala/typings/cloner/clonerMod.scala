@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("cloner", JSImport.Namespace)
 @js.native
 object clonerMod extends js.Object {
-  @JSName("deep")
   @js.native
-  object deepNs extends js.Object {
+  object deep extends js.Object {
     /**
       * Will loop over all own keys and deeply copy (copy by value) them to a new object.
       *
@@ -27,9 +26,8 @@ object clonerMod extends js.Object {
     def merge(target: js.Any, sources: js.Any*): js.Any = js.native
   }
   
-  @JSName("shallow")
   @js.native
-  object shallowNs extends js.Object {
+  object shallow extends js.Object {
     /**
       * Will loop over all own keys and shallow copy (copy by reference) them to a new object.
       *

@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.IStatementSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.IStatementSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ForStatementSyntax")
 @js.native
 class ForStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ForStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.ForStatementSyntax {
   def this(
     forKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
-    variableDeclaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclarationSyntax,
+    variableDeclaration: typings.typescriptDashServices.TypeScript.VariableDeclarationSyntax,
     initializer: IExpressionSyntax,
     firstSemicolonToken: ISyntaxToken,
     condition: IExpressionSyntax,
@@ -37,7 +37,7 @@ object ForStatementSyntax extends js.Object {
     secondSemicolonToken: ISyntaxToken,
     closeParenToken: ISyntaxToken,
     statement: IStatementSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.ForStatementSyntax = js.native
-  def create1(statement: IStatementSyntax): typings.typescriptDashServices.TypeScriptNs.ForStatementSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.ForStatementSyntax = js.native
+  def create1(statement: IStatementSyntax): typings.typescriptDashServices.TypeScript.ForStatementSyntax = js.native
 }
 

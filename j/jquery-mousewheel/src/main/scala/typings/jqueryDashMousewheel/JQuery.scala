@@ -1,6 +1,6 @@
 package typings.jqueryDashMousewheel
 
-import typings.jqueryDashMousewheel.JQueryMousewheelNs.JQueryMousewheelEventObject
+import typings.jqueryDashMousewheel.JQueryMousewheel.JQueryMousewheelEventObject
 import typings.jqueryDashMousewheel.jqueryDashMousewheelStrings.mousewheel
 import scala.scalajs.js
 import scala.scalajs.js.`|`

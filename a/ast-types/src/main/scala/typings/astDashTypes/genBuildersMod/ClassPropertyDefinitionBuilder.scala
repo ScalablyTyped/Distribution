@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.ClassPropertyDefinitionKind
 import typings.astDashTypes.genKindsMod.ClassPropertyKind
 import typings.astDashTypes.genKindsMod.MethodDefinitionKind
 import typings.astDashTypes.genKindsMod.VariableDeclaratorKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassPropertyDefinition
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassPropertyDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

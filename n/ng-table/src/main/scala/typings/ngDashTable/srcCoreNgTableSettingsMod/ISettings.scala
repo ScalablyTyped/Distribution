@@ -1,12 +1,15 @@
 package typings.ngDashTable.srcCoreNgTableSettingsMod
 
+import typings.angular.angularMod.IPromise
 import typings.ngDashTable.srcCoreDataDataSettingsMod.IDataSettings
 import typings.ngDashTable.srcCoreDataGetDataMod.IGetDataFunc
 import typings.ngDashTable.srcCoreDataGetDataMod.IInterceptableGetDataFunc
 import typings.ngDashTable.srcCoreDataInterceptorMod.IInterceptor
+import typings.ngDashTable.srcCoreDataResultsMod.IDataRowGroup
 import typings.ngDashTable.srcCoreFilteringFilterSettingsMod.IFilterSettings
 import typings.ngDashTable.srcCoreGroupingGetGroupMod.IGetGroupFunc
 import typings.ngDashTable.srcCoreGroupingGroupSettingsMod.IGroupSettings
+import typings.ngDashTable.srcCoreNgTableParamsMod.NgTableParams
 import typings.ngDashTable.srcCoreSortingMod.SortDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -84,8 +87,8 @@ object ISettings {
     debugMode: js.UndefOr[Boolean] = js.undefined,
     defaultSort: SortDirection = null,
     filterOptions: IFilterSettings[T] = null,
-    getData: IGetDataFunc[T] | IInterceptableGetDataFunc[T] = null,
-    getGroups: IGetGroupFunc[T] = null,
+    getData: /* params */ NgTableParams[T] => js.Any | js.Array[T] | IPromise[js.Array[T]] = null,
+    getGroups: /* params */ NgTableParams[T] => js.Array[IDataRowGroup[T]] | IPromise[js.Array[IDataRowGroup[T]]] = null,
     groupOptions: IGroupSettings = null,
     interceptors: js.Array[IInterceptor[T]] = null,
     paginationMaxBlocks: Int | Double = null,
@@ -101,8 +104,8 @@ object ISettings {
     if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode)
     if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
-    if (getData != null) __obj.updateDynamic("getData")(getData.asInstanceOf[js.Any])
-    if (getGroups != null) __obj.updateDynamic("getGroups")(getGroups)
+    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction1(getData))
+    if (getGroups != null) __obj.updateDynamic("getGroups")(js.Any.fromFunction1(getGroups))
     if (groupOptions != null) __obj.updateDynamic("groupOptions")(groupOptions)
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors)
     if (paginationMaxBlocks != null) __obj.updateDynamic("paginationMaxBlocks")(paginationMaxBlocks.asInstanceOf[js.Any])

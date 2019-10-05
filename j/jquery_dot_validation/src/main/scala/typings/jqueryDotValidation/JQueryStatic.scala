@@ -1,6 +1,6 @@
 package typings.jqueryDotValidation
 
-import typings.jqueryDotValidation.JQueryValidationNs.ValidatorStatic
+import typings.jqueryDotValidation.JQueryValidation.ValidatorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

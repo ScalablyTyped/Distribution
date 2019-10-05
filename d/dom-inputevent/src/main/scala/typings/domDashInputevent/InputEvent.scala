@@ -16,13 +16,6 @@ trait InputEvent extends UIEvent {
 
 @JSGlobal("InputEvent")
 @js.native
-class InputEventCls protected () extends InputEvent {
-  def this(`type`: String) = this()
-  def this(`type`: String, eventInitDict: InputEventInit) = this()
-}
-
-@JSGlobal("InputEvent")
-@js.native
 object InputEvent
   extends Instantiable1[/* type */ String, InputEvent]
      with Instantiable2[/* type */ String, /* eventInitDict */ InputEventInit, InputEvent]

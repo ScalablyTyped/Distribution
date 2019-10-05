@@ -1,8 +1,8 @@
 package typings.meteorDashAstronomy
 
-import typings.meteorDashAstronomy.MeteorAstronomyNs.RemoveCallback
-import typings.meteorDashAstronomy.MeteorAstronomyNs.SaveAndValidateCallback
-import typings.meteorDashAstronomy.MeteorAstronomyNs.SaveAndValidateOptions
+import typings.meteorDashAstronomy.MeteorAstronomy.RemoveCallback
+import typings.meteorDashAstronomy.MeteorAstronomy.SaveAndValidateCallback
+import typings.meteorDashAstronomy.MeteorAstronomy.SaveAndValidateOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -37,3 +37,9 @@ object PrivateName {
   }
 }
 
+@JSImport("@babel/types", "privateName")
+@js.native
+object privateName extends js.Object {
+  def apply(id: Identifier): PrivateName = js.native
+}
+

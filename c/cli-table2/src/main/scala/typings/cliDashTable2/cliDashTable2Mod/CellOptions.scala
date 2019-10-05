@@ -21,18 +21,19 @@ trait CellOptions extends js.Object {
 object CellOptions {
   @scala.inline
   def apply(
-    content: CellValue,
     chars: Partial[Record[CharName, String]] = null,
     colSpan: Int | Double = null,
+    content: CellValue = null,
     hAlign: HorizontalAlignment = null,
     rowSpan: Int | Double = null,
     style: Anon_BorderHead = null,
     truncate: String = null,
     vAlign: VerticalAlignment = null
   ): CellOptions = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (chars != null) __obj.updateDynamic("chars")(chars)
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign)
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

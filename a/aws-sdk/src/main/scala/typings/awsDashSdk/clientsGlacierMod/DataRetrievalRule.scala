@@ -17,9 +17,9 @@ trait DataRetrievalRule extends js.Object {
 
 object DataRetrievalRule {
   @scala.inline
-  def apply(BytesPerHour: js.UndefOr[NullableLong] = js.undefined, Strategy: String = null): DataRetrievalRule = {
+  def apply(BytesPerHour: Int | Double = null, Strategy: String = null): DataRetrievalRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesPerHour)) __obj.updateDynamic("BytesPerHour")(BytesPerHour)
+    if (BytesPerHour != null) __obj.updateDynamic("BytesPerHour")(BytesPerHour.asInstanceOf[js.Any])
     if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy)
     __obj.asInstanceOf[DataRetrievalRule]
   }

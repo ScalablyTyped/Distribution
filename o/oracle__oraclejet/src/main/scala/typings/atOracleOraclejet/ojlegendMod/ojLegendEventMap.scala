@@ -17,7 +17,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
-import typings.atOracleOraclejet.ojlegendMod.ojLegendNs.ojDrill
+import typings.atOracleOraclejet.ojlegendMod.ojLegend.ojDrill
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -49,7 +49,7 @@ trait ojLegendEventMap[K, D] extends dvtBaseComponentEventMap[ojLegendSettablePr
   var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var hoverBehaviorDelayChanged: JetElementCustomEvent[Double]
-  var ojDrill: typings.atOracleOraclejet.ojlegendMod.ojLegendNs.ojDrill
+  var ojDrill: typings.atOracleOraclejet.ojlegendMod.ojLegend.ojDrill
   var orientationChanged: JetElementCustomEvent[horizontal | vertical]
   var scrollingChanged: JetElementCustomEvent[off | asNeeded]
   var symbolHeightChanged: JetElementCustomEvent[Double]

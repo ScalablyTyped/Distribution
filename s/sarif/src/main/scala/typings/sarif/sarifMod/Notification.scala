@@ -1,6 +1,6 @@
 package typings.sarif.sarifMod
 
-import typings.sarif.sarifMod.NotificationNs.level
+import typings.sarif.sarifMod.Notification.level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Notification extends js.Object {
   /**
     * A value specifying the severity level of the notification.
     */
-  var level: js.UndefOr[typings.sarif.sarifMod.NotificationNs.level] = js.undefined
+  var level: js.UndefOr[level] = js.undefined
   /**
     * The locations relevant to this notification.
     */
@@ -44,29 +44,16 @@ trait Notification extends js.Object {
   var timeUtc: js.UndefOr[String] = js.undefined
 }
 
-object Notification {
-  @scala.inline
-  def apply(
-    message: Message,
-    associatedRule: ReportingDescriptorReference = null,
-    descriptor: ReportingDescriptorReference = null,
-    exception: Exception = null,
-    level: level = null,
-    locations: js.Array[Location] = null,
-    properties: PropertyBag = null,
-    threadId: Int | Double = null,
-    timeUtc: String = null
-  ): Notification = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (associatedRule != null) __obj.updateDynamic("associatedRule")(associatedRule)
-    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
-    if (exception != null) __obj.updateDynamic("exception")(exception)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
-    if (timeUtc != null) __obj.updateDynamic("timeUtc")(timeUtc)
-    __obj.asInstanceOf[Notification]
-  }
+@JSImport("sarif", "Notification")
+@js.native
+object Notification extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.none
+    - typings.sarif.sarifStrings.note
+    - typings.sarif.sarifStrings.warning
+    - typings.sarif.sarifStrings.error
+  */
+  trait level extends js.Object
+  
 }
 

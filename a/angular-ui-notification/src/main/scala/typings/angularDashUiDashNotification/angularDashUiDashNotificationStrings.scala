@@ -1,8 +1,8 @@
 package typings.angularDashUiDashNotification
 
-import typings.angularDashUiDashNotification.angularMod.uiNotificationNs.MessageType
-import typings.angularDashUiDashNotification.angularMod.uiNotificationNs.XPosition
-import typings.angularDashUiDashNotification.angularMod.uiNotificationNs.YPosition
+import typings.angularDashUiDashNotification.angularMod.uiNotification.MessageType
+import typings.angularDashUiDashNotification.angularMod.uiNotification.XPosition
+import typings.angularDashUiDashNotification.angularMod.uiNotification.YPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

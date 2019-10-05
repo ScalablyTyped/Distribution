@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceEphemeralBlockDevice
-import typings.atPulumiAws.typesOutputMod.opsworksNs.InstanceRootBlockDevice
+import typings.atPulumiAws.typesOutputMod.opsworks.InstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.opsworks.InstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.opsworks.InstanceRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BoundingBox")
 @js.native
 class BoundingBox ()
-  extends typings.playcanvas.pcNs.BoundingBox {
-  def this(center: typings.playcanvas.pcNs.Vec3) = this()
-  def this(center: typings.playcanvas.pcNs.Vec3, halfExtents: typings.playcanvas.pcNs.Vec3) = this()
+  extends typings.playcanvas.pc.BoundingBox {
+  def this(center: typings.playcanvas.pc.Vec3) = this()
+  def this(center: typings.playcanvas.pc.Vec3, halfExtents: typings.playcanvas.pc.Vec3) = this()
 }
 

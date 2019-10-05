@@ -17,12 +17,13 @@ trait IPeoplePickerItemSuggestionStyles extends js.Object {
 object IPeoplePickerItemSuggestionStyles {
   @scala.inline
   def apply(
-    personaWrapper: IStyle,
-    root: IStyle,
-    subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles
+    subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles,
+    personaWrapper: IStyle = null,
+    root: IStyle = null
   ): IPeoplePickerItemSuggestionStyles = {
-    val __obj = js.Dynamic.literal(personaWrapper = personaWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], subComponentStyles = subComponentStyles)
-  
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    if (personaWrapper != null) __obj.updateDynamic("personaWrapper")(personaWrapper.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSuggestionStyles]
   }
 }

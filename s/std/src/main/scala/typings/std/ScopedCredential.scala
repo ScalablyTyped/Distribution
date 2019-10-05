@@ -12,14 +12,5 @@ trait ScopedCredential extends js.Object {
 
 @JSGlobal("ScopedCredential")
 @js.native
-class ScopedCredentialCls () extends ScopedCredential {
-  /* CompleteClass */
-  override val id: ArrayBuffer = js.native
-  /* CompleteClass */
-  override val `type`: ScopedCredentialType = js.native
-}
-
-@JSGlobal("ScopedCredential")
-@js.native
 object ScopedCredential extends Instantiable0[ScopedCredential]
 

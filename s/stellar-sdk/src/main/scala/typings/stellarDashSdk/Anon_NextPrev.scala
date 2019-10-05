@@ -1,6 +1,6 @@
 package typings.stellarDashSdk
 
-import typings.stellarDashSdk.stellarDashSdkMod.HorizonNs.ResponseLink
+import typings.stellarDashSdk.stellarDashSdkMod.Horizon.ResponseLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

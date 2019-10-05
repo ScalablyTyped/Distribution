@@ -27,11 +27,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.x
 import typings.atOracleOraclejet.atOracleOraclejetStrings.y
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.RendererContext
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojCollapse
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojExpand
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojExpand
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
 import typings.std.AnimationEvent
@@ -77,10 +77,10 @@ trait ojDiagramEventMap[K1, K2, D1, D2] extends dvtBaseComponentEventMap[ojDiagr
   var minZoomChanged: JetElementCustomEvent[Double]
   var nodeDataChanged: JetElementCustomEvent[(DataProvider[K1, D1]) | Null]
   var nodeHighlightModeChanged: JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node]
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojBeforeCollapse
-  var ojBeforeExpand: typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojBeforeExpand
-  var ojCollapse: typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojCollapse
-  var ojExpand: typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.ojExpand
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse
+  var ojBeforeExpand: typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand
+  var ojCollapse: typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse
+  var ojExpand: typings.atOracleOraclejet.ojdiagramMod.ojDiagram.ojExpand
   var overviewChanged: JetElementCustomEvent[Anon_Bottom]
   var panDirectionChanged: JetElementCustomEvent[x | y | auto]
   var panningChanged: JetElementCustomEvent[auto | none]

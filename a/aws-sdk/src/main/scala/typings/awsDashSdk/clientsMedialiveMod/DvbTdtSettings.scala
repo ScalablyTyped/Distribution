@@ -13,9 +13,9 @@ trait DvbTdtSettings extends js.Object {
 
 object DvbTdtSettings {
   @scala.inline
-  def apply(RepInterval: js.UndefOr[__integerMin1000Max30000] = js.undefined): DvbTdtSettings = {
+  def apply(RepInterval: Int | Double = null): DvbTdtSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(RepInterval)) __obj.updateDynamic("RepInterval")(RepInterval)
+    if (RepInterval != null) __obj.updateDynamic("RepInterval")(RepInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbTdtSettings]
   }
 }

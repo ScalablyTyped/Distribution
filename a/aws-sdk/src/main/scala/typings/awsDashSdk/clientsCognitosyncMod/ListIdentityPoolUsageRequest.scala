@@ -17,9 +17,9 @@ trait ListIdentityPoolUsageRequest extends js.Object {
 
 object ListIdentityPoolUsageRequest {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[IntegerString] = js.undefined, NextToken: String = null): ListIdentityPoolUsageRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: String = null): ListIdentityPoolUsageRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListIdentityPoolUsageRequest]
   }

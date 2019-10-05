@@ -30,7 +30,7 @@ object AccordionProps {
     a11yTitle: A11yTitleType = null,
     activeIndex: Double | js.Array[Double] = null,
     alignSelf: AlignSelfType = null,
-    animate: js.UndefOr[AnimateType] = js.undefined,
+    animate: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,

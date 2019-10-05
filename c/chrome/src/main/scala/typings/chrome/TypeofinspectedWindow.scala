@@ -1,11 +1,11 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.EvalOptions
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.EvaluationExceptionInfo
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.ReloadOptions
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.Resource
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.ResourceAddedEvent
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.ResourceContentCommittedEvent
+import typings.chrome.chrome.devtools.inspectedWindow.EvalOptions
+import typings.chrome.chrome.devtools.inspectedWindow.EvaluationExceptionInfo
+import typings.chrome.chrome.devtools.inspectedWindow.ReloadOptions
+import typings.chrome.chrome.devtools.inspectedWindow.Resource
+import typings.chrome.chrome.devtools.inspectedWindow.ResourceAddedEvent
+import typings.chrome.chrome.devtools.inspectedWindow.ResourceContentCommittedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

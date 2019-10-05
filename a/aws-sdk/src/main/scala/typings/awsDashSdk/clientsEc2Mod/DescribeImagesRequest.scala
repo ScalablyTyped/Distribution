@@ -30,7 +30,7 @@ trait DescribeImagesRequest extends js.Object {
 object DescribeImagesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ExecutableUsers: ExecutableByStringList = null,
     Filters: FilterList = null,
     ImageIds: ImageIdStringList = null,

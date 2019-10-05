@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRuleMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.RulePredicate
+import typings.atPulumiAws.typesOutputMod.waf.RulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

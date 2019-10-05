@@ -1,8 +1,8 @@
 package typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod
 
 import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnifiedNumberFormatLocaleData
-import typings.std.IntlNs.NumberFormat
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.NumberFormat
+import typings.std.Intl.NumberFormatOptions
 import typings.std.Parameters
 import typings.std.Record
 import scala.scalajs.js

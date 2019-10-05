@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.browserActionNs.ColorValue
+import typings.firefoxDashWebextDashBrowser.browser.browserAction.ColorValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +22,9 @@ trait Anon_ColorTabId extends js.Object {
 
 object Anon_ColorTabId {
   @scala.inline
-  def apply(color: ColorValue, tabId: Int | Double = null, windowId: Int | Double = null): Anon_ColorTabId = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+  def apply(color: ColorValue = null, tabId: Int | Double = null, windowId: Int | Double = null): Anon_ColorTabId = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorTabId]

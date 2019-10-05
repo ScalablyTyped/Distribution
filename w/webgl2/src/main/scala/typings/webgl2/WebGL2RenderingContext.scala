@@ -1898,10 +1898,6 @@ trait WebGL2RenderingContext extends WebGLRenderingContext {
 
 @JSGlobal("WebGL2RenderingContext")
 @js.native
-class WebGL2RenderingContextCls () extends WebGL2RenderingContext
-
-@JSGlobal("WebGL2RenderingContext")
-@js.native
 object WebGL2RenderingContext extends Instantiable0[WebGL2RenderingContext] {
   /* WebGL1 constants */
   val ACTIVE_ATTRIBUTES: Double = js.native

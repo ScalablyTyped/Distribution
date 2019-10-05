@@ -7,6 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.RequestDefinition because var conflicts: description, disabled, id, name. Inlined url, method, header, body, auth, proxy, certificate */ @JSImport("postman-collection", "Request")
 @js.native
 class Request protected () extends Property[RequestDefinition] {

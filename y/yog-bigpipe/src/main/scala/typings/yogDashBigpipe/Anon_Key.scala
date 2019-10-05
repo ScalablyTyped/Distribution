@@ -1,14 +1,14 @@
 package typings.yogDashBigpipe
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key
   extends /* key */ StringDictionary[js.Any] {
-  var mode: typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode
+  var mode: typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode
 }
 
 object Anon_Key {

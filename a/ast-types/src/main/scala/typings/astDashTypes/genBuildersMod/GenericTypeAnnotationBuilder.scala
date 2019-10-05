@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsIdLocTypeParameters
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.QualifiedTypeIdentifierKind
 import typings.astDashTypes.genKindsMod.TypeParameterInstantiationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.GenericTypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.GenericTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

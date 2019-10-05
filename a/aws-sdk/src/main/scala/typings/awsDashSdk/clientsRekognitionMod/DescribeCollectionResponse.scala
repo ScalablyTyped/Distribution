@@ -28,13 +28,13 @@ object DescribeCollectionResponse {
   def apply(
     CollectionARN: String = null,
     CreationTimestamp: DateTime = null,
-    FaceCount: js.UndefOr[ULong] = js.undefined,
+    FaceCount: Int | Double = null,
     FaceModelVersion: String = null
   ): DescribeCollectionResponse = {
     val __obj = js.Dynamic.literal()
     if (CollectionARN != null) __obj.updateDynamic("CollectionARN")(CollectionARN)
     if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp)
-    if (!js.isUndefined(FaceCount)) __obj.updateDynamic("FaceCount")(FaceCount)
+    if (FaceCount != null) __obj.updateDynamic("FaceCount")(FaceCount.asInstanceOf[js.Any])
     if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion)
     __obj.asInstanceOf[DescribeCollectionResponse]
   }

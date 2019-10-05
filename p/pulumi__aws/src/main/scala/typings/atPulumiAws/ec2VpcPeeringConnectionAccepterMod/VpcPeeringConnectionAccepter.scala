@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2VpcPeeringConnectionAccepterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcPeeringConnectionAccepterAccepter
-import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcPeeringConnectionAccepterRequester
+import typings.atPulumiAws.typesOutputMod.ec2.VpcPeeringConnectionAccepterAccepter
+import typings.atPulumiAws.typesOutputMod.ec2.VpcPeeringConnectionAccepterRequester
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

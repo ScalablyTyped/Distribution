@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.NutritionOrder
+import typings.fhir.fhir.NutritionOrder
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

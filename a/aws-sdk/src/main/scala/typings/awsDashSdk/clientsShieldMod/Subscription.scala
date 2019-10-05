@@ -34,14 +34,14 @@ object Subscription {
     EndTime: Timestamp = null,
     Limits: Limits = null,
     StartTime: Timestamp = null,
-    TimeCommitmentInSeconds: js.UndefOr[DurationInSeconds] = js.undefined
+    TimeCommitmentInSeconds: Int | scala.Double = null
   ): Subscription = {
     val __obj = js.Dynamic.literal()
     if (AutoRenew != null) __obj.updateDynamic("AutoRenew")(AutoRenew.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
     if (Limits != null) __obj.updateDynamic("Limits")(Limits)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
-    if (!js.isUndefined(TimeCommitmentInSeconds)) __obj.updateDynamic("TimeCommitmentInSeconds")(TimeCommitmentInSeconds)
+    if (TimeCommitmentInSeconds != null) __obj.updateDynamic("TimeCommitmentInSeconds")(TimeCommitmentInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

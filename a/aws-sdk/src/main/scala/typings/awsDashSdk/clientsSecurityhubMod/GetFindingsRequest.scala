@@ -27,13 +27,13 @@ object GetFindingsRequest {
   @scala.inline
   def apply(
     Filters: AwsSecurityFindingFilters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
     SortCriteria: SortCriteria = null
   ): GetFindingsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria)
     __obj.asInstanceOf[GetFindingsRequest]

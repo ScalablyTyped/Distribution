@@ -2,7 +2,7 @@ package typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Event
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.SyntheticEvent
 import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement

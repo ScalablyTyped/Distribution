@@ -75,7 +75,7 @@ object CoreOptions {
     baseUrl: String = null,
     body: js.Any = null,
     ca: String | Buffer | (js.Array[Buffer | String]) = null,
-    callback: RequestCallback = null,
+    callback: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit = null,
     cert: Buffer = null,
     encoding: String = null,
     family: `4` | `6` = null,
@@ -127,7 +127,7 @@ object CoreOptions {
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (body != null) __obj.updateDynamic("body")(body)
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (cert != null) __obj.updateDynamic("cert")(cert)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])

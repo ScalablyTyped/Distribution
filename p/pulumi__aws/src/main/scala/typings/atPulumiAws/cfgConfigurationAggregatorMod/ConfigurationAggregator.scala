@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgConfigurationAggregatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cfgNs.ConfigurationAggregatorAccountAggregationSource
-import typings.atPulumiAws.typesOutputMod.cfgNs.ConfigurationAggregatorOrganizationAggregationSource
+import typings.atPulumiAws.typesOutputMod.cfg.ConfigurationAggregatorAccountAggregationSource
+import typings.atPulumiAws.typesOutputMod.cfg.ConfigurationAggregatorOrganizationAggregationSource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

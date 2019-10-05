@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "uifabric__set-version"
-version := "7.0.2-3dafca"
-scalaVersion := "2.12.9"
+version := "7.0.2-17c512"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

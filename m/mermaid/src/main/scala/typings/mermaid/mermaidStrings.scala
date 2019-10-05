@@ -1,6 +1,6 @@
 package typings.mermaid
 
-import typings.mermaid.mermaidAPIMod.mermaidAPINs.Theme
+import typings.mermaid.mermaidAPIMod.mermaidAPI.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

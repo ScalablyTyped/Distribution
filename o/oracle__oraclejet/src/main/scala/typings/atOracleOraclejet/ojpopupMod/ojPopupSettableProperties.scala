@@ -11,7 +11,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.modeless
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.popup
 import typings.atOracleOraclejet.atOracleOraclejetStrings.simple
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.Position
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

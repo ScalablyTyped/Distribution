@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.DataNs.JsonNs.IJsonValue
+import typings.winrt.Windows.Data.Json.IJsonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

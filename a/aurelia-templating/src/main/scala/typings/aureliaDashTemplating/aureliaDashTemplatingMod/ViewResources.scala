@@ -137,3 +137,9 @@ object ViewResources extends js.Object {
   def convention(target: js.Function, existing: HtmlBehaviorResource): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = js.native
 }
 
+@JSImport("aurelia-templating", "viewResources")
+@js.native
+object viewResources extends js.Object {
+  def apply(resources: js.Any*): js.Any = js.native
+}
+

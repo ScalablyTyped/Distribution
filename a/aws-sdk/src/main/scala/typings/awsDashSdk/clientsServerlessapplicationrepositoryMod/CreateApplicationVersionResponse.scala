@@ -75,7 +75,7 @@ object CreateApplicationVersionResponse {
     CreationTime: __string = null,
     ParameterDefinitions: __listOfParameterDefinition = null,
     RequiredCapabilities: __listOfCapability = null,
-    ResourcesSupported: js.UndefOr[__boolean] = js.undefined,
+    ResourcesSupported: js.UndefOr[Boolean] = js.undefined,
     SemanticVersion: __string = null,
     SourceCodeArchiveUrl: __string = null,
     SourceCodeUrl: __string = null,

@@ -36,3 +36,9 @@ object InterpreterDirective {
   }
 }
 
+@JSImport("@babel/types", "interpreterDirective")
+@js.native
+object interpreterDirective extends js.Object {
+  def apply(value: String): InterpreterDirective = js.native
+}
+

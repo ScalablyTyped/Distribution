@@ -3,8 +3,8 @@ package typings.videoDotJs
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.videoDotJs.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback
-import typings.videoDotJs.videoDotJsMod.videojsNs.Tech
+import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
+import typings.videoDotJs.videoDotJsMod.videojs.Tech
 import typings.videoDotJs.videoDotJsStrings.Empty
 import typings.videoDotJs.videoDotJsStrings.maybe
 import typings.videoDotJs.videoDotJsStrings.problably

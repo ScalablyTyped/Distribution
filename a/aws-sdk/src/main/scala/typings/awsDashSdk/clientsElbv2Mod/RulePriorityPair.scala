@@ -17,9 +17,9 @@ trait RulePriorityPair extends js.Object {
 
 object RulePriorityPair {
   @scala.inline
-  def apply(Priority: js.UndefOr[RulePriority] = js.undefined, RuleArn: RuleArn = null): RulePriorityPair = {
+  def apply(Priority: Int | Double = null, RuleArn: RuleArn = null): RulePriorityPair = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RuleArn != null) __obj.updateDynamic("RuleArn")(RuleArn)
     __obj.asInstanceOf[RulePriorityPair]
   }

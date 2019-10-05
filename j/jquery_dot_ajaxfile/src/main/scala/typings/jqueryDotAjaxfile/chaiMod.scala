@@ -1,7 +1,7 @@
 package typings.jqueryDotAjaxfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jqueryDotAjaxfile.ChaiNs.ChaiStatic
+import typings.jqueryDotAjaxfile.Chai.ChaiStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

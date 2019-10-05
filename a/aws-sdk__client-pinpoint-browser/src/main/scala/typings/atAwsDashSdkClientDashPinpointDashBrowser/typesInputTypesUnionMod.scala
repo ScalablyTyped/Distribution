@@ -1,0 +1,86 @@
+package typings.atAwsDashSdkClientDashPinpointDashBrowser
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-pinpoint-browser/types/InputTypesUnion", JSImport.Namespace)
+@js.native
+object typesInputTypesUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesCreateAppInputMod.CreateAppInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesCreateCampaignInputMod.CreateCampaignInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesCreateExportJobInputMod.CreateExportJobInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesCreateImportJobInputMod.CreateImportJobInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesCreateSegmentInputMod.CreateSegmentInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteAdmChannelInputMod.DeleteAdmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteApnsChannelInputMod.DeleteApnsChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteApnsSandboxChannelInputMod.DeleteApnsSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteApnsVoipChannelInputMod.DeleteApnsVoipChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteApnsVoipSandboxChannelInputMod.DeleteApnsVoipSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteAppInputMod.DeleteAppInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteBaiduChannelInputMod.DeleteBaiduChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteCampaignInputMod.DeleteCampaignInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteEmailChannelInputMod.DeleteEmailChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteEndpointInputMod.DeleteEndpointInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteEventStreamInputMod.DeleteEventStreamInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteGcmChannelInputMod.DeleteGcmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteSmsChannelInputMod.DeleteSmsChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesDeleteUserEndpointsInputMod.DeleteUserEndpointsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetAdmChannelInputMod.GetAdmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetApnsChannelInputMod.GetApnsChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetApnsSandboxChannelInputMod.GetApnsSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetApnsVoipChannelInputMod.GetApnsVoipChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetApnsVoipSandboxChannelInputMod.GetApnsVoipSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetAppInputMod.GetAppInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetApplicationSettingsInputMod.GetApplicationSettingsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetAppsInputMod.GetAppsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetBaiduChannelInputMod.GetBaiduChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignInputMod.GetCampaignInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignActivitiesInputMod.GetCampaignActivitiesInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignVersionInputMod.GetCampaignVersionInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignVersionsInputMod.GetCampaignVersionsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetCampaignsInputMod.GetCampaignsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetChannelsInputMod.GetChannelsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetEmailChannelInputMod.GetEmailChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetEndpointInputMod.GetEndpointInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetEventStreamInputMod.GetEventStreamInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetExportJobInputMod.GetExportJobInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetExportJobsInputMod.GetExportJobsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetGcmChannelInputMod.GetGcmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetImportJobInputMod.GetImportJobInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetImportJobsInputMod.GetImportJobsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentInputMod.GetSegmentInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentExportJobsInputMod.GetSegmentExportJobsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentImportJobsInputMod.GetSegmentImportJobsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentVersionInputMod.GetSegmentVersionInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentVersionsInputMod.GetSegmentVersionsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSegmentsInputMod.GetSegmentsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesGetUserEndpointsInputMod.GetUserEndpointsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesPhoneNumberValidateInputMod.PhoneNumberValidateInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesPutEventStreamInputMod.PutEventStreamInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesPutEventsInputMod.PutEventsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesSendMessagesInputMod.SendMessagesInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesSendUsersMessagesInputMod.SendUsersMessagesInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateAdmChannelInputMod.UpdateAdmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateApnsChannelInputMod.UpdateApnsChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateApnsSandboxChannelInputMod.UpdateApnsSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateApnsVoipChannelInputMod.UpdateApnsVoipChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateApnsVoipSandboxChannelInputMod.UpdateApnsVoipSandboxChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateBaiduChannelInputMod.UpdateBaiduChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateEndpointInputMod.UpdateEndpointInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateEndpointsBatchInputMod.UpdateEndpointsBatchInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateGcmChannelInputMod.UpdateGcmChannelInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput
+    - typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSmsChannelInputMod.UpdateSmsChannelInput
+  */
+  trait InputTypesUnion extends js.Object
+  
+}
+

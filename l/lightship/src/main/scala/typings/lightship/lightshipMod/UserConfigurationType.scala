@@ -1,6 +1,6 @@
 package typings.lightship.lightshipMod
 
-import typings.node.NodeJSNs.Signals
+import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

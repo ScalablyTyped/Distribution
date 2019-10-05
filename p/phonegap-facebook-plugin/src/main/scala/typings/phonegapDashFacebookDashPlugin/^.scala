@@ -1,6 +1,6 @@
 package typings.phonegapDashFacebookDashPlugin
 
-import typings.phonegapDashFacebookDashPlugin.PhonegapFacebookPluginNs.FacebookConnectPluginStatic
+import typings.phonegapDashFacebookDashPlugin.PhonegapFacebookPlugin.FacebookConnectPluginStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

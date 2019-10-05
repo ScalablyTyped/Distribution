@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_Client
 import typings.braintreeDashWeb.Anon_Nonce
 import scala.scalajs.js
@@ -82,4 +83,8 @@ object AmericanExpress {
     __obj.asInstanceOf[AmericanExpress]
   }
 }
+
+@JSImport("braintree-web", "americanExpress")
+@js.native
+object americanExpress extends TopLevel[AmericanExpress]
 

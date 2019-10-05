@@ -17,9 +17,9 @@ trait ArchiveGroupSettings extends js.Object {
 
 object ArchiveGroupSettings {
   @scala.inline
-  def apply(Destination: OutputLocationRef, RolloverInterval: js.UndefOr[__integerMin1] = js.undefined): ArchiveGroupSettings = {
+  def apply(Destination: OutputLocationRef, RolloverInterval: Int | Double = null): ArchiveGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination)
-    if (!js.isUndefined(RolloverInterval)) __obj.updateDynamic("RolloverInterval")(RolloverInterval)
+    if (RolloverInterval != null) __obj.updateDynamic("RolloverInterval")(RolloverInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveGroupSettings]
   }
 }

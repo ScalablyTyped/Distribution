@@ -35,17 +35,17 @@ object BehaviorCriteria {
   @scala.inline
   def apply(
     comparisonOperator: ComparisonOperator = null,
-    consecutiveDatapointsToAlarm: js.UndefOr[ConsecutiveDatapointsToAlarm] = js.undefined,
-    consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.undefined,
-    durationSeconds: js.UndefOr[DurationSeconds] = js.undefined,
+    consecutiveDatapointsToAlarm: Int | Double = null,
+    consecutiveDatapointsToClear: Int | Double = null,
+    durationSeconds: Int | Double = null,
     statisticalThreshold: StatisticalThreshold = null,
     value: MetricValue = null
   ): BehaviorCriteria = {
     val __obj = js.Dynamic.literal()
     if (comparisonOperator != null) __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(consecutiveDatapointsToAlarm)) __obj.updateDynamic("consecutiveDatapointsToAlarm")(consecutiveDatapointsToAlarm)
-    if (!js.isUndefined(consecutiveDatapointsToClear)) __obj.updateDynamic("consecutiveDatapointsToClear")(consecutiveDatapointsToClear)
-    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds)
+    if (consecutiveDatapointsToAlarm != null) __obj.updateDynamic("consecutiveDatapointsToAlarm")(consecutiveDatapointsToAlarm.asInstanceOf[js.Any])
+    if (consecutiveDatapointsToClear != null) __obj.updateDynamic("consecutiveDatapointsToClear")(consecutiveDatapointsToClear.asInstanceOf[js.Any])
+    if (durationSeconds != null) __obj.updateDynamic("durationSeconds")(durationSeconds.asInstanceOf[js.Any])
     if (statisticalThreshold != null) __obj.updateDynamic("statisticalThreshold")(statisticalThreshold)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[BehaviorCriteria]

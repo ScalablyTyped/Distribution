@@ -27,7 +27,7 @@ object DeleteLaunchTemplateVersionsRequest {
   @scala.inline
   def apply(
     Versions: VersionStringList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null
   ): DeleteLaunchTemplateVersionsRequest = {

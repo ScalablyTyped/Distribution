@@ -1,8 +1,8 @@
 package typings.electron.electronMod
 
-import typings.electron.ElectronNs.BrowserWindowConstructorOptions
-import typings.electron.ElectronNs.DevToolsExtensions
-import typings.electron.ElectronNs.Extensions
+import typings.electron.Electron.BrowserWindowConstructorOptions
+import typings.electron.Electron.DevToolsExtensions
+import typings.electron.Electron.Extensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "BrowserWindow")
 @js.native
 class BrowserWindow ()
-  extends typings.electron.ElectronNs.BrowserWindow {
+  extends typings.electron.Electron.BrowserWindow {
   def this(options: BrowserWindowConstructorOptions) = this()
 }
 
@@ -34,10 +34,10 @@ object BrowserWindow extends js.Object {
     * This API cannot be called before the ready event of the app module is emitted.
     */
   def addExtension(path: String): Unit = js.native
-  def fromBrowserView(browserView: typings.electron.ElectronNs.BrowserView): typings.electron.ElectronNs.BrowserWindow | Null = js.native
-  def fromId(id: Double): typings.electron.ElectronNs.BrowserWindow = js.native
-  def fromWebContents(webContents: typings.electron.ElectronNs.WebContents): typings.electron.ElectronNs.BrowserWindow = js.native
-  def getAllWindows(): js.Array[typings.electron.ElectronNs.BrowserWindow] = js.native
+  def fromBrowserView(browserView: typings.electron.Electron.BrowserView): typings.electron.Electron.BrowserWindow | Null = js.native
+  def fromId(id: Double): typings.electron.Electron.BrowserWindow = js.native
+  def fromWebContents(webContents: typings.electron.Electron.WebContents): typings.electron.Electron.BrowserWindow = js.native
+  def getAllWindows(): js.Array[typings.electron.Electron.BrowserWindow] = js.native
   /**
     * To check if a DevTools extension is installed you can run the following: Note:
     * This API cannot be called before the ready event of the app module is emitted.
@@ -48,7 +48,7 @@ object BrowserWindow extends js.Object {
     * emitted.
     */
   def getExtensions(): Extensions = js.native
-  def getFocusedWindow(): typings.electron.ElectronNs.BrowserWindow | Null = js.native
+  def getFocusedWindow(): typings.electron.Electron.BrowserWindow | Null = js.native
   /**
     * Remove a DevTools extension by name. Note: This API cannot be called before the
     * ready event of the app module is emitted.

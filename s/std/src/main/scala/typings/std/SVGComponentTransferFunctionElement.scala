@@ -25,27 +25,6 @@ trait SVGComponentTransferFunctionElement extends SVGElement {
 
 @JSGlobal("SVGComponentTransferFunctionElement")
 @js.native
-class SVGComponentTransferFunctionElementCls () extends SVGComponentTransferFunctionElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-}
-
-@JSGlobal("SVGComponentTransferFunctionElement")
-@js.native
 object SVGComponentTransferFunctionElement extends Instantiable0[SVGComponentTransferFunctionElement] {
   val SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE: Double = js.native
   val SVG_FECOMPONENTTRANSFER_TYPE_GAMMA: Double = js.native

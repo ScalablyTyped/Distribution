@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocArray
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ExportBatchSpecifier
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ExportBatchSpecifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

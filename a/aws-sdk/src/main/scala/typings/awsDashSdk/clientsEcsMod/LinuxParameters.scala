@@ -40,19 +40,19 @@ object LinuxParameters {
   def apply(
     capabilities: KernelCapabilities = null,
     devices: DevicesList = null,
-    initProcessEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
-    maxSwap: js.UndefOr[BoxedInteger] = js.undefined,
-    sharedMemorySize: js.UndefOr[BoxedInteger] = js.undefined,
-    swappiness: js.UndefOr[BoxedInteger] = js.undefined,
+    initProcessEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxSwap: Int | scala.Double = null,
+    sharedMemorySize: Int | scala.Double = null,
+    swappiness: Int | scala.Double = null,
     tmpfs: TmpfsList = null
   ): LinuxParameters = {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
     if (devices != null) __obj.updateDynamic("devices")(devices)
     if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled)
-    if (!js.isUndefined(maxSwap)) __obj.updateDynamic("maxSwap")(maxSwap)
-    if (!js.isUndefined(sharedMemorySize)) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize)
-    if (!js.isUndefined(swappiness)) __obj.updateDynamic("swappiness")(swappiness)
+    if (maxSwap != null) __obj.updateDynamic("maxSwap")(maxSwap.asInstanceOf[js.Any])
+    if (sharedMemorySize != null) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize.asInstanceOf[js.Any])
+    if (swappiness != null) __obj.updateDynamic("swappiness")(swappiness.asInstanceOf[js.Any])
     if (tmpfs != null) __obj.updateDynamic("tmpfs")(tmpfs)
     __obj.asInstanceOf[LinuxParameters]
   }

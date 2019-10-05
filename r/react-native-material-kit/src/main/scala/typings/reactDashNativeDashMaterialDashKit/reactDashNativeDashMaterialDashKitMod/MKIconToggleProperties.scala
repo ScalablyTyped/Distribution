@@ -26,12 +26,16 @@ import typings.reactDashNative.reactDashNativeStrings.polite
 import typings.reactDashNative.reactDashNativeStrings.radiobutton_checked
 import typings.reactDashNative.reactDashNativeStrings.radiobutton_unchecked
 import typings.reactDashNative.reactDashNativeStrings.yes
-import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
+import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.rippleLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsAndroid because Already inherited
+- typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined 
+- typings.reactDashNative.reactDashNativeMod.AccessibilityProps because Already inherited
 - typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined delayLongPress, delayPressIn, delayPressOut, disabled, onBlur, onFocus, onLongPress, onPress, onPressIn, onPressOut, pressRetentionOffset */ trait MKIconToggleProperties extends MKRippleProperties {
   var checked: js.UndefOr[Boolean] = js.undefined
   /**

@@ -66,9 +66,9 @@ trait MatchmakingConfiguration extends js.Object {
 object MatchmakingConfiguration {
   @scala.inline
   def apply(
-    AcceptanceRequired: js.UndefOr[BooleanModel] = js.undefined,
-    AcceptanceTimeoutSeconds: js.UndefOr[MatchmakingAcceptanceTimeoutInteger] = js.undefined,
-    AdditionalPlayerCount: js.UndefOr[WholeNumber] = js.undefined,
+    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
+    AcceptanceTimeoutSeconds: Int | scala.Double = null,
+    AdditionalPlayerCount: Int | scala.Double = null,
     BackfillMode: BackfillMode = null,
     CreationTime: Timestamp = null,
     CustomEventData: CustomEventData = null,
@@ -78,13 +78,13 @@ object MatchmakingConfiguration {
     GameSessionQueueArns: QueueArnsList = null,
     Name: MatchmakingIdStringModel = null,
     NotificationTarget: SnsArnStringModel = null,
-    RequestTimeoutSeconds: js.UndefOr[MatchmakingRequestTimeoutInteger] = js.undefined,
+    RequestTimeoutSeconds: Int | scala.Double = null,
     RuleSetName: MatchmakingIdStringModel = null
   ): MatchmakingConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)
-    if (!js.isUndefined(AcceptanceTimeoutSeconds)) __obj.updateDynamic("AcceptanceTimeoutSeconds")(AcceptanceTimeoutSeconds)
-    if (!js.isUndefined(AdditionalPlayerCount)) __obj.updateDynamic("AdditionalPlayerCount")(AdditionalPlayerCount)
+    if (AcceptanceTimeoutSeconds != null) __obj.updateDynamic("AcceptanceTimeoutSeconds")(AcceptanceTimeoutSeconds.asInstanceOf[js.Any])
+    if (AdditionalPlayerCount != null) __obj.updateDynamic("AdditionalPlayerCount")(AdditionalPlayerCount.asInstanceOf[js.Any])
     if (BackfillMode != null) __obj.updateDynamic("BackfillMode")(BackfillMode.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CustomEventData != null) __obj.updateDynamic("CustomEventData")(CustomEventData)
@@ -94,7 +94,7 @@ object MatchmakingConfiguration {
     if (GameSessionQueueArns != null) __obj.updateDynamic("GameSessionQueueArns")(GameSessionQueueArns)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (NotificationTarget != null) __obj.updateDynamic("NotificationTarget")(NotificationTarget)
-    if (!js.isUndefined(RequestTimeoutSeconds)) __obj.updateDynamic("RequestTimeoutSeconds")(RequestTimeoutSeconds)
+    if (RequestTimeoutSeconds != null) __obj.updateDynamic("RequestTimeoutSeconds")(RequestTimeoutSeconds.asInstanceOf[js.Any])
     if (RuleSetName != null) __obj.updateDynamic("RuleSetName")(RuleSetName)
     __obj.asInstanceOf[MatchmakingConfiguration]
   }

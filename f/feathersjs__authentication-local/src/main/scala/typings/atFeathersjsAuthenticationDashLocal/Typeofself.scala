@@ -16,7 +16,7 @@ trait Typeofself extends js.Object {
     typings.atFeathersjsAuthenticationDashLocal.atFeathersjsAuthenticationDashLocalMod.LocalVerifier
   ] = js.native
   val defaults: Anon_Name = js.native
-  val hooksNs: Typeofhooks = js.native
+  val hooks: Typeofhooks = js.native
   def default(): js.Function0[Unit] = js.native
   def default(options: Partial[FeathersAuthenticationLocalOptions]): js.Function0[Unit] = js.native
 }

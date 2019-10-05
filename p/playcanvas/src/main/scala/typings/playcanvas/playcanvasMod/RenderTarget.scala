@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "RenderTarget")
 @js.native
 class RenderTarget protected ()
-  extends typings.playcanvas.pcNs.RenderTarget {
+  extends typings.playcanvas.pc.RenderTarget {
   def this(options: Anon_AutoResolve) = this()
 }
 

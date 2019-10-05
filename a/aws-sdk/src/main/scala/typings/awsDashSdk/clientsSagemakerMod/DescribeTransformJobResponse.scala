@@ -87,8 +87,8 @@ object DescribeTransformJobResponse {
     Environment: TransformEnvironmentMap = null,
     FailureReason: FailureReason = null,
     LabelingJobArn: LabelingJobArn = null,
-    MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
-    MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
+    MaxConcurrentTransforms: Int | Double = null,
+    MaxPayloadInMB: Int | Double = null,
     TransformEndTime: Timestamp = null,
     TransformOutput: TransformOutput = null,
     TransformStartTime: Timestamp = null
@@ -99,8 +99,8 @@ object DescribeTransformJobResponse {
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
     if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn)
-    if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms)
-    if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB)
+    if (MaxConcurrentTransforms != null) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.asInstanceOf[js.Any])
+    if (MaxPayloadInMB != null) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.asInstanceOf[js.Any])
     if (TransformEndTime != null) __obj.updateDynamic("TransformEndTime")(TransformEndTime)
     if (TransformOutput != null) __obj.updateDynamic("TransformOutput")(TransformOutput)
     if (TransformStartTime != null) __obj.updateDynamic("TransformStartTime")(TransformStartTime)

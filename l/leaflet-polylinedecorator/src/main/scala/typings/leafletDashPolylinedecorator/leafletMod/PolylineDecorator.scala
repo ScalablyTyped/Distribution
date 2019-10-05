@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.PolylineDecorator")
+@JSImport("leaflet", "PolylineDecorator")
 @js.native
 class PolylineDecorator protected ()
   extends FeatureGroup[js.Any] {
@@ -51,5 +51,17 @@ class PolylineDecorator protected ()
   def setPaths(paths: Polygon[_]): Unit = js.native
   def setPaths(paths: Polyline[LineString | MultiLineString, _]): Unit = js.native
   def setPatterns(patterns: js.Array[Pattern]): Unit = js.native
+}
+
+@JSImport("leaflet", "polylineDecorator")
+@js.native
+object polylineDecorator extends js.Object {
+  def apply(
+    paths: (Polyline[LineString | MultiLineString, _]) | (js.Array[Polyline[LineString | MultiLineString, _]])
+  ): PolylineDecorator = js.native
+  def apply(
+    paths: (Polyline[LineString | MultiLineString, _]) | (js.Array[Polyline[LineString | MultiLineString, _]]),
+    options: PolylineDecoratorOptions
+  ): PolylineDecorator = js.native
 }
 

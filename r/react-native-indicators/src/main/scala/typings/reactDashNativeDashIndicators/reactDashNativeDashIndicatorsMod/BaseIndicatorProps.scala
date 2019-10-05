@@ -40,14 +40,14 @@ object BaseIndicatorProps {
   def apply(
     animating: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
-    animationEasing: EasingFunction = null,
+    animationEasing: /* value */ Double => Double = null,
     interaction: js.UndefOr[Boolean] = js.undefined,
     style: StyleProp[ViewStyle] = null
   ): BaseIndicatorProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1(animationEasing))
     if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseIndicatorProps]

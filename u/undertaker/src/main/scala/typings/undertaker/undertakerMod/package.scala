@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object undertakerMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.node.NodeJSNs.Process
+  import typings.node.NodeJS.Process
   import typings.node.streamMod.Duplex
 
   type Task = String | TaskFunction

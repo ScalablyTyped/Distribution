@@ -1,5 +1,6 @@
 package typings.figlet.figletMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -294,4 +295,15 @@ import scala.scalajs.js.annotation._
   - typings.figlet.figletStrings.Wow
 */
 trait Fonts extends js.Object
+
+@JSImport("figlet", "fonts")
+@js.native
+object fonts extends js.Object {
+  /**
+    * @warn
+    * This method exists in node environment only.
+    * In browser environment, this method does not exist.
+    */
+  def apply(cb: js.Function2[/* error */ Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts]], Unit]): Unit = js.native
+}
 

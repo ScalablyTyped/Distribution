@@ -21,14 +21,10 @@ trait ListStreamsInput extends js.Object {
 
 object ListStreamsInput {
   @scala.inline
-  def apply(
-    ExclusiveStartStreamArn: StreamArn = null,
-    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
-    TableName: TableName = null
-  ): ListStreamsInput = {
+  def apply(ExclusiveStartStreamArn: StreamArn = null, Limit: Int | Double = null, TableName: TableName = null): ListStreamsInput = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartStreamArn != null) __obj.updateDynamic("ExclusiveStartStreamArn")(ExclusiveStartStreamArn)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (TableName != null) __obj.updateDynamic("TableName")(TableName)
     __obj.asInstanceOf[ListStreamsInput]
   }

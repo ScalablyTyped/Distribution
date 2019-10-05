@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueGetScriptMod
 
-import typings.atPulumiAws.typesOutputMod.glueNs.GetScriptDagEdge
-import typings.atPulumiAws.typesOutputMod.glueNs.GetScriptDagNode
+import typings.atPulumiAws.typesOutputMod.glue.GetScriptDagEdge
+import typings.atPulumiAws.typesOutputMod.glue.GetScriptDagNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

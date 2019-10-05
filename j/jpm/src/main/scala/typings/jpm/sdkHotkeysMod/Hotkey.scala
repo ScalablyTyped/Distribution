@@ -1,5 +1,6 @@
 package typings.jpm.sdkHotkeysMod
 
+import typings.jpm.Anon_Combo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +9,9 @@ trait Hotkey extends js.Object {
   def destroy(): Unit
 }
 
-object Hotkey {
-  @scala.inline
-  def apply(destroy: () => Unit): Hotkey = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
-    __obj.asInstanceOf[Hotkey]
-  }
+@JSImport("sdk/hotkeys", "Hotkey")
+@js.native
+object Hotkey extends js.Object {
+  def apply(options: Anon_Combo): Hotkey = js.native
 }
 

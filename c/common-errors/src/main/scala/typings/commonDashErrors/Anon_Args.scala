@@ -18,13 +18,13 @@ object Anon_Args {
   def apply(
     args: js.Array[String] = null,
     `extends`: Error = null,
-    generateMessage: GenerateMessageMethod = null,
+    generateMessage: () => String = null,
     globalize: js.UndefOr[Boolean] = js.undefined
   ): Anon_Args = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args)
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
-    if (generateMessage != null) __obj.updateDynamic("generateMessage")(generateMessage)
+    if (generateMessage != null) __obj.updateDynamic("generateMessage")(js.Any.fromFunction0(generateMessage))
     if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize)
     __obj.asInstanceOf[Anon_Args]
   }

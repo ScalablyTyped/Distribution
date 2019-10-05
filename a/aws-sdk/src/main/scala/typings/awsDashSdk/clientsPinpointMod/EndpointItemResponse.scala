@@ -17,10 +17,10 @@ trait EndpointItemResponse extends js.Object {
 
 object EndpointItemResponse {
   @scala.inline
-  def apply(Message: __string = null, StatusCode: js.UndefOr[__integer] = js.undefined): EndpointItemResponse = {
+  def apply(Message: __string = null, StatusCode: Int | Double = null): EndpointItemResponse = {
     val __obj = js.Dynamic.literal()
     if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointItemResponse]
   }
 }

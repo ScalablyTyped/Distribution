@@ -1,9 +1,9 @@
 package typings.datatablesDotNet
 
-import typings.datatablesDotNet.DataTablesNs.Api
-import typings.datatablesDotNet.DataTablesNs.JQueryDataTables
-import typings.datatablesDotNet.DataTablesNs.Settings
-import typings.datatablesDotNet.DataTablesNs.StaticFunctions
+import typings.datatablesDotNet.DataTables.Api
+import typings.datatablesDotNet.DataTables.JQueryDataTables
+import typings.datatablesDotNet.DataTables.Settings
+import typings.datatablesDotNet.DataTables.StaticFunctions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

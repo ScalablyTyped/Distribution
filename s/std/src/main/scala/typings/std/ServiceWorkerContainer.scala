@@ -110,9 +110,5 @@ trait ServiceWorkerContainer extends EventTarget {
 
 @JSGlobal("ServiceWorkerContainer")
 @js.native
-class ServiceWorkerContainerCls () extends ServiceWorkerContainer
-
-@JSGlobal("ServiceWorkerContainer")
-@js.native
 object ServiceWorkerContainer extends Instantiable0[ServiceWorkerContainer]
 

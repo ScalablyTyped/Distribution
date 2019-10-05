@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DurationToFormatOptions
-  extends typings.std.IntlNs.DateTimeFormatOptions {
+  extends typings.std.Intl.DateTimeFormatOptions {
   var floor: js.UndefOr[Boolean] = js.undefined
   var round: js.UndefOr[Boolean] = js.undefined
 }

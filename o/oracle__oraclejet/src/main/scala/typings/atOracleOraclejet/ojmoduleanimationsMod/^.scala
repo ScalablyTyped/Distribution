@@ -1,7 +1,5 @@
 package typings.atOracleOraclejet.ojmoduleanimationsMod
 
-import typings.atOracleOraclejet.Anon_Effect
-import typings.atOracleOraclejet.ojanimationMod.AnimationMethods
 import typings.atOracleOraclejet.ojmoduleDashElementMod.ModuleElementAnimation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,15 +21,5 @@ object ^ extends js.Object {
   var revealEnd: ModuleElementAnimation = js.native
   var zoomIn: ModuleElementAnimation = js.native
   var zoomOut: ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Null, newViewEffect: Null, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Null, newViewEffect: Anon_Effect, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Null, newViewEffect: AnimationMethods, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Anon_Effect, newViewEffect: Null, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Anon_Effect, newViewEffect: Anon_Effect, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: Anon_Effect, newViewEffect: AnimationMethods, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: AnimationMethods, newViewEffect: Null, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: AnimationMethods, newViewEffect: Anon_Effect, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def createAnimation(oldViewEffect: AnimationMethods, newViewEffect: AnimationMethods, newViewOnTop: Boolean): ModuleElementAnimation = js.native
-  def switcher(callback: js.Function1[/* param0 */ SwitcherCallBackParam, Animations]): ModuleElementAnimation = js.native
 }
 

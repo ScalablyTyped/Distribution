@@ -1,7 +1,7 @@
 package typings.appleDashMapkitDashJs
 
-import typings.appleDashMapkitDashJs.mapkitNs.CoordinateRegion
-import typings.appleDashMapkitDashJs.mapkitNs.Place
+import typings.appleDashMapkitDashJs.mapkit.CoordinateRegion
+import typings.appleDashMapkitDashJs.mapkit.Place
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

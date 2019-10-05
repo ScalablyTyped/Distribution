@@ -49,7 +49,7 @@ object Accelerator {
     AcceleratorArn: GenericString = null,
     CreatedTime: Timestamp = null,
     DnsName: GenericString = null,
-    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     IpAddressType: IpAddressType = null,
     IpSets: IpSets = null,
     LastModifiedTime: Timestamp = null,

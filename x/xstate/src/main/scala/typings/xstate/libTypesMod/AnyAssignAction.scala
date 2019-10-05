@@ -13,10 +13,14 @@ trait AnyAssignAction[TContext, TEvent /* <: EventObject */] extends ActionObjec
 
 object AnyAssignAction {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](assignment: js.Any, `type`: Assign, exec: ActionFunction[TContext, TEvent] = null): AnyAssignAction[TContext, TEvent] = {
+  def apply[TContext, TEvent /* <: EventObject */](
+    assignment: js.Any,
+    `type`: Assign,
+    exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
+  ): AnyAssignAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(assignment = assignment)
     __obj.updateDynamic("type")(`type`)
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[AnyAssignAction[TContext, TEvent]]
   }
 }

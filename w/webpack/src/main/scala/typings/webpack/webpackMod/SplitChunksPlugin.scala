@@ -1,6 +1,6 @@
 package typings.webpack.webpackMod
 
-import typings.webpack.webpackMod.OptionsNs.SplitChunksOptions
+import typings.webpack.webpackMod.Options.SplitChunksOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

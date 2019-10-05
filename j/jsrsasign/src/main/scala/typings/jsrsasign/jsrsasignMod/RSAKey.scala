@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "RSAKey")
 @js.native
 class RSAKey ()
-  extends typings.jsrsasign.jsrsasignNs.RSAKey
+  extends typings.jsrsasign.jsrsasign.RSAKey
 
 /* static members */
 @JSImport("jsrsasign", "RSAKey")

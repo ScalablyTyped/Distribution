@@ -21,7 +21,7 @@ trait TransitionInstruction extends js.Object {
 object TransitionInstruction {
   @scala.inline
   def apply(
-    done: TransitionDoneFn = null,
+    done: (/* hasCompleted */ Boolean, /* requiresTransition */ Boolean, /* enteringView */ js.UndefOr[typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController], /* leavingView */ js.UndefOr[typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController], /* direction */ js.UndefOr[String]) => Unit = null,
     enteringRequiresTransition: js.UndefOr[Boolean] = js.undefined,
     insertStart: Int | Double = null,
     insertViews: js.Array[_] = null,
@@ -34,7 +34,7 @@ object TransitionInstruction {
     resolve: /* hasCompleted */ Boolean => Unit = null
   ): TransitionInstruction = {
     val __obj = js.Dynamic.literal()
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction5(done))
     if (!js.isUndefined(enteringRequiresTransition)) __obj.updateDynamic("enteringRequiresTransition")(enteringRequiresTransition)
     if (insertStart != null) __obj.updateDynamic("insertStart")(insertStart.asInstanceOf[js.Any])
     if (insertViews != null) __obj.updateDynamic("insertViews")(insertViews)

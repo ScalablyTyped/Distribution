@@ -17,12 +17,9 @@ trait CompliantSummary extends js.Object {
 
 object CompliantSummary {
   @scala.inline
-  def apply(
-    CompliantCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    SeveritySummary: SeveritySummary = null
-  ): CompliantSummary = {
+  def apply(CompliantCount: Int | Double = null, SeveritySummary: SeveritySummary = null): CompliantSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CompliantCount)) __obj.updateDynamic("CompliantCount")(CompliantCount)
+    if (CompliantCount != null) __obj.updateDynamic("CompliantCount")(CompliantCount.asInstanceOf[js.Any])
     if (SeveritySummary != null) __obj.updateDynamic("SeveritySummary")(SeveritySummary)
     __obj.asInstanceOf[CompliantSummary]
   }

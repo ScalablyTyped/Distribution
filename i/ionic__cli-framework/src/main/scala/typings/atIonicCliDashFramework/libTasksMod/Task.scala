@@ -5,7 +5,7 @@ import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.end
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.failure
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.success
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkStrings.tick
-import typings.node.NodeJSNs.Timer
+import typings.node.NodeJS.Timer
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

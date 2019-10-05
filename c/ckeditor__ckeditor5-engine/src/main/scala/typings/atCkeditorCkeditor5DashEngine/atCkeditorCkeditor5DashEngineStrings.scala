@@ -1,10 +1,10 @@
 package typings.atCkeditorCkeditor5DashEngine
 
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.modelNs.PositionRelation
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.modelNs.PositionStickiness
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.modelNs.TreeWalkerValueType
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.ChangeType
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerDirection
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.PositionRelation
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.PositionStickiness
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.TreeWalkerValueType
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.ChangeType
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.TreeWalkerDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object atCkeditorCkeditor5DashEngineStrings {
   @js.native
   sealed trait after
     extends PositionRelation
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.PositionRelation
   
   @js.native
   sealed trait attributeElement extends js.Object
@@ -27,7 +27,7 @@ object atCkeditorCkeditor5DashEngineStrings {
   @js.native
   sealed trait before
     extends PositionRelation
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.PositionRelation
   
   @js.native
   sealed trait character extends TreeWalkerValueType
@@ -46,7 +46,7 @@ object atCkeditorCkeditor5DashEngineStrings {
   
   @js.native
   sealed trait different
-    extends typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
+    extends typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.PositionRelation
   
   @js.native
   sealed trait documentFragment extends js.Object
@@ -57,12 +57,12 @@ object atCkeditorCkeditor5DashEngineStrings {
   @js.native
   sealed trait elementEnd
     extends TreeWalkerValueType
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.TreeWalkerValueType
   
   @js.native
   sealed trait elementStart
     extends TreeWalkerValueType
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.TreeWalkerValueType
   
   @js.native
   sealed trait emptyElement extends js.Object
@@ -79,13 +79,13 @@ object atCkeditorCkeditor5DashEngineStrings {
   @js.native
   sealed trait same
     extends PositionRelation
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.PositionRelation
   
   @js.native
   sealed trait text
     extends ChangeType
        with TreeWalkerValueType
-       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
+       with typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.TreeWalkerValueType
   
   @js.native
   sealed trait textProxy extends js.Object

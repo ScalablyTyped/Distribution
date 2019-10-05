@@ -1,7 +1,7 @@
 package typings.seamless
 
-import typings.seamless.SeamlessNs.Options
-import typings.seamless.SeamlessNs.SeamlessJQuery
+import typings.seamless.Seamless.Options
+import typings.seamless.Seamless.SeamlessJQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.cash
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -372,4 +373,8 @@ trait Cash extends js.Object {
     */
   def width(): Double = js.native
 }
+
+@JSGlobal("cash")
+@js.native
+object cash extends TopLevel[CashStatic]
 

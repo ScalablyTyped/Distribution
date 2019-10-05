@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsExpression
 import typings.astDashTypes.genKindsMod.ExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ParenthesizedExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ParenthesizedExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

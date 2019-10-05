@@ -14,7 +14,7 @@ import typings.astDashTypes.genKindsMod.TSIndexSignatureKind
 import typings.astDashTypes.genKindsMod.TSMethodSignatureKind
 import typings.astDashTypes.genKindsMod.TSPropertySignatureKind
 import typings.astDashTypes.genKindsMod.VariableDeclaratorKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassBody
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassBody
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

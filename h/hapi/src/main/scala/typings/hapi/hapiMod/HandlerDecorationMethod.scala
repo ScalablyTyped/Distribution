@@ -1,6 +1,6 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiMod.LifecycleNs.Method
+import typings.hapi.hapiMod.Lifecycle.Method
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

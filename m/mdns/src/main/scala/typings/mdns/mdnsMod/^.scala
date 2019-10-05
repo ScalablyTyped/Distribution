@@ -1,6 +1,5 @@
 package typings.mdns.mdnsMod
 
-import typings.mdns.Anon_Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -151,35 +150,5 @@ object ^ extends js.Object {
   var kDNSServiceType_WKS: Double = js.native
   var kDNSServiceType_X25: Double = js.native
   var rst: DefaultResolverSequenceTasks = js.native
-  def browseThemAll(options: BrowserOptions): Browser = js.native
-  def createAdvertisement(serviceType: ServiceType, port: Double): Advertisement = js.native
-  def createAdvertisement(serviceType: ServiceType, port: Double, options: AdvertisementOptions): Advertisement = js.native
-  def createAdvertisement(
-    serviceType: ServiceType,
-    port: Double,
-    options: AdvertisementOptions,
-    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Advertisement = js.native
-  def createBrowser(serviceType: ServiceType): Browser = js.native
-  def createBrowser(serviceType: ServiceType, options: BrowserOptions): Browser = js.native
-  def loopbackInterface(): js.Any = js.native
-  def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: String): ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: js.Array[String]): ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: Anon_Name): ServiceType = js.native
-  def makeServiceType(serviceType: ServiceType): ServiceType = js.native
-  def resolve(service: Service): Unit = js.native
-  def resolve(
-    service: Service,
-    sequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]]
-  ): Unit = js.native
-  def resolve(
-    service: Service,
-    sequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]],
-    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ): Unit = js.native
-  // static functions
-  def tcp(name: String, subtypes: String*): ServiceType = js.native
-  def udp(name: String, subtypes: String*): ServiceType = js.native
 }
 

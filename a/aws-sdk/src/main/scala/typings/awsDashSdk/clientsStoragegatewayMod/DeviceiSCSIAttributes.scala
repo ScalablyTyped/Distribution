@@ -28,13 +28,13 @@ object DeviceiSCSIAttributes {
   def apply(
     ChapEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     NetworkInterfaceId: NetworkInterfaceId = null,
-    NetworkInterfacePort: js.UndefOr[integer] = js.undefined,
+    NetworkInterfacePort: Int | Double = null,
     TargetARN: TargetARN = null
   ): DeviceiSCSIAttributes = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ChapEnabled)) __obj.updateDynamic("ChapEnabled")(ChapEnabled)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
-    if (!js.isUndefined(NetworkInterfacePort)) __obj.updateDynamic("NetworkInterfacePort")(NetworkInterfacePort)
+    if (NetworkInterfacePort != null) __obj.updateDynamic("NetworkInterfacePort")(NetworkInterfacePort.asInstanceOf[js.Any])
     if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN)
     __obj.asInstanceOf[DeviceiSCSIAttributes]
   }

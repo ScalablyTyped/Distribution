@@ -1,10 +1,10 @@
 package typings.jqueryDotCycle2
 
 import typings.jquery.JQueryEventObject
-import typings.jqueryDotCycle2.JQueryCycle2Ns.API
-import typings.jqueryDotCycle2.JQueryCycle2Ns.Cycle2
-import typings.jqueryDotCycle2.JQueryCycle2Ns.Options
-import typings.jqueryDotCycle2.JQueryCycle2Ns.OptionsWithState
+import typings.jqueryDotCycle2.JQueryCycle2.API
+import typings.jqueryDotCycle2.JQueryCycle2.Cycle2
+import typings.jqueryDotCycle2.JQueryCycle2.Options
+import typings.jqueryDotCycle2.JQueryCycle2.OptionsWithState
 import typings.jqueryDotCycle2.jqueryDotCycle2Strings.`cycle-after`
 import typings.jqueryDotCycle2.jqueryDotCycle2Strings.`cycle-before`
 import typings.jqueryDotCycle2.jqueryDotCycle2Strings.`cycle-bootstrap`

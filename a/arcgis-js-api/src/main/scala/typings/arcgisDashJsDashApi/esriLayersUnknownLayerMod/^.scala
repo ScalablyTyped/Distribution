@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersUnknownLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnknownLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.UnknownLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

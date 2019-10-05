@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
+import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chromeDashAppsStrings.data
 import typings.chromeDashApps.chromeDashAppsStrings.explicitFeedback
 import typings.chromeDashApps.chromeDashAppsStrings.feedback
 import typings.chromeDashApps.chromeDashAppsStrings.notification
 import typings.chromeDashApps.chromeDashAppsStrings.periodic
-import typings.chromeDashApps.chromeNs.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

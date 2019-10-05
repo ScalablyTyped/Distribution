@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojinputtextMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.converter
 import typings.atOracleOraclejet.atOracleOraclejetStrings.converterChanged
@@ -7,10 +9,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.rawValueChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.rows
 import typings.atOracleOraclejet.atOracleOraclejetStrings.rowsChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valueChanged
-import typings.atOracleOraclejet.ojinputtextMod.ojTextAreaNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputtextMod.ojTextAreaNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputtextMod.ojTextArea.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputtextMod.ojTextArea.ojAnimateStart
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -112,5 +115,12 @@ trait ojTextArea
   def setProperty_converter(property: converter, value: RegisteredConverter): Unit = js.native
   @JSName("setProperty")
   def setProperty_rows(property: rows, value: Double): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojinputtext", "ojTextArea")
+@js.native
+object ojTextArea extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

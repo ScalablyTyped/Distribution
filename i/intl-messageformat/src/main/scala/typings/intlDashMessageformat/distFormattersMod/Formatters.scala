@@ -4,9 +4,9 @@ import typings.intlDashMessageformat.Anon_Locales
 import typings.intlDashMessageformat.Anon_LocalesOptions
 import typings.intlDashMessageformat.Anon_LocalesOptionsSupportedLocalesOf
 import typings.std.ConstructorParameters
-import typings.std.IntlNs.DateTimeFormat
-import typings.std.IntlNs.NumberFormat
-import typings.std.IntlNs.PluralRules
+import typings.std.Intl.DateTimeFormat
+import typings.std.Intl.NumberFormat
+import typings.std.Intl.PluralRules
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

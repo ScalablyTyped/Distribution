@@ -9,9 +9,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashLeaflet.reactDashLeafletMod.MapComponentProps because var conflicts: pane. Inlined leaflet
 - typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait ImageOverlayProps extends ImageOverlayOptions {
   var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
   var children: js.UndefOr[Children] = js.undefined
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   var url: String | HTMLImageElement
 }
 

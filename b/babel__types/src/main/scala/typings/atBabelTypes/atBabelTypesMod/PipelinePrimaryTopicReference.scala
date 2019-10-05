@@ -35,3 +35,9 @@ object PipelinePrimaryTopicReference {
   }
 }
 
+@JSImport("@babel/types", "pipelinePrimaryTopicReference")
+@js.native
+object pipelinePrimaryTopicReference extends js.Object {
+  def apply(): PipelinePrimaryTopicReference = js.native
+}
+

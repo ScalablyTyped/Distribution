@@ -1,6 +1,6 @@
 package typings.echarts
 
-import typings.echarts.echartsNs.TypedArray
+import typings.echarts.echarts.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,12 +22,12 @@ trait DescribePublicIpv4PoolsRequest extends js.Object {
 object DescribePublicIpv4PoolsRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[PoolMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
     PoolIds: ValueStringList = null
   ): DescribePublicIpv4PoolsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PoolIds != null) __obj.updateDynamic("PoolIds")(PoolIds)
     __obj.asInstanceOf[DescribePublicIpv4PoolsRequest]

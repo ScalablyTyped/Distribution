@@ -2,9 +2,9 @@ package typings.projectDashOxford.projectDashOxfordMod
 
 import typings.bluebird.bluebirdMod.^
 import typings.node.streamMod.Stream
-import typings.projectDashOxford.projectDashOxfordMod.OptionsNs.Analyze
-import typings.projectDashOxford.projectDashOxfordMod.OptionsNs.Ocr
-import typings.projectDashOxford.projectDashOxfordMod.OptionsNs.Thumbnail
+import typings.projectDashOxford.projectDashOxfordMod.Options.Analyze
+import typings.projectDashOxford.projectDashOxfordMod.Options.Ocr
+import typings.projectDashOxford.projectDashOxfordMod.Options.Thumbnail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class VisionAPI () extends js.Object {
     * @param  {boolean} options.Categories     - Image categorization; taxonomy defined in documentation.
     * @return {Promise}                        - Promise resolving with the resulting JSON
     */
-  def analyzeImage(options: Analyze): ^[typings.projectDashOxford.projectDashOxfordMod.VisionResponsesNs.Analyze] = js.native
+  def analyzeImage(options: Analyze): ^[typings.projectDashOxford.projectDashOxfordMod.VisionResponses.Analyze] = js.native
   /**
     * Optical Character Recognition (OCR) detects text in an image and extracts the recognized
     * characters into a machine-usable character stream.
@@ -38,7 +38,7 @@ class VisionAPI () extends js.Object {
     * @param  {string}  options.detectOrientation  - Detect orientation of text in the image
     * @return {Promise}                            - Promise resolving with the resulting JSON
     */
-  def ocr(options: Ocr): ^[typings.projectDashOxford.projectDashOxfordMod.VisionResponsesNs.Ocr] = js.native
+  def ocr(options: Ocr): ^[typings.projectDashOxford.projectDashOxfordMod.VisionResponses.Ocr] = js.native
   /**
     * Generate a thumbnail image to the user-specified width and height. By default, the
     * service analyzes the image, identifies the region of interest (ROI), and generates

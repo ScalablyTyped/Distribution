@@ -34,7 +34,7 @@ trait NetworkConnectionAction extends js.Object {
 object NetworkConnectionAction {
   @scala.inline
   def apply(
-    Blocked: js.UndefOr[Boolean] = js.undefined,
+    Blocked: js.UndefOr[scala.Boolean] = js.undefined,
     ConnectionDirection: String = null,
     LocalPortDetails: LocalPortDetails = null,
     Protocol: String = null,

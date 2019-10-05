@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriRenderersUniqueValueRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValueRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValueRendererProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariable
+import typings.arcgisDashJsDashApi.__esri.UniqueValueRenderer
+import typings.arcgisDashJsDashApi.__esri.UniqueValueRendererProperties
+import typings.arcgisDashJsDashApi.__esri.VisualVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

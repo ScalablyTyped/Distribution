@@ -15,6 +15,22 @@ class AntDesign () extends Icon
 @JSImport("@expo/vector-icons", "AntDesign")
 @js.native
 object AntDesign extends js.Object {
+  @js.native
+  class Button ()
+    extends typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.Button
+  
+  @js.native
+  class TabBarItem ()
+    extends typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.TabBarItem
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.TabBarItemIOS
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.ToolbarAndroid
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

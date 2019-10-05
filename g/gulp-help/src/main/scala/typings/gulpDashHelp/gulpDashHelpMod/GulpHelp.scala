@@ -6,8 +6,9 @@ import typings.gulp.gulpMod.SrcMethod
 import typings.gulp.gulpMod.TaskCallback
 import typings.gulp.gulpMod.WatchMethod
 import typings.gulp.gulpMod.WatchOptions
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.fsMod.FSWatcher
+import typings.orchestrator.orchestratorMod.^
 import typings.undertaker.undertakerMod.TaskFunction
 import typings.vinyl.vinylMod.File
 import typings.vinylDashFs.vinylDashFsMod.DestOptions
@@ -17,8 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait GulpHelp
-  extends typings.orchestrator.orchestratorMod.^ {
+trait GulpHelp extends ^ {
   @JSName("dest")
   var dest_Original: DestMethod = js.native
   @JSName("src")

@@ -48,7 +48,7 @@ object PersistConfig {
     debug: js.UndefOr[Boolean] = js.undefined,
     getStoredState: /* config */ PersistConfig[S, RS, HSS, ESS] => js.Promise[PersistedState] = null,
     keyPrefix: String = null,
-    migrate: PersistMigrate = null,
+    migrate: (/* state */ PersistedState, /* currentVersion */ Double) => js.Promise[PersistedState] = null,
     serialize: js.UndefOr[Boolean] = js.undefined,
     stateReconciler: `false` | StateReconciler[S] = null,
     throttle: Int | Double = null,
@@ -63,7 +63,7 @@ object PersistConfig {
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (getStoredState != null) __obj.updateDynamic("getStoredState")(js.Any.fromFunction1(getStoredState))
     if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
-    if (migrate != null) __obj.updateDynamic("migrate")(migrate)
+    if (migrate != null) __obj.updateDynamic("migrate")(js.Any.fromFunction2(migrate))
     if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize)
     if (stateReconciler != null) __obj.updateDynamic("stateReconciler")(stateReconciler.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])

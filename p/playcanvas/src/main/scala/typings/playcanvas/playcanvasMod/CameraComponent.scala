@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "CameraComponent")
 @js.native
 class CameraComponent protected ()
-  extends typings.playcanvas.pcNs.CameraComponent {
-  def this(system: typings.playcanvas.pcNs.CameraComponentSystem, entity: typings.playcanvas.pcNs.Entity) = this()
+  extends typings.playcanvas.pc.CameraComponent {
+  def this(system: typings.playcanvas.pc.CameraComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

@@ -18,13 +18,13 @@ object MatcherOptions {
   def apply(
     collapseWhitespace: js.UndefOr[Boolean] = js.undefined,
     exact: js.UndefOr[Boolean] = js.undefined,
-    normalizer: NormalizerFn = null,
+    normalizer: /* text */ String => String = null,
     trim: js.UndefOr[Boolean] = js.undefined
   ): MatcherOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (normalizer != null) __obj.updateDynamic("normalizer")(normalizer)
+    if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
     if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
     __obj.asInstanceOf[MatcherOptions]
   }

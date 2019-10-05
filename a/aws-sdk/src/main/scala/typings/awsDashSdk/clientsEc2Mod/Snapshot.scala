@@ -68,7 +68,7 @@ object Snapshot {
   def apply(
     DataEncryptionKeyId: String = null,
     Description: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     OwnerAlias: String = null,
     OwnerId: String = null,
@@ -79,7 +79,7 @@ object Snapshot {
     StateMessage: String = null,
     Tags: TagList = null,
     VolumeId: String = null,
-    VolumeSize: js.UndefOr[Integer] = js.undefined
+    VolumeSize: Int | scala.Double = null
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
     if (DataEncryptionKeyId != null) __obj.updateDynamic("DataEncryptionKeyId")(DataEncryptionKeyId)
@@ -95,7 +95,7 @@ object Snapshot {
     if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize)
+    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
 }

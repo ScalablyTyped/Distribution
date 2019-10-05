@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsCIMSymbolMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CIMSymbol
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CIMSymbolProperties
+import typings.arcgisDashJsDashApi.__esri.CIMSymbol
+import typings.arcgisDashJsDashApi.__esri.CIMSymbolProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

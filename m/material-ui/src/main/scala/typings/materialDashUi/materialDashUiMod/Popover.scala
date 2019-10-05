@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Popover")
 @js.native
 class Popover ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.PopoverNs.Popover
+  extends typings.materialDashUi.__MaterialUI.Popover.Popover
 

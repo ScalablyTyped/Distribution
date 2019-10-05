@@ -3,7 +3,7 @@ package typings.mendixmodelsdk.distSdkInternalStructuresMod
 import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
 import typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty
-import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliasesNs.IContainer
+import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.IContainer
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`

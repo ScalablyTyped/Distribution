@@ -43,8 +43,8 @@ object UpdateFunctionCodeRequest {
   @scala.inline
   def apply(
     FunctionName: FunctionName,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Publish: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Publish: js.UndefOr[scala.Boolean] = js.undefined,
     RevisionId: String = null,
     S3Bucket: S3Bucket = null,
     S3Key: S3Key = null,

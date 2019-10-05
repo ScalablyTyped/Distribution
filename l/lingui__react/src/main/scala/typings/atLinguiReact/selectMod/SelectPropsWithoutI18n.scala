@@ -18,17 +18,18 @@ trait SelectPropsWithoutI18n
 object SelectPropsWithoutI18n {
   @scala.inline
   def apply(
-    other: ReactNode,
     value: String,
     StringDictionary: /* exact */ StringDictionary[ReactNode] = null,
     className: String = null,
     id: String = null,
+    other: ReactNode = null,
     render: ReactNode = null
   ): SelectPropsWithoutI18n = {
-    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectPropsWithoutI18n]
   }

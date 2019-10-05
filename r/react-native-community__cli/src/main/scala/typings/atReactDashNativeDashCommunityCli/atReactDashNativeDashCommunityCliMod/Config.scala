@@ -1,6 +1,7 @@
 package typings.atReactDashNativeDashCommunityCli.atReactDashNativeDashCommunityCliMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.atReactDashNativeDashCommunityCli.Anon_AndroidIos
 import typings.atReactDashNativeDashCommunityCli.Anon_AssetsHooks
 import typings.atReactDashNativeDashCommunityCli.Anon_Platforms
@@ -45,4 +46,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
 }
+
+@JSImport("@react-native-community/cli", "config")
+@js.native
+object config extends TopLevel[Config]
 

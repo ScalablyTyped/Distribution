@@ -17,7 +17,7 @@ trait DeleteVpcPeeringConnectionRequest extends js.Object {
 
 object DeleteVpcPeeringConnectionRequest {
   @scala.inline
-  def apply(VpcPeeringConnectionId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpcPeeringConnectionRequest = {
+  def apply(VpcPeeringConnectionId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteVpcPeeringConnectionRequest]

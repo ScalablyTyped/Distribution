@@ -1,6 +1,6 @@
 package typings.draftjsDashToDashHtml.draftjsDashToDashHtmlMod
 
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.EncodingNs.RawDraftContentState
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Encoding.RawDraftContentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

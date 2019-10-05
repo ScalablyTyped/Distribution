@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriIdentityServerInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServerInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServerInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ServerInfo
+import typings.arcgisDashJsDashApi.__esri.ServerInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

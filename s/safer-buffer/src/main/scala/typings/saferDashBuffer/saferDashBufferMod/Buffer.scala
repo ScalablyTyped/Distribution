@@ -3,7 +3,7 @@ package typings.saferDashBuffer.saferDashBufferMod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.node.BufferEncoding
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.SharedArrayBuffer
 import typings.std.ArrayBuffer
 import typings.std.DataView
@@ -24,28 +24,6 @@ class Buffer protected ()
     * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
     */
   def this(str: String) = this()
-  def this(str: String, encoding: BufferEncoding) = this()
-}
-
-@JSImport("safer-buffer", "Buffer")
-@js.native
-class BufferCls protected ()
-  extends typings.node.Buffer {
-  /**
-    * Allocates a new buffer containing the given {str}.
-    *
-    * @param str String to store in buffer.
-    * @param encoding encoding to use, optional.  Default is 'utf8'
-    * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
-    */
-  def this(str: String) = this()
-  /**
-    * Allocates a new buffer containing the given {str}.
-    *
-    * @param str String to store in buffer.
-    * @param encoding encoding to use, optional.  Default is 'utf8'
-    * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
-    */
   def this(str: String, encoding: BufferEncoding) = this()
 }
 

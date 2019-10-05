@@ -8,8 +8,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.invalidHidden
 import typings.atOracleOraclejet.atOracleOraclejetStrings.invalidShown
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
-import typings.atOracleOraclejet.ojcheckboxsetMod.ojCheckboxsetNs.OptionContext
-import typings.atOracleOraclejet.ojcheckboxsetMod.ojCheckboxsetNs.OptionsKeys
+import typings.atOracleOraclejet.ojcheckboxsetMod.ojCheckboxset.OptionContext
+import typings.atOracleOraclejet.ojcheckboxsetMod.ojCheckboxset.OptionsKeys
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.atOracleOraclejet.ojmessagingMod.^

@@ -131,10 +131,10 @@ object OptionsTopBar {
     background: OptionsTopBarBackground = null,
     barStyle: default | black = null,
     borderColor: Color = null,
-    borderHeight: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    borderHeight: Int | Double = null,
     drawBehind: js.UndefOr[Boolean] = js.undefined,
-    elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
-    height: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    elevation: Int | Double = null,
+    height: Int | Double = null,
     hideNavBarOnFocusSearchBar: js.UndefOr[Boolean] = js.undefined,
     hideOnScroll: js.UndefOr[Boolean] = js.undefined,
     largeTitle: OptionsTopBarLargeTitle = null,
@@ -160,10 +160,10 @@ object OptionsTopBar {
     if (background != null) __obj.updateDynamic("background")(background)
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (!js.isUndefined(borderHeight)) __obj.updateDynamic("borderHeight")(borderHeight)
+    if (borderHeight != null) __obj.updateDynamic("borderHeight")(borderHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hideNavBarOnFocusSearchBar)) __obj.updateDynamic("hideNavBarOnFocusSearchBar")(hideNavBarOnFocusSearchBar)
     if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
     if (largeTitle != null) __obj.updateDynamic("largeTitle")(largeTitle)

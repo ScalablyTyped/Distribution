@@ -41,9 +41,5 @@ trait Selection extends js.Object {
 
 @JSGlobal("Selection")
 @js.native
-class SelectionCls () extends Selection
-
-@JSGlobal("Selection")
-@js.native
 object Selection extends Instantiable0[Selection]
 

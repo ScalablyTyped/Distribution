@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksImageServiceIdentifyTaskMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageServiceIdentifyTaskConstructor
+import typings.arcgisDashJsDashApi.__esri.ImageServiceIdentifyTaskConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

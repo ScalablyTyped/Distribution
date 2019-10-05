@@ -1,8 +1,8 @@
 package typings.reactDashNativeDashGestureDashHandler.swipeableMod
 
 import typings.react.reactMod.ReactNode
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedInterpolation
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js

@@ -16,9 +16,5 @@ class ^ () extends Two {
 @js.native
 object ^ extends js.Object {
   var Array: Float32ArrayConstructor | ArrayConstructor = js.native
-  val Instances: js.Array[Two] = js.native
-  val Properties: js.Array[js.Any] = js.native
-  val Resolution: Double = js.native
-  def noConflict(): Two = js.native
 }
 

@@ -51,8 +51,8 @@ object Service {
   @scala.inline
   def apply(
     Action: Action = null,
-    Archived: js.UndefOr[Boolean] = js.undefined,
-    Count: js.UndefOr[Integer] = js.undefined,
+    Archived: js.UndefOr[scala.Boolean] = js.undefined,
+    Count: Int | scala.Double = null,
     DetectorId: DetectorId = null,
     EventFirstSeen: String = null,
     EventLastSeen: String = null,
@@ -64,7 +64,7 @@ object Service {
     val __obj = js.Dynamic.literal()
     if (Action != null) __obj.updateDynamic("Action")(Action)
     if (!js.isUndefined(Archived)) __obj.updateDynamic("Archived")(Archived)
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (DetectorId != null) __obj.updateDynamic("DetectorId")(DetectorId)
     if (EventFirstSeen != null) __obj.updateDynamic("EventFirstSeen")(EventFirstSeen)
     if (EventLastSeen != null) __obj.updateDynamic("EventLastSeen")(EventLastSeen)

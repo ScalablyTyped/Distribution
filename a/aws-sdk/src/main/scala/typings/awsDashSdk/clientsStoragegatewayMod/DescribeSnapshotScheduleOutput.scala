@@ -35,16 +35,16 @@ object DescribeSnapshotScheduleOutput {
   @scala.inline
   def apply(
     Description: Description = null,
-    RecurrenceInHours: js.UndefOr[RecurrenceInHours] = js.undefined,
-    StartAt: js.UndefOr[HourOfDay] = js.undefined,
+    RecurrenceInHours: Int | Double = null,
+    StartAt: Int | Double = null,
     Tags: Tags = null,
     Timezone: GatewayTimezone = null,
     VolumeARN: VolumeARN = null
   ): DescribeSnapshotScheduleOutput = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(RecurrenceInHours)) __obj.updateDynamic("RecurrenceInHours")(RecurrenceInHours)
-    if (!js.isUndefined(StartAt)) __obj.updateDynamic("StartAt")(StartAt)
+    if (RecurrenceInHours != null) __obj.updateDynamic("RecurrenceInHours")(RecurrenceInHours.asInstanceOf[js.Any])
+    if (StartAt != null) __obj.updateDynamic("StartAt")(StartAt.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN)

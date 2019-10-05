@@ -21,13 +21,9 @@ trait ListFacesRequest extends js.Object {
 
 object ListFacesRequest {
   @scala.inline
-  def apply(
-    CollectionId: CollectionId,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
-    NextToken: PaginationToken = null
-  ): ListFacesRequest = {
+  def apply(CollectionId: CollectionId, MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListFacesRequest]
   }

@@ -26,7 +26,7 @@ trait CognitoOptions extends js.Object {
 object CognitoOptions {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     IdentityPoolId: IdentityPoolId = null,
     RoleArn: RoleArn = null,
     UserPoolId: UserPoolId = null

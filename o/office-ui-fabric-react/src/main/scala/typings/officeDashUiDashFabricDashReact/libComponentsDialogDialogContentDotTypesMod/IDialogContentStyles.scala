@@ -22,17 +22,24 @@ trait IDialogContentStyles extends js.Object {
 object IDialogContentStyles {
   @scala.inline
   def apply(
-    button: IStyle,
-    content: IStyle,
-    header: IStyle,
-    inner: IStyle,
-    innerContent: IStyle,
-    subText: IStyle,
-    title: IStyle,
-    topButton: IStyle
+    button: IStyle = null,
+    content: IStyle = null,
+    header: IStyle = null,
+    inner: IStyle = null,
+    innerContent: IStyle = null,
+    subText: IStyle = null,
+    title: IStyle = null,
+    topButton: IStyle = null
   ): IDialogContentStyles = {
-    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], innerContent = innerContent.asInstanceOf[js.Any], subText = subText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], topButton = topButton.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (innerContent != null) __obj.updateDynamic("innerContent")(innerContent.asInstanceOf[js.Any])
+    if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (topButton != null) __obj.updateDynamic("topButton")(topButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogContentStyles]
   }
 }

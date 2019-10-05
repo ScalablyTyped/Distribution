@@ -39,3 +39,10 @@ object TemplateElement {
   }
 }
 
+@JSImport("@babel/types", "templateElement")
+@js.native
+object templateElement extends js.Object {
+  def apply(value: Anon_Cooked): TemplateElement = js.native
+  def apply(value: Anon_Cooked, tail: Boolean): TemplateElement = js.native
+}
+

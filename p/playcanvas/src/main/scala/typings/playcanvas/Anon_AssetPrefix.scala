@@ -1,10 +1,10 @@
 package typings.playcanvas
 
-import typings.playcanvas.pcNs.ElementInput
-import typings.playcanvas.pcNs.GamePads
-import typings.playcanvas.pcNs.Keyboard
-import typings.playcanvas.pcNs.Mouse
-import typings.playcanvas.pcNs.TouchDevice
+import typings.playcanvas.pc.ElementInput
+import typings.playcanvas.pc.GamePads
+import typings.playcanvas.pc.Keyboard
+import typings.playcanvas.pc.Mouse
+import typings.playcanvas.pc.TouchDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.nodeDashJose
 
-import typings.nodeDashJose.nodeDashJoseMod.JWSNs.Exp
+import typings.nodeDashJose.nodeDashJoseMod.JWS.Exp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

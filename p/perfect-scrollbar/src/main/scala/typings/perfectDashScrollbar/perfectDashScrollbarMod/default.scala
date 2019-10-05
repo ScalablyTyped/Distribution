@@ -1,7 +1,7 @@
 package typings.perfectDashScrollbar.perfectDashScrollbarMod
 
 import typings.perfectDashScrollbar.Anon_End
-import typings.perfectDashScrollbar.perfectDashScrollbarMod.PerfectScrollbarNs.Options
+import typings.perfectDashScrollbar.perfectDashScrollbarMod.PerfectScrollbar.Options
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

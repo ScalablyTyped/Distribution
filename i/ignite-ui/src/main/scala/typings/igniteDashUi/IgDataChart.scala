@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -687,14 +688,14 @@ object IgDataChart {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     animateSeriesWhenAxisRangeChanges: js.UndefOr[Boolean] = js.undefined,
-    assigningCategoryMarkerStyle: AssigningCategoryMarkerStyleEvent = null,
-    assigningCategoryStyle: AssigningCategoryStyleEvent = null,
+    assigningCategoryMarkerStyle: (/* event */ Event, /* ui */ AssigningCategoryMarkerStyleEventUIParam) => Unit = null,
+    assigningCategoryStyle: (/* event */ Event, /* ui */ AssigningCategoryStyleEventUIParam) => Unit = null,
     autoMarginHeight: Int | Double = null,
     autoMarginWidth: Int | Double = null,
     axes: js.Array[IgDataChartAxes] = null,
-    axisRangeChanged: AxisRangeChangedEvent = null,
+    axisRangeChanged: (/* event */ Event, /* ui */ AxisRangeChangedEventUIParam) => Unit = null,
     bottomMargin: Int | Double = null,
-    browserNotSupported: BrowserNotSupportedEvent = null,
+    browserNotSupported: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit = null,
     brushes: js.Any = null,
     circleMarkerTemplate: js.Any = null,
     contentHitTestMode: String = null,
@@ -706,7 +707,7 @@ object IgDataChart {
     defaultInteraction: String = null,
     diamondMarkerTemplate: js.Any = null,
     dragModifier: String = null,
-    gridAreaRectChanged: GridAreaRectChangedEvent = null,
+    gridAreaRectChanged: (/* event */ Event, /* ui */ GridAreaRectChangedEventUIParam) => Unit = null,
     gridMode: String = null,
     height: String | Double = null,
     hexagonMarkerTemplate: js.Any = null,
@@ -733,19 +734,19 @@ object IgDataChart {
     plotAreaBackground: String = null,
     preferHigherResolutionTiles: js.UndefOr[Boolean] = js.undefined,
     previewRect: js.Any = null,
-    progressiveLoadStatusChanged: ProgressiveLoadStatusChangedEvent = null,
+    progressiveLoadStatusChanged: (/* event */ Event, /* ui */ ProgressiveLoadStatusChangedEventUIParam) => Unit = null,
     pyramidMarkerTemplate: js.Any = null,
-    refreshCompleted: RefreshCompletedEvent = null,
+    refreshCompleted: (/* event */ Event, /* ui */ RefreshCompletedEventUIParam) => Unit = null,
     regional: String | js.Object = null,
     responseDataKey: String = null,
     rightMargin: Int | Double = null,
     series: js.Array[IgDataChartSeries] = null,
-    seriesCursorMouseMove: SeriesCursorMouseMoveEvent = null,
-    seriesMouseEnter: SeriesMouseEnterEvent = null,
-    seriesMouseLeave: SeriesMouseLeaveEvent = null,
-    seriesMouseLeftButtonDown: SeriesMouseLeftButtonDownEvent = null,
-    seriesMouseLeftButtonUp: SeriesMouseLeftButtonUpEvent = null,
-    seriesMouseMove: SeriesMouseMoveEvent = null,
+    seriesCursorMouseMove: (/* event */ Event, /* ui */ SeriesCursorMouseMoveEventUIParam) => Unit = null,
+    seriesMouseEnter: (/* event */ Event, /* ui */ SeriesMouseEnterEventUIParam) => Unit = null,
+    seriesMouseLeave: (/* event */ Event, /* ui */ SeriesMouseLeaveEventUIParam) => Unit = null,
+    seriesMouseLeftButtonDown: (/* event */ Event, /* ui */ SeriesMouseLeftButtonDownEventUIParam) => Unit = null,
+    seriesMouseLeftButtonUp: (/* event */ Event, /* ui */ SeriesMouseLeftButtonUpEventUIParam) => Unit = null,
+    seriesMouseMove: (/* event */ Event, /* ui */ SeriesMouseMoveEventUIParam) => Unit = null,
     size: js.Any = null,
     squareMarkerTemplate: js.Any = null,
     subtitle: String = null,
@@ -769,20 +770,20 @@ object IgDataChart {
     titleTextColor: js.Any = null,
     titleTextStyle: String = null,
     titleTopMargin: Int | Double = null,
-    tooltipHidden: TooltipHiddenEvent = null,
-    tooltipHiding: TooltipHidingEvent = null,
-    tooltipShowing: TooltipShowingEvent = null,
-    tooltipShown: TooltipShownEvent = null,
+    tooltipHidden: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit = null,
+    tooltipHiding: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit = null,
+    tooltipShowing: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit = null,
+    tooltipShown: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit = null,
     topMargin: Int | Double = null,
     triangleMarkerTemplate: js.Any = null,
-    typicalBasedOn: TypicalBasedOnEvent = null,
+    typicalBasedOn: (/* event */ Event, /* ui */ TypicalBasedOnEventUIParam) => Unit = null,
     useTiledZooming: js.UndefOr[Boolean] = js.undefined,
     verticalZoomable: js.UndefOr[Boolean] = js.undefined,
     width: String | Double = null,
     windowPositionHorizontal: Int | Double = null,
     windowPositionVertical: Int | Double = null,
     windowRect: js.Any = null,
-    windowRectChanged: WindowRectChangedEvent = null,
+    windowRectChanged: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit = null,
     windowRectMinWidth: Int | Double = null,
     windowResponse: String = null,
     windowScaleHorizontal: Int | Double = null,
@@ -792,14 +793,14 @@ object IgDataChart {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(animateSeriesWhenAxisRangeChanges)) __obj.updateDynamic("animateSeriesWhenAxisRangeChanges")(animateSeriesWhenAxisRangeChanges)
-    if (assigningCategoryMarkerStyle != null) __obj.updateDynamic("assigningCategoryMarkerStyle")(assigningCategoryMarkerStyle)
-    if (assigningCategoryStyle != null) __obj.updateDynamic("assigningCategoryStyle")(assigningCategoryStyle)
+    if (assigningCategoryMarkerStyle != null) __obj.updateDynamic("assigningCategoryMarkerStyle")(js.Any.fromFunction2(assigningCategoryMarkerStyle))
+    if (assigningCategoryStyle != null) __obj.updateDynamic("assigningCategoryStyle")(js.Any.fromFunction2(assigningCategoryStyle))
     if (autoMarginHeight != null) __obj.updateDynamic("autoMarginHeight")(autoMarginHeight.asInstanceOf[js.Any])
     if (autoMarginWidth != null) __obj.updateDynamic("autoMarginWidth")(autoMarginWidth.asInstanceOf[js.Any])
     if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (axisRangeChanged != null) __obj.updateDynamic("axisRangeChanged")(axisRangeChanged)
+    if (axisRangeChanged != null) __obj.updateDynamic("axisRangeChanged")(js.Any.fromFunction2(axisRangeChanged))
     if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
-    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(js.Any.fromFunction2(browserNotSupported))
     if (brushes != null) __obj.updateDynamic("brushes")(brushes)
     if (circleMarkerTemplate != null) __obj.updateDynamic("circleMarkerTemplate")(circleMarkerTemplate)
     if (contentHitTestMode != null) __obj.updateDynamic("contentHitTestMode")(contentHitTestMode)
@@ -811,7 +812,7 @@ object IgDataChart {
     if (defaultInteraction != null) __obj.updateDynamic("defaultInteraction")(defaultInteraction)
     if (diamondMarkerTemplate != null) __obj.updateDynamic("diamondMarkerTemplate")(diamondMarkerTemplate)
     if (dragModifier != null) __obj.updateDynamic("dragModifier")(dragModifier)
-    if (gridAreaRectChanged != null) __obj.updateDynamic("gridAreaRectChanged")(gridAreaRectChanged)
+    if (gridAreaRectChanged != null) __obj.updateDynamic("gridAreaRectChanged")(js.Any.fromFunction2(gridAreaRectChanged))
     if (gridMode != null) __obj.updateDynamic("gridMode")(gridMode)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hexagonMarkerTemplate != null) __obj.updateDynamic("hexagonMarkerTemplate")(hexagonMarkerTemplate)
@@ -838,19 +839,19 @@ object IgDataChart {
     if (plotAreaBackground != null) __obj.updateDynamic("plotAreaBackground")(plotAreaBackground)
     if (!js.isUndefined(preferHigherResolutionTiles)) __obj.updateDynamic("preferHigherResolutionTiles")(preferHigherResolutionTiles)
     if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect)
-    if (progressiveLoadStatusChanged != null) __obj.updateDynamic("progressiveLoadStatusChanged")(progressiveLoadStatusChanged)
+    if (progressiveLoadStatusChanged != null) __obj.updateDynamic("progressiveLoadStatusChanged")(js.Any.fromFunction2(progressiveLoadStatusChanged))
     if (pyramidMarkerTemplate != null) __obj.updateDynamic("pyramidMarkerTemplate")(pyramidMarkerTemplate)
-    if (refreshCompleted != null) __obj.updateDynamic("refreshCompleted")(refreshCompleted)
+    if (refreshCompleted != null) __obj.updateDynamic("refreshCompleted")(js.Any.fromFunction2(refreshCompleted))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series)
-    if (seriesCursorMouseMove != null) __obj.updateDynamic("seriesCursorMouseMove")(seriesCursorMouseMove)
-    if (seriesMouseEnter != null) __obj.updateDynamic("seriesMouseEnter")(seriesMouseEnter)
-    if (seriesMouseLeave != null) __obj.updateDynamic("seriesMouseLeave")(seriesMouseLeave)
-    if (seriesMouseLeftButtonDown != null) __obj.updateDynamic("seriesMouseLeftButtonDown")(seriesMouseLeftButtonDown)
-    if (seriesMouseLeftButtonUp != null) __obj.updateDynamic("seriesMouseLeftButtonUp")(seriesMouseLeftButtonUp)
-    if (seriesMouseMove != null) __obj.updateDynamic("seriesMouseMove")(seriesMouseMove)
+    if (seriesCursorMouseMove != null) __obj.updateDynamic("seriesCursorMouseMove")(js.Any.fromFunction2(seriesCursorMouseMove))
+    if (seriesMouseEnter != null) __obj.updateDynamic("seriesMouseEnter")(js.Any.fromFunction2(seriesMouseEnter))
+    if (seriesMouseLeave != null) __obj.updateDynamic("seriesMouseLeave")(js.Any.fromFunction2(seriesMouseLeave))
+    if (seriesMouseLeftButtonDown != null) __obj.updateDynamic("seriesMouseLeftButtonDown")(js.Any.fromFunction2(seriesMouseLeftButtonDown))
+    if (seriesMouseLeftButtonUp != null) __obj.updateDynamic("seriesMouseLeftButtonUp")(js.Any.fromFunction2(seriesMouseLeftButtonUp))
+    if (seriesMouseMove != null) __obj.updateDynamic("seriesMouseMove")(js.Any.fromFunction2(seriesMouseMove))
     if (size != null) __obj.updateDynamic("size")(size)
     if (squareMarkerTemplate != null) __obj.updateDynamic("squareMarkerTemplate")(squareMarkerTemplate)
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
@@ -874,20 +875,20 @@ object IgDataChart {
     if (titleTextColor != null) __obj.updateDynamic("titleTextColor")(titleTextColor)
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
     if (titleTopMargin != null) __obj.updateDynamic("titleTopMargin")(titleTopMargin.asInstanceOf[js.Any])
-    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
-    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
-    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
-    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2(tooltipHidden))
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2(tooltipHiding))
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2(tooltipShowing))
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2(tooltipShown))
     if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
     if (triangleMarkerTemplate != null) __obj.updateDynamic("triangleMarkerTemplate")(triangleMarkerTemplate)
-    if (typicalBasedOn != null) __obj.updateDynamic("typicalBasedOn")(typicalBasedOn)
+    if (typicalBasedOn != null) __obj.updateDynamic("typicalBasedOn")(js.Any.fromFunction2(typicalBasedOn))
     if (!js.isUndefined(useTiledZooming)) __obj.updateDynamic("useTiledZooming")(useTiledZooming)
     if (!js.isUndefined(verticalZoomable)) __obj.updateDynamic("verticalZoomable")(verticalZoomable)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (windowPositionHorizontal != null) __obj.updateDynamic("windowPositionHorizontal")(windowPositionHorizontal.asInstanceOf[js.Any])
     if (windowPositionVertical != null) __obj.updateDynamic("windowPositionVertical")(windowPositionVertical.asInstanceOf[js.Any])
     if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)
-    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(windowRectChanged)
+    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(js.Any.fromFunction2(windowRectChanged))
     if (windowRectMinWidth != null) __obj.updateDynamic("windowRectMinWidth")(windowRectMinWidth.asInstanceOf[js.Any])
     if (windowResponse != null) __obj.updateDynamic("windowResponse")(windowResponse)
     if (windowScaleHorizontal != null) __obj.updateDynamic("windowScaleHorizontal")(windowScaleHorizontal.asInstanceOf[js.Any])

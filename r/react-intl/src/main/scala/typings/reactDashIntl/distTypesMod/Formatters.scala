@@ -7,9 +7,9 @@ import typings.reactDashIntl.Anon_LocalesOptionsSupportedLocalesOf
 import typings.reactDashIntl.TypeofClassIntlMessageFormat
 import typings.reactDashIntl.TypeofClassIntlRelativeTimeFormat
 import typings.std.ConstructorParameters
-import typings.std.IntlNs.DateTimeFormat
-import typings.std.IntlNs.NumberFormat
-import typings.std.IntlNs.PluralRules
+import typings.std.Intl.DateTimeFormat
+import typings.std.Intl.NumberFormat
+import typings.std.Intl.PluralRules
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

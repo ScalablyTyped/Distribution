@@ -54,7 +54,7 @@ object MaintenanceWindowRunCommandParameters {
     OutputS3KeyPrefix: S3KeyPrefix = null,
     Parameters: Parameters = null,
     ServiceRoleArn: ServiceRole = null,
-    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
+    TimeoutSeconds: Int | Double = null
   ): MaintenanceWindowRunCommandParameters = {
     val __obj = js.Dynamic.literal()
     if (Comment != null) __obj.updateDynamic("Comment")(Comment)
@@ -65,7 +65,7 @@ object MaintenanceWindowRunCommandParameters {
     if (OutputS3KeyPrefix != null) __obj.updateDynamic("OutputS3KeyPrefix")(OutputS3KeyPrefix)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn)
-    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds)
+    if (TimeoutSeconds != null) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowRunCommandParameters]
   }
 }

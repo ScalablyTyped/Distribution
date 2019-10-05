@@ -30,7 +30,7 @@ trait ListEntitiesForPolicyResponse extends js.Object {
 object ListEntitiesForPolicyResponse {
   @scala.inline
   def apply(
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null,
     PolicyGroups: PolicyGroupListType = null,
     PolicyRoles: PolicyRoleListType = null,

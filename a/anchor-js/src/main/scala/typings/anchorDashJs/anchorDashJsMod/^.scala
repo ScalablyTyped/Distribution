@@ -1,9 +1,9 @@
 package typings.anchorDashJs.anchorDashJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.anchorDashJs.anchorDashJsMod.anchorjsNs.Anchor
-import typings.anchorDashJs.anchorDashJsMod.anchorjsNs.AnchorOptions
-import typings.anchorDashJs.anchorDashJsMod.anchorjsNs.AnchorStatic
+import typings.anchorDashJs.anchorDashJsMod.anchorjs.Anchor
+import typings.anchorDashJs.anchorDashJsMod.anchorjs.AnchorOptions
+import typings.anchorDashJs.anchorDashJsMod.anchorjs.AnchorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

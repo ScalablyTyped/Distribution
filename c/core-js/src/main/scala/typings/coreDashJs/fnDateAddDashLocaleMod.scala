@@ -1,7 +1,7 @@
 package typings.coreDashJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.coreDashJs.coreNs.Locale
+import typings.coreDashJs.core.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.breeze
 
-import typings.breeze.breezeNs.EntityManager
-import typings.breeze.breezeNs.EntityQuery
-import typings.breeze.breezeNs.HttpResponse
+import typings.breeze.breeze.EntityManager
+import typings.breeze.breeze.EntityQuery
+import typings.breeze.breeze.HttpResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsPictureMarkerSymbolMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PictureMarkerSymbol
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PictureMarkerSymbolProperties
+import typings.arcgisDashJsDashApi.__esri.PictureMarkerSymbol
+import typings.arcgisDashJsDashApi.__esri.PictureMarkerSymbolProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

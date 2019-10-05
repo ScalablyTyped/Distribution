@@ -24,7 +24,7 @@ object ResetFpgaImageAttributeRequest {
   def apply(
     FpgaImageId: String,
     Attribute: ResetFpgaImageAttributeName = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ResetFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId)
     if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])

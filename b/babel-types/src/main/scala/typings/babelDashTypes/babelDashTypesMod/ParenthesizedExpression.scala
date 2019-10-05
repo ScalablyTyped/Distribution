@@ -34,3 +34,10 @@ object ParenthesizedExpression {
   }
 }
 
+@JSImport("babel-types", "parenthesizedExpression")
+@js.native
+object parenthesizedExpression extends js.Object {
+  def apply(): ParenthesizedExpression = js.native
+  def apply(expression: Expression): ParenthesizedExpression = js.native
+}
+

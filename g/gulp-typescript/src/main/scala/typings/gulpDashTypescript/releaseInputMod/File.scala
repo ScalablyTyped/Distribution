@@ -15,20 +15,12 @@ trait File extends js.Object {
   var ts: js.UndefOr[SourceFile] = js.undefined
 }
 
-object File {
-  @scala.inline
-  def apply(
-    content: String,
-    fileNameNormalized: String,
-    fileNameOriginal: String,
-    kind: FileKind,
-    gulp: VinylFile = null,
-    ts: SourceFile = null
-  ): File = {
-    val __obj = js.Dynamic.literal(content = content, fileNameNormalized = fileNameNormalized, fileNameOriginal = fileNameOriginal, kind = kind)
-    if (gulp != null) __obj.updateDynamic("gulp")(gulp)
-    if (ts != null) __obj.updateDynamic("ts")(ts)
-    __obj.asInstanceOf[File]
-  }
+@JSImport("gulp-typescript/release/input", "File")
+@js.native
+object File extends js.Object {
+  def equal(a: File, b: File): Boolean = js.native
+  def fromContent(fileName: String, content: String): File = js.native
+  def fromGulp(file: VinylFile): File = js.native
+  def getChangeState(previous: File, current: File): FileChangeState = js.native
 }
 

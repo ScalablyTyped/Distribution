@@ -1,7 +1,7 @@
 package typings.umbraco
 
-import typings.umbraco.umbracoNs.resourcesNs.Direction
-import typings.umbraco.umbracoNs.resourcesNs.OrderItemsBy
+import typings.umbraco.umbraco.resources.Direction
+import typings.umbraco.umbraco.resources.OrderItemsBy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

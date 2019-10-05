@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object CSSBlendModes extends js.Object {
   @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[typings.phaser.PhaserNs.CSSBlendModes with scala.Nothing] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[typings.phaser.Phaser.CSSBlendModes with scala.Nothing] = js.native
 }
 

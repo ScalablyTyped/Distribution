@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersPointCloudUniqueValueRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudUniqueValueRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudUniqueValueRendererProperties
+import typings.arcgisDashJsDashApi.__esri.PointCloudUniqueValueRenderer
+import typings.arcgisDashJsDashApi.__esri.PointCloudUniqueValueRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

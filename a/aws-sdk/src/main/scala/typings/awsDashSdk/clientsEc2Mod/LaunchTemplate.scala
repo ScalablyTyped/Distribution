@@ -40,8 +40,8 @@ object LaunchTemplate {
   def apply(
     CreateTime: DateTime = null,
     CreatedBy: String = null,
-    DefaultVersionNumber: js.UndefOr[Long] = js.undefined,
-    LatestVersionNumber: js.UndefOr[Long] = js.undefined,
+    DefaultVersionNumber: Int | scala.Double = null,
+    LatestVersionNumber: Int | scala.Double = null,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null,
     Tags: TagList = null
@@ -49,8 +49,8 @@ object LaunchTemplate {
     val __obj = js.Dynamic.literal()
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime)
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy)
-    if (!js.isUndefined(DefaultVersionNumber)) __obj.updateDynamic("DefaultVersionNumber")(DefaultVersionNumber)
-    if (!js.isUndefined(LatestVersionNumber)) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber)
+    if (DefaultVersionNumber != null) __obj.updateDynamic("DefaultVersionNumber")(DefaultVersionNumber.asInstanceOf[js.Any])
+    if (LatestVersionNumber != null) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber.asInstanceOf[js.Any])
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId)
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

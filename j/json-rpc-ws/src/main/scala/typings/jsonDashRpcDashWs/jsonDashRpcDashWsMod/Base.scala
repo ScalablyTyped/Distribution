@@ -1,5 +1,6 @@
 package typings.jsonDashRpcDashWs.jsonDashRpcDashWsMod
 
+import typings.ws.wsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ class Base[TConnection /* <: Connection */] () extends js.Object {
   /**
     * Connected event handler
     */
-  def connected(socket: typings.ws.wsMod.^): Unit = js.native
+  def connected(socket: ^): Unit = js.native
   /**
     * Disconnected event handler
     */

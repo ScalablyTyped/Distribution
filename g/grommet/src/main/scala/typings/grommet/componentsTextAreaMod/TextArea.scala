@@ -1,7 +1,9 @@
 package typings.grommet.componentsTextAreaMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLTextAreaElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.TextareaHTMLAttributes
@@ -23,4 +25,13 @@ class TextArea protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/TextArea", "TextArea")
+@js.native
+object TextArea extends TopLevel[
+      ComponentClass[
+        TextAreaProps with (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]), 
+        ComponentState
+      ]
+    ]
 

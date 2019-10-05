@@ -900,306 +900,306 @@ trait RuleListener
 object RuleListener {
   @scala.inline
   def apply(
-    ArrayExpression: RuleFunction[ArrayExpression] = null,
-    ArrayPattern: RuleFunction[ArrayPattern] = null,
-    ArrowFunctionExpression: RuleFunction[ArrowFunctionExpression] = null,
-    AssignmentExpression: RuleFunction[AssignmentExpression] = null,
-    AssignmentPattern: RuleFunction[AssignmentPattern] = null,
-    AwaitExpression: RuleFunction[AwaitExpression] = null,
-    BlockStatement: RuleFunction[BlockStatement] = null,
-    BreakStatement: RuleFunction[BreakStatement] = null,
-    CallExpression: RuleFunction[CallExpression] = null,
-    CatchClause: RuleFunction[CatchClause] = null,
-    ClassBody: RuleFunction[ClassBody] = null,
-    ClassDeclaration: RuleFunction[ClassDeclaration] = null,
-    ClassExpression: RuleFunction[ClassExpression] = null,
-    ClassProperty: RuleFunction[ClassProperty] = null,
-    Comment: RuleFunction[Comment] = null,
-    ConditionalExpression: RuleFunction[ConditionalExpression] = null,
-    ContinueStatement: RuleFunction[ContinueStatement] = null,
-    DebuggerStatement: RuleFunction[DebuggerStatement] = null,
-    Decorator: RuleFunction[Decorator] = null,
-    DoWhileStatement: RuleFunction[DoWhileStatement] = null,
-    EmptyStatement: RuleFunction[EmptyStatement] = null,
-    ExportAllDeclaration: RuleFunction[ExportAllDeclaration] = null,
-    ExportDefaultDeclaration: RuleFunction[ExportDefaultDeclaration] = null,
-    ExportNamedDeclaration: RuleFunction[ExportNamedDeclaration] = null,
-    ExportSpecifier: RuleFunction[ExportSpecifier] = null,
-    ExpressionStatement: RuleFunction[ExpressionStatement] = null,
-    ForInStatement: RuleFunction[ForInStatement] = null,
-    ForOfStatement: RuleFunction[ForOfStatement] = null,
-    ForStatement: RuleFunction[ForStatement] = null,
-    Identifier: RuleFunction[Identifier] = null,
-    IfStatement: RuleFunction[IfStatement] = null,
-    Import: RuleFunction[Import] = null,
-    ImportDeclaration: RuleFunction[ImportDeclaration] = null,
-    ImportDefaultSpecifier: RuleFunction[ImportDefaultSpecifier] = null,
-    ImportNamespaceSpecifier: RuleFunction[ImportNamespaceSpecifier] = null,
-    ImportSpecifier: RuleFunction[ImportSpecifier] = null,
-    JSXAttribute: RuleFunction[JSXAttribute] = null,
-    JSXClosingElement: RuleFunction[JSXClosingElement] = null,
-    JSXClosingFragment: RuleFunction[JSXClosingFragment] = null,
-    JSXElement: RuleFunction[JSXElement] = null,
-    JSXEmptyExpression: RuleFunction[JSXEmptyExpression] = null,
-    JSXExpressionContainer: RuleFunction[JSXExpressionContainer] = null,
-    JSXFragment: RuleFunction[JSXFragment] = null,
-    JSXIdentifier: RuleFunction[JSXIdentifier] = null,
-    JSXMemberExpression: RuleFunction[JSXMemberExpression] = null,
-    JSXOpeningElement: RuleFunction[JSXOpeningElement] = null,
-    JSXOpeningFragment: RuleFunction[JSXOpeningFragment] = null,
-    JSXSpreadAttribute: RuleFunction[JSXSpreadAttribute] = null,
-    JSXSpreadChild: RuleFunction[JSXSpreadChild] = null,
-    JSXText: RuleFunction[JSXText] = null,
-    LabeledStatement: RuleFunction[LabeledStatement] = null,
-    LogicalExpression: RuleFunction[LogicalExpression] = null,
-    MemberExpression: RuleFunction[MemberExpression] = null,
-    MetaProperty: RuleFunction[MetaProperty] = null,
-    MethodDefinition: RuleFunction[MethodDefinition] = null,
-    NewExpression: RuleFunction[NewExpression] = null,
-    ObjectExpression: RuleFunction[ObjectExpression] = null,
-    ObjectPattern: RuleFunction[ObjectPattern] = null,
-    Program: RuleFunction[Program] = null,
-    Property: RuleFunction[Property] = null,
-    RestElement: RuleFunction[RestElement] = null,
-    ReturnStatement: RuleFunction[ReturnStatement] = null,
-    SequenceExpression: RuleFunction[SequenceExpression] = null,
-    SpreadElement: RuleFunction[SpreadElement] = null,
+    ArrayExpression: ArrayExpression => Unit = null,
+    ArrayPattern: ArrayPattern => Unit = null,
+    ArrowFunctionExpression: ArrowFunctionExpression => Unit = null,
+    AssignmentExpression: AssignmentExpression => Unit = null,
+    AssignmentPattern: AssignmentPattern => Unit = null,
+    AwaitExpression: AwaitExpression => Unit = null,
+    BlockStatement: BlockStatement => Unit = null,
+    BreakStatement: BreakStatement => Unit = null,
+    CallExpression: CallExpression => Unit = null,
+    CatchClause: CatchClause => Unit = null,
+    ClassBody: ClassBody => Unit = null,
+    ClassDeclaration: ClassDeclaration => Unit = null,
+    ClassExpression: ClassExpression => Unit = null,
+    ClassProperty: ClassProperty => Unit = null,
+    Comment: Comment => Unit = null,
+    ConditionalExpression: ConditionalExpression => Unit = null,
+    ContinueStatement: ContinueStatement => Unit = null,
+    DebuggerStatement: DebuggerStatement => Unit = null,
+    Decorator: Decorator => Unit = null,
+    DoWhileStatement: DoWhileStatement => Unit = null,
+    EmptyStatement: EmptyStatement => Unit = null,
+    ExportAllDeclaration: ExportAllDeclaration => Unit = null,
+    ExportDefaultDeclaration: ExportDefaultDeclaration => Unit = null,
+    ExportNamedDeclaration: ExportNamedDeclaration => Unit = null,
+    ExportSpecifier: ExportSpecifier => Unit = null,
+    ExpressionStatement: ExpressionStatement => Unit = null,
+    ForInStatement: ForInStatement => Unit = null,
+    ForOfStatement: ForOfStatement => Unit = null,
+    ForStatement: ForStatement => Unit = null,
+    Identifier: Identifier => Unit = null,
+    IfStatement: IfStatement => Unit = null,
+    Import: Import => Unit = null,
+    ImportDeclaration: ImportDeclaration => Unit = null,
+    ImportDefaultSpecifier: ImportDefaultSpecifier => Unit = null,
+    ImportNamespaceSpecifier: ImportNamespaceSpecifier => Unit = null,
+    ImportSpecifier: ImportSpecifier => Unit = null,
+    JSXAttribute: JSXAttribute => Unit = null,
+    JSXClosingElement: JSXClosingElement => Unit = null,
+    JSXClosingFragment: JSXClosingFragment => Unit = null,
+    JSXElement: JSXElement => Unit = null,
+    JSXEmptyExpression: JSXEmptyExpression => Unit = null,
+    JSXExpressionContainer: JSXExpressionContainer => Unit = null,
+    JSXFragment: JSXFragment => Unit = null,
+    JSXIdentifier: JSXIdentifier => Unit = null,
+    JSXMemberExpression: JSXMemberExpression => Unit = null,
+    JSXOpeningElement: JSXOpeningElement => Unit = null,
+    JSXOpeningFragment: JSXOpeningFragment => Unit = null,
+    JSXSpreadAttribute: JSXSpreadAttribute => Unit = null,
+    JSXSpreadChild: JSXSpreadChild => Unit = null,
+    JSXText: JSXText => Unit = null,
+    LabeledStatement: LabeledStatement => Unit = null,
+    LogicalExpression: LogicalExpression => Unit = null,
+    MemberExpression: MemberExpression => Unit = null,
+    MetaProperty: MetaProperty => Unit = null,
+    MethodDefinition: MethodDefinition => Unit = null,
+    NewExpression: NewExpression => Unit = null,
+    ObjectExpression: ObjectExpression => Unit = null,
+    ObjectPattern: ObjectPattern => Unit = null,
+    Program: Program => Unit = null,
+    Property: Property => Unit = null,
+    RestElement: RestElement => Unit = null,
+    ReturnStatement: ReturnStatement => Unit = null,
+    SequenceExpression: SequenceExpression => Unit = null,
+    SpreadElement: SpreadElement => Unit = null,
     StringDictionary: /* nodeSelector */ StringDictionary[js.UndefOr[RuleFunction[scala.Nothing]]] = null,
-    Super: RuleFunction[Super] = null,
-    SwitchCase: RuleFunction[SwitchCase] = null,
-    SwitchStatement: RuleFunction[SwitchStatement] = null,
-    TSAbstractKeyword: RuleFunction[TSAbstractKeyword] = null,
-    TSAbstractMethodDefinition: RuleFunction[TSAbstractMethodDefinition] = null,
-    TSAnyKeyword: RuleFunction[TSAnyKeyword] = null,
-    TSArrayType: RuleFunction[TSArrayType] = null,
-    TSAsExpression: RuleFunction[TSAsExpression] = null,
-    TSAsyncKeyword: RuleFunction[TSAsyncKeyword] = null,
-    TSBigIntKeyword: RuleFunction[TSBigIntKeyword] = null,
-    TSBooleanKeyword: RuleFunction[TSBooleanKeyword] = null,
-    TSCallSignatureDeclaration: RuleFunction[TSCallSignatureDeclaration] = null,
-    TSConditionalType: RuleFunction[TSConditionalType] = null,
-    TSConstructSignatureDeclaration: RuleFunction[TSConstructSignatureDeclaration] = null,
-    TSDeclareFunction: RuleFunction[TSDeclareFunction] = null,
-    TSDeclareKeyword: RuleFunction[TSDeclareKeyword] = null,
-    TSEnumDeclaration: RuleFunction[TSEnumDeclaration] = null,
-    TSEnumMember: RuleFunction[TSEnumMember] = null,
-    TSExportAssignment: RuleFunction[TSExportAssignment] = null,
-    TSExportKeyword: RuleFunction[TSExportKeyword] = null,
-    TSExternalModuleReference: RuleFunction[TSExternalModuleReference] = null,
-    TSImportEqualsDeclaration: RuleFunction[TSImportEqualsDeclaration] = null,
-    TSImportType: RuleFunction[TSImportType] = null,
-    TSIndexSignature: RuleFunction[TSIndexSignature] = null,
-    TSIndexedAccessType: RuleFunction[TSIndexedAccessType] = null,
-    TSInferType: RuleFunction[TSInferType] = null,
-    TSInterfaceBody: RuleFunction[TSInterfaceBody] = null,
-    TSInterfaceDeclaration: RuleFunction[TSInterfaceDeclaration] = null,
-    TSIntersectionType: RuleFunction[TSIntersectionType] = null,
-    TSLiteralType: RuleFunction[TSLiteralType] = null,
-    TSMappedType: RuleFunction[TSMappedType] = null,
-    TSMethodSignature: RuleFunction[TSMethodSignature] = null,
-    TSModuleBlock: RuleFunction[TSModuleBlock] = null,
-    TSModuleDeclaration: RuleFunction[TSModuleDeclaration] = null,
-    TSNamespaceExportDeclaration: RuleFunction[TSNamespaceExportDeclaration] = null,
-    TSNeverKeyword: RuleFunction[TSNeverKeyword] = null,
-    TSNonNullExpression: RuleFunction[TSNonNullExpression] = null,
-    TSNullKeyword: RuleFunction[TSNullKeyword] = null,
-    TSNumberKeyword: RuleFunction[TSNumberKeyword] = null,
-    TSObjectKeyword: RuleFunction[TSObjectKeyword] = null,
-    TSOptionalType: RuleFunction[TSOptionalType] = null,
-    TSParameterProperty: RuleFunction[TSParameterProperty] = null,
-    TSParenthesizedType: RuleFunction[TSParenthesizedType] = null,
-    TSPrivateKeyword: RuleFunction[TSPrivateKeyword] = null,
-    TSPropertySignature: RuleFunction[TSPropertySignature] = null,
-    TSProtectedKeyword: RuleFunction[TSProtectedKeyword] = null,
-    TSPublicKeyword: RuleFunction[TSPublicKeyword] = null,
-    TSQualifiedName: RuleFunction[TSQualifiedName] = null,
-    TSReadonlyKeyword: RuleFunction[TSReadonlyKeyword] = null,
-    TSRestType: RuleFunction[TSRestType] = null,
-    TSStaticKeyword: RuleFunction[TSStaticKeyword] = null,
-    TSStringKeyword: RuleFunction[TSStringKeyword] = null,
-    TSSymbolKeyword: RuleFunction[TSSymbolKeyword] = null,
-    TSThisType: RuleFunction[TSThisType] = null,
-    TSTupleType: RuleFunction[TSTupleType] = null,
-    TSTypeAliasDeclaration: RuleFunction[TSTypeAliasDeclaration] = null,
-    TSTypeAnnotation: RuleFunction[TSTypeAnnotation] = null,
-    TSTypeAssertion: RuleFunction[TSTypeAssertion] = null,
-    TSTypeLiteral: RuleFunction[TSTypeLiteral] = null,
-    TSTypeOperator: RuleFunction[TSTypeOperator] = null,
-    TSTypeParameter: RuleFunction[TSTypeParameter] = null,
-    TSTypeParameterDeclaration: RuleFunction[TSTypeParameterDeclaration] = null,
-    TSTypeParameterInstantiation: RuleFunction[TSTypeParameterInstantiation] = null,
-    TSTypePredicate: RuleFunction[TSTypePredicate] = null,
-    TSTypeQuery: RuleFunction[TSTypeQuery] = null,
-    TSTypeReference: RuleFunction[TSTypeReference] = null,
-    TSUndefinedKeyword: RuleFunction[TSUndefinedKeyword] = null,
-    TSUnionType: RuleFunction[TSUnionType] = null,
-    TSUnknownKeyword: RuleFunction[TSUnknownKeyword] = null,
-    TSVoidKeyword: RuleFunction[TSVoidKeyword] = null,
-    TaggedTemplateExpression: RuleFunction[TaggedTemplateExpression] = null,
-    TemplateElement: RuleFunction[TemplateElement] = null,
-    TemplateLiteral: RuleFunction[TemplateLiteral] = null,
-    ThisExpression: RuleFunction[ThisExpression] = null,
-    ThrowStatement: RuleFunction[ThrowStatement] = null,
-    Token: RuleFunction[Token] = null,
-    TryStatement: RuleFunction[TryStatement] = null,
-    UnaryExpression: RuleFunction[UnaryExpression] = null,
-    UpdateExpression: RuleFunction[UpdateExpression] = null,
-    VariableDeclaration: RuleFunction[VariableDeclaration] = null,
-    VariableDeclarator: RuleFunction[VariableDeclarator] = null,
-    WhileStatement: RuleFunction[WhileStatement] = null,
-    WithStatement: RuleFunction[WithStatement] = null,
-    YieldExpression: RuleFunction[YieldExpression] = null
+    Super: Super => Unit = null,
+    SwitchCase: SwitchCase => Unit = null,
+    SwitchStatement: SwitchStatement => Unit = null,
+    TSAbstractKeyword: TSAbstractKeyword => Unit = null,
+    TSAbstractMethodDefinition: TSAbstractMethodDefinition => Unit = null,
+    TSAnyKeyword: TSAnyKeyword => Unit = null,
+    TSArrayType: TSArrayType => Unit = null,
+    TSAsExpression: TSAsExpression => Unit = null,
+    TSAsyncKeyword: TSAsyncKeyword => Unit = null,
+    TSBigIntKeyword: TSBigIntKeyword => Unit = null,
+    TSBooleanKeyword: TSBooleanKeyword => Unit = null,
+    TSCallSignatureDeclaration: TSCallSignatureDeclaration => Unit = null,
+    TSConditionalType: TSConditionalType => Unit = null,
+    TSConstructSignatureDeclaration: TSConstructSignatureDeclaration => Unit = null,
+    TSDeclareFunction: TSDeclareFunction => Unit = null,
+    TSDeclareKeyword: TSDeclareKeyword => Unit = null,
+    TSEnumDeclaration: TSEnumDeclaration => Unit = null,
+    TSEnumMember: TSEnumMember => Unit = null,
+    TSExportAssignment: TSExportAssignment => Unit = null,
+    TSExportKeyword: TSExportKeyword => Unit = null,
+    TSExternalModuleReference: TSExternalModuleReference => Unit = null,
+    TSImportEqualsDeclaration: TSImportEqualsDeclaration => Unit = null,
+    TSImportType: TSImportType => Unit = null,
+    TSIndexSignature: TSIndexSignature => Unit = null,
+    TSIndexedAccessType: TSIndexedAccessType => Unit = null,
+    TSInferType: TSInferType => Unit = null,
+    TSInterfaceBody: TSInterfaceBody => Unit = null,
+    TSInterfaceDeclaration: TSInterfaceDeclaration => Unit = null,
+    TSIntersectionType: TSIntersectionType => Unit = null,
+    TSLiteralType: TSLiteralType => Unit = null,
+    TSMappedType: TSMappedType => Unit = null,
+    TSMethodSignature: TSMethodSignature => Unit = null,
+    TSModuleBlock: TSModuleBlock => Unit = null,
+    TSModuleDeclaration: TSModuleDeclaration => Unit = null,
+    TSNamespaceExportDeclaration: TSNamespaceExportDeclaration => Unit = null,
+    TSNeverKeyword: TSNeverKeyword => Unit = null,
+    TSNonNullExpression: TSNonNullExpression => Unit = null,
+    TSNullKeyword: TSNullKeyword => Unit = null,
+    TSNumberKeyword: TSNumberKeyword => Unit = null,
+    TSObjectKeyword: TSObjectKeyword => Unit = null,
+    TSOptionalType: TSOptionalType => Unit = null,
+    TSParameterProperty: TSParameterProperty => Unit = null,
+    TSParenthesizedType: TSParenthesizedType => Unit = null,
+    TSPrivateKeyword: TSPrivateKeyword => Unit = null,
+    TSPropertySignature: TSPropertySignature => Unit = null,
+    TSProtectedKeyword: TSProtectedKeyword => Unit = null,
+    TSPublicKeyword: TSPublicKeyword => Unit = null,
+    TSQualifiedName: TSQualifiedName => Unit = null,
+    TSReadonlyKeyword: TSReadonlyKeyword => Unit = null,
+    TSRestType: TSRestType => Unit = null,
+    TSStaticKeyword: TSStaticKeyword => Unit = null,
+    TSStringKeyword: TSStringKeyword => Unit = null,
+    TSSymbolKeyword: TSSymbolKeyword => Unit = null,
+    TSThisType: TSThisType => Unit = null,
+    TSTupleType: TSTupleType => Unit = null,
+    TSTypeAliasDeclaration: TSTypeAliasDeclaration => Unit = null,
+    TSTypeAnnotation: TSTypeAnnotation => Unit = null,
+    TSTypeAssertion: TSTypeAssertion => Unit = null,
+    TSTypeLiteral: TSTypeLiteral => Unit = null,
+    TSTypeOperator: TSTypeOperator => Unit = null,
+    TSTypeParameter: TSTypeParameter => Unit = null,
+    TSTypeParameterDeclaration: TSTypeParameterDeclaration => Unit = null,
+    TSTypeParameterInstantiation: TSTypeParameterInstantiation => Unit = null,
+    TSTypePredicate: TSTypePredicate => Unit = null,
+    TSTypeQuery: TSTypeQuery => Unit = null,
+    TSTypeReference: TSTypeReference => Unit = null,
+    TSUndefinedKeyword: TSUndefinedKeyword => Unit = null,
+    TSUnionType: TSUnionType => Unit = null,
+    TSUnknownKeyword: TSUnknownKeyword => Unit = null,
+    TSVoidKeyword: TSVoidKeyword => Unit = null,
+    TaggedTemplateExpression: TaggedTemplateExpression => Unit = null,
+    TemplateElement: TemplateElement => Unit = null,
+    TemplateLiteral: TemplateLiteral => Unit = null,
+    ThisExpression: ThisExpression => Unit = null,
+    ThrowStatement: ThrowStatement => Unit = null,
+    Token: Token => Unit = null,
+    TryStatement: TryStatement => Unit = null,
+    UnaryExpression: UnaryExpression => Unit = null,
+    UpdateExpression: UpdateExpression => Unit = null,
+    VariableDeclaration: VariableDeclaration => Unit = null,
+    VariableDeclarator: VariableDeclarator => Unit = null,
+    WhileStatement: WhileStatement => Unit = null,
+    WithStatement: WithStatement => Unit = null,
+    YieldExpression: YieldExpression => Unit = null
   ): RuleListener = {
     val __obj = js.Dynamic.literal()
-    if (ArrayExpression != null) __obj.updateDynamic("ArrayExpression")(ArrayExpression)
-    if (ArrayPattern != null) __obj.updateDynamic("ArrayPattern")(ArrayPattern)
-    if (ArrowFunctionExpression != null) __obj.updateDynamic("ArrowFunctionExpression")(ArrowFunctionExpression)
-    if (AssignmentExpression != null) __obj.updateDynamic("AssignmentExpression")(AssignmentExpression)
-    if (AssignmentPattern != null) __obj.updateDynamic("AssignmentPattern")(AssignmentPattern)
-    if (AwaitExpression != null) __obj.updateDynamic("AwaitExpression")(AwaitExpression)
-    if (BlockStatement != null) __obj.updateDynamic("BlockStatement")(BlockStatement)
-    if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(BreakStatement)
-    if (CallExpression != null) __obj.updateDynamic("CallExpression")(CallExpression)
-    if (CatchClause != null) __obj.updateDynamic("CatchClause")(CatchClause)
-    if (ClassBody != null) __obj.updateDynamic("ClassBody")(ClassBody)
-    if (ClassDeclaration != null) __obj.updateDynamic("ClassDeclaration")(ClassDeclaration)
-    if (ClassExpression != null) __obj.updateDynamic("ClassExpression")(ClassExpression)
-    if (ClassProperty != null) __obj.updateDynamic("ClassProperty")(ClassProperty)
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment)
-    if (ConditionalExpression != null) __obj.updateDynamic("ConditionalExpression")(ConditionalExpression)
-    if (ContinueStatement != null) __obj.updateDynamic("ContinueStatement")(ContinueStatement)
-    if (DebuggerStatement != null) __obj.updateDynamic("DebuggerStatement")(DebuggerStatement)
-    if (Decorator != null) __obj.updateDynamic("Decorator")(Decorator)
-    if (DoWhileStatement != null) __obj.updateDynamic("DoWhileStatement")(DoWhileStatement)
-    if (EmptyStatement != null) __obj.updateDynamic("EmptyStatement")(EmptyStatement)
-    if (ExportAllDeclaration != null) __obj.updateDynamic("ExportAllDeclaration")(ExportAllDeclaration)
-    if (ExportDefaultDeclaration != null) __obj.updateDynamic("ExportDefaultDeclaration")(ExportDefaultDeclaration)
-    if (ExportNamedDeclaration != null) __obj.updateDynamic("ExportNamedDeclaration")(ExportNamedDeclaration)
-    if (ExportSpecifier != null) __obj.updateDynamic("ExportSpecifier")(ExportSpecifier)
-    if (ExpressionStatement != null) __obj.updateDynamic("ExpressionStatement")(ExpressionStatement)
-    if (ForInStatement != null) __obj.updateDynamic("ForInStatement")(ForInStatement)
-    if (ForOfStatement != null) __obj.updateDynamic("ForOfStatement")(ForOfStatement)
-    if (ForStatement != null) __obj.updateDynamic("ForStatement")(ForStatement)
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier)
-    if (IfStatement != null) __obj.updateDynamic("IfStatement")(IfStatement)
-    if (Import != null) __obj.updateDynamic("Import")(Import)
-    if (ImportDeclaration != null) __obj.updateDynamic("ImportDeclaration")(ImportDeclaration)
-    if (ImportDefaultSpecifier != null) __obj.updateDynamic("ImportDefaultSpecifier")(ImportDefaultSpecifier)
-    if (ImportNamespaceSpecifier != null) __obj.updateDynamic("ImportNamespaceSpecifier")(ImportNamespaceSpecifier)
-    if (ImportSpecifier != null) __obj.updateDynamic("ImportSpecifier")(ImportSpecifier)
-    if (JSXAttribute != null) __obj.updateDynamic("JSXAttribute")(JSXAttribute)
-    if (JSXClosingElement != null) __obj.updateDynamic("JSXClosingElement")(JSXClosingElement)
-    if (JSXClosingFragment != null) __obj.updateDynamic("JSXClosingFragment")(JSXClosingFragment)
-    if (JSXElement != null) __obj.updateDynamic("JSXElement")(JSXElement)
-    if (JSXEmptyExpression != null) __obj.updateDynamic("JSXEmptyExpression")(JSXEmptyExpression)
-    if (JSXExpressionContainer != null) __obj.updateDynamic("JSXExpressionContainer")(JSXExpressionContainer)
-    if (JSXFragment != null) __obj.updateDynamic("JSXFragment")(JSXFragment)
-    if (JSXIdentifier != null) __obj.updateDynamic("JSXIdentifier")(JSXIdentifier)
-    if (JSXMemberExpression != null) __obj.updateDynamic("JSXMemberExpression")(JSXMemberExpression)
-    if (JSXOpeningElement != null) __obj.updateDynamic("JSXOpeningElement")(JSXOpeningElement)
-    if (JSXOpeningFragment != null) __obj.updateDynamic("JSXOpeningFragment")(JSXOpeningFragment)
-    if (JSXSpreadAttribute != null) __obj.updateDynamic("JSXSpreadAttribute")(JSXSpreadAttribute)
-    if (JSXSpreadChild != null) __obj.updateDynamic("JSXSpreadChild")(JSXSpreadChild)
-    if (JSXText != null) __obj.updateDynamic("JSXText")(JSXText)
-    if (LabeledStatement != null) __obj.updateDynamic("LabeledStatement")(LabeledStatement)
-    if (LogicalExpression != null) __obj.updateDynamic("LogicalExpression")(LogicalExpression)
-    if (MemberExpression != null) __obj.updateDynamic("MemberExpression")(MemberExpression)
-    if (MetaProperty != null) __obj.updateDynamic("MetaProperty")(MetaProperty)
-    if (MethodDefinition != null) __obj.updateDynamic("MethodDefinition")(MethodDefinition)
-    if (NewExpression != null) __obj.updateDynamic("NewExpression")(NewExpression)
-    if (ObjectExpression != null) __obj.updateDynamic("ObjectExpression")(ObjectExpression)
-    if (ObjectPattern != null) __obj.updateDynamic("ObjectPattern")(ObjectPattern)
-    if (Program != null) __obj.updateDynamic("Program")(Program)
-    if (Property != null) __obj.updateDynamic("Property")(Property)
-    if (RestElement != null) __obj.updateDynamic("RestElement")(RestElement)
-    if (ReturnStatement != null) __obj.updateDynamic("ReturnStatement")(ReturnStatement)
-    if (SequenceExpression != null) __obj.updateDynamic("SequenceExpression")(SequenceExpression)
-    if (SpreadElement != null) __obj.updateDynamic("SpreadElement")(SpreadElement)
+    if (ArrayExpression != null) __obj.updateDynamic("ArrayExpression")(js.Any.fromFunction1(ArrayExpression))
+    if (ArrayPattern != null) __obj.updateDynamic("ArrayPattern")(js.Any.fromFunction1(ArrayPattern))
+    if (ArrowFunctionExpression != null) __obj.updateDynamic("ArrowFunctionExpression")(js.Any.fromFunction1(ArrowFunctionExpression))
+    if (AssignmentExpression != null) __obj.updateDynamic("AssignmentExpression")(js.Any.fromFunction1(AssignmentExpression))
+    if (AssignmentPattern != null) __obj.updateDynamic("AssignmentPattern")(js.Any.fromFunction1(AssignmentPattern))
+    if (AwaitExpression != null) __obj.updateDynamic("AwaitExpression")(js.Any.fromFunction1(AwaitExpression))
+    if (BlockStatement != null) __obj.updateDynamic("BlockStatement")(js.Any.fromFunction1(BlockStatement))
+    if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(js.Any.fromFunction1(BreakStatement))
+    if (CallExpression != null) __obj.updateDynamic("CallExpression")(js.Any.fromFunction1(CallExpression))
+    if (CatchClause != null) __obj.updateDynamic("CatchClause")(js.Any.fromFunction1(CatchClause))
+    if (ClassBody != null) __obj.updateDynamic("ClassBody")(js.Any.fromFunction1(ClassBody))
+    if (ClassDeclaration != null) __obj.updateDynamic("ClassDeclaration")(js.Any.fromFunction1(ClassDeclaration))
+    if (ClassExpression != null) __obj.updateDynamic("ClassExpression")(js.Any.fromFunction1(ClassExpression))
+    if (ClassProperty != null) __obj.updateDynamic("ClassProperty")(js.Any.fromFunction1(ClassProperty))
+    if (Comment != null) __obj.updateDynamic("Comment")(js.Any.fromFunction1(Comment))
+    if (ConditionalExpression != null) __obj.updateDynamic("ConditionalExpression")(js.Any.fromFunction1(ConditionalExpression))
+    if (ContinueStatement != null) __obj.updateDynamic("ContinueStatement")(js.Any.fromFunction1(ContinueStatement))
+    if (DebuggerStatement != null) __obj.updateDynamic("DebuggerStatement")(js.Any.fromFunction1(DebuggerStatement))
+    if (Decorator != null) __obj.updateDynamic("Decorator")(js.Any.fromFunction1(Decorator))
+    if (DoWhileStatement != null) __obj.updateDynamic("DoWhileStatement")(js.Any.fromFunction1(DoWhileStatement))
+    if (EmptyStatement != null) __obj.updateDynamic("EmptyStatement")(js.Any.fromFunction1(EmptyStatement))
+    if (ExportAllDeclaration != null) __obj.updateDynamic("ExportAllDeclaration")(js.Any.fromFunction1(ExportAllDeclaration))
+    if (ExportDefaultDeclaration != null) __obj.updateDynamic("ExportDefaultDeclaration")(js.Any.fromFunction1(ExportDefaultDeclaration))
+    if (ExportNamedDeclaration != null) __obj.updateDynamic("ExportNamedDeclaration")(js.Any.fromFunction1(ExportNamedDeclaration))
+    if (ExportSpecifier != null) __obj.updateDynamic("ExportSpecifier")(js.Any.fromFunction1(ExportSpecifier))
+    if (ExpressionStatement != null) __obj.updateDynamic("ExpressionStatement")(js.Any.fromFunction1(ExpressionStatement))
+    if (ForInStatement != null) __obj.updateDynamic("ForInStatement")(js.Any.fromFunction1(ForInStatement))
+    if (ForOfStatement != null) __obj.updateDynamic("ForOfStatement")(js.Any.fromFunction1(ForOfStatement))
+    if (ForStatement != null) __obj.updateDynamic("ForStatement")(js.Any.fromFunction1(ForStatement))
+    if (Identifier != null) __obj.updateDynamic("Identifier")(js.Any.fromFunction1(Identifier))
+    if (IfStatement != null) __obj.updateDynamic("IfStatement")(js.Any.fromFunction1(IfStatement))
+    if (Import != null) __obj.updateDynamic("Import")(js.Any.fromFunction1(Import))
+    if (ImportDeclaration != null) __obj.updateDynamic("ImportDeclaration")(js.Any.fromFunction1(ImportDeclaration))
+    if (ImportDefaultSpecifier != null) __obj.updateDynamic("ImportDefaultSpecifier")(js.Any.fromFunction1(ImportDefaultSpecifier))
+    if (ImportNamespaceSpecifier != null) __obj.updateDynamic("ImportNamespaceSpecifier")(js.Any.fromFunction1(ImportNamespaceSpecifier))
+    if (ImportSpecifier != null) __obj.updateDynamic("ImportSpecifier")(js.Any.fromFunction1(ImportSpecifier))
+    if (JSXAttribute != null) __obj.updateDynamic("JSXAttribute")(js.Any.fromFunction1(JSXAttribute))
+    if (JSXClosingElement != null) __obj.updateDynamic("JSXClosingElement")(js.Any.fromFunction1(JSXClosingElement))
+    if (JSXClosingFragment != null) __obj.updateDynamic("JSXClosingFragment")(js.Any.fromFunction1(JSXClosingFragment))
+    if (JSXElement != null) __obj.updateDynamic("JSXElement")(js.Any.fromFunction1(JSXElement))
+    if (JSXEmptyExpression != null) __obj.updateDynamic("JSXEmptyExpression")(js.Any.fromFunction1(JSXEmptyExpression))
+    if (JSXExpressionContainer != null) __obj.updateDynamic("JSXExpressionContainer")(js.Any.fromFunction1(JSXExpressionContainer))
+    if (JSXFragment != null) __obj.updateDynamic("JSXFragment")(js.Any.fromFunction1(JSXFragment))
+    if (JSXIdentifier != null) __obj.updateDynamic("JSXIdentifier")(js.Any.fromFunction1(JSXIdentifier))
+    if (JSXMemberExpression != null) __obj.updateDynamic("JSXMemberExpression")(js.Any.fromFunction1(JSXMemberExpression))
+    if (JSXOpeningElement != null) __obj.updateDynamic("JSXOpeningElement")(js.Any.fromFunction1(JSXOpeningElement))
+    if (JSXOpeningFragment != null) __obj.updateDynamic("JSXOpeningFragment")(js.Any.fromFunction1(JSXOpeningFragment))
+    if (JSXSpreadAttribute != null) __obj.updateDynamic("JSXSpreadAttribute")(js.Any.fromFunction1(JSXSpreadAttribute))
+    if (JSXSpreadChild != null) __obj.updateDynamic("JSXSpreadChild")(js.Any.fromFunction1(JSXSpreadChild))
+    if (JSXText != null) __obj.updateDynamic("JSXText")(js.Any.fromFunction1(JSXText))
+    if (LabeledStatement != null) __obj.updateDynamic("LabeledStatement")(js.Any.fromFunction1(LabeledStatement))
+    if (LogicalExpression != null) __obj.updateDynamic("LogicalExpression")(js.Any.fromFunction1(LogicalExpression))
+    if (MemberExpression != null) __obj.updateDynamic("MemberExpression")(js.Any.fromFunction1(MemberExpression))
+    if (MetaProperty != null) __obj.updateDynamic("MetaProperty")(js.Any.fromFunction1(MetaProperty))
+    if (MethodDefinition != null) __obj.updateDynamic("MethodDefinition")(js.Any.fromFunction1(MethodDefinition))
+    if (NewExpression != null) __obj.updateDynamic("NewExpression")(js.Any.fromFunction1(NewExpression))
+    if (ObjectExpression != null) __obj.updateDynamic("ObjectExpression")(js.Any.fromFunction1(ObjectExpression))
+    if (ObjectPattern != null) __obj.updateDynamic("ObjectPattern")(js.Any.fromFunction1(ObjectPattern))
+    if (Program != null) __obj.updateDynamic("Program")(js.Any.fromFunction1(Program))
+    if (Property != null) __obj.updateDynamic("Property")(js.Any.fromFunction1(Property))
+    if (RestElement != null) __obj.updateDynamic("RestElement")(js.Any.fromFunction1(RestElement))
+    if (ReturnStatement != null) __obj.updateDynamic("ReturnStatement")(js.Any.fromFunction1(ReturnStatement))
+    if (SequenceExpression != null) __obj.updateDynamic("SequenceExpression")(js.Any.fromFunction1(SequenceExpression))
+    if (SpreadElement != null) __obj.updateDynamic("SpreadElement")(js.Any.fromFunction1(SpreadElement))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (Super != null) __obj.updateDynamic("Super")(Super)
-    if (SwitchCase != null) __obj.updateDynamic("SwitchCase")(SwitchCase)
-    if (SwitchStatement != null) __obj.updateDynamic("SwitchStatement")(SwitchStatement)
-    if (TSAbstractKeyword != null) __obj.updateDynamic("TSAbstractKeyword")(TSAbstractKeyword)
-    if (TSAbstractMethodDefinition != null) __obj.updateDynamic("TSAbstractMethodDefinition")(TSAbstractMethodDefinition)
-    if (TSAnyKeyword != null) __obj.updateDynamic("TSAnyKeyword")(TSAnyKeyword)
-    if (TSArrayType != null) __obj.updateDynamic("TSArrayType")(TSArrayType)
-    if (TSAsExpression != null) __obj.updateDynamic("TSAsExpression")(TSAsExpression)
-    if (TSAsyncKeyword != null) __obj.updateDynamic("TSAsyncKeyword")(TSAsyncKeyword)
-    if (TSBigIntKeyword != null) __obj.updateDynamic("TSBigIntKeyword")(TSBigIntKeyword)
-    if (TSBooleanKeyword != null) __obj.updateDynamic("TSBooleanKeyword")(TSBooleanKeyword)
-    if (TSCallSignatureDeclaration != null) __obj.updateDynamic("TSCallSignatureDeclaration")(TSCallSignatureDeclaration)
-    if (TSConditionalType != null) __obj.updateDynamic("TSConditionalType")(TSConditionalType)
-    if (TSConstructSignatureDeclaration != null) __obj.updateDynamic("TSConstructSignatureDeclaration")(TSConstructSignatureDeclaration)
-    if (TSDeclareFunction != null) __obj.updateDynamic("TSDeclareFunction")(TSDeclareFunction)
-    if (TSDeclareKeyword != null) __obj.updateDynamic("TSDeclareKeyword")(TSDeclareKeyword)
-    if (TSEnumDeclaration != null) __obj.updateDynamic("TSEnumDeclaration")(TSEnumDeclaration)
-    if (TSEnumMember != null) __obj.updateDynamic("TSEnumMember")(TSEnumMember)
-    if (TSExportAssignment != null) __obj.updateDynamic("TSExportAssignment")(TSExportAssignment)
-    if (TSExportKeyword != null) __obj.updateDynamic("TSExportKeyword")(TSExportKeyword)
-    if (TSExternalModuleReference != null) __obj.updateDynamic("TSExternalModuleReference")(TSExternalModuleReference)
-    if (TSImportEqualsDeclaration != null) __obj.updateDynamic("TSImportEqualsDeclaration")(TSImportEqualsDeclaration)
-    if (TSImportType != null) __obj.updateDynamic("TSImportType")(TSImportType)
-    if (TSIndexSignature != null) __obj.updateDynamic("TSIndexSignature")(TSIndexSignature)
-    if (TSIndexedAccessType != null) __obj.updateDynamic("TSIndexedAccessType")(TSIndexedAccessType)
-    if (TSInferType != null) __obj.updateDynamic("TSInferType")(TSInferType)
-    if (TSInterfaceBody != null) __obj.updateDynamic("TSInterfaceBody")(TSInterfaceBody)
-    if (TSInterfaceDeclaration != null) __obj.updateDynamic("TSInterfaceDeclaration")(TSInterfaceDeclaration)
-    if (TSIntersectionType != null) __obj.updateDynamic("TSIntersectionType")(TSIntersectionType)
-    if (TSLiteralType != null) __obj.updateDynamic("TSLiteralType")(TSLiteralType)
-    if (TSMappedType != null) __obj.updateDynamic("TSMappedType")(TSMappedType)
-    if (TSMethodSignature != null) __obj.updateDynamic("TSMethodSignature")(TSMethodSignature)
-    if (TSModuleBlock != null) __obj.updateDynamic("TSModuleBlock")(TSModuleBlock)
-    if (TSModuleDeclaration != null) __obj.updateDynamic("TSModuleDeclaration")(TSModuleDeclaration)
-    if (TSNamespaceExportDeclaration != null) __obj.updateDynamic("TSNamespaceExportDeclaration")(TSNamespaceExportDeclaration)
-    if (TSNeverKeyword != null) __obj.updateDynamic("TSNeverKeyword")(TSNeverKeyword)
-    if (TSNonNullExpression != null) __obj.updateDynamic("TSNonNullExpression")(TSNonNullExpression)
-    if (TSNullKeyword != null) __obj.updateDynamic("TSNullKeyword")(TSNullKeyword)
-    if (TSNumberKeyword != null) __obj.updateDynamic("TSNumberKeyword")(TSNumberKeyword)
-    if (TSObjectKeyword != null) __obj.updateDynamic("TSObjectKeyword")(TSObjectKeyword)
-    if (TSOptionalType != null) __obj.updateDynamic("TSOptionalType")(TSOptionalType)
-    if (TSParameterProperty != null) __obj.updateDynamic("TSParameterProperty")(TSParameterProperty)
-    if (TSParenthesizedType != null) __obj.updateDynamic("TSParenthesizedType")(TSParenthesizedType)
-    if (TSPrivateKeyword != null) __obj.updateDynamic("TSPrivateKeyword")(TSPrivateKeyword)
-    if (TSPropertySignature != null) __obj.updateDynamic("TSPropertySignature")(TSPropertySignature)
-    if (TSProtectedKeyword != null) __obj.updateDynamic("TSProtectedKeyword")(TSProtectedKeyword)
-    if (TSPublicKeyword != null) __obj.updateDynamic("TSPublicKeyword")(TSPublicKeyword)
-    if (TSQualifiedName != null) __obj.updateDynamic("TSQualifiedName")(TSQualifiedName)
-    if (TSReadonlyKeyword != null) __obj.updateDynamic("TSReadonlyKeyword")(TSReadonlyKeyword)
-    if (TSRestType != null) __obj.updateDynamic("TSRestType")(TSRestType)
-    if (TSStaticKeyword != null) __obj.updateDynamic("TSStaticKeyword")(TSStaticKeyword)
-    if (TSStringKeyword != null) __obj.updateDynamic("TSStringKeyword")(TSStringKeyword)
-    if (TSSymbolKeyword != null) __obj.updateDynamic("TSSymbolKeyword")(TSSymbolKeyword)
-    if (TSThisType != null) __obj.updateDynamic("TSThisType")(TSThisType)
-    if (TSTupleType != null) __obj.updateDynamic("TSTupleType")(TSTupleType)
-    if (TSTypeAliasDeclaration != null) __obj.updateDynamic("TSTypeAliasDeclaration")(TSTypeAliasDeclaration)
-    if (TSTypeAnnotation != null) __obj.updateDynamic("TSTypeAnnotation")(TSTypeAnnotation)
-    if (TSTypeAssertion != null) __obj.updateDynamic("TSTypeAssertion")(TSTypeAssertion)
-    if (TSTypeLiteral != null) __obj.updateDynamic("TSTypeLiteral")(TSTypeLiteral)
-    if (TSTypeOperator != null) __obj.updateDynamic("TSTypeOperator")(TSTypeOperator)
-    if (TSTypeParameter != null) __obj.updateDynamic("TSTypeParameter")(TSTypeParameter)
-    if (TSTypeParameterDeclaration != null) __obj.updateDynamic("TSTypeParameterDeclaration")(TSTypeParameterDeclaration)
-    if (TSTypeParameterInstantiation != null) __obj.updateDynamic("TSTypeParameterInstantiation")(TSTypeParameterInstantiation)
-    if (TSTypePredicate != null) __obj.updateDynamic("TSTypePredicate")(TSTypePredicate)
-    if (TSTypeQuery != null) __obj.updateDynamic("TSTypeQuery")(TSTypeQuery)
-    if (TSTypeReference != null) __obj.updateDynamic("TSTypeReference")(TSTypeReference)
-    if (TSUndefinedKeyword != null) __obj.updateDynamic("TSUndefinedKeyword")(TSUndefinedKeyword)
-    if (TSUnionType != null) __obj.updateDynamic("TSUnionType")(TSUnionType)
-    if (TSUnknownKeyword != null) __obj.updateDynamic("TSUnknownKeyword")(TSUnknownKeyword)
-    if (TSVoidKeyword != null) __obj.updateDynamic("TSVoidKeyword")(TSVoidKeyword)
-    if (TaggedTemplateExpression != null) __obj.updateDynamic("TaggedTemplateExpression")(TaggedTemplateExpression)
-    if (TemplateElement != null) __obj.updateDynamic("TemplateElement")(TemplateElement)
-    if (TemplateLiteral != null) __obj.updateDynamic("TemplateLiteral")(TemplateLiteral)
-    if (ThisExpression != null) __obj.updateDynamic("ThisExpression")(ThisExpression)
-    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(ThrowStatement)
-    if (Token != null) __obj.updateDynamic("Token")(Token)
-    if (TryStatement != null) __obj.updateDynamic("TryStatement")(TryStatement)
-    if (UnaryExpression != null) __obj.updateDynamic("UnaryExpression")(UnaryExpression)
-    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression)
-    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(VariableDeclaration)
-    if (VariableDeclarator != null) __obj.updateDynamic("VariableDeclarator")(VariableDeclarator)
-    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(WhileStatement)
-    if (WithStatement != null) __obj.updateDynamic("WithStatement")(WithStatement)
-    if (YieldExpression != null) __obj.updateDynamic("YieldExpression")(YieldExpression)
+    if (Super != null) __obj.updateDynamic("Super")(js.Any.fromFunction1(Super))
+    if (SwitchCase != null) __obj.updateDynamic("SwitchCase")(js.Any.fromFunction1(SwitchCase))
+    if (SwitchStatement != null) __obj.updateDynamic("SwitchStatement")(js.Any.fromFunction1(SwitchStatement))
+    if (TSAbstractKeyword != null) __obj.updateDynamic("TSAbstractKeyword")(js.Any.fromFunction1(TSAbstractKeyword))
+    if (TSAbstractMethodDefinition != null) __obj.updateDynamic("TSAbstractMethodDefinition")(js.Any.fromFunction1(TSAbstractMethodDefinition))
+    if (TSAnyKeyword != null) __obj.updateDynamic("TSAnyKeyword")(js.Any.fromFunction1(TSAnyKeyword))
+    if (TSArrayType != null) __obj.updateDynamic("TSArrayType")(js.Any.fromFunction1(TSArrayType))
+    if (TSAsExpression != null) __obj.updateDynamic("TSAsExpression")(js.Any.fromFunction1(TSAsExpression))
+    if (TSAsyncKeyword != null) __obj.updateDynamic("TSAsyncKeyword")(js.Any.fromFunction1(TSAsyncKeyword))
+    if (TSBigIntKeyword != null) __obj.updateDynamic("TSBigIntKeyword")(js.Any.fromFunction1(TSBigIntKeyword))
+    if (TSBooleanKeyword != null) __obj.updateDynamic("TSBooleanKeyword")(js.Any.fromFunction1(TSBooleanKeyword))
+    if (TSCallSignatureDeclaration != null) __obj.updateDynamic("TSCallSignatureDeclaration")(js.Any.fromFunction1(TSCallSignatureDeclaration))
+    if (TSConditionalType != null) __obj.updateDynamic("TSConditionalType")(js.Any.fromFunction1(TSConditionalType))
+    if (TSConstructSignatureDeclaration != null) __obj.updateDynamic("TSConstructSignatureDeclaration")(js.Any.fromFunction1(TSConstructSignatureDeclaration))
+    if (TSDeclareFunction != null) __obj.updateDynamic("TSDeclareFunction")(js.Any.fromFunction1(TSDeclareFunction))
+    if (TSDeclareKeyword != null) __obj.updateDynamic("TSDeclareKeyword")(js.Any.fromFunction1(TSDeclareKeyword))
+    if (TSEnumDeclaration != null) __obj.updateDynamic("TSEnumDeclaration")(js.Any.fromFunction1(TSEnumDeclaration))
+    if (TSEnumMember != null) __obj.updateDynamic("TSEnumMember")(js.Any.fromFunction1(TSEnumMember))
+    if (TSExportAssignment != null) __obj.updateDynamic("TSExportAssignment")(js.Any.fromFunction1(TSExportAssignment))
+    if (TSExportKeyword != null) __obj.updateDynamic("TSExportKeyword")(js.Any.fromFunction1(TSExportKeyword))
+    if (TSExternalModuleReference != null) __obj.updateDynamic("TSExternalModuleReference")(js.Any.fromFunction1(TSExternalModuleReference))
+    if (TSImportEqualsDeclaration != null) __obj.updateDynamic("TSImportEqualsDeclaration")(js.Any.fromFunction1(TSImportEqualsDeclaration))
+    if (TSImportType != null) __obj.updateDynamic("TSImportType")(js.Any.fromFunction1(TSImportType))
+    if (TSIndexSignature != null) __obj.updateDynamic("TSIndexSignature")(js.Any.fromFunction1(TSIndexSignature))
+    if (TSIndexedAccessType != null) __obj.updateDynamic("TSIndexedAccessType")(js.Any.fromFunction1(TSIndexedAccessType))
+    if (TSInferType != null) __obj.updateDynamic("TSInferType")(js.Any.fromFunction1(TSInferType))
+    if (TSInterfaceBody != null) __obj.updateDynamic("TSInterfaceBody")(js.Any.fromFunction1(TSInterfaceBody))
+    if (TSInterfaceDeclaration != null) __obj.updateDynamic("TSInterfaceDeclaration")(js.Any.fromFunction1(TSInterfaceDeclaration))
+    if (TSIntersectionType != null) __obj.updateDynamic("TSIntersectionType")(js.Any.fromFunction1(TSIntersectionType))
+    if (TSLiteralType != null) __obj.updateDynamic("TSLiteralType")(js.Any.fromFunction1(TSLiteralType))
+    if (TSMappedType != null) __obj.updateDynamic("TSMappedType")(js.Any.fromFunction1(TSMappedType))
+    if (TSMethodSignature != null) __obj.updateDynamic("TSMethodSignature")(js.Any.fromFunction1(TSMethodSignature))
+    if (TSModuleBlock != null) __obj.updateDynamic("TSModuleBlock")(js.Any.fromFunction1(TSModuleBlock))
+    if (TSModuleDeclaration != null) __obj.updateDynamic("TSModuleDeclaration")(js.Any.fromFunction1(TSModuleDeclaration))
+    if (TSNamespaceExportDeclaration != null) __obj.updateDynamic("TSNamespaceExportDeclaration")(js.Any.fromFunction1(TSNamespaceExportDeclaration))
+    if (TSNeverKeyword != null) __obj.updateDynamic("TSNeverKeyword")(js.Any.fromFunction1(TSNeverKeyword))
+    if (TSNonNullExpression != null) __obj.updateDynamic("TSNonNullExpression")(js.Any.fromFunction1(TSNonNullExpression))
+    if (TSNullKeyword != null) __obj.updateDynamic("TSNullKeyword")(js.Any.fromFunction1(TSNullKeyword))
+    if (TSNumberKeyword != null) __obj.updateDynamic("TSNumberKeyword")(js.Any.fromFunction1(TSNumberKeyword))
+    if (TSObjectKeyword != null) __obj.updateDynamic("TSObjectKeyword")(js.Any.fromFunction1(TSObjectKeyword))
+    if (TSOptionalType != null) __obj.updateDynamic("TSOptionalType")(js.Any.fromFunction1(TSOptionalType))
+    if (TSParameterProperty != null) __obj.updateDynamic("TSParameterProperty")(js.Any.fromFunction1(TSParameterProperty))
+    if (TSParenthesizedType != null) __obj.updateDynamic("TSParenthesizedType")(js.Any.fromFunction1(TSParenthesizedType))
+    if (TSPrivateKeyword != null) __obj.updateDynamic("TSPrivateKeyword")(js.Any.fromFunction1(TSPrivateKeyword))
+    if (TSPropertySignature != null) __obj.updateDynamic("TSPropertySignature")(js.Any.fromFunction1(TSPropertySignature))
+    if (TSProtectedKeyword != null) __obj.updateDynamic("TSProtectedKeyword")(js.Any.fromFunction1(TSProtectedKeyword))
+    if (TSPublicKeyword != null) __obj.updateDynamic("TSPublicKeyword")(js.Any.fromFunction1(TSPublicKeyword))
+    if (TSQualifiedName != null) __obj.updateDynamic("TSQualifiedName")(js.Any.fromFunction1(TSQualifiedName))
+    if (TSReadonlyKeyword != null) __obj.updateDynamic("TSReadonlyKeyword")(js.Any.fromFunction1(TSReadonlyKeyword))
+    if (TSRestType != null) __obj.updateDynamic("TSRestType")(js.Any.fromFunction1(TSRestType))
+    if (TSStaticKeyword != null) __obj.updateDynamic("TSStaticKeyword")(js.Any.fromFunction1(TSStaticKeyword))
+    if (TSStringKeyword != null) __obj.updateDynamic("TSStringKeyword")(js.Any.fromFunction1(TSStringKeyword))
+    if (TSSymbolKeyword != null) __obj.updateDynamic("TSSymbolKeyword")(js.Any.fromFunction1(TSSymbolKeyword))
+    if (TSThisType != null) __obj.updateDynamic("TSThisType")(js.Any.fromFunction1(TSThisType))
+    if (TSTupleType != null) __obj.updateDynamic("TSTupleType")(js.Any.fromFunction1(TSTupleType))
+    if (TSTypeAliasDeclaration != null) __obj.updateDynamic("TSTypeAliasDeclaration")(js.Any.fromFunction1(TSTypeAliasDeclaration))
+    if (TSTypeAnnotation != null) __obj.updateDynamic("TSTypeAnnotation")(js.Any.fromFunction1(TSTypeAnnotation))
+    if (TSTypeAssertion != null) __obj.updateDynamic("TSTypeAssertion")(js.Any.fromFunction1(TSTypeAssertion))
+    if (TSTypeLiteral != null) __obj.updateDynamic("TSTypeLiteral")(js.Any.fromFunction1(TSTypeLiteral))
+    if (TSTypeOperator != null) __obj.updateDynamic("TSTypeOperator")(js.Any.fromFunction1(TSTypeOperator))
+    if (TSTypeParameter != null) __obj.updateDynamic("TSTypeParameter")(js.Any.fromFunction1(TSTypeParameter))
+    if (TSTypeParameterDeclaration != null) __obj.updateDynamic("TSTypeParameterDeclaration")(js.Any.fromFunction1(TSTypeParameterDeclaration))
+    if (TSTypeParameterInstantiation != null) __obj.updateDynamic("TSTypeParameterInstantiation")(js.Any.fromFunction1(TSTypeParameterInstantiation))
+    if (TSTypePredicate != null) __obj.updateDynamic("TSTypePredicate")(js.Any.fromFunction1(TSTypePredicate))
+    if (TSTypeQuery != null) __obj.updateDynamic("TSTypeQuery")(js.Any.fromFunction1(TSTypeQuery))
+    if (TSTypeReference != null) __obj.updateDynamic("TSTypeReference")(js.Any.fromFunction1(TSTypeReference))
+    if (TSUndefinedKeyword != null) __obj.updateDynamic("TSUndefinedKeyword")(js.Any.fromFunction1(TSUndefinedKeyword))
+    if (TSUnionType != null) __obj.updateDynamic("TSUnionType")(js.Any.fromFunction1(TSUnionType))
+    if (TSUnknownKeyword != null) __obj.updateDynamic("TSUnknownKeyword")(js.Any.fromFunction1(TSUnknownKeyword))
+    if (TSVoidKeyword != null) __obj.updateDynamic("TSVoidKeyword")(js.Any.fromFunction1(TSVoidKeyword))
+    if (TaggedTemplateExpression != null) __obj.updateDynamic("TaggedTemplateExpression")(js.Any.fromFunction1(TaggedTemplateExpression))
+    if (TemplateElement != null) __obj.updateDynamic("TemplateElement")(js.Any.fromFunction1(TemplateElement))
+    if (TemplateLiteral != null) __obj.updateDynamic("TemplateLiteral")(js.Any.fromFunction1(TemplateLiteral))
+    if (ThisExpression != null) __obj.updateDynamic("ThisExpression")(js.Any.fromFunction1(ThisExpression))
+    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(js.Any.fromFunction1(ThrowStatement))
+    if (Token != null) __obj.updateDynamic("Token")(js.Any.fromFunction1(Token))
+    if (TryStatement != null) __obj.updateDynamic("TryStatement")(js.Any.fromFunction1(TryStatement))
+    if (UnaryExpression != null) __obj.updateDynamic("UnaryExpression")(js.Any.fromFunction1(UnaryExpression))
+    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(js.Any.fromFunction1(UpdateExpression))
+    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(js.Any.fromFunction1(VariableDeclaration))
+    if (VariableDeclarator != null) __obj.updateDynamic("VariableDeclarator")(js.Any.fromFunction1(VariableDeclarator))
+    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(js.Any.fromFunction1(WhileStatement))
+    if (WithStatement != null) __obj.updateDynamic("WithStatement")(js.Any.fromFunction1(WithStatement))
+    if (YieldExpression != null) __obj.updateDynamic("YieldExpression")(js.Any.fromFunction1(YieldExpression))
     __obj.asInstanceOf[RuleListener]
   }
 }

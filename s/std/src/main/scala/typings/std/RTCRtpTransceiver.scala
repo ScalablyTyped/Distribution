@@ -20,9 +20,5 @@ trait RTCRtpTransceiver extends js.Object {
 
 @JSGlobal("RTCRtpTransceiver")
 @js.native
-class RTCRtpTransceiverCls () extends RTCRtpTransceiver
-
-@JSGlobal("RTCRtpTransceiver")
-@js.native
 object RTCRtpTransceiver extends Instantiable0[RTCRtpTransceiver]
 

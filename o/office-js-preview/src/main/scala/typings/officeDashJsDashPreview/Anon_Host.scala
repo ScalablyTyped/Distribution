@@ -1,7 +1,7 @@
 package typings.officeDashJsDashPreview
 
-import typings.officeDashJsDashPreview.OfficeNs.HostType
-import typings.officeDashJsDashPreview.OfficeNs.PlatformType
+import typings.officeDashJsDashPreview.Office.HostType
+import typings.officeDashJsDashPreview.Office.PlatformType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

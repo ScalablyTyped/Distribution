@@ -1,5 +1,6 @@
 package typings.hashset
 
+import org.scalablytyped.runtime.TopLevel
 import typings.hashtable.IHashtableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,4 +40,8 @@ class HashSet[TValue] () extends IHashSet[TValue] {
   /* CompleteClass */
   override def values(): js.Array[TValue] = js.native
 }
+
+@JSGlobal("HashSet")
+@js.native
+object HashSet extends TopLevel[IHashSetStatic]
 

@@ -1,5 +1,7 @@
 package typings.reactDashSortableDashHoc.reactDashSortableDashHocMod
 
+import typings.react.reactMod.ReactElement
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,16 +32,16 @@ object SortableContainerProps {
   def apply(
     axis: Axis = null,
     distance: Int | Double = null,
-    getContainer: ContainerGetter = null,
+    getContainer: /* element */ ReactElement => HTMLElement = null,
     getHelperDimensions: /* sort */ SortStart => Dimensions = null,
     helperClass: String = null,
     hideSortableGhost: js.UndefOr[Boolean] = js.undefined,
     lockAxis: Axis = null,
     lockOffset: Offset | (js.Tuple2[Offset, Offset]) = null,
     lockToContainerEdges: js.UndefOr[Boolean] = js.undefined,
-    onSortEnd: SortEndHandler = null,
-    onSortMove: SortMoveHandler = null,
-    onSortStart: SortStartHandler = null,
+    onSortEnd: (/* sort */ SortEnd, /* event */ SortEvent) => Unit = null,
+    onSortMove: /* event */ SortEvent => Unit = null,
+    onSortStart: (/* sort */ SortStart, /* event */ SortEvent) => Unit = null,
     pressDelay: Int | Double = null,
     pressThreshold: Int | Double = null,
     shouldCancelStart: /* event */ SortEvent | SortEventWithTag => Boolean = null,
@@ -50,16 +52,16 @@ object SortableContainerProps {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
     if (getHelperDimensions != null) __obj.updateDynamic("getHelperDimensions")(js.Any.fromFunction1(getHelperDimensions))
     if (helperClass != null) __obj.updateDynamic("helperClass")(helperClass)
     if (!js.isUndefined(hideSortableGhost)) __obj.updateDynamic("hideSortableGhost")(hideSortableGhost)
     if (lockAxis != null) __obj.updateDynamic("lockAxis")(lockAxis)
     if (lockOffset != null) __obj.updateDynamic("lockOffset")(lockOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(lockToContainerEdges)) __obj.updateDynamic("lockToContainerEdges")(lockToContainerEdges)
-    if (onSortEnd != null) __obj.updateDynamic("onSortEnd")(onSortEnd)
-    if (onSortMove != null) __obj.updateDynamic("onSortMove")(onSortMove)
-    if (onSortStart != null) __obj.updateDynamic("onSortStart")(onSortStart)
+    if (onSortEnd != null) __obj.updateDynamic("onSortEnd")(js.Any.fromFunction2(onSortEnd))
+    if (onSortMove != null) __obj.updateDynamic("onSortMove")(js.Any.fromFunction1(onSortMove))
+    if (onSortStart != null) __obj.updateDynamic("onSortStart")(js.Any.fromFunction2(onSortStart))
     if (pressDelay != null) __obj.updateDynamic("pressDelay")(pressDelay.asInstanceOf[js.Any])
     if (pressThreshold != null) __obj.updateDynamic("pressThreshold")(pressThreshold.asInstanceOf[js.Any])
     if (shouldCancelStart != null) __obj.updateDynamic("shouldCancelStart")(js.Any.fromFunction1(shouldCancelStart))

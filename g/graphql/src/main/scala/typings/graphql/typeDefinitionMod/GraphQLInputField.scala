@@ -19,18 +19,19 @@ trait GraphQLInputField extends js.Object {
 object GraphQLInputField {
   @scala.inline
   def apply(
-    extensions: Maybe[Record[String, _]],
     name: String,
     `type`: GraphQLInputType,
     astNode: Maybe[InputValueDefinitionNode] = null,
     defaultValue: js.Any = null,
-    description: Maybe[String] = null
+    description: Maybe[String] = null,
+    extensions: Maybe[Record[String, _]] = null
   ): GraphQLInputField = {
-    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLInputField]
   }
 }

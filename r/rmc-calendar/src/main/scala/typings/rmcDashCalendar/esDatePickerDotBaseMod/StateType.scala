@@ -1,6 +1,6 @@
 package typings.rmcDashCalendar.esDatePickerDotBaseMod
 
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.MonthData
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.MonthData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

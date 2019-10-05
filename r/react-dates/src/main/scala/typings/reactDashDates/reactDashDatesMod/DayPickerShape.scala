@@ -1,8 +1,8 @@
 package typings.reactDashDates.reactDashDatesMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashDates.Anon_CurrentMonth
-import typings.reactDashDates.reactDashDatesMod.momentPropTypesNs.momentObj
+import typings.reactDashDates.reactDashDatesMod.momentPropTypes.momentObj
 import typings.reactDashDates.reactDashDatesNumbers.`0`
 import typings.reactDashDates.reactDashDatesNumbers.`1`
 import typings.reactDashDates.reactDashDatesNumbers.`2`

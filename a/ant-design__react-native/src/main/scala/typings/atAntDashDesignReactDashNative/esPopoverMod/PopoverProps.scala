@@ -24,17 +24,18 @@ trait PopoverProps extends WithThemeStyles[PopoverStyle] {
 object PopoverProps {
   @scala.inline
   def apply(
-    overlay: ReactNode,
     disabled: js.UndefOr[Boolean] = js.undefined,
     onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit = null,
+    overlay: ReactNode = null,
     placement: Placement | auto = null,
     renderOverlayComponent: /* node */ ReactNode => ReactNode = null,
     styles: Partial[PopoverStyle] = null,
     triggerStyle: StyleProp[ViewStyle] = null
   ): PopoverProps = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (renderOverlayComponent != null) __obj.updateDynamic("renderOverlayComponent")(js.Any.fromFunction1(renderOverlayComponent))
     if (styles != null) __obj.updateDynamic("styles")(styles)

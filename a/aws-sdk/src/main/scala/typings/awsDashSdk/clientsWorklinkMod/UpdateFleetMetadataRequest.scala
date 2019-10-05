@@ -24,7 +24,7 @@ object UpdateFleetMetadataRequest {
   def apply(
     FleetArn: FleetArn,
     DisplayName: DisplayName = null,
-    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateFleetMetadataRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn)
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)

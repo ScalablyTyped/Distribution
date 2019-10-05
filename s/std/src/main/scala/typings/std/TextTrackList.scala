@@ -48,9 +48,5 @@ trait TextTrackList
 
 @JSGlobal("TextTrackList")
 @js.native
-class TextTrackListCls () extends TextTrackList
-
-@JSGlobal("TextTrackList")
-@js.native
 object TextTrackList extends Instantiable0[TextTrackList]
 

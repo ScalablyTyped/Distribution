@@ -1,6 +1,7 @@
 package typings.glob.globMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.glob.Anon_IsDirectory
 import typings.glob.globNumbers.`false`
 import typings.glob.globStrings.DIR
@@ -32,4 +33,8 @@ class GlobSync protected () extends IGlobBase {
   /* CompleteClass */
   override var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
 }
+
+@JSImport("glob", "GlobSync")
+@js.native
+object GlobSync extends TopLevel[IGlobSyncStatic]
 

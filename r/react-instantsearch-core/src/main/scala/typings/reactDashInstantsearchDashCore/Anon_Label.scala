@@ -1,6 +1,7 @@
 package typings.reactDashInstantsearchDashCore
 
 import typings.reactDashInstantsearchDashCore.reactDashInstantsearchDashCoreMod.RefinementValue
+import typings.reactDashInstantsearchDashCore.reactDashInstantsearchDashCoreMod.SearchState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ trait Anon_Label extends js.Object {
 
 object Anon_Label {
   @scala.inline
-  def apply(label: String, value: RefinementValue): Anon_Label = {
-    val __obj = js.Dynamic.literal(label = label, value = value)
+  def apply(label: String, value: /* searchState */ SearchState => SearchState): Anon_Label = {
+    val __obj = js.Dynamic.literal(label = label, value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[Anon_Label]
   }

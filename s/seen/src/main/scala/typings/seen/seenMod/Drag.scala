@@ -3,7 +3,7 @@ package typings.seen.seenMod
 import typings.seen.Anon_Inertia
 import typings.seen.Anon_InertiaBoolean
 import typings.seen.Anon_Offset
-import typings.seen.seenMod.EventsNs.Dispatcher
+import typings.seen.seenMod.Events.Dispatcher
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

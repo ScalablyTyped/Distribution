@@ -1,14 +1,24 @@
 package typings.sizzle.sizzleMod
 
-import typings.sizzle.sizzleMod.SelectorsNs.AttrHandleFunctions
-import typings.sizzle.sizzleMod.SelectorsNs.CreatePseudoFunction
-import typings.sizzle.sizzleMod.SelectorsNs.FilterFunctions
-import typings.sizzle.sizzleMod.SelectorsNs.FindFunctions
-import typings.sizzle.sizzleMod.SelectorsNs.Matches
-import typings.sizzle.sizzleMod.SelectorsNs.PreFilterFunctions
-import typings.sizzle.sizzleMod.SelectorsNs.PseudoFunction
-import typings.sizzle.sizzleMod.SelectorsNs.PseudoFunctions
-import typings.sizzle.sizzleMod.SelectorsNs.SetFilterFunctions
+import org.scalablytyped.runtime.StringDictionary
+import typings.sizzle.sizzleMod.Selectors.AttrHandleFunction
+import typings.sizzle.sizzleMod.Selectors.AttrHandleFunctions
+import typings.sizzle.sizzleMod.Selectors.CreatePseudoFunction
+import typings.sizzle.sizzleMod.Selectors.FilterFunction
+import typings.sizzle.sizzleMod.Selectors.FilterFunctions
+import typings.sizzle.sizzleMod.Selectors.FindFunction
+import typings.sizzle.sizzleMod.Selectors.FindFunctions
+import typings.sizzle.sizzleMod.Selectors.Matches
+import typings.sizzle.sizzleMod.Selectors.PreFilterFunction
+import typings.sizzle.sizzleMod.Selectors.PreFilterFunctions
+import typings.sizzle.sizzleMod.Selectors.PseudoFunction
+import typings.sizzle.sizzleMod.Selectors.PseudoFunctions
+import typings.sizzle.sizzleMod.Selectors.SetFilterFunction
+import typings.sizzle.sizzleMod.Selectors.SetFilterFunctions
+import typings.std.Document
+import typings.std.Element
+import typings.std.RegExp
+import typings.std.RegExpMatchArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,22 +35,32 @@ trait Selectors extends js.Object {
   def createPseudo(fn: CreatePseudoFunction): PseudoFunction
 }
 
-object Selectors {
-  @scala.inline
-  def apply(
-    attrHandle: AttrHandleFunctions,
-    cacheLength: Double,
-    createPseudo: CreatePseudoFunction => PseudoFunction,
-    filter: FilterFunctions,
-    find: FindFunctions,
-    `match`: Matches,
-    preFilter: PreFilterFunctions,
-    pseudos: PseudoFunctions,
-    setFilters: SetFilterFunctions
-  ): Selectors = {
-    val __obj = js.Dynamic.literal(attrHandle = attrHandle, cacheLength = cacheLength, createPseudo = js.Any.fromFunction1(createPseudo), filter = filter, find = find, preFilter = preFilter, pseudos = pseudos, setFilters = setFilters)
-    __obj.updateDynamic("match")(`match`)
-    __obj.asInstanceOf[Selectors]
-  }
+@JSImport("sizzle", "Selectors")
+@js.native
+object Selectors extends js.Object {
+  type AttrHandleFunction = js.Function3[/* elem */ js.Any, /* casePreservedName */ String, /* isXML */ Boolean, String]
+  type AttrHandleFunctions = StringDictionary[AttrHandleFunction]
+  type CreatePseudoFunction = js.Function1[/* repeated */ js.Any, PseudoFunction]
+  type FilterFunction = js.Function2[/* element */ String, /* repeated */ String, Boolean]
+  type FilterFunctions = StringDictionary[FilterFunction]
+  type FindFunction = js.Function3[
+    /* match */ RegExpMatchArray, 
+    /* context */ Element | Document, 
+    /* isXML */ Boolean, 
+    js.Array[Element] | Unit
+  ]
+  type FindFunctions = StringDictionary[FindFunction]
+  type Matches = StringDictionary[RegExp]
+  type PreFilterFunction = js.Function1[/* match */ RegExpMatchArray, js.Array[String]]
+  type PreFilterFunctions = StringDictionary[PreFilterFunction]
+  type PseudoFunction = js.Function1[/* elem */ Element, Boolean]
+  type PseudoFunctions = StringDictionary[PseudoFunction]
+  type SetFilterFunction = js.Function3[
+    /* elements */ js.Array[Element], 
+    /* argument */ Double, 
+    /* not */ Boolean, 
+    js.Array[Element]
+  ]
+  type SetFilterFunctions = StringDictionary[SetFilterFunction]
 }
 

@@ -1,15 +1,15 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.Bounds
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.DisplayInfo
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.DisplayInfoFlags
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.DisplayLayout
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.DisplayPropertiesInfo
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.Insets
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.MirrorModeInfo
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.MirrorModeInfoMixed
-import typings.chromeDashApps.chromeNs.systemNs.displayNs.TouchCalibrationPairs
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.system.display.Bounds
+import typings.chromeDashApps.chrome.system.display.DisplayInfo
+import typings.chromeDashApps.chrome.system.display.DisplayInfoFlags
+import typings.chromeDashApps.chrome.system.display.DisplayLayout
+import typings.chromeDashApps.chrome.system.display.DisplayPropertiesInfo
+import typings.chromeDashApps.chrome.system.display.Insets
+import typings.chromeDashApps.chrome.system.display.MirrorModeInfo
+import typings.chromeDashApps.chrome.system.display.MirrorModeInfoMixed
+import typings.chromeDashApps.chrome.system.display.TouchCalibrationPairs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

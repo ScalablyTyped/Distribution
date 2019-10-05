@@ -15,6 +15,22 @@ class Icon ()
 @JSImport("react-native-vector-icons/Icon", "Icon")
 @js.native
 object Icon extends js.Object {
+  @js.native
+  class Button ()
+    extends Component[IconButtonProps, js.Any, js.Any]
+  
+  @js.native
+  class TabBarItem ()
+    extends Component[TabBarItemIOSProps, js.Any, js.Any]
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends Component[TabBarItemIOSProps, js.Any, js.Any]
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends Component[ToolbarAndroidProps, js.Any, js.Any]
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

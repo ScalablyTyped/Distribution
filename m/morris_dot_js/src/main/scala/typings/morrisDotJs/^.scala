@@ -1,6 +1,6 @@
 package typings.morrisDotJs
 
-import typings.morrisDotJs.morrisNs.MorrisStatic
+import typings.morrisDotJs.morris.MorrisStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

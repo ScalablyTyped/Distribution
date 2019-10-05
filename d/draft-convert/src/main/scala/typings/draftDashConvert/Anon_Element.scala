@@ -13,8 +13,9 @@ trait Anon_Element extends _Tag {
 
 object Anon_Element {
   @scala.inline
-  def apply(element: ReactNode, empty: ReactNode = null): Anon_Element = {
-    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+  def apply(element: ReactNode = null, empty: ReactNode = null): Anon_Element = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Element]
   }

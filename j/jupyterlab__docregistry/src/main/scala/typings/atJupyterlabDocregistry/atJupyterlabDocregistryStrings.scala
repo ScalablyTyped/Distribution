@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocregistry
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.SaveState
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.SaveState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,15 +1,15 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.integer
-import typings.chromeDashApps.chromeNs.usbNs.ConfigDescriptor
-import typings.chromeDashApps.chromeNs.usbNs.ConnectionHandle
-import typings.chromeDashApps.chromeNs.usbNs.Device
-import typings.chromeDashApps.chromeNs.usbNs.DeviceEvent
-import typings.chromeDashApps.chromeNs.usbNs.GenericTransferInfo
-import typings.chromeDashApps.chromeNs.usbNs.InterfaceDescriptor
-import typings.chromeDashApps.chromeNs.usbNs.IsochronousTransferInfo
-import typings.chromeDashApps.chromeNs.usbNs.TransferInfo
-import typings.chromeDashApps.chromeNs.usbNs.TransferResultInfo
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.usb.ConfigDescriptor
+import typings.chromeDashApps.chrome.usb.ConnectionHandle
+import typings.chromeDashApps.chrome.usb.Device
+import typings.chromeDashApps.chrome.usb.DeviceEvent
+import typings.chromeDashApps.chrome.usb.GenericTransferInfo
+import typings.chromeDashApps.chrome.usb.InterfaceDescriptor
+import typings.chromeDashApps.chrome.usb.IsochronousTransferInfo
+import typings.chromeDashApps.chrome.usb.TransferInfo
+import typings.chromeDashApps.chrome.usb.TransferResultInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

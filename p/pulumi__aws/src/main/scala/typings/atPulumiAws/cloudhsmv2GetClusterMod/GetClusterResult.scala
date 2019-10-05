@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudhsmv2GetClusterMod
 
-import typings.atPulumiAws.typesOutputMod.cloudhsmv2Ns.GetClusterClusterCertificates
+import typings.atPulumiAws.typesOutputMod.cloudhsmv2.GetClusterClusterCertificates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

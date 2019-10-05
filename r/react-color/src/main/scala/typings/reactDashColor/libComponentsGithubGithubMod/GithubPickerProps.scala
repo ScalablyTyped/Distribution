@@ -3,7 +3,6 @@ package typings.reactDashColor.libComponentsGithubGithubMod
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.reactDashColor.reactDashColorMod.Color
-import typings.reactDashColor.reactDashColorMod.ColorChangeHandler
 import typings.reactDashColor.reactDashColorMod.ColorPickerProps
 import typings.reactDashColor.reactDashColorMod.ColorResult
 import typings.reactDashColor.reactDashColorStrings.`top-left`
@@ -27,8 +26,8 @@ object GithubPickerProps {
     color: Color = null,
     colors: js.Array[String] = null,
     key: Key = null,
-    onChange: ColorChangeHandler = null,
-    onChangeComplete: ColorChangeHandler = null,
+    onChange: /* color */ ColorResult => Unit = null,
+    onChangeComplete: /* color */ ColorResult => Unit = null,
     onSwatchHover: (/* color */ ColorResult, /* event */ MouseEvent) => Unit = null,
     ref: LegacyRef[GithubPicker] = null,
     triangle: hide | `top-left` | `top-right` = null,
@@ -38,8 +37,8 @@ object GithubPickerProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(onChangeComplete)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
     if (onSwatchHover != null) __obj.updateDynamic("onSwatchHover")(js.Any.fromFunction2(onSwatchHover))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (triangle != null) __obj.updateDynamic("triangle")(triangle.asInstanceOf[js.Any])

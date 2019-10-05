@@ -2,15 +2,15 @@ package typings.virtualDashDom
 
 import typings.std.Element
 import typings.std.Text
-import typings.virtualDashDom.VirtualDOMNs.Thunk
-import typings.virtualDashDom.VirtualDOMNs.VChild
-import typings.virtualDashDom.VirtualDOMNs.VNode
-import typings.virtualDashDom.VirtualDOMNs.VPatch
-import typings.virtualDashDom.VirtualDOMNs.VPatchOptions
-import typings.virtualDashDom.VirtualDOMNs.VText
-import typings.virtualDashDom.VirtualDOMNs.VTree
-import typings.virtualDashDom.VirtualDOMNs.Widget
-import typings.virtualDashDom.VirtualDOMNs.createProperties
+import typings.virtualDashDom.VirtualDOM.Thunk
+import typings.virtualDashDom.VirtualDOM.VChild
+import typings.virtualDashDom.VirtualDOM.VNode
+import typings.virtualDashDom.VirtualDOM.VPatch
+import typings.virtualDashDom.VirtualDOM.VPatchOptions
+import typings.virtualDashDom.VirtualDOM.VText
+import typings.virtualDashDom.VirtualDOM.VTree
+import typings.virtualDashDom.VirtualDOM.Widget
+import typings.virtualDashDom.VirtualDOM.createProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

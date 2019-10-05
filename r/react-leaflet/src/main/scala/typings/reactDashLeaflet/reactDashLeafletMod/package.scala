@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashLeafletMod {
-  import typings.leaflet.leafletMod.ControlNs.AttributionOptions
-  import typings.leaflet.leafletMod.ControlNs.ScaleOptions
-  import typings.leaflet.leafletMod.ControlNs.ZoomOptions
+  import typings.leaflet.leafletMod.Control.AttributionOptions
+  import typings.leaflet.leafletMod.Control.Layers
+  import typings.leaflet.leafletMod.Control.ScaleOptions
+  import typings.leaflet.leafletMod.Control.ZoomOptions
   import typings.leaflet.leafletMod.ControlOptions
   import typings.leaflet.leafletMod.Layer
   import typings.react.reactMod.ReactNode
@@ -20,6 +21,7 @@ package object reactDashLeafletMod {
   type Children = ReactNode | js.Array[ReactNode]
   type LatLng = typings.leaflet.leafletMod.LatLng | js.Array[Double] | js.Object
   type LatLngBounds = typings.leaflet.leafletMod.LatLngBounds | js.Array[LatLng]
+  type LayersControl[P /* <: LayersControlProps */, E /* <: Layers */] = LayersControl_[P, E]
   type LeafletEvents = MapEvents with MarkerEvents with TileLayerEvents with PathEvents with FeatureGroupEvents with LayersControlEvents
   type MapControlProps = Anon_Leaflet with ControlOptions
   type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]

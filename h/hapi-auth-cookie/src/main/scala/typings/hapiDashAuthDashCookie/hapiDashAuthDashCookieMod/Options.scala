@@ -1,5 +1,6 @@
 package typings.hapiDashAuthDashCookie.hapiDashAuthDashCookieMod
 
+import typings.hapi.hapiMod.Request
 import typings.hapi.hapiMod.ServerStateCookieOptions
 import typings.hapiDashAuthDashCookie.Anon_Name
 import scala.scalajs.js
@@ -56,7 +57,7 @@ object Options {
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     redirectTo: String | RedirectToFunction = null,
     requestDecoratorName: String = null,
-    validateFunc: ValidateFunction = null
+    validateFunc: (/* request */ js.UndefOr[Request], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (appendNext != null) __obj.updateDynamic("appendNext")(appendNext.asInstanceOf[js.Any])
@@ -64,7 +65,7 @@ object Options {
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
     if (requestDecoratorName != null) __obj.updateDynamic("requestDecoratorName")(requestDecoratorName)
-    if (validateFunc != null) __obj.updateDynamic("validateFunc")(validateFunc)
+    if (validateFunc != null) __obj.updateDynamic("validateFunc")(js.Any.fromFunction2(validateFunc))
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSliceSliceViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliceViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliceViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.SliceViewModel
+import typings.arcgisDashJsDashApi.__esri.SliceViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

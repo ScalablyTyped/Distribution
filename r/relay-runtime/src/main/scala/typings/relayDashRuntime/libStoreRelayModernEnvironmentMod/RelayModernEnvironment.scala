@@ -1,10 +1,8 @@
 package typings.relayDashRuntime.libStoreRelayModernEnvironmentMod
 
 import typings.relayDashRuntime.Anon_CacheConfig
-import typings.relayDashRuntime.Anon_CacheConfigOperation
+import typings.relayDashRuntime.Anon_Key
 import typings.relayDashRuntime.Anon_Operation
-import typings.relayDashRuntime.Anon_OperationOptimisticResponse
-import typings.relayDashRuntime.Anon_OperationSource
 import typings.relayDashRuntime.libNetworkRelayNetworkLoggerTransactionMod.LoggerTransactionConfig
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.Network
@@ -16,7 +14,6 @@ import typings.relayDashRuntime.libStoreRelayStoreTypesMod.Logger
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.NormalizationSelector
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.OptimisticResponseConfig
-import typings.relayDashRuntime.libStoreRelayStoreTypesMod.OptimisticUpdate
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.OptimisticUpdateFunction
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.SingularReaderSelector
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.Snapshot
@@ -31,14 +28,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class RelayModernEnvironment protected () extends Environment {
   def this(config: EnvironmentConfig) = this()
-  val configName: js.UndefOr[String | Null] = js.native
+  var configName: js.UndefOr[String | Null] = js.native
   /**
     * Apply an optimistic mutation response and/or updater. The mutation can be
     * reverted by calling `dispose()` on the returned value.
     */
   /* CompleteClass */
   override def applyMutation(optimisticConfig: OptimisticResponseConfig): Disposable = js.native
-  def applyUpdate(optimisticUpdate: OptimisticUpdate): Disposable = js.native
   /**
     * Apply an optimistic update to the environment. The mutation can be reverted
     * by calling `dispose()` on the returned value.
@@ -79,9 +75,7 @@ class RelayModernEnvironment protected () extends Environment {
     * the result is subscribed to: environment.execute({...}).subscribe({...}).
     */
   /* CompleteClass */
-  override def execute(config: Anon_CacheConfigOperation): RelayObservable[GraphQLResponse] = js.native
-  def execute(data: Anon_CacheConfig): RelayObservable[GraphQLResponse] = js.native
-  def executeMutation(hasOperationOptimisticResponseOptimisticUpdaterUpdaterUploadables: Anon_Operation): RelayObservable[GraphQLResponse] = js.native
+  override def execute(config: Anon_CacheConfig): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Mutation operation, the result of which is then normalized and
@@ -93,9 +87,7 @@ class RelayModernEnvironment protected () extends Environment {
     * environment.executeMutation({...}).subscribe({...}).
     */
   /* CompleteClass */
-  override def executeMutation(
-    hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: Anon_OperationOptimisticResponse
-  ): RelayObservable[GraphQLResponse] = js.native
+  override def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: Anon_Key): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Query or Subscription operation responses, the result of which is
@@ -106,12 +98,12 @@ class RelayModernEnvironment protected () extends Environment {
     * environment.executeWithSource({...}).subscribe({...}).
     */
   /* CompleteClass */
-  override def executeWithSource(hasOperationSource: Anon_OperationSource): RelayObservable[GraphQLResponse] = js.native
+  override def executeWithSource(hasOperationSource: Anon_Operation): RelayObservable[GraphQLResponse] = js.native
   /**
     * Get an instance of a logger
     */
   /* CompleteClass */
-  override def getLogger(config: LoggerTransactionConfig): Logger = js.native
+  override def getLogger(config: LoggerTransactionConfig): js.UndefOr[Logger | Null] = js.native
   /**
     * Get the environment's internal Network.
     */
@@ -134,7 +126,7 @@ class RelayModernEnvironment protected () extends Environment {
     */
   /* CompleteClass */
   override def lookup(selector: SingularReaderSelector): Snapshot = js.native
-  def replaceUpdate(update: OptimisticUpdate, newUpdate: OptimisticUpdate): Unit = js.native
+  def replaceUpdate(update: OptimisticUpdateFunction, newUpdate: OptimisticUpdateFunction): Unit = js.native
   /**
     * Ensure that all the records necessary to fulfill the given selector are
     * retained in-memory. The records will not be eligible for garbage collection
@@ -142,7 +134,7 @@ class RelayModernEnvironment protected () extends Environment {
     */
   /* CompleteClass */
   override def retain(selector: NormalizationSelector): Disposable = js.native
-  def revertUpdate(update: OptimisticUpdate): Unit = js.native
+  def revertUpdate(update: OptimisticUpdateFunction): Unit = js.native
   /**
     * Subscribe to changes to the results of a selector. The callback is called
     * when data has been committed to the store that would cause the results of

@@ -1,6 +1,6 @@
 package typings.nodeDashZendesk
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs._UpdateIdPayload
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users._UpdateIdPayload
 import typings.nodeDashZendesk.nodeDashZendeskMod.ZendeskID
 import scala.scalajs.js
 import scala.scalajs.js.`|`

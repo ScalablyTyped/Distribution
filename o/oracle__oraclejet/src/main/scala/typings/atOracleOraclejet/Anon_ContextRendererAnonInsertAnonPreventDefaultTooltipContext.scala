@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojgaugeMod.ojLedGaugeNs.TooltipContext
+import typings.atOracleOraclejet.ojgaugeMod.ojLedGauge.TooltipContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

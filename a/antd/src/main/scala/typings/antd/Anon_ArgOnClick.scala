@@ -1,18 +1,28 @@
 package typings.antd
 
 import typings.antd.libTableCreateStoreMod.Store
-import typings.react.reactMod.MouseEvent
 import typings.std.Element
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ArgOnClick extends js.Object {
-  var onClick: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, typings.std.MouseEvent], Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, typings.std.MouseEvent], Unit]] = js.undefined
-  var onDoubleClick: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* arg */ MouseEvent[Element, typings.std.MouseEvent], Unit]] = js.undefined
+  var onClick: js.UndefOr[
+    js.Function1[/* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent], Unit]
+  ] = js.undefined
+  var onContextMenu: js.UndefOr[
+    js.Function1[/* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent], Unit]
+  ] = js.undefined
+  var onDoubleClick: js.UndefOr[
+    js.Function1[/* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseEnter: js.UndefOr[
+    js.Function1[/* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseLeave: js.UndefOr[
+    js.Function1[/* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent], Unit]
+  ] = js.undefined
   var prefixCls: String
   var rowKey: js.Any
   var store: Store
@@ -24,11 +34,11 @@ object Anon_ArgOnClick {
     prefixCls: String,
     rowKey: js.Any,
     store: Store,
-    onClick: /* arg */ MouseEvent[Element, typings.std.MouseEvent] => Unit = null,
-    onContextMenu: /* arg */ MouseEvent[Element, typings.std.MouseEvent] => Unit = null,
-    onDoubleClick: /* arg */ MouseEvent[Element, typings.std.MouseEvent] => Unit = null,
-    onMouseEnter: /* arg */ MouseEvent[Element, typings.std.MouseEvent] => Unit = null,
-    onMouseLeave: /* arg */ MouseEvent[Element, typings.std.MouseEvent] => Unit = null
+    onClick: /* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent] => Unit = null,
+    onContextMenu: /* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent] => Unit = null,
+    onDoubleClick: /* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent] => Unit = null,
+    onMouseEnter: /* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent] => Unit = null,
+    onMouseLeave: /* arg */ typings.react.reactMod.MouseEvent[Element, MouseEvent] => Unit = null
   ): Anon_ArgOnClick = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls, rowKey = rowKey, store = store)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

@@ -1,8 +1,8 @@
 package typings.makerDotJs
 
-import typings.makerDotJs.MakerJsNs.IModel
-import typings.makerDotJs.MakerJsNs.IPath
-import typings.makerDotJs.MakerJsNs.IPoint
+import typings.makerDotJs.MakerJs.IModel
+import typings.makerDotJs.MakerJs.IPath
+import typings.makerDotJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait GetAccountSendingEnabledResponse extends js.Object {
 
 object GetAccountSendingEnabledResponse {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Enabled] = js.undefined): GetAccountSendingEnabledResponse = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): GetAccountSendingEnabledResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[GetAccountSendingEnabledResponse]

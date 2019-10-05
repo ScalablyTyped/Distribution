@@ -10,3 +10,9 @@ class File () extends js.Object {
   var _file: js.Any = js.native
 }
 
+@JSImport("mock-fs", "file")
+@js.native
+object file extends js.Object {
+  def apply(config: FileConfig): File = js.native
+}
+

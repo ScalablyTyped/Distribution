@@ -17,7 +17,7 @@ trait InstanceSpecification extends js.Object {
 
 object InstanceSpecification {
   @scala.inline
-  def apply(ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined, InstanceId: String = null): InstanceSpecification = {
+  def apply(ExcludeBootVolume: js.UndefOr[scala.Boolean] = js.undefined, InstanceId: String = null): InstanceSpecification = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ExcludeBootVolume)) __obj.updateDynamic("ExcludeBootVolume")(ExcludeBootVolume)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)

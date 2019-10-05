@@ -41,8 +41,8 @@ object CreateSolutionRequest {
     datasetGroupArn: Arn,
     name: Name,
     eventType: EventType = null,
-    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
-    performHPO: js.UndefOr[Boolean] = js.undefined,
+    performAutoML: js.UndefOr[scala.Boolean] = js.undefined,
+    performHPO: js.UndefOr[scala.Boolean] = js.undefined,
     recipeArn: Arn = null,
     solutionConfig: SolutionConfig = null
   ): CreateSolutionRequest = {

@@ -27,13 +27,13 @@ object ListServiceQuotaIncreaseRequestsInTemplateRequest {
   @scala.inline
   def apply(
     AwsRegion: AwsRegion = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ServiceCode: ServiceCode = null
   ): ListServiceQuotaIncreaseRequestsInTemplateRequest = {
     val __obj = js.Dynamic.literal()
     if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode)
     __obj.asInstanceOf[ListServiceQuotaIncreaseRequestsInTemplateRequest]

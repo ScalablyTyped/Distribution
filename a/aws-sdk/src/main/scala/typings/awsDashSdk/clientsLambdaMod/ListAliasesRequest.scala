@@ -29,12 +29,12 @@ object ListAliasesRequest {
     FunctionName: FunctionName,
     FunctionVersion: Version = null,
     Marker: String = null,
-    MaxItems: js.UndefOr[MaxListItems] = js.undefined
+    MaxItems: Int | Double = null
   ): ListAliasesRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName)
     if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesRequest]
   }
 }

@@ -1,5 +1,6 @@
 package typings.codemirror.codemirrorMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.codemirror.Anon_AnchorHead
 import typings.codemirror.Anon_Bias
 import typings.codemirror.Anon_FromMode
@@ -185,10 +186,5 @@ trait Doc extends js.Object {
 
 @JSImport("codemirror", "Doc")
 @js.native
-class DocCls protected () extends Doc {
-  def this(text: String) = this()
-  def this(text: String, mode: js.Any) = this()
-  def this(text: String, mode: js.Any, firstLineNumber: Double) = this()
-  def this(text: String, mode: js.Any, firstLineNumber: Double, lineSep: String) = this()
-}
+object Doc extends TopLevel[DocConstructor]
 

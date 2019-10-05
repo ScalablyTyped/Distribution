@@ -1,6 +1,6 @@
 package typings.mermaid
 
-import typings.mermaid.mermaidAPIMod.mermaidAPINs.Config
+import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

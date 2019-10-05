@@ -48,7 +48,7 @@ object EventSubscription {
   def apply(
     CustSubscriptionId: String = null,
     CustomerAwsId: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     EventCategoriesList: EventCategoriesList = null,
     SnsTopicArn: String = null,
     SourceIdsList: SourceIdsList = null,

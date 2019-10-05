@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCommonDashTypesMod {
-  import typings.node.NodeJSNs.ErrnoException
+  import typings.node.NodeJS.ErrnoException
 
   type CommonFileSystemMethod = js.Function2[
     /* name */ String, 

@@ -3,7 +3,7 @@ package typings.atUifabricStyling.libUtilitiesIconsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontFace
 import typings.atUifabricMergeDashStyles.libIStyleMod.IRawStyle
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -39,10 +39,10 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SoundInstance")
 @js.native
 class SoundInstance protected ()
-  extends typings.playcanvas.pcNs.SoundInstance {
+  extends typings.playcanvas.pc.SoundInstance {
   def this(
-    manager: typings.playcanvas.pcNs.SoundManager,
-    sound: typings.playcanvas.pcNs.Sound,
+    manager: typings.playcanvas.pc.SoundManager,
+    sound: typings.playcanvas.pc.Sound,
     options: Anon_Duration
   ) = this()
 }

@@ -34,7 +34,7 @@ object OptionsFab {
     backgroundColor: Color = null,
     clickColor: Color = null,
     hideOnScroll: js.UndefOr[Boolean] = js.undefined,
-    icon: js.UndefOr[ImageRequireSource] = js.undefined,
+    icon: Int | Double = null,
     iconColor: Color = null,
     rippleColor: Color = null,
     size: Int | Double = null,
@@ -47,7 +47,7 @@ object OptionsFab {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (clickColor != null) __obj.updateDynamic("clickColor")(clickColor)
     if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.nodeDashZendesk.nodeDashZendeskMod
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.AttachmentsNs.Methods
+import typings.nodeDashZendesk.nodeDashZendeskMod.Attachments.Methods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +20,15 @@ trait Client extends js.Object {
   var helpers: js.Any
   var imports: js.Any
   var installations: js.Any
-  var jobstatuses: typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Methods
+  var jobstatuses: typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Methods
   var locales: js.Any
-  var macros: typings.nodeDashZendesk.nodeDashZendeskMod.MacrosNs.Methods
+  var macros: typings.nodeDashZendesk.nodeDashZendeskMod.Macros.Methods
   var oauthtokens: js.Any
   var organizationfields: js.Any
   var organizationmemberships: js.Any
   var organizations: js.Any
   var policies: js.Any
-  var requests: typings.nodeDashZendesk.nodeDashZendeskMod.RequestsNs.Methods
+  var requests: typings.nodeDashZendesk.nodeDashZendeskMod.Requests.Methods
   var satisfactionratings: js.Any
   var search: js.Any
   var sessions: js.Any
@@ -43,15 +43,15 @@ trait Client extends js.Object {
   var ticketforms: js.Any
   var ticketimport: js.Any
   var ticketmetrics: js.Any
-  var tickets: typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.Methods
+  var tickets: typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.Methods
   var topiccomments: js.Any
   var topics: js.Any
   var topicsubscriptions: js.Any
   var topicvotes: js.Any
   var triggers: js.Any
-  var userfields: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.FieldsNs.Methods
-  var useridentities: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.IdentitiesNs.Methods
-  var users: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.Methods
+  var userfields: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Fields.Methods
+  var useridentities: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.Methods
+  var users: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Methods
   var views: js.Any
 }
 
@@ -72,15 +72,15 @@ object Client {
     helpers: js.Any,
     imports: js.Any,
     installations: js.Any,
-    jobstatuses: typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Methods,
+    jobstatuses: typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Methods,
     locales: js.Any,
-    macros: typings.nodeDashZendesk.nodeDashZendeskMod.MacrosNs.Methods,
+    macros: typings.nodeDashZendesk.nodeDashZendeskMod.Macros.Methods,
     oauthtokens: js.Any,
     organizationfields: js.Any,
     organizationmemberships: js.Any,
     organizations: js.Any,
     policies: js.Any,
-    requests: typings.nodeDashZendesk.nodeDashZendeskMod.RequestsNs.Methods,
+    requests: typings.nodeDashZendesk.nodeDashZendeskMod.Requests.Methods,
     satisfactionratings: js.Any,
     search: js.Any,
     sessions: js.Any,
@@ -95,15 +95,15 @@ object Client {
     ticketforms: js.Any,
     ticketimport: js.Any,
     ticketmetrics: js.Any,
-    tickets: typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.Methods,
+    tickets: typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.Methods,
     topiccomments: js.Any,
     topics: js.Any,
     topicsubscriptions: js.Any,
     topicvotes: js.Any,
     triggers: js.Any,
-    userfields: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.FieldsNs.Methods,
-    useridentities: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.IdentitiesNs.Methods,
-    users: typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.Methods,
+    userfields: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Fields.Methods,
+    useridentities: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.Methods,
+    users: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Methods,
     views: js.Any
   ): Client = {
     val __obj = js.Dynamic.literal(accountsettings = accountsettings, activitystream = activitystream, attachments = attachments, brand = brand, categories = categories, customagentroles = customagentroles, dynamiccontent = dynamiccontent, forums = forums, forumsubscriptions = forumsubscriptions, groupmemberships = groupmemberships, groups = groups, helpers = helpers, imports = imports, installations = installations, jobstatuses = jobstatuses, locales = locales, macros = macros, oauthtokens = oauthtokens, organizationfields = organizationfields, organizationmemberships = organizationmemberships, organizations = organizations, policies = policies, requests = requests, satisfactionratings = satisfactionratings, search = search, sessions = sessions, sharingagreement = sharingagreement, suspendedtickets = suspendedtickets, tags = tags, targets = targets, ticketaudits = ticketaudits, ticketevents = ticketevents, ticketexport = ticketexport, ticketfields = ticketfields, ticketforms = ticketforms, ticketimport = ticketimport, ticketmetrics = ticketmetrics, tickets = tickets, topiccomments = topiccomments, topics = topics, topicsubscriptions = topicsubscriptions, topicvotes = topicvotes, triggers = triggers, userfields = userfields, useridentities = useridentities, users = users, views = views)

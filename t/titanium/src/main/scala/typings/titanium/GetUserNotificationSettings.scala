@@ -1,6 +1,6 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AppNs.iOSNs.UserNotificationCategory
+import typings.titanium.Titanium.App.iOS.UserNotificationCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

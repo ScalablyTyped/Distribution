@@ -90,28 +90,28 @@ trait VivusOptions extends js.Object {
 object VivusOptions {
   @scala.inline
   def apply(
-    animTimingFunction: TimingFunction = null,
+    animTimingFunction: /* input */ Double => Double = null,
     dashGap: Int | Double = null,
     delay: Int | Double = null,
     duration: Int | Double = null,
     file: String = null,
     forceRender: js.UndefOr[Boolean] = js.undefined,
     onReady: /* vivusInstance */ Vivus => Unit = null,
-    pathTimingFunction: TimingFunction = null,
+    pathTimingFunction: /* input */ Double => Double = null,
     reverseStack: js.UndefOr[Boolean] = js.undefined,
     selfDestroy: js.UndefOr[Boolean] = js.undefined,
     start: inViewport | manual | autostart = null,
     `type`: delayed | sync | oneByOne | script | scenario | `scenario-sync` = null
   ): VivusOptions = {
     val __obj = js.Dynamic.literal()
-    if (animTimingFunction != null) __obj.updateDynamic("animTimingFunction")(animTimingFunction)
+    if (animTimingFunction != null) __obj.updateDynamic("animTimingFunction")(js.Any.fromFunction1(animTimingFunction))
     if (dashGap != null) __obj.updateDynamic("dashGap")(dashGap.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
-    if (pathTimingFunction != null) __obj.updateDynamic("pathTimingFunction")(pathTimingFunction)
+    if (pathTimingFunction != null) __obj.updateDynamic("pathTimingFunction")(js.Any.fromFunction1(pathTimingFunction))
     if (!js.isUndefined(reverseStack)) __obj.updateDynamic("reverseStack")(reverseStack)
     if (!js.isUndefined(selfDestroy)) __obj.updateDynamic("selfDestroy")(selfDestroy)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

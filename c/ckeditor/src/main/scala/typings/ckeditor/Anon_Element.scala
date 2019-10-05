@@ -1,12 +1,12 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.domNs.element
+import typings.ckeditor.CKEDITOR.dom.element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Element extends js.Object {
-  var element: typings.ckeditor.CKEDITORNs.domNs.element
+  var element: typings.ckeditor.CKEDITOR.dom.element
   var item: js.Any
 }
 

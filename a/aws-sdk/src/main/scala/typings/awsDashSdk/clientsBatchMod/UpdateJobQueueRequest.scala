@@ -28,12 +28,12 @@ object UpdateJobQueueRequest {
   def apply(
     jobQueue: String,
     computeEnvironmentOrder: ComputeEnvironmentOrders = null,
-    priority: js.UndefOr[Integer] = js.undefined,
+    priority: Int | Double = null,
     state: JQState = null
   ): UpdateJobQueueRequest = {
     val __obj = js.Dynamic.literal(jobQueue = jobQueue)
     if (computeEnvironmentOrder != null) __obj.updateDynamic("computeEnvironmentOrder")(computeEnvironmentOrder)
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobQueueRequest]
   }

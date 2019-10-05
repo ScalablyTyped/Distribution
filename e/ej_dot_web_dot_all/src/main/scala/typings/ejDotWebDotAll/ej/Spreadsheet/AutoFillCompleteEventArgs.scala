@@ -1,0 +1,58 @@
+package typings.ejDotWebDotAll.ej.Spreadsheet
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AutoFillCompleteEventArgs extends js.Object {
+  /** Returns the cancel option value.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** Returns auto fill begin cell range.
+    */
+  var dataRange: js.UndefOr[js.Array[_]] = js.undefined
+  /** Returns which direction to drag the auto fill.
+    */
+  var direction: js.UndefOr[String] = js.undefined
+  /** Returns fill cells range.
+    */
+  var fillRange: js.UndefOr[js.Array[_]] = js.undefined
+  /** Returns the auto fill type.
+    */
+  var fillType: js.UndefOr[String] = js.undefined
+  /** Returns the Spreadsheet model.
+    */
+  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  /** Returns the sheet index.
+    */
+  var sheetIdx: js.UndefOr[Double] = js.undefined
+  /** Returns the name of the event.
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+}
+
+object AutoFillCompleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    dataRange: js.Array[_] = null,
+    direction: String = null,
+    fillRange: js.Array[_] = null,
+    fillType: String = null,
+    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    sheetIdx: Int | Double = null,
+    `type`: String = null
+  ): AutoFillCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange)
+    if (fillType != null) __obj.updateDynamic("fillType")(fillType)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AutoFillCompleteEventArgs]
+  }
+}
+

@@ -20,9 +20,19 @@ trait IBasePickerStyles extends js.Object {
 
 object IBasePickerStyles {
   @scala.inline
-  def apply(input: IStyle, itemsWrapper: IStyle, root: IStyle, screenReaderText: IStyle, text: IStyle): IBasePickerStyles = {
-    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], itemsWrapper = itemsWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], screenReaderText = screenReaderText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
+  def apply(
+    input: IStyle = null,
+    itemsWrapper: IStyle = null,
+    root: IStyle = null,
+    screenReaderText: IStyle = null,
+    text: IStyle = null
+  ): IBasePickerStyles = {
+    val __obj = js.Dynamic.literal()
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (itemsWrapper != null) __obj.updateDynamic("itemsWrapper")(itemsWrapper.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasePickerStyles]
   }
 }

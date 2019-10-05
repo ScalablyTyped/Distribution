@@ -67,14 +67,14 @@ object SolutionVersion {
     eventType: EventType = null,
     failureReason: FailureReason = null,
     lastUpdatedDateTime: _Date = null,
-    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
-    performHPO: js.UndefOr[PerformHPO] = js.undefined,
+    performAutoML: js.UndefOr[scala.Boolean] = js.undefined,
+    performHPO: js.UndefOr[scala.Boolean] = js.undefined,
     recipeArn: Arn = null,
     solutionArn: Arn = null,
     solutionConfig: SolutionConfig = null,
     solutionVersionArn: Arn = null,
     status: Status = null,
-    trainingHours: js.UndefOr[TrainingHours] = js.undefined
+    trainingHours: Int | Double = null
   ): SolutionVersion = {
     val __obj = js.Dynamic.literal()
     if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime)
@@ -89,7 +89,7 @@ object SolutionVersion {
     if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig)
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn)
     if (status != null) __obj.updateDynamic("status")(status)
-    if (!js.isUndefined(trainingHours)) __obj.updateDynamic("trainingHours")(trainingHours)
+    if (trainingHours != null) __obj.updateDynamic("trainingHours")(trainingHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolutionVersion]
   }
 }

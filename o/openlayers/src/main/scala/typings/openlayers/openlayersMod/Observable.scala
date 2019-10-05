@@ -1,7 +1,7 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.eventsNs.Event
-import typings.openlayers.openlayersMod.eventsNs.EventTarget
+import typings.openlayers.openlayersMod.events.Event
+import typings.openlayers.openlayersMod.events.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

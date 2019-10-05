@@ -35,15 +35,19 @@ trait IContextualMenuStyles extends js.Object {
 object IContextualMenuStyles {
   @scala.inline
   def apply(
-    container: IStyle,
-    header: IStyle,
-    list: IStyle,
-    root: IStyle,
     subComponentStyles: IContextualMenuSubComponentStyles,
-    title: IStyle
+    container: IStyle = null,
+    header: IStyle = null,
+    list: IStyle = null,
+    root: IStyle = null,
+    title: IStyle = null
   ): IContextualMenuStyles = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], subComponentStyles = subComponentStyles, title = title.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuStyles]
   }
 }

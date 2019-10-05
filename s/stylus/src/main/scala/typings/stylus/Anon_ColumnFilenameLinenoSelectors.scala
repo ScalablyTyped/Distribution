@@ -1,6 +1,6 @@
 package typings.stylus
 
-import typings.stylus.stylusMod.StylusNs.NodesNs.Selector
+import typings.stylus.stylusMod.Stylus.Nodes.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

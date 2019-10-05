@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.JSXExpressionContainerKind
 import typings.astDashTypes.genKindsMod.JSXIdentifierKind
 import typings.astDashTypes.genKindsMod.JSXNamespacedNameKind
 import typings.astDashTypes.genKindsMod.LiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXAttribute
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXAttribute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

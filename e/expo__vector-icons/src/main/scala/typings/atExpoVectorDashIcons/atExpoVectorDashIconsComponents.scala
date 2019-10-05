@@ -13,122 +13,122 @@ object atExpoVectorDashIconsComponents extends atExpoVectorDashIconsProps {
   @scala.inline
   def AntDesign: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesign].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def AntDesignNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesignNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def AntDesignButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesign.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def AntDesignNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesignNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def AntDesignTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesign.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def AntDesignNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesignNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def AntDesignTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesign.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def AntDesignNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesignNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def AntDesignToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.AntDesign.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Entypo: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Entypo].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def EntypoNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EntypoNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def EntypoButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Entypo.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def EntypoNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EntypoNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def EntypoTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Entypo.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def EntypoNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EntypoNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def EntypoTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Entypo.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def EntypoNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EntypoNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def EntypoToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Entypo.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def EvilIcons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIcons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def EvilIconsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIconsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def EvilIconsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIcons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def EvilIconsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIconsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def EvilIconsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIcons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def EvilIconsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIconsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def EvilIconsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIcons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def EvilIconsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIconsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def EvilIconsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.EvilIcons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Feather: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Feather].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def FeatherNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FeatherNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def FeatherButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Feather.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def FeatherNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FeatherNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FeatherTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Feather.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FeatherNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FeatherNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FeatherTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Feather.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FeatherNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FeatherNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def FeatherToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Feather.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def FontAwesome: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def FontAwesomeNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesomeNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def FontAwesomeButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def FontAwesomeNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesomeNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FontAwesomeTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FontAwesomeNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesomeNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FontAwesomeTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FontAwesomeNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesomeNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def FontAwesomeToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Foundation: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def FoundationNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FoundationNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def FoundationButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def FoundationNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FoundationNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FoundationTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FoundationNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FoundationNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def FoundationTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def FoundationNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FoundationNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def FoundationToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Ionicons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Ionicons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def IoniconsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.IoniconsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def IoniconsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Ionicons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def IoniconsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.IoniconsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def IoniconsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Ionicons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def IoniconsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.IoniconsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def IoniconsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Ionicons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def IoniconsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.IoniconsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def IoniconsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Ionicons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def MaterialCommunityIcons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def MaterialCommunityIconsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIconsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def MaterialCommunityIconsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def MaterialCommunityIconsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIconsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def MaterialCommunityIconsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def MaterialCommunityIconsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIconsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def MaterialCommunityIconsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def MaterialCommunityIconsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIconsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def MaterialCommunityIconsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def MaterialIcons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIcons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def MaterialIconsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIconsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def MaterialIconsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIcons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def MaterialIconsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIconsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def MaterialIconsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIcons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def MaterialIconsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIconsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def MaterialIconsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIcons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def MaterialIconsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIconsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def MaterialIconsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialIcons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Octicons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Octicons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def OcticonsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.OcticonsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def OcticonsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Octicons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def OcticonsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.OcticonsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def OcticonsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Octicons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def OcticonsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.OcticonsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def OcticonsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Octicons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def OcticonsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.OcticonsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def OcticonsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Octicons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def SimpleLineIcons: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def SimpleLineIconsNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIconsNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def SimpleLineIconsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def SimpleLineIconsNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIconsNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def SimpleLineIconsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def SimpleLineIconsNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIconsNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def SimpleLineIconsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def SimpleLineIconsNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIconsNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def SimpleLineIconsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
   @scala.inline
   def Zocial: ComponentType[IconProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps]]
   @scala.inline
-  def ZocialNsButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.ZocialNs.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
+  def ZocialButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps]]
   @scala.inline
-  def ZocialNsTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.ZocialNs.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def ZocialTabBarItem: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial.TabBarItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def ZocialNsTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.ZocialNs.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
+  def ZocialTabBarItemIOS: ComponentType[TabBarItemIOSProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial.TabBarItemIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps]]
   @scala.inline
-  def ZocialNsToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.ZocialNs.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
+  def ZocialToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps]]
 }
 

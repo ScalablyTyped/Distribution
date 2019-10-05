@@ -1,7 +1,7 @@
 package typings.tooltipster
 
-import typings.tooltipster.JQueryTooltipsterNs.TooltipEventName
-import typings.tooltipster.JQueryTooltipsterNs.TooltipPositioningSide
+import typings.tooltipster.JQueryTooltipster.TooltipEventName
+import typings.tooltipster.JQueryTooltipster.TooltipPositioningSide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

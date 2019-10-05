@@ -1,8 +1,11 @@
 package typings.reactDashVirtualized
 
 import typings.react.reactMod.ReactNode
+import typings.reactDashVirtualized.distEsGridMod.GridCellRangeProps
 import typings.reactDashVirtualized.distEsGridMod.GridCellRangeRenderer
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndices
 import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetter
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetterParams
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`-1`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`0`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`100`
@@ -52,7 +55,7 @@ object Anon_01 {
     autoContainerWidth: `false`,
     autoHeight: `false`,
     autoWidth: `false`,
-    cellRangeRenderer: GridCellRangeRenderer,
+    cellRangeRenderer: /* params */ GridCellRangeProps => js.Array[ReactNode],
     containerRole: rowgroup,
     estimatedColumnSize: `100`,
     estimatedRowSize: `30`,
@@ -62,7 +65,7 @@ object Anon_01 {
     onScrollbarPresenceChange: () => Unit,
     onSectionRendered: () => Unit,
     overscanColumnCount: `0`,
-    overscanIndicesGetter: OverscanIndicesGetter,
+    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices,
     overscanRowCount: `10`,
     role: grid,
     scrollToAlignment: auto,
@@ -71,7 +74,7 @@ object Anon_01 {
     scrollingResetTimeInterval: `150`,
     tabIndex: `0`
   ): Anon_01 = {
-    val __obj = js.Dynamic.literal(autoContainerWidth = autoContainerWidth, autoHeight = autoHeight, autoWidth = autoWidth, cellRangeRenderer = cellRangeRenderer, containerRole = containerRole, estimatedColumnSize = estimatedColumnSize, estimatedRowSize = estimatedRowSize, getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = overscanColumnCount, overscanIndicesGetter = overscanIndicesGetter, overscanRowCount = overscanRowCount, role = role, scrollToAlignment = scrollToAlignment, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow, scrollingResetTimeInterval = scrollingResetTimeInterval, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(autoContainerWidth = autoContainerWidth, autoHeight = autoHeight, autoWidth = autoWidth, cellRangeRenderer = js.Any.fromFunction1(cellRangeRenderer), containerRole = containerRole, estimatedColumnSize = estimatedColumnSize, estimatedRowSize = estimatedRowSize, getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = overscanColumnCount, overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount, role = role, scrollToAlignment = scrollToAlignment, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow, scrollingResetTimeInterval = scrollingResetTimeInterval, tabIndex = tabIndex)
     __obj.updateDynamic("aria-label")(`aria-label`)
     __obj.updateDynamic("aria-readonly")(`aria-readonly`)
     __obj.asInstanceOf[Anon_01]

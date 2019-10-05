@@ -1,6 +1,6 @@
 package typings.airtable
 
-import typings.airtable.airtableMod.Global.AirtableNs.Thumbnail
+import typings.airtable.airtableMod.Global.Airtable.Thumbnail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

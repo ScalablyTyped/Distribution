@@ -17,10 +17,10 @@ trait ListDomainsRequest extends js.Object {
 
 object ListDomainsRequest {
   @scala.inline
-  def apply(Marker: PageMarker = null, MaxItems: js.UndefOr[PageMaxItems] = js.undefined): ListDomainsRequest = {
+  def apply(Marker: PageMarker = null, MaxItems: Int | Double = null): ListDomainsRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainsRequest]
   }
 }

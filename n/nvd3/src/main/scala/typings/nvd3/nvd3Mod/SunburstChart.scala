@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.nvd3.nvd3Mod.Nvd3Element because Already inherited
 - typings.nvd3.nvd3Mod.Chart because var conflicts: dispatch. Inlined state, interactiveLayer */ @js.native
 trait SunburstChart extends Sunburst {
   var interactiveLayer: InteractiveLayer = js.native

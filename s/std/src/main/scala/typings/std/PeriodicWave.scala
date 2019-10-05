@@ -11,13 +11,6 @@ trait PeriodicWave extends js.Object
 
 @JSGlobal("PeriodicWave")
 @js.native
-class PeriodicWaveCls protected () extends PeriodicWave {
-  def this(context: BaseAudioContext) = this()
-  def this(context: BaseAudioContext, options: PeriodicWaveOptions) = this()
-}
-
-@JSGlobal("PeriodicWave")
-@js.native
 object PeriodicWave
   extends Instantiable1[/* context */ BaseAudioContext, PeriodicWave]
      with Instantiable2[/* context */ BaseAudioContext, /* options */ PeriodicWaveOptions, PeriodicWave]

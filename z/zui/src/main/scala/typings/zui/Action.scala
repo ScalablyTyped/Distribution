@@ -15,14 +15,14 @@ trait Action extends js.Object {
 object Action {
   @scala.inline
   def apply(
-    action: ActionFunc = null,
+    action: () => Boolean = null,
     html: String = null,
     icon: String = null,
     name: String = null,
     text: String = null
   ): Action = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction0(action))
     if (html != null) __obj.updateDynamic("html")(html)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -1,6 +1,5 @@
 package typings.bwipDashJs.bwipDashJsMod
 
-import typings.node.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.std.Error
@@ -19,7 +18,16 @@ object ^ extends js.Object {
     * @param callback Function to execute when rendering has completed or failed
     */
   def apply(
-    canvas: String | HTMLCanvasElement,
+    canvas: String,
+    opts: ToBufferOptions,
+    callback: js.Function2[
+      /* err */ js.UndefOr[String | Error], 
+      /* canvas */ js.UndefOr[HTMLCanvasElement], 
+      Unit
+    ]
+  ): Unit = js.native
+  def apply(
+    canvas: HTMLCanvasElement,
     opts: ToBufferOptions,
     callback: js.Function2[
       /* err */ js.UndefOr[String | Error], 
@@ -29,7 +37,5 @@ object ^ extends js.Object {
   ): Unit = js.native
   def apply(req: IncomingMessage, res: ServerResponse): Unit = js.native
   def apply(req: IncomingMessage, res: ServerResponse, opts: ToBufferOptions): Unit = js.native
-  def loadFont(fontName: String, sizeMulti: Double, fontFile: String): Unit = js.native
-  def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | Error, /* png */ Buffer, Unit]): Unit = js.native
 }
 

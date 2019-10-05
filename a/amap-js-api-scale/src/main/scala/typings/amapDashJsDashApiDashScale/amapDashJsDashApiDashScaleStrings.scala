@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashScale
 
-import typings.amapDashJsDashApiDashScale.AMapNs.ScaleNs.Position
+import typings.amapDashJsDashApiDashScale.AMap.Scale.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

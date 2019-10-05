@@ -1,5 +1,6 @@
 package typings.riot.riotMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,4 +36,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
 }
+
+@JSImport("riot", "settings")
+@js.native
+object settings extends TopLevel[Settings]
 

@@ -23,3 +23,11 @@ trait Interface[T] extends Type[T] {
   def update(instance: T, spec: UpdatePatch): T = js.native
 }
 
+@JSImport("tcomb", "interface")
+@js.native
+object interface extends js.Object {
+  def apply[T](props: StructProps): Interface[T] = js.native
+  def apply[T](props: StructProps, name: String): Interface[T] = js.native
+  def apply[T](props: StructProps, name: StructOptions): Interface[T] = js.native
+}
+

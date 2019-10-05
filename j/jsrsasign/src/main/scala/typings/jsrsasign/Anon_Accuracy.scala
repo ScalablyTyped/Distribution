@@ -1,10 +1,10 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.BigIntegerParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.DateParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.HexParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.IntegerParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.StringParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.BigIntegerParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.DateParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

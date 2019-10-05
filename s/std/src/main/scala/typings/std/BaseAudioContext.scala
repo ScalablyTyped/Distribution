@@ -85,9 +85,5 @@ trait BaseAudioContext extends EventTarget {
 
 @JSGlobal("BaseAudioContext")
 @js.native
-class BaseAudioContextCls () extends BaseAudioContext
-
-@JSGlobal("BaseAudioContext")
-@js.native
 object BaseAudioContext extends Instantiable0[BaseAudioContext]
 

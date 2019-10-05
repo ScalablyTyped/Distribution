@@ -4,6 +4,8 @@ import typings.atNivoColors.atNivoColorsMod.InheritedColorProp
 import typings.atNivoColors.atNivoColorsMod.OrdinalColorsInstruction
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,10 +67,10 @@ object CommonChordProps {
     labelRotation: Int | Double = null,
     labelTextColor: InheritedColorProp[_] = null,
     margin: Box = null,
-    onArcClick: ChordArcMouseHandler = null,
-    onArcMouseEnter: ChordArcMouseHandler = null,
-    onArcMouseLeave: ChordArcMouseHandler = null,
-    onArcMouseMove: ChordArcMouseHandler = null,
+    onArcClick: (/* arc */ ArcData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onArcMouseEnter: (/* arc */ ArcData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onArcMouseLeave: (/* arc */ ArcData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onArcMouseMove: (/* arc */ ArcData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     padAngle: Int | Double = null,
     ribbonBorderWidth: Int | Double = null,
     ribbonHoverOpacity: Int | Double = null,
@@ -95,10 +97,10 @@ object CommonChordProps {
     if (labelRotation != null) __obj.updateDynamic("labelRotation")(labelRotation.asInstanceOf[js.Any])
     if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (onArcClick != null) __obj.updateDynamic("onArcClick")(onArcClick)
-    if (onArcMouseEnter != null) __obj.updateDynamic("onArcMouseEnter")(onArcMouseEnter)
-    if (onArcMouseLeave != null) __obj.updateDynamic("onArcMouseLeave")(onArcMouseLeave)
-    if (onArcMouseMove != null) __obj.updateDynamic("onArcMouseMove")(onArcMouseMove)
+    if (onArcClick != null) __obj.updateDynamic("onArcClick")(js.Any.fromFunction2(onArcClick))
+    if (onArcMouseEnter != null) __obj.updateDynamic("onArcMouseEnter")(js.Any.fromFunction2(onArcMouseEnter))
+    if (onArcMouseLeave != null) __obj.updateDynamic("onArcMouseLeave")(js.Any.fromFunction2(onArcMouseLeave))
+    if (onArcMouseMove != null) __obj.updateDynamic("onArcMouseMove")(js.Any.fromFunction2(onArcMouseMove))
     if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
     if (ribbonBorderWidth != null) __obj.updateDynamic("ribbonBorderWidth")(ribbonBorderWidth.asInstanceOf[js.Any])
     if (ribbonHoverOpacity != null) __obj.updateDynamic("ribbonHoverOpacity")(ribbonHoverOpacity.asInstanceOf[js.Any])

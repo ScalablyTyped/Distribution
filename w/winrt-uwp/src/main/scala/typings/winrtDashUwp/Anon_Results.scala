@@ -1,7 +1,7 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.IPromiseWithIAsyncAction
-import typings.winrtDashUwp.WindowsNs.FoundationNs.NumericsNs.Vector3
+import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import typings.winrtDashUwp.Windows.Foundation.Numerics.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

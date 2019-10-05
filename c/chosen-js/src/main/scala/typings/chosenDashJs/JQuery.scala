@@ -1,9 +1,9 @@
 package typings.chosenDashJs
 
-import typings.chosenDashJs.ChosenNs.OnEvent
-import typings.chosenDashJs.ChosenNs.Options
-import typings.chosenDashJs.ChosenNs.SelectedData
-import typings.chosenDashJs.ChosenNs.TriggerEvent
+import typings.chosenDashJs.Chosen.OnEvent
+import typings.chosenDashJs.Chosen.Options
+import typings.chosenDashJs.Chosen.SelectedData
+import typings.chosenDashJs.Chosen.TriggerEvent
 import typings.chosenDashJs.chosenDashJsStrings.change
 import typings.chosenDashJs.chosenDashJsStrings.destroy
 import typings.jquery.JQueryEventObject

@@ -17,7 +17,7 @@ trait PrivateIpAddressSpecification extends js.Object {
 
 object PrivateIpAddressSpecification {
   @scala.inline
-  def apply(Primary: js.UndefOr[Boolean] = js.undefined, PrivateIpAddress: String = null): PrivateIpAddressSpecification = {
+  def apply(Primary: js.UndefOr[scala.Boolean] = js.undefined, PrivateIpAddress: String = null): PrivateIpAddressSpecification = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary)
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress)

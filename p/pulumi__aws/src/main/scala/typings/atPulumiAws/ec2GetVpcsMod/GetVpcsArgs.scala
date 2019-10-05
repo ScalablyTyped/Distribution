@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpcsFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetVpcsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

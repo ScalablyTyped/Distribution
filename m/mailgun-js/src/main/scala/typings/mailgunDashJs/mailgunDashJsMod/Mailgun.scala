@@ -1,11 +1,11 @@
 package typings.mailgunDashJs.mailgunDashJsMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mailgunDashJs.mailgunDashJsMod.validationNs.ParseResponse
-import typings.mailgunDashJs.mailgunDashJsMod.validationNs.ValidateResponse
-import typings.mailgunDashJs.mailgunDashJsMod.validationNs.ValidationCallback
-import typings.mailgunDashJs.mailgunDashJsMod.validationNs.ValidationOptionsPrivate
-import typings.mailgunDashJs.mailgunDashJsMod.validationNs.ValidationOptionsPublic
+import typings.mailgunDashJs.mailgunDashJsMod.validation.ParseResponse
+import typings.mailgunDashJs.mailgunDashJsMod.validation.ValidateResponse
+import typings.mailgunDashJs.mailgunDashJsMod.validation.ValidationCallback
+import typings.mailgunDashJs.mailgunDashJsMod.validation.ValidationOptionsPrivate
+import typings.mailgunDashJs.mailgunDashJsMod.validation.ValidationOptionsPublic
 import typings.mailgunDashJs.mailgunDashJsNumbers.`false`
 import typings.mailgunDashJs.mailgunDashJsNumbers.`true`
 import scala.scalajs.js

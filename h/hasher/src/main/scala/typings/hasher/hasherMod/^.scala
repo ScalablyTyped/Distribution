@@ -1,7 +1,7 @@
 package typings.hasher.hasherMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.hasher.hasherMod.HasherJsNs.HasherStatic
+import typings.hasher.hasherMod.HasherJs.HasherStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,7 @@ package typings.atApolloReactDashComponents
 import typings.atApolloReactDashComponents.libTypesMod.QueryComponentOptions
 import typings.propDashTypes.propDashTypesMod.Requireable
 import typings.propDashTypes.propDashTypesMod.Validator
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +11,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@apollo/react-components/lib/Query", JSImport.Namespace)
 @js.native
 object libQueryMod extends js.Object {
-  def Query[TData, TVariables](props: QueryComponentOptions[TData, TVariables]): Element | Null = js.native
-  @JSName("Query")
   @js.native
-  object QueryNs extends js.Object {
+  object Query extends js.Object {
+    def apply[TData, TVariables](props: QueryComponentOptions[TData, TVariables]): Element | Null = js.native
     @js.native
     object propTypes extends js.Object {
       var children: Validator[js.Function1[/* repeated */ _, _]] = js.native

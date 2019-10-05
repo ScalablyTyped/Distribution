@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.TimePicker
-import typings.ejDotWebDotAll.ejNs.TimePickerNs.Model
+import typings.ejDotWebDotAll.ej.TimePicker
+import typings.ejDotWebDotAll.ej.TimePicker.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

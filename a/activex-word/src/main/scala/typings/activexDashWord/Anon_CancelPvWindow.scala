@@ -1,6 +1,6 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.ProtectedViewWindow
+import typings.activexDashWord.Word.ProtectedViewWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

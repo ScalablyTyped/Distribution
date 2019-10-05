@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ReactScrollIntoViewIfNeededProps extends HTMLProps[HTMLElement] {
   var active: js.UndefOr[Boolean] = js.undefined
   var elementType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   var options: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any
@@ -21,7 +21,7 @@ object ReactScrollIntoViewIfNeededProps {
   def apply(
     HTMLProps: HTMLProps[HTMLElement] = null,
     active: js.UndefOr[Boolean] = js.undefined,
-    elementType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    elementType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any = null
   ): ReactScrollIntoViewIfNeededProps = {
     val __obj = js.Dynamic.literal()

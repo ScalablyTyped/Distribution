@@ -1,7 +1,7 @@
 package typings.atReduxDashSagaCore.typesMod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.SharedArrayBuffer
 import typings.std.ArrayBuffer
 import typings.std.DataView

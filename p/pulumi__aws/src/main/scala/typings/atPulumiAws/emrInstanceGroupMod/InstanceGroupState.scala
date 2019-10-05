@@ -1,6 +1,6 @@
 package typings.atPulumiAws.emrInstanceGroupMod
 
-import typings.atPulumiAws.typesInputMod.emrNs.InstanceGroupEbsConfig
+import typings.atPulumiAws.typesInputMod.emr.InstanceGroupEbsConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

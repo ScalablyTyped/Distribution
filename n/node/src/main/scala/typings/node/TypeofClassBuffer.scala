@@ -2,7 +2,7 @@ package typings.node
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.std.ArrayBuffer
 import typings.std.DataView
 import typings.std.Uint8Array

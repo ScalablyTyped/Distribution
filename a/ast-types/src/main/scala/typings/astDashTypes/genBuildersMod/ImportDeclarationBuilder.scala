@@ -7,7 +7,7 @@ import typings.astDashTypes.genKindsMod.ImportDefaultSpecifierKind
 import typings.astDashTypes.genKindsMod.ImportNamespaceSpecifierKind
 import typings.astDashTypes.genKindsMod.ImportSpecifierKind
 import typings.astDashTypes.genKindsMod.LiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ImportDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ImportDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

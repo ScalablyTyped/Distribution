@@ -37,3 +37,9 @@ object DoExpression {
   }
 }
 
+@JSImport("@babel/types", "doExpression")
+@js.native
+object doExpression extends js.Object {
+  def apply(body: BlockStatement): DoExpression = js.native
+}
+

@@ -7,6 +7,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShow
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.CollapseAllVisibility
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroup
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroupRenderProps
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,9 +27,9 @@ object IDetailsGroupRenderProps {
     getGroupItemLimit: /* group */ IGroup => Double = null,
     headerProps: IGroupHeaderProps = null,
     isAllGroupsCollapsed: js.UndefOr[Boolean] = js.undefined,
-    onRenderFooter: IRenderFunction[IDetailsGroupDividerProps] = null,
-    onRenderHeader: IRenderFunction[IDetailsGroupDividerProps] = null,
-    onRenderShowAll: IRenderFunction[IGroupShowAllProps] = null,
+    onRenderFooter: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null = null,
+    onRenderHeader: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null = null,
+    onRenderShowAll: (/* props */ js.UndefOr[IGroupShowAllProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupShowAllProps], Element | Null]]) => Element | Null = null,
     onToggleCollapseAll: /* isAllCollapsed */ Boolean => Unit = null,
     showAllProps: IGroupShowAllProps = null,
     showEmptyGroups: js.UndefOr[Boolean] = js.undefined
@@ -39,9 +40,9 @@ object IDetailsGroupRenderProps {
     if (getGroupItemLimit != null) __obj.updateDynamic("getGroupItemLimit")(js.Any.fromFunction1(getGroupItemLimit))
     if (headerProps != null) __obj.updateDynamic("headerProps")(headerProps)
     if (!js.isUndefined(isAllGroupsCollapsed)) __obj.updateDynamic("isAllGroupsCollapsed")(isAllGroupsCollapsed)
-    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(onRenderFooter)
-    if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(onRenderHeader)
-    if (onRenderShowAll != null) __obj.updateDynamic("onRenderShowAll")(onRenderShowAll)
+    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(js.Any.fromFunction2(onRenderFooter))
+    if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(js.Any.fromFunction2(onRenderHeader))
+    if (onRenderShowAll != null) __obj.updateDynamic("onRenderShowAll")(js.Any.fromFunction2(onRenderShowAll))
     if (onToggleCollapseAll != null) __obj.updateDynamic("onToggleCollapseAll")(js.Any.fromFunction1(onToggleCollapseAll))
     if (showAllProps != null) __obj.updateDynamic("showAllProps")(showAllProps)
     if (!js.isUndefined(showEmptyGroups)) __obj.updateDynamic("showEmptyGroups")(showEmptyGroups)

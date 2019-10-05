@@ -22,12 +22,12 @@ trait ListResolverRuleAssociationsResponse extends js.Object {
 object ListResolverRuleAssociationsResponse {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ResolverRuleAssociations: ResolverRuleAssociations = null
   ): ListResolverRuleAssociationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResolverRuleAssociations != null) __obj.updateDynamic("ResolverRuleAssociations")(ResolverRuleAssociations)
     __obj.asInstanceOf[ListResolverRuleAssociationsResponse]

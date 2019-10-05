@@ -1,56 +1,56 @@
 package typings.antd
 
-import typings.antd.esButtonButtonMod.ButtonHTMLType
-import typings.antd.esButtonButtonMod.ButtonShape
-import typings.antd.esButtonButtonMod.ButtonSize
-import typings.antd.esButtonButtonMod.ButtonType
+import typings.antd.esCalendarMod.CalendarMode
 import typings.antd.esCardMod.CardSize
 import typings.antd.esCarouselMod.CarouselEffect
 import typings.antd.esCarouselMod.DotPosition
+import typings.antd.esCollapseCollapseMod.ExpandIconPosition
+import typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
 import typings.antd.esDrawerMod.placementType
-import typings.antd.esFormFormMod.FormLayout
-import typings.antd.esListMod.ColumnType
-import typings.antd.esListMod.ListItemLayout
-import typings.antd.esListMod.ListSize
-import typings.antd.esMentionsMod.MentionPlacement
+import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+import typings.antd.esDropdownDropdownMod.Placement
+import typings.antd.esFormFormItemMod.FormLabelAlign
+import typings.antd.esLayoutSiderMod.CollapseType
+import typings.antd.esLayoutSiderMod.SiderTheme
+import typings.antd.esMentionMod.MentionPlacement
+import typings.antd.esMenuMod.MenuMode
 import typings.antd.esMessageMod.NoticeType
-import typings.antd.esProgressProgressMod.ProgressSize
-import typings.antd.esProgressProgressMod.ProgressType
-import typings.antd.esSpinMod.SpinSize
+import typings.antd.esNotificationMod.IconType
+import typings.antd.esNotificationMod.NotificationPlacement
+import typings.antd.esRadioInterfaceMod.RadioGroupButtonStyle
 import typings.antd.esStatisticUtilsMod._Formatter
-import typings.antd.esTabsMod.TabsPosition
-import typings.antd.esTabsMod.TabsType
 import typings.antd.esTooltipMod.TooltipPlacement
 import typings.antd.esTooltipMod.TooltipTrigger
-import typings.antd.esTransferMod.TransferDirection
-import typings.antd.esTreeDirectoryTreeMod.ExpandAction
 import typings.antd.esTypographyBaseMod.BaseType
-import typings.antd.libCalendarMod.CalendarMode
+import typings.antd.esUploadInterfaceMod.UploadFileStatus
+import typings.antd.esUploadInterfaceMod.UploadListType
+import typings.antd.esUploadInterfaceMod.UploadType
+import typings.antd.libButtonButtonMod.ButtonHTMLType
+import typings.antd.libButtonButtonMod.ButtonShape
+import typings.antd.libButtonButtonMod.ButtonSize
+import typings.antd.libButtonButtonMod.ButtonType
 import typings.antd.libCascaderMod.CascaderExpandTrigger
-import typings.antd.libCollapseCollapseMod.ExpandIconPosition
-import typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
-import typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
-import typings.antd.libDropdownDropdownMod.Placement
-import typings.antd.libFormFormItemMod.FormLabelAlign
+import typings.antd.libFormFormMod.FormLayout
 import typings.antd.libIconMod.ThemeType
 import typings.antd.libInputDashNumberMod.OmitAttrs
-import typings.antd.libLayoutSiderMod.CollapseType
-import typings.antd.libLayoutSiderMod.SiderTheme
+import typings.antd.libListMod.ColumnType
+import typings.antd.libListMod.ListItemLayout
+import typings.antd.libListMod.ListSize
 import typings.antd.libMenuMenuContextMod.MenuTheme
-import typings.antd.libMenuMod.MenuMode
-import typings.antd.libNotificationMod.IconType
-import typings.antd.libNotificationMod.NotificationPlacement
-import typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.libProgressProgressMod.ProgressSize
+import typings.antd.libProgressProgressMod.ProgressType
+import typings.antd.libSpinMod.SpinSize
 import typings.antd.libSwitchMod.SwitchSize
 import typings.antd.libTableInterfaceMod.RowSelectionType
 import typings.antd.libTableInterfaceMod.SortOrder
 import typings.antd.libTableInterfaceMod.TableSelectWay
 import typings.antd.libTableInterfaceMod.TableSize
+import typings.antd.libTabsMod.TabsPosition
+import typings.antd.libTabsMod.TabsType
+import typings.antd.libTransferMod.TransferDirection
 import typings.antd.libTransferRenderListBodyMod.OmitProp
+import typings.antd.libTreeDirectoryTreeMod.ExpandAction
 import typings.antd.libUnderscoreUtilResponsiveObserveMod.Breakpoint
-import typings.antd.libUploadInterfaceMod.UploadFileStatus
-import typings.antd.libUploadInterfaceMod.UploadListType
-import typings.antd.libUploadInterfaceMod.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -305,11 +305,11 @@ object antdStrings {
     extends DotPosition
        with typings.antd.libCarouselMod.DotPosition
        with MentionPlacement
-       with typings.antd.libMentionMod.MentionPlacement
        with typings.antd.libMentionsMod.MentionPlacement
-       with typings.antd.esMentionMod.MentionPlacement
+       with typings.antd.esMentionsMod.MentionPlacement
+       with typings.antd.libMentionMod.MentionPlacement
        with TabsPosition
-       with typings.antd.libTabsMod.TabsPosition
+       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
        with placementType
@@ -318,23 +318,23 @@ object antdStrings {
   @js.native
   sealed trait bottomCenter
     extends Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
   
   @js.native
   sealed trait bottomLeft
     extends NotificationPlacement
-       with typings.antd.esNotificationMod.NotificationPlacement
+       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait bottomRight
     extends NotificationPlacement
-       with typings.antd.esNotificationMod.NotificationPlacement
+       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
   
@@ -353,7 +353,7 @@ object antdStrings {
   @js.native
   sealed trait button
     extends ButtonHTMLType
-       with typings.antd.libButtonButtonMod.ButtonHTMLType
+       with typings.antd.esButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait `button-arrow-down` extends js.Object
@@ -382,7 +382,7 @@ object antdStrings {
   @js.native
   sealed trait card
     extends TabsType
-       with typings.antd.libTabsMod.TabsType
+       with typings.antd.esTabsMod.TabsType
   
   @js.native
   sealed trait caret extends js.Object
@@ -424,14 +424,14 @@ object antdStrings {
   @js.native
   sealed trait circle
     extends ButtonShape
-       with typings.antd.libButtonButtonMod.ButtonShape
+       with typings.antd.esButtonButtonMod.ButtonShape
        with ProgressType
-       with typings.antd.libProgressProgressMod.ProgressType
+       with typings.antd.esProgressProgressMod.ProgressType
   
   @js.native
   sealed trait `circle-outline`
     extends ButtonShape
-       with typings.antd.libButtonButtonMod.ButtonShape
+       with typings.antd.esButtonButtonMod.ButtonShape
   
   @js.native
   sealed trait clear extends js.Object
@@ -441,14 +441,14 @@ object antdStrings {
     extends CascaderExpandTrigger
        with typings.antd.esCascaderMod.CascaderExpandTrigger
        with ExpandAction
-       with typings.antd.libTreeDirectoryTreeMod.ExpandAction
+       with typings.antd.esTreeDirectoryTreeMod.ExpandAction
        with TooltipTrigger
        with typings.antd.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait clickTrigger
     extends CollapseType
-       with typings.antd.esLayoutSiderMod.CollapseType
+       with typings.antd.libLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait clip extends js.Object
@@ -471,7 +471,7 @@ object antdStrings {
   @js.native
   sealed trait column
     extends ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait `column-reverse` extends js.Object
@@ -512,14 +512,14 @@ object antdStrings {
     extends BaseType
        with typings.antd.libTypographyBaseMod.BaseType
        with ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
   
   @js.native
   sealed trait dark
     extends MenuTheme
        with typings.antd.esMenuMenuContextMod.MenuTheme
        with SiderTheme
-       with typings.antd.esLayoutSiderMod.SiderTheme
+       with typings.antd.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait darken extends js.Object
@@ -527,39 +527,39 @@ object antdStrings {
   @js.native
   sealed trait dashboard
     extends ProgressType
-       with typings.antd.libProgressProgressMod.ProgressType
+       with typings.antd.esProgressProgressMod.ProgressType
   
   @js.native
   sealed trait dashed
     extends ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait date
     extends DatePickerMode
-       with typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
+       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait decade
     extends DatePickerMode
-       with typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
+       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait default
     extends ButtonSize
-       with typings.antd.libButtonButtonMod.ButtonSize
+       with typings.antd.esButtonButtonMod.ButtonSize
        with ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
        with CardSize
        with typings.antd.libCardMod.CardSize
        with ListSize
-       with typings.antd.libListMod.ListSize
+       with typings.antd.esListMod.ListSize
        with ProgressSize
-       with typings.antd.libProgressProgressMod.ProgressSize
+       with typings.antd.esProgressProgressMod.ProgressSize
        with SpinSize
-       with typings.antd.libSpinMod.SpinSize
+       with typings.antd.esSpinMod.SpinSize
        with SwitchSize
        with typings.antd.esSwitchMod.SwitchSize
        with TableSize
@@ -593,7 +593,7 @@ object antdStrings {
   @js.native
   sealed trait done
     extends UploadFileStatus
-       with typings.antd.esUploadInterfaceMod.UploadFileStatus
+       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait dotted extends js.Object
@@ -604,12 +604,12 @@ object antdStrings {
   @js.native
   sealed trait doubleClick
     extends ExpandAction
-       with typings.antd.libTreeDirectoryTreeMod.ExpandAction
+       with typings.antd.esTreeDirectoryTreeMod.ExpandAction
   
   @js.native
   sealed trait drag
     extends UploadType
-       with typings.antd.esUploadInterfaceMod.UploadType
+       with typings.antd.libUploadInterfaceMod.UploadType
   
   @js.native
   sealed trait dualbutton extends js.Object
@@ -620,7 +620,7 @@ object antdStrings {
   @js.native
   sealed trait `editable-card`
     extends TabsType
-       with typings.antd.libTabsMod.TabsType
+       with typings.antd.esTabsMod.TabsType
   
   @js.native
   sealed trait element extends js.Object
@@ -637,11 +637,11 @@ object antdStrings {
   @js.native
   sealed trait error
     extends IconType
-       with typings.antd.esNotificationMod.IconType
+       with typings.antd.libNotificationMod.IconType
        with NoticeType
        with typings.antd.libMessageMod.NoticeType
        with UploadFileStatus
-       with typings.antd.esUploadInterfaceMod.UploadFileStatus
+       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -709,9 +709,9 @@ object antdStrings {
   @js.native
   sealed trait ghost
     extends ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait grammar extends js.Object
@@ -731,7 +731,7 @@ object antdStrings {
   @js.native
   sealed trait gutter
     extends ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait handleClear
@@ -771,11 +771,11 @@ object antdStrings {
   @js.native
   sealed trait horizontal
     extends FormLayout
-       with typings.antd.libFormFormMod.FormLayout
+       with typings.antd.esFormFormMod.FormLayout
        with ListItemLayout
-       with typings.antd.libListMod.ListItemLayout
+       with typings.antd.esListMod.ListItemLayout
        with MenuMode
-       with typings.antd.esMenuMod.MenuMode
+       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `horizontal-tb` extends js.Object
@@ -814,7 +814,7 @@ object antdStrings {
   @js.native
   sealed trait info
     extends IconType
-       with typings.antd.esNotificationMod.IconType
+       with typings.antd.libNotificationMod.IconType
        with NoticeType
        with typings.antd.libMessageMod.NoticeType
   
@@ -827,9 +827,9 @@ object antdStrings {
   @js.native
   sealed trait `inline`
     extends FormLayout
-       with typings.antd.libFormFormMod.FormLayout
+       with typings.antd.esFormFormMod.FormLayout
        with MenuMode
-       with typings.antd.esMenuMod.MenuMode
+       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `inline-axis` extends js.Object
@@ -882,26 +882,26 @@ object antdStrings {
   @js.native
   sealed trait large
     extends ButtonSize
-       with typings.antd.libButtonButtonMod.ButtonSize
+       with typings.antd.esButtonButtonMod.ButtonSize
        with ListSize
-       with typings.antd.libListMod.ListSize
+       with typings.antd.esListMod.ListSize
        with SpinSize
-       with typings.antd.libSpinMod.SpinSize
+       with typings.antd.esSpinMod.SpinSize
   
   @js.native
   sealed trait left
     extends DotPosition
        with typings.antd.libCarouselMod.DotPosition
        with ExpandIconPosition
-       with typings.antd.esCollapseCollapseMod.ExpandIconPosition
+       with typings.antd.libCollapseCollapseMod.ExpandIconPosition
        with FormLabelAlign
-       with typings.antd.esFormFormItemMod.FormLabelAlign
+       with typings.antd.libFormFormItemMod.FormLabelAlign
        with TabsPosition
-       with typings.antd.libTabsMod.TabsPosition
+       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
        with TransferDirection
-       with typings.antd.libTransferMod.TransferDirection
+       with typings.antd.esTransferMod.TransferDirection
        with placementType
        with typings.antd.libDrawerMod.placementType
   
@@ -920,14 +920,14 @@ object antdStrings {
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait light
     extends MenuTheme
        with typings.antd.esMenuMenuContextMod.MenuTheme
        with SiderTheme
-       with typings.antd.esLayoutSiderMod.SiderTheme
+       with typings.antd.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait lighten extends js.Object
@@ -938,9 +938,9 @@ object antdStrings {
   @js.native
   sealed trait line
     extends ProgressType
-       with typings.antd.libProgressProgressMod.ProgressType
+       with typings.antd.esProgressProgressMod.ProgressType
        with TabsType
-       with typings.antd.libTabsMod.TabsType
+       with typings.antd.esTabsMod.TabsType
   
   @js.native
   sealed trait linearRGB extends js.Object
@@ -948,7 +948,7 @@ object antdStrings {
   @js.native
   sealed trait link
     extends ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
   
   @js.native
   sealed trait list extends js.Object
@@ -1014,7 +1014,7 @@ object antdStrings {
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait `media-controls-background` extends js.Object
@@ -1135,9 +1135,9 @@ object antdStrings {
   @js.native
   sealed trait month
     extends CalendarMode
-       with typings.antd.esCalendarMod.CalendarMode
+       with typings.antd.libCalendarMod.CalendarMode
        with DatePickerMode
-       with typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
+       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait move extends js.Object
@@ -1235,7 +1235,7 @@ object antdStrings {
   @js.native
   sealed trait outline
     extends RadioGroupButtonStyle
-       with typings.antd.esRadioInterfaceMod.RadioGroupButtonStyle
+       with typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
   sealed trait outlined
@@ -1272,12 +1272,12 @@ object antdStrings {
   @js.native
   sealed trait picture
     extends UploadListType
-       with typings.antd.esUploadInterfaceMod.UploadListType
+       with typings.antd.libUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait `picture-card`
     extends UploadListType
-       with typings.antd.esUploadInterfaceMod.UploadListType
+       with typings.antd.libUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait pixelated extends js.Object
@@ -1309,9 +1309,9 @@ object antdStrings {
   @js.native
   sealed trait primary
     extends ButtonType
-       with typings.antd.libButtonButtonMod.ButtonType
+       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait process extends js.Object
@@ -1393,7 +1393,7 @@ object antdStrings {
   @js.native
   sealed trait removed
     extends UploadFileStatus
-       with typings.antd.esUploadInterfaceMod.UploadFileStatus
+       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait repeat extends js.Object
@@ -1401,7 +1401,7 @@ object antdStrings {
   @js.native
   sealed trait reset
     extends ButtonHTMLType
-       with typings.antd.libButtonButtonMod.ButtonHTMLType
+       with typings.antd.esButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait `reset-size` extends js.Object
@@ -1415,7 +1415,7 @@ object antdStrings {
   @js.native
   sealed trait responsive
     extends CollapseType
-       with typings.antd.esLayoutSiderMod.CollapseType
+       with typings.antd.libLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait reverse extends js.Object
@@ -1431,15 +1431,15 @@ object antdStrings {
     extends DotPosition
        with typings.antd.libCarouselMod.DotPosition
        with ExpandIconPosition
-       with typings.antd.esCollapseCollapseMod.ExpandIconPosition
+       with typings.antd.libCollapseCollapseMod.ExpandIconPosition
        with FormLabelAlign
-       with typings.antd.esFormFormItemMod.FormLabelAlign
+       with typings.antd.libFormFormItemMod.FormLabelAlign
        with TabsPosition
-       with typings.antd.libTabsMod.TabsPosition
+       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
        with TransferDirection
-       with typings.antd.libTransferMod.TransferDirection
+       with typings.antd.esTransferMod.TransferDirection
        with placementType
        with typings.antd.libDrawerMod.placementType
   
@@ -1459,7 +1459,7 @@ object antdStrings {
   @js.native
   sealed trait round
     extends ButtonShape
-       with typings.antd.libButtonButtonMod.ButtonShape
+       with typings.antd.esButtonButtonMod.ButtonShape
   
   @js.native
   sealed trait row extends js.Object
@@ -1564,7 +1564,7 @@ object antdStrings {
   @js.native
   sealed trait select
     extends UploadType
-       with typings.antd.esUploadInterfaceMod.UploadType
+       with typings.antd.libUploadInterfaceMod.UploadType
   
   @js.native
   sealed trait `select-after` extends js.Object
@@ -1630,20 +1630,20 @@ object antdStrings {
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait small
     extends ButtonSize
-       with typings.antd.libButtonButtonMod.ButtonSize
+       with typings.antd.esButtonButtonMod.ButtonSize
        with CardSize
        with typings.antd.libCardMod.CardSize
        with ListSize
-       with typings.antd.libListMod.ListSize
+       with typings.antd.esListMod.ListSize
        with ProgressSize
-       with typings.antd.libProgressProgressMod.ProgressSize
+       with typings.antd.esProgressProgressMod.ProgressSize
        with SpinSize
-       with typings.antd.libSpinMod.SpinSize
+       with typings.antd.esSpinMod.SpinSize
        with SwitchSize
        with typings.antd.esSwitchMod.SwitchSize
        with TableSize
@@ -1661,7 +1661,7 @@ object antdStrings {
   @js.native
   sealed trait solid
     extends RadioGroupButtonStyle
-       with typings.antd.esRadioInterfaceMod.RadioGroupButtonStyle
+       with typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
   sealed trait sourceSelectedKeys extends js.Object
@@ -1735,16 +1735,16 @@ object antdStrings {
   @js.native
   sealed trait submit
     extends ButtonHTMLType
-       with typings.antd.libButtonButtonMod.ButtonHTMLType
+       with typings.antd.esButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait success
     extends IconType
-       with typings.antd.esNotificationMod.IconType
+       with typings.antd.libNotificationMod.IconType
        with NoticeType
        with typings.antd.libMessageMod.NoticeType
        with UploadFileStatus
-       with typings.antd.esUploadInterfaceMod.UploadFileStatus
+       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait `super` extends js.Object
@@ -1776,7 +1776,7 @@ object antdStrings {
   @js.native
   sealed trait text
     extends UploadListType
-       with typings.antd.esUploadInterfaceMod.UploadListType
+       with typings.antd.libUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait `text-after-edge` extends js.Object
@@ -1799,7 +1799,7 @@ object antdStrings {
   @js.native
   sealed trait time
     extends DatePickerMode
-       with typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
+       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait `titling-caps` extends js.Object
@@ -1827,11 +1827,11 @@ object antdStrings {
     extends DotPosition
        with typings.antd.libCarouselMod.DotPosition
        with MentionPlacement
-       with typings.antd.libMentionMod.MentionPlacement
        with typings.antd.libMentionsMod.MentionPlacement
-       with typings.antd.esMentionMod.MentionPlacement
+       with typings.antd.esMentionsMod.MentionPlacement
+       with typings.antd.libMentionMod.MentionPlacement
        with TabsPosition
-       with typings.antd.libTabsMod.TabsPosition
+       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
        with placementType
@@ -1840,23 +1840,23 @@ object antdStrings {
   @js.native
   sealed trait topCenter
     extends Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
   
   @js.native
   sealed trait topLeft
     extends NotificationPlacement
-       with typings.antd.esNotificationMod.NotificationPlacement
+       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait topRight
     extends NotificationPlacement
-       with typings.antd.esNotificationMod.NotificationPlacement
+       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.esDropdownDropdownMod.Placement
+       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
        with typings.antd.libTooltipMod.TooltipPlacement
   
@@ -1910,7 +1910,7 @@ object antdStrings {
   @js.native
   sealed trait uploading
     extends UploadFileStatus
-       with typings.antd.esUploadInterfaceMod.UploadFileStatus
+       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait uppercase extends js.Object
@@ -1930,16 +1930,16 @@ object antdStrings {
   @js.native
   sealed trait vertical
     extends FormLayout
-       with typings.antd.libFormFormMod.FormLayout
+       with typings.antd.esFormFormMod.FormLayout
        with ListItemLayout
-       with typings.antd.libListMod.ListItemLayout
+       with typings.antd.esListMod.ListItemLayout
        with MenuMode
-       with typings.antd.esMenuMod.MenuMode
+       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-left`
     extends MenuMode
-       with typings.antd.esMenuMod.MenuMode
+       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-lr` extends js.Object
@@ -1947,7 +1947,7 @@ object antdStrings {
   @js.native
   sealed trait `vertical-right`
     extends MenuMode
-       with typings.antd.esMenuMod.MenuMode
+       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-rl` extends js.Object
@@ -1978,7 +1978,7 @@ object antdStrings {
     extends BaseType
        with typings.antd.libTypographyBaseMod.BaseType
        with IconType
-       with typings.antd.esNotificationMod.IconType
+       with typings.antd.libNotificationMod.IconType
        with NoticeType
        with typings.antd.libMessageMod.NoticeType
   
@@ -1999,28 +1999,28 @@ object antdStrings {
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait xs
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait xxl
     extends Breakpoint
        with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.libListMod.ColumnType
+       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait year
     extends CalendarMode
-       with typings.antd.esCalendarMod.CalendarMode
+       with typings.antd.libCalendarMod.CalendarMode
        with DatePickerMode
-       with typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
+       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait zoom extends js.Object

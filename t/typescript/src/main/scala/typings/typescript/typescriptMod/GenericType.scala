@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.typescript.typescriptMod.FlowType because Already inherited
+- typings.typescript.typescriptMod.Type because Already inherited
+- typings.typescript.typescriptMod.ObjectType because Already inherited
 - typings.typescript.typescriptMod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, typeArguments */ trait GenericType extends InterfaceType {
   var target: GenericType
   var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined

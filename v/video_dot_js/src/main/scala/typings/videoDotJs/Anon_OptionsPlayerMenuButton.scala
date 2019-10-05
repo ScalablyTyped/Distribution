@@ -2,9 +2,9 @@ package typings.videoDotJs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.videoDotJs.videoDotJsMod.videojsNs.MenuButton
-import typings.videoDotJs.videoDotJsMod.videojsNs.MenuButtonOptions
-import typings.videoDotJs.videoDotJsMod.videojsNs.Player
+import typings.videoDotJs.videoDotJsMod.videojs.MenuButton
+import typings.videoDotJs.videoDotJsMod.videojs.MenuButtonOptions
+import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

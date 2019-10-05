@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "ComplexAspect")
 @js.native
 class ComplexAspect ()
-  extends typings.breeze.breezeNs.ComplexAspect
+  extends typings.breeze.breeze.ComplexAspect
 

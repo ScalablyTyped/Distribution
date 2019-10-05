@@ -16,9 +16,9 @@ trait Anon_ChildrenHasValue extends js.Object {
 
 object Anon_ChildrenHasValue {
   @scala.inline
-  def apply(children: ReactNode, hasValue: Boolean, isMulti: Boolean): Anon_ChildrenHasValue = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], hasValue = hasValue, isMulti = isMulti)
-  
+  def apply(hasValue: Boolean, isMulti: Boolean, children: ReactNode = null): Anon_ChildrenHasValue = {
+    val __obj = js.Dynamic.literal(hasValue = hasValue, isMulti = isMulti)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenHasValue]
   }
 }

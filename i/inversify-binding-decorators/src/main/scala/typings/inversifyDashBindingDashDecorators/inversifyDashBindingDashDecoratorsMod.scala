@@ -1,9 +1,9 @@
 package typings.inversifyDashBindingDashDecorators
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Container
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ContainerModule
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier
-import typings.inversifyDashBindingDashDecorators.dtsInterfacesInterfacesMod.interfacesNs.ProvideInWhenOnSyntax
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ContainerModule
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
+import typings.inversifyDashBindingDashDecorators.dtsInterfacesInterfacesMod.interfaces.ProvideInWhenOnSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.TextRiskIdentificationType
+import typings.aliDashApp.my.TextRiskIdentificationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

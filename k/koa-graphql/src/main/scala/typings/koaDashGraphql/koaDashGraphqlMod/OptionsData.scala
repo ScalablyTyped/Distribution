@@ -7,6 +7,7 @@ import typings.graphql.graphqlMod.GraphQLSchema
 import typings.graphql.graphqlMod.ValidationContext
 import typings.graphql.languageVisitorMod.ASTVisitor
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +69,7 @@ object OptionsData {
     schema: GraphQLSchema,
     context: js.Any = null,
     extensions: /* info */ RequestInfo => StringDictionary[_] = null,
-    fieldResolver: GraphQLFieldResolver[_, _, StringDictionary[_]] = null,
+    fieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: (/* error */ GraphQLError, /* context */ js.UndefOr[js.Any]) => _ = null,
     graphiql: js.UndefOr[Boolean] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
@@ -78,7 +79,7 @@ object OptionsData {
     val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
     if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction2(formatError))
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)

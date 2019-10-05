@@ -1,5 +1,6 @@
 package typings.tern.libInferMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,4 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.tern.libInferMod.Prim
 */
 trait Type extends js.Object
+
+@JSImport("tern/lib/infer", "Type")
+@js.native
+object Type extends TopLevel[TypeConstructor]
 

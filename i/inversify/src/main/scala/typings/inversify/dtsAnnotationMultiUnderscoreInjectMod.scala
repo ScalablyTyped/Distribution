@@ -1,6 +1,6 @@
 package typings.inversify
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

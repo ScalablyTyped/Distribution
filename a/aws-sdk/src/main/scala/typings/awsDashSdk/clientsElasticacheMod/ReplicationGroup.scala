@@ -78,11 +78,11 @@ trait ReplicationGroup extends js.Object {
 object ReplicationGroup {
   @scala.inline
   def apply(
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AuthTokenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     AutomaticFailover: AutomaticFailoverStatus = null,
     CacheNodeType: String = null,
-    ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    ClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ConfigurationEndpoint: Endpoint = null,
     Description: String = null,
     KmsKeyId: String = null,
@@ -90,11 +90,11 @@ object ReplicationGroup {
     NodeGroups: NodeGroupList = null,
     PendingModifiedValues: ReplicationGroupPendingModifiedValues = null,
     ReplicationGroupId: String = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null,
     SnapshottingClusterId: String = null,
     Status: String = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ReplicationGroup = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled)
@@ -109,7 +109,7 @@ object ReplicationGroup {
     if (NodeGroups != null) __obj.updateDynamic("NodeGroups")(NodeGroups)
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     if (SnapshottingClusterId != null) __obj.updateDynamic("SnapshottingClusterId")(SnapshottingClusterId)
     if (Status != null) __obj.updateDynamic("Status")(Status)

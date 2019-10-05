@@ -1,5 +1,6 @@
 package typings.dvtngDashJss
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,4 +36,8 @@ trait JSS extends js.Object {
     */
   def set(s: String, p: Properties): Unit = js.native
 }
+
+@JSGlobal("jss")
+@js.native
+object jss extends TopLevel[JSS]
 

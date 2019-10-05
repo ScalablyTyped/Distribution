@@ -38,7 +38,7 @@ object Record {
     Key: RecordKey = null,
     LastModifiedBy: String = null,
     LastModifiedDate: _Date = null,
-    SyncCount: js.UndefOr[Long] = js.undefined,
+    SyncCount: Int | Double = null,
     Value: RecordValue = null
   ): Record = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object Record {
     if (Key != null) __obj.updateDynamic("Key")(Key)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(SyncCount)) __obj.updateDynamic("SyncCount")(SyncCount)
+    if (SyncCount != null) __obj.updateDynamic("SyncCount")(SyncCount.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value)
     __obj.asInstanceOf[Record]
   }

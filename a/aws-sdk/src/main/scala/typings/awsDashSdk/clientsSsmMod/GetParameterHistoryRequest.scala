@@ -27,12 +27,12 @@ object GetParameterHistoryRequest {
   @scala.inline
   def apply(
     Name: PSParameterName,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
-    WithDecryption: js.UndefOr[Boolean] = js.undefined
+    WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
   ): GetParameterHistoryRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (!js.isUndefined(WithDecryption)) __obj.updateDynamic("WithDecryption")(WithDecryption)
     __obj.asInstanceOf[GetParameterHistoryRequest]

@@ -2,13 +2,14 @@ package typings.mendixmodelsdk.distSdkInternalElementsMod
 
 import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.Structure
-import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliasesNs.Container
-import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliasesNs.IContainer
+import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.Container
+import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "AbstractElement")
 @js.native
 abstract class AbstractElement protected ()

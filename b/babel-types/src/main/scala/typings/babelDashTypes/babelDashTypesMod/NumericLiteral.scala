@@ -36,3 +36,10 @@ object NumericLiteral {
   }
 }
 
+@JSImport("babel-types", "numericLiteral")
+@js.native
+object numericLiteral extends js.Object {
+  def apply(): NumericLiteral = js.native
+  def apply(value: Double): NumericLiteral = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.DataNs.JsonNs.JsonArray
+import typings.winrt.Windows.Data.Json.JsonArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

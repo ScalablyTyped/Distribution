@@ -1,5 +1,6 @@
 package typings.restifyDashPlugins.restifyDashPluginsMod
 
+import typings.restify.restifyMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,5 +45,12 @@ object MultipartBodyParser {
     if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
     __obj.asInstanceOf[MultipartBodyParser]
   }
+}
+
+@JSImport("restify-plugins", "multipartBodyParser")
+@js.native
+object multipartBodyParser extends js.Object {
+  def apply(): RequestHandler = js.native
+  def apply(options: MultipartBodyParser): RequestHandler = js.native
 }
 

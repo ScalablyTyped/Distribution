@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mkdirpDashPromiseMod extends js.Object {
   def apply(path: String): js.Promise[Made] = js.native
-  def apply(path: String, opts: Mode | Options): js.Promise[Made] = js.native
+  def apply(path: String, opts: Mode): js.Promise[Made] = js.native
+  def apply(path: String, opts: Options): js.Promise[Made] = js.native
 }
 

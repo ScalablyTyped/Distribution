@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.RestApiEndpointConfiguration
+import typings.atPulumiAws.typesOutputMod.apigateway.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "rcloader"
-version := "0.0-unknown-dt-20190322Z-9cd10e"
-scalaVersion := "2.12.9"
+version := "0.0-unknown-dt-20190322Z-cf88e5"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

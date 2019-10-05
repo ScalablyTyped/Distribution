@@ -28,12 +28,12 @@ object SearchTransitGatewayRoutesRequest {
   def apply(
     Filters: FilterList,
     TransitGatewayRouteTableId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | scala.Double = null
   ): SearchTransitGatewayRoutesRequest = {
     val __obj = js.Dynamic.literal(Filters = Filters, TransitGatewayRouteTableId = TransitGatewayRouteTableId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTransitGatewayRoutesRequest]
   }
 }

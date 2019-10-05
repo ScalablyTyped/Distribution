@@ -36,16 +36,16 @@ object LocalSecondaryIndexDescription {
   def apply(
     IndexArn: String = null,
     IndexName: IndexName = null,
-    IndexSizeBytes: js.UndefOr[Long] = js.undefined,
-    ItemCount: js.UndefOr[Long] = js.undefined,
+    IndexSizeBytes: Int | scala.Double = null,
+    ItemCount: Int | scala.Double = null,
     KeySchema: KeySchema = null,
     Projection: Projection = null
   ): LocalSecondaryIndexDescription = {
     val __obj = js.Dynamic.literal()
     if (IndexArn != null) __obj.updateDynamic("IndexArn")(IndexArn)
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
-    if (!js.isUndefined(IndexSizeBytes)) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes)
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (IndexSizeBytes != null) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes.asInstanceOf[js.Any])
+    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
     if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
     if (Projection != null) __obj.updateDynamic("Projection")(Projection)
     __obj.asInstanceOf[LocalSecondaryIndexDescription]

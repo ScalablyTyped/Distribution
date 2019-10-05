@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TypeArgumentInferenceContext")
 @js.native
 class TypeArgumentInferenceContext protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TypeArgumentInferenceContext {
+  extends typings.typescriptDashServices.TypeScript.TypeArgumentInferenceContext {
   def this(
-    resolver: typings.typescriptDashServices.TypeScriptNs.PullTypeResolver,
-    context: typings.typescriptDashServices.TypeScriptNs.PullTypeResolutionContext,
-    signatureBeingInferred: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol
+    resolver: typings.typescriptDashServices.TypeScript.PullTypeResolver,
+    context: typings.typescriptDashServices.TypeScript.PullTypeResolutionContext,
+    signatureBeingInferred: typings.typescriptDashServices.TypeScript.PullSignatureSymbol
   ) = this()
 }
 

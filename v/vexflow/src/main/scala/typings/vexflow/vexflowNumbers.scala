@@ -1,18 +1,18 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.AnnotationNs.Justify
-import typings.vexflow.VexNs.FlowNs.AnnotationNs.VerticalJustify
-import typings.vexflow.VexNs.FlowNs.CurveNs.Position
-import typings.vexflow.VexNs.FlowNs.PedalMarkingNs.Styles
-import typings.vexflow.VexNs.FlowNs.RendererNs.Backends
-import typings.vexflow.VexNs.FlowNs.RendererNs.LineEndType
-import typings.vexflow.VexNs.FlowNs.StaveLineNs.TextJustification
-import typings.vexflow.VexNs.FlowNs.StaveLineNs.TextVerticalPosition
-import typings.vexflow.VexNs.FlowNs.StrokeNs.Type
-import typings.vexflow.VexNs.FlowNs.TextBracketNs.Positions
-import typings.vexflow.VexNs.FlowNs.TextNoteNs.Justification
-import typings.vexflow.VexNs.FlowNs.VoiceNs.Mode
-import typings.vexflow.VexNs.FlowNs.VoltaNs.`type`
+import typings.vexflow.Vex.Flow.Annotation.Justify
+import typings.vexflow.Vex.Flow.Annotation.VerticalJustify
+import typings.vexflow.Vex.Flow.Curve.Position
+import typings.vexflow.Vex.Flow.PedalMarking.Styles
+import typings.vexflow.Vex.Flow.Renderer.Backends
+import typings.vexflow.Vex.Flow.Renderer.LineEndType
+import typings.vexflow.Vex.Flow.StaveLine.TextJustification
+import typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition
+import typings.vexflow.Vex.Flow.Stroke.Type
+import typings.vexflow.Vex.Flow.TextBracket.Positions
+import typings.vexflow.Vex.Flow.TextNote.Justification
+import typings.vexflow.Vex.Flow.Voice.Mode
+import typings.vexflow.Vex.Flow.Volta.`type`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,17 +29,17 @@ object vexflowNumbers {
        with LineEndType
        with Mode
        with Position
-       with typings.vexflow.VexNs.FlowNs.ModifierNs.Position
+       with typings.vexflow.Vex.Flow.Modifier.Position
        with Styles
        with TextJustification
        with TextVerticalPosition
        with Type
        with VerticalJustify
        with `type`
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveHairpinNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
+       with typings.vexflow.Vex.Flow.StaveHairpin.`type`
   
   @js.native
   sealed trait `1`
@@ -49,8 +49,8 @@ object vexflowNumbers {
        with LineEndType
        with Mode
        with Position
-       with typings.vexflow.VexNs.FlowNs.ModifierNs.Position
-       with typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
+       with typings.vexflow.Vex.Flow.Modifier.Position
+       with typings.vexflow.Vex.Flow.StaveModifier.Position
        with Positions
        with Styles
        with TextJustification
@@ -58,72 +58,72 @@ object vexflowNumbers {
        with Type
        with VerticalJustify
        with `type`
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveHairpinNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
+       with typings.vexflow.Vex.Flow.StaveHairpin.`type`
   
   @js.native
   sealed trait `10`
-    extends typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
+    extends typings.vexflow.Vex.Flow.Repetition.`type`
   
   @js.native
   sealed trait `2`
     extends Backends
        with Justify
-       with typings.vexflow.VexNs.FlowNs.ModifierNs.Position
-       with typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
+       with typings.vexflow.Vex.Flow.Modifier.Position
+       with typings.vexflow.Vex.Flow.StaveModifier.Position
        with Type
        with VerticalJustify
        with `type`
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
   
   @js.native
   sealed trait `3`
-    extends typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
+    extends typings.vexflow.Vex.Flow.StaveModifier.Position
        with Type
        with `type`
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
   
   @js.native
   sealed trait `4`
-    extends typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
+    extends typings.vexflow.Vex.Flow.StaveModifier.Position
        with Type
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
   
   @js.native
   sealed trait `5`
-    extends typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
+    extends typings.vexflow.Vex.Flow.StaveModifier.Position
        with Type
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
-       with typings.vexflow.VexNs.FlowNs.BarlineNs.`type`
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
+       with typings.vexflow.Vex.Flow.Barline.`type`
   
   @js.native
   sealed trait `6`
-    extends typings.vexflow.VexNs.FlowNs.StaveModifierNs.Position
-       with typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
+    extends typings.vexflow.Vex.Flow.StaveModifier.Position
+       with typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
   
   @js.native
   sealed trait `7`
-    extends typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
+    extends typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
   
   @js.native
   sealed trait `8`
-    extends typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
-       with typings.vexflow.VexNs.FlowNs.StaveConnectorNs.`type`
+    extends typings.vexflow.Vex.Flow.Repetition.`type`
+       with typings.vexflow.Vex.Flow.StaveConnector.`type`
   
   @js.native
   sealed trait `9`
-    extends typings.vexflow.VexNs.FlowNs.RepetitionNs.`type`
+    extends typings.vexflow.Vex.Flow.Repetition.`type`
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

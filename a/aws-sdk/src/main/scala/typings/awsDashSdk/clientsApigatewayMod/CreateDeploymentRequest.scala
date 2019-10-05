@@ -47,13 +47,13 @@ object CreateDeploymentRequest {
   @scala.inline
   def apply(
     restApiId: String,
-    cacheClusterEnabled: js.UndefOr[NullableBoolean] = js.undefined,
+    cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     cacheClusterSize: CacheClusterSize = null,
     canarySettings: DeploymentCanarySettings = null,
     description: String = null,
     stageDescription: String = null,
     stageName: String = null,
-    tracingEnabled: js.UndefOr[NullableBoolean] = js.undefined,
+    tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     variables: MapOfStringToString = null
   ): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)

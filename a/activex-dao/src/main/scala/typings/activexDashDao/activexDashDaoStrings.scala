@@ -1,6 +1,6 @@
 package typings.activexDashDao
 
-import typings.activexDashDao.DAONs.LanguageConstants
+import typings.activexDashDao.DAO.LanguageConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

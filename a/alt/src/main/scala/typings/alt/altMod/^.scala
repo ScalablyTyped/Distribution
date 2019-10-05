@@ -1,9 +1,9 @@
 package typings.alt.altMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.alt.AltJSNs.Alt
-import typings.alt.AltJSNs.AltConfig
-import typings.alt.AltJSNs.AltFactory
+import typings.alt.AltJS.Alt
+import typings.alt.AltJS.AltConfig
+import typings.alt.AltJS.AltFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

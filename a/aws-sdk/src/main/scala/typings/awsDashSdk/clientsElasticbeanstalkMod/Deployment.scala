@@ -26,13 +26,13 @@ trait Deployment extends js.Object {
 object Deployment {
   @scala.inline
   def apply(
-    DeploymentId: js.UndefOr[NullableLong] = js.undefined,
+    DeploymentId: Int | Double = null,
     DeploymentTime: DeploymentTimestamp = null,
     Status: String = null,
     VersionLabel: String = null
   ): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeploymentId)) __obj.updateDynamic("DeploymentId")(DeploymentId)
+    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
     if (DeploymentTime != null) __obj.updateDynamic("DeploymentTime")(DeploymentTime)
     if (Status != null) __obj.updateDynamic("Status")(Status)
     if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel)

@@ -1,6 +1,6 @@
 package typings.baconjs
 
-import typings.baconjs.BaconNs.EventStream
+import typings.baconjs.Bacon.EventStream
 import typings.jquery.JQueryEventObject
 import typings.std.ErrorEvent
 import scala.scalajs.js

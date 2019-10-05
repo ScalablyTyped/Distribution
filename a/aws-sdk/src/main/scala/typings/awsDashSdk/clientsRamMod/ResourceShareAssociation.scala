@@ -49,7 +49,7 @@ object ResourceShareAssociation {
     associatedEntity: String = null,
     associationType: ResourceShareAssociationType = null,
     creationTime: DateTime = null,
-    external: js.UndefOr[Boolean] = js.undefined,
+    external: js.UndefOr[scala.Boolean] = js.undefined,
     lastUpdatedTime: DateTime = null,
     resourceShareArn: String = null,
     resourceShareName: String = null,

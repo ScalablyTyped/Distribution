@@ -132,31 +132,31 @@ object RestoreDBClusterFromS3Message {
     SourceEngine: String,
     SourceEngineVersion: String,
     AvailabilityZones: AvailabilityZones = null,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    BacktrackWindow: Int | scala.Double = null,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CharacterSetName: String = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     S3Prefix: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBClusterFromS3Message = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine, MasterUserPassword = MasterUserPassword, MasterUsername = MasterUsername, S3BucketName = S3BucketName, S3IngestionRoleArn = S3IngestionRoleArn, SourceEngine = SourceEngine, SourceEngineVersion = SourceEngineVersion)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BacktrackWindow != null) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.asInstanceOf[js.Any])
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
@@ -168,7 +168,7 @@ object RestoreDBClusterFromS3Message {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (S3Prefix != null) __obj.updateDynamic("S3Prefix")(S3Prefix)

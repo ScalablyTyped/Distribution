@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocTypeParameter
 import typings.astDashTypes.genKindsMod.TSTypeParameterKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSInferType
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSInferType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

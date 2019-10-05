@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSidebar
 
-import typings.semanticDashUiDashSidebar.SemanticUINs.Sidebar
-import typings.semanticDashUiDashSidebar.SemanticUINs.SidebarSettings
+import typings.semanticDashUiDashSidebar.SemanticUI.Sidebar
+import typings.semanticDashUiDashSidebar.SemanticUI.SidebarSettings
 import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.`add body CSS`
 import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.`attach events`
 import typings.semanticDashUiDashSidebar.semanticDashUiDashSidebarStrings.`get direction`

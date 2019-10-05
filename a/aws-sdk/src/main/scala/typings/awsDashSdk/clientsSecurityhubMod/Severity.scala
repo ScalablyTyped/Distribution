@@ -17,9 +17,9 @@ trait Severity extends js.Object {
 
 object Severity {
   @scala.inline
-  def apply(Normalized: Integer, Product: js.UndefOr[Double] = js.undefined): Severity = {
+  def apply(Normalized: Integer, Product: Int | scala.Double = null): Severity = {
     val __obj = js.Dynamic.literal(Normalized = Normalized)
-    if (!js.isUndefined(Product)) __obj.updateDynamic("Product")(Product)
+    if (Product != null) __obj.updateDynamic("Product")(Product.asInstanceOf[js.Any])
     __obj.asInstanceOf[Severity]
   }
 }

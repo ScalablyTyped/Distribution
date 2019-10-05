@@ -1,7 +1,7 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy
-import typings.cassandraDashDriver.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy
+import typings.cassandraDashDriver.cassandraDashDriverMod.policies.loadBalancing.LoadBalancingPolicy
+import typings.cassandraDashDriver.cassandraDashDriverMod.policies.retry.RetryPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.ptyDotJs.ptyDotJsMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.netMod.Socket
 import typings.ptyDotJs.Anon_End
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.typescriptDashCompare
 
-import typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends
+import typings.typescriptDashCompare.typescriptDashCompareMod.prv.Extends
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

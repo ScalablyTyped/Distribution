@@ -1,11 +1,10 @@
 package typings.pickadate
 
-import typings.pickadate.PickadateNs.DateOptions
-import typings.pickadate.PickadateNs.DatePicker
-import typings.pickadate.PickadateNs.Pickadate
-import typings.pickadate.PickadateNs.Pickatime
-import typings.pickadate.PickadateNs.TimeOptions
-import typings.pickadate.PickadateNs.TimePicker
+import typings.pickadate.Pickadate.DateOptions
+import typings.pickadate.Pickadate.DatePicker
+import typings.pickadate.Pickadate.Pickatime
+import typings.pickadate.Pickadate.TimeOptions
+import typings.pickadate.Pickadate.TimePicker
 import typings.pickadate.pickadateStrings.DOLLARnode
 import typings.pickadate.pickadateStrings.DOLLARroot
 import typings.pickadate.pickadateStrings._hidden
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   @JSName("pickadate")
-  var pickadate_Original: Pickadate = js.native
+  var pickadate_Original: typings.pickadate.Pickadate.Pickadate = js.native
   @JSName("pickatime")
   var pickatime_Original: Pickatime = js.native
   /**

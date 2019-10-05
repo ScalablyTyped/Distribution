@@ -953,9 +953,8 @@ import scala.scalajs.js.annotation._
 object atBlueprintjsIconsMod extends js.Object {
   val IconSvgPaths16: Record[IconName, js.Array[String]] = js.native
   val IconSvgPaths20: Record[IconName, js.Array[String]] = js.native
-  @JSName("IconContents")
   @js.native
-  object IconContentsNs extends js.Object {
+  object IconContents extends js.Object {
     val ADD: BACKSLASHuE63E = js.native
     val ADD_COLUMN_LEFT: BACKSLASHuE6F9 = js.native
     val ADD_COLUMN_RIGHT: BACKSLASHuE6FA = js.native
@@ -1430,9 +1429,8 @@ object atBlueprintjsIconsMod extends js.Object {
     val ZOOM_TO_FIT: BACKSLASHuE67B = js.native
   }
   
-  @JSName("IconNames")
   @js.native
-  object IconNamesNs extends js.Object {
+  object IconNames extends js.Object {
     val ADD: add = js.native
     val ADD_COLUMN_LEFT: `add-column-left` = js.native
     val ADD_COLUMN_RIGHT: `add-column-right` = js.native

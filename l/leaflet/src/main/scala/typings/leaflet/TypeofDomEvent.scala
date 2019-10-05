@@ -1,7 +1,7 @@
 package typings.leaflet
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.leaflet.leafletMod.DomEventNs.EventHandlerFn
+import typings.leaflet.leafletMod.DomEvent.EventHandlerFn
 import typings.leaflet.leafletMod.Point
 import typings.std.Event
 import typings.std.HTMLElement

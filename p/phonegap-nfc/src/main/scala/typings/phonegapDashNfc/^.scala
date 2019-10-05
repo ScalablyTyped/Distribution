@@ -1,8 +1,8 @@
 package typings.phonegapDashNfc
 
-import typings.phonegapDashNfc.PhoneGapNfcNs.Ndef
-import typings.phonegapDashNfc.PhoneGapNfcNs.Nfc
-import typings.phonegapDashNfc.PhoneGapNfcNs.Util
+import typings.phonegapDashNfc.PhoneGapNfc.Ndef
+import typings.phonegapDashNfc.PhoneGapNfc.Nfc
+import typings.phonegapDashNfc.PhoneGapNfc.Util
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

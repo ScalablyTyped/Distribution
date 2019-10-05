@@ -13,7 +13,7 @@ trait LaunchTemplatesMonitoringRequest extends js.Object {
 
 object LaunchTemplatesMonitoringRequest {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): LaunchTemplatesMonitoringRequest = {
+  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined): LaunchTemplatesMonitoringRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[LaunchTemplatesMonitoringRequest]

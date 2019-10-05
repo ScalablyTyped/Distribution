@@ -3,8 +3,8 @@ package typings.videoDotJs
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.std.Element
-import typings.videoDotJs.videoDotJsMod.videojsNs.Player
-import typings.videoDotJs.videoDotJsMod.videojsNs.PlayerOptions
+import typings.videoDotJs.videoDotJsMod.videojs.Player
+import typings.videoDotJs.videoDotJsMod.videojs.PlayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

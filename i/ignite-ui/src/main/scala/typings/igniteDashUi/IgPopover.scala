@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -166,8 +167,8 @@ object IgPopover {
     directionPriority: js.Array[_] = null,
     headerTemplate: IgPopoverHeaderTemplate = null,
     height: Double | String = null,
-    hidden: HiddenEvent = null,
-    hiding: HidingEvent = null,
+    hidden: (/* event */ Event, /* ui */ HiddenEventUIParam) => Unit = null,
+    hiding: (/* event */ Event, /* ui */ HidingEventUIParam) => Unit = null,
     language: String = null,
     locale: js.Any = null,
     maxHeight: Double | String = null,
@@ -177,8 +178,8 @@ object IgPopover {
     regional: String | js.Object = null,
     selectors: String = null,
     showOn: String = null,
-    showing: ShowingEvent = null,
-    shown: ShownEvent = null,
+    showing: (/* event */ Event, /* ui */ ShowingEventUIParam) => Unit = null,
+    shown: (/* event */ Event, /* ui */ ShownEventUIParam) => Unit = null,
     width: Double | String = null
   ): IgPopover = {
     val __obj = js.Dynamic.literal()
@@ -192,8 +193,8 @@ object IgPopover {
     if (directionPriority != null) __obj.updateDynamic("directionPriority")(directionPriority)
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
-    if (hiding != null) __obj.updateDynamic("hiding")(hiding)
+    if (hidden != null) __obj.updateDynamic("hidden")(js.Any.fromFunction2(hidden))
+    if (hiding != null) __obj.updateDynamic("hiding")(js.Any.fromFunction2(hiding))
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
@@ -203,8 +204,8 @@ object IgPopover {
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (selectors != null) __obj.updateDynamic("selectors")(selectors)
     if (showOn != null) __obj.updateDynamic("showOn")(showOn)
-    if (showing != null) __obj.updateDynamic("showing")(showing)
-    if (shown != null) __obj.updateDynamic("shown")(shown)
+    if (showing != null) __obj.updateDynamic("showing")(js.Any.fromFunction2(showing))
+    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction2(shown))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPopover]
   }

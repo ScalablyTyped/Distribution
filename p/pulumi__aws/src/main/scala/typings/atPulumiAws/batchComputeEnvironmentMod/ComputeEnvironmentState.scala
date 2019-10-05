@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchComputeEnvironmentMod
 
-import typings.atPulumiAws.typesInputMod.batchNs.ComputeEnvironmentComputeResources
+import typings.atPulumiAws.typesInputMod.batch.ComputeEnvironmentComputeResources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

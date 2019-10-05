@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codecommitTriggerMod
 
-import typings.atPulumiAws.typesInputMod.codecommitNs.TriggerTrigger
+import typings.atPulumiAws.typesInputMod.codecommit.TriggerTrigger
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

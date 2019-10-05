@@ -30,45 +30,21 @@ trait TSDeclareMethod extends Node {
   var type_TSDeclareMethod: typings.babelDashTypes.babelDashTypesStrings.TSDeclareMethod
 }
 
-object TSDeclareMethod {
-  @scala.inline
+@JSImport("babel-types", "TSDeclareMethod")
+@js.native
+object TSDeclareMethod extends js.Object {
   def apply(
-    async: Boolean,
-    computed: Boolean,
-    end: Double,
-    generator: Boolean,
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
     key: Expression,
-    kind: get | set | method | constructor,
-    loc: SourceLocation,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | Null],
+    params: js.Array[LVal]
+  ): TSDeclareMethod = js.native
+  def apply(
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    key: Expression,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Noop | Null],
     params: js.Array[LVal],
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSDeclareMethod,
-    `abstract`: js.UndefOr[Boolean] = js.undefined,
-    access: public | `private` | `protected` = null,
-    accessibility: public | `private` | `protected` = null,
-    decorators: js.Array[Decorator] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
-    static: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration | Noop = null
-  ): TSDeclareMethod = {
-    val __obj = js.Dynamic.literal(async = async, computed = computed, end = end, generator = generator, key = key, kind = kind.asInstanceOf[js.Any], loc = loc, params = params, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSDeclareMethod]
-  }
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
+  ): TSDeclareMethod = js.native
 }
 

@@ -8,23 +8,26 @@ package object webpackMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.Record
   import typings.std.RegExp
-  import typings.webpack.webpackMod.EvalSourceMapDevToolPluginNs.Options
-  import typings.webpack.webpackMod.OptionsNs.Performance
-  import typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.CommentFilter
+  import typings.webpack.webpackMod.Options.Performance
+  import typings.webpack.webpackMod.optimize.UglifyJsPlugin.CommentFilter
 
   type AuxiliaryCommentObject = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in webpack.webpack.LibraryTarget ]: string}
     */ typings.webpack.webpackStrings.AuxiliaryCommentObject with js.Any
+  type BannerPlugin = BannerPlugin_
   /**
     * @deprecated Use RuleSetCondition instead
     */
   type Condition = RuleSetCondition
+  type DllPlugin = DllPlugin_
+  type DllReferencePlugin = DllReferencePlugin_
   type Entry = StringDictionary[String | js.Array[String]]
   type EntryFunc = js.Function0[
     String | js.Array[String] | Entry | (js.Promise[String | js.Array[String] | Entry])
   ]
+  type EvalSourceMapDevToolPlugin = EvalSourceMapDevToolPlugin_
   /** @deprecated use webpack.EvalSourceMapDevToolPlugin.Options */
-  type EvalSourceMapDevToolPluginOptions = Options
+  type EvalSourceMapDevToolPluginOptions = typings.webpack.webpackMod.EvalSourceMapDevToolPlugin.Options
   type ExternalsElement = String | RegExp | ExternalsObjectElement | ExternalsFunctionElement
   type ExternalsFunctionElement = js.Function3[
     /* context */ js.Any, 
@@ -35,6 +38,7 @@ package object webpackMod {
   type ExternalsObjectElement = StringDictionary[
     Boolean | String | js.Array[String] | (Record[String, String | js.Array[String]])
   ]
+  type ICompiler = ICompiler_
   type Loader = String | NewLoader
   /** @deprecated use webpack.Options.Performance */
   type PerformanceOptions = Performance
@@ -53,12 +57,14 @@ package object webpackMod {
   type RuleSetQuery = String | StringDictionary[js.Any]
   type RuleSetUse = RuleSetUseItem | js.Array[RuleSetUseItem] | (js.Function1[/* data */ js.Any, RuleSetUseItem | js.Array[RuleSetUseItem]])
   type RuleSetUseItem = String | RuleSetLoader | (js.Function1[/* data */ js.Any, String | RuleSetLoader])
+  type SourceMapDevToolPlugin = SourceMapDevToolPlugin_
   /** @deprecated use webpack.SourceMapDevToolPlugin.Options */
-  type SourceMapDevToolPluginOptions = typings.webpack.webpackMod.SourceMapDevToolPluginNs.Options
+  type SourceMapDevToolPluginOptions = typings.webpack.webpackMod.SourceMapDevToolPlugin.Options
+  type Stats = Stats_
   /** @deprecated use webpack.optimize.UglifyJsPlugin.CommentFilter */
   type UglifyCommentFunction = CommentFilter
   /** @deprecated use webpack.optimize.UglifyJsPlugin.Options */
-  type UglifyPluginOptions = typings.webpack.webpackMod.optimizeNs.UglifyJsPluginNs.Options
+  type UglifyPluginOptions = typings.webpack.webpackMod.optimize.UglifyJsPlugin.Options
   /** @deprecated use webpack.Options.WatchOptions */
-  type WatchOptions = typings.webpack.webpackMod.OptionsNs.WatchOptions
+  type WatchOptions = typings.webpack.webpackMod.Options.WatchOptions
 }

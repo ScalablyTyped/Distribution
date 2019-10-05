@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.Tab
+import typings.jpm.FFAddonSDK.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

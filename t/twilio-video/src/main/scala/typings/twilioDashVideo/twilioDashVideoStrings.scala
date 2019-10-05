@@ -3,8 +3,8 @@ package typings.twilioDashVideo
 import typings.twilioDashVideo.twilioDashVideoMod.AudioCodec
 import typings.twilioDashVideo.twilioDashVideoMod.BandwidthProfileMode
 import typings.twilioDashVideo.twilioDashVideoMod.LogLevel
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Kind
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Priority
+import typings.twilioDashVideo.twilioDashVideoMod.Track.Kind
+import typings.twilioDashVideo.twilioDashVideoMod.Track.Priority
 import typings.twilioDashVideo.twilioDashVideoMod.VideoCodec
 import scala.scalajs.js
 import scala.scalajs.js.`|`

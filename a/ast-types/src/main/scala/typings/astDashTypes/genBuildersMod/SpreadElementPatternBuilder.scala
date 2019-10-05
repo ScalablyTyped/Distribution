@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_ArgumentCommentsLocArray
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.SpreadElementPattern
+import typings.astDashTypes.genNamedTypesMod.namedTypes.SpreadElementPattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

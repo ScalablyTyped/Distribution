@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2PeeringConnectionOptionsMod
 
-import typings.atPulumiAws.typesOutputMod.ec2Ns.PeeringConnectionOptionsAccepter
-import typings.atPulumiAws.typesOutputMod.ec2Ns.PeeringConnectionOptionsRequester
+import typings.atPulumiAws.typesOutputMod.ec2.PeeringConnectionOptionsAccepter
+import typings.atPulumiAws.typesOutputMod.ec2.PeeringConnectionOptionsRequester
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

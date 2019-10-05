@@ -52,3 +52,27 @@ object TSPropertySignature {
   }
 }
 
+@JSImport("@babel/types", "tsPropertySignature")
+@js.native
+object tsPropertySignature extends js.Object {
+  def apply(key: Expression): TSPropertySignature = js.native
+  def apply(key: Expression, typeAnnotation: TSTypeAnnotation): TSPropertySignature = js.native
+  def apply(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression): TSPropertySignature = js.native
+  def apply(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression, computed: Boolean): TSPropertySignature = js.native
+  def apply(
+    key: Expression,
+    typeAnnotation: TSTypeAnnotation,
+    initializer: Expression,
+    computed: Boolean,
+    optional: Boolean
+  ): TSPropertySignature = js.native
+  def apply(
+    key: Expression,
+    typeAnnotation: TSTypeAnnotation,
+    initializer: Expression,
+    computed: Boolean,
+    optional: Boolean,
+    readonly: Boolean
+  ): TSPropertySignature = js.native
+}
+

@@ -40,3 +40,9 @@ object StringLiteral {
   }
 }
 
+@JSImport("@babel/types", "stringLiteral")
+@js.native
+object stringLiteral extends js.Object {
+  def apply(value: String): StringLiteral = js.native
+}
+

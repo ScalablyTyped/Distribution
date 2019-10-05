@@ -35,17 +35,17 @@ object Anon_FrameHeight {
   @scala.inline
   def apply(
     frame: String = null,
-    height: js.UndefOr[integer] = js.undefined,
+    height: Int | Double = null,
     key: String = null,
-    width: js.UndefOr[integer] = js.undefined,
+    width: Int | Double = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): Anon_FrameHeight = {
     val __obj = js.Dynamic.literal()
     if (frame != null) __obj.updateDynamic("frame")(frame)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FrameHeight]

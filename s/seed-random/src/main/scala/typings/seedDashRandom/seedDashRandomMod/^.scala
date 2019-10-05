@@ -10,6 +10,5 @@ object ^ extends js.Object {
   def apply(): js.Function0[Double] = js.native
   def apply(seed: String): js.Function0[Double] = js.native
   def apply(seed: String, options: Options): js.Function0[Double] = js.native
-  def resetGlobal(): Unit = js.native
 }
 

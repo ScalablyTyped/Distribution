@@ -1,6 +1,6 @@
 package typings.markerDashAnimateDashUnobtrusive
 
-import typings.markerDashAnimateDashUnobtrusive.jQueryNs.easingNs.IEasingType
+import typings.markerDashAnimateDashUnobtrusive.jQuery.easing.IEasingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

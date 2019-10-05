@@ -94,7 +94,7 @@ object InstanceInformation {
     IPAddress: IPAddress = null,
     IamRole: IamRole = null,
     InstanceId: InstanceId = null,
-    IsLatestVersion: js.UndefOr[Boolean] = js.undefined,
+    IsLatestVersion: js.UndefOr[scala.Boolean] = js.undefined,
     LastAssociationExecutionDate: DateTime = null,
     LastPingDateTime: DateTime = null,
     LastSuccessfulAssociationExecutionDate: DateTime = null,

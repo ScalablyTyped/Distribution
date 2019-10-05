@@ -1,117 +1,117 @@
 package typings.activexDashMshtml
 
-import typings.activexDashMshtml.MSHTMLNs.HTMLAnchorElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLAreaElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLAudioElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLBGsound
-import typings.activexDashMshtml.MSHTMLNs.HTMLBRElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLBaseElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLBaseFontElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLBlockElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLBody
-import typings.activexDashMshtml.MSHTMLNs.HTMLButtonElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLCanvasElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLCommentElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLDDElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLDListElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLDTElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLDivElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLDivPosition
-import typings.activexDashMshtml.MSHTMLNs.HTMLDocument
-import typings.activexDashMshtml.MSHTMLNs.HTMLEmbed
-import typings.activexDashMshtml.MSHTMLNs.HTMLFieldSetElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLFontElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLFormElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLFrameBase
-import typings.activexDashMshtml.MSHTMLNs.HTMLFrameElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLFrameSetSite
-import typings.activexDashMshtml.MSHTMLNs.HTMLGenericElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLHRElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLHeadElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLHeaderElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLHtmlElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLIFrame
-import typings.activexDashMshtml.MSHTMLNs.HTMLImg
-import typings.activexDashMshtml.MSHTMLNs.HTMLInputButtonElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLInputElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLInputFileElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLInputTextElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLIsIndexElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLLIElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLLabelElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLLegendElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLLinkElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLListElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLMapElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLMarqueeElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLMediaElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLMetaElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLNamespace
-import typings.activexDashMshtml.MSHTMLNs.HTMLNextIdElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLNoShowElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLOListElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLObjectElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLOptionButtonElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLOptionElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLParaElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLParamElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLPhraseElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLProgressElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLRichtextElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLScriptElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLSelectElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLSemanticElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLSourceElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLSpanElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLSpanFlow
-import typings.activexDashMshtml.MSHTMLNs.HTMLStyleElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLTable
-import typings.activexDashMshtml.MSHTMLNs.HTMLTableCaption
-import typings.activexDashMshtml.MSHTMLNs.HTMLTableCell
-import typings.activexDashMshtml.MSHTMLNs.HTMLTableCol
-import typings.activexDashMshtml.MSHTMLNs.HTMLTableRow
-import typings.activexDashMshtml.MSHTMLNs.HTMLTableSection
-import typings.activexDashMshtml.MSHTMLNs.HTMLTextAreaElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLTextElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLTitleElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLUListElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLUnknownElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLVideoElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLWindow2
-import typings.activexDashMshtml.MSHTMLNs.HTMLWindowProxy
-import typings.activexDashMshtml.MSHTMLNs.HTMLWndOptionElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLWndSelectElement
-import typings.activexDashMshtml.MSHTMLNs.HTMLXMLHttpRequest
-import typings.activexDashMshtml.MSHTMLNs.OldHTMLDocument
-import typings.activexDashMshtml.MSHTMLNs.OldHTMLFormElement
-import typings.activexDashMshtml.MSHTMLNs.SVGAElement
-import typings.activexDashMshtml.MSHTMLNs.SVGCircleElement
-import typings.activexDashMshtml.MSHTMLNs.SVGClipPathElement
-import typings.activexDashMshtml.MSHTMLNs.SVGDefsElement
-import typings.activexDashMshtml.MSHTMLNs.SVGElement
-import typings.activexDashMshtml.MSHTMLNs.SVGEllipseElement
-import typings.activexDashMshtml.MSHTMLNs.SVGGElement
-import typings.activexDashMshtml.MSHTMLNs.SVGGradientElement
-import typings.activexDashMshtml.MSHTMLNs.SVGImageElement
-import typings.activexDashMshtml.MSHTMLNs.SVGLineElement
-import typings.activexDashMshtml.MSHTMLNs.SVGMarkerElement
-import typings.activexDashMshtml.MSHTMLNs.SVGMaskElement
-import typings.activexDashMshtml.MSHTMLNs.SVGPathElement
-import typings.activexDashMshtml.MSHTMLNs.SVGPatternElement
-import typings.activexDashMshtml.MSHTMLNs.SVGPolygonElement
-import typings.activexDashMshtml.MSHTMLNs.SVGPolylineElement
-import typings.activexDashMshtml.MSHTMLNs.SVGRectElement
-import typings.activexDashMshtml.MSHTMLNs.SVGSVGElement
-import typings.activexDashMshtml.MSHTMLNs.SVGScriptElement
-import typings.activexDashMshtml.MSHTMLNs.SVGStopElement
-import typings.activexDashMshtml.MSHTMLNs.SVGSymbolElement
-import typings.activexDashMshtml.MSHTMLNs.SVGTSpanElement
-import typings.activexDashMshtml.MSHTMLNs.SVGTextElement
-import typings.activexDashMshtml.MSHTMLNs.SVGTextPathElement
-import typings.activexDashMshtml.MSHTMLNs.SVGUseElement
-import typings.activexDashMshtml.MSHTMLNs.SVGViewElement
-import typings.activexDashMshtml.MSHTMLNs.Scriptlet
-import typings.activexDashMshtml.MSHTMLNs.htmlInputImage
+import typings.activexDashMshtml.MSHTML.HTMLAnchorElement
+import typings.activexDashMshtml.MSHTML.HTMLAreaElement
+import typings.activexDashMshtml.MSHTML.HTMLAudioElement
+import typings.activexDashMshtml.MSHTML.HTMLBGsound
+import typings.activexDashMshtml.MSHTML.HTMLBRElement
+import typings.activexDashMshtml.MSHTML.HTMLBaseElement
+import typings.activexDashMshtml.MSHTML.HTMLBaseFontElement
+import typings.activexDashMshtml.MSHTML.HTMLBlockElement
+import typings.activexDashMshtml.MSHTML.HTMLBody
+import typings.activexDashMshtml.MSHTML.HTMLButtonElement
+import typings.activexDashMshtml.MSHTML.HTMLCanvasElement
+import typings.activexDashMshtml.MSHTML.HTMLCommentElement
+import typings.activexDashMshtml.MSHTML.HTMLDDElement
+import typings.activexDashMshtml.MSHTML.HTMLDListElement
+import typings.activexDashMshtml.MSHTML.HTMLDTElement
+import typings.activexDashMshtml.MSHTML.HTMLDivElement
+import typings.activexDashMshtml.MSHTML.HTMLDivPosition
+import typings.activexDashMshtml.MSHTML.HTMLDocument
+import typings.activexDashMshtml.MSHTML.HTMLEmbed
+import typings.activexDashMshtml.MSHTML.HTMLFieldSetElement
+import typings.activexDashMshtml.MSHTML.HTMLFontElement
+import typings.activexDashMshtml.MSHTML.HTMLFormElement
+import typings.activexDashMshtml.MSHTML.HTMLFrameBase
+import typings.activexDashMshtml.MSHTML.HTMLFrameElement
+import typings.activexDashMshtml.MSHTML.HTMLFrameSetSite
+import typings.activexDashMshtml.MSHTML.HTMLGenericElement
+import typings.activexDashMshtml.MSHTML.HTMLHRElement
+import typings.activexDashMshtml.MSHTML.HTMLHeadElement
+import typings.activexDashMshtml.MSHTML.HTMLHeaderElement
+import typings.activexDashMshtml.MSHTML.HTMLHtmlElement
+import typings.activexDashMshtml.MSHTML.HTMLIFrame
+import typings.activexDashMshtml.MSHTML.HTMLImg
+import typings.activexDashMshtml.MSHTML.HTMLInputButtonElement
+import typings.activexDashMshtml.MSHTML.HTMLInputElement
+import typings.activexDashMshtml.MSHTML.HTMLInputFileElement
+import typings.activexDashMshtml.MSHTML.HTMLInputTextElement
+import typings.activexDashMshtml.MSHTML.HTMLIsIndexElement
+import typings.activexDashMshtml.MSHTML.HTMLLIElement
+import typings.activexDashMshtml.MSHTML.HTMLLabelElement
+import typings.activexDashMshtml.MSHTML.HTMLLegendElement
+import typings.activexDashMshtml.MSHTML.HTMLLinkElement
+import typings.activexDashMshtml.MSHTML.HTMLListElement
+import typings.activexDashMshtml.MSHTML.HTMLMapElement
+import typings.activexDashMshtml.MSHTML.HTMLMarqueeElement
+import typings.activexDashMshtml.MSHTML.HTMLMediaElement
+import typings.activexDashMshtml.MSHTML.HTMLMetaElement
+import typings.activexDashMshtml.MSHTML.HTMLNamespace
+import typings.activexDashMshtml.MSHTML.HTMLNextIdElement
+import typings.activexDashMshtml.MSHTML.HTMLNoShowElement
+import typings.activexDashMshtml.MSHTML.HTMLOListElement
+import typings.activexDashMshtml.MSHTML.HTMLObjectElement
+import typings.activexDashMshtml.MSHTML.HTMLOptionButtonElement
+import typings.activexDashMshtml.MSHTML.HTMLOptionElement
+import typings.activexDashMshtml.MSHTML.HTMLParaElement
+import typings.activexDashMshtml.MSHTML.HTMLParamElement
+import typings.activexDashMshtml.MSHTML.HTMLPhraseElement
+import typings.activexDashMshtml.MSHTML.HTMLProgressElement
+import typings.activexDashMshtml.MSHTML.HTMLRichtextElement
+import typings.activexDashMshtml.MSHTML.HTMLScriptElement
+import typings.activexDashMshtml.MSHTML.HTMLSelectElement
+import typings.activexDashMshtml.MSHTML.HTMLSemanticElement
+import typings.activexDashMshtml.MSHTML.HTMLSourceElement
+import typings.activexDashMshtml.MSHTML.HTMLSpanElement
+import typings.activexDashMshtml.MSHTML.HTMLSpanFlow
+import typings.activexDashMshtml.MSHTML.HTMLStyleElement
+import typings.activexDashMshtml.MSHTML.HTMLTable
+import typings.activexDashMshtml.MSHTML.HTMLTableCaption
+import typings.activexDashMshtml.MSHTML.HTMLTableCell
+import typings.activexDashMshtml.MSHTML.HTMLTableCol
+import typings.activexDashMshtml.MSHTML.HTMLTableRow
+import typings.activexDashMshtml.MSHTML.HTMLTableSection
+import typings.activexDashMshtml.MSHTML.HTMLTextAreaElement
+import typings.activexDashMshtml.MSHTML.HTMLTextElement
+import typings.activexDashMshtml.MSHTML.HTMLTitleElement
+import typings.activexDashMshtml.MSHTML.HTMLUListElement
+import typings.activexDashMshtml.MSHTML.HTMLUnknownElement
+import typings.activexDashMshtml.MSHTML.HTMLVideoElement
+import typings.activexDashMshtml.MSHTML.HTMLWindow2
+import typings.activexDashMshtml.MSHTML.HTMLWindowProxy
+import typings.activexDashMshtml.MSHTML.HTMLWndOptionElement
+import typings.activexDashMshtml.MSHTML.HTMLWndSelectElement
+import typings.activexDashMshtml.MSHTML.HTMLXMLHttpRequest
+import typings.activexDashMshtml.MSHTML.OldHTMLDocument
+import typings.activexDashMshtml.MSHTML.OldHTMLFormElement
+import typings.activexDashMshtml.MSHTML.SVGAElement
+import typings.activexDashMshtml.MSHTML.SVGCircleElement
+import typings.activexDashMshtml.MSHTML.SVGClipPathElement
+import typings.activexDashMshtml.MSHTML.SVGDefsElement
+import typings.activexDashMshtml.MSHTML.SVGElement
+import typings.activexDashMshtml.MSHTML.SVGEllipseElement
+import typings.activexDashMshtml.MSHTML.SVGGElement
+import typings.activexDashMshtml.MSHTML.SVGGradientElement
+import typings.activexDashMshtml.MSHTML.SVGImageElement
+import typings.activexDashMshtml.MSHTML.SVGLineElement
+import typings.activexDashMshtml.MSHTML.SVGMarkerElement
+import typings.activexDashMshtml.MSHTML.SVGMaskElement
+import typings.activexDashMshtml.MSHTML.SVGPathElement
+import typings.activexDashMshtml.MSHTML.SVGPatternElement
+import typings.activexDashMshtml.MSHTML.SVGPolygonElement
+import typings.activexDashMshtml.MSHTML.SVGPolylineElement
+import typings.activexDashMshtml.MSHTML.SVGRectElement
+import typings.activexDashMshtml.MSHTML.SVGSVGElement
+import typings.activexDashMshtml.MSHTML.SVGScriptElement
+import typings.activexDashMshtml.MSHTML.SVGStopElement
+import typings.activexDashMshtml.MSHTML.SVGSymbolElement
+import typings.activexDashMshtml.MSHTML.SVGTSpanElement
+import typings.activexDashMshtml.MSHTML.SVGTextElement
+import typings.activexDashMshtml.MSHTML.SVGTextPathElement
+import typings.activexDashMshtml.MSHTML.SVGUseElement
+import typings.activexDashMshtml.MSHTML.SVGViewElement
+import typings.activexDashMshtml.MSHTML.Scriptlet
+import typings.activexDashMshtml.MSHTML.htmlInputImage
 import typings.activexDashMshtml.activexDashMshtmlStrings.description
 import typings.activexDashMshtml.activexDashMshtmlStrings.eventData
 import typings.activexDashMshtml.activexDashMshtmlStrings.line
@@ -176,87 +176,87 @@ import scala.scalajs.js.annotation._
 trait ActiveXObject extends js.Object {
   def on(
     obj: HTMLAnchorElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLAnchorElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLAreaElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLAreaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLAudioElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLAudioElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBGsound,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBGsound, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBRElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBRElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBaseElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBaseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBaseFontElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBaseFontElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBlockElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBlockElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBody,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLBody, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLButtonElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLCanvasElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLCanvasElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLCommentElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLCommentElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDDElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLDDElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDListElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLDListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDTElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLDTElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDivElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLDivElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDivPosition,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLDivPosition, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -266,142 +266,142 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: HTMLEmbed,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLEmbed, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFieldSetElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFieldSetElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFontElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFontElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFormElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFormElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameBase,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameBase, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameSetSite,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameSetSite, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLGenericElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLGenericElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHRElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLHRElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHeadElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLHeadElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHeaderElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLHeaderElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHtmlElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLHtmlElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLIFrame,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLIFrame, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLImg,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 66 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLImg, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputButtonElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLInputButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLInputElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputFileElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLInputFileElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputTextElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLInputTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLIsIndexElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLIsIndexElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLIElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLLIElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLabelElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLLabelElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLegendElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLLegendElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLinkElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLLinkElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLListElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMapElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLMapElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMarqueeElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLMarqueeElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMediaElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLMediaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMetaElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLMetaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -412,17 +412,17 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: HTMLNextIdElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLNextIdElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLNoShowElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLNoShowElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLOListElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLOListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -432,132 +432,132 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: HTMLOptionButtonElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLOptionButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLOptionElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLOptionElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLParaElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLParaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLParamElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLParamElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLPhraseElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLPhraseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLProgressElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLProgressElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLRichtextElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLRichtextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLScriptElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 64 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLScriptElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSelectElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 64 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLSelectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSemanticElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLSemanticElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSourceElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLSourceElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSpanElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLSpanElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSpanFlow,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLSpanFlow, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLStyleElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLStyleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCaption,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCaption, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCell,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCell, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCol,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCol, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableRow,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTableRow, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableSection,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTableSection, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTable,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTable, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTextAreaElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTextAreaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTextElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTitleElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLTitleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLUListElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLUListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLUnknownElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLUnknownElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLVideoElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLVideoElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -584,12 +584,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: HTMLWndOptionElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLWndOptionElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLWndSelectElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 64 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLWndSelectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -599,137 +599,137 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: OldHTMLFormElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ js.Any,
     handler: js.ThisFunction1[/* this */ OldHTMLFormElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGAElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGAElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGCircleElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGCircleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGClipPathElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGClipPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGDefsElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGDefsElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGEllipseElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGEllipseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGGElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGGradientElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGGradientElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGImageElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGImageElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGLineElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGLineElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGMarkerElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGMarkerElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGMaskElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGMaskElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPathElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPatternElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGPatternElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPolygonElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGPolygonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPolylineElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGPolylineElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGRectElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGRectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGSVGElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGSVGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGScriptElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGScriptElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGStopElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGStopElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGSymbolElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGSymbolElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTSpanElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGTSpanElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTextElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTextPathElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGTextPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGUseElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGUseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGViewElement,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ SVGViewElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -740,7 +740,7 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: htmlInputImage,
-    event: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 66 */ js.Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66 */ js.Any,
     handler: js.ThisFunction1[/* this */ htmlInputImage, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")

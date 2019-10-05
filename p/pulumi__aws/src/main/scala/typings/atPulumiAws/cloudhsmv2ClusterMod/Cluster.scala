@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudhsmv2ClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cloudhsmv2Ns.ClusterClusterCertificates
+import typings.atPulumiAws.typesOutputMod.cloudhsmv2.ClusterClusterCertificates
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

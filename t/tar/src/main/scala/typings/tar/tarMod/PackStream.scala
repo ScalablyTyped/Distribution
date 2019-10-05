@@ -1,6 +1,6 @@
 package typings.tar.tarMod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

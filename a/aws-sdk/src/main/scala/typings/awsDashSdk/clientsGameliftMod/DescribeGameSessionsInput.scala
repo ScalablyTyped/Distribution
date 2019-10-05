@@ -37,7 +37,7 @@ object DescribeGameSessionsInput {
     AliasId: AliasId = null,
     FleetId: FleetId = null,
     GameSessionId: ArnStringModel = null,
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
+    Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null,
     StatusFilter: NonZeroAndMaxString = null
   ): DescribeGameSessionsInput = {
@@ -45,7 +45,7 @@ object DescribeGameSessionsInput {
     if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId)
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
     if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter)
     __obj.asInstanceOf[DescribeGameSessionsInput]

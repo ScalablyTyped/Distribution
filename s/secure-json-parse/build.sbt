@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "secure-json-parse"
-version := "1.0-dt-20191003Z-336d76"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20191003Z-5a3cb2"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

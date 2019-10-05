@@ -1,12 +1,12 @@
 package typings.activexDashAdodb
 
-import typings.activexDashAdodb.ADODBNs.Command
-import typings.activexDashAdodb.ADODBNs.Connection
-import typings.activexDashAdodb.ADODBNs.Field
-import typings.activexDashAdodb.ADODBNs.Parameter
-import typings.activexDashAdodb.ADODBNs.Record
-import typings.activexDashAdodb.ADODBNs.Recordset
-import typings.activexDashAdodb.ADODBNs.Stream
+import typings.activexDashAdodb.ADODB.Command
+import typings.activexDashAdodb.ADODB.Connection
+import typings.activexDashAdodb.ADODB.Field
+import typings.activexDashAdodb.ADODB.Parameter
+import typings.activexDashAdodb.ADODB.Record
+import typings.activexDashAdodb.ADODB.Recordset
+import typings.activexDashAdodb.ADODB.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

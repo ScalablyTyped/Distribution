@@ -38,7 +38,7 @@ object LoggingStatus {
     LastFailureMessage: String = null,
     LastFailureTime: TStamp = null,
     LastSuccessfulDeliveryTime: TStamp = null,
-    LoggingEnabled: js.UndefOr[Boolean] = js.undefined,
+    LoggingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     S3KeyPrefix: String = null
   ): LoggingStatus = {
     val __obj = js.Dynamic.literal()

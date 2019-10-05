@@ -17,10 +17,6 @@ trait OverflowEvent extends UIEvent {
 
 @JSGlobal("OverflowEvent")
 @js.native
-class OverflowEventCls () extends OverflowEvent
-
-@JSGlobal("OverflowEvent")
-@js.native
 object OverflowEvent extends Instantiable0[OverflowEvent] {
   val BOTH: Double = js.native
   val HORIZONTAL: Double = js.native

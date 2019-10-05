@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportJobInfoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.JobInfoConstructor
+import typings.arcgisDashJsDashApi.__esri.JobInfoConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

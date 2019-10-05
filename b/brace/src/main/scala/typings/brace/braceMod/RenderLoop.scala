@@ -9,9 +9,5 @@ trait RenderLoop extends js.Object
 
 @JSImport("brace", "RenderLoop")
 @js.native
-class RenderLoopCls () extends RenderLoop
-
-@JSImport("brace", "RenderLoop")
-@js.native
 object RenderLoop extends Instantiable0[RenderLoop]
 

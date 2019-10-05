@@ -1,5 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distTensorMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
@@ -50,4 +51,11 @@ object Variable extends js.Object {
   def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String): Variable[R] = js.native
   def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String, dtype: DataType): Variable[R] = js.native
 }
+
+@JSImport("@tensorflow/tfjs-core/dist/tensor", "variable")
+@js.native
+object variable
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Variable.variable */ js.Any
+    ]
 

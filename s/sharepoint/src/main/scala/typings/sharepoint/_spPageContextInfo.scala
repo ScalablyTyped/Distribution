@@ -1,5 +1,6 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -164,96 +165,7 @@ trait _spPageContextInfo extends js.Object {
   var webUIVersion: Double
 }
 
-object _spPageContextInfo {
-  @scala.inline
-  def apply(
-    CorrelationId: String,
-    PreviewFeaturesEnabled: Boolean,
-    ProfileUrl: String,
-    PublishingFeatureOn: Boolean,
-    RecycleBinItemCount: Double,
-    alertsEnabled: Boolean,
-    allowSilverlightPrompt: String,
-    blockDownloadsExperienceEnabled: Boolean,
-    canUserCreateMicrosoftForm: Boolean,
-    cdnPrefix: String,
-    clientServerTimeDelta: Double,
-    crossDomainPhotosEnabled: Boolean,
-    currentCultureName: String,
-    currentLanguage: Double,
-    currentUICultureName: String,
-    disableAppViews: Boolean,
-    disableFlows: Boolean,
-    env: String,
-    farmLabel: String,
-    formDigestTimeoutSeconds: Double,
-    formDigestValue: String,
-    groupColor: String,
-    groupHasHomepage: Boolean,
-    groupId: String,
-    guestsEnabled: Boolean,
-    hasManageWebPermissions: Boolean,
-    isAnonymousGuestUser: Boolean,
-    isAppWeb: Boolean,
-    isExternalGuestUser: Boolean,
-    isNoScriptEnabled: Boolean,
-    isSPO: Boolean,
-    isSiteAdmin: Boolean,
-    isTenantDevSite: Boolean,
-    isWebWelcomePage: Boolean,
-    layoutsUrl: String,
-    listBaseTemplate: Double,
-    listId: String,
-    listPermsMask: Anon_High,
-    listTitle: String,
-    listUrl: String,
-    maximumFileSize: Double,
-    openInClient: Boolean,
-    pageItemId: Double,
-    pageListId: String,
-    pagePermsMask: Anon_High,
-    pagePersonalizationScope: String,
-    preferUserTimeZone: Boolean,
-    serverRedirectedUrl: String,
-    serverRequestPath: String,
-    serverTime: String,
-    siteAbsoluteUrl: String,
-    siteClassification: String,
-    siteClientTag: String,
-    siteColor: String,
-    siteId: String,
-    sitePagesEnabled: Boolean,
-    siteServerRelativeUrl: String,
-    siteSubscriptionId: String,
-    supportPercentStorePath: Boolean,
-    supportPoundStorePath: Boolean,
-    systemUserKey: String,
-    tenantAppVersion: String,
-    themeCacheToken: String,
-    themedCssFolderUrl: String,
-    themedImageFileNames: String,
-    updateFormDigestPageLoaded: String,
-    userDisplayName: String,
-    userEmail: String,
-    userId: Double,
-    userLoginName: String,
-    userPrincipalName: String,
-    viewId: String,
-    viewOnlyExperienceEnabled: Boolean,
-    webAbsoluteUrl: String,
-    webDescription: String,
-    webId: String,
-    webLanguage: Double,
-    webLogoUrl: String,
-    webPermMasks: Anon_High,
-    webServerRelativeUrl: String,
-    webTemplate: String,
-    webTitle: String,
-    webUIVersion: Double
-  ): _spPageContextInfo = {
-    val __obj = js.Dynamic.literal(CorrelationId = CorrelationId, PreviewFeaturesEnabled = PreviewFeaturesEnabled, ProfileUrl = ProfileUrl, PublishingFeatureOn = PublishingFeatureOn, RecycleBinItemCount = RecycleBinItemCount, alertsEnabled = alertsEnabled, allowSilverlightPrompt = allowSilverlightPrompt, blockDownloadsExperienceEnabled = blockDownloadsExperienceEnabled, canUserCreateMicrosoftForm = canUserCreateMicrosoftForm, cdnPrefix = cdnPrefix, clientServerTimeDelta = clientServerTimeDelta, crossDomainPhotosEnabled = crossDomainPhotosEnabled, currentCultureName = currentCultureName, currentLanguage = currentLanguage, currentUICultureName = currentUICultureName, disableAppViews = disableAppViews, disableFlows = disableFlows, env = env, farmLabel = farmLabel, formDigestTimeoutSeconds = formDigestTimeoutSeconds, formDigestValue = formDigestValue, groupColor = groupColor, groupHasHomepage = groupHasHomepage, groupId = groupId, guestsEnabled = guestsEnabled, hasManageWebPermissions = hasManageWebPermissions, isAnonymousGuestUser = isAnonymousGuestUser, isAppWeb = isAppWeb, isExternalGuestUser = isExternalGuestUser, isNoScriptEnabled = isNoScriptEnabled, isSPO = isSPO, isSiteAdmin = isSiteAdmin, isTenantDevSite = isTenantDevSite, isWebWelcomePage = isWebWelcomePage, layoutsUrl = layoutsUrl, listBaseTemplate = listBaseTemplate, listId = listId, listPermsMask = listPermsMask, listTitle = listTitle, listUrl = listUrl, maximumFileSize = maximumFileSize, openInClient = openInClient, pageItemId = pageItemId, pageListId = pageListId, pagePermsMask = pagePermsMask, pagePersonalizationScope = pagePersonalizationScope, preferUserTimeZone = preferUserTimeZone, serverRedirectedUrl = serverRedirectedUrl, serverRequestPath = serverRequestPath, serverTime = serverTime, siteAbsoluteUrl = siteAbsoluteUrl, siteClassification = siteClassification, siteClientTag = siteClientTag, siteColor = siteColor, siteId = siteId, sitePagesEnabled = sitePagesEnabled, siteServerRelativeUrl = siteServerRelativeUrl, siteSubscriptionId = siteSubscriptionId, supportPercentStorePath = supportPercentStorePath, supportPoundStorePath = supportPoundStorePath, systemUserKey = systemUserKey, tenantAppVersion = tenantAppVersion, themeCacheToken = themeCacheToken, themedCssFolderUrl = themedCssFolderUrl, themedImageFileNames = themedImageFileNames, updateFormDigestPageLoaded = updateFormDigestPageLoaded, userDisplayName = userDisplayName, userEmail = userEmail, userId = userId, userLoginName = userLoginName, userPrincipalName = userPrincipalName, viewId = viewId, viewOnlyExperienceEnabled = viewOnlyExperienceEnabled, webAbsoluteUrl = webAbsoluteUrl, webDescription = webDescription, webId = webId, webLanguage = webLanguage, webLogoUrl = webLogoUrl, webPermMasks = webPermMasks, webServerRelativeUrl = webServerRelativeUrl, webTemplate = webTemplate, webTitle = webTitle, webUIVersion = webUIVersion)
-  
-    __obj.asInstanceOf[_spPageContextInfo]
-  }
-}
+@JSGlobal("_spPageContextInfo")
+@js.native
+object _spPageContextInfo extends TopLevel[_spPageContextInfo]
 

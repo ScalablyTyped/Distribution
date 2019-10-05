@@ -27,9 +27,9 @@ object DomainSummary {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    AutoRenew: js.UndefOr[Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
     Expiry: Timestamp = null,
-    TransferLock: js.UndefOr[Boolean] = js.undefined
+    TransferLock: js.UndefOr[scala.Boolean] = js.undefined
   ): DomainSummary = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)
     if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew)

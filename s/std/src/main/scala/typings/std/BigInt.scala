@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,4 +11,8 @@ trait BigInt extends js.Object {
   val toStringTag: typings.std.stdStrings.BigInt = js.native
   def toString(radix: Double): java.lang.String = js.native
 }
+
+@JSGlobal("BigInt")
+@js.native
+object BigInt extends TopLevel[BigIntConstructor]
 

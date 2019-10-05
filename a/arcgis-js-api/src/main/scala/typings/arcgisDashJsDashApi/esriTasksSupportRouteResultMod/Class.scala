@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportRouteResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RouteResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RouteResultProperties
+import typings.arcgisDashJsDashApi.__esri.RouteResult
+import typings.arcgisDashJsDashApi.__esri.RouteResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

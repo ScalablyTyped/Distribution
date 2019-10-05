@@ -31,13 +31,13 @@ object DescribeScalableTargetsRequest {
   @scala.inline
   def apply(
     ServiceNamespace: ServiceNamespace,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: XmlString = null,
     ResourceIds: ResourceIdsMaxLen1600 = null,
     ScalableDimension: ScalableDimension = null
   ): DescribeScalableTargetsRequest = {
     val __obj = js.Dynamic.literal(ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResourceIds != null) __obj.updateDynamic("ResourceIds")(ResourceIds)
     if (ScalableDimension != null) __obj.updateDynamic("ScalableDimension")(ScalableDimension.asInstanceOf[js.Any])

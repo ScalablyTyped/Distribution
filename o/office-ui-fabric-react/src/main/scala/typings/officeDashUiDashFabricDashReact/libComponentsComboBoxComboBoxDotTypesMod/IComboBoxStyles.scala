@@ -89,27 +89,44 @@ trait IComboBoxStyles extends js.Object {
 object IComboBoxStyles {
   @scala.inline
   def apply(
-    callout: IStyle,
-    container: IStyle,
-    divider: IStyle,
-    errorMessage: IStyle,
-    header: IStyle,
-    input: IStyle,
-    inputDisabled: IStyle,
-    label: IStyle,
-    labelDisabled: IStyle,
-    optionsContainer: IStyle,
-    optionsContainerWrapper: IStyle,
-    root: IStyle,
-    rootDisabled: IStyle,
-    rootDisallowFreeForm: IStyle,
-    rootError: IStyle,
-    rootFocused: IStyle,
-    rootHovered: IStyle,
-    rootPressed: IStyle
+    callout: IStyle = null,
+    container: IStyle = null,
+    divider: IStyle = null,
+    errorMessage: IStyle = null,
+    header: IStyle = null,
+    input: IStyle = null,
+    inputDisabled: IStyle = null,
+    label: IStyle = null,
+    labelDisabled: IStyle = null,
+    optionsContainer: IStyle = null,
+    optionsContainerWrapper: IStyle = null,
+    root: IStyle = null,
+    rootDisabled: IStyle = null,
+    rootDisallowFreeForm: IStyle = null,
+    rootError: IStyle = null,
+    rootFocused: IStyle = null,
+    rootHovered: IStyle = null,
+    rootPressed: IStyle = null
   ): IComboBoxStyles = {
-    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inputDisabled = inputDisabled.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelDisabled = labelDisabled.asInstanceOf[js.Any], optionsContainer = optionsContainer.asInstanceOf[js.Any], optionsContainerWrapper = optionsContainerWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rootDisabled = rootDisabled.asInstanceOf[js.Any], rootDisallowFreeForm = rootDisallowFreeForm.asInstanceOf[js.Any], rootError = rootError.asInstanceOf[js.Any], rootFocused = rootFocused.asInstanceOf[js.Any], rootHovered = rootHovered.asInstanceOf[js.Any], rootPressed = rootPressed.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelDisabled != null) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
+    if (optionsContainer != null) __obj.updateDynamic("optionsContainer")(optionsContainer.asInstanceOf[js.Any])
+    if (optionsContainerWrapper != null) __obj.updateDynamic("optionsContainerWrapper")(optionsContainerWrapper.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rootDisabled != null) __obj.updateDynamic("rootDisabled")(rootDisabled.asInstanceOf[js.Any])
+    if (rootDisallowFreeForm != null) __obj.updateDynamic("rootDisallowFreeForm")(rootDisallowFreeForm.asInstanceOf[js.Any])
+    if (rootError != null) __obj.updateDynamic("rootError")(rootError.asInstanceOf[js.Any])
+    if (rootFocused != null) __obj.updateDynamic("rootFocused")(rootFocused.asInstanceOf[js.Any])
+    if (rootHovered != null) __obj.updateDynamic("rootHovered")(rootHovered.asInstanceOf[js.Any])
+    if (rootPressed != null) __obj.updateDynamic("rootPressed")(rootPressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBoxStyles]
   }
 }

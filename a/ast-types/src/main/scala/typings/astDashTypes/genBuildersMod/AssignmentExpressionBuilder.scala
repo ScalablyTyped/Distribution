@@ -16,7 +16,7 @@ import typings.astDashTypes.astDashTypesStrings.`|=`
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.MemberExpressionKind
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.AssignmentExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.AssignmentExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

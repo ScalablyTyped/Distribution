@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/apputils/lib/domutils", JSImport.Namespace)
 @js.native
 object libDomutilsMod extends js.Object {
-  @JSName("DOMUtils")
   @js.native
-  object DOMUtilsNs extends js.Object {
+  object DOMUtils extends js.Object {
     /**
       * Create a DOM id with prefix "id-" to solve bug for UUIDs beginning with numbers.
       */

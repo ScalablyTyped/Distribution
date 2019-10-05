@@ -1,6 +1,6 @@
 package typings.mailcheck
 
-import typings.mailcheck.MailcheckModuleNs.IOptions
+import typings.mailcheck.MailcheckModule.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

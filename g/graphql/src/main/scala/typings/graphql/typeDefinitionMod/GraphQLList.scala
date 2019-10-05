@@ -1,5 +1,6 @@
 package typings.graphql.typeDefinitionMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,22 +31,5 @@ trait GraphQLList[T /* <: GraphQLType */] extends js.Object {
 
 @JSImport("graphql/type/definition", "GraphQLList")
 @js.native
-class GraphQLListCls protected () extends GraphQLList[GraphQLType] {
-  def this(`type`: GraphQLType) = this()
-  /* CompleteClass */
-  override val ofType: GraphQLType = js.native
-  /* CompleteClass */
-  override def inspect(): String = js.native
-  /* CompleteClass */
-  override def toJSON(): String = js.native
-}
-
-object GraphQLList {
-  @scala.inline
-  def apply[T /* <: GraphQLType */](inspect: () => String, ofType: T, toJSON: () => String, toString: () => String): GraphQLList[T] = {
-    val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), ofType = ofType.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString))
-  
-    __obj.asInstanceOf[GraphQLList[T]]
-  }
-}
+object GraphQLList extends TopLevel[_GraphQLList[GraphQLType]]
 

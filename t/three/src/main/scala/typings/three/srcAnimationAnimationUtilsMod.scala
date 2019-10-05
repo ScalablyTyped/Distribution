@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/animation/AnimationUtils", JSImport.Namespace)
 @js.native
 object srcAnimationAnimationUtilsMod extends js.Object {
-  @JSName("AnimationUtils")
   @js.native
-  object AnimationUtilsNs extends js.Object {
+  object AnimationUtils extends js.Object {
     def arraySlice(array: js.Any, from: Double, to: Double): js.Any = js.native
     def convertArray(array: js.Any, `type`: js.Any, forceClone: Boolean): js.Any = js.native
     def flattenJSON(jsonKeys: js.Array[String], times: js.Array[_], values: js.Array[_], valuePropertyName: String): Unit = js.native

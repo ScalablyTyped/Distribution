@@ -1,6 +1,6 @@
 package typings.koaDashCompress.koaDashCompressMod
 
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.zlibMod.ZlibOptions
 import typings.std.ArrayBuffer
 import typings.std.DataView

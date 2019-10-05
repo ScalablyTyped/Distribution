@@ -23,12 +23,12 @@ object AddApplicationInputResponse {
   @scala.inline
   def apply(
     ApplicationARN: ResourceARN = null,
-    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined,
+    ApplicationVersionId: Int | Double = null,
     InputDescriptions: InputDescriptions = null
   ): AddApplicationInputResponse = {
     val __obj = js.Dynamic.literal()
     if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN)
-    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId)
+    if (ApplicationVersionId != null) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.asInstanceOf[js.Any])
     if (InputDescriptions != null) __obj.updateDynamic("InputDescriptions")(InputDescriptions)
     __obj.asInstanceOf[AddApplicationInputResponse]
   }

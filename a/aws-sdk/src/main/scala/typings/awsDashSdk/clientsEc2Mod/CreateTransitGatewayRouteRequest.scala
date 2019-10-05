@@ -32,8 +32,8 @@ object CreateTransitGatewayRouteRequest {
   def apply(
     DestinationCidrBlock: String,
     TransitGatewayRouteTableId: String,
-    Blackhole: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Blackhole: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TransitGatewayAttachmentId: String = null
   ): CreateTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock, TransitGatewayRouteTableId = TransitGatewayRouteTableId)

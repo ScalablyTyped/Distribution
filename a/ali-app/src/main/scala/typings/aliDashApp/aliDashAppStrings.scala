@@ -1,13 +1,13 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.EventType
-import typings.aliDashApp.myNs.ImageSourceType
-import typings.aliDashApp.myNs.NetworkType
-import typings.aliDashApp.myNs.TimingFunction
-import typings.aliDashApp.myNs.TouchEventType
-import typings.aliDashApp.myNs.TransitionEventType
-import typings.aliDashApp.myNs._TextRiskIdentificationType
-import typings.aliDashApp.myNs.scanType
+import typings.aliDashApp.my.EventType
+import typings.aliDashApp.my.ImageSourceType
+import typings.aliDashApp.my.NetworkType
+import typings.aliDashApp.my.TimingFunction
+import typings.aliDashApp.my.TouchEventType
+import typings.aliDashApp.my.TransitionEventType
+import typings.aliDashApp.my._TextRiskIdentificationType
+import typings.aliDashApp.my.scanType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -299,7 +299,7 @@ object aliDashAppStrings {
   sealed trait success extends js.Object
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.aliDashApp.myNs.EventType because Already inherited */ @js.native
+  - typings.aliDashApp.my.EventType because Already inherited */ @js.native
   sealed trait tap extends TouchEventType
   
   @js.native

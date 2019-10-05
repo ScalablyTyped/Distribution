@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.Grid
-import typings.kendoDashUi.kendoNs.uiNs.GridOptions
+import typings.kendoDashUi.kendo.ui.Grid
+import typings.kendoDashUi.kendo.ui.GridOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

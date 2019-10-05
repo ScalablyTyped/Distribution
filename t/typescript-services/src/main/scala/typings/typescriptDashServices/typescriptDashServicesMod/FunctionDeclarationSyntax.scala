@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionDeclarationSyntax")
 @js.native
 class FunctionDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.FunctionDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
     functionKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     semicolonToken: ISyntaxToken,
     parsedInStrictMode: Boolean
   ) = this()
@@ -28,8 +28,8 @@ object FunctionDeclarationSyntax extends js.Object {
   def create(
     functionKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.FunctionDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.FunctionDeclarationSyntax = js.native
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax
+  ): typings.typescriptDashServices.TypeScript.FunctionDeclarationSyntax = js.native
+  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScript.FunctionDeclarationSyntax = js.native
 }
 

@@ -13,7 +13,7 @@ trait AttributeBooleanValue extends js.Object {
 
 object AttributeBooleanValue {
   @scala.inline
-  def apply(Value: js.UndefOr[Boolean] = js.undefined): AttributeBooleanValue = {
+  def apply(Value: js.UndefOr[scala.Boolean] = js.undefined): AttributeBooleanValue = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
     __obj.asInstanceOf[AttributeBooleanValue]

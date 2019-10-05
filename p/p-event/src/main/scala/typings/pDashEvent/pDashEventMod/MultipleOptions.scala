@@ -43,14 +43,14 @@ object MultipleOptions {
   @scala.inline
   def apply[EmittedType /* <: js.Array[_] */](
     count: Double,
-    filter: FilterFunction[EmittedType] = null,
+    filter: EmittedType => Boolean = null,
     multiArgs: js.UndefOr[Boolean] = js.undefined,
     rejectionEvents: js.Array[String | js.Symbol] = null,
     resolveImmediately: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): MultipleOptions[EmittedType] = {
     val __obj = js.Dynamic.literal(count = count)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
     if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately)

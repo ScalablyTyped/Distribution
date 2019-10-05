@@ -1,6 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IASTToken
+import typings.typescriptDashServices.TypeScript.IASTToken
+import typings.typescriptDashServices.TypeScript.PullElementFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MemberFunctionDeclaration")
 @js.native
 class MemberFunctionDeclaration protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.MemberFunctionDeclaration {
+  extends typings.typescriptDashServices.TypeScript.MemberFunctionDeclaration {
   def this(
-    modifiers: js.Array[typings.typescriptDashServices.TypeScriptNs.PullElementFlags],
+    modifiers: js.Array[PullElementFlags],
     propertyName: IASTToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignature,
-    block: typings.typescriptDashServices.TypeScriptNs.Block
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignature,
+    block: typings.typescriptDashServices.TypeScript.Block
   ) = this()
 }
 

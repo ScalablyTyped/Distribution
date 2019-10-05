@@ -1,6 +1,6 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs._AttachmentData
+import typings.pouchdbDashCore.PouchDB.Core._AttachmentData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

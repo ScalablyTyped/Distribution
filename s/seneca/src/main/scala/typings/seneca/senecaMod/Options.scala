@@ -12,6 +12,7 @@ import typings.seneca.Anon_Interval
 import typings.seneca.Anon_IntervalRunning
 import typings.seneca.Anon_Level
 import typings.seneca.Anon_Local
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +66,7 @@ object Options {
     deathdelay: Int | Double = null,
     debug: Anon_Actcaller = null,
     default_plugins: Anon_Basic = null,
-    errhandler: GlobalErrorHandler = null,
+    errhandler: /* error */ Error => Unit = null,
     idlen: Int | Double = null,
     internal: Anon_Actrouter = null,
     log: LogSpec | Anon_Level = null,
@@ -86,7 +87,7 @@ object Options {
     if (deathdelay != null) __obj.updateDynamic("deathdelay")(deathdelay.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug)
     if (default_plugins != null) __obj.updateDynamic("default_plugins")(default_plugins)
-    if (errhandler != null) __obj.updateDynamic("errhandler")(errhandler)
+    if (errhandler != null) __obj.updateDynamic("errhandler")(js.Any.fromFunction1(errhandler))
     if (idlen != null) __obj.updateDynamic("idlen")(idlen.asInstanceOf[js.Any])
     if (internal != null) __obj.updateDynamic("internal")(internal)
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])

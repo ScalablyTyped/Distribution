@@ -1,7 +1,7 @@
 package typings.activexDashShell
 
-import typings.activexDashShell.Shell32Ns.Shell
-import typings.activexDashShell.Shell32Ns.ShellFolderViewOC
+import typings.activexDashShell.Shell32.Shell
+import typings.activexDashShell.Shell32.ShellFolderViewOC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

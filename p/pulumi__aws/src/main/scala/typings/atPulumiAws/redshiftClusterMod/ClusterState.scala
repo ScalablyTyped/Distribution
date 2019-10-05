@@ -1,8 +1,8 @@
 package typings.atPulumiAws.redshiftClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.redshiftNs.ClusterLogging
-import typings.atPulumiAws.typesInputMod.redshiftNs.ClusterSnapshotCopy
+import typings.atPulumiAws.typesInputMod.redshift.ClusterLogging
+import typings.atPulumiAws.typesInputMod.redshift.ClusterSnapshotCopy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

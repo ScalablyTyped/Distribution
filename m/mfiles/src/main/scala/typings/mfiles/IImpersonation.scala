@@ -1,6 +1,6 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFImpersonationType
+import typings.mfiles.MFiles.MFImpersonationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

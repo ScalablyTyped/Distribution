@@ -21,13 +21,9 @@ trait GetDiscoveredResourceCountsRequest extends js.Object {
 
 object GetDiscoveredResourceCountsRequest {
   @scala.inline
-  def apply(
-    limit: js.UndefOr[Limit] = js.undefined,
-    nextToken: NextToken = null,
-    resourceTypes: ResourceTypes = null
-  ): GetDiscoveredResourceCountsRequest = {
+  def apply(limit: Int | Double = null, nextToken: NextToken = null, resourceTypes: ResourceTypes = null): GetDiscoveredResourceCountsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes)
     __obj.asInstanceOf[GetDiscoveredResourceCountsRequest]

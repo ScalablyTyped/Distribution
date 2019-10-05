@@ -1,7 +1,7 @@
 package typings.reactDashIntl
 
 import typings.react.reactMod.ReactElement
-import typings.std.IntlNs.DateTimeFormatPart
+import typings.std.Intl.DateTimeFormatPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

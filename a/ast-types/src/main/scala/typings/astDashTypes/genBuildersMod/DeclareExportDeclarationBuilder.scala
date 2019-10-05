@@ -8,7 +8,7 @@ import typings.astDashTypes.genKindsMod.ExportBatchSpecifierKind
 import typings.astDashTypes.genKindsMod.ExportSpecifierKind
 import typings.astDashTypes.genKindsMod.FlowTypeKind
 import typings.astDashTypes.genKindsMod.LiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.DeclareExportDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.DeclareExportDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

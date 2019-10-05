@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.alarmsNs.Alarm
-import typings.chrome.chromeNs.alarmsNs.AlarmCreateInfo
-import typings.chrome.chromeNs.alarmsNs.AlarmEvent
+import typings.chrome.chrome.alarms.Alarm
+import typings.chrome.chrome.alarms.AlarmCreateInfo
+import typings.chrome.chrome.alarms.AlarmEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

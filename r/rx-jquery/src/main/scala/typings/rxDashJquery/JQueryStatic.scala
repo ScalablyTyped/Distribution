@@ -1,7 +1,7 @@
 package typings.rxDashJquery
 
 import typings.jquery.JQueryAjaxSettings
-import typings.rxDashLiteDashAggregates.RxNs.Observable
+import typings.rxDashLiteDashAggregates.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

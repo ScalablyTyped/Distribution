@@ -13,9 +13,5 @@ trait MSMediaKeyMessageEvent extends Event {
 
 @JSGlobal("MSMediaKeyMessageEvent")
 @js.native
-class MSMediaKeyMessageEventCls () extends MSMediaKeyMessageEvent
-
-@JSGlobal("MSMediaKeyMessageEvent")
-@js.native
 object MSMediaKeyMessageEvent extends Instantiable0[MSMediaKeyMessageEvent]
 

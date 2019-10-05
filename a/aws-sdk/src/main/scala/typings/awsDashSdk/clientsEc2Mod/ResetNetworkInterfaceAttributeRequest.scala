@@ -23,7 +23,7 @@ object ResetNetworkInterfaceAttributeRequest {
   @scala.inline
   def apply(
     NetworkInterfaceId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     SourceDestCheck: String = null
   ): ResetNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId)

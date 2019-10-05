@@ -3,8 +3,8 @@ package typings.inquirer
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.inquirer.inquirerMod.StreamOptions
-import typings.inquirer.inquirerMod.promptsNs.PromptCollection
-import typings.inquirer.inquirerMod.uiNs.BottomBarOptions
+import typings.inquirer.inquirerMod.prompts.PromptCollection
+import typings.inquirer.inquirerMod.ui.BottomBarOptions
 import typings.inquirer.libUiBottomDashBarMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`

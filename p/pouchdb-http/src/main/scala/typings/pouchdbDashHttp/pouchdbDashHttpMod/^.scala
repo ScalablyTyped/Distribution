@@ -1,9 +1,9 @@
 package typings.pouchdbDashHttp.pouchdbDashHttpMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pouchdbDashCore.PouchDBNs.ConfigurationNs.DatabaseConfiguration
-import typings.pouchdbDashCore.PouchDBNs.Database
-import typings.pouchdbDashCore.PouchDBNs.Static
+import typings.pouchdbDashCore.PouchDB.Configuration.DatabaseConfiguration
+import typings.pouchdbDashCore.PouchDB.Database
+import typings.pouchdbDashCore.PouchDB.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

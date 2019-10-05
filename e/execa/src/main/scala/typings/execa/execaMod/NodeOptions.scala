@@ -4,7 +4,7 @@ import typings.execa.execaStrings.ignore
 import typings.execa.execaStrings.inherit
 import typings.execa.execaStrings.pipe
 import typings.node.Buffer
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

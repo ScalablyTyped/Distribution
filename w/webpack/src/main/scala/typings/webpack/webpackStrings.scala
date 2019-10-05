@@ -1,9 +1,9 @@
 package typings.webpack
 
 import typings.webpack.webpackMod.LibraryTarget
-import typings.webpack.webpackMod.OptionsNs._Devtool
-import typings.webpack.webpackMod.StatsNs.ReasonType
-import typings.webpack.webpackMod.StatsNs._Preset
+import typings.webpack.webpackMod.Options._Devtool
+import typings.webpack.webpackMod.Stats.ReasonType
+import typings.webpack.webpackMod.Stats._Preset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

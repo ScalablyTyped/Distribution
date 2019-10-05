@@ -27,13 +27,13 @@ object DescribeParametersRequest {
   @scala.inline
   def apply(
     Filters: ParametersFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ParameterFilters: ParameterStringFilterList = null
   ): DescribeParametersRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ParameterFilters != null) __obj.updateDynamic("ParameterFilters")(ParameterFilters)
     __obj.asInstanceOf[DescribeParametersRequest]

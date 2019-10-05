@@ -49,9 +49,9 @@ object UpdateServiceRequest {
     service: String,
     cluster: String = null,
     deploymentConfiguration: DeploymentConfiguration = null,
-    desiredCount: js.UndefOr[BoxedInteger] = js.undefined,
-    forceNewDeployment: js.UndefOr[Boolean] = js.undefined,
-    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
+    desiredCount: Int | scala.Double = null,
+    forceNewDeployment: js.UndefOr[scala.Boolean] = js.undefined,
+    healthCheckGracePeriodSeconds: Int | scala.Double = null,
     networkConfiguration: NetworkConfiguration = null,
     platformVersion: String = null,
     taskDefinition: String = null
@@ -59,9 +59,9 @@ object UpdateServiceRequest {
     val __obj = js.Dynamic.literal(service = service)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration)
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount)
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
     if (!js.isUndefined(forceNewDeployment)) __obj.updateDynamic("forceNewDeployment")(forceNewDeployment)
-    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds)
+    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)
     if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition)

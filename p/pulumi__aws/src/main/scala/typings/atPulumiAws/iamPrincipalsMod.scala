@@ -64,9 +64,8 @@ object iamPrincipalsMod extends js.Object {
   val WafPrincipal: Principal = js.native
   val WorkDocsPrincipal: Principal = js.native
   val WorkspacesPrincipal: Principal = js.native
-  @JSName("Principals")
   @js.native
-  object PrincipalsNs extends js.Object {
+  object Principals extends js.Object {
     /**
       * Service Principal for Amazon Certificate Manager
       */

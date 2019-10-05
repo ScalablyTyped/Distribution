@@ -15,12 +15,6 @@ trait PerformanceObserver extends js.Object {
 
 @JSGlobal("PerformanceObserver")
 @js.native
-class PerformanceObserverCls protected () extends PerformanceObserver {
-  def this(callback: PerformanceObserverCallback) = this()
-}
-
-@JSGlobal("PerformanceObserver")
-@js.native
 object PerformanceObserver extends Instantiable1[/* callback */ PerformanceObserverCallback, PerformanceObserver] {
   val supportedEntryTypes: js.Array[java.lang.String] = js.native
 }

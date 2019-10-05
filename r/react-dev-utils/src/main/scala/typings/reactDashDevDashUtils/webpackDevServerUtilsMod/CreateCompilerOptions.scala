@@ -2,10 +2,10 @@ package typings.reactDashDevDashUtils.webpackDevServerUtilsMod
 
 import typings.reactDashDevDashUtils.Anon_BannerPlugin
 import typings.webpack.webpackMod.Compiler
-import typings.webpack.webpackMod.CompilerNs.Watching
+import typings.webpack.webpackMod.Compiler.Watching
 import typings.webpack.webpackMod.Configuration
 import typings.webpack.webpackMod.MultiCompiler
-import typings.webpack.webpackMod.MultiCompilerNs.Handler
+import typings.webpack.webpackMod.MultiCompiler.Handler
 import typings.webpack.webpackMod.MultiWatching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,6 +53,6 @@ trait CreateCompilerOptions extends js.Object {
   /**
     * Takes the `require('webpack')` entry point.
     */
-  def webpack(options: Configuration, handler: typings.webpack.webpackMod.CompilerNs.Handler): Watching | Compiler = js.native
+  def webpack(options: Configuration, handler: typings.webpack.webpackMod.Compiler.Handler): Watching | Compiler = js.native
 }
 

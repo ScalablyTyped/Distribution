@@ -40,3 +40,9 @@ object BooleanLiteral {
   }
 }
 
+@JSImport("@babel/types", "booleanLiteral")
+@js.native
+object booleanLiteral extends js.Object {
+  def apply(value: Boolean): BooleanLiteral = js.native
+}
+

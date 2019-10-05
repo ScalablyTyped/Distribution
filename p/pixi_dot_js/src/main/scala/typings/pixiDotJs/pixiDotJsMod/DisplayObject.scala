@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "DisplayObject")
 @js.native
 class DisplayObject ()
-  extends typings.pixiDotJs.PIXINs.DisplayObject
+  extends typings.pixiDotJs.PIXI.DisplayObject
 

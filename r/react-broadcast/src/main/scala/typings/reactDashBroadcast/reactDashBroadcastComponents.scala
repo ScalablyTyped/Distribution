@@ -1,15 +1,15 @@
 package typings.reactDashBroadcast
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashBroadcast.reactDashBroadcastMod.BroadcastNs.Props
+import typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashBroadcastComponents extends reactDashBroadcastProps {
   @scala.inline
-  def Broadcast[T]: ComponentType[Props[T]] = js.constructorOf[typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.BroadcastNs.Props[T]]]
+  def Broadcast_[T]: ComponentType[Props[T]] = js.constructorOf[typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast_[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast.Props[T]]]
   @scala.inline
-  def Subscriber[T]: ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.SubscriberNs.Props[T]] = js.constructorOf[typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.SubscriberNs.Props[T]]]
+  def Subscriber_[T]: ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber.Props[T]] = js.constructorOf[typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber_[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber.Props[T]]]
 }
 

@@ -47,3 +47,24 @@ object TypeParameter {
   }
 }
 
+@JSImport("@babel/types", "typeParameter")
+@js.native
+object typeParameter extends js.Object {
+  def apply(): TypeParameter = js.native
+  def apply(bound: Null, _default: Null, variance: Null, name: String): TypeParameter = js.native
+  def apply(bound: Null, _default: Null, variance: Variance): TypeParameter = js.native
+  def apply(bound: Null, _default: Null, variance: Variance, name: String): TypeParameter = js.native
+  def apply(bound: Null, _default: FlowType): TypeParameter = js.native
+  def apply(bound: Null, _default: FlowType, variance: Null, name: String): TypeParameter = js.native
+  def apply(bound: Null, _default: FlowType, variance: Variance): TypeParameter = js.native
+  def apply(bound: Null, _default: FlowType, variance: Variance, name: String): TypeParameter = js.native
+  def apply(bound: TypeAnnotation): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: Null, variance: Null, name: String): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: Null, variance: Variance): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: Null, variance: Variance, name: String): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: FlowType): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: FlowType, variance: Null, name: String): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: FlowType, variance: Variance): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, _default: FlowType, variance: Variance, name: String): TypeParameter = js.native
+}
+

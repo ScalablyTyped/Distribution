@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashSettingsDashList
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.HeaderProps
-import typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.ItemProps
 import typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.SettingsListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +8,17 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSettingsDashListComponents extends reactDashNativeDashSettingsDashListProps {
   @scala.inline
-  def ReactDashNativeDashSettingsDashList: ComponentType[SettingsListProps] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.SettingsListProps]]
-  @scala.inline
-  def defaultNsHeader: ComponentType[HeaderProps] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.defaultNs.Header].asInstanceOf[typings.react.reactMod.ComponentType[
+  def Header: ComponentType[
+    typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.HeaderProps
+  ] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.default.Header].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.HeaderProps]]
   @scala.inline
-  def defaultNsItem: ComponentType[ItemProps] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.defaultNs.Item].asInstanceOf[typings.react.reactMod.ComponentType[
+  def Item: ComponentType[
+    typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.ItemProps
+  ] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.default.Item].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.ItemProps]]
+  @scala.inline
+  def ReactDashNativeDashSettingsDashList: ComponentType[SettingsListProps] = js.constructorOf[typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.SettingsListProps]]
 }
 

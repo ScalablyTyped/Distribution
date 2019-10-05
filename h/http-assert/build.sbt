@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "http-assert"
-version := "1.5-dt-20190819Z-560098"
-scalaVersion := "2.12.9"
+version := "1.5-dt-20190819Z-5eaad1"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

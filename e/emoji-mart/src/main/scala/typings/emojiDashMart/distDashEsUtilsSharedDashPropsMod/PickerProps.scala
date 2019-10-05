@@ -52,7 +52,7 @@ object PickerProps {
   @scala.inline
   def apply(
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backgroundImageFn: BackgroundImageFn = null,
+    backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
     color: String = null,
     custom: js.Array[CustomEmoji] = null,
     defaultSkin: EmojiSkin = null,
@@ -83,7 +83,7 @@ object PickerProps {
   ): PickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
+    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (color != null) __obj.updateDynamic("color")(color)
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (defaultSkin != null) __obj.updateDynamic("defaultSkin")(defaultSkin)

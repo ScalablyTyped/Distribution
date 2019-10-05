@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.MutedInfo
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.SharingState
+import typings.firefoxDashWebextDashBrowser.browser.tabs.MutedInfo
+import typings.firefoxDashWebextDashBrowser.browser.tabs.SharingState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

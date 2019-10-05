@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsHistogramMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HistogramConstructor
+import typings.arcgisDashJsDashApi.__esri.HistogramConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

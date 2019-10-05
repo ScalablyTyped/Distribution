@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SingleContactResult")
 @js.native
 class SingleContactResult protected ()
-  extends typings.playcanvas.pcNs.SingleContactResult {
+  extends typings.playcanvas.pc.SingleContactResult {
   def this(
-    a: typings.playcanvas.pcNs.Entity,
-    b: typings.playcanvas.pcNs.Entity,
-    contactPoint: typings.playcanvas.pcNs.ContactPoint
+    a: typings.playcanvas.pc.Entity,
+    b: typings.playcanvas.pc.Entity,
+    contactPoint: typings.playcanvas.pc.ContactPoint
   ) = this()
 }
 

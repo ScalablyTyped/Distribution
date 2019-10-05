@@ -1,7 +1,6 @@
 package typings.getDashStream.getDashStreamMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.getDashStream.Anon_Array
 import typings.getDashStream.getDashStreamStrings.buffer
 import typings.node.Buffer
 import typings.node.BufferEncoding
@@ -15,8 +14,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var MaxBufferError: Instantiable0[MaxBufferErrorClass] = js.native
   // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Anon_Array = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof getStream */ js.Any = js.native
   /**
   	Get the `stream` as a string.
   	@returns A promise that resolves when the end event fires on the stream, indicating that there is no more data to be read. The stream is switched to flowing mode.
@@ -69,40 +67,5 @@ object ^ extends js.Object {
   	*/
   def buffer(stream: Stream): js.Promise[Buffer] = js.native
   def buffer(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[Buffer] = js.native
-  /**
-  	Get the `stream` as a string.
-  	@returns A promise that resolves when the end event fires on the stream, indicating that there is no more data to be read. The stream is switched to flowing mode.
-  	@example
-  	```
-  	import * as fs from 'fs';
-  	import getStream = require('get-stream');
-  	(async () => {
-  		const stream = fs.createReadStream('unicorn.txt');
-  		console.log(await getStream(stream));
-  		//               ,,))))))));,
-  		//            __)))))))))))))),
-  		// \|/       -\(((((''''((((((((.
-  		// -*-==//////((''  .     `)))))),
-  		// /|\      ))| o    ;-.    '(((((                                  ,(,
-  		//          ( `|    /  )    ;))))'                               ,_))^;(~
-  		//             |   |   |   ,))((((_     _____------~~~-.        %,;(;(>';'~
-  		//             o_);   ;    )))(((` ~---~  `::           \      %%~~)(v;(`('~
-  		//                   ;    ''''````         `:       `:::|\,__,%%    );`'; ~
-  		//                  |   _                )     /      `:|`----'     `-'
-  		//            ______/\/~    |                 /        /
-  		//          /~;;.____/;;'  /          ___--,-(   `;;;/
-  		//         / //  _;______;'------~~~~~    /;;/\    /
-  		//        //  | |                        / ;   \;;,\
-  		//       (<_  | ;                      /',/-----'  _>
-  		//        \_| ||_                     //~;~~~~~~~~~
-  		//            `\_|                   (,~~
-  		//                                    \~\
-  		//                                     ~~
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default(stream: Stream): js.Promise[String] = js.native
-  def default(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[String] = js.native
 }
 

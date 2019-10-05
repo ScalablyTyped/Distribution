@@ -1,14 +1,14 @@
 package typings.openpgp.openpgpMod
 
 import typings.openpgp.Anon_Keyid
-import typings.openpgp.openpgpMod.enumsNs.keyStatus
-import typings.openpgp.openpgpMod.keyNs.Key
-import typings.openpgp.openpgpMod.packetNs.List
-import typings.openpgp.openpgpMod.packetNs.PublicKey
-import typings.openpgp.openpgpMod.packetNs.PublicSubkey
-import typings.openpgp.openpgpMod.packetNs.SecretKey
-import typings.openpgp.openpgpMod.packetNs.SecretSubkey
-import typings.openpgp.openpgpMod.packetNs.Signature
+import typings.openpgp.openpgpMod.enums.keyStatus
+import typings.openpgp.openpgpMod.key.Key
+import typings.openpgp.openpgpMod.packet.List
+import typings.openpgp.openpgpMod.packet.PublicKey
+import typings.openpgp.openpgpMod.packet.PublicSubkey
+import typings.openpgp.openpgpMod.packet.SecretKey
+import typings.openpgp.openpgpMod.packet.SecretSubkey
+import typings.openpgp.openpgpMod.packet.Signature
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,8 +52,8 @@ class User () extends js.Object {
     * @param primaryKey primary key used for validation
     * @returns
     */
-  def update(user: typings.openpgp.openpgpMod.keyNs.User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def update(user: typings.openpgp.openpgpMod.keyNs.User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(user: typings.openpgp.openpgpMod.key.User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(user: typings.openpgp.openpgpMod.key.User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verify User. Checks for existence of self signatures, revocation signatures

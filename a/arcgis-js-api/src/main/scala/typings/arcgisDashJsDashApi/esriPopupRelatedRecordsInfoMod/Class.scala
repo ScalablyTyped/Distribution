@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupRelatedRecordsInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelatedRecordsInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelatedRecordsInfoProperties
+import typings.arcgisDashJsDashApi.__esri.RelatedRecordsInfo
+import typings.arcgisDashJsDashApi.__esri.RelatedRecordsInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

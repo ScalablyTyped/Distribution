@@ -1,8 +1,8 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.groupingNs.aggregationChangedHandler
-import typings.uiDashGrid.uiDashGridMod.groupingNs.groupingChangedHandler
+import typings.uiDashGrid.uiDashGridMod.grouping.aggregationChangedHandler
+import typings.uiDashGrid.uiDashGridMod.grouping.groupingChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

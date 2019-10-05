@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksWorkflowConfigurationTaskMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ConfigurationTask
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ConfigurationTaskProperties
+import typings.arcgisDashJsDashApi.__esri.ConfigurationTask
+import typings.arcgisDashJsDashApi.__esri.ConfigurationTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

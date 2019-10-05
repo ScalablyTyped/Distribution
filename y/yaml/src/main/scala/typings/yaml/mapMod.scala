@@ -1,6 +1,6 @@
 package typings.yaml
 
-import typings.yaml.yamlMod.astNs.MapConstructor
+import typings.yaml.yamlMod.ast.MapConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

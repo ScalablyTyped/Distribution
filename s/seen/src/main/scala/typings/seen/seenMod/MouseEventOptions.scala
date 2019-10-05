@@ -1,5 +1,6 @@
 package typings.seen.seenMod
 
+import typings.std.Event
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,22 +19,22 @@ trait MouseEventOptions extends js.Object {
 object MouseEventOptions {
   @scala.inline
   def apply(
-    drag: EventListener = null,
-    dragEnd: EventListener = null,
-    dragStart: EventListener = null,
-    mouseDown: EventListener = null,
-    mouseMove: EventListener = null,
-    mouseUp: EventListener = null,
-    mouseWheel: EventListener = null
+    drag: /* evt */ Event => Unit = null,
+    dragEnd: /* evt */ Event => Unit = null,
+    dragStart: /* evt */ Event => Unit = null,
+    mouseDown: /* evt */ Event => Unit = null,
+    mouseMove: /* evt */ Event => Unit = null,
+    mouseUp: /* evt */ Event => Unit = null,
+    mouseWheel: /* evt */ Event => Unit = null
   ): MouseEventOptions = {
     val __obj = js.Dynamic.literal()
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragEnd != null) __obj.updateDynamic("dragEnd")(dragEnd)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
-    if (mouseMove != null) __obj.updateDynamic("mouseMove")(mouseMove)
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
-    if (mouseWheel != null) __obj.updateDynamic("mouseWheel")(mouseWheel)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
+    if (dragEnd != null) __obj.updateDynamic("dragEnd")(js.Any.fromFunction1(dragEnd))
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
+    if (mouseMove != null) __obj.updateDynamic("mouseMove")(js.Any.fromFunction1(mouseMove))
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
+    if (mouseWheel != null) __obj.updateDynamic("mouseWheel")(js.Any.fromFunction1(mouseWheel))
     __obj.asInstanceOf[MouseEventOptions]
   }
 }

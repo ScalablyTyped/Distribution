@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMPointReadOnly")
 @js.native
 class DOMPointReadOnly protected ()
-  extends typings.geometryDashDom.GeometryDomNs.DOMPointReadOnly {
+  extends typings.geometryDashDom.GeometryDom.DOMPointReadOnly {
   def this(x: Double, y: Double, z: Double, w: Double) = this()
   /**
     * w coordinate / readonly
@@ -35,7 +35,7 @@ class DOMPointReadOnly protected ()
     * @param matrix
     */
   /* CompleteClass */
-  override def matrixTransform(matrix: typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly): typings.geometryDashDom.GeometryDomNs.DOMPoint = js.native
+  override def matrixTransform(matrix: typings.geometryDashDom.GeometryDom.DOMMatrixReadOnly): typings.geometryDashDom.GeometryDom.DOMPoint = js.native
 }
 
 @JSGlobal("DOMPointReadOnly")
@@ -46,6 +46,6 @@ object DOMPointReadOnly
       /* y */ Double, 
       /* z */ Double, 
       /* w */ Double, 
-      typings.geometryDashDom.GeometryDomNs.DOMPointReadOnly
+      typings.geometryDashDom.GeometryDom.DOMPointReadOnly
     ]
 

@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashCheckbox
 
-import typings.semanticDashUiDashCheckbox.SemanticUINs.Checkbox
-import typings.semanticDashUiDashCheckbox.SemanticUINs.CheckboxSettings
+import typings.semanticDashUiDashCheckbox.SemanticUI.Checkbox
+import typings.semanticDashUiDashCheckbox.SemanticUI.CheckboxSettings
 import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxStrings.`attach events`
 import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxStrings.`can change`
 import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxStrings.`can uncheck`

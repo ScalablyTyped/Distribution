@@ -16,3 +16,9 @@ class Keep[TResult, TInput] protected () extends Transformer[TResult, TInput] {
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "keep")
+@js.native
+object keep extends js.Object {
+  def apply[TInput](f: js.Function1[/* x */ TInput, _]): Transducer[TInput, TInput] = js.native
+}
+

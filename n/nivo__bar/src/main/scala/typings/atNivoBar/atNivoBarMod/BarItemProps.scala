@@ -43,7 +43,7 @@ object BarItemProps {
     hideTooltip: () => Unit,
     label: String,
     labelColor: String,
-    onClick: BarClickHandler,
+    onClick: (/* datum */ BarExtendedDatum, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit,
     shouldRenderLabel: Boolean,
     showTooltip: (ReactNode, MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit,
     theme: Theme,
@@ -53,7 +53,7 @@ object BarItemProps {
     x: Double,
     y: Double
   ): BarItemProps = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, data = data, height = height, hideTooltip = js.Any.fromFunction0(hideTooltip), label = label, labelColor = labelColor, onClick = onClick, shouldRenderLabel = shouldRenderLabel, showTooltip = js.Any.fromFunction2(showTooltip), theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, data = data, height = height, hideTooltip = js.Any.fromFunction0(hideTooltip), label = label, labelColor = labelColor, onClick = js.Any.fromFunction2(onClick), shouldRenderLabel = shouldRenderLabel, showTooltip = js.Any.fromFunction2(showTooltip), theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], width = width, x = x, y = y)
   
     __obj.asInstanceOf[BarItemProps]
   }

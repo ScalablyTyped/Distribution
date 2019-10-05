@@ -9,8 +9,8 @@ import typings.moduleDashDeps.moduleDashDepsStrings.PACKAGE
 import typings.moduleDashDeps.moduleDashDepsStrings.file
 import typings.moduleDashDeps.moduleDashDepsStrings.missing
 import typings.moduleDashDeps.moduleDashDepsStrings.transform
-import typings.node.NodeJSNs.ReadWriteStream
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

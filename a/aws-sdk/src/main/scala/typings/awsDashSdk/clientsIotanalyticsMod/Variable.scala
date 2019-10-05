@@ -32,13 +32,13 @@ object Variable {
   def apply(
     name: VariableName,
     datasetContentVersionValue: DatasetContentVersionValue = null,
-    doubleValue: js.UndefOr[DoubleValue] = js.undefined,
+    doubleValue: Int | Double = null,
     outputFileUriValue: OutputFileUriValue = null,
     stringValue: StringValue = null
   ): Variable = {
     val __obj = js.Dynamic.literal(name = name)
     if (datasetContentVersionValue != null) __obj.updateDynamic("datasetContentVersionValue")(datasetContentVersionValue)
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue)
+    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
     if (outputFileUriValue != null) __obj.updateDynamic("outputFileUriValue")(outputFileUriValue)
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
     __obj.asInstanceOf[Variable]

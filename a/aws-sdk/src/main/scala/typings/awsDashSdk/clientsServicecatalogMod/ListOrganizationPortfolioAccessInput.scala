@@ -33,12 +33,12 @@ object ListOrganizationPortfolioAccessInput {
     OrganizationNodeType: OrganizationNodeType,
     PortfolioId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
+    PageSize: Int | Double = null,
     PageToken: PageToken = null
   ): ListOrganizationPortfolioAccessInput = {
     val __obj = js.Dynamic.literal(OrganizationNodeType = OrganizationNodeType.asInstanceOf[js.Any], PortfolioId = PortfolioId)
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
     __obj.asInstanceOf[ListOrganizationPortfolioAccessInput]
   }

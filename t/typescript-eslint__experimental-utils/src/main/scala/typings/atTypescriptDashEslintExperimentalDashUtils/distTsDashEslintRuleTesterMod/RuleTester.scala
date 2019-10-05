@@ -1,5 +1,7 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintRuleTesterMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintRuleMod.RuleListener
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintRuleMod.RuleModule
 import scala.scalajs.js
@@ -14,12 +16,8 @@ trait RuleTester extends js.Object {
   ): Unit
 }
 
-object RuleTester {
-  @scala.inline
-  def apply(run: (String, RuleModule[js.Any, js.Any, RuleListener], RunTests[js.Any, js.Any]) => Unit): RuleTester = {
-    val __obj = js.Dynamic.literal(run = js.Any.fromFunction3(run))
-  
-    __obj.asInstanceOf[RuleTester]
-  }
-}
+@JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint/RuleTester", "RuleTester")
+@js.native
+object RuleTester
+  extends TopLevel[Instantiable1[js.UndefOr[RuleTesterConfig], RuleTester]]
 

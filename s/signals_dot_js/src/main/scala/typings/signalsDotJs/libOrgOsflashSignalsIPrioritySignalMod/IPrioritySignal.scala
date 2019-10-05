@@ -1,5 +1,6 @@
 package typings.signalsDotJs.libOrgOsflashSignalsIPrioritySignalMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.signalsDotJs.libOrgOsflashSignalsISignalMod.ISignal
 import typings.signalsDotJs.libOrgOsflashSignalsISlotMod.ISlot
 import scala.scalajs.js
@@ -37,22 +38,8 @@ trait IPrioritySignal extends ISignal {
   def addWithPriority(listener: js.Function, priority: Double): ISlot
 }
 
-object IPrioritySignal {
-  @scala.inline
-  def apply(
-    add: js.Function => ISlot,
-    addOnce: js.Function => ISlot,
-    addOnceWithPriority: (js.Function, Double) => ISlot,
-    addWithPriority: (js.Function, Double) => ISlot,
-    dispatch: /* repeated */ js.Any => Unit,
-    numListeners: Double,
-    remove: js.Function => ISlot,
-    removeAll: () => Unit,
-    valueClasses: js.Array[_]
-  ): IPrioritySignal = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addOnce = js.Any.fromFunction1(addOnce), addOnceWithPriority = js.Any.fromFunction2(addOnceWithPriority), addWithPriority = js.Any.fromFunction2(addWithPriority), dispatch = js.Any.fromFunction1(dispatch), numListeners = numListeners, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), valueClasses = valueClasses)
-  
-    __obj.asInstanceOf[IPrioritySignal]
-  }
-}
+@JSImport("signals.js/lib/org/osflash/signals/IPrioritySignal", "IPrioritySignal")
+@js.native
+object IPrioritySignal
+  extends TopLevel[js.Symbol]
 

@@ -1,11 +1,11 @@
 package typings.atPulumiAws.cloudwatchEventTargetMod
 
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetBatchTarget
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetEcsTarget
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetInputTransformer
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetKinesisTarget
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetRunCommandTarget
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventTargetSqsTarget
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetBatchTarget
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetEcsTarget
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetInputTransformer
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetKinesisTarget
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetRunCommandTarget
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventTargetSqsTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

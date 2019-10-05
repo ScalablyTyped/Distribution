@@ -1,6 +1,6 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsMod.multiRouterNs.MultiRoute
+import typings.yandexDashMaps.yandexDashMapsMod.multiRouter.MultiRoute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

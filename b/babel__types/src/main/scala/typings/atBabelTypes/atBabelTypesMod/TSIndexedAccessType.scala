@@ -39,3 +39,9 @@ object TSIndexedAccessType {
   }
 }
 
+@JSImport("@babel/types", "tsIndexedAccessType")
+@js.native
+object tsIndexedAccessType extends js.Object {
+  def apply(objectType: TSType, indexType: TSType): TSIndexedAccessType = js.native
+}
+

@@ -82,10 +82,10 @@ object CreateServerRequest {
     InstanceType: String,
     ServerName: ServerName,
     ServiceRoleArn: ServiceRoleArn,
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
     BackupId: BackupId = null,
-    BackupRetentionCount: js.UndefOr[BackupRetentionCountDefinition] = js.undefined,
-    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
+    BackupRetentionCount: Int | Double = null,
+    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineAttributes: EngineAttributes = null,
     EngineModel: String = null,
@@ -99,7 +99,7 @@ object CreateServerRequest {
     val __obj = js.Dynamic.literal(InstanceProfileArn = InstanceProfileArn, InstanceType = InstanceType, ServerName = ServerName, ServiceRoleArn = ServiceRoleArn)
     if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress)
     if (BackupId != null) __obj.updateDynamic("BackupId")(BackupId)
-    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount)
+    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
     if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup)
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes)

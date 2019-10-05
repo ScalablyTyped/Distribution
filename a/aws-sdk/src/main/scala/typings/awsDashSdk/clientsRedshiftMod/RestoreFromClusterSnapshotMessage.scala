@@ -117,26 +117,26 @@ object RestoreFromClusterSnapshotMessage {
     ClusterIdentifier: String,
     SnapshotIdentifier: String,
     AdditionalInfo: String = null,
-    AllowVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AllowVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
     AvailabilityZone: String = null,
     ClusterParameterGroupName: String = null,
     ClusterSecurityGroups: ClusterSecurityGroupNameList = null,
     ClusterSubnetGroupName: String = null,
     ElasticIp: String = null,
-    EnhancedVpcRouting: js.UndefOr[BooleanOptional] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
     HsmClientCertificateIdentifier: String = null,
     HsmConfigurationIdentifier: String = null,
     IamRoles: IamRoleArnList = null,
     KmsKeyId: String = null,
     MaintenanceTrackName: String = null,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
     NodeType: String = null,
-    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    NumberOfNodes: Int | scala.Double = null,
     OwnerAccount: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     SnapshotClusterIdentifier: String = null,
     SnapshotScheduleIdentifier: String = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
@@ -144,7 +144,7 @@ object RestoreFromClusterSnapshotMessage {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier, SnapshotIdentifier = SnapshotIdentifier)
     if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo)
     if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade)
-    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod)
+    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (ClusterParameterGroupName != null) __obj.updateDynamic("ClusterParameterGroupName")(ClusterParameterGroupName)
     if (ClusterSecurityGroups != null) __obj.updateDynamic("ClusterSecurityGroups")(ClusterSecurityGroups)
@@ -156,11 +156,11 @@ object RestoreFromClusterSnapshotMessage {
     if (IamRoles != null) __obj.updateDynamic("IamRoles")(IamRoles)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
+    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
     if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (SnapshotClusterIdentifier != null) __obj.updateDynamic("SnapshotClusterIdentifier")(SnapshotClusterIdentifier)

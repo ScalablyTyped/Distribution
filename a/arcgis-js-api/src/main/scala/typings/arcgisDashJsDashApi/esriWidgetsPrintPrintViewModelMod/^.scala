@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsPrintPrintViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PrintViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.PrintViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

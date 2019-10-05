@@ -52,7 +52,7 @@ object Authorizer {
   def apply(
     authType: String = null,
     authorizerCredentials: String = null,
-    authorizerResultTtlInSeconds: js.UndefOr[NullableInteger] = js.undefined,
+    authorizerResultTtlInSeconds: Int | scala.Double = null,
     authorizerUri: String = null,
     id: String = null,
     identitySource: String = null,
@@ -64,7 +64,7 @@ object Authorizer {
     val __obj = js.Dynamic.literal()
     if (authType != null) __obj.updateDynamic("authType")(authType)
     if (authorizerCredentials != null) __obj.updateDynamic("authorizerCredentials")(authorizerCredentials)
-    if (!js.isUndefined(authorizerResultTtlInSeconds)) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds)
+    if (authorizerResultTtlInSeconds != null) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.asInstanceOf[js.Any])
     if (authorizerUri != null) __obj.updateDynamic("authorizerUri")(authorizerUri)
     if (id != null) __obj.updateDynamic("id")(id)
     if (identitySource != null) __obj.updateDynamic("identitySource")(identitySource)

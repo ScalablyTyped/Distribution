@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.ProxyConfigDefinition because var conflicts: description, disabled, id, name. Inlined `match`, host, port, tunnel */ @JSImport("postman-collection", "ProxyConfig")
 @js.native
 class ProxyConfig () extends Property[ProxyConfigDefinition] {

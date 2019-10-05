@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "VertexIterator")
 @js.native
 class VertexIterator protected ()
-  extends typings.playcanvas.pcNs.VertexIterator {
-  def this(vertexBuffer: typings.playcanvas.pcNs.VertexBuffer) = this()
+  extends typings.playcanvas.pc.VertexIterator {
+  def this(vertexBuffer: typings.playcanvas.pc.VertexBuffer) = this()
 }
 

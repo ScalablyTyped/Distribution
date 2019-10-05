@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureFormInputFieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InputFieldConstructor
+import typings.arcgisDashJsDashApi.__esri.InputFieldConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

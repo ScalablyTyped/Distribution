@@ -1,6 +1,6 @@
 package typings.atPulumiAws.pricingGetProductMod
 
-import typings.atPulumiAws.typesOutputMod.pricingNs.GetProductFilter
+import typings.atPulumiAws.typesOutputMod.pricing.GetProductFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

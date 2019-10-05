@@ -3,10 +3,10 @@ package typings.antdDashMobile.esInputDashItemCustomKeyboardMod
 import typings.antdDashMobile.Anon_Arialabel
 import typings.antdDashMobile.Anon_ArialabelIconOnly
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLTableDataCellElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +19,8 @@ trait CustomKeyboard
   var confirmKeyboardItem: HTMLTableDataCellElement | Null = js.native
   var linkedInput: js.Any = js.native
   def getAriaAttr(label: String): Anon_Arialabel | Anon_ArialabelIconOnly = js.native
-  def onKeyboardClick(e: MouseEvent[HTMLTableDataCellElement, typings.std.MouseEvent]): js.UndefOr[Null] = js.native
-  def onKeyboardClick(e: MouseEvent[HTMLTableDataCellElement, typings.std.MouseEvent], value: String): js.UndefOr[Null] = js.native
+  def onKeyboardClick(e: typings.react.reactMod.MouseEvent[HTMLTableDataCellElement, MouseEvent]): js.UndefOr[Null] = js.native
+  def onKeyboardClick(e: typings.react.reactMod.MouseEvent[HTMLTableDataCellElement, MouseEvent], value: String): js.UndefOr[Null] = js.native
   def renderKeyboardItem(item: String, index: Double): Element = js.native
 }
 

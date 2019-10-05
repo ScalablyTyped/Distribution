@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jpegtran-bin"
-version := "3.2-dt-20180420Z-5f6b1a"
-scalaVersion := "2.12.9"
+version := "3.2-dt-20180420Z-fbe7ff"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

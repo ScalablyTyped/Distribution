@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "AudioHandler")
 @js.native
 class AudioHandler protected ()
-  extends typings.playcanvas.pcNs.AudioHandler {
-  def this(manager: typings.playcanvas.pcNs.SoundManager) = this()
+  extends typings.playcanvas.pc.AudioHandler {
+  def this(manager: typings.playcanvas.pc.SoundManager) = this()
 }
 

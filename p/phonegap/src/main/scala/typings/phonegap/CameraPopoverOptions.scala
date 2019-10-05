@@ -15,12 +15,6 @@ trait CameraPopoverOptions extends js.Object {
 
 @JSGlobal("CameraPopoverOptions")
 @js.native
-class CameraPopoverOptionsCls protected () extends CameraPopoverOptions {
-  def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
-}
-
-@JSGlobal("CameraPopoverOptions")
-@js.native
 object CameraPopoverOptions extends Instantiable5[
       /* x */ Double, 
       /* y */ Double, 

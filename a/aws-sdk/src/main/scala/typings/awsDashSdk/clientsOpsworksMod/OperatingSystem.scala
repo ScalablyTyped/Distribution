@@ -43,7 +43,7 @@ object OperatingSystem {
     Name: String = null,
     ReportedName: String = null,
     ReportedVersion: String = null,
-    Supported: js.UndefOr[Boolean] = js.undefined,
+    Supported: js.UndefOr[scala.Boolean] = js.undefined,
     Type: String = null
   ): OperatingSystem = {
     val __obj = js.Dynamic.literal()

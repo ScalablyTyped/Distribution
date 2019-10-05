@@ -27,13 +27,13 @@ object GetBuiltinIntentsRequest {
   @scala.inline
   def apply(
     locale: Locale = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     signatureContains: String = null
   ): GetBuiltinIntentsRequest = {
     val __obj = js.Dynamic.literal()
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (signatureContains != null) __obj.updateDynamic("signatureContains")(signatureContains)
     __obj.asInstanceOf[GetBuiltinIntentsRequest]

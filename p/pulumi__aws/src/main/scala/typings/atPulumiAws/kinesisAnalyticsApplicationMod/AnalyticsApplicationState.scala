@@ -2,10 +2,10 @@ package typings.atPulumiAws.kinesisAnalyticsApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationCloudwatchLoggingOptions
-import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationInputs
-import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationOutput
-import typings.atPulumiAws.typesInputMod.kinesisNs.AnalyticsApplicationReferenceDataSources
+import typings.atPulumiAws.typesInputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions
+import typings.atPulumiAws.typesInputMod.kinesis.AnalyticsApplicationInputs
+import typings.atPulumiAws.typesInputMod.kinesis.AnalyticsApplicationOutput
+import typings.atPulumiAws.typesInputMod.kinesis.AnalyticsApplicationReferenceDataSources
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

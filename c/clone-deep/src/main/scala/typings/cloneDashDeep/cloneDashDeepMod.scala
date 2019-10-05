@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object cloneDashDeepMod extends js.Object {
   def apply[T](`val`: T): T = js.native
-  def apply[T](`val`: T, instanceClone: `true` | (js.Function1[/* val */ T, T])): T = js.native
+  def apply[T](`val`: T, instanceClone: js.Function1[/* val */ T, T]): T = js.native
+  def apply[T](`val`: T, instanceClone: `true`): T = js.native
 }
 

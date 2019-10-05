@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafXssMatchSetMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.XssMatchSetXssMatchTuple
+import typings.atPulumiAws.typesInputMod.waf.XssMatchSetXssMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

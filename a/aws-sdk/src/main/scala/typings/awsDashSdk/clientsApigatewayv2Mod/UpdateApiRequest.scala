@@ -41,7 +41,7 @@ object UpdateApiRequest {
     ApiId: __string,
     ApiKeySelectionExpression: SelectionExpression = null,
     Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    DisableSchemaValidation: js.UndefOr[Boolean] = js.undefined,
     Name: StringWithLengthBetween1And128 = null,
     RouteSelectionExpression: SelectionExpression = null,
     Version: StringWithLengthBetween1And64 = null

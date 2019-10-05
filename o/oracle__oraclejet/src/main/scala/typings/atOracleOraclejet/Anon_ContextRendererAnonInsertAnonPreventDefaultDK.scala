@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojtreemapMod.ojTreemapNs.TooltipContext
+import typings.atOracleOraclejet.ojtreemapMod.ojTreemap.TooltipContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

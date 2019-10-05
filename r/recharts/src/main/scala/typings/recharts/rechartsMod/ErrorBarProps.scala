@@ -1,5 +1,6 @@
 package typings.recharts.rechartsMod
 
+import typings.recharts.Anon_ErrorVal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object ErrorBarProps {
   def apply(
     dataKey: DataKey,
     data: js.Array[_] = null,
-    dataPointFormatter: DataPointFormatter = null,
+    dataPointFormatter: (/* entry */ js.Any, /* dataKey */ DataKey) => Anon_ErrorVal = null,
     layout: String = null,
     offset: Int | Double = null,
     stroke: String = null,
@@ -34,7 +35,7 @@ object ErrorBarProps {
   ): ErrorBarProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(dataPointFormatter)
+    if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(js.Any.fromFunction2(dataPointFormatter))
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)

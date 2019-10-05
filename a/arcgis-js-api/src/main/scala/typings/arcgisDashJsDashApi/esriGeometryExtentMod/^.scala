@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryExtentMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExtentConstructor
+import typings.arcgisDashJsDashApi.__esri.ExtentConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

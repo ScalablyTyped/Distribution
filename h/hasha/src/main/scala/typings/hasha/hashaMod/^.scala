@@ -2,7 +2,7 @@ package typings.hasha.hashaMod
 
 import typings.hasha.hashaStrings.buffer
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.cryptoMod.Hash
 import scala.scalajs.js
 import scala.scalajs.js.`|`

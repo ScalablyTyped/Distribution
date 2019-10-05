@@ -1,5 +1,6 @@
 package typings.gulpDashSort.gulpDashSortMod
 
+import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +20,13 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(asc: js.UndefOr[Boolean] = js.undefined, comparator: IComparatorFunction = null): IOptions = {
+  def apply(
+    asc: js.UndefOr[Boolean] = js.undefined,
+    comparator: (/* file1 */ File, /* file2 */ File) => Double = null
+  ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(asc)) __obj.updateDynamic("asc")(asc)
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.albTargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.albNs.TargetGroupHealthCheck
-import typings.atPulumiAws.typesInputMod.albNs.TargetGroupStickiness
+import typings.atPulumiAws.typesInputMod.alb.TargetGroupHealthCheck
+import typings.atPulumiAws.typesInputMod.alb.TargetGroupStickiness
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

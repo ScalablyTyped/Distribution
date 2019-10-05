@@ -2,7 +2,7 @@ package typings.ajv
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.ajv.ajvMod.AjvErrorsNs.MissingRefError
+import typings.ajv.ajvMod.AjvErrors.MissingRefError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

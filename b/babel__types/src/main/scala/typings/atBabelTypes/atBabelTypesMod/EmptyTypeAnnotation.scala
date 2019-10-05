@@ -37,3 +37,9 @@ object EmptyTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "emptyTypeAnnotation")
+@js.native
+object emptyTypeAnnotation extends js.Object {
+  def apply(): EmptyTypeAnnotation = js.native
+}
+

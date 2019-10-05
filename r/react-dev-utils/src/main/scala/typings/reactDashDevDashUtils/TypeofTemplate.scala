@@ -2,9 +2,9 @@ package typings.reactDashDevDashUtils
 
 import typings.reactDashDevDashUtils.reactDashDevDashUtilsNumbers.`false`
 import typings.webpack.Anon_IdNumber
-import typings.webpack.webpackMod.compilationNs.Chunk
-import typings.webpack.webpackMod.compilationNs.Module
-import typings.webpack.webpackMod.compilationNs.ModuleTemplate
+import typings.webpack.webpackMod.compilation.Chunk
+import typings.webpack.webpackMod.compilation.Module
+import typings.webpack.webpackMod.compilation.ModuleTemplate
 import typings.webpackDashSources.webpackDashSourcesMod.ConcatSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`

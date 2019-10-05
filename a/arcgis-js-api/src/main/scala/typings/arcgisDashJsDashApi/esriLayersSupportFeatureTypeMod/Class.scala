@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportFeatureTypeMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureType
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureTypeProperties
+import typings.arcgisDashJsDashApi.__esri.FeatureType
+import typings.arcgisDashJsDashApi.__esri.FeatureTypeProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

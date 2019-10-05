@@ -41,3 +41,9 @@ object Attribute {
   }
 }
 
+@JSImport("ldap-filters", "attribute")
+@js.native
+object attribute extends js.Object {
+  def apply(name: String): Attribute = js.native
+}
+

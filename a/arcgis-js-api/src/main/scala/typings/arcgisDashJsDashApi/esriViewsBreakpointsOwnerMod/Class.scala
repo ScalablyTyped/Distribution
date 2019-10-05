@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsBreakpointsOwnerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BreakpointsOwner
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BreakpointsOwnerBreakpoints
+import typings.arcgisDashJsDashApi.__esri.BreakpointsOwner
+import typings.arcgisDashJsDashApi.__esri.BreakpointsOwnerBreakpoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

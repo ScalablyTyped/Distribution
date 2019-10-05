@@ -1,7 +1,7 @@
 package typings.atPulumiAws.redshiftParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.redshiftNs.ParameterGroupParameter
+import typings.atPulumiAws.typesOutputMod.redshift.ParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

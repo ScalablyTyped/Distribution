@@ -1,11 +1,11 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.vpnProviderNs.VpnConfigCreationEvent
-import typings.chrome.chromeNs.vpnProviderNs.VpnConfigRemovalEvent
-import typings.chrome.chromeNs.vpnProviderNs.VpnPacketReceptionEvent
-import typings.chrome.chromeNs.vpnProviderNs.VpnPlatformMessageEvent
-import typings.chrome.chromeNs.vpnProviderNs.VpnSessionParameters
-import typings.chrome.chromeNs.vpnProviderNs.VpnUiEvent
+import typings.chrome.chrome.vpnProvider.VpnConfigCreationEvent
+import typings.chrome.chrome.vpnProvider.VpnConfigRemovalEvent
+import typings.chrome.chrome.vpnProvider.VpnPacketReceptionEvent
+import typings.chrome.chrome.vpnProvider.VpnPlatformMessageEvent
+import typings.chrome.chrome.vpnProvider.VpnSessionParameters
+import typings.chrome.chrome.vpnProvider.VpnUiEvent
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

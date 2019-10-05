@@ -1,7 +1,7 @@
 package typings.enigmaDotJs
 
-import typings.enigmaDotJs.enigmaJSNs.IConfig
-import typings.enigmaDotJs.enigmaJSNs.ISession
+import typings.enigmaDotJs.enigmaJS.IConfig
+import typings.enigmaDotJs.enigmaJS.ISession
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

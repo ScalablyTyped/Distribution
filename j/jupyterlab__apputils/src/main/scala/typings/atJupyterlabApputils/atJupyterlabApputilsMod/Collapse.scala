@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libCollapseMod.CollapseNs.IOptions
+import typings.atJupyterlabApputils.libCollapseMod.Collapse.IOptions
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

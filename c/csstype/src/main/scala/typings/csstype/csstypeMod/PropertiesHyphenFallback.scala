@@ -46,14 +46,72 @@ object PropertiesHyphenFallback {
   def apply[TLength](
     ObsoletePropertiesHyphenFallback: ObsoletePropertiesHyphenFallback[TLength] = null,
     StandardPropertiesHyphenFallback: StandardPropertiesHyphenFallback[TLength] = null,
-    SvgPropertiesHyphenFallback: SvgPropertiesHyphenFallback[TLength] = null,
-    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null
+    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null,
+    `alignment-baseline`: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty] = null,
+    `baseline-shift`: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]] = null,
+    `clip-rule`: ClipRuleProperty | js.Array[ClipRuleProperty] = null,
+    `color-interpolation`: ColorInterpolationProperty | js.Array[ColorInterpolationProperty] = null,
+    `color-rendering`: ColorRenderingProperty | js.Array[ColorRenderingProperty] = null,
+    `dominant-baseline`: DominantBaselineProperty | js.Array[DominantBaselineProperty] = null,
+    fill: FillProperty | js.Array[FillProperty] = null,
+    `fill-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `fill-rule`: FillRuleProperty | js.Array[FillRuleProperty] = null,
+    `flood-color`: FloodColorProperty | js.Array[FloodColorProperty] = null,
+    `flood-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `glyph-orientation-vertical`: GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty] = null,
+    `lighting-color`: LightingColorProperty | js.Array[LightingColorProperty] = null,
+    marker: MarkerProperty | js.Array[MarkerProperty] = null,
+    `marker-end`: MarkerEndProperty | js.Array[MarkerEndProperty] = null,
+    `marker-mid`: MarkerMidProperty | js.Array[MarkerMidProperty] = null,
+    `marker-start`: MarkerStartProperty | js.Array[MarkerStartProperty] = null,
+    `shape-rendering`: ShapeRenderingProperty | js.Array[ShapeRenderingProperty] = null,
+    `stop-color`: StopColorProperty | js.Array[StopColorProperty] = null,
+    `stop-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    stroke: StrokeProperty | js.Array[StrokeProperty] = null,
+    `stroke-dasharray`: StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]] = null,
+    `stroke-dashoffset`: StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]] = null,
+    `stroke-linecap`: StrokeLinecapProperty | js.Array[StrokeLinecapProperty] = null,
+    `stroke-linejoin`: StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty] = null,
+    `stroke-miterlimit`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `stroke-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `stroke-width`: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]] = null,
+    `text-anchor`: TextAnchorProperty | js.Array[TextAnchorProperty] = null,
+    `vector-effect`: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): PropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphenFallback)
     js.Dynamic.global.Object.assign(__obj, StandardPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, SvgPropertiesHyphenFallback)
     js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphenFallback)
+    if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`.asInstanceOf[js.Any])
+    if (`baseline-shift` != null) __obj.updateDynamic("baseline-shift")(`baseline-shift`.asInstanceOf[js.Any])
+    if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`.asInstanceOf[js.Any])
+    if (`color-interpolation` != null) __obj.updateDynamic("color-interpolation")(`color-interpolation`.asInstanceOf[js.Any])
+    if (`color-rendering` != null) __obj.updateDynamic("color-rendering")(`color-rendering`.asInstanceOf[js.Any])
+    if (`dominant-baseline` != null) __obj.updateDynamic("dominant-baseline")(`dominant-baseline`.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
+    if (`fill-rule` != null) __obj.updateDynamic("fill-rule")(`fill-rule`.asInstanceOf[js.Any])
+    if (`flood-color` != null) __obj.updateDynamic("flood-color")(`flood-color`.asInstanceOf[js.Any])
+    if (`flood-opacity` != null) __obj.updateDynamic("flood-opacity")(`flood-opacity`.asInstanceOf[js.Any])
+    if (`glyph-orientation-vertical` != null) __obj.updateDynamic("glyph-orientation-vertical")(`glyph-orientation-vertical`.asInstanceOf[js.Any])
+    if (`lighting-color` != null) __obj.updateDynamic("lighting-color")(`lighting-color`.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (`marker-end` != null) __obj.updateDynamic("marker-end")(`marker-end`.asInstanceOf[js.Any])
+    if (`marker-mid` != null) __obj.updateDynamic("marker-mid")(`marker-mid`.asInstanceOf[js.Any])
+    if (`marker-start` != null) __obj.updateDynamic("marker-start")(`marker-start`.asInstanceOf[js.Any])
+    if (`shape-rendering` != null) __obj.updateDynamic("shape-rendering")(`shape-rendering`.asInstanceOf[js.Any])
+    if (`stop-color` != null) __obj.updateDynamic("stop-color")(`stop-color`.asInstanceOf[js.Any])
+    if (`stop-opacity` != null) __obj.updateDynamic("stop-opacity")(`stop-opacity`.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (`stroke-dasharray` != null) __obj.updateDynamic("stroke-dasharray")(`stroke-dasharray`.asInstanceOf[js.Any])
+    if (`stroke-dashoffset` != null) __obj.updateDynamic("stroke-dashoffset")(`stroke-dashoffset`.asInstanceOf[js.Any])
+    if (`stroke-linecap` != null) __obj.updateDynamic("stroke-linecap")(`stroke-linecap`.asInstanceOf[js.Any])
+    if (`stroke-linejoin` != null) __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`.asInstanceOf[js.Any])
+    if (`stroke-miterlimit` != null) __obj.updateDynamic("stroke-miterlimit")(`stroke-miterlimit`.asInstanceOf[js.Any])
+    if (`stroke-opacity` != null) __obj.updateDynamic("stroke-opacity")(`stroke-opacity`.asInstanceOf[js.Any])
+    if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
+    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`.asInstanceOf[js.Any])
+    if (`vector-effect` != null) __obj.updateDynamic("vector-effect")(`vector-effect`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesHyphenFallback[TLength]]
   }
 }

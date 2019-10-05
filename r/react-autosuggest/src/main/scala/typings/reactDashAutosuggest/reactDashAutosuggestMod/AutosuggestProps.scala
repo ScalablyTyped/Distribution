@@ -1,5 +1,7 @@
 package typings.reactDashAutosuggest.reactDashAutosuggestMod
 
+import typings.react.reactMod.FormEvent
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,40 +89,40 @@ trait AutosuggestProps[TSuggestion] extends js.Object {
 object AutosuggestProps {
   @scala.inline
   def apply[TSuggestion](
-    getSuggestionValue: GetSuggestionValue[TSuggestion],
+    getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
-    onSuggestionsFetchRequested: SuggestionsFetchRequested,
-    renderSuggestion: RenderSuggestion[TSuggestion],
+    onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,
+    renderSuggestion: (TSuggestion, /* params */ RenderSuggestionParams) => ReactNode,
     suggestions: js.Array[TSuggestion],
     alwaysRenderSuggestions: js.UndefOr[Boolean] = js.undefined,
     focusInputOnSuggestionClick: js.UndefOr[Boolean] = js.undefined,
-    getSectionSuggestions: GetSectionSuggestions[TSuggestion] = null,
+    getSectionSuggestions: /* section */ js.Any => js.Array[TSuggestion] = null,
     highlightFirstSuggestion: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     multiSection: js.UndefOr[Boolean] = js.undefined,
-    onSuggestionHighlighted: OnSuggestionHighlighted = null,
-    onSuggestionSelected: OnSuggestionSelected[TSuggestion] = null,
-    onSuggestionsClearRequested: OnSuggestionsClearRequested = null,
-    renderInputComponent: RenderInputComponent[TSuggestion] = null,
-    renderSectionTitle: RenderSectionTitle = null,
-    renderSuggestionsContainer: RenderSuggestionsContainer = null,
-    shouldRenderSuggestions: ShouldRenderSuggestions = null,
+    onSuggestionHighlighted: /* params */ SuggestionHighlightedParams => Unit = null,
+    onSuggestionSelected: (/* event */ FormEvent[js.Any], /* data */ SuggestionSelectedEventData[TSuggestion]) => Unit = null,
+    onSuggestionsClearRequested: () => Unit = null,
+    renderInputComponent: /* inputProps */ InputProps[TSuggestion] => ReactNode = null,
+    renderSectionTitle: /* section */ js.Any => ReactNode = null,
+    renderSuggestionsContainer: /* params */ RenderSuggestionsContainerParams => ReactNode = null,
+    shouldRenderSuggestions: /* value */ String => Boolean = null,
     theme: Theme = null
   ): AutosuggestProps[TSuggestion] = {
-    val __obj = js.Dynamic.literal(getSuggestionValue = getSuggestionValue, inputProps = inputProps, onSuggestionsFetchRequested = onSuggestionsFetchRequested, renderSuggestion = renderSuggestion, suggestions = suggestions)
+    val __obj = js.Dynamic.literal(getSuggestionValue = js.Any.fromFunction1(getSuggestionValue), inputProps = inputProps, onSuggestionsFetchRequested = js.Any.fromFunction1(onSuggestionsFetchRequested), renderSuggestion = js.Any.fromFunction2(renderSuggestion), suggestions = suggestions)
     if (!js.isUndefined(alwaysRenderSuggestions)) __obj.updateDynamic("alwaysRenderSuggestions")(alwaysRenderSuggestions)
     if (!js.isUndefined(focusInputOnSuggestionClick)) __obj.updateDynamic("focusInputOnSuggestionClick")(focusInputOnSuggestionClick)
-    if (getSectionSuggestions != null) __obj.updateDynamic("getSectionSuggestions")(getSectionSuggestions)
+    if (getSectionSuggestions != null) __obj.updateDynamic("getSectionSuggestions")(js.Any.fromFunction1(getSectionSuggestions))
     if (!js.isUndefined(highlightFirstSuggestion)) __obj.updateDynamic("highlightFirstSuggestion")(highlightFirstSuggestion)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(multiSection)) __obj.updateDynamic("multiSection")(multiSection)
-    if (onSuggestionHighlighted != null) __obj.updateDynamic("onSuggestionHighlighted")(onSuggestionHighlighted)
-    if (onSuggestionSelected != null) __obj.updateDynamic("onSuggestionSelected")(onSuggestionSelected)
-    if (onSuggestionsClearRequested != null) __obj.updateDynamic("onSuggestionsClearRequested")(onSuggestionsClearRequested)
-    if (renderInputComponent != null) __obj.updateDynamic("renderInputComponent")(renderInputComponent)
-    if (renderSectionTitle != null) __obj.updateDynamic("renderSectionTitle")(renderSectionTitle)
-    if (renderSuggestionsContainer != null) __obj.updateDynamic("renderSuggestionsContainer")(renderSuggestionsContainer)
-    if (shouldRenderSuggestions != null) __obj.updateDynamic("shouldRenderSuggestions")(shouldRenderSuggestions)
+    if (onSuggestionHighlighted != null) __obj.updateDynamic("onSuggestionHighlighted")(js.Any.fromFunction1(onSuggestionHighlighted))
+    if (onSuggestionSelected != null) __obj.updateDynamic("onSuggestionSelected")(js.Any.fromFunction2(onSuggestionSelected))
+    if (onSuggestionsClearRequested != null) __obj.updateDynamic("onSuggestionsClearRequested")(js.Any.fromFunction0(onSuggestionsClearRequested))
+    if (renderInputComponent != null) __obj.updateDynamic("renderInputComponent")(js.Any.fromFunction1(renderInputComponent))
+    if (renderSectionTitle != null) __obj.updateDynamic("renderSectionTitle")(js.Any.fromFunction1(renderSectionTitle))
+    if (renderSuggestionsContainer != null) __obj.updateDynamic("renderSuggestionsContainer")(js.Any.fromFunction1(renderSuggestionsContainer))
+    if (shouldRenderSuggestions != null) __obj.updateDynamic("shouldRenderSuggestions")(js.Any.fromFunction1(shouldRenderSuggestions))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutosuggestProps[TSuggestion]]
   }

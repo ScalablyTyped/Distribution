@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSmartMappingColorSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorSlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorSliderProperties
+import typings.arcgisDashJsDashApi.__esri.ColorSlider
+import typings.arcgisDashJsDashApi.__esri.ColorSliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

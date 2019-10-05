@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.RootNodeContext
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.RootNodeContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

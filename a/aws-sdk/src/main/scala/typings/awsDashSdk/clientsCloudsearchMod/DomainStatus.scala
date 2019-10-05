@@ -54,14 +54,14 @@ object DomainStatus {
     DomainName: DomainName,
     RequiresIndexDocuments: Boolean,
     ARN: ARN = null,
-    Created: js.UndefOr[Boolean] = js.undefined,
-    Deleted: js.UndefOr[Boolean] = js.undefined,
+    Created: js.UndefOr[scala.Boolean] = js.undefined,
+    Deleted: js.UndefOr[scala.Boolean] = js.undefined,
     DocService: ServiceEndpoint = null,
     Limits: Limits = null,
-    Processing: js.UndefOr[Boolean] = js.undefined,
-    SearchInstanceCount: js.UndefOr[InstanceCount] = js.undefined,
+    Processing: js.UndefOr[scala.Boolean] = js.undefined,
+    SearchInstanceCount: Int | scala.Double = null,
     SearchInstanceType: SearchInstanceType = null,
-    SearchPartitionCount: js.UndefOr[PartitionCount] = js.undefined,
+    SearchPartitionCount: Int | scala.Double = null,
     SearchService: ServiceEndpoint = null
   ): DomainStatus = {
     val __obj = js.Dynamic.literal(DomainId = DomainId, DomainName = DomainName, RequiresIndexDocuments = RequiresIndexDocuments)
@@ -71,9 +71,9 @@ object DomainStatus {
     if (DocService != null) __obj.updateDynamic("DocService")(DocService)
     if (Limits != null) __obj.updateDynamic("Limits")(Limits)
     if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing)
-    if (!js.isUndefined(SearchInstanceCount)) __obj.updateDynamic("SearchInstanceCount")(SearchInstanceCount)
+    if (SearchInstanceCount != null) __obj.updateDynamic("SearchInstanceCount")(SearchInstanceCount.asInstanceOf[js.Any])
     if (SearchInstanceType != null) __obj.updateDynamic("SearchInstanceType")(SearchInstanceType)
-    if (!js.isUndefined(SearchPartitionCount)) __obj.updateDynamic("SearchPartitionCount")(SearchPartitionCount)
+    if (SearchPartitionCount != null) __obj.updateDynamic("SearchPartitionCount")(SearchPartitionCount.asInstanceOf[js.Any])
     if (SearchService != null) __obj.updateDynamic("SearchService")(SearchService)
     __obj.asInstanceOf[DomainStatus]
   }

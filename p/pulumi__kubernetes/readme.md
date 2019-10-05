@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__kubernetes
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 A Pulumi package for creating and managing Kubernetes resources.

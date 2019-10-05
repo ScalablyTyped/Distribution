@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/setDate", JSImport.Namespace)
 @js.native
 object esmSetDateMod extends js.Object {
-  def default(date: Double, dayOfMonth: Double): Date = js.native
-  def default(date: Date, dayOfMonth: Double): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double, dayOfMonth: Double): Date = js.native
+    def apply(date: Date, dayOfMonth: Double): Date = js.native
+  }
+  
 }
 

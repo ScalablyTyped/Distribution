@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTargetMod
 
-import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTargetTarget
+import typings.atPulumiAws.typesOutputMod.ssm.MaintenanceWindowTargetTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

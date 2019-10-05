@@ -1,0 +1,48 @@
+package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ScrollChangedEventArgs extends js.Object {
+  /** if the event should be canceled; otherwise, false.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** parameters from RangeNavigator
+    */
+  var data: js.UndefOr[js.Any] = js.undefined
+  /** returns the scrollbar position new start and end range value on changing scrollbar
+    */
+  var dataNewRange: js.UndefOr[js.Any] = js.undefined
+  /** returns the scrollbar position old start and end range value on changing scrollbar
+    */
+  var dataOldRange: js.UndefOr[js.Any] = js.undefined
+  /** returns the RangeNavigator model
+    */
+  var model: js.UndefOr[js.Any] = js.undefined
+  /** returns the name of the event
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+}
+
+object ScrollChangedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    data: js.Any = null,
+    dataNewRange: js.Any = null,
+    dataOldRange: js.Any = null,
+    model: js.Any = null,
+    `type`: String = null
+  ): ScrollChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataNewRange != null) __obj.updateDynamic("dataNewRange")(dataNewRange)
+    if (dataOldRange != null) __obj.updateDynamic("dataOldRange")(dataOldRange)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ScrollChangedEventArgs]
+  }
+}
+

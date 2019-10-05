@@ -17,9 +17,6 @@ object ^ extends js.Object {
   val CONTEXT_DISABLED: `1` = js.native
   val CONTEXT_ENABLED: `0` = js.native
   val CONTEXT_QUEUED: `2` = js.native
-  val DESYNC: Double = js.native
-  val SYNC: Double = js.native
-  val defaultMaxListeners: Double = js.native
   def emitCallback(event: Event): Unit = js.native
   def emitEvent(event: Event): Event = js.native
   def emitToOneListener(event: Event, listener: js.Any, removedListeners: js.Any): Unit = js.native

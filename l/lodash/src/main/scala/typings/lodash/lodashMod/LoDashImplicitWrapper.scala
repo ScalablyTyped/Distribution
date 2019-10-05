@@ -1,5 +1,6 @@
 package typings.lodash.lodashMod
 
+import typings.lodash.Typeoflodash
 import typings.lodash.lodashNumbers.`0`
 import typings.lodash.lodashNumbers.`false`
 import typings.lodash.lodashNumbers.`true`
@@ -2294,7 +2295,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.noConflict
     */
-  def noConflict(): LoDashStatic = js.native
+  def noConflict(): Typeoflodash = js.native
   /**
     * @see _.noop
     */

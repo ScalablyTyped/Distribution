@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Font")
 @js.native
 class Font protected ()
-  extends typings.playcanvas.pcNs.Font {
-  def this(textures: js.Array[typings.playcanvas.pcNs.Texture], data: js.Any) = this()
+  extends typings.playcanvas.pc.Font {
+  def this(textures: js.Array[typings.playcanvas.pc.Texture], data: js.Any) = this()
 }
 

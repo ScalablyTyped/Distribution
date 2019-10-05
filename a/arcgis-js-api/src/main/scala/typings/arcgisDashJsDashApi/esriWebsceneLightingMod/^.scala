@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebsceneLightingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LightingConstructor
+import typings.arcgisDashJsDashApi.__esri.LightingConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

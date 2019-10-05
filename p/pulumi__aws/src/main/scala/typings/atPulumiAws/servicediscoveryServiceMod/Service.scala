@@ -1,8 +1,8 @@
 package typings.atPulumiAws.servicediscoveryServiceMod
 
-import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceDnsConfig
-import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceHealthCheckConfig
-import typings.atPulumiAws.typesOutputMod.servicediscoveryNs.ServiceHealthCheckCustomConfig
+import typings.atPulumiAws.typesOutputMod.servicediscovery.ServiceDnsConfig
+import typings.atPulumiAws.typesOutputMod.servicediscovery.ServiceHealthCheckConfig
+import typings.atPulumiAws.typesOutputMod.servicediscovery.ServiceHealthCheckCustomConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

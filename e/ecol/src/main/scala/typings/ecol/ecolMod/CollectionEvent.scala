@@ -1,8 +1,8 @@
 package typings.ecol.ecolMod
 
 import typings.tstl.baseIteratorIteratorMod.Iterator
-import typings.tstl.tstlMod.baseNs.Container
-import typings.tstl.tstlMod.baseNs.ReverseIterator
+import typings.tstl.tstlMod.base.Container
+import typings.tstl.tstlMod.base.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,7 +26,7 @@ object RollupWatchOptions {
     input: InputOption = null,
     manualChunks: ManualChunksOption = null,
     moduleContext: (js.Function1[/* id */ String, String]) | StringDictionary[String] = null,
-    onwarn: WarningHandlerWithDefault = null,
+    onwarn: (/* warning */ String | RollupWarning, /* defaultHandler */ WarningHandler) => Unit = null,
     output: OutputOptions | js.Array[OutputOptions] = null,
     perf: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[Plugin] = null,
@@ -51,7 +51,7 @@ object RollupWatchOptions {
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (manualChunks != null) __obj.updateDynamic("manualChunks")(manualChunks.asInstanceOf[js.Any])
     if (moduleContext != null) __obj.updateDynamic("moduleContext")(moduleContext.asInstanceOf[js.Any])
-    if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
+    if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (!js.isUndefined(perf)) __obj.updateDynamic("perf")(perf)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)

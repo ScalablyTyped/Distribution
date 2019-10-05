@@ -1,7 +1,9 @@
 package typings.reactstrap.libNavLinkMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.Ref
@@ -33,7 +35,7 @@ object NavLinkProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     innerRef: Ref[HTMLAnchorElement] = null,
-    onClick: MouseEventHandler[_] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
     tag: ReactType[_] = null
   ): NavLinkProps = {
     val __obj = js.Dynamic.literal()
@@ -45,7 +47,7 @@ object NavLinkProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (href != null) __obj.updateDynamic("href")(href)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavLinkProps]
   }

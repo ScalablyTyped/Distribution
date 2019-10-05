@@ -28,12 +28,12 @@ object DescribeDomainControllersRequest {
   def apply(
     DirectoryId: DirectoryId,
     DomainControllerIds: DomainControllerIds = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeDomainControllersRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId)
     if (DomainControllerIds != null) __obj.updateDynamic("DomainControllerIds")(DomainControllerIds)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeDomainControllersRequest]
   }

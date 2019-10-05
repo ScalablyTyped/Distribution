@@ -34,3 +34,10 @@ object IntersectionTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "intersectionTypeAnnotation")
+@js.native
+object intersectionTypeAnnotation extends js.Object {
+  def apply(): IntersectionTypeAnnotation = js.native
+  def apply(types: js.Array[FlowTypeAnnotation]): IntersectionTypeAnnotation = js.native
+}
+

@@ -13,7 +13,7 @@ trait AttachClassicLinkVpcResult extends js.Object {
 
 object AttachClassicLinkVpcResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): AttachClassicLinkVpcResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): AttachClassicLinkVpcResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[AttachClassicLinkVpcResult]

@@ -1,5 +1,6 @@
 package typings.howler
 
+import org.scalablytyped.runtime.TopLevel
 import typings.howler.howlerStrings.end
 import typings.howler.howlerStrings.fade
 import typings.howler.howlerStrings.load
@@ -193,7 +194,5 @@ trait Howl extends js.Object {
 
 @JSGlobal("Howl")
 @js.native
-class HowlCls protected () extends Howl {
-  def this(properties: IHowlProperties) = this()
-}
+object Howl extends TopLevel[HowlStatic]
 

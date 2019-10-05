@@ -38,7 +38,7 @@ object ChannelSpecification {
     SupportedContentTypes: ContentTypes,
     SupportedInputModes: InputModes,
     Description: EntityDescription = null,
-    IsRequired: js.UndefOr[Boolean] = js.undefined,
+    IsRequired: js.UndefOr[scala.Boolean] = js.undefined,
     SupportedCompressionTypes: CompressionTypes = null
   ): ChannelSpecification = {
     val __obj = js.Dynamic.literal(Name = Name, SupportedContentTypes = SupportedContentTypes, SupportedInputModes = SupportedInputModes)

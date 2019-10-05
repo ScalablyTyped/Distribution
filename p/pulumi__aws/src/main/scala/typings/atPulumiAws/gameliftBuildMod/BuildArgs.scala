@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftBuildMod
 
-import typings.atPulumiAws.typesInputMod.gameliftNs.BuildStorageLocation
+import typings.atPulumiAws.typesInputMod.gamelift.BuildStorageLocation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

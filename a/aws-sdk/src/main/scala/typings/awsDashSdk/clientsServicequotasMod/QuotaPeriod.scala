@@ -17,10 +17,10 @@ trait QuotaPeriod extends js.Object {
 
 object QuotaPeriod {
   @scala.inline
-  def apply(PeriodUnit: PeriodUnit = null, PeriodValue: js.UndefOr[PeriodValue] = js.undefined): QuotaPeriod = {
+  def apply(PeriodUnit: PeriodUnit = null, PeriodValue: Int | Double = null): QuotaPeriod = {
     val __obj = js.Dynamic.literal()
     if (PeriodUnit != null) __obj.updateDynamic("PeriodUnit")(PeriodUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(PeriodValue)) __obj.updateDynamic("PeriodValue")(PeriodValue)
+    if (PeriodValue != null) __obj.updateDynamic("PeriodValue")(PeriodValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaPeriod]
   }
 }

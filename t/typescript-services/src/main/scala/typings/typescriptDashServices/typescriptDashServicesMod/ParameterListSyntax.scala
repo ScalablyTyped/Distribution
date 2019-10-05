@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISeparatedSyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISeparatedSyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ParameterListSyntax")
 @js.native
 class ParameterListSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax {
+  extends typings.typescriptDashServices.TypeScript.ParameterListSyntax {
   def this(
     openParenToken: ISyntaxToken,
     parameters: ISeparatedSyntaxList,
@@ -22,7 +22,7 @@ class ParameterListSyntax protected ()
 @JSImport("typescript-services", "ParameterListSyntax")
 @js.native
 object ParameterListSyntax extends js.Object {
-  def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax = js.native
+  def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptDashServices.TypeScript.ParameterListSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ParameterListSyntax = js.native
 }
 

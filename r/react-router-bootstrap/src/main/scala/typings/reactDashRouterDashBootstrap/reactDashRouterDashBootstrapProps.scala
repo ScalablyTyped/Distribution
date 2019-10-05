@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait reactDashRouterDashBootstrapProps {
   @scala.inline
+  def DefaultClsProps: NavLinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
+  type DefaultClsProps[S] = NavLinkProps[S]
+  @scala.inline
   def IndexLinkContainerProps: NavLinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
   type IndexLinkContainerProps[S] = NavLinkProps[S]
   @scala.inline
@@ -18,8 +21,5 @@ trait reactDashRouterDashBootstrapProps {
   @scala.inline
   def LinkContainerClsProps: NavLinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
   type LinkContainerClsProps[S] = NavLinkProps[S]
-  @scala.inline
-  def defaultClsProps: NavLinkProps.type = typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
-  type defaultClsProps[S] = NavLinkProps[S]
 }
 

@@ -1,8 +1,8 @@
 package typings.jqueryDotWindow
 
-import typings.jqueryDotWindow.JQueryWindowNs.Static
-import typings.jqueryDotWindow.JQueryWindowNs.Window
-import typings.jqueryDotWindow.JQueryWindowNs.WindowOptions
+import typings.jqueryDotWindow.JQueryWindow.Static
+import typings.jqueryDotWindow.JQueryWindow.Window
+import typings.jqueryDotWindow.JQueryWindow.WindowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

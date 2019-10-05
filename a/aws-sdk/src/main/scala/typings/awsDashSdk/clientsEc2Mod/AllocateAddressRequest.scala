@@ -28,7 +28,7 @@ object AllocateAddressRequest {
   def apply(
     Address: String = null,
     Domain: DomainType = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PublicIpv4Pool: String = null
   ): AllocateAddressRequest = {
     val __obj = js.Dynamic.literal()

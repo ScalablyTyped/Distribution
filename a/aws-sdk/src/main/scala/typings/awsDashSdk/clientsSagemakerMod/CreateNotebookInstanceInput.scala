@@ -79,7 +79,7 @@ object CreateNotebookInstanceInput {
     SecurityGroupIds: SecurityGroupIds = null,
     SubnetId: SubnetId = null,
     Tags: TagList = null,
-    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
+    VolumeSizeInGB: Int | Double = null
   ): CreateNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any], NotebookInstanceName = NotebookInstanceName, RoleArn = RoleArn)
     if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes)
@@ -92,7 +92,7 @@ object CreateNotebookInstanceInput {
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB)
+    if (VolumeSizeInGB != null) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNotebookInstanceInput]
   }
 }

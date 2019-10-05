@@ -11,13 +11,10 @@ trait InstanceCountLimits extends js.Object {
 
 object InstanceCountLimits {
   @scala.inline
-  def apply(
-    MaximumInstanceCount: js.UndefOr[MaximumInstanceCount] = js.undefined,
-    MinimumInstanceCount: js.UndefOr[MinimumInstanceCount] = js.undefined
-  ): InstanceCountLimits = {
+  def apply(MaximumInstanceCount: Int | scala.Double = null, MinimumInstanceCount: Int | scala.Double = null): InstanceCountLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaximumInstanceCount)) __obj.updateDynamic("MaximumInstanceCount")(MaximumInstanceCount)
-    if (!js.isUndefined(MinimumInstanceCount)) __obj.updateDynamic("MinimumInstanceCount")(MinimumInstanceCount)
+    if (MaximumInstanceCount != null) __obj.updateDynamic("MaximumInstanceCount")(MaximumInstanceCount.asInstanceOf[js.Any])
+    if (MinimumInstanceCount != null) __obj.updateDynamic("MinimumInstanceCount")(MinimumInstanceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCountLimits]
   }
 }

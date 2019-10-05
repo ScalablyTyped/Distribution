@@ -37,7 +37,7 @@ object ModifyNetworkInterfaceAttributeRequest {
     NetworkInterfaceId: String,
     Attachment: NetworkInterfaceAttachmentChanges = null,
     Description: AttributeValue = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
     SourceDestCheck: AttributeBooleanValue = null
   ): ModifyNetworkInterfaceAttributeRequest = {

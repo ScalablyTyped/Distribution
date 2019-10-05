@@ -6,7 +6,7 @@ import typings.atApolloReactDashCommon.libTypesTypesMod.BaseSubscriptionOptions
 import typings.atApolloReactDashCommon.libTypesTypesMod.OnSubscriptionDataOptions
 import typings.atApolloReactDashCommon.libTypesTypesMod.SubscriptionResult
 import typings.graphql.languageAstMod.DocumentNode
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

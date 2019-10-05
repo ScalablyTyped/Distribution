@@ -1,8 +1,8 @@
 package typings.antd
 
-import typings.antd.esListMod.ColumnCount
 import typings.antd.esStatisticUtilsMod._Formatter
-import typings.antd.esTreeDirectoryTreeMod.ExpandAction
+import typings.antd.libListMod.ColumnCount
+import typings.antd.libTreeDirectoryTreeMod.ExpandAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,47 +14,47 @@ object antdNumbers {
   @js.native
   sealed trait `1`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `12`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `2`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `24`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `3`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `4`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `6`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `8`
     extends ColumnCount
-       with typings.antd.libListMod.ColumnCount
+       with typings.antd.esListMod.ColumnCount
   
   @js.native
   sealed trait `false`
     extends ExpandAction
-       with typings.antd.libTreeDirectoryTreeMod.ExpandAction
+       with typings.antd.esTreeDirectoryTreeMod.ExpandAction
        with _Formatter
        with typings.antd.libStatisticUtilsMod._Formatter
   

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -176,70 +177,70 @@ object IgPivotDataSelector {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     customMoveValidation: js.Function = null,
-    dataSelectorRendered: DataSelectorRenderedEvent = null,
+    dataSelectorRendered: (/* event */ Event, /* ui */ DataSelectorRenderedEventUIParam) => Unit = null,
     dataSource: js.Any = null,
-    dataSourceInitialized: DataSourceInitializedEvent = null,
+    dataSourceInitialized: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit = null,
     dataSourceOptions: IgPivotDataSelectorDataSourceOptions = null,
-    dataSourceUpdated: DataSourceUpdatedEvent = null,
+    dataSourceUpdated: (/* event */ Event, /* ui */ DataSourceUpdatedEventUIParam) => Unit = null,
     deferUpdate: js.UndefOr[Boolean] = js.undefined,
-    deferUpdateChanged: DeferUpdateChangedEvent = null,
+    deferUpdateChanged: (/* event */ Event, /* ui */ DeferUpdateChangedEventUIParam) => Unit = null,
     disableColumnsDropArea: js.UndefOr[Boolean] = js.undefined,
     disableFiltersDropArea: js.UndefOr[Boolean] = js.undefined,
     disableMeasuresDropArea: js.UndefOr[Boolean] = js.undefined,
     disableRowsDropArea: js.UndefOr[Boolean] = js.undefined,
-    drag: DragEvent = null,
+    drag: (/* event */ Event, /* ui */ DragEventUIParam) => Unit = null,
     dragAndDropSettings: IgPivotDataSelectorDragAndDropSettings = null,
-    dragStart: DragStartEvent = null,
-    dragStop: DragStopEvent = null,
+    dragStart: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit = null,
+    dragStop: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit = null,
     dropDownParent: js.Any = null,
-    filterDropDownClosed: FilterDropDownClosedEvent = null,
-    filterDropDownClosing: FilterDropDownClosingEvent = null,
-    filterDropDownOk: FilterDropDownOkEvent = null,
-    filterDropDownOpened: FilterDropDownOpenedEvent = null,
-    filterDropDownOpening: FilterDropDownOpeningEvent = null,
-    filterMembersLoaded: FilterMembersLoadedEvent = null,
+    filterDropDownClosed: (/* event */ Event, /* ui */ FilterDropDownClosedEventUIParam) => Unit = null,
+    filterDropDownClosing: (/* event */ Event, /* ui */ FilterDropDownClosingEventUIParam) => Unit = null,
+    filterDropDownOk: (/* event */ Event, /* ui */ FilterDropDownOkEventUIParam) => Unit = null,
+    filterDropDownOpened: (/* event */ Event, /* ui */ FilterDropDownOpenedEventUIParam) => Unit = null,
+    filterDropDownOpening: (/* event */ Event, /* ui */ FilterDropDownOpeningEventUIParam) => Unit = null,
+    filterMembersLoaded: (/* event */ Event, /* ui */ FilterMembersLoadedEventUIParam) => Unit = null,
     height: String | Double = null,
     language: String = null,
     locale: js.Any = null,
-    metadataDropped: MetadataDroppedEvent = null,
-    metadataDropping: MetadataDroppingEvent = null,
-    metadataRemoved: MetadataRemovedEvent = null,
-    metadataRemoving: MetadataRemovingEvent = null,
+    metadataDropped: (/* event */ Event, /* ui */ MetadataDroppedEventUIParam) => Unit = null,
+    metadataDropping: (/* event */ Event, /* ui */ MetadataDroppingEventUIParam) => Unit = null,
+    metadataRemoved: (/* event */ Event, /* ui */ MetadataRemovedEventUIParam) => Unit = null,
+    metadataRemoving: (/* event */ Event, /* ui */ MetadataRemovingEventUIParam) => Unit = null,
     regional: String | js.Object = null,
     width: String | Double = null
   ): IgPivotDataSelector = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
-    if (dataSelectorRendered != null) __obj.updateDynamic("dataSelectorRendered")(dataSelectorRendered)
+    if (dataSelectorRendered != null) __obj.updateDynamic("dataSelectorRendered")(js.Any.fromFunction2(dataSelectorRendered))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(dataSourceInitialized)
+    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(js.Any.fromFunction2(dataSourceInitialized))
     if (dataSourceOptions != null) __obj.updateDynamic("dataSourceOptions")(dataSourceOptions)
-    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(dataSourceUpdated)
+    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(js.Any.fromFunction2(dataSourceUpdated))
     if (!js.isUndefined(deferUpdate)) __obj.updateDynamic("deferUpdate")(deferUpdate)
-    if (deferUpdateChanged != null) __obj.updateDynamic("deferUpdateChanged")(deferUpdateChanged)
+    if (deferUpdateChanged != null) __obj.updateDynamic("deferUpdateChanged")(js.Any.fromFunction2(deferUpdateChanged))
     if (!js.isUndefined(disableColumnsDropArea)) __obj.updateDynamic("disableColumnsDropArea")(disableColumnsDropArea)
     if (!js.isUndefined(disableFiltersDropArea)) __obj.updateDynamic("disableFiltersDropArea")(disableFiltersDropArea)
     if (!js.isUndefined(disableMeasuresDropArea)) __obj.updateDynamic("disableMeasuresDropArea")(disableMeasuresDropArea)
     if (!js.isUndefined(disableRowsDropArea)) __obj.updateDynamic("disableRowsDropArea")(disableRowsDropArea)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
     if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
-    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(filterDropDownClosed)
-    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(filterDropDownClosing)
-    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(filterDropDownOk)
-    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(filterDropDownOpened)
-    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(filterDropDownOpening)
-    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(filterMembersLoaded)
+    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(js.Any.fromFunction2(filterDropDownClosed))
+    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(js.Any.fromFunction2(filterDropDownClosing))
+    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(js.Any.fromFunction2(filterDropDownOk))
+    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(js.Any.fromFunction2(filterDropDownOpened))
+    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(js.Any.fromFunction2(filterDropDownOpening))
+    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(js.Any.fromFunction2(filterMembersLoaded))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(metadataDropped)
-    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(metadataDropping)
-    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(metadataRemoved)
-    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(metadataRemoving)
+    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(js.Any.fromFunction2(metadataDropped))
+    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(js.Any.fromFunction2(metadataDropping))
+    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(js.Any.fromFunction2(metadataRemoved))
+    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(js.Any.fromFunction2(metadataRemoving))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelector]

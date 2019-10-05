@@ -1,6 +1,8 @@
 package typings.reactDashBootstrap.libNavbarToggleMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,10 +15,10 @@ trait NavbarToggleProps extends HTMLProps[NavbarToggle] {
 
 object NavbarToggleProps {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[NavbarToggle] = null, onClick: MouseEventHandler[_] = null): NavbarToggleProps = {
+  def apply(HTMLProps: HTMLProps[NavbarToggle] = null, onClick: MouseEvent[_, NativeMouseEvent] => Unit = null): NavbarToggleProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[NavbarToggleProps]
   }
 }

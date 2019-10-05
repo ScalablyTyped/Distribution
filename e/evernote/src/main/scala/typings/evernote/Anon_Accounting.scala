@@ -1,10 +1,10 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.Accounting
-import typings.evernote.evernoteMod.EvernoteNs.BusinessUserInfo
-import typings.evernote.evernoteMod.EvernoteNs.PremiumInfo
-import typings.evernote.evernoteMod.EvernoteNs.PrivilegeLevel
-import typings.evernote.evernoteMod.EvernoteNs.UserAttributes
+import typings.evernote.evernoteMod.Evernote.Accounting
+import typings.evernote.evernoteMod.Evernote.BusinessUserInfo
+import typings.evernote.evernoteMod.Evernote.PremiumInfo
+import typings.evernote.evernoteMod.Evernote.PrivilegeLevel
+import typings.evernote.evernoteMod.Evernote.UserAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,12 +33,12 @@ object ListAggregateDiscoveredResourcesRequest {
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     ResourceType: ResourceType,
     Filters: ResourceFilters = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: NextToken = null
   ): ListAggregateDiscoveredResourcesRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName, ResourceType = ResourceType.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListAggregateDiscoveredResourcesRequest]
   }

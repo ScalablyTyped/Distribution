@@ -42,14 +42,14 @@ object GetPartitionsRequest {
     TableName: NameString,
     CatalogId: CatalogIdString = null,
     Expression: PredicateString = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null,
     Segment: Segment = null
   ): GetPartitionsRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName, TableName = TableName)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
     if (Expression != null) __obj.updateDynamic("Expression")(Expression)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Segment != null) __obj.updateDynamic("Segment")(Segment)
     __obj.asInstanceOf[GetPartitionsRequest]

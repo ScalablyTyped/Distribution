@@ -9,7 +9,7 @@ object atFortawesomeReactDashFontawesomeComponents extends atFortawesomeReactDas
   @scala.inline
   def FontAwesomeIcon: ComponentType[
     typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps
-  ] = typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.^.asInstanceOf[js.Dynamic].selectDynamic("FontAwesomeIcon").asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIcon.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps]]
 }
 

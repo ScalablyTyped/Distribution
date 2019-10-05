@@ -44,21 +44,21 @@ object TaskExecutionResultDetail {
   def apply(
     ErrorCode: String = null,
     ErrorDetail: String = null,
-    PrepareDuration: js.UndefOr[Duration] = js.undefined,
+    PrepareDuration: Int | Double = null,
     PrepareStatus: PhaseStatus = null,
-    TransferDuration: js.UndefOr[Duration] = js.undefined,
+    TransferDuration: Int | Double = null,
     TransferStatus: PhaseStatus = null,
-    VerifyDuration: js.UndefOr[Duration] = js.undefined,
+    VerifyDuration: Int | Double = null,
     VerifyStatus: PhaseStatus = null
   ): TaskExecutionResultDetail = {
     val __obj = js.Dynamic.literal()
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
     if (ErrorDetail != null) __obj.updateDynamic("ErrorDetail")(ErrorDetail)
-    if (!js.isUndefined(PrepareDuration)) __obj.updateDynamic("PrepareDuration")(PrepareDuration)
+    if (PrepareDuration != null) __obj.updateDynamic("PrepareDuration")(PrepareDuration.asInstanceOf[js.Any])
     if (PrepareStatus != null) __obj.updateDynamic("PrepareStatus")(PrepareStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransferDuration)) __obj.updateDynamic("TransferDuration")(TransferDuration)
+    if (TransferDuration != null) __obj.updateDynamic("TransferDuration")(TransferDuration.asInstanceOf[js.Any])
     if (TransferStatus != null) __obj.updateDynamic("TransferStatus")(TransferStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(VerifyDuration)) __obj.updateDynamic("VerifyDuration")(VerifyDuration)
+    if (VerifyDuration != null) __obj.updateDynamic("VerifyDuration")(VerifyDuration.asInstanceOf[js.Any])
     if (VerifyStatus != null) __obj.updateDynamic("VerifyStatus")(VerifyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskExecutionResultDetail]
   }

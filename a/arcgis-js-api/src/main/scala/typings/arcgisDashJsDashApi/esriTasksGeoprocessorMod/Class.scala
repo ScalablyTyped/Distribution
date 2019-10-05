@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksGeoprocessorMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Geoprocessor
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoprocessorProperties
+import typings.arcgisDashJsDashApi.__esri.Geoprocessor
+import typings.arcgisDashJsDashApi.__esri.GeoprocessorProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

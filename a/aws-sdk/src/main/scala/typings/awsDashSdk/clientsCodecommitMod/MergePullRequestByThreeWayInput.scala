@@ -58,7 +58,7 @@ object MergePullRequestByThreeWayInput {
     conflictResolution: ConflictResolution = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
+    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
     sourceCommitId: ObjectId = null
   ): MergePullRequestByThreeWayInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId, repositoryName = repositoryName)

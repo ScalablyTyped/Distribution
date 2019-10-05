@@ -5,10 +5,10 @@ import typings.atPulumiAws.autoscalingMetricsMod.Metric
 import typings.atPulumiAws.autoscalingMetricsMod.MetricsGranularity
 import typings.atPulumiAws.ec2LaunchConfigurationMod.LaunchConfiguration
 import typings.atPulumiAws.ec2PlacementGroupMod.PlacementGroup
-import typings.atPulumiAws.typesInputMod.autoscalingNs.GroupInitialLifecycleHook
-import typings.atPulumiAws.typesInputMod.autoscalingNs.GroupLaunchTemplate
-import typings.atPulumiAws.typesInputMod.autoscalingNs.GroupMixedInstancesPolicy
-import typings.atPulumiAws.typesInputMod.autoscalingNs.GroupTag
+import typings.atPulumiAws.typesInputMod.autoscaling.GroupInitialLifecycleHook
+import typings.atPulumiAws.typesInputMod.autoscaling.GroupLaunchTemplate
+import typings.atPulumiAws.typesInputMod.autoscaling.GroupMixedInstancesPolicy
+import typings.atPulumiAws.typesInputMod.autoscaling.GroupTag
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

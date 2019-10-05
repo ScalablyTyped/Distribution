@@ -1,5 +1,6 @@
 package typings.reactDashRedux.reactDashReduxMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.redux.reduxMod.AnyAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -81,4 +82,8 @@ trait Connect extends js.Object {
     options: Options[State, TStateProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
 }
+
+@JSImport("react-redux", "connect")
+@js.native
+object connect extends TopLevel[Connect]
 

@@ -1,6 +1,6 @@
 package typings.signalr
 
-import typings.signalr.SignalRNs.ConnectionState
+import typings.signalr.SignalR.ConnectionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

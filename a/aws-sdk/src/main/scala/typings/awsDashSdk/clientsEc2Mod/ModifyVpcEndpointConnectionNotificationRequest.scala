@@ -29,7 +29,7 @@ object ModifyVpcEndpointConnectionNotificationRequest {
     ConnectionNotificationId: String,
     ConnectionEvents: ValueStringList = null,
     ConnectionNotificationArn: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyVpcEndpointConnectionNotificationRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationId = ConnectionNotificationId)
     if (ConnectionEvents != null) __obj.updateDynamic("ConnectionEvents")(ConnectionEvents)

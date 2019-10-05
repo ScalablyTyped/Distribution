@@ -1,8 +1,8 @@
 package typings.actionsDashOnDashGoogle.transactionsMod
 
 import typings.actionsDashOnDashGoogle.responseDashBuilderMod.Image
-import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValuesNs.LineItemType
-import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValuesNs.PriceType
+import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValues.LineItemType
+import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValues.PriceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.reactDashToastify.reactDashToastifyMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.ReactNode
 import typings.reactDashToastify.Anon_BOTTOMCENTER
 import typings.reactDashToastify.Anon_CloseToast
@@ -55,4 +56,8 @@ trait Toast extends js.Object {
   def warning(content: ReactNode): String = js.native
   def warning(content: ReactNode, options: ToastOptions): String = js.native
 }
+
+@JSImport("react-toastify", "toast")
+@js.native
+object toast extends TopLevel[Toast]
 

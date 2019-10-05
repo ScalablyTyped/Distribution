@@ -24,7 +24,9 @@
 [E]      illegal cyclic reference involving type Selector
 [E]      L16:   type ScalarSelector = String | InstanceInvocation | StringDictionary[Selector]
 [E]                                                                                  ^
+[E] src/main/scala/typings/xDashRay/xDashRayMod/InstanceInvocation.scala: L3 [E2]
 [E] src/main/scala/typings/xDashRay/xDashRayMod/package.scala: L16 [E1]
 [E] Failed to compile 'x-ray'
  [id => x-ray, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => publish] 

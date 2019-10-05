@@ -1,12 +1,12 @@
 package typings.atPulumiAws.mqGetBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerConfiguration
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerEncryptionOption
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerInstance
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerLogs
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerMaintenanceWindowStartTime
-import typings.atPulumiAws.typesOutputMod.mqNs.GetBrokerUser
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerConfiguration
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerEncryptionOption
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerInstance
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerLogs
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerMaintenanceWindowStartTime
+import typings.atPulumiAws.typesOutputMod.mq.GetBrokerUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

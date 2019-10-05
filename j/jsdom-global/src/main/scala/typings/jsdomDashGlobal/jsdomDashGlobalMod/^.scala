@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Function0[Unit] = js.native
-  def apply(html: String | Buffer): js.Function0[Unit] = js.native
-  def apply(html: String | Buffer, options: JsdomOptions): js.Function0[Unit] = js.native
+  def apply(html: String): js.Function0[Unit] = js.native
+  def apply(html: String, options: JsdomOptions): js.Function0[Unit] = js.native
+  def apply(html: Buffer): js.Function0[Unit] = js.native
+  def apply(html: Buffer, options: JsdomOptions): js.Function0[Unit] = js.native
 }
 

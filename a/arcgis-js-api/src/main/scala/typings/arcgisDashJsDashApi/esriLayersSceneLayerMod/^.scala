@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSceneLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.SceneLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

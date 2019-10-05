@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("original", JSImport.Namespace)
 @js.native
 object originalMod extends js.Object {
-  def apply(url: String | js.Object | Anon_Host): String = js.native
+  def apply(url: String): String = js.native
+  def apply(url: js.Object): String = js.native
+  def apply(url: Anon_Host): String = js.native
   /**
     * Check if the origins are the same.
     *

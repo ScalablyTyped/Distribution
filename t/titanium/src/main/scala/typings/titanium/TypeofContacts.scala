@@ -1,9 +1,9 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.ContactsNs.Group
-import typings.titanium.TitaniumNs.ContactsNs.Person
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Contacts.Group
+import typings.titanium.Titanium.Contacts.Person
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

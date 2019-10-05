@@ -8,7 +8,7 @@ import typings.fineDashUploader.libCoreMod.CoreOptions
 import typings.fineDashUploader.libCoreMod.CorsOptions
 import typings.fineDashUploader.libCoreMod.ExtraButtonsOptions
 import typings.fineDashUploader.libCoreMod.FormOptions
-import typings.fineDashUploader.libCoreMod.FormatFileNameFuncton
+import typings.fineDashUploader.libCoreMod.PromiseOptions
 import typings.fineDashUploader.libCoreMod.RequestOptions
 import typings.fineDashUploader.libCoreMod.ResumeOptions
 import typings.fineDashUploader.libCoreMod.SessionOptions
@@ -130,7 +130,7 @@ object UIOptions {
     extraButtons: js.Array[ExtraButtonsOptions] = null,
     failedUploadTextDisplay: UIFailedUploadTextDisplay = null,
     form: FormOptions = null,
-    formatFileName: FormatFileNameFuncton = null,
+    formatFileName: /* fileOrBlobName */ String => String = null,
     listElement: HTMLElement = null,
     maxConnections: Int | Double = null,
     messages: UIMessages = null,
@@ -141,9 +141,9 @@ object UIOptions {
     retry: UIRetryOptions = null,
     scaling: UIScalingOptions = null,
     session: SessionOptions = null,
-    showConfirm: ShowConfirmFunction = null,
-    showMessage: ShowMessageFunction = null,
-    showPrompt: ShowPromptFunction = null,
+    showConfirm: /* message */ String => PromiseOptions | Unit = null,
+    showMessage: /* message */ String => PromiseOptions | Unit = null,
+    showPrompt: (/* message */ String, /* defaultValue */ String) => PromiseOptions | Unit = null,
     template: String | HTMLElement = null,
     text: UITextOptions = null,
     thumbnails: UIThumbnailsOptions = null,
@@ -168,7 +168,7 @@ object UIOptions {
     if (extraButtons != null) __obj.updateDynamic("extraButtons")(extraButtons)
     if (failedUploadTextDisplay != null) __obj.updateDynamic("failedUploadTextDisplay")(failedUploadTextDisplay)
     if (form != null) __obj.updateDynamic("form")(form)
-    if (formatFileName != null) __obj.updateDynamic("formatFileName")(formatFileName)
+    if (formatFileName != null) __obj.updateDynamic("formatFileName")(js.Any.fromFunction1(formatFileName))
     if (listElement != null) __obj.updateDynamic("listElement")(listElement)
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
@@ -179,9 +179,9 @@ object UIOptions {
     if (retry != null) __obj.updateDynamic("retry")(retry)
     if (scaling != null) __obj.updateDynamic("scaling")(scaling)
     if (session != null) __obj.updateDynamic("session")(session)
-    if (showConfirm != null) __obj.updateDynamic("showConfirm")(showConfirm)
-    if (showMessage != null) __obj.updateDynamic("showMessage")(showMessage)
-    if (showPrompt != null) __obj.updateDynamic("showPrompt")(showPrompt)
+    if (showConfirm != null) __obj.updateDynamic("showConfirm")(js.Any.fromFunction1(showConfirm))
+    if (showMessage != null) __obj.updateDynamic("showMessage")(js.Any.fromFunction1(showMessage))
+    if (showPrompt != null) __obj.updateDynamic("showPrompt")(js.Any.fromFunction2(showPrompt))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)
     if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)

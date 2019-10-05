@@ -17,9 +17,9 @@ trait Emotion extends js.Object {
 
 object Emotion {
   @scala.inline
-  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Type: EmotionName = null): Emotion = {
+  def apply(Confidence: Int | Double = null, Type: EmotionName = null): Emotion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Emotion]
   }

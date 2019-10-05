@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSliderSliderViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliderViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.SliderViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

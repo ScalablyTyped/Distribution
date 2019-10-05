@@ -13,14 +13,5 @@ trait SVGAnimatedRect extends js.Object {
 
 @JSGlobal("SVGAnimatedRect")
 @js.native
-class SVGAnimatedRectCls () extends SVGAnimatedRect {
-  /* CompleteClass */
-  override val animVal: DOMRectReadOnly = js.native
-  /* CompleteClass */
-  override val baseVal: DOMRect = js.native
-}
-
-@JSGlobal("SVGAnimatedRect")
-@js.native
 object SVGAnimatedRect extends Instantiable0[SVGAnimatedRect]
 

@@ -21,7 +21,11 @@ trait ReleaseAddressRequest extends js.Object {
 
 object ReleaseAddressRequest {
   @scala.inline
-  def apply(AllocationId: String = null, DryRun: js.UndefOr[Boolean] = js.undefined, PublicIp: String = null): ReleaseAddressRequest = {
+  def apply(
+    AllocationId: String = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    PublicIp: String = null
+  ): ReleaseAddressRequest = {
     val __obj = js.Dynamic.literal()
     if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

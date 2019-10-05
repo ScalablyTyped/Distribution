@@ -1,7 +1,7 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.electron.ElectronNs.WebContents
+import typings.electron.Electron.WebContents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

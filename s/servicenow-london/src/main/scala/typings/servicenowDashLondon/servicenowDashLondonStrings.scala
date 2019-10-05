@@ -1,6 +1,6 @@
 package typings.servicenowDashLondon
 
-import typings.servicenowDashLondon.snUnderscoreWsNs.RestHTTPMethods
+import typings.servicenowDashLondon.sn_ws.RestHTTPMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

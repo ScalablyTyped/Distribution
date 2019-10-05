@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SourceUnitSyntax")
 @js.native
 class SourceUnitSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SourceUnitSyntax {
+  extends typings.typescriptDashServices.TypeScript.SourceUnitSyntax {
   def this(moduleElements: ISyntaxList, endOfFileToken: ISyntaxToken, parsedInStrictMode: Boolean) = this()
 }
 
@@ -17,7 +17,7 @@ class SourceUnitSyntax protected ()
 @JSImport("typescript-services", "SourceUnitSyntax")
 @js.native
 object SourceUnitSyntax extends js.Object {
-  def create(endOfFileToken: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.SourceUnitSyntax = js.native
-  def create1(endOfFileToken: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.SourceUnitSyntax = js.native
+  def create(endOfFileToken: ISyntaxToken): typings.typescriptDashServices.TypeScript.SourceUnitSyntax = js.native
+  def create1(endOfFileToken: ISyntaxToken): typings.typescriptDashServices.TypeScript.SourceUnitSyntax = js.native
 }
 

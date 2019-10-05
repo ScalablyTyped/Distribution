@@ -17,12 +17,13 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(
-    children: ReactNode,
     leastDestructiveRef: RefObject[HTMLElement],
+    children: ReactNode = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     onDismiss: () => Unit = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], leastDestructiveRef = leastDestructiveRef)
+    val __obj = js.Dynamic.literal(leastDestructiveRef = leastDestructiveRef)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     __obj.asInstanceOf[Anon_Children]

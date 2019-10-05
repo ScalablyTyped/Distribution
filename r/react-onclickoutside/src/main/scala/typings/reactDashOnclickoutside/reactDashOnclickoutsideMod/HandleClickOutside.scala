@@ -1,5 +1,7 @@
 package typings.reactDashOnclickoutside.reactDashOnclickoutsideMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,8 +13,8 @@ trait HandleClickOutside[T] extends js.Object {
 
 object HandleClickOutside {
   @scala.inline
-  def apply[T](handleClickOutside: MouseEventHandler[T]): HandleClickOutside[T] = {
-    val __obj = js.Dynamic.literal(handleClickOutside = handleClickOutside)
+  def apply[T](handleClickOutside: MouseEvent[T, NativeMouseEvent] => Unit): HandleClickOutside[T] = {
+    val __obj = js.Dynamic.literal(handleClickOutside = js.Any.fromFunction1(handleClickOutside))
   
     __obj.asInstanceOf[HandleClickOutside[T]]
   }

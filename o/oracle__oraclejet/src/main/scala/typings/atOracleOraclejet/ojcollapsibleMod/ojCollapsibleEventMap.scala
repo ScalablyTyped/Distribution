@@ -4,10 +4,10 @@ import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
 import typings.atOracleOraclejet.atOracleOraclejetStrings.disclosureIcon
 import typings.atOracleOraclejet.atOracleOraclejetStrings.header
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojCollapse
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojExpand
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -32,10 +32,10 @@ trait ojCollapsibleEventMap extends baseComponentEventMap[ojCollapsibleSettableP
   var disabledChanged: JetElementCustomEvent[Boolean]
   var expandAreaChanged: JetElementCustomEvent[header | disclosureIcon]
   var expandedChanged: JetElementCustomEvent[Boolean]
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeCollapse
-  var ojBeforeExpand: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeExpand
-  var ojCollapse: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojCollapse
-  var ojExpand: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojExpand
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse
+  var ojBeforeExpand: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand
+  var ojCollapse: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse
+  var ojExpand: typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand
 }
 
 object ojCollapsibleEventMap {

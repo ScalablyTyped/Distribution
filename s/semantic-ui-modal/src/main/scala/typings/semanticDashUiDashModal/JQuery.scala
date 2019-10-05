@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashModal
 
-import typings.semanticDashUiDashModal.SemanticUINs.Modal
-import typings.semanticDashUiDashModal.SemanticUINs.ModalSettings
+import typings.semanticDashUiDashModal.SemanticUI.Modal
+import typings.semanticDashUiDashModal.SemanticUI.ModalSettings
 import typings.semanticDashUiDashModal.semanticDashUiDashModalStrings.`attach events`
 import typings.semanticDashUiDashModal.semanticDashUiDashModalStrings.`cache sizes`
 import typings.semanticDashUiDashModal.semanticDashUiDashModalStrings.`can fit`

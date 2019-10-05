@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.SelectionIndicatorViewModelNs.ComputeScreenSpacePosition
+import typings.cesium.cesiumMod.SelectionIndicatorViewModel.ComputeScreenSpacePosition
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,5 +22,11 @@ class SelectionIndicatorViewModel protected () extends js.Object {
   def animateDepart(): Unit = js.native
   def computeScreenSpacePosition(position: Cartesian3, result: Cartesian2): Cartesian2 = js.native
   def update(): Unit = js.native
+}
+
+@JSImport("cesium", "SelectionIndicatorViewModel")
+@js.native
+object SelectionIndicatorViewModel extends js.Object {
+  type ComputeScreenSpacePosition = js.Function2[/* position */ Cartesian3, /* result */ Cartesian2, Cartesian2]
 }
 

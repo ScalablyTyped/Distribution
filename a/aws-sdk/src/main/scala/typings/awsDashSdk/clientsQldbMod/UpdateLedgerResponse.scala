@@ -32,7 +32,7 @@ object UpdateLedgerResponse {
   def apply(
     Arn: Arn = null,
     CreationDateTime: Timestamp = null,
-    DeletionProtection: js.UndefOr[DeletionProtection] = js.undefined,
+    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
     Name: LedgerName = null,
     State: LedgerState = null
   ): UpdateLedgerResponse = {

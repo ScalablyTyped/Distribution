@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSmartMappingOpacitySliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacitySlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacitySliderProperties
+import typings.arcgisDashJsDashApi.__esri.OpacitySlider
+import typings.arcgisDashJsDashApi.__esri.OpacitySliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -49,7 +49,7 @@ object ConfigurationRecorderStatus {
     lastStatusChangeTime: _Date = null,
     lastStopTime: _Date = null,
     name: String = null,
-    recording: js.UndefOr[Boolean] = js.undefined
+    recording: js.UndefOr[scala.Boolean] = js.undefined
   ): ConfigurationRecorderStatus = {
     val __obj = js.Dynamic.literal()
     if (lastErrorCode != null) __obj.updateDynamic("lastErrorCode")(lastErrorCode)

@@ -1,6 +1,6 @@
 package typings.plugapi.plugapiMod
 
-import typings.plugapi.plugapiMod.UserNs.DJ
+import typings.plugapi.plugapiMod.User.DJ
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

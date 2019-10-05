@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CatchClause")
 @js.native
 class CatchClause protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.CatchClause {
+  extends typings.typescriptDashServices.TypeScript.CatchClause {
   def this(
-    identifier: typings.typescriptDashServices.TypeScriptNs.Identifier,
-    typeAnnotation: typings.typescriptDashServices.TypeScriptNs.TypeAnnotation,
-    block: typings.typescriptDashServices.TypeScriptNs.Block
+    identifier: typings.typescriptDashServices.TypeScript.Identifier,
+    typeAnnotation: typings.typescriptDashServices.TypeScript.TypeAnnotation,
+    block: typings.typescriptDashServices.TypeScript.Block
   ) = this()
 }
 

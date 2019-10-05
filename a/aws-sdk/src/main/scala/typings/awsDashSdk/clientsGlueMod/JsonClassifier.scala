@@ -34,12 +34,12 @@ object JsonClassifier {
     Name: NameString,
     CreationTime: Timestamp = null,
     LastUpdated: Timestamp = null,
-    Version: js.UndefOr[VersionId] = js.undefined
+    Version: Int | Double = null
   ): JsonClassifier = {
     val __obj = js.Dynamic.literal(JsonPath = JsonPath, Name = Name)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonClassifier]
   }
 }

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSmartMappingHeatmapSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapSlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapSliderProperties
+import typings.arcgisDashJsDashApi.__esri.HeatmapSlider
+import typings.arcgisDashJsDashApi.__esri.HeatmapSliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

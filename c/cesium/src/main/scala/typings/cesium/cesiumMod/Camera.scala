@@ -129,5 +129,7 @@ object Camera extends js.Object {
   var DEFAULT_OFFSET: HeadingPitchRange = js.native
   var DEFAULT_VIEW_FACTOR: Double = js.native
   var DEFAULT_VIEW_RECTANGLE: Rectangle = js.native
+  type FlightCancelledCallback = js.Function0[Unit]
+  type FlightCompleteCallback = js.Function0[Unit]
 }
 

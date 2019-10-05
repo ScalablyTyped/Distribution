@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdNumbers.`0`
 import typings.std.stdNumbers.`1`
 import typings.std.stdNumbers.`2`
@@ -444,8 +445,5 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
 
 @JSGlobal("Array")
 @js.native
-class ArrayCls[T] protected () extends Array[T] {
-  def this(arrayLength: Double) = this()
-  def this(items: T*) = this()
-}
+object Array extends TopLevel[ArrayConstructor]
 

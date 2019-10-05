@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDirectionsMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Directions
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectionsProperties
+import typings.arcgisDashJsDashApi.__esri.Directions
+import typings.arcgisDashJsDashApi.__esri.DirectionsProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

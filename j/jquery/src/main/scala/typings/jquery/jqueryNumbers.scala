@@ -1,6 +1,6 @@
 package typings.jquery
 
-import typings.jquery.JQueryNs.__Falsy
+import typings.jquery.JQuery.__Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

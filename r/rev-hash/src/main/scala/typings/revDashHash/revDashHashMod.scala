@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rev-hash", JSImport.Namespace)
 @js.native
 object revDashHashMod extends js.Object {
+  def apply(input: String): String = js.native
   /**
   Create a hash for file revving.
   @param input - Data to create a hash from.
@@ -21,6 +22,6 @@ object revDashHashMod extends js.Object {
   //=> 'fea80f2db0'
   ```
   */
-  def apply(input: Buffer | String): String = js.native
+  def apply(input: Buffer): String = js.native
 }
 

@@ -12,8 +12,11 @@ trait BlockAction extends RouterActions {
 
 object BlockAction {
   @scala.inline
-  def apply(payload: BlockCallback, `type`: ROUTER_BLOCK): BlockAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
+  def apply(
+    payload: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String,
+    `type`: ROUTER_BLOCK
+  ): BlockAction = {
+    val __obj = js.Dynamic.literal(payload = js.Any.fromFunction2(payload))
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BlockAction]
   }

@@ -34,14 +34,14 @@ object BillingRecord {
     DomainName: DomainName = null,
     InvoiceId: InvoiceId = null,
     Operation: OperationType = null,
-    Price: js.UndefOr[Price] = js.undefined
+    Price: Int | Double = null
   ): BillingRecord = {
     val __obj = js.Dynamic.literal()
     if (BillDate != null) __obj.updateDynamic("BillDate")(BillDate)
     if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName)
     if (InvoiceId != null) __obj.updateDynamic("InvoiceId")(InvoiceId)
     if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price)
+    if (Price != null) __obj.updateDynamic("Price")(Price.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingRecord]
   }
 }

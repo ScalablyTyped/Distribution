@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,34 +96,34 @@ object IgBaseChart {
   	 * Option for igBaseChart
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     height: Int | Double = null,
-    hideTooltip: HideTooltipEvent = null,
+    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
     maxRecCount: Int | Double = null,
     responseDataKey: String = null,
     responseTotalRecCountKey: String = null,
     tooltipTemplate: String = null,
-    updateTooltip: UpdateTooltipEvent = null,
+    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
     width: Int | Double = null
   ): IgBaseChart = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
     if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgBaseChart]
   }

@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.twilio.twilioMod.Resource because Already inherited
+- typings.twilio.twilioMod.PostableResource because Already inherited
 - typings.twilio.twilioMod.AccountInstance because var conflicts: get_Original, post_Original. Inlined update, update, update, update_Original, put, put, put, put_Original, availablePhoneNumbers, availablePhoneNumbers_Original, outgoingCallerIds, incomingPhoneNumbers, messages, sms, applications, connectApps, authorizedConnectApps, calls, conferences, queues, recordings, tokens, transcriptions, notifications, usage, sip, addresses, keys */ @js.native
 trait AccountResource extends ListMappedResource[AccountInstance] {
   var addresses: AddressResource = js.native

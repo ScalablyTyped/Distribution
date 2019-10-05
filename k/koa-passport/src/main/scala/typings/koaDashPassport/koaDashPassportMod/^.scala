@@ -1,7 +1,7 @@
 package typings.koaDashPassport.koaDashPassportMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.koaDashPassport.koaDashPassportMod.KoaPassportNs.Static
+import typings.koaDashPassport.koaDashPassportMod.KoaPassport.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

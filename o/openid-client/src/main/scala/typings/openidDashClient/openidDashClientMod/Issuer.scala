@@ -1,7 +1,7 @@
 package typings.openidDashClient.openidDashClientMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jose.joseMod.JWKSNs.KeyStore
+import typings.jose.joseMod.JWKS.KeyStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

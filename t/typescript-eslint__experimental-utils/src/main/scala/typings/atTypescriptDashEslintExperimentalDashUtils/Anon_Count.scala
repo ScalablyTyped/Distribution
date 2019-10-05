@@ -1,6 +1,8 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils
 
-import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintSourceCodeMod.SourceCodeNs.FilterPredicate
+import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintSourceCodeMod.SourceCode.FilterPredicate
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Comment
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +17,12 @@ object Anon_Count {
   @scala.inline
   def apply(
     count: Int | Double = null,
-    filter: FilterPredicate = null,
+    filter: /* tokenOrComment */ Token | Comment => Boolean = null,
     includeComments: js.UndefOr[Boolean] = js.undefined
   ): Anon_Count = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments)
     __obj.asInstanceOf[Anon_Count]
   }

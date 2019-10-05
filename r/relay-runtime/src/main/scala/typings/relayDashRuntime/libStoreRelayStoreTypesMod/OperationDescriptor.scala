@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OperationDescriptor extends js.Object {
-  var fragment: SingularReaderSelector
-  var request: RequestDescriptor
-  var root: NormalizationSelector
+  val fragment: SingularReaderSelector
+  val request: RequestDescriptor
+  val root: NormalizationSelector
 }
 
 object OperationDescriptor {

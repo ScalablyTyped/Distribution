@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ttsNs.SpeakOptions
-import typings.chromeDashApps.chromeNs.ttsNs.TtsVoice
+import typings.chromeDashApps.chrome.tts.SpeakOptions
+import typings.chromeDashApps.chrome.tts.TtsVoice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

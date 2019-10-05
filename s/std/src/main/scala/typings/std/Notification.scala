@@ -149,13 +149,6 @@ trait Notification extends EventTarget {
 
 @JSGlobal("Notification")
 @js.native
-class NotificationCls protected () extends Notification {
-  def this(title: java.lang.String) = this()
-  def this(title: java.lang.String, options: NotificationOptions) = this()
-}
-
-@JSGlobal("Notification")
-@js.native
 object Notification
   extends Instantiable1[/* title */ java.lang.String, Notification]
      with Instantiable2[/* title */ java.lang.String, /* options */ NotificationOptions, Notification] {

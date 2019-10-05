@@ -32,16 +32,16 @@ import scala.scalajs.js.annotation._
 object CallbackFunctionArgs {
   @scala.inline
   def apply[E, R](
-    callback: Callback[E, R] = null,
-    callbackFactory: CallbackFactory[E, R] = null,
+    callback: (E, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], Unit]) => js.Promise[R] | Unit = null,
+    callbackFactory: () => Callback[E, R] = null,
     codePathOptions: CodePathOptions = null,
     policies: js.Array[ARN] = null,
     role: Role = null,
     runtime: Runtime = null
   ): CallbackFunctionArgs[E, R] = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (callbackFactory != null) __obj.updateDynamic("callbackFactory")(callbackFactory)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
+    if (callbackFactory != null) __obj.updateDynamic("callbackFactory")(js.Any.fromFunction0(callbackFactory))
     if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions)
     if (policies != null) __obj.updateDynamic("policies")(policies)
     if (role != null) __obj.updateDynamic("role")(role)

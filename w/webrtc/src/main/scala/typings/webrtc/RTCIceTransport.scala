@@ -31,12 +31,14 @@ object RTCIceTransport {
     getRemoteCandidates: () => js.Array[RTCIceCandidate],
     getRemoteParameters: () => RTCIceParameters | Null,
     getSelectedCandidatePair: () => RTCIceCandidatePair | Null,
-    ongatheringstatechange: IceTransportEventHandler,
-    onselectedcandidatepairchange: IceTransportEventHandler,
-    onstatechange: IceTransportEventHandler
+    ongatheringstatechange: IceTransportEventHandler = null,
+    onselectedcandidatepairchange: IceTransportEventHandler = null,
+    onstatechange: IceTransportEventHandler = null
   ): RTCIceTransport = {
-    val __obj = js.Dynamic.literal(gatheringState = gatheringState, getLocalCandidates = js.Any.fromFunction0(getLocalCandidates), getLocalParameters = js.Any.fromFunction0(getLocalParameters), getRemoteCandidates = js.Any.fromFunction0(getRemoteCandidates), getRemoteParameters = js.Any.fromFunction0(getRemoteParameters), getSelectedCandidatePair = js.Any.fromFunction0(getSelectedCandidatePair), ongatheringstatechange = ongatheringstatechange.asInstanceOf[js.Any], onselectedcandidatepairchange = onselectedcandidatepairchange.asInstanceOf[js.Any], onstatechange = onstatechange.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(gatheringState = gatheringState, getLocalCandidates = js.Any.fromFunction0(getLocalCandidates), getLocalParameters = js.Any.fromFunction0(getLocalParameters), getRemoteCandidates = js.Any.fromFunction0(getRemoteCandidates), getRemoteParameters = js.Any.fromFunction0(getRemoteParameters), getSelectedCandidatePair = js.Any.fromFunction0(getSelectedCandidatePair))
+    if (ongatheringstatechange != null) __obj.updateDynamic("ongatheringstatechange")(ongatheringstatechange.asInstanceOf[js.Any])
+    if (onselectedcandidatepairchange != null) __obj.updateDynamic("onselectedcandidatepairchange")(onselectedcandidatepairchange.asInstanceOf[js.Any])
+    if (onstatechange != null) __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceTransport]
   }
 }

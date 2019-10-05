@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsWebStyleSymbolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WebStyleSymbolConstructor
+import typings.arcgisDashJsDashApi.__esri.WebStyleSymbolConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

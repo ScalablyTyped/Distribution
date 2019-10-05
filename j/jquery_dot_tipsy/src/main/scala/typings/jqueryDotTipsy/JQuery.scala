@@ -1,7 +1,7 @@
 package typings.jqueryDotTipsy
 
-import typings.jqueryDotTipsy.JQueryTipsyNs.Options
-import typings.jqueryDotTipsy.JQueryTipsyNs.Tipsy
+import typings.jqueryDotTipsy.JQueryTipsy.Options
+import typings.jqueryDotTipsy.JQueryTipsy.Tipsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

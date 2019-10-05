@@ -1,6 +1,6 @@
 package typings.baiduDashApp
 
-import typings.baiduDashApp.swanNs.EncodeBitRate
+import typings.baiduDashApp.swan.EncodeBitRate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

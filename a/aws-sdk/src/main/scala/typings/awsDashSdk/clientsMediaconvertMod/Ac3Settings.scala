@@ -42,24 +42,24 @@ trait Ac3Settings extends js.Object {
 object Ac3Settings {
   @scala.inline
   def apply(
-    Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined,
+    Bitrate: Int | Double = null,
     BitstreamMode: Ac3BitstreamMode = null,
     CodingMode: Ac3CodingMode = null,
-    Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined,
+    Dialnorm: Int | Double = null,
     DynamicRangeCompressionProfile: Ac3DynamicRangeCompressionProfile = null,
     LfeFilter: Ac3LfeFilter = null,
     MetadataControl: Ac3MetadataControl = null,
-    SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined
+    SampleRate: Int | Double = null
   ): Ac3Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate)
+    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
     if (BitstreamMode != null) __obj.updateDynamic("BitstreamMode")(BitstreamMode.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Dialnorm)) __obj.updateDynamic("Dialnorm")(Dialnorm)
+    if (Dialnorm != null) __obj.updateDynamic("Dialnorm")(Dialnorm.asInstanceOf[js.Any])
     if (DynamicRangeCompressionProfile != null) __obj.updateDynamic("DynamicRangeCompressionProfile")(DynamicRangeCompressionProfile.asInstanceOf[js.Any])
     if (LfeFilter != null) __obj.updateDynamic("LfeFilter")(LfeFilter.asInstanceOf[js.Any])
     if (MetadataControl != null) __obj.updateDynamic("MetadataControl")(MetadataControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate)
+    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ac3Settings]
   }
 }

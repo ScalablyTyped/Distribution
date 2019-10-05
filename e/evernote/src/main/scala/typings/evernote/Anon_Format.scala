@@ -1,7 +1,7 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.QueryFormat
-import typings.evernote.evernoteMod.EvernoteNs.SavedSearchScope
+import typings.evernote.evernoteMod.Evernote.QueryFormat
+import typings.evernote.evernoteMod.Evernote.SavedSearchScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

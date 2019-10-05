@@ -1,7 +1,7 @@
 package typings.stripeDashV3
 
-import typings.stripeDashV3.stripeNs.elementsNs.PaymentRequestButtonStyleOptions
-import typings.stripeDashV3.stripeNs.elementsNs.Style
+import typings.stripeDashV3.stripe.elements.PaymentRequestButtonStyleOptions
+import typings.stripeDashV3.stripe.elements.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportGPMessageMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GPMessage
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GPMessageProperties
+import typings.arcgisDashJsDashApi.__esri.GPMessage
+import typings.arcgisDashJsDashApi.__esri.GPMessageProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

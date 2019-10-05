@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("algebra.js", "Fraction")
 @js.native
 class Fraction protected ()
-  extends typings.algebraDotJs.algebraDotJsMod.algebraNs.jsNs.Fraction {
+  extends typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction {
   def this(num: Double, denom: Double) = this()
 }
 

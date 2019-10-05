@@ -2,7 +2,7 @@ package typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod
 
 import typings.atGoogleDashCloudPaginator.atGoogleDashCloudPaginatorStrings.data
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`

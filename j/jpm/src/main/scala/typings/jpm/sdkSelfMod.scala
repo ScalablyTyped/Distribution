@@ -21,9 +21,8 @@ object sdkSelfMod extends js.Object {
   val name: String = js.native
   val uri: String = js.native
   val version: String = js.native
-  @JSName("data")
   @js.native
-  object dataNs extends js.Object {
+  object data extends js.Object {
     def load(name: String): String = js.native
     def url(name: String): String = js.native
   }

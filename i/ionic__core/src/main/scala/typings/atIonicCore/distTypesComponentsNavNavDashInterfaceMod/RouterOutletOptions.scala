@@ -1,6 +1,7 @@
 package typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,7 @@ object RouterOutletOptions {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animationBuilder: AnimationBuilder = null,
+    animationBuilder: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     deepWait: js.UndefOr[Boolean] = js.undefined,
     direction: NavDirection = null,
     duration: Int | Double = null,
@@ -37,7 +38,7 @@ object RouterOutletOptions {
   ): RouterOutletOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(animationBuilder)
+    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction3(animationBuilder))
     if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

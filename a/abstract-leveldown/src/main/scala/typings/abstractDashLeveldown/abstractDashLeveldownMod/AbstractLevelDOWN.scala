@@ -1,5 +1,6 @@
 package typings.abstractDashLeveldown.abstractDashLeveldownMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +25,5 @@ trait AbstractLevelDOWN[K, V] extends AbstractOptions {
 
 @JSImport("abstract-leveldown", "AbstractLevelDOWN")
 @js.native
-class AbstractLevelDOWNCls[K, V] protected () extends AbstractLevelDOWN[K, V] {
-  // tslint:disable-next-line no-unnecessary-generics
-  def this(location: String) = this()
-}
+object AbstractLevelDOWN extends TopLevel[AbstractLevelDOWNConstructor]
 

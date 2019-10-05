@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -13,4 +14,8 @@ class default protected ()
   def this(props: DropdownProps) = this()
   def this(props: DropdownProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", JSImport.Default)
+@js.native
+object default extends TopLevel[DropdownComponent]
 

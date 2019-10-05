@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.dnsNs.ResolveCallbackResolveInfo
+import typings.chromeDashApps.chrome.dns.ResolveCallbackResolveInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

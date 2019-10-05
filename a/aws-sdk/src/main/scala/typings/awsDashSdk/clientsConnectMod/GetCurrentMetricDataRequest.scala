@@ -38,12 +38,12 @@ object GetCurrentMetricDataRequest {
     Filters: Filters,
     InstanceId: InstanceId,
     Groupings: Groupings = null,
-    MaxResults: js.UndefOr[MaxResult100] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): GetCurrentMetricDataRequest = {
     val __obj = js.Dynamic.literal(CurrentMetrics = CurrentMetrics, Filters = Filters, InstanceId = InstanceId)
     if (Groupings != null) __obj.updateDynamic("Groupings")(Groupings)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetCurrentMetricDataRequest]
   }

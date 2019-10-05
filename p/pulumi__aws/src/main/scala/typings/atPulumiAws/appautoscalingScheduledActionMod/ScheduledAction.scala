@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appautoscalingScheduledActionMod
 
-import typings.atPulumiAws.typesOutputMod.appautoscalingNs.ScheduledActionScalableTargetAction
+import typings.atPulumiAws.typesOutputMod.appautoscaling.ScheduledActionScalableTargetAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

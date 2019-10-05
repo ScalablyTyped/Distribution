@@ -38,21 +38,21 @@ trait LaunchTemplateEbsBlockDevice extends js.Object {
 object LaunchTemplateEbsBlockDevice {
   @scala.inline
   def apply(
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
     SnapshotId: String = null,
-    VolumeSize: js.UndefOr[Integer] = js.undefined,
+    VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): LaunchTemplateEbsBlockDevice = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize)
+    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateEbsBlockDevice]
   }

@@ -25,20 +25,21 @@ trait PopOverPropsType extends PopoverPropsType {
 object PopOverPropsType {
   @scala.inline
   def apply(
-    overlay: ReactNode,
     disabled: js.UndefOr[Boolean] = js.undefined,
     mask: js.UndefOr[Boolean] = js.undefined,
     onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
+    overlay: ReactNode = null,
     placement: left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight = null,
     prefixCls: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PopOverPropsType = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

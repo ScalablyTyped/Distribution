@@ -37,3 +37,9 @@ object TSInferType {
   }
 }
 
+@JSImport("@babel/types", "tsInferType")
+@js.native
+object tsInferType extends js.Object {
+  def apply(typeParameter: TSTypeParameter): TSInferType = js.native
+}
+

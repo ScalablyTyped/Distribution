@@ -1,6 +1,5 @@
 package typings.pDashEvent.pDashEventMod
 
-import typings.pDashEvent.Anon_Default
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Anon_Default = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEvent */ js.Any = js.native
   def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
@@ -83,84 +81,6 @@ object ^ extends js.Object {
     options: MultiArgumentsOptions[EmittedType]
   ): CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: js.Symbol,
-    options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  // TODO: Remove this for the next major release
-  def default[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = js.native
-  // TODO: Remove this for the next major release
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: String,
-    filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  /**
-  	Promisify an event by waiting for it to be emitted.
-  	@param emitter - Event emitter object. Should have either a `.on()`/`.addListener()`/`.addEventListener()` and `.off()`/`.removeListener()`/`.removeEventListener()` method, like the [Node.js `EventEmitter`](https://nodejs.org/api/events.html) and [DOM events](https://developer.mozilla.org/en-US/docs/Web/Events).
-  	@param event - Name of the event or events to listen to. If the same event is defined both here and in `rejectionEvents`, this one takes priority.*Note**: `event` is a string for a single event type, for example, `'data'`. To listen on multiple events, pass an array of strings, such as `['started', 'stopped']`.
-  	@returns Fulfills when emitter emits an event matching `event`, or rejects if emitter emits any of the events defined in the `rejectionEvents` option. The returned promise has a `.cancel()` method, which when called, removes the event listeners and causes the promise to never be settled.
-  	@example
-  	```
-  	// In Node.js:
-  	import pEvent = require('p-event');
-  	import emitter from './some-event-emitter';
-  	(async () => {
-  		try {
-  			const result = await pEvent(emitter, 'finish');
-  			// `emitter` emitted a `finish` event
-  			console.log(result);
-  		} catch (error) {
-  			// `emitter` emitted an `error` event
-  			console.error(error);
-  		}
-  	})();
-  	// In the browser:
-  	(async () => {
-  		await pEvent(document, 'DOMContentLoaded');
-  		console.log('😎');
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: Emitter[EventName, EmittedType],
-    event: String,
-    options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: String,
-    options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Array[String | js.Symbol]): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: js.Array[String | js.Symbol],
-    filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: Emitter[EventName, EmittedType],
-    event: js.Array[String | js.Symbol],
-    options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: js.Array[String | js.Symbol],
-    options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
-    emitter: Emitter[EventName, js.Array[EmittedType]],
-    event: js.Symbol,
-    filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: Emitter[EventName, EmittedType],
-    event: js.Symbol,
-    options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  def default[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     options: Options[js.Array[EmittedType]]

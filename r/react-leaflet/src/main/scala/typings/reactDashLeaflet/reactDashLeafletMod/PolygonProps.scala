@@ -13,6 +13,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.leaflet.leafletMod.LayerOptions because Already inherited
+- typings.leaflet.leafletMod.InteractiveLayerOptions because Already inherited
+- typings.leaflet.leafletMod.PathOptions because Already inherited
 - typings.leaflet.leafletMod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ trait PolygonProps extends PathProps {
   var noClip: js.UndefOr[Boolean] = js.undefined
   var positions: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]

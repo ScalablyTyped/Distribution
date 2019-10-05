@@ -1,16 +1,16 @@
 package typings.activexDashShdocvw
 
-import typings.activexDashShdocvw.SHDocVwNs.BrowserBarConstants
-import typings.activexDashShdocvw.SHDocVwNs.BrowserNavConstants
-import typings.activexDashShdocvw.SHDocVwNs.CommandStateChangeConstants
-import typings.activexDashShdocvw.SHDocVwNs.OLECMDEXECOPT
-import typings.activexDashShdocvw.SHDocVwNs.OLECMDF
-import typings.activexDashShdocvw.SHDocVwNs.OLECMDID
-import typings.activexDashShdocvw.SHDocVwNs.RefreshConstants
-import typings.activexDashShdocvw.SHDocVwNs.SecureLockIconConstants
-import typings.activexDashShdocvw.SHDocVwNs.ShellWindowFindWindowOptions
-import typings.activexDashShdocvw.SHDocVwNs.ShellWindowTypeConstants
-import typings.activexDashShdocvw.SHDocVwNs.tagREADYSTATE
+import typings.activexDashShdocvw.SHDocVw.BrowserBarConstants
+import typings.activexDashShdocvw.SHDocVw.BrowserNavConstants
+import typings.activexDashShdocvw.SHDocVw.CommandStateChangeConstants
+import typings.activexDashShdocvw.SHDocVw.OLECMDEXECOPT
+import typings.activexDashShdocvw.SHDocVw.OLECMDF
+import typings.activexDashShdocvw.SHDocVw.OLECMDID
+import typings.activexDashShdocvw.SHDocVw.RefreshConstants
+import typings.activexDashShdocvw.SHDocVw.SecureLockIconConstants
+import typings.activexDashShdocvw.SHDocVw.ShellWindowFindWindowOptions
+import typings.activexDashShdocvw.SHDocVw.ShellWindowTypeConstants
+import typings.activexDashShdocvw.SHDocVw.tagREADYSTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

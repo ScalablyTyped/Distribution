@@ -1,13 +1,13 @@
 package typings.activexDashWia
 
-import typings.activexDashWia.WIANs.WiaDeviceType
-import typings.activexDashWia.WIANs.WiaEventFlag
-import typings.activexDashWia.WIANs.WiaImageBias
-import typings.activexDashWia.WIANs.WiaImageIntent
-import typings.activexDashWia.WIANs.WiaImagePropertyType
-import typings.activexDashWia.WIANs.WiaItemFlag
-import typings.activexDashWia.WIANs.WiaPropertyType
-import typings.activexDashWia.WIANs.WiaSubType
+import typings.activexDashWia.WIA.WiaDeviceType
+import typings.activexDashWia.WIA.WiaEventFlag
+import typings.activexDashWia.WIA.WiaImageBias
+import typings.activexDashWia.WIA.WiaImageIntent
+import typings.activexDashWia.WIA.WiaImagePropertyType
+import typings.activexDashWia.WIA.WiaItemFlag
+import typings.activexDashWia.WIA.WiaPropertyType
+import typings.activexDashWia.WIA.WiaSubType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

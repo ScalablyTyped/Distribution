@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.contextMenusNs.CreateProperties
-import typings.chromeDashApps.chromeNs.contextMenusNs.MenuClickedEvent
-import typings.chromeDashApps.chromeNs.contextMenusNs.UpdateProperties
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.contextMenus.CreateProperties
+import typings.chromeDashApps.chrome.contextMenus.MenuClickedEvent
+import typings.chromeDashApps.chrome.contextMenus.UpdateProperties
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

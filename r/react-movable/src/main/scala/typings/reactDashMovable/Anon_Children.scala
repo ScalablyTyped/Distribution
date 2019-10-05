@@ -13,9 +13,9 @@ trait Anon_Children extends js.Object {
 
 object Anon_Children {
   @scala.inline
-  def apply(children: ReactNode, isDragged: Boolean, props: Anon_Ref): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isDragged = isDragged, props = props)
-  
+  def apply(isDragged: Boolean, props: Anon_Ref, children: ReactNode = null): Anon_Children = {
+    val __obj = js.Dynamic.literal(isDragged = isDragged, props = props)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

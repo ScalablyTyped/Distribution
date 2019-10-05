@@ -18,108 +18,105 @@
 [info ] InferMemberOverrides.scala:82 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(typings) / Name(rxDotWamp) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E25] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:28:34
+[error] Phase3Compile.scala:240 [E] [E24] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:28:34
 [E]       type Observer is not a member of package typings.rx.rxMod
 [E]       L28:   var observer: typings.rx.rxMod.Observer[IWampEvent] = js.native
 [E]                                             ^
-[E] [E24] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:27:36
+[E] [E23] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala:27:36
 [E]       type Observable is not a member of package typings.rx.rxMod
 [E]       L27:   var observable: typings.rx.rxMod.Observable[IWampEvent] = js.native
 [E]                                               ^
-[E] [E23] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:79:39
+[E] [E22] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:79:39
 [E]       not found: type Observable
 [E]       L79:   def subscriber(sessionOrObservable: Observable[_]): Subscriber = js.native
 [E]                                                  ^
-[E] [E22] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:73:26
+[E] [E21] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:73:26
 [E]       not found: type Observable
 [E]       L73:     sessionOrObservable: Observable[Session],
 [E]                                     ^
-[E] [E21] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:77:6
+[E] [E20] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:77:6
 [E]       not found: type Observable
 [E]       L77:   ): Observable[IWampEvent] = js.native
 [E]                 ^
-[E] [E20] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:71:50
+[E] [E19] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:71:50
 [E]       not found: type Observable
 [E]       L71:   def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
 [E]                                                             ^
-[E] [E19] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:71:115
+[E] [E18] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:71:115
 [E]       not found: type Observable
 [E]       L71:   def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
 [E]                                                                                                                              ^
-[E] [E18] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:70:50
+[E] [E17] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:70:50
 [E]       not found: type Observable
 [E]       L70:   def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String): Observable[IWampEvent] = js.native
 [E]                                                             ^
-[E] [E17] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:70:87
+[E] [E16] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:70:87
 [E]       not found: type Observable
 [E]       L70:   def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String): Observable[IWampEvent] = js.native
 [E]                                                                                                  ^
-[E] [E16] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:69:6
+[E] [E15] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:69:6
 [E]       not found: type Observable
 [E]       L69:   ): Observable[IWampEvent] = js.native
 [E]                 ^
-[E] [E15] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:63:103
+[E] [E14] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:63:103
 [E]       not found: type Observable
 [E]       L63:   def subscribeAsObservable(sessionOrObservable: Session, topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
 [E]                                                                                                                  ^
-[E] [E14] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:62:75
+[E] [E13] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:62:75
 [E]       not found: type Observable
 [E]       L62:   def subscribeAsObservable(sessionOrObservable: Session, topic: String): Observable[IWampEvent] = js.native
 [E]                                                                                      ^
-[E] [E13] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:57:26
+[E] [E12] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:57:26
 [E]       not found: type Observable
 [E]       L57:     sessionOrObservable: Observable[Session],
 [E]                                     ^
-[E] [E12] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:61:6
+[E] [E11] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:61:6
 [E]       not found: type Observable
 [E]       L61:   ): Observable[IRegistration] = js.native
 [E]                 ^
-[E] [E11] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:55:6
+[E] [E10] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:55:6
 [E]       not found: type Observable
 [E]       L55:   ): Observable[IRegistration] = js.native
 [E]                 ^
-[E] [E10] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:49:122
-[E]       not found: type Observable
-[E]       L49:   def publishAsObservable(session: Session, topic: String, args: js.Array[_], kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
-[E]                                                                                                                                     ^
-[E] [E9] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:48:96
+[E] [E9] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:49:122
+[E]      not found: type Observable
+[E]      L49:   def publishAsObservable(session: Session, topic: String, args: js.Array[_], kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
+[E]                                                                                                                                    ^
+[E] [E8] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:48:96
 [E]      not found: type Observable
 [E]      L48:   def publishAsObservable(session: Session, topic: String, args: js.Array[_], kwargs: js.Any): Observable[IPublication] = js.native
 [E]                                                                                                          ^
-[E] [E8] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:47:80
+[E] [E7] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:47:80
 [E]      not found: type Observable
 [E]      L47:   def publishAsObservable(session: Session, topic: String, args: js.Array[_]): Observable[IPublication] = js.native
 [E]                                                                                          ^
-[E] [E7] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:46:61
+[E] [E6] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:46:61
 [E]      not found: type Observable
 [E]      L46:   def publishAsObservable(session: Session, topic: String): Observable[IPublication] = js.native
 [E]                                                                       ^
-[E] [E6] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:38:6
+[E] [E5] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:38:6
 [E]      not found: type Observable
 [E]      L38:   ): Observable[Session] = js.native
 [E]                ^
-[E] [E5] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:33:79
+[E] [E4] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:33:79
 [E]      not found: type Observable
 [E]      L33:   def fromConnection(options: IConnectionOptions, keepReconnecting: Boolean): Observable[Session] = js.native
 [E]                                                                                         ^
-[E] [E4] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:32:52
+[E] [E3] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:32:52
 [E]      not found: type Observable
 [E]      L32:   def fromConnection(options: IConnectionOptions): Observable[Session] = js.native
 [E]                                                              ^
-[E] [E3] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:30:5
+[E] [E2] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:30:5
 [E]      not found: type Observable
 [E]      L30:     Observable[TResult]
 [E]               ^
-[E] [E2] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:25:5
+[E] [E1] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:25:5
 [E]      not found: type Observable
 [E]      L25:     Observable[TResult]
 [E]               ^
-[E] [E1] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala:14:8
-[E]      object Observable is not a member of package typings.rx.rxMod
-[E]      L14: import typings.rx.rxMod.Observable
-[E]           ^^^^^^^
-[E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala: L14 [E1], L25 [E2], L30 [E3], L32 [E4], L33 [E5], L38 [E6], L46 [E7], L47 [E8], L48 [E9], L49 [E10], L55 [E11], L57 [E13], L61 [E12], L62 [E14], L63 [E15], L69 [E16], L70 [E17], L70 [E18], L71 [E19], L71 [E20], L73 [E22], L77 [E21], L79 [E23]
-[E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala: L27 [E24], L28 [E25]
+[E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IObservableWampStatic.scala: L25 [E1], L30 [E2], L32 [E3], L33 [E4], L38 [E5], L46 [E6], L47 [E7], L48 [E8], L49 [E9], L55 [E10], L57 [E12], L61 [E11], L62 [E13], L63 [E14], L69 [E15], L70 [E16], L70 [E17], L71 [E18], L71 [E19], L73 [E21], L77 [E20], L79 [E22]
+[E] src/main/scala/typings/rxDotWamp/rxDotWampMod/IPubSubSubject.scala: L27 [E23], L28 [E24]
 [E] Failed to compile 'rx_dot_wamp'
  [id => rx.wamp, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => publish] 

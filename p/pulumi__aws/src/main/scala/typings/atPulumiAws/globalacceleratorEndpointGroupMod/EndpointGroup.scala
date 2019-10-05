@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorEndpointGroupMod
 
-import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.EndpointGroupEndpointConfiguration
+import typings.atPulumiAws.typesOutputMod.globalaccelerator.EndpointGroupEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

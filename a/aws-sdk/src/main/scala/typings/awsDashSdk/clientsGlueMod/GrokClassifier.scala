@@ -44,13 +44,13 @@ object GrokClassifier {
     CreationTime: Timestamp = null,
     CustomPatterns: CustomPatterns = null,
     LastUpdated: Timestamp = null,
-    Version: js.UndefOr[VersionId] = js.undefined
+    Version: Int | Double = null
   ): GrokClassifier = {
     val __obj = js.Dynamic.literal(Classification = Classification, GrokPattern = GrokPattern, Name = Name)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CustomPatterns != null) __obj.updateDynamic("CustomPatterns")(CustomPatterns)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrokClassifier]
   }
 }

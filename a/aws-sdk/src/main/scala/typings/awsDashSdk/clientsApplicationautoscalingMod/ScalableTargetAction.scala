@@ -17,13 +17,10 @@ trait ScalableTargetAction extends js.Object {
 
 object ScalableTargetAction {
   @scala.inline
-  def apply(
-    MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
-    MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined
-  ): ScalableTargetAction = {
+  def apply(MaxCapacity: Int | Double = null, MinCapacity: Int | Double = null): ScalableTargetAction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (MinCapacity != null) __obj.updateDynamic("MinCapacity")(MinCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalableTargetAction]
   }
 }

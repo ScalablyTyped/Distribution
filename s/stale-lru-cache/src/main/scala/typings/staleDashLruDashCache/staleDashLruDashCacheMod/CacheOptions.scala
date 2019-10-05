@@ -18,14 +18,14 @@ object CacheOptions {
     getSize: (/* value */ V, /* key */ K) => Double = null,
     maxAge: Int | Double = null,
     maxSize: Int | Double = null,
-    revalidate: RevalidationCallback[K, V] = null,
+    revalidate: (K, /* callback */ OptionsCallback[K, V]) => Unit = null,
     staleWhileRevalidate: Int | Double = null
   ): CacheOptions[K, V] = {
     val __obj = js.Dynamic.literal()
     if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction2(getSize))
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (revalidate != null) __obj.updateDynamic("revalidate")(revalidate)
+    if (revalidate != null) __obj.updateDynamic("revalidate")(js.Any.fromFunction2(revalidate))
     if (staleWhileRevalidate != null) __obj.updateDynamic("staleWhileRevalidate")(staleWhileRevalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions[K, V]]
   }

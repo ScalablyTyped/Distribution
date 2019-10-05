@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.chrome.chromeNs.castNs.ErrorCode
-import typings.chrome.chromeNs.castNs.Session
-import typings.chrome.chromeNs.castNs.mediaNs.Media
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.ActiveInputState
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.ActiveInputStateEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationMetadata
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationMetadataEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationStatusEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.CastSession
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.CastState
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.CastStateEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.EventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.LoggerLevel
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.MediaSessionEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayer
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayerChangedEvent
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayerController
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayerEventType
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.SessionState
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.SessionStateEventData
-import typings.chromecastDashCafDashSender.castNs.frameworkNs.VolumeEventData
+import typings.chrome.chrome.cast.ErrorCode
+import typings.chrome.chrome.cast.Session
+import typings.chrome.chrome.cast.media.Media
+import typings.chromecastDashCafDashSender.cast.framework.ActiveInputState
+import typings.chromecastDashCafDashSender.cast.framework.ActiveInputStateEventData
+import typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadata
+import typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadataEventData
+import typings.chromecastDashCafDashSender.cast.framework.ApplicationStatusEventData
+import typings.chromecastDashCafDashSender.cast.framework.CastSession
+import typings.chromecastDashCafDashSender.cast.framework.CastState
+import typings.chromecastDashCafDashSender.cast.framework.CastStateEventData
+import typings.chromecastDashCafDashSender.cast.framework.EventData
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel
+import typings.chromecastDashCafDashSender.cast.framework.MediaSessionEventData
+import typings.chromecastDashCafDashSender.cast.framework.RemotePlayer
+import typings.chromecastDashCafDashSender.cast.framework.RemotePlayerChangedEvent
+import typings.chromecastDashCafDashSender.cast.framework.RemotePlayerController
+import typings.chromecastDashCafDashSender.cast.framework.RemotePlayerEventType
+import typings.chromecastDashCafDashSender.cast.framework.SessionState
+import typings.chromecastDashCafDashSender.cast.framework.SessionStateEventData
+import typings.chromecastDashCafDashSender.cast.framework.VolumeEventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,60 +32,57 @@ import scala.scalajs.js.annotation._
 trait Typeofframework extends js.Object {
   var ActiveInputStateEventData: Instantiable1[
     /* activeInputState */ ActiveInputState, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.ActiveInputStateEventData
+    typings.chromecastDashCafDashSender.cast.framework.ActiveInputStateEventData
   ]
   var ApplicationMetadata: Instantiable1[
     /* sessionObj */ Session, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationMetadata
+    typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadata
   ]
   var ApplicationMetadataEventData: Instantiable1[
     /* metadata */ ApplicationMetadata, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationMetadataEventData
+    typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadataEventData
   ]
   var ApplicationStatusEventData: Instantiable1[
     /* status */ String, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.ApplicationStatusEventData
+    typings.chromecastDashCafDashSender.cast.framework.ApplicationStatusEventData
   ]
   var CastContext: TypeofClassCastContext
   var CastSession: Instantiable2[
     /* sessionObj */ Session, 
     /* state */ SessionState, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.CastSession
+    typings.chromecastDashCafDashSender.cast.framework.CastSession
   ]
   var CastStateEventData: Instantiable1[
     /* castState */ CastState, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.CastStateEventData
+    typings.chromecastDashCafDashSender.cast.framework.CastStateEventData
   ]
-  var EventData: Instantiable1[
-    /* type */ String, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.EventData
-  ]
+  var EventData: Instantiable1[/* type */ String, typings.chromecastDashCafDashSender.cast.framework.EventData]
   var MediaSessionEventData: Instantiable1[
     /* mediaSession */ Media, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.MediaSessionEventData
+    typings.chromecastDashCafDashSender.cast.framework.MediaSessionEventData
   ]
-  var RemotePlayer: Instantiable0[typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayer]
+  var RemotePlayer: Instantiable0[typings.chromecastDashCafDashSender.cast.framework.RemotePlayer]
   var RemotePlayerChangedEvent: Instantiable3[
     /* type */ RemotePlayerEventType, 
     /* field */ String, 
     /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayerChangedEvent[js.Object]
+    typings.chromecastDashCafDashSender.cast.framework.RemotePlayerChangedEvent[js.Object]
   ]
   var RemotePlayerController: Instantiable1[
     /* player */ RemotePlayer, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.RemotePlayerController
+    typings.chromecastDashCafDashSender.cast.framework.RemotePlayerController
   ]
   var SessionStateEventData: Instantiable3[
     /* session */ CastSession, 
     /* sessionState */ SessionState, 
     /* opt_errorCode */ ErrorCode, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.SessionStateEventData
+    typings.chromecastDashCafDashSender.cast.framework.SessionStateEventData
   ]
   val VERSION: String
   var VolumeEventData: Instantiable2[
     /* volume */ Double, 
     /* isMute */ Boolean, 
-    typings.chromecastDashCafDashSender.castNs.frameworkNs.VolumeEventData
+    typings.chromecastDashCafDashSender.cast.framework.VolumeEventData
   ]
   def setLoggerLevel(level: LoggerLevel): Unit
 }

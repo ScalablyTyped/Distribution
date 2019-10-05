@@ -1,13 +1,13 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.integer
-import typings.chromeDashApps.chromeNs.socketsNs.CreateInfo
-import typings.chromeDashApps.chromeNs.socketsNs.ReceiveErrorEventArgs
-import typings.chromeDashApps.chromeNs.socketsNs.ReceiveEventArgs
-import typings.chromeDashApps.chromeNs.socketsNs.SendInfo
-import typings.chromeDashApps.chromeNs.socketsNs.SocketInfo
-import typings.chromeDashApps.chromeNs.socketsNs.SocketProperties
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.sockets.CreateInfo
+import typings.chromeDashApps.chrome.sockets.ReceiveErrorEventArgs
+import typings.chromeDashApps.chrome.sockets.ReceiveEventArgs
+import typings.chromeDashApps.chrome.sockets.SendInfo
+import typings.chromeDashApps.chrome.sockets.SocketInfo
+import typings.chromeDashApps.chrome.sockets.SocketProperties
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

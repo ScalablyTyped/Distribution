@@ -1,6 +1,6 @@
 package typings.jqueryDotPayment
 
-import typings.jqueryDotPayment.JQueryPaymentNs.Payment
+import typings.jqueryDotPayment.JQueryPayment.Payment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

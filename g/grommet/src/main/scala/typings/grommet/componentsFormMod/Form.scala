@@ -1,7 +1,9 @@
 package typings.grommet.componentsFormMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLFormElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FormHTMLAttributes
@@ -23,4 +25,13 @@ class Form protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/Form", "Form")
+@js.native
+object Form extends TopLevel[
+      ComponentClass[
+        FormProps with (DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]), 
+        ComponentState
+      ]
+    ]
 

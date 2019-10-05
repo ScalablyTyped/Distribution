@@ -6,7 +6,7 @@ import typings.braftDashEditor.braftDashEditorStrings.Empty
 import typings.braftDashEditor.braftDashEditorStrings.html
 import typings.braftDashEditor.braftDashEditorStrings.raw
 import typings.braftDashEditor.braftDashEditorStrings.text
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.EncodingNs.RawDraftContentState
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Encoding.RawDraftContentState
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

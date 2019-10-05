@@ -1,7 +1,7 @@
 package typings.kefir
 
 import typings.kefir.kefirMod.Stream
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

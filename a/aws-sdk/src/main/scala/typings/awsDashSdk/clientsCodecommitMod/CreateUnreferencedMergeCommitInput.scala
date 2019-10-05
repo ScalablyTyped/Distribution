@@ -64,7 +64,7 @@ object CreateUnreferencedMergeCommitInput {
     conflictResolution: ConflictResolution = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined
+    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined
   ): CreateUnreferencedMergeCommitInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier, mergeOption = mergeOption.asInstanceOf[js.Any], repositoryName = repositoryName, sourceCommitSpecifier = sourceCommitSpecifier)
     if (authorName != null) __obj.updateDynamic("authorName")(authorName)

@@ -50,7 +50,7 @@ object ListNotebookInstanceLifecycleConfigsInput {
     CreationTimeBefore: CreationTime = null,
     LastModifiedTimeAfter: LastModifiedTime = null,
     LastModifiedTimeBefore: LastModifiedTime = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NameContains: NotebookInstanceLifecycleConfigNameContains = null,
     NextToken: NextToken = null,
     SortBy: NotebookInstanceLifecycleConfigSortKey = null,
@@ -61,7 +61,7 @@ object ListNotebookInstanceLifecycleConfigsInput {
     if (CreationTimeBefore != null) __obj.updateDynamic("CreationTimeBefore")(CreationTimeBefore)
     if (LastModifiedTimeAfter != null) __obj.updateDynamic("LastModifiedTimeAfter")(LastModifiedTimeAfter)
     if (LastModifiedTimeBefore != null) __obj.updateDynamic("LastModifiedTimeBefore")(LastModifiedTimeBefore)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])

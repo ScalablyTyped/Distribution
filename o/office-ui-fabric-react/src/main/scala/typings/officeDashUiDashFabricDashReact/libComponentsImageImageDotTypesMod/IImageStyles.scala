@@ -18,9 +18,10 @@ trait IImageStyles extends js.Object {
 
 object IImageStyles {
   @scala.inline
-  def apply(image: IStyle, root: IStyle): IImageStyles = {
-    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+  def apply(image: IStyle = null, root: IStyle = null): IImageStyles = {
+    val __obj = js.Dynamic.literal()
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageStyles]
   }
 }

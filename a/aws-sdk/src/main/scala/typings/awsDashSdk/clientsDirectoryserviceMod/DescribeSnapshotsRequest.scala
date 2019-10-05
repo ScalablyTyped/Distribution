@@ -27,13 +27,13 @@ object DescribeSnapshotsRequest {
   @scala.inline
   def apply(
     DirectoryId: DirectoryId = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: NextToken = null,
     SnapshotIds: SnapshotIds = null
   ): DescribeSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
     if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SnapshotIds != null) __obj.updateDynamic("SnapshotIds")(SnapshotIds)
     __obj.asInstanceOf[DescribeSnapshotsRequest]

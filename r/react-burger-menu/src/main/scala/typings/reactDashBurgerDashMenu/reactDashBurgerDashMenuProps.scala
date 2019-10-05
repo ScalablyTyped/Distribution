@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation._
 
 trait reactDashBurgerDashMenuProps {
   @scala.inline
+  def BubbleProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type BubbleProps = Props
+  @scala.inline
+  def ElasticProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type ElasticProps = Props
+  @scala.inline
+  def FallDownProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type FallDownProps = Props
+  @scala.inline
+  def PushProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type PushProps = Props
+  @scala.inline
+  def PushRotateProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type PushRotateProps = Props
+  @scala.inline
   def ReactBurgerMenuProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
   type ReactBurgerMenuProps = Props
   @scala.inline
-  def bubbleProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type bubbleProps = Props
+  def RevealProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type RevealProps = Props
   @scala.inline
-  def elasticProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type elasticProps = Props
+  def ScaleDownProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type ScaleDownProps = Props
   @scala.inline
-  def fallDownProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type fallDownProps = Props
+  def ScaleRotateProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type ScaleRotateProps = Props
   @scala.inline
-  def pushProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type pushProps = Props
+  def SlideProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type SlideProps = Props
   @scala.inline
-  def pushRotateProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type pushRotateProps = Props
-  @scala.inline
-  def revealProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type revealProps = Props
-  @scala.inline
-  def scaleDownProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type scaleDownProps = Props
-  @scala.inline
-  def scaleRotateProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type scaleRotateProps = Props
-  @scala.inline
-  def slideProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type slideProps = Props
-  @scala.inline
-  def stackProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
-  type stackProps = Props
+  def StackProps: Props.type = typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod.Props
+  type StackProps = Props
 }
 

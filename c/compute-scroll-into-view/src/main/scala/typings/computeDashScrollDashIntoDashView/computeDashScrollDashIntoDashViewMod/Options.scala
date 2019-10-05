@@ -20,7 +20,7 @@ object Options {
     boundary: CustomScrollBoundary = null,
     `inline`: ScrollLogicalPosition = null,
     scrollMode: ScrollMode = null,
-    skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.undefined
+    skipOverflowHiddenElements: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (block != null) __obj.updateDynamic("block")(block)

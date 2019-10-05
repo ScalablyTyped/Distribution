@@ -32,30 +32,30 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "AssetReference")
 @js.native
 class AssetReference protected ()
-  extends typings.playcanvas.pcNs.AssetReference {
+  extends typings.playcanvas.pc.AssetReference {
   def this(
     propertyName: String,
     parent: js.Any,
-    registry: typings.playcanvas.pcNs.AssetRegistry,
+    registry: typings.playcanvas.pc.AssetRegistry,
     callbacks: Anon_Add
   ) = this()
   def this(
     propertyName: String,
-    parent: typings.playcanvas.pcNs.Asset,
-    registry: typings.playcanvas.pcNs.AssetRegistry,
+    parent: typings.playcanvas.pc.Asset,
+    registry: typings.playcanvas.pc.AssetRegistry,
     callbacks: Anon_Add
   ) = this()
   def this(
     propertyName: String,
     parent: js.Any,
-    registry: typings.playcanvas.pcNs.AssetRegistry,
+    registry: typings.playcanvas.pc.AssetRegistry,
     callbacks: Anon_Add,
     scope: js.Any
   ) = this()
   def this(
     propertyName: String,
-    parent: typings.playcanvas.pcNs.Asset,
-    registry: typings.playcanvas.pcNs.AssetRegistry,
+    parent: typings.playcanvas.pc.Asset,
+    registry: typings.playcanvas.pc.AssetRegistry,
     callbacks: Anon_Add,
     scope: js.Any
   ) = this()

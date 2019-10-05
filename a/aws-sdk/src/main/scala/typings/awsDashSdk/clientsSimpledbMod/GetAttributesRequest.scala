@@ -29,7 +29,7 @@ object GetAttributesRequest {
     DomainName: String,
     ItemName: String,
     AttributeNames: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined
+    ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined
   ): GetAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName, ItemName = ItemName)
     if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames)

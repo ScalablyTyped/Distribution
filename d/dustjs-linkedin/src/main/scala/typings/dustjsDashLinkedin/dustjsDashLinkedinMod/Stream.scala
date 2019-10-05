@@ -29,3 +29,10 @@ object Stream {
   }
 }
 
+@JSImport("dustjs-linkedin", "stream")
+@js.native
+object stream extends js.Object {
+  def apply(name: String, context: js.Any): Stream = js.native
+  def apply(name: String, context: Context): Stream = js.native
+}
+

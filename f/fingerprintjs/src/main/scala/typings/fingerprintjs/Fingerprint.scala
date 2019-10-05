@@ -1,6 +1,8 @@
 package typings.fingerprintjs
 
-import typings.fingerprintjs.FingerprintJsNs.FingerprintOption
+import org.scalablytyped.runtime.TopLevel
+import typings.fingerprintjs.FingerprintJs.FingerprintOption
+import typings.fingerprintjs.FingerprintJs.FingerprintStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Fingerprint")
 @js.native
 class Fingerprint ()
-  extends typings.fingerprintjs.FingerprintJsNs.Fingerprint {
+  extends typings.fingerprintjs.FingerprintJs.Fingerprint {
   /**
     * Create Fingerprint object.
     */
@@ -72,4 +74,8 @@ class Fingerprint ()
   /* CompleteClass */
   override def murmurhash3_32_gc(key: String, seed: Double): Double = js.native
 }
+
+@JSGlobal("Fingerprint")
+@js.native
+object Fingerprint extends TopLevel[FingerprintStatic]
 

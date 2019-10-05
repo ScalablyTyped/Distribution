@@ -21,7 +21,7 @@ trait OffCanvasMenuProps extends js.Object {
 object OffCanvasMenuProps {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     className: String = null,
     isMenuOpened: js.UndefOr[Boolean] = js.undefined,
     position: left | right = null,
@@ -29,7 +29,8 @@ object OffCanvasMenuProps {
     transitionDuration: Int | Double = null,
     width: Int | Double = null
   ): OffCanvasMenuProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(isMenuOpened)) __obj.updateDynamic("isMenuOpened")(isMenuOpened)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

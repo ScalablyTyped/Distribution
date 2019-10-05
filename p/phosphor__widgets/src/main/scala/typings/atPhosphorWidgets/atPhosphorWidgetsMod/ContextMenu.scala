@@ -1,6 +1,6 @@
 package typings.atPhosphorWidgets.atPhosphorWidgetsMod
 
-import typings.atPhosphorWidgets.libContextmenuMod.ContextMenuNs.IOptions
+import typings.atPhosphorWidgets.libContextmenuMod.ContextMenu.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

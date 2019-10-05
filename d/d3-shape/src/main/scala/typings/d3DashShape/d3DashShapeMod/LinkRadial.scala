@@ -92,3 +92,9 @@ trait LinkRadial[This, LinkDatum, NodeDatum] extends js.Object {
   def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
 }
 
+@JSImport("d3-shape", "linkRadial")
+@js.native
+object linkRadial extends js.Object {
+  def apply(): LinkRadial[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
+}
+

@@ -8,7 +8,7 @@ package object ajvMod {
   import typings.std.RegExp
 
   type FormatValidator = String | RegExp | (js.Function1[/* data */ String, Boolean | js.Thenable[js.Any]])
-  type MissingRefError = typings.ajv.ajvMod.AjvErrorsNs.MissingRefError
+  type MissingRefError = typings.ajv.ajvMod.AjvErrors.MissingRefError
   type NumberFormatValidator = js.Function1[/* data */ Double, Boolean | js.Thenable[js.Any]]
-  type ValidationError = typings.ajv.ajvMod.AjvErrorsNs.ValidationError
+  type ValidationError = typings.ajv.ajvMod.AjvErrors.ValidationError
 }

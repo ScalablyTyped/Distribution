@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticloadbalancingv2GetListenerMod
 
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.GetListenerDefaultAction
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2.GetListenerDefaultAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

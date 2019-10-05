@@ -1,6 +1,7 @@
 package typings.atNivoLine.atNivoLineMod
 
 import typings.atNivoScales.atNivoScalesMod.ScaleFunc
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +14,11 @@ import scala.scalajs.js.annotation._
 
 object LineCustomLayerProps {
   @scala.inline
-  def apply(xScale: ScaleFunc, yScale: ScaleFunc): LineCustomLayerProps = {
-    val __obj = js.Dynamic.literal(xScale = xScale, yScale = yScale)
+  def apply(
+    xScale: /* value */ String | Double | Date => Double,
+    yScale: /* value */ String | Double | Date => Double
+  ): LineCustomLayerProps = {
+    val __obj = js.Dynamic.literal(xScale = js.Any.fromFunction1(xScale), yScale = js.Any.fromFunction1(yScale))
   
     __obj.asInstanceOf[LineCustomLayerProps]
   }

@@ -35,3 +35,9 @@ object TSVoidKeyword {
   }
 }
 
+@JSImport("@babel/types", "tsVoidKeyword")
+@js.native
+object tsVoidKeyword extends js.Object {
+  def apply(): TSVoidKeyword = js.native
+}
+

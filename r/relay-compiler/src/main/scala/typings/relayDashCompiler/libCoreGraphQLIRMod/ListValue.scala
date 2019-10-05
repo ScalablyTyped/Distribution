@@ -19,10 +19,10 @@ object ListValue {
     items: js.Array[ArgumentValue],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ListValue,
     loc: Location,
-    metadata: Metadata
+    metadata: Metadata = null
   ): ListValue = {
-    val __obj = js.Dynamic.literal(items = items, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(items = items, kind = kind, loc = loc)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListValue]
   }
 }

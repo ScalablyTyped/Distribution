@@ -46,3 +46,12 @@ object DeclareOpaqueType {
   }
 }
 
+@JSImport("@babel/types", "declareOpaqueType")
+@js.native
+object declareOpaqueType extends js.Object {
+  def apply(id: Identifier): DeclareOpaqueType = js.native
+  def apply(id: Identifier, typeParameters: Null, supertype: FlowType): DeclareOpaqueType = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration): DeclareOpaqueType = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterDeclaration, supertype: FlowType): DeclareOpaqueType = js.native
+}
+

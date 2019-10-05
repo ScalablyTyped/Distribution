@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupLayerOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerOptionsConstructor
+import typings.arcgisDashJsDashApi.__esri.LayerOptionsConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

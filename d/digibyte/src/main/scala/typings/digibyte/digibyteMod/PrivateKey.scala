@@ -1,6 +1,6 @@
 package typings.digibyte.digibyteMod
 
-import typings.digibyte.digibyteMod.NetworksNs.Network
+import typings.digibyte.digibyteMod.Networks.Network
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

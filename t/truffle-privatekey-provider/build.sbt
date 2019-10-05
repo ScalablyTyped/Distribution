@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "truffle-privatekey-provider"
-version := "1.1-dt-20190514Z-d710ba"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20190514Z-33e139"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

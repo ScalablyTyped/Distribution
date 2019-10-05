@@ -22,14 +22,10 @@ trait ListDevicesRequest extends js.Object {
 
 object ListDevicesRequest {
   @scala.inline
-  def apply(
-    DeviceType: __string = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: __string = null
-  ): ListDevicesRequest = {
+  def apply(DeviceType: __string = null, MaxResults: Int | Double = null, NextToken: __string = null): ListDevicesRequest = {
     val __obj = js.Dynamic.literal()
     if (DeviceType != null) __obj.updateDynamic("DeviceType")(DeviceType)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDevicesRequest]
   }

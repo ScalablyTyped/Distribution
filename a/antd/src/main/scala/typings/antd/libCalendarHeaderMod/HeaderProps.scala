@@ -1,6 +1,7 @@
 package typings.antd.libCalendarHeaderMod
 
 import typings.moment.momentMod.Moment
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ object HeaderProps {
   def apply(
     value: Moment,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: HeaderRender = null,
+    headerRender: /* headerRender */ RenderHeader => ReactNode = null,
     locale: js.Any = null,
     onTypeChange: /* type */ String => Unit = null,
     onValueChange: /* value */ Moment => Unit = null,
@@ -36,7 +37,7 @@ object HeaderProps {
   ): HeaderProps = {
     val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
-    if (headerRender != null) __obj.updateDynamic("headerRender")(headerRender)
+    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1(headerRender))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1(onTypeChange))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))

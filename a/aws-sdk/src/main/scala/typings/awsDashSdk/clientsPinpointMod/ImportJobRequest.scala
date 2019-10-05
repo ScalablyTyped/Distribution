@@ -45,9 +45,9 @@ object ImportJobRequest {
     Format: Format,
     RoleArn: __string,
     S3Url: __string,
-    DefineSegment: js.UndefOr[__boolean] = js.undefined,
+    DefineSegment: js.UndefOr[Boolean] = js.undefined,
     ExternalId: __string = null,
-    RegisterEndpoints: js.UndefOr[__boolean] = js.undefined,
+    RegisterEndpoints: js.UndefOr[Boolean] = js.undefined,
     SegmentId: __string = null,
     SegmentName: __string = null
   ): ImportJobRequest = {

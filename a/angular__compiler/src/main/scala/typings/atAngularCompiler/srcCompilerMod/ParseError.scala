@@ -1,5 +1,6 @@
 package typings.atAngularCompiler.srcCompilerMod
 
+import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ class ParseError protected ()
   def this(
     span: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
     msg: String,
-    level: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel
+    level: ParseErrorLevel
   ) = this()
 }
 

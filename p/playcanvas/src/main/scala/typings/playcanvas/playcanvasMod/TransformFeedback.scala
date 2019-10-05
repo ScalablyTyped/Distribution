@@ -71,8 +71,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "TransformFeedback")
 @js.native
 class TransformFeedback protected ()
-  extends typings.playcanvas.pcNs.TransformFeedback {
-  def this(inputBuffer: typings.playcanvas.pcNs.VertexBuffer) = this()
-  def this(inputBuffer: typings.playcanvas.pcNs.VertexBuffer, usage: Double) = this()
+  extends typings.playcanvas.pc.TransformFeedback {
+  def this(inputBuffer: typings.playcanvas.pc.VertexBuffer) = this()
+  def this(inputBuffer: typings.playcanvas.pc.VertexBuffer, usage: Double) = this()
 }
 

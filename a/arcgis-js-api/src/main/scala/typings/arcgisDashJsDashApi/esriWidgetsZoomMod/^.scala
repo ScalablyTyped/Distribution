@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsZoomMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ZoomConstructor
+import typings.arcgisDashJsDashApi.__esri.ZoomConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

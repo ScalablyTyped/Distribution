@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Response
   extends ServerResponse
-     with typings.easyDashXDashHeaders.ExpressNs.Response {
+     with typings.easyDashXDashHeaders.Express.Response {
   var charset: String = js.native
   // Property indicating if HTTP headers has been sent for the response.
   var headersSent: Boolean = js.native

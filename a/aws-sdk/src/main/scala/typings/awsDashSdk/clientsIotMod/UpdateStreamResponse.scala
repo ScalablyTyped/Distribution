@@ -29,13 +29,13 @@ object UpdateStreamResponse {
     description: StreamDescription = null,
     streamArn: StreamArn = null,
     streamId: StreamId = null,
-    streamVersion: js.UndefOr[StreamVersion] = js.undefined
+    streamVersion: Int | Double = null
   ): UpdateStreamResponse = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
     if (streamArn != null) __obj.updateDynamic("streamArn")(streamArn)
     if (streamId != null) __obj.updateDynamic("streamId")(streamId)
-    if (!js.isUndefined(streamVersion)) __obj.updateDynamic("streamVersion")(streamVersion)
+    if (streamVersion != null) __obj.updateDynamic("streamVersion")(streamVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStreamResponse]
   }
 }

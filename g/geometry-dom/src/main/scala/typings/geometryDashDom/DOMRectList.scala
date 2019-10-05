@@ -14,12 +14,12 @@ trait DOMRectList extends js.Object {
     * the DOMRect object at index must be returned.
     * @param index
     */
-  def item(index: Double): typings.geometryDashDom.GeometryDomNs.DOMRect
+  def item(index: Double): typings.geometryDashDom.GeometryDom.DOMRect
 }
 
 object DOMRectList {
   @scala.inline
-  def apply(item: Double => typings.geometryDashDom.GeometryDomNs.DOMRect, length: Double): DOMRectList = {
+  def apply(item: Double => typings.geometryDashDom.GeometryDom.DOMRect, length: Double): DOMRectList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length)
   
     __obj.asInstanceOf[DOMRectList]

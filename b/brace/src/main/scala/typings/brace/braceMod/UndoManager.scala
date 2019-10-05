@@ -49,13 +49,6 @@ trait UndoManager extends js.Object {
 
 @JSImport("brace", "UndoManager")
 @js.native
-/**
-  * Resets the current undo state and creates a new `UndoManager`.
-  **/
-class UndoManagerCls () extends UndoManager
-
-@JSImport("brace", "UndoManager")
-@js.native
 object UndoManager
   extends /**
   * Resets the current undo state and creates a new `UndoManager`.

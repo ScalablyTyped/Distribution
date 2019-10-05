@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-share-menu"
-version := "2.2-dt-20190717Z-2bed5d"
-scalaVersion := "2.12.9"
+version := "2.2-dt-20190717Z-bae01c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

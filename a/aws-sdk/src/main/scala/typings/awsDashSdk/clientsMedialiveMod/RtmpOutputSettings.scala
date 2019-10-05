@@ -28,13 +28,13 @@ object RtmpOutputSettings {
   def apply(
     Destination: OutputLocationRef,
     CertificateMode: RtmpOutputCertificateMode = null,
-    ConnectionRetryInterval: js.UndefOr[__integerMin1] = js.undefined,
-    NumRetries: js.UndefOr[__integerMin0] = js.undefined
+    ConnectionRetryInterval: Int | Double = null,
+    NumRetries: Int | Double = null
   ): RtmpOutputSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination)
     if (CertificateMode != null) __obj.updateDynamic("CertificateMode")(CertificateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval)
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries)
+    if (ConnectionRetryInterval != null) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.asInstanceOf[js.Any])
+    if (NumRetries != null) __obj.updateDynamic("NumRetries")(NumRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtmpOutputSettings]
   }
 }

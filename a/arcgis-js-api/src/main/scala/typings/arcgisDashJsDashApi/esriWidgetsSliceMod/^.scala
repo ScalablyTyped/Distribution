@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSliceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliceConstructor
+import typings.arcgisDashJsDashApi.__esri.SliceConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

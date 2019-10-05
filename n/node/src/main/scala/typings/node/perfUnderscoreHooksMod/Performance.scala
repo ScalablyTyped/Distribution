@@ -1,5 +1,6 @@
 package typings.node.perfUnderscoreHooksMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,4 +92,8 @@ trait Performance extends js.Object {
     */
   def timerify[T /* <: js.Function1[/* repeated */ js.Any, _] */](fn: T): T = js.native
 }
+
+@JSImport("perf_hooks", "performance")
+@js.native
+object performance extends TopLevel[Performance]
 

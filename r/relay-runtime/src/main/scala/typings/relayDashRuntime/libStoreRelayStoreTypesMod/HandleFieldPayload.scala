@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 
 trait HandleFieldPayload extends js.Object {
   // The arguments that were fetched.
-  var args: Variables
+  val args: Variables
   // The __id of the record containing the source/handle field.
-  var dataID: DataID
+  val dataID: DataID
   // The (storage) key at which the original server data was written.
-  var fieldKey: String
+  val fieldKey: String
   // The name of the handle.
-  var handle: String
+  val handle: String
   // The (storage) key at which the handle's data should be written by the
   // handler.
-  var handleKey: String
+  val handleKey: String
 }
 
 object HandleFieldPayload {

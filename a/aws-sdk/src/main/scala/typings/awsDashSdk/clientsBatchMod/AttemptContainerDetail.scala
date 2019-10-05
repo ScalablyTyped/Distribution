@@ -35,7 +35,7 @@ object AttemptContainerDetail {
   @scala.inline
   def apply(
     containerInstanceArn: String = null,
-    exitCode: js.UndefOr[Integer] = js.undefined,
+    exitCode: Int | Double = null,
     logStreamName: String = null,
     networkInterfaces: NetworkInterfaceList = null,
     reason: String = null,
@@ -43,7 +43,7 @@ object AttemptContainerDetail {
   ): AttemptContainerDetail = {
     val __obj = js.Dynamic.literal()
     if (containerInstanceArn != null) __obj.updateDynamic("containerInstanceArn")(containerInstanceArn)
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName)
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
     if (reason != null) __obj.updateDynamic("reason")(reason)

@@ -1,6 +1,6 @@
 package typings.kendoDashUi
 
-import typings.kendoDashUi.kendoNs.dataNs.BindingTarget
+import typings.kendoDashUi.kendo.data.BindingTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

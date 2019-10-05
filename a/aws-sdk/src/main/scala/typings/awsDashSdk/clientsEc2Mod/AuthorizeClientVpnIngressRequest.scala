@@ -41,10 +41,10 @@ object AuthorizeClientVpnIngressRequest {
     ClientVpnEndpointId: String,
     TargetNetworkCidr: String,
     AccessGroupId: String = null,
-    AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined,
+    AuthorizeAllGroups: js.UndefOr[scala.Boolean] = js.undefined,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): AuthorizeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, TargetNetworkCidr = TargetNetworkCidr)
     if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId)

@@ -22,12 +22,12 @@ trait GetServersRequest extends js.Object {
 object GetServersRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     vmServerAddressList: VmServerAddressList = null
   ): GetServersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (vmServerAddressList != null) __obj.updateDynamic("vmServerAddressList")(vmServerAddressList)
     __obj.asInstanceOf[GetServersRequest]

@@ -19,7 +19,7 @@ object CreateCertificateFromCsrRequest {
   @scala.inline
   def apply(
     certificateSigningRequest: CertificateSigningRequest,
-    setAsActive: js.UndefOr[SetAsActive] = js.undefined
+    setAsActive: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateCertificateFromCsrRequest = {
     val __obj = js.Dynamic.literal(certificateSigningRequest = certificateSigningRequest)
     if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive)

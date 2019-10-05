@@ -14,18 +14,6 @@ trait Agent extends js.Object {
 
 @JSImport("https", "Agent")
 @js.native
-class AgentCls () extends Agent {
-  def this(options: RequestOptions) = this()
-  /* CompleteClass */
-  override var maxSockets: Double = js.native
-  /* CompleteClass */
-  override var requests: js.Any = js.native
-  /* CompleteClass */
-  override var sockets: js.Any = js.native
-}
-
-@JSImport("https", "Agent")
-@js.native
 object Agent
   extends Instantiable0[Agent]
      with Instantiable1[/* options */ RequestOptions, Agent]

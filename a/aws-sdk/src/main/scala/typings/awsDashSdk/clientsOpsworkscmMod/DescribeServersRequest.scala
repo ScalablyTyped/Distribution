@@ -21,13 +21,9 @@ trait DescribeServersRequest extends js.Object {
 
 object DescribeServersRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ServerName: ServerName = null
-  ): DescribeServersRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, ServerName: ServerName = null): DescribeServersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName)
     __obj.asInstanceOf[DescribeServersRequest]

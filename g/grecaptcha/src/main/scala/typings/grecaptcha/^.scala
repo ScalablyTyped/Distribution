@@ -1,6 +1,6 @@
 package typings.grecaptcha
 
-import typings.grecaptcha.ReCaptchaV2Ns.ReCaptcha
+import typings.grecaptcha.ReCaptchaV2.ReCaptcha
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

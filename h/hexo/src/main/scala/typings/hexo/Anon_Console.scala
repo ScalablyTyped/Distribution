@@ -1,14 +1,14 @@
 package typings.hexo
 
-import typings.hexo.hexoMod.extendNs.Console
-import typings.hexo.hexoMod.extendNs.Deployer
-import typings.hexo.hexoMod.extendNs.Filter
-import typings.hexo.hexoMod.extendNs.Generator
-import typings.hexo.hexoMod.extendNs.Helper
-import typings.hexo.hexoMod.extendNs.Migrator
-import typings.hexo.hexoMod.extendNs.Processor
-import typings.hexo.hexoMod.extendNs.Renderer
-import typings.hexo.hexoMod.extendNs.Tag
+import typings.hexo.hexoMod.extend.Console
+import typings.hexo.hexoMod.extend.Deployer
+import typings.hexo.hexoMod.extend.Filter
+import typings.hexo.hexoMod.extend.Generator
+import typings.hexo.hexoMod.extend.Helper
+import typings.hexo.hexoMod.extend.Migrator
+import typings.hexo.hexoMod.extend.Processor
+import typings.hexo.hexoMod.extend.Renderer
+import typings.hexo.hexoMod.extend.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

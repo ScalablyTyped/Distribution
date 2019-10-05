@@ -20,21 +20,21 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "VertexBuffer")
 @js.native
 class VertexBuffer protected ()
-  extends typings.playcanvas.pcNs.VertexBuffer {
+  extends typings.playcanvas.pc.VertexBuffer {
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
-    format: typings.playcanvas.pcNs.VertexFormat,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
+    format: typings.playcanvas.pc.VertexFormat,
     numVertices: Double
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
-    format: typings.playcanvas.pcNs.VertexFormat,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
+    format: typings.playcanvas.pc.VertexFormat,
     numVertices: Double,
     usage: Double
   ) = this()
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
-    format: typings.playcanvas.pcNs.VertexFormat,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
+    format: typings.playcanvas.pc.VertexFormat,
     numVertices: Double,
     usage: Double,
     initialData: ArrayBuffer

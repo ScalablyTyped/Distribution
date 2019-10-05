@@ -1,8 +1,8 @@
 package typings.karmaDashChaiDashSinon.karmaDashChaiDashSinonMod
 
-import typings.chai.ChaiNs.AssertStatic
-import typings.chai.ChaiNs.ExpectStatic
-import typings.chai.ChaiNs.Should
+import typings.chai.Chai.AssertStatic
+import typings.chai.Chai.ExpectStatic
+import typings.chai.Chai.Should
 import typings.sinon.sinonMod.SinonStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`

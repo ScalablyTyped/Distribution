@@ -1,14 +1,11 @@
 package typings.ionicons.distTypesComponentsMod.Global
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ionicons.distTypesComponentsMod.ComponentsNs.IonIcon
+import typings.ionicons.distTypesComponentsMod.Components.IonIcon
 import typings.ionicons.distTypesStencilDotCoreMod.HTMLStencilElement
 import typings.std.AddEventListenerOptions
-import typings.std.CSSStyleDeclaration
-import typings.std.Element
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
-import typings.std.HTMLSlotElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,38 +42,6 @@ trait HTMLIonIconElement
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
-}
-
-@JSGlobal("HTMLIonIconElement")
-@js.native
-class HTMLIonIconElementCls () extends HTMLIonIconElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var contentEditable: String = js.native
-  /* CompleteClass */
-  override var innerHTML: String = js.native
-  /* CompleteClass */
-  override var inputMode: String = js.native
-  /* CompleteClass */
-  override val isContentEditable: Boolean = js.native
-  /**
-    * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
-    */
-  /* CompleteClass */
-  override var `lazy`: Boolean = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
 }
 
 @JSGlobal("HTMLIonIconElement")

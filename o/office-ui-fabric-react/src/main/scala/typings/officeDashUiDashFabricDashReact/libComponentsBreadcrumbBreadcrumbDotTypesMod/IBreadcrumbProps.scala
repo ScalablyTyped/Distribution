@@ -7,6 +7,7 @@ import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -75,7 +76,7 @@ object IBreadcrumbProps {
     focusZoneProps: IFocusZoneProps = null,
     maxDisplayedItems: Int | Double = null,
     onReduceData: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData] = null,
-    onRenderItem: IRenderFunction[IBreadcrumbItem] = null,
+    onRenderItem: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null = null,
     overflowAriaLabel: String = null,
     overflowIndex: Int | Double = null,
     styles: IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles] = null,
@@ -91,7 +92,7 @@ object IBreadcrumbProps {
     if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps)
     if (maxDisplayedItems != null) __obj.updateDynamic("maxDisplayedItems")(maxDisplayedItems.asInstanceOf[js.Any])
     if (onReduceData != null) __obj.updateDynamic("onReduceData")(js.Any.fromFunction1(onReduceData))
-    if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(onRenderItem)
+    if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction2(onRenderItem))
     if (overflowAriaLabel != null) __obj.updateDynamic("overflowAriaLabel")(overflowAriaLabel)
     if (overflowIndex != null) __obj.updateDynamic("overflowIndex")(overflowIndex.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

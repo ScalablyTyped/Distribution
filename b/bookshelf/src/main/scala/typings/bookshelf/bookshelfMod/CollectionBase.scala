@@ -1,6 +1,7 @@
 package typings.bookshelf.bookshelfMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.bluebird.bluebirdMod.^
 import typings.lodash.lodashMod.Dictionary
 import typings.lodash.lodashMod.DictionaryIterator
 import typings.lodash.lodashMod.List
@@ -93,8 +94,8 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def every[R /* <: js.Object */](predicate: R): Boolean = js.native
   @JSName("every")
   def every_R_Object[R /* <: js.Object */](): Boolean = js.native
-  def fetch(): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
-  def fetch(options: CollectionFetchOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def fetch(): ^[Collection[T]] = js.native
+  def fetch(options: CollectionFetchOptions): ^[Collection[T]] = js.native
   def filter(): js.Array[T] = js.native
   def filter(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
   def filter(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): js.Array[T] = js.native
@@ -157,7 +158,7 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def inject[R](callback: MemoIterator[T, R], accumulator: R, thisArg: js.Any): R = js.native
   def invoke(methodName: String, args: js.Any*): js.Any = js.native
   def invoke(methodName: js.Function, args: js.Any*): js.Any = js.native
-  def invokeThen(name: String, args: js.Any*): typings.bluebird.bluebirdMod.^[_] = js.native
+  def invokeThen(name: String, args: js.Any*): ^[_] = js.native
   def isEmpty(): Boolean = js.native
   def keys(): js.Array[String] = js.native
   def last(): T = js.native
@@ -202,7 +203,7 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
     iterator: js.Function4[/* prev */ R, /* cur */ T, /* idx */ Double, /* array */ js.Array[T], R],
     initialValue: R,
     context: js.Any
-  ): typings.bluebird.bluebirdMod.^[R] = js.native
+  ): ^[R] = js.native
   def reject(): js.Array[T] = js.native
   def reject(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
   def reject(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): js.Array[T] = js.native

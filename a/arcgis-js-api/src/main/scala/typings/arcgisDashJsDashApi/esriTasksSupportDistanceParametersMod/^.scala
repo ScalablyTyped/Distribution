@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportDistanceParametersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceParametersConstructor
+import typings.arcgisDashJsDashApi.__esri.DistanceParametersConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

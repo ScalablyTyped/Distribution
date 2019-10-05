@@ -12,9 +12,9 @@ trait Anon_ChildrenValueComponentChildren[T] extends js.Object {
 
 object Anon_ChildrenValueComponentChildren {
   @scala.inline
-  def apply[T](children: ComponentChildren, value: T): Anon_ChildrenValueComponentChildren[T] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
+  def apply[T](value: T, children: ComponentChildren = null): Anon_ChildrenValueComponentChildren[T] = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenValueComponentChildren[T]]
   }
 }

@@ -1,6 +1,6 @@
 package typings.atJupyterlabCodeeditor.libMimetypeMod
 
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.ILanguageInfoMetadata
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.ILanguageInfoMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +30,12 @@ trait IEditorMimeTypeService extends js.Object {
   def getMimeTypeByLanguage(info: ILanguageInfoMetadata): String
 }
 
-object IEditorMimeTypeService {
-  @scala.inline
-  def apply(getMimeTypeByFilePath: String => String, getMimeTypeByLanguage: ILanguageInfoMetadata => String): IEditorMimeTypeService = {
-    val __obj = js.Dynamic.literal(getMimeTypeByFilePath = js.Any.fromFunction1(getMimeTypeByFilePath), getMimeTypeByLanguage = js.Any.fromFunction1(getMimeTypeByLanguage))
-  
-    __obj.asInstanceOf[IEditorMimeTypeService]
-  }
+@JSImport("@jupyterlab/codeeditor/lib/mimetype", "IEditorMimeTypeService")
+@js.native
+object IEditorMimeTypeService extends js.Object {
+  /**
+    * The default mime type.
+    */
+  val defaultMimeType: String = js.native
 }
 

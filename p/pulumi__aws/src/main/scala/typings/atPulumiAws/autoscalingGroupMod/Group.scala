@@ -2,10 +2,10 @@ package typings.atPulumiAws.autoscalingGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.autoscalingMetricsMod.Metric
-import typings.atPulumiAws.typesOutputMod.autoscalingNs.GroupInitialLifecycleHook
-import typings.atPulumiAws.typesOutputMod.autoscalingNs.GroupLaunchTemplate
-import typings.atPulumiAws.typesOutputMod.autoscalingNs.GroupMixedInstancesPolicy
-import typings.atPulumiAws.typesOutputMod.autoscalingNs.GroupTag
+import typings.atPulumiAws.typesOutputMod.autoscaling.GroupInitialLifecycleHook
+import typings.atPulumiAws.typesOutputMod.autoscaling.GroupLaunchTemplate
+import typings.atPulumiAws.typesOutputMod.autoscaling.GroupMixedInstancesPolicy
+import typings.atPulumiAws.typesOutputMod.autoscaling.GroupTag
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

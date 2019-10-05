@@ -1,11 +1,11 @@
 package typings.atPulumiAws.ec2SpotInstanceRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestCreditSpecification
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestEbsBlockDevice
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestEphemeralBlockDevice
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestNetworkInterface
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotInstanceRequestRootBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.SpotInstanceRequestCreditSpecification
+import typings.atPulumiAws.typesInputMod.ec2.SpotInstanceRequestEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.SpotInstanceRequestEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.SpotInstanceRequestNetworkInterface
+import typings.atPulumiAws.typesInputMod.ec2.SpotInstanceRequestRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

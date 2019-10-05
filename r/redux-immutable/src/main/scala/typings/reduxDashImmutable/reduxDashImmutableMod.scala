@@ -1,7 +1,7 @@
 package typings.reduxDashImmutable
 
-import typings.immutable.immutableMod.CollectionNs.Indexed
-import typings.immutable.immutableMod.CollectionNs.Keyed
+import typings.immutable.immutableMod.Collection.Indexed
+import typings.immutable.immutableMod.Collection.Keyed
 import typings.redux.reduxMod.Action
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Reducer

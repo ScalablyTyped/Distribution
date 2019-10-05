@@ -32,14 +32,14 @@ object Termination {
   def apply(
     CallingRegions: CallingRegionList = null,
     CidrAllowedList: StringList = null,
-    CpsLimit: js.UndefOr[CpsLimit] = js.undefined,
+    CpsLimit: Int | Double = null,
     DefaultPhoneNumber: E164PhoneNumber = null,
-    Disabled: js.UndefOr[Boolean] = js.undefined
+    Disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Termination = {
     val __obj = js.Dynamic.literal()
     if (CallingRegions != null) __obj.updateDynamic("CallingRegions")(CallingRegions)
     if (CidrAllowedList != null) __obj.updateDynamic("CidrAllowedList")(CidrAllowedList)
-    if (!js.isUndefined(CpsLimit)) __obj.updateDynamic("CpsLimit")(CpsLimit)
+    if (CpsLimit != null) __obj.updateDynamic("CpsLimit")(CpsLimit.asInstanceOf[js.Any])
     if (DefaultPhoneNumber != null) __obj.updateDynamic("DefaultPhoneNumber")(DefaultPhoneNumber)
     if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled)
     __obj.asInstanceOf[Termination]

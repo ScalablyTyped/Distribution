@@ -1,6 +1,6 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.Document
+import typings.activexDashWord.Word.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

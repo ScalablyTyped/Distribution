@@ -1,5 +1,6 @@
 package typings.scDashErrors.scDashErrorsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ object SocketProtocolIgnoreStatuses {
     __obj.asInstanceOf[SocketProtocolIgnoreStatuses]
   }
 }
+
+@JSImport("sc-errors", "socketProtocolIgnoreStatuses")
+@js.native
+object socketProtocolIgnoreStatuses extends TopLevel[SocketProtocolIgnoreStatuses]
 

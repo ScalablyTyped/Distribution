@@ -39,8 +39,8 @@ object TransitGatewayRouteTable {
   @scala.inline
   def apply(
     CreationTime: DateTime = null,
-    DefaultAssociationRouteTable: js.UndefOr[Boolean] = js.undefined,
-    DefaultPropagationRouteTable: js.UndefOr[Boolean] = js.undefined,
+    DefaultAssociationRouteTable: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultPropagationRouteTable: js.UndefOr[scala.Boolean] = js.undefined,
     State: TransitGatewayRouteTableState = null,
     Tags: TagList = null,
     TransitGatewayId: String = null,

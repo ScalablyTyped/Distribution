@@ -1,9 +1,9 @@
 package typings.snazzyDashInfoDashWindow.snazzyDashInfoDashWindowMod
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
-import typings.googlemaps.googleNs.mapsNs.Map
-import typings.googlemaps.googleNs.mapsNs.Marker
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngLiteral
+import typings.googlemaps.google.maps.Map
+import typings.googlemaps.google.maps.Marker
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

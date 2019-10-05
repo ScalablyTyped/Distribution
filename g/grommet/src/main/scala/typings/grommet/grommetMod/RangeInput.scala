@@ -1,8 +1,10 @@
 package typings.grommet.grommetMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsRangeInputMod.RangeInputProps
 import typings.react.HTMLInputElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.InputHTMLAttributes
@@ -24,4 +26,13 @@ class RangeInput protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet", "RangeInput")
+@js.native
+object RangeInput extends TopLevel[
+      ComponentClass[
+        RangeInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+        ComponentState
+      ]
+    ]
 

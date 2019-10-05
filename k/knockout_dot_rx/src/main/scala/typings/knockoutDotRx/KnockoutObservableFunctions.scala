@@ -1,7 +1,7 @@
 package typings.knockoutDotRx
 
-import typings.knockoutDotRx.RxNs.Observable
-import typings.rxDashCoreDashBinding.RxNs.ISubject
+import typings.knockoutDotRx.Rx.Observable
+import typings.rxDashCoreDashBinding.Rx.ISubject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

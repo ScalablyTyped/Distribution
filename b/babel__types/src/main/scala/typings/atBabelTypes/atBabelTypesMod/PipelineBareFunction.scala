@@ -36,3 +36,9 @@ object PipelineBareFunction {
   }
 }
 
+@JSImport("@babel/types", "pipelineBareFunction")
+@js.native
+object pipelineBareFunction extends js.Object {
+  def apply(callee: Expression): PipelineBareFunction = js.native
+}
+

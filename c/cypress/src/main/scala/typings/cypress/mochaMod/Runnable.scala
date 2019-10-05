@@ -1,7 +1,7 @@
 package typings.cypress.mochaMod
 
-import typings.cypress.MochaNs.AsyncFunc
-import typings.cypress.MochaNs.Func
+import typings.cypress.Mocha.AsyncFunc
+import typings.cypress.Mocha.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "Runnable")
 @js.native
 class Runnable protected ()
-  extends typings.cypress.MochaNs.Runnable {
+  extends typings.cypress.Mocha.Runnable {
   def this(title: String) = this()
   def this(title: String, fn: AsyncFunc) = this()
   def this(title: String, fn: Func) = this()

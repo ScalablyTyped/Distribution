@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ElementDragHelper")
 @js.native
 class ElementDragHelper protected ()
-  extends typings.playcanvas.pcNs.ElementDragHelper {
-  def this(element: typings.playcanvas.pcNs.ElementComponent) = this()
-  def this(element: typings.playcanvas.pcNs.ElementComponent, axis: String) = this()
+  extends typings.playcanvas.pc.ElementDragHelper {
+  def this(element: typings.playcanvas.pc.ElementComponent) = this()
+  def this(element: typings.playcanvas.pc.ElementComponent, axis: String) = this()
 }
 

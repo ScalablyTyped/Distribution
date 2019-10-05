@@ -96,8 +96,8 @@ object InteractiveMapProps {
     onTransitionEnd: () => Unit = null,
     onTransitionInterrupt: () => Unit = null,
     onTransitionStart: () => Unit = null,
-    onViewStateChange: ContextViewStateChangeHandler = null,
-    onViewportChange: ContextViewportChangeHandler = null,
+    onViewStateChange: /* info */ ContextViewStateChangeInfo => Unit = null,
+    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     onWheel: /* event */ PointerEvent => Unit = null,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,
@@ -110,7 +110,7 @@ object InteractiveMapProps {
     touchZoom: js.UndefOr[Boolean] = js.undefined,
     transformRequest: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest = null,
     transitionDuration: Int | Double = null,
-    transitionEasing: EasingFunction = null,
+    transitionEasing: /* t */ Double => Double = null,
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null,
     viewState: ViewState = null,
@@ -159,8 +159,8 @@ object InteractiveMapProps {
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
     if (onTransitionInterrupt != null) __obj.updateDynamic("onTransitionInterrupt")(js.Any.fromFunction0(onTransitionInterrupt))
     if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction0(onTransitionStart))
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
     if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing)
@@ -173,7 +173,7 @@ object InteractiveMapProps {
     if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
-    if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(transitionEasing)
+    if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(js.Any.fromFunction1(transitionEasing))
     if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator)
     if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption)
     if (viewState != null) __obj.updateDynamic("viewState")(viewState)

@@ -24,12 +24,12 @@ object StartLambdaFunctionFailedEventAttributes {
   def apply(
     cause: StartLambdaFunctionFailedCause = null,
     message: CauseMessage = null,
-    scheduledEventId: js.UndefOr[EventId] = js.undefined
+    scheduledEventId: Int | Double = null
   ): StartLambdaFunctionFailedEventAttributes = {
     val __obj = js.Dynamic.literal()
     if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(scheduledEventId)) __obj.updateDynamic("scheduledEventId")(scheduledEventId)
+    if (scheduledEventId != null) __obj.updateDynamic("scheduledEventId")(scheduledEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartLambdaFunctionFailedEventAttributes]
   }
 }

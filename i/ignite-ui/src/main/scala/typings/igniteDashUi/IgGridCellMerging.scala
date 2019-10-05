@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,8 +91,8 @@ object IgGridCellMerging {
   	 * Option for igGridCellMerging
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    cellsMerged: CellsMergedEvent = null,
-    cellsMerging: CellsMergingEvent = null,
+    cellsMerged: (/* event */ Event, /* ui */ CellsMergedEventUIParam) => Unit = null,
+    cellsMerging: (/* event */ Event, /* ui */ CellsMergingEventUIParam) => Unit = null,
     columnSettings: js.Array[IgGridCellMergingColumnSetting] = null,
     inherit: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
@@ -105,8 +106,8 @@ object IgGridCellMerging {
   ): IgGridCellMerging = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cellsMerged != null) __obj.updateDynamic("cellsMerged")(cellsMerged)
-    if (cellsMerging != null) __obj.updateDynamic("cellsMerging")(cellsMerging)
+    if (cellsMerged != null) __obj.updateDynamic("cellsMerged")(js.Any.fromFunction2(cellsMerged))
+    if (cellsMerging != null) __obj.updateDynamic("cellsMerging")(js.Any.fromFunction2(cellsMerging))
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (language != null) __obj.updateDynamic("language")(language)

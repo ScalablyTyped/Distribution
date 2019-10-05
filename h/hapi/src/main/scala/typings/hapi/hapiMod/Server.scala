@@ -10,9 +10,9 @@ import typings.hapi.Anon_Method
 import typings.hapi.Anon_Request
 import typings.hapi.Anon_Timeout
 import typings.hapi.Anon_Validate
-import typings.hapi.hapiMod.LifecycleNs.Method
-import typings.hapi.hapiMod.UtilNs.Dictionary
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS
+import typings.hapi.hapiMod.Lifecycle.Method
+import typings.hapi.hapiMod.Util.Dictionary
+import typings.hapi.hapiMod.Util.HTTP_METHODS
 import typings.hapi.hapiStrings.handler
 import typings.hapi.hapiStrings.request
 import typings.hapi.hapiStrings.server

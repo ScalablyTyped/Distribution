@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.BrowserWindow
+import typings.jpm.FFAddonSDK.BrowserWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

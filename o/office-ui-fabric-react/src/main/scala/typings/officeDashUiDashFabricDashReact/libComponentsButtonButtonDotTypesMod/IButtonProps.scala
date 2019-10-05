@@ -17,6 +17,7 @@ import typings.react.NativeMouseEvent
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.AnchorHTMLAttributes
 import typings.react.reactMod.ButtonHTMLAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLAnchorElement
@@ -285,16 +286,16 @@ object IButtonProps {
     menuAs: IComponentAs[IContextualMenuProps] = null,
     menuIconProps: IIconProps = null,
     menuProps: IContextualMenuProps = null,
-    menuTriggerKeyCode: js.UndefOr[KeyCodes] = js.undefined,
+    menuTriggerKeyCode: Int | Double = null,
     onAfterMenuDismiss: () => Unit = null,
     onMenuClick: (/* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], /* button */ js.UndefOr[IButtonProps]) => Unit = null,
-    onRenderAriaDescription: IRenderFunction[IButtonProps] = null,
-    onRenderChildren: IRenderFunction[IButtonProps] = null,
-    onRenderDescription: IRenderFunction[IButtonProps] = null,
-    onRenderIcon: IRenderFunction[IButtonProps] = null,
-    onRenderMenu: IRenderFunction[IContextualMenuProps] = null,
-    onRenderMenuIcon: IRenderFunction[IButtonProps] = null,
-    onRenderText: IRenderFunction[IButtonProps] = null,
+    onRenderAriaDescription: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
+    onRenderChildren: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
+    onRenderDescription: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
+    onRenderIcon: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
+    onRenderMenu: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuProps], Element | Null]]) => Element | Null = null,
+    onRenderMenuIcon: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
+    onRenderText: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
     persistMenu: js.UndefOr[Boolean] = js.undefined,
     primary: js.UndefOr[Boolean] = js.undefined,
     primaryActionButtonProps: IButtonProps = null,
@@ -333,16 +334,16 @@ object IButtonProps {
     if (menuAs != null) __obj.updateDynamic("menuAs")(menuAs.asInstanceOf[js.Any])
     if (menuIconProps != null) __obj.updateDynamic("menuIconProps")(menuIconProps)
     if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps)
-    if (!js.isUndefined(menuTriggerKeyCode)) __obj.updateDynamic("menuTriggerKeyCode")(menuTriggerKeyCode)
+    if (menuTriggerKeyCode != null) __obj.updateDynamic("menuTriggerKeyCode")(menuTriggerKeyCode.asInstanceOf[js.Any])
     if (onAfterMenuDismiss != null) __obj.updateDynamic("onAfterMenuDismiss")(js.Any.fromFunction0(onAfterMenuDismiss))
     if (onMenuClick != null) __obj.updateDynamic("onMenuClick")(js.Any.fromFunction2(onMenuClick))
-    if (onRenderAriaDescription != null) __obj.updateDynamic("onRenderAriaDescription")(onRenderAriaDescription)
-    if (onRenderChildren != null) __obj.updateDynamic("onRenderChildren")(onRenderChildren)
-    if (onRenderDescription != null) __obj.updateDynamic("onRenderDescription")(onRenderDescription)
-    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(onRenderIcon)
-    if (onRenderMenu != null) __obj.updateDynamic("onRenderMenu")(onRenderMenu)
-    if (onRenderMenuIcon != null) __obj.updateDynamic("onRenderMenuIcon")(onRenderMenuIcon)
-    if (onRenderText != null) __obj.updateDynamic("onRenderText")(onRenderText)
+    if (onRenderAriaDescription != null) __obj.updateDynamic("onRenderAriaDescription")(js.Any.fromFunction2(onRenderAriaDescription))
+    if (onRenderChildren != null) __obj.updateDynamic("onRenderChildren")(js.Any.fromFunction2(onRenderChildren))
+    if (onRenderDescription != null) __obj.updateDynamic("onRenderDescription")(js.Any.fromFunction2(onRenderDescription))
+    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(js.Any.fromFunction2(onRenderIcon))
+    if (onRenderMenu != null) __obj.updateDynamic("onRenderMenu")(js.Any.fromFunction2(onRenderMenu))
+    if (onRenderMenuIcon != null) __obj.updateDynamic("onRenderMenuIcon")(js.Any.fromFunction2(onRenderMenuIcon))
+    if (onRenderText != null) __obj.updateDynamic("onRenderText")(js.Any.fromFunction2(onRenderText))
     if (!js.isUndefined(persistMenu)) __obj.updateDynamic("persistMenu")(persistMenu)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (primaryActionButtonProps != null) __obj.updateDynamic("primaryActionButtonProps")(primaryActionButtonProps)

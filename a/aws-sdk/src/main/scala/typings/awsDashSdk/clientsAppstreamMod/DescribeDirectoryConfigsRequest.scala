@@ -23,12 +23,12 @@ object DescribeDirectoryConfigsRequest {
   @scala.inline
   def apply(
     DirectoryNames: DirectoryNameList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): DescribeDirectoryConfigsRequest = {
     val __obj = js.Dynamic.literal()
     if (DirectoryNames != null) __obj.updateDynamic("DirectoryNames")(DirectoryNames)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeDirectoryConfigsRequest]
   }

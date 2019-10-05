@@ -24,7 +24,7 @@ object ModifyInstanceCapacityReservationAttributesRequest {
   def apply(
     CapacityReservationSpecification: CapacityReservationSpecification,
     InstanceId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyInstanceCapacityReservationAttributesRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationSpecification = CapacityReservationSpecification, InstanceId = InstanceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

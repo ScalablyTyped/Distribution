@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/php/exec", JSImport.Namespace)
 @js.native
 object phpExecMod extends js.Object {
-  def escapeshellarg(): js.Any = js.native
-  def escapeshellarg(arg: js.Any): js.Any = js.native
+  @js.native
+  object escapeshellarg extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(arg: js.Any): js.Any = js.native
+  }
+  
 }
 

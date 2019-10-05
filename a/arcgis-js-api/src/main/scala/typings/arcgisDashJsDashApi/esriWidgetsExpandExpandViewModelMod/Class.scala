@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsExpandExpandViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExpandViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExpandViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.ExpandViewModel
+import typings.arcgisDashJsDashApi.__esri.ExpandViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

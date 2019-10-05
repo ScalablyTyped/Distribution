@@ -1,7 +1,7 @@
 package typings.pixiDotJs
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.pixiDotJs.PIXINs.utilsNs.EventEmitter
+import typings.pixiDotJs.PIXI.utils.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

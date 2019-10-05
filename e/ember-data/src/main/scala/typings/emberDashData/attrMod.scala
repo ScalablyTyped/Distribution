@@ -1,7 +1,7 @@
 package typings.emberDashData
 
-import typings.ember.emberMod.defaultNs.ComputedProperty
-import typings.emberDashData.emberDashDataMod.DSNs.AttrOptions
+import typings.ember.emberMod.default.ComputedProperty
+import typings.emberDashData.emberDashDataMod.DS.AttrOptions
 import typings.emberDashData.emberDashDataStrings.boolean
 import typings.emberDashData.emberDashDataStrings.date
 import typings.emberDashData.emberDashDataStrings.number

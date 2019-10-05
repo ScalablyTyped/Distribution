@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayGatewayMod
 
-import typings.atPulumiAws.typesOutputMod.storagegatewayNs.GatewaySmbActiveDirectorySettings
+import typings.atPulumiAws.typesOutputMod.storagegateway.GatewaySmbActiveDirectorySettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

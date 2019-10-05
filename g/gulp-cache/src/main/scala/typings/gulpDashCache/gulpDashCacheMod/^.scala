@@ -1,7 +1,7 @@
 package typings.gulpDashCache.gulpDashCacheMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.gulpDashCache.gulpDashCacheMod.gcNs.IGulpCacheStatic
+import typings.gulpDashCache.gulpDashCacheMod.gc.IGulpCacheStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

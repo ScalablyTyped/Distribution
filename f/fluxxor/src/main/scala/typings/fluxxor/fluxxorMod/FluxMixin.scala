@@ -1,5 +1,6 @@
 package typings.fluxxor.fluxxorMod
 
+import typings.fluxxor.TypeofReact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +9,9 @@ trait FluxMixin extends js.Object {
   def getFlux(): Flux
 }
 
-object FluxMixin {
-  @scala.inline
-  def apply(getFlux: () => Flux): FluxMixin = {
-    val __obj = js.Dynamic.literal(getFlux = js.Any.fromFunction0(getFlux))
-  
-    __obj.asInstanceOf[FluxMixin]
-  }
+@JSImport("fluxxor", "FluxMixin")
+@js.native
+object FluxMixin extends js.Object {
+  def apply(react: TypeofReact): FluxMixin = js.native
 }
 

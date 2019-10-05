@@ -24,3 +24,10 @@ class Deflate () extends js.Object {
   def push(data: ArrayBuffer, mode: FlushValues): Boolean = js.native
 }
 
+@JSImport("pako", "deflate")
+@js.native
+object deflate extends js.Object {
+  def apply(data: Data): Uint8Array = js.native
+  def apply(data: Data, options: DeflateFunctionOptions): Uint8Array = js.native
+}
+

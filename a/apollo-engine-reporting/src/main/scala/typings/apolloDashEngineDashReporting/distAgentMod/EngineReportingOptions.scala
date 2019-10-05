@@ -2,6 +2,7 @@ package typings.apolloDashEngineDashReporting.distAgentMod
 
 import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingNumbers.`false`
 import typings.apolloDashServerDashEnv.distFetchMod.RequestAgent
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLRequestContext
 import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.languageAstMod.DocumentNode
 import typings.std.Error
@@ -39,7 +40,7 @@ object EngineReportingOptions {
     calculateSignature: (/* ast */ DocumentNode, /* operationName */ String) => String = null,
     debugPrintReports: js.UndefOr[Boolean] = js.undefined,
     endpointUrl: String = null,
-    generateClientInfo: GenerateClientInfo[TContext] = null,
+    generateClientInfo: /* requestContext */ GraphQLRequestContext[TContext] => ClientInfo = null,
     handleSignals: js.UndefOr[Boolean] = js.undefined,
     maskErrorDetails: js.UndefOr[Boolean] = js.undefined,
     maxAttempts: Int | Double = null,
@@ -61,7 +62,7 @@ object EngineReportingOptions {
     if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(js.Any.fromFunction2(calculateSignature))
     if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports)
     if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
-    if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(generateClientInfo)
+    if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(js.Any.fromFunction1(generateClientInfo))
     if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals)
     if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails)
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])

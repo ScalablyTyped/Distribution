@@ -1,5 +1,6 @@
 package typings.wonderDotJs.distEs2015Mod
 
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DomEvent protected ()
   extends typings.wonderDotJs.distEs2015EventObjectDomEventMod.DomEvent {
-  def this(event: js.Any, eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName) = this()
+  def this(event: js.Any, eventName: EEventName) = this()
 }
 

@@ -27,7 +27,7 @@ object ApplicationComponent {
   @scala.inline
   def apply(
     ComponentName: ComponentName = null,
-    Monitor: js.UndefOr[Monitor] = js.undefined,
+    Monitor: js.UndefOr[Boolean] = js.undefined,
     ResourceType: ResourceType = null,
     Tier: Tier = null
   ): ApplicationComponent = {

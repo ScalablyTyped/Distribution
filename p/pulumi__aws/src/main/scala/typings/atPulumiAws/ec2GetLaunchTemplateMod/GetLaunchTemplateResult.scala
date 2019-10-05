@@ -1,15 +1,15 @@
 package typings.atPulumiAws.ec2GetLaunchTemplateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateBlockDeviceMapping
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateCreditSpecification
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateElasticGpuSpecification
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateIamInstanceProfile
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateInstanceMarketOption
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateMonitoring
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateNetworkInterface
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplatePlacement
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchTemplateTagSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateBlockDeviceMapping
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateElasticGpuSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateIamInstanceProfile
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateInstanceMarketOption
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateMonitoring
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateNetworkInterface
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplatePlacement
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchTemplateTagSpecification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

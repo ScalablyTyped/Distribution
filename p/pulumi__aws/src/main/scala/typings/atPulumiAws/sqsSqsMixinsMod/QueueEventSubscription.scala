@@ -2,7 +2,7 @@ package typings.atPulumiAws.sqsSqsMixinsMod
 
 import typings.atPulumiAws.lambdaMod.EventSourceMapping
 import typings.atPulumiAws.lambdaMod.EventSubscription
-import typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue
+import typings.atPulumiAws.sqsQueueMod.Queue
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

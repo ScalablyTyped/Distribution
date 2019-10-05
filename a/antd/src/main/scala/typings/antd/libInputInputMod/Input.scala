@@ -3,12 +3,12 @@ package typings.antd.libInputInputMod
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait Input
   def getSnapshotBeforeUpdate_MInput(prevProps: InputProps): Null = js.native
   def handleChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
-  def handleReset(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def handleReset(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def renderClearIcon(prefixCls: String): Element | Null = js.native
   def renderComponent(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def renderInput(prefixCls: String): Element = js.native
@@ -37,7 +37,11 @@ trait Input
   def select(): Unit = js.native
   def setValue(value: String, e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def setValue(value: String, e: ChangeEvent[HTMLInputElement], callback: js.Function0[Unit]): Unit = js.native
-  def setValue(value: String, e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
-  def setValue(value: String, e: MouseEvent[HTMLElement, typings.std.MouseEvent], callback: js.Function0[Unit]): Unit = js.native
+  def setValue(value: String, e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
+  def setValue(
+    value: String,
+    e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
 }
 

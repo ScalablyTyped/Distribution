@@ -22,12 +22,12 @@ trait ResourcePolicy extends js.Object {
 object ResourcePolicy {
   @scala.inline
   def apply(
-    lastUpdatedTime: js.UndefOr[Timestamp] = js.undefined,
+    lastUpdatedTime: Int | Double = null,
     policyDocument: PolicyDocument = null,
     policyName: PolicyName = null
   ): ResourcePolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastUpdatedTime)) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime)
+    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
     if (policyDocument != null) __obj.updateDynamic("policyDocument")(policyDocument)
     if (policyName != null) __obj.updateDynamic("policyName")(policyName)
     __obj.asInstanceOf[ResourcePolicy]

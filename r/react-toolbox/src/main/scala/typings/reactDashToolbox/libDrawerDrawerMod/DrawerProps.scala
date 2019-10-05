@@ -3,7 +3,7 @@ package typings.reactDashToolbox.libDrawerDrawerMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.left
 import typings.reactDashToolbox.reactDashToolboxStrings.right
 import scala.scalajs.js

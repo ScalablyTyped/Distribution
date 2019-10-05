@@ -28,3 +28,9 @@ object Feature {
   }
 }
 
+@JSImport("caniuse-lite", "feature")
+@js.native
+object feature extends js.Object {
+  def apply(packedFeature: PackedFeature): Feature = js.native
+}
+

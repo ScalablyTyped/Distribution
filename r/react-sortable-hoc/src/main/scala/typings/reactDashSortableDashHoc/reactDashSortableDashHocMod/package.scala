@@ -8,7 +8,7 @@ package object reactDashSortableDashHocMod {
   import typings.react.NativeMouseEvent
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
   import typings.react.reactMod.MouseEvent
   import typings.react.reactMod.ReactElement
   import typings.react.reactMod.TouchEvent

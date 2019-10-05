@@ -16,7 +16,7 @@ package object prettierMod {
     /* options */ Options, 
     AST
   ]
-  type Doc = typings.prettier.prettierMod.docNs.buildersNs.Doc
+  type Doc = typings.prettier.prettierMod.doc.builders.Doc
   type Options = Partial[RequiredOptions]
   type SupportOptionValue = Double | Boolean | String
 }

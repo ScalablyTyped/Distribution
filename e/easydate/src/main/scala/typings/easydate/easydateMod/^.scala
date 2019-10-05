@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(pattern: String): String = js.native
-  def apply(pattern: String, config: DateConfig | String): String = js.native
+  def apply(pattern: String, config: String): String = js.native
+  def apply(pattern: String, config: DateConfig): String = js.native
 }
 

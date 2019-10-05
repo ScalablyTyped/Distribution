@@ -41,15 +41,15 @@ object VolumeConfiguration {
     MountPoint: String,
     NumberOfDisks: Integer,
     Size: Integer,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    RaidLevel: js.UndefOr[Integer] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
+    RaidLevel: Int | scala.Double = null,
     VolumeType: String = null
   ): VolumeConfiguration = {
     val __obj = js.Dynamic.literal(MountPoint = MountPoint, NumberOfDisks = NumberOfDisks, Size = Size)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
-    if (!js.isUndefined(RaidLevel)) __obj.updateDynamic("RaidLevel")(RaidLevel)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (RaidLevel != null) __obj.updateDynamic("RaidLevel")(RaidLevel.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType)
     __obj.asInstanceOf[VolumeConfiguration]
   }

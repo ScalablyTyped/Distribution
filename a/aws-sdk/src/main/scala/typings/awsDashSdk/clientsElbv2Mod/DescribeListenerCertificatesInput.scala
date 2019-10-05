@@ -21,10 +21,10 @@ trait DescribeListenerCertificatesInput extends js.Object {
 
 object DescribeListenerCertificatesInput {
   @scala.inline
-  def apply(ListenerArn: ListenerArn, Marker: Marker = null, PageSize: js.UndefOr[PageSize] = js.undefined): DescribeListenerCertificatesInput = {
+  def apply(ListenerArn: ListenerArn, Marker: Marker = null, PageSize: Int | Double = null): DescribeListenerCertificatesInput = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeListenerCertificatesInput]
   }
 }

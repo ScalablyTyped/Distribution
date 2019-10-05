@@ -2,11 +2,11 @@ package typings.atOracleOraclejet.ojtrainMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.Step
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojBeforeDeselect
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojBeforeSelect
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojDeselect
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojSelect
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.Step
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.ojDeselect
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.ojSelect
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -28,10 +28,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ojTrainEventMap extends baseComponentEventMap[ojTrainSettableProperties] {
-  var ojBeforeDeselect: typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojBeforeDeselect
-  var ojBeforeSelect: typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojBeforeSelect
-  var ojDeselect: typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojDeselect
-  var ojSelect: typings.atOracleOraclejet.ojtrainMod.ojTrainNs.ojSelect
+  var ojBeforeDeselect: typings.atOracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect
+  var ojBeforeSelect: typings.atOracleOraclejet.ojtrainMod.ojTrain.ojBeforeSelect
+  var ojDeselect: typings.atOracleOraclejet.ojtrainMod.ojTrain.ojDeselect
+  var ojSelect: typings.atOracleOraclejet.ojtrainMod.ojTrain.ojSelect
   var selectedStepChanged: JetElementCustomEvent[String]
   var stepsChanged: JetElementCustomEvent[js.Array[Step]]
 }

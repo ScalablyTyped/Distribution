@@ -1,15 +1,15 @@
 package typings.atPulumiAws.cognitoUserPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolAdminCreateUserConfig
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolDeviceConfiguration
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolEmailConfiguration
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolLambdaConfig
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolPasswordPolicy
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolSchema
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolSmsConfiguration
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolUserPoolAddOns
-import typings.atPulumiAws.typesInputMod.cognitoNs.UserPoolVerificationMessageTemplate
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolAdminCreateUserConfig
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolDeviceConfiguration
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolEmailConfiguration
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolLambdaConfig
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolPasswordPolicy
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolSchema
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolSmsConfiguration
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolUserPoolAddOns
+import typings.atPulumiAws.typesInputMod.cognito.UserPoolVerificationMessageTemplate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

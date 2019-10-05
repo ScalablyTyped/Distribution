@@ -24,7 +24,7 @@ object LogConfig {
   def apply(
     cloudWatchLogsRoleArn: String,
     fieldLogLevel: FieldLogLevel,
-    excludeVerboseContent: js.UndefOr[Boolean] = js.undefined
+    excludeVerboseContent: js.UndefOr[scala.Boolean] = js.undefined
   ): LogConfig = {
     val __obj = js.Dynamic.literal(cloudWatchLogsRoleArn = cloudWatchLogsRoleArn, fieldLogLevel = fieldLogLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(excludeVerboseContent)) __obj.updateDynamic("excludeVerboseContent")(excludeVerboseContent)

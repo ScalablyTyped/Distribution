@@ -15,6 +15,7 @@ import typings.catalog.catalogMod.TableSpecimenProps
 import typings.catalog.catalogMod.TypeSpecimenProps
 import typings.catalog.catalogMod.VideoSpecimenProps
 import typings.react.reactMod.ComponentType
+import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,6 +47,8 @@ object catalogComponents extends catalogProps {
   @scala.inline
   def ImageSpecimen: ComponentType[SpecimenProps with ImageSpecimenProps] = js.constructorOf[typings.catalog.catalogMod.ImageSpecimen].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.catalog.catalogMod.SpecimenProps with typings.catalog.catalogMod.ImageSpecimenProps]]
+  @scala.inline
+  def Markdown: ComponentType[TemplateStringsArray] = typings.catalog.catalogMod.markdown.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.std.TemplateStringsArray]]
   @scala.inline
   def Page: ComponentType[js.Object] = js.constructorOf[typings.catalog.catalogMod.Page].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline

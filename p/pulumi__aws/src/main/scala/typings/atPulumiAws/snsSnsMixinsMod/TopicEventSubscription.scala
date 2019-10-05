@@ -1,7 +1,7 @@
 package typings.atPulumiAws.snsSnsMixinsMod
 
 import typings.atPulumiAws.lambdaMod.EventSubscription
-import typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic
+import typings.atPulumiAws.snsTopicMod.Topic
 import typings.atPulumiAws.snsTopicSubscriptionMod.TopicSubscription
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js

@@ -61,5 +61,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Scene")
 @js.native
 class Scene ()
-  extends typings.playcanvas.pcNs.Scene
+  extends typings.playcanvas.pc.Scene
 

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ZoneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.route53Ns.ZoneVpc
+import typings.atPulumiAws.typesOutputMod.route53.ZoneVpc
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

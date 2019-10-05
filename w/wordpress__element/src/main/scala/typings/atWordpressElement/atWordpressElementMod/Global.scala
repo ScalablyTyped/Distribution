@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object Global extends js.Object {
-  @JSName("React")
   @js.native
-  object ReactNs extends js.Object {
+  object React extends js.Object {
     val render: Renderer = js.native
     val unmountComponentAtNode: js.Function1[/* container */ Element, Boolean] = js.native
     /**
@@ -31,7 +30,7 @@ object Global extends js.Object {
       */
     def RawHTML(
       props: Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
-    ): typings.react.reactMod.Global.JSXNs.Element = js.native
+    ): typings.react.reactMod.Global.JSX.Element = js.native
     /**
       * Checks if the provided WP element is empty.
       *

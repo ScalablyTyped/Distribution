@@ -1,12 +1,12 @@
 package typings.atPulumiAws.sesReceiptRuleMod
 
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleAddHeaderAction
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleBounceAction
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleLambdaAction
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleS3Action
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleSnsAction
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleStopAction
-import typings.atPulumiAws.typesOutputMod.sesNs.ReceiptRuleWorkmailAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleAddHeaderAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleBounceAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleLambdaAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleS3Action
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleSnsAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleStopAction
+import typings.atPulumiAws.typesOutputMod.ses.ReceiptRuleWorkmailAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

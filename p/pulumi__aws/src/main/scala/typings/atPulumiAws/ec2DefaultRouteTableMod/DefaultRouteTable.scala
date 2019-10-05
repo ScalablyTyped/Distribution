@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2DefaultRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultRouteTableRoute
+import typings.atPulumiAws.typesOutputMod.ec2.DefaultRouteTableRoute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

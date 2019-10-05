@@ -1,8 +1,8 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.i18nNs.LanguageCode
-import typings.chromeDashApps.chromeNs.i18nNs.LanguageDetectionResult
-import typings.chromeDashApps.chromeNs.i18nNs.StringSubstitutions
+import typings.chromeDashApps.chrome.i18n.LanguageCode
+import typings.chromeDashApps.chrome.i18n.LanguageDetectionResult
+import typings.chromeDashApps.chrome.i18n.StringSubstitutions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

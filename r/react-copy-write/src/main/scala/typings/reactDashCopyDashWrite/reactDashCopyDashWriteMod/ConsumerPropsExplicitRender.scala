@@ -1,5 +1,7 @@
 package typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod
 
+import typings.react.reactMod.Global.JSX.Element
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +14,12 @@ trait ConsumerPropsExplicitRender[T]
 
 object ConsumerPropsExplicitRender {
   @scala.inline
-  def apply[T](render: RenderFn[T] = null, select: js.Array[SelectorFn[T]] = null): ConsumerPropsExplicitRender[T] = {
+  def apply[T](
+    render: /* repeated */ ReturnType[SelectorFn[T]] => Element | js.Array[Element] | Null = null,
+    select: js.Array[SelectorFn[T]] = null
+  ): ConsumerPropsExplicitRender[T] = {
     val __obj = js.Dynamic.literal()
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (select != null) __obj.updateDynamic("select")(select)
     __obj.asInstanceOf[ConsumerPropsExplicitRender[T]]
   }

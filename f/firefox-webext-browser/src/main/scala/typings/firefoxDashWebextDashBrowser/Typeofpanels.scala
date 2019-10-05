@@ -1,11 +1,11 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.inspectedWindowNs.Resource
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.panelsNs.ElementsPanel
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.panelsNs.ExtensionPanel
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.panelsNs.SourcesPanel
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.panelsNs._Create
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.ExtensionURL
+import typings.firefoxDashWebextDashBrowser.browser._manifest.ExtensionURL
+import typings.firefoxDashWebextDashBrowser.browser.devtools.inspectedWindow.Resource
+import typings.firefoxDashWebextDashBrowser.browser.devtools.panels.ElementsPanel
+import typings.firefoxDashWebextDashBrowser.browser.devtools.panels.ExtensionPanel
+import typings.firefoxDashWebextDashBrowser.browser.devtools.panels.SourcesPanel
+import typings.firefoxDashWebextDashBrowser.browser.devtools.panels._Create
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,6 @@ trait Typeofpanels extends js.Object {
   val sources: SourcesPanel = js.native
   /** The name of the current devtools theme. */
   val themeName: String = js.native
-  def create(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /* devtools.panels functions */
   /**
     * Creates an extension panel.
@@ -35,6 +34,7 @@ trait Typeofpanels extends js.Object {
     * @param pagePath Path of the panel's HTML page relative to the extension directory.
     */
   def create(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
+  def create(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /**
     * Requests DevTools to open a URL in a Developer Tools panel.
     * @param url The URL of the resource to open.

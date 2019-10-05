@@ -2,7 +2,7 @@ package typings.twit.twitMod
 
 import typings.node.Buffer
 import typings.twit.Anon_Text
-import typings.twit.twitMod.TwitterNs.ResultType
+import typings.twit.twitMod.Twitter.ResultType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

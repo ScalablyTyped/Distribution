@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebsceneInitialViewPropertiesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.websceneInitialViewPropertiesConstructor
+import typings.arcgisDashJsDashApi.__esri.websceneInitialViewPropertiesConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

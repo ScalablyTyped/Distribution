@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimationConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

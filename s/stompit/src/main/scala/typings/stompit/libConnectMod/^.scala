@@ -8,9 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("stompit/lib/connect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(optionsOrPath: ConnectOptions | String): typings.stompit.libClientMod.^ = js.native
+  def apply(optionsOrPath: String): typings.stompit.libClientMod.^ = js.native
   def apply(
-    optionsOrPath: ConnectOptions | String,
+    optionsOrPath: String,
+    connectionListener: js.Function2[/* err */ Error | Null, /* client */ typings.stompit.libClientMod.^, Unit]
+  ): typings.stompit.libClientMod.^ = js.native
+  def apply(optionsOrPath: ConnectOptions): typings.stompit.libClientMod.^ = js.native
+  def apply(
+    optionsOrPath: ConnectOptions,
     connectionListener: js.Function2[/* err */ Error | Null, /* client */ typings.stompit.libClientMod.^, Unit]
   ): typings.stompit.libClientMod.^ = js.native
   def apply(port: Double): typings.stompit.libClientMod.^ = js.native

@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because Already inherited
 - typings.bpmnDashModdle.bpmnDashModdleMod.CallableElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, ioSpecification, supportedInterfaceRef, ioBinding */ trait Process extends FlowElementsContainer {
   var artifacts: js.Array[Artifact]
   var auditing: Auditing

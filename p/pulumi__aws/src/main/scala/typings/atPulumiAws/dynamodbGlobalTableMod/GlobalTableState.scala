@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dynamodbGlobalTableMod
 
-import typings.atPulumiAws.typesInputMod.dynamodbNs.GlobalTableReplica
+import typings.atPulumiAws.typesInputMod.dynamodb.GlobalTableReplica
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

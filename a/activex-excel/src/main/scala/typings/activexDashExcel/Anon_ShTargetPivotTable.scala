@@ -1,8 +1,8 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.PivotTable
-import typings.activexDashExcel.ExcelNs.Range
-import typings.activexDashExcel.ExcelNs.Worksheet
+import typings.activexDashExcel.Excel.PivotTable
+import typings.activexDashExcel.Excel.Range
+import typings.activexDashExcel.Excel.Worksheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

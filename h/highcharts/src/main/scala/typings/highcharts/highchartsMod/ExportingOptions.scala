@@ -1,5 +1,6 @@
 package typings.highcharts.highchartsMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -196,7 +197,7 @@ object ExportingOptions {
     chartOptions: Options = null,
     csv: ExportingCsvOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    error: ExportingErrorCallbackFunction = null,
+    error: (/* options */ ExportingOptions, /* err */ Error) => Unit = null,
     fallbackToExportServer: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
     formAttributes: HTMLAttributes = null,
@@ -221,7 +222,7 @@ object ExportingOptions {
     if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions)
     if (csv != null) __obj.updateDynamic("csv")(csv)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
     if (!js.isUndefined(fallbackToExportServer)) __obj.updateDynamic("fallbackToExportServer")(fallbackToExportServer)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (formAttributes != null) __obj.updateDynamic("formAttributes")(formAttributes)

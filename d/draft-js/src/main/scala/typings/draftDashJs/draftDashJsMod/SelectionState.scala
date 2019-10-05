@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "SelectionState")
 @js.native
 class SelectionState ()
-  extends typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState {
+  extends typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState {
   /* CompleteClass */
   override def getAnchorKey(): String = js.native
   /* CompleteClass */
@@ -44,6 +44,6 @@ class SelectionState ()
 @JSImport("draft-js", "SelectionState")
 @js.native
 object SelectionState extends js.Object {
-  def createEmpty(key: String): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState = js.native
+  def createEmpty(key: String): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState = js.native
 }
 

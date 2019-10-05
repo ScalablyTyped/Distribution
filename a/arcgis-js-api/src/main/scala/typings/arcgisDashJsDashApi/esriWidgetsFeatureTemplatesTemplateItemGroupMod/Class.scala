@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureTemplatesTemplateItemGroupMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TemplateItemGroup
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TemplateItemGroupProperties
+import typings.arcgisDashJsDashApi.__esri.TemplateItemGroup
+import typings.arcgisDashJsDashApi.__esri.TemplateItemGroupProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

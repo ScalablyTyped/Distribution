@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "ValidationErrorsChangedEvent")
 @js.native
 class ValidationErrorsChangedEvent ()
-  extends typings.breeze.breezeNs.ValidationErrorsChangedEvent
+  extends typings.breeze.breeze.ValidationErrorsChangedEvent
 

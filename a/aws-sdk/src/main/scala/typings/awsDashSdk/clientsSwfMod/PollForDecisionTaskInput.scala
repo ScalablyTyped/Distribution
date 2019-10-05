@@ -37,13 +37,13 @@ object PollForDecisionTaskInput {
     domain: DomainName,
     taskList: TaskList,
     identity: Identity = null,
-    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
+    maximumPageSize: Int | Double = null,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
+    reverseOrder: js.UndefOr[Boolean] = js.undefined
   ): PollForDecisionTaskInput = {
     val __obj = js.Dynamic.literal(domain = domain, taskList = taskList)
     if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize)
+    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
     __obj.asInstanceOf[PollForDecisionTaskInput]

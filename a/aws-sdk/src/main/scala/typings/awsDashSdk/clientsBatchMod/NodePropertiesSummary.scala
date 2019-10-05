@@ -22,14 +22,14 @@ trait NodePropertiesSummary extends js.Object {
 object NodePropertiesSummary {
   @scala.inline
   def apply(
-    isMainNode: js.UndefOr[Boolean] = js.undefined,
-    nodeIndex: js.UndefOr[Integer] = js.undefined,
-    numNodes: js.UndefOr[Integer] = js.undefined
+    isMainNode: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeIndex: Int | Double = null,
+    numNodes: Int | Double = null
   ): NodePropertiesSummary = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isMainNode)) __obj.updateDynamic("isMainNode")(isMainNode)
-    if (!js.isUndefined(nodeIndex)) __obj.updateDynamic("nodeIndex")(nodeIndex)
-    if (!js.isUndefined(numNodes)) __obj.updateDynamic("numNodes")(numNodes)
+    if (nodeIndex != null) __obj.updateDynamic("nodeIndex")(nodeIndex.asInstanceOf[js.Any])
+    if (numNodes != null) __obj.updateDynamic("numNodes")(numNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePropertiesSummary]
   }
 }

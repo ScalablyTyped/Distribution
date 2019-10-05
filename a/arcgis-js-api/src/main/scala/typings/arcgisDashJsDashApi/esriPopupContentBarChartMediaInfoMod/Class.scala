@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriPopupContentBarChartMediaInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BarChartMediaInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BarChartMediaInfoProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ChartMediaInfoValue
+import typings.arcgisDashJsDashApi.__esri.BarChartMediaInfo
+import typings.arcgisDashJsDashApi.__esri.BarChartMediaInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ChartMediaInfoValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

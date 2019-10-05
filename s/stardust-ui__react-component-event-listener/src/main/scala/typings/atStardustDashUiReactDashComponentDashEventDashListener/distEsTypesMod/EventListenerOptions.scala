@@ -18,12 +18,12 @@ trait EventListenerOptions[T /* <: EventTypes */] extends js.Object {
 object EventListenerOptions {
   @scala.inline
   def apply[T /* <: EventTypes */](
-    listener: EventHandler[T],
+    listener: /* import warning: ImportType.apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any => Unit,
     targetRef: TargetRef,
     `type`: T,
     capture: js.UndefOr[Boolean] = js.undefined
   ): EventListenerOptions[T] = {
-    val __obj = js.Dynamic.literal(listener = listener, targetRef = targetRef)
+    val __obj = js.Dynamic.literal(listener = js.Any.fromFunction1(listener), targetRef = targetRef)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
     __obj.asInstanceOf[EventListenerOptions[T]]

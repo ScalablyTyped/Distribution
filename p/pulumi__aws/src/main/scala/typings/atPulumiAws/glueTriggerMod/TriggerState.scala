@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueTriggerMod
 
-import typings.atPulumiAws.typesInputMod.glueNs.TriggerAction
-import typings.atPulumiAws.typesInputMod.glueNs.TriggerPredicate
+import typings.atPulumiAws.typesInputMod.glue.TriggerAction
+import typings.atPulumiAws.typesInputMod.glue.TriggerPredicate
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

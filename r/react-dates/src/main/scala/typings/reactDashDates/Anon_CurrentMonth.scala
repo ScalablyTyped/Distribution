@@ -1,6 +1,6 @@
 package typings.reactDashDates
 
-import typings.reactDashDates.reactDashDatesMod.momentPropTypesNs.momentObj
+import typings.reactDashDates.reactDashDatesMod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

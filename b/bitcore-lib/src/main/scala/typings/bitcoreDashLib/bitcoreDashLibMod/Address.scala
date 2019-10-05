@@ -1,6 +1,6 @@
 package typings.bitcoreDashLib.bitcoreDashLibMod
 
-import typings.bitcoreDashLib.bitcoreDashLibMod.NetworksNs.Network
+import typings.bitcoreDashLib.bitcoreDashLibMod.Networks.Network
 import typings.node.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js

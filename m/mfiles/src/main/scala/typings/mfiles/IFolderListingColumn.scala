@@ -1,6 +1,6 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFFolderListingColumnFlags
+import typings.mfiles.MFiles.MFFolderListingColumnFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

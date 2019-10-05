@@ -40,14 +40,14 @@ object GetDifferencesInput {
   def apply(
     afterCommitSpecifier: CommitName,
     repositoryName: RepositoryName,
-    MaxResults: js.UndefOr[Limit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     afterPath: Path = null,
     beforeCommitSpecifier: CommitName = null,
     beforePath: Path = null
   ): GetDifferencesInput = {
     val __obj = js.Dynamic.literal(afterCommitSpecifier = afterCommitSpecifier, repositoryName = repositoryName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (afterPath != null) __obj.updateDynamic("afterPath")(afterPath)
     if (beforeCommitSpecifier != null) __obj.updateDynamic("beforeCommitSpecifier")(beforeCommitSpecifier)

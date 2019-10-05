@@ -21,15 +21,11 @@ trait ListLayersRequest extends js.Object {
 
 object ListLayersRequest {
   @scala.inline
-  def apply(
-    CompatibleRuntime: Runtime = null,
-    Marker: String = null,
-    MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
-  ): ListLayersRequest = {
+  def apply(CompatibleRuntime: Runtime = null, Marker: String = null, MaxItems: Int | Double = null): ListLayersRequest = {
     val __obj = js.Dynamic.literal()
     if (CompatibleRuntime != null) __obj.updateDynamic("CompatibleRuntime")(CompatibleRuntime.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLayersRequest]
   }
 }

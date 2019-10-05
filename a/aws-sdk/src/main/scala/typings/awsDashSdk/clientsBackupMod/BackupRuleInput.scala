@@ -40,18 +40,18 @@ object BackupRuleInput {
   def apply(
     RuleName: BackupRuleName,
     TargetBackupVaultName: BackupVaultName,
-    CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined,
+    CompletionWindowMinutes: Int | Double = null,
     Lifecycle: Lifecycle = null,
     RecoveryPointTags: Tags = null,
     ScheduleExpression: CronExpression = null,
-    StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
+    StartWindowMinutes: Int | Double = null
   ): BackupRuleInput = {
     val __obj = js.Dynamic.literal(RuleName = RuleName, TargetBackupVaultName = TargetBackupVaultName)
-    if (!js.isUndefined(CompletionWindowMinutes)) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes)
+    if (CompletionWindowMinutes != null) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle)
     if (RecoveryPointTags != null) __obj.updateDynamic("RecoveryPointTags")(RecoveryPointTags)
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression)
-    if (!js.isUndefined(StartWindowMinutes)) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes)
+    if (StartWindowMinutes != null) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupRuleInput]
   }
 }

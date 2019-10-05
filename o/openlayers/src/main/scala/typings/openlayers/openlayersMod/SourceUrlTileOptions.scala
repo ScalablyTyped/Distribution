@@ -1,8 +1,8 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.LogoOptions
-import typings.openlayers.openlayersMod.sourceNs.State
-import typings.openlayers.openlayersMod.tilegridNs.TileGrid
+import typings.openlayers.openlayersMod.olx.LogoOptions
+import typings.openlayers.openlayersMod.source.State
+import typings.openlayers.openlayersMod.tilegrid.TileGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

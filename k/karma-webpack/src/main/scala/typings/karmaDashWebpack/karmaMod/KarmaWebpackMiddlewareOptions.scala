@@ -1,9 +1,11 @@
 package typings.karmaDashWebpack.karmaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.webpackMod.OptionsNs.Stats
-import typings.webpack.webpackMod.OptionsNs.WatchOptions
+import typings.webpack.webpackMod.Options.Stats
+import typings.webpack.webpackMod.Options.WatchOptions
+import typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareMod.Options
 import typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareMod.Reporter
+import typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareMod.ReporterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,35 +33,35 @@ trait KarmaWebpackMiddlewareOptions extends js.Object {
 object KarmaWebpackMiddlewareOptions {
   @scala.inline
   def apply(
-    error: Logger = null,
+    error: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
     filename: String = null,
     headers: StringDictionary[String] = null,
     index: String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
-    log: Logger = null,
+    log: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
     noInfo: js.UndefOr[Boolean] = js.undefined,
     publicPath: String = null,
     quiet: js.UndefOr[Boolean] = js.undefined,
-    reporter: Reporter = null,
+    reporter: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit = null,
     serverSideRender: js.UndefOr[Boolean] = js.undefined,
     stats: Stats = null,
-    warn: Logger = null,
+    warn: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit = null,
     watchOptions: WatchOptions = null
   ): KarmaWebpackMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (index != null) __obj.updateDynamic("index")(index)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo)
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction2(reporter))
     if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender)
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction2(warn))
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
     __obj.asInstanceOf[KarmaWebpackMiddlewareOptions]
   }

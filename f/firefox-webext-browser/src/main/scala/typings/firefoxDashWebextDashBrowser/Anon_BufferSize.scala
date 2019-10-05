@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.geckoProfilerNs.ProfilerFeature
+import typings.firefoxDashWebextDashBrowser.browser.geckoProfiler.ProfilerFeature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

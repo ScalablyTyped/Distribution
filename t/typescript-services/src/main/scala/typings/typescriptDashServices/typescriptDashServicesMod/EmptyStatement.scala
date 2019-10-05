@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "EmptyStatement")
 @js.native
 class EmptyStatement ()
-  extends typings.typescriptDashServices.TypeScriptNs.EmptyStatement
+  extends typings.typescriptDashServices.TypeScript.EmptyStatement
 

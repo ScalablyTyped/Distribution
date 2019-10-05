@@ -1,11 +1,11 @@
 package typings.datejs
 
-import typings.datejs.sugarpakNs.IAddOrientation
-import typings.datejs.sugarpakNs.IDateLiteral
-import typings.datejs.sugarpakNs.IDatePartComparer
-import typings.datejs.sugarpakNs.IOrientation
-import typings.datejs.sugarpakNs.IPredicate
-import typings.datejs.sugarpakNs.ITimeLiteral
+import typings.datejs.sugarpak.IAddOrientation
+import typings.datejs.sugarpak.IDateLiteral
+import typings.datejs.sugarpak.IDatePartComparer
+import typings.datejs.sugarpak.IOrientation
+import typings.datejs.sugarpak.IPredicate
+import typings.datejs.sugarpak.ITimeLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

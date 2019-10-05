@@ -2,7 +2,7 @@ package typings.browserfs.distNodeBackendDropboxMod
 
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
-import typings.dropboxjs.DropboxNs.Client
+import typings.dropboxjs.Dropbox.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

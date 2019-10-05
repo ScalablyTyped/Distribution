@@ -1,7 +1,7 @@
 package typings.electronDashWindowDashState.electronDashWindowDashStateMod
 
-import typings.electronDashWindowDashState.electronDashWindowDashStateMod.ElectronWindowStateNs.WindowState
-import typings.electronDashWindowDashState.electronDashWindowDashStateMod.ElectronWindowStateNs.WindowStateKeeperOptions
+import typings.electronDashWindowDashState.electronDashWindowDashStateMod.ElectronWindowState.WindowState
+import typings.electronDashWindowDashState.electronDashWindowDashStateMod.ElectronWindowState.WindowStateKeeperOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,3 +12,13 @@ class BarbellWeight protected () extends js.Object {
   def getResults(): js.Any = js.native
 }
 
+@JSImport("barbellweights", "BarbellWeight")
+@js.native
+object BarbellWeight extends js.Object {
+  @js.native
+  object BarbellWeight extends js.Object {
+    def getResults(): Unit = js.native
+  }
+  
+}
+

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ebsGetSnapshotIdsMod
 
-import typings.atPulumiAws.typesInputMod.ebsNs.GetSnapshotIdsFilter
+import typings.atPulumiAws.typesInputMod.ebs.GetSnapshotIdsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

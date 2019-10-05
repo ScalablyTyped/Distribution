@@ -1,7 +1,7 @@
 package typings.sarif.sarifMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sarif.sarifMod.ArtifactNs.roles
+import typings.sarif.sarifMod.Artifact.roles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,45 +56,42 @@ trait Artifact extends js.Object {
   /**
     * The role or roles played by the artifact in the analysis.
     */
-  var roles: js.UndefOr[js.Array[typings.sarif.sarifMod.ArtifactNs.roles]] = js.undefined
+  var roles: js.UndefOr[js.Array[roles]] = js.undefined
   /**
     * Specifies the source language for any artifact object that refers to a text file that contains source code.
     */
   var sourceLanguage: js.UndefOr[String] = js.undefined
 }
 
-object Artifact {
-  @scala.inline
-  def apply(
-    contents: ArtifactContent = null,
-    description: Message = null,
-    encoding: String = null,
-    hashes: StringDictionary[String] = null,
-    lastModifiedTimeUtc: String = null,
-    length: Int | Double = null,
-    location: ArtifactLocation = null,
-    mimeType: String = null,
-    offset: Int | Double = null,
-    parentIndex: Int | Double = null,
-    properties: PropertyBag = null,
-    roles: js.Array[roles] = null,
-    sourceLanguage: String = null
-  ): Artifact = {
-    val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (hashes != null) __obj.updateDynamic("hashes")(hashes)
-    if (lastModifiedTimeUtc != null) __obj.updateDynamic("lastModifiedTimeUtc")(lastModifiedTimeUtc)
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (sourceLanguage != null) __obj.updateDynamic("sourceLanguage")(sourceLanguage)
-    __obj.asInstanceOf[Artifact]
-  }
+@JSImport("sarif", "Artifact")
+@js.native
+object Artifact extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.analysisTarget
+    - typings.sarif.sarifStrings.attachment
+    - typings.sarif.sarifStrings.responseFile
+    - typings.sarif.sarifStrings.resultFile
+    - typings.sarif.sarifStrings.standardStream
+    - typings.sarif.sarifStrings.tracedFile
+    - typings.sarif.sarifStrings.unmodified
+    - typings.sarif.sarifStrings.modified
+    - typings.sarif.sarifStrings.added
+    - typings.sarif.sarifStrings.deleted
+    - typings.sarif.sarifStrings.renamed
+    - typings.sarif.sarifStrings.uncontrolled
+    - typings.sarif.sarifStrings.driver
+    - typings.sarif.sarifStrings.extension
+    - typings.sarif.sarifStrings.translation
+    - typings.sarif.sarifStrings.taxonomy
+    - typings.sarif.sarifStrings.policy
+    - typings.sarif.sarifStrings.referencedOnCommandLine
+    - typings.sarif.sarifStrings.memoryContents
+    - typings.sarif.sarifStrings.directory
+    - typings.sarif.sarifStrings.userSpecifiedConfiguration
+    - typings.sarif.sarifStrings.toolSpecifiedConfiguration
+    - typings.sarif.sarifStrings.debugOutputFile
+  */
+  trait roles extends js.Object
+  
 }
 

@@ -1,6 +1,6 @@
 package typings.phonegapDashPluginDashBarcodescanner
 
-import typings.phonegapDashPluginDashBarcodescanner.phonegapBarcodeNs.BarcodeScanner
+import typings.phonegapDashPluginDashBarcodescanner.phonegapBarcode.BarcodeScanner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

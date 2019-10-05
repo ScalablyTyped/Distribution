@@ -1,6 +1,6 @@
 package typings.jsDashClipper
 
-import typings.jsDashClipper.ClipperLibNs.Polygons
+import typings.jsDashClipper.ClipperLib.Polygons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

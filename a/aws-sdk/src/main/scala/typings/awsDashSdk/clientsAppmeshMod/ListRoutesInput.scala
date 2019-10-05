@@ -38,11 +38,11 @@ object ListRoutesInput {
   def apply(
     meshName: ResourceName,
     virtualRouterName: ResourceName,
-    limit: js.UndefOr[ListRoutesLimit] = js.undefined,
+    limit: Int | Double = null,
     nextToken: String = null
   ): ListRoutesInput = {
     val __obj = js.Dynamic.literal(meshName = meshName, virtualRouterName = virtualRouterName)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListRoutesInput]
   }

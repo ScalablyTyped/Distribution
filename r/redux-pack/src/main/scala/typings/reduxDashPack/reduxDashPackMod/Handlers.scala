@@ -15,18 +15,18 @@ trait Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] e
 object Handlers {
   @scala.inline
   def apply[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
-    always: handlerReducer[S, typings.redux.reduxMod.Action[_]] = null,
-    failure: handlerReducer[S, PackActionPayload[TErrorPayload, TMetaPayload]] = null,
-    finish: handlerReducer[S, typings.redux.reduxMod.Action[_]] = null,
-    start: handlerReducer[S, PackActionPayload[TStartPayload, TMetaPayload]] = null,
-    success: handlerReducer[S, PackActionPayload[TSuccessPayload, TMetaPayload]] = null
+    always: (S, typings.redux.reduxMod.Action[_]) => S = null,
+    failure: (S, PackActionPayload[TErrorPayload, TMetaPayload]) => S = null,
+    finish: (S, typings.redux.reduxMod.Action[_]) => S = null,
+    start: (S, PackActionPayload[TStartPayload, TMetaPayload]) => S = null,
+    success: (S, PackActionPayload[TSuccessPayload, TMetaPayload]) => S = null
   ): Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
     val __obj = js.Dynamic.literal()
-    if (always != null) __obj.updateDynamic("always")(always)
-    if (failure != null) __obj.updateDynamic("failure")(failure)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (always != null) __obj.updateDynamic("always")(js.Any.fromFunction2(always))
+    if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction2(failure))
+    if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction2(finish))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction2(success))
     __obj.asInstanceOf[Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
   }
 }

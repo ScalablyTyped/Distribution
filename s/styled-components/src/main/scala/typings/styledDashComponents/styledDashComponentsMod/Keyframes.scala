@@ -1,5 +1,6 @@
 package typings.styledDashComponents.styledDashComponentsMod
 
+import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,5 +16,12 @@ object Keyframes {
   
     __obj.asInstanceOf[Keyframes]
   }
+}
+
+@JSImport("styled-components", "keyframes")
+@js.native
+object keyframes extends js.Object {
+  def apply(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes = js.native
+  def apply(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes = js.native
 }
 

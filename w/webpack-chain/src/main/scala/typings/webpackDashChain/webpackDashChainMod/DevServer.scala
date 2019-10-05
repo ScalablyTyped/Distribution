@@ -2,7 +2,7 @@ package typings.webpackDashChain.webpackDashChainMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
-import typings.webpack.webpackMod.OptionsNs.Stats
+import typings.webpack.webpackMod.Options.Stats
 import typings.webpackDashChain.Anon_Errors
 import typings.webpackDashChain.webpackDashChainStrings.error
 import typings.webpackDashChain.webpackDashChainStrings.info

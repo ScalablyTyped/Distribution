@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -334,12 +335,5 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
 
 @JSGlobal("Int16Array")
 @js.native
-class Int16ArrayCls () extends Int16Array {
-  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
-  def this(arrayOrArrayBuffer: ArrayLike[Double]) = this()
-  def this(elements: Iterable[Double]) = this()
-  def this(length: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
-}
+object Int16Array extends TopLevel[Int16ArrayConstructor]
 

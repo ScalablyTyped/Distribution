@@ -13,6 +13,7 @@ import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler0
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler0
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceOptions
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer
 import scala.scalajs.js
@@ -215,16 +216,8 @@ trait ProtocolConnection extends js.Object {
   /**
     * Enables tracing mode for the connection.
     */
-  def trace(value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace, tracer: Tracer): Unit = js.native
-  def trace(
-    value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace,
-    tracer: Tracer,
-    sendNotification: Boolean
-  ): Unit = js.native
-  def trace(
-    value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace,
-    tracer: Tracer,
-    traceOptions: TraceOptions
-  ): Unit = js.native
+  def trace(value: Trace, tracer: Tracer): Unit = js.native
+  def trace(value: Trace, tracer: Tracer, sendNotification: Boolean): Unit = js.native
+  def trace(value: Trace, tracer: Tracer, traceOptions: TraceOptions): Unit = js.native
 }
 

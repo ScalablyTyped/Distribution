@@ -31,15 +31,15 @@ object DescribeClientVpnRoutesRequest {
   @scala.inline
   def apply(
     ClientVpnEndpointId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeClientVpnRoutesMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null
   ): DescribeClientVpnRoutesRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeClientVpnRoutesRequest]
   }

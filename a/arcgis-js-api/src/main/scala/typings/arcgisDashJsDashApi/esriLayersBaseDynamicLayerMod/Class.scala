@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersBaseDynamicLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseDynamicLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseDynamicLayerProperties
+import typings.arcgisDashJsDashApi.__esri.BaseDynamicLayer
+import typings.arcgisDashJsDashApi.__esri.BaseDynamicLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

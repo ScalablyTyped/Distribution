@@ -1,10 +1,10 @@
 package typings.backlogDashJs
 
-import typings.backlogDashJs.backlogDashJsMod.ErrorNs.BacklogErrorNameType
-import typings.backlogDashJs.backlogDashJsMod.OptionNs.IssueNs.SortKey
-import typings.backlogDashJs.backlogDashJsMod.OptionNs.Order
-import typings.backlogDashJs.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
-import typings.backlogDashJs.backlogDashJsMod.OptionNs.ProjectNs.TextFormattingRule
+import typings.backlogDashJs.backlogDashJsMod.Error.BacklogErrorNameType
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.SortKey
+import typings.backlogDashJs.backlogDashJsMod.Option.Order
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.IssueTypeColor
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.TextFormattingRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

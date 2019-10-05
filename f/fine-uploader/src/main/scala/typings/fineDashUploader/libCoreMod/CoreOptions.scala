@@ -141,7 +141,7 @@ object CoreOptions {
     disableCancelForFormUploads: js.UndefOr[Boolean] = js.undefined,
     extraButtons: js.Array[ExtraButtonsOptions] = null,
     form: FormOptions = null,
-    formatFileName: FormatFileNameFuncton = null,
+    formatFileName: /* fileOrBlobName */ String => String = null,
     maxConnections: Int | Double = null,
     messages: Messages = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
@@ -168,7 +168,7 @@ object CoreOptions {
     if (!js.isUndefined(disableCancelForFormUploads)) __obj.updateDynamic("disableCancelForFormUploads")(disableCancelForFormUploads)
     if (extraButtons != null) __obj.updateDynamic("extraButtons")(extraButtons)
     if (form != null) __obj.updateDynamic("form")(form)
-    if (formatFileName != null) __obj.updateDynamic("formatFileName")(formatFileName)
+    if (formatFileName != null) __obj.updateDynamic("formatFileName")(js.Any.fromFunction1(formatFileName))
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

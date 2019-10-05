@@ -1,12 +1,12 @@
 package typings.activexDashScripting
 
-import typings.activexDashScripting.ScriptingNs.CompareMethod
-import typings.activexDashScripting.ScriptingNs.DriveTypeConst
-import typings.activexDashScripting.ScriptingNs.FileAttribute
-import typings.activexDashScripting.ScriptingNs.IOMode
-import typings.activexDashScripting.ScriptingNs.SpecialFolderConst
-import typings.activexDashScripting.ScriptingNs.StandardStreamTypes
-import typings.activexDashScripting.ScriptingNs.Tristate
+import typings.activexDashScripting.Scripting.CompareMethod
+import typings.activexDashScripting.Scripting.DriveTypeConst
+import typings.activexDashScripting.Scripting.FileAttribute
+import typings.activexDashScripting.Scripting.IOMode
+import typings.activexDashScripting.Scripting.SpecialFolderConst
+import typings.activexDashScripting.Scripting.StandardStreamTypes
+import typings.activexDashScripting.Scripting.Tristate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

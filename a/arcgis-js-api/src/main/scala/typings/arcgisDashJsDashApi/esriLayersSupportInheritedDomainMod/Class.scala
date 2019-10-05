@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportInheritedDomainMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InheritedDomain
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InheritedDomainProperties
+import typings.arcgisDashJsDashApi.__esri.InheritedDomain
+import typings.arcgisDashJsDashApi.__esri.InheritedDomainProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

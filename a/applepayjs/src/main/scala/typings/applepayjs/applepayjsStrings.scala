@@ -1,13 +1,13 @@
 package typings.applepayjs
 
-import typings.applepayjs.ApplePayJSNs.ApplePayContactField
-import typings.applepayjs.ApplePayJSNs.ApplePayErrorCode
-import typings.applepayjs.ApplePayJSNs.ApplePayErrorContactField
-import typings.applepayjs.ApplePayJSNs.ApplePayLineItemType
-import typings.applepayjs.ApplePayJSNs.ApplePayMerchantCapability
-import typings.applepayjs.ApplePayJSNs.ApplePayPaymentMethodType
-import typings.applepayjs.ApplePayJSNs.ApplePayPaymentPassActivationState
-import typings.applepayjs.ApplePayJSNs.ApplePayShippingType
+import typings.applepayjs.ApplePayJS.ApplePayContactField
+import typings.applepayjs.ApplePayJS.ApplePayErrorCode
+import typings.applepayjs.ApplePayJS.ApplePayErrorContactField
+import typings.applepayjs.ApplePayJS.ApplePayLineItemType
+import typings.applepayjs.ApplePayJS.ApplePayMerchantCapability
+import typings.applepayjs.ApplePayJS.ApplePayPaymentMethodType
+import typings.applepayjs.ApplePayJS.ApplePayPaymentPassActivationState
+import typings.applepayjs.ApplePayJS.ApplePayShippingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

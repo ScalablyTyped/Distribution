@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.RadialGauge
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.RadialGaugeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.RadialGauge
+import typings.kendoDashUi.kendo.dataviz.ui.RadialGaugeOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

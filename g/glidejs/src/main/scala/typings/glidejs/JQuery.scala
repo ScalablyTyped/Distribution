@@ -1,6 +1,6 @@
 package typings.glidejs
 
-import typings.glidejs.JQueryGlideNs.IGlideOptions
+import typings.glidejs.JQueryGlide.IGlideOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

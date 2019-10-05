@@ -13,9 +13,9 @@ trait Anon_Label extends js.Object {
 
 object Anon_Label {
   @scala.inline
-  def apply(label: ReactNode, style: CSSProperties): Anon_Label = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], style = style)
-  
+  def apply(style: CSSProperties, label: ReactNode = null): Anon_Label = {
+    val __obj = js.Dynamic.literal(style = style)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

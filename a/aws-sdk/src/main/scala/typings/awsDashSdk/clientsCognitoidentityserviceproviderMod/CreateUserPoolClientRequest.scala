@@ -14,7 +14,7 @@ trait CreateUserPoolClientRequest extends js.Object {
     */
   var AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined
   /**
-    * A list of allowed OAuth scopes. Currently supported values are "phone", "email", "openid", and "Cognito".
+    * A list of allowed OAuth scopes. Currently supported values are "phone", "email", "openid", and "Cognito". In addition to these values, custom scopes created in Resource Servers are also supported.
     */
   var AllowedOAuthScopes: js.UndefOr[ScopeListType] = js.undefined
   /**
@@ -73,16 +73,16 @@ object CreateUserPoolClientRequest {
     ClientName: ClientNameType,
     UserPoolId: UserPoolIdType,
     AllowedOAuthFlows: OAuthFlowsType = null,
-    AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined,
+    AllowedOAuthFlowsUserPoolClient: js.UndefOr[Boolean] = js.undefined,
     AllowedOAuthScopes: ScopeListType = null,
     AnalyticsConfiguration: AnalyticsConfigurationType = null,
     CallbackURLs: CallbackURLsListType = null,
     DefaultRedirectURI: RedirectUrlType = null,
     ExplicitAuthFlows: ExplicitAuthFlowsListType = null,
-    GenerateSecret: js.UndefOr[GenerateSecret] = js.undefined,
+    GenerateSecret: js.UndefOr[Boolean] = js.undefined,
     LogoutURLs: LogoutURLsListType = null,
     ReadAttributes: ClientPermissionListType = null,
-    RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined,
+    RefreshTokenValidity: Int | Double = null,
     SupportedIdentityProviders: SupportedIdentityProvidersListType = null,
     WriteAttributes: ClientPermissionListType = null
   ): CreateUserPoolClientRequest = {
@@ -97,7 +97,7 @@ object CreateUserPoolClientRequest {
     if (!js.isUndefined(GenerateSecret)) __obj.updateDynamic("GenerateSecret")(GenerateSecret)
     if (LogoutURLs != null) __obj.updateDynamic("LogoutURLs")(LogoutURLs)
     if (ReadAttributes != null) __obj.updateDynamic("ReadAttributes")(ReadAttributes)
-    if (!js.isUndefined(RefreshTokenValidity)) __obj.updateDynamic("RefreshTokenValidity")(RefreshTokenValidity)
+    if (RefreshTokenValidity != null) __obj.updateDynamic("RefreshTokenValidity")(RefreshTokenValidity.asInstanceOf[js.Any])
     if (SupportedIdentityProviders != null) __obj.updateDynamic("SupportedIdentityProviders")(SupportedIdentityProviders)
     if (WriteAttributes != null) __obj.updateDynamic("WriteAttributes")(WriteAttributes)
     __obj.asInstanceOf[CreateUserPoolClientRequest]

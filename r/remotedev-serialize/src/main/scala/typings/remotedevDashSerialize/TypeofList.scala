@@ -1,11 +1,15 @@
 package typings.remotedevDashSerialize
 
 import typings.immutable.immutableMod.List
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofList extends js.Object {
+  def apply(): List[_] = js.native
+  def apply[T](collection: Iterable[T]): List[T] = js.native
   /**
     * True if the provided value is a List
     *
@@ -16,7 +20,7 @@ trait TypeofList extends js.Object {
     * List.isList(List()); // true
     * ```
     */
-  def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean
+  def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean = js.native
   /**
     * Creates a new List containing `values`.
     *
@@ -36,18 +40,6 @@ trait TypeofList extends js.Object {
     * // List [ { x: 1 }, 2, [ 3 ], 4 ]
     * ```
     */
-  def of[T](values: T*): List[T]
-}
-
-object TypeofList {
-  @scala.inline
-  def apply(
-    isList: js.Any => /* is immutable.immutable.List<any> */ Boolean,
-    of: /* repeated */ js.Any => List[js.Any]
-  ): TypeofList = {
-    val __obj = js.Dynamic.literal(isList = js.Any.fromFunction1(isList), of = js.Any.fromFunction1(of))
-  
-    __obj.asInstanceOf[TypeofList]
-  }
+  def of[T](values: T*): List[T] = js.native
 }
 

@@ -43,13 +43,13 @@ object ModifyDBInstanceMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     CACertificateIdentifier: String = null,
     DBInstanceClass: String = null,
     NewDBInstanceIdentifier: String = null,
     PreferredMaintenanceWindow: String = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
+    PromotionTier: Int | Double = null
   ): ModifyDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
@@ -58,7 +58,7 @@ object ModifyDBInstanceMessage {
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
     if (NewDBInstanceIdentifier != null) __obj.updateDynamic("NewDBInstanceIdentifier")(NewDBInstanceIdentifier)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier)
+    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBInstanceMessage]
   }
 }

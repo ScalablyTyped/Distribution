@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryMultipointMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MultipointConstructor
+import typings.arcgisDashJsDashApi.__esri.MultipointConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

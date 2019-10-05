@@ -12,9 +12,9 @@ trait Anon_Children extends js.Object {
 
 object Anon_Children {
   @scala.inline
-  def apply(children: ReactNode, key: Double): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], key = key)
-  
+  def apply(key: Double, children: ReactNode = null): Anon_Children = {
+    val __obj = js.Dynamic.literal(key = key)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

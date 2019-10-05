@@ -16,14 +16,14 @@ object IHookerOptions {
   def apply(
     once: js.UndefOr[Boolean] = js.undefined,
     passName: js.UndefOr[Boolean] = js.undefined,
-    post: HookerPostHookFunction = null,
-    pre: HookerPreHookFunction = null
+    post: (/* result */ js.Any, /* repeated */ js.Any) => IHookerPostHookResult | Unit = null,
+    pre: /* repeated */ js.Any => IHookerPreHookResult | Unit = null
   ): IHookerOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
     if (!js.isUndefined(passName)) __obj.updateDynamic("passName")(passName)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2(post))
+    if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction1(pre))
     __obj.asInstanceOf[IHookerOptions]
   }
 }

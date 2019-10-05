@@ -16,7 +16,7 @@ object RenderProps {
   @scala.inline
   def apply[T](
     didUnmount: Boolean,
-    doFetch: DoFetch[T],
+    doFetch: /* options */ js.UndefOr[DoFetchOptions] => js.Promise[FetchResponse[T]],
     failed: Boolean,
     fetching: Boolean,
     init: js.Any,
@@ -27,7 +27,7 @@ object RenderProps {
     error: Error = null,
     response: Response = null
   ): RenderProps[T] = {
-    val __obj = js.Dynamic.literal(didUnmount = didUnmount, doFetch = doFetch, failed = failed, fetching = fetching, init = init, requestKey = requestKey, requestName = requestName, url = url)
+    val __obj = js.Dynamic.literal(didUnmount = didUnmount, doFetch = js.Any.fromFunction1(doFetch), failed = failed, fetching = fetching, init = init, requestKey = requestKey, requestName = requestName, url = url)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     if (response != null) __obj.updateDynamic("response")(response)

@@ -102,7 +102,7 @@ trait DescribeBrokerResponse extends js.Object {
 object DescribeBrokerResponse {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     BrokerArn: __string = null,
     BrokerId: __string = null,
     BrokerInstances: __listOfBrokerInstance = null,
@@ -120,7 +120,7 @@ object DescribeBrokerResponse {
     PendingEngineVersion: __string = null,
     PendingHostInstanceType: __string = null,
     PendingSecurityGroups: __listOf__string = null,
-    PubliclyAccessible: js.UndefOr[__boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
     SecurityGroups: __listOf__string = null,
     SubnetIds: __listOf__string = null,
     Tags: __mapOf__string = null,

@@ -39,7 +39,7 @@ object ListPrincipalsRequest {
   @scala.inline
   def apply(
     resourceOwner: ResourceOwner,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: String = null,
     principals: PrincipalArnOrIdList = null,
     resourceArn: String = null,
@@ -47,7 +47,7 @@ object ListPrincipalsRequest {
     resourceType: String = null
   ): ListPrincipalsRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (principals != null) __obj.updateDynamic("principals")(principals)
     if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn)

@@ -1,6 +1,6 @@
 package typings.gulpDashSass.gulpDashSassMod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

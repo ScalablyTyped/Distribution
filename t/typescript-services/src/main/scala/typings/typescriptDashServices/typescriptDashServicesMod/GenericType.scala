@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "GenericType")
 @js.native
 class GenericType protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.GenericType {
+  extends typings.typescriptDashServices.TypeScript.GenericType {
   def this(
-    name: typings.typescriptDashServices.TypeScriptNs.AST,
-    typeArgumentList: typings.typescriptDashServices.TypeScriptNs.TypeArgumentList
+    name: typings.typescriptDashServices.TypeScript.AST,
+    typeArgumentList: typings.typescriptDashServices.TypeScript.TypeArgumentList
   ) = this()
 }
 

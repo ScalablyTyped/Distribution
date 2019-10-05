@@ -1,7 +1,7 @@
 package typings.inquirer.libUiBaseUIMod
 
 import typings.inquirer.inquirerMod.StreamOptions
-import typings.inquirer.inquirerMod.promptsNs.PromptBase
+import typings.inquirer.inquirerMod.prompts.PromptBase
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`

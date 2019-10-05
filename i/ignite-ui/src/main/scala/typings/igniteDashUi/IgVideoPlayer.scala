@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -225,84 +226,84 @@ object IgVideoPlayer {
   /* optionName */ StringDictionary[js.Any] = null,
     autohide: js.UndefOr[Boolean] = js.undefined,
     autoplay: js.UndefOr[Boolean] = js.undefined,
-    bannerClick: BannerClickEvent = null,
-    bannerHidden: BannerHiddenEvent = null,
-    bannerVisible: BannerVisibleEvent = null,
+    bannerClick: (/* event */ Event, /* ui */ BannerClickEventUIParam) => Unit = null,
+    bannerHidden: (/* event */ Event, /* ui */ BannerHiddenEventUIParam) => Unit = null,
+    bannerVisible: (/* event */ Event, /* ui */ BannerVisibleEventUIParam) => Unit = null,
     banners: js.Array[IgVideoPlayerBanner] = null,
-    bookmarkClick: BookmarkClickEvent = null,
-    bookmarkHit: BookmarkHitEvent = null,
+    bookmarkClick: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit = null,
+    bookmarkHit: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit = null,
     bookmarks: js.Array[IgVideoPlayerBookmark] = null,
     browserControls: js.UndefOr[Boolean] = js.undefined,
-    browserNotSupported: BrowserNotSupportedEvent = null,
-    buffering: BufferingEvent = null,
+    browserNotSupported: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit = null,
+    buffering: (/* event */ Event, /* ui */ BufferingEventUIParam) => Unit = null,
     centerButtonHideDelay: Int | Double = null,
     commercials: IgVideoPlayerCommercials = null,
-    ended: EndedEvent = null,
-    enterFullScreen: EnterFullScreenEvent = null,
-    exitFullScreen: ExitFullScreenEvent = null,
+    ended: (/* event */ Event, /* ui */ EndedEventUIParam) => Unit = null,
+    enterFullScreen: (/* event */ Event, /* ui */ EnterFullScreenEventUIParam) => Unit = null,
+    exitFullScreen: (/* event */ Event, /* ui */ ExitFullScreenEventUIParam) => Unit = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     height: String | Double = null,
     language: String = null,
     locale: IgVideoPlayerLocale = null,
     loop: js.UndefOr[Boolean] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined,
-    paused: PausedEvent = null,
-    playing: PlayingEvent = null,
+    paused: (/* event */ Event, /* ui */ PausedEventUIParam) => Unit = null,
+    playing: (/* event */ Event, /* ui */ PlayingEventUIParam) => Unit = null,
     posterUrl: String = null,
     preload: js.UndefOr[Boolean] = js.undefined,
-    progress: ProgressEvent = null,
+    progress: (/* event */ Event, /* ui */ ProgressEventUIParam) => Unit = null,
     progressLabelFormat: String = null,
     regional: String | js.Object = null,
-    relatedVideoClick: RelatedVideoClickEvent = null,
+    relatedVideoClick: (/* event */ Event, /* ui */ RelatedVideoClickEventUIParam) => Unit = null,
     relatedVideos: js.Array[IgVideoPlayerRelatedVideo] = null,
     showSeekTime: js.UndefOr[Boolean] = js.undefined,
     sources: js.Array[_] = null,
     title: String = null,
     volume: Int | Double = null,
     volumeAutohideDelay: Int | Double = null,
-    waiting: WaitingEvent = null,
+    waiting: (/* event */ Event, /* ui */ WaitingEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgVideoPlayer = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (bannerClick != null) __obj.updateDynamic("bannerClick")(bannerClick)
-    if (bannerHidden != null) __obj.updateDynamic("bannerHidden")(bannerHidden)
-    if (bannerVisible != null) __obj.updateDynamic("bannerVisible")(bannerVisible)
+    if (bannerClick != null) __obj.updateDynamic("bannerClick")(js.Any.fromFunction2(bannerClick))
+    if (bannerHidden != null) __obj.updateDynamic("bannerHidden")(js.Any.fromFunction2(bannerHidden))
+    if (bannerVisible != null) __obj.updateDynamic("bannerVisible")(js.Any.fromFunction2(bannerVisible))
     if (banners != null) __obj.updateDynamic("banners")(banners)
-    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(bookmarkClick)
-    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(bookmarkHit)
+    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(js.Any.fromFunction2(bookmarkClick))
+    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(js.Any.fromFunction2(bookmarkHit))
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
     if (!js.isUndefined(browserControls)) __obj.updateDynamic("browserControls")(browserControls)
-    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
-    if (buffering != null) __obj.updateDynamic("buffering")(buffering)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(js.Any.fromFunction2(browserNotSupported))
+    if (buffering != null) __obj.updateDynamic("buffering")(js.Any.fromFunction2(buffering))
     if (centerButtonHideDelay != null) __obj.updateDynamic("centerButtonHideDelay")(centerButtonHideDelay.asInstanceOf[js.Any])
     if (commercials != null) __obj.updateDynamic("commercials")(commercials)
-    if (ended != null) __obj.updateDynamic("ended")(ended)
-    if (enterFullScreen != null) __obj.updateDynamic("enterFullScreen")(enterFullScreen)
-    if (exitFullScreen != null) __obj.updateDynamic("exitFullScreen")(exitFullScreen)
+    if (ended != null) __obj.updateDynamic("ended")(js.Any.fromFunction2(ended))
+    if (enterFullScreen != null) __obj.updateDynamic("enterFullScreen")(js.Any.fromFunction2(enterFullScreen))
+    if (exitFullScreen != null) __obj.updateDynamic("exitFullScreen")(js.Any.fromFunction2(exitFullScreen))
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
-    if (paused != null) __obj.updateDynamic("paused")(paused)
-    if (playing != null) __obj.updateDynamic("playing")(playing)
+    if (paused != null) __obj.updateDynamic("paused")(js.Any.fromFunction2(paused))
+    if (playing != null) __obj.updateDynamic("playing")(js.Any.fromFunction2(playing))
     if (posterUrl != null) __obj.updateDynamic("posterUrl")(posterUrl)
     if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction2(progress))
     if (progressLabelFormat != null) __obj.updateDynamic("progressLabelFormat")(progressLabelFormat)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (relatedVideoClick != null) __obj.updateDynamic("relatedVideoClick")(relatedVideoClick)
+    if (relatedVideoClick != null) __obj.updateDynamic("relatedVideoClick")(js.Any.fromFunction2(relatedVideoClick))
     if (relatedVideos != null) __obj.updateDynamic("relatedVideos")(relatedVideos)
     if (!js.isUndefined(showSeekTime)) __obj.updateDynamic("showSeekTime")(showSeekTime)
     if (sources != null) __obj.updateDynamic("sources")(sources)
     if (title != null) __obj.updateDynamic("title")(title)
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     if (volumeAutohideDelay != null) __obj.updateDynamic("volumeAutohideDelay")(volumeAutohideDelay.asInstanceOf[js.Any])
-    if (waiting != null) __obj.updateDynamic("waiting")(waiting)
+    if (waiting != null) __obj.updateDynamic("waiting")(js.Any.fromFunction2(waiting))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayer]
   }

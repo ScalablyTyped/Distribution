@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -499,25 +500,25 @@ object IgCombo {
     clearButtonTitle: String = null,
     closeDropDownOnBlur: js.UndefOr[Boolean] = js.undefined,
     closeDropDownOnSelect: js.UndefOr[Boolean] = js.undefined,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     delayInputChangeProcessing: Int | Double = null,
     dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined,
     dropDownButtonTitle: String = null,
-    dropDownClosed: DropDownClosedEvent = null,
-    dropDownClosing: DropDownClosingEvent = null,
+    dropDownClosed: (/* event */ Event, /* ui */ DropDownClosedEventUIParam) => Unit = null,
+    dropDownClosing: (/* event */ Event, /* ui */ DropDownClosingEventUIParam) => Unit = null,
     dropDownOnFocus: js.UndefOr[Boolean] = js.undefined,
-    dropDownOpened: DropDownOpenedEvent = null,
-    dropDownOpening: DropDownOpeningEvent = null,
+    dropDownOpened: (/* event */ Event, /* ui */ DropDownOpenedEventUIParam) => Unit = null,
+    dropDownOpening: (/* event */ Event, /* ui */ DropDownOpeningEventUIParam) => Unit = null,
     dropDownOrientation: String = null,
     dropDownWidth: String | Double = null,
     enableClearButton: js.UndefOr[Boolean] = js.undefined,
     filterExprUrlKey: String = null,
-    filtered: FilteredEvent = null,
-    filtering: FilteringEvent = null,
+    filtered: (/* event */ Event, /* ui */ FilteredEventUIParam) => Unit = null,
+    filtering: (/* event */ Event, /* ui */ FilteringEventUIParam) => Unit = null,
     filteringCondition: String = null,
     filteringLogic: String = null,
     filteringType: String = null,
@@ -530,8 +531,8 @@ object IgCombo {
     initialSelectedItems: js.Array[IgComboInitialSelectedItem] = null,
     inputName: String = null,
     itemTemplate: String = null,
-    itemsRendered: ItemsRenderedEvent = null,
-    itemsRendering: ItemsRenderingEvent = null,
+    itemsRendered: (/* event */ Event, /* ui */ ItemsRenderedEventUIParam) => Unit = null,
+    itemsRendering: (/* event */ Event, /* ui */ ItemsRenderingEventUIParam) => Unit = null,
     language: String = null,
     loadOnDemandSettings: IgComboLoadOnDemandSettings = null,
     locale: IgComboLocale = null,
@@ -541,15 +542,15 @@ object IgCombo {
     placeHolder: String = null,
     preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined,
     regional: String | js.Object = null,
-    rendered: RenderedEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
     requestType: String = null,
     responseContentType: String = null,
     responseDataKey: String = null,
     responseDataType: String = null,
     responseTotalRecCountKey: String = null,
     selectItemBySpaceKey: js.UndefOr[Boolean] = js.undefined,
-    selectionChanged: IgComboSelectionChangedEvent = null,
-    selectionChanging: SelectionChangingEvent = null,
+    selectionChanged: (/* event */ Event, /* ui */ IgComboSelectionChangedEventUIParam) => Unit = null,
+    selectionChanging: (/* event */ Event, /* ui */ SelectionChangingEventUIParam) => Unit = null,
     suppressKeyboard: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     textKey: String = null,
@@ -570,25 +571,25 @@ object IgCombo {
     if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle)
     if (!js.isUndefined(closeDropDownOnBlur)) __obj.updateDynamic("closeDropDownOnBlur")(closeDropDownOnBlur)
     if (!js.isUndefined(closeDropDownOnSelect)) __obj.updateDynamic("closeDropDownOnSelect")(closeDropDownOnSelect)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (delayInputChangeProcessing != null) __obj.updateDynamic("delayInputChangeProcessing")(delayInputChangeProcessing.asInstanceOf[js.Any])
     if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
     if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle)
-    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
-    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(js.Any.fromFunction2(dropDownClosed))
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(js.Any.fromFunction2(dropDownClosing))
     if (!js.isUndefined(dropDownOnFocus)) __obj.updateDynamic("dropDownOnFocus")(dropDownOnFocus)
-    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
-    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(js.Any.fromFunction2(dropDownOpened))
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(js.Any.fromFunction2(dropDownOpening))
     if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
     if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableClearButton)) __obj.updateDynamic("enableClearButton")(enableClearButton)
     if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey)
-    if (filtered != null) __obj.updateDynamic("filtered")(filtered)
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (filtered != null) __obj.updateDynamic("filtered")(js.Any.fromFunction2(filtered))
+    if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction2(filtering))
     if (filteringCondition != null) __obj.updateDynamic("filteringCondition")(filteringCondition)
     if (filteringLogic != null) __obj.updateDynamic("filteringLogic")(filteringLogic)
     if (filteringType != null) __obj.updateDynamic("filteringType")(filteringType)
@@ -601,8 +602,8 @@ object IgCombo {
     if (initialSelectedItems != null) __obj.updateDynamic("initialSelectedItems")(initialSelectedItems)
     if (inputName != null) __obj.updateDynamic("inputName")(inputName)
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
-    if (itemsRendered != null) __obj.updateDynamic("itemsRendered")(itemsRendered)
-    if (itemsRendering != null) __obj.updateDynamic("itemsRendering")(itemsRendering)
+    if (itemsRendered != null) __obj.updateDynamic("itemsRendered")(js.Any.fromFunction2(itemsRendered))
+    if (itemsRendering != null) __obj.updateDynamic("itemsRendering")(js.Any.fromFunction2(itemsRendering))
     if (language != null) __obj.updateDynamic("language")(language)
     if (loadOnDemandSettings != null) __obj.updateDynamic("loadOnDemandSettings")(loadOnDemandSettings)
     if (locale != null) __obj.updateDynamic("locale")(locale)
@@ -612,15 +613,15 @@ object IgCombo {
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
     if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
     if (requestType != null) __obj.updateDynamic("requestType")(requestType)
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (!js.isUndefined(selectItemBySpaceKey)) __obj.updateDynamic("selectItemBySpaceKey")(selectItemBySpaceKey)
-    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
-    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(selectionChanging)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(js.Any.fromFunction2(selectionChanged))
+    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(js.Any.fromFunction2(selectionChanging))
     if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textKey != null) __obj.updateDynamic("textKey")(textKey)

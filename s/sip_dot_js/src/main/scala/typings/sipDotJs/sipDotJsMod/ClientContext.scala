@@ -1,6 +1,6 @@
 package typings.sipDotJs.sipDotJsMod
 
-import typings.sipDotJs.libClientContextMod.ClientContextNs.Options
+import typings.sipDotJs.libClientContextMod.ClientContext.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

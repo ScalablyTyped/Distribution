@@ -105,11 +105,11 @@ object Command {
     CloudWatchOutputConfig: CloudWatchOutputConfig = null,
     CommandId: CommandId = null,
     Comment: Comment = null,
-    CompletedCount: js.UndefOr[CompletedCount] = js.undefined,
-    DeliveryTimedOutCount: js.UndefOr[DeliveryTimedOutCount] = js.undefined,
+    CompletedCount: Int | Double = null,
+    DeliveryTimedOutCount: Int | Double = null,
     DocumentName: DocumentName = null,
     DocumentVersion: DocumentVersion = null,
-    ErrorCount: js.UndefOr[ErrorCount] = js.undefined,
+    ErrorCount: Int | Double = null,
     ExpiresAfter: DateTime = null,
     InstanceIds: InstanceIdList = null,
     MaxConcurrency: MaxConcurrency = null,
@@ -123,18 +123,18 @@ object Command {
     ServiceRole: ServiceRole = null,
     Status: CommandStatus = null,
     StatusDetails: StatusDetails = null,
-    TargetCount: js.UndefOr[TargetCount] = js.undefined,
+    TargetCount: Int | Double = null,
     Targets: Targets = null
   ): Command = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig)
     if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId)
     if (Comment != null) __obj.updateDynamic("Comment")(Comment)
-    if (!js.isUndefined(CompletedCount)) __obj.updateDynamic("CompletedCount")(CompletedCount)
-    if (!js.isUndefined(DeliveryTimedOutCount)) __obj.updateDynamic("DeliveryTimedOutCount")(DeliveryTimedOutCount)
+    if (CompletedCount != null) __obj.updateDynamic("CompletedCount")(CompletedCount.asInstanceOf[js.Any])
+    if (DeliveryTimedOutCount != null) __obj.updateDynamic("DeliveryTimedOutCount")(DeliveryTimedOutCount.asInstanceOf[js.Any])
     if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName)
     if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion)
-    if (!js.isUndefined(ErrorCount)) __obj.updateDynamic("ErrorCount")(ErrorCount)
+    if (ErrorCount != null) __obj.updateDynamic("ErrorCount")(ErrorCount.asInstanceOf[js.Any])
     if (ExpiresAfter != null) __obj.updateDynamic("ExpiresAfter")(ExpiresAfter)
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds)
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency)
@@ -148,7 +148,7 @@ object Command {
     if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusDetails != null) __obj.updateDynamic("StatusDetails")(StatusDetails)
-    if (!js.isUndefined(TargetCount)) __obj.updateDynamic("TargetCount")(TargetCount)
+    if (TargetCount != null) __obj.updateDynamic("TargetCount")(TargetCount.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets)
     __obj.asInstanceOf[Command]
   }

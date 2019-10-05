@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 object CellProps {
   @scala.inline
-  def apply(onClick: RechartsFunction = null): CellProps = {
+  def apply(onClick: /* repeated */ js.Any => Unit = null): CellProps = {
     val __obj = js.Dynamic.literal()
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[CellProps]
   }
 }

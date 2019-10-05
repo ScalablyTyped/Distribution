@@ -40,22 +40,22 @@ object WindowsFileSystemConfiguration {
   @scala.inline
   def apply(
     ActiveDirectoryId: DirectoryId = null,
-    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
-    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
+    AutomaticBackupRetentionDays: Int | Double = null,
+    CopyTagsToBackups: js.UndefOr[Boolean] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
     MaintenanceOperationsInProgress: FileSystemMaintenanceOperations = null,
     SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryAttributes = null,
-    ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined,
+    ThroughputCapacity: Int | Double = null,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): WindowsFileSystemConfiguration = {
     val __obj = js.Dynamic.literal()
     if (ActiveDirectoryId != null) __obj.updateDynamic("ActiveDirectoryId")(ActiveDirectoryId)
-    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays)
+    if (AutomaticBackupRetentionDays != null) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.asInstanceOf[js.Any])
     if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups)
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime)
     if (MaintenanceOperationsInProgress != null) __obj.updateDynamic("MaintenanceOperationsInProgress")(MaintenanceOperationsInProgress)
     if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration)
-    if (!js.isUndefined(ThroughputCapacity)) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity)
+    if (ThroughputCapacity != null) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity.asInstanceOf[js.Any])
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime)
     __obj.asInstanceOf[WindowsFileSystemConfiguration]
   }

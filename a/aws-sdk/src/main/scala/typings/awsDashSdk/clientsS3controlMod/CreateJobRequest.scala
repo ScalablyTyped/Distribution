@@ -53,7 +53,7 @@ object CreateJobRequest {
     Priority: JobPriority,
     Report: JobReport,
     RoleArn: IAMRoleArn,
-    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
+    ConfirmationRequired: js.UndefOr[scala.Boolean] = js.undefined,
     Description: NonEmptyMaxLength256String = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId, ClientRequestToken = ClientRequestToken, Manifest = Manifest, Operation = Operation, Priority = Priority, Report = Report, RoleArn = RoleArn)

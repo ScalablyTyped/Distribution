@@ -1,7 +1,7 @@
 package typings.easyDashXapiDashSupertest.superagentMod
 
 import typings.easyDashXapiDashSupertest.Buffer
-import typings.easyDashXapiDashSupertest.NodeJSNs.WritableStream
+import typings.easyDashXapiDashSupertest.NodeJS.WritableStream
 import typings.easyDashXapiDashSupertest.easyDashXapiDashSupertestStrings.error
 import typings.easyDashXapiDashSupertest.streamMod.Writable
 import scala.scalajs.js

@@ -23,12 +23,12 @@ object AutoScalingGroupNamesType {
   @scala.inline
   def apply(
     AutoScalingGroupNames: AutoScalingGroupNames = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    MaxRecords: Int | Double = null,
     NextToken: XmlString = null
   ): AutoScalingGroupNamesType = {
     val __obj = js.Dynamic.literal()
     if (AutoScalingGroupNames != null) __obj.updateDynamic("AutoScalingGroupNames")(AutoScalingGroupNames)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[AutoScalingGroupNamesType]
   }

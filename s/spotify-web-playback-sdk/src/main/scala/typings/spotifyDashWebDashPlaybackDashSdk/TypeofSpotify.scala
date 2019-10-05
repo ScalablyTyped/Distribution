@@ -1,8 +1,8 @@
 package typings.spotifyDashWebDashPlaybackDashSdk
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.spotifyDashWebDashPlaybackDashSdk.SpotifyNs.PlayerInit
-import typings.spotifyDashWebDashPlaybackDashSdk.SpotifyNs.SpotifyPlayer
+import typings.spotifyDashWebDashPlaybackDashSdk.Spotify.PlayerInit
+import typings.spotifyDashWebDashPlaybackDashSdk.Spotify.SpotifyPlayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait TypeofSpotify extends js.Object {
   var SpotifyPlayer: Instantiable1[
     /* options */ PlayerInit, 
-    typings.spotifyDashWebDashPlaybackDashSdk.SpotifyNs.SpotifyPlayer
+    typings.spotifyDashWebDashPlaybackDashSdk.Spotify.SpotifyPlayer
   ]
 }
 

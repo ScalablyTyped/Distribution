@@ -267,9 +267,8 @@ object iamManagedPoliciesMod extends js.Object {
   val SystemAdministrator: ARN = js.native
   val VMImportExportRoleForAWSConnector: ARN = js.native
   val ViewOnlyAccess: ARN = js.native
-  @JSName("ManagedPolicies")
   @js.native
-  object ManagedPoliciesNs extends js.Object {
+  object ManagedPolicies extends js.Object {
     val AWSAccountActivityAccess: ARN = js.native
     val AWSAccountUsageReportAccess: ARN = js.native
     val AWSAgentlessDiscoveryService: ARN = js.native

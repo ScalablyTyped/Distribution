@@ -1,7 +1,7 @@
 package typings.easyDashXapiDashSupertest.replMod
 
-import typings.easyDashXapiDashSupertest.NodeJSNs.ReadableStream
-import typings.easyDashXapiDashSupertest.NodeJSNs.WritableStream
+import typings.easyDashXapiDashSupertest.NodeJS.ReadableStream
+import typings.easyDashXapiDashSupertest.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

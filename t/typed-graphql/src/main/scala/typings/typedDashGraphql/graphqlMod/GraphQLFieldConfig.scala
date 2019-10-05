@@ -1,5 +1,6 @@
 package typings.typedDashGraphql.graphqlMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +20,14 @@ object GraphQLFieldConfig {
     args: GraphQLFieldConfigArgumentMap = null,
     deprecationReason: String = null,
     description: String = null,
-    resolve: GraphQLFieldResolveFn = null
+    resolve: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLFieldConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (args != null) __obj.updateDynamic("args")(args)
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
     __obj.asInstanceOf[GraphQLFieldConfig]
   }
 }

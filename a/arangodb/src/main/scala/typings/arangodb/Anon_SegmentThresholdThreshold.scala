@@ -1,6 +1,6 @@
 package typings.arangodb
 
-import typings.arangodb.ArangoDBNs.ArangoSearchViewConsolidationType
+import typings.arangodb.ArangoDB.ArangoSearchViewConsolidationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,37 @@
+package typings.dojo.dojox.highlight.languages
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Permalink: http://dojotoolkit.org/api/1.9/dojox/highlight/languages/css.html
+  *
+  * CSS Language definition file.
+  *
+  */
+@JSName("css")
+trait css_ extends js.Object {
+  /**
+    *
+    */
+  var case_insensitive: Boolean
+  /**
+    *
+    */
+  var defaultMode: js.Object
+  /**
+    *
+    */
+  var modes: js.Array[_]
+}
+
+object css_ {
+  @scala.inline
+  def apply(case_insensitive: Boolean, defaultMode: js.Object, modes: js.Array[_]): css_ = {
+    val __obj = js.Dynamic.literal(case_insensitive = case_insensitive, defaultMode = defaultMode, modes = modes)
+  
+    __obj.asInstanceOf[css_]
+  }
+}
+

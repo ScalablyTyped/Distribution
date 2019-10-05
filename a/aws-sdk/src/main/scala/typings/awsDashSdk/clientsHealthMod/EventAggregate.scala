@@ -17,10 +17,10 @@ trait EventAggregate extends js.Object {
 
 object EventAggregate {
   @scala.inline
-  def apply(aggregateValue: aggregateValue = null, count: js.UndefOr[count] = js.undefined): EventAggregate = {
+  def apply(aggregateValue: aggregateValue = null, count: Int | Double = null): EventAggregate = {
     val __obj = js.Dynamic.literal()
     if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue)
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAggregate]
   }
 }

@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.systemNs.memoryNs.MemoryInfo
+import typings.chromeDashApps.chrome.system.memory.MemoryInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

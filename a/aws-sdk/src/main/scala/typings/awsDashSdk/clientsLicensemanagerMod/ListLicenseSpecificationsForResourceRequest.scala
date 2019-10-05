@@ -21,9 +21,9 @@ trait ListLicenseSpecificationsForResourceRequest extends js.Object {
 
 object ListLicenseSpecificationsForResourceRequest {
   @scala.inline
-  def apply(ResourceArn: String, MaxResults: js.UndefOr[BoxInteger] = js.undefined, NextToken: String = null): ListLicenseSpecificationsForResourceRequest = {
+  def apply(ResourceArn: String, MaxResults: Int | Double = null, NextToken: String = null): ListLicenseSpecificationsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListLicenseSpecificationsForResourceRequest]
   }

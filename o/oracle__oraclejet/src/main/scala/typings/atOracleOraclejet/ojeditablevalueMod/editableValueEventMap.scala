@@ -9,8 +9,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.invalidHidden
 import typings.atOracleOraclejet.atOracleOraclejetStrings.invalidShown
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
-import typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateStart
+import typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd
+import typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateStart
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
@@ -40,8 +40,8 @@ trait editableValueEventMap[V, SP /* <: editableValueSettableProperties[V, SV, R
   var helpHintsChanged: JetElementCustomEvent[Anon_Definition]
   var labelHintChanged: JetElementCustomEvent[String]
   var messagesCustomChanged: JetElementCustomEvent[js.Array[^]]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateStart
+  var ojAnimateEnd: typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateStart
   var validChanged: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown]
   var valueChanged: JetElementCustomEvent[V]
 }

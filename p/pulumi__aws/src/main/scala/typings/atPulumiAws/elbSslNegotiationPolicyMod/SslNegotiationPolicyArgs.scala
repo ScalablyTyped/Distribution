@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbSslNegotiationPolicyMod
 
-import typings.atPulumiAws.typesInputMod.elbNs.SslNegotiationPolicyAttribute
+import typings.atPulumiAws.typesInputMod.elb.SslNegotiationPolicyAttribute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

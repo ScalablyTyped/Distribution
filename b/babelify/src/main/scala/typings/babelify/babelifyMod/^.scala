@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(filename: String): BabelifyObject = js.native
   def apply(filename: String, opts: BabelifyOptions): BabelifyObject = js.native
-  def configure(opts: BabelifyOptions): js.Function1[/* filename */ String, BabelifyObject] = js.native
 }
 

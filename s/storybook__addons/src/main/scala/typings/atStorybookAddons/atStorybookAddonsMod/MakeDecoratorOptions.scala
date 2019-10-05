@@ -1,5 +1,8 @@
 package typings.atStorybookAddons.atStorybookAddonsMod
 
+import typings.atStorybookAddons.Anon_Options
+import typings.atStorybookReact.atStorybookReactMod.StoryDecorator
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,11 +20,11 @@ object MakeDecoratorOptions {
   def apply[ParameterName /* <: String */, Options, Parameters](
     name: String,
     parameterName: ParameterName,
-    wrapper: Wrapper[Options, Parameters],
+    wrapper: (/* getStory */ GetStoryFunc, /* context */ Context, /* optsAndParams */ Anon_Options[Options, Parameters]) => ReturnType[StoryDecorator],
     allowDeprecatedUsage: js.UndefOr[Boolean] = js.undefined,
     skipIfNoParametersOrOptions: js.UndefOr[Boolean] = js.undefined
   ): MakeDecoratorOptions[ParameterName, Options, Parameters] = {
-    val __obj = js.Dynamic.literal(name = name, parameterName = parameterName.asInstanceOf[js.Any], wrapper = wrapper)
+    val __obj = js.Dynamic.literal(name = name, parameterName = parameterName.asInstanceOf[js.Any], wrapper = js.Any.fromFunction3(wrapper))
     if (!js.isUndefined(allowDeprecatedUsage)) __obj.updateDynamic("allowDeprecatedUsage")(allowDeprecatedUsage)
     if (!js.isUndefined(skipIfNoParametersOrOptions)) __obj.updateDynamic("skipIfNoParametersOrOptions")(skipIfNoParametersOrOptions)
     __obj.asInstanceOf[MakeDecoratorOptions[ParameterName, Options, Parameters]]

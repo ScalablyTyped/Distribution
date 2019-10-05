@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportDataLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DataLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.DataLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

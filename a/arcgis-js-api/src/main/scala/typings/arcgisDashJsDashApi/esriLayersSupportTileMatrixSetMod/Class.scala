@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportTileMatrixSetMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileMatrixSet
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileMatrixSetProperties
+import typings.arcgisDashJsDashApi.__esri.TileMatrixSet
+import typings.arcgisDashJsDashApi.__esri.TileMatrixSetProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

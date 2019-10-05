@@ -4,6 +4,7 @@ import typings.popperDotJs.popperDotJsMod.Modifiers
 import typings.popperDotJs.popperDotJsMod.Placement
 import typings.popperDotJs.popperDotJsMod.ReferenceObject
 import typings.react.reactMod.ReactNode
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object PopperProps {
   def apply(
     children: PopperChildrenProps => ReactNode,
     eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    innerRef: RefHandler = null,
+    innerRef: /* ref */ HTMLElement | Null => Unit = null,
     modifiers: Modifiers = null,
     placement: Placement = null,
     positionFixed: js.UndefOr[Boolean] = js.undefined,
@@ -31,7 +32,7 @@ object PopperProps {
   ): PopperProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)

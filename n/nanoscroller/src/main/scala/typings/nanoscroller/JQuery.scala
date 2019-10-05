@@ -1,6 +1,6 @@
 package typings.nanoscroller
 
-import typings.nanoscroller.JQueryNanoScrollerNs.NanoScrollerOptions
+import typings.nanoscroller.JQueryNanoScroller.NanoScrollerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

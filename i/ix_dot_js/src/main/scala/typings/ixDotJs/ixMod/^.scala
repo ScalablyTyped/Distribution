@@ -1,7 +1,7 @@
 package typings.ixDotJs.ixMod
 
-import typings.ixDotJs.IxNs.EnumerableStatic
-import typings.ixDotJs.IxNs.EnumeratorStatic
+import typings.ixDotJs.Ix.EnumerableStatic
+import typings.ixDotJs.Ix.EnumeratorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

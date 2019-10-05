@@ -2,7 +2,7 @@ package typings.algoliasearch.algoliasearchMod
 
 import typings.algoliasearch.Anon_ForwardToReplicas
 import typings.algoliasearch.Anon_Results
-import typings.algoliasearch.algoliasearchMod.SearchForFacetValuesNs.Parameters
+import typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Parameters
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -336,7 +336,7 @@ trait Index extends js.Object {
   /**
     * Search in an index
     */
-  def searchForFacetValues(options: Parameters): js.Promise[typings.algoliasearch.algoliasearchMod.SearchForFacetValuesNs.Response] = js.native
+  def searchForFacetValues(options: Parameters): js.Promise[typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Response] = js.native
   /**
     * Search in an index
     */
@@ -344,7 +344,7 @@ trait Index extends js.Object {
     options: Parameters,
     cb: js.Function2[
       /* err */ Error, 
-      /* res */ typings.algoliasearch.algoliasearchMod.SearchForFacetValuesNs.Response, 
+      /* res */ typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Response, 
       Unit
     ]
   ): Unit = js.native

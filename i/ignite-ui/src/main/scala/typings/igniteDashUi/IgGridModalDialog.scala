@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,19 +92,19 @@ object IgGridModalDialog {
   /* optionName */ StringDictionary[js.Any] = null,
     animationDuration: Int | Double = null,
     buttonApplyDisabled: js.UndefOr[Boolean] = js.undefined,
-    buttonCancelClick: ButtonCancelClickEvent = null,
-    buttonOKClick: ButtonOKClickEvent = null,
+    buttonCancelClick: (/* event */ Event, /* ui */ ButtonCancelClickEventUIParam) => Unit = null,
+    buttonOKClick: (/* event */ Event, /* ui */ ButtonOKClickEventUIParam) => Unit = null,
     closeModalDialogOnEnter: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     locale: js.Any = null,
-    modalDialogClosed: ModalDialogClosedEvent = null,
-    modalDialogClosing: ModalDialogClosingEvent = null,
-    modalDialogContentsRendered: ModalDialogContentsRenderedEvent = null,
-    modalDialogContentsRendering: ModalDialogContentsRenderingEvent = null,
+    modalDialogClosed: (/* event */ Event, /* ui */ ModalDialogClosedEventUIParam) => Unit = null,
+    modalDialogClosing: (/* event */ Event, /* ui */ ModalDialogClosingEventUIParam) => Unit = null,
+    modalDialogContentsRendered: (/* event */ Event, /* ui */ ModalDialogContentsRenderedEventUIParam) => Unit = null,
+    modalDialogContentsRendering: (/* event */ Event, /* ui */ ModalDialogContentsRenderingEventUIParam) => Unit = null,
     modalDialogHeight: Int | Double = null,
-    modalDialogMoving: ModalDialogMovingEvent = null,
-    modalDialogOpened: ModalDialogOpenedEvent = null,
-    modalDialogOpening: ModalDialogOpeningEvent = null,
+    modalDialogMoving: (/* event */ Event, /* ui */ ModalDialogMovingEventUIParam) => Unit = null,
+    modalDialogOpened: (/* event */ Event, /* ui */ ModalDialogOpenedEventUIParam) => Unit = null,
+    modalDialogOpening: (/* event */ Event, /* ui */ ModalDialogOpeningEventUIParam) => Unit = null,
     modalDialogWidth: Int | Double = null,
     regional: String | js.Object = null,
     renderFooterButtons: js.UndefOr[Boolean] = js.undefined,
@@ -113,19 +114,19 @@ object IgGridModalDialog {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(buttonApplyDisabled)) __obj.updateDynamic("buttonApplyDisabled")(buttonApplyDisabled)
-    if (buttonCancelClick != null) __obj.updateDynamic("buttonCancelClick")(buttonCancelClick)
-    if (buttonOKClick != null) __obj.updateDynamic("buttonOKClick")(buttonOKClick)
+    if (buttonCancelClick != null) __obj.updateDynamic("buttonCancelClick")(js.Any.fromFunction2(buttonCancelClick))
+    if (buttonOKClick != null) __obj.updateDynamic("buttonOKClick")(js.Any.fromFunction2(buttonOKClick))
     if (!js.isUndefined(closeModalDialogOnEnter)) __obj.updateDynamic("closeModalDialogOnEnter")(closeModalDialogOnEnter)
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(modalDialogClosed)
-    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(modalDialogClosing)
-    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(modalDialogContentsRendered)
-    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(modalDialogContentsRendering)
+    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(js.Any.fromFunction2(modalDialogClosed))
+    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(js.Any.fromFunction2(modalDialogClosing))
+    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(js.Any.fromFunction2(modalDialogContentsRendered))
+    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(js.Any.fromFunction2(modalDialogContentsRendering))
     if (modalDialogHeight != null) __obj.updateDynamic("modalDialogHeight")(modalDialogHeight.asInstanceOf[js.Any])
-    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(modalDialogMoving)
-    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(modalDialogOpened)
-    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(modalDialogOpening)
+    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(js.Any.fromFunction2(modalDialogMoving))
+    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(js.Any.fromFunction2(modalDialogOpened))
+    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(js.Any.fromFunction2(modalDialogOpening))
     if (modalDialogWidth != null) __obj.updateDynamic("modalDialogWidth")(modalDialogWidth.asInstanceOf[js.Any])
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (!js.isUndefined(renderFooterButtons)) __obj.updateDynamic("renderFooterButtons")(renderFooterButtons)

@@ -43,17 +43,17 @@ object DescribeUpdateActionsMessage {
   @scala.inline
   def apply(
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     ReplicationGroupIds: ReplicationGroupIdList = null,
     ServiceUpdateName: String = null,
     ServiceUpdateStatus: ServiceUpdateStatusList = null,
     ServiceUpdateTimeRange: TimeRangeFilter = null,
-    ShowNodeLevelUpdateStatus: js.UndefOr[BooleanOptional] = js.undefined,
+    ShowNodeLevelUpdateStatus: js.UndefOr[scala.Boolean] = js.undefined,
     UpdateActionStatus: UpdateActionStatusList = null
   ): DescribeUpdateActionsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReplicationGroupIds != null) __obj.updateDynamic("ReplicationGroupIds")(ReplicationGroupIds)
     if (ServiceUpdateName != null) __obj.updateDynamic("ServiceUpdateName")(ServiceUpdateName)
     if (ServiceUpdateStatus != null) __obj.updateDynamic("ServiceUpdateStatus")(ServiceUpdateStatus)

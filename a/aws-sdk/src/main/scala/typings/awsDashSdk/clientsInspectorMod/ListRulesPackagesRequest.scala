@@ -17,9 +17,9 @@ trait ListRulesPackagesRequest extends js.Object {
 
 object ListRulesPackagesRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[ListMaxResults] = js.undefined, nextToken: PaginationToken = null): ListRulesPackagesRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: PaginationToken = null): ListRulesPackagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListRulesPackagesRequest]
   }

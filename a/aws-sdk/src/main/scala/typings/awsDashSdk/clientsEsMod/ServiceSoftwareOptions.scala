@@ -39,11 +39,11 @@ object ServiceSoftwareOptions {
   @scala.inline
   def apply(
     AutomatedUpdateDate: DeploymentCloseDateTimeStamp = null,
-    Cancellable: js.UndefOr[Boolean] = js.undefined,
+    Cancellable: js.UndefOr[scala.Boolean] = js.undefined,
     CurrentVersion: String = null,
     Description: String = null,
     NewVersion: String = null,
-    UpdateAvailable: js.UndefOr[Boolean] = js.undefined,
+    UpdateAvailable: js.UndefOr[scala.Boolean] = js.undefined,
     UpdateStatus: DeploymentStatus = null
   ): ServiceSoftwareOptions = {
     val __obj = js.Dynamic.literal()

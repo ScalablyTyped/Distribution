@@ -16,7 +16,7 @@ object ^ extends js.Object {
   def apply(p: Double, options: Options): Double = js.native
   def apply(p: Data): Float64Array = js.native
   def apply(p: Data, options: Options with Anon_DtypeFloat64): Float64Array = js.native
-  def apply(p: MatrixLike): Matrix = js.native
-  def apply(p: MatrixLike, options: Options): Matrix = js.native
+  def apply(p: MatrixLike): Double | Data | Matrix = js.native
+  def apply(p: MatrixLike, options: Options): Double | Data | Matrix = js.native
 }
 

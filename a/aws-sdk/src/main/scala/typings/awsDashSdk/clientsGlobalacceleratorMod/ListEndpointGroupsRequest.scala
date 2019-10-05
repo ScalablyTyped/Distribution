@@ -21,13 +21,9 @@ trait ListEndpointGroupsRequest extends js.Object {
 
 object ListEndpointGroupsRequest {
   @scala.inline
-  def apply(
-    ListenerArn: GenericString,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: GenericString = null
-  ): ListEndpointGroupsRequest = {
+  def apply(ListenerArn: GenericString, MaxResults: Int | Double = null, NextToken: GenericString = null): ListEndpointGroupsRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListEndpointGroupsRequest]
   }

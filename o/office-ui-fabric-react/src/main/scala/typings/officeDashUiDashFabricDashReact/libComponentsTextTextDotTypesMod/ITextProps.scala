@@ -1,7 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod
 
 import typings.atUifabricFoundation.Anon_Slots
-import typings.atUifabricFoundation.libIComponentMod.IStyleableComponentProps
 import typings.atUifabricFoundation.libIComponentMod.IStylesFunctionOrObject
 import typings.atUifabricFoundation.libIComponentMod.ITokenFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
@@ -49,21 +48,25 @@ object ITextProps {
   def apply(
     Anon_Slots: Anon_Slots[ITextSlots] = null,
     HTMLAttributes: HTMLAttributes[HTMLElement] = null,
-    IStyleableComponentProps: IStyleableComponentProps[ITextProps, ITextTokens, ITextStyles] = null,
     ITextSlots: ITextSlots = null,
     as: ReactType[HTMLAttributes[HTMLElement]] = null,
     block: js.UndefOr[Boolean] = js.undefined,
     nowrap: js.UndefOr[Boolean] = js.undefined,
+    styles: IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles] = null,
+    theme: ITheme = null,
+    tokens: ITokenFunctionOrObject[ITextProps, ITextTokens] = null,
     variant: String = null
   ): ITextProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, Anon_Slots)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, IStyleableComponentProps)
     js.Dynamic.global.Object.assign(__obj, ITextSlots)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
     if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant)
     __obj.asInstanceOf[ITextProps]
   }

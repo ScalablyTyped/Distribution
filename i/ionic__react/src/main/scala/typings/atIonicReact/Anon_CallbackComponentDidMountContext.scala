@@ -3,7 +3,7 @@ package typings.atIonicReact
 import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.RefObject

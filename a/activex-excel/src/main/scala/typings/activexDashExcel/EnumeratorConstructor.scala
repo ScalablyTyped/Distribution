@@ -1,7 +1,7 @@
 package typings.activexDashExcel
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.activexDashExcel.ExcelNs.Sheets
+import typings.activexDashExcel.Excel.Sheets
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

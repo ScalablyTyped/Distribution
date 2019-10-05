@@ -5,8 +5,8 @@ import typings.node.AsyncIterable
 import typings.node.BufferEncoding
 import typings.node.Error
 import typings.node.Iterable
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.data
 import typings.node.nodeStrings.end

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Decorated target
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- js.Function because Already inherited
 - typings.angularDashEs.angularDashEsMod.MethodDecorator because var conflicts: length. Inlined  */ @js.native
 trait ngESDecorator extends ClassDecorator {
   def apply(target: js.Function, ngName: String): Unit = js.native

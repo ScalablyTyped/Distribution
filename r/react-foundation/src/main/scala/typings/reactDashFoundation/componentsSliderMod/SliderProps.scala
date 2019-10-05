@@ -19,17 +19,19 @@ object SliderProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    SliderCommonProps: SliderCommonProps = null,
     fill: SliderFillProps = null,
     handle: SliderHandleProps = null,
-    initialStart: Int | Double = null
+    initialStart: Int | Double = null,
+    isDisabled: js.UndefOr[Boolean] = js.undefined,
+    isVertical: js.UndefOr[Boolean] = js.undefined
   ): SliderProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, SliderCommonProps)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (handle != null) __obj.updateDynamic("handle")(handle)
     if (initialStart != null) __obj.updateDynamic("initialStart")(initialStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical)
     __obj.asInstanceOf[SliderProps]
   }
 }

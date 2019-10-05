@@ -1,10 +1,10 @@
 package typings.atPulumiAws.appsyncGraphQLApiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiAdditionalAuthenticationProvider
-import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiLogConfig
-import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiOpenidConnectConfig
-import typings.atPulumiAws.typesOutputMod.appsyncNs.GraphQLApiUserPoolConfig
+import typings.atPulumiAws.typesOutputMod.appsync.GraphQLApiAdditionalAuthenticationProvider
+import typings.atPulumiAws.typesOutputMod.appsync.GraphQLApiLogConfig
+import typings.atPulumiAws.typesOutputMod.appsync.GraphQLApiOpenidConnectConfig
+import typings.atPulumiAws.typesOutputMod.appsync.GraphQLApiUserPoolConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

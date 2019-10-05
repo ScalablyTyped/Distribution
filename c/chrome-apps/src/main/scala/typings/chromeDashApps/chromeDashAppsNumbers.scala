@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.WebViewNs.EventsNs.ConsoleMessageLevel
+import typings.chromeDashApps.WebView.Events.ConsoleMessageLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

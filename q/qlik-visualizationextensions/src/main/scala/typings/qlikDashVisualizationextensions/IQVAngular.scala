@@ -7,7 +7,7 @@ import typings.angular.angularMod.IController
 import typings.angular.angularMod.IDirectiveFactory
 import typings.angular.angularMod.IScope
 import typings.angular.angularMod.Injectable
-import typings.angular.angularMod.autoNs.IInjectorService
+import typings.angular.angularMod.auto.IInjectorService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

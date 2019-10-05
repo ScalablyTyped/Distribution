@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -15,16 +16,7 @@ trait AutoTooltip extends js.Object {
   def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit
 }
 
-object AutoTooltip {
-  @scala.inline
-  def apply(
-    $tooltipIn: HTMLElement => HTMLElement,
-    $tooltipMove: (HTMLElement, Event, String) => Unit,
-    $tooltipOut: Unit
-  ): AutoTooltip = {
-    val __obj = js.Dynamic.literal($tooltipIn = js.Any.fromFunction1($tooltipIn), $tooltipMove = js.Any.fromFunction3($tooltipMove), $tooltipOut = $tooltipOut)
-  
-    __obj.asInstanceOf[AutoTooltip]
-  }
-}
+@JSImport("webix", "AutoTooltip")
+@js.native
+object AutoTooltip extends TopLevel[AutoTooltip]
 

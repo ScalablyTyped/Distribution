@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): RequestHandler = js.native
-  def apply(options: CorsOptions | CorsOptionsDelegate): RequestHandler = js.native
+  def apply(options: CorsOptions): RequestHandler = js.native
+  def apply(options: CorsOptionsDelegate): RequestHandler = js.native
 }
 

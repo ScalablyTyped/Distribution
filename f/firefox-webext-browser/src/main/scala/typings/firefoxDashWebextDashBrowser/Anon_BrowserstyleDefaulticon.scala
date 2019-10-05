@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.IconPath
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.MatchPattern
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.MatchPatternRestricted
+import typings.firefoxDashWebextDashBrowser.browser._manifest.IconPath
+import typings.firefoxDashWebextDashBrowser.browser._manifest.MatchPattern
+import typings.firefoxDashWebextDashBrowser.browser._manifest.MatchPatternRestricted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

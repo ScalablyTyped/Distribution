@@ -42,24 +42,24 @@ trait ECSTaskSet extends js.Object {
 object ECSTaskSet {
   @scala.inline
   def apply(
-    desiredCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
+    desiredCount: Int | Double = null,
     identifer: ECSTaskSetIdentifier = null,
-    pendingCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
-    runningCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
+    pendingCount: Int | Double = null,
+    runningCount: Int | Double = null,
     status: ECSTaskSetStatus = null,
     targetGroup: TargetGroupInfo = null,
     taskSetLabel: TargetLabel = null,
-    trafficWeight: js.UndefOr[TrafficWeight] = js.undefined
+    trafficWeight: Int | Double = null
   ): ECSTaskSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount)
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
     if (identifer != null) __obj.updateDynamic("identifer")(identifer)
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount)
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount)
+    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
+    if (runningCount != null) __obj.updateDynamic("runningCount")(runningCount.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (targetGroup != null) __obj.updateDynamic("targetGroup")(targetGroup)
     if (taskSetLabel != null) __obj.updateDynamic("taskSetLabel")(taskSetLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(trafficWeight)) __obj.updateDynamic("trafficWeight")(trafficWeight)
+    if (trafficWeight != null) __obj.updateDynamic("trafficWeight")(trafficWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECSTaskSet]
   }
 }

@@ -1,7 +1,9 @@
 package typings.karma.karmaMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bluebird.bluebirdMod.^
 import typings.karma.karmaStrings.run_complete
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +31,14 @@ class Server () extends EventEmitter {
   /**
     * Force a refresh of the file list
     */
-  def refreshFiles(): typings.bluebird.bluebirdMod.^[_] = js.native
+  def refreshFiles(): ^[_] = js.native
   /**
     * Start the server
     */
   def start(): Unit = js.native
 }
+
+@JSImport("karma", "server")
+@js.native
+object server extends TopLevel[DeprecatedServer]
 

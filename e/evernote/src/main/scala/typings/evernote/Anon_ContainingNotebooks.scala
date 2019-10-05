@@ -1,9 +1,9 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.Note
-import typings.evernote.evernoteMod.EvernoteNs.Notebook
-import typings.evernote.evernoteMod.EvernoteNs.NotebookDescriptor
-import typings.evernote.evernoteMod.EvernoteNs.Tag
+import typings.evernote.evernoteMod.Evernote.Note
+import typings.evernote.evernoteMod.Evernote.Notebook
+import typings.evernote.evernoteMod.Evernote.NotebookDescriptor
+import typings.evernote.evernoteMod.Evernote.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

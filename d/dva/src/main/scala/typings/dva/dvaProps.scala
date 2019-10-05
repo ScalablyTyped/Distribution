@@ -31,13 +31,13 @@ trait dvaProps {
   def RouterProps: typings.reactDashRouter.reactDashRouterMod.RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
   type RouterProps = typings.reactDashRouter.reactDashRouterMod.RouterProps
   @scala.inline
+  def RouterReduxConnectedRouterProps: ConnectedRouterProps.type = typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
+  type RouterReduxConnectedRouterProps[State] = ConnectedRouterProps[State]
+  @scala.inline
   def StaticRouterProps: typings.reactDashRouter.reactDashRouterMod.StaticRouterProps.type = typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
   type StaticRouterProps = typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
   @scala.inline
   def SwitchProps: typings.reactDashRouter.reactDashRouterMod.SwitchProps.type = typings.reactDashRouter.reactDashRouterMod.SwitchProps
   type SwitchProps = typings.reactDashRouter.reactDashRouterMod.SwitchProps
-  @scala.inline
-  def routerReduxNsConnectedRouterProps: ConnectedRouterProps.type = typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
-  type routerReduxNsConnectedRouterProps[State] = ConnectedRouterProps[State]
 }
 

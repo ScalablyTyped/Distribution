@@ -17,7 +17,7 @@ trait CreateDefaultSubnetRequest extends js.Object {
 
 object CreateDefaultSubnetRequest {
   @scala.inline
-  def apply(AvailabilityZone: String, DryRun: js.UndefOr[Boolean] = js.undefined): CreateDefaultSubnetRequest = {
+  def apply(AvailabilityZone: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateDefaultSubnetRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateDefaultSubnetRequest]

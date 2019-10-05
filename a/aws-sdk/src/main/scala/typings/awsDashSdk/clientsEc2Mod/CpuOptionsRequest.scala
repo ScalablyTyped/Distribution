@@ -17,10 +17,10 @@ trait CpuOptionsRequest extends js.Object {
 
 object CpuOptionsRequest {
   @scala.inline
-  def apply(CoreCount: js.UndefOr[Integer] = js.undefined, ThreadsPerCore: js.UndefOr[Integer] = js.undefined): CpuOptionsRequest = {
+  def apply(CoreCount: Int | scala.Double = null, ThreadsPerCore: Int | scala.Double = null): CpuOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CoreCount)) __obj.updateDynamic("CoreCount")(CoreCount)
-    if (!js.isUndefined(ThreadsPerCore)) __obj.updateDynamic("ThreadsPerCore")(ThreadsPerCore)
+    if (CoreCount != null) __obj.updateDynamic("CoreCount")(CoreCount.asInstanceOf[js.Any])
+    if (ThreadsPerCore != null) __obj.updateDynamic("ThreadsPerCore")(ThreadsPerCore.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuOptionsRequest]
   }
 }

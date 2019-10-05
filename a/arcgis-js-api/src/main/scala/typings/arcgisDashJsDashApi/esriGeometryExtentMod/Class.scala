@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryExtentMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Extent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExtentProperties
+import typings.arcgisDashJsDashApi.__esri.Extent
+import typings.arcgisDashJsDashApi.__esri.ExtentProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

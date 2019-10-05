@@ -11,34 +11,34 @@
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(loadMessages))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(loadMessages))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatMessage))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatMessage))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatNumber))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatNumber))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(parseNumber))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(parseNumber))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatDate))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(formatDate))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(parseDate))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(parseDate))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(locale))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(localization), TsIdentSimple(locale))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(then) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsGlobal() / TsDeclInterface(Promise))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(config) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(config) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default))] 
@@ -317,9 +317,9 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclClass(dxTreeMap))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclClass(dxVectorMap))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclClass(dxVectorMap))] 
-[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(projection) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(add) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map) / TsDeclNamespace(projection))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(get) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map) / TsDeclNamespace(projection))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map) / TsDeclNamespace(projection))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(off) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(events))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(off) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(events))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(off) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(events))] 
@@ -1381,7 +1381,7 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackgroundColorBottom) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclClass(viz) / TsMemberFunction(exportWidgets) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Alternate) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclClass(viz) / TsMemberFunction(generateColors) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Buttons) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(ui) / TsDeclClass(dialog) / TsMemberFunction(custom) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AspectRatio) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map) / TsDeclFunction(projection) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AspectRatio) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(viz) / TsDeclNamespace(map) / TsDeclNamespace(projection) / TsDeclFunction(^) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AllowPan) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclNamespace(utils) / TsDeclFunction(initMobileViewport) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Component) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclInterface(ComponentOptions) / TsMemberFunction(onDisposing) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElement) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclInterface(ComponentOptions) / TsMemberFunction(onInitialized) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -1727,7 +1727,7 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Filter) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(data) / TsDeclInterface(Store) / TsMemberFunction(totalCount) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DataDataType) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(data) / TsDeclInterface(XmlaStoreOptions) / TsMemberFunction(beforeSend) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Duration) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberProperty(animation) / TsTypeUnion() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementModelAnyDxElementTOptional_1301084034) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberFunction(onDone) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementModelAnyDxElementTOptional_999479990) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberFunction(onDone) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementEventJQueryEventModelTarget) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberProperty(onPointClick) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementTarget) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberFunction(onPointHoverChanged) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementTarget) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseChartOptions) / TsMemberFunction(onPointSelectionChanged) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -1749,30 +1749,30 @@
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$ConflictHandlingStore.addInterface(ExtractInterfaces.scala:27)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:83)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:61)
-	at com.olvind.tso.ts.TreeTransformation.visitTsType(TreeTransformation.scala:556)
-	at com.olvind.tso.ts.TreeTransformation.visitTsType$(TreeTransformation.scala:555)
+	at com.olvind.tso.ts.TreeTransformation.visitTsType(TreeTransformation.scala:560)
+	at com.olvind.tso.ts.TreeTransformation.visitTsType$(TreeTransformation.scala:559)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsType(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunParam$1(TreeTransformation.scala:237)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunParam$1(TreeTransformation.scala:240)
 	at scala.Option.map(Option.scala:230)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam(TreeTransformation.scala:237)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam$(TreeTransformation.scala:232)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam(TreeTransformation.scala:240)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam$(TreeTransformation.scala:235)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsFunParam(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunSig$2(TreeTransformation.scala:245)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunSig$2(TreeTransformation.scala:248)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig(TreeTransformation.scala:245)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig$(TreeTransformation.scala:240)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig(TreeTransformation.scala:248)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig$(TreeTransformation.scala:243)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsFunSig(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction(TreeTransformation.scala:300)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction$(TreeTransformation.scala:295)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction(TreeTransformation.scala:303)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction$(TreeTransformation.scala:298)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsMemberFunction(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMember(TreeTransformation.scala:580)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMember$(TreeTransformation.scala:576)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMember(TreeTransformation.scala:584)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMember$(TreeTransformation.scala:580)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsMember(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclInterface$3(TreeTransformation.scala:144)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclInterface$3(TreeTransformation.scala:147)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -1783,19 +1783,19 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface(TreeTransformation.scala:144)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface$(TreeTransformation.scala:133)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface(TreeTransformation.scala:147)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface$(TreeTransformation.scala:136)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclInterface(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl(TreeTransformation.scala:517)
-	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl$(TreeTransformation.scala:507)
+	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl(TreeTransformation.scala:521)
+	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl$(TreeTransformation.scala:511)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsNamedDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDecl(TreeTransformation.scala:501)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDecl$(TreeTransformation.scala:499)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDecl(TreeTransformation.scala:505)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDecl$(TreeTransformation.scala:503)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:532)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:529)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:536)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:533)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:175)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:178)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -1806,16 +1806,16 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:175)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:170)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:178)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:173)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclNamespace(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:526)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:520)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:530)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:524)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:531)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:529)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:535)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:533)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:175)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:178)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -1826,16 +1826,16 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:175)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:170)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:178)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:173)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclNamespace(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:526)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:520)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:530)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:524)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:531)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:529)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:535)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:533)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclModule$1(TreeTransformation.scala:155)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclModule$1(TreeTransformation.scala:158)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -1846,16 +1846,16 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule(TreeTransformation.scala:155)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule$(TreeTransformation.scala:150)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule(TreeTransformation.scala:158)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule$(TreeTransformation.scala:153)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclModule(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:525)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:520)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:529)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:524)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:531)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:529)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:535)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:533)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsParsedFile$1(TreeTransformation.scala:331)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsParsedFile$1(TreeTransformation.scala:334)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -1866,11 +1866,11 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:331)
-	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:327)
+	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:334)
+	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:330)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:12)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$20(Phase1ReadTypescript.scala:237)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$20(Phase1ReadTypescript.scala:240)
 	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$31(Phase1ReadTypescript.scala:185)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
@@ -1908,29 +1908,29 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main.$anonfun$run$23(Main.scala:220)
-	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
-	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
-	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)
-	at scala.collection.parallel.ParIterableLike$Map.leaf(ParIterableLike.scala:1056)
-	at scala.collection.parallel.Task.$anonfun$tryLeaf$1(Tasks.scala:53)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
-	at scala.util.control.Breaks$$anon$1.catchBreak(Breaks.scala:67)
-	at scala.collection.parallel.Task.tryLeaf(Tasks.scala:56)
-	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
-	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1053)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:170)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
-	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute$(Tasks.scala:149)
-	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:440)
-	at java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:407)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at com.olvind.tso.importer.Main.run(Main.scala:215)
+	at com.olvind.tso.importer.Main$.main(Main.scala:314)
+	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => publish] 

@@ -1,7 +1,7 @@
 package typings.angularDashFormly
 
-import typings.angularDashFormly.AngularFormlyNs.IFieldRuntimeObject
-import typings.angularDashFormly.AngularFormlyNs.ITemplateScope
+import typings.angularDashFormly.AngularFormly.IFieldRuntimeObject
+import typings.angularDashFormly.AngularFormly.ITemplateScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

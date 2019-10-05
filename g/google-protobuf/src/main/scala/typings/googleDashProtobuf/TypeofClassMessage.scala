@@ -9,8 +9,8 @@ import typings.googleDashProtobuf.googleDashProtobufMod.ExtensionFieldInfo
 import typings.googleDashProtobuf.googleDashProtobufMod.FieldValue
 import typings.googleDashProtobuf.googleDashProtobufMod.Map
 import typings.googleDashProtobuf.googleDashProtobufMod.Message
-import typings.googleDashProtobuf.googleDashProtobufMod.MessageNs.MessageArray
-import typings.googleDashProtobuf.googleDashProtobufMod.MessageNs.StaticToObject
+import typings.googleDashProtobuf.googleDashProtobufMod.Message.MessageArray
+import typings.googleDashProtobuf.googleDashProtobufMod.Message.StaticToObject
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

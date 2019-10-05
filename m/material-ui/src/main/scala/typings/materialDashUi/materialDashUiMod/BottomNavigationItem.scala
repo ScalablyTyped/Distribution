@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "BottomNavigationItem")
 @js.native
 class BottomNavigationItem ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.BottomNavigationNs.BottomNavigationItem
+  extends typings.materialDashUi.__MaterialUI.BottomNavigation.BottomNavigationItem
 

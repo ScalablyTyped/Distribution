@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriPopupContentColumnChartMediaInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ChartMediaInfoValue
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColumnChartMediaInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColumnChartMediaInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ChartMediaInfoValue
+import typings.arcgisDashJsDashApi.__esri.ColumnChartMediaInfo
+import typings.arcgisDashJsDashApi.__esri.ColumnChartMediaInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

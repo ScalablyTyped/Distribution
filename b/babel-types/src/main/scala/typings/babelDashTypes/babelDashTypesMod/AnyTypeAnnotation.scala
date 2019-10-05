@@ -33,3 +33,9 @@ object AnyTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "anyTypeAnnotation")
+@js.native
+object anyTypeAnnotation extends js.Object {
+  def apply(): AnyTypeAnnotation = js.native
+}
+

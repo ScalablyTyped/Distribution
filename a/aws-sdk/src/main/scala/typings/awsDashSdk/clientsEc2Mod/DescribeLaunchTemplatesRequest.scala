@@ -34,11 +34,11 @@ trait DescribeLaunchTemplatesRequest extends js.Object {
 object DescribeLaunchTemplatesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     LaunchTemplateIds: ValueStringList = null,
     LaunchTemplateNames: LaunchTemplateNameStringList = null,
-    MaxResults: js.UndefOr[DescribeLaunchTemplatesMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeLaunchTemplatesRequest = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object DescribeLaunchTemplatesRequest {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (LaunchTemplateIds != null) __obj.updateDynamic("LaunchTemplateIds")(LaunchTemplateIds)
     if (LaunchTemplateNames != null) __obj.updateDynamic("LaunchTemplateNames")(LaunchTemplateNames)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeLaunchTemplatesRequest]
   }

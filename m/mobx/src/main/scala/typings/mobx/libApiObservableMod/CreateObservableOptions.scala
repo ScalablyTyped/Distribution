@@ -20,14 +20,14 @@ object CreateObservableOptions {
   def apply(
     deep: js.UndefOr[Boolean] = js.undefined,
     defaultDecorator: IObservableDecorator = null,
-    equals: IEqualsComparer[_] = null,
+    equals: (_, _) => Boolean = null,
     name: String = null,
     proxy: js.UndefOr[Boolean] = js.undefined
   ): CreateObservableOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
     if (defaultDecorator != null) __obj.updateDynamic("defaultDecorator")(defaultDecorator)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
     __obj.asInstanceOf[CreateObservableOptions]

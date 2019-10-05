@@ -35,14 +35,14 @@ object ListReviewPolicyResultsForHITRequest {
   @scala.inline
   def apply(
     HITId: EntityId,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     PolicyLevels: ReviewPolicyLevelList = null,
-    RetrieveActions: js.UndefOr[Boolean] = js.undefined,
-    RetrieveResults: js.UndefOr[Boolean] = js.undefined
+    RetrieveActions: js.UndefOr[scala.Boolean] = js.undefined,
+    RetrieveResults: js.UndefOr[scala.Boolean] = js.undefined
   ): ListReviewPolicyResultsForHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PolicyLevels != null) __obj.updateDynamic("PolicyLevels")(PolicyLevels)
     if (!js.isUndefined(RetrieveActions)) __obj.updateDynamic("RetrieveActions")(RetrieveActions)

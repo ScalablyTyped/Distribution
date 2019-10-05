@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "yamljs"
-version := "0.2.3-dt-20190322Z-f5cdae"
-scalaVersion := "2.12.9"
+version := "0.2.3-dt-20190322Z-f90aa8"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

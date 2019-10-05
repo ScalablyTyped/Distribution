@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "TextureHandler")
 @js.native
 class TextureHandler protected ()
-  extends typings.playcanvas.pcNs.TextureHandler {
+  extends typings.playcanvas.pc.TextureHandler {
   def this(
-    device: typings.playcanvas.pcNs.GraphicsDevice,
-    assets: typings.playcanvas.pcNs.AssetRegistry,
-    loader: typings.playcanvas.pcNs.ResourceLoader
+    device: typings.playcanvas.pc.GraphicsDevice,
+    assets: typings.playcanvas.pc.AssetRegistry,
+    loader: typings.playcanvas.pc.ResourceLoader
   ) = this()
 }
 

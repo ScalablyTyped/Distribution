@@ -36,7 +36,7 @@ object CreateTrafficMirrorTargetRequest {
   def apply(
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     NetworkInterfaceId: String = null,
     NetworkLoadBalancerArn: String = null,
     TagSpecifications: TagSpecificationList = null

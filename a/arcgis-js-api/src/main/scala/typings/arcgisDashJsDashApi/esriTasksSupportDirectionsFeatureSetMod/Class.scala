@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportDirectionsFeatureSetMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectionsFeatureSet
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectionsFeatureSetProperties
+import typings.arcgisDashJsDashApi.__esri.DirectionsFeatureSet
+import typings.arcgisDashJsDashApi.__esri.DirectionsFeatureSetProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

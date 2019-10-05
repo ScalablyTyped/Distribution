@@ -11,30 +11,5 @@ trait SVGSwitchElement extends SVGGraphicsElement
 
 @JSGlobal("SVGSwitchElement")
 @js.native
-class SVGSwitchElementCls () extends SVGSwitchElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val requiredExtensions: SVGStringList = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override val systemLanguage: SVGStringList = js.native
-}
-
-@JSGlobal("SVGSwitchElement")
-@js.native
 object SVGSwitchElement extends Instantiable0[SVGSwitchElement]
 

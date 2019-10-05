@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPortalPortalGroupMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalGroup
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalGroupProperties
+import typings.arcgisDashJsDashApi.__esri.PortalGroup
+import typings.arcgisDashJsDashApi.__esri.PortalGroupProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

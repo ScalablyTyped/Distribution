@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.MultiViewCalendar
-import typings.kendoDashUi.kendoNs.uiNs.MultiViewCalendarOptions
+import typings.kendoDashUi.kendo.ui.MultiViewCalendar
+import typings.kendoDashUi.kendo.ui.MultiViewCalendarOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

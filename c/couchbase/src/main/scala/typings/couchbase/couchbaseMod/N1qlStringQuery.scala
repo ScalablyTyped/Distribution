@@ -1,6 +1,6 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.N1qlQueryNs.Consistency
+import typings.couchbase.couchbaseMod.N1qlQuery.Consistency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

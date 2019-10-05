@@ -25,12 +25,12 @@ object InlineFragment {
     directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.InlineFragment,
     loc: Location,
-    metadata: Metadata,
     selections: js.Array[Selection],
-    typeCondition: GraphQLCompositeType
+    typeCondition: GraphQLCompositeType,
+    metadata: Metadata = null
   ): InlineFragment = {
-    val __obj = js.Dynamic.literal(directives = directives, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], selections = selections, typeCondition = typeCondition.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(directives = directives, kind = kind, loc = loc, selections = selections, typeCondition = typeCondition.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineFragment]
   }
 }

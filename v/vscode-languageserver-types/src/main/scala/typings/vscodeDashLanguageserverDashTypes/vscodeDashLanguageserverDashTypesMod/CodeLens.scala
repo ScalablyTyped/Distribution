@@ -21,13 +21,17 @@ trait CodeLens extends js.Object {
   var range: Range
 }
 
-object CodeLens {
-  @scala.inline
-  def apply(range: Range, command: Command = null, data: js.Any = null): CodeLens = {
-    val __obj = js.Dynamic.literal(range = range)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (data != null) __obj.updateDynamic("data")(data)
-    __obj.asInstanceOf[CodeLens]
-  }
+@JSImport("vscode-languageserver-types", "CodeLens")
+@js.native
+object CodeLens extends js.Object {
+  /**
+    * Creates a new CodeLens literal.
+    */
+  def create(range: Range): CodeLens = js.native
+  def create(range: Range, data: js.Any): CodeLens = js.native
+  /**
+    * Checks whether the given literal conforms to the [CodeLens](#CodeLens) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.storageNs.StorageArea
-import typings.firefoxDashWebextDashBrowser.browserNs.storageNs.StorageChange
+import typings.firefoxDashWebextDashBrowser.browser.storage.StorageArea
+import typings.firefoxDashWebextDashBrowser.browser.storage.StorageChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

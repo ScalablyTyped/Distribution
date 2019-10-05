@@ -78,3 +78,11 @@ object GeoJSON extends js.Object {
   def latLngsToCoords(latlngs: js.Array[_], levelsDeep: Double, closed: Boolean): js.Array[_] = js.native
 }
 
+@JSImport("leaflet", "geoJSON")
+@js.native
+object geoJSON extends js.Object {
+  def apply[P](): GeoJSON[P] = js.native
+  def apply[P](geojson: GeoJsonObject): GeoJSON[P] = js.native
+  def apply[P](geojson: GeoJsonObject, options: GeoJSONOptions[P]): GeoJSON[P] = js.native
+}
+

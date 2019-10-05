@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_Leading
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.Block
+import typings.astDashTypes.genNamedTypesMod.namedTypes.Block
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

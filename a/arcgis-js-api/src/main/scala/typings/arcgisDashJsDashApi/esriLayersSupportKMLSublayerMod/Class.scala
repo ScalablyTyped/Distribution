@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportKMLSublayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.KMLSublayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.KMLSublayerProperties
+import typings.arcgisDashJsDashApi.__esri.KMLSublayer
+import typings.arcgisDashJsDashApi.__esri.KMLSublayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

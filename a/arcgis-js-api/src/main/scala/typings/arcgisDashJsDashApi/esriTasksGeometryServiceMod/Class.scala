@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksGeometryServiceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeometryService
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeometryServiceProperties
+import typings.arcgisDashJsDashApi.__esri.GeometryService
+import typings.arcgisDashJsDashApi.__esri.GeometryServiceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

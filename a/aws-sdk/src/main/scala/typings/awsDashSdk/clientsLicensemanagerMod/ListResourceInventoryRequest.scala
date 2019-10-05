@@ -21,14 +21,10 @@ trait ListResourceInventoryRequest extends js.Object {
 
 object ListResourceInventoryRequest {
   @scala.inline
-  def apply(
-    Filters: InventoryFilterList = null,
-    MaxResults: js.UndefOr[BoxInteger] = js.undefined,
-    NextToken: String = null
-  ): ListResourceInventoryRequest = {
+  def apply(Filters: InventoryFilterList = null, MaxResults: Int | Double = null, NextToken: String = null): ListResourceInventoryRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListResourceInventoryRequest]
   }

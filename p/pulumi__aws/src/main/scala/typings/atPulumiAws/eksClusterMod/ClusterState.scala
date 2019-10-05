@@ -1,9 +1,9 @@
 package typings.atPulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.eksNs.ClusterCertificateAuthority
-import typings.atPulumiAws.typesInputMod.eksNs.ClusterIdentity
-import typings.atPulumiAws.typesInputMod.eksNs.ClusterVpcConfig
+import typings.atPulumiAws.typesInputMod.eks.ClusterCertificateAuthority
+import typings.atPulumiAws.typesInputMod.eks.ClusterIdentity
+import typings.atPulumiAws.typesInputMod.eks.ClusterVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

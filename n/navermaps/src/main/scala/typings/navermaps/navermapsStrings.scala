@@ -1,8 +1,8 @@
 package typings.navermaps
 
-import typings.navermaps.naverNs.mapsNs.strokeLineCapType
-import typings.navermaps.naverNs.mapsNs.strokeLineJoinType
-import typings.navermaps.naverNs.mapsNs.strokeStyleType
+import typings.navermaps.naver.maps.strokeLineCapType
+import typings.navermaps.naver.maps.strokeLineJoinType
+import typings.navermaps.naver.maps.strokeStyleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

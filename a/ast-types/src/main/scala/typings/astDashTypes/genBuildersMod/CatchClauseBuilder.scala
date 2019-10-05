@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_BodyCommentsGuard
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.CatchClause
+import typings.astDashTypes.genNamedTypesMod.namedTypes.CatchClause
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

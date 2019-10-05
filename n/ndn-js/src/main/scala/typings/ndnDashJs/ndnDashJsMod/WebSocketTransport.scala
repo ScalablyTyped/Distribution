@@ -9,3 +9,15 @@ import scala.scalajs.js.annotation._
 class WebSocketTransport ()
   extends typings.ndnDashJs.transportMod.WebSocketTransport
 
+@JSImport("ndn-js", "WebSocketTransport")
+@js.native
+object WebSocketTransport extends js.Object {
+  @js.native
+  class ConnectionInfo protected ()
+    extends typings.ndnDashJs.transportMod.WebSocketTransport.ConnectionInfo {
+    def this(hostOrUri: String) = this()
+    def this(hostOrUri: String, port: Double) = this()
+  }
+  
+}
+

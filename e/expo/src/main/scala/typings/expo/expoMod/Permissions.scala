@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("expo", "Permissions")
 @js.native
-class PermissionsCls ()
-  extends typings.std.Permissions
-
-@JSImport("expo", "Permissions")
-@js.native
 object Permissions
   extends Instantiable0[typings.std.Permissions]
 

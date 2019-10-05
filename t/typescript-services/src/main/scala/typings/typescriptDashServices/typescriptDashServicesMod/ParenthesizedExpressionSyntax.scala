@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ParenthesizedExpressionSyntax")
 @js.native
 class ParenthesizedExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ParenthesizedExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.ParenthesizedExpressionSyntax {
   def this(
     openParenToken: ISyntaxToken,
     expression: IExpressionSyntax,
@@ -22,6 +22,6 @@ class ParenthesizedExpressionSyntax protected ()
 @JSImport("typescript-services", "ParenthesizedExpressionSyntax")
 @js.native
 object ParenthesizedExpressionSyntax extends js.Object {
-  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.ParenthesizedExpressionSyntax = js.native
+  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScript.ParenthesizedExpressionSyntax = js.native
 }
 

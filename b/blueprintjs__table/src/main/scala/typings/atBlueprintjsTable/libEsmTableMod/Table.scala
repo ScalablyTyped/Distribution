@@ -6,7 +6,7 @@ import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmCommonGridMod.ICellMapper
 import typings.atBlueprintjsTable.libEsmLocatorMod.Locator
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`

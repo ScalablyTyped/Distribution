@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsDeclarationLocSource
 import typings.astDashTypes.genKindsMod.DeclarationKind
 import typings.astDashTypes.genKindsMod.ExportSpecifierKind
 import typings.astDashTypes.genKindsMod.LiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ExportNamedDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ExportNamedDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

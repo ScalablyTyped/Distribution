@@ -53,7 +53,7 @@ object DescribeUsersRequest {
     AuthenticationToken: AuthenticationHeaderType = null,
     Fields: FieldNamesType = null,
     Include: UserFilterType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
+    Limit: Int | Double = null,
     Marker: PageMarkerType = null,
     Order: OrderType = null,
     OrganizationId: IdType = null,
@@ -65,7 +65,7 @@ object DescribeUsersRequest {
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
     if (Fields != null) __obj.updateDynamic("Fields")(Fields)
     if (Include != null) __obj.updateDynamic("Include")(Include.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
     if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId)

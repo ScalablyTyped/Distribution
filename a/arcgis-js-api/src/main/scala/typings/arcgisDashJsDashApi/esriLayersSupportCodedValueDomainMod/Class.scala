@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportCodedValueDomainMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CodedValueDomain
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CodedValueDomainProperties
+import typings.arcgisDashJsDashApi.__esri.CodedValueDomain
+import typings.arcgisDashJsDashApi.__esri.CodedValueDomainProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

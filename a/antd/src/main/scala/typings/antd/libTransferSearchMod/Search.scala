@@ -2,9 +2,9 @@ package typings.antd.libTransferSearchMod
 
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLInputElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 trait Search
   extends Component[TransferSearchProps, js.Any, js.Any] {
   def handleChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
-  def handleClear(e: MouseEvent[HTMLAnchorElement, typings.std.MouseEvent]): Unit = js.native
+  def handleClear(e: typings.react.reactMod.MouseEvent[HTMLAnchorElement, MouseEvent]): Unit = js.native
 }
 

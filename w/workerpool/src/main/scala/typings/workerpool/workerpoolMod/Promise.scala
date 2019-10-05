@@ -23,6 +23,26 @@ class Promise[T, E] () extends js.Object {
 @JSImport("workerpool", "Promise")
 @js.native
 object Promise extends js.Object {
+  @js.native
+  class CancellationError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+    @JSName("name")
+    var name_CancellationError: typings.workerpool.workerpoolStrings.CancellationError = js.native
+  }
+  
+  @js.native
+  class TimeoutError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+    @JSName("name")
+    var name_TimeoutError: typings.workerpool.workerpoolStrings.TimeoutError = js.native
+  }
+  
   def all(promises: js.Array[Promise[_, _]]): Promise[js.Array[_], _] = js.native
 }
 

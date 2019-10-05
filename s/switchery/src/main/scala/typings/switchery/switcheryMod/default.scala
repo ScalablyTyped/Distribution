@@ -1,7 +1,9 @@
 package typings.switchery.switcheryMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Node
-import typings.switchery.switcheryMod.SwitcheryNs.Options
+import typings.switchery.switcheryMod.Switchery.Options
+import typings.switchery.switcheryMod.Switchery.SwitcheryStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,4 +39,8 @@ class default protected () extends Switchery {
   /* CompleteClass */
   override def isDisabled(): Boolean = js.native
 }
+
+@JSImport("switchery", JSImport.Default)
+@js.native
+object default extends TopLevel[SwitcheryStatic]
 

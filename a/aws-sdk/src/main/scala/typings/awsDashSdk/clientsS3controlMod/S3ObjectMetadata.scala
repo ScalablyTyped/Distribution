@@ -58,11 +58,11 @@ object S3ObjectMetadata {
     ContentDisposition: NonEmptyMaxLength1024String = null,
     ContentEncoding: NonEmptyMaxLength1024String = null,
     ContentLanguage: NonEmptyMaxLength1024String = null,
-    ContentLength: js.UndefOr[S3ContentLength] = js.undefined,
+    ContentLength: Int | Double = null,
     ContentMD5: NonEmptyMaxLength1024String = null,
     ContentType: NonEmptyMaxLength1024String = null,
     HttpExpiresDate: TimeStamp = null,
-    RequesterCharged: js.UndefOr[Boolean] = js.undefined,
+    RequesterCharged: js.UndefOr[scala.Boolean] = js.undefined,
     SSEAlgorithm: S3SSEAlgorithm = null,
     UserMetadata: S3UserMetadata = null
   ): S3ObjectMetadata = {
@@ -71,7 +71,7 @@ object S3ObjectMetadata {
     if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition)
     if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding)
     if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage)
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength)
+    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
     if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5)
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
     if (HttpExpiresDate != null) __obj.updateDynamic("HttpExpiresDate")(HttpExpiresDate)

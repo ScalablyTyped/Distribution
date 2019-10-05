@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxNode")
 @js.native
 class SyntaxNode protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxNode {
+  extends typings.typescriptDashServices.TypeScript.SyntaxNode {
   def this(parsedInStrictMode: Boolean) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,5 @@ trait VBArray[T] extends js.Object {
 
 @JSGlobal("VBArray")
 @js.native
-class VBArrayCls[T] protected () extends VBArray[T] {
-  def this(safeArray: SafeArray[T]) = this()
-}
+object VBArray extends TopLevel[VBArrayConstructor]
 

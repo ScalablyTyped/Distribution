@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "leaflet-rotatedmarker"
-version := "0.2-dt-20180214Z-97274b"
-scalaVersion := "2.12.9"
+version := "0.2-dt-20180214Z-a93e80"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

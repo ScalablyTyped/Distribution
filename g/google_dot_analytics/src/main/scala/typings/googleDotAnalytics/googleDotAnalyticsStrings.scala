@@ -1,6 +1,6 @@
 package typings.googleDotAnalytics
 
-import typings.googleDotAnalytics.UniversalAnalyticsNs.HitType
+import typings.googleDotAnalytics.UniversalAnalytics.HitType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

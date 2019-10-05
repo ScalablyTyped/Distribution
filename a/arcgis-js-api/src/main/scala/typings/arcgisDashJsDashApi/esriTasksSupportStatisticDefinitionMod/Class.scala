@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportStatisticDefinitionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StatisticDefinition
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StatisticDefinitionProperties
+import typings.arcgisDashJsDashApi.__esri.StatisticDefinition
+import typings.arcgisDashJsDashApi.__esri.StatisticDefinitionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

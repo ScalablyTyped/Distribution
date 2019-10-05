@@ -1,6 +1,6 @@
 package typings.phonegapDashPluginDashPush
 
-import typings.phonegapDashPluginDashPush.PhonegapPluginPushNs.CategoryArray
+import typings.phonegapDashPluginDashPush.PhonegapPluginPush.CategoryArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.yeomanDashTest.yeomanDashTestMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.yeomanDashGenerator.yeomanDashGeneratorMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RunContextConstructor
   extends Instantiable2[
-      (/* Generator */ Constructor[typings.yeomanDashGenerator.yeomanDashGeneratorMod.^]) | (/* Generator */ String), 
+      (/* Generator */ Constructor[^]) | (/* Generator */ String), 
       /* settings */ RunContextSettings, 
       RunContext
     ]
@@ -20,8 +21,5 @@ trait RunContextConstructor
 	 *                                      is provided, then namespace is assumed to be
 	 *                                      'gen:test' in all cases
 	 */
-Instantiable1[
-      (/* Generator */ Constructor[typings.yeomanDashGenerator.yeomanDashGeneratorMod.^]) | (/* Generator */ String), 
-      RunContext
-    ]
+Instantiable1[(/* Generator */ Constructor[^]) | (/* Generator */ String), RunContext]
 

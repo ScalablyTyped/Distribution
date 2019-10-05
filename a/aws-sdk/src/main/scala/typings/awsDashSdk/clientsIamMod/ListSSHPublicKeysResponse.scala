@@ -22,7 +22,7 @@ trait ListSSHPublicKeysResponse extends js.Object {
 object ListSSHPublicKeysResponse {
   @scala.inline
   def apply(
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null,
     SSHPublicKeys: SSHPublicKeyListType = null
   ): ListSSHPublicKeysResponse = {

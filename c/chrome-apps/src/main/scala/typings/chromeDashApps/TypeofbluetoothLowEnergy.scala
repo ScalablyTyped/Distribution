@@ -1,14 +1,14 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.Advertisement
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.Characteristic
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.Descriptor
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.INotification
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.IProperties
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.IResponse
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.Service
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.Advertisement
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.Characteristic
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.Descriptor
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.INotification
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.IProperties
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.IResponse
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.Service
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.integer
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

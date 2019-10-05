@@ -47,11 +47,5 @@ trait OffscreenCanvas extends EventTarget {
 
 @JSGlobal("OffscreenCanvas")
 @js.native
-class OffscreenCanvasCls protected () extends OffscreenCanvas {
-  def this(width: Double, height: Double) = this()
-}
-
-@JSGlobal("OffscreenCanvas")
-@js.native
 object OffscreenCanvas extends Instantiable2[/* width */ Double, /* height */ Double, OffscreenCanvas]
 

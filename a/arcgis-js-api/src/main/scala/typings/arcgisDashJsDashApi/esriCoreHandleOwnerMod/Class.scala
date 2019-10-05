@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreHandleOwnerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HandleOwner
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HandleOwnerProperties
+import typings.arcgisDashJsDashApi.__esri.HandleOwner
+import typings.arcgisDashJsDashApi.__esri.HandleOwnerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

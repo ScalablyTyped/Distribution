@@ -3,7 +3,7 @@ package typings.i18nextDashNodeDashFsDashBackend.i18nextDashNodeDashFsDashBacken
 import typings.i18next.i18nextMod.BackendModule
 import typings.i18next.i18nextMod.Services
 import typings.i18nextDashNodeDashFsDashBackend.i18nextDashNodeDashFsDashBackendStrings.backend
-import typings.i18nextDashNodeDashFsDashBackend.i18nextNodeFsBackEndNs.i18nextNodeFsBackEndOptions
+import typings.i18nextDashNodeDashFsDashBackend.i18nextNodeFsBackEnd.i18nextNodeFsBackEndOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

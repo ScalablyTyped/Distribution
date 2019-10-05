@@ -20,7 +20,7 @@ object reduxDashFormComponents extends reduxDashFormProps {
   @scala.inline
   def Form[FormData, P, ErrorType]: ComponentType[typings.reduxDashForm.libFormMod.FormProps[FormData, P, ErrorType]] = js.constructorOf[typings.reduxDashForm.libFormMod.Form[FormData, P, ErrorType]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFormMod.FormProps[FormData, P, ErrorType]]]
   @scala.inline
-  def FormName: ComponentType[typings.reduxDashForm.libFormNameMod.FormNameProps] = typings.reduxDashForm.libFormNameMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFormNameMod.FormNameProps]]
+  def FormName: ComponentType[typings.reduxDashForm.libFormNameMod.FormNameProps] = typings.reduxDashForm.libFormNameMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFormNameMod.FormNameProps]]
   @scala.inline
   def FormSection[P]: ComponentType[FormSectionProps[P] with P] = js.constructorOf[typings.reduxDashForm.libFormSectionMod.default[P]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFormSectionMod.FormSectionProps[P] with P]]
   @scala.inline

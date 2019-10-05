@@ -1,7 +1,7 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.DevicesNs.GpioNs.GpioOpenStatus
-import typings.winrtDashUwp.WindowsNs.DevicesNs.GpioNs.GpioPin
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioOpenStatus
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

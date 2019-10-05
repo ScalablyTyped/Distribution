@@ -11,10 +11,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- js.Function because Inheritance from two classes. Inlined length, call, bind
+- typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler because Inheritance from two classes. Inlined `<apply>`
 - typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes. Inlined param, param, all, all, all, all_Original, get, get, get, get_Original, post, post, post, post_Original, put, put, put, put_Original, delete, delete, delete, delete_Original, patch, patch, patch, patch_Original, options, options, options, options_Original, head, head, head, head_Original, checkout, checkout, checkout, checkout_Original, connect, connect, connect, connect_Original, copy, copy, copy, copy_Original, lock, lock, lock, lock_Original, merge, merge, merge, merge_Original, mkactivity, mkactivity, mkactivity, mkactivity_Original, mkcol, mkcol, mkcol, mkcol_Original, move, move, move, move_Original, `m-search`, `m-search`, `m-search`, `m-search_Original`, notify, notify, notify, notify_Original, propfind, propfind, propfind, propfind_Original, proppatch, proppatch, proppatch, proppatch_Original, purge, purge, purge, purge_Original, report, report, report, report_Original, search, search, search, search_Original, subscribe, subscribe, subscribe, subscribe_Original, trace, trace, trace, trace_Original, unlock, unlock, unlock, unlock_Original, unsubscribe, unsubscribe, unsubscribe, unsubscribe_Original, use, use, use, use, use, use_Original, route, stack */ @js.native
 trait Application
   extends EventEmitter
-     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Application {
+     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Application {
   /**
     * Used to get all registered routes in Express Application
     */
@@ -37,6 +39,7 @@ trait Application
   var get_Original: ((js.Function1[/* name */ String, _]) with IRouterMatcher[this.type]) | IRouterMatcher[this.type] = js.native
   @JSName("head")
   var head_Original: IRouterMatcher[this.type] = js.native
+  var length: Int = js.native
   var locals: js.Any = js.native
   @JSName("lock")
   var lock_Original: IRouterMatcher[this.type] = js.native
@@ -101,6 +104,7 @@ trait Application
   var unsubscribe_Original: IRouterMatcher[this.type] = js.native
   @JSName("use")
   var use_Original: (IRouterHandler[this.type] with IRouterMatcher[this.type]) | ApplicationRequestHandler[this.type] = js.native
+  def apply(T0: /* req */ Request[ParamsDictionary], T1: /* res */ Response, T2: /* next */ NextFunction): js.Any = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
@@ -124,6 +128,8 @@ trait Application
     * middleware, and callback to _every_ HTTP method.
     */
   def all[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
+  def bind(thisArg: js.Any, argArray: js.Dynamic*): js.Any = js.native
+  def call(thisArg: js.Any, argArray: js.Dynamic*): js.Any = js.native
   def checkout(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def checkout[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native

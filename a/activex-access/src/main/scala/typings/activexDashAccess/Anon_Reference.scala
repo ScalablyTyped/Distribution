@@ -1,12 +1,12 @@
 package typings.activexDashAccess
 
-import typings.activexDashAccess.AccessNs.Reference
+import typings.activexDashAccess.Access.Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Reference extends js.Object {
-  val Reference: typings.activexDashAccess.AccessNs.Reference
+  val Reference: typings.activexDashAccess.Access.Reference
 }
 
 object Anon_Reference {

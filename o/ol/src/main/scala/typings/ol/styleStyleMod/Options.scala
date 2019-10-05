@@ -1,5 +1,7 @@
 package typings.ol.styleStyleMod
 
+import typings.ol.coordinateMod.Coordinate
+import typings.ol.renderMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +22,7 @@ object Options {
     fill: typings.ol.styleFillMod.default = null,
     geometry: String | typings.ol.geomGeometryMod.default | GeometryFunction = null,
     image: typings.ol.styleImageMod.default = null,
-    renderer: RenderFunction = null,
+    renderer: (/* p0 */ Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]), /* p1 */ State) => Unit = null,
     stroke: typings.ol.styleStrokeMod.default = null,
     text: typings.ol.styleTextMod.default = null,
     zIndex: Int | Double = null
@@ -29,7 +31,7 @@ object Options {
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction2(renderer))
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
     if (text != null) __obj.updateDynamic("text")(text)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

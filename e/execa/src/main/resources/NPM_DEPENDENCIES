@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "execa" : "2.0.4"
+      "execa" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "execa" : "2.0.4"
+      "execa" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

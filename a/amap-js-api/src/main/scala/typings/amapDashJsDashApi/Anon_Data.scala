@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApi
 
-import typings.amapDashJsDashApi.AMapNs.MassMarksNs.Data
+import typings.amapDashJsDashApi.AMap.MassMarks.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

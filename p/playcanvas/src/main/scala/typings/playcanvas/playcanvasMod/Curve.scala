@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Curve")
 @js.native
 class Curve ()
-  extends typings.playcanvas.pcNs.Curve {
+  extends typings.playcanvas.pc.Curve {
   def this(data: js.Array[Number]) = this()
 }
 

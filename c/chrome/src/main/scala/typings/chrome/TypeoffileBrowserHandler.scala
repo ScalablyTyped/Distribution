@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.fileBrowserHandlerNs.FileBrowserHandlerExecuteEvent
-import typings.chrome.chromeNs.fileBrowserHandlerNs.SelectionParams
-import typings.chrome.chromeNs.fileBrowserHandlerNs.SelectionResult
+import typings.chrome.chrome.fileBrowserHandler.FileBrowserHandlerExecuteEvent
+import typings.chrome.chrome.fileBrowserHandler.SelectionParams
+import typings.chrome.chrome.fileBrowserHandler.SelectionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

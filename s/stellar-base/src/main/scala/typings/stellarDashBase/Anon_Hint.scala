@@ -1,7 +1,7 @@
 package typings.stellarDashBase
 
-import typings.stellarDashBase.stellarDashBaseMod.xdrNs.Signature
-import typings.stellarDashBase.stellarDashBaseMod.xdrNs.SignatureHint
+import typings.stellarDashBase.stellarDashBaseMod.xdr.Signature
+import typings.stellarDashBase.stellarDashBaseMod.xdr.SignatureHint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

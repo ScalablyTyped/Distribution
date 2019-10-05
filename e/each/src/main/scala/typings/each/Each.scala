@@ -1,5 +1,6 @@
 package typings.each
 
+import org.scalablytyped.runtime.TopLevel
 import typings.each.eachStrings.both
 import typings.each.eachStrings.end
 import typings.each.eachStrings.error
@@ -44,4 +45,8 @@ trait Each extends js.Object {
   def unshift(items: js.Array[_]): Unit = js.native
   def write(items: js.Array[_]): Unit = js.native
 }
+
+@JSGlobal("each")
+@js.native
+object each extends TopLevel[EachStatic]
 

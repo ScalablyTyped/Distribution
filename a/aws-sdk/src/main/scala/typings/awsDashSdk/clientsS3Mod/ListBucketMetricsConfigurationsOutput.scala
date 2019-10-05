@@ -27,7 +27,7 @@ object ListBucketMetricsConfigurationsOutput {
   @scala.inline
   def apply(
     ContinuationToken: Token = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     MetricsConfigurationList: MetricsConfigurationList = null,
     NextContinuationToken: NextToken = null
   ): ListBucketMetricsConfigurationsOutput = {

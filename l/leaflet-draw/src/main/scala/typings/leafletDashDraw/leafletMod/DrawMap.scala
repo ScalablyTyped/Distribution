@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.DrawMap")
+@JSImport("leaflet", "DrawMap")
 @js.native
 class DrawMap () extends Map {
   def addInitHook(): Unit = js.native
   def mergeOptions(): Unit = js.native
-  def mergeOptions(options: typings.leaflet.leafletMod.MapOptions): Unit = js.native
+  def mergeOptions(options: MapOptions): Unit = js.native
 }
 

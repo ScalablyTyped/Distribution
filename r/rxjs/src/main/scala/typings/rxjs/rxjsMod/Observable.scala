@@ -1,5 +1,6 @@
 package typings.rxjs.rxjsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.Fn_Condition
 import typings.rxjs.internalTypesMod.SchedulerLike
 import typings.rxjs.internalTypesMod.SubscribableOrPromise
@@ -75,4 +76,9 @@ object Observable extends js.Object {
   def `throw`(error: js.Any): typings.rxjs.internalObservableMod.Observable[scala.Nothing] = js.native
   def `throw`(error: js.Any, scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[scala.Nothing] = js.native
 }
+
+@JSImport("rxjs", "observable")
+@js.native
+object observable
+  extends TopLevel[String | js.Symbol]
 

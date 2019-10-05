@@ -87,3 +87,11 @@ trait ForceY[NodeDatum /* <: SimulationNodeDatum */]
   def y(y: Double): this.type = js.native
 }
 
+@JSImport("d3-force", "forceY")
+@js.native
+object forceY extends js.Object {
+  def apply[NodeDatum /* <: SimulationNodeDatum */](): ForceY[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY[NodeDatum] = js.native
+}
+

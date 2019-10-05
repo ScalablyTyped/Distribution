@@ -29,7 +29,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.straight
 import typings.atOracleOraclejet.atOracleOraclejetStrings.triangleDown
 import typings.atOracleOraclejet.atOracleOraclejetStrings.triangleUp
 import typings.atOracleOraclejet.atOracleOraclejetStrings.zero
-import typings.atOracleOraclejet.ojchartMod.ojSparkChartNs.ReferenceObject
+import typings.atOracleOraclejet.ojchartMod.ojSparkChart.ReferenceObject
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
 import typings.std.AnimationEvent

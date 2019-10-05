@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tinycon"
-version := "0.6-dt-20190215Z-8d8010"
-scalaVersion := "2.12.9"
+version := "0.6-dt-20190215Z-65821a"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

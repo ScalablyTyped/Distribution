@@ -32,5 +32,8 @@ object Fullscreen extends js.Object {
   /* 4 */ val fullscreen: typings.cesium.cesiumMod.Fullscreen.fullscreen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Fullscreen with Double] = js.native
+  def exitFullscreen(): js.UndefOr[scala.Nothing] = js.native
+  def requestFullscreen(element: js.Any): js.UndefOr[scala.Nothing] = js.native
+  def supportsFullscreen(): Boolean = js.native
 }
 

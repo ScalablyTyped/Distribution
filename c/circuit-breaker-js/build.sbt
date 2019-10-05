@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "circuit-breaker-js"
-version := "0.0-dt-20180328Z-191376"
-scalaVersion := "2.12.9"
+version := "0.0-dt-20180328Z-08dd76"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

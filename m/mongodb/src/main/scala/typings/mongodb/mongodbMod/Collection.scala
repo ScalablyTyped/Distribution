@@ -12,7 +12,7 @@ import typings.mongodb.Anon_ReadPreferenceSession
 import typings.mongodb.Anon_ScaleSession
 import typings.mongodb.Anon_Session
 import typings.mongodb.Anon_SessionClientSession
-import typings.mongodb.Anon_SessionClientSession_327439633
+import typings.mongodb.Anon_SessionClientSession_582825874
 import typings.mongodb.Anon_Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -126,8 +126,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#drop */
   def drop(): js.Promise[_] = js.native
   def drop(callback: MongoCallback[_]): Unit = js.native
-  def drop(options: Anon_SessionClientSession_327439633): js.Promise[_] = js.native
-  def drop(options: Anon_SessionClientSession_327439633, callback: MongoCallback[_]): Unit = js.native
+  def drop(options: Anon_SessionClientSession_582825874): js.Promise[_] = js.native
+  def drop(options: Anon_SessionClientSession_582825874, callback: MongoCallback[_]): Unit = js.native
   def dropIndex(indexName: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#dropIndex */
   def dropIndex(indexName: String, callback: MongoCallback[_]): Unit = js.native
@@ -794,14 +794,14 @@ trait Collection[TSchema] extends js.Object {
   def indexExists(indexes: String): js.Promise[Boolean] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexExists */
   def indexExists(indexes: String, callback: MongoCallback[Boolean]): Unit = js.native
-  def indexExists(indexes: String, options: Anon_SessionClientSession_327439633): js.Promise[Boolean] = js.native
-  def indexExists(indexes: String, options: Anon_SessionClientSession_327439633, callback: MongoCallback[Boolean]): Unit = js.native
+  def indexExists(indexes: String, options: Anon_SessionClientSession_582825874): js.Promise[Boolean] = js.native
+  def indexExists(indexes: String, options: Anon_SessionClientSession_582825874, callback: MongoCallback[Boolean]): Unit = js.native
   def indexExists(indexes: js.Array[String]): js.Promise[Boolean] = js.native
   def indexExists(indexes: js.Array[String], callback: MongoCallback[Boolean]): Unit = js.native
-  def indexExists(indexes: js.Array[String], options: Anon_SessionClientSession_327439633): js.Promise[Boolean] = js.native
+  def indexExists(indexes: js.Array[String], options: Anon_SessionClientSession_582825874): js.Promise[Boolean] = js.native
   def indexExists(
     indexes: js.Array[String],
-    options: Anon_SessionClientSession_327439633,
+    options: Anon_SessionClientSession_582825874,
     callback: MongoCallback[Boolean]
   ): Unit = js.native
   def indexInformation(): js.Promise[_] = js.native
@@ -812,7 +812,7 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexes */
   def indexes(): js.Promise[_] = js.native
   def indexes(callback: MongoCallback[_]): Unit = js.native
-  def indexes(options: Anon_SessionClientSession_327439633): js.Promise[_] = js.native
+  def indexes(options: Anon_SessionClientSession_582825874): js.Promise[_] = js.native
   def indexes(options: Anon_SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#initializeOrderedBulkOp */
   def initializeOrderedBulkOp(): OrderedBulkOperation = js.native
@@ -853,8 +853,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#isCapped */
   def isCapped(): js.Promise[_] = js.native
   def isCapped(callback: MongoCallback[_]): Unit = js.native
-  def isCapped(options: Anon_SessionClientSession_327439633): js.Promise[_] = js.native
-  def isCapped(options: Anon_SessionClientSession_327439633, callback: MongoCallback[_]): Unit = js.native
+  def isCapped(options: Anon_SessionClientSession_582825874): js.Promise[_] = js.native
+  def isCapped(options: Anon_SessionClientSession_582825874, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#listIndexes */
   def listIndexes(): CommandCursor = js.native
   def listIndexes(options: Anon_BatchSizeReadPreference): CommandCursor = js.native
@@ -901,8 +901,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#options */
   def options(): js.Promise[_] = js.native
   def options(callback: MongoCallback[_]): Unit = js.native
-  def options(options: Anon_SessionClientSession_327439633): js.Promise[_] = js.native
-  def options(options: Anon_SessionClientSession_327439633, callback: MongoCallback[_]): Unit = js.native
+  def options(options: Anon_SessionClientSession_582825874): js.Promise[_] = js.native
+  def options(options: Anon_SessionClientSession_582825874, callback: MongoCallback[_]): Unit = js.native
   def parallelCollectionScan(): js.Promise[js.Array[Cursor[_]]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#parallelCollectionScan */
   def parallelCollectionScan(callback: MongoCallback[js.Array[Cursor[_]]]): Unit = js.native
@@ -911,8 +911,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#reIndex */
   def reIndex(): js.Promise[_] = js.native
   def reIndex(callback: MongoCallback[_]): Unit = js.native
-  def reIndex(options: Anon_SessionClientSession_327439633): js.Promise[_] = js.native
-  def reIndex(options: Anon_SessionClientSession_327439633, callback: MongoCallback[_]): Unit = js.native
+  def reIndex(options: Anon_SessionClientSession_582825874): js.Promise[_] = js.native
+  def reIndex(options: Anon_SessionClientSession_582825874, callback: MongoCallback[_]): Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   def remove(selector: js.Object): js.Promise[WriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#remove */

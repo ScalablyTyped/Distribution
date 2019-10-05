@@ -1,11 +1,11 @@
 package typings.googlemaps
 
-import typings.googlemaps.googleNs.mapsNs.DrawingMode
-import typings.googlemaps.googleNs.mapsNs.GestureHandlingOptions
-import typings.googlemaps.googleNs.mapsNs.MapTypeStyleElementType
-import typings.googlemaps.googleNs.mapsNs.MapTypeStyleFeatureType
-import typings.googlemaps.googleNs.mapsNs.MarkerChangeOptionEventNames
-import typings.googlemaps.googleNs.mapsNs.MarkerMouseEventNames
+import typings.googlemaps.google.maps.DrawingMode
+import typings.googlemaps.google.maps.GestureHandlingOptions
+import typings.googlemaps.google.maps.MapTypeStyleElementType
+import typings.googlemaps.google.maps.MapTypeStyleFeatureType
+import typings.googlemaps.google.maps.MarkerChangeOptionEventNames
+import typings.googlemaps.google.maps.MarkerMouseEventNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

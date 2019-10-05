@@ -1,8 +1,8 @@
 package typings.electron.electronMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.electron.ElectronNs.CreateFromBitmapOptions
-import typings.electron.ElectronNs.CreateFromBufferOptions
+import typings.electron.Electron.CreateFromBitmapOptions
+import typings.electron.Electron.CreateFromBufferOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,12 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "NativeImage")
 @js.native
 class NativeImage ()
-  extends typings.electron.ElectronNs.NativeImage
-
-@JSImport("electron", "nativeImage")
-@js.native
-class nativeImageCls ()
-  extends typings.electron.ElectronNs.NativeImage
+  extends typings.electron.Electron.NativeImage
 
 /* static members */
 @JSImport("electron", "NativeImage")
@@ -26,22 +21,22 @@ object NativeImage extends js.Object {
   /**
     * Creates an empty NativeImage instance.
     */
-  def createEmpty(): typings.electron.ElectronNs.NativeImage = js.native
+  def createEmpty(): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from buffer that contains the raw bitmap
     * pixel data returned by toBitmap(). The specific format is platform-dependent.
     */
-  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
     * first.
     */
-  def createFromBuffer(buffer: Buffer): typings.electron.ElectronNs.NativeImage = js.native
-  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromBuffer(buffer: Buffer): typings.electron.Electron.NativeImage = js.native
+  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from dataURL.
     */
-  def createFromDataURL(dataURL: String): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromDataURL(dataURL: String): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from the NSImage that maps to the given image
     * name. See NSImageName for a list of possible values. The hslShift is applied to
@@ -55,39 +50,39 @@ object NativeImage extends js.Object {
     * clang -otest -x objective-c -framework Cocoa - && ./test where SYSTEM_IMAGE_NAME
     * should be replaced with any value from this list.
     */
-  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from a file located at path. This method
     * returns an empty image if the path does not exist, cannot be read, or is not a
     * valid image.
     */
-  def createFromPath(path: String): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromPath(path: String): typings.electron.Electron.NativeImage = js.native
 }
 
 @JSImport("electron", "nativeImage")
 @js.native
 object nativeImage
-  extends Instantiable0[typings.electron.ElectronNs.NativeImage] {
+  extends Instantiable0[typings.electron.Electron.NativeImage] {
   // Docs: http://electronjs.org/docs/api/native-image
   /**
     * Creates an empty NativeImage instance.
     */
-  def createEmpty(): typings.electron.ElectronNs.NativeImage = js.native
+  def createEmpty(): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from buffer that contains the raw bitmap
     * pixel data returned by toBitmap(). The specific format is platform-dependent.
     */
-  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from buffer. Tries to decode as PNG or JPEG
     * first.
     */
-  def createFromBuffer(buffer: Buffer): typings.electron.ElectronNs.NativeImage = js.native
-  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromBuffer(buffer: Buffer): typings.electron.Electron.NativeImage = js.native
+  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from dataURL.
     */
-  def createFromDataURL(dataURL: String): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromDataURL(dataURL: String): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from the NSImage that maps to the given image
     * name. See NSImageName for a list of possible values. The hslShift is applied to
@@ -101,12 +96,12 @@ object nativeImage
     * clang -otest -x objective-c -framework Cocoa - && ./test where SYSTEM_IMAGE_NAME
     * should be replaced with any value from this list.
     */
-  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.Electron.NativeImage = js.native
   /**
     * Creates a new NativeImage instance from a file located at path. This method
     * returns an empty image if the path does not exist, cannot be read, or is not a
     * valid image.
     */
-  def createFromPath(path: String): typings.electron.ElectronNs.NativeImage = js.native
+  def createFromPath(path: String): typings.electron.Electron.NativeImage = js.native
 }
 

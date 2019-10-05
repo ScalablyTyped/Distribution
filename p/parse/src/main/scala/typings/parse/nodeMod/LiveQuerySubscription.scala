@@ -72,7 +72,7 @@ subscription.on('close', () => {});
 @JSImport("parse/node", "LiveQuerySubscription")
 @js.native
 class LiveQuerySubscription protected ()
-  extends typings.parse.ParseNs.LiveQuerySubscription {
+  extends typings.parse.Parse.LiveQuerySubscription {
   /**
     * Creates an instance of LiveQuerySubscription.
     *

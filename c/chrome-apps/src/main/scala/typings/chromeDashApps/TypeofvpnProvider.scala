@@ -1,8 +1,8 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.vpnProviderNs.VpnSessionParameters
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.vpnProvider.VpnSessionParameters
 import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js

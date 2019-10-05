@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofSchema extends js.Object {
-  val TypesNs: js.Any
+  val Types: js.Any
 }
 
 object TypeofSchema {
   @scala.inline
-  def apply(TypesNs: js.Any): TypeofSchema = {
-    val __obj = js.Dynamic.literal(TypesNs = TypesNs)
+  def apply(Types: js.Any): TypeofSchema = {
+    val __obj = js.Dynamic.literal(Types = Types)
   
     __obj.asInstanceOf[TypeofSchema]
   }

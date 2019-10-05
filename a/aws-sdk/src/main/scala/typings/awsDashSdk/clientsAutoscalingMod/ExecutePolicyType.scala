@@ -32,15 +32,15 @@ object ExecutePolicyType {
   def apply(
     PolicyName: ResourceName,
     AutoScalingGroupName: ResourceName = null,
-    BreachThreshold: js.UndefOr[MetricScale] = js.undefined,
-    HonorCooldown: js.UndefOr[HonorCooldown] = js.undefined,
-    MetricValue: js.UndefOr[MetricScale] = js.undefined
+    BreachThreshold: Int | Double = null,
+    HonorCooldown: js.UndefOr[Boolean] = js.undefined,
+    MetricValue: Int | Double = null
   ): ExecutePolicyType = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName)
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName)
-    if (!js.isUndefined(BreachThreshold)) __obj.updateDynamic("BreachThreshold")(BreachThreshold)
+    if (BreachThreshold != null) __obj.updateDynamic("BreachThreshold")(BreachThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(HonorCooldown)) __obj.updateDynamic("HonorCooldown")(HonorCooldown)
-    if (!js.isUndefined(MetricValue)) __obj.updateDynamic("MetricValue")(MetricValue)
+    if (MetricValue != null) __obj.updateDynamic("MetricValue")(MetricValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutePolicyType]
   }
 }

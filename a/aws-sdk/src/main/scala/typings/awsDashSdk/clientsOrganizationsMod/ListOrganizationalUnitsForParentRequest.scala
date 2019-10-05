@@ -21,9 +21,9 @@ trait ListOrganizationalUnitsForParentRequest extends js.Object {
 
 object ListOrganizationalUnitsForParentRequest {
   @scala.inline
-  def apply(ParentId: ParentId, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListOrganizationalUnitsForParentRequest = {
+  def apply(ParentId: ParentId, MaxResults: Int | Double = null, NextToken: NextToken = null): ListOrganizationalUnitsForParentRequest = {
     val __obj = js.Dynamic.literal(ParentId = ParentId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListOrganizationalUnitsForParentRequest]
   }

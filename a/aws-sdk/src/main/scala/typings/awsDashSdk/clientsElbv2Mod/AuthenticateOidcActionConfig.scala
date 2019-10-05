@@ -68,8 +68,8 @@ object AuthenticateOidcActionConfig {
     OnUnauthenticatedRequest: AuthenticateOidcActionConditionalBehaviorEnum = null,
     Scope: AuthenticateOidcActionScope = null,
     SessionCookieName: AuthenticateOidcActionSessionCookieName = null,
-    SessionTimeout: js.UndefOr[AuthenticateOidcActionSessionTimeout] = js.undefined,
-    UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
+    SessionTimeout: Int | Double = null,
+    UseExistingClientSecret: js.UndefOr[Boolean] = js.undefined
   ): AuthenticateOidcActionConfig = {
     val __obj = js.Dynamic.literal(AuthorizationEndpoint = AuthorizationEndpoint, ClientId = ClientId, Issuer = Issuer, TokenEndpoint = TokenEndpoint, UserInfoEndpoint = UserInfoEndpoint)
     if (AuthenticationRequestExtraParams != null) __obj.updateDynamic("AuthenticationRequestExtraParams")(AuthenticationRequestExtraParams)
@@ -77,7 +77,7 @@ object AuthenticateOidcActionConfig {
     if (OnUnauthenticatedRequest != null) __obj.updateDynamic("OnUnauthenticatedRequest")(OnUnauthenticatedRequest.asInstanceOf[js.Any])
     if (Scope != null) __obj.updateDynamic("Scope")(Scope)
     if (SessionCookieName != null) __obj.updateDynamic("SessionCookieName")(SessionCookieName)
-    if (!js.isUndefined(SessionTimeout)) __obj.updateDynamic("SessionTimeout")(SessionTimeout)
+    if (SessionTimeout != null) __obj.updateDynamic("SessionTimeout")(SessionTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(UseExistingClientSecret)) __obj.updateDynamic("UseExistingClientSecret")(UseExistingClientSecret)
     __obj.asInstanceOf[AuthenticateOidcActionConfig]
   }

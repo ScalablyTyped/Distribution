@@ -9,3 +9,14 @@ import scala.scalajs.js.annotation._
 class TcpTransport ()
   extends typings.ndnDashJs.transportMod.TcpTransport
 
+@JSImport("ndn-js", "TcpTransport")
+@js.native
+object TcpTransport extends js.Object {
+  @js.native
+  class ConnectionInfo protected ()
+    extends typings.ndnDashJs.transportMod.TcpTransport.ConnectionInfo {
+    def this(host: String, port: Double) = this()
+  }
+  
+}
+

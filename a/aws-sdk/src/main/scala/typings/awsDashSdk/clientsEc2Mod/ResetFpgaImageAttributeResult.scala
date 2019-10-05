@@ -13,7 +13,7 @@ trait ResetFpgaImageAttributeResult extends js.Object {
 
 object ResetFpgaImageAttributeResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): ResetFpgaImageAttributeResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ResetFpgaImageAttributeResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[ResetFpgaImageAttributeResult]

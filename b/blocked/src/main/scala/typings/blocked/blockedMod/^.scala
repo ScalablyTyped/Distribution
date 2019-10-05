@@ -1,6 +1,6 @@
 package typings.blocked.blockedMod
 
-import typings.node.NodeJSNs.Timer
+import typings.node.NodeJS.Timer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

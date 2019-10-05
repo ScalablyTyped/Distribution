@@ -1,7 +1,7 @@
 package typings.streamDashSeries
 
-import typings.node.NodeJSNs.ReadWriteStream
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

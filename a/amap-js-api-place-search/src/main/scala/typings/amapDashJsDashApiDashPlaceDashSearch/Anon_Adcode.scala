@@ -1,9 +1,9 @@
 package typings.amapDashJsDashApiDashPlaceDashSearch
 
-import typings.amapDashJsDashApi.AMapNs.LngLat
-import typings.amapDashJsDashApiDashPlaceDashSearch.AMapNs.PlaceSearchNs.Discount
-import typings.amapDashJsDashApiDashPlaceDashSearch.AMapNs.PlaceSearchNs.Groupbuy
-import typings.amapDashJsDashApiDashPlaceDashSearch.AMapNs.PlaceSearchNs.PoiPhoto
+import typings.amapDashJsDashApi.AMap.LngLat
+import typings.amapDashJsDashApiDashPlaceDashSearch.AMap.PlaceSearch.Discount
+import typings.amapDashJsDashApiDashPlaceDashSearch.AMap.PlaceSearch.Groupbuy
+import typings.amapDashJsDashApiDashPlaceDashSearch.AMap.PlaceSearch.PoiPhoto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

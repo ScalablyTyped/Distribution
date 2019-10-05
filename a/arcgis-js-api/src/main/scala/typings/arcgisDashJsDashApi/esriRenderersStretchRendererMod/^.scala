@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersStretchRendererMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StretchRendererConstructor
+import typings.arcgisDashJsDashApi.__esri.StretchRendererConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,18 +15,6 @@ trait ContactError extends js.Object {
 
 @JSGlobal("ContactError")
 @js.native
-class ContactErrorCls protected () extends ContactError {
-  def this(code: Double) = this()
-  /** Error code */
-  /* CompleteClass */
-  override var code: Double = js.native
-  /** Error message */
-  /* CompleteClass */
-  override var message: String = js.native
-}
-
-@JSGlobal("ContactError")
-@js.native
 object ContactError extends Instantiable1[/* code */ Double, ContactError] {
   var INVALID_ARGUMENT_ERROR: Double = js.native
   var IO_ERROR: Double = js.native

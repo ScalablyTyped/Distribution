@@ -1,8 +1,8 @@
 package typings.jqueryDotValidation
 
-import typings.jqueryDotValidation.JQueryValidationNs.RulesDictionary
-import typings.jqueryDotValidation.JQueryValidationNs.ValidationOptions
-import typings.jqueryDotValidation.JQueryValidationNs.Validator
+import typings.jqueryDotValidation.JQueryValidation.RulesDictionary
+import typings.jqueryDotValidation.JQueryValidation.ValidationOptions
+import typings.jqueryDotValidation.JQueryValidation.Validator
 import typings.jqueryDotValidation.jqueryDotValidationStrings.add
 import typings.jqueryDotValidation.jqueryDotValidationStrings.remove
 import scala.scalajs.js

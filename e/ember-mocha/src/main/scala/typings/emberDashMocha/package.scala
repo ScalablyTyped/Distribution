@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object emberDashMocha {
-  import typings.mocha.MochaNs.HookFunction
+  import typings.mocha.Mocha.HookFunction
 
   type mochaAfter = HookFunction
   type mochaAfterEach = HookFunction

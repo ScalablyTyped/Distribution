@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ArrayUtilities")
 @js.native
 class ArrayUtilities ()
-  extends typings.typescriptDashServices.TypeScriptNs.ArrayUtilities
+  extends typings.typescriptDashServices.TypeScript.ArrayUtilities
 
 /* static members */
 @JSImport("typescript-services", "ArrayUtilities")

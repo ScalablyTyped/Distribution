@@ -21,3 +21,10 @@ object PathValue {
   }
 }
 
+@JSImport("falcor-json-graph", "pathValue")
+@js.native
+object pathValue extends js.Object {
+  def apply(path: String, value: js.Any): PathValue = js.native
+  def apply(path: PathSet, value: js.Any): PathValue = js.native
+}
+

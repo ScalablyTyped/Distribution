@@ -24,7 +24,7 @@ object DescribeNetworkInterfaceAttributeRequest {
   def apply(
     NetworkInterfaceId: String,
     Attribute: NetworkInterfaceAttribute = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId)
     if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])

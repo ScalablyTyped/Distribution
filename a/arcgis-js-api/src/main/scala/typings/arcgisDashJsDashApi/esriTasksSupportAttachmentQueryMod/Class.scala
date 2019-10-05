@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportAttachmentQueryMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentQuery
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentQueryProperties
+import typings.arcgisDashJsDashApi.__esri.AttachmentQuery
+import typings.arcgisDashJsDashApi.__esri.AttachmentQueryProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

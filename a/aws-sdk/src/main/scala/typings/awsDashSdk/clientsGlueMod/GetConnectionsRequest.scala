@@ -32,15 +32,15 @@ object GetConnectionsRequest {
   def apply(
     CatalogId: CatalogIdString = null,
     Filter: GetConnectionsFilter = null,
-    HidePassword: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    HidePassword: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null
   ): GetConnectionsRequest = {
     val __obj = js.Dynamic.literal()
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
     if (!js.isUndefined(HidePassword)) __obj.updateDynamic("HidePassword")(HidePassword)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetConnectionsRequest]
   }

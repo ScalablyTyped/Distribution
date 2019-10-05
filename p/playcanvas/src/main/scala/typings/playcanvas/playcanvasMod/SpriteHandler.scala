@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SpriteHandler")
 @js.native
 class SpriteHandler protected ()
-  extends typings.playcanvas.pcNs.SpriteHandler {
-  def this(assets: typings.playcanvas.pcNs.AssetRegistry, device: typings.playcanvas.pcNs.GraphicsDevice) = this()
+  extends typings.playcanvas.pc.SpriteHandler {
+  def this(assets: typings.playcanvas.pc.AssetRegistry, device: typings.playcanvas.pc.GraphicsDevice) = this()
 }
 

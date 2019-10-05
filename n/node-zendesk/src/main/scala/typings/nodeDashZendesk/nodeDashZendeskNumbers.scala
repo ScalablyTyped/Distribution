@@ -1,6 +1,6 @@
 package typings.nodeDashZendesk
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.RoleType
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users.RoleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -51,7 +51,7 @@ object CreateTapesInput {
     NumTapesToCreate: NumTapesToCreate,
     TapeBarcodePrefix: TapeBarcodePrefix,
     TapeSizeInBytes: TapeSize,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     PoolId: PoolId = null,
     Tags: Tags = null

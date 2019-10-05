@@ -23,7 +23,7 @@ object ListUserPoliciesResponse {
   @scala.inline
   def apply(
     PolicyNames: policyNameListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListUserPoliciesResponse = {
     val __obj = js.Dynamic.literal(PolicyNames = PolicyNames)

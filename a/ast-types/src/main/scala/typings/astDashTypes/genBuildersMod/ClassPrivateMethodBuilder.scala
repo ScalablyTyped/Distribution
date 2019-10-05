@@ -8,7 +8,7 @@ import typings.astDashTypes.astDashTypesStrings.set
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.PatternKind
 import typings.astDashTypes.genKindsMod.PrivateNameKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassPrivateMethod
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassPrivateMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

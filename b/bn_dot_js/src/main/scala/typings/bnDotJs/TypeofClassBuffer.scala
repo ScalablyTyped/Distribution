@@ -3,7 +3,7 @@ package typings.bnDotJs
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.Buffer
 import typings.node.BufferEncoding
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.SharedArrayBuffer
 import typings.std.ArrayBuffer
 import typings.std.DataView

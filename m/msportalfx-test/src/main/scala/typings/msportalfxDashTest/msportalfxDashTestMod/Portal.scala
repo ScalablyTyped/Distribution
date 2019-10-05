@@ -1,9 +1,10 @@
 package typings.msportalfxDashTest.msportalfxDashTestMod
 
-import typings.msportalfxDashTest.msportalfxDashTestMod.BladesNs.Blade
-import typings.msportalfxDashTest.msportalfxDashTestMod.BladesNs.BrowseResourceBlade
-import typings.msportalfxDashTest.msportalfxDashTestMod.BladesNs.CreateBlade
-import typings.msportalfxDashTest.msportalfxDashTestMod.LocatorsNs.Locator
+import org.scalablytyped.runtime.TopLevel
+import typings.msportalfxDashTest.msportalfxDashTestMod.Blades.Blade
+import typings.msportalfxDashTest.msportalfxDashTestMod.Blades.BrowseResourceBlade
+import typings.msportalfxDashTest.msportalfxDashTestMod.Blades.CreateBlade
+import typings.msportalfxDashTest.msportalfxDashTestMod.Locators.Locator
 import typings.q.qMod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,4 +44,8 @@ class Portal () extends js.Object {
   def waitUntilElementDoesNotContainAttribute(locator: Locator, attributeName: String, attributeValue: String): Promise[_] = js.native
   def waitUntilElementDoesNotContainAttribute(locator: Locator, attributeName: String, attributeValue: String, timeout: Double): Promise[_] = js.native
 }
+
+@JSImport("msportalfx-test", "portal")
+@js.native
+object portal extends TopLevel[Portal]
 

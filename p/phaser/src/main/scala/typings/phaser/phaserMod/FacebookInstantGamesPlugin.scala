@@ -41,11 +41,11 @@ import scala.scalajs.js.annotation._
 @JSImport("phaser", "FacebookInstantGamesPlugin")
 @js.native
 class FacebookInstantGamesPlugin protected ()
-  extends typings.phaser.PhaserNs.FacebookInstantGamesPlugin {
+  extends typings.phaser.Phaser.FacebookInstantGamesPlugin {
   /**
     * 
     * @param game A reference to the Phaser.Game instance.
     */
-  def this(game: typings.phaser.PhaserNs.Game) = this()
+  def this(game: typings.phaser.Phaser.Game) = this()
 }
 

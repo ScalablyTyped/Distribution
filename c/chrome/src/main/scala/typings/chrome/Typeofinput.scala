@@ -13,13 +13,13 @@ trait Typeofinput extends js.Object {
     * Permissions:  "input"
     * @since Chrome 21.
     */
-  val imeNs: Typeofime
+  val ime: Typeofime
 }
 
 object Typeofinput {
   @scala.inline
-  def apply(imeNs: Typeofime): Typeofinput = {
-    val __obj = js.Dynamic.literal(imeNs = imeNs)
+  def apply(ime: Typeofime): Typeofinput = {
+    val __obj = js.Dynamic.literal(ime = ime)
   
     __obj.asInstanceOf[Typeofinput]
   }

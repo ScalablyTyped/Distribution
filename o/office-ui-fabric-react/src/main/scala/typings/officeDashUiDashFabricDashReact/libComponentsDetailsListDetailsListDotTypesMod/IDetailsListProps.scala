@@ -21,6 +21,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.FocusEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.Event
@@ -100,9 +101,7 @@ trait IDetailsListProps
   /**
     * Optional function to override default group height calculation used by list virtualization.
     */
-  var getGroupHeight: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList.IGroupedListProps['getGroupHeight'] */ js.Any
-  ] = js.undefined
+  var getGroupHeight: js.UndefOr[js.Function2[/* group */ IGroup, /* groupIndex */ Double, Double]] = js.undefined
   /**
     * Optional callback to get the item key, to be used in the selection and on render.
     * Must be provided if sorting or filtering is enabled.
@@ -321,7 +320,7 @@ object IDetailsListProps {
     enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined,
     enterModalSelectionOnTouch: js.UndefOr[Boolean] = js.undefined,
     getCellValueKey: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String = null,
-    getGroupHeight: /* import warning: ImportType.apply Failed type conversion: office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList.IGroupedListProps['getGroupHeight'] */ js.Any = null,
+    getGroupHeight: (/* group */ IGroup, /* groupIndex */ Double) => Double = null,
     getKey: (/* item */ js.Any, /* index */ js.UndefOr[Double]) => String = null,
     getRowAriaDescribedBy: /* item */ js.Any => String = null,
     getRowAriaLabel: /* item */ js.Any => String = null,
@@ -341,12 +340,12 @@ object IDetailsListProps {
     onDidUpdate: /* detailsList */ js.UndefOr[DetailsListBase] => Unit = null,
     onItemContextMenu: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean = null,
     onItemInvoked: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit = null,
-    onRenderCheckbox: IRenderFunction[IDetailsListCheckboxProps] = null,
-    onRenderDetailsFooter: IRenderFunction[IDetailsFooterProps] = null,
-    onRenderDetailsHeader: IRenderFunction[IDetailsHeaderProps] = null,
+    onRenderCheckbox: (/* props */ js.UndefOr[IDetailsListCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsListCheckboxProps], Element | Null]]) => Element | Null = null,
+    onRenderDetailsFooter: (/* props */ js.UndefOr[IDetailsFooterProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsFooterProps], Element | Null]]) => Element | Null = null,
+    onRenderDetailsHeader: (/* props */ js.UndefOr[IDetailsHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsHeaderProps], Element | Null]]) => Element | Null = null,
     onRenderItemColumn: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode = null,
     onRenderMissingItem: (/* index */ js.UndefOr[Double], /* rowProps */ js.UndefOr[IDetailsRowProps]) => ReactNode = null,
-    onRenderRow: IRenderFunction[IDetailsRowProps] = null,
+    onRenderRow: (/* props */ js.UndefOr[IDetailsRowProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsRowProps], Element | Null]]) => Element | Null = null,
     onRowDidMount: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit = null,
     onRowWillUnmount: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit = null,
     onShouldVirtualize: /* props */ IListProps[_] => Boolean = null,
@@ -386,7 +385,7 @@ object IDetailsListProps {
     if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations)
     if (!js.isUndefined(enterModalSelectionOnTouch)) __obj.updateDynamic("enterModalSelectionOnTouch")(enterModalSelectionOnTouch)
     if (getCellValueKey != null) __obj.updateDynamic("getCellValueKey")(js.Any.fromFunction3(getCellValueKey))
-    if (getGroupHeight != null) __obj.updateDynamic("getGroupHeight")(getGroupHeight)
+    if (getGroupHeight != null) __obj.updateDynamic("getGroupHeight")(js.Any.fromFunction2(getGroupHeight))
     if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction2(getKey))
     if (getRowAriaDescribedBy != null) __obj.updateDynamic("getRowAriaDescribedBy")(js.Any.fromFunction1(getRowAriaDescribedBy))
     if (getRowAriaLabel != null) __obj.updateDynamic("getRowAriaLabel")(js.Any.fromFunction1(getRowAriaLabel))
@@ -406,12 +405,12 @@ object IDetailsListProps {
     if (onDidUpdate != null) __obj.updateDynamic("onDidUpdate")(js.Any.fromFunction1(onDidUpdate))
     if (onItemContextMenu != null) __obj.updateDynamic("onItemContextMenu")(js.Any.fromFunction3(onItemContextMenu))
     if (onItemInvoked != null) __obj.updateDynamic("onItemInvoked")(js.Any.fromFunction3(onItemInvoked))
-    if (onRenderCheckbox != null) __obj.updateDynamic("onRenderCheckbox")(onRenderCheckbox)
-    if (onRenderDetailsFooter != null) __obj.updateDynamic("onRenderDetailsFooter")(onRenderDetailsFooter)
-    if (onRenderDetailsHeader != null) __obj.updateDynamic("onRenderDetailsHeader")(onRenderDetailsHeader)
+    if (onRenderCheckbox != null) __obj.updateDynamic("onRenderCheckbox")(js.Any.fromFunction2(onRenderCheckbox))
+    if (onRenderDetailsFooter != null) __obj.updateDynamic("onRenderDetailsFooter")(js.Any.fromFunction2(onRenderDetailsFooter))
+    if (onRenderDetailsHeader != null) __obj.updateDynamic("onRenderDetailsHeader")(js.Any.fromFunction2(onRenderDetailsHeader))
     if (onRenderItemColumn != null) __obj.updateDynamic("onRenderItemColumn")(js.Any.fromFunction3(onRenderItemColumn))
     if (onRenderMissingItem != null) __obj.updateDynamic("onRenderMissingItem")(js.Any.fromFunction2(onRenderMissingItem))
-    if (onRenderRow != null) __obj.updateDynamic("onRenderRow")(onRenderRow)
+    if (onRenderRow != null) __obj.updateDynamic("onRenderRow")(js.Any.fromFunction2(onRenderRow))
     if (onRowDidMount != null) __obj.updateDynamic("onRowDidMount")(js.Any.fromFunction2(onRowDidMount))
     if (onRowWillUnmount != null) __obj.updateDynamic("onRowWillUnmount")(js.Any.fromFunction2(onRowWillUnmount))
     if (onShouldVirtualize != null) __obj.updateDynamic("onShouldVirtualize")(js.Any.fromFunction1(onShouldVirtualize))

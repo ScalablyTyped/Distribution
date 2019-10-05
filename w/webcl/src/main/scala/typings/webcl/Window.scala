@@ -1,6 +1,6 @@
 package typings.webcl
 
-import typings.webcl.WEBCLNs.WebCL
+import typings.webcl.WEBCL.WebCL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

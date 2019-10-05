@@ -1,7 +1,7 @@
 package typings.foundationDashSites
 
 import org.scalablytyped.runtime.TopLevel
-import typings.foundationDashSites.FoundationSitesNs.FoundationSitesStatic
+import typings.foundationDashSites.FoundationSites.FoundationSitesStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

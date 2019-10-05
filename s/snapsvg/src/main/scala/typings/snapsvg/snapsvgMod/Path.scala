@@ -1,5 +1,6 @@
 package typings.snapsvg.snapsvgMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,4 +35,8 @@ trait Path extends js.Object {
   def toCubic(pathString: js.Array[String]): js.Array[_] = js.native
   def toRelative(path: String): js.Array[_] = js.native
 }
+
+@JSImport("snapsvg", "path")
+@js.native
+object path extends TopLevel[Path]
 

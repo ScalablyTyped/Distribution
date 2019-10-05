@@ -1,6 +1,6 @@
 package typings.atIonicCliDashFramework.libLoggerMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.Partial
 import typings.std.ReadonlySet
 import typings.std.Set

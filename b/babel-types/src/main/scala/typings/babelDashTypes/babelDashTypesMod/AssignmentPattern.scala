@@ -36,3 +36,11 @@ object AssignmentPattern {
   }
 }
 
+@JSImport("babel-types", "assignmentPattern")
+@js.native
+object assignmentPattern extends js.Object {
+  def apply(): AssignmentPattern = js.native
+  def apply(left: Identifier): AssignmentPattern = js.native
+  def apply(left: Identifier, right: Expression): AssignmentPattern = js.native
+}
+

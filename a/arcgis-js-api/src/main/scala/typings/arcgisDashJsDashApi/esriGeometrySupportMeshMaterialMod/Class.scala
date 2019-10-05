@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportMeshMaterialMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshMaterial
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshMaterialProperties
+import typings.arcgisDashJsDashApi.__esri.MeshMaterial
+import typings.arcgisDashJsDashApi.__esri.MeshMaterialProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

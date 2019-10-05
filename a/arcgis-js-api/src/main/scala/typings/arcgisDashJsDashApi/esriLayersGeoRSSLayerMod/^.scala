@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersGeoRSSLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoRSSLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.GeoRSSLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

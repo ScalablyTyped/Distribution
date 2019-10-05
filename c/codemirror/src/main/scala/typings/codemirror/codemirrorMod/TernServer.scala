@@ -1,6 +1,7 @@
 package typings.codemirror.codemirrorMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.codemirror.Anon_Changed
 import typings.codemirror.Anon_ChangedDoc
 import typings.std.Error
@@ -91,7 +92,5 @@ trait TernServer extends js.Object {
 
 @JSImport("codemirror", "TernServer")
 @js.native
-class TernServerCls () extends TernServer {
-  def this(options: TernOptions) = this()
-}
+object TernServer extends TopLevel[TernConstructor]
 

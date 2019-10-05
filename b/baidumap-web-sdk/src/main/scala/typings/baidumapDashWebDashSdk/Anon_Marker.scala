@@ -1,6 +1,6 @@
 package typings.baidumapDashWebDashSdk
 
-import typings.baidumapDashWebDashSdk.BMapNs.Marker
+import typings.baidumapDashWebDashSdk.BMap.Marker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

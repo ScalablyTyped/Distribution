@@ -1,7 +1,7 @@
 package typings.sammy
 
-import typings.sammy.SammyNs.Application
-import typings.sammy.SammyNs.SammyFunc
+import typings.sammy.Sammy.Application
+import typings.sammy.Sammy.SammyFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

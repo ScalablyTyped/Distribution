@@ -1,7 +1,7 @@
 package typings.atPulumiAws.albListenerRuleMod
 
-import typings.atPulumiAws.typesInputMod.albNs.ListenerRuleAction
-import typings.atPulumiAws.typesInputMod.albNs.ListenerRuleCondition
+import typings.atPulumiAws.typesInputMod.alb.ListenerRuleAction
+import typings.atPulumiAws.typesInputMod.alb.ListenerRuleCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

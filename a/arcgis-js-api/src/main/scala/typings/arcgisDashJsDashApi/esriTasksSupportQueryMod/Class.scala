@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportQueryMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Query
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.QueryProperties
+import typings.arcgisDashJsDashApi.__esri.Query
+import typings.arcgisDashJsDashApi.__esri.QueryProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

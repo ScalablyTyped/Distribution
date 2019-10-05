@@ -17,7 +17,7 @@ trait DisassociateRouteTableRequest extends js.Object {
 
 object DisassociateRouteTableRequest {
   @scala.inline
-  def apply(AssociationId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DisassociateRouteTableRequest = {
+  def apply(AssociationId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DisassociateRouteTableRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DisassociateRouteTableRequest]

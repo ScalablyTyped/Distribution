@@ -21,11 +21,7 @@ trait ListKeysResponse extends js.Object {
 
 object ListKeysResponse {
   @scala.inline
-  def apply(
-    Keys: KeyList = null,
-    NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
-  ): ListKeysResponse = {
+  def apply(Keys: KeyList = null, NextMarker: MarkerType = null, Truncated: js.UndefOr[Boolean] = js.undefined): ListKeysResponse = {
     val __obj = js.Dynamic.literal()
     if (Keys != null) __obj.updateDynamic("Keys")(Keys)
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)

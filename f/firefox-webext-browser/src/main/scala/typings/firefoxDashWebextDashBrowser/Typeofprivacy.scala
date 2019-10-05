@@ -12,7 +12,7 @@ trait Typeofprivacy extends js.Object {
     *
     * Not allowed in: Content scripts, Devtools pages
     */
-  val networkNs: Typeofnetwork
+  val network: Typeofnetwork
   /**
     * Use the `browser.privacy` API to control usage of the features in the browser that can affect a user's privacy.
     *
@@ -20,7 +20,7 @@ trait Typeofprivacy extends js.Object {
     *
     * Not allowed in: Content scripts, Devtools pages
     */
-  val servicesNs: Typeofservices
+  val services: Typeofservices
   /**
     * Use the `browser.privacy` API to control usage of the features in the browser that can affect a user's privacy.
     *
@@ -28,13 +28,13 @@ trait Typeofprivacy extends js.Object {
     *
     * Not allowed in: Content scripts, Devtools pages
     */
-  val websitesNs: Typeofwebsites
+  val websites: Typeofwebsites
 }
 
 object Typeofprivacy {
   @scala.inline
-  def apply(networkNs: Typeofnetwork, servicesNs: Typeofservices, websitesNs: Typeofwebsites): Typeofprivacy = {
-    val __obj = js.Dynamic.literal(networkNs = networkNs, servicesNs = servicesNs, websitesNs = websitesNs)
+  def apply(network: Typeofnetwork, services: Typeofservices, websites: Typeofwebsites): Typeofprivacy = {
+    val __obj = js.Dynamic.literal(network = network, services = services, websites = websites)
   
     __obj.asInstanceOf[Typeofprivacy]
   }

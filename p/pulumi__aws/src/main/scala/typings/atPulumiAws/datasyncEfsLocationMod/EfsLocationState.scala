@@ -2,7 +2,7 @@ package typings.atPulumiAws.datasyncEfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesInputMod.datasyncNs.EfsLocationEc2Config
+import typings.atPulumiAws.typesInputMod.datasync.EfsLocationEc2Config
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

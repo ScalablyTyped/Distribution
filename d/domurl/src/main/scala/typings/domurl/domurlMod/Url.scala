@@ -1,6 +1,6 @@
 package typings.domurl.domurlMod
 
-import typings.domurl.domurlMod.domurlNs.QueryString
+import typings.domurl.domurlMod.domurl.QueryString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

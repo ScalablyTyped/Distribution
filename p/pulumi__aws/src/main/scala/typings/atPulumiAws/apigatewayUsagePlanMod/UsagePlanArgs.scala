@@ -1,8 +1,8 @@
 package typings.atPulumiAws.apigatewayUsagePlanMod
 
-import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanApiStage
-import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanQuotaSettings
-import typings.atPulumiAws.typesInputMod.apigatewayNs.UsagePlanThrottleSettings
+import typings.atPulumiAws.typesInputMod.apigateway.UsagePlanApiStage
+import typings.atPulumiAws.typesInputMod.apigateway.UsagePlanQuotaSettings
+import typings.atPulumiAws.typesInputMod.apigateway.UsagePlanThrottleSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

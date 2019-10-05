@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersKMLLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.KMLLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.KMLLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

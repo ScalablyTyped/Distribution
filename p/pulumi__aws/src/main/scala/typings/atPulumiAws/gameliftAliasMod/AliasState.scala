@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftAliasMod
 
-import typings.atPulumiAws.typesInputMod.gameliftNs.AliasRoutingStrategy
+import typings.atPulumiAws.typesInputMod.gamelift.AliasRoutingStrategy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

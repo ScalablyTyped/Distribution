@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "DropDownMenu")
 @js.native
 class DropDownMenu ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.DropDownMenu
+  extends typings.materialDashUi.__MaterialUI.Menus.DropDownMenu
 

@@ -17,17 +17,17 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.static
 import typings.atOracleOraclejet.atOracleOraclejetStrings.sticky
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojAnimateStart
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeCurrentItem
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCollapse
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCopy
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCut
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojExpand
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojPaste
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojReorder
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeCollapse
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeCurrentItem
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeExpand
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCollapse
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCopy
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCut
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojExpand
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojPaste
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ojReorder
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -58,17 +58,17 @@ trait ojListViewEventMap[K, D] extends baseComponentEventMap[ojListViewSettableP
   var firstSelectedItemChanged: JetElementCustomEvent[Anon_DataKey[K, D]]
   var groupHeaderPositionChanged: JetElementCustomEvent[static | sticky]
   var itemChanged: JetElementCustomEvent[Anon_Focusable[K, D]]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojAnimateStart
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeCollapse[K]
-  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeCurrentItem[K]
-  var ojBeforeExpand: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojBeforeExpand[K]
-  var ojCollapse: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCollapse[K]
-  var ojCopy: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCopy
-  var ojCut: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojCut
-  var ojExpand: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojExpand[K]
-  var ojPaste: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojPaste
-  var ojReorder: typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ojReorder
+  var ojAnimateEnd: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeCollapse[K]
+  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeCurrentItem[K]
+  var ojBeforeExpand: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojBeforeExpand[K]
+  var ojCollapse: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCollapse[K]
+  var ojCopy: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCopy
+  var ojCut: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojCut
+  var ojExpand: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojExpand[K]
+  var ojPaste: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojPaste
+  var ojReorder: typings.atOracleOraclejet.ojlistviewMod.ojListView.ojReorder
   var scrollPolicyChanged: JetElementCustomEvent[auto | loadMoreOnScroll]
   var scrollPolicyOptionsChanged: JetElementCustomEvent[Anon_FetchSize]
   var scrollPositionChanged: JetElementCustomEvent[Anon_IndexKey[K]]

@@ -1,7 +1,7 @@
 package typings.atPhosphorDomutils
 
-import typings.atPhosphorDomutils.libElementMod.ElementExtNs.IBoxSizing
-import typings.atPhosphorDomutils.libElementMod.ElementExtNs.ISizeLimits
+import typings.atPhosphorDomutils.libElementMod.ElementExt.IBoxSizing
+import typings.atPhosphorDomutils.libElementMod.ElementExt.ISizeLimits
 import typings.std.Element
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/domutils", JSImport.Namespace)
 @js.native
 object atPhosphorDomutilsMod extends js.Object {
-  @JSName("ClipboardExt")
   @js.native
-  object ClipboardExtNs extends js.Object {
+  object ClipboardExt extends js.Object {
     /**
       * Copy text to the system clipboard.
       *
@@ -23,9 +22,8 @@ object atPhosphorDomutilsMod extends js.Object {
     def copyText(text: String): Unit = js.native
   }
   
-  @JSName("ElementExt")
   @js.native
-  object ElementExtNs extends js.Object {
+  object ElementExt extends js.Object {
     /**
       * Compute the box sizing for an element.
       *
@@ -73,9 +71,8 @@ object atPhosphorDomutilsMod extends js.Object {
     def sizeLimits(element: Element): ISizeLimits = js.native
   }
   
-  @JSName("Platform")
   @js.native
-  object PlatformNs extends js.Object {
+  object Platform extends js.Object {
     /**
       * A flag indicating whether the browser is Edge.
       */
@@ -107,9 +104,8 @@ object atPhosphorDomutilsMod extends js.Object {
     def accelKey(event: MouseEvent): Boolean = js.native
   }
   
-  @JSName("Selector")
   @js.native
-  object SelectorNs extends js.Object {
+  object Selector extends js.Object {
     /**
       * Calculate the specificity of a single CSS selector.
       *

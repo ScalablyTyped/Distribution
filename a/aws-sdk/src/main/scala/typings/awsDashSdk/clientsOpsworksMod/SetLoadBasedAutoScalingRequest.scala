@@ -28,7 +28,7 @@ object SetLoadBasedAutoScalingRequest {
   def apply(
     LayerId: String,
     DownScaling: AutoScalingThresholds = null,
-    Enable: js.UndefOr[Boolean] = js.undefined,
+    Enable: js.UndefOr[scala.Boolean] = js.undefined,
     UpScaling: AutoScalingThresholds = null
   ): SetLoadBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId)

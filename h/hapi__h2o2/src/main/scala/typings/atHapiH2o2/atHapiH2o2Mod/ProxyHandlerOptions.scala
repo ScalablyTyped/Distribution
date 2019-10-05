@@ -1,10 +1,11 @@
 package typings.atHapiH2o2.atHapiH2o2Mod
 
+import typings.atHapiBoom.atHapiBoomMod.^
 import typings.atHapiH2o2.atHapiH2o2Numbers.`false`
 import typings.atHapiH2o2.atHapiH2o2Strings.http
 import typings.atHapiH2o2.atHapiH2o2Strings.https
 import typings.atHapiH2o2.atHapiH2o2Strings.upstream
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.ReturnValue
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.ReturnValue
 import typings.atHapiHapi.atHapiHapiMod.Request
 import typings.atHapiHapi.atHapiHapiMod.ResponseToolkit
 import typings.atHapiHapi.atHapiHapiMod.RouteOptions
@@ -43,7 +44,7 @@ trait ProxyHandlerOptions extends js.Object {
   var onResponse: js.UndefOr[
     js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.atHapiBoom.atHapiBoomMod.^[_], 
+      /* err */ Null | ^[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 
@@ -83,7 +84,7 @@ object ProxyHandlerOptions {
     maxSockets: `false` | Double = null,
     onResponse: js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.atHapiBoom.atHapiBoomMod.^[_], 
+      /* err */ Null | ^[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 

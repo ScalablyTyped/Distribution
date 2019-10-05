@@ -1,6 +1,6 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.NavigationModule
+import typings.activexDashOutlook.Outlook.NavigationModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

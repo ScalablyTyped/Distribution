@@ -23,12 +23,12 @@ object WorkflowExecutionCancelRequestedEventAttributes {
   @scala.inline
   def apply(
     cause: WorkflowExecutionCancelRequestedCause = null,
-    externalInitiatedEventId: js.UndefOr[EventId] = js.undefined,
+    externalInitiatedEventId: Int | Double = null,
     externalWorkflowExecution: WorkflowExecution = null
   ): WorkflowExecutionCancelRequestedEventAttributes = {
     val __obj = js.Dynamic.literal()
     if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalInitiatedEventId)) __obj.updateDynamic("externalInitiatedEventId")(externalInitiatedEventId)
+    if (externalInitiatedEventId != null) __obj.updateDynamic("externalInitiatedEventId")(externalInitiatedEventId.asInstanceOf[js.Any])
     if (externalWorkflowExecution != null) __obj.updateDynamic("externalWorkflowExecution")(externalWorkflowExecution)
     __obj.asInstanceOf[WorkflowExecutionCancelRequestedEventAttributes]
   }

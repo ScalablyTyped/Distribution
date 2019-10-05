@@ -56,28 +56,28 @@ object DescribeOfferingResponse {
   def apply(
     Arn: __string = null,
     CurrencyCode: __string = null,
-    Duration: js.UndefOr[__integer] = js.undefined,
+    Duration: Int | Double = null,
     DurationUnits: OfferingDurationUnits = null,
-    FixedPrice: js.UndefOr[__double] = js.undefined,
+    FixedPrice: Int | Double = null,
     OfferingDescription: __string = null,
     OfferingId: __string = null,
     OfferingType: OfferingType = null,
     Region: __string = null,
     ResourceSpecification: ReservationResourceSpecification = null,
-    UsagePrice: js.UndefOr[__double] = js.undefined
+    UsagePrice: Int | Double = null
   ): DescribeOfferingResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (DurationUnits != null) __obj.updateDynamic("DurationUnits")(DurationUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (OfferingDescription != null) __obj.updateDynamic("OfferingDescription")(OfferingDescription)
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region)
     if (ResourceSpecification != null) __obj.updateDynamic("ResourceSpecification")(ResourceSpecification)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOfferingResponse]
   }
 }

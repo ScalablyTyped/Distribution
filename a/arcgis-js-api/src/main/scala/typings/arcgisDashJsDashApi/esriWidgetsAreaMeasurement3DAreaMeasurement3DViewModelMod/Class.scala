@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsAreaMeasurement3DAreaMeasurement3DViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement3DViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement3DViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement3DViewModel
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement3DViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

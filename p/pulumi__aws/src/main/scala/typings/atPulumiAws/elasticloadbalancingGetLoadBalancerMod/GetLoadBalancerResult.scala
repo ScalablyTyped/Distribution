@@ -1,9 +1,9 @@
 package typings.atPulumiAws.elasticloadbalancingGetLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerAccessLogs
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerHealthCheck
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.GetLoadBalancerListener
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.GetLoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.GetLoadBalancerHealthCheck
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.GetLoadBalancerListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

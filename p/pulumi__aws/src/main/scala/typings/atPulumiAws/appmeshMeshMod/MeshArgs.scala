@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshMeshMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.appmeshNs.MeshSpec
+import typings.atPulumiAws.typesInputMod.appmesh.MeshSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

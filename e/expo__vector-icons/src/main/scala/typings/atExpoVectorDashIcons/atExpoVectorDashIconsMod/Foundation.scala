@@ -15,6 +15,22 @@ class Foundation () extends default
 @JSImport("@expo/vector-icons", "Foundation")
 @js.native
 object Foundation extends js.Object {
+  @js.native
+  class Button ()
+    extends typings.reactDashNativeDashVectorDashIcons.foundationMod.default.Button
+  
+  @js.native
+  class TabBarItem ()
+    extends typings.reactDashNativeDashVectorDashIcons.foundationMod.default.TabBarItem
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends typings.reactDashNativeDashVectorDashIcons.foundationMod.default.TabBarItemIOS
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends typings.reactDashNativeDashVectorDashIcons.foundationMod.default.ToolbarAndroid
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

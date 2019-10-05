@@ -25,3 +25,9 @@ object Controller {
   }
 }
 
+@JSImport("hapi-decorators", "controller")
+@js.native
+object controller extends js.Object {
+  def apply(baseUrl: String): js.Function1[/* target */ ControllerStatic, Unit] = js.native
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack-chain", "TypedChainedSet")
 @js.native
 class TypedChainedSet[Parent, Value] ()
-  extends typings.webpackDashChain.webpackDashChainMod.underscoreUnderscoreConfigNs.TypedChainedSet[Parent, Value] {
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedSet[Parent, Value] {
   /* CompleteClass */
   override def end(): Parent = js.native
 }

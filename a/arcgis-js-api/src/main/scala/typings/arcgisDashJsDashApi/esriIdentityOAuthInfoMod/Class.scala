@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriIdentityOAuthInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OAuthInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OAuthInfoProperties
+import typings.arcgisDashJsDashApi.__esri.OAuthInfo
+import typings.arcgisDashJsDashApi.__esri.OAuthInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

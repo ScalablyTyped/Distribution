@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportDensifyParametersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DensifyParametersConstructor
+import typings.arcgisDashJsDashApi.__esri.DensifyParametersConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,9 +13,9 @@ trait AbortIncompleteMultipartUpload extends js.Object {
 
 object AbortIncompleteMultipartUpload {
   @scala.inline
-  def apply(DaysAfterInitiation: js.UndefOr[DaysAfterInitiation] = js.undefined): AbortIncompleteMultipartUpload = {
+  def apply(DaysAfterInitiation: Int | Double = null): AbortIncompleteMultipartUpload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DaysAfterInitiation)) __obj.updateDynamic("DaysAfterInitiation")(DaysAfterInitiation)
+    if (DaysAfterInitiation != null) __obj.updateDynamic("DaysAfterInitiation")(DaysAfterInitiation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortIncompleteMultipartUpload]
   }
 }

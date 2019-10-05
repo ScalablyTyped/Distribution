@@ -190,17 +190,17 @@ trait Instance extends js.Object {
 object Instance {
   @scala.inline
   def apply(
-    AmiLaunchIndex: js.UndefOr[Integer] = js.undefined,
+    AmiLaunchIndex: Int | scala.Double = null,
     Architecture: ArchitectureValues = null,
     BlockDeviceMappings: InstanceBlockDeviceMappingList = null,
     CapacityReservationId: String = null,
     CapacityReservationSpecification: CapacityReservationSpecificationResponse = null,
     ClientToken: String = null,
     CpuOptions: CpuOptions = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     ElasticGpuAssociations: ElasticGpuAssociationList = null,
     ElasticInferenceAcceleratorAssociations: ElasticInferenceAcceleratorAssociationList = null,
-    EnaSupport: js.UndefOr[Boolean] = js.undefined,
+    EnaSupport: js.UndefOr[scala.Boolean] = js.undefined,
     HibernationOptions: HibernationOptions = null,
     Hypervisor: HypervisorType = null,
     IamInstanceProfile: IamInstanceProfile = null,
@@ -225,7 +225,7 @@ object Instance {
     RootDeviceName: String = null,
     RootDeviceType: DeviceType = null,
     SecurityGroups: GroupIdentifierList = null,
-    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
+    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined,
     SpotInstanceRequestId: String = null,
     SriovNetSupport: String = null,
     State: InstanceState = null,
@@ -237,7 +237,7 @@ object Instance {
     VpcId: String = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AmiLaunchIndex)) __obj.updateDynamic("AmiLaunchIndex")(AmiLaunchIndex)
+    if (AmiLaunchIndex != null) __obj.updateDynamic("AmiLaunchIndex")(AmiLaunchIndex.asInstanceOf[js.Any])
     if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings)
     if (CapacityReservationId != null) __obj.updateDynamic("CapacityReservationId")(CapacityReservationId)

@@ -37,7 +37,7 @@ object CreateTransitGatewayVpcAttachmentRequest {
     SubnetIds: ValueStringList,
     TransitGatewayId: String,
     VpcId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: CreateTransitGatewayVpcAttachmentRequestOptions = null,
     TagSpecifications: TagSpecificationList = null
   ): CreateTransitGatewayVpcAttachmentRequest = {

@@ -37,17 +37,17 @@ object LexiconAttributes {
     Alphabet: Alphabet = null,
     LanguageCode: LanguageCode = null,
     LastModified: LastModified = null,
-    LexemesCount: js.UndefOr[LexemesCount] = js.undefined,
+    LexemesCount: Int | Double = null,
     LexiconArn: LexiconArn = null,
-    Size: js.UndefOr[Size] = js.undefined
+    Size: Int | Double = null
   ): LexiconAttributes = {
     val __obj = js.Dynamic.literal()
     if (Alphabet != null) __obj.updateDynamic("Alphabet")(Alphabet)
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (!js.isUndefined(LexemesCount)) __obj.updateDynamic("LexemesCount")(LexemesCount)
+    if (LexemesCount != null) __obj.updateDynamic("LexemesCount")(LexemesCount.asInstanceOf[js.Any])
     if (LexiconArn != null) __obj.updateDynamic("LexiconArn")(LexiconArn)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexiconAttributes]
   }
 }

@@ -137,27 +137,27 @@ object H265Settings {
     AdaptiveQuantization: H265AdaptiveQuantization = null,
     AfdSignaling: AfdSignaling = null,
     AlternativeTransferFunction: H265AlternativeTransferFunction = null,
-    Bitrate: js.UndefOr[__integerMin100000Max40000000] = js.undefined,
-    BufSize: js.UndefOr[__integerMin100000Max80000000] = js.undefined,
+    Bitrate: Int | Double = null,
+    BufSize: Int | Double = null,
     ColorMetadata: H265ColorMetadata = null,
     ColorSpaceSettings: H265ColorSpaceSettings = null,
     FixedAfd: FixedAfd = null,
     FlickerAq: H265FlickerAq = null,
-    GopClosedCadence: js.UndefOr[__integerMin0] = js.undefined,
-    GopSize: js.UndefOr[__doubleMin1] = js.undefined,
+    GopClosedCadence: Int | Double = null,
+    GopSize: Int | Double = null,
     GopSizeUnits: H265GopSizeUnits = null,
     Level: H265Level = null,
     LookAheadRateControl: H265LookAheadRateControl = null,
-    MaxBitrate: js.UndefOr[__integerMin100000Max40000000] = js.undefined,
-    MinIInterval: js.UndefOr[__integerMin0Max30] = js.undefined,
-    ParDenominator: js.UndefOr[__integerMin1] = js.undefined,
-    ParNumerator: js.UndefOr[__integerMin1] = js.undefined,
+    MaxBitrate: Int | Double = null,
+    MinIInterval: Int | Double = null,
+    ParDenominator: Int | Double = null,
+    ParNumerator: Int | Double = null,
     Profile: H265Profile = null,
-    QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined,
+    QvbrQualityLevel: Int | Double = null,
     RateControlMode: H265RateControlMode = null,
     ScanType: H265ScanType = null,
     SceneChangeDetect: H265SceneChangeDetect = null,
-    Slices: js.UndefOr[__integerMin1Max16] = js.undefined,
+    Slices: Int | Double = null,
     Tier: H265Tier = null,
     TimecodeInsertion: H265TimecodeInsertionBehavior = null
   ): H265Settings = {
@@ -165,27 +165,27 @@ object H265Settings {
     if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
     if (AfdSignaling != null) __obj.updateDynamic("AfdSignaling")(AfdSignaling.asInstanceOf[js.Any])
     if (AlternativeTransferFunction != null) __obj.updateDynamic("AlternativeTransferFunction")(AlternativeTransferFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate)
-    if (!js.isUndefined(BufSize)) __obj.updateDynamic("BufSize")(BufSize)
+    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (BufSize != null) __obj.updateDynamic("BufSize")(BufSize.asInstanceOf[js.Any])
     if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
     if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings)
     if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
     if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopClosedCadence)) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence)
-    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize)
+    if (GopClosedCadence != null) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence.asInstanceOf[js.Any])
+    if (GopSize != null) __obj.updateDynamic("GopSize")(GopSize.asInstanceOf[js.Any])
     if (GopSizeUnits != null) __obj.updateDynamic("GopSizeUnits")(GopSizeUnits.asInstanceOf[js.Any])
     if (Level != null) __obj.updateDynamic("Level")(Level.asInstanceOf[js.Any])
     if (LookAheadRateControl != null) __obj.updateDynamic("LookAheadRateControl")(LookAheadRateControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate)
-    if (!js.isUndefined(MinIInterval)) __obj.updateDynamic("MinIInterval")(MinIInterval)
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator)
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator)
+    if (MaxBitrate != null) __obj.updateDynamic("MaxBitrate")(MaxBitrate.asInstanceOf[js.Any])
+    if (MinIInterval != null) __obj.updateDynamic("MinIInterval")(MinIInterval.asInstanceOf[js.Any])
+    if (ParDenominator != null) __obj.updateDynamic("ParDenominator")(ParDenominator.asInstanceOf[js.Any])
+    if (ParNumerator != null) __obj.updateDynamic("ParNumerator")(ParNumerator.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel)
+    if (QvbrQualityLevel != null) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
     if (ScanType != null) __obj.updateDynamic("ScanType")(ScanType.asInstanceOf[js.Any])
     if (SceneChangeDetect != null) __obj.updateDynamic("SceneChangeDetect")(SceneChangeDetect.asInstanceOf[js.Any])
-    if (!js.isUndefined(Slices)) __obj.updateDynamic("Slices")(Slices)
+    if (Slices != null) __obj.updateDynamic("Slices")(Slices.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (TimecodeInsertion != null) __obj.updateDynamic("TimecodeInsertion")(TimecodeInsertion.asInstanceOf[js.Any])
     __obj.asInstanceOf[H265Settings]

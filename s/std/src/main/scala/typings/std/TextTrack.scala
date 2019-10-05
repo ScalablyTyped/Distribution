@@ -120,10 +120,6 @@ trait TextTrack extends EventTarget {
 
 @JSGlobal("TextTrack")
 @js.native
-class TextTrackCls () extends TextTrack
-
-@JSGlobal("TextTrack")
-@js.native
 object TextTrack extends Instantiable0[TextTrack] {
   val DISABLED: Double = js.native
   val ERROR: Double = js.native

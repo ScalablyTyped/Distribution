@@ -14,16 +14,16 @@ trait ExpandedCallback extends js.Object {
 object ExpandedCallback {
   @scala.inline
   def apply(
-    load: FinchCallback = null,
-    setup: FinchCallback = null,
-    teardown: FinchCallback = null,
-    unload: FinchCallback = null
+    load: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any = null,
+    setup: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any = null,
+    teardown: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any = null,
+    unload: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => js.Any = null
   ): ExpandedCallback = {
     val __obj = js.Dynamic.literal()
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
-    if (teardown != null) __obj.updateDynamic("teardown")(teardown)
-    if (unload != null) __obj.updateDynamic("unload")(unload)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
+    if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction2(teardown))
+    if (unload != null) __obj.updateDynamic("unload")(js.Any.fromFunction2(unload))
     __obj.asInstanceOf[ExpandedCallback]
   }
 }

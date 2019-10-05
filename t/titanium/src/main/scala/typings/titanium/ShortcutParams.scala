@@ -1,6 +1,6 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.ContactsNs.Person
+import typings.titanium.Titanium.Contacts.Person
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

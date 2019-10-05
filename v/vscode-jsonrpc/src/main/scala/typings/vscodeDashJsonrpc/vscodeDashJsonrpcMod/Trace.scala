@@ -24,5 +24,7 @@ object Trace extends js.Object {
   /* 2 */ val Verbose: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace.Verbose with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Trace with Double] = js.native
+  def fromString(value: String): Trace = js.native
+  def toString(value: Trace): TraceValues = js.native
 }
 

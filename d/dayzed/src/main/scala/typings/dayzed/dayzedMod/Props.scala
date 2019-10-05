@@ -7,6 +7,7 @@ import typings.dayzed.dayzedNumbers.`3`
 import typings.dayzed.dayzedNumbers.`4`
 import typings.dayzed.dayzedNumbers.`5`
 import typings.dayzed.dayzedNumbers.`6`
+import typings.react.reactMod.ReactNode
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +32,7 @@ object Props {
   @scala.inline
   def apply(
     onDateSelected: DateObj => Unit,
-    children: RenderFn = null,
+    children: /* renderProps */ RenderProps => ReactNode = null,
     date: Date = null,
     firstDayOfWeek: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     maxDate: Date = null,
@@ -39,12 +40,12 @@ object Props {
     monthsToDisplay: Int | Double = null,
     offset: Int | Double = null,
     onOffsetChanged: /* offset */ Double => Unit = null,
-    render: RenderFn = null,
+    render: /* renderProps */ RenderProps => ReactNode = null,
     selected: Date | js.Array[Date] = null,
     showOutsideDays: js.UndefOr[Boolean] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal(onDateSelected = js.Any.fromFunction1(onDateSelected))
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (date != null) __obj.updateDynamic("date")(date)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
@@ -52,7 +53,7 @@ object Props {
     if (monthsToDisplay != null) __obj.updateDynamic("monthsToDisplay")(monthsToDisplay.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onOffsetChanged != null) __obj.updateDynamic("onOffsetChanged")(js.Any.fromFunction1(onOffsetChanged))
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays)
     __obj.asInstanceOf[Props]

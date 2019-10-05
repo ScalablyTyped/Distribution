@@ -6,7 +6,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.full
 import typings.atOracleOraclejet.atOracleOraclejetStrings.half
 import typings.atOracleOraclejet.atOracleOraclejetStrings.icons
 import typings.atOracleOraclejet.atOracleOraclejetStrings.outlined
-import typings.atOracleOraclejet.ojbuttonMod.ojMenuButtonNs.ojAction
+import typings.atOracleOraclejet.ojbuttonMod.ojMenuButton.ojAction
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

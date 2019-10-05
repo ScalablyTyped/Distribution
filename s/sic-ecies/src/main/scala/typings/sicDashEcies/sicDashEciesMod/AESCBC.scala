@@ -1,5 +1,6 @@
 package typings.sicDashEcies.sicDashEciesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +14,8 @@ trait AESCBC extends js.Object {
   def encrypt(messagebuf: Buffer, passwordstr: String): Buffer = js.native
   def encryptCipherkey(messagebuf: Buffer, cipherkeybuf: Buffer, ivbuf: Buffer): Buffer = js.native
 }
+
+@JSImport("sic-ecies", "AESCBC")
+@js.native
+object AESCBC extends TopLevel[AESCBC]
 

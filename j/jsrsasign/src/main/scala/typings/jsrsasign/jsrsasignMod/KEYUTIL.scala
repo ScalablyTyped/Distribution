@@ -3,11 +3,11 @@ package typings.jsrsasign.jsrsasignMod
 import typings.jsrsasign.Anon_E
 import typings.jsrsasign.Anon_P8pubkeyhex
 import typings.jsrsasign.Anon_PrvKeyObj
-import typings.jsrsasign.jsrsasignNs.ECCPrivateKey
-import typings.jsrsasign.jsrsasignNs.KJURNs.cryptoNs.DSA
-import typings.jsrsasign.jsrsasignNs.KJURNs.cryptoNs.ECDSA
-import typings.jsrsasign.jsrsasignNs.KJURNs.jwsNs.JWSNs.JsonWebKey
-import typings.jsrsasign.jsrsasignNs.PrivateKeyOutputFormatType
+import typings.jsrsasign.jsrsasign.ECCPrivateKey
+import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
+import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
+import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
+import typings.jsrsasign.jsrsasign.PrivateKeyOutputFormatType
 import typings.jsrsasign.jsrsasignStrings.EC
 import typings.jsrsasign.jsrsasignStrings.RSA
 import scala.scalajs.js
@@ -74,7 +74,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "KEYUTIL")
 @js.native
 class KEYUTIL ()
-  extends typings.jsrsasign.jsrsasignNs.KEYUTIL
+  extends typings.jsrsasign.jsrsasign.KEYUTIL
 
 /* static members */
 @JSImport("jsrsasign", "KEYUTIL")
@@ -132,31 +132,31 @@ object KEYUTIL extends js.Object {
     * // if you need RFC 7638 JWK thumprint as kid do like this:
     * jwkPub2.kid = KJUR.jws.JWS.getJWKthumbprint(jwkPub2);
     */
-  def getJWKFromKey(keyObj: typings.jsrsasign.jsrsasignNs.RSAKey): JsonWebKey = js.native
-  def getKey(param: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: String, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: String, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: String, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECCPrivateKey): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECCPrivateKey, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECCPrivateKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECCPrivateKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: DSA): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: DSA, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: DSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: DSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECDSA): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECDSA, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECDSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: ECDSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: JsonWebKey): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: JsonWebKey, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: JsonWebKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: JsonWebKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getJWKFromKey(keyObj: typings.jsrsasign.jsrsasign.RSAKey): JsonWebKey = js.native
+  def getKey(param: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: String, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: String, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: String, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: Anon_E): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: Anon_E, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: Anon_E, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: Anon_E, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECCPrivateKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECCPrivateKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECCPrivateKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECCPrivateKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: DSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: DSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: DSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: DSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECDSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECDSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECDSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: ECDSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: JsonWebKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: JsonWebKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: JsonWebKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: JsonWebKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   /**
     * get private or public key object from any arguments
     * @param param parameter to get key object. see description in detail.
@@ -222,22 +222,22 @@ object KEYUTIL extends js.Object {
     * // 5. bare hexadecimal key
     * keyObj = KEYUTIL.getKey({n: "75ab..", e: "010001"});
     */
-  def getKey(param: typings.jsrsasign.jsrsasignNs.RSAKey): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: typings.jsrsasign.jsrsasignNs.RSAKey, passcode: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: typings.jsrsasign.jsrsasignNs.RSAKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
-  def getKey(param: typings.jsrsasign.jsrsasignNs.RSAKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   /**
     * get RSAKey/DSA/ECDSA public key object from hexadecimal string of PKCS#10 CSR
     * @param csrHex hexadecimal string of PKCS#10 CSR
     * @return RSAKey/DSA/ECDSA public key object
     */
-  def getKeyFromCSRHex(csrHex: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getKeyFromCSRHex(csrHex: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   /**
     * get RSAKey/DSA/ECDSA public key object from PEM formatted PKCS#10 CSR string
     * @param csrPEM PEM formatted PKCS#10 CSR string
     * @return RSAKey/DSA/ECDSA public key object
     */
-  def getKeyFromCSRPEM(csrPEM: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getKeyFromCSRPEM(csrPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   def getPEM(keyObjOrHex: DSA): Unit = js.native
   def getPEM(keyObjOrHex: DSA, formatType: PrivateKeyOutputFormatType): Unit = js.native
   def getPEM(keyObjOrHex: DSA, formatType: PrivateKeyOutputFormatType, passwd: String): Unit = js.native
@@ -301,28 +301,28 @@ object KEYUTIL extends js.Object {
     * KEYUTIL.getPEM(privateKey, "PKCS8PRV", "pass") => generates PEM PKCS#8 encrypted private key
     *                                                      with PBKDF2_HmacSHA1_3DES
     */
-  def getPEM(keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey): Unit = js.native
-  def getPEM(keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey, formatType: PrivateKeyOutputFormatType): Unit = js.native
+  def getPEM(keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey): Unit = js.native
+  def getPEM(keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey, formatType: PrivateKeyOutputFormatType): Unit = js.native
   def getPEM(
-    keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey,
+    keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey,
     formatType: PrivateKeyOutputFormatType,
     passwd: String
   ): Unit = js.native
   def getPEM(
-    keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey,
+    keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey,
     formatType: PrivateKeyOutputFormatType,
     passwd: String,
     encAlg: String
   ): Unit = js.native
   def getPEM(
-    keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey,
+    keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey,
     formatType: PrivateKeyOutputFormatType,
     passwd: String,
     encAlg: String,
     hexType: String
   ): Unit = js.native
   def getPEM(
-    keyObjOrHex: typings.jsrsasign.jsrsasignNs.RSAKey,
+    keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey,
     formatType: PrivateKeyOutputFormatType,
     passwd: String,
     encAlg: String,

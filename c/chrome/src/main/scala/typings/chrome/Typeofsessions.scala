@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.sessionsNs.Device
-import typings.chrome.chromeNs.sessionsNs.Filter
-import typings.chrome.chromeNs.sessionsNs.Session
-import typings.chrome.chromeNs.sessionsNs.SessionChangedEvent
+import typings.chrome.chrome.sessions.Device
+import typings.chrome.chrome.sessions.Filter
+import typings.chrome.chrome.sessions.Session
+import typings.chrome.chrome.sessions.SessionChangedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,7 +33,7 @@ object PatchBaselineIdentity {
     BaselineDescription: BaselineDescription = null,
     BaselineId: BaselineId = null,
     BaselineName: BaselineName = null,
-    DefaultBaseline: js.UndefOr[DefaultBaseline] = js.undefined,
+    DefaultBaseline: js.UndefOr[scala.Boolean] = js.undefined,
     OperatingSystem: OperatingSystem = null
   ): PatchBaselineIdentity = {
     val __obj = js.Dynamic.literal()

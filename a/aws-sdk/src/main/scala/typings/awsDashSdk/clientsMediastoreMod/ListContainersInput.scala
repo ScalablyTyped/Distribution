@@ -17,9 +17,9 @@ trait ListContainersInput extends js.Object {
 
 object ListContainersInput {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[ContainerListLimit] = js.undefined, NextToken: PaginationToken = null): ListContainersInput = {
+  def apply(MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListContainersInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListContainersInput]
   }

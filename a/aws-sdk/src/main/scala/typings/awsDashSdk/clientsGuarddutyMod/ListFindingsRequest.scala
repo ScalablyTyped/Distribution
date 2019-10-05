@@ -32,13 +32,13 @@ object ListFindingsRequest {
   def apply(
     DetectorId: DetectorId,
     FindingCriteria: FindingCriteria = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     SortCriteria: SortCriteria = null
   ): ListFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
     if (FindingCriteria != null) __obj.updateDynamic("FindingCriteria")(FindingCriteria)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria)
     __obj.asInstanceOf[ListFindingsRequest]

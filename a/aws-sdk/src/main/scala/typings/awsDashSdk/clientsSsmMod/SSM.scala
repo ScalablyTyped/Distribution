@@ -106,12 +106,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentResult, Unit]
   ): Request[CreateDocumentResult, AWSError] = js.native
   /**
-    * Creates a new maintenance window.
+    * Creates a new maintenance window.  The value you specify for Duration determines the specific end time for the maintenance window based on the time it begins. No maintenance window tasks are permitted to start after the resulting endtime minus the number of hours you specify for Cutoff. For example, if the maintenance window starts at 3 PM, the duration is three hours, and the value you specify for Cutoff is one hour, no maintenance window tasks can start after 5 PM. 
     */
   def createMaintenanceWindow(): Request[CreateMaintenanceWindowResult, AWSError] = js.native
   def createMaintenanceWindow(callback: js.Function2[/* err */ AWSError, /* data */ CreateMaintenanceWindowResult, Unit]): Request[CreateMaintenanceWindowResult, AWSError] = js.native
   /**
-    * Creates a new maintenance window.
+    * Creates a new maintenance window.  The value you specify for Duration determines the specific end time for the maintenance window based on the time it begins. No maintenance window tasks are permitted to start after the resulting endtime minus the number of hours you specify for Cutoff. For example, if the maintenance window starts at 3 PM, the duration is three hours, and the value you specify for Cutoff is one hour, no maintenance window tasks can start after 5 PM. 
     */
   def createMaintenanceWindow(params: CreateMaintenanceWindowRequest): Request[CreateMaintenanceWindowResult, AWSError] = js.native
   def createMaintenanceWindow(
@@ -1451,12 +1451,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartAutomationExecutionResult, Unit]
   ): Request[StartAutomationExecutionResult, AWSError] = js.native
   /**
-    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. 
+    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
     */
   def startSession(): Request[StartSessionResponse, AWSError] = js.native
   def startSession(callback: js.Function2[/* err */ AWSError, /* data */ StartSessionResponse, Unit]): Request[StartSessionResponse, AWSError] = js.native
   /**
-    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. 
+    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
     */
   def startSession(params: StartSessionRequest): Request[StartSessionResponse, AWSError] = js.native
   def startSession(
@@ -1542,12 +1542,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDocumentDefaultVersionResult, Unit]
   ): Request[UpdateDocumentDefaultVersionResult, AWSError] = js.native
   /**
-    * Updates an existing maintenance window. Only specified parameters are modified.
+    * Updates an existing maintenance window. Only specified parameters are modified.  The value you specify for Duration determines the specific end time for the maintenance window based on the time it begins. No maintenance window tasks are permitted to start after the resulting endtime minus the number of hours you specify for Cutoff. For example, if the maintenance window starts at 3 PM, the duration is three hours, and the value you specify for Cutoff is one hour, no maintenance window tasks can start after 5 PM. 
     */
   def updateMaintenanceWindow(): Request[UpdateMaintenanceWindowResult, AWSError] = js.native
   def updateMaintenanceWindow(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMaintenanceWindowResult, Unit]): Request[UpdateMaintenanceWindowResult, AWSError] = js.native
   /**
-    * Updates an existing maintenance window. Only specified parameters are modified.
+    * Updates an existing maintenance window. Only specified parameters are modified.  The value you specify for Duration determines the specific end time for the maintenance window based on the time it begins. No maintenance window tasks are permitted to start after the resulting endtime minus the number of hours you specify for Cutoff. For example, if the maintenance window starts at 3 PM, the duration is three hours, and the value you specify for Cutoff is one hour, no maintenance window tasks can start after 5 PM. 
     */
   def updateMaintenanceWindow(params: UpdateMaintenanceWindowRequest): Request[UpdateMaintenanceWindowResult, AWSError] = js.native
   def updateMaintenanceWindow(

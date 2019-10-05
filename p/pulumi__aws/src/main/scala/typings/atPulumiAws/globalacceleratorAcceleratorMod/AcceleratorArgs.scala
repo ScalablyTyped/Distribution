@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorAcceleratorMod
 
-import typings.atPulumiAws.typesInputMod.globalacceleratorNs.AcceleratorAttributes
+import typings.atPulumiAws.typesInputMod.globalaccelerator.AcceleratorAttributes
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.apigatewayUsagePlanMod
 
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanApiStage
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanQuotaSettings
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.UsagePlanThrottleSettings
+import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanApiStage
+import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanQuotaSettings
+import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanThrottleSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

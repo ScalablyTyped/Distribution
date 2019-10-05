@@ -1,7 +1,7 @@
 package typings.easyDashXDashHeaders.streamMod
 
 import typings.easyDashXDashHeaders.Buffer
-import typings.easyDashXDashHeaders.NodeJSNs.ReadWriteStream
+import typings.easyDashXDashHeaders.NodeJS.ReadWriteStream
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

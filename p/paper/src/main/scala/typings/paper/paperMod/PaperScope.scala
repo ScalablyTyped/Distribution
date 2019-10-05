@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "PaperScope")
 @js.native
 class PaperScope ()
-  extends typings.paper.paperNs.PaperScope
+  extends typings.paper.paper.PaperScope
 
 /* static members */
 @JSImport("paper", "PaperScope")
@@ -17,6 +17,6 @@ object PaperScope extends js.Object {
     * Retrieves a PaperScope object with the given scope id.
     * @param id - scope id to retrieve
     */
-  def get(id: String): typings.paper.paperNs.PaperScope = js.native
+  def get(id: String): typings.paper.paper.PaperScope = js.native
 }
 

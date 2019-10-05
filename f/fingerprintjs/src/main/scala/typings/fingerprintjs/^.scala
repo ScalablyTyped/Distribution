@@ -1,6 +1,6 @@
 package typings.fingerprintjs
 
-import typings.fingerprintjs.FingerprintJsNs.FingerprintStatic
+import typings.fingerprintjs.FingerprintJs.FingerprintStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

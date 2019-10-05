@@ -1,8 +1,9 @@
 package typings.atJupyterlabRendermime.libAttachmentmodelMod
 
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.IMimeBundle
-import typings.atJupyterlabRendermime.libAttachmentmodelMod.IAttachmentModelNs.IOptions
-import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IMimeModelNs.ISetDataOptions
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.IMimeBundle
+import typings.atJupyterlabRendermime.libAttachmentmodelMod.IAttachmentModel.IOptions
+import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IMimeModel.ISetDataOptions
+import typings.atPhosphorCoreutils.libJsonMod.JSONObject
 import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONObject
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -67,5 +68,18 @@ class AttachmentModel protected () extends IAttachmentModel {
     */
   /* CompleteClass */
   override def toJSON(): IMimeBundle = js.native
+}
+
+@JSImport("@jupyterlab/rendermime/lib/attachmentmodel", "AttachmentModel")
+@js.native
+object AttachmentModel extends js.Object {
+  /**
+    * Get the data for an attachment.
+    *
+    * @params bundle - A kernel attachment MIME bundle.
+    *
+    * @returns - The data for the payload.
+    */
+  def getData(bundle: IMimeBundle): JSONObject = js.native
 }
 

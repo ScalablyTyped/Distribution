@@ -1,11 +1,11 @@
 package typings.meteor
 
-import typings.meteor.MongoNs.ArraysOrEach
-import typings.meteor.MongoNs.CurrentDateModifier
-import typings.meteor.MongoNs.Dictionary
-import typings.meteor.MongoNs.ElementsOf
-import typings.meteor.MongoNs.PartialMapTo
-import typings.meteor.MongoNs.PushModifier
+import typings.meteor.Mongo.ArraysOrEach
+import typings.meteor.Mongo.CurrentDateModifier
+import typings.meteor.Mongo.Dictionary
+import typings.meteor.Mongo.ElementsOf
+import typings.meteor.Mongo.PartialMapTo
+import typings.meteor.Mongo.PushModifier
 import typings.meteor.meteorNumbers.`-1`
 import typings.meteor.meteorNumbers.`0`
 import typings.meteor.meteorNumbers.`1`

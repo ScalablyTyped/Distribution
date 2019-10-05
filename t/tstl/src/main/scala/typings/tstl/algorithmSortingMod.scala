@@ -1,6 +1,6 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointerNs.ValueType
+import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIFakeMod.General
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.iteratorIRandomAccessIteratorMod.IRandomAccessIterator

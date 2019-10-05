@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportRelationParametersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelationParametersConstructor
+import typings.arcgisDashJsDashApi.__esri.RelationParametersConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

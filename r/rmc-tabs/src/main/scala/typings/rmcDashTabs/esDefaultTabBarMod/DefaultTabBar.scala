@@ -1,10 +1,10 @@
 package typings.rmcDashTabs.esDefaultTabBarMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.PureComponent
 import typings.rmcDashTabs.Anon_Offset
 import typings.rmcDashTabs.Anon_ShowNext
-import typings.rmcDashTabs.esModelsMod.ModelsNs.TabData
+import typings.rmcDashTabs.esModelsMod.Models.TabData
 import typings.rmcDashTabs.rmcDashTabsStrings.bottom
 import typings.rmcDashTabs.rmcDashTabsStrings.left
 import typings.rmcDashTabs.rmcDashTabsStrings.right

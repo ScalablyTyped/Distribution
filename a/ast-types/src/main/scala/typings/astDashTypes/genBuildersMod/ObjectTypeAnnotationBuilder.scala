@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.ObjectTypeCallPropertyKind
 import typings.astDashTypes.genKindsMod.ObjectTypeIndexerKind
 import typings.astDashTypes.genKindsMod.ObjectTypePropertyKind
 import typings.astDashTypes.genKindsMod.ObjectTypeSpreadPropertyKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ObjectTypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ObjectTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

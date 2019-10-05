@@ -1,5 +1,7 @@
 package typings.tstl.containerMod
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
@@ -61,5 +63,110 @@ class HashMap[Key, T] ()
     hash: js.Function1[/* key */ Key, Double],
     equal: js.Function2[/* x */ Key, /* y */ Key, Boolean]
   ) = this()
+}
+
+@JSImport("tstl/container", "HashMap")
+@js.native
+object HashMap extends js.Object {
+  val Iterator: Instantiable0[
+    typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val iterator: Instantiable0[
+    typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val reverse_iterator: Instantiable0[
+    typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

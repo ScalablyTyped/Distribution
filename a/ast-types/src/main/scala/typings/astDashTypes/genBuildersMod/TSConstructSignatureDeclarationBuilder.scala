@@ -6,7 +6,7 @@ import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.ObjectPatternKind
 import typings.astDashTypes.genKindsMod.RestElementKind
 import typings.astDashTypes.genKindsMod.TSTypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSConstructSignatureDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

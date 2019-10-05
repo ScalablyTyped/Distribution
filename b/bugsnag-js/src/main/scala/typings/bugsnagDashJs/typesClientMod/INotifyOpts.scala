@@ -21,7 +21,7 @@ trait INotifyOpts extends js.Object {
 object INotifyOpts {
   @scala.inline
   def apply(
-    beforeSend: BeforeSend = null,
+    beforeSend: /* report */ typings.bugsnagDashJs.typesReportMod.default => Boolean | Unit = null,
     context: String = null,
     device: js.Object = null,
     metaData: js.Object = null,
@@ -30,7 +30,7 @@ object INotifyOpts {
     user: js.Object = null
   ): INotifyOpts = {
     val __obj = js.Dynamic.literal()
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (context != null) __obj.updateDynamic("context")(context)
     if (device != null) __obj.updateDynamic("device")(device)
     if (metaData != null) __obj.updateDynamic("metaData")(metaData)

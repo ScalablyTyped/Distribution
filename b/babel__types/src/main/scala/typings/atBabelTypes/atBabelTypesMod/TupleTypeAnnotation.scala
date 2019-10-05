@@ -38,3 +38,9 @@ object TupleTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "tupleTypeAnnotation")
+@js.native
+object tupleTypeAnnotation extends js.Object {
+  def apply(types: js.Array[FlowType]): TupleTypeAnnotation = js.native
+}
+

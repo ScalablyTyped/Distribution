@@ -1,6 +1,6 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.BluetoothDevice
+import typings.weixinDashApp.wx.BluetoothDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

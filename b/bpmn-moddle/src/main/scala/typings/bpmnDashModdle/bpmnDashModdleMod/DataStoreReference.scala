@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because Already inherited
 - typings.bpmnDashModdle.bpmnDashModdleMod.ItemAwareElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ trait DataStoreReference extends FlowElement {
   var dataState: DataState
   var dataStoreRef: DataStore

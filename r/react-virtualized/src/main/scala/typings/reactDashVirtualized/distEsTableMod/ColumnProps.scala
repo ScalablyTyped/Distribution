@@ -62,8 +62,8 @@ object ColumnProps {
     dataKey: js.Any,
     width: Double,
     `aria-label`: String = null,
-    cellDataGetter: TableCellDataGetter = null,
-    cellRenderer: TableCellRenderer = null,
+    cellDataGetter: /* params */ TableCellDataGetterParams => js.Any = null,
+    cellRenderer: /* props */ TableCellProps => ReactNode = null,
     className: String = null,
     columnData: js.Any = null,
     defaultSortDirection: SortDirectionType = null,
@@ -71,7 +71,7 @@ object ColumnProps {
     flexGrow: Int | Double = null,
     flexShrink: Int | Double = null,
     headerClassName: String = null,
-    headerRenderer: TableHeaderRenderer = null,
+    headerRenderer: /* props */ TableHeaderProps => ReactNode = null,
     headerStyle: CSSProperties = null,
     id: String = null,
     label: ReactNode = null,
@@ -81,8 +81,8 @@ object ColumnProps {
   ): ColumnProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey, width = width)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
-    if (cellDataGetter != null) __obj.updateDynamic("cellDataGetter")(cellDataGetter)
-    if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(cellRenderer)
+    if (cellDataGetter != null) __obj.updateDynamic("cellDataGetter")(js.Any.fromFunction1(cellDataGetter))
+    if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(js.Any.fromFunction1(cellRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (columnData != null) __obj.updateDynamic("columnData")(columnData)
     if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
@@ -90,7 +90,7 @@ object ColumnProps {
     if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
     if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
-    if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(headerRenderer)
+    if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(js.Any.fromFunction1(headerRenderer))
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

@@ -27,8 +27,8 @@ object GeolocateControlProps {
     captureScroll: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     fitBoundsOptions: FitBoundsOptions = null,
-    onViewStateChange: ViewStateChangeHandler = null,
-    onViewportChange: ViewportChangeHandler = null,
+    onViewStateChange: /* info */ ViewStateChangeInfo => Unit = null,
+    onViewportChange: /* viewState */ ViewportProps => Unit = null,
     positionOptions: PositionOptions = null,
     showUserLocation: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -41,8 +41,8 @@ object GeolocateControlProps {
     if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll)
     if (className != null) __obj.updateDynamic("className")(className)
     if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions)
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
     if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions)
     if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation)
     if (style != null) __obj.updateDynamic("style")(style)

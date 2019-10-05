@@ -1,5 +1,7 @@
 package typings.antd.antdMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.antd.libDateDashPickerInterfaceMod.DatePickerDecorator
 import typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
 import typings.react.reactMod.ClassicComponent
 import typings.react.reactMod.ComponentState
@@ -13,4 +15,8 @@ class DatePicker protected () extends ClassicComponent[DatePickerProps, Componen
   def this(props: DatePickerProps) = this()
   def this(props: DatePickerProps, context: js.Any) = this()
 }
+
+@JSImport("antd", "DatePicker")
+@js.native
+object DatePicker extends TopLevel[DatePickerDecorator]
 

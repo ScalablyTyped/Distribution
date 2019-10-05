@@ -51,7 +51,7 @@ object CreateJobTemplateRequest {
     AccelerationSettings: AccelerationSettings = null,
     Category: __string = null,
     Description: __string = null,
-    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
+    Priority: Int | Double = null,
     Queue: __string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Tags: __mapOf__string = null
@@ -60,7 +60,7 @@ object CreateJobTemplateRequest {
     if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings)
     if (Category != null) __obj.updateDynamic("Category")(Category)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

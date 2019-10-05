@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.bookmarksNs.BookmarkTreeNode
+import typings.firefoxDashWebextDashBrowser.browser.bookmarks.BookmarkTreeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

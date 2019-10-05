@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
+import typings.handsontable.handsontableMod.Handsontable.plugins.FiltersPlugin.ConditionName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

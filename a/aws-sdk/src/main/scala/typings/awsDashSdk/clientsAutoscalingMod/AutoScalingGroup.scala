@@ -120,13 +120,13 @@ object AutoScalingGroup {
     MinSize: AutoScalingGroupMinSize,
     AutoScalingGroupARN: ResourceName = null,
     EnabledMetrics: EnabledMetrics = null,
-    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
+    HealthCheckGracePeriod: Int | Double = null,
     Instances: Instances = null,
     LaunchConfigurationName: XmlStringMaxLen255 = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
     LoadBalancerNames: LoadBalancerNames = null,
     MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
+    NewInstancesProtectedFromScaleIn: js.UndefOr[Boolean] = js.undefined,
     PlacementGroup: XmlStringMaxLen255 = null,
     ServiceLinkedRoleARN: ResourceName = null,
     Status: XmlStringMaxLen255 = null,
@@ -139,7 +139,7 @@ object AutoScalingGroup {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName, AvailabilityZones = AvailabilityZones, CreatedTime = CreatedTime, DefaultCooldown = DefaultCooldown, DesiredCapacity = DesiredCapacity, HealthCheckType = HealthCheckType, MaxSize = MaxSize, MinSize = MinSize)
     if (AutoScalingGroupARN != null) __obj.updateDynamic("AutoScalingGroupARN")(AutoScalingGroupARN)
     if (EnabledMetrics != null) __obj.updateDynamic("EnabledMetrics")(EnabledMetrics)
-    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod)
+    if (HealthCheckGracePeriod != null) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.asInstanceOf[js.Any])
     if (Instances != null) __obj.updateDynamic("Instances")(Instances)
     if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName)
     if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate)

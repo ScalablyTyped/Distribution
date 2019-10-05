@@ -1,6 +1,6 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.OlContextMenu
+import typings.activexDashOutlook.Outlook.OlContextMenu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

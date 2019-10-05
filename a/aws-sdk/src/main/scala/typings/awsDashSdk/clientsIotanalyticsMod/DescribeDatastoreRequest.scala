@@ -17,7 +17,7 @@ trait DescribeDatastoreRequest extends js.Object {
 
 object DescribeDatastoreRequest {
   @scala.inline
-  def apply(datastoreName: DatastoreName, includeStatistics: js.UndefOr[IncludeStatisticsFlag] = js.undefined): DescribeDatastoreRequest = {
+  def apply(datastoreName: DatastoreName, includeStatistics: js.UndefOr[Boolean] = js.undefined): DescribeDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName)
     if (!js.isUndefined(includeStatistics)) __obj.updateDynamic("includeStatistics")(includeStatistics)
     __obj.asInstanceOf[DescribeDatastoreRequest]

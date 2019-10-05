@@ -17,12 +17,12 @@ object ObjectFieldValue {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ObjectFieldValue,
     loc: Location,
-    metadata: Metadata,
     name: String,
-    value: ArgumentValue
+    value: ArgumentValue,
+    metadata: Metadata = null
   ): ObjectFieldValue = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, value = value)
-  
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, name = name, value = value)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectFieldValue]
   }
 }

@@ -1,7 +1,7 @@
 package typings.insight.insightMod
 
-import typings.insight.insightMod.insightNs.IConfigstore
-import typings.insight.insightMod.insightNs.IEvent
+import typings.insight.insightMod.insight.IConfigstore
+import typings.insight.insightMod.insight.IEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

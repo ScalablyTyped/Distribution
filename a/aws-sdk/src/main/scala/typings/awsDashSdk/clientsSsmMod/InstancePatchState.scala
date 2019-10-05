@@ -80,28 +80,28 @@ object InstancePatchState {
     OperationEndTime: DateTime,
     OperationStartTime: DateTime,
     PatchGroup: PatchGroup,
-    FailedCount: js.UndefOr[PatchFailedCount] = js.undefined,
+    FailedCount: Int | Double = null,
     InstallOverrideList: InstallOverrideList = null,
-    InstalledCount: js.UndefOr[PatchInstalledCount] = js.undefined,
-    InstalledOtherCount: js.UndefOr[PatchInstalledOtherCount] = js.undefined,
-    InstalledRejectedCount: js.UndefOr[PatchInstalledRejectedCount] = js.undefined,
-    MissingCount: js.UndefOr[PatchMissingCount] = js.undefined,
-    NotApplicableCount: js.UndefOr[PatchNotApplicableCount] = js.undefined,
+    InstalledCount: Int | Double = null,
+    InstalledOtherCount: Int | Double = null,
+    InstalledRejectedCount: Int | Double = null,
+    MissingCount: Int | Double = null,
+    NotApplicableCount: Int | Double = null,
     OwnerInformation: OwnerInformation = null,
     SnapshotId: SnapshotId = null,
-    UnreportedNotApplicableCount: js.UndefOr[PatchUnreportedNotApplicableCount] = js.undefined
+    UnreportedNotApplicableCount: Int | Double = null
   ): InstancePatchState = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId, InstanceId = InstanceId, Operation = Operation.asInstanceOf[js.Any], OperationEndTime = OperationEndTime, OperationStartTime = OperationStartTime, PatchGroup = PatchGroup)
-    if (!js.isUndefined(FailedCount)) __obj.updateDynamic("FailedCount")(FailedCount)
+    if (FailedCount != null) __obj.updateDynamic("FailedCount")(FailedCount.asInstanceOf[js.Any])
     if (InstallOverrideList != null) __obj.updateDynamic("InstallOverrideList")(InstallOverrideList)
-    if (!js.isUndefined(InstalledCount)) __obj.updateDynamic("InstalledCount")(InstalledCount)
-    if (!js.isUndefined(InstalledOtherCount)) __obj.updateDynamic("InstalledOtherCount")(InstalledOtherCount)
-    if (!js.isUndefined(InstalledRejectedCount)) __obj.updateDynamic("InstalledRejectedCount")(InstalledRejectedCount)
-    if (!js.isUndefined(MissingCount)) __obj.updateDynamic("MissingCount")(MissingCount)
-    if (!js.isUndefined(NotApplicableCount)) __obj.updateDynamic("NotApplicableCount")(NotApplicableCount)
+    if (InstalledCount != null) __obj.updateDynamic("InstalledCount")(InstalledCount.asInstanceOf[js.Any])
+    if (InstalledOtherCount != null) __obj.updateDynamic("InstalledOtherCount")(InstalledOtherCount.asInstanceOf[js.Any])
+    if (InstalledRejectedCount != null) __obj.updateDynamic("InstalledRejectedCount")(InstalledRejectedCount.asInstanceOf[js.Any])
+    if (MissingCount != null) __obj.updateDynamic("MissingCount")(MissingCount.asInstanceOf[js.Any])
+    if (NotApplicableCount != null) __obj.updateDynamic("NotApplicableCount")(NotApplicableCount.asInstanceOf[js.Any])
     if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation)
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
-    if (!js.isUndefined(UnreportedNotApplicableCount)) __obj.updateDynamic("UnreportedNotApplicableCount")(UnreportedNotApplicableCount)
+    if (UnreportedNotApplicableCount != null) __obj.updateDynamic("UnreportedNotApplicableCount")(UnreportedNotApplicableCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancePatchState]
   }
 }

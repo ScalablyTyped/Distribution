@@ -1,8 +1,8 @@
 package typings.atPulumiAws.gameliftFleetMod
 
-import typings.atPulumiAws.typesInputMod.gameliftNs.FleetEc2InboundPermission
-import typings.atPulumiAws.typesInputMod.gameliftNs.FleetResourceCreationLimitPolicy
-import typings.atPulumiAws.typesInputMod.gameliftNs.FleetRuntimeConfiguration
+import typings.atPulumiAws.typesInputMod.gamelift.FleetEc2InboundPermission
+import typings.atPulumiAws.typesInputMod.gamelift.FleetResourceCreationLimitPolicy
+import typings.atPulumiAws.typesInputMod.gamelift.FleetRuntimeConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

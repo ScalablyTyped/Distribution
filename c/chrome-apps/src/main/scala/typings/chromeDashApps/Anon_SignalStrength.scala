@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,9 @@ trait Anon_SignalStrength extends js.Object {
 
 object Anon_SignalStrength {
   @scala.inline
-  def apply(SignalStrength: js.UndefOr[integer] = js.undefined): Anon_SignalStrength = {
+  def apply(SignalStrength: Int | Double = null): Anon_SignalStrength = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SignalStrength)) __obj.updateDynamic("SignalStrength")(SignalStrength)
+    if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SignalStrength]
   }
 }

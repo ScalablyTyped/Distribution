@@ -22,12 +22,12 @@ trait DescribeMatchmakingRuleSetsInput extends js.Object {
 object DescribeMatchmakingRuleSetsInput {
   @scala.inline
   def apply(
-    Limit: js.UndefOr[RuleSetLimit] = js.undefined,
+    Limit: Int | scala.Double = null,
     Names: MatchmakingRuleSetNameList = null,
     NextToken: NonZeroAndMaxString = null
   ): DescribeMatchmakingRuleSetsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeMatchmakingRuleSetsInput]

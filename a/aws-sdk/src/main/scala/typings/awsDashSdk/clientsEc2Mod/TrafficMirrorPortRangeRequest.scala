@@ -17,10 +17,10 @@ trait TrafficMirrorPortRangeRequest extends js.Object {
 
 object TrafficMirrorPortRangeRequest {
   @scala.inline
-  def apply(FromPort: js.UndefOr[Integer] = js.undefined, ToPort: js.UndefOr[Integer] = js.undefined): TrafficMirrorPortRangeRequest = {
+  def apply(FromPort: Int | scala.Double = null, ToPort: Int | scala.Double = null): TrafficMirrorPortRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort)
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort)
+    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
+    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorPortRangeRequest]
   }
 }

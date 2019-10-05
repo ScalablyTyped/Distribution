@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SwitchStatement")
 @js.native
 class SwitchStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SwitchStatement {
+  extends typings.typescriptDashServices.TypeScript.SwitchStatement {
   def this(
-    expression: typings.typescriptDashServices.TypeScriptNs.AST,
-    closeParenToken: typings.typescriptDashServices.TypeScriptNs.ASTSpan,
-    switchClauses: typings.typescriptDashServices.TypeScriptNs.ISyntaxList2
+    expression: typings.typescriptDashServices.TypeScript.AST,
+    closeParenToken: typings.typescriptDashServices.TypeScript.ASTSpan,
+    switchClauses: typings.typescriptDashServices.TypeScript.ISyntaxList2
   ) = this()
 }
 

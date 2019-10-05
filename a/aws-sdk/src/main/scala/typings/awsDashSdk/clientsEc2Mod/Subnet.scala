@@ -66,14 +66,14 @@ trait Subnet extends js.Object {
 object Subnet {
   @scala.inline
   def apply(
-    AssignIpv6AddressOnCreation: js.UndefOr[Boolean] = js.undefined,
+    AssignIpv6AddressOnCreation: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
     AvailabilityZoneId: String = null,
-    AvailableIpAddressCount: js.UndefOr[Integer] = js.undefined,
+    AvailableIpAddressCount: Int | scala.Double = null,
     CidrBlock: String = null,
-    DefaultForAz: js.UndefOr[Boolean] = js.undefined,
+    DefaultForAz: js.UndefOr[scala.Boolean] = js.undefined,
     Ipv6CidrBlockAssociationSet: SubnetIpv6CidrBlockAssociationSet = null,
-    MapPublicIpOnLaunch: js.UndefOr[Boolean] = js.undefined,
+    MapPublicIpOnLaunch: js.UndefOr[scala.Boolean] = js.undefined,
     OwnerId: String = null,
     State: SubnetState = null,
     SubnetArn: String = null,
@@ -85,7 +85,7 @@ object Subnet {
     if (!js.isUndefined(AssignIpv6AddressOnCreation)) __obj.updateDynamic("AssignIpv6AddressOnCreation")(AssignIpv6AddressOnCreation)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId)
-    if (!js.isUndefined(AvailableIpAddressCount)) __obj.updateDynamic("AvailableIpAddressCount")(AvailableIpAddressCount)
+    if (AvailableIpAddressCount != null) __obj.updateDynamic("AvailableIpAddressCount")(AvailableIpAddressCount.asInstanceOf[js.Any])
     if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock)
     if (!js.isUndefined(DefaultForAz)) __obj.updateDynamic("DefaultForAz")(DefaultForAz)
     if (Ipv6CidrBlockAssociationSet != null) __obj.updateDynamic("Ipv6CidrBlockAssociationSet")(Ipv6CidrBlockAssociationSet)

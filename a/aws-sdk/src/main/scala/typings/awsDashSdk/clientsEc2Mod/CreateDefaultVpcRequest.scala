@@ -13,7 +13,7 @@ trait CreateDefaultVpcRequest extends js.Object {
 
 object CreateDefaultVpcRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): CreateDefaultVpcRequest = {
+  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateDefaultVpcRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateDefaultVpcRequest]

@@ -12,9 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaDashLogMod extends js.Object {
   def apply(`type`: String): Middleware[DefaultState, DefaultContext] = js.native
-  @JSName("morgan")
   @js.native
-  object morganNs extends js.Object {
+  object morgan extends js.Object {
     def cookie(ctx: BaseContext, key: String): String = js.native
     def date(ctx: BaseContext, format: String): String = js.native
     def format(name: String): String = js.native

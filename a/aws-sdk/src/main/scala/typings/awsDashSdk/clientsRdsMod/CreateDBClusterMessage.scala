@@ -137,17 +137,17 @@ object CreateDBClusterMessage {
     DBClusterIdentifier: String,
     Engine: String,
     AvailabilityZones: AvailabilityZones = null,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    BacktrackWindow: Int | scala.Double = null,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CharacterSetName: String = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableHttpEndpoint: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineMode: String = null,
     EngineVersion: String = null,
     GlobalClusterIdentifier: String = null,
@@ -155,21 +155,21 @@ object CreateDBClusterMessage {
     MasterUserPassword: String = null,
     MasterUsername: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreSignedUrl: String = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ReplicationSourceIdentifier: String = null,
     ScalingConfiguration: ScalingConfiguration = null,
     SourceRegion: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): CreateDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BacktrackWindow != null) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.asInstanceOf[js.Any])
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
@@ -186,7 +186,7 @@ object CreateDBClusterMessage {
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

@@ -23,13 +23,13 @@ object IPeoplePickerItemSelectedProps {
   @scala.inline
   def apply(
     IPickerItemProps: IPickerItemProps[IPersonaProps with Anon_ValidationState] = null,
-    IPeoplePickerItemSharedProps: IPeoplePickerItemSharedProps = null,
-    styles: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles] = null
+    styles: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles] = null,
+    theme: ITheme = null
   ): IPeoplePickerItemSelectedProps = {
     val __obj = js.Dynamic.literal()
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
-    js.Dynamic.global.Object.assign(__obj, IPeoplePickerItemSharedProps)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[IPeoplePickerItemSelectedProps]
   }
 }

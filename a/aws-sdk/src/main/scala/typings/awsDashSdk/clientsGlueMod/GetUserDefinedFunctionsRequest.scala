@@ -33,12 +33,12 @@ object GetUserDefinedFunctionsRequest {
     DatabaseName: NameString,
     Pattern: NameString,
     CatalogId: CatalogIdString = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null
   ): GetUserDefinedFunctionsRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName, Pattern = Pattern)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetUserDefinedFunctionsRequest]
   }

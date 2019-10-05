@@ -16,13 +16,13 @@ object seedRandomOptions {
   def apply(
     entropy: js.UndefOr[Boolean] = js.undefined,
     global: js.UndefOr[Boolean] = js.undefined,
-    pass: seedrandomCallback = null,
+    pass: (/* prng */ js.UndefOr[prng], /* shortseed */ js.UndefOr[String], /* global */ js.UndefOr[Boolean], /* state */ js.UndefOr[State]) => prng = null,
     state: Boolean | State = null
   ): seedRandomOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy)
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (pass != null) __obj.updateDynamic("pass")(pass)
+    if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction4(pass))
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[seedRandomOptions]
   }

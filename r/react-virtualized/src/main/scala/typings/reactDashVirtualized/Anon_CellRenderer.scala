@@ -1,5 +1,7 @@
 package typings.reactDashVirtualized
 
+import typings.react.reactMod.ReactNode
+import typings.reactDashVirtualized.distEsGridMod.GridCellProps
 import typings.reactDashVirtualized.distEsGridMod.GridCellRenderer
 import typings.reactDashVirtualized.reactDashVirtualizedMod.Index
 import scala.scalajs.js
@@ -26,11 +28,11 @@ trait Anon_CellRenderer extends js.Object {
 object Anon_CellRenderer {
   @scala.inline
   def apply(
-    cellRenderer: GridCellRenderer,
+    cellRenderer: /* props */ GridCellProps => ReactNode,
     columnCount: Double,
     columnWidth: Double | (js.Function1[/* params */ Index, Double])
   ): Anon_CellRenderer = {
-    val __obj = js.Dynamic.literal(cellRenderer = cellRenderer, columnCount = columnCount, columnWidth = columnWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), columnCount = columnCount, columnWidth = columnWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellRenderer]
   }

@@ -20,3 +20,10 @@ class CircleMarker[P] protected () extends Path {
   def toGeoJSON(): Feature[typings.geojson.geojsonMod.Point, P] = js.native
 }
 
+@JSImport("leaflet", "circleMarker")
+@js.native
+object circleMarker extends js.Object {
+  def apply(latlng: LatLngExpression): CircleMarker[_] = js.native
+  def apply(latlng: LatLngExpression, options: CircleMarkerOptions): CircleMarker[_] = js.native
+}
+

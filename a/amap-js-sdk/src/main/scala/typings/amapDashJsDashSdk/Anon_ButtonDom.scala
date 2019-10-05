@@ -1,8 +1,8 @@
 package typings.amapDashJsDashSdk
 
-import typings.amapDashJsDashSdk.AMapNs.CircleOptions
-import typings.amapDashJsDashSdk.AMapNs.MarkerOptions
-import typings.amapDashJsDashSdk.AMapNs.Pixel
+import typings.amapDashJsDashSdk.AMap.CircleOptions
+import typings.amapDashJsDashSdk.AMap.MarkerOptions
+import typings.amapDashJsDashSdk.AMap.Pixel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

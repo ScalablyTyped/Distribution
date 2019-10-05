@@ -17,10 +17,10 @@ trait GeoLocation extends js.Object {
 
 object GeoLocation {
   @scala.inline
-  def apply(Lat: js.UndefOr[Double] = js.undefined, Lon: js.UndefOr[Double] = js.undefined): GeoLocation = {
+  def apply(Lat: Int | scala.Double = null, Lon: Int | scala.Double = null): GeoLocation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Lat)) __obj.updateDynamic("Lat")(Lat)
-    if (!js.isUndefined(Lon)) __obj.updateDynamic("Lon")(Lon)
+    if (Lat != null) __obj.updateDynamic("Lat")(Lat.asInstanceOf[js.Any])
+    if (Lon != null) __obj.updateDynamic("Lon")(Lon.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocation]
   }
 }

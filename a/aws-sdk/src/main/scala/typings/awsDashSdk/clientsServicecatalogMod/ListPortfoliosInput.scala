@@ -21,14 +21,10 @@ trait ListPortfoliosInput extends js.Object {
 
 object ListPortfoliosInput {
   @scala.inline
-  def apply(
-    AcceptLanguage: AcceptLanguage = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
-    PageToken: PageToken = null
-  ): ListPortfoliosInput = {
+  def apply(AcceptLanguage: AcceptLanguage = null, PageSize: Int | Double = null, PageToken: PageToken = null): ListPortfoliosInput = {
     val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
     __obj.asInstanceOf[ListPortfoliosInput]
   }

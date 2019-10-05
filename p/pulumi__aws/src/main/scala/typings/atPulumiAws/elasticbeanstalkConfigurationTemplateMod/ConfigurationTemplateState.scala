@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticbeanstalkConfigurationTemplateMod
 
-import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.ConfigurationTemplateSetting
+import typings.atPulumiAws.typesInputMod.elasticbeanstalk.ConfigurationTemplateSetting
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

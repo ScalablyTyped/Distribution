@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.Text
-  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.Link
-  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.Markdown
-  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.ActionCard
-  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.MessageNs.FeedCardItem
+  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.Text
+  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.Link
+  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.Markdown
+  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.ActionCard
+  - typings.dingtalkDashRobotDashSender.dingtalkDashRobotDashSenderMod.Message.FeedCardItem
 */
 trait MessageType extends js.Object
 

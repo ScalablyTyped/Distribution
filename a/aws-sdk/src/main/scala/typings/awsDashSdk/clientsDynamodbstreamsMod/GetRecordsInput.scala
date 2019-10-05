@@ -17,9 +17,9 @@ trait GetRecordsInput extends js.Object {
 
 object GetRecordsInput {
   @scala.inline
-  def apply(ShardIterator: ShardIterator, Limit: js.UndefOr[PositiveIntegerObject] = js.undefined): GetRecordsInput = {
+  def apply(ShardIterator: ShardIterator, Limit: Int | Double = null): GetRecordsInput = {
     val __obj = js.Dynamic.literal(ShardIterator = ShardIterator)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsInput]
   }
 }

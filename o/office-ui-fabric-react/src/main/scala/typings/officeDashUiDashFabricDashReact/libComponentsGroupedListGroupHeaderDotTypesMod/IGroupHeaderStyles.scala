@@ -19,17 +19,24 @@ trait IGroupHeaderStyles extends js.Object {
 object IGroupHeaderStyles {
   @scala.inline
   def apply(
-    check: IStyle,
-    dropIcon: IStyle,
-    expand: IStyle,
-    expandIsCollapsed: IStyle,
-    groupHeaderContainer: IStyle,
-    headerCount: IStyle,
-    root: IStyle,
-    title: IStyle
+    check: IStyle = null,
+    dropIcon: IStyle = null,
+    expand: IStyle = null,
+    expandIsCollapsed: IStyle = null,
+    groupHeaderContainer: IStyle = null,
+    headerCount: IStyle = null,
+    root: IStyle = null,
+    title: IStyle = null
   ): IGroupHeaderStyles = {
-    val __obj = js.Dynamic.literal(check = check.asInstanceOf[js.Any], dropIcon = dropIcon.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], expandIsCollapsed = expandIsCollapsed.asInstanceOf[js.Any], groupHeaderContainer = groupHeaderContainer.asInstanceOf[js.Any], headerCount = headerCount.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (dropIcon != null) __obj.updateDynamic("dropIcon")(dropIcon.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (expandIsCollapsed != null) __obj.updateDynamic("expandIsCollapsed")(expandIsCollapsed.asInstanceOf[js.Any])
+    if (groupHeaderContainer != null) __obj.updateDynamic("groupHeaderContainer")(groupHeaderContainer.asInstanceOf[js.Any])
+    if (headerCount != null) __obj.updateDynamic("headerCount")(headerCount.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupHeaderStyles]
   }
 }

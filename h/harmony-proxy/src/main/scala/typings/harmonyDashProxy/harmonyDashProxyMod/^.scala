@@ -1,7 +1,7 @@
 package typings.harmonyDashProxy.harmonyDashProxyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.harmonyDashProxy.harmonyDashProxyMod.harmonyProxyNs.ProxyConstructor
+import typings.harmonyDashProxy.harmonyDashProxyMod.harmonyProxy.ProxyConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

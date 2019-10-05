@@ -63,7 +63,7 @@ object Blueprint {
     group: NonEmptyString = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     licenseUrl: String = null,
-    minPower: js.UndefOr[integer] = js.undefined,
+    minPower: Int | Double = null,
     name: ResourceName = null,
     platform: InstancePlatform = null,
     productUrl: String = null,
@@ -77,7 +77,7 @@ object Blueprint {
     if (group != null) __obj.updateDynamic("group")(group)
     if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
     if (licenseUrl != null) __obj.updateDynamic("licenseUrl")(licenseUrl)
-    if (!js.isUndefined(minPower)) __obj.updateDynamic("minPower")(minPower)
+    if (minPower != null) __obj.updateDynamic("minPower")(minPower.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (productUrl != null) __obj.updateDynamic("productUrl")(productUrl)

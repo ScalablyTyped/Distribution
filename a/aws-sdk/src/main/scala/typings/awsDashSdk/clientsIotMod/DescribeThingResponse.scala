@@ -49,7 +49,7 @@ object DescribeThingResponse {
     thingId: ThingId = null,
     thingName: ThingName = null,
     thingTypeName: ThingTypeName = null,
-    version: js.UndefOr[Version] = js.undefined
+    version: Int | Double = null
   ): DescribeThingResponse = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
@@ -59,7 +59,7 @@ object DescribeThingResponse {
     if (thingId != null) __obj.updateDynamic("thingId")(thingId)
     if (thingName != null) __obj.updateDynamic("thingName")(thingName)
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingResponse]
   }
 }

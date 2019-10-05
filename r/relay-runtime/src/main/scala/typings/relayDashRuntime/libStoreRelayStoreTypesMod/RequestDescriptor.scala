@@ -8,9 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestDescriptor extends js.Object {
-  var identifier: RequestIdentifier
-  var node: ConcreteRequest
-  var variables: Variables
+  val identifier: RequestIdentifier
+  val node: ConcreteRequest
+  val variables: Variables
 }
 
 object RequestDescriptor {

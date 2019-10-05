@@ -1,7 +1,7 @@
 package typings.emberDashMocha.emberDashMochaMod
 
 import typings.emberDashTestDashHelpers.emberDashTestDashHelpersMod.ModuleCallbacks
-import typings.mocha.MochaNs.ISuiteCallbackContext
+import typings.mocha.Mocha.ISuiteCallbackContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

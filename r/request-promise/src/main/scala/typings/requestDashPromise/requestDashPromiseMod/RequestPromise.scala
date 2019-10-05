@@ -4,6 +4,7 @@ import typings.bluebird.bluebirdMod.Bluebird
 import typings.bluebird.bluebirdMod.CatchFilter
 import typings.bluebird.bluebirdMod.Constructor
 import typings.bluebird.bluebirdMod.Resolvable
+import typings.bluebird.bluebirdMod.^
 import typings.request.requestMod.Request
 import typings.requestDashPromise.Fn_Error
 import typings.requestDashPromise.Fn_ErrorFilter1
@@ -227,7 +228,7 @@ trait RequestPromise extends Request {
     onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[U]]
   ): Bluebird[U | _] = js.native
   def `finally`(handler: js.Function0[Resolvable[_]]): Bluebird[_] = js.native
-  def promise(): typings.bluebird.bluebirdMod.^[_] = js.native
+  def promise(): ^[_] = js.native
   def `then`[U](): Bluebird[U] = js.native
   def `then`[U](onFulfill: js.Function1[/* value */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
   def `then`[U](

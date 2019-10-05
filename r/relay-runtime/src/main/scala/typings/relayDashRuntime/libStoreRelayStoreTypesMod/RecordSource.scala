@@ -2,15 +2,16 @@ package typings.relayDashRuntime.libStoreRelayStoreTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayDashRuntime.libStoreRelayRecordStateMod.RecordState
+import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.DataID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RecordSource extends js.Object {
-  def get(dataID: String): Record
-  def getRecordIDs(): js.Array[String]
-  def getStatus(dataID: String): RecordState
-  def has(dataID: String): Boolean
+  def get(dataID: DataID): js.UndefOr[Record | Null]
+  def getRecordIDs(): js.Array[DataID]
+  def getStatus(dataID: DataID): RecordState
+  def has(dataID: DataID): Boolean
   def size(): Double
   def toJSON(): StringDictionary[Record]
 }
@@ -18,10 +19,10 @@ trait RecordSource extends js.Object {
 object RecordSource {
   @scala.inline
   def apply(
-    get: String => Record,
-    getRecordIDs: () => js.Array[String],
-    getStatus: String => RecordState,
-    has: String => Boolean,
+    get: DataID => js.UndefOr[Record | Null],
+    getRecordIDs: () => js.Array[DataID],
+    getStatus: DataID => RecordState,
+    has: DataID => Boolean,
     size: () => Double,
     toJSON: () => StringDictionary[Record]
   ): RecordSource = {

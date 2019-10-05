@@ -28,11 +28,11 @@ object ListAliasesRequest {
   def apply(
     EntityId: WorkMailIdentifier,
     OrganizationId: OrganizationId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListAliasesRequest = {
     val __obj = js.Dynamic.literal(EntityId = EntityId, OrganizationId = OrganizationId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListAliasesRequest]
   }

@@ -92,21 +92,21 @@ object S3Settings {
   def apply(
     BucketFolder: String = null,
     BucketName: String = null,
-    CdcInsertsOnly: js.UndefOr[BooleanOptional] = js.undefined,
+    CdcInsertsOnly: js.UndefOr[scala.Boolean] = js.undefined,
     CompressionType: CompressionTypeValue = null,
     CsvDelimiter: String = null,
     CsvRowDelimiter: String = null,
     DataFormat: DataFormatValue = null,
-    DataPageSize: js.UndefOr[IntegerOptional] = js.undefined,
-    DictPageSizeLimit: js.UndefOr[IntegerOptional] = js.undefined,
-    EnableStatistics: js.UndefOr[BooleanOptional] = js.undefined,
+    DataPageSize: Int | Double = null,
+    DictPageSizeLimit: Int | Double = null,
+    EnableStatistics: js.UndefOr[scala.Boolean] = js.undefined,
     EncodingType: EncodingTypeValue = null,
     EncryptionMode: EncryptionModeValue = null,
     ExternalTableDefinition: String = null,
-    IncludeOpForFullLoad: js.UndefOr[BooleanOptional] = js.undefined,
-    ParquetTimestampInMillisecond: js.UndefOr[BooleanOptional] = js.undefined,
+    IncludeOpForFullLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    ParquetTimestampInMillisecond: js.UndefOr[scala.Boolean] = js.undefined,
     ParquetVersion: ParquetVersionValue = null,
-    RowGroupLength: js.UndefOr[IntegerOptional] = js.undefined,
+    RowGroupLength: Int | Double = null,
     ServerSideEncryptionKmsKeyId: String = null,
     ServiceAccessRoleArn: String = null,
     TimestampColumnName: String = null
@@ -119,8 +119,8 @@ object S3Settings {
     if (CsvDelimiter != null) __obj.updateDynamic("CsvDelimiter")(CsvDelimiter)
     if (CsvRowDelimiter != null) __obj.updateDynamic("CsvRowDelimiter")(CsvRowDelimiter)
     if (DataFormat != null) __obj.updateDynamic("DataFormat")(DataFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataPageSize)) __obj.updateDynamic("DataPageSize")(DataPageSize)
-    if (!js.isUndefined(DictPageSizeLimit)) __obj.updateDynamic("DictPageSizeLimit")(DictPageSizeLimit)
+    if (DataPageSize != null) __obj.updateDynamic("DataPageSize")(DataPageSize.asInstanceOf[js.Any])
+    if (DictPageSizeLimit != null) __obj.updateDynamic("DictPageSizeLimit")(DictPageSizeLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableStatistics)) __obj.updateDynamic("EnableStatistics")(EnableStatistics)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (EncryptionMode != null) __obj.updateDynamic("EncryptionMode")(EncryptionMode.asInstanceOf[js.Any])
@@ -128,7 +128,7 @@ object S3Settings {
     if (!js.isUndefined(IncludeOpForFullLoad)) __obj.updateDynamic("IncludeOpForFullLoad")(IncludeOpForFullLoad)
     if (!js.isUndefined(ParquetTimestampInMillisecond)) __obj.updateDynamic("ParquetTimestampInMillisecond")(ParquetTimestampInMillisecond)
     if (ParquetVersion != null) __obj.updateDynamic("ParquetVersion")(ParquetVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowGroupLength)) __obj.updateDynamic("RowGroupLength")(RowGroupLength)
+    if (RowGroupLength != null) __obj.updateDynamic("RowGroupLength")(RowGroupLength.asInstanceOf[js.Any])
     if (ServerSideEncryptionKmsKeyId != null) __obj.updateDynamic("ServerSideEncryptionKmsKeyId")(ServerSideEncryptionKmsKeyId)
     if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn)
     if (TimestampColumnName != null) __obj.updateDynamic("TimestampColumnName")(TimestampColumnName)

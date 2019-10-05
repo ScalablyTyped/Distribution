@@ -11,12 +11,9 @@ trait DataURL extends js.Object {
   var parameters: js.Object
 }
 
-object DataURL {
-  @scala.inline
-  def apply(base64: String, data: String, mimeType: String, parameters: js.Object, toString: () => String): DataURL = {
-    val __obj = js.Dynamic.literal(base64 = base64, data = data, mimeType = mimeType, parameters = parameters, toString = js.Any.fromFunction0(toString))
-  
-    __obj.asInstanceOf[DataURL]
-  }
+@JSImport("sdk/url", "DataURL")
+@js.native
+object DataURL extends js.Object {
+  def apply(uri: String): DataURL = js.native
 }
 

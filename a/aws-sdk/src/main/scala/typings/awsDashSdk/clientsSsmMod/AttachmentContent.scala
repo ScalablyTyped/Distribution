@@ -33,14 +33,14 @@ object AttachmentContent {
     Hash: AttachmentHash = null,
     HashType: AttachmentHashType = null,
     Name: AttachmentName = null,
-    Size: js.UndefOr[ContentLength] = js.undefined,
+    Size: Int | Double = null,
     Url: AttachmentUrl = null
   ): AttachmentContent = {
     val __obj = js.Dynamic.literal()
     if (Hash != null) __obj.updateDynamic("Hash")(Hash)
     if (HashType != null) __obj.updateDynamic("HashType")(HashType.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[AttachmentContent]
   }

@@ -1,7 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libTextareaDashItemMod
 
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles
-import typings.atAntDashDesignReactDashNative.libTextareaDashItemPropsTypeMod.TextAreaEventHandle
 import typings.atAntDashDesignReactDashNative.libTextareaDashItemPropsTypeMod.TextAreaItemPropsType
 import typings.atAntDashDesignReactDashNative.libTextareaDashItemStyleMod.TextareaItemStyle
 import typings.react.reactMod.ReactNode
@@ -32,7 +31,7 @@ object TextareaItemProps {
     last: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
     name: String = null,
-    onChange: TextAreaEventHandle = null,
+    onChange: /* val */ js.UndefOr[String] => Unit = null,
     onContentSizeChange: /* e */ js.Any => Unit = null,
     onErrorClick: () => Unit = null,
     placeholder: String = null,
@@ -53,7 +52,7 @@ object TextareaItemProps {
     if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
     if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction0(onErrorClick))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

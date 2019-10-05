@@ -41,7 +41,7 @@ object UpdateProvisioningArtifactInput {
     ProductId: Id,
     ProvisioningArtifactId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    Active: js.UndefOr[ProvisioningArtifactActive] = js.undefined,
+    Active: js.UndefOr[Boolean] = js.undefined,
     Description: ProvisioningArtifactDescription = null,
     Guidance: ProvisioningArtifactGuidance = null,
     Name: ProvisioningArtifactName = null

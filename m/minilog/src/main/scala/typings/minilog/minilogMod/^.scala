@@ -12,8 +12,5 @@ object ^ extends js.Object {
   var defaultFormatter: String = js.native
   var suggest: Filter = js.native
   def apply(namespace: String): Minilog = js.native
-  def disable(): Minilog = js.native
-  def enable(): Minilog = js.native
-  def pipe(dest: js.Any): Transform = js.native
 }
 

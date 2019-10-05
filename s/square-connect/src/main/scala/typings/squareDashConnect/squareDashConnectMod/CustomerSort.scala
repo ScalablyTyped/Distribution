@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CustomerSortNs.FieldEnum
+import typings.squareDashConnect.squareDashConnectMod.CustomerSort.FieldEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +19,27 @@ class CustomerSort () extends js.Object {
     * Strings representing numbers are sorted as strings. See [SortOrder](#type-sortorder) for possible values.
     */
   var order: js.UndefOr[SortOrderEnum] = js.native
+}
+
+@JSImport("square-connect", "CustomerSort")
+@js.native
+object CustomerSort extends js.Object {
+  @js.native
+  sealed trait FieldEnum extends js.Object
+  
+  @js.native
+  object FieldEnum extends js.Object {
+    @js.native
+    sealed trait CREATED_AT extends FieldEnum
+    
+    @js.native
+    sealed trait DEFAULT extends FieldEnum
+    
+    /* "CREATED_AT" */ val CREATED_AT: typings.squareDashConnect.squareDashConnectMod.CustomerSort.FieldEnum.CREATED_AT with String = js.native
+    /* "DEFAULT" */ val DEFAULT: typings.squareDashConnect.squareDashConnectMod.CustomerSort.FieldEnum.DEFAULT with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[FieldEnum with String] = js.native
+  }
+  
 }
 

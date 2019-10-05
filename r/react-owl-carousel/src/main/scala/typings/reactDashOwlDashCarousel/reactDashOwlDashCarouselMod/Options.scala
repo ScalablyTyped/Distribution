@@ -435,7 +435,7 @@ object Options {
     fluidSpeed: Double | Boolean = null,
     freeDrag: js.UndefOr[Boolean] = js.undefined,
     grabClass: String = null,
-    info: HandlerCallback = null,
+    info: /* repeated */ js.Any => Unit = null,
     itemElement: String = null,
     items: Int | Double = null,
     lazyContent: js.UndefOr[Boolean] = js.undefined,
@@ -455,22 +455,22 @@ object Options {
     navSpeed: Double | Boolean = null,
     navText: js.Array[String] = null,
     nestedItemSelector: String = null,
-    onChange: HandlerCallback = null,
-    onChanged: HandlerCallback = null,
-    onDrag: HandlerCallback = null,
-    onDragged: HandlerCallback = null,
-    onInitialize: HandlerCallback = null,
-    onInitialized: HandlerCallback = null,
-    onLoadLazy: HandlerCallback = null,
-    onLoadedLazy: HandlerCallback = null,
-    onPlayVideo: HandlerCallback = null,
-    onRefresh: HandlerCallback = null,
-    onRefreshed: HandlerCallback = null,
-    onResize: HandlerCallback = null,
-    onResized: HandlerCallback = null,
-    onStopVideo: HandlerCallback = null,
-    onTranslate: HandlerCallback = null,
-    onTranslated: HandlerCallback = null,
+    onChange: /* repeated */ js.Any => Unit = null,
+    onChanged: /* repeated */ js.Any => Unit = null,
+    onDrag: /* repeated */ js.Any => Unit = null,
+    onDragged: /* repeated */ js.Any => Unit = null,
+    onInitialize: /* repeated */ js.Any => Unit = null,
+    onInitialized: /* repeated */ js.Any => Unit = null,
+    onLoadLazy: /* repeated */ js.Any => Unit = null,
+    onLoadedLazy: /* repeated */ js.Any => Unit = null,
+    onPlayVideo: /* repeated */ js.Any => Unit = null,
+    onRefresh: /* repeated */ js.Any => Unit = null,
+    onRefreshed: /* repeated */ js.Any => Unit = null,
+    onResize: /* repeated */ js.Any => Unit = null,
+    onResized: /* repeated */ js.Any => Unit = null,
+    onStopVideo: /* repeated */ js.Any => Unit = null,
+    onTranslate: /* repeated */ js.Any => Unit = null,
+    onTranslated: /* repeated */ js.Any => Unit = null,
     pullDrag: js.UndefOr[Boolean] = js.undefined,
     refreshClass: String = null,
     responsive: StringDictionary[Options] = null,
@@ -518,7 +518,7 @@ object Options {
     if (fluidSpeed != null) __obj.updateDynamic("fluidSpeed")(fluidSpeed.asInstanceOf[js.Any])
     if (!js.isUndefined(freeDrag)) __obj.updateDynamic("freeDrag")(freeDrag)
     if (grabClass != null) __obj.updateDynamic("grabClass")(grabClass)
-    if (info != null) __obj.updateDynamic("info")(info)
+    if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
     if (itemElement != null) __obj.updateDynamic("itemElement")(itemElement)
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (!js.isUndefined(lazyContent)) __obj.updateDynamic("lazyContent")(lazyContent)
@@ -538,22 +538,22 @@ object Options {
     if (navSpeed != null) __obj.updateDynamic("navSpeed")(navSpeed.asInstanceOf[js.Any])
     if (navText != null) __obj.updateDynamic("navText")(navText)
     if (nestedItemSelector != null) __obj.updateDynamic("nestedItemSelector")(nestedItemSelector)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChanged != null) __obj.updateDynamic("onChanged")(onChanged)
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragged != null) __obj.updateDynamic("onDragged")(onDragged)
-    if (onInitialize != null) __obj.updateDynamic("onInitialize")(onInitialize)
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(onInitialized)
-    if (onLoadLazy != null) __obj.updateDynamic("onLoadLazy")(onLoadLazy)
-    if (onLoadedLazy != null) __obj.updateDynamic("onLoadedLazy")(onLoadedLazy)
-    if (onPlayVideo != null) __obj.updateDynamic("onPlayVideo")(onPlayVideo)
-    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh)
-    if (onRefreshed != null) __obj.updateDynamic("onRefreshed")(onRefreshed)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onResized != null) __obj.updateDynamic("onResized")(onResized)
-    if (onStopVideo != null) __obj.updateDynamic("onStopVideo")(onStopVideo)
-    if (onTranslate != null) __obj.updateDynamic("onTranslate")(onTranslate)
-    if (onTranslated != null) __obj.updateDynamic("onTranslated")(onTranslated)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged))
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
+    if (onDragged != null) __obj.updateDynamic("onDragged")(js.Any.fromFunction1(onDragged))
+    if (onInitialize != null) __obj.updateDynamic("onInitialize")(js.Any.fromFunction1(onInitialize))
+    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
+    if (onLoadLazy != null) __obj.updateDynamic("onLoadLazy")(js.Any.fromFunction1(onLoadLazy))
+    if (onLoadedLazy != null) __obj.updateDynamic("onLoadedLazy")(js.Any.fromFunction1(onLoadedLazy))
+    if (onPlayVideo != null) __obj.updateDynamic("onPlayVideo")(js.Any.fromFunction1(onPlayVideo))
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction1(onRefresh))
+    if (onRefreshed != null) __obj.updateDynamic("onRefreshed")(js.Any.fromFunction1(onRefreshed))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
+    if (onResized != null) __obj.updateDynamic("onResized")(js.Any.fromFunction1(onResized))
+    if (onStopVideo != null) __obj.updateDynamic("onStopVideo")(js.Any.fromFunction1(onStopVideo))
+    if (onTranslate != null) __obj.updateDynamic("onTranslate")(js.Any.fromFunction1(onTranslate))
+    if (onTranslated != null) __obj.updateDynamic("onTranslated")(js.Any.fromFunction1(onTranslated))
     if (!js.isUndefined(pullDrag)) __obj.updateDynamic("pullDrag")(pullDrag)
     if (refreshClass != null) __obj.updateDynamic("refreshClass")(refreshClass)
     if (responsive != null) __obj.updateDynamic("responsive")(responsive)

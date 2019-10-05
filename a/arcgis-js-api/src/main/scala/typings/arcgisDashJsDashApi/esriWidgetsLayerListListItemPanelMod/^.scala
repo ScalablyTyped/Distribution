@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLayerListListItemPanelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ListItemPanelConstructor
+import typings.arcgisDashJsDashApi.__esri.ListItemPanelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

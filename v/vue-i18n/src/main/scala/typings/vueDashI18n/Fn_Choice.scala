@@ -1,9 +1,9 @@
 package typings.vueDashI18n
 
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Choice
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Locale
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Path
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.Values
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.Choice
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.Path
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,14 +22,14 @@ trait QueryStatistics extends js.Object {
 object QueryStatistics {
   @scala.inline
   def apply(
-    bytesScanned: js.UndefOr[StatsValue] = js.undefined,
-    recordsMatched: js.UndefOr[StatsValue] = js.undefined,
-    recordsScanned: js.UndefOr[StatsValue] = js.undefined
+    bytesScanned: Int | Double = null,
+    recordsMatched: Int | Double = null,
+    recordsScanned: Int | Double = null
   ): QueryStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bytesScanned)) __obj.updateDynamic("bytesScanned")(bytesScanned)
-    if (!js.isUndefined(recordsMatched)) __obj.updateDynamic("recordsMatched")(recordsMatched)
-    if (!js.isUndefined(recordsScanned)) __obj.updateDynamic("recordsScanned")(recordsScanned)
+    if (bytesScanned != null) __obj.updateDynamic("bytesScanned")(bytesScanned.asInstanceOf[js.Any])
+    if (recordsMatched != null) __obj.updateDynamic("recordsMatched")(recordsMatched.asInstanceOf[js.Any])
+    if (recordsScanned != null) __obj.updateDynamic("recordsScanned")(recordsScanned.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryStatistics]
   }
 }

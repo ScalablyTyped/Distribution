@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSupportAttributeColorInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttributeColorInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttributeColorInfoProperties
+import typings.arcgisDashJsDashApi.__esri.AttributeColorInfo
+import typings.arcgisDashJsDashApi.__esri.AttributeColorInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

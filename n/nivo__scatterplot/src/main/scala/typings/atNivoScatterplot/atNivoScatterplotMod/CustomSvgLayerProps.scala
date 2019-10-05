@@ -15,10 +15,10 @@ object CustomSvgLayerProps {
     nodes: js.Array[Node],
     outerHeight: Double,
     outerWidth: Double,
-    xScale: Scale,
-    yScale: Scale
+    xScale: /* value */ Value => Double,
+    yScale: /* value */ Value => Double
   ): CustomSvgLayerProps = {
-    val __obj = js.Dynamic.literal(innerHeight = innerHeight, innerWidth = innerWidth, nodes = nodes, outerHeight = outerHeight, outerWidth = outerWidth, xScale = xScale, yScale = yScale)
+    val __obj = js.Dynamic.literal(innerHeight = innerHeight, innerWidth = innerWidth, nodes = nodes, outerHeight = outerHeight, outerWidth = outerWidth, xScale = js.Any.fromFunction1(xScale), yScale = js.Any.fromFunction1(yScale))
   
     __obj.asInstanceOf[CustomSvgLayerProps]
   }

@@ -1,7 +1,7 @@
 package typings.markitup
 
-import typings.markitup.MarkItUpNs.Options
-import typings.markitup.MarkItUpNs.Static
+import typings.markitup.MarkItUp.Options
+import typings.markitup.MarkItUp.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

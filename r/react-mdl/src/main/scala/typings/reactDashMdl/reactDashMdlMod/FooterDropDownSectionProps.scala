@@ -16,15 +16,16 @@ trait FooterDropDownSectionProps
 object FooterDropDownSectionProps {
   @scala.inline
   def apply(
-    title: ReactNode,
     DOMAttributes: DOMAttributes[FooterDropDownSection] = null,
     MDLHTMLAttributes: MDLHTMLAttributes = null,
-    size: String = null
+    size: String = null,
+    title: ReactNode = null
   ): FooterDropDownSectionProps = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (size != null) __obj.updateDynamic("size")(size)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FooterDropDownSectionProps]
   }
 }

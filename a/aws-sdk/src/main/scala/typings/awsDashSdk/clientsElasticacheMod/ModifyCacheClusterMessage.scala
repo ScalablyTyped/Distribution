@@ -80,8 +80,8 @@ object ModifyCacheClusterMessage {
   def apply(
     CacheClusterId: String,
     AZMode: AZMode = null,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     CacheNodeIdsToRemove: CacheNodeIdsList = null,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
@@ -90,10 +90,10 @@ object ModifyCacheClusterMessage {
     NewAvailabilityZones: PreferredAvailabilityZoneList = null,
     NotificationTopicArn: String = null,
     NotificationTopicStatus: String = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    NumCacheNodes: Int | scala.Double = null,
     PreferredMaintenanceWindow: String = null,
     SecurityGroupIds: SecurityGroupIdsList = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null
   ): ModifyCacheClusterMessage = {
     val __obj = js.Dynamic.literal(CacheClusterId = CacheClusterId)
@@ -108,10 +108,10 @@ object ModifyCacheClusterMessage {
     if (NewAvailabilityZones != null) __obj.updateDynamic("NewAvailabilityZones")(NewAvailabilityZones)
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn)
     if (NotificationTopicStatus != null) __obj.updateDynamic("NotificationTopicStatus")(NotificationTopicStatus)
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes)
+    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     __obj.asInstanceOf[ModifyCacheClusterMessage]
   }

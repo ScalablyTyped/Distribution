@@ -10,7 +10,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBas
 import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.ISelectedItemProps
 import typings.officeDashUiDashFabricDashReact.libSelectionMod.Selection
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import scala.scalajs.js

@@ -67,7 +67,7 @@ object MaintenanceWindowTask {
     MaxConcurrency: MaxConcurrency = null,
     MaxErrors: MaxErrors = null,
     Name: MaintenanceWindowName = null,
-    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
+    Priority: Int | Double = null,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
     TaskArn: MaintenanceWindowTaskArn = null,
@@ -82,7 +82,7 @@ object MaintenanceWindowTask {
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency)
     if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn)
     if (Targets != null) __obj.updateDynamic("Targets")(Targets)
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn)

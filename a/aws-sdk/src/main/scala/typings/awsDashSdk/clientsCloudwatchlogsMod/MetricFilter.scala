@@ -27,14 +27,14 @@ trait MetricFilter extends js.Object {
 object MetricFilter {
   @scala.inline
   def apply(
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
+    creationTime: Int | Double = null,
     filterName: FilterName = null,
     filterPattern: FilterPattern = null,
     logGroupName: LogGroupName = null,
     metricTransformations: MetricTransformations = null
   ): MetricFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (filterName != null) __obj.updateDynamic("filterName")(filterName)
     if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern)
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)

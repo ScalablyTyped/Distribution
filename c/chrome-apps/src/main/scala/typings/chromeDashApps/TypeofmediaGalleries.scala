@@ -1,13 +1,13 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.GalleryChangedEventArgs
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.GalleryWatchResult
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.MediaFileSystemMetadata
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.MediaFileSystemsOptions
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.Metadata
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.MetadataOptions
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.ScanProgressEventArgs
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.mediaGalleries.GalleryChangedEventArgs
+import typings.chromeDashApps.chrome.mediaGalleries.GalleryWatchResult
+import typings.chromeDashApps.chrome.mediaGalleries.MediaFileSystemMetadata
+import typings.chromeDashApps.chrome.mediaGalleries.MediaFileSystemsOptions
+import typings.chromeDashApps.chrome.mediaGalleries.Metadata
+import typings.chromeDashApps.chrome.mediaGalleries.MetadataOptions
+import typings.chromeDashApps.chrome.mediaGalleries.ScanProgressEventArgs
 import typings.filesystem.FileSystem
 import typings.std.Blob
 import scala.scalajs.js

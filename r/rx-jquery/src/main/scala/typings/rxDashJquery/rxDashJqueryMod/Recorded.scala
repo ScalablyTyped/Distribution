@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "Recorded")
 @js.native
 class Recorded protected ()
-  extends typings.rxDashLiteDashTesting.RxNs.Recorded {
+  extends typings.rxDashLiteDashTesting.Rx.Recorded {
   def this(time: Double, value: js.Any) = this()
   def this(
     time: Double,

@@ -13,9 +13,5 @@ trait ListeningStateChangedEvent extends Event {
 
 @JSGlobal("ListeningStateChangedEvent")
 @js.native
-class ListeningStateChangedEventCls () extends ListeningStateChangedEvent
-
-@JSGlobal("ListeningStateChangedEvent")
-@js.native
 object ListeningStateChangedEvent extends Instantiable0[ListeningStateChangedEvent]
 

@@ -1,7 +1,7 @@
 package typings.validator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.validator.ValidatorJSNs.NormalizeEmailOptions
+import typings.validator.ValidatorJS.NormalizeEmailOptions
 import typings.validator.validatorNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dynamodbGlobalTableMod
 
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GlobalTableReplica
+import typings.atPulumiAws.typesOutputMod.dynamodb.GlobalTableReplica
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

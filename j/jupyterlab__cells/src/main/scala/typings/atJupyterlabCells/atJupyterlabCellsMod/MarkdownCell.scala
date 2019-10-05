@@ -1,6 +1,6 @@
 package typings.atJupyterlabCells.atJupyterlabCellsMod
 
-import typings.atJupyterlabCells.libWidgetMod.MarkdownCellNs.IOptions
+import typings.atJupyterlabCells.libWidgetMod.MarkdownCell.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

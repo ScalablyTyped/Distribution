@@ -51,3 +51,9 @@ object Expect {
   }
 }
 
+@JSImport("mochaccino", "expect")
+@js.native
+object expect extends js.Object {
+  def apply(value: js.Any): Expect = js.native
+}
+

@@ -47,3 +47,33 @@ object OptionalCallExpression {
   }
 }
 
+@JSImport("@babel/types", "optionalCallExpression")
+@js.native
+object optionalCallExpression extends js.Object {
+  def apply(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    optional: Boolean
+  ): OptionalCallExpression = js.native
+  def apply(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    optional: Boolean,
+    typeArguments: Null,
+    typeParameters: TSTypeParameterInstantiation
+  ): OptionalCallExpression = js.native
+  def apply(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    optional: Boolean,
+    typeArguments: TypeParameterInstantiation
+  ): OptionalCallExpression = js.native
+  def apply(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    optional: Boolean,
+    typeArguments: TypeParameterInstantiation,
+    typeParameters: TSTypeParameterInstantiation
+  ): OptionalCallExpression = js.native
+}
+

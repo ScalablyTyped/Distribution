@@ -23,7 +23,7 @@ object ListSigningCertificatesResponse {
   @scala.inline
   def apply(
     Certificates: certificateListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListSigningCertificatesResponse = {
     val __obj = js.Dynamic.literal(Certificates = Certificates)

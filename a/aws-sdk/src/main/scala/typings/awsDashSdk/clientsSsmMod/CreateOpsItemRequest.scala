@@ -47,14 +47,14 @@ object CreateOpsItemRequest {
     Title: OpsItemTitle,
     Notifications: OpsItemNotifications = null,
     OperationalData: OpsItemOperationalData = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
+    Priority: Int | Double = null,
     RelatedOpsItems: RelatedOpsItems = null,
     Tags: TagList = null
   ): CreateOpsItemRequest = {
     val __obj = js.Dynamic.literal(Description = Description, Source = Source, Title = Title)
     if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications)
     if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RelatedOpsItems != null) __obj.updateDynamic("RelatedOpsItems")(RelatedOpsItems)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateOpsItemRequest]

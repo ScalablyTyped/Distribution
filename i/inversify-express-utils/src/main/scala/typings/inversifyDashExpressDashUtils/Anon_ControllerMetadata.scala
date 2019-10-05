@@ -1,8 +1,8 @@
 package typings.inversifyDashExpressDashUtils
 
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.ControllerMetadata
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.ControllerMethodMetadata
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.ControllerParameterMetadata
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.ControllerMetadata
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.ControllerMethodMetadata
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.ControllerParameterMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

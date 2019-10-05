@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Editor
-import typings.ejDotWebDotAll.ejNs.EditorNs.Model
+import typings.ejDotWebDotAll.ej.Editor
+import typings.ejDotWebDotAll.ej.Editor.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

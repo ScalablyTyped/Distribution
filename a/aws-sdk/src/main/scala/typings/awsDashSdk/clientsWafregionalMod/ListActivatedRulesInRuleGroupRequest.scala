@@ -21,13 +21,9 @@ trait ListActivatedRulesInRuleGroupRequest extends js.Object {
 
 object ListActivatedRulesInRuleGroupRequest {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[PaginationLimit] = js.undefined,
-    NextMarker: NextMarker = null,
-    RuleGroupId: ResourceId = null
-  ): ListActivatedRulesInRuleGroupRequest = {
+  def apply(Limit: Int | Double = null, NextMarker: NextMarker = null, RuleGroupId: ResourceId = null): ListActivatedRulesInRuleGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
     if (RuleGroupId != null) __obj.updateDynamic("RuleGroupId")(RuleGroupId)
     __obj.asInstanceOf[ListActivatedRulesInRuleGroupRequest]

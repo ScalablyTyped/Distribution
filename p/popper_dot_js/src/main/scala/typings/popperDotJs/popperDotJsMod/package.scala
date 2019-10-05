@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object popperDotJsMod {
-  type BaseModifier = typings.popperDotJs.popperDotJsMod.PopperNs.BaseModifier
-  type Behavior = typings.popperDotJs.popperDotJsMod.PopperNs.Behavior
-  type Boundary = typings.popperDotJs.popperDotJsMod.PopperNs.Boundary
-  type Data = typings.popperDotJs.popperDotJsMod.PopperNs.Data
-  type ModifierFn = typings.popperDotJs.popperDotJsMod.PopperNs.ModifierFn
-  type Modifiers = typings.popperDotJs.popperDotJsMod.PopperNs.Modifiers
-  type Offset = typings.popperDotJs.popperDotJsMod.PopperNs.Offset
-  type Placement = typings.popperDotJs.popperDotJsMod.PopperNs.Placement
-  type PopperOptions = typings.popperDotJs.popperDotJsMod.PopperNs.PopperOptions
-  type Position = typings.popperDotJs.popperDotJsMod.PopperNs.Position
-  type ReferenceObject = typings.popperDotJs.popperDotJsMod.PopperNs.ReferenceObject
+  type BaseModifier = typings.popperDotJs.popperDotJsMod.Popper.BaseModifier
+  type Behavior = typings.popperDotJs.popperDotJsMod.Popper.Behavior
+  type Boundary = typings.popperDotJs.popperDotJsMod.Popper.Boundary
+  type Data = typings.popperDotJs.popperDotJsMod.Popper.Data
+  type ModifierFn = typings.popperDotJs.popperDotJsMod.Popper.ModifierFn
+  type Modifiers = typings.popperDotJs.popperDotJsMod.Popper.Modifiers
+  type Offset = typings.popperDotJs.popperDotJsMod.Popper.Offset
+  type Placement = typings.popperDotJs.popperDotJsMod.Popper.Placement
+  type Popper = Popper_
+  type PopperOptions = typings.popperDotJs.popperDotJsMod.Popper.PopperOptions
+  type Position = typings.popperDotJs.popperDotJsMod.Popper.Position
+  type ReferenceObject = typings.popperDotJs.popperDotJsMod.Popper.ReferenceObject
 }

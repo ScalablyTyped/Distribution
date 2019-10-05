@@ -26,7 +26,7 @@ trait RouteTableAssociation extends js.Object {
 object RouteTableAssociation {
   @scala.inline
   def apply(
-    Main: js.UndefOr[Boolean] = js.undefined,
+    Main: js.UndefOr[scala.Boolean] = js.undefined,
     RouteTableAssociationId: String = null,
     RouteTableId: String = null,
     SubnetId: String = null

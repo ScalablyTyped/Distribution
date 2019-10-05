@@ -7,5 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("jfs", JSImport.Namespace)
 @js.native
+class ^[T /* <: Storable */] () extends Instance[T] {
+  def this(name: String) = this()
+  def this(name: String, opts: Options) = this()
+}
+
+@JSImport("jfs", JSImport.Namespace)
+@js.native
 object ^ extends TopLevel[JsonFileStore]
 

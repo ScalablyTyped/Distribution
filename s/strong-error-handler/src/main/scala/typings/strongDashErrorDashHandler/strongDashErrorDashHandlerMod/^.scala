@@ -1,7 +1,7 @@
 package typings.strongDashErrorDashHandler.strongDashErrorDashHandlerMod
 
 import typings.express.expressMod.RequestHandler
-import typings.strongDashErrorDashHandler.strongDashErrorDashHandlerMod.StrongErrorHandlerNs.options
+import typings.strongDashErrorDashHandler.strongDashErrorDashHandlerMod.StrongErrorHandler.options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

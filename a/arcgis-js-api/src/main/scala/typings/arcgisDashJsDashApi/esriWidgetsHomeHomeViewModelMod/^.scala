@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsHomeHomeViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HomeViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.HomeViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

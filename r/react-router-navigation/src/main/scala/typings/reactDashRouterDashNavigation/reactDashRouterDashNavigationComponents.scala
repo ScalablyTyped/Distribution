@@ -15,7 +15,7 @@ object reactDashRouterDashNavigationComponents extends reactDashRouterDashNaviga
   ] = js.constructorOf[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.BottomNavigation].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.BottomNavigationProps]]
   @scala.inline
-  def Card: ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.CardProps] = typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.^.asInstanceOf[js.Dynamic].selectDynamic("Card").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.CardProps]]
+  def Card: ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.CardProps] = typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.Card.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.CardProps]]
   @scala.inline
   def NavBar: ComponentType[CardSubViewProps] = js.constructorOf[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.NavBar].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.CardSubViewProps]]
@@ -23,7 +23,7 @@ object reactDashRouterDashNavigationComponents extends reactDashRouterDashNaviga
   def Navigation: ComponentType[NavigationComponentProps] = js.constructorOf[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.Navigation].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.NavigationComponentProps]]
   @scala.inline
-  def Tab: ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.TabProps] = typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.TabProps]]
+  def Tab: ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.TabProps] = typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.Tab.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.TabProps]]
   @scala.inline
   def Tabs: ComponentType[TabBarComponentProps] = js.constructorOf[typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.Tabs].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationMod.TabBarComponentProps]]

@@ -57,7 +57,7 @@ object StackSetOperation {
     ExecutionRoleName: ExecutionRoleName = null,
     OperationId: ClientRequestToken = null,
     OperationPreferences: StackSetOperationPreferences = null,
-    RetainStacks: js.UndefOr[RetainStacksNullable] = js.undefined,
+    RetainStacks: js.UndefOr[Boolean] = js.undefined,
     StackSetId: StackSetId = null,
     Status: StackSetOperationStatus = null
   ): StackSetOperation = {

@@ -17,9 +17,9 @@ trait MouthOpen extends js.Object {
 
 object MouthOpen {
   @scala.inline
-  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Value: js.UndefOr[Boolean] = js.undefined): MouthOpen = {
+  def apply(Confidence: Int | Double = null, Value: js.UndefOr[scala.Boolean] = js.undefined): MouthOpen = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
     __obj.asInstanceOf[MouthOpen]
   }

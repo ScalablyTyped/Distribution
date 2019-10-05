@@ -18,3 +18,10 @@ class Place protected () extends RedomComponent {
   def update_MPlace(visible: Boolean, data: js.Any): Unit = js.native
 }
 
+@JSImport("redom", "place")
+@js.native
+object place extends js.Object {
+  def apply(View: RedomComponentConstructor): Place = js.native
+  def apply(View: RedomComponentConstructor, initData: js.Any): Place = js.native
+}
+

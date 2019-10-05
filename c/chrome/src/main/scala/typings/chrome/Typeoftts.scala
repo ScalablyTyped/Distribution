@@ -1,7 +1,7 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.ttsNs.SpeakOptions
-import typings.chrome.chromeNs.ttsNs.TtsVoice
+import typings.chrome.chrome.tts.SpeakOptions
+import typings.chrome.chrome.tts.TtsVoice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

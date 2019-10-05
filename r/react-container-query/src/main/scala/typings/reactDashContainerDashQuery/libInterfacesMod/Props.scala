@@ -1,5 +1,6 @@
 package typings.reactDashContainerDashQuery.libInterfacesMod
 
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ trait Props extends js.Object {
 
 object Props {
   @scala.inline
-  def apply(children: ChildFunction, query: Query, initialSize: Size = null): Props = {
-    val __obj = js.Dynamic.literal(children = children, query = query)
+  def apply(children: /* params */ Params => Element | Null, query: Query, initialSize: Size = null): Props = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), query = query)
     if (initialSize != null) __obj.updateDynamic("initialSize")(initialSize)
     __obj.asInstanceOf[Props]
   }

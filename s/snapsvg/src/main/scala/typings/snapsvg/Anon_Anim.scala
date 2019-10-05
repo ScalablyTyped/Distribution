@@ -1,6 +1,6 @@
 package typings.snapsvg
 
-import typings.mina.minaNs.AnimationDescriptor
+import typings.mina.mina.AnimationDescriptor
 import typings.snapsvg.snapsvgMod.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`

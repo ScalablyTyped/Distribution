@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("expo", "Crypto")
 @js.native
-class CryptoCls ()
-  extends typings.std.Crypto
-
-@JSImport("expo", "Crypto")
-@js.native
 object Crypto
   extends Instantiable0[typings.std.Crypto]
 

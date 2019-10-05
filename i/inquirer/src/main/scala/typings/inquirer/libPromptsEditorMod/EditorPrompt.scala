@@ -1,7 +1,7 @@
 package typings.inquirer.libPromptsEditorMod
 
-import typings.inquirer.inquirerMod.promptsNs.FailedPromptStateData
-import typings.inquirer.inquirerMod.promptsNs.SuccessfulPromptStateData
+import typings.inquirer.inquirerMod.prompts.FailedPromptStateData
+import typings.inquirer.inquirerMod.prompts.SuccessfulPromptStateData
 import typings.rxjs.rxjsMod.Subject
 import typings.rxjs.rxjsMod.Subscription
 import typings.std.Error

@@ -1,5 +1,6 @@
 package typings.es6DashShim
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,5 @@ trait Set[T] extends js.Object {
 
 @JSGlobal("Set")
 @js.native
-class SetCls[T] () extends Set[T] {
-  def this(iterable: IterableShim[T]) = this()
-}
+object Set extends TopLevel[SetConstructor]
 

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/browser-policy-common", JSImport.Namespace)
 @js.native
 object browserDashPolicyDashCommonMod extends js.Object {
-  @JSName("BrowserPolicy")
   @js.native
-  object BrowserPolicyNs extends js.Object {
+  object BrowserPolicy extends js.Object {
     @js.native
     object content extends js.Object {
       def allowAllContentDataUrl(): Unit = js.native

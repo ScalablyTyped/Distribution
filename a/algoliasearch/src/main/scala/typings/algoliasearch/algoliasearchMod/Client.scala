@@ -153,7 +153,7 @@ trait Client extends js.Object {
   /**
     * Query for facet values of a specific facet
     */
-  def searchForFacetValues(queries: js.Array[Anon_IndexNameParams]): js.Promise[js.Array[typings.algoliasearch.algoliasearchMod.SearchForFacetValuesNs.Response]] = js.native
+  def searchForFacetValues(queries: js.Array[Anon_IndexNameParams]): js.Promise[js.Array[typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Response]] = js.native
   /**
     * Add a header to be sent with all upcoming requests
     */

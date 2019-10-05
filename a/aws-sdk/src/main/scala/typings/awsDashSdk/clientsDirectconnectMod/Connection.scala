@@ -81,7 +81,7 @@ object Connection {
     connectionName: ConnectionName = null,
     connectionState: ConnectionState = null,
     hasLogicalRedundancy: HasLogicalRedundancy = null,
-    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
+    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
     lagId: LagId = null,
     loaIssueTime: LoaIssueTime = null,
     location: LocationCode = null,
@@ -89,7 +89,7 @@ object Connection {
     partnerName: PartnerName = null,
     region: Region = null,
     tags: TagList = null,
-    vlan: js.UndefOr[VLAN] = js.undefined
+    vlan: Int | Double = null
   ): Connection = {
     val __obj = js.Dynamic.literal()
     if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice)
@@ -107,7 +107,7 @@ object Connection {
     if (partnerName != null) __obj.updateDynamic("partnerName")(partnerName)
     if (region != null) __obj.updateDynamic("region")(region)
     if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan)
+    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
 }

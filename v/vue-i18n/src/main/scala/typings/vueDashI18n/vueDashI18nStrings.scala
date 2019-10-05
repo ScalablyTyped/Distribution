@@ -1,12 +1,12 @@
 package typings.vueDashI18n
 
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.CurrencyDisplay
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeDigital
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeHumanReadable
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.FormatMatcher
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMatcher
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.CurrencyDisplay
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeDigital
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeHumanReadable
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.FormatMatcher
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.FormattedNumberPartType
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMatcher
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.WarnHtmlInMessageLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,13 +26,13 @@ trait ReplicationPendingModifiedValues extends js.Object {
 object ReplicationPendingModifiedValues {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
+    AllocatedStorage: Int | Double = null,
     EngineVersion: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     ReplicationInstanceClass: String = null
   ): ReplicationPendingModifiedValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass)

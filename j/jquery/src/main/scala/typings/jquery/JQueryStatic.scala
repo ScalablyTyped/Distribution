@@ -1,35 +1,35 @@
 package typings.jquery
 
-import typings.jquery.JQueryNs.AjaxSettings
-import typings.jquery.JQueryNs.AnimationStatic
-import typings.jquery.JQueryNs.CSSHooks
-import typings.jquery.JQueryNs.CallbacksStatic
-import typings.jquery.JQueryNs.DeferredStatic
-import typings.jquery.JQueryNs.Duration
-import typings.jquery.JQueryNs.Easings
-import typings.jquery.JQueryNs.Effects
-import typings.jquery.JQueryNs.EffectsOptions
-import typings.jquery.JQueryNs.EventExtensions
-import typings.jquery.JQueryNs.EventStatic
-import typings.jquery.JQueryNs.PlainObject
-import typings.jquery.JQueryNs.Promise
-import typings.jquery.JQueryNs.Promise2
-import typings.jquery.JQueryNs.Promise3
-import typings.jquery.JQueryNs.Queue
-import typings.jquery.JQueryNs.QueueFunction
-import typings.jquery.JQueryNs.Selector
-import typings.jquery.JQueryNs.Selectors
-import typings.jquery.JQueryNs.SpeedSettings
-import typings.jquery.JQueryNs.Thenable
-import typings.jquery.JQueryNs.TickFunction
-import typings.jquery.JQueryNs.Transport
-import typings.jquery.JQueryNs.TweenStatic
-import typings.jquery.JQueryNs.TypeOrArray
-import typings.jquery.JQueryNs.UrlAjaxSettings
-import typings.jquery.JQueryNs.ValHooks
-import typings.jquery.JQueryNs.htmlString
-import typings.jquery.JQueryNs.jqXHR
-import typings.jquery.JQueryNs.jqXHRNs.DoneCallback
+import typings.jquery.JQuery.AjaxSettings
+import typings.jquery.JQuery.AnimationStatic
+import typings.jquery.JQuery.CSSHooks
+import typings.jquery.JQuery.CallbacksStatic
+import typings.jquery.JQuery.DeferredStatic
+import typings.jquery.JQuery.Duration
+import typings.jquery.JQuery.Easings
+import typings.jquery.JQuery.Effects
+import typings.jquery.JQuery.EffectsOptions
+import typings.jquery.JQuery.EventExtensions
+import typings.jquery.JQuery.EventStatic
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.Promise
+import typings.jquery.JQuery.Promise2
+import typings.jquery.JQuery.Promise3
+import typings.jquery.JQuery.Queue
+import typings.jquery.JQuery.QueueFunction
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.Selectors
+import typings.jquery.JQuery.SpeedSettings
+import typings.jquery.JQuery.Thenable
+import typings.jquery.JQuery.TickFunction
+import typings.jquery.JQuery.Transport
+import typings.jquery.JQuery.TweenStatic
+import typings.jquery.JQuery.TypeOrArray
+import typings.jquery.JQuery.UrlAjaxSettings
+import typings.jquery.JQuery.ValHooks
+import typings.jquery.JQuery.htmlString
+import typings.jquery.JQuery.jqXHR
+import typings.jquery.JQuery.jqXHR.DoneCallback
 import typings.jquery.jqueryNumbers.`true`
 import typings.jquery.jqueryStrings.`null`
 import typings.jquery.jqueryStrings.`object`
@@ -229,23 +229,23 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
     * @since 1.8
     */
-  def Animation[TElement](element: TElement, props: PlainObject[_], opts: EffectsOptions[TElement]): typings.jquery.JQueryNs.Animation[TElement] = js.native
-  def Callbacks[T /* <: js.Function */](): typings.jquery.JQueryNs.Callbacks[T] = js.native
-  def Callbacks[T /* <: js.Function */](flags: String): typings.jquery.JQueryNs.Callbacks[T] = js.native
+  def Animation[TElement](element: TElement, props: PlainObject[_], opts: EffectsOptions[TElement]): typings.jquery.JQuery.Animation[TElement] = js.native
+  def Callbacks[T /* <: js.Function */](): typings.jquery.JQuery.Callbacks[T] = js.native
+  def Callbacks[T /* <: js.Function */](flags: String): typings.jquery.JQuery.Callbacks[T] = js.native
   /**
     * A factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
     * @param beforeStart A function that is called just before the constructor returns.
     * @see \`{@link https://api.jquery.com/jQuery.Deferred/ }\`
     * @since 1.5
     */
-  def Deferred[TR, TJ, TN](): typings.jquery.JQueryNs.Deferred[TR, TJ, TN] = js.native
+  def Deferred[TR, TJ, TN](): typings.jquery.JQuery.Deferred[TR, TJ, TN] = js.native
   def Deferred[TR, TJ, TN](
     beforeStart: js.ThisFunction1[
-      /* this */ typings.jquery.JQueryNs.Deferred[TR, TJ, TN], 
-      /* deferred */ typings.jquery.JQueryNs.Deferred[TR, TJ, TN], 
+      /* this */ typings.jquery.JQuery.Deferred[TR, TJ, TN], 
+      /* deferred */ typings.jquery.JQuery.Deferred[TR, TJ, TN], 
       Unit
     ]
-  ): typings.jquery.JQueryNs.Deferred[TR, TJ, TN] = js.native
+  ): typings.jquery.JQuery.Deferred[TR, TJ, TN] = js.native
   /**
     * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
     *
@@ -269,14 +269,14 @@ trait JQueryStatic extends js.Object {
   jQuery( "body" ).trigger( e );
   ```
     */
-  def Event[T /* <: js.Object */](event: String): typings.jquery.JQueryNs.Event with T = js.native
-  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQueryNs.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event with T = js.native
   /**
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
     * @since 1.8
     */
-  def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double): typings.jquery.JQueryNs.Tween[TElement] = js.native
-  def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double, easing: String): typings.jquery.JQueryNs.Tween[TElement] = js.native
+  def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double): typings.jquery.JQuery.Tween[TElement] = js.native
+  def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double, easing: String): typings.jquery.JQuery.Tween[TElement] = js.native
   def Tween[TElement](
     elem: TElement,
     options: EffectsOptions[TElement],
@@ -284,7 +284,7 @@ trait JQueryStatic extends js.Object {
     end: Double,
     easing: String,
     unit: String
-  ): typings.jquery.JQueryNs.Tween[TElement] = js.native
+  ): typings.jquery.JQuery.Tween[TElement] = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
@@ -2750,11 +2750,11 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def parseHTML(data: String): js.Array[typings.jquery.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context_keepScripts: Boolean): js.Array[typings.jquery.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context_keepScripts: Document): js.Array[typings.jquery.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[typings.jquery.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context: Null, keepScripts: Boolean): js.Array[typings.jquery.JQueryNs.Node] = js.native
+  def parseHTML(data: String): js.Array[typings.jquery.JQuery.Node] = js.native
+  def parseHTML(data: String, context_keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
+  def parseHTML(data: String, context_keepScripts: Document): js.Array[typings.jquery.JQuery.Node] = js.native
+  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
+  def parseHTML(data: String, context: Null, keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
   /**
     * Parses a string into an array of DOM nodes.
     * @param data HTML string to be parsed
@@ -2763,7 +2763,7 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
     * @since 1.8
     */
-  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[typings.jquery.JQueryNs.Node] = js.native
+  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
   /**
     * Takes a well-formed JSON string and returns the resulting JavaScript value.
     * @param json The JSON string to parse.

@@ -1,8 +1,8 @@
 package typings.consul.consulMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.consul.consulMod.CatalogNs.NodeStatic
-import typings.consul.consulMod.CatalogNs.ServiceStatic
+import typings.consul.consulMod.Catalog.NodeStatic
+import typings.consul.consulMod.Catalog.ServiceStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

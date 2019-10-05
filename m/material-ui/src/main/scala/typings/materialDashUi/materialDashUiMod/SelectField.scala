@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "SelectField")
 @js.native
 class SelectField ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.SelectField
+  extends typings.materialDashUi.__MaterialUI.SelectField
 

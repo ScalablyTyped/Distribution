@@ -1,6 +1,6 @@
 package typings.collections.sortedDashSetMod
 
-import typings.collections.sortedDashSetMod.internalNs.SortedSet
+import typings.collections.sortedDashSetMod.internal.SortedSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

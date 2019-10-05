@@ -17,7 +17,7 @@ trait StreamSpecification extends js.Object {
 
 object StreamSpecification {
   @scala.inline
-  def apply(StreamEnabled: js.UndefOr[StreamEnabled] = js.undefined, StreamViewType: StreamViewType = null): StreamSpecification = {
+  def apply(StreamEnabled: js.UndefOr[Boolean] = js.undefined, StreamViewType: StreamViewType = null): StreamSpecification = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(StreamEnabled)) __obj.updateDynamic("StreamEnabled")(StreamEnabled)
     if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])

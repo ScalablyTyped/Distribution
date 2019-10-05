@@ -18,8 +18,8 @@ import typings.algoliasearch.algoliasearchStrings.prefixNone
 import typings.algoliasearch.algoliasearchStrings.singleWordSynonym
 import typings.algoliasearch.algoliasearchStrings.strict
 import typings.algoliasearch.algoliasearchStrings.word
-import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.FacetList
-import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.OperatorList
+import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParameters.FacetList
+import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParameters.OperatorList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

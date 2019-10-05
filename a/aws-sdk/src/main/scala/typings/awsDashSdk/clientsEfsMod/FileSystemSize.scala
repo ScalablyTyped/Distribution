@@ -28,13 +28,13 @@ object FileSystemSize {
   def apply(
     Value: FileSystemSizeValue,
     Timestamp: Timestamp = null,
-    ValueInIA: js.UndefOr[FileSystemNullableSizeValue] = js.undefined,
-    ValueInStandard: js.UndefOr[FileSystemNullableSizeValue] = js.undefined
+    ValueInIA: Int | Double = null,
+    ValueInStandard: Int | Double = null
   ): FileSystemSize = {
     val __obj = js.Dynamic.literal(Value = Value)
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
-    if (!js.isUndefined(ValueInIA)) __obj.updateDynamic("ValueInIA")(ValueInIA)
-    if (!js.isUndefined(ValueInStandard)) __obj.updateDynamic("ValueInStandard")(ValueInStandard)
+    if (ValueInIA != null) __obj.updateDynamic("ValueInIA")(ValueInIA.asInstanceOf[js.Any])
+    if (ValueInStandard != null) __obj.updateDynamic("ValueInStandard")(ValueInStandard.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemSize]
   }
 }

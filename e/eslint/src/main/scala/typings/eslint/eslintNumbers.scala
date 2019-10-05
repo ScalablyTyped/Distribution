@@ -1,6 +1,6 @@
 package typings.eslint
 
-import typings.eslint.eslintMod.LinterNs.Severity
+import typings.eslint.eslintMod.Linter.Severity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

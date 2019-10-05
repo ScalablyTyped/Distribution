@@ -42,14 +42,14 @@ object ListAuditMitigationActionsTasksRequest {
     startTime: Timestamp,
     auditTaskId: AuditTaskId = null,
     findingId: FindingId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     taskStatus: AuditMitigationActionsTaskStatus = null
   ): ListAuditMitigationActionsTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
     if (auditTaskId != null) __obj.updateDynamic("auditTaskId")(auditTaskId)
     if (findingId != null) __obj.updateDynamic("findingId")(findingId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditMitigationActionsTasksRequest]

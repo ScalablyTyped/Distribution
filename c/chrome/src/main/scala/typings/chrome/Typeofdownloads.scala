@@ -1,13 +1,13 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.downloadsNs.DownloadChangedEvent
-import typings.chrome.chromeNs.downloadsNs.DownloadCreatedEvent
-import typings.chrome.chromeNs.downloadsNs.DownloadDeterminingFilenameEvent
-import typings.chrome.chromeNs.downloadsNs.DownloadErasedEvent
-import typings.chrome.chromeNs.downloadsNs.DownloadItem
-import typings.chrome.chromeNs.downloadsNs.DownloadOptions
-import typings.chrome.chromeNs.downloadsNs.DownloadQuery
-import typings.chrome.chromeNs.downloadsNs.GetFileIconOptions
+import typings.chrome.chrome.downloads.DownloadChangedEvent
+import typings.chrome.chrome.downloads.DownloadCreatedEvent
+import typings.chrome.chrome.downloads.DownloadDeterminingFilenameEvent
+import typings.chrome.chrome.downloads.DownloadErasedEvent
+import typings.chrome.chrome.downloads.DownloadItem
+import typings.chrome.chrome.downloads.DownloadOptions
+import typings.chrome.chrome.downloads.DownloadQuery
+import typings.chrome.chrome.downloads.GetFileIconOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

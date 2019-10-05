@@ -1,6 +1,6 @@
 package typings.nodeDashZendesk
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.CreateModel
+import typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.CreateModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

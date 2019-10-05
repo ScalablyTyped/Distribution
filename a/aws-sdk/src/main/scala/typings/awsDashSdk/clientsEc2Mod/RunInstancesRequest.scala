@@ -158,9 +158,9 @@ object RunInstancesRequest {
     ClientToken: String = null,
     CpuOptions: CpuOptionsRequest = null,
     CreditSpecification: CreditSpecificationRequest = null,
-    DisableApiTermination: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     ElasticGpuSpecification: ElasticGpuSpecifications = null,
     ElasticInferenceAccelerators: ElasticInferenceAccelerators = null,
     HibernationOptions: HibernationOptionsRequest = null,
@@ -169,7 +169,7 @@ object RunInstancesRequest {
     InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
     InstanceMarketOptions: InstanceMarketOptionsRequest = null,
     InstanceType: InstanceType = null,
-    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
+    Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     KernelId: String = null,
     KeyName: String = null,
@@ -204,7 +204,7 @@ object RunInstancesRequest {
     if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
     if (InstanceMarketOptions != null) __obj.updateDynamic("InstanceMarketOptions")(InstanceMarketOptions)
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
+    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId)
     if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName)

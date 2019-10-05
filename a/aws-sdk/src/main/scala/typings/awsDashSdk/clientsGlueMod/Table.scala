@@ -83,13 +83,13 @@ object Table {
     CreatedBy: NameString = null,
     DatabaseName: NameString = null,
     Description: DescriptionString = null,
-    IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined,
+    IsRegisteredWithLakeFormation: js.UndefOr[scala.Boolean] = js.undefined,
     LastAccessTime: Timestamp = null,
     LastAnalyzedTime: Timestamp = null,
     Owner: NameString = null,
     Parameters: ParametersMap = null,
     PartitionKeys: ColumnList = null,
-    Retention: js.UndefOr[NonNegativeInteger] = js.undefined,
+    Retention: Int | Double = null,
     StorageDescriptor: StorageDescriptor = null,
     TableType: TableTypeString = null,
     UpdateTime: Timestamp = null,
@@ -107,7 +107,7 @@ object Table {
     if (Owner != null) __obj.updateDynamic("Owner")(Owner)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys)
-    if (!js.isUndefined(Retention)) __obj.updateDynamic("Retention")(Retention)
+    if (Retention != null) __obj.updateDynamic("Retention")(Retention.asInstanceOf[js.Any])
     if (StorageDescriptor != null) __obj.updateDynamic("StorageDescriptor")(StorageDescriptor)
     if (TableType != null) __obj.updateDynamic("TableType")(TableType)
     if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime)

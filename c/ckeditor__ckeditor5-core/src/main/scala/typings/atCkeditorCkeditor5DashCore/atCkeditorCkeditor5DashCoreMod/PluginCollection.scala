@@ -2,7 +2,7 @@ package typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.atCkeditorCkeditor5DashCore.Anon_Destroy
-import typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod.editorNs.Editor
+import typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod.editor.Editor
 import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

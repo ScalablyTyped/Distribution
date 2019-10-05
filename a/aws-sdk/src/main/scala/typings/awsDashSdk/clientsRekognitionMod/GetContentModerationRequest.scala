@@ -27,12 +27,12 @@ object GetContentModerationRequest {
   @scala.inline
   def apply(
     JobId: JobId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     SortBy: ContentModerationSortBy = null
   ): GetContentModerationRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContentModerationRequest]

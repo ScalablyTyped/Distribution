@@ -21,13 +21,9 @@ trait ListFlowExecutionMessagesRequest extends js.Object {
 
 object ListFlowExecutionMessagesRequest {
   @scala.inline
-  def apply(
-    flowExecutionId: FlowExecutionId,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): ListFlowExecutionMessagesRequest = {
+  def apply(flowExecutionId: FlowExecutionId, maxResults: Int | Double = null, nextToken: NextToken = null): ListFlowExecutionMessagesRequest = {
     val __obj = js.Dynamic.literal(flowExecutionId = flowExecutionId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListFlowExecutionMessagesRequest]
   }

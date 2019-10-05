@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TextSpan")
 @js.native
 class TextSpan protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TextSpan {
+  extends typings.typescriptDashServices.TypeScript.TextSpan {
   def this(start: Double, length: Double) = this()
 }
 
@@ -15,6 +15,6 @@ class TextSpan protected ()
 @JSImport("typescript-services", "TextSpan")
 @js.native
 object TextSpan extends js.Object {
-  def fromBounds(start: Double, end: Double): typings.typescriptDashServices.TypeScriptNs.TextSpan = js.native
+  def fromBounds(start: Double, end: Double): typings.typescriptDashServices.TypeScript.TextSpan = js.native
 }
 

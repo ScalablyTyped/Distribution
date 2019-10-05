@@ -45,3 +45,58 @@ object JSXOpeningElement {
   }
 }
 
+@JSImport("@babel/types", "jsxOpeningElement")
+@js.native
+object jsxOpeningElement extends js.Object {
+  def apply(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = js.native
+  def apply(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute], selfClosing: Boolean): JSXOpeningElement = js.native
+  def apply(
+    name: JSXIdentifier,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TSTypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+  def apply(
+    name: JSXIdentifier,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+  def apply(name: JSXMemberExpression, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = js.native
+  def apply(
+    name: JSXMemberExpression,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean
+  ): JSXOpeningElement = js.native
+  def apply(
+    name: JSXMemberExpression,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TSTypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+  def apply(
+    name: JSXMemberExpression,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+  def apply(name: JSXNamespacedName, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = js.native
+  def apply(
+    name: JSXNamespacedName,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean
+  ): JSXOpeningElement = js.native
+  def apply(
+    name: JSXNamespacedName,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TSTypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+  def apply(
+    name: JSXNamespacedName,
+    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+    selfClosing: Boolean,
+    typeParameters: TypeParameterInstantiation
+  ): JSXOpeningElement = js.native
+}
+

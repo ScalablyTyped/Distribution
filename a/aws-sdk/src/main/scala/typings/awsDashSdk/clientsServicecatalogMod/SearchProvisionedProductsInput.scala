@@ -41,7 +41,7 @@ object SearchProvisionedProductsInput {
     AcceptLanguage: AcceptLanguage = null,
     AccessLevelFilter: AccessLevelFilter = null,
     Filters: ProvisionedProductFilters = null,
-    PageSize: js.UndefOr[SearchProvisionedProductsPageSize] = js.undefined,
+    PageSize: Int | Double = null,
     PageToken: PageToken = null,
     SortBy: SortField = null,
     SortOrder: SortOrder = null
@@ -50,7 +50,7 @@ object SearchProvisionedProductsInput {
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
     if (AccessLevelFilter != null) __obj.updateDynamic("AccessLevelFilter")(AccessLevelFilter)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy)
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])

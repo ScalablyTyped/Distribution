@@ -1,6 +1,6 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
-import typings.atPhosphorDatagrid.libTextrendererMod.TextRendererNs.HorizontalAlignment
+import typings.atPhosphorDatagrid.libTextrendererMod.TextRenderer.HorizontalAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

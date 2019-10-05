@@ -74,40 +74,40 @@ trait M3u8Settings extends js.Object {
 object M3u8Settings {
   @scala.inline
   def apply(
-    AudioFramesPerPes: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
+    AudioFramesPerPes: Int | Double = null,
     AudioPids: __listOf__integerMin32Max8182 = null,
     NielsenId3: M3u8NielsenId3 = null,
-    PatInterval: js.UndefOr[__integerMin0Max1000] = js.undefined,
+    PatInterval: Int | Double = null,
     PcrControl: M3u8PcrControl = null,
-    PcrPid: js.UndefOr[__integerMin32Max8182] = js.undefined,
-    PmtInterval: js.UndefOr[__integerMin0Max1000] = js.undefined,
-    PmtPid: js.UndefOr[__integerMin32Max8182] = js.undefined,
-    PrivateMetadataPid: js.UndefOr[__integerMin32Max8182] = js.undefined,
-    ProgramNumber: js.UndefOr[__integerMin0Max65535] = js.undefined,
-    Scte35Pid: js.UndefOr[__integerMin32Max8182] = js.undefined,
+    PcrPid: Int | Double = null,
+    PmtInterval: Int | Double = null,
+    PmtPid: Int | Double = null,
+    PrivateMetadataPid: Int | Double = null,
+    ProgramNumber: Int | Double = null,
+    Scte35Pid: Int | Double = null,
     Scte35Source: M3u8Scte35Source = null,
     TimedMetadata: TimedMetadata = null,
-    TimedMetadataPid: js.UndefOr[__integerMin32Max8182] = js.undefined,
-    TransportStreamId: js.UndefOr[__integerMin0Max65535] = js.undefined,
-    VideoPid: js.UndefOr[__integerMin32Max8182] = js.undefined
+    TimedMetadataPid: Int | Double = null,
+    TransportStreamId: Int | Double = null,
+    VideoPid: Int | Double = null
   ): M3u8Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AudioFramesPerPes)) __obj.updateDynamic("AudioFramesPerPes")(AudioFramesPerPes)
+    if (AudioFramesPerPes != null) __obj.updateDynamic("AudioFramesPerPes")(AudioFramesPerPes.asInstanceOf[js.Any])
     if (AudioPids != null) __obj.updateDynamic("AudioPids")(AudioPids)
     if (NielsenId3 != null) __obj.updateDynamic("NielsenId3")(NielsenId3.asInstanceOf[js.Any])
-    if (!js.isUndefined(PatInterval)) __obj.updateDynamic("PatInterval")(PatInterval)
+    if (PatInterval != null) __obj.updateDynamic("PatInterval")(PatInterval.asInstanceOf[js.Any])
     if (PcrControl != null) __obj.updateDynamic("PcrControl")(PcrControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(PcrPid)) __obj.updateDynamic("PcrPid")(PcrPid)
-    if (!js.isUndefined(PmtInterval)) __obj.updateDynamic("PmtInterval")(PmtInterval)
-    if (!js.isUndefined(PmtPid)) __obj.updateDynamic("PmtPid")(PmtPid)
-    if (!js.isUndefined(PrivateMetadataPid)) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid)
-    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber)
-    if (!js.isUndefined(Scte35Pid)) __obj.updateDynamic("Scte35Pid")(Scte35Pid)
+    if (PcrPid != null) __obj.updateDynamic("PcrPid")(PcrPid.asInstanceOf[js.Any])
+    if (PmtInterval != null) __obj.updateDynamic("PmtInterval")(PmtInterval.asInstanceOf[js.Any])
+    if (PmtPid != null) __obj.updateDynamic("PmtPid")(PmtPid.asInstanceOf[js.Any])
+    if (PrivateMetadataPid != null) __obj.updateDynamic("PrivateMetadataPid")(PrivateMetadataPid.asInstanceOf[js.Any])
+    if (ProgramNumber != null) __obj.updateDynamic("ProgramNumber")(ProgramNumber.asInstanceOf[js.Any])
+    if (Scte35Pid != null) __obj.updateDynamic("Scte35Pid")(Scte35Pid.asInstanceOf[js.Any])
     if (Scte35Source != null) __obj.updateDynamic("Scte35Source")(Scte35Source.asInstanceOf[js.Any])
     if (TimedMetadata != null) __obj.updateDynamic("TimedMetadata")(TimedMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedMetadataPid)) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid)
-    if (!js.isUndefined(TransportStreamId)) __obj.updateDynamic("TransportStreamId")(TransportStreamId)
-    if (!js.isUndefined(VideoPid)) __obj.updateDynamic("VideoPid")(VideoPid)
+    if (TimedMetadataPid != null) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.asInstanceOf[js.Any])
+    if (TransportStreamId != null) __obj.updateDynamic("TransportStreamId")(TransportStreamId.asInstanceOf[js.Any])
+    if (VideoPid != null) __obj.updateDynamic("VideoPid")(VideoPid.asInstanceOf[js.Any])
     __obj.asInstanceOf[M3u8Settings]
   }
 }

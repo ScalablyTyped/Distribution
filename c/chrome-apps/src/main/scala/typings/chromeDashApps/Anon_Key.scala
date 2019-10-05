@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chromeDashApps.chromeNs.webViewRequestNs.DeclarativeWebRequestConditionsList
+import typings.chromeDashApps.chrome.webViewRequest.DeclarativeWebRequestConditionsList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

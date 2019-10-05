@@ -31,14 +31,14 @@ object ListNetworksInput {
   @scala.inline
   def apply(
     Framework: Framework = null,
-    MaxResults: js.UndefOr[NetworkListMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     Name: String = null,
     NextToken: PaginationToken = null,
     Status: NetworkStatus = null
   ): ListNetworksInput = {
     val __obj = js.Dynamic.literal()
     if (Framework != null) __obj.updateDynamic("Framework")(Framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

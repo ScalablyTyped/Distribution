@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxSessionsStoragesJwtMod
 
-import typings.arangodb.ArangoDBNs.JwtAlgorithm
+import typings.arangodb.ArangoDB.JwtAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

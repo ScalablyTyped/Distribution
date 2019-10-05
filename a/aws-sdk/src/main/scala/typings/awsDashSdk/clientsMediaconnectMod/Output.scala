@@ -52,23 +52,23 @@ object Output {
   def apply(
     Name: __string,
     OutputArn: __string,
-    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
+    DataTransferSubscriberFeePercent: Int | Double = null,
     Description: __string = null,
     Destination: __string = null,
     Encryption: Encryption = null,
     EntitlementArn: __string = null,
     MediaLiveInputArn: __string = null,
-    Port: js.UndefOr[__integer] = js.undefined,
+    Port: Int | Double = null,
     Transport: Transport = null
   ): Output = {
     val __obj = js.Dynamic.literal(Name = Name, OutputArn = OutputArn)
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
+    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Destination != null) __obj.updateDynamic("Destination")(Destination)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn)
     if (MediaLiveInputArn != null) __obj.updateDynamic("MediaLiveInputArn")(MediaLiveInputArn)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Transport != null) __obj.updateDynamic("Transport")(Transport)
     __obj.asInstanceOf[Output]
   }

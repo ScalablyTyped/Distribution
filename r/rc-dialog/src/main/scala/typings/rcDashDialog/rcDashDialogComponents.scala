@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object rcDashDialogComponents extends rcDashDialogProps {
   @scala.inline
-  def `rcDashDialogModrc-dialog`: ComponentType[IDialogPropTypes] = typings.rcDashDialog.rcDashDialogMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.rcDashDialog.libIDialogPropTypesMod.IDialogPropTypes]]
+  def RcDashDialog: ComponentType[IDialogPropTypes] = typings.rcDashDialog.rcDashDialogMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.rcDashDialog.libIDialogPropTypesMod.IDialogPropTypes]]
 }
 

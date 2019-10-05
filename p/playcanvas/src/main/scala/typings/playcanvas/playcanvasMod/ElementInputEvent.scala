@@ -19,16 +19,16 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ElementInputEvent")
 @js.native
 class ElementInputEvent protected ()
-  extends typings.playcanvas.pcNs.ElementInputEvent {
+  extends typings.playcanvas.pc.ElementInputEvent {
   def this(
-    event: typings.playcanvas.pcNs.MouseEvent,
-    element: typings.playcanvas.pcNs.ElementComponent,
-    camera: typings.playcanvas.pcNs.CameraComponent
+    event: typings.playcanvas.pc.MouseEvent,
+    element: typings.playcanvas.pc.ElementComponent,
+    camera: typings.playcanvas.pc.CameraComponent
   ) = this()
   def this(
-    event: typings.playcanvas.pcNs.TouchEvent,
-    element: typings.playcanvas.pcNs.ElementComponent,
-    camera: typings.playcanvas.pcNs.CameraComponent
+    event: typings.playcanvas.pc.TouchEvent,
+    element: typings.playcanvas.pc.ElementComponent,
+    camera: typings.playcanvas.pc.CameraComponent
   ) = this()
 }
 

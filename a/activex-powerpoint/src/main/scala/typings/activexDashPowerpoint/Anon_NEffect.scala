@@ -1,7 +1,7 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.Effect
-import typings.activexDashPowerpoint.PowerPointNs.SlideShowWindow
+import typings.activexDashPowerpoint.PowerPoint.Effect
+import typings.activexDashPowerpoint.PowerPoint.SlideShowWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -31,13 +31,13 @@ object ListStackInstancesInput {
   @scala.inline
   def apply(
     StackSetName: StackSetName,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     StackInstanceAccount: Account = null,
     StackInstanceRegion: Region = null
   ): ListStackInstancesInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StackInstanceAccount != null) __obj.updateDynamic("StackInstanceAccount")(StackInstanceAccount)
     if (StackInstanceRegion != null) __obj.updateDynamic("StackInstanceRegion")(StackInstanceRegion)

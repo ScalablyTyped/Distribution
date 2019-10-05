@@ -1,9 +1,9 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.electron.ElectronNs.CreateFromBitmapOptions
-import typings.electron.ElectronNs.CreateFromBufferOptions
-import typings.electron.ElectronNs.NativeImage
+import typings.electron.Electron.CreateFromBitmapOptions
+import typings.electron.Electron.CreateFromBufferOptions
+import typings.electron.Electron.NativeImage
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

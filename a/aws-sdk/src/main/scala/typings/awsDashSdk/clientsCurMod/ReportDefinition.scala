@@ -42,7 +42,7 @@ object ReportDefinition {
     S3Region: AWSRegion,
     TimeUnit: TimeUnit,
     AdditionalArtifacts: AdditionalArtifactList = null,
-    RefreshClosedReports: js.UndefOr[RefreshClosedReports] = js.undefined,
+    RefreshClosedReports: js.UndefOr[Boolean] = js.undefined,
     ReportVersioning: ReportVersioning = null
   ): ReportDefinition = {
     val __obj = js.Dynamic.literal(AdditionalSchemaElements = AdditionalSchemaElements, Compression = Compression.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], ReportName = ReportName, S3Bucket = S3Bucket, S3Prefix = S3Prefix, S3Region = S3Region.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])

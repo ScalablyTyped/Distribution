@@ -21,13 +21,9 @@ trait ListThingRegistrationTasksRequest extends js.Object {
 
 object ListThingRegistrationTasksRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    status: Status = null
-  ): ListThingRegistrationTasksRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: NextToken = null, status: Status = null): ListThingRegistrationTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingRegistrationTasksRequest]

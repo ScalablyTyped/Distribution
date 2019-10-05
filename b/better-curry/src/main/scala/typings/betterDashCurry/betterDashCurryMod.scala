@@ -1,7 +1,7 @@
 package typings.betterDashCurry
 
 import org.scalablytyped.runtime.TopLevel
-import typings.betterDashCurry.BetterCurryModuleNs.BetterCurry
+import typings.betterDashCurry.BetterCurryModule.BetterCurry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

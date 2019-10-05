@@ -14,9 +14,11 @@ trait ClientRoleProps extends js.Object {
 
 object ClientRoleProps {
   @scala.inline
-  def apply(children: ReactNode, clientRole: String, error: ReactNode, client: String = null): ClientRoleProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], clientRole = clientRole, error = error.asInstanceOf[js.Any])
+  def apply(clientRole: String, children: ReactNode = null, client: String = null, error: ReactNode = null): ClientRoleProps = {
+    val __obj = js.Dynamic.literal(clientRole = clientRole)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(client)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRoleProps]
   }
 }

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcPeeringConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetVpcPeeringConnectionFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetVpcPeeringConnectionFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -87,9 +87,5 @@ trait DOMTokenList
 
 @JSGlobal("DOMTokenList")
 @js.native
-class DOMTokenListCls () extends DOMTokenList
-
-@JSGlobal("DOMTokenList")
-@js.native
 object DOMTokenList extends Instantiable0[DOMTokenList]
 

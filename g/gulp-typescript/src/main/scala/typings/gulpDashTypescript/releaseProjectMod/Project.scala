@@ -3,7 +3,7 @@ package typings.gulpDashTypescript.releaseProjectMod
 import typings.gulpDashTypescript.Typeofts
 import typings.gulpDashTypescript.releaseReporterMod.Reporter
 import typings.gulpDashTypescript.releaseTypesMod.TsConfig
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.typescript.typescriptMod.CompilerOptions
 import typings.typescript.typescriptMod.ProjectReference
 import scala.scalajs.js

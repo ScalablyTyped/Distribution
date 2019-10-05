@@ -1,5 +1,6 @@
 package typings.jsonDashRpcDashWs.jsonDashRpcDashWsMod
 
+import typings.ws.wsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("json-rpc-ws", "Client")
 @js.native
 class Client[TConnection /* <: Connection */] protected () extends Base[TConnection] {
-  def this(WebSocket: typings.ws.wsMod.^) = this()
-  def this(WebSocket: typings.ws.wsMod.^, browser: Boolean) = this()
+  def this(WebSocket: ^) = this()
+  def this(WebSocket: ^, browser: Boolean) = this()
   /**
     * Connect to a json-rpc-ws server
     */

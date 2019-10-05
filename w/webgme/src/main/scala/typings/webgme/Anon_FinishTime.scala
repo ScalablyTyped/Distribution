@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.Message
+import typings.webgme.GmeCommon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

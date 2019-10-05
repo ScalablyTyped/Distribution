@@ -2,7 +2,7 @@ package typings.node.streamMod
 
 import typings.node.Anon_Chunk
 import typings.node.Error
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.drain
 import typings.node.nodeStrings.error

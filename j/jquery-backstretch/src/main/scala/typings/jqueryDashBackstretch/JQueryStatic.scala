@@ -1,7 +1,7 @@
 package typings.jqueryDashBackstretch
 
-import typings.jqueryDashBackstretch.JQueryBackStretchNs.BackStretch
-import typings.jqueryDashBackstretch.JQueryBackStretchNs.BackStretchOptions
+import typings.jqueryDashBackstretch.JQueryBackStretch.BackStretch
+import typings.jqueryDashBackstretch.JQueryBackStretch.BackStretchOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

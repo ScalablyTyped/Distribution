@@ -1,5 +1,6 @@
 package typings.d3DashRandom.d3DashRandomMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +15,8 @@ trait RandomExponential extends RandomNumberGenerationSource {
     */
   def apply(lambda: Double): js.Function0[Double] = js.native
 }
+
+@JSImport("d3-random", "randomExponential")
+@js.native
+object randomExponential extends TopLevel[RandomExponential]
 

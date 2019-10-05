@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/path", JSImport.Namespace)
 @js.native
 object libPathMod extends js.Object {
-  @JSName("PathExt")
   @js.native
-  object PathExtNs extends js.Object {
+  object PathExt extends js.Object {
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
       * Often used to extract the file name from a fully qualified path.

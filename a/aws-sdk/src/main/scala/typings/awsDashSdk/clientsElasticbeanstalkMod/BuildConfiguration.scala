@@ -34,12 +34,12 @@ object BuildConfiguration {
     Image: NonEmptyString,
     ArtifactName: String = null,
     ComputeType: ComputeType = null,
-    TimeoutInMinutes: js.UndefOr[BoxedInt] = js.undefined
+    TimeoutInMinutes: Int | Double = null
   ): BuildConfiguration = {
     val __obj = js.Dynamic.literal(CodeBuildServiceRole = CodeBuildServiceRole, Image = Image)
     if (ArtifactName != null) __obj.updateDynamic("ArtifactName")(ArtifactName)
     if (ComputeType != null) __obj.updateDynamic("ComputeType")(ComputeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes)
+    if (TimeoutInMinutes != null) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildConfiguration]
   }
 }

@@ -47,3 +47,12 @@ object ImportDeclaration {
   }
 }
 
+@JSImport("@babel/types", "importDeclaration")
+@js.native
+object importDeclaration extends js.Object {
+  def apply(
+    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
+    source: StringLiteral
+  ): ImportDeclaration = js.native
+}
+

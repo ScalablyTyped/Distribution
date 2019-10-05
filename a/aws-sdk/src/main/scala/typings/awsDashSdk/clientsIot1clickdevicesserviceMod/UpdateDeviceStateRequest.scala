@@ -18,7 +18,7 @@ trait UpdateDeviceStateRequest extends js.Object {
 
 object UpdateDeviceStateRequest {
   @scala.inline
-  def apply(DeviceId: __string, Enabled: js.UndefOr[__boolean] = js.undefined): UpdateDeviceStateRequest = {
+  def apply(DeviceId: __string, Enabled: js.UndefOr[Boolean] = js.undefined): UpdateDeviceStateRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[UpdateDeviceStateRequest]

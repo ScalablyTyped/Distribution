@@ -1,6 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
-import typings.braintreeDashWeb.braintreeDashWebMod.BraintreeErrorNs.Types
+import typings.braintreeDashWeb.braintreeDashWebMod.BraintreeError.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +28,17 @@ trait BraintreeError extends js.Object {
   var `type`: Types
 }
 
-object BraintreeError {
-  @scala.inline
-  def apply(code: String, details: js.Any, message: String, `type`: Types): BraintreeError = {
-    val __obj = js.Dynamic.literal(code = code, details = details, message = message)
-    __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[BraintreeError]
-  }
+@JSImport("braintree-web", "BraintreeError")
+@js.native
+object BraintreeError extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.braintreeDashWeb.braintreeDashWebStrings.CUSTOMER
+    - typings.braintreeDashWeb.braintreeDashWebStrings.MERCHANT
+    - typings.braintreeDashWeb.braintreeDashWebStrings.NETWORK
+    - typings.braintreeDashWeb.braintreeDashWebStrings.INTERNAL
+    - typings.braintreeDashWeb.braintreeDashWebStrings.UNKNOWN
+  */
+  trait Types extends js.Object
+  
 }
 

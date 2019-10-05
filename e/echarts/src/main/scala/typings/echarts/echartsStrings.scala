@@ -1,8 +1,8 @@
 package typings.echarts
 
-import typings.echarts.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Type
-import typings.echarts.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
-import typings.echarts.echartsNs.EChartsSeriesType
+import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Type
+import typings.echarts.echarts.EChartOption.Tooltip.Position.Str
+import typings.echarts.echarts.EChartsSeriesType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

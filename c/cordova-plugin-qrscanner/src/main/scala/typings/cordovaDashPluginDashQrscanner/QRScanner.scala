@@ -1,5 +1,6 @@
 package typings.cordovaDashPluginDashQrscanner
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -128,4 +129,8 @@ trait QRScanner extends js.Object {
   def useFrontCamera(): Unit = js.native
   def useFrontCamera(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, _]): Unit = js.native
 }
+
+@JSGlobal("QRScanner")
+@js.native
+object QRScanner extends TopLevel[QRScanner]
 

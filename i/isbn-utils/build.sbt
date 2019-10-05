@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "isbn-utils"
-version := "1.1-dt-20180214Z-4f6f68"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20180214Z-65031b"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

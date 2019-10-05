@@ -17,7 +17,7 @@ trait MethodSnapshot extends js.Object {
 
 object MethodSnapshot {
   @scala.inline
-  def apply(apiKeyRequired: js.UndefOr[Boolean] = js.undefined, authorizationType: String = null): MethodSnapshot = {
+  def apply(apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined, authorizationType: String = null): MethodSnapshot = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(apiKeyRequired)) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired)
     if (authorizationType != null) __obj.updateDynamic("authorizationType")(authorizationType)

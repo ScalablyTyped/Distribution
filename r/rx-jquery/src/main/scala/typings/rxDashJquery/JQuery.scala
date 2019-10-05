@@ -4,7 +4,7 @@ import typings.jquery.BaseJQueryEventObject
 import typings.jquery.JQueryInputEventObject
 import typings.jquery.JQueryKeyEventObject
 import typings.jquery.JQueryMouseEventObject
-import typings.rxDashLiteDashAggregates.RxNs.Observable
+import typings.rxDashLiteDashAggregates.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

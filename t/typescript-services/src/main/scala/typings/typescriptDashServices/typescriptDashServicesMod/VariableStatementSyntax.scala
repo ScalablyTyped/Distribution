@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "VariableStatementSyntax")
 @js.native
 class VariableStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.VariableStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.VariableStatementSyntax {
   def this(
     modifiers: ISyntaxList,
-    variableDeclaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclarationSyntax,
+    variableDeclaration: typings.typescriptDashServices.TypeScript.VariableDeclarationSyntax,
     semicolonToken: ISyntaxToken,
     parsedInStrictMode: Boolean
   ) = this()
@@ -23,9 +23,9 @@ class VariableStatementSyntax protected ()
 @js.native
 object VariableStatementSyntax extends js.Object {
   def create(
-    variableDeclaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclarationSyntax,
+    variableDeclaration: typings.typescriptDashServices.TypeScript.VariableDeclarationSyntax,
     semicolonToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.VariableStatementSyntax = js.native
-  def create1(variableDeclaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclarationSyntax): typings.typescriptDashServices.TypeScriptNs.VariableStatementSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.VariableStatementSyntax = js.native
+  def create1(variableDeclaration: typings.typescriptDashServices.TypeScript.VariableDeclarationSyntax): typings.typescriptDashServices.TypeScript.VariableStatementSyntax = js.native
 }
 

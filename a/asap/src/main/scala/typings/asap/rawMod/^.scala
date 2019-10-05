@@ -12,9 +12,5 @@ object ^ extends js.Object {
     * @param task Function or any object that implements `call()`.
     */
   def apply(task: Task): Unit = js.native
-  /**
-    * Flushes the event queue.
-    */
-  def requestFlush(): Unit = js.native
 }
 

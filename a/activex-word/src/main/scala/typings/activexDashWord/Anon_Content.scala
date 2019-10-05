@@ -1,13 +1,13 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.ContentControl
+import typings.activexDashWord.Word.ContentControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Content extends js.Object {
   var Content: String
-  val ContentControl: typings.activexDashWord.WordNs.ContentControl
+  val ContentControl: typings.activexDashWord.Word.ContentControl
 }
 
 object Anon_Content {

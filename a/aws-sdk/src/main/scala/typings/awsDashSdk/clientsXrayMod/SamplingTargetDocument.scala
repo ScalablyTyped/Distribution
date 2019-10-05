@@ -30,16 +30,16 @@ trait SamplingTargetDocument extends js.Object {
 object SamplingTargetDocument {
   @scala.inline
   def apply(
-    FixedRate: js.UndefOr[Double] = js.undefined,
-    Interval: js.UndefOr[NullableInteger] = js.undefined,
-    ReservoirQuota: js.UndefOr[NullableInteger] = js.undefined,
+    FixedRate: Int | scala.Double = null,
+    Interval: Int | scala.Double = null,
+    ReservoirQuota: Int | scala.Double = null,
     ReservoirQuotaTTL: Timestamp = null,
     RuleName: String = null
   ): SamplingTargetDocument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FixedRate)) __obj.updateDynamic("FixedRate")(FixedRate)
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval)
-    if (!js.isUndefined(ReservoirQuota)) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota)
+    if (FixedRate != null) __obj.updateDynamic("FixedRate")(FixedRate.asInstanceOf[js.Any])
+    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
+    if (ReservoirQuota != null) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.asInstanceOf[js.Any])
     if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL)
     if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName)
     __obj.asInstanceOf[SamplingTargetDocument]

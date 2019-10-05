@@ -35,11 +35,11 @@ object DescribeCacheEngineVersionsMessage {
   @scala.inline
   def apply(
     CacheParameterGroupFamily: String = null,
-    DefaultOnly: js.UndefOr[Boolean] = js.undefined,
+    DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    MaxRecords: Int | scala.Double = null
   ): DescribeCacheEngineVersionsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheParameterGroupFamily != null) __obj.updateDynamic("CacheParameterGroupFamily")(CacheParameterGroupFamily)
@@ -47,7 +47,7 @@ object DescribeCacheEngineVersionsMessage {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheEngineVersionsMessage]
   }
 }

@@ -21,7 +21,7 @@ trait DescribeImageAttributeRequest extends js.Object {
 
 object DescribeImageAttributeRequest {
   @scala.inline
-  def apply(Attribute: ImageAttributeName, ImageId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeImageAttributeRequest = {
+  def apply(Attribute: ImageAttributeName, ImageId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], ImageId = ImageId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeImageAttributeRequest]

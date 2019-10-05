@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojvalidationDashDatetimeMod
 
-import typings.atOracleOraclejet.ojvalidationDashDatetimeMod.DateRestrictionValidatorNs.ValidatorOptions
+import typings.atOracleOraclejet.ojvalidationDashDatetimeMod.DateRestrictionValidator.ValidatorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

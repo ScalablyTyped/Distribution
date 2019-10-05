@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgConfigurationAggregatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.cfgNs.ConfigurationAggregatorAccountAggregationSource
-import typings.atPulumiAws.typesInputMod.cfgNs.ConfigurationAggregatorOrganizationAggregationSource
+import typings.atPulumiAws.typesInputMod.cfg.ConfigurationAggregatorAccountAggregationSource
+import typings.atPulumiAws.typesInputMod.cfg.ConfigurationAggregatorOrganizationAggregationSource
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

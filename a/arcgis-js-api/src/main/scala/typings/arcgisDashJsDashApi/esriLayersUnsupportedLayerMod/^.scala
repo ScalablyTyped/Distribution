@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersUnsupportedLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnsupportedLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.UnsupportedLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -37,3 +37,11 @@ object ArrayPattern {
   }
 }
 
+@JSImport("babel-types", "arrayPattern")
+@js.native
+object arrayPattern extends js.Object {
+  def apply(): ArrayPattern = js.native
+  def apply(elements: js.Array[Expression]): ArrayPattern = js.native
+  def apply(elements: js.Array[Expression], typeAnnotation: TypeAnnotation): ArrayPattern = js.native
+}
+

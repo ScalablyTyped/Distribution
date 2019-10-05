@@ -58,13 +58,13 @@ object ModifyVpcEndpointRequest {
     AddRouteTableIds: ValueStringList = null,
     AddSecurityGroupIds: ValueStringList = null,
     AddSubnetIds: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PolicyDocument: String = null,
-    PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
+    PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     RemoveRouteTableIds: ValueStringList = null,
     RemoveSecurityGroupIds: ValueStringList = null,
     RemoveSubnetIds: ValueStringList = null,
-    ResetPolicy: js.UndefOr[Boolean] = js.undefined
+    ResetPolicy: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyVpcEndpointRequest = {
     val __obj = js.Dynamic.literal(VpcEndpointId = VpcEndpointId)
     if (AddRouteTableIds != null) __obj.updateDynamic("AddRouteTableIds")(AddRouteTableIds)

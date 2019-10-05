@@ -24,18 +24,18 @@ object UploadFileOptions {
   def apply(
     files: js.Array[UploadFileItem],
     toUrl: String,
-    begin: UploadCallbackBegin = null,
+    begin: /* res */ UploadBeginCallbackResult => Unit = null,
     fields: Fields = null,
     headers: Headers = null,
     method: String = null,
-    progress: UploadCallbackProgress = null
+    progress: /* res */ UploadProgressCallbackResult => Unit = null
   ): UploadFileOptions = {
     val __obj = js.Dynamic.literal(files = files, toUrl = toUrl)
-    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     __obj.asInstanceOf[UploadFileOptions]
   }
 }

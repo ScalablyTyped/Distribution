@@ -13,7 +13,7 @@ trait EnableVpcClassicLinkDnsSupportResult extends js.Object {
 
 object EnableVpcClassicLinkDnsSupportResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): EnableVpcClassicLinkDnsSupportResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): EnableVpcClassicLinkDnsSupportResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[EnableVpcClassicLinkDnsSupportResult]

@@ -1,5 +1,6 @@
 package typings.plupload
 
+import typings.plupload.plupload.Uploader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,42 +28,42 @@ trait plupload_events extends js.Object {
 object plupload_events {
   @scala.inline
   def apply(
-    BeforeUpload: plupload_event_file = null,
-    ChunkUploaded: plupload_event_ChunkUploaded = null,
-    Destroy: plupload_event = null,
-    Error: plupload_event_Error = null,
-    FileFiltered: plupload_event_file = null,
-    FileUploaded: plupload_event_FileUploaded = null,
-    FilesAdded: plupload_event_files = null,
-    FilesRemoved: plupload_event_files = null,
-    Init: plupload_event = null,
-    OptionChanged: plupload_event_OptionChanged = null,
-    PostInit: plupload_event = null,
-    QueueChanged: plupload_event = null,
-    Refresh: plupload_event = null,
-    StateChanged: plupload_event = null,
-    UploadComplete: plupload_event_files = null,
-    UploadFile: plupload_event_file = null,
-    UploadProgress: plupload_event_file = null
+    BeforeUpload: (/* uploader */ Uploader, /* file */ js.Any) => js.Any = null,
+    ChunkUploaded: (/* uploader */ Uploader, /* file */ js.Any, /* response */ plupload_chunk_response) => js.Any = null,
+    Destroy: /* uploader */ Uploader => js.Any = null,
+    Error: (/* uploader */ Uploader, /* error */ plupload_error) => js.Any = null,
+    FileFiltered: (/* uploader */ Uploader, /* file */ js.Any) => js.Any = null,
+    FileUploaded: (/* uploader */ Uploader, /* file */ js.Any, /* response */ plupload_response) => js.Any = null,
+    FilesAdded: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => js.Any = null,
+    FilesRemoved: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => js.Any = null,
+    Init: /* uploader */ Uploader => js.Any = null,
+    OptionChanged: (/* uploader */ Uploader, /* name */ String, /* value */ js.Any, /* oldValue */ js.Any) => js.Any = null,
+    PostInit: /* uploader */ Uploader => js.Any = null,
+    QueueChanged: /* uploader */ Uploader => js.Any = null,
+    Refresh: /* uploader */ Uploader => js.Any = null,
+    StateChanged: /* uploader */ Uploader => js.Any = null,
+    UploadComplete: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => js.Any = null,
+    UploadFile: (/* uploader */ Uploader, /* file */ js.Any) => js.Any = null,
+    UploadProgress: (/* uploader */ Uploader, /* file */ js.Any) => js.Any = null
   ): plupload_events = {
     val __obj = js.Dynamic.literal()
-    if (BeforeUpload != null) __obj.updateDynamic("BeforeUpload")(BeforeUpload)
-    if (ChunkUploaded != null) __obj.updateDynamic("ChunkUploaded")(ChunkUploaded)
-    if (Destroy != null) __obj.updateDynamic("Destroy")(Destroy)
-    if (Error != null) __obj.updateDynamic("Error")(Error)
-    if (FileFiltered != null) __obj.updateDynamic("FileFiltered")(FileFiltered)
-    if (FileUploaded != null) __obj.updateDynamic("FileUploaded")(FileUploaded)
-    if (FilesAdded != null) __obj.updateDynamic("FilesAdded")(FilesAdded)
-    if (FilesRemoved != null) __obj.updateDynamic("FilesRemoved")(FilesRemoved)
-    if (Init != null) __obj.updateDynamic("Init")(Init)
-    if (OptionChanged != null) __obj.updateDynamic("OptionChanged")(OptionChanged)
-    if (PostInit != null) __obj.updateDynamic("PostInit")(PostInit)
-    if (QueueChanged != null) __obj.updateDynamic("QueueChanged")(QueueChanged)
-    if (Refresh != null) __obj.updateDynamic("Refresh")(Refresh)
-    if (StateChanged != null) __obj.updateDynamic("StateChanged")(StateChanged)
-    if (UploadComplete != null) __obj.updateDynamic("UploadComplete")(UploadComplete)
-    if (UploadFile != null) __obj.updateDynamic("UploadFile")(UploadFile)
-    if (UploadProgress != null) __obj.updateDynamic("UploadProgress")(UploadProgress)
+    if (BeforeUpload != null) __obj.updateDynamic("BeforeUpload")(js.Any.fromFunction2(BeforeUpload))
+    if (ChunkUploaded != null) __obj.updateDynamic("ChunkUploaded")(js.Any.fromFunction3(ChunkUploaded))
+    if (Destroy != null) __obj.updateDynamic("Destroy")(js.Any.fromFunction1(Destroy))
+    if (Error != null) __obj.updateDynamic("Error")(js.Any.fromFunction2(Error))
+    if (FileFiltered != null) __obj.updateDynamic("FileFiltered")(js.Any.fromFunction2(FileFiltered))
+    if (FileUploaded != null) __obj.updateDynamic("FileUploaded")(js.Any.fromFunction3(FileUploaded))
+    if (FilesAdded != null) __obj.updateDynamic("FilesAdded")(js.Any.fromFunction2(FilesAdded))
+    if (FilesRemoved != null) __obj.updateDynamic("FilesRemoved")(js.Any.fromFunction2(FilesRemoved))
+    if (Init != null) __obj.updateDynamic("Init")(js.Any.fromFunction1(Init))
+    if (OptionChanged != null) __obj.updateDynamic("OptionChanged")(js.Any.fromFunction4(OptionChanged))
+    if (PostInit != null) __obj.updateDynamic("PostInit")(js.Any.fromFunction1(PostInit))
+    if (QueueChanged != null) __obj.updateDynamic("QueueChanged")(js.Any.fromFunction1(QueueChanged))
+    if (Refresh != null) __obj.updateDynamic("Refresh")(js.Any.fromFunction1(Refresh))
+    if (StateChanged != null) __obj.updateDynamic("StateChanged")(js.Any.fromFunction1(StateChanged))
+    if (UploadComplete != null) __obj.updateDynamic("UploadComplete")(js.Any.fromFunction2(UploadComplete))
+    if (UploadFile != null) __obj.updateDynamic("UploadFile")(js.Any.fromFunction2(UploadFile))
+    if (UploadProgress != null) __obj.updateDynamic("UploadProgress")(js.Any.fromFunction2(UploadProgress))
     __obj.asInstanceOf[plupload_events]
   }
 }

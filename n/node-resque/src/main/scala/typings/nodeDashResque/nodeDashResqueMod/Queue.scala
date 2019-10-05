@@ -1,6 +1,6 @@
 package typings.nodeDashResque.nodeDashResqueMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.nodeDashResque.nodeDashResqueStrings.error
 import typings.std.Error
 import scala.scalajs.js

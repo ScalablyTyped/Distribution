@@ -1,8 +1,8 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.treeBaseNs.rowCollapsedHandler
-import typings.uiDashGrid.uiDashGridMod.treeBaseNs.rowExpandedHandler
+import typings.uiDashGrid.uiDashGridMod.treeBase.rowCollapsedHandler
+import typings.uiDashGrid.uiDashGridMod.treeBase.rowExpandedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

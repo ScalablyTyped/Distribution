@@ -33,3 +33,10 @@ object SpreadProperty {
   }
 }
 
+@JSImport("babel-types", "spreadProperty")
+@js.native
+object spreadProperty extends js.Object {
+  def apply(): SpreadProperty = js.native
+  def apply(argument: Expression): SpreadProperty = js.native
+}
+

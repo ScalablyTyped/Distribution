@@ -1,6 +1,5 @@
 package typings.wallpaper.wallpaperMod
 
-import typings.wallpaper.Anon_Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ object ^ extends js.Object {
   // TODO: remove this in the next major version
   // when removed, each of the methods in this interface can be refactored to an explicit function export
   // and `wallpaper` namespace may be removed completely along with the `export = wallpaper` export.
-  var default: Anon_Default = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any = js.native
   /**
   	__macOS only.__
   	@returns The available screens.

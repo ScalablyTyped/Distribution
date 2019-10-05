@@ -63,7 +63,7 @@ object PutIntentRequest {
     checksum: String = null,
     conclusionStatement: Statement = null,
     confirmationPrompt: Prompt = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
+    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     description: Description = null,
     dialogCodeHook: CodeHook = null,
     followUpPrompt: FollowUpPrompt = null,

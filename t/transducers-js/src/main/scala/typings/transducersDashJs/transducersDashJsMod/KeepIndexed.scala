@@ -16,3 +16,9 @@ class KeepIndexed[TResult, TInput] protected () extends Transformer[TResult, TIn
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "keepIndexed")
+@js.native
+object keepIndexed extends js.Object {
+  def apply[TInput](f: js.Function2[/* i */ Double, /* x */ TInput, _]): Transducer[TInput, TInput] = js.native
+}
+

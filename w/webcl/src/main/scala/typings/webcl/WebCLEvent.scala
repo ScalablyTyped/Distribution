@@ -1,10 +1,10 @@
 package typings.webcl
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.webcl.WEBCLNs.CommandExecutionStatus
-import typings.webcl.WEBCLNs.EventInfo
-import typings.webcl.WEBCLNs.ProfilingInfo
-import typings.webcl.WEBCLNs.WebCLCallback
+import typings.webcl.WEBCL.CommandExecutionStatus
+import typings.webcl.WEBCL.EventInfo
+import typings.webcl.WEBCL.ProfilingInfo
+import typings.webcl.WEBCL.WebCLCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebCLEvent")
 @js.native
 class WebCLEvent ()
-  extends typings.webcl.WEBCLNs.WebCLEvent {
+  extends typings.webcl.WEBCL.WebCLEvent {
   /* CompleteClass */
   override def getInfo(name: EventInfo): js.Any = js.native
   /* CompleteClass */
@@ -26,5 +26,5 @@ class WebCLEvent ()
 @JSGlobal("WebCLEvent")
 @js.native
 object WebCLEvent
-  extends Instantiable0[typings.webcl.WEBCLNs.WebCLEvent]
+  extends Instantiable0[typings.webcl.WEBCL.WebCLEvent]
 

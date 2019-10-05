@@ -13,23 +13,64 @@ trait LibraVMStatusError extends js.Object {
   var verificationStatusList: js.UndefOr[js.Array[LibraVerificationStatusError]] = js.undefined
 }
 
-object LibraVMStatusError {
-  @scala.inline
+@JSImport("libra-core", "LibraVMStatusError")
+@js.native
+object LibraVMStatusError extends js.Object {
+  def apply(errorType: Double): Unit = js.native
+  def apply(errorType: Double, validationStatus: LibraValidationStatusError): Unit = js.native
   def apply(
-    errorType: LibraErrorType | Double,
-    deserializationError: LibraDeserializationError = null,
-    executionError: LibraExecutionError = null,
-    invariantViolation: LibraInvariantViolationError = null,
-    validationStatus: LibraValidationStatusError = null,
-    verificationStatusList: js.Array[LibraVerificationStatusError] = null
-  ): LibraVMStatusError = {
-    val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any])
-    if (deserializationError != null) __obj.updateDynamic("deserializationError")(deserializationError)
-    if (executionError != null) __obj.updateDynamic("executionError")(executionError)
-    if (invariantViolation != null) __obj.updateDynamic("invariantViolation")(invariantViolation)
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus)
-    if (verificationStatusList != null) __obj.updateDynamic("verificationStatusList")(verificationStatusList)
-    __obj.asInstanceOf[LibraVMStatusError]
-  }
+    errorType: Double,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError]
+  ): Unit = js.native
+  def apply(
+    errorType: Double,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError
+  ): Unit = js.native
+  def apply(
+    errorType: Double,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError,
+    deserializationError: LibraDeserializationError
+  ): Unit = js.native
+  def apply(
+    errorType: Double,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError,
+    deserializationError: LibraDeserializationError,
+    executionError: LibraExecutionError
+  ): Unit = js.native
+  def apply(errorType: LibraErrorType): Unit = js.native
+  def apply(errorType: LibraErrorType, validationStatus: LibraValidationStatusError): Unit = js.native
+  def apply(
+    errorType: LibraErrorType,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError]
+  ): Unit = js.native
+  def apply(
+    errorType: LibraErrorType,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError
+  ): Unit = js.native
+  def apply(
+    errorType: LibraErrorType,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError,
+    deserializationError: LibraDeserializationError
+  ): Unit = js.native
+  def apply(
+    errorType: LibraErrorType,
+    validationStatus: LibraValidationStatusError,
+    verificationStatusList: js.Array[LibraVerificationStatusError],
+    invariantViolation: LibraInvariantViolationError,
+    deserializationError: LibraDeserializationError,
+    executionError: LibraExecutionError
+  ): Unit = js.native
 }
 

@@ -21,19 +21,21 @@ object TwoHandleSliderProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    SliderCommonProps: SliderCommonProps = null,
     fill: SliderFillProps = null,
     initialEnd: Int | Double = null,
     initialStart: Int | Double = null,
+    isDisabled: js.UndefOr[Boolean] = js.undefined,
+    isVertical: js.UndefOr[Boolean] = js.undefined,
     maxHandle: SliderHandleProps = null,
     minHandle: SliderHandleProps = null
   ): TwoHandleSliderProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, SliderCommonProps)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (initialEnd != null) __obj.updateDynamic("initialEnd")(initialEnd.asInstanceOf[js.Any])
     if (initialStart != null) __obj.updateDynamic("initialStart")(initialStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical)
     if (maxHandle != null) __obj.updateDynamic("maxHandle")(maxHandle)
     if (minHandle != null) __obj.updateDynamic("minHandle")(minHandle)
     __obj.asInstanceOf[TwoHandleSliderProps]

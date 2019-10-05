@@ -101,10 +101,10 @@ object PutMetricAlarmInput {
     AlarmName: AlarmName,
     ComparisonOperator: ComparisonOperator,
     EvaluationPeriods: EvaluationPeriods,
-    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
+    ActionsEnabled: js.UndefOr[Boolean] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmDescription: AlarmDescription = null,
-    DatapointsToAlarm: js.UndefOr[DatapointsToAlarm] = js.undefined,
+    DatapointsToAlarm: Int | Double = null,
     Dimensions: Dimensions = null,
     EvaluateLowSampleCountPercentile: EvaluateLowSampleCountPercentile = null,
     ExtendedStatistic: ExtendedStatistic = null,
@@ -113,10 +113,10 @@ object PutMetricAlarmInput {
     Metrics: MetricDataQueries = null,
     Namespace: Namespace = null,
     OKActions: ResourceList = null,
-    Period: js.UndefOr[Period] = js.undefined,
+    Period: Int | Double = null,
     Statistic: Statistic = null,
     Tags: TagList = null,
-    Threshold: js.UndefOr[Threshold] = js.undefined,
+    Threshold: Int | Double = null,
     ThresholdMetricId: MetricId = null,
     TreatMissingData: TreatMissingData = null,
     Unit: StandardUnit = null
@@ -125,7 +125,7 @@ object PutMetricAlarmInput {
     if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled)
     if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions)
     if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription)
-    if (!js.isUndefined(DatapointsToAlarm)) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm)
+    if (DatapointsToAlarm != null) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
     if (EvaluateLowSampleCountPercentile != null) __obj.updateDynamic("EvaluateLowSampleCountPercentile")(EvaluateLowSampleCountPercentile)
     if (ExtendedStatistic != null) __obj.updateDynamic("ExtendedStatistic")(ExtendedStatistic)
@@ -134,10 +134,10 @@ object PutMetricAlarmInput {
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace)
     if (OKActions != null) __obj.updateDynamic("OKActions")(OKActions)
-    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period)
+    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold)
+    if (Threshold != null) __obj.updateDynamic("Threshold")(Threshold.asInstanceOf[js.Any])
     if (ThresholdMetricId != null) __obj.updateDynamic("ThresholdMetricId")(ThresholdMetricId)
     if (TreatMissingData != null) __obj.updateDynamic("TreatMissingData")(TreatMissingData)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])

@@ -23,12 +23,12 @@ object DescribeBrokerEngineTypesResponse {
   @scala.inline
   def apply(
     BrokerEngineTypes: __listOfBrokerEngineType = null,
-    MaxResults: js.UndefOr[__integerMin5Max100] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: __string = null
   ): DescribeBrokerEngineTypesResponse = {
     val __obj = js.Dynamic.literal()
     if (BrokerEngineTypes != null) __obj.updateDynamic("BrokerEngineTypes")(BrokerEngineTypes)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeBrokerEngineTypesResponse]
   }

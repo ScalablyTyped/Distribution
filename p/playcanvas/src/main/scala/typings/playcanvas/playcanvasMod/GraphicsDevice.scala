@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "GraphicsDevice")
 @js.native
 class GraphicsDevice protected ()
-  extends typings.playcanvas.pcNs.GraphicsDevice {
+  extends typings.playcanvas.pc.GraphicsDevice {
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: js.Any) = this()
 }

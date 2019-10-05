@@ -86,7 +86,7 @@ object InstanceNetworkInterface {
     PrivateDnsName: String = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: InstancePrivateIpAddressList = null,
-    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
+    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined,
     Status: NetworkInterfaceStatus = null,
     SubnetId: String = null,
     VpcId: String = null

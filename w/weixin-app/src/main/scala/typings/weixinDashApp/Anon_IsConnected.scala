@@ -1,13 +1,13 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.networkType
+import typings.weixinDashApp.wx.networkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_IsConnected extends js.Object {
   var isConnected: Boolean
-  var networkType: typings.weixinDashApp.wxNs.networkType
+  var networkType: typings.weixinDashApp.wx.networkType
 }
 
 object Anon_IsConnected {

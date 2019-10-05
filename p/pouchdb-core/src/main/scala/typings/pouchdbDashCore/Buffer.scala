@@ -1,6 +1,6 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs._AttachmentData
+import typings.pouchdbDashCore.PouchDB.Core._AttachmentData
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("express-ws", "express")
+/* augmented module */
+@JSImport("express", JSImport.Namespace)
 @js.native
 object expressMod extends js.Object {
   def Router(): typings.express.expressMod.Router = js.native

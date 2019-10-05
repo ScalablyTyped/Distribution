@@ -30,12 +30,6 @@ trait PatternVisitor extends Visitor {
 
 @JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope/PatternVisitor", "PatternVisitor")
 @js.native
-class PatternVisitorCls protected () extends PatternVisitor {
-  def this(options: PatternVisitorOptions, rootPattern: js.Any, callback: PatternVisitorCallback) = this()
-}
-
-@JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope/PatternVisitor", "PatternVisitor")
-@js.native
 object PatternVisitor
   extends Instantiable3[
       /* options */ PatternVisitorOptions, 

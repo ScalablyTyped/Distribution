@@ -20,11 +20,5 @@ trait reactDashAceProps {
   @scala.inline
   def SplitProps: ISplitEditorProps.type = typings.reactDashAce.libSplitMod.ISplitEditorProps
   type SplitProps = ISplitEditorProps
-  @scala.inline
-  def diffProps: IDiffEditorProps.type = typings.reactDashAce.libDiffMod.IDiffEditorProps
-  type diffProps = IDiffEditorProps
-  @scala.inline
-  def splitProps: ISplitEditorProps.type = typings.reactDashAce.libSplitMod.ISplitEditorProps
-  type splitProps = ISplitEditorProps
 }
 

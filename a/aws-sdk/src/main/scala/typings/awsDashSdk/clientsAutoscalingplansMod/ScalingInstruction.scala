@@ -75,23 +75,23 @@ object ScalingInstruction {
     ServiceNamespace: ServiceNamespace,
     TargetTrackingConfigurations: TargetTrackingConfigurations,
     CustomizedLoadMetricSpecification: CustomizedLoadMetricSpecification = null,
-    DisableDynamicScaling: js.UndefOr[DisableDynamicScaling] = js.undefined,
+    DisableDynamicScaling: js.UndefOr[Boolean] = js.undefined,
     PredefinedLoadMetricSpecification: PredefinedLoadMetricSpecification = null,
     PredictiveScalingMaxCapacityBehavior: PredictiveScalingMaxCapacityBehavior = null,
-    PredictiveScalingMaxCapacityBuffer: js.UndefOr[ResourceCapacity] = js.undefined,
+    PredictiveScalingMaxCapacityBuffer: Int | Double = null,
     PredictiveScalingMode: PredictiveScalingMode = null,
     ScalingPolicyUpdateBehavior: ScalingPolicyUpdateBehavior = null,
-    ScheduledActionBufferTime: js.UndefOr[ScheduledActionBufferTime] = js.undefined
+    ScheduledActionBufferTime: Int | Double = null
   ): ScalingInstruction = {
     val __obj = js.Dynamic.literal(MaxCapacity = MaxCapacity, MinCapacity = MinCapacity, ResourceId = ResourceId, ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any], TargetTrackingConfigurations = TargetTrackingConfigurations)
     if (CustomizedLoadMetricSpecification != null) __obj.updateDynamic("CustomizedLoadMetricSpecification")(CustomizedLoadMetricSpecification)
     if (!js.isUndefined(DisableDynamicScaling)) __obj.updateDynamic("DisableDynamicScaling")(DisableDynamicScaling)
     if (PredefinedLoadMetricSpecification != null) __obj.updateDynamic("PredefinedLoadMetricSpecification")(PredefinedLoadMetricSpecification)
     if (PredictiveScalingMaxCapacityBehavior != null) __obj.updateDynamic("PredictiveScalingMaxCapacityBehavior")(PredictiveScalingMaxCapacityBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(PredictiveScalingMaxCapacityBuffer)) __obj.updateDynamic("PredictiveScalingMaxCapacityBuffer")(PredictiveScalingMaxCapacityBuffer)
+    if (PredictiveScalingMaxCapacityBuffer != null) __obj.updateDynamic("PredictiveScalingMaxCapacityBuffer")(PredictiveScalingMaxCapacityBuffer.asInstanceOf[js.Any])
     if (PredictiveScalingMode != null) __obj.updateDynamic("PredictiveScalingMode")(PredictiveScalingMode.asInstanceOf[js.Any])
     if (ScalingPolicyUpdateBehavior != null) __obj.updateDynamic("ScalingPolicyUpdateBehavior")(ScalingPolicyUpdateBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScheduledActionBufferTime)) __obj.updateDynamic("ScheduledActionBufferTime")(ScheduledActionBufferTime)
+    if (ScheduledActionBufferTime != null) __obj.updateDynamic("ScheduledActionBufferTime")(ScheduledActionBufferTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingInstruction]
   }
 }

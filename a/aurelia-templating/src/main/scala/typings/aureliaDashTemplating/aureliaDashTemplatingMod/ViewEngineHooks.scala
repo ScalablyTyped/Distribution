@@ -80,3 +80,10 @@ object ViewEngineHooks {
   }
 }
 
+@JSImport("aurelia-templating", "viewEngineHooks")
+@js.native
+object viewEngineHooks extends js.Object {
+  def apply(): js.Any = js.native
+  def apply(target: js.Any): js.Any = js.native
+}
+

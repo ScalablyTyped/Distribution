@@ -1,6 +1,6 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPNs.FileSystemObjectType
+import typings.sharepoint.SP.FileSystemObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

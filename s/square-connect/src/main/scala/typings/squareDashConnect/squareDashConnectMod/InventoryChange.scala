@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.InventoryChangeNs.TypeEnum
+import typings.squareDashConnect.squareDashConnectMod.InventoryChange.TypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,5 +25,31 @@ class InventoryChange () extends js.Object {
     * See [InventoryChangeType](#type-inventorychangetype) for possible values.
     */
   var `type`: js.UndefOr[TypeEnum] = js.native
+}
+
+@JSImport("square-connect", "InventoryChange")
+@js.native
+object InventoryChange extends js.Object {
+  @js.native
+  sealed trait TypeEnum extends js.Object
+  
+  @js.native
+  object TypeEnum extends js.Object {
+    @js.native
+    sealed trait ADJUSTMENT extends TypeEnum
+    
+    @js.native
+    sealed trait PHYSICAL_COUNT extends TypeEnum
+    
+    @js.native
+    sealed trait TRANSFER extends TypeEnum
+    
+    /* "ADJUSTMENT" */ val ADJUSTMENT: typings.squareDashConnect.squareDashConnectMod.InventoryChange.TypeEnum.ADJUSTMENT with String = js.native
+    /* "PHYSICAL_COUNT" */ val PHYSICAL_COUNT: typings.squareDashConnect.squareDashConnectMod.InventoryChange.TypeEnum.PHYSICAL_COUNT with String = js.native
+    /* "TRANSFER" */ val TRANSFER: typings.squareDashConnect.squareDashConnectMod.InventoryChange.TypeEnum.TRANSFER with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[TypeEnum with String] = js.native
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 package typings.fhirDashKitDashClient.fhirDashKitDashClientMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fhir.fhirNs.Element
-import typings.fhir.fhirNs.Meta
-import typings.fhir.fhirNs.ResourceBase
-import typings.fhir.fhirNs.code
-import typings.fhir.fhirNs.id
-import typings.fhir.fhirNs.uri
+import typings.fhir.fhir.Element
+import typings.fhir.fhir.Meta
+import typings.fhir.fhir.ResourceBase
+import typings.fhir.fhir.code
+import typings.fhir.fhir.id
+import typings.fhir.fhir.uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

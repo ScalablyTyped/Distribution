@@ -1,6 +1,6 @@
 package typings.numbro
 
-import typings.numbro.numbroMod.numbroNs.Format
+import typings.numbro.numbroMod.numbro.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

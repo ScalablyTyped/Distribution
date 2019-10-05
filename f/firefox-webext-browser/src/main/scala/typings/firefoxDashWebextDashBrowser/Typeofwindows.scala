@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.GetInfo
+import typings.firefoxDashWebextDashBrowser.browser.windows.GetInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,31 +31,31 @@ trait Typeofwindows extends js.Object {
     */
   val onRemoved: WebExtEvent[js.Function1[/* windowId */ Double, Unit]] = js.native
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
-  def create(): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
-  def create(createData: Anon_AllowScriptsToClose): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
+  def create(): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
+  def create(createData: Anon_AllowScriptsToClose): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
   /* windows functions */
   /** Gets details about a window. */
-  def get(windowId: Double): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
-  def get(windowId: Double, getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
+  def get(windowId: Double): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def get(windowId: Double, getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
   /**
     * Gets all windows.
     * @param [getInfo] Specifies properties used to filter the `windows.Window` returned and to determine whether they
     *     should contain a list of the `tabs.Tab` objects.
     */
-  def getAll(): js.Promise[js.Array[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
-  def getAll(getInfo: Anon_PopulateWindowTypes): js.Promise[js.Array[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
+  def getAll(): js.Promise[js.Array[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
+  def getAll(getInfo: Anon_PopulateWindowTypes): js.Promise[js.Array[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
   /** Gets the current window. */
-  def getCurrent(): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
-  def getCurrent(getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
+  def getCurrent(): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def getCurrent(getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
   /** Gets the window that was most recently focused — typically the window 'on top'. */
-  def getLastFocused(): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
-  def getLastFocused(getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window] = js.native
+  def getLastFocused(): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def getLastFocused(getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
   /** Removes (closes) a window, and all the tabs inside it. */
   def remove(windowId: Double): js.Promise[Unit] = js.native
   /**
     * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties
     * will be left unchanged.
     */
-  def update(windowId: Double, updateInfo: Anon_DrawAttention): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
+  def update(windowId: Double, updateInfo: Anon_DrawAttention): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
 }
 

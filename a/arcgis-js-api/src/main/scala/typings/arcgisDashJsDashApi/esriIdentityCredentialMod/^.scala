@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriIdentityCredentialMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CredentialConstructor
+import typings.arcgisDashJsDashApi.__esri.CredentialConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

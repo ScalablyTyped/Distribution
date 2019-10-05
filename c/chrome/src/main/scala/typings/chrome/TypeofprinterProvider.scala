@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.printerProviderNs.CapabilityRequestedEvent
-import typings.chrome.chromeNs.printerProviderNs.PrintRequestedEvent
-import typings.chrome.chromeNs.printerProviderNs.PrinterInfoRequestedEvent
-import typings.chrome.chromeNs.printerProviderNs.PrinterRequestedEvent
+import typings.chrome.chrome.printerProvider.CapabilityRequestedEvent
+import typings.chrome.chrome.printerProvider.PrintRequestedEvent
+import typings.chrome.chrome.printerProvider.PrinterInfoRequestedEvent
+import typings.chrome.chrome.printerProvider.PrinterRequestedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

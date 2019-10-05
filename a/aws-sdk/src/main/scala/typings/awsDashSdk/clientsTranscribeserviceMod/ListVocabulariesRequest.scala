@@ -26,13 +26,13 @@ trait ListVocabulariesRequest extends js.Object {
 object ListVocabulariesRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NameContains: VocabularyName = null,
     NextToken: NextToken = null,
     StateEquals: VocabularyState = null
   ): ListVocabulariesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StateEquals != null) __obj.updateDynamic("StateEquals")(StateEquals.asInstanceOf[js.Any])

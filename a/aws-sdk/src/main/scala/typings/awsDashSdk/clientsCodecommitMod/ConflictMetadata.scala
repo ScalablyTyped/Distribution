@@ -50,15 +50,15 @@ trait ConflictMetadata extends js.Object {
 object ConflictMetadata {
   @scala.inline
   def apply(
-    contentConflict: js.UndefOr[IsContentConflict] = js.undefined,
-    fileModeConflict: js.UndefOr[IsFileModeConflict] = js.undefined,
+    contentConflict: js.UndefOr[Boolean] = js.undefined,
+    fileModeConflict: js.UndefOr[Boolean] = js.undefined,
     fileModes: FileModes = null,
     filePath: Path = null,
     fileSizes: FileSizes = null,
     isBinaryFile: IsBinaryFile = null,
     mergeOperations: MergeOperations = null,
-    numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.undefined,
-    objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.undefined,
+    numberOfConflicts: Int | Double = null,
+    objectTypeConflict: js.UndefOr[Boolean] = js.undefined,
     objectTypes: ObjectTypes = null
   ): ConflictMetadata = {
     val __obj = js.Dynamic.literal()
@@ -69,7 +69,7 @@ object ConflictMetadata {
     if (fileSizes != null) __obj.updateDynamic("fileSizes")(fileSizes)
     if (isBinaryFile != null) __obj.updateDynamic("isBinaryFile")(isBinaryFile)
     if (mergeOperations != null) __obj.updateDynamic("mergeOperations")(mergeOperations)
-    if (!js.isUndefined(numberOfConflicts)) __obj.updateDynamic("numberOfConflicts")(numberOfConflicts)
+    if (numberOfConflicts != null) __obj.updateDynamic("numberOfConflicts")(numberOfConflicts.asInstanceOf[js.Any])
     if (!js.isUndefined(objectTypeConflict)) __obj.updateDynamic("objectTypeConflict")(objectTypeConflict)
     if (objectTypes != null) __obj.updateDynamic("objectTypes")(objectTypes)
     __obj.asInstanceOf[ConflictMetadata]

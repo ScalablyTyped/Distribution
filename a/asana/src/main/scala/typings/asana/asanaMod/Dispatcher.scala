@@ -1,6 +1,8 @@
 package typings.asana.asanaMod
 
-import typings.asana.asanaMod.authNs.Authenticator
+import org.scalablytyped.runtime.TopLevel
+import typings.asana.asanaMod.auth.Authenticator
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +32,7 @@ trait Dispatcher extends js.Object {
     *     there was a problem authorizing.
     * @return
     */
-  def authorize(): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def authorize(): ^[Unit] = js.native
   /**
     * Dispatches a DELETE request to the Asana API.
     * @param  {String} path The path of the API
@@ -41,8 +43,8 @@ trait Dispatcher extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def delete(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
-  def delete(path: String, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def delete(path: String): ^[_] = js.native
+  def delete(path: String, dispatchOptions: js.Any): ^[_] = js.native
   /**
     * Dispatches a request to the Asana API. The request parameters are passed to
     * the request module.
@@ -53,8 +55,8 @@ trait Dispatcher extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatch(params: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
-  def dispatch(params: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatch(params: js.Any): ^[_] = js.native
+  def dispatch(params: js.Any, dispatchOptions: js.Any): ^[_] = js.native
   /**
     * Dispatches a GET request to the Asana API.
     * @param  {String}  path    The path of the API
@@ -67,16 +69,16 @@ trait Dispatcher extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def get(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
-  def get(path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
-  def get(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def get(path: String): ^[_] = js.native
+  def get(path: String, query: js.Any): ^[_] = js.native
+  def get(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
   /**
     * Handler for unauthorized requests which may seek reauthorization.
     * Default behavior is available if configured with an Oauth authenticator
     * that has a refresh token, and will refresh the current access token.
     * @type {Function}
     */
-  def handleUnauthorized(): Boolean | typings.bluebird.bluebirdMod.^[Boolean] = js.native
+  def handleUnauthorized(): Boolean | ^[Boolean] = js.native
   /**
     * Dispatches a POST request to the Asana API.
     * @param  {String} path The path of the API
@@ -89,8 +91,8 @@ trait Dispatcher extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def post(path: String, data: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
-  def post(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def post(path: String, data: js.Any): ^[_] = js.native
+  def post(path: String, data: js.Any, dispatchOptions: js.Any): ^[_] = js.native
   /**
     * Dispatches a PUT request to the Asana API.
     * @param  {String} path The path of the API
@@ -103,8 +105,8 @@ trait Dispatcher extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def put(path: String, data: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
-  def put(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def put(path: String, data: js.Any): ^[_] = js.native
+  def put(path: String, data: js.Any, dispatchOptions: js.Any): ^[_] = js.native
   /**
     * Configure the authentication mechanism to use.
     * @returns {Dispatcher} this
@@ -124,24 +126,5 @@ trait Dispatcher extends js.Object {
 
 @JSImport("asana", "Dispatcher")
 @js.native
-/**
-  * Creates a dispatcher which will act as a basic wrapper for making HTTP
-  * requests to the API, and handle authentication.
-  * @class
-  * @classdesc A HTTP wrapper for the Asana API
-  * @param {Object} options for default behavior of the Dispatcher
-  * @option {Authenticator} [authenticator] Object to use for authentication.
-  *     Can also be set later with `setAuthenticator`.
-  * @option {String} [retryOnRateLimit] Automatically handle `RateLimitEnforced`
-  *     errors by sleeping and retrying after the waiting period.
-  * @option {Function} [handleUnauthorized] Automatically handle
-  *     `NoAuthorization` with the callback. If the callback returns `true`
-  *     (or a promise resolving to `true), will retry the request.
-  * @option {String} [asanaBaseUrl] Base URL for Asana, for debugging
-  * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
-  *     request to finish.
-  */
-class DispatcherCls () extends Dispatcher {
-  def this(options: DispatcherOptions) = this()
-}
+object Dispatcher extends TopLevel[DispatcherStatic]
 

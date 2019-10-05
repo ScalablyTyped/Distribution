@@ -1,9 +1,9 @@
 package typings.webgme
 
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeCommonNs.DataObject
-import typings.webgme.GmeCommonNs.Name
-import typings.webgme.GmeCommonNs.ResultCallback
+import typings.webgme.Core.Node
+import typings.webgme.GmeCommon.DataObject
+import typings.webgme.GmeCommon.Name
+import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

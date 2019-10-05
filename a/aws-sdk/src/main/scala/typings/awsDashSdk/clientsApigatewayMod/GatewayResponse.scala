@@ -30,7 +30,7 @@ trait GatewayResponse extends js.Object {
 object GatewayResponse {
   @scala.inline
   def apply(
-    defaultResponse: js.UndefOr[Boolean] = js.undefined,
+    defaultResponse: js.UndefOr[scala.Boolean] = js.undefined,
     responseParameters: MapOfStringToString = null,
     responseTemplates: MapOfStringToString = null,
     responseType: GatewayResponseType = null,

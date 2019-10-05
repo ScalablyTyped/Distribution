@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmDocumentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ssmNs.DocumentParameter
-import typings.atPulumiAws.typesOutputMod.ssmNs.DocumentPermissions
+import typings.atPulumiAws.typesOutputMod.ssm.DocumentParameter
+import typings.atPulumiAws.typesOutputMod.ssm.DocumentPermissions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

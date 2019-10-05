@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "human-interval"
-version := "1.0-dt-20190717Z-c3e926"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20190717Z-5a44cd"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

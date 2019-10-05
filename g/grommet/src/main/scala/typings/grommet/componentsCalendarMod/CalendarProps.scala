@@ -41,7 +41,7 @@ object CalendarProps {
   def apply(
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
-    animate: js.UndefOr[AnimateType] = js.undefined,
+    animate: js.UndefOr[Boolean] = js.undefined,
     bounds: js.Array[String] = null,
     date: String = null,
     dates: js.Array[String | js.Array[String]] = null,

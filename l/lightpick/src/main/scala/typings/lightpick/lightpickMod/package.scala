@@ -13,5 +13,6 @@ package object lightpickMod {
   type FormatSpecification = MomentFormatSpecification
   type InputDate = MomentInput | Null
   type InputDateRange = js.Tuple2[InputDate, InputDate]
+  type Options = Options_
   type OutputDate = Moment | Null
 }

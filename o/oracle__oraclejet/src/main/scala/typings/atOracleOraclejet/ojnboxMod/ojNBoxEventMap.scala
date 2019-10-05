@@ -24,10 +24,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.withinCell
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Cell
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Column
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.CountLabelContext
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.Row
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Cell
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Column
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.CountLabelContext
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.Row
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

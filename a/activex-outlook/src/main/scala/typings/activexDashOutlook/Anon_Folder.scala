@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Folder
+import typings.activexDashOutlook.Outlook.Folder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Folder extends js.Object {
-  val Folder: typings.activexDashOutlook.OutlookNs.Folder
+  val Folder: typings.activexDashOutlook.Outlook.Folder
 }
 
 object Anon_Folder {

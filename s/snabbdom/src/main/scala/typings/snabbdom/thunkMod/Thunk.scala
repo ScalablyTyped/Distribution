@@ -1,5 +1,6 @@
 package typings.snabbdom.thunkMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.snabbdom.vnodeMod.Key
 import typings.snabbdom.vnodeMod.VNode
 import typings.std.Node
@@ -31,4 +32,8 @@ object Thunk {
     __obj.asInstanceOf[Thunk]
   }
 }
+
+@JSImport("snabbdom/thunk", "thunk")
+@js.native
+object thunk extends TopLevel[ThunkFn]
 

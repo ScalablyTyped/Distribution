@@ -2,6 +2,9 @@ package typings.authmosphere.libSrcTypesScopeMiddlewareOptionsMod
 
 import typings.authmosphere.libSrcTypesLoggerMod.Logger
 import typings.authmosphere.libSrcTypesPrecedenceMod.PrecedenceOptions
+import typings.express.expressMod.NextFunction
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +21,12 @@ object ScopeMiddlewareOptions {
   @scala.inline
   def apply(
     logger: Logger = null,
-    onAuthorizationFailedHandler: onAuthorizationFailedHandler = null,
+    onAuthorizationFailedHandler: (/* request */ Request, /* resonse */ Response, /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
     precedenceOptions: PrecedenceOptions = null
   ): ScopeMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
     if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (onAuthorizationFailedHandler != null) __obj.updateDynamic("onAuthorizationFailedHandler")(onAuthorizationFailedHandler)
+    if (onAuthorizationFailedHandler != null) __obj.updateDynamic("onAuthorizationFailedHandler")(js.Any.fromFunction5(onAuthorizationFailedHandler))
     if (precedenceOptions != null) __obj.updateDynamic("precedenceOptions")(precedenceOptions)
     __obj.asInstanceOf[ScopeMiddlewareOptions]
   }

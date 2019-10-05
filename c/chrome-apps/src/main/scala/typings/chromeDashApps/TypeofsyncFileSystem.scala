@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.syncFileSystemNs.FileStatusChangedDetail
-import typings.chromeDashApps.chromeNs.syncFileSystemNs.FileStatusInfo
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.syncFileSystem.FileStatusChangedDetail
+import typings.chromeDashApps.chrome.syncFileSystem.FileStatusInfo
 import typings.filesystem.FileEntry
 import typings.filesystem.FileSystem
 import typings.std.Exclude

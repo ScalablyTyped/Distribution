@@ -39,3 +39,9 @@ object BlankNode extends js.Object {
   var termType: String = js.native
 }
 
+@JSImport("rdflib", "blankNode")
+@js.native
+object blankNode extends js.Object {
+  def apply(value: String): BlankNode = js.native
+}
+

@@ -14,9 +14,9 @@ trait IResizeGroupStyles extends js.Object {
 
 object IResizeGroupStyles {
   @scala.inline
-  def apply(root: IStyle): IResizeGroupStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IResizeGroupStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResizeGroupStyles]
   }
 }

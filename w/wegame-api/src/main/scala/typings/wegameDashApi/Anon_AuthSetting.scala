@@ -1,6 +1,6 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.AuthSetting
+import typings.wegameDashApi.wx.types.AuthSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

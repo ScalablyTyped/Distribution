@@ -1,14 +1,14 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.Application
-import typings.activexDashWord.WordNs.Document
-import typings.activexDashWord.WordNs.EventHelperTypesNs.Application_EPostageInsertEx_ArgNames
-import typings.activexDashWord.WordNs.EventHelperTypesNs.Application_EPostageInsertEx_Parameter
-import typings.activexDashWord.WordNs.EventHelperTypesNs.Application_Invoke_ArgNames
-import typings.activexDashWord.WordNs.EventHelperTypesNs.Application_Invoke_Parameter
-import typings.activexDashWord.WordNs.OLEControl
-import typings.activexDashWord.WordNs.System
-import typings.activexDashWord.WordNs.WdCompatibility
+import typings.activexDashWord.Word.Application
+import typings.activexDashWord.Word.Document
+import typings.activexDashWord.Word.EventHelperTypes.Application_EPostageInsertEx_ArgNames
+import typings.activexDashWord.Word.EventHelperTypes.Application_EPostageInsertEx_Parameter
+import typings.activexDashWord.Word.EventHelperTypes.Application_Invoke_ArgNames
+import typings.activexDashWord.Word.EventHelperTypes.Application_Invoke_Parameter
+import typings.activexDashWord.Word.OLEControl
+import typings.activexDashWord.Word.System
+import typings.activexDashWord.Word.WdCompatibility
 import typings.activexDashWord.activexDashWordStrings.ActiveWritingStyle
 import typings.activexDashWord.activexDashWordStrings.AddRef
 import typings.activexDashWord.activexDashWordStrings.BlockType

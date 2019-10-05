@@ -1,0 +1,22 @@
+package typings.smartDashFoxDashServer.SFS2X
+
+import typings.smartDashFoxDashServer.SFS2X.Entities.SFSRoom
+import typings.smartDashFoxDashServer.SFS2X.Entities.SFSUser
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IUSER_EXIT_ROOM extends js.Object {
+  var room: SFSRoom
+  var user: SFSUser
+}
+
+object IUSER_EXIT_ROOM {
+  @scala.inline
+  def apply(room: SFSRoom, user: SFSUser): IUSER_EXIT_ROOM = {
+    val __obj = js.Dynamic.literal(room = room, user = user)
+  
+    __obj.asInstanceOf[IUSER_EXIT_ROOM]
+  }
+}
+

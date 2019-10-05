@@ -33,3 +33,10 @@ object SequenceExpression {
   }
 }
 
+@JSImport("babel-types", "sequenceExpression")
+@js.native
+object sequenceExpression extends js.Object {
+  def apply(): SequenceExpression = js.native
+  def apply(expressions: js.Array[Expression]): SequenceExpression = js.native
+}
+

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "GraphicsData")
 @js.native
 class GraphicsData protected ()
-  extends typings.pixiDotJs.PIXINs.GraphicsData {
+  extends typings.pixiDotJs.PIXI.GraphicsData {
   def this(
     lineWidth: Double,
     lineColor: Double,
@@ -30,7 +30,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Circle
+    shape: typings.pixiDotJs.PIXI.Circle
   ) = this()
   def this(
     lineWidth: Double,
@@ -40,7 +40,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Ellipse
+    shape: typings.pixiDotJs.PIXI.Ellipse
   ) = this()
   def this(
     lineWidth: Double,
@@ -50,7 +50,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Polygon
+    shape: typings.pixiDotJs.PIXI.Polygon
   ) = this()
   def this(
     lineWidth: Double,
@@ -60,7 +60,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Rectangle
+    shape: typings.pixiDotJs.PIXI.Rectangle
   ) = this()
   def this(
     lineWidth: Double,
@@ -70,7 +70,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.RoundedRectangle
+    shape: typings.pixiDotJs.PIXI.RoundedRectangle
   ) = this()
   def this(
     lineWidth: Double,
@@ -91,7 +91,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Circle,
+    shape: typings.pixiDotJs.PIXI.Circle,
     lineAlignment: Double
   ) = this()
   def this(
@@ -102,7 +102,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Ellipse,
+    shape: typings.pixiDotJs.PIXI.Ellipse,
     lineAlignment: Double
   ) = this()
   def this(
@@ -113,7 +113,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Polygon,
+    shape: typings.pixiDotJs.PIXI.Polygon,
     lineAlignment: Double
   ) = this()
   def this(
@@ -124,7 +124,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.Rectangle,
+    shape: typings.pixiDotJs.PIXI.Rectangle,
     lineAlignment: Double
   ) = this()
   def this(
@@ -135,7 +135,7 @@ class GraphicsData protected ()
     fillAlpha: Double,
     fill: Boolean,
     nativeLines: Boolean,
-    shape: typings.pixiDotJs.PIXINs.RoundedRectangle,
+    shape: typings.pixiDotJs.PIXI.RoundedRectangle,
     lineAlignment: Double
   ) = this()
 }

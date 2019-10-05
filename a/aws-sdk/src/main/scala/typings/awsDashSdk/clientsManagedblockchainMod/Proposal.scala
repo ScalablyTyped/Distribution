@@ -63,13 +63,13 @@ object Proposal {
     Description: DescriptionString = null,
     ExpirationDate: Timestamp = null,
     NetworkId: ResourceIdString = null,
-    NoVoteCount: js.UndefOr[VoteCount] = js.undefined,
-    OutstandingVoteCount: js.UndefOr[VoteCount] = js.undefined,
+    NoVoteCount: Int | Double = null,
+    OutstandingVoteCount: Int | Double = null,
     ProposalId: ResourceIdString = null,
     ProposedByMemberId: ResourceIdString = null,
     ProposedByMemberName: NetworkMemberNameString = null,
     Status: ProposalStatus = null,
-    YesVoteCount: js.UndefOr[VoteCount] = js.undefined
+    YesVoteCount: Int | Double = null
   ): Proposal = {
     val __obj = js.Dynamic.literal()
     if (Actions != null) __obj.updateDynamic("Actions")(Actions)
@@ -77,13 +77,13 @@ object Proposal {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate)
     if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId)
-    if (!js.isUndefined(NoVoteCount)) __obj.updateDynamic("NoVoteCount")(NoVoteCount)
-    if (!js.isUndefined(OutstandingVoteCount)) __obj.updateDynamic("OutstandingVoteCount")(OutstandingVoteCount)
+    if (NoVoteCount != null) __obj.updateDynamic("NoVoteCount")(NoVoteCount.asInstanceOf[js.Any])
+    if (OutstandingVoteCount != null) __obj.updateDynamic("OutstandingVoteCount")(OutstandingVoteCount.asInstanceOf[js.Any])
     if (ProposalId != null) __obj.updateDynamic("ProposalId")(ProposalId)
     if (ProposedByMemberId != null) __obj.updateDynamic("ProposedByMemberId")(ProposedByMemberId)
     if (ProposedByMemberName != null) __obj.updateDynamic("ProposedByMemberName")(ProposedByMemberName)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(YesVoteCount)) __obj.updateDynamic("YesVoteCount")(YesVoteCount)
+    if (YesVoteCount != null) __obj.updateDynamic("YesVoteCount")(YesVoteCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proposal]
   }
 }

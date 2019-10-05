@@ -1,6 +1,7 @@
 package typings.pinoDashHttp.pinoDashHttpMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.pino.Anon_AsObject
 import typings.pino.pinoMod.DestinationStream
@@ -42,7 +43,7 @@ object Options {
     customLevels: StringDictionary[Double] = null,
     customLogLevel: (/* res */ ServerResponse, /* error */ Error) => Level = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    genReqId: GenReqId = null,
+    genReqId: /* req */ IncomingMessage => ReqId = null,
     level: LevelWithSilent | String = null,
     levelVal: Int | Double = null,
     logger: Logger = null,
@@ -67,7 +68,7 @@ object Options {
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels)
     if (customLogLevel != null) __obj.updateDynamic("customLogLevel")(js.Any.fromFunction2(customLogLevel))
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (genReqId != null) __obj.updateDynamic("genReqId")(genReqId)
+    if (genReqId != null) __obj.updateDynamic("genReqId")(js.Any.fromFunction1(genReqId))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger)

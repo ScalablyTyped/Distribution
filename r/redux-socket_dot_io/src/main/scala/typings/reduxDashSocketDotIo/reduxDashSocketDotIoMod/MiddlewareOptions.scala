@@ -2,7 +2,7 @@ package typings.reduxDashSocketDotIo.reduxDashSocketDotIoMod
 
 import typings.redux.reduxMod.Action
 import typings.redux.reduxMod.Dispatch
-import typings.socketDotIoDashClient.SocketIOClientNs.Socket
+import typings.socketDotIoDashClient.SocketIOClient.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

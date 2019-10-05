@@ -30,7 +30,7 @@ trait GetServiceGraphResult extends js.Object {
 object GetServiceGraphResult {
   @scala.inline
   def apply(
-    ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined,
+    ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined,
     EndTime: Timestamp = null,
     NextToken: String = null,
     Services: ServiceList = null,

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -160,7 +161,7 @@ object IgRadialMenu {
     centerButtonHotTrackStroke: String = null,
     centerButtonStroke: String = null,
     centerButtonStrokeThickness: Int | Double = null,
-    closed: ClosedEvent = null,
+    closed: (/* event */ Event, /* ui */ ClosedEventUIParam) => Unit = null,
     currentOpenMenuItemName: String = null,
     font: String = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
@@ -173,7 +174,7 @@ object IgRadialMenu {
     menuOpenCloseAnimationDuration: Int | Double = null,
     menuOpenCloseAnimationEasingFunction: js.Any = null,
     minWedgeCount: Int | Double = null,
-    opened: OpenedEvent = null,
+    opened: (/* event */ Event, /* ui */ OpenedEventUIParam) => Unit = null,
     outerRingFill: String = null,
     outerRingStroke: String = null,
     outerRingStrokeThickness: Int | Double = null,
@@ -195,7 +196,7 @@ object IgRadialMenu {
     if (centerButtonHotTrackStroke != null) __obj.updateDynamic("centerButtonHotTrackStroke")(centerButtonHotTrackStroke)
     if (centerButtonStroke != null) __obj.updateDynamic("centerButtonStroke")(centerButtonStroke)
     if (centerButtonStrokeThickness != null) __obj.updateDynamic("centerButtonStrokeThickness")(centerButtonStrokeThickness.asInstanceOf[js.Any])
-    if (closed != null) __obj.updateDynamic("closed")(closed)
+    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction2(closed))
     if (currentOpenMenuItemName != null) __obj.updateDynamic("currentOpenMenuItemName")(currentOpenMenuItemName)
     if (font != null) __obj.updateDynamic("font")(font)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
@@ -208,7 +209,7 @@ object IgRadialMenu {
     if (menuOpenCloseAnimationDuration != null) __obj.updateDynamic("menuOpenCloseAnimationDuration")(menuOpenCloseAnimationDuration.asInstanceOf[js.Any])
     if (menuOpenCloseAnimationEasingFunction != null) __obj.updateDynamic("menuOpenCloseAnimationEasingFunction")(menuOpenCloseAnimationEasingFunction)
     if (minWedgeCount != null) __obj.updateDynamic("minWedgeCount")(minWedgeCount.asInstanceOf[js.Any])
-    if (opened != null) __obj.updateDynamic("opened")(opened)
+    if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction2(opened))
     if (outerRingFill != null) __obj.updateDynamic("outerRingFill")(outerRingFill)
     if (outerRingStroke != null) __obj.updateDynamic("outerRingStroke")(outerRingStroke)
     if (outerRingStrokeThickness != null) __obj.updateDynamic("outerRingStrokeThickness")(outerRingStrokeThickness.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesOpacityVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacityVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpacityVariableProperties
+import typings.arcgisDashJsDashApi.__esri.OpacityVariable
+import typings.arcgisDashJsDashApi.__esri.OpacityVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.cleaveDotJs.reactPropsMod
 
 import typings.cleaveDotJs.optionsMod.CleaveOptions
 import typings.react.reactMod.InputHTMLAttributes
+import typings.react.reactMod.ReactInstance
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,14 +22,14 @@ object Props {
     options: CleaveOptions,
     InputHTMLAttributes: InputHTMLAttributes[HTMLInputElement] = null,
     htmlRef: /* i */ js.Any => Unit = null,
-    onChange: ChangeEventHandler[HTMLInputElement] = null,
-    onInit: InitHandler = null
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
+    onInit: /* owner */ ReactInstance => Unit = null
   ): Props = {
     val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
     if (htmlRef != null) __obj.updateDynamic("htmlRef")(js.Any.fromFunction1(htmlRef))
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
     __obj.asInstanceOf[Props]
   }
 }

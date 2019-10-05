@@ -38,7 +38,7 @@ trait CreateKeyRequest extends js.Object {
 object CreateKeyRequest {
   @scala.inline
   def apply(
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[BooleanType] = js.undefined,
+    BypassPolicyLockoutSafetyCheck: js.UndefOr[Boolean] = js.undefined,
     CustomKeyStoreId: CustomKeyStoreIdType = null,
     Description: DescriptionType = null,
     KeyUsage: KeyUsageType = null,

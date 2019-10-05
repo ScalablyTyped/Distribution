@@ -32,8 +32,8 @@ object SetPermissionRequest {
   def apply(
     IamUserArn: String,
     StackId: String,
-    AllowSsh: js.UndefOr[Boolean] = js.undefined,
-    AllowSudo: js.UndefOr[Boolean] = js.undefined,
+    AllowSsh: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowSudo: js.UndefOr[scala.Boolean] = js.undefined,
     Level: String = null
   ): SetPermissionRequest = {
     val __obj = js.Dynamic.literal(IamUserArn = IamUserArn, StackId = StackId)

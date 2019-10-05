@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.systemNs.storageNs.StorageCapacityInfo
-import typings.chromeDashApps.chromeNs.systemNs.storageNs.StorageUnitInfo
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.system.storage.StorageCapacityInfo
+import typings.chromeDashApps.chrome.system.storage.StorageUnitInfo
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

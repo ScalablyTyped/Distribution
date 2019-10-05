@@ -46,7 +46,7 @@ object ListLabelingJobsForWorkteamRequest {
     CreationTimeAfter: Timestamp = null,
     CreationTimeBefore: Timestamp = null,
     JobReferenceCodeContains: JobReferenceCodeContains = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     SortBy: ListLabelingJobsForWorkteamSortByOptions = null,
     SortOrder: SortOrder = null
@@ -55,7 +55,7 @@ object ListLabelingJobsForWorkteamRequest {
     if (CreationTimeAfter != null) __obj.updateDynamic("CreationTimeAfter")(CreationTimeAfter)
     if (CreationTimeBefore != null) __obj.updateDynamic("CreationTimeBefore")(CreationTimeBefore)
     if (JobReferenceCodeContains != null) __obj.updateDynamic("JobReferenceCodeContains")(JobReferenceCodeContains)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])

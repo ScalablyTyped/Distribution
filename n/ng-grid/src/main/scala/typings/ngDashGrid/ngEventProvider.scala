@@ -1,11 +1,13 @@
 package typings.ngDashGrid
 
+import org.scalablytyped.runtime.TopLevel
 import typings.angular.angularMod.ITimeoutService
-import typings.ngDashGrid.ngGridNs.IColumn
-import typings.ngDashGrid.ngGridNs.IEventProvider
-import typings.ngDashGrid.ngGridNs.IGridInstance
-import typings.ngDashGrid.ngGridNs.IGridScope
-import typings.ngDashGrid.ngGridNs.serviceNs.IDomUtilityService
+import typings.ngDashGrid.ngGrid.IColumn
+import typings.ngDashGrid.ngGrid.IEventProvider
+import typings.ngDashGrid.ngGrid.IEventProviderStatic
+import typings.ngDashGrid.ngGrid.IGridInstance
+import typings.ngDashGrid.ngGrid.IGridScope
+import typings.ngDashGrid.ngGrid.service.IDomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,4 +44,8 @@ class ngEventProvider protected () extends IEventProvider {
   /* CompleteClass */
   override def setDraggables(): Unit = js.native
 }
+
+@JSGlobal("ngEventProvider")
+@js.native
+object ngEventProvider extends TopLevel[IEventProviderStatic]
 

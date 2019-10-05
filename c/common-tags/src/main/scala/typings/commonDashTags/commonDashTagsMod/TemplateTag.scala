@@ -16,17 +16,6 @@ trait TemplateTag extends js.Object {
 
 @JSImport("common-tags", "TemplateTag")
 @js.native
-/**
-  * New Tag Constructor
-  * @deprecated
-  */
-class TemplateTagCls () extends TemplateTag {
-  def this(transformers: (PluginFunction | TemplateTransformer[_])*) = this()
-  def this(transformers: js.Array[TemplateTransformer[_]]) = this()
-}
-
-@JSImport("common-tags", "TemplateTag")
-@js.native
 object TemplateTag
   extends /**
   * New Tag Constructor

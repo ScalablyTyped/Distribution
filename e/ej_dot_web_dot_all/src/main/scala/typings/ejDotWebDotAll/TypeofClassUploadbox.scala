@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Uploadbox
-import typings.ejDotWebDotAll.ejNs.UploadboxNs.Model
+import typings.ejDotWebDotAll.ej.Uploadbox
+import typings.ejDotWebDotAll.ej.Uploadbox.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

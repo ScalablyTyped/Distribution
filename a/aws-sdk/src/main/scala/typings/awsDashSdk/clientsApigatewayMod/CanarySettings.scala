@@ -27,13 +27,13 @@ object CanarySettings {
   @scala.inline
   def apply(
     deploymentId: String = null,
-    percentTraffic: js.UndefOr[Double] = js.undefined,
+    percentTraffic: Int | scala.Double = null,
     stageVariableOverrides: MapOfStringToString = null,
-    useStageCache: js.UndefOr[Boolean] = js.undefined
+    useStageCache: js.UndefOr[scala.Boolean] = js.undefined
   ): CanarySettings = {
     val __obj = js.Dynamic.literal()
     if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId)
-    if (!js.isUndefined(percentTraffic)) __obj.updateDynamic("percentTraffic")(percentTraffic)
+    if (percentTraffic != null) __obj.updateDynamic("percentTraffic")(percentTraffic.asInstanceOf[js.Any])
     if (stageVariableOverrides != null) __obj.updateDynamic("stageVariableOverrides")(stageVariableOverrides)
     if (!js.isUndefined(useStageCache)) __obj.updateDynamic("useStageCache")(useStageCache)
     __obj.asInstanceOf[CanarySettings]

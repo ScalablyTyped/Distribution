@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Sugar: typings.sugarDashCore.sugarjsNs.Sugar = js.native
+  var Sugar: typings.sugarDashCore.sugarjs.Sugar = js.native
 }
 

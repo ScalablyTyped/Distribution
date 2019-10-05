@@ -34,7 +34,7 @@ trait DirectConnectGateway extends js.Object {
 object DirectConnectGateway {
   @scala.inline
   def apply(
-    amazonSideAsn: js.UndefOr[LongAsn] = js.undefined,
+    amazonSideAsn: Int | Double = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
     directConnectGatewayName: DirectConnectGatewayName = null,
     directConnectGatewayState: DirectConnectGatewayState = null,
@@ -42,7 +42,7 @@ object DirectConnectGateway {
     stateChangeError: StateChangeError = null
   ): DirectConnectGateway = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amazonSideAsn)) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId)
     if (directConnectGatewayName != null) __obj.updateDynamic("directConnectGatewayName")(directConnectGatewayName)
     if (directConnectGatewayState != null) __obj.updateDynamic("directConnectGatewayState")(directConnectGatewayState.asInstanceOf[js.Any])

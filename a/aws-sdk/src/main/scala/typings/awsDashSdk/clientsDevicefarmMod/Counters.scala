@@ -38,22 +38,22 @@ trait Counters extends js.Object {
 object Counters {
   @scala.inline
   def apply(
-    errored: js.UndefOr[Integer] = js.undefined,
-    failed: js.UndefOr[Integer] = js.undefined,
-    passed: js.UndefOr[Integer] = js.undefined,
-    skipped: js.UndefOr[Integer] = js.undefined,
-    stopped: js.UndefOr[Integer] = js.undefined,
-    total: js.UndefOr[Integer] = js.undefined,
-    warned: js.UndefOr[Integer] = js.undefined
+    errored: Int | scala.Double = null,
+    failed: Int | scala.Double = null,
+    passed: Int | scala.Double = null,
+    skipped: Int | scala.Double = null,
+    stopped: Int | scala.Double = null,
+    total: Int | scala.Double = null,
+    warned: Int | scala.Double = null
   ): Counters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errored)) __obj.updateDynamic("errored")(errored)
-    if (!js.isUndefined(failed)) __obj.updateDynamic("failed")(failed)
-    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed)
-    if (!js.isUndefined(skipped)) __obj.updateDynamic("skipped")(skipped)
-    if (!js.isUndefined(stopped)) __obj.updateDynamic("stopped")(stopped)
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total)
-    if (!js.isUndefined(warned)) __obj.updateDynamic("warned")(warned)
+    if (errored != null) __obj.updateDynamic("errored")(errored.asInstanceOf[js.Any])
+    if (failed != null) __obj.updateDynamic("failed")(failed.asInstanceOf[js.Any])
+    if (passed != null) __obj.updateDynamic("passed")(passed.asInstanceOf[js.Any])
+    if (skipped != null) __obj.updateDynamic("skipped")(skipped.asInstanceOf[js.Any])
+    if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (warned != null) __obj.updateDynamic("warned")(warned.asInstanceOf[js.Any])
     __obj.asInstanceOf[Counters]
   }
 }

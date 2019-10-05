@@ -1,5 +1,6 @@
 package typings.hystrixjs.hystrixjsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,4 +47,8 @@ object HystrixConfig {
     __obj.asInstanceOf[HystrixConfig]
   }
 }
+
+@JSImport("hystrixjs", "hystrixConfig")
+@js.native
+object hystrixConfig extends TopLevel[HystrixConfig]
 

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsLayersStreamLayerViewMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StreamLayerViewConstructor
+import typings.arcgisDashJsDashApi.__esri.StreamLayerViewConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

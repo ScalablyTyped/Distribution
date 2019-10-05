@@ -4,6 +4,7 @@ import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -85,9 +86,9 @@ object ICellProps {
     interactive: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    onKeyDown: KeyboardEventHandler[HTMLElement] = null,
-    onKeyPress: KeyboardEventHandler[HTMLElement] = null,
-    onKeyUp: KeyboardEventHandler[HTMLElement] = null,
+    onKeyDown: KeyboardEvent[HTMLElement] => Unit = null,
+    onKeyPress: KeyboardEvent[HTMLElement] => Unit = null,
+    onKeyUp: KeyboardEvent[HTMLElement] => Unit = null,
     rowIndex: Int | Double = null,
     style: CSSProperties = null,
     tabIndex: Int | Double = null,
@@ -103,9 +104,9 @@ object ICellProps {
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (key != null) __obj.updateDynamic("key")(key)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

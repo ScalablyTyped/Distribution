@@ -2,7 +2,7 @@ package typings.reactDashToolbox.libMenuMenuDividerMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

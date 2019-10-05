@@ -1,52 +1,52 @@
 package typings.activexDashAccess
 
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_DragOver_ArgNames
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_DragOver_Parameter
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_FldListDragDrop_ArgNames
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_FldListDragDrop_Parameter
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_FldListDragOver_ArgNames
-import typings.activexDashAccess.AccWizObjectsNs.EventHelperTypesNs.FieldList_FldListDragOver_Parameter
-import typings.activexDashAccess.AccWizObjectsNs.FieldList
-import typings.activexDashAccess.AccWizObjectsNs.ImexGrid
-import typings.activexDashAccess.AccessNs.Attachment
-import typings.activexDashAccess.AccessNs.BoundObjectFrame
-import typings.activexDashAccess.AccessNs.CheckBox
-import typings.activexDashAccess.AccessNs.Class
-import typings.activexDashAccess.AccessNs.ComboBox
-import typings.activexDashAccess.AccessNs.CommandButton
-import typings.activexDashAccess.AccessNs.Control
-import typings.activexDashAccess.AccessNs.CustomControl
-import typings.activexDashAccess.AccessNs.EmptyCell
-import typings.activexDashAccess.AccessNs.EventHelperTypesNs.WebBrowserControl_BeforeNavigate2_ArgNames
-import typings.activexDashAccess.AccessNs.EventHelperTypesNs.WebBrowserControl_BeforeNavigate2_Parameter
-import typings.activexDashAccess.AccessNs.Form
-import typings.activexDashAccess.AccessNs.Image
-import typings.activexDashAccess.AccessNs.Label
-import typings.activexDashAccess.AccessNs.ListBox
-import typings.activexDashAccess.AccessNs.NavigationButton
-import typings.activexDashAccess.AccessNs.NavigationControl
-import typings.activexDashAccess.AccessNs.ObjectFrame
-import typings.activexDashAccess.AccessNs.OptionButton
-import typings.activexDashAccess.AccessNs.OptionGroup
-import typings.activexDashAccess.AccessNs.PaletteButton
-import typings.activexDashAccess.AccessNs.Rectangle
-import typings.activexDashAccess.AccessNs.References
-import typings.activexDashAccess.AccessNs.Report
-import typings.activexDashAccess.AccessNs.Section
-import typings.activexDashAccess.AccessNs.SubForm
-import typings.activexDashAccess.AccessNs.SubReport
-import typings.activexDashAccess.AccessNs.TabControl
-import typings.activexDashAccess.AccessNs.TextBox
-import typings.activexDashAccess.AccessNs.ToggleButton
-import typings.activexDashAccess.AccessNs.WebBrowserControl
-import typings.activexDashAccess.AccessNs._CheckBoxInOption
-import typings.activexDashAccess.AccessNs._ChildLabel
-import typings.activexDashAccess.AccessNs._ControlInReportEvents
-import typings.activexDashAccess.AccessNs._CustomControlInReport
-import typings.activexDashAccess.AccessNs._OptionButtonInOption
-import typings.activexDashAccess.AccessNs._PageHdrFtrInReport
-import typings.activexDashAccess.AccessNs._SectionInReport
-import typings.activexDashAccess.AccessNs._ToggleButtonInOption
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_DragOver_ArgNames
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_DragOver_Parameter
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_FldListDragDrop_ArgNames
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_FldListDragDrop_Parameter
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_FldListDragOver_ArgNames
+import typings.activexDashAccess.AccWizObjects.EventHelperTypes.FieldList_FldListDragOver_Parameter
+import typings.activexDashAccess.AccWizObjects.FieldList
+import typings.activexDashAccess.AccWizObjects.ImexGrid
+import typings.activexDashAccess.Access.Attachment
+import typings.activexDashAccess.Access.BoundObjectFrame
+import typings.activexDashAccess.Access.CheckBox
+import typings.activexDashAccess.Access.Class
+import typings.activexDashAccess.Access.ComboBox
+import typings.activexDashAccess.Access.CommandButton
+import typings.activexDashAccess.Access.Control
+import typings.activexDashAccess.Access.CustomControl
+import typings.activexDashAccess.Access.EmptyCell
+import typings.activexDashAccess.Access.EventHelperTypes.WebBrowserControl_BeforeNavigate2_ArgNames
+import typings.activexDashAccess.Access.EventHelperTypes.WebBrowserControl_BeforeNavigate2_Parameter
+import typings.activexDashAccess.Access.Form
+import typings.activexDashAccess.Access.Image
+import typings.activexDashAccess.Access.Label
+import typings.activexDashAccess.Access.ListBox
+import typings.activexDashAccess.Access.NavigationButton
+import typings.activexDashAccess.Access.NavigationControl
+import typings.activexDashAccess.Access.ObjectFrame
+import typings.activexDashAccess.Access.OptionButton
+import typings.activexDashAccess.Access.OptionGroup
+import typings.activexDashAccess.Access.PaletteButton
+import typings.activexDashAccess.Access.Rectangle
+import typings.activexDashAccess.Access.References
+import typings.activexDashAccess.Access.Report
+import typings.activexDashAccess.Access.Section
+import typings.activexDashAccess.Access.SubForm
+import typings.activexDashAccess.Access.SubReport
+import typings.activexDashAccess.Access.TabControl
+import typings.activexDashAccess.Access.TextBox
+import typings.activexDashAccess.Access.ToggleButton
+import typings.activexDashAccess.Access.WebBrowserControl
+import typings.activexDashAccess.Access._CheckBoxInOption
+import typings.activexDashAccess.Access._ChildLabel
+import typings.activexDashAccess.Access._ControlInReportEvents
+import typings.activexDashAccess.Access._CustomControlInReport
+import typings.activexDashAccess.Access._OptionButtonInOption
+import typings.activexDashAccess.Access._PageHdrFtrInReport
+import typings.activexDashAccess.Access._SectionInReport
+import typings.activexDashAccess.Access._ToggleButtonInOption
 import typings.activexDashAccess.activexDashAccessStrings.Activate
 import typings.activexDashAccess.activexDashAccessStrings.AfterDelConfirm
 import typings.activexDashAccess.activexDashAccessStrings.AfterFinalRender
@@ -1095,44 +1095,28 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ OptionGroup, /* parameter */ Anon_Button, Unit]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashAccess.AccessNs.Page,
+    obj: typings.activexDashAccess.Access.Page,
     event: DblClick,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[
-      /* this */ typings.activexDashAccess.AccessNs.Page, 
-      /* parameter */ Anon_Cancel, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.Access.Page, /* parameter */ Anon_Cancel, Unit]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashAccess.AccessNs.Page,
+    obj: typings.activexDashAccess.Access.Page,
     event: MouseDown,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ typings.activexDashAccess.AccessNs.Page, 
-      /* parameter */ Anon_Button, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.Access.Page, /* parameter */ Anon_Button, Unit]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashAccess.AccessNs.Page,
+    obj: typings.activexDashAccess.Access.Page,
     event: MouseMove,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ typings.activexDashAccess.AccessNs.Page, 
-      /* parameter */ Anon_Button, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.Access.Page, /* parameter */ Anon_Button, Unit]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashAccess.AccessNs.Page,
+    obj: typings.activexDashAccess.Access.Page,
     event: MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ typings.activexDashAccess.AccessNs.Page, 
-      /* parameter */ Anon_Button, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.Access.Page, /* parameter */ Anon_Button, Unit]
   ): Unit = js.native
   def on(
     obj: PaletteButton,
@@ -2058,9 +2042,9 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_Click(
-    obj: typings.activexDashAccess.AccessNs.Page,
+    obj: typings.activexDashAccess.Access.Page,
     event: Click,
-    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.AccessNs.Page, /* parameter */ js.Object, Unit]
+    handler: js.ThisFunction1[/* this */ typings.activexDashAccess.Access.Page, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Click(
@@ -2552,14 +2536,14 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("set")
   def set_accName(
-    obj: _CheckBoxInOption | _ChildLabel | _CustomControlInReport | _OptionButtonInOption | _ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexDashAccess.AccessNs.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
+    obj: _CheckBoxInOption | _ChildLabel | _CustomControlInReport | _OptionButtonInOption | _ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexDashAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
     propertyName: accName,
     parameterTypes: js.Array[_],
     newValue: String
   ): Unit = js.native
   @JSName("set")
   def set_accValue(
-    obj: _CheckBoxInOption | _ChildLabel | _CustomControlInReport | _OptionButtonInOption | _ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexDashAccess.AccessNs.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
+    obj: _CheckBoxInOption | _ChildLabel | _CustomControlInReport | _OptionButtonInOption | _ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexDashAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
     propertyName: accValue,
     parameterTypes: js.Array[_],
     newValue: String

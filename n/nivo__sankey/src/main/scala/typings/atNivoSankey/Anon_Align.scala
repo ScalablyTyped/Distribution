@@ -8,6 +8,7 @@ import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
 import typings.atNivoSankey.atNivoSankeyMod.AccessorFunc
 import typings.atNivoSankey.atNivoSankeyMod.LabelFormatter
+import typings.atNivoSankey.atNivoSankeyMod.SankeyLinkDatum
 import typings.atNivoSankey.atNivoSankeyMod.SankeyLinkProps
 import typings.atNivoSankey.atNivoSankeyMod.SankeyMouseHandler
 import typings.atNivoSankey.atNivoSankeyMod.SankeyNodeDatum
@@ -27,6 +28,10 @@ import typings.atNivoSankey.atNivoSankeyStrings.justify
 import typings.atNivoSankey.atNivoSankeyStrings.outside
 import typings.atNivoSankey.atNivoSankeyStrings.start
 import typings.atNivoSankey.atNivoSankeyStrings.vertical
+import typings.react.Element
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +91,7 @@ object Anon_Align {
     linkHoverOpacity: Double,
     linkHoverOthersOpacity: Double,
     linkOpacity: Double,
-    linkTooltip: TooltipRenderer[SankeyLinkProps],
+    linkTooltip: SankeyLinkProps => ReactNode,
     margin: Box,
     nodeBorderColor: InheritedColorProp[SankeyNodeDatum],
     nodeBorderWidth: Double,
@@ -96,13 +101,13 @@ object Anon_Align {
     nodeOpacity: Double,
     nodeSpacing: Double,
     nodeThickness: Double,
-    nodeTooltip: TooltipRenderer[SankeyNodeProps],
-    onClick: SankeyMouseHandler,
+    nodeTooltip: SankeyNodeProps => ReactNode,
+    onClick: (/* data */ SankeyNodeDatum | SankeyLinkDatum, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit,
     sort: auto | input | ascending | descending | SankeySortFunction,
     theme: Theme,
-    tooltipFormat: TooltipFormat
+    tooltipFormat: /* value */ Double => ReactNode
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], enableLabels = enableLabels, enableLinkGradient = enableLinkGradient, isInteractive = isInteractive, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelOrientation = labelOrientation.asInstanceOf[js.Any], labelPadding = labelPadding, labelPosition = labelPosition.asInstanceOf[js.Any], labelTextColor = labelTextColor.asInstanceOf[js.Any], legends = legends, linkBlendMode = linkBlendMode, linkContract = linkContract, linkHoverOpacity = linkHoverOpacity, linkHoverOthersOpacity = linkHoverOthersOpacity, linkOpacity = linkOpacity, linkTooltip = linkTooltip, margin = margin, nodeBorderColor = nodeBorderColor.asInstanceOf[js.Any], nodeBorderWidth = nodeBorderWidth, nodeHoverOpacity = nodeHoverOpacity, nodeHoverOthersOpacity = nodeHoverOthersOpacity, nodeInnerPadding = nodeInnerPadding, nodeOpacity = nodeOpacity, nodeSpacing = nodeSpacing, nodeThickness = nodeThickness, nodeTooltip = nodeTooltip, onClick = onClick, sort = sort.asInstanceOf[js.Any], theme = theme, tooltipFormat = tooltipFormat)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], enableLabels = enableLabels, enableLinkGradient = enableLinkGradient, isInteractive = isInteractive, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelOrientation = labelOrientation.asInstanceOf[js.Any], labelPadding = labelPadding, labelPosition = labelPosition.asInstanceOf[js.Any], labelTextColor = labelTextColor.asInstanceOf[js.Any], legends = legends, linkBlendMode = linkBlendMode, linkContract = linkContract, linkHoverOpacity = linkHoverOpacity, linkHoverOthersOpacity = linkHoverOthersOpacity, linkOpacity = linkOpacity, linkTooltip = js.Any.fromFunction1(linkTooltip), margin = margin, nodeBorderColor = nodeBorderColor.asInstanceOf[js.Any], nodeBorderWidth = nodeBorderWidth, nodeHoverOpacity = nodeHoverOpacity, nodeHoverOthersOpacity = nodeHoverOthersOpacity, nodeInnerPadding = nodeInnerPadding, nodeOpacity = nodeOpacity, nodeSpacing = nodeSpacing, nodeThickness = nodeThickness, nodeTooltip = js.Any.fromFunction1(nodeTooltip), onClick = js.Any.fromFunction2(onClick), sort = sort.asInstanceOf[js.Any], theme = theme, tooltipFormat = js.Any.fromFunction1(tooltipFormat))
   
     __obj.asInstanceOf[Anon_Align]
   }

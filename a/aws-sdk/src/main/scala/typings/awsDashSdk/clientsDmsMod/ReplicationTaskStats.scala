@@ -34,20 +34,20 @@ trait ReplicationTaskStats extends js.Object {
 object ReplicationTaskStats {
   @scala.inline
   def apply(
-    ElapsedTimeMillis: js.UndefOr[Long] = js.undefined,
-    FullLoadProgressPercent: js.UndefOr[Integer] = js.undefined,
-    TablesErrored: js.UndefOr[Integer] = js.undefined,
-    TablesLoaded: js.UndefOr[Integer] = js.undefined,
-    TablesLoading: js.UndefOr[Integer] = js.undefined,
-    TablesQueued: js.UndefOr[Integer] = js.undefined
+    ElapsedTimeMillis: Int | Double = null,
+    FullLoadProgressPercent: Int | Double = null,
+    TablesErrored: Int | Double = null,
+    TablesLoaded: Int | Double = null,
+    TablesLoading: Int | Double = null,
+    TablesQueued: Int | Double = null
   ): ReplicationTaskStats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ElapsedTimeMillis)) __obj.updateDynamic("ElapsedTimeMillis")(ElapsedTimeMillis)
-    if (!js.isUndefined(FullLoadProgressPercent)) __obj.updateDynamic("FullLoadProgressPercent")(FullLoadProgressPercent)
-    if (!js.isUndefined(TablesErrored)) __obj.updateDynamic("TablesErrored")(TablesErrored)
-    if (!js.isUndefined(TablesLoaded)) __obj.updateDynamic("TablesLoaded")(TablesLoaded)
-    if (!js.isUndefined(TablesLoading)) __obj.updateDynamic("TablesLoading")(TablesLoading)
-    if (!js.isUndefined(TablesQueued)) __obj.updateDynamic("TablesQueued")(TablesQueued)
+    if (ElapsedTimeMillis != null) __obj.updateDynamic("ElapsedTimeMillis")(ElapsedTimeMillis.asInstanceOf[js.Any])
+    if (FullLoadProgressPercent != null) __obj.updateDynamic("FullLoadProgressPercent")(FullLoadProgressPercent.asInstanceOf[js.Any])
+    if (TablesErrored != null) __obj.updateDynamic("TablesErrored")(TablesErrored.asInstanceOf[js.Any])
+    if (TablesLoaded != null) __obj.updateDynamic("TablesLoaded")(TablesLoaded.asInstanceOf[js.Any])
+    if (TablesLoading != null) __obj.updateDynamic("TablesLoading")(TablesLoading.asInstanceOf[js.Any])
+    if (TablesQueued != null) __obj.updateDynamic("TablesQueued")(TablesQueued.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTaskStats]
   }
 }

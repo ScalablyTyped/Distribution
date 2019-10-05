@@ -4,7 +4,7 @@ import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifi
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatStrings.narrow
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatStrings.short
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -51,7 +51,7 @@ object Rule {
     next: String = null,
     pop: Int | Double = null,
     push: String = null,
-    `type`: TypeMapper = null,
+    `type`: /* x */ String => String = null,
     value: /* x */ String => String = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
@@ -61,7 +61,7 @@ object Rule {
     if (next != null) __obj.updateDynamic("next")(next)
     if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
     if (push != null) __obj.updateDynamic("push")(push)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))
     __obj.asInstanceOf[Rule]
   }

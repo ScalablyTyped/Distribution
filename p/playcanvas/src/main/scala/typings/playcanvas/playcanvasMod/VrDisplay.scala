@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "VrDisplay")
 @js.native
 class VrDisplay protected ()
-  extends typings.playcanvas.pcNs.VrDisplay {
-  def this(app: typings.playcanvas.pcNs.Application, display: VRDisplay) = this()
+  extends typings.playcanvas.pc.VrDisplay {
+  def this(app: typings.playcanvas.pc.Application, display: VRDisplay) = this()
 }
 

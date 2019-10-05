@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDistanceMeasurement2DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceMeasurement2D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceMeasurement2DProperties
+import typings.arcgisDashJsDashApi.__esri.DistanceMeasurement2D
+import typings.arcgisDashJsDashApi.__esri.DistanceMeasurement2DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

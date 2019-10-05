@@ -1,7 +1,7 @@
 package typings.hapi.hapiMod
 
 import typings.hapi.Anon_Default
-import typings.hapi.hapiMod.UtilNs.Dictionary
+import typings.hapi.hapiMod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

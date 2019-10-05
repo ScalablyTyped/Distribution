@@ -1,6 +1,6 @@
 package typings.kamailioDashKemi
 
-import typings.kamailioDashKemi.kamailioDashKemiMod.KamailioKemiNs.Flag
+import typings.kamailioDashKemi.kamailioDashKemiMod.KamailioKemi.Flag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

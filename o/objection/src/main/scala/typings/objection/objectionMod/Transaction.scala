@@ -1,5 +1,6 @@
 package typings.objection.objectionMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.knex.knexMod.Knex
 import typings.std.Error
 import scala.scalajs.js
@@ -78,4 +79,9 @@ trait transaction[T] extends js.Object {
   def start(knexOrModel: Knex[_, js.Array[_]]): js.Promise[Transaction] = js.native
   def start(knexOrModel: ModelClass[_]): js.Promise[Transaction] = js.native
 }
+
+@JSImport("objection", "transaction")
+@js.native
+object transaction
+  extends TopLevel[transaction[js.Any]]
 

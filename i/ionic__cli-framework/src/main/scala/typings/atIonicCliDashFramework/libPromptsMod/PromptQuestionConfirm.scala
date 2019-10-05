@@ -23,8 +23,8 @@ object PromptQuestionConfirm {
   def apply(
     message: String,
     `type`: PromptTypeConfirm,
-    default: js.UndefOr[PromptValueConfirm] = js.undefined,
-    fallback: js.UndefOr[PromptValueConfirm] = js.undefined,
+    default: js.UndefOr[Boolean] = js.undefined,
+    fallback: js.UndefOr[Boolean] = js.undefined,
     filter: /* input */ js.Any => _ = null,
     name: KeyUnion[Answers] = null,
     prefix: String = null,

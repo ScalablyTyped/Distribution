@@ -1,8 +1,9 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.webix.webixMod.uiNs.baseview
+import typings.webix.webixMod.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,4 +24,8 @@ trait TooltipControl extends js.Object {
   def removeTooltip(target: String): Unit = js.native
   def removeTooltip(target: HTMLElement): Unit = js.native
 }
+
+@JSImport("webix", "TooltipControl")
+@js.native
+object TooltipControl extends TopLevel[TooltipControl]
 

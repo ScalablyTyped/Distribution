@@ -71,7 +71,7 @@ object FpgaImage {
   @scala.inline
   def apply(
     CreateTime: DateTime = null,
-    DataRetentionSupport: js.UndefOr[Boolean] = js.undefined,
+    DataRetentionSupport: js.UndefOr[scala.Boolean] = js.undefined,
     Description: String = null,
     FpgaImageGlobalId: String = null,
     FpgaImageId: String = null,
@@ -80,7 +80,7 @@ object FpgaImage {
     OwnerId: String = null,
     PciId: PciId = null,
     ProductCodes: ProductCodeList = null,
-    Public: js.UndefOr[Boolean] = js.undefined,
+    Public: js.UndefOr[scala.Boolean] = js.undefined,
     ShellVersion: String = null,
     State: FpgaImageState = null,
     Tags: TagList = null,

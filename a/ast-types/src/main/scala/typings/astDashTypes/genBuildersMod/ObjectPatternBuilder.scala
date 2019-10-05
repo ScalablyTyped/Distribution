@@ -7,7 +7,7 @@ import typings.astDashTypes.genKindsMod.PropertyPatternKind
 import typings.astDashTypes.genKindsMod.RestPropertyKind
 import typings.astDashTypes.genKindsMod.SpreadPropertyKind
 import typings.astDashTypes.genKindsMod.SpreadPropertyPatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ObjectPattern
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ObjectPattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

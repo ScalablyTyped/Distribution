@@ -1,7 +1,9 @@
 package typings.themeDashUi.themeDashUiMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,9 @@ class ColorMode protected ()
   def this(props: js.Object) = this()
   def this(props: js.Object, context: js.Any) = this()
 }
+
+@JSImport("theme-ui", "ColorMode")
+@js.native
+object ColorMode
+  extends TopLevel[ComponentType[js.Object]]
 

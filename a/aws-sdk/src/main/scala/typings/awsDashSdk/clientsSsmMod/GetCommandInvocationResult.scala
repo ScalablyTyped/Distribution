@@ -88,7 +88,7 @@ object GetCommandInvocationResult {
     ExecutionStartDateTime: StringDateTime = null,
     InstanceId: InstanceId = null,
     PluginName: CommandPluginName = null,
-    ResponseCode: js.UndefOr[ResponseCode] = js.undefined,
+    ResponseCode: Int | Double = null,
     StandardErrorContent: StandardErrorContent = null,
     StandardErrorUrl: Url = null,
     StandardOutputContent: StandardOutputContent = null,
@@ -107,7 +107,7 @@ object GetCommandInvocationResult {
     if (ExecutionStartDateTime != null) __obj.updateDynamic("ExecutionStartDateTime")(ExecutionStartDateTime)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
     if (PluginName != null) __obj.updateDynamic("PluginName")(PluginName)
-    if (!js.isUndefined(ResponseCode)) __obj.updateDynamic("ResponseCode")(ResponseCode)
+    if (ResponseCode != null) __obj.updateDynamic("ResponseCode")(ResponseCode.asInstanceOf[js.Any])
     if (StandardErrorContent != null) __obj.updateDynamic("StandardErrorContent")(StandardErrorContent)
     if (StandardErrorUrl != null) __obj.updateDynamic("StandardErrorUrl")(StandardErrorUrl)
     if (StandardOutputContent != null) __obj.updateDynamic("StandardOutputContent")(StandardOutputContent)

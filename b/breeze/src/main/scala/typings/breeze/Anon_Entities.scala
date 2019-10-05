@@ -1,8 +1,8 @@
 package typings.breeze
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.breeze.breezeNs.Entity
-import typings.breeze.breezeNs.EntityKey
+import typings.breeze.breeze.Entity
+import typings.breeze.breeze.EntityKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

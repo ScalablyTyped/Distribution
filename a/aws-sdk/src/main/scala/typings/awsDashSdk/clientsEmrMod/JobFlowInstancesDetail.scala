@@ -69,12 +69,12 @@ object JobFlowInstancesDetail {
     Ec2SubnetId: XmlStringMaxLen256 = null,
     HadoopVersion: XmlStringMaxLen256 = null,
     InstanceGroups: InstanceGroupDetailList = null,
-    KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined,
+    KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined,
     MasterInstanceId: XmlString = null,
     MasterPublicDnsName: XmlString = null,
-    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
+    NormalizedInstanceHours: Int | Double = null,
     Placement: PlacementType = null,
-    TerminationProtected: js.UndefOr[Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
   ): JobFlowInstancesDetail = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount, MasterInstanceType = MasterInstanceType, SlaveInstanceType = SlaveInstanceType)
     if (Ec2KeyName != null) __obj.updateDynamic("Ec2KeyName")(Ec2KeyName)
@@ -84,7 +84,7 @@ object JobFlowInstancesDetail {
     if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps)
     if (MasterInstanceId != null) __obj.updateDynamic("MasterInstanceId")(MasterInstanceId)
     if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName)
-    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours)
+    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
     if (Placement != null) __obj.updateDynamic("Placement")(Placement)
     if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected)
     __obj.asInstanceOf[JobFlowInstancesDetail]

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTaskMod
 
-import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskLoggingInfo
-import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTarget
-import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTaskInvocationParameters
-import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTaskTaskParameter
+import typings.atPulumiAws.typesInputMod.ssm.MaintenanceWindowTaskLoggingInfo
+import typings.atPulumiAws.typesInputMod.ssm.MaintenanceWindowTaskTarget
+import typings.atPulumiAws.typesInputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters
+import typings.atPulumiAws.typesInputMod.ssm.MaintenanceWindowTaskTaskParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

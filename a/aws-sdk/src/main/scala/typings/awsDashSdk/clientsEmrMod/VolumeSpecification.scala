@@ -21,9 +21,9 @@ trait VolumeSpecification extends js.Object {
 
 object VolumeSpecification {
   @scala.inline
-  def apply(SizeInGB: Integer, VolumeType: String, Iops: js.UndefOr[Integer] = js.undefined): VolumeSpecification = {
+  def apply(SizeInGB: Integer, VolumeType: String, Iops: Int | Double = null): VolumeSpecification = {
     val __obj = js.Dynamic.literal(SizeInGB = SizeInGB, VolumeType = VolumeType)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeSpecification]
   }
 }

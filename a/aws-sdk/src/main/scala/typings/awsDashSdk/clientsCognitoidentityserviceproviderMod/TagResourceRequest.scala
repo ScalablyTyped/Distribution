@@ -12,14 +12,14 @@ trait TagResourceRequest extends js.Object {
   /**
     * The tags to assign to the user pool.
     */
-  var Tags: js.UndefOr[UserPoolTagsType] = js.undefined
+  var Tags: UserPoolTagsType
 }
 
 object TagResourceRequest {
   @scala.inline
-  def apply(ResourceArn: ArnType, Tags: UserPoolTagsType = null): TagResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+  def apply(ResourceArn: ArnType, Tags: UserPoolTagsType): TagResourceRequest = {
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn, Tags = Tags)
+  
     __obj.asInstanceOf[TagResourceRequest]
   }
 }

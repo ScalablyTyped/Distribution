@@ -1,6 +1,6 @@
 package typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod
 
-import typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod.StreamChannelsNs.StreamChannelsOptions
+import typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod.StreamChannels.StreamChannelsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

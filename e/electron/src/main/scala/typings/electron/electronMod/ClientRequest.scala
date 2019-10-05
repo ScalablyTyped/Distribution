@@ -8,6 +8,7 @@ import typings.electron.electronStrings.path
 import typings.electron.electronStrings.port
 import typings.electron.electronStrings.protocol
 import typings.electron.electronStrings.redirect
+import typings.electron.electronStrings.session
 import typings.electron.electronStrings.url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "ClientRequest")
 @js.native
 class ClientRequest protected ()
-  extends typings.electron.ElectronNs.ClientRequest {
-  def this(options: method | url | typings.electron.electronStrings.session | partition | protocol | host | hostname | port | path | redirect) = this()
+  extends typings.electron.Electron.ClientRequest {
+  def this(options: method | url | session | partition | protocol | host | hostname | port | path | redirect) = this()
 }
 

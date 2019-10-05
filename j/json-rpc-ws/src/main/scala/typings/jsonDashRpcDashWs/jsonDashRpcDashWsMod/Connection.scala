@@ -1,6 +1,7 @@
 package typings.jsonDashRpcDashWs.jsonDashRpcDashWsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ws.wsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait Connection extends js.Object {
   var id: String = js.native
   var parent: Base[_] = js.native
   var responseHandlers: StringDictionary[ReplyCallback[_]] = js.native
-  var socket: typings.ws.wsMod.^ = js.native
+  var socket: ^ = js.native
   def close(): Unit = js.native
   def close(error: js.Any): Unit = js.native
   def hangup(): Unit = js.native

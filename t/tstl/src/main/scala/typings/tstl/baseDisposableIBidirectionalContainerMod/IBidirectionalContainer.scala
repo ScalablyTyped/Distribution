@@ -1,7 +1,7 @@
 package typings.tstl.baseDisposableIBidirectionalContainerMod
 
 import typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer
-import typings.tstl.functionalIPointerMod.IPointerNs.ValueType
+import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIReverseIteratorMod.IReversableIterator
 import typings.tstl.iteratorIReverseIteratorMod.IReverseIterator
 import scala.scalajs.js

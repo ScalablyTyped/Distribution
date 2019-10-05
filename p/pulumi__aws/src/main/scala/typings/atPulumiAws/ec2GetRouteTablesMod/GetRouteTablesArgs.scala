@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetRouteTablesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetRouteTablesFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetRouteTablesFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

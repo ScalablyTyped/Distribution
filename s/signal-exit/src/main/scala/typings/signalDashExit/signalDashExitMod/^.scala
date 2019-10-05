@@ -12,8 +12,5 @@ object ^ extends js.Object {
     callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit],
     options: Options
   ): js.Function0[Unit] = js.native
-  def load(): Unit = js.native
-  def signals(): js.Array[Signal] = js.native
-  def unload(): Unit = js.native
 }
 

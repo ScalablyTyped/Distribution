@@ -1,7 +1,7 @@
 package typings.bootpag
 
-import typings.bootpag.JqueryBootpagNs.Options
-import typings.bootpag.JqueryBootpagNs.PageEventHandler
+import typings.bootpag.JqueryBootpag.Options
+import typings.bootpag.JqueryBootpag.PageEventHandler
 import typings.bootpag.bootpagStrings.page
 import scala.scalajs.js
 import scala.scalajs.js.`|`

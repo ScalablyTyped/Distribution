@@ -21,7 +21,7 @@ trait ReplaceRouteTableAssociationRequest extends js.Object {
 
 object ReplaceRouteTableAssociationRequest {
   @scala.inline
-  def apply(AssociationId: String, RouteTableId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ReplaceRouteTableAssociationRequest = {
+  def apply(AssociationId: String, RouteTableId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ReplaceRouteTableAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId, RouteTableId = RouteTableId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ReplaceRouteTableAssociationRequest]

@@ -1,7 +1,7 @@
 package typings.facebookDashJsDashSdk
 
-import typings.facebookDashJsDashSdk.facebookNs.FacebookEventType
-import typings.facebookDashJsDashSdk.facebookNs.LoginStatus
+import typings.facebookDashJsDashSdk.facebook.FacebookEventType
+import typings.facebookDashJsDashSdk.facebook.LoginStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

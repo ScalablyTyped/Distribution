@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var DateRangePicker: Instantiable0[
-    typings.reactDashBootstrapDashDaterangepicker.ReactBootstrapDaterangepickerNs.DateRangePicker
+    typings.reactDashBootstrapDashDaterangepicker.ReactBootstrapDaterangepicker.DateRangePicker
   ] = js.native
 }
 

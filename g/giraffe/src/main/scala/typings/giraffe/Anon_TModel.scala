@@ -1,7 +1,7 @@
 package typings.giraffe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.giraffe.GiraffeNs.Model
+import typings.giraffe.Giraffe.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

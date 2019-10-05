@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojdataproviderMod
 
-import typings.atOracleOraclejet.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
+import typings.atOracleOraclejet.ojdataproviderMod.CompoundFilterOperator.CompoundOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +10,14 @@ trait CompoundFilterOperator[D] extends js.Object {
   var op: CompoundOperator
 }
 
-object CompoundFilterOperator {
-  @scala.inline
-  def apply[D](criteria: js.Array[FilterOperator[D]], op: CompoundOperator): CompoundFilterOperator[D] = {
-    val __obj = js.Dynamic.literal(criteria = criteria, op = op)
+@JSImport("@oracle/oraclejet/ojdataprovider", "CompoundFilterOperator")
+@js.native
+object CompoundFilterOperator extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARand
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARor
+  */
+  trait CompoundOperator extends js.Object
   
-    __obj.asInstanceOf[CompoundFilterOperator[D]]
-  }
 }
 

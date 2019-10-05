@@ -1,7 +1,7 @@
 package typings.eyes.eyesMod
 
 import typings.eyes.Anon_All
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.atPulumiAws
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsDashSdk.awsDashSdkMod.S3Ns.ManagedUpload
-import typings.awsDashSdk.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions
+import typings.awsDashSdk.awsDashSdkMod.S3.ManagedUpload
+import typings.awsDashSdk.libS3ManagedUnderscoreUploadMod.ManagedUpload.ManagedUploadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.jqueryDashKnob
 
-import typings.jqueryDashKnob.JQueryKnobNs.JQueryKnobOptions
+import typings.jqueryDashKnob.JQueryKnob.JQueryKnobOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

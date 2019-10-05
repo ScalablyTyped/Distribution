@@ -14,6 +14,7 @@ import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
 import typings.reactDashNative.reactDashNativeMod.TargetedEvent
 import typings.reactDashNative.reactDashNativeMod.TextStyle
+import typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackPropsIOS
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNative.reactDashNativeStrings.`no-hide-descendants`
 import typings.reactDashNative.reactDashNativeStrings.assertive
@@ -37,7 +38,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined background, useForeground- typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined activeOpacity, onHideUnderlay, onShowUnderlay, underlayColor */ trait IconButtonProps extends IconProps {
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsAndroid because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityProps because Already inherited
+- typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined delayLongPress, delayPressIn, delayPressOut, disabled, hitSlop, onBlur, onFocus, onPressIn, onPressOut, pressRetentionOffset
+- typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined background, useForeground
+- typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined activeOpacity, onHideUnderlay, onShowUnderlay, underlayColor */ trait IconButtonProps
+  extends IconProps
+     with TouchableWithoutFeedbackPropsIOS {
   /**
     * Determines what the opacity of the wrapped view should be when touch is active.
     */
@@ -71,6 +79,30 @@ import scala.scalajs.js.annotation._
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
+    * Delay in ms, from onPressIn, before onLongPress is called.
+    */
+  var delayLongPress: js.UndefOr[Double] = js.undefined
+  /**
+    * Delay in ms, from the start of the touch, before onPressIn is called.
+    */
+  var delayPressIn: js.UndefOr[Double] = js.undefined
+  /**
+    * Delay in ms, from the release of the touch, before onPressOut is called.
+    */
+  var delayPressOut: js.UndefOr[Double] = js.undefined
+  /**
+    * If true, disable all interactions for this component.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This defines how far your touch can start away from the button.
+    * This is added to pressRetentionOffset when moving off of the button.
+    * NOTE The touch area never extends past the parent view bounds and
+    * the Z-index of sibling views always takes precedence if a touch hits
+    * two overlapping views.
+    */
+  var hitSlop: js.UndefOr[Insets] = js.undefined
+  /**
     * Styles applied to the icon only
     * Good for setting margins or a different color.
     *
@@ -78,14 +110,37 @@ import scala.scalajs.js.annotation._
     */
   var iconStyle: js.UndefOr[TextStyle] = js.undefined
   /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
+    * Some platforms may not have the concept of blur.
+    */
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "focus" occurs. Some platforms may not have
+    * the concept of focus.
+    */
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+  /**
     *
     * Called immediately after the underlay is hidden
     */
   var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   /**
     * Called immediately after the underlay is shown
     */
   var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * When the scroll view is disabled, this defines how far your
+    * touch may move off of the button, before deactivating the button.
+    * Once deactivated, try moving it back and you'll see that the button
+    * is once again reactivated! Move it back and forth several times
+    * while the scroll view is disabled. Ensure you pass in a constant
+    * to reduce memory allocations.
+    */
+  var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
   /**
     * Style prop inherited from TextProps and TouchableWithoutFeedbackProperties
     * Only exist here so we can have ViewStyle or TextStyle

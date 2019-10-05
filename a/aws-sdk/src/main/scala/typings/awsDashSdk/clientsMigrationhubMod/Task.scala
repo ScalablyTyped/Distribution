@@ -21,13 +21,9 @@ trait Task extends js.Object {
 
 object Task {
   @scala.inline
-  def apply(
-    Status: Status,
-    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
-    StatusDetail: StatusDetail = null
-  ): Task = {
+  def apply(Status: Status, ProgressPercent: Int | Double = null, StatusDetail: StatusDetail = null): Task = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent)
+    if (ProgressPercent != null) __obj.updateDynamic("ProgressPercent")(ProgressPercent.asInstanceOf[js.Any])
     if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail)
     __obj.asInstanceOf[Task]
   }

@@ -62,3 +62,13 @@ object BinaryExpression {
   }
 }
 
+@JSImport("@babel/types", "binaryExpression")
+@js.native
+object binaryExpression extends js.Object {
+  def apply(
+    operator: `+` | `-` | `/` | `%` | typings.atBabelTypes.atBabelTypesStrings.`*` | `**` | `&` | typings.atBabelTypes.atBabelTypesStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`,
+    left: Expression,
+    right: Expression
+  ): BinaryExpression = js.native
+}
+

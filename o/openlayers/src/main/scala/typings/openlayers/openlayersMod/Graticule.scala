@@ -1,7 +1,7 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.geomNs.LineString
-import typings.openlayers.openlayersMod.olxNs.GraticuleOptions
+import typings.openlayers.openlayersMod.geom.LineString
+import typings.openlayers.openlayersMod.olx.GraticuleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.nodemailer.nodemailerMod
 
+import typings.nodemailer.libMailerMod.^
 import typings.nodemailer.nodemailerNumbers.`true`
 import typings.std.Error
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait Transport extends js.Object {
   var close: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var mailer: js.UndefOr[typings.nodemailer.libMailerMod.^] = js.undefined
+  var mailer: js.UndefOr[^] = js.undefined
   var name: String
   var verify: js.UndefOr[
     (js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]) with js.Function0[js.Promise[`true`]]
@@ -27,7 +28,7 @@ object Transport {
     send: (typings.nodemailer.libMailerMailDashMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]) => Unit,
     version: String,
     close: () => Unit = null,
-    mailer: typings.nodemailer.libMailerMod.^ = null,
+    mailer: ^ = null,
     verify: (js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]) with js.Function0[js.Promise[`true`]] = null
   ): Transport = {
     val __obj = js.Dynamic.literal(name = name, send = js.Any.fromFunction2(send), version = version)

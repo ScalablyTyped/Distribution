@@ -28,12 +28,12 @@ object ListActionExecutionsInput {
   def apply(
     pipelineName: PipelineName,
     filter: ActionExecutionFilter = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): ListActionExecutionsInput = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListActionExecutionsInput]
   }

@@ -17,13 +17,10 @@ trait H264QvbrSettings extends js.Object {
 
 object H264QvbrSettings {
   @scala.inline
-  def apply(
-    MaxAverageBitrate: js.UndefOr[__integerMin1000Max1152000000] = js.undefined,
-    QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined
-  ): H264QvbrSettings = {
+  def apply(MaxAverageBitrate: Int | Double = null, QvbrQualityLevel: Int | Double = null): H264QvbrSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxAverageBitrate)) __obj.updateDynamic("MaxAverageBitrate")(MaxAverageBitrate)
-    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel)
+    if (MaxAverageBitrate != null) __obj.updateDynamic("MaxAverageBitrate")(MaxAverageBitrate.asInstanceOf[js.Any])
+    if (QvbrQualityLevel != null) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[H264QvbrSettings]
   }
 }

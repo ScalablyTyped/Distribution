@@ -1,6 +1,6 @@
 package typings.node
 
-import typings.node.NodeJSNs.CallSite
+import typings.node.NodeJS.CallSite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

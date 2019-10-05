@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,11 +120,11 @@ object IgGridResponsive {
     inherit: js.UndefOr[Boolean] = js.undefined,
     propertiesColumnWidth: String | Double = null,
     reactOnContainerWidthChanges: js.UndefOr[Boolean] = js.undefined,
-    responsiveColumnHidden: ResponsiveColumnHiddenEvent = null,
-    responsiveColumnHiding: ResponsiveColumnHidingEvent = null,
-    responsiveColumnShowing: ResponsiveColumnShowingEvent = null,
-    responsiveColumnShown: ResponsiveColumnShownEvent = null,
-    responsiveModeChanged: ResponsiveModeChangedEvent = null,
+    responsiveColumnHidden: (/* event */ Event, /* ui */ ResponsiveColumnHiddenEventUIParam) => Unit = null,
+    responsiveColumnHiding: (/* event */ Event, /* ui */ ResponsiveColumnHidingEventUIParam) => Unit = null,
+    responsiveColumnShowing: (/* event */ Event, /* ui */ ResponsiveColumnShowingEventUIParam) => Unit = null,
+    responsiveColumnShown: (/* event */ Event, /* ui */ ResponsiveColumnShownEventUIParam) => Unit = null,
+    responsiveModeChanged: (/* event */ Event, /* ui */ ResponsiveModeChangedEventUIParam) => Unit = null,
     responsiveModes: js.Any = null,
     responsiveSensitivity: Int | Double = null,
     singleColumnTemplate: js.Any = null,
@@ -139,11 +140,11 @@ object IgGridResponsive {
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (propertiesColumnWidth != null) __obj.updateDynamic("propertiesColumnWidth")(propertiesColumnWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(reactOnContainerWidthChanges)) __obj.updateDynamic("reactOnContainerWidthChanges")(reactOnContainerWidthChanges)
-    if (responsiveColumnHidden != null) __obj.updateDynamic("responsiveColumnHidden")(responsiveColumnHidden)
-    if (responsiveColumnHiding != null) __obj.updateDynamic("responsiveColumnHiding")(responsiveColumnHiding)
-    if (responsiveColumnShowing != null) __obj.updateDynamic("responsiveColumnShowing")(responsiveColumnShowing)
-    if (responsiveColumnShown != null) __obj.updateDynamic("responsiveColumnShown")(responsiveColumnShown)
-    if (responsiveModeChanged != null) __obj.updateDynamic("responsiveModeChanged")(responsiveModeChanged)
+    if (responsiveColumnHidden != null) __obj.updateDynamic("responsiveColumnHidden")(js.Any.fromFunction2(responsiveColumnHidden))
+    if (responsiveColumnHiding != null) __obj.updateDynamic("responsiveColumnHiding")(js.Any.fromFunction2(responsiveColumnHiding))
+    if (responsiveColumnShowing != null) __obj.updateDynamic("responsiveColumnShowing")(js.Any.fromFunction2(responsiveColumnShowing))
+    if (responsiveColumnShown != null) __obj.updateDynamic("responsiveColumnShown")(js.Any.fromFunction2(responsiveColumnShown))
+    if (responsiveModeChanged != null) __obj.updateDynamic("responsiveModeChanged")(js.Any.fromFunction2(responsiveModeChanged))
     if (responsiveModes != null) __obj.updateDynamic("responsiveModes")(responsiveModes)
     if (responsiveSensitivity != null) __obj.updateDynamic("responsiveSensitivity")(responsiveSensitivity.asInstanceOf[js.Any])
     if (singleColumnTemplate != null) __obj.updateDynamic("singleColumnTemplate")(singleColumnTemplate)

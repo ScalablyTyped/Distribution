@@ -29,7 +29,7 @@ object UpdateTableRequest {
     DatabaseName: NameString,
     TableInput: TableInput,
     CatalogId: CatalogIdString = null,
-    SkipArchive: js.UndefOr[BooleanNullable] = js.undefined
+    SkipArchive: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName, TableInput = TableInput)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)

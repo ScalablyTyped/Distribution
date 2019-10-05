@@ -1,7 +1,7 @@
 package typings.atPulumiAws.dynamodbGetTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.dynamodbNs.GetTableServerSideEncryption
+import typings.atPulumiAws.typesInputMod.dynamodb.GetTableServerSideEncryption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

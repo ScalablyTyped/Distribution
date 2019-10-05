@@ -21,14 +21,10 @@ trait LambdaFunctionScheduledEventDetails extends js.Object {
 
 object LambdaFunctionScheduledEventDetails {
   @scala.inline
-  def apply(
-    resource: Arn,
-    input: SensitiveData = null,
-    timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
-  ): LambdaFunctionScheduledEventDetails = {
+  def apply(resource: Arn, input: SensitiveData = null, timeoutInSeconds: Int | Double = null): LambdaFunctionScheduledEventDetails = {
     val __obj = js.Dynamic.literal(resource = resource)
     if (input != null) __obj.updateDynamic("input")(input)
-    if (!js.isUndefined(timeoutInSeconds)) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds)
+    if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionScheduledEventDetails]
   }
 }

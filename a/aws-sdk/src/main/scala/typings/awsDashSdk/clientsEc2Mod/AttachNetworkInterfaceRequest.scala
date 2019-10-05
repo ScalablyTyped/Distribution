@@ -29,7 +29,7 @@ object AttachNetworkInterfaceRequest {
     DeviceIndex: Integer,
     InstanceId: String,
     NetworkInterfaceId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): AttachNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(DeviceIndex = DeviceIndex, InstanceId = InstanceId, NetworkInterfaceId = NetworkInterfaceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

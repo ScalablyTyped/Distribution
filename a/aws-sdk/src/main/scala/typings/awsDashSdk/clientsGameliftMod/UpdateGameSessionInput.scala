@@ -31,13 +31,13 @@ object UpdateGameSessionInput {
   @scala.inline
   def apply(
     GameSessionId: ArnStringModel,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    MaximumPlayerSessionCount: Int | scala.Double = null,
     Name: NonZeroAndMaxString = null,
     PlayerSessionCreationPolicy: PlayerSessionCreationPolicy = null,
     ProtectionPolicy: ProtectionPolicy = null
   ): UpdateGameSessionInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId)
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount)
+    if (MaximumPlayerSessionCount != null) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (PlayerSessionCreationPolicy != null) __obj.updateDynamic("PlayerSessionCreationPolicy")(PlayerSessionCreationPolicy.asInstanceOf[js.Any])
     if (ProtectionPolicy != null) __obj.updateDynamic("ProtectionPolicy")(ProtectionPolicy.asInstanceOf[js.Any])

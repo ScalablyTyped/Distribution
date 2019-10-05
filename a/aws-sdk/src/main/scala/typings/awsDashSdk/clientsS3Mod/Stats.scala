@@ -22,14 +22,14 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(
-    BytesProcessed: js.UndefOr[BytesProcessed] = js.undefined,
-    BytesReturned: js.UndefOr[BytesReturned] = js.undefined,
-    BytesScanned: js.UndefOr[BytesScanned] = js.undefined
+    BytesProcessed: Int | Double = null,
+    BytesReturned: Int | Double = null,
+    BytesScanned: Int | Double = null
   ): Stats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesProcessed)) __obj.updateDynamic("BytesProcessed")(BytesProcessed)
-    if (!js.isUndefined(BytesReturned)) __obj.updateDynamic("BytesReturned")(BytesReturned)
-    if (!js.isUndefined(BytesScanned)) __obj.updateDynamic("BytesScanned")(BytesScanned)
+    if (BytesProcessed != null) __obj.updateDynamic("BytesProcessed")(BytesProcessed.asInstanceOf[js.Any])
+    if (BytesReturned != null) __obj.updateDynamic("BytesReturned")(BytesReturned.asInstanceOf[js.Any])
+    if (BytesScanned != null) __obj.updateDynamic("BytesScanned")(BytesScanned.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
 }

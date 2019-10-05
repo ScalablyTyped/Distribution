@@ -1,6 +1,6 @@
 package typings.pinoDashMultiDashStream
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.pinoDashMultiDashStream.pinoDashMultiDashStreamMod.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`

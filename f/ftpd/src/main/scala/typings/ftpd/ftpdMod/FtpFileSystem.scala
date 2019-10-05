@@ -7,7 +7,7 @@ import typings.ftpd.Anon_EncodingFlagMode
 import typings.ftpd.Anon_EncodingFlagModeString
 import typings.ftpd.Anon_Flag
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.Stats
 import typings.node.fsMod.WriteStream

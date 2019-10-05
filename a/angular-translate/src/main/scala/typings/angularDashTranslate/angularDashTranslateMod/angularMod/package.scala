@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object angularMod {
   import typings.angularDashTranslate.Fn_ForceLanguage
-  import typings.angularDashTranslate.angularDashTranslateStrings.translate
 
-  type IFilterService = js.Function1[translate, Fn_ForceLanguage]
+  type IFilterService = js.Function1[
+    typings.angularDashTranslate.angularDashTranslateStrings.translate, 
+    Fn_ForceLanguage
+  ]
 }

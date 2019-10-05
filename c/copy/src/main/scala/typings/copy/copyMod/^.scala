@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("copy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(patterns: String | File | (js.Array[File | String]), dir: String, callback: Callback): Unit = js.native
+  def apply(patterns: String, dir: String, callback: Callback): Unit = js.native
   /**
     * Copy a filepath, vinyl file, array of files, or glob of files to the
     * given destination `directory`, with `options` and callback function that
@@ -25,47 +25,10 @@ object ^ extends js.Object {
     * @param `options` or callback function
     * @param `cb` Callback function if no options are specified
     */
-  def apply(
-    patterns: String | File | (js.Array[File | String]),
-    dir: String,
-    options: Options,
-    callback: Callback
-  ): Unit = js.native
-  def each(files: js.Array[File | String], dir: String, cb: Callback): Unit = js.native
-  /**
-    * Copy an array of files to the given destination `directory`, with
-    * `options` and callback function that exposes `err` and the array of
-    * vinyl files that are created by the copy operation.
-    *
-    * ```js
-    * copy.each(['foo.txt', 'bar.txt', 'baz.txt'], 'dist', function(err, files) {
-    *   // exposes the vinyl `files` created when the files are copied
-    * });
-    * ```
-    * @param `files` Filepaths or vinyl files.
-    * @param `dir` Destination directory
-    * @param `options` or callback function
-    * @param `cb` Callback function if no options are specified
-    */
-  def each(files: js.Array[File | String], dir: String, options: Options, cb: Callback): Unit = js.native
-  def one(pattern: String, dir: String, cb: Callback): Unit = js.native
-  /**
-    * Copy a single `file` to the given `dest` directory, using
-    * the specified options and callback function.
-    *
-    * ```js
-    * copy.one('foo.txt', 'dist', function(err, file) {
-    *   if (err) throw err;
-    *   // exposes the vinyl `file` that is created when the file is copied
-    * });
-    * ```
-    * @param `file` Filepath or vinyl file
-    * @param `dir` Destination directory
-    * @param `options` or callback function
-    * @param `cb` Callback function if no options are specified
-    */
-  def one(pattern: String, dir: String, options: Options, cb: Callback): Unit = js.native
-  def one(pattern: File, dir: String, cb: Callback): Unit = js.native
-  def one(pattern: File, dir: String, options: Options, cb: Callback): Unit = js.native
+  def apply(patterns: String, dir: String, options: Options, callback: Callback): Unit = js.native
+  def apply(patterns: js.Array[File | String], dir: String, callback: Callback): Unit = js.native
+  def apply(patterns: js.Array[File | String], dir: String, options: Options, callback: Callback): Unit = js.native
+  def apply(patterns: File, dir: String, callback: Callback): Unit = js.native
+  def apply(patterns: File, dir: String, options: Options, callback: Callback): Unit = js.native
 }
 

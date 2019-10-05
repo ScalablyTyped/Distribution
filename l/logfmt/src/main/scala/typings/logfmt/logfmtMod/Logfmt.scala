@@ -3,7 +3,7 @@ package typings.logfmt.logfmtMod
 import typings.logfmt.Anon_ContentType
 import typings.logfmt.Anon_Delimiter
 import typings.logfmt.Anon_End
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

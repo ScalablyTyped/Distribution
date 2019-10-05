@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
-import typings.typescriptDashServices.TypeScriptNs.ITypeSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ITypeSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TypeAnnotationSyntax")
 @js.native
 class TypeAnnotationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TypeAnnotationSyntax {
+  extends typings.typescriptDashServices.TypeScript.TypeAnnotationSyntax {
   def this(colonToken: ISyntaxToken, `type`: ITypeSyntax, parsedInStrictMode: Boolean) = this()
 }
 
@@ -17,6 +17,6 @@ class TypeAnnotationSyntax protected ()
 @JSImport("typescript-services", "TypeAnnotationSyntax")
 @js.native
 object TypeAnnotationSyntax extends js.Object {
-  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScriptNs.TypeAnnotationSyntax = js.native
+  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScript.TypeAnnotationSyntax = js.native
 }
 

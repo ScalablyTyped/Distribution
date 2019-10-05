@@ -1,7 +1,7 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.EncryptionAlgorithms
-import typings.jsrsasign.jsrsasignNs.PrivateKeyOutputFormatType
+import typings.jsrsasign.jsrsasign.EncryptionAlgorithms
+import typings.jsrsasign.jsrsasign.PrivateKeyOutputFormatType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

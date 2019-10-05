@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_Authorization
 import typings.braintreeDashWeb.Anon_Data
 import scala.scalajs.js
@@ -88,4 +89,8 @@ trait Client extends js.Object {
     */
   def request(options: Anon_Data, callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "client")
+@js.native
+object client extends TopLevel[Client]
 

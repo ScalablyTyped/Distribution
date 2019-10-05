@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(config: Config): Proxy = js.native
-  def apply(contextOrUri: String | js.Array[String] | Filter): Proxy = js.native
-  def apply(contextOrUri: String | js.Array[String] | Filter, config: Config): Proxy = js.native
+  def apply(contextOrUri: String): Proxy = js.native
+  def apply(contextOrUri: String, config: Config): Proxy = js.native
+  def apply(contextOrUri: js.Array[String]): Proxy = js.native
+  def apply(contextOrUri: js.Array[String], config: Config): Proxy = js.native
+  def apply(contextOrUri: Filter): Proxy = js.native
+  def apply(contextOrUri: Filter, config: Config): Proxy = js.native
 }
 

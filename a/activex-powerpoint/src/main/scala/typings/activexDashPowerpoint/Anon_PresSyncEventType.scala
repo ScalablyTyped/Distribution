@@ -1,7 +1,7 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashOffice.OfficeNs.MsoSyncEventType
-import typings.activexDashPowerpoint.PowerPointNs.Presentation
+import typings.activexDashOffice.Office.MsoSyncEventType
+import typings.activexDashPowerpoint.PowerPoint.Presentation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

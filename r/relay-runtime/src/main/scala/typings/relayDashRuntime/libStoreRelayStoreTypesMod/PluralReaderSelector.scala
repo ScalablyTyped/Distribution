@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluralReaderSelector extends ReaderSelector {
-  var kind: String
-  var selectors: js.Array[SingularReaderSelector]
+  val kind: String
+  val selectors: js.Array[SingularReaderSelector]
 }
 
 object PluralReaderSelector {

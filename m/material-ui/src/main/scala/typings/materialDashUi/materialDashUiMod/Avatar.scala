@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Avatar")
 @js.native
 class Avatar ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Avatar
+  extends typings.materialDashUi.__MaterialUI.Avatar
 

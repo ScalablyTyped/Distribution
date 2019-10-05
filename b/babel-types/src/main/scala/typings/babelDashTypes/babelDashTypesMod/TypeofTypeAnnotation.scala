@@ -34,3 +34,10 @@ object TypeofTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "typeofTypeAnnotation")
+@js.native
+object typeofTypeAnnotation extends js.Object {
+  def apply(): TypeofTypeAnnotation = js.native
+  def apply(argument: FlowTypeAnnotation): TypeofTypeAnnotation = js.native
+}
+

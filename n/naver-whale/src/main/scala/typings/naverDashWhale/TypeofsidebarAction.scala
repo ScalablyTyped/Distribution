@@ -1,14 +1,14 @@
 package typings.naverDashWhale
 
-import typings.naverDashWhale.whaleNs.sidebarActionNs.BadgeBackgroundColorDetails
-import typings.naverDashWhale.whaleNs.sidebarActionNs.BrowserClickedEvent
-import typings.naverDashWhale.whaleNs.sidebarActionNs.ColorArray
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarBadgeDetail
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarDockDetail
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarIconDetail
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarPageDetail
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarShowDetail
-import typings.naverDashWhale.whaleNs.sidebarActionNs.SidebarTitleDetail
+import typings.naverDashWhale.whale.sidebarAction.BadgeBackgroundColorDetails
+import typings.naverDashWhale.whale.sidebarAction.BrowserClickedEvent
+import typings.naverDashWhale.whale.sidebarAction.ColorArray
+import typings.naverDashWhale.whale.sidebarAction.SidebarBadgeDetail
+import typings.naverDashWhale.whale.sidebarAction.SidebarDockDetail
+import typings.naverDashWhale.whale.sidebarAction.SidebarIconDetail
+import typings.naverDashWhale.whale.sidebarAction.SidebarPageDetail
+import typings.naverDashWhale.whale.sidebarAction.SidebarShowDetail
+import typings.naverDashWhale.whale.sidebarAction.SidebarTitleDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

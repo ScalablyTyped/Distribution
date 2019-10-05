@@ -1,6 +1,6 @@
 package typings.breeze.breezeMod
 
-import typings.breeze.breezeNs.QueryOptionsConfiguration
+import typings.breeze.breeze.QueryOptionsConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "QueryOptions")
 @js.native
 class QueryOptions ()
-  extends typings.breeze.breezeNs.QueryOptions {
+  extends typings.breeze.breeze.QueryOptions {
   def this(config: QueryOptionsConfiguration) = this()
 }
 
@@ -16,6 +16,6 @@ class QueryOptions ()
 @JSImport("breeze", "QueryOptions")
 @js.native
 object QueryOptions extends js.Object {
-  var defaultInstance: typings.breeze.breezeNs.QueryOptions = js.native
+  var defaultInstance: typings.breeze.breeze.QueryOptions = js.native
 }
 

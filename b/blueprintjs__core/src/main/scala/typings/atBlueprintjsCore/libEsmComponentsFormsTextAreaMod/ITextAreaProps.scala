@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsTextAreaMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.react.reactMod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
@@ -38,7 +37,6 @@ object ITextAreaProps {
   @scala.inline
   def apply(
     IIntentProps: IIntentProps = null,
-    IProps: IProps = null,
     TextareaHTMLAttributes: TextareaHTMLAttributes[HTMLTextAreaElement] = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     growVertically: js.UndefOr[Boolean] = js.undefined,
@@ -48,7 +46,6 @@ object ITextAreaProps {
   ): ITextAreaProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IIntentProps)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     js.Dynamic.global.Object.assign(__obj, TextareaHTMLAttributes)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(growVertically)) __obj.updateDynamic("growVertically")(growVertically)

@@ -1,7 +1,7 @@
 package typings.atFrctlFractal.atFrctlFractalMod
 
 import typings.atFrctlFractal.Anon_Content
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.EntitySource
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.EntitySource
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

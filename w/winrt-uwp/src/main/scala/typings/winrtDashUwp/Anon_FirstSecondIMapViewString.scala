@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.CollectionsNs.IMapView
+import typings.winrtDashUwp.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

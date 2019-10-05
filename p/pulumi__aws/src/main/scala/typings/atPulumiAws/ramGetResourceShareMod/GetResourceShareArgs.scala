@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ramGetResourceShareMod
 
-import typings.atPulumiAws.typesInputMod.ramNs.GetResourceShareFilter
+import typings.atPulumiAws.typesInputMod.ram.GetResourceShareFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

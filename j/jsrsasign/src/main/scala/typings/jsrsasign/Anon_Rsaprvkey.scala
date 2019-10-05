@@ -1,7 +1,7 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.x509Ns.TBSCertList
-import typings.jsrsasign.jsrsasignNs.RSAKey
+import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.TBSCertList
+import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

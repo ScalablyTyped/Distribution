@@ -3,11 +3,11 @@ package typings.antd.libInputSearchMod
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Search
   def focus(): Unit = js.native
   def onChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def onSearch(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
-  def onSearch(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def onSearch(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def renderAddonAfter(prefixCls: String): js.UndefOr[js.Object | Null] = js.native
   def renderSearch(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def renderSuffix(prefixCls: String): js.UndefOr[js.Object | Null] = js.native

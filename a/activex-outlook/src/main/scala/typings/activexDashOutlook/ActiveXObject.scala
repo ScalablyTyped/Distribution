@@ -1,58 +1,58 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.AccountSelector
-import typings.activexDashOutlook.OutlookNs.Accounts
-import typings.activexDashOutlook.OutlookNs.Application
-import typings.activexDashOutlook.OutlookNs.AppointmentItem
-import typings.activexDashOutlook.OutlookNs.ContactItem
-import typings.activexDashOutlook.OutlookNs.DistListItem
-import typings.activexDashOutlook.OutlookNs.DocumentItem
-import typings.activexDashOutlook.OutlookNs.Explorer
-import typings.activexDashOutlook.OutlookNs.Explorers
-import typings.activexDashOutlook.OutlookNs.Folders
-import typings.activexDashOutlook.OutlookNs.FormRegion
-import typings.activexDashOutlook.OutlookNs.Inspector
-import typings.activexDashOutlook.OutlookNs.Inspectors
-import typings.activexDashOutlook.OutlookNs.Items
-import typings.activexDashOutlook.OutlookNs.JournalItem
-import typings.activexDashOutlook.OutlookNs.MailItem
-import typings.activexDashOutlook.OutlookNs.MeetingItem
-import typings.activexDashOutlook.OutlookNs.MobileItem
-import typings.activexDashOutlook.OutlookNs.NameSpace
-import typings.activexDashOutlook.OutlookNs.NavigationGroups
-import typings.activexDashOutlook.OutlookNs.NavigationPane
-import typings.activexDashOutlook.OutlookNs.OlkBusinessCardControl
-import typings.activexDashOutlook.OutlookNs.OlkCategory
-import typings.activexDashOutlook.OutlookNs.OlkCheckBox
-import typings.activexDashOutlook.OutlookNs.OlkComboBox
-import typings.activexDashOutlook.OutlookNs.OlkCommandButton
-import typings.activexDashOutlook.OutlookNs.OlkContactPhoto
-import typings.activexDashOutlook.OutlookNs.OlkDateControl
-import typings.activexDashOutlook.OutlookNs.OlkInfoBar
-import typings.activexDashOutlook.OutlookNs.OlkLabel
-import typings.activexDashOutlook.OutlookNs.OlkListBox
-import typings.activexDashOutlook.OutlookNs.OlkOptionButton
-import typings.activexDashOutlook.OutlookNs.OlkSenderPhoto
-import typings.activexDashOutlook.OutlookNs.OlkTextBox
-import typings.activexDashOutlook.OutlookNs.OlkTimeControl
-import typings.activexDashOutlook.OutlookNs.OlkTimeZoneControl
-import typings.activexDashOutlook.OutlookNs.OutlookBarGroups
-import typings.activexDashOutlook.OutlookNs.OutlookBarPane
-import typings.activexDashOutlook.OutlookNs.OutlookBarShortcuts
-import typings.activexDashOutlook.OutlookNs.PostItem
-import typings.activexDashOutlook.OutlookNs.Reminders
-import typings.activexDashOutlook.OutlookNs.RemoteItem
-import typings.activexDashOutlook.OutlookNs.ReportItem
-import typings.activexDashOutlook.OutlookNs.Results
-import typings.activexDashOutlook.OutlookNs.SharingItem
-import typings.activexDashOutlook.OutlookNs.Stores
-import typings.activexDashOutlook.OutlookNs.SyncObject
-import typings.activexDashOutlook.OutlookNs.TaskItem
-import typings.activexDashOutlook.OutlookNs.TaskRequestAcceptItem
-import typings.activexDashOutlook.OutlookNs.TaskRequestDeclineItem
-import typings.activexDashOutlook.OutlookNs.TaskRequestItem
-import typings.activexDashOutlook.OutlookNs.TaskRequestUpdateItem
-import typings.activexDashOutlook.OutlookNs.Views
+import typings.activexDashOutlook.Outlook.AccountSelector
+import typings.activexDashOutlook.Outlook.Accounts
+import typings.activexDashOutlook.Outlook.Application
+import typings.activexDashOutlook.Outlook.AppointmentItem
+import typings.activexDashOutlook.Outlook.ContactItem
+import typings.activexDashOutlook.Outlook.DistListItem
+import typings.activexDashOutlook.Outlook.DocumentItem
+import typings.activexDashOutlook.Outlook.Explorer
+import typings.activexDashOutlook.Outlook.Explorers
+import typings.activexDashOutlook.Outlook.Folders
+import typings.activexDashOutlook.Outlook.FormRegion
+import typings.activexDashOutlook.Outlook.Inspector
+import typings.activexDashOutlook.Outlook.Inspectors
+import typings.activexDashOutlook.Outlook.Items
+import typings.activexDashOutlook.Outlook.JournalItem
+import typings.activexDashOutlook.Outlook.MailItem
+import typings.activexDashOutlook.Outlook.MeetingItem
+import typings.activexDashOutlook.Outlook.MobileItem
+import typings.activexDashOutlook.Outlook.NameSpace
+import typings.activexDashOutlook.Outlook.NavigationGroups
+import typings.activexDashOutlook.Outlook.NavigationPane
+import typings.activexDashOutlook.Outlook.OlkBusinessCardControl
+import typings.activexDashOutlook.Outlook.OlkCategory
+import typings.activexDashOutlook.Outlook.OlkCheckBox
+import typings.activexDashOutlook.Outlook.OlkComboBox
+import typings.activexDashOutlook.Outlook.OlkCommandButton
+import typings.activexDashOutlook.Outlook.OlkContactPhoto
+import typings.activexDashOutlook.Outlook.OlkDateControl
+import typings.activexDashOutlook.Outlook.OlkInfoBar
+import typings.activexDashOutlook.Outlook.OlkLabel
+import typings.activexDashOutlook.Outlook.OlkListBox
+import typings.activexDashOutlook.Outlook.OlkOptionButton
+import typings.activexDashOutlook.Outlook.OlkSenderPhoto
+import typings.activexDashOutlook.Outlook.OlkTextBox
+import typings.activexDashOutlook.Outlook.OlkTimeControl
+import typings.activexDashOutlook.Outlook.OlkTimeZoneControl
+import typings.activexDashOutlook.Outlook.OutlookBarGroups
+import typings.activexDashOutlook.Outlook.OutlookBarPane
+import typings.activexDashOutlook.Outlook.OutlookBarShortcuts
+import typings.activexDashOutlook.Outlook.PostItem
+import typings.activexDashOutlook.Outlook.Reminders
+import typings.activexDashOutlook.Outlook.RemoteItem
+import typings.activexDashOutlook.Outlook.ReportItem
+import typings.activexDashOutlook.Outlook.Results
+import typings.activexDashOutlook.Outlook.SharingItem
+import typings.activexDashOutlook.Outlook.Stores
+import typings.activexDashOutlook.Outlook.SyncObject
+import typings.activexDashOutlook.Outlook.TaskItem
+import typings.activexDashOutlook.Outlook.TaskRequestAcceptItem
+import typings.activexDashOutlook.Outlook.TaskRequestDeclineItem
+import typings.activexDashOutlook.Outlook.TaskRequestItem
+import typings.activexDashOutlook.Outlook.TaskRequestUpdateItem
+import typings.activexDashOutlook.Outlook.Views
 import typings.activexDashOutlook.activexDashOutlookStrings.Account
 import typings.activexDashOutlook.activexDashOutlookStrings.Action
 import typings.activexDashOutlook.activexDashOutlookStrings.Activate
@@ -884,21 +884,21 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ Explorers, /* parameter */ Anon_Explorer, Unit]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashOutlook.OutlookNs.Folder,
+    obj: typings.activexDashOutlook.Outlook.Folder,
     event: BeforeFolderMove,
     argNames: js.Tuple2[MoveTo, Cancel],
     handler: js.ThisFunction1[
-      /* this */ typings.activexDashOutlook.OutlookNs.Folder, 
+      /* this */ typings.activexDashOutlook.Outlook.Folder, 
       /* parameter */ Anon_CancelMoveTo, 
       Unit
     ]
   ): Unit = js.native
   def on(
-    obj: typings.activexDashOutlook.OutlookNs.Folder,
+    obj: typings.activexDashOutlook.Outlook.Folder,
     event: BeforeItemMove,
     argNames: js.Tuple3[Item, MoveTo, Cancel],
     handler: js.ThisFunction1[
-      /* this */ typings.activexDashOutlook.OutlookNs.Folder, 
+      /* this */ typings.activexDashOutlook.Outlook.Folder, 
       /* parameter */ Anon_CancelItemMoveTo, 
       Unit
     ]

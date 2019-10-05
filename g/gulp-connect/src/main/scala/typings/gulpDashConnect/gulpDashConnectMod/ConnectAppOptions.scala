@@ -1,5 +1,6 @@
 package typings.gulpDashConnect.gulpDashConnectMod
 
+import typings.connect.connectMod.HandleFunction
 import typings.node.httpMod.Server
 import typings.node.httpsMod.ServerOptions
 import scala.scalajs.js
@@ -46,7 +47,7 @@ object ConnectAppOptions {
     https: Boolean | ServerOptions = null,
     index: Boolean | String | js.Array[String] = null,
     livereload: Boolean | LiveReloadOptions = null,
-    middleware: MiddlewareFactory = null,
+    middleware: (/* connect */ js.Function0[typings.connect.connectMod.Server], /* options */ ConnectAppOptions) => js.Array[HandleFunction | ConnectRouteHandler] = null,
     name: String = null,
     port: Int | Double = null,
     root: String | js.Array[String] = null,
@@ -60,7 +61,7 @@ object ConnectAppOptions {
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (livereload != null) __obj.updateDynamic("livereload")(livereload.asInstanceOf[js.Any])
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
+    if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction2(middleware))
     if (name != null) __obj.updateDynamic("name")(name)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])

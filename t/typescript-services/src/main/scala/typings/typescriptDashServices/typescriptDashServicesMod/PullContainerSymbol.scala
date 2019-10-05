@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
+import typings.typescriptDashServices.TypeScript.PullElementKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullContainerSymbol")
 @js.native
 class PullContainerSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullContainerSymbol {
-  def this(name: String, kind: typings.typescriptDashServices.TypeScriptNs.PullElementKind) = this()
+  extends typings.typescriptDashServices.TypeScript.PullContainerSymbol {
+  def this(name: String, kind: PullElementKind) = this()
 }
 
 /* static members */
@@ -16,8 +17,8 @@ class PullContainerSymbol protected ()
 @js.native
 object PullContainerSymbol extends js.Object {
   def usedAsSymbol(
-    containerSymbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol,
-    symbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol
+    containerSymbol: typings.typescriptDashServices.TypeScript.PullSymbol,
+    symbol: typings.typescriptDashServices.TypeScript.PullSymbol
   ): Boolean = js.native
 }
 

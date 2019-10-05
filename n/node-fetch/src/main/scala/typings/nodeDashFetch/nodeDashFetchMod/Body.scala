@@ -1,7 +1,7 @@
 package typings.nodeDashFetch.nodeDashFetchMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.nodeDashFetch.Anon_Size
 import typings.std.ArrayBuffer
 import scala.scalajs.js

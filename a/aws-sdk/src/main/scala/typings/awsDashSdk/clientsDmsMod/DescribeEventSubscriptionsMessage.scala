@@ -28,13 +28,13 @@ object DescribeEventSubscriptionsMessage {
   def apply(
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | Double = null,
     SubscriptionName: String = null
   ): DescribeEventSubscriptionsMessage = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (SubscriptionName != null) __obj.updateDynamic("SubscriptionName")(SubscriptionName)
     __obj.asInstanceOf[DescribeEventSubscriptionsMessage]
   }

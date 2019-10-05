@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gsap", "TimelineLite")
 @js.native
 class TimelineLite ()
-  extends typings.gsap.gsapNs.TimelineLite {
+  extends typings.gsap.gsap.TimelineLite {
   def this(vars: js.Object) = this()
 }
 
@@ -19,8 +19,8 @@ object TimelineLite extends js.Object {
     * Seamlessly transfers all tweens, timelines, and [optionally] delayed calls from the root timeline into a new TimelineLite so that you can perform advanced tasks on a seemingly global
     * basis without affecting tweens/timelines that you create after the export.
     */
-  def exportRoot(): typings.gsap.gsapNs.TimelineLite = js.native
-  def exportRoot(vars: js.Object): typings.gsap.gsapNs.TimelineLite = js.native
-  def exportRoot(vars: js.Object, omitDelayedCalls: Boolean): typings.gsap.gsapNs.TimelineLite = js.native
+  def exportRoot(): typings.gsap.gsap.TimelineLite = js.native
+  def exportRoot(vars: js.Object): typings.gsap.gsap.TimelineLite = js.native
+  def exportRoot(vars: js.Object, omitDelayedCalls: Boolean): typings.gsap.gsap.TimelineLite = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.sequelizeDashFixtures.sequelizeDashFixturesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sequelizeDashFixtures.sequelizeDashFixturesMod.SequelizeFixturesNs.SequelizeFixturesStatic
+import typings.sequelizeDashFixtures.sequelizeDashFixturesMod.SequelizeFixtures.SequelizeFixturesStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

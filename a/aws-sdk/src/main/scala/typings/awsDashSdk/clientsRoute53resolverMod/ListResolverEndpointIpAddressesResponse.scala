@@ -23,12 +23,12 @@ object ListResolverEndpointIpAddressesResponse {
   @scala.inline
   def apply(
     IpAddresses: IpAddressesResponse = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListResolverEndpointIpAddressesResponse = {
     val __obj = js.Dynamic.literal()
     if (IpAddresses != null) __obj.updateDynamic("IpAddresses")(IpAddresses)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListResolverEndpointIpAddressesResponse]
   }

@@ -30,12 +30,12 @@ object TreeCollectionConfig {
     datathrottle: Int | Double = null,
     datatype: String = null,
     defaultData: js.Any = null,
-    externalData: WebixCallback = null,
+    externalData: /* repeated */ js.Any => js.Any = null,
     filterMode: js.Any = null,
     id: String | Double = null,
     map: js.Any = null,
     on: EventHash = null,
-    ready: WebixCallback = null,
+    ready: /* repeated */ js.Any => js.Any = null,
     removeMissed: js.UndefOr[Boolean] = js.undefined,
     rules: js.Any = null,
     save: js.Any = null,
@@ -48,12 +48,12 @@ object TreeCollectionConfig {
     if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype)
     if (defaultData != null) __obj.updateDynamic("defaultData")(defaultData)
-    if (externalData != null) __obj.updateDynamic("externalData")(externalData)
+    if (externalData != null) __obj.updateDynamic("externalData")(js.Any.fromFunction1(externalData))
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map)
     if (on != null) __obj.updateDynamic("on")(on)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed)
     if (rules != null) __obj.updateDynamic("rules")(rules)
     if (save != null) __obj.updateDynamic("save")(save)

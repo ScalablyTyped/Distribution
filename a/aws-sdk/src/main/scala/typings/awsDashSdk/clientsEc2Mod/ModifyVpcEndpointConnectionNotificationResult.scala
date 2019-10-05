@@ -13,7 +13,7 @@ trait ModifyVpcEndpointConnectionNotificationResult extends js.Object {
 
 object ModifyVpcEndpointConnectionNotificationResult {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): ModifyVpcEndpointConnectionNotificationResult = {
+  def apply(ReturnValue: js.UndefOr[scala.Boolean] = js.undefined): ModifyVpcEndpointConnectionNotificationResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue)
     __obj.asInstanceOf[ModifyVpcEndpointConnectionNotificationResult]

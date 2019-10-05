@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.parse5.parse5Mod.DefaultTreeNode because Already inherited
 - typings.parse5.parse5Mod.DefaultTreeParentNode because var conflicts: nodeName. Inlined childNodes */ trait DefaultTreeElement extends DefaultTreeChildNode {
   /**
     * List of element attributes.

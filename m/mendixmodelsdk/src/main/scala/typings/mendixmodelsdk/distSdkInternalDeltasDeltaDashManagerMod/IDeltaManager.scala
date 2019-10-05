@@ -1,7 +1,7 @@
 package typings.mendixmodelsdk.distSdkInternalDeltasDeltaDashManagerMod
 
-import typings.mendixmodelsdk.distCommonMod.commonNs.IErrorCallback
-import typings.mendixmodelsdk.distCommonMod.commonNs.IVoidCallback
+import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
+import typings.mendixmodelsdk.distCommonMod.common.IVoidCallback
 import typings.mendixmodelsdk.distSdkInternalDeltasDeltasMod.Delta
 import typings.mendixmodelsdk.distSdkInternalDeltasTransactionDashManagerMod.Transaction
 import scala.scalajs.js

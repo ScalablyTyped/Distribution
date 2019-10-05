@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IInfiniteScrollAction extends js.Object {
-  var payload: InfiniteScrollEvent
+  var payload: IInfiniteScrollEvent
   var `type`: String
 }
 
 object IInfiniteScrollAction {
   @scala.inline
-  def apply(payload: InfiniteScrollEvent, `type`: String): IInfiniteScrollAction = {
+  def apply(payload: IInfiniteScrollEvent, `type`: String): IInfiniteScrollAction = {
     val __obj = js.Dynamic.literal(payload = payload)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IInfiniteScrollAction]

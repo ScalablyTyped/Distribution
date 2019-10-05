@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySpatialReferenceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReferenceConstructor
+import typings.arcgisDashJsDashApi.__esri.SpatialReferenceConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

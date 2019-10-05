@@ -39,3 +39,12 @@ object TSEnumMember {
   }
 }
 
+@JSImport("@babel/types", "tsEnumMember")
+@js.native
+object tsEnumMember extends js.Object {
+  def apply(id: Identifier): TSEnumMember = js.native
+  def apply(id: Identifier, initializer: Expression): TSEnumMember = js.native
+  def apply(id: StringLiteral): TSEnumMember = js.native
+  def apply(id: StringLiteral, initializer: Expression): TSEnumMember = js.native
+}
+

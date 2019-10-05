@@ -42,7 +42,7 @@ object ListPartsOutput {
     CreationDate: String = null,
     Marker: String = null,
     MultipartUploadId: String = null,
-    PartSizeInBytes: js.UndefOr[long] = js.undefined,
+    PartSizeInBytes: Int | Double = null,
     Parts: PartList = null,
     VaultARN: String = null
   ): ListPartsOutput = {
@@ -51,7 +51,7 @@ object ListPartsOutput {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId)
-    if (!js.isUndefined(PartSizeInBytes)) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes)
+    if (PartSizeInBytes != null) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes.asInstanceOf[js.Any])
     if (Parts != null) __obj.updateDynamic("Parts")(Parts)
     if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN)
     __obj.asInstanceOf[ListPartsOutput]

@@ -33,7 +33,7 @@ object TrustedAdvisorResourceDetail {
     metadata: StringList,
     resourceId: String,
     status: String,
-    isSuppressed: js.UndefOr[Boolean] = js.undefined,
+    isSuppressed: js.UndefOr[scala.Boolean] = js.undefined,
     region: String = null
   ): TrustedAdvisorResourceDetail = {
     val __obj = js.Dynamic.literal(metadata = metadata, resourceId = resourceId, status = status)

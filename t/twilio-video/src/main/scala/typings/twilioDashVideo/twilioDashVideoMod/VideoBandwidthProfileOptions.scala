@@ -1,6 +1,6 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Priority
+import typings.twilioDashVideo.twilioDashVideoMod.Track.Priority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

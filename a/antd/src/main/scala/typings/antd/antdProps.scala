@@ -3,7 +3,11 @@ package typings.antd
 import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
 import typings.antd.esDropdownDropdownMod.DropDownProps
 import typings.antd.esLayoutLayoutMod.BasicProps
+import typings.antd.esLayoutSiderMod.SiderProps
+import typings.antd.esListItemMod.ListItemMetaProps
 import typings.antd.esListItemMod.ListItemProps
+import typings.antd.esStepsMod.StepProps
+import typings.antd.esTabsMod.TabPaneProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
 import typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
@@ -125,9 +129,6 @@ trait antdProps {
   def ConfigProviderProps: typings.antd.esConfigDashProviderMod.ConfigProviderProps.type = typings.antd.esConfigDashProviderMod.ConfigProviderProps
   type ConfigProviderProps = typings.antd.esConfigDashProviderMod.ConfigProviderProps
   @scala.inline
-  def ContentProps: BasicProps.type = typings.antd.esLayoutLayoutMod.BasicProps
-  type ContentProps = BasicProps
-  @scala.inline
   def CountdownProps: typings.antd.esStatisticCountdownMod.CountdownProps.type = typings.antd.esStatisticCountdownMod.CountdownProps
   type CountdownProps = typings.antd.esStatisticCountdownMod.CountdownProps
   @scala.inline
@@ -164,9 +165,6 @@ trait antdProps {
   def EmptyProps: typings.antd.esEmptyMod.EmptyProps.type = typings.antd.esEmptyMod.EmptyProps
   type EmptyProps = typings.antd.esEmptyMod.EmptyProps
   @scala.inline
-  def FooterProps: BasicProps.type = typings.antd.esLayoutLayoutMod.BasicProps
-  type FooterProps = BasicProps
-  @scala.inline
   def FormProps: typings.antd.esFormFormMod.FormProps.type = typings.antd.esFormFormMod.FormProps
   type FormProps = typings.antd.esFormFormMod.FormProps
   @scala.inline
@@ -200,6 +198,9 @@ trait antdProps {
   def ItemProps: ListItemProps.type = typings.antd.esListItemMod.ListItemProps
   type ItemProps = ListItemProps
   @scala.inline
+  def ItemMetaProps: /* props */ ListItemMetaProps.type = typings.antd.esListItemMod.ListItemMetaProps
+  type ItemMetaProps = /* props */ ListItemMetaProps
+  @scala.inline
   def LayoutProps: BasicProps.type = typings.antd.esLayoutLayoutMod.BasicProps
   type LayoutProps = BasicProps
   @scala.inline
@@ -212,8 +213,8 @@ trait antdProps {
   def LayoutHeaderProps: BasicProps.type = typings.antd.esLayoutLayoutMod.BasicProps
   type LayoutHeaderProps = BasicProps
   @scala.inline
-  def LayoutSiderProps: typings.antd.esLayoutSiderMod.SiderProps.type = typings.antd.esLayoutSiderMod.SiderProps
-  type LayoutSiderProps = typings.antd.esLayoutSiderMod.SiderProps
+  def LayoutSiderProps: SiderProps.type = typings.antd.esLayoutSiderMod.SiderProps
+  type LayoutSiderProps = SiderProps
   @scala.inline
   def ListProps: typings.antd.esListMod.ListProps.type = typings.antd.esListMod.ListProps
   type ListProps[T] = typings.antd.esListMod.ListProps[T]
@@ -281,6 +282,9 @@ trait antdProps {
   def RateProps: typings.antd.esRateMod.RateProps.type = typings.antd.esRateMod.RateProps
   type RateProps = typings.antd.esRateMod.RateProps
   @scala.inline
+  def RenderListBodyProps: TransferListBodyProps.type = typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
+  type RenderListBodyProps = TransferListBodyProps
+  @scala.inline
   def ResultProps: typings.antd.esResultMod.ResultProps.type = typings.antd.esResultMod.ResultProps
   type ResultProps = typings.antd.esResultMod.ResultProps
   @scala.inline
@@ -302,9 +306,6 @@ trait antdProps {
   def SelectOptionProps: typings.antd.esSelectMod.OptionProps.type = typings.antd.esSelectMod.OptionProps
   type SelectOptionProps = typings.antd.esSelectMod.OptionProps
   @scala.inline
-  def SiderProps: typings.antd.esLayoutSiderMod.SiderProps.type = typings.antd.esLayoutSiderMod.SiderProps
-  type SiderProps = typings.antd.esLayoutSiderMod.SiderProps
-  @scala.inline
   def SkeletonProps: typings.antd.esSkeletonMod.SkeletonProps.type = typings.antd.esSkeletonMod.SkeletonProps
   type SkeletonProps = typings.antd.esSkeletonMod.SkeletonProps
   @scala.inline
@@ -314,14 +315,11 @@ trait antdProps {
   def SpinProps: typings.antd.esSpinMod.SpinProps.type = typings.antd.esSpinMod.SpinProps
   type SpinProps = typings.antd.esSpinMod.SpinProps
   @scala.inline
-  def StepProps: typings.antd.esStepsMod.StepProps.type = typings.antd.esStepsMod.StepProps
-  type StepProps = typings.antd.esStepsMod.StepProps
-  @scala.inline
   def StepsProps: typings.antd.esStepsMod.StepsProps.type = typings.antd.esStepsMod.StepsProps
   type StepsProps = typings.antd.esStepsMod.StepsProps
   @scala.inline
-  def StepsStepProps: typings.antd.esStepsMod.StepProps.type = typings.antd.esStepsMod.StepProps
-  type StepsStepProps = typings.antd.esStepsMod.StepProps
+  def StepsStepProps: StepProps.type = typings.antd.esStepsMod.StepProps
+  type StepsStepProps = StepProps
   @scala.inline
   def SubMenuProps: typings.antd.esMenuSubMenuMod.SubMenuProps.type = typings.antd.esMenuSubMenuMod.SubMenuProps
   type SubMenuProps = typings.antd.esMenuSubMenuMod.SubMenuProps
@@ -329,17 +327,14 @@ trait antdProps {
   def SwitchProps: typings.antd.esSwitchMod.SwitchProps.type = typings.antd.esSwitchMod.SwitchProps
   type SwitchProps = typings.antd.esSwitchMod.SwitchProps
   @scala.inline
-  def TabPaneProps: typings.antd.esTabsMod.TabPaneProps.type = typings.antd.esTabsMod.TabPaneProps
-  type TabPaneProps = typings.antd.esTabsMod.TabPaneProps
-  @scala.inline
   def TableProps: typings.antd.esTableInterfaceMod.TableProps.type = typings.antd.esTableInterfaceMod.TableProps
   type TableProps[T] = typings.antd.esTableInterfaceMod.TableProps[T]
   @scala.inline
   def TabsProps: typings.antd.esTabsMod.TabsProps.type = typings.antd.esTabsMod.TabsProps
   type TabsProps = typings.antd.esTabsMod.TabsProps
   @scala.inline
-  def TabsTabPaneProps: typings.antd.esTabsMod.TabPaneProps.type = typings.antd.esTabsMod.TabPaneProps
-  type TabsTabPaneProps = typings.antd.esTabsMod.TabPaneProps
+  def TabsTabPaneProps: TabPaneProps.type = typings.antd.esTabsMod.TabPaneProps
+  type TabsTabPaneProps = TabPaneProps
   @scala.inline
   def TagProps: typings.antd.esTagMod.TagProps.type = typings.antd.esTagMod.TagProps
   type TagProps = typings.antd.esTagMod.TagProps
@@ -392,11 +387,5 @@ trait antdProps {
   @scala.inline
   def UploadProps: typings.antd.esUploadInterfaceMod.UploadProps.type = typings.antd.esUploadInterfaceMod.UploadProps
   type UploadProps = typings.antd.esUploadInterfaceMod.UploadProps
-  @scala.inline
-  def operationProps: typings.antd.esTransferOperationMod.TransferOperationProps.type = typings.antd.esTransferOperationMod.TransferOperationProps
-  type operationProps = typings.antd.esTransferOperationMod.TransferOperationProps
-  @scala.inline
-  def renderListBodyProps: TransferListBodyProps.type = typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
-  type renderListBodyProps = TransferListBodyProps
 }
 

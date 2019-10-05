@@ -1,5 +1,7 @@
 package typings.reactDashSortableDashTree
 
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeIndex
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeNode
 import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +14,11 @@ trait Anon_GetNodeKeyIgnoreCollapsedBoolean extends js.Object {
 
 object Anon_GetNodeKeyIgnoreCollapsedBoolean {
   @scala.inline
-  def apply(getNodeKey: GetNodeKeyFunction, ignoreCollapsed: js.UndefOr[Boolean] = js.undefined): Anon_GetNodeKeyIgnoreCollapsedBoolean = {
-    val __obj = js.Dynamic.literal(getNodeKey = getNodeKey)
+  def apply(
+    getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
+    ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
+  ): Anon_GetNodeKeyIgnoreCollapsedBoolean = {
+    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey))
     if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed)
     __obj.asInstanceOf[Anon_GetNodeKeyIgnoreCollapsedBoolean]
   }

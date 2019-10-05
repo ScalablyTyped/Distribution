@@ -2,7 +2,7 @@ package typings.reactDashDates.reactDashDatesMod
 
 import typings.reactDashDates.Anon_Date
 import typings.reactDashDates.Anon_Focused
-import typings.reactDashDates.reactDashDatesMod.momentPropTypesNs.momentObj
+import typings.reactDashDates.reactDashDatesMod.momentPropTypes.momentObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

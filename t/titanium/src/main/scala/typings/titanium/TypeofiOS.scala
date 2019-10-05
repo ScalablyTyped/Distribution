@@ -1,35 +1,35 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Blob
-import typings.titanium.TitaniumNs.Proxy
-import typings.titanium.TitaniumNs.UINs.iOSNs.AdView
-import typings.titanium.TitaniumNs.UINs.iOSNs.AnchorAttachmentBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.Animator
-import typings.titanium.TitaniumNs.UINs.iOSNs.ApplicationShortcuts
-import typings.titanium.TitaniumNs.UINs.iOSNs.AttributedString
-import typings.titanium.TitaniumNs.UINs.iOSNs.BlurView
-import typings.titanium.TitaniumNs.UINs.iOSNs.CollisionBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.CoverFlowView
-import typings.titanium.TitaniumNs.UINs.iOSNs.DocumentViewer
-import typings.titanium.TitaniumNs.UINs.iOSNs.DynamicItemBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.FeedbackGenerator
-import typings.titanium.TitaniumNs.UINs.iOSNs.GravityBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.LivePhotoView
-import typings.titanium.TitaniumNs.UINs.iOSNs.MenuPopup
-import typings.titanium.TitaniumNs.UINs.iOSNs.NavigationWindow
-import typings.titanium.TitaniumNs.UINs.iOSNs.PreviewAction
-import typings.titanium.TitaniumNs.UINs.iOSNs.PreviewActionGroup
-import typings.titanium.TitaniumNs.UINs.iOSNs.PreviewContext
-import typings.titanium.TitaniumNs.UINs.iOSNs.PushBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.SnapBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.SplitWindow
-import typings.titanium.TitaniumNs.UINs.iOSNs.Stepper
-import typings.titanium.TitaniumNs.UINs.iOSNs.TabbedBar
-import typings.titanium.TitaniumNs.UINs.iOSNs.Toolbar
-import typings.titanium.TitaniumNs.UINs.iOSNs.ViewAttachmentBehavior
-import typings.titanium.TitaniumNs.UINs.iOSNs.WebViewConfiguration
-import typings.titanium.TitaniumNs.UINs.iOSNs.WebViewDecisionHandler
-import typings.titanium.TitaniumNs.UINs.iOSNs.WebViewProcessPool
+import typings.titanium.Titanium.Blob
+import typings.titanium.Titanium.Proxy
+import typings.titanium.Titanium.UI.iOS.AdView
+import typings.titanium.Titanium.UI.iOS.AnchorAttachmentBehavior
+import typings.titanium.Titanium.UI.iOS.Animator
+import typings.titanium.Titanium.UI.iOS.ApplicationShortcuts
+import typings.titanium.Titanium.UI.iOS.AttributedString
+import typings.titanium.Titanium.UI.iOS.BlurView
+import typings.titanium.Titanium.UI.iOS.CollisionBehavior
+import typings.titanium.Titanium.UI.iOS.CoverFlowView
+import typings.titanium.Titanium.UI.iOS.DocumentViewer
+import typings.titanium.Titanium.UI.iOS.DynamicItemBehavior
+import typings.titanium.Titanium.UI.iOS.FeedbackGenerator
+import typings.titanium.Titanium.UI.iOS.GravityBehavior
+import typings.titanium.Titanium.UI.iOS.LivePhotoView
+import typings.titanium.Titanium.UI.iOS.MenuPopup
+import typings.titanium.Titanium.UI.iOS.NavigationWindow
+import typings.titanium.Titanium.UI.iOS.PreviewAction
+import typings.titanium.Titanium.UI.iOS.PreviewActionGroup
+import typings.titanium.Titanium.UI.iOS.PreviewContext
+import typings.titanium.Titanium.UI.iOS.PushBehavior
+import typings.titanium.Titanium.UI.iOS.SnapBehavior
+import typings.titanium.Titanium.UI.iOS.SplitWindow
+import typings.titanium.Titanium.UI.iOS.Stepper
+import typings.titanium.Titanium.UI.iOS.TabbedBar
+import typings.titanium.Titanium.UI.iOS.Toolbar
+import typings.titanium.Titanium.UI.iOS.ViewAttachmentBehavior
+import typings.titanium.Titanium.UI.iOS.WebViewConfiguration
+import typings.titanium.Titanium.UI.iOS.WebViewDecisionHandler
+import typings.titanium.Titanium.UI.iOS.WebViewProcessPool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -256,7 +256,7 @@ trait TypeofiOS extends js.Object {
   			 * A set of constants for the style that can be used for the `style` property of
   			 * <Titanium.UI.AlertDialog>.
   			 */
-  val AlertDialogStyleNs: TypeofAlertDialogStyle = js.native
+  val AlertDialogStyle: TypeofAlertDialogStyle = js.native
   /**
   			 * A set of constants for the animation styles used for view transitions.
   			 * One of the group of animation style constants
@@ -269,7 +269,7 @@ trait TypeofiOS extends js.Object {
   			 *   * [CROSS_DISSOLVE](Titanium.UI.iOS.AnimationStyle.CROSS_DISSOLVE)
   			 *   * [NONE](Titanium.UI.iOS.AnimationStyle.NONE)
   			 */
-  val AnimationStyleNs: TypeofAnimationStyle = js.native
+  val AnimationStyle: TypeofAnimationStyle = js.native
   /**
   			 * Use with [MaskedImage.mode](Titanium.UI.MaskedImage.mode) to specify a blend mode.
   			 */
@@ -648,7 +648,7 @@ trait TypeofiOS extends js.Object {
   /**
   			 * A set of constants for the bar styles used on the `style` property of <Titanium.UI.ProgressBar>.
   			 */
-  val ProgressBarStyleNs: TypeofProgressBarStyle = js.native
+  val ProgressBarStyle: TypeofProgressBarStyle = js.native
   /**
   			 * The default style for <RowActionType>.
   			 */
@@ -664,7 +664,7 @@ trait TypeofiOS extends js.Object {
   /**
   			 * A set of constants for the Animation Styles used for transition on table view rows.
   			 */
-  val RowAnimationStyleNs: TypeofRowAnimationStyle = js.native
+  val RowAnimationStyle: TypeofRowAnimationStyle = js.native
   /**
   			 * Use with <Titanium.UI.ScrollView.decelerationRate> to control deceleration rate.
   			 */
@@ -808,23 +808,23 @@ trait TypeofiOS extends js.Object {
   /**
   			 * A set of constants for the styles available for scrollbars used with <Titanium.UI.ScrollView.scrollIndicatorStyle> and <Titanium.UI.TableView.scrollIndicatorStyle> properties.
   			 */
-  val ScrollIndicatorStyleNs: TypeofScrollIndicatorStyle = js.native
+  val ScrollIndicatorStyle: TypeofScrollIndicatorStyle = js.native
   /**
   			 * A set of constants for the status bar style.
   			 */
-  val StatusBarNs: TypeofStatusBar = js.native
+  val StatusBar: TypeofStatusBar = js.native
   /**
   			 * A set of constants for creating standard iOS system buttons.
   			 */
-  val SystemButtonNs: TypeofSystemButton = js.native
+  val SystemButton: TypeofSystemButton = js.native
   /**
   			 * A set of constants for the system button styles that can be used for the button `style` property.
   			 */
-  val SystemButtonStyleNs: TypeofSystemButtonStyle = js.native
+  val SystemButtonStyle: TypeofSystemButtonStyle = js.native
   /**
   			 * A set of constants for the system icon styles that can be used on a tab group tab.
   			 */
-  val SystemIconNs: TypeofSystemIcon = js.native
+  val SystemIcon: TypeofSystemIcon = js.native
   /**
   			 * String that represents the magnifying glass on the table view index bar
   			 */
@@ -833,17 +833,17 @@ trait TypeofiOS extends js.Object {
   			 * A set of constants for the style that can be used for the `selectionStyle` property of
   			 * <Titanium.UI.TableViewRow>.
   			 */
-  val TableViewCellSelectionStyleNs: TypeofTableViewCellSelectionStyle = js.native
+  val TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle = js.native
   /**
   			 * A set of constants for the position value that can be used for the `position` property of
   			 * <Titanium.UI.TableView> when invoking `scrollToIndex`.
   			 */
-  val TableViewScrollPositionNs: TypeofTableViewScrollPosition = js.native
+  val TableViewScrollPosition: TypeofTableViewScrollPosition = js.native
   /**
   			 * A set of constants for the style that can be used for the button `style` property of
   			 * <Titanium.UI.TableView>.
   			 */
-  val TableViewStyleNs: TypeofTableViewStyle = js.native
+  val TableViewStyle: TypeofTableViewStyle = js.native
   /**
   			 * User tapped the back or forward button.
   			 */
@@ -923,8 +923,8 @@ trait TypeofiOS extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Attribute>.
   			 */
-  def createAttribute(): typings.titanium.TitaniumNs.UINs.iOSNs.Attribute = js.native
-  def createAttribute(parameters: js.Any): typings.titanium.TitaniumNs.UINs.iOSNs.Attribute = js.native
+  def createAttribute(): typings.titanium.Titanium.UI.iOS.Attribute = js.native
+  def createAttribute(parameters: js.Any): typings.titanium.Titanium.UI.iOS.Attribute = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.AttributedString>.
   			 */

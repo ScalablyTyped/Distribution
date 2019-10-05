@@ -25,22 +25,23 @@ object Props {
   @scala.inline
   def apply(
     intl: IntlShape,
-    other: ReactNode,
     value: Double,
     children: /* value */ ReactNode => ReactElement | Null = null,
     few: ReactNode = null,
     format: String = null,
     many: ReactNode = null,
     one: ReactNode = null,
+    other: ReactNode = null,
     two: ReactNode = null,
     zero: ReactNode = null
   ): Props = {
-    val __obj = js.Dynamic.literal(intl = intl, other = other.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(intl = intl, value = value)
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     if (two != null) __obj.updateDynamic("two")(two.asInstanceOf[js.Any])
     if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

@@ -3,6 +3,7 @@ package typings.atBlueprintjsCore.libEsmComponentsHtmlDashSelectHtmlSelectMod
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IOptionProps
 import typings.atBlueprintjsCore.libEsmComponentsHtmlHtmlMod.IElementRefProps
 import typings.atBlueprintjsCore.libEsmComponentsIconIconMod.IIconProps
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.SelectHTMLAttributes
 import typings.std.HTMLSelectElement
@@ -46,7 +47,7 @@ object IHTMLSelectProps {
     iconProps: Partial[IIconProps] = null,
     large: js.UndefOr[Boolean] = js.undefined,
     minimal: js.UndefOr[Boolean] = js.undefined,
-    onChange: ChangeEventHandler[HTMLSelectElement] = null,
+    onChange: ChangeEvent[HTMLSelectElement] => Unit = null,
     options: js.Array[String | Double | IOptionProps] = null,
     value: String | Double = null
   ): IHTMLSelectProps = {
@@ -58,7 +59,7 @@ object IHTMLSelectProps {
     if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (options != null) __obj.updateDynamic("options")(options)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTMLSelectProps]

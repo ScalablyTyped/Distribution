@@ -39,7 +39,7 @@ object CreateClientVpnRouteRequest {
     TargetVpcSubnetId: String,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateClientVpnRouteRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, DestinationCidrBlock = DestinationCidrBlock, TargetVpcSubnetId = TargetVpcSubnetId)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)

@@ -1,7 +1,7 @@
 package typings.stylus
 
-import typings.stylus.stylusMod.StylusNs.NodesNs.Block
-import typings.stylus.stylusMod.StylusNs.NodesNs.Node
+import typings.stylus.stylusMod.Stylus.Nodes.Block
+import typings.stylus.stylusMod.Stylus.Nodes.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

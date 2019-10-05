@@ -42,7 +42,7 @@ object Action {
     AuthenticateCognitoConfig: AuthenticateCognitoActionConfig = null,
     AuthenticateOidcConfig: AuthenticateOidcActionConfig = null,
     FixedResponseConfig: FixedResponseActionConfig = null,
-    Order: js.UndefOr[ActionOrder] = js.undefined,
+    Order: Int | Double = null,
     RedirectConfig: RedirectActionConfig = null,
     TargetGroupArn: TargetGroupArn = null
   ): Action = {
@@ -50,7 +50,7 @@ object Action {
     if (AuthenticateCognitoConfig != null) __obj.updateDynamic("AuthenticateCognitoConfig")(AuthenticateCognitoConfig)
     if (AuthenticateOidcConfig != null) __obj.updateDynamic("AuthenticateOidcConfig")(AuthenticateOidcConfig)
     if (FixedResponseConfig != null) __obj.updateDynamic("FixedResponseConfig")(FixedResponseConfig)
-    if (!js.isUndefined(Order)) __obj.updateDynamic("Order")(Order)
+    if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
     if (RedirectConfig != null) __obj.updateDynamic("RedirectConfig")(RedirectConfig)
     if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn)
     __obj.asInstanceOf[Action]

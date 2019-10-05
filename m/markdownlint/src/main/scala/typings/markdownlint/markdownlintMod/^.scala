@@ -12,8 +12,5 @@ object ^ extends js.Object {
     options: MarkdownlintOptions,
     callback: js.Function2[/* err */ Error | Null, /* result */ MarkdownlintResults, _]
   ): Unit = js.native
-  def readConfig(file: String, callback: js.Function2[/* err */ Error | Null, /* result */ MarkdownlintConfig, _]): Unit = js.native
-  def readConfigSync(file: String): MarkdownlintConfig = js.native
-  def sync(options: MarkdownlintOptions): MarkdownlintResults = js.native
 }
 

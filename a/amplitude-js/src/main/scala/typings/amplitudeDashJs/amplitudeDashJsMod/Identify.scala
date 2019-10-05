@@ -16,3 +16,10 @@ class Identify () extends js.Object {
   def unset(key: String): Identify = js.native
 }
 
+@JSImport("amplitude-js", "identify")
+@js.native
+object identify extends js.Object {
+  def apply(identify: Identify): Unit = js.native
+  def apply(identify: Identify, callback: Callback): Unit = js.native
+}
+

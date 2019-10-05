@@ -14,7 +14,7 @@ object wixDashStyleDashReactComponents extends wixDashStyleDashReactProps {
   @scala.inline
   def Loader: ComponentType[typings.wixDashStyleDashReact.loaderMod.LoaderProps] = js.constructorOf[typings.wixDashStyleDashReact.loaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.wixDashStyleDashReact.loaderMod.LoaderProps]]
   @scala.inline
-  def Text: ComponentType[typings.wixDashStyleDashReact.textMod.TextProps] = typings.wixDashStyleDashReact.textMod.^.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.wixDashStyleDashReact.textMod.TextProps]]
+  def Text: ComponentType[typings.wixDashStyleDashReact.textMod.TextProps] = typings.wixDashStyleDashReact.textMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.wixDashStyleDashReact.textMod.TextProps]]
   @scala.inline
   def WixComponent[T /* <: WixComponentProps */]: ComponentType[T] = js.constructorOf[typings.wixDashStyleDashReact.wixDashStyleDashReactMod.WixComponent[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
 }

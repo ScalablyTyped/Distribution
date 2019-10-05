@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSupportActionsActionButtonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionButtonConstructor
+import typings.arcgisDashJsDashApi.__esri.ActionButtonConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

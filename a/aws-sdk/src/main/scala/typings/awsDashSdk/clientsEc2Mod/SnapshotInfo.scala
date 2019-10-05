@@ -51,7 +51,7 @@ object SnapshotInfo {
   @scala.inline
   def apply(
     Description: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     OwnerId: String = null,
     Progress: String = null,
     SnapshotId: String = null,
@@ -59,7 +59,7 @@ object SnapshotInfo {
     State: SnapshotState = null,
     Tags: TagList = null,
     VolumeId: String = null,
-    VolumeSize: js.UndefOr[Integer] = js.undefined
+    VolumeSize: Int | scala.Double = null
   ): SnapshotInfo = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description)
@@ -71,7 +71,7 @@ object SnapshotInfo {
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize)
+    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotInfo]
   }
 }

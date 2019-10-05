@@ -1,7 +1,7 @@
 package typings.rxDashDom.rxDashDomMod
 
-import typings.rxDashCore.RxNs.IDisposable
-import typings.rxDashLite.RxNs.IScheduler
+import typings.rxDashCore.Rx.IDisposable
+import typings.rxDashLite.Rx.IScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

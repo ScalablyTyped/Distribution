@@ -37,15 +37,15 @@ object CreateFileSystemWindowsConfiguration {
   def apply(
     ThroughputCapacity: MegabytesPerSecond,
     ActiveDirectoryId: DirectoryId = null,
-    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
-    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
+    AutomaticBackupRetentionDays: Int | Double = null,
+    CopyTagsToBackups: js.UndefOr[Boolean] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
     SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryConfiguration = null,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): CreateFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal(ThroughputCapacity = ThroughputCapacity)
     if (ActiveDirectoryId != null) __obj.updateDynamic("ActiveDirectoryId")(ActiveDirectoryId)
-    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays)
+    if (AutomaticBackupRetentionDays != null) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.asInstanceOf[js.Any])
     if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups)
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime)
     if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration)

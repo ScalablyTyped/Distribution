@@ -1,8 +1,10 @@
 package typings.winston.winstonMod
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.Map
+import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +19,11 @@ trait ExceptionHandler extends Instantiable1[/* logger */ Logger, ExceptionHandl
   def getOsInfo(): js.Object = js.native
   def getProcessInfo(): js.Object = js.native
   def getTrace(err: Error): js.Object = js.native
-  def handle(transports: typings.winstonDashTransport.winstonDashTransportMod.^ *): Unit = js.native
-  def unhandle(transports: typings.winstonDashTransport.winstonDashTransportMod.^ *): Unit = js.native
+  def handle(transports: ^ *): Unit = js.native
+  def unhandle(transports: ^ *): Unit = js.native
 }
 
 @JSImport("winston", "ExceptionHandler")
 @js.native
-class ExceptionHandlerCls protected () extends ExceptionHandler {
-  def this(logger: Logger) = this()
-}
+object ExceptionHandler extends TopLevel[ExceptionHandler]
 

@@ -1,7 +1,7 @@
 package typings.winjs.winjsMod
 
 import typings.std.CustomEvent
-import typings.winjs.WinJSNs.IPromise
+import typings.winjs.WinJS.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   * @param onCancel The function to call if a consumer of this promise wants to cancel its undone work. Promises are not required to support cancellation.
   **/
 class Promise[T] ()
-  extends typings.winjs.WinJSNs.Promise[T] {
+  extends typings.winjs.WinJS.Promise[T] {
   def this(init: js.Function3[
         /* completeDispatch */ js.Any, 
         /* errorDispatch */ js.Any, 

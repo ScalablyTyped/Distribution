@@ -43,14 +43,14 @@ object StartTranscriptionJobRequest {
     Media: Media,
     TranscriptionJobName: TranscriptionJobName,
     MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
+    MediaSampleRateHertz: Int | Double = null,
     OutputBucketName: OutputBucketName = null,
     OutputEncryptionKMSKeyId: KMSKeyId = null,
     Settings: Settings = null
   ): StartTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Media = Media, TranscriptionJobName = TranscriptionJobName)
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz)
+    if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])
     if (OutputBucketName != null) __obj.updateDynamic("OutputBucketName")(OutputBucketName)
     if (OutputEncryptionKMSKeyId != null) __obj.updateDynamic("OutputEncryptionKMSKeyId")(OutputEncryptionKMSKeyId)
     if (Settings != null) __obj.updateDynamic("Settings")(Settings)

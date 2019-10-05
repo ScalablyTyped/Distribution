@@ -17,9 +17,9 @@ trait GetEntitiesRequest extends js.Object {
 
 object GetEntitiesRequest {
   @scala.inline
-  def apply(ids: Urns, namespaceVersion: js.UndefOr[Version] = js.undefined): GetEntitiesRequest = {
+  def apply(ids: Urns, namespaceVersion: Int | Double = null): GetEntitiesRequest = {
     val __obj = js.Dynamic.literal(ids = ids)
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion)
+    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEntitiesRequest]
   }
 }

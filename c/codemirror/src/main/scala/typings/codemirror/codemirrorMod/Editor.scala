@@ -340,7 +340,7 @@ trait Editor extends js.Object {
   def lineInfo(line: js.Any): Anon_BgClass = js.native
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
-  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 88 */ js.Any) */](
+  def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
@@ -406,7 +406,7 @@ trait Editor extends js.Object {
   /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
   def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   /** Fires when one of the DOM events fires. */
-  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 88 */ js.Any) */](
+  def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 

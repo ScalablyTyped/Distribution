@@ -2,6 +2,8 @@ package typings.leaflet.leafletMod
 
 import typings.geojson.geojsonMod.Feature
 import typings.geojson.geojsonMod.GeometryObject
+import typings.geojson.geojsonMod.LineString
+import typings.geojson.geojsonMod.MultiLineString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,5 +24,12 @@ class Polyline[T /* <: GeometryObject */, P] protected () extends Path {
   def isEmpty(): Boolean = js.native
   def setLatLngs(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): this.type = js.native
   def toGeoJSON(): Feature[T, P] = js.native
+}
+
+@JSImport("leaflet", "polyline")
+@js.native
+object polyline extends js.Object {
+  def apply(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Polyline[LineString | MultiLineString, _] = js.native
+  def apply(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions): Polyline[LineString | MultiLineString, _] = js.native
 }
 

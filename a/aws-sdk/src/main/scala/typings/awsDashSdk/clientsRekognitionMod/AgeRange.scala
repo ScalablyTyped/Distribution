@@ -17,10 +17,10 @@ trait AgeRange extends js.Object {
 
 object AgeRange {
   @scala.inline
-  def apply(High: js.UndefOr[UInteger] = js.undefined, Low: js.UndefOr[UInteger] = js.undefined): AgeRange = {
+  def apply(High: Int | Double = null, Low: Int | Double = null): AgeRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(High)) __obj.updateDynamic("High")(High)
-    if (!js.isUndefined(Low)) __obj.updateDynamic("Low")(Low)
+    if (High != null) __obj.updateDynamic("High")(High.asInstanceOf[js.Any])
+    if (Low != null) __obj.updateDynamic("Low")(Low.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgeRange]
   }
 }

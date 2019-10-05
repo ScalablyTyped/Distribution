@@ -35,10 +35,10 @@ object BuildArtifacts {
   @scala.inline
   def apply(
     artifactIdentifier: String = null,
-    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     location: String = null,
     md5sum: String = null,
-    overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined,
+    overrideArtifactName: js.UndefOr[scala.Boolean] = js.undefined,
     sha256sum: String = null
   ): BuildArtifacts = {
     val __obj = js.Dynamic.literal()

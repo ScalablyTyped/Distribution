@@ -1,7 +1,7 @@
 package typings.latinize.latinizeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.latinize.latinizeMod.LatinizeModuleNs.Latinize
+import typings.latinize.latinizeMod.LatinizeModule.Latinize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

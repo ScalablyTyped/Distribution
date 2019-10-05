@@ -23,7 +23,7 @@ object ListVirtualMFADevicesResponse {
   @scala.inline
   def apply(
     VirtualMFADevices: virtualMFADeviceListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListVirtualMFADevicesResponse = {
     val __obj = js.Dynamic.literal(VirtualMFADevices = VirtualMFADevices)

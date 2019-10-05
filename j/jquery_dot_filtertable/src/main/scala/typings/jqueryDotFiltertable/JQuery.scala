@@ -1,7 +1,7 @@
 package typings.jqueryDotFiltertable
 
-import typings.jqueryDotFiltertable.FilterTableNs.FilterTableOptions
-import typings.jqueryDotFiltertable.FilterTableNs.FilterTableStatic
+import typings.jqueryDotFiltertable.FilterTable.FilterTableOptions
+import typings.jqueryDotFiltertable.FilterTable.FilterTableStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

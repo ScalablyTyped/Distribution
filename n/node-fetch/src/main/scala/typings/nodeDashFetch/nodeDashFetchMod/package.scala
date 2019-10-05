@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object nodeDashFetchMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.node.NodeJSNs.ReadableStream
+  import typings.node.NodeJS.ReadableStream
   import typings.node.urlMod.URLSearchParams
   import typings.std.ArrayBuffer
   import typings.std.ArrayBufferView

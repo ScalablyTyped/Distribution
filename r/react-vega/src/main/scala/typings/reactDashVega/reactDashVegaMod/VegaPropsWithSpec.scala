@@ -3,8 +3,9 @@ package typings.reactDashVega.reactDashVegaMod
 import typings.react.reactMod.CSSProperties
 import typings.reactDashVega.Anon_Bottom
 import typings.std.Error
+import typings.std.MouseEvent
 import typings.std.Record
-import typings.vegaDashTypings.typesRuntimeMod.TooltipHandler
+import typings.vegaDashTypings.typesRuntimeMod.Item
 import typings.vegaDashTypings.typesSpecMod.Spec
 import typings.vegaDashTypings.vegaDashTypingsMod.View
 import scala.scalajs.js
@@ -30,7 +31,7 @@ object VegaPropsWithSpec {
     padding: Double | Anon_Bottom = null,
     renderer: String = null,
     style: CSSProperties = null,
-    tooltip: TooltipHandler = null,
+    tooltip: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit = null,
     width: Int | Double = null
   ): VegaPropsWithSpec = {
     val __obj = js.Dynamic.literal(spec = spec)
@@ -45,7 +46,7 @@ object VegaPropsWithSpec {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(js.Any.fromFunction4(tooltip))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VegaPropsWithSpec]
   }

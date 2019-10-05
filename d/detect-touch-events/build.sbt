@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "detect-touch-events"
-version := "1.0-dt-20180214Z-324b01"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20180214Z-bd6ddf"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

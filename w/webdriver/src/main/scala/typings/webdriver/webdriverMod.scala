@@ -1,8 +1,8 @@
 package typings.webdriver
 
-import typings.webdriver.WebDriverNs.AttachSessionOptions
-import typings.webdriver.WebDriverNs.Client
-import typings.webdriver.WebDriverNs.Options
+import typings.webdriver.WebDriver.AttachSessionOptions
+import typings.webdriver.WebDriver.Client
+import typings.webdriver.WebDriver.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongorito"
-version := "3.0-dt-20191003Z-5ebd62"
-scalaVersion := "2.12.9"
+version := "3.0-dt-20191003Z-20a23a"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-093380",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191003Z-bfea37",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-65ecda",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191003Z-aaba7a",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "StencilMaskStack")
 @js.native
 class StencilMaskStack ()
-  extends typings.pixiDotJs.PIXINs.StencilMaskStack
+  extends typings.pixiDotJs.PIXI.StencilMaskStack
 

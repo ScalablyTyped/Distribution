@@ -1,6 +1,6 @@
 package typings.tooltipster
 
-import typings.tooltipster.JQueryTooltipsterNs.ITooltipsterStatic
+import typings.tooltipster.JQueryTooltipster.ITooltipsterStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,10 +17,10 @@ trait ListDeliverabilityTestReportsRequest extends js.Object {
 
 object ListDeliverabilityTestReportsRequest {
   @scala.inline
-  def apply(NextToken: NextToken = null, PageSize: js.UndefOr[MaxItems] = js.undefined): ListDeliverabilityTestReportsRequest = {
+  def apply(NextToken: NextToken = null, PageSize: Int | Double = null): ListDeliverabilityTestReportsRequest = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeliverabilityTestReportsRequest]
   }
 }

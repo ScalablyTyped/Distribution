@@ -33,11 +33,11 @@ object NeighborConnectionDetail {
     connectionsCount: Long,
     destinationServerId: ConfigurationId,
     sourceServerId: ConfigurationId,
-    destinationPort: js.UndefOr[BoxedInteger] = js.undefined,
+    destinationPort: Int | Double = null,
     transportProtocol: String = null
   ): NeighborConnectionDetail = {
     val __obj = js.Dynamic.literal(connectionsCount = connectionsCount, destinationServerId = destinationServerId, sourceServerId = sourceServerId)
-    if (!js.isUndefined(destinationPort)) __obj.updateDynamic("destinationPort")(destinationPort)
+    if (destinationPort != null) __obj.updateDynamic("destinationPort")(destinationPort.asInstanceOf[js.Any])
     if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol)
     __obj.asInstanceOf[NeighborConnectionDetail]
   }

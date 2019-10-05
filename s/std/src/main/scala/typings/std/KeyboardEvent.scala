@@ -33,13 +33,6 @@ trait KeyboardEvent extends UIEvent {
 
 @JSGlobal("KeyboardEvent")
 @js.native
-class KeyboardEventCls protected () extends KeyboardEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: KeyboardEventInit) = this()
-}
-
-@JSGlobal("KeyboardEvent")
-@js.native
 object KeyboardEvent
   extends Instantiable1[/* type */ java.lang.String, KeyboardEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ KeyboardEventInit, KeyboardEvent] {

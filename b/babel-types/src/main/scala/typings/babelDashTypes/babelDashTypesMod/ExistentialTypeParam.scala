@@ -31,3 +31,9 @@ object ExistentialTypeParam {
   }
 }
 
+@JSImport("babel-types", "existentialTypeParam")
+@js.native
+object existentialTypeParam extends js.Object {
+  def apply(): ExistentialTypeParam = js.native
+}
+

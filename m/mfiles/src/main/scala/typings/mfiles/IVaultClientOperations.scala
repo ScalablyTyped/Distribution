@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFOfflineTransitionResultFlags
-import typings.mfiles.MFilesNs.MFOnlineTransitionResultFlags
+import typings.mfiles.MFiles.MFOfflineTransitionResultFlags
+import typings.mfiles.MFiles.MFOnlineTransitionResultFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

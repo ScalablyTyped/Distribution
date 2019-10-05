@@ -1,10 +1,10 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPClientTemplatesNs.ClientControlMode
-import typings.sharepoint.SPClientTemplatesNs.ListSchema
-import typings.sharepoint.SPClientTemplatesNs.RenderCallback
-import typings.sharepoint.SPClientTemplatesNs.RenderContext
-import typings.sharepoint.SPClientTemplatesNs.Templates
+import typings.sharepoint.SPClientTemplates.ClientControlMode
+import typings.sharepoint.SPClientTemplates.ListSchema
+import typings.sharepoint.SPClientTemplates.RenderCallback
+import typings.sharepoint.SPClientTemplates.RenderContext
+import typings.sharepoint.SPClientTemplates.Templates
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ trait ContextInfo extends RenderContext {
   var LastSelectedItemIID: Double
   var ListData: js.Any
    // SPClientTemplates.ListData_InView | SPClientTemplates.ListData_InForm
-  var ListSchema: typings.sharepoint.SPClientTemplatesNs.ListSchema
+  var ListSchema: typings.sharepoint.SPClientTemplates.ListSchema
   var ListTitle: String
   var ModerationStatus: Double
   var NewWOPIDocumentEnabled: Boolean

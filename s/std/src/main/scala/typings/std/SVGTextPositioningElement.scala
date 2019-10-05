@@ -17,30 +17,5 @@ trait SVGTextPositioningElement extends SVGTextContentElement {
 
 @JSGlobal("SVGTextPositioningElement")
 @js.native
-class SVGTextPositioningElementCls () extends SVGTextPositioningElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val requiredExtensions: SVGStringList = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override val systemLanguage: SVGStringList = js.native
-}
-
-@JSGlobal("SVGTextPositioningElement")
-@js.native
 object SVGTextPositioningElement extends Instantiable0[SVGTextPositioningElement]
 

@@ -1,5 +1,6 @@
 package typings.downshift.downshiftMod
 
+import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
@@ -74,7 +75,7 @@ trait DownshiftProps[Item] extends js.Object {
 object DownshiftProps {
   @scala.inline
   def apply[Item](
-    children: ChildrenFunction[Item] = null,
+    children: /* options */ ControllerStateAndHelpers[Item] => ReactNode = null,
     defaultHighlightedIndex: Int | Double = null,
     defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
     environment: Environment = null,
@@ -106,7 +107,7 @@ object DownshiftProps {
     suppressRefError: js.UndefOr[Boolean] = js.undefined
   ): DownshiftProps[Item] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (defaultHighlightedIndex != null) __obj.updateDynamic("defaultHighlightedIndex")(defaultHighlightedIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen)
     if (environment != null) __obj.updateDynamic("environment")(environment)

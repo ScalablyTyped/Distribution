@@ -1,16 +1,12 @@
 package typings.rxjsDashCompat.rxjsDashCompatMod
 
-import typings.rxjs.internalUtilTimeoutErrorMod.TimeoutError
+import org.scalablytyped.runtime.TopLevel
+import typings.rxjs.internalUtilTimeoutErrorMod.TimeoutErrorCtor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rxjs-compat", "TimeoutError")
 @js.native
-class TimeoutErrorCls () extends TimeoutError {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
+object TimeoutError extends TopLevel[TimeoutErrorCtor]
 

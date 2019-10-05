@@ -17,7 +17,7 @@ trait DeleteResourceShareResponse extends js.Object {
 
 object DeleteResourceShareResponse {
   @scala.inline
-  def apply(clientToken: String = null, returnValue: js.UndefOr[Boolean] = js.undefined): DeleteResourceShareResponse = {
+  def apply(clientToken: String = null, returnValue: js.UndefOr[scala.Boolean] = js.undefined): DeleteResourceShareResponse = {
     val __obj = js.Dynamic.literal()
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken)
     if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue)

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.wafregionalWebAclMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclDefaultAction
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclLoggingConfiguration
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.WebAclRule
+import typings.atPulumiAws.typesOutputMod.wafregional.WebAclDefaultAction
+import typings.atPulumiAws.typesOutputMod.wafregional.WebAclLoggingConfiguration
+import typings.atPulumiAws.typesOutputMod.wafregional.WebAclRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

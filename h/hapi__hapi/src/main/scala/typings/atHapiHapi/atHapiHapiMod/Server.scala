@@ -10,9 +10,9 @@ import typings.atHapiHapi.Anon_Method
 import typings.atHapiHapi.Anon_Request
 import typings.atHapiHapi.Anon_Timeout
 import typings.atHapiHapi.Anon_Validate
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.Method
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS
 import typings.atHapiHapi.atHapiHapiStrings.handler
 import typings.atHapiHapi.atHapiHapiStrings.request
 import typings.atHapiHapi.atHapiHapiStrings.server

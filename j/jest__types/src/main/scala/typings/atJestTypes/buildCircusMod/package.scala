@@ -22,7 +22,7 @@ package object buildCircusMod {
   type Exception = js.Any
   type FormattedError = String
   type HookFn = js.Function1[/* done */ js.UndefOr[DoneFn], js.UndefOr[js.Promise[js.Any] | Null]]
-  type Process = typings.node.NodeJSNs.Process
+  type Process = typings.node.NodeJS.Process
   type TestContext = Record[String, js.Any]
   type TestError = Exception | (js.Array[js.Tuple2[js.UndefOr[Exception], Exception]])
   type TestFn = typings.atJestTypes.buildGlobalMod.TestFn

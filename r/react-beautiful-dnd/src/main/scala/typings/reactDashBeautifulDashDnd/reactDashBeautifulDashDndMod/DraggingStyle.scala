@@ -34,11 +34,12 @@ object DraggingStyle {
     top: Double,
     transition: none,
     width: Double,
-    zIndex: ZIndex,
-    transform: String = null
+    transform: String = null,
+    zIndex: ZIndex = null
   ): DraggingStyle = {
-    val __obj = js.Dynamic.literal(boxSizing = boxSizing, height = height, left = left, margin = margin, pointerEvents = pointerEvents, position = position, top = top, transition = transition, width = width, zIndex = zIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(boxSizing = boxSizing, height = height, left = left, margin = margin, pointerEvents = pointerEvents, position = position, top = top, transition = transition, width = width)
     if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggingStyle]
   }
 }

@@ -1,6 +1,7 @@
 package typings.recharts.rechartsMod
 
 import typings.react.reactMod.ReactElement
+import typings.recharts.Anon_Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,12 +37,12 @@ object CartesianGridProps {
     chartWidth: Int | Double = null,
     height: Int | Double = null,
     horizontal: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean = null,
-    horizontalCoordinatesGenerator: CoordinatesGenerator = null,
+    horizontalCoordinatesGenerator: /* arg */ Anon_Height => js.Array[Double] = null,
     horizontalFill: js.Array[String] = null,
     horizontalPoints: js.Array[Double] = null,
     offset: js.Object = null,
     vertical: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean = null,
-    verticalCoordinatesGenerator: CoordinatesGenerator = null,
+    verticalCoordinatesGenerator: /* arg */ Anon_Height => js.Array[Double] = null,
     verticalFill: js.Array[String] = null,
     verticalPoints: js.Array[Double] = null,
     width: Int | Double = null,
@@ -54,12 +55,12 @@ object CartesianGridProps {
     if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (horizontalCoordinatesGenerator != null) __obj.updateDynamic("horizontalCoordinatesGenerator")(horizontalCoordinatesGenerator)
+    if (horizontalCoordinatesGenerator != null) __obj.updateDynamic("horizontalCoordinatesGenerator")(js.Any.fromFunction1(horizontalCoordinatesGenerator))
     if (horizontalFill != null) __obj.updateDynamic("horizontalFill")(horizontalFill)
     if (horizontalPoints != null) __obj.updateDynamic("horizontalPoints")(horizontalPoints)
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (verticalCoordinatesGenerator != null) __obj.updateDynamic("verticalCoordinatesGenerator")(verticalCoordinatesGenerator)
+    if (verticalCoordinatesGenerator != null) __obj.updateDynamic("verticalCoordinatesGenerator")(js.Any.fromFunction1(verticalCoordinatesGenerator))
     if (verticalFill != null) __obj.updateDynamic("verticalFill")(verticalFill)
     if (verticalPoints != null) __obj.updateDynamic("verticalPoints")(verticalPoints)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

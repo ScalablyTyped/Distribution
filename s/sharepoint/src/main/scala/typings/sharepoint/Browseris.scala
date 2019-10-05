@@ -1,5 +1,6 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,4 +50,8 @@ class Browseris () extends js.Object {
   var windowsphone: Boolean = js.native
   var winnt: Boolean = js.native
 }
+
+@JSGlobal("browseris")
+@js.native
+object browseris extends TopLevel[Browseris]
 

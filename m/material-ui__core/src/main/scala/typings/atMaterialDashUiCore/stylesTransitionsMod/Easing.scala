@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore.stylesTransitionsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,8 @@ object Easing {
     __obj.asInstanceOf[Easing]
   }
 }
+
+@JSImport("@material-ui/core/styles/transitions", "easing")
+@js.native
+object easing extends TopLevel[Easing]
 

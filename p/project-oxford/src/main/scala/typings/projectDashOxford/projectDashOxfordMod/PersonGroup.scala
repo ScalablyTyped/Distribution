@@ -1,7 +1,7 @@
 package typings.projectDashOxford.projectDashOxfordMod
 
 import typings.bluebird.bluebirdMod.^
-import typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponsesNs.TrainingStatus
+import typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponses.TrainingStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,17 +33,13 @@ class PersonGroup () extends js.Object {
     * @param  {string} personGroupId       - Name of person group to get
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def get(personGroupId: String): ^[
-    typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponsesNs.PersonGroup
-  ] = js.native
+  def get(personGroupId: String): ^[typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponses.PersonGroup] = js.native
   /**
     * Lists all person groups in the current subscription.
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
   def list(): ^[
-    js.Array[
-      typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponsesNs.PersonGroup
-    ]
+    js.Array[typings.projectDashOxford.projectDashOxfordMod.PersonGroupResponses.PersonGroup]
   ] = js.native
   /**
     * Starts a person group training.

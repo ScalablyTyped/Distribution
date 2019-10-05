@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "OrientedBox")
 @js.native
 class OrientedBox ()
-  extends typings.playcanvas.pcNs.OrientedBox {
-  def this(worldTransform: typings.playcanvas.pcNs.Mat4) = this()
-  def this(worldTransform: typings.playcanvas.pcNs.Mat4, halfExtents: typings.playcanvas.pcNs.Vec3) = this()
+  extends typings.playcanvas.pc.OrientedBox {
+  def this(worldTransform: typings.playcanvas.pc.Mat4) = this()
+  def this(worldTransform: typings.playcanvas.pc.Mat4, halfExtents: typings.playcanvas.pc.Vec3) = this()
 }
 

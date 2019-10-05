@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typescriptDashCompareMod {
-  import typings.typescriptDashCompare.typescriptDashCompareMod.CompareNs.Options
+  import typings.typescriptDashCompare.typescriptDashCompareMod.Compare.Options
   import typings.typescriptDashCompare.typescriptDashCompareNumbers.`0`
   import typings.typescriptDashCompare.typescriptDashCompareNumbers.`1`
   import typings.typescriptDashCompare.typescriptDashCompareNumbers.`true`
@@ -15,8 +15,8 @@ package object typescriptDashCompareMod {
   import typings.typescriptDashLogic.typescriptDashLogicMod.Or
 
   type Any[Type] = And[
-    typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `0`], 
-    typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[Type, `1`]
+    typings.typescriptDashCompare.typescriptDashCompareMod.prv.Extends[Type, `0`], 
+    typings.typescriptDashCompare.typescriptDashCompareMod.prv.Extends[Type, `1`]
   ]
   type Compare[A, B, Options /* <: Options */] = If[
     Extends[A, B], 
@@ -43,7 +43,7 @@ package object typescriptDashCompareMod {
     If[
       Any[A], 
       Any[B], 
-      typings.typescriptDashCompare.typescriptDashCompareMod.prvNs.Extends[A, B]
+      typings.typescriptDashCompare.typescriptDashCompareMod.prv.Extends[A, B]
     ]
   ]
   type NotAny[Type, True, False] = Not[Any[Type]]

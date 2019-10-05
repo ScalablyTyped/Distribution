@@ -14,7 +14,7 @@ object UpdateJobOutput {
   @scala.inline
   def apply(
     ArtifactList: ArtifactList = null,
-    Success: js.UndefOr[Success] = js.undefined,
+    Success: js.UndefOr[Boolean] = js.undefined,
     WarningMessage: WarningMessage = null
   ): UpdateJobOutput = {
     val __obj = js.Dynamic.literal()

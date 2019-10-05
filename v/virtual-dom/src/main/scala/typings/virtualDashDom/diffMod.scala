@@ -1,7 +1,7 @@
 package typings.virtualDashDom
 
-import typings.virtualDashDom.VirtualDOMNs.VPatch
-import typings.virtualDashDom.VirtualDOMNs.VTree
+import typings.virtualDashDom.VirtualDOM.VPatch
+import typings.virtualDashDom.VirtualDOM.VTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

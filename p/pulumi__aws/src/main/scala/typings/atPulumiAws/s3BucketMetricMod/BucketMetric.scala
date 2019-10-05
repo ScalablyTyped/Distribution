@@ -1,6 +1,6 @@
 package typings.atPulumiAws.s3BucketMetricMod
 
-import typings.atPulumiAws.typesOutputMod.s3Ns.BucketMetricFilter
+import typings.atPulumiAws.typesOutputMod.s3.BucketMetricFilter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

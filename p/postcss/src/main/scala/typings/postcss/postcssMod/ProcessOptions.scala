@@ -1,5 +1,8 @@
 package typings.postcss.postcssMod
 
+import typings.postcss.postcssStrings.from
+import typings.postcss.postcssStrings.map
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,16 +41,16 @@ object ProcessOptions {
   def apply(
     from: String = null,
     map: SourceMapOptions | Boolean = null,
-    parser: Parser = null,
-    stringifier: Stringifier = null,
+    parser: (/* css */ ParserInput, /* opts */ js.UndefOr[Pick[ProcessOptions, map | from]]) => Root = null,
+    stringifier: (/* node */ Node, /* builder */ Builder) => Unit = null,
     syntax: Syntax = null,
     to: String = null
   ): ProcessOptions = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(from)
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (stringifier != null) __obj.updateDynamic("stringifier")(stringifier)
+    if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction2(parser))
+    if (stringifier != null) __obj.updateDynamic("stringifier")(js.Any.fromFunction2(stringifier))
     if (syntax != null) __obj.updateDynamic("syntax")(syntax)
     if (to != null) __obj.updateDynamic("to")(to)
     __obj.asInstanceOf[ProcessOptions]

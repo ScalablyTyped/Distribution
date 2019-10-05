@@ -1,8 +1,8 @@
 package typings.bezierDashJs.bezierDashJsMod
 
-import typings.bezierDashJs.BezierJsNs.ABC
-import typings.bezierDashJs.BezierJsNs.Bezier
-import typings.bezierDashJs.BezierJsNs.Point
+import typings.bezierDashJs.BezierJs.ABC
+import typings.bezierDashJs.BezierJs.Bezier
+import typings.bezierDashJs.BezierJs.Point
 import typings.bezierDashJs.Typeofutils
 import scala.scalajs.js
 import scala.scalajs.js.`|`

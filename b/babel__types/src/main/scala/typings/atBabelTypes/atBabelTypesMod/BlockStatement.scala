@@ -42,3 +42,10 @@ object BlockStatement {
   }
 }
 
+@JSImport("@babel/types", "blockStatement")
+@js.native
+object blockStatement extends js.Object {
+  def apply(body: js.Array[Statement]): BlockStatement = js.native
+  def apply(body: js.Array[Statement], directives: js.Array[Directive]): BlockStatement = js.native
+}
+

@@ -32,7 +32,7 @@ object ModifyVpnConnectionRequest {
   def apply(
     VpnConnectionId: String,
     CustomerGatewayId: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TransitGatewayId: String = null,
     VpnGatewayId: String = null
   ): ModifyVpnConnectionRequest = {

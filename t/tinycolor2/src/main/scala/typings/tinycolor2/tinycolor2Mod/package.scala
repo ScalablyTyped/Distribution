@@ -12,14 +12,14 @@ package object tinycolor2Mod {
   type ColorInput = _ColorInput | String
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.PRGB
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.PRGBA
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.RGB
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.RGBA
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSL
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSLA
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSV
-    - typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSVA
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.PRGB
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.PRGBA
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.RGB
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.RGBA
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.HSL
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.HSLA
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.HSV
+    - typings.tinycolor2.tinycolor2Mod.ColorFormats.HSVA
   */
   type ColorInputWithoutInstance = _ColorInputWithoutInstance | String
 }

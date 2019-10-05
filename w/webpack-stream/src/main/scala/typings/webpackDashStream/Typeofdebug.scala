@@ -1,7 +1,7 @@
 package typings.webpackDashStream
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.webpack.webpackMod.debugNs.ProfilingPlugin
+import typings.webpack.webpackMod.debug.ProfilingPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Typeofdebug extends js.Object {
     *
     * It will then display timeline stats and calls per plugin!
     */
-  var ProfilingPlugin: Instantiable0[typings.webpack.webpackMod.debugNs.ProfilingPlugin]
+  var ProfilingPlugin: Instantiable0[typings.webpack.webpackMod.debug.ProfilingPlugin]
 }
 
 object Typeofdebug {

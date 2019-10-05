@@ -21,7 +21,7 @@ trait CreateSpotDatafeedSubscriptionRequest extends js.Object {
 
 object CreateSpotDatafeedSubscriptionRequest {
   @scala.inline
-  def apply(Bucket: String, DryRun: js.UndefOr[Boolean] = js.undefined, Prefix: String = null): CreateSpotDatafeedSubscriptionRequest = {
+  def apply(Bucket: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined, Prefix: String = null): CreateSpotDatafeedSubscriptionRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)

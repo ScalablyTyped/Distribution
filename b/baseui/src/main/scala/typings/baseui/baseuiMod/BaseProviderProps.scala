@@ -13,11 +13,11 @@ trait BaseProviderProps extends js.Object {
 object BaseProviderProps {
   @scala.inline
   def apply(
-    children: ReactNode,
-    theme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any
+    theme: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any,
+    children: ReactNode = null
   ): BaseProviderProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], theme = theme)
-  
+    val __obj = js.Dynamic.literal(theme = theme)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProviderProps]
   }
 }

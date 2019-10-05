@@ -1,6 +1,6 @@
 package typings.activexDashShell
 
-import typings.activexDashShell.Shell32Ns.ExplorerBarCLSID
+import typings.activexDashShell.Shell32.ExplorerBarCLSID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

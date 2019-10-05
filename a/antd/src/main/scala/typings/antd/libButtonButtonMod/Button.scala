@@ -2,7 +2,7 @@ package typings.antd.libButtonButtonMod
 
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement

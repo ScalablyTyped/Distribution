@@ -3,7 +3,7 @@ package typings.enhancedDashResolve.libCommonDashTypesMod
 import typings.enhancedDashResolve.Anon_Encoding
 import typings.enhancedDashResolve.Anon_Flag
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`

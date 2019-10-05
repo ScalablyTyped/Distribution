@@ -21,13 +21,9 @@ trait ListDirectoriesRequest extends js.Object {
 
 object ListDirectoriesRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null,
-    state: DirectoryState = null
-  ): ListDirectoriesRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, state: DirectoryState = null): ListDirectoriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDirectoriesRequest]

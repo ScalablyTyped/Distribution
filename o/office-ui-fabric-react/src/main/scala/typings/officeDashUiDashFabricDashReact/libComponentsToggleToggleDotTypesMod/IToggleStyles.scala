@@ -32,9 +32,21 @@ trait IToggleStyles extends js.Object {
 
 object IToggleStyles {
   @scala.inline
-  def apply(container: IStyle, label: IStyle, pill: IStyle, root: IStyle, text: IStyle, thumb: IStyle): IToggleStyles = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], pill = pill.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any])
-  
+  def apply(
+    container: IStyle = null,
+    label: IStyle = null,
+    pill: IStyle = null,
+    root: IStyle = null,
+    text: IStyle = null,
+    thumb: IStyle = null
+  ): IToggleStyles = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (pill != null) __obj.updateDynamic("pill")(pill.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToggleStyles]
   }
 }

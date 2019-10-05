@@ -43,13 +43,13 @@ object CreateMissionProfileRequest {
     minimumViableContactDurationSeconds: DurationInSeconds,
     name: SafeName,
     trackingConfigArn: ConfigArn,
-    contactPostPassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
-    contactPrePassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
+    contactPostPassDurationSeconds: Int | scala.Double = null,
+    contactPrePassDurationSeconds: Int | scala.Double = null,
     tags: TagsMap = null
   ): CreateMissionProfileRequest = {
     val __obj = js.Dynamic.literal(dataflowEdges = dataflowEdges, minimumViableContactDurationSeconds = minimumViableContactDurationSeconds, name = name, trackingConfigArn = trackingConfigArn)
-    if (!js.isUndefined(contactPostPassDurationSeconds)) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds)
-    if (!js.isUndefined(contactPrePassDurationSeconds)) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds)
+    if (contactPostPassDurationSeconds != null) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds.asInstanceOf[js.Any])
+    if (contactPrePassDurationSeconds != null) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateMissionProfileRequest]
   }

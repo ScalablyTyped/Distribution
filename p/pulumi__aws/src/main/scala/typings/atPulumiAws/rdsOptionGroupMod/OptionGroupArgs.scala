@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsOptionGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.rdsNs.OptionGroupOption
+import typings.atPulumiAws.typesInputMod.rds.OptionGroupOption
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

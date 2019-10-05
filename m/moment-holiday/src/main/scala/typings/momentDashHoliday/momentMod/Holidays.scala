@@ -1,5 +1,6 @@
 package typings.momentDashHoliday.momentMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ object Holidays {
     __obj.asInstanceOf[Holidays]
   }
 }
+
+@JSImport("moment", "holidays")
+@js.native
+object holidays extends TopLevel[Holidays]
 

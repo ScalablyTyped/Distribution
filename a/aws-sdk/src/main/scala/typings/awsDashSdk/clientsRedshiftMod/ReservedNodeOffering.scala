@@ -47,25 +47,25 @@ object ReservedNodeOffering {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
+    Duration: Int | scala.Double = null,
+    FixedPrice: Int | scala.Double = null,
     NodeType: String = null,
     OfferingType: String = null,
     RecurringCharges: RecurringChargeList = null,
     ReservedNodeOfferingId: String = null,
     ReservedNodeOfferingType: ReservedNodeOfferingType = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedNodeOffering = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType)
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges)
     if (ReservedNodeOfferingId != null) __obj.updateDynamic("ReservedNodeOfferingId")(ReservedNodeOfferingId)
     if (ReservedNodeOfferingType != null) __obj.updateDynamic("ReservedNodeOfferingType")(ReservedNodeOfferingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedNodeOffering]
   }
 }

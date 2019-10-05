@@ -8,7 +8,7 @@ package object algebraDotJsMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double
-    - typings.algebraDotJs.algebraDotJsMod.algebraNs.jsNs.Fraction
+    - typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction
     - typings.algebraDotJs.algebraDotJsMod.Term
   */
   type Union = _Union | String | Double

@@ -35,20 +35,20 @@ trait DescribeCacheOutput extends js.Object {
 object DescribeCacheOutput {
   @scala.inline
   def apply(
-    CacheAllocatedInBytes: js.UndefOr[long] = js.undefined,
-    CacheDirtyPercentage: js.UndefOr[double] = js.undefined,
-    CacheHitPercentage: js.UndefOr[double] = js.undefined,
-    CacheMissPercentage: js.UndefOr[double] = js.undefined,
-    CacheUsedPercentage: js.UndefOr[double] = js.undefined,
+    CacheAllocatedInBytes: Int | Double = null,
+    CacheDirtyPercentage: Int | Double = null,
+    CacheHitPercentage: Int | Double = null,
+    CacheMissPercentage: Int | Double = null,
+    CacheUsedPercentage: Int | Double = null,
     DiskIds: DiskIds = null,
     GatewayARN: GatewayARN = null
   ): DescribeCacheOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CacheAllocatedInBytes)) __obj.updateDynamic("CacheAllocatedInBytes")(CacheAllocatedInBytes)
-    if (!js.isUndefined(CacheDirtyPercentage)) __obj.updateDynamic("CacheDirtyPercentage")(CacheDirtyPercentage)
-    if (!js.isUndefined(CacheHitPercentage)) __obj.updateDynamic("CacheHitPercentage")(CacheHitPercentage)
-    if (!js.isUndefined(CacheMissPercentage)) __obj.updateDynamic("CacheMissPercentage")(CacheMissPercentage)
-    if (!js.isUndefined(CacheUsedPercentage)) __obj.updateDynamic("CacheUsedPercentage")(CacheUsedPercentage)
+    if (CacheAllocatedInBytes != null) __obj.updateDynamic("CacheAllocatedInBytes")(CacheAllocatedInBytes.asInstanceOf[js.Any])
+    if (CacheDirtyPercentage != null) __obj.updateDynamic("CacheDirtyPercentage")(CacheDirtyPercentage.asInstanceOf[js.Any])
+    if (CacheHitPercentage != null) __obj.updateDynamic("CacheHitPercentage")(CacheHitPercentage.asInstanceOf[js.Any])
+    if (CacheMissPercentage != null) __obj.updateDynamic("CacheMissPercentage")(CacheMissPercentage.asInstanceOf[js.Any])
+    if (CacheUsedPercentage != null) __obj.updateDynamic("CacheUsedPercentage")(CacheUsedPercentage.asInstanceOf[js.Any])
     if (DiskIds != null) __obj.updateDynamic("DiskIds")(DiskIds)
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)
     __obj.asInstanceOf[DescribeCacheOutput]

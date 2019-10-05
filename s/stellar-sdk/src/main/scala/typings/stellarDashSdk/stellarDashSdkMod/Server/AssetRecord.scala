@@ -1,0 +1,41 @@
+package typings.stellarDashSdk.stellarDashSdkMod.Server
+
+import typings.stellarDashBase.stellarDashBaseMod.AssetType.credit12
+import typings.stellarDashBase.stellarDashBaseMod.AssetType.credit4
+import typings.stellarDashSdk.stellarDashSdkMod.Horizon.BaseResponse
+import typings.stellarDashSdk.stellarDashSdkMod.Horizon.Flags
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AssetRecord
+  extends BaseResponse[scala.Nothing] {
+  var amount: String
+  var asset_code: String
+  var asset_issuer: String
+  var asset_type: credit4 | credit12
+  var flags: Flags
+  var num_accounts: Double
+  var paging_token: String
+}
+
+object AssetRecord {
+  @scala.inline
+  def apply(
+    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in T | 'self' ]: stellar-sdk.stellar-sdk.Horizon.ResponseLink}
+    */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
+    amount: String,
+    asset_code: String,
+    asset_issuer: String,
+    asset_type: credit4 | credit12,
+    flags: Flags,
+    num_accounts: Double,
+    paging_token: String
+  ): AssetRecord = {
+    val __obj = js.Dynamic.literal(_links = _links, amount = amount, asset_code = asset_code, asset_issuer = asset_issuer, asset_type = asset_type.asInstanceOf[js.Any], flags = flags, num_accounts = num_accounts, paging_token = paging_token)
+  
+    __obj.asInstanceOf[AssetRecord]
+  }
+}
+

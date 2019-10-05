@@ -17,3 +17,20 @@ trait WIZnet extends /**
   */
 Instantiable0[WIZnet]
 
+/**
+* 
+*/
+@JSGlobal("WIZnet")
+@js.native
+object WIZnet extends js.Object {
+  /**
+    * <p>Initialise the WIZnet module and return an Ethernet object</p>
+    * 
+    * @param spi 
+    * @param cs 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_WIZnet_connect
+    */
+  def connect(spi: js.Any, cs: Pin): Ethernet = js.native
+}
+

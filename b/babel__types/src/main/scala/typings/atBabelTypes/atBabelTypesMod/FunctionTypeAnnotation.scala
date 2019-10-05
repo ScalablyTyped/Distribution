@@ -46,3 +46,57 @@ object FunctionTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "functionTypeAnnotation")
+@js.native
+object functionTypeAnnotation extends js.Object {
+  def apply(
+    typeParameters: js.UndefOr[scala.Nothing],
+    params: js.Array[FunctionTypeParam],
+    rest: js.UndefOr[scala.Nothing],
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: js.UndefOr[scala.Nothing],
+    params: js.Array[FunctionTypeParam],
+    rest: Null,
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: js.UndefOr[scala.Nothing],
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam,
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: Null,
+    params: js.Array[FunctionTypeParam],
+    rest: js.UndefOr[scala.Nothing],
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(typeParameters: Null, params: js.Array[FunctionTypeParam], rest: Null, returnType: FlowType): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: Null,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam,
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: js.UndefOr[scala.Nothing],
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: Null,
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam,
+    returnType: FlowType
+  ): FunctionTypeAnnotation = js.native
+}
+

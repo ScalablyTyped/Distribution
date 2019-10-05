@@ -63,8 +63,8 @@ object NavigationEventsProps {
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
-    onDidBlur: NavigationEventCallback = null,
-    onDidFocus: NavigationEventCallback = null,
+    onDidBlur: /* payload */ NavigationEventPayload => Unit = null,
+    onDidFocus: /* payload */ NavigationEventPayload => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onMagicTap: () => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
@@ -84,8 +84,8 @@ object NavigationEventsProps {
     onTouchEndCapture: /* event */ GestureResponderEvent => Unit = null,
     onTouchMove: /* event */ GestureResponderEvent => Unit = null,
     onTouchStart: /* event */ GestureResponderEvent => Unit = null,
-    onWillBlur: NavigationEventCallback = null,
-    onWillFocus: NavigationEventCallback = null,
+    onWillBlur: /* payload */ NavigationEventPayload => Unit = null,
+    onWillFocus: /* payload */ NavigationEventPayload => Unit = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
@@ -122,8 +122,8 @@ object NavigationEventsProps {
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onDidBlur != null) __obj.updateDynamic("onDidBlur")(onDidBlur)
-    if (onDidFocus != null) __obj.updateDynamic("onDidFocus")(onDidFocus)
+    if (onDidBlur != null) __obj.updateDynamic("onDidBlur")(js.Any.fromFunction1(onDidBlur))
+    if (onDidFocus != null) __obj.updateDynamic("onDidFocus")(js.Any.fromFunction1(onDidFocus))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
@@ -143,8 +143,8 @@ object NavigationEventsProps {
     if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onWillBlur != null) __obj.updateDynamic("onWillBlur")(onWillBlur)
-    if (onWillFocus != null) __obj.updateDynamic("onWillFocus")(onWillFocus)
+    if (onWillBlur != null) __obj.updateDynamic("onWillBlur")(js.Any.fromFunction1(onWillBlur))
+    if (onWillFocus != null) __obj.updateDynamic("onWillFocus")(js.Any.fromFunction1(onWillFocus))
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)

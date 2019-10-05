@@ -27,13 +27,13 @@ object UpgradeStepItem {
   @scala.inline
   def apply(
     Issues: Issues = null,
-    ProgressPercent: js.UndefOr[Double] = js.undefined,
+    ProgressPercent: Int | scala.Double = null,
     UpgradeStep: UpgradeStep = null,
     UpgradeStepStatus: UpgradeStatus = null
   ): UpgradeStepItem = {
     val __obj = js.Dynamic.literal()
     if (Issues != null) __obj.updateDynamic("Issues")(Issues)
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent)
+    if (ProgressPercent != null) __obj.updateDynamic("ProgressPercent")(ProgressPercent.asInstanceOf[js.Any])
     if (UpgradeStep != null) __obj.updateDynamic("UpgradeStep")(UpgradeStep.asInstanceOf[js.Any])
     if (UpgradeStepStatus != null) __obj.updateDynamic("UpgradeStepStatus")(UpgradeStepStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeStepItem]

@@ -21,13 +21,9 @@ trait BatchListAttachedIndices extends js.Object {
 
 object BatchListAttachedIndices {
   @scala.inline
-  def apply(
-    TargetReference: ObjectReference,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null
-  ): BatchListAttachedIndices = {
+  def apply(TargetReference: ObjectReference, MaxResults: Int | Double = null, NextToken: NextToken = null): BatchListAttachedIndices = {
     val __obj = js.Dynamic.literal(TargetReference = TargetReference)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[BatchListAttachedIndices]
   }

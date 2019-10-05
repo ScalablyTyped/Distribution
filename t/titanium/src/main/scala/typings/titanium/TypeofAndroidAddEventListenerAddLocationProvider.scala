@@ -1,9 +1,9 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.GeolocationNs.AndroidNs.LocationProvider
-import typings.titanium.TitaniumNs.GeolocationNs.AndroidNs.LocationRule
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Geolocation.Android.LocationProvider
+import typings.titanium.Titanium.Geolocation.Android.LocationRule
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,7 +22,7 @@ trait DescribePlacementGroupsRequest extends js.Object {
 object DescribePlacementGroupsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     GroupNames: PlacementGroupStringList = null
   ): DescribePlacementGroupsRequest = {

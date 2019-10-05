@@ -2,7 +2,7 @@ package typings.arangodb.atArangodbFoxxOauth1Mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.Anon_Headers
-import typings.arangodb.ArangoDBNs.HttpMethod
+import typings.arangodb.ArangoDB.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

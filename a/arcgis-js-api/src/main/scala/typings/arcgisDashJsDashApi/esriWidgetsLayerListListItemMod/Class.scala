@@ -1,15 +1,15 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLayerListListItemMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionButton
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionToggle
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Error
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Layer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ListItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ListItemPanel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneView
+import typings.arcgisDashJsDashApi.__esri.ActionButton
+import typings.arcgisDashJsDashApi.__esri.ActionToggle
+import typings.arcgisDashJsDashApi.__esri.Collection
+import typings.arcgisDashJsDashApi.__esri.Error
+import typings.arcgisDashJsDashApi.__esri.Layer
+import typings.arcgisDashJsDashApi.__esri.LayerView
+import typings.arcgisDashJsDashApi.__esri.ListItem
+import typings.arcgisDashJsDashApi.__esri.ListItemPanel
+import typings.arcgisDashJsDashApi.__esri.MapView
+import typings.arcgisDashJsDashApi.__esri.SceneView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

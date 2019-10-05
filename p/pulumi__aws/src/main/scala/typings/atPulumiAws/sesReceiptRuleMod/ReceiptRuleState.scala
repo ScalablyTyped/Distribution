@@ -1,12 +1,12 @@
 package typings.atPulumiAws.sesReceiptRuleMod
 
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleAddHeaderAction
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleBounceAction
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleLambdaAction
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleS3Action
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleSnsAction
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleStopAction
-import typings.atPulumiAws.typesInputMod.sesNs.ReceiptRuleWorkmailAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleAddHeaderAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleBounceAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleLambdaAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleS3Action
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleSnsAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleStopAction
+import typings.atPulumiAws.typesInputMod.ses.ReceiptRuleWorkmailAction
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

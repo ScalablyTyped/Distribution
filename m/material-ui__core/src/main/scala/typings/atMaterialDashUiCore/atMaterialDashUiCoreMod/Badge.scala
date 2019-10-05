@@ -1,8 +1,10 @@
 package typings.atMaterialDashUiCore.atMaterialDashUiCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.badgeBadgeMod.BadgeProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +16,8 @@ class Badge protected ()
   def this(props: BadgeProps) = this()
   def this(props: BadgeProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/core", "Badge")
+@js.native
+object Badge extends TopLevel[ComponentType[BadgeProps]]
 

@@ -1,6 +1,6 @@
 package typings.electronDashClipboardDashExtended.electronDashClipboardDashExtendedMod
 
-import typings.electron.ElectronNs.Clipboard
+import typings.electron.Electron.Clipboard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

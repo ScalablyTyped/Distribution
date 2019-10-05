@@ -35,3 +35,11 @@ object TaggedTemplateExpression {
   }
 }
 
+@JSImport("babel-types", "taggedTemplateExpression")
+@js.native
+object taggedTemplateExpression extends js.Object {
+  def apply(): TaggedTemplateExpression = js.native
+  def apply(tag: Expression): TaggedTemplateExpression = js.native
+  def apply(tag: Expression, quasi: TemplateLiteral): TaggedTemplateExpression = js.native
+}
+

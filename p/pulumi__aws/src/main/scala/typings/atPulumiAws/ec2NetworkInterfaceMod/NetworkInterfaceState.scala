@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2NetworkInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.NetworkInterfaceAttachment
+import typings.atPulumiAws.typesInputMod.ec2.NetworkInterfaceAttachment
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

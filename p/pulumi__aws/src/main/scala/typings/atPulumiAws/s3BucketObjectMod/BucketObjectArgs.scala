@@ -2,8 +2,8 @@ package typings.atPulumiAws.s3BucketObjectMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.s3BucketMod.Bucket
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Asset
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Archive
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Asset
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

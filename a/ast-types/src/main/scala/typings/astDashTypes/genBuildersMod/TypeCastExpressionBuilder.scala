@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsExpressionLocTypeAnnotation
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.TypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TypeCastExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TypeCastExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

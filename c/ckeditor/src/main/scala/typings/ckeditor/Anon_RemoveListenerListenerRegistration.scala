@@ -1,6 +1,6 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.listenerRegistration
+import typings.ckeditor.CKEDITOR.listenerRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,10 @@
 package typings.reactDashPlacesDashAutocomplete
 
 import typings.react.Element
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.option
 import scala.scalajs.js
@@ -25,17 +28,17 @@ object Anon_Id {
   @scala.inline
   def apply(
     key: Double,
-    onClick: MouseEventHandler[Element],
-    onMouseDown: MouseEventHandler[Element],
-    onMouseEnter: MouseEventHandler[Element],
-    onMouseLeave: MouseEventHandler[Element],
-    onMouseUp: MouseEventHandler[Element],
-    onTouchEnd: TouchEventHandler[Element],
-    onTouchStart: TouchEventHandler[Element],
+    onClick: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseEnter: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseLeave: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onMouseUp: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onTouchEnd: TouchEvent[Element] => Unit,
+    onTouchStart: TouchEvent[Element] => Unit,
     role: option,
     id: String = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(key = key, onClick = onClick, onMouseDown = onMouseDown, onMouseEnter = onMouseEnter, onMouseLeave = onMouseLeave, onMouseUp = onMouseUp, onTouchEnd = onTouchEnd, onTouchStart = onTouchStart, role = role)
+    val __obj = js.Dynamic.literal(key = key, onClick = js.Any.fromFunction1(onClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), role = role)
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[Anon_Id]
   }

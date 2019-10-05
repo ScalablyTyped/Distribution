@@ -1,8 +1,8 @@
 package typings.activexDashScripting
 
-import typings.activexDashScripting.ScriptingNs.Dictionary
-import typings.activexDashScripting.ScriptingNs.Encoder
-import typings.activexDashScripting.ScriptingNs.FileSystemObject
+import typings.activexDashScripting.Scripting.Dictionary
+import typings.activexDashScripting.Scripting.Encoder
+import typings.activexDashScripting.Scripting.FileSystemObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

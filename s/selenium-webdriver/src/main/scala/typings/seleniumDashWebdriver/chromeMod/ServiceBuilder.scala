@@ -1,6 +1,6 @@
 package typings.seleniumDashWebdriver.chromeMod
 
-import typings.seleniumDashWebdriver.remoteMod.DriverServiceNs.Builder
+import typings.seleniumDashWebdriver.remoteMod.DriverService.Builder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

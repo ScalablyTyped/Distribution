@@ -1,6 +1,6 @@
 package typings.griddleDashReact.griddleDashReactMod
 
-import typings.griddleDashReact.griddleDashReactMod.utilsNs.SortProperties
+import typings.griddleDashReact.griddleDashReactMod.utils.SortProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

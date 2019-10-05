@@ -38,14 +38,14 @@ object ListAttributesRequest {
     attributeName: String = null,
     attributeValue: String = null,
     cluster: String = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
+    maxResults: Int | scala.Double = null,
     nextToken: String = null
   ): ListAttributesRequest = {
     val __obj = js.Dynamic.literal(targetType = targetType.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
     if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListAttributesRequest]
   }

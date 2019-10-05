@@ -1,7 +1,7 @@
 package typings.yaml.yamlMod
 
 import typings.std.Error
-import typings.yaml.yamlMod.cstNs.Node
+import typings.yaml.yamlMod.cst.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

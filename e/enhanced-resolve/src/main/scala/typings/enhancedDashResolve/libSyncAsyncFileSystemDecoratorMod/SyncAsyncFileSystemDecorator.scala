@@ -2,7 +2,7 @@ package typings.enhancedDashResolve.libSyncAsyncFileSystemDecoratorMod
 
 import typings.enhancedDashResolve.libCommonDashTypesMod.AbstractInputFileSystem
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`

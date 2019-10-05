@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.rdsNs.SecurityGroupIngress
+import typings.atPulumiAws.typesOutputMod.rds.SecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

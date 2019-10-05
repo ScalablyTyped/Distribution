@@ -33,3 +33,10 @@ object ExportDefaultSpecifier {
   }
 }
 
+@JSImport("babel-types", "exportDefaultSpecifier")
+@js.native
+object exportDefaultSpecifier extends js.Object {
+  def apply(): ExportDefaultSpecifier = js.native
+  def apply(exported: Identifier): ExportDefaultSpecifier = js.native
+}
+

@@ -100,13 +100,13 @@ object SimulationJob {
     lastStartedAt: LastStartedAt = null,
     lastUpdatedAt: LastUpdatedAt = null,
     loggingConfig: LoggingConfig = null,
-    maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
+    maxJobDurationInSeconds: Int | Double = null,
     name: Name = null,
     networkInterface: NetworkInterface = null,
     outputLocation: OutputLocation = null,
     robotApplications: RobotApplicationConfigs = null,
     simulationApplications: SimulationApplicationConfigs = null,
-    simulationTimeMillis: js.UndefOr[SimulationTimeMillis] = js.undefined,
+    simulationTimeMillis: Int | Double = null,
     status: SimulationJobStatus = null,
     tags: TagMap = null,
     vpcConfig: VPCConfigResponse = null
@@ -122,13 +122,13 @@ object SimulationJob {
     if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
-    if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds)
+    if (maxJobDurationInSeconds != null) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface)
     if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation)
     if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications)
     if (simulationApplications != null) __obj.updateDynamic("simulationApplications")(simulationApplications)
-    if (!js.isUndefined(simulationTimeMillis)) __obj.updateDynamic("simulationTimeMillis")(simulationTimeMillis)
+    if (simulationTimeMillis != null) __obj.updateDynamic("simulationTimeMillis")(simulationTimeMillis.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig)

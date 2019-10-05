@@ -21,9 +21,9 @@ trait GetIntentVersionsRequest extends js.Object {
 
 object GetIntentVersionsRequest {
   @scala.inline
-  def apply(name: IntentName, maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): GetIntentVersionsRequest = {
+  def apply(name: IntentName, maxResults: Int | Double = null, nextToken: NextToken = null): GetIntentVersionsRequest = {
     val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetIntentVersionsRequest]
   }

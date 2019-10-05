@@ -1,6 +1,6 @@
 package typings.mapsjs.mapsjsMod
 
-import typings.mapsjs.mapsjsMod.geometryNs.polygon
+import typings.mapsjs.mapsjsMod.geometry.polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

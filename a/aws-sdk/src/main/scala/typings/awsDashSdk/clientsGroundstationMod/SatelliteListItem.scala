@@ -22,12 +22,12 @@ trait SatelliteListItem extends js.Object {
 object SatelliteListItem {
   @scala.inline
   def apply(
-    noradSatelliteID: js.UndefOr[noradSatelliteID] = js.undefined,
+    noradSatelliteID: Int | scala.Double = null,
     satelliteArn: satelliteArn = null,
     satelliteId: Uuid = null
   ): SatelliteListItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noradSatelliteID)) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID)
+    if (noradSatelliteID != null) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID.asInstanceOf[js.Any])
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn)
     if (satelliteId != null) __obj.updateDynamic("satelliteId")(satelliteId)
     __obj.asInstanceOf[SatelliteListItem]

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Quat")
 @js.native
 class Quat ()
-  extends typings.playcanvas.pcNs.Quat {
+  extends typings.playcanvas.pc.Quat {
   def this(x: js.Array[Number]) = this()
   def this(x: Double) = this()
   def this(x: js.Array[Number], y: Double) = this()
@@ -41,7 +41,7 @@ object Quat extends js.Object {
     * @name pc.Quat.IDENTITY
     * @description A constant quaternion set to [0, 0, 0, 1] (the identity).
     */
-  val IDENTITY: typings.playcanvas.pcNs.Quat = js.native
+  val IDENTITY: typings.playcanvas.pc.Quat = js.native
   /**
     * @field
     * @static
@@ -50,6 +50,6 @@ object Quat extends js.Object {
     * @name pc.Quat.ZERO
     * @description A constant quaternion set to [0, 0, 0, 0].
     */
-  val ZERO: typings.playcanvas.pcNs.Quat = js.native
+  val ZERO: typings.playcanvas.pc.Quat = js.native
 }
 

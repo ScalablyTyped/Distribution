@@ -1,6 +1,6 @@
 package typings.popperDotJs
 
-import typings.popperDotJs.popperDotJsMod.PopperNs.Offset
+import typings.popperDotJs.popperDotJsMod.Popper.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,3 +15,12 @@ class ExpressionType protected () extends Type {
   var value: Expression = js.native
 }
 
+@JSImport("@angular/compiler/src/output/output_ast", "expressionType")
+@js.native
+object expressionType extends js.Object {
+  def apply(expr: Expression): ExpressionType = js.native
+  def apply(expr: Expression, typeModifiers: js.Array[TypeModifier]): ExpressionType = js.native
+  def apply(expr: Expression, typeModifiers: js.Array[TypeModifier], typeParams: js.Array[Type]): ExpressionType = js.native
+  def apply(expr: Expression, typeModifiers: Null, typeParams: js.Array[Type]): ExpressionType = js.native
+}
+

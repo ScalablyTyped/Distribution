@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gematriya"
-version := "2.0-dt-20190805Z-3d91f8"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20190805Z-313c2c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

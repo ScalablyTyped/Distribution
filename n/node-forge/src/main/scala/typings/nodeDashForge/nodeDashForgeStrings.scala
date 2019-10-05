@@ -1,9 +1,9 @@
 package typings.nodeDashForge
 
 import typings.nodeDashForge.nodeDashForgeMod.Encoding
-import typings.nodeDashForge.nodeDashForgeMod.cipherNs.Algorithm
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.rsaNs._SignatureScheme
+import typings.nodeDashForge.nodeDashForgeMod.cipher.Algorithm
+import typings.nodeDashForge.nodeDashForgeMod.pki.rsa._EncryptionScheme
+import typings.nodeDashForge.nodeDashForgeMod.pki.rsa._SignatureScheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,7 +79,7 @@ object nodeDashForgeStrings {
   
   @js.native
   sealed trait md5
-    extends typings.nodeDashForge.nodeDashForgeMod.hmacNs.Algorithm
+    extends typings.nodeDashForge.nodeDashForgeMod.hmac.Algorithm
   
   @js.native
   sealed trait raw extends Encoding
@@ -89,14 +89,14 @@ object nodeDashForgeStrings {
   
   @js.native
   sealed trait sha1
-    extends typings.nodeDashForge.nodeDashForgeMod.hmacNs.Algorithm
+    extends typings.nodeDashForge.nodeDashForgeMod.hmac.Algorithm
   
   @js.native
   sealed trait sha224 extends js.Object
   
   @js.native
   sealed trait sha256
-    extends typings.nodeDashForge.nodeDashForgeMod.hmacNs.Algorithm
+    extends typings.nodeDashForge.nodeDashForgeMod.hmac.Algorithm
   
   @js.native
   sealed trait sha384 extends js.Object

@@ -1,6 +1,6 @@
 package typings.webgme.pluginPluginBaseMod
 
-import typings.webgme.GmePluginNs.PluginBase
+import typings.webgme.GmePlugin.PluginBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

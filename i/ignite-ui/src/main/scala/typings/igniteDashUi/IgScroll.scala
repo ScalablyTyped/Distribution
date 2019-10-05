@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -224,9 +225,9 @@ object IgScroll {
     minThumbSize: Double | String = null,
     modifyDOM: js.UndefOr[Boolean] = js.undefined,
     regional: String | js.Object = null,
-    rendered: RenderedEvent = null,
-    resized: ResizedEvent = null,
-    resizing: ResizingEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    resized: (/* event */ Event, /* ui */ ResizedEventUIParam) => Unit = null,
+    resizing: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit = null,
     scrollHeight: Int | Double = null,
     scrollLeft: Int | Double = null,
     scrollOnlyHBar: js.UndefOr[Boolean] = js.undefined,
@@ -238,8 +239,8 @@ object IgScroll {
     scrollbarType: String = null,
     scrollbarV: String = null,
     scrollbarVParent: String = null,
-    scrolled: ScrolledEvent = null,
-    scrolling: ScrollingEvent = null,
+    scrolled: (/* event */ Event, /* ui */ ScrolledEventUIParam) => Unit = null,
+    scrolling: (/* event */ Event, /* ui */ ScrollingEventUIParam) => Unit = null,
     smallIncrementStep: Int | Double = null,
     smoothing: js.UndefOr[Boolean] = js.undefined,
     smoothingDuration: Int | Double = null,
@@ -247,9 +248,9 @@ object IgScroll {
     swipeToleranceX: Int | Double = null,
     syncedElemsH: js.Array[_] = null,
     syncedElemsV: js.Array[_] = null,
-    thumbDragEnd: ThumbDragEndEvent = null,
-    thumbDragMove: ThumbDragMoveEvent = null,
-    thumbDragStart: ThumbDragStartEvent = null,
+    thumbDragEnd: (/* event */ Event, /* ui */ ThumbDragEndEventUIParam) => Unit = null,
+    thumbDragMove: (/* event */ Event, /* ui */ ThumbDragMoveEventUIParam) => Unit = null,
+    thumbDragStart: (/* event */ Event, /* ui */ ThumbDragStartEventUIParam) => Unit = null,
     wheelStep: Int | Double = null
   ): IgScroll = {
     val __obj = js.Dynamic.literal()
@@ -265,9 +266,9 @@ object IgScroll {
     if (minThumbSize != null) __obj.updateDynamic("minThumbSize")(minThumbSize.asInstanceOf[js.Any])
     if (!js.isUndefined(modifyDOM)) __obj.updateDynamic("modifyDOM")(modifyDOM)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (resized != null) __obj.updateDynamic("resized")(resized)
-    if (resizing != null) __obj.updateDynamic("resizing")(resizing)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (resized != null) __obj.updateDynamic("resized")(js.Any.fromFunction2(resized))
+    if (resizing != null) __obj.updateDynamic("resizing")(js.Any.fromFunction2(resizing))
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
     if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollOnlyHBar)) __obj.updateDynamic("scrollOnlyHBar")(scrollOnlyHBar)
@@ -279,8 +280,8 @@ object IgScroll {
     if (scrollbarType != null) __obj.updateDynamic("scrollbarType")(scrollbarType)
     if (scrollbarV != null) __obj.updateDynamic("scrollbarV")(scrollbarV)
     if (scrollbarVParent != null) __obj.updateDynamic("scrollbarVParent")(scrollbarVParent)
-    if (scrolled != null) __obj.updateDynamic("scrolled")(scrolled)
-    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling)
+    if (scrolled != null) __obj.updateDynamic("scrolled")(js.Any.fromFunction2(scrolled))
+    if (scrolling != null) __obj.updateDynamic("scrolling")(js.Any.fromFunction2(scrolling))
     if (smallIncrementStep != null) __obj.updateDynamic("smallIncrementStep")(smallIncrementStep.asInstanceOf[js.Any])
     if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing)
     if (smoothingDuration != null) __obj.updateDynamic("smoothingDuration")(smoothingDuration.asInstanceOf[js.Any])
@@ -288,9 +289,9 @@ object IgScroll {
     if (swipeToleranceX != null) __obj.updateDynamic("swipeToleranceX")(swipeToleranceX.asInstanceOf[js.Any])
     if (syncedElemsH != null) __obj.updateDynamic("syncedElemsH")(syncedElemsH)
     if (syncedElemsV != null) __obj.updateDynamic("syncedElemsV")(syncedElemsV)
-    if (thumbDragEnd != null) __obj.updateDynamic("thumbDragEnd")(thumbDragEnd)
-    if (thumbDragMove != null) __obj.updateDynamic("thumbDragMove")(thumbDragMove)
-    if (thumbDragStart != null) __obj.updateDynamic("thumbDragStart")(thumbDragStart)
+    if (thumbDragEnd != null) __obj.updateDynamic("thumbDragEnd")(js.Any.fromFunction2(thumbDragEnd))
+    if (thumbDragMove != null) __obj.updateDynamic("thumbDragMove")(js.Any.fromFunction2(thumbDragMove))
+    if (thumbDragStart != null) __obj.updateDynamic("thumbDragStart")(js.Any.fromFunction2(thumbDragStart))
     if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgScroll]
   }

@@ -25,13 +25,5 @@ object ^ extends js.Object {
     */
   def apply(stop: Double): Wrap = js.native
   def apply(stop: Double, params: Anon_Mode): Wrap = js.native
-  /**
-    * Wrap lines until column `stop`. Break up chunks longer than `stop - start`.
-    */
-  def hard(start: Double, stop: Double): Wrap = js.native
-  /**
-    * Wrap lines until column `stop`. Break up chunks longer than `stop`.
-    */
-  def hard(stop: Double): Wrap = js.native
 }
 

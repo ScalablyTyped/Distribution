@@ -1,5 +1,6 @@
 package typings.aureliaDashDependencyDashInjection.aureliaDashDependencyDashInjectionMod
 
+import typings.aureliaDashDependencyDashInjection.Anon_Inject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,5 +24,25 @@ object NewInstance extends js.Object {
     key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs],
     dynamicDependencies: (/* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any)*
   ): NewInstance[TBase, TImpl, TArgs] = js.native
+}
+
+@JSImport("aurelia-dependency-injection", "newInstance")
+@js.native
+object newInstance extends js.Object {
+  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): js.Function3[
+    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with Anon_Inject[TArgs], 
+    /* _key */ js.Any, 
+    /* index */ Double, 
+    Unit
+  ] = js.native
+  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+    asKeyOrTarget: (PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) with Anon_Inject[TArgs],
+    dynamicDependencies: (/* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any)*
+  ): js.Function3[
+    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with Anon_Inject[TArgs], 
+    /* _key */ js.Any, 
+    /* index */ Double, 
+    Unit
+  ] = js.native
 }
 

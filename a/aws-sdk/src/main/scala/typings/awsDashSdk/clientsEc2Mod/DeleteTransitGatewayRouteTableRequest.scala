@@ -17,7 +17,7 @@ trait DeleteTransitGatewayRouteTableRequest extends js.Object {
 
 object DeleteTransitGatewayRouteTableRequest {
   @scala.inline
-  def apply(TransitGatewayRouteTableId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteTransitGatewayRouteTableRequest = {
+  def apply(TransitGatewayRouteTableId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteTransitGatewayRouteTableRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayRouteTableId = TransitGatewayRouteTableId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteTransitGatewayRouteTableRequest]

@@ -1,6 +1,6 @@
 package typings.easyDashXapiDashSupertest.httpMod
 
-import typings.easyDashXapiDashSupertest.NodeJSNs.Timer
+import typings.easyDashXapiDashSupertest.NodeJS.Timer
 import typings.easyDashXapiDashSupertest.netMod.Socket
 import typings.easyDashXapiDashSupertest.streamMod.Readable
 import scala.scalajs.js

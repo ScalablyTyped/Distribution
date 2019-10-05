@@ -1,6 +1,6 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.systemNs.memoryNs.MemoryInfo
+import typings.chrome.chrome.system.memory.MemoryInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

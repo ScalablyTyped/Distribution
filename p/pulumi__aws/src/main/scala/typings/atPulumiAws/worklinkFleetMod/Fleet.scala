@@ -1,7 +1,7 @@
 package typings.atPulumiAws.worklinkFleetMod
 
-import typings.atPulumiAws.typesOutputMod.worklinkNs.FleetIdentityProvider
-import typings.atPulumiAws.typesOutputMod.worklinkNs.FleetNetwork
+import typings.atPulumiAws.typesOutputMod.worklink.FleetIdentityProvider
+import typings.atPulumiAws.typesOutputMod.worklink.FleetNetwork
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

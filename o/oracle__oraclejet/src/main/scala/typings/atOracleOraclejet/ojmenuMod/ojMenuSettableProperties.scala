@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojmenuMod
 
 import typings.atOracleOraclejet.Anon_AriaFocusSkipLink
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentSettableProperties
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.OpenOptions
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.OpenOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

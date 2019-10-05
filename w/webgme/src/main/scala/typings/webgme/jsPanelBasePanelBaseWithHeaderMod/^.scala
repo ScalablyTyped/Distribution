@@ -1,8 +1,8 @@
 package typings.webgme.jsPanelBasePanelBaseWithHeaderMod
 
-import typings.webgme.GmePanelNs.LayoutManager
-import typings.webgme.GmePanelNs.OptionsWithHeader
-import typings.webgme.GmePanelNs.PanelBaseWithHeader
+import typings.webgme.GmePanel.LayoutManager
+import typings.webgme.GmePanel.OptionsWithHeader
+import typings.webgme.GmePanel.PanelBaseWithHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

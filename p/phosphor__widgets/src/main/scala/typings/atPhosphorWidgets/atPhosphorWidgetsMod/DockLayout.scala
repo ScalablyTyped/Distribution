@@ -1,6 +1,6 @@
 package typings.atPhosphorWidgets.atPhosphorWidgetsMod
 
-import typings.atPhosphorWidgets.libDocklayoutMod.DockLayoutNs.IOptions
+import typings.atPhosphorWidgets.libDocklayoutMod.DockLayout.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

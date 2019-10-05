@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -440,23 +441,23 @@ object IgGrid {
     avgColumnWidth: String | Double = null,
     avgRowHeight: String | Double = null,
     caption: String = null,
-    captionRendered: CaptionRenderedEvent = null,
-    captionRendering: CaptionRenderingEvent = null,
-    cellClick: CellClickEvent = null,
-    cellRightClick: CellRightClickEvent = null,
+    captionRendered: (/* event */ Event, /* ui */ CaptionRenderedEventUIParam) => Unit = null,
+    captionRendering: (/* event */ Event, /* ui */ CaptionRenderingEventUIParam) => Unit = null,
+    cellClick: (/* event */ Event, /* ui */ CellClickEventUIParam) => Unit = null,
+    cellRightClick: (/* event */ Event, /* ui */ CellRightClickEventUIParam) => Unit = null,
     columnVirtualization: js.UndefOr[Boolean] = js.undefined,
     columns: js.Array[IgGridColumn] = null,
-    columnsCollectionModified: ColumnsCollectionModifiedEvent = null,
-    created: CreatedEvent = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
-    dataRendered: DataRenderedEvent = null,
-    dataRendering: DataRenderingEvent = null,
+    columnsCollectionModified: (/* event */ Event, /* ui */ ColumnsCollectionModifiedEventUIParam) => Unit = null,
+    created: (/* event */ Event, /* ui */ CreatedEventUIParam) => Unit = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
+    dataRendered: (/* event */ Event, /* ui */ DataRenderedEventUIParam) => Unit = null,
+    dataRendering: (/* event */ Event, /* ui */ DataRenderingEventUIParam) => Unit = null,
     dataSource: js.Array[_] | js.Object | String = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     defaultColumnWidth: String | Double = null,
-    destroyed: DestroyedEvent = null,
+    destroyed: (/* event */ Event, /* ui */ DestroyedEventUIParam) => Unit = null,
     enableHoverStyles: js.UndefOr[Boolean] = js.undefined,
     enableResizeContainerCheck: js.UndefOr[Boolean] = js.undefined,
     enableUTCDates: js.UndefOr[Boolean] = js.undefined,
@@ -464,11 +465,11 @@ object IgGrid {
     features: js.Array[IgGridFeature] = null,
     fixedFooters: js.UndefOr[Boolean] = js.undefined,
     fixedHeaders: js.UndefOr[Boolean] = js.undefined,
-    footerRendered: FooterRenderedEvent = null,
-    footerRendering: FooterRenderingEvent = null,
-    headerCellRendered: HeaderCellRenderedEvent = null,
-    headerRendered: HeaderRenderedEvent = null,
-    headerRendering: HeaderRenderingEvent = null,
+    footerRendered: (/* event */ Event, /* ui */ FooterRenderedEventUIParam) => Unit = null,
+    footerRendering: (/* event */ Event, /* ui */ FooterRenderingEventUIParam) => Unit = null,
+    headerCellRendered: (/* event */ Event, /* ui */ HeaderCellRenderedEventUIParam) => Unit = null,
+    headerRendered: (/* event */ Event, /* ui */ HeaderRenderedEventUIParam) => Unit = null,
+    headerRendering: (/* event */ Event, /* ui */ HeaderRenderingEventUIParam) => Unit = null,
     height: String | Double = null,
     jsonpRequest: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
@@ -478,18 +479,18 @@ object IgGrid {
     primaryKey: String = null,
     regional: String | js.Object = null,
     renderCheckboxes: js.UndefOr[Boolean] = js.undefined,
-    rendered: RenderedEvent = null,
-    rendering: RenderingEvent = null,
-    requestError: RequestErrorEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    rendering: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit = null,
+    requestError: (/* event */ Event, /* ui */ RequestErrorEventUIParam) => Unit = null,
     requestType: String = null,
     responseContentType: String = null,
     responseDataKey: String = null,
     responseTotalRecCountKey: String = null,
     restSettings: IgGridRestSettings = null,
     rowVirtualization: js.UndefOr[Boolean] = js.undefined,
-    rowsRendered: RowsRenderedEvent = null,
-    rowsRendering: RowsRenderingEvent = null,
-    schemaGenerated: SchemaGeneratedEvent = null,
+    rowsRendered: (/* event */ Event, /* ui */ RowsRenderedEventUIParam) => Unit = null,
+    rowsRendering: (/* event */ Event, /* ui */ RowsRenderingEventUIParam) => Unit = null,
+    schemaGenerated: (/* event */ Event, /* ui */ SchemaGeneratedEventUIParam) => Unit = null,
     scrollSettings: IgGridScrollSettings = null,
     serializeTransactionLog: js.UndefOr[Boolean] = js.undefined,
     showFooter: js.UndefOr[Boolean] = js.undefined,
@@ -515,23 +516,23 @@ object IgGrid {
     if (avgColumnWidth != null) __obj.updateDynamic("avgColumnWidth")(avgColumnWidth.asInstanceOf[js.Any])
     if (avgRowHeight != null) __obj.updateDynamic("avgRowHeight")(avgRowHeight.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (captionRendered != null) __obj.updateDynamic("captionRendered")(captionRendered)
-    if (captionRendering != null) __obj.updateDynamic("captionRendering")(captionRendering)
-    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
-    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(cellRightClick)
+    if (captionRendered != null) __obj.updateDynamic("captionRendered")(js.Any.fromFunction2(captionRendered))
+    if (captionRendering != null) __obj.updateDynamic("captionRendering")(js.Any.fromFunction2(captionRendering))
+    if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))
+    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(js.Any.fromFunction2(cellRightClick))
     if (!js.isUndefined(columnVirtualization)) __obj.updateDynamic("columnVirtualization")(columnVirtualization)
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(columnsCollectionModified)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
-    if (dataRendered != null) __obj.updateDynamic("dataRendered")(dataRendered)
-    if (dataRendering != null) __obj.updateDynamic("dataRendering")(dataRendering)
+    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(js.Any.fromFunction2(columnsCollectionModified))
+    if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction2(created))
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
+    if (dataRendered != null) __obj.updateDynamic("dataRendered")(js.Any.fromFunction2(dataRendered))
+    if (dataRendering != null) __obj.updateDynamic("dataRendering")(js.Any.fromFunction2(dataRendering))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (destroyed != null) __obj.updateDynamic("destroyed")(destroyed)
+    if (destroyed != null) __obj.updateDynamic("destroyed")(js.Any.fromFunction2(destroyed))
     if (!js.isUndefined(enableHoverStyles)) __obj.updateDynamic("enableHoverStyles")(enableHoverStyles)
     if (!js.isUndefined(enableResizeContainerCheck)) __obj.updateDynamic("enableResizeContainerCheck")(enableResizeContainerCheck)
     if (!js.isUndefined(enableUTCDates)) __obj.updateDynamic("enableUTCDates")(enableUTCDates)
@@ -539,11 +540,11 @@ object IgGrid {
     if (features != null) __obj.updateDynamic("features")(features)
     if (!js.isUndefined(fixedFooters)) __obj.updateDynamic("fixedFooters")(fixedFooters)
     if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
-    if (footerRendered != null) __obj.updateDynamic("footerRendered")(footerRendered)
-    if (footerRendering != null) __obj.updateDynamic("footerRendering")(footerRendering)
-    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(headerCellRendered)
-    if (headerRendered != null) __obj.updateDynamic("headerRendered")(headerRendered)
-    if (headerRendering != null) __obj.updateDynamic("headerRendering")(headerRendering)
+    if (footerRendered != null) __obj.updateDynamic("footerRendered")(js.Any.fromFunction2(footerRendered))
+    if (footerRendering != null) __obj.updateDynamic("footerRendering")(js.Any.fromFunction2(footerRendering))
+    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(js.Any.fromFunction2(headerCellRendered))
+    if (headerRendered != null) __obj.updateDynamic("headerRendered")(js.Any.fromFunction2(headerRendered))
+    if (headerRendering != null) __obj.updateDynamic("headerRendering")(js.Any.fromFunction2(headerRendering))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(jsonpRequest)) __obj.updateDynamic("jsonpRequest")(jsonpRequest)
     if (language != null) __obj.updateDynamic("language")(language)
@@ -553,18 +554,18 @@ object IgGrid {
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (!js.isUndefined(renderCheckboxes)) __obj.updateDynamic("renderCheckboxes")(renderCheckboxes)
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
-    if (requestError != null) __obj.updateDynamic("requestError")(requestError)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2(rendering))
+    if (requestError != null) __obj.updateDynamic("requestError")(js.Any.fromFunction2(requestError))
     if (requestType != null) __obj.updateDynamic("requestType")(requestType)
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings)
     if (!js.isUndefined(rowVirtualization)) __obj.updateDynamic("rowVirtualization")(rowVirtualization)
-    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(rowsRendered)
-    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(rowsRendering)
-    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(schemaGenerated)
+    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(js.Any.fromFunction2(rowsRendered))
+    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(js.Any.fromFunction2(rowsRendering))
+    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(js.Any.fromFunction2(schemaGenerated))
     if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
     if (!js.isUndefined(serializeTransactionLog)) __obj.updateDynamic("serializeTransactionLog")(serializeTransactionLog)
     if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)

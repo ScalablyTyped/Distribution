@@ -10,7 +10,7 @@ import typings.mongoose.mongooseMod.Model
 import typings.mongoose.mongooseMod.ModelUpdateOptions
 import typings.mongoose.mongooseMod.Query
 import typings.mongoose.mongooseMod.QueryFindOneAndUpdateOptions
-import typings.mongoose.mongooseMod.TypesNs.ObjectId
+import typings.mongoose.mongooseMod.Types.ObjectId
 import typings.mongooseDashDelete.Fn_Callback
 import typings.mongooseDashDelete.Fn_CallbackConditions
 import typings.mongooseDashDelete.Fn_CallbackConditionsDoc

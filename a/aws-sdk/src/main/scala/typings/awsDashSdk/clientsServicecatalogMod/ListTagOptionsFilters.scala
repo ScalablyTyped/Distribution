@@ -21,11 +21,7 @@ trait ListTagOptionsFilters extends js.Object {
 
 object ListTagOptionsFilters {
   @scala.inline
-  def apply(
-    Active: js.UndefOr[TagOptionActive] = js.undefined,
-    Key: TagOptionKey = null,
-    Value: TagOptionValue = null
-  ): ListTagOptionsFilters = {
+  def apply(Active: js.UndefOr[Boolean] = js.undefined, Key: TagOptionKey = null, Value: TagOptionValue = null): ListTagOptionsFilters = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active)
     if (Key != null) __obj.updateDynamic("Key")(Key)

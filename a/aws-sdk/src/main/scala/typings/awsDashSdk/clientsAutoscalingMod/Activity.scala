@@ -58,14 +58,14 @@ object Activity {
     Description: XmlString = null,
     Details: XmlString = null,
     EndTime: TimestampType = null,
-    Progress: js.UndefOr[Progress] = js.undefined,
+    Progress: Int | Double = null,
     StatusMessage: XmlStringMaxLen255 = null
   ): Activity = {
     val __obj = js.Dynamic.literal(ActivityId = ActivityId, AutoScalingGroupName = AutoScalingGroupName, Cause = Cause, StartTime = StartTime, StatusCode = StatusCode.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Details != null) __obj.updateDynamic("Details")(Details)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(Progress)) __obj.updateDynamic("Progress")(Progress)
+    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage)
     __obj.asInstanceOf[Activity]
   }

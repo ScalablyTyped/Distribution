@@ -52,3 +52,167 @@ object ObjectTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "objectTypeAnnotation")
+@js.native
+object objectTypeAnnotation extends js.Object {
+  def apply(properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty]): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: Null,
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: Null,
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: Null,
+    internalSlots: Null,
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: Null,
+    internalSlots: Null,
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: Null,
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: Null,
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot]
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: Null,
+    internalSlots: Null,
+    exact: Boolean
+  ): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: Null,
+    callProperties: Null,
+    internalSlots: Null,
+    exact: Boolean,
+    inexact: Boolean
+  ): ObjectTypeAnnotation = js.native
+}
+

@@ -23,13 +23,13 @@ object ScalingParameters {
   @scala.inline
   def apply(
     DesiredInstanceType: PartitionInstanceType = null,
-    DesiredPartitionCount: js.UndefOr[UIntValue] = js.undefined,
-    DesiredReplicationCount: js.UndefOr[UIntValue] = js.undefined
+    DesiredPartitionCount: Int | scala.Double = null,
+    DesiredReplicationCount: Int | scala.Double = null
   ): ScalingParameters = {
     val __obj = js.Dynamic.literal()
     if (DesiredInstanceType != null) __obj.updateDynamic("DesiredInstanceType")(DesiredInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredPartitionCount)) __obj.updateDynamic("DesiredPartitionCount")(DesiredPartitionCount)
-    if (!js.isUndefined(DesiredReplicationCount)) __obj.updateDynamic("DesiredReplicationCount")(DesiredReplicationCount)
+    if (DesiredPartitionCount != null) __obj.updateDynamic("DesiredPartitionCount")(DesiredPartitionCount.asInstanceOf[js.Any])
+    if (DesiredReplicationCount != null) __obj.updateDynamic("DesiredReplicationCount")(DesiredReplicationCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingParameters]
   }
 }

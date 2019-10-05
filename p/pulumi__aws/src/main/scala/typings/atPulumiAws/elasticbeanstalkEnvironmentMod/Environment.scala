@@ -3,8 +3,8 @@ package typings.atPulumiAws.elasticbeanstalkEnvironmentMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.atPulumiAws.elasticbeanstalkApplicationVersionMod.ApplicationVersion
-import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.EnvironmentAllSetting
-import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.EnvironmentSetting
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalk.EnvironmentAllSetting
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalk.EnvironmentSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

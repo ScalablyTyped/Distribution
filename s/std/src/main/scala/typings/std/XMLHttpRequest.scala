@@ -152,10 +152,6 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
 
 @JSGlobal("XMLHttpRequest")
 @js.native
-class XMLHttpRequestCls () extends XMLHttpRequest
-
-@JSGlobal("XMLHttpRequest")
-@js.native
 object XMLHttpRequest extends Instantiable0[XMLHttpRequest] {
   val DONE: Double = js.native
   val HEADERS_RECEIVED: Double = js.native

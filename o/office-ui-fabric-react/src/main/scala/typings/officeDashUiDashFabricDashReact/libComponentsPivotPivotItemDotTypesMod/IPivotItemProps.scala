@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -73,7 +74,7 @@ object IPivotItemProps {
     itemKey: String = null,
     keytipProps: IKeytipProps = null,
     linkText: String = null,
-    onRenderItemLink: IRenderFunction[IPivotItemProps] = null
+    onRenderItemLink: (/* props */ js.UndefOr[IPivotItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPivotItemProps], Element | Null]]) => Element | Null = null
   ): IPivotItemProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
@@ -86,7 +87,7 @@ object IPivotItemProps {
     if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
     if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
     if (linkText != null) __obj.updateDynamic("linkText")(linkText)
-    if (onRenderItemLink != null) __obj.updateDynamic("onRenderItemLink")(onRenderItemLink)
+    if (onRenderItemLink != null) __obj.updateDynamic("onRenderItemLink")(js.Any.fromFunction2(onRenderItemLink))
     __obj.asInstanceOf[IPivotItemProps]
   }
 }

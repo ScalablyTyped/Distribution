@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TypeQuery")
 @js.native
 class TypeQuery protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TypeQuery {
-  def this(name: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.TypeQuery {
+  def this(name: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

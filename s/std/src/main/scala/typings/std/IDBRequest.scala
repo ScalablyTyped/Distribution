@@ -97,11 +97,6 @@ trait IDBRequest[T] extends EventTarget {
 
 @JSGlobal("IDBRequest")
 @js.native
-class IDBRequestCls ()
-  extends IDBRequest[js.Any]
-
-@JSGlobal("IDBRequest")
-@js.native
 object IDBRequest
   extends Instantiable0[IDBRequest[js.Any]]
 

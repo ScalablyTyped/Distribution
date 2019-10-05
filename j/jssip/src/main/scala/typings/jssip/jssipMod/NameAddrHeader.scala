@@ -20,3 +20,9 @@ class NameAddrHeader protected () extends js.Object {
   def setParam(key: String, value: String): Unit = js.native
 }
 
+@JSImport("jssip", "NameAddrHeader")
+@js.native
+object NameAddrHeader extends js.Object {
+  def parse(nameAddrHeader: String): NameAddrHeader = js.native
+}
+

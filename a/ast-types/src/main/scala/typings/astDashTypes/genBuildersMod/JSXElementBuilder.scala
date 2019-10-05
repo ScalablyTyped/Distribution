@@ -8,7 +8,7 @@ import typings.astDashTypes.genKindsMod.JSXFragmentKind
 import typings.astDashTypes.genKindsMod.JSXOpeningElementKind
 import typings.astDashTypes.genKindsMod.JSXTextKind
 import typings.astDashTypes.genKindsMod.LiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXElement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

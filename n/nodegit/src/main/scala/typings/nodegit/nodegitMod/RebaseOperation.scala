@@ -9,3 +9,9 @@ import scala.scalajs.js.annotation._
 class RebaseOperation ()
   extends typings.nodegit.rebaseDashOperationMod.RebaseOperation
 
+@JSImport("nodegit", "RebaseOperation")
+@js.native
+object RebaseOperation extends js.Object {
+  type REBASE_OPERATION = typings.nodegit.rebaseDashOperationMod.RebaseOperation.REBASE_OPERATION
+}
+

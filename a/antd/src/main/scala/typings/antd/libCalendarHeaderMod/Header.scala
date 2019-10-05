@@ -4,7 +4,7 @@ import typings.antd.Anon_MonthReactNode
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.antd.libRadioInterfaceMod.RadioChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js

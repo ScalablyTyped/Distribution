@@ -24,3 +24,10 @@ object Atom {
   }
 }
 
+@JSImport("falcor-json-graph", "atom")
+@js.native
+object atom extends js.Object {
+  def apply(value: js.Any): Atom = js.native
+  def apply(value: js.Any, props: Sentinel): Atom = js.native
+}
+

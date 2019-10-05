@@ -16,10 +16,14 @@ trait Config extends js.Object {
 
 object Config {
   @scala.inline
-  def apply(broadcaster: String = null, defaultHandler: HandlerFn = null, pusher: Record[String, _] = null): Config = {
+  def apply(
+    broadcaster: String = null,
+    defaultHandler: /* payload */ js.UndefOr[js.Any] => js.Any = null,
+    pusher: Record[String, _] = null
+  ): Config = {
     val __obj = js.Dynamic.literal()
     if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster)
-    if (defaultHandler != null) __obj.updateDynamic("defaultHandler")(defaultHandler)
+    if (defaultHandler != null) __obj.updateDynamic("defaultHandler")(js.Any.fromFunction1(defaultHandler))
     if (pusher != null) __obj.updateDynamic("pusher")(pusher)
     __obj.asInstanceOf[Config]
   }

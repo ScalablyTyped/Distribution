@@ -10,8 +10,8 @@ trait ResponderProvided extends js.Object {
 
 object ResponderProvided {
   @scala.inline
-  def apply(announce: Announce): ResponderProvided = {
-    val __obj = js.Dynamic.literal(announce = announce)
+  def apply(announce: /* message */ String => Unit): ResponderProvided = {
+    val __obj = js.Dynamic.literal(announce = js.Any.fromFunction1(announce))
   
     __obj.asInstanceOf[ResponderProvided]
   }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "kms-json"
-version := "1.1-dt-20180214Z-b40ac1"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20180214Z-dcc20e"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

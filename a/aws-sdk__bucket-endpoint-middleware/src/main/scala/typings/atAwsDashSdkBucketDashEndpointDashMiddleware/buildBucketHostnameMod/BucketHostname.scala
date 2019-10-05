@@ -18,3 +18,11 @@ object BucketHostname {
   }
 }
 
+@JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketHostname", "bucketHostname")
+@js.native
+object bucketHostname extends js.Object {
+  def apply(
+    hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
+  ): BucketHostname = js.native
+}
+

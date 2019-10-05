@@ -11,7 +11,9 @@ import typings.antdDashMobile.antdDashMobileStrings.middle
 import typings.antdDashMobile.antdDashMobileStrings.top
 import typings.antdDashMobile.antdDashMobileStrings.up
 import typings.antdDashMobile.libListPropsTypeMod.ListItemPropsType
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -38,7 +40,7 @@ object ListItemProps {
     error: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,
     multipleLine: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[HTMLDivElement] = null,
+    onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     platform: android | ios = null,
     prefixCls: String = null,
     role: String = null,
@@ -55,7 +57,7 @@ object ListItemProps {
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (!js.isUndefined(multipleLine)) __obj.updateDynamic("multipleLine")(multipleLine)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)

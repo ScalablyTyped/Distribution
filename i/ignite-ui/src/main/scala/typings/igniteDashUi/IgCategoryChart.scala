@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -919,7 +920,7 @@ object IgCategoryChart {
     animateSeriesWhenAxisRangeChanges: js.UndefOr[Boolean] = js.undefined,
     bottomMargin: Int | Double = null,
     brushes: js.Any = null,
-    calloutStyleUpdating: CalloutStyleUpdatingEvent = null,
+    calloutStyleUpdating: (/* event */ Event, /* ui */ CalloutStyleUpdatingEventUIParam) => Unit = null,
     calloutStyleUpdatingEventEnabled: js.UndefOr[Boolean] = js.undefined,
     calloutsContentMemberPath: String = null,
     calloutsItemsSource: js.Any = null,
@@ -932,15 +933,15 @@ object IgCategoryChart {
     crosshairsAnnotationEnabled: js.UndefOr[Boolean] = js.undefined,
     crosshairsDisplayMode: String = null,
     crosshairsSnapToData: js.UndefOr[Boolean] = js.undefined,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     excludedProperties: js.Any = null,
     finalValueAnnotationsVisible: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
-    hideTooltip: HideTooltipEvent = null,
+    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
     includedProperties: js.Any = null,
     isCategoryHighlightingEnabled: js.UndefOr[Boolean] = js.undefined,
     isHorizontalZoomEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -961,18 +962,18 @@ object IgCategoryChart {
     negativeOutlines: js.Any = null,
     outlines: js.Any = null,
     pixelScalingRatio: Int | Double = null,
-    propertyChanged: PropertyChangedEvent = null,
+    propertyChanged: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit = null,
     resolution: Int | Double = null,
     responseDataKey: String = null,
     responseTotalRecCountKey: String = null,
     rightMargin: Int | Double = null,
-    seriesAdded: SeriesAddedEvent = null,
-    seriesPointerDown: SeriesPointerDownEvent = null,
-    seriesPointerEnter: SeriesPointerEnterEvent = null,
-    seriesPointerLeave: SeriesPointerLeaveEvent = null,
-    seriesPointerMove: SeriesPointerMoveEvent = null,
-    seriesPointerUp: SeriesPointerUpEvent = null,
-    seriesRemoved: SeriesRemovedEvent = null,
+    seriesAdded: (/* event */ Event, /* ui */ SeriesAddedEventUIParam) => Unit = null,
+    seriesPointerDown: (/* event */ Event, /* ui */ SeriesPointerDownEventUIParam) => Unit = null,
+    seriesPointerEnter: (/* event */ Event, /* ui */ SeriesPointerEnterEventUIParam) => Unit = null,
+    seriesPointerLeave: (/* event */ Event, /* ui */ SeriesPointerLeaveEventUIParam) => Unit = null,
+    seriesPointerMove: (/* event */ Event, /* ui */ SeriesPointerMoveEventUIParam) => Unit = null,
+    seriesPointerUp: (/* event */ Event, /* ui */ SeriesPointerUpEventUIParam) => Unit = null,
+    seriesRemoved: (/* event */ Event, /* ui */ SeriesRemovedEventUIParam) => Unit = null,
     subtitle: String = null,
     subtitleAlignment: String = null,
     subtitleBottomMargin: Int | Double = null,
@@ -1005,7 +1006,7 @@ object IgCategoryChart {
     trendLineThickness: Int | Double = null,
     trendLineType: String = null,
     unknownValuePlotting: String = null,
-    updateTooltip: UpdateTooltipEvent = null,
+    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
     widget: js.Any = null,
     width: Int | Double = null,
     windowRect: js.Any = null,
@@ -1096,7 +1097,7 @@ object IgCategoryChart {
     if (!js.isUndefined(animateSeriesWhenAxisRangeChanges)) __obj.updateDynamic("animateSeriesWhenAxisRangeChanges")(animateSeriesWhenAxisRangeChanges)
     if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
     if (brushes != null) __obj.updateDynamic("brushes")(brushes)
-    if (calloutStyleUpdating != null) __obj.updateDynamic("calloutStyleUpdating")(calloutStyleUpdating)
+    if (calloutStyleUpdating != null) __obj.updateDynamic("calloutStyleUpdating")(js.Any.fromFunction2(calloutStyleUpdating))
     if (!js.isUndefined(calloutStyleUpdatingEventEnabled)) __obj.updateDynamic("calloutStyleUpdatingEventEnabled")(calloutStyleUpdatingEventEnabled)
     if (calloutsContentMemberPath != null) __obj.updateDynamic("calloutsContentMemberPath")(calloutsContentMemberPath)
     if (calloutsItemsSource != null) __obj.updateDynamic("calloutsItemsSource")(calloutsItemsSource)
@@ -1109,15 +1110,15 @@ object IgCategoryChart {
     if (!js.isUndefined(crosshairsAnnotationEnabled)) __obj.updateDynamic("crosshairsAnnotationEnabled")(crosshairsAnnotationEnabled)
     if (crosshairsDisplayMode != null) __obj.updateDynamic("crosshairsDisplayMode")(crosshairsDisplayMode)
     if (!js.isUndefined(crosshairsSnapToData)) __obj.updateDynamic("crosshairsSnapToData")(crosshairsSnapToData)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (excludedProperties != null) __obj.updateDynamic("excludedProperties")(excludedProperties)
     if (!js.isUndefined(finalValueAnnotationsVisible)) __obj.updateDynamic("finalValueAnnotationsVisible")(finalValueAnnotationsVisible)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
     if (includedProperties != null) __obj.updateDynamic("includedProperties")(includedProperties)
     if (!js.isUndefined(isCategoryHighlightingEnabled)) __obj.updateDynamic("isCategoryHighlightingEnabled")(isCategoryHighlightingEnabled)
     if (!js.isUndefined(isHorizontalZoomEnabled)) __obj.updateDynamic("isHorizontalZoomEnabled")(isHorizontalZoomEnabled)
@@ -1138,18 +1139,18 @@ object IgCategoryChart {
     if (negativeOutlines != null) __obj.updateDynamic("negativeOutlines")(negativeOutlines)
     if (outlines != null) __obj.updateDynamic("outlines")(outlines)
     if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
-    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(propertyChanged)
+    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(js.Any.fromFunction2(propertyChanged))
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
-    if (seriesAdded != null) __obj.updateDynamic("seriesAdded")(seriesAdded)
-    if (seriesPointerDown != null) __obj.updateDynamic("seriesPointerDown")(seriesPointerDown)
-    if (seriesPointerEnter != null) __obj.updateDynamic("seriesPointerEnter")(seriesPointerEnter)
-    if (seriesPointerLeave != null) __obj.updateDynamic("seriesPointerLeave")(seriesPointerLeave)
-    if (seriesPointerMove != null) __obj.updateDynamic("seriesPointerMove")(seriesPointerMove)
-    if (seriesPointerUp != null) __obj.updateDynamic("seriesPointerUp")(seriesPointerUp)
-    if (seriesRemoved != null) __obj.updateDynamic("seriesRemoved")(seriesRemoved)
+    if (seriesAdded != null) __obj.updateDynamic("seriesAdded")(js.Any.fromFunction2(seriesAdded))
+    if (seriesPointerDown != null) __obj.updateDynamic("seriesPointerDown")(js.Any.fromFunction2(seriesPointerDown))
+    if (seriesPointerEnter != null) __obj.updateDynamic("seriesPointerEnter")(js.Any.fromFunction2(seriesPointerEnter))
+    if (seriesPointerLeave != null) __obj.updateDynamic("seriesPointerLeave")(js.Any.fromFunction2(seriesPointerLeave))
+    if (seriesPointerMove != null) __obj.updateDynamic("seriesPointerMove")(js.Any.fromFunction2(seriesPointerMove))
+    if (seriesPointerUp != null) __obj.updateDynamic("seriesPointerUp")(js.Any.fromFunction2(seriesPointerUp))
+    if (seriesRemoved != null) __obj.updateDynamic("seriesRemoved")(js.Any.fromFunction2(seriesRemoved))
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
     if (subtitleAlignment != null) __obj.updateDynamic("subtitleAlignment")(subtitleAlignment)
     if (subtitleBottomMargin != null) __obj.updateDynamic("subtitleBottomMargin")(subtitleBottomMargin.asInstanceOf[js.Any])
@@ -1182,7 +1183,7 @@ object IgCategoryChart {
     if (trendLineThickness != null) __obj.updateDynamic("trendLineThickness")(trendLineThickness.asInstanceOf[js.Any])
     if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType)
     if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting)
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
     if (widget != null) __obj.updateDynamic("widget")(widget)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)

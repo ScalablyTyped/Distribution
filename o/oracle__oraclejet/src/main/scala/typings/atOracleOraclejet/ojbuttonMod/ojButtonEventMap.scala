@@ -7,7 +7,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.full
 import typings.atOracleOraclejet.atOracleOraclejetStrings.half
 import typings.atOracleOraclejet.atOracleOraclejetStrings.icons
 import typings.atOracleOraclejet.atOracleOraclejetStrings.outlined
-import typings.atOracleOraclejet.ojbuttonMod.ojButtonNs.ojAction
+import typings.atOracleOraclejet.ojbuttonMod.ojButton.ojAction
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -32,7 +32,7 @@ trait ojButtonEventMap[SP /* <: ojButtonSettableProperties */] extends baseCompo
   var chromingChanged: JetElementCustomEvent[full | half | outlined]
   var disabledChanged: JetElementCustomEvent[Boolean]
   var displayChanged: JetElementCustomEvent[all | icons]
-  var ojAction: typings.atOracleOraclejet.ojbuttonMod.ojButtonNs.ojAction
+  var ojAction: typings.atOracleOraclejet.ojbuttonMod.ojButton.ojAction
 }
 
 object ojButtonEventMap {

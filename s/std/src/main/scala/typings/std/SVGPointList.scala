@@ -23,9 +23,5 @@ trait SVGPointList extends /* index */ NumberDictionary[DOMPoint] {
 
 @JSGlobal("SVGPointList")
 @js.native
-class SVGPointListCls () extends SVGPointList
-
-@JSGlobal("SVGPointList")
-@js.native
 object SVGPointList extends Instantiable0[SVGPointList]
 

@@ -43,7 +43,7 @@ object PivotingProps {
     groupedByPivotKey: String,
     indexKey: String,
     nestingLevelKey: String,
-    onExpandRow: ReactTableFunction,
+    onExpandRow: /* value */ js.UndefOr[js.Any] => Unit,
     originalKey: String,
     pivotBy: js.Array[String],
     pivotColumnWidth: Double,
@@ -51,7 +51,7 @@ object PivotingProps {
     pivotValKey: String,
     subRowsKey: String
   ): PivotingProps = {
-    val __obj = js.Dynamic.literal(aggregatedKey = aggregatedKey, expandedRows = expandedRows, groupedByPivotKey = groupedByPivotKey, indexKey = indexKey, nestingLevelKey = nestingLevelKey, onExpandRow = onExpandRow, originalKey = originalKey, pivotBy = pivotBy, pivotColumnWidth = pivotColumnWidth, pivotIDKey = pivotIDKey, pivotValKey = pivotValKey, subRowsKey = subRowsKey)
+    val __obj = js.Dynamic.literal(aggregatedKey = aggregatedKey, expandedRows = expandedRows, groupedByPivotKey = groupedByPivotKey, indexKey = indexKey, nestingLevelKey = nestingLevelKey, onExpandRow = js.Any.fromFunction1(onExpandRow), originalKey = originalKey, pivotBy = pivotBy, pivotColumnWidth = pivotColumnWidth, pivotIDKey = pivotIDKey, pivotValKey = pivotValKey, subRowsKey = subRowsKey)
   
     __obj.asInstanceOf[PivotingProps]
   }

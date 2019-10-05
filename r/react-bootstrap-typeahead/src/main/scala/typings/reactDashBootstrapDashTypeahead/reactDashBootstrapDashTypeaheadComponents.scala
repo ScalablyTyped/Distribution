@@ -28,7 +28,7 @@ object reactDashBootstrapDashTypeaheadComponents extends reactDashBootstrapDashT
   @scala.inline
   def ClearButton: ComponentType[
     typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.ClearButtonProps
-  ] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.^.ClearButton.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.ClearButton.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.ClearButtonProps]]
   @scala.inline
   def Highlighter: ComponentType[HighligherProps] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Highlighter].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -36,7 +36,7 @@ object reactDashBootstrapDashTypeaheadComponents extends reactDashBootstrapDashT
   @scala.inline
   def Loader: ComponentType[
     typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.LoaderProps
-  ] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.^.Loader.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Loader.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.LoaderProps]]
   @scala.inline
   def Menu: ComponentType[

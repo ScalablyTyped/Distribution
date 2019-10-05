@@ -1,6 +1,6 @@
 package typings.atPulumiAws.kinesisKinesisMixinsMod
 
-import typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream
+import typings.atPulumiAws.kinesisStreamMod.Stream
 import typings.atPulumiAws.lambdaMod.EventSourceMapping
 import typings.atPulumiAws.lambdaMod.EventSubscription
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions

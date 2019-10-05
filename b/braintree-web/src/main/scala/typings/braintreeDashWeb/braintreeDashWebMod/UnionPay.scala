@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_Card
 import typings.braintreeDashWeb.Anon_CardEnrollmentId
 import typings.braintreeDashWeb.Anon_CardHostedFields
@@ -231,4 +232,8 @@ trait UnionPay extends js.Object {
     */
   def tokenize(options: Anon_CardEnrollmentId, callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "unionpay")
+@js.native
+object unionpay extends TopLevel[UnionPay]
 

@@ -16,11 +16,11 @@ object RTCDtlsTransport {
   @scala.inline
   def apply(
     getRemoteCertificates: () => js.Array[ArrayBuffer],
-    onstatechange: DtlsTransportEventHandler,
-    transport: RTCIceTransport
+    transport: RTCIceTransport,
+    onstatechange: DtlsTransportEventHandler = null
   ): RTCDtlsTransport = {
-    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), onstatechange = onstatechange.asInstanceOf[js.Any], transport = transport)
-  
+    val __obj = js.Dynamic.literal(getRemoteCertificates = js.Any.fromFunction0(getRemoteCertificates), transport = transport)
+    if (onstatechange != null) __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDtlsTransport]
   }
 }

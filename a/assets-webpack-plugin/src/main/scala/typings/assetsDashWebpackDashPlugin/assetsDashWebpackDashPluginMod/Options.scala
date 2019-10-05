@@ -95,7 +95,7 @@ object Options {
     metadata: js.Object = null,
     path: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    processOutput: ProcessOutputFn = null,
+    processOutput: /* assets */ Assets => String = null,
     update: js.UndefOr[Boolean] = js.undefined,
     useCompilerPath: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -111,7 +111,7 @@ object Options {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (processOutput != null) __obj.updateDynamic("processOutput")(processOutput)
+    if (processOutput != null) __obj.updateDynamic("processOutput")(js.Any.fromFunction1(processOutput))
     if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
     if (!js.isUndefined(useCompilerPath)) __obj.updateDynamic("useCompilerPath")(useCompilerPath)
     __obj.asInstanceOf[Options]

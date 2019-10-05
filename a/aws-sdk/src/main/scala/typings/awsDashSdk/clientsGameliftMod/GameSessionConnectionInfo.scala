@@ -31,14 +31,14 @@ object GameSessionConnectionInfo {
     GameSessionArn: ArnStringModel = null,
     IpAddress: StringModel = null,
     MatchedPlayerSessions: MatchedPlayerSessionList = null,
-    Port: js.UndefOr[PositiveInteger] = js.undefined
+    Port: Int | scala.Double = null
   ): GameSessionConnectionInfo = {
     val __obj = js.Dynamic.literal()
     if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (GameSessionArn != null) __obj.updateDynamic("GameSessionArn")(GameSessionArn)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
     if (MatchedPlayerSessions != null) __obj.updateDynamic("MatchedPlayerSessions")(MatchedPlayerSessions)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionConnectionInfo]
   }
 }

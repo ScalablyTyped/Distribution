@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_growl"
-version := "1.3-dt-20181016Z-2ffae2"
-scalaVersion := "2.12.9"
+version := "1.3-dt-20181016Z-75f439"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

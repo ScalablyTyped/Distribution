@@ -1,6 +1,6 @@
 package typings.angularDashAnimate.angularDashAnimateMod.angularMod
 
-import typings.angularDashAnimate.angularDashAnimateMod.angularMod.animateNs.IAnimateFactory
+import typings.angularDashAnimate.angularDashAnimateMod.angularMod.animate.IAnimateFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

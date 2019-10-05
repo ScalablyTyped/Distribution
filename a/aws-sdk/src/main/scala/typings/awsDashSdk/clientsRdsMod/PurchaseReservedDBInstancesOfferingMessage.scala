@@ -24,12 +24,12 @@ object PurchaseReservedDBInstancesOfferingMessage {
   @scala.inline
   def apply(
     ReservedDBInstancesOfferingId: String,
-    DBInstanceCount: js.UndefOr[IntegerOptional] = js.undefined,
+    DBInstanceCount: Int | scala.Double = null,
     ReservedDBInstanceId: String = null,
     Tags: TagList = null
   ): PurchaseReservedDBInstancesOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedDBInstancesOfferingId = ReservedDBInstancesOfferingId)
-    if (!js.isUndefined(DBInstanceCount)) __obj.updateDynamic("DBInstanceCount")(DBInstanceCount)
+    if (DBInstanceCount != null) __obj.updateDynamic("DBInstanceCount")(DBInstanceCount.asInstanceOf[js.Any])
     if (ReservedDBInstanceId != null) __obj.updateDynamic("ReservedDBInstanceId")(ReservedDBInstanceId)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[PurchaseReservedDBInstancesOfferingMessage]

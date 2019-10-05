@@ -35,7 +35,7 @@ object TargetInstance {
   @scala.inline
   def apply(
     CurrencyCode: GenericString = null,
-    DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.undefined,
+    DefaultTargetInstance: js.UndefOr[Boolean] = js.undefined,
     EstimatedMonthlyCost: GenericString = null,
     EstimatedMonthlySavings: GenericString = null,
     ExpectedResourceUtilization: ResourceUtilization = null,

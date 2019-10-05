@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-fixedcolumns"
-version := "3.2-dt-20190718Z-63437a"
-scalaVersion := "2.12.9"
+version := "3.2-dt-20190718Z-8e76be"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

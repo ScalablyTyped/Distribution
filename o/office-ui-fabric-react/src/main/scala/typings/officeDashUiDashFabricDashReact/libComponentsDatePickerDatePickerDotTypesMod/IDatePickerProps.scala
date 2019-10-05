@@ -14,6 +14,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesM
 import typings.react.reactMod.HTMLAttributes
 import typings.std.Date
 import typings.std.HTMLElement
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -224,7 +225,7 @@ object IDatePickerProps {
     showMonthPickerAsOverlay: js.UndefOr[Boolean] = js.undefined,
     showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
     strings: IDatePickerStrings = null,
-    styles: IStyleFunction[IDatePickerStyleProps, IDatePickerStyles] = null,
+    styles: IDatePickerStyleProps => Partial[IDatePickerStyles] = null,
     tabIndex: Int | Double = null,
     textField: ITextFieldProps = null,
     theme: ITheme = null,
@@ -268,7 +269,7 @@ object IDatePickerProps {
     if (!js.isUndefined(showMonthPickerAsOverlay)) __obj.updateDynamic("showMonthPickerAsOverlay")(showMonthPickerAsOverlay)
     if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers)
     if (strings != null) __obj.updateDynamic("strings")(strings)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(js.Any.fromFunction1(styles))
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textField != null) __obj.updateDynamic("textField")(textField)
     if (theme != null) __obj.updateDynamic("theme")(theme)

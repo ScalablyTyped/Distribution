@@ -38,3 +38,10 @@ object JSXExpressionContainer {
   }
 }
 
+@JSImport("@babel/types", "jsxExpressionContainer")
+@js.native
+object jsxExpressionContainer extends js.Object {
+  def apply(expression: Expression): JSXExpressionContainer = js.native
+  def apply(expression: JSXEmptyExpression): JSXExpressionContainer = js.native
+}
+

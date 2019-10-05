@@ -1,6 +1,6 @@
 package typings.electronDashNotify.electronDashNotifyMod
 
-import typings.electron.ElectronNs.BrowserWindowConstructorOptions
+import typings.electron.Electron.BrowserWindowConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

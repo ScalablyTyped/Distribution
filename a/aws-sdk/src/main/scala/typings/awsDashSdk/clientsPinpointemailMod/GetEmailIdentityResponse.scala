@@ -35,11 +35,11 @@ object GetEmailIdentityResponse {
   @scala.inline
   def apply(
     DkimAttributes: DkimAttributes = null,
-    FeedbackForwardingStatus: js.UndefOr[Enabled] = js.undefined,
+    FeedbackForwardingStatus: js.UndefOr[Boolean] = js.undefined,
     IdentityType: IdentityType = null,
     MailFromAttributes: MailFromAttributes = null,
     Tags: TagList = null,
-    VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
+    VerifiedForSendingStatus: js.UndefOr[Boolean] = js.undefined
   ): GetEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
     if (DkimAttributes != null) __obj.updateDynamic("DkimAttributes")(DkimAttributes)

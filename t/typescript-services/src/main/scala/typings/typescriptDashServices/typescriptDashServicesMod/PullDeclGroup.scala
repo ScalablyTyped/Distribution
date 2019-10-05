@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullDeclGroup")
 @js.native
 class PullDeclGroup protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullDeclGroup {
+  extends typings.typescriptDashServices.TypeScript.PullDeclGroup {
   def this(name: String) = this()
 }
 

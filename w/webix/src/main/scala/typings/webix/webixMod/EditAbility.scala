@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,8 @@ trait EditAbility extends js.Object {
   def validateEditor(id: String): Boolean = js.native
   def validateEditor(id: Double): Boolean = js.native
 }
+
+@JSImport("webix", "EditAbility")
+@js.native
+object EditAbility extends TopLevel[EditAbility]
 

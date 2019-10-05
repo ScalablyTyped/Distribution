@@ -80,6 +80,10 @@ trait Routes extends js.Object {
     ReposRemoveProtectedBranchRestrictionsEndpoint, 
     ReposRemoveProtectedBranchRestrictionsRequestOptions
   ]
+  var `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+    ReposRemoveProtectedBranchAppRestrictionsEndpoint, 
+    ReposRemoveProtectedBranchAppRestrictionsRequestOptions
+  ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
     ReposRemoveProtectedBranchTeamRestrictionsEndpoint, 
     ReposRemoveProtectedBranchTeamRestrictionsRequestOptions
@@ -309,13 +313,17 @@ trait Routes extends js.Object {
     ReposGetProtectedBranchRestrictionsEndpoint, 
     ReposGetProtectedBranchRestrictionsRequestOptions
   ]
+  var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+    ReposGetAppsWithAccessToProtectedBranchEndpoint | ReposListAppsWithAccessToProtectedBranchEndpoint, 
+    ReposGetAppsWithAccessToProtectedBranchRequestOptions | ReposListAppsWithAccessToProtectedBranchRequestOptions
+  ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-    ReposListProtectedBranchTeamRestrictionsEndpoint, 
-    ReposListProtectedBranchTeamRestrictionsRequestOptions
+    ReposGetTeamsWithAccessToProtectedBranchEndpoint | ReposListProtectedBranchTeamRestrictionsEndpoint | ReposListTeamsWithAccessToProtectedBranchEndpoint, 
+    ReposGetTeamsWithAccessToProtectedBranchRequestOptions | ReposListProtectedBranchTeamRestrictionsRequestOptions | ReposListTeamsWithAccessToProtectedBranchRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-    ReposListProtectedBranchUserRestrictionsEndpoint, 
-    ReposListProtectedBranchUserRestrictionsRequestOptions
+    ReposGetUsersWithAccessToProtectedBranchEndpoint | ReposListProtectedBranchUserRestrictionsEndpoint | ReposListUsersWithAccessToProtectedBranchEndpoint, 
+    ReposGetUsersWithAccessToProtectedBranchRequestOptions | ReposListProtectedBranchUserRestrictionsRequestOptions | ReposListUsersWithAccessToProtectedBranchRequestOptions
   ]
   var `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGetEndpoint, ChecksGetRequestOptions]
   var `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotationsEndpoint, ChecksListAnnotationsRequestOptions]
@@ -340,10 +348,7 @@ trait Routes extends js.Object {
     ReposListPullRequestsAssociatedWithCommitEndpoint, 
     ReposListPullRequestsAssociatedWithCommitRequestOptions
   ]
-  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[
-    ReposGetCommitEndpoint | ReposGetCommitRefShaEndpoint, 
-    ReposGetCommitRequestOptions | ReposGetCommitRefShaRequestOptions
-  ]
+  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions]
   var `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions]
   var `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions]
   var `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions]
@@ -366,8 +371,8 @@ trait Routes extends js.Object {
   var `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForksEndpoint, ReposListForksRequestOptions]
   var `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlobEndpoint, GitGetBlobRequestOptions]
   var `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommitEndpoint, GitGetCommitRequestOptions]
-  var `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefsEndpoint, GitListRefsRequestOptions]
-  var `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions]
+  var `GET /repos/:owner/:repo/git/matching-refs/:ref`: js.Tuple2[GitListMatchingRefsEndpoint, GitListMatchingRefsRequestOptions]
+  var `GET /repos/:owner/:repo/git/ref/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions]
   var `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTagEndpoint, GitGetTagRequestOptions]
   var `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTreeEndpoint, GitGetTreeRequestOptions]
   var `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooksEndpoint, ReposListHooksRequestOptions]
@@ -637,7 +642,7 @@ trait Routes extends js.Object {
   var `PATCH /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposUpdateInvitationEndpoint, ReposUpdateInvitationRequestOptions]
   var `PATCH /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesUpdateEndpoint, IssuesUpdateRequestOptions]
   var `PATCH /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesUpdateCommentEndpoint, IssuesUpdateCommentRequestOptions]
-  var `PATCH /repos/:owner/:repo/labels/:current_name`: js.Tuple2[IssuesUpdateLabelEndpoint, IssuesUpdateLabelRequestOptions]
+  var `PATCH /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesUpdateLabelEndpoint, IssuesUpdateLabelRequestOptions]
   var `PATCH /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesUpdateMilestoneEndpoint, IssuesUpdateMilestoneRequestOptions]
   var `PATCH /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsUpdateEndpoint, PullsUpdateRequestOptions]
   var `PATCH /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsUpdateCommentEndpoint, PullsUpdateCommentRequestOptions]
@@ -697,6 +702,10 @@ trait Routes extends js.Object {
     ReposAddProtectedBranchRequiredStatusChecksContextsEndpoint, 
     ReposAddProtectedBranchRequiredStatusChecksContextsRequestOptions
   ]
+  var `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+    ReposAddProtectedBranchAppRestrictionsEndpoint, 
+    ReposAddProtectedBranchAppRestrictionsRequestOptions
+  ]
   var `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
     ReposAddProtectedBranchTeamRestrictionsEndpoint, 
     ReposAddProtectedBranchTeamRestrictionsRequestOptions
@@ -715,6 +724,7 @@ trait Routes extends js.Object {
   var `POST /repos/:owner/:repo/commits/:commit_sha/comments`: js.Tuple2[ReposCreateCommitCommentEndpoint, ReposCreateCommitCommentRequestOptions]
   var `POST /repos/:owner/:repo/deployments`: js.Tuple2[ReposCreateDeploymentEndpoint, ReposCreateDeploymentRequestOptions]
   var `POST /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposCreateDeploymentStatusEndpoint, ReposCreateDeploymentStatusRequestOptions]
+  var `POST /repos/:owner/:repo/dispatches`: js.Tuple2[ReposCreateDispatchEventEndpoint, ReposCreateDispatchEventRequestOptions]
   var `POST /repos/:owner/:repo/forks`: js.Tuple2[ReposCreateForkEndpoint, ReposCreateForkRequestOptions]
   var `POST /repos/:owner/:repo/git/blobs`: js.Tuple2[GitCreateBlobEndpoint, GitCreateBlobRequestOptions]
   var `POST /repos/:owner/:repo/git/commits`: js.Tuple2[GitCreateCommitEndpoint, GitCreateCommitRequestOptions]
@@ -740,14 +750,12 @@ trait Routes extends js.Object {
   var `POST /repos/:owner/:repo/pages`: js.Tuple2[ReposEnablePagesSiteEndpoint, ReposEnablePagesSiteRequestOptions]
   var `POST /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposRequestPageBuildEndpoint, ReposRequestPageBuildRequestOptions]
   var `POST /repos/:owner/:repo/projects`: js.Tuple2[ProjectsCreateForRepoEndpoint, ProjectsCreateForRepoRequestOptions]
-  var `POST /repos/:owner/:repo/pulls`: js.Tuple2[
-    PullsCreateEndpoint | PullsCreateFromIssueEndpoint, 
-    PullsCreateRequestOptions | PullsCreateFromIssueRequestOptions
-  ]
+  var `POST /repos/:owner/:repo/pulls`: js.Tuple2[PullsCreateEndpoint, PullsCreateRequestOptions]
   var `POST /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[
     PullsCreateCommentEndpoint | PullsCreateCommentReplyEndpoint, 
     PullsCreateCommentRequestOptions | PullsCreateCommentReplyRequestOptions
   ]
+  var `POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies`: js.Tuple2[PullsCreateReviewCommentReplyEndpoint, PullsCreateReviewCommentReplyRequestOptions]
   var `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsCreateReviewRequestEndpoint, PullsCreateReviewRequestRequestOptions]
   var `POST /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsCreateReviewEndpoint, PullsCreateReviewRequestOptions]
   var `POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events`: js.Tuple2[PullsSubmitReviewEndpoint, PullsSubmitReviewRequestOptions]
@@ -788,7 +796,6 @@ trait Routes extends js.Object {
     ReposCreateForAuthenticatedUserEndpoint, 
     ReposCreateForAuthenticatedUserRequestOptions
   ]
-  var `POST :url`: js.Tuple2[ReposUploadReleaseAssetEndpoint, ReposUploadReleaseAssetRequestOptions]
   var `PUT /authorizations/clients/:client_id`: js.Tuple2[
     OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint, 
     OauthAuthorizationsGetOrCreateAuthorizationForAppRequestOptions
@@ -820,6 +827,10 @@ trait Routes extends js.Object {
   var `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
     ReposReplaceProtectedBranchRequiredStatusChecksContextsEndpoint, 
     ReposReplaceProtectedBranchRequiredStatusChecksContextsRequestOptions
+  ]
+  var `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+    ReposReplaceProtectedBranchAppRestrictionsEndpoint, 
+    ReposReplaceProtectedBranchAppRestrictionsRequestOptions
   ]
   var `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
     ReposReplaceProtectedBranchTeamRestrictionsEndpoint, 
@@ -951,6 +962,10 @@ object Routes {
     `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`: js.Tuple2[
       ReposRemoveProtectedBranchRestrictionsEndpoint, 
       ReposRemoveProtectedBranchRestrictionsRequestOptions
+    ],
+    `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+      ReposRemoveProtectedBranchAppRestrictionsEndpoint, 
+      ReposRemoveProtectedBranchAppRestrictionsRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
       ReposRemoveProtectedBranchTeamRestrictionsEndpoint, 
@@ -1181,13 +1196,17 @@ object Routes {
       ReposGetProtectedBranchRestrictionsEndpoint, 
       ReposGetProtectedBranchRestrictionsRequestOptions
     ],
+    `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: js.Tuple2[
+      ReposGetAppsWithAccessToProtectedBranchEndpoint | ReposListAppsWithAccessToProtectedBranchEndpoint, 
+      ReposGetAppsWithAccessToProtectedBranchRequestOptions | ReposListAppsWithAccessToProtectedBranchRequestOptions
+    ],
     `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-      ReposListProtectedBranchTeamRestrictionsEndpoint, 
-      ReposListProtectedBranchTeamRestrictionsRequestOptions
+      ReposGetTeamsWithAccessToProtectedBranchEndpoint | ReposListProtectedBranchTeamRestrictionsEndpoint | ReposListTeamsWithAccessToProtectedBranchEndpoint, 
+      ReposGetTeamsWithAccessToProtectedBranchRequestOptions | ReposListProtectedBranchTeamRestrictionsRequestOptions | ReposListTeamsWithAccessToProtectedBranchRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-      ReposListProtectedBranchUserRestrictionsEndpoint, 
-      ReposListProtectedBranchUserRestrictionsRequestOptions
+      ReposGetUsersWithAccessToProtectedBranchEndpoint | ReposListProtectedBranchUserRestrictionsEndpoint | ReposListUsersWithAccessToProtectedBranchEndpoint, 
+      ReposGetUsersWithAccessToProtectedBranchRequestOptions | ReposListProtectedBranchUserRestrictionsRequestOptions | ReposListUsersWithAccessToProtectedBranchRequestOptions
     ],
     `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGetEndpoint, ChecksGetRequestOptions],
     `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotationsEndpoint, ChecksListAnnotationsRequestOptions],
@@ -1212,10 +1231,7 @@ object Routes {
       ReposListPullRequestsAssociatedWithCommitEndpoint, 
       ReposListPullRequestsAssociatedWithCommitRequestOptions
     ],
-    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[
-      ReposGetCommitEndpoint | ReposGetCommitRefShaEndpoint, 
-      ReposGetCommitRequestOptions | ReposGetCommitRefShaRequestOptions
-    ],
+    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions],
     `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions],
     `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions],
     `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions],
@@ -1238,8 +1254,8 @@ object Routes {
     `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForksEndpoint, ReposListForksRequestOptions],
     `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlobEndpoint, GitGetBlobRequestOptions],
     `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommitEndpoint, GitGetCommitRequestOptions],
-    `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefsEndpoint, GitListRefsRequestOptions],
-    `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions],
+    `GET /repos/:owner/:repo/git/matching-refs/:ref`: js.Tuple2[GitListMatchingRefsEndpoint, GitListMatchingRefsRequestOptions],
+    `GET /repos/:owner/:repo/git/ref/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions],
     `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTagEndpoint, GitGetTagRequestOptions],
     `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTreeEndpoint, GitGetTreeRequestOptions],
     `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooksEndpoint, ReposListHooksRequestOptions],
@@ -1290,9 +1306,7 @@ object Routes {
     `GET /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsGetEndpoint, PullsGetRequestOptions],
     `GET /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[PullsListCommentsEndpoint, PullsListCommentsRequestOptions],
     `GET /repos/:owner/:repo/pulls/:pull_number/commits`: js.Tuple2[PullsListCommitsEndpoint, PullsListCommitsRequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFilesEndpoint, PullsListFilesRequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsCheckIfMergedEndpoint, PullsCheckIfMergedRequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsListReviewRequestsEndpoint, PullsListReviewRequestsRequestOptions]
+    `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFilesEndpoint, PullsListFilesRequestOptions]
   ): Routes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("DELETE /app/installations/:installation_id")(`DELETE /app/installations/:installation_id`)
@@ -1328,6 +1342,7 @@ object Routes {
     __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks")(`DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks`)
     __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts")(`DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`)
     __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions")(`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`)
+    __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps")(`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`)
     __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams")(`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`)
     __obj.updateDynamic("DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users")(`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users`)
     __obj.updateDynamic("DELETE /repos/:owner/:repo/collaborators/:username")(`DELETE /repos/:owner/:repo/collaborators/:username`)
@@ -1467,6 +1482,7 @@ object Routes {
     __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks")(`GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks`)
     __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts")(`GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`)
     __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/restrictions")(`GET /repos/:owner/:repo/branches/:branch/protection/restrictions`)
+    __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps")(`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`)
     __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams")(`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`)
     __obj.updateDynamic("GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users")(`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`)
     __obj.updateDynamic("GET /repos/:owner/:repo/check-runs/:check_run_id")(`GET /repos/:owner/:repo/check-runs/:check_run_id`)
@@ -1503,8 +1519,8 @@ object Routes {
     __obj.updateDynamic("GET /repos/:owner/:repo/forks")(`GET /repos/:owner/:repo/forks`)
     __obj.updateDynamic("GET /repos/:owner/:repo/git/blobs/:file_sha")(`GET /repos/:owner/:repo/git/blobs/:file_sha`)
     __obj.updateDynamic("GET /repos/:owner/:repo/git/commits/:commit_sha")(`GET /repos/:owner/:repo/git/commits/:commit_sha`)
-    __obj.updateDynamic("GET /repos/:owner/:repo/git/refs/:namespace")(`GET /repos/:owner/:repo/git/refs/:namespace`)
-    __obj.updateDynamic("GET /repos/:owner/:repo/git/refs/:ref")(`GET /repos/:owner/:repo/git/refs/:ref`)
+    __obj.updateDynamic("GET /repos/:owner/:repo/git/matching-refs/:ref")(`GET /repos/:owner/:repo/git/matching-refs/:ref`)
+    __obj.updateDynamic("GET /repos/:owner/:repo/git/ref/:ref")(`GET /repos/:owner/:repo/git/ref/:ref`)
     __obj.updateDynamic("GET /repos/:owner/:repo/git/tags/:tag_sha")(`GET /repos/:owner/:repo/git/tags/:tag_sha`)
     __obj.updateDynamic("GET /repos/:owner/:repo/git/trees/:tree_sha")(`GET /repos/:owner/:repo/git/trees/:tree_sha`)
     __obj.updateDynamic("GET /repos/:owner/:repo/hooks")(`GET /repos/:owner/:repo/hooks`)
@@ -1547,8 +1563,6 @@ object Routes {
     __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/comments")(`GET /repos/:owner/:repo/pulls/:pull_number/comments`)
     __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/commits")(`GET /repos/:owner/:repo/pulls/:pull_number/commits`)
     __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/files")(`GET /repos/:owner/:repo/pulls/:pull_number/files`)
-    __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/merge")(`GET /repos/:owner/:repo/pulls/:pull_number/merge`)
-    __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers")(`GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`)
     __obj.asInstanceOf[Routes]
   }
 }

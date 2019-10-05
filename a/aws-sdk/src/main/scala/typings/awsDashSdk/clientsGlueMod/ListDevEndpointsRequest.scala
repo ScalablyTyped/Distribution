@@ -21,13 +21,9 @@ trait ListDevEndpointsRequest extends js.Object {
 
 object ListDevEndpointsRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
-    NextToken: GenericString = null,
-    Tags: TagsMap = null
-  ): ListDevEndpointsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: GenericString = null, Tags: TagsMap = null): ListDevEndpointsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[ListDevEndpointsRequest]

@@ -33,14 +33,14 @@ object ListCommandsRequest {
     CommandId: CommandId = null,
     Filters: CommandFilterList = null,
     InstanceId: InstanceId = null,
-    MaxResults: js.UndefOr[CommandMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListCommandsRequest = {
     val __obj = js.Dynamic.literal()
     if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListCommandsRequest]
   }

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxWalker")
 @js.native
 class SyntaxWalker ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxWalker
+  extends typings.typescriptDashServices.TypeScript.SyntaxWalker
 

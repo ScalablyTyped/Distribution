@@ -1,12 +1,12 @@
 package typings.atPulumiAws.mqBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerConfiguration
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerEncryptionOptions
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerInstance
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerLogs
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerMaintenanceWindowStartTime
-import typings.atPulumiAws.typesOutputMod.mqNs.BrokerUser
+import typings.atPulumiAws.typesOutputMod.mq.BrokerConfiguration
+import typings.atPulumiAws.typesOutputMod.mq.BrokerEncryptionOptions
+import typings.atPulumiAws.typesOutputMod.mq.BrokerInstance
+import typings.atPulumiAws.typesOutputMod.mq.BrokerLogs
+import typings.atPulumiAws.typesOutputMod.mq.BrokerMaintenanceWindowStartTime
+import typings.atPulumiAws.typesOutputMod.mq.BrokerUser
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

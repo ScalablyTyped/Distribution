@@ -10,17 +10,15 @@ trait LibraSignedTransactionWithProof extends js.Object {
   var signedTransaction: LibraSignedTransaction
 }
 
-object LibraSignedTransactionWithProof {
-  @scala.inline
+@JSImport("libra-core", "LibraSignedTransactionWithProof")
+@js.native
+object LibraSignedTransactionWithProof extends js.Object {
+  def apply(signedTransaction: LibraSignedTransaction): Unit = js.native
+  def apply(signedTransaction: LibraSignedTransaction, proof: js.Object): Unit = js.native
   def apply(
     signedTransaction: LibraSignedTransaction,
-    events: js.Array[LibraTransactionEvent] = null,
-    proof: js.Object = null
-  ): LibraSignedTransactionWithProof = {
-    val __obj = js.Dynamic.literal(signedTransaction = signedTransaction)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (proof != null) __obj.updateDynamic("proof")(proof)
-    __obj.asInstanceOf[LibraSignedTransactionWithProof]
-  }
+    proof: js.Object,
+    events: js.Array[LibraTransactionEvent]
+  ): Unit = js.native
 }
 

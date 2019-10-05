@@ -17,9 +17,9 @@ trait InitiateLayerUploadResponse extends js.Object {
 
 object InitiateLayerUploadResponse {
   @scala.inline
-  def apply(partSize: js.UndefOr[PartSize] = js.undefined, uploadId: UploadId = null): InitiateLayerUploadResponse = {
+  def apply(partSize: Int | Double = null, uploadId: UploadId = null): InitiateLayerUploadResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize)
+    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
     if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
     __obj.asInstanceOf[InitiateLayerUploadResponse]
   }

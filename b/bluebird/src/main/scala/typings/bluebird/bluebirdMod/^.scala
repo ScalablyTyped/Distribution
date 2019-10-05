@@ -330,12 +330,6 @@ object ^ extends js.Object {
     options: FromNodeOptions
   ): Bluebird[T] = js.native
   /**
-    * Returns a new independent copy of the Bluebird library.
-    *
-    * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
-    */
-  def getNewLibraryCopy(): TypeofClassBluebird = js.native
-  /**
     * See if `value` is a trusted Promise.
     */
   def is(value: js.Any): Boolean = js.native
@@ -428,13 +422,6 @@ object ^ extends js.Object {
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]] = js.native
   @JSName("method")
   def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, Resolvable[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = js.native
-  /**
-    * This is relevant to browser environments with no module loader.
-    *
-    * Release control of the Promise namespace to whatever it was before this library was loaded.
-    * Returns a reference to the library namespace so you can attach it to something else.
-    */
-  def noConflict(): TypeofClassBluebird = js.native
   /**
     * Add handler as the handler to call when there is a possibly unhandled rejection.
     * The default handler logs the error stack to stderr or console.error in browsers.
@@ -653,13 +640,6 @@ object ^ extends js.Object {
     */
   def resolve(): Bluebird[Unit] = js.native
   def resolve[R](value: Resolvable[R]): Bluebird[R] = js.native
-  /**
-    * Changes how bluebird schedules calls a-synchronously.
-    *
-    * @param scheduler Should be a function that asynchronously schedules
-    *                  the calling of the passed in function
-    */
-  def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Unit]): Unit = js.native
   /**
     * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
     * When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of

@@ -23,11 +23,11 @@ object UpdateFileSystemRequest {
   @scala.inline
   def apply(
     FileSystemId: FileSystemId,
-    ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined,
+    ProvisionedThroughputInMibps: Int | Double = null,
     ThroughputMode: ThroughputMode = null
   ): UpdateFileSystemRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId)
-    if (!js.isUndefined(ProvisionedThroughputInMibps)) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps)
+    if (ProvisionedThroughputInMibps != null) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps.asInstanceOf[js.Any])
     if (ThroughputMode != null) __obj.updateDynamic("ThroughputMode")(ThroughputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFileSystemRequest]
   }

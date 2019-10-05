@@ -38,3 +38,12 @@ object ObjectTypeIndexer {
   }
 }
 
+@JSImport("babel-types", "objectTypeIndexer")
+@js.native
+object objectTypeIndexer extends js.Object {
+  def apply(): ObjectTypeIndexer = js.native
+  def apply(id: Expression): ObjectTypeIndexer = js.native
+  def apply(id: Expression, key: FlowTypeAnnotation): ObjectTypeIndexer = js.native
+  def apply(id: Expression, key: FlowTypeAnnotation, value: FlowTypeAnnotation): ObjectTypeIndexer = js.native
+}
+

@@ -22,14 +22,14 @@ trait DeviceMinutes extends js.Object {
 object DeviceMinutes {
   @scala.inline
   def apply(
-    metered: js.UndefOr[Double] = js.undefined,
-    total: js.UndefOr[Double] = js.undefined,
-    unmetered: js.UndefOr[Double] = js.undefined
+    metered: Int | scala.Double = null,
+    total: Int | scala.Double = null,
+    unmetered: Int | scala.Double = null
   ): DeviceMinutes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(metered)) __obj.updateDynamic("metered")(metered)
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total)
-    if (!js.isUndefined(unmetered)) __obj.updateDynamic("unmetered")(unmetered)
+    if (metered != null) __obj.updateDynamic("metered")(metered.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (unmetered != null) __obj.updateDynamic("unmetered")(unmetered.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMinutes]
   }
 }

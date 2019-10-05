@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsPathSymbol3DLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PathSymbol3DLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.PathSymbol3DLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,9 +12,8 @@ object punycodeMod extends js.Object {
   def encode(input: String): String = js.native
   def toASCII(input: String): String = js.native
   def toUnicode(input: String): String = js.native
-  @JSName("ucs2")
   @js.native
-  object ucs2Ns extends js.Object {
+  object ucs2 extends js.Object {
     def decode(string: String): js.Array[Double] = js.native
     def encode(array: js.Array[Double]): String = js.native
   }

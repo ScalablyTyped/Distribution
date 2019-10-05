@@ -17,13 +17,10 @@ trait StaticImageDeactivateScheduleActionSettings extends js.Object {
 
 object StaticImageDeactivateScheduleActionSettings {
   @scala.inline
-  def apply(
-    FadeOut: js.UndefOr[__integerMin0] = js.undefined,
-    Layer: js.UndefOr[__integerMin0Max7] = js.undefined
-  ): StaticImageDeactivateScheduleActionSettings = {
+  def apply(FadeOut: Int | Double = null, Layer: Int | Double = null): StaticImageDeactivateScheduleActionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FadeOut)) __obj.updateDynamic("FadeOut")(FadeOut)
-    if (!js.isUndefined(Layer)) __obj.updateDynamic("Layer")(Layer)
+    if (FadeOut != null) __obj.updateDynamic("FadeOut")(FadeOut.asInstanceOf[js.Any])
+    if (Layer != null) __obj.updateDynamic("Layer")(Layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticImageDeactivateScheduleActionSettings]
   }
 }

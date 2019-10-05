@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hjson"
-version := "2.4-dt-20190212Z-cfa257"
-scalaVersion := "2.12.9"
+version := "2.4-dt-20190212Z-1deffe"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

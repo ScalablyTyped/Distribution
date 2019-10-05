@@ -44,3 +44,10 @@ object OptionalMemberExpression {
   }
 }
 
+@JSImport("@babel/types", "optionalMemberExpression")
+@js.native
+object optionalMemberExpression extends js.Object {
+  def apply(`object`: Expression, property: js.Any, computed: js.UndefOr[scala.Nothing], optional: Boolean): OptionalMemberExpression = js.native
+  def apply(`object`: Expression, property: js.Any, computed: Boolean, optional: Boolean): OptionalMemberExpression = js.native
+}
+

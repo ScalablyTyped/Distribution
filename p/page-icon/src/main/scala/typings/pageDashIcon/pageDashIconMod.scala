@@ -1,7 +1,7 @@
 package typings.pageDashIcon
 
-import typings.pageDashIcon.PageIconNs.FetchOptions
-import typings.pageDashIcon.PageIconNs.Icon
+import typings.pageDashIcon.PageIcon.FetchOptions
+import typings.pageDashIcon.PageIcon.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

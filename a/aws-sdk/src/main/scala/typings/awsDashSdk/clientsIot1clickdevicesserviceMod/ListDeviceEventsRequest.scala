@@ -38,11 +38,11 @@ object ListDeviceEventsRequest {
     DeviceId: __string,
     FromTimeStamp: __timestampIso8601,
     ToTimeStamp: __timestampIso8601,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: __string = null
   ): ListDeviceEventsRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId, FromTimeStamp = FromTimeStamp, ToTimeStamp = ToTimeStamp)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDeviceEventsRequest]
   }

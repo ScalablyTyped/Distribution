@@ -1,7 +1,7 @@
 package typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultLinkWidgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.SVGPathElement

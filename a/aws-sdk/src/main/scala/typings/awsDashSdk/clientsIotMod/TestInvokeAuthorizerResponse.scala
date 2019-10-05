@@ -30,18 +30,18 @@ trait TestInvokeAuthorizerResponse extends js.Object {
 object TestInvokeAuthorizerResponse {
   @scala.inline
   def apply(
-    disconnectAfterInSeconds: js.UndefOr[Seconds] = js.undefined,
-    isAuthenticated: js.UndefOr[IsAuthenticated] = js.undefined,
+    disconnectAfterInSeconds: Int | Double = null,
+    isAuthenticated: js.UndefOr[scala.Boolean] = js.undefined,
     policyDocuments: PolicyDocuments = null,
     principalId: PrincipalId = null,
-    refreshAfterInSeconds: js.UndefOr[Seconds] = js.undefined
+    refreshAfterInSeconds: Int | Double = null
   ): TestInvokeAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disconnectAfterInSeconds)) __obj.updateDynamic("disconnectAfterInSeconds")(disconnectAfterInSeconds)
+    if (disconnectAfterInSeconds != null) __obj.updateDynamic("disconnectAfterInSeconds")(disconnectAfterInSeconds.asInstanceOf[js.Any])
     if (!js.isUndefined(isAuthenticated)) __obj.updateDynamic("isAuthenticated")(isAuthenticated)
     if (policyDocuments != null) __obj.updateDynamic("policyDocuments")(policyDocuments)
     if (principalId != null) __obj.updateDynamic("principalId")(principalId)
-    if (!js.isUndefined(refreshAfterInSeconds)) __obj.updateDynamic("refreshAfterInSeconds")(refreshAfterInSeconds)
+    if (refreshAfterInSeconds != null) __obj.updateDynamic("refreshAfterInSeconds")(refreshAfterInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeAuthorizerResponse]
   }
 }

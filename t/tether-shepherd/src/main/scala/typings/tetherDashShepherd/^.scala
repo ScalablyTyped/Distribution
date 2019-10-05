@@ -1,6 +1,6 @@
 package typings.tetherDashShepherd
 
-import typings.tetherDashShepherd.TetherShepherdNs.ShepherdStatic
+import typings.tetherDashShepherd.TetherShepherd.ShepherdStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -336,146 +336,146 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cancelled) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclTypeAlias(ServerSurfaceCall) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Request) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclTypeAlias(ServerUnaryCall) / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Request) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclTypeAlias(ServerWritableStream) / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerWritableStreamImpl))] 
-[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerReadableStreamImpl))] 
-[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerDuplexStreamImpl))] 
-[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerDuplexStreamImpl))] 
 [info ] ExpandCallables.scala:48 Expanded requestSerialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/make-client) / TsDeclInterface(MethodDefinition))] 
 [info ] ExpandCallables.scala:48 Expanded responseSerialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/make-client) / TsDeclInterface(MethodDefinition))] 
 [info ] ExpandCallables.scala:48 Expanded requestDeserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/make-client) / TsDeclInterface(MethodDefinition))] 
 [info ] ExpandCallables.scala:48 Expanded responseDeserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/make-client) / TsDeclInterface(MethodDefinition))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerReadableStreamImpl))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerWritableStreamImpl))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerDuplexStreamImpl))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclClass(ServerDuplexStreamImpl))] 
+[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(UnaryHandler))] 
+[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ClientStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(ServerStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded func into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded serialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
+[info ] ExpandCallables.scala:48 Expanded deserialize into 1 methods [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/server-call) / TsDeclInterface(BidiStreamingHandler))] 
 [debug] PhaseRunner.scala:84 Success [id => @grpc/grpc-js, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing @grpc/grpc-js [id => @grpc/grpc-js, phase => scala.js] 
-[warn ] ImportTree.scala:397 Dropping List(TsIdentSimple(CHANNEL_SYMBOL)) [id => @grpc/grpc-js, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/client) / TsDeclClass(Client) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(CHANNEL_SYMBOL)) [id => @grpc/grpc-js, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/client) / TsDeclClass(Client) / TsMemberIndex())] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientUnaryCallImpl)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(pipe), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit), Name(pipe)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientReadableStreamImpl)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientWritableStreamImpl)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(pipe), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit), Name(pipe)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientDuplexStreamImpl)] 
 [info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerWritableStreamImpl)] 
 [info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerUnaryCallImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(pipe), Name(once), Name(setMaxListeners), Name(eventNames), Name(pipe), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerReadableStreamImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(pipe), Name(once), Name(setMaxListeners), Name(eventNames), Name(pipe), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerDuplexStreamImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(pipe), Name(once), Name(setMaxListeners), Name(eventNames), Name(pipe), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallDashStreamMod) / Name(Http2CallStream)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientUnaryCallImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(pipe), Name(once), Name(setMaxListeners), Name(eventNames), Name(pipe), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientReadableStreamImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientWritableStreamImpl)] 
-[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(pipe), Name(once), Name(setMaxListeners), Name(eventNames), Name(pipe), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallMod) / Name(ClientDuplexStreamImpl)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(receiveTrailers, sendMessage, receiveMessage, receiveMetadata, sendMetadata) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcFilterDashStackMod) / Name(FilterStack)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(pipe), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit), Name(pipe)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerReadableStreamImpl)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(pipe), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit), Name(pipe)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcServerDashCallMod) / Name(ServerDuplexStreamImpl)] 
+[info ] InferMemberOverrides.scala:82 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(pipe), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit), Name(pipe)) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcCallDashStreamMod) / Name(Http2CallStream)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(createFilter) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcFilterDashStackMod) / Name(FilterStackFactory)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(receiveTrailers, sendMessage, receiveMessage, receiveMetadata, sendMetadata) [id => @grpc/grpc-js, phase => scala.js, this => Name(typings) / Name(atGrpcGrpcDashJs) / Name(buildSrcFilterDashStackMod) / Name(FilterStack)] 
 [debug] PhaseRunner.scala:84 Success [id => @grpc/grpc-js, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building grpc__grpc-js... [id => @grpc/grpc-js, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E29] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerWritableStreamImpl.scala:18:11
+[error] Phase3Compile.scala:240 [E] [E29] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:398:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[ResponseType] with typings.atGrpcGrpcDashJs.Anon_Request[RequestType] found
-[E]       L18:      with ServerWritableStream[RequestType, ResponseType] {
-[E]                      ^
-[E] [E28] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerWritableStreamImpl.scala:17:11
+[E]       L398:        with ServerWritableStream[RequestType, ResponseType] {
+[E]                         ^
+[E] [E28] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:397:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter found
-[E]       L17:      with ServerSurfaceCall with ObjectWritable[ResponseType] with Anon_Request[RequestType]
-[E]                      ^
-[E] [E27] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerUnaryCallImpl.scala:15:11
+[E]       L397:        with ServerSurfaceCall with ObjectWritable[ResponseType] with Anon_Request[RequestType]
+[E]                         ^
+[E] [E27] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:327:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.Anon_Request[RequestType] found
-[E]       L15:      with ServerUnaryCall[RequestType, ResponseType] {
-[E]                      ^
-[E] [E26] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerUnaryCallImpl.scala:14:11
+[E]       L327:        with ServerUnaryCall[RequestType, ResponseType] {
+[E]                         ^
+[E] [E26] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:326:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter found
-[E]       L14:      with ServerSurfaceCall with Anon_Request[RequestType]
-[E]                      ^
-[E] [E25] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerReadableStreamImpl.scala:19:11
+[E]       L326:        with ServerSurfaceCall with Anon_Request[RequestType]
+[E]                         ^
+[E] [E25] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:230:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.Anon_Read[RequestType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,RequestType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[RequestType] found
-[E]       L19:      with ServerReadableStream[RequestType, ResponseType] {
-[E]                      ^
-[E] [E24] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerReadableStreamImpl.scala:18:34
+[E]       L230:        with ServerReadableStream[RequestType, ResponseType] {
+[E]                         ^
+[E] [E24] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:229:36
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Read[RequestType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,RequestType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[RequestType] found
-[E]       L18:      with ServerSurfaceCall with ObjectReadable[RequestType]
-[E]                                             ^
-[E] [E23] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerReadableStreamImpl.scala:18:11
+[E]       L229:        with ServerSurfaceCall with ObjectReadable[RequestType]
+[E]                                                ^
+[E] [E23] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:229:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter found
-[E]       L18:      with ServerSurfaceCall with ObjectReadable[RequestType]
-[E]                      ^
-[E] [E22] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerDuplexStreamImpl.scala:20:67
+[E]       L229:        with ServerSurfaceCall with ObjectReadable[RequestType]
+[E]                         ^
+[E] [E22] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:141:69
 [E]       illegal inheritance; superclass Duplex
 [E]        is not a subclass of the superclass Writable
 [E]        of the mixin trait ObjectWritable
-[E]       L20:      with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
-[E]                                                                              ^
-[E] [E21] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerDuplexStreamImpl.scala:21:11
+[E]       L141:        with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
+[E]                                                                                 ^
+[E] [E21] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:142:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.Anon_Read[RequestType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,RequestType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[RequestType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[ResponseType] found
-[E]       L21:      with ServerDuplexStream[RequestType, ResponseType] {
-[E]                      ^
-[E] [E20] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerDuplexStreamImpl.scala:20:34
+[E]       L142:        with ServerDuplexStream[RequestType, ResponseType] {
+[E]                         ^
+[E] [E20] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:141:36
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Read[RequestType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,RequestType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[RequestType] found
-[E]       L20:      with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
-[E]                                             ^
-[E] [E19] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerDuplexStreamImpl.scala:20:11
+[E]       L141:        with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
+[E]                                                ^
+[E] [E19] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala:141:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancelled with typings.node.eventsMod.EventEmitter found
-[E]       L20:      with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
-[E]                      ^
-[E] [E18] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientWritableStreamImpl.scala:17:11
+[E]       L141:        with ServerSurfaceCall with ObjectReadable[RequestType] with ObjectWritable[ResponseType]
+[E]                         ^
+[E] [E18] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:261:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Serialize[RequestType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[RequestType] found
-[E]       L17:      with ClientWritableStream[RequestType] {
-[E]                      ^
-[E] [E17] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientWritableStreamImpl.scala:16:44
+[E]       L261:        with ClientWritableStream[RequestType] {
+[E]                         ^
+[E] [E17] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:260:46
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter found
-[E]       L16:      with Anon_Serialize[RequestType] with SurfaceCall with ObjectWritable[RequestType]
-[E]                                                       ^
-[E] [E16] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:19:126
+[E]       L260:        with Anon_Serialize[RequestType] with SurfaceCall with ObjectWritable[RequestType]
+[E]                                                          ^
+[E] [E16] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:191:128
 [E]       class EventEmitter is inherited twice
-[E]       L19:      with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
-[E]                                                                                                                                         ^
-[E] [E15] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:19:77
+[E]       L191:        with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
+[E]                                                                                                                                            ^
+[E] [E15] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:191:79
 [E]       illegal inheritance;
 [E]        self-type typings.atGrpcGrpcDashJs.buildSrcCallMod.ClientUnaryCallImpl does not conform to typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject]'s selftype typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject]
-[E]       L19:      with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
-[E]                                                                                        ^
-[E] [E14] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:19:29
+[E]       L191:        with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
+[E]                                                                                           ^
+[E] [E14] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:191:31
 [E]       illegal inheritance;
 [E]        self-type typings.atGrpcGrpcDashJs.buildSrcCallMod.ClientUnaryCallImpl does not conform to typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata]'s selftype typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata]
-[E]       L19:      with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
-[E]                                        ^
-[E] [E13] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:18:11
+[E]       L191:        with Anon_Cancel with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with EventEmitter
+[E]                                           ^
+[E] [E13] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:190:13
 [E]       class EventEmitter is inherited twice
-[E]       L18:   extends EventEmitter
-[E]                      ^
-[E] [E12] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:21:11
+[E]       L190:     extends EventEmitter
+[E]                         ^
+[E] [E12] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:193:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter found
-[E]       L21:      with ClientUnaryCall {
-[E]                      ^
-[E] [E11] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala:20:11
+[E]       L193:        with ClientUnaryCall {
+[E]                         ^
+[E] [E11] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:192:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter found
-[E]       L20:      with SurfaceCall
-[E]                      ^
-[E] [E10] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientReadableStreamImpl.scala:19:11
+[E]       L192:        with SurfaceCall
+[E]                         ^
+[E] [E10] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:117:13
 [E]       class type required but typings.atGrpcGrpcDashJs.Anon_Chunk[ResponseType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.Anon_Read[ResponseType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,ResponseType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[ResponseType] found
-[E]       L19:      with ClientReadableStream[ResponseType] {
-[E]                      ^
-[E] [E9] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientReadableStreamImpl.scala:18:58
+[E]       L117:        with ClientReadableStream[ResponseType] {
+[E]                         ^
+[E] [E9] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:116:60
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Read[ResponseType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,ResponseType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[ResponseType] found
-[E]      L18:      with Anon_Chunk[ResponseType] with SurfaceCall with ObjectReadable[ResponseType]
-[E]                                                                    ^
-[E] [E8] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientReadableStreamImpl.scala:18:41
+[E]      L116:        with Anon_Chunk[ResponseType] with SurfaceCall with ObjectReadable[ResponseType]
+[E]                                                                       ^
+[E] [E8] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:116:43
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter found
-[E]      L18:      with Anon_Chunk[ResponseType] with SurfaceCall with ObjectReadable[ResponseType]
-[E]                                                   ^
-[E] [E7] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientDuplexStreamImpl.scala:17:11
+[E]      L116:        with Anon_Chunk[ResponseType] with SurfaceCall with ObjectReadable[ResponseType]
+[E]                                                      ^
+[E] [E7] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:35:13
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Serialize[RequestType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[RequestType] with typings.atGrpcGrpcDashJs.Anon_Chunk[ResponseType] with typings.atGrpcGrpcDashJs.Anon_Read[ResponseType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,ResponseType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[ResponseType] found
-[E]      L17:      with ClientDuplexStream[RequestType, ResponseType] {
-[E]                     ^
-[E] [E6] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientDuplexStreamImpl.scala:16:50
+[E]      L35:        with ClientDuplexStream[RequestType, ResponseType] {
+[E]                       ^
+[E] [E6] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:34:52
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Chunk[ResponseType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.Anon_Read[ResponseType] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,ResponseType] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[ResponseType] found
-[E]      L16:      with ClientWritableStream[RequestType] with ClientReadableStream[ResponseType]
-[E]                                                            ^
-[E] [E5] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientDuplexStreamImpl.scala:16:11
+[E]      L34:        with ClientWritableStream[RequestType] with ClientReadableStream[ResponseType]
+[E]                                                              ^
+[E] [E5] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala:34:13
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Serialize[RequestType] with typings.atGrpcGrpcDashJs.Anon_Cancel with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata,typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject] with typings.node.eventsMod.EventEmitter with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[RequestType] found
-[E]      L16:      with ClientWritableStream[RequestType] with ClientReadableStream[ResponseType]
-[E]                     ^
+[E]      L34:        with ClientWritableStream[RequestType] with ClientReadableStream[ResponseType]
+[E]                       ^
 [E] [E4] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallDashStreamMod/Http2CallStream.scala:29:87
 [E]      illegal inheritance;
 [E]       self-type typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Http2CallStream does not conform to typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject]'s selftype typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject]
@@ -494,15 +494,10 @@
 [E]      class type required but typings.atGrpcGrpcDashJs.Anon_Callback[typings.node.Buffer,typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.WriteObject] with typings.node.streamMod.Duplex with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable[typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.WriteObject] with typings.atGrpcGrpcDashJs.Anon_Read[typings.node.Buffer] with typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1[typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data,typings.node.Buffer] with typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable[typings.node.Buffer] found
 [E]      L29:      with Anon_CancelWithStatus with (EmitterAugmentation1[metadata, Metadata]) with (EmitterAugmentation1[status, StatusObject]) with (ObjectDuplex[WriteObject, Buffer])
 [E]                                                                                                                                                   ^
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerWritableStreamImpl.scala: L17 [E28], L18 [E29]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientWritableStreamImpl.scala: L16 [E17], L17 [E18]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerReadableStreamImpl.scala: L18 [E23], L18 [E24], L19 [E25]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerUnaryCallImpl.scala: L14 [E26], L15 [E27]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod/ServerDuplexStreamImpl.scala: L20 [E19], L20 [E20], L20 [E22], L21 [E21]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientUnaryCallImpl.scala: L18 [E13], L19 [E14], L19 [E15], L19 [E16], L20 [E11], L21 [E12]
+[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod.scala: L34 [E5], L34 [E6], L35 [E7], L116 [E8], L116 [E9], L117 [E10], L190 [E13], L191 [E14], L191 [E15], L191 [E16], L192 [E11], L193 [E12], L260 [E17], L261 [E18]
 [E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallDashStreamMod/Http2CallStream.scala: L29 [E1], L29 [E3], L29 [E4], L30 [E2]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientDuplexStreamImpl.scala: L16 [E5], L16 [E6], L17 [E7]
-[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcCallMod/ClientReadableStreamImpl.scala: L18 [E8], L18 [E9], L19 [E10]
+[E] src/main/scala/typings/atGrpcGrpcDashJs/buildSrcServerDashCallMod.scala: L141 [E19], L141 [E20], L141 [E22], L142 [E21], L229 [E23], L229 [E24], L230 [E25], L326 [E26], L327 [E27], L397 [E28], L398 [E29]
 [E] Failed to compile 'grpc__grpc-js'
  [id => @grpc/grpc-js, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @grpc/grpc-js, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @grpc/grpc-js, phase => publish] 

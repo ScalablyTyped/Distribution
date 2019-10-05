@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportImageMeshColorMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMeshColor
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMeshColorProperties
+import typings.arcgisDashJsDashApi.__esri.ImageMeshColor
+import typings.arcgisDashJsDashApi.__esri.ImageMeshColorProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

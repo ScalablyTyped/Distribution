@@ -28,7 +28,7 @@ object ModifyVpcEndpointServicePermissionsRequest {
   def apply(
     ServiceId: String,
     AddAllowedPrincipals: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RemoveAllowedPrincipals: ValueStringList = null
   ): ModifyVpcEndpointServicePermissionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId)

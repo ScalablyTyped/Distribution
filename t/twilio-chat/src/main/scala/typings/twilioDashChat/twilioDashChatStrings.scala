@@ -1,14 +1,14 @@
 package typings.twilioDashChat
 
-import typings.twilioDashChat.libChannelMod.ChannelNs.NotificationLevel
-import typings.twilioDashChat.libChannelMod.ChannelNs.Status
-import typings.twilioDashChat.libDataChannelsMod.ChannelsNs.DataSource
-import typings.twilioDashChat.libMemberMod.MemberNs.Type
-import typings.twilioDashChat.libMessageMod.MessageNs.UpdateReason
-import typings.twilioDashChat.libUserMod.UserNs.SubscriptionState
-import typings.twilioDashChat.twilioDashChatMod.ClientNs.ChannelSortingCriteria
-import typings.twilioDashChat.twilioDashChatMod.ClientNs.ChannelSortingOrder
-import typings.twilioDashChat.twilioDashChatMod.ClientNs._LogLevel
+import typings.twilioDashChat.libChannelMod.Channel.NotificationLevel
+import typings.twilioDashChat.libChannelMod.Channel.Status
+import typings.twilioDashChat.libDataChannelsMod.Channels.DataSource
+import typings.twilioDashChat.libMemberMod.Member.Type
+import typings.twilioDashChat.libUserMod.User.SubscriptionState
+import typings.twilioDashChat.libUserMod.User.UpdateReason
+import typings.twilioDashChat.twilioDashChatMod.Client.ChannelSortingCriteria
+import typings.twilioDashChat.twilioDashChatMod.Client.ChannelSortingOrder
+import typings.twilioDashChat.twilioDashChatMod.Client._LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +20,17 @@ object twilioDashChatStrings {
   @js.native
   sealed trait attributes
     extends UpdateReason
-       with typings.twilioDashChat.libUserMod.UserNs.UpdateReason
-       with typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+       with typings.twilioDashChat.libMemberMod.Member.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
+       with typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
-  sealed trait author extends UpdateReason
+  sealed trait author
+    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
-  sealed trait body extends UpdateReason
+  sealed trait body
+    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
   sealed trait chat
@@ -37,18 +39,18 @@ object twilioDashChatStrings {
   
   @js.native
   sealed trait createdBy
-    extends typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait dateCreated
-    extends typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait dateUpdated
-    extends UpdateReason
-       with typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
+       with typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
   sealed trait debug extends _LogLevel
@@ -65,8 +67,8 @@ object twilioDashChatStrings {
   @js.native
   sealed trait friendlyName
     extends ChannelSortingCriteria
-       with typings.twilioDashChat.libUserMod.UserNs.UpdateReason
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+       with UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait info extends _LogLevel
@@ -85,51 +87,50 @@ object twilioDashChatStrings {
   
   @js.native
   sealed trait lastConsumedMessageIndex
-    extends typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait lastConsumptionTimestamp
-    extends typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
+    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
   
   @js.native
   sealed trait lastMessage
     extends ChannelSortingCriteria
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
-  sealed trait lastUpdatedBy extends UpdateReason
+  sealed trait lastUpdatedBy
+    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
   sealed trait media
-    extends typings.twilioDashChat.libMessageMod.MessageNs.Type
+    extends typings.twilioDashChat.libMessageMod.Message.Type
   
   @js.native
   sealed trait muted extends NotificationLevel
   
   @js.native
-  sealed trait notifiable
-    extends typings.twilioDashChat.libUserMod.UserNs.UpdateReason
+  sealed trait notifiable extends UpdateReason
   
   @js.native
   sealed trait notificationLevel
-    extends typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
-  sealed trait online
-    extends typings.twilioDashChat.libUserMod.UserNs.UpdateReason
+  sealed trait online extends UpdateReason
   
   @js.native
   sealed trait `private`
-    extends typings.twilioDashChat.libChannelMod.ChannelNs.Type
+    extends typings.twilioDashChat.libChannelMod.Channel.Type
   
   @js.native
   sealed trait public
-    extends typings.twilioDashChat.libChannelMod.ChannelNs.Type
+    extends typings.twilioDashChat.libChannelMod.Channel.Type
   
   @js.native
   sealed trait roleSid
-    extends typings.twilioDashChat.libMemberMod.MemberNs.UpdateReason
+    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
   
   @js.native
   sealed trait silent extends _LogLevel
@@ -139,7 +140,7 @@ object twilioDashChatStrings {
   
   @js.native
   sealed trait status
-    extends typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+    extends typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait subscribed extends SubscriptionState
@@ -152,34 +153,35 @@ object twilioDashChatStrings {
   
   @js.native
   sealed trait text
-    extends typings.twilioDashChat.libMessageMod.MessageNs.Type
+    extends typings.twilioDashChat.libMessageMod.Message.Type
   
   @js.native
-  sealed trait timestamp extends UpdateReason
+  sealed trait timestamp
+    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
   sealed trait trace extends _LogLevel
   
   @js.native
   sealed trait twilioDOTchannelDOTadded_to_channel
-    extends typings.twilioDashChat.libPushnotificationMod.PushNotificationNs.Type
+    extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
   sealed trait twilioDOTchannelDOTinvited_to_channel
-    extends typings.twilioDashChat.libPushnotificationMod.PushNotificationNs.Type
+    extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
   sealed trait twilioDOTchannelDOTnew_message
-    extends typings.twilioDashChat.libPushnotificationMod.PushNotificationNs.Type
+    extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
   sealed trait twilioDOTchannelDOTremoved_from_channel
-    extends typings.twilioDashChat.libPushnotificationMod.PushNotificationNs.Type
+    extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
   sealed trait uniqueName
     extends ChannelSortingCriteria
-       with typings.twilioDashChat.libChannelMod.ChannelNs.UpdateReason
+       with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
   sealed trait unknown extends Status

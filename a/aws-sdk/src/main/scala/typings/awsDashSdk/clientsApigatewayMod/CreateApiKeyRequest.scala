@@ -44,8 +44,8 @@ object CreateApiKeyRequest {
   def apply(
     customerId: String = null,
     description: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    generateDistinctId: js.UndefOr[Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    generateDistinctId: js.UndefOr[scala.Boolean] = js.undefined,
     name: String = null,
     stageKeys: ListOfStageKeys = null,
     tags: MapOfStringToString = null,

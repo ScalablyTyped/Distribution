@@ -21,7 +21,7 @@ object CellMeasurerCacheParams {
     defaultWidth: Int | Double = null,
     fixedHeight: js.UndefOr[Boolean] = js.undefined,
     fixedWidth: js.UndefOr[Boolean] = js.undefined,
-    keyMapper: KeyMapper = null,
+    keyMapper: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any = null,
     minHeight: Int | Double = null,
     minWidth: Int | Double = null
   ): CellMeasurerCacheParams = {
@@ -30,7 +30,7 @@ object CellMeasurerCacheParams {
     if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight)
     if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth)
-    if (keyMapper != null) __obj.updateDynamic("keyMapper")(keyMapper)
+    if (keyMapper != null) __obj.updateDynamic("keyMapper")(js.Any.fromFunction2(keyMapper))
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellMeasurerCacheParams]

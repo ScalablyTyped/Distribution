@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Splitter
-import typings.ejDotWebDotAll.ejNs.SplitterNs.Model
+import typings.ejDotWebDotAll.ej.Splitter
+import typings.ejDotWebDotAll.ej.Splitter.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

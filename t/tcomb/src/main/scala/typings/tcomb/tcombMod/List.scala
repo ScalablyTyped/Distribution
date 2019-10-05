@@ -18,3 +18,10 @@ trait List[T]
   def update(instance: js.Array[js.Array[T]], spec: UpdatePatch): js.Array[js.Array[T]] = js.native
 }
 
+@JSImport("tcomb", "list")
+@js.native
+object list extends js.Object {
+  def apply[T](`type`: Constructor[T]): List[T] = js.native
+  def apply[T](`type`: Constructor[T], name: String): List[T] = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.analyticsDashNode
 
-import typings.analyticsDashNode.analyticsDashNodeMod.AnalyticsNodeNs.Integrations
+import typings.analyticsDashNode.analyticsDashNodeMod.AnalyticsNode.Integrations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

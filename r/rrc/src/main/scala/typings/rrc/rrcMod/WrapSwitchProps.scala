@@ -1,7 +1,9 @@
 package typings.rrc.rrcMod
 
+import typings.history.historyMod.Location
 import typings.history.historyMod.LocationDescriptorObject
 import typings.history.historyMod.LocationState
+import typings.reactDashRouter.reactDashRouterMod.`match`
 import typings.rrc.Anon_Pathname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,10 +18,10 @@ object WrapSwitchProps {
   def apply[Params](
     location: LocationDescriptorObject[LocationState] with Anon_Pathname,
     routes: js.Array[RouteConfiguration],
-    getKey: GetKeyFunction[Params] = null
+    getKey: (/* match */ `match`[Params], /* route */ RouteConfiguration, /* location */ Location[LocationState]) => String = null
   ): WrapSwitchProps[Params] = {
     val __obj = js.Dynamic.literal(location = location, routes = routes)
-    if (getKey != null) __obj.updateDynamic("getKey")(getKey)
+    if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction3(getKey))
     __obj.asInstanceOf[WrapSwitchProps[Params]]
   }
 }

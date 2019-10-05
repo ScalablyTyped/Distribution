@@ -37,3 +37,9 @@ object TSArrayType {
   }
 }
 
+@JSImport("@babel/types", "tsArrayType")
+@js.native
+object tsArrayType extends js.Object {
+  def apply(elementType: TSType): TSArrayType = js.native
+}
+

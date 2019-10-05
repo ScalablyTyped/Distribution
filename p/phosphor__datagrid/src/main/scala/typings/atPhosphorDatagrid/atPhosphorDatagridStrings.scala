@@ -1,11 +1,11 @@
 package typings.atPhosphorDatagrid
 
-import typings.atPhosphorDatagrid.libDatagridMod.DataGridNs.HeaderVisibility
-import typings.atPhosphorDatagrid.libDatamodelMod.DataModelNs.CellRegion
-import typings.atPhosphorDatagrid.libDatamodelMod.DataModelNs.ColumnRegion
-import typings.atPhosphorDatagrid.libDatamodelMod.DataModelNs.RowRegion
-import typings.atPhosphorDatagrid.libTextrendererMod.TextRendererNs.HorizontalAlignment
-import typings.atPhosphorDatagrid.libTextrendererMod.TextRendererNs.VerticalAlignment
+import typings.atPhosphorDatagrid.libDatagridMod.DataGrid.HeaderVisibility
+import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.CellRegion
+import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.ColumnRegion
+import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.RowRegion
+import typings.atPhosphorDatagrid.libTextrendererMod.TextRenderer.HorizontalAlignment
+import typings.atPhosphorDatagrid.libTextrendererMod.TextRenderer.VerticalAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

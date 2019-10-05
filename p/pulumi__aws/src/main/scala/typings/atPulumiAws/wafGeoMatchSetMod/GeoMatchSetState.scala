@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafGeoMatchSetMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.GeoMatchSetGeoMatchConstraint
+import typings.atPulumiAws.typesInputMod.waf.GeoMatchSetGeoMatchConstraint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -38,3 +38,9 @@ object DeclaredPredicate {
   }
 }
 
+@JSImport("@babel/types", "declaredPredicate")
+@js.native
+object declaredPredicate extends js.Object {
+  def apply(value: Flow): DeclaredPredicate = js.native
+}
+

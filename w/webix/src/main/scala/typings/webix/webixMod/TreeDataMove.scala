@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
-import typings.webix.webixMod.uiNs.baseview
+import org.scalablytyped.runtime.TopLevel
+import typings.webix.webixMod.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,4 +25,8 @@ trait TreeDataMove extends js.Object {
   def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
 }
+
+@JSImport("webix", "TreeDataMove")
+@js.native
+object TreeDataMove extends TopLevel[TreeDataMove]
 

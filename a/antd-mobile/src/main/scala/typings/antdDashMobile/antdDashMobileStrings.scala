@@ -1,7 +1,7 @@
 package typings.antdDashMobile
 
-import typings.antdDashMobile.libCarouselMod.IFrameOverFlow
-import typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
+import typings.antdDashMobile.esCarouselMod.IFrameOverFlow
+import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,57 +10,57 @@ object antdDashMobileStrings {
   @js.native
   sealed trait `0`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `1`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `2`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `3`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `4`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `5`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `6`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `7`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `8`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait `9`
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait DOT
     extends InputKey
-       with typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+       with typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
   
   @js.native
   sealed trait Empty extends js.Object
@@ -140,7 +140,7 @@ object antdDashMobileStrings {
   @js.native
   sealed trait hidden
     extends IFrameOverFlow
-       with typings.antdDashMobile.esCarouselMod.IFrameOverFlow
+       with typings.antdDashMobile.libCarouselMod.IFrameOverFlow
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -268,7 +268,7 @@ object antdDashMobileStrings {
   @js.native
   sealed trait visible
     extends IFrameOverFlow
-       with typings.antdDashMobile.esCarouselMod.IFrameOverFlow
+       with typings.antdDashMobile.libCarouselMod.IFrameOverFlow
   
   @js.native
   sealed trait warning extends js.Object

@@ -1,7 +1,7 @@
 package typings.inversify
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Request
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ConstraintFunction
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Request
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`

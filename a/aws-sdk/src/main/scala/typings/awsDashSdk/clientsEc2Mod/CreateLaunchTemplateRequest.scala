@@ -37,7 +37,7 @@ object CreateLaunchTemplateRequest {
     LaunchTemplateData: RequestLaunchTemplateData,
     LaunchTemplateName: LaunchTemplateName,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null,
     VersionDescription: VersionDescription = null
   ): CreateLaunchTemplateRequest = {

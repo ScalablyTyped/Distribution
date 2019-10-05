@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/time", JSImport.Namespace)
 @js.native
 object libTimeMod extends js.Object {
-  @JSName("Time")
   @js.native
-  object TimeNs extends js.Object {
+  object Time extends js.Object {
     /**
       * Convert a timestring to a date format.
       *

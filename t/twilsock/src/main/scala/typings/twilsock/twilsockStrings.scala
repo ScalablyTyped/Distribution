@@ -1,8 +1,8 @@
 package typings.twilsock
 
-import typings.twilsock.libProtocolProtocolMod.ProtocolNs.MessageType
-import typings.twilsock.libProtocolProtocolMod.ProtocolNs.Method
-import typings.twilsock.libTwilsockMod.TwilsockChannelNs.State
+import typings.twilsock.libProtocolProtocolMod.Protocol.MessageType
+import typings.twilsock.libProtocolProtocolMod.Protocol.Method
+import typings.twilsock.libTwilsockMod.TwilsockChannel.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,13 +14,13 @@ import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSu
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionMod.Selection
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.RefObject
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +100,7 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
     * Reveals suggestions any time the user clicks on the input element
     * without shifting focus.
     */
-  /* protected */ def onClick(ev: MouseEvent[HTMLInputElement, typings.std.MouseEvent]): Unit = js.native
+  /* protected */ def onClick(ev: typings.react.reactMod.MouseEvent[HTMLInputElement, MouseEvent]): Unit = js.native
   /* protected */ def onEmptyInputFocus(): Unit = js.native
   /* protected */ def onGetMoreResults(): Unit = js.native
   /* protected */ def onInputBlur(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native
@@ -109,8 +109,8 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   /* protected */ def onItemChange(changedItem: T, index: Double): Unit = js.native
   /* protected */ def onKeyDown(ev: KeyboardEvent[HTMLElement]): Unit = js.native
   /* protected */ def onSelectionChange(): Unit = js.native
-  /* protected */ def onSuggestionClick(ev: MouseEvent[HTMLElement, typings.std.MouseEvent], item: js.Any, index: Double): Unit = js.native
-  /* protected */ def onSuggestionRemove(ev: MouseEvent[HTMLElement, typings.std.MouseEvent], item: T, index: Double): Unit = js.native
+  /* protected */ def onSuggestionClick(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], item: js.Any, index: Double): Unit = js.native
+  /* protected */ def onSuggestionRemove(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], item: T, index: Double): Unit = js.native
   /* protected */ def onSuggestionSelect(): Unit = js.native
   def refocusSuggestions(keyCode: Double): Unit = js.native
   /* protected */ def removeItem(item: IPickerItemProps[T]): Unit = js.native

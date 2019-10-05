@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(name: String, src: String): String = js.native
-  def apply(name: String, src: String, options: Boolean | Options): String = js.native
-  def postlude(moduleName: String): String = js.native
-  def postlude(moduleName: String, options: Boolean): String = js.native
-  def postlude(moduleName: String, options: Options): String = js.native
-  def prelude(moduleName: String): String = js.native
-  def prelude(moduleName: String, options: Boolean): String = js.native
-  def prelude(moduleName: String, options: Options): String = js.native
+  def apply(name: String, src: String, options: Boolean): String = js.native
+  def apply(name: String, src: String, options: Options): String = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,24 +19,9 @@ trait Screen extends js.Object {
 
 @JSGlobal("Screen")
 @js.native
-class ScreenCls () extends Screen {
-  /* CompleteClass */
-  override val availHeight: Double = js.native
-  /* CompleteClass */
-  override val availWidth: Double = js.native
-  /* CompleteClass */
-  override val colorDepth: Double = js.native
-  /* CompleteClass */
-  override val height: Double = js.native
-  /* CompleteClass */
-  override val orientation: ScreenOrientation = js.native
-  /* CompleteClass */
-  override val pixelDepth: Double = js.native
-  /* CompleteClass */
-  override val width: Double = js.native
-}
-
-@JSGlobal("Screen")
-@js.native
 object Screen extends Instantiable0[Screen]
+
+@JSGlobal("screen")
+@js.native
+object screen extends TopLevel[Screen]
 

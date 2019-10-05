@@ -27,9 +27,9 @@ object DeleteDBInstanceMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    DeleteAutomatedBackups: js.UndefOr[BooleanOptional] = js.undefined,
+    DeleteAutomatedBackups: js.UndefOr[scala.Boolean] = js.undefined,
     FinalDBSnapshotIdentifier: String = null,
-    SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
+    SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
     if (!js.isUndefined(DeleteAutomatedBackups)) __obj.updateDynamic("DeleteAutomatedBackups")(DeleteAutomatedBackups)

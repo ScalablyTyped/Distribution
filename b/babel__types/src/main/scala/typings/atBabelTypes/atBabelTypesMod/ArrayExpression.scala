@@ -37,3 +37,10 @@ object ArrayExpression {
   }
 }
 
+@JSImport("@babel/types", "arrayExpression")
+@js.native
+object arrayExpression extends js.Object {
+  def apply(): ArrayExpression = js.native
+  def apply(elements: js.Array[Null | Expression | SpreadElement]): ArrayExpression = js.native
+}
+

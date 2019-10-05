@@ -1,6 +1,6 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.tspNs.MessageImprint
+import typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

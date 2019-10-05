@@ -1,7 +1,7 @@
 package typings.vortexDashWebDashClient
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.vortexDashWebDashClient.DDSNs.Durability
+import typings.vortexDashWebDashClient.DDS.Durability
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

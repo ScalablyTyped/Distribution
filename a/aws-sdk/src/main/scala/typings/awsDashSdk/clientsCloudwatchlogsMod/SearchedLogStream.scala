@@ -17,10 +17,7 @@ trait SearchedLogStream extends js.Object {
 
 object SearchedLogStream {
   @scala.inline
-  def apply(
-    logStreamName: LogStreamName = null,
-    searchedCompletely: js.UndefOr[LogStreamSearchedCompletely] = js.undefined
-  ): SearchedLogStream = {
+  def apply(logStreamName: LogStreamName = null, searchedCompletely: js.UndefOr[Boolean] = js.undefined): SearchedLogStream = {
     val __obj = js.Dynamic.literal()
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName)
     if (!js.isUndefined(searchedCompletely)) __obj.updateDynamic("searchedCompletely")(searchedCompletely)

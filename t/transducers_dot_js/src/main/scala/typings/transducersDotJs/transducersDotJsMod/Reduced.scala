@@ -1,5 +1,6 @@
 package typings.transducersDotJs.transducersDotJsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.transducersDotJs.transducersDotJsNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,21 +13,5 @@ trait Reduced[T] extends js.Object {
 
 @JSImport("transducers.js", "Reduced")
 @js.native
-class ReducedCls[T] protected () extends Reduced[T] {
-  def this(value: T) = this()
-  /* CompleteClass */
-  override var `@@transducer/reduced`: `true` = js.native
-  /* CompleteClass */
-  override var `@@transducer/value`: T = js.native
-}
-
-object Reduced {
-  @scala.inline
-  def apply[T](`@@transducer/reduced`: `true`, `@@transducer/value`: T): Reduced[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@@transducer/reduced")(`@@transducer/reduced`)
-    __obj.updateDynamic("@@transducer/value")(`@@transducer/value`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Reduced[T]]
-  }
-}
+object Reduced extends TopLevel[ReducedConstructor]
 

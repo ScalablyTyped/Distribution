@@ -1,6 +1,6 @@
 package typings.scrolltofixed
 
-import typings.scrolltofixed.ScrollToFixedNs.ScrollToFixedOptions
+import typings.scrolltofixed.ScrollToFixed.ScrollToFixedOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

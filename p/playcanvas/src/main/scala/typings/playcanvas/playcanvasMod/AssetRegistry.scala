@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "AssetRegistry")
 @js.native
 class AssetRegistry protected ()
-  extends typings.playcanvas.pcNs.AssetRegistry {
-  def this(loader: typings.playcanvas.pcNs.ResourceLoader) = this()
+  extends typings.playcanvas.pc.AssetRegistry {
+  def this(loader: typings.playcanvas.pc.ResourceLoader) = this()
 }
 

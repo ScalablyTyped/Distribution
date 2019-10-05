@@ -21,11 +21,7 @@ trait ListResourceTagsResponse extends js.Object {
 
 object ListResourceTagsResponse {
   @scala.inline
-  def apply(
-    NextMarker: MarkerType = null,
-    Tags: TagList = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
-  ): ListResourceTagsResponse = {
+  def apply(NextMarker: MarkerType = null, Tags: TagList = null, Truncated: js.UndefOr[Boolean] = js.undefined): ListResourceTagsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

@@ -4,8 +4,8 @@ import typings.std.Console
 import typings.zipkin.zipkinMod.Context
 import typings.zipkin.zipkinMod.Recorder
 import typings.zipkin.zipkinMod.TraceId
-import typings.zipkin.zipkinMod.modelNs.Endpoint
-import typings.zipkin.zipkinMod.samplerNs.Sampler
+import typings.zipkin.zipkinMod.model.Endpoint
+import typings.zipkin.zipkinMod.sampler.Sampler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

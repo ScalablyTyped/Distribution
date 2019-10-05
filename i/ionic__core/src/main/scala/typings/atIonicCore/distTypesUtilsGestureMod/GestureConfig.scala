@@ -29,29 +29,29 @@ object GestureConfig {
   def apply(
     el: Node,
     gestureName: String,
-    canStart: GestureCallback = null,
+    canStart: /* detail */ GestureDetail => Boolean | Unit = null,
     direction: x | y = null,
     disableScroll: js.UndefOr[Boolean] = js.undefined,
     gesturePriority: Int | Double = null,
     maxAngle: Int | Double = null,
-    notCaptured: GestureCallback = null,
-    onEnd: GestureCallback = null,
-    onMove: GestureCallback = null,
-    onStart: GestureCallback = null,
+    notCaptured: /* detail */ GestureDetail => Boolean | Unit = null,
+    onEnd: /* detail */ GestureDetail => Boolean | Unit = null,
+    onMove: /* detail */ GestureDetail => Boolean | Unit = null,
+    onStart: /* detail */ GestureDetail => Boolean | Unit = null,
     onWillStart: /* _ */ GestureDetail => js.Promise[Unit] = null,
     passive: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null
   ): GestureConfig = {
     val __obj = js.Dynamic.literal(el = el, gestureName = gestureName)
-    if (canStart != null) __obj.updateDynamic("canStart")(canStart)
+    if (canStart != null) __obj.updateDynamic("canStart")(js.Any.fromFunction1(canStart))
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
     if (gesturePriority != null) __obj.updateDynamic("gesturePriority")(gesturePriority.asInstanceOf[js.Any])
     if (maxAngle != null) __obj.updateDynamic("maxAngle")(maxAngle.asInstanceOf[js.Any])
-    if (notCaptured != null) __obj.updateDynamic("notCaptured")(notCaptured)
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
-    if (onMove != null) __obj.updateDynamic("onMove")(onMove)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (notCaptured != null) __obj.updateDynamic("notCaptured")(js.Any.fromFunction1(notCaptured))
+    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
+    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction1(onMove))
+    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onWillStart != null) __obj.updateDynamic("onWillStart")(js.Any.fromFunction1(onWillStart))
     if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import typings.reactDashToolbox.libListListItemActionsMod.ListItemActionsTheme
 import typings.reactDashToolbox.libListListItemContentMod.ListItemContentTheme
 import typings.reactDashToolbox.libListListItemLayoutMod.ListItemLayoutTheme
 import typings.reactDashToolbox.libListListItemTextMod.ListItemTextTheme
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

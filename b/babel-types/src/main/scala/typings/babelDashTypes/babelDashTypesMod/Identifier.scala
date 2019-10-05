@@ -38,3 +38,10 @@ object Identifier {
   }
 }
 
+@JSImport("babel-types", "identifier")
+@js.native
+object identifier extends js.Object {
+  def apply(): Identifier = js.native
+  def apply(name: String): Identifier = js.native
+}
+

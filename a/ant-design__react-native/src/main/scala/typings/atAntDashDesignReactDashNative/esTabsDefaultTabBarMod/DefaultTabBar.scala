@@ -4,7 +4,7 @@ import typings.atAntDashDesignReactDashNative.Anon_ActiveTab
 import typings.atAntDashDesignReactDashNative.Anon_ContainerTab
 import typings.atAntDashDesignReactDashNative.esStyleMod.Theme
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.PureComponent
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.ScrollView

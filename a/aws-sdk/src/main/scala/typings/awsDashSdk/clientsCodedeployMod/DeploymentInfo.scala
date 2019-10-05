@@ -135,8 +135,8 @@ object DeploymentInfo {
     description: Description = null,
     errorInformation: ErrorInformation = null,
     fileExistsBehavior: FileExistsBehavior = null,
-    ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined,
-    instanceTerminationWaitTimeStarted: js.UndefOr[Boolean] = js.undefined,
+    ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined,
+    instanceTerminationWaitTimeStarted: js.UndefOr[scala.Boolean] = js.undefined,
     loadBalancerInfo: LoadBalancerInfo = null,
     previousRevision: RevisionLocation = null,
     revision: RevisionLocation = null,
@@ -144,7 +144,7 @@ object DeploymentInfo {
     startTime: Timestamp = null,
     status: DeploymentStatus = null,
     targetInstances: TargetInstances = null,
-    updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
+    updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): DeploymentInfo = {
     val __obj = js.Dynamic.literal()
     if (additionalDeploymentStatusInfo != null) __obj.updateDynamic("additionalDeploymentStatusInfo")(additionalDeploymentStatusInfo)

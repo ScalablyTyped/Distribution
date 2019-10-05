@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxElement
+import typings.typescriptDashServices.TypeScript.ISyntaxElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PositionedElement")
 @js.native
 class PositionedElement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PositionedElement {
+  extends typings.typescriptDashServices.TypeScript.PositionedElement {
   def this(
-    parent: typings.typescriptDashServices.TypeScriptNs.PositionedElement,
+    parent: typings.typescriptDashServices.TypeScript.PositionedElement,
     element: ISyntaxElement,
     fullStart: Double
   ) = this()
@@ -21,9 +21,9 @@ class PositionedElement protected ()
 @js.native
 object PositionedElement extends js.Object {
   def create(
-    parent: typings.typescriptDashServices.TypeScriptNs.PositionedElement,
+    parent: typings.typescriptDashServices.TypeScript.PositionedElement,
     element: ISyntaxElement,
     fullStart: Double
-  ): typings.typescriptDashServices.TypeScriptNs.PositionedElement = js.native
+  ): typings.typescriptDashServices.TypeScript.PositionedElement = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolCognitoIdentityProvider
+import typings.atPulumiAws.typesOutputMod.cognito.IdentityPoolCognitoIdentityProvider
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

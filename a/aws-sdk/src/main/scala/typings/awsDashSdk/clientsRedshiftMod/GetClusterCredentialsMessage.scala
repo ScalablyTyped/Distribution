@@ -36,16 +36,16 @@ object GetClusterCredentialsMessage {
   def apply(
     ClusterIdentifier: String,
     DbUser: String,
-    AutoCreate: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoCreate: js.UndefOr[scala.Boolean] = js.undefined,
     DbGroups: DbGroupList = null,
     DbName: String = null,
-    DurationSeconds: js.UndefOr[IntegerOptional] = js.undefined
+    DurationSeconds: Int | scala.Double = null
   ): GetClusterCredentialsMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier, DbUser = DbUser)
     if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate)
     if (DbGroups != null) __obj.updateDynamic("DbGroups")(DbGroups)
     if (DbName != null) __obj.updateDynamic("DbName")(DbName)
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds)
+    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterCredentialsMessage]
   }
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "is-negated-glob"
-version := "1.0-dt-20180214Z-d748c4"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20180214Z-72ea30"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

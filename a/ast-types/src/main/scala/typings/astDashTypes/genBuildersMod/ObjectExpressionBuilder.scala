@@ -6,7 +6,7 @@ import typings.astDashTypes.genKindsMod.ObjectPropertyKind
 import typings.astDashTypes.genKindsMod.PropertyKind
 import typings.astDashTypes.genKindsMod.SpreadElementKind
 import typings.astDashTypes.genKindsMod.SpreadPropertyKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ObjectExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ObjectExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

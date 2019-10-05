@@ -17,7 +17,7 @@ trait PortProbeAction extends js.Object {
 
 object PortProbeAction {
   @scala.inline
-  def apply(Blocked: js.UndefOr[Boolean] = js.undefined, PortProbeDetails: PortProbeDetails = null): PortProbeAction = {
+  def apply(Blocked: js.UndefOr[scala.Boolean] = js.undefined, PortProbeDetails: PortProbeDetails = null): PortProbeAction = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Blocked)) __obj.updateDynamic("Blocked")(Blocked)
     if (PortProbeDetails != null) __obj.updateDynamic("PortProbeDetails")(PortProbeDetails)

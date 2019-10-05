@@ -37,7 +37,7 @@ object CampaignUpdateSummary {
     creationDateTime: _Date = null,
     failureReason: FailureReason = null,
     lastUpdatedDateTime: _Date = null,
-    minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined,
+    minProvisionedTPS: Int | Double = null,
     solutionVersionArn: Arn = null,
     status: Status = null
   ): CampaignUpdateSummary = {
@@ -45,7 +45,7 @@ object CampaignUpdateSummary {
     if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime)
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime)
-    if (!js.isUndefined(minProvisionedTPS)) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS)
+    if (minProvisionedTPS != null) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS.asInstanceOf[js.Any])
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn)
     if (status != null) __obj.updateDynamic("status")(status)
     __obj.asInstanceOf[CampaignUpdateSummary]

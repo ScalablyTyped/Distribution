@@ -69,17 +69,17 @@ object SMSChannelResponse {
     Platform: __string,
     ApplicationId: __string = null,
     CreationDate: __string = null,
-    Enabled: js.UndefOr[__boolean] = js.undefined,
-    HasCredential: js.UndefOr[__boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
+    HasCredential: js.UndefOr[Boolean] = js.undefined,
     Id: __string = null,
-    IsArchived: js.UndefOr[__boolean] = js.undefined,
+    IsArchived: js.UndefOr[Boolean] = js.undefined,
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
-    PromotionalMessagesPerSecond: js.UndefOr[__integer] = js.undefined,
+    PromotionalMessagesPerSecond: Int | Double = null,
     SenderId: __string = null,
     ShortCode: __string = null,
-    TransactionalMessagesPerSecond: js.UndefOr[__integer] = js.undefined,
-    Version: js.UndefOr[__integer] = js.undefined
+    TransactionalMessagesPerSecond: Int | Double = null,
+    Version: Int | Double = null
   ): SMSChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
@@ -90,11 +90,11 @@ object SMSChannelResponse {
     if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(PromotionalMessagesPerSecond)) __obj.updateDynamic("PromotionalMessagesPerSecond")(PromotionalMessagesPerSecond)
+    if (PromotionalMessagesPerSecond != null) __obj.updateDynamic("PromotionalMessagesPerSecond")(PromotionalMessagesPerSecond.asInstanceOf[js.Any])
     if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId)
     if (ShortCode != null) __obj.updateDynamic("ShortCode")(ShortCode)
-    if (!js.isUndefined(TransactionalMessagesPerSecond)) __obj.updateDynamic("TransactionalMessagesPerSecond")(TransactionalMessagesPerSecond)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (TransactionalMessagesPerSecond != null) __obj.updateDynamic("TransactionalMessagesPerSecond")(TransactionalMessagesPerSecond.asInstanceOf[js.Any])
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMSChannelResponse]
   }
 }

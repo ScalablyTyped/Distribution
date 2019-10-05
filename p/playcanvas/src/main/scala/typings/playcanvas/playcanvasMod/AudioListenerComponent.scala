@@ -17,10 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "AudioListenerComponent")
 @js.native
 class AudioListenerComponent protected ()
-  extends typings.playcanvas.pcNs.AudioListenerComponent {
-  def this(
-    system: typings.playcanvas.pcNs.AudioListenerComponentSystem,
-    entity: typings.playcanvas.pcNs.Entity
-  ) = this()
+  extends typings.playcanvas.pc.AudioListenerComponent {
+  def this(system: typings.playcanvas.pc.AudioListenerComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

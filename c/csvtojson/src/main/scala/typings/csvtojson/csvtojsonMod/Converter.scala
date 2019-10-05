@@ -1,6 +1,6 @@
 package typings.csvtojson.csvtojsonMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
 import scala.scalajs.js

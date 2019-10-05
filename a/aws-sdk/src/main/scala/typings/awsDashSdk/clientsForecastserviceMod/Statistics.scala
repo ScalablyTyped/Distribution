@@ -42,24 +42,24 @@ trait Statistics extends js.Object {
 object Statistics {
   @scala.inline
   def apply(
-    Avg: js.UndefOr[Double] = js.undefined,
-    Count: js.UndefOr[Integer] = js.undefined,
-    CountDistinct: js.UndefOr[Integer] = js.undefined,
-    CountNan: js.UndefOr[Integer] = js.undefined,
-    CountNull: js.UndefOr[Integer] = js.undefined,
+    Avg: Int | scala.Double = null,
+    Count: Int | scala.Double = null,
+    CountDistinct: Int | scala.Double = null,
+    CountNan: Int | scala.Double = null,
+    CountNull: Int | scala.Double = null,
     Max: String = null,
     Min: String = null,
-    Stddev: js.UndefOr[Double] = js.undefined
+    Stddev: Int | scala.Double = null
   ): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Avg)) __obj.updateDynamic("Avg")(Avg)
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
-    if (!js.isUndefined(CountDistinct)) __obj.updateDynamic("CountDistinct")(CountDistinct)
-    if (!js.isUndefined(CountNan)) __obj.updateDynamic("CountNan")(CountNan)
-    if (!js.isUndefined(CountNull)) __obj.updateDynamic("CountNull")(CountNull)
+    if (Avg != null) __obj.updateDynamic("Avg")(Avg.asInstanceOf[js.Any])
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (CountDistinct != null) __obj.updateDynamic("CountDistinct")(CountDistinct.asInstanceOf[js.Any])
+    if (CountNan != null) __obj.updateDynamic("CountNan")(CountNan.asInstanceOf[js.Any])
+    if (CountNull != null) __obj.updateDynamic("CountNull")(CountNull.asInstanceOf[js.Any])
     if (Max != null) __obj.updateDynamic("Max")(Max)
     if (Min != null) __obj.updateDynamic("Min")(Min)
-    if (!js.isUndefined(Stddev)) __obj.updateDynamic("Stddev")(Stddev)
+    if (Stddev != null) __obj.updateDynamic("Stddev")(Stddev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
 }

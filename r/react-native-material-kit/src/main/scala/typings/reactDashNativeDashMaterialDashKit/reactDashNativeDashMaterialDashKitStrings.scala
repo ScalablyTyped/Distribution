@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashKit
 
-import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
+import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.rippleLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

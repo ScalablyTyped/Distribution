@@ -66,7 +66,7 @@ object CreatePatchBaselineRequest {
     ApprovalRules: PatchRuleGroup = null,
     ApprovedPatches: PatchIdList = null,
     ApprovedPatchesComplianceLevel: PatchComplianceLevel = null,
-    ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined,
+    ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined,
     ClientToken: ClientToken = null,
     Description: BaselineDescription = null,
     GlobalFilters: PatchFilterGroup = null,

@@ -1,17 +1,15 @@
 package typings.rxjsDashCompat.addObservableNeverMod
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobalScope
+@JSImport("rxjs/internal/Observable", JSImport.Namespace)
 @js.native
 object internalObservableMod extends js.Object {
-  @JSName("Observable")
   @js.native
-  object ObservableNs extends js.Object {
-    var never: js.Function0[Observable[scala.Nothing]] = js.native
+  object Observable extends js.Object {
+    var never: js.Function0[typings.rxjs.rxjsMod.Observable[scala.Nothing]] = js.native
   }
   
 }

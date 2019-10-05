@@ -46,3 +46,24 @@ object TSTypeAliasDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsTypeAliasDeclaration")
+@js.native
+object tsTypeAliasDeclaration extends js.Object {
+  def apply(id: Identifier, typeParameters: js.UndefOr[scala.Nothing], typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    typeAnnotation: TSType,
+    declare: Boolean
+  ): TSTypeAliasDeclaration = js.native
+  def apply(id: Identifier, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
+  def apply(id: Identifier, typeParameters: Null, typeAnnotation: TSType, declare: Boolean): TSTypeAliasDeclaration = js.native
+  def apply(id: Identifier, typeParameters: TSTypeParameterDeclaration, typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: TSTypeParameterDeclaration,
+    typeAnnotation: TSType,
+    declare: Boolean
+  ): TSTypeAliasDeclaration = js.native
+}
+

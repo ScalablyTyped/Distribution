@@ -1,7 +1,7 @@
 package typings.blissfuljs
 
-import typings.blissfuljs.BlissNSNs.BlissBindedArray
-import typings.blissfuljs.BlissNSNs.BlissCollectionArray
+import typings.blissfuljs.BlissNS.BlissBindedArray
+import typings.blissfuljs.BlissNS.BlissCollectionArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

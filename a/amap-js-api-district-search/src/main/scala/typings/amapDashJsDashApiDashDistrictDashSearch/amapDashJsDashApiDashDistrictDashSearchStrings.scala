@@ -1,7 +1,7 @@
 package typings.amapDashJsDashApiDashDistrictDashSearch
 
-import typings.amapDashJsDashApiDashDistrictDashSearch.AMapNs.DistrictSearchNs.Level
-import typings.amapDashJsDashApiDashDistrictDashSearch.AMapNs.DistrictSearchNs.SearchStatus
+import typings.amapDashJsDashApiDashDistrictDashSearch.AMap.DistrictSearch.Level
+import typings.amapDashJsDashApiDashDistrictDashSearch.AMap.DistrictSearch.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

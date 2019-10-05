@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBasemapGalleryBasemapGalleryViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapGalleryViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.BasemapGalleryViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

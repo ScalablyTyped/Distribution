@@ -11,3 +11,9 @@ import scala.scalajs.js.annotation._
   */
 class DefaultGraph () extends Node
 
+@JSImport("rdflib", "defaultGraph")
+@js.native
+object defaultGraph extends js.Object {
+  def apply(): DefaultGraph = js.native
+}
+

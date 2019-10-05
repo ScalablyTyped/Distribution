@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
-import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.ISelection
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode
 import typings.officeDashUiDashFabricDashReact.Anon_CallbackEvent
@@ -19,7 +18,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewpor
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod.IDragDropEvents
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod.IDragDropHelper
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,7 +69,7 @@ object IDetailsRowProps {
     indentWidth: Int | Double = null,
     onDidMount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     onRenderCheck: /* props */ IDetailsRowCheckProps => Element = null,
-    onRenderDetailsCheckbox: IRenderFunction[IDetailsCheckboxProps] = null,
+    onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
     onWillUnmount: /* row */ js.UndefOr[DetailsRowBase] => Unit = null,
     rowFieldsAs: ComponentType[IDetailsRowFieldsProps] = null,
     rowWidth: Int | Double = null,
@@ -100,7 +99,7 @@ object IDetailsRowProps {
     if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
     if (onDidMount != null) __obj.updateDynamic("onDidMount")(js.Any.fromFunction1(onDidMount))
     if (onRenderCheck != null) __obj.updateDynamic("onRenderCheck")(js.Any.fromFunction1(onRenderCheck))
-    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(onRenderDetailsCheckbox)
+    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2(onRenderDetailsCheckbox))
     if (onWillUnmount != null) __obj.updateDynamic("onWillUnmount")(js.Any.fromFunction1(onWillUnmount))
     if (rowFieldsAs != null) __obj.updateDynamic("rowFieldsAs")(rowFieldsAs.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupContentSupportChartMediaInfoValueSeriesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ChartMediaInfoValueSeriesConstructor
+import typings.arcgisDashJsDashApi.__esri.ChartMediaInfoValueSeriesConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

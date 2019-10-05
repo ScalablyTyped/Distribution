@@ -21,13 +21,9 @@ trait ListProposalsInput extends js.Object {
 
 object ListProposalsInput {
   @scala.inline
-  def apply(
-    NetworkId: ResourceIdString,
-    MaxResults: js.UndefOr[ProposalListMaxResults] = js.undefined,
-    NextToken: PaginationToken = null
-  ): ListProposalsInput = {
+  def apply(NetworkId: ResourceIdString, MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListProposalsInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListProposalsInput]
   }

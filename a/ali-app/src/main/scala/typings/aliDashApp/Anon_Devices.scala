@@ -1,6 +1,6 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.BluetoothDevice
+import typings.aliDashApp.my.BluetoothDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

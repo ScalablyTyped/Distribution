@@ -1,6 +1,6 @@
 package typings.mapsjs.mapsjsMod
 
-import typings.mapsjs.mapsjsMod.geometryNs.polygon
+import typings.mapsjs.mapsjsMod.geometry.polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,5 +57,12 @@ class point protected () extends js.Object {
   	 * @returns {pointObject} Representaton of this point as an pointObject.
   	 */
   def toProps(): pointObject = js.native
+}
+
+@JSImport("mapsjs", "point")
+@js.native
+object point extends js.Object {
+  def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  def midpoint(x1: Double, y1: Double, x2: Double, y2: Double): point = js.native
 }
 

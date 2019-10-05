@@ -17,7 +17,7 @@ trait DeleteFileSystemWindowsConfiguration extends js.Object {
 
 object DeleteFileSystemWindowsConfiguration {
   @scala.inline
-  def apply(FinalBackupTags: Tags = null, SkipFinalBackup: js.UndefOr[Flag] = js.undefined): DeleteFileSystemWindowsConfiguration = {
+  def apply(FinalBackupTags: Tags = null, SkipFinalBackup: js.UndefOr[Boolean] = js.undefined): DeleteFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (FinalBackupTags != null) __obj.updateDynamic("FinalBackupTags")(FinalBackupTags)
     if (!js.isUndefined(SkipFinalBackup)) __obj.updateDynamic("SkipFinalBackup")(SkipFinalBackup)

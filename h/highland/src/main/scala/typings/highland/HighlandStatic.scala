@@ -1,11 +1,11 @@
 package typings.highland
 
-import typings.highland.HighlandNs.MappingHint
-import typings.highland.HighlandNs.Nil
-import typings.highland.HighlandNs.OnFinished
-import typings.highland.HighlandNs.Stream
-import typings.node.NodeJSNs.EventEmitter
-import typings.node.NodeJSNs.ReadableStream
+import typings.highland.Highland.MappingHint
+import typings.highland.Highland.Nil
+import typings.highland.Highland.OnFinished
+import typings.highland.Highland.Stream
+import typings.node.NodeJS.EventEmitter
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

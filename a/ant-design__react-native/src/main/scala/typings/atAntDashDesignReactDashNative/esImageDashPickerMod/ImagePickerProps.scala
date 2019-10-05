@@ -3,9 +3,7 @@ package typings.atAntDashDesignReactDashNative.esImageDashPickerMod
 import typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod.CameraRollPickerProps
 import typings.atAntDashDesignReactDashNative.esImageDashPickerImageRollMod.ImageRollTexts
 import typings.atAntDashDesignReactDashNative.esImageDashPickerPropsTypeMod.ImagePickerPropTypes
-import typings.atAntDashDesignReactDashNative.esImageDashPickerStyleMod.ImagePickerStyle
 import typings.react.reactMod.ReactNode
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +26,7 @@ object ImagePickerProps {
     onFail: /* msg */ String => Unit = null,
     onImageClick: (/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[js.Object]]) => Unit = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
-    styles: Partial[ImagePickerStyle] = null,
+    styles: js.Object = null,
     title: ReactNode = null
   ): ImagePickerProps = {
     val __obj = js.Dynamic.literal()

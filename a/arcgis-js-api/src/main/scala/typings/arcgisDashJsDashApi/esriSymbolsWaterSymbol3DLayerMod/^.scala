@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsWaterSymbol3DLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WaterSymbol3DLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.WaterSymbol3DLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

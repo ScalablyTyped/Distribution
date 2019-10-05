@@ -1,0 +1,12 @@
+package typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormCheckboxMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.StatelessComponent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormCheckbox", JSImport.Default)
+@js.native
+object default extends TopLevel[StatelessComponent[FormCheckboxProps]]
+

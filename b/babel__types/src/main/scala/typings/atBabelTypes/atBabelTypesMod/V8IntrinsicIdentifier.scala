@@ -36,3 +36,9 @@ object V8IntrinsicIdentifier {
   }
 }
 
+@JSImport("@babel/types", "v8IntrinsicIdentifier")
+@js.native
+object v8IntrinsicIdentifier extends js.Object {
+  def apply(name: String): V8IntrinsicIdentifier = js.native
+}
+

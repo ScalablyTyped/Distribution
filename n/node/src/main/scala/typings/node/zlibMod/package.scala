@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object zlibMod {
   import typings.node.Buffer
   import typings.node.Error
-  import typings.node.NodeJSNs.TypedArray
+  import typings.node.NodeJS.TypedArray
   import typings.std.ArrayBuffer
   import typings.std.DataView
 

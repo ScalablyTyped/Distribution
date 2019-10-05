@@ -36,3 +36,9 @@ object Decorator {
   }
 }
 
+@JSImport("@babel/types", "decorator")
+@js.native
+object decorator extends js.Object {
+  def apply(expression: Expression): Decorator = js.native
+}
+

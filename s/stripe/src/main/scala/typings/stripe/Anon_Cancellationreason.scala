@@ -1,6 +1,6 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.paymentIntentsNs.PaymentIntentCancellationReason
+import typings.stripe.stripeMod.paymentIntents.PaymentIntentCancellationReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

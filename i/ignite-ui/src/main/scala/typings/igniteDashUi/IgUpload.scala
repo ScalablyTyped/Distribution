@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -302,7 +303,7 @@ object IgUpload {
   /* optionName */ StringDictionary[js.Any] = null,
     allowedExtensions: js.Array[_] = null,
     autostartupload: js.UndefOr[Boolean] = js.undefined,
-    cancelAllClicked: CancelAllClickedEvent = null,
+    cancelAllClicked: (/* event */ Event, /* ui */ CancelAllClickedEventUIParam) => Unit = null,
     controlId: String = null,
     css: js.Any = null,
     errorMessageAJAXRequestFileSize: String = null,
@@ -318,14 +319,14 @@ object IgUpload {
     errorMessageTryToStartNonExistingFile: String = null,
     errorMessageValidatingFileExtension: String = null,
     fileExtensionIcons: IgUploadFileExtensionIcons = null,
-    fileExtensionsValidating: FileExtensionsValidatingEvent = null,
-    fileSelected: FileSelectedEvent = null,
-    fileSelecting: FileSelectingEvent = null,
+    fileExtensionsValidating: (/* event */ Event, /* ui */ FileExtensionsValidatingEventUIParam) => Unit = null,
+    fileSelected: (/* event */ Event, /* ui */ FileSelectedEventUIParam) => Unit = null,
+    fileSelecting: (/* event */ Event, /* ui */ FileSelectingEventUIParam) => Unit = null,
     fileSizeDecimalDisplay: Int | Double = null,
     fileSizeMetric: js.Any = null,
-    fileUploadAborted: FileUploadAbortedEvent = null,
-    fileUploaded: FileUploadedEvent = null,
-    fileUploading: FileUploadingEvent = null,
+    fileUploadAborted: (/* event */ Event, /* ui */ FileUploadAbortedEventUIParam) => Unit = null,
+    fileUploaded: (/* event */ Event, /* ui */ FileUploadedEventUIParam) => Unit = null,
+    fileUploading: (/* event */ Event, /* ui */ FileUploadingEventUIParam) => Unit = null,
     height: Double | String = null,
     labelAddButton: String = null,
     labelClearAllButton: String = null,
@@ -345,9 +346,9 @@ object IgUpload {
     maxUploadedFiles: Int | Double = null,
     mode: js.Any = null,
     multipleFiles: js.UndefOr[Boolean] = js.undefined,
-    onError: OnErrorEvent = null,
-    onFormDataSubmit: OnFormDataSubmitEvent = null,
-    onXHRLoad: OnXHRLoadEvent = null,
+    onError: (/* event */ Event, /* ui */ OnErrorEventUIParam) => Unit = null,
+    onFormDataSubmit: (/* event */ Event, /* ui */ OnFormDataSubmitEventUIParam) => Unit = null,
+    onXHRLoad: (/* event */ Event, /* ui */ OnXHRLoadEventUIParam) => Unit = null,
     progressUrl: String = null,
     regional: String | js.Object = null,
     showFileExtensionIcon: js.UndefOr[Boolean] = js.undefined,
@@ -359,7 +360,7 @@ object IgUpload {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions)
     if (!js.isUndefined(autostartupload)) __obj.updateDynamic("autostartupload")(autostartupload)
-    if (cancelAllClicked != null) __obj.updateDynamic("cancelAllClicked")(cancelAllClicked)
+    if (cancelAllClicked != null) __obj.updateDynamic("cancelAllClicked")(js.Any.fromFunction2(cancelAllClicked))
     if (controlId != null) __obj.updateDynamic("controlId")(controlId)
     if (css != null) __obj.updateDynamic("css")(css)
     if (errorMessageAJAXRequestFileSize != null) __obj.updateDynamic("errorMessageAJAXRequestFileSize")(errorMessageAJAXRequestFileSize)
@@ -375,14 +376,14 @@ object IgUpload {
     if (errorMessageTryToStartNonExistingFile != null) __obj.updateDynamic("errorMessageTryToStartNonExistingFile")(errorMessageTryToStartNonExistingFile)
     if (errorMessageValidatingFileExtension != null) __obj.updateDynamic("errorMessageValidatingFileExtension")(errorMessageValidatingFileExtension)
     if (fileExtensionIcons != null) __obj.updateDynamic("fileExtensionIcons")(fileExtensionIcons)
-    if (fileExtensionsValidating != null) __obj.updateDynamic("fileExtensionsValidating")(fileExtensionsValidating)
-    if (fileSelected != null) __obj.updateDynamic("fileSelected")(fileSelected)
-    if (fileSelecting != null) __obj.updateDynamic("fileSelecting")(fileSelecting)
+    if (fileExtensionsValidating != null) __obj.updateDynamic("fileExtensionsValidating")(js.Any.fromFunction2(fileExtensionsValidating))
+    if (fileSelected != null) __obj.updateDynamic("fileSelected")(js.Any.fromFunction2(fileSelected))
+    if (fileSelecting != null) __obj.updateDynamic("fileSelecting")(js.Any.fromFunction2(fileSelecting))
     if (fileSizeDecimalDisplay != null) __obj.updateDynamic("fileSizeDecimalDisplay")(fileSizeDecimalDisplay.asInstanceOf[js.Any])
     if (fileSizeMetric != null) __obj.updateDynamic("fileSizeMetric")(fileSizeMetric)
-    if (fileUploadAborted != null) __obj.updateDynamic("fileUploadAborted")(fileUploadAborted)
-    if (fileUploaded != null) __obj.updateDynamic("fileUploaded")(fileUploaded)
-    if (fileUploading != null) __obj.updateDynamic("fileUploading")(fileUploading)
+    if (fileUploadAborted != null) __obj.updateDynamic("fileUploadAborted")(js.Any.fromFunction2(fileUploadAborted))
+    if (fileUploaded != null) __obj.updateDynamic("fileUploaded")(js.Any.fromFunction2(fileUploaded))
+    if (fileUploading != null) __obj.updateDynamic("fileUploading")(js.Any.fromFunction2(fileUploading))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (labelAddButton != null) __obj.updateDynamic("labelAddButton")(labelAddButton)
     if (labelClearAllButton != null) __obj.updateDynamic("labelClearAllButton")(labelClearAllButton)
@@ -402,9 +403,9 @@ object IgUpload {
     if (maxUploadedFiles != null) __obj.updateDynamic("maxUploadedFiles")(maxUploadedFiles.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (!js.isUndefined(multipleFiles)) __obj.updateDynamic("multipleFiles")(multipleFiles)
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onFormDataSubmit != null) __obj.updateDynamic("onFormDataSubmit")(onFormDataSubmit)
-    if (onXHRLoad != null) __obj.updateDynamic("onXHRLoad")(onXHRLoad)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
+    if (onFormDataSubmit != null) __obj.updateDynamic("onFormDataSubmit")(js.Any.fromFunction2(onFormDataSubmit))
+    if (onXHRLoad != null) __obj.updateDynamic("onXHRLoad")(js.Any.fromFunction2(onXHRLoad))
     if (progressUrl != null) __obj.updateDynamic("progressUrl")(progressUrl)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (!js.isUndefined(showFileExtensionIcon)) __obj.updateDynamic("showFileExtensionIcon")(showFileExtensionIcon)

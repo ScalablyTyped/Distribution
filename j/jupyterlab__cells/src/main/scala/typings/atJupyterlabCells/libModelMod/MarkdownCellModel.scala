@@ -1,7 +1,7 @@
 package typings.atJupyterlabCells.libModelMod
 
 import typings.atJupyterlabCells.atJupyterlabCellsStrings.markdown
-import typings.atJupyterlabCells.libModelMod.CellModelNs.IOptions
+import typings.atJupyterlabCells.libModelMod.CellModel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

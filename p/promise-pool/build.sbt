@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "promise-pool"
-version := "0.0-unknown-dt-20190322Z-8d85f4"
-scalaVersion := "2.12.9"
+version := "0.0-unknown-dt-20190322Z-bca2c4"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-ff56fb",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-c2a163",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

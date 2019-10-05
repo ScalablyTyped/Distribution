@@ -1,7 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownDotBaseMod
 
 import typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownDotTypesMod.IDropdownProps
-import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation._
 
 object IDropdownInternalProps {
   @scala.inline
-  def apply(IDropdownProps: IDropdownProps = null, IWithResponsiveModeState: IWithResponsiveModeState = null): IDropdownInternalProps = {
+  def apply(IDropdownProps: IDropdownProps = null): IDropdownInternalProps = {
     val __obj = js.Dynamic.literal()
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, IDropdownProps)
-    js.Dynamic.global.Object.assign(__obj, IWithResponsiveModeState)
     __obj.asInstanceOf[IDropdownInternalProps]
   }
 }

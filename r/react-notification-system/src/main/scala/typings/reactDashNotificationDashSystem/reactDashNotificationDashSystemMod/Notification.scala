@@ -1,6 +1,6 @@
 package typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemStrings.bc
 import typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemStrings.bl
@@ -39,8 +39,8 @@ object Notification {
     dismissible: js.UndefOr[Boolean] = js.undefined,
     level: error | warning | info | success = null,
     message: String | Element = null,
-    onAdd: CallBackFunction = null,
-    onRemove: CallBackFunction = null,
+    onAdd: /* notification */ Notification => Unit = null,
+    onRemove: /* notification */ Notification => Unit = null,
     position: tr | tl | tc | br | bl | bc = null,
     title: String | Element = null,
     uid: Double | String = null
@@ -52,8 +52,8 @@ object Notification {
     if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

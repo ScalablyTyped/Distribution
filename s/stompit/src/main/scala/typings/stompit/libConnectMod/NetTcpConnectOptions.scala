@@ -1,8 +1,10 @@
 package typings.stompit.libConnectMod
 
-import typings.node.netMod.LookupFunction
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.Socket
 import typings.node.netMod.TcpNetConnectOpts
+import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
 import typings.stompit.stompitNumbers.`false`
@@ -35,8 +37,8 @@ object NetTcpConnectOptions {
     host: String = null,
     localAddress: String = null,
     localPort: Int | Double = null,
-    lookup: LookupFunction = null,
-    outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
+    outgoingFrameStream: ^ = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
     ssl: `false` = null,
@@ -58,7 +60,7 @@ object NetTcpConnectOptions {
     if (host != null) __obj.updateDynamic("host")(host)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream)
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect)

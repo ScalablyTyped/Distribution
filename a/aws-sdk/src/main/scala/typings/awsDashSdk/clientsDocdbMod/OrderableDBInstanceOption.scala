@@ -39,7 +39,7 @@ object OrderableDBInstanceOption {
     Engine: String = null,
     EngineVersion: String = null,
     LicenseModel: String = null,
-    Vpc: js.UndefOr[Boolean] = js.undefined
+    Vpc: js.UndefOr[scala.Boolean] = js.undefined
   ): OrderableDBInstanceOption = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)

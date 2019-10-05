@@ -35,3 +35,9 @@ object TSThisType {
   }
 }
 
+@JSImport("@babel/types", "tsThisType")
+@js.native
+object tsThisType extends js.Object {
+  def apply(): TSThisType = js.native
+}
+

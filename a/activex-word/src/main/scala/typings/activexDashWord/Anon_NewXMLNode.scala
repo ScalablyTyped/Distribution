@@ -1,7 +1,7 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.Selection
-import typings.activexDashWord.WordNs.XMLNode
+import typings.activexDashWord.Word.Selection
+import typings.activexDashWord.Word.XMLNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

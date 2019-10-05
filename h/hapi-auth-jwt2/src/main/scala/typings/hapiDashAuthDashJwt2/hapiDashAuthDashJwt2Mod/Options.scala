@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
   */
 trait Options extends js.Object {
   /**
+    * Set to `true` to allow the `payloadFunc` to attempt to extract the token from
+    * POST bodies
+    * @default false
+    */
+  var attemptToExtractTokenInPayload: js.UndefOr[Boolean] = js.undefined
+  /**
     * Set to `true` to receive the complete token (`decoded.header`,
     * `decoded.payload` and `decoded.signature`) as decoded argument to key
     * lookup and `verifyFunc` callbacks (*not `validateFunc`*)
@@ -28,6 +34,12 @@ trait Options extends js.Object {
     * @default 'token'
     */
   var cookieKey: js.UndefOr[String | Boolean] = js.undefined
+  /**
+    * Custom token extraction function used to allow consumers to pull tokens from
+    * sources not foreseen by the module, for example... YAR
+    * @default false
+    */
+  var customExtractionFunc: js.UndefOr[js.Function1[/* request */ Request, String]] = js.undefined
   /**
     *
     * @param ctx called when an error has been raised.
@@ -45,6 +57,13 @@ trait Options extends js.Object {
     * The secret key used to check the signature of the token *or* a *key lookup function*
     */
   var key: js.UndefOr[String | js.Array[String] | js.Promise[Anon_ExtraInfo]] = js.undefined
+  /**
+    * If you want to set a custom key for your payload token use the
+    * `payloadKey` option. To disable payload token set payloadKey to `false` or
+    * ''.
+    * @default 'token'
+    */
+  var payloadKey: js.UndefOr[String | Boolean] = js.undefined
   /**
     * function called to decorate the response with authentication headers
     * before the response headers or payload is written
@@ -87,22 +106,28 @@ object Options {
   @scala.inline
   def apply(
     validate: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult],
+    attemptToExtractTokenInPayload: js.UndefOr[Boolean] = js.undefined,
     complete: js.UndefOr[Boolean] = js.undefined,
     cookieKey: String | Boolean = null,
+    customExtractionFunc: /* request */ Request => String = null,
     errorFunc: /* ctx */ ErrorContext => ErrorContext = null,
     headerKey: String | Boolean = null,
     key: String | js.Array[String] | js.Promise[Anon_ExtraInfo] = null,
+    payloadKey: String | Boolean = null,
     responseFunc: (/* request */ Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit]) => Unit = null,
     tokenType: String = null,
     urlKey: String | Boolean = null,
     verifyOptions: VerifyOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
+    if (!js.isUndefined(attemptToExtractTokenInPayload)) __obj.updateDynamic("attemptToExtractTokenInPayload")(attemptToExtractTokenInPayload)
     if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
     if (cookieKey != null) __obj.updateDynamic("cookieKey")(cookieKey.asInstanceOf[js.Any])
+    if (customExtractionFunc != null) __obj.updateDynamic("customExtractionFunc")(js.Any.fromFunction1(customExtractionFunc))
     if (errorFunc != null) __obj.updateDynamic("errorFunc")(js.Any.fromFunction1(errorFunc))
     if (headerKey != null) __obj.updateDynamic("headerKey")(headerKey.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (payloadKey != null) __obj.updateDynamic("payloadKey")(payloadKey.asInstanceOf[js.Any])
     if (responseFunc != null) __obj.updateDynamic("responseFunc")(js.Any.fromFunction2(responseFunc))
     if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType)
     if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey.asInstanceOf[js.Any])

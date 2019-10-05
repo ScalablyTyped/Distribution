@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,7 @@ trait Settings extends js.Object {
   def define(property: String, value: js.Any): Unit
 }
 
-object Settings {
-  @scala.inline
-  def apply(config: StringDictionary[js.Any], define: (String, js.Any) => Unit, name: String): Settings = {
-    val __obj = js.Dynamic.literal(config = config, define = js.Any.fromFunction2(define), name = name)
-  
-    __obj.asInstanceOf[Settings]
-  }
-}
+@JSImport("webix", "Settings")
+@js.native
+object Settings extends TopLevel[Settings]
 

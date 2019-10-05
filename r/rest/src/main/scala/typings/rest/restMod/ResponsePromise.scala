@@ -1,6 +1,6 @@
 package typings.rest.restMod
 
-import typings.when.WhenNs.Promise
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

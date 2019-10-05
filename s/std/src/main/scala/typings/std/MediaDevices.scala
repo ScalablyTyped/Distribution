@@ -46,9 +46,5 @@ trait MediaDevices extends EventTarget {
 
 @JSGlobal("MediaDevices")
 @js.native
-class MediaDevicesCls () extends MediaDevices
-
-@JSGlobal("MediaDevices")
-@js.native
 object MediaDevices extends Instantiable0[MediaDevices]
 

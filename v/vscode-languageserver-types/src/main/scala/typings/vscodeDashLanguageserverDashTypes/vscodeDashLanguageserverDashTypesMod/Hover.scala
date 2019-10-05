@@ -15,12 +15,12 @@ trait Hover extends js.Object {
   var range: js.UndefOr[Range] = js.undefined
 }
 
-object Hover {
-  @scala.inline
-  def apply(contents: MarkupContent | MarkedString | js.Array[MarkedString], range: Range = null): Hover = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
-    __obj.asInstanceOf[Hover]
-  }
+@JSImport("vscode-languageserver-types", "Hover")
+@js.native
+object Hover extends js.Object {
+  /**
+    * Checks whether the given value conforms to the [Hover](#Hover) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean = js.native
 }
 

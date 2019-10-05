@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.deprecated
-import typings.chromeDashApps.chromeNs.deprecatedButUsable
+import typings.chromeDashApps.chrome.deprecated
+import typings.chromeDashApps.chrome.deprecatedButUsable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait Typeofchrome extends js.Object {
     * For modifying feature state, the extension needs accessibilityFeatures.modify permission.
     * Note that accessibilityFeatures.modify does not imply accessibilityFeatures.read permission.
     */
-  val accessibilityFeaturesNs: TypeofaccessibilityFeatures
+  val accessibilityFeatures: TypeofaccessibilityFeatures
   // #endregion
   // #region chrome.alarms
   ////////////
@@ -49,7 +49,7 @@ trait Typeofchrome extends js.Object {
     * Use the chrome.alarms API to schedule code to run
     * periodically or at a specified time in the future.
     */
-  val alarmsNs: Typeofalarms
+  val alarms: Typeofalarms
   ////////////////
   // App Window //
   ////////////////
@@ -61,7 +61,7 @@ trait Typeofchrome extends js.Object {
     * They are not associated with any Chrome browser windows.
     * See the Window State Sample for a demonstration of these options.
     */
-  val appNs: Typeofapp
+  val app: Typeofapp
   // #endregion chrome.app.*
   // #region chrome.audio
   ///////////
@@ -75,18 +75,7 @@ trait Typeofchrome extends js.Object {
     * about and control the audio devices attached to the system.
     * This API is currently only implemented for ChromeOS.
     */
-  val audioNs: Typeofaudio
-  /**
-    * @since Chrome 37
-    * @requires Manifest: 'bluetooth': {...}
-    * @requires Important: This API works only on Chrome OS.
-    * @requires Note: With Chrome 56, users can select nearby Bluetooth Low Energy devices to provide to web sites that use the Web Bluetooth API.
-    * @description
-    * The chrome.bluetoothLowEnergy API is used to communicate
-    * with Bluetooth Smart (Low Energy) devices using the
-    * Generic Attribute Profile (GATT).
-    */
-  val bluetoothLowEnergyNs: TypeofbluetoothLowEnergy
+  val audio: Typeofaudio
   // #endregion
   // #region chrome.bluetooth*
   ///////////////
@@ -100,14 +89,25 @@ trait Typeofchrome extends js.Object {
     * All functions report failures via chrome.runtime.lastError.
     * **Important: This API works only on OS X, Windows and Chrome OS.**
     */
-  val bluetoothNs: Typeofbluetooth
+  val bluetooth: Typeofbluetooth
+  /**
+    * @since Chrome 37
+    * @requires Manifest: 'bluetooth': {...}
+    * @requires Important: This API works only on Chrome OS.
+    * @requires Note: With Chrome 56, users can select nearby Bluetooth Low Energy devices to provide to web sites that use the Web Bluetooth API.
+    * @description
+    * The chrome.bluetoothLowEnergy API is used to communicate
+    * with Bluetooth Smart (Low Energy) devices using the
+    * Generic Attribute Profile (GATT).
+    */
+  val bluetoothLowEnergy: TypeofbluetoothLowEnergy
   /**
     * @since Chrome 37
     * @requires Manifest: 'bluetooth': {...}
     * @requires Important: This API works only on OS X, Windows and Chrome OS.
     * Use the chrome.bluetoothSocket API to send and receive data to Bluetooth devices using RFCOMM and L2CAP connections.
     */
-  val bluetoothSocketNs: TypeofbluetoothSocket
+  val bluetoothSocket: TypeofbluetoothSocket
   // #endregion
   // #region chrome.browser
   /////////////
@@ -120,7 +120,7 @@ trait Typeofchrome extends js.Object {
     * Use the chrome.browser API to interact with the Chrome browser associated with
     * the current application and Chrome profile.
     */
-  val browserNs: Typeofbrowser
+  val browser: Typeofbrowser
   // #endregion
   // #region chrome.certificateProvider
   //////////////////////////
@@ -133,7 +133,7 @@ trait Typeofchrome extends js.Object {
     * Use this API to expose certificates to the platform which
     * can use these certificates for TLS authentications.
     */
-  val certificateProviderNs: TypeofcertificateProvider
+  val certificateProvider: TypeofcertificateProvider
   // #endregion
   // #region chrome.clipboard
   ///////////////
@@ -149,7 +149,7 @@ trait Typeofchrome extends js.Object {
     * It will be deprecated once open-web solution is available.
     * @see[Docs]{@link https://developer.chrome.com/apps/clipboard}
     */
-  val clipboardNs: Typeofclipboard
+  val clipboard: Typeofclipboard
   // #endregion
   // #region chrome.commands
   //////////////
@@ -165,7 +165,7 @@ trait Typeofchrome extends js.Object {
     * to the app.
     * @see[Usage]{@link https://developer.chrome.com/apps/commands}
     */
-  val commandsNs: Typeofcommands
+  val commands: Typeofcommands
   // #endregion
   // #region chrome.contextMenus
   ///////////////////
@@ -188,7 +188,7 @@ trait Typeofchrome extends js.Object {
     * but if more than one from your app is visible at once,
     * Google Chrome automatically collapses them into a single parent menu.
     */
-  val contextMenusNs: TypeofcontextMenus
+  val contextMenus: TypeofcontextMenus
   // #endregion
   // #region chrome.desktopCapture
   /////////////////////
@@ -199,7 +199,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 34.
     * @requires Permissions: 'desktopCapture'
     */
-  val desktopCaptureNs: TypeofdesktopCapture
+  val desktopCapture: TypeofdesktopCapture
   // #endregion
   // #region chrome.diagnostics
   /////////////////
@@ -209,7 +209,7 @@ trait Typeofchrome extends js.Object {
     * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
     * @requires Permissions: 'diagnostics'
     */
-  val diagnosticsNs: Typeofdiagnostics
+  val diagnostics: Typeofdiagnostics
   // #endregion
   // #region chrome.displaySource
   ////////////////////
@@ -221,7 +221,7 @@ trait Typeofchrome extends js.Object {
     * The *chrome.displaySource* API creates a Display session using WebMediaStreamTrack as sources.
     * @todo TODO Finish documentation and typings
     */
-  val displaySourceNs: TypeofdisplaySource
+  val displaySource: TypeofdisplaySource
   // #endregion
   // #region chrome.dns
   /////////
@@ -233,7 +233,7 @@ trait Typeofchrome extends js.Object {
     * @description
     * Use the *chrome.dns* API for dns resolution.
     */
-  val dnsNs: Typeofdns
+  val dns: Typeofdns
   // #endregion
   // #region chrome.documentScan
   ///////////////////
@@ -254,8 +254,8 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'documentScan'
     * @requires Important: This API works only on Chrome OS.
     */
-  val documentScanNs: TypeofdocumentScan
-  val enterpriseNs: Typeofenterprise
+  val documentScan: TypeofdocumentScan
+  val enterprise: Typeofenterprise
   // #endregion chrome.enterprise.*
   // #region chrome.events
   ////////////
@@ -282,7 +282,7 @@ trait Typeofchrome extends js.Object {
     * object that has details about the elapsed alarm.
     * @since Chrome 25.
     */
-  val eventsNs: js.Any
+  val events: js.Any
   // #endregion
   // #region placeholders
   //////////////////
@@ -304,7 +304,7 @@ trait Typeofchrome extends js.Object {
     * https://developer.chrome.com/extensions/extensionTypes#type-ImageDetails
     * @since Chrome 39.
     **/
-  val extensionTypesNs: TypeofextensionTypes
+  val extensionTypes: TypeofextensionTypes
   // #endregion
   // #region chrome.fileBrowserHandle
   /////////////////////////
@@ -319,7 +319,7 @@ trait Typeofchrome extends js.Object {
     * For example, you can use this API to enable users to upload files to your website.
     * @see[Documentation]{@link https://developer.chrome.com/extensions/fileBrowserHandler}
     */
-  val fileBrowserHandlerNs: TypeoffileBrowserHandler
+  val fileBrowserHandler: TypeoffileBrowserHandler
   // #endregion
   // #region chrome.fileSystem
   ////////////////
@@ -336,7 +336,7 @@ trait Typeofchrome extends js.Object {
     *   {'fileSystem': ['write']}
     *   {'fileSystem': ['write', 'retainEntries', 'directory']}
     */
-  val fileSystemNs: TypeoffileSystem
+  val fileSystem: TypeoffileSystem
   // #endregion
   // #region chrome.fileSystemProvider
   //////////////////////////
@@ -368,7 +368,7 @@ trait Typeofchrome extends js.Object {
     * watchers, so changes on the file system can be reflected immediately and automatically.
     * @see[More information]{@link https://developer.chrome.com/apps/fileSystemProvider}
     */
-  val fileSystemProviderNs: TypeoffileSystemProvider
+  val fileSystemProvider: TypeoffileSystemProvider
   // #endregion
   // #region chrome.gcm
   ////////////////////////////
@@ -388,7 +388,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 35.
     * @requires Permissions: 'gcm'
     */
-  val gcmNs: Typeofgcm
+  val gcm: Typeofgcm
   // #endregion
   // #region chrome.hid
   /////////
@@ -405,7 +405,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'hid'
     * @since Chrome 38.
     */
-  val hidNs: Typeofhid
+  val hid: Typeofhid
   // #endregion
   // #region chrome.i18n
   /////////////////////////////////
@@ -417,7 +417,7 @@ trait Typeofchrome extends js.Object {
     * @see[Docs]{@link https://developer.chrome.com/apps/i18n}
     * @since Chrome 25.
     */
-  val i18nNs: Typeofi18n
+  val i18n: Typeofi18n
   // #endregion
   // #region chrome.identity
   //////////////
@@ -429,7 +429,7 @@ trait Typeofchrome extends js.Object {
     * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
     * @since Chrome 29.
     */
-  val identityNs: Typeofidentity
+  val identity: Typeofidentity
   // #endregion
   // #region chrome.idle
   //////////
@@ -440,7 +440,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'idle'
     * @since Chrome 25.
     */
-  val idleNs: Typeofidle
+  val idle: Typeofidle
   // #endregion
   // #region chrome.instanceID
   ////////////////
@@ -451,7 +451,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'gcm'
     * @since Chrome 46
     */
-  val instanceIDNs: TypeofinstanceID
+  val instanceID: TypeofinstanceID
   // #endregion
   // #region chrome.management
   ////////////////
@@ -462,7 +462,7 @@ trait Typeofchrome extends js.Object {
     * manage the list of apps
     * that are installed and running.
     */
-  val managementNs: Typeofmanagement
+  val management: Typeofmanagement
   // #endregion
   // #region chrome.mdns
   //////////
@@ -475,7 +475,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'mdns'
     * @since Chrome 31
     */
-  val mdnsNs: Typeofmdns
+  val mdns: Typeofmdns
   // #endregion
   // #region chrome.mediaGalleries
   /////////////////////
@@ -489,8 +489,8 @@ trait Typeofchrome extends js.Object {
     *                        {'mediaGalleries': ['accessType1' | 'accessType2', ..., 'allAutoDetected']}
     * @see[More information]{@link https://developer.chrome.com/apps/mediaGalleries}
     */
-  val mediaGalleriesNs: TypeofmediaGalleries
-  val networkingNs: Typeofnetworking
+  val mediaGalleries: TypeofmediaGalleries
+  val networking: Typeofnetworking
   // #endregion chrome.networking.*
   // #region chrome.notifications
   ///////////////////
@@ -503,7 +503,7 @@ trait Typeofchrome extends js.Object {
     * @since Chrome 28.
     * @see[Docs]{@link https://developer.chrome.com/extensions/notifications}
     */
-  val notificationsNs: Typeofnotifications
+  val notifications: Typeofnotifications
   // #endregion
   // #region chrome.permissions
   /////////////////
@@ -514,7 +514,7 @@ trait Typeofchrome extends js.Object {
     * so users understand why the permissions are needed and grant only those that are necessary.
     * @since Chrome 16.
     */
-  val permissionsNs: Typeofpermissions
+  val permissions: Typeofpermissions
   // #endregion
   // #region chrome.platformKeys
   ///////////////////
@@ -530,7 +530,7 @@ trait Typeofchrome extends js.Object {
     * E.g. this allows usage of platform managed certificates in third party VPNs
     * @see chrome.vpnProvider
     */
-  val platformKeysNs: TypeofplatformKeysCallback
+  val platformKeys: TypeofplatformKeysCallback
   // #endregion
   // #region chrome.power
   ///////////
@@ -541,7 +541,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'power'
     * @since Chrome 27.
     */
-  val powerNs: Typeofpower
+  val power: Typeofpower
   // #endregion
   // #region chrome.printerProvider
   //////////////////////
@@ -555,7 +555,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'printerProvider'
     * @since Chrome 44.
     */
-  val printerProviderNs: TypeofprinterProvider
+  val printerProvider: TypeofprinterProvider
   // #endregion
   // #region chrome.runtime
   /////////////
@@ -565,7 +565,7 @@ trait Typeofchrome extends js.Object {
     * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
     * @since Chrome 22
     */
-  val runtimeNs: TypeofruntimeApplication
+  val runtime: TypeofruntimeApplication
   // #endregion
   // #region chrome.serial
   ////////////
@@ -589,7 +589,7 @@ trait Typeofchrome extends js.Object {
     * Use the *chrome.signedInDevices* API to get a list of devices
     * signed into chrome with the same account as the current profile.
     */
-  val signedInDevicesNs: TypeofsignedInDevices
+  val signedInDevices: TypeofsignedInDevices
   // #endregion
   // #region chrome.socket
   ////////////
@@ -612,7 +612,7 @@ trait Typeofchrome extends js.Object {
     * Use the chrome.sockets.* APIs to send and receive data over the network using TCP and UDP connections.
     * @since Chrome 33.
     */
-  val socketsNs: Typeofsockets
+  val sockets: Typeofsockets
   // #endregion chrome.sockets.*
   // #region chrome.storage
   /////////////
@@ -623,7 +623,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  'storage'
     * @since Chrome 20.
     */
-  val storageNs: Typeofstorage
+  val storage: Typeofstorage
   // #endregion
   // #region chrome.syncFileSystem
   ////////////////////
@@ -640,8 +640,8 @@ trait Typeofchrome extends js.Object {
     * @see[Learn more: Manage Data]{@link https://developer.chrome.com/apps/app_storage}
     * @since Chrome 27
     */
-  val syncFileSystemNs: TypeofsyncFileSystem
-  val systemNs: Typeofsystem
+  val syncFileSystem: TypeofsyncFileSystem
+  val system: Typeofsystem
   // #endregion chrome.system.*
   // #region chrome.tts
   ////////////////////
@@ -652,7 +652,7 @@ trait Typeofchrome extends js.Object {
     * Permissions:  'tts'
     * @since Chrome 14.
     */
-  val ttsNs: Typeoftts
+  val tts: Typeoftts
   // #endregion
   // #region chrome.types
   ///////////
@@ -661,7 +661,7 @@ trait Typeofchrome extends js.Object {
   /**
     * The chrome.types API contains type declarations for Chrome.
     */
-  val typesNs: js.Any
+  val types: js.Any
   // #endregion
   // #region chrome.usb
   /////////
@@ -678,7 +678,7 @@ trait Typeofchrome extends js.Object {
     * regular parameters will be undefined in this case.
     * @see[Accessing Hardware Devices]{@link https://developer.chrome.com/apps/app_usb}
     */
-  val usbNs: Typeofusb
+  val usb: Typeofusb
   // #endregion
   // #region chrome.virtualKeyboard
   //////////////////////
@@ -692,7 +692,7 @@ trait Typeofchrome extends js.Object {
     * The *chrome.virtualKeybaord* API is a kiosk only API used
     * to configure virtual keyboard layout and behavior in kiosk sessions.
     */
-  val virtualKeyboardNs: TypeofvirtualKeyboard
+  val virtualKeyboard: TypeofvirtualKeyboard
   // #endregion
   // #region chrome.vpnProvider
   //////////////////
@@ -704,7 +704,7 @@ trait Typeofchrome extends js.Object {
     * @requires Permissions: 'vpnProvider'
     * @since Chrome 43.
     */
-  val vpnProviderNs: TypeofvpnProvider
+  val vpnProvider: TypeofvpnProvider
   // #endregion
   // #region chrome.wallpaper
   ///////////////
@@ -716,10 +716,10 @@ trait Typeofchrome extends js.Object {
     * @requires Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val wallpaperNs: Typeofwallpaper
+  val wallpaper: Typeofwallpaper
   // #endregion
   // #region chrome.webRequest
-  val webRequestNs: js.Any
+  val webRequest: js.Any
   // #endregion
   // #region chrome.webViewRequest
   /////////////////////
@@ -730,7 +730,7 @@ trait Typeofchrome extends js.Object {
     * @description
     * Use the *chrome.webViewRequest* API to intercept, block, or modify requests in-flight.
     */
-  val webViewRequestNs: TypeofwebViewRequest
+  val webViewRequest: TypeofwebViewRequest
   // #endregion
   // #region methods
   /////////////
@@ -755,64 +755,64 @@ object Typeofchrome {
   @scala.inline
   def apply(
     Event: Anon_Event,
-    accessibilityFeaturesNs: TypeofaccessibilityFeatures,
-    alarmsNs: Typeofalarms,
-    appNs: Typeofapp,
-    audioNs: Typeofaudio,
-    bluetoothLowEnergyNs: TypeofbluetoothLowEnergy,
-    bluetoothNs: Typeofbluetooth,
-    bluetoothSocketNs: TypeofbluetoothSocket,
-    browserNs: Typeofbrowser,
-    certificateProviderNs: TypeofcertificateProvider,
-    clipboardNs: Typeofclipboard,
-    commandsNs: Typeofcommands,
-    contextMenusNs: TypeofcontextMenus,
+    accessibilityFeatures: TypeofaccessibilityFeatures,
+    alarms: Typeofalarms,
+    app: Typeofapp,
+    audio: Typeofaudio,
+    bluetooth: Typeofbluetooth,
+    bluetoothLowEnergy: TypeofbluetoothLowEnergy,
+    bluetoothSocket: TypeofbluetoothSocket,
+    browser: Typeofbrowser,
+    certificateProvider: TypeofcertificateProvider,
+    clipboard: Typeofclipboard,
+    commands: Typeofcommands,
+    contextMenus: TypeofcontextMenus,
     csi: () => Anon_OnloadT,
-    desktopCaptureNs: TypeofdesktopCapture,
-    diagnosticsNs: Typeofdiagnostics,
-    displaySourceNs: TypeofdisplaySource,
-    dnsNs: Typeofdns,
-    documentScanNs: TypeofdocumentScan,
-    enterpriseNs: Typeofenterprise,
-    eventsNs: js.Any,
+    desktopCapture: TypeofdesktopCapture,
+    diagnostics: Typeofdiagnostics,
+    displaySource: TypeofdisplaySource,
+    dns: Typeofdns,
+    documentScan: TypeofdocumentScan,
+    enterprise: Typeofenterprise,
+    events: js.Any,
     experimental: js.Any,
-    extensionTypesNs: TypeofextensionTypes,
-    fileBrowserHandlerNs: TypeoffileBrowserHandler,
-    fileSystemNs: TypeoffileSystem,
-    fileSystemProviderNs: TypeoffileSystemProvider,
-    gcmNs: Typeofgcm,
-    hidNs: Typeofhid,
-    i18nNs: Typeofi18n,
-    identityNs: Typeofidentity,
-    idleNs: Typeofidle,
-    instanceIDNs: TypeofinstanceID,
+    extensionTypes: TypeofextensionTypes,
+    fileBrowserHandler: TypeoffileBrowserHandler,
+    fileSystem: TypeoffileSystem,
+    fileSystemProvider: TypeoffileSystemProvider,
+    gcm: Typeofgcm,
+    hid: Typeofhid,
+    i18n: Typeofi18n,
+    identity: Typeofidentity,
+    idle: Typeofidle,
+    instanceID: TypeofinstanceID,
     loadTimes: () => deprecatedButUsable,
-    managementNs: Typeofmanagement,
-    mdnsNs: Typeofmdns,
-    mediaGalleriesNs: TypeofmediaGalleries,
-    networkingNs: Typeofnetworking,
-    notificationsNs: Typeofnotifications,
-    permissionsNs: Typeofpermissions,
-    platformKeysNs: TypeofplatformKeysCallback,
-    powerNs: Typeofpower,
-    printerProviderNs: TypeofprinterProvider,
-    runtimeNs: TypeofruntimeApplication,
+    management: Typeofmanagement,
+    mdns: Typeofmdns,
+    mediaGalleries: TypeofmediaGalleries,
+    networking: Typeofnetworking,
+    notifications: Typeofnotifications,
+    permissions: Typeofpermissions,
+    platformKeys: TypeofplatformKeysCallback,
+    power: Typeofpower,
+    printerProvider: TypeofprinterProvider,
+    runtime: TypeofruntimeApplication,
     serial: deprecated,
-    signedInDevicesNs: TypeofsignedInDevices,
-    socketsNs: Typeofsockets,
-    storageNs: Typeofstorage,
-    syncFileSystemNs: TypeofsyncFileSystem,
-    systemNs: Typeofsystem,
-    ttsNs: Typeoftts,
-    typesNs: js.Any,
-    usbNs: Typeofusb,
-    virtualKeyboardNs: TypeofvirtualKeyboard,
-    vpnProviderNs: TypeofvpnProvider,
-    wallpaperNs: Typeofwallpaper,
-    webRequestNs: js.Any,
-    webViewRequestNs: TypeofwebViewRequest
+    signedInDevices: TypeofsignedInDevices,
+    sockets: Typeofsockets,
+    storage: Typeofstorage,
+    syncFileSystem: TypeofsyncFileSystem,
+    system: Typeofsystem,
+    tts: Typeoftts,
+    types: js.Any,
+    usb: Typeofusb,
+    virtualKeyboard: TypeofvirtualKeyboard,
+    vpnProvider: TypeofvpnProvider,
+    wallpaper: Typeofwallpaper,
+    webRequest: js.Any,
+    webViewRequest: TypeofwebViewRequest
   ): Typeofchrome = {
-    val __obj = js.Dynamic.literal(Event = Event, accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, appNs = appNs, audioNs = audioNs, bluetoothLowEnergyNs = bluetoothLowEnergyNs, bluetoothNs = bluetoothNs, bluetoothSocketNs = bluetoothSocketNs, browserNs = browserNs, certificateProviderNs = certificateProviderNs, clipboardNs = clipboardNs, commandsNs = commandsNs, contextMenusNs = contextMenusNs, csi = js.Any.fromFunction0(csi), desktopCaptureNs = desktopCaptureNs, diagnosticsNs = diagnosticsNs, displaySourceNs = displaySourceNs, dnsNs = dnsNs, documentScanNs = documentScanNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, experimental = experimental, extensionTypesNs = extensionTypesNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemNs = fileSystemNs, fileSystemProviderNs = fileSystemProviderNs, gcmNs = gcmNs, hidNs = hidNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, instanceIDNs = instanceIDNs, loadTimes = js.Any.fromFunction0(loadTimes), managementNs = managementNs, mdnsNs = mdnsNs, mediaGalleriesNs = mediaGalleriesNs, networkingNs = networkingNs, notificationsNs = notificationsNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, runtimeNs = runtimeNs, serial = serial, signedInDevicesNs = signedInDevicesNs, socketsNs = socketsNs, storageNs = storageNs, syncFileSystemNs = syncFileSystemNs, systemNs = systemNs, ttsNs = ttsNs, typesNs = typesNs, usbNs = usbNs, virtualKeyboardNs = virtualKeyboardNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webRequestNs = webRequestNs, webViewRequestNs = webViewRequestNs)
+    val __obj = js.Dynamic.literal(Event = Event, accessibilityFeatures = accessibilityFeatures, alarms = alarms, app = app, audio = audio, bluetooth = bluetooth, bluetoothLowEnergy = bluetoothLowEnergy, bluetoothSocket = bluetoothSocket, browser = browser, certificateProvider = certificateProvider, clipboard = clipboard, commands = commands, contextMenus = contextMenus, csi = js.Any.fromFunction0(csi), desktopCapture = desktopCapture, diagnostics = diagnostics, displaySource = displaySource, dns = dns, documentScan = documentScan, enterprise = enterprise, events = events, experimental = experimental, extensionTypes = extensionTypes, fileBrowserHandler = fileBrowserHandler, fileSystem = fileSystem, fileSystemProvider = fileSystemProvider, gcm = gcm, hid = hid, i18n = i18n, identity = identity, idle = idle, instanceID = instanceID, loadTimes = js.Any.fromFunction0(loadTimes), management = management, mdns = mdns, mediaGalleries = mediaGalleries, networking = networking, notifications = notifications, permissions = permissions, platformKeys = platformKeys, power = power, printerProvider = printerProvider, runtime = runtime, serial = serial, signedInDevices = signedInDevices, sockets = sockets, storage = storage, syncFileSystem = syncFileSystem, system = system, tts = tts, types = types, usb = usb, virtualKeyboard = virtualKeyboard, vpnProvider = vpnProvider, wallpaper = wallpaper, webRequest = webRequest, webViewRequest = webViewRequest)
   
     __obj.asInstanceOf[Typeofchrome]
   }

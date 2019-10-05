@@ -1,7 +1,7 @@
 package typings.urlDashTemplate.urlDashTemplateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.urlDashTemplate.urlDashTemplateMod.UrlTemplateNs.TemplateParser
+import typings.urlDashTemplate.urlDashTemplateMod.UrlTemplate.TemplateParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

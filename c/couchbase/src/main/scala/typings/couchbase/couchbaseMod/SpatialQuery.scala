@@ -1,6 +1,6 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.SpatialQueryNs.Update
+import typings.couchbase.couchbaseMod.SpatialQuery.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +48,44 @@ class SpatialQuery () extends js.Object {
 @JSImport("couchbase", "SpatialQuery")
 @js.native
 object SpatialQuery extends js.Object {
+  @js.native
+  sealed trait Update extends js.Object
+  
   /**
     * Instantiates a SpatialQuery object for the specified design document and view name.
     * @param ddoc The design document to use.
     * @param name 	The view to use.
     */
   def from(ddoc: String, name: String): SpatialQuery = js.native
+  /**
+    * Enumeration for specifying view update semantics.
+    */
+  @js.native
+  object Update extends js.Object {
+    /**
+      * 	Forces the view to be indexed after the results of this query has been fetched.
+      */
+    @js.native
+    sealed trait AFTER extends Update
+    
+    /**
+      * Causes the view to be fully indexed before results are retrieved.
+      */
+    @js.native
+    sealed trait BEFORE extends Update
+    
+    /**
+      * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
+      */
+    @js.native
+    sealed trait NONE extends Update
+    
+    /* 2 */ val AFTER: typings.couchbase.couchbaseMod.SpatialQuery.Update.AFTER with Double = js.native
+    /* 0 */ val BEFORE: typings.couchbase.couchbaseMod.SpatialQuery.Update.BEFORE with Double = js.native
+    /* 1 */ val NONE: typings.couchbase.couchbaseMod.SpatialQuery.Update.NONE with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Update with Double] = js.native
+  }
+  
 }
 

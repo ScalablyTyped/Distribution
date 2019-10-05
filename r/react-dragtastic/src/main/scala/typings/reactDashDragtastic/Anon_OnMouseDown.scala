@@ -1,7 +1,10 @@
 package typings.reactDashDragtastic
 
 import typings.react.Element
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +17,11 @@ trait Anon_OnMouseDown extends js.Object {
 
 object Anon_OnMouseDown {
   @scala.inline
-  def apply(onMouseDown: MouseEventHandler[Element], onTouchStart: TouchEventHandler[Element]): Anon_OnMouseDown = {
-    val __obj = js.Dynamic.literal(onMouseDown = onMouseDown, onTouchStart = onTouchStart)
+  def apply(
+    onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
+    onTouchStart: TouchEvent[Element] => Unit
+  ): Anon_OnMouseDown = {
+    val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchStart = js.Any.fromFunction1(onTouchStart))
   
     __obj.asInstanceOf[Anon_OnMouseDown]
   }

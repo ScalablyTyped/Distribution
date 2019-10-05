@@ -1,7 +1,7 @@
 package typings.webgme
 
 import org.scalablytyped.runtime.TopLevel
-import typings.webgme.GmeNs.NodePropertyNames
+import typings.webgme.Gme.NodePropertyNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

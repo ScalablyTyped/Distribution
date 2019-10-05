@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.BillboardNs.CreateImageCallback
+import typings.cesium.cesiumMod.Billboard.CreateImageCallback
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -40,5 +40,14 @@ class Billboard () extends js.Object {
   def setImage(id: String, image: HTMLCanvasElement): Unit = js.native
   def setImage(id: String, image: HTMLImageElement): Unit = js.native
   def setImageSubRegion(id: String, subRegion: BoundingRectangle): Unit = js.native
+}
+
+@JSImport("cesium", "Billboard")
+@js.native
+object Billboard extends js.Object {
+  type CreateImageCallback = js.Function1[
+    /* id */ String, 
+    HTMLImageElement | HTMLCanvasElement | (js.Promise[HTMLImageElement | HTMLCanvasElement])
+  ]
 }
 

@@ -11,10 +11,10 @@ trait WithScrollOptions extends js.Object {
 
 object WithScrollOptions {
   @scala.inline
-  def apply(alignToTop: js.UndefOr[Boolean] = js.undefined, propId: PropIdCallback = null): WithScrollOptions = {
+  def apply(alignToTop: js.UndefOr[Boolean] = js.undefined, propId: () => String = null): WithScrollOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alignToTop)) __obj.updateDynamic("alignToTop")(alignToTop)
-    if (propId != null) __obj.updateDynamic("propId")(propId)
+    if (propId != null) __obj.updateDynamic("propId")(js.Any.fromFunction0(propId))
     __obj.asInstanceOf[WithScrollOptions]
   }
 }

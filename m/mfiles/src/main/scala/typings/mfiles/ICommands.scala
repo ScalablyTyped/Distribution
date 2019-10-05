@@ -1,10 +1,10 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.BuiltinCommand
-import typings.mfiles.MFilesNs.CommandLocation
-import typings.mfiles.MFilesNs.CommandState
-import typings.mfiles.MFilesNs.DefaultIcon
-import typings.mfiles.MFilesNs.MenuLocation
+import typings.mfiles.MFiles.BuiltinCommand
+import typings.mfiles.MFiles.CommandLocation
+import typings.mfiles.MFiles.CommandState
+import typings.mfiles.MFiles.DefaultIcon
+import typings.mfiles.MFiles.MenuLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

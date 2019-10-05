@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.browserNs.Options
+import typings.chrome.chrome.browser.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

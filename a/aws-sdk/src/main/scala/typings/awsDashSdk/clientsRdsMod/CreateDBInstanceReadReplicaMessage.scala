@@ -133,34 +133,34 @@ object CreateDBInstanceReadReplicaMessage {
   def apply(
     DBInstanceIdentifier: String,
     SourceDBInstanceIdentifier: String,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBInstanceClass: String = null,
     DBParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     Domain: String = null,
     DomainIAMRoleName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
-    EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
+    EnablePerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
-    MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
+    MonitoringInterval: Int | scala.Double = null,
     MonitoringRoleArn: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OptionGroupName: String = null,
     PerformanceInsightsKMSKeyId: String = null,
-    PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    PerformanceInsightsRetentionPeriod: Int | scala.Double = null,
+    Port: Int | scala.Double = null,
     PreSignedUrl: String = null,
     ProcessorFeatures: ProcessorFeatureList = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     SourceRegion: String = null,
     StorageType: String = null,
     Tags: TagList = null,
-    UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined,
+    UseDefaultProcessorFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): CreateDBInstanceReadReplicaMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier, SourceDBInstanceIdentifier = SourceDBInstanceIdentifier)
@@ -176,15 +176,15 @@ object CreateDBInstanceReadReplicaMessage {
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (!js.isUndefined(EnablePerformanceInsights)) __obj.updateDynamic("EnablePerformanceInsights")(EnablePerformanceInsights)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval)
+    if (MonitoringInterval != null) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval.asInstanceOf[js.Any])
     if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
     if (PerformanceInsightsKMSKeyId != null) __obj.updateDynamic("PerformanceInsightsKMSKeyId")(PerformanceInsightsKMSKeyId)
-    if (!js.isUndefined(PerformanceInsightsRetentionPeriod)) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (PerformanceInsightsRetentionPeriod != null) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl)
     if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)

@@ -28,11 +28,11 @@ object ListUsersInGroupRequest {
   def apply(
     GroupName: GroupNameType,
     UserPoolId: UserPoolIdType,
-    Limit: js.UndefOr[QueryLimitType] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: PaginationKey = null
   ): ListUsersInGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName, UserPoolId = UserPoolId)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListUsersInGroupRequest]
   }

@@ -15,9 +15,9 @@ trait AccordionHeader extends js.Object {
 
 object AccordionHeader {
   @scala.inline
-  def apply(content: ReactElement, style: StyleProp[ViewStyle], title: String): AccordionHeader = {
-    val __obj = js.Dynamic.literal(content = content, style = style.asInstanceOf[js.Any], title = title)
-  
+  def apply(content: ReactElement, title: String, style: StyleProp[ViewStyle] = null): AccordionHeader = {
+    val __obj = js.Dynamic.literal(content = content, title = title)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionHeader]
   }
 }

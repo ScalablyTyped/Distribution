@@ -27,12 +27,12 @@ object CreateVpnGatewayRequest {
   @scala.inline
   def apply(
     Type: GatewayType,
-    AmazonSideAsn: js.UndefOr[Long] = js.undefined,
+    AmazonSideAsn: Int | scala.Double = null,
     AvailabilityZone: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateVpnGatewayRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(AmazonSideAsn)) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn)
+    if (AmazonSideAsn != null) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateVpnGatewayRequest]

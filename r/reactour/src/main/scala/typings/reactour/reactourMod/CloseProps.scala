@@ -1,5 +1,7 @@
 package typings.reactour.reactourMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
@@ -13,8 +15,8 @@ trait CloseProps extends js.Object {
 
 object CloseProps {
   @scala.inline
-  def apply(onClick: MouseEventHandler[HTMLButtonElement], className: String = null): CloseProps = {
-    val __obj = js.Dynamic.literal(onClick = onClick)
+  def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, className: String = null): CloseProps = {
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
     if (className != null) __obj.updateDynamic("className")(className)
     __obj.asInstanceOf[CloseProps]
   }

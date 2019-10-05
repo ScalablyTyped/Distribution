@@ -32,12 +32,12 @@ object GetWorkflowExecutionHistoryInput {
   def apply(
     domain: DomainName,
     execution: WorkflowExecution,
-    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
+    maximumPageSize: Int | Double = null,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
+    reverseOrder: js.UndefOr[Boolean] = js.undefined
   ): GetWorkflowExecutionHistoryInput = {
     val __obj = js.Dynamic.literal(domain = domain, execution = execution)
-    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize)
+    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
     __obj.asInstanceOf[GetWorkflowExecutionHistoryInput]

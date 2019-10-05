@@ -17,13 +17,10 @@ trait MotionImageInsertionFramerate extends js.Object {
 
 object MotionImageInsertionFramerate {
   @scala.inline
-  def apply(
-    FramerateDenominator: js.UndefOr[__integerMin1Max17895697] = js.undefined,
-    FramerateNumerator: js.UndefOr[__integerMin1Max2147483640] = js.undefined
-  ): MotionImageInsertionFramerate = {
+  def apply(FramerateDenominator: Int | Double = null, FramerateNumerator: Int | Double = null): MotionImageInsertionFramerate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator)
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator)
+    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
+    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionImageInsertionFramerate]
   }
 }

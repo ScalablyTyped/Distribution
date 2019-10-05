@@ -1,9 +1,9 @@
 package typings.lowlight
 
-import typings.lowlight.lowlightNs.HighlightAutoOptions
-import typings.lowlight.lowlightNs.HighlightAutoResult
-import typings.lowlight.lowlightNs.HighlightOptions
-import typings.lowlight.lowlightNs.HighlightResult
+import typings.lowlight.lowlight.HighlightAutoOptions
+import typings.lowlight.lowlight.HighlightAutoResult
+import typings.lowlight.lowlight.HighlightOptions
+import typings.lowlight.lowlight.HighlightResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

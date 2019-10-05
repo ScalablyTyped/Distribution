@@ -30,3 +30,18 @@ trait dir extends js.Object {
   def unlink(callback: js.Function1[/* error */ Error, _]): js.Any = js.native
 }
 
+@JSImport("temp-fs", "dir")
+@js.native
+object dir extends js.Object {
+  /**
+    * Return the path of a system-provided tempdir as
+    * <code>require('os').tmpdir()</code> does.
+    *
+    * You should not make any assumption about whether the path contains a
+    * trailing path separator, or it is a real path. On most system it is not a
+    * fixed path, and it can be changed by the user environment. When in doubt,
+    * check it first.
+    */
+  def apply(): String = js.native
+}
+

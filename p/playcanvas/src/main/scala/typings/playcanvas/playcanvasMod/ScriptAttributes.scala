@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScriptAttributes")
 @js.native
 class ScriptAttributes protected ()
-  extends typings.playcanvas.pcNs.ScriptAttributes {
+  extends typings.playcanvas.pc.ScriptAttributes {
   def this(scriptType: ScriptType) = this()
 }
 

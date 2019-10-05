@@ -1,7 +1,7 @@
 package typings.intlDashTelDashInput.intlDashTelDashInputMod
 
-import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtilsNs.CountryData
-import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
+import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtils.CountryData
+import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtils.placeholderNumberType
 import typings.intlDashTelDashInput.intlDashTelDashInputStrings.aggressive
 import typings.intlDashTelDashInput.intlDashTelDashInputStrings.off
 import typings.intlDashTelDashInput.intlDashTelDashInputStrings.polite
@@ -117,7 +117,7 @@ trait Options extends js.Object {
     * Default = MOBILE
     */
   var placeholderNumberType: js.UndefOr[
-    typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
+    typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtils.placeholderNumberType
   ] = js.undefined
   /**
     * Specify the countries to appear at the top of the list.

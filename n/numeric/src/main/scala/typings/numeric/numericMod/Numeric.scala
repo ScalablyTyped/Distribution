@@ -1155,6 +1155,138 @@ trait Numeric extends js.Object {
   def `<=_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   @JSName("<")
   def `<_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def apply(
+    x: js.Array[
+      js.Array[
+        (js.Array[
+          (js.Array[
+            (js.Array[
+              (js.Array[
+                (js.Array[
+                  (js.Array[
+                    (js.Array[
+                      js.Array[
+                        (js.Array[
+                          (js.Array[
+                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
+                          ]) | Double
+                        ]) | Double
+                      ]
+                    ]) | Double
+                  ]) | Double
+                ]) | Double
+              ]) | Double
+            ]) | Double
+          ]) | Double
+        ]) | Double
+      ]
+    ],
+    y: js.Array[
+      js.Array[
+        (js.Array[
+          (js.Array[
+            (js.Array[
+              (js.Array[
+                (js.Array[
+                  (js.Array[
+                    (js.Array[
+                      js.Array[
+                        (js.Array[
+                          (js.Array[
+                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
+                          ]) | Double
+                        ]) | Double
+                      ]
+                    ]) | Double
+                  ]) | Double
+                ]) | Double
+              ]) | Double
+            ]) | Double
+          ]) | Double
+        ]) | Double
+      ]
+    ],
+    args: ((js.Array[
+      js.Array[
+        (js.Array[
+          (js.Array[
+            (js.Array[
+              (js.Array[
+                (js.Array[
+                  (js.Array[
+                    (js.Array[
+                      js.Array[
+                        (js.Array[
+                          (js.Array[
+                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
+                          ]) | Double
+                        ]) | Double
+                      ]
+                    ]) | Double
+                  ]) | Double
+                ]) | Double
+              ]) | Double
+            ]) | Double
+          ]) | Double
+        ]) | Double
+      ]
+    ]) | Scalar)*
+  ): js.Array[js.Array[Double]] = js.native
+  def apply(
+    x: js.Array[
+      js.Array[
+        (js.Array[
+          (js.Array[
+            (js.Array[
+              (js.Array[
+                (js.Array[
+                  (js.Array[
+                    (js.Array[
+                      js.Array[
+                        (js.Array[
+                          (js.Array[
+                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
+                          ]) | Double
+                        ]) | Double
+                      ]
+                    ]) | Double
+                  ]) | Double
+                ]) | Double
+              ]) | Double
+            ]) | Double
+          ]) | Double
+        ]) | Double
+      ]
+    ],
+    y: Scalar,
+    args: ((js.Array[
+      js.Array[
+        (js.Array[
+          (js.Array[
+            (js.Array[
+              (js.Array[
+                (js.Array[
+                  (js.Array[
+                    (js.Array[
+                      js.Array[
+                        (js.Array[
+                          (js.Array[
+                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
+                          ]) | Double
+                        ]) | Double
+                      ]
+                    ]) | Double
+                  ]) | Double
+                ]) | Double
+              ]) | Double
+            ]) | Double
+          ]) | Double
+        ]) | Double
+      ]
+    ]) | Scalar)*
+  ): js.Array[js.Array[Double]] = js.native
+  def apply(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
+  def apply(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   def `===`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `===`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `===`(x: Scalar, y: Vector): VectorBoolean = js.native
@@ -1457,138 +1589,6 @@ trait Numeric extends js.Object {
   def LUsolve(lup: Anon_LU, vector: Vector): Vector = js.native
   def QRFrancis(x: Matrix): Anon_B = js.native
   def QRFrancis(x: Matrix, maxiter: Double): Anon_B = js.native
-  def ^(
-    x: js.Array[
-      js.Array[
-        (js.Array[
-          (js.Array[
-            (js.Array[
-              (js.Array[
-                (js.Array[
-                  (js.Array[
-                    (js.Array[
-                      js.Array[
-                        (js.Array[
-                          (js.Array[
-                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
-                          ]) | Double
-                        ]) | Double
-                      ]
-                    ]) | Double
-                  ]) | Double
-                ]) | Double
-              ]) | Double
-            ]) | Double
-          ]) | Double
-        ]) | Double
-      ]
-    ],
-    y: js.Array[
-      js.Array[
-        (js.Array[
-          (js.Array[
-            (js.Array[
-              (js.Array[
-                (js.Array[
-                  (js.Array[
-                    (js.Array[
-                      js.Array[
-                        (js.Array[
-                          (js.Array[
-                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
-                          ]) | Double
-                        ]) | Double
-                      ]
-                    ]) | Double
-                  ]) | Double
-                ]) | Double
-              ]) | Double
-            ]) | Double
-          ]) | Double
-        ]) | Double
-      ]
-    ],
-    args: ((js.Array[
-      js.Array[
-        (js.Array[
-          (js.Array[
-            (js.Array[
-              (js.Array[
-                (js.Array[
-                  (js.Array[
-                    (js.Array[
-                      js.Array[
-                        (js.Array[
-                          (js.Array[
-                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
-                          ]) | Double
-                        ]) | Double
-                      ]
-                    ]) | Double
-                  ]) | Double
-                ]) | Double
-              ]) | Double
-            ]) | Double
-          ]) | Double
-        ]) | Double
-      ]
-    ]) | Scalar)*
-  ): js.Array[js.Array[Double]] = js.native
-  def ^(
-    x: js.Array[
-      js.Array[
-        (js.Array[
-          (js.Array[
-            (js.Array[
-              (js.Array[
-                (js.Array[
-                  (js.Array[
-                    (js.Array[
-                      js.Array[
-                        (js.Array[
-                          (js.Array[
-                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
-                          ]) | Double
-                        ]) | Double
-                      ]
-                    ]) | Double
-                  ]) | Double
-                ]) | Double
-              ]) | Double
-            ]) | Double
-          ]) | Double
-        ]) | Double
-      ]
-    ],
-    y: Scalar,
-    args: ((js.Array[
-      js.Array[
-        (js.Array[
-          (js.Array[
-            (js.Array[
-              (js.Array[
-                (js.Array[
-                  (js.Array[
-                    (js.Array[
-                      js.Array[
-                        (js.Array[
-                          (js.Array[
-                            (js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]) | Double
-                          ]) | Double
-                        ]) | Double
-                      ]
-                    ]) | Double
-                  ]) | Double
-                ]) | Double
-              ]) | Double
-            ]) | Double
-          ]) | Double
-        ]) | Double
-      ]
-    ]) | Scalar)*
-  ): js.Array[js.Array[Double]] = js.native
-  def ^(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
-  def ^(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   // Pointwise Math.abs(x)
   def abs(
     x: js.Array[

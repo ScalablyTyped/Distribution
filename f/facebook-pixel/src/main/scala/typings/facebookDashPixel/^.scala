@@ -1,6 +1,6 @@
 package typings.facebookDashPixel
 
-import typings.facebookDashPixel.facebookNs.PixelNs.Event
+import typings.facebookDashPixel.facebook.Pixel.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

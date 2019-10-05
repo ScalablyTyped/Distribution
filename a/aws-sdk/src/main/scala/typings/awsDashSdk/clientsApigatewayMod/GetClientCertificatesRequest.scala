@@ -17,9 +17,9 @@ trait GetClientCertificatesRequest extends js.Object {
 
 object GetClientCertificatesRequest {
   @scala.inline
-  def apply(limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetClientCertificatesRequest = {
+  def apply(limit: Int | scala.Double = null, position: String = null): GetClientCertificatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[GetClientCertificatesRequest]
   }

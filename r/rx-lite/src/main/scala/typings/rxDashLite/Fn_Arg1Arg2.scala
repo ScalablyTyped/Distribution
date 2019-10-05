@@ -1,6 +1,6 @@
 package typings.rxDashLite
 
-import typings.rxDashLite.RxNs.Observable
+import typings.rxDashLite.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

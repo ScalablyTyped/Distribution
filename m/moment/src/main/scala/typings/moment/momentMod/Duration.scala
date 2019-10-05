@@ -1,6 +1,6 @@
 package typings.moment.momentMod
 
-import typings.moment.momentMod.unitOfTimeNs.Base
+import typings.moment.momentMod.unitOfTime.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,5 +54,13 @@ trait Duration
   def toJSON(): String = js.native
   def weeks(): Double = js.native
   def years(): Double = js.native
+}
+
+@JSImport("moment", "duration")
+@js.native
+object duration extends js.Object {
+  def apply(): Duration = js.native
+  def apply(inp: DurationInputArg1): Duration = js.native
+  def apply(inp: DurationInputArg1, unit: DurationInputArg2): Duration = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.graphql.typeDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.languageAstMod.UnionTypeDefinitionNode
 import typings.graphql.languageAstMod.UnionTypeExtensionNode
 import typings.graphql.tsutilsMaybeMod.Maybe
@@ -33,14 +34,14 @@ object GraphQLUnionTypeConfig {
     description: Maybe[String] = null,
     extensionASTNodes: Maybe[js.Array[UnionTypeExtensionNode]] = null,
     extensions: Maybe[Record[String, _]] = null,
-    resolveType: Maybe[GraphQLTypeResolver[TSource, TContext, StringDictionary[_]]] = null
+    resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null
   ): GraphQLUnionTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name, types = types.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType.asInstanceOf[js.Any])
+    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
     __obj.asInstanceOf[GraphQLUnionTypeConfig[TSource, TContext]]
   }
 }

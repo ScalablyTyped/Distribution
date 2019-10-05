@@ -17,10 +17,10 @@ trait RelationalDatabaseEndpoint extends js.Object {
 
 object RelationalDatabaseEndpoint {
   @scala.inline
-  def apply(address: NonEmptyString = null, port: js.UndefOr[integer] = js.undefined): RelationalDatabaseEndpoint = {
+  def apply(address: NonEmptyString = null, port: Int | Double = null): RelationalDatabaseEndpoint = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseEndpoint]
   }
 }

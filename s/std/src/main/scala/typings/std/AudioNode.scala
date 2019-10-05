@@ -30,9 +30,5 @@ trait AudioNode extends EventTarget {
 
 @JSGlobal("AudioNode")
 @js.native
-class AudioNodeCls () extends AudioNode
-
-@JSGlobal("AudioNode")
-@js.native
 object AudioNode extends Instantiable0[AudioNode]
 

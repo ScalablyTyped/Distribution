@@ -1,6 +1,6 @@
 package typings.consul
 
-import typings.consul.consulMod.AgentNs.CheckNs.FailOptions
+import typings.consul.consulMod.Agent.Check.FailOptions
 import typings.consul.consulMod.Callback
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js

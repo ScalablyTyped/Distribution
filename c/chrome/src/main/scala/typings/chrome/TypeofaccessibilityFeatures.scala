@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
+import typings.chrome.chrome.accessibilityFeatures.AccessibilityFeaturesSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

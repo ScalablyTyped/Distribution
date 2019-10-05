@@ -84,13 +84,13 @@ object UpdateProjectInput {
   def apply(
     name: NonEmptyString,
     artifacts: ProjectArtifacts = null,
-    badgeEnabled: js.UndefOr[WrapperBoolean] = js.undefined,
+    badgeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     cache: ProjectCache = null,
     description: ProjectDescription = null,
     encryptionKey: NonEmptyString = null,
     environment: ProjectEnvironment = null,
     logsConfig: LogsConfig = null,
-    queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
+    queuedTimeoutInMinutes: Int | Double = null,
     secondaryArtifacts: ProjectArtifactsList = null,
     secondarySourceVersions: ProjectSecondarySourceVersions = null,
     secondarySources: ProjectSources = null,
@@ -98,7 +98,7 @@ object UpdateProjectInput {
     source: ProjectSource = null,
     sourceVersion: String = null,
     tags: TagList = null,
-    timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
+    timeoutInMinutes: Int | Double = null,
     vpcConfig: VpcConfig = null
   ): UpdateProjectInput = {
     val __obj = js.Dynamic.literal(name = name)
@@ -109,7 +109,7 @@ object UpdateProjectInput {
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey)
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig)
-    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes)
+    if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts)
     if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions)
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources)
@@ -117,7 +117,7 @@ object UpdateProjectInput {
     if (source != null) __obj.updateDynamic("source")(source)
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
     if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig)
     __obj.asInstanceOf[UpdateProjectInput]
   }

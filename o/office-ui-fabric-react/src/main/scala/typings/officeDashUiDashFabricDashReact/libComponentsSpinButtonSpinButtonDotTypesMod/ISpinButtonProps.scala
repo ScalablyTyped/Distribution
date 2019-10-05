@@ -10,6 +10,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsSpinButtonSpinButton
 import typings.officeDashUiDashFabricDashReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection
 import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position
 import typings.react.Event
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.InputHTMLAttributes
 import typings.react.reactMod.SyntheticEvent
@@ -236,9 +237,9 @@ object ISpinButtonProps {
     labelPosition: Position = null,
     max: Int | Double = null,
     min: Int | Double = null,
-    onBlur: FocusEventHandler[HTMLInputElement] = null,
+    onBlur: FocusEvent[HTMLInputElement] => Unit = null,
     onDecrement: /* value */ String => String | Unit = null,
-    onFocus: FocusEventHandler[HTMLInputElement] = null,
+    onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onIncrement: /* value */ String => String | Unit = null,
     onValidate: (/* value */ String, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => String | Unit = null,
     precision: Int | Double = null,
@@ -274,9 +275,9 @@ object ISpinButtonProps {
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onDecrement != null) __obj.updateDynamic("onDecrement")(js.Any.fromFunction1(onDecrement))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onIncrement != null) __obj.updateDynamic("onIncrement")(js.Any.fromFunction1(onIncrement))
     if (onValidate != null) __obj.updateDynamic("onValidate")(js.Any.fromFunction2(onValidate))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])

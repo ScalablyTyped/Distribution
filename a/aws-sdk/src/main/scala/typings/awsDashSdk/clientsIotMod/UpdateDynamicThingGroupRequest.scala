@@ -36,13 +36,13 @@ object UpdateDynamicThingGroupRequest {
   def apply(
     thingGroupName: ThingGroupName,
     thingGroupProperties: ThingGroupProperties,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined,
+    expectedVersion: Int | Double = null,
     indexName: IndexName = null,
     queryString: QueryString = null,
     queryVersion: QueryVersion = null
   ): UpdateDynamicThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName, thingGroupProperties = thingGroupProperties)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     if (indexName != null) __obj.updateDynamic("indexName")(indexName)
     if (queryString != null) __obj.updateDynamic("queryString")(queryString)
     if (queryVersion != null) __obj.updateDynamic("queryVersion")(queryVersion)

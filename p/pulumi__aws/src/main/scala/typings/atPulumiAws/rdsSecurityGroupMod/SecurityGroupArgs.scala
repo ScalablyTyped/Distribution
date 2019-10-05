@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.rdsNs.SecurityGroupIngress
+import typings.atPulumiAws.typesInputMod.rds.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

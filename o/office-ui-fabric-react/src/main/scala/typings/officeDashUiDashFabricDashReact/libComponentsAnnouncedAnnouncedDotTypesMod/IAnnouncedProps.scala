@@ -5,7 +5,6 @@ import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDo
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.Props
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,14 +26,16 @@ object IAnnouncedProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    Props: Props[AnnouncedBase] = null,
+    key: Key = null,
     message: String = null,
+    ref: LegacyRef[AnnouncedBase] = null,
     styles: IStyleFunctionOrObject[js.Object, IAnnouncedStyles] = null
   ): IAnnouncedProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, Props)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnouncedProps]
   }

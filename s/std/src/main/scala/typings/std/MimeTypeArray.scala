@@ -18,9 +18,5 @@ trait MimeTypeArray extends /* index */ NumberDictionary[MimeType] {
 
 @JSGlobal("MimeTypeArray")
 @js.native
-class MimeTypeArrayCls () extends MimeTypeArray
-
-@JSGlobal("MimeTypeArray")
-@js.native
 object MimeTypeArray extends Instantiable0[MimeTypeArray]
 

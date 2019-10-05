@@ -1,6 +1,6 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.BucketNs.CAS
+import typings.couchbase.couchbaseMod.Bucket.CAS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

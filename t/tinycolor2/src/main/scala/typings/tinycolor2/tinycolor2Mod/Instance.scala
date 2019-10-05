@@ -1,9 +1,9 @@
 package typings.tinycolor2.tinycolor2Mod
 
-import typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSLA
-import typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.HSVA
-import typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.PRGBA
-import typings.tinycolor2.tinycolor2Mod.ColorFormatsNs.RGBA
+import typings.tinycolor2.tinycolor2Mod.ColorFormats.HSLA
+import typings.tinycolor2.tinycolor2Mod.ColorFormats.HSVA
+import typings.tinycolor2.tinycolor2Mod.ColorFormats.PRGBA
+import typings.tinycolor2.tinycolor2Mod.ColorFormats.RGBA
 import typings.tinycolor2.tinycolor2Numbers.`false`
 import typings.tinycolor2.tinycolor2Strings.hex
 import typings.tinycolor2.tinycolor2Strings.hex3

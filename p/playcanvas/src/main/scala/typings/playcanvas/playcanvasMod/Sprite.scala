@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Sprite")
 @js.native
 class Sprite protected ()
-  extends typings.playcanvas.pcNs.Sprite {
-  def this(device: typings.playcanvas.pcNs.GraphicsDevice, options: Anon_Atlas) = this()
+  extends typings.playcanvas.pc.Sprite {
+  def this(device: typings.playcanvas.pc.GraphicsDevice, options: Anon_Atlas) = this()
 }
 

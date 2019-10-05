@@ -1,7 +1,6 @@
 package typings.underscore.underscoreMod
 
 import typings.std.Pick
-import typings.underscore.Fn_Context
 import typings.underscore.Fn_P1
 import typings.underscore.Fn_P1P2
 import typings.underscore.Fn_P1P2P3
@@ -268,8 +267,7 @@ trait UnderscoreStatic extends js.Object {
   /**
     * @see _.map
     **/
-  @JSName("collect")
-  var collect_Original: Fn_Context = js.native
+  var collect: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _.map */ js.Any = js.native
   /**
     * By default, Underscore uses ERB-style template delimiters, change the
     * following template settings to use alternative delimiters.
@@ -384,26 +382,6 @@ trait UnderscoreStatic extends js.Object {
     * @return Copy of `object`.
     **/
   def clone[T](`object`: T): T = js.native
-  /**
-    * @see _.map
-    **/
-  def collect[T](list: List[T], iterator: IterateeMatcherShorthand[_]): js.Array[Boolean] = js.native
-  def collect[T](list: List[T], iterator: IterateeMatcherShorthand[_], context: js.Any): js.Array[Boolean] = js.native
-  /**
-    * @see _.map
-    **/
-  def collect[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[_] = js.native
-  def collect[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[_] = js.native
-  /**
-    * @see _.map
-    **/
-  def collect[T, TResult](list: List[T], iterator: ListIterator[T, TResult]): js.Array[TResult] = js.native
-  def collect[T, TResult](list: List[T], iterator: ListIterator[T, TResult], context: js.Any): js.Array[TResult] = js.native
-  /**
-    * @see _.map
-    **/
-  def collect[T, TResult](`object`: Dictionary[T], iterator: ObjectIterator[T, TResult]): js.Array[TResult] = js.native
-  def collect[T, TResult](`object`: Dictionary[T], iterator: ObjectIterator[T, TResult], context: js.Any): js.Array[TResult] = js.native
   def compact[T](): js.Array[T] = js.native
   /**
     * Returns a copy of the array with all falsy values removed. In JavaScript, false, null, 0, "",
@@ -1276,66 +1254,66 @@ trait UnderscoreStatic extends js.Object {
   def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, p2: T2): Fn_P1P3[T1, T3, T4] = js.native
   def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1T1T4[T1, T4] = js.native
   def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, stub2: UnderscoreStatic, p3: T3): Fn_P1P2T1[T1, T2, T4] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1): Fn_P2P3P4[T2, T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, p2: T2): Fn_P3P4[T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, p2: T2, p3: T3): Fn_P4[T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, p2: T2, p3: T3, p4: T4): Fn_T5[T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3T3[T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4[T2, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2T2T5[T2, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1): Fn_P2P3P4[T2, T3, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2): Fn_P3P4[T3, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3): Fn_P4[T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4): Fn_T5[T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3T3[T3, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4[T2, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2T2T5[T2, T5] = js.native
   def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2],
+    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
   ): Fn_P2P3T2[T2, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4[T1, T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4[T1, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1T1T5[T1, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4[T1, T3, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4[T1, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1T1T5[T1, T5] = js.native
   def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2],
+    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
   ): Fn_P1P3T1[T1, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2], stub1: UnderscoreStatic, stub2: UnderscoreStatic, p3: T3): Fn_P1P2P4[T1, T2, T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, stub2: UnderscoreStatic, p3: T3): Fn_P1P2P4[T1, T2, T4, T5] = js.native
   def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2],
+    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
   ): Fn_P1P2T1T2[T1, T2, T5] = js.native
   def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T1, T3, T5, T4, T2],
+    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
   ): Fn_P1P2P3T1[T1, T2, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1): Fn_P2P3P4P5[T3, T5, T4, T2, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2): Fn_P3P4P5[T3, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, p3: T3): Fn_P4P5[T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5[T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_T6[T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, p3: T3, stub4: UnderscoreStatic, p5: T5): Fn_P4T4[T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5[T3, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4, p5: T5): Fn_P3T3T6[T3, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1): Fn_P2P3P4P5[T4, T6, T2, T5, T3] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2): Fn_P3P4P5[T3, T4, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3): Fn_P4P5[T4, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5[T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_T6[T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, stub4: UnderscoreStatic, p5: T5): Fn_P4T4[T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5[T3, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4, p5: T5): Fn_P3T3T6[T3, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
   ): Fn_P3P4T3[T3, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5[T2, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5[T2, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4, p5: T5): Fn_P2T2T6[T2, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5[T2, T4, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5[T2, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4, p5: T5): Fn_P2T2T6[T2, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1343,14 +1321,14 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P4T2[T2, T4, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
   ): Fn_P2P3P5[T2, T3, T5, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1358,19 +1336,19 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P3T2T3[T2, T3, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
   ): Fn_P2P3P4T2[T2, T3, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5[T1, T3, T5, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5[T1, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5[T1, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P1T1T6[T1, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5[T4, T6, T1, T5, T3] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5[T1, T4, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5[T1, T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P1T1T6[T1, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1378,14 +1356,14 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P4T1[T1, T4, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
   ): Fn_P1P3P5[T1, T3, T5, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1393,7 +1371,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P3T1T3[T1, T3, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1401,20 +1379,20 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P3P4T1[T1, T3, T4, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5[T1, T5, T4, T2, T6] = js.native
+  ): Fn_P1P2P4P5[T4, T6, T1, T2, T5] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
   ): Fn_P1P2P5[T1, T2, T5, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1422,7 +1400,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P2T1T2T6[T1, T2, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1430,14 +1408,14 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P2P4T1[T1, T2, T4, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P2P3P5[T1, T3, T5, T2, T6] = js.native
+  ): Fn_P1P2P3P5[T6, T1, T2, T5, T3] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1445,21 +1423,21 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P2P3T1T2[T1, T2, T3, T6] = js.native
   def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T1, T3, T5, T4, T2, T6],
+    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P3P4T1[T1, T3, T4, T2, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1): Fn_P2P3P4P5P6[T3, T5, T4, T2, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2): Fn_P3P4P5P6[T3, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3): Fn_P4P5P6[T4, T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6[T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6[T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5, p6: T6): Fn_T7[T7] = js.native
+  ): Fn_P1P2P3P4T1[T4, T6, T1, T2, T3] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1): Fn_P2P3P4P5P6[T4, T6, T2, T5, T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2): Fn_P3P4P5P6[T4, T6, T5, T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3): Fn_P4P5P6[T4, T5, T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6[T5, T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6[T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5, p6: T6): Fn_T7[T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1468,7 +1446,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P5T5[T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1476,7 +1454,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P4P6[T4, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1485,7 +1463,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P4T4T7[T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1493,9 +1471,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6
   ): Fn_P4P5T4[T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5P6[T3, T5, T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5P6[T3, T5, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1503,7 +1481,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P3P6[T3, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1512,7 +1490,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3T3T7[T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1521,7 +1499,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3P5T3[T3, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1529,7 +1507,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P3P4P6[T3, T4, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1538,7 +1516,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3P4T3T4[T3, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1546,10 +1524,10 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6
   ): Fn_P3P4P5T3[T3, T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6[T5, T4, T2, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5P6[T2, T5, T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6[T4, T6, T2, T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5P6[T2, T5, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1557,7 +1535,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P6[T2, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1566,7 +1544,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2T2T7[T2, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1575,7 +1553,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P5T2[T2, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1583,7 +1561,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P4P6[T2, T4, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1592,7 +1570,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P4T2T4[T2, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1601,14 +1579,14 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P4P5T2[T2, T4, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P2P3P5P6[T3, T5, T2, T6, T7] = js.native
+  ): Fn_P2P3P5P6[T6, T2, T5, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1616,7 +1594,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P3P6[T2, T3, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1625,7 +1603,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P3T2T3T7[T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1634,15 +1612,15 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P3P5T2[T2, T3, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P2P3P4P6[T3, T4, T2, T6, T7] = js.native
+  ): Fn_P2P3P4P6[T4, T6, T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1651,19 +1629,19 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P3P4T2T3[T2, T3, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P2P3P4P5T2[T3, T5, T4, T2, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6[T1, T3, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6[T1, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5P6[T1, T5, T6, T7] = js.native
+  ): Fn_P2P3P4P5T2[T4, T2, T5, T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6[T4, T6, T1, T5, T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6[T4, T6, T1, T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5P6[T1, T5, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1671,7 +1649,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P6[T1, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1680,7 +1658,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1T1T7[T1, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1689,7 +1667,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P5T1[T1, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1697,7 +1675,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P4P6[T1, T4, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1706,7 +1684,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P4T1T4[T1, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -1715,14 +1693,14 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P4P5T1[T1, T4, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P3P5P6[T1, T3, T5, T6, T7] = js.native
+  ): Fn_P1P3P5P6[T6, T1, T5, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1730,7 +1708,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P3P6[T1, T3, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1739,7 +1717,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P3T1T3T7[T1, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1748,15 +1726,15 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P3P5T1[T1, T3, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P3P4P6[T1, T3, T4, T6, T7] = js.native
+  ): Fn_P1P3P4P6[T4, T6, T1, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -1765,29 +1743,29 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P3P4T1T3[T1, T3, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P3P4P5T1[T1, T3, T5, T4, T7] = js.native
+  ): Fn_P1P3P4P5T1[T4, T1, T5, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5P6[T1, T5, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P4P5P6[T4, T6, T1, T2, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P1P2P5P6[T1, T5, T2, T6, T7] = js.native
+  ): Fn_P1P2P5P6[T6, T1, T2, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1795,7 +1773,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P2P6[T1, T2, T6, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1804,7 +1782,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P2T1T2T7[T1, T2, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1813,15 +1791,15 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P2P5T1[T1, T2, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P4P6[T1, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P4P6[T4, T6, T1, T2, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -1830,31 +1808,31 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P2P4T1T2[T1, T2, T4, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P4P5T1[T1, T5, T4, T2, T7] = js.native
+  ): Fn_P1P2P4P5T1[T4, T1, T2, T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P2P3P5P6[T1, T3, T5, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P5P6[T6, T1, T2, T5, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P3P6[T1, T3, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P6[T6, T1, T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -1863,47 +1841,47 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P2P3T1T2T3[T1, T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P3P5T1[T1, T3, T5, T2, T7] = js.native
+  ): Fn_P1P2P3P5T1[T1, T2, T5, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P3P4P6[T1, T3, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P4P6[T4, T6, T1, T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P1P2P3P4T1T2[T1, T3, T4, T2, T7] = js.native
+  ): Fn_P1P2P3P4T1T2[T4, T1, T2, T3, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T1, T3, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P3P4P5T1[T1, T3, T5, T4, T2, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1): Fn_P2P3P4P5P6P7[T3, T8, T5, T4, T2, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1, p2: T2): Fn_P3P4P5P6P7[T3, T8, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3): Fn_P4P5P6P7[T8, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6P7[T5, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6P7[T6, T7, T8] = js.native
+  ): Fn_P1P2P3P4P5T1[T4, T1, T2, T5, T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1): Fn_P2P3P4P5P6P7[T4, T6, T2, T5, T3, T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2): Fn_P3P4P5P6P7[T4, T6, T5, T3, T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3): Fn_P4P5P6P7[T4, T6, T5, T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6P7[T5, T6, T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6P7[T6, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1912,7 +1890,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P7[T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1922,7 +1900,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_T8[T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1932,7 +1910,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P6T6[T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1941,7 +1919,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P5P7[T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1951,7 +1929,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P5T5T8[T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1961,7 +1939,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P5P6T5[T5, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1969,7 +1947,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P4P6P7[T4, T6, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1978,7 +1956,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P4P7[T4, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1988,7 +1966,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P4T4T8[T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -1998,7 +1976,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P4P6T4[T4, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -2007,7 +1985,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P4P5P7[T4, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -2017,7 +1995,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P4P5T4T5[T4, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     p3: T3,
@@ -2027,14 +2005,14 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P4P5P6T4[T4, T5, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P3P5P6P7[T3, T8, T5, T6, T7] = js.native
+  ): Fn_P3P5P6P7[T6, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2042,7 +2020,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P3P6P7[T3, T6, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2051,7 +2029,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3P7[T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2061,7 +2039,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3T3T8[T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2071,7 +2049,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P6T3[T3, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2080,7 +2058,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3P5P7[T3, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2090,7 +2068,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P5T3T5[T3, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2100,15 +2078,15 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P5P6T3[T3, T5, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P3P4P6P7[T3, T8, T4, T6, T7] = js.native
+  ): Fn_P3P4P6P7[T4, T6, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2117,7 +2095,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P3P4P7[T3, T4, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2127,7 +2105,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P4T3T4T8[T3, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2137,16 +2115,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P4P6T3[T3, T4, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P3P4P5P7[T3, T8, T5, T4, T7] = js.native
+  ): Fn_P3P4P5P7[T4, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2156,7 +2134,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P3P4P5T3T4[T3, T4, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2164,17 +2142,17 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P3P4P5P6T3[T3, T8, T5, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6P7[T8, T5, T4, T2, T6, T7] = js.native
+  ): Fn_P3P4P5P6T3[T4, T6, T5, T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6P7[T4, T6, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P2P5P6P7[T8, T5, T2, T6, T7] = js.native
+  ): Fn_P2P5P6P7[T6, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2182,7 +2160,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P2P6P7[T2, T6, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2191,7 +2169,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P7[T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2201,7 +2179,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2T2T8[T2, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2211,7 +2189,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P6T2[T2, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2220,7 +2198,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P5P7[T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2230,7 +2208,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P5T2T5[T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2240,15 +2218,15 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P5P6T2[T2, T5, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P2P4P6P7[T8, T4, T2, T6, T7] = js.native
+  ): Fn_P2P4P6P7[T4, T6, T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2257,7 +2235,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P4P7[T2, T4, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2267,7 +2245,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P4T2T4T8[T2, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2277,16 +2255,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P4P6T2[T2, T4, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P2P4P5P7[T8, T5, T4, T2, T7] = js.native
+  ): Fn_P2P4P5P7[T4, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2296,7 +2274,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P4P5T2T4[T2, T4, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2304,24 +2282,24 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P2P4P5P6T2[T8, T5, T4, T2, T6] = js.native
+  ): Fn_P2P4P5P6T2[T4, T6, T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P2P3P5P6P7[T3, T8, T5, T2, T6, T7] = js.native
+  ): Fn_P2P3P5P6P7[T6, T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P2P3P6P7[T3, T8, T2, T6, T7] = js.native
+  ): Fn_P2P3P6P7[T6, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2330,7 +2308,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P2P3P7[T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2340,7 +2318,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P3T2T3T8[T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2350,16 +2328,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P3P6T2[T2, T3, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P2P3P5P7[T3, T8, T5, T2, T7] = js.native
+  ): Fn_P2P3P5P7[T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2369,7 +2347,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P3P5T2T3[T2, T3, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2377,26 +2355,26 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P2P3P5P6T2[T3, T8, T5, T2, T6] = js.native
+  ): Fn_P2P3P5P6T2[T6, T2, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P2P3P4P6P7[T3, T8, T4, T2, T6, T7] = js.native
+  ): Fn_P2P3P4P6P7[T4, T6, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P2P3P4P7[T3, T8, T4, T2, T7] = js.native
+  ): Fn_P2P3P4P7[T4, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2406,7 +2384,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P2P3P4T2T3T4[T2, T3, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2414,18 +2392,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P2P3P4P6T2[T3, T8, T4, T2, T6] = js.native
+  ): Fn_P2P3P4P6T2[T4, T6, T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P2P3P4P5P7[T3, T8, T5, T4, T2, T7] = js.native
+  ): Fn_P2P3P4P5P7[T4, T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2433,9 +2411,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P2P3P4P5T2T3[T3, T8, T5, T4, T2] = js.native
+  ): Fn_P2P3P4P5T2T3[T4, T2, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2443,18 +2421,18 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P2P3P4P5P6T2[T3, T8, T5, T4, T2, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6P7[T1, T3, T8, T5, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6P7[T1, T8, T5, T4, T6, T7] = js.native
+  ): Fn_P2P3P4P5P6T2[T4, T6, T2, T5, T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6P7[T4, T6, T1, T5, T3, T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6P7[T4, T6, T1, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     p4: T4
-  ): Fn_P1P5P6P7[T1, T8, T5, T6, T7] = js.native
+  ): Fn_P1P5P6P7[T6, T1, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2462,7 +2440,7 @@ trait UnderscoreStatic extends js.Object {
     p5: T5
   ): Fn_P1P6P7[T1, T6, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2471,7 +2449,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P7[T1, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2481,7 +2459,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1T1T8[T1, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2491,7 +2469,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P6T1[T1, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2500,7 +2478,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P5P7[T1, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2510,7 +2488,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P5T1T5[T1, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2520,15 +2498,15 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P5P6T1[T1, T5, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P4P6P7[T1, T8, T4, T6, T7] = js.native
+  ): Fn_P1P4P6P7[T4, T6, T1, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2537,7 +2515,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P4P7[T1, T4, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2547,7 +2525,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P4T1T4T8[T1, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2557,16 +2535,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P4P6T1[T1, T4, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P4P5P7[T1, T8, T5, T4, T7] = js.native
+  ): Fn_P1P4P5P7[T4, T1, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2576,7 +2554,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P4P5T1T4[T1, T4, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
@@ -2584,24 +2562,24 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P4P5P6T1[T1, T8, T5, T4, T6] = js.native
+  ): Fn_P1P4P5P6T1[T4, T6, T1, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P3P5P6P7[T1, T3, T8, T5, T6, T7] = js.native
+  ): Fn_P1P3P5P6P7[T6, T1, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P1P3P6P7[T1, T3, T8, T6, T7] = js.native
+  ): Fn_P1P3P6P7[T6, T1, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2610,7 +2588,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P3P7[T1, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2620,7 +2598,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P3T1T3T8[T1, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2630,16 +2608,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P3P6T1[T1, T3, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P3P5P7[T1, T3, T8, T5, T7] = js.native
+  ): Fn_P1P3P5P7[T1, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2649,7 +2627,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P3P5T1T3[T1, T3, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2657,26 +2635,26 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P3P5P6T1[T1, T3, T8, T5, T6] = js.native
+  ): Fn_P1P3P5P6T1[T6, T1, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P3P4P6P7[T1, T3, T8, T4, T6, T7] = js.native
+  ): Fn_P1P3P4P6P7[T4, T6, T1, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P1P3P4P7[T1, T3, T8, T4, T7] = js.native
+  ): Fn_P1P3P4P7[T4, T1, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2686,7 +2664,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P3P4T1T3T4[T1, T3, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2694,18 +2672,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P3P4P6T1[T1, T3, T8, T4, T6] = js.native
+  ): Fn_P1P3P4P6T1[T4, T6, T1, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P3P4P5P7[T1, T3, T8, T5, T4, T7] = js.native
+  ): Fn_P1P3P4P5P7[T4, T1, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2713,9 +2691,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P1P3P4P5T1T3[T1, T3, T8, T5, T4] = js.native
+  ): Fn_P1P3P4P5T1T3[T4, T1, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
@@ -2723,30 +2701,30 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P3P4P5P6T1[T1, T3, T8, T5, T4, T6] = js.native
+  ): Fn_P1P3P4P5P6T1[T4, T6, T1, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5P6P7[T1, T8, T5, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P4P5P6P7[T4, T6, T1, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P1P2P5P6P7[T1, T8, T5, T2, T6, T7] = js.native
+  ): Fn_P1P2P5P6P7[T6, T1, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P6P7[T1, T8, T2, T6, T7] = js.native
+  ): Fn_P1P2P6P7[T6, T1, T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2755,7 +2733,7 @@ trait UnderscoreStatic extends js.Object {
     p6: T6
   ): Fn_P1P2P7[T1, T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2765,7 +2743,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P2T1T2T8[T1, T2, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2775,16 +2753,16 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P2P6T1[T1, T2, T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P5P7[T1, T8, T5, T2, T7] = js.native
+  ): Fn_P1P2P5P7[T1, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2794,7 +2772,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P2P5T1T2[T1, T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2802,26 +2780,26 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P5P6T1[T1, T8, T5, T2, T6] = js.native
+  ): Fn_P1P2P5P6T1[T6, T1, T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P4P6P7[T1, T8, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P4P6P7[T4, T6, T1, T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P1P2P4P7[T1, T8, T4, T2, T7] = js.native
+  ): Fn_P1P2P4P7[T4, T1, T2, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2831,7 +2809,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P2P4T1T2T4[T1, T2, T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2839,18 +2817,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P4P6T1[T1, T8, T4, T2, T6] = js.native
+  ): Fn_P1P2P4P6T1[T4, T6, T1, T2, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P4P5P7[T1, T8, T5, T4, T2, T7] = js.native
+  ): Fn_P1P2P4P5P7[T4, T1, T2, T5, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2858,9 +2836,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P4P5T1T2[T1, T8, T5, T4, T2] = js.native
+  ): Fn_P1P2P4P5T1T2[T4, T1, T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
@@ -2868,33 +2846,33 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P4P5P6T1[T1, T8, T5, T4, T2, T6] = js.native
+  ): Fn_P1P2P4P5P6T1[T4, T6, T1, T2, T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P2P3P5P6P7[T1, T3, T8, T5, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P5P6P7[T6, T1, T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P3P6P7[T1, T3, T8, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P6P7[T6, T1, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5,
     p6: T6
-  ): Fn_P1P2P3P7[T1, T3, T8, T2, T7] = js.native
+  ): Fn_P1P2P3P7[T1, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2904,7 +2882,7 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): Fn_P1P2P3T1T2T3T8[T1, T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2912,18 +2890,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P6T1[T1, T3, T8, T2, T6] = js.native
+  ): Fn_P1P2P3P6T1[T6, T1, T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P3P5P7[T1, T3, T8, T5, T2, T7] = js.native
+  ): Fn_P1P2P3P5P7[T1, T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2931,9 +2909,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P3P5T1T2[T1, T3, T8, T5, T2] = js.native
+  ): Fn_P1P2P3P5T1T2[T1, T2, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2941,26 +2919,26 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P5P6T1[T1, T3, T8, T5, T2, T6] = js.native
+  ): Fn_P1P2P3P5P6T1[T6, T1, T2, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P3P4P6P7[T1, T3, T8, T4, T2, T6, T7] = js.native
+  ): Fn_P1P2P3P4P6P7[T4, T6, T1, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P1P2P3P4P7[T1, T3, T8, T4, T2, T7] = js.native
+  ): Fn_P1P2P3P4P7[T4, T1, T2, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2968,9 +2946,9 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P3P4T1T2T3[T1, T3, T8, T4, T2] = js.native
+  ): Fn_P1P2P3P4T1T2T3[T4, T1, T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2978,18 +2956,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P4P6T1[T1, T3, T8, T4, T2, T6] = js.native
+  ): Fn_P1P2P3P4P6T1[T4, T6, T1, T2, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P3P4P5P7[T1, T3, T8, T5, T4, T2, T7] = js.native
+  ): Fn_P1P2P3P4P5P7[T4, T1, T2, T5, T3, T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2997,9 +2975,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P3P4P5T1T2[T1, T3, T8, T5, T4, T2] = js.native
+  ): Fn_P1P2P3P4P5T1T2[T4, T1, T2, T5, T3, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T1, T3, T8, T5, T4, T2, T6, T7],
+    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -3007,7 +2985,7 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P4P5P6T1[T1, T3, T8, T5, T4, T2, T6] = js.native
+  ): Fn_P1P2P3P4P5P6T1[T4, T6, T1, T2, T5, T3, T8] = js.native
   /**
     * Split array into two arrays:
     * one whose elements all satisfy predicate and one whose elements all do not satisfy predicate.

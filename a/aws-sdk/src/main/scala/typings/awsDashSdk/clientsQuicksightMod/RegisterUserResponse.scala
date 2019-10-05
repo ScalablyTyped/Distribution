@@ -27,13 +27,13 @@ object RegisterUserResponse {
   @scala.inline
   def apply(
     RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined,
+    Status: Int | Double = null,
     User: User = null,
     UserInvitationUrl: String = null
   ): RegisterUserResponse = {
     val __obj = js.Dynamic.literal()
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status)
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (User != null) __obj.updateDynamic("User")(User)
     if (UserInvitationUrl != null) __obj.updateDynamic("UserInvitationUrl")(UserInvitationUrl)
     __obj.asInstanceOf[RegisterUserResponse]

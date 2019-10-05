@@ -1,5 +1,6 @@
 package typings.backoff.backoffMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.backoff.backoffStrings.abort
 import typings.backoff.backoffStrings.call
 import typings.backoff.backoffStrings.callback
@@ -175,4 +176,8 @@ trait FunctionCall[T] extends EventEmitter {
     */
   def start(): Unit = js.native
 }
+
+@JSImport("backoff", "FunctionCall")
+@js.native
+object FunctionCall extends TopLevel[FunctionCallConstructor]
 

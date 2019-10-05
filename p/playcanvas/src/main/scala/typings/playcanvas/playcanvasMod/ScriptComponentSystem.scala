@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScriptComponentSystem")
 @js.native
 class ScriptComponentSystem protected ()
-  extends typings.playcanvas.pcNs.ScriptComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.ScriptComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

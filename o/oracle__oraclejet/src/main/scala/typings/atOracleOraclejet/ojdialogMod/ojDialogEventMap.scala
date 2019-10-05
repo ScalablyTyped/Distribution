@@ -11,17 +11,17 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.modeless
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.resizable
 import typings.atOracleOraclejet.atOracleOraclejetStrings.show
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.Position
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojAnimateStart
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojBeforeClose
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojBeforeOpen
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojClose
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojFocus
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojOpen
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResize
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResizeStart
-import typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResizeStop
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.Position
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojClose
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojFocus
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojOpen
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResize
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResizeStart
+import typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResizeStop
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -48,16 +48,16 @@ trait ojDialogEventMap extends baseComponentEventMap[ojDialogSettableProperties]
   var dragAffordanceChanged: JetElementCustomEvent[`title-bar` | none]
   var initialVisibilityChanged: JetElementCustomEvent[hide | show]
   var modalityChanged: JetElementCustomEvent[modal | modeless]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojAnimateStart
-  var ojBeforeClose: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojBeforeClose
-  var ojBeforeOpen: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojBeforeOpen
-  var ojClose: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojClose
-  var ojFocus: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojFocus
-  var ojOpen: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojOpen
-  var ojResize: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResize
-  var ojResizeStart: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResizeStart
-  var ojResizeStop: typings.atOracleOraclejet.ojdialogMod.ojDialogNs.ojResizeStop
+  var ojAnimateEnd: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojAnimateStart
+  var ojBeforeClose: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojBeforeClose
+  var ojBeforeOpen: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojBeforeOpen
+  var ojClose: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojClose
+  var ojFocus: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojFocus
+  var ojOpen: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojOpen
+  var ojResize: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResize
+  var ojResizeStart: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResizeStart
+  var ojResizeStop: typings.atOracleOraclejet.ojdialogMod.ojDialog.ojResizeStop
   var positionChanged: JetElementCustomEvent[Position]
   var resizeBehaviorChanged: JetElementCustomEvent[resizable | none]
   var roleChanged: JetElementCustomEvent[String]

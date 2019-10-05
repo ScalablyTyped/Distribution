@@ -2,6 +2,7 @@ package typings.cheerio
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -177,4 +178,8 @@ trait Cheerio
   def wrap(content: Cheerio): Cheerio = js.native
   def wrap(content: Document): Cheerio = js.native
 }
+
+@JSGlobal("cheerio")
+@js.native
+object cheerio extends TopLevel[CheerioAPI]
 

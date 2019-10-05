@@ -1,5 +1,6 @@
 package typings.downshift.downshiftMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -13,4 +14,9 @@ class default protected ()
   def this(props: DownshiftProps[_]) = this()
   def this(props: DownshiftProps[_], context: js.Any) = this()
 }
+
+@JSImport("downshift", JSImport.Default)
+@js.native
+object default
+  extends TopLevel[DownshiftInterface[js.Any]]
 

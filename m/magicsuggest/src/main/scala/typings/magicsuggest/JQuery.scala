@@ -1,7 +1,7 @@
 package typings.magicsuggest
 
-import typings.magicsuggest.MagicSuggestNs.Configuration
-import typings.magicsuggest.MagicSuggestNs.Instance
+import typings.magicsuggest.MagicSuggest.Configuration
+import typings.magicsuggest.MagicSuggest.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

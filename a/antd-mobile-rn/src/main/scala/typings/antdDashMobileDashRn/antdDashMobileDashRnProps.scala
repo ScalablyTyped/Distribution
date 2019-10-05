@@ -197,8 +197,5 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def WingBlankProps: typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps.type = typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps
   type WingBlankProps = typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps
-  @scala.inline
-  def `index.nativeProps`: AntmSwitchProps.type = typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps
-  type `index.nativeProps` = AntmSwitchProps
 }
 

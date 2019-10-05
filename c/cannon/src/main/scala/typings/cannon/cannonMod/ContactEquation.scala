@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "ContactEquation")
 @js.native
 class ContactEquation protected ()
-  extends typings.cannon.CANNONNs.ContactEquation {
-  def this(bi: typings.cannon.CANNONNs.Body, bj: typings.cannon.CANNONNs.Body) = this()
+  extends typings.cannon.CANNON.ContactEquation {
+  def this(bi: typings.cannon.CANNON.Body, bj: typings.cannon.CANNON.Body) = this()
 }
 

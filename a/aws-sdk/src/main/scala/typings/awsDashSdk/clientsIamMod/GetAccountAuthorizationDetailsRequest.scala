@@ -21,15 +21,11 @@ trait GetAccountAuthorizationDetailsRequest extends js.Object {
 
 object GetAccountAuthorizationDetailsRequest {
   @scala.inline
-  def apply(
-    Filter: entityListType = null,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): GetAccountAuthorizationDetailsRequest = {
+  def apply(Filter: entityListType = null, Marker: markerType = null, MaxItems: Int | Double = null): GetAccountAuthorizationDetailsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountAuthorizationDetailsRequest]
   }
 }

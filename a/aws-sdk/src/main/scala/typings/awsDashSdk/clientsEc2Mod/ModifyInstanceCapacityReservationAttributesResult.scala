@@ -13,7 +13,7 @@ trait ModifyInstanceCapacityReservationAttributesResult extends js.Object {
 
 object ModifyInstanceCapacityReservationAttributesResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): ModifyInstanceCapacityReservationAttributesResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ModifyInstanceCapacityReservationAttributesResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[ModifyInstanceCapacityReservationAttributesResult]

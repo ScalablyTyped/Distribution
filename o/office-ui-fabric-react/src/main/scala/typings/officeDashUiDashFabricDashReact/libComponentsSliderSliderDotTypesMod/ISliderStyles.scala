@@ -55,20 +55,30 @@ trait ISliderStyles extends js.Object {
 object ISliderStyles {
   @scala.inline
   def apply(
-    activeSection: IStyle,
-    container: IStyle,
-    inactiveSection: IStyle,
-    line: IStyle,
-    lineContainer: IStyle,
-    root: IStyle,
-    slideBox: IStyle,
-    thumb: IStyle,
-    titleLabel: IStyle,
-    valueLabel: IStyle,
-    zeroTick: IStyle
+    activeSection: IStyle = null,
+    container: IStyle = null,
+    inactiveSection: IStyle = null,
+    line: IStyle = null,
+    lineContainer: IStyle = null,
+    root: IStyle = null,
+    slideBox: IStyle = null,
+    thumb: IStyle = null,
+    titleLabel: IStyle = null,
+    valueLabel: IStyle = null,
+    zeroTick: IStyle = null
   ): ISliderStyles = {
-    val __obj = js.Dynamic.literal(activeSection = activeSection.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], inactiveSection = inactiveSection.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineContainer = lineContainer.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slideBox = slideBox.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], titleLabel = titleLabel.asInstanceOf[js.Any], valueLabel = valueLabel.asInstanceOf[js.Any], zeroTick = zeroTick.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (activeSection != null) __obj.updateDynamic("activeSection")(activeSection.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (inactiveSection != null) __obj.updateDynamic("inactiveSection")(inactiveSection.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (lineContainer != null) __obj.updateDynamic("lineContainer")(lineContainer.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (slideBox != null) __obj.updateDynamic("slideBox")(slideBox.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (titleLabel != null) __obj.updateDynamic("titleLabel")(titleLabel.asInstanceOf[js.Any])
+    if (valueLabel != null) __obj.updateDynamic("valueLabel")(valueLabel.asInstanceOf[js.Any])
+    if (zeroTick != null) __obj.updateDynamic("zeroTick")(zeroTick.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderStyles]
   }
 }

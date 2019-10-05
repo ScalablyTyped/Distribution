@@ -2,7 +2,7 @@ package typings.peerjs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.peerjs.PeerJsNs.PeerJSOption
+import typings.peerjs.PeerJs.PeerJSOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Peer")
 @js.native
 class Peer protected ()
-  extends typings.peerjs.PeerJsNs.Peer {
+  extends typings.peerjs.PeerJs.Peer {
   /**
     * A peer can connect to other peers and listen for connections.
     * @param id Other peers can connect to this peer using the provided ID.
@@ -29,7 +29,7 @@ class Peer protected ()
 @JSGlobal("Peer")
 @js.native
 object Peer
-  extends Instantiable2[/* id */ String, /* options */ PeerJSOption, typings.peerjs.PeerJsNs.Peer]
+  extends Instantiable2[/* id */ String, /* options */ PeerJSOption, typings.peerjs.PeerJs.Peer]
      with /**
   * A peer can connect to other peers and listen for connections.
   * @param id Other peers can connect to this peer using the provided ID.
@@ -40,5 +40,5 @@ object Peer
   * A peer can connect to other peers and listen for connections.
   * @param options for specifying details about PeerServer
   */
-Instantiable1[(/* options */ PeerJSOption) | (/* id */ String), typings.peerjs.PeerJsNs.Peer]
+Instantiable1[(/* options */ PeerJSOption) | (/* id */ String), typings.peerjs.PeerJs.Peer]
 

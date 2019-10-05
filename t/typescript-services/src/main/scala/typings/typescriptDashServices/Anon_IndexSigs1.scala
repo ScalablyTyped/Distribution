@@ -1,6 +1,6 @@
 package typings.typescriptDashServices
 
-import typings.typescriptDashServices.TypeScriptNs.IndexSignatureInfo
+import typings.typescriptDashServices.TypeScript.IndexSignatureInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

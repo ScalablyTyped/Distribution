@@ -313,7 +313,7 @@ object TooltipOptions {
     padding: Int | Double = null,
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
-    positioner: TooltipPositionerCallbackFunction = null,
+    positioner: (/* labelWidth */ Double, /* labelHeight */ Double, /* point */ TooltipPositionerPointObject) => PositionObject = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: TooltipShapeValue = null,
     shared: js.UndefOr[Boolean] = js.undefined,
@@ -349,7 +349,7 @@ object TooltipOptions {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
     if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
-    if (positioner != null) __obj.updateDynamic("positioner")(positioner)
+    if (positioner != null) __obj.updateDynamic("positioner")(js.Any.fromFunction3(positioner))
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape)
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)

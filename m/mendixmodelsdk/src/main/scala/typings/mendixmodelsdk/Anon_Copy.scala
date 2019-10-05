@@ -2,7 +2,7 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distSdkInternalElementsMod.Element
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.Structure
-import typings.mendixmodelsdk.distSdkUtilsMod.utilsNs.IMap
+import typings.mendixmodelsdk.distSdkUtilsMod.utils.IMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

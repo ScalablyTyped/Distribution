@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMQuad")
 @js.native
 class DOMQuad ()
-  extends typings.geometryDashDom.GeometryDomNs.DOMQuad {
+  extends typings.geometryDashDom.GeometryDom.DOMQuad {
   def this(p1: DOMPointInit) = this()
   def this(rect: DOMRectInit) = this()
   def this(p1: DOMPointInit, p2: DOMPointInit) = this()
@@ -22,27 +22,27 @@ class DOMQuad ()
     * the associated bounding rectangle of the quadrilateral
     */
   /* CompleteClass */
-  override var bounds: typings.geometryDashDom.GeometryDomNs.DOMRectReadOnly = js.native
+  override var bounds: typings.geometryDashDom.GeometryDom.DOMRectReadOnly = js.native
   /**
     * a DOMPoint that represents p1 of the quadrilateral
     */
   /* CompleteClass */
-  override var p1: typings.geometryDashDom.GeometryDomNs.DOMPoint = js.native
+  override var p1: typings.geometryDashDom.GeometryDom.DOMPoint = js.native
   /**
     * a DOMPoint that represents p2 of the quadrilateral
     */
   /* CompleteClass */
-  override var p2: typings.geometryDashDom.GeometryDomNs.DOMPoint = js.native
+  override var p2: typings.geometryDashDom.GeometryDom.DOMPoint = js.native
   /**
     * a DOMPoint that represents p3 of the quadrilateral
     */
   /* CompleteClass */
-  override var p3: typings.geometryDashDom.GeometryDomNs.DOMPoint = js.native
+  override var p3: typings.geometryDashDom.GeometryDom.DOMPoint = js.native
   /**
     * a DOMPoint that represents p4 of the quadrilateral
     */
   /* CompleteClass */
-  override var p4: typings.geometryDashDom.GeometryDomNs.DOMPoint = js.native
+  override var p4: typings.geometryDashDom.GeometryDom.DOMPoint = js.native
 }
 
 @JSGlobal("DOMQuad")
@@ -51,24 +51,24 @@ object DOMQuad
   extends Instantiable2[
       /* p1 */ DOMPointInit, 
       /* p2 */ DOMPointInit, 
-      typings.geometryDashDom.GeometryDomNs.DOMQuad
+      typings.geometryDashDom.GeometryDom.DOMQuad
     ]
      with Instantiable3[
       /* p1 */ DOMPointInit, 
       /* p2 */ DOMPointInit, 
       /* p3 */ DOMPointInit, 
-      typings.geometryDashDom.GeometryDomNs.DOMQuad
+      typings.geometryDashDom.GeometryDom.DOMQuad
     ]
      with Instantiable4[
       /* p1 */ DOMPointInit, 
       /* p2 */ DOMPointInit, 
       /* p3 */ DOMPointInit, 
       /* p4 */ DOMPointInit, 
-      typings.geometryDashDom.GeometryDomNs.DOMQuad
+      typings.geometryDashDom.GeometryDom.DOMQuad
     ]
      with Instantiable1[
       (/* p1 */ DOMPointInit) | (/* rect */ DOMRectInit), 
-      typings.geometryDashDom.GeometryDomNs.DOMQuad
+      typings.geometryDashDom.GeometryDom.DOMQuad
     ]
-     with Instantiable0[typings.geometryDashDom.GeometryDomNs.DOMQuad]
+     with Instantiable0[typings.geometryDashDom.GeometryDom.DOMQuad]
 

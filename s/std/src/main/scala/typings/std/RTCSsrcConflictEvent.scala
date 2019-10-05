@@ -12,9 +12,5 @@ trait RTCSsrcConflictEvent extends Event {
 
 @JSGlobal("RTCSsrcConflictEvent")
 @js.native
-class RTCSsrcConflictEventCls () extends RTCSsrcConflictEvent
-
-@JSGlobal("RTCSsrcConflictEvent")
-@js.native
 object RTCSsrcConflictEvent extends Instantiable0[RTCSsrcConflictEvent]
 

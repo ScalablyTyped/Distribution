@@ -67,7 +67,7 @@ object InputHTMLAttributes {
     minLength: Int | Double = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onChange: ChangeEventHandler[T] = null,
+    onChange: ChangeEvent[T] => Unit = null,
     pattern: String = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -103,7 +103,7 @@ object InputHTMLAttributes {
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

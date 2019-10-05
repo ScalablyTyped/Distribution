@@ -24,7 +24,7 @@ object ResetCacheParameterGroupMessage {
   def apply(
     CacheParameterGroupName: String,
     ParameterNameValues: ParameterNameValueList = null,
-    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
+    ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): ResetCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName)
     if (ParameterNameValues != null) __obj.updateDynamic("ParameterNameValues")(ParameterNameValues)

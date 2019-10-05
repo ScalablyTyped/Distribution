@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "yarnpkg__lockfile"
-version := "1.1-dt-20190823Z-9a11f9"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20190823Z-01ea0d"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

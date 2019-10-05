@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object validator {
-  import typings.validator.ValidatorJSNs.IsFQDNOptions
-  import typings.validator.ValidatorJSNs.IsURLOptions
-  import typings.validator.ValidatorJSNs.NormalizeEmailOptions
-  import typings.validator.ValidatorJSNs.ValidatorStatic
+  import typings.validator.ValidatorJS.IsFQDNOptions
+  import typings.validator.ValidatorJS.IsURLOptions
+  import typings.validator.ValidatorJS.NormalizeEmailOptions
+  import typings.validator.ValidatorJS.ValidatorStatic
 
   type IEmailoptions = NormalizeEmailOptions
   type IFQDNoptions = IsFQDNOptions

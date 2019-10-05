@@ -1,11 +1,11 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.cookiesNs.Cookie
-import typings.chrome.chromeNs.cookiesNs.CookieChangedEvent
-import typings.chrome.chromeNs.cookiesNs.CookieStore
-import typings.chrome.chromeNs.cookiesNs.Details
-import typings.chrome.chromeNs.cookiesNs.GetAllDetails
-import typings.chrome.chromeNs.cookiesNs.SetDetails
+import typings.chrome.chrome.cookies.Cookie
+import typings.chrome.chrome.cookies.CookieChangedEvent
+import typings.chrome.chrome.cookies.CookieStore
+import typings.chrome.chrome.cookies.Details
+import typings.chrome.chrome.cookies.GetAllDetails
+import typings.chrome.chrome.cookies.SetDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

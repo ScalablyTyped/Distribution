@@ -1,7 +1,7 @@
 package typings.sockjs.sockjsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.sockjs.Anon_Address
 import typings.sockjs.sockjsStrings.close
 import typings.sockjs.sockjsStrings.data

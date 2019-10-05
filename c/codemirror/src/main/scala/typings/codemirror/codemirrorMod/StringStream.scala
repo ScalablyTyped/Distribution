@@ -1,5 +1,6 @@
 package typings.codemirror.codemirrorMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -103,7 +104,5 @@ trait StringStream extends js.Object {
 
 @JSImport("codemirror", "StringStream")
 @js.native
-class StringStreamCls protected () extends StringStream {
-  def this(text: String) = this()
-}
+object StringStream extends TopLevel[StringStreamConstructor]
 

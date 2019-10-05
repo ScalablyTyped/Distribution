@@ -1,6 +1,6 @@
 package typings.typeDashCheck
 
-import typings.typeDashCheck.TypeCheckNs.TC
+import typings.typeDashCheck.TypeCheck.TC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

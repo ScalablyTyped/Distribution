@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Base")
 @js.native
 class Base ()
-  extends typings.paper.paperNs.Base
+  extends typings.paper.paper.Base
 
 /* static members */
 @JSImport("paper", "Base")
@@ -47,7 +47,7 @@ object Base extends js.Object {
     */
   def importJSON(json: js.Object): js.Any = js.native
   def importJSON(json: js.Object, target: js.Any): js.Any = js.native
-  def importJSON[T /* <: typings.paper.paperNs.Base */](json: T): T = js.native
-  def importJSON[T /* <: typings.paper.paperNs.Base */](json: T, target: T): T = js.native
+  def importJSON[T /* <: typings.paper.paper.Base */](json: T): T = js.native
+  def importJSON[T /* <: typings.paper.paper.Base */](json: T, target: T): T = js.native
 }
 

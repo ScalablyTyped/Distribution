@@ -255,13 +255,17 @@ object multipipeMod extends js.Object {
     options: DuplexOptions,
     callback: js.Function1[/* err */ js.UndefOr[Error], _]
   ): Duplex = js.native
-  def apply(stream: js.Array[Stream] | Duplex): Duplex = js.native
-  def apply(stream: Duplex | js.Array[Stream], callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
-  def apply(stream: Duplex | js.Array[Stream], options: DuplexOptions): Duplex = js.native
+  def apply(stream: js.Array[Stream]): Duplex = js.native
+  def apply(stream: js.Array[Stream], callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
+  def apply(stream: js.Array[Stream], options: DuplexOptions): Duplex = js.native
   def apply(
-    stream: Duplex | js.Array[Stream],
+    stream: js.Array[Stream],
     options: DuplexOptions,
     callback: js.Function1[/* err */ js.UndefOr[Error], _]
   ): Duplex = js.native
+  def apply(stream: Duplex): Duplex = js.native
+  def apply(stream: Duplex, callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
+  def apply(stream: Duplex, options: DuplexOptions): Duplex = js.native
+  def apply(stream: Duplex, options: DuplexOptions, callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
 }
 

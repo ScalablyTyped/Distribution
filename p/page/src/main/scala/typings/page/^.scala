@@ -1,6 +1,6 @@
 package typings.page
 
-import typings.page.PageJSNs.Static
+import typings.page.PageJS.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

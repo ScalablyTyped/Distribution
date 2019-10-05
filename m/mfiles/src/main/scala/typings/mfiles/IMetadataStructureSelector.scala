@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFMetadataStructureItem
-import typings.mfiles.MFilesNs.MFMetadataStructureSelectorFlags
+import typings.mfiles.MFiles.MFMetadataStructureItem
+import typings.mfiles.MFiles.MFMetadataStructureSelectorFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

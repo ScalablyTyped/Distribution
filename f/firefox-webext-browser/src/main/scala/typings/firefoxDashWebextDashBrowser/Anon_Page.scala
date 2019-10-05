@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.ExtensionURL
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.PersistentBackgroundProperty
+import typings.firefoxDashWebextDashBrowser.browser._manifest.ExtensionURL
+import typings.firefoxDashWebextDashBrowser.browser._manifest.PersistentBackgroundProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Anon_Page extends js.Object {
 
 object Anon_Page {
   @scala.inline
-  def apply(page: ExtensionURL, persistent: js.UndefOr[PersistentBackgroundProperty] = js.undefined): Anon_Page = {
+  def apply(page: ExtensionURL, persistent: js.UndefOr[Boolean] = js.undefined): Anon_Page = {
     val __obj = js.Dynamic.literal(page = page)
     if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
     __obj.asInstanceOf[Anon_Page]

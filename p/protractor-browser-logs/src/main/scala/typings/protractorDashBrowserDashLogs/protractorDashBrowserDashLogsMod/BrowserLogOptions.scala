@@ -1,6 +1,6 @@
 package typings.protractorDashBrowserDashLogs.protractorDashBrowserDashLogsMod
 
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.loggingNs.Entry
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Entry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

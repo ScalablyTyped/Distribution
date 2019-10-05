@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsActivityItemActivit
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaSharedProps
 import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -98,10 +99,10 @@ object IActivityItemProps {
     commentText: String = null,
     comments: js.Array[ReactNode] | ReactNode = null,
     isCompact: js.UndefOr[Boolean] = js.undefined,
-    onRenderActivityDescription: IRenderFunction[IActivityItemProps] = null,
-    onRenderComments: IRenderFunction[IActivityItemProps] = null,
-    onRenderIcon: IRenderFunction[IActivityItemProps] = null,
-    onRenderTimeStamp: IRenderFunction[IActivityItemProps] = null,
+    onRenderActivityDescription: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null = null,
+    onRenderComments: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null = null,
+    onRenderIcon: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null = null,
+    onRenderTimeStamp: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null = null,
     styles: IActivityItemStyles = null,
     timeStamp: String | js.Array[ReactNode] | ReactNode = null
   ): IActivityItemProps = {
@@ -117,10 +118,10 @@ object IActivityItemProps {
     if (commentText != null) __obj.updateDynamic("commentText")(commentText)
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (!js.isUndefined(isCompact)) __obj.updateDynamic("isCompact")(isCompact)
-    if (onRenderActivityDescription != null) __obj.updateDynamic("onRenderActivityDescription")(onRenderActivityDescription)
-    if (onRenderComments != null) __obj.updateDynamic("onRenderComments")(onRenderComments)
-    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(onRenderIcon)
-    if (onRenderTimeStamp != null) __obj.updateDynamic("onRenderTimeStamp")(onRenderTimeStamp)
+    if (onRenderActivityDescription != null) __obj.updateDynamic("onRenderActivityDescription")(js.Any.fromFunction2(onRenderActivityDescription))
+    if (onRenderComments != null) __obj.updateDynamic("onRenderComments")(js.Any.fromFunction2(onRenderComments))
+    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(js.Any.fromFunction2(onRenderIcon))
+    if (onRenderTimeStamp != null) __obj.updateDynamic("onRenderTimeStamp")(js.Any.fromFunction2(onRenderTimeStamp))
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActivityItemProps]

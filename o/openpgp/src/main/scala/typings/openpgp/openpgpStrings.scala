@@ -1,6 +1,6 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpMod.enumsNs.curve
+import typings.openpgp.openpgpMod.enums.curve
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

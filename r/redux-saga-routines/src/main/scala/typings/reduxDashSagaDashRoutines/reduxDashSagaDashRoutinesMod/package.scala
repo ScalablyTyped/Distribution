@@ -29,10 +29,10 @@ package object reduxDashSagaDashRoutinesMod {
   type ResolveFunctionArg4Type[TFunction] = js.UndefOr[scala.Nothing]
   type ResolveFunctionReturnType[TFunction] = js.UndefOr[scala.Nothing]
   type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator with typings.reduxDashSagaDashRoutines.reduxDashSagaDashRoutinesStrings.Routine with js.Any with (Anon_Failure[
-    TFulfillActionCreator, 
     TFailureActionCreator, 
-    TRequestActionCreator, 
     TTriggerActionCreator, 
+    TFulfillActionCreator, 
+    TRequestActionCreator, 
     TSuccessActionCreator
   ])
   type UnifiedRoutine[TActionCreator] = Routine[TActionCreator, TActionCreator, TActionCreator, TActionCreator, TActionCreator]

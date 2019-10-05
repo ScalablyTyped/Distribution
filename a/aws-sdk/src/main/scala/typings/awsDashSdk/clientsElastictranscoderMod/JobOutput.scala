@@ -98,12 +98,12 @@ object JobOutput {
     AppliedColorSpaceConversion: String = null,
     Captions: Captions = null,
     Composition: Composition = null,
-    Duration: js.UndefOr[NullableLong] = js.undefined,
-    DurationMillis: js.UndefOr[NullableLong] = js.undefined,
+    Duration: Int | Double = null,
+    DurationMillis: Int | Double = null,
     Encryption: Encryption = null,
-    FileSize: js.UndefOr[NullableLong] = js.undefined,
+    FileSize: Int | Double = null,
     FrameRate: FloatString = null,
-    Height: js.UndefOr[NullableInteger] = js.undefined,
+    Height: Int | Double = null,
     Id: String = null,
     Key: Key = null,
     PresetId: Id = null,
@@ -114,19 +114,19 @@ object JobOutput {
     ThumbnailEncryption: Encryption = null,
     ThumbnailPattern: ThumbnailPattern = null,
     Watermarks: JobWatermarks = null,
-    Width: js.UndefOr[NullableInteger] = js.undefined
+    Width: Int | Double = null
   ): JobOutput = {
     val __obj = js.Dynamic.literal()
     if (AlbumArt != null) __obj.updateDynamic("AlbumArt")(AlbumArt)
     if (AppliedColorSpaceConversion != null) __obj.updateDynamic("AppliedColorSpaceConversion")(AppliedColorSpaceConversion)
     if (Captions != null) __obj.updateDynamic("Captions")(Captions)
     if (Composition != null) __obj.updateDynamic("Composition")(Composition)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(DurationMillis)) __obj.updateDynamic("DurationMillis")(DurationMillis)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (DurationMillis != null) __obj.updateDynamic("DurationMillis")(DurationMillis.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(FileSize)) __obj.updateDynamic("FileSize")(FileSize)
+    if (FileSize != null) __obj.updateDynamic("FileSize")(FileSize.asInstanceOf[js.Any])
     if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate)
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Key != null) __obj.updateDynamic("Key")(Key)
     if (PresetId != null) __obj.updateDynamic("PresetId")(PresetId)
@@ -137,7 +137,7 @@ object JobOutput {
     if (ThumbnailEncryption != null) __obj.updateDynamic("ThumbnailEncryption")(ThumbnailEncryption)
     if (ThumbnailPattern != null) __obj.updateDynamic("ThumbnailPattern")(ThumbnailPattern)
     if (Watermarks != null) __obj.updateDynamic("Watermarks")(Watermarks)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobOutput]
   }
 }

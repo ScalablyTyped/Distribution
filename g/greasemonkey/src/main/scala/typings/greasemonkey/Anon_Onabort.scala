@@ -1,7 +1,7 @@
 package typings.greasemonkey
 
-import typings.greasemonkey.GMNs.ProgressResponse
-import typings.greasemonkey.GMNs.Response
+import typings.greasemonkey.GM.ProgressResponse
+import typings.greasemonkey.GM.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

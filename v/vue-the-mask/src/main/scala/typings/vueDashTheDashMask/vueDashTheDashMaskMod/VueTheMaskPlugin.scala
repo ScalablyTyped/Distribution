@@ -28,3 +28,9 @@ trait VueTheMaskPlugin
   def mask(el: HTMLElement, binding: DirectiveBinding, vnode: VNode, oldVnode: VNode): Unit = js.native
 }
 
+@JSImport("vue-the-mask", "VueTheMaskPlugin")
+@js.native
+object VueTheMaskPlugin extends js.Object {
+  type VueStatic = js.Function0[Unit]
+}
+

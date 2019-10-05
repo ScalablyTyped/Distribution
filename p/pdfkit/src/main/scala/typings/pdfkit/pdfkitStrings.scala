@@ -1,6 +1,6 @@
 package typings.pdfkit
 
-import typings.pdfkit.PDFKitNs.MixinsNs.RuleValue
+import typings.pdfkit.PDFKit.Mixins.RuleValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

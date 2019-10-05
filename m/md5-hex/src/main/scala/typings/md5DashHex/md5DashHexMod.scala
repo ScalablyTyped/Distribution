@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("md5-hex", JSImport.Namespace)
 @js.native
 object md5DashHexMod extends js.Object {
+  def apply(data: String): String = js.native
+  def apply(data: js.Array[Buffer | String]): String = js.native
   /**
   Create a MD5 hash with hex encoding.
   @param data - Prefer buffers as they're faster to hash, but strings can be useful for small things.
@@ -21,6 +23,6 @@ object md5DashHexMod extends js.Object {
   //=> '1abcb33beeb811dca15f0ac3e47b88d9'
   ```
   */
-  def apply(data: Buffer | String | (js.Array[Buffer | String])): String = js.native
+  def apply(data: Buffer): String = js.native
 }
 

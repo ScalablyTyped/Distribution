@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "phosphor__properties"
-version := "1.1.3-224555"
-scalaVersion := "2.12.9"
+version := "1.1.3-0533dd"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

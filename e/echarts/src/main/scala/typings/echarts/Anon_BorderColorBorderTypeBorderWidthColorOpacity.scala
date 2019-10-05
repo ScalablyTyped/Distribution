@@ -1,17 +1,23 @@
 package typings.echarts
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
+trait Anon_BorderColorBorderTypeBorderWidthColorOpacity
+  extends /**
+  * Some properties like "normal" or "emphasis" are not documented.
+  * Please, write description for them
+  */
+/* unknownProperty */ StringDictionary[js.Any] {
   /**
     * border color, whose format is similar to that of `color`.
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -21,14 +27,14 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderType
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.borderType
     */
   var borderType: js.UndefOr[String] = js.undefined
   /**
     * border width. No border when it is set to be 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -44,7 +50,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
     * Gradient color and texture are also supported besides single
     * colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.itemStyle)
+    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.itemStyle)
     *
     * Supports callback functions, in the form of:
     *
@@ -57,7 +63,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
     * `value`, and etc. of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.color
     */
   var color: js.UndefOr[String | js.Function] = js.undefined
   /**
@@ -66,7 +72,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
     * drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.opacity
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -76,31 +82,31 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.itemStyle)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }
@@ -108,6 +114,11 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacity extends js.Object {
 object Anon_BorderColorBorderTypeBorderWidthColorOpacity {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * Some properties like "normal" or "emphasis" are not documented.
+    * Please, write description for them
+    */
+  /* unknownProperty */ StringDictionary[js.Any] = null,
     borderColor: String = null,
     borderType: String = null,
     borderWidth: Int | Double = null,
@@ -119,6 +130,7 @@ object Anon_BorderColorBorderTypeBorderWidthColorOpacity {
     shadowOffsetY: Int | Double = null
   ): Anon_BorderColorBorderTypeBorderWidthColorOpacity = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (borderType != null) __obj.updateDynamic("borderType")(borderType)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])

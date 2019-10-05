@@ -28,7 +28,7 @@ object TemplateParameter {
   def apply(
     DefaultValue: ParameterValue = null,
     Description: Description = null,
-    NoEcho: js.UndefOr[NoEcho] = js.undefined,
+    NoEcho: js.UndefOr[Boolean] = js.undefined,
     ParameterKey: ParameterKey = null
   ): TemplateParameter = {
     val __obj = js.Dynamic.literal()

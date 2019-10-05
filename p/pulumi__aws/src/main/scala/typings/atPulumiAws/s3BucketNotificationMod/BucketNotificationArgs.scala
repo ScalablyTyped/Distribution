@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3BucketNotificationMod
 
-import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationLambdaFunction
-import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationQueue
-import typings.atPulumiAws.typesInputMod.s3Ns.BucketNotificationTopic
+import typings.atPulumiAws.typesInputMod.s3.BucketNotificationLambdaFunction
+import typings.atPulumiAws.typesInputMod.s3.BucketNotificationQueue
+import typings.atPulumiAws.typesInputMod.s3.BucketNotificationTopic
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

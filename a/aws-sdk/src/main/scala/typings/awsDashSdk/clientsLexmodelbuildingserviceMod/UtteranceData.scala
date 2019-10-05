@@ -30,15 +30,15 @@ trait UtteranceData extends js.Object {
 object UtteranceData {
   @scala.inline
   def apply(
-    count: js.UndefOr[Count] = js.undefined,
-    distinctUsers: js.UndefOr[Count] = js.undefined,
+    count: Int | Double = null,
+    distinctUsers: Int | Double = null,
     firstUtteredDate: Timestamp = null,
     lastUtteredDate: Timestamp = null,
     utteranceString: UtteranceString = null
   ): UtteranceData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
-    if (!js.isUndefined(distinctUsers)) __obj.updateDynamic("distinctUsers")(distinctUsers)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (distinctUsers != null) __obj.updateDynamic("distinctUsers")(distinctUsers.asInstanceOf[js.Any])
     if (firstUtteredDate != null) __obj.updateDynamic("firstUtteredDate")(firstUtteredDate)
     if (lastUtteredDate != null) __obj.updateDynamic("lastUtteredDate")(lastUtteredDate)
     if (utteranceString != null) __obj.updateDynamic("utteranceString")(utteranceString)

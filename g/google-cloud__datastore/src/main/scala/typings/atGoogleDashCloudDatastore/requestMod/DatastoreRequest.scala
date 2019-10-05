@@ -6,7 +6,7 @@ import typings.atGoogleDashCloudDatastore.queryMod.Query
 import typings.atGoogleDashCloudDatastore.queryMod.QueryCallback
 import typings.atGoogleDashCloudDatastore.queryMod.QueryOptions
 import typings.atGoogleDashCloudDatastore.queryMod.QueryResult
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

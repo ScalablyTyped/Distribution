@@ -1,5 +1,6 @@
 package typings.n3.n3Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.eventsMod.EventEmitter
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js
@@ -25,4 +26,8 @@ class StreamWriter[Q /* <: typings.rdfDashJs.rdfDashJsMod.BaseQuad */] () extend
   /* CompleteClass */
   override def `import`(stream: Stream[Q]): EventEmitter = js.native
 }
+
+@JSImport("n3", "StreamWriter")
+@js.native
+object StreamWriter extends TopLevel[StreamWriterConstructor]
 

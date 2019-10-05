@@ -60,7 +60,7 @@ object ImportInstanceLaunchSpecification {
     GroupNames: SecurityGroupStringList = null,
     InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
     InstanceType: InstanceType = null,
-    Monitoring: js.UndefOr[Boolean] = js.undefined,
+    Monitoring: js.UndefOr[scala.Boolean] = js.undefined,
     Placement: Placement = null,
     PrivateIpAddress: String = null,
     SubnetId: String = null,

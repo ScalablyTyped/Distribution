@@ -38,3 +38,16 @@ object ObjectTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "objectTypeAnnotation")
+@js.native
+object objectTypeAnnotation extends js.Object {
+  def apply(): ObjectTypeAnnotation = js.native
+  def apply(properties: js.Array[ObjectTypeProperty]): ObjectTypeAnnotation = js.native
+  def apply(properties: js.Array[ObjectTypeProperty], indexers: js.Array[ObjectTypeIndexer]): ObjectTypeAnnotation = js.native
+  def apply(
+    properties: js.Array[ObjectTypeProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty]
+  ): ObjectTypeAnnotation = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.dropboxDashChooser
 
-import typings.dropboxDashChooser.DropboxNs.ChooserFileBoundingBox
+import typings.dropboxDashChooser.Dropbox.ChooserFileBoundingBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

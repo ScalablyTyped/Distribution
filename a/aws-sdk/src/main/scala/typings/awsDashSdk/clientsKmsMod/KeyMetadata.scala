@@ -78,7 +78,7 @@ object KeyMetadata {
     CustomKeyStoreId: CustomKeyStoreIdType = null,
     DeletionDate: DateType = null,
     Description: DescriptionType = null,
-    Enabled: js.UndefOr[BooleanType] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     ExpirationModel: ExpirationModelType = null,
     KeyManager: KeyManagerType = null,
     KeyState: KeyState = null,

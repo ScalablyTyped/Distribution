@@ -30,17 +30,17 @@ trait AutoScalingSettingsUpdate extends js.Object {
 object AutoScalingSettingsUpdate {
   @scala.inline
   def apply(
-    AutoScalingDisabled: js.UndefOr[BooleanObject] = js.undefined,
+    AutoScalingDisabled: js.UndefOr[Boolean] = js.undefined,
     AutoScalingRoleArn: AutoScalingRoleArn = null,
-    MaximumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
-    MinimumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    MaximumUnits: Int | scala.Double = null,
+    MinimumUnits: Int | scala.Double = null,
     ScalingPolicyUpdate: AutoScalingPolicyUpdate = null
   ): AutoScalingSettingsUpdate = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoScalingDisabled)) __obj.updateDynamic("AutoScalingDisabled")(AutoScalingDisabled)
     if (AutoScalingRoleArn != null) __obj.updateDynamic("AutoScalingRoleArn")(AutoScalingRoleArn)
-    if (!js.isUndefined(MaximumUnits)) __obj.updateDynamic("MaximumUnits")(MaximumUnits)
-    if (!js.isUndefined(MinimumUnits)) __obj.updateDynamic("MinimumUnits")(MinimumUnits)
+    if (MaximumUnits != null) __obj.updateDynamic("MaximumUnits")(MaximumUnits.asInstanceOf[js.Any])
+    if (MinimumUnits != null) __obj.updateDynamic("MinimumUnits")(MinimumUnits.asInstanceOf[js.Any])
     if (ScalingPolicyUpdate != null) __obj.updateDynamic("ScalingPolicyUpdate")(ScalingPolicyUpdate)
     __obj.asInstanceOf[AutoScalingSettingsUpdate]
   }

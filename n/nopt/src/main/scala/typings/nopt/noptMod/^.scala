@@ -12,7 +12,5 @@ object ^ extends js.Object {
   def apply(types: FlagTypeMap, shorthands: ShortFlags): OptionsParsed = js.native
   def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String]): OptionsParsed = js.native
   def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String], slice: Double): OptionsParsed = js.native
-  def clean(data: CommandData, types: FlagTypeMap): String = js.native
-  def clean(data: CommandData, types: FlagTypeMap, typeDefs: TypeDefs): String = js.native
 }
 

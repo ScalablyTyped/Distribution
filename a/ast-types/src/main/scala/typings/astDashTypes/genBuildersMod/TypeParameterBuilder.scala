@@ -5,7 +5,7 @@ import typings.astDashTypes.astDashTypesStrings.minus
 import typings.astDashTypes.astDashTypesStrings.plus
 import typings.astDashTypes.genKindsMod.TypeAnnotationKind
 import typings.astDashTypes.genKindsMod.VarianceKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TypeParameter
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TypeParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetNatGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetNatGatewayFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetNatGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

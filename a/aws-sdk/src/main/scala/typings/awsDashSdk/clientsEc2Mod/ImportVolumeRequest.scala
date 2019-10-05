@@ -34,7 +34,7 @@ object ImportVolumeRequest {
     Image: DiskImageDetail,
     Volume: VolumeDetail,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ImportVolumeRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone, Image = Image, Volume = Volume)
     if (Description != null) __obj.updateDynamic("Description")(Description)

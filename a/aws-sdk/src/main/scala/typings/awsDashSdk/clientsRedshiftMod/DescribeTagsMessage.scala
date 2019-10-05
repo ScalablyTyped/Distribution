@@ -35,7 +35,7 @@ object DescribeTagsMessage {
   @scala.inline
   def apply(
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     ResourceName: String = null,
     ResourceType: String = null,
     TagKeys: TagKeyList = null,
@@ -43,7 +43,7 @@ object DescribeTagsMessage {
   ): DescribeTagsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName)
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
     if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys)

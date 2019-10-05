@@ -17,9 +17,9 @@ trait Bucket extends js.Object {
 
 object Bucket {
   @scala.inline
-  def apply(count: js.UndefOr[Long] = js.undefined, value: String = null): Bucket = {
+  def apply(count: Int | scala.Double = null, value: String = null): Bucket = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Bucket]
   }

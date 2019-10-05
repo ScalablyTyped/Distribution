@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "route-parser"
-version := "0.1-dt-20190717Z-57db99"
-scalaVersion := "2.12.9"
+version := "0.1-dt-20190717Z-a9ba47"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

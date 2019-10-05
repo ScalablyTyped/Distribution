@@ -27,7 +27,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.x
 import typings.atOracleOraclejet.atOracleOraclejetStrings.y
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojdiagramMod.ojDiagramNs.RendererContext
+import typings.atOracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentSettableProperties
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
 import scala.scalajs.js

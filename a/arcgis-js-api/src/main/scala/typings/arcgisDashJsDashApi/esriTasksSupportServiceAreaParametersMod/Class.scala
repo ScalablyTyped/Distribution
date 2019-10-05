@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportServiceAreaParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServiceAreaParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServiceAreaParametersProperties
+import typings.arcgisDashJsDashApi.__esri.ServiceAreaParameters
+import typings.arcgisDashJsDashApi.__esri.ServiceAreaParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

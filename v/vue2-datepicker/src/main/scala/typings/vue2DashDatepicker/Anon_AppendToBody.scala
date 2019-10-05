@@ -1,11 +1,11 @@
 package typings.vue2DashDatepicker
 
 import typings.std.Date
-import typings.vue2DashDatepicker.vue2DashDatepickerMod.DatepickerNs.Lang
-import typings.vue2DashDatepicker.vue2DashDatepickerMod.DatepickerNs.Shortcuts
-import typings.vue2DashDatepicker.vue2DashDatepickerMod.DatepickerNs.TimePickerOptions
-import typings.vue2DashDatepicker.vue2DashDatepickerMod.DatepickerNs.TimeSelectOptions
-import typings.vue2DashDatepicker.vue2DashDatepickerMod.DatepickerNs.ValueType
+import typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker.Lang
+import typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker.Shortcuts
+import typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker.TimePickerOptions
+import typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker.TimeSelectOptions
+import typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

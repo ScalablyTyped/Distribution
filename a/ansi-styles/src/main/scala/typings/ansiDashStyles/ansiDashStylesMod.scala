@@ -1,10 +1,10 @@
 package typings.ansiDashStyles
 
-import typings.ansiDashStyles.escapeDashCodeMod.EscapeCodeNs.BackgroundColor
-import typings.ansiDashStyles.escapeDashCodeMod.EscapeCodeNs.CodePair
-import typings.ansiDashStyles.escapeDashCodeMod.EscapeCodeNs.Color
-import typings.ansiDashStyles.escapeDashCodeMod.EscapeCodeNs.ColorType
-import typings.ansiDashStyles.escapeDashCodeMod.EscapeCodeNs.Modifier
+import typings.ansiDashStyles.escapeDashCodeMod.EscapeCode.BackgroundColor
+import typings.ansiDashStyles.escapeDashCodeMod.EscapeCode.CodePair
+import typings.ansiDashStyles.escapeDashCodeMod.EscapeCode.Color
+import typings.ansiDashStyles.escapeDashCodeMod.EscapeCode.ColorType
+import typings.ansiDashStyles.escapeDashCodeMod.EscapeCode.Modifier
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

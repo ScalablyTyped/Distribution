@@ -21,15 +21,11 @@ trait CreateCollectionResponse extends js.Object {
 
 object CreateCollectionResponse {
   @scala.inline
-  def apply(
-    CollectionArn: String = null,
-    FaceModelVersion: String = null,
-    StatusCode: js.UndefOr[UInteger] = js.undefined
-  ): CreateCollectionResponse = {
+  def apply(CollectionArn: String = null, FaceModelVersion: String = null, StatusCode: Int | Double = null): CreateCollectionResponse = {
     val __obj = js.Dynamic.literal()
     if (CollectionArn != null) __obj.updateDynamic("CollectionArn")(CollectionArn)
     if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion)
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionResponse]
   }
 }

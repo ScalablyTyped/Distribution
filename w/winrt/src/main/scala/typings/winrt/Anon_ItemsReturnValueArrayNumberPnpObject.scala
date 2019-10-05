@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObject
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

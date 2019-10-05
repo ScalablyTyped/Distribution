@@ -1,6 +1,6 @@
 package typings.greasemonkey
 
-import typings.greasemonkey.GMNs.ScriptInfo
+import typings.greasemonkey.GM.ScriptInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -38,7 +38,7 @@ object TypedLinkAttributeDefinition {
     RequiredBehavior: RequiredAttributeBehavior,
     Type: FacetAttributeType,
     DefaultValue: TypedAttributeValue = null,
-    IsImmutable: js.UndefOr[Bool] = js.undefined,
+    IsImmutable: js.UndefOr[Boolean] = js.undefined,
     Rules: RuleMap = null
   ): TypedLinkAttributeDefinition = {
     val __obj = js.Dynamic.literal(Name = Name, RequiredBehavior = RequiredBehavior.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])

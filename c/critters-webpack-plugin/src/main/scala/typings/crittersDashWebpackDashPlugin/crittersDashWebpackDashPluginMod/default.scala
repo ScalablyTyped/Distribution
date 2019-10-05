@@ -1,6 +1,6 @@
 package typings.crittersDashWebpackDashPlugin.crittersDashWebpackDashPluginMod
 
-import typings.crittersDashWebpackDashPlugin.crittersDashWebpackDashPluginMod.CrittersNs.CrittersOptions
+import typings.crittersDashWebpackDashPlugin.crittersDashWebpackDashPluginMod.Critters.CrittersOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

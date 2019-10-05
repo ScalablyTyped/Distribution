@@ -1,6 +1,6 @@
 package typings.reactDashWidgets.libDateTimePickerMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.LegacyRef

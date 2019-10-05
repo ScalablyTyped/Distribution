@@ -81,11 +81,11 @@ object InputTemplate {
     DeblockFilter: InputDeblockFilter = null,
     DenoiseFilter: InputDenoiseFilter = null,
     FilterEnable: InputFilterEnable = null,
-    FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined,
+    FilterStrength: Int | Double = null,
     ImageInserter: ImageInserter = null,
     InputClippings: __listOfInputClipping = null,
     Position: Rectangle = null,
-    ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    ProgramNumber: Int | Double = null,
     PsiControl: InputPsiControl = null,
     TimecodeSource: InputTimecodeSource = null,
     TimecodeStart: __stringMin11Max11Pattern01D20305D205D = null,
@@ -99,11 +99,11 @@ object InputTemplate {
     if (DeblockFilter != null) __obj.updateDynamic("DeblockFilter")(DeblockFilter.asInstanceOf[js.Any])
     if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
     if (FilterEnable != null) __obj.updateDynamic("FilterEnable")(FilterEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength)
+    if (FilterStrength != null) __obj.updateDynamic("FilterStrength")(FilterStrength.asInstanceOf[js.Any])
     if (ImageInserter != null) __obj.updateDynamic("ImageInserter")(ImageInserter)
     if (InputClippings != null) __obj.updateDynamic("InputClippings")(InputClippings)
     if (Position != null) __obj.updateDynamic("Position")(Position)
-    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber)
+    if (ProgramNumber != null) __obj.updateDynamic("ProgramNumber")(ProgramNumber.asInstanceOf[js.Any])
     if (PsiControl != null) __obj.updateDynamic("PsiControl")(PsiControl.asInstanceOf[js.Any])
     if (TimecodeSource != null) __obj.updateDynamic("TimecodeSource")(TimecodeSource.asInstanceOf[js.Any])
     if (TimecodeStart != null) __obj.updateDynamic("TimecodeStart")(TimecodeStart)

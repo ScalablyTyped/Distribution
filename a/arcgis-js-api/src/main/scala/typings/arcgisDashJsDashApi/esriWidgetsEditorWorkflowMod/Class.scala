@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsEditorWorkflowMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Workflow
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WorkflowProperties
+import typings.arcgisDashJsDashApi.__esri.Workflow
+import typings.arcgisDashJsDashApi.__esri.WorkflowProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

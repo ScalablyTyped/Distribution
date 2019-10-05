@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object webdriverio {
   import typings.std.Omit
   import typings.std.Pick
-  import typings.webdriverio.WebdriverIOAsyncNs.Element
+  import typings.webdriverio.WebdriverIOAsync.Element
   import typings.webdriverio.webdriverioStrings.DOLLAR
   import typings.webdriverio.webdriverioStrings.DOLLARDOLLAR
   import typings.webdriverio.webdriverioStrings.ELEMENT

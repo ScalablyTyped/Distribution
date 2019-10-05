@@ -24,7 +24,7 @@ object GetConnectionRequest {
   def apply(
     Name: NameString,
     CatalogId: CatalogIdString = null,
-    HidePassword: js.UndefOr[Boolean] = js.undefined
+    HidePassword: js.UndefOr[scala.Boolean] = js.undefined
   ): GetConnectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)

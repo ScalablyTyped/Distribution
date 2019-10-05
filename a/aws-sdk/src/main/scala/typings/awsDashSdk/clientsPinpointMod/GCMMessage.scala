@@ -88,11 +88,11 @@ object GCMMessage {
     Priority: __string = null,
     RawContent: __string = null,
     RestrictedPackageName: __string = null,
-    SilentPush: js.UndefOr[__boolean] = js.undefined,
+    SilentPush: js.UndefOr[Boolean] = js.undefined,
     SmallImageIconUrl: __string = null,
     Sound: __string = null,
     Substitutions: MapOfListOf__string = null,
-    TimeToLive: js.UndefOr[__integer] = js.undefined,
+    TimeToLive: Int | Double = null,
     Title: __string = null,
     Url: __string = null
   ): GCMMessage = {
@@ -111,7 +111,7 @@ object GCMMessage {
     if (SmallImageIconUrl != null) __obj.updateDynamic("SmallImageIconUrl")(SmallImageIconUrl)
     if (Sound != null) __obj.updateDynamic("Sound")(Sound)
     if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions)
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive)
+    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title)
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[GCMMessage]

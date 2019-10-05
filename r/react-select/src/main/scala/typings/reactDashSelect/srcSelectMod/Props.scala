@@ -1,19 +1,19 @@
 package typings.reactDashSelect.srcSelectMod
 
 import typings.react.Event
+import typings.react.reactMod.FocusEvent
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashSelect.Anon_Count
 import typings.reactDashSelect.Anon_InputValue
-import typings.reactDashSelect.srcBuiltinsMod.formatGroupLabel
-import typings.reactDashSelect.srcBuiltinsMod.getOptionLabel
-import typings.reactDashSelect.srcBuiltinsMod.getOptionValue
 import typings.reactDashSelect.srcComponentsMod.SelectComponentsConfig
 import typings.reactDashSelect.srcFiltersMod.Option
 import typings.reactDashSelect.srcStylesMod.StylesConfig
 import typings.reactDashSelect.srcThemeMod.ThemeConfig
 import typings.reactDashSelect.srcTypesMod.ActionMeta
 import typings.reactDashSelect.srcTypesMod.FocusEventHandler
+import typings.reactDashSelect.srcTypesMod.GroupType
 import typings.reactDashSelect.srcTypesMod.GroupedOptionsType
 import typings.reactDashSelect.srcTypesMod.InputActionMeta
 import typings.reactDashSelect.srcTypesMod.KeyboardEventHandler
@@ -207,10 +207,10 @@ object Props {
     delimiter: String = null,
     escapeClearsValue: js.UndefOr[Boolean] = js.undefined,
     filterOption: (/* option */ Option, /* rawInput */ String) => Boolean = null,
-    formatGroupLabel: formatGroupLabel[OptionType] = null,
+    formatGroupLabel: /* group */ GroupType[OptionType] => ReactNode = null,
     formatOptionLabel: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => ReactNode = null,
-    getOptionLabel: getOptionLabel[OptionType] = null,
-    getOptionValue: getOptionValue[OptionType] = null,
+    getOptionLabel: OptionType => String = null,
+    getOptionValue: OptionType => String = null,
     hideSelectedOptions: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inputId: String = null,
@@ -235,11 +235,11 @@ object Props {
     minMenuHeight: Int | Double = null,
     name: String = null,
     noOptionsMessage: /* obj */ Anon_InputValue => String | Null = null,
-    onBlur: FocusEventHandler = null,
+    onBlur: /* event */ FocusEvent[HTMLElement] => Unit = null,
     onChange: (/* value */ ValueType[OptionType], /* action */ ActionMeta) => Unit = null,
-    onFocus: FocusEventHandler = null,
+    onFocus: /* event */ FocusEvent[HTMLElement] => Unit = null,
     onInputChange: (/* newValue */ String, /* actionMeta */ InputActionMeta) => Unit = null,
-    onKeyDown: KeyboardEventHandler = null,
+    onKeyDown: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
     onMenuClose: () => Unit = null,
     onMenuOpen: () => Unit = null,
     onMenuScrollToBottom: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
@@ -275,10 +275,10 @@ object Props {
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (!js.isUndefined(escapeClearsValue)) __obj.updateDynamic("escapeClearsValue")(escapeClearsValue)
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
-    if (formatGroupLabel != null) __obj.updateDynamic("formatGroupLabel")(formatGroupLabel)
+    if (formatGroupLabel != null) __obj.updateDynamic("formatGroupLabel")(js.Any.fromFunction1(formatGroupLabel))
     if (formatOptionLabel != null) __obj.updateDynamic("formatOptionLabel")(js.Any.fromFunction2(formatOptionLabel))
-    if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(getOptionLabel)
-    if (getOptionValue != null) __obj.updateDynamic("getOptionValue")(getOptionValue)
+    if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))
+    if (getOptionValue != null) __obj.updateDynamic("getOptionValue")(js.Any.fromFunction1(getOptionValue))
     if (!js.isUndefined(hideSelectedOptions)) __obj.updateDynamic("hideSelectedOptions")(hideSelectedOptions)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
@@ -303,11 +303,11 @@ object Props {
     if (minMenuHeight != null) __obj.updateDynamic("minMenuHeight")(minMenuHeight.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(js.Any.fromFunction1(noOptionsMessage))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onMenuClose != null) __obj.updateDynamic("onMenuClose")(js.Any.fromFunction0(onMenuClose))
     if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(js.Any.fromFunction0(onMenuOpen))
     if (onMenuScrollToBottom != null) __obj.updateDynamic("onMenuScrollToBottom")(js.Any.fromFunction1(onMenuScrollToBottom))

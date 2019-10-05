@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsTrackMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Track
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrackProperties
+import typings.arcgisDashJsDashApi.__esri.Track
+import typings.arcgisDashJsDashApi.__esri.TrackProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -25,3 +25,9 @@ object Neighbours {
   }
 }
 
+@JSImport("latlon-geohash", "neighbours")
+@js.native
+object neighbours extends js.Object {
+  def apply(geohash: String): Neighbours = js.native
+}
+

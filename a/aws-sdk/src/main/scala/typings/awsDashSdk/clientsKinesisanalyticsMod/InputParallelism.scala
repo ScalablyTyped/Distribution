@@ -13,9 +13,9 @@ trait InputParallelism extends js.Object {
 
 object InputParallelism {
   @scala.inline
-  def apply(Count: js.UndefOr[InputParallelismCount] = js.undefined): InputParallelism = {
+  def apply(Count: Int | Double = null): InputParallelism = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParallelism]
   }
 }

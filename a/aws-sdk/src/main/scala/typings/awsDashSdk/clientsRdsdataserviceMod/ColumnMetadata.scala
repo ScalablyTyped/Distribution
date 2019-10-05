@@ -66,35 +66,35 @@ trait ColumnMetadata extends js.Object {
 object ColumnMetadata {
   @scala.inline
   def apply(
-    arrayBaseColumnType: js.UndefOr[Integer] = js.undefined,
-    isAutoIncrement: js.UndefOr[Boolean] = js.undefined,
-    isCaseSensitive: js.UndefOr[Boolean] = js.undefined,
-    isCurrency: js.UndefOr[Boolean] = js.undefined,
-    isSigned: js.UndefOr[Boolean] = js.undefined,
+    arrayBaseColumnType: Int | Double = null,
+    isAutoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
+    isCaseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    isCurrency: js.UndefOr[scala.Boolean] = js.undefined,
+    isSigned: js.UndefOr[scala.Boolean] = js.undefined,
     label: String = null,
     name: String = null,
-    nullable: js.UndefOr[Integer] = js.undefined,
-    precision: js.UndefOr[Integer] = js.undefined,
-    scale: js.UndefOr[Integer] = js.undefined,
+    nullable: Int | Double = null,
+    precision: Int | Double = null,
+    scale: Int | Double = null,
     schemaName: String = null,
     tableName: String = null,
-    `type`: js.UndefOr[Integer] = js.undefined,
+    `type`: Int | Double = null,
     typeName: String = null
   ): ColumnMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBaseColumnType)) __obj.updateDynamic("arrayBaseColumnType")(arrayBaseColumnType)
+    if (arrayBaseColumnType != null) __obj.updateDynamic("arrayBaseColumnType")(arrayBaseColumnType.asInstanceOf[js.Any])
     if (!js.isUndefined(isAutoIncrement)) __obj.updateDynamic("isAutoIncrement")(isAutoIncrement)
     if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive)
     if (!js.isUndefined(isCurrency)) __obj.updateDynamic("isCurrency")(isCurrency)
     if (!js.isUndefined(isSigned)) __obj.updateDynamic("isSigned")(isSigned)
     if (label != null) __obj.updateDynamic("label")(label)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision)
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)
+    if (nullable != null) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
     if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeName != null) __obj.updateDynamic("typeName")(typeName)
     __obj.asInstanceOf[ColumnMetadata]
   }

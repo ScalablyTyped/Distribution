@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPortalPortalQueryResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalQueryResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalQueryResultProperties
+import typings.arcgisDashJsDashApi.__esri.PortalQueryResult
+import typings.arcgisDashJsDashApi.__esri.PortalQueryResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

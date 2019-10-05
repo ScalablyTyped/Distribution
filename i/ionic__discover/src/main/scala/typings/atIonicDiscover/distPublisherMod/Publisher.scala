@@ -2,7 +2,7 @@ package typings.atIonicDiscover.distPublisherMod
 
 import typings.atIonicDiscover.atIonicDiscoverStrings.`/`
 import typings.atIonicDiscover.atIonicDiscoverStrings.error
-import typings.node.NodeJSNs.Timer
+import typings.node.NodeJS.Timer
 import typings.node.dgramMod.Socket
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error

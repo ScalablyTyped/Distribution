@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRegexMatchSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.RegexMatchSetRegexMatchTuple
+import typings.atPulumiAws.typesOutputMod.wafregional.RegexMatchSetRegexMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -30,18 +30,18 @@ trait EndpointDescription extends js.Object {
 object EndpointDescription {
   @scala.inline
   def apply(
-    ClientIPPreservationEnabled: js.UndefOr[GenericBoolean] = js.undefined,
+    ClientIPPreservationEnabled: js.UndefOr[Boolean] = js.undefined,
     EndpointId: GenericString = null,
     HealthReason: GenericString = null,
     HealthState: HealthState = null,
-    Weight: js.UndefOr[EndpointWeight] = js.undefined
+    Weight: Int | Double = null
   ): EndpointDescription = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ClientIPPreservationEnabled)) __obj.updateDynamic("ClientIPPreservationEnabled")(ClientIPPreservationEnabled)
     if (EndpointId != null) __obj.updateDynamic("EndpointId")(EndpointId)
     if (HealthReason != null) __obj.updateDynamic("HealthReason")(HealthReason)
     if (HealthState != null) __obj.updateDynamic("HealthState")(HealthState.asInstanceOf[js.Any])
-    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight)
+    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDescription]
   }
 }

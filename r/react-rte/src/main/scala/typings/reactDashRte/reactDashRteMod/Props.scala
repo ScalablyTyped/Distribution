@@ -42,7 +42,7 @@ object Props {
     editorStyle: js.Object = null,
     handleReturn: /* event */ js.Object => Boolean = null,
     keyBindingFn: /* event */ js.Object => js.UndefOr[String] = null,
-    onChange: ChangeHandler = null,
+    onChange: /* value */ EditorValue => js.Any = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rootStyle: js.Object = null,
@@ -61,7 +61,7 @@ object Props {
     if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle)
     if (handleReturn != null) __obj.updateDynamic("handleReturn")(js.Any.fromFunction1(handleReturn))
     if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(js.Any.fromFunction1(keyBindingFn))
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (rootStyle != null) __obj.updateDynamic("rootStyle")(rootStyle)

@@ -1,7 +1,7 @@
 package typings.htmlDashToDashDraftjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.EncodingNs.RawDraftEntity
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Encoding.RawDraftEntity
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

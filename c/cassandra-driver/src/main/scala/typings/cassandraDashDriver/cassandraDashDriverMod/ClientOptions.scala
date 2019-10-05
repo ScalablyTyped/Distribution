@@ -5,9 +5,9 @@ import typings.cassandraDashDriver.Anon_Args
 import typings.cassandraDashDriver.Anon_CoalescingThreshold
 import typings.cassandraDashDriver.Anon_CoreConnectionsPerHost
 import typings.cassandraDashDriver.Anon_MaxSchemaAgreementWaitSeconds
-import typings.cassandraDashDriver.cassandraDashDriverMod.authNs.AuthProvider
-import typings.cassandraDashDriver.cassandraDashDriverMod.metricsNs.ClientMetrics
-import typings.cassandraDashDriver.cassandraDashDriverMod.trackerNs.RequestTracker
+import typings.cassandraDashDriver.cassandraDashDriverMod.auth.AuthProvider
+import typings.cassandraDashDriver.cassandraDashDriverMod.metrics.ClientMetrics
+import typings.cassandraDashDriver.cassandraDashDriverMod.tracker.RequestTracker
 import typings.node.tlsMod.ConnectionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -2,13 +2,13 @@ package typings.atOracleOraclejet.ojmenuMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.OpenOptions
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAction
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAnimateStart
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojBeforeOpen
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojClose
-import typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojOpen
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.OpenOptions
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAction
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAnimateEnd
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAnimateStart
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojBeforeOpen
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojClose
+import typings.atOracleOraclejet.ojmenuMod.ojMenu.ojOpen
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -31,12 +31,12 @@ import scala.scalajs.js.annotation._
 
 trait ojMenuEventMap extends baseComponentEventMap[ojMenuSettableProperties] {
   var disabledChanged: JetElementCustomEvent[Boolean]
-  var ojAction: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAction
-  var ojAnimateEnd: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojAnimateStart
-  var ojBeforeOpen: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojBeforeOpen
-  var ojClose: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojClose
-  var ojOpen: typings.atOracleOraclejet.ojmenuMod.ojMenuNs.ojOpen
+  var ojAction: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAction
+  var ojAnimateEnd: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojAnimateStart
+  var ojBeforeOpen: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojBeforeOpen
+  var ojClose: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojClose
+  var ojOpen: typings.atOracleOraclejet.ojmenuMod.ojMenu.ojOpen
   var openOptionsChanged: JetElementCustomEvent[OpenOptions]
 }
 

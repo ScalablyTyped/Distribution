@@ -47,7 +47,7 @@ object GetReservedInstancesExchangeQuoteResult {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    IsValidExchange: js.UndefOr[Boolean] = js.undefined,
+    IsValidExchange: js.UndefOr[scala.Boolean] = js.undefined,
     OutputReservedInstancesWillExpireAt: DateTime = null,
     PaymentDue: String = null,
     ReservedInstanceValueRollup: ReservationValue = null,

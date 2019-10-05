@@ -1,6 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.ParameterizedQueryError
+import typings.pgDashPromise.pgDashPromiseMod.errors.ParameterizedQueryError
 import typings.pgDashPromise.pgDashPromiseStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

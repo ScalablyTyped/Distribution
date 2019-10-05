@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDistanceMeasurement2DDistanceMeasurement2DViewModelMod
 
+import typings.arcgisDashJsDashApi.__esri.DistanceMeasurement2DViewModel
+import typings.arcgisDashJsDashApi.__esri.DistanceMeasurement2DViewModelMeasurement
+import typings.arcgisDashJsDashApi.__esri.MapView
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
@@ -13,9 +16,6 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceMeasurement2DViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceMeasurement2DViewModelMeasurement
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Blob
-import typings.titanium.TitaniumNs.UINs.iOSNs.LivePhoto
+import typings.titanium.Titanium.Blob
+import typings.titanium.Titanium.UI.iOS.LivePhoto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,12 +12,5 @@ trait DOMError extends js.Object {
 
 @JSGlobal("DOMError")
 @js.native
-class DOMErrorCls () extends DOMError {
-  /* CompleteClass */
-  override val name: java.lang.String = js.native
-}
-
-@JSGlobal("DOMError")
-@js.native
 object DOMError extends Instantiable0[DOMError]
 

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,4 +35,8 @@ Instantiable1[/* libFile */ String, js.Any]
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
 }
+
+@JSImport("ffi-napi", "Library")
+@js.native
+object Library extends TopLevel[Library]
 

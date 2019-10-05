@@ -1,10 +1,10 @@
 package typings.microsoftDashSdkDashSoap
 
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuBehavior
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuGroup
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeType
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipType
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.Sdk.Mdq.AssociatedMenuBehavior
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.Sdk.Mdq.AssociatedMenuGroup
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.Sdk.Mdq.CascadeType
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.Sdk.Mdq.RelationshipType
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod.Global.Sdk.Mdq.SecurityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

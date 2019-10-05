@@ -14,7 +14,7 @@ object CopyOptionsSync {
   def apply(
     dereference: js.UndefOr[Boolean] = js.undefined,
     errorOnExist: js.UndefOr[Boolean] = js.undefined,
-    filter: CopyFilterSync = null,
+    filter: (/* src */ String, /* dest */ String) => Boolean = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     preserveTimestamps: js.UndefOr[Boolean] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +22,7 @@ object CopyOptionsSync {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(dereference)) __obj.updateDynamic("dereference")(dereference)
     if (!js.isUndefined(errorOnExist)) __obj.updateDynamic("errorOnExist")(errorOnExist)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
     if (!js.isUndefined(preserveTimestamps)) __obj.updateDynamic("preserveTimestamps")(preserveTimestamps)
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)

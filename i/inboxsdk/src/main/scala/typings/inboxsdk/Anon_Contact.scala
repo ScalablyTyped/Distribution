@@ -1,6 +1,6 @@
 package typings.inboxsdk
 
-import typings.inboxsdk.inboxsdkMod.CommonNs.Contact
+import typings.inboxsdk.inboxsdkMod.Common.Contact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

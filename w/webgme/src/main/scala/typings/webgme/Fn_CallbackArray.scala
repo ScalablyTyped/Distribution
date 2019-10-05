@@ -1,7 +1,7 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.MetadataHash
-import typings.webgme.GmeCommonNs.ResultCallback
+import typings.webgme.GmeCommon.MetadataHash
+import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsIdLocQualification
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.QualifiedTypeIdentifierKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.QualifiedTypeIdentifier
+import typings.astDashTypes.genNamedTypesMod.namedTypes.QualifiedTypeIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

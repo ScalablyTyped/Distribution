@@ -1,7 +1,7 @@
 package typings.webgme
 
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeCommonNs.Name
+import typings.webgme.Core.Node
+import typings.webgme.GmeCommon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

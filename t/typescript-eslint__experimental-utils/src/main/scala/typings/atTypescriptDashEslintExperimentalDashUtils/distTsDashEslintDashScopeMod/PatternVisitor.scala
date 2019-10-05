@@ -10,13 +10,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope", "PatternVisitor")
 @js.native
-class PatternVisitorCls protected ()
-  extends typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopePatternVisitorMod.PatternVisitor {
-  def this(options: PatternVisitorOptions, rootPattern: js.Any, callback: PatternVisitorCallback) = this()
-}
-
-@JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope", "PatternVisitor")
-@js.native
 object PatternVisitor
   extends Instantiable3[
       /* options */ PatternVisitorOptions, 

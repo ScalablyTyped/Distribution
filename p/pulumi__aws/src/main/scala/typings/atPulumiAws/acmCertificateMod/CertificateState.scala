@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.acmNs.CertificateDomainValidationOption
-import typings.atPulumiAws.typesInputMod.acmNs.CertificateOptions
+import typings.atPulumiAws.typesInputMod.acm.CertificateDomainValidationOption
+import typings.atPulumiAws.typesInputMod.acm.CertificateOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

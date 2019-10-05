@@ -19,10 +19,10 @@ object ObjectValue {
     fields: js.Array[ObjectFieldValue],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ObjectValue,
     loc: Location,
-    metadata: Metadata
+    metadata: Metadata = null
   ): ObjectValue = {
-    val __obj = js.Dynamic.literal(fields = fields, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, loc = loc)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectValue]
   }
 }

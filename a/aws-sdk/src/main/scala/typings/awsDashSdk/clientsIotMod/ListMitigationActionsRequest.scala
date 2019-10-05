@@ -23,12 +23,12 @@ object ListMitigationActionsRequest {
   @scala.inline
   def apply(
     actionType: MitigationActionType = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): ListMitigationActionsRequest = {
     val __obj = js.Dynamic.literal()
     if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListMitigationActionsRequest]
   }

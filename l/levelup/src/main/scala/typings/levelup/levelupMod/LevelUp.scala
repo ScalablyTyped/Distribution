@@ -11,7 +11,7 @@ import typings.levelup.levelupStrings.open
 import typings.levelup.levelupStrings.opening
 import typings.levelup.levelupStrings.put
 import typings.levelup.levelupStrings.ready
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -46,9 +46,5 @@ trait AbortSignal extends EventTarget {
 
 @JSGlobal("AbortSignal")
 @js.native
-class AbortSignalCls () extends AbortSignal
-
-@JSGlobal("AbortSignal")
-@js.native
 object AbortSignal extends Instantiable0[AbortSignal]
 

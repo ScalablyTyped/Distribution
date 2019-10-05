@@ -10,9 +10,3 @@ class ^ () extends IPFS {
   def this(options: Options) = this()
 }
 
-@JSImport("typestub-ipfs", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  def createNode(options: Options): IPFS = js.native
-}
-

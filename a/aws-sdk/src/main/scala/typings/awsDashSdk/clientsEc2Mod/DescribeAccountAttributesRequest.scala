@@ -17,7 +17,10 @@ trait DescribeAccountAttributesRequest extends js.Object {
 
 object DescribeAccountAttributesRequest {
   @scala.inline
-  def apply(AttributeNames: AccountAttributeNameStringList = null, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeAccountAttributesRequest = {
+  def apply(
+    AttributeNames: AccountAttributeNameStringList = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DescribeAccountAttributesRequest = {
     val __obj = js.Dynamic.literal()
     if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

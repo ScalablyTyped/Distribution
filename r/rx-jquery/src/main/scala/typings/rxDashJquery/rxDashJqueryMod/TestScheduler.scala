@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "TestScheduler")
 @js.native
 object TestScheduler
-  extends Instantiable0[typings.rxDashLiteDashTesting.RxNs.TestScheduler]
+  extends Instantiable0[typings.rxDashLiteDashTesting.Rx.TestScheduler]
 

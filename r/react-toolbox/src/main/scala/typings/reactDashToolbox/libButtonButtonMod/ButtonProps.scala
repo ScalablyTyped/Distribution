@@ -1,5 +1,6 @@
 package typings.reactDashToolbox.libButtonButtonMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
@@ -11,7 +12,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.reactDashToolbox.libRippleMod.RippleProps because var conflicts: children, disabled. Inlined onRippleEnded, spread, theme */ trait ButtonProps extends ButtonBaseProps {
+- typings.reactDashToolbox.libRippleMod.RippleProps because var conflicts: children, disabled. Inlined onRippleEnded, spread, theme */ trait ButtonProps
+  extends ButtonBaseProps
+     with /**
+  * Additional properties passed to rippled component.
+  */
+/* key */ StringDictionary[js.Any] {
   /**
     * If true, the button will have a flat look.
     * @default false
@@ -62,6 +68,10 @@ import scala.scalajs.js.annotation._
 object ButtonProps {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * Additional properties passed to rippled component.
+    */
+  /* key */ StringDictionary[js.Any] = null,
     accent: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
@@ -108,6 +118,7 @@ object ButtonProps {
     `type`: String = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

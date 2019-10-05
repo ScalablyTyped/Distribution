@@ -78,31 +78,31 @@ object CreateFleetRequest {
     InstanceType: String,
     Name: Name,
     Description: Description = null,
-    DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
+    DisconnectTimeoutInSeconds: Int | Double = null,
     DisplayName: DisplayName = null,
     DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    EnableDefaultInternetAccess: js.UndefOr[scala.Boolean] = js.undefined,
     FleetType: FleetType = null,
     IamRoleArn: Arn = null,
-    IdleDisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
+    IdleDisconnectTimeoutInSeconds: Int | Double = null,
     ImageArn: Arn = null,
     ImageName: String = null,
-    MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined,
+    MaxUserDurationInSeconds: Int | Double = null,
     Tags: Tags = null,
     VpcConfig: VpcConfig = null
   ): CreateFleetRequest = {
     val __obj = js.Dynamic.literal(ComputeCapacity = ComputeCapacity, InstanceType = InstanceType, Name = Name)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(DisconnectTimeoutInSeconds)) __obj.updateDynamic("DisconnectTimeoutInSeconds")(DisconnectTimeoutInSeconds)
+    if (DisconnectTimeoutInSeconds != null) __obj.updateDynamic("DisconnectTimeoutInSeconds")(DisconnectTimeoutInSeconds.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
     if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo)
     if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess)
     if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn)
-    if (!js.isUndefined(IdleDisconnectTimeoutInSeconds)) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds)
+    if (IdleDisconnectTimeoutInSeconds != null) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds.asInstanceOf[js.Any])
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn)
     if (ImageName != null) __obj.updateDynamic("ImageName")(ImageName)
-    if (!js.isUndefined(MaxUserDurationInSeconds)) __obj.updateDynamic("MaxUserDurationInSeconds")(MaxUserDurationInSeconds)
+    if (MaxUserDurationInSeconds != null) __obj.updateDynamic("MaxUserDurationInSeconds")(MaxUserDurationInSeconds.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[CreateFleetRequest]

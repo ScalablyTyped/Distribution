@@ -10,13 +10,13 @@ trait TypeofextensionTypes extends js.Object {
     * @private
     * @internal
     */
-  val underscoreInternalUnderscoreNs: js.Any
+  val _internal_ : js.Any
 }
 
 object TypeofextensionTypes {
   @scala.inline
-  def apply(underscoreInternalUnderscoreNs: js.Any): TypeofextensionTypes = {
-    val __obj = js.Dynamic.literal(underscoreInternalUnderscoreNs = underscoreInternalUnderscoreNs)
+  def apply(_internal_ : js.Any): TypeofextensionTypes = {
+    val __obj = js.Dynamic.literal(_internal_ = _internal_)
   
     __obj.asInstanceOf[TypeofextensionTypes]
   }

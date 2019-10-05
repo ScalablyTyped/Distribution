@@ -21,15 +21,11 @@ trait PersonMatch extends js.Object {
 
 object PersonMatch {
   @scala.inline
-  def apply(
-    FaceMatches: FaceMatchList = null,
-    Person: PersonDetail = null,
-    Timestamp: js.UndefOr[Timestamp] = js.undefined
-  ): PersonMatch = {
+  def apply(FaceMatches: FaceMatchList = null, Person: PersonDetail = null, Timestamp: Int | Double = null): PersonMatch = {
     val __obj = js.Dynamic.literal()
     if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches)
     if (Person != null) __obj.updateDynamic("Person")(Person)
-    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp)
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonMatch]
   }
 }

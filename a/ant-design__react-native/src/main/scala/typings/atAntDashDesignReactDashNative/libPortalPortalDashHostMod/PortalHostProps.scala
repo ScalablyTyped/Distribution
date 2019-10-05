@@ -11,9 +11,9 @@ trait PortalHostProps extends js.Object {
 
 object PortalHostProps {
   @scala.inline
-  def apply(children: ReactNode): PortalHostProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null): PortalHostProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalHostProps]
   }
 }

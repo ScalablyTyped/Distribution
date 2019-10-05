@@ -32,7 +32,7 @@ object TopicRuleListItem {
   def apply(
     createdAt: CreatedAtDate = null,
     ruleArn: RuleArn = null,
-    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
+    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     ruleName: RuleName = null,
     topicPattern: TopicPattern = null
   ): TopicRuleListItem = {

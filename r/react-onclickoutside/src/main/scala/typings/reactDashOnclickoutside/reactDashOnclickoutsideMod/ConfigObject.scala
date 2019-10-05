@@ -1,5 +1,7 @@
 package typings.reactDashOnclickoutside.reactDashOnclickoutsideMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +16,11 @@ object ConfigObject {
   @scala.inline
   def apply(
     excludeScrollbar: js.UndefOr[Boolean] = js.undefined,
-    handleClickOutside: MouseEventHandler[_] = null
+    handleClickOutside: MouseEvent[_, NativeMouseEvent] => Unit = null
   ): ConfigObject = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(excludeScrollbar)) __obj.updateDynamic("excludeScrollbar")(excludeScrollbar)
-    if (handleClickOutside != null) __obj.updateDynamic("handleClickOutside")(handleClickOutside)
+    if (handleClickOutside != null) __obj.updateDynamic("handleClickOutside")(js.Any.fromFunction1(handleClickOutside))
     __obj.asInstanceOf[ConfigObject]
   }
 }

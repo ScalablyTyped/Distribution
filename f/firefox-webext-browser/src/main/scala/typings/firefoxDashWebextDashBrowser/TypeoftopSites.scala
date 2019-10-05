@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.topSitesNs.MostVisitedURL
+import typings.firefoxDashWebextDashBrowser.browser.topSites.MostVisitedURL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

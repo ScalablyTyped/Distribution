@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 	 * @see https://developer.knuddels.de/docs/classes/BotUser.html
 	 */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._KnuddelsJsonData because Already inherited
 - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._KnuddelsSerializable because Already inherited */ @JSGlobal("BotUser")
 @js.native
 class BotUser () extends User {

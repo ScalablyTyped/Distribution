@@ -32,16 +32,16 @@ object GetResourcesInput {
   def apply(
     PaginationToken: PaginationToken = null,
     ResourceTypeFilters: ResourceTypeFilterList = null,
-    ResourcesPerPage: js.UndefOr[ResourcesPerPage] = js.undefined,
+    ResourcesPerPage: Int | Double = null,
     TagFilters: TagFilterList = null,
-    TagsPerPage: js.UndefOr[TagsPerPage] = js.undefined
+    TagsPerPage: Int | Double = null
   ): GetResourcesInput = {
     val __obj = js.Dynamic.literal()
     if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken)
     if (ResourceTypeFilters != null) __obj.updateDynamic("ResourceTypeFilters")(ResourceTypeFilters)
-    if (!js.isUndefined(ResourcesPerPage)) __obj.updateDynamic("ResourcesPerPage")(ResourcesPerPage)
+    if (ResourcesPerPage != null) __obj.updateDynamic("ResourcesPerPage")(ResourcesPerPage.asInstanceOf[js.Any])
     if (TagFilters != null) __obj.updateDynamic("TagFilters")(TagFilters)
-    if (!js.isUndefined(TagsPerPage)) __obj.updateDynamic("TagsPerPage")(TagsPerPage)
+    if (TagsPerPage != null) __obj.updateDynamic("TagsPerPage")(TagsPerPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesInput]
   }
 }

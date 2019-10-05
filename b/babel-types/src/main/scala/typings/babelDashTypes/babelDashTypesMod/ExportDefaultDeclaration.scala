@@ -36,3 +36,12 @@ object ExportDefaultDeclaration {
   }
 }
 
+@JSImport("babel-types", "exportDefaultDeclaration")
+@js.native
+object exportDefaultDeclaration extends js.Object {
+  def apply(): ExportDefaultDeclaration = js.native
+  def apply(declaration: ClassDeclaration): ExportDefaultDeclaration = js.native
+  def apply(declaration: Expression): ExportDefaultDeclaration = js.native
+  def apply(declaration: FunctionDeclaration): ExportDefaultDeclaration = js.native
+}
+

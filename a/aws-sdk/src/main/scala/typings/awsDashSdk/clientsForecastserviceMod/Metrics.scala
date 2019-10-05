@@ -17,9 +17,9 @@ trait Metrics extends js.Object {
 
 object Metrics {
   @scala.inline
-  def apply(RMSE: js.UndefOr[Double] = js.undefined, WeightedQuantileLosses: WeightedQuantileLosses = null): Metrics = {
+  def apply(RMSE: Int | scala.Double = null, WeightedQuantileLosses: WeightedQuantileLosses = null): Metrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(RMSE)) __obj.updateDynamic("RMSE")(RMSE)
+    if (RMSE != null) __obj.updateDynamic("RMSE")(RMSE.asInstanceOf[js.Any])
     if (WeightedQuantileLosses != null) __obj.updateDynamic("WeightedQuantileLosses")(WeightedQuantileLosses)
     __obj.asInstanceOf[Metrics]
   }

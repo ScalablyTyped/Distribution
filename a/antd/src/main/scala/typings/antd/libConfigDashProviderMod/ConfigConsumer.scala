@@ -1,7 +1,9 @@
 package typings.antd.libConfigDashProviderMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,9 @@ class ConfigConsumer protected ()
   def this(props: ConsumerProps[ConfigConsumerProps]) = this()
   def this(props: ConsumerProps[ConfigConsumerProps], context: js.Any) = this()
 }
+
+@JSImport("antd/lib/config-provider", "ConfigConsumer")
+@js.native
+object ConfigConsumer
+  extends TopLevel[ComponentClass[ConsumerProps[ConfigConsumerProps], js.Any]]
 

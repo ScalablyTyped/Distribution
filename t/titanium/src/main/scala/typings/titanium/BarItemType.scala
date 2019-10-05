@@ -1,7 +1,7 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Blob
-import typings.titanium.TitaniumNs.FilesystemNs.File
+import typings.titanium.Titanium.Blob
+import typings.titanium.Titanium.Filesystem.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

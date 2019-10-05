@@ -58,3 +58,35 @@ object ObjectTypeProperty {
   }
 }
 
+@JSImport("@babel/types", "objectTypeProperty")
+@js.native
+object objectTypeProperty extends js.Object {
+  def apply(key: Identifier | StringLiteral, value: FlowType): ObjectTypeProperty = js.native
+  def apply(key: Identifier | StringLiteral, value: FlowType, variance: Variance): ObjectTypeProperty = js.native
+  def apply(key: Identifier | StringLiteral, value: FlowType, variance: Variance, kind: init | get | set): ObjectTypeProperty = js.native
+  def apply(
+    key: Identifier | StringLiteral,
+    value: FlowType,
+    variance: Variance,
+    kind: init | get | set,
+    optional: Boolean
+  ): ObjectTypeProperty = js.native
+  def apply(
+    key: Identifier | StringLiteral,
+    value: FlowType,
+    variance: Variance,
+    kind: init | get | set,
+    optional: Boolean,
+    proto: Boolean
+  ): ObjectTypeProperty = js.native
+  def apply(
+    key: Identifier | StringLiteral,
+    value: FlowType,
+    variance: Variance,
+    kind: init | get | set,
+    optional: Boolean,
+    proto: Boolean,
+    _static: Boolean
+  ): ObjectTypeProperty = js.native
+}
+

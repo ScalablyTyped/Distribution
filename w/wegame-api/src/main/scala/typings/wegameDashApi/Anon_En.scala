@@ -3,8 +3,8 @@ package typings.wegameDashApi
 import typings.wegameDashApi.wegameDashApiStrings.en
 import typings.wegameDashApi.wegameDashApiStrings.zh_CN
 import typings.wegameDashApi.wegameDashApiStrings.zh_TW
-import typings.wegameDashApi.wxNs.typesNs.ButtonStyle
-import typings.wegameDashApi.wxNs.typesNs.ButtonType
+import typings.wegameDashApi.wx.types.ButtonStyle
+import typings.wegameDashApi.wx.types.ButtonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

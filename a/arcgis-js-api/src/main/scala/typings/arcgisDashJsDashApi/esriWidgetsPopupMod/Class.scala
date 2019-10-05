@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsPopupMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Popup
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PopupProperties
+import typings.arcgisDashJsDashApi.__esri.Popup
+import typings.arcgisDashJsDashApi.__esri.PopupProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

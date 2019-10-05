@@ -30,14 +30,14 @@ trait JobExecutionSummary extends js.Object {
 object JobExecutionSummary {
   @scala.inline
   def apply(
-    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
+    executionNumber: Int | Double = null,
     lastUpdatedAt: DateType = null,
     queuedAt: DateType = null,
     startedAt: DateType = null,
     status: JobExecutionStatus = null
   ): JobExecutionSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber)
+    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (queuedAt != null) __obj.updateDynamic("queuedAt")(queuedAt)
     if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt)

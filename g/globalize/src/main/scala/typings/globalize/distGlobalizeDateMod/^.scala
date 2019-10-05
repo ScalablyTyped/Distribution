@@ -1,7 +1,7 @@
 package typings.globalize.distGlobalizeDateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.globalize.distGlobalizeDateMod.distGlobalizeMod.Static
+import typings.globalize.distGlobalizeMod.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

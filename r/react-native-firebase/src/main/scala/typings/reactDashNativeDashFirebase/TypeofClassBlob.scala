@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashFirebase
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Blob
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.firestore.Blob
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

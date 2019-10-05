@@ -31,11 +31,3 @@ class ^ () extends URLVariables {
   def this(str: String) = this()
 }
 
-@JSImport("url-variables", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  def parse[T](str: String): T = js.native
-  def parse[T](str: String, autoCase: Boolean): T = js.native
-  def stringify[T](obj: T): String = js.native
-}
-

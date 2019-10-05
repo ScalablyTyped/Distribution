@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupContentMediaContentMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MediaContentConstructor
+import typings.arcgisDashJsDashApi.__esri.MediaContentConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

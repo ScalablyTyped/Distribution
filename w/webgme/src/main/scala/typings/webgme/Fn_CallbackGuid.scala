@@ -1,10 +1,10 @@
 package typings.webgme
 
 import typings.std.Error
-import typings.webgme.CoreNs.DataObject
-import typings.webgme.CoreNs.GUID
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeCommonNs.ResultCallback
+import typings.webgme.Core.DataObject
+import typings.webgme.Core.GUID
+import typings.webgme.Core.Node
+import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

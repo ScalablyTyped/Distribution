@@ -1,5 +1,6 @@
 package typings.leaflet.leafletMod
 
+import typings.leaflet.Anon_X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,5 +25,14 @@ class Point protected () extends js.Object {
    // non-destructive, returns a new point
   def subtract(otherPoint: PointExpression): Point = js.native
   def unscaleBy(scale: PointExpression): Point = js.native
+}
+
+@JSImport("leaflet", "point")
+@js.native
+object point extends js.Object {
+  def apply(coords: Anon_X): Point = js.native
+  def apply(coords: PointTuple): Point = js.native
+  def apply(x: Double, y: Double): Point = js.native
+  def apply(x: Double, y: Double, round: Boolean): Point = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.chaiDashThings
 
-import typings.chaiDashThings.ChaiNs.ArrayAssertion
+import typings.chaiDashThings.Chai.ArrayAssertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

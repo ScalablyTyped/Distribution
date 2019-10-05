@@ -39,21 +39,21 @@ object Dataset {
   @scala.inline
   def apply(
     CreationDate: _Date = null,
-    DataStorage: js.UndefOr[Long] = js.undefined,
+    DataStorage: Int | Double = null,
     DatasetName: DatasetName = null,
     IdentityId: IdentityId = null,
     LastModifiedBy: String = null,
     LastModifiedDate: _Date = null,
-    NumRecords: js.UndefOr[Long] = js.undefined
+    NumRecords: Int | Double = null
   ): Dataset = {
     val __obj = js.Dynamic.literal()
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (!js.isUndefined(DataStorage)) __obj.updateDynamic("DataStorage")(DataStorage)
+    if (DataStorage != null) __obj.updateDynamic("DataStorage")(DataStorage.asInstanceOf[js.Any])
     if (DatasetName != null) __obj.updateDynamic("DatasetName")(DatasetName)
     if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(NumRecords)) __obj.updateDynamic("NumRecords")(NumRecords)
+    if (NumRecords != null) __obj.updateDynamic("NumRecords")(NumRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dataset]
   }
 }

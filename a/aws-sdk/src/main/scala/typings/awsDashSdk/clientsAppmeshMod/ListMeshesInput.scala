@@ -31,9 +31,9 @@ trait ListMeshesInput extends js.Object {
 
 object ListMeshesInput {
   @scala.inline
-  def apply(limit: js.UndefOr[ListMeshesLimit] = js.undefined, nextToken: String = null): ListMeshesInput = {
+  def apply(limit: Int | Double = null, nextToken: String = null): ListMeshesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListMeshesInput]
   }

@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojvalidationDashDatetimeMod
 
-import typings.atOracleOraclejet.ojvalidationDashDatetimeMod.IntlDateTimeConverterNs.ConverterOptions
+import typings.atOracleOraclejet.ojvalidationDashDatetimeMod.IntlDateTimeConverter.ConverterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

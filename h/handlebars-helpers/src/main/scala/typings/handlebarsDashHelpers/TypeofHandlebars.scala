@@ -4,26 +4,26 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.handlebars.CompileOptions
-import typings.handlebars.HandlebarsNs.HelperDeclareSpec
-import typings.handlebars.HandlebarsNs.HelperDelegate
-import typings.handlebars.HandlebarsNs.ParseOptions
-import typings.handlebars.HandlebarsNs.Template
+import typings.handlebars.Handlebars.HelperDeclareSpec
+import typings.handlebars.Handlebars.HelperDelegate
+import typings.handlebars.Handlebars.ParseOptions
+import typings.handlebars.Handlebars.Template
 import typings.handlebars.HandlebarsTemplateDelegate
 import typings.handlebars.HandlebarsTemplates
 import typings.handlebars.Logger
 import typings.handlebars.PrecompileOptions
 import typings.handlebars.TemplateSpecification
-import typings.handlebars.hbsNs.ASTNs.Program
+import typings.handlebars.hbs.AST.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofHandlebars extends js.Object {
-  val ASTNs: TypeofAST = js.native
+  val AST: TypeofAST = js.native
   var SafeString: Instantiable1[/* str */ String, typings.handlebars.handlebarsMod.SafeString] = js.native
-  val UtilsNs: TypeofUtils = js.native
-  val VMNs: TypeofVM = js.native
+  val Utils: TypeofUtils = js.native
+  val VM: TypeofVM = js.native
   var Visitor: Instantiable0[typings.handlebars.handlebarsMod.Visitor] = js.native
   val decorators: StringDictionary[js.Function] = js.native
   val helpers: StringDictionary[HelperDelegate] = js.native

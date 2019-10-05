@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SpriteComponent")
 @js.native
 class SpriteComponent protected ()
-  extends typings.playcanvas.pcNs.SpriteComponent {
-  def this(system: typings.playcanvas.pcNs.SpriteComponentSystem, entity: typings.playcanvas.pcNs.Entity) = this()
+  extends typings.playcanvas.pc.SpriteComponent {
+  def this(system: typings.playcanvas.pc.SpriteComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

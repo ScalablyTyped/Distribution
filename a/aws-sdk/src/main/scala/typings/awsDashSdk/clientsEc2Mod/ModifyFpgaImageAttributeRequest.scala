@@ -53,7 +53,7 @@ object ModifyFpgaImageAttributeRequest {
     FpgaImageId: String,
     Attribute: FpgaImageAttributeName = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LoadPermission: LoadPermissionModifications = null,
     Name: String = null,
     OperationType: OperationType = null,

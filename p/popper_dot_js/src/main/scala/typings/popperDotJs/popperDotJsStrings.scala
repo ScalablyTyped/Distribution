@@ -1,9 +1,9 @@
 package typings.popperDotJs
 
-import typings.popperDotJs.popperDotJsMod.PopperNs.Behavior
-import typings.popperDotJs.popperDotJsMod.PopperNs.Boundary
-import typings.popperDotJs.popperDotJsMod.PopperNs.Placement
-import typings.popperDotJs.popperDotJsMod.PopperNs.Position
+import typings.popperDotJs.popperDotJsMod.Popper.Behavior
+import typings.popperDotJs.popperDotJsMod.Popper.Boundary
+import typings.popperDotJs.popperDotJsMod.Popper.Placement
+import typings.popperDotJs.popperDotJsMod.Popper.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

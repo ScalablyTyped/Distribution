@@ -21,15 +21,11 @@ trait DescribeClusterTracksMessage extends js.Object {
 
 object DescribeClusterTracksMessage {
   @scala.inline
-  def apply(
-    MaintenanceTrackName: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
-  ): DescribeClusterTracksMessage = {
+  def apply(MaintenanceTrackName: String = null, Marker: String = null, MaxRecords: Int | scala.Double = null): DescribeClusterTracksMessage = {
     val __obj = js.Dynamic.literal()
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterTracksMessage]
   }
 }

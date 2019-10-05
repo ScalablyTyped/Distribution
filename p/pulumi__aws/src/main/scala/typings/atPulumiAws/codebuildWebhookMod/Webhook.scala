@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codebuildWebhookMod
 
-import typings.atPulumiAws.typesOutputMod.codebuildNs.WebhookFilterGroup
+import typings.atPulumiAws.typesOutputMod.codebuild.WebhookFilterGroup
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

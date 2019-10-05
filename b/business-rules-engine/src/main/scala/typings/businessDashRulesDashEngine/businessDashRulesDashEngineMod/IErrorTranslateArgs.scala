@@ -12,9 +12,13 @@ trait IErrorTranslateArgs extends js.Object {
 
 object IErrorTranslateArgs {
   @scala.inline
-  def apply(MessageArgs: js.Any, TranslateId: String, CustomMessage: IErrorCustomMessage = null): IErrorTranslateArgs = {
+  def apply(
+    MessageArgs: js.Any,
+    TranslateId: String,
+    CustomMessage: (/* config */ js.Any, /* args */ js.Any) => String = null
+  ): IErrorTranslateArgs = {
     val __obj = js.Dynamic.literal(MessageArgs = MessageArgs, TranslateId = TranslateId)
-    if (CustomMessage != null) __obj.updateDynamic("CustomMessage")(CustomMessage)
+    if (CustomMessage != null) __obj.updateDynamic("CustomMessage")(js.Any.fromFunction2(CustomMessage))
     __obj.asInstanceOf[IErrorTranslateArgs]
   }
 }

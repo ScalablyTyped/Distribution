@@ -95,6 +95,7 @@ object ConnectionOptions {
     family: `4` | `6` = null,
     forceServerObjectId: js.UndefOr[Boolean] = js.undefined,
     fsync: js.UndefOr[Boolean] = js.undefined,
+    ha: js.UndefOr[Boolean] = js.undefined,
     haInterval: Int | Double = null,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     j: js.UndefOr[Boolean] = js.undefined,
@@ -122,6 +123,7 @@ object ConnectionOptions {
     raw: js.UndefOr[Boolean] = js.undefined,
     readConcern: ReadConcern | String = null,
     readPreference: ReadPreference | String = null,
+    readPreferenceTags: js.Array[String] = null,
     reconnectInterval: Int | Double = null,
     reconnectTries: Int | Double = null,
     replicaSet: String = null,
@@ -175,6 +177,7 @@ object ConnectionOptions {
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId)
     if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
+    if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha)
     if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
@@ -202,6 +205,7 @@ object ConnectionOptions {
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
     if (reconnectTries != null) __obj.updateDynamic("reconnectTries")(reconnectTries.asInstanceOf[js.Any])
     if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet)

@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsIdLocSuperClass
 import typings.astDashTypes.genKindsMod.IdentifierKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassImplements
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassImplements
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

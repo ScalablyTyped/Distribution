@@ -51,3 +51,9 @@ trait Set extends js.Object {
   def splice(index: Double, count: Double, insertion: Element*): Set = js.native
 }
 
+@JSImport("snapsvg", "set")
+@js.native
+object set extends js.Object {
+  def apply(els: Element*): Set = js.native
+}
+

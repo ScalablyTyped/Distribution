@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksNodejsAppLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.NodejsAppLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.NodejsAppLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

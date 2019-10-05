@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxSessionsMod
 
-import typings.arangodb.FoxxNs.SessionsMiddleware
+import typings.arangodb.Foxx.SessionsMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

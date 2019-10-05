@@ -2,6 +2,7 @@ package typings.std
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,13 +81,6 @@ trait Event extends js.Object {
 
 @JSGlobal("Event")
 @js.native
-class EventCls protected () extends Event {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: EventInit) = this()
-}
-
-@JSGlobal("Event")
-@js.native
 object Event
   extends Instantiable1[/* type */ java.lang.String, Event]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ EventInit, Event] {
@@ -95,4 +89,10 @@ object Event
   val CAPTURING_PHASE: Double = js.native
   val NONE: Double = js.native
 }
+
+/** @deprecated */
+@JSGlobal("event")
+@js.native
+object event
+  extends TopLevel[js.UndefOr[Event]]
 

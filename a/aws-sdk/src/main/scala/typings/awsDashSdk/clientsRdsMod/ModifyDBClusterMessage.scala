@@ -95,22 +95,22 @@ object ModifyDBClusterMessage {
   @scala.inline
   def apply(
     DBClusterIdentifier: String,
-    AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AllowMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    BacktrackWindow: Int | scala.Double = null,
+    BackupRetentionPeriod: Int | scala.Double = null,
     CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBClusterParameterGroupName: String = null,
     DBInstanceParameterGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
-    EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableHttpEndpoint: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
     MasterUserPassword: String = null,
     NewDBClusterIdentifier: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ScalingConfiguration: ScalingConfiguration = null,
@@ -119,8 +119,8 @@ object ModifyDBClusterMessage {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier)
     if (!js.isUndefined(AllowMajorVersionUpgrade)) __obj.updateDynamic("AllowMajorVersionUpgrade")(AllowMajorVersionUpgrade)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BacktrackWindow != null) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.asInstanceOf[js.Any])
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
@@ -132,7 +132,7 @@ object ModifyDBClusterMessage {
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (NewDBClusterIdentifier != null) __obj.updateDynamic("NewDBClusterIdentifier")(NewDBClusterIdentifier)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ScalingConfiguration != null) __obj.updateDynamic("ScalingConfiguration")(ScalingConfiguration)

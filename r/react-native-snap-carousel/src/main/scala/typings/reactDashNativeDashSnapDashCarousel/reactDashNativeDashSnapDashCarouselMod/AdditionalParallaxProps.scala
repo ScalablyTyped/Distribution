@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashCarouselMod
 
 import typings.react.reactMod.Component
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.FlatListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -26,6 +26,19 @@ trait MediaPackage extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]
   ): Request[CreateChannelResponse, AWSError] = js.native
   /**
+    * Creates a new HarvestJob record.
+    */
+  def createHarvestJob(): Request[CreateHarvestJobResponse, AWSError] = js.native
+  def createHarvestJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateHarvestJobResponse, Unit]): Request[CreateHarvestJobResponse, AWSError] = js.native
+  /**
+    * Creates a new HarvestJob record.
+    */
+  def createHarvestJob(params: CreateHarvestJobRequest): Request[CreateHarvestJobResponse, AWSError] = js.native
+  def createHarvestJob(
+    params: CreateHarvestJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateHarvestJobResponse, Unit]
+  ): Request[CreateHarvestJobResponse, AWSError] = js.native
+  /**
     * Creates a new OriginEndpoint record.
     */
   def createOriginEndpoint(): Request[CreateOriginEndpointResponse, AWSError] = js.native
@@ -78,6 +91,19 @@ trait MediaPackage extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
+    * Gets details about an existing HarvestJob.
+    */
+  def describeHarvestJob(): Request[DescribeHarvestJobResponse, AWSError] = js.native
+  def describeHarvestJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHarvestJobResponse, Unit]): Request[DescribeHarvestJobResponse, AWSError] = js.native
+  /**
+    * Gets details about an existing HarvestJob.
+    */
+  def describeHarvestJob(params: DescribeHarvestJobRequest): Request[DescribeHarvestJobResponse, AWSError] = js.native
+  def describeHarvestJob(
+    params: DescribeHarvestJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHarvestJobResponse, Unit]
+  ): Request[DescribeHarvestJobResponse, AWSError] = js.native
+  /**
     * Gets details about an existing OriginEndpoint.
     */
   def describeOriginEndpoint(): Request[DescribeOriginEndpointResponse, AWSError] = js.native
@@ -103,6 +129,19 @@ trait MediaPackage extends Service {
     params: ListChannelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]
   ): Request[ListChannelsResponse, AWSError] = js.native
+  /**
+    * Returns a collection of HarvestJob records.
+    */
+  def listHarvestJobs(): Request[ListHarvestJobsResponse, AWSError] = js.native
+  def listHarvestJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListHarvestJobsResponse, Unit]): Request[ListHarvestJobsResponse, AWSError] = js.native
+  /**
+    * Returns a collection of HarvestJob records.
+    */
+  def listHarvestJobs(params: ListHarvestJobsRequest): Request[ListHarvestJobsResponse, AWSError] = js.native
+  def listHarvestJobs(
+    params: ListHarvestJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHarvestJobsResponse, Unit]
+  ): Request[ListHarvestJobsResponse, AWSError] = js.native
   /**
     * Returns a collection of OriginEndpoint records.
     */

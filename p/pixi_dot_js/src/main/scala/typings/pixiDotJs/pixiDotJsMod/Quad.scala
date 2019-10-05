@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Quad")
 @js.native
 class Quad protected ()
-  extends typings.pixiDotJs.PIXINs.Quad {
+  extends typings.pixiDotJs.PIXI.Quad {
   def this(gl: WebGLRenderingContext) = this()
 }
 

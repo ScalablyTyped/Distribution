@@ -1,6 +1,6 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.MediaNs.Item
+import typings.titanium.Titanium.Media.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashFirebase
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Timestamp
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.firestore.Timestamp
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

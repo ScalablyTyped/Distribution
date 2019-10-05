@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScrollViewComponentSystem")
 @js.native
 class ScrollViewComponentSystem protected ()
-  extends typings.playcanvas.pcNs.ScrollViewComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.ScrollViewComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

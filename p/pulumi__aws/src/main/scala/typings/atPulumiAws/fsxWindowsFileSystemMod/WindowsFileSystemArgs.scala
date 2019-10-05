@@ -1,7 +1,7 @@
 package typings.atPulumiAws.fsxWindowsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.fsxNs.WindowsFileSystemSelfManagedActiveDirectory
+import typings.atPulumiAws.typesInputMod.fsx.WindowsFileSystemSelfManagedActiveDirectory
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

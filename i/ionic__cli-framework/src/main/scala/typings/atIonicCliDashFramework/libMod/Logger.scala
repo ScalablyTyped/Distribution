@@ -1,5 +1,6 @@
 package typings.atIonicCliDashFramework.libMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atIonicCliDashFramework.libLoggerMod.LoggerHandler
 import typings.atIonicCliDashFramework.libLoggerMod.LoggerOptions
 import typings.std.ReadonlySet
@@ -21,4 +22,9 @@ class Logger ()
 object Logger extends js.Object {
   def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = js.native
 }
+
+@JSImport("@ionic/cli-framework/lib", "logger")
+@js.native
+object logger
+  extends TopLevel[typings.atIonicCliDashFramework.libLoggerMod.Logger]
 

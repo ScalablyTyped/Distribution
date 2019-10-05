@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet.ojdataproviderMod
 
-import typings.atOracleOraclejet.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
-import typings.atOracleOraclejet.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
+import typings.atOracleOraclejet.ojdataproviderMod.AttributeFilterOperator.AttributeOperator
+import typings.atOracleOraclejet.ojdataproviderMod.CompoundFilterOperator.CompoundOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

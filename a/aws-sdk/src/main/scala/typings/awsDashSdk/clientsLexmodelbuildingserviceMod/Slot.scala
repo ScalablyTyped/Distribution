@@ -49,7 +49,7 @@ object Slot {
     name: SlotName,
     slotConstraint: SlotConstraint,
     description: Description = null,
-    priority: js.UndefOr[Priority] = js.undefined,
+    priority: Int | Double = null,
     responseCard: ResponseCard = null,
     sampleUtterances: SlotUtteranceList = null,
     slotType: CustomOrBuiltinSlotTypeName = null,
@@ -58,7 +58,7 @@ object Slot {
   ): Slot = {
     val __obj = js.Dynamic.literal(name = name, slotConstraint = slotConstraint.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
     if (sampleUtterances != null) __obj.updateDynamic("sampleUtterances")(sampleUtterances)
     if (slotType != null) __obj.updateDynamic("slotType")(slotType)

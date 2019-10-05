@@ -1,6 +1,7 @@
 package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,4 +26,8 @@ class AjaxNavigate () extends js.Object {
     anchorName: String
   ): Unit = js.native
 }
+
+@JSGlobal("ajaxNavigate")
+@js.native
+object ajaxNavigate extends TopLevel[AjaxNavigate]
 

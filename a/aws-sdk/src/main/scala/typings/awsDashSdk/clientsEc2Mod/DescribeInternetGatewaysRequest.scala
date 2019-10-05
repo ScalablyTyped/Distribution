@@ -30,17 +30,17 @@ trait DescribeInternetGatewaysRequest extends js.Object {
 object DescribeInternetGatewaysRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     InternetGatewayIds: ValueStringList = null,
-    MaxResults: js.UndefOr[DescribeInternetGatewaysMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeInternetGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (InternetGatewayIds != null) __obj.updateDynamic("InternetGatewayIds")(InternetGatewayIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeInternetGatewaysRequest]
   }

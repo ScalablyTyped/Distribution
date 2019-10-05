@@ -66,15 +66,15 @@ object HumanTaskConfig {
     TaskTitle: TaskTitle,
     UiConfig: UiConfig,
     WorkteamArn: WorkteamArn,
-    MaxConcurrentTaskCount: js.UndefOr[MaxConcurrentTaskCount] = js.undefined,
+    MaxConcurrentTaskCount: Int | Double = null,
     PublicWorkforceTaskPrice: PublicWorkforceTaskPrice = null,
-    TaskAvailabilityLifetimeInSeconds: js.UndefOr[TaskAvailabilityLifetimeInSeconds] = js.undefined,
+    TaskAvailabilityLifetimeInSeconds: Int | Double = null,
     TaskKeywords: TaskKeywords = null
   ): HumanTaskConfig = {
     val __obj = js.Dynamic.literal(AnnotationConsolidationConfig = AnnotationConsolidationConfig, NumberOfHumanWorkersPerDataObject = NumberOfHumanWorkersPerDataObject, PreHumanTaskLambdaArn = PreHumanTaskLambdaArn, TaskDescription = TaskDescription, TaskTimeLimitInSeconds = TaskTimeLimitInSeconds, TaskTitle = TaskTitle, UiConfig = UiConfig, WorkteamArn = WorkteamArn)
-    if (!js.isUndefined(MaxConcurrentTaskCount)) __obj.updateDynamic("MaxConcurrentTaskCount")(MaxConcurrentTaskCount)
+    if (MaxConcurrentTaskCount != null) __obj.updateDynamic("MaxConcurrentTaskCount")(MaxConcurrentTaskCount.asInstanceOf[js.Any])
     if (PublicWorkforceTaskPrice != null) __obj.updateDynamic("PublicWorkforceTaskPrice")(PublicWorkforceTaskPrice)
-    if (!js.isUndefined(TaskAvailabilityLifetimeInSeconds)) __obj.updateDynamic("TaskAvailabilityLifetimeInSeconds")(TaskAvailabilityLifetimeInSeconds)
+    if (TaskAvailabilityLifetimeInSeconds != null) __obj.updateDynamic("TaskAvailabilityLifetimeInSeconds")(TaskAvailabilityLifetimeInSeconds.asInstanceOf[js.Any])
     if (TaskKeywords != null) __obj.updateDynamic("TaskKeywords")(TaskKeywords)
     __obj.asInstanceOf[HumanTaskConfig]
   }

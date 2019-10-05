@@ -1,11 +1,11 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.omniboxNs.OmniboxInputCancelledEvent
-import typings.chrome.chromeNs.omniboxNs.OmniboxInputChangedEvent
-import typings.chrome.chromeNs.omniboxNs.OmniboxInputEnteredEvent
-import typings.chrome.chromeNs.omniboxNs.OmniboxInputStartedEvent
-import typings.chrome.chromeNs.omniboxNs.OmniboxSuggestionDeletedEvent
-import typings.chrome.chromeNs.omniboxNs.Suggestion
+import typings.chrome.chrome.omnibox.OmniboxInputCancelledEvent
+import typings.chrome.chrome.omnibox.OmniboxInputChangedEvent
+import typings.chrome.chrome.omnibox.OmniboxInputEnteredEvent
+import typings.chrome.chrome.omnibox.OmniboxInputStartedEvent
+import typings.chrome.chrome.omnibox.OmniboxSuggestionDeletedEvent
+import typings.chrome.chrome.omnibox.Suggestion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.PublicUserInfo
-import typings.evernote.evernoteMod.EvernoteNs.User
+import typings.evernote.evernoteMod.Evernote.PublicUserInfo
+import typings.evernote.evernoteMod.Evernote.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

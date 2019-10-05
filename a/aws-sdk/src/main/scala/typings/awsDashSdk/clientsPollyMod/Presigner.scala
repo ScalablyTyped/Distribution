@@ -1,6 +1,6 @@
 package typings.awsDashSdk.clientsPollyMod
 
-import typings.awsDashSdk.libPollyPresignerMod.PresignerNs.PresignerOptions
+import typings.awsDashSdk.libPollyPresignerMod.Presigner.PresignerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

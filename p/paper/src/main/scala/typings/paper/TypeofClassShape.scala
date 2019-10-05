@@ -1,10 +1,10 @@
 package typings.paper
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.paper.paperNs.Point
-import typings.paper.paperNs.Rectangle
-import typings.paper.paperNs.Shape
-import typings.paper.paperNs.Size
+import typings.paper.paper.Point
+import typings.paper.paper.Rectangle
+import typings.paper.paper.Shape
+import typings.paper.paper.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait TypeofClassShape extends Instantiable0[Shape] {
     * @param rectangle - the rectangle object describing the geometry of the rectangular shape to be created.
     * @param radius [optional] - the size of the rounded corners, default: null
     */
-  def Rectangle(rectangle: typings.paper.paperNs.Rectangle): Shape = js.native
-  def Rectangle(rectangle: typings.paper.paperNs.Rectangle, radius: Double): Shape = js.native
+  def Rectangle(rectangle: typings.paper.paper.Rectangle): Shape = js.native
+  def Rectangle(rectangle: typings.paper.paper.Rectangle, radius: Double): Shape = js.native
 }
 

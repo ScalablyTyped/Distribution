@@ -22,9 +22,9 @@ trait UploadEntityDefinitionsRequest extends js.Object {
 object UploadEntityDefinitionsRequest {
   @scala.inline
   def apply(
-    deprecateExistingEntities: js.UndefOr[DeprecateExistingEntities] = js.undefined,
+    deprecateExistingEntities: js.UndefOr[Boolean] = js.undefined,
     document: DefinitionDocument = null,
-    syncWithPublicNamespace: js.UndefOr[SyncWithPublicNamespace] = js.undefined
+    syncWithPublicNamespace: js.UndefOr[Boolean] = js.undefined
   ): UploadEntityDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(deprecateExistingEntities)) __obj.updateDynamic("deprecateExistingEntities")(deprecateExistingEntities)

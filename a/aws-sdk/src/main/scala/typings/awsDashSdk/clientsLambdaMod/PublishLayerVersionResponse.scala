@@ -49,7 +49,7 @@ object PublishLayerVersionResponse {
     LayerArn: LayerArn = null,
     LayerVersionArn: LayerVersionArn = null,
     LicenseInfo: LicenseInfo = null,
-    Version: js.UndefOr[LayerVersionNumber] = js.undefined
+    Version: Int | Double = null
   ): PublishLayerVersionResponse = {
     val __obj = js.Dynamic.literal()
     if (CompatibleRuntimes != null) __obj.updateDynamic("CompatibleRuntimes")(CompatibleRuntimes)
@@ -59,7 +59,7 @@ object PublishLayerVersionResponse {
     if (LayerArn != null) __obj.updateDynamic("LayerArn")(LayerArn)
     if (LayerVersionArn != null) __obj.updateDynamic("LayerVersionArn")(LayerVersionArn)
     if (LicenseInfo != null) __obj.updateDynamic("LicenseInfo")(LicenseInfo)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishLayerVersionResponse]
   }
 }

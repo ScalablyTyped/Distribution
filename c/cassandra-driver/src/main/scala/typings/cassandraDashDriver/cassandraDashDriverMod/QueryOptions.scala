@@ -1,6 +1,7 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy
+import typings.cassandraDashDriver.cassandraDashDriverMod.policies.retry.RetryPolicy
+import typings.long.longMod.^
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +28,7 @@ trait QueryOptions extends js.Object {
   var routingKey: js.UndefOr[Buffer | js.Array[Buffer]] = js.undefined
   var routingNames: js.UndefOr[js.Array[String]] = js.undefined
   var serialConsistency: js.UndefOr[Double] = js.undefined
-  var timestamp: js.UndefOr[Double | typings.long.longMod.^ ] = js.undefined
+  var timestamp: js.UndefOr[Double | ^ ] = js.undefined
   var traceQuery: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -54,7 +55,7 @@ object QueryOptions {
     routingKey: Buffer | js.Array[Buffer] = null,
     routingNames: js.Array[String] = null,
     serialConsistency: Int | Double = null,
-    timestamp: Double | typings.long.longMod.^  = null,
+    timestamp: Double | ^  = null,
     traceQuery: js.UndefOr[Boolean] = js.undefined
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsPolygonSymbol3DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonSymbol3D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonSymbol3DProperties
+import typings.arcgisDashJsDashApi.__esri.PolygonSymbol3D
+import typings.arcgisDashJsDashApi.__esri.PolygonSymbol3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

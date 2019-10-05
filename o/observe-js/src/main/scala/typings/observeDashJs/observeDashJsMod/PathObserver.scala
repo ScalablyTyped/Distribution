@@ -1,6 +1,8 @@
 package typings.observeDashJs.observeDashJsMod
 
-import typings.observeDashJs.observeDashJsMod.observejsNs.PathObserver_instance
+import org.scalablytyped.runtime.TopLevel
+import typings.observeDashJs.observeDashJsMod.observejs.PathObserver_instance
+import typings.observeDashJs.observeDashJsMod.observejs.PathObserver_static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +19,8 @@ class PathObserver protected () extends PathObserver_instance {
   def this(receiver: js.Any, path: String) = this()
   def this(receiver: js.Any, path: String, defaultValue: js.Any) = this()
 }
+
+@JSImport("observe-js", "PathObserver")
+@js.native
+object PathObserver extends TopLevel[PathObserver_static]
 

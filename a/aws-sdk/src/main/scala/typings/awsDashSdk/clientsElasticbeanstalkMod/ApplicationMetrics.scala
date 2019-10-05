@@ -26,15 +26,15 @@ trait ApplicationMetrics extends js.Object {
 object ApplicationMetrics {
   @scala.inline
   def apply(
-    Duration: js.UndefOr[NullableInteger] = js.undefined,
+    Duration: Int | Double = null,
     Latency: Latency = null,
-    RequestCount: js.UndefOr[RequestCount] = js.undefined,
+    RequestCount: Int | Double = null,
     StatusCodes: StatusCodes = null
   ): ApplicationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (Latency != null) __obj.updateDynamic("Latency")(Latency)
-    if (!js.isUndefined(RequestCount)) __obj.updateDynamic("RequestCount")(RequestCount)
+    if (RequestCount != null) __obj.updateDynamic("RequestCount")(RequestCount.asInstanceOf[js.Any])
     if (StatusCodes != null) __obj.updateDynamic("StatusCodes")(StatusCodes)
     __obj.asInstanceOf[ApplicationMetrics]
   }

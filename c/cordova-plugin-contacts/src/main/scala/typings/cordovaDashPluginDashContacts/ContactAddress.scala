@@ -30,22 +30,6 @@ trait ContactAddress extends js.Object {
 
 @JSGlobal("ContactAddress")
 @js.native
-class ContactAddressCls protected () extends ContactAddress {
-  /** Constructor of ContactAddress object */
-  def this(
-    pref: js.UndefOr[Boolean],
-    `type`: js.UndefOr[String],
-    formatted: js.UndefOr[String],
-    streetAddress: js.UndefOr[String],
-    locality: js.UndefOr[String],
-    region: js.UndefOr[String],
-    postalCode: js.UndefOr[String],
-    country: js.UndefOr[String]
-  ) = this()
-}
-
-@JSGlobal("ContactAddress")
-@js.native
 object ContactAddress
   extends /** Constructor of ContactAddress object */
 Instantiable8[

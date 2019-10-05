@@ -1,8 +1,8 @@
 package typings.relayDashRuntime.libStoreRelayStoreTypesMod
 
-import typings.relayDashRuntime.Anon_CacheConfigOperation
-import typings.relayDashRuntime.Anon_OperationOptimisticResponse
-import typings.relayDashRuntime.Anon_OperationSource
+import typings.relayDashRuntime.Anon_CacheConfig
+import typings.relayDashRuntime.Anon_Key
+import typings.relayDashRuntime.Anon_Operation
 import typings.relayDashRuntime.libNetworkRelayNetworkLoggerTransactionMod.LoggerTransactionConfig
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.Network
@@ -55,7 +55,7 @@ trait Environment extends js.Object {
     * Note: Observables are lazy, so calling this method will do nothing until
     * the result is subscribed to: environment.execute({...}).subscribe({...}).
     */
-  def execute(config: Anon_CacheConfigOperation): RelayObservable[GraphQLResponse]
+  def execute(config: Anon_CacheConfig): RelayObservable[GraphQLResponse]
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Mutation operation, the result of which is then normalized and
@@ -66,9 +66,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeMutation({...}).subscribe({...}).
     */
-  def executeMutation(
-    hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: Anon_OperationOptimisticResponse
-  ): RelayObservable[GraphQLResponse]
+  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: Anon_Key): RelayObservable[GraphQLResponse]
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Query or Subscription operation responses, the result of which is
@@ -78,11 +76,11 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeWithSource({...}).subscribe({...}).
     */
-  def executeWithSource(hasOperationSource: Anon_OperationSource): RelayObservable[GraphQLResponse]
+  def executeWithSource(hasOperationSource: Anon_Operation): RelayObservable[GraphQLResponse]
   /**
     * Get an instance of a logger
     */
-  def getLogger(config: LoggerTransactionConfig): Logger
+  def getLogger(config: LoggerTransactionConfig): js.UndefOr[Logger | Null]
   /**
     * Get the environment's internal Network.
     */
@@ -123,10 +121,10 @@ object Environment {
     check: NormalizationSelector => Boolean,
     commitPayload: (OperationDescriptor, PayloadData) => Unit,
     commitUpdate: StoreUpdater => Unit,
-    execute: Anon_CacheConfigOperation => RelayObservable[GraphQLResponse],
-    executeMutation: Anon_OperationOptimisticResponse => RelayObservable[GraphQLResponse],
-    executeWithSource: Anon_OperationSource => RelayObservable[GraphQLResponse],
-    getLogger: LoggerTransactionConfig => Logger,
+    execute: Anon_CacheConfig => RelayObservable[GraphQLResponse],
+    executeMutation: Anon_Key => RelayObservable[GraphQLResponse],
+    executeWithSource: Anon_Operation => RelayObservable[GraphQLResponse],
+    getLogger: LoggerTransactionConfig => js.UndefOr[Logger | Null],
     getNetwork: () => Network,
     getOperationTracker: () => RelayOperationTracker,
     getStore: () => Store,

@@ -28,23 +28,3 @@ class ^ protected () extends EmailTemplate {
   override def send(options: EmailOptions): js.Any = js.native
 }
 
-@JSImport("email-templates", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  /**
-    *   shorthand use of `juiceResources` with the config
-    *   mainly for custom renders like from a database).
-    */
-  def juiceResources(html: String): js.Promise[String] = js.native
-  /**
-    *
-    * @param view The Html pug to render
-    * @param locals The template Variables
-    */
-  def render(view: String, locals: js.Any): js.Promise[String] = js.native
-  /**
-    * Send the Email
-    */
-  def send(options: EmailOptions): js.Any = js.native
-}
-

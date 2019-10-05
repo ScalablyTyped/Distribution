@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.CommandOptions
+import typings.cypress.Cypress.CommandOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

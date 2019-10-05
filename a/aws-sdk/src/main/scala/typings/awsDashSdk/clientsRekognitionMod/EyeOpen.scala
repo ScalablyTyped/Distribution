@@ -17,9 +17,9 @@ trait EyeOpen extends js.Object {
 
 object EyeOpen {
   @scala.inline
-  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Value: js.UndefOr[Boolean] = js.undefined): EyeOpen = {
+  def apply(Confidence: Int | Double = null, Value: js.UndefOr[scala.Boolean] = js.undefined): EyeOpen = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
     __obj.asInstanceOf[EyeOpen]
   }

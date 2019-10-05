@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGaugeNs.CenterContext
+import typings.atOracleOraclejet.ojgaugeMod.ojStatusMeterGauge.CenterContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

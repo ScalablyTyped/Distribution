@@ -11,7 +11,7 @@ trait ListJobsOutput extends js.Object {
 
 object ListJobsOutput {
   @scala.inline
-  def apply(IsTruncated: js.UndefOr[IsTruncated] = js.undefined, Jobs: JobsList = null): ListJobsOutput = {
+  def apply(IsTruncated: js.UndefOr[Boolean] = js.undefined, Jobs: JobsList = null): ListJobsOutput = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (Jobs != null) __obj.updateDynamic("Jobs")(Jobs)

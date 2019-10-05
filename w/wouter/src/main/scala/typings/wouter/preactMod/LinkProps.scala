@@ -14,8 +14,14 @@ trait LinkProps extends js.Object {
 
 object LinkProps {
   @scala.inline
-  def apply(children: ComponentChildren, href: String = null, onClick: () => Unit = null, to: String = null): LinkProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def apply(
+    children: ComponentChildren = null,
+    href: String = null,
+    onClick: () => Unit = null,
+    to: String = null
+  ): LinkProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (to != null) __obj.updateDynamic("to")(to)

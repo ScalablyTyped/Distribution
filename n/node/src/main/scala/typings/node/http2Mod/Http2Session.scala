@@ -2,7 +2,7 @@ package typings.node.http2Mod
 
 import typings.node.Buffer
 import typings.node.Error
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.nodeStrings.close

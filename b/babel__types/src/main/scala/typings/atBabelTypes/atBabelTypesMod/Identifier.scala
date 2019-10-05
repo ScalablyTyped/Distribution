@@ -49,3 +49,24 @@ object Identifier {
   }
 }
 
+@JSImport("@babel/types", "identifier")
+@js.native
+object identifier extends js.Object {
+  def apply(name: String): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator]): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Boolean): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Boolean, typeAnnotation: Noop): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Boolean, typeAnnotation: TSTypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Boolean, typeAnnotation: TypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Null, typeAnnotation: Noop): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Null, typeAnnotation: TSTypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: js.Array[Decorator], optional: Null, typeAnnotation: TypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Boolean): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Boolean, typeAnnotation: Noop): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Boolean, typeAnnotation: TSTypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Boolean, typeAnnotation: TypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Null, typeAnnotation: Noop): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Null, typeAnnotation: TSTypeAnnotation): Identifier = js.native
+  def apply(name: String, decorators: Null, optional: Null, typeAnnotation: TypeAnnotation): Identifier = js.native
+}
+

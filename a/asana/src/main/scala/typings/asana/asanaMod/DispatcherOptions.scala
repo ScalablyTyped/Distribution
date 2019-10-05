@@ -1,13 +1,14 @@
 package typings.asana.asanaMod
 
-import typings.asana.asanaMod.authNs.Authenticator
+import typings.asana.asanaMod.auth.Authenticator
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DispatcherOptions extends js.Object {
   var authenticator: js.UndefOr[Authenticator] = js.undefined
-  var handleUnauthorized: js.UndefOr[js.Function0[Boolean | typings.bluebird.bluebirdMod.^[Boolean]]] = js.undefined
+  var handleUnauthorized: js.UndefOr[js.Function0[Boolean | ^[Boolean]]] = js.undefined
   var requestTimeout: js.UndefOr[String] = js.undefined
   var retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
 }
@@ -16,7 +17,7 @@ object DispatcherOptions {
   @scala.inline
   def apply(
     authenticator: Authenticator = null,
-    handleUnauthorized: () => Boolean | typings.bluebird.bluebirdMod.^[Boolean] = null,
+    handleUnauthorized: () => Boolean | ^[Boolean] = null,
     requestTimeout: String = null,
     retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
   ): DispatcherOptions = {

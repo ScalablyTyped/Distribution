@@ -37,3 +37,9 @@ object TSTypeLiteral {
   }
 }
 
+@JSImport("@babel/types", "tsTypeLiteral")
+@js.native
+object tsTypeLiteral extends js.Object {
+  def apply(members: js.Array[TSTypeElement]): TSTypeLiteral = js.native
+}
+

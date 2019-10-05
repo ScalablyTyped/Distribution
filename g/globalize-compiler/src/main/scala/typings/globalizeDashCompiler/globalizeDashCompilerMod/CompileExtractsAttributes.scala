@@ -1,6 +1,6 @@
 package typings.globalizeDashCompiler.globalizeDashCompilerMod
 
-import typings.globalize.distGlobalizeMessageMod.distGlobalizeMod.Static
+import typings.globalize.distGlobalizeMod.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

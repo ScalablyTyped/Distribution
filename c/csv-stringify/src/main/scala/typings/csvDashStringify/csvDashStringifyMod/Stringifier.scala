@@ -1,7 +1,7 @@
 package typings.csvDashStringify.csvDashStringifyMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

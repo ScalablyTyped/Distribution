@@ -1,7 +1,7 @@
 package typings.ncp.ncpMod
 
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distInitializersMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serializationNs.Serializable
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serialization.Serializable
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatCommonMod.Shape

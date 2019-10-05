@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2VpcEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.VpcEndpointDnsEntry
+import typings.atPulumiAws.typesInputMod.ec2.VpcEndpointDnsEntry
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

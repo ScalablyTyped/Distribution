@@ -1,7 +1,7 @@
 package typings.asyncblock
 
-import typings.asyncblock.underscoreAbNs.abNs.Flow
-import typings.asyncblock.underscoreAbNs.abNs.Result
+import typings.asyncblock._ab.ab.Flow
+import typings.asyncblock._ab.ab.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

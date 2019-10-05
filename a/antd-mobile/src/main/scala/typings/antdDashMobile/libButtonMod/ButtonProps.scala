@@ -6,7 +6,9 @@ import typings.antdDashMobile.antdDashMobileStrings.primary
 import typings.antdDashMobile.antdDashMobileStrings.small
 import typings.antdDashMobile.antdDashMobileStrings.warning
 import typings.antdDashMobile.libButtonPropsTypeMod.ButtonPropsType
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLAnchorElement
@@ -36,7 +38,7 @@ object ButtonProps {
     icon: ReactNode = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[HTMLAnchorElement] = null,
+    onClick: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     role: String = null,
     size: large | small = null,
@@ -51,7 +53,7 @@ object ButtonProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

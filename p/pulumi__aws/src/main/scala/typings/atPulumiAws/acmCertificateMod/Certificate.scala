@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmCertificateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.acmNs.CertificateDomainValidationOption
-import typings.atPulumiAws.typesOutputMod.acmNs.CertificateOptions
+import typings.atPulumiAws.typesOutputMod.acm.CertificateDomainValidationOption
+import typings.atPulumiAws.typesOutputMod.acm.CertificateOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -10,6 +10,5 @@ object ^ extends js.Object {
   var StyleSheet: StyleSheetStatic = js.native
   var StyleSheetServer: StyleSheetServerStatic = js.native
   var StyleSheetTestUtils: StyleSheetTestUtilsStatic = js.native
-  def css(styles: js.Any*): String = js.native
 }
 

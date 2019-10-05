@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Autocomplete
-import typings.ejDotWebDotAll.ejNs.AutocompleteNs.Model
+import typings.ejDotWebDotAll.ej.Autocomplete
+import typings.ejDotWebDotAll.ej.Autocomplete.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

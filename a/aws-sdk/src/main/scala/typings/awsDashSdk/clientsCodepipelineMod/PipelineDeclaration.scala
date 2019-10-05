@@ -39,12 +39,12 @@ object PipelineDeclaration {
     stages: PipelineStageDeclarationList,
     artifactStore: ArtifactStore = null,
     artifactStores: ArtifactStoreMap = null,
-    version: js.UndefOr[PipelineVersion] = js.undefined
+    version: Int | Double = null
   ): PipelineDeclaration = {
     val __obj = js.Dynamic.literal(name = name, roleArn = roleArn, stages = stages)
     if (artifactStore != null) __obj.updateDynamic("artifactStore")(artifactStore)
     if (artifactStores != null) __obj.updateDynamic("artifactStores")(artifactStores)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineDeclaration]
   }
 }

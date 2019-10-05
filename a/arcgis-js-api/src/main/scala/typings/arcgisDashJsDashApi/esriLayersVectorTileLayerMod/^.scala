@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersVectorTileLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VectorTileLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.VectorTileLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

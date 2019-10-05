@@ -36,7 +36,7 @@ object DescribeSnapshotSchedulesMessage {
   def apply(
     ClusterIdentifier: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     ScheduleIdentifier: String = null,
     TagKeys: TagKeyList = null,
     TagValues: TagValueList = null
@@ -44,7 +44,7 @@ object DescribeSnapshotSchedulesMessage {
     val __obj = js.Dynamic.literal()
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ScheduleIdentifier != null) __obj.updateDynamic("ScheduleIdentifier")(ScheduleIdentifier)
     if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys)
     if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues)

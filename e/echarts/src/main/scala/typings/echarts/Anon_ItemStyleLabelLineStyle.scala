@@ -16,7 +16,7 @@ trait Anon_ItemStyleLabelLineStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
 }
 
 object Anon_ItemStyleLabelLineStyle {
@@ -24,7 +24,7 @@ object Anon_ItemStyleLabelLineStyle {
   def apply(
     itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColor = null,
-    lineStyle: Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = null
+    lineStyle: Anon_ColorCurvenessOpacityShadowBlur = null
   ): Anon_ItemStyleLabelLineStyle = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)

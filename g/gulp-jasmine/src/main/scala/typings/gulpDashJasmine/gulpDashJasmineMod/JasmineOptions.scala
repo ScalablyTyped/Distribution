@@ -1,6 +1,6 @@
 package typings.gulpDashJasmine.gulpDashJasmineMod
 
-import typings.jasmine.jasmineNs.CustomReporter
+import typings.jasmine.jasmine.CustomReporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

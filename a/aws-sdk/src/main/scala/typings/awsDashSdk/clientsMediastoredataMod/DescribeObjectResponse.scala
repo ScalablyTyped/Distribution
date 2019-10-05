@@ -31,14 +31,14 @@ object DescribeObjectResponse {
   @scala.inline
   def apply(
     CacheControl: StringPrimitive = null,
-    ContentLength: js.UndefOr[NonNegativeLong] = js.undefined,
+    ContentLength: Int | Double = null,
     ContentType: ContentType = null,
     ETag: ETag = null,
     LastModified: TimeStamp = null
   ): DescribeObjectResponse = {
     val __obj = js.Dynamic.literal()
     if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl)
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength)
+    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
     if (ETag != null) __obj.updateDynamic("ETag")(ETag)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)

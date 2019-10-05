@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.ContentWorker
+import typings.jpm.FFAddonSDK.ContentWorker
 import typings.jpm.jpmStrings.end
 import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.start

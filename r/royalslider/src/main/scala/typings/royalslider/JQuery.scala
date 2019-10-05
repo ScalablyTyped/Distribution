@@ -1,6 +1,6 @@
 package typings.royalslider
 
-import typings.royalslider.RoyalSliderNs.RoyalSliderOptions
+import typings.royalslider.RoyalSlider.RoyalSliderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

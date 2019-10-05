@@ -37,7 +37,7 @@ object MemberSummary {
     CreationDate: Timestamp = null,
     Description: DescriptionString = null,
     Id: ResourceIdString = null,
-    IsOwned: js.UndefOr[IsOwned] = js.undefined,
+    IsOwned: js.UndefOr[Boolean] = js.undefined,
     Name: NetworkMemberNameString = null,
     Status: MemberStatus = null
   ): MemberSummary = {

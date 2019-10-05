@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersWebTileLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WebTileLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.WebTileLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

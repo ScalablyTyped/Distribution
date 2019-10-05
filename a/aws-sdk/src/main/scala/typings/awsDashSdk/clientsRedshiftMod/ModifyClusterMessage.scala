@@ -99,31 +99,31 @@ object ModifyClusterMessage {
   @scala.inline
   def apply(
     ClusterIdentifier: String,
-    AllowVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AllowVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
     ClusterParameterGroupName: String = null,
     ClusterSecurityGroups: ClusterSecurityGroupNameList = null,
     ClusterType: String = null,
     ClusterVersion: String = null,
     ElasticIp: String = null,
-    Encrypted: js.UndefOr[BooleanOptional] = js.undefined,
-    EnhancedVpcRouting: js.UndefOr[BooleanOptional] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
     HsmClientCertificateIdentifier: String = null,
     HsmConfigurationIdentifier: String = null,
     KmsKeyId: String = null,
     MaintenanceTrackName: String = null,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
     MasterUserPassword: String = null,
     NewClusterIdentifier: String = null,
     NodeType: String = null,
-    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    NumberOfNodes: Int | scala.Double = null,
     PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): ModifyClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier)
     if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade)
-    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod)
+    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (ClusterParameterGroupName != null) __obj.updateDynamic("ClusterParameterGroupName")(ClusterParameterGroupName)
     if (ClusterSecurityGroups != null) __obj.updateDynamic("ClusterSecurityGroups")(ClusterSecurityGroups)
     if (ClusterType != null) __obj.updateDynamic("ClusterType")(ClusterType)
@@ -135,11 +135,11 @@ object ModifyClusterMessage {
     if (HsmConfigurationIdentifier != null) __obj.updateDynamic("HsmConfigurationIdentifier")(HsmConfigurationIdentifier)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
+    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (NewClusterIdentifier != null) __obj.updateDynamic("NewClusterIdentifier")(NewClusterIdentifier)
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds)

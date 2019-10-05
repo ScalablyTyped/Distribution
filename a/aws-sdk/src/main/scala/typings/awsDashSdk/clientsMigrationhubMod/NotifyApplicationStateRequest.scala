@@ -21,7 +21,11 @@ trait NotifyApplicationStateRequest extends js.Object {
 
 object NotifyApplicationStateRequest {
   @scala.inline
-  def apply(ApplicationId: ApplicationId, Status: ApplicationStatus, DryRun: js.UndefOr[DryRun] = js.undefined): NotifyApplicationStateRequest = {
+  def apply(
+    ApplicationId: ApplicationId,
+    Status: ApplicationStatus,
+    DryRun: js.UndefOr[Boolean] = js.undefined
+  ): NotifyApplicationStateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, Status = Status.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[NotifyApplicationStateRequest]

@@ -38,14 +38,14 @@ object InvokeDefinition {
     `type`: String,
     autoForward: js.UndefOr[Boolean] = js.undefined,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
-    exec: ActionFunction[TContext, TEvent] = null,
+    exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null,
     forward: js.UndefOr[Boolean] = js.undefined
   ): InvokeDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(id = id, src = src)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
     __obj.asInstanceOf[InvokeDefinition[TContext, TEvent]]
   }

@@ -26,16 +26,16 @@ trait ConfusionMatrix extends js.Object {
 object ConfusionMatrix {
   @scala.inline
   def apply(
-    NumFalseNegatives: js.UndefOr[RecordsCount] = js.undefined,
-    NumFalsePositives: js.UndefOr[RecordsCount] = js.undefined,
-    NumTrueNegatives: js.UndefOr[RecordsCount] = js.undefined,
-    NumTruePositives: js.UndefOr[RecordsCount] = js.undefined
+    NumFalseNegatives: Int | Double = null,
+    NumFalsePositives: Int | Double = null,
+    NumTrueNegatives: Int | Double = null,
+    NumTruePositives: Int | Double = null
   ): ConfusionMatrix = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(NumFalseNegatives)) __obj.updateDynamic("NumFalseNegatives")(NumFalseNegatives)
-    if (!js.isUndefined(NumFalsePositives)) __obj.updateDynamic("NumFalsePositives")(NumFalsePositives)
-    if (!js.isUndefined(NumTrueNegatives)) __obj.updateDynamic("NumTrueNegatives")(NumTrueNegatives)
-    if (!js.isUndefined(NumTruePositives)) __obj.updateDynamic("NumTruePositives")(NumTruePositives)
+    if (NumFalseNegatives != null) __obj.updateDynamic("NumFalseNegatives")(NumFalseNegatives.asInstanceOf[js.Any])
+    if (NumFalsePositives != null) __obj.updateDynamic("NumFalsePositives")(NumFalsePositives.asInstanceOf[js.Any])
+    if (NumTrueNegatives != null) __obj.updateDynamic("NumTrueNegatives")(NumTrueNegatives.asInstanceOf[js.Any])
+    if (NumTruePositives != null) __obj.updateDynamic("NumTruePositives")(NumTruePositives.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfusionMatrix]
   }
 }

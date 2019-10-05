@@ -14,8 +14,6 @@ class ^ protected ()
 @JSImport("bigi", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ONE: typings.bigi.bigiMod.bigi with Constants = js.native
-  val ZERO: typings.bigi.bigiMod.bigi with Constants = js.native
   def fromBuffer(buffer: js.Any): typings.bigi.bigiMod.bigi = js.native
   def fromByteArrayUnsigned(): js.Array[Double] = js.native
   def fromByteArrayUnsigned(byteArray: js.Any): js.Array[Double] = js.native

@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsL
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps
 import typings.react.NativeMouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -226,7 +227,7 @@ object IColumn {
     onColumnContextMenu: (/* column */ js.UndefOr[IColumn], /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]]) => Unit = null,
     onColumnResize: /* width */ js.UndefOr[Double] => Unit = null,
     onRender: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => _ = null,
-    onRenderDivider: IRenderFunction[IDetailsColumnProps] = null,
+    onRenderDivider: (/* props */ js.UndefOr[IDetailsColumnProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsColumnProps], Element | Null]]) => Element | Null = null,
     sortAscendingAriaLabel: String = null,
     sortDescendingAriaLabel: String = null
   ): IColumn = {
@@ -261,7 +262,7 @@ object IColumn {
     if (onColumnContextMenu != null) __obj.updateDynamic("onColumnContextMenu")(js.Any.fromFunction2(onColumnContextMenu))
     if (onColumnResize != null) __obj.updateDynamic("onColumnResize")(js.Any.fromFunction1(onColumnResize))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction3(onRender))
-    if (onRenderDivider != null) __obj.updateDynamic("onRenderDivider")(onRenderDivider)
+    if (onRenderDivider != null) __obj.updateDynamic("onRenderDivider")(js.Any.fromFunction2(onRenderDivider))
     if (sortAscendingAriaLabel != null) __obj.updateDynamic("sortAscendingAriaLabel")(sortAscendingAriaLabel)
     if (sortDescendingAriaLabel != null) __obj.updateDynamic("sortDescendingAriaLabel")(sortDescendingAriaLabel)
     __obj.asInstanceOf[IColumn]

@@ -2,8 +2,8 @@ package typings.emberDashMocha.emberDashMochaMod
 
 import typings.emberDashMocha.mochaAfterEach
 import typings.emberDashMocha.mochaBeforeEach
-import typings.mocha.MochaNs.AsyncFunc
-import typings.mocha.MochaNs.Func
+import typings.mocha.Mocha.AsyncFunc
+import typings.mocha.Mocha.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

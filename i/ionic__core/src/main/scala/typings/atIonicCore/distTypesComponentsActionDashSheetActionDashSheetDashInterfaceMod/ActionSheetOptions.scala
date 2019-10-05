@@ -1,6 +1,7 @@
 package typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,11 +29,11 @@ object ActionSheetOptions {
     animated: js.UndefOr[Boolean] = js.undefined,
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: AnimationBuilder = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     header: String = null,
     id: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: AnimationBuilder = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: Mode = null,
     subHeader: String = null,
     translucent: js.UndefOr[Boolean] = js.undefined
@@ -41,11 +42,11 @@ object ActionSheetOptions {
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose)
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (subHeader != null) __obj.updateDynamic("subHeader")(subHeader)
     if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)

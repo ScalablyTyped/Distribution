@@ -249,5 +249,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "StandardMaterial")
 @js.native
 class StandardMaterial ()
-  extends typings.playcanvas.pcNs.StandardMaterial
+  extends typings.playcanvas.pc.StandardMaterial
 

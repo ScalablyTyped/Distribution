@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCredentialsHeaderValue
+import typings.winrtDashUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

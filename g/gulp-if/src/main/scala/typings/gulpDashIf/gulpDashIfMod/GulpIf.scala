@@ -1,6 +1,6 @@
 package typings.gulpDashIf.gulpDashIfMod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.std.RegExp
 import typings.vinyl.vinylMod.File
 import scala.scalajs.js

@@ -21,13 +21,9 @@ trait ListManagedSchemaArnsRequest extends js.Object {
 
 object ListManagedSchemaArnsRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null,
-    SchemaArn: Arn = null
-  ): ListManagedSchemaArnsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, SchemaArn: Arn = null): ListManagedSchemaArnsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn)
     __obj.asInstanceOf[ListManagedSchemaArnsRequest]

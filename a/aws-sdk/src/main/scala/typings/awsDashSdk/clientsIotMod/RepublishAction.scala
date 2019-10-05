@@ -21,9 +21,9 @@ trait RepublishAction extends js.Object {
 
 object RepublishAction {
   @scala.inline
-  def apply(roleArn: AwsArn, topic: TopicPattern, qos: js.UndefOr[Qos] = js.undefined): RepublishAction = {
+  def apply(roleArn: AwsArn, topic: TopicPattern, qos: Int | Double = null): RepublishAction = {
     val __obj = js.Dynamic.literal(roleArn = roleArn, topic = topic)
-    if (!js.isUndefined(qos)) __obj.updateDynamic("qos")(qos)
+    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepublishAction]
   }
 }

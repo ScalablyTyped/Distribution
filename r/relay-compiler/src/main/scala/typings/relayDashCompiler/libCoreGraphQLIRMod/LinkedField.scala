@@ -32,15 +32,16 @@ object LinkedField {
     directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.LinkedField,
     loc: Location,
-    metadata: Metadata,
     name: String,
     selections: js.Array[Selection],
     `type`: GraphQLOutputType,
-    handles: js.Array[Handle] = null
+    handles: js.Array[Handle] = null,
+    metadata: Metadata = null
   ): LinkedField = {
-    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, selections = selections)
+    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, loc = loc, name = name, selections = selections)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (handles != null) __obj.updateDynamic("handles")(handles)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedField]
   }
 }

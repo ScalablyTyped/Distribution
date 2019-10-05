@@ -28,12 +28,12 @@ object GetOrganizationConfigRuleDetailedStatusRequest {
   def apply(
     OrganizationConfigRuleName: OrganizationConfigRuleName,
     Filters: StatusDetailFilters = null,
-    Limit: js.UndefOr[CosmosPageLimit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: String = null
   ): GetOrganizationConfigRuleDetailedStatusRequest = {
     val __obj = js.Dynamic.literal(OrganizationConfigRuleName = OrganizationConfigRuleName)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetOrganizationConfigRuleDetailedStatusRequest]
   }

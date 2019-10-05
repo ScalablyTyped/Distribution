@@ -145,3 +145,9 @@ trait LineRadial[Datum] extends js.Object {
   def radius(radius: Double): this.type = js.native
 }
 
+@JSImport("d3-shape", "lineRadial")
+@js.native
+object lineRadial extends js.Object {
+  def apply(): LineRadial[js.Tuple2[Double, Double]] = js.native
+}
+

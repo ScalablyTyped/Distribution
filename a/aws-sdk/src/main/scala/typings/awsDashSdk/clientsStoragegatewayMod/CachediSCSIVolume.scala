@@ -66,11 +66,11 @@ object CachediSCSIVolume {
     VolumeARN: VolumeARN = null,
     VolumeAttachmentStatus: VolumeAttachmentStatus = null,
     VolumeId: VolumeId = null,
-    VolumeProgress: js.UndefOr[DoubleObject] = js.undefined,
-    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
+    VolumeProgress: Int | Double = null,
+    VolumeSizeInBytes: Int | Double = null,
     VolumeStatus: VolumeStatus = null,
     VolumeType: VolumeType = null,
-    VolumeUsedInBytes: js.UndefOr[VolumeUsedInBytes] = js.undefined,
+    VolumeUsedInBytes: Int | Double = null,
     VolumeiSCSIAttributes: VolumeiSCSIAttributes = null
   ): CachediSCSIVolume = {
     val __obj = js.Dynamic.literal()
@@ -81,11 +81,11 @@ object CachediSCSIVolume {
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN)
     if (VolumeAttachmentStatus != null) __obj.updateDynamic("VolumeAttachmentStatus")(VolumeAttachmentStatus)
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
-    if (!js.isUndefined(VolumeProgress)) __obj.updateDynamic("VolumeProgress")(VolumeProgress)
-    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes)
+    if (VolumeProgress != null) __obj.updateDynamic("VolumeProgress")(VolumeProgress.asInstanceOf[js.Any])
+    if (VolumeSizeInBytes != null) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.asInstanceOf[js.Any])
     if (VolumeStatus != null) __obj.updateDynamic("VolumeStatus")(VolumeStatus)
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType)
-    if (!js.isUndefined(VolumeUsedInBytes)) __obj.updateDynamic("VolumeUsedInBytes")(VolumeUsedInBytes)
+    if (VolumeUsedInBytes != null) __obj.updateDynamic("VolumeUsedInBytes")(VolumeUsedInBytes.asInstanceOf[js.Any])
     if (VolumeiSCSIAttributes != null) __obj.updateDynamic("VolumeiSCSIAttributes")(VolumeiSCSIAttributes)
     __obj.asInstanceOf[CachediSCSIVolume]
   }

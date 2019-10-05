@@ -1,0 +1,19 @@
+package typings.backlogDashJs.backlogDashJsMod.Option.Project
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DeleteProjectUsersParams extends js.Object {
+  var userId: Double
+}
+
+object DeleteProjectUsersParams {
+  @scala.inline
+  def apply(userId: Double): DeleteProjectUsersParams = {
+    val __obj = js.Dynamic.literal(userId = userId)
+  
+    __obj.asInstanceOf[DeleteProjectUsersParams]
+  }
+}
+

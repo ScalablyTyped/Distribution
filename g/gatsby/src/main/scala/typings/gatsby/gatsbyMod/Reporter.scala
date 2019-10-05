@@ -2,6 +2,7 @@ package typings.gatsby.gatsbyMod
 
 import typings.gatsby.Anon_End
 import typings.gatsby.Anon_ParentSpan
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,21 +28,21 @@ object Reporter {
   @scala.inline
   def apply(
     activityTimer: (String, Anon_ParentSpan) => Anon_End,
-    error: logErrorType,
+    error: (/* message */ String, /* error */ js.UndefOr[Error]) => Unit,
     format: js.Object,
-    info: logMessageType,
-    log: logMessageType,
-    panic: logErrorType,
-    panicOnBuild: logErrorType,
+    info: (/* format */ String, /* repeated */ js.Any) => Unit,
+    log: (/* format */ String, /* repeated */ js.Any) => Unit,
+    panic: (/* message */ String, /* error */ js.UndefOr[Error]) => Unit,
+    panicOnBuild: (/* message */ String, /* error */ js.UndefOr[Error]) => Unit,
     setNoColor: Boolean => Unit,
     setVerbose: Boolean => Unit,
     stripIndent: js.Function,
-    success: logMessageType,
+    success: (/* format */ String, /* repeated */ js.Any) => Unit,
     uptime: String => Unit,
-    verbose: logMessageType,
-    warn: logMessageType
+    verbose: (/* format */ String, /* repeated */ js.Any) => Unit,
+    warn: (/* format */ String, /* repeated */ js.Any) => Unit
   ): Reporter = {
-    val __obj = js.Dynamic.literal(activityTimer = js.Any.fromFunction2(activityTimer), error = error, format = format, info = info, log = log, panic = panic, panicOnBuild = panicOnBuild, setNoColor = js.Any.fromFunction1(setNoColor), setVerbose = js.Any.fromFunction1(setVerbose), stripIndent = stripIndent, success = success, uptime = js.Any.fromFunction1(uptime), verbose = verbose, warn = warn)
+    val __obj = js.Dynamic.literal(activityTimer = js.Any.fromFunction2(activityTimer), error = js.Any.fromFunction2(error), format = format, info = js.Any.fromFunction2(info), log = js.Any.fromFunction2(log), panic = js.Any.fromFunction2(panic), panicOnBuild = js.Any.fromFunction2(panicOnBuild), setNoColor = js.Any.fromFunction1(setNoColor), setVerbose = js.Any.fromFunction1(setVerbose), stripIndent = stripIndent, success = js.Any.fromFunction2(success), uptime = js.Any.fromFunction1(uptime), verbose = js.Any.fromFunction2(verbose), warn = js.Any.fromFunction2(warn))
   
     __obj.asInstanceOf[Reporter]
   }

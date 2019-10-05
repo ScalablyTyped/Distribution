@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsIdKey
 import typings.astDashTypes.genKindsMod.FlowTypeKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ObjectTypeIndexer
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ObjectTypeIndexer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

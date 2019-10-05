@@ -55,19 +55,19 @@ object ModifyReplicationInstanceMessage {
   @scala.inline
   def apply(
     ReplicationInstanceArn: String,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AllocatedStorage: Int | Double = null,
+    AllowMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PreferredMaintenanceWindow: String = null,
     ReplicationInstanceClass: String = null,
     ReplicationInstanceIdentifier: String = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): ModifyReplicationInstanceMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceArn = ReplicationInstanceArn)
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (!js.isUndefined(AllowMajorVersionUpgrade)) __obj.updateDynamic("AllowMajorVersionUpgrade")(AllowMajorVersionUpgrade)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)

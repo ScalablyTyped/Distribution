@@ -24,7 +24,7 @@ object ModifyVpnTunnelCertificateRequest {
   def apply(
     VpnConnectionId: String,
     VpnTunnelOutsideIpAddress: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyVpnTunnelCertificateRequest = {
     val __obj = js.Dynamic.literal(VpnConnectionId = VpnConnectionId, VpnTunnelOutsideIpAddress = VpnTunnelOutsideIpAddress)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

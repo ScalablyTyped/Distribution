@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_Block
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.CatchClauseKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TryStatement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TryStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

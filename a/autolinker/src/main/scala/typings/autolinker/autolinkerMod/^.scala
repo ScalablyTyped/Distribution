@@ -1,8 +1,8 @@
 package typings.autolinker.autolinkerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.autolinker.underscoreUnderscoreAutolinkerNs.ConfigOptions
-import typings.autolinker.underscoreUnderscoreAutolinkerNs.Static
+import typings.autolinker.__Autolinker.ConfigOptions
+import typings.autolinker.__Autolinker.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("autolinker", JSImport.Namespace)
 @js.native
 class ^ ()
-  extends typings.autolinker.underscoreUnderscoreAutolinkerNs.Autolinker {
+  extends typings.autolinker.__Autolinker.Autolinker {
   def this(cfg: ConfigOptions) = this()
   /* CompleteClass */
   override def getTagBuilder(): js.Any = js.native

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "punycode"
-version := "2.1-dt-20181205Z-8726b9"
-scalaVersion := "2.12.9"
+version := "2.1-dt-20181205Z-7e8d42"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

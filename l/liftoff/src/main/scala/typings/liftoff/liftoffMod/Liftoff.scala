@@ -4,7 +4,7 @@ import typings.interpret.interpretMod.ExtensionDescriptor
 import typings.liftoff.liftoffStrings.require
 import typings.liftoff.liftoffStrings.requireFail
 import typings.liftoff.liftoffStrings.respawn
-import typings.node.NodeJSNs.Process
+import typings.node.NodeJS.Process
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

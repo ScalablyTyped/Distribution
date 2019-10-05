@@ -1,6 +1,6 @@
 package typings.chaiDashSpies
 
-import typings.chaiDashSpies.ChaiSpiesNs.Spy
+import typings.chaiDashSpies.ChaiSpies.Spy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

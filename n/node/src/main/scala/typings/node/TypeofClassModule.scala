@@ -2,7 +2,7 @@ package typings.node
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.node.NodeJSNs.Module
+import typings.node.NodeJS.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

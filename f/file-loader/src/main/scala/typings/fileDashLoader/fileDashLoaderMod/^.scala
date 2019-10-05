@@ -1,7 +1,7 @@
 package typings.fileDashLoader.fileDashLoaderMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.webpack.webpackMod.loaderNs.Loader
+import typings.webpack.webpackMod.loader.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

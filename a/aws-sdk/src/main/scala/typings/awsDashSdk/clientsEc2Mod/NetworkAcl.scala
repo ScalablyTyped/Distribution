@@ -40,7 +40,7 @@ object NetworkAcl {
   def apply(
     Associations: NetworkAclAssociationList = null,
     Entries: NetworkAclEntryList = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
+    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     NetworkAclId: String = null,
     OwnerId: String = null,
     Tags: TagList = null,

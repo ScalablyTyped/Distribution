@@ -1,8 +1,8 @@
 package typings.atPulumiAws.sesEventDestinationMod
 
-import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationCloudwatchDestination
-import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationKinesisDestination
-import typings.atPulumiAws.typesOutputMod.sesNs.EventDestinationSnsDestination
+import typings.atPulumiAws.typesOutputMod.ses.EventDestinationCloudwatchDestination
+import typings.atPulumiAws.typesOutputMod.ses.EventDestinationKinesisDestination
+import typings.atPulumiAws.typesOutputMod.ses.EventDestinationSnsDestination
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

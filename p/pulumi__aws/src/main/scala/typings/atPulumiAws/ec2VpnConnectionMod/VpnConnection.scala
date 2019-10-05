@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2VpnConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.VpnConnectionRoute
-import typings.atPulumiAws.typesOutputMod.ec2Ns.VpnConnectionVgwTelemetry
+import typings.atPulumiAws.typesOutputMod.ec2.VpnConnectionRoute
+import typings.atPulumiAws.typesOutputMod.ec2.VpnConnectionVgwTelemetry
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

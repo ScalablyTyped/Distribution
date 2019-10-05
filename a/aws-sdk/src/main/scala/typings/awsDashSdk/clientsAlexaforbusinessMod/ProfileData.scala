@@ -48,7 +48,7 @@ object ProfileData {
   def apply(
     Address: Address = null,
     DistanceUnit: DistanceUnit = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
+    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     Locale: DeviceLocale = null,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,

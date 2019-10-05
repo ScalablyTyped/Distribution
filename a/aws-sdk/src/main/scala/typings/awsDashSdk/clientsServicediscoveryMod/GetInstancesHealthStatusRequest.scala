@@ -28,12 +28,12 @@ object GetInstancesHealthStatusRequest {
   def apply(
     ServiceId: ResourceId,
     Instances: InstanceIdList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): GetInstancesHealthStatusRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId)
     if (Instances != null) __obj.updateDynamic("Instances")(Instances)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetInstancesHealthStatusRequest]
   }

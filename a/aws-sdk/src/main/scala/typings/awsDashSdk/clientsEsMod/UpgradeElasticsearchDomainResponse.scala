@@ -20,7 +20,7 @@ object UpgradeElasticsearchDomainResponse {
   @scala.inline
   def apply(
     DomainName: DomainName = null,
-    PerformCheckOnly: js.UndefOr[Boolean] = js.undefined,
+    PerformCheckOnly: js.UndefOr[scala.Boolean] = js.undefined,
     TargetVersion: ElasticsearchVersionString = null
   ): UpgradeElasticsearchDomainResponse = {
     val __obj = js.Dynamic.literal()

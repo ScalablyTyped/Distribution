@@ -1,6 +1,6 @@
 package typings.activexDashWord
 
-import typings.activexDashWord.WordNs.Range
+import typings.activexDashWord.Word.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Anon_BlockType extends js.Object {
   val BlockType: String
   val Category: String
   val Name: String
-  val Range: typings.activexDashWord.WordNs.Range
+  val Range: typings.activexDashWord.Word.Range
   val Template: String
 }
 

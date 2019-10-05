@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashZeroconf.reactDashNativeDashZeroconfMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.reactDashNativeDashZeroconf.reactDashNativeDashZeroconfStrings.error
 import typings.reactDashNativeDashZeroconf.reactDashNativeDashZeroconfStrings.found
 import typings.reactDashNativeDashZeroconf.reactDashNativeDashZeroconfStrings.remove

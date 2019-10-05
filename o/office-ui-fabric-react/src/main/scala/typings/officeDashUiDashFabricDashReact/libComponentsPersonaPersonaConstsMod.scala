@@ -27,9 +27,8 @@ import scala.scalajs.js.annotation._
 object libComponentsPersonaPersonaConstsMod extends js.Object {
   def presenceBoolean(presence: PersonaPresence): Anon_IsAvailable = js.native
   def sizeBoolean(size: PersonaSize): Anon_IsSize10 = js.native
-  @JSName("personaPresenceSize")
   @js.native
-  object personaPresenceSizeNs extends js.Object {
+  object personaPresenceSize extends js.Object {
     /**
       * @deprecated This is now unused
       */
@@ -43,9 +42,8 @@ object libComponentsPersonaPersonaConstsMod extends js.Object {
     val size8: `8px` = js.native
   }
   
-  @JSName("personaSize")
   @js.native
-  object personaSizeNs extends js.Object {
+  object personaSize extends js.Object {
     val size10: `20px` = js.native
     val size100: `100px` = js.native
     val size120: `120px` = js.native

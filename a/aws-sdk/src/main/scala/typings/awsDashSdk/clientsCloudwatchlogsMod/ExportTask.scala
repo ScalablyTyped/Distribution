@@ -49,23 +49,23 @@ object ExportTask {
     destination: ExportDestinationBucket = null,
     destinationPrefix: ExportDestinationPrefix = null,
     executionInfo: ExportTaskExecutionInfo = null,
-    from: js.UndefOr[Timestamp] = js.undefined,
+    from: Int | Double = null,
     logGroupName: LogGroupName = null,
     status: ExportTaskStatus = null,
     taskId: ExportTaskId = null,
     taskName: ExportTaskName = null,
-    to: js.UndefOr[Timestamp] = js.undefined
+    to: Int | Double = null
   ): ExportTask = {
     val __obj = js.Dynamic.literal()
     if (destination != null) __obj.updateDynamic("destination")(destination)
     if (destinationPrefix != null) __obj.updateDynamic("destinationPrefix")(destinationPrefix)
     if (executionInfo != null) __obj.updateDynamic("executionInfo")(executionInfo)
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
     if (status != null) __obj.updateDynamic("status")(status)
     if (taskId != null) __obj.updateDynamic("taskId")(taskId)
     if (taskName != null) __obj.updateDynamic("taskName")(taskName)
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }
 }

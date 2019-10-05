@@ -1,6 +1,6 @@
 package typings.cannon.cannonMod
 
-import typings.cannon.CANNONNs.IAABBOptions
+import typings.cannon.CANNON.IAABBOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "AABB")
 @js.native
 class AABB ()
-  extends typings.cannon.CANNONNs.AABB {
+  extends typings.cannon.CANNON.AABB {
   def this(options: IAABBOptions) = this()
 }
 

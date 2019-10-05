@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.identityNs.AccountInfo
-import typings.chromeDashApps.chromeNs.identityNs.TokenDetails
-import typings.chromeDashApps.chromeNs.identityNs.TokenInformation
-import typings.chromeDashApps.chromeNs.identityNs.UserInfo
-import typings.chromeDashApps.chromeNs.identityNs.WebAuthFlowOptions
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.identity.AccountInfo
+import typings.chromeDashApps.chrome.identity.TokenDetails
+import typings.chromeDashApps.chrome.identity.TokenInformation
+import typings.chromeDashApps.chrome.identity.UserInfo
+import typings.chromeDashApps.chrome.identity.WebAuthFlowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

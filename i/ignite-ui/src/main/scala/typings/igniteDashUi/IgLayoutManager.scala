@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,14 +110,14 @@ object IgLayoutManager {
     borderLayout: IgLayoutManagerBorderLayout = null,
     gridLayout: IgLayoutManagerGridLayout = null,
     height: String | Double = null,
-    internalResized: InternalResizedEvent = null,
-    internalResizing: InternalResizingEvent = null,
+    internalResized: (/* event */ Event, /* ui */ InternalResizedEventUIParam) => Unit = null,
+    internalResizing: (/* event */ Event, /* ui */ InternalResizingEventUIParam) => Unit = null,
     itemCount: Int | Double = null,
-    itemRendered: ItemRenderedEvent = null,
-    itemRendering: ItemRenderingEvent = null,
+    itemRendered: (/* event */ Event, /* ui */ ItemRenderedEventUIParam) => Unit = null,
+    itemRendering: (/* event */ Event, /* ui */ ItemRenderingEventUIParam) => Unit = null,
     items: js.Array[IgLayoutManagerItem] = null,
     layoutMode: js.Any = null,
-    rendered: RenderedEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgLayoutManager = {
     val __obj = js.Dynamic.literal()
@@ -124,14 +125,14 @@ object IgLayoutManager {
     if (borderLayout != null) __obj.updateDynamic("borderLayout")(borderLayout)
     if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (internalResized != null) __obj.updateDynamic("internalResized")(internalResized)
-    if (internalResizing != null) __obj.updateDynamic("internalResizing")(internalResizing)
+    if (internalResized != null) __obj.updateDynamic("internalResized")(js.Any.fromFunction2(internalResized))
+    if (internalResizing != null) __obj.updateDynamic("internalResizing")(js.Any.fromFunction2(internalResizing))
     if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
-    if (itemRendered != null) __obj.updateDynamic("itemRendered")(itemRendered)
-    if (itemRendering != null) __obj.updateDynamic("itemRendering")(itemRendering)
+    if (itemRendered != null) __obj.updateDynamic("itemRendered")(js.Any.fromFunction2(itemRendered))
+    if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction2(itemRendering))
     if (items != null) __obj.updateDynamic("items")(items)
     if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode)
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLayoutManager]
   }

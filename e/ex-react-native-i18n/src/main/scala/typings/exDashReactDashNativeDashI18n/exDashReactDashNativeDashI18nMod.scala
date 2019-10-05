@@ -22,9 +22,8 @@ import scala.scalajs.js.annotation._
 @JSImport("ex-react-native-i18n", JSImport.Namespace)
 @js.native
 object exDashReactDashNativeDashI18nMod extends js.Object {
-  @JSName("default")
   @js.native
-  object defaultNs extends js.Object {
+  object default extends js.Object {
     var defaultLocale: String = js.native
     var defaultSeparator: String = js.native
     var fallbacks: Boolean = js.native

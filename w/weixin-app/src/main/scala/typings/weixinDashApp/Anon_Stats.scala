@@ -1,6 +1,6 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.Stat
+import typings.weixinDashApp.wx.Stat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

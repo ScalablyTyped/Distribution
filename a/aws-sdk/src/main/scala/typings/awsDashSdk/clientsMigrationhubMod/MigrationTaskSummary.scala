@@ -35,7 +35,7 @@ object MigrationTaskSummary {
   @scala.inline
   def apply(
     MigrationTaskName: MigrationTaskName = null,
-    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
+    ProgressPercent: Int | Double = null,
     ProgressUpdateStream: ProgressUpdateStream = null,
     Status: Status = null,
     StatusDetail: StatusDetail = null,
@@ -43,7 +43,7 @@ object MigrationTaskSummary {
   ): MigrationTaskSummary = {
     val __obj = js.Dynamic.literal()
     if (MigrationTaskName != null) __obj.updateDynamic("MigrationTaskName")(MigrationTaskName)
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent)
+    if (ProgressPercent != null) __obj.updateDynamic("ProgressPercent")(ProgressPercent.asInstanceOf[js.Any])
     if (ProgressUpdateStream != null) __obj.updateDynamic("ProgressUpdateStream")(ProgressUpdateStream)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail)

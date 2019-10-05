@@ -1,5 +1,6 @@
 package typings.emissary.emissaryMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,4 +35,8 @@ class Emitter () extends IEmitter {
   /* CompleteClass */
   override def signal(eventName: String): Unit = js.native
 }
+
+@JSImport("emissary", "Emitter")
+@js.native
+object Emitter extends TopLevel[IEmitterStatic]
 

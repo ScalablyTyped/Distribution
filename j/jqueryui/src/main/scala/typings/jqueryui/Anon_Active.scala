@@ -1,7 +1,7 @@
 package typings.jqueryui
 
 import typings.jquery.JQueryEventObject
-import typings.jqueryui.JQueryUINs.MenuOptions
+import typings.jqueryui.JQueryUI.MenuOptions
 import typings.jqueryui.jqueryuiStrings.blur
 import typings.jqueryui.jqueryuiStrings.collapse
 import typings.jqueryui.jqueryuiStrings.collapseAll

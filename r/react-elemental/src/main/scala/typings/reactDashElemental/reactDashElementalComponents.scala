@@ -17,7 +17,7 @@ object reactDashElementalComponents extends reactDashElementalProps {
   @scala.inline
   def Image: ComponentType[typings.reactDashElemental.reactDashElementalMod.ImageProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Image].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.ImageProps]]
   @scala.inline
-  def Label: ComponentType[typings.reactDashElemental.reactDashElementalMod.LabelProps] = typings.reactDashElemental.reactDashElementalMod.^.Label.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.LabelProps]]
+  def Label: ComponentType[typings.reactDashElemental.reactDashElementalMod.LabelProps] = typings.reactDashElemental.reactDashElementalMod.Label.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.LabelProps]]
   @scala.inline
   def Link: ComponentType[typings.reactDashElemental.reactDashElementalMod.LinkProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.LinkProps]]
   @scala.inline
@@ -31,21 +31,21 @@ object reactDashElementalComponents extends reactDashElementalProps {
   @scala.inline
   def SelectList: ComponentType[typings.reactDashElemental.reactDashElementalMod.SelectListProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.SelectList].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.SelectListProps]]
   @scala.inline
-  def Spacing: ComponentType[typings.reactDashElemental.reactDashElementalMod.SpacingProps] = typings.reactDashElemental.reactDashElementalMod.^.Spacing.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.SpacingProps]]
+  def Spacing: ComponentType[typings.reactDashElemental.reactDashElementalMod.SpacingProps] = typings.reactDashElemental.reactDashElementalMod.Spacing.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.SpacingProps]]
   @scala.inline
   def Spinner: ComponentType[typings.reactDashElemental.reactDashElementalMod.SpinnerProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Spinner].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.SpinnerProps]]
   @scala.inline
   def Tabs: ComponentType[typings.reactDashElemental.reactDashElementalMod.TabsProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Tabs].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TabsProps]]
   @scala.inline
-  def Tag: ComponentType[typings.reactDashElemental.reactDashElementalMod.TagProps] = typings.reactDashElemental.reactDashElementalMod.^.Tag.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TagProps]]
+  def Tag: ComponentType[typings.reactDashElemental.reactDashElementalMod.TagProps] = typings.reactDashElemental.reactDashElementalMod.Tag.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TagProps]]
   @scala.inline
   def Text: ComponentType[typings.reactDashElemental.reactDashElementalMod.TextProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Text].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TextProps]]
   @scala.inline
-  def TextArea: ComponentType[typings.reactDashElemental.reactDashElementalMod.TextAreaProps] = typings.reactDashElemental.reactDashElementalMod.^.TextArea.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TextAreaProps]]
+  def TextArea: ComponentType[typings.reactDashElemental.reactDashElementalMod.TextAreaProps] = typings.reactDashElemental.reactDashElementalMod.TextArea.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TextAreaProps]]
   @scala.inline
   def TextField: ComponentType[typings.reactDashElemental.reactDashElementalMod.TextFieldProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.TextField].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TextFieldProps]]
   @scala.inline
-  def Toast: ComponentType[typings.reactDashElemental.reactDashElementalMod.ToastProps] = typings.reactDashElemental.reactDashElementalMod.^.Toast.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.ToastProps]]
+  def Toast: ComponentType[typings.reactDashElemental.reactDashElementalMod.ToastProps] = typings.reactDashElemental.reactDashElementalMod.Toast.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.ToastProps]]
   @scala.inline
   def Tooltip: ComponentType[typings.reactDashElemental.reactDashElementalMod.TooltipProps] = js.constructorOf[typings.reactDashElemental.reactDashElementalMod.Tooltip].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashElemental.reactDashElementalMod.TooltipProps]]
 }

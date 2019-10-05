@@ -23,8 +23,8 @@ object AlarmConfiguration {
   @scala.inline
   def apply(
     alarms: AlarmList = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ignorePollAlarmFailure: js.UndefOr[scala.Boolean] = js.undefined
   ): AlarmConfiguration = {
     val __obj = js.Dynamic.literal()
     if (alarms != null) __obj.updateDynamic("alarms")(alarms)

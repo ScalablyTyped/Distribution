@@ -9,6 +9,7 @@ package object swaggerDashExpressDashMiddlewareMod {
   import typings.express.expressMod.Application
   import typings.express.expressMod.RequestHandler
   import typings.express.expressMod.Router
+  import typings.swaggerDashParser.swaggerDashParserMod.^
 
   type CORSSignature = js.Function0[RequestHandler]
   type DefinitionsObject = StringDictionary[SchemaObject]
@@ -39,7 +40,7 @@ package object swaggerDashExpressDashMiddlewareMod {
     /* err */ js.Any, 
     /* middleware */ SwaggerMiddleware, 
     /* api */ SwaggerObject, 
-    /* parser */ typings.swaggerDashParser.swaggerDashParserMod.^, 
+    /* parser */ ^, 
     Unit
   ]
 }

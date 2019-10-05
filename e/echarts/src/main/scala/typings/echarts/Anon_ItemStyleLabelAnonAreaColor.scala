@@ -12,14 +12,14 @@ trait Anon_ItemStyleLabelAnonAreaColor extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label
     */
-  var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily] = js.undefined
+  var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
 }
 
 object Anon_ItemStyleLabelAnonAreaColor {
   @scala.inline
   def apply(
     itemStyle: Anon_AreaColor = null,
-    label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null
+    label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null
   ): Anon_ItemStyleLabelAnonAreaColor = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)

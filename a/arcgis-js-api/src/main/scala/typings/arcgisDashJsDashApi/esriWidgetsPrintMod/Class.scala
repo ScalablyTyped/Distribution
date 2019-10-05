@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsPrintMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Print
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PrintProperties
+import typings.arcgisDashJsDashApi.__esri.Print
+import typings.arcgisDashJsDashApi.__esri.PrintProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

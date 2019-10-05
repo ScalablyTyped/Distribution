@@ -22,7 +22,7 @@ trait ListPolicyVersionsResponse extends js.Object {
 object ListPolicyVersionsResponse {
   @scala.inline
   def apply(
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null,
     Versions: policyDocumentVersionListType = null
   ): ListPolicyVersionsResponse = {

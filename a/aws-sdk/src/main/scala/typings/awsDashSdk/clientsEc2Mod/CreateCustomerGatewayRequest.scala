@@ -33,7 +33,7 @@ object CreateCustomerGatewayRequest {
     BgpAsn: Integer,
     Type: GatewayType,
     CertificateArn: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     PublicIp: String = null
   ): CreateCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(BgpAsn = BgpAsn, Type = Type.asInstanceOf[js.Any])

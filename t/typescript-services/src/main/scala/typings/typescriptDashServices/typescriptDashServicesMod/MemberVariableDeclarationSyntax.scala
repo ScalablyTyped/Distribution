@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MemberVariableDeclarationSyntax")
 @js.native
 class MemberVariableDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.MemberVariableDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.MemberVariableDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
-    variableDeclarator: typings.typescriptDashServices.TypeScriptNs.VariableDeclaratorSyntax,
+    variableDeclarator: typings.typescriptDashServices.TypeScript.VariableDeclaratorSyntax,
     semicolonToken: ISyntaxToken,
     parsedInStrictMode: Boolean
   ) = this()
@@ -23,9 +23,9 @@ class MemberVariableDeclarationSyntax protected ()
 @js.native
 object MemberVariableDeclarationSyntax extends js.Object {
   def create(
-    variableDeclarator: typings.typescriptDashServices.TypeScriptNs.VariableDeclaratorSyntax,
+    variableDeclarator: typings.typescriptDashServices.TypeScript.VariableDeclaratorSyntax,
     semicolonToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.MemberVariableDeclarationSyntax = js.native
-  def create1(variableDeclarator: typings.typescriptDashServices.TypeScriptNs.VariableDeclaratorSyntax): typings.typescriptDashServices.TypeScriptNs.MemberVariableDeclarationSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.MemberVariableDeclarationSyntax = js.native
+  def create1(variableDeclarator: typings.typescriptDashServices.TypeScript.VariableDeclaratorSyntax): typings.typescriptDashServices.TypeScript.MemberVariableDeclarationSyntax = js.native
 }
 

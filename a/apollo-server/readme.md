@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server
 
-Typings are for version 2.9.4
+Typings are for version 2.9.5
 
 ## Library description:
 Production ready GraphQL Server

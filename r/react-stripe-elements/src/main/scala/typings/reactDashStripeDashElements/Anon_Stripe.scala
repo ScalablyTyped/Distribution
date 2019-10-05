@@ -1,6 +1,6 @@
 package typings.reactDashStripeDashElements
 
-import typings.stripeDashV3.stripeNs.Stripe
+import typings.stripeDashV3.stripe.Stripe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

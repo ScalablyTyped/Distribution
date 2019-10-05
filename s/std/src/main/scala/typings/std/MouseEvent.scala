@@ -66,13 +66,6 @@ trait MouseEvent extends UIEvent {
 
 @JSGlobal("MouseEvent")
 @js.native
-class MouseEventCls protected () extends MouseEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: MouseEventInit) = this()
-}
-
-@JSGlobal("MouseEvent")
-@js.native
 object MouseEvent
   extends Instantiable1[/* type */ java.lang.String, MouseEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]

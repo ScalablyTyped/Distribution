@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.JQueryNs.AnimationHook
-import typings.cypress.JQueryNs.PlainObject
+import typings.cypress.JQuery.AnimationHook
+import typings.cypress.JQuery.PlainObject
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

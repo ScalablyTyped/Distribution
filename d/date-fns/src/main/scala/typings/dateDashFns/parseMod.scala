@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/parse", JSImport.Namespace)
 @js.native
 object parseMod extends js.Object {
-  def default(dateString: String, formatString: String, backupDate: Double): Date = js.native
-  def default(dateString: String, formatString: String, backupDate: Double, options: Anon_012345): Date = js.native
-  def default(dateString: String, formatString: String, backupDate: Date): Date = js.native
-  def default(dateString: String, formatString: String, backupDate: Date, options: Anon_012345): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(dateString: String, formatString: String, backupDate: Double): Date = js.native
+    def apply(dateString: String, formatString: String, backupDate: Double, options: Anon_012345): Date = js.native
+    def apply(dateString: String, formatString: String, backupDate: Date): Date = js.native
+    def apply(dateString: String, formatString: String, backupDate: Date, options: Anon_012345): Date = js.native
+  }
+  
 }
 

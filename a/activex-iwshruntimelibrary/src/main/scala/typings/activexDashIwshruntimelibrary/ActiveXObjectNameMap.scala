@@ -1,16 +1,16 @@
 package typings.activexDashIwshruntimelibrary
 
-import typings.activexDashIwshruntimelibrary.IWshRuntimeLibraryNs.WshNetwork
-import typings.activexDashIwshruntimelibrary.IWshRuntimeLibraryNs.WshShell
-import typings.activexDashIwshruntimelibrary.ScriptSignerNs.Signer
-import typings.activexDashIwshruntimelibrary.WSHControllerLibraryNs.WSHController
+import typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary.WshNetwork
+import typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary.WshShell
+import typings.activexDashIwshruntimelibrary.ScriptSigner.Signer
+import typings.activexDashIwshruntimelibrary.WSHControllerLibrary.WSHController
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
   var `Scripting.Signer`: Signer
-  var WSHController: typings.activexDashIwshruntimelibrary.WSHControllerLibraryNs.WSHController
+  var WSHController: typings.activexDashIwshruntimelibrary.WSHControllerLibrary.WSHController
   var `WScript.Network`: WshNetwork
   var `WScript.Shell`: WshShell
 }

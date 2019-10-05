@@ -26,8 +26,8 @@ trait ReactHeadroomProps extends js.Object {
 object ReactHeadroomProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     calcHeightOnResize: js.UndefOr[Boolean] = js.undefined,
+    children: ReactNode = null,
     className: String = null,
     disable: js.UndefOr[Boolean] = js.undefined,
     disableInlineStyles: js.UndefOr[Boolean] = js.undefined,
@@ -41,8 +41,9 @@ object ReactHeadroomProps {
     upTolerance: Int | Double = null,
     wrapperStyle: CSSProperties = null
   ): ReactHeadroomProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(calcHeightOnResize)) __obj.updateDynamic("calcHeightOnResize")(calcHeightOnResize)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles)

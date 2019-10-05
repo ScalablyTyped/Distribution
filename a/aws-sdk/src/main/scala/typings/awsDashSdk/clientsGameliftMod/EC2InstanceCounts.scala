@@ -38,22 +38,22 @@ trait EC2InstanceCounts extends js.Object {
 object EC2InstanceCounts {
   @scala.inline
   def apply(
-    ACTIVE: js.UndefOr[WholeNumber] = js.undefined,
-    DESIRED: js.UndefOr[WholeNumber] = js.undefined,
-    IDLE: js.UndefOr[WholeNumber] = js.undefined,
-    MAXIMUM: js.UndefOr[WholeNumber] = js.undefined,
-    MINIMUM: js.UndefOr[WholeNumber] = js.undefined,
-    PENDING: js.UndefOr[WholeNumber] = js.undefined,
-    TERMINATING: js.UndefOr[WholeNumber] = js.undefined
+    ACTIVE: Int | scala.Double = null,
+    DESIRED: Int | scala.Double = null,
+    IDLE: Int | scala.Double = null,
+    MAXIMUM: Int | scala.Double = null,
+    MINIMUM: Int | scala.Double = null,
+    PENDING: Int | scala.Double = null,
+    TERMINATING: Int | scala.Double = null
   ): EC2InstanceCounts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ACTIVE)) __obj.updateDynamic("ACTIVE")(ACTIVE)
-    if (!js.isUndefined(DESIRED)) __obj.updateDynamic("DESIRED")(DESIRED)
-    if (!js.isUndefined(IDLE)) __obj.updateDynamic("IDLE")(IDLE)
-    if (!js.isUndefined(MAXIMUM)) __obj.updateDynamic("MAXIMUM")(MAXIMUM)
-    if (!js.isUndefined(MINIMUM)) __obj.updateDynamic("MINIMUM")(MINIMUM)
-    if (!js.isUndefined(PENDING)) __obj.updateDynamic("PENDING")(PENDING)
-    if (!js.isUndefined(TERMINATING)) __obj.updateDynamic("TERMINATING")(TERMINATING)
+    if (ACTIVE != null) __obj.updateDynamic("ACTIVE")(ACTIVE.asInstanceOf[js.Any])
+    if (DESIRED != null) __obj.updateDynamic("DESIRED")(DESIRED.asInstanceOf[js.Any])
+    if (IDLE != null) __obj.updateDynamic("IDLE")(IDLE.asInstanceOf[js.Any])
+    if (MAXIMUM != null) __obj.updateDynamic("MAXIMUM")(MAXIMUM.asInstanceOf[js.Any])
+    if (MINIMUM != null) __obj.updateDynamic("MINIMUM")(MINIMUM.asInstanceOf[js.Any])
+    if (PENDING != null) __obj.updateDynamic("PENDING")(PENDING.asInstanceOf[js.Any])
+    if (TERMINATING != null) __obj.updateDynamic("TERMINATING")(TERMINATING.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2InstanceCounts]
   }
 }

@@ -1,6 +1,6 @@
 package typings.materialDashUi.internalEnhancedSwitchMod
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.SwitchesNs.CommonEnhancedSwitchProps
+import typings.materialDashUi.__MaterialUI.Switches.CommonEnhancedSwitchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

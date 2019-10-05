@@ -8,7 +8,7 @@ import typings.antd.TypeofClassSearchDefaultPropsAnonPlaceholder
 import typings.antd.libTransferMod.TransferProps
 import typings.antd.libTransferMod.default
 import typings.antd.libTransferOperationMod.TransferOperationProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

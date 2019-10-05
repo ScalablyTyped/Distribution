@@ -2,6 +2,7 @@ package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.MSGestureChange
 import typings.std.stdStrings.MSGestureDoubleTap
 import typings.std.stdStrings.MSGestureEnd
@@ -1186,26 +1187,12 @@ trait Window
 
 @JSGlobal("Window")
 @js.native
-class WindowCls () extends Window {
-  /* CompleteClass */
-  override val console: Console = js.native
-  /* CompleteClass */
-  override val indexedDB: IDBFactory = js.native
-  /* CompleteClass */
-  override val localStorage: Storage = js.native
-  /* CompleteClass */
-  override val sessionStorage: Storage = js.native
-  /* CompleteClass */
-  override def atob(encodedString: java.lang.String): java.lang.String = js.native
-  /* CompleteClass */
-  override def btoa(rawString: java.lang.String): java.lang.String = js.native
-  /* CompleteClass */
-  override def cancelAnimationFrame(handle: Double): Unit = js.native
-  /* CompleteClass */
-  override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
-}
-
-@JSGlobal("Window")
-@js.native
 object Window extends Instantiable0[Window]
+
+@JSGlobal("window")
+@js.native
+object window
+  extends TopLevel[
+      Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any)
+    ]
 

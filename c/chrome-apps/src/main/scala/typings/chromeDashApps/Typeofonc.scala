@@ -1,25 +1,31 @@
 package typings.chromeDashApps
 
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.networking.onc.CaptivePortalStatus
+import typings.chromeDashApps.chrome.networking.onc.DeviceStates
+import typings.chromeDashApps.chrome.networking.onc.Filter
+import typings.chromeDashApps.chrome.networking.onc.GlobalPolicy
+import typings.chromeDashApps.chrome.networking.onc.ManagedProperties
+import typings.chromeDashApps.chrome.networking.onc.NetworkConfigProperties
+import typings.chromeDashApps.chrome.networking.onc.NetworkProperties
+import typings.chromeDashApps.chrome.networking.onc.NetworkStateProperties
+import typings.chromeDashApps.chrome.networking.onc.NetworkType
 import typings.chromeDashApps.chromeDashAppsNumbers.`false`
 import typings.chromeDashApps.chromeDashAppsStrings.full
 import typings.chromeDashApps.chromeDashAppsStrings.setter
 import typings.chromeDashApps.chromeDashAppsStrings.unmanaged
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.CaptivePortalStatus
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.DeviceStates
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.Filter
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.GlobalPolicy
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ManagedProperties
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.NetworkConfigProperties
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.NetworkProperties
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.NetworkStateProperties
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.NetworkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofonc extends js.Object {
+  /**
+    * Partial classes for internal use
+    * @internal
+    * @private
+    */
+  val _internal_ : js.Any = js.native
   /**
     * Fired when the list of devices has changed or any device state properties have changed.
     */
@@ -41,12 +47,6 @@ trait Typeofonc extends js.Object {
     * Sends the GUID of the network and the corresponding captive portal status.
     */
   val onPortalDetectionCompleted: Event[js.Function2[/* networkGuid */ String, /* status */ CaptivePortalStatus, Unit]] = js.native
-  /**
-    * Partial classes for internal use
-    * @internal
-    * @private
-    */
-  val underscoreInternalUnderscoreNs: js.Any = js.native
   /**
     * Creates a new network configuration from properties.
     * If a matching configured network already exists, this will fail.

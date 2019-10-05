@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverRuleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.route53Ns.ResolverRuleTargetIp
+import typings.atPulumiAws.typesInputMod.route53.ResolverRuleTargetIp
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

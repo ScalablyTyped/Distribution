@@ -1,6 +1,6 @@
 package typings.activexDashMsforms
 
-import typings.activexDashMsforms.MSFormsNs.ReturnInteger
+import typings.activexDashMsforms.MSForms.ReturnInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

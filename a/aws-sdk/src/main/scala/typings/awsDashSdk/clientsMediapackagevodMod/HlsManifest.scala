@@ -45,17 +45,17 @@ object HlsManifest {
   @scala.inline
   def apply(
     AdMarkers: AdMarkers = null,
-    IncludeIframeOnlyStream: js.UndefOr[__boolean] = js.undefined,
+    IncludeIframeOnlyStream: js.UndefOr[Boolean] = js.undefined,
     ManifestName: __string = null,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[__integer] = js.undefined,
-    RepeatExtXKey: js.UndefOr[__boolean] = js.undefined,
+    ProgramDateTimeIntervalSeconds: Int | Double = null,
+    RepeatExtXKey: js.UndefOr[Boolean] = js.undefined,
     StreamSelection: StreamSelection = null
   ): HlsManifest = {
     val __obj = js.Dynamic.literal()
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
     if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream)
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName)
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds)
+    if (ProgramDateTimeIntervalSeconds != null) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.asInstanceOf[js.Any])
     if (!js.isUndefined(RepeatExtXKey)) __obj.updateDynamic("RepeatExtXKey")(RepeatExtXKey)
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection)
     __obj.asInstanceOf[HlsManifest]

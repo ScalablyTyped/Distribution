@@ -30,18 +30,18 @@ trait FleetUtilization extends js.Object {
 object FleetUtilization {
   @scala.inline
   def apply(
-    ActiveGameSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    ActiveServerProcessCount: js.UndefOr[WholeNumber] = js.undefined,
-    CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    ActiveGameSessionCount: Int | scala.Double = null,
+    ActiveServerProcessCount: Int | scala.Double = null,
+    CurrentPlayerSessionCount: Int | scala.Double = null,
     FleetId: FleetId = null,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
+    MaximumPlayerSessionCount: Int | scala.Double = null
   ): FleetUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActiveGameSessionCount)) __obj.updateDynamic("ActiveGameSessionCount")(ActiveGameSessionCount)
-    if (!js.isUndefined(ActiveServerProcessCount)) __obj.updateDynamic("ActiveServerProcessCount")(ActiveServerProcessCount)
-    if (!js.isUndefined(CurrentPlayerSessionCount)) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount)
+    if (ActiveGameSessionCount != null) __obj.updateDynamic("ActiveGameSessionCount")(ActiveGameSessionCount.asInstanceOf[js.Any])
+    if (ActiveServerProcessCount != null) __obj.updateDynamic("ActiveServerProcessCount")(ActiveServerProcessCount.asInstanceOf[js.Any])
+    if (CurrentPlayerSessionCount != null) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount.asInstanceOf[js.Any])
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount)
+    if (MaximumPlayerSessionCount != null) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetUtilization]
   }
 }

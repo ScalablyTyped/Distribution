@@ -26,3 +26,15 @@ trait Root
   def toResult(options: Anon_Map): Result = js.native
 }
 
+@JSImport("postcss", "root")
+@js.native
+object root extends js.Object {
+  /**
+    * Creates a new Root node.
+    * @param defaults Properties for the new Root node.
+    * @returns The new node.
+    */
+  def apply(): Root = js.native
+  def apply(defaults: js.Object): Root = js.native
+}
+

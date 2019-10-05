@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IModuleReferenceSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IModuleReferenceSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ImportDeclarationSyntax")
 @js.native
 class ImportDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ImportDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.ImportDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
     importKeyword: ISyntaxToken,
@@ -32,7 +32,7 @@ object ImportDeclarationSyntax extends js.Object {
     equalsToken: ISyntaxToken,
     moduleReference: IModuleReferenceSyntax,
     semicolonToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.ImportDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken, moduleReference: IModuleReferenceSyntax): typings.typescriptDashServices.TypeScriptNs.ImportDeclarationSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.ImportDeclarationSyntax = js.native
+  def create1(identifier: ISyntaxToken, moduleReference: IModuleReferenceSyntax): typings.typescriptDashServices.TypeScript.ImportDeclarationSyntax = js.native
 }
 

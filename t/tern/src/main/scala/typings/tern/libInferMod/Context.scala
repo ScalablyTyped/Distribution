@@ -1,5 +1,6 @@
 package typings.tern.libInferMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.tern.Anon_Bool
 import typings.tern.Anon_Name
 import typings.tern.Anon_NameString
@@ -21,33 +22,5 @@ trait Context extends js.Object {
 
 @JSImport("tern/lib/infer", "Context")
 @js.native
-class ContextCls protected () extends Context {
-  def this(defs: js.Array[_], parent: Server) = this()
-  /** The primitive boolean type. */
-  /* CompleteClass */
-  override var bool: Prim with Anon_Bool = js.native
-  /** The primitive number type. */
-  /* CompleteClass */
-  override var num: Prim with Anon_Name = js.native
-  /** The primitive string type. */
-  /* CompleteClass */
-  override var str: Prim with Anon_NameString = js.native
-  /* CompleteClass */
-  override var topScope: Scope = js.native
-}
-
-object Context {
-  @scala.inline
-  def apply(
-    bool: Prim with Anon_Bool,
-    num: Prim with Anon_Name,
-    str: Prim with Anon_NameString,
-    topScope: Scope,
-    parent: Server = null
-  ): Context = {
-    val __obj = js.Dynamic.literal(bool = bool, num = num, str = str, topScope = topScope)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    __obj.asInstanceOf[Context]
-  }
-}
+object Context extends TopLevel[ContextConstructor]
 

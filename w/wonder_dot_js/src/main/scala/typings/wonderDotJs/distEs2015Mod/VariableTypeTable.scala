@@ -1,5 +1,6 @@
 package typings.wonderDotJs.distEs2015Mod
 
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,6 @@ class VariableTypeTable ()
 @JSImport("wonder.js/dist/es2015", "VariableTypeTable")
 @js.native
 object VariableTypeTable extends js.Object {
-  def getVariableType(`type`: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType): String = js.native
+  def getVariableType(`type`: EVariableType): String = js.native
 }
 

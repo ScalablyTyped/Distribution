@@ -1,6 +1,5 @@
 package typings.onetime.onetimeMod
 
-import typings.onetime.Anon_Arguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Anon_Arguments = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof oneTime */ js.Any = js.native
   /**
   	Ensure a function is only called once. When called multiple times it will return the return value from the first call.
   	@param fn - Function that should only be called once.
@@ -34,13 +32,5 @@ object ^ extends js.Object {
   	```
   	*/
   def callCount(fn: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  /**
-  	Ensure a function is only called once. When called multiple times it will return the return value from the first call.
-  	@param fn - Function that should only be called once.
-  	@returns A function that only calls `fn` once.
-  	*/
-  // TODO: Remove this for the next major release
-  def default[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
-  def default[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
 }
 

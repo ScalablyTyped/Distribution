@@ -51,26 +51,26 @@ object StaticImageActivateScheduleActionSettings {
   @scala.inline
   def apply(
     Image: InputLocation,
-    Duration: js.UndefOr[__integerMin0] = js.undefined,
-    FadeIn: js.UndefOr[__integerMin0] = js.undefined,
-    FadeOut: js.UndefOr[__integerMin0] = js.undefined,
-    Height: js.UndefOr[__integerMin1] = js.undefined,
-    ImageX: js.UndefOr[__integerMin0] = js.undefined,
-    ImageY: js.UndefOr[__integerMin0] = js.undefined,
-    Layer: js.UndefOr[__integerMin0Max7] = js.undefined,
-    Opacity: js.UndefOr[__integerMin0Max100] = js.undefined,
-    Width: js.UndefOr[__integerMin1] = js.undefined
+    Duration: Int | Double = null,
+    FadeIn: Int | Double = null,
+    FadeOut: Int | Double = null,
+    Height: Int | Double = null,
+    ImageX: Int | Double = null,
+    ImageY: Int | Double = null,
+    Layer: Int | Double = null,
+    Opacity: Int | Double = null,
+    Width: Int | Double = null
   ): StaticImageActivateScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Image = Image)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(FadeIn)) __obj.updateDynamic("FadeIn")(FadeIn)
-    if (!js.isUndefined(FadeOut)) __obj.updateDynamic("FadeOut")(FadeOut)
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
-    if (!js.isUndefined(ImageX)) __obj.updateDynamic("ImageX")(ImageX)
-    if (!js.isUndefined(ImageY)) __obj.updateDynamic("ImageY")(ImageY)
-    if (!js.isUndefined(Layer)) __obj.updateDynamic("Layer")(Layer)
-    if (!js.isUndefined(Opacity)) __obj.updateDynamic("Opacity")(Opacity)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (FadeIn != null) __obj.updateDynamic("FadeIn")(FadeIn.asInstanceOf[js.Any])
+    if (FadeOut != null) __obj.updateDynamic("FadeOut")(FadeOut.asInstanceOf[js.Any])
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    if (ImageX != null) __obj.updateDynamic("ImageX")(ImageX.asInstanceOf[js.Any])
+    if (ImageY != null) __obj.updateDynamic("ImageY")(ImageY.asInstanceOf[js.Any])
+    if (Layer != null) __obj.updateDynamic("Layer")(Layer.asInstanceOf[js.Any])
+    if (Opacity != null) __obj.updateDynamic("Opacity")(Opacity.asInstanceOf[js.Any])
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticImageActivateScheduleActionSettings]
   }
 }

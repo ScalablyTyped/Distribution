@@ -22,9 +22,9 @@ trait OpenXJsonSerDe extends js.Object {
 object OpenXJsonSerDe {
   @scala.inline
   def apply(
-    CaseInsensitive: js.UndefOr[BooleanObject] = js.undefined,
+    CaseInsensitive: js.UndefOr[Boolean] = js.undefined,
     ColumnToJsonKeyMappings: ColumnToJsonKeyMappings = null,
-    ConvertDotsInJsonKeysToUnderscores: js.UndefOr[BooleanObject] = js.undefined
+    ConvertDotsInJsonKeysToUnderscores: js.UndefOr[Boolean] = js.undefined
   ): OpenXJsonSerDe = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CaseInsensitive)) __obj.updateDynamic("CaseInsensitive")(CaseInsensitive)

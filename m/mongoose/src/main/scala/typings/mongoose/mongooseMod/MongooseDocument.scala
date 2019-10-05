@@ -1,6 +1,6 @@
 package typings.mongoose.mongooseMod
 
-import typings.mongoose.mongooseMod.ErrorNs.ValidationError
+import typings.mongoose.mongooseMod.Error.ValidationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

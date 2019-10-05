@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.historyNs.HistoryItem
-import typings.firefoxDashWebextDashBrowser.browserNs.historyNs.VisitItem
+import typings.firefoxDashWebextDashBrowser.browser.history.HistoryItem
+import typings.firefoxDashWebextDashBrowser.browser.history.VisitItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

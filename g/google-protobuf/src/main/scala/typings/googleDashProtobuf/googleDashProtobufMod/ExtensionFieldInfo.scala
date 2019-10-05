@@ -2,7 +2,7 @@ package typings.googleDashProtobuf.googleDashProtobufMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleDashProtobuf.TypeofClassMessageAddToRepeatedField
-import typings.googleDashProtobuf.googleDashProtobufMod.MessageNs.StaticToObject
+import typings.googleDashProtobuf.googleDashProtobufMod.Message.StaticToObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

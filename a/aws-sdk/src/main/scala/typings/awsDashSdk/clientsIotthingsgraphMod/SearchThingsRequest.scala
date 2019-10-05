@@ -27,13 +27,13 @@ object SearchThingsRequest {
   @scala.inline
   def apply(
     entityId: Urn,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    namespaceVersion: js.UndefOr[Version] = js.undefined,
+    maxResults: Int | Double = null,
+    namespaceVersion: Int | Double = null,
     nextToken: NextToken = null
   ): SearchThingsRequest = {
     val __obj = js.Dynamic.literal(entityId = entityId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[SearchThingsRequest]
   }

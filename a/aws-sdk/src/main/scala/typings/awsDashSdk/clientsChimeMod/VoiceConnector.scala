@@ -37,7 +37,7 @@ object VoiceConnector {
     CreatedTimestamp: Iso8601Timestamp = null,
     Name: VoiceConnectorName = null,
     OutboundHostName: String = null,
-    RequireEncryption: js.UndefOr[Boolean] = js.undefined,
+    RequireEncryption: js.UndefOr[scala.Boolean] = js.undefined,
     UpdatedTimestamp: Iso8601Timestamp = null,
     VoiceConnectorId: NonEmptyString = null
   ): VoiceConnector = {

@@ -2,6 +2,7 @@ package typings.rcDashSlider.rcDashSliderMod
 
 import typings.react.Element
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -58,7 +59,7 @@ object SliderProps {
     min: Int | Double = null,
     onAfterChange: /* value */ Double => Unit = null,
     onBeforeChange: /* value */ Double => Unit = null,
-    onBlur: FocusEventHandler[Element] = null,
+    onBlur: FocusEvent[Element] => Unit = null,
     onChange: /* value */ Double => Unit = null,
     railStyle: CSSProperties = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
@@ -86,7 +87,7 @@ object SliderProps {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)

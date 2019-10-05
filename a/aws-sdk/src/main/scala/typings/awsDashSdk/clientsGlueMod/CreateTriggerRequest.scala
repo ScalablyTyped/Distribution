@@ -52,7 +52,7 @@ object CreateTriggerRequest {
     Description: DescriptionString = null,
     Predicate: Predicate = null,
     Schedule: GenericString = null,
-    StartOnCreation: js.UndefOr[BooleanValue] = js.undefined,
+    StartOnCreation: js.UndefOr[scala.Boolean] = js.undefined,
     Tags: TagsMap = null,
     WorkflowName: NameString = null
   ): CreateTriggerRequest = {

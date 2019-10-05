@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,8 +97,8 @@ object IgGridRowSelectors {
   	 * Option for igGridRowSelectors
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    checkBoxStateChanged: CheckBoxStateChangedEvent = null,
-    checkBoxStateChanging: CheckBoxStateChangingEvent = null,
+    checkBoxStateChanged: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit = null,
+    checkBoxStateChanging: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit = null,
     deselectAllForPagingTemplate: String = null,
     enableCheckBoxes: js.UndefOr[Boolean] = js.undefined,
     enableRowNumbering: js.UndefOr[Boolean] = js.undefined,
@@ -106,15 +107,15 @@ object IgGridRowSelectors {
     locale: IgGridRowSelectorsLocale = null,
     requireSelection: js.UndefOr[Boolean] = js.undefined,
     rowNumberingSeed: Int | Double = null,
-    rowSelectorClicked: RowSelectorClickedEvent = null,
+    rowSelectorClicked: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit = null,
     rowSelectorColumnWidth: String | Double = null,
     selectAllForPagingTemplate: String = null,
     showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
   ): IgGridRowSelectors = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkBoxStateChanged != null) __obj.updateDynamic("checkBoxStateChanged")(checkBoxStateChanged)
-    if (checkBoxStateChanging != null) __obj.updateDynamic("checkBoxStateChanging")(checkBoxStateChanging)
+    if (checkBoxStateChanged != null) __obj.updateDynamic("checkBoxStateChanged")(js.Any.fromFunction2(checkBoxStateChanged))
+    if (checkBoxStateChanging != null) __obj.updateDynamic("checkBoxStateChanging")(js.Any.fromFunction2(checkBoxStateChanging))
     if (deselectAllForPagingTemplate != null) __obj.updateDynamic("deselectAllForPagingTemplate")(deselectAllForPagingTemplate)
     if (!js.isUndefined(enableCheckBoxes)) __obj.updateDynamic("enableCheckBoxes")(enableCheckBoxes)
     if (!js.isUndefined(enableRowNumbering)) __obj.updateDynamic("enableRowNumbering")(enableRowNumbering)
@@ -123,7 +124,7 @@ object IgGridRowSelectors {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (!js.isUndefined(requireSelection)) __obj.updateDynamic("requireSelection")(requireSelection)
     if (rowNumberingSeed != null) __obj.updateDynamic("rowNumberingSeed")(rowNumberingSeed.asInstanceOf[js.Any])
-    if (rowSelectorClicked != null) __obj.updateDynamic("rowSelectorClicked")(rowSelectorClicked)
+    if (rowSelectorClicked != null) __obj.updateDynamic("rowSelectorClicked")(js.Any.fromFunction2(rowSelectorClicked))
     if (rowSelectorColumnWidth != null) __obj.updateDynamic("rowSelectorColumnWidth")(rowSelectorColumnWidth.asInstanceOf[js.Any])
     if (selectAllForPagingTemplate != null) __obj.updateDynamic("selectAllForPagingTemplate")(selectAllForPagingTemplate)
     if (!js.isUndefined(showCheckBoxesOnFocus)) __obj.updateDynamic("showCheckBoxesOnFocus")(showCheckBoxesOnFocus)

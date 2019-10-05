@@ -1,5 +1,6 @@
 package typings.doccookies
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,4 +51,8 @@ trait docCookies extends js.Object {
   def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String, sDomain: String): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String, sDomain: String, bSecure: Boolean): Boolean = js.native
 }
+
+@JSGlobal("docCookies")
+@js.native
+object docCookies extends TopLevel[docCookies]
 

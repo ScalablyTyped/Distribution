@@ -16,16 +16,13 @@ import typings.atIonicCore.atIonicCoreStrings.url
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
 import typings.atIonicCore.distTypesStencilDotCoreMod.HTMLStencilElement
-import typings.std.CSSStyleDeclaration
-import typings.std.Element
 import typings.std.HTMLInputElement
-import typings.std.HTMLSlotElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atIonicCore.distTypesComponentsMod.ComponentsNs.IonInput because var conflicts: autocapitalize, spellcheck. Inlined accept, autocomplete, autocorrect, autofocus, clearInput, clearOnEdit, color, debounce, disabled, getInputElement, inputmode, max, maxlength, min, minlength, mode, multiple, name, pattern, placeholder, readonly, required, setFocus, size, step, `type`, value */ @js.native
+- typings.atIonicCore.distTypesComponentsMod.Components.IonInput because var conflicts: autocapitalize, spellcheck. Inlined accept, autocomplete, autocorrect, autofocus, clearInput, clearOnEdit, color, debounce, disabled, getInputElement, inputmode, max, maxlength, min, minlength, mode, multiple, name, pattern, placeholder, readonly, required, setFocus, size, step, `type`, value */ @js.native
 trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * If the value of the type attribute is `"file"`, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.
@@ -135,33 +132,6 @@ trait HTMLIonInputElement extends HTMLStencilElement {
     * Sets focus on the specified `ion-input`. Use this method instead of the global `input.focus()`.
     */
   def setFocus(): js.Promise[Unit] = js.native
-}
-
-@JSGlobal("HTMLIonInputElement")
-@js.native
-class HTMLIonInputElementCls () extends HTMLIonInputElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var contentEditable: String = js.native
-  /* CompleteClass */
-  override var innerHTML: String = js.native
-  /* CompleteClass */
-  override var inputMode: String = js.native
-  /* CompleteClass */
-  override val isContentEditable: Boolean = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
 }
 
 @JSGlobal("HTMLIonInputElement")

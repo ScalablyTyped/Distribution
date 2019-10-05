@@ -1,6 +1,6 @@
 package typings.firebaseDashAdmin
 
-import typings.firebaseDashAdmin.adminNs.authNs.HashAlgorithmType
+import typings.firebaseDashAdmin.admin.auth.HashAlgorithmType
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

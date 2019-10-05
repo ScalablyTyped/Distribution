@@ -1,6 +1,6 @@
 package typings.diDashLite
 
-import typings.diDashLite.DiLiteNs.DiLiteStatic
+import typings.diDashLite.DiLite.DiLiteStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

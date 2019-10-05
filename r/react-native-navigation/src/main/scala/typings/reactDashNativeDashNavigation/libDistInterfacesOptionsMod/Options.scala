@@ -129,7 +129,7 @@ object Options {
   @scala.inline
   def apply(
     animations: AnimationOptions = null,
-    backgroundImage: js.UndefOr[ImageRequireSource] = js.undefined,
+    backgroundImage: Int | Double = null,
     blurOnUnmount: js.UndefOr[Boolean] = js.undefined,
     bottomTab: OptionsBottomTab = null,
     bottomTabs: OptionsBottomTabs = null,
@@ -141,7 +141,7 @@ object Options {
     overlay: OverlayOptions = null,
     popGesture: js.UndefOr[Boolean] = js.undefined,
     preview: OptionsPreview = null,
-    rootBackgroundImage: js.UndefOr[ImageRequireSource] = js.undefined,
+    rootBackgroundImage: Int | Double = null,
     sideMenu: OptionsSideMenu = null,
     splitView: OptionsSplitView = null,
     statusBar: OptionsStatusBar = null,
@@ -149,7 +149,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (animations != null) __obj.updateDynamic("animations")(animations)
-    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage)
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     if (!js.isUndefined(blurOnUnmount)) __obj.updateDynamic("blurOnUnmount")(blurOnUnmount)
     if (bottomTab != null) __obj.updateDynamic("bottomTab")(bottomTab)
     if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
@@ -161,7 +161,7 @@ object Options {
     if (overlay != null) __obj.updateDynamic("overlay")(overlay)
     if (!js.isUndefined(popGesture)) __obj.updateDynamic("popGesture")(popGesture)
     if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (!js.isUndefined(rootBackgroundImage)) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage)
+    if (rootBackgroundImage != null) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage.asInstanceOf[js.Any])
     if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu)
     if (splitView != null) __obj.updateDynamic("splitView")(splitView)
     if (statusBar != null) __obj.updateDynamic("statusBar")(statusBar)

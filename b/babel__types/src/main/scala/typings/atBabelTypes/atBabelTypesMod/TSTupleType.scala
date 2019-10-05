@@ -37,3 +37,9 @@ object TSTupleType {
   }
 }
 
+@JSImport("@babel/types", "tsTupleType")
+@js.native
+object tsTupleType extends js.Object {
+  def apply(elementTypes: js.Array[TSType]): TSTupleType = js.native
+}
+

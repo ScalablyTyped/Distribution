@@ -1,6 +1,6 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.NetworkNs.SocketNs.TCP
+import typings.titanium.Titanium.Network.Socket.TCP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

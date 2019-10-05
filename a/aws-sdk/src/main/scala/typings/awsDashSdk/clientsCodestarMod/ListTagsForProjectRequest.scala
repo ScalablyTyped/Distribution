@@ -21,13 +21,9 @@ trait ListTagsForProjectRequest extends js.Object {
 
 object ListTagsForProjectRequest {
   @scala.inline
-  def apply(
-    id: ProjectId,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: PaginationToken = null
-  ): ListTagsForProjectRequest = {
+  def apply(id: ProjectId, maxResults: Int | Double = null, nextToken: PaginationToken = null): ListTagsForProjectRequest = {
     val __obj = js.Dynamic.literal(id = id)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListTagsForProjectRequest]
   }

@@ -18,15 +18,11 @@ trait ListHITsForQualificationTypeResponse extends js.Object {
 
 object ListHITsForQualificationTypeResponse {
   @scala.inline
-  def apply(
-    HITs: HITList = null,
-    NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined
-  ): ListHITsForQualificationTypeResponse = {
+  def apply(HITs: HITList = null, NextToken: PaginationToken = null, NumResults: Int | Double = null): ListHITsForQualificationTypeResponse = {
     val __obj = js.Dynamic.literal()
     if (HITs != null) __obj.updateDynamic("HITs")(HITs)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHITsForQualificationTypeResponse]
   }
 }

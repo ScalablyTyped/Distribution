@@ -27,7 +27,6 @@ trait ITooltipProps extends js.Object {
 object ITooltipProps {
   @scala.inline
   def apply(
-    overlay: ReactNode | js.Function,
     afterVisibleChange: js.Function = null,
     align: js.Object = null,
     animation: js.Any = null,
@@ -36,6 +35,7 @@ object ITooltipProps {
     destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined,
     getTooltipContainer: js.Function = null,
     onVisibleChange: js.Function = null,
+    overlay: ReactNode | js.Function = null,
     overlayClassName: String = null,
     overlayStyle: js.Object = null,
     placement: String = null,
@@ -44,7 +44,7 @@ object ITooltipProps {
     trigger: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ITooltipProps = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(afterVisibleChange)
     if (align != null) __obj.updateDynamic("align")(align)
     if (animation != null) __obj.updateDynamic("animation")(animation)
@@ -53,6 +53,7 @@ object ITooltipProps {
     if (!js.isUndefined(destroyTooltipOnHide)) __obj.updateDynamic("destroyTooltipOnHide")(destroyTooltipOnHide)
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(getTooltipContainer)
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (placement != null) __obj.updateDynamic("placement")(placement)

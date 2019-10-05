@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "animation-frame"
-version := "0.1.7-dt-20190322Z-3b6b95"
-scalaVersion := "2.12.9"
+version := "0.1.7-dt-20190322Z-57a08c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

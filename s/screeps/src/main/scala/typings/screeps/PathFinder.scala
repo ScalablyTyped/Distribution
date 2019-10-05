@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,4 +41,8 @@ trait PathFinder extends js.Object {
     */
   def use(isEnabled: Boolean): js.UndefOr[scala.Nothing] = js.native
 }
+
+@JSGlobal("PathFinder")
+@js.native
+object PathFinder extends TopLevel[PathFinder]
 

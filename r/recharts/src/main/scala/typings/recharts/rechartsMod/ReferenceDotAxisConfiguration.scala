@@ -10,8 +10,8 @@ trait ReferenceDotAxisConfiguration extends js.Object {
 
 object ReferenceDotAxisConfiguration {
   @scala.inline
-  def apply(scale: ScaleCalculator): ReferenceDotAxisConfiguration = {
-    val __obj = js.Dynamic.literal(scale = scale)
+  def apply(scale: /* x */ Double | String => Double): ReferenceDotAxisConfiguration = {
+    val __obj = js.Dynamic.literal(scale = js.Any.fromFunction1(scale))
   
     __obj.asInstanceOf[ReferenceDotAxisConfiguration]
   }

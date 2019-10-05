@@ -39,7 +39,7 @@ object GetDocumentationPartsRequest {
   @scala.inline
   def apply(
     restApiId: String,
-    limit: js.UndefOr[NullableInteger] = js.undefined,
+    limit: Int | scala.Double = null,
     locationStatus: LocationStatusType = null,
     nameQuery: String = null,
     path: String = null,
@@ -47,7 +47,7 @@ object GetDocumentationPartsRequest {
     `type`: DocumentationPartType = null
   ): GetDocumentationPartsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (locationStatus != null) __obj.updateDynamic("locationStatus")(locationStatus.asInstanceOf[js.Any])
     if (nameQuery != null) __obj.updateDynamic("nameQuery")(nameQuery)
     if (path != null) __obj.updateDynamic("path")(path)

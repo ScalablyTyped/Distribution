@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.ListView
-import typings.kendoDashUi.kendoNs.uiNs.ListViewOptions
+import typings.kendoDashUi.kendo.ui.ListView
+import typings.kendoDashUi.kendo.ui.ListViewOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

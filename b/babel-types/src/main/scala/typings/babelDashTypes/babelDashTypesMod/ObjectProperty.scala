@@ -44,3 +44,20 @@ object ObjectProperty {
   }
 }
 
+@JSImport("babel-types", "objectProperty")
+@js.native
+object objectProperty extends js.Object {
+  def apply(): ObjectProperty = js.native
+  def apply(key: Expression): ObjectProperty = js.native
+  def apply(key: Expression, value: Expression): ObjectProperty = js.native
+  def apply(key: Expression, value: Expression, computed: Boolean): ObjectProperty = js.native
+  def apply(key: Expression, value: Expression, computed: Boolean, shorthand: Boolean): ObjectProperty = js.native
+  def apply(
+    key: Expression,
+    value: Expression,
+    computed: Boolean,
+    shorthand: Boolean,
+    decorators: js.Array[Decorator]
+  ): ObjectProperty = js.native
+}
+

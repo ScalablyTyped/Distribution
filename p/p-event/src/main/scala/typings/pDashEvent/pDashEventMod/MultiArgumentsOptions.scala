@@ -14,12 +14,12 @@ object MultiArgumentsOptions {
   @scala.inline
   def apply[EmittedType /* <: js.Array[_] */](
     multiArgs: `true`,
-    filter: FilterFunction[EmittedType] = null,
+    filter: EmittedType => Boolean = null,
     rejectionEvents: js.Array[String | js.Symbol] = null,
     timeout: Int | Double = null
   ): MultiArgumentsOptions[EmittedType] = {
     val __obj = js.Dynamic.literal(multiArgs = multiArgs)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiArgumentsOptions[EmittedType]]

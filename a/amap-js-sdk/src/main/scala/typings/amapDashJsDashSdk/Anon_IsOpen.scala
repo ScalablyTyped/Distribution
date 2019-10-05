@@ -1,6 +1,6 @@
 package typings.amapDashJsDashSdk
 
-import typings.amapDashJsDashSdk.AMapNs.TileLayer
+import typings.amapDashJsDashSdk.AMap.TileLayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "graphql-tag"
-version := "2.10.1-de1edb"
-scalaVersion := "2.12.9"
+version := "2.10.1-9da92e"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

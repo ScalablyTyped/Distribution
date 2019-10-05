@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
+import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chromeDashAppsStrings.authentication_required
 import typings.chromeDashApps.chromeDashAppsStrings.disabled
 import typings.chromeDashApps.chromeDashAppsStrings.initializing
 import typings.chromeDashApps.chromeDashAppsStrings.running
 import typings.chromeDashApps.chromeDashAppsStrings.temporary_unavailable
-import typings.chromeDashApps.chromeNs.ToStringLiteral
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

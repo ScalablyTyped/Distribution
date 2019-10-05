@@ -48,7 +48,7 @@ object CreateStorediSCSIVolumeInput {
     NetworkInterfaceId: NetworkInterfaceId,
     PreserveExistingData: scala.Boolean,
     TargetName: TargetName,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     SnapshotId: SnapshotId = null,
     Tags: Tags = null

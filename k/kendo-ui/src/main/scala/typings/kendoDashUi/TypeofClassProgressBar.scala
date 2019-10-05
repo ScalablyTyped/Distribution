@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.ProgressBar
-import typings.kendoDashUi.kendoNs.uiNs.ProgressBarOptions
+import typings.kendoDashUi.kendo.ui.ProgressBar
+import typings.kendoDashUi.kendo.ui.ProgressBarOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

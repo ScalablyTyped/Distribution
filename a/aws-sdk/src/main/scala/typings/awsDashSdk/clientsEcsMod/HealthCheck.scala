@@ -31,16 +31,16 @@ object HealthCheck {
   @scala.inline
   def apply(
     command: StringList,
-    interval: js.UndefOr[BoxedInteger] = js.undefined,
-    retries: js.UndefOr[BoxedInteger] = js.undefined,
-    startPeriod: js.UndefOr[BoxedInteger] = js.undefined,
-    timeout: js.UndefOr[BoxedInteger] = js.undefined
+    interval: Int | scala.Double = null,
+    retries: Int | scala.Double = null,
+    startPeriod: Int | scala.Double = null,
+    timeout: Int | scala.Double = null
   ): HealthCheck = {
     val __obj = js.Dynamic.literal(command = command)
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval)
-    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries)
-    if (!js.isUndefined(startPeriod)) __obj.updateDynamic("startPeriod")(startPeriod)
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (startPeriod != null) __obj.updateDynamic("startPeriod")(startPeriod.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheck]
   }
 }

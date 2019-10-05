@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticbeanstalkApplicationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.ApplicationAppversionLifecycle
+import typings.atPulumiAws.typesInputMod.elasticbeanstalk.ApplicationAppversionLifecycle
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

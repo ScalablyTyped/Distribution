@@ -21,17 +21,17 @@ object RenderDecorationProps {
   def apply(
     annotations: List[Annotation] | js.Array[Annotation],
     attributes: RenderAttributes,
-    children: ReactNode,
     decoration: Decoration,
     decorations: List[Decoration] | js.Array[Annotation],
     editor: Editor,
     marks: Set[Mark],
     node: Node,
     offset: Double,
-    text: String
+    text: String,
+    children: ReactNode = null
   ): RenderDecorationProps = {
-    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], attributes = attributes, children = children.asInstanceOf[js.Any], decoration = decoration, decorations = decorations.asInstanceOf[js.Any], editor = editor, marks = marks, node = node, offset = offset, text = text)
-  
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], attributes = attributes, decoration = decoration, decorations = decorations.asInstanceOf[js.Any], editor = editor, marks = marks, node = node, offset = offset, text = text)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderDecorationProps]
   }
 }

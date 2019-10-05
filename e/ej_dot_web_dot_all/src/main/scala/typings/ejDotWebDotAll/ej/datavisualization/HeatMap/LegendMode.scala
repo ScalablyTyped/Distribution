@@ -1,0 +1,26 @@
+package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait LegendMode extends js.Object
+
+@JSGlobal("ej.datavisualization.HeatMap.LegendMode")
+@js.native
+object LegendMode extends js.Object {
+  //Scales the graphic content non-uniformly to the width and height of the diagram area
+  @js.native
+  sealed trait Gradient extends LegendMode
+  
+  //Used to align the image at the top left of diagram area
+  @js.native
+  sealed trait List extends LegendMode
+  
+  /* 0 */ val Gradient: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.LegendMode.Gradient with Double = js.native
+  /* 1 */ val List: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.LegendMode.List with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[LegendMode with Double] = js.native
+}
+

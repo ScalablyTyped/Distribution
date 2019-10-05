@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lokijs", "LokiPartitioningAdapter")
 @js.native
 class LokiPartitioningAdapter ()
-  extends typings.lokijs.LokiConstructorNs.LokiPartitioningAdapter
+  extends typings.lokijs.LokiConstructor.LokiPartitioningAdapter
 

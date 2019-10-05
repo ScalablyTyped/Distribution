@@ -26,10 +26,10 @@ trait PublicAccessBlockConfiguration extends js.Object {
 object PublicAccessBlockConfiguration {
   @scala.inline
   def apply(
-    BlockPublicAcls: js.UndefOr[Setting] = js.undefined,
-    BlockPublicPolicy: js.UndefOr[Setting] = js.undefined,
-    IgnorePublicAcls: js.UndefOr[Setting] = js.undefined,
-    RestrictPublicBuckets: js.UndefOr[Setting] = js.undefined
+    BlockPublicAcls: js.UndefOr[Boolean] = js.undefined,
+    BlockPublicPolicy: js.UndefOr[Boolean] = js.undefined,
+    IgnorePublicAcls: js.UndefOr[Boolean] = js.undefined,
+    RestrictPublicBuckets: js.UndefOr[Boolean] = js.undefined
   ): PublicAccessBlockConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(BlockPublicAcls)) __obj.updateDynamic("BlockPublicAcls")(BlockPublicAcls)

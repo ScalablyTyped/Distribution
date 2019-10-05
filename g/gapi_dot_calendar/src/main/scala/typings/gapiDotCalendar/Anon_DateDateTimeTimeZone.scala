@@ -1,13 +1,13 @@
 package typings.gapiDotCalendar
 
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.date
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.datetime
+import typings.gapiDotCalendar.gapi.client.calendar.date
+import typings.gapiDotCalendar.gapi.client.calendar.datetime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DateDateTimeTimeZone extends js.Object {
-  var date: typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.date
+  var date: typings.gapiDotCalendar.gapi.client.calendar.date
   var dateTime: datetime
   var timeZone: js.UndefOr[String] = js.undefined
 }

@@ -1,7 +1,7 @@
 package typings.webgme.jsPanelBasePanelBaseMod
 
-import typings.webgme.GmePanelNs.Options
-import typings.webgme.GmePanelNs.PanelBase
+import typings.webgme.GmePanel.Options
+import typings.webgme.GmePanel.PanelBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

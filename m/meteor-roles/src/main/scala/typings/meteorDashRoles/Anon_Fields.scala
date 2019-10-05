@@ -1,7 +1,7 @@
 package typings.meteorDashRoles
 
-import typings.meteor.MongoNs.FieldSpecifier
-import typings.meteor.MongoNs.SortSpecifier
+import typings.meteor.Mongo.FieldSpecifier
+import typings.meteor.Mongo.SortSpecifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

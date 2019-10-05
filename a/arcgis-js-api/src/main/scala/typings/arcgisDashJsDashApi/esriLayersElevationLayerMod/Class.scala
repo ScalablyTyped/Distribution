@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersElevationLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ElevationLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ElevationLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileInfo
+import typings.arcgisDashJsDashApi.__esri.ElevationLayer
+import typings.arcgisDashJsDashApi.__esri.ElevationLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.TileInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

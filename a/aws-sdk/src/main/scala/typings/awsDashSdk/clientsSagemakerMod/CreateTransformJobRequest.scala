@@ -62,16 +62,16 @@ object CreateTransformJobRequest {
     BatchStrategy: BatchStrategy = null,
     DataProcessing: DataProcessing = null,
     Environment: TransformEnvironmentMap = null,
-    MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
-    MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
+    MaxConcurrentTransforms: Int | Double = null,
+    MaxPayloadInMB: Int | Double = null,
     Tags: TagList = null
   ): CreateTransformJobRequest = {
     val __obj = js.Dynamic.literal(ModelName = ModelName, TransformInput = TransformInput, TransformJobName = TransformJobName, TransformOutput = TransformOutput, TransformResources = TransformResources)
     if (BatchStrategy != null) __obj.updateDynamic("BatchStrategy")(BatchStrategy.asInstanceOf[js.Any])
     if (DataProcessing != null) __obj.updateDynamic("DataProcessing")(DataProcessing)
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
-    if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms)
-    if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB)
+    if (MaxConcurrentTransforms != null) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.asInstanceOf[js.Any])
+    if (MaxPayloadInMB != null) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateTransformJobRequest]
   }

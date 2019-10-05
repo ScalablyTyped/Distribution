@@ -1,6 +1,6 @@
 package typings.isexe.isexeMod
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,5 @@ object ^ extends js.Object {
     options: Options,
     callback: js.Function2[/* error */ js.UndefOr[ErrnoException], /* isExe */ Boolean, Unit]
   ): Unit = js.native
-  def sync(path: String): Boolean = js.native
-  def sync(path: String, options: Options): Boolean = js.native
 }
 

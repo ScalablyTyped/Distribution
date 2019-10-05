@@ -77,8 +77,8 @@ object DescribeSObjectResult {
     urls: Record[String, String],
     actionOverrides: maybe[js.Array[ActionOverride]] = null,
     keyPrefix: maybe[String] = null,
-    listviewable: maybe[Boolean] = null,
-    lookupLayoutable: maybe[Boolean] = null,
+    listviewable: js.UndefOr[Boolean] = js.undefined,
+    lookupLayoutable: js.UndefOr[Boolean] = js.undefined,
     networkScopeFieldName: maybe[String] = null,
     urlDetail: String = null,
     urlEdit: String = null,
@@ -87,8 +87,8 @@ object DescribeSObjectResult {
     val __obj = js.Dynamic.literal(activateable = activateable, childRelationships = childRelationships, compactLayoutable = compactLayoutable, createable = createable, custom = custom, customSetting = customSetting, deletable = deletable, deprecatedAndHidden = deprecatedAndHidden, feedEnabled = feedEnabled, fields = fields, label = label, labelPlural = labelPlural, layoutable = layoutable, mergeable = mergeable, mruEnabled = mruEnabled, name = name, namedLayoutInfos = namedLayoutInfos, queryable = queryable, recordTypeInfos = recordTypeInfos, replicateable = replicateable, retrieveable = retrieveable, searchLayoutable = searchLayoutable, searchable = searchable, supportedScopes = supportedScopes, triggerable = triggerable, undeletable = undeletable, updateable = updateable, urls = urls)
     if (actionOverrides != null) __obj.updateDynamic("actionOverrides")(actionOverrides.asInstanceOf[js.Any])
     if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
-    if (listviewable != null) __obj.updateDynamic("listviewable")(listviewable.asInstanceOf[js.Any])
-    if (lookupLayoutable != null) __obj.updateDynamic("lookupLayoutable")(lookupLayoutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(listviewable)) __obj.updateDynamic("listviewable")(listviewable)
+    if (!js.isUndefined(lookupLayoutable)) __obj.updateDynamic("lookupLayoutable")(lookupLayoutable)
     if (networkScopeFieldName != null) __obj.updateDynamic("networkScopeFieldName")(networkScopeFieldName.asInstanceOf[js.Any])
     if (urlDetail != null) __obj.updateDynamic("urlDetail")(urlDetail)
     if (urlEdit != null) __obj.updateDynamic("urlEdit")(urlEdit)

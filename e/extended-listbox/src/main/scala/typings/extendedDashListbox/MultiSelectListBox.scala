@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MultiSelectListBox")
 @js.native
-class MultiSelectListBoxCls protected () extends MultiSelectListBox {
-  def this(domElement: HTMLElement) = this()
-  def this(domElement: HTMLElement, options: ListBoxSettings) = this()
-}
-
-@JSGlobal("MultiSelectListBox")
-@js.native
 object MultiSelectListBox
   extends Instantiable1[/* domElement */ HTMLElement, MultiSelectListBox]
      with Instantiable2[/* domElement */ HTMLElement, /* options */ ListBoxSettings, MultiSelectListBox]

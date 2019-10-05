@@ -1,7 +1,7 @@
 package typings.waitme
 
-import typings.waitme.WaitMeNs.WaitMeOptions
-import typings.waitme.WaitMeNs.WaitMeStatic
+import typings.waitme.WaitMe.WaitMeOptions
+import typings.waitme.WaitMe.WaitMeStatic
 import typings.waitme.waitmeStrings.close
 import typings.waitme.waitmeStrings.hide
 import scala.scalajs.js

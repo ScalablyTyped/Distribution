@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "parse-filepath"
-version := "1.0-dt-20181225Z-d33ea7"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20181225Z-9cc553"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -31,7 +31,7 @@ trait ReactResizeDetectorProps extends Props[ReactResizeDetector] {
     * Default: "div"
     */
   var nodeType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 116 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any
   ] = js.undefined
   /**
     * Function that will be invoked with width and height arguments.
@@ -80,7 +80,7 @@ object ReactResizeDetectorProps {
     handleHeight: js.UndefOr[Boolean] = js.undefined,
     handleWidth: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    nodeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 116 */ js.Any = null,
+    nodeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = null,
     onResize: (/* width */ Double, /* height */ Double) => Unit = null,
     querySelector: String = null,
     ref: LegacyRef[ReactResizeDetector] = null,

@@ -17,9 +17,9 @@ trait GrantAccessRequest extends js.Object {
 
 object GrantAccessRequest {
   @scala.inline
-  def apply(InstanceId: String, ValidForInMinutes: js.UndefOr[ValidForInMinutes] = js.undefined): GrantAccessRequest = {
+  def apply(InstanceId: String, ValidForInMinutes: Int | scala.Double = null): GrantAccessRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
-    if (!js.isUndefined(ValidForInMinutes)) __obj.updateDynamic("ValidForInMinutes")(ValidForInMinutes)
+    if (ValidForInMinutes != null) __obj.updateDynamic("ValidForInMinutes")(ValidForInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantAccessRequest]
   }
 }

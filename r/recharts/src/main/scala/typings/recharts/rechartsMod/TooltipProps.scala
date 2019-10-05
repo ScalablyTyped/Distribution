@@ -1,6 +1,7 @@
 package typings.recharts.rechartsMod
 
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
 import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,17 +42,17 @@ object TooltipProps {
     coordinate: Coordinate = null,
     cursor: Boolean | js.Object | ReactElement | StatelessComponent[_] = null,
     filterNull: js.UndefOr[Boolean] = js.undefined,
-    formatter: TooltipFormatter = null,
+    formatter: (/* value */ String | Double | (js.Array[String | Double]), /* name */ String, /* entry */ TooltipPayload, /* index */ Double) => ReactNode = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
-    itemSorter: ItemSorter[TooltipPayload] = null,
+    itemSorter: (TooltipPayload, TooltipPayload) => Double = null,
     itemStyle: js.Object = null,
     label: String | Double = null,
-    labelFormatter: LabelFormatter = null,
+    labelFormatter: /* label */ String | Double => ReactNode = null,
     labelStyle: js.Object = null,
     offset: Int | Double = null,
-    onAnimationEnd: RechartsFunction = null,
-    onAnimationStart: RechartsFunction = null,
+    onAnimationEnd: /* repeated */ js.Any => Unit = null,
+    onAnimationStart: /* repeated */ js.Any => Unit = null,
     payload: js.Array[TooltipPayload] = null,
     position: Coordinate = null,
     separator: String = null,
@@ -70,17 +71,17 @@ object TooltipProps {
     if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (!js.isUndefined(filterNull)) __obj.updateDynamic("filterNull")(filterNull)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction4(formatter))
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
-    if (itemSorter != null) __obj.updateDynamic("itemSorter")(itemSorter)
+    if (itemSorter != null) __obj.updateDynamic("itemSorter")(js.Any.fromFunction2(itemSorter))
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction1(labelFormatter))
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
+    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
     if (payload != null) __obj.updateDynamic("payload")(payload)
     if (position != null) __obj.updateDynamic("position")(position)
     if (separator != null) __obj.updateDynamic("separator")(separator)

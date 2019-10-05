@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayAccountMod
 
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.AccountThrottleSettings
+import typings.atPulumiAws.typesOutputMod.apigateway.AccountThrottleSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

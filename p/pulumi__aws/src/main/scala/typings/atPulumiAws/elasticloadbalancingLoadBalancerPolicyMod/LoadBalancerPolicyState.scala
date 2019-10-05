@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticloadbalancingLoadBalancerPolicyMod
 
-import typings.atPulumiAws.typesInputMod.elasticloadbalancingNs.LoadBalancerPolicyPolicyAttribute
+import typings.atPulumiAws.typesInputMod.elasticloadbalancing.LoadBalancerPolicyPolicyAttribute
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

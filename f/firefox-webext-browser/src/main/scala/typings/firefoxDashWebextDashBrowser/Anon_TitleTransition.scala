@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.Date
-import typings.firefoxDashWebextDashBrowser.browserNs.historyNs.TransitionType
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.Date
+import typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

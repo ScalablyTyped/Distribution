@@ -52,7 +52,7 @@ object GetMLTaskRunResponse {
   def apply(
     CompletedOn: Timestamp = null,
     ErrorString: GenericString = null,
-    ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined,
+    ExecutionTime: Int | Double = null,
     LastModifiedOn: Timestamp = null,
     LogGroupName: GenericString = null,
     Properties: TaskRunProperties = null,
@@ -64,7 +64,7 @@ object GetMLTaskRunResponse {
     val __obj = js.Dynamic.literal()
     if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn)
     if (ErrorString != null) __obj.updateDynamic("ErrorString")(ErrorString)
-    if (!js.isUndefined(ExecutionTime)) __obj.updateDynamic("ExecutionTime")(ExecutionTime)
+    if (ExecutionTime != null) __obj.updateDynamic("ExecutionTime")(ExecutionTime.asInstanceOf[js.Any])
     if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn)
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName)
     if (Properties != null) __obj.updateDynamic("Properties")(Properties)

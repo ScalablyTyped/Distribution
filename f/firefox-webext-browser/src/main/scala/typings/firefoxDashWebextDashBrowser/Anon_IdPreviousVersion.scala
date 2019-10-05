@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.OnInstalledReason
+import typings.firefoxDashWebextDashBrowser.browser.runtime.OnInstalledReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

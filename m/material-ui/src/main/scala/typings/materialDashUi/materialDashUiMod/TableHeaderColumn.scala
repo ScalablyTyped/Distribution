@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "TableHeaderColumn")
 @js.native
 class TableHeaderColumn ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.TableNs.TableHeaderColumn
+  extends typings.materialDashUi.__MaterialUI.Table.TableHeaderColumn
 

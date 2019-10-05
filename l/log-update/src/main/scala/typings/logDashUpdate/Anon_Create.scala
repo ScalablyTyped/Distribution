@@ -2,13 +2,15 @@ package typings.logDashUpdate
 
 import typings.logDashUpdate.logDashUpdateMod.LogUpdate
 import typings.logDashUpdate.logDashUpdateMod.Options
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Create extends js.Object {
+  // TODO: Remove this for the next major release
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof logUpdate */ js.Any = js.native
   /**
   	Log to `stderr` by overwriting the previous output in the terminal.
   	@param text - The text to log to `stderr`.

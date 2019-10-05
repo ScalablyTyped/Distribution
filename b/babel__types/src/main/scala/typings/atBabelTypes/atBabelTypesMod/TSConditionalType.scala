@@ -43,3 +43,9 @@ object TSConditionalType {
   }
 }
 
+@JSImport("@babel/types", "tsConditionalType")
+@js.native
+object tsConditionalType extends js.Object {
+  def apply(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType = js.native
+}
+

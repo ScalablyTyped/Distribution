@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSearchSearchViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.SearchViewModel
+import typings.arcgisDashJsDashApi.__esri.SearchViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

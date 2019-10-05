@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Hash")
 @js.native
 class Hash ()
-  extends typings.typescriptDashServices.TypeScriptNs.Hash
+  extends typings.typescriptDashServices.TypeScript.Hash
 
 /* static members */
 @JSImport("typescript-services", "Hash")

@@ -1,11 +1,11 @@
 package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionNs.ViewType
-import typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
-import typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ItemType
-import typings.firefoxDashWebextDashBrowser.browserNs.menusNs.OnClickData
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.Tab
+import typings.firefoxDashWebextDashBrowser.browser.extension.ViewType
+import typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
+import typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
+import typings.firefoxDashWebextDashBrowser.browser.menus.OnClickData
+import typings.firefoxDashWebextDashBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,13 +33,13 @@ object GetTablesRequest {
     DatabaseName: NameString,
     CatalogId: CatalogIdString = null,
     Expression: FilterString = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null
   ): GetTablesRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName)
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
     if (Expression != null) __obj.updateDynamic("Expression")(Expression)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetTablesRequest]
   }

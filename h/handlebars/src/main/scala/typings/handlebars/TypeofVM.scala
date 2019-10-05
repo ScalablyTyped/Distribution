@@ -1,6 +1,6 @@
 package typings.handlebars
 
-import typings.handlebars.HandlebarsNs.ResolvePartialOptions
+import typings.handlebars.Handlebars.ResolvePartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

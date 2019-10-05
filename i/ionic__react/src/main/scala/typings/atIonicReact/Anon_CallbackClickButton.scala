@@ -3,9 +3,9 @@ package typings.atIonicReact
 import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicReact.distTypesComponentsNavigationIonBackButtonMod.Props
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactInstance
 import typings.std.Element
+import typings.std.MouseEvent
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,10 +17,10 @@ trait Anon_CallbackClickButton extends js.Object {
   val props: Props with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var state: js.Object = js.native
-  def clickButton(e: MouseEvent[Element, typings.std.MouseEvent]): Unit = js.native
+  def clickButton(e: typings.react.reactMod.MouseEvent[Element, MouseEvent]): Unit = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
-  def render(): typings.react.reactMod.Global.JSXNs.Element = js.native
+  def render(): typings.react.reactMod.Global.JSX.Element = js.native
   def setState[K /* <: scala.Nothing */](): Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[

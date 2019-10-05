@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.StorageNs.StorageFile
+import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

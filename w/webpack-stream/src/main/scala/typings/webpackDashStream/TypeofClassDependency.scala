@@ -1,7 +1,7 @@
 package typings.webpackDashStream
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.webpack.webpackMod.compilationNs.Dependency
+import typings.webpack.webpackMod.compilation.Dependency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

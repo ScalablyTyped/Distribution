@@ -39,3 +39,9 @@ object MetaProperty {
   }
 }
 
+@JSImport("@babel/types", "metaProperty")
+@js.native
+object metaProperty extends js.Object {
+  def apply(meta: Identifier, property: Identifier): MetaProperty = js.native
+}
+

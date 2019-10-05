@@ -1,7 +1,7 @@
 package typings.typeDashCheck
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typeDashCheck.TypeCheckNs.TC
+import typings.typeDashCheck.TypeCheck.TC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

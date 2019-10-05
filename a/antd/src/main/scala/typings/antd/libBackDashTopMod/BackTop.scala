@@ -2,9 +2,9 @@ package typings.antd.libBackDashTopMod
 
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLDivElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ trait BackTop
   def componentWillUnmount_MBackTop(): Unit = js.native
   def handleScroll(): Unit = js.native
   def renderBackTop(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
-  def scrollToTop(e: MouseEvent[HTMLDivElement, typings.std.MouseEvent]): Unit = js.native
+  def scrollToTop(e: typings.react.reactMod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
 }
 

@@ -57,3 +57,47 @@ object ArrowFunctionExpression {
   }
 }
 
+@JSImport("@babel/types", "arrowFunctionExpression")
+@js.native
+object arrowFunctionExpression extends js.Object {
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression
+  ): ArrowFunctionExpression = js.native
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression,
+    async: Boolean
+  ): ArrowFunctionExpression = js.native
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression,
+    async: Boolean,
+    expression: Boolean
+  ): ArrowFunctionExpression = js.native
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression,
+    async: Boolean,
+    expression: Boolean,
+    generator: Boolean
+  ): ArrowFunctionExpression = js.native
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression,
+    async: Boolean,
+    expression: Boolean,
+    generator: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
+  ): ArrowFunctionExpression = js.native
+  def apply(
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement | Expression,
+    async: Boolean,
+    expression: Boolean,
+    generator: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop
+  ): ArrowFunctionExpression = js.native
+}
+

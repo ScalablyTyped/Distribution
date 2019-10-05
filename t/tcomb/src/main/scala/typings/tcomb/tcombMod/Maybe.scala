@@ -18,3 +18,10 @@ trait Maybe[T] extends Type[Unit | T] {
   def update(instance: Unit, spec: UpdatePatch): Unit | T = js.native
 }
 
+@JSImport("tcomb", "maybe")
+@js.native
+object maybe extends js.Object {
+  def apply[T](`type`: Constructor[T]): Maybe[T] = js.native
+  def apply[T](`type`: Constructor[T], name: String): Maybe[T] = js.native
+}
+

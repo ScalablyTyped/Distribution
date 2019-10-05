@@ -45,3 +45,16 @@ object ArrayPattern {
   }
 }
 
+@JSImport("@babel/types", "arrayPattern")
+@js.native
+object arrayPattern extends js.Object {
+  def apply(elements: js.Array[PatternLike]): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: js.Array[Decorator]): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: js.Array[Decorator], typeAnnotation: Noop): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: js.Array[Decorator], typeAnnotation: TSTypeAnnotation): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: js.Array[Decorator], typeAnnotation: TypeAnnotation): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: Null, typeAnnotation: Noop): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: Null, typeAnnotation: TSTypeAnnotation): ArrayPattern = js.native
+  def apply(elements: js.Array[PatternLike], decorators: Null, typeAnnotation: TypeAnnotation): ArrayPattern = js.native
+}
+

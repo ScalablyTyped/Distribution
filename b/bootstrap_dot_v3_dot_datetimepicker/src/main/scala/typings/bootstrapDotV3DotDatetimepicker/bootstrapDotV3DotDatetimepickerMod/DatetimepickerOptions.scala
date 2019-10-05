@@ -255,7 +255,7 @@ object DatetimepickerOptions {
     locale: String = null,
     maxDate: Boolean | Moment | Date | String = null,
     minDate: Boolean | Moment | Date | String = null,
-    parseInputDate: InputParser = null,
+    parseInputDate: /* input */ String | Date | Moment => Moment = null,
     showClear: js.UndefOr[Boolean] = js.undefined,
     showClose: js.UndefOr[Boolean] = js.undefined,
     showTodayButton: js.UndefOr[Boolean] = js.undefined,
@@ -296,7 +296,7 @@ object DatetimepickerOptions {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (parseInputDate != null) __obj.updateDynamic("parseInputDate")(parseInputDate)
+    if (parseInputDate != null) __obj.updateDynamic("parseInputDate")(js.Any.fromFunction1(parseInputDate))
     if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear)
     if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
     if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton)

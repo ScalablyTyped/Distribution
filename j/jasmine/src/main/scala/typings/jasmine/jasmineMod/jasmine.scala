@@ -1,10 +1,10 @@
 package typings.jasmine.jasmineMod
 
-import typings.jasmine.jasmineNs.CustomMatcherFactories
-import typings.jasmine.jasmineNs.CustomReporter
-import typings.jasmine.jasmineNs.Env
-import typings.jasmine.jasmineNs.Jasmine
-import typings.jasmine.jasmineNs.Reporter
+import typings.jasmine.jasmine.CustomMatcherFactories
+import typings.jasmine.jasmine.CustomReporter
+import typings.jasmine.jasmine.Env
+import typings.jasmine.jasmine.Jasmine
+import typings.jasmine.jasmine.Reporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

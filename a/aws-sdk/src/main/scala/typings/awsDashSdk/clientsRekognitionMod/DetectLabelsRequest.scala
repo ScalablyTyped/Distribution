@@ -21,14 +21,10 @@ trait DetectLabelsRequest extends js.Object {
 
 object DetectLabelsRequest {
   @scala.inline
-  def apply(
-    Image: Image,
-    MaxLabels: js.UndefOr[UInteger] = js.undefined,
-    MinConfidence: js.UndefOr[Percent] = js.undefined
-  ): DetectLabelsRequest = {
+  def apply(Image: Image, MaxLabels: Int | Double = null, MinConfidence: Int | Double = null): DetectLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image)
-    if (!js.isUndefined(MaxLabels)) __obj.updateDynamic("MaxLabels")(MaxLabels)
-    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence)
+    if (MaxLabels != null) __obj.updateDynamic("MaxLabels")(MaxLabels.asInstanceOf[js.Any])
+    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectLabelsRequest]
   }
 }

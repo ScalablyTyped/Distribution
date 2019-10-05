@@ -11,10 +11,13 @@ trait TraversalHandlers[T] extends js.Object {
 
 object TraversalHandlers {
   @scala.inline
-  def apply[T](enter: TraversalHandler[T] = null, exit: TraversalHandler[T] = null): TraversalHandlers[T] = {
+  def apply[T](
+    enter: (/* node */ Node, /* parent */ TraversalAncestors, T) => Unit = null,
+    exit: (/* node */ Node, /* parent */ TraversalAncestors, T) => Unit = null
+  ): TraversalHandlers[T] = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction3(enter))
+    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction3(exit))
     __obj.asInstanceOf[TraversalHandlers[T]]
   }
 }

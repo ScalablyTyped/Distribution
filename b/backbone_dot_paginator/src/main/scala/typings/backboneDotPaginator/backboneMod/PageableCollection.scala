@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("backbone.PageableCollection")
+@JSImport("backbone", "PageableCollection")
 @js.native
 class PageableCollection[TModel /* <: Model */] () extends Collection[TModel] {
   def this(models: js.Array[TModel]) = this()
@@ -57,7 +57,7 @@ class PageableCollection[TModel /* <: Model */] () extends Collection[TModel] {
 }
 
 /* static members */
-@JSGlobal("backbone.PageableCollection")
+@JSImport("backbone", "PageableCollection")
 @js.native
 object PageableCollection extends js.Object {
   def noConflict(): TypeofClassPageableCollection = js.native

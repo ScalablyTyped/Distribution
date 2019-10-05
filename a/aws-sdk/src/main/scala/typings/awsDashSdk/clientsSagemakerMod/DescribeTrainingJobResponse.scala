@@ -128,11 +128,11 @@ object DescribeTrainingJobResponse {
     TrainingJobArn: TrainingJobArn,
     TrainingJobName: TrainingJobName,
     TrainingJobStatus: TrainingJobStatus,
-    BillableTimeInSeconds: js.UndefOr[BillableTimeInSeconds] = js.undefined,
+    BillableTimeInSeconds: Int | Double = null,
     CheckpointConfig: CheckpointConfig = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
     FailureReason: FailureReason = null,
     FinalMetricDataList: FinalMetricDataList = null,
     HyperParameters: HyperParameters = null,
@@ -144,12 +144,12 @@ object DescribeTrainingJobResponse {
     SecondaryStatusTransitions: SecondaryStatusTransitions = null,
     TrainingEndTime: Timestamp = null,
     TrainingStartTime: Timestamp = null,
-    TrainingTimeInSeconds: js.UndefOr[TrainingTimeInSeconds] = js.undefined,
+    TrainingTimeInSeconds: Int | Double = null,
     TuningJobArn: HyperParameterTuningJobArn = null,
     VpcConfig: VpcConfig = null
   ): DescribeTrainingJobResponse = {
     val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification, CreationTime = CreationTime, ModelArtifacts = ModelArtifacts, ResourceConfig = ResourceConfig, SecondaryStatus = SecondaryStatus.asInstanceOf[js.Any], StoppingCondition = StoppingCondition, TrainingJobArn = TrainingJobArn, TrainingJobName = TrainingJobName, TrainingJobStatus = TrainingJobStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(BillableTimeInSeconds)) __obj.updateDynamic("BillableTimeInSeconds")(BillableTimeInSeconds)
+    if (BillableTimeInSeconds != null) __obj.updateDynamic("BillableTimeInSeconds")(BillableTimeInSeconds.asInstanceOf[js.Any])
     if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig)
     if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption)
     if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining)
@@ -165,7 +165,7 @@ object DescribeTrainingJobResponse {
     if (SecondaryStatusTransitions != null) __obj.updateDynamic("SecondaryStatusTransitions")(SecondaryStatusTransitions)
     if (TrainingEndTime != null) __obj.updateDynamic("TrainingEndTime")(TrainingEndTime)
     if (TrainingStartTime != null) __obj.updateDynamic("TrainingStartTime")(TrainingStartTime)
-    if (!js.isUndefined(TrainingTimeInSeconds)) __obj.updateDynamic("TrainingTimeInSeconds")(TrainingTimeInSeconds)
+    if (TrainingTimeInSeconds != null) __obj.updateDynamic("TrainingTimeInSeconds")(TrainingTimeInSeconds.asInstanceOf[js.Any])
     if (TuningJobArn != null) __obj.updateDynamic("TuningJobArn")(TuningJobArn)
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[DescribeTrainingJobResponse]

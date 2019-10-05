@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "GeoPoint")
 @js.native
 class GeoPoint ()
-  extends typings.parse.ParseNs.GeoPoint {
+  extends typings.parse.Parse.GeoPoint {
   def this(arg1: js.Any) = this()
   def this(arg1: js.Any, arg2: js.Any) = this()
 }

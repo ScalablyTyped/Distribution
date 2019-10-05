@@ -1,7 +1,7 @@
 package typings.reactDashMdl.reactDashMdlMod
 
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object RadioGroupProps {
     childContainer: String = null,
     container: String = null,
     label: String = null,
-    onChange: FormEventHandler[RadioGroup] = null
+    onChange: FormEvent[RadioGroup] => Unit = null
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal(name = name, value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
@@ -34,7 +34,7 @@ object RadioGroupProps {
     if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)
     if (container != null) __obj.updateDynamic("container")(container)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RadioGroupProps]
   }
 }

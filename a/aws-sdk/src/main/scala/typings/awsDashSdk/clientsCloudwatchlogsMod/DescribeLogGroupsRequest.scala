@@ -21,13 +21,9 @@ trait DescribeLogGroupsRequest extends js.Object {
 
 object DescribeLogGroupsRequest {
   @scala.inline
-  def apply(
-    limit: js.UndefOr[DescribeLimit] = js.undefined,
-    logGroupNamePrefix: LogGroupName = null,
-    nextToken: NextToken = null
-  ): DescribeLogGroupsRequest = {
+  def apply(limit: Int | Double = null, logGroupNamePrefix: LogGroupName = null, nextToken: NextToken = null): DescribeLogGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (logGroupNamePrefix != null) __obj.updateDynamic("logGroupNamePrefix")(logGroupNamePrefix)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeLogGroupsRequest]

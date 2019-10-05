@@ -1,15 +1,15 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.webNavigationNs.GetAllFrameDetails
-import typings.chrome.chromeNs.webNavigationNs.GetAllFrameResultDetails
-import typings.chrome.chromeNs.webNavigationNs.GetFrameDetails
-import typings.chrome.chromeNs.webNavigationNs.GetFrameResultDetails
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationFramedErrorEvent
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationFramedEvent
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationParentedEvent
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationReplacementEvent
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationSourceEvent
-import typings.chrome.chromeNs.webNavigationNs.WebNavigationTransitionalEvent
+import typings.chrome.chrome.webNavigation.GetAllFrameDetails
+import typings.chrome.chrome.webNavigation.GetAllFrameResultDetails
+import typings.chrome.chrome.webNavigation.GetFrameDetails
+import typings.chrome.chrome.webNavigation.GetFrameResultDetails
+import typings.chrome.chrome.webNavigation.WebNavigationFramedErrorEvent
+import typings.chrome.chrome.webNavigation.WebNavigationFramedEvent
+import typings.chrome.chrome.webNavigation.WebNavigationParentedEvent
+import typings.chrome.chrome.webNavigation.WebNavigationReplacementEvent
+import typings.chrome.chrome.webNavigation.WebNavigationSourceEvent
+import typings.chrome.chrome.webNavigation.WebNavigationTransitionalEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.sarif.sarifMod
 
-import typings.sarif.sarifMod.SuppressionNs.kind
-import typings.sarif.sarifMod.SuppressionNs.state
+import typings.sarif.sarifMod.Suppression.kind
+import typings.sarif.sarifMod.Suppression.state
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Suppression extends js.Object {
   /**
     * A string that indicates where the suppression is persisted.
     */
-  var kind: typings.sarif.sarifMod.SuppressionNs.kind
+  var kind: kind
   /**
     * Identifies the location associated with the suppression.
     */
@@ -30,26 +30,24 @@ trait Suppression extends js.Object {
   /**
     * A string that indicates the state of the suppression.
     */
-  var state: js.UndefOr[typings.sarif.sarifMod.SuppressionNs.state] = js.undefined
+  var state: js.UndefOr[state] = js.undefined
 }
 
-object Suppression {
-  @scala.inline
-  def apply(
-    kind: kind,
-    guid: String = null,
-    justification: String = null,
-    location: Location = null,
-    properties: PropertyBag = null,
-    state: state = null
-  ): Suppression = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (justification != null) __obj.updateDynamic("justification")(justification)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (state != null) __obj.updateDynamic("state")(state)
-    __obj.asInstanceOf[Suppression]
-  }
+@JSImport("sarif", "Suppression")
+@js.native
+object Suppression extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.inSource
+    - typings.sarif.sarifStrings.external
+  */
+  trait kind extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.accepted
+    - typings.sarif.sarifStrings.underReview
+    - typings.sarif.sarifStrings.rejected
+  */
+  trait state extends js.Object
+  
 }
 

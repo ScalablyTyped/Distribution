@@ -9,7 +9,7 @@ import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.Po
 import typings.popperDotJs.popperDotJsMod.Boundary
 import typings.popperDotJs.popperDotJsMod.Modifiers
 import typings.react.Event
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.SyntheticEvent
 import typings.std.HTMLElement
@@ -65,10 +65,10 @@ object ITooltipProps {
     position: PopoverPosition = null,
     targetClassName: String = null,
     targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     transitionDuration: Int | Double = null,
     usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
   ): ITooltipProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

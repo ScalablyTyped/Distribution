@@ -36,7 +36,7 @@ trait GlobalConfiguration extends js.Object {
 object GlobalConfiguration {
   @scala.inline
   def apply(
-    InitialAudioGain: js.UndefOr[__integerMinNegative60Max60] = js.undefined,
+    InitialAudioGain: Int | Double = null,
     InputEndAction: GlobalConfigurationInputEndAction = null,
     InputLossBehavior: InputLossBehavior = null,
     OutputLockingMode: GlobalConfigurationOutputLockingMode = null,
@@ -44,7 +44,7 @@ object GlobalConfiguration {
     SupportLowFramerateInputs: GlobalConfigurationLowFramerateInputs = null
   ): GlobalConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InitialAudioGain)) __obj.updateDynamic("InitialAudioGain")(InitialAudioGain)
+    if (InitialAudioGain != null) __obj.updateDynamic("InitialAudioGain")(InitialAudioGain.asInstanceOf[js.Any])
     if (InputEndAction != null) __obj.updateDynamic("InputEndAction")(InputEndAction.asInstanceOf[js.Any])
     if (InputLossBehavior != null) __obj.updateDynamic("InputLossBehavior")(InputLossBehavior)
     if (OutputLockingMode != null) __obj.updateDynamic("OutputLockingMode")(OutputLockingMode.asInstanceOf[js.Any])

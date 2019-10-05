@@ -57,27 +57,27 @@ object Network {
     DestinationDomain: NonEmptyString = null,
     DestinationIpV4: NonEmptyString = null,
     DestinationIpV6: NonEmptyString = null,
-    DestinationPort: js.UndefOr[Integer] = js.undefined,
+    DestinationPort: Int | scala.Double = null,
     Direction: NetworkDirection = null,
     Protocol: NonEmptyString = null,
     SourceDomain: NonEmptyString = null,
     SourceIpV4: NonEmptyString = null,
     SourceIpV6: NonEmptyString = null,
     SourceMac: NonEmptyString = null,
-    SourcePort: js.UndefOr[Integer] = js.undefined
+    SourcePort: Int | scala.Double = null
   ): Network = {
     val __obj = js.Dynamic.literal()
     if (DestinationDomain != null) __obj.updateDynamic("DestinationDomain")(DestinationDomain)
     if (DestinationIpV4 != null) __obj.updateDynamic("DestinationIpV4")(DestinationIpV4)
     if (DestinationIpV6 != null) __obj.updateDynamic("DestinationIpV6")(DestinationIpV6)
-    if (!js.isUndefined(DestinationPort)) __obj.updateDynamic("DestinationPort")(DestinationPort)
+    if (DestinationPort != null) __obj.updateDynamic("DestinationPort")(DestinationPort.asInstanceOf[js.Any])
     if (Direction != null) __obj.updateDynamic("Direction")(Direction.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol)
     if (SourceDomain != null) __obj.updateDynamic("SourceDomain")(SourceDomain)
     if (SourceIpV4 != null) __obj.updateDynamic("SourceIpV4")(SourceIpV4)
     if (SourceIpV6 != null) __obj.updateDynamic("SourceIpV6")(SourceIpV6)
     if (SourceMac != null) __obj.updateDynamic("SourceMac")(SourceMac)
-    if (!js.isUndefined(SourcePort)) __obj.updateDynamic("SourcePort")(SourcePort)
+    if (SourcePort != null) __obj.updateDynamic("SourcePort")(SourcePort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Network]
   }
 }

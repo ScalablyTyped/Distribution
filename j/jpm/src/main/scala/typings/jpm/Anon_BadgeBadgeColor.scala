@@ -1,7 +1,7 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.Icon
-import typings.jpm.FFAddonSDKNs.ToggleButtonState
+import typings.jpm.FFAddonSDK.Icon
+import typings.jpm.FFAddonSDK.ToggleButtonState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

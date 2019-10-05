@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("scrollparent", JSImport.Namespace)
 @js.native
 object scrollparentMod extends js.Object {
-  def apply(node: HTMLElement | SVGElement): HTMLElement | Null = js.native
+  def apply(node: HTMLElement): HTMLElement | Null = js.native
+  def apply(node: SVGElement): HTMLElement | Null = js.native
 }
 

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baconjs", "Initial")
 @js.native
 class Initial[A] protected ()
-  extends typings.baconjs.BaconNs.Initial[A] {
+  extends typings.baconjs.Bacon.Initial[A] {
   /**
     * @constructor
     * @constructs Bacon.Initial

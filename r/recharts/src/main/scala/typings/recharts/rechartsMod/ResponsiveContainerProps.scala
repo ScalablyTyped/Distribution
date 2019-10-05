@@ -21,8 +21,8 @@ trait ResponsiveContainerProps extends js.Object {
 object ResponsiveContainerProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     aspect: Int | Double = null,
+    children: ReactNode = null,
     className: String | Double = null,
     debounce: Int | Double = null,
     height: String | Double = null,
@@ -32,8 +32,9 @@ object ResponsiveContainerProps {
     minWidth: String | Double = null,
     width: String | Double = null
   ): ResponsiveContainerProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

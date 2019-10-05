@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lbListenerMod
 
-import typings.atPulumiAws.typesOutputMod.lbNs.ListenerDefaultAction
+import typings.atPulumiAws.typesOutputMod.lb.ListenerDefaultAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

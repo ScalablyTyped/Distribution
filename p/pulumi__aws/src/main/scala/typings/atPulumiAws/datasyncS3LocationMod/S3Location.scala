@@ -2,7 +2,7 @@ package typings.atPulumiAws.datasyncS3LocationMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesOutputMod.datasyncNs.S3LocationS3Config
+import typings.atPulumiAws.typesOutputMod.datasync.S3LocationS3Config
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -19,10 +19,10 @@ class ServiceAccount protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceAccount) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.ServiceAccount) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ServiceAccount,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.ServiceAccount,
     opts: CustomResourceOptions
   ) = this()
 }

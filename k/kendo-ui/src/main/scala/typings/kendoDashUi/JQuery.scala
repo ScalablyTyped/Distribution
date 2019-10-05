@@ -1,5 +1,187 @@
 package typings.kendoDashUi
 
+import typings.kendoDashUi.kendo.dataviz.ui.ArcGauge
+import typings.kendoDashUi.kendo.dataviz.ui.ArcGaugeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Barcode
+import typings.kendoDashUi.kendo.dataviz.ui.BarcodeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Chart
+import typings.kendoDashUi.kendo.dataviz.ui.ChartOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Diagram
+import typings.kendoDashUi.kendo.dataviz.ui.DiagramOptions
+import typings.kendoDashUi.kendo.dataviz.ui.LinearGauge
+import typings.kendoDashUi.kendo.dataviz.ui.LinearGaugeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Map
+import typings.kendoDashUi.kendo.dataviz.ui.MapOptions
+import typings.kendoDashUi.kendo.dataviz.ui.QRCode
+import typings.kendoDashUi.kendo.dataviz.ui.QRCodeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.RadialGauge
+import typings.kendoDashUi.kendo.dataviz.ui.RadialGaugeOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Sparkline
+import typings.kendoDashUi.kendo.dataviz.ui.SparklineOptions
+import typings.kendoDashUi.kendo.dataviz.ui.StockChart
+import typings.kendoDashUi.kendo.dataviz.ui.StockChartOptions
+import typings.kendoDashUi.kendo.dataviz.ui.TreeMap
+import typings.kendoDashUi.kendo.dataviz.ui.TreeMapOptions
+import typings.kendoDashUi.kendo.mobile.ui.ActionSheet
+import typings.kendoDashUi.kendo.mobile.ui.ActionSheetOptions
+import typings.kendoDashUi.kendo.mobile.ui.BackButton
+import typings.kendoDashUi.kendo.mobile.ui.BackButtonOptions
+import typings.kendoDashUi.kendo.mobile.ui.Collapsible
+import typings.kendoDashUi.kendo.mobile.ui.CollapsibleOptions
+import typings.kendoDashUi.kendo.mobile.ui.DetailButton
+import typings.kendoDashUi.kendo.mobile.ui.DetailButtonOptions
+import typings.kendoDashUi.kendo.mobile.ui.Drawer
+import typings.kendoDashUi.kendo.mobile.ui.DrawerOptions
+import typings.kendoDashUi.kendo.mobile.ui.Layout
+import typings.kendoDashUi.kendo.mobile.ui.LayoutOptions
+import typings.kendoDashUi.kendo.mobile.ui.Loader
+import typings.kendoDashUi.kendo.mobile.ui.LoaderOptions
+import typings.kendoDashUi.kendo.mobile.ui.ModalView
+import typings.kendoDashUi.kendo.mobile.ui.ModalViewOptions
+import typings.kendoDashUi.kendo.mobile.ui.NavBar
+import typings.kendoDashUi.kendo.mobile.ui.NavBarOptions
+import typings.kendoDashUi.kendo.mobile.ui.Pane
+import typings.kendoDashUi.kendo.mobile.ui.PaneOptions
+import typings.kendoDashUi.kendo.mobile.ui.PopOver
+import typings.kendoDashUi.kendo.mobile.ui.PopOverOptions
+import typings.kendoDashUi.kendo.mobile.ui.ScrollView
+import typings.kendoDashUi.kendo.mobile.ui.ScrollViewOptions
+import typings.kendoDashUi.kendo.mobile.ui.Scroller
+import typings.kendoDashUi.kendo.mobile.ui.ScrollerOptions
+import typings.kendoDashUi.kendo.mobile.ui.SplitView
+import typings.kendoDashUi.kendo.mobile.ui.SplitViewOptions
+import typings.kendoDashUi.kendo.mobile.ui.Switch
+import typings.kendoDashUi.kendo.mobile.ui.SwitchOptions
+import typings.kendoDashUi.kendo.mobile.ui.TabStrip
+import typings.kendoDashUi.kendo.mobile.ui.TabStripOptions
+import typings.kendoDashUi.kendo.mobile.ui.View
+import typings.kendoDashUi.kendo.mobile.ui.ViewOptions
+import typings.kendoDashUi.kendo.ui.Alert
+import typings.kendoDashUi.kendo.ui.AlertOptions
+import typings.kendoDashUi.kendo.ui.AutoComplete
+import typings.kendoDashUi.kendo.ui.AutoCompleteOptions
+import typings.kendoDashUi.kendo.ui.Button
+import typings.kendoDashUi.kendo.ui.ButtonGroup
+import typings.kendoDashUi.kendo.ui.ButtonGroupOptions
+import typings.kendoDashUi.kendo.ui.ButtonOptions
+import typings.kendoDashUi.kendo.ui.Calendar
+import typings.kendoDashUi.kendo.ui.CalendarOptions
+import typings.kendoDashUi.kendo.ui.Chat
+import typings.kendoDashUi.kendo.ui.ChatOptions
+import typings.kendoDashUi.kendo.ui.ColorPalette
+import typings.kendoDashUi.kendo.ui.ColorPaletteOptions
+import typings.kendoDashUi.kendo.ui.ColorPicker
+import typings.kendoDashUi.kendo.ui.ColorPickerOptions
+import typings.kendoDashUi.kendo.ui.ComboBox
+import typings.kendoDashUi.kendo.ui.ComboBoxOptions
+import typings.kendoDashUi.kendo.ui.Confirm
+import typings.kendoDashUi.kendo.ui.ConfirmOptions
+import typings.kendoDashUi.kendo.ui.ContextMenu
+import typings.kendoDashUi.kendo.ui.ContextMenuOptions
+import typings.kendoDashUi.kendo.ui.DateInput
+import typings.kendoDashUi.kendo.ui.DateInputOptions
+import typings.kendoDashUi.kendo.ui.DatePicker
+import typings.kendoDashUi.kendo.ui.DatePickerOptions
+import typings.kendoDashUi.kendo.ui.DateRangePicker
+import typings.kendoDashUi.kendo.ui.DateRangePickerOptions
+import typings.kendoDashUi.kendo.ui.DateTimePicker
+import typings.kendoDashUi.kendo.ui.DateTimePickerOptions
+import typings.kendoDashUi.kendo.ui.Dialog
+import typings.kendoDashUi.kendo.ui.DialogOptions
+import typings.kendoDashUi.kendo.ui.Draggable
+import typings.kendoDashUi.kendo.ui.DraggableOptions
+import typings.kendoDashUi.kendo.ui.DropDownList
+import typings.kendoDashUi.kendo.ui.DropDownListOptions
+import typings.kendoDashUi.kendo.ui.DropDownTree
+import typings.kendoDashUi.kendo.ui.DropDownTreeOptions
+import typings.kendoDashUi.kendo.ui.DropTarget
+import typings.kendoDashUi.kendo.ui.DropTargetArea
+import typings.kendoDashUi.kendo.ui.DropTargetAreaOptions
+import typings.kendoDashUi.kendo.ui.DropTargetOptions
+import typings.kendoDashUi.kendo.ui.Editor
+import typings.kendoDashUi.kendo.ui.EditorOptions
+import typings.kendoDashUi.kendo.ui.Filter
+import typings.kendoDashUi.kendo.ui.FilterMenu
+import typings.kendoDashUi.kendo.ui.FilterMenuOptions
+import typings.kendoDashUi.kendo.ui.FilterOptions
+import typings.kendoDashUi.kendo.ui.FlatColorPicker
+import typings.kendoDashUi.kendo.ui.FlatColorPickerOptions
+import typings.kendoDashUi.kendo.ui.Gantt
+import typings.kendoDashUi.kendo.ui.GanttOptions
+import typings.kendoDashUi.kendo.ui.Grid
+import typings.kendoDashUi.kendo.ui.GridOptions
+import typings.kendoDashUi.kendo.ui.ListBox
+import typings.kendoDashUi.kendo.ui.ListBoxOptions
+import typings.kendoDashUi.kendo.ui.ListView
+import typings.kendoDashUi.kendo.ui.ListViewOptions
+import typings.kendoDashUi.kendo.ui.MaskedTextBox
+import typings.kendoDashUi.kendo.ui.MaskedTextBoxOptions
+import typings.kendoDashUi.kendo.ui.MediaPlayer
+import typings.kendoDashUi.kendo.ui.MediaPlayerOptions
+import typings.kendoDashUi.kendo.ui.Menu
+import typings.kendoDashUi.kendo.ui.MenuOptions
+import typings.kendoDashUi.kendo.ui.MultiColumnComboBox
+import typings.kendoDashUi.kendo.ui.MultiColumnComboBoxOptions
+import typings.kendoDashUi.kendo.ui.MultiSelect
+import typings.kendoDashUi.kendo.ui.MultiSelectOptions
+import typings.kendoDashUi.kendo.ui.MultiViewCalendar
+import typings.kendoDashUi.kendo.ui.MultiViewCalendarOptions
+import typings.kendoDashUi.kendo.ui.Notification
+import typings.kendoDashUi.kendo.ui.NotificationOptions
+import typings.kendoDashUi.kendo.ui.NumericTextBox
+import typings.kendoDashUi.kendo.ui.NumericTextBoxOptions
+import typings.kendoDashUi.kendo.ui.PDFViewer
+import typings.kendoDashUi.kendo.ui.PDFViewerOptions
+import typings.kendoDashUi.kendo.ui.Pager
+import typings.kendoDashUi.kendo.ui.PagerOptions
+import typings.kendoDashUi.kendo.ui.PanelBar
+import typings.kendoDashUi.kendo.ui.PanelBarOptions
+import typings.kendoDashUi.kendo.ui.PivotConfigurator
+import typings.kendoDashUi.kendo.ui.PivotConfiguratorOptions
+import typings.kendoDashUi.kendo.ui.PivotGrid
+import typings.kendoDashUi.kendo.ui.PivotGridOptions
+import typings.kendoDashUi.kendo.ui.Popup
+import typings.kendoDashUi.kendo.ui.PopupOptions
+import typings.kendoDashUi.kendo.ui.ProgressBar
+import typings.kendoDashUi.kendo.ui.ProgressBarOptions
+import typings.kendoDashUi.kendo.ui.Prompt
+import typings.kendoDashUi.kendo.ui.PromptOptions
+import typings.kendoDashUi.kendo.ui.RangeSlider
+import typings.kendoDashUi.kendo.ui.RangeSliderOptions
+import typings.kendoDashUi.kendo.ui.Rating
+import typings.kendoDashUi.kendo.ui.RatingOptions
+import typings.kendoDashUi.kendo.ui.ResponsivePanel
+import typings.kendoDashUi.kendo.ui.ResponsivePanelOptions
+import typings.kendoDashUi.kendo.ui.Scheduler
+import typings.kendoDashUi.kendo.ui.SchedulerOptions
+import typings.kendoDashUi.kendo.ui.Slider
+import typings.kendoDashUi.kendo.ui.SliderOptions
+import typings.kendoDashUi.kendo.ui.Sortable
+import typings.kendoDashUi.kendo.ui.SortableOptions
+import typings.kendoDashUi.kendo.ui.Splitter
+import typings.kendoDashUi.kendo.ui.SplitterOptions
+import typings.kendoDashUi.kendo.ui.Spreadsheet
+import typings.kendoDashUi.kendo.ui.SpreadsheetOptions
+import typings.kendoDashUi.kendo.ui.TimePicker
+import typings.kendoDashUi.kendo.ui.TimePickerOptions
+import typings.kendoDashUi.kendo.ui.Timeline
+import typings.kendoDashUi.kendo.ui.TimelineOptions
+import typings.kendoDashUi.kendo.ui.ToolBar
+import typings.kendoDashUi.kendo.ui.ToolBarOptions
+import typings.kendoDashUi.kendo.ui.Tooltip
+import typings.kendoDashUi.kendo.ui.TooltipOptions
+import typings.kendoDashUi.kendo.ui.Touch
+import typings.kendoDashUi.kendo.ui.TouchOptions
+import typings.kendoDashUi.kendo.ui.TreeList
+import typings.kendoDashUi.kendo.ui.TreeListOptions
+import typings.kendoDashUi.kendo.ui.TreeView
+import typings.kendoDashUi.kendo.ui.TreeViewOptions
+import typings.kendoDashUi.kendo.ui.Upload
+import typings.kendoDashUi.kendo.ui.UploadOptions
+import typings.kendoDashUi.kendo.ui.Validator
+import typings.kendoDashUi.kendo.ui.ValidatorOptions
+import typings.kendoDashUi.kendo.ui.Window
+import typings.kendoDashUi.kendo.ui.WindowOptions
 import typings.kendoDashUi.kendoDashUiStrings.kendoAlert
 import typings.kendoDashUi.kendoDashUiStrings.kendoArcGauge
 import typings.kendoDashUi.kendoDashUiStrings.kendoAutoComplete
@@ -97,188 +279,6 @@ import typings.kendoDashUi.kendoDashUiStrings.kendoTreeView
 import typings.kendoDashUi.kendoDashUiStrings.kendoUpload
 import typings.kendoDashUi.kendoDashUiStrings.kendoValidator
 import typings.kendoDashUi.kendoDashUiStrings.kendoWindow
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.ArcGauge
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.ArcGaugeOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Barcode
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.BarcodeOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Chart
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.ChartOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Diagram
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.DiagramOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.LinearGauge
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.LinearGaugeOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Map
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.MapOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.QRCode
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.QRCodeOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.RadialGauge
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.RadialGaugeOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Sparkline
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.SparklineOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.StockChart
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.StockChartOptions
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.TreeMap
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.TreeMapOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ActionSheet
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ActionSheetOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.BackButton
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.BackButtonOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Collapsible
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.CollapsibleOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.DetailButton
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.DetailButtonOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Drawer
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.DrawerOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Layout
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.LayoutOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Loader
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.LoaderOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ModalView
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ModalViewOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.NavBar
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.NavBarOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Pane
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.PaneOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.PopOver
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.PopOverOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ScrollView
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ScrollViewOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Scroller
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ScrollerOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.SplitView
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.SplitViewOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Switch
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.SwitchOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.TabStrip
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.TabStripOptions
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.View
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.ViewOptions
-import typings.kendoDashUi.kendoNs.uiNs.Alert
-import typings.kendoDashUi.kendoNs.uiNs.AlertOptions
-import typings.kendoDashUi.kendoNs.uiNs.AutoComplete
-import typings.kendoDashUi.kendoNs.uiNs.AutoCompleteOptions
-import typings.kendoDashUi.kendoNs.uiNs.Button
-import typings.kendoDashUi.kendoNs.uiNs.ButtonGroup
-import typings.kendoDashUi.kendoNs.uiNs.ButtonGroupOptions
-import typings.kendoDashUi.kendoNs.uiNs.ButtonOptions
-import typings.kendoDashUi.kendoNs.uiNs.Calendar
-import typings.kendoDashUi.kendoNs.uiNs.CalendarOptions
-import typings.kendoDashUi.kendoNs.uiNs.Chat
-import typings.kendoDashUi.kendoNs.uiNs.ChatOptions
-import typings.kendoDashUi.kendoNs.uiNs.ColorPalette
-import typings.kendoDashUi.kendoNs.uiNs.ColorPaletteOptions
-import typings.kendoDashUi.kendoNs.uiNs.ColorPicker
-import typings.kendoDashUi.kendoNs.uiNs.ColorPickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.ComboBox
-import typings.kendoDashUi.kendoNs.uiNs.ComboBoxOptions
-import typings.kendoDashUi.kendoNs.uiNs.Confirm
-import typings.kendoDashUi.kendoNs.uiNs.ConfirmOptions
-import typings.kendoDashUi.kendoNs.uiNs.ContextMenu
-import typings.kendoDashUi.kendoNs.uiNs.ContextMenuOptions
-import typings.kendoDashUi.kendoNs.uiNs.DateInput
-import typings.kendoDashUi.kendoNs.uiNs.DateInputOptions
-import typings.kendoDashUi.kendoNs.uiNs.DatePicker
-import typings.kendoDashUi.kendoNs.uiNs.DatePickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.DateRangePicker
-import typings.kendoDashUi.kendoNs.uiNs.DateRangePickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.DateTimePicker
-import typings.kendoDashUi.kendoNs.uiNs.DateTimePickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Dialog
-import typings.kendoDashUi.kendoNs.uiNs.DialogOptions
-import typings.kendoDashUi.kendoNs.uiNs.Draggable
-import typings.kendoDashUi.kendoNs.uiNs.DraggableOptions
-import typings.kendoDashUi.kendoNs.uiNs.DropDownList
-import typings.kendoDashUi.kendoNs.uiNs.DropDownListOptions
-import typings.kendoDashUi.kendoNs.uiNs.DropDownTree
-import typings.kendoDashUi.kendoNs.uiNs.DropDownTreeOptions
-import typings.kendoDashUi.kendoNs.uiNs.DropTarget
-import typings.kendoDashUi.kendoNs.uiNs.DropTargetArea
-import typings.kendoDashUi.kendoNs.uiNs.DropTargetAreaOptions
-import typings.kendoDashUi.kendoNs.uiNs.DropTargetOptions
-import typings.kendoDashUi.kendoNs.uiNs.Editor
-import typings.kendoDashUi.kendoNs.uiNs.EditorOptions
-import typings.kendoDashUi.kendoNs.uiNs.Filter
-import typings.kendoDashUi.kendoNs.uiNs.FilterMenu
-import typings.kendoDashUi.kendoNs.uiNs.FilterMenuOptions
-import typings.kendoDashUi.kendoNs.uiNs.FilterOptions
-import typings.kendoDashUi.kendoNs.uiNs.FlatColorPicker
-import typings.kendoDashUi.kendoNs.uiNs.FlatColorPickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Gantt
-import typings.kendoDashUi.kendoNs.uiNs.GanttOptions
-import typings.kendoDashUi.kendoNs.uiNs.Grid
-import typings.kendoDashUi.kendoNs.uiNs.GridOptions
-import typings.kendoDashUi.kendoNs.uiNs.ListBox
-import typings.kendoDashUi.kendoNs.uiNs.ListBoxOptions
-import typings.kendoDashUi.kendoNs.uiNs.ListView
-import typings.kendoDashUi.kendoNs.uiNs.ListViewOptions
-import typings.kendoDashUi.kendoNs.uiNs.MaskedTextBox
-import typings.kendoDashUi.kendoNs.uiNs.MaskedTextBoxOptions
-import typings.kendoDashUi.kendoNs.uiNs.MediaPlayer
-import typings.kendoDashUi.kendoNs.uiNs.MediaPlayerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Menu
-import typings.kendoDashUi.kendoNs.uiNs.MenuOptions
-import typings.kendoDashUi.kendoNs.uiNs.MultiColumnComboBox
-import typings.kendoDashUi.kendoNs.uiNs.MultiColumnComboBoxOptions
-import typings.kendoDashUi.kendoNs.uiNs.MultiSelect
-import typings.kendoDashUi.kendoNs.uiNs.MultiSelectOptions
-import typings.kendoDashUi.kendoNs.uiNs.MultiViewCalendar
-import typings.kendoDashUi.kendoNs.uiNs.MultiViewCalendarOptions
-import typings.kendoDashUi.kendoNs.uiNs.Notification
-import typings.kendoDashUi.kendoNs.uiNs.NotificationOptions
-import typings.kendoDashUi.kendoNs.uiNs.NumericTextBox
-import typings.kendoDashUi.kendoNs.uiNs.NumericTextBoxOptions
-import typings.kendoDashUi.kendoNs.uiNs.PDFViewer
-import typings.kendoDashUi.kendoNs.uiNs.PDFViewerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Pager
-import typings.kendoDashUi.kendoNs.uiNs.PagerOptions
-import typings.kendoDashUi.kendoNs.uiNs.PanelBar
-import typings.kendoDashUi.kendoNs.uiNs.PanelBarOptions
-import typings.kendoDashUi.kendoNs.uiNs.PivotConfigurator
-import typings.kendoDashUi.kendoNs.uiNs.PivotConfiguratorOptions
-import typings.kendoDashUi.kendoNs.uiNs.PivotGrid
-import typings.kendoDashUi.kendoNs.uiNs.PivotGridOptions
-import typings.kendoDashUi.kendoNs.uiNs.Popup
-import typings.kendoDashUi.kendoNs.uiNs.PopupOptions
-import typings.kendoDashUi.kendoNs.uiNs.ProgressBar
-import typings.kendoDashUi.kendoNs.uiNs.ProgressBarOptions
-import typings.kendoDashUi.kendoNs.uiNs.Prompt
-import typings.kendoDashUi.kendoNs.uiNs.PromptOptions
-import typings.kendoDashUi.kendoNs.uiNs.RangeSlider
-import typings.kendoDashUi.kendoNs.uiNs.RangeSliderOptions
-import typings.kendoDashUi.kendoNs.uiNs.Rating
-import typings.kendoDashUi.kendoNs.uiNs.RatingOptions
-import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanel
-import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanelOptions
-import typings.kendoDashUi.kendoNs.uiNs.Scheduler
-import typings.kendoDashUi.kendoNs.uiNs.SchedulerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Slider
-import typings.kendoDashUi.kendoNs.uiNs.SliderOptions
-import typings.kendoDashUi.kendoNs.uiNs.Sortable
-import typings.kendoDashUi.kendoNs.uiNs.SortableOptions
-import typings.kendoDashUi.kendoNs.uiNs.Splitter
-import typings.kendoDashUi.kendoNs.uiNs.SplitterOptions
-import typings.kendoDashUi.kendoNs.uiNs.Spreadsheet
-import typings.kendoDashUi.kendoNs.uiNs.SpreadsheetOptions
-import typings.kendoDashUi.kendoNs.uiNs.TimePicker
-import typings.kendoDashUi.kendoNs.uiNs.TimePickerOptions
-import typings.kendoDashUi.kendoNs.uiNs.Timeline
-import typings.kendoDashUi.kendoNs.uiNs.TimelineOptions
-import typings.kendoDashUi.kendoNs.uiNs.ToolBar
-import typings.kendoDashUi.kendoNs.uiNs.ToolBarOptions
-import typings.kendoDashUi.kendoNs.uiNs.Tooltip
-import typings.kendoDashUi.kendoNs.uiNs.TooltipOptions
-import typings.kendoDashUi.kendoNs.uiNs.Touch
-import typings.kendoDashUi.kendoNs.uiNs.TouchOptions
-import typings.kendoDashUi.kendoNs.uiNs.TreeList
-import typings.kendoDashUi.kendoNs.uiNs.TreeListOptions
-import typings.kendoDashUi.kendoNs.uiNs.TreeView
-import typings.kendoDashUi.kendoNs.uiNs.TreeViewOptions
-import typings.kendoDashUi.kendoNs.uiNs.Upload
-import typings.kendoDashUi.kendoNs.uiNs.UploadOptions
-import typings.kendoDashUi.kendoNs.uiNs.Validator
-import typings.kendoDashUi.kendoNs.uiNs.ValidatorOptions
-import typings.kendoDashUi.kendoNs.uiNs.Window
-import typings.kendoDashUi.kendoNs.uiNs.WindowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -367,9 +367,9 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoMobileBackButton(key: kendoMobileBackButton): BackButton = js.native
   @JSName("data")
-  def data_kendoMobileButton(key: kendoMobileButton): typings.kendoDashUi.kendoNs.mobileNs.uiNs.Button = js.native
+  def data_kendoMobileButton(key: kendoMobileButton): typings.kendoDashUi.kendo.mobile.ui.Button = js.native
   @JSName("data")
-  def data_kendoMobileButtonGroup(key: kendoMobileButtonGroup): typings.kendoDashUi.kendoNs.mobileNs.uiNs.ButtonGroup = js.native
+  def data_kendoMobileButtonGroup(key: kendoMobileButtonGroup): typings.kendoDashUi.kendo.mobile.ui.ButtonGroup = js.native
   @JSName("data")
   def data_kendoMobileCollapsible(key: kendoMobileCollapsible): Collapsible = js.native
   @JSName("data")
@@ -379,7 +379,7 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoMobileLayout(key: kendoMobileLayout): Layout = js.native
   @JSName("data")
-  def data_kendoMobileListView(key: kendoMobileListView): typings.kendoDashUi.kendoNs.mobileNs.uiNs.ListView = js.native
+  def data_kendoMobileListView(key: kendoMobileListView): typings.kendoDashUi.kendo.mobile.ui.ListView = js.native
   @JSName("data")
   def data_kendoMobileLoader(key: kendoMobileLoader): Loader = js.native
   @JSName("data")
@@ -441,7 +441,7 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoScheduler(key: kendoScheduler): Scheduler = js.native
   @JSName("data")
-  def data_kendoScrollView(key: kendoScrollView): typings.kendoDashUi.kendoNs.uiNs.ScrollView = js.native
+  def data_kendoScrollView(key: kendoScrollView): typings.kendoDashUi.kendo.ui.ScrollView = js.native
   @JSName("data")
   def data_kendoSlider(key: kendoSlider): Slider = js.native
   @JSName("data")
@@ -455,9 +455,9 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoStockChart(key: kendoStockChart): StockChart = js.native
   @JSName("data")
-  def data_kendoSwitch(key: kendoSwitch): typings.kendoDashUi.kendoNs.uiNs.Switch = js.native
+  def data_kendoSwitch(key: kendoSwitch): typings.kendoDashUi.kendo.ui.Switch = js.native
   @JSName("data")
-  def data_kendoTabStrip(key: kendoTabStrip): typings.kendoDashUi.kendoNs.uiNs.TabStrip = js.native
+  def data_kendoTabStrip(key: kendoTabStrip): typings.kendoDashUi.kendo.ui.TabStrip = js.native
   @JSName("data")
   def data_kendoTimePicker(key: kendoTimePicker): TimePicker = js.native
   @JSName("data")
@@ -561,9 +561,9 @@ trait JQuery extends js.Object {
   def kendoMobileBackButton(): JQuery = js.native
   def kendoMobileBackButton(options: BackButtonOptions): JQuery = js.native
   def kendoMobileButton(): JQuery = js.native
-  def kendoMobileButton(options: typings.kendoDashUi.kendoNs.mobileNs.uiNs.ButtonOptions): JQuery = js.native
+  def kendoMobileButton(options: typings.kendoDashUi.kendo.mobile.ui.ButtonOptions): JQuery = js.native
   def kendoMobileButtonGroup(): JQuery = js.native
-  def kendoMobileButtonGroup(options: typings.kendoDashUi.kendoNs.mobileNs.uiNs.ButtonGroupOptions): JQuery = js.native
+  def kendoMobileButtonGroup(options: typings.kendoDashUi.kendo.mobile.ui.ButtonGroupOptions): JQuery = js.native
   def kendoMobileCollapsible(): JQuery = js.native
   def kendoMobileCollapsible(options: CollapsibleOptions): JQuery = js.native
   def kendoMobileDetailButton(): JQuery = js.native
@@ -573,7 +573,7 @@ trait JQuery extends js.Object {
   def kendoMobileLayout(): JQuery = js.native
   def kendoMobileLayout(options: LayoutOptions): JQuery = js.native
   def kendoMobileListView(): JQuery = js.native
-  def kendoMobileListView(options: typings.kendoDashUi.kendoNs.mobileNs.uiNs.ListViewOptions): JQuery = js.native
+  def kendoMobileListView(options: typings.kendoDashUi.kendo.mobile.ui.ListViewOptions): JQuery = js.native
   def kendoMobileLoader(): JQuery = js.native
   def kendoMobileLoader(options: LoaderOptions): JQuery = js.native
   def kendoMobileModalView(): JQuery = js.native
@@ -635,7 +635,7 @@ trait JQuery extends js.Object {
   def kendoScheduler(): JQuery = js.native
   def kendoScheduler(options: SchedulerOptions): JQuery = js.native
   def kendoScrollView(): JQuery = js.native
-  def kendoScrollView(options: typings.kendoDashUi.kendoNs.uiNs.ScrollViewOptions): JQuery = js.native
+  def kendoScrollView(options: typings.kendoDashUi.kendo.ui.ScrollViewOptions): JQuery = js.native
   def kendoSlider(): JQuery = js.native
   def kendoSlider(options: SliderOptions): JQuery = js.native
   def kendoSortable(): JQuery = js.native
@@ -649,9 +649,9 @@ trait JQuery extends js.Object {
   def kendoStockChart(): JQuery = js.native
   def kendoStockChart(options: StockChartOptions): JQuery = js.native
   def kendoSwitch(): JQuery = js.native
-  def kendoSwitch(options: typings.kendoDashUi.kendoNs.uiNs.SwitchOptions): JQuery = js.native
+  def kendoSwitch(options: typings.kendoDashUi.kendo.ui.SwitchOptions): JQuery = js.native
   def kendoTabStrip(): JQuery = js.native
-  def kendoTabStrip(options: typings.kendoDashUi.kendoNs.uiNs.TabStripOptions): JQuery = js.native
+  def kendoTabStrip(options: typings.kendoDashUi.kendo.ui.TabStripOptions): JQuery = js.native
   def kendoTimePicker(): JQuery = js.native
   def kendoTimePicker(options: TimePickerOptions): JQuery = js.native
   def kendoTimeline(): JQuery = js.native

@@ -55,5 +55,13 @@ object PNG extends js.Object {
     deltaX: Double,
     deltaY: Double
   ): Unit = js.native
+  @js.native
+  object sync extends js.Object {
+    def read(buffer: String): PNG = js.native
+    def read(buffer: String, options: PNGOptions): PNG = js.native
+    def read(buffer: Buffer): PNG = js.native
+    def read(buffer: Buffer, options: PNGOptions): PNG = js.native
+  }
+  
 }
 

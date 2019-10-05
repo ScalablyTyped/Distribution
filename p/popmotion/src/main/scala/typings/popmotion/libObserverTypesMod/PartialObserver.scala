@@ -14,14 +14,14 @@ trait PartialObserver extends _ObserverCandidate {
 object PartialObserver {
   @scala.inline
   def apply(
-    complete: Complete = null,
-    error: Error = null,
+    complete: () => js.Any = null,
+    error: /* err */ js.UndefOr[js.Any] => js.Any = null,
     registerParent: js.Function = null,
     update: Update = null
   ): PartialObserver = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (registerParent != null) __obj.updateDynamic("registerParent")(registerParent)
     if (update != null) __obj.updateDynamic("update")(update)
     __obj.asInstanceOf[PartialObserver]

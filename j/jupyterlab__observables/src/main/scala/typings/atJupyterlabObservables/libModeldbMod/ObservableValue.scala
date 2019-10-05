@@ -1,7 +1,7 @@
 package typings.atJupyterlabObservables.libModeldbMod
 
 import typings.atJupyterlabObservables.atJupyterlabObservablesStrings.Value
-import typings.atJupyterlabObservables.libModeldbMod.ObservableValueNs.IChangedArgs
+import typings.atJupyterlabObservables.libModeldbMod.ObservableValue.IChangedArgs
 import typings.atPhosphorCoreutils.libJsonMod.JSONValue
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -72,5 +72,25 @@ class ObservableValue () extends IObservableValue {
     */
   /* CompleteClass */
   override def set(value: JSONValue): Unit = js.native
+}
+
+@JSImport("@jupyterlab/observables/lib/modeldb", "ObservableValue")
+@js.native
+object ObservableValue extends js.Object {
+  /**
+    * The changed args object emitted by the `IObservableValue`.
+    */
+  @js.native
+  class IChangedArgs () extends js.Object {
+    /**
+      * The new value.
+      */
+    var newValue: js.UndefOr[JSONValue] = js.native
+    /**
+      * The old value.
+      */
+    var oldValue: js.UndefOr[JSONValue] = js.native
+  }
+  
 }
 

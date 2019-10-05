@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportClosestFacilitySolveResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClosestFacilitySolveResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClosestFacilitySolveResultProperties
+import typings.arcgisDashJsDashApi.__esri.ClosestFacilitySolveResult
+import typings.arcgisDashJsDashApi.__esri.ClosestFacilitySolveResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

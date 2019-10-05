@@ -1,5 +1,9 @@
 package typings.tstl.containerMod
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
+import typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator
+import typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,6 +89,82 @@ class vector[T] ()
 @JSImport("tstl/container", "Vector")
 @js.native
 object Vector extends js.Object {
+  val Iterator: Instantiable0[
+    ArrayIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    ArrayReverseIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val iterator: Instantiable0[
+    ArrayIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val reverse_iterator: Instantiable0[
+    ArrayReverseIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
   /**
     * Wrap an array into a vector.
     *
@@ -98,6 +178,82 @@ object Vector extends js.Object {
 @JSImport("tstl/container", "vector")
 @js.native
 object vector extends js.Object {
+  val Iterator: Instantiable0[
+    ArrayIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    ArrayReverseIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val iterator: Instantiable0[
+    ArrayIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val reverse_iterator: Instantiable0[
+    ArrayReverseIterator[
+      js.Object, 
+      ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
   /**
     * Wrap an array into a vector.
     *

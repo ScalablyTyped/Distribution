@@ -17,7 +17,7 @@ trait RebootInstancesRequest extends js.Object {
 
 object RebootInstancesRequest {
   @scala.inline
-  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[Boolean] = js.undefined): RebootInstancesRequest = {
+  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): RebootInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[RebootInstancesRequest]

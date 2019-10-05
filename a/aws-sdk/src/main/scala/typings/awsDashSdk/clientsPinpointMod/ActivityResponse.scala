@@ -70,10 +70,10 @@ object ActivityResponse {
     ScheduledStart: __string = null,
     Start: __string = null,
     State: __string = null,
-    SuccessfulEndpointCount: js.UndefOr[__integer] = js.undefined,
-    TimezonesCompletedCount: js.UndefOr[__integer] = js.undefined,
-    TimezonesTotalCount: js.UndefOr[__integer] = js.undefined,
-    TotalEndpointCount: js.UndefOr[__integer] = js.undefined,
+    SuccessfulEndpointCount: Int | Double = null,
+    TimezonesCompletedCount: Int | Double = null,
+    TimezonesTotalCount: Int | Double = null,
+    TotalEndpointCount: Int | Double = null,
     TreatmentId: __string = null
   ): ActivityResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, CampaignId = CampaignId, Id = Id)
@@ -82,10 +82,10 @@ object ActivityResponse {
     if (ScheduledStart != null) __obj.updateDynamic("ScheduledStart")(ScheduledStart)
     if (Start != null) __obj.updateDynamic("Start")(Start)
     if (State != null) __obj.updateDynamic("State")(State)
-    if (!js.isUndefined(SuccessfulEndpointCount)) __obj.updateDynamic("SuccessfulEndpointCount")(SuccessfulEndpointCount)
-    if (!js.isUndefined(TimezonesCompletedCount)) __obj.updateDynamic("TimezonesCompletedCount")(TimezonesCompletedCount)
-    if (!js.isUndefined(TimezonesTotalCount)) __obj.updateDynamic("TimezonesTotalCount")(TimezonesTotalCount)
-    if (!js.isUndefined(TotalEndpointCount)) __obj.updateDynamic("TotalEndpointCount")(TotalEndpointCount)
+    if (SuccessfulEndpointCount != null) __obj.updateDynamic("SuccessfulEndpointCount")(SuccessfulEndpointCount.asInstanceOf[js.Any])
+    if (TimezonesCompletedCount != null) __obj.updateDynamic("TimezonesCompletedCount")(TimezonesCompletedCount.asInstanceOf[js.Any])
+    if (TimezonesTotalCount != null) __obj.updateDynamic("TimezonesTotalCount")(TimezonesTotalCount.asInstanceOf[js.Any])
+    if (TotalEndpointCount != null) __obj.updateDynamic("TotalEndpointCount")(TotalEndpointCount.asInstanceOf[js.Any])
     if (TreatmentId != null) __obj.updateDynamic("TreatmentId")(TreatmentId)
     __obj.asInstanceOf[ActivityResponse]
   }

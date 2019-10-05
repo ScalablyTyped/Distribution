@@ -19,10 +19,10 @@ class PersistentVolume protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolume) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.PersistentVolume) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolume,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.PersistentVolume,
     opts: CustomResourceOptions
   ) = this()
 }

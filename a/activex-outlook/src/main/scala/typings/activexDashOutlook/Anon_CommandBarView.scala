@@ -1,13 +1,13 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.View
+import typings.activexDashOutlook.Outlook.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CommandBarView extends js.Object {
   val CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
-  val View: typings.activexDashOutlook.OutlookNs.View
+  val View: typings.activexDashOutlook.Outlook.View
 }
 
 object Anon_CommandBarView {

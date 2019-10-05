@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SkinInstance")
 @js.native
 class SkinInstance protected ()
-  extends typings.playcanvas.pcNs.SkinInstance {
-  def this(skin: typings.playcanvas.pcNs.Skin) = this()
+  extends typings.playcanvas.pc.SkinInstance {
+  def this(skin: typings.playcanvas.pc.Skin) = this()
 }
 

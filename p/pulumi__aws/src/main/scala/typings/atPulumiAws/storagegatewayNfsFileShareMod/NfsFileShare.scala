@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayNfsFileShareMod
 
-import typings.atPulumiAws.typesOutputMod.storagegatewayNs.NfsFileShareNfsFileShareDefaults
+import typings.atPulumiAws.typesOutputMod.storagegateway.NfsFileShareNfsFileShareDefaults
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

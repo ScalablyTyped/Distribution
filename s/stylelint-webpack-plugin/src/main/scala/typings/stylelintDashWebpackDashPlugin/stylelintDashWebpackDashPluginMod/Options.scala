@@ -28,7 +28,7 @@ object Options {
     failOnError: js.UndefOr[Boolean] = js.undefined,
     files: js.Array[String] = null,
     fix: js.UndefOr[Boolean] = js.undefined,
-    formatter: Formatter = null,
+    formatter: (/* messages */ js.Array[Message], /* source */ String) => String = null,
     lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined,
     quiet: js.UndefOr[Boolean] = js.undefined,
     syntax: String = null
@@ -41,7 +41,7 @@ object Options {
     if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
     if (files != null) __obj.updateDynamic("files")(files)
     if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
     if (!js.isUndefined(lintDirtyModulesOnly)) __obj.updateDynamic("lintDirtyModulesOnly")(lintDirtyModulesOnly)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
     if (syntax != null) __obj.updateDynamic("syntax")(syntax)

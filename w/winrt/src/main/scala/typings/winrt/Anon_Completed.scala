@@ -1,9 +1,9 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.FoundationNs.AsyncOperationProgressHandler
-import typings.winrt.WindowsNs.FoundationNs.AsyncOperationWithProgressCompletedHandler
-import typings.winrt.WindowsNs.FoundationNs.AsyncStatus
-import typings.winrt.WindowsNs.FoundationNs.IAsyncOperationWithProgress
+import typings.winrt.Windows.Foundation.AsyncOperationProgressHandler
+import typings.winrt.Windows.Foundation.AsyncOperationWithProgressCompletedHandler
+import typings.winrt.Windows.Foundation.AsyncStatus
+import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

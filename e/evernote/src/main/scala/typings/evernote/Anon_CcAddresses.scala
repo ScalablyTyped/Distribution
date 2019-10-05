@@ -1,6 +1,6 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.Note
+import typings.evernote.evernoteMod.Evernote.Note
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

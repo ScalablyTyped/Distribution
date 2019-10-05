@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksMysqlLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.MysqlLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.MysqlLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

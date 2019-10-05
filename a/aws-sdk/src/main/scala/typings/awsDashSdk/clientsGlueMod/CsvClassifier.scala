@@ -51,15 +51,15 @@ object CsvClassifier {
   @scala.inline
   def apply(
     Name: NameString,
-    AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined,
+    AllowSingleColumn: js.UndefOr[scala.Boolean] = js.undefined,
     ContainsHeader: CsvHeaderOption = null,
     CreationTime: Timestamp = null,
     Delimiter: CsvColumnDelimiter = null,
-    DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined,
+    DisableValueTrimming: js.UndefOr[scala.Boolean] = js.undefined,
     Header: CsvHeader = null,
     LastUpdated: Timestamp = null,
     QuoteSymbol: CsvQuoteSymbol = null,
-    Version: js.UndefOr[VersionId] = js.undefined
+    Version: Int | Double = null
   ): CsvClassifier = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn)
@@ -70,7 +70,7 @@ object CsvClassifier {
     if (Header != null) __obj.updateDynamic("Header")(Header)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
     if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvClassifier]
   }
 }

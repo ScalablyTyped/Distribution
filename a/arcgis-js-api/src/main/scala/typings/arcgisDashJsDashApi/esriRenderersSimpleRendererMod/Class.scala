@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriRenderersSimpleRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleRendererProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariable
+import typings.arcgisDashJsDashApi.__esri.SimpleRenderer
+import typings.arcgisDashJsDashApi.__esri.SimpleRendererProperties
+import typings.arcgisDashJsDashApi.__esri.VisualVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

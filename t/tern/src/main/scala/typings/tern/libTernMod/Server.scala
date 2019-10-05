@@ -1,5 +1,6 @@
 package typings.tern.libTernMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.tern.Anon_Query
 import typings.tern.libInferMod.Context
 import scala.scalajs.js
@@ -69,7 +70,5 @@ trait Server extends js.Object {
 
 @JSImport("tern/lib/tern", "Server")
 @js.native
-class ServerCls () extends Server {
-  def this(options: ConstructorOptions) = this()
-}
+object Server extends TopLevel[TernConstructor]
 

@@ -12,15 +12,6 @@ trait RTCCertificate extends js.Object {
 
 @JSGlobal("RTCCertificate")
 @js.native
-class RTCCertificateCls () extends RTCCertificate {
-  /* CompleteClass */
-  override val expires: Double = js.native
-  /* CompleteClass */
-  override def getFingerprints(): js.Array[RTCDtlsFingerprint] = js.native
-}
-
-@JSGlobal("RTCCertificate")
-@js.native
 object RTCCertificate extends Instantiable0[RTCCertificate] {
   def getSupportedAlgorithms(): js.Array[AlgorithmIdentifier] = js.native
 }

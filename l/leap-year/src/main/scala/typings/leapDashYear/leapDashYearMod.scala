@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object leapDashYearMod extends js.Object {
   def apply(): Boolean = js.native
-  def apply(year: Double | Date): Boolean = js.native
+  def apply(year: Double): Boolean = js.native
+  def apply(year: Date): Boolean = js.native
 }
 

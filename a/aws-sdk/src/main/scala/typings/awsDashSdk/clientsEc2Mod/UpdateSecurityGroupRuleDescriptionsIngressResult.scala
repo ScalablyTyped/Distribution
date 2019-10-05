@@ -13,7 +13,7 @@ trait UpdateSecurityGroupRuleDescriptionsIngressResult extends js.Object {
 
 object UpdateSecurityGroupRuleDescriptionsIngressResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): UpdateSecurityGroupRuleDescriptionsIngressResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): UpdateSecurityGroupRuleDescriptionsIngressResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressResult]

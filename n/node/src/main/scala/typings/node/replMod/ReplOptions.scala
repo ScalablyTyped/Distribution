@@ -1,7 +1,7 @@
 package typings.node.replMod
 
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.readlineMod.AsyncCompleter
 import typings.node.readlineMod.Completer
 import scala.scalajs.js

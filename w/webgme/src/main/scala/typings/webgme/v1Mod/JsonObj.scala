@@ -1,7 +1,7 @@
 package typings.webgme.v1Mod
 
 import typings.webgme.Anon_Guid
-import typings.webgme.GmeCommonNs.RelId
+import typings.webgme.GmeCommon.RelId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

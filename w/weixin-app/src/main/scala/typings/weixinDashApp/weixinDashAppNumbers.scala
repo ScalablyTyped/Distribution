@@ -1,7 +1,7 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.EncodeBitRate
-import typings.weixinDashApp.wxNs._SceneValues
+import typings.weixinDashApp.wx.EncodeBitRate
+import typings.weixinDashApp.wx._SceneValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

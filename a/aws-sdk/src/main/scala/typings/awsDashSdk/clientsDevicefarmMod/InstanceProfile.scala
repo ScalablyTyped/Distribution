@@ -38,8 +38,8 @@ object InstanceProfile {
     description: Message = null,
     excludeAppPackagesFromCleanup: PackageIds = null,
     name: Name = null,
-    packageCleanup: js.UndefOr[Boolean] = js.undefined,
-    rebootAfterUse: js.UndefOr[Boolean] = js.undefined
+    packageCleanup: js.UndefOr[scala.Boolean] = js.undefined,
+    rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
   ): InstanceProfile = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)

@@ -1,16 +1,16 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.ArrayParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.StringParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.TypeParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.cmsNs.SigningCertificateV2
+import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_SignaturePolicyIdentifier extends js.Object {
   var SignaturePolicyIdentifier: Anon_HashOid
-  var SigningCertificateV2: ArrayParam[String] | Anon_Array | typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.cmsNs.SigningCertificateV2
+  var SigningCertificateV2: ArrayParam[String] | Anon_Array | typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
   var SigningTime: TypeParam | StringParam
 }
 

@@ -97,12 +97,12 @@ object GlacierJobDescription {
     Action: ActionCode = null,
     ArchiveId: String = null,
     ArchiveSHA256TreeHash: String = null,
-    ArchiveSizeInBytes: js.UndefOr[Size] = js.undefined,
+    ArchiveSizeInBytes: Int | Double = null,
     Completed: js.UndefOr[Boolean] = js.undefined,
     CompletionDate: String = null,
     CreationDate: String = null,
     InventoryRetrievalParameters: InventoryRetrievalJobDescription = null,
-    InventorySizeInBytes: js.UndefOr[Size] = js.undefined,
+    InventorySizeInBytes: Int | Double = null,
     JobDescription: String = null,
     JobId: String = null,
     JobOutputPath: String = null,
@@ -120,12 +120,12 @@ object GlacierJobDescription {
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId)
     if (ArchiveSHA256TreeHash != null) __obj.updateDynamic("ArchiveSHA256TreeHash")(ArchiveSHA256TreeHash)
-    if (!js.isUndefined(ArchiveSizeInBytes)) __obj.updateDynamic("ArchiveSizeInBytes")(ArchiveSizeInBytes)
+    if (ArchiveSizeInBytes != null) __obj.updateDynamic("ArchiveSizeInBytes")(ArchiveSizeInBytes.asInstanceOf[js.Any])
     if (!js.isUndefined(Completed)) __obj.updateDynamic("Completed")(Completed)
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters)
-    if (!js.isUndefined(InventorySizeInBytes)) __obj.updateDynamic("InventorySizeInBytes")(InventorySizeInBytes)
+    if (InventorySizeInBytes != null) __obj.updateDynamic("InventorySizeInBytes")(InventorySizeInBytes.asInstanceOf[js.Any])
     if (JobDescription != null) __obj.updateDynamic("JobDescription")(JobDescription)
     if (JobId != null) __obj.updateDynamic("JobId")(JobId)
     if (JobOutputPath != null) __obj.updateDynamic("JobOutputPath")(JobOutputPath)

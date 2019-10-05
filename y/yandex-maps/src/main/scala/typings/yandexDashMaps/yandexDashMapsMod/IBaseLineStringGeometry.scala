@@ -5,17 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
 - typings.yandexDashMaps.yandexDashMapsMod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ trait IBaseLineStringGeometry extends IBaseGeometry {
+  def freeze(): IFreezable
   def get(index: Double): js.Array[Double]
   def getChildGeometry(index: Double): IPointGeometryAccess
   def getClosest(anchorPosition: js.Array[Double]): js.Object
   def getCoordinates(): js.Array[js.Array[Double]]
   def getLength(): Double
   def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess
+  def isFrozen(): Boolean
   def remove(index: Double): js.Array[Double]
   def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess
   def setCoordinates(coordinates: js.Array[Double]): ILineStringGeometryAccess
   def splice(index: Double, length: Double): js.Array[js.Array[Double]]
+  def unfreeze(): IFreezable
 }
 
 object IBaseLineStringGeometry {

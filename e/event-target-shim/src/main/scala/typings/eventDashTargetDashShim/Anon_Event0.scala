@@ -2,9 +2,9 @@ package typings.eventDashTargetDashShim
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget
+import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget.EventDefinition
+import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget.Mode
 import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTargetConstructor
-import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTargetNs.EventDefinition
-import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTargetNs.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

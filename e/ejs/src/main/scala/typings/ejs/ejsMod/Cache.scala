@@ -1,5 +1,6 @@
 package typings.ejs.ejsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ object Cache {
     __obj.asInstanceOf[Cache]
   }
 }
+
+@JSImport("ejs", "cache")
+@js.native
+object cache extends TopLevel[Cache]
 

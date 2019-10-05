@@ -1,11 +1,11 @@
 package typings.atFrctlFractal.atFrctlFractalMod
 
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetSourceCollection
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.apiNs.componentsNs.ComponentSource
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.apiNs.docsNs.DocSource
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.cliNs.Cli
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.webNs.Web
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.api.assets.AssetSourceCollection
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.api.components.ComponentSource
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.api.docs.DocSource
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.cli.Cli
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.web.Web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

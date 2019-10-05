@@ -1,11 +1,11 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.notificationsNs.NotificationButtonClickedEvent
-import typings.chrome.chromeNs.notificationsNs.NotificationClickedEvent
-import typings.chrome.chromeNs.notificationsNs.NotificationClosedEvent
-import typings.chrome.chromeNs.notificationsNs.NotificationOptions
-import typings.chrome.chromeNs.notificationsNs.NotificationPermissionLevelChangedEvent
-import typings.chrome.chromeNs.notificationsNs.NotificationShowSettingsEvent
+import typings.chrome.chrome.notifications.NotificationButtonClickedEvent
+import typings.chrome.chrome.notifications.NotificationClickedEvent
+import typings.chrome.chrome.notifications.NotificationClosedEvent
+import typings.chrome.chrome.notifications.NotificationOptions
+import typings.chrome.chrome.notifications.NotificationPermissionLevelChangedEvent
+import typings.chrome.chrome.notifications.NotificationShowSettingsEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

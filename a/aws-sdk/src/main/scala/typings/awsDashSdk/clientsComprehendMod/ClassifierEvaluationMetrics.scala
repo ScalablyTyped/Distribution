@@ -26,16 +26,16 @@ trait ClassifierEvaluationMetrics extends js.Object {
 object ClassifierEvaluationMetrics {
   @scala.inline
   def apply(
-    Accuracy: js.UndefOr[Double] = js.undefined,
-    F1Score: js.UndefOr[Double] = js.undefined,
-    Precision: js.UndefOr[Double] = js.undefined,
-    Recall: js.UndefOr[Double] = js.undefined
+    Accuracy: Int | scala.Double = null,
+    F1Score: Int | scala.Double = null,
+    Precision: Int | scala.Double = null,
+    Recall: Int | scala.Double = null
   ): ClassifierEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Accuracy)) __obj.updateDynamic("Accuracy")(Accuracy)
-    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score)
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision)
-    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall)
+    if (Accuracy != null) __obj.updateDynamic("Accuracy")(Accuracy.asInstanceOf[js.Any])
+    if (F1Score != null) __obj.updateDynamic("F1Score")(F1Score.asInstanceOf[js.Any])
+    if (Precision != null) __obj.updateDynamic("Precision")(Precision.asInstanceOf[js.Any])
+    if (Recall != null) __obj.updateDynamic("Recall")(Recall.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierEvaluationMetrics]
   }
 }

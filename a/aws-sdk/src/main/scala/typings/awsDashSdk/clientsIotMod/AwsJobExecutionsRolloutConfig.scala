@@ -13,9 +13,9 @@ trait AwsJobExecutionsRolloutConfig extends js.Object {
 
 object AwsJobExecutionsRolloutConfig {
   @scala.inline
-  def apply(maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.undefined): AwsJobExecutionsRolloutConfig = {
+  def apply(maximumPerMinute: Int | Double = null): AwsJobExecutionsRolloutConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maximumPerMinute)) __obj.updateDynamic("maximumPerMinute")(maximumPerMinute)
+    if (maximumPerMinute != null) __obj.updateDynamic("maximumPerMinute")(maximumPerMinute.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsJobExecutionsRolloutConfig]
   }
 }

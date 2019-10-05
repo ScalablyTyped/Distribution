@@ -1,5 +1,6 @@
 package typings.restify.restifyMod
 
+import typings.bunyan.bunyanMod.^
 import typings.node.Buffer
 import typings.std.RegExp
 import scala.scalajs.js
@@ -22,7 +23,7 @@ trait Server
   var http2: js.UndefOr[Boolean] = js.native
   var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   /** bunyan instance. */
-  var log: typings.bunyan.bunyanMod.^ = js.native
+  var log: ^ = js.native
   /** Name of the server. */
   var name: String = js.native
   /** Prevents calling next multiple times */

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetNetworkInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetNetworkInterfaceFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetNetworkInterfaceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

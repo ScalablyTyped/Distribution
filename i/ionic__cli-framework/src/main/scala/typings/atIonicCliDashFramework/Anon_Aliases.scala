@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Aliases[O /* <: CommandMetadataOption */, C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */] extends js.Object {
+trait Anon_Aliases[M /* <: CommandMetadata[I, O] */, O /* <: CommandMetadataOption */, C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, I /* <: CommandMetadataInput */] extends js.Object {
   val aliases: js.Array[String]
   val command: C
   val namespace: N
@@ -19,15 +19,15 @@ trait Anon_Aliases[O /* <: CommandMetadataOption */, C /* <: ICommand[C, N, M, I
 
 object Anon_Aliases {
   @scala.inline
-  def apply[O /* <: CommandMetadataOption */, C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */](
+  def apply[M /* <: CommandMetadata[I, O] */, O /* <: CommandMetadataOption */, C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, I /* <: CommandMetadataInput */](
     aliases: js.Array[String],
     command: C,
     namespace: N,
     path: js.Array[CommandPathItem[C, N, M, I, O]]
-  ): Anon_Aliases[O, C, N, M, I] = {
+  ): Anon_Aliases[M, O, C, N, I] = {
     val __obj = js.Dynamic.literal(aliases = aliases, command = command.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], path = path)
   
-    __obj.asInstanceOf[Anon_Aliases[O, C, N, M, I]]
+    __obj.asInstanceOf[Anon_Aliases[M, O, C, N, I]]
   }
 }
 

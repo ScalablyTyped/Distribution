@@ -1,11 +1,11 @@
 package typings.stellarDashBase.stellarDashBaseMod
 
 import typings.node.Buffer
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Hash
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.ID
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.None
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Return
-import typings.stellarDashBase.stellarDashBaseMod.MemoTypeNs.Text
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Hash
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.ID
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.None
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Return
+import typings.stellarDashBase.stellarDashBaseMod.MemoType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +23,14 @@ class Memo[T /* <: MemoType */] protected () extends js.Object {
   def this(`type`: Text, value: String) = this()
   var `type`: T = js.native
   var value: MemoValue | Buffer | String | Null = js.native
-  def toXDRObject(): typings.stellarDashBase.stellarDashBaseMod.xdrNs.Memo = js.native
+  def toXDRObject(): typings.stellarDashBase.stellarDashBaseMod.xdr.Memo = js.native
 }
 
 /* static members */
 @JSImport("stellar-base", "Memo")
 @js.native
 object Memo extends js.Object {
-  def fromXDRObject(memo: typings.stellarDashBase.stellarDashBaseMod.xdrNs.Memo): Memo[MemoType] = js.native
+  def fromXDRObject(memo: typings.stellarDashBase.stellarDashBaseMod.xdr.Memo): Memo[MemoType] = js.native
   def hash(hash: String): Memo[Hash] = js.native
   def id(id: String): Memo[ID] = js.native
   def none(): Memo[None] = js.native

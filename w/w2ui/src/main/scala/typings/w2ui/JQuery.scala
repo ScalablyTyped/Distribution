@@ -1,12 +1,12 @@
 package typings.w2ui
 
-import typings.w2ui.W2UINs.W2Form
-import typings.w2ui.W2UINs.W2Grid
-import typings.w2ui.W2UINs.W2Layout
-import typings.w2ui.W2UINs.W2Popup
-import typings.w2ui.W2UINs.W2Sidebar
-import typings.w2ui.W2UINs.W2Tabs
-import typings.w2ui.W2UINs.W2Toolbar
+import typings.w2ui.W2UI.W2Form
+import typings.w2ui.W2UI.W2Grid
+import typings.w2ui.W2UI.W2Layout
+import typings.w2ui.W2UI.W2Popup
+import typings.w2ui.W2UI.W2Sidebar
+import typings.w2ui.W2UI.W2Tabs
+import typings.w2ui.W2UI.W2Toolbar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

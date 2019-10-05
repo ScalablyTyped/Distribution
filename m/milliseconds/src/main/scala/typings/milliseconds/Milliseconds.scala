@@ -1,5 +1,6 @@
 package typings.milliseconds
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,4 +31,8 @@ object Milliseconds {
     __obj.asInstanceOf[Milliseconds]
   }
 }
+
+@JSGlobal("milliseconds")
+@js.native
+object milliseconds extends TopLevel[Milliseconds]
 

@@ -1,6 +1,7 @@
 package typings.ol.layerVectorTileMod
 
 import typings.ol.extentMod.Extent
+import typings.ol.featureMod.FeatureLike
 import typings.ol.layerVectorTileRenderTypeMod.VectorTileRenderType
 import typings.ol.renderMod.OrderFunction
 import typings.ol.styleStyleMod.StyleLike
@@ -40,7 +41,7 @@ object Options {
     preload: Int | Double = null,
     renderBuffer: Int | Double = null,
     renderMode: VectorTileRenderType | String = null,
-    renderOrder: OrderFunction = null,
+    renderOrder: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double = null,
     source: typings.ol.sourceVectorTileMod.default = null,
     style: StyleLike = null,
     updateWhileAnimating: js.UndefOr[Boolean] = js.undefined,
@@ -59,7 +60,7 @@ object Options {
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (renderOrder != null) __obj.updateDynamic("renderOrder")(renderOrder)
+    if (renderOrder != null) __obj.updateDynamic("renderOrder")(js.Any.fromFunction2(renderOrder))
     if (source != null) __obj.updateDynamic("source")(source)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(updateWhileAnimating)) __obj.updateDynamic("updateWhileAnimating")(updateWhileAnimating)

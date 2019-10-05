@@ -36,13 +36,13 @@ object ListAuditTasksRequest {
   def apply(
     endTime: Timestamp,
     startTime: Timestamp,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     taskStatus: AuditTaskStatus = null,
     taskType: AuditTaskType = null
   ): ListAuditTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
     if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])

@@ -15,9 +15,10 @@ trait IDialogStyles extends js.Object {
 
 object IDialogStyles {
   @scala.inline
-  def apply(main: IStyle, root: IStyle): IDialogStyles = {
-    val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+  def apply(main: IStyle = null, root: IStyle = null): IDialogStyles = {
+    val __obj = js.Dynamic.literal()
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogStyles]
   }
 }

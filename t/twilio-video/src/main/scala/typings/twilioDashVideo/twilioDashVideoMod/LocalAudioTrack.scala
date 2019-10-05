@@ -1,7 +1,7 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
 import typings.std.MediaStreamTrack
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.ID
+import typings.twilioDashVideo.twilioDashVideoMod.Track.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

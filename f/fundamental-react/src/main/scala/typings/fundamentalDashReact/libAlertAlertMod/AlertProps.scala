@@ -2,8 +2,8 @@ package typings.fundamentalDashReact.libAlertAlertMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalDashReact.Anon_Close
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait AlertProps
   var localizedText: js.UndefOr[Anon_Close] = js.undefined
   /* Callback function passing event when close button is clicked. */
   var onCloseClicked: js.UndefOr[
-    js.Function1[/* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent], Unit]
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
   ] = js.undefined
   var `type`: js.UndefOr[AlertType] = js.undefined
 }
@@ -39,7 +39,7 @@ object AlertProps {
     linkProps: StringDictionary[js.Any] = null,
     linkText: String = null,
     localizedText: Anon_Close = null,
-    onCloseClicked: /* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit = null,
+    onCloseClicked: /* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit = null,
     `type`: AlertType = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal()

@@ -28,7 +28,7 @@ object ModifyVpcPeeringConnectionOptionsRequest {
   def apply(
     VpcPeeringConnectionId: String,
     AccepterPeeringConnectionOptions: PeeringConnectionOptionsRequest = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RequesterPeeringConnectionOptions: PeeringConnectionOptionsRequest = null
   ): ModifyVpcPeeringConnectionOptionsRequest = {
     val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId)

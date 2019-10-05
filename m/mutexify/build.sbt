@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mutexify"
-version := "1.2-dt-20181012Z-06bad8"
-scalaVersion := "2.12.9"
+version := "1.2-dt-20181012Z-875676"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

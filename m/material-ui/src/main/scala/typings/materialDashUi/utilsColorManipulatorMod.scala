@@ -1,6 +1,6 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.UtilsNs.ColorManipulatorNs.MuiColorObject
+import typings.materialDashUi.__MaterialUI.Utils.ColorManipulator.MuiColorObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

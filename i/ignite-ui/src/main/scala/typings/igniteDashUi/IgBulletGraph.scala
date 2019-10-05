@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -324,7 +325,7 @@ object IgBulletGraph {
   	 * Option for igBulletGraph
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    alignLabel: AlignLabelEvent = null,
+    alignLabel: (/* event */ Event, /* ui */ AlignLabelEventUIParam) => Unit = null,
     backingBrush: String = null,
     backingInnerExtent: Int | Double = null,
     backingOuterExtent: Int | Double = null,
@@ -332,7 +333,7 @@ object IgBulletGraph {
     backingStrokeThickness: Int | Double = null,
     font: String = null,
     fontBrush: String = null,
-    formatLabel: FormatLabelEvent = null,
+    formatLabel: (/* event */ Event, /* ui */ FormatLabelEventUIParam) => Unit = null,
     height: String | Double = null,
     interval: Int | Double = null,
     isScaleInverted: js.UndefOr[Boolean] = js.undefined,
@@ -393,7 +394,7 @@ object IgBulletGraph {
   ): IgBulletGraph = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (alignLabel != null) __obj.updateDynamic("alignLabel")(alignLabel)
+    if (alignLabel != null) __obj.updateDynamic("alignLabel")(js.Any.fromFunction2(alignLabel))
     if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush)
     if (backingInnerExtent != null) __obj.updateDynamic("backingInnerExtent")(backingInnerExtent.asInstanceOf[js.Any])
     if (backingOuterExtent != null) __obj.updateDynamic("backingOuterExtent")(backingOuterExtent.asInstanceOf[js.Any])
@@ -401,7 +402,7 @@ object IgBulletGraph {
     if (backingStrokeThickness != null) __obj.updateDynamic("backingStrokeThickness")(backingStrokeThickness.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font)
     if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush)
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(isScaleInverted)) __obj.updateDynamic("isScaleInverted")(isScaleInverted)

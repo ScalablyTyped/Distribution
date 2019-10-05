@@ -46,3 +46,9 @@ object ObjectTypeInternalSlot {
   }
 }
 
+@JSImport("@babel/types", "objectTypeInternalSlot")
+@js.native
+object objectTypeInternalSlot extends js.Object {
+  def apply(id: Identifier, value: FlowType, optional: Boolean, _static: Boolean, method: Boolean): ObjectTypeInternalSlot = js.native
+}
+

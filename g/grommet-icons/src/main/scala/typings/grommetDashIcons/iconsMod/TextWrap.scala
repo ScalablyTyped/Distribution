@@ -1,5 +1,6 @@
 package typings.grommetDashIcons.iconsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.SVGSVGElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -15,4 +16,8 @@ class TextWrap protected ()
   def this(props: IconProps with SVGProps[SVGSVGElement]) = this()
   def this(props: IconProps with SVGProps[SVGSVGElement], context: js.Any) = this()
 }
+
+@JSImport("grommet-icons/icons", "TextWrap")
+@js.native
+object TextWrap extends TopLevel[Icon]
 

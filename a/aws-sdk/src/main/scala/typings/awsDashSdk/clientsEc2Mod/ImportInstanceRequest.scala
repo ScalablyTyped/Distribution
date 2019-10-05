@@ -33,7 +33,7 @@ object ImportInstanceRequest {
     Platform: PlatformValues,
     Description: String = null,
     DiskImages: DiskImageList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LaunchSpecification: ImportInstanceLaunchSpecification = null
   ): ImportInstanceRequest = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])

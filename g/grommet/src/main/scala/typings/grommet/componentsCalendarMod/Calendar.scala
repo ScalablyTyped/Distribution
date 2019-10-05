@@ -1,7 +1,9 @@
 package typings.grommet.componentsCalendarMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
@@ -23,4 +25,13 @@ class Calendar protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/Calendar", "Calendar")
+@js.native
+object Calendar extends TopLevel[
+      ComponentClass[
+        CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+        ComponentState
+      ]
+    ]
 

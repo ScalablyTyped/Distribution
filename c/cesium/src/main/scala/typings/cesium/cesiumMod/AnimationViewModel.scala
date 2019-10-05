@@ -1,7 +1,7 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.AnimationViewModelNs.DateFormatter
-import typings.cesium.cesiumMod.AnimationViewModelNs.TimeFormatter
+import typings.cesium.cesiumMod.AnimationViewModel.DateFormatter
+import typings.cesium.cesiumMod.AnimationViewModel.TimeFormatter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,5 +44,7 @@ object AnimationViewModel extends js.Object {
   var defaultTimeFormatter_Original: TimeFormatter = js.native
   def defaultDateFormatter(date: JulianDate, viewModel: AnimationViewModel): String = js.native
   def defaultTimeFormatter(date: JulianDate, viewModel: AnimationViewModel): String = js.native
+  type DateFormatter = js.Function2[/* date */ JulianDate, /* viewModel */ AnimationViewModel, String]
+  type TimeFormatter = js.Function2[/* date */ JulianDate, /* viewModel */ AnimationViewModel, String]
 }
 

@@ -1,5 +1,6 @@
 package typings.plottable.buildSrcPlotsMod
 
+import typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,6 @@ import scala.scalajs.js.annotation._
   */
 class ClusteredBar[X, Y] ()
   extends typings.plottable.buildSrcPlotsClusteredBarPlotMod.ClusteredBar[X, Y] {
-  def this(orientation: typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation) = this()
+  def this(orientation: BarOrientation) = this()
 }
 

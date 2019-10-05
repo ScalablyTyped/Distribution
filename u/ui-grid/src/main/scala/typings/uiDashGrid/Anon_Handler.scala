@@ -1,9 +1,9 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.cellNavNs.navigateHandler
-import typings.uiDashGrid.uiDashGridMod.cellNavNs.viewportKeyDownHandler
-import typings.uiDashGrid.uiDashGridMod.cellNavNs.viewportKeyPressHandler
+import typings.uiDashGrid.uiDashGridMod.cellNav.navigateHandler
+import typings.uiDashGrid.uiDashGridMod.cellNav.viewportKeyDownHandler
+import typings.uiDashGrid.uiDashGridMod.cellNav.viewportKeyPressHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

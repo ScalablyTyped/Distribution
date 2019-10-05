@@ -1,0 +1,131 @@
+package typings.fhir.fhir
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Reference to a sub-type of ResourceBase. This is needed for stricter object literal typing introduced in TypeScript 1.6.
+  */
+/* Rewritten from type alias, can be one of: 
+  - typings.fhir.fhir.DomainResource
+  - typings.fhir.fhir.Account
+  - typings.fhir.fhir.ActivityDefinition
+  - typings.fhir.fhir.AdverseEvent
+  - typings.fhir.fhir.AllergyIntolerance
+  - typings.fhir.fhir.Appointment
+  - typings.fhir.fhir.AppointmentResponse
+  - typings.fhir.fhir.AuditEvent
+  - typings.fhir.fhir.Basic
+  - typings.fhir.fhir.BodySite
+  - typings.fhir.fhir.CapabilityStatement
+  - typings.fhir.fhir.CarePlan
+  - typings.fhir.fhir.CareTeam
+  - typings.fhir.fhir.ChargeItem
+  - typings.fhir.fhir.Claim
+  - typings.fhir.fhir.ClaimResponse
+  - typings.fhir.fhir.ClinicalImpression
+  - typings.fhir.fhir.CodeSystem
+  - typings.fhir.fhir.Communication
+  - typings.fhir.fhir.CommunicationRequest
+  - typings.fhir.fhir.CompartmentDefinition
+  - typings.fhir.fhir.Composition
+  - typings.fhir.fhir.ConceptMap
+  - typings.fhir.fhir.Condition
+  - typings.fhir.fhir.Consent
+  - typings.fhir.fhir.Contract
+  - typings.fhir.fhir.Coverage
+  - typings.fhir.fhir.DataElement
+  - typings.fhir.fhir.DetectedIssue
+  - typings.fhir.fhir.Device
+  - typings.fhir.fhir.DeviceComponent
+  - typings.fhir.fhir.DeviceMetric
+  - typings.fhir.fhir.DeviceRequest
+  - typings.fhir.fhir.DeviceUseStatement
+  - typings.fhir.fhir.DiagnosticReport
+  - typings.fhir.fhir.DocumentManifest
+  - typings.fhir.fhir.DocumentReference
+  - typings.fhir.fhir.EligibilityRequest
+  - typings.fhir.fhir.EligibilityResponse
+  - typings.fhir.fhir.Encounter
+  - typings.fhir.fhir.Endpoint
+  - typings.fhir.fhir.EnrollmentRequest
+  - typings.fhir.fhir.EnrollmentResponse
+  - typings.fhir.fhir.EpisodeOfCare
+  - typings.fhir.fhir.ExpansionProfile
+  - typings.fhir.fhir.ExplanationOfBenefit
+  - typings.fhir.fhir.FamilyMemberHistory
+  - typings.fhir.fhir.Flag
+  - typings.fhir.fhir.Goal
+  - typings.fhir.fhir.GraphDefinition
+  - typings.fhir.fhir.Group
+  - typings.fhir.fhir.GuidanceResponse
+  - typings.fhir.fhir.HealthcareService
+  - typings.fhir.fhir.ImagingManifest
+  - typings.fhir.fhir.ImagingStudy
+  - typings.fhir.fhir.Immunization
+  - typings.fhir.fhir.ImmunizationRecommendation
+  - typings.fhir.fhir.ImplementationGuide
+  - typings.fhir.fhir.Library
+  - typings.fhir.fhir.Linkage
+  - typings.fhir.fhir.List
+  - typings.fhir.fhir.Location
+  - typings.fhir.fhir.Measure
+  - typings.fhir.fhir.MeasureReport
+  - typings.fhir.fhir.Media
+  - typings.fhir.fhir.Medication
+  - typings.fhir.fhir.MedicationAdministration
+  - typings.fhir.fhir.MedicationDispense
+  - typings.fhir.fhir.MedicationRequest
+  - typings.fhir.fhir.MedicationStatement
+  - typings.fhir.fhir.MessageDefinition
+  - typings.fhir.fhir.MessageHeader
+  - typings.fhir.fhir.NamingSystem
+  - typings.fhir.fhir.NutritionOrder
+  - typings.fhir.fhir.Observation
+  - typings.fhir.fhir.OperationDefinition
+  - typings.fhir.fhir.OperationOutcome
+  - typings.fhir.fhir.Organization
+  - typings.fhir.fhir.Patient
+  - typings.fhir.fhir.PaymentNotice
+  - typings.fhir.fhir.PaymentReconciliation
+  - typings.fhir.fhir.Person
+  - typings.fhir.fhir.PlanDefinition
+  - typings.fhir.fhir.Practitioner
+  - typings.fhir.fhir.PractitionerRole
+  - typings.fhir.fhir.Procedure
+  - typings.fhir.fhir.ProcedureRequest
+  - typings.fhir.fhir.ProcessRequest
+  - typings.fhir.fhir.ProcessResponse
+  - typings.fhir.fhir.Provenance
+  - typings.fhir.fhir.Questionnaire
+  - typings.fhir.fhir.QuestionnaireResponse
+  - typings.fhir.fhir.ReferralRequest
+  - typings.fhir.fhir.RelatedPerson
+  - typings.fhir.fhir.RequestGroup
+  - typings.fhir.fhir.ResearchStudy
+  - typings.fhir.fhir.ResearchSubject
+  - typings.fhir.fhir.RiskAssessment
+  - typings.fhir.fhir.Schedule
+  - typings.fhir.fhir.SearchParameter
+  - typings.fhir.fhir.Sequence
+  - typings.fhir.fhir.ServiceDefinition
+  - typings.fhir.fhir.Slot
+  - typings.fhir.fhir.Specimen
+  - typings.fhir.fhir.StructureDefinition
+  - typings.fhir.fhir.StructureMap
+  - typings.fhir.fhir.Subscription
+  - typings.fhir.fhir.Substance
+  - typings.fhir.fhir.SupplyDelivery
+  - typings.fhir.fhir.SupplyRequest
+  - typings.fhir.fhir.Task
+  - typings.fhir.fhir.TestReport
+  - typings.fhir.fhir.TestScript
+  - typings.fhir.fhir.ValueSet
+  - typings.fhir.fhir.VisionPrescription
+  - typings.fhir.fhir.Binary
+  - typings.fhir.fhir.Bundle
+  - typings.fhir.fhir.Parameters
+*/
+trait Resource extends js.Object
+

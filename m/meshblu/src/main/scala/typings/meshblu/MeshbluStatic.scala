@@ -1,7 +1,7 @@
 package typings.meshblu
 
-import typings.meshblu.MeshbluNs.Connection
-import typings.meshblu.MeshbluNs.ConnectionOptions
+import typings.meshblu.Meshblu.Connection
+import typings.meshblu.Meshblu.ConnectionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

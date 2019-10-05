@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojmenuselectmanyMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojmenuselectmanyMod.ojMenuSelectManyNs.Option
+import typings.atOracleOraclejet.ojmenuselectmanyMod.ojMenuSelectMany.Option
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

@@ -12,3 +12,9 @@ class OpensshCipherInfo () extends js.Object {
   var opensslName: String = js.native
 }
 
+@JSImport("sshpk", "opensshCipherInfo")
+@js.native
+object opensshCipherInfo extends js.Object {
+  def apply(cipber: String): OpensshCipherInfo = js.native
+}
+

@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   * ```
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.showdown.showdownMod.Extension because Already inherited
 - typings.showdown.showdownMod.FilterExtension because var conflicts: listeners, `type`. Inlined filter */ trait ShowdownExtension extends RegexReplaceExtension {
   var filter: js.UndefOr[
     js.Function3[

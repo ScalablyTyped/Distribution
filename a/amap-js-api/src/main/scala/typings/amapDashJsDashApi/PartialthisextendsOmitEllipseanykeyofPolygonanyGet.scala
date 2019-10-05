@@ -1,9 +1,9 @@
 package typings.amapDashJsDashApi
 
-import typings.amapDashJsDashApi.AMapNs.LngLat
-import typings.amapDashJsDashApi.AMapNs.Map
-import typings.amapDashJsDashApi.AMapNs.StrokeLineJoin
-import typings.amapDashJsDashApi.AMapNs.StrokeStyle
+import typings.amapDashJsDashApi.AMap.LngLat
+import typings.amapDashJsDashApi.AMap.Map
+import typings.amapDashJsDashApi.AMap.StrokeLineJoin
+import typings.amapDashJsDashApi.AMap.StrokeStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

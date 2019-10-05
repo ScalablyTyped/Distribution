@@ -1,7 +1,7 @@
 package typings.simpleDashUrlDashCache.simpleDashUrlDashCacheMod
 
-import typings.simpleDashUrlDashCache.simpleDashUrlDashCacheMod.privateNNs.CacheCategory
-import typings.simpleDashUrlDashCache.simpleDashUrlDashCacheMod.privateNNs.CacheStorage
+import typings.simpleDashUrlDashCache.simpleDashUrlDashCacheMod.privateN.CacheCategory
+import typings.simpleDashUrlDashCache.simpleDashUrlDashCacheMod.privateN.CacheStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,8 +13,12 @@ trait MatchRenderProps[TParams] extends js.Object {
 
 object MatchRenderProps {
   @scala.inline
-  def apply[TParams](location: WindowLocation, navigate: NavigateFn, `match`: Anon_Path with TParams = null): MatchRenderProps[TParams] = {
-    val __obj = js.Dynamic.literal(location = location, navigate = navigate)
+  def apply[TParams](
+    location: WindowLocation,
+    navigate: (/* to */ String, /* options */ js.UndefOr[NavigateOptions[js.Object]]) => Unit,
+    `match`: Anon_Path with TParams = null
+  ): MatchRenderProps[TParams] = {
+    val __obj = js.Dynamic.literal(location = location, navigate = js.Any.fromFunction2(navigate))
     if (`match` != null) __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[MatchRenderProps[TParams]]
   }

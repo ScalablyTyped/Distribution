@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "AstWalkerFactory")
 @js.native
 class AstWalkerFactory ()
-  extends typings.typescriptDashServices.TypeScriptNs.AstWalkerFactory
+  extends typings.typescriptDashServices.TypeScript.AstWalkerFactory
 

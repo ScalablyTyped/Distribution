@@ -1,6 +1,6 @@
 package typings.microsoftDashLiveDashConnect
 
-import typings.microsoftDashLiveDashConnect.MicrosoftNs.LiveNs.IPostalAddress
+import typings.microsoftDashLiveDashConnect.Microsoft.Live.IPostalAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

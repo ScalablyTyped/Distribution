@@ -74,7 +74,7 @@ object PutIntentResponse {
     checksum: String = null,
     conclusionStatement: Statement = null,
     confirmationPrompt: Prompt = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
+    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     createdDate: Timestamp = null,
     description: Description = null,
     dialogCodeHook: CodeHook = null,

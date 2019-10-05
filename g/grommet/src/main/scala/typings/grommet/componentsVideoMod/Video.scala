@@ -1,9 +1,11 @@
 package typings.grommet.componentsVideoMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.grommetStrings.controls
 import typings.grommet.utilsMod.Omit
 import typings.react.HTMLVideoElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.VideoHTMLAttributes
@@ -34,4 +36,16 @@ class Video protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/Video", "Video")
+@js.native
+object Video extends TopLevel[
+      ComponentClass[
+        VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+          DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
+          controls
+        ]), 
+        ComponentState
+      ]
+    ]
 

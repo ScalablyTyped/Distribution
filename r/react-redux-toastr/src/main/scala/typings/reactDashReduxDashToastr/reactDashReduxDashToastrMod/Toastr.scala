@@ -1,5 +1,6 @@
 package typings.reactDashReduxDashToastr.reactDashReduxDashToastrMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,4 +31,8 @@ object Toastr {
     __obj.asInstanceOf[Toastr]
   }
 }
+
+@JSImport("react-redux-toastr", "toastr")
+@js.native
+object toastr extends TopLevel[ToastrEmitter]
 

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.macieS3BucketAssociationMod
 
-import typings.atPulumiAws.typesOutputMod.macieNs.S3BucketAssociationClassificationType
+import typings.atPulumiAws.typesOutputMod.macie.S3BucketAssociationClassificationType
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

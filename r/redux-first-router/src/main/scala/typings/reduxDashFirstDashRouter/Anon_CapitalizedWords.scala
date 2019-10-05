@@ -1,8 +1,11 @@
 package typings.reduxDashFirstDashRouter
 
+import typings.redux.reduxMod.Dispatch
 import typings.reduxDashFirstDashRouter.reduxDashFirstDashRouterMod.ConfirmLeave
 import typings.reduxDashFirstDashRouter.reduxDashFirstDashRouterMod.Meta
+import typings.reduxDashFirstDashRouter.reduxDashFirstDashRouterMod.Nullable
 import typings.reduxDashFirstDashRouter.reduxDashFirstDashRouterMod.RouteThunk
+import typings.reduxDashFirstDashRouter.reduxDashFirstDashRouterMod.StateGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,23 +27,23 @@ object Anon_CapitalizedWords {
   def apply[TState](
     capitalizedWords: js.UndefOr[Boolean] = js.undefined,
     coerceNumbers: js.UndefOr[Boolean] = js.undefined,
-    confirmLeave: ConfirmLeave = null,
+    confirmLeave: (/* state */ js.Object, /* action */ js.Object) => Nullable[String] = null,
     fromPath: (/* path */ String, /* key */ js.UndefOr[String]) => String = null,
     meta: Meta = null,
     navKey: String = null,
     path: String = null,
-    thunk: RouteThunk[TState] = null,
+    thunk: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState]) => js.Any | js.Promise[js.Any] = null,
     toPath: (/* param */ String, /* key */ js.UndefOr[String]) => String = null
   ): Anon_CapitalizedWords[TState] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(capitalizedWords)) __obj.updateDynamic("capitalizedWords")(capitalizedWords)
     if (!js.isUndefined(coerceNumbers)) __obj.updateDynamic("coerceNumbers")(coerceNumbers)
-    if (confirmLeave != null) __obj.updateDynamic("confirmLeave")(confirmLeave)
+    if (confirmLeave != null) __obj.updateDynamic("confirmLeave")(js.Any.fromFunction2(confirmLeave))
     if (fromPath != null) __obj.updateDynamic("fromPath")(js.Any.fromFunction2(fromPath))
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (navKey != null) __obj.updateDynamic("navKey")(navKey)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (thunk != null) __obj.updateDynamic("thunk")(thunk)
+    if (thunk != null) __obj.updateDynamic("thunk")(js.Any.fromFunction2(thunk))
     if (toPath != null) __obj.updateDynamic("toPath")(js.Any.fromFunction2(toPath))
     __obj.asInstanceOf[Anon_CapitalizedWords[TState]]
   }

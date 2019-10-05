@@ -1,6 +1,6 @@
 package typings.phonegapDashPluginDashPush
 
-import typings.phonegapDashPluginDashPush.PhonegapPluginPushNs.PushNotificationStatic
+import typings.phonegapDashPluginDashPush.PhonegapPluginPush.PushNotificationStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

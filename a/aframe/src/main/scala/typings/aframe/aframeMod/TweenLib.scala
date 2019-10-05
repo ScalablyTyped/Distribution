@@ -1,7 +1,7 @@
 package typings.aframe.aframeMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tweenDotJs.TWEENNs.Tween
+import typings.tweenDotJs.TWEEN.Tween
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

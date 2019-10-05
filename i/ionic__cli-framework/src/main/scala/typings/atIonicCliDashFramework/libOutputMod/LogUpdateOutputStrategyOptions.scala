@@ -1,7 +1,7 @@
 package typings.atIonicCliDashFramework.libOutputMod
 
 import typings.atIonicCliDashFramework.libColorsMod.Colors
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

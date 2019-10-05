@@ -51,25 +51,25 @@ object StartJobRunRequest {
   @scala.inline
   def apply(
     JobName: NameString,
-    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
+    AllocatedCapacity: Int | Double = null,
     Arguments: GenericMap = null,
     JobRunId: IdString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
+    MaxCapacity: Int | Double = null,
     NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
+    NumberOfWorkers: Int | Double = null,
     SecurityConfiguration: NameString = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
+    Timeout: Int | Double = null,
     WorkerType: WorkerType = null
   ): StartJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName)
-    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity)
+    if (AllocatedCapacity != null) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.asInstanceOf[js.Any])
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
     if (JobRunId != null) __obj.updateDynamic("JobRunId")(JobRunId)
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty)
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
+    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartJobRunRequest]
   }

@@ -1,8 +1,8 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AndroidNs.Intent
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Android.Intent
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait TypeofAndroidAddEventListener extends js.Object {
   /**
   			 * The `R` namespace for application resources.
   			 */
-  val R: typings.titanium.TitaniumNs.AppNs.AndroidNs.R = js.native
+  val R: typings.titanium.Titanium.App.Android.R = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */

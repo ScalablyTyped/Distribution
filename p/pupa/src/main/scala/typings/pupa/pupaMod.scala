@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pupa", JSImport.Namespace)
 @js.native
 object pupaMod extends js.Object {
-  def apply(template: String, data: js.Array[_] | StringDictionary[js.Any]): String = js.native
+  def apply(template: String, data: js.Array[_]): String = js.native
+  def apply(template: String, data: StringDictionary[js.Any]): String = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSearch
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashSearch.SemanticUINs.Search
+import typings.semanticDashUiDashSearch.SemanticUI.Search
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,10 @@
 package typings.atMaterialDashUiCore.atMaterialDashUiCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.stepperStepperMod.StepperProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +16,8 @@ class Stepper protected ()
   def this(props: StepperProps) = this()
   def this(props: StepperProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/core", "Stepper")
+@js.native
+object Stepper extends TopLevel[ComponentType[StepperProps]]
 

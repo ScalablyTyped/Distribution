@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ConstructSignatureSyntax")
 @js.native
 class ConstructSignatureSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ConstructSignatureSyntax {
+  extends typings.typescriptDashServices.TypeScript.ConstructSignatureSyntax {
   def this(
     newKeyword: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -20,6 +20,6 @@ class ConstructSignatureSyntax protected ()
 @JSImport("typescript-services", "ConstructSignatureSyntax")
 @js.native
 object ConstructSignatureSyntax extends js.Object {
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ConstructSignatureSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ConstructSignatureSyntax = js.native
 }
 

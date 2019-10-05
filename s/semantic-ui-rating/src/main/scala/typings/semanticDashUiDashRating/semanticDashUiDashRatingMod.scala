@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashRating
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashRating.SemanticUINs.Rating
+import typings.semanticDashUiDashRating.SemanticUI.Rating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

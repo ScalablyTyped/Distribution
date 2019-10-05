@@ -17,14 +17,14 @@ object Model {
   def apply(
     children: js.Array[_] = null,
     context: js.Any = null,
-    dispatch: Dispatch = null,
+    dispatch: /* action */ js.Any => js.Any = null,
     path: String = null,
     props: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children)
     if (context != null) __obj.updateDynamic("context")(context)
-    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
+    if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))
     if (path != null) __obj.updateDynamic("path")(path)
     if (props != null) __obj.updateDynamic("props")(props)
     __obj.asInstanceOf[Model]

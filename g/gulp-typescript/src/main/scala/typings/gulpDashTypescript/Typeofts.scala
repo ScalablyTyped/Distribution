@@ -347,9 +347,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofts extends js.Object {
   var OperationCanceledException: Instantiable0[typings.typescript.typescriptMod.OperationCanceledException] = js.native
-  val ScriptSnapshotNs: TypeofScriptSnapshot = js.native
+  val ScriptSnapshot: TypeofScriptSnapshot = js.native
   var disableIncrementalParsing: Boolean = js.native
-  val serverNs: js.Any = js.native
+  val server: js.Any = js.native
   /** The version of the language service API */
   val servicesVersion: `0DOT8` = js.native
   var sys: System = js.native

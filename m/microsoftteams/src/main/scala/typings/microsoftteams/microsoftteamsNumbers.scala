@@ -1,6 +1,6 @@
 package typings.microsoftteams
 
-import typings.microsoftteams.microsoftTeamsNs.TeamType
+import typings.microsoftteams.microsoftTeams.TeamType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

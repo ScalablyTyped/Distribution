@@ -1,6 +1,8 @@
 package typings.reactDashBootstrap.libMenuItemMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
 import scala.scalajs.js
@@ -29,7 +31,7 @@ object MenuItemProps {
     divider: js.UndefOr[Boolean] = js.undefined,
     eventKey: js.Any = null,
     header: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onSelect: SelectCallback = null,
     target: String = null,
     title: String = null
@@ -42,7 +44,7 @@ object MenuItemProps {
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
     if (target != null) __obj.updateDynamic("target")(target)
     if (title != null) __obj.updateDynamic("title")(title)

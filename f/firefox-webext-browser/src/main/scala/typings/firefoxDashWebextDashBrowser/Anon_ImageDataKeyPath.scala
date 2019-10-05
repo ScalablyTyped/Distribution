@@ -2,7 +2,7 @@ package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.sidebarActionNs.ImageDataType
+import typings.firefoxDashWebextDashBrowser.browser.sidebarAction.ImageDataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

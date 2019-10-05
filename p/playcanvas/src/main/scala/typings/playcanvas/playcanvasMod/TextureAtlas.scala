@@ -35,5 +35,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "TextureAtlas")
 @js.native
 class TextureAtlas ()
-  extends typings.playcanvas.pcNs.TextureAtlas
+  extends typings.playcanvas.pc.TextureAtlas
 

@@ -1,7 +1,7 @@
 package typings.request.requestMod
 
 import typings.node.urlMod.Url
-import typings.toughDashCookie.toughDashCookieMod.CookieJarNs.SetCookieOptions
+import typings.toughDashCookie.toughDashCookieMod.CookieJar.SetCookieOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

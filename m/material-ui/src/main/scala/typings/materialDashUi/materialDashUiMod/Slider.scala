@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Slider")
 @js.native
 class Slider ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Slider
+  extends typings.materialDashUi.__MaterialUI.Slider
 

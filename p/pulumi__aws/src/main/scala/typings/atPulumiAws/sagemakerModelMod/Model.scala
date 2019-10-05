@@ -1,9 +1,9 @@
 package typings.atPulumiAws.sagemakerModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelContainer
-import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelPrimaryContainer
-import typings.atPulumiAws.typesOutputMod.sagemakerNs.ModelVpcConfig
+import typings.atPulumiAws.typesOutputMod.sagemaker.ModelContainer
+import typings.atPulumiAws.typesOutputMod.sagemaker.ModelPrimaryContainer
+import typings.atPulumiAws.typesOutputMod.sagemaker.ModelVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

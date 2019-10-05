@@ -1,10 +1,10 @@
 package typings.atPulumiAws.ec2FleetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.FleetLaunchTemplateConfig
-import typings.atPulumiAws.typesInputMod.ec2Ns.FleetOnDemandOptions
-import typings.atPulumiAws.typesInputMod.ec2Ns.FleetSpotOptions
-import typings.atPulumiAws.typesInputMod.ec2Ns.FleetTargetCapacitySpecification
+import typings.atPulumiAws.typesInputMod.ec2.FleetLaunchTemplateConfig
+import typings.atPulumiAws.typesInputMod.ec2.FleetOnDemandOptions
+import typings.atPulumiAws.typesInputMod.ec2.FleetSpotOptions
+import typings.atPulumiAws.typesInputMod.ec2.FleetTargetCapacitySpecification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

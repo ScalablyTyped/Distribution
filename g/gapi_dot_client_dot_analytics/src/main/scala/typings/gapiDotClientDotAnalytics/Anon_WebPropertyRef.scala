@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotAnalytics
 
-import typings.gapiDotClientDotAnalytics.gapiNs.clientNs.analyticsNs.WebPropertyRef
+import typings.gapiDotClientDotAnalytics.gapi.client.analytics.WebPropertyRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

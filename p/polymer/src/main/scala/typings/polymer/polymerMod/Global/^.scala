@@ -1,6 +1,6 @@
 package typings.polymer.polymerMod.Global
 
-import typings.polymer.polymerMod.Global.polymerNs.PolymerStatic
+import typings.polymer.polymerMod.Global.polymer.PolymerStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,17 +1,17 @@
 package typings.radium
 
-import typings.radium.radiumMod.RadiumNs.StyleProps
-import typings.radium.radiumMod.RadiumNs.StyleRootProps
+import typings.radium.radiumMod.Radium.StyleProps
+import typings.radium.radiumMod.Radium.StyleRootProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait radiumProps {
   @scala.inline
-  def defaultNsStyleProps: StyleProps.type = typings.radium.radiumMod.RadiumNs.StyleProps
-  type defaultNsStyleProps = StyleProps
+  def RadiumStyleProps: StyleProps.type = typings.radium.radiumMod.Radium.StyleProps
+  type RadiumStyleProps = StyleProps
   @scala.inline
-  def defaultNsStyleRootProps: StyleRootProps.type = typings.radium.radiumMod.RadiumNs.StyleRootProps
-  type defaultNsStyleRootProps = StyleRootProps
+  def RadiumStyleRootProps: StyleRootProps.type = typings.radium.radiumMod.Radium.StyleRootProps
+  type RadiumStyleRootProps = StyleRootProps
 }
 

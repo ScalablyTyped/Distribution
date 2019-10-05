@@ -59,11 +59,11 @@ object AddOutputRequest {
     Description: __string = null,
     Destination: __string = null,
     Encryption: Encryption = null,
-    MaxLatency: js.UndefOr[__integer] = js.undefined,
+    MaxLatency: Int | Double = null,
     Name: __string = null,
-    Port: js.UndefOr[__integer] = js.undefined,
+    Port: Int | Double = null,
     RemoteId: __string = null,
-    SmoothingLatency: js.UndefOr[__integer] = js.undefined,
+    SmoothingLatency: Int | Double = null,
     StreamId: __string = null
   ): AddOutputRequest = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any])
@@ -71,11 +71,11 @@ object AddOutputRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Destination != null) __obj.updateDynamic("Destination")(Destination)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency)
+    if (MaxLatency != null) __obj.updateDynamic("MaxLatency")(MaxLatency.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (RemoteId != null) __obj.updateDynamic("RemoteId")(RemoteId)
-    if (!js.isUndefined(SmoothingLatency)) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency)
+    if (SmoothingLatency != null) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId)
     __obj.asInstanceOf[AddOutputRequest]
   }

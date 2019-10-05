@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("backbone.Layout")
+@JSImport("backbone", "Layout")
 @js.native
 class Layout[TModel /* <: Model */] () extends View[TModel] {
   def this(options: LayoutOptions[TModel]) = this()
@@ -40,7 +40,7 @@ class Layout[TModel /* <: Model */] () extends View[TModel] {
 }
 
 /* static members */
-@JSGlobal("backbone.Layout")
+@JSImport("backbone", "Layout")
 @js.native
 object Layout extends js.Object {
   def cache(path: String): js.Any = js.native

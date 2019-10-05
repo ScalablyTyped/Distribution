@@ -19,10 +19,10 @@ class Deployment protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.Deployment) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.Deployment) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.Deployment,
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.Deployment,
     opts: CustomResourceOptions
   ) = this()
 }

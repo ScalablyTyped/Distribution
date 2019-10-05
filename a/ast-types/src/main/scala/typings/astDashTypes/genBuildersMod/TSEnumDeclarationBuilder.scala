@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsConstDeclare
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.TSEnumMemberKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSEnumDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSEnumDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

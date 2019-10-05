@@ -24,7 +24,7 @@ object DescribeAnalysisSchemesRequest {
   def apply(
     DomainName: DomainName,
     AnalysisSchemeNames: StandardNameList = null,
-    Deployed: js.UndefOr[Boolean] = js.undefined
+    Deployed: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeAnalysisSchemesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)
     if (AnalysisSchemeNames != null) __obj.updateDynamic("AnalysisSchemeNames")(AnalysisSchemeNames)

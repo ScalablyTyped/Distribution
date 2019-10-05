@@ -26,15 +26,15 @@ trait EntitlementValue extends js.Object {
 object EntitlementValue {
   @scala.inline
   def apply(
-    BooleanValue: js.UndefOr[Boolean] = js.undefined,
-    DoubleValue: js.UndefOr[Double] = js.undefined,
-    IntegerValue: js.UndefOr[Integer] = js.undefined,
+    BooleanValue: js.UndefOr[scala.Boolean] = js.undefined,
+    DoubleValue: Int | scala.Double = null,
+    IntegerValue: Int | scala.Double = null,
     StringValue: String = null
   ): EntitlementValue = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(BooleanValue)) __obj.updateDynamic("BooleanValue")(BooleanValue)
-    if (!js.isUndefined(DoubleValue)) __obj.updateDynamic("DoubleValue")(DoubleValue)
-    if (!js.isUndefined(IntegerValue)) __obj.updateDynamic("IntegerValue")(IntegerValue)
+    if (DoubleValue != null) __obj.updateDynamic("DoubleValue")(DoubleValue.asInstanceOf[js.Any])
+    if (IntegerValue != null) __obj.updateDynamic("IntegerValue")(IntegerValue.asInstanceOf[js.Any])
     if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue)
     __obj.asInstanceOf[EntitlementValue]
   }

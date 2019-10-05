@@ -121,13 +121,6 @@ trait EventSource extends EventTarget {
 
 @JSGlobal("EventSource")
 @js.native
-class EventSourceCls protected () extends EventSource {
-  def this(url: java.lang.String) = this()
-  def this(url: java.lang.String, eventSourceInitDict: EventSourceInit) = this()
-}
-
-@JSGlobal("EventSource")
-@js.native
 object EventSource
   extends Instantiable1[/* url */ java.lang.String, EventSource]
      with Instantiable2[/* url */ java.lang.String, /* eventSourceInitDict */ EventSourceInit, EventSource] {

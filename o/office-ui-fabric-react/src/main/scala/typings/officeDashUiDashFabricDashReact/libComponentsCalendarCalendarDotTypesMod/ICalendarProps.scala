@@ -2,6 +2,9 @@ package typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarDot
 
 import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DateRangeType
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DayOfWeek
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear
 import typings.react.reactMod.HTMLAttributes
 import typings.std.Date
 import typings.std.HTMLElement
@@ -30,9 +33,7 @@ trait ICalendarProps
     * selects days
     * @defaultvalue DateRangeType.Day
     */
-  var dateRangeType: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DateRangeType
-  ] = js.undefined
+  var dateRangeType: js.UndefOr[DateRangeType] = js.undefined
   /**
     * Apply additional formating to dates, for example localized date formatting.
     */
@@ -41,17 +42,13 @@ trait ICalendarProps
     * The first day of the week for your locale.
     * @defaultvalue DayOfWeek.Sunday
     */
-  var firstDayOfWeek: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DayOfWeek
-  ] = js.undefined
+  var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
   /**
     * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
     * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
     * @defaultvalue FirstWeekOfYear.FirstDay
     */
-  var firstWeekOfYear: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear
-  ] = js.undefined
+  var firstWeekOfYear: js.UndefOr[FirstWeekOfYear] = js.undefined
   /**
     * Whether the month picker should highlight the current month
     * @defaultvalue false
@@ -150,11 +147,7 @@ trait ICalendarProps
     * The days that are selectable when dateRangeType is WorkWeek. If dateRangeType is not WorkWeek this property does nothing.
     * @defaultvalue [Monday,Tuesday,Wednesday,Thursday,Friday]
     */
-  var workWeekDays: js.UndefOr[
-    js.Array[
-      typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DayOfWeek
-    ]
-  ] = js.undefined
+  var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
   /**
     * Whether the year picker is enabled
     * @defaultvalue false
@@ -171,10 +164,10 @@ object ICalendarProps {
     autoNavigateOnSelection: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     componentRef: IRefObject[ICalendar] = null,
-    dateRangeType: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DateRangeType = null,
+    dateRangeType: DateRangeType = null,
     dateTimeFormatter: ICalendarFormatDateCallbacks = null,
-    firstDayOfWeek: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DayOfWeek = null,
-    firstWeekOfYear: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear = null,
+    firstDayOfWeek: DayOfWeek = null,
+    firstWeekOfYear: FirstWeekOfYear = null,
     highlightCurrentMonth: js.UndefOr[Boolean] = js.undefined,
     highlightSelectedMonth: js.UndefOr[Boolean] = js.undefined,
     isDayPickerVisible: js.UndefOr[Boolean] = js.undefined,
@@ -195,9 +188,7 @@ object ICalendarProps {
     strings: ICalendarStrings = null,
     today: Date = null,
     value: Date = null,
-    workWeekDays: js.Array[
-      typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.DayOfWeek
-    ] = null,
+    workWeekDays: js.Array[DayOfWeek] = null,
     yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   ): ICalendarProps = {
     val __obj = js.Dynamic.literal()

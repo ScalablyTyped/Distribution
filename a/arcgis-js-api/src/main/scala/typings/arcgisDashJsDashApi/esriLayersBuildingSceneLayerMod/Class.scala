@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersBuildingSceneLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BuildingSceneLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BuildingSceneLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneServiceVersion
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.BuildingSceneLayer
+import typings.arcgisDashJsDashApi.__esri.BuildingSceneLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.SceneServiceVersion
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

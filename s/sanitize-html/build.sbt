@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "sanitize-html"
-version := "1.20.1-dt-20190916Z-19c7f6"
-scalaVersion := "2.12.9"
+version := "1.20.1-dt-20190916Z-9952e9"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-b43987",
-  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-5fc779",
-  "org.scalablytyped" %%% "htmlparser2" % "v3.10.x-dt-20190712Z-6f37b8",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-94454e",
+  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-69cee7",
+  "org.scalablytyped" %%% "htmlparser2" % "v3.10.x-dt-20190712Z-d6e672",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

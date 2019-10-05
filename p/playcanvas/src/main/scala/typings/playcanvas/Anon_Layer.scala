@@ -1,6 +1,6 @@
 package typings.playcanvas
 
-import typings.playcanvas.pcNs.Layer
+import typings.playcanvas.pc.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

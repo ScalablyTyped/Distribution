@@ -33,3 +33,10 @@ object TypeParameterDeclaration {
   }
 }
 
+@JSImport("babel-types", "typeParameterDeclaration")
+@js.native
+object typeParameterDeclaration extends js.Object {
+  def apply(): TypeParameterDeclaration = js.native
+  def apply(params: js.Array[Identifier]): TypeParameterDeclaration = js.native
+}
+

@@ -1,0 +1,18 @@
+package typings.ol
+
+import typings.ol.formatFilterComparisonMod.Comparison
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("ol/format/filter/Comparison", JSImport.Namespace)
+@js.native
+object formatFilterComparisonMod extends js.Object {
+  @js.native
+  class default protected () extends Comparison {
+    def this(tagName: String, propertyName: String) = this()
+  }
+  
+  type Comparison = typings.ol.formatFilterFilterMod.default
+}
+

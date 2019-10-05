@@ -21,7 +21,11 @@ trait DisassociateAddressRequest extends js.Object {
 
 object DisassociateAddressRequest {
   @scala.inline
-  def apply(AssociationId: String = null, DryRun: js.UndefOr[Boolean] = js.undefined, PublicIp: String = null): DisassociateAddressRequest = {
+  def apply(
+    AssociationId: String = null,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    PublicIp: String = null
+  ): DisassociateAddressRequest = {
     val __obj = js.Dynamic.literal()
     if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

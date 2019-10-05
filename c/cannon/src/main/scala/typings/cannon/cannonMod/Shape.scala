@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Shape")
 @js.native
 class Shape ()
-  extends typings.cannon.CANNONNs.Shape
+  extends typings.cannon.CANNON.Shape
 
 /* static members */
 @JSImport("cannon", "Shape")

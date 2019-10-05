@@ -1,7 +1,7 @@
 package typings.cesium.cesiumMod
 
 import typings.cesium.Anon_DataSourceCollection
-import typings.cesium.cesiumMod.DataSourceDisplayNs.VisualizersCallback
+import typings.cesium.cesiumMod.DataSourceDisplay.VisualizersCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,5 +25,6 @@ object DataSourceDisplay extends js.Object {
   @JSName("defaultVisualizersCallback")
   var defaultVisualizersCallback_Original: VisualizersCallback = js.native
   def defaultVisualizersCallback(scene: Scene, dataSource: DataSource): js.Array[Visualizer] = js.native
+  type VisualizersCallback = js.Function2[/* scene */ Scene, /* dataSource */ DataSource, js.Array[Visualizer]]
 }
 

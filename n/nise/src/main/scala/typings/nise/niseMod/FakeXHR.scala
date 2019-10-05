@@ -1,5 +1,6 @@
 package typings.nise.niseMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,4 +21,8 @@ object FakeXHR {
     __obj.asInstanceOf[FakeXHR]
   }
 }
+
+@JSImport("nise", "fakeXhr")
+@js.native
+object fakeXhr extends TopLevel[FakeXHR]
 

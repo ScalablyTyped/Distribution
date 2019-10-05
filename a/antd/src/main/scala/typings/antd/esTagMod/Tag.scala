@@ -6,9 +6,9 @@ import typings.antd.Anon_VisibleBoolean
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +20,10 @@ trait Tag
   var state_Tag: Anon_VisibleBoolean = js.native
   def getTagClassName(hasGetPrefixCls: ConfigConsumerProps): String = js.native
   def getTagStyle(): Anon_BackgroundColor | Anon_Absolute = js.native
-  def handleIconClick(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def handleIconClick(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def isPresetColor(): Boolean = js.native
   def renderCloseIcon(): Element | Null = js.native
   def renderTag(configProps: ConfigConsumerProps): Element = js.native
-  def setVisible(visible: Boolean, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+  def setVisible(visible: Boolean, e: typings.react.reactMod.MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
 }
 

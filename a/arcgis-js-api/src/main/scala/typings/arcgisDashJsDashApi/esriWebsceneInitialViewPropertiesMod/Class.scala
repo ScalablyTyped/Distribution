@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebsceneInitialViewPropertiesMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.websceneInitialViewProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.websceneInitialViewPropertiesProperties
+import typings.arcgisDashJsDashApi.__esri.websceneInitialViewProperties
+import typings.arcgisDashJsDashApi.__esri.websceneInitialViewPropertiesProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

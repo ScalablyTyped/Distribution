@@ -23,8 +23,8 @@ object GetConsoleScreenshotRequest {
   @scala.inline
   def apply(
     InstanceId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    WakeUp: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    WakeUp: js.UndefOr[scala.Boolean] = js.undefined
   ): GetConsoleScreenshotRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

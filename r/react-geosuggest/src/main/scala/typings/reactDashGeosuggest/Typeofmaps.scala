@@ -3,43 +3,43 @@ package typings.reactDashGeosuggest
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.googlemaps.googleNs.mapsNs.BicyclingLayer
-import typings.googlemaps.googleNs.mapsNs.Circle
-import typings.googlemaps.googleNs.mapsNs.Data
-import typings.googlemaps.googleNs.mapsNs.DirectionsRenderer
-import typings.googlemaps.googleNs.mapsNs.DirectionsService
-import typings.googlemaps.googleNs.mapsNs.DistanceMatrixService
-import typings.googlemaps.googleNs.mapsNs.ElevationService
-import typings.googlemaps.googleNs.mapsNs.FusionTablesLayer
-import typings.googlemaps.googleNs.mapsNs.FusionTablesLayerOptions
-import typings.googlemaps.googleNs.mapsNs.Geocoder
-import typings.googlemaps.googleNs.mapsNs.GroundOverlay
-import typings.googlemaps.googleNs.mapsNs.ImageMapType
-import typings.googlemaps.googleNs.mapsNs.ImageMapTypeOptions
-import typings.googlemaps.googleNs.mapsNs.InfoWindow
-import typings.googlemaps.googleNs.mapsNs.KmlLayer
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngBounds
-import typings.googlemaps.googleNs.mapsNs.MVCArray
-import typings.googlemaps.googleNs.mapsNs.MVCObject
-import typings.googlemaps.googleNs.mapsNs.Map
-import typings.googlemaps.googleNs.mapsNs.MapCanvasProjection
-import typings.googlemaps.googleNs.mapsNs.MapTypeRegistry
-import typings.googlemaps.googleNs.mapsNs.MapTypeStyle
-import typings.googlemaps.googleNs.mapsNs.MaxZoomService
-import typings.googlemaps.googleNs.mapsNs.OverlayView
-import typings.googlemaps.googleNs.mapsNs.Point
-import typings.googlemaps.googleNs.mapsNs.Polygon
-import typings.googlemaps.googleNs.mapsNs.Polyline
-import typings.googlemaps.googleNs.mapsNs.Rectangle
-import typings.googlemaps.googleNs.mapsNs.SaveWidget
-import typings.googlemaps.googleNs.mapsNs.Size
-import typings.googlemaps.googleNs.mapsNs.StreetViewCoverageLayer
-import typings.googlemaps.googleNs.mapsNs.StreetViewPanorama
-import typings.googlemaps.googleNs.mapsNs.StreetViewService
-import typings.googlemaps.googleNs.mapsNs.StyledMapType
-import typings.googlemaps.googleNs.mapsNs.TrafficLayer
-import typings.googlemaps.googleNs.mapsNs.TransitLayer
+import typings.googlemaps.google.maps.BicyclingLayer
+import typings.googlemaps.google.maps.Circle
+import typings.googlemaps.google.maps.Data
+import typings.googlemaps.google.maps.DirectionsRenderer
+import typings.googlemaps.google.maps.DirectionsService
+import typings.googlemaps.google.maps.DistanceMatrixService
+import typings.googlemaps.google.maps.ElevationService
+import typings.googlemaps.google.maps.FusionTablesLayer
+import typings.googlemaps.google.maps.FusionTablesLayerOptions
+import typings.googlemaps.google.maps.Geocoder
+import typings.googlemaps.google.maps.GroundOverlay
+import typings.googlemaps.google.maps.ImageMapType
+import typings.googlemaps.google.maps.ImageMapTypeOptions
+import typings.googlemaps.google.maps.InfoWindow
+import typings.googlemaps.google.maps.KmlLayer
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngBounds
+import typings.googlemaps.google.maps.MVCArray
+import typings.googlemaps.google.maps.MVCObject
+import typings.googlemaps.google.maps.Map
+import typings.googlemaps.google.maps.MapCanvasProjection
+import typings.googlemaps.google.maps.MapTypeRegistry
+import typings.googlemaps.google.maps.MapTypeStyle
+import typings.googlemaps.google.maps.MaxZoomService
+import typings.googlemaps.google.maps.OverlayView
+import typings.googlemaps.google.maps.Point
+import typings.googlemaps.google.maps.Polygon
+import typings.googlemaps.google.maps.Polyline
+import typings.googlemaps.google.maps.Rectangle
+import typings.googlemaps.google.maps.SaveWidget
+import typings.googlemaps.google.maps.Size
+import typings.googlemaps.google.maps.StreetViewCoverageLayer
+import typings.googlemaps.google.maps.StreetViewPanorama
+import typings.googlemaps.google.maps.StreetViewService
+import typings.googlemaps.google.maps.StyledMapType
+import typings.googlemaps.google.maps.TrafficLayer
+import typings.googlemaps.google.maps.TransitLayer
 import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
@@ -48,34 +48,33 @@ import scala.scalajs.js.annotation._
 
 trait Typeofmaps extends js.Object {
   /***** Layers *****/
-  var BicyclingLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.BicyclingLayer]
+  var BicyclingLayer: Instantiable0[typings.googlemaps.google.maps.BicyclingLayer]
   /** A circle on the Earth's surface; also known as a "spherical cap". */
-  var Circle: Instantiable0[typings.googlemaps.googleNs.mapsNs.Circle]
+  var Circle: Instantiable0[typings.googlemaps.google.maps.Circle]
   /***** Data *****/
-  var Data: Instantiable0[typings.googlemaps.googleNs.mapsNs.Data]
-  val DataNs: TypeofData
-  var DirectionsRenderer: Instantiable0[typings.googlemaps.googleNs.mapsNs.DirectionsRenderer]
-  var DirectionsService: Instantiable0[typings.googlemaps.googleNs.mapsNs.DirectionsService]
-  var DistanceMatrixService: Instantiable0[typings.googlemaps.googleNs.mapsNs.DistanceMatrixService]
-  var ElevationService: Instantiable0[typings.googlemaps.googleNs.mapsNs.ElevationService]
+  var Data: Instantiable0[typings.googlemaps.google.maps.Data] | TypeofData
+  var DirectionsRenderer: Instantiable0[typings.googlemaps.google.maps.DirectionsRenderer]
+  var DirectionsService: Instantiable0[typings.googlemaps.google.maps.DirectionsService]
+  var DistanceMatrixService: Instantiable0[typings.googlemaps.google.maps.DistanceMatrixService]
+  var ElevationService: Instantiable0[typings.googlemaps.google.maps.ElevationService]
   var FusionTablesLayer: Instantiable1[
     /* options */ FusionTablesLayerOptions, 
-    typings.googlemaps.googleNs.mapsNs.FusionTablesLayer
+    typings.googlemaps.google.maps.FusionTablesLayer
   ]
   /***** Services *****/
-  var Geocoder: Instantiable0[typings.googlemaps.googleNs.mapsNs.Geocoder]
+  var Geocoder: Instantiable0[typings.googlemaps.google.maps.Geocoder]
   var GroundOverlay: Instantiable2[
     /* url */ String, 
     /* bounds */ LatLngBounds, 
-    typings.googlemaps.googleNs.mapsNs.GroundOverlay
+    typings.googlemaps.google.maps.GroundOverlay
   ]
-  var ImageMapType: Instantiable1[/* opts */ ImageMapTypeOptions, typings.googlemaps.googleNs.mapsNs.ImageMapType]
+  var ImageMapType: Instantiable1[/* opts */ ImageMapTypeOptions, typings.googlemaps.google.maps.ImageMapType]
   /**
     * An overlay that looks like a bubble and is often connected to a marker.
     * This class extends MVCObject.
     */
-  var InfoWindow: Instantiable0[typings.googlemaps.googleNs.mapsNs.InfoWindow]
-  var KmlLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.KmlLayer]
+  var InfoWindow: Instantiable0[typings.googlemaps.google.maps.InfoWindow]
+  var KmlLayer: Instantiable0[typings.googlemaps.google.maps.KmlLayer]
   /* **** Base **** */
   /**
     * A LatLng is a point in geographical coordinates: latitude and longitude.
@@ -96,54 +95,51 @@ trait Typeofmaps extends js.Object {
     * Notice that you cannot modify the coordinates of a LatLng. If you want
     * to compute another point, you have to create a new one.
     */
-  var LatLng: Instantiable2[/* lat */ Double, /* lng */ Double, typings.googlemaps.googleNs.mapsNs.LatLng]
+  var LatLng: Instantiable2[/* lat */ Double, /* lng */ Double, typings.googlemaps.google.maps.LatLng]
   /**
     * A LatLngBounds instance represents a rectangle in geographical coordinates,
     * including one that crosses the 180 degrees longitudinal meridian.
     */
-  var LatLngBounds: Instantiable0[typings.googlemaps.googleNs.mapsNs.LatLngBounds]
+  var LatLngBounds: Instantiable0[typings.googlemaps.google.maps.LatLngBounds]
   /** This class extends MVCObject. */
-  var MVCArray: Instantiable0[typings.googlemaps.googleNs.mapsNs.MVCArray[js.Object]]
+  var MVCArray: Instantiable0[typings.googlemaps.google.maps.MVCArray[js.Object]]
   /***** MVC *****/
   /** Base class implementing KVO. */
-  var MVCObject: Instantiable0[typings.googlemaps.googleNs.mapsNs.MVCObject]
+  var MVCObject: Instantiable0[typings.googlemaps.google.maps.MVCObject]
   /***** Map *****/
-  var Map: Instantiable1[/* mapDiv */ Element, typings.googlemaps.googleNs.mapsNs.Map]
-  var MapCanvasProjection: Instantiable0[typings.googlemaps.googleNs.mapsNs.MapCanvasProjection]
-  var MapTypeRegistry: Instantiable0[typings.googlemaps.googleNs.mapsNs.MapTypeRegistry]
+  var Map: Instantiable1[/* mapDiv */ Element, typings.googlemaps.google.maps.Map]
+  var MapCanvasProjection: Instantiable0[typings.googlemaps.google.maps.MapCanvasProjection]
+  var MapTypeRegistry: Instantiable0[typings.googlemaps.google.maps.MapTypeRegistry]
   /**
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker Maps JavaScript API}
     */
   var Marker: TypeofClassMarker
-  var MaxZoomService: Instantiable0[typings.googlemaps.googleNs.mapsNs.MaxZoomService]
-  var OverlayView: Instantiable0[typings.googlemaps.googleNs.mapsNs.OverlayView]
-  var Point: Instantiable2[/* x */ Double, /* y */ Double, typings.googlemaps.googleNs.mapsNs.Point]
-  var Polygon: Instantiable0[typings.googlemaps.googleNs.mapsNs.Polygon]
-  var Polyline: Instantiable0[typings.googlemaps.googleNs.mapsNs.Polyline]
-  var Rectangle: Instantiable0[typings.googlemaps.googleNs.mapsNs.Rectangle]
-  var SaveWidget: Instantiable1[/* container */ Node, typings.googlemaps.googleNs.mapsNs.SaveWidget]
-  var Size: Instantiable2[/* width */ Double, /* height */ Double, typings.googlemaps.googleNs.mapsNs.Size]
-  var StreetViewCoverageLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.StreetViewCoverageLayer]
+  var MaxZoomService: Instantiable0[typings.googlemaps.google.maps.MaxZoomService]
+  var OverlayView: Instantiable0[typings.googlemaps.google.maps.OverlayView]
+  var Point: Instantiable2[/* x */ Double, /* y */ Double, typings.googlemaps.google.maps.Point]
+  var Polygon: Instantiable0[typings.googlemaps.google.maps.Polygon]
+  var Polyline: Instantiable0[typings.googlemaps.google.maps.Polyline]
+  var Rectangle: Instantiable0[typings.googlemaps.google.maps.Rectangle]
+  var SaveWidget: Instantiable1[/* container */ Node, typings.googlemaps.google.maps.SaveWidget]
+  var Size: Instantiable2[/* width */ Double, /* height */ Double, typings.googlemaps.google.maps.Size]
+  var StreetViewCoverageLayer: Instantiable0[typings.googlemaps.google.maps.StreetViewCoverageLayer]
   /***** Street View *****/
-  var StreetViewPanorama: Instantiable1[/* container */ Element, typings.googlemaps.googleNs.mapsNs.StreetViewPanorama]
-  var StreetViewService: Instantiable0[typings.googlemaps.googleNs.mapsNs.StreetViewService]
-  var StyledMapType: Instantiable1[
-    /* styles */ js.Array[MapTypeStyle], 
-    typings.googlemaps.googleNs.mapsNs.StyledMapType
-  ]
-  var TrafficLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.TrafficLayer]
-  var TransitLayer: Instantiable0[typings.googlemaps.googleNs.mapsNs.TransitLayer]
+  var StreetViewPanorama: Instantiable1[/* container */ Element, typings.googlemaps.google.maps.StreetViewPanorama]
+  var StreetViewService: Instantiable0[typings.googlemaps.google.maps.StreetViewService]
+  var StyledMapType: Instantiable1[/* styles */ js.Array[MapTypeStyle], typings.googlemaps.google.maps.StyledMapType]
+  var TrafficLayer: Instantiable0[typings.googlemaps.google.maps.TrafficLayer]
+  var TransitLayer: Instantiable0[typings.googlemaps.google.maps.TransitLayer]
   /***** AdSense Library *****/
-  val adsenseNs: Typeofadsense
+  val adsense: Typeofadsense
   /***** Drawing Library *****/
-  val drawingNs: Typeofdrawing
-  val eventNs: Typeofevent
+  val drawing: Typeofdrawing
+  val event: Typeofevent
   /***** Geometry Library *****/
-  val geometryNs: Typeofgeometry
+  val geometry: Typeofgeometry
   /***** Places Library *****/
-  val placesNs: Typeofplaces
+  val places: Typeofplaces
   /***** Visualization Library *****/
-  val visualizationNs: Typeofvisualization
+  val visualization: Typeofvisualization
 }
 
 object Typeofmaps {
@@ -152,7 +148,6 @@ object Typeofmaps {
     BicyclingLayer: Instantiable0[BicyclingLayer],
     Circle: Instantiable0[Circle],
     Data: Instantiable0[Data],
-    DataNs: TypeofData,
     DirectionsRenderer: Instantiable0[DirectionsRenderer],
     DirectionsService: Instantiable0[DirectionsService],
     DistanceMatrixService: Instantiable0[DistanceMatrixService],
@@ -185,14 +180,14 @@ object Typeofmaps {
     StyledMapType: Instantiable1[/* styles */ js.Array[MapTypeStyle], StyledMapType],
     TrafficLayer: Instantiable0[TrafficLayer],
     TransitLayer: Instantiable0[TransitLayer],
-    adsenseNs: Typeofadsense,
-    drawingNs: Typeofdrawing,
-    eventNs: Typeofevent,
-    geometryNs: Typeofgeometry,
-    placesNs: Typeofplaces,
-    visualizationNs: Typeofvisualization
+    adsense: Typeofadsense,
+    drawing: Typeofdrawing,
+    event: Typeofevent,
+    geometry: Typeofgeometry,
+    places: Typeofplaces,
+    visualization: Typeofvisualization
   ): Typeofmaps = {
-    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DataNs = DataNs, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsenseNs = adsenseNs, drawingNs = drawingNs, eventNs = eventNs, geometryNs = geometryNs, placesNs = placesNs, visualizationNs = visualizationNs)
+    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsense = adsense, drawing = drawing, event = event, geometry = geometry, places = places, visualization = visualization)
   
     __obj.asInstanceOf[Typeofmaps]
   }

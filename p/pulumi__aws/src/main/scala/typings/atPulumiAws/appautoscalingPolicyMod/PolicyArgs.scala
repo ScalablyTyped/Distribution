@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appautoscalingPolicyMod
 
-import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyStepScalingPolicyConfiguration
-import typings.atPulumiAws.typesInputMod.appautoscalingNs.PolicyTargetTrackingScalingPolicyConfiguration
+import typings.atPulumiAws.typesInputMod.appautoscaling.PolicyStepScalingPolicyConfiguration
+import typings.atPulumiAws.typesInputMod.appautoscaling.PolicyTargetTrackingScalingPolicyConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

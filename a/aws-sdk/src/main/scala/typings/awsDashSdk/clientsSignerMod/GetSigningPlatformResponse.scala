@@ -44,7 +44,7 @@ object GetSigningPlatformResponse {
   def apply(
     category: Category = null,
     displayName: DisplayName = null,
-    maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.undefined,
+    maxSizeInMB: Int | Double = null,
     partner: String = null,
     platformId: PlatformId = null,
     signingConfiguration: SigningConfiguration = null,
@@ -54,7 +54,7 @@ object GetSigningPlatformResponse {
     val __obj = js.Dynamic.literal()
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(maxSizeInMB)) __obj.updateDynamic("maxSizeInMB")(maxSizeInMB)
+    if (maxSizeInMB != null) __obj.updateDynamic("maxSizeInMB")(maxSizeInMB.asInstanceOf[js.Any])
     if (partner != null) __obj.updateDynamic("partner")(partner)
     if (platformId != null) __obj.updateDynamic("platformId")(platformId)
     if (signingConfiguration != null) __obj.updateDynamic("signingConfiguration")(signingConfiguration)

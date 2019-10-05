@@ -1,5 +1,6 @@
 package typings.signalsDotJs.libOrgOsflashSignalsIOnceSignalMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.signalsDotJs.libOrgOsflashSignalsISlotMod.ISlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,19 +41,8 @@ trait IOnceSignal extends js.Object {
   def removeAll(): Unit
 }
 
-object IOnceSignal {
-  @scala.inline
-  def apply(
-    addOnce: js.Function => ISlot,
-    dispatch: /* repeated */ js.Any => Unit,
-    numListeners: Double,
-    remove: js.Function => ISlot,
-    removeAll: () => Unit,
-    valueClasses: js.Array[_]
-  ): IOnceSignal = {
-    val __obj = js.Dynamic.literal(addOnce = js.Any.fromFunction1(addOnce), dispatch = js.Any.fromFunction1(dispatch), numListeners = numListeners, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), valueClasses = valueClasses)
-  
-    __obj.asInstanceOf[IOnceSignal]
-  }
-}
+@JSImport("signals.js/lib/org/osflash/signals/IOnceSignal", "IOnceSignal")
+@js.native
+object IOnceSignal
+  extends TopLevel[js.Symbol]
 

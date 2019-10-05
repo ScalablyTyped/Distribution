@@ -23,12 +23,12 @@ object DeleteSecretRequest {
   @scala.inline
   def apply(
     SecretId: SecretIdType,
-    ForceDeleteWithoutRecovery: js.UndefOr[BooleanType] = js.undefined,
-    RecoveryWindowInDays: js.UndefOr[RecoveryWindowInDaysType] = js.undefined
+    ForceDeleteWithoutRecovery: js.UndefOr[Boolean] = js.undefined,
+    RecoveryWindowInDays: Int | Double = null
   ): DeleteSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId)
     if (!js.isUndefined(ForceDeleteWithoutRecovery)) __obj.updateDynamic("ForceDeleteWithoutRecovery")(ForceDeleteWithoutRecovery)
-    if (!js.isUndefined(RecoveryWindowInDays)) __obj.updateDynamic("RecoveryWindowInDays")(RecoveryWindowInDays)
+    if (RecoveryWindowInDays != null) __obj.updateDynamic("RecoveryWindowInDays")(RecoveryWindowInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSecretRequest]
   }
 }

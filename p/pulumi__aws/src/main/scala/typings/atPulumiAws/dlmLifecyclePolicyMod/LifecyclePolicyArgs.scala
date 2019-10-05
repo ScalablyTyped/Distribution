@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dlmLifecyclePolicyMod
 
-import typings.atPulumiAws.typesInputMod.dlmNs.LifecyclePolicyPolicyDetails
+import typings.atPulumiAws.typesInputMod.dlm.LifecyclePolicyPolicyDetails
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

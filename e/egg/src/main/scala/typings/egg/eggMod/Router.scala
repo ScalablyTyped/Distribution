@@ -1,12 +1,13 @@
 package typings.egg.eggMod
 
+import typings.koaDashRouter.koaDashRouterMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Router
-  extends typings.koaDashRouter.koaDashRouterMod.^[js.Any, typings.eggDashView.eggMod.Context] {
+  extends ^[js.Any, Context] {
   /**
     * restful router api
     */

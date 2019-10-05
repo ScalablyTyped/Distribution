@@ -18,7 +18,7 @@ trait Anon_ItemStyleLabelLabelLine extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis.labelLine
     */
-  var labelLine: js.UndefOr[Anon_EmphasisLengthLineStyle] = js.undefined
+  var labelLine: js.UndefOr[Anon_EmphasisLength] = js.undefined
 }
 
 object Anon_ItemStyleLabelLabelLine {
@@ -26,7 +26,7 @@ object Anon_ItemStyleLabelLabelLine {
   def apply(
     itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = null,
-    labelLine: Anon_EmphasisLengthLineStyle = null
+    labelLine: Anon_EmphasisLength = null
   ): Anon_ItemStyleLabelLabelLine = {
     val __obj = js.Dynamic.literal()
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)

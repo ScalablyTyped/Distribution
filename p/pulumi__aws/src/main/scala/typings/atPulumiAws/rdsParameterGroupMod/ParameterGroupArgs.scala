@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.rdsNs.ParameterGroupParameter
+import typings.atPulumiAws.typesInputMod.rds.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,10 +1,10 @@
 package typings.atPulumiAws.elastictranscoderPipelineMod
 
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineContentConfig
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineContentConfigPermission
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineNotifications
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineThumbnailConfig
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PipelineThumbnailConfigPermission
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PipelineContentConfig
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PipelineContentConfigPermission
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PipelineNotifications
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PipelineThumbnailConfig
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PipelineThumbnailConfigPermission
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

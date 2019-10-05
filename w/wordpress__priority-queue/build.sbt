@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "wordpress__priority-queue"
-version := "1.2-dt-20190710Z-3fd491"
-scalaVersion := "2.12.9"
+version := "1.2-dt-20190710Z-a4555f"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

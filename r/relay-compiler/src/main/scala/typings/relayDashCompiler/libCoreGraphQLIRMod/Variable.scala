@@ -22,11 +22,12 @@ object Variable {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Variable,
     loc: Location,
-    metadata: Metadata,
     variableName: String,
+    metadata: Metadata = null,
     `type`: GraphQLInputType = null
   ): Variable = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], variableName = variableName)
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, variableName = variableName)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }

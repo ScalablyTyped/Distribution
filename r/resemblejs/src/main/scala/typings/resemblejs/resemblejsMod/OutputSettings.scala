@@ -21,3 +21,12 @@ object OutputSettings {
   }
 }
 
+@JSImport("resemblejs", "outputSettings")
+@js.native
+object outputSettings extends js.Object {
+  /**
+    * Set the resemblance image output style
+    */
+  def apply(settings: OutputSettings): js.Any = js.native
+}
+

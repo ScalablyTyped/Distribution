@@ -27,12 +27,12 @@ object ListResourcesForTagOptionInput {
   @scala.inline
   def apply(
     TagOptionId: TagOptionId,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
+    PageSize: Int | Double = null,
     PageToken: PageToken = null,
     ResourceType: ResourceType = null
   ): ListResourcesForTagOptionInput = {
     val __obj = js.Dynamic.literal(TagOptionId = TagOptionId)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
     __obj.asInstanceOf[ListResourcesForTagOptionInput]

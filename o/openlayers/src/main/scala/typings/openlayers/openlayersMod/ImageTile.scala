@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.TileNs.State
+import typings.openlayers.openlayersMod.Tile.State
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

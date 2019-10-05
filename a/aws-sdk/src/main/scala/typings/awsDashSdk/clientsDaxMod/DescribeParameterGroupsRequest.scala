@@ -22,12 +22,12 @@ trait DescribeParameterGroupsRequest extends js.Object {
 object DescribeParameterGroupsRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null,
     ParameterGroupNames: ParameterGroupNameList = null
   ): DescribeParameterGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ParameterGroupNames != null) __obj.updateDynamic("ParameterGroupNames")(ParameterGroupNames)
     __obj.asInstanceOf[DescribeParameterGroupsRequest]

@@ -164,3 +164,12 @@ trait Parser[T] extends js.Object {
   def wrap(before: Parser[_], after: Parser[_]): Parser[T] = js.native
 }
 
+@JSImport("parsimmon", "Parser")
+@js.native
+object Parser extends js.Object {
+  /**
+  	 * Alias of `Parsimmon(fn)` for backwards compatibility.
+  	 */
+  def apply[T](fn: js.Function2[/* input */ String, /* i */ Double, Reply[T]]): Parser[T] = js.native
+}
+

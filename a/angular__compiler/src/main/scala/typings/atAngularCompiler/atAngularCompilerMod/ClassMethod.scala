@@ -1,6 +1,7 @@
 package typings.atAngularCompiler.atAngularCompilerMod
 
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.FnParam
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,28 +37,28 @@ class ClassMethod protected ()
     params: js.Array[FnParam],
     body: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: String,
     params: js.Array[FnParam],
     body: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: Null,
     params: js.Array[FnParam],
     body: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: Null,
     params: js.Array[FnParam],
     body: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
 }
 

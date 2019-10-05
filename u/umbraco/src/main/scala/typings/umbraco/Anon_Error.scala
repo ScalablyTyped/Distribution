@@ -3,7 +3,7 @@ package typings.umbraco
 import typings.angular.angularMod.IHttpHeadersGetter
 import typings.angular.angularMod.IHttpPromiseCallback
 import typings.angular.angularMod.IRequestConfig
-import typings.umbraco.umbracoMod.resourcesNs.IResourcePromise
+import typings.umbraco.umbracoMod.resources.IResourcePromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

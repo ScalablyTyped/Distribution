@@ -23,13 +23,13 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ContactPoint")
 @js.native
 class ContactPoint protected ()
-  extends typings.playcanvas.pcNs.ContactPoint {
+  extends typings.playcanvas.pc.ContactPoint {
   def this(
-    localPoint: typings.playcanvas.pcNs.Vec3,
-    localPointOther: typings.playcanvas.pcNs.Vec3,
-    point: typings.playcanvas.pcNs.Vec3,
-    pointOther: typings.playcanvas.pcNs.Vec3,
-    normal: typings.playcanvas.pcNs.Vec3
+    localPoint: typings.playcanvas.pc.Vec3,
+    localPointOther: typings.playcanvas.pc.Vec3,
+    point: typings.playcanvas.pc.Vec3,
+    pointOther: typings.playcanvas.pc.Vec3,
+    normal: typings.playcanvas.pc.Vec3
   ) = this()
 }
 

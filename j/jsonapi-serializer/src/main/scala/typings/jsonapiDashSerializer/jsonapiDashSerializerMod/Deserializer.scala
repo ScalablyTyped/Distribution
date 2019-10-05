@@ -1,5 +1,6 @@
 package typings.jsonapiDashSerializer.jsonapiDashSerializerMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,5 @@ trait Deserializer extends js.Object {
 
 @JSImport("jsonapi-serializer", "Deserializer")
 @js.native
-class DeserializerCls protected () extends Deserializer {
-  def this(opts: DeserializerOptions) = this()
-}
+object Deserializer extends TopLevel[DeserializerConstructor]
 

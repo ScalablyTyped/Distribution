@@ -17,7 +17,7 @@ trait InboxPlacementTrackingOption extends js.Object {
 
 object InboxPlacementTrackingOption {
   @scala.inline
-  def apply(Global: js.UndefOr[Enabled] = js.undefined, TrackedIsps: IspNameList = null): InboxPlacementTrackingOption = {
+  def apply(Global: js.UndefOr[Boolean] = js.undefined, TrackedIsps: IspNameList = null): InboxPlacementTrackingOption = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Global)) __obj.updateDynamic("Global")(Global)
     if (TrackedIsps != null) __obj.updateDynamic("TrackedIsps")(TrackedIsps)

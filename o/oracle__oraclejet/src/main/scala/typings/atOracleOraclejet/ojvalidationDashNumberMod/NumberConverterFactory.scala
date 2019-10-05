@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojvalidationDashNumberMod
 
-import typings.atOracleOraclejet.ojvalidationDashNumberMod.IntlNumberConverterNs.ConverterOptions
+import typings.atOracleOraclejet.ojvalidationDashNumberMod.IntlNumberConverter.ConverterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,23 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cypress {
-  import typings.cypress.JQueryNs.AjaxSettings
-  import typings.cypress.JQueryNs.Callbacks
-  import typings.cypress.JQueryNs.Coordinates
-  import typings.cypress.JQueryNs.Deferred
-  import typings.cypress.JQueryNs.EffectsOptions
-  import typings.cypress.JQueryNs.EventStatic
-  import typings.cypress.JQueryNs.NameValuePair
-  import typings.cypress.JQueryNs.PlainObject
-  import typings.cypress.JQueryNs.Promise
-  import typings.cypress.JQueryNs.Thenable
-  import typings.cypress.JQueryNs.TypeOrArray
-  import typings.cypress.JQueryNs.jqXHR
-  import typings.cypress.MochaNs.Done
-  import typings.cypress.MochaNs.MochaGlobals
+  import typings.cypress.JQuery.AjaxSettings
+  import typings.cypress.JQuery.Callbacks
+  import typings.cypress.JQuery.Coordinates
+  import typings.cypress.JQuery.Deferred
+  import typings.cypress.JQuery.EffectsOptions
+  import typings.cypress.JQuery.EventStatic
+  import typings.cypress.JQuery.NameValuePair
+  import typings.cypress.JQuery.PlainObject
+  import typings.cypress.JQuery.Promise
+  import typings.cypress.JQuery.Thenable
+  import typings.cypress.JQuery.TypeOrArray
+  import typings.cypress.JQuery.jqXHR
+  import typings.cypress.Mocha.Done
+  import typings.cypress.Mocha.MochaGlobals
   import typings.std.Element
   import typings.std.Event
 
+  type JQuery[TElement] = JQuery_[TElement]
   // tslint:disable-next-line:no-empty-interface
   type JQueryAjaxSettings = AjaxSettings[js.Any]
   type JQueryAnimationOptions = EffectsOptions[Element]
@@ -65,12 +66,13 @@ package object cypress {
   type JQuerySupport = PlainObject[js.Any]
   // tslint:disable-next-line:no-empty-interface
   type JQueryXHR = jqXHR[js.Any]
+  type Mocha = Mocha_
   // #endregion Browser augmentations
   // #region Deprecations
   /** @deprecated use `Mocha.Done` instead. */
   type MochaDone = Done
   /** @deprecated use `Mocha.ReporterConstructor` instead. */
-  type ReporterConstructor = typings.cypress.MochaNs.ReporterConstructor
+  type ReporterConstructor = typings.cypress.Mocha.ReporterConstructor
   // Augments the DOM `Window` object when lib.dom.d.ts is loaded.
   // tslint:disable-next-line no-empty-interface
   type Window = MochaGlobals

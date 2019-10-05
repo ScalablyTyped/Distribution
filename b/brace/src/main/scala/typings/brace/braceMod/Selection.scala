@@ -209,16 +209,6 @@ trait Selection extends js.Object {
 
 @JSImport("brace", "Selection")
 @js.native
-class SelectionCls protected () extends Selection {
-  /**
-    * Creates a new `Selection` object.
-    * @param session The session to use
-    **/
-  def this(session: IEditSession) = this()
-}
-
-@JSImport("brace", "Selection")
-@js.native
 object Selection
   extends /**
   * Creates a new `Selection` object.

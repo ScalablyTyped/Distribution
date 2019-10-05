@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.declarativeWebRequestNs.RequestedEvent
+import typings.chrome.chrome.declarativeWebRequest.RequestedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

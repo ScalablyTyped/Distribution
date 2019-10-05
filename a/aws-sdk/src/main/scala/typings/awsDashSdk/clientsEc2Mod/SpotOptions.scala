@@ -40,18 +40,18 @@ object SpotOptions {
   def apply(
     AllocationStrategy: SpotAllocationStrategy = null,
     InstanceInterruptionBehavior: SpotInstanceInterruptionBehavior = null,
-    InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined,
+    InstancePoolsToUseCount: Int | scala.Double = null,
     MaxTotalPrice: String = null,
-    MinTargetCapacity: js.UndefOr[Integer] = js.undefined,
-    SingleAvailabilityZone: js.UndefOr[Boolean] = js.undefined,
-    SingleInstanceType: js.UndefOr[Boolean] = js.undefined
+    MinTargetCapacity: Int | scala.Double = null,
+    SingleAvailabilityZone: js.UndefOr[scala.Boolean] = js.undefined,
+    SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
   ): SpotOptions = {
     val __obj = js.Dynamic.literal()
     if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancePoolsToUseCount)) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount)
+    if (InstancePoolsToUseCount != null) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount.asInstanceOf[js.Any])
     if (MaxTotalPrice != null) __obj.updateDynamic("MaxTotalPrice")(MaxTotalPrice)
-    if (!js.isUndefined(MinTargetCapacity)) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity)
+    if (MinTargetCapacity != null) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity.asInstanceOf[js.Any])
     if (!js.isUndefined(SingleAvailabilityZone)) __obj.updateDynamic("SingleAvailabilityZone")(SingleAvailabilityZone)
     if (!js.isUndefined(SingleInstanceType)) __obj.updateDynamic("SingleInstanceType")(SingleInstanceType)
     __obj.asInstanceOf[SpotOptions]

@@ -7,7 +7,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.quadrillion
 import typings.atOracleOraclejet.atOracleOraclejetStrings.thousand
 import typings.atOracleOraclejet.atOracleOraclejetStrings.trillion
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.PieCenterContext
+import typings.atOracleOraclejet.ojchartMod.ojChart.PieCenterContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

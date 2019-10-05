@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ContactResult")
 @js.native
 class ContactResult protected ()
-  extends typings.playcanvas.pcNs.ContactResult {
-  def this(other: typings.playcanvas.pcNs.Entity, contacts: js.Array[typings.playcanvas.pcNs.ContactPoint]) = this()
+  extends typings.playcanvas.pc.ContactResult {
+  def this(other: typings.playcanvas.pc.Entity, contacts: js.Array[typings.playcanvas.pc.ContactPoint]) = this()
 }
 

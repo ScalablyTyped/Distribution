@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_Arguments
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.SpreadElementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.CallExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.CallExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

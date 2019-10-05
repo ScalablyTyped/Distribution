@@ -3,7 +3,8 @@ package typings.atHapiHapi.atHapiHapiMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atHapiCatbox.atHapiCatboxMod.ClientApi
 import typings.atHapiCatbox.atHapiCatboxMod.ClientOptions
-import typings.atHapiCatbox.atHapiCatboxMod.GenerateFunc
+import typings.atHapiCatbox.atHapiCatboxMod.GenerateFuncFlags
+import typings.atHapiCatbox.atHapiCatboxMod.Id
 import typings.atHapiCatbox.atHapiCatboxMod.PolicyOptions
 import typings.atHapiCatbox.atHapiCatboxNumbers.`false`
 import scala.scalajs.js
@@ -40,7 +41,7 @@ object ServerOptionsCache {
     engine: ClientApi[_] = null,
     expiresAt: String = null,
     expiresIn: Int | Double = null,
-    generateFunc: GenerateFunc[js.Any] = null,
+    generateFunc: (/* id */ Id, /* flags */ GenerateFuncFlags) => js.Promise[js.Any] = null,
     generateIgnoreWriteError: js.UndefOr[Boolean] = js.undefined,
     generateOnReadError: js.UndefOr[Boolean] = js.undefined,
     generateTimeout: Double | `false` = null,
@@ -58,7 +59,7 @@ object ServerOptionsCache {
     if (engine != null) __obj.updateDynamic("engine")(engine)
     if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt)
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (generateFunc != null) __obj.updateDynamic("generateFunc")(generateFunc)
+    if (generateFunc != null) __obj.updateDynamic("generateFunc")(js.Any.fromFunction2(generateFunc))
     if (!js.isUndefined(generateIgnoreWriteError)) __obj.updateDynamic("generateIgnoreWriteError")(generateIgnoreWriteError)
     if (!js.isUndefined(generateOnReadError)) __obj.updateDynamic("generateOnReadError")(generateOnReadError)
     if (generateTimeout != null) __obj.updateDynamic("generateTimeout")(generateTimeout.asInstanceOf[js.Any])

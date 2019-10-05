@@ -28,16 +28,16 @@ object NodeProps {
     size: Double,
     x: Double,
     y: Double,
-    onClick: VoidFunction = null,
-    onMouseEnter: VoidFunction = null,
-    onMouseLeave: VoidFunction = null,
-    onMouseMove: VoidFunction = null
+    onClick: () => Unit = null,
+    onMouseEnter: () => Unit = null,
+    onMouseLeave: () => Unit = null,
+    onMouseMove: () => Unit = null
   ): NodeProps = {
     val __obj = js.Dynamic.literal(blendMode = blendMode, color = color, node = node, size = size, x = x, y = y)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction0(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction0(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction0(onMouseMove))
     __obj.asInstanceOf[NodeProps]
   }
 }

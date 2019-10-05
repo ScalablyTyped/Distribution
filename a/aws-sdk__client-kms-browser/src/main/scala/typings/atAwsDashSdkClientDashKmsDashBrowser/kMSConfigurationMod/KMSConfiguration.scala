@@ -5,6 +5,8 @@ import typings.atAwsDashSdkTypes.buildCryptoMod.HashConstructor
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpEndpoint
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpHandler
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpOptions
+import typings.atAwsDashSdkTypes.buildMiddlewareMod.FinalizeHandler
+import typings.atAwsDashSdkTypes.buildMiddlewareMod.HandlerExecutionContext
 import typings.atAwsDashSdkTypes.buildMiddlewareMod.Terminalware
 import typings.atAwsDashSdkTypes.buildSignatureMod.RequestSigner
 import typings.atAwsDashSdkTypes.buildUnmarshallerMod.StreamCollector
@@ -13,8 +15,10 @@ import typings.atAwsDashSdkTypes.buildUtilMod.DelayDecider
 import typings.atAwsDashSdkTypes.buildUtilMod.Encoder
 import typings.atAwsDashSdkTypes.buildUtilMod.Provider
 import typings.atAwsDashSdkTypes.buildUtilMod.RetryDecider
+import typings.atAwsDashSdkTypes.buildUtilMod.SdkError
 import typings.atAwsDashSdkTypes.buildUtilMod.UrlParser
 import typings.std.Blob
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,46 +115,46 @@ object KMSConfiguration {
   def apply(
     credentials: Credentials | Provider[Credentials],
     region: String | Provider[String],
-    base64Decoder: Decoder = null,
-    base64Encoder: Encoder = null,
-    delayDecider: DelayDecider = null,
+    base64Decoder: /* input */ String => Uint8Array = null,
+    base64Encoder: /* input */ Uint8Array => String = null,
+    delayDecider: (/* delayBase */ Double, /* attempts */ Double) => Double = null,
     endpoint: String | HttpEndpoint | Provider[HttpEndpoint] = null,
     endpointProvider: js.Any = null,
-    handler: Terminalware[_, Blob] = null,
+    handler: /* context */ HandlerExecutionContext => FinalizeHandler[js.Object, _, Blob] = null,
     httpHandler: HttpHandler[Blob, HttpOptions] = null,
     maxRedirects: Int | Double = null,
     maxRetries: Int | Double = null,
     profile: String = null,
-    retryDecider: RetryDecider = null,
+    retryDecider: /* error */ SdkError => Boolean = null,
     sha256: HashConstructor = null,
     signer: RequestSigner = null,
     signingName: String = null,
     sslEnabled: js.UndefOr[Boolean] = js.undefined,
-    streamCollector: StreamCollector[Blob] = null,
-    urlParser: UrlParser = null,
-    utf8Decoder: Decoder = null,
-    utf8Encoder: Encoder = null
+    streamCollector: Blob => js.Promise[Uint8Array] = null,
+    urlParser: /* url */ String => HttpEndpoint = null,
+    utf8Decoder: /* input */ String => Uint8Array = null,
+    utf8Encoder: /* input */ Uint8Array => String = null
   ): KMSConfiguration = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-    if (base64Decoder != null) __obj.updateDynamic("base64Decoder")(base64Decoder)
-    if (base64Encoder != null) __obj.updateDynamic("base64Encoder")(base64Encoder)
-    if (delayDecider != null) __obj.updateDynamic("delayDecider")(delayDecider)
+    if (base64Decoder != null) __obj.updateDynamic("base64Decoder")(js.Any.fromFunction1(base64Decoder))
+    if (base64Encoder != null) __obj.updateDynamic("base64Encoder")(js.Any.fromFunction1(base64Encoder))
+    if (delayDecider != null) __obj.updateDynamic("delayDecider")(js.Any.fromFunction2(delayDecider))
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (endpointProvider != null) __obj.updateDynamic("endpointProvider")(endpointProvider)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
     if (httpHandler != null) __obj.updateDynamic("httpHandler")(httpHandler)
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (retryDecider != null) __obj.updateDynamic("retryDecider")(retryDecider)
+    if (retryDecider != null) __obj.updateDynamic("retryDecider")(js.Any.fromFunction1(retryDecider))
     if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
     if (signer != null) __obj.updateDynamic("signer")(signer)
     if (signingName != null) __obj.updateDynamic("signingName")(signingName)
     if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled)
-    if (streamCollector != null) __obj.updateDynamic("streamCollector")(streamCollector)
-    if (urlParser != null) __obj.updateDynamic("urlParser")(urlParser)
-    if (utf8Decoder != null) __obj.updateDynamic("utf8Decoder")(utf8Decoder)
-    if (utf8Encoder != null) __obj.updateDynamic("utf8Encoder")(utf8Encoder)
+    if (streamCollector != null) __obj.updateDynamic("streamCollector")(js.Any.fromFunction1(streamCollector))
+    if (urlParser != null) __obj.updateDynamic("urlParser")(js.Any.fromFunction1(urlParser))
+    if (utf8Decoder != null) __obj.updateDynamic("utf8Decoder")(js.Any.fromFunction1(utf8Decoder))
+    if (utf8Encoder != null) __obj.updateDynamic("utf8Encoder")(js.Any.fromFunction1(utf8Encoder))
     __obj.asInstanceOf[KMSConfiguration]
   }
 }

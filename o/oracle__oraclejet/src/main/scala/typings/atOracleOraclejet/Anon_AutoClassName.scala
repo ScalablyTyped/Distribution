@@ -3,9 +3,9 @@ package typings.atOracleOraclejet
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
 import typings.atOracleOraclejet.atOracleOraclejetStrings.disabled
 import typings.atOracleOraclejet.atOracleOraclejetStrings.enabled
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ColumnsRendererContext
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.FooterRendererContext
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.HeaderRendererContext
+import typings.atOracleOraclejet.ojtableMod.ojTable.ColumnsRendererContext
+import typings.atOracleOraclejet.ojtableMod.ojTable.FooterRendererContext
+import typings.atOracleOraclejet.ojtableMod.ojTable.HeaderRendererContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

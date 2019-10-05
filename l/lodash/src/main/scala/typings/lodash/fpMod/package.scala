@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fpMod {
+  import typings.lodash.Typeoflodash
   import typings.lodash.lodashMod.AssignCustomizer
   import typings.lodash.lodashMod.Cancelable
   import typings.lodash.lodashMod.CloneDeepWithCustomizer
@@ -742,7 +743,7 @@ package object fpMod {
   type LodashMinBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.UndefOr[T]]
   type LodashMultiply1x1 = js.Function1[/* multiplicand */ Double, Double]
   type LodashMultiply1x2 = js.Function1[/* multiplier */ Double, Double]
-  type LodashNoConflict = js.Function0[LoDashFp]
+  type LodashNoConflict = js.Function0[Typeoflodash]
   type LodashNoop = js.Function1[/* repeated */ js.Any, Unit]
   type LodashNow = js.Function0[Double]
   type LodashNth1x1 = js.Function1[/* array */ js.UndefOr[List[js.Any] | Null], js.UndefOr[js.Any]]

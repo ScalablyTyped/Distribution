@@ -40,3 +40,22 @@ object FunctionTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "functionTypeAnnotation")
+@js.native
+object functionTypeAnnotation extends js.Object {
+  def apply(): FunctionTypeAnnotation = js.native
+  def apply(typeParameters: TypeParameterDeclaration): FunctionTypeAnnotation = js.native
+  def apply(typeParameters: TypeParameterDeclaration, params: js.Array[FunctionTypeParam]): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam
+  ): FunctionTypeAnnotation = js.native
+  def apply(
+    typeParameters: TypeParameterDeclaration,
+    params: js.Array[FunctionTypeParam],
+    rest: FunctionTypeParam,
+    returnType: FlowTypeAnnotation
+  ): FunctionTypeAnnotation = js.native
+}
+

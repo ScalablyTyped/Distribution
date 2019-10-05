@@ -1,7 +1,7 @@
 package typings.easyDashXDashHeaders.streamMod
 
 import typings.easyDashXDashHeaders.Anon_End
-import typings.easyDashXDashHeaders.NodeJSNs.WritableStream
+import typings.easyDashXDashHeaders.NodeJS.WritableStream
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

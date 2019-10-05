@@ -1,9 +1,9 @@
 package typings.reactDashNativeDashTabDashView
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedValue
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedValueXY
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.CompositeAnimation
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.SpringAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedValue
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedValueXY
+import typings.reactDashNative.reactDashNativeMod.Animated.CompositeAnimation
+import typings.reactDashNative.reactDashNativeMod.Animated.SpringAnimationConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

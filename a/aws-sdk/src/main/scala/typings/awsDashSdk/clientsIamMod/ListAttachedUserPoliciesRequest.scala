@@ -28,12 +28,12 @@ object ListAttachedUserPoliciesRequest {
   def apply(
     UserName: userNameType,
     Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
+    MaxItems: Int | Double = null,
     PathPrefix: policyPathType = null
   ): ListAttachedUserPoliciesRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix)
     __obj.asInstanceOf[ListAttachedUserPoliciesRequest]
   }

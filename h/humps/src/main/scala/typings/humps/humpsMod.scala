@@ -1,6 +1,6 @@
 package typings.humps
 
-import typings.humps.humpsNs.OptionOrProcessor
+import typings.humps.humps.OptionOrProcessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

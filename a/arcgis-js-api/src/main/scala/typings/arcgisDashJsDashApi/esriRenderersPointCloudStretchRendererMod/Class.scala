@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersPointCloudStretchRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudStretchRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudStretchRendererProperties
+import typings.arcgisDashJsDashApi.__esri.PointCloudStretchRenderer
+import typings.arcgisDashJsDashApi.__esri.PointCloudStretchRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

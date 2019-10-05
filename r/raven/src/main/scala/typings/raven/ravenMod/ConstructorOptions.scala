@@ -1,7 +1,7 @@
 package typings.raven.ravenMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.raven.ravenMod.transportsNs.Transport
+import typings.raven.ravenMod.transports.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ object ConstructorOptions {
   def apply(
     autoBreadcrumbs: Boolean | StringDictionary[Boolean] = null,
     captureUnhandledRejections: js.UndefOr[Boolean] = js.undefined,
-    dataCallback: DataCallback = null,
+    dataCallback: /* data */ StringDictionary[js.Any] => js.Any = null,
     environment: String = null,
     extra: StringDictionary[js.Any] = null,
     logger: String = null,
@@ -41,14 +41,14 @@ object ConstructorOptions {
     release: String = null,
     sampleRate: Int | Double = null,
     sendTimeout: Int | Double = null,
-    shouldSendCallback: ShouldSendCallback = null,
+    shouldSendCallback: /* data */ StringDictionary[js.Any] => Boolean = null,
     tags: StringDictionary[String] = null,
     transport: Transport = null
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (autoBreadcrumbs != null) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
     if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections)
-    if (dataCallback != null) __obj.updateDynamic("dataCallback")(dataCallback)
+    if (dataCallback != null) __obj.updateDynamic("dataCallback")(js.Any.fromFunction1(dataCallback))
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (logger != null) __obj.updateDynamic("logger")(logger)
@@ -59,7 +59,7 @@ object ConstructorOptions {
     if (release != null) __obj.updateDynamic("release")(release)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
-    if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(shouldSendCallback)
+    if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(js.Any.fromFunction1(shouldSendCallback))
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (transport != null) __obj.updateDynamic("transport")(transport)
     __obj.asInstanceOf[ConstructorOptions]

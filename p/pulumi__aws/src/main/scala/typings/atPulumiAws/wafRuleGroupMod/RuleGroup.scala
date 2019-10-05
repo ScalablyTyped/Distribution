@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafRuleGroupMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.RuleGroupActivatedRule
+import typings.atPulumiAws.typesOutputMod.waf.RuleGroupActivatedRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

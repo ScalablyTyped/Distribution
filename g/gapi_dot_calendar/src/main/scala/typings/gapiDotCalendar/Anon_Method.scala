@@ -1,7 +1,7 @@
 package typings.gapiDotCalendar
 
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.ReminderMethod
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.integer
+import typings.gapiDotCalendar.gapi.client.calendar.ReminderMethod
+import typings.gapiDotCalendar.gapi.client.calendar.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

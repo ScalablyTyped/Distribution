@@ -21,7 +21,7 @@ trait ResetDeploymentsRequest extends js.Object {
 
 object ResetDeploymentsRequest {
   @scala.inline
-  def apply(GroupId: __string, AmznClientToken: __string = null, Force: js.UndefOr[__boolean] = js.undefined): ResetDeploymentsRequest = {
+  def apply(GroupId: __string, AmznClientToken: __string = null, Force: js.UndefOr[Boolean] = js.undefined): ResetDeploymentsRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId)
     if (AmznClientToken != null) __obj.updateDynamic("AmznClientToken")(AmznClientToken)
     if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force)

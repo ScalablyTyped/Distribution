@@ -1,5 +1,6 @@
 package typings.rotDashJs.rotDashJsMod
 
+import typings.rotDashJs.rotDashJsMod.Scheduler.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,5 +15,21 @@ class Scheduler () extends js.Object {
   def getTimeOf(item: js.Any): Double = js.native
   def next(): js.Any = js.native
   def remove(item: js.Any): js.Any = js.native
+}
+
+@JSImport("rot-js", "Scheduler")
+@js.native
+object Scheduler extends js.Object {
+  @js.native
+  class Action () extends Scheduler {
+    def setDuration(time: Double): Action = js.native
+  }
+  
+  @js.native
+  class Simple () extends Scheduler
+  
+  @js.native
+  class Speed () extends Scheduler
+  
 }
 

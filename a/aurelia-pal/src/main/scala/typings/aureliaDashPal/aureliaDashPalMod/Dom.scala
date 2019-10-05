@@ -1,5 +1,6 @@
 package typings.aureliaDashPal.aureliaDashPalMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.aureliaDashPal.Anon_Element
 import typings.aureliaDashPal.Anon_NodeList
 import typings.aureliaDashPal.Anon_SVGElement
@@ -199,4 +200,8 @@ trait Dom extends js.Object {
   def replaceNode(newNode: Node, node: Node): Unit = js.native
   def replaceNode(newNode: Node, node: Node, parentNode: Node): Unit = js.native
 }
+
+@JSImport("aurelia-pal", "DOM")
+@js.native
+object DOM extends TopLevel[Dom]
 

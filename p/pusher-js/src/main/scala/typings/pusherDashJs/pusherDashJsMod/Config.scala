@@ -1,5 +1,6 @@
 package typings.pusherDashJs.pusherDashJsMod
 
+import typings.pusherDashJs.Anon_AuthInfo
 import typings.pusherDashJs.pusherDashJsStrings.ajax
 import typings.pusherDashJs.pusherDashJsStrings.jsonp
 import scala.scalajs.js
@@ -88,7 +89,7 @@ object Config {
     auth: AuthConfig = null,
     authEndpoint: String = null,
     authTransport: ajax | jsonp = null,
-    authorizer: Authorizer = null,
+    authorizer: (/* channel */ Channel, /* options */ Config) => Anon_AuthInfo = null,
     cluster: String = null,
     disableStats: js.UndefOr[Boolean] = js.undefined,
     disabledTransports: js.Array[Transport] = null,
@@ -110,7 +111,7 @@ object Config {
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (authEndpoint != null) __obj.updateDynamic("authEndpoint")(authEndpoint)
     if (authTransport != null) __obj.updateDynamic("authTransport")(authTransport.asInstanceOf[js.Any])
-    if (authorizer != null) __obj.updateDynamic("authorizer")(authorizer)
+    if (authorizer != null) __obj.updateDynamic("authorizer")(js.Any.fromFunction2(authorizer))
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     if (!js.isUndefined(disableStats)) __obj.updateDynamic("disableStats")(disableStats)
     if (disabledTransports != null) __obj.updateDynamic("disabledTransports")(disabledTransports)

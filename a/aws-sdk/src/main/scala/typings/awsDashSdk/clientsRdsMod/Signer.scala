@@ -1,6 +1,6 @@
 package typings.awsDashSdk.clientsRdsMod
 
-import typings.awsDashSdk.libRdsSignerMod.SignerNs.SignerOptions
+import typings.awsDashSdk.libRdsSignerMod.Signer.SignerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

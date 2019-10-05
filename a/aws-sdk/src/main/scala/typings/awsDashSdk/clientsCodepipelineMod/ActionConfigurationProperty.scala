@@ -43,7 +43,7 @@ object ActionConfigurationProperty {
     required: Boolean,
     secret: Boolean,
     description: Description = null,
-    queryable: js.UndefOr[Boolean] = js.undefined,
+    queryable: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: ActionConfigurationPropertyType = null
   ): ActionConfigurationProperty = {
     val __obj = js.Dynamic.literal(key = key, name = name, required = required, secret = secret)

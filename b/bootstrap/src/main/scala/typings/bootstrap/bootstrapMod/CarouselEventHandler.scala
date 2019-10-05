@@ -2,7 +2,7 @@ package typings.bootstrap.bootstrapMod
 
 import typings.bootstrap.bootstrapStrings.left
 import typings.bootstrap.bootstrapStrings.right
-import typings.jquery.JQueryNs.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import typings.jquery._Event
 import typings.std.Element
 import typings.std.HTMLElement

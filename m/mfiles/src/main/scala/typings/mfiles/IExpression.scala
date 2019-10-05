@@ -1,16 +1,16 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInPropertyDef
-import typings.mfiles.MFilesNs.MFBuiltInValueList
-import typings.mfiles.MFilesNs.MFDataFunction
-import typings.mfiles.MFilesNs.MFDataType
-import typings.mfiles.MFilesNs.MFExpressionType
-import typings.mfiles.MFilesNs.MFFileValueType
-import typings.mfiles.MFilesNs.MFFullTextSearchFlags
-import typings.mfiles.MFilesNs.MFParentChildBehavior
-import typings.mfiles.MFilesNs.MFPermissionsExpressionType
-import typings.mfiles.MFilesNs.MFStatusType
-import typings.mfiles.MFilesNs.MFValueListItemPropertyDef
+import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import typings.mfiles.MFiles.MFBuiltInValueList
+import typings.mfiles.MFiles.MFDataFunction
+import typings.mfiles.MFiles.MFDataType
+import typings.mfiles.MFiles.MFExpressionType
+import typings.mfiles.MFiles.MFFileValueType
+import typings.mfiles.MFiles.MFFullTextSearchFlags
+import typings.mfiles.MFiles.MFParentChildBehavior
+import typings.mfiles.MFiles.MFPermissionsExpressionType
+import typings.mfiles.MFiles.MFStatusType
+import typings.mfiles.MFiles.MFValueListItemPropertyDef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

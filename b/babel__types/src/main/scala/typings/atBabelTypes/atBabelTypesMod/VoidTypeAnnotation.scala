@@ -37,3 +37,9 @@ object VoidTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "voidTypeAnnotation")
+@js.native
+object voidTypeAnnotation extends js.Object {
+  def apply(): VoidTypeAnnotation = js.native
+}
+

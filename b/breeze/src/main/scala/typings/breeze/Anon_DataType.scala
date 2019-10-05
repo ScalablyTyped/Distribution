@@ -1,6 +1,6 @@
 package typings.breeze
 
-import typings.breeze.breezeNs.DataType
+import typings.breeze.breeze.DataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

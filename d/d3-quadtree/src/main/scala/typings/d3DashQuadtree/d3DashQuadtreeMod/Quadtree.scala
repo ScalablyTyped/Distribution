@@ -147,3 +147,12 @@ trait Quadtree[T] extends js.Object {
   def y(y: js.Function1[/* d */ T, Double]): this.type = js.native
 }
 
+@JSImport("d3-quadtree", "quadtree")
+@js.native
+object quadtree extends js.Object {
+  def apply[T](): Quadtree[T] = js.native
+  def apply[T](data: js.Array[T]): Quadtree[T] = js.native
+  def apply[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree[T] = js.native
+  def apply[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree[T] = js.native
+}
+

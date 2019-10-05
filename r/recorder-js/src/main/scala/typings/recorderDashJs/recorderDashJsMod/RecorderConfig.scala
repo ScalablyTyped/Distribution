@@ -10,9 +10,9 @@ trait RecorderConfig extends js.Object {
 
 object RecorderConfig {
   @scala.inline
-  def apply(onAnalysed: OnAnalysedHandler = null): RecorderConfig = {
+  def apply(onAnalysed: (/* data */ js.Array[Double], /* lastNonZero */ Double) => Unit = null): RecorderConfig = {
     val __obj = js.Dynamic.literal()
-    if (onAnalysed != null) __obj.updateDynamic("onAnalysed")(onAnalysed)
+    if (onAnalysed != null) __obj.updateDynamic("onAnalysed")(js.Any.fromFunction2(onAnalysed))
     __obj.asInstanceOf[RecorderConfig]
   }
 }

@@ -21,7 +21,7 @@ trait BundleInstanceRequest extends js.Object {
 
 object BundleInstanceRequest {
   @scala.inline
-  def apply(InstanceId: String, Storage: Storage, DryRun: js.UndefOr[Boolean] = js.undefined): BundleInstanceRequest = {
+  def apply(InstanceId: String, Storage: Storage, DryRun: js.UndefOr[scala.Boolean] = js.undefined): BundleInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId, Storage = Storage)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[BundleInstanceRequest]

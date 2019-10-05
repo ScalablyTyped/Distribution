@@ -1,9 +1,9 @@
 package typings.ssDashUtils
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ssDashUtils.ssutilsNs.ApplyErrorsOptions
-import typings.ssDashUtils.ssutilsNs.HandleServerEventsOptions
-import typings.ssDashUtils.ssutilsNs.ResponseStatus
+import typings.ssDashUtils.ssutils.ApplyErrorsOptions
+import typings.ssDashUtils.ssutils.HandleServerEventsOptions
+import typings.ssDashUtils.ssutils.ResponseStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

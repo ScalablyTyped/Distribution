@@ -20,3 +20,14 @@ object Layer {
   }
 }
 
+@JSImport("@fortawesome/fontawesome-svg-core", "layer")
+@js.native
+object layer extends js.Object {
+  def apply(
+    assembler: js.Function1[
+      /* addLayerCallback */ js.Function1[/* layerToAdd */ IconOrText | js.Array[IconOrText], Unit], 
+      Unit
+    ]
+  ): Layer = js.native
+}
+

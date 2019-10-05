@@ -29,7 +29,7 @@ object AssociateDiscoveredResourceRequest {
     DiscoveredResource: DiscoveredResource,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): AssociateDiscoveredResourceRequest = {
     val __obj = js.Dynamic.literal(DiscoveredResource = DiscoveredResource, MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

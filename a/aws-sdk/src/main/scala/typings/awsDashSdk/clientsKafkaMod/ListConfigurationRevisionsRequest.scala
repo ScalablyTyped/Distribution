@@ -28,9 +28,9 @@ trait ListConfigurationRevisionsRequest extends js.Object {
 
 object ListConfigurationRevisionsRequest {
   @scala.inline
-  def apply(Arn: __string, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: __string = null): ListConfigurationRevisionsRequest = {
+  def apply(Arn: __string, MaxResults: Int | Double = null, NextToken: __string = null): ListConfigurationRevisionsRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListConfigurationRevisionsRequest]
   }

@@ -1,6 +1,7 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.atAngularCoreNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -209,35 +210,5 @@ trait Directive extends js.Object {
 
 @JSImport("@angular/core", "Directive")
 @js.native
-class DirectiveCls protected () extends Directive {
-  /**
-    * See the `Directive` decorator.
-    */
-  def this(obj: Directive) = this()
-}
-
-object Directive {
-  @scala.inline
-  def apply(
-    exportAs: String = null,
-    host: StringDictionary[String] = null,
-    inputs: js.Array[String] = null,
-    jit: `true` = null,
-    outputs: js.Array[String] = null,
-    providers: js.Array[Provider] = null,
-    queries: StringDictionary[js.Any] = null,
-    selector: String = null
-  ): Directive = {
-    val __obj = js.Dynamic.literal()
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (jit != null) __obj.updateDynamic("jit")(jit)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    __obj.asInstanceOf[Directive]
-  }
-}
+object Directive extends TopLevel[DirectiveDecorator]
 

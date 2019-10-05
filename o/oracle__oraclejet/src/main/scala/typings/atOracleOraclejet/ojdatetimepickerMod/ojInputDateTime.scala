@@ -1,13 +1,16 @@
 package typings.atOracleOraclejet.ojdatetimepickerMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_Cancel
 import typings.atOracleOraclejet.Anon_Focus
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.timePicker
 import typings.atOracleOraclejet.atOracleOraclejetStrings.timePickerChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateTimeNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateTimeNs.ojAnimateStart
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateTime.ojAnimateEnd
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateTime.ojAnimateStart
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,5 +46,12 @@ trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */] extends ojI
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: Anon_Cancel): Unit = js.native
   def showTimePicker(): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojdatetimepicker", "ojInputDateTime")
+@js.native
+object ojInputDateTime extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

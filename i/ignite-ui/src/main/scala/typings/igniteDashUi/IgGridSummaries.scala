@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -215,14 +216,14 @@ object IgGridSummaries {
     compactRenderingMode: js.Any = null,
     dialogButtonCancelText: String = null,
     dialogButtonOKText: String = null,
-    dropDownCancelClicked: DropDownCancelClickedEvent = null,
-    dropDownClosed: DropDownClosedEvent = null,
-    dropDownClosing: DropDownClosingEvent = null,
+    dropDownCancelClicked: (/* event */ Event, /* ui */ DropDownCancelClickedEventUIParam) => Unit = null,
+    dropDownClosed: (/* event */ Event, /* ui */ DropDownClosedEventUIParam) => Unit = null,
+    dropDownClosing: (/* event */ Event, /* ui */ DropDownClosingEventUIParam) => Unit = null,
     dropDownDialogAnimationDuration: Int | Double = null,
     dropDownHeight: Int | Double = null,
-    dropDownOKClicked: DropDownOKClickedEvent = null,
-    dropDownOpened: DropDownOpenedEvent = null,
-    dropDownOpening: DropDownOpeningEvent = null,
+    dropDownOKClicked: (/* event */ Event, /* ui */ DropDownOKClickedEventUIParam) => Unit = null,
+    dropDownOpened: (/* event */ Event, /* ui */ DropDownOpenedEventUIParam) => Unit = null,
+    dropDownOpening: (/* event */ Event, /* ui */ DropDownOpeningEventUIParam) => Unit = null,
     dropDownWidth: Int | Double = null,
     emptyCellText: String = null,
     featureChooserText: String = null,
@@ -235,13 +236,13 @@ object IgGridSummaries {
     resultTemplate: String = null,
     showDropDownButton: js.UndefOr[Boolean] = js.undefined,
     showSummariesButton: js.UndefOr[Boolean] = js.undefined,
-    summariesCalculated: SummariesCalculatedEvent = null,
-    summariesCalculating: SummariesCalculatingEvent = null,
+    summariesCalculated: (/* event */ Event, /* ui */ SummariesCalculatedEventUIParam) => Unit = null,
+    summariesCalculating: (/* event */ Event, /* ui */ SummariesCalculatingEventUIParam) => Unit = null,
     summariesHeaderButtonTooltip: String = null,
-    summariesMethodSelectionChanged: SummariesMethodSelectionChangedEvent = null,
+    summariesMethodSelectionChanged: (/* event */ Event, /* ui */ SummariesMethodSelectionChangedEventUIParam) => Unit = null,
     summariesResponseKey: String = null,
-    summariesToggled: SummariesToggledEvent = null,
-    summariesToggling: SummariesTogglingEvent = null,
+    summariesToggled: (/* event */ Event, /* ui */ SummariesToggledEventUIParam) => Unit = null,
+    summariesToggling: (/* event */ Event, /* ui */ SummariesTogglingEventUIParam) => Unit = null,
     summaryExecution: String = null,
     summaryExprUrlKey: String = null,
     `type`: String = null
@@ -254,14 +255,14 @@ object IgGridSummaries {
     if (compactRenderingMode != null) __obj.updateDynamic("compactRenderingMode")(compactRenderingMode)
     if (dialogButtonCancelText != null) __obj.updateDynamic("dialogButtonCancelText")(dialogButtonCancelText)
     if (dialogButtonOKText != null) __obj.updateDynamic("dialogButtonOKText")(dialogButtonOKText)
-    if (dropDownCancelClicked != null) __obj.updateDynamic("dropDownCancelClicked")(dropDownCancelClicked)
-    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
-    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
+    if (dropDownCancelClicked != null) __obj.updateDynamic("dropDownCancelClicked")(js.Any.fromFunction2(dropDownCancelClicked))
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(js.Any.fromFunction2(dropDownClosed))
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(js.Any.fromFunction2(dropDownClosing))
     if (dropDownDialogAnimationDuration != null) __obj.updateDynamic("dropDownDialogAnimationDuration")(dropDownDialogAnimationDuration.asInstanceOf[js.Any])
     if (dropDownHeight != null) __obj.updateDynamic("dropDownHeight")(dropDownHeight.asInstanceOf[js.Any])
-    if (dropDownOKClicked != null) __obj.updateDynamic("dropDownOKClicked")(dropDownOKClicked)
-    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
-    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (dropDownOKClicked != null) __obj.updateDynamic("dropDownOKClicked")(js.Any.fromFunction2(dropDownOKClicked))
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(js.Any.fromFunction2(dropDownOpened))
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(js.Any.fromFunction2(dropDownOpening))
     if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
     if (emptyCellText != null) __obj.updateDynamic("emptyCellText")(emptyCellText)
     if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
@@ -274,13 +275,13 @@ object IgGridSummaries {
     if (resultTemplate != null) __obj.updateDynamic("resultTemplate")(resultTemplate)
     if (!js.isUndefined(showDropDownButton)) __obj.updateDynamic("showDropDownButton")(showDropDownButton)
     if (!js.isUndefined(showSummariesButton)) __obj.updateDynamic("showSummariesButton")(showSummariesButton)
-    if (summariesCalculated != null) __obj.updateDynamic("summariesCalculated")(summariesCalculated)
-    if (summariesCalculating != null) __obj.updateDynamic("summariesCalculating")(summariesCalculating)
+    if (summariesCalculated != null) __obj.updateDynamic("summariesCalculated")(js.Any.fromFunction2(summariesCalculated))
+    if (summariesCalculating != null) __obj.updateDynamic("summariesCalculating")(js.Any.fromFunction2(summariesCalculating))
     if (summariesHeaderButtonTooltip != null) __obj.updateDynamic("summariesHeaderButtonTooltip")(summariesHeaderButtonTooltip)
-    if (summariesMethodSelectionChanged != null) __obj.updateDynamic("summariesMethodSelectionChanged")(summariesMethodSelectionChanged)
+    if (summariesMethodSelectionChanged != null) __obj.updateDynamic("summariesMethodSelectionChanged")(js.Any.fromFunction2(summariesMethodSelectionChanged))
     if (summariesResponseKey != null) __obj.updateDynamic("summariesResponseKey")(summariesResponseKey)
-    if (summariesToggled != null) __obj.updateDynamic("summariesToggled")(summariesToggled)
-    if (summariesToggling != null) __obj.updateDynamic("summariesToggling")(summariesToggling)
+    if (summariesToggled != null) __obj.updateDynamic("summariesToggled")(js.Any.fromFunction2(summariesToggled))
+    if (summariesToggling != null) __obj.updateDynamic("summariesToggling")(js.Any.fromFunction2(summariesToggling))
     if (summaryExecution != null) __obj.updateDynamic("summaryExecution")(summaryExecution)
     if (summaryExprUrlKey != null) __obj.updateDynamic("summaryExprUrlKey")(summaryExprUrlKey)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

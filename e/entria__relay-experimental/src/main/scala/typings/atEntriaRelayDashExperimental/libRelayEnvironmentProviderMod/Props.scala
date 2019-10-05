@@ -13,9 +13,9 @@ trait Props extends js.Object {
 
 object Props {
   @scala.inline
-  def apply(children: ReactNode, environment: Environment): Props = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], environment = environment)
-  
+  def apply(environment: Environment, children: ReactNode = null): Props = {
+    val __obj = js.Dynamic.literal(environment = environment)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

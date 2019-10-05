@@ -1,6 +1,6 @@
 package typings.scrollDashIntoDashView
 
-import typings.scrollDashIntoDashView.underscoreUnderscoreScrollIntoViewNs.callbackParameterType
+import typings.scrollDashIntoDashView.__ScrollIntoView.callbackParameterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

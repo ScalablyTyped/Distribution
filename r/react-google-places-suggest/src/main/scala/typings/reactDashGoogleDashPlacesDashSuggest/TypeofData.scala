@@ -2,53 +2,53 @@ package typings.reactDashGoogleDashPlacesDashSuggest
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.googlemaps.googleNs.mapsNs.DataNs.Feature
-import typings.googlemaps.googleNs.mapsNs.DataNs.Geometry
-import typings.googlemaps.googleNs.mapsNs.DataNs.GeometryCollection
-import typings.googlemaps.googleNs.mapsNs.DataNs.LineString
-import typings.googlemaps.googleNs.mapsNs.DataNs.LinearRing
-import typings.googlemaps.googleNs.mapsNs.DataNs.MultiLineString
-import typings.googlemaps.googleNs.mapsNs.DataNs.MultiPoint
-import typings.googlemaps.googleNs.mapsNs.DataNs.MultiPolygon
-import typings.googlemaps.googleNs.mapsNs.DataNs.Point
-import typings.googlemaps.googleNs.mapsNs.DataNs.Polygon
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
+import typings.googlemaps.google.maps.Data.Feature
+import typings.googlemaps.google.maps.Data.Geometry
+import typings.googlemaps.google.maps.Data.GeometryCollection
+import typings.googlemaps.google.maps.Data.LineString
+import typings.googlemaps.google.maps.Data.LinearRing
+import typings.googlemaps.google.maps.Data.MultiLineString
+import typings.googlemaps.google.maps.Data.MultiPoint
+import typings.googlemaps.google.maps.Data.MultiPolygon
+import typings.googlemaps.google.maps.Data.Point
+import typings.googlemaps.google.maps.Data.Polygon
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofData extends js.Object {
-  var Feature: Instantiable0[typings.googlemaps.googleNs.mapsNs.DataNs.Feature]
-  var Geometry: Instantiable0[typings.googlemaps.googleNs.mapsNs.DataNs.Geometry]
+  var Feature: Instantiable0[typings.googlemaps.google.maps.Data.Feature]
+  var Geometry: Instantiable0[typings.googlemaps.google.maps.Data.Geometry]
   var GeometryCollection: Instantiable1[
     /* elements */ js.Array[(js.Array[Geometry | LatLng]) | LatLngLiteral], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.GeometryCollection
+    typings.googlemaps.google.maps.Data.GeometryCollection
   ]
   var LineString: Instantiable1[
     /* elements */ js.Array[LatLng | LatLngLiteral], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.LineString
+    typings.googlemaps.google.maps.Data.LineString
   ]
   var LinearRing: Instantiable1[
     /* elements */ js.Array[LatLng | LatLngLiteral], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.LinearRing
+    typings.googlemaps.google.maps.Data.LinearRing
   ]
   var MultiLineString: Instantiable1[
     /* elements */ js.Array[LineString | (js.Array[LatLng | LatLngLiteral])], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.MultiLineString
+    typings.googlemaps.google.maps.Data.MultiLineString
   ]
   var MultiPoint: Instantiable1[
     /* elements */ js.Array[LatLng | LatLngLiteral], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.MultiPoint
+    typings.googlemaps.google.maps.Data.MultiPoint
   ]
   var MultiPolygon: Instantiable1[
     /* elements */ js.Array[Polygon | (js.Array[LinearRing | (js.Array[LatLng | LatLngLiteral])])], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.MultiPolygon
+    typings.googlemaps.google.maps.Data.MultiPolygon
   ]
-  var Point: Instantiable1[/* latLng */ LatLng, typings.googlemaps.googleNs.mapsNs.DataNs.Point]
+  var Point: Instantiable1[/* latLng */ LatLng, typings.googlemaps.google.maps.Data.Point]
   var Polygon: Instantiable1[
     /* elements */ js.Array[LinearRing | (js.Array[LatLng | LatLngLiteral])], 
-    typings.googlemaps.googleNs.mapsNs.DataNs.Polygon
+    typings.googlemaps.google.maps.Data.Polygon
   ]
 }
 

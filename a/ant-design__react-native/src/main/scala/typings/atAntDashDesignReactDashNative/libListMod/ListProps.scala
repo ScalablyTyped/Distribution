@@ -4,7 +4,7 @@ import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumb
 import typings.atAntDashDesignReactDashNative.libListPropsTypeMod.ListPropsType
 import typings.atAntDashDesignReactDashNative.libListStyleMod.ListStyle
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactType
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle

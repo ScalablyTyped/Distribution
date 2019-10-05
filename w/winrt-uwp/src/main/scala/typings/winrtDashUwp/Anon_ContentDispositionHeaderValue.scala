@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentDispositionHeaderValue
+import typings.winrtDashUwp.Windows.Web.Http.Headers.HttpContentDispositionHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

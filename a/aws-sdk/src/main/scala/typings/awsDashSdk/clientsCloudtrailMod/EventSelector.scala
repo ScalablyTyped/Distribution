@@ -23,7 +23,7 @@ object EventSelector {
   @scala.inline
   def apply(
     DataResources: DataResources = null,
-    IncludeManagementEvents: js.UndefOr[Boolean] = js.undefined,
+    IncludeManagementEvents: js.UndefOr[scala.Boolean] = js.undefined,
     ReadWriteType: ReadWriteType = null
   ): EventSelector = {
     val __obj = js.Dynamic.literal()

@@ -1,9 +1,11 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
+import typings.std.Error
 import typings.vscode.vscodeMod.OutputChannel
 import typings.vscode.vscodeMod.WorkspaceFolder
 import typings.vscodeDashLanguageclient.Anon_Code2Protocol
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentSelector
+import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +36,7 @@ object LanguageClientOptions {
     diagnosticCollectionName: String = null,
     documentSelector: DocumentSelector | js.Array[String] = null,
     errorHandler: ErrorHandler = null,
-    initializationFailedHandler: InitializationFailedHandler = null,
+    initializationFailedHandler: /* error */ typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.ResponseError[InitializeError] | Error | js.Any => Boolean = null,
     initializationOptions: js.Any | js.Function0[_] = null,
     middleware: Middleware = null,
     outputChannel: OutputChannel = null,
@@ -49,7 +51,7 @@ object LanguageClientOptions {
     if (diagnosticCollectionName != null) __obj.updateDynamic("diagnosticCollectionName")(diagnosticCollectionName)
     if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
-    if (initializationFailedHandler != null) __obj.updateDynamic("initializationFailedHandler")(initializationFailedHandler)
+    if (initializationFailedHandler != null) __obj.updateDynamic("initializationFailedHandler")(js.Any.fromFunction1(initializationFailedHandler))
     if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(middleware)
     if (outputChannel != null) __obj.updateDynamic("outputChannel")(outputChannel)

@@ -24,19 +24,28 @@ trait IFacepileStyles extends js.Object {
 object IFacepileStyles {
   @scala.inline
   def apply(
-    addButton: IStyle,
-    descriptiveOverflowButton: IStyle,
-    itemButton: IStyle,
-    itemContainer: IStyle,
-    member: IStyle,
-    members: IStyle,
-    overflowButton: IStyle,
-    overflowInitialsIcon: IStyle,
-    root: IStyle,
-    screenReaderOnly: IStyle
+    addButton: IStyle = null,
+    descriptiveOverflowButton: IStyle = null,
+    itemButton: IStyle = null,
+    itemContainer: IStyle = null,
+    member: IStyle = null,
+    members: IStyle = null,
+    overflowButton: IStyle = null,
+    overflowInitialsIcon: IStyle = null,
+    root: IStyle = null,
+    screenReaderOnly: IStyle = null
   ): IFacepileStyles = {
-    val __obj = js.Dynamic.literal(addButton = addButton.asInstanceOf[js.Any], descriptiveOverflowButton = descriptiveOverflowButton.asInstanceOf[js.Any], itemButton = itemButton.asInstanceOf[js.Any], itemContainer = itemContainer.asInstanceOf[js.Any], member = member.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], overflowButton = overflowButton.asInstanceOf[js.Any], overflowInitialsIcon = overflowInitialsIcon.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], screenReaderOnly = screenReaderOnly.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (addButton != null) __obj.updateDynamic("addButton")(addButton.asInstanceOf[js.Any])
+    if (descriptiveOverflowButton != null) __obj.updateDynamic("descriptiveOverflowButton")(descriptiveOverflowButton.asInstanceOf[js.Any])
+    if (itemButton != null) __obj.updateDynamic("itemButton")(itemButton.asInstanceOf[js.Any])
+    if (itemContainer != null) __obj.updateDynamic("itemContainer")(itemContainer.asInstanceOf[js.Any])
+    if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (overflowButton != null) __obj.updateDynamic("overflowButton")(overflowButton.asInstanceOf[js.Any])
+    if (overflowInitialsIcon != null) __obj.updateDynamic("overflowInitialsIcon")(overflowInitialsIcon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (screenReaderOnly != null) __obj.updateDynamic("screenReaderOnly")(screenReaderOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFacepileStyles]
   }
 }

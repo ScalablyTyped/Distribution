@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "File")
 @js.native
 class File protected ()
-  extends typings.parse.ParseNs.File {
+  extends typings.parse.Parse.File {
   def this(name: String, data: js.Any) = this()
   def this(name: String, data: js.Any, `type`: String) = this()
 }

@@ -1,6 +1,6 @@
 package typings.angularDashRoute
 
-import typings.angularDashRoute.angularDashRouteMod.angularMod.routeNs.IRouteParamsService
+import typings.angularDashRoute.angularDashRouteMod.angularMod.route.IRouteParamsService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

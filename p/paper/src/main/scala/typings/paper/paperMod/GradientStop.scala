@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
   * @param rampPoint [optional] - the position of the stop on the gradient ramp as a value between 0 and 1, default: 0
   */
 class GradientStop ()
-  extends typings.paper.paperNs.GradientStop {
+  extends typings.paper.paper.GradientStop {
   def this(array: js.Tuple2[String, Double]) = this()
   def this(color: String) = this()
-  def this(color: typings.paper.paperNs.Color) = this()
+  def this(color: typings.paper.paper.Color) = this()
   def this(`object`: js.Any) = this()
   def this(color: String, rampPoint: Double) = this()
-  def this(color: typings.paper.paperNs.Color, rampPoint: Double) = this()
+  def this(color: typings.paper.paper.Color, rampPoint: Double) = this()
 }
 

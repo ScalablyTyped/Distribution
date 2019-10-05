@@ -37,3 +37,9 @@ object TSExportAssignment {
   }
 }
 
+@JSImport("@babel/types", "tsExportAssignment")
+@js.native
+object tsExportAssignment extends js.Object {
+  def apply(expression: Expression): TSExportAssignment = js.native
+}
+

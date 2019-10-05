@@ -12,6 +12,6 @@ trait HandlebarsTemplatable extends js.Object {
   @JSName("template")
   var template_Original: HandlebarsTemplateDelegate[_] = js.native
   def template(context: js.Any): String = js.native
-  def template(context: js.Any, options: typings.handlebars.HandlebarsNs.RuntimeOptions): String = js.native
+  def template(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native
 }
 

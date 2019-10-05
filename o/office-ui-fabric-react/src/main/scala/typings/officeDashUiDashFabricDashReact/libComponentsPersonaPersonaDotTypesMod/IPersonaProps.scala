@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTy
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,20 +42,20 @@ object IPersonaProps {
     IPersonaSharedProps: IPersonaSharedProps = null,
     className: String = null,
     componentRef: IRefObject[IPersona] = null,
-    onRenderOptionalText: IRenderFunction[IPersonaProps] = null,
-    onRenderPrimaryText: IRenderFunction[IPersonaProps] = null,
-    onRenderSecondaryText: IRenderFunction[IPersonaProps] = null,
-    onRenderTertiaryText: IRenderFunction[IPersonaProps] = null,
+    onRenderOptionalText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
+    onRenderPrimaryText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
+    onRenderSecondaryText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
+    onRenderTertiaryText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
     styles: IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles] = null
   ): IPersonaProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IPersonaSharedProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (onRenderOptionalText != null) __obj.updateDynamic("onRenderOptionalText")(onRenderOptionalText)
-    if (onRenderPrimaryText != null) __obj.updateDynamic("onRenderPrimaryText")(onRenderPrimaryText)
-    if (onRenderSecondaryText != null) __obj.updateDynamic("onRenderSecondaryText")(onRenderSecondaryText)
-    if (onRenderTertiaryText != null) __obj.updateDynamic("onRenderTertiaryText")(onRenderTertiaryText)
+    if (onRenderOptionalText != null) __obj.updateDynamic("onRenderOptionalText")(js.Any.fromFunction2(onRenderOptionalText))
+    if (onRenderPrimaryText != null) __obj.updateDynamic("onRenderPrimaryText")(js.Any.fromFunction2(onRenderPrimaryText))
+    if (onRenderSecondaryText != null) __obj.updateDynamic("onRenderSecondaryText")(js.Any.fromFunction2(onRenderSecondaryText))
+    if (onRenderTertiaryText != null) __obj.updateDynamic("onRenderTertiaryText")(js.Any.fromFunction2(onRenderTertiaryText))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaProps]
   }

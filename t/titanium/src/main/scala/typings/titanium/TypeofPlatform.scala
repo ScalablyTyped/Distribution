@@ -1,8 +1,8 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.PlatformNs.DisplayCaps
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Platform.DisplayCaps
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait TypeofPlatform extends js.Object {
   /**
   		 * The Android-specific Platform module, used to access the device's platform-related functionality.
   		 */
-  val AndroidNs: TypeofAndroidAPILEVEL = js.native
+  val Android: TypeofAndroidAPILEVEL = js.native
   /**
   		 * Constant to indicate that the system is plugged in and currently being charged.
   		 */

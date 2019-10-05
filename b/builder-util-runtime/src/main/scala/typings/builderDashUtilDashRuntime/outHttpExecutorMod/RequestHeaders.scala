@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object RequestHeaders {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[String] = null): RequestHeaders = {
+  def apply(StringDictionary: StringDictionary[js.UndefOr[Double | String | js.Array[String]]] = null): RequestHeaders = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RequestHeaders]

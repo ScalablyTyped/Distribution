@@ -25,9 +25,5 @@ trait NamedNodeMap extends /* index */ NumberDictionary[Attr] {
 
 @JSGlobal("NamedNodeMap")
 @js.native
-class NamedNodeMapCls () extends NamedNodeMap
-
-@JSGlobal("NamedNodeMap")
-@js.native
 object NamedNodeMap extends Instantiable0[NamedNodeMap]
 

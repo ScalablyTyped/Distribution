@@ -1,9 +1,9 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Vary
-import typings.atHapiHapi.atHapiHapiMod.JsonNs.StringifyReplacer
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.ReturnValue
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Json.StringifyReplacer
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.ReturnValue
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
 import typings.atHapiHapi.atHapiHapiStrings.ascii
 import typings.atHapiHapi.atHapiHapiStrings.base64
 import typings.atHapiHapi.atHapiHapiStrings.binary

@@ -1,17 +1,15 @@
 package typings.reactDashApollo
 
-import typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps
-import typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashApolloProps {
   @scala.inline
-  def reactDashApolloModApolloConsumerProps: ApolloConsumerProps.type = typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps
-  type reactDashApolloModApolloConsumerProps = ApolloConsumerProps
+  def ApolloConsumerProps: typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps.type = typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps
+  type ApolloConsumerProps = typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps
   @scala.inline
-  def reactDashApolloModApolloProviderProps: ApolloProviderProps.type = typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps
-  type reactDashApolloModApolloProviderProps[TCache] = ApolloProviderProps[TCache]
+  def ApolloProviderProps: typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps.type = typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps
+  type ApolloProviderProps[TCache] = typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps[TCache]
 }
 

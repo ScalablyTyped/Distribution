@@ -55,26 +55,26 @@ object Deployment {
   @scala.inline
   def apply(
     createdAt: Timestamp = null,
-    desiredCount: js.UndefOr[Integer] = js.undefined,
+    desiredCount: Int | scala.Double = null,
     id: String = null,
     launchType: LaunchType = null,
     networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
+    pendingCount: Int | scala.Double = null,
     platformVersion: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
+    runningCount: Int | scala.Double = null,
     status: String = null,
     taskDefinition: String = null,
     updatedAt: Timestamp = null
   ): Deployment = {
     val __obj = js.Dynamic.literal()
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount)
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount)
+    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount)
+    if (runningCount != null) __obj.updateDynamic("runningCount")(runningCount.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition)
     if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt)

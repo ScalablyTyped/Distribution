@@ -1,6 +1,6 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.StylesNs.zIndex
+import typings.materialDashUi.__MaterialUI.Styles.zIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object stylesZIndexMod extends js.Object {
   var default: zIndex = js.native
-  var zIndex: typings.materialDashUi.underscoreUnderscoreMaterialUINs.StylesNs.zIndex = js.native
+  var zIndex: typings.materialDashUi.__MaterialUI.Styles.zIndex = js.native
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "boolify-string"
-version := "0.0-unknown-dt-20190322Z-f7a396"
-scalaVersion := "2.12.9"
+version := "0.0-unknown-dt-20190322Z-e10c0c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

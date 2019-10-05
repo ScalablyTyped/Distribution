@@ -22,12 +22,12 @@ trait Scte35SpliceInsert extends js.Object {
 object Scte35SpliceInsert {
   @scala.inline
   def apply(
-    AdAvailOffset: js.UndefOr[__integerMinNegative1000Max1000] = js.undefined,
+    AdAvailOffset: Int | Double = null,
     NoRegionalBlackoutFlag: Scte35SpliceInsertNoRegionalBlackoutBehavior = null,
     WebDeliveryAllowedFlag: Scte35SpliceInsertWebDeliveryAllowedBehavior = null
   ): Scte35SpliceInsert = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdAvailOffset)) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset)
+    if (AdAvailOffset != null) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset.asInstanceOf[js.Any])
     if (NoRegionalBlackoutFlag != null) __obj.updateDynamic("NoRegionalBlackoutFlag")(NoRegionalBlackoutFlag.asInstanceOf[js.Any])
     if (WebDeliveryAllowedFlag != null) __obj.updateDynamic("WebDeliveryAllowedFlag")(WebDeliveryAllowedFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SpliceInsert]

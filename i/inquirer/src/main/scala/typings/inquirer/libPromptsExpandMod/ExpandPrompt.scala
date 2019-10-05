@@ -1,7 +1,7 @@
 package typings.inquirer.libPromptsExpandMod
 
-import typings.inquirer.inquirerMod.promptsNs.FailedPromptStateData
-import typings.inquirer.inquirerMod.promptsNs.SuccessfulPromptStateData
+import typings.inquirer.inquirerMod.prompts.FailedPromptStateData
+import typings.inquirer.inquirerMod.prompts.SuccessfulPromptStateData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

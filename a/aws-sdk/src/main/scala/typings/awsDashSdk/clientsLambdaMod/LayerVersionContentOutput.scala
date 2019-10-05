@@ -21,10 +21,10 @@ trait LayerVersionContentOutput extends js.Object {
 
 object LayerVersionContentOutput {
   @scala.inline
-  def apply(CodeSha256: String = null, CodeSize: js.UndefOr[Long] = js.undefined, Location: String = null): LayerVersionContentOutput = {
+  def apply(CodeSha256: String = null, CodeSize: Int | Double = null, Location: String = null): LayerVersionContentOutput = {
     val __obj = js.Dynamic.literal()
     if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256)
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize)
+    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
     if (Location != null) __obj.updateDynamic("Location")(Location)
     __obj.asInstanceOf[LayerVersionContentOutput]
   }

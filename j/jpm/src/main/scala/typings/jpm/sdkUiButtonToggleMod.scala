@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/button/toggle", JSImport.Namespace)
 @js.native
 object sdkUiButtonToggleMod extends js.Object {
-  def ToggleButton(options: Anon_BadgeBadgeColor): typings.jpm.FFAddonSDKNs.ToggleButton = js.native
+  def ToggleButton(options: Anon_BadgeBadgeColor): typings.jpm.FFAddonSDK.ToggleButton = js.native
 }
 

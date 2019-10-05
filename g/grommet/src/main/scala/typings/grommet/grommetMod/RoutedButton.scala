@@ -1,8 +1,10 @@
 package typings.grommet.grommetMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsButtonMod.ButtonProps
 import typings.grommet.componentsRoutedButtonMod.RoutedButtonProps
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,4 +17,8 @@ class RoutedButton protected ()
   def this(props: RoutedButtonProps with ButtonProps) = this()
   def this(props: RoutedButtonProps with ButtonProps, context: js.Any) = this()
 }
+
+@JSImport("grommet", "RoutedButton")
+@js.native
+object RoutedButton extends TopLevel[ComponentClass[RoutedButtonProps with ButtonProps, ComponentState]]
 

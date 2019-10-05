@@ -31,14 +31,14 @@ object Face {
   @scala.inline
   def apply(
     BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
+    Confidence: Int | Double = null,
     ExternalImageId: ExternalImageId = null,
     FaceId: FaceId = null,
     ImageId: ImageId = null
   ): Face = {
     val __obj = js.Dynamic.literal()
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (ExternalImageId != null) __obj.updateDynamic("ExternalImageId")(ExternalImageId)
     if (FaceId != null) __obj.updateDynamic("FaceId")(FaceId)
     if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId)

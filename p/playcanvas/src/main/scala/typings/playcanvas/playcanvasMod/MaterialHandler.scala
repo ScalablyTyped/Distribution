@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "MaterialHandler")
 @js.native
 class MaterialHandler protected ()
-  extends typings.playcanvas.pcNs.MaterialHandler {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.MaterialHandler {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

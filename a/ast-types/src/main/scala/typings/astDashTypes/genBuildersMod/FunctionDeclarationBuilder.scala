@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_Async
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.FunctionDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.FunctionDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

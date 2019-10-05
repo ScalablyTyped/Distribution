@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TryStatement")
 @js.native
 class TryStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TryStatement {
+  extends typings.typescriptDashServices.TypeScript.TryStatement {
   def this(
-    block: typings.typescriptDashServices.TypeScriptNs.Block,
-    catchClause: typings.typescriptDashServices.TypeScriptNs.CatchClause,
-    finallyClause: typings.typescriptDashServices.TypeScriptNs.FinallyClause
+    block: typings.typescriptDashServices.TypeScript.Block,
+    catchClause: typings.typescriptDashServices.TypeScript.CatchClause,
+    finallyClause: typings.typescriptDashServices.TypeScript.FinallyClause
   ) = this()
 }
 

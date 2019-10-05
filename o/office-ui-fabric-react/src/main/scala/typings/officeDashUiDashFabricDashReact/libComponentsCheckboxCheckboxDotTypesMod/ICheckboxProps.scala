@@ -10,6 +10,7 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactSt
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.start
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.FormEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -134,7 +135,7 @@ object ICheckboxProps {
     keytipProps: IKeytipProps = null,
     label: String = null,
     onChange: (/* ev */ js.UndefOr[FormEvent[HTMLElement | HTMLInputElement]], /* checked */ js.UndefOr[Boolean]) => Unit = null,
-    onRenderLabel: IRenderFunction[ICheckboxProps] = null,
+    onRenderLabel: (/* props */ js.UndefOr[ICheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ICheckboxProps], Element | Null]]) => Element | Null = null,
     styles: IStyleFunctionOrObject[ICheckboxStyleProps, ICheckboxStyles] = null,
     theme: ITheme = null
   ): ICheckboxProps = {
@@ -158,7 +159,7 @@ object ICheckboxProps {
     if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
     if (label != null) __obj.updateDynamic("label")(label)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(onRenderLabel)
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[ICheckboxProps]

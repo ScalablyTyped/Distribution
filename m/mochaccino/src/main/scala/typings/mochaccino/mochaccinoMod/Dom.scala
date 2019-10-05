@@ -1,5 +1,6 @@
 package typings.mochaccino.mochaccinoMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mochaccino.mochaccinoStrings.document
 import typings.mochaccino.mochaccinoStrings.navigator
 import typings.mochaccino.mochaccinoStrings.window
@@ -27,4 +28,8 @@ object Dom {
     __obj.asInstanceOf[Dom]
   }
 }
+
+@JSImport("mochaccino", "dom")
+@js.native
+object dom extends TopLevel[Dom]
 

@@ -10,6 +10,7 @@ import typings.cesium.Anon_HeadersPreserveQueryParameters
 import typings.cesium.Anon_HeadersProxy
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import typings.std.Error
 import typings.std.Request
 import typings.std.XMLDocument
 import scala.scalajs.js
@@ -100,5 +101,6 @@ object Resource extends js.Object {
   def post(options: Anon_DataHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def put(): js.UndefOr[js.Promise[_]] = js.native
   def put(options: Anon_DataHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  type RetryCallback = js.Function2[/* resource */ Resource, /* error */ Error, Unit]
 }
 

@@ -1,6 +1,6 @@
 package typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod
 
-import typings.apolloDashEngineDashReportingDashProtobuf.apolloDashEngineDashReportingDashProtobufMod.TraceNs.QueryPlanNode
+import typings.apolloDashEngineDashReportingDashProtobuf.apolloDashEngineDashReportingDashProtobufMod.Trace.QueryPlanNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -72,11 +72,11 @@ object ReservedInstancesOffering {
   def apply(
     AvailabilityZone: String = null,
     CurrencyCode: CurrencyCodeValues = null,
-    Duration: js.UndefOr[Long] = js.undefined,
-    FixedPrice: js.UndefOr[Float] = js.undefined,
+    Duration: Int | scala.Double = null,
+    FixedPrice: Int | scala.Double = null,
     InstanceTenancy: Tenancy = null,
     InstanceType: InstanceType = null,
-    Marketplace: js.UndefOr[Boolean] = js.undefined,
+    Marketplace: js.UndefOr[scala.Boolean] = js.undefined,
     OfferingClass: OfferingClassType = null,
     OfferingType: OfferingTypeValues = null,
     PricingDetails: PricingDetailsList = null,
@@ -84,13 +84,13 @@ object ReservedInstancesOffering {
     RecurringCharges: RecurringChargesList = null,
     ReservedInstancesOfferingId: String = null,
     Scope: scope = null,
-    UsagePrice: js.UndefOr[Float] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedInstancesOffering = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (!js.isUndefined(Marketplace)) __obj.updateDynamic("Marketplace")(Marketplace)
@@ -101,7 +101,7 @@ object ReservedInstancesOffering {
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges)
     if (ReservedInstancesOfferingId != null) __obj.updateDynamic("ReservedInstancesOfferingId")(ReservedInstancesOfferingId)
     if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedInstancesOffering]
   }
 }

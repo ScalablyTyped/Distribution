@@ -93,13 +93,6 @@ trait MediaStream extends EventTarget {
 
 @JSGlobal("MediaStream")
 @js.native
-class MediaStreamCls () extends MediaStream {
-  def this(stream: MediaStream) = this()
-  def this(tracks: js.Array[MediaStreamTrack]) = this()
-}
-
-@JSGlobal("MediaStream")
-@js.native
 object MediaStream
   extends Instantiable0[MediaStream]
      with Instantiable1[

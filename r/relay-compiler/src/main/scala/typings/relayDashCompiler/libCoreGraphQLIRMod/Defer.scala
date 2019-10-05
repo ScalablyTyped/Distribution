@@ -24,12 +24,13 @@ object Defer {
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Defer,
     label: String,
     loc: Location,
-    metadata: Metadata,
     selections: js.Array[Selection],
-    `if`: ArgumentValue = null
+    `if`: ArgumentValue = null,
+    metadata: Metadata = null
   ): Defer = {
-    val __obj = js.Dynamic.literal(kind = kind, label = label, loc = loc, metadata = metadata.asInstanceOf[js.Any], selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind, label = label, loc = loc, selections = selections)
     if (`if` != null) __obj.updateDynamic("if")(`if`)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defer]
   }
 }

@@ -8,8 +8,8 @@ import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSOneArgCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BaseFileSystem
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystem
 import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.FileType
-import typings.dropboxjs.DropboxNs.ApiError
-import typings.dropboxjs.DropboxNs.FileNs.Stat
+import typings.dropboxjs.Dropbox.ApiError
+import typings.dropboxjs.Dropbox.File.Stat
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Date

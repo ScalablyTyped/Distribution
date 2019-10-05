@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsSimpleFillSymbolMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleFillSymbol
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleFillSymbolProperties
+import typings.arcgisDashJsDashApi.__esri.SimpleFillSymbol
+import typings.arcgisDashJsDashApi.__esri.SimpleFillSymbolProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

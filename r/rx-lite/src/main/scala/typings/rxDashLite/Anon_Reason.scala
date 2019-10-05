@@ -1,7 +1,7 @@
 package typings.rxDashLite
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.rxDashCore.RxNs.IPromise
+import typings.rxDashCore.Rx.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

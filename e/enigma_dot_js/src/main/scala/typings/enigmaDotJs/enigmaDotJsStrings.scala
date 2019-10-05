@@ -1,6 +1,6 @@
 package typings.enigmaDotJs
 
-import typings.enigmaDotJs.enigmaJSNs._MixinType
+import typings.enigmaDotJs.enigmaJS._MixinType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

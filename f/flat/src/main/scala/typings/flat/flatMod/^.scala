@@ -1,7 +1,7 @@
 package typings.flat.flatMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.flat.flatMod.FlatTypesNs.Flatten
+import typings.flat.flatMod.FlatTypes.Flatten
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

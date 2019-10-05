@@ -14,6 +14,8 @@ object md5Mod extends js.Object {
     * @param {(string | Buffer)} message - a string or buffer to hash
     * @returns {string} the resultant MD5 hash of the given message
     */
-  def apply(message: String | Buffer | js.Array[Double]): String = js.native
+  def apply(message: String): String = js.native
+  def apply(message: js.Array[Double]): String = js.native
+  def apply(message: Buffer): String = js.native
 }
 

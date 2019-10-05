@@ -1,5 +1,6 @@
 package typings.inquirer.inquirerMod
 
+import typings.inquirer.libObjectsChoiceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object CheckboxChoiceMap {
   @scala.inline
   def apply[T /* <: Answers */](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
-    Choice: typings.inquirer.libObjectsChoiceMod.^[T],
+    Choice: ^[T],
     ChoiceOptions: ChoiceOptions[T],
     Separator: typings.inquirer.libObjectsSeparatorMod.^,
     SeparatorOptions: SeparatorOptions

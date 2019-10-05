@@ -47,11 +47,11 @@ object CreateVolumeRequest {
   @scala.inline
   def apply(
     AvailabilityZone: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
-    Size: js.UndefOr[Integer] = js.undefined,
+    Size: Int | scala.Double = null,
     SnapshotId: String = null,
     TagSpecifications: TagSpecificationList = null,
     VolumeType: VolumeType = null
@@ -59,9 +59,9 @@ object CreateVolumeRequest {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])

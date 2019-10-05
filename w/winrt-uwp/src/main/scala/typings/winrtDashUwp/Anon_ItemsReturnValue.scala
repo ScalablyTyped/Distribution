@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.IWwwFormUrlDecoderEntry
+import typings.winrtDashUwp.Windows.Foundation.IWwwFormUrlDecoderEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

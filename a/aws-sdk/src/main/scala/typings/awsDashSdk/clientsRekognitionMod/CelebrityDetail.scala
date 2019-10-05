@@ -35,7 +35,7 @@ object CelebrityDetail {
   @scala.inline
   def apply(
     BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
+    Confidence: Int | Double = null,
     Face: FaceDetail = null,
     Id: RekognitionUniqueId = null,
     Name: String = null,
@@ -43,7 +43,7 @@ object CelebrityDetail {
   ): CelebrityDetail = {
     val __obj = js.Dynamic.literal()
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (Face != null) __obj.updateDynamic("Face")(Face)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Name != null) __obj.updateDynamic("Name")(Name)

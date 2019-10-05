@@ -22,14 +22,14 @@ trait InstanceCapacity extends js.Object {
 object InstanceCapacity {
   @scala.inline
   def apply(
-    AvailableCapacity: js.UndefOr[Integer] = js.undefined,
+    AvailableCapacity: Int | scala.Double = null,
     InstanceType: String = null,
-    TotalCapacity: js.UndefOr[Integer] = js.undefined
+    TotalCapacity: Int | scala.Double = null
   ): InstanceCapacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AvailableCapacity)) __obj.updateDynamic("AvailableCapacity")(AvailableCapacity)
+    if (AvailableCapacity != null) __obj.updateDynamic("AvailableCapacity")(AvailableCapacity.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
-    if (!js.isUndefined(TotalCapacity)) __obj.updateDynamic("TotalCapacity")(TotalCapacity)
+    if (TotalCapacity != null) __obj.updateDynamic("TotalCapacity")(TotalCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCapacity]
   }
 }

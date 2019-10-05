@@ -31,8 +31,14 @@ object charsetMod extends js.Object {
     * @return charset, lower case, e.g.: utf8, gbk, gb2312, .... If can\'t guess, return null
     */
   // tslint:disable-next-line strict-export-declare-modifiers
-  def apply(obj: String | IncomingHttpHeaders | IncomingMessage): String | Null = js.native
-  def apply(obj: String | IncomingHttpHeaders | IncomingMessage, data: Buffer): String | Null = js.native
-  def apply(obj: String | IncomingHttpHeaders | IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
+  def apply(obj: String): String | Null = js.native
+  def apply(obj: String, data: Buffer): String | Null = js.native
+  def apply(obj: String, data: Buffer, peekSize: Double): String | Null = js.native
+  def apply(obj: IncomingHttpHeaders): String | Null = js.native
+  def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = js.native
+  def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = js.native
+  def apply(obj: IncomingMessage): String | Null = js.native
+  def apply(obj: IncomingMessage, data: Buffer): String | Null = js.native
+  def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
 }
 

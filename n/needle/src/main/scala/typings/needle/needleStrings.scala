@@ -1,7 +1,7 @@
 package typings.needle
 
-import typings.needle.needleMod.coreNs.NeedleReadWriteHttpVerbs
-import typings.needle.needleMod.coreNs.NeedleReadonlyHttpVerbs
+import typings.needle.needleMod.core.NeedleReadWriteHttpVerbs
+import typings.needle.needleMod.core.NeedleReadonlyHttpVerbs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

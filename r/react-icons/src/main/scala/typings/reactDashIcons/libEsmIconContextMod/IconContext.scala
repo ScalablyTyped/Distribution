@@ -1,6 +1,8 @@
 package typings.reactDashIcons.libEsmIconContextMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.Context
 import typings.react.reactMod.SVGAttributes
 import typings.std.SVGElement
 import scala.scalajs.js
@@ -15,22 +17,7 @@ trait IconContext extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
 
-object IconContext {
-  @scala.inline
-  def apply(
-    attr: SVGAttributes[SVGElement] = null,
-    className: String = null,
-    color: String = null,
-    size: String = null,
-    style: CSSProperties = null
-  ): IconContext = {
-    val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
-    __obj.asInstanceOf[IconContext]
-  }
-}
+@JSImport("react-icons/lib/esm/iconContext", "IconContext")
+@js.native
+object IconContext extends TopLevel[Context[IconContext]]
 

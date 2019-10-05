@@ -27,13 +27,13 @@ object DescribeNatGatewaysRequest {
   @scala.inline
   def apply(
     Filter: FilterList = null,
-    MaxResults: js.UndefOr[DescribeNatGatewaysMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NatGatewayIds: ValueStringList = null,
     NextToken: String = null
   ): DescribeNatGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NatGatewayIds != null) __obj.updateDynamic("NatGatewayIds")(NatGatewayIds)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeNatGatewaysRequest]

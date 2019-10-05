@@ -1,5 +1,6 @@
 package typings.speakeasy.speakeasyMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,4 +45,8 @@ trait Hotp extends js.Object {
     */
   def verifyDelta(options: HotpVerifyOptions): js.UndefOr[Delta] = js.native
 }
+
+@JSImport("speakeasy", "hotp")
+@js.native
+object hotp extends TopLevel[Hotp]
 

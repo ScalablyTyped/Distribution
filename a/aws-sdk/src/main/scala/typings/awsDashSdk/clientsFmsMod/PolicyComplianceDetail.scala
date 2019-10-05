@@ -38,7 +38,7 @@ trait PolicyComplianceDetail extends js.Object {
 object PolicyComplianceDetail {
   @scala.inline
   def apply(
-    EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined,
+    EvaluationLimitExceeded: js.UndefOr[scala.Boolean] = js.undefined,
     ExpiredAt: TimeStamp = null,
     IssueInfoMap: IssueInfoMap = null,
     MemberAccount: AWSAccountId = null,

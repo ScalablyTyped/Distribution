@@ -33,3 +33,10 @@ object RestProperty {
   }
 }
 
+@JSImport("babel-types", "restProperty")
+@js.native
+object restProperty extends js.Object {
+  def apply(): RestProperty = js.native
+  def apply(argument: LVal): RestProperty = js.native
+}
+

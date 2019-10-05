@@ -12,7 +12,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.seconds
 import typings.atOracleOraclejet.atOracleOraclejetStrings.weeks
 import typings.atOracleOraclejet.atOracleOraclejetStrings.years
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentSettableProperties
-import typings.atOracleOraclejet.ojtimeaxisMod.ojTimeAxisNs.Converters
+import typings.atOracleOraclejet.ojtimeaxisMod.ojTimeAxis.Converters
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

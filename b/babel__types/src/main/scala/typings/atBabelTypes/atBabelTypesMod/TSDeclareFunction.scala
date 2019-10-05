@@ -54,3 +54,43 @@ object TSDeclareFunction {
   }
 }
 
+@JSImport("@babel/types", "tsDeclareFunction")
+@js.native
+object tsDeclareFunction extends js.Object {
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
+  ): TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    returnType: TSTypeAnnotation | Noop
+  ): TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    returnType: TSTypeAnnotation | Noop,
+    async: Boolean
+  ): TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    returnType: TSTypeAnnotation | Noop,
+    async: Boolean,
+    declare: Boolean
+  ): TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    returnType: TSTypeAnnotation | Noop,
+    async: Boolean,
+    declare: Boolean,
+    generator: Boolean
+  ): TSDeclareFunction = js.native
+}
+

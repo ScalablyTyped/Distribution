@@ -1,8 +1,8 @@
 package typings.webmidi
 
-import typings.webmidi.WebMidiNs.MIDIPortConnectionState
-import typings.webmidi.WebMidiNs.MIDIPortDeviceState
-import typings.webmidi.WebMidiNs.MIDIPortType
+import typings.webmidi.WebMidi.MIDIPortConnectionState
+import typings.webmidi.WebMidi.MIDIPortDeviceState
+import typings.webmidi.WebMidi.MIDIPortType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,13 +32,13 @@ object DescribePullRequestEventsInput {
   def apply(
     pullRequestId: PullRequestId,
     actorArn: Arn = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     pullRequestEventType: PullRequestEventType = null
   ): DescribePullRequestEventsInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId)
     if (actorArn != null) __obj.updateDynamic("actorArn")(actorArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (pullRequestEventType != null) __obj.updateDynamic("pullRequestEventType")(pullRequestEventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePullRequestEventsInput]

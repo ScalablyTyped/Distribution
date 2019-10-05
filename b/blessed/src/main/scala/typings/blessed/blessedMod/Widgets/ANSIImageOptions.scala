@@ -1,0 +1,161 @@
+package typings.blessed.blessedMod.Widgets
+
+import typings.blessed.Anon_Ch
+import typings.blessed.blessedMod.Widgets.Types.TPosition
+import typings.blessed.blessedMod.Widgets.Types.TTopLeft
+import typings.blessed.blessedStrings.bg
+import typings.blessed.blessedStrings.bottom
+import typings.blessed.blessedStrings.center
+import typings.blessed.blessedStrings.cpu
+import typings.blessed.blessedStrings.left
+import typings.blessed.blessedStrings.line
+import typings.blessed.blessedStrings.mem
+import typings.blessed.blessedStrings.middle
+import typings.blessed.blessedStrings.right
+import typings.blessed.blessedStrings.top
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ANSIImageOptions extends BoxOptions {
+  /**
+    * Whether to animate if the image is an APNG/animating GIF. If false, only
+    * display the first frame or IDAT (Default: true).
+    */
+  var animate: Boolean
+  /**
+    * Add various "density" ASCII characters over the rendering to give the
+    * image more detail, similar to libcaca/libcucul (the library mplayer uses
+    * to display videos in the terminal).
+    */
+  var ascii: String
+  /**
+    * URL or path to PNG/GIF file. Can also be a buffer.
+    */
+  var file: String
+  @JSName("height")
+  var height_ANSIImageOptions: Double | String
+  /**
+    * mem or cpu. If optimizing for memory, animation frames will be rendered to
+    * bitmaps as the animation plays, using less memory. Optimizing for cpu will
+    * precompile all bitmaps beforehand, which may be faster, but might also OOM
+    * the process on large images. (Default: mem).
+    */
+  var optimization: mem | cpu
+  /**
+    * Scale cellmap down (0-1.0) from its original pixel width/height (Default: 1.0).
+    */
+  var scale: Double
+  /**
+    * Set the speed of animation. Slower: 0.0-1.0. Faster: 1-1000. It cannot go
+    * faster than 1 frame per millisecond, so 1000 is the fastest. (Default: 1.0)
+    */
+  var speed: Double
+  /**
+    * This differs from other element's width or height in that only one
+    * of them is needed: blessed will maintain the aspect ratio of the image
+    * as it scales down to the proper number of cells. NOTE: PNG/GIF's are
+    * always automatically shrunken to size (based on scale) if a width or
+    * height is not given.
+    */
+  @JSName("width")
+  var width_ANSIImageOptions: Double | String
+}
+
+object ANSIImageOptions {
+  @scala.inline
+  def apply(
+    animate: Boolean,
+    ascii: String,
+    file: String,
+    height: Double | String,
+    optimization: mem | cpu,
+    scale: Double,
+    speed: Double,
+    width: Double | String,
+    align: left | center | right = null,
+    alwaysScroll: js.UndefOr[Boolean] = js.undefined,
+    baseLimit: Int | Double = null,
+    bg: String = null,
+    bindings: js.Any = null,
+    bold: String = null,
+    border: Border | line | bg = null,
+    bottom: TPosition = null,
+    ch: String = null,
+    children: js.Array[Node] = null,
+    clickable: js.UndefOr[Boolean] = js.undefined,
+    content: String = null,
+    draggable: js.UndefOr[Boolean] = js.undefined,
+    fg: String = null,
+    focusable: js.UndefOr[Boolean] = js.undefined,
+    focused: BlessedElement = null,
+    hidden: js.UndefOr[Boolean] = js.undefined,
+    hoverText: String = null,
+    input: js.UndefOr[Boolean] = js.undefined,
+    keyable: js.UndefOr[Boolean] = js.undefined,
+    keys: String | js.Array[String] | Boolean = null,
+    label: String = null,
+    left: TTopLeft = null,
+    mouse: Boolean | js.Function0[Unit] = null,
+    name: String = null,
+    padding: Double | Padding = null,
+    parent: Node = null,
+    position: Position = null,
+    right: TPosition = null,
+    screen: Screen = null,
+    scrollable: js.UndefOr[Boolean] = js.undefined,
+    scrollbar: Anon_Ch = null,
+    shadow: js.UndefOr[Boolean] = js.undefined,
+    shrink: js.UndefOr[Boolean] = js.undefined,
+    style: js.Any = null,
+    tags: js.UndefOr[Boolean] = js.undefined,
+    top: TTopLeft = null,
+    underline: String = null,
+    valign: top | middle | bottom = null,
+    vi: js.UndefOr[Boolean] = js.undefined
+  ): ANSIImageOptions = {
+    val __obj = js.Dynamic.literal(animate = animate, ascii = ascii, file = file, height = height.asInstanceOf[js.Any], optimization = optimization.asInstanceOf[js.Any], scale = scale, speed = speed, width = width.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysScroll)) __obj.updateDynamic("alwaysScroll")(alwaysScroll)
+    if (baseLimit != null) __obj.updateDynamic("baseLimit")(baseLimit.asInstanceOf[js.Any])
+    if (bg != null) __obj.updateDynamic("bg")(bg)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (bold != null) __obj.updateDynamic("bold")(bold)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (ch != null) __obj.updateDynamic("ch")(ch)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (fg != null) __obj.updateDynamic("fg")(fg)
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (focused != null) __obj.updateDynamic("focused")(focused)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (hoverText != null) __obj.updateDynamic("hoverText")(hoverText)
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input)
+    if (!js.isUndefined(keyable)) __obj.updateDynamic("keyable")(keyable)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (screen != null) __obj.updateDynamic("screen")(screen)
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
+    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar)
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (!js.isUndefined(shrink)) __obj.updateDynamic("shrink")(shrink)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (underline != null) __obj.updateDynamic("underline")(underline)
+    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    if (!js.isUndefined(vi)) __obj.updateDynamic("vi")(vi)
+    __obj.asInstanceOf[ANSIImageOptions]
+  }
+}
+

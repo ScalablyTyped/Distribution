@@ -42,9 +42,8 @@ object lassoMod extends js.Object {
   def handleWatchedFileChanged(path: String): Unit = js.native
   def isFlagSet(o: js.Any): Boolean = js.native
   def setDevelopmentMode(): Unit = js.native
-  @JSName("transforms")
   @js.native
-  object transformsNs extends js.Object {
+  object transforms extends js.Object {
     def createTransformer(
       unfilteredTransforms: js.Array[_],
       lassoContext: typings.lasso.libLassoContextMod.default,
@@ -52,9 +51,8 @@ object lassoMod extends js.Object {
     ): Unit = js.native
   }
   
-  @JSName("writers")
   @js.native
-  object writersNs extends js.Object {
+  object writers extends js.Object {
     def createWriter(writerImpl: js.Any): Writer = js.native
     def fileWriter(fileWriterConfig: js.Any, lassoConfig: LassoConfig): js.Any = js.native
   }

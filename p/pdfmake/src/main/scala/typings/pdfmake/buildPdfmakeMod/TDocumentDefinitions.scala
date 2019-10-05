@@ -39,8 +39,8 @@ object TDocumentDefinitions {
     background: String | (js.Function2[/* currentPage */ Double, /* pageSize */ PageSize, String | Content | Null]) = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     defaultStyle: Style = null,
-    footer: TDocumentHeaderFooterFunction = null,
-    header: TDocumentHeaderFooterFunction = null,
+    footer: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ js.UndefOr[Anon_Height]) => js.Any = null,
+    header: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ js.UndefOr[Anon_Height]) => js.Any = null,
     images: StringDictionary[String] = null,
     info: TDocumentInformation = null,
     pageBreakBefore: (/* currentNode */ js.UndefOr[CurrentNode], /* followingNodesOnPage */ js.UndefOr[js.Any], /* nodesOnNextPage */ js.UndefOr[js.Any], /* previousNodesOnPage */ js.UndefOr[js.Any]) => Boolean = null,
@@ -53,8 +53,8 @@ object TDocumentDefinitions {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction3(footer))
+    if (header != null) __obj.updateDynamic("header")(js.Any.fromFunction3(header))
     if (images != null) __obj.updateDynamic("images")(images)
     if (info != null) __obj.updateDynamic("info")(info)
     if (pageBreakBefore != null) __obj.updateDynamic("pageBreakBefore")(js.Any.fromFunction4(pageBreakBefore))

@@ -1,12 +1,12 @@
 package typings.emberDashData
 
-import typings.ember.emberMod.EmberNs.Array
-import typings.ember.emberMod.defaultNs.ComputedProperty
-import typings.emberDashData.emberDashDataMod.DSNs.Async
-import typings.emberDashData.emberDashDataMod.DSNs.PromiseManyArray
-import typings.emberDashData.emberDashDataMod.DSNs.PromiseObject
-import typings.emberDashData.emberDashDataMod.DSNs.RelationshipOptions
-import typings.emberDashData.emberDashDataMod.DSNs.Sync
+import typings.ember.emberMod.Ember.Array
+import typings.ember.emberMod.default.ComputedProperty
+import typings.emberDashData.emberDashDataMod.DS.Async
+import typings.emberDashData.emberDashDataMod.DS.PromiseManyArray
+import typings.emberDashData.emberDashDataMod.DS.PromiseObject
+import typings.emberDashData.emberDashDataMod.DS.RelationshipOptions
+import typings.emberDashData.emberDashDataMod.DS.Sync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

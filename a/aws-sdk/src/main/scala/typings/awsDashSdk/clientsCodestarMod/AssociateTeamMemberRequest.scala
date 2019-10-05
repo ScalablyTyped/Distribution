@@ -34,7 +34,7 @@ object AssociateTeamMemberRequest {
     projectRole: Role,
     userArn: UserArn,
     clientRequestToken: ClientRequestToken = null,
-    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
+    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined
   ): AssociateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId, projectRole = projectRole, userArn = userArn)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)

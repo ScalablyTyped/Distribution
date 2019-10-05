@@ -1,6 +1,6 @@
 package typings.mocha.mochaMod
 
-import typings.mocha.MochaNs.ISuite
+import typings.mocha.Mocha.ISuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,10 +38,10 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "Runner")
 @js.native
 class Runner protected ()
-  extends typings.mocha.MochaNs.Runner {
+  extends typings.mocha.Mocha.Runner {
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def this(suite: ISuite, delay: Boolean) = this()
-  def this(suite: typings.mocha.MochaNs.Suite, delay: Boolean) = this()
+  def this(suite: typings.mocha.Mocha.Suite, delay: Boolean) = this()
 }
 
 /* static members */

@@ -16,9 +16,11 @@ trait ITagItemStyles extends js.Object {
 
 object ITagItemStyles {
   @scala.inline
-  def apply(close: IStyle, root: IStyle, text: IStyle): ITagItemStyles = {
-    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
+  def apply(close: IStyle = null, root: IStyle = null, text: IStyle = null): ITagItemStyles = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagItemStyles]
   }
 }

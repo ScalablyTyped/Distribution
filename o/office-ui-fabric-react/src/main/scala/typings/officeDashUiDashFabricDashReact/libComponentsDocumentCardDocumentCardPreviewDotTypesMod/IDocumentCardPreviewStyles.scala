@@ -17,15 +17,20 @@ trait IDocumentCardPreviewStyles extends js.Object {
 object IDocumentCardPreviewStyles {
   @scala.inline
   def apply(
-    fileList: IStyle,
-    fileListIcon: IStyle,
-    fileListOverflowText: IStyle,
-    icon: IStyle,
-    previewIcon: IStyle,
-    root: IStyle
+    fileList: IStyle = null,
+    fileListIcon: IStyle = null,
+    fileListOverflowText: IStyle = null,
+    icon: IStyle = null,
+    previewIcon: IStyle = null,
+    root: IStyle = null
   ): IDocumentCardPreviewStyles = {
-    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any], fileListIcon = fileListIcon.asInstanceOf[js.Any], fileListOverflowText = fileListOverflowText.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], previewIcon = previewIcon.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
+    if (fileListIcon != null) __obj.updateDynamic("fileListIcon")(fileListIcon.asInstanceOf[js.Any])
+    if (fileListOverflowText != null) __obj.updateDynamic("fileListOverflowText")(fileListOverflowText.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (previewIcon != null) __obj.updateDynamic("previewIcon")(previewIcon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardPreviewStyles]
   }
 }

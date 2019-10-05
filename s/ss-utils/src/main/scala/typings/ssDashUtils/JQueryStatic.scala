@@ -1,6 +1,6 @@
 package typings.ssDashUtils
 
-import typings.ssDashUtils.ssutilsNs.Static
+import typings.ssDashUtils.ssutils.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

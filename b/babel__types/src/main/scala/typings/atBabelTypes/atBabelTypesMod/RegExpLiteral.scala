@@ -40,3 +40,10 @@ object RegExpLiteral {
   }
 }
 
+@JSImport("@babel/types", "regExpLiteral")
+@js.native
+object regExpLiteral extends js.Object {
+  def apply(pattern: String): RegExpLiteral = js.native
+  def apply(pattern: String, flags: String): RegExpLiteral = js.native
+}
+

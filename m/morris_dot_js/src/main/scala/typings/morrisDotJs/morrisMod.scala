@@ -1,7 +1,7 @@
 package typings.morrisDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.morrisDotJs.morrisNs.MorrisStatic
+import typings.morrisDotJs.morris.MorrisStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object qunit {
+  type QUnit = QUnit_
   type moduleFunc1 = js.Function3[
     /* name */ String, 
     /* hooks */ js.UndefOr[Hooks], 

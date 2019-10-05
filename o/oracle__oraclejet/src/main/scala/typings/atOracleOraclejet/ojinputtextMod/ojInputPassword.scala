@@ -1,8 +1,11 @@
 package typings.atOracleOraclejet.ojinputtextMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.atOracleOraclejetStrings.value
-import typings.atOracleOraclejet.ojinputtextMod.ojInputPasswordNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputtextMod.ojInputPasswordNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateStart
+import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,5 +25,12 @@ trait ojInputPassword extends inputBase[String | Null, ojInputPasswordSettablePr
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: String): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojinputtext", "ojInputPassword")
+@js.native
+object ojInputPassword extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

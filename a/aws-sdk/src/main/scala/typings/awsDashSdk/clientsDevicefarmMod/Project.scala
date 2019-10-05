@@ -28,13 +28,13 @@ object Project {
   def apply(
     arn: AmazonResourceName = null,
     created: DateTime = null,
-    defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
+    defaultJobTimeoutMinutes: Int | scala.Double = null,
     name: Name = null
   ): Project = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (created != null) __obj.updateDynamic("created")(created)
-    if (!js.isUndefined(defaultJobTimeoutMinutes)) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes)
+    if (defaultJobTimeoutMinutes != null) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Project]
   }

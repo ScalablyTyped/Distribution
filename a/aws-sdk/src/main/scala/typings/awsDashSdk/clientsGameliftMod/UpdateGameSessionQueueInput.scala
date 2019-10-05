@@ -29,12 +29,12 @@ object UpdateGameSessionQueueInput {
     Name: GameSessionQueueName,
     Destinations: GameSessionQueueDestinationList = null,
     PlayerLatencyPolicies: PlayerLatencyPolicyList = null,
-    TimeoutInSeconds: js.UndefOr[WholeNumber] = js.undefined
+    TimeoutInSeconds: Int | scala.Double = null
   ): UpdateGameSessionQueueInput = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations)
     if (PlayerLatencyPolicies != null) __obj.updateDynamic("PlayerLatencyPolicies")(PlayerLatencyPolicies)
-    if (!js.isUndefined(TimeoutInSeconds)) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds)
+    if (TimeoutInSeconds != null) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameSessionQueueInput]
   }
 }

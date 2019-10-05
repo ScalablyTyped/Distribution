@@ -31,7 +31,7 @@ object MessagerOption {
     fade: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     message: String = null,
-    onAction: OnActionFunc = null,
+    onAction: (/* name */ String, /* action */ String, /* messager */ Messager) => js.Any = null,
     parent: String = null,
     placement: String = null,
     scale: js.UndefOr[Boolean] = js.undefined,
@@ -47,7 +47,7 @@ object MessagerOption {
     if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (onAction != null) __obj.updateDynamic("onAction")(onAction)
+    if (onAction != null) __obj.updateDynamic("onAction")(js.Any.fromFunction3(onAction))
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)

@@ -28,7 +28,7 @@ object MapControllerOptions {
     eventManager: js.Any = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     onStateChange: /* state */ MapState => Unit = null,
-    onViewportChange: ContextViewportChangeHandler = null,
+    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
     touchRotate: js.UndefOr[Boolean] = js.undefined,
     touchZoom: js.UndefOr[Boolean] = js.undefined
@@ -40,7 +40,7 @@ object MapControllerOptions {
     if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom)
     if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate)
     if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)

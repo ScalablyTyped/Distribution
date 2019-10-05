@@ -41,3 +41,15 @@ class Channels protected () extends EventEmitter {
   def pushChannel(descriptor: ChannelDescriptor): js.Promise[typings.twilioDashChat.libChannelMod.Channel] = js.native
 }
 
+@JSImport("twilio-chat/lib/data/channels", "Channels")
+@js.native
+object Channels extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.twilioDashChat.twilioDashChatStrings.sync
+    - typings.twilioDashChat.twilioDashChatStrings.chat
+    - typings.twilioDashChat.twilioDashChatStrings.synclist
+  */
+  trait DataSource extends js.Object
+  
+}
+

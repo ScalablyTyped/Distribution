@@ -1,6 +1,6 @@
 package typings.atReactDashNativeDashFirebaseApp
 
-import typings.atReactDashNativeDashFirebaseApp.ReactNativeFirebaseNs.FirebaseApp
+import typings.atReactDashNativeDashFirebaseApp.ReactNativeFirebase.FirebaseApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

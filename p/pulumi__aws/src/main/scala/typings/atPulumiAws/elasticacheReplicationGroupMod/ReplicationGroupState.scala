@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheReplicationGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.elasticacheNs.ReplicationGroupClusterMode
+import typings.atPulumiAws.typesInputMod.elasticache.ReplicationGroupClusterMode
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -17,9 +17,10 @@ trait ComponentProps extends js.Object {
 
 object ComponentProps {
   @scala.inline
-  def apply(Heading: ComponentType[_], children: ReactNode, label: ReactNode): ComponentProps = {
-    val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
+  def apply(Heading: ComponentType[_], children: ReactNode = null, label: ReactNode = null): ComponentProps = {
+    val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps]
   }
 }

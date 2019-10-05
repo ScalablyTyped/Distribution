@@ -1,6 +1,6 @@
 package typings.easyDashXapiDashSupertest.superagentMod
 
-import typings.easyDashXapiDashSupertest.NodeJSNs.ReadableStream
+import typings.easyDashXapiDashSupertest.NodeJS.ReadableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

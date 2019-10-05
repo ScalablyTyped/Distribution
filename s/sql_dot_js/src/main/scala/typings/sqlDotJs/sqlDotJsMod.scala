@@ -1,7 +1,7 @@
 package typings.sqlDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sqlDotJs.moduleMod.SqlJsNs.InitSqlJsStatic
+import typings.sqlDotJs.moduleMod.SqlJs.InitSqlJsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

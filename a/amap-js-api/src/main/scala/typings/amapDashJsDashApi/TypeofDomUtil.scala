@@ -1,7 +1,7 @@
 package typings.amapDashJsDashApi
 
-import typings.amapDashJsDashApi.AMapNs.Pixel
-import typings.amapDashJsDashApi.AMapNs.Size
+import typings.amapDashJsDashApi.AMap.Pixel
+import typings.amapDashJsDashApi.AMap.Size
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.`object`
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.`var`
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.a

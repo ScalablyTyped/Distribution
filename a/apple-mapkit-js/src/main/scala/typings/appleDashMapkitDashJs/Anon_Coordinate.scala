@@ -1,6 +1,6 @@
 package typings.appleDashMapkitDashJs
 
-import typings.appleDashMapkitDashJs.mapkitNs.Coordinate
+import typings.appleDashMapkitDashJs.mapkit.Coordinate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

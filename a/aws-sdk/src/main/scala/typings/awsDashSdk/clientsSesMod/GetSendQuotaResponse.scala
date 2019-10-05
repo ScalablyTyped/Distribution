@@ -22,14 +22,14 @@ trait GetSendQuotaResponse extends js.Object {
 object GetSendQuotaResponse {
   @scala.inline
   def apply(
-    Max24HourSend: js.UndefOr[Max24HourSend] = js.undefined,
-    MaxSendRate: js.UndefOr[MaxSendRate] = js.undefined,
-    SentLast24Hours: js.UndefOr[SentLast24Hours] = js.undefined
+    Max24HourSend: Int | Double = null,
+    MaxSendRate: Int | Double = null,
+    SentLast24Hours: Int | Double = null
   ): GetSendQuotaResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Max24HourSend)) __obj.updateDynamic("Max24HourSend")(Max24HourSend)
-    if (!js.isUndefined(MaxSendRate)) __obj.updateDynamic("MaxSendRate")(MaxSendRate)
-    if (!js.isUndefined(SentLast24Hours)) __obj.updateDynamic("SentLast24Hours")(SentLast24Hours)
+    if (Max24HourSend != null) __obj.updateDynamic("Max24HourSend")(Max24HourSend.asInstanceOf[js.Any])
+    if (MaxSendRate != null) __obj.updateDynamic("MaxSendRate")(MaxSendRate.asInstanceOf[js.Any])
+    if (SentLast24Hours != null) __obj.updateDynamic("SentLast24Hours")(SentLast24Hours.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSendQuotaResponse]
   }
 }

@@ -17,11 +17,11 @@ object Option {
     description: String,
     name: String | (js.Tuple2[String, String]),
     defaultValue: js.Any = null,
-    init: OptionInitFunction = null
+    init: /* value */ js.Any => js.Any = null
   ): Option = {
     val __obj = js.Dynamic.literal(description = description, name = name.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     __obj.asInstanceOf[Option]
   }
 }

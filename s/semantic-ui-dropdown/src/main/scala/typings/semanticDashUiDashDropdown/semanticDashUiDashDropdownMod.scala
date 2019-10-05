@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashDropdown
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashDropdown.SemanticUINs.Dropdown
+import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

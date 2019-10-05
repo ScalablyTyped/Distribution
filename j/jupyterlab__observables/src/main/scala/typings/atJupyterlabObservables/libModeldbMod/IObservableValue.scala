@@ -1,7 +1,7 @@
 package typings.atJupyterlabObservables.libModeldbMod
 
 import typings.atJupyterlabObservables.atJupyterlabObservablesStrings.Value
-import typings.atJupyterlabObservables.libModeldbMod.ObservableValueNs.IChangedArgs
+import typings.atJupyterlabObservables.libModeldbMod.ObservableValue.IChangedArgs
 import typings.atPhosphorCoreutils.libJsonMod.JSONValue
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.BusinessUserRole
-import typings.evernote.evernoteMod.EvernoteNs.PremiumOrderStatus
+import typings.evernote.evernoteMod.Evernote.BusinessUserRole
+import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

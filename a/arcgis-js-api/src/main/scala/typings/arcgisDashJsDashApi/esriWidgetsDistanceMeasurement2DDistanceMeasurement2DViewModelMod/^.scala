@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDistanceMeasurement2DDistanceMeasurement2DViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DistanceMeasurement2DViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.DistanceMeasurement2DViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

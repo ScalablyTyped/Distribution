@@ -1,7 +1,7 @@
 package typings.countdown
 
 import org.scalablytyped.runtime.TopLevel
-import typings.countdown.countdownNs.CountdownStatic
+import typings.countdown.countdown.CountdownStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

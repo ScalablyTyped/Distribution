@@ -1,6 +1,6 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils
 
-import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintLinterMod.LinterNs.Severity
+import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintLinterMod.Linter.Severity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.slackDashMock.slackDashMockMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,4 +33,8 @@ object Instance {
     __obj.asInstanceOf[Instance]
   }
 }
+
+@JSImport("slack-mock", "instance")
+@js.native
+object instance extends TopLevel[Instance]
 

@@ -1,6 +1,6 @@
 package typings.meteor.serviceDashConfigurationMod
 
-import typings.meteor.MongoNs.Collection
+import typings.meteor.Mongo.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

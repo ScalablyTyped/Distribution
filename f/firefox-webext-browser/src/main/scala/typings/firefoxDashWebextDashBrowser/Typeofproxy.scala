@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.proxyNs._ProxyOnRequestEvent
-import typings.firefoxDashWebextDashBrowser.browserNs.typesNs.Setting
+import typings.firefoxDashWebextDashBrowser.browser.proxy._ProxyOnRequestEvent
+import typings.firefoxDashWebextDashBrowser.browser.types.Setting
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

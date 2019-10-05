@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsArcGISCachedServiceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISCachedService
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISCachedServiceProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileInfo
+import typings.arcgisDashJsDashApi.__esri.ArcGISCachedService
+import typings.arcgisDashJsDashApi.__esri.ArcGISCachedServiceProperties
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.TileInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

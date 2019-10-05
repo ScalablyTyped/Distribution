@@ -17,3 +17,10 @@ trait Refinement[T] extends Type[T] {
   def update(instance: T, spec: UpdatePatch): T = js.native
 }
 
+@JSImport("tcomb", "refinement")
+@js.native
+object refinement extends js.Object {
+  def apply[T](`type`: Constructor[T], predicate: Predicate[T]): Refinement[T] = js.native
+  def apply[T](`type`: Constructor[T], predicate: Predicate[T], name: String): Refinement[T] = js.native
+}
+

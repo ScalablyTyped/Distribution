@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportServiceAreaSolveResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServiceAreaSolveResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServiceAreaSolveResultProperties
+import typings.arcgisDashJsDashApi.__esri.ServiceAreaSolveResult
+import typings.arcgisDashJsDashApi.__esri.ServiceAreaSolveResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

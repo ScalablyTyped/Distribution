@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkConfigMod.configurationNs.ISdkConfig
+import typings.mendixmodelsdk.distSdkConfigMod.configuration.ISdkConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

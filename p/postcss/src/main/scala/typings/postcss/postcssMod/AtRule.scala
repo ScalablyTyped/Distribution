@@ -30,3 +30,15 @@ trait AtRule
   var `type`: atrule = js.native
 }
 
+@JSImport("postcss", "atRule")
+@js.native
+object atRule extends js.Object {
+  /**
+    * Creates a new AtRule node.
+    * @param defaults Properties for the new AtRule node.
+    * @returns The new node.
+    */
+  def apply(): AtRule = js.native
+  def apply(defaults: AtRuleNewProps): AtRule = js.native
+}
+

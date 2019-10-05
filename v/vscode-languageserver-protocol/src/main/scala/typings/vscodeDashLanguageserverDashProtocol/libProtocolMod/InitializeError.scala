@@ -14,12 +14,14 @@ trait InitializeError extends js.Object {
   var retry: Boolean
 }
 
-object InitializeError {
-  @scala.inline
-  def apply(retry: Boolean): InitializeError = {
-    val __obj = js.Dynamic.literal(retry = retry)
-  
-    __obj.asInstanceOf[InitializeError]
-  }
+@JSImport("vscode-languageserver-protocol/lib/protocol", "InitializeError")
+@js.native
+object InitializeError extends js.Object {
+  /**
+    * If the protocol version provided by the client can't be handled by the server.
+    * @deprecated This initialize error got replaced by client capabilities. There is
+    * no version handshake in version 3.0x
+    */
+  val unknownProtocolVersion: Double = js.native
 }
 

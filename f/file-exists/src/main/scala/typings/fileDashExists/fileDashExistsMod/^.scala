@@ -16,7 +16,5 @@ object ^ extends js.Object {
     options: Options,
     callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]
   ): Unit = js.native
-  def sync(filepath: String): Boolean = js.native
-  def sync(filepath: String, options: Options): Boolean = js.native
 }
 

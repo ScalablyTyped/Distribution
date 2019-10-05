@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object Global extends js.Object {
-  @JSName("graphlibDot")
   @js.native
-  object graphlibDotNs extends js.Object {
+  object graphlibDot extends js.Object {
     /**
       * Contains the version of the graphlib library used by graphlib-dot.
       */

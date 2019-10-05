@@ -1,7 +1,7 @@
 package typings.mapsjs
 
-import typings.mapsjs.mapsjsMod.tileNs.renderer
-import typings.mapsjs.mapsjsMod.tileNs.requestor
+import typings.mapsjs.mapsjsMod.tile.renderer
+import typings.mapsjs.mapsjsMod.tile.requestor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ trait Anon_Descriptor extends js.Object {
   var notifyErrorAction: js.UndefOr[js.Function1[/* msg */ js.UndefOr[String], Unit]] = js.undefined
   var notifyLoadingQueueHasEmptiedAction: js.UndefOr[js.Function0[Unit]] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
-  var renderer: js.UndefOr[typings.mapsjs.mapsjsMod.tileNs.renderer] = js.undefined
+  var renderer: js.UndefOr[typings.mapsjs.mapsjsMod.tile.renderer] = js.undefined
   var requestProcessor: js.UndefOr[js.Any] = js.undefined
-  var requestor: js.UndefOr[typings.mapsjs.mapsjsMod.tileNs.requestor] = js.undefined
+  var requestor: js.UndefOr[typings.mapsjs.mapsjsMod.tile.requestor] = js.undefined
   var retainInterlevelContent: js.UndefOr[Boolean] = js.undefined
   var tileBleedPix: js.UndefOr[Double] = js.undefined
   var useBackdrop: js.UndefOr[Boolean] = js.undefined

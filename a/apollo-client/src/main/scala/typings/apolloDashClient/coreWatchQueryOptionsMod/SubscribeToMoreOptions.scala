@@ -1,5 +1,6 @@
 package typings.apolloDashClient.coreWatchQueryOptionsMod
 
+import typings.apolloDashClient.Anon_SubscriptionData
 import typings.graphql.languageAstMod.DocumentNode
 import typings.std.Error
 import scala.scalajs.js
@@ -18,12 +19,12 @@ object SubscribeToMoreOptions {
   def apply[TData, TSubscriptionVariables, TSubscriptionData](
     document: DocumentNode,
     onError: /* error */ Error => Unit = null,
-    updateQuery: UpdateQueryFn[TData, TSubscriptionVariables, TSubscriptionData] = null,
+    updateQuery: (TData, /* options */ Anon_SubscriptionData[TSubscriptionData, TSubscriptionVariables]) => TData = null,
     variables: TSubscriptionVariables = null
   ): SubscribeToMoreOptions[TData, TSubscriptionVariables, TSubscriptionData] = {
     val __obj = js.Dynamic.literal(document = document)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (updateQuery != null) __obj.updateDynamic("updateQuery")(updateQuery)
+    if (updateQuery != null) __obj.updateDynamic("updateQuery")(js.Any.fromFunction2(updateQuery))
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeToMoreOptions[TData, TSubscriptionVariables, TSubscriptionData]]
   }

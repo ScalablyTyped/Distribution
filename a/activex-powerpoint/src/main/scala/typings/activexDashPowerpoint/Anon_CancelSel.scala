@@ -1,6 +1,6 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.Selection
+import typings.activexDashPowerpoint.PowerPoint.Selection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

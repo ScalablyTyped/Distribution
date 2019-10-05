@@ -1,6 +1,7 @@
 package typings.awsDashSdk.awsDashSdkMod
 
 import typings.awsDashSdk.clientsS3Mod.ClientConfiguration
+import typings.awsDashSdk.libS3ManagedUnderscoreUploadMod.ManagedUpload.ManagedUploadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,5 +14,38 @@ import scala.scalajs.js.annotation._
 class S3 ()
   extends typings.awsDashSdk.clientsAllMod.S3 {
   def this(options: ClientConfiguration) = this()
+}
+
+@JSImport("aws-sdk", "S3")
+@js.native
+object S3 extends js.Object {
+  @js.native
+  class ManagedUpload protected ()
+    extends typings.awsDashSdk.clientsAllMod.S3.ManagedUpload {
+    /**
+      * Creates a managed upload object with a set of configuration options.
+      */
+    def this(options: ManagedUploadOptions) = this()
+  }
+  
+  @js.native
+  class PresignedPost ()
+    extends typings.awsDashSdk.clientsAllMod.S3.PresignedPost
+  
+  /* static members */
+  @js.native
+  object ManagedUpload extends js.Object {
+    /**
+      * Default value: 10000
+      */
+    var maxTotalParts: Double = js.native
+    /**
+      * Returns the minimum number of bytes for an individual part upload.
+      * Note: Minimum allowed size is 5 MB.
+      * 1024 * 5
+      */
+    var minPartSize: Double = js.native
+  }
+  
 }
 

@@ -25,11 +25,5 @@ trait DirectoryEntry extends FileSystemEntry {
 
 @JSGlobal("DirectoryEntry")
 @js.native
-class DirectoryEntryCls protected () extends DirectoryEntry {
-  def this(name: String, root: DirectoryEntry) = this()
-}
-
-@JSGlobal("DirectoryEntry")
-@js.native
 object DirectoryEntry extends Instantiable2[/* name */ String, /* root */ DirectoryEntry, DirectoryEntry]
 

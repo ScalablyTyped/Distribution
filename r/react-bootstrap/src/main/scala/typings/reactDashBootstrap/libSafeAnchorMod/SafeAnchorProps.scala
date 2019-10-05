@@ -1,6 +1,8 @@
 package typings.reactDashBootstrap.libSafeAnchorMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
 import scala.scalajs.js
@@ -20,7 +22,7 @@ object SafeAnchorProps {
     componentClass: ReactType[_] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
-    onClick: MouseEventHandler[js.Object] = null,
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     role: String = null
   ): SafeAnchorProps = {
     val __obj = js.Dynamic.literal()
@@ -28,7 +30,7 @@ object SafeAnchorProps {
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (href != null) __obj.updateDynamic("href")(href)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (role != null) __obj.updateDynamic("role")(role)
     __obj.asInstanceOf[SafeAnchorProps]
   }

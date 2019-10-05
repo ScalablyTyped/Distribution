@@ -72,5 +72,6 @@ object Reset extends js.Object {
     resetType: Double,
     checkoutOpts: typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
   ): js.Promise[Double] = js.native
+  type TYPE = typings.nodegit.resetMod.Reset.TYPE
 }
 

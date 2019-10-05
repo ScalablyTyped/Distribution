@@ -1,0 +1,26 @@
+package typings.atJupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus
+
+import typings.atPhosphorCommands.atPhosphorCommandsMod.CommandRegistry
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Options for the EditorSyntax status item.
+  */
+trait IOptions extends js.Object {
+  /**
+    * The application command registry.
+    */
+  var commands: CommandRegistry
+}
+
+object IOptions {
+  @scala.inline
+  def apply(commands: CommandRegistry): IOptions = {
+    val __obj = js.Dynamic.literal(commands = commands)
+  
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

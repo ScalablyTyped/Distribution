@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.managementNs.ExtensionInfo
-import typings.chromeDashApps.chromeNs.managementNs.UninstallOptions
+import typings.chromeDashApps.chrome.management.ExtensionInfo
+import typings.chromeDashApps.chrome.management.UninstallOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

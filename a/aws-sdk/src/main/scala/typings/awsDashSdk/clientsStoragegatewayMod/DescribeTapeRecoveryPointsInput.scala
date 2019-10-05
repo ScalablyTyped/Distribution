@@ -18,9 +18,9 @@ trait DescribeTapeRecoveryPointsInput extends js.Object {
 
 object DescribeTapeRecoveryPointsInput {
   @scala.inline
-  def apply(GatewayARN: GatewayARN, Limit: js.UndefOr[PositiveIntObject] = js.undefined, Marker: Marker = null): DescribeTapeRecoveryPointsInput = {
+  def apply(GatewayARN: GatewayARN, Limit: Int | Double = null, Marker: Marker = null): DescribeTapeRecoveryPointsInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[DescribeTapeRecoveryPointsInput]
   }

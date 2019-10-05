@@ -34,7 +34,7 @@ object GetDocumentVersionRequest {
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
     Fields: FieldNamesType = null,
-    IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
+    IncludeCustomMetadata: js.UndefOr[Boolean] = js.undefined
   ): GetDocumentVersionRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId, VersionId = VersionId)
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)

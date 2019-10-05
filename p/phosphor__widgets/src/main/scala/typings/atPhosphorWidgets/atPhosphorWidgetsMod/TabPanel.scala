@@ -1,6 +1,6 @@
 package typings.atPhosphorWidgets.atPhosphorWidgetsMod
 
-import typings.atPhosphorWidgets.libTabpanelMod.TabPanelNs.IOptions
+import typings.atPhosphorWidgets.libTabpanelMod.TabPanel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

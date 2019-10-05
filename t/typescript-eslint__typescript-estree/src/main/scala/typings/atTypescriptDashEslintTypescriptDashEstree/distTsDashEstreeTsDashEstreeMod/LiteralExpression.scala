@@ -10,5 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TemplateLiteral
 */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.ForInitialiser because Already inherited
+- typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Expression because Already inherited
+- typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSUnaryExpression because Already inherited
 - typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.LeftHandSideExpression because Already inherited */ trait LiteralExpression extends PrimaryExpression
 

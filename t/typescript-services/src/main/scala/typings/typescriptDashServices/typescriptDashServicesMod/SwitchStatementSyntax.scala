@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SwitchStatementSyntax")
 @js.native
 class SwitchStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SwitchStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.SwitchStatementSyntax {
   def this(
     switchKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
@@ -34,7 +34,7 @@ object SwitchStatementSyntax extends js.Object {
     closeParenToken: ISyntaxToken,
     openBraceToken: ISyntaxToken,
     closeBraceToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.SwitchStatementSyntax = js.native
-  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.SwitchStatementSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.SwitchStatementSyntax = js.native
+  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScript.SwitchStatementSyntax = js.native
 }
 

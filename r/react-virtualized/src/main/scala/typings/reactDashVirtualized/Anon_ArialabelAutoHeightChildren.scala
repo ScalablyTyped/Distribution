@@ -6,7 +6,9 @@ import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
 import typings.reactDashVirtualized.distEsTableMod.HeaderMouseEventHandlerParams
 import typings.reactDashVirtualized.distEsTableMod.RowMouseEventHandlerParams
 import typings.reactDashVirtualized.distEsTableMod.SortDirectionType
+import typings.reactDashVirtualized.distEsTableMod.TableHeaderRowProps
 import typings.reactDashVirtualized.distEsTableMod.TableHeaderRowRenderer
+import typings.reactDashVirtualized.distEsTableMod.TableRowProps
 import typings.reactDashVirtualized.distEsTableMod.TableRowRenderer
 import typings.reactDashVirtualized.reactDashVirtualizedMod.Index
 import typings.reactDashVirtualized.reactDashVirtualizedMod.IndexRange
@@ -176,7 +178,7 @@ object Anon_ArialabelAutoHeightChildren {
     gridClassName: String = null,
     gridStyle: js.Any = null,
     headerClassName: String = null,
-    headerRowRenderer: TableHeaderRowRenderer = null,
+    headerRowRenderer: /* props */ TableHeaderRowProps => ReactNode = null,
     headerStyle: js.Any = null,
     height: Int | Double = null,
     id: String = null,
@@ -191,7 +193,7 @@ object Anon_ArialabelAutoHeightChildren {
     overscanRowCount: Int | Double = null,
     rowClassName: String | (js.Function1[/* info */ Index, String]) = null,
     rowGetter: /* info */ Index => _ = null,
-    rowRenderer: TableRowRenderer = null,
+    rowRenderer: /* props */ TableRowProps => ReactNode = null,
     rowStyle: CSSProperties | (js.Function1[/* info */ Index, CSSProperties]) = null,
     scrollToAlignment: String = null,
     scrollToIndex: Int | Double = null,
@@ -214,7 +216,7 @@ object Anon_ArialabelAutoHeightChildren {
     if (gridClassName != null) __obj.updateDynamic("gridClassName")(gridClassName)
     if (gridStyle != null) __obj.updateDynamic("gridStyle")(gridStyle)
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
-    if (headerRowRenderer != null) __obj.updateDynamic("headerRowRenderer")(headerRowRenderer)
+    if (headerRowRenderer != null) __obj.updateDynamic("headerRowRenderer")(js.Any.fromFunction1(headerRowRenderer))
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
@@ -229,7 +231,7 @@ object Anon_ArialabelAutoHeightChildren {
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
     if (rowGetter != null) __obj.updateDynamic("rowGetter")(js.Any.fromFunction1(rowGetter))
-    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer)
+    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(js.Any.fromFunction1(rowRenderer))
     if (rowStyle != null) __obj.updateDynamic("rowStyle")(rowStyle.asInstanceOf[js.Any])
     if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment)
     if (scrollToIndex != null) __obj.updateDynamic("scrollToIndex")(scrollToIndex.asInstanceOf[js.Any])

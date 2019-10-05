@@ -1,22 +1,22 @@
 package typings.googleDashMapsDashReact.googleDashMapsDashReactMod
 
-import typings.googlemaps.googleNs.mapsNs.FullscreenControlOptions
-import typings.googlemaps.googleNs.mapsNs.GestureHandlingOptions
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngBounds
-import typings.googlemaps.googleNs.mapsNs.LatLngBoundsLiteral
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
-import typings.googlemaps.googleNs.mapsNs.MapOptions
-import typings.googlemaps.googleNs.mapsNs.MapRestriction
-import typings.googlemaps.googleNs.mapsNs.MapTypeControlOptions
-import typings.googlemaps.googleNs.mapsNs.MapTypeId
-import typings.googlemaps.googleNs.mapsNs.MapTypeStyle
-import typings.googlemaps.googleNs.mapsNs.PanControlOptions
-import typings.googlemaps.googleNs.mapsNs.RotateControlOptions
-import typings.googlemaps.googleNs.mapsNs.ScaleControlOptions
-import typings.googlemaps.googleNs.mapsNs.StreetViewControlOptions
-import typings.googlemaps.googleNs.mapsNs.StreetViewPanorama
-import typings.googlemaps.googleNs.mapsNs.ZoomControlOptions
+import typings.googlemaps.google.maps.FullscreenControlOptions
+import typings.googlemaps.google.maps.GestureHandlingOptions
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngBounds
+import typings.googlemaps.google.maps.LatLngBoundsLiteral
+import typings.googlemaps.google.maps.LatLngLiteral
+import typings.googlemaps.google.maps.MapOptions
+import typings.googlemaps.google.maps.MapRestriction
+import typings.googlemaps.google.maps.MapTypeControlOptions
+import typings.googlemaps.google.maps.MapTypeId
+import typings.googlemaps.google.maps.MapTypeStyle
+import typings.googlemaps.google.maps.PanControlOptions
+import typings.googlemaps.google.maps.RotateControlOptions
+import typings.googlemaps.google.maps.ScaleControlOptions
+import typings.googlemaps.google.maps.StreetViewControlOptions
+import typings.googlemaps.google.maps.StreetViewPanorama
+import typings.googlemaps.google.maps.ZoomControlOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,26 +78,26 @@ object MapProps {
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     noClear: js.UndefOr[Boolean] = js.undefined,
-    onBoundsChanged: mapEventHandler = null,
-    onCenterChanged: mapEventHandler = null,
-    onClick: mapEventHandler = null,
-    onDblclick: mapEventHandler = null,
-    onDragend: mapEventHandler = null,
-    onDragstart: mapEventHandler = null,
-    onHeadingChange: mapEventHandler = null,
-    onIdle: mapEventHandler = null,
-    onMaptypeidChanged: mapEventHandler = null,
-    onMousemove: mapEventHandler = null,
-    onMouseout: mapEventHandler = null,
-    onMouseover: mapEventHandler = null,
-    onProjectionChanged: mapEventHandler = null,
-    onReady: mapEventHandler = null,
-    onRecenter: mapEventHandler = null,
-    onResize: mapEventHandler = null,
-    onRightclick: mapEventHandler = null,
-    onTilesloaded: mapEventHandler = null,
-    onTiltChanged: mapEventHandler = null,
-    onZoomChanged: mapEventHandler = null,
+    onBoundsChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onCenterChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onClick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onDblclick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onDragend: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onDragstart: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onHeadingChange: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onIdle: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onMaptypeidChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onMousemove: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onMouseout: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onMouseover: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onProjectionChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onReady: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onRecenter: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onResize: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onRightclick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onTilesloaded: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onTiltChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
+    onZoomChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], /* event */ js.UndefOr[js.Any]) => js.Any = null,
     panControl: js.UndefOr[Boolean] = js.undefined,
     panControlOptions: PanControlOptions = null,
     restriction: MapRestriction = null,
@@ -141,26 +141,26 @@ object MapProps {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)
-    if (onBoundsChanged != null) __obj.updateDynamic("onBoundsChanged")(onBoundsChanged)
-    if (onCenterChanged != null) __obj.updateDynamic("onCenterChanged")(onCenterChanged)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onDblclick != null) __obj.updateDynamic("onDblclick")(onDblclick)
-    if (onDragend != null) __obj.updateDynamic("onDragend")(onDragend)
-    if (onDragstart != null) __obj.updateDynamic("onDragstart")(onDragstart)
-    if (onHeadingChange != null) __obj.updateDynamic("onHeadingChange")(onHeadingChange)
-    if (onIdle != null) __obj.updateDynamic("onIdle")(onIdle)
-    if (onMaptypeidChanged != null) __obj.updateDynamic("onMaptypeidChanged")(onMaptypeidChanged)
-    if (onMousemove != null) __obj.updateDynamic("onMousemove")(onMousemove)
-    if (onMouseout != null) __obj.updateDynamic("onMouseout")(onMouseout)
-    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
-    if (onProjectionChanged != null) __obj.updateDynamic("onProjectionChanged")(onProjectionChanged)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onRecenter != null) __obj.updateDynamic("onRecenter")(onRecenter)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onRightclick != null) __obj.updateDynamic("onRightclick")(onRightclick)
-    if (onTilesloaded != null) __obj.updateDynamic("onTilesloaded")(onTilesloaded)
-    if (onTiltChanged != null) __obj.updateDynamic("onTiltChanged")(onTiltChanged)
-    if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(onZoomChanged)
+    if (onBoundsChanged != null) __obj.updateDynamic("onBoundsChanged")(js.Any.fromFunction3(onBoundsChanged))
+    if (onCenterChanged != null) __obj.updateDynamic("onCenterChanged")(js.Any.fromFunction3(onCenterChanged))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
+    if (onDblclick != null) __obj.updateDynamic("onDblclick")(js.Any.fromFunction3(onDblclick))
+    if (onDragend != null) __obj.updateDynamic("onDragend")(js.Any.fromFunction3(onDragend))
+    if (onDragstart != null) __obj.updateDynamic("onDragstart")(js.Any.fromFunction3(onDragstart))
+    if (onHeadingChange != null) __obj.updateDynamic("onHeadingChange")(js.Any.fromFunction3(onHeadingChange))
+    if (onIdle != null) __obj.updateDynamic("onIdle")(js.Any.fromFunction3(onIdle))
+    if (onMaptypeidChanged != null) __obj.updateDynamic("onMaptypeidChanged")(js.Any.fromFunction3(onMaptypeidChanged))
+    if (onMousemove != null) __obj.updateDynamic("onMousemove")(js.Any.fromFunction3(onMousemove))
+    if (onMouseout != null) __obj.updateDynamic("onMouseout")(js.Any.fromFunction3(onMouseout))
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(js.Any.fromFunction3(onMouseover))
+    if (onProjectionChanged != null) __obj.updateDynamic("onProjectionChanged")(js.Any.fromFunction3(onProjectionChanged))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction3(onReady))
+    if (onRecenter != null) __obj.updateDynamic("onRecenter")(js.Any.fromFunction3(onRecenter))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction3(onResize))
+    if (onRightclick != null) __obj.updateDynamic("onRightclick")(js.Any.fromFunction3(onRightclick))
+    if (onTilesloaded != null) __obj.updateDynamic("onTilesloaded")(js.Any.fromFunction3(onTilesloaded))
+    if (onTiltChanged != null) __obj.updateDynamic("onTiltChanged")(js.Any.fromFunction3(onTiltChanged))
+    if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(js.Any.fromFunction3(onZoomChanged))
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
     if (restriction != null) __obj.updateDynamic("restriction")(restriction)

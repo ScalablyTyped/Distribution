@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.rdfDashJs.rdfDashJsMod.BaseQuad because Already inherited
 - typings.rdfDashJs.rdfDashJsMod.Quad because var conflicts: graph, `object`, predicate, subject. Inlined graph_Quad, object_Quad, predicate_Quad, subject_Quad */ @JSImport("n3", "Quad")
 @js.native
 class Quad protected () extends BaseQuad {

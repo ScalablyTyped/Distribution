@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.dc.dcMod.ColorMixin because Already inherited
 - typings.dc.dcMod.BubbleMixin because var conflicts: colorAccessor_Original, colorCalculator_Original, colorDomain_Original, colors_Original. Inlined r, r, r_Original, radiusValueAccessor, radiusValueAccessor, radiusValueAccessor_Original, minRadiusWithLabel, minRadiusWithLabel, minRadiusWithLabel_Original, maxBubbleRelativeSize, maxBubbleRelativeSize, maxBubbleRelativeSize_Original */ @js.native
 trait BubbleChart extends CoordinateGridMixin[BubbleChart] {
   @JSName("elasticRadius")

@@ -17,13 +17,10 @@ trait LabelParameterVersionResult extends js.Object {
 
 object LabelParameterVersionResult {
   @scala.inline
-  def apply(
-    InvalidLabels: ParameterLabelList = null,
-    ParameterVersion: js.UndefOr[PSParameterVersion] = js.undefined
-  ): LabelParameterVersionResult = {
+  def apply(InvalidLabels: ParameterLabelList = null, ParameterVersion: Int | Double = null): LabelParameterVersionResult = {
     val __obj = js.Dynamic.literal()
     if (InvalidLabels != null) __obj.updateDynamic("InvalidLabels")(InvalidLabels)
-    if (!js.isUndefined(ParameterVersion)) __obj.updateDynamic("ParameterVersion")(ParameterVersion)
+    if (ParameterVersion != null) __obj.updateDynamic("ParameterVersion")(ParameterVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelParameterVersionResult]
   }
 }

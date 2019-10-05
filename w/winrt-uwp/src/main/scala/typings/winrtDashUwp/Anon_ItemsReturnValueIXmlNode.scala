@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.DataNs.XmlNs.DomNs.IXmlNode
+import typings.winrtDashUwp.Windows.Data.Xml.Dom.IXmlNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

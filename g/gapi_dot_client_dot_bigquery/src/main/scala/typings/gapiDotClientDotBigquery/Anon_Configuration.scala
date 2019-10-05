@@ -1,10 +1,10 @@
 package typings.gapiDotClientDotBigquery
 
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.ErrorProto
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.JobConfiguration
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.JobReference
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.JobStatistics
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.JobStatus
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.ErrorProto
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.JobConfiguration
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.JobReference
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.JobStatistics
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.JobStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

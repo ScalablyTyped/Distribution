@@ -11,9 +11,9 @@ trait InFocusGuardProps extends js.Object {
 
 object InFocusGuardProps {
   @scala.inline
-  def apply(children: ReactNode): InFocusGuardProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null): InFocusGuardProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[InFocusGuardProps]
   }
 }

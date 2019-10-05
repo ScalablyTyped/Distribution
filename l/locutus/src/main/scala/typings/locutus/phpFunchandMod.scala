@@ -7,15 +7,35 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/php/funchand", JSImport.Namespace)
 @js.native
 object phpFunchandMod extends js.Object {
-  def call_user_func(args: js.Any*): js.Any = js.native
-  def call_user_func_array(): js.Any = js.native
-  def call_user_func_array(cb: js.Any): js.Any = js.native
-  def call_user_func_array(cb: js.Any, parameters: js.Any): js.Any = js.native
-  def create_function(): js.Any = js.native
-  def create_function(args: js.Any): js.Any = js.native
-  def create_function(args: js.Any, code: js.Any): js.Any = js.native
-  def function_exists(): js.Any = js.native
-  def function_exists(funcName: js.Any): js.Any = js.native
-  def get_defined_functions(): js.Any = js.native
+  @js.native
+  object call_user_func extends js.Object {
+    def apply(args: js.Any*): js.Any = js.native
+  }
+  
+  @js.native
+  object call_user_func_array extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(cb: js.Any): js.Any = js.native
+    def apply(cb: js.Any, parameters: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object create_function extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(args: js.Any): js.Any = js.native
+    def apply(args: js.Any, code: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object function_exists extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(funcName: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object get_defined_functions extends js.Object {
+    def apply(): js.Any = js.native
+  }
+  
 }
 

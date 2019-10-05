@@ -1,7 +1,7 @@
 package typings.meteor
 
-import typings.meteor.mongoMod.MongoNs.FieldSpecifier
-import typings.meteor.mongoMod.MongoNs.SortSpecifier
+import typings.meteor.mongoMod.Mongo.FieldSpecifier
+import typings.meteor.mongoMod.Mongo.SortSpecifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

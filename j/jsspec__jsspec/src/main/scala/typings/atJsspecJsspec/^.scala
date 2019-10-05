@@ -1,14 +1,14 @@
 package typings.atJsspecJsspec
 
-import typings.atJsspecJsspec.JSSpecNs.Context
-import typings.atJsspecJsspec.JSSpecNs.Example
-import typings.atJsspecJsspec.JSSpecNs.Hook
-import typings.atJsspecJsspec.JSSpecNs.LazyEvaluated
-import typings.atJsspecJsspec.JSSpecNs.PendingContext
-import typings.atJsspecJsspec.JSSpecNs.PendingExample
-import typings.atJsspecJsspec.JSSpecNs.SharedContext
-import typings.atJsspecJsspec.JSSpecNs.SharedInvocation
-import typings.atJsspecJsspec.JSSpecNs.Subject
+import typings.atJsspecJsspec.JSSpec.Context
+import typings.atJsspecJsspec.JSSpec.Example
+import typings.atJsspecJsspec.JSSpec.Hook
+import typings.atJsspecJsspec.JSSpec.LazyEvaluated
+import typings.atJsspecJsspec.JSSpec.PendingContext
+import typings.atJsspecJsspec.JSSpec.PendingExample
+import typings.atJsspecJsspec.JSSpec.SharedContext
+import typings.atJsspecJsspec.JSSpec.SharedInvocation
+import typings.atJsspecJsspec.JSSpec.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

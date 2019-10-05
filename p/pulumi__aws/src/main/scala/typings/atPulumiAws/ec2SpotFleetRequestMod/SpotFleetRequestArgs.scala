@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ec2SpotFleetRequestMod
 
-import typings.atPulumiAws.typesInputMod.ec2Ns.SpotFleetRequestLaunchSpecification
+import typings.atPulumiAws.typesInputMod.ec2.SpotFleetRequestLaunchSpecification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

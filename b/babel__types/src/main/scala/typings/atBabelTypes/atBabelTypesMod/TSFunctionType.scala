@@ -43,3 +43,26 @@ object TSFunctionType {
   }
 }
 
+@JSImport("@babel/types", "tsFunctionType")
+@js.native
+object tsFunctionType extends js.Object {
+  def apply(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
+  def apply(
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSFunctionType = js.native
+  def apply(typeParameters: Null, parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
+  def apply(
+    typeParameters: Null,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSFunctionType = js.native
+  def apply(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
+  def apply(
+    typeParameters: TSTypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSFunctionType = js.native
+}
+

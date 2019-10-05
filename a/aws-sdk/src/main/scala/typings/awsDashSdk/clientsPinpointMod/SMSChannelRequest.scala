@@ -21,11 +21,7 @@ trait SMSChannelRequest extends js.Object {
 
 object SMSChannelRequest {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[__boolean] = js.undefined,
-    SenderId: __string = null,
-    ShortCode: __string = null
-  ): SMSChannelRequest = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined, SenderId: __string = null, ShortCode: __string = null): SMSChannelRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId)

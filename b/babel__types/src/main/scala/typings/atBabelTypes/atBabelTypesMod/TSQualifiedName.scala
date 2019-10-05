@@ -39,3 +39,9 @@ object TSQualifiedName {
   }
 }
 
+@JSImport("@babel/types", "tsQualifiedName")
+@js.native
+object tsQualifiedName extends js.Object {
+  def apply(left: TSEntityName, right: Identifier): TSQualifiedName = js.native
+}
+

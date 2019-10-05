@@ -34,3 +34,9 @@ object ArgumentPlaceholder {
   }
 }
 
+@JSImport("@babel/types", "argumentPlaceholder")
+@js.native
+object argumentPlaceholder extends js.Object {
+  def apply(): ArgumentPlaceholder = js.native
+}
+

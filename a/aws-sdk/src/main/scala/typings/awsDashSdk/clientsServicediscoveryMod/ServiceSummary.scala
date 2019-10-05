@@ -44,7 +44,7 @@ object ServiceSummary {
     HealthCheckConfig: HealthCheckConfig = null,
     HealthCheckCustomConfig: HealthCheckCustomConfig = null,
     Id: ResourceId = null,
-    InstanceCount: js.UndefOr[ResourceCount] = js.undefined,
+    InstanceCount: Int | Double = null,
     Name: ServiceName = null
   ): ServiceSummary = {
     val __obj = js.Dynamic.literal()
@@ -55,7 +55,7 @@ object ServiceSummary {
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig)
     if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig)
     if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     __obj.asInstanceOf[ServiceSummary]
   }

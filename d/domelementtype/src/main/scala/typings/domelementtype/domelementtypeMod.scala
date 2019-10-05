@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
 @JSImport("domelementtype", JSImport.Namespace)
 @js.native
 object domelementtypeMod extends js.Object {
-  @JSName("DomElementType")
   @js.native
-  object DomElementTypeNs extends js.Object {
+  object DomElementType extends js.Object {
     /***
       * <![CDATA[ ... ]]>
       */

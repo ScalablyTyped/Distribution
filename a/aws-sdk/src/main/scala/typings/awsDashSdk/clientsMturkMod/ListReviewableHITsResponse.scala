@@ -18,15 +18,11 @@ trait ListReviewableHITsResponse extends js.Object {
 
 object ListReviewableHITsResponse {
   @scala.inline
-  def apply(
-    HITs: HITList = null,
-    NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined
-  ): ListReviewableHITsResponse = {
+  def apply(HITs: HITList = null, NextToken: PaginationToken = null, NumResults: Int | Double = null): ListReviewableHITsResponse = {
     val __obj = js.Dynamic.literal()
     if (HITs != null) __obj.updateDynamic("HITs")(HITs)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReviewableHITsResponse]
   }
 }

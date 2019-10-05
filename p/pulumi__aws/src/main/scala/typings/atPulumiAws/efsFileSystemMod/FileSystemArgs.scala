@@ -1,7 +1,7 @@
 package typings.atPulumiAws.efsFileSystemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.efsNs.FileSystemLifecyclePolicy
+import typings.atPulumiAws.typesInputMod.efs.FileSystemLifecyclePolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

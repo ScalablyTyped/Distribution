@@ -1,6 +1,6 @@
 package typings.prometheusDashGcDashStats.prometheusDashGcDashStatsMod
 
-import typings.prometheusDashGcDashStats.prometheusDashGcDashStatsMod.prometheusGcStatsNs.Config
+import typings.prometheusDashGcDashStats.prometheusDashGcDashStatsMod.prometheusGcStats.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

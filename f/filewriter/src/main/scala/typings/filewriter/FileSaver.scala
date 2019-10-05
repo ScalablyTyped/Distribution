@@ -83,16 +83,6 @@ trait FileSaver extends EventTarget {
 
 @JSGlobal("FileSaver")
 @js.native
-class FileSaverCls protected () extends FileSaver {
-  /**
-    * When the FileSaver constructor is called, the user agent must return a new FileSaver object with readyState set to INIT.
-    * This constructor must be visible when the script's global object is either a Window object or an object implementing the WorkerUtils interface.
-    */
-  def this(data: Blob) = this()
-}
-
-@JSGlobal("FileSaver")
-@js.native
 object FileSaver
   extends /**
   * When the FileSaver constructor is called, the user agent must return a new FileSaver object with readyState set to INIT.

@@ -1,6 +1,6 @@
 package typings.reactDashWow.reactDashWowMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ReactWOWProps extends js.Object {
     * Animation name.
     * @see https://daneden.github.io/animate.css/
     */
-  var animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any
+  var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any
   /**
     * The callback is fired every time an animation is stoped.
     */
@@ -66,7 +66,7 @@ trait ReactWOWProps extends js.Object {
 object ReactWOWProps {
   @scala.inline
   def apply(
-    animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any,
+    animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any,
     children: Element,
     animateClass: String = null,
     callback: () => Unit = null,

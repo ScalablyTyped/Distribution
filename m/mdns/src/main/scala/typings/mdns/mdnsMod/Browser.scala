@@ -1,8 +1,9 @@
 package typings.mdns.mdnsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mdns.mdnsStrings.serviceDown
 import typings.mdns.mdnsStrings.serviceUp
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +21,5 @@ trait Browser extends EventEmitter {
 
 @JSImport("mdns", "Browser")
 @js.native
-class BrowserCls protected () extends Browser {
-  def this(serviceType: ServiceType) = this()
-  def this(serviceType: ServiceType, options: BrowserOptions) = this()
-}
+object Browser extends TopLevel[BrowserStatic]
 

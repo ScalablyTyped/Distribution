@@ -21,14 +21,10 @@ trait DescribeJobQueuesRequest extends js.Object {
 
 object DescribeJobQueuesRequest {
   @scala.inline
-  def apply(
-    jobQueues: StringList = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: String = null
-  ): DescribeJobQueuesRequest = {
+  def apply(jobQueues: StringList = null, maxResults: Int | Double = null, nextToken: String = null): DescribeJobQueuesRequest = {
     val __obj = js.Dynamic.literal()
     if (jobQueues != null) __obj.updateDynamic("jobQueues")(jobQueues)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeJobQueuesRequest]
   }

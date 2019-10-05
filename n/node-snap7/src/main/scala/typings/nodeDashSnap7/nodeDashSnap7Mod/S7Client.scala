@@ -1,5 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js
@@ -578,5 +579,5 @@ trait S7Client extends js.Object {
 
 @JSImport("node-snap7", "S7Client")
 @js.native
-class S7ClientCls () extends S7Client
+object S7Client extends TopLevel[S7Client_Static]
 

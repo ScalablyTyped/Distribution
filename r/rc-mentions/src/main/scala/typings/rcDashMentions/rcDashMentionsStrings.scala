@@ -1,6 +1,6 @@
 package typings.rcDashMentions
 
-import typings.rcDashMentions.esMentionsMod.Placement
+import typings.rcDashMentions.libMentionsMod.Placement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ object rcDashMentionsStrings {
   @js.native
   sealed trait bottom
     extends Placement
-       with typings.rcDashMentions.libMentionsMod.Placement
+       with typings.rcDashMentions.esMentionsMod.Placement
   
   @js.native
   sealed trait onChange extends js.Object
@@ -26,7 +26,7 @@ object rcDashMentionsStrings {
   @js.native
   sealed trait top
     extends Placement
-       with typings.rcDashMentions.libMentionsMod.Placement
+       with typings.rcDashMentions.esMentionsMod.Placement
   
   @scala.inline
   def OmitFunc: OmitFunc = "OmitFunc".asInstanceOf[OmitFunc]

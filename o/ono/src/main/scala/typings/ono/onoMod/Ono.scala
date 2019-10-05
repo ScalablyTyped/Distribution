@@ -1,15 +1,17 @@
 package typings.ono.onoMod
 
-import typings.ono.esmTypesMod.ErrorLike
-import typings.ono.esmTypesMod.ErrorLikeConstructor
-import typings.ono.esmTypesMod.Ono
+import org.scalablytyped.runtime.TopLevel
+import typings.ono.esmTypesMod.OnoConstructor
+import typings.ono.esmTypesMod.OnoSingleton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("ono", "Ono")
 @js.native
-class OnoCls[T /* <: ErrorLike */] protected () extends Ono[T] {
-  def this(constructor: ErrorLikeConstructor[T]) = this()
-}
+object Ono extends TopLevel[OnoConstructor]
+
+@JSImport("ono", "ono")
+@js.native
+object ono extends TopLevel[OnoSingleton]
 

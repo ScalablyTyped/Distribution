@@ -65,5 +65,10 @@ object Merge extends js.Object {
     theirTree: typings.nodegit.treeMod.Tree,
     opts: typings.nodegit.mergeDashOptionsMod.MergeOptions
   ): js.Promise[Index] = js.native
+  type ANALYSIS = typings.nodegit.mergeMod.Merge.ANALYSIS
+  type FILE_FAVOR = typings.nodegit.mergeMod.Merge.FILE_FAVOR
+  type FILE_FLAGS = typings.nodegit.mergeMod.Merge.FILE_FLAGS
+  type PREFERENCE = typings.nodegit.mergeMod.Merge.PREFERENCE
+  type TREE_FLAG = typings.nodegit.mergeMod.Merge.TREE_FLAG
 }
 

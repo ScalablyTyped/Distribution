@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashAutocomplete
 
-import typings.amapDashJsDashApiDashAutocomplete.AMapNs.AutocompleteNs.Tip
+import typings.amapDashJsDashApiDashAutocomplete.AMap.Autocomplete.Tip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

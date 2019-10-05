@@ -16,11 +16,11 @@ object Context {
   def apply(
     options: Options,
     StringDictionary: /* data */ StringDictionary[js.Any] = null,
-    callback: SassRenderCallback = null
+    callback: (/* err */ SassError, /* result */ Result) => js.Any = null
   ): Context = {
     val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     __obj.asInstanceOf[Context]
   }
 }

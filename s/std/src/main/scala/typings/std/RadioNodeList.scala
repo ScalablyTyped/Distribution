@@ -12,9 +12,5 @@ trait RadioNodeList extends NodeList {
 
 @JSGlobal("RadioNodeList")
 @js.native
-class RadioNodeListCls () extends RadioNodeList
-
-@JSGlobal("RadioNodeList")
-@js.native
 object RadioNodeList extends Instantiable0[RadioNodeList]
 

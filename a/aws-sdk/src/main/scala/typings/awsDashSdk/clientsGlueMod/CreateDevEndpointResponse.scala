@@ -94,8 +94,8 @@ object CreateDevEndpointResponse {
     ExtraPythonLibsS3Path: GenericString = null,
     FailureReason: GenericString = null,
     GlueVersion: GlueVersionString = null,
-    NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
+    NumberOfNodes: Int | Double = null,
+    NumberOfWorkers: Int | Double = null,
     RoleArn: RoleArn = null,
     SecurityConfiguration: NameString = null,
     SecurityGroupIds: StringList = null,
@@ -104,7 +104,7 @@ object CreateDevEndpointResponse {
     VpcId: GenericString = null,
     WorkerType: WorkerType = null,
     YarnEndpointAddress: GenericString = null,
-    ZeppelinRemoteSparkInterpreterPort: js.UndefOr[IntegerValue] = js.undefined
+    ZeppelinRemoteSparkInterpreterPort: Int | Double = null
   ): CreateDevEndpointResponse = {
     val __obj = js.Dynamic.literal()
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
@@ -115,8 +115,8 @@ object CreateDevEndpointResponse {
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
+    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
@@ -125,7 +125,7 @@ object CreateDevEndpointResponse {
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     if (YarnEndpointAddress != null) __obj.updateDynamic("YarnEndpointAddress")(YarnEndpointAddress)
-    if (!js.isUndefined(ZeppelinRemoteSparkInterpreterPort)) __obj.updateDynamic("ZeppelinRemoteSparkInterpreterPort")(ZeppelinRemoteSparkInterpreterPort)
+    if (ZeppelinRemoteSparkInterpreterPort != null) __obj.updateDynamic("ZeppelinRemoteSparkInterpreterPort")(ZeppelinRemoteSparkInterpreterPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDevEndpointResponse]
   }
 }

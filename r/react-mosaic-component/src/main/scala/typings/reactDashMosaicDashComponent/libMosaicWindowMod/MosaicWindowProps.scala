@@ -1,10 +1,11 @@
 package typings.reactDashMosaicDashComponent.libMosaicWindowMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.reactDashMosaicDashComponent.libTypesMod.CreateNode
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicBranch
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
+import typings.reactDashMosaicDashComponent.libTypesMod.MosaicNode
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.drop
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.reset
 import scala.scalajs.js
@@ -36,7 +37,7 @@ object MosaicWindowProps {
     additionalControlButtonText: String = null,
     additionalControls: ReactNode = null,
     className: String = null,
-    createNode: CreateNode[T] = null,
+    createNode: /* repeated */ js.Any => js.Promise[MosaicNode[T]] | MosaicNode[T] = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     onDragEnd: /* type */ drop | reset => Unit = null,
     onDragStart: () => Unit = null,
@@ -48,7 +49,7 @@ object MosaicWindowProps {
     if (additionalControlButtonText != null) __obj.updateDynamic("additionalControlButtonText")(additionalControlButtonText)
     if (additionalControls != null) __obj.updateDynamic("additionalControls")(additionalControls.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (createNode != null) __obj.updateDynamic("createNode")(createNode)
+    if (createNode != null) __obj.updateDynamic("createNode")(js.Any.fromFunction1(createNode))
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))

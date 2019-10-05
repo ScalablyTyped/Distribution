@@ -1,6 +1,6 @@
 package typings.easyDashXDashHeaders.httpMod
 
-import typings.easyDashXDashHeaders.NodeJSNs.Timer
+import typings.easyDashXDashHeaders.NodeJS.Timer
 import typings.easyDashXDashHeaders.netMod.Socket
 import typings.easyDashXDashHeaders.streamMod.Readable
 import scala.scalajs.js

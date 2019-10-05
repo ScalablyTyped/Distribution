@@ -13,9 +13,9 @@ trait Statistics extends js.Object {
 
 object Statistics {
   @scala.inline
-  def apply(count: js.UndefOr[Count] = js.undefined): Statistics = {
+  def apply(count: Int | Double = null): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
 }

@@ -29,7 +29,7 @@ object DeleteRouteRequest {
     RouteTableId: String,
     DestinationCidrBlock: String = null,
     DestinationIpv6CidrBlock: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteRouteRequest = {
     val __obj = js.Dynamic.literal(RouteTableId = RouteTableId)
     if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock)

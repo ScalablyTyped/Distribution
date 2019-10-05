@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportFindResultMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindResultProperties
+import typings.arcgisDashJsDashApi.__esri.FindResult
+import typings.arcgisDashJsDashApi.__esri.FindResultProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

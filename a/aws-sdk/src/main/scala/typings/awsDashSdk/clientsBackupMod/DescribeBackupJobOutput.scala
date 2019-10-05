@@ -79,10 +79,10 @@ object DescribeBackupJobOutput {
   @scala.inline
   def apply(
     BackupJobId: String = null,
-    BackupSizeInBytes: js.UndefOr[Long] = js.undefined,
+    BackupSizeInBytes: Int | Double = null,
     BackupVaultArn: ARN = null,
     BackupVaultName: BackupVaultName = null,
-    BytesTransferred: js.UndefOr[Long] = js.undefined,
+    BytesTransferred: Int | Double = null,
     CompletionDate: timestamp = null,
     CreatedBy: RecoveryPointCreator = null,
     CreationDate: timestamp = null,
@@ -98,10 +98,10 @@ object DescribeBackupJobOutput {
   ): DescribeBackupJobOutput = {
     val __obj = js.Dynamic.literal()
     if (BackupJobId != null) __obj.updateDynamic("BackupJobId")(BackupJobId)
-    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes)
+    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn)
     if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName)
-    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred)
+    if (BytesTransferred != null) __obj.updateDynamic("BytesTransferred")(BytesTransferred.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate)
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)

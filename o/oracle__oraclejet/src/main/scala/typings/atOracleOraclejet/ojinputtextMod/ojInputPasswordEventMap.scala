@@ -10,11 +10,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.off
 import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
-import typings.atOracleOraclejet.ojinputtextMod.ojInputPasswordNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputtextMod.ojInputPasswordNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateStart
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent

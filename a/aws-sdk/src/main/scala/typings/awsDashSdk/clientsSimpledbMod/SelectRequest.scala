@@ -23,7 +23,7 @@ object SelectRequest {
   @scala.inline
   def apply(
     SelectExpression: String,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
+    ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined,
     NextToken: String = null
   ): SelectRequest = {
     val __obj = js.Dynamic.literal(SelectExpression = SelectExpression)

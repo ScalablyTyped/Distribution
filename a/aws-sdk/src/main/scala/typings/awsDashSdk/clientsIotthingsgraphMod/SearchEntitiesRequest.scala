@@ -32,14 +32,14 @@ object SearchEntitiesRequest {
   def apply(
     entityTypes: EntityTypes,
     filters: EntityFilters = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    namespaceVersion: js.UndefOr[Version] = js.undefined,
+    maxResults: Int | Double = null,
+    namespaceVersion: Int | Double = null,
     nextToken: NextToken = null
   ): SearchEntitiesRequest = {
     val __obj = js.Dynamic.literal(entityTypes = entityTypes)
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[SearchEntitiesRequest]
   }

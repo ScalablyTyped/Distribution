@@ -1,7 +1,7 @@
 package typings.atPulumiAws.applicationloadbalancingListenerRuleMod
 
-import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.ListenerRuleAction
-import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.ListenerRuleCondition
+import typings.atPulumiAws.typesInputMod.applicationloadbalancing.ListenerRuleAction
+import typings.atPulumiAws.typesInputMod.applicationloadbalancing.ListenerRuleCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

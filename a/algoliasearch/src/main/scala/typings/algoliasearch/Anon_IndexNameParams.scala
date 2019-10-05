@@ -1,6 +1,6 @@
 package typings.algoliasearch
 
-import typings.algoliasearch.algoliasearchMod.SearchForFacetValuesNs.Parameters
+import typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

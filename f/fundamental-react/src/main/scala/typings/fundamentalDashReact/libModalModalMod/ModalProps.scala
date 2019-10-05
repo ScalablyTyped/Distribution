@@ -7,9 +7,9 @@ import typings.fundamentalDashReact.fundamentalDashReactNumbers.`3`
 import typings.fundamentalDashReact.fundamentalDashReactNumbers.`4`
 import typings.fundamentalDashReact.fundamentalDashReactNumbers.`5`
 import typings.fundamentalDashReact.fundamentalDashReactNumbers.`6`
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait ModalProps
   var localizedText: js.UndefOr[Anon_CloseButton] = js.undefined
   /* Callback function passing event when close button is clicked. */
   var onClose: js.UndefOr[
-    js.Function1[/* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent], Unit]
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
   ] = js.undefined
   /* Set to **true** to make the dialog visible. */
   var show: js.UndefOr[Boolean] = js.undefined
@@ -53,7 +53,7 @@ object ModalProps {
     headerProps: StringDictionary[js.Any] = null,
     headingLevel: `2` | `3` | `4` | `5` | `6` = null,
     localizedText: Anon_CloseButton = null,
-    onClose: /* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit = null,
+    onClose: /* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit = null,
     show: js.UndefOr[Boolean] = js.undefined,
     titleProps: StringDictionary[js.Any] = null
   ): ModalProps = {

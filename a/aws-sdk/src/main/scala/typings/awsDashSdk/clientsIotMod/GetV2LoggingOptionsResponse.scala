@@ -23,7 +23,7 @@ object GetV2LoggingOptionsResponse {
   @scala.inline
   def apply(
     defaultLogLevel: LogLevel = null,
-    disableAllLogs: js.UndefOr[DisableAllLogs] = js.undefined,
+    disableAllLogs: js.UndefOr[scala.Boolean] = js.undefined,
     roleArn: AwsArn = null
   ): GetV2LoggingOptionsResponse = {
     val __obj = js.Dynamic.literal()

@@ -34,7 +34,7 @@ object SdkConfigurationProperty {
     description: String = null,
     friendlyName: String = null,
     name: String = null,
-    required: js.UndefOr[Boolean] = js.undefined
+    required: js.UndefOr[scala.Boolean] = js.undefined
   ): SdkConfigurationProperty = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

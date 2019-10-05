@@ -1,5 +1,6 @@
 package typings.karma.karmaMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +14,8 @@ trait Stopper extends js.Object {
   def stop(options: ConfigOptions): Unit = js.native
   def stop(options: ConfigOptions, callback: ServerCallback): Unit = js.native
 }
+
+@JSImport("karma", "stopper")
+@js.native
+object stopper extends TopLevel[Stopper]
 

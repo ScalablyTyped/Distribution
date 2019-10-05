@@ -1,6 +1,7 @@
 package typings.reactDashOnclickoutside.reactDashOnclickoutsideMod
 
-import typings.react.reactMod.MouseEventHandler
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object AdditionalProps {
     disableOnClickOutside: js.UndefOr[Boolean] = js.undefined,
     eventTypes: String | js.Array[String] = null,
     excludeScrollbar: js.UndefOr[Boolean] = js.undefined,
-    handleClickOutside: MouseEventHandler[_] = null,
+    handleClickOutside: MouseEvent[_, NativeMouseEvent] => Unit = null,
     outsideClickIgnoreClass: String = null,
     preventDefault: js.UndefOr[Boolean] = js.undefined,
     stopPropagation: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +29,7 @@ object AdditionalProps {
     if (!js.isUndefined(disableOnClickOutside)) __obj.updateDynamic("disableOnClickOutside")(disableOnClickOutside)
     if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(excludeScrollbar)) __obj.updateDynamic("excludeScrollbar")(excludeScrollbar)
-    if (handleClickOutside != null) __obj.updateDynamic("handleClickOutside")(handleClickOutside)
+    if (handleClickOutside != null) __obj.updateDynamic("handleClickOutside")(js.Any.fromFunction1(handleClickOutside))
     if (outsideClickIgnoreClass != null) __obj.updateDynamic("outsideClickIgnoreClass")(outsideClickIgnoreClass)
     if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
     if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)

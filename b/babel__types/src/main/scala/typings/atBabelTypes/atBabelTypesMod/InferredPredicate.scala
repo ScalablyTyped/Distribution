@@ -36,3 +36,9 @@ object InferredPredicate {
   }
 }
 
+@JSImport("@babel/types", "inferredPredicate")
+@js.native
+object inferredPredicate extends js.Object {
+  def apply(): InferredPredicate = js.native
+}
+

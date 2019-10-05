@@ -23,13 +23,13 @@ object reactDashNativeDashSvgDashChartsComponents extends reactDashNativeDashSvg
   ] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChartProps[T]]]
   @scala.inline
-  def DecoratorsNsHorizontalLine: ComponentType[HorizontalLineProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.HorizontalLine].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DecoratorsHorizontalLine: ComponentType[HorizontalLineProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.Decorators.HorizontalLine].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps]]
   @scala.inline
-  def DecoratorsNsPoint: ComponentType[PointProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Point].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DecoratorsPoint: ComponentType[PointProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.Decorators.Point].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps]]
   @scala.inline
-  def DecoratorsNsTooltip: ComponentType[TooltipProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.DecoratorsNs.Tooltip].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DecoratorsTooltip: ComponentType[TooltipProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.Decorators.Tooltip].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps]]
   @scala.inline
   def Grid[T]: ComponentType[

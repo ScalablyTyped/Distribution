@@ -1,7 +1,7 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.Bundle
-import typings.fhir.fhirNs.DomainResource
+import typings.fhir.fhir.Bundle
+import typings.fhir.fhir.DomainResource
 import typings.request.requestMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`

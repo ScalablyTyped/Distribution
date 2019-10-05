@@ -1,8 +1,10 @@
 package typings.atJupyterlabOutputarea.libModelMod
 
 import typings.atJupyterlabObservables.libObservablelistMod.IObservableList
-import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModelNs.ChangedArgs
-import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModelNs.IOptions
+import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.ChangedArgs
+import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.IContentFactory
+import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.IOptions
+import typings.atJupyterlabOutputarea.libModelMod.OutputAreaModel.ContentFactory
 import typings.atJupyterlabRendermime.libOutputmodelMod.IOutputModel
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -74,5 +76,26 @@ class OutputAreaModel () extends IOutputAreaModel {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+}
+
+@JSImport("@jupyterlab/outputarea/lib/model", "OutputAreaModel")
+@js.native
+object OutputAreaModel extends js.Object {
+  /**
+    * The default implementation of a `IModelOutputFactory`.
+    */
+  @js.native
+  class ContentFactory () extends IContentFactory {
+    /**
+      * Create an output model.
+      */
+    /* CompleteClass */
+    override def createOutputModel(options: typings.atJupyterlabRendermime.libOutputmodelMod.IOutputModel.IOptions): IOutputModel = js.native
+  }
+  
+  /**
+    * The default output model factory.
+    */
+  val defaultContentFactory: ContentFactory = js.native
 }
 

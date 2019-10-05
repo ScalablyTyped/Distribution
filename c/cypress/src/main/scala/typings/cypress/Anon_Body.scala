@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.ObjectLike
+import typings.cypress.Cypress.ObjectLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.digibyte.digibyteMod
 
-import typings.digibyte.digibyteMod.NetworksNs.Network
+import typings.digibyte.digibyteMod.Networks.Network
 import typings.node.Buffer
 import typings.std.Error
 import typings.std.Uint8Array

@@ -3,8 +3,8 @@ package typings.atPulumiAws.applicationloadbalancingLoadBalancerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.albLoadBalancerTypeMod.LoadBalancerType
-import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.LoadBalancerAccessLogs
-import typings.atPulumiAws.typesInputMod.applicationloadbalancingNs.LoadBalancerSubnetMapping
+import typings.atPulumiAws.typesInputMod.applicationloadbalancing.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesInputMod.applicationloadbalancing.LoadBalancerSubnetMapping
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -17,10 +17,10 @@ trait DependencyRevision extends js.Object {
 
 object DependencyRevision {
   @scala.inline
-  def apply(id: Urn = null, revisionNumber: js.UndefOr[Version] = js.undefined): DependencyRevision = {
+  def apply(id: Urn = null, revisionNumber: Int | Double = null): DependencyRevision = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyRevision]
   }
 }

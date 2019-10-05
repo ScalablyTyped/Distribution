@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsEditorMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Editor
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.EditorProperties
+import typings.arcgisDashJsDashApi.__esri.Editor
+import typings.arcgisDashJsDashApi.__esri.EditorProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

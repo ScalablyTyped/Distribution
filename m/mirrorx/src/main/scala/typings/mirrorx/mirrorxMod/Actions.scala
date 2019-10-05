@@ -1,6 +1,7 @@
 package typings.mirrorx.mirrorxMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
 }
+
+@JSImport("mirrorx", "actions")
+@js.native
+object actions extends TopLevel[Actions]
 

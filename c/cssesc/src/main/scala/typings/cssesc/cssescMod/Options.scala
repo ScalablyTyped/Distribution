@@ -1,5 +1,6 @@
 package typings.cssesc.cssescMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
 }
+
+@JSImport("cssesc", "options")
+@js.native
+object options extends TopLevel[Options]
 

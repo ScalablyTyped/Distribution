@@ -8,6 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.webicon.iconIconMod.Icon because Already inherited
+- typings.webicon.iconOptionsDownloadableMod.Downloadable because Already inherited
 - typings.webicon.iconOptionsStoreableMod.Storeable because var conflicts: iconIdParser, uri, url. Inlined preloadable, iconIdResolver */ trait SvgIconSetOptions extends IconSetOptions {
   @JSName("cumulative")
   var cumulative_SvgIconSetOptions: js.UndefOr[`false`] = js.undefined

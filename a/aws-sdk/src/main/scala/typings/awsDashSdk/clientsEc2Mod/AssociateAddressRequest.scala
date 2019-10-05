@@ -39,8 +39,8 @@ object AssociateAddressRequest {
   @scala.inline
   def apply(
     AllocationId: String = null,
-    AllowReassociation: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    AllowReassociation: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceId: String = null,
     NetworkInterfaceId: String = null,
     PrivateIpAddress: String = null,

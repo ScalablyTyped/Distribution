@@ -2,13 +2,14 @@ package typings.winston.libWinstonTransportsMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait FileTransportInstance
-  extends typings.winstonDashTransport.winstonDashTransportMod.^
+  extends ^
      with Instantiable0[FileTransportInstance]
      with Instantiable1[/* options */ FileTransportOptions, FileTransportInstance] {
   var dirname: String = js.native

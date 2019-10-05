@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsSublayersOwnerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Sublayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SublayersOwner
+import typings.arcgisDashJsDashApi.__esri.Collection
+import typings.arcgisDashJsDashApi.__esri.Sublayer
+import typings.arcgisDashJsDashApi.__esri.SublayersOwner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValuesResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.uniqueValuesUniqueValuesParams
+import typings.arcgisDashJsDashApi.__esri.UniqueValuesResult
+import typings.arcgisDashJsDashApi.__esri.uniqueValuesUniqueValuesParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

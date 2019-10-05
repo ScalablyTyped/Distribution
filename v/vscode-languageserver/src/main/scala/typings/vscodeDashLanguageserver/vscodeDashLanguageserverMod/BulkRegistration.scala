@@ -34,3 +34,13 @@ trait BulkRegistration extends js.Object {
   ): Unit = js.native
 }
 
+@JSImport("vscode-languageserver", "BulkRegistration")
+@js.native
+object BulkRegistration extends js.Object {
+  /**
+    * Creates a new bulk registration.
+    * @return an empty bulk registration.
+    */
+  def create(): BulkRegistration = js.native
+}
+

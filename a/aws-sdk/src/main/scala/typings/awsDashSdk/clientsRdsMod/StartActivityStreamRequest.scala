@@ -29,7 +29,7 @@ object StartActivityStreamRequest {
     KmsKeyId: String,
     Mode: ActivityStreamMode,
     ResourceArn: String,
-    ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
   ): StartActivityStreamRequest = {
     val __obj = js.Dynamic.literal(KmsKeyId = KmsKeyId, Mode = Mode.asInstanceOf[js.Any], ResourceArn = ResourceArn)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)

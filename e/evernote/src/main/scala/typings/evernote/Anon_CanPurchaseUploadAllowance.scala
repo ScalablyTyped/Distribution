@@ -1,6 +1,6 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.SponsoredGroupRole
+import typings.evernote.evernoteMod.Evernote.SponsoredGroupRole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

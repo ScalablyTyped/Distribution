@@ -3,7 +3,7 @@ package typings.jsdom
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Error
 import typings.toughDashCookie.toughDashCookieMod.CookieJar
-import typings.toughDashCookie.toughDashCookieMod.CookieJarNs.Serialized
+import typings.toughDashCookie.toughDashCookieMod.CookieJar.Serialized
 import typings.toughDashCookie.toughDashCookieMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`

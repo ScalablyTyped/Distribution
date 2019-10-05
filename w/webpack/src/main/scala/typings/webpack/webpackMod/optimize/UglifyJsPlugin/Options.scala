@@ -1,0 +1,68 @@
+package typings.webpack.webpackMod.optimize.UglifyJsPlugin
+
+import typings.std.RegExp
+import typings.uglifyDashJs.uglifyDashJsMod.CompressOptions
+import typings.uglifyDashJs.uglifyDashJsMod.MangleOptions
+import typings.uglifyDashJs.uglifyDashJsMod.MinifyOptions
+import typings.uglifyDashJs.uglifyDashJsMod.OutputOptions
+import typings.uglifyDashJs.uglifyDashJsMod.ParseOptions
+import typings.uglifyDashJs.uglifyDashJsStrings.verbose
+import typings.webpack.Anon_Cache
+import typings.webpack.webpackMod.Condition
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends MinifyOptions {
+  var beautify: js.UndefOr[Boolean] = js.undefined
+  var comments: js.UndefOr[Boolean | RegExp | CommentFilter] = js.undefined
+  var exclude: js.UndefOr[Condition | js.Array[Condition]] = js.undefined
+  var include: js.UndefOr[Condition | js.Array[Condition]] = js.undefined
+  /** Parallelization can speedup your build significantly and is therefore highly recommended. */
+  var parallel: js.UndefOr[Boolean | Anon_Cache] = js.undefined
+  @JSName("sourceMap")
+  var sourceMap_Options: js.UndefOr[Boolean] = js.undefined
+  var test: js.UndefOr[Condition | js.Array[Condition]] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    beautify: js.UndefOr[Boolean] = js.undefined,
+    comments: Boolean | RegExp | CommentFilter = null,
+    compress: Boolean | CompressOptions = null,
+    exclude: Condition | js.Array[Condition] = null,
+    ie8: js.UndefOr[Boolean] = js.undefined,
+    include: Condition | js.Array[Condition] = null,
+    keep_fnames: js.UndefOr[Boolean] = js.undefined,
+    mangle: Boolean | MangleOptions = null,
+    nameCache: js.Object = null,
+    output: OutputOptions = null,
+    parallel: Boolean | Anon_Cache = null,
+    parse: ParseOptions = null,
+    sourceMap: js.UndefOr[Boolean] = js.undefined,
+    test: Condition | js.Array[Condition] = null,
+    toplevel: js.UndefOr[Boolean] = js.undefined,
+    warnings: Boolean | verbose = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames)
+    if (mangle != null) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
+    if (nameCache != null) __obj.updateDynamic("nameCache")(nameCache)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

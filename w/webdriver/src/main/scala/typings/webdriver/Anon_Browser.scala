@@ -1,6 +1,6 @@
 package typings.webdriver
 
-import typings.webdriver.WebDriverNs.LoggingPreferences
+import typings.webdriver.WebDriver.LoggingPreferences
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

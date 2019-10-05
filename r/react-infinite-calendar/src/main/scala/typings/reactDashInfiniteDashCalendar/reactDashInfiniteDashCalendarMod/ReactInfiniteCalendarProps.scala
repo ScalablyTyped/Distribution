@@ -65,7 +65,7 @@ object ReactInfiniteCalendarProps {
     minDate: DateType = null,
     onScroll: /* scrollTop */ Double => Unit = null,
     onScrollEnd: /* scrollTop */ Double => Unit = null,
-    onSelect: DateSelectFunction | RangedSelectFunction = null,
+    onSelect: (/* date */ Date) | (/* rangedDate */ RangedSelection) => Unit = null,
     rowHeight: Int | Double = null,
     selected: DateType | `false` | Anon_End = null,
     tabIndex: Int | Double = null,
@@ -89,7 +89,7 @@ object ReactInfiniteCalendarProps {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(js.Any.fromFunction1(onScrollEnd))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

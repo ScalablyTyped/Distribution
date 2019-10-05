@@ -1,17 +1,8 @@
 package typings.remotedevDashSerialize
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Collection
-import typings.immutable.immutableMod.CollectionNs.Indexed
-import typings.immutable.immutableMod.CollectionNs.Keyed
-import typings.immutable.immutableMod.CollectionNs.Set
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Map
-import typings.immutable.immutableMod.OrderedMap
-import typings.immutable.immutableMod.OrderedSet
-import typings.immutable.immutableMod.Record
-import typings.immutable.immutableMod.RecordNs.Factory
-import typings.immutable.immutableMod.Stack
+import typings.immutable.immutableMod.Collection.Keyed
+import typings.immutable.immutableMod.Seq.Indexed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,65 +10,27 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofImmutable extends js.Object {
-  val CollectionNs: TypeofCollection = js.native
-  val ListNs: TypeofList = js.native
-  val MapNs: TypeofMap = js.native
-  val OrderedMapNs: TypeofOrderedMap = js.native
-  val OrderedSetNs: TypeofOrderedSet = js.native
-  val RecordNs: TypeofRecord = js.native
-  val SeqNs: TypeofSeq = js.native
-  val SetNs: TypeofSet = js.native
-  val StackNs: TypeofStack = js.native
-  def Collection[I /* <: typings.immutable.immutableMod.Collection[_, _] */](collection: I): I = js.native
-  def Collection[T](collection: Iterable[T]): Indexed[T] = js.native
-  def Collection[V](obj: StringDictionary[V]): Keyed[String, V] = js.native
-  def List(): typings.immutable.immutableMod.List[_] = js.native
-  def List[T](collection: Iterable[T]): typings.immutable.immutableMod.List[T] = js.native
-  @JSName("List")
-  def List_T[T](): List[T] = js.native
-  def Map(): typings.immutable.immutableMod.Map[_, _] = js.native
-  def Map[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Map[String, V] = js.native
-  def Map[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.Map[K, V] = js.native
-  @JSName("Map")
-  def Map_KV[K, V](): Map[K, V] = js.native
-  def OrderedMap(): typings.immutable.immutableMod.OrderedMap[_, _] = js.native
-  def OrderedMap[V](obj: StringDictionary[V]): typings.immutable.immutableMod.OrderedMap[String, V] = js.native
-  def OrderedMap[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.OrderedMap[K, V] = js.native
-  @JSName("OrderedMap")
-  def OrderedMap_KV[K, V](): OrderedMap[K, V] = js.native
-  def OrderedSet(): typings.immutable.immutableMod.OrderedSet[_] = js.native
-  def OrderedSet[T](collection: Iterable[T]): typings.immutable.immutableMod.OrderedSet[T] = js.native
-  @JSName("OrderedSet")
-  def OrderedSet_T[T](): OrderedSet[T] = js.native
-  def Range(): typings.immutable.immutableMod.SeqNs.Indexed[Double] = js.native
-  def Range(start: Double): typings.immutable.immutableMod.SeqNs.Indexed[Double] = js.native
-  def Range(start: Double, end: Double): typings.immutable.immutableMod.SeqNs.Indexed[Double] = js.native
-  def Range(start: Double, end: Double, step: Double): typings.immutable.immutableMod.SeqNs.Indexed[Double] = js.native
-  def Record[TProps](defaultValues: TProps): Factory[TProps] = js.native
-  def Record[TProps](defaultValues: TProps, name: String): Factory[TProps] = js.native
-  def Repeat[T](value: T): typings.immutable.immutableMod.SeqNs.Indexed[T] = js.native
-  def Repeat[T](value: T, times: Double): typings.immutable.immutableMod.SeqNs.Indexed[T] = js.native
-  def Seq(): typings.immutable.immutableMod.Seq[_, _] = js.native
-  def Seq[T](collection: Indexed[T]): typings.immutable.immutableMod.SeqNs.Indexed[T] = js.native
-  def Seq[T](collection: Set[T]): typings.immutable.immutableMod.SeqNs.Set[T] = js.native
-  def Seq[T](collection: Iterable[T]): typings.immutable.immutableMod.SeqNs.Indexed[T] = js.native
-  def Seq[V](obj: StringDictionary[V]): typings.immutable.immutableMod.SeqNs.Keyed[String, V] = js.native
-  def Seq[S /* <: typings.immutable.immutableMod.Seq[_, _] */](seq: S): S = js.native
-  def Seq[K, V](collection: Keyed[K, V]): typings.immutable.immutableMod.SeqNs.Keyed[K, V] = js.native
-  def Set(): typings.immutable.immutableMod.Set[_] = js.native
-  def Set[T](collection: Iterable[T]): typings.immutable.immutableMod.Set[T] = js.native
-  @JSName("Set")
-  def Set_T[T](): typings.immutable.immutableMod.Set[T] = js.native
-  def Stack(): typings.immutable.immutableMod.Stack[_] = js.native
-  def Stack[T](collection: Iterable[T]): typings.immutable.immutableMod.Stack[T] = js.native
-  @JSName("Stack")
-  def Stack_T[T](): Stack[T] = js.native
+  val Collection: TypeofCollection = js.native
+  val List: TypeofList = js.native
+  val Map: TypeofMap = js.native
+  val OrderedMap: TypeofOrderedMap = js.native
+  val OrderedSet: TypeofOrderedSet = js.native
+  val Record: TypeofRecord = js.native
+  val Seq: TypeofSeq = js.native
+  val Set: TypeofSetCollectionFromKeys = js.native
+  val Stack: TypeofStack = js.native
+  def Range(): Indexed[Double] = js.native
+  def Range(start: Double): Indexed[Double] = js.native
+  def Range(start: Double, end: Double): Indexed[Double] = js.native
+  def Range(start: Double, end: Double, step: Double): Indexed[Double] = js.native
+  def Repeat[T](value: T): Indexed[T] = js.native
+  def Repeat[T](value: T, times: Double): Indexed[T] = js.native
   def fromJS(jsValue: js.Any): js.Any = js.native
   def fromJS(
     jsValue: js.Any,
     reviver: js.Function3[
       /* key */ String | Double, 
-      /* sequence */ (Keyed[String, _]) | Indexed[_], 
+      /* sequence */ (Keyed[String, _]) | typings.immutable.immutableMod.Collection.Indexed[_], 
       /* path */ js.UndefOr[js.Array[String | Double]], 
       _
     ]
@@ -86,10 +39,10 @@ trait TypeofImmutable extends js.Object {
   def get[V](collection: StringDictionary[V], key: String): js.UndefOr[V] = js.native
   def get[V, NSV](collection: js.Array[V], key: Double, notSetValue: NSV): V | NSV = js.native
   def get[V, NSV](collection: StringDictionary[V], key: String, notSetValue: NSV): V | NSV = js.native
-  def get[K, V](collection: Collection[K, V], key: K): js.UndefOr[V] = js.native
+  def get[K, V](collection: typings.immutable.immutableMod.Collection[K, V], key: K): js.UndefOr[V] = js.native
   def get[C /* <: js.Object */, K /* <: String */](`object`: C, key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any = js.native
-  def get[TProps, K /* <: String */](record: Record[TProps], key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any = js.native
-  def get[K, V, NSV](collection: Collection[K, V], key: K, notSetValue: NSV): V | NSV = js.native
+  def get[TProps, K /* <: String */](record: typings.immutable.immutableMod.Record[TProps], key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any = js.native
+  def get[K, V, NSV](collection: typings.immutable.immutableMod.Collection[K, V], key: K, notSetValue: NSV): V | NSV = js.native
   def getIn(collection: js.Any, keyPath: Iterable[_], notSetValue: js.Any): js.Any = js.native
   def has(collection: js.Object, key: js.Any): Boolean = js.native
   def hasIn(collection: js.Any, keyPath: Iterable[_]): Boolean = js.native
@@ -128,9 +81,9 @@ trait TypeofImmutable extends js.Object {
   @JSName("remove")
   def remove_C_StringDictionaryAnyK_String[C /* <: StringDictionary[js.Any] */, K /* <: String */](collection: C, key: K): C = js.native
   @JSName("remove")
-  def remove_KC_CollectionKWildcard[K, C /* <: Collection[K, _] */](collection: C, key: K): C = js.native
+  def remove_KC_CollectionKWildcard[K, C /* <: typings.immutable.immutableMod.Collection[K, _] */](collection: C, key: K): C = js.native
   @JSName("remove")
-  def remove_TPropsC_RecordTPropsK_String[TProps, C /* <: Record[TProps] */, K /* <: String */](collection: C, key: K): C = js.native
+  def remove_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.immutableMod.Record[TProps] */, K /* <: String */](collection: C, key: K): C = js.native
   def set[V, C /* <: StringDictionary[V] */](collection: C, key: String, value: V): C = js.native
   def set[V, C /* <: js.Array[V] */](collection: C, key: Double, value: V): C = js.native
   def set[C, K /* <: String */](
@@ -138,10 +91,10 @@ trait TypeofImmutable extends js.Object {
     key: K,
     value: /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
   ): C = js.native
-  def set[K, V, C /* <: Collection[K, V] */](collection: C, key: K, value: V): C = js.native
+  def set[K, V, C /* <: typings.immutable.immutableMod.Collection[K, V] */](collection: C, key: K, value: V): C = js.native
   def setIn[C](collection: C, keyPath: Iterable[_], value: js.Any): C = js.native
   @JSName("set")
-  def set_TPropsC_RecordTPropsK_String[TProps, C /* <: Record[TProps] */, K /* <: String */](
+  def set_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.immutableMod.Record[TProps] */, K /* <: String */](
     record: C,
     key: K,
     value: /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any
@@ -178,11 +131,11 @@ trait TypeofImmutable extends js.Object {
   ): C = js.native
   def updateIn[C](collection: C, keyPath: Iterable[_], updater: js.Function1[/* value */ js.Any, _]): C = js.native
   @JSName("update")
-  def update_KVC_CollectionKV[K, V, C /* <: Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): C = js.native
+  def update_KVC_CollectionKV[K, V, C /* <: typings.immutable.immutableMod.Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): C = js.native
   @JSName("update")
-  def update_KVC_CollectionKVNSV[K, V, C /* <: Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = js.native
+  def update_KVC_CollectionKVNSV[K, V, C /* <: typings.immutable.immutableMod.Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = js.native
   @JSName("update")
-  def update_TPropsC_RecordTPropsK_String[TProps, C /* <: Record[TProps] */, K /* <: String */](
+  def update_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.immutableMod.Record[TProps] */, K /* <: String */](
     record: C,
     key: K,
     updater: js.Function1[
@@ -191,7 +144,7 @@ trait TypeofImmutable extends js.Object {
     ]
   ): C = js.native
   @JSName("update")
-  def update_TPropsC_RecordTPropsK_StringNSV[TProps, C /* <: Record[TProps] */, K /* <: String */, NSV](
+  def update_TPropsC_RecordTPropsK_StringNSV[TProps, C /* <: typings.immutable.immutableMod.Record[TProps] */, K /* <: String */, NSV](
     record: C,
     key: K,
     notSetValue: NSV,

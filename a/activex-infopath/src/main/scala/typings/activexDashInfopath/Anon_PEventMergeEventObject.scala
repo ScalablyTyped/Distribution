@@ -1,6 +1,6 @@
 package typings.activexDashInfopath
 
-import typings.activexDashInfopath.InfoPathNs.MergeEventObject
+import typings.activexDashInfopath.InfoPath.MergeEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

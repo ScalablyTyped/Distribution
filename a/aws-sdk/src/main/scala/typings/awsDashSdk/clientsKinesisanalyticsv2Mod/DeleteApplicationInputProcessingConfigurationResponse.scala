@@ -17,13 +17,10 @@ trait DeleteApplicationInputProcessingConfigurationResponse extends js.Object {
 
 object DeleteApplicationInputProcessingConfigurationResponse {
   @scala.inline
-  def apply(
-    ApplicationARN: ResourceARN = null,
-    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined
-  ): DeleteApplicationInputProcessingConfigurationResponse = {
+  def apply(ApplicationARN: ResourceARN = null, ApplicationVersionId: Int | Double = null): DeleteApplicationInputProcessingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN)
-    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId)
+    if (ApplicationVersionId != null) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationInputProcessingConfigurationResponse]
   }
 }

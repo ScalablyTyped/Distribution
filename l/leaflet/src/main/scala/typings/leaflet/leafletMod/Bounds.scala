@@ -23,3 +23,11 @@ class Bounds protected () extends js.Object {
   def overlaps(otherBounds: BoundsExpression): Boolean = js.native
 }
 
+@JSImport("leaflet", "bounds")
+@js.native
+object bounds extends js.Object {
+  def apply(points: js.Array[Point]): Bounds = js.native
+  def apply(points: BoundsLiteral): Bounds = js.native
+  def apply(topLeft: PointExpression, bottomRight: PointExpression): Bounds = js.native
+}
+

@@ -38,7 +38,7 @@ trait UpdateBrokerResponse extends js.Object {
 object UpdateBrokerResponse {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     BrokerId: __string = null,
     Configuration: ConfigurationId = null,
     EngineVersion: __string = null,

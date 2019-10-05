@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportAddressCandidateMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AddressCandidate
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AddressCandidateProperties
+import typings.arcgisDashJsDashApi.__esri.AddressCandidate
+import typings.arcgisDashJsDashApi.__esri.AddressCandidateProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

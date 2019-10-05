@@ -1,6 +1,8 @@
 package typings.reactDashSwf.reactDashSwfMod
 
-import typings.reactDashSwf.reactDashSwfMod.rswfNs.ReactSWF
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashSwf.reactDashSwfMod.rswf.ReactSWF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +13,7 @@ class ^ () extends ReactSWF
 
 @JSImport("react-swf", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
+object ^ extends TopLevel[Instantiable0[ReactSWF]] {
   /**
     * Returns installed Flash Player version. Result is cached.
     * Must not be called in a non-browser environment.

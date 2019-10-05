@@ -29,12 +29,12 @@ object BrokerSoftwareInfo {
   @scala.inline
   def apply(
     ConfigurationArn: __string = null,
-    ConfigurationRevision: js.UndefOr[__long] = js.undefined,
+    ConfigurationRevision: Int | Double = null,
     KafkaVersion: __string = null
   ): BrokerSoftwareInfo = {
     val __obj = js.Dynamic.literal()
     if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn)
-    if (!js.isUndefined(ConfigurationRevision)) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision)
+    if (ConfigurationRevision != null) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision.asInstanceOf[js.Any])
     if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion)
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }

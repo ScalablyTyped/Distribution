@@ -94,26 +94,26 @@ object RestoreDBClusterFromSnapshotMessage {
     Engine: String,
     SnapshotIdentifier: String,
     AvailabilityZones: AvailabilityZones = null,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    BacktrackWindow: Int | scala.Double = null,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     EngineMode: String = null,
     EngineVersion: String = null,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     ScalingConfiguration: ScalingConfiguration = null,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBClusterFromSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine, SnapshotIdentifier = SnapshotIdentifier)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
+    if (BacktrackWindow != null) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.asInstanceOf[js.Any])
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
@@ -125,7 +125,7 @@ object RestoreDBClusterFromSnapshotMessage {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (ScalingConfiguration != null) __obj.updateDynamic("ScalingConfiguration")(ScalingConfiguration)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds)

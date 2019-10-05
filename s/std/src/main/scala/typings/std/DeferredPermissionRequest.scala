@@ -15,20 +15,5 @@ trait DeferredPermissionRequest extends js.Object {
 
 @JSGlobal("DeferredPermissionRequest")
 @js.native
-class DeferredPermissionRequestCls () extends DeferredPermissionRequest {
-  /* CompleteClass */
-  override val id: Double = js.native
-  /* CompleteClass */
-  override val `type`: MSWebViewPermissionType = js.native
-  /* CompleteClass */
-  override val uri: java.lang.String = js.native
-  /* CompleteClass */
-  override def allow(): Unit = js.native
-  /* CompleteClass */
-  override def deny(): Unit = js.native
-}
-
-@JSGlobal("DeferredPermissionRequest")
-@js.native
 object DeferredPermissionRequest extends Instantiable0[DeferredPermissionRequest]
 

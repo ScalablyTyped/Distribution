@@ -2,8 +2,8 @@ package typings.ionic.libServeMod
 
 import typings.ionic.ionicStrings.compile
 import typings.ionic.ionicStrings.ready
-import typings.node.NodeJSNs.ProcessEnv
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
 import scala.scalajs.js

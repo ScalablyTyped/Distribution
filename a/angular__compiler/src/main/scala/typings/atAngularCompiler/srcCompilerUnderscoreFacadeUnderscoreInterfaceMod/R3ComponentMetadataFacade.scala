@@ -43,7 +43,7 @@ object R3ComponentMetadataFacade {
     usesInheritance: Boolean,
     viewQueries: js.Array[R3QueryMetadataFacade],
     animations: js.Array[_] = null,
-    changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined,
+    changeDetection: Int | Double = null,
     deps: js.Array[R3DependencyMetadataFacade] = null,
     exportAs: js.Array[String] = null,
     interpolation: js.Tuple2[String, String] = null,
@@ -54,7 +54,7 @@ object R3ComponentMetadataFacade {
     val __obj = js.Dynamic.literal(directives = directives, encapsulation = encapsulation, host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, pipes = pipes, preserveWhitespaces = preserveWhitespaces, propMetadata = propMetadata, queries = queries, styles = styles, template = template, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance, viewQueries = viewQueries)
     __obj.updateDynamic("type")(`type`)
     if (animations != null) __obj.updateDynamic("animations")(animations)
-    if (!js.isUndefined(changeDetection)) __obj.updateDynamic("changeDetection")(changeDetection)
+    if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)

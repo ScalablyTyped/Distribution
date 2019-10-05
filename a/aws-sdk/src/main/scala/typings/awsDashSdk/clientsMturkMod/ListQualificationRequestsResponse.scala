@@ -20,12 +20,12 @@ object ListQualificationRequestsResponse {
   @scala.inline
   def apply(
     NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined,
+    NumResults: Int | Double = null,
     QualificationRequests: QualificationRequestList = null
   ): ListQualificationRequestsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     if (QualificationRequests != null) __obj.updateDynamic("QualificationRequests")(QualificationRequests)
     __obj.asInstanceOf[ListQualificationRequestsResponse]
   }

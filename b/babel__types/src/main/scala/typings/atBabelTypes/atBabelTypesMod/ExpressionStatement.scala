@@ -38,3 +38,9 @@ object ExpressionStatement {
   }
 }
 
+@JSImport("@babel/types", "expressionStatement")
+@js.native
+object expressionStatement extends js.Object {
+  def apply(expression: Expression): ExpressionStatement = js.native
+}
+

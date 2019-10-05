@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "protobufjs__path"
-version := "1.1.2-5f1f1c"
-scalaVersion := "2.12.9"
+version := "1.1.2-2d0e24"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

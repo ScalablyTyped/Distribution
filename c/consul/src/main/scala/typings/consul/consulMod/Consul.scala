@@ -1,6 +1,6 @@
 package typings.consul.consulMod
 
-import typings.consul.consulMod.LockNs.Options
+import typings.consul.consulMod.Lock.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Consul extends js.Object {
   /**
     * Watch helper.
     */
-  def watch(opts: typings.consul.consulMod.WatchNs.Options): Watch
+  def watch(opts: typings.consul.consulMod.Watch.Options): Watch
 }
 
 object Consul {
@@ -36,7 +36,7 @@ object Consul {
     lock: Options => Lock,
     session: Session,
     status: Status,
-    watch: typings.consul.consulMod.WatchNs.Options => Watch
+    watch: typings.consul.consulMod.Watch.Options => Watch
   ): Consul = {
     val __obj = js.Dynamic.literal(acl = acl, agent = agent, catalog = catalog, event = event, health = health, kv = kv, lock = js.Any.fromFunction1(lock), session = session, status = status, watch = js.Any.fromFunction1(watch))
   

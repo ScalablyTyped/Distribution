@@ -2,7 +2,7 @@ package typings.luxon.luxonMod
 
 import typings.luxon.Anon_IncludeConfig
 import typings.std.Date
-import typings.std.IntlNs.ResolvedDateTimeFormatOptions
+import typings.std.Intl.ResolvedDateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

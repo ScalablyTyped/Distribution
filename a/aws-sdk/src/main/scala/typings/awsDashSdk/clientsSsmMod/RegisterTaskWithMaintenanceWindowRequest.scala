@@ -76,7 +76,7 @@ object RegisterTaskWithMaintenanceWindowRequest {
     Description: MaintenanceWindowDescription = null,
     LoggingInfo: LoggingInfo = null,
     Name: MaintenanceWindowName = null,
-    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
+    Priority: Int | Double = null,
     ServiceRoleArn: ServiceRole = null,
     TaskInvocationParameters: MaintenanceWindowTaskInvocationParameters = null,
     TaskParameters: MaintenanceWindowTaskParameters = null
@@ -86,7 +86,7 @@ object RegisterTaskWithMaintenanceWindowRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn)
     if (TaskInvocationParameters != null) __obj.updateDynamic("TaskInvocationParameters")(TaskInvocationParameters)
     if (TaskParameters != null) __obj.updateDynamic("TaskParameters")(TaskParameters)

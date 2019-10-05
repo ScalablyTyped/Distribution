@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojlistviewMod.ojListViewNs.ItemsDropContext
+import typings.atOracleOraclejet.ojlistviewMod.ojListView.ItemsDropContext
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

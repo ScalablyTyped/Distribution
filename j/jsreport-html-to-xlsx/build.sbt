@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jsreport-html-to-xlsx"
-version := "2.0-dt-20190311Z-3f380a"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20190311Z-f845a8"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-ae86c5",
-  "org.scalablytyped" %%% "jsreport-xlsx" % "1.4-dt-20180222Z-fa9ec9",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-4eb318",
+  "org.scalablytyped" %%% "jsreport-xlsx" % "1.4-dt-20180222Z-3558e8",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -3,8 +3,8 @@ package typings.materialDashUi
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.std.IntlNs.DateTimeFormat
-import typings.std.IntlNs.DateTimeFormatOptions
+import typings.std.Intl.DateTimeFormat
+import typings.std.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.bignumberDotJs.bignumberDotJsMod
 
-import typings.bignumberDotJs.bignumberDotJsMod.BigNumberNs.Config
-import typings.bignumberDotJs.bignumberDotJsMod.BigNumberNs.Constructor
-import typings.bignumberDotJs.bignumberDotJsMod.BigNumberNs.Value
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Config
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Constructor
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Value
 import typings.bignumberDotJs.bignumberDotJsNumbers.`0`
 import typings.bignumberDotJs.bignumberDotJsNumbers.`1`
 import typings.bignumberDotJs.bignumberDotJsNumbers.`2`

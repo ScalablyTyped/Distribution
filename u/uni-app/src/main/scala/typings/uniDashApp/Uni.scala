@@ -1,5 +1,6 @@
 package typings.uniDashApp
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -1106,4 +1107,8 @@ class Uni () extends js.Object {
   def writeBLECharacteristicValue(): Unit = js.native
   def writeBLECharacteristicValue(options: WriteBLECharacteristicValueOptions): Unit = js.native
 }
+
+@JSGlobal("uni")
+@js.native
+object uni extends TopLevel[Uni]
 

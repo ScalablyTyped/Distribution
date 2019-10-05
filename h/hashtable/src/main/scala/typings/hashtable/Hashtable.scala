@@ -1,5 +1,6 @@
 package typings.hashtable
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +15,8 @@ class Hashtable[TKey, TValue] () extends IHashtable[TKey, TValue] {
     equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]
   ) = this()
 }
+
+@JSGlobal("Hashtable")
+@js.native
+object Hashtable extends TopLevel[IHashtableStatic]
 

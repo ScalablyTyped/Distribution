@@ -1,8 +1,8 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.contextMenusNs.CreateProperties
-import typings.chrome.chromeNs.contextMenusNs.MenuClickedEvent
-import typings.chrome.chromeNs.contextMenusNs.UpdateProperties
+import typings.chrome.chrome.contextMenus.CreateProperties
+import typings.chrome.chrome.contextMenus.MenuClickedEvent
+import typings.chrome.chrome.contextMenus.UpdateProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,11 @@
 package typings.jqueryui
 
-import typings.jqueryui.JQueryUINs.AccordionOptions
-import typings.jqueryui.JQueryUINs.Datepicker
-import typings.jqueryui.JQueryUINs.UI
-import typings.jqueryui.JQueryUINs.Widget
-import typings.jqueryui.JQueryUINs.WidgetCommonProperties
-import typings.jqueryui.JQueryUINs.WidgetOptions
+import typings.jqueryui.JQueryUI.AccordionOptions
+import typings.jqueryui.JQueryUI.Datepicker
+import typings.jqueryui.JQueryUI.UI
+import typings.jqueryui.JQueryUI.Widget
+import typings.jqueryui.JQueryUI.WidgetCommonProperties
+import typings.jqueryui.JQueryUI.WidgetOptions
 import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

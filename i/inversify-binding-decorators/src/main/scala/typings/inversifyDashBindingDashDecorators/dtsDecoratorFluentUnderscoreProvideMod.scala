@@ -1,7 +1,7 @@
 package typings.inversifyDashBindingDashDecorators
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier
-import typings.inversifyDashBindingDashDecorators.dtsInterfacesInterfacesMod.interfacesNs.ProvideInWhenOnSyntax
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
+import typings.inversifyDashBindingDashDecorators.dtsInterfacesInterfacesMod.interfaces.ProvideInWhenOnSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

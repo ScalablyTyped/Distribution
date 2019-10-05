@@ -32,14 +32,14 @@ object Http {
   def apply(
     ClientIp: String = null,
     HttpMethod: String = null,
-    HttpStatus: js.UndefOr[NullableInteger] = js.undefined,
+    HttpStatus: Int | scala.Double = null,
     HttpURL: String = null,
     UserAgent: String = null
   ): Http = {
     val __obj = js.Dynamic.literal()
     if (ClientIp != null) __obj.updateDynamic("ClientIp")(ClientIp)
     if (HttpMethod != null) __obj.updateDynamic("HttpMethod")(HttpMethod)
-    if (!js.isUndefined(HttpStatus)) __obj.updateDynamic("HttpStatus")(HttpStatus)
+    if (HttpStatus != null) __obj.updateDynamic("HttpStatus")(HttpStatus.asInstanceOf[js.Any])
     if (HttpURL != null) __obj.updateDynamic("HttpURL")(HttpURL)
     if (UserAgent != null) __obj.updateDynamic("UserAgent")(UserAgent)
     __obj.asInstanceOf[Http]

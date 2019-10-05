@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ec2SpotFleetRequestMod
 
-import typings.atPulumiAws.typesOutputMod.ec2Ns.SpotFleetRequestLaunchSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.SpotFleetRequestLaunchSpecification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -62,9 +62,9 @@ object ListMultipartUploadsOutput {
     CommonPrefixes: CommonPrefixList = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     KeyMarker: KeyMarker = null,
-    MaxUploads: js.UndefOr[MaxUploads] = js.undefined,
+    MaxUploads: Int | Double = null,
     NextKeyMarker: NextKeyMarker = null,
     NextUploadIdMarker: NextUploadIdMarker = null,
     Prefix: Prefix = null,
@@ -78,7 +78,7 @@ object ListMultipartUploadsOutput {
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker)
-    if (!js.isUndefined(MaxUploads)) __obj.updateDynamic("MaxUploads")(MaxUploads)
+    if (MaxUploads != null) __obj.updateDynamic("MaxUploads")(MaxUploads.asInstanceOf[js.Any])
     if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker)
     if (NextUploadIdMarker != null) __obj.updateDynamic("NextUploadIdMarker")(NextUploadIdMarker)
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * class directly.
   */
 class Animation ()
-  extends typings.gsap.gsapNs.Animation {
+  extends typings.gsap.gsap.Animation {
   def this(duration: Double) = this()
   def this(duration: Double, vars: js.Any) = this()
 }

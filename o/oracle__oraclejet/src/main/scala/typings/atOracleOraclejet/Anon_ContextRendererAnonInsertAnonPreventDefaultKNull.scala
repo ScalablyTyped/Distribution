@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojpictochartMod.ojPictoChartNs.TooltipContext
+import typings.atOracleOraclejet.ojpictochartMod.ojPictoChart.TooltipContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

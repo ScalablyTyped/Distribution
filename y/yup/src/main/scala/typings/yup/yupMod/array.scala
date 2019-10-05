@@ -1,5 +1,6 @@
 package typings.yup.yupMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,4 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class array ()
   extends ArraySchema[js.Object]
+
+@JSImport("yup", "array")
+@js.native
+object array extends TopLevel[ArraySchemaConstructor]
 

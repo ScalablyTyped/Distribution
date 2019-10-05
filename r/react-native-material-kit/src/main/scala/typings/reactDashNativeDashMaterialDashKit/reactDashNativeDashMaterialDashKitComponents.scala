@@ -33,7 +33,7 @@ object reactDashNativeDashMaterialDashKitComponents extends reactDashNativeDashM
   def MKProgress: ComponentType[MKProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgress].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressProperties]]
   @scala.inline
-  def MKProgressNsIndeterminate: ComponentType[IndeterminateProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressNs.Indeterminate].asInstanceOf[typings.react.reactMod.ComponentType[
+  def MKProgressIndeterminate: ComponentType[IndeterminateProgressProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgress.Indeterminate].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties]]
   @scala.inline
   def MKRadioButton: ComponentType[MKRadioButtonProperties] = js.constructorOf[typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKRadioButton].asInstanceOf[typings.react.reactMod.ComponentType[

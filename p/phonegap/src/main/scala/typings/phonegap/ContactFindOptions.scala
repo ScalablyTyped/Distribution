@@ -12,9 +12,5 @@ trait ContactFindOptions extends js.Object {
 
 @JSGlobal("ContactFindOptions")
 @js.native
-class ContactFindOptionsCls () extends ContactFindOptions
-
-@JSGlobal("ContactFindOptions")
-@js.native
 object ContactFindOptions extends Instantiable0[ContactFindOptions]
 

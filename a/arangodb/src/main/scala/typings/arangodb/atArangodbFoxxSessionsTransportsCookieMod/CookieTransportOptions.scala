@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxSessionsTransportsCookieMod
 
-import typings.arangodb.ArangoDBNs.HashAlgorithm
+import typings.arangodb.ArangoDB.HashAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

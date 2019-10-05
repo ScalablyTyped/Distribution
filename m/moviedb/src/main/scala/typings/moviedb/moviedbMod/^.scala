@@ -1,6 +1,6 @@
 package typings.moviedb.moviedbMod
 
-import typings.moviedb.moviedbMod.MovieDBNs.IMovieDB
+import typings.moviedb.moviedbMod.MovieDB.IMovieDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.SplitButton
-import typings.ejDotWebDotAll.ejNs.SplitButtonNs.Model
+import typings.ejDotWebDotAll.ej.SplitButton
+import typings.ejDotWebDotAll.ej.SplitButton.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

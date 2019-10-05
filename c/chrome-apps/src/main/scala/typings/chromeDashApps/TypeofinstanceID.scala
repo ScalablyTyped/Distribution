@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.instanceIDNs.DeleteTokenParams
-import typings.chromeDashApps.chromeNs.instanceIDNs.TokenParams
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.instanceID.DeleteTokenParams
+import typings.chromeDashApps.chrome.instanceID.TokenParams
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

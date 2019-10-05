@@ -70,7 +70,7 @@ trait GetRouteResponse extends js.Object {
 object GetRouteResponse {
   @scala.inline
   def apply(
-    ApiKeyRequired: js.UndefOr[__boolean] = js.undefined,
+    ApiKeyRequired: js.UndefOr[Boolean] = js.undefined,
     AuthorizationScopes: AuthorizationScopes = null,
     AuthorizationType: AuthorizationType = null,
     AuthorizerId: Id = null,

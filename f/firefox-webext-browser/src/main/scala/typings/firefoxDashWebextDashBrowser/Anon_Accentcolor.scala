@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.ThemeColor
+import typings.firefoxDashWebextDashBrowser.browser._manifest.ThemeColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

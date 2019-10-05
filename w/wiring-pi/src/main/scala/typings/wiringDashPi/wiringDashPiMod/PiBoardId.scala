@@ -21,3 +21,9 @@ object PiBoardId {
   }
 }
 
+@JSImport("wiring-pi", "piBoardId")
+@js.native
+object piBoardId extends js.Object {
+  def apply(): PiBoardId = js.native
+}
+

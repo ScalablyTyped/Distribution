@@ -48,8 +48,8 @@ object DescribeOrderableDBInstanceOptionsMessage {
     Filters: FilterList = null,
     LicenseModel: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    Vpc: js.UndefOr[BooleanOptional] = js.undefined
+    MaxRecords: Int | scala.Double = null,
+    Vpc: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeOrderableDBInstanceOptionsMessage = {
     val __obj = js.Dynamic.literal(Engine = Engine)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
@@ -57,7 +57,7 @@ object DescribeOrderableDBInstanceOptionsMessage {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc)
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }

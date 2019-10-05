@@ -1,8 +1,8 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.ActionButton
-import typings.jpm.FFAddonSDKNs.ActionButtonState
-import typings.jpm.FFAddonSDKNs.Icon
+import typings.jpm.FFAddonSDK.ActionButton
+import typings.jpm.FFAddonSDK.ActionButtonState
+import typings.jpm.FFAddonSDK.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

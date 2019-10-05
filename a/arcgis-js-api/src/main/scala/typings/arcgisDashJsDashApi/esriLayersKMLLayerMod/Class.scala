@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersKMLLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.KMLLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.KMLLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
+import typings.arcgisDashJsDashApi.__esri.KMLLayer
+import typings.arcgisDashJsDashApi.__esri.KMLLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

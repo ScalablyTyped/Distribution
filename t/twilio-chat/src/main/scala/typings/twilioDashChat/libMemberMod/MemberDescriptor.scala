@@ -1,6 +1,6 @@
 package typings.twilioDashChat.libMemberMod
 
-import typings.twilioDashChat.libMemberMod.MemberNs.Type
+import typings.twilioDashChat.libMemberMod.Member.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

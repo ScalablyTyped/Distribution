@@ -2,11 +2,11 @@ package typings.tooltipster
 
 import typings.jquery.JQueryEventObject
 import typings.std.HTMLElement
-import typings.tooltipster.JQueryTooltipsterNs.ITooltipStatus
-import typings.tooltipster.JQueryTooltipsterNs.ITooltipsterInstance
-import typings.tooltipster.JQueryTooltipsterNs.ITooltipsterJQuery
-import typings.tooltipster.JQueryTooltipsterNs.ITooltipsterOptions
-import typings.tooltipster.JQueryTooltipsterNs.TooltipsterStandardCallbackFunction
+import typings.tooltipster.JQueryTooltipster.ITooltipStatus
+import typings.tooltipster.JQueryTooltipster.ITooltipsterInstance
+import typings.tooltipster.JQueryTooltipster.ITooltipsterJQuery
+import typings.tooltipster.JQueryTooltipster.ITooltipsterOptions
+import typings.tooltipster.JQueryTooltipster.TooltipsterStandardCallbackFunction
 import typings.tooltipster.tooltipsterStrings.close
 import typings.tooltipster.tooltipsterStrings.content
 import typings.tooltipster.tooltipsterStrings.destroy

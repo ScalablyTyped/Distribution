@@ -1,7 +1,7 @@
 package typings.nodeDashHueDashApi.nodeDashHueDashApiMod
 
-import typings.node.NodeJSNs.ErrnoException
-import typings.nodeDashHueDashApi.nodeDashHueDashApiMod.lightStateNs.State
+import typings.node.NodeJS.ErrnoException
+import typings.nodeDashHueDashApi.nodeDashHueDashApiMod.lightState.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,12 +32,12 @@ object CancelJobExecutionRequest {
   def apply(
     jobId: JobId,
     thingName: ThingName,
-    expectedVersion: js.UndefOr[ExpectedVersion] = js.undefined,
-    force: js.UndefOr[ForceFlag] = js.undefined,
+    expectedVersion: Int | Double = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
     statusDetails: DetailsMap = null
   ): CancelJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId, thingName = thingName)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
     __obj.asInstanceOf[CancelJobExecutionRequest]

@@ -1,6 +1,8 @@
 package typings.antd.esTransferOperationMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
@@ -26,8 +28,8 @@ object TransferOperationProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     leftActive: js.UndefOr[Boolean] = js.undefined,
     leftArrowText: String = null,
-    moveToLeft: MouseEventHandler[HTMLButtonElement] = null,
-    moveToRight: MouseEventHandler[HTMLButtonElement] = null,
+    moveToLeft: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
+    moveToRight: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     rightActive: js.UndefOr[Boolean] = js.undefined,
     rightArrowText: String = null,
     style: CSSProperties = null
@@ -37,8 +39,8 @@ object TransferOperationProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(leftActive)) __obj.updateDynamic("leftActive")(leftActive)
     if (leftArrowText != null) __obj.updateDynamic("leftArrowText")(leftArrowText)
-    if (moveToLeft != null) __obj.updateDynamic("moveToLeft")(moveToLeft)
-    if (moveToRight != null) __obj.updateDynamic("moveToRight")(moveToRight)
+    if (moveToLeft != null) __obj.updateDynamic("moveToLeft")(js.Any.fromFunction1(moveToLeft))
+    if (moveToRight != null) __obj.updateDynamic("moveToRight")(js.Any.fromFunction1(moveToRight))
     if (!js.isUndefined(rightActive)) __obj.updateDynamic("rightActive")(rightActive)
     if (rightArrowText != null) __obj.updateDynamic("rightArrowText")(rightArrowText)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -69,7 +69,7 @@ object TableRestoreStatus {
     ClusterIdentifier: String = null,
     Message: String = null,
     NewTableName: String = null,
-    ProgressInMegaBytes: js.UndefOr[LongOptional] = js.undefined,
+    ProgressInMegaBytes: Int | scala.Double = null,
     RequestTime: TStamp = null,
     SnapshotIdentifier: String = null,
     SourceDatabaseName: String = null,
@@ -79,13 +79,13 @@ object TableRestoreStatus {
     TableRestoreRequestId: String = null,
     TargetDatabaseName: String = null,
     TargetSchemaName: String = null,
-    TotalDataInMegaBytes: js.UndefOr[LongOptional] = js.undefined
+    TotalDataInMegaBytes: Int | scala.Double = null
   ): TableRestoreStatus = {
     val __obj = js.Dynamic.literal()
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier)
     if (Message != null) __obj.updateDynamic("Message")(Message)
     if (NewTableName != null) __obj.updateDynamic("NewTableName")(NewTableName)
-    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes)
+    if (ProgressInMegaBytes != null) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.asInstanceOf[js.Any])
     if (RequestTime != null) __obj.updateDynamic("RequestTime")(RequestTime)
     if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier)
     if (SourceDatabaseName != null) __obj.updateDynamic("SourceDatabaseName")(SourceDatabaseName)
@@ -95,7 +95,7 @@ object TableRestoreStatus {
     if (TableRestoreRequestId != null) __obj.updateDynamic("TableRestoreRequestId")(TableRestoreRequestId)
     if (TargetDatabaseName != null) __obj.updateDynamic("TargetDatabaseName")(TargetDatabaseName)
     if (TargetSchemaName != null) __obj.updateDynamic("TargetSchemaName")(TargetSchemaName)
-    if (!js.isUndefined(TotalDataInMegaBytes)) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes)
+    if (TotalDataInMegaBytes != null) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRestoreStatus]
   }
 }

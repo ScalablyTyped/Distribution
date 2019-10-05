@@ -2,6 +2,7 @@ package typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod
 
 import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.StatelessComponent
+import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +44,7 @@ object ScrollbarProps {
     autoHideDuration: Int | Double = null,
     autoHideTimeout: Int | Double = null,
     hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.undefined,
-    onScroll: UIEventHandler[_] = null,
+    onScroll: UIEvent[_] => Unit = null,
     onScrollFrame: /* values */ positionValues => Unit = null,
     onScrollStart: () => Unit = null,
     onScrollStop: () => Unit = null,
@@ -67,7 +68,7 @@ object ScrollbarProps {
     if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
     if (autoHideTimeout != null) __obj.updateDynamic("autoHideTimeout")(autoHideTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(hideTracksWhenNotNeeded)) __obj.updateDynamic("hideTracksWhenNotNeeded")(hideTracksWhenNotNeeded)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onScrollFrame != null) __obj.updateDynamic("onScrollFrame")(js.Any.fromFunction1(onScrollFrame))
     if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(js.Any.fromFunction0(onScrollStart))
     if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(js.Any.fromFunction0(onScrollStop))

@@ -1,0 +1,25 @@
+package typings.rxDashDom.rxDashDomMod.rxMod.DOM
+
+import typings.std.Event
+import typings.std.XMLHttpRequest
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AjaxSuccessResponse extends js.Object {
+  var originalEvent: Event
+  var response: js.Any
+  var responseType: String
+  var status: Double
+  var xhr: XMLHttpRequest
+}
+
+object AjaxSuccessResponse {
+  @scala.inline
+  def apply(originalEvent: Event, response: js.Any, responseType: String, status: Double, xhr: XMLHttpRequest): AjaxSuccessResponse = {
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent, response = response, responseType = responseType, status = status, xhr = xhr)
+  
+    __obj.asInstanceOf[AjaxSuccessResponse]
+  }
+}
+

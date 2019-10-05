@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotSheets
 
-import typings.gapiDotClientDotSheets.gapiNs.clientNs.sheetsNs.GetSpreadsheetByDataFilterRequest
+import typings.gapiDotClientDotSheets.gapi.client.sheets.GetSpreadsheetByDataFilterRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

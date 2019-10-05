@@ -1,6 +1,6 @@
 package typings.youtube
 
-import typings.youtube.YTNs.ProgressBarColor
+import typings.youtube.YT.ProgressBarColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

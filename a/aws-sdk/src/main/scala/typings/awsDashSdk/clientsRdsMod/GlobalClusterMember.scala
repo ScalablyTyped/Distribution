@@ -23,7 +23,7 @@ object GlobalClusterMember {
   @scala.inline
   def apply(
     DBClusterArn: String = null,
-    IsWriter: js.UndefOr[Boolean] = js.undefined,
+    IsWriter: js.UndefOr[scala.Boolean] = js.undefined,
     Readers: ReadersArnList = null
   ): GlobalClusterMember = {
     val __obj = js.Dynamic.literal()

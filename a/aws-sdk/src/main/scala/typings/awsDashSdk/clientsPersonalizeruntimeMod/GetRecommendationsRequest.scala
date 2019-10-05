@@ -25,15 +25,10 @@ trait GetRecommendationsRequest extends js.Object {
 
 object GetRecommendationsRequest {
   @scala.inline
-  def apply(
-    campaignArn: Arn,
-    itemId: ItemID = null,
-    numResults: js.UndefOr[NumResults] = js.undefined,
-    userId: UserID = null
-  ): GetRecommendationsRequest = {
+  def apply(campaignArn: Arn, itemId: ItemID = null, numResults: Int | Double = null, userId: UserID = null): GetRecommendationsRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn)
     if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults)
+    if (numResults != null) __obj.updateDynamic("numResults")(numResults.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId)
     __obj.asInstanceOf[GetRecommendationsRequest]
   }

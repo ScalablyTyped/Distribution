@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.TabStatus
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.WindowType
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs._QueryScreen
+import typings.firefoxDashWebextDashBrowser.browser.tabs.TabStatus
+import typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
+import typings.firefoxDashWebextDashBrowser.browser.tabs._QueryScreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

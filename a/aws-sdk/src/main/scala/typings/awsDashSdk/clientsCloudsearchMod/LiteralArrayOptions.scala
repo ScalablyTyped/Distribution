@@ -31,9 +31,9 @@ object LiteralArrayOptions {
   @scala.inline
   def apply(
     DefaultValue: FieldValue = null,
-    FacetEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
-    SearchEnabled: js.UndefOr[Boolean] = js.undefined,
+    FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     SourceFields: FieldNameCommaList = null
   ): LiteralArrayOptions = {
     val __obj = js.Dynamic.literal()

@@ -13,10 +13,14 @@ trait Anon_Quote extends js.Object {
 
 object Anon_Quote {
   @scala.inline
-  def apply(quote: String = null, replacer: JSONReplacer = null, space: Double | String = null): Anon_Quote = {
+  def apply(
+    quote: String = null,
+    replacer: (/* key */ String, /* value */ js.Any) => js.Any | (js.Array[Double | String]) | Null = null,
+    space: Double | String = null
+  ): Anon_Quote = {
     val __obj = js.Dynamic.literal()
     if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Quote]
   }

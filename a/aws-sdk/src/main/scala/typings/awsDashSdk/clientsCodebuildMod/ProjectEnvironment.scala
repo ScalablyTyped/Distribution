@@ -48,7 +48,7 @@ object ProjectEnvironment {
     certificate: String = null,
     environmentVariables: EnvironmentVariables = null,
     imagePullCredentialsType: ImagePullCredentialsType = null,
-    privilegedMode: js.UndefOr[WrapperBoolean] = js.undefined,
+    privilegedMode: js.UndefOr[scala.Boolean] = js.undefined,
     registryCredential: RegistryCredential = null
   ): ProjectEnvironment = {
     val __obj = js.Dynamic.literal(computeType = computeType.asInstanceOf[js.Any], image = image)

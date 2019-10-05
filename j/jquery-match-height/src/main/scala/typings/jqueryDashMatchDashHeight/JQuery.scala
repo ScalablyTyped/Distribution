@@ -1,6 +1,6 @@
 package typings.jqueryDashMatchDashHeight
 
-import typings.jqueryDashMatchDashHeight.JQueryMatchHeightNs.Options
+import typings.jqueryDashMatchDashHeight.JQueryMatchHeight.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

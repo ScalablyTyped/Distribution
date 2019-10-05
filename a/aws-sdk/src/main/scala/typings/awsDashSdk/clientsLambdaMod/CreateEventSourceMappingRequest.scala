@@ -37,16 +37,16 @@ object CreateEventSourceMappingRequest {
   def apply(
     EventSourceArn: Arn,
     FunctionName: FunctionName,
-    BatchSize: js.UndefOr[BatchSize] = js.undefined,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
-    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined,
+    BatchSize: Int | Double = null,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    MaximumBatchingWindowInSeconds: Int | Double = null,
     StartingPosition: EventSourcePosition = null,
     StartingPositionTimestamp: _Date = null
   ): CreateEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(EventSourceArn = EventSourceArn, FunctionName = FunctionName)
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize)
+    if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds)
+    if (MaximumBatchingWindowInSeconds != null) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds.asInstanceOf[js.Any])
     if (StartingPosition != null) __obj.updateDynamic("StartingPosition")(StartingPosition.asInstanceOf[js.Any])
     if (StartingPositionTimestamp != null) __obj.updateDynamic("StartingPositionTimestamp")(StartingPositionTimestamp)
     __obj.asInstanceOf[CreateEventSourceMappingRequest]

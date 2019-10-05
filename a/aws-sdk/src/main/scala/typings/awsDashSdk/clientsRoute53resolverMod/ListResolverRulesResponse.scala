@@ -21,13 +21,9 @@ trait ListResolverRulesResponse extends js.Object {
 
 object ListResolverRulesResponse {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ResolverRules: ResolverRules = null
-  ): ListResolverRulesResponse = {
+  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null, ResolverRules: ResolverRules = null): ListResolverRulesResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResolverRules != null) __obj.updateDynamic("ResolverRules")(ResolverRules)
     __obj.asInstanceOf[ListResolverRulesResponse]

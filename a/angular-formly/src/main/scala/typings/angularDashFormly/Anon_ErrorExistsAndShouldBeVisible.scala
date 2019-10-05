@@ -1,7 +1,7 @@
 package typings.angularDashFormly
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularDashFormly.AngularFormlyNs.IExpressionFunction
+import typings.angularDashFormly.AngularFormly.IExpressionFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

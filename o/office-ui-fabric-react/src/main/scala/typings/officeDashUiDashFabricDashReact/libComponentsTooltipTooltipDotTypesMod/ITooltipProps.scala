@@ -7,7 +7,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotBaseMod.TooltipBase
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -79,7 +79,7 @@ object ITooltipProps {
     directionalHint: DirectionalHint = null,
     directionalHintForRTL: DirectionalHint = null,
     maxWidth: String = null,
-    onRenderContent: IRenderFunction[ITooltipProps] = null,
+    onRenderContent: (/* props */ js.UndefOr[ITooltipProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipProps], Element | Null]]) => Element | Null = null,
     styles: IStyleFunctionOrObject[ITooltipStyleProps, ITooltipStyles] = null,
     targetElement: HTMLElement = null,
     theme: ITheme = null
@@ -93,7 +93,7 @@ object ITooltipProps {
     if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint)
     if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL)
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
-    if (onRenderContent != null) __obj.updateDynamic("onRenderContent")(onRenderContent)
+    if (onRenderContent != null) __obj.updateDynamic("onRenderContent")(js.Any.fromFunction2(onRenderContent))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
     if (theme != null) __obj.updateDynamic("theme")(theme)

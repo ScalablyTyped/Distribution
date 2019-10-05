@@ -22,12 +22,12 @@ trait GetReplicationJobsRequest extends js.Object {
 object GetReplicationJobsRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     replicationJobId: ReplicationJobId = null
   ): GetReplicationJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (replicationJobId != null) __obj.updateDynamic("replicationJobId")(replicationJobId)
     __obj.asInstanceOf[GetReplicationJobsRequest]

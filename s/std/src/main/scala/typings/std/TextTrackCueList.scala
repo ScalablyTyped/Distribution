@@ -17,9 +17,5 @@ trait TextTrackCueList extends /* index */ NumberDictionary[TextTrackCue] {
 
 @JSGlobal("TextTrackCueList")
 @js.native
-class TextTrackCueListCls () extends TextTrackCueList
-
-@JSGlobal("TextTrackCueList")
-@js.native
 object TextTrackCueList extends Instantiable0[TextTrackCueList]
 

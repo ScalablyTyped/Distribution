@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "AutoComplete")
 @js.native
 class AutoComplete ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.AutoComplete
+  extends typings.materialDashUi.__MaterialUI.AutoComplete
 
 /* static members */
 @JSImport("material-ui", "AutoComplete")
 @js.native
 object AutoComplete extends js.Object {
-  var Divider: typings.materialDashUi.underscoreUnderscoreMaterialUINs.Divider = js.native
-  var Item: typings.materialDashUi.underscoreUnderscoreMaterialUINs.MenusNs.MenuItem = js.native
+  var Divider: typings.materialDashUi.__MaterialUI.Divider = js.native
+  var Item: typings.materialDashUi.__MaterialUI.Menus.MenuItem = js.native
   def caseInsensitiveFilter(searchText: String, key: String): Boolean = js.native
   def caseSensitiveFilter(searchText: String, key: String): Boolean = js.native
   def defaultFilter(searchText: String, key: String): Boolean = js.native

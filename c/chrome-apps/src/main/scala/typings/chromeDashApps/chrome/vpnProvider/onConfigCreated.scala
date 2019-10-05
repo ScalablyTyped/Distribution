@@ -1,0 +1,15 @@
+package typings.chromeDashApps.chrome.vpnProvider
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Triggered when a configuration is created by the platform for the extension. */
+@JSGlobal("chrome.vpnProvider.onConfigCreated")
+@js.native
+object onConfigCreated
+  extends TopLevel[
+      typings.chromeDashApps.chrome.events.Event[js.Function3[/* id */ String, /* name */ String, /* data */ js.Object, Unit]]
+    ]
+

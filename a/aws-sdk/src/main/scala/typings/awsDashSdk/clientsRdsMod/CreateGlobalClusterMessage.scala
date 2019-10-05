@@ -39,12 +39,12 @@ object CreateGlobalClusterMessage {
   @scala.inline
   def apply(
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     GlobalClusterIdentifier: String = null,
     SourceDBClusterIdentifier: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)

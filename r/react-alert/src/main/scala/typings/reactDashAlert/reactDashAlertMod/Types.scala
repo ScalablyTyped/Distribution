@@ -1,5 +1,6 @@
 package typings.reactDashAlert.reactDashAlertMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashAlert.reactDashAlertStrings.error
 import typings.reactDashAlert.reactDashAlertStrings.info
 import typings.reactDashAlert.reactDashAlertStrings.success
@@ -21,4 +22,8 @@ object Types {
     __obj.asInstanceOf[Types]
   }
 }
+
+@JSImport("react-alert", "types")
+@js.native
+object types extends TopLevel[Types]
 

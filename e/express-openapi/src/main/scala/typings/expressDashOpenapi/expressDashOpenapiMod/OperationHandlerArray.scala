@@ -2,7 +2,7 @@ package typings.expressDashOpenapi.expressDashOpenapiMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.express.expressMod.RequestHandler
-import typings.expressDashOpenapi.expressDashOpenapiMod.OpenApiNs.OperationObject
+import typings.expressDashOpenapi.expressDashOpenapiMod.OpenApi.OperationObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

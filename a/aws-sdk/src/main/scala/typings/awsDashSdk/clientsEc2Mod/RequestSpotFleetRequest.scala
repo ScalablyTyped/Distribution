@@ -17,7 +17,10 @@ trait RequestSpotFleetRequest extends js.Object {
 
 object RequestSpotFleetRequest {
   @scala.inline
-  def apply(SpotFleetRequestConfig: SpotFleetRequestConfigData, DryRun: js.UndefOr[Boolean] = js.undefined): RequestSpotFleetRequest = {
+  def apply(
+    SpotFleetRequestConfig: SpotFleetRequestConfigData,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestSpotFleetRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestConfig = SpotFleetRequestConfig)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[RequestSpotFleetRequest]

@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojcolorspectrumMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_LabelHue
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.labelledBy
@@ -7,9 +9,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.labelledByChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transientValueChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
 import typings.atOracleOraclejet.ojcolorMod.^
-import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateStart
+import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrum.ojAnimateEnd
+import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrum.ojAnimateStart
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,5 +65,12 @@ trait ojColorSpectrum extends editableValue[^, ojColorSpectrumSettableProperties
   def setProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue, value: ^): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: Anon_LabelHue): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojcolorspectrum", "ojColorSpectrum")
+@js.native
+object ojColorSpectrum extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

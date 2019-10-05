@@ -24,7 +24,7 @@ object ResetDBClusterParameterGroupMessage {
   def apply(
     DBClusterParameterGroupName: String,
     Parameters: ParametersList = null,
-    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
+    ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): ResetDBClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBClusterParameterGroupName = DBClusterParameterGroupName)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)

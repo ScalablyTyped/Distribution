@@ -11,9 +11,5 @@ trait BeforeUnloadEvent extends Event
 
 @JSGlobal("BeforeUnloadEvent")
 @js.native
-class BeforeUnloadEventCls () extends BeforeUnloadEvent
-
-@JSGlobal("BeforeUnloadEvent")
-@js.native
 object BeforeUnloadEvent extends Instantiable0[BeforeUnloadEvent]
 

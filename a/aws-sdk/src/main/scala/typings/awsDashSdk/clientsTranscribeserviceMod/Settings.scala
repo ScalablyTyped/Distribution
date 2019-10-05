@@ -26,14 +26,14 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
-    ChannelIdentification: js.UndefOr[Boolean] = js.undefined,
-    MaxSpeakerLabels: js.UndefOr[MaxSpeakers] = js.undefined,
-    ShowSpeakerLabels: js.UndefOr[Boolean] = js.undefined,
+    ChannelIdentification: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxSpeakerLabels: Int | Double = null,
+    ShowSpeakerLabels: js.UndefOr[scala.Boolean] = js.undefined,
     VocabularyName: VocabularyName = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ChannelIdentification)) __obj.updateDynamic("ChannelIdentification")(ChannelIdentification)
-    if (!js.isUndefined(MaxSpeakerLabels)) __obj.updateDynamic("MaxSpeakerLabels")(MaxSpeakerLabels)
+    if (MaxSpeakerLabels != null) __obj.updateDynamic("MaxSpeakerLabels")(MaxSpeakerLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(ShowSpeakerLabels)) __obj.updateDynamic("ShowSpeakerLabels")(ShowSpeakerLabels)
     if (VocabularyName != null) __obj.updateDynamic("VocabularyName")(VocabularyName)
     __obj.asInstanceOf[Settings]

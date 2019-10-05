@@ -8,8 +8,9 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsCore.libEsmComponentsTagTagMod.ITagProps
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
@@ -178,7 +179,7 @@ object ITagInputProps {
     leftIcon: IconName | MaybeElement = null,
     onAdd: (/* values */ js.Array[String], /* method */ TagInputAddMethod) => Boolean | Unit = null,
     onChange: /* values */ js.Array[ReactNode] => Boolean | Unit = null,
-    onInputChange: FormEventHandler[HTMLInputElement] = null,
+    onInputChange: FormEvent[HTMLInputElement] => Unit = null,
     onKeyDown: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit = null,
     onKeyUp: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit = null,
     onRemove: (/* value */ String, /* index */ Double) => Unit = null,
@@ -201,7 +202,7 @@ object ITagInputProps {
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1(onInputChange))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction2(onKeyDown))
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction2(onKeyUp))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))

@@ -2,6 +2,7 @@ package typings.winston.winstonMod
 
 import typings.logform.logformMod.Format
 import typings.winston.libWinstonConfigMod.AbstractConfigSetLevels
+import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +15,7 @@ trait LoggerOptions extends js.Object {
   var level: js.UndefOr[String] = js.undefined
   var levels: js.UndefOr[AbstractConfigSetLevels] = js.undefined
   var silent: js.UndefOr[Boolean] = js.undefined
-  var transports: js.UndefOr[
-    js.Array[typings.winstonDashTransport.winstonDashTransportMod.^] | typings.winstonDashTransport.winstonDashTransportMod.^ 
-  ] = js.undefined
+  var transports: js.UndefOr[js.Array[^] | ^ ] = js.undefined
 }
 
 object LoggerOptions {
@@ -29,7 +28,7 @@ object LoggerOptions {
     level: String = null,
     levels: AbstractConfigSetLevels = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    transports: js.Array[typings.winstonDashTransport.winstonDashTransportMod.^] | typings.winstonDashTransport.winstonDashTransportMod.^  = null
+    transports: js.Array[^] | ^  = null
   ): LoggerOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultMeta != null) __obj.updateDynamic("defaultMeta")(defaultMeta)

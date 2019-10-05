@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/apputils/lib/clipboard", JSImport.Namespace)
 @js.native
 object libClipboardMod extends js.Object {
-  @JSName("Clipboard")
   @js.native
-  object ClipboardNs extends js.Object {
+  object Clipboard extends js.Object {
     /**
       * Copy text to the system clipboard.
       *

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullTypeResolver")
 @js.native
 class PullTypeResolver protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullTypeResolver {
+  extends typings.typescriptDashServices.TypeScript.PullTypeResolver {
   def this(
-    compilationSettings: typings.typescriptDashServices.TypeScriptNs.ImmutableCompilationSettings,
-    semanticInfoChain: typings.typescriptDashServices.TypeScriptNs.SemanticInfoChain
+    compilationSettings: typings.typescriptDashServices.TypeScript.ImmutableCompilationSettings,
+    semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain
   ) = this()
 }
 
@@ -19,11 +19,11 @@ class PullTypeResolver protected ()
 @js.native
 object PullTypeResolver extends js.Object {
   var globalTypeCheckPhase: Double = js.native
-  def hasSetAccessorParameterTypeAnnotation(setAccessor: typings.typescriptDashServices.TypeScriptNs.SetAccessor): Boolean = js.native
+  def hasSetAccessorParameterTypeAnnotation(setAccessor: typings.typescriptDashServices.TypeScript.SetAccessor): Boolean = js.native
   def typeCheck(
-    compilationSettings: typings.typescriptDashServices.TypeScriptNs.ImmutableCompilationSettings,
-    semanticInfoChain: typings.typescriptDashServices.TypeScriptNs.SemanticInfoChain,
-    document: typings.typescriptDashServices.TypeScriptNs.Document
+    compilationSettings: typings.typescriptDashServices.TypeScript.ImmutableCompilationSettings,
+    semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain,
+    document: typings.typescriptDashServices.TypeScript.Document
   ): Unit = js.native
 }
 

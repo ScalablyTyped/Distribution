@@ -14,17 +14,6 @@ trait Certificate extends js.Object {
 
 @JSImport("crypto", "Certificate")
 @js.native
-class CertificateCls () extends Certificate {
-  /* CompleteClass */
-  override def exportChallenge(spkac: BinaryLike): Buffer = js.native
-  /* CompleteClass */
-  override def exportPublicKey(spkac: BinaryLike): Buffer = js.native
-  /* CompleteClass */
-  override def verifySpkac(spkac: Binary): Boolean = js.native
-}
-
-@JSImport("crypto", "Certificate")
-@js.native
 object Certificate extends Instantiable0[Certificate] {
   def apply(): Certificate = js.native
 }

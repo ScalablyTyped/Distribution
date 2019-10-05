@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudtrailTrailMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.cloudtrailNs.TrailEventSelector
+import typings.atPulumiAws.typesInputMod.cloudtrail.TrailEventSelector
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

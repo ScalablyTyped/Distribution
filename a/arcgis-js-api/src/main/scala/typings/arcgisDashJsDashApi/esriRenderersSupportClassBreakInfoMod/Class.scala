@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSupportClassBreakInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassBreakInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassBreakInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ClassBreakInfo
+import typings.arcgisDashJsDashApi.__esri.ClassBreakInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

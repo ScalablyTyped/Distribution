@@ -1,6 +1,6 @@
 package typings.jqueryDashHandsontable
 
-import typings.jqueryDashHandsontable.HandsontableNs.Options
+import typings.jqueryDashHandsontable.Handsontable.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

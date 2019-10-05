@@ -43,3 +43,14 @@ object FunctionTypeParam {
   }
 }
 
+@JSImport("@babel/types", "functionTypeParam")
+@js.native
+object functionTypeParam extends js.Object {
+  def apply(name: js.UndefOr[scala.Nothing], typeAnnotation: FlowType): FunctionTypeParam = js.native
+  def apply(name: js.UndefOr[scala.Nothing], typeAnnotation: FlowType, optional: Boolean): FunctionTypeParam = js.native
+  def apply(name: Null, typeAnnotation: FlowType): FunctionTypeParam = js.native
+  def apply(name: Null, typeAnnotation: FlowType, optional: Boolean): FunctionTypeParam = js.native
+  def apply(name: Identifier, typeAnnotation: FlowType): FunctionTypeParam = js.native
+  def apply(name: Identifier, typeAnnotation: FlowType, optional: Boolean): FunctionTypeParam = js.native
+}
+

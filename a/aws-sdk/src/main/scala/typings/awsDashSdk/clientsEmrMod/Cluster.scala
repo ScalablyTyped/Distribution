@@ -112,10 +112,10 @@ object Cluster {
   def apply(
     Applications: ApplicationList = null,
     AutoScalingRole: XmlString = null,
-    AutoTerminate: js.UndefOr[Boolean] = js.undefined,
+    AutoTerminate: js.UndefOr[scala.Boolean] = js.undefined,
     Configurations: ConfigurationList = null,
     CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
+    EbsRootVolumeSize: Int | Double = null,
     Ec2InstanceAttributes: Ec2InstanceAttributes = null,
     Id: ClusterId = null,
     InstanceCollectionType: InstanceCollectionType = null,
@@ -123,7 +123,7 @@ object Cluster {
     LogUri: String = null,
     MasterPublicDnsName: String = null,
     Name: String = null,
-    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
+    NormalizedInstanceHours: Int | Double = null,
     ReleaseLabel: String = null,
     RepoUpgradeOnBoot: RepoUpgradeOnBoot = null,
     RequestedAmiVersion: String = null,
@@ -133,8 +133,8 @@ object Cluster {
     ServiceRole: String = null,
     Status: ClusterStatus = null,
     Tags: TagList = null,
-    TerminationProtected: js.UndefOr[Boolean] = js.undefined,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined,
+    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
   ): Cluster = {
     val __obj = js.Dynamic.literal()
     if (Applications != null) __obj.updateDynamic("Applications")(Applications)
@@ -142,7 +142,7 @@ object Cluster {
     if (!js.isUndefined(AutoTerminate)) __obj.updateDynamic("AutoTerminate")(AutoTerminate)
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations)
     if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId)
-    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize)
+    if (EbsRootVolumeSize != null) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.asInstanceOf[js.Any])
     if (Ec2InstanceAttributes != null) __obj.updateDynamic("Ec2InstanceAttributes")(Ec2InstanceAttributes)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (InstanceCollectionType != null) __obj.updateDynamic("InstanceCollectionType")(InstanceCollectionType.asInstanceOf[js.Any])
@@ -150,7 +150,7 @@ object Cluster {
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)
     if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours)
+    if (NormalizedInstanceHours != null) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.asInstanceOf[js.Any])
     if (ReleaseLabel != null) __obj.updateDynamic("ReleaseLabel")(ReleaseLabel)
     if (RepoUpgradeOnBoot != null) __obj.updateDynamic("RepoUpgradeOnBoot")(RepoUpgradeOnBoot.asInstanceOf[js.Any])
     if (RequestedAmiVersion != null) __obj.updateDynamic("RequestedAmiVersion")(RequestedAmiVersion)

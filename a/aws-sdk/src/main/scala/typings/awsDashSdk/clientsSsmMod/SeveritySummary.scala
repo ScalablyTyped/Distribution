@@ -34,20 +34,20 @@ trait SeveritySummary extends js.Object {
 object SeveritySummary {
   @scala.inline
   def apply(
-    CriticalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    HighCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    InformationalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    LowCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    MediumCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    UnspecifiedCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
+    CriticalCount: Int | Double = null,
+    HighCount: Int | Double = null,
+    InformationalCount: Int | Double = null,
+    LowCount: Int | Double = null,
+    MediumCount: Int | Double = null,
+    UnspecifiedCount: Int | Double = null
   ): SeveritySummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CriticalCount)) __obj.updateDynamic("CriticalCount")(CriticalCount)
-    if (!js.isUndefined(HighCount)) __obj.updateDynamic("HighCount")(HighCount)
-    if (!js.isUndefined(InformationalCount)) __obj.updateDynamic("InformationalCount")(InformationalCount)
-    if (!js.isUndefined(LowCount)) __obj.updateDynamic("LowCount")(LowCount)
-    if (!js.isUndefined(MediumCount)) __obj.updateDynamic("MediumCount")(MediumCount)
-    if (!js.isUndefined(UnspecifiedCount)) __obj.updateDynamic("UnspecifiedCount")(UnspecifiedCount)
+    if (CriticalCount != null) __obj.updateDynamic("CriticalCount")(CriticalCount.asInstanceOf[js.Any])
+    if (HighCount != null) __obj.updateDynamic("HighCount")(HighCount.asInstanceOf[js.Any])
+    if (InformationalCount != null) __obj.updateDynamic("InformationalCount")(InformationalCount.asInstanceOf[js.Any])
+    if (LowCount != null) __obj.updateDynamic("LowCount")(LowCount.asInstanceOf[js.Any])
+    if (MediumCount != null) __obj.updateDynamic("MediumCount")(MediumCount.asInstanceOf[js.Any])
+    if (UnspecifiedCount != null) __obj.updateDynamic("UnspecifiedCount")(UnspecifiedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeveritySummary]
   }
 }

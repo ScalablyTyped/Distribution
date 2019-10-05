@@ -1,7 +1,7 @@
 package typings.farbtastic
 
-import typings.farbtastic.JQueryFarbtasticNs.Callback
-import typings.farbtastic.JQueryFarbtasticNs.Options
+import typings.farbtastic.JQueryFarbtastic.Callback
+import typings.farbtastic.JQueryFarbtastic.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

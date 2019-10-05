@@ -10,9 +10,10 @@ import typings.antdDashMobile.antdDashMobileStrings.password
 import typings.antdDashMobile.antdDashMobileStrings.phone
 import typings.antdDashMobile.antdDashMobileStrings.text
 import typings.antdDashMobile.antdDashMobileStrings.top
-import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputEventHandler
 import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputItemPropsType
 import typings.antdDashMobile.esInputDashItemPropsTypeMod.InputKey
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -50,12 +51,12 @@ object InputItemProps {
     moneyKeyboardHeader: ReactNode = null,
     moneyKeyboardWrapProps: js.Object = null,
     name: String = null,
-    onBlur: InputEventHandler = null,
+    onBlur: /* value */ js.UndefOr[String] => Unit = null,
     onChange: /* value */ String => Unit = null,
-    onErrorClick: MouseEventHandler[HTMLDivElement] = null,
-    onExtraClick: MouseEventHandler[HTMLDivElement] = null,
-    onFocus: InputEventHandler = null,
-    onVirtualKeyboardConfirm: InputEventHandler = null,
+    onErrorClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onExtraClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onFocus: /* value */ js.UndefOr[String] => Unit = null,
+    onVirtualKeyboardConfirm: /* value */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     prefixCls: String = null,
     prefixListCls: String = null,
@@ -82,12 +83,12 @@ object InputItemProps {
     if (moneyKeyboardHeader != null) __obj.updateDynamic("moneyKeyboardHeader")(moneyKeyboardHeader.asInstanceOf[js.Any])
     if (moneyKeyboardWrapProps != null) __obj.updateDynamic("moneyKeyboardWrapProps")(moneyKeyboardWrapProps)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(onErrorClick)
-    if (onExtraClick != null) __obj.updateDynamic("onExtraClick")(onExtraClick)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(onVirtualKeyboardConfirm)
+    if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction1(onErrorClick))
+    if (onExtraClick != null) __obj.updateDynamic("onExtraClick")(js.Any.fromFunction1(onExtraClick))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(js.Any.fromFunction1(onVirtualKeyboardConfirm))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (prefixListCls != null) __obj.updateDynamic("prefixListCls")(prefixListCls)

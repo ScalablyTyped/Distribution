@@ -1,7 +1,7 @@
 package typings.paper
 
-import typings.paper.paperNs.Item
-import typings.paper.paperNs.Matrix
+import typings.paper.paper.Item
+import typings.paper.paper.Matrix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

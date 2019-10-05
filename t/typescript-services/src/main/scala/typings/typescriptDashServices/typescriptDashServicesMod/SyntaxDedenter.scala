@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
 import typings.typescriptDashServices.FormattingOptions
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxNode
+import typings.typescriptDashServices.TypeScript.ISyntaxNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxDedenter")
 @js.native
 class SyntaxDedenter protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxDedenter {
+  extends typings.typescriptDashServices.TypeScript.SyntaxDedenter {
   def this(
     dedentFirstToken: Boolean,
     dedentationAmount: Double,

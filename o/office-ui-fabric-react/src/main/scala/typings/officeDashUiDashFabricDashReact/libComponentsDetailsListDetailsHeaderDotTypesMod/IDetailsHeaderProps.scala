@@ -3,7 +3,6 @@ package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsH
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
-import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.ISelection
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsHeaderDotBaseMod.DetailsHeaderBase
@@ -17,6 +16,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedLi
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewportMod.IViewport
 import typings.react.NativeMouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
@@ -71,8 +71,8 @@ object IDetailsHeaderProps {
     onColumnContextMenu: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     onColumnIsSizingChanged: (/* column */ IColumn, /* isSizing */ Boolean) => Unit = null,
     onColumnResized: (/* column */ IColumn, /* newWidth */ Double, /* columnIndex */ Double) => Unit = null,
-    onRenderColumnHeaderTooltip: IRenderFunction[ITooltipHostProps] = null,
-    onRenderDetailsCheckbox: IRenderFunction[IDetailsCheckboxProps] = null,
+    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[ITooltipHostProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipHostProps], Element | Null]]) => Element | Null = null,
+    onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
     onToggleCollapseAll: /* isAllCollapsed */ Boolean => Unit = null,
     ref: LegacyRef[DetailsHeaderBase] = null,
     rowWidth: Int | Double = null,
@@ -104,8 +104,8 @@ object IDetailsHeaderProps {
     if (onColumnContextMenu != null) __obj.updateDynamic("onColumnContextMenu")(js.Any.fromFunction2(onColumnContextMenu))
     if (onColumnIsSizingChanged != null) __obj.updateDynamic("onColumnIsSizingChanged")(js.Any.fromFunction2(onColumnIsSizingChanged))
     if (onColumnResized != null) __obj.updateDynamic("onColumnResized")(js.Any.fromFunction3(onColumnResized))
-    if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(onRenderColumnHeaderTooltip)
-    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(onRenderDetailsCheckbox)
+    if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(js.Any.fromFunction2(onRenderColumnHeaderTooltip))
+    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2(onRenderDetailsCheckbox))
     if (onToggleCollapseAll != null) __obj.updateDynamic("onToggleCollapseAll")(js.Any.fromFunction1(onToggleCollapseAll))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])

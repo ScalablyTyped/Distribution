@@ -83,3 +83,9 @@ trait Symbol[This, Datum] extends js.Object {
   def `type`(`type`: SymbolType): this.type = js.native
 }
 
+@JSImport("d3-shape", "symbol")
+@js.native
+object symbol extends js.Object {
+  def apply(): Symbol[_, _] = js.native
+}
+

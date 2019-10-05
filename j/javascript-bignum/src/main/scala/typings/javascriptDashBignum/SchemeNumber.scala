@@ -1,5 +1,6 @@
 package typings.javascriptDashBignum
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +15,8 @@ trait SchemeNumber extends js.Object {
   def toPrecision(precision: Double): String = js.native
   def toString(radix: Double): String = js.native
 }
+
+@JSGlobal("SchemeNumber")
+@js.native
+object SchemeNumber extends TopLevel[SchemeNumber]
 

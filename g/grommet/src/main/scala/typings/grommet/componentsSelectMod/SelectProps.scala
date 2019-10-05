@@ -13,7 +13,7 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PlaceHolderType
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

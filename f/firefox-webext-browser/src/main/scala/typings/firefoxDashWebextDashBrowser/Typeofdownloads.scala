@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.DownloadItem
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.DownloadQuery
+import typings.firefoxDashWebextDashBrowser.browser.downloads.DownloadItem
+import typings.firefoxDashWebextDashBrowser.browser.downloads.DownloadQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInObjectType
-import typings.mfiles.MFilesNs.MFSpecialObjectFlag
+import typings.mfiles.MFiles.MFBuiltInObjectType
+import typings.mfiles.MFiles.MFSpecialObjectFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

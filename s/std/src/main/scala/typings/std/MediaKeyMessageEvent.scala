@@ -14,12 +14,6 @@ trait MediaKeyMessageEvent extends Event {
 
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
-class MediaKeyMessageEventCls protected () extends MediaKeyMessageEvent {
-  def this(`type`: java.lang.String, eventInitDict: MediaKeyMessageEventInit) = this()
-}
-
-@JSGlobal("MediaKeyMessageEvent")
-@js.native
 object MediaKeyMessageEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

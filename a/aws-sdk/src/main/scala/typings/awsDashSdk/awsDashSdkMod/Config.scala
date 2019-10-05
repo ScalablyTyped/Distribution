@@ -1,7 +1,9 @@
 package typings.awsDashSdk.awsDashSdkMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.awsDashSdk.libConfigMod.APIVersions
 import typings.awsDashSdk.libConfigMod.ConfigurationOptions
+import typings.awsDashSdk.libConfigMod.GlobalConfigInstance
 import typings.awsDashSdk.libConfigUnderscoreServiceUnderscorePlaceholdersMod.ConfigurationServicePlaceholders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,4 +19,8 @@ class Config ()
   extends typings.awsDashSdk.libCoreMod.Config {
   def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
 }
+
+@JSImport("aws-sdk", "config")
+@js.native
+object config extends TopLevel[GlobalConfigInstance]
 

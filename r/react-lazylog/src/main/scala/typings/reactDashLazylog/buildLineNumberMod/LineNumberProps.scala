@@ -1,6 +1,8 @@
 package typings.reactDashLazylog.buildLineNumberMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
@@ -19,12 +21,12 @@ object LineNumberProps {
   def apply(
     number: Double,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[HTMLAnchorElement] = null,
+    onClick: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit = null,
     style: CSSProperties = null
   ): LineNumberProps = {
     val __obj = js.Dynamic.literal(number = number)
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[LineNumberProps]
   }

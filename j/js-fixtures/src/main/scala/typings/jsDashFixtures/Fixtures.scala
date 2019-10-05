@@ -1,5 +1,6 @@
 package typings.jsDashFixtures
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,4 +42,8 @@ object Fixtures {
     __obj.asInstanceOf[Fixtures]
   }
 }
+
+@JSGlobal("fixtures")
+@js.native
+object fixtures extends TopLevel[Fixtures]
 

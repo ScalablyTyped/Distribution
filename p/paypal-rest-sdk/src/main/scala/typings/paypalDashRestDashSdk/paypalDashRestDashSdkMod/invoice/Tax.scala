@@ -1,0 +1,24 @@
+package typings.paypalDashRestDashSdk.paypalDashRestDashSdkMod.invoice
+
+import typings.paypalDashRestDashSdk.paypalDashRestDashSdkMod.Currency
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Tax extends Cost {
+  var id: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+}
+
+object Tax {
+  @scala.inline
+  def apply(amount: Currency = null, id: String = null, name: String = null, percent: Int | Double = null): Tax = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tax]
+  }
+}
+

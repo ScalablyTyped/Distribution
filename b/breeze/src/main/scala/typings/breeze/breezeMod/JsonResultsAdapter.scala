@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "JsonResultsAdapter")
 @js.native
 class JsonResultsAdapter protected ()
-  extends typings.breeze.breezeNs.JsonResultsAdapter {
+  extends typings.breeze.breeze.JsonResultsAdapter {
   def this(config: Anon_Data) = this()
 }
 

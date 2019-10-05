@@ -12,6 +12,7 @@ import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler0
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler0
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace
 import typings.vscodeDashLanguageclient.libCodeConverterMod.Converter
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeResult
 import scala.scalajs.js
@@ -82,7 +83,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var resolveConnection: js.Any = js.native
   var setDiagnostics: js.Any = js.native
   var state: js.Any = js.native
-  var trace: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace = js.native
+  var trace: Trace = js.native
   def createDefaultErrorHandler(): ErrorHandler = js.native
   /* protected */ def createMessageTransports(encoding: String): Thenable[MessageTransports] = js.native
   def error(message: String): Unit = js.native

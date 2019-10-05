@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksStaticWebLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.StaticWebLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.StaticWebLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

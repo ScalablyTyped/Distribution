@@ -3,9 +3,9 @@ package typings.browserDashSync.browserDashSyncMod
 import typings.browserDashSync.Anon_Bs
 import typings.browserDashSync.Anon_Stream
 import typings.chokidar.chokidarMod.WatchOptions
-import typings.node.NodeJSNs.ErrnoException
-import typings.node.NodeJSNs.EventEmitter
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.EventEmitter
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.fsMod.Stats
 import typings.std.Error
 import scala.scalajs.js

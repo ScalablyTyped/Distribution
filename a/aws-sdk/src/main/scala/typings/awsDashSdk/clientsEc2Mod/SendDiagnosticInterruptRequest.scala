@@ -17,7 +17,7 @@ trait SendDiagnosticInterruptRequest extends js.Object {
 
 object SendDiagnosticInterruptRequest {
   @scala.inline
-  def apply(InstanceId: String, DryRun: js.UndefOr[Boolean] = js.undefined): SendDiagnosticInterruptRequest = {
+  def apply(InstanceId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): SendDiagnosticInterruptRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[SendDiagnosticInterruptRequest]

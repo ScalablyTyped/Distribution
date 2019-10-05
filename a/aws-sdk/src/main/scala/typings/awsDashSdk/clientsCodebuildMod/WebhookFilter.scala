@@ -24,7 +24,7 @@ object WebhookFilter {
   def apply(
     pattern: String,
     `type`: WebhookFilterType,
-    excludeMatchedPattern: js.UndefOr[WrapperBoolean] = js.undefined
+    excludeMatchedPattern: js.UndefOr[scala.Boolean] = js.undefined
   ): WebhookFilter = {
     val __obj = js.Dynamic.literal(pattern = pattern)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -54,3 +54,29 @@ object DeclareClass {
   }
 }
 
+@JSImport("@babel/types", "declareClass")
+@js.native
+object declareClass extends js.Object {
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation
+  ): DeclareClass = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation,
+    _implements: js.Array[ClassImplements]
+  ): DeclareClass = js.native
+  def apply(
+    id: Identifier,
+    typeParameters: js.UndefOr[TypeParameterDeclaration | Null],
+    _extends: js.UndefOr[js.Array[InterfaceExtends] | Null],
+    body: ObjectTypeAnnotation,
+    _implements: js.Array[ClassImplements],
+    mixins: js.Array[InterfaceExtends]
+  ): DeclareClass = js.native
+}
+

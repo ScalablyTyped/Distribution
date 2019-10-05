@@ -25,7 +25,7 @@ trait DeleteTaskSetRequest extends js.Object {
 
 object DeleteTaskSetRequest {
   @scala.inline
-  def apply(cluster: String, service: String, taskSet: String, force: js.UndefOr[BoxedBoolean] = js.undefined): DeleteTaskSetRequest = {
+  def apply(cluster: String, service: String, taskSet: String, force: js.UndefOr[scala.Boolean] = js.undefined): DeleteTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster, service = service, taskSet = taskSet)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     __obj.asInstanceOf[DeleteTaskSetRequest]

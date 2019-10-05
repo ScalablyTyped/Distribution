@@ -1,6 +1,6 @@
 package typings.blissfuljs
 
-import typings.blissfuljs.BlissNSNs.BlissBindedElement
+import typings.blissfuljs.BlissNS.BlissBindedElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

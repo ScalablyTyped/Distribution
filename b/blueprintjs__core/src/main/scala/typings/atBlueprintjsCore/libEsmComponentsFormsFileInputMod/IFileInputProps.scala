@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod
 
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
 import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.LabelHTMLAttributes
@@ -64,7 +64,6 @@ import scala.scalajs.js.annotation._
 object IFileInputProps {
   @scala.inline
   def apply(
-    IProps: IProps = null,
     LabelHTMLAttributes: LabelHTMLAttributes[HTMLLabelElement] = null,
     buttonText: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -72,11 +71,10 @@ object IFileInputProps {
     hasSelection: js.UndefOr[Boolean] = js.undefined,
     inputProps: HTMLProps[HTMLInputElement] = null,
     large: js.UndefOr[Boolean] = js.undefined,
-    onInputChange: FormEventHandler[HTMLInputElement] = null,
+    onInputChange: FormEvent[HTMLInputElement] => Unit = null,
     text: ReactNode = null
   ): IFileInputProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IProps)
     js.Dynamic.global.Object.assign(__obj, LabelHTMLAttributes)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
@@ -84,7 +82,7 @@ object IFileInputProps {
     if (!js.isUndefined(hasSelection)) __obj.updateDynamic("hasSelection")(hasSelection)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1(onInputChange))
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileInputProps]
   }

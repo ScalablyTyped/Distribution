@@ -1,9 +1,9 @@
 package typings.atPulumiAws.sagemakerModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelContainer
-import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelPrimaryContainer
-import typings.atPulumiAws.typesInputMod.sagemakerNs.ModelVpcConfig
+import typings.atPulumiAws.typesInputMod.sagemaker.ModelContainer
+import typings.atPulumiAws.typesInputMod.sagemaker.ModelPrimaryContainer
+import typings.atPulumiAws.typesInputMod.sagemaker.ModelVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

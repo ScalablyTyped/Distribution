@@ -36,3 +36,9 @@ object JSXClosingFragment {
   }
 }
 
+@JSImport("@babel/types", "jsxClosingFragment")
+@js.native
+object jsxClosingFragment extends js.Object {
+  def apply(): JSXClosingFragment = js.native
+}
+

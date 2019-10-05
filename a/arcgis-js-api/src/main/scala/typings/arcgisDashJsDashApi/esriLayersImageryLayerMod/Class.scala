@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersImageryLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageryLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageryLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.ImageryLayer
+import typings.arcgisDashJsDashApi.__esri.ImageryLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

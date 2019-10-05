@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.virtualKeyboardNs.FeatureRestrictions
+import typings.chromeDashApps.chrome.virtualKeyboard.FeatureRestrictions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

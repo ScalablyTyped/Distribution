@@ -1,9 +1,9 @@
 package typings.busboy.busboyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.busboy.busboyNs.Busboy
-import typings.busboy.busboyNs.BusboyConfig
-import typings.busboy.busboyNs.BusboyConstructor
+import typings.busboy.busboy.Busboy
+import typings.busboy.busboy.BusboyConfig
+import typings.busboy.busboy.BusboyConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

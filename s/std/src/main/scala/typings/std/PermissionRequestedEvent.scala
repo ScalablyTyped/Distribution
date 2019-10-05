@@ -12,9 +12,5 @@ trait PermissionRequestedEvent extends Event {
 
 @JSGlobal("PermissionRequestedEvent")
 @js.native
-class PermissionRequestedEventCls () extends PermissionRequestedEvent
-
-@JSGlobal("PermissionRequestedEvent")
-@js.native
 object PermissionRequestedEvent extends Instantiable0[PermissionRequestedEvent]
 

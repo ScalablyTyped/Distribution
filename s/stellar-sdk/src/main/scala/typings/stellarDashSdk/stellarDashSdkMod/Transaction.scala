@@ -2,7 +2,7 @@ package typings.stellarDashSdk.stellarDashSdkMod
 
 import typings.stellarDashBase.stellarDashBaseMod.MemoType
 import typings.stellarDashBase.stellarDashBaseMod.Operation
-import typings.stellarDashBase.stellarDashBaseMod.xdrNs.TransactionEnvelope
+import typings.stellarDashBase.stellarDashBaseMod.xdr.TransactionEnvelope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

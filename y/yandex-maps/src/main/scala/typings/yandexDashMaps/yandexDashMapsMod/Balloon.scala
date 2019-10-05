@@ -5,6 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
+- typings.yandexDashMaps.yandexDashMapsMod.IChild because var conflicts: events. Inlined getParent, setParent, setParent
+- typings.yandexDashMaps.yandexDashMapsMod.IPopup because Already inherited
 - typings.yandexDashMaps.yandexDashMapsMod.IBaloon because var conflicts: events, options. Inlined autoPan */ @JSImport("yandex-maps", "Balloon")
 @js.native
 class Balloon protected () extends Popup[Balloon] {
@@ -57,6 +62,8 @@ class Balloon protected () extends Popup[Balloon] {
     context: js.Object,
     priority: Double
   ): this.type = js.native
+  def setParent(): this.type = js.native
+  def setParent(parent: js.Object): this.type = js.native
   def setParent(parent: Balloon): this.type = js.native
   def unfreeze(): IFreezable = js.native
 }

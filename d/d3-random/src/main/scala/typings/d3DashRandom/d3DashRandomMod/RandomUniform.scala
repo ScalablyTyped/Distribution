@@ -1,5 +1,6 @@
 package typings.d3DashRandom.d3DashRandomMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ trait RandomUniform extends RandomNumberGenerationSource {
   def apply(min: Double): js.Function0[Double] = js.native
   def apply(min: Double, max: Double): js.Function0[Double] = js.native
 }
+
+@JSImport("d3-random", "randomUniform")
+@js.native
+object randomUniform extends TopLevel[RandomUniform]
 

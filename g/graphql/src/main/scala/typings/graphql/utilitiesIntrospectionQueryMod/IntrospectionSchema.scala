@@ -17,13 +17,14 @@ object IntrospectionSchema {
   @scala.inline
   def apply(
     directives: js.Array[IntrospectionDirective],
-    mutationType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]],
     queryType: IntrospectionNamedTypeRef[IntrospectionObjectType],
-    subscriptionType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]],
-    types: js.Array[IntrospectionType]
+    types: js.Array[IntrospectionType],
+    mutationType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null,
+    subscriptionType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null
   ): IntrospectionSchema = {
-    val __obj = js.Dynamic.literal(directives = directives, mutationType = mutationType.asInstanceOf[js.Any], queryType = queryType, subscriptionType = subscriptionType.asInstanceOf[js.Any], types = types)
-  
+    val __obj = js.Dynamic.literal(directives = directives, queryType = queryType, types = types)
+    if (mutationType != null) __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
+    if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionSchema]
   }
 }

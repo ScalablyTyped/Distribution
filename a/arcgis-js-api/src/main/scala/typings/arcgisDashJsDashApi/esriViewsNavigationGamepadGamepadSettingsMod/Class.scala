@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsNavigationGamepadGamepadSettingsMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.gamepadGamepadSettings
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.gamepadGamepadSettingsProperties
+import typings.arcgisDashJsDashApi.__esri.gamepadGamepadSettings
+import typings.arcgisDashJsDashApi.__esri.gamepadGamepadSettingsProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

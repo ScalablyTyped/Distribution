@@ -36,17 +36,17 @@ object TelemetryRecord {
   def apply(
     Timestamp: Timestamp,
     BackendConnectionErrors: BackendConnectionErrors = null,
-    SegmentsReceivedCount: js.UndefOr[NullableInteger] = js.undefined,
-    SegmentsRejectedCount: js.UndefOr[NullableInteger] = js.undefined,
-    SegmentsSentCount: js.UndefOr[NullableInteger] = js.undefined,
-    SegmentsSpilloverCount: js.UndefOr[NullableInteger] = js.undefined
+    SegmentsReceivedCount: Int | scala.Double = null,
+    SegmentsRejectedCount: Int | scala.Double = null,
+    SegmentsSentCount: Int | scala.Double = null,
+    SegmentsSpilloverCount: Int | scala.Double = null
   ): TelemetryRecord = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp)
     if (BackendConnectionErrors != null) __obj.updateDynamic("BackendConnectionErrors")(BackendConnectionErrors)
-    if (!js.isUndefined(SegmentsReceivedCount)) __obj.updateDynamic("SegmentsReceivedCount")(SegmentsReceivedCount)
-    if (!js.isUndefined(SegmentsRejectedCount)) __obj.updateDynamic("SegmentsRejectedCount")(SegmentsRejectedCount)
-    if (!js.isUndefined(SegmentsSentCount)) __obj.updateDynamic("SegmentsSentCount")(SegmentsSentCount)
-    if (!js.isUndefined(SegmentsSpilloverCount)) __obj.updateDynamic("SegmentsSpilloverCount")(SegmentsSpilloverCount)
+    if (SegmentsReceivedCount != null) __obj.updateDynamic("SegmentsReceivedCount")(SegmentsReceivedCount.asInstanceOf[js.Any])
+    if (SegmentsRejectedCount != null) __obj.updateDynamic("SegmentsRejectedCount")(SegmentsRejectedCount.asInstanceOf[js.Any])
+    if (SegmentsSentCount != null) __obj.updateDynamic("SegmentsSentCount")(SegmentsSentCount.asInstanceOf[js.Any])
+    if (SegmentsSpilloverCount != null) __obj.updateDynamic("SegmentsSpilloverCount")(SegmentsSpilloverCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryRecord]
   }
 }

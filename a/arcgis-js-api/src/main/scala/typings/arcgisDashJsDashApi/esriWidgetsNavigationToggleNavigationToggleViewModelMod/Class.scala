@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsNavigationToggleNavigationToggleViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NavigationToggleViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NavigationToggleViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.NavigationToggleViewModel
+import typings.arcgisDashJsDashApi.__esri.NavigationToggleViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

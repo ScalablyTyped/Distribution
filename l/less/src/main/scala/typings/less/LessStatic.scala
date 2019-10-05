@@ -1,12 +1,12 @@
 package typings.less
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.less.LessNs.ImportManager
-import typings.less.LessNs.Options
-import typings.less.LessNs.RefreshOutput
-import typings.less.LessNs.RenderError
-import typings.less.LessNs.RenderOutput
-import typings.less.LessNs.StaticOptions
+import typings.less.Less.ImportManager
+import typings.less.Less.Options
+import typings.less.Less.RefreshOutput
+import typings.less.Less.RenderError
+import typings.less.Less.RenderOutput
+import typings.less.Less.StaticOptions
 import typings.std.HTMLLinkElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -26,13 +26,13 @@ trait ListRequestedServiceQuotaChangeHistoryRequest extends js.Object {
 object ListRequestedServiceQuotaChangeHistoryRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ServiceCode: ServiceCode = null,
     Status: RequestStatus = null
   ): ListRequestedServiceQuotaChangeHistoryRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

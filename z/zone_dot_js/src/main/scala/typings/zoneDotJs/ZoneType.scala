@@ -20,6 +20,15 @@ trait ZoneType extends js.Object {
     */
   var root: Zone
   /**
+    * load patch for specified native module, allow user to
+    * define their own patch, user can use this API after loading zone.js
+    */
+  def __load_patch(name: String, fn: _PatchFn): Unit
+  /**
+    * Zone symbol API to generate a string with __zone_symbol__ prefix
+    */
+  def __symbol__(name: String): String
+  /**
     * Verify that Zone has been correctly patched. Specifically that Promise is zone aware.
     */
   def assertZonePatched(): Unit
@@ -27,8 +36,15 @@ trait ZoneType extends js.Object {
 
 object ZoneType {
   @scala.inline
-  def apply(assertZonePatched: () => Unit, current: Zone, root: Zone, currentTask: Task = null): ZoneType = {
-    val __obj = js.Dynamic.literal(assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current, root = root)
+  def apply(
+    __load_patch: (String, _PatchFn) => Unit,
+    __symbol__ : String => String,
+    assertZonePatched: () => Unit,
+    current: Zone,
+    root: Zone,
+    currentTask: Task = null
+  ): ZoneType = {
+    val __obj = js.Dynamic.literal(__load_patch = js.Any.fromFunction2(__load_patch), __symbol__ = js.Any.fromFunction1(__symbol__), assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current, root = root)
     if (currentTask != null) __obj.updateDynamic("currentTask")(currentTask)
     __obj.asInstanceOf[ZoneType]
   }

@@ -1,6 +1,7 @@
 package typings.pino.pinoMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.eventsMod.^
 import typings.pino.Anon_Key
 import typings.pino.pinoStrings.`level-change`
 import scala.scalajs.js
@@ -8,8 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BaseLogger
-  extends typings.node.eventsMod.^ {
+trait BaseLogger extends ^ {
   /**
     * Holds the current log format version (as output in the v property of each log record).
     */

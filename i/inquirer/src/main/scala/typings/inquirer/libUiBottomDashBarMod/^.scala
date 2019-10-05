@@ -1,6 +1,6 @@
 package typings.inquirer.libUiBottomDashBarMod
 
-import typings.inquirer.inquirerMod.uiNs.BottomBarOptions
+import typings.inquirer.inquirerMod.ui.BottomBarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

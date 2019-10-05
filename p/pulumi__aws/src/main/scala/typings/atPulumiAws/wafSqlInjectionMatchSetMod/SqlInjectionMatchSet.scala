@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafSqlInjectionMatchSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.SqlInjectionMatchSetSqlInjectionMatchTuple
+import typings.atPulumiAws.typesOutputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

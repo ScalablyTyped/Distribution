@@ -27,9 +27,9 @@ class Service protected () extends NamespaceBase {
     * @param [responseDelimited=false] Whether responses are length-delimited
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
-  def create(rpcImpl: RPCImpl): typings.protobufjs.protobufjsMod.rpcNs.Service = js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.protobufjs.protobufjsMod.rpcNs.Service = js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.protobufjs.protobufjsMod.rpcNs.Service = js.native
+  def create(rpcImpl: RPCImpl): typings.protobufjs.protobufjsMod.rpc.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.protobufjs.protobufjsMod.rpc.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.protobufjs.protobufjsMod.rpc.Service = js.native
 }
 
 /* static members */

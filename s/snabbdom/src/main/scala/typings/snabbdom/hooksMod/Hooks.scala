@@ -1,5 +1,6 @@
 package typings.snabbdom.hooksMod
 
+import typings.snabbdom.vnodeMod.VNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,28 +21,28 @@ trait Hooks extends js.Object {
 object Hooks {
   @scala.inline
   def apply(
-    create: CreateHook = null,
-    destroy: DestroyHook = null,
-    init: InitHook = null,
-    insert: InsertHook = null,
-    post: PostHook = null,
-    postpatch: PostPatchHook = null,
-    pre: PreHook = null,
-    prepatch: PrePatchHook = null,
-    remove: RemoveHook = null,
-    update: UpdateHook = null
+    create: (/* emptyVNode */ VNode, /* vNode */ VNode) => js.Any = null,
+    destroy: /* vNode */ VNode => js.Any = null,
+    init: /* vNode */ VNode => js.Any = null,
+    insert: /* vNode */ VNode => js.Any = null,
+    post: () => js.Any = null,
+    postpatch: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null,
+    pre: () => js.Any = null,
+    prepatch: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null,
+    remove: (/* vNode */ VNode, /* removeCallback */ js.Function0[Unit]) => js.Any = null,
+    update: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (postpatch != null) __obj.updateDynamic("postpatch")(postpatch)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
-    if (prepatch != null) __obj.updateDynamic("prepatch")(prepatch)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
+    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
+    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
+    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction1(insert))
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction0(post))
+    if (postpatch != null) __obj.updateDynamic("postpatch")(js.Any.fromFunction2(postpatch))
+    if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction0(pre))
+    if (prepatch != null) __obj.updateDynamic("prepatch")(js.Any.fromFunction2(prepatch))
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[Hooks]
   }
 }

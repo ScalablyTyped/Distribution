@@ -34,10 +34,10 @@ trait DescribeFpgaImagesRequest extends js.Object {
 object DescribeFpgaImagesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     FpgaImageIds: FpgaImageIdList = null,
-    MaxResults: js.UndefOr[DescribeFpgaImagesMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
     Owners: OwnerStringList = null
   ): DescribeFpgaImagesRequest = {
@@ -45,7 +45,7 @@ object DescribeFpgaImagesRequest {
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (FpgaImageIds != null) __obj.updateDynamic("FpgaImageIds")(FpgaImageIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Owners != null) __obj.updateDynamic("Owners")(Owners)
     __obj.asInstanceOf[DescribeFpgaImagesRequest]

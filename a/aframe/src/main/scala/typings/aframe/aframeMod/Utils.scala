@@ -1,5 +1,6 @@
 package typings.aframe.aframeMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.aframe.Anon_CheckHasPositionalTracking
 import typings.aframe.Anon_ComponentNameDelimiter
 import typings.aframe.Anon_Coord
@@ -27,4 +28,8 @@ trait Utils extends js.Object {
     optionalContext: js.Object
   ): js.Function2[/* t */ Double, /* dt */ Double, Unit] = js.native
 }
+
+@JSImport("aframe", "utils")
+@js.native
+object utils extends TopLevel[Utils]
 

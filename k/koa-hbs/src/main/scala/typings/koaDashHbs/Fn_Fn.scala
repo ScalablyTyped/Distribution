@@ -1,7 +1,7 @@
 package typings.koaDashHbs
 
-import typings.handlebars.HandlebarsNs.HelperDeclareSpec
-import typings.handlebars.HandlebarsNs.HelperDelegate
+import typings.handlebars.Handlebars.HelperDeclareSpec
+import typings.handlebars.Handlebars.HelperDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

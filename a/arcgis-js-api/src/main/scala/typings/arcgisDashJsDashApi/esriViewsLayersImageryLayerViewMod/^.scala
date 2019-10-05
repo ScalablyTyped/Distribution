@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsLayersImageryLayerViewMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageryLayerViewConstructor
+import typings.arcgisDashJsDashApi.__esri.ImageryLayerViewConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atJupyterlabApplication
 
-import typings.atJupyterlabApplication.libShellMod.ILabShellNs.Area
+import typings.atJupyterlabApplication.libShellMod.ILabShell.Area
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

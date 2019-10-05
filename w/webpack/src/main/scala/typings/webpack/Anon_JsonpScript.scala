@@ -1,7 +1,7 @@
 package typings.webpack
 
 import typings.tapable.tapableMod.SyncWaterfallHook
-import typings.webpack.webpackMod.compilationNs.Chunk
+import typings.webpack.webpackMod.compilation.Chunk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

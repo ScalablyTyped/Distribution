@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait SetUserMFAPreferenceRequest extends js.Object {
   /**
-    * The access token.
+    * The access token for the user.
     */
   var AccessToken: TokenModelType
   /**

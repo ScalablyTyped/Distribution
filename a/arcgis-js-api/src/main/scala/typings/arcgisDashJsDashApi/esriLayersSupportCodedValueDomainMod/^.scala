@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportCodedValueDomainMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CodedValueDomainConstructor
+import typings.arcgisDashJsDashApi.__esri.CodedValueDomainConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

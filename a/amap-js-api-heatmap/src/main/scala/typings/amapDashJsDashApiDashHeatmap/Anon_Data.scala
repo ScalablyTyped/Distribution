@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashHeatmap
 
-import typings.amapDashJsDashApiDashHeatmap.AMapNs.HeatmapNs.DataSet
+import typings.amapDashJsDashApiDashHeatmap.AMap.Heatmap.DataSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

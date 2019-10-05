@@ -22,20 +22,30 @@ trait IRatingStyles extends js.Object {
 object IRatingStyles {
   @scala.inline
   def apply(
-    labelText: IStyle,
-    ratingButton: IStyle,
-    ratingFocusZone: IStyle,
-    ratingStar: IStyle,
-    ratingStarBack: IStyle,
-    ratingStarFront: IStyle,
-    ratingStarIsLarge: IStyle,
-    ratingStarIsSmall: IStyle,
-    root: IStyle,
-    rootIsLarge: IStyle,
-    rootIsSmall: IStyle
+    labelText: IStyle = null,
+    ratingButton: IStyle = null,
+    ratingFocusZone: IStyle = null,
+    ratingStar: IStyle = null,
+    ratingStarBack: IStyle = null,
+    ratingStarFront: IStyle = null,
+    ratingStarIsLarge: IStyle = null,
+    ratingStarIsSmall: IStyle = null,
+    root: IStyle = null,
+    rootIsLarge: IStyle = null,
+    rootIsSmall: IStyle = null
   ): IRatingStyles = {
-    val __obj = js.Dynamic.literal(labelText = labelText.asInstanceOf[js.Any], ratingButton = ratingButton.asInstanceOf[js.Any], ratingFocusZone = ratingFocusZone.asInstanceOf[js.Any], ratingStar = ratingStar.asInstanceOf[js.Any], ratingStarBack = ratingStarBack.asInstanceOf[js.Any], ratingStarFront = ratingStarFront.asInstanceOf[js.Any], ratingStarIsLarge = ratingStarIsLarge.asInstanceOf[js.Any], ratingStarIsSmall = ratingStarIsSmall.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rootIsLarge = rootIsLarge.asInstanceOf[js.Any], rootIsSmall = rootIsSmall.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (labelText != null) __obj.updateDynamic("labelText")(labelText.asInstanceOf[js.Any])
+    if (ratingButton != null) __obj.updateDynamic("ratingButton")(ratingButton.asInstanceOf[js.Any])
+    if (ratingFocusZone != null) __obj.updateDynamic("ratingFocusZone")(ratingFocusZone.asInstanceOf[js.Any])
+    if (ratingStar != null) __obj.updateDynamic("ratingStar")(ratingStar.asInstanceOf[js.Any])
+    if (ratingStarBack != null) __obj.updateDynamic("ratingStarBack")(ratingStarBack.asInstanceOf[js.Any])
+    if (ratingStarFront != null) __obj.updateDynamic("ratingStarFront")(ratingStarFront.asInstanceOf[js.Any])
+    if (ratingStarIsLarge != null) __obj.updateDynamic("ratingStarIsLarge")(ratingStarIsLarge.asInstanceOf[js.Any])
+    if (ratingStarIsSmall != null) __obj.updateDynamic("ratingStarIsSmall")(ratingStarIsSmall.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rootIsLarge != null) __obj.updateDynamic("rootIsLarge")(rootIsLarge.asInstanceOf[js.Any])
+    if (rootIsSmall != null) __obj.updateDynamic("rootIsSmall")(rootIsSmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRatingStyles]
   }
 }

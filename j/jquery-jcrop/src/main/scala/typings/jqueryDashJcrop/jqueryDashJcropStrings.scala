@@ -1,7 +1,7 @@
 package typings.jqueryDashJcrop
 
-import typings.jqueryDashJcrop.JQueryNs.JcropNs.CardinalDirection
-import typings.jqueryDashJcrop.JQueryNs.JcropNs.IntermediateDirection
+import typings.jqueryDashJcrop.JQuery.Jcrop.CardinalDirection
+import typings.jqueryDashJcrop.JQuery.Jcrop.IntermediateDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

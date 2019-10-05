@@ -20,13 +20,6 @@ trait TouchEvent extends UIEvent {
 
 @JSGlobal("TouchEvent")
 @js.native
-class TouchEventCls protected () extends TouchEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: TouchEventInit) = this()
-}
-
-@JSGlobal("TouchEvent")
-@js.native
 object TouchEvent
   extends Instantiable1[/* type */ java.lang.String, TouchEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ TouchEventInit, TouchEvent]

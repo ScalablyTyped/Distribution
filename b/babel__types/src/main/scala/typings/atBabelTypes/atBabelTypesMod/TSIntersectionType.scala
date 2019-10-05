@@ -37,3 +37,9 @@ object TSIntersectionType {
   }
 }
 
+@JSImport("@babel/types", "tsIntersectionType")
+@js.native
+object tsIntersectionType extends js.Object {
+  def apply(types: js.Array[TSType]): TSIntersectionType = js.native
+}
+

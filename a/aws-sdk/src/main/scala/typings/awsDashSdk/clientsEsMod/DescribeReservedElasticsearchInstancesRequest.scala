@@ -22,12 +22,12 @@ trait DescribeReservedElasticsearchInstancesRequest extends js.Object {
 object DescribeReservedElasticsearchInstancesRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
     ReservedElasticsearchInstanceId: GUID = null
   ): DescribeReservedElasticsearchInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ReservedElasticsearchInstanceId != null) __obj.updateDynamic("ReservedElasticsearchInstanceId")(ReservedElasticsearchInstanceId)
     __obj.asInstanceOf[DescribeReservedElasticsearchInstancesRequest]

@@ -1,6 +1,5 @@
 package typings.atBlueprintjsCore.libEsmComponentsMenuMenuMod
 
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLUListElement
 import scala.scalajs.js
@@ -19,13 +18,11 @@ object IMenuProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLUListElement] = null,
-    IProps: IProps = null,
     large: js.UndefOr[Boolean] = js.undefined,
     ulRef: /* ref */ HTMLUListElement | Null => _ = null
   ): IMenuProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (ulRef != null) __obj.updateDynamic("ulRef")(js.Any.fromFunction1(ulRef))
     __obj.asInstanceOf[IMenuProps]

@@ -6,6 +6,8 @@ import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts
 import typings.react.reactMod.ReactType
 import typings.reactDashSvg.reactDashSvgStrings.div
 import typings.reactDashSvg.reactDashSvgStrings.span
+import typings.std.Element
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +27,8 @@ object Props {
   @scala.inline
   def apply(
     src: String,
-    afterInjection: Errback = null,
-    beforeInjection: BeforeEach = null,
+    afterInjection: (/* error */ Error | Null, /* svg */ js.UndefOr[Element]) => Unit = null,
+    beforeInjection: /* svg */ Element => Unit = null,
     evalScripts: EvalScripts = null,
     fallback: ReactType[_] = null,
     loading: ReactType[_] = null,
@@ -34,8 +36,8 @@ object Props {
     wrapper: div | span = null
   ): Props = {
     val __obj = js.Dynamic.literal(src = src)
-    if (afterInjection != null) __obj.updateDynamic("afterInjection")(afterInjection)
-    if (beforeInjection != null) __obj.updateDynamic("beforeInjection")(beforeInjection)
+    if (afterInjection != null) __obj.updateDynamic("afterInjection")(js.Any.fromFunction2(afterInjection))
+    if (beforeInjection != null) __obj.updateDynamic("beforeInjection")(js.Any.fromFunction1(beforeInjection))
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])

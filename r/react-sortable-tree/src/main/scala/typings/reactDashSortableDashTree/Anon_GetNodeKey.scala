@@ -1,5 +1,7 @@
 package typings.reactDashSortableDashTree
 
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeIndex
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeNode
 import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +14,8 @@ trait Anon_GetNodeKey extends js.Object {
 
 object Anon_GetNodeKey {
   @scala.inline
-  def apply(getNodeKey: GetNodeKeyFunction, index: Double): Anon_GetNodeKey = {
-    val __obj = js.Dynamic.literal(getNodeKey = getNodeKey, index = index)
+  def apply(getNodeKey: /* data */ TreeIndex with TreeNode => String | Double, index: Double): Anon_GetNodeKey = {
+    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index)
   
     __obj.asInstanceOf[Anon_GetNodeKey]
   }

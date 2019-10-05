@@ -28,14 +28,14 @@ object EntityRecognizerMetadata {
   def apply(
     EntityTypes: EntityRecognizerMetadataEntityTypesList = null,
     EvaluationMetrics: EntityRecognizerEvaluationMetrics = null,
-    NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined,
-    NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
+    NumberOfTestDocuments: Int | scala.Double = null,
+    NumberOfTrainedDocuments: Int | scala.Double = null
   ): EntityRecognizerMetadata = {
     val __obj = js.Dynamic.literal()
     if (EntityTypes != null) __obj.updateDynamic("EntityTypes")(EntityTypes)
     if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics)
-    if (!js.isUndefined(NumberOfTestDocuments)) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments)
-    if (!js.isUndefined(NumberOfTrainedDocuments)) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments)
+    if (NumberOfTestDocuments != null) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments.asInstanceOf[js.Any])
+    if (NumberOfTrainedDocuments != null) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerMetadata]
   }
 }

@@ -1,5 +1,6 @@
 package typings.atStorybookAddons.atStorybookAddonsMod
 
+import typings.atStorybookChannels.atStorybookChannelsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AddonStore () extends js.Object {
   def addPanel(name: js.Any, panel: js.Any): Unit = js.native
-  def getChannel(): typings.atStorybookChannels.atStorybookChannelsMod.^ = js.native
+  def getChannel(): ^ = js.native
   def getDatabase(): js.Any = js.native
   def getPanels(): js.Any = js.native
   def getPreview(): js.Any = js.native

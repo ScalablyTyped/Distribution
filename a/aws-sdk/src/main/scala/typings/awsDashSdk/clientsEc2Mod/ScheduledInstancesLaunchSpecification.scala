@@ -68,7 +68,7 @@ object ScheduledInstancesLaunchSpecification {
   def apply(
     ImageId: String,
     BlockDeviceMappings: ScheduledInstancesBlockDeviceMappingSet = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     IamInstanceProfile: ScheduledInstancesIamInstanceProfile = null,
     InstanceType: String = null,
     KernelId: String = null,

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Vec4")
 @js.native
 class Vec4 ()
-  extends typings.playcanvas.pcNs.Vec4 {
+  extends typings.playcanvas.pc.Vec4 {
   def this(x: js.Array[Number]) = this()
   def this(x: Double) = this()
   def this(x: js.Array[Number], y: Double) = this()
@@ -43,7 +43,7 @@ object Vec4 extends js.Object {
     * @name pc.Vec4.ONE
     * @description A constant vector set to [1, 1, 1, 1].
     */
-  val ONE: typings.playcanvas.pcNs.Vec4 = js.native
+  val ONE: typings.playcanvas.pc.Vec4 = js.native
   /**
     * @field
     * @static
@@ -52,6 +52,6 @@ object Vec4 extends js.Object {
     * @name pc.Vec4.ZERO
     * @description A constant vector set to [0, 0, 0, 0].
     */
-  val ZERO: typings.playcanvas.pcNs.Vec4 = js.native
+  val ZERO: typings.playcanvas.pc.Vec4 = js.native
 }
 

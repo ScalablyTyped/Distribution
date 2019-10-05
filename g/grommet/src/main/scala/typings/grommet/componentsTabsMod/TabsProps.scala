@@ -31,10 +31,10 @@ trait TabsProps extends js.Object {
 object TabsProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     a11yTitle: A11yTitleType = null,
     activeIndex: Int | Double = null,
     alignSelf: AlignSelfType = null,
+    children: ReactNode = null,
     flex: grow | shrink | Boolean = null,
     gridArea: GridAreaType = null,
     justify: start | center | end = null,
@@ -42,10 +42,11 @@ object TabsProps {
     messages: Anon_TabContents = null,
     onActive: /* repeated */ js.Any => _ = null
   ): TabsProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])

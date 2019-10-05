@@ -38,14 +38,14 @@ object ModifyInstancePlacementRequest {
     Affinity: Affinity = null,
     GroupName: String = null,
     HostId: String = null,
-    PartitionNumber: js.UndefOr[Integer] = js.undefined,
+    PartitionNumber: Int | scala.Double = null,
     Tenancy: HostTenancy = null
   ): ModifyInstancePlacementRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
     if (Affinity != null) __obj.updateDynamic("Affinity")(Affinity.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName)
     if (HostId != null) __obj.updateDynamic("HostId")(HostId)
-    if (!js.isUndefined(PartitionNumber)) __obj.updateDynamic("PartitionNumber")(PartitionNumber)
+    if (PartitionNumber != null) __obj.updateDynamic("PartitionNumber")(PartitionNumber.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstancePlacementRequest]
   }

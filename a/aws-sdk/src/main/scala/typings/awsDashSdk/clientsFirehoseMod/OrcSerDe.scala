@@ -50,28 +50,28 @@ trait OrcSerDe extends js.Object {
 object OrcSerDe {
   @scala.inline
   def apply(
-    BlockSizeBytes: js.UndefOr[BlockSizeBytes] = js.undefined,
+    BlockSizeBytes: Int | Double = null,
     BloomFilterColumns: ListOfNonEmptyStringsWithoutWhitespace = null,
-    BloomFilterFalsePositiveProbability: js.UndefOr[Proportion] = js.undefined,
+    BloomFilterFalsePositiveProbability: Int | Double = null,
     Compression: OrcCompression = null,
-    DictionaryKeyThreshold: js.UndefOr[Proportion] = js.undefined,
-    EnablePadding: js.UndefOr[BooleanObject] = js.undefined,
+    DictionaryKeyThreshold: Int | Double = null,
+    EnablePadding: js.UndefOr[Boolean] = js.undefined,
     FormatVersion: OrcFormatVersion = null,
-    PaddingTolerance: js.UndefOr[Proportion] = js.undefined,
-    RowIndexStride: js.UndefOr[OrcRowIndexStride] = js.undefined,
-    StripeSizeBytes: js.UndefOr[OrcStripeSizeBytes] = js.undefined
+    PaddingTolerance: Int | Double = null,
+    RowIndexStride: Int | Double = null,
+    StripeSizeBytes: Int | Double = null
   ): OrcSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockSizeBytes)) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes)
+    if (BlockSizeBytes != null) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.asInstanceOf[js.Any])
     if (BloomFilterColumns != null) __obj.updateDynamic("BloomFilterColumns")(BloomFilterColumns)
-    if (!js.isUndefined(BloomFilterFalsePositiveProbability)) __obj.updateDynamic("BloomFilterFalsePositiveProbability")(BloomFilterFalsePositiveProbability)
+    if (BloomFilterFalsePositiveProbability != null) __obj.updateDynamic("BloomFilterFalsePositiveProbability")(BloomFilterFalsePositiveProbability.asInstanceOf[js.Any])
     if (Compression != null) __obj.updateDynamic("Compression")(Compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(DictionaryKeyThreshold)) __obj.updateDynamic("DictionaryKeyThreshold")(DictionaryKeyThreshold)
+    if (DictionaryKeyThreshold != null) __obj.updateDynamic("DictionaryKeyThreshold")(DictionaryKeyThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(EnablePadding)) __obj.updateDynamic("EnablePadding")(EnablePadding)
     if (FormatVersion != null) __obj.updateDynamic("FormatVersion")(FormatVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(PaddingTolerance)) __obj.updateDynamic("PaddingTolerance")(PaddingTolerance)
-    if (!js.isUndefined(RowIndexStride)) __obj.updateDynamic("RowIndexStride")(RowIndexStride)
-    if (!js.isUndefined(StripeSizeBytes)) __obj.updateDynamic("StripeSizeBytes")(StripeSizeBytes)
+    if (PaddingTolerance != null) __obj.updateDynamic("PaddingTolerance")(PaddingTolerance.asInstanceOf[js.Any])
+    if (RowIndexStride != null) __obj.updateDynamic("RowIndexStride")(RowIndexStride.asInstanceOf[js.Any])
+    if (StripeSizeBytes != null) __obj.updateDynamic("StripeSizeBytes")(StripeSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrcSerDe]
   }
 }

@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.privacyNs.Network
-import typings.chrome.chromeNs.privacyNs.Services
-import typings.chrome.chromeNs.privacyNs.Websites
+import typings.chrome.chrome.privacy.Network
+import typings.chrome.chrome.privacy.Services
+import typings.chrome.chrome.privacy.Websites
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

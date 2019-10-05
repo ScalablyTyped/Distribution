@@ -1,6 +1,9 @@
 package typings.reactDashDnd.libCommonDragPreviewImageMod
 
+import typings.react.reactMod.ReactElement
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
+import typings.reactDashDnd.libInterfacesOptionsMod.DragPreviewOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +15,11 @@ trait DragPreviewImageProps extends js.Object {
 
 object DragPreviewImageProps {
   @scala.inline
-  def apply(connect: ConnectDragPreview, src: String): DragPreviewImageProps = {
-    val __obj = js.Dynamic.literal(connect = connect, src = src)
+  def apply(
+    connect: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
+    src: String
+  ): DragPreviewImageProps = {
+    val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), src = src)
   
     __obj.asInstanceOf[DragPreviewImageProps]
   }

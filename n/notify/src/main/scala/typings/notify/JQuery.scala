@@ -1,6 +1,6 @@
 package typings.notify
 
-import typings.notify.NotifyNs.Options
+import typings.notify.Notify.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

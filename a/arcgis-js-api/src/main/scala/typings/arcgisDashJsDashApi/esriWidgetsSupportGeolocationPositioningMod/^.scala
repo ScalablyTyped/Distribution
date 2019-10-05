@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSupportGeolocationPositioningMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeolocationPositioningConstructor
+import typings.arcgisDashJsDashApi.__esri.GeolocationPositioningConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

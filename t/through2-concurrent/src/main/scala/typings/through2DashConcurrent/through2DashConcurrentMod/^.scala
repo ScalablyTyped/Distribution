@@ -16,11 +16,5 @@ object ^ extends js.Object {
   def apply(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = js.native
   def apply(transform: TransformFunction): Transform = js.native
   def apply(transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  def obj(): Transform = js.native
-  def obj(opts: Through2ConcurrentOptions): Transform = js.native
-  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction): Transform = js.native
-  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  def obj(transform: TransformFunction): Transform = js.native
-  def obj(transform: TransformFunction, flush: FlushCallback): Transform = js.native
 }
 

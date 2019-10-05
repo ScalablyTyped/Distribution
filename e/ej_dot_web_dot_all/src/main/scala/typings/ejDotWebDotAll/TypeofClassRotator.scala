@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Rotator
-import typings.ejDotWebDotAll.ejNs.RotatorNs.Model
+import typings.ejDotWebDotAll.ej.Rotator
+import typings.ejDotWebDotAll.ej.Rotator.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -30,18 +30,18 @@ trait ProgressCounters extends js.Object {
 object ProgressCounters {
   @scala.inline
   def apply(
-    CancelledSteps: js.UndefOr[Integer] = js.undefined,
-    FailedSteps: js.UndefOr[Integer] = js.undefined,
-    SuccessSteps: js.UndefOr[Integer] = js.undefined,
-    TimedOutSteps: js.UndefOr[Integer] = js.undefined,
-    TotalSteps: js.UndefOr[Integer] = js.undefined
+    CancelledSteps: Int | Double = null,
+    FailedSteps: Int | Double = null,
+    SuccessSteps: Int | Double = null,
+    TimedOutSteps: Int | Double = null,
+    TotalSteps: Int | Double = null
   ): ProgressCounters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CancelledSteps)) __obj.updateDynamic("CancelledSteps")(CancelledSteps)
-    if (!js.isUndefined(FailedSteps)) __obj.updateDynamic("FailedSteps")(FailedSteps)
-    if (!js.isUndefined(SuccessSteps)) __obj.updateDynamic("SuccessSteps")(SuccessSteps)
-    if (!js.isUndefined(TimedOutSteps)) __obj.updateDynamic("TimedOutSteps")(TimedOutSteps)
-    if (!js.isUndefined(TotalSteps)) __obj.updateDynamic("TotalSteps")(TotalSteps)
+    if (CancelledSteps != null) __obj.updateDynamic("CancelledSteps")(CancelledSteps.asInstanceOf[js.Any])
+    if (FailedSteps != null) __obj.updateDynamic("FailedSteps")(FailedSteps.asInstanceOf[js.Any])
+    if (SuccessSteps != null) __obj.updateDynamic("SuccessSteps")(SuccessSteps.asInstanceOf[js.Any])
+    if (TimedOutSteps != null) __obj.updateDynamic("TimedOutSteps")(TimedOutSteps.asInstanceOf[js.Any])
+    if (TotalSteps != null) __obj.updateDynamic("TotalSteps")(TotalSteps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressCounters]
   }
 }

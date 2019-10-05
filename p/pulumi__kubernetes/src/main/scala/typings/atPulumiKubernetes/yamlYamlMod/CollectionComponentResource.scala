@@ -345,134 +345,134 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.value
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.volume_binding_mode
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.webhooks
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.MutatingWebhook
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.ValidatingWebhook
-import typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinition
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinitionSpec
-import typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1Ns.CustomResourceDefinitionStatus
-import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIService
-import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIServiceSpec
-import typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1Ns.APIServiceStatus
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.ControllerRevision
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.DaemonSet
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.DaemonSetSpec
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.DaemonSetStatus
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.Deployment
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.DeploymentSpec
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.DeploymentStatus
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.ReplicaSet
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.ReplicaSetSpec
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.ReplicaSetStatus
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.StatefulSet
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.StatefulSetSpec
-import typings.atPulumiKubernetes.typesOutputMod.appsNs.v1Ns.StatefulSetStatus
-import typings.atPulumiKubernetes.typesOutputMod.auditregistrationNs.v1alpha1Ns.AuditSink
-import typings.atPulumiKubernetes.typesOutputMod.auditregistrationNs.v1alpha1Ns.AuditSinkSpec
-import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenRequestSpec
-import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenRequestStatus
-import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenReviewSpec
-import typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1Ns.TokenReviewStatus
-import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SelfSubjectAccessReviewSpec
-import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SelfSubjectRulesReviewSpec
-import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewSpec
-import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewStatus
-import typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1Ns.SubjectRulesReviewStatus
-import typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler
-import typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerSpec
-import typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerStatus
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1Ns.Job
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1Ns.JobSpec
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1Ns.JobStatus
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1beta1Ns.CronJob
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1beta1Ns.CronJobSpec
-import typings.atPulumiKubernetes.typesOutputMod.batchNs.v1beta1Ns.CronJobStatus
-import typings.atPulumiKubernetes.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequest
-import typings.atPulumiKubernetes.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestSpec
-import typings.atPulumiKubernetes.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestStatus
-import typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1Ns.Lease
-import typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1Ns.LeaseSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ComponentCondition
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ComponentStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ConfigMap
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.EndpointSubset
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Endpoints
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.EventSource
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.LimitRange
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.LimitRangeSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.LocalObjectReference
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Namespace
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.NamespaceSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.NamespaceStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Node
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.NodeSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.NodeStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ObjectReference
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolume
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaim
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaimSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaimStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolumeSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PersistentVolumeStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Pod
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PodSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PodStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PodTemplate
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ReplicationController
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ReplicationControllerSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ReplicationControllerStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ResourceQuota
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ResourceQuotaSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ResourceQuotaStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Secret
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Service
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceAccount
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceSpec
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.ServiceStatus
-import typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.TopologySelectorTerm
-import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.Endpoint
-import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.EndpointPort
-import typings.atPulumiKubernetes.typesOutputMod.discoveryNs.v1alpha1Ns.EndpointSlice
-import typings.atPulumiKubernetes.typesOutputMod.eventsNs.v1beta1Ns.Event
-import typings.atPulumiKubernetes.typesOutputMod.eventsNs.v1beta1Ns.EventSeries
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.Ingress
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.IngressSpec
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.IngressStatus
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.NetworkPolicy
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.NetworkPolicySpec
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.PodSecurityPolicy
-import typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.PodSecurityPolicySpec
-import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ListMeta
-import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
-import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.StatusDetails
-import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1alpha1Ns.RuntimeClass
-import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1alpha1Ns.RuntimeClassSpec
-import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Overhead
-import typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.Scheduling
-import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudget
-import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudgetSpec
-import typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodDisruptionBudgetStatus
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.AggregationRule
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.ClusterRole
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.ClusterRoleBinding
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.PolicyRule
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.Role
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.RoleBinding
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.RoleRef
-import typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1Ns.Subject
-import typings.atPulumiKubernetes.typesOutputMod.schedulingNs.v1Ns.PriorityClass
-import typings.atPulumiKubernetes.typesOutputMod.settingsNs.v1alpha1Ns.PodPreset
-import typings.atPulumiKubernetes.typesOutputMod.settingsNs.v1alpha1Ns.PodPresetSpec
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1Ns.StorageClass
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1Ns.VolumeAttachment
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1Ns.VolumeAttachmentSpec
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1Ns.VolumeAttachmentStatus
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.CSIDriver
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.CSIDriverSpec
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.CSINode
-import typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.CSINodeSpec
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1.MutatingWebhook
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1.MutatingWebhookConfiguration
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1.ValidatingWebhook
+import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1.ValidatingWebhookConfiguration
+import typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1.CustomResourceDefinition
+import typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1.CustomResourceDefinitionSpec
+import typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1.CustomResourceDefinitionStatus
+import typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1.APIService
+import typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1.APIServiceSpec
+import typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1.APIServiceStatus
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.ControllerRevision
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.DaemonSet
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.DaemonSetSpec
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.DaemonSetStatus
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.Deployment
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.DeploymentSpec
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.DeploymentStatus
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.ReplicaSet
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.ReplicaSetSpec
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.ReplicaSetStatus
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.StatefulSet
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.StatefulSetSpec
+import typings.atPulumiKubernetes.typesOutputMod.apps.v1.StatefulSetStatus
+import typings.atPulumiKubernetes.typesOutputMod.auditregistration.v1alpha1.AuditSink
+import typings.atPulumiKubernetes.typesOutputMod.auditregistration.v1alpha1.AuditSinkSpec
+import typings.atPulumiKubernetes.typesOutputMod.authentication.v1.TokenRequestSpec
+import typings.atPulumiKubernetes.typesOutputMod.authentication.v1.TokenRequestStatus
+import typings.atPulumiKubernetes.typesOutputMod.authentication.v1.TokenReviewSpec
+import typings.atPulumiKubernetes.typesOutputMod.authentication.v1.TokenReviewStatus
+import typings.atPulumiKubernetes.typesOutputMod.authorization.v1.SelfSubjectAccessReviewSpec
+import typings.atPulumiKubernetes.typesOutputMod.authorization.v1.SelfSubjectRulesReviewSpec
+import typings.atPulumiKubernetes.typesOutputMod.authorization.v1.SubjectAccessReviewSpec
+import typings.atPulumiKubernetes.typesOutputMod.authorization.v1.SubjectAccessReviewStatus
+import typings.atPulumiKubernetes.typesOutputMod.authorization.v1.SubjectRulesReviewStatus
+import typings.atPulumiKubernetes.typesOutputMod.autoscaling.v1.HorizontalPodAutoscaler
+import typings.atPulumiKubernetes.typesOutputMod.autoscaling.v1.HorizontalPodAutoscalerSpec
+import typings.atPulumiKubernetes.typesOutputMod.autoscaling.v1.HorizontalPodAutoscalerStatus
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1.Job
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1.JobSpec
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1.JobStatus
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1beta1.CronJob
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1beta1.CronJobSpec
+import typings.atPulumiKubernetes.typesOutputMod.batch.v1beta1.CronJobStatus
+import typings.atPulumiKubernetes.typesOutputMod.certificates.v1beta1.CertificateSigningRequest
+import typings.atPulumiKubernetes.typesOutputMod.certificates.v1beta1.CertificateSigningRequestSpec
+import typings.atPulumiKubernetes.typesOutputMod.certificates.v1beta1.CertificateSigningRequestStatus
+import typings.atPulumiKubernetes.typesOutputMod.coordination.v1.Lease
+import typings.atPulumiKubernetes.typesOutputMod.coordination.v1.LeaseSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ComponentCondition
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ComponentStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ConfigMap
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.EndpointSubset
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Endpoints
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.EventSource
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.LimitRange
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.LimitRangeSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.LocalObjectReference
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Namespace
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.NamespaceSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.NamespaceStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Node
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.NodeSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.NodeStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ObjectReference
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolume
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeClaim
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeClaimSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeClaimStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Pod
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodTemplate
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodTemplateSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ReplicationController
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ReplicationControllerSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ReplicationControllerStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ResourceQuota
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ResourceQuotaSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ResourceQuotaStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Secret
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.Service
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceAccount
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceSpec
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceStatus
+import typings.atPulumiKubernetes.typesOutputMod.core.v1.TopologySelectorTerm
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.Endpoint
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.EndpointPort
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.EndpointSlice
+import typings.atPulumiKubernetes.typesOutputMod.events.v1beta1.Event
+import typings.atPulumiKubernetes.typesOutputMod.events.v1beta1.EventSeries
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.Ingress
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.IngressSpec
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.IngressStatus
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.NetworkPolicy
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.NetworkPolicySpec
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.PodSecurityPolicy
+import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.PodSecurityPolicySpec
+import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
+import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
+import typings.atPulumiKubernetes.typesOutputMod.meta.v1.StatusDetails
+import typings.atPulumiKubernetes.typesOutputMod.node.v1alpha1.RuntimeClass
+import typings.atPulumiKubernetes.typesOutputMod.node.v1alpha1.RuntimeClassSpec
+import typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.Overhead
+import typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.Scheduling
+import typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodDisruptionBudget
+import typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodDisruptionBudgetSpec
+import typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodDisruptionBudgetStatus
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.AggregationRule
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.ClusterRole
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.ClusterRoleBinding
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.PolicyRule
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.Role
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.RoleBinding
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.RoleRef
+import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.Subject
+import typings.atPulumiKubernetes.typesOutputMod.scheduling.v1.PriorityClass
+import typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1.PodPreset
+import typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1.PodPresetSpec
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.StorageClass
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachment
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachmentSpec
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachmentStatus
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSIDriver
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSIDriverSpec
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINode
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINodeSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.ComponentResource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Output
@@ -697,7 +697,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.MutatingWebhookConfiguration
     ]
   ] = js.native
   def getResourceProperty(
@@ -723,7 +723,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.MutatingWebhookConfiguration
     ]
   ] = js.native
   def getResourceProperty(
@@ -761,7 +761,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: webhooks
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.MutatingWebhook
     ]
   ] = js.native
   def getResourceProperty(
@@ -791,7 +791,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: webhooks
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.MutatingWebhook
     ]
   ] = js.native
   def getResourceProperty(
@@ -805,7 +805,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhookConfiguration
     ]
   ] = js.native
   def getResourceProperty(
@@ -831,7 +831,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhookConfiguration
     ]
   ] = js.native
   def getResourceProperty(
@@ -869,7 +869,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: webhooks
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhook
     ]
   ] = js.native
   def getResourceProperty(
@@ -899,7 +899,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: webhooks
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+      typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhook
     ]
   ] = js.native
   def getResourceProperty(
@@ -1012,7 +1012,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+      typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinition
     ]
   ] = js.native
   def getResourceProperty(
@@ -1038,7 +1038,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+      typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinition
     ]
   ] = js.native
   def getResourceProperty(
@@ -1073,14 +1073,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
+    typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinitionSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinitionStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
@@ -1106,7 +1106,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
+    typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinitionSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
@@ -1114,7 +1114,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinitionStatus
   ] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String, property: api_version): Output[`apiregistrationDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String, property: items): Output[js.Array[APIService]] = js.native
@@ -1171,7 +1171,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[APIServiceStatus] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, name: String, property: api_version): Output[`apiregistrationDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIService]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIService]
   ] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, name: String, property: kind): Output[APIServiceList] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -1187,7 +1187,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIService]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIService]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistration/v1beta1/APIServiceList`,
@@ -1204,11 +1204,9 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: api_version): Output[`apiregistrationDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIService] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceSpec] = js.native
   def getResourceProperty(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistration/v1beta1/APIService`,
@@ -1233,16 +1231,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistration/v1beta1/APIService`,
     namespace: String,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIServiceList`,
@@ -1321,7 +1317,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIService]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIService]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
@@ -1345,7 +1341,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIService]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIService]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
@@ -1370,11 +1366,9 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceSpec] = js.native
   def getResourceProperty(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`,
@@ -1399,16 +1393,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`,
     namespace: String,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
+    typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1.APIServiceStatus
   ] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevisionList`, name: String, property: api_version): Output[`apps/v1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1/ControllerRevisionList`, name: String, property: items): Output[js.Array[ControllerRevision]] = js.native
@@ -1542,7 +1534,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1/StatefulSet`, namespace: String, name: String, property: status): Output[StatefulSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.ControllerRevision]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.ControllerRevision]
   ] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, name: String, property: kind): Output[ControllerRevisionList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -1558,7 +1550,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.ControllerRevision]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.ControllerRevision]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/ControllerRevisionList`,
@@ -1608,7 +1600,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: revision
   ): Output[Double] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.Deployment]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.Deployment]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String, property: kind): Output[DeploymentList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1617,7 +1609,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.Deployment]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.Deployment]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/DeploymentList`, namespace: String, name: String, property: kind): Output[DeploymentList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/DeploymentList`,
@@ -1628,8 +1620,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.DeploymentSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.DeploymentStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.DeploymentStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/Deployment`,
     namespace: String,
@@ -1638,10 +1630,10 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`apps/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.DeploymentSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.DeploymentStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.DeploymentStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String, property: kind): Output[StatefulSetList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1650,7 +1642,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSetList`, namespace: String, name: String, property: kind): Output[StatefulSetList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/StatefulSetList`,
@@ -1661,8 +1653,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: api_version): Output[`apps/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta1/StatefulSet`,
     namespace: String,
@@ -1671,11 +1663,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`apps/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta1Ns.StatefulSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta1.StatefulSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ControllerRevision]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ControllerRevision]
   ] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, name: String, property: kind): Output[ControllerRevisionList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -1691,7 +1683,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ControllerRevision]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ControllerRevision]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/ControllerRevisionList`,
@@ -1741,7 +1733,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: revision
   ): Output[Double] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String, property: kind): Output[DaemonSetList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1750,7 +1742,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSetList`, namespace: String, name: String, property: kind): Output[DaemonSetList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/DaemonSetList`,
@@ -1761,15 +1753,15 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DaemonSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DaemonSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.Deployment]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.Deployment]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String, property: kind): Output[DeploymentList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1778,7 +1770,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.Deployment]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.Deployment]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/DeploymentList`, namespace: String, name: String, property: kind): Output[DeploymentList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/DeploymentList`,
@@ -1789,8 +1781,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DeploymentSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DeploymentStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DeploymentStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/Deployment`,
     namespace: String,
@@ -1799,10 +1791,10 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DeploymentSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.DeploymentStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.DeploymentStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String, property: kind): Output[ReplicaSetList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1811,7 +1803,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSetList`, namespace: String, name: String, property: kind): Output[ReplicaSetList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/ReplicaSetList`,
@@ -1822,8 +1814,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/ReplicaSet`,
     namespace: String,
@@ -1832,10 +1824,10 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.ReplicaSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.ReplicaSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String, property: kind): Output[StatefulSetList] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -1844,7 +1836,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`apps/v1beta2`] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSet]] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSet]] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSetList`, namespace: String, name: String, property: kind): Output[StatefulSetList] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/StatefulSetList`,
@@ -1855,8 +1847,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: api_version): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `apps/v1beta2/StatefulSet`,
     namespace: String,
@@ -1865,8 +1857,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`apps/v1beta2`] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet] = js.native
   def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.appsNs.v1beta2Ns.StatefulSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
     name: String,
@@ -2028,11 +2020,9 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewSpec
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewSpec] = js.native
   def getResourceProperty(groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`,
@@ -2057,16 +2047,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewSpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`,
     namespace: String,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
@@ -2300,14 +2288,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
@@ -2333,7 +2321,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
@@ -2341,7 +2329,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
@@ -2363,14 +2351,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SelfSubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
@@ -2396,7 +2384,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SelfSubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
@@ -2404,7 +2392,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
@@ -2426,14 +2414,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SelfSubjectRulesReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectRulesReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectRulesReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
@@ -2459,7 +2447,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SelfSubjectRulesReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
@@ -2467,7 +2455,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectRulesReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectRulesReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
@@ -2489,14 +2477,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
@@ -2522,7 +2510,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
@@ -2530,7 +2518,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
+    typings.atPulumiKubernetes.typesOutputMod.authorization.v1beta1.SubjectAccessReviewStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v1/HorizontalPodAutoscalerList`,
@@ -2606,7 +2594,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`autoscaling/v2beta1`] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscalerList`, name: String, property: items): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler
+      typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscaler
     ]
   ] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscalerList`, name: String, property: kind): Output[HorizontalPodAutoscalerList] = js.native
@@ -2628,7 +2616,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler
+      typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscaler
     ]
   ] = js.native
   def getResourceProperty(
@@ -2651,10 +2639,10 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscaler] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerSpec
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscalerSpec
   ] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerStatus
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscalerStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`,
@@ -2680,7 +2668,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerSpec
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscalerSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`,
@@ -2688,7 +2676,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerStatus
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta1.HorizontalPodAutoscalerStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscalerList`,
@@ -2697,7 +2685,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`autoscaling/v2beta2`] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscalerList`, name: String, property: items): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler
+      typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscaler
     ]
   ] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscalerList`, name: String, property: kind): Output[HorizontalPodAutoscalerList] = js.native
@@ -2719,7 +2707,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: items
   ): Output[
     js.Array[
-      typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler
+      typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscaler
     ]
   ] = js.native
   def getResourceProperty(
@@ -2742,10 +2730,10 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscaler] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerSpec
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscalerSpec
   ] = js.native
   def getResourceProperty(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerStatus
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscalerStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`,
@@ -2771,7 +2759,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerSpec
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscalerSpec
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`,
@@ -2779,7 +2767,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerStatus
+    typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2.HorizontalPodAutoscalerStatus
   ] = js.native
   def getResourceProperty(groupVersionKind: `batch/v1/JobList`, name: String, property: api_version): Output[`batch/v1`] = js.native
   def getResourceProperty(groupVersionKind: `batch/v1/JobList`, name: String, property: items): Output[js.Array[Job]] = js.native
@@ -2823,7 +2811,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `batch/v1beta1/CronJob`, namespace: String, name: String, property: spec): Output[CronJobSpec] = js.native
   def getResourceProperty(groupVersionKind: `batch/v1beta1/CronJob`, namespace: String, name: String, property: status): Output[CronJobStatus] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String, property: api_version): Output[`batch/v2alpha1`] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJob]] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJob]] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String, property: kind): Output[CronJobList] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -2832,7 +2820,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`batch/v2alpha1`] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJob]] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJob]] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJobList`, namespace: String, name: String, property: kind): Output[CronJobList] = js.native
   def getResourceProperty(
     groupVersionKind: `batch/v2alpha1/CronJobList`,
@@ -2843,13 +2831,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: api_version): Output[`batch/v2alpha1`] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJob] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJobSpec] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJobStatus] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobSpec] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobStatus] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: api_version): Output[`batch/v2alpha1`] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJob] = js.native
   def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJobSpec] = js.native
-  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.batchNs.v2alpha1Ns.CronJobStatus] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobSpec] = js.native
+  def getResourceProperty(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
     name: String,
@@ -3006,9 +2994,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: spec
   ): Output[LeaseSpec] = js.native
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String, property: api_version): Output[`coordinationDOTk8sDOTio/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1beta1Ns.Lease]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.coordination.v1beta1.Lease]] = js.native
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String, property: kind): Output[LeaseList] = js.native
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -3022,9 +3008,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1beta1Ns.Lease]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.coordination.v1beta1.Lease]] = js.native
   def getResourceProperty(
     groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`,
     namespace: String,
@@ -3040,7 +3024,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String, property: api_version): Output[`coordinationDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Lease] = js.native
   def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
+  def getResourceProperty(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.coordination.v1beta1.LeaseSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`,
     namespace: String,
@@ -3064,7 +3048,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.coordination.v1beta1.LeaseSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
     name: String,
@@ -3307,9 +3291,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: series
   ): Output[EventSeries] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSet]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSet]] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String, property: kind): Output[DaemonSetList] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -3323,9 +3305,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSet]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSet]] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/DaemonSetList`,
     namespace: String,
@@ -3341,8 +3321,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetStatus] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/DaemonSet`,
     namespace: String,
@@ -3356,16 +3336,16 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/DaemonSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSetSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/DaemonSet`,
     namespace: String,
     name: String,
     property: status
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetStatus] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DaemonSetStatus] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DeploymentList`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DeploymentList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.Deployment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.Deployment]
   ] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DeploymentList`, name: String, property: kind): Output[DeploymentList] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/DeploymentList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -3381,7 +3361,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.Deployment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.Deployment]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/DeploymentList`,
@@ -3398,10 +3378,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DeploymentSpec] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DeploymentStatus
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DeploymentStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/Deployment`,
     namespace: String,
@@ -3415,15 +3393,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DeploymentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/Deployment`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DeploymentSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/Deployment`,
     namespace: String,
     name: String,
     property: status
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.DeploymentStatus
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.DeploymentStatus] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/IngressList`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/IngressList`, name: String, property: items): Output[js.Array[Ingress]] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/IngressList`, name: String, property: kind): Output[IngressList] = js.native
@@ -3586,7 +3562,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[PodSecurityPolicySpec] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSet]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSet]
   ] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, name: String, property: kind): Output[ReplicaSetList] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -3602,7 +3578,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSet]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSet]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/ReplicaSetList`,
@@ -3619,10 +3595,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: api_version): Output[`extensions/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet] = js.native
   def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSetSpec] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSetStatus
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/ReplicaSet`,
     namespace: String,
@@ -3636,23 +3610,19 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `extensions/v1beta1/ReplicaSet`, namespace: String, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSetSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `extensions/v1beta1/ReplicaSet`,
     namespace: String,
     name: String,
     property: status
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSetStatus
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSetStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`,
     name: String,
     property: api_version
   ): Output[`networkingDOTk8sDOTio/v1`] = js.native
-  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1Ns.NetworkPolicy]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicy]] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: kind): Output[NetworkPolicyList] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -3666,9 +3636,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1Ns.NetworkPolicy]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicy]] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`,
     namespace: String,
@@ -3684,7 +3652,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String, property: api_version): Output[`networkingDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.NetworkPolicy] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1Ns.NetworkPolicySpec] = js.native
+  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicySpec] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`,
     namespace: String,
@@ -3708,11 +3676,9 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1Ns.NetworkPolicySpec] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicySpec] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String, property: api_version): Output[`networkingDOTk8sDOTio/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.Ingress]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.Ingress]] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String, property: kind): Output[IngressList] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -3726,9 +3692,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.Ingress]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.Ingress]] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`,
     namespace: String,
@@ -3744,8 +3708,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: api_version): Output[`networkingDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Ingress] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.IngressSpec] = js.native
-  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.IngressStatus] = js.native
+  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.IngressSpec] = js.native
+  def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.IngressStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`,
     namespace: String,
@@ -3769,13 +3733,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.IngressSpec] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.IngressSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`,
     namespace: String,
     name: String,
     property: status
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.networkingNs.v1beta1Ns.IngressStatus] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1.IngressStatus] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, name: String, property: api_version): Output[`nodeDOTk8sDOTio/v1alpha1`] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, name: String, property: items): Output[js.Array[RuntimeClass]] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, name: String, property: kind): Output[RuntimeClassList] = js.native
@@ -3833,9 +3797,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: spec
   ): Output[RuntimeClassSpec] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String, property: api_version): Output[`nodeDOTk8sDOTio/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.RuntimeClass]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.RuntimeClass]] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String, property: kind): Output[RuntimeClassList] = js.native
   def getResourceProperty(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -3849,9 +3811,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.nodeNs.v1beta1Ns.RuntimeClass]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.RuntimeClass]] = js.native
   def getResourceProperty(
     groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`,
     namespace: String,
@@ -3971,7 +3931,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[PodDisruptionBudgetStatus] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, name: String, property: api_version): Output[`policy/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodSecurityPolicy]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodSecurityPolicy]
   ] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, name: String, property: kind): Output[PodSecurityPolicyList] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, name: String, property: metadata): Output[ListMeta] = js.native
@@ -3987,7 +3947,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodSecurityPolicy]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodSecurityPolicy]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`,
@@ -4004,9 +3964,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String, property: api_version): Output[`policy/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodSecurityPolicy] = js.native
   def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodSecurityPolicySpec
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodSecurityPolicySpec] = js.native
   def getResourceProperty(
     groupVersionKind: `policy/v1beta1/PodSecurityPolicy`,
     namespace: String,
@@ -4030,9 +3988,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.policyNs.v1beta1Ns.PodSecurityPolicySpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodSecurityPolicySpec] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
     name: String,
@@ -4388,7 +4344,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.ClusterRoleBinding]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.ClusterRoleBinding]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
@@ -4412,7 +4368,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.ClusterRoleBinding]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.ClusterRoleBinding]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
@@ -4445,12 +4401,12 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
     namespace: String,
@@ -4474,13 +4430,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
     namespace: String,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
     name: String,
@@ -4490,9 +4446,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.ClusterRole]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.ClusterRole]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
     name: String,
@@ -4514,9 +4468,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.ClusterRole]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.ClusterRole]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
     namespace: String,
@@ -4533,7 +4485,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     name: String,
     property: aggregation_rule
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.AggregationRule] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.AggregationRule] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     name: String,
@@ -4553,13 +4505,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     namespace: String,
     name: String,
     property: aggregation_rule
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.AggregationRule] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.AggregationRule] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     namespace: String,
@@ -4583,7 +4535,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
     name: String,
@@ -4593,9 +4545,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleBinding]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleBinding]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
     name: String,
@@ -4617,9 +4567,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleBinding]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleBinding]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
     namespace: String,
@@ -4651,12 +4599,12 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
     namespace: String,
@@ -4680,13 +4628,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
     namespace: String,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
     name: String,
@@ -4696,7 +4644,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Role]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Role]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
     name: String,
@@ -4718,7 +4666,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.Role]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Role]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
     namespace: String,
@@ -4742,7 +4690,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, name: String, property: rules): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.PolicyRule]] = js.native
+  def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, name: String, property: rules): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
     namespace: String,
@@ -4766,7 +4714,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1alpha1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
     name: String,
@@ -4777,7 +4725,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.ClusterRoleBinding]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.ClusterRoleBinding]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
@@ -4801,7 +4749,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.ClusterRoleBinding]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.ClusterRoleBinding]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
@@ -4834,12 +4782,12 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
     namespace: String,
@@ -4863,13 +4811,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
     namespace: String,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
     name: String,
@@ -4879,7 +4827,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.ClusterRole]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.ClusterRole]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
     name: String,
@@ -4901,7 +4849,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.ClusterRole]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.ClusterRole]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
     namespace: String,
@@ -4918,7 +4866,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     name: String,
     property: aggregation_rule
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.AggregationRule] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.AggregationRule] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     name: String,
@@ -4938,13 +4886,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     namespace: String,
     name: String,
     property: aggregation_rule
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.AggregationRule] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.AggregationRule] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     namespace: String,
@@ -4968,7 +4916,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
     name: String,
@@ -4978,7 +4926,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleBinding]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleBinding]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
     name: String,
@@ -5000,7 +4948,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleBinding]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleBinding]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
     namespace: String,
@@ -5032,12 +4980,12 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
     namespace: String,
@@ -5061,13 +5009,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: role_ref
-  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.RoleRef] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.RoleRef] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
     namespace: String,
     name: String,
     property: subjects
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Subject]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Subject]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
     name: String,
@@ -5077,7 +5025,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Role]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Role]] = js.native
   def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`, name: String, property: kind): Output[RoleList] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
@@ -5095,7 +5043,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.Role]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.Role]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
     namespace: String,
@@ -5115,7 +5063,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`rbacDOTauthorizationDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Role] = js.native
   def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String, property: rules): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.PolicyRule]] = js.native
+  def getResourceProperty(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String, property: rules): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
     namespace: String,
@@ -5139,7 +5087,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: rules
-  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbacNs.v1beta1Ns.PolicyRule]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.PolicyRule]] = js.native
   def getResourceProperty(
     groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClassList`,
     name: String,
@@ -5235,7 +5183,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.schedulingNs.v1alpha1Ns.PriorityClass]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.scheduling.v1alpha1.PriorityClass]
   ] = js.native
   def getResourceProperty(groupVersionKind: `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`, name: String, property: kind): Output[PriorityClassList] = js.native
   def getResourceProperty(
@@ -5255,7 +5203,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.schedulingNs.v1alpha1Ns.PriorityClass]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.scheduling.v1alpha1.PriorityClass]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
@@ -5340,7 +5288,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: api_version
   ): Output[`schedulingDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClassList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.schedulingNs.v1beta1Ns.PriorityClass]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.scheduling.v1beta1.PriorityClass]
   ] = js.native
   def getResourceProperty(groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClassList`, name: String, property: kind): Output[PriorityClassList] = js.native
   def getResourceProperty(
@@ -5360,7 +5308,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.schedulingNs.v1beta1Ns.PriorityClass]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.scheduling.v1beta1.PriorityClass]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
@@ -5682,7 +5630,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachment]
   ] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`, name: String, property: kind): Output[VolumeAttachmentList] = js.native
   def getResourceProperty(
@@ -5702,7 +5650,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachment]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
@@ -5723,11 +5671,9 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`storageDOTk8sDOTio/v1alpha1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachmentSpec
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachmentSpec] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachmentStatus
+    typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachmentStatus
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
@@ -5752,16 +5698,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachmentSpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachmentSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
     namespace: String,
     name: String,
     property: status
   ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1alpha1Ns.VolumeAttachmentStatus
+    typings.atPulumiKubernetes.typesOutputMod.storage.v1alpha1.VolumeAttachmentStatus
   ] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, name: String, property: api_version): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, name: String, property: items): Output[js.Array[CSIDriver]] = js.native
@@ -5880,9 +5824,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: api_version
   ): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.StorageClass]
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.StorageClass]] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, name: String, property: kind): Output[StorageClassList] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -5896,9 +5838,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.StorageClass]
-  ] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.StorageClass]] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`,
     namespace: String,
@@ -6003,7 +5943,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: api_version
   ): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`, name: String, property: items): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachment]
   ] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`, name: String, property: kind): Output[VolumeAttachmentList] = js.native
   def getResourceProperty(
@@ -6023,7 +5963,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: items
   ): Output[
-    js.Array[typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachment]
+    js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachment]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
@@ -6044,12 +5984,8 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   ): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: spec): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachmentSpec
-  ] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: status): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachmentStatus
-  ] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachmentSpec] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String, property: status): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachmentStatus] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
     namespace: String,
@@ -6073,17 +6009,13 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachmentSpec
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachmentSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
     namespace: String,
     name: String,
     property: status
-  ): Output[
-    typings.atPulumiKubernetes.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachmentStatus
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachmentStatus] = js.native
   def getResourceProperty(groupVersionKind: `v1/Binding`, name: String, property: api_version): Output[v1] = js.native
   def getResourceProperty(groupVersionKind: `v1/Binding`, name: String, property: kind): Output[Binding] = js.native
   def getResourceProperty(groupVersionKind: `v1/Binding`, name: String, property: metadata): Output[ObjectMeta] = js.native
@@ -6143,11 +6075,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `v1/Endpoints`, namespace: String, name: String, property: metadata): Output[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: `v1/Endpoints`, namespace: String, name: String, property: subsets): Output[js.Array[EndpointSubset]] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, name: String, property: api_version): Output[v1] = js.native
-  def getResourceProperty(groupVersionKind: `v1/EventList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Event]] = js.native
+  def getResourceProperty(groupVersionKind: `v1/EventList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.core.v1.Event]] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, name: String, property: kind): Output[EventList] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, namespace: String, name: String, property: api_version): Output[v1] = js.native
-  def getResourceProperty(groupVersionKind: `v1/EventList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.Event]] = js.native
+  def getResourceProperty(groupVersionKind: `v1/EventList`, namespace: String, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.core.v1.Event]] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, namespace: String, name: String, property: kind): Output[EventList] = js.native
   def getResourceProperty(groupVersionKind: `v1/EventList`, namespace: String, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: `type`): Output[String] = js.native
@@ -6165,7 +6097,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: related): Output[ObjectReference] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: reporting_component): Output[String] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: reporting_instance): Output[String] = js.native
-  def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: series): Output[typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.EventSeries] = js.native
+  def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: series): Output[typings.atPulumiKubernetes.typesOutputMod.core.v1.EventSeries] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, name: String, property: source): Output[EventSource] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: `type`): Output[String] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: action): Output[String] = js.native
@@ -6182,7 +6114,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: related): Output[ObjectReference] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: reporting_component): Output[String] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: reporting_instance): Output[String] = js.native
-  def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: series): Output[typings.atPulumiKubernetes.typesOutputMod.coreNs.v1Ns.EventSeries] = js.native
+  def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: series): Output[typings.atPulumiKubernetes.typesOutputMod.core.v1.EventSeries] = js.native
   def getResourceProperty(groupVersionKind: `v1/Event`, namespace: String, name: String, property: source): Output[EventSource] = js.native
   def getResourceProperty(groupVersionKind: `v1/LimitRangeList`, name: String, property: api_version): Output[v1] = js.native
   def getResourceProperty(groupVersionKind: `v1/LimitRangeList`, name: String, property: items): Output[js.Array[LimitRange]] = js.native
@@ -6469,7 +6401,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     */
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1MutatingWebhookConfiguration(groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.MutatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1MutatingWebhookConfiguration(
@@ -6477,14 +6409,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.MutatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1MutatingWebhookConfigurationList(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.MutatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1MutatingWebhookConfigurationList(
@@ -6492,14 +6424,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.MutatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.MutatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1ValidatingWebhookConfiguration(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.ValidatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1ValidatingWebhookConfiguration(
@@ -6507,14 +6439,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.ValidatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1ValidatingWebhookConfigurationList(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.ValidatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1ValidatingWebhookConfigurationList(
@@ -6522,14 +6454,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1Ns.ValidatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1.ValidatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1MutatingWebhookConfiguration(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.MutatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1MutatingWebhookConfiguration(
@@ -6537,14 +6469,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.MutatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1MutatingWebhookConfigurationList(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.MutatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1MutatingWebhookConfigurationList(
@@ -6552,14 +6484,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.MutatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1ValidatingWebhookConfiguration(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.ValidatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1ValidatingWebhookConfiguration(
@@ -6567,14 +6499,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.ValidatingWebhookConfiguration
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1ValidatingWebhookConfigurationList(
     groupVersionKind: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.ValidatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_admissionregistrationk8siov1beta1ValidatingWebhookConfigurationList(
@@ -6582,11 +6514,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.admissionregistration.v1beta1.ValidatingWebhookConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1CustomResourceDefinition(groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinition
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1.CustomResourceDefinition
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1CustomResourceDefinition(
@@ -6594,11 +6526,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinition
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1.CustomResourceDefinition
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1CustomResourceDefinitionList(groupVersionKind: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinitionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1.CustomResourceDefinitionList
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1CustomResourceDefinitionList(
@@ -6606,11 +6538,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1Ns.CustomResourceDefinitionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1.CustomResourceDefinitionList
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1beta1CustomResourceDefinition(groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1beta1.CustomResourceDefinition
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1beta1CustomResourceDefinition(
@@ -6618,11 +6550,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1beta1.CustomResourceDefinition
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1beta1CustomResourceDefinitionList(groupVersionKind: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1beta1.CustomResourceDefinitionList
   ] = js.native
   @JSName("getResource")
   def getResource_apiextensionsk8siov1beta1CustomResourceDefinitionList(
@@ -6630,35 +6562,31 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiextensions.v1beta1.CustomResourceDefinitionList
   ] = js.native
   @JSName("getResource")
-  def getResource_apiregistrationk8siov1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIService`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIService
-  ] = js.native
+  def getResource_apiregistrationk8siov1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIService`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIService] = js.native
   @JSName("getResource")
-  def getResource_apiregistrationk8siov1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIService`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIService
-  ] = js.native
+  def getResource_apiregistrationk8siov1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIService`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIService] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1APIServiceList(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIServiceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1APIServiceList(groupVersionKind: `apiregistrationDOTk8sDOTio/v1/APIServiceList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1beta1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIService
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIService
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1beta1APIService(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIService`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIService
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIService
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1beta1APIServiceList(groupVersionKind: `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationk8siov1beta1APIServiceList(
@@ -6666,175 +6594,151 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIServiceList
   ] = js.native
   @JSName("getResource")
-  def getResource_apiregistrationv1APIService(groupVersionKind: `apiregistration/v1/APIService`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIService
-  ] = js.native
+  def getResource_apiregistrationv1APIService(groupVersionKind: `apiregistration/v1/APIService`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIService] = js.native
   @JSName("getResource")
-  def getResource_apiregistrationv1APIService(groupVersionKind: `apiregistration/v1/APIService`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIService
-  ] = js.native
+  def getResource_apiregistrationv1APIService(groupVersionKind: `apiregistration/v1/APIService`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIService] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1APIServiceList(groupVersionKind: `apiregistration/v1/APIServiceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1APIServiceList(groupVersionKind: `apiregistration/v1/APIServiceList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1beta1APIService(groupVersionKind: `apiregistration/v1beta1/APIService`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIService
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIService
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1beta1APIService(groupVersionKind: `apiregistration/v1beta1/APIService`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIService
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIService
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1beta1APIServiceList(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIServiceList
   ] = js.native
   @JSName("getResource")
   def getResource_apiregistrationv1beta1APIServiceList(groupVersionKind: `apiregistration/v1beta1/APIServiceList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistrationNs.v1beta1Ns.APIServiceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apiregistration.v1beta1.APIServiceList
   ] = js.native
   @JSName("getResource")
-  def getResource_appsv1ControllerRevision(groupVersionKind: `apps/v1/ControllerRevision`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ControllerRevision] = js.native
+  def getResource_appsv1ControllerRevision(groupVersionKind: `apps/v1/ControllerRevision`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ControllerRevision] = js.native
   @JSName("getResource")
-  def getResource_appsv1ControllerRevision(groupVersionKind: `apps/v1/ControllerRevision`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ControllerRevision] = js.native
+  def getResource_appsv1ControllerRevision(groupVersionKind: `apps/v1/ControllerRevision`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ControllerRevision] = js.native
   @JSName("getResource")
-  def getResource_appsv1ControllerRevisionList(groupVersionKind: `apps/v1/ControllerRevisionList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ControllerRevisionList
-  ] = js.native
+  def getResource_appsv1ControllerRevisionList(groupVersionKind: `apps/v1/ControllerRevisionList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ControllerRevisionList] = js.native
   @JSName("getResource")
-  def getResource_appsv1ControllerRevisionList(groupVersionKind: `apps/v1/ControllerRevisionList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ControllerRevisionList
-  ] = js.native
+  def getResource_appsv1ControllerRevisionList(groupVersionKind: `apps/v1/ControllerRevisionList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ControllerRevisionList] = js.native
   @JSName("getResource")
-  def getResource_appsv1DaemonSet(groupVersionKind: `apps/v1/DaemonSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DaemonSet] = js.native
+  def getResource_appsv1DaemonSet(groupVersionKind: `apps/v1/DaemonSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DaemonSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1DaemonSet(groupVersionKind: `apps/v1/DaemonSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DaemonSet] = js.native
+  def getResource_appsv1DaemonSet(groupVersionKind: `apps/v1/DaemonSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DaemonSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1DaemonSetList(groupVersionKind: `apps/v1/DaemonSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DaemonSetList] = js.native
+  def getResource_appsv1DaemonSetList(groupVersionKind: `apps/v1/DaemonSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DaemonSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1DaemonSetList(groupVersionKind: `apps/v1/DaemonSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DaemonSetList] = js.native
+  def getResource_appsv1DaemonSetList(groupVersionKind: `apps/v1/DaemonSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DaemonSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1Deployment(groupVersionKind: `apps/v1/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.Deployment] = js.native
+  def getResource_appsv1Deployment(groupVersionKind: `apps/v1/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1Deployment(groupVersionKind: `apps/v1/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.Deployment] = js.native
+  def getResource_appsv1Deployment(groupVersionKind: `apps/v1/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1DeploymentList(groupVersionKind: `apps/v1/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DeploymentList] = js.native
+  def getResource_appsv1DeploymentList(groupVersionKind: `apps/v1/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1DeploymentList(groupVersionKind: `apps/v1/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.DeploymentList] = js.native
+  def getResource_appsv1DeploymentList(groupVersionKind: `apps/v1/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1ReplicaSet(groupVersionKind: `apps/v1/ReplicaSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ReplicaSet] = js.native
+  def getResource_appsv1ReplicaSet(groupVersionKind: `apps/v1/ReplicaSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ReplicaSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1ReplicaSet(groupVersionKind: `apps/v1/ReplicaSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ReplicaSet] = js.native
+  def getResource_appsv1ReplicaSet(groupVersionKind: `apps/v1/ReplicaSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ReplicaSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1ReplicaSetList(groupVersionKind: `apps/v1/ReplicaSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ReplicaSetList] = js.native
+  def getResource_appsv1ReplicaSetList(groupVersionKind: `apps/v1/ReplicaSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ReplicaSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1ReplicaSetList(groupVersionKind: `apps/v1/ReplicaSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.ReplicaSetList] = js.native
+  def getResource_appsv1ReplicaSetList(groupVersionKind: `apps/v1/ReplicaSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.ReplicaSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1StatefulSet(groupVersionKind: `apps/v1/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.StatefulSet] = js.native
+  def getResource_appsv1StatefulSet(groupVersionKind: `apps/v1/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1StatefulSet(groupVersionKind: `apps/v1/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.StatefulSet] = js.native
+  def getResource_appsv1StatefulSet(groupVersionKind: `apps/v1/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1StatefulSetList(groupVersionKind: `apps/v1/StatefulSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.StatefulSetList] = js.native
+  def getResource_appsv1StatefulSetList(groupVersionKind: `apps/v1/StatefulSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.StatefulSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1StatefulSetList(groupVersionKind: `apps/v1/StatefulSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1Ns.StatefulSetList] = js.native
+  def getResource_appsv1StatefulSetList(groupVersionKind: `apps/v1/StatefulSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1.StatefulSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1ControllerRevision(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.ControllerRevision
-  ] = js.native
+  def getResource_appsv1beta1ControllerRevision(groupVersionKind: `apps/v1beta1/ControllerRevision`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.ControllerRevision] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1ControllerRevision(groupVersionKind: `apps/v1beta1/ControllerRevision`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.ControllerRevision
-  ] = js.native
+  def getResource_appsv1beta1ControllerRevision(groupVersionKind: `apps/v1beta1/ControllerRevision`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.ControllerRevision] = js.native
   @JSName("getResource")
   def getResource_appsv1beta1ControllerRevisionList(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.ControllerRevisionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.ControllerRevisionList
   ] = js.native
   @JSName("getResource")
   def getResource_appsv1beta1ControllerRevisionList(groupVersionKind: `apps/v1beta1/ControllerRevisionList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.ControllerRevisionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.ControllerRevisionList
   ] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1Deployment(groupVersionKind: `apps/v1beta1/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.Deployment] = js.native
+  def getResource_appsv1beta1Deployment(groupVersionKind: `apps/v1beta1/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1Deployment(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.Deployment] = js.native
+  def getResource_appsv1beta1Deployment(groupVersionKind: `apps/v1beta1/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1DeploymentList(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.DeploymentList] = js.native
+  def getResource_appsv1beta1DeploymentList(groupVersionKind: `apps/v1beta1/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1DeploymentList(groupVersionKind: `apps/v1beta1/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.DeploymentList] = js.native
+  def getResource_appsv1beta1DeploymentList(groupVersionKind: `apps/v1beta1/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1StatefulSet(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.StatefulSet] = js.native
+  def getResource_appsv1beta1StatefulSet(groupVersionKind: `apps/v1beta1/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1StatefulSet(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.StatefulSet] = js.native
+  def getResource_appsv1beta1StatefulSet(groupVersionKind: `apps/v1beta1/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1StatefulSetList(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.StatefulSetList
-  ] = js.native
+  def getResource_appsv1beta1StatefulSetList(groupVersionKind: `apps/v1beta1/StatefulSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.StatefulSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta1StatefulSetList(groupVersionKind: `apps/v1beta1/StatefulSetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta1Ns.StatefulSetList
-  ] = js.native
+  def getResource_appsv1beta1StatefulSetList(groupVersionKind: `apps/v1beta1/StatefulSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta1.StatefulSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ControllerRevision(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ControllerRevision
-  ] = js.native
+  def getResource_appsv1beta2ControllerRevision(groupVersionKind: `apps/v1beta2/ControllerRevision`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ControllerRevision] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ControllerRevision(groupVersionKind: `apps/v1beta2/ControllerRevision`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ControllerRevision
-  ] = js.native
+  def getResource_appsv1beta2ControllerRevision(groupVersionKind: `apps/v1beta2/ControllerRevision`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ControllerRevision] = js.native
   @JSName("getResource")
   def getResource_appsv1beta2ControllerRevisionList(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ControllerRevisionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ControllerRevisionList
   ] = js.native
   @JSName("getResource")
   def getResource_appsv1beta2ControllerRevisionList(groupVersionKind: `apps/v1beta2/ControllerRevisionList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ControllerRevisionList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ControllerRevisionList
   ] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DaemonSet(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DaemonSet] = js.native
+  def getResource_appsv1beta2DaemonSet(groupVersionKind: `apps/v1beta2/DaemonSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DaemonSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DaemonSet(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DaemonSet] = js.native
+  def getResource_appsv1beta2DaemonSet(groupVersionKind: `apps/v1beta2/DaemonSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DaemonSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DaemonSetList(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DaemonSetList] = js.native
+  def getResource_appsv1beta2DaemonSetList(groupVersionKind: `apps/v1beta2/DaemonSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DaemonSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DaemonSetList(groupVersionKind: `apps/v1beta2/DaemonSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DaemonSetList] = js.native
+  def getResource_appsv1beta2DaemonSetList(groupVersionKind: `apps/v1beta2/DaemonSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DaemonSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2Deployment(groupVersionKind: `apps/v1beta2/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.Deployment] = js.native
+  def getResource_appsv1beta2Deployment(groupVersionKind: `apps/v1beta2/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2Deployment(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.Deployment] = js.native
+  def getResource_appsv1beta2Deployment(groupVersionKind: `apps/v1beta2/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.Deployment] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DeploymentList(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DeploymentList] = js.native
+  def getResource_appsv1beta2DeploymentList(groupVersionKind: `apps/v1beta2/DeploymentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2DeploymentList(groupVersionKind: `apps/v1beta2/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.DeploymentList] = js.native
+  def getResource_appsv1beta2DeploymentList(groupVersionKind: `apps/v1beta2/DeploymentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.DeploymentList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ReplicaSet(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ReplicaSet] = js.native
+  def getResource_appsv1beta2ReplicaSet(groupVersionKind: `apps/v1beta2/ReplicaSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ReplicaSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ReplicaSet(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ReplicaSet] = js.native
+  def getResource_appsv1beta2ReplicaSet(groupVersionKind: `apps/v1beta2/ReplicaSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ReplicaSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ReplicaSetList(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ReplicaSetList] = js.native
+  def getResource_appsv1beta2ReplicaSetList(groupVersionKind: `apps/v1beta2/ReplicaSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ReplicaSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2ReplicaSetList(groupVersionKind: `apps/v1beta2/ReplicaSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.ReplicaSetList] = js.native
+  def getResource_appsv1beta2ReplicaSetList(groupVersionKind: `apps/v1beta2/ReplicaSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.ReplicaSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2StatefulSet(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.StatefulSet] = js.native
+  def getResource_appsv1beta2StatefulSet(groupVersionKind: `apps/v1beta2/StatefulSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2StatefulSet(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.StatefulSet] = js.native
+  def getResource_appsv1beta2StatefulSet(groupVersionKind: `apps/v1beta2/StatefulSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.StatefulSet] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2StatefulSetList(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.StatefulSetList
-  ] = js.native
+  def getResource_appsv1beta2StatefulSetList(groupVersionKind: `apps/v1beta2/StatefulSetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.StatefulSetList] = js.native
   @JSName("getResource")
-  def getResource_appsv1beta2StatefulSetList(groupVersionKind: `apps/v1beta2/StatefulSetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.appsNs.v1beta2Ns.StatefulSetList
-  ] = js.native
+  def getResource_appsv1beta2StatefulSetList(groupVersionKind: `apps/v1beta2/StatefulSetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.apps.v1beta2.StatefulSetList] = js.native
   @JSName("getResource")
   def getResource_auditregistrationk8siov1alpha1AuditSink(groupVersionKind: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistrationNs.v1alpha1Ns.AuditSink
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistration.v1alpha1.AuditSink
   ] = js.native
   @JSName("getResource")
   def getResource_auditregistrationk8siov1alpha1AuditSink(
@@ -6842,11 +6746,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistrationNs.v1alpha1Ns.AuditSink
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistration.v1alpha1.AuditSink
   ] = js.native
   @JSName("getResource")
   def getResource_auditregistrationk8siov1alpha1AuditSinkList(groupVersionKind: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistrationNs.v1alpha1Ns.AuditSinkList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistration.v1alpha1.AuditSinkList
   ] = js.native
   @JSName("getResource")
   def getResource_auditregistrationk8siov1alpha1AuditSinkList(
@@ -6854,35 +6758,27 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistrationNs.v1alpha1Ns.AuditSinkList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.auditregistration.v1alpha1.AuditSinkList
   ] = js.native
   @JSName("getResource")
-  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenRequest
-  ] = js.native
+  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1.TokenRequest] = js.native
   @JSName("getResource")
-  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenRequest
-  ] = js.native
+  def getResource_authenticationk8siov1TokenRequest(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenRequest`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1.TokenRequest] = js.native
   @JSName("getResource")
-  def getResource_authenticationk8siov1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenReview
-  ] = js.native
+  def getResource_authenticationk8siov1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1.TokenReview] = js.native
   @JSName("getResource")
-  def getResource_authenticationk8siov1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1Ns.TokenReview
-  ] = js.native
+  def getResource_authenticationk8siov1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1/TokenReview`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1.TokenReview] = js.native
   @JSName("getResource")
   def getResource_authenticationk8siov1beta1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1beta1Ns.TokenReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1beta1.TokenReview
   ] = js.native
   @JSName("getResource")
   def getResource_authenticationk8siov1beta1TokenReview(groupVersionKind: `authenticationDOTk8sDOTio/v1beta1/TokenReview`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authenticationNs.v1beta1Ns.TokenReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authentication.v1beta1.TokenReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1LocalSubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.LocalSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.LocalSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1LocalSubjectAccessReview(
@@ -6890,11 +6786,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.LocalSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.LocalSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SelfSubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SelfSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SelfSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SelfSubjectAccessReview(
@@ -6902,11 +6798,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SelfSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SelfSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SelfSubjectRulesReview(groupVersionKind: `authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SelfSubjectRulesReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SelfSubjectRulesReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SelfSubjectRulesReview(
@@ -6914,11 +6810,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SelfSubjectRulesReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SelfSubjectRulesReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1/SubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1SubjectAccessReview(
@@ -6926,11 +6822,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1Ns.SubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1.SubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1LocalSubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.LocalSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1LocalSubjectAccessReview(
@@ -6938,11 +6834,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.LocalSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SelfSubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SelfSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SelfSubjectAccessReview(
@@ -6950,11 +6846,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SelfSubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SelfSubjectRulesReview(groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SelfSubjectRulesReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SelfSubjectRulesReview(
@@ -6962,11 +6858,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SelfSubjectRulesReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SubjectAccessReview(groupVersionKind: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_authorizationk8siov1beta1SubjectAccessReview(
@@ -6974,35 +6870,35 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorizationNs.v1beta1Ns.SubjectAccessReview
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.authorization.v1beta1.SubjectAccessReview
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv1HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v1/HorizontalPodAutoscaler`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v1.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv1HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v1/HorizontalPodAutoscaler`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v1.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv1HorizontalPodAutoscalerList(groupVersionKind: `autoscaling/v1/HorizontalPodAutoscalerList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v1.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv1HorizontalPodAutoscalerList(groupVersionKind: `autoscaling/v1/HorizontalPodAutoscalerList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v1.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta1HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta1.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta1HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscaler`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta1.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta1HorizontalPodAutoscalerList(groupVersionKind: `autoscaling/v2beta1/HorizontalPodAutoscalerList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta1.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta1HorizontalPodAutoscalerList(
@@ -7010,19 +6906,19 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta1.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta2HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta2.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta2HorizontalPodAutoscaler(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscaler`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta2.HorizontalPodAutoscaler
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta2HorizontalPodAutoscalerList(groupVersionKind: `autoscaling/v2beta2/HorizontalPodAutoscalerList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta2.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
   def getResource_autoscalingv2beta2HorizontalPodAutoscalerList(
@@ -7030,35 +6926,35 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.autoscaling.v2beta2.HorizontalPodAutoscalerList
   ] = js.native
   @JSName("getResource")
-  def getResource_batchv1Job(groupVersionKind: `batch/v1/Job`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1Ns.Job] = js.native
+  def getResource_batchv1Job(groupVersionKind: `batch/v1/Job`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1.Job] = js.native
   @JSName("getResource")
-  def getResource_batchv1Job(groupVersionKind: `batch/v1/Job`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1Ns.Job] = js.native
+  def getResource_batchv1Job(groupVersionKind: `batch/v1/Job`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1.Job] = js.native
   @JSName("getResource")
-  def getResource_batchv1JobList(groupVersionKind: `batch/v1/JobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1Ns.JobList] = js.native
+  def getResource_batchv1JobList(groupVersionKind: `batch/v1/JobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1.JobList] = js.native
   @JSName("getResource")
-  def getResource_batchv1JobList(groupVersionKind: `batch/v1/JobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1Ns.JobList] = js.native
+  def getResource_batchv1JobList(groupVersionKind: `batch/v1/JobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1.JobList] = js.native
   @JSName("getResource")
-  def getResource_batchv1beta1CronJob(groupVersionKind: `batch/v1beta1/CronJob`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1beta1Ns.CronJob] = js.native
+  def getResource_batchv1beta1CronJob(groupVersionKind: `batch/v1beta1/CronJob`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1beta1.CronJob] = js.native
   @JSName("getResource")
-  def getResource_batchv1beta1CronJob(groupVersionKind: `batch/v1beta1/CronJob`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1beta1Ns.CronJob] = js.native
+  def getResource_batchv1beta1CronJob(groupVersionKind: `batch/v1beta1/CronJob`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1beta1.CronJob] = js.native
   @JSName("getResource")
-  def getResource_batchv1beta1CronJobList(groupVersionKind: `batch/v1beta1/CronJobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1beta1Ns.CronJobList] = js.native
+  def getResource_batchv1beta1CronJobList(groupVersionKind: `batch/v1beta1/CronJobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1beta1.CronJobList] = js.native
   @JSName("getResource")
-  def getResource_batchv1beta1CronJobList(groupVersionKind: `batch/v1beta1/CronJobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v1beta1Ns.CronJobList] = js.native
+  def getResource_batchv1beta1CronJobList(groupVersionKind: `batch/v1beta1/CronJobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v1beta1.CronJobList] = js.native
   @JSName("getResource")
-  def getResource_batchv2alpha1CronJob(groupVersionKind: `batch/v2alpha1/CronJob`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v2alpha1Ns.CronJob] = js.native
+  def getResource_batchv2alpha1CronJob(groupVersionKind: `batch/v2alpha1/CronJob`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v2alpha1.CronJob] = js.native
   @JSName("getResource")
-  def getResource_batchv2alpha1CronJob(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v2alpha1Ns.CronJob] = js.native
+  def getResource_batchv2alpha1CronJob(groupVersionKind: `batch/v2alpha1/CronJob`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v2alpha1.CronJob] = js.native
   @JSName("getResource")
-  def getResource_batchv2alpha1CronJobList(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v2alpha1Ns.CronJobList] = js.native
+  def getResource_batchv2alpha1CronJobList(groupVersionKind: `batch/v2alpha1/CronJobList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v2alpha1.CronJobList] = js.native
   @JSName("getResource")
-  def getResource_batchv2alpha1CronJobList(groupVersionKind: `batch/v2alpha1/CronJobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batchNs.v2alpha1Ns.CronJobList] = js.native
+  def getResource_batchv2alpha1CronJobList(groupVersionKind: `batch/v2alpha1/CronJobList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.batch.v2alpha1.CronJobList] = js.native
   @JSName("getResource")
   def getResource_certificatesk8siov1beta1CertificateSigningRequest(groupVersionKind: `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificatesNs.v1beta1Ns.CertificateSigningRequest
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificates.v1beta1.CertificateSigningRequest
   ] = js.native
   @JSName("getResource")
   def getResource_certificatesk8siov1beta1CertificateSigningRequest(
@@ -7066,11 +6962,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificatesNs.v1beta1Ns.CertificateSigningRequest
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificates.v1beta1.CertificateSigningRequest
   ] = js.native
   @JSName("getResource")
   def getResource_certificatesk8siov1beta1CertificateSigningRequestList(groupVersionKind: `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificates.v1beta1.CertificateSigningRequestList
   ] = js.native
   @JSName("getResource")
   def getResource_certificatesk8siov1beta1CertificateSigningRequestList(
@@ -7078,39 +6974,35 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.certificates.v1beta1.CertificateSigningRequestList
   ] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1/Lease`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1Ns.Lease] = js.native
+  def getResource_coordinationk8siov1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1/Lease`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1.Lease] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1/Lease`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1Ns.Lease] = js.native
+  def getResource_coordinationk8siov1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1/Lease`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1.Lease] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1/LeaseList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1Ns.LeaseList] = js.native
+  def getResource_coordinationk8siov1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1/LeaseList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1.LeaseList] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1/LeaseList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1Ns.LeaseList] = js.native
+  def getResource_coordinationk8siov1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1/LeaseList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1.LeaseList] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1beta1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1beta1Ns.Lease] = js.native
+  def getResource_coordinationk8siov1beta1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1beta1.Lease] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1beta1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1beta1Ns.Lease] = js.native
+  def getResource_coordinationk8siov1beta1Lease(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/Lease`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1beta1.Lease] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1beta1Ns.LeaseList
-  ] = js.native
+  def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1beta1.LeaseList] = js.native
   @JSName("getResource")
-  def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coordinationNs.v1beta1Ns.LeaseList
-  ] = js.native
+  def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1beta1.LeaseList] = js.native
   @JSName("getResource")
   def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSlice
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSlice
   ] = js.native
   @JSName("getResource")
   def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSlice
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSlice
   ] = js.native
   @JSName("getResource")
   def getResource_discoveryk8siov1alpha1EndpointSliceList(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSliceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSliceList
   ] = js.native
   @JSName("getResource")
   def getResource_discoveryk8siov1alpha1EndpointSliceList(
@@ -7118,259 +7010,223 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discoveryNs.v1alpha1Ns.EndpointSliceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSliceList
   ] = js.native
   @JSName("getResource")
-  def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.eventsNs.v1beta1Ns.Event] = js.native
+  def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.events.v1beta1.Event] = js.native
   @JSName("getResource")
-  def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.eventsNs.v1beta1Ns.Event] = js.native
+  def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.events.v1beta1.Event] = js.native
   @JSName("getResource")
-  def getResource_eventsk8siov1beta1EventList(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.eventsNs.v1beta1Ns.EventList] = js.native
+  def getResource_eventsk8siov1beta1EventList(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.events.v1beta1.EventList] = js.native
   @JSName("getResource")
-  def getResource_eventsk8siov1beta1EventList(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.eventsNs.v1beta1Ns.EventList] = js.native
+  def getResource_eventsk8siov1beta1EventList(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/EventList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.events.v1beta1.EventList] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1DaemonSet(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DaemonSet
-  ] = js.native
+  def getResource_extensionsv1beta1DaemonSet(groupVersionKind: `extensions/v1beta1/DaemonSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DaemonSet] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1DaemonSet(groupVersionKind: `extensions/v1beta1/DaemonSet`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DaemonSet
-  ] = js.native
+  def getResource_extensionsv1beta1DaemonSet(groupVersionKind: `extensions/v1beta1/DaemonSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DaemonSet] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1DaemonSetList(groupVersionKind: `extensions/v1beta1/DaemonSetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DaemonSetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DaemonSetList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1DaemonSetList(groupVersionKind: `extensions/v1beta1/DaemonSetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DaemonSetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DaemonSetList
   ] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1Deployment(groupVersionKind: `extensions/v1beta1/Deployment`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.Deployment
-  ] = js.native
+  def getResource_extensionsv1beta1Deployment(groupVersionKind: `extensions/v1beta1/Deployment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.Deployment] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1Deployment(groupVersionKind: `extensions/v1beta1/Deployment`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.Deployment
-  ] = js.native
+  def getResource_extensionsv1beta1Deployment(groupVersionKind: `extensions/v1beta1/Deployment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.Deployment] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1DeploymentList(groupVersionKind: `extensions/v1beta1/DeploymentList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DeploymentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DeploymentList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1DeploymentList(groupVersionKind: `extensions/v1beta1/DeploymentList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.DeploymentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.DeploymentList
   ] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1Ingress(groupVersionKind: `extensions/v1beta1/Ingress`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.Ingress] = js.native
+  def getResource_extensionsv1beta1Ingress(groupVersionKind: `extensions/v1beta1/Ingress`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.Ingress] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1Ingress(groupVersionKind: `extensions/v1beta1/Ingress`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.Ingress] = js.native
+  def getResource_extensionsv1beta1Ingress(groupVersionKind: `extensions/v1beta1/Ingress`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.Ingress] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1IngressList(groupVersionKind: `extensions/v1beta1/IngressList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.IngressList
-  ] = js.native
+  def getResource_extensionsv1beta1IngressList(groupVersionKind: `extensions/v1beta1/IngressList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.IngressList] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1IngressList(groupVersionKind: `extensions/v1beta1/IngressList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.IngressList
-  ] = js.native
+  def getResource_extensionsv1beta1IngressList(groupVersionKind: `extensions/v1beta1/IngressList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.IngressList] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1NetworkPolicy(groupVersionKind: `extensions/v1beta1/NetworkPolicy`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.NetworkPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.NetworkPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1NetworkPolicy(groupVersionKind: `extensions/v1beta1/NetworkPolicy`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.NetworkPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.NetworkPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1NetworkPolicyList(groupVersionKind: `extensions/v1beta1/NetworkPolicyList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.NetworkPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.NetworkPolicyList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1NetworkPolicyList(groupVersionKind: `extensions/v1beta1/NetworkPolicyList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.NetworkPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.NetworkPolicyList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1PodSecurityPolicy(groupVersionKind: `extensions/v1beta1/PodSecurityPolicy`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.PodSecurityPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.PodSecurityPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1PodSecurityPolicy(groupVersionKind: `extensions/v1beta1/PodSecurityPolicy`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.PodSecurityPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.PodSecurityPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1PodSecurityPolicyList(groupVersionKind: `extensions/v1beta1/PodSecurityPolicyList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.PodSecurityPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.PodSecurityPolicyList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1PodSecurityPolicyList(groupVersionKind: `extensions/v1beta1/PodSecurityPolicyList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.PodSecurityPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.PodSecurityPolicyList
   ] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1ReplicaSet(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.ReplicaSet
-  ] = js.native
+  def getResource_extensionsv1beta1ReplicaSet(groupVersionKind: `extensions/v1beta1/ReplicaSet`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.ReplicaSet] = js.native
   @JSName("getResource")
-  def getResource_extensionsv1beta1ReplicaSet(groupVersionKind: `extensions/v1beta1/ReplicaSet`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.ReplicaSet
-  ] = js.native
+  def getResource_extensionsv1beta1ReplicaSet(groupVersionKind: `extensions/v1beta1/ReplicaSet`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.ReplicaSet] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1ReplicaSetList(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.ReplicaSetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.ReplicaSetList
   ] = js.native
   @JSName("getResource")
   def getResource_extensionsv1beta1ReplicaSetList(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensionsNs.v1beta1Ns.ReplicaSetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.ReplicaSetList
   ] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1Ns.NetworkPolicy] = js.native
+  def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1.NetworkPolicy] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1Ns.NetworkPolicy] = js.native
+  def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1.NetworkPolicy] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1NetworkPolicyList(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1Ns.NetworkPolicyList
-  ] = js.native
+  def getResource_networkingk8siov1NetworkPolicyList(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1.NetworkPolicyList] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1NetworkPolicyList(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1Ns.NetworkPolicyList
-  ] = js.native
+  def getResource_networkingk8siov1NetworkPolicyList(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1.NetworkPolicyList] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1beta1Ingress(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1beta1Ns.Ingress] = js.native
+  def getResource_networkingk8siov1beta1Ingress(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1beta1.Ingress] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1beta1Ingress(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1beta1Ns.Ingress] = js.native
+  def getResource_networkingk8siov1beta1Ingress(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/Ingress`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1beta1.Ingress] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1beta1IngressList(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1beta1Ns.IngressList
-  ] = js.native
+  def getResource_networkingk8siov1beta1IngressList(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1beta1.IngressList] = js.native
   @JSName("getResource")
-  def getResource_networkingk8siov1beta1IngressList(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.networkingNs.v1beta1Ns.IngressList
-  ] = js.native
+  def getResource_networkingk8siov1beta1IngressList(groupVersionKind: `networkingDOTk8sDOTio/v1beta1/IngressList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1beta1.IngressList] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1alpha1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1alpha1Ns.RuntimeClass] = js.native
+  def getResource_nodek8siov1alpha1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1alpha1.RuntimeClass] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1alpha1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1alpha1Ns.RuntimeClass] = js.native
+  def getResource_nodek8siov1alpha1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1alpha1.RuntimeClass] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1alpha1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1alpha1Ns.RuntimeClassList
-  ] = js.native
+  def getResource_nodek8siov1alpha1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1alpha1.RuntimeClassList] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1alpha1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1alpha1Ns.RuntimeClassList
-  ] = js.native
+  def getResource_nodek8siov1alpha1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1alpha1.RuntimeClassList] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1beta1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1beta1Ns.RuntimeClass] = js.native
+  def getResource_nodek8siov1beta1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1beta1.RuntimeClass] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1beta1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1beta1Ns.RuntimeClass] = js.native
+  def getResource_nodek8siov1beta1RuntimeClass(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1beta1.RuntimeClass] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1beta1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1beta1Ns.RuntimeClassList
-  ] = js.native
+  def getResource_nodek8siov1beta1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1beta1.RuntimeClassList] = js.native
   @JSName("getResource")
-  def getResource_nodek8siov1beta1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.nodeNs.v1beta1Ns.RuntimeClassList
-  ] = js.native
+  def getResource_nodek8siov1beta1RuntimeClassList(groupVersionKind: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.node.v1beta1.RuntimeClassList] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodDisruptionBudget(groupVersionKind: `policy/v1beta1/PodDisruptionBudget`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodDisruptionBudget
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodDisruptionBudget
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodDisruptionBudget(groupVersionKind: `policy/v1beta1/PodDisruptionBudget`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodDisruptionBudget
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodDisruptionBudget
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodDisruptionBudgetList(groupVersionKind: `policy/v1beta1/PodDisruptionBudgetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodDisruptionBudgetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodDisruptionBudgetList
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodDisruptionBudgetList(groupVersionKind: `policy/v1beta1/PodDisruptionBudgetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodDisruptionBudgetList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodDisruptionBudgetList
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodSecurityPolicy(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodSecurityPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodSecurityPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodSecurityPolicy(groupVersionKind: `policy/v1beta1/PodSecurityPolicy`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodSecurityPolicy
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodSecurityPolicy
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodSecurityPolicyList(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodSecurityPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodSecurityPolicyList
   ] = js.native
   @JSName("getResource")
   def getResource_policyv1beta1PodSecurityPolicyList(groupVersionKind: `policy/v1beta1/PodSecurityPolicyList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.policyNs.v1beta1Ns.PodSecurityPolicyList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.policy.v1beta1.PodSecurityPolicyList
   ] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRole] = js.native
+  def getResource_rbacauthorizationk8siov1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRole] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1ClusterRole(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRole] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRole] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1ClusterRoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleBinding] = js.native
+  def getResource_rbacauthorizationk8siov1ClusterRoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1ClusterRoleBinding(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleBinding] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleBinding] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1ClusterRoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleBindingList
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1ClusterRoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleBindingList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1ClusterRoleBindingList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleBindingList
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleBindingList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleList] = js.native
+  def getResource_rbacauthorizationk8siov1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1ClusterRoleList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.ClusterRoleList] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.ClusterRoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleBinding] = js.native
+  def getResource_rbacauthorizationk8siov1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1RoleBinding(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleBinding] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleBinding] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleBindingList] = js.native
+  def getResource_rbacauthorizationk8siov1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleBindingList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1RoleBindingList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleBindingList] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleBindingList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleList] = js.native
+  def getResource_rbacauthorizationk8siov1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1Ns.RoleList] = js.native
+  def getResource_rbacauthorizationk8siov1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1.RoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRole] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRole] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRole(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRole] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRole] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleBinding
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleBinding
   ] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRoleBinding(
@@ -7378,11 +7234,11 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleBinding
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleBinding
   ] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleBindingList
   ] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRoleBindingList(
@@ -7390,75 +7246,63 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleBindingList
   ] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleList
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1ClusterRoleList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.ClusterRoleList
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.ClusterRoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleBinding] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1RoleBinding(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleBinding] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleBinding] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleBindingList
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleBindingList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1RoleBindingList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleBindingList
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleBindingList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1alpha1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleList] = js.native
+  def getResource_rbacauthorizationk8siov1alpha1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1alpha1RoleList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1alpha1Ns.RoleList] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1alpha1.RoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRole] = js.native
+  def getResource_rbacauthorizationk8siov1beta1ClusterRole(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRole] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1ClusterRole(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRole] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRole] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1ClusterRoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleBinding
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1beta1ClusterRoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1ClusterRoleBinding(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleBinding
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1ClusterRoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleBindingList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleBindingList
   ] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1ClusterRoleBindingList(
@@ -7466,75 +7310,63 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleBindingList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleBindingList
   ] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleList
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1beta1ClusterRoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1ClusterRoleList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.ClusterRoleList
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.ClusterRoleList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1beta1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.Role] = js.native
+  def getResource_rbacauthorizationk8siov1beta1Role(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.Role] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleBinding] = js.native
+  def getResource_rbacauthorizationk8siov1beta1RoleBinding(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleBinding] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1RoleBinding(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleBinding] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleBinding] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleBindingList
-  ] = js.native
+  def getResource_rbacauthorizationk8siov1beta1RoleBindingList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleBindingList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1RoleBindingList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
     namespace: String,
     name: String
-  ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleBindingList
-  ] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleBindingList] = js.native
   @JSName("getResource")
-  def getResource_rbacauthorizationk8siov1beta1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleList] = js.native
+  def getResource_rbacauthorizationk8siov1beta1RoleList(groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleList] = js.native
   @JSName("getResource")
   def getResource_rbacauthorizationk8siov1beta1RoleList(
     groupVersionKind: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
     namespace: String,
     name: String
-  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbacNs.v1beta1Ns.RoleList] = js.native
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.rbac.v1beta1.RoleList] = js.native
   @JSName("getResource")
-  def getResource_schedulingk8siov1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1Ns.PriorityClass] = js.native
+  def getResource_schedulingk8siov1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1.PriorityClass] = js.native
   @JSName("getResource")
-  def getResource_schedulingk8siov1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1Ns.PriorityClass] = js.native
+  def getResource_schedulingk8siov1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1.PriorityClass] = js.native
   @JSName("getResource")
-  def getResource_schedulingk8siov1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1Ns.PriorityClassList
-  ] = js.native
+  def getResource_schedulingk8siov1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClassList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1.PriorityClassList] = js.native
   @JSName("getResource")
-  def getResource_schedulingk8siov1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClassList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1Ns.PriorityClassList
-  ] = js.native
+  def getResource_schedulingk8siov1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1/PriorityClassList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1.PriorityClassList] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1alpha1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1alpha1/PriorityClass`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1alpha1Ns.PriorityClass
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1alpha1.PriorityClass
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1alpha1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1alpha1/PriorityClass`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1alpha1Ns.PriorityClass
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1alpha1.PriorityClass
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1alpha1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1alpha1Ns.PriorityClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1alpha1.PriorityClassList
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1alpha1PriorityClassList(
@@ -7542,19 +7374,19 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1alpha1Ns.PriorityClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1alpha1.PriorityClassList
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1beta1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClass`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1beta1Ns.PriorityClass
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1beta1.PriorityClass
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1beta1PriorityClass(groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClass`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1beta1Ns.PriorityClass
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1beta1.PriorityClass
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1beta1PriorityClassList(groupVersionKind: `schedulingDOTk8sDOTio/v1beta1/PriorityClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1beta1Ns.PriorityClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1beta1.PriorityClassList
   ] = js.native
   @JSName("getResource")
   def getResource_schedulingk8siov1beta1PriorityClassList(
@@ -7562,51 +7394,43 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.schedulingNs.v1beta1Ns.PriorityClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.scheduling.v1beta1.PriorityClassList
   ] = js.native
   @JSName("getResource")
-  def getResource_settingsk8siov1alpha1PodPreset(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPreset`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settingsNs.v1alpha1Ns.PodPreset] = js.native
+  def getResource_settingsk8siov1alpha1PodPreset(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPreset`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPreset] = js.native
   @JSName("getResource")
-  def getResource_settingsk8siov1alpha1PodPreset(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPreset`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settingsNs.v1alpha1Ns.PodPreset] = js.native
+  def getResource_settingsk8siov1alpha1PodPreset(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPreset`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPreset] = js.native
   @JSName("getResource")
-  def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.settingsNs.v1alpha1Ns.PodPresetList
-  ] = js.native
+  def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPresetList] = js.native
   @JSName("getResource")
-  def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.settingsNs.v1alpha1Ns.PodPresetList
-  ] = js.native
+  def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPresetList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.StorageClass] = js.native
+  def getResource_storagek8siov1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.StorageClass] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.StorageClass] = js.native
+  def getResource_storagek8siov1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.StorageClass] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.StorageClassList] = js.native
+  def getResource_storagek8siov1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.StorageClassList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.StorageClassList] = js.native
+  def getResource_storagek8siov1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.StorageClassList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.VolumeAttachment] = js.native
+  def getResource_storagek8siov1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachment`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.VolumeAttachment] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.VolumeAttachment] = js.native
+  def getResource_storagek8siov1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachment`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.VolumeAttachment] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachmentList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.VolumeAttachmentList
-  ] = js.native
+  def getResource_storagek8siov1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachmentList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.VolumeAttachmentList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachmentList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1Ns.VolumeAttachmentList
-  ] = js.native
+  def getResource_storagek8siov1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1/VolumeAttachmentList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.VolumeAttachmentList] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1alpha1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1alpha1Ns.VolumeAttachment
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1alpha1.VolumeAttachment
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1alpha1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1alpha1Ns.VolumeAttachment
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1alpha1.VolumeAttachment
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1alpha1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1alpha1Ns.VolumeAttachmentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1alpha1.VolumeAttachmentList
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1alpha1VolumeAttachmentList(
@@ -7614,55 +7438,47 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1alpha1Ns.VolumeAttachmentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1alpha1.VolumeAttachmentList
   ] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSIDriver(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriver`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSIDriver] = js.native
+  def getResource_storagek8siov1beta1CSIDriver(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriver`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSIDriver] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSIDriver(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriver`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSIDriver] = js.native
+  def getResource_storagek8siov1beta1CSIDriver(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriver`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSIDriver] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSIDriverList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSIDriverList
-  ] = js.native
+  def getResource_storagek8siov1beta1CSIDriverList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSIDriverList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSIDriverList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSIDriverList
-  ] = js.native
+  def getResource_storagek8siov1beta1CSIDriverList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSIDriverList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSIDriverList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSINode] = js.native
+  def getResource_storagek8siov1beta1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSINode] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSINode] = js.native
+  def getResource_storagek8siov1beta1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSINode] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSINodeList] = js.native
+  def getResource_storagek8siov1beta1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSINodeList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.CSINodeList] = js.native
+  def getResource_storagek8siov1beta1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.CSINodeList] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClass`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.StorageClass
-  ] = js.native
+  def getResource_storagek8siov1beta1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.StorageClass] = js.native
   @JSName("getResource")
-  def getResource_storagek8siov1beta1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClass`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.StorageClass
-  ] = js.native
+  def getResource_storagek8siov1beta1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClass`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.StorageClass] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.StorageClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.StorageClassList
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1StorageClassList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.StorageClassList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.StorageClassList
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.VolumeAttachment
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.VolumeAttachment
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1VolumeAttachment(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachment`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.VolumeAttachment
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.VolumeAttachment
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1VolumeAttachmentList(groupVersionKind: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.VolumeAttachmentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.VolumeAttachmentList
   ] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1beta1VolumeAttachmentList(
@@ -7670,163 +7486,151 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.storageNs.v1beta1Ns.VolumeAttachmentList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1beta1.VolumeAttachmentList
   ] = js.native
   @JSName("getResource")
-  def getResource_v1Binding(groupVersionKind: `v1/Binding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Binding] = js.native
+  def getResource_v1Binding(groupVersionKind: `v1/Binding`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Binding] = js.native
   @JSName("getResource")
-  def getResource_v1Binding(groupVersionKind: `v1/Binding`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Binding] = js.native
+  def getResource_v1Binding(groupVersionKind: `v1/Binding`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Binding] = js.native
   @JSName("getResource")
-  def getResource_v1ComponentStatus(groupVersionKind: `v1/ComponentStatus`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ComponentStatus] = js.native
+  def getResource_v1ComponentStatus(groupVersionKind: `v1/ComponentStatus`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ComponentStatus] = js.native
   @JSName("getResource")
-  def getResource_v1ComponentStatus(groupVersionKind: `v1/ComponentStatus`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ComponentStatus] = js.native
+  def getResource_v1ComponentStatus(groupVersionKind: `v1/ComponentStatus`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ComponentStatus] = js.native
   @JSName("getResource")
-  def getResource_v1ComponentStatusList(groupVersionKind: `v1/ComponentStatusList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ComponentStatusList] = js.native
+  def getResource_v1ComponentStatusList(groupVersionKind: `v1/ComponentStatusList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ComponentStatusList] = js.native
   @JSName("getResource")
-  def getResource_v1ComponentStatusList(groupVersionKind: `v1/ComponentStatusList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ComponentStatusList] = js.native
+  def getResource_v1ComponentStatusList(groupVersionKind: `v1/ComponentStatusList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ComponentStatusList] = js.native
   @JSName("getResource")
-  def getResource_v1ConfigMap(groupVersionKind: `v1/ConfigMap`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ConfigMap] = js.native
+  def getResource_v1ConfigMap(groupVersionKind: `v1/ConfigMap`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ConfigMap] = js.native
   @JSName("getResource")
-  def getResource_v1ConfigMap(groupVersionKind: `v1/ConfigMap`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ConfigMap] = js.native
+  def getResource_v1ConfigMap(groupVersionKind: `v1/ConfigMap`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ConfigMap] = js.native
   @JSName("getResource")
-  def getResource_v1ConfigMapList(groupVersionKind: `v1/ConfigMapList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ConfigMapList] = js.native
+  def getResource_v1ConfigMapList(groupVersionKind: `v1/ConfigMapList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ConfigMapList] = js.native
   @JSName("getResource")
-  def getResource_v1ConfigMapList(groupVersionKind: `v1/ConfigMapList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ConfigMapList] = js.native
+  def getResource_v1ConfigMapList(groupVersionKind: `v1/ConfigMapList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ConfigMapList] = js.native
   @JSName("getResource")
-  def getResource_v1Endpoints(groupVersionKind: `v1/Endpoints`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Endpoints] = js.native
+  def getResource_v1Endpoints(groupVersionKind: `v1/Endpoints`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Endpoints] = js.native
   @JSName("getResource")
-  def getResource_v1Endpoints(groupVersionKind: `v1/Endpoints`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Endpoints] = js.native
+  def getResource_v1Endpoints(groupVersionKind: `v1/Endpoints`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Endpoints] = js.native
   @JSName("getResource")
-  def getResource_v1EndpointsList(groupVersionKind: `v1/EndpointsList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.EndpointsList] = js.native
+  def getResource_v1EndpointsList(groupVersionKind: `v1/EndpointsList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.EndpointsList] = js.native
   @JSName("getResource")
-  def getResource_v1EndpointsList(groupVersionKind: `v1/EndpointsList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.EndpointsList] = js.native
+  def getResource_v1EndpointsList(groupVersionKind: `v1/EndpointsList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.EndpointsList] = js.native
   @JSName("getResource")
-  def getResource_v1Event(groupVersionKind: `v1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Event] = js.native
+  def getResource_v1Event(groupVersionKind: `v1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Event] = js.native
   @JSName("getResource")
-  def getResource_v1Event(groupVersionKind: `v1/Event`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Event] = js.native
+  def getResource_v1Event(groupVersionKind: `v1/Event`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Event] = js.native
   @JSName("getResource")
-  def getResource_v1EventList(groupVersionKind: `v1/EventList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.EventList] = js.native
+  def getResource_v1EventList(groupVersionKind: `v1/EventList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.EventList] = js.native
   @JSName("getResource")
-  def getResource_v1EventList(groupVersionKind: `v1/EventList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.EventList] = js.native
+  def getResource_v1EventList(groupVersionKind: `v1/EventList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.EventList] = js.native
   @JSName("getResource")
-  def getResource_v1LimitRange(groupVersionKind: `v1/LimitRange`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.LimitRange] = js.native
+  def getResource_v1LimitRange(groupVersionKind: `v1/LimitRange`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.LimitRange] = js.native
   @JSName("getResource")
-  def getResource_v1LimitRange(groupVersionKind: `v1/LimitRange`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.LimitRange] = js.native
+  def getResource_v1LimitRange(groupVersionKind: `v1/LimitRange`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.LimitRange] = js.native
   @JSName("getResource")
-  def getResource_v1LimitRangeList(groupVersionKind: `v1/LimitRangeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.LimitRangeList] = js.native
+  def getResource_v1LimitRangeList(groupVersionKind: `v1/LimitRangeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.LimitRangeList] = js.native
   @JSName("getResource")
-  def getResource_v1LimitRangeList(groupVersionKind: `v1/LimitRangeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.LimitRangeList] = js.native
+  def getResource_v1LimitRangeList(groupVersionKind: `v1/LimitRangeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.LimitRangeList] = js.native
   @JSName("getResource")
-  def getResource_v1Namespace(groupVersionKind: `v1/Namespace`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Namespace] = js.native
+  def getResource_v1Namespace(groupVersionKind: `v1/Namespace`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Namespace] = js.native
   @JSName("getResource")
-  def getResource_v1Namespace(groupVersionKind: `v1/Namespace`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Namespace] = js.native
+  def getResource_v1Namespace(groupVersionKind: `v1/Namespace`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Namespace] = js.native
   @JSName("getResource")
-  def getResource_v1NamespaceList(groupVersionKind: `v1/NamespaceList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.NamespaceList] = js.native
+  def getResource_v1NamespaceList(groupVersionKind: `v1/NamespaceList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.NamespaceList] = js.native
   @JSName("getResource")
-  def getResource_v1NamespaceList(groupVersionKind: `v1/NamespaceList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.NamespaceList] = js.native
+  def getResource_v1NamespaceList(groupVersionKind: `v1/NamespaceList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.NamespaceList] = js.native
   @JSName("getResource")
-  def getResource_v1Node(groupVersionKind: `v1/Node`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Node] = js.native
+  def getResource_v1Node(groupVersionKind: `v1/Node`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Node] = js.native
   @JSName("getResource")
-  def getResource_v1Node(groupVersionKind: `v1/Node`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Node] = js.native
+  def getResource_v1Node(groupVersionKind: `v1/Node`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Node] = js.native
   @JSName("getResource")
-  def getResource_v1NodeList(groupVersionKind: `v1/NodeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.NodeList] = js.native
+  def getResource_v1NodeList(groupVersionKind: `v1/NodeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.NodeList] = js.native
   @JSName("getResource")
-  def getResource_v1NodeList(groupVersionKind: `v1/NodeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.NodeList] = js.native
+  def getResource_v1NodeList(groupVersionKind: `v1/NodeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.NodeList] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolume(groupVersionKind: `v1/PersistentVolume`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolume] = js.native
+  def getResource_v1PersistentVolume(groupVersionKind: `v1/PersistentVolume`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolume] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolume(groupVersionKind: `v1/PersistentVolume`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolume] = js.native
+  def getResource_v1PersistentVolume(groupVersionKind: `v1/PersistentVolume`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolume] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolumeClaim(groupVersionKind: `v1/PersistentVolumeClaim`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeClaim
-  ] = js.native
+  def getResource_v1PersistentVolumeClaim(groupVersionKind: `v1/PersistentVolumeClaim`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeClaim] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolumeClaim(groupVersionKind: `v1/PersistentVolumeClaim`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeClaim
-  ] = js.native
+  def getResource_v1PersistentVolumeClaim(groupVersionKind: `v1/PersistentVolumeClaim`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeClaim] = js.native
   @JSName("getResource")
   def getResource_v1PersistentVolumeClaimList(groupVersionKind: `v1/PersistentVolumeClaimList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeClaimList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeClaimList
   ] = js.native
   @JSName("getResource")
   def getResource_v1PersistentVolumeClaimList(groupVersionKind: `v1/PersistentVolumeClaimList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeClaimList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeClaimList
   ] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolumeList(groupVersionKind: `v1/PersistentVolumeList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeList
-  ] = js.native
+  def getResource_v1PersistentVolumeList(groupVersionKind: `v1/PersistentVolumeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeList] = js.native
   @JSName("getResource")
-  def getResource_v1PersistentVolumeList(groupVersionKind: `v1/PersistentVolumeList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PersistentVolumeList
-  ] = js.native
+  def getResource_v1PersistentVolumeList(groupVersionKind: `v1/PersistentVolumeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PersistentVolumeList] = js.native
   @JSName("getResource")
-  def getResource_v1Pod(groupVersionKind: `v1/Pod`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Pod] = js.native
+  def getResource_v1Pod(groupVersionKind: `v1/Pod`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Pod] = js.native
   @JSName("getResource")
-  def getResource_v1Pod(groupVersionKind: `v1/Pod`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Pod] = js.native
+  def getResource_v1Pod(groupVersionKind: `v1/Pod`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Pod] = js.native
   @JSName("getResource")
-  def getResource_v1PodList(groupVersionKind: `v1/PodList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodList] = js.native
+  def getResource_v1PodList(groupVersionKind: `v1/PodList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodList] = js.native
   @JSName("getResource")
-  def getResource_v1PodList(groupVersionKind: `v1/PodList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodList] = js.native
+  def getResource_v1PodList(groupVersionKind: `v1/PodList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodList] = js.native
   @JSName("getResource")
-  def getResource_v1PodTemplate(groupVersionKind: `v1/PodTemplate`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodTemplate] = js.native
+  def getResource_v1PodTemplate(groupVersionKind: `v1/PodTemplate`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodTemplate] = js.native
   @JSName("getResource")
-  def getResource_v1PodTemplate(groupVersionKind: `v1/PodTemplate`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodTemplate] = js.native
+  def getResource_v1PodTemplate(groupVersionKind: `v1/PodTemplate`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodTemplate] = js.native
   @JSName("getResource")
-  def getResource_v1PodTemplateList(groupVersionKind: `v1/PodTemplateList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodTemplateList] = js.native
+  def getResource_v1PodTemplateList(groupVersionKind: `v1/PodTemplateList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodTemplateList] = js.native
   @JSName("getResource")
-  def getResource_v1PodTemplateList(groupVersionKind: `v1/PodTemplateList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.PodTemplateList] = js.native
+  def getResource_v1PodTemplateList(groupVersionKind: `v1/PodTemplateList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.PodTemplateList] = js.native
   @JSName("getResource")
-  def getResource_v1ReplicationController(groupVersionKind: `v1/ReplicationController`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ReplicationController
-  ] = js.native
+  def getResource_v1ReplicationController(groupVersionKind: `v1/ReplicationController`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ReplicationController] = js.native
   @JSName("getResource")
-  def getResource_v1ReplicationController(groupVersionKind: `v1/ReplicationController`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ReplicationController
-  ] = js.native
+  def getResource_v1ReplicationController(groupVersionKind: `v1/ReplicationController`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ReplicationController] = js.native
   @JSName("getResource")
   def getResource_v1ReplicationControllerList(groupVersionKind: `v1/ReplicationControllerList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ReplicationControllerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ReplicationControllerList
   ] = js.native
   @JSName("getResource")
   def getResource_v1ReplicationControllerList(groupVersionKind: `v1/ReplicationControllerList`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ReplicationControllerList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ReplicationControllerList
   ] = js.native
   @JSName("getResource")
-  def getResource_v1ResourceQuota(groupVersionKind: `v1/ResourceQuota`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ResourceQuota] = js.native
+  def getResource_v1ResourceQuota(groupVersionKind: `v1/ResourceQuota`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ResourceQuota] = js.native
   @JSName("getResource")
-  def getResource_v1ResourceQuota(groupVersionKind: `v1/ResourceQuota`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ResourceQuota] = js.native
+  def getResource_v1ResourceQuota(groupVersionKind: `v1/ResourceQuota`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ResourceQuota] = js.native
   @JSName("getResource")
-  def getResource_v1ResourceQuotaList(groupVersionKind: `v1/ResourceQuotaList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ResourceQuotaList] = js.native
+  def getResource_v1ResourceQuotaList(groupVersionKind: `v1/ResourceQuotaList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ResourceQuotaList] = js.native
   @JSName("getResource")
-  def getResource_v1ResourceQuotaList(groupVersionKind: `v1/ResourceQuotaList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ResourceQuotaList] = js.native
+  def getResource_v1ResourceQuotaList(groupVersionKind: `v1/ResourceQuotaList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ResourceQuotaList] = js.native
   @JSName("getResource")
-  def getResource_v1Secret(groupVersionKind: `v1/Secret`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Secret] = js.native
+  def getResource_v1Secret(groupVersionKind: `v1/Secret`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Secret] = js.native
   @JSName("getResource")
-  def getResource_v1Secret(groupVersionKind: `v1/Secret`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Secret] = js.native
+  def getResource_v1Secret(groupVersionKind: `v1/Secret`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Secret] = js.native
   @JSName("getResource")
-  def getResource_v1SecretList(groupVersionKind: `v1/SecretList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.SecretList] = js.native
+  def getResource_v1SecretList(groupVersionKind: `v1/SecretList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.SecretList] = js.native
   @JSName("getResource")
-  def getResource_v1SecretList(groupVersionKind: `v1/SecretList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.SecretList] = js.native
+  def getResource_v1SecretList(groupVersionKind: `v1/SecretList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.SecretList] = js.native
   @JSName("getResource")
-  def getResource_v1Service(groupVersionKind: `v1/Service`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Service] = js.native
+  def getResource_v1Service(groupVersionKind: `v1/Service`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Service] = js.native
   @JSName("getResource")
-  def getResource_v1Service(groupVersionKind: `v1/Service`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.Service] = js.native
+  def getResource_v1Service(groupVersionKind: `v1/Service`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.Service] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceAccount(groupVersionKind: `v1/ServiceAccount`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceAccount] = js.native
+  def getResource_v1ServiceAccount(groupVersionKind: `v1/ServiceAccount`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceAccount] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceAccount(groupVersionKind: `v1/ServiceAccount`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceAccount] = js.native
+  def getResource_v1ServiceAccount(groupVersionKind: `v1/ServiceAccount`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceAccount] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceAccountList(groupVersionKind: `v1/ServiceAccountList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceAccountList] = js.native
+  def getResource_v1ServiceAccountList(groupVersionKind: `v1/ServiceAccountList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceAccountList] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceAccountList(groupVersionKind: `v1/ServiceAccountList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceAccountList] = js.native
+  def getResource_v1ServiceAccountList(groupVersionKind: `v1/ServiceAccountList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceAccountList] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceList(groupVersionKind: `v1/ServiceList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceList] = js.native
+  def getResource_v1ServiceList(groupVersionKind: `v1/ServiceList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceList] = js.native
   @JSName("getResource")
-  def getResource_v1ServiceList(groupVersionKind: `v1/ServiceList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coreNs.v1Ns.ServiceList] = js.native
+  def getResource_v1ServiceList(groupVersionKind: `v1/ServiceList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.core.v1.ServiceList] = js.native
   @JSName("getResource")
-  def getResource_v1Status(groupVersionKind: `v1/Status`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.metaNs.v1Ns.Status] = js.native
+  def getResource_v1Status(groupVersionKind: `v1/Status`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.meta.v1.Status] = js.native
   @JSName("getResource")
-  def getResource_v1Status(groupVersionKind: `v1/Status`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.metaNs.v1Ns.Status] = js.native
+  def getResource_v1Status(groupVersionKind: `v1/Status`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.meta.v1.Status] = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.atJupyterlabObservables.libObservablestringMod
 
 import typings.atJupyterlabObservables.libModeldbMod.ObservableType
-import typings.atJupyterlabObservables.libObservablestringMod.IObservableStringNs.IChangedArgs
+import typings.atJupyterlabObservables.libObservablestringMod.IObservableString.IChangedArgs
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ class ObservableString () extends IObservableString {
     */
   /* CompleteClass */
   @JSName("type")
-  override var type_IObservableString: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.String = js.native
+  override var type_IObservableString_ : typings.atJupyterlabObservables.atJupyterlabObservablesStrings.String = js.native
   /**
     * Set the ObservableString to an empty string.
     */

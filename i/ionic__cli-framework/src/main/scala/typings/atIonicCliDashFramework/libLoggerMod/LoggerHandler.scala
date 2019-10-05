@@ -11,9 +11,13 @@ trait LoggerHandler extends js.Object {
 
 object LoggerHandler {
   @scala.inline
-  def apply(clone: () => LoggerHandler, handle: LogRecord => Unit, formatter: LoggerFormatter = null): LoggerHandler = {
+  def apply(
+    clone: () => LoggerHandler,
+    handle: LogRecord => Unit,
+    formatter: /* record */ LogRecord => String = null
+  ): LoggerHandler = {
     val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), handle = js.Any.fromFunction1(handle))
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[LoggerHandler]
   }
 }

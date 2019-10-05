@@ -54,3 +54,11 @@ class PolyfillBlob protected () extends EventTarget {
   def slice(start: Double, end: Double, contentType: String): PolyfillBlob = js.native
 }
 
+@JSImport("react-native-fetch-blob", "PolyfillBlob")
+@js.native
+object PolyfillBlob extends js.Object {
+  def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = js.native
+  def clearCache(): Unit = js.native
+  def setLog(level: Double): Unit = js.native
+}
+

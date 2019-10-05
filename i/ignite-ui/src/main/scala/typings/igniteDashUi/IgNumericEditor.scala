@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -392,12 +393,12 @@ object IgNumericEditor {
     disabled: js.UndefOr[Boolean] = js.undefined,
     dropDownAnimationDuration: Int | Double = null,
     dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined,
-    dropDownItemSelected: DropDownItemSelectedEvent = null,
-    dropDownItemSelecting: DropDownItemSelectingEvent = null,
-    dropDownListClosed: DropDownListClosedEvent = null,
-    dropDownListClosing: DropDownListClosingEvent = null,
-    dropDownListOpened: DropDownListOpenedEvent = null,
-    dropDownListOpening: DropDownListOpeningEvent = null,
+    dropDownItemSelected: (/* event */ Event, /* ui */ DropDownItemSelectedEventUIParam) => Unit = null,
+    dropDownItemSelecting: (/* event */ Event, /* ui */ DropDownItemSelectingEventUIParam) => Unit = null,
+    dropDownListClosed: (/* event */ Event, /* ui */ DropDownListClosedEventUIParam) => Unit = null,
+    dropDownListClosing: (/* event */ Event, /* ui */ DropDownListClosingEventUIParam) => Unit = null,
+    dropDownListOpened: (/* event */ Event, /* ui */ DropDownListOpenedEventUIParam) => Unit = null,
+    dropDownListOpening: (/* event */ Event, /* ui */ DropDownListOpeningEventUIParam) => Unit = null,
     dropDownOnReadOnly: js.UndefOr[Boolean] = js.undefined,
     dropDownOrientation: String = null,
     excludeKeys: js.Any = null,
@@ -434,7 +435,7 @@ object IgNumericEditor {
     suppressNotifications: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     textAlign: String = null,
-    textChanged: TextChangedEvent = null,
+    textChanged: (/* event */ Event, /* ui */ TextChangedEventUIParam) => Unit = null,
     textMode: js.Any = null,
     toLower: js.Any = null,
     toUpper: js.Any = null,
@@ -452,12 +453,12 @@ object IgNumericEditor {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
-    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(dropDownItemSelected)
-    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(dropDownItemSelecting)
-    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(dropDownListClosed)
-    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(dropDownListClosing)
-    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(dropDownListOpened)
-    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(dropDownListOpening)
+    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(js.Any.fromFunction2(dropDownItemSelected))
+    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(js.Any.fromFunction2(dropDownItemSelecting))
+    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(js.Any.fromFunction2(dropDownListClosed))
+    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(js.Any.fromFunction2(dropDownListClosing))
+    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(js.Any.fromFunction2(dropDownListOpened))
+    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(js.Any.fromFunction2(dropDownListOpening))
     if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly)
     if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
     if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys)
@@ -494,7 +495,7 @@ object IgNumericEditor {
     if (!js.isUndefined(suppressNotifications)) __obj.updateDynamic("suppressNotifications")(suppressNotifications)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (textChanged != null) __obj.updateDynamic("textChanged")(textChanged)
+    if (textChanged != null) __obj.updateDynamic("textChanged")(js.Any.fromFunction2(textChanged))
     if (textMode != null) __obj.updateDynamic("textMode")(textMode)
     if (toLower != null) __obj.updateDynamic("toLower")(toLower)
     if (toUpper != null) __obj.updateDynamic("toUpper")(toUpper)

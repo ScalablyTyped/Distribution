@@ -26,7 +26,7 @@ trait DescribeAvailabilityZonesRequest extends js.Object {
 object DescribeAvailabilityZonesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     ZoneIds: ZoneIdStringList = null,
     ZoneNames: ZoneNameStringList = null

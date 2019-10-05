@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportBufferParametersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BufferParametersConstructor
+import typings.arcgisDashJsDashApi.__esri.BufferParametersConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

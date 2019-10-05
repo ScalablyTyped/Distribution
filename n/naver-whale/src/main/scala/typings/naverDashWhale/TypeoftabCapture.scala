@@ -1,8 +1,8 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.tabCaptureNs.CaptureInfo
-import typings.chrome.chromeNs.tabCaptureNs.CaptureOptions
-import typings.chrome.chromeNs.tabCaptureNs.CaptureStatusChangedEvent
+import typings.chrome.chrome.tabCapture.CaptureInfo
+import typings.chrome.chrome.tabCapture.CaptureOptions
+import typings.chrome.chrome.tabCapture.CaptureStatusChangedEvent
 import typings.std.MediaStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -47,11 +47,11 @@ object GetOrganizationsAccessReportResponse {
     JobStatus: jobStatusType,
     AccessDetails: AccessDetails = null,
     ErrorDetails: ErrorDetails = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     JobCompletionDate: dateType = null,
     Marker: markerType = null,
-    NumberOfServicesAccessible: js.UndefOr[integerType] = js.undefined,
-    NumberOfServicesNotAccessed: js.UndefOr[integerType] = js.undefined
+    NumberOfServicesAccessible: Int | Double = null,
+    NumberOfServicesNotAccessed: Int | Double = null
   ): GetOrganizationsAccessReportResponse = {
     val __obj = js.Dynamic.literal(JobCreationDate = JobCreationDate, JobStatus = JobStatus.asInstanceOf[js.Any])
     if (AccessDetails != null) __obj.updateDynamic("AccessDetails")(AccessDetails)
@@ -59,8 +59,8 @@ object GetOrganizationsAccessReportResponse {
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (JobCompletionDate != null) __obj.updateDynamic("JobCompletionDate")(JobCompletionDate)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(NumberOfServicesAccessible)) __obj.updateDynamic("NumberOfServicesAccessible")(NumberOfServicesAccessible)
-    if (!js.isUndefined(NumberOfServicesNotAccessed)) __obj.updateDynamic("NumberOfServicesNotAccessed")(NumberOfServicesNotAccessed)
+    if (NumberOfServicesAccessible != null) __obj.updateDynamic("NumberOfServicesAccessible")(NumberOfServicesAccessible.asInstanceOf[js.Any])
+    if (NumberOfServicesNotAccessed != null) __obj.updateDynamic("NumberOfServicesNotAccessed")(NumberOfServicesNotAccessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationsAccessReportResponse]
   }
 }

@@ -1,5 +1,7 @@
 package typings.wixDashStyleDashReact.buttonMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
@@ -29,7 +31,7 @@ object ButtonProps {
     dataHook: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     fullWidth: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[HTMLElement] = null,
+    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     prefixIcon: ReactElement = null,
     priority: ButtonPriority = null,
     size: ButtonSize = null,
@@ -42,7 +44,7 @@ object ButtonProps {
     if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon)
     if (priority != null) __obj.updateDynamic("priority")(priority)
     if (size != null) __obj.updateDynamic("size")(size)

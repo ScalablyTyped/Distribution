@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "koa-hbs"
-version := "v1.x-dt-20190322Z-8d4b9f"
-scalaVersion := "2.12.9"
+version := "v1.x-dt-20190322Z-5b031b"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "handlebars" % "4.4.2-810c9b",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "handlebars" % "4.4.2-869183",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

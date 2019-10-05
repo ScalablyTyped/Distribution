@@ -1,6 +1,6 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintRuleMod
 
-import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintASTMod.ASTNs.Range
+import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintASTMod.AST.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

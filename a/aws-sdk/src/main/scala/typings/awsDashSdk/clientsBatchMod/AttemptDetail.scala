@@ -27,15 +27,15 @@ object AttemptDetail {
   @scala.inline
   def apply(
     container: AttemptContainerDetail = null,
-    startedAt: js.UndefOr[Long] = js.undefined,
+    startedAt: Int | Double = null,
     statusReason: String = null,
-    stoppedAt: js.UndefOr[Long] = js.undefined
+    stoppedAt: Int | Double = null
   ): AttemptDetail = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container)
-    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt)
+    if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
-    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt)
+    if (stoppedAt != null) __obj.updateDynamic("stoppedAt")(stoppedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttemptDetail]
   }
 }

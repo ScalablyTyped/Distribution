@@ -14,15 +14,5 @@ trait DocumentFragment
 
 @JSGlobal("DocumentFragment")
 @js.native
-class DocumentFragmentCls () extends DocumentFragment {
-  /**
-    * Returns the first element within node's descendants whose ID is elementId.
-    */
-  /* CompleteClass */
-  override def getElementById(elementId: java.lang.String): Element | Null = js.native
-}
-
-@JSGlobal("DocumentFragment")
-@js.native
 object DocumentFragment extends Instantiable0[DocumentFragment]
 

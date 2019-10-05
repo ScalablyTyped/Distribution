@@ -2,10 +2,10 @@ package typings.atOracleOraclejet.ojmoduleDashElementMod
 
 import typings.atOracleOraclejet.Anon_CleanupMode
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionEnd
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionStart
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewConnected
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewDisconnected
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionEnd
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionStart
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewConnected
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewDisconnected
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -32,10 +32,10 @@ trait ojModuleEventMap extends HTMLElementEventMap {
     /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
   ]
   var configChanged: JetElementCustomEvent[Anon_CleanupMode]
-  var ojTransitionEnd: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionEnd
-  var ojTransitionStart: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionStart
-  var ojViewConnected: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewConnected
-  var ojViewDisconnected: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewDisconnected
+  var ojTransitionEnd: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionEnd
+  var ojTransitionStart: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionStart
+  var ojViewConnected: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewConnected
+  var ojViewDisconnected: typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewDisconnected
 }
 
 object ojModuleEventMap {

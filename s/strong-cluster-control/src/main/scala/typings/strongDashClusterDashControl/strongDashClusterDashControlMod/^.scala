@@ -1,7 +1,7 @@
 package typings.strongDashClusterDashControl.strongDashClusterDashControlMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.strongDashClusterDashControl.strongDashClusterDashControlMod.StrongClusterControlNs.Control
+import typings.strongDashClusterDashControl.strongDashClusterDashControlMod.StrongClusterControl.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

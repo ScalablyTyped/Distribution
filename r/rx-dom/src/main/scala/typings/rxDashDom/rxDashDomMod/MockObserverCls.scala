@@ -1,6 +1,6 @@
 package typings.rxDashDom.rxDashDomMod
 
-import typings.rxDashCore.RxNs.IScheduler
+import typings.rxDashCore.Rx.IScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

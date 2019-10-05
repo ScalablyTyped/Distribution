@@ -1,10 +1,10 @@
 package typings.reactDashToolbox.libSnackbarSnackbarMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.accept
 import typings.reactDashToolbox.reactDashToolboxStrings.cancel
 import typings.reactDashToolbox.reactDashToolboxStrings.warning

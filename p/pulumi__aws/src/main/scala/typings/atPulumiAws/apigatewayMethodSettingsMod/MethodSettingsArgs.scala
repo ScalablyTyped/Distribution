@@ -1,7 +1,7 @@
 package typings.atPulumiAws.apigatewayMethodSettingsMod
 
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
-import typings.atPulumiAws.typesInputMod.apigatewayNs.MethodSettingsSettings
+import typings.atPulumiAws.typesInputMod.apigateway.MethodSettingsSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

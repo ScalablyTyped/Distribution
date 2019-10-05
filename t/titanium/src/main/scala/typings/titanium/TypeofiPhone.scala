@@ -8,21 +8,21 @@ trait TypeofiPhone extends js.Object {
   /**
   			 * A set of constants for the styles available for <Titanium.UI.ActivityIndicator> objects.
   			 */
-  val ActivityIndicatorStyleNs: TypeofActivityIndicatorStyleAddEventListener
+  val ActivityIndicatorStyle: TypeofActivityIndicatorStyleAddEventListener
   /**
   			 * A set of constants for the style that can be used for the `style` property of
   			 * <Titanium.UI.AlertDialog>.
   			 */
-  val AlertDialogStyleNs: TypeofAlertDialogStyle
+  val AlertDialogStyle: TypeofAlertDialogStyle
   /**
   			 * A set of constants for the animation styles used for view transitions.
   			 */
-  val AnimationStyleNs: TypeofAnimationStyleAddEventListener
+  val AnimationStyle: TypeofAnimationStyleAddEventListener
   /**
   			 * A set of constants for the style that can be used for the `separatorStyle` property of
   			 * <Titanium.UI.ListView>.
   			 */
-  val ListViewSeparatorStyleNs: TypeofListViewSeparatorStyle
+  val ListViewSeparatorStyle: TypeofListViewSeparatorStyle
   /**
   			 * View presented with the same style as its parent window.
   			 */
@@ -67,47 +67,47 @@ trait TypeofiPhone extends js.Object {
   /**
   			 * A set of constants for the bar styles used on the `style` property of <Titanium.UI.ProgressBar>.
   			 */
-  val ProgressBarStyleNs: TypeofProgressBarStyle
+  val ProgressBarStyle: TypeofProgressBarStyle
   /**
   			 * A set of constants for the Animation Styles used for transition on table view rows.
   			 */
-  val RowAnimationStyleNs: TypeofRowAnimationStyle
+  val RowAnimationStyle: TypeofRowAnimationStyle
   /**
   			 * A set of constants for the styles available for scrollbars used with <Titanium.UI.ScrollView.scrollIndicatorStyle> and <Titanium.UI.TableView.scrollIndicatorStyle> properties.
   			 */
-  val ScrollIndicatorStyleNs: TypeofScrollIndicatorStyle
+  val ScrollIndicatorStyle: TypeofScrollIndicatorStyle
   /**
   			 * A set of constants for creating standard iOS system buttons.
   			 */
-  val SystemButtonNs: TypeofSystemButton
+  val SystemButton: TypeofSystemButton
   /**
   			 * A set of constants for the system button styles that can be used for the button `style` property.
   			 */
-  val SystemButtonStyleNs: TypeofSystemButtonStyleAddEventListener
+  val SystemButtonStyle: TypeofSystemButtonStyleAddEventListener
   /**
   			 * A set of constants for the system icon styles that can be used on a tab group tab.
   			 */
-  val SystemIconNs: TypeofSystemIcon
+  val SystemIcon: TypeofSystemIcon
   /**
   			 * A set of constants for the style that can be used for the `selectionStyle` property of
   			 * <Titanium.UI.TableViewRow>.
   			 */
-  val TableViewCellSelectionStyleNs: TypeofTableViewCellSelectionStyle
+  val TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle
   /**
   			 * A set of constants for the position value that can be used for the `position` property of
   			 * <Titanium.UI.TableView> when invoking `scrollToIndex`.
   			 */
-  val TableViewScrollPositionNs: TypeofTableViewScrollPosition
+  val TableViewScrollPosition: TypeofTableViewScrollPosition
   /**
   			 * A set of constants for the style that can be used for the `separatorStyle` property of
   			 * <Titanium.UI.TableView>.
   			 */
-  val TableViewSeparatorStyleNs: TypeofTableViewSeparatorStyle
+  val TableViewSeparatorStyle: TypeofTableViewSeparatorStyle
   /**
   			 * A set of constants for the style that can be used for the button `style` property of
   			 * <Titanium.UI.TableView>.
   			 */
-  val TableViewStyleNs: TypeofTableViewStyle
+  val TableViewStyle: TypeofTableViewStyle
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */
@@ -173,10 +173,10 @@ trait TypeofiPhone extends js.Object {
 object TypeofiPhone {
   @scala.inline
   def apply(
-    ActivityIndicatorStyleNs: TypeofActivityIndicatorStyleAddEventListener,
-    AlertDialogStyleNs: TypeofAlertDialogStyle,
-    AnimationStyleNs: TypeofAnimationStyleAddEventListener,
-    ListViewSeparatorStyleNs: TypeofListViewSeparatorStyle,
+    ActivityIndicatorStyle: TypeofActivityIndicatorStyleAddEventListener,
+    AlertDialogStyle: TypeofAlertDialogStyle,
+    AnimationStyle: TypeofAnimationStyleAddEventListener,
+    ListViewSeparatorStyle: TypeofListViewSeparatorStyle,
     MODAL_PRESENTATION_CURRENT_CONTEXT: Double,
     MODAL_PRESENTATION_FORMSHEET: Double,
     MODAL_PRESENTATION_FULLSCREEN: Double,
@@ -185,16 +185,16 @@ object TypeofiPhone {
     MODAL_TRANSITION_STYLE_CROSS_DISSOLVE: Double,
     MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL: Double,
     MODAL_TRANSITION_STYLE_PARTIAL_CURL: Double,
-    ProgressBarStyleNs: TypeofProgressBarStyle,
-    RowAnimationStyleNs: TypeofRowAnimationStyle,
-    ScrollIndicatorStyleNs: TypeofScrollIndicatorStyle,
-    SystemButtonNs: TypeofSystemButton,
-    SystemButtonStyleNs: TypeofSystemButtonStyleAddEventListener,
-    SystemIconNs: TypeofSystemIcon,
-    TableViewCellSelectionStyleNs: TypeofTableViewCellSelectionStyle,
-    TableViewScrollPositionNs: TypeofTableViewScrollPosition,
-    TableViewSeparatorStyleNs: TypeofTableViewSeparatorStyle,
-    TableViewStyleNs: TypeofTableViewStyle,
+    ProgressBarStyle: TypeofProgressBarStyle,
+    RowAnimationStyle: TypeofRowAnimationStyle,
+    ScrollIndicatorStyle: TypeofScrollIndicatorStyle,
+    SystemButton: TypeofSystemButton,
+    SystemButtonStyle: TypeofSystemButtonStyleAddEventListener,
+    SystemIcon: TypeofSystemIcon,
+    TableViewCellSelectionStyle: TypeofTableViewCellSelectionStyle,
+    TableViewScrollPosition: TypeofTableViewScrollPosition,
+    TableViewSeparatorStyle: TypeofTableViewSeparatorStyle,
+    TableViewStyle: TypeofTableViewStyle,
     addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     apiName: String,
     appBadge: Double,
@@ -211,7 +211,7 @@ object TypeofiPhone {
     setAppSupportsShakeToEdit: Boolean => Unit,
     setBubbleParent: Boolean => Unit
   ): TypeofiPhone = {
-    val __obj = js.Dynamic.literal(ActivityIndicatorStyleNs = ActivityIndicatorStyleNs, AlertDialogStyleNs = AlertDialogStyleNs, AnimationStyleNs = AnimationStyleNs, ListViewSeparatorStyleNs = ListViewSeparatorStyleNs, MODAL_PRESENTATION_CURRENT_CONTEXT = MODAL_PRESENTATION_CURRENT_CONTEXT, MODAL_PRESENTATION_FORMSHEET = MODAL_PRESENTATION_FORMSHEET, MODAL_PRESENTATION_FULLSCREEN = MODAL_PRESENTATION_FULLSCREEN, MODAL_PRESENTATION_PAGESHEET = MODAL_PRESENTATION_PAGESHEET, MODAL_TRANSITION_STYLE_COVER_VERTICAL = MODAL_TRANSITION_STYLE_COVER_VERTICAL, MODAL_TRANSITION_STYLE_CROSS_DISSOLVE = MODAL_TRANSITION_STYLE_CROSS_DISSOLVE, MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL = MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL, MODAL_TRANSITION_STYLE_PARTIAL_CURL = MODAL_TRANSITION_STYLE_PARTIAL_CURL, ProgressBarStyleNs = ProgressBarStyleNs, RowAnimationStyleNs = RowAnimationStyleNs, ScrollIndicatorStyleNs = ScrollIndicatorStyleNs, SystemButtonNs = SystemButtonNs, SystemButtonStyleNs = SystemButtonStyleNs, SystemIconNs = SystemIconNs, TableViewCellSelectionStyleNs = TableViewCellSelectionStyleNs, TableViewScrollPositionNs = TableViewScrollPositionNs, TableViewSeparatorStyleNs = TableViewSeparatorStyleNs, TableViewStyleNs = TableViewStyleNs, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, appBadge = appBadge, appSupportsShakeToEdit = appSupportsShakeToEdit, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getAppBadge = js.Any.fromFunction0(getAppBadge), getAppSupportsShakeToEdit = js.Any.fromFunction0(getAppSupportsShakeToEdit), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setAppBadge = js.Any.fromFunction1(setAppBadge), setAppSupportsShakeToEdit = js.Any.fromFunction1(setAppSupportsShakeToEdit), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    val __obj = js.Dynamic.literal(ActivityIndicatorStyle = ActivityIndicatorStyle, AlertDialogStyle = AlertDialogStyle, AnimationStyle = AnimationStyle, ListViewSeparatorStyle = ListViewSeparatorStyle, MODAL_PRESENTATION_CURRENT_CONTEXT = MODAL_PRESENTATION_CURRENT_CONTEXT, MODAL_PRESENTATION_FORMSHEET = MODAL_PRESENTATION_FORMSHEET, MODAL_PRESENTATION_FULLSCREEN = MODAL_PRESENTATION_FULLSCREEN, MODAL_PRESENTATION_PAGESHEET = MODAL_PRESENTATION_PAGESHEET, MODAL_TRANSITION_STYLE_COVER_VERTICAL = MODAL_TRANSITION_STYLE_COVER_VERTICAL, MODAL_TRANSITION_STYLE_CROSS_DISSOLVE = MODAL_TRANSITION_STYLE_CROSS_DISSOLVE, MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL = MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL, MODAL_TRANSITION_STYLE_PARTIAL_CURL = MODAL_TRANSITION_STYLE_PARTIAL_CURL, ProgressBarStyle = ProgressBarStyle, RowAnimationStyle = RowAnimationStyle, ScrollIndicatorStyle = ScrollIndicatorStyle, SystemButton = SystemButton, SystemButtonStyle = SystemButtonStyle, SystemIcon = SystemIcon, TableViewCellSelectionStyle = TableViewCellSelectionStyle, TableViewScrollPosition = TableViewScrollPosition, TableViewSeparatorStyle = TableViewSeparatorStyle, TableViewStyle = TableViewStyle, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, appBadge = appBadge, appSupportsShakeToEdit = appSupportsShakeToEdit, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getAppBadge = js.Any.fromFunction0(getAppBadge), getAppSupportsShakeToEdit = js.Any.fromFunction0(getAppSupportsShakeToEdit), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setAppBadge = js.Any.fromFunction1(setAppBadge), setAppSupportsShakeToEdit = js.Any.fromFunction1(setAppSupportsShakeToEdit), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[TypeofiPhone]
   }

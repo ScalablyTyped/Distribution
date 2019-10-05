@@ -1,6 +1,6 @@
 package typings.bootstrapDash3DashTypeahead
 
-import typings.bootstrapDash3DashTypeahead.Bootstrap3TypeaheadNs.Options
+import typings.bootstrapDash3DashTypeahead.Bootstrap3Typeahead.Options
 import typings.bootstrapDash3DashTypeahead.bootstrapDash3DashTypeaheadStrings.destroy
 import typings.bootstrapDash3DashTypeahead.bootstrapDash3DashTypeaheadStrings.getActive
 import typings.bootstrapDash3DashTypeahead.bootstrapDash3DashTypeaheadStrings.lookup

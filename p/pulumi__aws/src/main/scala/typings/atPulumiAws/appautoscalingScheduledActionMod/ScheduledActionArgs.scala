@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appautoscalingScheduledActionMod
 
-import typings.atPulumiAws.typesInputMod.appautoscalingNs.ScheduledActionScalableTargetAction
+import typings.atPulumiAws.typesInputMod.appautoscaling.ScheduledActionScalableTargetAction
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

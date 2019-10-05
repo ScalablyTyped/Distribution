@@ -1,5 +1,6 @@
 package typings.fastclick
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.EventTarget
 import scala.scalajs.js
@@ -44,4 +45,8 @@ class FastClick protected () extends FastClickObject {
   /* CompleteClass */
   override def needsFocus(target: js.Any): Boolean = js.native
 }
+
+@JSGlobal("FastClick")
+@js.native
+object FastClick extends TopLevel[FastClickStatic]
 

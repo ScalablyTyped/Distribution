@@ -43,14 +43,14 @@ object GetResourceConfigHistoryRequest {
     chronologicalOrder: ChronologicalOrder = null,
     earlierTime: EarlierTime = null,
     laterTime: LaterTime = null,
-    limit: js.UndefOr[Limit] = js.undefined,
+    limit: Int | Double = null,
     nextToken: NextToken = null
   ): GetResourceConfigHistoryRequest = {
     val __obj = js.Dynamic.literal(resourceId = resourceId, resourceType = resourceType.asInstanceOf[js.Any])
     if (chronologicalOrder != null) __obj.updateDynamic("chronologicalOrder")(chronologicalOrder.asInstanceOf[js.Any])
     if (earlierTime != null) __obj.updateDynamic("earlierTime")(earlierTime)
     if (laterTime != null) __obj.updateDynamic("laterTime")(laterTime)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetResourceConfigHistoryRequest]
   }

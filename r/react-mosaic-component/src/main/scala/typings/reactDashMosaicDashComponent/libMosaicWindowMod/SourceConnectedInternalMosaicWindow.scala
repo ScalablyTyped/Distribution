@@ -1,8 +1,10 @@
 package typings.reactDashMosaicDashComponent.libMosaicWindowMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+import typings.reactDashDnd.libDecoratorsInterfacesMod.DndComponentClass
 import typings.reactDashMosaicDashComponent.TypeofClassInternalMosaicWindow
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.additionalControlButtonText
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.additionalControls
@@ -56,4 +58,17 @@ class SourceConnectedInternalMosaicWindow protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("react-mosaic-component/lib/MosaicWindow", "SourceConnectedInternalMosaicWindow")
+@js.native
+object SourceConnectedInternalMosaicWindow
+  extends TopLevel[
+      DndComponentClass[
+        TypeofClassInternalMosaicWindow, 
+        Pick[
+          InternalMosaicWindowProps[js.Any | Double | String], 
+          title | path | className | draggable | onDragEnd | onDragStart | createNode | connectDropTarget | isOver | draggedMosaicId | toolbarControls | additionalControls | additionalControlButtonText | renderPreview | renderToolbar
+        ]
+      ]
+    ]
 

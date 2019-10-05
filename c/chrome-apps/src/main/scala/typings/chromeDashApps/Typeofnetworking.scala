@@ -16,7 +16,7 @@ trait Typeofnetworking extends js.Object {
     * @description
     * Use the *networking.config* API to authenticate to captive portals.
     */
-  val configNs: Typeofconfig
+  val config: Typeofconfig
   //////////////////////////////////////
   // Open Network Configuration (ONC) //
   //////////////////////////////////////
@@ -34,13 +34,13 @@ trait Typeofnetworking extends js.Object {
     * Most interface properties and type values use UpperCamelCase to match
     * the ONC specification instead of the JavaScript lowerCamelCase convention.
     */
-  val oncNs: Typeofonc
+  val onc: Typeofonc
 }
 
 object Typeofnetworking {
   @scala.inline
-  def apply(configNs: Typeofconfig, oncNs: Typeofonc): Typeofnetworking = {
-    val __obj = js.Dynamic.literal(configNs = configNs, oncNs = oncNs)
+  def apply(config: Typeofconfig, onc: Typeofonc): Typeofnetworking = {
+    val __obj = js.Dynamic.literal(config = config, onc = onc)
   
     __obj.asInstanceOf[Typeofnetworking]
   }

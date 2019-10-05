@@ -8,7 +8,7 @@ package object dvaMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.dva.Anon_History
   import typings.dva.Anon_Type
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
   import typings.redux.reduxMod.Action
   import typings.redux.reduxMod.AnyAction
   import typings.redux.reduxMod.MiddlewareAPI

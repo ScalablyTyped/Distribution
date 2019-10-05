@@ -1,6 +1,6 @@
 package typings.canvasDashGauges
 
-import typings.canvasDashGauges.CanvasGaugesNs.Collection
+import typings.canvasDashGauges.CanvasGauges.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

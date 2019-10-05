@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySpatialReferenceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReferenceProperties
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.SpatialReferenceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

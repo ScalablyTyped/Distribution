@@ -30,17 +30,17 @@ trait StackSetOperationPreferences extends js.Object {
 object StackSetOperationPreferences {
   @scala.inline
   def apply(
-    FailureToleranceCount: js.UndefOr[FailureToleranceCount] = js.undefined,
-    FailureTolerancePercentage: js.UndefOr[FailureTolerancePercentage] = js.undefined,
-    MaxConcurrentCount: js.UndefOr[MaxConcurrentCount] = js.undefined,
-    MaxConcurrentPercentage: js.UndefOr[MaxConcurrentPercentage] = js.undefined,
+    FailureToleranceCount: Int | Double = null,
+    FailureTolerancePercentage: Int | Double = null,
+    MaxConcurrentCount: Int | Double = null,
+    MaxConcurrentPercentage: Int | Double = null,
     RegionOrder: RegionList = null
   ): StackSetOperationPreferences = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FailureToleranceCount)) __obj.updateDynamic("FailureToleranceCount")(FailureToleranceCount)
-    if (!js.isUndefined(FailureTolerancePercentage)) __obj.updateDynamic("FailureTolerancePercentage")(FailureTolerancePercentage)
-    if (!js.isUndefined(MaxConcurrentCount)) __obj.updateDynamic("MaxConcurrentCount")(MaxConcurrentCount)
-    if (!js.isUndefined(MaxConcurrentPercentage)) __obj.updateDynamic("MaxConcurrentPercentage")(MaxConcurrentPercentage)
+    if (FailureToleranceCount != null) __obj.updateDynamic("FailureToleranceCount")(FailureToleranceCount.asInstanceOf[js.Any])
+    if (FailureTolerancePercentage != null) __obj.updateDynamic("FailureTolerancePercentage")(FailureTolerancePercentage.asInstanceOf[js.Any])
+    if (MaxConcurrentCount != null) __obj.updateDynamic("MaxConcurrentCount")(MaxConcurrentCount.asInstanceOf[js.Any])
+    if (MaxConcurrentPercentage != null) __obj.updateDynamic("MaxConcurrentPercentage")(MaxConcurrentPercentage.asInstanceOf[js.Any])
     if (RegionOrder != null) __obj.updateDynamic("RegionOrder")(RegionOrder)
     __obj.asInstanceOf[StackSetOperationPreferences]
   }

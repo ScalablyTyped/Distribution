@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotDoubleclicksearch
 
-import typings.gapiDotClientDotDoubleclicksearch.gapiNs.clientNs.doubleclicksearchNs.ReportApiColumnSpec
+import typings.gapiDotClientDotDoubleclicksearch.gapi.client.doubleclicksearch.ReportApiColumnSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

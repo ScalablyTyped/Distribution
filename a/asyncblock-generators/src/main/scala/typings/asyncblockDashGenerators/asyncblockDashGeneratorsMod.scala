@@ -1,7 +1,7 @@
 package typings.asyncblockDashGenerators
 
-import typings.asyncblockDashGenerators.underscoreAbNs.abNs.Flow
-import typings.asyncblockDashGenerators.underscoreAbNs.abNs.Result
+import typings.asyncblockDashGenerators._ab.ab.Flow
+import typings.asyncblockDashGenerators._ab.ab.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.tar.tarMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.tar.tarNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

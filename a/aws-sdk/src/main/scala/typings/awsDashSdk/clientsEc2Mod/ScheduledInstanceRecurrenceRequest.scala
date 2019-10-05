@@ -31,14 +31,14 @@ object ScheduledInstanceRecurrenceRequest {
   @scala.inline
   def apply(
     Frequency: String = null,
-    Interval: js.UndefOr[Integer] = js.undefined,
+    Interval: Int | scala.Double = null,
     OccurrenceDays: OccurrenceDayRequestSet = null,
-    OccurrenceRelativeToEnd: js.UndefOr[Boolean] = js.undefined,
+    OccurrenceRelativeToEnd: js.UndefOr[scala.Boolean] = js.undefined,
     OccurrenceUnit: String = null
   ): ScheduledInstanceRecurrenceRequest = {
     val __obj = js.Dynamic.literal()
     if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency)
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval)
+    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
     if (OccurrenceDays != null) __obj.updateDynamic("OccurrenceDays")(OccurrenceDays)
     if (!js.isUndefined(OccurrenceRelativeToEnd)) __obj.updateDynamic("OccurrenceRelativeToEnd")(OccurrenceRelativeToEnd)
     if (OccurrenceUnit != null) __obj.updateDynamic("OccurrenceUnit")(OccurrenceUnit)

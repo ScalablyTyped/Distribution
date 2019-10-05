@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchEventRuleMixinsMod
 
-import typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule
+import typings.atPulumiAws.cloudwatchEventRuleMod.EventRule
 import typings.atPulumiAws.cloudwatchEventTargetMod.EventTarget
 import typings.atPulumiAws.lambdaMod.EventSubscription
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions

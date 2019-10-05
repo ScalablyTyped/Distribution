@@ -13,9 +13,9 @@ trait VideoSelectorProgramId extends js.Object {
 
 object VideoSelectorProgramId {
   @scala.inline
-  def apply(ProgramId: js.UndefOr[__integerMin0Max65536] = js.undefined): VideoSelectorProgramId = {
+  def apply(ProgramId: Int | Double = null): VideoSelectorProgramId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ProgramId)) __obj.updateDynamic("ProgramId")(ProgramId)
+    if (ProgramId != null) __obj.updateDynamic("ProgramId")(ProgramId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelectorProgramId]
   }
 }

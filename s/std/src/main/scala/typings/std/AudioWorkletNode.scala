@@ -44,13 +44,6 @@ trait AudioWorkletNode extends AudioNode {
 
 @JSGlobal("AudioWorkletNode")
 @js.native
-class AudioWorkletNodeCls protected () extends AudioWorkletNode {
-  def this(context: BaseAudioContext, name: java.lang.String) = this()
-  def this(context: BaseAudioContext, name: java.lang.String, options: AudioWorkletNodeOptions) = this()
-}
-
-@JSGlobal("AudioWorkletNode")
-@js.native
 object AudioWorkletNode
   extends Instantiable2[/* context */ BaseAudioContext, /* name */ java.lang.String, AudioWorkletNode]
      with Instantiable3[

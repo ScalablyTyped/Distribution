@@ -61,14 +61,14 @@ object UpdateSMBFileShareInput {
     FileShareARN: FileShareARN,
     AdminUserList: FileShareUserList = null,
     DefaultStorageClass: StorageClass = null,
-    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
+    GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     InvalidUserList: FileShareUserList = null,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     ObjectACL: ObjectACL = null,
-    ReadOnly: js.UndefOr[Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[Boolean] = js.undefined,
-    SMBACLEnabled: js.UndefOr[Boolean] = js.undefined,
+    ReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
+    SMBACLEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ValidUserList: FileShareUserList = null
   ): UpdateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN)

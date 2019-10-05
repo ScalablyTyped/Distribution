@@ -49,25 +49,25 @@ object Tape {
   def apply(
     KMSKey: KMSKey = null,
     PoolId: PoolId = null,
-    Progress: js.UndefOr[DoubleObject] = js.undefined,
+    Progress: Int | Double = null,
     TapeARN: TapeARN = null,
     TapeBarcode: TapeBarcode = null,
     TapeCreatedDate: Time = null,
-    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
+    TapeSizeInBytes: Int | Double = null,
     TapeStatus: TapeStatus = null,
-    TapeUsedInBytes: js.UndefOr[TapeUsage] = js.undefined,
+    TapeUsedInBytes: Int | Double = null,
     VTLDevice: VTLDeviceARN = null
   ): Tape = {
     val __obj = js.Dynamic.literal()
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey)
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId)
-    if (!js.isUndefined(Progress)) __obj.updateDynamic("Progress")(Progress)
+    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN)
     if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode)
     if (TapeCreatedDate != null) __obj.updateDynamic("TapeCreatedDate")(TapeCreatedDate)
-    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes)
+    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus)
-    if (!js.isUndefined(TapeUsedInBytes)) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes)
+    if (TapeUsedInBytes != null) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.asInstanceOf[js.Any])
     if (VTLDevice != null) __obj.updateDynamic("VTLDevice")(VTLDevice)
     __obj.asInstanceOf[Tape]
   }

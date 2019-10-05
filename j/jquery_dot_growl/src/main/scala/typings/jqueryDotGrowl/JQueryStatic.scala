@@ -1,6 +1,6 @@
 package typings.jqueryDotGrowl
 
-import typings.jqueryDotGrowl.growlNs.Options
+import typings.jqueryDotGrowl.growl.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

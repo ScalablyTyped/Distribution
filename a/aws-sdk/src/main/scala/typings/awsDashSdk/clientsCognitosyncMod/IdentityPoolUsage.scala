@@ -26,16 +26,16 @@ trait IdentityPoolUsage extends js.Object {
 object IdentityPoolUsage {
   @scala.inline
   def apply(
-    DataStorage: js.UndefOr[Long] = js.undefined,
+    DataStorage: Int | Double = null,
     IdentityPoolId: IdentityPoolId = null,
     LastModifiedDate: _Date = null,
-    SyncSessionsCount: js.UndefOr[Long] = js.undefined
+    SyncSessionsCount: Int | Double = null
   ): IdentityPoolUsage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DataStorage)) __obj.updateDynamic("DataStorage")(DataStorage)
+    if (DataStorage != null) __obj.updateDynamic("DataStorage")(DataStorage.asInstanceOf[js.Any])
     if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(SyncSessionsCount)) __obj.updateDynamic("SyncSessionsCount")(SyncSessionsCount)
+    if (SyncSessionsCount != null) __obj.updateDynamic("SyncSessionsCount")(SyncSessionsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolUsage]
   }
 }

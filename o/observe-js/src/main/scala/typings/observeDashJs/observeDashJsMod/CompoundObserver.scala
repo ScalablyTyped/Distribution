@@ -1,6 +1,8 @@
 package typings.observeDashJs.observeDashJsMod
 
-import typings.observeDashJs.observeDashJsMod.observejsNs.CompoundObserver_instance
+import org.scalablytyped.runtime.TopLevel
+import typings.observeDashJs.observeDashJsMod.observejs.CompoundObserver_instance
+import typings.observeDashJs.observeDashJsMod.observejs.CompoundObserver_static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +13,8 @@ import scala.scalajs.js.annotation._
 		 * Constructor
 		 */
 class CompoundObserver () extends CompoundObserver_instance
+
+@JSImport("observe-js", "CompoundObserver")
+@js.native
+object CompoundObserver extends TopLevel[CompoundObserver_static]
 

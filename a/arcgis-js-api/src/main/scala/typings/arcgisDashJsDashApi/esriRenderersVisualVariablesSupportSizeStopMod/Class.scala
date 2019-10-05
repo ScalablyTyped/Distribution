@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesSupportSizeStopMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeStop
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SizeStopProperties
+import typings.arcgisDashJsDashApi.__esri.SizeStop
+import typings.arcgisDashJsDashApi.__esri.SizeStopProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

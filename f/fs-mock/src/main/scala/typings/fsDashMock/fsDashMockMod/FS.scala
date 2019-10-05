@@ -11,7 +11,7 @@ import typings.fsDashMock.Anon_Flag
 import typings.fsDashMock.Anon_Interval
 import typings.fsDashMock.Anon_Persistent
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.Stats

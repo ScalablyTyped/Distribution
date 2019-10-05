@@ -1,7 +1,7 @@
 package typings.reactDashLoadable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashLoadable.LoadableExportNs.Loadable
+import typings.reactDashLoadable.LoadableExport.Loadable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

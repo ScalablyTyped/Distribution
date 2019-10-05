@@ -32,12 +32,12 @@ object ListRequestedServiceQuotaChangeHistoryByQuotaRequest {
   def apply(
     QuotaCode: QuotaCode,
     ServiceCode: ServiceCode,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     Status: RequestStatus = null
   ): ListRequestedServiceQuotaChangeHistoryByQuotaRequest = {
     val __obj = js.Dynamic.literal(QuotaCode = QuotaCode, ServiceCode = ServiceCode)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRequestedServiceQuotaChangeHistoryByQuotaRequest]

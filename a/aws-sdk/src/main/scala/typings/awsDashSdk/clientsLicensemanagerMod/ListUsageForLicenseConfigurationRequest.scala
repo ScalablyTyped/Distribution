@@ -28,12 +28,12 @@ object ListUsageForLicenseConfigurationRequest {
   def apply(
     LicenseConfigurationArn: String,
     Filters: Filters = null,
-    MaxResults: js.UndefOr[BoxInteger] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListUsageForLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListUsageForLicenseConfigurationRequest]
   }

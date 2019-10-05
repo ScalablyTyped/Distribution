@@ -21,12 +21,12 @@ object ListAssignmentsForHITResponse {
   def apply(
     Assignments: AssignmentList = null,
     NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined
+    NumResults: Int | Double = null
   ): ListAssignmentsForHITResponse = {
     val __obj = js.Dynamic.literal()
     if (Assignments != null) __obj.updateDynamic("Assignments")(Assignments)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssignmentsForHITResponse]
   }
 }

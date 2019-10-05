@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTaskMod
 
-import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskLoggingInfo
-import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTarget
-import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTaskInvocationParameters
-import typings.atPulumiAws.typesOutputMod.ssmNs.MaintenanceWindowTaskTaskParameter
+import typings.atPulumiAws.typesOutputMod.ssm.MaintenanceWindowTaskLoggingInfo
+import typings.atPulumiAws.typesOutputMod.ssm.MaintenanceWindowTaskTarget
+import typings.atPulumiAws.typesOutputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters
+import typings.atPulumiAws.typesOutputMod.ssm.MaintenanceWindowTaskTaskParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -119,7 +119,7 @@ object Backup {
     KeyPair: String = null,
     PreferredBackupWindow: TimeWindowDefinition = null,
     PreferredMaintenanceWindow: TimeWindowDefinition = null,
-    S3DataSize: js.UndefOr[Integer] = js.undefined,
+    S3DataSize: Int | Double = null,
     S3DataUrl: String = null,
     S3LogUrl: String = null,
     SecurityGroupIds: Strings = null,
@@ -145,7 +145,7 @@ object Backup {
     if (KeyPair != null) __obj.updateDynamic("KeyPair")(KeyPair)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
-    if (!js.isUndefined(S3DataSize)) __obj.updateDynamic("S3DataSize")(S3DataSize)
+    if (S3DataSize != null) __obj.updateDynamic("S3DataSize")(S3DataSize.asInstanceOf[js.Any])
     if (S3DataUrl != null) __obj.updateDynamic("S3DataUrl")(S3DataUrl)
     if (S3LogUrl != null) __obj.updateDynamic("S3LogUrl")(S3LogUrl)
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)

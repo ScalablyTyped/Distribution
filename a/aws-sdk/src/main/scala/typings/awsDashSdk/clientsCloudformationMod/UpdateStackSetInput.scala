@@ -79,7 +79,7 @@ object UpdateStackSetInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
+    UsePreviousTemplate: js.UndefOr[Boolean] = js.undefined
   ): UpdateStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName)
     if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts)

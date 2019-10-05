@@ -5,6 +5,8 @@ import typings.mongodb.mongodbMod.MongoError
 import typings.mongoose.Anon_AutoIndexId
 import typings.mongoose.Anon_Expires
 import typings.mongoose.Anon_J
+import typings.mongoose.Anon_Length
+import typings.mongoose.mongooseMod.Schema.Types.Array
 import typings.mongoose.mongooseStrings._id
 import typings.mongoose.mongooseStrings.`throw`
 import typings.mongoose.mongooseStrings.aggregate
@@ -431,5 +433,214 @@ trait Schema[T] extends EventEmitter {
   def virtual(name: String, options: js.Any): VirtualType = js.native
   /** Returns the virtual type with the given name. */
   def virtualpath(name: String): VirtualType = js.native
+}
+
+@JSImport("mongoose", "Schema")
+@js.native
+object Schema extends js.Object {
+  @js.native
+  object Types extends js.Object {
+    /*
+      * section schema/array.js
+      * http://mongoosejs.com/docs/api.html#schema-array-js
+      */
+    @js.native
+    trait Array extends SchemaType {
+      /**
+        * Check if the given value satisfies a required validator. The given value
+        * must be not null nor undefined, and have a non-zero length.
+        */
+      def checkRequired[T /* <: Anon_Length */](value: T): scala.Boolean = js.native
+    }
+    
+    /*
+      * section schema/boolean.js
+      * http://mongoosejs.com/docs/api.html#schema-boolean-js
+      */
+    @js.native
+    trait Boolean extends SchemaType {
+      /**
+        * Check if the given value satisfies a required validator. For a
+        * boolean to satisfy a required validator, it must be strictly
+        * equal to true or to false.
+        */
+      def checkRequired(value: js.Any): scala.Boolean = js.native
+    }
+    
+    /*
+      * section schema/buffer.js
+      * http://mongoosejs.com/docs/api.html#schema-buffer-js
+      */
+    @js.native
+    trait Buffer extends SchemaType {
+      /**
+        * Check if the given value satisfies a required validator. To satisfy a
+        * required validator, a buffer must not be null or undefined and have
+        * non-zero length.
+        */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+    }
+    
+    /*
+      * section schema/date.js
+      * http://mongoosejs.com/docs/api.html#schema-date-js
+      */
+    @js.native
+    trait Date extends SchemaType {
+      /**
+        * Check if the given value satisfies a required validator. To satisfy
+        * a required validator, the given value must be an instance of Date.
+        */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+      def expires(when: java.lang.String): this.type = js.native
+      /** Declares a TTL index (rounded to the nearest second) for Date types only. */
+      def expires(when: Double): this.type = js.native
+      /**
+        * Sets a maximum date validator.
+        * @param maximum date
+        * @param message optional custom error message
+        */
+      def max(maximum: NativeDate): this.type = js.native
+      def max(maximum: NativeDate, message: java.lang.String): this.type = js.native
+      /**
+        * Sets a minimum date validator.
+        * @param value minimum date
+        * @param message optional custom error message
+        */
+      def min(value: NativeDate): this.type = js.native
+      def min(value: NativeDate, message: java.lang.String): this.type = js.native
+    }
+    
+    /*
+      * section schema/decimal128.js
+      * http://mongoosejs.com/docs/api.html#schema-decimal128-js
+      */
+    @js.native
+    trait Decimal128 extends SchemaType {
+      /** Check if the given value satisfies a required validator. */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+    }
+    
+    /*
+      * section schema/documentarray.js
+      * http://mongoosejs.com/docs/api.html#schema-documentarray-js
+      */
+    @js.native
+    trait DocumentArray extends Array {
+      /**
+        * Adds a discriminator type.
+        * @param name discriminator model name
+        * @param schema discriminator model schema
+        */
+      def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[U, js.Object] = js.native
+      /**
+        * Adds a discriminator type.
+        * @param name discriminator model name
+        * @param schema discriminator model schema
+        */
+      @JSName("discriminator")
+      def discriminator_U_DocumentM_ModelUObject_M[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_]): M = js.native
+    }
+    
+    /*
+      * section schema/number.js
+      * http://mongoosejs.com/docs/api.html#schema-number-js
+      */
+    @js.native
+    trait Number extends SchemaType {
+      /** Check if the given value satisfies a required validator. */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+      /**
+        * Sets a maximum number validator.
+        * @param maximum number
+        * @param message optional custom error message
+        */
+      def max(maximum: Double): this.type = js.native
+      def max(maximum: Double, message: java.lang.String): this.type = js.native
+      /**
+        * Sets a minimum number validator.
+        * @param value minimum number
+        * @param message optional custom error message
+        */
+      def min(value: Double): this.type = js.native
+      def min(value: Double, message: java.lang.String): this.type = js.native
+    }
+    
+    /*
+      * section schema/objectid.js
+      * http://mongoosejs.com/docs/api.html#schema-objectid-js
+      */
+    @js.native
+    trait ObjectId extends SchemaType {
+      /**
+        * Adds an auto-generated ObjectId default if turnOn is true.
+        * @param turnOn auto generated ObjectId defaults
+        */
+      def auto(turnOn: scala.Boolean): this.type = js.native
+      /** Check if the given value satisfies a required validator. */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+    }
+    
+    /*
+      * section schema/string.js
+      * http://mongoosejs.com/docs/api.html#schema-string-js
+      */
+    @js.native
+    trait String extends SchemaType {
+      /** Check if the given value satisfies a required validator. */
+      def checkRequired(value: js.Any, doc: MongooseDocument): scala.Boolean = js.native
+      /**
+        * Adds an enum validator
+        * @param args enumeration values
+        */
+      def enum(args: java.lang.String): this.type = js.native
+      def enum(args: js.Any): this.type = js.native
+      def enum(args: Array): this.type = js.native
+      /** Adds a lowercase setter. */
+      def lowercase(): this.type = js.native
+      /**
+        * Sets a regexp validator. Any value that does not pass regExp.test(val) will fail validation.
+        * @param regExp regular expression to test against
+        * @param message optional custom error message
+        */
+      def `match`(regExp: RegExp): this.type = js.native
+      def `match`(regExp: RegExp, message: java.lang.String): this.type = js.native
+      /**
+        * Sets a maximum length validator.
+        * @param value maximum string length
+        * @param message optional custom error message
+        */
+      def maxlength(value: Double): this.type = js.native
+      def maxlength(value: Double, message: java.lang.String): this.type = js.native
+      /**
+        * Sets a minimum length validator.
+        * @param value minimum string length
+        * @param message optional custom error message
+        */
+      def minlength(value: Double): this.type = js.native
+      def minlength(value: Double, message: java.lang.String): this.type = js.native
+      /** Adds a trim setter. The string value will be trimmed when set. */
+      def trim(): this.type = js.native
+      /** Adds an uppercase setter. */
+      def uppercase(): this.type = js.native
+    }
+    
+    /*
+      * section schema/embedded.js
+      * http://mongoosejs.com/docs/api.html#schema-embedded-js
+      */
+    type Embedded = SchemaType
+    /**
+      * section schema/map.js
+      * https://mongoosejs.com/docs/schematypes.html#maps
+      */
+    type Map = SchemaType
+    /*
+      * section schema/mixed.js
+      * http://mongoosejs.com/docs/api.html#schema-mixed-js
+      */
+    type Mixed = SchemaType
+  }
+  
 }
 

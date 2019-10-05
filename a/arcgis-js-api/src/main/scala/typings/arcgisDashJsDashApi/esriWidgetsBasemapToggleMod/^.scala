@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBasemapToggleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapToggleConstructor
+import typings.arcgisDashJsDashApi.__esri.BasemapToggleConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

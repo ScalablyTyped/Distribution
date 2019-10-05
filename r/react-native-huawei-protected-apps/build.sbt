@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-huawei-protected-apps"
-version := "0.0-dt-20190717Z-b2dca2"
-scalaVersion := "2.12.9"
+version := "0.0-dt-20190717Z-23ff95"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

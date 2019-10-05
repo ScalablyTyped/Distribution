@@ -27,12 +27,12 @@ object DescribeStackResourceDriftsInput {
   @scala.inline
   def apply(
     StackName: StackNameOrId,
-    MaxResults: js.UndefOr[BoxedMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     StackResourceDriftStatusFilters: StackResourceDriftStatusFilters = null
   ): DescribeStackResourceDriftsInput = {
     val __obj = js.Dynamic.literal(StackName = StackName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StackResourceDriftStatusFilters != null) __obj.updateDynamic("StackResourceDriftStatusFilters")(StackResourceDriftStatusFilters)
     __obj.asInstanceOf[DescribeStackResourceDriftsInput]

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3InventoryMod
 
-import typings.atPulumiAws.typesInputMod.s3Ns.InventoryDestination
-import typings.atPulumiAws.typesInputMod.s3Ns.InventoryFilter
-import typings.atPulumiAws.typesInputMod.s3Ns.InventorySchedule
+import typings.atPulumiAws.typesInputMod.s3.InventoryDestination
+import typings.atPulumiAws.typesInputMod.s3.InventoryFilter
+import typings.atPulumiAws.typesInputMod.s3.InventorySchedule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

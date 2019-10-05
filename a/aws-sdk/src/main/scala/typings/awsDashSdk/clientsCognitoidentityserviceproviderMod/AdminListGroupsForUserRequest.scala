@@ -28,11 +28,11 @@ object AdminListGroupsForUserRequest {
   def apply(
     UserPoolId: UserPoolIdType,
     Username: UsernameType,
-    Limit: js.UndefOr[QueryLimitType] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: PaginationKey = null
   ): AdminListGroupsForUserRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId, Username = Username)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[AdminListGroupsForUserRequest]
   }

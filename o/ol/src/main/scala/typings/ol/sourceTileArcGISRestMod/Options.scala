@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +35,7 @@ object Options {
     projection: ProjectionLike = null,
     reprojectionErrorThreshold: Int | Double = null,
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     transition: Int | Double = null,
     url: String = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
@@ -47,7 +48,7 @@ object Options {
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)

@@ -23,13 +23,13 @@ object EvaluationResult {
   @scala.inline
   def apply(
     ComplianceStatus: PolicyComplianceStatusType = null,
-    EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined,
-    ViolatorCount: js.UndefOr[ResourceCount] = js.undefined
+    EvaluationLimitExceeded: js.UndefOr[scala.Boolean] = js.undefined,
+    ViolatorCount: Int | Double = null
   ): EvaluationResult = {
     val __obj = js.Dynamic.literal()
     if (ComplianceStatus != null) __obj.updateDynamic("ComplianceStatus")(ComplianceStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(EvaluationLimitExceeded)) __obj.updateDynamic("EvaluationLimitExceeded")(EvaluationLimitExceeded)
-    if (!js.isUndefined(ViolatorCount)) __obj.updateDynamic("ViolatorCount")(ViolatorCount)
+    if (ViolatorCount != null) __obj.updateDynamic("ViolatorCount")(ViolatorCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
 }

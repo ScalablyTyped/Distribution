@@ -81,8 +81,8 @@ object CreateStackInput {
     StackName: StackName,
     Capabilities: Capabilities = null,
     ClientRequestToken: ClientRequestToken = null,
-    DisableRollback: js.UndefOr[DisableRollback] = js.undefined,
-    EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined,
+    DisableRollback: js.UndefOr[Boolean] = js.undefined,
+    EnableTerminationProtection: js.UndefOr[Boolean] = js.undefined,
     NotificationARNs: NotificationARNs = null,
     OnFailure: OnFailure = null,
     Parameters: Parameters = null,
@@ -94,7 +94,7 @@ object CreateStackInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
+    TimeoutInMinutes: Int | Double = null
   ): CreateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName)
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities)
@@ -112,7 +112,7 @@ object CreateStackInput {
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody)
     if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL)
-    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes)
+    if (TimeoutInMinutes != null) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStackInput]
   }
 }

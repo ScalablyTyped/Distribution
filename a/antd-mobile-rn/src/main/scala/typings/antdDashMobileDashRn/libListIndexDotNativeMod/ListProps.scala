@@ -3,7 +3,7 @@ package typings.antdDashMobileDashRn.libListIndexDotNativeMod
 import typings.antdDashMobileDashRn.Anon_ArrowArrowV
 import typings.antdDashMobileDashRn.antdDashMobileDashRnNumbers.`false`
 import typings.antdDashMobileDashRn.libListPropsTypeMod.ListPropsType
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactType
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle

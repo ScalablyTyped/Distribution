@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersCSVLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CSVLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.CSVLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

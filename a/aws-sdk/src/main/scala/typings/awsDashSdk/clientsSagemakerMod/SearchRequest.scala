@@ -35,14 +35,14 @@ object SearchRequest {
   @scala.inline
   def apply(
     Resource: ResourceType,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     SearchExpression: SearchExpression = null,
     SortBy: ResourcePropertyName = null,
     SortOrder: SearchSortOrder = null
   ): SearchRequest = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SearchExpression != null) __obj.updateDynamic("SearchExpression")(SearchExpression)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy)

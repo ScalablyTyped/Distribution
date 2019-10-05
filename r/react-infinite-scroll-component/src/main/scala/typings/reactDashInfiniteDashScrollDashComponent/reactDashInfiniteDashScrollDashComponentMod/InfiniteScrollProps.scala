@@ -94,7 +94,6 @@ object InfiniteScrollProps {
   def apply(
     dataLength: Double,
     hasMore: Boolean,
-    loader: ReactNode,
     next: () => Unit,
     children: ReactNode = null,
     className: String = null,
@@ -102,6 +101,7 @@ object InfiniteScrollProps {
     hasChildren: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     initialScrollY: Int | Double = null,
+    loader: ReactNode = null,
     onScroll: () => Unit = null,
     pullDownToRefresh: js.UndefOr[Boolean] = js.undefined,
     pullDownToRefreshContent: ReactNode = null,
@@ -112,13 +112,14 @@ object InfiniteScrollProps {
     scrollableTarget: ReactNode | String = null,
     style: js.Any = null
   ): InfiniteScrollProps = {
-    val __obj = js.Dynamic.literal(dataLength = dataLength, hasMore = hasMore, loader = loader.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
+    val __obj = js.Dynamic.literal(dataLength = dataLength, hasMore = hasMore, next = js.Any.fromFunction0(next))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.asInstanceOf[js.Any])
     if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (initialScrollY != null) __obj.updateDynamic("initialScrollY")(initialScrollY.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction0(onScroll))
     if (!js.isUndefined(pullDownToRefresh)) __obj.updateDynamic("pullDownToRefresh")(pullDownToRefresh)
     if (pullDownToRefreshContent != null) __obj.updateDynamic("pullDownToRefreshContent")(pullDownToRefreshContent.asInstanceOf[js.Any])

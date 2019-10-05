@@ -47,14 +47,14 @@ object GetResourceMetricsRequest {
     MetricQueries: MetricQueryList,
     ServiceType: ServiceType,
     StartTime: ISOTimestamp,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
-    PeriodInSeconds: js.UndefOr[Integer] = js.undefined
+    PeriodInSeconds: Int | scala.Double = null
   ): GetResourceMetricsRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime, Identifier = Identifier, MetricQueries = MetricQueries, ServiceType = ServiceType.asInstanceOf[js.Any], StartTime = StartTime)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(PeriodInSeconds)) __obj.updateDynamic("PeriodInSeconds")(PeriodInSeconds)
+    if (PeriodInSeconds != null) __obj.updateDynamic("PeriodInSeconds")(PeriodInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceMetricsRequest]
   }
 }

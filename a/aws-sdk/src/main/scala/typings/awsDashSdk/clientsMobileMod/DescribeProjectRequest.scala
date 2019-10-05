@@ -17,7 +17,7 @@ trait DescribeProjectRequest extends js.Object {
 
 object DescribeProjectRequest {
   @scala.inline
-  def apply(projectId: ProjectId, syncFromResources: js.UndefOr[Boolean] = js.undefined): DescribeProjectRequest = {
+  def apply(projectId: ProjectId, syncFromResources: js.UndefOr[scala.Boolean] = js.undefined): DescribeProjectRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId)
     if (!js.isUndefined(syncFromResources)) __obj.updateDynamic("syncFromResources")(syncFromResources)
     __obj.asInstanceOf[DescribeProjectRequest]

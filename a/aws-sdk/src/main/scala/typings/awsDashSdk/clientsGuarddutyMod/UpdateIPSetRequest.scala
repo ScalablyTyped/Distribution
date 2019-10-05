@@ -32,7 +32,7 @@ object UpdateIPSetRequest {
   def apply(
     DetectorId: DetectorId,
     IpSetId: String,
-    Activate: js.UndefOr[Boolean] = js.undefined,
+    Activate: js.UndefOr[scala.Boolean] = js.undefined,
     Location: Location = null,
     Name: Name = null
   ): UpdateIPSetRequest = {

@@ -1,5 +1,6 @@
 package typings.ecore.ecoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,4 +45,8 @@ trait EList extends EObject {
   def rest(position: Double): js.Array[EObject] = js.native
   def size(): Double = js.native
 }
+
+@JSImport("ecore", "EList")
+@js.native
+object EList extends TopLevel[EList]
 

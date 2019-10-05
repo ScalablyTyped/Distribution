@@ -32,14 +32,14 @@ object ListContainerInstancesRequest {
   def apply(
     cluster: String = null,
     filter: String = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
+    maxResults: Int | scala.Double = null,
     nextToken: String = null,
     status: ContainerInstanceStatus = null
   ): ListContainerInstancesRequest = {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContainerInstancesRequest]

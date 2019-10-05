@@ -368,9 +368,5 @@ trait SpeechRecognition extends EventTarget {
 
 @JSGlobal("SpeechRecognition")
 @js.native
-class SpeechRecognitionCls () extends SpeechRecognition
-
-@JSGlobal("SpeechRecognition")
-@js.native
 object SpeechRecognition extends Instantiable0[SpeechRecognition]
 

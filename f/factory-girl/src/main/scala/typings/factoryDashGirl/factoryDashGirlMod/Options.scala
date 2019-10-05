@@ -11,10 +11,13 @@ trait Options[T] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[T](afterBuild: Hook[T] = null, afterCreate: Hook[T] = null): Options[T] = {
+  def apply[T](
+    afterBuild: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit = null,
+    afterCreate: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit = null
+  ): Options[T] = {
     val __obj = js.Dynamic.literal()
-    if (afterBuild != null) __obj.updateDynamic("afterBuild")(afterBuild)
-    if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate)
+    if (afterBuild != null) __obj.updateDynamic("afterBuild")(js.Any.fromFunction3(afterBuild))
+    if (afterCreate != null) __obj.updateDynamic("afterCreate")(js.Any.fromFunction3(afterCreate))
     __obj.asInstanceOf[Options[T]]
   }
 }

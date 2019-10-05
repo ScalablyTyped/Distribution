@@ -1,13 +1,13 @@
 package typings.jsrender
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsrender.JsViewsNs.Hash
-import typings.jsrender.JsViewsNs.Template
-import typings.jsrender.JsViewsNs.TemplateOptions
-import typings.jsrender.JsViewsNs.TemplateRender
-import typings.jsrender.JsViewsNs.TemplateSetter
-import typings.jsrender.JsViewsNs.Templates
-import typings.jsrender.JsViewsNs.Views
+import typings.jsrender.JsViews.Hash
+import typings.jsrender.JsViews.Template
+import typings.jsrender.JsViews.TemplateOptions
+import typings.jsrender.JsViews.TemplateRender
+import typings.jsrender.JsViews.TemplateSetter
+import typings.jsrender.JsViews.Templates
+import typings.jsrender.JsViews.Views
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

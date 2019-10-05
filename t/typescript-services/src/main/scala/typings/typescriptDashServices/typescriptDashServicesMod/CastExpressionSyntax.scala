@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
-import typings.typescriptDashServices.TypeScriptNs.ITypeSyntax
-import typings.typescriptDashServices.TypeScriptNs.IUnaryExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ITypeSyntax
+import typings.typescriptDashServices.TypeScript.IUnaryExpressionSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CastExpressionSyntax")
 @js.native
 class CastExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.CastExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.CastExpressionSyntax {
   def this(
     lessThanToken: ISyntaxToken,
     `type`: ITypeSyntax,
@@ -24,6 +24,6 @@ class CastExpressionSyntax protected ()
 @JSImport("typescript-services", "CastExpressionSyntax")
 @js.native
 object CastExpressionSyntax extends js.Object {
-  def create1(`type`: ITypeSyntax, expression: IUnaryExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.CastExpressionSyntax = js.native
+  def create1(`type`: ITypeSyntax, expression: IUnaryExpressionSyntax): typings.typescriptDashServices.TypeScript.CastExpressionSyntax = js.native
 }
 

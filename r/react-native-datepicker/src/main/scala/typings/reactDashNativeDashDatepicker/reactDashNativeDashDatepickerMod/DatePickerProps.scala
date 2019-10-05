@@ -2,7 +2,7 @@ package typings.reactDashNativeDashDatepicker.reactDashNativeDashDatepickerMod
 
 import typings.moment.momentMod.Moment
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNativeDashDatepicker.reactDashNativeDashDatepickerStrings.calendar

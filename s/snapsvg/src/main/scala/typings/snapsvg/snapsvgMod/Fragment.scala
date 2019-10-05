@@ -13,3 +13,9 @@ trait Fragment extends js.Object {
   def selectAll(query: String): Set = js.native
 }
 
+@JSImport("snapsvg", "fragment")
+@js.native
+object fragment extends js.Object {
+  def apply(varargs: js.Any): Fragment = js.native
+}
+

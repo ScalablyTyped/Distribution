@@ -1,7 +1,7 @@
 package typings.webpack
 
 import typings.std.Record
-import typings.webpack.webpackMod.StatsNs.FnModules
+import typings.webpack.webpackMod.Stats.FnModules
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

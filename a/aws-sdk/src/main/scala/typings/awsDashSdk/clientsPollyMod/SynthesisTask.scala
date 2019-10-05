@@ -76,7 +76,7 @@ object SynthesisTask {
     LexiconNames: LexiconNameList = null,
     OutputFormat: OutputFormat = null,
     OutputUri: OutputUri = null,
-    RequestCharacters: js.UndefOr[RequestCharacters] = js.undefined,
+    RequestCharacters: Int | Double = null,
     SampleRate: SampleRate = null,
     SnsTopicArn: SnsTopicArn = null,
     SpeechMarkTypes: SpeechMarkTypeList = null,
@@ -93,7 +93,7 @@ object SynthesisTask {
     if (LexiconNames != null) __obj.updateDynamic("LexiconNames")(LexiconNames)
     if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat.asInstanceOf[js.Any])
     if (OutputUri != null) __obj.updateDynamic("OutputUri")(OutputUri)
-    if (!js.isUndefined(RequestCharacters)) __obj.updateDynamic("RequestCharacters")(RequestCharacters)
+    if (RequestCharacters != null) __obj.updateDynamic("RequestCharacters")(RequestCharacters.asInstanceOf[js.Any])
     if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate)
     if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn)
     if (SpeechMarkTypes != null) __obj.updateDynamic("SpeechMarkTypes")(SpeechMarkTypes)

@@ -69,7 +69,7 @@ object Interconnect {
     interconnectId: InterconnectId = null,
     interconnectName: InterconnectName = null,
     interconnectState: InterconnectState = null,
-    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
+    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
     lagId: LagId = null,
     loaIssueTime: LoaIssueTime = null,
     location: LocationCode = null,

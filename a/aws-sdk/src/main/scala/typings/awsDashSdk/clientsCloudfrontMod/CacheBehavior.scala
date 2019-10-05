@@ -67,19 +67,19 @@ object CacheBehavior {
     ViewerProtocolPolicy: ViewerProtocolPolicy,
     AllowedMethods: AllowedMethods = null,
     Compress: js.UndefOr[Boolean] = js.undefined,
-    DefaultTTL: js.UndefOr[long] = js.undefined,
+    DefaultTTL: Int | Double = null,
     FieldLevelEncryptionId: String = null,
     LambdaFunctionAssociations: LambdaFunctionAssociations = null,
-    MaxTTL: js.UndefOr[long] = js.undefined,
+    MaxTTL: Int | Double = null,
     SmoothStreaming: js.UndefOr[Boolean] = js.undefined
   ): CacheBehavior = {
     val __obj = js.Dynamic.literal(ForwardedValues = ForwardedValues, MinTTL = MinTTL, PathPattern = PathPattern, TargetOriginId = TargetOriginId, TrustedSigners = TrustedSigners, ViewerProtocolPolicy = ViewerProtocolPolicy.asInstanceOf[js.Any])
     if (AllowedMethods != null) __obj.updateDynamic("AllowedMethods")(AllowedMethods)
     if (!js.isUndefined(Compress)) __obj.updateDynamic("Compress")(Compress)
-    if (!js.isUndefined(DefaultTTL)) __obj.updateDynamic("DefaultTTL")(DefaultTTL)
+    if (DefaultTTL != null) __obj.updateDynamic("DefaultTTL")(DefaultTTL.asInstanceOf[js.Any])
     if (FieldLevelEncryptionId != null) __obj.updateDynamic("FieldLevelEncryptionId")(FieldLevelEncryptionId)
     if (LambdaFunctionAssociations != null) __obj.updateDynamic("LambdaFunctionAssociations")(LambdaFunctionAssociations)
-    if (!js.isUndefined(MaxTTL)) __obj.updateDynamic("MaxTTL")(MaxTTL)
+    if (MaxTTL != null) __obj.updateDynamic("MaxTTL")(MaxTTL.asInstanceOf[js.Any])
     if (!js.isUndefined(SmoothStreaming)) __obj.updateDynamic("SmoothStreaming")(SmoothStreaming)
     __obj.asInstanceOf[CacheBehavior]
   }

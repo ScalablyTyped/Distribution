@@ -1,6 +1,6 @@
 package typings.materialDashUi.internalSlideInMod
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.direction
+import typings.materialDashUi.__MaterialUI.propTypes.direction
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait SlideInProps extends Props[SlideIn] {
   var childStyle: js.UndefOr[CSSProperties] = js.undefined
-  var direction: js.UndefOr[typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.direction] = js.undefined
+  var direction: js.UndefOr[typings.materialDashUi.__MaterialUI.propTypes.direction] = js.undefined
   var enterDelay: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }

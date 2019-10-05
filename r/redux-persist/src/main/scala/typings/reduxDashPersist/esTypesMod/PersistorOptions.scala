@@ -1,6 +1,7 @@
 package typings.reduxDashPersist.esTypesMod
 
 import typings.redux.reduxMod.StoreEnhancer
+import typings.redux.reduxMod.StoreEnhancerStoreCreator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +12,11 @@ trait PersistorOptions extends js.Object {
 
 object PersistorOptions {
   @scala.inline
-  def apply(enhancer: StoreEnhancer[_, js.Object] = null): PersistorOptions = {
+  def apply(
+    enhancer: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[_, js.Object] = null
+  ): PersistorOptions = {
     val __obj = js.Dynamic.literal()
-    if (enhancer != null) __obj.updateDynamic("enhancer")(enhancer)
+    if (enhancer != null) __obj.updateDynamic("enhancer")(js.Any.fromFunction1(enhancer))
     __obj.asInstanceOf[PersistorOptions]
   }
 }

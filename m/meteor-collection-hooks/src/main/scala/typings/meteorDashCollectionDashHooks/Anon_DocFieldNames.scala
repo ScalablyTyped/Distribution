@@ -1,8 +1,8 @@
 package typings.meteorDashCollectionDashHooks
 
-import typings.meteorDashCollectionDashHooks.meteorMongoMod.CollectionHooksNs.ModifierOptions
-import typings.meteorDashTypings.MongoNs.Modifier
-import typings.meteorDashTypings.MongoNs.Selector
+import typings.meteorDashCollectionDashHooks.meteorMongoMod.CollectionHooks.ModifierOptions
+import typings.meteorDashTypings.Mongo.Modifier
+import typings.meteorDashTypings.Mongo.Selector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.crossfilter
 
-import typings.crossfilter.CrossFilterNs.Bisector
+import typings.crossfilter.CrossFilter.Bisector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

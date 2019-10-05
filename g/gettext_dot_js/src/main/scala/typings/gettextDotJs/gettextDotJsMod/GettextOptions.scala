@@ -17,13 +17,13 @@ object GettextOptions {
     ctxt_delimiter: String = null,
     domain: String = null,
     locale: String = null,
-    plural_func: PluralForm = null
+    plural_func: /* n */ Double => Double = null
   ): GettextOptions = {
     val __obj = js.Dynamic.literal()
     if (ctxt_delimiter != null) __obj.updateDynamic("ctxt_delimiter")(ctxt_delimiter)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (plural_func != null) __obj.updateDynamic("plural_func")(plural_func)
+    if (plural_func != null) __obj.updateDynamic("plural_func")(js.Any.fromFunction1(plural_func))
     __obj.asInstanceOf[GettextOptions]
   }
 }

@@ -1,8 +1,8 @@
 package typings.jqueryDashEasyDashLoading
 
-import typings.jqueryDashEasyDashLoading.JQueryEasyLoadingNs.Command
-import typings.jqueryDashEasyDashLoading.JQueryEasyLoadingNs.LoadingObject
-import typings.jqueryDashEasyDashLoading.JQueryEasyLoadingNs.Options
+import typings.jqueryDashEasyDashLoading.JQueryEasyLoading.Command
+import typings.jqueryDashEasyDashLoading.JQueryEasyLoading.LoadingObject
+import typings.jqueryDashEasyDashLoading.JQueryEasyLoading.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -34,7 +34,7 @@ object MetricDataQuery {
     Expression: MetricExpression = null,
     Label: MetricLabel = null,
     MetricStat: MetricStat = null,
-    ReturnData: js.UndefOr[ReturnData] = js.undefined
+    ReturnData: js.UndefOr[Boolean] = js.undefined
   ): MetricDataQuery = {
     val __obj = js.Dynamic.literal(Id = Id)
     if (Expression != null) __obj.updateDynamic("Expression")(Expression)

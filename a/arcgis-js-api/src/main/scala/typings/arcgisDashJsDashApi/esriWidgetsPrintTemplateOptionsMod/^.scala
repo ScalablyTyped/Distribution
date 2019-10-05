@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsPrintTemplateOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TemplateOptionsConstructor
+import typings.arcgisDashJsDashApi.__esri.TemplateOptionsConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

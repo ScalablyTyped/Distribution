@@ -26,13 +26,13 @@ trait DescribeMatchmakingConfigurationsInput extends js.Object {
 object DescribeMatchmakingConfigurationsInput {
   @scala.inline
   def apply(
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
+    Limit: Int | scala.Double = null,
     Names: MatchmakingIdList = null,
     NextToken: NonZeroAndMaxString = null,
     RuleSetName: MatchmakingIdStringModel = null
   ): DescribeMatchmakingConfigurationsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (RuleSetName != null) __obj.updateDynamic("RuleSetName")(RuleSetName)

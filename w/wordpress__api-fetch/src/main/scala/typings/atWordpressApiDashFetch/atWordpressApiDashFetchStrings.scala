@@ -1,22 +1,22 @@
 package typings.atWordpressApiDashFetch
 
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.Context
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Block
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Category
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Comment
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Media
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Page
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Post
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.PostRevision
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Status
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Tag
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Taxonomy
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.Type
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.EmbedKeysNs.User
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.OpenOrClosed
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.PostFormat
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.PostStatus
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.TaxonomyKind
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.Context
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Block
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Category
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Comment
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Media
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Page
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Post
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.PostRevision
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Status
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Tag
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Taxonomy
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Type
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.User
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.OpenOrClosed
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.PostFormat
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.PostStatus
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.TaxonomyKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,7 +92,7 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait categories
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait category extends TaxonomyKind
@@ -105,21 +105,21 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait comment_status
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait content
     extends Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.PostRevision
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.PostRevision
   
   @js.native
   sealed trait count
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Category
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Category
   
   @js.native
   sealed trait date
@@ -132,20 +132,20 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait date_gmt
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.PostRevision
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Comment
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.PostRevision
   
   @js.native
   sealed trait description
     extends User
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Category
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Taxonomy
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Type
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Category
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Taxonomy
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Type
   
   @js.native
   sealed trait draft extends PostStatus
@@ -172,7 +172,7 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait format
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait future extends PostStatus
@@ -182,16 +182,16 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait guid
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.PostRevision
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.PostRevision
   
   @js.native
   sealed trait hierarchical
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Taxonomy
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Type
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Taxonomy
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Type
   
   @js.native
   sealed trait hold extends js.Object
@@ -237,35 +237,35 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait menu_order
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
   
   @js.native
   sealed trait meta
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Category
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.User
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Category
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Comment
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.User
   
   @js.native
   sealed trait mime_type extends Media
   
   @js.native
   sealed trait modified
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.PostRevision
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.PostRevision
   
   @js.native
   sealed trait modified_gmt
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.PostRevision
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.PostRevision
   
   @js.native
   sealed trait name
@@ -285,8 +285,8 @@ object atWordpressApiDashFetchStrings {
   @js.native
   sealed trait parent
     extends Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Category
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Category
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
        with PostRevision
   
   @js.native
@@ -294,14 +294,14 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait ping_status
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait post
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Comment
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
   
   @js.native
   sealed trait post_format extends TaxonomyKind
@@ -314,14 +314,14 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait public
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Status
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Status
   
   @js.native
   sealed trait publish extends PostStatus
   
   @js.native
   sealed trait queryable
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Status
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Status
   
   @js.native
   sealed trait quote extends PostFormat
@@ -356,24 +356,24 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait status
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Comment
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Comment
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
        with PostFormat
   
   @js.native
   sealed trait sticky
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait tags
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait taxonomies
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Type
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Type
   
   @js.native
   sealed trait taxonomy
@@ -382,10 +382,10 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait template
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Block
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Media
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Page
-       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Post
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Block
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Media
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Page
+       with typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Post
   
   @js.native
   sealed trait title
@@ -408,7 +408,7 @@ object atWordpressApiDashFetchStrings {
   
   @js.native
   sealed trait types
-    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.ViewKeysNs.Taxonomy
+    extends typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Taxonomy
   
   @js.native
   sealed trait url extends User

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Key")
 @js.native
 class Key ()
-  extends typings.paper.paperNs.Key
+  extends typings.paper.paper.Key
 
 /* static members */
 @JSImport("paper", "Key")

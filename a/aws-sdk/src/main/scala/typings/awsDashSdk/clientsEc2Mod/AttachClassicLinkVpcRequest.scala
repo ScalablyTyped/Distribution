@@ -29,7 +29,7 @@ object AttachClassicLinkVpcRequest {
     Groups: GroupIdStringList,
     InstanceId: String,
     VpcId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): AttachClassicLinkVpcRequest = {
     val __obj = js.Dynamic.literal(Groups = Groups, InstanceId = InstanceId, VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

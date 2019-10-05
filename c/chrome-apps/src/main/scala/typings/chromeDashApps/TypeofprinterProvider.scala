@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.printerProviderNs.PrintJob
-import typings.chromeDashApps.chromeNs.printerProviderNs.PrinterCapabilities
-import typings.chromeDashApps.chromeNs.printerProviderNs.PrinterInfo
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.printerProvider.PrintJob
+import typings.chromeDashApps.chrome.printerProvider.PrinterCapabilities
+import typings.chromeDashApps.chrome.printerProvider.PrinterInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

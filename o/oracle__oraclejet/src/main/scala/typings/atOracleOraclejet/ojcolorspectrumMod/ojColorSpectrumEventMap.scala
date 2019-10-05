@@ -9,8 +9,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.invalidShown
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojcolorMod.^
-import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateStart
+import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrum.ojAnimateEnd
+import typings.atOracleOraclejet.ojcolorspectrumMod.ojColorSpectrum.ojAnimateStart
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent

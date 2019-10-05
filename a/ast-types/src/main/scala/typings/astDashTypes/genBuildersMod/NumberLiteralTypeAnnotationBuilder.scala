@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocRaw
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.NumberLiteralTypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.NumberLiteralTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.reactDashReduxDashI18n.reactDashReduxDashI18nMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +15,8 @@ trait I18n extends js.Object {
   def t(code: String): String = js.native
   def t(code: String, options: js.Any): String = js.native
 }
+
+@JSImport("react-redux-i18n", "I18n")
+@js.native
+object I18n extends TopLevel[I18n]
 

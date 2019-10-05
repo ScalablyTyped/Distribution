@@ -22,8 +22,8 @@ trait Transition extends js.Object {
 
 object Transition {
   @scala.inline
-  def apply(_isMBTransition: Boolean, check: CheckFunction[_], event: String): Transition = {
-    val __obj = js.Dynamic.literal(_isMBTransition = _isMBTransition, check = check, event = event)
+  def apply(_isMBTransition: Boolean, check: _ => Boolean, event: String): Transition = {
+    val __obj = js.Dynamic.literal(_isMBTransition = _isMBTransition, check = js.Any.fromFunction1(check), event = event)
   
     __obj.asInstanceOf[Transition]
   }

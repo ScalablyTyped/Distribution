@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "discontinuous-range"
-version := "1.0-dt-20190212Z-495e24"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20190212Z-a31501"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

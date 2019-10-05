@@ -11,11 +11,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
-import typings.atOracleOraclejet.ojinputtextMod.inputBaseNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojinputtextMod.inputBaseNs.ojAnimateStart
+import typings.atOracleOraclejet.ojinputtextMod.inputBase.ojAnimateEnd
+import typings.atOracleOraclejet.ojinputtextMod.inputBase.ojAnimateStart
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent

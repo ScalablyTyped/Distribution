@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLoc
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXIdentifier
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

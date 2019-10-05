@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -334,9 +335,9 @@ object IgPivotGrid {
     compactRowHeaders: js.UndefOr[Boolean] = js.undefined,
     customMoveValidation: js.Function = null,
     dataSource: js.Any = null,
-    dataSourceInitialized: DataSourceInitializedEvent = null,
+    dataSourceInitialized: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit = null,
     dataSourceOptions: IgPivotGridDataSourceOptions = null,
-    dataSourceUpdated: DataSourceUpdatedEvent = null,
+    dataSourceUpdated: (/* event */ Event, /* ui */ DataSourceUpdatedEventUIParam) => Unit = null,
     defaultLevelSortBehavior: String = null,
     defaultRowHeaderWidth: Int | Double = null,
     deferUpdate: js.UndefOr[Boolean] = js.undefined,
@@ -344,22 +345,22 @@ object IgPivotGrid {
     disableFiltersDropArea: js.UndefOr[Boolean] = js.undefined,
     disableMeasuresDropArea: js.UndefOr[Boolean] = js.undefined,
     disableRowsDropArea: js.UndefOr[Boolean] = js.undefined,
-    drag: DragEvent = null,
+    drag: (/* event */ Event, /* ui */ DragEventUIParam) => Unit = null,
     dragAndDropSettings: IgPivotGridDragAndDropSettings = null,
-    dragStart: DragStartEvent = null,
-    dragStop: DragStopEvent = null,
+    dragStart: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit = null,
+    dragStop: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit = null,
     dropDownParent: js.Any = null,
-    filterDropDownClosed: FilterDropDownClosedEvent = null,
-    filterDropDownClosing: FilterDropDownClosingEvent = null,
-    filterDropDownOk: FilterDropDownOkEvent = null,
-    filterDropDownOpened: FilterDropDownOpenedEvent = null,
-    filterDropDownOpening: FilterDropDownOpeningEvent = null,
-    filterMembersLoaded: FilterMembersLoadedEvent = null,
+    filterDropDownClosed: (/* event */ Event, /* ui */ FilterDropDownClosedEventUIParam) => Unit = null,
+    filterDropDownClosing: (/* event */ Event, /* ui */ FilterDropDownClosingEventUIParam) => Unit = null,
+    filterDropDownOk: (/* event */ Event, /* ui */ FilterDropDownOkEventUIParam) => Unit = null,
+    filterDropDownOpened: (/* event */ Event, /* ui */ FilterDropDownOpenedEventUIParam) => Unit = null,
+    filterDropDownOpening: (/* event */ Event, /* ui */ FilterDropDownOpeningEventUIParam) => Unit = null,
+    filterMembersLoaded: (/* event */ Event, /* ui */ FilterMembersLoadedEventUIParam) => Unit = null,
     firstLevelSortDirection: js.Any = null,
     firstSortDirection: js.Any = null,
     gridOptions: IgPivotGridGridOptions = null,
-    headersSorted: HeadersSortedEvent = null,
-    headersSorting: HeadersSortingEvent = null,
+    headersSorted: (/* event */ Event, /* ui */ HeadersSortedEventUIParam) => Unit = null,
+    headersSorting: (/* event */ Event, /* ui */ HeadersSortingEventUIParam) => Unit = null,
     height: String | Double = null,
     hideColumnsDropArea: js.UndefOr[Boolean] = js.undefined,
     hideFiltersDropArea: js.UndefOr[Boolean] = js.undefined,
@@ -370,22 +371,22 @@ object IgPivotGrid {
     language: String = null,
     levelSortDirections: js.Array[IgPivotGridLevelSortDirection] = null,
     locale: js.Any = null,
-    metadataDropped: MetadataDroppedEvent = null,
-    metadataDropping: MetadataDroppingEvent = null,
-    metadataRemoved: MetadataRemovedEvent = null,
-    metadataRemoving: MetadataRemovingEvent = null,
-    pivotGridHeadersRendered: PivotGridHeadersRenderedEvent = null,
-    pivotGridRendered: PivotGridRenderedEvent = null,
+    metadataDropped: (/* event */ Event, /* ui */ MetadataDroppedEventUIParam) => Unit = null,
+    metadataDropping: (/* event */ Event, /* ui */ MetadataDroppingEventUIParam) => Unit = null,
+    metadataRemoved: (/* event */ Event, /* ui */ MetadataRemovedEventUIParam) => Unit = null,
+    metadataRemoving: (/* event */ Event, /* ui */ MetadataRemovingEventUIParam) => Unit = null,
+    pivotGridHeadersRendered: (/* event */ Event, /* ui */ PivotGridHeadersRenderedEventUIParam) => Unit = null,
+    pivotGridRendered: (/* event */ Event, /* ui */ PivotGridRenderedEventUIParam) => Unit = null,
     regional: String | js.Object = null,
     rowHeaderLinkGroupIndentation: Int | Double = null,
     rowHeadersLayout: js.Any = null,
-    sorted: SortedEvent = null,
-    sorting: SortingEvent = null,
+    sorted: (/* event */ Event, /* ui */ SortedEventUIParam) => Unit = null,
+    sorting: (/* event */ Event, /* ui */ SortingEventUIParam) => Unit = null,
     treeRowHeaderIndentation: Int | Double = null,
-    tupleMemberCollapsed: TupleMemberCollapsedEvent = null,
-    tupleMemberCollapsing: TupleMemberCollapsingEvent = null,
-    tupleMemberExpanded: TupleMemberExpandedEvent = null,
-    tupleMemberExpanding: TupleMemberExpandingEvent = null,
+    tupleMemberCollapsed: (/* event */ Event, /* ui */ TupleMemberCollapsedEventUIParam) => Unit = null,
+    tupleMemberCollapsing: (/* event */ Event, /* ui */ TupleMemberCollapsingEventUIParam) => Unit = null,
+    tupleMemberExpanded: (/* event */ Event, /* ui */ TupleMemberExpandedEventUIParam) => Unit = null,
+    tupleMemberExpanding: (/* event */ Event, /* ui */ TupleMemberExpandingEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgPivotGrid = {
     val __obj = js.Dynamic.literal()
@@ -399,9 +400,9 @@ object IgPivotGrid {
     if (!js.isUndefined(compactRowHeaders)) __obj.updateDynamic("compactRowHeaders")(compactRowHeaders)
     if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(dataSourceInitialized)
+    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(js.Any.fromFunction2(dataSourceInitialized))
     if (dataSourceOptions != null) __obj.updateDynamic("dataSourceOptions")(dataSourceOptions)
-    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(dataSourceUpdated)
+    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(js.Any.fromFunction2(dataSourceUpdated))
     if (defaultLevelSortBehavior != null) __obj.updateDynamic("defaultLevelSortBehavior")(defaultLevelSortBehavior)
     if (defaultRowHeaderWidth != null) __obj.updateDynamic("defaultRowHeaderWidth")(defaultRowHeaderWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(deferUpdate)) __obj.updateDynamic("deferUpdate")(deferUpdate)
@@ -409,22 +410,22 @@ object IgPivotGrid {
     if (!js.isUndefined(disableFiltersDropArea)) __obj.updateDynamic("disableFiltersDropArea")(disableFiltersDropArea)
     if (!js.isUndefined(disableMeasuresDropArea)) __obj.updateDynamic("disableMeasuresDropArea")(disableMeasuresDropArea)
     if (!js.isUndefined(disableRowsDropArea)) __obj.updateDynamic("disableRowsDropArea")(disableRowsDropArea)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
     if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
-    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(filterDropDownClosed)
-    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(filterDropDownClosing)
-    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(filterDropDownOk)
-    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(filterDropDownOpened)
-    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(filterDropDownOpening)
-    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(filterMembersLoaded)
+    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(js.Any.fromFunction2(filterDropDownClosed))
+    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(js.Any.fromFunction2(filterDropDownClosing))
+    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(js.Any.fromFunction2(filterDropDownOk))
+    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(js.Any.fromFunction2(filterDropDownOpened))
+    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(js.Any.fromFunction2(filterDropDownOpening))
+    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(js.Any.fromFunction2(filterMembersLoaded))
     if (firstLevelSortDirection != null) __obj.updateDynamic("firstLevelSortDirection")(firstLevelSortDirection)
     if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection)
     if (gridOptions != null) __obj.updateDynamic("gridOptions")(gridOptions)
-    if (headersSorted != null) __obj.updateDynamic("headersSorted")(headersSorted)
-    if (headersSorting != null) __obj.updateDynamic("headersSorting")(headersSorting)
+    if (headersSorted != null) __obj.updateDynamic("headersSorted")(js.Any.fromFunction2(headersSorted))
+    if (headersSorting != null) __obj.updateDynamic("headersSorting")(js.Any.fromFunction2(headersSorting))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hideColumnsDropArea)) __obj.updateDynamic("hideColumnsDropArea")(hideColumnsDropArea)
     if (!js.isUndefined(hideFiltersDropArea)) __obj.updateDynamic("hideFiltersDropArea")(hideFiltersDropArea)
@@ -435,22 +436,22 @@ object IgPivotGrid {
     if (language != null) __obj.updateDynamic("language")(language)
     if (levelSortDirections != null) __obj.updateDynamic("levelSortDirections")(levelSortDirections)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(metadataDropped)
-    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(metadataDropping)
-    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(metadataRemoved)
-    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(metadataRemoving)
-    if (pivotGridHeadersRendered != null) __obj.updateDynamic("pivotGridHeadersRendered")(pivotGridHeadersRendered)
-    if (pivotGridRendered != null) __obj.updateDynamic("pivotGridRendered")(pivotGridRendered)
+    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(js.Any.fromFunction2(metadataDropped))
+    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(js.Any.fromFunction2(metadataDropping))
+    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(js.Any.fromFunction2(metadataRemoved))
+    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(js.Any.fromFunction2(metadataRemoving))
+    if (pivotGridHeadersRendered != null) __obj.updateDynamic("pivotGridHeadersRendered")(js.Any.fromFunction2(pivotGridHeadersRendered))
+    if (pivotGridRendered != null) __obj.updateDynamic("pivotGridRendered")(js.Any.fromFunction2(pivotGridRendered))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (rowHeaderLinkGroupIndentation != null) __obj.updateDynamic("rowHeaderLinkGroupIndentation")(rowHeaderLinkGroupIndentation.asInstanceOf[js.Any])
     if (rowHeadersLayout != null) __obj.updateDynamic("rowHeadersLayout")(rowHeadersLayout)
-    if (sorted != null) __obj.updateDynamic("sorted")(sorted)
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (sorted != null) __obj.updateDynamic("sorted")(js.Any.fromFunction2(sorted))
+    if (sorting != null) __obj.updateDynamic("sorting")(js.Any.fromFunction2(sorting))
     if (treeRowHeaderIndentation != null) __obj.updateDynamic("treeRowHeaderIndentation")(treeRowHeaderIndentation.asInstanceOf[js.Any])
-    if (tupleMemberCollapsed != null) __obj.updateDynamic("tupleMemberCollapsed")(tupleMemberCollapsed)
-    if (tupleMemberCollapsing != null) __obj.updateDynamic("tupleMemberCollapsing")(tupleMemberCollapsing)
-    if (tupleMemberExpanded != null) __obj.updateDynamic("tupleMemberExpanded")(tupleMemberExpanded)
-    if (tupleMemberExpanding != null) __obj.updateDynamic("tupleMemberExpanding")(tupleMemberExpanding)
+    if (tupleMemberCollapsed != null) __obj.updateDynamic("tupleMemberCollapsed")(js.Any.fromFunction2(tupleMemberCollapsed))
+    if (tupleMemberCollapsing != null) __obj.updateDynamic("tupleMemberCollapsing")(js.Any.fromFunction2(tupleMemberCollapsing))
+    if (tupleMemberExpanded != null) __obj.updateDynamic("tupleMemberExpanded")(js.Any.fromFunction2(tupleMemberExpanded))
+    if (tupleMemberExpanding != null) __obj.updateDynamic("tupleMemberExpanding")(js.Any.fromFunction2(tupleMemberExpanding))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotGrid]
   }

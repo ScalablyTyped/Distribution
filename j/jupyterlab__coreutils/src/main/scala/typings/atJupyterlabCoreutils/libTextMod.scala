@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/text", JSImport.Namespace)
 @js.native
 object libTextMod extends js.Object {
-  @JSName("Text")
   @js.native
-  object TextNs extends js.Object {
+  object Text extends js.Object {
     /**
       * Given a 'snake-case', 'snake_case', or 'snake case' string,
       * will return the camel case version: 'snakeCase'.

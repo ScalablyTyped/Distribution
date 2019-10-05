@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
+import typings.firefoxDashWebextDashBrowser.browser._manifest._ThemeTypeAdditionalBackgroundsAlignment
+import typings.firefoxDashWebextDashBrowser.browser._manifest._ThemeTypeAdditionalBackgroundsTiling
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

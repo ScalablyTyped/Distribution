@@ -25,20 +25,17 @@ object formikComponents extends formikProps {
   def Form: ComponentType[
     Pick[
       FormHTMLAttributes[HTMLFormElement], 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
     ]
   ] = js.constructorOf[typings.formik.formikMod.Form].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.std.Pick[
     typings.react.reactMod.FormHTMLAttributes[typings.std.HTMLFormElement], 
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
   ]]]
   @scala.inline
   def Formik[Values]: ComponentType[FormikConfig[Values]] = js.constructorOf[typings.formik.formikMod.Formik[Values]].asInstanceOf[typings.react.reactMod.ComponentType[typings.formik.distTypesMod.FormikConfig[Values]]]
   @scala.inline
-  def FormikProvider: ComponentType[ProviderProps[FormikContext[js.Any]]] = typings.formik.formikMod.^.FormikProvider.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.ProviderProps[typings.formik.distTypesMod.FormikContext[js.Any]]]]
-  @scala.inline
-  def distConnectModFormikProvider: ComponentType[ProviderProps[FormikContext[js.Any]]] = typings.formik.distConnectMod.FormikProvider.asInstanceOf[typings.react.reactMod.ComponentType[
+  def FormikProvider: ComponentType[ProviderProps[FormikContext[js.Any]]] = typings.formik.formikMod.FormikProvider.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.ProviderProps[typings.formik.distTypesMod.FormikContext[js.Any]]]]
 }
 

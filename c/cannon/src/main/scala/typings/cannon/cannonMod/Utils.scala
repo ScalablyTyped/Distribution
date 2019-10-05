@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Utils")
 @js.native
 class Utils ()
-  extends typings.cannon.CANNONNs.Utils
+  extends typings.cannon.CANNON.Utils
 
 /* static members */
 @JSImport("cannon", "Utils")

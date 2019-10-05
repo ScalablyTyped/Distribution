@@ -26,3 +26,10 @@ class FeatureGroup[P] () extends LayerGroup[P] {
   def setStyle(style: PathOptions): this.type = js.native
 }
 
+@JSImport("leaflet", "featureGroup")
+@js.native
+object featureGroup extends js.Object {
+  def apply(): FeatureGroup[_] = js.native
+  def apply(layers: js.Array[Layer]): FeatureGroup[_] = js.native
+}
+

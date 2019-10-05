@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object knexMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.knex.knexMod.DeferredKeySelectionNs.Resolve
+  import typings.knex.knexMod.DeferredKeySelection.Resolve
   import typings.knex.knexNumbers.`false`
   import typings.knex.knexNumbers.`true`
   import typings.node.Buffer

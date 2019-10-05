@@ -37,6 +37,8 @@ object themeDashUiComponents extends themeDashUiProps {
   @scala.inline
   def InitializeColorMode: ComponentType[js.Object] = js.constructorOf[typings.themeDashUi.themeDashUiMod.InitializeColorMode].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
+  def Jsx[P /* <: js.Object */]: ComponentType[String] = typings.themeDashUi.themeDashUiMod.jsx.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[java.lang.String]]
+  @scala.inline
   def Layout: ComponentType[
     (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As
   ] = js.constructorOf[typings.themeDashUi.themeDashUiMod.Layout].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -52,8 +54,6 @@ object themeDashUiComponents extends themeDashUiProps {
   ] = js.constructorOf[typings.themeDashUi.themeDashUiMod.Styled].asInstanceOf[typings.react.reactMod.ComponentType[
   (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with typings.themeDashUi.themeDashUiMod.SxProps with typings.themeDashUi.Anon_As]]
   @scala.inline
-  def ThemeProvider[Theme]: ComponentType[typings.themeDashUi.themeDashUiMod.ThemeProviderProps[Theme]] = typings.themeDashUi.themeDashUiMod.^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[typings.react.reactMod.ComponentType[typings.themeDashUi.themeDashUiMod.ThemeProviderProps[Theme]]]
-  @scala.inline
-  def `jsx<apply>`[P /* <: js.Object */]: ComponentType[String] = typings.themeDashUi.themeDashUiMod.jsx.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[java.lang.String]]
+  def ThemeProvider[Theme]: ComponentType[typings.themeDashUi.themeDashUiMod.ThemeProviderProps[Theme]] = typings.themeDashUi.themeDashUiMod.ThemeProvider.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.themeDashUi.themeDashUiMod.ThemeProviderProps[Theme]]]
 }
 

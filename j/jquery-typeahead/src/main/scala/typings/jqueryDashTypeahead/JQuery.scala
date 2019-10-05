@@ -1,6 +1,6 @@
 package typings.jqueryDashTypeahead
 
-import typings.jqueryDashTypeahead.RunningCoderNs.TypeaheadNs.Options
+import typings.jqueryDashTypeahead.RunningCoder.Typeahead.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

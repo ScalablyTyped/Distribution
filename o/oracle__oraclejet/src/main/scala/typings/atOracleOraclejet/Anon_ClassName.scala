@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.CellContext
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.CellContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,15 +21,11 @@ trait ComputeResourceUpdate extends js.Object {
 
 object ComputeResourceUpdate {
   @scala.inline
-  def apply(
-    desiredvCpus: js.UndefOr[Integer] = js.undefined,
-    maxvCpus: js.UndefOr[Integer] = js.undefined,
-    minvCpus: js.UndefOr[Integer] = js.undefined
-  ): ComputeResourceUpdate = {
+  def apply(desiredvCpus: Int | Double = null, maxvCpus: Int | Double = null, minvCpus: Int | Double = null): ComputeResourceUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredvCpus)) __obj.updateDynamic("desiredvCpus")(desiredvCpus)
-    if (!js.isUndefined(maxvCpus)) __obj.updateDynamic("maxvCpus")(maxvCpus)
-    if (!js.isUndefined(minvCpus)) __obj.updateDynamic("minvCpus")(minvCpus)
+    if (desiredvCpus != null) __obj.updateDynamic("desiredvCpus")(desiredvCpus.asInstanceOf[js.Any])
+    if (maxvCpus != null) __obj.updateDynamic("maxvCpus")(maxvCpus.asInstanceOf[js.Any])
+    if (minvCpus != null) __obj.updateDynamic("minvCpus")(minvCpus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeResourceUpdate]
   }
 }

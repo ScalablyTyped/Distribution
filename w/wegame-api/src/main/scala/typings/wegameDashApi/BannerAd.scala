@@ -1,6 +1,6 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.AdStyle
+import typings.wegameDashApi.wx.types.AdStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,9 +17,9 @@ trait ListEnvironmentsRequest extends js.Object {
 
 object ListEnvironmentsRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: String = null): ListEnvironmentsRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: String = null): ListEnvironmentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListEnvironmentsRequest]
   }

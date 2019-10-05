@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hapi-auth-jwt2" : "8.6.2"
+      "hapi-auth-jwt2" : "8.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hapi-auth-jwt2" : "8.6.2"
+      "hapi-auth-jwt2" : "8.7.0"
     }
   ],
   "compile-devDependencies" : [

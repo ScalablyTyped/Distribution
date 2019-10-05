@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriViewsViewMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DefaultUI
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Popup
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.View
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewProperties
+import typings.arcgisDashJsDashApi.__esri.DefaultUI
+import typings.arcgisDashJsDashApi.__esri.Popup
+import typings.arcgisDashJsDashApi.__esri.View
+import typings.arcgisDashJsDashApi.__esri.ViewProperties
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

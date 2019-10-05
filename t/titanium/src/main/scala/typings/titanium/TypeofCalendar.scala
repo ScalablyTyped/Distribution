@@ -1,9 +1,9 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AndroidNs.CalendarNs.Alert
-import typings.titanium.TitaniumNs.AndroidNs.CalendarNs.Calendar
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Android.Calendar.Alert
+import typings.titanium.Titanium.Android.Calendar.Calendar
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

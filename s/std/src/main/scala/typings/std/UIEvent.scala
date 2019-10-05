@@ -17,13 +17,6 @@ trait UIEvent extends Event {
 
 @JSGlobal("UIEvent")
 @js.native
-class UIEventCls protected () extends UIEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: UIEventInit) = this()
-}
-
-@JSGlobal("UIEvent")
-@js.native
 object UIEvent
   extends Instantiable1[/* type */ java.lang.String, UIEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ UIEventInit, UIEvent]

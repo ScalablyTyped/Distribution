@@ -27,7 +27,7 @@ object WriteApplicationSettingsRequest {
   @scala.inline
   def apply(
     CampaignHook: CampaignHook = null,
-    CloudWatchMetricsEnabled: js.UndefOr[__boolean] = js.undefined,
+    CloudWatchMetricsEnabled: js.UndefOr[Boolean] = js.undefined,
     Limits: CampaignLimits = null,
     QuietTime: QuietTime = null
   ): WriteApplicationSettingsRequest = {

@@ -15,12 +15,19 @@ trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
   var version: Double | Null
 }
 
-object VersionedTextDocumentIdentifier {
-  @scala.inline
-  def apply(uri: String, version: Int | Double = null): VersionedTextDocumentIdentifier = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    __obj.asInstanceOf[VersionedTextDocumentIdentifier]
-  }
+@JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier")
+@js.native
+object VersionedTextDocumentIdentifier extends js.Object {
+  def create(uri: String): VersionedTextDocumentIdentifier = js.native
+  /**
+    * Creates a new VersionedTextDocumentIdentifier literal.
+    * @param uri The document's uri.
+    * @param uri The document's text.
+    */
+  def create(uri: String, version: Double): VersionedTextDocumentIdentifier = js.native
+  /**
+    * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = js.native
 }
 

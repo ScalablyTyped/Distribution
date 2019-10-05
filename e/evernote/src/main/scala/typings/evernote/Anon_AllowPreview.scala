@@ -1,7 +1,7 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.SharedNotebookPrivilegeLevel
-import typings.evernote.evernoteMod.EvernoteNs.SharedNotebookRecipientSettings
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel
+import typings.evernote.evernoteMod.Evernote.SharedNotebookRecipientSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

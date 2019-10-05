@@ -20,13 +20,13 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.off
 import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateNs.DayFormatterInput
-import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDateNs.DayFormatterOutput
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterInput
+import typings.atOracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterOutput
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

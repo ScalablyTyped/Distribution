@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriViewsMapViewMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BreakpointsOwnerBreakpoints
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DefaultUI
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapViewProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Popup
+import typings.arcgisDashJsDashApi.__esri.BreakpointsOwnerBreakpoints
+import typings.arcgisDashJsDashApi.__esri.DefaultUI
+import typings.arcgisDashJsDashApi.__esri.MapView
+import typings.arcgisDashJsDashApi.__esri.MapViewProperties
+import typings.arcgisDashJsDashApi.__esri.Popup
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

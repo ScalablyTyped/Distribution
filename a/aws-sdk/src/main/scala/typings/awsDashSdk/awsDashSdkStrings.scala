@@ -161,6 +161,7 @@ import typings.awsDashSdk.clientsClouddirectoryMod._RequiredAttributeBehavior
 import typings.awsDashSdk.clientsClouddirectoryMod._RuleType
 import typings.awsDashSdk.clientsClouddirectoryMod._UpdateActionType
 import typings.awsDashSdk.clientsCloudformationMod._AccountGateStatus
+import typings.awsDashSdk.clientsCloudformationMod._Capability
 import typings.awsDashSdk.clientsCloudformationMod._ChangeSetStatus
 import typings.awsDashSdk.clientsCloudformationMod._ChangeSetType
 import typings.awsDashSdk.clientsCloudformationMod._ChangeSource
@@ -169,6 +170,7 @@ import typings.awsDashSdk.clientsCloudformationMod._OnFailure
 import typings.awsDashSdk.clientsCloudformationMod._ResourceSignalStatus
 import typings.awsDashSdk.clientsCloudformationMod._StackDriftDetectionStatus
 import typings.awsDashSdk.clientsCloudformationMod._StackDriftStatus
+import typings.awsDashSdk.clientsCloudformationMod._StackInstanceStatus
 import typings.awsDashSdk.clientsCloudformationMod._StackResourceDriftStatus
 import typings.awsDashSdk.clientsCloudformationMod._StackSetOperationAction
 import typings.awsDashSdk.clientsCloudformationMod._StackSetOperationResultStatus
@@ -197,7 +199,6 @@ import typings.awsDashSdk.clientsCloudhsmv2Mod._HsmState
 import typings.awsDashSdk.clientsCloudsearchMod._AlgorithmicStemming
 import typings.awsDashSdk.clientsCloudsearchMod._AnalysisSchemeLanguage
 import typings.awsDashSdk.clientsCloudsearchMod._IndexFieldType
-import typings.awsDashSdk.clientsCloudsearchMod._OptionState
 import typings.awsDashSdk.clientsCloudsearchMod._PartitionInstanceType
 import typings.awsDashSdk.clientsCloudsearchMod._SuggesterFuzzyMatching
 import typings.awsDashSdk.clientsCloudsearchdomainMod._QueryParser
@@ -354,6 +355,7 @@ import typings.awsDashSdk.clientsCostexplorerMod._RightsizingType
 import typings.awsDashSdk.clientsCostexplorerMod._TermInYears
 import typings.awsDashSdk.clientsCurMod._AWSRegion
 import typings.awsDashSdk.clientsCurMod._AdditionalArtifact
+import typings.awsDashSdk.clientsCurMod._CompressionFormat
 import typings.awsDashSdk.clientsCurMod._ReportFormat
 import typings.awsDashSdk.clientsCurMod._ReportVersioning
 import typings.awsDashSdk.clientsDatapipelineMod._OperatorType
@@ -366,7 +368,6 @@ import typings.awsDashSdk.clientsDatasyncMod._PhaseStatus
 import typings.awsDashSdk.clientsDatasyncMod._PosixPermissions
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDeletedFiles
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDevices
-import typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
 import typings.awsDashSdk.clientsDatasyncMod._SmbVersion
 import typings.awsDashSdk.clientsDatasyncMod._TaskExecutionStatus
 import typings.awsDashSdk.clientsDatasyncMod._TaskStatus
@@ -447,31 +448,7 @@ import typings.awsDashSdk.clientsDmsMod._ReloadOptionValue
 import typings.awsDashSdk.clientsDmsMod._ReplicationEndpointTypeValue
 import typings.awsDashSdk.clientsDmsMod._StartReplicationTaskTypeValue
 import typings.awsDashSdk.clientsDocdbMod._ApplyMethod
-import typings.awsDashSdk.clientsDynamodbMod._AttributeAction
-import typings.awsDashSdk.clientsDynamodbMod._BackupStatus
-import typings.awsDashSdk.clientsDynamodbMod._BackupTypeFilter
-import typings.awsDashSdk.clientsDynamodbMod._BillingMode
-import typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
-import typings.awsDashSdk.clientsDynamodbMod._ConditionalOperator
-import typings.awsDashSdk.clientsDynamodbMod._ContinuousBackupsStatus
-import typings.awsDashSdk.clientsDynamodbMod._GlobalTableStatus
-import typings.awsDashSdk.clientsDynamodbMod._IndexStatus
-import typings.awsDashSdk.clientsDynamodbMod._PointInTimeRecoveryStatus
-import typings.awsDashSdk.clientsDynamodbMod._ProjectionType
-import typings.awsDashSdk.clientsDynamodbMod._ReplicaStatus
-import typings.awsDashSdk.clientsDynamodbMod._ReturnConsumedCapacity
-import typings.awsDashSdk.clientsDynamodbMod._ReturnItemCollectionMetrics
-import typings.awsDashSdk.clientsDynamodbMod._ReturnValue
-import typings.awsDashSdk.clientsDynamodbMod._ReturnValuesOnConditionCheckFailure
-import typings.awsDashSdk.clientsDynamodbMod._SSEStatus
-import typings.awsDashSdk.clientsDynamodbMod._SSEType
-import typings.awsDashSdk.clientsDynamodbMod._ScalarAttributeType
-import typings.awsDashSdk.clientsDynamodbMod._Select
-import typings.awsDashSdk.clientsDynamodbMod._TableStatus
-import typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
-import typings.awsDashSdk.clientsDynamodbstreamsMod._KeyType
 import typings.awsDashSdk.clientsDynamodbstreamsMod._ShardIteratorType
-import typings.awsDashSdk.clientsDynamodbstreamsMod._StreamViewType
 import typings.awsDashSdk.clientsEc2Mod._AccountAttributeName
 import typings.awsDashSdk.clientsEc2Mod._ActivityStatus
 import typings.awsDashSdk.clientsEc2Mod._Affinity
@@ -591,7 +568,6 @@ import typings.awsDashSdk.clientsEc2Mod._TransitGatewayRouteState
 import typings.awsDashSdk.clientsEc2Mod._TransitGatewayRouteTableState
 import typings.awsDashSdk.clientsEc2Mod._TransitGatewayRouteType
 import typings.awsDashSdk.clientsEc2Mod._TransitGatewayState
-import typings.awsDashSdk.clientsEc2Mod._TransportProtocol
 import typings.awsDashSdk.clientsEc2Mod._UnsuccessfulInstanceCreditSpecificationErrorCode
 import typings.awsDashSdk.clientsEc2Mod._VirtualizationType
 import typings.awsDashSdk.clientsEc2Mod._VolumeAttachmentState
@@ -600,7 +576,6 @@ import typings.awsDashSdk.clientsEc2Mod._VolumeModificationState
 import typings.awsDashSdk.clientsEc2Mod._VolumeState
 import typings.awsDashSdk.clientsEc2Mod._VolumeStatusInfoStatus
 import typings.awsDashSdk.clientsEc2Mod._VolumeStatusName
-import typings.awsDashSdk.clientsEc2Mod._VolumeType
 import typings.awsDashSdk.clientsEc2Mod._VpcAttributeName
 import typings.awsDashSdk.clientsEc2Mod._VpcCidrBlockStateCode
 import typings.awsDashSdk.clientsEc2Mod._VpcEndpointType
@@ -616,6 +591,7 @@ import typings.awsDashSdk.clientsEcrMod._LayerFailureCode
 import typings.awsDashSdk.clientsEcrMod._LifecyclePolicyPreviewStatus
 import typings.awsDashSdk.clientsEcrMod._TagStatus
 import typings.awsDashSdk.clientsEcsMod._AgentUpdateStatus
+import typings.awsDashSdk.clientsEcsMod._AssignPublicIp
 import typings.awsDashSdk.clientsEcsMod._ClusterField
 import typings.awsDashSdk.clientsEcsMod._Compatibility
 import typings.awsDashSdk.clientsEcsMod._Connectivity
@@ -625,6 +601,7 @@ import typings.awsDashSdk.clientsEcsMod._DeploymentControllerType
 import typings.awsDashSdk.clientsEcsMod._DesiredStatus
 import typings.awsDashSdk.clientsEcsMod._FirelensConfigurationType
 import typings.awsDashSdk.clientsEcsMod._IpcMode
+import typings.awsDashSdk.clientsEcsMod._LaunchType
 import typings.awsDashSdk.clientsEcsMod._LogDriver
 import typings.awsDashSdk.clientsEcsMod._NetworkMode
 import typings.awsDashSdk.clientsEcsMod._PidMode
@@ -639,6 +616,7 @@ import typings.awsDashSdk.clientsEcsMod._StabilityStatus
 import typings.awsDashSdk.clientsEcsMod._TaskDefinitionFamilyStatus
 import typings.awsDashSdk.clientsEcsMod._TaskDefinitionStatus
 import typings.awsDashSdk.clientsEcsMod._TaskStopCode
+import typings.awsDashSdk.clientsEcsMod._TransportProtocol
 import typings.awsDashSdk.clientsEcsMod._UlimitName
 import typings.awsDashSdk.clientsEfsMod._LifeCycleState
 import typings.awsDashSdk.clientsEfsMod._PerformanceMode
@@ -713,15 +691,14 @@ import typings.awsDashSdk.clientsEmrMod._Unit
 import typings.awsDashSdk.clientsEsMod._DeploymentStatus
 import typings.awsDashSdk.clientsEsMod._ESPartitionInstanceType
 import typings.awsDashSdk.clientsEsMod._LogType
+import typings.awsDashSdk.clientsEsMod._OptionState
 import typings.awsDashSdk.clientsEsMod._ReservedElasticsearchInstancePaymentOption
 import typings.awsDashSdk.clientsEsMod._TLSSecurityPolicy
 import typings.awsDashSdk.clientsEsMod._UpgradeStatus
 import typings.awsDashSdk.clientsEsMod._UpgradeStep
-import typings.awsDashSdk.clientsEventbridgeMod._AssignPublicIp
+import typings.awsDashSdk.clientsEsMod._VolumeType
 import typings.awsDashSdk.clientsEventbridgeMod._EventSourceState
-import typings.awsDashSdk.clientsEventbridgeMod._LaunchType
 import typings.awsDashSdk.clientsEventbridgeMod._RuleState
-import typings.awsDashSdk.clientsFirehoseMod._CompressionFormat
 import typings.awsDashSdk.clientsFirehoseMod._DeliveryStreamEncryptionStatus
 import typings.awsDashSdk.clientsFirehoseMod._DeliveryStreamStatus
 import typings.awsDashSdk.clientsFirehoseMod._DeliveryStreamType
@@ -763,6 +740,7 @@ import typings.awsDashSdk.clientsGameliftMod._InstanceStatus
 import typings.awsDashSdk.clientsGameliftMod._IpProtocol
 import typings.awsDashSdk.clientsGameliftMod._MatchmakingConfigurationStatus
 import typings.awsDashSdk.clientsGameliftMod._MetricName
+import typings.awsDashSdk.clientsGameliftMod._OperatingSystem
 import typings.awsDashSdk.clientsGameliftMod._PlayerSessionCreationPolicy
 import typings.awsDashSdk.clientsGameliftMod._PlayerSessionStatus
 import typings.awsDashSdk.clientsGameliftMod._PolicyType
@@ -773,6 +751,8 @@ import typings.awsDashSdk.clientsGameliftMod._ScalingStatusType
 import typings.awsDashSdk.clientsGlacierMod._ActionCode
 import typings.awsDashSdk.clientsGlacierMod._CannedACL
 import typings.awsDashSdk.clientsGlacierMod._EncryptionType
+import typings.awsDashSdk.clientsGlacierMod._FileHeaderInfo
+import typings.awsDashSdk.clientsGlacierMod._QuoteFields
 import typings.awsDashSdk.clientsGlobalacceleratorMod._AcceleratorStatus
 import typings.awsDashSdk.clientsGlobalacceleratorMod._ClientAffinity
 import typings.awsDashSdk.clientsGlobalacceleratorMod._HealthCheckProtocol
@@ -879,8 +859,10 @@ import typings.awsDashSdk.clientsIotMod._CertificateStatus
 import typings.awsDashSdk.clientsIotMod._DayOfWeek
 import typings.awsDashSdk.clientsIotMod._DynamicGroupStatus
 import typings.awsDashSdk.clientsIotMod._DynamoKeyType
+import typings.awsDashSdk.clientsIotMod._IndexStatus
 import typings.awsDashSdk.clientsIotMod._JobExecutionFailureType
 import typings.awsDashSdk.clientsIotMod._JobExecutionStatus
+import typings.awsDashSdk.clientsIotMod._LogLevel
 import typings.awsDashSdk.clientsIotMod._LogTargetType
 import typings.awsDashSdk.clientsIotMod._MessageFormat
 import typings.awsDashSdk.clientsIotMod._MitigationActionType
@@ -920,7 +902,6 @@ import typings.awsDashSdk.clientsKinesisanalyticsMod._RecordFormatType
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._ApplicationRestoreType
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._CodeContentType
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._ConfigurationType
-import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._LogLevel
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._MetricsLevel
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._RuntimeEnvironment
 import typings.awsDashSdk.clientsKinesisanalyticsv2Mod._SnapshotStatus
@@ -1401,15 +1382,16 @@ import typings.awsDashSdk.clientsMedialiveMod._VideoDescriptionRespondToAfd
 import typings.awsDashSdk.clientsMedialiveMod._VideoDescriptionScalingBehavior
 import typings.awsDashSdk.clientsMedialiveMod._VideoSelectorColorSpace
 import typings.awsDashSdk.clientsMedialiveMod._VideoSelectorColorSpaceUsage
-import typings.awsDashSdk.clientsMediapackageMod._AdMarkers
 import typings.awsDashSdk.clientsMediapackageMod._AdsOnDeliveryRestrictions
-import typings.awsDashSdk.clientsMediapackageMod._EncryptionMethod
 import typings.awsDashSdk.clientsMediapackageMod._ManifestLayout
+import typings.awsDashSdk.clientsMediapackageMod._Origination
 import typings.awsDashSdk.clientsMediapackageMod._PlaylistType
-import typings.awsDashSdk.clientsMediapackageMod._Profile
 import typings.awsDashSdk.clientsMediapackageMod._SegmentTemplateFormat
-import typings.awsDashSdk.clientsMediapackageMod._StreamOrder
 import typings.awsDashSdk.clientsMediapackageMod.___AdTriggersElement
+import typings.awsDashSdk.clientsMediapackagevodMod._AdMarkers
+import typings.awsDashSdk.clientsMediapackagevodMod._EncryptionMethod
+import typings.awsDashSdk.clientsMediapackagevodMod._Profile
+import typings.awsDashSdk.clientsMediapackagevodMod._StreamOrder
 import typings.awsDashSdk.clientsMediastoreMod._ContainerStatus
 import typings.awsDashSdk.clientsMediastoreMod._MethodName
 import typings.awsDashSdk.clientsMediastoredataMod._ItemType
@@ -1574,7 +1556,6 @@ import typings.awsDashSdk.clientsS3Mod._CompressionType
 import typings.awsDashSdk.clientsS3Mod._DeleteMarkerReplicationStatus
 import typings.awsDashSdk.clientsS3Mod._Event
 import typings.awsDashSdk.clientsS3Mod._ExpirationStatus
-import typings.awsDashSdk.clientsS3Mod._FileHeaderInfo
 import typings.awsDashSdk.clientsS3Mod._FilterRuleName
 import typings.awsDashSdk.clientsS3Mod._InventoryFormat
 import typings.awsDashSdk.clientsS3Mod._InventoryFrequency
@@ -1590,7 +1571,6 @@ import typings.awsDashSdk.clientsS3Mod._ObjectLockMode
 import typings.awsDashSdk.clientsS3Mod._ObjectLockRetentionMode
 import typings.awsDashSdk.clientsS3Mod._ObjectStorageClass
 import typings.awsDashSdk.clientsS3Mod._Payer
-import typings.awsDashSdk.clientsS3Mod._QuoteFields
 import typings.awsDashSdk.clientsS3Mod._ReplicationRuleStatus
 import typings.awsDashSdk.clientsS3Mod._ReplicationStatus
 import typings.awsDashSdk.clientsS3Mod._ServerSideEncryption
@@ -1613,6 +1593,7 @@ import typings.awsDashSdk.clientsS3controlMod._S3ObjectLockLegalHoldStatus
 import typings.awsDashSdk.clientsS3controlMod._S3ObjectLockMode
 import typings.awsDashSdk.clientsS3controlMod._S3Permission
 import typings.awsDashSdk.clientsS3controlMod._S3SSEAlgorithm
+import typings.awsDashSdk.clientsS3controlMod._S3StorageClass
 import typings.awsDashSdk.clientsSagemakerMod._AlgorithmSortBy
 import typings.awsDashSdk.clientsSagemakerMod._AlgorithmStatus
 import typings.awsDashSdk.clientsSagemakerMod._AssemblyType
@@ -1684,7 +1665,6 @@ import typings.awsDashSdk.clientsSecurityhubMod._ThreatIntelIndicatorCategory
 import typings.awsDashSdk.clientsSecurityhubMod._ThreatIntelIndicatorType
 import typings.awsDashSdk.clientsSecurityhubMod._VerificationState
 import typings.awsDashSdk.clientsSecurityhubMod._WorkflowState
-import typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._Capability
 import typings.awsDashSdk.clientsServicecatalogMod._AccessLevelFilterKey
 import typings.awsDashSdk.clientsServicecatalogMod._AccessStatus
 import typings.awsDashSdk.clientsServicecatalogMod._ChangeAction
@@ -1705,7 +1685,6 @@ import typings.awsDashSdk.clientsServicecatalogMod._ResourceAttribute
 import typings.awsDashSdk.clientsServicecatalogMod._ServiceActionAssociationErrorCode
 import typings.awsDashSdk.clientsServicecatalogMod._ServiceActionDefinitionKey
 import typings.awsDashSdk.clientsServicecatalogMod._ShareStatus
-import typings.awsDashSdk.clientsServicecatalogMod._StackInstanceStatus
 import typings.awsDashSdk.clientsServicecatalogMod._StackSetOperationType
 import typings.awsDashSdk.clientsServicediscoveryMod._CustomHealthStatus
 import typings.awsDashSdk.clientsServicediscoveryMod._FilterCondition
@@ -1793,7 +1772,6 @@ import typings.awsDashSdk.clientsSsmMod._MaintenanceWindowExecutionStatus
 import typings.awsDashSdk.clientsSsmMod._MaintenanceWindowResourceType
 import typings.awsDashSdk.clientsSsmMod._MaintenanceWindowTaskType
 import typings.awsDashSdk.clientsSsmMod._NotificationEvent
-import typings.awsDashSdk.clientsSsmMod._OperatingSystem
 import typings.awsDashSdk.clientsSsmMod._OpsFilterOperatorType
 import typings.awsDashSdk.clientsSsmMod._OpsItemDataType
 import typings.awsDashSdk.clientsSsmMod._OpsItemFilterKey
@@ -1850,16 +1828,16 @@ import typings.awsDashSdk.clientsTranscribeserviceMod._TranscriptionJobStatus
 import typings.awsDashSdk.clientsTranscribeserviceMod._VocabularyState
 import typings.awsDashSdk.clientsTransferMod._IdentityProviderType
 import typings.awsDashSdk.clientsTranslateMod._TerminologyDataFormat
-import typings.awsDashSdk.clientsWafregionalMod._ChangeTokenStatus
-import typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
-import typings.awsDashSdk.clientsWafregionalMod._IPSetDescriptorType
-import typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
-import typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
-import typings.awsDashSdk.clientsWafregionalMod._PredicateType
-import typings.awsDashSdk.clientsWafregionalMod._TextTransformation
-import typings.awsDashSdk.clientsWafregionalMod._WafActionType
-import typings.awsDashSdk.clientsWafregionalMod._WafOverrideActionType
-import typings.awsDashSdk.clientsWafregionalMod._WafRuleType
+import typings.awsDashSdk.clientsWafMod._ChangeTokenStatus
+import typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+import typings.awsDashSdk.clientsWafMod._IPSetDescriptorType
+import typings.awsDashSdk.clientsWafMod._MatchFieldType
+import typings.awsDashSdk.clientsWafMod._PositionalConstraint
+import typings.awsDashSdk.clientsWafMod._PredicateType
+import typings.awsDashSdk.clientsWafMod._TextTransformation
+import typings.awsDashSdk.clientsWafMod._WafActionType
+import typings.awsDashSdk.clientsWafMod._WafOverrideActionType
+import typings.awsDashSdk.clientsWafMod._WafRuleType
 import typings.awsDashSdk.clientsWorkdocsMod._ActivityType
 import typings.awsDashSdk.clientsWorkdocsMod._BooleanEnumType
 import typings.awsDashSdk.clientsWorkdocsMod._CommentStatusType
@@ -1905,6 +1883,29 @@ import typings.awsDashSdk.clientsWorkspacesMod._WorkspaceState
 import typings.awsDashSdk.clientsXrayMod._EncryptionStatus
 import typings.awsDashSdk.clientsXrayMod._SamplingStrategyName
 import typings.awsDashSdk.clientsXrayMod._TimeRangeType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._AttributeAction
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BackupStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BackupTypeFilter
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BillingMode
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ComparisonOperator
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ConditionalOperator
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ContinuousBackupsStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._GlobalTableStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._KeyType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._PointInTimeRecoveryStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ProjectionType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ReplicaStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ReturnConsumedCapacity
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ReturnItemCollectionMetrics
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ReturnValue
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ReturnValuesOnConditionCheckFailure
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._SSEStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._SSEType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._ScalarAttributeType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._Select
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._StreamViewType
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._TableStatus
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._TimeToLiveStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1955,8 +1956,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2010-12-01`
-    extends typings.awsDashSdk.clientsSesMod._apiVersion
-       with typings.awsDashSdk.clientsElasticbeanstalkMod._apiVersion
+    extends typings.awsDashSdk.clientsElasticbeanstalkMod._apiVersion
+       with typings.awsDashSdk.clientsSesMod._apiVersion
   
   @js.native
   sealed trait `2011-01-01`
@@ -2212,8 +2213,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2015-05-28`
-    extends typings.awsDashSdk.clientsIotdataMod._apiVersion
-       with typings.awsDashSdk.clientsIotMod._apiVersion
+    extends typings.awsDashSdk.clientsIotMod._apiVersion
+       with typings.awsDashSdk.clientsIotdataMod._apiVersion
   
   @js.native
   sealed trait `2015-06-23`
@@ -2400,15 +2401,15 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2016-11-28`
-    extends typings.awsDashSdk.clientsWafregionalMod._apiVersion
-       with typings.awsDashSdk.clientsLexruntimeMod._apiVersion
+    extends typings.awsDashSdk.clientsLightsailMod._apiVersion
        with typings.awsDashSdk.clientsOrganizationsMod._apiVersion
-       with typings.awsDashSdk.clientsLightsailMod._apiVersion
+       with typings.awsDashSdk.clientsWafregionalMod._apiVersion
+       with typings.awsDashSdk.clientsLexruntimeMod._apiVersion
   
   @js.native
   sealed trait `2016-12-01`
-    extends typings.awsDashSdk.clientsAppstreamMod._apiVersion
-       with typings.awsDashSdk.clientsPinpointMod._apiVersion
+    extends typings.awsDashSdk.clientsPinpointMod._apiVersion
+       with typings.awsDashSdk.clientsAppstreamMod._apiVersion
   
   @js.native
   sealed trait `2017-01-06`
@@ -2416,8 +2417,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2017-01-11`
-    extends typings.awsDashSdk.clientsMarketplaceentitlementserviceMod._apiVersion
-       with typings.awsDashSdk.clientsClouddirectoryMod._apiVersion
+    extends typings.awsDashSdk.clientsClouddirectoryMod._apiVersion
+       with typings.awsDashSdk.clientsMarketplaceentitlementserviceMod._apiVersion
   
   @js.native
   sealed trait `2017-01-17`
@@ -2442,9 +2443,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2017-04-19`
-    extends typings.awsDashSdk.clientsCodestarMod._apiVersion
-       with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._apiVersion
+    extends typings.awsDashSdk.clientsLexmodelbuildingserviceMod._apiVersion
        with typings.awsDashSdk.clientsDaxMod._apiVersion
+       with typings.awsDashSdk.clientsCodestarMod._apiVersion
   
   @js.native
   sealed trait `2017-04-28`
@@ -2477,8 +2478,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2017-07-25`
-    extends typings.awsDashSdk.clientsAppsyncMod._apiVersion
-       with typings.awsDashSdk.clientsAmplifyMod._apiVersion
+    extends typings.awsDashSdk.clientsAmplifyMod._apiVersion
+       with typings.awsDashSdk.clientsAppsyncMod._apiVersion
   
   @js.native
   sealed trait `2017-08-08`
@@ -2515,9 +2516,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2017-09-30`
-    extends typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod._apiVersion
-       with typings.awsDashSdk.clientsKinesisvideomediaMod._apiVersion
+    extends typings.awsDashSdk.clientsKinesisvideomediaMod._apiVersion
        with typings.awsDashSdk.clientsKinesisvideoMod._apiVersion
+       with typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod._apiVersion
   
   @js.native
   sealed trait `2017-10-01`
@@ -2562,9 +2563,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait `2017-11-27`
     extends typings.awsDashSdk.clientsIotanalyticsMod._apiVersion
-       with typings.awsDashSdk.clientsResourcegroupsMod._apiVersion
        with typings.awsDashSdk.clientsMqMod._apiVersion
        with typings.awsDashSdk.clientsComprehendMod._apiVersion
+       with typings.awsDashSdk.clientsResourcegroupsMod._apiVersion
   
   @js.native
   sealed trait `2017-11-28`
@@ -2621,8 +2622,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2018-05-14`
-    extends typings.awsDashSdk.clientsIot1clickprojectsMod._apiVersion
-       with typings.awsDashSdk.clientsIot1clickdevicesserviceMod._apiVersion
+    extends typings.awsDashSdk.clientsIot1clickdevicesserviceMod._apiVersion
+       with typings.awsDashSdk.clientsIot1clickprojectsMod._apiVersion
   
   @js.native
   sealed trait `2018-05-22`
@@ -2639,8 +2640,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2018-06-26`
-    extends typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
-       with typings.awsDashSdk.clientsForecastserviceMod._apiVersion
+    extends typings.awsDashSdk.clientsForecastserviceMod._apiVersion
+       with typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
   
   @js.native
   sealed trait `2018-06-27`
@@ -2718,8 +2719,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait `2018-11-14`
-    extends typings.awsDashSdk.clientsKafkaMod._apiVersion
-       with typings.awsDashSdk.clientsMediaconnectMod._apiVersion
+    extends typings.awsDashSdk.clientsMediaconnectMod._apiVersion
+       with typings.awsDashSdk.clientsKafkaMod._apiVersion
   
   @js.native
   sealed trait `2018-11-15`
@@ -2936,15 +2937,15 @@ object awsDashSdkStrings {
        with _EncryptionStatus
        with _EventSourceState
        with typings.awsDashSdk.clientsCloudwatcheventsMod._EventSourceState
-       with typings.awsDashSdk.clientsWorklinkMod._FleetStatus
        with _FleetStatus
+       with typings.awsDashSdk.clientsWorklinkMod._FleetStatus
        with _GameSessionStatus
        with _GlobalTableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._GlobalTableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._GlobalTableStatus
        with _HsmState
        with _IndexStatus
-       with typings.awsDashSdk.clientsIotMod._IndexStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._IndexStatus
+       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._IndexStatus
+       with typings.awsDashSdk.clientsDynamodbMod._IndexStatus
        with _InputStatus
        with _InstanceStatus
        with _IpSetStatus
@@ -2955,7 +2956,7 @@ object awsDashSdkStrings {
        with _RecencyType
        with _RecordState
        with _ReplicaStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ReplicaStatus
        with _ReplicationJobState
        with _ReplicationRunState
        with _ReservationPlanStatus
@@ -2975,7 +2976,7 @@ object awsDashSdkStrings {
        with _StreamStatus
        with _SubscriptionState
        with _TableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TableStatus
        with _TaskDefinitionFamilyStatus
        with _TaskDefinitionStatus
        with _ThreatIntelSetStatus
@@ -3039,7 +3040,7 @@ object awsDashSdkStrings {
   sealed trait AD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ADAPTIVE
@@ -3055,7 +3056,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ADD
     extends _AttributeAction
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._AttributeAction
+       with typings.awsDashSdk.clientsDynamodbMod._AttributeAction
        with _ChangeAction
        with _DifferenceType
   
@@ -3130,7 +3131,7 @@ object awsDashSdkStrings {
   sealed trait AE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AES128
@@ -3142,14 +3143,14 @@ object awsDashSdkStrings {
     extends _EncryptionType
        with _S3SSEAlgorithm
        with _SSEType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEType
+       with typings.awsDashSdk.clientsDynamodbMod._SSEType
        with _ServerSideEncryption
   
   @js.native
   sealed trait AES_128
     extends _DataKeySpec
        with _EncryptionMethod
-       with typings.awsDashSdk.clientsMediapackagevodMod._EncryptionMethod
+       with typings.awsDashSdk.clientsMediapackageMod._EncryptionMethod
   
   @js.native
   sealed trait AES_256 extends _DataKeySpec
@@ -3169,7 +3170,7 @@ object awsDashSdkStrings {
   sealed trait AF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AFD_0000 extends _FixedAfd
@@ -3240,7 +3241,7 @@ object awsDashSdkStrings {
   sealed trait AG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AGE extends _EntitySubType
@@ -3276,7 +3277,7 @@ object awsDashSdkStrings {
   sealed trait AI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AIFF extends _AudioCodec
@@ -3291,7 +3292,7 @@ object awsDashSdkStrings {
   sealed trait AL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ALARM
@@ -3325,7 +3326,7 @@ object awsDashSdkStrings {
   sealed trait ALL
     extends _Attribute
        with _BackupTypeFilter
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
+       with typings.awsDashSdk.clientsDynamodbMod._BackupTypeFilter
        with _FaceAttributes
        with _Feature
        with _FieldLogLevel
@@ -3338,7 +3339,7 @@ object awsDashSdkStrings {
        with _Permission
        with typings.awsDashSdk.clientsLakeformationMod._Permission
        with _ProjectionType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
+       with typings.awsDashSdk.clientsDynamodbMod._ProjectionType
        with _RtmpCaptionData
        with _SkillTypeFilter
        with _SourceType
@@ -3351,8 +3352,9 @@ object awsDashSdkStrings {
   sealed trait ALLOW
     extends _DefaultAction
        with _IAMUserAccessToBilling
+       with _Origination
        with _WafActionType
-       with typings.awsDashSdk.clientsWafMod._WafActionType
+       with typings.awsDashSdk.clientsWafregionalMod._WafActionType
   
   @js.native
   sealed trait ALLOWED extends _AuthDecision
@@ -3366,29 +3368,29 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ALL_ATTRIBUTES
     extends _Select
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._Select
+       with typings.awsDashSdk.clientsDynamodbMod._Select
   
   @js.native
   sealed trait ALL_NEW
     extends _ReturnValue
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValue
   
   @js.native
   sealed trait ALL_OLD
     extends _ReturnValue
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValue
        with _ReturnValuesOnConditionCheckFailure
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValuesOnConditionCheckFailure
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValuesOnConditionCheckFailure
   
   @js.native
   sealed trait ALL_PROJECTED_ATTRIBUTES
     extends _Select
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._Select
+       with typings.awsDashSdk.clientsDynamodbMod._Select
   
   @js.native
   sealed trait ALL_QUERY_ARGS
     extends _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait ALL_STEPS_COMPLETED extends _ClusterStateChangeReasonCode
@@ -3426,7 +3428,7 @@ object awsDashSdkStrings {
        with _HLSDisplayFragmentTimestamp
        with _OverwriteMode
        with _QuoteFields
-       with typings.awsDashSdk.clientsGlacierMod._QuoteFields
+       with typings.awsDashSdk.clientsS3Mod._QuoteFields
        with _RequiresRecreation
   
   @js.native
@@ -3438,7 +3440,7 @@ object awsDashSdkStrings {
   sealed trait AM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AMAZON extends _WakeWord
@@ -3458,11 +3460,12 @@ object awsDashSdkStrings {
   @js.native
   sealed trait AMAZON_LINUX
     extends _OperatingSystem
-       with typings.awsDashSdk.clientsGameliftMod._OperatingSystem
+       with typings.awsDashSdk.clientsSsmMod._OperatingSystem
        with _PlatformType
   
   @js.native
-  sealed trait AMAZON_LINUX_2 extends _OperatingSystem
+  sealed trait AMAZON_LINUX_2
+    extends typings.awsDashSdk.clientsSsmMod._OperatingSystem
   
   @js.native
   sealed trait AMH extends _LanguageCode
@@ -3483,7 +3486,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait AND
     extends _ConditionalOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ConditionalOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ConditionalOperator
        with _Logical
   
   @js.native
@@ -3521,7 +3524,7 @@ object awsDashSdkStrings {
   sealed trait AO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait API
@@ -3712,13 +3715,13 @@ object awsDashSdkStrings {
   sealed trait AQ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ARA extends _LanguageCode
@@ -3760,7 +3763,7 @@ object awsDashSdkStrings {
   sealed trait AS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ASC
@@ -3809,7 +3812,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ASNEEDED
     extends _QuoteFields
-       with typings.awsDashSdk.clientsGlacierMod._QuoteFields
+       with typings.awsDashSdk.clientsS3Mod._QuoteFields
   
   @js.native
   sealed trait ASSESSMENT_RUN_COMPLETED extends _InspectorEvent
@@ -3846,7 +3849,7 @@ object awsDashSdkStrings {
   sealed trait AT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ATHENA extends _AdditionalArtifact
@@ -3887,7 +3890,7 @@ object awsDashSdkStrings {
   sealed trait AU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AUDIO extends _ReservationCodec
@@ -3999,7 +4002,7 @@ object awsDashSdkStrings {
   sealed trait AVAILABLE
     extends _BackupLifecycle
        with _BackupStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
+       with typings.awsDashSdk.clientsDynamodbMod._BackupStatus
        with _CacheClusterStatus
        with _ContactStatus
        with _DeviceAvailability
@@ -4051,7 +4054,7 @@ object awsDashSdkStrings {
   sealed trait AW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AWAITING_FULFILLMENT extends _InstanceState
@@ -4450,10 +4453,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait AWS_BACKUP
-    extends typings.awsDashSdk.clientsDynamodbMod._BackupType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupType
+    extends typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BackupType
+       with typings.awsDashSdk.clientsDynamodbMod._BackupType
        with _BackupTypeFilter
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
+       with typings.awsDashSdk.clientsDynamodbMod._BackupTypeFilter
   
   @js.native
   sealed trait AWS_CANCELLED extends _ContactStatus
@@ -4491,7 +4494,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait AX
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AYM extends _LanguageCode
@@ -4501,7 +4504,7 @@ object awsDashSdkStrings {
     extends _CountryCode
        with _Dimension
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait AZE extends _LanguageCode
@@ -4520,8 +4523,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait AccessDenied
-    extends typings.awsDashSdk.clientsEksMod._ErrorCode
-       with typings.awsDashSdk.clientsCognitoidentityMod._ErrorCode
+    extends typings.awsDashSdk.clientsCognitoidentityMod._ErrorCode
+       with typings.awsDashSdk.clientsEksMod._ErrorCode
   
   @js.native
   sealed trait AccessDeniedException extends _BatchReadExceptionType
@@ -4595,7 +4598,7 @@ object awsDashSdkStrings {
        with _DomainControllerStatus
        with _JobStatus
        with _OptionState
-       with typings.awsDashSdk.clientsEsMod._OptionState
+       with typings.awsDashSdk.clientsCloudsearchMod._OptionState
        with _QualificationTypeStatus
        with _ScalingPlanStatusCode
        with _ScalingStatusCode
@@ -4729,8 +4732,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait AmazonCustomerByEmail
-    extends typings.awsDashSdk.clientsS3Mod._Type
-       with typings.awsDashSdk.clientsGlacierMod._Type
+    extends typings.awsDashSdk.clientsGlacierMod._Type
+       with typings.awsDashSdk.clientsS3Mod._Type
   
   @js.native
   sealed trait Amy extends _VoiceId
@@ -4919,11 +4922,11 @@ object awsDashSdkStrings {
   sealed trait Average
     extends _MetricAggregationType
        with _MetricStatistic
-       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsApplicationautoscalingMod._MetricStatistic
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
-       with typings.awsDashSdk.clientsRoute53Mod._Statistic
+       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+       with typings.awsDashSdk.clientsRoute53Mod._Statistic
   
   @js.native
   sealed trait AwaitingQuorum
@@ -4935,13 +4938,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait B
     extends _ScalarAttributeType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ScalarAttributeType
+       with typings.awsDashSdk.clientsDynamodbMod._ScalarAttributeType
   
   @js.native
   sealed trait BA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BACKDOOR extends _ThreatIntelIndicatorCategory
@@ -4996,19 +4999,19 @@ object awsDashSdkStrings {
   sealed trait BB
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BEFORE extends _RelativeFileVersionEnum
@@ -5016,8 +5019,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BEGINS_WITH
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _InventoryFilterCondition
   
   @js.native
@@ -5043,8 +5046,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BETWEEN
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _FilterCondition
        with _OperatorType
   
@@ -5052,25 +5055,25 @@ object awsDashSdkStrings {
   sealed trait BF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BIH extends _LanguageCode
@@ -5127,13 +5130,13 @@ object awsDashSdkStrings {
   sealed trait BJ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BLACK
@@ -5178,7 +5181,7 @@ object awsDashSdkStrings {
        with _CompromisedCredentialsEventActionType
        with _PatchAction
        with _WafActionType
-       with typings.awsDashSdk.clientsWafMod._WafActionType
+       with typings.awsDashSdk.clientsWafregionalMod._WafActionType
   
   @js.native
   sealed trait BLUE
@@ -5204,19 +5207,19 @@ object awsDashSdkStrings {
   sealed trait BM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BOD extends _LanguageCode
@@ -5224,7 +5227,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BODY
     extends _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait BOOLEAN extends _FacetAttributeType
@@ -5284,13 +5287,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BQ
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BRAND_NAME extends _EntitySubType
@@ -5316,13 +5319,13 @@ object awsDashSdkStrings {
   sealed trait BS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BUILD
@@ -5333,23 +5336,23 @@ object awsDashSdkStrings {
   sealed trait BUILDING
     extends _DynamicGroupStatus
        with _FleetStatus
-       with typings.awsDashSdk.clientsIotMod._IndexStatus
+       with _IndexStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._Status
   
   @js.native
   sealed trait BUILD_GENERAL1_LARGE
-    extends typings.awsDashSdk.clientsCodebuildMod._ComputeType
-       with typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+    extends typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+       with typings.awsDashSdk.clientsCodebuildMod._ComputeType
   
   @js.native
   sealed trait BUILD_GENERAL1_MEDIUM
-    extends typings.awsDashSdk.clientsCodebuildMod._ComputeType
-       with typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+    extends typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+       with typings.awsDashSdk.clientsCodebuildMod._ComputeType
   
   @js.native
   sealed trait BUILD_GENERAL1_SMALL
-    extends typings.awsDashSdk.clientsCodebuildMod._ComputeType
-       with typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+    extends typings.awsDashSdk.clientsElasticbeanstalkMod._ComputeType
+       with typings.awsDashSdk.clientsCodebuildMod._ComputeType
   
   @js.native
   sealed trait BUILD_ID extends _ArtifactNamespace
@@ -5377,19 +5380,19 @@ object awsDashSdkStrings {
   @js.native
   sealed trait BV
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BYOL extends _LicenseType
@@ -5415,7 +5418,7 @@ object awsDashSdkStrings {
   sealed trait BZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait BZIP2 extends _CompressionType
@@ -5533,7 +5536,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ByteMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait Bytes
@@ -5549,7 +5552,7 @@ object awsDashSdkStrings {
   sealed trait CA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CAA extends _RRType
@@ -5606,8 +5609,8 @@ object awsDashSdkStrings {
        with _HandshakeState
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
-       with typings.awsDashSdk.clientsMediaconvertMod._JobStatus
        with typings.awsDashSdk.clientsIotMod._JobStatus
+       with typings.awsDashSdk.clientsMediaconvertMod._JobStatus
        with _ReservationState
        with _TableRestoreStatusType
   
@@ -5645,20 +5648,21 @@ object awsDashSdkStrings {
   @js.native
   sealed trait CAPABILITY_AUTO_EXPAND
     extends _Capability
-       with typings.awsDashSdk.clientsCloudformationMod._Capability
+       with typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._Capability
   
   @js.native
   sealed trait CAPABILITY_IAM
     extends _Capability
-       with typings.awsDashSdk.clientsCloudformationMod._Capability
+       with typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._Capability
   
   @js.native
   sealed trait CAPABILITY_NAMED_IAM
     extends _Capability
-       with typings.awsDashSdk.clientsCloudformationMod._Capability
+       with typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._Capability
   
   @js.native
-  sealed trait CAPABILITY_RESOURCE_POLICY extends _Capability
+  sealed trait CAPABILITY_RESOURCE_POLICY
+    extends typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._Capability
   
   @js.native
   sealed trait CARD_STEALER extends _ThreatIntelIndicatorCategory
@@ -5712,7 +5716,7 @@ object awsDashSdkStrings {
   sealed trait CC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CCONJ extends _PartOfSpeechTagType
@@ -5721,7 +5725,7 @@ object awsDashSdkStrings {
   sealed trait CD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CELL extends _BlockType
@@ -5740,7 +5744,8 @@ object awsDashSdkStrings {
        with _DvbSubtitleAlignment
   
   @js.native
-  sealed trait CENTOS extends _OperatingSystem
+  sealed trait CENTOS
+    extends typings.awsDashSdk.clientsSsmMod._OperatingSystem
   
   @js.native
   sealed trait CERTIFICATE
@@ -5774,19 +5779,19 @@ object awsDashSdkStrings {
   sealed trait CF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CHA extends _LanguageCode
@@ -5844,19 +5849,19 @@ object awsDashSdkStrings {
   sealed trait CI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CLASSIFICATION
@@ -5928,7 +5933,7 @@ object awsDashSdkStrings {
   sealed trait CM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CMAF_GROUP_SETTINGS extends _OutputGroupType
@@ -5936,7 +5941,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait CMD_LINE
     extends _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
   
   @js.native
   sealed trait CMFC extends _ContainerType
@@ -5945,7 +5950,7 @@ object awsDashSdkStrings {
   sealed trait CN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CNAME
@@ -5956,7 +5961,7 @@ object awsDashSdkStrings {
   sealed trait CO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CODEBUILD extends _ImagePullCredentialsType
@@ -6113,9 +6118,9 @@ object awsDashSdkStrings {
        with _ExportStatus
        with _ExportTaskStatusCode
        with _JobFlowExecutionState
-       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
-       with typings.awsDashSdk.clientsPinpointMod._JobStatus
        with typings.awsDashSdk.clientsIotMod._JobStatus
+       with typings.awsDashSdk.clientsPinpointMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _MatchmakingConfigurationStatus
        with _PlayerSessionStatus
@@ -6173,7 +6178,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait COMPRESS_WHITE_SPACE
     extends _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
   
   @js.native
   sealed trait COMPROMISED
@@ -6320,17 +6325,17 @@ object awsDashSdkStrings {
   @js.native
   sealed trait CONTAINS
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _InventoryFilterCondition
        with _PositionalConstraint
-       with typings.awsDashSdk.clientsWafMod._PositionalConstraint
+       with typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
        with _RuleOperator
   
   @js.native
   sealed trait CONTAINS_WORD
     extends _PositionalConstraint
-       with typings.awsDashSdk.clientsWafMod._PositionalConstraint
+       with typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
   
   @js.native
   sealed trait CONTINUATION_TOKEN extends _StartSelectorType
@@ -6408,13 +6413,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait COUNT
     extends _Select
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._Select
-       with typings.awsDashSdk.clientsConnectMod._Unit
+       with typings.awsDashSdk.clientsDynamodbMod._Select
        with _Unit
+       with typings.awsDashSdk.clientsConnectMod._Unit
        with _WafActionType
-       with typings.awsDashSdk.clientsWafMod._WafActionType
+       with typings.awsDashSdk.clientsWafregionalMod._WafActionType
        with _WafOverrideActionType
-       with typings.awsDashSdk.clientsWafMod._WafOverrideActionType
+       with typings.awsDashSdk.clientsWafregionalMod._WafOverrideActionType
   
   @js.native
   sealed trait COUNT_BY_SEVERITY extends js.Object
@@ -6434,7 +6439,7 @@ object awsDashSdkStrings {
   sealed trait CR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CRAWLER extends _NodeType
@@ -6542,7 +6547,7 @@ object awsDashSdkStrings {
        with _AuditReportStatus
        with _BackupLifecycle
        with _BackupStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
+       with typings.awsDashSdk.clientsDynamodbMod._BackupStatus
        with _CEStatus
        with _CertificateAuthorityStatus
        with _ChannelState
@@ -6560,9 +6565,9 @@ object awsDashSdkStrings {
        with _FileSystemLifecycle
        with typings.awsDashSdk.clientsWorklinkMod._FleetStatus
        with _GlobalTableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._GlobalTableStatus
-       with _IndexStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._IndexStatus
+       with typings.awsDashSdk.clientsDynamodbMod._GlobalTableStatus
+       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._IndexStatus
+       with typings.awsDashSdk.clientsDynamodbMod._IndexStatus
        with _InputState
        with _InputStatus
        with _IpAddressStatus
@@ -6572,7 +6577,7 @@ object awsDashSdkStrings {
        with _NetworkStatus
        with _NodeStatus
        with _ReplicaStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ReplicaStatus
        with _ResolverEndpointStatus
        with _ResolverRuleAssociationStatus
        with _ServerStatus
@@ -6581,7 +6586,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsKinesisvideoMod._Status
        with _StreamStatus
        with _TableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TableStatus
        with _TaskStatus
        with _TriggerState
   
@@ -6637,7 +6642,7 @@ object awsDashSdkStrings {
   sealed trait CU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CURATED
@@ -6649,7 +6654,7 @@ object awsDashSdkStrings {
   sealed trait CURRENT
     extends _RelationalDatabasePasswordVersion
        with _StackInstanceStatus
-       with typings.awsDashSdk.clientsCloudformationMod._StackInstanceStatus
+       with typings.awsDashSdk.clientsServicecatalogMod._StackInstanceStatus
   
   @js.native
   sealed trait CUSTOM
@@ -6696,24 +6701,24 @@ object awsDashSdkStrings {
   sealed trait CV
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CW
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CX
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait CYM extends _LanguageCode
@@ -6722,7 +6727,7 @@ object awsDashSdkStrings {
   sealed trait CZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Cancel extends _StopType
@@ -6784,8 +6789,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait CanonicalUser
-    extends typings.awsDashSdk.clientsS3Mod._Type
-       with typings.awsDashSdk.clientsGlacierMod._Type
+    extends typings.awsDashSdk.clientsGlacierMod._Type
+       with typings.awsDashSdk.clientsS3Mod._Type
   
   @js.native
   sealed trait CapacityForecast extends _ForecastDataType
@@ -7209,8 +7214,8 @@ object awsDashSdkStrings {
     extends _AuditFrequency
        with _Frequency
        with _Granularity
-       with _TimeUnit
        with typings.awsDashSdk.clientsCurMod._TimeUnit
+       with _TimeUnit
   
   @js.native
   sealed trait DAN extends _LanguageCode
@@ -7271,7 +7276,7 @@ object awsDashSdkStrings {
   sealed trait DE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DEACTIVATE extends js.Object
@@ -7292,7 +7297,7 @@ object awsDashSdkStrings {
   sealed trait DEBUG
     extends _EventSeverity
        with _LogLevel
-       with typings.awsDashSdk.clientsIotMod._LogLevel
+       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._LogLevel
        with typings.awsDashSdk.clientsMedialiveMod._LogLevel
        with _LoggerLevel
        with _LoggingLevel
@@ -7314,7 +7319,7 @@ object awsDashSdkStrings {
   sealed trait DEEP_ARCHIVE
     extends _ObjectStorageClass
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -7413,9 +7418,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait DELETE
     extends _AttributeAction
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._AttributeAction
-       with typings.awsDashSdk.clientsWafregionalMod._ChangeAction
+       with typings.awsDashSdk.clientsDynamodbMod._AttributeAction
        with typings.awsDashSdk.clientsWafMod._ChangeAction
+       with typings.awsDashSdk.clientsWafregionalMod._ChangeAction
        with typings.awsDashSdk.clientsRoute53Mod._ChangeAction
        with _ChangeType
        with _HttpMethod
@@ -7435,7 +7440,7 @@ object awsDashSdkStrings {
        with _BackupLifecycle
        with _BackupState
        with _BackupStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
+       with typings.awsDashSdk.clientsDynamodbMod._BackupStatus
        with _CEStatus
        with _CampaignStatus
        with _CertificateAuthorityStatus
@@ -7559,14 +7564,14 @@ object awsDashSdkStrings {
        with _DomainStatusType
        with _EnvironmentLifecycleStatus
        with _FileSystemLifecycle
-       with typings.awsDashSdk.clientsWorklinkMod._FleetStatus
        with _FleetStatus
+       with typings.awsDashSdk.clientsWorklinkMod._FleetStatus
        with _GlobalTableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._GlobalTableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._GlobalTableStatus
        with _ImageBuilderState
        with _ImageState
-       with _IndexStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._IndexStatus
+       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._IndexStatus
+       with typings.awsDashSdk.clientsDynamodbMod._IndexStatus
        with _InputState
        with _InputStatus
        with _IpAddressStatus
@@ -7578,7 +7583,7 @@ object awsDashSdkStrings {
        with _NodeStatus
        with _RecoveryPointStatus
        with _ReplicaStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ReplicaStatus
        with _ReplicationJobState
        with _ReplicationRunState
        with _ResolverEndpointStatus
@@ -7595,7 +7600,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsKinesisvideoMod._Status
        with _StreamStatus
        with _TableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TableStatus
        with _TransformStatusType
        with _TriggerState
        with _VpcLinkStatus
@@ -7638,6 +7643,7 @@ object awsDashSdkStrings {
   sealed trait DENY
     extends _DefaultAction
        with _IAMUserAccessToBilling
+       with _Origination
   
   @js.native
   sealed trait DENY_ALL extends _PlayerSessionCreationPolicy
@@ -7834,7 +7840,7 @@ object awsDashSdkStrings {
        with _AncillaryTerminateCaptions
        with _AntiAlias
        with _AssignPublicIp
-       with typings.awsDashSdk.clientsEcsMod._AssignPublicIp
+       with typings.awsDashSdk.clientsEventbridgeMod._AssignPublicIp
        with typings.awsDashSdk.clientsCloudwatcheventsMod._AssignPublicIp
        with _AutoRenew
        with _AvailBlankingState
@@ -7850,7 +7856,7 @@ object awsDashSdkStrings {
        with _CmafWriteDASHManifest
        with _CmafWriteHLSManifest
        with _ContinuousBackupsStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ContinuousBackupsStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ContinuousBackupsStatus
        with _DashIsoWriteSegmentTimelineInRepresentation
        with _DedicatedTenancySupportResultEnum
        with _DeliverabilityDashboardAccountStatus
@@ -7916,7 +7922,7 @@ object awsDashSdkStrings {
        with _JQState
        with _JobBookmarksEncryptionMode
        with _LicenseConfigurationStatus
-       with typings.awsDashSdk.clientsIotMod._LogLevel
+       with _LogLevel
        with typings.awsDashSdk.clientsMedialiveMod._LogLevel
        with _LogsConfigStatusType
        with _M2tsArib
@@ -7927,14 +7933,14 @@ object awsDashSdkStrings {
        with _Mpeg2TemporalAdaptiveQuantization
        with typings.awsDashSdk.clientsAppstreamMod._Permission
        with _PointInTimeRecoveryStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._PointInTimeRecoveryStatus
+       with typings.awsDashSdk.clientsDynamodbMod._PointInTimeRecoveryStatus
        with _ProresSlowPal
        with _ReconnectEnum
        with _RuleState
        with typings.awsDashSdk.clientsCloudwatcheventsMod._RuleState
        with _S3EncryptionMode
        with _SSEStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with typings.awsDashSdk.clientsDynamodbMod._SSEStatus
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with _Scte20Convert608To708
        with _SettablePolicyStateValues
@@ -7942,7 +7948,7 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
        with _TimeToLiveStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TimeToLiveStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
        with _TtmlStylePassthrough
        with _VideoTimecodeInsertion
        with _WorkGroupState
@@ -7954,11 +7960,11 @@ object awsDashSdkStrings {
   sealed trait DISABLING
     extends _DeliveryStreamEncryptionStatus
        with _SSEStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with typings.awsDashSdk.clientsDynamodbMod._SSEStatus
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _TimeToLiveStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TimeToLiveStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
   
   @js.native
   sealed trait DISALLOW extends _FileExistsBehavior
@@ -8015,19 +8021,19 @@ object awsDashSdkStrings {
   sealed trait DJ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DML extends _StatementType
@@ -8048,7 +8054,7 @@ object awsDashSdkStrings {
   sealed trait DO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DOCKER extends _LanguageType
@@ -8299,7 +8305,7 @@ object awsDashSdkStrings {
   sealed trait DZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait DZO extends _LanguageCode
@@ -8678,14 +8684,14 @@ object awsDashSdkStrings {
   sealed trait EC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait EC2
     extends _CRType
        with _Compatibility
        with _LaunchType
-       with typings.awsDashSdk.clientsEcsMod._LaunchType
+       with typings.awsDashSdk.clientsEventbridgeMod._LaunchType
        with typings.awsDashSdk.clientsCloudwatcheventsMod._LaunchType
   
   @js.native
@@ -8778,7 +8784,7 @@ object awsDashSdkStrings {
   sealed trait EE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait EFS extends _FileSystemType
@@ -8787,12 +8793,12 @@ object awsDashSdkStrings {
   sealed trait EG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait EH
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait `EIP-ASSOCIATE` extends _InterfacePermissionType
@@ -8884,7 +8890,7 @@ object awsDashSdkStrings {
        with _AccessStatus
        with _AntiAlias
        with _AssignPublicIp
-       with typings.awsDashSdk.clientsEcsMod._AssignPublicIp
+       with typings.awsDashSdk.clientsEventbridgeMod._AssignPublicIp
        with typings.awsDashSdk.clientsCloudwatcheventsMod._AssignPublicIp
        with _AutoRenew
        with _AvailBlankingState
@@ -8896,7 +8902,7 @@ object awsDashSdkStrings {
        with _CmafWriteDASHManifest
        with _CmafWriteHLSManifest
        with _ContinuousBackupsStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ContinuousBackupsStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ContinuousBackupsStatus
        with _DashIsoWriteSegmentTimelineInRepresentation
        with _DedicatedTenancySupportResultEnum
        with _DeliveryStreamEncryptionStatus
@@ -8962,21 +8968,21 @@ object awsDashSdkStrings {
        with _Mpeg2TemporalAdaptiveQuantization
        with typings.awsDashSdk.clientsAppstreamMod._Permission
        with _PointInTimeRecoveryStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._PointInTimeRecoveryStatus
+       with typings.awsDashSdk.clientsDynamodbMod._PointInTimeRecoveryStatus
        with _PolicyTypeStatus
        with _ProresSlowPal
        with _ReconnectEnum
        with _RuleState
        with typings.awsDashSdk.clientsCloudwatcheventsMod._RuleState
        with _SSEStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with typings.awsDashSdk.clientsDynamodbMod._SSEStatus
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with _SettablePolicyStateValues
        with _SimulateReservedQueue
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
        with _TimeToLiveStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TimeToLiveStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
        with _TtmlStylePassthrough
        with _WorkGroupState
   
@@ -8993,11 +8999,11 @@ object awsDashSdkStrings {
   sealed trait ENABLING
     extends _DeliveryStreamEncryptionStatus
        with _SSEStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with typings.awsDashSdk.clientsDynamodbMod._SSEStatus
        with typings.awsDashSdk.clientsDaxMod._SSEStatus
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _TimeToLiveStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TimeToLiveStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
   
   @js.native
   sealed trait ENCIPHER_ONLY extends _KeyUsageName
@@ -9023,7 +9029,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ENDS_WITH
     extends _PositionalConstraint
-       with typings.awsDashSdk.clientsWafMod._PositionalConstraint
+       with typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
   
   @js.native
   sealed trait END_DATE extends _ValidityPeriodType
@@ -9066,11 +9072,11 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EQ
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _FilterCondition
        with _OperatorType
   
@@ -9098,7 +9104,7 @@ object awsDashSdkStrings {
   sealed trait ER
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ERROR
@@ -9113,11 +9119,11 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsMediaconvertMod._JobStatus
        with _LogFilter
        with _LogLevel
-       with typings.awsDashSdk.clientsIotMod._LogLevel
+       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._LogLevel
        with typings.awsDashSdk.clientsMedialiveMod._LogLevel
        with _LoggerLevel
-       with typings.awsDashSdk.clientsApigatewayv2Mod._LoggingLevel
        with _LoggingLevel
+       with typings.awsDashSdk.clientsApigatewayv2Mod._LoggingLevel
        with typings.awsDashSdk.clientsRoute53domainsMod._OperationStatus
        with _PhaseStatus
        with _ProvisionedProductStatus
@@ -9142,7 +9148,7 @@ object awsDashSdkStrings {
   sealed trait ES
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait EST extends _LanguageCode
@@ -9163,7 +9169,7 @@ object awsDashSdkStrings {
   sealed trait ET
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ETag extends _InventoryOptionalField
@@ -9185,8 +9191,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait EVENT
-    extends typings.awsDashSdk.clientsComprehendMod._EntityType
-       with _EntityType
+    extends _EntityType
+       with typings.awsDashSdk.clientsComprehendMod._EntityType
        with _Frequency
        with _PlaylistType
        with _WebhookFilterType
@@ -9203,7 +9209,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait EXACTLY
     extends _PositionalConstraint
-       with typings.awsDashSdk.clientsWafMod._PositionalConstraint
+       with typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
   
   @js.native
   sealed trait EXACT_CAPACITY extends _AdjustmentType
@@ -9625,15 +9631,15 @@ object awsDashSdkStrings {
        with _DetectorModelVersionStatus
        with typings.awsDashSdk.clientsAlexaforbusinessMod._DeviceStatus
        with _DkimStatus
-       with typings.awsDashSdk.clientsAcmMod._DomainStatus
        with typings.awsDashSdk.clientsAmplifyMod._DomainStatus
+       with typings.awsDashSdk.clientsAcmMod._DomainStatus
        with _DomainStatusType
        with _EntityStatus
        with _EventType
        with _ExecutionResult
        with _ExecutionStatus
-       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._ExportStatus
+       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with _ExportTaskStatusCode
        with _FileSystemLifecycle
        with _FlowExecutionStatus
@@ -9646,12 +9652,12 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
        with _JobFlowExecutionState
        with _JobRunState
-       with typings.awsDashSdk.clientsTextractMod._JobStatus
-       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
-       with typings.awsDashSdk.clientsPinpointMod._JobStatus
-       with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with typings.awsDashSdk.clientsBatchMod._JobStatus
+       with typings.awsDashSdk.clientsPinpointMod._JobStatus
        with typings.awsDashSdk.clientsAmplifyMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
+       with typings.awsDashSdk.clientsTextractMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _LastCrawlStatus
        with _LifecyclePolicyPreviewStatus
        with _LoadBalancerTlsCertificateDomainStatus
@@ -9689,9 +9695,10 @@ object awsDashSdkStrings {
        with _StackSetOperationResultStatus
        with _StackSetOperationStatus
        with _StandardsStatus
-       with typings.awsDashSdk.clientsMigrationhubMod._Status
-       with typings.awsDashSdk.clientsServicecatalogMod._Status
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._Status
+       with typings.awsDashSdk.clientsServicecatalogMod._Status
+       with typings.awsDashSdk.clientsMigrationhubMod._Status
+       with typings.awsDashSdk.clientsMediapackageMod._Status
        with typings.awsDashSdk.clientsCodebuildMod._StatusType
        with _StepExecutionState
        with _StepState
@@ -9773,7 +9780,7 @@ object awsDashSdkStrings {
   sealed trait FARGATE
     extends _Compatibility
        with _LaunchType
-       with typings.awsDashSdk.clientsEcsMod._LaunchType
+       with typings.awsDashSdk.clientsEventbridgeMod._LaunchType
        with typings.awsDashSdk.clientsCloudwatcheventsMod._LaunchType
   
   @js.native
@@ -9802,7 +9809,7 @@ object awsDashSdkStrings {
   sealed trait FI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FIELD1_608 extends _RtmpCaptionData
@@ -9917,13 +9924,13 @@ object awsDashSdkStrings {
   sealed trait FJ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FLEET_ACTIVATION_FAILED extends _EventCode
@@ -10021,13 +10028,13 @@ object awsDashSdkStrings {
   sealed trait FM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FOLDER
@@ -10164,7 +10171,7 @@ object awsDashSdkStrings {
   sealed trait FR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait FRA extends _LanguageCode
@@ -10235,8 +10242,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait FULL_CONTROL
     extends _BucketLogsPermission
-       with typings.awsDashSdk.clientsS3Mod._Permission
        with typings.awsDashSdk.clientsGlacierMod._Permission
+       with typings.awsDashSdk.clientsS3Mod._Permission
        with _S3Permission
   
   @js.native
@@ -10346,7 +10353,8 @@ object awsDashSdkStrings {
   sealed trait FailedTasksOnly extends _JobReportScope
   
   @js.native
-  sealed trait FailedToValidate extends _OptionState
+  sealed trait FailedToValidate
+    extends typings.awsDashSdk.clientsCloudsearchMod._OptionState
   
   @js.native
   sealed trait Failing extends _JobStatus
@@ -10448,7 +10456,7 @@ object awsDashSdkStrings {
   sealed trait GA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GAME_SESSION_ACTIVATION_TIMEOUT extends _EventCode
@@ -10460,7 +10468,7 @@ object awsDashSdkStrings {
   sealed trait GB
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GCM
@@ -10471,7 +10479,7 @@ object awsDashSdkStrings {
   sealed trait GD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GDOT1X extends _WorkerType
@@ -10481,14 +10489,14 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait GE
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _OperatorType
   
   @js.native
@@ -10528,18 +10536,18 @@ object awsDashSdkStrings {
   @js.native
   sealed trait GF
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GG
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GHz
@@ -10550,7 +10558,7 @@ object awsDashSdkStrings {
   sealed trait GI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GIGA_BITS extends _Unit
@@ -10584,7 +10592,7 @@ object awsDashSdkStrings {
   sealed trait GL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GLA extends _LanguageCode
@@ -10593,7 +10601,7 @@ object awsDashSdkStrings {
   sealed trait GLACIER
     extends _ObjectStorageClass
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -10610,13 +10618,13 @@ object awsDashSdkStrings {
   sealed trait GM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GOLANG extends _LanguageType
@@ -10636,7 +10644,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait GP
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GPU
@@ -10646,13 +10654,13 @@ object awsDashSdkStrings {
   sealed trait GQ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GRAPHICS extends _Compute
@@ -10670,8 +10678,8 @@ object awsDashSdkStrings {
   sealed trait GREATER_THAN
     extends _AssociationFilterOperatorType
        with typings.awsDashSdk.clientsGlueMod._Comparator
-       with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with typings.awsDashSdk.clientsEmrMod._ComparisonOperator
+       with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with _ComplianceQueryOperatorType
        with _RuleOperator
        with _ThresholdComparator
@@ -10716,30 +10724,30 @@ object awsDashSdkStrings {
        with _PrincipalType
        with typings.awsDashSdk.clientsGlueMod._PrincipalType
        with _WafRuleType
-       with typings.awsDashSdk.clientsWafMod._WafRuleType
+       with typings.awsDashSdk.clientsWafregionalMod._WafRuleType
        with _policyOwnerEntityType
   
   @js.native
   sealed trait GS
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GT
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GUJ extends _LanguageCode
@@ -10748,19 +10756,19 @@ object awsDashSdkStrings {
   sealed trait GW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait GZIP
     extends _CmafManifestCompression
        with _CompressionFormat
-       with typings.awsDashSdk.clientsCurMod._CompressionFormat
+       with typings.awsDashSdk.clientsFirehoseMod._CompressionFormat
        with _CompressionType
        with _HlsManifestCompression
        with typings.awsDashSdk.clientsMedialiveMod._HlsManifestCompression
@@ -10792,7 +10800,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait GeoMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait Geraint extends _VoiceId
@@ -10856,14 +10864,14 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait GreaterThanOrEqualToThreshold
-    extends typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
-       with typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+    extends typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+       with typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
        with _ComparisonOperatorType
   
   @js.native
   sealed trait GreaterThanThreshold
-    extends typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
-       with typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+    extends typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+       with typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
        with _ComparisonOperatorType
   
   @js.native
@@ -10894,8 +10902,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait Group
     extends typings.awsDashSdk.clientsIamMod._EntityType
-       with typings.awsDashSdk.clientsS3Mod._Type
        with typings.awsDashSdk.clientsGlacierMod._Type
+       with typings.awsDashSdk.clientsS3Mod._Type
   
   @js.native
   sealed trait GroupPolicySizeQuota extends _summaryKeyType
@@ -11037,8 +11045,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait HASH
     extends _KeyType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._KeyType
        with typings.awsDashSdk.clientsDynamodbMod._KeyType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._KeyType
   
   @js.native
   sealed trait HASH_MD5 extends _ThreatIntelIndicatorType
@@ -11062,7 +11070,7 @@ object awsDashSdkStrings {
   sealed trait HBBTV_1_5
     extends _DashIsoHbbtvCompliance
        with _Profile
-       with typings.awsDashSdk.clientsMediapackagevodMod._Profile
+       with typings.awsDashSdk.clientsMediapackageMod._Profile
   
   @js.native
   sealed trait HD
@@ -11082,7 +11090,7 @@ object awsDashSdkStrings {
   sealed trait HEADER
     extends _ApiKeySourceType
        with _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait HEAD_REF extends _WebhookFilterType
@@ -11222,7 +11230,7 @@ object awsDashSdkStrings {
   sealed trait HK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HLG_2020 extends _ColorSpace
@@ -11233,7 +11241,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait HM
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HMO extends _LanguageCode
@@ -11242,7 +11250,7 @@ object awsDashSdkStrings {
   sealed trait HN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HOLD_TIME extends _HistoricalMetricName
@@ -11278,7 +11286,7 @@ object awsDashSdkStrings {
   sealed trait HR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HRV extends _LanguageCode
@@ -11290,7 +11298,7 @@ object awsDashSdkStrings {
   sealed trait HT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HTML extends _ReportFileFormat
@@ -11298,7 +11306,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait HTML_ENTITY_DECODE
     extends _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
   
   @js.native
   sealed trait HTTP
@@ -11361,7 +11369,7 @@ object awsDashSdkStrings {
   sealed trait HU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait HUN extends _LanguageCode
@@ -11486,7 +11494,7 @@ object awsDashSdkStrings {
     extends _CelebrityRecognitionSortBy
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IDENTIFIER extends _EntitySubType
@@ -11507,13 +11515,13 @@ object awsDashSdkStrings {
   sealed trait IE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IGNORE
     extends _ColorMetadata
        with _FileHeaderInfo
-       with typings.awsDashSdk.clientsGlacierMod._FileHeaderInfo
+       with typings.awsDashSdk.clientsS3Mod._FileHeaderInfo
        with _H264ColorMetadata
        with _H265ColorMetadata
        with _Scte35AposNoRegionalBlackoutBehavior
@@ -11538,7 +11546,7 @@ object awsDashSdkStrings {
   sealed trait IL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ILE extends _LanguageCode
@@ -11547,7 +11555,7 @@ object awsDashSdkStrings {
   sealed trait IM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IMAGE_BUILDER_NOT_AVAILABLE extends _ImageStateChangeReasonCode
@@ -11633,12 +11641,12 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IN
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _FilterCondition
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _NetworkDirection
        with _RuleOperator
   
@@ -11649,8 +11657,8 @@ object awsDashSdkStrings {
   sealed trait INACTIVE
     extends _AuthorizerStatus
        with _CACertificateStatus
-       with typings.awsDashSdk.clientsAcmMod._CertificateStatus
        with _CertificateStatus
+       with typings.awsDashSdk.clientsAcmMod._CertificateStatus
        with _ContinuousExportStatus
        with _DetectorModelVersionStatus
        with _DomainStatus
@@ -11689,7 +11697,7 @@ object awsDashSdkStrings {
        with _Mp4CslgAtom
        with _Mp4FreeSpaceBox
        with _ProjectionType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
+       with typings.awsDashSdk.clientsDynamodbMod._ProjectionType
   
   @js.native
   sealed trait INCLUDE_LAST_FRAME extends _LastFrameClippingBehavior
@@ -11718,7 +11726,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait INDEXES
     extends _ReturnConsumedCapacity
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnConsumedCapacity
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnConsumedCapacity
   
   @js.native
   sealed trait INDEX_SLOW_LOGS extends _LogType
@@ -11731,11 +11739,11 @@ object awsDashSdkStrings {
     extends _EventSeverity
        with _LogFilter
        with _LogLevel
-       with typings.awsDashSdk.clientsIotMod._LogLevel
+       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._LogLevel
        with typings.awsDashSdk.clientsMedialiveMod._LogLevel
        with _LoggerLevel
-       with typings.awsDashSdk.clientsApigatewayv2Mod._LoggingLevel
        with _LoggingLevel
+       with typings.awsDashSdk.clientsApigatewayv2Mod._LoggingLevel
        with _UpdateAgentLogLevel
   
   @js.native
@@ -11786,7 +11794,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait INOPERABLE
     extends _StackInstanceStatus
-       with typings.awsDashSdk.clientsCloudformationMod._StackInstanceStatus
+       with typings.awsDashSdk.clientsServicecatalogMod._StackInstanceStatus
   
   @js.native
   sealed trait INPROGRESS
@@ -11802,8 +11810,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait INSERT
-    extends typings.awsDashSdk.clientsWafregionalMod._ChangeAction
-       with typings.awsDashSdk.clientsWafMod._ChangeAction
+    extends typings.awsDashSdk.clientsWafMod._ChangeAction
+       with typings.awsDashSdk.clientsWafregionalMod._ChangeAction
        with _ColorMetadata
        with _H264ColorMetadata
        with _H265AlternativeTransferFunction
@@ -11905,7 +11913,7 @@ object awsDashSdkStrings {
   sealed trait INSYNC
     extends _ChangeStatus
        with _ChangeTokenStatus
-       with typings.awsDashSdk.clientsWafMod._ChangeTokenStatus
+       with typings.awsDashSdk.clientsWafregionalMod._ChangeTokenStatus
   
   @js.native
   sealed trait INTEGER
@@ -11923,7 +11931,7 @@ object awsDashSdkStrings {
   sealed trait INTELLIGENT_TIERING
     extends _ObjectStorageClass
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -12106,15 +12114,15 @@ object awsDashSdkStrings {
        with _DeliverabilityTestStatus
        with _DeploymentStatus
        with typings.awsDashSdk.clientsAmplifyMod._DomainStatus
-       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._ExportStatus
        with _ExportStatus
+       with typings.awsDashSdk.clientsDiscoveryMod._ExportStatus
        with _ImportStatus
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
-       with typings.awsDashSdk.clientsTextractMod._JobStatus
-       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsIotMod._JobStatus
+       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
+       with typings.awsDashSdk.clientsTextractMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
        with _LifecyclePolicyPreviewStatus
        with _MaintenanceWindowExecutionStatus
@@ -12126,6 +12134,7 @@ object awsDashSdkStrings {
        with _RemediationExecutionState
        with _ShareStatus
        with typings.awsDashSdk.clientsMigrationhubMod._Status
+       with typings.awsDashSdk.clientsMediapackageMod._Status
        with typings.awsDashSdk.clientsCodebuildMod._StatusType
        with _TableRestoreStatusType
        with _TranscriptionJobStatus
@@ -12152,7 +12161,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IO
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IOS extends _DevicePlatform
@@ -12174,7 +12183,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IPMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait IPSEC_END_SYSTEM extends _ExtendedKeyUsageName
@@ -12188,7 +12197,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IPV4
     extends _IPSetDescriptorType
-       with typings.awsDashSdk.clientsWafMod._IPSetDescriptorType
+       with typings.awsDashSdk.clientsWafregionalMod._IPSetDescriptorType
   
   @js.native
   sealed trait IPV4_ADDRESS
@@ -12198,7 +12207,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait IPV6
     extends _IPSetDescriptorType
-       with typings.awsDashSdk.clientsWafMod._IPSetDescriptorType
+       with typings.awsDashSdk.clientsWafregionalMod._IPSetDescriptorType
   
   @js.native
   sealed trait IPV6_ADDRESS
@@ -12209,20 +12218,20 @@ object awsDashSdkStrings {
   sealed trait IQ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait IS
     extends _CountryCode
        with _FilterConditionString
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ISL extends _LanguageCode
@@ -12242,7 +12251,7 @@ object awsDashSdkStrings {
   sealed trait IT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ITA extends _LanguageCode
@@ -12675,19 +12684,19 @@ object awsDashSdkStrings {
   @js.native
   sealed trait JE
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait JM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait JO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait JOB
@@ -12705,7 +12714,7 @@ object awsDashSdkStrings {
   sealed trait JP
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait JPN extends _LanguageCode
@@ -12782,7 +12791,7 @@ object awsDashSdkStrings {
   sealed trait KE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KEEP_ALIVE extends _InstanceAction
@@ -12808,10 +12817,10 @@ object awsDashSdkStrings {
   @js.native
   sealed trait KEYS_ONLY
     extends _ProjectionType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
+       with typings.awsDashSdk.clientsDynamodbMod._ProjectionType
        with _StreamViewType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamViewType
        with typings.awsDashSdk.clientsDynamodbMod._StreamViewType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait KEY_AGREEMENT extends _KeyUsageName
@@ -12848,13 +12857,13 @@ object awsDashSdkStrings {
   sealed trait KG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KHM extends _LanguageCode
@@ -12863,7 +12872,7 @@ object awsDashSdkStrings {
   sealed trait KI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KIK extends _LanguageCode
@@ -12890,7 +12899,7 @@ object awsDashSdkStrings {
   sealed trait KM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KMS
@@ -12898,13 +12907,13 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsXrayMod._EncryptionType
        with _S3SSEAlgorithm
        with _SSEType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEType
+       with typings.awsDashSdk.clientsDynamodbMod._SSEType
   
   @js.native
   sealed trait KN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KOM extends _LanguageCode
@@ -12919,13 +12928,13 @@ object awsDashSdkStrings {
   sealed trait KP
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KUA extends _LanguageCode
@@ -12937,19 +12946,19 @@ object awsDashSdkStrings {
   sealed trait KW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait KZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Karl extends _VoiceId
@@ -13013,7 +13022,7 @@ object awsDashSdkStrings {
   sealed trait LA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LABELING_SET_GENERATION extends _TaskType
@@ -13100,7 +13109,7 @@ object awsDashSdkStrings {
   sealed trait LB
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LC
@@ -13108,15 +13117,15 @@ object awsDashSdkStrings {
        with _AacProfile
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LE
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _OperatorType
   
   @js.native
@@ -13142,8 +13151,8 @@ object awsDashSdkStrings {
   sealed trait LESS_THAN
     extends _AssociationFilterOperatorType
        with typings.awsDashSdk.clientsGlueMod._Comparator
-       with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with typings.awsDashSdk.clientsEmrMod._ComparisonOperator
+       with typings.awsDashSdk.clientsBudgetsMod._ComparisonOperator
        with _ComplianceQueryOperatorType
        with _RuleOperator
   
@@ -13247,7 +13256,7 @@ object awsDashSdkStrings {
   sealed trait LI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LIGHT_UTILIZATION extends _PaymentOption
@@ -13319,7 +13328,7 @@ object awsDashSdkStrings {
   sealed trait LK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LOCAL
@@ -13376,7 +13385,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait LOWERCASE
     extends _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
   
   @js.native
   sealed trait LOW_BRIGHTNESS extends _Reason
@@ -13396,24 +13405,24 @@ object awsDashSdkStrings {
   sealed trait LR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LT
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LTZ extends _LanguageCode
@@ -13427,7 +13436,7 @@ object awsDashSdkStrings {
   sealed trait LU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LUB extends _LanguageCode
@@ -13443,13 +13452,13 @@ object awsDashSdkStrings {
   sealed trait LV
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait LY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Lambda
@@ -13580,14 +13589,14 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait LessThanOrEqualToThreshold
-    extends typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
-       with typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+    extends typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+       with typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
        with _ComparisonOperatorType
   
   @js.native
   sealed trait LessThanThreshold
-    extends typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
-       with typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+    extends typings.awsDashSdk.clientsCloudwatchMod._ComparisonOperator
+       with typings.awsDashSdk.clientsRoute53Mod._ComparisonOperator
        with _ComparisonOperatorType
   
   @js.native
@@ -13702,7 +13711,7 @@ object awsDashSdkStrings {
   sealed trait MA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MACHINE_ROLE_IS_MISSING extends _FleetErrorCode
@@ -13877,19 +13886,19 @@ object awsDashSdkStrings {
   sealed trait MC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ME
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MEAN extends _NoiseReducerFilter
@@ -13967,7 +13976,7 @@ object awsDashSdkStrings {
   sealed trait METHOD
     extends _DocumentationPartType
        with _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait METRIC extends _DistanceUnit
@@ -13979,7 +13988,7 @@ object awsDashSdkStrings {
   sealed trait MF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MFADevices extends _summaryKeyType
@@ -14000,13 +14009,13 @@ object awsDashSdkStrings {
   sealed trait MG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MHz
@@ -14071,7 +14080,7 @@ object awsDashSdkStrings {
   sealed trait MK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MKD extends _LanguageCode
@@ -14083,7 +14092,7 @@ object awsDashSdkStrings {
   sealed trait ML
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MLG extends _LanguageCode
@@ -14106,19 +14115,19 @@ object awsDashSdkStrings {
   sealed trait MM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MOBILE extends _PhoneNumberType
@@ -14182,7 +14191,7 @@ object awsDashSdkStrings {
   sealed trait MP
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MP2 extends _AudioCodec
@@ -14218,13 +14227,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait MQ
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MRI extends _LanguageCode
@@ -14233,7 +14242,7 @@ object awsDashSdkStrings {
   sealed trait MS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait `MS-CHAPv1` extends _RadiusAuthenticationProtocol
@@ -14256,13 +14265,13 @@ object awsDashSdkStrings {
   sealed trait MT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MULTICLASS extends _MLModelType
@@ -14323,19 +14332,19 @@ object awsDashSdkStrings {
   sealed trait MV
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MX
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _RRType
   
   @js.native
@@ -14348,7 +14357,7 @@ object awsDashSdkStrings {
   sealed trait MY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait MYA extends _LanguageCode
@@ -14357,7 +14366,7 @@ object awsDashSdkStrings {
   sealed trait MZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Mads extends _VoiceId
@@ -14458,11 +14467,11 @@ object awsDashSdkStrings {
   sealed trait Maximum
     extends _MetricAggregationType
        with _MetricStatistic
-       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsApplicationautoscalingMod._MetricStatistic
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
-       with typings.awsDashSdk.clientsRoute53Mod._Statistic
+       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+       with typings.awsDashSdk.clientsRoute53Mod._Statistic
   
   @js.native
   sealed trait MaximumMessageSize extends _QueueAttributeName
@@ -14552,11 +14561,11 @@ object awsDashSdkStrings {
   sealed trait Minimum
     extends _MetricAggregationType
        with _MetricStatistic
-       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsApplicationautoscalingMod._MetricStatistic
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
-       with typings.awsDashSdk.clientsRoute53Mod._Statistic
+       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+       with typings.awsDashSdk.clientsRoute53Mod._Statistic
   
   @js.native
   sealed trait MismatchedEtag extends _SimulationJobErrorCode
@@ -14602,13 +14611,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait N
     extends _ScalarAttributeType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ScalarAttributeType
+       with typings.awsDashSdk.clientsDynamodbMod._ScalarAttributeType
   
   @js.native
   sealed trait NA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NAME
@@ -14665,7 +14674,7 @@ object awsDashSdkStrings {
   sealed trait NC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NDE extends _LanguageCode
@@ -14675,14 +14684,14 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait NE
-    extends typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+    extends _ComparisonOperator
        with typings.awsDashSdk.clientsWafMod._ComparisonOperator
-       with _ComparisonOperator
+       with typings.awsDashSdk.clientsWafregionalMod._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NEGATION extends _AttributeName
@@ -14735,14 +14744,14 @@ object awsDashSdkStrings {
   @js.native
   sealed trait NEW_AND_OLD_IMAGES
     extends _StreamViewType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamViewType
        with typings.awsDashSdk.clientsDynamodbMod._StreamViewType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait NEW_IMAGE
     extends _StreamViewType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamViewType
        with typings.awsDashSdk.clientsDynamodbMod._StreamViewType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait NEW_PASSWORD_REQUIRED extends _ChallengeNameType
@@ -14753,7 +14762,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait NF
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NFS extends _FileShareType
@@ -14771,19 +14780,19 @@ object awsDashSdkStrings {
   sealed trait NG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NLD extends _LanguageCode
@@ -14795,7 +14804,7 @@ object awsDashSdkStrings {
   sealed trait NO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _RequirePin
        with _VoteValue
   
@@ -14819,7 +14828,7 @@ object awsDashSdkStrings {
        with _Ac3DrcProfile
        with _Ac3DynamicRangeCompressionProfile
        with _AdMarkers
-       with typings.awsDashSdk.clientsMediapackagevodMod._AdMarkers
+       with typings.awsDashSdk.clientsMediapackageMod._AdMarkers
        with _AdsOnDeliveryRestrictions
        with _AfdSignaling
        with typings.awsDashSdk.clientsMedialiveMod._AfdSignaling
@@ -14857,7 +14866,7 @@ object awsDashSdkStrings {
        with _ExtendedKeyUsageName
        with _FieldLogLevel
        with _FileHeaderInfo
-       with typings.awsDashSdk.clientsGlacierMod._FileHeaderInfo
+       with typings.awsDashSdk.clientsS3Mod._FileHeaderInfo
        with _Gid
        with _GlobalConfigurationInputEndAction
        with _H264Telecine
@@ -14891,27 +14900,27 @@ object awsDashSdkStrings {
        with _PosixPermissions
        with _PreserveDevices
        with _Profile
-       with typings.awsDashSdk.clientsMediapackagevodMod._Profile
+       with typings.awsDashSdk.clientsMediapackageMod._Profile
        with _ProresTelecine
        with _QualityFilter
        with _RealtimeEndpointStatus
        with _RepoUpgradeOnBoot
        with _RespondToAfd
        with _ReturnConsumedCapacity
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnConsumedCapacity
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnConsumedCapacity
        with _ReturnItemCollectionMetrics
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnItemCollectionMetrics
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnItemCollectionMetrics
        with _ReturnValue
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValue
        with _ReturnValuesOnConditionCheckFailure
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValuesOnConditionCheckFailure
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValuesOnConditionCheckFailure
        with _S3OneTimeClassificationType
        with _Scte35DeviceRestrictions
        with _SmoothGroupEventStopBehavior
        with _SmoothGroupSparseTrackType
        with _SourceType
        with _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
        with _TimedMetadata
        with _Type
        with _UdpTimedMetadataId3Frame
@@ -14921,7 +14930,7 @@ object awsDashSdkStrings {
        with _VerifyMode
        with _VideoDescriptionRespondToAfd
        with _WafOverrideActionType
-       with typings.awsDashSdk.clientsWafMod._WafOverrideActionType
+       with typings.awsDashSdk.clientsWafregionalMod._WafOverrideActionType
   
   @js.native
   sealed trait NON_CHUNKED
@@ -14989,8 +14998,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait NOT_CONTAINS
     extends _ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
        with typings.awsDashSdk.clientsLakeformationMod._ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
   
   @js.native
   sealed trait NOT_DEFAULT extends _AudioDefaultSelection
@@ -15036,7 +15045,7 @@ object awsDashSdkStrings {
   sealed trait NOT_NULL
     extends _ColumnNullable
        with _ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
   
   @js.native
   sealed trait NOT_READY extends _TransformStatusType
@@ -15152,13 +15161,13 @@ object awsDashSdkStrings {
   sealed trait NP
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NS extends _RRType
@@ -15167,12 +15176,12 @@ object awsDashSdkStrings {
   sealed trait NU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait NULL
     extends _ComparisonOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ComparisonOperator
   
   @js.native
   sealed trait NULLABLE extends _ColumnNullable
@@ -15204,7 +15213,7 @@ object awsDashSdkStrings {
   sealed trait NZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait N_TO_N extends _ArrayJobDependency
@@ -15452,14 +15461,14 @@ object awsDashSdkStrings {
   @js.native
   sealed trait OLD_IMAGE
     extends _StreamViewType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamViewType
        with typings.awsDashSdk.clientsDynamodbMod._StreamViewType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait OM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait OMIT
@@ -15486,7 +15495,7 @@ object awsDashSdkStrings {
   sealed trait ONEZONE_IA
     extends _ObjectStorageClass
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
@@ -15526,8 +15535,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ON_DEMAND
     extends _DASHPlaybackMode
-       with _FleetType
        with typings.awsDashSdk.clientsGameliftMod._FleetType
+       with _FleetType
        with _HLSPlaybackMode
        with _MarketType
        with _PricingPlan
@@ -15628,7 +15637,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait OR
     extends _ConditionalOperator
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ConditionalOperator
+       with typings.awsDashSdk.clientsDynamodbMod._ConditionalOperator
   
   @js.native
   sealed trait ORC extends _InventoryFormat
@@ -15662,7 +15671,7 @@ object awsDashSdkStrings {
   sealed trait ORIGINAL
     extends _DocumentSourceType
        with _StreamOrder
-       with typings.awsDashSdk.clientsMediapackagevodMod._StreamOrder
+       with typings.awsDashSdk.clientsMediapackageMod._StreamOrder
   
   @js.native
   sealed trait ORIGINAL_VALUE extends _SlotValueSelectionStrategy
@@ -15714,7 +15723,7 @@ object awsDashSdkStrings {
   sealed trait OUTDATED
     extends _AggregatedSourceStatusType
        with _StackInstanceStatus
-       with typings.awsDashSdk.clientsCloudformationMod._StackInstanceStatus
+       with typings.awsDashSdk.clientsServicecatalogMod._StackInstanceStatus
   
   @js.native
   sealed trait OUTPUT extends _ReservationResourceType
@@ -15855,7 +15864,7 @@ object awsDashSdkStrings {
   sealed trait PA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PACKETS
@@ -15912,8 +15921,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait PARTIAL_SUCCESS
-    extends typings.awsDashSdk.clientsTextractMod._JobStatus
-       with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
+    extends typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
+       with typings.awsDashSdk.clientsTextractMod._JobStatus
   
   @js.native
   sealed trait PARTIAL_UPFRONT
@@ -15931,7 +15940,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PASSTHROUGH
     extends _AdMarkers
-       with typings.awsDashSdk.clientsMediapackagevodMod._AdMarkers
+       with typings.awsDashSdk.clientsMediapackageMod._AdMarkers
        with _AudioCodec
        with _M2tsEbifControl
        with _M2tsKlv
@@ -15997,7 +16006,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PAY_PER_REQUEST
     extends _BillingMode
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BillingMode
+       with typings.awsDashSdk.clientsDynamodbMod._BillingMode
   
   @js.native
   sealed trait PCA_ACCESS_DENIED extends _FailureReason
@@ -16037,7 +16046,7 @@ object awsDashSdkStrings {
   sealed trait PE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PEM extends _encodingType
@@ -16050,7 +16059,7 @@ object awsDashSdkStrings {
        with _BackupJobState
        with _ChangeStatus
        with _ChangeTokenStatus
-       with typings.awsDashSdk.clientsWafMod._ChangeTokenStatus
+       with typings.awsDashSdk.clientsWafregionalMod._ChangeTokenStatus
        with _DedicatedTenancyModificationStateEnum
        with typings.awsDashSdk.clientsApigatewayv2Mod._DeploymentStatus
        with _DesiredStatus
@@ -16174,8 +16183,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait PERCENT
-    extends typings.awsDashSdk.clientsConnectMod._Unit
-       with _Unit
+    extends _Unit
+       with typings.awsDashSdk.clientsConnectMod._Unit
   
   @js.native
   sealed trait PERCENTAGE extends _ThresholdType
@@ -16207,19 +16216,19 @@ object awsDashSdkStrings {
   sealed trait PF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PHONE extends _DeviceFormFactor
@@ -16252,13 +16261,13 @@ object awsDashSdkStrings {
   sealed trait PK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PLACING extends _MatchmakingConfigurationStatus
@@ -16285,13 +16294,13 @@ object awsDashSdkStrings {
   sealed trait PM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PNG extends _MotionImageInsertionMode
@@ -16346,7 +16355,7 @@ object awsDashSdkStrings {
   sealed trait PR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PREFERRED extends _Criticality
@@ -16537,9 +16546,9 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PROVISIONED
     extends _BillingMode
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BillingMode
+       with typings.awsDashSdk.clientsDynamodbMod._BillingMode
        with _ChangeTokenStatus
-       with typings.awsDashSdk.clientsWafMod._ChangeTokenStatus
+       with typings.awsDashSdk.clientsWafregionalMod._ChangeTokenStatus
   
   @js.native
   sealed trait PROVISIONING
@@ -16555,7 +16564,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PS
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PSI_SEGSTART
@@ -16566,7 +16575,7 @@ object awsDashSdkStrings {
   sealed trait PT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PTR extends _RRType
@@ -16626,7 +16635,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait PUT
     extends _AttributeAction
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._AttributeAction
+       with typings.awsDashSdk.clientsDynamodbMod._AttributeAction
        with _HttpMethod
        with _Method
        with _MethodName
@@ -16638,13 +16647,13 @@ object awsDashSdkStrings {
   sealed trait PW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait PYTHON
@@ -16689,7 +16698,7 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Parquet
-    extends typings.awsDashSdk.clientsCurMod._CompressionFormat
+    extends _CompressionFormat
        with _InventoryFormat
        with _ReportFormat
   
@@ -16956,7 +16965,7 @@ object awsDashSdkStrings {
   sealed trait Processing
     extends _ApplicationVersionStatus
        with _OptionState
-       with typings.awsDashSdk.clientsEsMod._OptionState
+       with typings.awsDashSdk.clientsCloudsearchMod._OptionState
        with _OrderedPhoneNumberStatus
        with _PhoneNumberOrderStatus
   
@@ -16982,7 +16991,7 @@ object awsDashSdkStrings {
   sealed trait QA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait QAA extends _LanguageCode
@@ -17013,7 +17022,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait QUERY_STRING
     extends _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait QUEUE
@@ -17083,8 +17092,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait RANGE
     extends _KeyType
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._KeyType
        with typings.awsDashSdk.clientsDynamodbMod._KeyType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._KeyType
   
   @js.native
   sealed trait RANSOMWARE extends _MalwareType
@@ -17095,7 +17104,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait RATE_BASED
     extends _WafRuleType
-       with typings.awsDashSdk.clientsWafMod._WafRuleType
+       with typings.awsDashSdk.clientsWafregionalMod._WafRuleType
   
   @js.native
   sealed trait RAW
@@ -17122,14 +17131,14 @@ object awsDashSdkStrings {
   @js.native
   sealed trait RE
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait READ
     extends _BucketLogsPermission
        with _DeviceCgroupPermission
-       with typings.awsDashSdk.clientsS3Mod._Permission
        with typings.awsDashSdk.clientsGlacierMod._Permission
+       with typings.awsDashSdk.clientsS3Mod._Permission
        with _S3Permission
   
   @js.native
@@ -17173,8 +17182,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait READ_ACP
-    extends typings.awsDashSdk.clientsS3Mod._Permission
-       with typings.awsDashSdk.clientsGlacierMod._Permission
+    extends typings.awsDashSdk.clientsGlacierMod._Permission
+       with typings.awsDashSdk.clientsS3Mod._Permission
        with _S3Permission
   
   @js.native
@@ -17188,7 +17197,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait REBUILDING
     extends _DynamicGroupStatus
-       with typings.awsDashSdk.clientsIotMod._IndexStatus
+       with _IndexStatus
        with _WorkspaceState
   
   @js.native
@@ -17241,7 +17250,8 @@ object awsDashSdkStrings {
        with _DvbSubtitleOutlineColor
   
   @js.native
-  sealed trait REDHAT_ENTERPRISE_LINUX extends _OperatingSystem
+  sealed trait REDHAT_ENTERPRISE_LINUX
+    extends typings.awsDashSdk.clientsSsmMod._OperatingSystem
   
   @js.native
   sealed trait REDIRECT_URL extends _StackAttribute
@@ -17252,8 +17262,8 @@ object awsDashSdkStrings {
   @js.native
   sealed trait REDUCED_REDUNDANCY
     extends _ObjectStorageClass
-       with typings.awsDashSdk.clientsS3Mod._StorageClass
        with typings.awsDashSdk.clientsGlacierMod._StorageClass
+       with typings.awsDashSdk.clientsS3Mod._StorageClass
   
   @js.native
   sealed trait REFERENCED_ENTITY_ID extends _EntityFilterName
@@ -17317,7 +17327,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait REGULAR
     extends _WafRuleType
-       with typings.awsDashSdk.clientsWafMod._WafRuleType
+       with typings.awsDashSdk.clientsWafregionalMod._WafRuleType
   
   @js.native
   sealed trait REJECT
@@ -17646,8 +17656,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait REVOKED
-    extends typings.awsDashSdk.clientsAcmMod._CertificateStatus
-       with _CertificateStatus
+    extends _CertificateStatus
+       with typings.awsDashSdk.clientsAcmMod._CertificateStatus
        with _LoadBalancerTlsCertificateStatus
   
   @js.native
@@ -17690,7 +17700,7 @@ object awsDashSdkStrings {
   sealed trait RO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ROH extends _LanguageCode
@@ -17761,7 +17771,7 @@ object awsDashSdkStrings {
   sealed trait RS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait RSA extends _EncryptionAlgorithm
@@ -17801,7 +17811,7 @@ object awsDashSdkStrings {
   sealed trait RU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait RUBY extends _LanguageType
@@ -17870,7 +17880,7 @@ object awsDashSdkStrings {
   sealed trait RW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait RX extends _SampleType
@@ -17971,7 +17981,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait RegexMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait Region extends _scope
@@ -17981,8 +17991,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait Registered
-    extends typings.awsDashSdk.clientsChimeMod._RegistrationStatus
-       with typings.awsDashSdk.clientsCodedeployMod._RegistrationStatus
+    extends typings.awsDashSdk.clientsCodedeployMod._RegistrationStatus
+       with typings.awsDashSdk.clientsChimeMod._RegistrationStatus
        with _RobotStatus
        with _TopicStatus
   
@@ -18098,7 +18108,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait RequiresIndexDocuments
     extends _OptionState
-       with typings.awsDashSdk.clientsEsMod._OptionState
+       with typings.awsDashSdk.clientsCloudsearchMod._OptionState
   
   @js.native
   sealed trait ResetDeployment
@@ -18286,7 +18296,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait S
     extends _ScalarAttributeType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ScalarAttributeType
+       with typings.awsDashSdk.clientsDynamodbMod._ScalarAttributeType
   
   @js.native
   sealed trait S3
@@ -18321,7 +18331,7 @@ object awsDashSdkStrings {
   sealed trait SA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SAD extends _EmotionName
@@ -18338,7 +18348,7 @@ object awsDashSdkStrings {
   sealed trait SAMPLE_AES
     extends _CmafEncryptionType
        with _EncryptionMethod
-       with typings.awsDashSdk.clientsMediapackagevodMod._EncryptionMethod
+       with typings.awsDashSdk.clientsMediapackageMod._EncryptionMethod
        with _HlsEncryptionType
        with typings.awsDashSdk.clientsMedialiveMod._HlsEncryptionType
   
@@ -18362,13 +18372,13 @@ object awsDashSdkStrings {
   sealed trait SB
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SCALA extends _Language
@@ -18427,7 +18437,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SCTE35_ENHANCED
     extends _AdMarkers
-       with typings.awsDashSdk.clientsMediapackagevodMod._AdMarkers
+       with typings.awsDashSdk.clientsMediapackageMod._AdMarkers
   
   @js.native
   sealed trait SCTE_35 extends _SmoothGroupSparseTrackType
@@ -18441,7 +18451,7 @@ object awsDashSdkStrings {
   sealed trait SD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _InputResolution
        with _ReservationResolution
   
@@ -18474,7 +18484,7 @@ object awsDashSdkStrings {
   sealed trait SE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SEARCHING extends _MatchmakingConfigurationStatus
@@ -18495,8 +18505,8 @@ object awsDashSdkStrings {
        with _H265GopSizeUnits
        with typings.awsDashSdk.clientsMedialiveMod._H265GopSizeUnits
        with _Mpeg2GopSizeUnits
-       with typings.awsDashSdk.clientsConnectMod._Unit
        with _Unit
+       with typings.awsDashSdk.clientsConnectMod._Unit
   
   @js.native
   sealed trait SECONDS_10 extends _StatusUpdateInterval
@@ -18724,7 +18734,7 @@ object awsDashSdkStrings {
   sealed trait SG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SG_ID_NUMBER extends _ExtraParamName
@@ -18733,7 +18743,7 @@ object awsDashSdkStrings {
   sealed trait SH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SHA1 extends _HashAlgorithm
@@ -18795,7 +18805,7 @@ object awsDashSdkStrings {
   sealed trait SI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SIGN extends _AttributeName
@@ -18861,7 +18871,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SINGLE_QUERY_ARG
     extends _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait SIP extends _CommsProtocol
@@ -18878,18 +18888,18 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SIZE
     extends _ReturnItemCollectionMetrics
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnItemCollectionMetrics
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnItemCollectionMetrics
   
   @js.native
   sealed trait SJ
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SKILLS extends _Feature
@@ -18916,7 +18926,7 @@ object awsDashSdkStrings {
   sealed trait SL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SLATE extends _InputLossImageType
@@ -18935,7 +18945,7 @@ object awsDashSdkStrings {
   sealed trait SM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SMALL extends _DocumentThumbnailType
@@ -18983,7 +18993,7 @@ object awsDashSdkStrings {
   sealed trait SN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SNA extends _LanguageCode
@@ -19016,7 +19026,7 @@ object awsDashSdkStrings {
   sealed trait SO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SOA extends _RRType
@@ -19066,7 +19076,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SPECIFIC_ATTRIBUTES
     extends _Select
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._Select
+       with typings.awsDashSdk.clientsDynamodbMod._Select
   
   @js.native
   sealed trait SPECIFIED
@@ -19134,7 +19144,7 @@ object awsDashSdkStrings {
   sealed trait SR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SRB extends _LanguageCode
@@ -19155,7 +19165,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SS
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait `SSE-KMS`
@@ -19202,7 +19212,7 @@ object awsDashSdkStrings {
   sealed trait ST
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait STABILIZING extends _StabilityStatus
@@ -19228,20 +19238,20 @@ object awsDashSdkStrings {
        with _ReservationVideoQuality
        with _S3GlacierJobTier
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with _ShippingOption
        with _SnowballType
-       with typings.awsDashSdk.clientsS3Mod._StorageClass
        with typings.awsDashSdk.clientsGlacierMod._StorageClass
+       with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _UploadAvailability
   
   @js.native
   sealed trait STANDARD_IA
     extends _ObjectStorageClass
        with _S3StorageClass
-       with typings.awsDashSdk.clientsS3controlMod._S3StorageClass
-       with typings.awsDashSdk.clientsS3Mod._StorageClass
+       with typings.awsDashSdk.clientsDatasyncMod._S3StorageClass
        with typings.awsDashSdk.clientsGlacierMod._StorageClass
+       with typings.awsDashSdk.clientsS3Mod._StorageClass
        with _TransitionStorageClass
   
   @js.native
@@ -19280,7 +19290,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait STARTS_WITH
     extends _PositionalConstraint
-       with typings.awsDashSdk.clientsWafMod._PositionalConstraint
+       with typings.awsDashSdk.clientsWafregionalMod._PositionalConstraint
   
   @js.native
   sealed trait START_DATA_COLLECTION_IN_PROGRESS extends _AssessmentRunState
@@ -19483,10 +19493,10 @@ object awsDashSdkStrings {
   sealed trait SUBMITTED
     extends _BuildPhaseType
        with _CancelStepsRequestStatus
+       with typings.awsDashSdk.clientsBatchMod._JobStatus
        with typings.awsDashSdk.clientsMediaconvertMod._JobStatus
        with typings.awsDashSdk.clientsComprehendmedicalMod._JobStatus
        with typings.awsDashSdk.clientsComprehendMod._JobStatus
-       with typings.awsDashSdk.clientsBatchMod._JobStatus
        with _ModelStatus
        with typings.awsDashSdk.clientsServicediscoveryMod._OperationStatus
        with typings.awsDashSdk.clientsRoute53domainsMod._OperationStatus
@@ -19532,8 +19542,8 @@ object awsDashSdkStrings {
        with _JobExecutionStatus
        with typings.awsDashSdk.clientsIotjobsdataplaneMod._JobExecutionStatus
        with _JobRunState
-       with typings.awsDashSdk.clientsTextractMod._JobStatus
        with typings.awsDashSdk.clientsBatchMod._JobStatus
+       with typings.awsDashSdk.clientsTextractMod._JobStatus
        with _LastCrawlStatus
        with _NamespaceDeletionStatus
        with _QueryExecutionState
@@ -19543,6 +19553,7 @@ object awsDashSdkStrings {
        with _ReprocessingStatus
        with _StackSetOperationResultStatus
        with _StackSetOperationStatus
+       with typings.awsDashSdk.clientsMediapackageMod._Status
        with typings.awsDashSdk.clientsCodebuildMod._StatusType
        with _TableRestoreStatusType
        with _TaskStatusType
@@ -19589,8 +19600,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait SUM
-    extends typings.awsDashSdk.clientsConnectMod._Statistic
-       with _Statistic
+    extends _Statistic
+       with typings.awsDashSdk.clientsConnectMod._Statistic
   
   @js.native
   sealed trait SUMMARY extends _EvaluationType
@@ -19625,7 +19636,8 @@ object awsDashSdkStrings {
   sealed trait SURROUND extends _Eac3AtmosStereoDownmix
   
   @js.native
-  sealed trait SUSE extends _OperatingSystem
+  sealed trait SUSE
+    extends typings.awsDashSdk.clientsSsmMod._OperatingSystem
   
   @js.native
   sealed trait `SUSE Linux` extends _CapacityReservationInstancePlatform
@@ -19643,7 +19655,7 @@ object awsDashSdkStrings {
   sealed trait SV
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SWA extends _LanguageCode
@@ -19664,13 +19676,13 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SX
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SYM extends _PartOfSpeechTagType
@@ -19689,10 +19701,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait SYSTEM
-    extends typings.awsDashSdk.clientsDynamodbMod._BackupType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupType
+    extends typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BackupType
+       with typings.awsDashSdk.clientsDynamodbMod._BackupType
        with _BackupTypeFilter
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
+       with typings.awsDashSdk.clientsDynamodbMod._BackupTypeFilter
        with _FilterType
        with _JobTemplateListBy
        with _OfferingTransactionType
@@ -19720,7 +19732,7 @@ object awsDashSdkStrings {
   sealed trait SZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait SageMakerVariantInvocationsPerInstance
@@ -19732,11 +19744,11 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SampleCount
     extends _MetricStatistic
-       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsApplicationautoscalingMod._MetricStatistic
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
-       with typings.awsDashSdk.clientsRoute53Mod._Statistic
+       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+       with typings.awsDashSdk.clientsRoute53Mod._Statistic
   
   @js.native
   sealed trait Scalar extends _ConfigurationOptionValueType
@@ -19947,7 +19959,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SizeConstraint
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait Skipped
@@ -19963,7 +19975,8 @@ object awsDashSdkStrings {
   sealed trait Small extends _DirectorySize
   
   @js.native
-  sealed trait Snappy extends _CompressionFormat
+  sealed trait Snappy
+    extends typings.awsDashSdk.clientsFirehoseMod._CompressionFormat
   
   @js.native
   sealed trait Socket extends _LicenseCountingType
@@ -19985,7 +19998,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait SqlInjectionMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait Standard
@@ -20227,11 +20240,11 @@ object awsDashSdkStrings {
   @js.native
   sealed trait Sum
     extends _MetricStatistic
-       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsApplicationautoscalingMod._MetricStatistic
        with typings.awsDashSdk.clientsLightsailMod._MetricStatistic
-       with typings.awsDashSdk.clientsRoute53Mod._Statistic
+       with typings.awsDashSdk.clientsAutoscalingplansMod._MetricStatistic
        with typings.awsDashSdk.clientsCloudwatchMod._Statistic
+       with typings.awsDashSdk.clientsRoute53Mod._Statistic
   
   @js.native
   sealed trait Superseded extends _PipelineExecutionStatus
@@ -20323,7 +20336,7 @@ object awsDashSdkStrings {
   sealed trait TC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TCP
@@ -20342,7 +20355,7 @@ object awsDashSdkStrings {
   sealed trait TD
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TDRL
@@ -20474,7 +20487,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait TF
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TFRecord extends _SplitType
@@ -20483,7 +20496,7 @@ object awsDashSdkStrings {
   sealed trait TG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TGK extends _LanguageCode
@@ -20495,7 +20508,7 @@ object awsDashSdkStrings {
   sealed trait TH
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait THA extends _LanguageCode
@@ -20621,19 +20634,19 @@ object awsDashSdkStrings {
   sealed trait TJ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TK
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TL
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TLS
@@ -20686,7 +20699,7 @@ object awsDashSdkStrings {
   sealed trait TM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TMX extends _TerminologyDataFormat
@@ -20695,7 +20708,7 @@ object awsDashSdkStrings {
   sealed trait TN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TNG extends _LanguageCode
@@ -20704,7 +20717,7 @@ object awsDashSdkStrings {
   sealed trait TO
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TOKEN extends _AuthorizerType
@@ -20737,7 +20750,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait TOTAL
     extends _ReturnConsumedCapacity
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnConsumedCapacity
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnConsumedCapacity
   
   @js.native
   sealed trait TOTAL_SIZE extends _SnapshotAttributeToSortBy
@@ -20746,7 +20759,7 @@ object awsDashSdkStrings {
   sealed trait TR
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TRACE
@@ -20833,7 +20846,7 @@ object awsDashSdkStrings {
   sealed trait TT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TTML
@@ -20857,13 +20870,13 @@ object awsDashSdkStrings {
   sealed trait TV
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait TWI extends _LanguageCode
@@ -20887,7 +20900,7 @@ object awsDashSdkStrings {
   sealed trait TZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Tags
@@ -21147,11 +21160,11 @@ object awsDashSdkStrings {
   sealed trait UA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait UBUNTU
-    extends _OperatingSystem
+    extends typings.awsDashSdk.clientsSsmMod._OperatingSystem
        with _PlatformType
   
   @js.native
@@ -21168,7 +21181,7 @@ object awsDashSdkStrings {
   sealed trait UG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait UHD
@@ -21202,7 +21215,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait UM
     extends _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait UNAUTHENTICATED extends _WebhookAuthenticationType
@@ -21229,7 +21242,7 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait UNCOMPRESSED
-    extends _CompressionFormat
+    extends typings.awsDashSdk.clientsFirehoseMod._CompressionFormat
        with _ParquetCompression
   
   @js.native
@@ -21375,12 +21388,12 @@ object awsDashSdkStrings {
   @js.native
   sealed trait UPDATED_NEW
     extends _ReturnValue
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValue
   
   @js.native
   sealed trait UPDATED_OLD
     extends _ReturnValue
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
+       with typings.awsDashSdk.clientsDynamodbMod._ReturnValue
   
   @js.native
   sealed trait UPDATEPOLICY extends _ResourceAttribute
@@ -21471,26 +21484,26 @@ object awsDashSdkStrings {
        with _EncryptionStatus
        with _FileSystemLifecycle
        with _GlobalTableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._GlobalTableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._GlobalTableStatus
        with _HsmStatus
-       with _IndexStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._IndexStatus
+       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._IndexStatus
+       with typings.awsDashSdk.clientsDynamodbMod._IndexStatus
        with _InputSecurityGroupState
        with _InputStatus
        with _JQStatus
        with _RealtimeEndpointStatus
        with _ReplicaStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
+       with typings.awsDashSdk.clientsDynamodbMod._ReplicaStatus
        with _ResolverEndpointStatus
        with _ResolverRuleStatus
        with _SSEStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with typings.awsDashSdk.clientsDynamodbMod._SSEStatus
        with _ScalingStatusType
        with _Status
        with typings.awsDashSdk.clientsKinesisvideoMod._Status
        with _StreamStatus
        with _TableStatus
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._TableStatus
+       with typings.awsDashSdk.clientsDynamodbMod._TableStatus
        with _TriggerState
        with _WorkspaceState
   
@@ -21516,7 +21529,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait URI
     extends _MatchFieldType
-       with typings.awsDashSdk.clientsWafMod._MatchFieldType
+       with typings.awsDashSdk.clientsWafregionalMod._MatchFieldType
   
   @js.native
   sealed trait URL
@@ -21531,7 +21544,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait URL_DECODE
     extends _TextTransformation
-       with typings.awsDashSdk.clientsWafMod._TextTransformation
+       with typings.awsDashSdk.clientsWafregionalMod._TextTransformation
   
   @js.native
   sealed trait URL_PULL extends _InputType
@@ -21540,7 +21553,7 @@ object awsDashSdkStrings {
   sealed trait US
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait USAGE extends _BudgetType
@@ -21560,7 +21573,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait USE
     extends _FileHeaderInfo
-       with typings.awsDashSdk.clientsGlacierMod._FileHeaderInfo
+       with typings.awsDashSdk.clientsS3Mod._FileHeaderInfo
   
   @js.native
   sealed trait USEFUL
@@ -21569,10 +21582,10 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait USER
-    extends typings.awsDashSdk.clientsDynamodbMod._BackupType
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupType
+    extends typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient._BackupType
+       with typings.awsDashSdk.clientsDynamodbMod._BackupType
        with _BackupTypeFilter
-       with typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
+       with typings.awsDashSdk.clientsDynamodbMod._BackupTypeFilter
        with _MemberType
        with _PrincipalType
        with typings.awsDashSdk.clientsGlueMod._PrincipalType
@@ -21686,13 +21699,13 @@ object awsDashSdkStrings {
   sealed trait UY
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait UZ
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait UZB extends _LanguageCode
@@ -21847,7 +21860,7 @@ object awsDashSdkStrings {
   sealed trait VA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VALID
@@ -21909,13 +21922,13 @@ object awsDashSdkStrings {
   sealed trait VC
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VEN extends _LanguageCode
@@ -21938,7 +21951,7 @@ object awsDashSdkStrings {
   sealed trait VG
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VHD extends _DiskImageFormat
@@ -21947,7 +21960,7 @@ object awsDashSdkStrings {
   sealed trait VI
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VIDEO extends _ArtifactType
@@ -21965,12 +21978,12 @@ object awsDashSdkStrings {
   @js.native
   sealed trait VIDEO_BITRATE_ASCENDING
     extends _StreamOrder
-       with typings.awsDashSdk.clientsMediapackagevodMod._StreamOrder
+       with typings.awsDashSdk.clientsMediapackageMod._StreamOrder
   
   @js.native
   sealed trait VIDEO_BITRATE_DESCENDING
     extends _StreamOrder
-       with typings.awsDashSdk.clientsMediapackagevodMod._StreamOrder
+       with typings.awsDashSdk.clientsMediapackageMod._StreamOrder
   
   @js.native
   sealed trait VIDEO_INTERVAL
@@ -22029,7 +22042,7 @@ object awsDashSdkStrings {
   sealed trait VN
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait VOD
@@ -22082,7 +22095,7 @@ object awsDashSdkStrings {
   sealed trait VU
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait V_1 extends js.Object
@@ -22163,7 +22176,7 @@ object awsDashSdkStrings {
     extends _EventSeverity
        with _LogFilter
        with _LogLevel
-       with typings.awsDashSdk.clientsIotMod._LogLevel
+       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._LogLevel
        with _LoggerLevel
        with _UpdateAgentLogLevel
   
@@ -22246,7 +22259,7 @@ object awsDashSdkStrings {
   sealed trait WF
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait WHEN_NO_MATCH extends _PassthroughBehavior
@@ -22282,14 +22295,13 @@ object awsDashSdkStrings {
   sealed trait WINDOWS
     extends typings.awsDashSdk.clientsFsxMod._FileSystemType
        with _InstancePlatform
-       with _OperatingSystem
+       with typings.awsDashSdk.clientsSsmMod._OperatingSystem
        with _OperatingSystemType
        with typings.awsDashSdk.clientsMobileMod._Platform
        with typings.awsDashSdk.clientsAppstreamMod._PlatformType
   
   @js.native
-  sealed trait WINDOWS_2012
-    extends typings.awsDashSdk.clientsGameliftMod._OperatingSystem
+  sealed trait WINDOWS_2012 extends _OperatingSystem
   
   @js.native
   sealed trait WINDOWS_CONTAINER extends _EnvironmentType
@@ -22374,21 +22386,21 @@ object awsDashSdkStrings {
   sealed trait WRITE
     extends _BucketLogsPermission
        with _DeviceCgroupPermission
-       with typings.awsDashSdk.clientsS3Mod._Permission
        with typings.awsDashSdk.clientsGlacierMod._Permission
+       with typings.awsDashSdk.clientsS3Mod._Permission
        with _S3Permission
   
   @js.native
   sealed trait WRITE_ACP
-    extends typings.awsDashSdk.clientsS3Mod._Permission
-       with typings.awsDashSdk.clientsGlacierMod._Permission
+    extends typings.awsDashSdk.clientsGlacierMod._Permission
+       with typings.awsDashSdk.clientsS3Mod._Permission
        with _S3Permission
   
   @js.native
   sealed trait WS
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait WaitStateAborted extends _HistoryEventType
@@ -22547,7 +22559,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait XssMatch
     extends _PredicateType
-       with typings.awsDashSdk.clientsWafMod._PredicateType
+       with typings.awsDashSdk.clientsWafregionalMod._PredicateType
   
   @js.native
   sealed trait YAML
@@ -22559,7 +22571,7 @@ object awsDashSdkStrings {
   sealed trait YE
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait YEARS extends _ValidityPeriodType
@@ -22590,7 +22602,7 @@ object awsDashSdkStrings {
   sealed trait YT
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Yellow extends _EnvironmentHealth
@@ -22599,7 +22611,7 @@ object awsDashSdkStrings {
   sealed trait ZA
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ZEROBASED
@@ -22618,7 +22630,7 @@ object awsDashSdkStrings {
   sealed trait ZIP
     extends _ArtifactPackaging
        with _CompressionFormat
-       with typings.awsDashSdk.clientsCurMod._CompressionFormat
+       with typings.awsDashSdk.clientsFirehoseMod._CompressionFormat
   
   @js.native
   sealed trait ZIPFILE extends _CodeContentType
@@ -22630,7 +22642,7 @@ object awsDashSdkStrings {
   sealed trait ZM
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait ZONAL_RESOURCE_INACCESSIBLE extends _ResourceStatus
@@ -22645,7 +22657,7 @@ object awsDashSdkStrings {
   sealed trait ZW
     extends _CountryCode
        with _GeoMatchConstraintValue
-       with typings.awsDashSdk.clientsWafMod._GeoMatchConstraintValue
+       with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
   sealed trait Zeina extends _VoiceId
@@ -22899,8 +22911,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait asc
-    extends typings.awsDashSdk.clientsMachinelearningMod._SortOrder
-       with typings.awsDashSdk.clientsSecurityhubMod._SortOrder
+    extends typings.awsDashSdk.clientsSecurityhubMod._SortOrder
+       with typings.awsDashSdk.clientsMachinelearningMod._SortOrder
   
   @js.native
   sealed trait ascending
@@ -24223,28 +24235,28 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait dynamodb
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
-       with _ServiceNamespace
+    extends _ServiceNamespace
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
   
   @js.native
   sealed trait `dynamodb:index:ReadCapacityUnits`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:index:WriteCapacityUnits`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:table:ReadCapacityUnits`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:table:WriteCapacityUnits`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait ebs
@@ -24257,29 +24269,29 @@ object awsDashSdkStrings {
   @js.native
   sealed trait ec2
     extends typings.awsDashSdk.clientsCloud9Mod._EnvironmentType
-       with typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
        with _ServiceNamespace
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
   
   @js.native
   sealed trait `ec2-instance` extends js.Object
   
   @js.native
   sealed trait `ec2:spot-fleet-request:TargetCapacity`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait ecs
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
-       with _ServiceNamespace
+    extends _ServiceNamespace
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
   
   @js.native
   sealed trait `ecs-cluster` extends _LayerType
   
   @js.native
   sealed trait `ecs:service:DesiredCount`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait efa extends _NetworkInterfaceType
@@ -24776,7 +24788,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait gp2
     extends _VolumeType
-       with typings.awsDashSdk.clientsEsMod._VolumeType
+       with typings.awsDashSdk.clientsEc2Mod._VolumeType
        with typings.awsDashSdk.clientsOpsworksMod._VolumeType
   
   @js.native
@@ -25262,7 +25274,7 @@ object awsDashSdkStrings {
   @js.native
   sealed trait io1
     extends _VolumeType
-       with typings.awsDashSdk.clientsEsMod._VolumeType
+       with typings.awsDashSdk.clientsEc2Mod._VolumeType
        with typings.awsDashSdk.clientsOpsworksMod._VolumeType
   
   @js.native
@@ -25449,198 +25461,198 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait latest
-    extends typings.awsDashSdk.clientsWafregionalMod._apiVersion
-       with typings.awsDashSdk.clientsCloudfrontMod._apiVersion
-       with typings.awsDashSdk.clientsCodebuildMod._apiVersion
-       with typings.awsDashSdk.clientsAppstreamMod._apiVersion
-       with typings.awsDashSdk.clientsRekognitionMod._apiVersion
-       with typings.awsDashSdk.clientsAutoscalingMod._apiVersion
-       with typings.awsDashSdk.clientsEksMod._apiVersion
-       with typings.awsDashSdk.clientsSqsMod._apiVersion
-       with typings.awsDashSdk.clientsAlexaforbusinessMod._apiVersion
-       with typings.awsDashSdk.clientsApigatewaymanagementapiMod._apiVersion
-       with typings.awsDashSdk.clientsChimeMod._apiVersion
-       with typings.awsDashSdk.clientsAutoscalingplansMod._apiVersion
-       with typings.awsDashSdk.clientsWorkdocsMod._apiVersion
-       with typings.awsDashSdk.clientsSesMod._apiVersion
-       with typings.awsDashSdk.clientsApplicationinsightsMod._apiVersion
-       with typings.awsDashSdk.clientsOpsworkscmMod._apiVersion
-       with typings.awsDashSdk.clientsIotanalyticsMod._apiVersion
-       with typings.awsDashSdk.clientsAcmMod._apiVersion
-       with typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
-       with typings.awsDashSdk.clientsCloud9Mod._apiVersion
-       with typings.awsDashSdk.clientsAthenaMod._apiVersion
-       with typings.awsDashSdk.clientsGlobalacceleratorMod._apiVersion
-       with typings.awsDashSdk.clientsDatasyncMod._apiVersion
-       with typings.awsDashSdk.clientsServicequotasMod._apiVersion
-       with typings.awsDashSdk.clientsCognitosyncMod._apiVersion
-       with typings.awsDashSdk.clientsFsxMod._apiVersion
-       with typings.awsDashSdk.clientsCloudhsmv2Mod._apiVersion
-       with typings.awsDashSdk.clientsSignerMod._apiVersion
-       with typings.awsDashSdk.clientsMturkMod._apiVersion
-       with typings.awsDashSdk.clientsDiscoveryMod._apiVersion
-       with typings.awsDashSdk.clientsMediastoreMod._apiVersion
-       with typings.awsDashSdk.clientsMachinelearningMod._apiVersion
-       with typings.awsDashSdk.clientsGroundstationMod._apiVersion
-       with typings.awsDashSdk.clientsPricingMod._apiVersion
+    extends typings.awsDashSdk.clientsS3controlMod._apiVersion
+       with typings.awsDashSdk.clientsEsMod._apiVersion
+       with typings.awsDashSdk.clientsCloudtrailMod._apiVersion
+       with typings.awsDashSdk.clientsCurMod._apiVersion
+       with typings.awsDashSdk.clientsDevicefarmMod._apiVersion
+       with typings.awsDashSdk.clientsWorkspacesMod._apiVersion
        with typings.awsDashSdk.clientsServicediscoveryMod._apiVersion
-       with typings.awsDashSdk.clientsKafkaMod._apiVersion
-       with typings.awsDashSdk.clientsPollyMod._apiVersion
-       with typings.awsDashSdk.clientsRoute53resolverMod._apiVersion
-       with typings.awsDashSdk.clientsGlueMod._apiVersion
-       with typings.awsDashSdk.clientsSmsMod._apiVersion
+       with typings.awsDashSdk.clientsIotMod._apiVersion
+       with typings.awsDashSdk.clientsSnsMod._apiVersion
+       with typings.awsDashSdk.clientsEcsMod._apiVersion
+       with typings.awsDashSdk.clientsGlacierMod._apiVersion
+       with typings.awsDashSdk.clientsSwfMod._apiVersion
+       with typings.awsDashSdk.clientsWorkmailmessageflowMod._apiVersion
+       with typings.awsDashSdk.clientsGlobalacceleratorMod._apiVersion
        with typings.awsDashSdk.clientsKinesisanalyticsMod._apiVersion
+       with typings.awsDashSdk.clientsAutoscalingMod._apiVersion
+       with typings.awsDashSdk.clientsCognitosyncMod._apiVersion
+       with typings.awsDashSdk.clientsEventbridgeMod._apiVersion
+       with typings.awsDashSdk.clientsWorkdocsMod._apiVersion
+       with typings.awsDashSdk.clientsKmsMod._apiVersion
+       with typings.awsDashSdk.clientsBatchMod._apiVersion
+       with typings.awsDashSdk.clientsApplicationinsightsMod._apiVersion
+       with typings.awsDashSdk.clientsPiMod._apiVersion
+       with typings.awsDashSdk.clientsMturkMod._apiVersion
+       with typings.awsDashSdk.clientsIamMod._apiVersion
+       with typings.awsDashSdk.clientsForecastserviceMod._apiVersion
+       with typings.awsDashSdk.clientsHealthMod._apiVersion
+       with typings.awsDashSdk.clientsEmrMod._apiVersion
+       with typings.awsDashSdk.clientsMediapackagevodMod._apiVersion
+       with typings.awsDashSdk.clientsRoute53resolverMod._apiVersion
+       with typings.awsDashSdk.clientsSecretsmanagerMod._apiVersion
+       with typings.awsDashSdk.clientsCostexplorerMod._apiVersion
+       with typings.awsDashSdk.clientsMediastoreMod._apiVersion
+       with typings.awsDashSdk.clientsDirectconnectMod._apiVersion
+       with typings.awsDashSdk.clientsGlueMod._apiVersion
+       with typings.awsDashSdk.clientsSnowballMod._apiVersion
+       with typings.awsDashSdk.clientsAlexaforbusinessMod._apiVersion
+       with typings.awsDashSdk.clientsCloudformationMod._apiVersion
+       with typings.awsDashSdk.clientsDynamodbstreamsMod._apiVersion
+       with typings.awsDashSdk.clientsIoteventsMod._apiVersion
+       with typings.awsDashSdk.clientsPinpointemailMod._apiVersion
+       with typings.awsDashSdk.clientsDmsMod._apiVersion
+       with typings.awsDashSdk.clientsKinesisMod._apiVersion
+       with typings.awsDashSdk.clientsQuicksightMod._apiVersion
+       with typings.awsDashSdk.clientsGuarddutyMod._apiVersion
+       with typings.awsDashSdk.clientsApigatewaymanagementapiMod._apiVersion
+       with typings.awsDashSdk.clientsPersonalizeMod._apiVersion
+       with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._apiVersion
+       with typings.awsDashSdk.clientsCloudwatchMod._apiVersion
+       with typings.awsDashSdk.clientsKinesisvideomediaMod._apiVersion
+       with typings.awsDashSdk.clientsMediaconvertMod._apiVersion
+       with typings.awsDashSdk.clientsPersonalizeeventsMod._apiVersion
+       with typings.awsDashSdk.clientsPollyMod._apiVersion
+       with typings.awsDashSdk.clientsEc2Mod._apiVersion
+       with typings.awsDashSdk.clientsSagemakerMod._apiVersion
+       with typings.awsDashSdk.clientsApigatewayv2Mod._apiVersion
+       with typings.awsDashSdk.clientsEfsMod._apiVersion
+       with typings.awsDashSdk.clientsCloud9Mod._apiVersion
+       with typings.awsDashSdk.clientsDocdbMod._apiVersion
+       with typings.awsDashSdk.clientsSmsMod._apiVersion
+       with typings.awsDashSdk.clientsRoute53domainsMod._apiVersion
+       with typings.awsDashSdk.clientsApplicationautoscalingMod._apiVersion
+       with typings.awsDashSdk.clientsLightsailMod._apiVersion
+       with typings.awsDashSdk.clientsRedshiftMod._apiVersion
+       with typings.awsDashSdk.clientsSagemakerruntimeMod._apiVersion
+       with typings.awsDashSdk.clientsClouddirectoryMod._apiVersion
+       with typings.awsDashSdk.clientsMediaconnectMod._apiVersion
+       with typings.awsDashSdk.clientsBudgetsMod._apiVersion
+       with typings.awsDashSdk.clientsMediastoredataMod._apiVersion
+       with typings.awsDashSdk.clientsBackupMod._apiVersion
+       with typings.awsDashSdk.clientsOrganizationsMod._apiVersion
+       with typings.awsDashSdk.clientsGreengrassMod._apiVersion
+       with typings.awsDashSdk.clientsServicequotasMod._apiVersion
+       with typings.awsDashSdk.clientsIot1clickdevicesserviceMod._apiVersion
+       with typings.awsDashSdk.clientsMarketplacemeteringMod._apiVersion
        with typings.awsDashSdk.clientsManagedblockchainMod._apiVersion
        with typings.awsDashSdk.clientsRdsdataserviceMod._apiVersion
-       with typings.awsDashSdk.clientsMobileanalyticsMod._apiVersion
-       with typings.awsDashSdk.clientsCloudtrailMod._apiVersion
-       with typings.awsDashSdk.clientsCloudsearchMod._apiVersion
-       with typings.awsDashSdk.clientsFmsMod._apiVersion
-       with typings.awsDashSdk.clientsEventbridgeMod._apiVersion
-       with typings.awsDashSdk.clientsMediapackageMod._apiVersion
-       with typings.awsDashSdk.clientsPinpointemailMod._apiVersion
-       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._apiVersion
-       with typings.awsDashSdk.clientsResourcegroupstaggingapiMod._apiVersion
-       with typings.awsDashSdk.clientsWafMod._apiVersion
-       with typings.awsDashSdk.clientsElasticacheMod._apiVersion
-       with typings.awsDashSdk.clientsIot1clickprojectsMod._apiVersion
-       with typings.awsDashSdk.clientsWorkmailMod._apiVersion
-       with typings.awsDashSdk.clientsBudgetsMod._apiVersion
-       with typings.awsDashSdk.clientsIotdataMod._apiVersion
-       with typings.awsDashSdk.clientsDevicefarmMod._apiVersion
-       with typings.awsDashSdk.clientsMediaconvertMod._apiVersion
-       with typings.awsDashSdk.clientsTextractMod._apiVersion
-       with typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod._apiVersion
-       with typings.awsDashSdk.clientsHealthMod._apiVersion
-       with typings.awsDashSdk.clientsRedshiftMod._apiVersion
-       with typings.awsDashSdk.clientsSagemakerMod._apiVersion
-       with typings.awsDashSdk.clientsImportexportMod._apiVersion
-       with typings.awsDashSdk.clientsLambdaMod._apiVersion
-       with typings.awsDashSdk.clientsDynamodbstreamsMod._apiVersion
-       with typings.awsDashSdk.clientsCloudsearchdomainMod._apiVersion
-       with typings.awsDashSdk.clientsResourcegroupsMod._apiVersion
-       with typings.awsDashSdk.clientsMarketplaceentitlementserviceMod._apiVersion
-       with typings.awsDashSdk.clientsSnsMod._apiVersion
-       with typings.awsDashSdk.clientsMediaconnectMod._apiVersion
-       with typings.awsDashSdk.clientsEc2Mod._apiVersion
-       with typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._apiVersion
-       with typings.awsDashSdk.clientsBackupMod._apiVersion
-       with typings.awsDashSdk.clientsApigatewayv2Mod._apiVersion
-       with typings.awsDashSdk.clientsStoragegatewayMod._apiVersion
-       with typings.awsDashSdk.clientsDatapipelineMod._apiVersion
-       with typings.awsDashSdk.clientsElastictranscoderMod._apiVersion
-       with typings.awsDashSdk.clientsAppsyncMod._apiVersion
-       with typings.awsDashSdk.clientsKinesisvideomediaMod._apiVersion
-       with typings.awsDashSdk.clientsDynamodbMod._apiVersion
-       with typings.awsDashSdk.clientsDirectconnectMod._apiVersion
-       with typings.awsDashSdk.clientsMigrationhubMod._apiVersion
-       with typings.awsDashSdk.clientsS3controlMod._apiVersion
-       with typings.awsDashSdk.clientsSupportMod._apiVersion
-       with typings.awsDashSdk.clientsConnectMod._apiVersion
-       with typings.awsDashSdk.clientsInspectorMod._apiVersion
-       with typings.awsDashSdk.clientsIoteventsMod._apiVersion
-       with typings.awsDashSdk.clientsCodestarMod._apiVersion
-       with typings.awsDashSdk.clientsServicecatalogMod._apiVersion
-       with typings.awsDashSdk.clientsWorkspacesMod._apiVersion
-       with typings.awsDashSdk.clientsDocdbMod._apiVersion
-       with typings.awsDashSdk.clientsMacieMod._apiVersion
-       with typings.awsDashSdk.clientsLexmodelbuildingserviceMod._apiVersion
-       with typings.awsDashSdk.clientsSecretsmanagerMod._apiVersion
-       with typings.awsDashSdk.clientsElbv2Mod._apiVersion
-       with typings.awsDashSdk.clientsConfigserviceMod._apiVersion
-       with typings.awsDashSdk.clientsDirectoryserviceMod._apiVersion
-       with typings.awsDashSdk.clientsGreengrassMod._apiVersion
-       with typings.awsDashSdk.clientsEmrMod._apiVersion
-       with typings.awsDashSdk.clientsEcsMod._apiVersion
-       with typings.awsDashSdk.clientsSwfMod._apiVersion
-       with typings.awsDashSdk.clientsMobileMod._apiVersion
-       with typings.awsDashSdk.clientsSsmMod._apiVersion
-       with typings.awsDashSdk.clientsEfsMod._apiVersion
-       with typings.awsDashSdk.clientsQldbsessionMod._apiVersion
-       with typings.awsDashSdk.clientsComprehendmedicalMod._apiVersion
-       with typings.awsDashSdk.clientsApigatewayMod._apiVersion
-       with typings.awsDashSdk.clientsAppmeshMod._apiVersion
-       with typings.awsDashSdk.clientsMqMod._apiVersion
-       with typings.awsDashSdk.clientsIoteventsdataMod._apiVersion
-       with typings.awsDashSdk.clientsFirehoseMod._apiVersion
-       with typings.awsDashSdk.clientsRamMod._apiVersion
-       with typings.awsDashSdk.clientsCloudformationMod._apiVersion
-       with typings.awsDashSdk.clientsKinesisMod._apiVersion
-       with typings.awsDashSdk.clientsMediatailorMod._apiVersion
-       with typings.awsDashSdk.clientsCodedeployMod._apiVersion
-       with typings.awsDashSdk.clientsStsMod._apiVersion
-       with typings.awsDashSdk.clientsTranscribeserviceMod._apiVersion
-       with typings.awsDashSdk.clientsPinpointMod._apiVersion
-       with typings.awsDashSdk.clientsXrayMod._apiVersion
-       with typings.awsDashSdk.clientsIotMod._apiVersion
+       with typings.awsDashSdk.clientsLicensemanagerMod._apiVersion
        with typings.awsDashSdk.clientsNeptuneMod._apiVersion
-       with typings.awsDashSdk.clientsLakeformationMod._apiVersion
-       with typings.awsDashSdk.clientsClouddirectoryMod._apiVersion
-       with typings.awsDashSdk.clientsTransferMod._apiVersion
-       with typings.awsDashSdk.clientsMediapackagevodMod._apiVersion
-       with typings.awsDashSdk.clientsMarketplacemeteringMod._apiVersion
-       with typings.awsDashSdk.clientsApplicationautoscalingMod._apiVersion
-       with typings.awsDashSdk.clientsDmsMod._apiVersion
-       with typings.awsDashSdk.clientsPinpointsmsvoiceMod._apiVersion
-       with typings.awsDashSdk.clientsCurMod._apiVersion
+       with typings.awsDashSdk.clientsFmsMod._apiVersion
+       with typings.awsDashSdk.clientsInspectorMod._apiVersion
+       with typings.awsDashSdk.clientsOpsworksMod._apiVersion
+       with typings.awsDashSdk.clientsCognitoidentityserviceproviderMod._apiVersion
+       with typings.awsDashSdk.clientsMobileMod._apiVersion
+       with typings.awsDashSdk.clientsMediatailorMod._apiVersion
+       with typings.awsDashSdk.clientsKinesisanalyticsv2Mod._apiVersion
+       with typings.awsDashSdk.clientsElbMod._apiVersion
+       with typings.awsDashSdk.clientsConfigserviceMod._apiVersion
+       with typings.awsDashSdk.clientsFirehoseMod._apiVersion
        with typings.awsDashSdk.clientsCodecommitMod._apiVersion
+       with typings.awsDashSdk.clientsElasticbeanstalkMod._apiVersion
+       with typings.awsDashSdk.clientsServerlessapplicationrepositoryMod._apiVersion
+       with typings.awsDashSdk.clientsMobileanalyticsMod._apiVersion
+       with typings.awsDashSdk.clientsIot1clickprojectsMod._apiVersion
+       with typings.awsDashSdk.clientsPricingMod._apiVersion
+       with typings.awsDashSdk.clientsWafMod._apiVersion
+       with typings.awsDashSdk.clientsStoragegatewayMod._apiVersion
+       with typings.awsDashSdk.clientsCloudwatchlogsMod._apiVersion
+       with typings.awsDashSdk.clientsWafregionalMod._apiVersion
+       with typings.awsDashSdk.clientsDynamodbMod._apiVersion
+       with typings.awsDashSdk.clientsPinpointMod._apiVersion
+       with typings.awsDashSdk.clientsAmplifyMod._apiVersion
+       with typings.awsDashSdk.clientsSupportMod._apiVersion
+       with typings.awsDashSdk.clientsElasticacheMod._apiVersion
+       with typings.awsDashSdk.clientsCognitoidentityMod._apiVersion
+       with typings.awsDashSdk.clientsQldbMod._apiVersion
+       with typings.awsDashSdk.clientsSimpledbMod._apiVersion
+       with typings.awsDashSdk.clientsEc2instanceconnectMod._apiVersion
+       with typings.awsDashSdk.clientsTranscribeserviceMod._apiVersion
+       with typings.awsDashSdk.clientsGroundstationMod._apiVersion
+       with typings.awsDashSdk.clientsConnectMod._apiVersion
+       with typings.awsDashSdk.clientsRdsMod._apiVersion
+       with typings.awsDashSdk.clientsStsMod._apiVersion
+       with typings.awsDashSdk.clientsServicecatalogMod._apiVersion
+       with typings.awsDashSdk.clientsCodedeployMod._apiVersion
+       with typings.awsDashSdk.clientsResourcegroupstaggingapiMod._apiVersion
+       with typings.awsDashSdk.clientsDatasyncMod._apiVersion
+       with typings.awsDashSdk.clientsEcrMod._apiVersion
+       with typings.awsDashSdk.clientsAcmMod._apiVersion
+       with typings.awsDashSdk.clientsElastictranscoderMod._apiVersion
+       with typings.awsDashSdk.clientsOpsworkscmMod._apiVersion
+       with typings.awsDashSdk.clientsDiscoveryMod._apiVersion
+       with typings.awsDashSdk.clientsPinpointsmsvoiceMod._apiVersion
+       with typings.awsDashSdk.clientsRoute53Mod._apiVersion
+       with typings.awsDashSdk.clientsIotjobsdataplaneMod._apiVersion
+       with typings.awsDashSdk.clientsMacieMod._apiVersion
+       with typings.awsDashSdk.clientsLexruntimeMod._apiVersion
+       with typings.awsDashSdk.clientsMigrationhubMod._apiVersion
+       with typings.awsDashSdk.clientsElbv2Mod._apiVersion
+       with typings.awsDashSdk.clientsQldbsessionMod._apiVersion
+       with typings.awsDashSdk.clientsIotthingsgraphMod._apiVersion
+       with _apiVersion
+       with typings.awsDashSdk.clientsCloudhsmv2Mod._apiVersion
+       with typings.awsDashSdk.clientsPersonalizeruntimeMod._apiVersion
+       with typings.awsDashSdk.clientsAppsyncMod._apiVersion
+       with typings.awsDashSdk.clientsForecastqueryserviceMod._apiVersion
+       with typings.awsDashSdk.clientsSesMod._apiVersion
+       with typings.awsDashSdk.clientsCloudhsmMod._apiVersion
+       with typings.awsDashSdk.clientsChimeMod._apiVersion
+       with typings.awsDashSdk.clientsStepfunctionsMod._apiVersion
+       with typings.awsDashSdk.clientsMediapackageMod._apiVersion
+       with typings.awsDashSdk.clientsMedialiveMod._apiVersion
+       with typings.awsDashSdk.clientsComprehendmedicalMod._apiVersion
+       with typings.awsDashSdk.clientsTextractMod._apiVersion
+       with typings.awsDashSdk.clientsGameliftMod._apiVersion
+       with typings.awsDashSdk.clientsDaxMod._apiVersion
+       with typings.awsDashSdk.clientsApigatewayMod._apiVersion
+       with typings.awsDashSdk.clientsSecurityhubMod._apiVersion
+       with typings.awsDashSdk.clientsIotanalyticsMod._apiVersion
+       with typings.awsDashSdk.clientsAthenaMod._apiVersion
+       with typings.awsDashSdk.clientsDlmMod._apiVersion
+       with typings.awsDashSdk.clientsAppstreamMod._apiVersion
+       with typings.awsDashSdk.clientsSqsMod._apiVersion
+       with typings.awsDashSdk.clientsCloudsearchMod._apiVersion
+       with typings.awsDashSdk.clientsCodepipelineMod._apiVersion
+       with typings.awsDashSdk.clientsMachinelearningMod._apiVersion
+       with typings.awsDashSdk.clientsIotdataMod._apiVersion
+       with typings.awsDashSdk.clientsMarketplaceentitlementserviceMod._apiVersion
+       with typings.awsDashSdk.clientsRamMod._apiVersion
        with typings.awsDashSdk.clientsKinesisvideoMod._apiVersion
+       with typings.awsDashSdk.clientsAutoscalingplansMod._apiVersion
+       with typings.awsDashSdk.clientsCloudsearchdomainMod._apiVersion
+       with typings.awsDashSdk.clientsFsxMod._apiVersion
+       with typings.awsDashSdk.clientsShieldMod._apiVersion
+       with typings.awsDashSdk.clientsXrayMod._apiVersion
+       with typings.awsDashSdk.clientsIoteventsdataMod._apiVersion
+       with typings.awsDashSdk.clientsMqMod._apiVersion
+       with typings.awsDashSdk.clientsCloudfrontMod._apiVersion
        with typings.awsDashSdk.clientsWorklinkMod._apiVersion
        with typings.awsDashSdk.clientsComprehendMod._apiVersion
-       with typings.awsDashSdk.clientsSimpledbMod._apiVersion
-       with typings.awsDashSdk.clientsWorkmailmessageflowMod._apiVersion
-       with typings.awsDashSdk.clientsCognitoidentityMod._apiVersion
        with typings.awsDashSdk.clientsMarketplacecommerceanalyticsMod._apiVersion
-       with typings.awsDashSdk.clientsRoute53domainsMod._apiVersion
-       with typings.awsDashSdk.clientsPersonalizeMod._apiVersion
-       with typings.awsDashSdk.clientsForecastserviceMod._apiVersion
-       with typings.awsDashSdk.clientsSagemakerruntimeMod._apiVersion
-       with typings.awsDashSdk.clientsLexruntimeMod._apiVersion
-       with _apiVersion
-       with typings.awsDashSdk.clientsGameliftMod._apiVersion
-       with typings.awsDashSdk.clientsEsMod._apiVersion
-       with typings.awsDashSdk.clientsLicensemanagerMod._apiVersion
-       with typings.awsDashSdk.clientsCodepipelineMod._apiVersion
-       with typings.awsDashSdk.clientsCognitoidentityserviceproviderMod._apiVersion
-       with typings.awsDashSdk.clientsQuicksightMod._apiVersion
-       with typings.awsDashSdk.clientsPersonalizeeventsMod._apiVersion
-       with typings.awsDashSdk.clientsIot1clickdevicesserviceMod._apiVersion
-       with typings.awsDashSdk.clientsDlmMod._apiVersion
-       with typings.awsDashSdk.clientsOrganizationsMod._apiVersion
-       with typings.awsDashSdk.clientsPiMod._apiVersion
-       with typings.awsDashSdk.clientsGlacierMod._apiVersion
-       with typings.awsDashSdk.clientsIamMod._apiVersion
-       with typings.awsDashSdk.clientsBatchMod._apiVersion
-       with typings.awsDashSdk.clientsRdsMod._apiVersion
-       with typings.awsDashSdk.clientsDaxMod._apiVersion
-       with typings.awsDashSdk.clientsMediastoredataMod._apiVersion
-       with typings.awsDashSdk.clientsPersonalizeruntimeMod._apiVersion
-       with typings.awsDashSdk.clientsLightsailMod._apiVersion
-       with typings.awsDashSdk.clientsShieldMod._apiVersion
-       with typings.awsDashSdk.clientsRoute53Mod._apiVersion
-       with typings.awsDashSdk.clientsRobomakerMod._apiVersion
-       with typings.awsDashSdk.clientsIotthingsgraphMod._apiVersion
-       with typings.awsDashSdk.clientsTranslateMod._apiVersion
-       with typings.awsDashSdk.clientsCloudhsmMod._apiVersion
-       with typings.awsDashSdk.clientsCloudwatcheventsMod._apiVersion
-       with typings.awsDashSdk.clientsElasticbeanstalkMod._apiVersion
-       with typings.awsDashSdk.clientsCloudwatchlogsMod._apiVersion
-       with typings.awsDashSdk.clientsSnowballMod._apiVersion
-       with typings.awsDashSdk.clientsElbMod._apiVersion
-       with typings.awsDashSdk.clientsKmsMod._apiVersion
-       with typings.awsDashSdk.clientsEcrMod._apiVersion
-       with typings.awsDashSdk.clientsOpsworksMod._apiVersion
-       with typings.awsDashSdk.clientsStepfunctionsMod._apiVersion
-       with typings.awsDashSdk.clientsGuarddutyMod._apiVersion
-       with typings.awsDashSdk.clientsIotjobsdataplaneMod._apiVersion
-       with typings.awsDashSdk.clientsAmplifyMod._apiVersion
-       with typings.awsDashSdk.clientsQldbMod._apiVersion
-       with typings.awsDashSdk.clientsCostexplorerMod._apiVersion
-       with typings.awsDashSdk.clientsMedialiveMod._apiVersion
-       with typings.awsDashSdk.clientsCloudwatchMod._apiVersion
-       with typings.awsDashSdk.clientsEc2instanceconnectMod._apiVersion
+       with typings.awsDashSdk.clientsLambdaMod._apiVersion
        with typings.awsDashSdk.clientsAcmpcaMod._apiVersion
-       with typings.awsDashSdk.clientsSecurityhubMod._apiVersion
+       with typings.awsDashSdk.clientsResourcegroupsMod._apiVersion
+       with typings.awsDashSdk.clientsKafkaMod._apiVersion
+       with typings.awsDashSdk.clientsSignerMod._apiVersion
+       with typings.awsDashSdk.clientsDatapipelineMod._apiVersion
+       with typings.awsDashSdk.clientsTranslateMod._apiVersion
+       with typings.awsDashSdk.clientsRobomakerMod._apiVersion
+       with typings.awsDashSdk.clientsAppmeshMod._apiVersion
+       with typings.awsDashSdk.clientsWorkmailMod._apiVersion
+       with typings.awsDashSdk.clientsCodestarMod._apiVersion
+       with typings.awsDashSdk.clientsCodebuildMod._apiVersion
+       with typings.awsDashSdk.clientsEksMod._apiVersion
+       with typings.awsDashSdk.clientsLakeformationMod._apiVersion
+       with typings.awsDashSdk.clientsTransferMod._apiVersion
+       with typings.awsDashSdk.clientsDirectoryserviceMod._apiVersion
+       with typings.awsDashSdk.clientsRekognitionMod._apiVersion
+       with typings.awsDashSdk.clientsCloudwatcheventsMod._apiVersion
+       with typings.awsDashSdk.clientsSsmMod._apiVersion
+       with typings.awsDashSdk.clientsImportexportMod._apiVersion
+       with typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod._apiVersion
   
   @js.native
   sealed trait latin_1 extends _CloudWatchLogsEncoding
@@ -27298,13 +27310,13 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait rds
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
-       with _ServiceNamespace
+    extends _ServiceNamespace
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ServiceNamespace
   
   @js.native
   sealed trait `rds:cluster:ReadReplicaCount`
-    extends typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
-       with _ScalableDimension
+    extends _ScalableDimension
+       with typings.awsDashSdk.clientsAutoscalingplansMod._ScalableDimension
   
   @js.native
   sealed trait reachability extends js.Object
@@ -27658,7 +27670,8 @@ object awsDashSdkStrings {
   sealed trait sbe_c extends _TargetDevice
   
   @js.native
-  sealed trait sc1 extends _VolumeType
+  sealed trait sc1
+    extends typings.awsDashSdk.clientsEc2Mod._VolumeType
   
   @js.native
   sealed trait scheduled
@@ -27832,7 +27845,8 @@ object awsDashSdkStrings {
        with _TextType
   
   @js.native
-  sealed trait st1 extends _VolumeType
+  sealed trait st1
+    extends typings.awsDashSdk.clientsEc2Mod._VolumeType
   
   @js.native
   sealed trait stack extends _UlimitName
@@ -27855,7 +27869,7 @@ object awsDashSdkStrings {
        with _Engine
        with _OfferingClassType
        with _VolumeType
-       with typings.awsDashSdk.clientsEsMod._VolumeType
+       with typings.awsDashSdk.clientsEc2Mod._VolumeType
        with typings.awsDashSdk.clientsOpsworksMod._VolumeType
   
   @js.native
@@ -28136,7 +28150,7 @@ object awsDashSdkStrings {
     extends _NetworkProtocol
        with _PortProtocol
        with _TransportProtocol
-       with typings.awsDashSdk.clientsEcsMod._TransportProtocol
+       with typings.awsDashSdk.clientsEc2Mod._TransportProtocol
   
   @js.native
   sealed trait terminate
@@ -28260,7 +28274,7 @@ object awsDashSdkStrings {
   sealed trait udp
     extends _NetworkProtocol
        with _TransportProtocol
-       with typings.awsDashSdk.clientsEcsMod._TransportProtocol
+       with typings.awsDashSdk.clientsEc2Mod._TransportProtocol
   
   @js.native
   sealed trait unavailable

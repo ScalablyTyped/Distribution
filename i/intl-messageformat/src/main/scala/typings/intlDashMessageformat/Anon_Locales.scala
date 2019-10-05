@@ -3,8 +3,8 @@ package typings.intlDashMessageformat
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.std.IntlNs.NumberFormat
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.NumberFormat
+import typings.std.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,14 +21,10 @@ trait ListDatasetImportJobsRequest extends js.Object {
 
 object ListDatasetImportJobsRequest {
   @scala.inline
-  def apply(
-    datasetArn: Arn = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): ListDatasetImportJobsRequest = {
+  def apply(datasetArn: Arn = null, maxResults: Int | Double = null, nextToken: NextToken = null): ListDatasetImportJobsRequest = {
     val __obj = js.Dynamic.literal()
     if (datasetArn != null) __obj.updateDynamic("datasetArn")(datasetArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListDatasetImportJobsRequest]
   }

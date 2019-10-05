@@ -14,13 +14,13 @@ trait Typeofnetworking extends js.Object {
     * Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val configNs: Typeofconfig
+  val config: Typeofconfig
 }
 
 object Typeofnetworking {
   @scala.inline
-  def apply(configNs: Typeofconfig): Typeofnetworking = {
-    val __obj = js.Dynamic.literal(configNs = configNs)
+  def apply(config: Typeofconfig): Typeofnetworking = {
+    val __obj = js.Dynamic.literal(config = config)
   
     __obj.asInstanceOf[Typeofnetworking]
   }

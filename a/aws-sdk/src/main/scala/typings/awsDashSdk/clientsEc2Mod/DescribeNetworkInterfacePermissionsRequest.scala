@@ -27,13 +27,13 @@ object DescribeNetworkInterfacePermissionsRequest {
   @scala.inline
   def apply(
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NetworkInterfacePermissionIds: NetworkInterfacePermissionIdList = null,
     NextToken: String = null
   ): DescribeNetworkInterfacePermissionsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NetworkInterfacePermissionIds != null) __obj.updateDynamic("NetworkInterfacePermissionIds")(NetworkInterfacePermissionIds)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeNetworkInterfacePermissionsRequest]

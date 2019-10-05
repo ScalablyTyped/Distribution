@@ -32,14 +32,14 @@ object ListThingsRequest {
   def apply(
     attributeName: AttributeName = null,
     attributeValue: AttributeValue = null,
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     thingTypeName: ThingTypeName = null
   ): ListThingsRequest = {
     val __obj = js.Dynamic.literal()
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
     if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName)
     __obj.asInstanceOf[ListThingsRequest]

@@ -55,10 +55,10 @@ object Activation {
     DefaultInstanceName: DefaultInstanceName = null,
     Description: ActivationDescription = null,
     ExpirationDate: ExpirationDate = null,
-    Expired: js.UndefOr[Boolean] = js.undefined,
+    Expired: js.UndefOr[scala.Boolean] = js.undefined,
     IamRole: IamRole = null,
-    RegistrationLimit: js.UndefOr[RegistrationLimit] = js.undefined,
-    RegistrationsCount: js.UndefOr[RegistrationsCount] = js.undefined,
+    RegistrationLimit: Int | Double = null,
+    RegistrationsCount: Int | Double = null,
     Tags: TagList = null
   ): Activation = {
     val __obj = js.Dynamic.literal()
@@ -69,8 +69,8 @@ object Activation {
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate)
     if (!js.isUndefined(Expired)) __obj.updateDynamic("Expired")(Expired)
     if (IamRole != null) __obj.updateDynamic("IamRole")(IamRole)
-    if (!js.isUndefined(RegistrationLimit)) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit)
-    if (!js.isUndefined(RegistrationsCount)) __obj.updateDynamic("RegistrationsCount")(RegistrationsCount)
+    if (RegistrationLimit != null) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.asInstanceOf[js.Any])
+    if (RegistrationsCount != null) __obj.updateDynamic("RegistrationsCount")(RegistrationsCount.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[Activation]
   }

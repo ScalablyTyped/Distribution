@@ -1,7 +1,7 @@
 package typings.socketDotIo.socketDotIoMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.socketDotIo.socketDotIoStrings.connect
 import typings.socketDotIo.socketDotIoStrings.connection
 import scala.scalajs.js

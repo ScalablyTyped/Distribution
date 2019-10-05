@@ -4,6 +4,7 @@ import typings.aureliaDashBinding.aureliaDashBindingMod.Binding
 import typings.aureliaDashDependencyDashInjection.aureliaDashDependencyDashInjectionMod.Container
 import typings.std.DocumentFragment
 import typings.std.Element
+import typings.std.HTMLTemplateElement
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -101,5 +102,13 @@ class View protected () extends js.Object {
     * Unbinds the view and its children.
     */
   def unbind(): Unit = js.native
+}
+
+@JSImport("aurelia-templating", "view")
+@js.native
+object view extends js.Object {
+  def apply(templateOrConfig: String): js.Any = js.native
+  def apply(templateOrConfig: IStaticViewStrategyConfig): js.Any = js.native
+  def apply(templateOrConfig: HTMLTemplateElement): js.Any = js.native
 }
 

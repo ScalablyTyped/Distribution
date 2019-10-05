@@ -23,11 +23,11 @@ object ListServerNeighborsResponse {
   @scala.inline
   def apply(
     neighbors: NeighborDetailsList,
-    knownDependencyCount: js.UndefOr[Long] = js.undefined,
+    knownDependencyCount: Int | Double = null,
     nextToken: String = null
   ): ListServerNeighborsResponse = {
     val __obj = js.Dynamic.literal(neighbors = neighbors)
-    if (!js.isUndefined(knownDependencyCount)) __obj.updateDynamic("knownDependencyCount")(knownDependencyCount)
+    if (knownDependencyCount != null) __obj.updateDynamic("knownDependencyCount")(knownDependencyCount.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListServerNeighborsResponse]
   }

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.documentdb.documentdbMod.UniqueId because Already inherited
 - typings.documentdb.documentdbMod.AbstractMeta because var conflicts: id. Inlined _self, _ts, _rid, _etag, _attachments */ trait CollectionMeta extends Collection {
   var _attachments: js.UndefOr[String] = js.undefined
   var _etag: js.UndefOr[String] = js.undefined

@@ -1,6 +1,6 @@
 package typings.atJupyterlabStatusbar.atJupyterlabStatusbarMod
 
-import typings.atJupyterlabStatusbar.libDefaultsKernelStatusMod.KernelStatusNs.IOptions
+import typings.atJupyterlabStatusbar.libDefaultsKernelStatusMod.KernelStatus.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,5 +13,17 @@ class KernelStatus protected ()
     * Construct the kernel status widget.
     */
   def this(opts: IOptions) = this()
+}
+
+@JSImport("@jupyterlab/statusbar", "KernelStatus")
+@js.native
+object KernelStatus extends js.Object {
+  /**
+    * A VDomModel for the kernel status indicator.
+    */
+  @js.native
+  class Model ()
+    extends typings.atJupyterlabStatusbar.libDefaultsMod.KernelStatus.Model
+  
 }
 

@@ -47,22 +47,22 @@ object OrderableReplicationInstance {
   @scala.inline
   def apply(
     AvailabilityZones: AvailabilityZonesList = null,
-    DefaultAllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    DefaultAllocatedStorage: Int | Double = null,
     EngineVersion: String = null,
-    IncludedAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    MaxAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    MinAllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    IncludedAllocatedStorage: Int | Double = null,
+    MaxAllocatedStorage: Int | Double = null,
+    MinAllocatedStorage: Int | Double = null,
     ReleaseStatus: ReleaseStatusValues = null,
     ReplicationInstanceClass: String = null,
     StorageType: String = null
   ): OrderableReplicationInstance = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(DefaultAllocatedStorage)) __obj.updateDynamic("DefaultAllocatedStorage")(DefaultAllocatedStorage)
+    if (DefaultAllocatedStorage != null) __obj.updateDynamic("DefaultAllocatedStorage")(DefaultAllocatedStorage.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(IncludedAllocatedStorage)) __obj.updateDynamic("IncludedAllocatedStorage")(IncludedAllocatedStorage)
-    if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage)
-    if (!js.isUndefined(MinAllocatedStorage)) __obj.updateDynamic("MinAllocatedStorage")(MinAllocatedStorage)
+    if (IncludedAllocatedStorage != null) __obj.updateDynamic("IncludedAllocatedStorage")(IncludedAllocatedStorage.asInstanceOf[js.Any])
+    if (MaxAllocatedStorage != null) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage.asInstanceOf[js.Any])
+    if (MinAllocatedStorage != null) __obj.updateDynamic("MinAllocatedStorage")(MinAllocatedStorage.asInstanceOf[js.Any])
     if (ReleaseStatus != null) __obj.updateDynamic("ReleaseStatus")(ReleaseStatus.asInstanceOf[js.Any])
     if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass)
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)

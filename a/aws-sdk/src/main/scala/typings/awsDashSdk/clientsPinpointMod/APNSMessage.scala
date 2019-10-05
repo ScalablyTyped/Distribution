@@ -79,7 +79,7 @@ object APNSMessage {
   @scala.inline
   def apply(
     Action: Action = null,
-    Badge: js.UndefOr[__integer] = js.undefined,
+    Badge: Int | Double = null,
     Body: __string = null,
     Category: __string = null,
     CollapseId: __string = null,
@@ -88,17 +88,17 @@ object APNSMessage {
     PreferredAuthenticationMethod: __string = null,
     Priority: __string = null,
     RawContent: __string = null,
-    SilentPush: js.UndefOr[__boolean] = js.undefined,
+    SilentPush: js.UndefOr[Boolean] = js.undefined,
     Sound: __string = null,
     Substitutions: MapOfListOf__string = null,
     ThreadId: __string = null,
-    TimeToLive: js.UndefOr[__integer] = js.undefined,
+    TimeToLive: Int | Double = null,
     Title: __string = null,
     Url: __string = null
   ): APNSMessage = {
     val __obj = js.Dynamic.literal()
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (!js.isUndefined(Badge)) __obj.updateDynamic("Badge")(Badge)
+    if (Badge != null) __obj.updateDynamic("Badge")(Badge.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body)
     if (Category != null) __obj.updateDynamic("Category")(Category)
     if (CollapseId != null) __obj.updateDynamic("CollapseId")(CollapseId)
@@ -111,7 +111,7 @@ object APNSMessage {
     if (Sound != null) __obj.updateDynamic("Sound")(Sound)
     if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions)
     if (ThreadId != null) __obj.updateDynamic("ThreadId")(ThreadId)
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive)
+    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title)
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[APNSMessage]

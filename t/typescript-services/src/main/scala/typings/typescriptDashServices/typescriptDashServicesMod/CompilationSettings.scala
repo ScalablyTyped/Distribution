@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CompilationSettings")
 @js.native
 class CompilationSettings ()
-  extends typings.typescriptDashServices.TypeScriptNs.CompilationSettings
+  extends typings.typescriptDashServices.TypeScript.CompilationSettings
 

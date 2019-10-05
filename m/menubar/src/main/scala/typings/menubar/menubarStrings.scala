@@ -1,7 +1,7 @@
 package typings.menubar
 
-import typings.menubar.MenubarNs.Position
-import typings.menubar.MenubarNs.TrayBounds
+import typings.menubar.Menubar.Position
+import typings.menubar.Menubar.TrayBounds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

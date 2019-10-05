@@ -1,6 +1,6 @@
 package typings.seen.seenMod
 
-import typings.seen.seenMod.EventsNs.Dispatcher
+import typings.seen.seenMod.Events.Dispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

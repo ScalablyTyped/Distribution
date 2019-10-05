@@ -1,7 +1,7 @@
 package typings.rmcDashCalendar.esDatePickerPropsMod
 
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.ExtraData
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.Locale
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.ExtraData
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.Locale
 import typings.rmcDashCalendar.rmcDashCalendarStrings.normal
 import typings.rmcDashCalendar.rmcDashCalendarStrings.one
 import typings.rmcDashCalendar.rmcDashCalendarStrings.range

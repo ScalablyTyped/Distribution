@@ -2,6 +2,7 @@ package typings.ol.sourceOSMMod
 
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,7 @@ object Options {
     maxZoom: Int | Double = null,
     opaque: js.UndefOr[Boolean] = js.undefined,
     reprojectionErrorThreshold: Int | Double = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     url: String = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -38,7 +39,7 @@ object Options {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque)
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
     __obj.asInstanceOf[Options]

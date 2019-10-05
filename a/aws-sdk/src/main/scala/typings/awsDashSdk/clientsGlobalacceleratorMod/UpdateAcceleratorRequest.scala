@@ -27,7 +27,7 @@ object UpdateAcceleratorRequest {
   @scala.inline
   def apply(
     AcceleratorArn: GenericString,
-    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     IpAddressType: IpAddressType = null,
     Name: GenericString = null
   ): UpdateAcceleratorRequest = {

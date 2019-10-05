@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadyLicense
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.IPlayReadyLicense
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

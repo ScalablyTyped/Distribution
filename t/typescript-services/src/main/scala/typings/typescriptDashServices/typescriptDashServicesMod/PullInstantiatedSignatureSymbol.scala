@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.TypeArgumentMap
+import typings.typescriptDashServices.TypeScript.TypeArgumentMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullInstantiatedSignatureSymbol")
 @js.native
 class PullInstantiatedSignatureSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullInstantiatedSignatureSymbol {
+  extends typings.typescriptDashServices.TypeScript.PullInstantiatedSignatureSymbol {
   def this(
-    rootSignature: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol,
+    rootSignature: typings.typescriptDashServices.TypeScript.PullSignatureSymbol,
     _typeParameterArgumentMap: TypeArgumentMap
   ) = this()
 }

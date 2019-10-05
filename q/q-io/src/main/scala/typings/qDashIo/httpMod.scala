@@ -1,8 +1,8 @@
 package typings.qDashIo
 
 import typings.q.qMod.Promise
-import typings.qDashIo.QioHTTPNs.Request
-import typings.qDashIo.QioHTTPNs.Response
+import typings.qDashIo.QioHTTP.Request
+import typings.qDashIo.QioHTTP.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

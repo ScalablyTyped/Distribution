@@ -42,3 +42,18 @@ object ClassProperty {
   }
 }
 
+@JSImport("babel-types", "classProperty")
+@js.native
+object classProperty extends js.Object {
+  def apply(): ClassProperty = js.native
+  def apply(key: Identifier): ClassProperty = js.native
+  def apply(key: Identifier, value: Expression): ClassProperty = js.native
+  def apply(key: Identifier, value: Expression, typeAnnotation: TypeAnnotation): ClassProperty = js.native
+  def apply(
+    key: Identifier,
+    value: Expression,
+    typeAnnotation: TypeAnnotation,
+    decorators: js.Array[Decorator]
+  ): ClassProperty = js.native
+}
+

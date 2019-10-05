@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glacierVaultMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.glacierNs.VaultNotification
+import typings.atPulumiAws.typesInputMod.glacier.VaultNotification
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

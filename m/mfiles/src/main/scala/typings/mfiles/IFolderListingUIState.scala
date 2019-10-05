@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFFolderListingItemGroupingMode
-import typings.mfiles.MFilesNs.MFFolderListingViewMode
+import typings.mfiles.MFiles.MFFolderListingItemGroupingMode
+import typings.mfiles.MFiles.MFFolderListingViewMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

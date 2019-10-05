@@ -1,6 +1,6 @@
 package typings.kuromoji
 
-import typings.doublearray.doublearrayNs.DoubleArray
+import typings.doublearray.doublearray.DoubleArray
 import typings.kuromoji.kuromojiMod.TokenInfoDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`

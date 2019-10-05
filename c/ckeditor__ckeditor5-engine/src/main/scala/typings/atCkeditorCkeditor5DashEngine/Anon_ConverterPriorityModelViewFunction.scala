@@ -1,6 +1,6 @@
 package typings.atCkeditorCkeditor5DashEngine
 
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.MatcherPattern
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.MatcherPattern
 import typings.atCkeditorCkeditor5DashUtils.atCkeditorCkeditor5DashUtilsMod.PriorityString
 import scala.scalajs.js
 import scala.scalajs.js.`|`

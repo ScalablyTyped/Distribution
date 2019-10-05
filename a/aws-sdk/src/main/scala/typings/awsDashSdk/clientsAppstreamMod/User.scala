@@ -45,7 +45,7 @@ object User {
     AuthenticationType: AuthenticationType,
     Arn: Arn = null,
     CreatedTime: Timestamp = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     FirstName: UserAttributeValue = null,
     LastName: UserAttributeValue = null,
     Status: String = null,

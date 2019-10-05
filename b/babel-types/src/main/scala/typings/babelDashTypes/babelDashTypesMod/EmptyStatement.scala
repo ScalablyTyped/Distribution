@@ -31,3 +31,9 @@ object EmptyStatement {
   }
 }
 
+@JSImport("babel-types", "emptyStatement")
+@js.native
+object emptyStatement extends js.Object {
+  def apply(): EmptyStatement = js.native
+}
+

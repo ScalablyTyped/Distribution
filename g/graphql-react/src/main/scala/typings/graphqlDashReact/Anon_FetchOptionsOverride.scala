@@ -1,5 +1,6 @@
 package typings.graphqlDashReact
 
+import typings.graphqlDashReact.graphqlDashReactMod.GraphQLFetchOptions
 import typings.graphqlDashReact.graphqlDashReactMod.GraphQLFetchOptionsOverride
 import typings.graphqlDashReact.graphqlDashReactMod.GraphQLOperation
 import scala.scalajs.js
@@ -17,12 +18,12 @@ object Anon_FetchOptionsOverride {
   @scala.inline
   def apply[V](
     operation: GraphQLOperation[V],
-    fetchOptionsOverride: GraphQLFetchOptionsOverride = null,
+    fetchOptionsOverride: /* options */ GraphQLFetchOptions => Unit = null,
     reloadOnLoad: js.UndefOr[Boolean] = js.undefined,
     resetOnLoad: js.UndefOr[Boolean] = js.undefined
   ): Anon_FetchOptionsOverride[V] = {
     val __obj = js.Dynamic.literal(operation = operation)
-    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(fetchOptionsOverride)
+    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(js.Any.fromFunction1(fetchOptionsOverride))
     if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad)
     if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad)
     __obj.asInstanceOf[Anon_FetchOptionsOverride[V]]

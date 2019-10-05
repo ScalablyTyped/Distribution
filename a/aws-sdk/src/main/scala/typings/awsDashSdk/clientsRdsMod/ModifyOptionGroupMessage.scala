@@ -27,7 +27,7 @@ object ModifyOptionGroupMessage {
   @scala.inline
   def apply(
     OptionGroupName: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
     OptionsToInclude: OptionConfigurationList = null,
     OptionsToRemove: OptionNamesList = null
   ): ModifyOptionGroupMessage = {

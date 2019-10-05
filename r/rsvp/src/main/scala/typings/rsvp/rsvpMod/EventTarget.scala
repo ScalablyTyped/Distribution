@@ -1,8 +1,8 @@
 package typings.rsvp.rsvpMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.rsvp.rsvpMod.RSVPNs.InstrumentEvent
-import typings.rsvp.rsvpMod.RSVPNs.ObjectWithEventMixins
+import typings.rsvp.rsvpMod.RSVP.InstrumentEvent
+import typings.rsvp.rsvpMod.RSVP.ObjectWithEventMixins
 import typings.rsvp.rsvpStrings.chained
 import typings.rsvp.rsvpStrings.created
 import typings.rsvp.rsvpStrings.error
@@ -14,13 +14,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rsvp", "EventTarget")
 @js.native
-class EventTargetCls ()
-  extends typings.rsvp.rsvpMod.RSVPNs.EventTarget
-
-@JSImport("rsvp", "EventTarget")
-@js.native
 object EventTarget
-  extends Instantiable0[typings.rsvp.rsvpMod.RSVPNs.EventTarget] {
+  extends Instantiable0[typings.rsvp.rsvpMod.RSVP.EventTarget] {
   /** `RSVP.EventTarget.mixin` extends an object with EventTarget methods. */
   def mixin(`object`: js.Object): ObjectWithEventMixins = js.native
   /**

@@ -54,20 +54,20 @@ trait PendingModifiedValues extends js.Object {
 object PendingModifiedValues {
   @scala.inline
   def apply(
-    AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    AutomatedSnapshotRetentionPeriod: Int | scala.Double = null,
     ClusterIdentifier: String = null,
     ClusterType: String = null,
     ClusterVersion: String = null,
     EncryptionType: String = null,
-    EnhancedVpcRouting: js.UndefOr[BooleanOptional] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
     MaintenanceTrackName: String = null,
     MasterUserPassword: String = null,
     NodeType: String = null,
-    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
+    NumberOfNodes: Int | scala.Double = null,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined
   ): PendingModifiedValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod)
+    if (AutomatedSnapshotRetentionPeriod != null) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier)
     if (ClusterType != null) __obj.updateDynamic("ClusterType")(ClusterType)
     if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion)
@@ -76,7 +76,7 @@ object PendingModifiedValues {
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes)
+    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     __obj.asInstanceOf[PendingModifiedValues]
   }

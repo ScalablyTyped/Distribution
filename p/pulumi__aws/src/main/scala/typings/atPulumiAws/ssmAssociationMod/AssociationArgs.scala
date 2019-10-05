@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmAssociationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ssmNs.AssociationOutputLocation
-import typings.atPulumiAws.typesInputMod.ssmNs.AssociationTarget
+import typings.atPulumiAws.typesInputMod.ssm.AssociationOutputLocation
+import typings.atPulumiAws.typesInputMod.ssm.AssociationTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

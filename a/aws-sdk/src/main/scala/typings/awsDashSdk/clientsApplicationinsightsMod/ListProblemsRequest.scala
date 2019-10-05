@@ -31,14 +31,14 @@ object ListProblemsRequest {
   @scala.inline
   def apply(
     EndTime: EndTime = null,
-    MaxResults: js.UndefOr[MaxEntities] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     ResourceGroupName: ResourceGroupName = null,
     StartTime: StartTime = null
   ): ListProblemsRequest = {
     val __obj = js.Dynamic.literal()
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResourceGroupName != null) __obj.updateDynamic("ResourceGroupName")(ResourceGroupName)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)

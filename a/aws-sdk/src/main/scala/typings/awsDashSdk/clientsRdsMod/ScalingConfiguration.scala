@@ -30,17 +30,17 @@ trait ScalingConfiguration extends js.Object {
 object ScalingConfiguration {
   @scala.inline
   def apply(
-    AutoPause: js.UndefOr[BooleanOptional] = js.undefined,
-    MaxCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    MinCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    SecondsUntilAutoPause: js.UndefOr[IntegerOptional] = js.undefined,
+    AutoPause: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxCapacity: Int | scala.Double = null,
+    MinCapacity: Int | scala.Double = null,
+    SecondsUntilAutoPause: Int | scala.Double = null,
     TimeoutAction: String = null
   ): ScalingConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoPause)) __obj.updateDynamic("AutoPause")(AutoPause)
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity)
-    if (!js.isUndefined(SecondsUntilAutoPause)) __obj.updateDynamic("SecondsUntilAutoPause")(SecondsUntilAutoPause)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (MinCapacity != null) __obj.updateDynamic("MinCapacity")(MinCapacity.asInstanceOf[js.Any])
+    if (SecondsUntilAutoPause != null) __obj.updateDynamic("SecondsUntilAutoPause")(SecondsUntilAutoPause.asInstanceOf[js.Any])
     if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction)
     __obj.asInstanceOf[ScalingConfiguration]
   }

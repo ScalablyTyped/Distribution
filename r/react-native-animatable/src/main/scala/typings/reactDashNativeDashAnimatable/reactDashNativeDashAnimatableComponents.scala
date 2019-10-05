@@ -13,7 +13,7 @@ object reactDashNativeDashAnimatableComponents extends reactDashNativeDashAnimat
   @scala.inline
   def Image: ComponentType[
     AnimatableProperties[ImageStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any)
-  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.^.Image.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.Image.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.AnimatableProperties[typings.reactDashNative.reactDashNativeMod.ImageStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any)]]
   @scala.inline
   def ImageCls: ComponentType[
@@ -23,7 +23,7 @@ object reactDashNativeDashAnimatableComponents extends reactDashNativeDashAnimat
   @scala.inline
   def Text: ComponentType[
     AnimatableProperties[TextStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any)
-  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.^.Text.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.Text.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.AnimatableProperties[typings.reactDashNative.reactDashNativeMod.TextStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any)]]
   @scala.inline
   def TextCls: ComponentType[
@@ -33,7 +33,7 @@ object reactDashNativeDashAnimatableComponents extends reactDashNativeDashAnimat
   @scala.inline
   def View: ComponentType[
     AnimatableProperties[ViewStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any)
-  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.^.View.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.View.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.AnimatableProperties[typings.reactDashNative.reactDashNativeMod.ViewStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any)]]
   @scala.inline
   def ViewCls: ComponentType[

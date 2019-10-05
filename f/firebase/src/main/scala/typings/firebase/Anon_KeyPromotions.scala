@@ -1,7 +1,7 @@
 package typings.firebase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.firebaseMod.analyticsNs.Promotion
+import typings.firebase.firebaseMod.analytics.Promotion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

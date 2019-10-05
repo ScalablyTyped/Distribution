@@ -10,7 +10,7 @@ import typings.primereact.Anon_DragIndex
 import typings.primereact.Anon_First
 import typings.primereact.Anon_MultiSortMeta
 import typings.primereact.Anon_OriginalEventValue
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

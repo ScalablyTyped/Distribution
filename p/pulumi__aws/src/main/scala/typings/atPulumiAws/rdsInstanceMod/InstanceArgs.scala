@@ -3,7 +3,7 @@ package typings.atPulumiAws.rdsInstanceMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
 import typings.atPulumiAws.rdsStorageTypeMod.StorageType
-import typings.atPulumiAws.typesInputMod.rdsNs.InstanceS3Import
+import typings.atPulumiAws.typesInputMod.rds.InstanceS3Import
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

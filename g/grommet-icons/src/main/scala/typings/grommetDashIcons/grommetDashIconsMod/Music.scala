@@ -1,5 +1,7 @@
 package typings.grommetDashIcons.grommetDashIconsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.grommetDashIcons.iconsMod.Icon
 import typings.grommetDashIcons.iconsMod.IconProps
 import typings.react.SVGSVGElement
 import typings.react.reactMod.Component
@@ -16,4 +18,8 @@ class Music protected ()
   def this(props: IconProps with SVGProps[SVGSVGElement]) = this()
   def this(props: IconProps with SVGProps[SVGSVGElement], context: js.Any) = this()
 }
+
+@JSImport("grommet-icons", "Music")
+@js.native
+object Music extends TopLevel[Icon]
 

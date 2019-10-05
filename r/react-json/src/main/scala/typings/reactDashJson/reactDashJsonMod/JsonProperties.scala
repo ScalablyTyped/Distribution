@@ -11,9 +11,9 @@ trait JsonProperties extends js.Object {
 
 object JsonProperties {
   @scala.inline
-  def apply(value: js.Any, onChange: OnChangeHandler = null): JsonProperties = {
+  def apply(value: js.Any, onChange: /* value */ js.Any => Unit = null): JsonProperties = {
     val __obj = js.Dynamic.literal(value = value)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[JsonProperties]
   }
 }

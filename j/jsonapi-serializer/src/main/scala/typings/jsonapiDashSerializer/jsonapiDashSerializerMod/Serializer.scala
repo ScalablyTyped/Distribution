@@ -1,5 +1,6 @@
 package typings.jsonapiDashSerializer.jsonapiDashSerializerMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,18 +11,5 @@ trait Serializer extends js.Object {
 
 @JSImport("jsonapi-serializer", "Serializer")
 @js.native
-class SerializerCls protected () extends Serializer {
-  def this(collectionName: String, opts: SerializerOptions) = this()
-  /* CompleteClass */
-  override def serialize(data: js.Any): js.Any = js.native
-}
-
-object Serializer {
-  @scala.inline
-  def apply(serialize: js.Any => js.Any): Serializer = {
-    val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction1(serialize))
-  
-    __obj.asInstanceOf[Serializer]
-  }
-}
+object Serializer extends TopLevel[SerializerConstructor]
 

@@ -1,6 +1,6 @@
 package typings.jssip.jssipMod
 
-import typings.jssip.jssipMod.RTCSessionNs.DTMF
+import typings.jssip.jssipMod.RTCSession.DTMF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appautoscalingPolicyMod
 
-import typings.atPulumiAws.typesOutputMod.appautoscalingNs.PolicyStepScalingPolicyConfiguration
-import typings.atPulumiAws.typesOutputMod.appautoscalingNs.PolicyTargetTrackingScalingPolicyConfiguration
+import typings.atPulumiAws.typesOutputMod.appautoscaling.PolicyStepScalingPolicyConfiguration
+import typings.atPulumiAws.typesOutputMod.appautoscaling.PolicyTargetTrackingScalingPolicyConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

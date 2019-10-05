@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cassandraDashDriverMod {
-  import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.ResultSet
+  import typings.cassandraDashDriver.cassandraDashDriverMod.types.ResultSet
   import typings.std.Error
 
   type Callback = js.Function

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksGangliaLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.GangliaLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.GangliaLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

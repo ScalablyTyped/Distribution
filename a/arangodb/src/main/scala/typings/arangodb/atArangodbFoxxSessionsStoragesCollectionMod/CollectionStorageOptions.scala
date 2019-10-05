@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxSessionsStoragesCollectionMod
 
-import typings.arangodb.ArangoDBNs.Collection
+import typings.arangodb.ArangoDB.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

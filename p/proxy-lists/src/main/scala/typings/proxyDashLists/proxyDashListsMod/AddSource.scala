@@ -18,3 +18,9 @@ object AddSource {
   }
 }
 
+@JSImport("proxy-lists", "addSource")
+@js.native
+object addSource extends js.Object {
+  def apply(name: String, source: AddSource): Unit = js.native
+}
+

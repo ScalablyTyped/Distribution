@@ -1,6 +1,6 @@
 package typings.cannon.cannonMod
 
-import typings.cannon.CANNONNs.IHingeConstraintOptions
+import typings.cannon.CANNON.IHingeConstraintOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "HingeConstraint")
 @js.native
 class HingeConstraint protected ()
-  extends typings.cannon.CANNONNs.HingeConstraint {
-  def this(bodyA: typings.cannon.CANNONNs.Body, bodyB: typings.cannon.CANNONNs.Body) = this()
+  extends typings.cannon.CANNON.HingeConstraint {
+  def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()
   def this(
-    bodyA: typings.cannon.CANNONNs.Body,
-    bodyB: typings.cannon.CANNONNs.Body,
+    bodyA: typings.cannon.CANNON.Body,
+    bodyB: typings.cannon.CANNON.Body,
     options: IHingeConstraintOptions
   ) = this()
 }

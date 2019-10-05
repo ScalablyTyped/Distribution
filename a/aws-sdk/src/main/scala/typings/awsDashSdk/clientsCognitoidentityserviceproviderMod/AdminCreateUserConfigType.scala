@@ -22,14 +22,14 @@ trait AdminCreateUserConfigType extends js.Object {
 object AdminCreateUserConfigType {
   @scala.inline
   def apply(
-    AllowAdminCreateUserOnly: js.UndefOr[BooleanType] = js.undefined,
+    AllowAdminCreateUserOnly: js.UndefOr[Boolean] = js.undefined,
     InviteMessageTemplate: MessageTemplateType = null,
-    UnusedAccountValidityDays: js.UndefOr[AdminCreateUserUnusedAccountValidityDaysType] = js.undefined
+    UnusedAccountValidityDays: Int | Double = null
   ): AdminCreateUserConfigType = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AllowAdminCreateUserOnly)) __obj.updateDynamic("AllowAdminCreateUserOnly")(AllowAdminCreateUserOnly)
     if (InviteMessageTemplate != null) __obj.updateDynamic("InviteMessageTemplate")(InviteMessageTemplate)
-    if (!js.isUndefined(UnusedAccountValidityDays)) __obj.updateDynamic("UnusedAccountValidityDays")(UnusedAccountValidityDays)
+    if (UnusedAccountValidityDays != null) __obj.updateDynamic("UnusedAccountValidityDays")(UnusedAccountValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminCreateUserConfigType]
   }
 }

@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libWidgettrackerMod.WidgetTrackerNs.IOptions
+import typings.atJupyterlabApputils.libWidgettrackerMod.WidgetTracker.IOptions
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

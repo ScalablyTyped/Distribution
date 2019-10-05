@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod
 
-import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.font
+import typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKPropTypes.font
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

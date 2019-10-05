@@ -14,12 +14,9 @@ trait CmafEncryption extends js.Object {
 
 object CmafEncryption {
   @scala.inline
-  def apply(
-    SpekeKeyProvider: SpekeKeyProvider,
-    KeyRotationIntervalSeconds: js.UndefOr[__integer] = js.undefined
-  ): CmafEncryption = {
+  def apply(SpekeKeyProvider: SpekeKeyProvider, KeyRotationIntervalSeconds: Int | Double = null): CmafEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider)
-    if (!js.isUndefined(KeyRotationIntervalSeconds)) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds)
+    if (KeyRotationIntervalSeconds != null) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafEncryption]
   }
 }

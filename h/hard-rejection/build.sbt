@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hard-rejection"
-version := "2.1.0-d2688b"
-scalaVersion := "2.12.9"
+version := "2.1.0-1895d8"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

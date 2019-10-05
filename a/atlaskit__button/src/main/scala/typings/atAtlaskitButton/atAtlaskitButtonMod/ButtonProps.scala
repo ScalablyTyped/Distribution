@@ -1,7 +1,9 @@
 package typings.atAtlaskitButton.atAtlaskitButtonMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
@@ -73,7 +75,7 @@ object ButtonProps {
     innerRef: /* instance */ js.Any => Unit = null,
     isDisabled: js.UndefOr[Boolean] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEventHandler[HTMLButtonElement] = null,
+    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     shouldFitContainer: js.UndefOr[Boolean] = js.undefined,
     spacing: ButtonSpacing = null,
     tabIndex: Int | Double = null,
@@ -96,7 +98,7 @@ object ButtonProps {
     if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(shouldFitContainer)) __obj.updateDynamic("shouldFitContainer")(shouldFitContainer)
     if (spacing != null) __obj.updateDynamic("spacing")(spacing)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

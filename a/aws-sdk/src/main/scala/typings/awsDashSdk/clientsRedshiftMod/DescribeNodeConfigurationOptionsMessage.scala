@@ -37,14 +37,14 @@ object DescribeNodeConfigurationOptionsMessage {
     ActionType: ActionType,
     Filters: NodeConfigurationOptionsFilterList = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     OwnerAccount: String = null,
     SnapshotIdentifier: String = null
   ): DescribeNodeConfigurationOptionsMessage = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount)
     if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier)
     __obj.asInstanceOf[DescribeNodeConfigurationOptionsMessage]

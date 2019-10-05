@@ -1,5 +1,6 @@
 package typings.easyDashXapi.easyDashXapiMod
 
+import typings.bunyan.bunyanMod.^
 import typings.express.expressMod.Application
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
@@ -16,7 +17,7 @@ trait Result extends js.Object {
   @JSName("app")
   var app_Original: Application = js.native
   var express: js.Any = js.native
-  var log: typings.bunyan.bunyanMod.^ = js.native
+  var log: ^ = js.native
   var server: Server = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without

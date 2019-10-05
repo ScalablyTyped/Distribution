@@ -37,11 +37,11 @@ object CodeLensProvider {
   @scala.inline
   def apply(
     provideCodeLenses: (TextDocument, CancellationToken) => ProviderResult[js.Array[CodeLens]],
-    onDidChangeCodeLenses: Event[Unit] = null,
+    onDidChangeCodeLenses: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable = null,
     resolveCodeLens: (/* codeLens */ CodeLens, /* token */ CancellationToken) => ProviderResult[CodeLens] = null
   ): CodeLensProvider = {
     val __obj = js.Dynamic.literal(provideCodeLenses = js.Any.fromFunction2(provideCodeLenses))
-    if (onDidChangeCodeLenses != null) __obj.updateDynamic("onDidChangeCodeLenses")(onDidChangeCodeLenses)
+    if (onDidChangeCodeLenses != null) __obj.updateDynamic("onDidChangeCodeLenses")(js.Any.fromFunction3(onDidChangeCodeLenses))
     if (resolveCodeLens != null) __obj.updateDynamic("resolveCodeLens")(js.Any.fromFunction2(resolveCodeLens))
     __obj.asInstanceOf[CodeLensProvider]
   }

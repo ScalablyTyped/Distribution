@@ -1,8 +1,10 @@
 package typings.atReachTooltip.atReachTooltipMod
 
 import typings.react.Element
+import typings.react.Event
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.Ref
+import typings.react.reactMod.SyntheticEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,18 +27,19 @@ object TriggerParams {
   def apply(
     `aria-describedby`: String,
     `data-reach-tooltip-trigger`: String,
-    onBlur: ReactEventHandler[Element],
-    onFocus: ReactEventHandler[Element],
-    onKeyDown: ReactEventHandler[Element],
-    onMouseDown: ReactEventHandler[Element],
-    onMouseEnter: ReactEventHandler[Element],
-    onMouseLeave: ReactEventHandler[Element],
-    onMouseMove: ReactEventHandler[Element],
-    ref: Ref[_]
+    onBlur: SyntheticEvent[Element, Event] => Unit,
+    onFocus: SyntheticEvent[Element, Event] => Unit,
+    onKeyDown: SyntheticEvent[Element, Event] => Unit,
+    onMouseDown: SyntheticEvent[Element, Event] => Unit,
+    onMouseEnter: SyntheticEvent[Element, Event] => Unit,
+    onMouseLeave: SyntheticEvent[Element, Event] => Unit,
+    onMouseMove: SyntheticEvent[Element, Event] => Unit,
+    ref: Ref[_] = null
   ): TriggerParams = {
-    val __obj = js.Dynamic.literal(onBlur = onBlur, onFocus = onFocus, onKeyDown = onKeyDown, onMouseDown = onMouseDown, onMouseEnter = onMouseEnter, onMouseLeave = onMouseLeave, onMouseMove = onMouseMove, ref = ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove))
     __obj.updateDynamic("aria-describedby")(`aria-describedby`)
     __obj.updateDynamic("data-reach-tooltip-trigger")(`data-reach-tooltip-trigger`)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerParams]
   }
 }

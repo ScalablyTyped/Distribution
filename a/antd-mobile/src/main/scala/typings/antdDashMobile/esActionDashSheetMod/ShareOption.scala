@@ -12,9 +12,9 @@ trait ShareOption extends js.Object {
 
 object ShareOption {
   @scala.inline
-  def apply(icon: ReactNode, title: String): ShareOption = {
-    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title)
-  
+  def apply(title: String, icon: ReactNode = null): ShareOption = {
+    val __obj = js.Dynamic.literal(title = title)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOption]
   }
 }

@@ -13,7 +13,7 @@ trait InstanceMonitoring extends js.Object {
 
 object InstanceMonitoring {
   @scala.inline
-  def apply(Enabled: js.UndefOr[MonitoringEnabled] = js.undefined): InstanceMonitoring = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): InstanceMonitoring = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[InstanceMonitoring]

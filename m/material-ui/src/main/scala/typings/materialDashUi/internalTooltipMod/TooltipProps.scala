@@ -1,7 +1,7 @@
 package typings.materialDashUi.internalTooltipMod
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+import typings.materialDashUi.__MaterialUI.propTypes.tooltipHorizontal
+import typings.materialDashUi.__MaterialUI.propTypes.vertical
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef

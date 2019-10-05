@@ -44,7 +44,7 @@ object GetJobOutputOutput {
     checksum: String = null,
     contentRange: String = null,
     contentType: String = null,
-    status: js.UndefOr[httpstatus] = js.undefined
+    status: Int | Double = null
   ): GetJobOutputOutput = {
     val __obj = js.Dynamic.literal()
     if (acceptRanges != null) __obj.updateDynamic("acceptRanges")(acceptRanges)
@@ -53,7 +53,7 @@ object GetJobOutputOutput {
     if (checksum != null) __obj.updateDynamic("checksum")(checksum)
     if (contentRange != null) __obj.updateDynamic("contentRange")(contentRange)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobOutputOutput]
   }
 }

@@ -21,14 +21,10 @@ trait DescribeIpGroupsRequest extends js.Object {
 
 object DescribeIpGroupsRequest {
   @scala.inline
-  def apply(
-    GroupIds: IpGroupIdList = null,
-    MaxResults: js.UndefOr[Limit] = js.undefined,
-    NextToken: PaginationToken = null
-  ): DescribeIpGroupsRequest = {
+  def apply(GroupIds: IpGroupIdList = null, MaxResults: Int | Double = null, NextToken: PaginationToken = null): DescribeIpGroupsRequest = {
     val __obj = js.Dynamic.literal()
     if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeIpGroupsRequest]
   }

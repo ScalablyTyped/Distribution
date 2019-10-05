@@ -1,6 +1,6 @@
 package typings.mssql.mssqlMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.TemplateStringsArray

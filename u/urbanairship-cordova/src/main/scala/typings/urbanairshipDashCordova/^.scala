@@ -1,6 +1,6 @@
 package typings.urbanairshipDashCordova
 
-import typings.urbanairshipDashCordova.UrbanAirshipPluginNs.UrbanAirshipStatic
+import typings.urbanairshipDashCordova.UrbanAirshipPlugin.UrbanAirshipStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

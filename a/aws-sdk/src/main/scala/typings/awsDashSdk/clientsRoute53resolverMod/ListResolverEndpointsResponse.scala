@@ -22,12 +22,12 @@ trait ListResolverEndpointsResponse extends js.Object {
 object ListResolverEndpointsResponse {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ResolverEndpoints: ResolverEndpoints = null
   ): ListResolverEndpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResolverEndpoints != null) __obj.updateDynamic("ResolverEndpoints")(ResolverEndpoints)
     __obj.asInstanceOf[ListResolverEndpointsResponse]

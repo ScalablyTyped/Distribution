@@ -26,14 +26,14 @@ trait DescribePrincipalIdFormatRequest extends js.Object {
 object DescribePrincipalIdFormatRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[DescribePrincipalIdFormatMaxResults] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     Resources: ResourceList = null
   ): DescribePrincipalIdFormatRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Resources != null) __obj.updateDynamic("Resources")(Resources)
     __obj.asInstanceOf[DescribePrincipalIdFormatRequest]

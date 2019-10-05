@@ -1,8 +1,8 @@
 package typings.koaDashStatic.koaDashStaticMod
 
 import typings.koaDashSend.koaDashSendMod.SendOptions
-import typings.koaDashSend.koaDashSendMod.SetHeaders
 import typings.koaDashSend.koaDashSendNumbers.`false`
+import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object Options {
     maxAge: Int | Double = null,
     maxage: Int | Double = null,
     root: String = null,
-    setHeaders: SetHeaders = null
+    setHeaders: (/* import warning: ImportType.apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext>['res'] */ /* res */ js.Any, /* path */ String, /* stats */ Stats) => js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(brotli)) __obj.updateDynamic("brotli")(brotli)
@@ -40,7 +40,7 @@ object Options {
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root)
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[Options]
   }
 }

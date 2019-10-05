@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,30 +46,30 @@ object IgGridFeatureChooser {
   /* optionName */ StringDictionary[js.Any] = null,
     animationDuration: Int | Double = null,
     dropDownWidth: js.Any = null,
-    featureChooserDropDownOpened: FeatureChooserDropDownOpenedEvent = null,
-    featureChooserDropDownOpening: FeatureChooserDropDownOpeningEvent = null,
-    featureChooserRendered: FeatureChooserRenderedEvent = null,
-    featureChooserRendering: FeatureChooserRenderingEvent = null,
-    featureToggled: FeatureToggledEvent = null,
-    featureToggling: FeatureTogglingEvent = null,
+    featureChooserDropDownOpened: (/* event */ Event, /* ui */ FeatureChooserDropDownOpenedEventUIParam) => Unit = null,
+    featureChooserDropDownOpening: (/* event */ Event, /* ui */ FeatureChooserDropDownOpeningEventUIParam) => Unit = null,
+    featureChooserRendered: (/* event */ Event, /* ui */ FeatureChooserRenderedEventUIParam) => Unit = null,
+    featureChooserRendering: (/* event */ Event, /* ui */ FeatureChooserRenderingEventUIParam) => Unit = null,
+    featureToggled: (/* event */ Event, /* ui */ FeatureToggledEventUIParam) => Unit = null,
+    featureToggling: (/* event */ Event, /* ui */ FeatureTogglingEventUIParam) => Unit = null,
     language: String = null,
     locale: js.Any = null,
-    menuToggling: MenuTogglingEvent = null,
+    menuToggling: (/* event */ Event, /* ui */ MenuTogglingEventUIParam) => Unit = null,
     regional: String | js.Object = null
   ): IgGridFeatureChooser = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth)
-    if (featureChooserDropDownOpened != null) __obj.updateDynamic("featureChooserDropDownOpened")(featureChooserDropDownOpened)
-    if (featureChooserDropDownOpening != null) __obj.updateDynamic("featureChooserDropDownOpening")(featureChooserDropDownOpening)
-    if (featureChooserRendered != null) __obj.updateDynamic("featureChooserRendered")(featureChooserRendered)
-    if (featureChooserRendering != null) __obj.updateDynamic("featureChooserRendering")(featureChooserRendering)
-    if (featureToggled != null) __obj.updateDynamic("featureToggled")(featureToggled)
-    if (featureToggling != null) __obj.updateDynamic("featureToggling")(featureToggling)
+    if (featureChooserDropDownOpened != null) __obj.updateDynamic("featureChooserDropDownOpened")(js.Any.fromFunction2(featureChooserDropDownOpened))
+    if (featureChooserDropDownOpening != null) __obj.updateDynamic("featureChooserDropDownOpening")(js.Any.fromFunction2(featureChooserDropDownOpening))
+    if (featureChooserRendered != null) __obj.updateDynamic("featureChooserRendered")(js.Any.fromFunction2(featureChooserRendered))
+    if (featureChooserRendering != null) __obj.updateDynamic("featureChooserRendering")(js.Any.fromFunction2(featureChooserRendering))
+    if (featureToggled != null) __obj.updateDynamic("featureToggled")(js.Any.fromFunction2(featureToggled))
+    if (featureToggling != null) __obj.updateDynamic("featureToggling")(js.Any.fromFunction2(featureToggling))
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (menuToggling != null) __obj.updateDynamic("menuToggling")(menuToggling)
+    if (menuToggling != null) __obj.updateDynamic("menuToggling")(js.Any.fromFunction2(menuToggling))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFeatureChooser]
   }

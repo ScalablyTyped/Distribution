@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Dialog")
 @js.native
 class Dialog ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Dialog
+  extends typings.materialDashUi.__MaterialUI.Dialog
 

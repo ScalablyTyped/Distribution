@@ -22,3 +22,9 @@ object Lookup {
   }
 }
 
+@JSImport("geoip-lite", "lookup")
+@js.native
+object lookup extends js.Object {
+  def apply(ip: String): Lookup = js.native
+}
+

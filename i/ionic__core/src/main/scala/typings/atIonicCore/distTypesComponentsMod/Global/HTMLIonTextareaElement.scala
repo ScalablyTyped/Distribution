@@ -8,16 +8,13 @@ import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.soft
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesStencilDotCoreMod.HTMLStencilElement
-import typings.std.CSSStyleDeclaration
-import typings.std.Element
-import typings.std.HTMLSlotElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atIonicCore.distTypesComponentsMod.ComponentsNs.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autoGrow, autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
+- typings.atIonicCore.distTypesComponentsMod.Components.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autoGrow, autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
 trait HTMLIonTextareaElement extends HTMLStencilElement {
   /**
     * If `true`, the element height will increase based on the value.
@@ -95,33 +92,6 @@ trait HTMLIonTextareaElement extends HTMLStencilElement {
     * Sets focus on the specified `ion-textarea`. Use this method instead of the global `input.focus()`.
     */
   def setFocus(): js.Promise[Unit] = js.native
-}
-
-@JSGlobal("HTMLIonTextareaElement")
-@js.native
-class HTMLIonTextareaElementCls () extends HTMLIonTextareaElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var contentEditable: String = js.native
-  /* CompleteClass */
-  override var innerHTML: String = js.native
-  /* CompleteClass */
-  override var inputMode: String = js.native
-  /* CompleteClass */
-  override val isContentEditable: Boolean = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
 }
 
 @JSGlobal("HTMLIonTextareaElement")

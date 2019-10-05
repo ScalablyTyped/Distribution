@@ -1,5 +1,6 @@
 package typings.quixote
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,4 +24,8 @@ object Quixote {
     __obj.asInstanceOf[Quixote]
   }
 }
+
+@JSGlobal("quixote")
+@js.native
+object quixote extends TopLevel[Quixote]
 

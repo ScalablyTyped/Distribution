@@ -1,7 +1,7 @@
 package typings.atPulumiAws.codedeployDeploymentConfigMod
 
-import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentConfigMinimumHealthyHosts
-import typings.atPulumiAws.typesOutputMod.codedeployNs.DeploymentConfigTrafficRoutingConfig
+import typings.atPulumiAws.typesOutputMod.codedeploy.DeploymentConfigMinimumHealthyHosts
+import typings.atPulumiAws.typesOutputMod.codedeploy.DeploymentConfigTrafficRoutingConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

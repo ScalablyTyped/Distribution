@@ -24,12 +24,12 @@ object SearchAddressBooksResponse {
   def apply(
     AddressBooks: AddressBookDataList = null,
     NextToken: NextToken = null,
-    TotalCount: js.UndefOr[TotalCount] = js.undefined
+    TotalCount: Int | Double = null
   ): SearchAddressBooksResponse = {
     val __obj = js.Dynamic.literal()
     if (AddressBooks != null) __obj.updateDynamic("AddressBooks")(AddressBooks)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount)
+    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAddressBooksResponse]
   }
 }

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "WrapsTypeParameterCache")
 @js.native
 class WrapsTypeParameterCache ()
-  extends typings.typescriptDashServices.TypeScriptNs.WrapsTypeParameterCache
+  extends typings.typescriptDashServices.TypeScript.WrapsTypeParameterCache
 

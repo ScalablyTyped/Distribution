@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportFieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldConstructor
+import typings.arcgisDashJsDashApi.__esri.FieldConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

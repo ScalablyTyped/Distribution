@@ -1,6 +1,6 @@
 package typings.node.dgramMod
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

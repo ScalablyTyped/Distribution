@@ -61,27 +61,27 @@ object CreateNetworkProfileRequest {
     name: Name,
     projectArn: AmazonResourceName,
     description: Message = null,
-    downlinkBandwidthBits: js.UndefOr[Long] = js.undefined,
-    downlinkDelayMs: js.UndefOr[Long] = js.undefined,
-    downlinkJitterMs: js.UndefOr[Long] = js.undefined,
-    downlinkLossPercent: js.UndefOr[PercentInteger] = js.undefined,
+    downlinkBandwidthBits: Int | scala.Double = null,
+    downlinkDelayMs: Int | scala.Double = null,
+    downlinkJitterMs: Int | scala.Double = null,
+    downlinkLossPercent: Int | scala.Double = null,
     `type`: NetworkProfileType = null,
-    uplinkBandwidthBits: js.UndefOr[Long] = js.undefined,
-    uplinkDelayMs: js.UndefOr[Long] = js.undefined,
-    uplinkJitterMs: js.UndefOr[Long] = js.undefined,
-    uplinkLossPercent: js.UndefOr[PercentInteger] = js.undefined
+    uplinkBandwidthBits: Int | scala.Double = null,
+    uplinkDelayMs: Int | scala.Double = null,
+    uplinkJitterMs: Int | scala.Double = null,
+    uplinkLossPercent: Int | scala.Double = null
   ): CreateNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(name = name, projectArn = projectArn)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(downlinkBandwidthBits)) __obj.updateDynamic("downlinkBandwidthBits")(downlinkBandwidthBits)
-    if (!js.isUndefined(downlinkDelayMs)) __obj.updateDynamic("downlinkDelayMs")(downlinkDelayMs)
-    if (!js.isUndefined(downlinkJitterMs)) __obj.updateDynamic("downlinkJitterMs")(downlinkJitterMs)
-    if (!js.isUndefined(downlinkLossPercent)) __obj.updateDynamic("downlinkLossPercent")(downlinkLossPercent)
+    if (downlinkBandwidthBits != null) __obj.updateDynamic("downlinkBandwidthBits")(downlinkBandwidthBits.asInstanceOf[js.Any])
+    if (downlinkDelayMs != null) __obj.updateDynamic("downlinkDelayMs")(downlinkDelayMs.asInstanceOf[js.Any])
+    if (downlinkJitterMs != null) __obj.updateDynamic("downlinkJitterMs")(downlinkJitterMs.asInstanceOf[js.Any])
+    if (downlinkLossPercent != null) __obj.updateDynamic("downlinkLossPercent")(downlinkLossPercent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uplinkBandwidthBits)) __obj.updateDynamic("uplinkBandwidthBits")(uplinkBandwidthBits)
-    if (!js.isUndefined(uplinkDelayMs)) __obj.updateDynamic("uplinkDelayMs")(uplinkDelayMs)
-    if (!js.isUndefined(uplinkJitterMs)) __obj.updateDynamic("uplinkJitterMs")(uplinkJitterMs)
-    if (!js.isUndefined(uplinkLossPercent)) __obj.updateDynamic("uplinkLossPercent")(uplinkLossPercent)
+    if (uplinkBandwidthBits != null) __obj.updateDynamic("uplinkBandwidthBits")(uplinkBandwidthBits.asInstanceOf[js.Any])
+    if (uplinkDelayMs != null) __obj.updateDynamic("uplinkDelayMs")(uplinkDelayMs.asInstanceOf[js.Any])
+    if (uplinkJitterMs != null) __obj.updateDynamic("uplinkJitterMs")(uplinkJitterMs.asInstanceOf[js.Any])
+    if (uplinkLossPercent != null) __obj.updateDynamic("uplinkLossPercent")(uplinkLossPercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkProfileRequest]
   }
 }

@@ -68,3 +68,21 @@ object ClassProperty {
   }
 }
 
+@JSImport("@babel/types", "classProperty")
+@js.native
+object classProperty extends js.Object {
+  def apply(
+    key: Identifier | StringLiteral | NumericLiteral | Expression,
+    value: js.UndefOr[Expression | Null],
+    typeAnnotation: js.UndefOr[TypeAnnotation | TSTypeAnnotation | Noop | Null],
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    computed: js.UndefOr[Boolean],
+    _static: js.UndefOr[Boolean],
+    `abstract`: js.UndefOr[Boolean | Null],
+    accessibility: js.UndefOr[public | `private` | `protected` | Null],
+    definite: js.UndefOr[Boolean | Null],
+    optional: js.UndefOr[Boolean | Null],
+    readonly: js.UndefOr[Boolean | Null]
+  ): ClassProperty = js.native
+}
+

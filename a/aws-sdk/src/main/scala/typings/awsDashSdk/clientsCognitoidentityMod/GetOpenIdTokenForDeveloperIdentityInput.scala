@@ -29,11 +29,11 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     IdentityPoolId: IdentityPoolId,
     Logins: LoginsMap,
     IdentityId: IdentityId = null,
-    TokenDuration: js.UndefOr[TokenDuration] = js.undefined
+    TokenDuration: Int | Double = null
   ): GetOpenIdTokenForDeveloperIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId, Logins = Logins)
     if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
-    if (!js.isUndefined(TokenDuration)) __obj.updateDynamic("TokenDuration")(TokenDuration)
+    if (TokenDuration != null) __obj.updateDynamic("TokenDuration")(TokenDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }
 }

@@ -1,14 +1,14 @@
 package typings.i18n
 
-import typings.i18n.ExpressNs.Request
-import typings.i18n.ExpressNs.Response
-import typings.i18n.i18nNs.ConfigurationOptions
-import typings.i18n.i18nNs.GlobalCatalog
-import typings.i18n.i18nNs.HashedList
-import typings.i18n.i18nNs.LocaleCatalog
-import typings.i18n.i18nNs.PluralOptions
-import typings.i18n.i18nNs.Replacements
-import typings.i18n.i18nNs.TranslateOptions
+import typings.i18n.Express.Request
+import typings.i18n.Express.Response
+import typings.i18n.i18n.ConfigurationOptions
+import typings.i18n.i18n.GlobalCatalog
+import typings.i18n.i18n.HashedList
+import typings.i18n.i18n.LocaleCatalog
+import typings.i18n.i18n.PluralOptions
+import typings.i18n.i18n.Replacements
+import typings.i18n.i18n.TranslateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

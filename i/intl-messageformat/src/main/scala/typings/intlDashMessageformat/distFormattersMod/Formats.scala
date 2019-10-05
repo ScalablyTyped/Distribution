@@ -1,7 +1,7 @@
 package typings.intlDashMessageformat.distFormattersMod
 
-import typings.std.IntlNs.DateTimeFormatOptions
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.DateTimeFormatOptions
+import typings.std.Intl.NumberFormatOptions
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

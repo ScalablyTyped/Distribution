@@ -33,3 +33,10 @@ object JSXSpreadAttribute {
   }
 }
 
+@JSImport("babel-types", "jSXSpreadAttribute")
+@js.native
+object jSXSpreadAttribute extends js.Object {
+  def apply(): JSXSpreadAttribute = js.native
+  def apply(argument: Expression): JSXSpreadAttribute = js.native
+}
+

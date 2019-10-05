@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Bounds")
 @js.native
 class Bounds ()
-  extends typings.pixiDotJs.PIXINs.Bounds
+  extends typings.pixiDotJs.PIXI.Bounds
 

@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotPagespeedonline
 
-import typings.gapiDotClientDotPagespeedonline.gapiNs.clientNs.pagespeedonlineNs.PagespeedApiFormatStringV2
+import typings.gapiDotClientDotPagespeedonline.gapi.client.pagespeedonline.PagespeedApiFormatStringV2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -44,11 +44,11 @@ object DecisionTask {
     workflowExecution: WorkflowExecution,
     workflowType: WorkflowType,
     nextPageToken: PageToken = null,
-    previousStartedEventId: js.UndefOr[EventId] = js.undefined
+    previousStartedEventId: Int | Double = null
   ): DecisionTask = {
     val __obj = js.Dynamic.literal(events = events, startedEventId = startedEventId, taskToken = taskToken, workflowExecution = workflowExecution, workflowType = workflowType)
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (!js.isUndefined(previousStartedEventId)) __obj.updateDynamic("previousStartedEventId")(previousStartedEventId)
+    if (previousStartedEventId != null) __obj.updateDynamic("previousStartedEventId")(previousStartedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTask]
   }
 }

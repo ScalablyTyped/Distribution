@@ -2,10 +2,12 @@ package typings.reactDashVirtualized.distEsCollectionMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsGridMod.ScrollParams
 import typings.reactDashVirtualized.distEsGridMod.SectionRenderedParams
 import typings.reactDashVirtualized.reactDashVirtualizedMod.Alignment
+import typings.reactDashVirtualized.reactDashVirtualizedMod.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,8 +108,8 @@ object CollectionProps {
   @scala.inline
   def apply(
     cellCount: Double,
-    cellRenderer: CollectionCellRenderer,
-    cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter,
+    cellRenderer: /* params */ CollectionCellRendererParams => ReactNode,
+    cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
     height: Double,
     width: Double,
     StringDictionary: /**
@@ -120,7 +122,7 @@ object CollectionProps {
   /* key */ StringDictionary[js.Any] = null,
     `aria-label`: String = null,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
-    cellGroupRenderer: CollectionCellGroupRenderer = null,
+    cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode] = null,
     className: String = null,
     horizontalOverscanSize: Int | Double = null,
     id: String = null,
@@ -135,11 +137,11 @@ object CollectionProps {
     style: CSSProperties = null,
     verticalOverscanSize: Int | Double = null
   ): CollectionProps = {
-    val __obj = js.Dynamic.literal(cellCount = cellCount, cellRenderer = cellRenderer, cellSizeAndPositionGetter = cellSizeAndPositionGetter, height = height, width = width)
+    val __obj = js.Dynamic.literal(cellCount = cellCount, cellRenderer = js.Any.fromFunction1(cellRenderer), cellSizeAndPositionGetter = js.Any.fromFunction1(cellSizeAndPositionGetter), height = height, width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
-    if (cellGroupRenderer != null) __obj.updateDynamic("cellGroupRenderer")(cellGroupRenderer)
+    if (cellGroupRenderer != null) __obj.updateDynamic("cellGroupRenderer")(js.Any.fromFunction1(cellGroupRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (horizontalOverscanSize != null) __obj.updateDynamic("horizontalOverscanSize")(horizontalOverscanSize.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

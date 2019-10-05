@@ -22,7 +22,7 @@ trait CatalogImportStatus extends js.Object {
 object CatalogImportStatus {
   @scala.inline
   def apply(
-    ImportCompleted: js.UndefOr[Boolean] = js.undefined,
+    ImportCompleted: js.UndefOr[scala.Boolean] = js.undefined,
     ImportTime: Timestamp = null,
     ImportedBy: NameString = null
   ): CatalogImportStatus = {

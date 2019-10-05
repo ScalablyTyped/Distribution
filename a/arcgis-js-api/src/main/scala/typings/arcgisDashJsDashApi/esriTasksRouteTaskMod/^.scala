@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksRouteTaskMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RouteTaskConstructor
+import typings.arcgisDashJsDashApi.__esri.RouteTaskConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

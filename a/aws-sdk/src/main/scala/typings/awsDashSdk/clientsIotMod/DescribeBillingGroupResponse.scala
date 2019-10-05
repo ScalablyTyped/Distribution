@@ -39,7 +39,7 @@ object DescribeBillingGroupResponse {
     billingGroupMetadata: BillingGroupMetadata = null,
     billingGroupName: BillingGroupName = null,
     billingGroupProperties: BillingGroupProperties = null,
-    version: js.UndefOr[Version] = js.undefined
+    version: Int | Double = null
   ): DescribeBillingGroupResponse = {
     val __obj = js.Dynamic.literal()
     if (billingGroupArn != null) __obj.updateDynamic("billingGroupArn")(billingGroupArn)
@@ -47,7 +47,7 @@ object DescribeBillingGroupResponse {
     if (billingGroupMetadata != null) __obj.updateDynamic("billingGroupMetadata")(billingGroupMetadata)
     if (billingGroupName != null) __obj.updateDynamic("billingGroupName")(billingGroupName)
     if (billingGroupProperties != null) __obj.updateDynamic("billingGroupProperties")(billingGroupProperties)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBillingGroupResponse]
   }
 }

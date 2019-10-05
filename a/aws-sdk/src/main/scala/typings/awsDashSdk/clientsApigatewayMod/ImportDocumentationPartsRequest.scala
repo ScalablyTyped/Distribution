@@ -28,7 +28,7 @@ object ImportDocumentationPartsRequest {
   def apply(
     body: _Blob,
     restApiId: String,
-    failOnWarnings: js.UndefOr[Boolean] = js.undefined,
+    failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined,
     mode: PutMode = null
   ): ImportDocumentationPartsRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], restApiId = restApiId)

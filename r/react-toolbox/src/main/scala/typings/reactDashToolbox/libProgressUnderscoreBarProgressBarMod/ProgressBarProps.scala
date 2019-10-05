@@ -2,7 +2,7 @@ package typings.reactDashToolbox.libProgressUnderscoreBarProgressBarMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.circular
 import typings.reactDashToolbox.reactDashToolboxStrings.determinate
 import typings.reactDashToolbox.reactDashToolboxStrings.indeterminate

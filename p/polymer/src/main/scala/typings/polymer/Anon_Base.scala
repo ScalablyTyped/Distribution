@@ -1,7 +1,7 @@
 package typings.polymer
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.polymer.polymerMod.Global.polymerNs.Base
+import typings.polymer.polymerMod.Global.polymer.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

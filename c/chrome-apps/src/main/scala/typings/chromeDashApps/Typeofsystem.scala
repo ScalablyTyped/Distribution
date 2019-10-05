@@ -15,7 +15,7 @@ trait Typeofsystem extends js.Object {
     * Permissions: 'system.cpu'
     * @since Chrome 32.
     */
-  val cpuNs: Typeofcpu
+  val cpu: Typeofcpu
   ////////////////////
   // System Display //
   ////////////////////
@@ -24,7 +24,7 @@ trait Typeofsystem extends js.Object {
     * Permissions: 'system.display'
     * @since Chrome 30.
     */
-  val displayNs: Typeofdisplay
+  val display: Typeofdisplay
   ///////////////////
   // System Memory //
   ///////////////////
@@ -33,7 +33,7 @@ trait Typeofsystem extends js.Object {
     * @requires Permissions: 'system.memory'
     * @since Chrome 32.
     */
-  val memoryNs: Typeofmemory
+  val memory: Typeofmemory
   //////////////////////
   // System - Network //
   //////////////////////
@@ -41,7 +41,7 @@ trait Typeofsystem extends js.Object {
     * The chrome.system.network API.
     * @requires Permissions: 'system.network'
     */
-  val networkNs: Typeofnetwork
+  val network: Typeofnetwork
   /////////////////////////
   // System Power Source //
   /////////////////////////
@@ -51,7 +51,7 @@ trait Typeofsystem extends js.Object {
     * @description The chrome.system.powerSource API allows Chrome Kiosk Apps to query the state of connected power sources.
     * @since Latest
     */
-  val powerSourceNs: TypeofpowerSource
+  val powerSource: TypeofpowerSource
   ////////////////////
   // System Storage //
   ////////////////////
@@ -60,20 +60,20 @@ trait Typeofsystem extends js.Object {
     * @requires Permissions: 'system.storage'
     * @since Chrome 30.
     */
-  val storageNs: TypeofstorageCallback
+  val storage: TypeofstorageCallback
 }
 
 object Typeofsystem {
   @scala.inline
   def apply(
-    cpuNs: Typeofcpu,
-    displayNs: Typeofdisplay,
-    memoryNs: Typeofmemory,
-    networkNs: Typeofnetwork,
-    powerSourceNs: TypeofpowerSource,
-    storageNs: TypeofstorageCallback
+    cpu: Typeofcpu,
+    display: Typeofdisplay,
+    memory: Typeofmemory,
+    network: Typeofnetwork,
+    powerSource: TypeofpowerSource,
+    storage: TypeofstorageCallback
   ): Typeofsystem = {
-    val __obj = js.Dynamic.literal(cpuNs = cpuNs, displayNs = displayNs, memoryNs = memoryNs, networkNs = networkNs, powerSourceNs = powerSourceNs, storageNs = storageNs)
+    val __obj = js.Dynamic.literal(cpu = cpu, display = display, memory = memory, network = network, powerSource = powerSource, storage = storage)
   
     __obj.asInstanceOf[Typeofsystem]
   }

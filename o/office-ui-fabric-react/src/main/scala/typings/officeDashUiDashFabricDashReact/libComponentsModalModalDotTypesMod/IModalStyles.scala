@@ -17,15 +17,20 @@ trait IModalStyles extends js.Object {
 object IModalStyles {
   @scala.inline
   def apply(
-    keyboardMoveIcon: IStyle,
-    keyboardMoveIconContainer: IStyle,
-    layer: IStyle,
-    main: IStyle,
-    root: IStyle,
-    scrollableContent: IStyle
+    keyboardMoveIcon: IStyle = null,
+    keyboardMoveIconContainer: IStyle = null,
+    layer: IStyle = null,
+    main: IStyle = null,
+    root: IStyle = null,
+    scrollableContent: IStyle = null
   ): IModalStyles = {
-    val __obj = js.Dynamic.literal(keyboardMoveIcon = keyboardMoveIcon.asInstanceOf[js.Any], keyboardMoveIconContainer = keyboardMoveIconContainer.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], scrollableContent = scrollableContent.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (keyboardMoveIcon != null) __obj.updateDynamic("keyboardMoveIcon")(keyboardMoveIcon.asInstanceOf[js.Any])
+    if (keyboardMoveIconContainer != null) __obj.updateDynamic("keyboardMoveIconContainer")(keyboardMoveIconContainer.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (scrollableContent != null) __obj.updateDynamic("scrollableContent")(scrollableContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalStyles]
   }
 }

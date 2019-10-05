@@ -1,7 +1,7 @@
 package typings.fridaDashGum
 
-import typings.fridaDashGum.JavaNs.FieldType
-import typings.fridaDashGum.JavaNs.MethodType
+import typings.fridaDashGum.Java.FieldType
+import typings.fridaDashGum.Java.MethodType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

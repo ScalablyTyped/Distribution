@@ -1,6 +1,6 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.ListNs.SelectableProps
+import typings.materialDashUi.__MaterialUI.List.SelectableProps
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js

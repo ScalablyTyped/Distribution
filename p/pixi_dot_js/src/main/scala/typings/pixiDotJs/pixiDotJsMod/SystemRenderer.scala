@@ -1,6 +1,6 @@
 package typings.pixiDotJs.pixiDotJsMod
 
-import typings.pixiDotJs.PIXINs.RendererOptions
+import typings.pixiDotJs.PIXI.RendererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "SystemRenderer")
 @js.native
 class SystemRenderer protected ()
-  extends typings.pixiDotJs.PIXINs.SystemRenderer {
+  extends typings.pixiDotJs.PIXI.SystemRenderer {
   def this(system: String) = this()
   def this(system: String, options: RendererOptions) = this()
   def this(system: String, screenWidth: Double) = this()

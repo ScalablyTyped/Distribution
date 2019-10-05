@@ -1,6 +1,6 @@
 package typings.atPulumiAws.kmsGrantMod
 
-import typings.atPulumiAws.typesOutputMod.kmsNs.GrantConstraint
+import typings.atPulumiAws.typesOutputMod.kms.GrantConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

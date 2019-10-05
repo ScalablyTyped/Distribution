@@ -1,5 +1,6 @@
 package typings.atPulumiCloud.apiMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atPulumiCloud.serviceMod.Endpoint
 import typings.atPulumiPulumi.outputMod.Output
 import scala.scalajs.js
@@ -97,7 +98,5 @@ trait API extends js.Object {
 
 @JSImport("@pulumi/cloud/api", "API")
 @js.native
-class APICls protected () extends API {
-  def this(apiName: String) = this()
-}
+object API extends TopLevel[APIConstructor]
 

@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.Row
+import typings.atOracleOraclejet.ojganttMod.ojGantt.Row
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

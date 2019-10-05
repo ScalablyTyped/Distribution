@@ -21,9 +21,9 @@ trait CompareFacesRequest extends js.Object {
 
 object CompareFacesRequest {
   @scala.inline
-  def apply(SourceImage: Image, TargetImage: Image, SimilarityThreshold: js.UndefOr[Percent] = js.undefined): CompareFacesRequest = {
+  def apply(SourceImage: Image, TargetImage: Image, SimilarityThreshold: Int | Double = null): CompareFacesRequest = {
     val __obj = js.Dynamic.literal(SourceImage = SourceImage, TargetImage = TargetImage)
-    if (!js.isUndefined(SimilarityThreshold)) __obj.updateDynamic("SimilarityThreshold")(SimilarityThreshold)
+    if (SimilarityThreshold != null) __obj.updateDynamic("SimilarityThreshold")(SimilarityThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareFacesRequest]
   }
 }

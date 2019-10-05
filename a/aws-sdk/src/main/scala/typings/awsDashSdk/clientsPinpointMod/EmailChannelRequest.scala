@@ -33,7 +33,7 @@ object EmailChannelRequest {
     FromAddress: __string,
     Identity: __string,
     ConfigurationSet: __string = null,
-    Enabled: js.UndefOr[__boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     RoleArn: __string = null
   ): EmailChannelRequest = {
     val __obj = js.Dynamic.literal(FromAddress = FromAddress, Identity = Identity)

@@ -8,12 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModuleImportPayload extends js.Object {
-  var data: PayloadData
-  var dataID: DataID
-  var operationReference: js.Any
-  var path: js.Array[String]
-  var typeName: String
-  var variables: Variables
+  val data: PayloadData
+  val dataID: DataID
+  val operationReference: js.Any
+  val path: js.Array[String]
+  val typeName: String
+  val variables: Variables
 }
 
 object ModuleImportPayload {

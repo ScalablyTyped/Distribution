@@ -14,9 +14,9 @@ trait IShimmeredDetailsListStyles extends js.Object {
 
 object IShimmeredDetailsListStyles {
   @scala.inline
-  def apply(root: IStyle): IShimmeredDetailsListStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IShimmeredDetailsListStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmeredDetailsListStyles]
   }
 }

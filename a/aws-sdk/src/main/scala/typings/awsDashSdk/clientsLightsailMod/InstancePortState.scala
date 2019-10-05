@@ -26,16 +26,16 @@ trait InstancePortState extends js.Object {
 object InstancePortState {
   @scala.inline
   def apply(
-    fromPort: js.UndefOr[Port] = js.undefined,
+    fromPort: Int | Double = null,
     protocol: NetworkProtocol = null,
     state: PortState = null,
-    toPort: js.UndefOr[Port] = js.undefined
+    toPort: Int | Double = null
   ): InstancePortState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fromPort)) __obj.updateDynamic("fromPort")(fromPort)
+    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPort)) __obj.updateDynamic("toPort")(toPort)
+    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancePortState]
   }
 }

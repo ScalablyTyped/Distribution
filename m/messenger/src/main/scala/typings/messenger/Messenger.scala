@@ -1,5 +1,6 @@
 package typings.messenger
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +16,7 @@ trait Messenger extends js.Object {
   def post(options: MessageOptions): Message
 }
 
-object Messenger {
-  @scala.inline
-  def apply(hideAll: () => Unit, post: MessageOptions => Message): Messenger = {
-    val __obj = js.Dynamic.literal(hideAll = js.Any.fromFunction0(hideAll), post = js.Any.fromFunction1(post))
-  
-    __obj.asInstanceOf[Messenger]
-  }
-}
+@JSGlobal("Messenger")
+@js.native
+object Messenger extends TopLevel[IMessenger]
 

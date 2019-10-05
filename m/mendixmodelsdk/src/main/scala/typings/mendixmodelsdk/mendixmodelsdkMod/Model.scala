@@ -2,7 +2,7 @@ package typings.mendixmodelsdk.mendixmodelsdkMod
 
 import typings.mendixmodelsdk.distMendixDashModelMod.IModel
 import typings.mendixmodelsdk.distModelDashSdkDashClientMod.ModelSdkClientImpl
-import typings.mendixmodelsdk.distSdkConfigMod.configurationNs.ISdkConfig
+import typings.mendixmodelsdk.distSdkConfigMod.configuration.ISdkConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

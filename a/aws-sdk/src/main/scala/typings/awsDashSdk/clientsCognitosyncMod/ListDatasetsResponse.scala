@@ -21,9 +21,9 @@ trait ListDatasetsResponse extends js.Object {
 
 object ListDatasetsResponse {
   @scala.inline
-  def apply(Count: js.UndefOr[Integer] = js.undefined, Datasets: DatasetList = null, NextToken: String = null): ListDatasetsResponse = {
+  def apply(Count: Int | Double = null, Datasets: DatasetList = null, NextToken: String = null): ListDatasetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (Datasets != null) __obj.updateDynamic("Datasets")(Datasets)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDatasetsResponse]

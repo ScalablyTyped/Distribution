@@ -22,12 +22,12 @@ trait ListMembersRequest extends js.Object {
 object ListMembersRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
-    OnlyAssociated: js.UndefOr[Boolean] = js.undefined
+    OnlyAssociated: js.UndefOr[scala.Boolean] = js.undefined
   ): ListMembersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (!js.isUndefined(OnlyAssociated)) __obj.updateDynamic("OnlyAssociated")(OnlyAssociated)
     __obj.asInstanceOf[ListMembersRequest]

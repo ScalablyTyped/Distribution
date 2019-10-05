@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SummaryStatisticsResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.summaryStatisticsSummaryStatisticsParams
+import typings.arcgisDashJsDashApi.__esri.SummaryStatisticsResult
+import typings.arcgisDashJsDashApi.__esri.summaryStatisticsSummaryStatisticsParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

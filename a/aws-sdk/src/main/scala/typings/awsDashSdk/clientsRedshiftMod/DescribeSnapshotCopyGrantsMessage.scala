@@ -31,14 +31,14 @@ object DescribeSnapshotCopyGrantsMessage {
   @scala.inline
   def apply(
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     SnapshotCopyGrantName: String = null,
     TagKeys: TagKeyList = null,
     TagValues: TagValueList = null
   ): DescribeSnapshotCopyGrantsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (SnapshotCopyGrantName != null) __obj.updateDynamic("SnapshotCopyGrantName")(SnapshotCopyGrantName)
     if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys)
     if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues)

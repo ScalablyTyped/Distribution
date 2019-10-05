@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HistogramResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.histogramHistogramParams
+import typings.arcgisDashJsDashApi.__esri.HistogramResult
+import typings.arcgisDashJsDashApi.__esri.histogramHistogramParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

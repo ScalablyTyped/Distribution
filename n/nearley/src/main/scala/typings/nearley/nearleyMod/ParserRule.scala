@@ -12,9 +12,13 @@ trait ParserRule extends js.Object {
 
 object ParserRule {
   @scala.inline
-  def apply(name: String, symbols: js.Array[_], postprocess: Postprocessor = null): ParserRule = {
+  def apply(
+    name: String,
+    symbols: js.Array[_],
+    postprocess: (/* data */ js.Array[js.Any], /* reference */ Double, /* wantedBy */ js.Object) => Unit = null
+  ): ParserRule = {
     val __obj = js.Dynamic.literal(name = name, symbols = symbols)
-    if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess)
+    if (postprocess != null) __obj.updateDynamic("postprocess")(js.Any.fromFunction3(postprocess))
     __obj.asInstanceOf[ParserRule]
   }
 }

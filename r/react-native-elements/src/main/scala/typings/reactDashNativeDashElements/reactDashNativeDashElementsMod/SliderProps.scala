@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.SpringAnimationConfig
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.TimingAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.SpringAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.TimingAnimationConfig
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashElements.Anon_Height

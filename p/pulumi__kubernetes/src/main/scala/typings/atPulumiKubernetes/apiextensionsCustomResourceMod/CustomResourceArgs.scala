@@ -1,7 +1,7 @@
 package typings.atPulumiKubernetes.apiextensionsCustomResourceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiKubernetes.typesInputMod.metaNs.v1Ns.ObjectMeta
+import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

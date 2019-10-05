@@ -1,6 +1,6 @@
 package typings.nodeDashForge
 
-import typings.nodeDashForge.nodeDashForgeMod.tlsNs.ConnectionState
+import typings.nodeDashForge.nodeDashForgeMod.tls.ConnectionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

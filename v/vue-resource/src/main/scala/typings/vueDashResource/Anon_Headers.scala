@@ -1,7 +1,7 @@
 package typings.vueDashResource
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vueDashResource.vuejsNs.HttpHeaders
+import typings.vueDashResource.vuejs.HttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

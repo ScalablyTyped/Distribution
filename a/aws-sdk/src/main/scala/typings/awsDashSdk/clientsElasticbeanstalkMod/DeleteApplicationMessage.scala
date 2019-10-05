@@ -17,10 +17,7 @@ trait DeleteApplicationMessage extends js.Object {
 
 object DeleteApplicationMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    TerminateEnvByForce: js.UndefOr[TerminateEnvForce] = js.undefined
-  ): DeleteApplicationMessage = {
+  def apply(ApplicationName: ApplicationName, TerminateEnvByForce: js.UndefOr[Boolean] = js.undefined): DeleteApplicationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName)
     if (!js.isUndefined(TerminateEnvByForce)) __obj.updateDynamic("TerminateEnvByForce")(TerminateEnvByForce)
     __obj.asInstanceOf[DeleteApplicationMessage]

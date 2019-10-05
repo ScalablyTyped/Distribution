@@ -21,11 +21,15 @@ trait TotalOptions[T] extends js.Object {
 
 object TotalOptions {
   @scala.inline
-  def apply[T](init: T = null, printer: CellPrinter[T] = null, reduce: ReduceFunction[T] = null): TotalOptions[T] = {
+  def apply[T](
+    init: T = null,
+    printer: (T, /* width */ Double) => String = null,
+    reduce: (T, T, /* idx */ Double, /* length */ Double) => T = null
+  ): TotalOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (printer != null) __obj.updateDynamic("printer")(printer)
-    if (reduce != null) __obj.updateDynamic("reduce")(reduce)
+    if (printer != null) __obj.updateDynamic("printer")(js.Any.fromFunction2(printer))
+    if (reduce != null) __obj.updateDynamic("reduce")(js.Any.fromFunction4(reduce))
     __obj.asInstanceOf[TotalOptions[T]]
   }
 }

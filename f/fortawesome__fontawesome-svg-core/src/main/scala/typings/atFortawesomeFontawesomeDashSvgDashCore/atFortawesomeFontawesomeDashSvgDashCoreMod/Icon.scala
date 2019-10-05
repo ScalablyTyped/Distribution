@@ -1,6 +1,7 @@
 package typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreMod
 
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconDefinition
+import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconLookup
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPathData
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
@@ -33,5 +34,14 @@ object Icon {
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Icon]
   }
+}
+
+@JSImport("@fortawesome/fontawesome-svg-core", "icon")
+@js.native
+object icon extends js.Object {
+  def apply(icon: IconLookup): Icon = js.native
+  def apply(icon: IconLookup, params: IconParams): Icon = js.native
+  def apply(icon: IconName): Icon = js.native
+  def apply(icon: IconName, params: IconParams): Icon = js.native
 }
 

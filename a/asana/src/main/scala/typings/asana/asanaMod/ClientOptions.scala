@@ -1,7 +1,8 @@
 package typings.asana.asanaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.asana.asanaMod.authNs.Authenticator
+import typings.asana.asanaMod.auth.Authenticator
+import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object ClientOptions {
     clientId: String | Double = null,
     clientSecret: String = null,
     defaultHeaders: StringDictionary[String] = null,
-    handleUnauthorized: () => Boolean | typings.bluebird.bluebirdMod.^[Boolean] = null,
+    handleUnauthorized: () => Boolean | ^[Boolean] = null,
     redirectUri: String = null,
     requestTimeout: String = null,
     retryOnRateLimit: js.UndefOr[Boolean] = js.undefined

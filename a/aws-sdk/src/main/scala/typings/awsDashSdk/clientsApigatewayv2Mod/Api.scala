@@ -69,7 +69,7 @@ object Api {
     ApiKeySelectionExpression: SelectionExpression = null,
     CreatedDate: __timestampIso8601 = null,
     Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    DisableSchemaValidation: js.UndefOr[Boolean] = js.undefined,
     Tags: Tags = null,
     Version: StringWithLengthBetween1And64 = null,
     Warnings: __listOf__string = null

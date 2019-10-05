@@ -25,14 +25,14 @@ object DescribeWorkingStorageOutput {
   def apply(
     DiskIds: DiskIds = null,
     GatewayARN: GatewayARN = null,
-    WorkingStorageAllocatedInBytes: js.UndefOr[long] = js.undefined,
-    WorkingStorageUsedInBytes: js.UndefOr[long] = js.undefined
+    WorkingStorageAllocatedInBytes: Int | Double = null,
+    WorkingStorageUsedInBytes: Int | Double = null
   ): DescribeWorkingStorageOutput = {
     val __obj = js.Dynamic.literal()
     if (DiskIds != null) __obj.updateDynamic("DiskIds")(DiskIds)
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)
-    if (!js.isUndefined(WorkingStorageAllocatedInBytes)) __obj.updateDynamic("WorkingStorageAllocatedInBytes")(WorkingStorageAllocatedInBytes)
-    if (!js.isUndefined(WorkingStorageUsedInBytes)) __obj.updateDynamic("WorkingStorageUsedInBytes")(WorkingStorageUsedInBytes)
+    if (WorkingStorageAllocatedInBytes != null) __obj.updateDynamic("WorkingStorageAllocatedInBytes")(WorkingStorageAllocatedInBytes.asInstanceOf[js.Any])
+    if (WorkingStorageUsedInBytes != null) __obj.updateDynamic("WorkingStorageUsedInBytes")(WorkingStorageUsedInBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkingStorageOutput]
   }
 }

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object yearDashDaysMod extends js.Object {
   def apply(): Double = js.native
-  def apply(yearOrDate: Double | Date): Double = js.native
+  def apply(yearOrDate: Double): Double = js.native
+  def apply(yearOrDate: Date): Double = js.native
 }
 

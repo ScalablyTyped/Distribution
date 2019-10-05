@@ -1,6 +1,6 @@
 package typings.intercomDashWeb
 
-import typings.intercomDashWeb.IntercomUnderscoreNs.IntercomSettings
+import typings.intercomDashWeb.Intercom_.IntercomSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

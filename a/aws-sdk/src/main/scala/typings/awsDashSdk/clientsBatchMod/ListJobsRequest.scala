@@ -37,7 +37,7 @@ object ListJobsRequest {
     arrayJobId: String = null,
     jobQueue: String = null,
     jobStatus: JobStatus = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | Double = null,
     multiNodeJobId: String = null,
     nextToken: String = null
   ): ListJobsRequest = {
@@ -45,7 +45,7 @@ object ListJobsRequest {
     if (arrayJobId != null) __obj.updateDynamic("arrayJobId")(arrayJobId)
     if (jobQueue != null) __obj.updateDynamic("jobQueue")(jobQueue)
     if (jobStatus != null) __obj.updateDynamic("jobStatus")(jobStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (multiNodeJobId != null) __obj.updateDynamic("multiNodeJobId")(multiNodeJobId)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListJobsRequest]

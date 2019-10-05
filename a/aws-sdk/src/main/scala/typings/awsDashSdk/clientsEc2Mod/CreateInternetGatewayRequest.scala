@@ -13,7 +13,7 @@ trait CreateInternetGatewayRequest extends js.Object {
 
 object CreateInternetGatewayRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): CreateInternetGatewayRequest = {
+  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateInternetGatewayRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateInternetGatewayRequest]

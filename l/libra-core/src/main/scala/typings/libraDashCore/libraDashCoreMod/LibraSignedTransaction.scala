@@ -11,12 +11,9 @@ trait LibraSignedTransaction extends js.Object {
   var transaction: LibraTransaction
 }
 
-object LibraSignedTransaction {
-  @scala.inline
-  def apply(publicKey: Uint8Array, signature: Uint8Array, transaction: LibraTransaction): LibraSignedTransaction = {
-    val __obj = js.Dynamic.literal(publicKey = publicKey, signature = signature, transaction = transaction)
-  
-    __obj.asInstanceOf[LibraSignedTransaction]
-  }
+@JSImport("libra-core", "LibraSignedTransaction")
+@js.native
+object LibraSignedTransaction extends js.Object {
+  def apply(transaction: LibraTransaction, publicKey: Uint8Array, signature: Uint8Array): Unit = js.native
 }
 

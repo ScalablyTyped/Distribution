@@ -1,7 +1,7 @@
 package typings.atPulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.eksNs.ClusterVpcConfig
+import typings.atPulumiAws.typesInputMod.eks.ClusterVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

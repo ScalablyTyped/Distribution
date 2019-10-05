@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxDashWebextDashBrowser.browserNs.devtoolsNs.networkNs.Request
+import typings.firefoxDashWebextDashBrowser.browser.devtools.network.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

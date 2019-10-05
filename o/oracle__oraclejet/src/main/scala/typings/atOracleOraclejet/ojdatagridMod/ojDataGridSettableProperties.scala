@@ -16,8 +16,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.cellNavigation
 import typings.atOracleOraclejet.atOracleOraclejetStrings.loadMoreOnScroll
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.scroll
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.CurrentCell
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.Selection
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.Selection
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`

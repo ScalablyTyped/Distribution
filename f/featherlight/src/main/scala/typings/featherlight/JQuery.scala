@@ -1,7 +1,7 @@
 package typings.featherlight
 
-import typings.featherlight.FeatherlightNs.Config
-import typings.featherlight.FeatherlightNs.JQueryExtension
+import typings.featherlight.Featherlight.Config
+import typings.featherlight.Featherlight.JQueryExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

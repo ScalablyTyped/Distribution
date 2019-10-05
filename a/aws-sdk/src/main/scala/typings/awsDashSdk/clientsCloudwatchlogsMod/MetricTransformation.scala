@@ -29,10 +29,10 @@ object MetricTransformation {
     metricName: MetricName,
     metricNamespace: MetricNamespace,
     metricValue: MetricValue,
-    defaultValue: js.UndefOr[DefaultValue] = js.undefined
+    defaultValue: Int | Double = null
   ): MetricTransformation = {
     val __obj = js.Dynamic.literal(metricName = metricName, metricNamespace = metricNamespace, metricValue = metricValue)
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTransformation]
   }
 }

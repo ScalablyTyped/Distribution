@@ -13,14 +13,5 @@ trait SVGAnimatedInteger extends js.Object {
 
 @JSGlobal("SVGAnimatedInteger")
 @js.native
-class SVGAnimatedIntegerCls () extends SVGAnimatedInteger {
-  /* CompleteClass */
-  override val animVal: Double = js.native
-  /* CompleteClass */
-  override var baseVal: Double = js.native
-}
-
-@JSGlobal("SVGAnimatedInteger")
-@js.native
 object SVGAnimatedInteger extends Instantiable0[SVGAnimatedInteger]
 

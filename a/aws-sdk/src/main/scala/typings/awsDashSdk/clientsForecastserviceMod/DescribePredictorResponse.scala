@@ -89,13 +89,13 @@ object DescribePredictorResponse {
     EncryptionConfig: EncryptionConfig = null,
     EvaluationParameters: EvaluationParameters = null,
     FeaturizationConfig: FeaturizationConfig = null,
-    ForecastHorizon: js.UndefOr[Integer] = js.undefined,
+    ForecastHorizon: Int | scala.Double = null,
     HPOConfig: HyperParameterTuningJobConfig = null,
     InputDataConfig: InputDataConfig = null,
     LastModificationTime: Timestamp = null,
     Message: Message = null,
-    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[Boolean] = js.undefined,
+    PerformAutoML: js.UndefOr[scala.Boolean] = js.undefined,
+    PerformHPO: js.UndefOr[scala.Boolean] = js.undefined,
     PredictorArn: Name = null,
     PredictorName: Name = null,
     Status: Status = null,
@@ -109,7 +109,7 @@ object DescribePredictorResponse {
     if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig)
     if (EvaluationParameters != null) __obj.updateDynamic("EvaluationParameters")(EvaluationParameters)
     if (FeaturizationConfig != null) __obj.updateDynamic("FeaturizationConfig")(FeaturizationConfig)
-    if (!js.isUndefined(ForecastHorizon)) __obj.updateDynamic("ForecastHorizon")(ForecastHorizon)
+    if (ForecastHorizon != null) __obj.updateDynamic("ForecastHorizon")(ForecastHorizon.asInstanceOf[js.Any])
     if (HPOConfig != null) __obj.updateDynamic("HPOConfig")(HPOConfig)
     if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig)
     if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime)

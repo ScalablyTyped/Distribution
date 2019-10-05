@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ItemContext
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ItemContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

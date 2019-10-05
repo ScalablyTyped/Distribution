@@ -19,13 +19,15 @@ trait IPeoplePickerItemSelectedStyles extends js.Object {
 object IPeoplePickerItemSelectedStyles {
   @scala.inline
   def apply(
-    itemContent: IStyle,
-    removeButton: IStyle,
-    root: IStyle,
-    subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles
+    subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles,
+    itemContent: IStyle = null,
+    removeButton: IStyle = null,
+    root: IStyle = null
   ): IPeoplePickerItemSelectedStyles = {
-    val __obj = js.Dynamic.literal(itemContent = itemContent.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], subComponentStyles = subComponentStyles)
-  
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    if (itemContent != null) __obj.updateDynamic("itemContent")(itemContent.asInstanceOf[js.Any])
+    if (removeButton != null) __obj.updateDynamic("removeButton")(removeButton.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSelectedStyles]
   }
 }

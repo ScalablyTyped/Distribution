@@ -2,7 +2,9 @@ package typings.antdDashMobile.libNavDashBarPropsTypeMod
 
 import typings.antdDashMobile.antdDashMobileStrings.dark
 import typings.antdDashMobile.antdDashMobileStrings.light
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -27,7 +29,7 @@ object NavBarProps {
     icon: ReactNode = null,
     leftContent: ReactNode = null,
     mode: dark | light = null,
-    onLeftClick: MouseEventHandler[HTMLDivElement] = null,
+    onLeftClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     rightContent: ReactNode = null
   ): NavBarProps = {
@@ -37,7 +39,7 @@ object NavBarProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (leftContent != null) __obj.updateDynamic("leftContent")(leftContent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onLeftClick != null) __obj.updateDynamic("onLeftClick")(onLeftClick)
+    if (onLeftClick != null) __obj.updateDynamic("onLeftClick")(js.Any.fromFunction1(onLeftClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (rightContent != null) __obj.updateDynamic("rightContent")(rightContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavBarProps]

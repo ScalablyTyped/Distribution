@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticloadbalancingLoadBalancerPolicyMod
 
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.LoadBalancerPolicyPolicyAttribute
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.LoadBalancerPolicyPolicyAttribute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

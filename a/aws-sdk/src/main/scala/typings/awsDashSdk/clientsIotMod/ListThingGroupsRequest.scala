@@ -30,14 +30,14 @@ trait ListThingGroupsRequest extends js.Object {
 object ListThingGroupsRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     namePrefixFilter: ThingGroupName = null,
     nextToken: NextToken = null,
     parentGroup: ThingGroupName = null,
-    recursive: js.UndefOr[RecursiveWithoutDefault] = js.undefined
+    recursive: js.UndefOr[scala.Boolean] = js.undefined
   ): ListThingGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (namePrefixFilter != null) __obj.updateDynamic("namePrefixFilter")(namePrefixFilter)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (parentGroup != null) __obj.updateDynamic("parentGroup")(parentGroup)

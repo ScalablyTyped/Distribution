@@ -57,12 +57,12 @@ object StreamDescriptionSummary {
     StreamCreationTimestamp: Timestamp,
     StreamName: StreamName,
     StreamStatus: StreamStatus,
-    ConsumerCount: js.UndefOr[ConsumerCountObject] = js.undefined,
+    ConsumerCount: Int | Double = null,
     EncryptionType: EncryptionType = null,
     KeyId: KeyId = null
   ): StreamDescriptionSummary = {
     val __obj = js.Dynamic.literal(EnhancedMonitoring = EnhancedMonitoring, OpenShardCount = OpenShardCount, RetentionPeriodHours = RetentionPeriodHours, StreamARN = StreamARN, StreamCreationTimestamp = StreamCreationTimestamp, StreamName = StreamName, StreamStatus = StreamStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsumerCount)) __obj.updateDynamic("ConsumerCount")(ConsumerCount)
+    if (ConsumerCount != null) __obj.updateDynamic("ConsumerCount")(ConsumerCount.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
     __obj.asInstanceOf[StreamDescriptionSummary]

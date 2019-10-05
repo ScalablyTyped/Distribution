@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "Query")
 @js.native
-class Query[T /* <: typings.parse.ParseNs.Object */] protected ()
+class Query[T /* <: typings.parse.Parse.Object */] protected ()
   extends typings.parse.nodeMod.Query[T] {
   def this(objectClass: String) = this()
   def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
@@ -73,9 +73,9 @@ class Query[T /* <: typings.parse.ParseNs.Object */] protected ()
 @JSImport("parse", "Query")
 @js.native
 object Query extends js.Object {
-  def and[U /* <: typings.parse.ParseNs.Object */](args: typings.parse.ParseNs.Query[U]*): typings.parse.ParseNs.Query[U] = js.native
-  def fromJSON[U /* <: typings.parse.ParseNs.Object */](className: String, json: js.Any): typings.parse.ParseNs.Query[U] = js.native
-  def nor[U /* <: typings.parse.ParseNs.Object */](args: typings.parse.ParseNs.Query[U]*): typings.parse.ParseNs.Query[U] = js.native
-  def or[U /* <: typings.parse.ParseNs.Object */](var_args: typings.parse.ParseNs.Query[U]*): typings.parse.ParseNs.Query[U] = js.native
+  def and[U /* <: typings.parse.Parse.Object */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
+  def fromJSON[U /* <: typings.parse.Parse.Object */](className: String, json: js.Any): typings.parse.Parse.Query[U] = js.native
+  def nor[U /* <: typings.parse.Parse.Object */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
+  def or[U /* <: typings.parse.Parse.Object */](var_args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
 }
 

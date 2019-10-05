@@ -1,9 +1,9 @@
 package typings.atPulumiAws.elasticloadbalancingLoadBalancerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.LoadBalancerAccessLogs
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.LoadBalancerHealthCheck
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.LoadBalancerListener
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.LoadBalancerAccessLogs
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.LoadBalancerHealthCheck
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.LoadBalancerListener
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

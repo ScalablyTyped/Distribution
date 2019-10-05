@@ -1,12 +1,8 @@
 package typings.winston.winstonMod
 
-import typings.logform.logformMod.FormatWrap
-import typings.logform.logformMod.TransformFunction
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import typings.winston.libWinstonConfigMod.AbstractConfigSetColors
-import typings.winston.libWinstonConfigMod.Config
-import typings.winston.libWinstonTransportsMod.Transports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +15,6 @@ object ^ extends js.Object {
   var add: js.Function1[/* transport */ typings.winstonDashTransport.winstonDashTransportMod.^, Logger] = js.native
   var addColors: js.Function1[/* target */ AbstractConfigSetColors, js.Any] = js.native
   var clear: js.Function0[Logger] = js.native
-  val config: Config = js.native
   var configure: js.Function1[/* options */ LoggerOptions, Unit] = js.native
   var createLogger: js.Function1[/* options */ js.UndefOr[LoggerOptions], Logger] = js.native
   var debug: LeveledLogMethod = js.native
@@ -43,10 +38,8 @@ object ^ extends js.Object {
   var silly: LeveledLogMethod = js.native
   var startTimer: js.Function0[Profiler] = js.native
   var stream: js.Function1[/* options */ js.UndefOr[js.Any], ReadableStream] = js.native
-  val transports: Transports = js.native
   var verbose: LeveledLogMethod = js.native
   var version: String = js.native
   var warn: LeveledLogMethod = js.native
-  def format(transform: TransformFunction): FormatWrap = js.native
 }
 

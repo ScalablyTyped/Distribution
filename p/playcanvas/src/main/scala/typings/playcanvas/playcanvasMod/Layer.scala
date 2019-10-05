@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Layer")
 @js.native
 class Layer protected ()
-  extends typings.playcanvas.pcNs.Layer {
+  extends typings.playcanvas.pc.Layer {
   def this(options: js.Any) = this()
 }
 

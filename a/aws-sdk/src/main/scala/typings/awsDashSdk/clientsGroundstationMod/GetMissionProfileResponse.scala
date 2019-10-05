@@ -51,10 +51,10 @@ trait GetMissionProfileResponse extends js.Object {
 object GetMissionProfileResponse {
   @scala.inline
   def apply(
-    contactPostPassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
-    contactPrePassDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
+    contactPostPassDurationSeconds: Int | scala.Double = null,
+    contactPrePassDurationSeconds: Int | scala.Double = null,
     dataflowEdges: DataflowEdgeList = null,
-    minimumViableContactDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined,
+    minimumViableContactDurationSeconds: Int | scala.Double = null,
     missionProfileArn: MissionProfileArn = null,
     missionProfileId: String = null,
     name: String = null,
@@ -63,10 +63,10 @@ object GetMissionProfileResponse {
     trackingConfigArn: ConfigArn = null
   ): GetMissionProfileResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contactPostPassDurationSeconds)) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds)
-    if (!js.isUndefined(contactPrePassDurationSeconds)) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds)
+    if (contactPostPassDurationSeconds != null) __obj.updateDynamic("contactPostPassDurationSeconds")(contactPostPassDurationSeconds.asInstanceOf[js.Any])
+    if (contactPrePassDurationSeconds != null) __obj.updateDynamic("contactPrePassDurationSeconds")(contactPrePassDurationSeconds.asInstanceOf[js.Any])
     if (dataflowEdges != null) __obj.updateDynamic("dataflowEdges")(dataflowEdges)
-    if (!js.isUndefined(minimumViableContactDurationSeconds)) __obj.updateDynamic("minimumViableContactDurationSeconds")(minimumViableContactDurationSeconds)
+    if (minimumViableContactDurationSeconds != null) __obj.updateDynamic("minimumViableContactDurationSeconds")(minimumViableContactDurationSeconds.asInstanceOf[js.Any])
     if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn)
     if (missionProfileId != null) __obj.updateDynamic("missionProfileId")(missionProfileId)
     if (name != null) __obj.updateDynamic("name")(name)

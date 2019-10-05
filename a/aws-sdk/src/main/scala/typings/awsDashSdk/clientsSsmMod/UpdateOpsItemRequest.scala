@@ -51,7 +51,7 @@ object UpdateOpsItemRequest {
     Notifications: OpsItemNotifications = null,
     OperationalData: OpsItemOperationalData = null,
     OperationalDataToDelete: OpsItemOpsDataKeysList = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
+    Priority: Int | Double = null,
     RelatedOpsItems: RelatedOpsItems = null,
     Status: OpsItemStatus = null,
     Title: OpsItemTitle = null
@@ -61,7 +61,7 @@ object UpdateOpsItemRequest {
     if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications)
     if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData)
     if (OperationalDataToDelete != null) __obj.updateDynamic("OperationalDataToDelete")(OperationalDataToDelete)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RelatedOpsItems != null) __obj.updateDynamic("RelatedOpsItems")(RelatedOpsItems)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title)

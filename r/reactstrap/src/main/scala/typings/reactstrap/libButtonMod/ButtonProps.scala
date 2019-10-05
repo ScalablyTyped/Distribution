@@ -1,8 +1,10 @@
 package typings.reactstrap.libButtonMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.Ref
@@ -38,7 +40,7 @@ object ButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     innerRef: Ref[HTMLButtonElement] = null,
-    onClick: MouseEventHandler[_] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
     outline: js.UndefOr[Boolean] = js.undefined,
     size: js.Any = null,
     style: CSSProperties = null,
@@ -54,7 +56,7 @@ object ButtonProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
     if (size != null) __obj.updateDynamic("size")(size)
     if (style != null) __obj.updateDynamic("style")(style)

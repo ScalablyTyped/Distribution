@@ -29,10 +29,10 @@ object CodeGenNode {
     Args: CodeGenNodeArgs,
     Id: CodeGenIdentifier,
     NodeType: CodeGenNodeType,
-    LineNumber: js.UndefOr[Integer] = js.undefined
+    LineNumber: Int | Double = null
   ): CodeGenNode = {
     val __obj = js.Dynamic.literal(Args = Args, Id = Id, NodeType = NodeType)
-    if (!js.isUndefined(LineNumber)) __obj.updateDynamic("LineNumber")(LineNumber)
+    if (LineNumber != null) __obj.updateDynamic("LineNumber")(LineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeGenNode]
   }
 }

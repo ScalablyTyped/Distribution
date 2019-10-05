@@ -16,13 +16,14 @@ trait DescriptionsItemProps extends js.Object {
 object DescriptionsItemProps {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     className: String = null,
     label: ReactNode = null,
     prefixCls: String = null,
     span: Int | Double = null
   ): DescriptionsItemProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

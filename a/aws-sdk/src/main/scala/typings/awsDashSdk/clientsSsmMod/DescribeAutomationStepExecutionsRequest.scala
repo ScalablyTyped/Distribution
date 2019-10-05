@@ -32,13 +32,13 @@ object DescribeAutomationStepExecutionsRequest {
   def apply(
     AutomationExecutionId: AutomationExecutionId,
     Filters: StepExecutionFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
-    ReverseOrder: js.UndefOr[Boolean] = js.undefined
+    ReverseOrder: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeAutomationStepExecutionsRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (!js.isUndefined(ReverseOrder)) __obj.updateDynamic("ReverseOrder")(ReverseOrder)
     __obj.asInstanceOf[DescribeAutomationStepExecutionsRequest]

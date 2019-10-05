@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object phaser {
-  import typings.phaser.PhaserNs.GameObjectsNs.Bob
-  import typings.phaser.PhaserNs.GameObjectsNs.GameObject
-  import typings.phaser.PhaserNs.GameObjectsNs.Light
-  import typings.phaser.PhaserNs.GameObjectsNs.Text
-  import typings.phaser.PhaserNs.GeomNs.Triangle
-  import typings.phaser.PhaserNs.PhysicsNs.ImpactNs.Body
-  import typings.phaser.PhaserNs.RendererNs.WebGLNs.WebGLRenderer
-  import typings.phaser.PhaserNs.TexturesNs.Texture
-  import typings.phaser.PhaserNs.TilemapsNs.Tile
+  import typings.phaser.Phaser.GameObjects.Bob
+  import typings.phaser.Phaser.GameObjects.GameObject
+  import typings.phaser.Phaser.GameObjects.Light
+  import typings.phaser.Phaser.GameObjects.Text
+  import typings.phaser.Phaser.Geom.Triangle
+  import typings.phaser.Phaser.Physics.Impact.Body
+  import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
+  import typings.phaser.Phaser.Textures.Texture
+  import typings.phaser.Phaser.Tilemaps.Tile
 
   type ArcadePhysicsCallback = js.Function2[/* object1 */ GameObject, /* object2 */ GameObject, Unit]
   type CenterFunction = js.Function1[/* triangle */ Triangle, Unit]

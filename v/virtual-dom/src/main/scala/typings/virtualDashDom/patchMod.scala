@@ -1,8 +1,8 @@
 package typings.virtualDashDom
 
 import typings.std.Element
-import typings.virtualDashDom.VirtualDOMNs.VPatch
-import typings.virtualDashDom.VirtualDOMNs.VPatchOptions
+import typings.virtualDashDom.VirtualDOM.VPatch
+import typings.virtualDashDom.VirtualDOM.VPatchOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

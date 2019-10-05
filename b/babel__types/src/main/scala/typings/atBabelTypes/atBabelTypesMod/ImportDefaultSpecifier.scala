@@ -37,3 +37,9 @@ object ImportDefaultSpecifier {
   }
 }
 
+@JSImport("@babel/types", "importDefaultSpecifier")
+@js.native
+object importDefaultSpecifier extends js.Object {
+  def apply(local: Identifier): ImportDefaultSpecifier = js.native
+}
+

@@ -1,5 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTeamSpeakMod
 
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ trait ConnectionParams extends js.Object {
   /** the password to use with the login (default: none) */
   var password: js.UndefOr[String] = js.undefined
   /** the query protocol to use (default: @see QueryProtocol ) */
-  var protocol: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol
+  var protocol: QueryProtocol
   /** the queryport to use (default: raw=10011 ssh=10022) */
   var queryport: Double
   /** time to wait until a timeout gets fired (default: 10000) */
@@ -32,7 +33,7 @@ object ConnectionParams {
   def apply(
     host: String,
     keepAlive: Boolean,
-    protocol: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol,
+    protocol: QueryProtocol,
     queryport: Double,
     readyTimeout: Double,
     localAddress: String = null,

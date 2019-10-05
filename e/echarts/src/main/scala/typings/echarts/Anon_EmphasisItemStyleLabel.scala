@@ -8,7 +8,7 @@ trait Anon_EmphasisItemStyleLabel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * The style of the leaf node in the tree.
     *
@@ -29,7 +29,7 @@ trait Anon_EmphasisItemStyleLabel extends js.Object {
 object Anon_EmphasisItemStyleLabel {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorAnonBorderColorBorderType = null,
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
     itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColor = null
   ): Anon_EmphasisItemStyleLabel = {

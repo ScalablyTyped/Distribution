@@ -1,15 +1,15 @@
 package typings.weappDashApi
 
-import typings.weappDashApi.weappDashApiMod.wxNs.CameraDevice
-import typings.weappDashApi.weappDashApiMod.wxNs.ImageSizeType
-import typings.weappDashApi.weappDashApiMod.wxNs.ImageSourceType
-import typings.weappDashApi.weappDashApiMod.wxNs.LineCapType
-import typings.weappDashApi.weappDashApiMod.wxNs.LineJoinType
-import typings.weappDashApi.weappDashApiMod.wxNs.Scope
-import typings.weappDashApi.weappDashApiMod.wxNs.TimingFunction
-import typings.weappDashApi.weappDashApiMod.wxNs.VideoSourceType
-import typings.weappDashApi.weappDashApiMod.wxNs.envVersion
-import typings.weappDashApi.weappDashApiMod.wxNs.icon
+import typings.weappDashApi.weappDashApiMod.wx.CameraDevice
+import typings.weappDashApi.weappDashApiMod.wx.ImageSizeType
+import typings.weappDashApi.weappDashApiMod.wx.ImageSourceType
+import typings.weappDashApi.weappDashApiMod.wx.LineCapType
+import typings.weappDashApi.weappDashApiMod.wx.LineJoinType
+import typings.weappDashApi.weappDashApiMod.wx.Scope
+import typings.weappDashApi.weappDashApiMod.wx.TimingFunction
+import typings.weappDashApi.weappDashApiMod.wx.VideoSourceType
+import typings.weappDashApi.weappDashApiMod.wx.envVersion
+import typings.weappDashApi.weappDashApiMod.wx.icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

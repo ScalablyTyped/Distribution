@@ -67,3 +67,11 @@ class LayerGroup[P] () extends Layer {
   def toGeoJSON(): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection = js.native
 }
 
+@JSImport("leaflet", "layerGroup")
+@js.native
+object layerGroup extends js.Object {
+  def apply(): LayerGroup[_] = js.native
+  def apply(layers: js.Array[Layer]): LayerGroup[_] = js.native
+  def apply(layers: js.Array[Layer], options: LayerOptions): LayerGroup[_] = js.native
+}
+

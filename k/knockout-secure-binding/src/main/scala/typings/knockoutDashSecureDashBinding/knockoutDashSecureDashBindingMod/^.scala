@@ -1,5 +1,8 @@
 package typings.knockoutDashSecureDashBinding.knockoutDashSecureDashBindingMod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.knockout.KnockoutBindingContext
 import typings.knockout.KnockoutBindingProvider
 import typings.knockoutDashSecureDashBinding.KnockoutSecureBindingOptions
@@ -17,4 +20,10 @@ class ^ () extends KnockoutBindingProvider {
   /* CompleteClass */
   override def nodeHasBindings(node: Node): Boolean = js.native
 }
+
+@JSImport("knockout-secure-binding", JSImport.Namespace)
+@js.native
+object ^ extends TopLevel[
+      Instantiable0[KnockoutBindingProvider] with (Instantiable1[/* options */ KnockoutSecureBindingOptions, KnockoutBindingProvider])
+    ]
 

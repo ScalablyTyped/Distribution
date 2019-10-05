@@ -4,7 +4,7 @@ import typings.jsforce.jsforceStrings.ASC
 import typings.jsforce.jsforceStrings.DESC
 import typings.jsforce.recordDashResultMod.RecordResult
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Readable
 import typings.std.Error
 import typings.std.Promise

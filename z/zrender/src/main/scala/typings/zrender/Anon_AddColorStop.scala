@@ -1,11 +1,11 @@
 package typings.zrender
 
-import typings.zrender.zrenderNs.ColorStops
-import typings.zrender.zrenderNs.GlobalCoords
-import typings.zrender.zrenderNs.X
-import typings.zrender.zrenderNs.X2
-import typings.zrender.zrenderNs.Y
-import typings.zrender.zrenderNs.Y2
+import typings.zrender.zrender.ColorStops
+import typings.zrender.zrender.GlobalCoords
+import typings.zrender.zrender.X
+import typings.zrender.zrender.X2
+import typings.zrender.zrender.Y
+import typings.zrender.zrender.Y2
 import typings.zrender.zrenderStrings.linear
 import scala.scalajs.js
 import scala.scalajs.js.`|`

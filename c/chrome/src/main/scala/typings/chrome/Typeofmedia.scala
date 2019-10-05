@@ -3,31 +3,31 @@ package typings.chrome
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.chrome.chromeNs.castNs.Volume
-import typings.chrome.chromeNs.castNs.mediaNs.EditTracksInfoRequest
-import typings.chrome.chromeNs.castNs.mediaNs.GenericMediaMetadata
-import typings.chrome.chromeNs.castNs.mediaNs.GetStatusRequest
-import typings.chrome.chromeNs.castNs.mediaNs.LoadRequest
-import typings.chrome.chromeNs.castNs.mediaNs.Media
-import typings.chrome.chromeNs.castNs.mediaNs.MediaInfo
-import typings.chrome.chromeNs.castNs.mediaNs.MovieMediaMetadata
-import typings.chrome.chromeNs.castNs.mediaNs.MusicTrackMediaMetadata
-import typings.chrome.chromeNs.castNs.mediaNs.PauseRequest
-import typings.chrome.chromeNs.castNs.mediaNs.PhotoMediaMetadata
-import typings.chrome.chromeNs.castNs.mediaNs.PlayRequest
-import typings.chrome.chromeNs.castNs.mediaNs.QueueInsertItemsRequest
-import typings.chrome.chromeNs.castNs.mediaNs.QueueItem
-import typings.chrome.chromeNs.castNs.mediaNs.QueueLoadRequest
-import typings.chrome.chromeNs.castNs.mediaNs.QueueRemoveItemsRequest
-import typings.chrome.chromeNs.castNs.mediaNs.QueueReorderItemsRequest
-import typings.chrome.chromeNs.castNs.mediaNs.QueueUpdateItemsRequest
-import typings.chrome.chromeNs.castNs.mediaNs.SeekRequest
-import typings.chrome.chromeNs.castNs.mediaNs.StopRequest
-import typings.chrome.chromeNs.castNs.mediaNs.TextTrackStyle
-import typings.chrome.chromeNs.castNs.mediaNs.Track
-import typings.chrome.chromeNs.castNs.mediaNs.TrackType
-import typings.chrome.chromeNs.castNs.mediaNs.TvShowMediaMetadata
-import typings.chrome.chromeNs.castNs.mediaNs.VolumeRequest
+import typings.chrome.chrome.cast.Volume
+import typings.chrome.chrome.cast.media.EditTracksInfoRequest
+import typings.chrome.chrome.cast.media.GenericMediaMetadata
+import typings.chrome.chrome.cast.media.GetStatusRequest
+import typings.chrome.chrome.cast.media.LoadRequest
+import typings.chrome.chrome.cast.media.Media
+import typings.chrome.chrome.cast.media.MediaInfo
+import typings.chrome.chrome.cast.media.MovieMediaMetadata
+import typings.chrome.chrome.cast.media.MusicTrackMediaMetadata
+import typings.chrome.chrome.cast.media.PauseRequest
+import typings.chrome.chrome.cast.media.PhotoMediaMetadata
+import typings.chrome.chrome.cast.media.PlayRequest
+import typings.chrome.chrome.cast.media.QueueInsertItemsRequest
+import typings.chrome.chrome.cast.media.QueueItem
+import typings.chrome.chrome.cast.media.QueueLoadRequest
+import typings.chrome.chrome.cast.media.QueueRemoveItemsRequest
+import typings.chrome.chrome.cast.media.QueueReorderItemsRequest
+import typings.chrome.chrome.cast.media.QueueUpdateItemsRequest
+import typings.chrome.chrome.cast.media.SeekRequest
+import typings.chrome.chrome.cast.media.StopRequest
+import typings.chrome.chrome.cast.media.TextTrackStyle
+import typings.chrome.chrome.cast.media.Track
+import typings.chrome.chrome.cast.media.TrackType
+import typings.chrome.chrome.cast.media.TvShowMediaMetadata
+import typings.chrome.chrome.cast.media.VolumeRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,62 +37,59 @@ trait Typeofmedia extends js.Object {
   var EditTracksInfoRequest: Instantiable2[
     js.UndefOr[/* activeTrackIds */ js.Array[Double]], 
     js.UndefOr[/* textTrackStyle */ TextTrackStyle], 
-    typings.chrome.chromeNs.castNs.mediaNs.EditTracksInfoRequest
+    typings.chrome.chrome.cast.media.EditTracksInfoRequest
   ]
-  var GenericMediaMetadata: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.GenericMediaMetadata]
-  var GetStatusRequest: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.GetStatusRequest]
-  var LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chromeNs.castNs.mediaNs.LoadRequest]
+  var GenericMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.GenericMediaMetadata]
+  var GetStatusRequest: Instantiable0[typings.chrome.chrome.cast.media.GetStatusRequest]
+  var LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.LoadRequest]
   var Media: Instantiable2[
     /* sessionId */ String, 
     /* mediaSessionId */ Double, 
-    typings.chrome.chromeNs.castNs.mediaNs.Media
+    typings.chrome.chrome.cast.media.Media
   ]
   var MediaInfo: Instantiable2[
     /* contentId */ String, 
     /* contentType */ String, 
-    typings.chrome.chromeNs.castNs.mediaNs.MediaInfo
+    typings.chrome.chrome.cast.media.MediaInfo
   ]
-  var MovieMediaMetadata: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.MovieMediaMetadata]
-  var MusicTrackMediaMetadata: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.MusicTrackMediaMetadata]
-  var PauseRequest: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.PauseRequest]
-  var PhotoMediaMetadata: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.PhotoMediaMetadata]
-  var PlayRequest: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.PlayRequest]
+  var MovieMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MovieMediaMetadata]
+  var MusicTrackMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.MusicTrackMediaMetadata]
+  var PauseRequest: Instantiable0[typings.chrome.chrome.cast.media.PauseRequest]
+  var PhotoMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.PhotoMediaMetadata]
+  var PlayRequest: Instantiable0[typings.chrome.chrome.cast.media.PlayRequest]
   var QueueInsertItemsRequest: Instantiable1[
     /* itemsToInsert */ js.Array[QueueItem], 
-    typings.chrome.chromeNs.castNs.mediaNs.QueueInsertItemsRequest
+    typings.chrome.chrome.cast.media.QueueInsertItemsRequest
   ]
-  var QueueItem: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chromeNs.castNs.mediaNs.QueueItem]
-  var QueueLoadRequest: Instantiable1[
-    /* items */ js.Array[QueueItem], 
-    typings.chrome.chromeNs.castNs.mediaNs.QueueLoadRequest
-  ]
+  var QueueItem: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.QueueItem]
+  var QueueLoadRequest: Instantiable1[/* items */ js.Array[QueueItem], typings.chrome.chrome.cast.media.QueueLoadRequest]
   var QueueRemoveItemsRequest: Instantiable1[
     /* itemIdsToRemove */ js.Array[Double], 
-    typings.chrome.chromeNs.castNs.mediaNs.QueueRemoveItemsRequest
+    typings.chrome.chrome.cast.media.QueueRemoveItemsRequest
   ]
   var QueueReorderItemsRequest: Instantiable1[
     /* itemIdsToReorder */ js.Array[Double], 
-    typings.chrome.chromeNs.castNs.mediaNs.QueueReorderItemsRequest
+    typings.chrome.chrome.cast.media.QueueReorderItemsRequest
   ]
   var QueueUpdateItemsRequest: Instantiable1[
     /* itemsToUpdate */ js.Array[QueueItem], 
-    typings.chrome.chromeNs.castNs.mediaNs.QueueUpdateItemsRequest
+    typings.chrome.chrome.cast.media.QueueUpdateItemsRequest
   ]
-  var SeekRequest: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.SeekRequest]
-  var StopRequest: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.StopRequest]
-  var TextTrackStyle: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.TextTrackStyle]
+  var SeekRequest: Instantiable0[typings.chrome.chrome.cast.media.SeekRequest]
+  var StopRequest: Instantiable0[typings.chrome.chrome.cast.media.StopRequest]
+  var TextTrackStyle: Instantiable0[typings.chrome.chrome.cast.media.TextTrackStyle]
   var Track: Instantiable2[
     /* trackId */ Double, 
     /* trackType */ TrackType, 
-    typings.chrome.chromeNs.castNs.mediaNs.Track
+    typings.chrome.chrome.cast.media.Track
   ]
-  var TvShowMediaMetadata: Instantiable0[typings.chrome.chromeNs.castNs.mediaNs.TvShowMediaMetadata]
-  var VolumeRequest: Instantiable1[/* volume */ Volume, typings.chrome.chromeNs.castNs.mediaNs.VolumeRequest]
+  var TvShowMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.TvShowMediaMetadata]
+  var VolumeRequest: Instantiable1[/* volume */ Volume, typings.chrome.chrome.cast.media.VolumeRequest]
   /**
     * @namespace
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
     */
-  val timeoutNs: Typeoftimeout
+  val timeout: Typeoftimeout
 }
 
 object Typeofmedia {
@@ -126,9 +123,9 @@ object Typeofmedia {
     Track: Instantiable2[/* trackId */ Double, /* trackType */ TrackType, Track],
     TvShowMediaMetadata: Instantiable0[TvShowMediaMetadata],
     VolumeRequest: Instantiable1[/* volume */ Volume, VolumeRequest],
-    timeoutNs: Typeoftimeout
+    timeout: Typeoftimeout
   ): Typeofmedia = {
-    val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID, EditTracksInfoRequest = EditTracksInfoRequest, GenericMediaMetadata = GenericMediaMetadata, GetStatusRequest = GetStatusRequest, LoadRequest = LoadRequest, Media = Media, MediaInfo = MediaInfo, MovieMediaMetadata = MovieMediaMetadata, MusicTrackMediaMetadata = MusicTrackMediaMetadata, PauseRequest = PauseRequest, PhotoMediaMetadata = PhotoMediaMetadata, PlayRequest = PlayRequest, QueueInsertItemsRequest = QueueInsertItemsRequest, QueueItem = QueueItem, QueueLoadRequest = QueueLoadRequest, QueueRemoveItemsRequest = QueueRemoveItemsRequest, QueueReorderItemsRequest = QueueReorderItemsRequest, QueueUpdateItemsRequest = QueueUpdateItemsRequest, SeekRequest = SeekRequest, StopRequest = StopRequest, TextTrackStyle = TextTrackStyle, Track = Track, TvShowMediaMetadata = TvShowMediaMetadata, VolumeRequest = VolumeRequest, timeoutNs = timeoutNs)
+    val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID, EditTracksInfoRequest = EditTracksInfoRequest, GenericMediaMetadata = GenericMediaMetadata, GetStatusRequest = GetStatusRequest, LoadRequest = LoadRequest, Media = Media, MediaInfo = MediaInfo, MovieMediaMetadata = MovieMediaMetadata, MusicTrackMediaMetadata = MusicTrackMediaMetadata, PauseRequest = PauseRequest, PhotoMediaMetadata = PhotoMediaMetadata, PlayRequest = PlayRequest, QueueInsertItemsRequest = QueueInsertItemsRequest, QueueItem = QueueItem, QueueLoadRequest = QueueLoadRequest, QueueRemoveItemsRequest = QueueRemoveItemsRequest, QueueReorderItemsRequest = QueueReorderItemsRequest, QueueUpdateItemsRequest = QueueUpdateItemsRequest, SeekRequest = SeekRequest, StopRequest = StopRequest, TextTrackStyle = TextTrackStyle, Track = Track, TvShowMediaMetadata = TvShowMediaMetadata, VolumeRequest = VolumeRequest, timeout = timeout)
   
     __obj.asInstanceOf[Typeofmedia]
   }

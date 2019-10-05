@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesVisualVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariableProperties
+import typings.arcgisDashJsDashApi.__esri.VisualVariable
+import typings.arcgisDashJsDashApi.__esri.VisualVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

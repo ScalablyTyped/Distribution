@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsScaleBarMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ScaleBar
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ScaleBarProperties
+import typings.arcgisDashJsDashApi.__esri.ScaleBar
+import typings.arcgisDashJsDashApi.__esri.ScaleBarProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

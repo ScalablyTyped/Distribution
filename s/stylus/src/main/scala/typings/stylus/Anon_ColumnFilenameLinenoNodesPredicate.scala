@@ -1,6 +1,6 @@
 package typings.stylus
 
-import typings.stylus.stylusMod.StylusNs.NodesNs.QueryExpr
+import typings.stylus.stylusMod.Stylus.Nodes.QueryExpr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

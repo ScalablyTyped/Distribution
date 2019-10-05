@@ -1,7 +1,7 @@
 package typings.reduxDashPromise.reduxDashPromiseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reduxDashPromise.reduxDashPromiseMod.ReduxPromiseNs.Promise
+import typings.reduxDashPromise.reduxDashPromiseMod.ReduxPromise.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

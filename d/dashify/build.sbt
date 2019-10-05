@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dashify"
-version := "1.0-dt-20180214Z-52192e"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20180214Z-faafa5"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

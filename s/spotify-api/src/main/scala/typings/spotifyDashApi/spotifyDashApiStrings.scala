@@ -1,7 +1,7 @@
 package typings.spotifyDashApi
 
-import typings.spotifyDashApi.SpotifyApiNs.ContextObjectType
-import typings.spotifyDashApi.SpotifyApiNs.PlaybackRepeatState
+import typings.spotifyDashApi.SpotifyApi.ContextObjectType
+import typings.spotifyDashApi.SpotifyApi.PlaybackRepeatState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.dynogels.dynogelsMod
 
 import typings.awsDashSdk.clientsDynamodbMod.AttributeNameList
-import typings.awsDashSdk.clientsDynamodbMod.ConsistentRead
 import typings.awsDashSdk.clientsDynamodbMod.ExpressionAttributeNameMap
 import typings.awsDashSdk.clientsDynamodbMod.ProjectionExpression
 import typings.awsDashSdk.clientsDynamodbMod.ReturnConsumedCapacity
@@ -21,7 +20,7 @@ object GetItemOptions {
   @scala.inline
   def apply(
     AttributesToGet: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ProjectionExpression: ProjectionExpression = null,
     ReturnConsumedCapacity: ReturnConsumedCapacity = null

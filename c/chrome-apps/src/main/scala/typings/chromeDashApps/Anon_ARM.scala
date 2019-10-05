@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
+import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chromeDashAppsStrings.`x86-32`
 import typings.chromeDashApps.chromeDashAppsStrings.`x86-64`
 import typings.chromeDashApps.chromeDashAppsStrings.arm
 import typings.chromeDashApps.chromeDashAppsStrings.mips
 import typings.chromeDashApps.chromeDashAppsStrings.mips64
-import typings.chromeDashApps.chromeNs.ToStringLiteral
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

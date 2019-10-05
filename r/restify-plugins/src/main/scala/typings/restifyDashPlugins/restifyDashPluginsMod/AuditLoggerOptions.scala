@@ -1,5 +1,6 @@
 package typings.restifyDashPlugins.restifyDashPluginsMod
 
+import typings.bunyan.bunyanMod.^
 import typings.restify.restifyMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ trait AuditLoggerOptions extends js.Object {
   /**
     * Bunyan logger
     */
-  var log: typings.bunyan.bunyanMod.^
+  var log: ^
   /**
     * Ringbuffer which is written to if passed in
     */
@@ -28,7 +29,7 @@ trait AuditLoggerOptions extends js.Object {
 object AuditLoggerOptions {
   @scala.inline
   def apply(
-    log: typings.bunyan.bunyanMod.^,
+    log: ^,
     body: js.UndefOr[Boolean] = js.undefined,
     logBuffer: js.Any = null,
     printLog: js.UndefOr[Boolean] = js.undefined,

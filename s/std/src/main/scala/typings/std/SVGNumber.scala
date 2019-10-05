@@ -12,12 +12,5 @@ trait SVGNumber extends js.Object {
 
 @JSGlobal("SVGNumber")
 @js.native
-class SVGNumberCls () extends SVGNumber {
-  /* CompleteClass */
-  override var value: Double = js.native
-}
-
-@JSGlobal("SVGNumber")
-@js.native
 object SVGNumber extends Instantiable0[SVGNumber]
 

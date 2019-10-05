@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportLabelClassMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LabelClass
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LabelClassProperties
+import typings.arcgisDashJsDashApi.__esri.LabelClass
+import typings.arcgisDashJsDashApi.__esri.LabelClassProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

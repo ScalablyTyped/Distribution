@@ -26,15 +26,15 @@ trait ListIdentityPoolUsageResponse extends js.Object {
 object ListIdentityPoolUsageResponse {
   @scala.inline
   def apply(
-    Count: js.UndefOr[Integer] = js.undefined,
+    Count: Int | Double = null,
     IdentityPoolUsages: IdentityPoolUsageList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListIdentityPoolUsageResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (IdentityPoolUsages != null) __obj.updateDynamic("IdentityPoolUsages")(IdentityPoolUsages)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListIdentityPoolUsageResponse]
   }

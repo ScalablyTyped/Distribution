@@ -1,8 +1,8 @@
 package typings.std
 
-import typings.std.IntlNs.DateTimeFormatPartTypes
-import typings.std.IntlNs.NumberFormatPartTypes
-import typings.std.WebAssemblyNs.ImportExportKind
+import typings.std.Intl.DateTimeFormatPartTypes
+import typings.std.Intl.NumberFormatPartTypes
+import typings.std.WebAssembly.ImportExportKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

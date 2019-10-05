@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_AsyncBodyComments
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.PatternKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ArrowFunctionExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ArrowFunctionExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

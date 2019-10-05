@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashMediaComponents extends reactDashMediaProps {
   @scala.inline
-  def `react-media`: ComponentType[SingleQueryProps] = typings.reactDashMedia.reactDashMediaMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashMedia.reactDashMediaMod.SingleQueryProps]]
+  def ReactDashMedia: ComponentType[SingleQueryProps] = typings.reactDashMedia.reactDashMediaMod.default.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashMedia.reactDashMediaMod.SingleQueryProps]]
 }
 

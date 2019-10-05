@@ -20,9 +20,5 @@ trait PluginArray extends /* index */ NumberDictionary[Plugin] {
 
 @JSGlobal("PluginArray")
 @js.native
-class PluginArrayCls () extends PluginArray
-
-@JSGlobal("PluginArray")
-@js.native
 object PluginArray extends Instantiable0[PluginArray]
 

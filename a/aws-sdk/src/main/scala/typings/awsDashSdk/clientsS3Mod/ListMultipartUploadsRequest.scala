@@ -39,7 +39,7 @@ object ListMultipartUploadsRequest {
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
     KeyMarker: KeyMarker = null,
-    MaxUploads: js.UndefOr[MaxUploads] = js.undefined,
+    MaxUploads: Int | Double = null,
     Prefix: Prefix = null,
     UploadIdMarker: UploadIdMarker = null
   ): ListMultipartUploadsRequest = {
@@ -47,7 +47,7 @@ object ListMultipartUploadsRequest {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker)
-    if (!js.isUndefined(MaxUploads)) __obj.updateDynamic("MaxUploads")(MaxUploads)
+    if (MaxUploads != null) __obj.updateDynamic("MaxUploads")(MaxUploads.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
     if (UploadIdMarker != null) __obj.updateDynamic("UploadIdMarker")(UploadIdMarker)
     __obj.asInstanceOf[ListMultipartUploadsRequest]

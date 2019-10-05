@@ -1,0 +1,38 @@
+package typings.ejDotWebDotAll.ej.Autocomplete
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FocusInEventArgs extends js.Object {
+  /** Set this option to true to cancel the event.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** Instance of the autocomplete model object.
+    */
+  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.Model] = js.undefined
+  /** Name of the event.
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+  /** Value of the autocomplete textbox.
+    */
+  var value: js.UndefOr[String] = js.undefined
+}
+
+object FocusInEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    model: typings.ejDotWebDotAll.ej.Autocomplete.Model = null,
+    `type`: String = null,
+    value: String = null
+  ): FocusInEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[FocusInEventArgs]
+  }
+}
+

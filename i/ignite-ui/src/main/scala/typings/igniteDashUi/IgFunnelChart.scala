@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -280,8 +281,8 @@ object IgFunnelChart {
     bezierPoints: String = null,
     bottomEdgeWidth: Int | Double = null,
     brushes: js.Any = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
@@ -289,7 +290,7 @@ object IgFunnelChart {
     formatOuterLabel: js.Any = null,
     funnelSliceDisplay: String = null,
     height: Int | Double = null,
-    hideTooltip: HideTooltipEvent = null,
+    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
     innerLabelMemberPath: String = null,
     innerLabelVisibility: String = null,
     isInverted: js.UndefOr[Boolean] = js.undefined,
@@ -307,13 +308,13 @@ object IgFunnelChart {
     responseDataKey: String = null,
     responseTotalRecCountKey: String = null,
     selectedSliceStyle: js.Any = null,
-    sliceClicked: SliceClickedEvent = null,
+    sliceClicked: (/* event */ Event, /* ui */ SliceClickedEventUIParam) => Unit = null,
     textColor: String = null,
     textStyle: String = null,
     tooltipTemplate: String = null,
     transitionDuration: Int | Double = null,
     unselectedSliceStyle: js.Any = null,
-    updateTooltip: UpdateTooltipEvent = null,
+    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
     useBezierCurve: js.UndefOr[Boolean] = js.undefined,
     useOuterLabelsForLegend: js.UndefOr[Boolean] = js.undefined,
     useUnselectedStyle: js.UndefOr[Boolean] = js.undefined,
@@ -326,8 +327,8 @@ object IgFunnelChart {
     if (bezierPoints != null) __obj.updateDynamic("bezierPoints")(bezierPoints)
     if (bottomEdgeWidth != null) __obj.updateDynamic("bottomEdgeWidth")(bottomEdgeWidth.asInstanceOf[js.Any])
     if (brushes != null) __obj.updateDynamic("brushes")(brushes)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
@@ -335,7 +336,7 @@ object IgFunnelChart {
     if (formatOuterLabel != null) __obj.updateDynamic("formatOuterLabel")(formatOuterLabel)
     if (funnelSliceDisplay != null) __obj.updateDynamic("funnelSliceDisplay")(funnelSliceDisplay)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
     if (innerLabelMemberPath != null) __obj.updateDynamic("innerLabelMemberPath")(innerLabelMemberPath)
     if (innerLabelVisibility != null) __obj.updateDynamic("innerLabelVisibility")(innerLabelVisibility)
     if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)
@@ -353,13 +354,13 @@ object IgFunnelChart {
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (selectedSliceStyle != null) __obj.updateDynamic("selectedSliceStyle")(selectedSliceStyle)
-    if (sliceClicked != null) __obj.updateDynamic("sliceClicked")(sliceClicked)
+    if (sliceClicked != null) __obj.updateDynamic("sliceClicked")(js.Any.fromFunction2(sliceClicked))
     if (textColor != null) __obj.updateDynamic("textColor")(textColor)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (unselectedSliceStyle != null) __obj.updateDynamic("unselectedSliceStyle")(unselectedSliceStyle)
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
     if (!js.isUndefined(useBezierCurve)) __obj.updateDynamic("useBezierCurve")(useBezierCurve)
     if (!js.isUndefined(useOuterLabelsForLegend)) __obj.updateDynamic("useOuterLabelsForLegend")(useOuterLabelsForLegend)
     if (!js.isUndefined(useUnselectedStyle)) __obj.updateDynamic("useUnselectedStyle")(useUnselectedStyle)

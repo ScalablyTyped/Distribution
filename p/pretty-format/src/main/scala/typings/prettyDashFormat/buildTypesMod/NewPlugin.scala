@@ -11,8 +11,11 @@ trait NewPlugin extends Plugin {
 
 object NewPlugin {
   @scala.inline
-  def apply(serialize: (js.Any, Config, String, Double, Refs, Printer) => String, test: Test): NewPlugin = {
-    val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction6(serialize), test = test)
+  def apply(
+    serialize: (js.Any, Config, String, Double, Refs, Printer) => String,
+    test: /* arg0 */ js.Any => Boolean
+  ): NewPlugin = {
+    val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction6(serialize), test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[NewPlugin]
   }

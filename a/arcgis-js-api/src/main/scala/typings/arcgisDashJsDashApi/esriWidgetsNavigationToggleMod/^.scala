@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsNavigationToggleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NavigationToggleConstructor
+import typings.arcgisDashJsDashApi.__esri.NavigationToggleConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

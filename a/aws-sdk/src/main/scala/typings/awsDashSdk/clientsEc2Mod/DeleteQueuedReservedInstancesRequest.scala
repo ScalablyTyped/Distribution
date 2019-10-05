@@ -19,7 +19,7 @@ object DeleteQueuedReservedInstancesRequest {
   @scala.inline
   def apply(
     ReservedInstancesIds: DeleteQueuedReservedInstancesIdList,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteQueuedReservedInstancesRequest = {
     val __obj = js.Dynamic.literal(ReservedInstancesIds = ReservedInstancesIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

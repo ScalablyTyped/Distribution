@@ -192,7 +192,7 @@ object MapboxOptions {
     style: Style | String = null,
     touchZoomRotate: js.UndefOr[Boolean] = js.undefined,
     trackResize: js.UndefOr[Boolean] = js.undefined,
-    transformRequest: TransformRequestFunction = null,
+    transformRequest: (/* url */ String, /* resourceType */ ResourceType) => RequestParameters = null,
     zoom: Int | Double = null
   ): MapboxOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
@@ -231,7 +231,7 @@ object MapboxOptions {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(touchZoomRotate)) __obj.updateDynamic("touchZoomRotate")(touchZoomRotate)
     if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize)
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxOptions]
   }

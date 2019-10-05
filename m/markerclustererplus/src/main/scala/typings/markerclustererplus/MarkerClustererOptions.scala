@@ -1,5 +1,6 @@
 package typings.markerclustererplus
 
+import typings.googlemaps.google.maps.Marker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,7 +132,7 @@ object MarkerClustererOptions {
     averageCenter: js.UndefOr[Boolean] = js.undefined,
     batchSize: Int | Double = null,
     batchSizeIE: Int | Double = null,
-    calculator: Calculator = null,
+    calculator: (/* markers */ js.Array[Marker], /* clusterIconStylesCount */ Double) => ClusterIconInfo = null,
     clusterClass: java.lang.String = null,
     enableRetinaIcons: js.UndefOr[Boolean] = js.undefined,
     gridSize: Int | Double = null,
@@ -149,7 +150,7 @@ object MarkerClustererOptions {
     if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter)
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (batchSizeIE != null) __obj.updateDynamic("batchSizeIE")(batchSizeIE.asInstanceOf[js.Any])
-    if (calculator != null) __obj.updateDynamic("calculator")(calculator)
+    if (calculator != null) __obj.updateDynamic("calculator")(js.Any.fromFunction2(calculator))
     if (clusterClass != null) __obj.updateDynamic("clusterClass")(clusterClass)
     if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons)
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])

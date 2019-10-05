@@ -1,6 +1,6 @@
 package typings.promDashClient.promDashClientMod
 
-import typings.promDashClient.promDashClientMod.GaugeNs.Internal
+import typings.promDashClient.promDashClientMod.Gauge.Internal
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prom-client", "Gauge")
 @js.native
-class Gauge protected () extends Metric {
+class Gauge protected () extends _Metric {
   /**
   	 * @param configuration Configuration when creating a Gauge metric. Name and Help is mandatory
   	 */
@@ -104,5 +104,49 @@ class Gauge protected () extends Metric {
   	 */
   def startTimer(): js.Function1[/* labels */ js.UndefOr[labelValues], Unit] = js.native
   def startTimer(labels: labelValues): js.Function1[/* labels */ js.UndefOr[labelValues], Unit] = js.native
+}
+
+@JSImport("prom-client", "Gauge")
+@js.native
+object Gauge extends js.Object {
+  @js.native
+  trait Internal extends js.Object {
+    /**
+    		 * Decrement with value
+    		 * @param value The value to decrement with
+    		 * @param timestamp Timestamp to associate the time series with
+    		 */
+    def dec(): Unit = js.native
+    def dec(value: Double): Unit = js.native
+    def dec(value: Double, timestamp: Double): Unit = js.native
+    def dec(value: Double, timestamp: Date): Unit = js.native
+    /**
+    		 * Increment gauge with value
+    		 * @param value The value to increment with
+    		 * @param timestamp Timestamp to associate the time series with
+    		 */
+    def inc(): Unit = js.native
+    def inc(value: Double): Unit = js.native
+    def inc(value: Double, timestamp: Double): Unit = js.native
+    def inc(value: Double, timestamp: Date): Unit = js.native
+    /**
+    		 * Set gauges value
+    		 * @param value The value to set
+    		 * @param timestamp Timestamp to associate the time series with
+    		 */
+    def set(value: Double): Unit = js.native
+    def set(value: Double, timestamp: Double): Unit = js.native
+    def set(value: Double, timestamp: Date): Unit = js.native
+    /**
+    		 * Set gauge value to current epoch time in ms
+    		 */
+    def setToCurrentTime(): Unit = js.native
+    /**
+    		 * Start a timer where the gauges value will be the duration in seconds
+    		 * @return Function to invoke when timer should be stopped
+    		 */
+    def startTimer(): js.Function1[/* labels */ js.UndefOr[labelValues], Unit] = js.native
+  }
+  
 }
 

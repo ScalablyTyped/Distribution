@@ -23,6 +23,10 @@ object dogeDashSeedMod extends js.Object {
     * @returns A BIP39 mnemonic seed phrase.
     */
   def apply(): String = js.native
-  def apply(bits: `128` | `160` | `192` | `224` | `256`): String = js.native
+  def apply(bits: `128`): String = js.native
+  def apply(bits: `160`): String = js.native
+  def apply(bits: `192`): String = js.native
+  def apply(bits: `224`): String = js.native
+  def apply(bits: `256`): String = js.native
 }
 

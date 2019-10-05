@@ -1,7 +1,7 @@
 package typings.spectrum
 
 import typings.jquery.JQueryEventObject
-import typings.spectrum.SpectrumNs.Options
+import typings.spectrum.Spectrum.Options
 import typings.spectrum.spectrumStrings.container
 import typings.spectrum.spectrumStrings.destroy
 import typings.spectrum.spectrumStrings.disable

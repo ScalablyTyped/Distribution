@@ -29,7 +29,7 @@ object PutKeyPolicyRequest {
     KeyId: KeyIdType,
     Policy: PolicyType,
     PolicyName: PolicyNameType,
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[BooleanType] = js.undefined
+    BypassPolicyLockoutSafetyCheck: js.UndefOr[Boolean] = js.undefined
   ): PutKeyPolicyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId, Policy = Policy, PolicyName = PolicyName)
     if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck)

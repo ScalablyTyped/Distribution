@@ -1,7 +1,7 @@
 package typings.reactDashMdl.reactDashMdlMod
 
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object RadioProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     name: String = null,
-    onChange: FormEventHandler[Radio] = null
+    onChange: FormEvent[Radio] => Unit = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
@@ -36,7 +36,7 @@ object RadioProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (label != null) __obj.updateDynamic("label")(label)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RadioProps]
   }
 }

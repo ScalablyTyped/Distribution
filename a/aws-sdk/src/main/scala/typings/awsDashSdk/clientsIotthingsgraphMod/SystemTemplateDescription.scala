@@ -24,12 +24,12 @@ object SystemTemplateDescription {
   def apply(
     definition: DefinitionDocument = null,
     summary: SystemTemplateSummary = null,
-    validatedNamespaceVersion: js.UndefOr[Version] = js.undefined
+    validatedNamespaceVersion: Int | Double = null
   ): SystemTemplateDescription = {
     val __obj = js.Dynamic.literal()
     if (definition != null) __obj.updateDynamic("definition")(definition)
     if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (!js.isUndefined(validatedNamespaceVersion)) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion)
+    if (validatedNamespaceVersion != null) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemTemplateDescription]
   }
 }

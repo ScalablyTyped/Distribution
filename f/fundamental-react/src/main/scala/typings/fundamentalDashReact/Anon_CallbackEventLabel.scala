@@ -1,15 +1,15 @@
 package typings.fundamentalDashReact
 
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CallbackEventLabel extends js.Object {
   var callback: js.UndefOr[
-    js.Function1[/* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent], Unit]
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
   ] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var noNotificationsBody: js.UndefOr[ReactNode] = js.undefined
@@ -21,7 +21,7 @@ object Anon_CallbackEventLabel {
   @scala.inline
   def apply(
     notificationCount: Double,
-    callback: /* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit = null,
+    callback: /* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit = null,
     label: String = null,
     noNotificationsBody: ReactNode = null,
     notificationsBody: ReactNode = null

@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.RequestBodyDefinition because var conflicts: description. Inlined mode, raw, urlencoded, file, formdata */ @JSImport("postman-collection", "RequestBody")
 @js.native
 class RequestBody protected () extends PropertyBase[RequestBodyDefinition] {

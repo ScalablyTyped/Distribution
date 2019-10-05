@@ -27,15 +27,17 @@ trait Anon_ChildrenData extends js.Object {
 object Anon_ChildrenData {
   @scala.inline
   def apply(
-    children: ReactNode,
     data: js.Any,
     innerProps: InnerProps,
-    innerRef: InnerRef,
     label: String,
-    `type`: option
+    `type`: option,
+    children: ReactNode = null,
+    innerRef: InnerRef = null
   ): Anon_ChildrenData = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data, innerProps = innerProps, innerRef = innerRef.asInstanceOf[js.Any], label = label)
+    val __obj = js.Dynamic.literal(data = data, innerProps = innerProps, label = label)
     __obj.updateDynamic("type")(`type`)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenData]
   }
 }

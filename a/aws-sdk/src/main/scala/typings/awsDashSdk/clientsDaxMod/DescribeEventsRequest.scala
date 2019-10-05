@@ -38,18 +38,18 @@ trait DescribeEventsRequest extends js.Object {
 object DescribeEventsRequest {
   @scala.inline
   def apply(
-    Duration: js.UndefOr[IntegerOptional] = js.undefined,
+    Duration: Int | Double = null,
     EndTime: TStamp = null,
-    MaxResults: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null,
     SourceName: String = null,
     SourceType: SourceType = null,
     StartTime: TStamp = null
   ): DescribeEventsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SourceName != null) __obj.updateDynamic("SourceName")(SourceName)
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])

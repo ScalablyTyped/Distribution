@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "MouseEvent")
 @js.native
 class MouseEvent protected ()
-  extends typings.paper.paperNs.MouseEvent {
+  extends typings.paper.paper.MouseEvent {
   def this(
     `type`: String,
     event: NativeMouseEvent,
-    point: typings.paper.paperNs.Point,
-    target: typings.paper.paperNs.Item,
-    delta: typings.paper.paperNs.Point
+    point: typings.paper.paper.Point,
+    target: typings.paper.paper.Item,
+    delta: typings.paper.paper.Point
   ) = this()
 }
 

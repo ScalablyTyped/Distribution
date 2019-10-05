@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("selenium-webdriver/lib/promise", JSImport.Namespace)
 @js.native
 object libPromiseMod extends js.Object {
-  @JSName("promise")
   @js.native
-  object promiseNs extends js.Object {
+  object promise extends js.Object {
     /**
       * Wraps a function that expects a node-style callback as its final
       * argument. This callback expects two arguments: an error value (which will

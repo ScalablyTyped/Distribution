@@ -1,7 +1,7 @@
 package typings.angularDashFormly
 
 import typings.angular.angularMod.IPromise
-import typings.angularDashFormly.AngularFormlyNs.IFieldConfigurationObject
+import typings.angularDashFormly.AngularFormly.IFieldConfigurationObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

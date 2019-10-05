@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.twilio.twilioMod.Resource because Already inherited
 - typings.twilio.twilioMod.PostableResource because var conflicts: get_Original. Inlined post, post, post, post_Original */ @js.native
 trait CreatableMappedResource[T] extends MappedResource[T] {
   @JSName("create")

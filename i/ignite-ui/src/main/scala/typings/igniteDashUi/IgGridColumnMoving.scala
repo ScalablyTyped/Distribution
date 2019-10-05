@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -247,11 +248,11 @@ object IgGridColumnMoving {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     addMovingDropdown: js.UndefOr[Boolean] = js.undefined,
-    columnDragCanceled: ColumnDragCanceledEvent = null,
-    columnDragEnd: ColumnDragEndEvent = null,
-    columnDragStart: ColumnDragStartEvent = null,
-    columnMoved: ColumnMovedEvent = null,
-    columnMoving: ColumnMovingEvent = null,
+    columnDragCanceled: (/* event */ Event, /* ui */ ColumnDragCanceledEventUIParam) => Unit = null,
+    columnDragEnd: (/* event */ Event, /* ui */ ColumnDragEndEventUIParam) => Unit = null,
+    columnDragStart: (/* event */ Event, /* ui */ ColumnDragStartEventUIParam) => Unit = null,
+    columnMoved: (/* event */ Event, /* ui */ ColumnMovedEventUIParam) => Unit = null,
+    columnMoving: (/* event */ Event, /* ui */ ColumnMovingEventUIParam) => Unit = null,
     columnMovingDialogContainment: String = null,
     columnSettings: js.Array[IgGridColumnMovingColumnSetting] = null,
     dialogWidget: String = null,
@@ -272,21 +273,21 @@ object IgGridColumnMoving {
     movingDialogCaptionButtonAsc: String = null,
     movingDialogCaptionButtonDesc: String = null,
     movingDialogCaptionText: String = null,
-    movingDialogClosed: MovingDialogClosedEvent = null,
-    movingDialogClosing: MovingDialogClosingEvent = null,
-    movingDialogContentsRendered: MovingDialogContentsRenderedEvent = null,
-    movingDialogContentsRendering: MovingDialogContentsRenderingEvent = null,
+    movingDialogClosed: (/* event */ Event, /* ui */ MovingDialogClosedEventUIParam) => Unit = null,
+    movingDialogClosing: (/* event */ Event, /* ui */ MovingDialogClosingEventUIParam) => Unit = null,
+    movingDialogContentsRendered: (/* event */ Event, /* ui */ MovingDialogContentsRenderedEventUIParam) => Unit = null,
+    movingDialogContentsRendering: (/* event */ Event, /* ui */ MovingDialogContentsRenderingEventUIParam) => Unit = null,
     movingDialogDisplayText: String = null,
-    movingDialogDragColumnMoved: MovingDialogDragColumnMovedEvent = null,
-    movingDialogDragColumnMoving: MovingDialogDragColumnMovingEvent = null,
-    movingDialogDragged: MovingDialogDraggedEvent = null,
+    movingDialogDragColumnMoved: (/* event */ Event, /* ui */ MovingDialogDragColumnMovedEventUIParam) => Unit = null,
+    movingDialogDragColumnMoving: (/* event */ Event, /* ui */ MovingDialogDragColumnMovingEventUIParam) => Unit = null,
+    movingDialogDragged: (/* event */ Event, /* ui */ MovingDialogDraggedEventUIParam) => Unit = null,
     movingDialogDropTooltipMarkup: String = null,
     movingDialogDropTooltipText: String = null,
     movingDialogHeight: Int | Double = null,
-    movingDialogMoveDownButtonPressed: MovingDialogMoveDownButtonPressedEvent = null,
-    movingDialogMoveUpButtonPressed: MovingDialogMoveUpButtonPressedEvent = null,
-    movingDialogOpened: MovingDialogOpenedEvent = null,
-    movingDialogOpening: MovingDialogOpeningEvent = null,
+    movingDialogMoveDownButtonPressed: (/* event */ Event, /* ui */ MovingDialogMoveDownButtonPressedEventUIParam) => Unit = null,
+    movingDialogMoveUpButtonPressed: (/* event */ Event, /* ui */ MovingDialogMoveUpButtonPressedEventUIParam) => Unit = null,
+    movingDialogOpened: (/* event */ Event, /* ui */ MovingDialogOpenedEventUIParam) => Unit = null,
+    movingDialogOpening: (/* event */ Event, /* ui */ MovingDialogOpeningEventUIParam) => Unit = null,
     movingDialogWidth: Int | Double = null,
     movingScrollTolerance: Int | Double = null,
     movingToolTipMove: String = null,
@@ -297,11 +298,11 @@ object IgGridColumnMoving {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(addMovingDropdown)) __obj.updateDynamic("addMovingDropdown")(addMovingDropdown)
-    if (columnDragCanceled != null) __obj.updateDynamic("columnDragCanceled")(columnDragCanceled)
-    if (columnDragEnd != null) __obj.updateDynamic("columnDragEnd")(columnDragEnd)
-    if (columnDragStart != null) __obj.updateDynamic("columnDragStart")(columnDragStart)
-    if (columnMoved != null) __obj.updateDynamic("columnMoved")(columnMoved)
-    if (columnMoving != null) __obj.updateDynamic("columnMoving")(columnMoving)
+    if (columnDragCanceled != null) __obj.updateDynamic("columnDragCanceled")(js.Any.fromFunction2(columnDragCanceled))
+    if (columnDragEnd != null) __obj.updateDynamic("columnDragEnd")(js.Any.fromFunction2(columnDragEnd))
+    if (columnDragStart != null) __obj.updateDynamic("columnDragStart")(js.Any.fromFunction2(columnDragStart))
+    if (columnMoved != null) __obj.updateDynamic("columnMoved")(js.Any.fromFunction2(columnMoved))
+    if (columnMoving != null) __obj.updateDynamic("columnMoving")(js.Any.fromFunction2(columnMoving))
     if (columnMovingDialogContainment != null) __obj.updateDynamic("columnMovingDialogContainment")(columnMovingDialogContainment)
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
     if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
@@ -322,21 +323,21 @@ object IgGridColumnMoving {
     if (movingDialogCaptionButtonAsc != null) __obj.updateDynamic("movingDialogCaptionButtonAsc")(movingDialogCaptionButtonAsc)
     if (movingDialogCaptionButtonDesc != null) __obj.updateDynamic("movingDialogCaptionButtonDesc")(movingDialogCaptionButtonDesc)
     if (movingDialogCaptionText != null) __obj.updateDynamic("movingDialogCaptionText")(movingDialogCaptionText)
-    if (movingDialogClosed != null) __obj.updateDynamic("movingDialogClosed")(movingDialogClosed)
-    if (movingDialogClosing != null) __obj.updateDynamic("movingDialogClosing")(movingDialogClosing)
-    if (movingDialogContentsRendered != null) __obj.updateDynamic("movingDialogContentsRendered")(movingDialogContentsRendered)
-    if (movingDialogContentsRendering != null) __obj.updateDynamic("movingDialogContentsRendering")(movingDialogContentsRendering)
+    if (movingDialogClosed != null) __obj.updateDynamic("movingDialogClosed")(js.Any.fromFunction2(movingDialogClosed))
+    if (movingDialogClosing != null) __obj.updateDynamic("movingDialogClosing")(js.Any.fromFunction2(movingDialogClosing))
+    if (movingDialogContentsRendered != null) __obj.updateDynamic("movingDialogContentsRendered")(js.Any.fromFunction2(movingDialogContentsRendered))
+    if (movingDialogContentsRendering != null) __obj.updateDynamic("movingDialogContentsRendering")(js.Any.fromFunction2(movingDialogContentsRendering))
     if (movingDialogDisplayText != null) __obj.updateDynamic("movingDialogDisplayText")(movingDialogDisplayText)
-    if (movingDialogDragColumnMoved != null) __obj.updateDynamic("movingDialogDragColumnMoved")(movingDialogDragColumnMoved)
-    if (movingDialogDragColumnMoving != null) __obj.updateDynamic("movingDialogDragColumnMoving")(movingDialogDragColumnMoving)
-    if (movingDialogDragged != null) __obj.updateDynamic("movingDialogDragged")(movingDialogDragged)
+    if (movingDialogDragColumnMoved != null) __obj.updateDynamic("movingDialogDragColumnMoved")(js.Any.fromFunction2(movingDialogDragColumnMoved))
+    if (movingDialogDragColumnMoving != null) __obj.updateDynamic("movingDialogDragColumnMoving")(js.Any.fromFunction2(movingDialogDragColumnMoving))
+    if (movingDialogDragged != null) __obj.updateDynamic("movingDialogDragged")(js.Any.fromFunction2(movingDialogDragged))
     if (movingDialogDropTooltipMarkup != null) __obj.updateDynamic("movingDialogDropTooltipMarkup")(movingDialogDropTooltipMarkup)
     if (movingDialogDropTooltipText != null) __obj.updateDynamic("movingDialogDropTooltipText")(movingDialogDropTooltipText)
     if (movingDialogHeight != null) __obj.updateDynamic("movingDialogHeight")(movingDialogHeight.asInstanceOf[js.Any])
-    if (movingDialogMoveDownButtonPressed != null) __obj.updateDynamic("movingDialogMoveDownButtonPressed")(movingDialogMoveDownButtonPressed)
-    if (movingDialogMoveUpButtonPressed != null) __obj.updateDynamic("movingDialogMoveUpButtonPressed")(movingDialogMoveUpButtonPressed)
-    if (movingDialogOpened != null) __obj.updateDynamic("movingDialogOpened")(movingDialogOpened)
-    if (movingDialogOpening != null) __obj.updateDynamic("movingDialogOpening")(movingDialogOpening)
+    if (movingDialogMoveDownButtonPressed != null) __obj.updateDynamic("movingDialogMoveDownButtonPressed")(js.Any.fromFunction2(movingDialogMoveDownButtonPressed))
+    if (movingDialogMoveUpButtonPressed != null) __obj.updateDynamic("movingDialogMoveUpButtonPressed")(js.Any.fromFunction2(movingDialogMoveUpButtonPressed))
+    if (movingDialogOpened != null) __obj.updateDynamic("movingDialogOpened")(js.Any.fromFunction2(movingDialogOpened))
+    if (movingDialogOpening != null) __obj.updateDynamic("movingDialogOpening")(js.Any.fromFunction2(movingDialogOpening))
     if (movingDialogWidth != null) __obj.updateDynamic("movingDialogWidth")(movingDialogWidth.asInstanceOf[js.Any])
     if (movingScrollTolerance != null) __obj.updateDynamic("movingScrollTolerance")(movingScrollTolerance.asInstanceOf[js.Any])
     if (movingToolTipMove != null) __obj.updateDynamic("movingToolTipMove")(movingToolTipMove)

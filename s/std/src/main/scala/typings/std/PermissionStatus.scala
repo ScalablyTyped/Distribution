@@ -42,9 +42,5 @@ trait PermissionStatus extends EventTarget {
 
 @JSGlobal("PermissionStatus")
 @js.native
-class PermissionStatusCls () extends PermissionStatus
-
-@JSGlobal("PermissionStatus")
-@js.native
 object PermissionStatus extends Instantiable0[PermissionStatus]
 

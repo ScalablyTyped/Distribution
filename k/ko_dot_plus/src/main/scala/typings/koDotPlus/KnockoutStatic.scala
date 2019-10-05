@@ -1,12 +1,12 @@
 package typings.koDotPlus
 
 import typings.knockout.KnockoutObservable
-import typings.koDotPlus.KoPlusNs.Command
-import typings.koDotPlus.KoPlusNs.CommandOptions
-import typings.koDotPlus.KoPlusNs.Editable
-import typings.koDotPlus.KoPlusNs.EditableArray
-import typings.koDotPlus.KoPlusNs.EditableArrayStatic
-import typings.koDotPlus.KoPlusNs.EditableStatic
+import typings.koDotPlus.KoPlus.Command
+import typings.koDotPlus.KoPlus.CommandOptions
+import typings.koDotPlus.KoPlus.Editable
+import typings.koDotPlus.KoPlus.EditableArray
+import typings.koDotPlus.KoPlus.EditableArrayStatic
+import typings.koDotPlus.KoPlus.EditableStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,14 +22,14 @@ object ResolverFilterArgConfig {
     defaultValue: js.Any = null,
     description: String = null,
     filterTypeNameFallback: String = null,
-    query: ResolverFilterArgFn[TSource, TContext, TArgs] = null
+    query: (/* query */ js.Any, /* value */ js.Any, /* resolveParams */ ResolveParams[TSource, TContext, TArgs]) => js.Any = null
   ): ResolverFilterArgConfig[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (description != null) __obj.updateDynamic("description")(description)
     if (filterTypeNameFallback != null) __obj.updateDynamic("filterTypeNameFallback")(filterTypeNameFallback)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction3(query))
     __obj.asInstanceOf[ResolverFilterArgConfig[TSource, TContext, TArgs]]
   }
 }

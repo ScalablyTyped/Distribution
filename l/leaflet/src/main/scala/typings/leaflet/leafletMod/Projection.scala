@@ -12,3 +12,11 @@ trait Projection extends js.Object {
   def unproject(point: PointExpression): LatLng = js.native
 }
 
+@JSImport("leaflet", "Projection")
+@js.native
+object Projection extends js.Object {
+  val LonLat: Projection = js.native
+  val Mercator: Projection = js.native
+  val SphericalMercator: Projection = js.native
+}
+

@@ -15,3 +15,11 @@ class ProviderViewModel protected () extends js.Object {
   var tooltip: String = js.native
 }
 
+@JSImport("cesium", "ProviderViewModel")
+@js.native
+object ProviderViewModel extends js.Object {
+  type CreationFunction = js.Function0[
+    ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])
+  ]
+}
+

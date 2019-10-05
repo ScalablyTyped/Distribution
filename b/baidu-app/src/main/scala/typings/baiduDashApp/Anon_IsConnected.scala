@@ -1,13 +1,13 @@
 package typings.baiduDashApp
 
-import typings.baiduDashApp.swanNs.networkType
+import typings.baiduDashApp.swan.networkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_IsConnected extends js.Object {
   var isConnected: Boolean
-  var networkType: typings.baiduDashApp.swanNs.networkType
+  var networkType: typings.baiduDashApp.swan.networkType
 }
 
 object Anon_IsConnected {

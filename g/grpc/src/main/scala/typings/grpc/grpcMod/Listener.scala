@@ -13,14 +13,14 @@ trait Listener extends js.Object {
 object Listener {
   @scala.inline
   def apply(
-    onReceiveMessage: MessageListener = null,
-    onReceiveMetadata: MetadataListener = null,
-    onReceiveStatus: StatusListener = null
+    onReceiveMessage: (/* message */ js.Any, /* next */ js.Function) => Unit = null,
+    onReceiveMetadata: (/* metadata */ Metadata, /* next */ js.Function) => Unit = null,
+    onReceiveStatus: (/* status */ StatusObject, /* next */ js.Function) => Unit = null
   ): Listener = {
     val __obj = js.Dynamic.literal()
-    if (onReceiveMessage != null) __obj.updateDynamic("onReceiveMessage")(onReceiveMessage)
-    if (onReceiveMetadata != null) __obj.updateDynamic("onReceiveMetadata")(onReceiveMetadata)
-    if (onReceiveStatus != null) __obj.updateDynamic("onReceiveStatus")(onReceiveStatus)
+    if (onReceiveMessage != null) __obj.updateDynamic("onReceiveMessage")(js.Any.fromFunction2(onReceiveMessage))
+    if (onReceiveMetadata != null) __obj.updateDynamic("onReceiveMetadata")(js.Any.fromFunction2(onReceiveMetadata))
+    if (onReceiveStatus != null) __obj.updateDynamic("onReceiveStatus")(js.Any.fromFunction2(onReceiveStatus))
     __obj.asInstanceOf[Listener]
   }
 }

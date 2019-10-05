@@ -1,6 +1,8 @@
 package typings.reactDashUserDashTour.reactDashUserDashTourMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: TourProps) = this()
   def this(props: TourProps, context: js.Any) = this()
 }
+
+@JSImport("react-user-tour", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentClass[TourProps, ComponentState]]
 

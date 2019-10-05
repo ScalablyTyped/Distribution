@@ -2,6 +2,8 @@ package typings.sipDotJs.libApiUserDashAgentDashOptionsMod
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactory
+import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler
+import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libApiUserDashAgentDashDelegateMod.UserAgentDelegate
 import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
@@ -219,10 +221,10 @@ object UserAgentOptions {
     hackWssInTransport: js.UndefOr[Boolean] = js.undefined,
     logBuiltinEnabled: js.UndefOr[Boolean] = js.undefined,
     logConfiguration: js.UndefOr[Boolean] = js.undefined,
-    logConnector: LogConnector = null,
+    logConnector: (/* level */ LogLevel, /* category */ String, /* label */ js.UndefOr[String], /* content */ String) => Unit = null,
     logLevel: LogLevel = null,
     noAnswerTimeout: Int | Double = null,
-    sessionDescriptionHandlerFactory: SessionDescriptionHandlerFactory = null,
+    sessionDescriptionHandlerFactory: (/* session */ Session, /* options */ js.UndefOr[js.Object]) => SessionDescriptionHandler = null,
     sessionDescriptionHandlerFactoryOptions: js.Object = null,
     sipExtension100rel: SIPExtension = null,
     sipExtensionExtraSupported: js.Array[String] = null,
@@ -251,10 +253,10 @@ object UserAgentOptions {
     if (!js.isUndefined(hackWssInTransport)) __obj.updateDynamic("hackWssInTransport")(hackWssInTransport)
     if (!js.isUndefined(logBuiltinEnabled)) __obj.updateDynamic("logBuiltinEnabled")(logBuiltinEnabled)
     if (!js.isUndefined(logConfiguration)) __obj.updateDynamic("logConfiguration")(logConfiguration)
-    if (logConnector != null) __obj.updateDynamic("logConnector")(logConnector)
+    if (logConnector != null) __obj.updateDynamic("logConnector")(js.Any.fromFunction4(logConnector))
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
     if (noAnswerTimeout != null) __obj.updateDynamic("noAnswerTimeout")(noAnswerTimeout.asInstanceOf[js.Any])
-    if (sessionDescriptionHandlerFactory != null) __obj.updateDynamic("sessionDescriptionHandlerFactory")(sessionDescriptionHandlerFactory)
+    if (sessionDescriptionHandlerFactory != null) __obj.updateDynamic("sessionDescriptionHandlerFactory")(js.Any.fromFunction2(sessionDescriptionHandlerFactory))
     if (sessionDescriptionHandlerFactoryOptions != null) __obj.updateDynamic("sessionDescriptionHandlerFactoryOptions")(sessionDescriptionHandlerFactoryOptions)
     if (sipExtension100rel != null) __obj.updateDynamic("sipExtension100rel")(sipExtension100rel)
     if (sipExtensionExtraSupported != null) __obj.updateDynamic("sipExtensionExtraSupported")(sipExtensionExtraSupported)

@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesStrings.SWIPE_DOWN
 import typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesStrings.SWIPE_LEFT
 import typings.reactDashNativeDashSwipeDashGestures.reactDashNativeDashSwipeDashGesturesStrings.SWIPE_RIGHT
@@ -23,4 +24,8 @@ object SwipeDirections {
     __obj.asInstanceOf[SwipeDirections]
   }
 }
+
+@JSImport("react-native-swipe-gestures", "swipeDirections")
+@js.native
+object swipeDirections extends TopLevel[SwipeDirections]
 

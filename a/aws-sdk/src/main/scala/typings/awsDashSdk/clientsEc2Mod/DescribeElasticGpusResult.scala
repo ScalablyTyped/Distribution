@@ -23,12 +23,12 @@ object DescribeElasticGpusResult {
   @scala.inline
   def apply(
     ElasticGpuSet: ElasticGpuSet = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeElasticGpusResult = {
     val __obj = js.Dynamic.literal()
     if (ElasticGpuSet != null) __obj.updateDynamic("ElasticGpuSet")(ElasticGpuSet)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeElasticGpusResult]
   }

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,8 +92,8 @@ object IgGridAppendRowsOnDemand {
     loadTrigger: String = null,
     locale: IgGridAppendRowsOnDemandLocale = null,
     recordCountKey: String = null,
-    rowsRequested: RowsRequestedEvent = null,
-    rowsRequesting: RowsRequestingEvent = null,
+    rowsRequested: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Unit = null,
+    rowsRequesting: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Unit = null,
     `type`: String = null
   ): IgGridAppendRowsOnDemand = {
     val __obj = js.Dynamic.literal()
@@ -106,8 +107,8 @@ object IgGridAppendRowsOnDemand {
     if (loadTrigger != null) __obj.updateDynamic("loadTrigger")(loadTrigger)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey)
-    if (rowsRequested != null) __obj.updateDynamic("rowsRequested")(rowsRequested)
-    if (rowsRequesting != null) __obj.updateDynamic("rowsRequesting")(rowsRequesting)
+    if (rowsRequested != null) __obj.updateDynamic("rowsRequested")(js.Any.fromFunction2(rowsRequested))
+    if (rowsRequesting != null) __obj.updateDynamic("rowsRequesting")(js.Any.fromFunction2(rowsRequesting))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IgGridAppendRowsOnDemand]
   }

@@ -26,13 +26,13 @@ object INodeGroupProps {
     keyAccessor: (js.Any, Double) => String | Double,
     start: (js.Any, Double) => HashMap,
     enter: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap] = null,
-    interpolation: GetInterpolator = null,
+    interpolation: (/* begValue */ js.UndefOr[js.Any], /* endValue */ js.UndefOr[js.Any], /* attr */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => js.Function1[/* t */ Double, js.Any] = null,
     leave: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap] = null,
     update: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap] = null
   ): INodeGroupProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), data = data, keyAccessor = js.Any.fromFunction2(keyAccessor), start = js.Any.fromFunction2(start))
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(js.Any.fromFunction4(interpolation))
     if (leave != null) __obj.updateDynamic("leave")(js.Any.fromFunction2(leave))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[INodeGroupProps]

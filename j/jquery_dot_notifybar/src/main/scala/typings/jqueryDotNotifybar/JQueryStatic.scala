@@ -1,6 +1,6 @@
 package typings.jqueryDotNotifybar
 
-import typings.jqueryDotNotifybar.JQueryNotifyBarNs.NotifyBarOptions
+import typings.jqueryDotNotifybar.JQueryNotifyBar.NotifyBarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

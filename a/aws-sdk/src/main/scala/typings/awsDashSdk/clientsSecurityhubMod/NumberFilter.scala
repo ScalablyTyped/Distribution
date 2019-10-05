@@ -21,15 +21,11 @@ trait NumberFilter extends js.Object {
 
 object NumberFilter {
   @scala.inline
-  def apply(
-    Eq: js.UndefOr[Double] = js.undefined,
-    Gte: js.UndefOr[Double] = js.undefined,
-    Lte: js.UndefOr[Double] = js.undefined
-  ): NumberFilter = {
+  def apply(Eq: Int | scala.Double = null, Gte: Int | scala.Double = null, Lte: Int | scala.Double = null): NumberFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Eq)) __obj.updateDynamic("Eq")(Eq)
-    if (!js.isUndefined(Gte)) __obj.updateDynamic("Gte")(Gte)
-    if (!js.isUndefined(Lte)) __obj.updateDynamic("Lte")(Lte)
+    if (Eq != null) __obj.updateDynamic("Eq")(Eq.asInstanceOf[js.Any])
+    if (Gte != null) __obj.updateDynamic("Gte")(Gte.asInstanceOf[js.Any])
+    if (Lte != null) __obj.updateDynamic("Lte")(Lte.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFilter]
   }
 }

@@ -24,7 +24,7 @@ object PutRecordBatchOutput {
   def apply(
     FailedPutCount: NonNegativeIntegerObject,
     RequestResponses: PutRecordBatchResponseEntryList,
-    Encrypted: js.UndefOr[BooleanObject] = js.undefined
+    Encrypted: js.UndefOr[Boolean] = js.undefined
   ): PutRecordBatchOutput = {
     val __obj = js.Dynamic.literal(FailedPutCount = FailedPutCount, RequestResponses = RequestResponses)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)

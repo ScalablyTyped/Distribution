@@ -20,11 +20,11 @@ object Literal {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Literal,
     loc: Location,
-    metadata: Metadata,
-    value: js.Any
+    value: js.Any,
+    metadata: Metadata = null
   ): Literal = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], value = value)
-  
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, value = value)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Literal]
   }
 }

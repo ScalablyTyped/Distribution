@@ -1,21 +1,21 @@
 package typings.when
 
-import typings.when.WhenNs.Deferred
-import typings.when.WhenNs.Descriptor
-import typings.when.WhenNs.Promise
-import typings.when.WhenNs.Thenable
-import typings.when.WhenNs.underscoreNs.Fn0
-import typings.when.WhenNs.underscoreNs.Fn1
-import typings.when.WhenNs.underscoreNs.Fn2
-import typings.when.WhenNs.underscoreNs.Fn3
-import typings.when.WhenNs.underscoreNs.Fn4
-import typings.when.WhenNs.underscoreNs.Fn5
-import typings.when.WhenNs.underscoreNs.LiftedFn0
-import typings.when.WhenNs.underscoreNs.LiftedFn1
-import typings.when.WhenNs.underscoreNs.LiftedFn2
-import typings.when.WhenNs.underscoreNs.LiftedFn3
-import typings.when.WhenNs.underscoreNs.LiftedFn4
-import typings.when.WhenNs.underscoreNs.LiftedFn5
+import typings.when.When.Deferred
+import typings.when.When.Descriptor
+import typings.when.When.Promise
+import typings.when.When.Thenable
+import typings.when.When.`_`.Fn0
+import typings.when.When.`_`.Fn1
+import typings.when.When.`_`.Fn2
+import typings.when.When.`_`.Fn3
+import typings.when.When.`_`.Fn4
+import typings.when.When.`_`.Fn5
+import typings.when.When.`_`.LiftedFn0
+import typings.when.When.`_`.LiftedFn1
+import typings.when.When.`_`.LiftedFn2
+import typings.when.When.`_`.LiftedFn3
+import typings.when.When.`_`.LiftedFn4
+import typings.when.When.`_`.LiftedFn5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +24,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object whenMod extends js.Object {
   def apply(): Promise[Unit] = js.native
-  def apply[T](promiseOrValue: T | Promise[T] | Thenable[T]): Promise[T] = js.native
-  def apply[T, U](promiseOrValue: T | Promise[T] | Thenable[T], transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
+  def apply[T](promiseOrValue: T): Promise[T] = js.native
+  def apply[T](promiseOrValue: Promise[T]): Promise[T] = js.native
+  def apply[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
+  def apply[T, U](promiseOrValue: T, transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
+  def apply[T, U](promiseOrValue: Promise[T], transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
+  def apply[T, U](promiseOrValue: Thenable[T], transform: js.Function1[/* val */ T, U]): Promise[U] = js.native
   /**
     * Return a promise that will resolve only once all the supplied promisesOrValues
     * have resolved. The resolution value of the returned promise will be an array
@@ -221,9 +225,8 @@ object whenMod extends js.Object {
     seed: Promise[U]
   ): Promise[Unit] = js.native
   // Helper interfaces
-  @JSName("_")
   @js.native
-  object underscoreNs extends js.Object
+  object `_` extends js.Object
   
 }
 

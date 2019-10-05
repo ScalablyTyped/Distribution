@@ -1,7 +1,7 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.JQueryNs.EventLike
+import typings.cypress.JQuery.EventLike
 import typings.std.Document
 import typings.std.Element
 import typings.std.EventTarget
@@ -112,10 +112,10 @@ trait ChaiJQueryStatic extends js.Object {
   def Deferred[T](): JQueryDeferred[T] = js.native
   def Deferred[T](beforeStart: js.Function1[/* deferred */ JQueryDeferred[T], _]): JQueryDeferred[T] = js.native
   // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String, properties: T): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String, properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: EventLike */, TTarget /* <: EventTarget */](properties: T): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: EventLike */, TTarget /* <: EventTarget */](properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     *

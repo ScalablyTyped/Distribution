@@ -21,7 +21,7 @@ object Route {
   def apply(
     name: String,
     path: String,
-    canActivate: ActivationFnFactory = null,
+    canActivate: (/* router */ Router, /* dependencies */ js.UndefOr[Dependencies]) => ActivationFn = null,
     children: js.Array[Route] = null,
     decodeParams: /* pathParams */ Params => Params = null,
     defaultParams: Params = null,
@@ -29,7 +29,7 @@ object Route {
     forwardTo: String = null
   ): Route = {
     val __obj = js.Dynamic.literal(name = name, path = path)
-    if (canActivate != null) __obj.updateDynamic("canActivate")(canActivate)
+    if (canActivate != null) __obj.updateDynamic("canActivate")(js.Any.fromFunction2(canActivate))
     if (children != null) __obj.updateDynamic("children")(children)
     if (decodeParams != null) __obj.updateDynamic("decodeParams")(js.Any.fromFunction1(decodeParams))
     if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams)

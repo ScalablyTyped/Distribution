@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.CertificateDefinition because var conflicts: description, disabled, id, name. Inlined matches, key, cert, passphrase */ @JSImport("postman-collection", "Certificate")
 @js.native
 class Certificate protected () extends Property[CertificateDefinition] {

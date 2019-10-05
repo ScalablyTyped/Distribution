@@ -1,6 +1,11 @@
 package typings.graphqlDashCompose.libInterfaceTypeComposerMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
+import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.graphql.typeDefinitionMod.GraphQLAbstractType
+import typings.graphql.typeDefinitionMod.GraphQLObjectType
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
 import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeFieldConfigMap
 import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
@@ -24,13 +29,13 @@ object ComposeInterfaceTypeConfig {
     description: String = null,
     extensions: Extensions = null,
     fields: Thunk[ComposeFieldConfigMap[TSource, TContext]] = null,
-    resolveType: GraphQLTypeResolver[TSource, TContext, StringDictionary[_]] = null
+    resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null
   ): ComposeInterfaceTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
+    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
     __obj.asInstanceOf[ComposeInterfaceTypeConfig[TSource, TContext]]
   }
 }

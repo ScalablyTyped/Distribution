@@ -1,5 +1,6 @@
 package typings.paper.paperMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Project")
 @js.native
 class Project protected ()
-  extends typings.paper.paperNs.Project {
+  extends typings.paper.paper.Project {
   def this(element: String) = this()
   /**
     * Creates a Paper.js project containing one empty Layer, referenced by project.activeLayer.
@@ -16,4 +17,9 @@ class Project protected ()
     */
   def this(element: HTMLCanvasElement) = this()
 }
+
+@JSImport("paper", "project")
+@js.native
+object project
+  extends TopLevel[typings.paper.paper.Project]
 

@@ -1,7 +1,7 @@
 package typings.jasmineDashNode
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jasmineDashNode.jasmineNs.JasmineNode
+import typings.jasmineDashNode.jasmine.JasmineNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

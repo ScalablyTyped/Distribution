@@ -28,12 +28,12 @@ object DescribeSessionsRequest {
   def apply(
     State: SessionState,
     Filters: SessionFilterList = null,
-    MaxResults: js.UndefOr[SessionMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeSessionsRequest = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeSessionsRequest]
   }

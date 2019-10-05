@@ -1,6 +1,6 @@
 package typings.rest.mimeRegistryMod
 
-import typings.when.WhenNs.Promise
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

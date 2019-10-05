@@ -1,7 +1,7 @@
 package typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod
 
-import typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinaryCache
-import typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinaryOpts
+import typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod._MongoBinary.MongoBinaryCache
+import typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod._MongoBinary.MongoBinaryOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mongodb-memory-server", "MongoBinary")
 @js.native
 class MongoBinary ()
-  extends typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinary
+  extends typings.mongodbDashMemoryDashServer.mongodbDashMemoryDashServerMod._MongoBinary.MongoBinary
 
 /* static members */
 @JSImport("mongodb-memory-server", "MongoBinary")

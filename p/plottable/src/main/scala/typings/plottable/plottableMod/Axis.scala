@@ -1,5 +1,6 @@
 package typings.plottable.plottableMod
 
+import typings.plottable.buildSrcAxesAxisMod.AxisOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +17,7 @@ class Axis[D] protected ()
     * @param {Scale} scale
     * @param {AxisOrientation} orientation Orientation of this Axis.
     */
-  def this(
-    scale: typings.plottable.buildSrcScalesScaleMod.Scale[D, Double],
-    orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
-  ) = this()
+  def this(scale: typings.plottable.buildSrcScalesScaleMod.Scale[D, Double], orientation: AxisOrientation) = this()
 }
 
 /* static members */

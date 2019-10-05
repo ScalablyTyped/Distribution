@@ -14,10 +14,11 @@ import typings.request.requestMod.Headers
 import typings.request.requestMod.HttpArchiveRequest
 import typings.request.requestMod.Multipart
 import typings.request.requestMod.OAuthOptions
-import typings.request.requestMod.RequestCallback
 import typings.request.requestMod.RequestPart
+import typings.request.requestMod.Response
 import typings.request.requestNumbers.`4`
 import typings.request.requestNumbers.`6`
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +42,7 @@ object RequestRetryOptions {
     baseUrl: String = null,
     body: js.Any = null,
     ca: String | Buffer | (js.Array[Buffer | String]) = null,
-    callback: RequestCallback = null,
+    callback: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit = null,
     cert: Buffer = null,
     encoding: String = null,
     family: `4` | `6` = null,
@@ -81,7 +82,7 @@ object RequestRetryOptions {
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     removeRefererHeader: js.UndefOr[Boolean] = js.undefined,
     retryDelay: Int | Double = null,
-    retryStrategy: RetryStrategy = null,
+    retryStrategy: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean = null,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
     time: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
@@ -98,7 +99,7 @@ object RequestRetryOptions {
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (body != null) __obj.updateDynamic("body")(body)
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (cert != null) __obj.updateDynamic("cert")(cert)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
@@ -138,7 +139,7 @@ object RequestRetryOptions {
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
     if (!js.isUndefined(removeRefererHeader)) __obj.updateDynamic("removeRefererHeader")(removeRefererHeader)
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy)
+    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(js.Any.fromFunction3(retryStrategy))
     if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
     if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

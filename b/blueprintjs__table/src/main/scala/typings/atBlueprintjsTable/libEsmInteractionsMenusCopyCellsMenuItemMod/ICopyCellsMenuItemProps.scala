@@ -43,7 +43,6 @@ object ICopyCellsMenuItemProps {
   def apply(
     context: IMenuContext,
     getCellData: (Double, Double) => js.Any,
-    text_IMenuItemProps: ReactNode,
     active: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
@@ -59,13 +58,13 @@ object ICopyCellsMenuItemProps {
     onCopy: /* success */ Boolean => Unit = null,
     popoverProps: Partial[IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     target: String = null,
     text: ReactNode = null,
-    textClassName: String = null
+    textClassName: String = null,
+    text_IMenuItemProps: ReactNode = null
   ): ICopyCellsMenuItemProps = {
     val __obj = js.Dynamic.literal(context = context, getCellData = js.Any.fromFunction2(getCellData))
-    __obj.updateDynamic("text")(text_IMenuItemProps.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -85,6 +84,7 @@ object ICopyCellsMenuItemProps {
     if (target != null) __obj.updateDynamic("target")(target)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName)
+    if (text_IMenuItemProps != null) __obj.updateDynamic("text")(text_IMenuItemProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyCellsMenuItemProps]
   }
 }

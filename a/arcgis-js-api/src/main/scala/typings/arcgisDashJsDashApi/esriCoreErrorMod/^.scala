@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreErrorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ErrorConstructor
+import typings.arcgisDashJsDashApi.__esri.ErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

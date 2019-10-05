@@ -1,5 +1,7 @@
 package typings.expressDashRateDashLimit.expressDashRateDashLimitMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
@@ -18,7 +20,7 @@ class ^ protected () extends Instance {
 
 @JSImport("express-rate-limit", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
+object ^ extends TopLevel[Instantiable1[/* options */ Options, Instance]] {
   def apply(options: Options): Instance = js.native
 }
 

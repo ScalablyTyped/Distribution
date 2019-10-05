@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.wallpaperNs.WallpaperDetails
+import typings.chromeDashApps.chrome.wallpaper.WallpaperDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

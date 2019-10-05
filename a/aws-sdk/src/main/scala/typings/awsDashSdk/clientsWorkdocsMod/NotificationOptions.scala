@@ -17,7 +17,7 @@ trait NotificationOptions extends js.Object {
 
 object NotificationOptions {
   @scala.inline
-  def apply(EmailMessage: MessageType = null, SendEmail: js.UndefOr[BooleanType] = js.undefined): NotificationOptions = {
+  def apply(EmailMessage: MessageType = null, SendEmail: js.UndefOr[Boolean] = js.undefined): NotificationOptions = {
     val __obj = js.Dynamic.literal()
     if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage)
     if (!js.isUndefined(SendEmail)) __obj.updateDynamic("SendEmail")(SendEmail)

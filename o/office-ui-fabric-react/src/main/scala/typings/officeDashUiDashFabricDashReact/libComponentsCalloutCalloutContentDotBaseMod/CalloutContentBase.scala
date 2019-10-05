@@ -4,9 +4,9 @@ import typings.officeDashUiDashFabricDashReact.Anon_7
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ class CalloutContentBase protected ()
   def componentWillUnmount_MCalloutContentBase(): Unit = js.native
   def dismiss(): Unit = js.native
   def dismiss(ev: KeyboardEvent[HTMLElement]): Unit = js.native
-  def dismiss(ev: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def dismiss(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def dismiss(ev: Event): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MCalloutContentBase(newProps: ICalloutProps, newState: ICalloutState): Boolean = js.native

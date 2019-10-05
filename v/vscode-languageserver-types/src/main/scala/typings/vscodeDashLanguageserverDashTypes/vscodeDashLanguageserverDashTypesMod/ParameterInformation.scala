@@ -20,12 +20,18 @@ trait ParameterInformation extends js.Object {
   var label: String | (js.Tuple2[Double, Double])
 }
 
-object ParameterInformation {
-  @scala.inline
-  def apply(label: String | (js.Tuple2[Double, Double]), documentation: String | MarkupContent = null): ParameterInformation = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ParameterInformation]
-  }
+@JSImport("vscode-languageserver-types", "ParameterInformation")
+@js.native
+object ParameterInformation extends js.Object {
+  /**
+    * Creates a new parameter information literal.
+    *
+    * @param label A label string.
+    * @param documentation A doc string.
+    */
+  def create(label: String): ParameterInformation = js.native
+  def create(label: String, documentation: String): ParameterInformation = js.native
+  def create(label: js.Tuple2[Double, Double]): ParameterInformation = js.native
+  def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = js.native
 }
 

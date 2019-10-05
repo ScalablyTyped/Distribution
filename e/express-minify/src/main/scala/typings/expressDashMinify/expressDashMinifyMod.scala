@@ -1,7 +1,7 @@
 package typings.expressDashMinify
 
 import typings.express.expressMod.RequestHandler
-import typings.expressDashMinify.ExpressMinifyInterfacesNs.ExpressMinifyOptions
+import typings.expressDashMinify.ExpressMinifyInterfaces.ExpressMinifyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

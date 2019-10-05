@@ -15,7 +15,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithRespons
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent

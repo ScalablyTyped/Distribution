@@ -1,6 +1,6 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.cardsNs.ICardSourceCreationOptionsExtended
+import typings.stripe.stripeMod.cards.ICardSourceCreationOptionsExtended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

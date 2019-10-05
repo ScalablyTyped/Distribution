@@ -35,3 +35,10 @@ trait Observable extends js.Object {
   def trigger(event: String, args: js.Any*): this.type = js.native
 }
 
+@JSImport("riot", "observable")
+@js.native
+object observable extends js.Object {
+  def apply(): Observable = js.native
+  def apply(el: js.Any): Observable = js.native
+}
+

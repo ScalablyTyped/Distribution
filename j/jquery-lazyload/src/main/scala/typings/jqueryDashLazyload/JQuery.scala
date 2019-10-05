@@ -1,6 +1,6 @@
 package typings.jqueryDashLazyload
 
-import typings.jqueryDashLazyload.JQueryLazyLoadNs.Options
+import typings.jqueryDashLazyload.JQueryLazyLoad.Options
 import typings.jqueryDashLazyload.jqueryDashLazyloadStrings.load
 import scala.scalajs.js
 import scala.scalajs.js.`|`

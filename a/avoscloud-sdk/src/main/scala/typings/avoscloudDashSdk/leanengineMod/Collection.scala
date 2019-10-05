@@ -1,6 +1,6 @@
 package typings.avoscloudDashSdk.leanengineMod
 
-import typings.avoscloudDashSdk.avoscloudDashSdkMod.CollectionNs.Options
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.Collection.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

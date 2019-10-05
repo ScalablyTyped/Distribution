@@ -30,7 +30,7 @@ trait DeleteMarkerEntry extends js.Object {
 object DeleteMarkerEntry {
   @scala.inline
   def apply(
-    IsLatest: js.UndefOr[IsLatest] = js.undefined,
+    IsLatest: js.UndefOr[Boolean] = js.undefined,
     Key: ObjectKey = null,
     LastModified: LastModified = null,
     Owner: Owner = null,

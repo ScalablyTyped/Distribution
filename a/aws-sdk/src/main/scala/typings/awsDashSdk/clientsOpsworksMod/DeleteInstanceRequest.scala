@@ -23,8 +23,8 @@ object DeleteInstanceRequest {
   @scala.inline
   def apply(
     InstanceId: String,
-    DeleteElasticIp: js.UndefOr[Boolean] = js.undefined,
-    DeleteVolumes: js.UndefOr[Boolean] = js.undefined
+    DeleteElasticIp: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteVolumes: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
     if (!js.isUndefined(DeleteElasticIp)) __obj.updateDynamic("DeleteElasticIp")(DeleteElasticIp)

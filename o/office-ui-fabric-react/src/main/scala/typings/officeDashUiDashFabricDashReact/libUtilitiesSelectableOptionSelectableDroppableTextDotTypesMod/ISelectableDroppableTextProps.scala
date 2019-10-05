@@ -5,6 +5,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotTypesMod.IPanelProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableOptionDotTypesMod.ISelectableOption
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -94,10 +95,20 @@ object ISelectableDroppableTextProps {
     errorMessage: String = null,
     id: String = null,
     label: String = null,
-    onRenderContainer: IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]] = null,
-    onRenderItem: IRenderFunction[ISelectableOption] = null,
-    onRenderList: IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]] = null,
-    onRenderOption: IRenderFunction[ISelectableOption] = null,
+    onRenderContainer: (/* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], /* defaultRender */ js.UndefOr[
+      js.Function1[
+        /* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], 
+        Element | Null
+      ]
+    ]) => Element | Null = null,
+    onRenderItem: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null = null,
+    onRenderList: (/* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], /* defaultRender */ js.UndefOr[
+      js.Function1[
+        /* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], 
+        Element | Null
+      ]
+    ]) => Element | Null = null,
+    onRenderOption: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null = null,
     openOnKeyboardFocus: js.UndefOr[Boolean] = js.undefined,
     options: js.Any = null,
     panelProps: IPanelProps = null,
@@ -116,10 +127,10 @@ object ISelectableDroppableTextProps {
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (onRenderContainer != null) __obj.updateDynamic("onRenderContainer")(onRenderContainer)
-    if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(onRenderItem)
-    if (onRenderList != null) __obj.updateDynamic("onRenderList")(onRenderList)
-    if (onRenderOption != null) __obj.updateDynamic("onRenderOption")(onRenderOption)
+    if (onRenderContainer != null) __obj.updateDynamic("onRenderContainer")(js.Any.fromFunction2(onRenderContainer))
+    if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction2(onRenderItem))
+    if (onRenderList != null) __obj.updateDynamic("onRenderList")(js.Any.fromFunction2(onRenderList))
+    if (onRenderOption != null) __obj.updateDynamic("onRenderOption")(js.Any.fromFunction2(onRenderOption))
     if (!js.isUndefined(openOnKeyboardFocus)) __obj.updateDynamic("openOnKeyboardFocus")(openOnKeyboardFocus)
     if (options != null) __obj.updateDynamic("options")(options)
     if (panelProps != null) __obj.updateDynamic("panelProps")(panelProps)

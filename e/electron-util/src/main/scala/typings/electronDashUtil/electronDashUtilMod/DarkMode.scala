@@ -1,5 +1,6 @@
 package typings.electronDashUtil.electronDashUtilMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,4 +26,8 @@ object DarkMode {
     __obj.asInstanceOf[DarkMode]
   }
 }
+
+@JSImport("electron-util", "darkMode")
+@js.native
+object darkMode extends TopLevel[DarkMode]
 

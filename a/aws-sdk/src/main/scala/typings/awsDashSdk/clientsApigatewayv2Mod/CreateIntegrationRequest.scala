@@ -136,7 +136,7 @@ object CreateIntegrationRequest {
     RequestParameters: IntegrationParameters = null,
     RequestTemplates: TemplateMap = null,
     TemplateSelectionExpression: SelectionExpression = null,
-    TimeoutInMillis: js.UndefOr[IntegerWithLengthBetween50And29000] = js.undefined
+    TimeoutInMillis: Int | Double = null
   ): CreateIntegrationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId, IntegrationType = IntegrationType.asInstanceOf[js.Any])
     if (ConnectionId != null) __obj.updateDynamic("ConnectionId")(ConnectionId)
@@ -150,7 +150,7 @@ object CreateIntegrationRequest {
     if (RequestParameters != null) __obj.updateDynamic("RequestParameters")(RequestParameters)
     if (RequestTemplates != null) __obj.updateDynamic("RequestTemplates")(RequestTemplates)
     if (TemplateSelectionExpression != null) __obj.updateDynamic("TemplateSelectionExpression")(TemplateSelectionExpression)
-    if (!js.isUndefined(TimeoutInMillis)) __obj.updateDynamic("TimeoutInMillis")(TimeoutInMillis)
+    if (TimeoutInMillis != null) __obj.updateDynamic("TimeoutInMillis")(TimeoutInMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntegrationRequest]
   }
 }

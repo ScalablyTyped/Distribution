@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
   * The type of the answers.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.inquirer.inquirerMod.ChoiceBase because Already inherited
+- typings.inquirer.inquirerMod.ChoiceOptions because Already inherited
 - typings.inquirer.inquirerMod.ExpandChoiceOptions because var conflicts: extra, name, short, `type`, value. Inlined key */ trait Choice[T /* <: Answers */] extends CheckboxChoiceOptions[T] {
   /**
     * @inheritdoc

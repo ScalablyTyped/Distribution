@@ -80,7 +80,7 @@ object LoadBalancer {
     dnsName: NonEmptyString = null,
     healthCheckPath: NonEmptyString = null,
     instanceHealthSummary: InstanceHealthSummaryList = null,
-    instancePort: js.UndefOr[integer] = js.undefined,
+    instancePort: Int | Double = null,
     location: ResourceLocation = null,
     name: ResourceName = null,
     protocol: LoadBalancerProtocol = null,
@@ -98,7 +98,7 @@ object LoadBalancer {
     if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName)
     if (healthCheckPath != null) __obj.updateDynamic("healthCheckPath")(healthCheckPath)
     if (instanceHealthSummary != null) __obj.updateDynamic("instanceHealthSummary")(instanceHealthSummary)
-    if (!js.isUndefined(instancePort)) __obj.updateDynamic("instancePort")(instancePort)
+    if (instancePort != null) __obj.updateDynamic("instancePort")(instancePort.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])

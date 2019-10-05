@@ -1,9 +1,11 @@
 package typings.atJupyterlabUiDashComponents.libIconInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJupyterlabUiDashComponents.Anon_ContainerHTMLElement
 import typings.atJupyterlabUiDashComponents.Anon_Div
-import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IconNs.IModel
-import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IconNs.INodeOptions
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.Icon.IModel
+import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.Icon.INodeOptions
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -30,17 +32,7 @@ trait IIconRegistry extends js.Object {
   def iconReact(props: INodeOptions with Anon_Div): ReactElement
 }
 
-object IIconRegistry {
-  @scala.inline
-  def apply(
-    addIcon: /* repeated */ IModel => Unit,
-    contains: String => Boolean,
-    icon: INodeOptions with Anon_ContainerHTMLElement => HTMLElement | Null,
-    iconReact: INodeOptions with Anon_Div => ReactElement
-  ): IIconRegistry = {
-    val __obj = js.Dynamic.literal(addIcon = js.Any.fromFunction1(addIcon), contains = js.Any.fromFunction1(contains), icon = js.Any.fromFunction1(icon), iconReact = js.Any.fromFunction1(iconReact))
-  
-    __obj.asInstanceOf[IIconRegistry]
-  }
-}
+@JSImport("@jupyterlab/ui-components/lib/icon/interfaces", "IIconRegistry")
+@js.native
+object IIconRegistry extends TopLevel[Token[IIconRegistry]]
 

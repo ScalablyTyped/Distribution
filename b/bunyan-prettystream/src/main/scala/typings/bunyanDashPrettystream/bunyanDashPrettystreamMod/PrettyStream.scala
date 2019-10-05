@@ -1,7 +1,7 @@
 package typings.bunyanDashPrettystream.bunyanDashPrettystreamMod
 
 import typings.bunyanDashPrettystream.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.foundation
 
-import typings.foundation.FoundationNs.RevealCSSOptions
+import typings.foundation.Foundation.RevealCSSOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

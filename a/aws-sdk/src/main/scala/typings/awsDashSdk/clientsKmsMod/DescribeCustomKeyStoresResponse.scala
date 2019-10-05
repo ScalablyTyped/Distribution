@@ -24,7 +24,7 @@ object DescribeCustomKeyStoresResponse {
   def apply(
     CustomKeyStores: CustomKeyStoresList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
+    Truncated: js.UndefOr[Boolean] = js.undefined
   ): DescribeCustomKeyStoresResponse = {
     val __obj = js.Dynamic.literal()
     if (CustomKeyStores != null) __obj.updateDynamic("CustomKeyStores")(CustomKeyStores)

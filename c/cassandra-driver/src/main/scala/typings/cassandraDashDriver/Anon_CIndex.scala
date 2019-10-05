@@ -1,6 +1,6 @@
 package typings.cassandraDashDriver
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadataNs.ColumnInfo
+import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.ColumnInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

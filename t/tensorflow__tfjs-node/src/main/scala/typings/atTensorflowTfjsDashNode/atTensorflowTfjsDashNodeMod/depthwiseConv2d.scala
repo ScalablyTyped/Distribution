@@ -5,6 +5,9 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCHW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NHWC
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -42,7 +45,7 @@ object depthwiseConv2d extends js.Object {
     pad: valid | same | Double,
     dataFormat: NHWC | NCHW,
     dilations: (js.Tuple2[Double, Double]) | Double,
-    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
+    dimRoundingMode: floor | round | ceil
   ): T = js.native
 }
 

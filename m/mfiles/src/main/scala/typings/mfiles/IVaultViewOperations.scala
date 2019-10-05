@@ -1,10 +1,10 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInObjectType
-import typings.mfiles.MFilesNs.MFBuiltInView
-import typings.mfiles.MFilesNs.MFFolderUIStateLocationType
-import typings.mfiles.MFilesNs.MFSearchFlags
-import typings.mfiles.MFilesNs.MFViewCategory
+import typings.mfiles.MFiles.MFBuiltInObjectType
+import typings.mfiles.MFiles.MFBuiltInView
+import typings.mfiles.MFiles.MFFolderUIStateLocationType
+import typings.mfiles.MFiles.MFSearchFlags
+import typings.mfiles.MFiles.MFViewCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

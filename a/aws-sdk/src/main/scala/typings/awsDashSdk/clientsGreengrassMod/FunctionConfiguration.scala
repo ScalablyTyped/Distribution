@@ -42,18 +42,18 @@ object FunctionConfiguration {
     Environment: FunctionConfigurationEnvironment = null,
     ExecArgs: __string = null,
     Executable: __string = null,
-    MemorySize: js.UndefOr[__integer] = js.undefined,
-    Pinned: js.UndefOr[__boolean] = js.undefined,
-    Timeout: js.UndefOr[__integer] = js.undefined
+    MemorySize: Int | Double = null,
+    Pinned: js.UndefOr[Boolean] = js.undefined,
+    Timeout: Int | Double = null
   ): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
     if (ExecArgs != null) __obj.updateDynamic("ExecArgs")(ExecArgs)
     if (Executable != null) __obj.updateDynamic("Executable")(Executable)
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize)
+    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
     if (!js.isUndefined(Pinned)) __obj.updateDynamic("Pinned")(Pinned)
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionConfiguration]
   }
 }

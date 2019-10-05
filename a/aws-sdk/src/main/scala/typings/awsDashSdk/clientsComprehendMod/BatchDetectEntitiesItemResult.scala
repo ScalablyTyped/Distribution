@@ -17,10 +17,10 @@ trait BatchDetectEntitiesItemResult extends js.Object {
 
 object BatchDetectEntitiesItemResult {
   @scala.inline
-  def apply(Entities: ListOfEntities = null, Index: js.UndefOr[Integer] = js.undefined): BatchDetectEntitiesItemResult = {
+  def apply(Entities: ListOfEntities = null, Index: Int | scala.Double = null): BatchDetectEntitiesItemResult = {
     val __obj = js.Dynamic.literal()
     if (Entities != null) __obj.updateDynamic("Entities")(Entities)
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index)
+    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectEntitiesItemResult]
   }
 }

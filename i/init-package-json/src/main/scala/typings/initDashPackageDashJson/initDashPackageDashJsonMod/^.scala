@@ -11,9 +11,14 @@ object ^ extends js.Object {
   def apply(
     dir: String,
     input: String,
-    config: Config | js.Object,
+    config: js.Object,
     cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
   ): Unit = js.native
-  def yes(conf: Config): Boolean = js.native
+  def apply(
+    dir: String,
+    input: String,
+    config: Config,
+    cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
+  ): Unit = js.native
 }
 

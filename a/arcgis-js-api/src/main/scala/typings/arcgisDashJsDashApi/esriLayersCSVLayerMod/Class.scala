@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersCSVLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CSVLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CSVLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.CSVLayer
+import typings.arcgisDashJsDashApi.__esri.CSVLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

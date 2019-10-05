@@ -1,13 +1,12 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.apiMod.API
+import org.scalablytyped.runtime.TopLevel
+import typings.atPulumiCloud.apiMod.APIConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "HttpEndpoint")
 @js.native
-class HttpEndpointCls protected () extends API {
-  def this(apiName: String) = this()
-}
+object HttpEndpoint extends TopLevel[APIConstructor]
 

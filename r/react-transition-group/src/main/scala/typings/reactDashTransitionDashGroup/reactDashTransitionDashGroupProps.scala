@@ -15,6 +15,6 @@ trait reactDashTransitionDashGroupProps {
   @scala.inline
   def TransitionProps: typings.reactDashTransitionDashGroup.transitionMod.TransitionProps.type = typings.reactDashTransitionDashGroup.transitionMod.TransitionProps
   type TransitionProps = typings.reactDashTransitionDashGroup.transitionMod.TransitionProps
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, V /* <: ReactType[_] */] = typings.reactDashTransitionDashGroup.transitionGroupMod.TransitionGroupProps[T, V]
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any */, V /* <: ReactType[_] */] = typings.reactDashTransitionDashGroup.transitionGroupMod.TransitionGroupProps[T, V]
 }
 

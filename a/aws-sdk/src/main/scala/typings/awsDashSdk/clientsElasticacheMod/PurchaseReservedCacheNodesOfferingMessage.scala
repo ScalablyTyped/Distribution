@@ -23,11 +23,11 @@ object PurchaseReservedCacheNodesOfferingMessage {
   @scala.inline
   def apply(
     ReservedCacheNodesOfferingId: String,
-    CacheNodeCount: js.UndefOr[IntegerOptional] = js.undefined,
+    CacheNodeCount: Int | scala.Double = null,
     ReservedCacheNodeId: String = null
   ): PurchaseReservedCacheNodesOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedCacheNodesOfferingId = ReservedCacheNodesOfferingId)
-    if (!js.isUndefined(CacheNodeCount)) __obj.updateDynamic("CacheNodeCount")(CacheNodeCount)
+    if (CacheNodeCount != null) __obj.updateDynamic("CacheNodeCount")(CacheNodeCount.asInstanceOf[js.Any])
     if (ReservedCacheNodeId != null) __obj.updateDynamic("ReservedCacheNodeId")(ReservedCacheNodeId)
     __obj.asInstanceOf[PurchaseReservedCacheNodesOfferingMessage]
   }

@@ -24,12 +24,12 @@ object FlowTemplateDescription {
   def apply(
     definition: DefinitionDocument = null,
     summary: FlowTemplateSummary = null,
-    validatedNamespaceVersion: js.UndefOr[Version] = js.undefined
+    validatedNamespaceVersion: Int | Double = null
   ): FlowTemplateDescription = {
     val __obj = js.Dynamic.literal()
     if (definition != null) __obj.updateDynamic("definition")(definition)
     if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (!js.isUndefined(validatedNamespaceVersion)) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion)
+    if (validatedNamespaceVersion != null) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowTemplateDescription]
   }
 }

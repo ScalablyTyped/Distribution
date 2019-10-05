@@ -1,6 +1,6 @@
 package typings.atOktaOktaDashVue
 
-import typings.atOktaOktaDashVue.atOktaOktaDashVueMod.OktaVuePluginNs.OktaOpenIDOptions
+import typings.atOktaOktaDashVue.atOktaOktaDashVueMod.OktaVuePlugin.OktaOpenIDOptions
 import typings.vue.typesVueMod.Vue
 import typings.vueDashRouter.typesRouterMod.NavigationGuard
 import scala.scalajs.js

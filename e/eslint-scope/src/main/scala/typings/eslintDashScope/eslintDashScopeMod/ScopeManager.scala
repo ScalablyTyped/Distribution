@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("eslint-scope", "ScopeManager")
 @js.native
 class ScopeManager ()
-  extends typings.eslint.eslintMod.ScopeNs.ScopeManager {
+  extends typings.eslint.eslintMod.Scope.ScopeManager {
   @JSName("globalScope")
   var globalScope_ScopeManager: Scope = js.native
   @JSName("scopes")

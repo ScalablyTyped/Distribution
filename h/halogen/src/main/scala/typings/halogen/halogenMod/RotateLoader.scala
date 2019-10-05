@@ -1,6 +1,7 @@
 package typings.halogen.halogenMod
 
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +9,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("halogen", "RotateLoader")
 @js.native
-class RotateLoaderCls protected ()
-  extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
-  def this(props: MarginLoaderProps[String]) = this()
-  def this(props: MarginLoaderProps[String], context: js.Any) = this()
-}
+object RotateLoader extends TopLevel[ComponentClass[MarginLoaderProps[String], ComponentState]]
 

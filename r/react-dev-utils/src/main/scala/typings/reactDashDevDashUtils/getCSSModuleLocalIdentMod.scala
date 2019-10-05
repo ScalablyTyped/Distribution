@@ -1,6 +1,6 @@
 package typings.reactDashDevDashUtils
 
-import typings.webpack.webpackMod.loaderNs.LoaderContext
+import typings.webpack.webpackMod.loader.LoaderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPolygonMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Polygon
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonProperties
+import typings.arcgisDashJsDashApi.__esri.Polygon
+import typings.arcgisDashJsDashApi.__esri.PolygonProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -52,24 +52,24 @@ object AnimeInstance {
     reversed: Boolean,
     seek: Double => Unit,
     timelineOffset: Double,
-    begin: AnimeCallbackFunction = null,
-    change: AnimeCallbackFunction = null,
-    changeBegin: AnimeCallbackFunction = null,
-    changeComplete: AnimeCallbackFunction = null,
-    complete: AnimeCallbackFunction = null,
-    loopBegin: AnimeCallbackFunction = null,
-    loopComplete: AnimeCallbackFunction = null,
-    update: AnimeCallbackFunction = null
+    begin: /* anim */ AnimeInstance => Unit = null,
+    change: /* anim */ AnimeInstance => Unit = null,
+    changeBegin: /* anim */ AnimeInstance => Unit = null,
+    changeComplete: /* anim */ AnimeInstance => Unit = null,
+    complete: /* anim */ AnimeInstance => Unit = null,
+    loopBegin: /* anim */ AnimeInstance => Unit = null,
+    loopComplete: /* anim */ AnimeInstance => Unit = null,
+    update: /* anim */ AnimeInstance => Unit = null
   ): AnimeInstance = {
     val __obj = js.Dynamic.literal(animatables = animatables, animations = animations, autoplay = autoplay, began = began, completed = completed, currentTime = currentTime, delay = delay, direction = direction, duration = duration, finished = finished, loop = loop.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), paused = paused, play = js.Any.fromFunction0(play), progress = progress, remaining = remaining, restart = js.Any.fromFunction0(restart), reverse = js.Any.fromFunction0(reverse), reversed = reversed, seek = js.Any.fromFunction1(seek), timelineOffset = timelineOffset)
-    if (begin != null) __obj.updateDynamic("begin")(begin)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (changeBegin != null) __obj.updateDynamic("changeBegin")(changeBegin)
-    if (changeComplete != null) __obj.updateDynamic("changeComplete")(changeComplete)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (loopBegin != null) __obj.updateDynamic("loopBegin")(loopBegin)
-    if (loopComplete != null) __obj.updateDynamic("loopComplete")(loopComplete)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
+    if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))
+    if (changeComplete != null) __obj.updateDynamic("changeComplete")(js.Any.fromFunction1(changeComplete))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
+    if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnimeInstance]
   }
 }

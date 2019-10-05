@@ -20,3 +20,10 @@ trait Decoder extends EventEmitter {
   def write(chunk: js.Any): Unit = js.native
 }
 
+@JSImport("msgpack-lite", "Decoder")
+@js.native
+object Decoder extends js.Object {
+  def apply(): Decoder = js.native
+  def apply(options: DecoderOptions): Decoder = js.native
+}
+

@@ -1,15 +1,15 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AppNs.iOSNs.BackgroundService
-import typings.titanium.TitaniumNs.AppNs.iOSNs.LocalNotification
-import typings.titanium.TitaniumNs.AppNs.iOSNs.SearchQuery
-import typings.titanium.TitaniumNs.AppNs.iOSNs.SearchableIndex
-import typings.titanium.TitaniumNs.AppNs.iOSNs.SearchableItem
-import typings.titanium.TitaniumNs.AppNs.iOSNs.SearchableItemAttributeSet
-import typings.titanium.TitaniumNs.AppNs.iOSNs.UserActivity
-import typings.titanium.TitaniumNs.AppNs.iOSNs.UserDefaults
-import typings.titanium.TitaniumNs.AppNs.iOSNs.UserNotificationAction
-import typings.titanium.TitaniumNs.AppNs.iOSNs.UserNotificationCategory
+import typings.titanium.Titanium.App.iOS.BackgroundService
+import typings.titanium.Titanium.App.iOS.LocalNotification
+import typings.titanium.Titanium.App.iOS.SearchQuery
+import typings.titanium.Titanium.App.iOS.SearchableIndex
+import typings.titanium.Titanium.App.iOS.SearchableItem
+import typings.titanium.Titanium.App.iOS.SearchableItemAttributeSet
+import typings.titanium.Titanium.App.iOS.UserActivity
+import typings.titanium.Titanium.App.iOS.UserDefaults
+import typings.titanium.Titanium.App.iOS.UserNotificationAction
+import typings.titanium.Titanium.App.iOS.UserNotificationCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -285,7 +285,7 @@ trait TypeofiOSAddEventListener extends js.Object {
   			 * The top-level App iOS Notification Center module. It is used to control scheduled notifications
   			 * and receive details about the system-wide notification settings.
   			 */
-  val UserNotificationCenterNs: TypeofUserNotificationCenter = js.native
+  val UserNotificationCenter: TypeofUserNotificationCenter = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */

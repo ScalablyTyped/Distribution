@@ -94,7 +94,7 @@ object SendCommandRequest {
     Parameters: Parameters = null,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
-    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
+    TimeoutSeconds: Int | Double = null
   ): SendCommandRequest = {
     val __obj = js.Dynamic.literal(DocumentName = DocumentName)
     if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig)
@@ -112,7 +112,7 @@ object SendCommandRequest {
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn)
     if (Targets != null) __obj.updateDynamic("Targets")(Targets)
-    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds)
+    if (TimeoutSeconds != null) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendCommandRequest]
   }
 }

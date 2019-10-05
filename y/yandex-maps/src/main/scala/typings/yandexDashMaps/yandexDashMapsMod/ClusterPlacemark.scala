@@ -1,12 +1,16 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsMod.collectionNs.Item
-import typings.yandexDashMaps.yandexDashMapsMod.dataNs.Manager
+import typings.yandexDashMaps.yandexDashMapsMod.collection.Item
+import typings.yandexDashMaps.yandexDashMapsMod.data.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.IParentOnMap because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.IChild because Already inherited
 - typings.yandexDashMaps.yandexDashMapsMod.IGeoObject because var conflicts: events, options. Inlined geometry, properties, state, getOverlay, getOverlaySync */ @JSImport("yandex-maps", "ClusterPlacemark")
 @js.native
 class ClusterPlacemark protected () extends Item {

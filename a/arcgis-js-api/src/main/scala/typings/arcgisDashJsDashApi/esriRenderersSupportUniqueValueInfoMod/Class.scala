@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSupportUniqueValueInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValueInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValueInfoProperties
+import typings.arcgisDashJsDashApi.__esri.UniqueValueInfo
+import typings.arcgisDashJsDashApi.__esri.UniqueValueInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

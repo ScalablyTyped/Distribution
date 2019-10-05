@@ -14,13 +14,14 @@ trait PopoverPropsType extends js.Object {
 object PopoverPropsType {
   @scala.inline
   def apply(
-    overlay: ReactNode,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit = null
+    onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit = null,
+    overlay: ReactNode = null
   ): PopoverPropsType = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverPropsType]
   }
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "testingbot-api"
-version := "1.0-dt-20180214Z-5ce970"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20180214Z-56e228"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

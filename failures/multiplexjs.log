@@ -1,8 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs),TsIdentLibrarySimple(multiplexjs)),TsIdentModule(None,List(multiplexjs))) [id => multiplexjs, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => typescript] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Array))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(String))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(@@iterator) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Iterable))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Iterator))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerator))] 
@@ -261,19 +259,22 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(is) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(MultiplexStatic))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(range) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(MultiplexStatic))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(repeat) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(MultiplexStatic))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Array))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(String))] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Args) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerable) / TsMemberFunction(ofType) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building multiplexjs... [id => multiplexjs, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/multiplexjs/multiplexNs/Lookup.scala:16:7
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/multiplexjs/multiplex/Lookup.scala:16:7
 [E]      name clash between defined and inherited member:
-[E]      def contains(value: typings.multiplexjs.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and
+[E]      def contains(value: typings.multiplexjs.multiplex.Grouping[TKey,TElement]): Boolean in trait Enumerable and
 [E]      def contains(key: TKey): Boolean at line 16
 [E]      have same type after erasure: (value: Object)Boolean
 [E]      L16:   def contains(key: TKey): Boolean = js.native
 [E]                 ^
-[E] src/main/scala/typings/multiplexjs/multiplexNs/Lookup.scala: L16 [E1]
+[E] src/main/scala/typings/multiplexjs/multiplex/Lookup.scala: L16 [E1]
 [E] Failed to compile 'multiplexjs'
  [id => multiplexjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => publish] 

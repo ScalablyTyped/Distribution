@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsZoomMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Zoom
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ZoomProperties
+import typings.arcgisDashJsDashApi.__esri.Zoom
+import typings.arcgisDashJsDashApi.__esri.ZoomProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

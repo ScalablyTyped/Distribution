@@ -14,17 +14,6 @@ trait SVGUnitTypes extends js.Object {
 
 @JSGlobal("SVGUnitTypes")
 @js.native
-class SVGUnitTypesCls () extends SVGUnitTypes {
-  /* CompleteClass */
-  override val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double = js.native
-  /* CompleteClass */
-  override val SVG_UNIT_TYPE_UNKNOWN: Double = js.native
-  /* CompleteClass */
-  override val SVG_UNIT_TYPE_USERSPACEONUSE: Double = js.native
-}
-
-@JSGlobal("SVGUnitTypes")
-@js.native
 object SVGUnitTypes extends Instantiable0[SVGUnitTypes] {
   val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double = js.native
   val SVG_UNIT_TYPE_UNKNOWN: Double = js.native

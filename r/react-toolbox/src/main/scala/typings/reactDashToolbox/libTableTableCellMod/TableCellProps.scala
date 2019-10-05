@@ -2,7 +2,7 @@ package typings.reactDashToolbox.libTableTableCellMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.asc
 import typings.reactDashToolbox.reactDashToolboxStrings.desc
 import typings.reactDashToolbox.reactDashToolboxStrings.td

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelUpperLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.emphasis.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_ColorString] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.emphasis.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.emphasis.upperLabel
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.emphasis.upperLabel
     */
   var upperLabel: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
 }

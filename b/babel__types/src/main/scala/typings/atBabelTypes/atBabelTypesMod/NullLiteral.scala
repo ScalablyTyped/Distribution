@@ -38,3 +38,9 @@ object NullLiteral {
   }
 }
 
+@JSImport("@babel/types", "nullLiteral")
+@js.native
+object nullLiteral extends js.Object {
+  def apply(): NullLiteral = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.runtimeNs.SearchProvider
+import typings.chrome.chrome.runtime.SearchProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

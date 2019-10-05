@@ -43,7 +43,7 @@ object Purchase {
   @scala.inline
   def apply(
     CurrencyCode: CurrencyCodeValues = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
+    Duration: Int | scala.Double = null,
     HostIdSet: ResponseHostIdSet = null,
     HostReservationId: String = null,
     HourlyPrice: String = null,
@@ -53,7 +53,7 @@ object Purchase {
   ): Purchase = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (HostIdSet != null) __obj.updateDynamic("HostIdSet")(HostIdSet)
     if (HostReservationId != null) __obj.updateDynamic("HostReservationId")(HostReservationId)
     if (HourlyPrice != null) __obj.updateDynamic("HourlyPrice")(HourlyPrice)

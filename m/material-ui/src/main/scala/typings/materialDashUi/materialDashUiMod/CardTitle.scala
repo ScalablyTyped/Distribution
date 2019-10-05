@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "CardTitle")
 @js.native
 class CardTitle ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.CardNs.CardTitle
+  extends typings.materialDashUi.__MaterialUI.Card.CardTitle
 

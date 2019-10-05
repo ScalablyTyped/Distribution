@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashKeepDashAwakeProps {
   @scala.inline
-  def ReactDashNativeDashKeepDashAwakeProps: Anon_Children.type = typings.reactDashNativeDashKeepDashAwake.Anon_Children
+  def ReactDashNativeDashKeepDashAwakeProps: typings.reactDashNativeDashKeepDashAwake.Anon_Children.type = typings.reactDashNativeDashKeepDashAwake.Anon_Children
   type ReactDashNativeDashKeepDashAwakeProps = Anon_Children
 }
 

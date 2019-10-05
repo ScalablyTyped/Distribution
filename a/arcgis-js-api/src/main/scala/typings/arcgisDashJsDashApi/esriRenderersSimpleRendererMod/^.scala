@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSimpleRendererMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SimpleRendererConstructor
+import typings.arcgisDashJsDashApi.__esri.SimpleRendererConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

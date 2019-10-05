@@ -1,6 +1,6 @@
 package typings.jsqubits.jsqubitsMod
 
-import typings.jsqubits.jsqubitsMod.jsqubitsNs.QState
+import typings.jsqubits.jsqubitsMod.jsqubits.QState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

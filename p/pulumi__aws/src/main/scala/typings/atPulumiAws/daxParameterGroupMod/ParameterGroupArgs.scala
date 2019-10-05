@@ -1,6 +1,6 @@
 package typings.atPulumiAws.daxParameterGroupMod
 
-import typings.atPulumiAws.typesInputMod.daxNs.ParameterGroupParameter
+import typings.atPulumiAws.typesInputMod.dax.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

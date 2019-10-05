@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object amapDashJsDashApi {
-  import typings.amapDashJsDashApi.AMapNs.RectangleNs.Options
+  import typings.amapDashJsDashApi.AMap.Rectangle.Options
 
-  type ReferOverlayOptions[O] = Options[js.Any] | typings.amapDashJsDashApi.AMapNs.MarkerNs.Options[js.Any] | typings.amapDashJsDashApi.AMapNs.TextNs.Options | typings.amapDashJsDashApi.AMapNs.PolygonNs.Options[js.Any] | typings.amapDashJsDashApi.AMapNs.EllipseNs.Options[js.Any] | typings.amapDashJsDashApi.AMapNs.CircleNs.Options[js.Any] | typings.amapDashJsDashApi.AMapNs.PolylineNs.Options[js.Any] | typings.amapDashJsDashApi.AMapNs.BezierCurveNs.Options[js.Any]
+  type ReferOverlayOptions[O] = Options[js.Any] | typings.amapDashJsDashApi.AMap.Marker.Options[js.Any] | typings.amapDashJsDashApi.AMap.Text.Options | typings.amapDashJsDashApi.AMap.Polygon.Options[js.Any] | typings.amapDashJsDashApi.AMap.Ellipse.Options[js.Any] | typings.amapDashJsDashApi.AMap.Circle.Options[js.Any] | typings.amapDashJsDashApi.AMap.Polyline.Options[js.Any] | typings.amapDashJsDashApi.AMap.BezierCurve.Options[js.Any]
 }

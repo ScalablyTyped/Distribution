@@ -16,14 +16,15 @@ trait TabData
 object TabData {
   @scala.inline
   def apply(
-    title: ReactNode,
     StringDictionary: /** for user's custom extends */
   /* key */ StringDictionary[js.Any] = null,
-    key: String = null
+    key: String = null,
+    title: ReactNode = null
   ): TabData = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (key != null) __obj.updateDynamic("key")(key)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabData]
   }
 }

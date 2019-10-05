@@ -1,6 +1,6 @@
 package typings.gulpDashTerser
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.terser.terserMod.MinifyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

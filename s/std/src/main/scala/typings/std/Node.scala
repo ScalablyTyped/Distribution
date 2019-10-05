@@ -166,10 +166,6 @@ trait Node extends EventTarget {
 
 @JSGlobal("Node")
 @js.native
-class NodeCls () extends Node
-
-@JSGlobal("Node")
-@js.native
 object Node extends Instantiable0[Node] {
   val ATTRIBUTE_NODE: Double = js.native
   /**

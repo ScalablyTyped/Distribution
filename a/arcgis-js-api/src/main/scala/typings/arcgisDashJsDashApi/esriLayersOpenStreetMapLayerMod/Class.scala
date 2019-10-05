@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersOpenStreetMapLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpenStreetMapLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OpenStreetMapLayerProperties
+import typings.arcgisDashJsDashApi.__esri.OpenStreetMapLayer
+import typings.arcgisDashJsDashApi.__esri.OpenStreetMapLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

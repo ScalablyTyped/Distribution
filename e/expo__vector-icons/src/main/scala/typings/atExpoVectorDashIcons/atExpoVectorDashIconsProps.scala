@@ -13,181 +13,181 @@ trait atExpoVectorDashIconsProps {
   def AntDesignProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type AntDesignProps = IconProps
   @scala.inline
-  def AntDesignNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type AntDesignNsButtonProps = IconButtonProps
+  def AntDesignButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type AntDesignButtonProps = IconButtonProps
   @scala.inline
-  def AntDesignNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type AntDesignNsTabBarItemProps = TabBarItemIOSProps
+  def AntDesignTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type AntDesignTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def AntDesignNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type AntDesignNsTabBarItemIOSProps = TabBarItemIOSProps
+  def AntDesignTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type AntDesignTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def AntDesignNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type AntDesignNsToolbarAndroidProps = ToolbarAndroidProps
+  def AntDesignToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type AntDesignToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def EntypoProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type EntypoProps = IconProps
   @scala.inline
-  def EntypoNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type EntypoNsButtonProps = IconButtonProps
+  def EntypoButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type EntypoButtonProps = IconButtonProps
   @scala.inline
-  def EntypoNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type EntypoNsTabBarItemProps = TabBarItemIOSProps
+  def EntypoTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type EntypoTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def EntypoNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type EntypoNsTabBarItemIOSProps = TabBarItemIOSProps
+  def EntypoTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type EntypoTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def EntypoNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type EntypoNsToolbarAndroidProps = ToolbarAndroidProps
+  def EntypoToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type EntypoToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def EvilIconsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type EvilIconsProps = IconProps
   @scala.inline
-  def EvilIconsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type EvilIconsNsButtonProps = IconButtonProps
+  def EvilIconsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type EvilIconsButtonProps = IconButtonProps
   @scala.inline
-  def EvilIconsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type EvilIconsNsTabBarItemProps = TabBarItemIOSProps
+  def EvilIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type EvilIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def EvilIconsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type EvilIconsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def EvilIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type EvilIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def EvilIconsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type EvilIconsNsToolbarAndroidProps = ToolbarAndroidProps
+  def EvilIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type EvilIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FeatherProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type FeatherProps = IconProps
   @scala.inline
-  def FeatherNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type FeatherNsButtonProps = IconButtonProps
+  def FeatherButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type FeatherButtonProps = IconButtonProps
   @scala.inline
-  def FeatherNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FeatherNsTabBarItemProps = TabBarItemIOSProps
+  def FeatherTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FeatherTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FeatherNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FeatherNsTabBarItemIOSProps = TabBarItemIOSProps
+  def FeatherTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FeatherTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FeatherNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type FeatherNsToolbarAndroidProps = ToolbarAndroidProps
+  def FeatherToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type FeatherToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FontAwesomeProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type FontAwesomeProps = IconProps
   @scala.inline
-  def FontAwesomeNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type FontAwesomeNsButtonProps = IconButtonProps
+  def FontAwesomeButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type FontAwesomeButtonProps = IconButtonProps
   @scala.inline
-  def FontAwesomeNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FontAwesomeNsTabBarItemProps = TabBarItemIOSProps
+  def FontAwesomeTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FontAwesomeTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FontAwesomeNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FontAwesomeNsTabBarItemIOSProps = TabBarItemIOSProps
+  def FontAwesomeTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FontAwesomeTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FontAwesomeNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type FontAwesomeNsToolbarAndroidProps = ToolbarAndroidProps
+  def FontAwesomeToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type FontAwesomeToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FoundationProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type FoundationProps = IconProps
   @scala.inline
-  def FoundationNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type FoundationNsButtonProps = IconButtonProps
+  def FoundationButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type FoundationButtonProps = IconButtonProps
   @scala.inline
-  def FoundationNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FoundationNsTabBarItemProps = TabBarItemIOSProps
+  def FoundationTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FoundationTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FoundationNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type FoundationNsTabBarItemIOSProps = TabBarItemIOSProps
+  def FoundationTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type FoundationTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FoundationNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type FoundationNsToolbarAndroidProps = ToolbarAndroidProps
+  def FoundationToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type FoundationToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def IoniconsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type IoniconsProps = IconProps
   @scala.inline
-  def IoniconsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type IoniconsNsButtonProps = IconButtonProps
+  def IoniconsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type IoniconsButtonProps = IconButtonProps
   @scala.inline
-  def IoniconsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type IoniconsNsTabBarItemProps = TabBarItemIOSProps
+  def IoniconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type IoniconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def IoniconsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type IoniconsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def IoniconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type IoniconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def IoniconsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type IoniconsNsToolbarAndroidProps = ToolbarAndroidProps
+  def IoniconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type IoniconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def MaterialCommunityIconsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type MaterialCommunityIconsProps = IconProps
   @scala.inline
-  def MaterialCommunityIconsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type MaterialCommunityIconsNsButtonProps = IconButtonProps
+  def MaterialCommunityIconsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type MaterialCommunityIconsButtonProps = IconButtonProps
   @scala.inline
-  def MaterialCommunityIconsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type MaterialCommunityIconsNsTabBarItemProps = TabBarItemIOSProps
+  def MaterialCommunityIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type MaterialCommunityIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialCommunityIconsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type MaterialCommunityIconsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def MaterialCommunityIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type MaterialCommunityIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialCommunityIconsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type MaterialCommunityIconsNsToolbarAndroidProps = ToolbarAndroidProps
+  def MaterialCommunityIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type MaterialCommunityIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def MaterialIconsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type MaterialIconsProps = IconProps
   @scala.inline
-  def MaterialIconsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type MaterialIconsNsButtonProps = IconButtonProps
+  def MaterialIconsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type MaterialIconsButtonProps = IconButtonProps
   @scala.inline
-  def MaterialIconsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type MaterialIconsNsTabBarItemProps = TabBarItemIOSProps
+  def MaterialIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type MaterialIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialIconsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type MaterialIconsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def MaterialIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type MaterialIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialIconsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type MaterialIconsNsToolbarAndroidProps = ToolbarAndroidProps
+  def MaterialIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type MaterialIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def OcticonsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type OcticonsProps = IconProps
   @scala.inline
-  def OcticonsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type OcticonsNsButtonProps = IconButtonProps
+  def OcticonsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type OcticonsButtonProps = IconButtonProps
   @scala.inline
-  def OcticonsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type OcticonsNsTabBarItemProps = TabBarItemIOSProps
+  def OcticonsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type OcticonsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def OcticonsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type OcticonsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def OcticonsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type OcticonsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def OcticonsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type OcticonsNsToolbarAndroidProps = ToolbarAndroidProps
+  def OcticonsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type OcticonsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def SimpleLineIconsProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type SimpleLineIconsProps = IconProps
   @scala.inline
-  def SimpleLineIconsNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type SimpleLineIconsNsButtonProps = IconButtonProps
+  def SimpleLineIconsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type SimpleLineIconsButtonProps = IconButtonProps
   @scala.inline
-  def SimpleLineIconsNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type SimpleLineIconsNsTabBarItemProps = TabBarItemIOSProps
+  def SimpleLineIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type SimpleLineIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def SimpleLineIconsNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type SimpleLineIconsNsTabBarItemIOSProps = TabBarItemIOSProps
+  def SimpleLineIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type SimpleLineIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def SimpleLineIconsNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type SimpleLineIconsNsToolbarAndroidProps = ToolbarAndroidProps
+  def SimpleLineIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type SimpleLineIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def ZocialProps: IconProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconProps
   type ZocialProps = IconProps
   @scala.inline
-  def ZocialNsButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
-  type ZocialNsButtonProps = IconButtonProps
+  def ZocialButtonProps: IconButtonProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
+  type ZocialButtonProps = IconButtonProps
   @scala.inline
-  def ZocialNsTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type ZocialNsTabBarItemProps = TabBarItemIOSProps
+  def ZocialTabBarItemProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type ZocialTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def ZocialNsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
-  type ZocialNsTabBarItemIOSProps = TabBarItemIOSProps
+  def ZocialTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+  type ZocialTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def ZocialNsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
-  type ZocialNsToolbarAndroidProps = ToolbarAndroidProps
+  def ZocialToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
+  type ZocialToolbarAndroidProps = ToolbarAndroidProps
 }
 

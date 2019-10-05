@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriRenderersClassBreaksRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassBreaksRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassBreaksRendererProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VisualVariable
+import typings.arcgisDashJsDashApi.__esri.ClassBreaksRenderer
+import typings.arcgisDashJsDashApi.__esri.ClassBreaksRendererProperties
+import typings.arcgisDashJsDashApi.__esri.VisualVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

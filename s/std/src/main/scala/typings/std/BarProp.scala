@@ -11,12 +11,5 @@ trait BarProp extends js.Object {
 
 @JSGlobal("BarProp")
 @js.native
-class BarPropCls () extends BarProp {
-  /* CompleteClass */
-  override val visible: scala.Boolean = js.native
-}
-
-@JSGlobal("BarProp")
-@js.native
 object BarProp extends Instantiable0[BarProp]
 

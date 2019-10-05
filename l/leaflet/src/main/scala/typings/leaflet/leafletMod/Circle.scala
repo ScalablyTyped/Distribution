@@ -15,3 +15,12 @@ class Circle[P] protected () extends CircleMarker[P] {
   def getBounds(): LatLngBounds = js.native
 }
 
+@JSImport("leaflet", "circle")
+@js.native
+object circle extends js.Object {
+  def apply(latlng: LatLngExpression): Circle[_] = js.native
+  def apply(latlng: LatLngExpression, options: CircleMarkerOptions): Circle[_] = js.native
+  def apply(latlng: LatLngExpression, radius: Double): Circle[_] = js.native
+  def apply(latlng: LatLngExpression, radius: Double, options: CircleMarkerOptions): Circle[_] = js.native
+}
+

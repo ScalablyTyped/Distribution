@@ -1,10 +1,10 @@
 package typings.atPulumiAws.ec2FleetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetLaunchTemplateConfig
-import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetOnDemandOptions
-import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetSpotOptions
-import typings.atPulumiAws.typesOutputMod.ec2Ns.FleetTargetCapacitySpecification
+import typings.atPulumiAws.typesOutputMod.ec2.FleetLaunchTemplateConfig
+import typings.atPulumiAws.typesOutputMod.ec2.FleetOnDemandOptions
+import typings.atPulumiAws.typesOutputMod.ec2.FleetSpotOptions
+import typings.atPulumiAws.typesOutputMod.ec2.FleetTargetCapacitySpecification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

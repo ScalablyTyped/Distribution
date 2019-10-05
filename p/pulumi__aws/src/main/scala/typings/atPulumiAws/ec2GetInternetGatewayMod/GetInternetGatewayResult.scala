@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2GetInternetGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInternetGatewayAttachment
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInternetGatewayFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetInternetGatewayAttachment
+import typings.atPulumiAws.typesOutputMod.ec2.GetInternetGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

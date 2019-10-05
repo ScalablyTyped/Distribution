@@ -27,7 +27,7 @@ object DescribeAddressesRequest {
   @scala.inline
   def apply(
     AllocationIds: AllocationIdList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     PublicIps: PublicIpStringList = null
   ): DescribeAddressesRequest = {

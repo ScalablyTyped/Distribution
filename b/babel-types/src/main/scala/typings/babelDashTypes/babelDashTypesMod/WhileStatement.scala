@@ -39,3 +39,12 @@ object WhileStatement {
   }
 }
 
+@JSImport("babel-types", "whileStatement")
+@js.native
+object whileStatement extends js.Object {
+  def apply(): WhileStatement = js.native
+  def apply(test: Expression): WhileStatement = js.native
+  def apply(test: Expression, body: BlockStatement): WhileStatement = js.native
+  def apply(test: Expression, body: Statement): WhileStatement = js.native
+}
+

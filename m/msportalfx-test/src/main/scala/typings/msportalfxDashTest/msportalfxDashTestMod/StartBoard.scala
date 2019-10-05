@@ -1,6 +1,6 @@
 package typings.msportalfxDashTest.msportalfxDashTestMod
 
-import typings.msportalfxDashTest.msportalfxDashTestMod.PartsNs.Tile
+import typings.msportalfxDashTest.msportalfxDashTestMod.Parts.Tile
 import typings.q.qMod.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`

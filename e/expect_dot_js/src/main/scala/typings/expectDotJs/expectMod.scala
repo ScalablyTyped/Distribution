@@ -1,11 +1,12 @@
 package typings.expectDotJs
 
-import typings.expectDotJs.ExpectNs.Root
+import typings.expectDotJs.Expect.Root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("expect")
+/* augmented module */
+@JSImport("expect", JSImport.Namespace)
 @js.native
 object expectMod extends js.Object {
   def apply(): Root = js.native

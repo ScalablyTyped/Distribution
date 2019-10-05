@@ -1,6 +1,6 @@
 package typings.tabulatorDashTables
 
-import typings.tabulatorDashTables.TabulatorNs._Editor
+import typings.tabulatorDashTables.Tabulator._Editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

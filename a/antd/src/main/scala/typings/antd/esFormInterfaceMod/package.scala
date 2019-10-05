@@ -13,7 +13,7 @@ package object esFormInterfaceMod {
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
 
   type ConnectedComponentClass[C /* <: ComponentType[_] */, P] = (ComponentClass[LibraryManagedAttributes[C, P], ComponentState]) with (NonReactStatics[C, js.Object]) with Anon_WrappedComponent[C]
   type FormWrappedProps[TOwnProps /* <: WrappedFormInternalProps[_] */] = js.Function1[/* component */ js.Any, ConnectedComponentClass[js.Any, Omit[TOwnProps, String]]]

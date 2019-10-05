@@ -33,13 +33,13 @@ object LookupDeveloperIdentityInput {
     IdentityPoolId: IdentityPoolId,
     DeveloperUserIdentifier: DeveloperUserIdentifier = null,
     IdentityId: IdentityId = null,
-    MaxResults: js.UndefOr[QueryLimit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationKey = null
   ): LookupDeveloperIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId)
     if (DeveloperUserIdentifier != null) __obj.updateDynamic("DeveloperUserIdentifier")(DeveloperUserIdentifier)
     if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[LookupDeveloperIdentityInput]
   }

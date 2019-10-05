@@ -2,7 +2,9 @@ package typings.reactDashWindow.reactDashWindowMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.Key
 import typings.react.reactMod.Ref
+import typings.reactDashWindow.Anon_ColumnIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +54,7 @@ object VariableSizeGridProps {
     innerRef: Ref[_] = null,
     innerTagName: String = null,
     itemData: js.Any = null,
-    itemKey: GridItemKeySelector = null,
+    itemKey: /* params */ Anon_ColumnIndex => Key = null,
     onItemsRendered: /* props */ GridOnItemsRenderedProps => _ = null,
     onScroll: /* props */ GridOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
@@ -77,7 +79,7 @@ object VariableSizeGridProps {
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
     if (itemData != null) __obj.updateDynamic("itemData")(itemData)
-    if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
+    if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction1(itemKey))
     if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])

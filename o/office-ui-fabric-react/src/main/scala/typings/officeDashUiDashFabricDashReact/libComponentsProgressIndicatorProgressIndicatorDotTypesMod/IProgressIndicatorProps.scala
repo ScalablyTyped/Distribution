@@ -5,6 +5,7 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsProgressIndicatorProgressIndicatorDotBaseMod.ProgressIndicatorBase
 import typings.react.reactMod.ClassAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactNode
@@ -72,7 +73,7 @@ object IProgressIndicatorProps {
     description: ReactNode = null,
     key: Key = null,
     label: ReactNode = null,
-    onRenderProgress: IRenderFunction[IProgressIndicatorProps] = null,
+    onRenderProgress: (/* props */ js.UndefOr[IProgressIndicatorProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IProgressIndicatorProps], Element | Null]]) => Element | Null = null,
     percentComplete: Int | Double = null,
     progressHidden: js.UndefOr[Boolean] = js.undefined,
     ref: LegacyRef[ProgressIndicatorBase] = null,
@@ -87,7 +88,7 @@ object IProgressIndicatorProps {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onRenderProgress != null) __obj.updateDynamic("onRenderProgress")(onRenderProgress)
+    if (onRenderProgress != null) __obj.updateDynamic("onRenderProgress")(js.Any.fromFunction2(onRenderProgress))
     if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(progressHidden)) __obj.updateDynamic("progressHidden")(progressHidden)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

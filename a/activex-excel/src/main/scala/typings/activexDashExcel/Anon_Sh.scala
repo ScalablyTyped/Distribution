@@ -1,7 +1,7 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.Chart
-import typings.activexDashExcel.ExcelNs.Worksheet
+import typings.activexDashExcel.Excel.Chart
+import typings.activexDashExcel.Excel.Worksheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

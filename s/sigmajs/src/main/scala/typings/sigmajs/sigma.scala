@@ -1,7 +1,9 @@
 package typings.sigmajs
 
-import typings.sigmajs.SigmaJsNs.Sigma
-import typings.sigmajs.SigmaJsNs.SigmaConfigs
+import org.scalablytyped.runtime.TopLevel
+import typings.sigmajs.SigmaJs.Sigma
+import typings.sigmajs.SigmaJs.SigmaConfigs
+import typings.sigmajs.SigmaJs.SigmaFactory
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,4 +16,8 @@ class sigma () extends Sigma {
   def this(container: String) = this()
   def this(container: Element) = this()
 }
+
+@JSGlobal("sigma")
+@js.native
+object sigma extends TopLevel[SigmaFactory]
 

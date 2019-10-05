@@ -1,8 +1,8 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.geomNs.Geometry
-import typings.openlayers.openlayersMod.olxNs.GeolocationOptions
-import typings.openlayers.openlayersMod.projNs.Projection
+import typings.openlayers.openlayersMod.geom.Geometry
+import typings.openlayers.openlayersMod.olx.GeolocationOptions
+import typings.openlayers.openlayersMod.proj.Projection
 import typings.std.PositionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetVpcAttachmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2transitgatewayNs.GetVpcAttachmentFilter
+import typings.atPulumiAws.typesInputMod.ec2transitgateway.GetVpcAttachmentFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

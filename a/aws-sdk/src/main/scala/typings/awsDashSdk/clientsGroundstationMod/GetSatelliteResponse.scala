@@ -36,7 +36,7 @@ object GetSatelliteResponse {
   def apply(
     dateCreated: Timestamp = null,
     lastUpdated: Timestamp = null,
-    noradSatelliteID: js.UndefOr[noradSatelliteID] = js.undefined,
+    noradSatelliteID: Int | scala.Double = null,
     satelliteArn: satelliteArn = null,
     satelliteId: Uuid = null,
     tags: TagsMap = null
@@ -44,7 +44,7 @@ object GetSatelliteResponse {
     val __obj = js.Dynamic.literal()
     if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated)
     if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated)
-    if (!js.isUndefined(noradSatelliteID)) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID)
+    if (noradSatelliteID != null) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID.asInstanceOf[js.Any])
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn)
     if (satelliteId != null) __obj.updateDynamic("satelliteId")(satelliteId)
     if (tags != null) __obj.updateDynamic("tags")(tags)

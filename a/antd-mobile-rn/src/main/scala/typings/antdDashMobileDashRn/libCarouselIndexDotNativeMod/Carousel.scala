@@ -1,7 +1,7 @@
 package typings.antdDashMobileDashRn.libCarouselIndexDotNativeMod
 
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.NativeScrollEvent

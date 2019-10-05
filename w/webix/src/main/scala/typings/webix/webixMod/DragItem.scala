@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -31,4 +32,8 @@ trait DragItem extends js.Object {
   @JSName("$dropHTML")
   def $dropHTML(args: js.Any*): js.Any = js.native
 }
+
+@JSImport("webix", "DragItem")
+@js.native
+object DragItem extends TopLevel[DragItem]
 

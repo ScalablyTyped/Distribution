@@ -32,7 +32,7 @@ object ResizeClusterMessage {
   def apply(
     ClusterIdentifier: String,
     NumberOfNodes: Integer,
-    Classic: js.UndefOr[BooleanOptional] = js.undefined,
+    Classic: js.UndefOr[scala.Boolean] = js.undefined,
     ClusterType: String = null,
     NodeType: String = null
   ): ResizeClusterMessage = {

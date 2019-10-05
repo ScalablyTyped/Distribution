@@ -32,10 +32,10 @@ trait PopoverProps
 object PopoverProps {
   @scala.inline
   def apply(
-    body: ReactNode,
-    control: ReactNode,
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    body: ReactNode = null,
     className: String = null,
+    control: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     noArrow: js.UndefOr[Boolean] = js.undefined,
     onClickOutside: /* event */ MouseEvent | TouchEvent | FocusEvent => Unit = null,
@@ -43,9 +43,11 @@ object PopoverProps {
     placement: PopperPlacement = null,
     popperProps: StringDictionary[js.Any] = null
   ): PopoverProps = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(noArrow)) __obj.updateDynamic("noArrow")(noArrow)
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))

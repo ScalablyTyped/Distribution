@@ -1,13 +1,13 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.fileSystemNs.ChooseDirectoryEntryOptions
-import typings.chromeDashApps.chromeNs.fileSystemNs.ChooseEntryOptionsBase
-import typings.chromeDashApps.chromeNs.fileSystemNs.ChooseFileEntryOptions
-import typings.chromeDashApps.chromeNs.fileSystemNs.ChooseMultipleFilesEntryOptions
-import typings.chromeDashApps.chromeNs.fileSystemNs.ChooseSaveFileEntryOptions
-import typings.chromeDashApps.chromeNs.fileSystemNs.FileEntryCallback
-import typings.chromeDashApps.chromeNs.fileSystemNs.Volume
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.fileSystem.ChooseDirectoryEntryOptions
+import typings.chromeDashApps.chrome.fileSystem.ChooseEntryOptionsBase
+import typings.chromeDashApps.chrome.fileSystem.ChooseFileEntryOptions
+import typings.chromeDashApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions
+import typings.chromeDashApps.chrome.fileSystem.ChooseSaveFileEntryOptions
+import typings.chromeDashApps.chrome.fileSystem.FileEntryCallback
+import typings.chromeDashApps.chrome.fileSystem.Volume
 import typings.filesystem.DirectoryEntry
 import typings.filesystem.FileEntry
 import typings.filesystem.FileSystem

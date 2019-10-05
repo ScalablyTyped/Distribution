@@ -52,12 +52,12 @@ object ColumnInfo {
   def apply(
     Name: String,
     Type: String,
-    CaseSensitive: js.UndefOr[Boolean] = js.undefined,
+    CaseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     CatalogName: String = null,
     Label: String = null,
     Nullable: ColumnNullable = null,
-    Precision: js.UndefOr[Integer] = js.undefined,
-    Scale: js.UndefOr[Integer] = js.undefined,
+    Precision: Int | Double = null,
+    Scale: Int | Double = null,
     SchemaName: String = null,
     TableName: String = null
   ): ColumnInfo = {
@@ -66,8 +66,8 @@ object ColumnInfo {
     if (CatalogName != null) __obj.updateDynamic("CatalogName")(CatalogName)
     if (Label != null) __obj.updateDynamic("Label")(Label)
     if (Nullable != null) __obj.updateDynamic("Nullable")(Nullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision)
-    if (!js.isUndefined(Scale)) __obj.updateDynamic("Scale")(Scale)
+    if (Precision != null) __obj.updateDynamic("Precision")(Precision.asInstanceOf[js.Any])
+    if (Scale != null) __obj.updateDynamic("Scale")(Scale.asInstanceOf[js.Any])
     if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName)
     if (TableName != null) __obj.updateDynamic("TableName")(TableName)
     __obj.asInstanceOf[ColumnInfo]

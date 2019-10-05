@@ -51,3 +51,35 @@ object ExportNamedDeclaration {
   }
 }
 
+@JSImport("@babel/types", "exportNamedDeclaration")
+@js.native
+object exportNamedDeclaration extends js.Object {
+  def apply(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier]
+  ): ExportNamedDeclaration = js.native
+  def apply(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral
+  ): ExportNamedDeclaration = js.native
+  def apply(
+    declaration: Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier]
+  ): ExportNamedDeclaration = js.native
+  def apply(
+    declaration: Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral
+  ): ExportNamedDeclaration = js.native
+  def apply(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier]
+  ): ExportNamedDeclaration = js.native
+  def apply(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral
+  ): ExportNamedDeclaration = js.native
+}
+

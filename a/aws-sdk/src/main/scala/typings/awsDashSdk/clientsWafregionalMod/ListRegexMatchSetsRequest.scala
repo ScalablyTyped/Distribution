@@ -17,9 +17,9 @@ trait ListRegexMatchSetsRequest extends js.Object {
 
 object ListRegexMatchSetsRequest {
   @scala.inline
-  def apply(Limit: js.UndefOr[PaginationLimit] = js.undefined, NextMarker: NextMarker = null): ListRegexMatchSetsRequest = {
+  def apply(Limit: Int | Double = null, NextMarker: NextMarker = null): ListRegexMatchSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
     __obj.asInstanceOf[ListRegexMatchSetsRequest]
   }

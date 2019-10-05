@@ -28,9 +28,8 @@ import scala.scalajs.js.annotation._
 object libStylesFontsMod extends js.Object {
   def createFontStyles(): IFontStyles = js.native
   def createFontStyles(localeCode: String): IFontStyles = js.native
-  @JSName("FontSizes")
   @js.native
-  object FontSizesNs extends js.Object {
+  object FontSizes extends js.Object {
     val icon: String = js.native
     val large: String = js.native
     val medium: String = js.native
@@ -47,9 +46,8 @@ object libStylesFontsMod extends js.Object {
     val xxLargePlus: String = js.native
   }
   
-  @JSName("FontWeights")
   @js.native
-  object FontWeightsNs extends js.Object {
+  object FontWeights extends js.Object {
     val bold: IFontWeight = js.native
     val light: IFontWeight = js.native
     val regular: IFontWeight = js.native
@@ -57,18 +55,16 @@ object libStylesFontsMod extends js.Object {
     val semilight: IFontWeight = js.native
   }
   
-  @JSName("IconFontSizes")
   @js.native
-  object IconFontSizesNs extends js.Object {
+  object IconFontSizes extends js.Object {
     val large: String = js.native
     val medium: String = js.native
     val small: String = js.native
     val xSmall: String = js.native
   }
   
-  @JSName("LocalizedFontFamilies")
   @js.native
-  object LocalizedFontFamiliesNs extends js.Object {
+  object LocalizedFontFamilies extends js.Object {
     val Arabic: String = js.native
     val Armenian: String = js.native
     val ChineseSimplified: `_quoteMicrosoft Yahei UI_quote, Verdana, Simsun` = js.native
@@ -87,9 +83,8 @@ object libStylesFontsMod extends js.Object {
     val WestEuropean: String = js.native
   }
   
-  @JSName("LocalizedFontNames")
   @js.native
-  object LocalizedFontNamesNs extends js.Object {
+  object LocalizedFontNames extends js.Object {
     val Arabic: `Segoe UI Web (Arabic)` = js.native
     val Armenian: `Segoe UI Web (Armenian)` = js.native
     val Cyrillic: `Segoe UI Web (Cyrillic)` = js.native

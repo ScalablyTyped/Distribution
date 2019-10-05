@@ -28,9 +28,5 @@ trait ExtensionScriptApis extends js.Object {
 
 @JSGlobal("ExtensionScriptApis")
 @js.native
-class ExtensionScriptApisCls () extends ExtensionScriptApis
-
-@JSGlobal("ExtensionScriptApis")
-@js.native
 object ExtensionScriptApis extends Instantiable0[ExtensionScriptApis]
 

@@ -200,7 +200,7 @@ object GridCoreProps {
     autoContainerWidth: js.UndefOr[Boolean] = js.undefined,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     autoWidth: js.UndefOr[Boolean] = js.undefined,
-    cellRangeRenderer: GridCellRangeRenderer = null,
+    cellRangeRenderer: /* params */ GridCellRangeProps => js.Array[ReactNode] = null,
     className: String = null,
     containerProps: js.Object = null,
     containerRole: String = null,
@@ -216,7 +216,7 @@ object GridCoreProps {
     onScrollbarPresenceChange: /* params */ ScrollbarPresenceParams => _ = null,
     onSectionRendered: /* params */ SectionRenderedParams => _ = null,
     overscanColumnCount: Int | Double = null,
-    overscanIndicesGetter: OverscanIndicesGetter = null,
+    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices = null,
     overscanRowCount: Int | Double = null,
     role: String = null,
     scrollLeft: Int | Double = null,
@@ -235,7 +235,7 @@ object GridCoreProps {
     if (!js.isUndefined(autoContainerWidth)) __obj.updateDynamic("autoContainerWidth")(autoContainerWidth)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
-    if (cellRangeRenderer != null) __obj.updateDynamic("cellRangeRenderer")(cellRangeRenderer)
+    if (cellRangeRenderer != null) __obj.updateDynamic("cellRangeRenderer")(js.Any.fromFunction1(cellRangeRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
     if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps)
     if (containerRole != null) __obj.updateDynamic("containerRole")(containerRole)
@@ -251,7 +251,7 @@ object GridCoreProps {
     if (onScrollbarPresenceChange != null) __obj.updateDynamic("onScrollbarPresenceChange")(js.Any.fromFunction1(onScrollbarPresenceChange))
     if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(js.Any.fromFunction1(onSectionRendered))
     if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
-    if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(overscanIndicesGetter)
+    if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(js.Any.fromFunction1(overscanIndicesGetter))
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)
     if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
 import typings.atPhosphorDatagrid.atPhosphorDatagridMod.DataGrid
-import typings.atPhosphorDatagrid.libCellrendererMod.CellRendererNs.ConfigFunc
+import typings.atPhosphorDatagrid.libCellrendererMod.CellRenderer.ConfigFunc
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

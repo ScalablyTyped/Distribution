@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-react-pug"
-version := "0.5-dt-20180214Z-2df65b"
-scalaVersion := "2.12.9"
+version := "0.5-dt-20180214Z-976645"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

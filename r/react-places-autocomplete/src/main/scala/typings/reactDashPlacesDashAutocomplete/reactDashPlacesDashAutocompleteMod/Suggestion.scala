@@ -1,7 +1,7 @@
 package typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteMod
 
-import typings.googlemaps.googleNs.mapsNs.placesNs.PredictionSubstring
-import typings.googlemaps.googleNs.mapsNs.placesNs.PredictionTerm
+import typings.googlemaps.google.maps.places.PredictionSubstring
+import typings.googlemaps.google.maps.places.PredictionTerm
 import typings.reactDashPlacesDashAutocomplete.Anon_MainText
 import scala.scalajs.js
 import scala.scalajs.js.`|`

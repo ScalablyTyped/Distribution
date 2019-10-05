@@ -14,3 +14,11 @@ class Popup () extends DivOverlay {
   def openOn(map: Map): this.type = js.native
 }
 
+@JSImport("leaflet", "popup")
+@js.native
+object popup extends js.Object {
+  def apply(): Popup = js.native
+  def apply(options: PopupOptions): Popup = js.native
+  def apply(options: PopupOptions, source: Layer): Popup = js.native
+}
+

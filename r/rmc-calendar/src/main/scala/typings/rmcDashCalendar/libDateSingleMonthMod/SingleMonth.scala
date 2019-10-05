@@ -2,8 +2,8 @@ package typings.rmcDashCalendar.libDateSingleMonthMod
 
 import typings.react.reactMod.PureComponent
 import typings.rmcDashCalendar.Anon_WeekComponents
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.CellData
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.MonthData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.CellData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.MonthData
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

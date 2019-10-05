@@ -1,7 +1,7 @@
 package typings.sarif.sarifMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sarif.sarifMod.ThreadFlowLocationNs.importance
+import typings.sarif.sarifMod.ThreadFlowLocation.importance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait ThreadFlowLocation extends js.Object {
     * Specifies the importance of this location in understanding the code flow in which it occurs. The order from most
     * to least important is "essential", "important", "unimportant". Default: "important".
     */
-  var importance: js.UndefOr[typings.sarif.sarifMod.ThreadFlowLocationNs.importance] = js.undefined
+  var importance: js.UndefOr[importance] = js.undefined
   /**
     * The index within the run threadFlowLocations array.
     */
@@ -71,40 +71,15 @@ trait ThreadFlowLocation extends js.Object {
   var webResponse: js.UndefOr[WebResponse] = js.undefined
 }
 
-object ThreadFlowLocation {
-  @scala.inline
-  def apply(
-    executionOrder: Int | Double = null,
-    executionTimeUtc: String = null,
-    importance: importance = null,
-    index: Int | Double = null,
-    kinds: js.Array[String] = null,
-    location: Location = null,
-    module: String = null,
-    nestingLevel: Int | Double = null,
-    properties: PropertyBag = null,
-    stack: Stack = null,
-    state: StringDictionary[MultiformatMessageString] = null,
-    taxa: js.Array[ReportingDescriptorReference] = null,
-    webRequest: WebRequest = null,
-    webResponse: WebResponse = null
-  ): ThreadFlowLocation = {
-    val __obj = js.Dynamic.literal()
-    if (executionOrder != null) __obj.updateDynamic("executionOrder")(executionOrder.asInstanceOf[js.Any])
-    if (executionTimeUtc != null) __obj.updateDynamic("executionTimeUtc")(executionTimeUtc)
-    if (importance != null) __obj.updateDynamic("importance")(importance)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (kinds != null) __obj.updateDynamic("kinds")(kinds)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
-    if (webRequest != null) __obj.updateDynamic("webRequest")(webRequest)
-    if (webResponse != null) __obj.updateDynamic("webResponse")(webResponse)
-    __obj.asInstanceOf[ThreadFlowLocation]
-  }
+@JSImport("sarif", "ThreadFlowLocation")
+@js.native
+object ThreadFlowLocation extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.important
+    - typings.sarif.sarifStrings.essential
+    - typings.sarif.sarifStrings.unimportant
+  */
+  trait importance extends js.Object
+  
 }
 

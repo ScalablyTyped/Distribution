@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.std.Object because Already inherited
 - typings.parseDashTorrentDashFile.parseDashTorrentDashFileMod.Instance because var conflicts: announce, constructor, infoHash, infoHashBuffer, name, urlList. Inlined created, createdBy, files, info, infoBuffer, lastPieceLength, length, pieceLength, pieces, `private` */ trait Instance
   extends typings.magnetDashUri.magnetDashUriMod.Instance {
   var created: js.UndefOr[Date] = js.undefined

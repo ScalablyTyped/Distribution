@@ -1,6 +1,6 @@
 package typings.atPulumiAws.macieS3BucketAssociationMod
 
-import typings.atPulumiAws.typesInputMod.macieNs.S3BucketAssociationClassificationType
+import typings.atPulumiAws.typesInputMod.macie.S3BucketAssociationClassificationType
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

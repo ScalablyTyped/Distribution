@@ -1,9 +1,9 @@
 package typings.monacoDashEditor
 
-import typings.monacoDashEditor.monacoDashEditorMod.editorNs.BuiltinTheme
-import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingOvertypeStrategy
-import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
-import typings.monacoDashEditor.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
+import typings.monacoDashEditor.monacoDashEditorMod.editor.BuiltinTheme
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EditorAutoClosingOvertypeStrategy
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EditorAutoClosingStrategy
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EditorAutoSurroundStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

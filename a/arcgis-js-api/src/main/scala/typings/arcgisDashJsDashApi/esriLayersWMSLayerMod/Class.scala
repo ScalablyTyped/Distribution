@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersWMSLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WMSLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WMSLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.WMSLayer
+import typings.arcgisDashJsDashApi.__esri.WMSLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

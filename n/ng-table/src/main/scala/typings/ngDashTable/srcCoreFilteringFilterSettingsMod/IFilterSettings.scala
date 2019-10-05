@@ -2,6 +2,7 @@ package typings.ngDashTable.srcCoreFilteringFilterSettingsMod
 
 import typings.ngDashTable.srcCoreFilteringFilterComparatorMod.FilterComparator
 import typings.ngDashTable.srcCoreFilteringFilterFuncMod.IFilterFunc
+import typings.ngDashTable.srcCoreFilteringFilterFuncMod.IFilterValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +53,7 @@ object IFilterSettings {
     filterDelay: Int | Double = null,
     filterDelayThreshold: Int | Double = null,
     filterFilterName: String = null,
-    filterFn: IFilterFunc[T] = null,
+    filterFn: (/* data */ js.Array[T], /* filter */ IFilterValues, /* filterComparator */ FilterComparator[T]) => js.Array[T] = null,
     filterLayout: FilterLayout = null
   ): IFilterSettings[T] = {
     val __obj = js.Dynamic.literal()
@@ -60,7 +61,7 @@ object IFilterSettings {
     if (filterDelay != null) __obj.updateDynamic("filterDelay")(filterDelay.asInstanceOf[js.Any])
     if (filterDelayThreshold != null) __obj.updateDynamic("filterDelayThreshold")(filterDelayThreshold.asInstanceOf[js.Any])
     if (filterFilterName != null) __obj.updateDynamic("filterFilterName")(filterFilterName)
-    if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn)
+    if (filterFn != null) __obj.updateDynamic("filterFn")(js.Any.fromFunction3(filterFn))
     if (filterLayout != null) __obj.updateDynamic("filterLayout")(filterLayout)
     __obj.asInstanceOf[IFilterSettings[T]]
   }

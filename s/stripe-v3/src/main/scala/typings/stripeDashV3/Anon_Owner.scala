@@ -1,6 +1,6 @@
 package typings.stripeDashV3
 
-import typings.stripeDashV3.stripeNs.OwnerInfo
+import typings.stripeDashV3.stripe.OwnerInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

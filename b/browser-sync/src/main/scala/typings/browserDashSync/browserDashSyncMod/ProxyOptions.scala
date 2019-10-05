@@ -1,6 +1,6 @@
 package typings.browserDashSync.browserDashSyncMod
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object ProxyOptions {
   @scala.inline
   def apply(
     error: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit = null,
-    middleware: MiddlewareHandler = null,
+    middleware: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any = null,
     proxyReq: (js.Array[js.Function1[/* res */ IncomingMessage, Unit]]) | (js.Function1[/* res */ IncomingMessage, Unit]) = null,
     proxyRes: ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware] = null,
     reqHeaders: /* config */ js.Object => Hash[js.Object] = null,
@@ -34,7 +34,7 @@ object ProxyOptions {
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
+    if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction3(middleware))
     if (proxyReq != null) __obj.updateDynamic("proxyReq")(proxyReq.asInstanceOf[js.Any])
     if (proxyRes != null) __obj.updateDynamic("proxyRes")(proxyRes.asInstanceOf[js.Any])
     if (reqHeaders != null) __obj.updateDynamic("reqHeaders")(js.Any.fromFunction1(reqHeaders))

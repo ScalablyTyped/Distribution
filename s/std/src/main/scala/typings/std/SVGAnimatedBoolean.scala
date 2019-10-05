@@ -13,14 +13,5 @@ trait SVGAnimatedBoolean extends js.Object {
 
 @JSGlobal("SVGAnimatedBoolean")
 @js.native
-class SVGAnimatedBooleanCls () extends SVGAnimatedBoolean {
-  /* CompleteClass */
-  override val animVal: scala.Boolean = js.native
-  /* CompleteClass */
-  override var baseVal: scala.Boolean = js.native
-}
-
-@JSGlobal("SVGAnimatedBoolean")
-@js.native
 object SVGAnimatedBoolean extends Instantiable0[SVGAnimatedBoolean]
 

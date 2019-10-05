@@ -1,6 +1,6 @@
 package typings.jqueryDotUiDotLayout
 
-import typings.jqueryDotUiDotLayout.JQueryUILayoutNs.PaneState
+import typings.jqueryDotUiDotLayout.JQueryUILayout.PaneState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

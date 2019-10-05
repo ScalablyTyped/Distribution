@@ -2,7 +2,7 @@ package typings.primereact.componentsPicklistPickListMod
 
 import typings.primereact.Anon_EventSource
 import typings.primereact.Anon_OriginalEventValue
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

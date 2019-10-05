@@ -128,20 +128,20 @@ object Service {
     deploymentConfiguration: DeploymentConfiguration = null,
     deploymentController: DeploymentController = null,
     deployments: Deployments = null,
-    desiredCount: js.UndefOr[Integer] = js.undefined,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
+    desiredCount: Int | scala.Double = null,
+    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
     events: ServiceEvents = null,
-    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
+    healthCheckGracePeriodSeconds: Int | scala.Double = null,
     launchType: LaunchType = null,
     loadBalancers: LoadBalancers = null,
     networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
+    pendingCount: Int | scala.Double = null,
     placementConstraints: PlacementConstraints = null,
     placementStrategy: PlacementStrategies = null,
     platformVersion: String = null,
     propagateTags: PropagateTags = null,
     roleArn: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
+    runningCount: Int | scala.Double = null,
     schedulingStrategy: SchedulingStrategy = null,
     serviceArn: String = null,
     serviceName: String = null,
@@ -158,20 +158,20 @@ object Service {
     if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration)
     if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController)
     if (deployments != null) __obj.updateDynamic("deployments")(deployments)
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount)
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
     if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags)
     if (events != null) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds)
+    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers)
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount)
+    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
     if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints)
     if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy)
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)
     if (propagateTags != null) __obj.updateDynamic("propagateTags")(propagateTags.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount)
+    if (runningCount != null) __obj.updateDynamic("runningCount")(runningCount.asInstanceOf[js.Any])
     if (schedulingStrategy != null) __obj.updateDynamic("schedulingStrategy")(schedulingStrategy.asInstanceOf[js.Any])
     if (serviceArn != null) __obj.updateDynamic("serviceArn")(serviceArn)
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)

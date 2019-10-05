@@ -3,12 +3,12 @@ package typings.atPulumiAws.lambdaFunctionMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
 import typings.atPulumiAws.iamMod.Role
-import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionDeadLetterConfig
-import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionEnvironment
-import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionTracingConfig
-import typings.atPulumiAws.typesOutputMod.lambdaNs.FunctionVpcConfig
+import typings.atPulumiAws.typesOutputMod.lambda.FunctionDeadLetterConfig
+import typings.atPulumiAws.typesOutputMod.lambda.FunctionEnvironment
+import typings.atPulumiAws.typesOutputMod.lambda.FunctionTracingConfig
+import typings.atPulumiAws.typesOutputMod.lambda.FunctionVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Archive
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions

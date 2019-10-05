@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "local-storage"
-version := "1.4-dt-20180830Z-34f994"
-scalaVersion := "2.12.9"
+version := "1.4-dt-20180830Z-59c56a"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

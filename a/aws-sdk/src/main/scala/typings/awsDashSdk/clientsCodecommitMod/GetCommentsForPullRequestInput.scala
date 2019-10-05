@@ -37,14 +37,14 @@ object GetCommentsForPullRequestInput {
     pullRequestId: PullRequestId,
     afterCommitId: CommitId = null,
     beforeCommitId: CommitId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     repositoryName: RepositoryName = null
   ): GetCommentsForPullRequestInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId)
     if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId)
     if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
     __obj.asInstanceOf[GetCommentsForPullRequestInput]

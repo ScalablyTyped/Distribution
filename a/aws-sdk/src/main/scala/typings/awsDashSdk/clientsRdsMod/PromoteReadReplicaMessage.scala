@@ -23,11 +23,11 @@ object PromoteReadReplicaMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    BackupRetentionPeriod: Int | scala.Double = null,
     PreferredBackupWindow: String = null
   ): PromoteReadReplicaMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     __obj.asInstanceOf[PromoteReadReplicaMessage]
   }

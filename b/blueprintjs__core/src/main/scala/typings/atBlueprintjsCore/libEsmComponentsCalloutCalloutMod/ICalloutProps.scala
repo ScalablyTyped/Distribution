@@ -2,7 +2,6 @@ package typings.atBlueprintjsCore.libEsmComponentsCalloutCalloutMod
 
 import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
 import typings.react.reactMod.HTMLAttributes
@@ -29,7 +28,6 @@ object ICalloutProps {
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
     IIntentProps: IIntentProps = null,
-    IProps: IProps = null,
     icon: IconName | MaybeElement = null,
     intent: Intent = null,
     title: String = null
@@ -37,7 +35,6 @@ object ICalloutProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, IIntentProps)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (title != null) __obj.updateDynamic("title")(title)

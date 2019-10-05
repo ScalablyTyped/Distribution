@@ -9,4 +9,6 @@ package object ellipticMod {
   import typings.std.Uint8Array
 
   type BNInput = String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Double | Buffer | Uint8Array | js.Array[Double]
+  type ec = ec_
+  type eddsa = eddsa_
 }

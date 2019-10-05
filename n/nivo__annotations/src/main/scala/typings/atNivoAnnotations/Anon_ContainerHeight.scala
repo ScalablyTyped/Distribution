@@ -23,15 +23,16 @@ object Anon_ContainerHeight {
   def apply(
     containerHeight: Double,
     containerWidth: Double,
-    note: ReactNode,
     noteX: NoteCoordinate,
     noteY: NoteCoordinate,
     x: Double,
     y: Double,
+    note: ReactNode = null,
     noteTextOffset: Int | Double = null,
     noteWidth: Int | Double = null
   ): Anon_ContainerHeight = {
-    val __obj = js.Dynamic.literal(containerHeight = containerHeight, containerWidth = containerWidth, note = note.asInstanceOf[js.Any], noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], x = x, y = y)
+    val __obj = js.Dynamic.literal(containerHeight = containerHeight, containerWidth = containerWidth, noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], x = x, y = y)
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (noteTextOffset != null) __obj.updateDynamic("noteTextOffset")(noteTextOffset.asInstanceOf[js.Any])
     if (noteWidth != null) __obj.updateDynamic("noteWidth")(noteWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContainerHeight]

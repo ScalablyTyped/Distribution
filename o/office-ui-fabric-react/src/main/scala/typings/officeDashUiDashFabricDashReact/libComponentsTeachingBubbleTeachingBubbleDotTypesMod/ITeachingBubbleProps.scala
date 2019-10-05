@@ -11,7 +11,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMo
 import typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleContentDotBaseMod.TeachingBubbleContentBase
 import typings.officeDashUiDashFabricDashReact.libComponentsTeachingBubbleTeachingBubbleDotBaseMod.TeachingBubbleBase
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.std.HTMLElement

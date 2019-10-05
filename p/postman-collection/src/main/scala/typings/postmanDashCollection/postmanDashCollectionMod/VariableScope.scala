@@ -7,6 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.VariableScopeDefinition because var conflicts: description, disabled, id, name. Inlined values */ @JSImport("postman-collection", "VariableScope")
 @js.native
 class VariableScope protected () extends Property[VariableScopeDefinition] {

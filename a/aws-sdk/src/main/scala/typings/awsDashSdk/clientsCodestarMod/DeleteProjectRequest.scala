@@ -24,7 +24,7 @@ object DeleteProjectRequest {
   def apply(
     id: ProjectId,
     clientRequestToken: ClientRequestToken = null,
-    deleteStack: js.UndefOr[DeleteStack] = js.undefined
+    deleteStack: js.UndefOr[Boolean] = js.undefined
   ): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(id = id)
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)

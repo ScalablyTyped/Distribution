@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_Comments
 import typings.astDashTypes.genKindsMod.ProgramKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.File
+import typings.astDashTypes.genNamedTypesMod.namedTypes.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

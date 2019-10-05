@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IASTToken
+import typings.typescriptDashServices.TypeScript.IASTToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MethodSignature")
 @js.native
 class MethodSignature protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.MethodSignature {
+  extends typings.typescriptDashServices.TypeScript.MethodSignature {
   def this(
     propertyName: IASTToken,
-    questionToken: typings.typescriptDashServices.TypeScriptNs.ASTSpan,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignature
+    questionToken: typings.typescriptDashServices.TypeScript.ASTSpan,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignature
   ) = this()
 }
 

@@ -5,9 +5,10 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotBaseMod.DialogContentBase
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
@@ -48,9 +49,7 @@ trait IDialogContentProps extends ClassAttributes[DialogContentBase] {
   /**
     * Responsive mode passed in from decorator.
     */
-  var responsiveMode: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
-  ] = js.undefined
+  var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
   /**
     * Show an 'x' close button in the upper-right corner
     */
@@ -101,7 +100,7 @@ object IDialogContentProps {
     key: Key = null,
     onDismiss: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _ = null,
     ref: LegacyRef[DialogContentBase] = null,
-    responsiveMode: typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode = null,
+    responsiveMode: ResponsiveMode = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IDialogContentStyleProps, IDialogContentStyles] = null,
     subText: String = null,

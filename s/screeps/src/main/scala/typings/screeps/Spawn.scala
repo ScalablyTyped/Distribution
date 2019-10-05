@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,4 +73,8 @@ class Spawn protected () extends StructureSpawn {
   /* CompleteClass */
   override def notifyWhenAttacked(enabled: Boolean): ScreepsReturnCode = js.native
 }
+
+@JSGlobal("Spawn")
+@js.native
+object Spawn extends TopLevel[StructureSpawnConstructor]
 

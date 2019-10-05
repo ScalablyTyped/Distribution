@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.joi.joiMod._SchemaLike because Already inherited
 - typings.joi.joiMod._Schema because Already inherited */ @js.native
 trait ArraySchema extends AnySchema {
   /**

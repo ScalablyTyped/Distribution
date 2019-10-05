@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
+import typings.typescriptDashServices.TypeScript.PullElementFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "VariableStatement")
 @js.native
 class VariableStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.VariableStatement {
+  extends typings.typescriptDashServices.TypeScript.VariableStatement {
   def this(
-    modifiers: js.Array[typings.typescriptDashServices.TypeScriptNs.PullElementFlags],
-    declaration: typings.typescriptDashServices.TypeScriptNs.VariableDeclaration
+    modifiers: js.Array[PullElementFlags],
+    declaration: typings.typescriptDashServices.TypeScript.VariableDeclaration
   ) = this()
 }
 

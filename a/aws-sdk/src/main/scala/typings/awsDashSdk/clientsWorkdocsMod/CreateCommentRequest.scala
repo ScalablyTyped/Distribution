@@ -46,7 +46,7 @@ object CreateCommentRequest {
     Text: CommentTextType,
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    NotifyCollaborators: js.UndefOr[BooleanType] = js.undefined,
+    NotifyCollaborators: js.UndefOr[Boolean] = js.undefined,
     ParentId: CommentIdType = null,
     ThreadId: CommentIdType = null,
     Visibility: CommentVisibilityType = null

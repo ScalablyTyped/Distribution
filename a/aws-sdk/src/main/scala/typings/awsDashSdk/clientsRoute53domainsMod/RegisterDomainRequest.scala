@@ -55,11 +55,11 @@ object RegisterDomainRequest {
     DurationInYears: DurationInYears,
     RegistrantContact: ContactDetail,
     TechContact: ContactDetail,
-    AutoRenew: js.UndefOr[Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
     IdnLangCode: LangCode = null,
-    PrivacyProtectAdminContact: js.UndefOr[Boolean] = js.undefined,
-    PrivacyProtectRegistrantContact: js.UndefOr[Boolean] = js.undefined,
-    PrivacyProtectTechContact: js.UndefOr[Boolean] = js.undefined
+    PrivacyProtectAdminContact: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivacyProtectRegistrantContact: js.UndefOr[scala.Boolean] = js.undefined,
+    PrivacyProtectTechContact: js.UndefOr[scala.Boolean] = js.undefined
   ): RegisterDomainRequest = {
     val __obj = js.Dynamic.literal(AdminContact = AdminContact, DomainName = DomainName, DurationInYears = DurationInYears, RegistrantContact = RegistrantContact, TechContact = TechContact)
     if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew)

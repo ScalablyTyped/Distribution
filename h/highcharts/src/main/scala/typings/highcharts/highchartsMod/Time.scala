@@ -1,5 +1,6 @@
 package typings.highcharts.highchartsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,4 +115,8 @@ class Time protected () extends js.Object {
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
 }
+
+@JSImport("highcharts", "time")
+@js.native
+object time extends TopLevel[Time]
 

@@ -31,13 +31,13 @@ object HlsEncryption {
     SpekeKeyProvider: SpekeKeyProvider,
     ConstantInitializationVector: __string = null,
     EncryptionMethod: EncryptionMethod = null,
-    KeyRotationIntervalSeconds: js.UndefOr[__integer] = js.undefined,
-    RepeatExtXKey: js.UndefOr[__boolean] = js.undefined
+    KeyRotationIntervalSeconds: Int | Double = null,
+    RepeatExtXKey: js.UndefOr[Boolean] = js.undefined
   ): HlsEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider)
     if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector)
     if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeyRotationIntervalSeconds)) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds)
+    if (KeyRotationIntervalSeconds != null) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.asInstanceOf[js.Any])
     if (!js.isUndefined(RepeatExtXKey)) __obj.updateDynamic("RepeatExtXKey")(RepeatExtXKey)
     __obj.asInstanceOf[HlsEncryption]
   }

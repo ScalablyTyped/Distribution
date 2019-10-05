@@ -25,3 +25,10 @@ class ImageOverlay protected () extends Layer {
   def setZIndex(value: Double): this.type = js.native
 }
 
+@JSImport("leaflet", "imageOverlay")
+@js.native
+object imageOverlay extends js.Object {
+  def apply(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay = js.native
+  def apply(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay = js.native
+}
+

@@ -1,5 +1,6 @@
 package typings.yadda.yaddaMod
 
+import typings.yadda.libLibraryMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Interpreter protected ()
   extends typings.yadda.libMod.Interpreter {
-  def this(libraries: js.Array[typings.yadda.libLibraryMod.^]) = this()
-  def this(libraries: typings.yadda.libLibraryMod.^) = this()
+  def this(libraries: js.Array[^]) = this()
+  def this(libraries: ^) = this()
 }
 

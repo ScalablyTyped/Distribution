@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TemplateStatic
-  extends typings.meteorDashTypings.BlazeNs.TemplateStatic
-     with /* index */ StringDictionary[js.Any | typings.meteorDashTypings.BlazeNs.Template] {
-  var body: typings.meteorDashTypings.BlazeNs.Template = js.native
+  extends typings.meteorDashTypings.Blaze.TemplateStatic
+     with /* index */ StringDictionary[js.Any | typings.meteorDashTypings.Blaze.Template] {
+  var body: typings.meteorDashTypings.Blaze.Template = js.native
 }
 

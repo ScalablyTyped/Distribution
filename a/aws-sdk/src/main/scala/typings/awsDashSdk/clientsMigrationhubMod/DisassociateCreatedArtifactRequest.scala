@@ -29,7 +29,7 @@ object DisassociateCreatedArtifactRequest {
     CreatedArtifactName: CreatedArtifactName,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DisassociateCreatedArtifactRequest = {
     val __obj = js.Dynamic.literal(CreatedArtifactName = CreatedArtifactName, MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

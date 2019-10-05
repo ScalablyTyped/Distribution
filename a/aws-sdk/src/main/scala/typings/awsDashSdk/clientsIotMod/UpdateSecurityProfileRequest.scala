@@ -50,10 +50,10 @@ object UpdateSecurityProfileRequest {
     additionalMetricsToRetain: AdditionalMetricsToRetainList = null,
     alertTargets: AlertTargets = null,
     behaviors: Behaviors = null,
-    deleteAdditionalMetricsToRetain: js.UndefOr[DeleteAdditionalMetricsToRetain] = js.undefined,
-    deleteAlertTargets: js.UndefOr[DeleteAlertTargets] = js.undefined,
-    deleteBehaviors: js.UndefOr[DeleteBehaviors] = js.undefined,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined,
+    deleteAdditionalMetricsToRetain: js.UndefOr[scala.Boolean] = js.undefined,
+    deleteAlertTargets: js.UndefOr[scala.Boolean] = js.undefined,
+    deleteBehaviors: js.UndefOr[scala.Boolean] = js.undefined,
+    expectedVersion: Int | Double = null,
     securityProfileDescription: SecurityProfileDescription = null
   ): UpdateSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName)
@@ -63,7 +63,7 @@ object UpdateSecurityProfileRequest {
     if (!js.isUndefined(deleteAdditionalMetricsToRetain)) __obj.updateDynamic("deleteAdditionalMetricsToRetain")(deleteAdditionalMetricsToRetain)
     if (!js.isUndefined(deleteAlertTargets)) __obj.updateDynamic("deleteAlertTargets")(deleteAlertTargets)
     if (!js.isUndefined(deleteBehaviors)) __obj.updateDynamic("deleteBehaviors")(deleteBehaviors)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     if (securityProfileDescription != null) __obj.updateDynamic("securityProfileDescription")(securityProfileDescription)
     __obj.asInstanceOf[UpdateSecurityProfileRequest]
   }

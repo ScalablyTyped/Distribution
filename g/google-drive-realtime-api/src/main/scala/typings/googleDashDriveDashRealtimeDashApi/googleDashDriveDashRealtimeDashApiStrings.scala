@@ -1,8 +1,8 @@
 package typings.googleDashDriveDashRealtimeDashApi
 
-import typings.googleDashDriveDashRealtimeDashApi.gapiNs.driveNs.realtimeNs.CollaborativeObjectType
-import typings.googleDashDriveDashRealtimeDashApi.gapiNs.driveNs.realtimeNs.ErrorType
-import typings.googleDashDriveDashRealtimeDashApi.gapiNs.driveNs.realtimeNs.EventType
+import typings.googleDashDriveDashRealtimeDashApi.gapi.drive.realtime.CollaborativeObjectType
+import typings.googleDashDriveDashRealtimeDashApi.gapi.drive.realtime.ErrorType
+import typings.googleDashDriveDashRealtimeDashApi.gapi.drive.realtime.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

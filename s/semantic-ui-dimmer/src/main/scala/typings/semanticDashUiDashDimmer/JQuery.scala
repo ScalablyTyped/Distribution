@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashDimmer
 
-import typings.semanticDashUiDashDimmer.SemanticUINs.Dimmer
-import typings.semanticDashUiDashDimmer.SemanticUINs.DimmerSettings
+import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer
+import typings.semanticDashUiDashDimmer.SemanticUI.DimmerSettings
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.`add content`
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.`get dimmer`
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.`get duration`

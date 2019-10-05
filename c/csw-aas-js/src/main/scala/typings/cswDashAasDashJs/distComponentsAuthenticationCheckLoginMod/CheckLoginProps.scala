@@ -12,9 +12,10 @@ trait CheckLoginProps extends js.Object {
 
 object CheckLoginProps {
   @scala.inline
-  def apply(children: ReactNode, error: ReactNode): CheckLoginProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null, error: ReactNode = null): CheckLoginProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckLoginProps]
   }
 }

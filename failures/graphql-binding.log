@@ -158,10 +158,11 @@
 [E]      L10:   var transforms: js.UndefOr[js.Array[Transform]] = js.undefined
 [E]                                                 ^
 [E] [E1] src/main/scala/typings/graphqlDashBinding/distTypesMod/Options.scala:3:8
-[E]      object Transform is not a member of package typings.graphqlDashTools.graphqlDashToolsMod
+[E]      value Transform is not a member of object typings.graphqlDashTools.graphqlDashToolsMod
 [E]      L3: import typings.graphqlDashTools.graphqlDashToolsMod.Transform
 [E]          ^^^^^^^
 [E] src/main/scala/typings/graphqlDashBinding/distTypesMod/Options.scala: L3 [E1], L10 [E2], L15 [E3]
 [E] Failed to compile 'graphql-binding'
  [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => publish] 

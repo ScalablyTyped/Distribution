@@ -1,9 +1,9 @@
 package typings.flowdoc
 
-import typings.flowdoc.FlowNs.FileAsset
-import typings.flowdoc.FlowNs.Point
-import typings.flowdoc.FlowNs.Size
-import typings.flowdoc.FlowNs.URLAsset
+import typings.flowdoc.Flow.FileAsset
+import typings.flowdoc.Flow.Point
+import typings.flowdoc.Flow.Size
+import typings.flowdoc.Flow.URLAsset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

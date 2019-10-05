@@ -23,7 +23,7 @@ object DescribeBundleTasksRequest {
   @scala.inline
   def apply(
     BundleIds: BundleIdStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null
   ): DescribeBundleTasksRequest = {
     val __obj = js.Dynamic.literal()

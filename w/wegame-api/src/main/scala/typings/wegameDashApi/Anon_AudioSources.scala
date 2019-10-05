@@ -1,6 +1,6 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.AudioSourceType
+import typings.wegameDashApi.wx.types.AudioSourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

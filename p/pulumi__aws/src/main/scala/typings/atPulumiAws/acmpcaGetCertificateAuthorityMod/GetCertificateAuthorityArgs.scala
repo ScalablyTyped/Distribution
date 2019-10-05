@@ -1,7 +1,7 @@
 package typings.atPulumiAws.acmpcaGetCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.acmpcaNs.GetCertificateAuthorityRevocationConfiguration
+import typings.atPulumiAws.typesInputMod.acmpca.GetCertificateAuthorityRevocationConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

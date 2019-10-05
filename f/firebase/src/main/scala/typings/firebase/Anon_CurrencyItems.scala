@@ -1,8 +1,8 @@
 package typings.firebase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.firebaseMod.analyticsNs.Currency
-import typings.firebase.firebaseMod.analyticsNs.Item
+import typings.firebase.firebaseMod.analytics.Currency
+import typings.firebase.firebaseMod.analytics.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -20,3 +20,10 @@ object Error {
   }
 }
 
+@JSImport("falcor-json-graph", "error")
+@js.native
+object error extends js.Object {
+  def apply(errorValue: js.Any): Error = js.native
+  def apply(errorValue: js.Any, props: Sentinel): Error = js.native
+}
+

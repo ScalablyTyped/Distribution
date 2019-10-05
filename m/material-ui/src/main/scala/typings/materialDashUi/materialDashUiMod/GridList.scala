@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "GridList")
 @js.native
 class GridList ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.GridListNs.GridList
+  extends typings.materialDashUi.__MaterialUI.GridList.GridList
 

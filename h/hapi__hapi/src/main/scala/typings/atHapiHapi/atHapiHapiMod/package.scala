@@ -11,7 +11,7 @@ package object atHapiHapiMod {
   import typings.atHapiCatbox.atHapiCatboxMod.PolicyOptionVariants
   import typings.atHapiHapi.Anon_Cache
   import typings.atHapiHapi.Anon_Constructor
-  import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.Method
+  import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
   import typings.atHapiHapi.atHapiHapiNumbers.`false`
   import typings.atHapiHapi.atHapiHapiNumbers.`true`
   import typings.atHapiJoi.atHapiJoiMod.Schema

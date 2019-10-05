@@ -21,11 +21,11 @@ class PodSecurityPolicyList protected ()
   def this(name: String) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.PodSecurityPolicyList
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.PodSecurityPolicyList
   ) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.PodSecurityPolicyList,
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.PodSecurityPolicyList,
     opts: CustomResourceOptions
   ) = this()
 }

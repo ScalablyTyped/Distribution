@@ -24,7 +24,7 @@ object RefreshCacheInput {
   def apply(
     FileShareARN: FileShareARN,
     FolderList: FolderList = null,
-    Recursive: js.UndefOr[Boolean] = js.undefined
+    Recursive: js.UndefOr[scala.Boolean] = js.undefined
   ): RefreshCacheInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN)
     if (FolderList != null) __obj.updateDynamic("FolderList")(FolderList)

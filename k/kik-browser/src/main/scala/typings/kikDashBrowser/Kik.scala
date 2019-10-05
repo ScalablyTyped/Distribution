@@ -1,5 +1,6 @@
 package typings.kikDashBrowser
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,4 +44,8 @@ trait Kik extends js.Object {
   def trigger(property: String): Unit = js.native
   def trigger(property: String, data: js.Any): Unit = js.native
 }
+
+@JSGlobal("kik")
+@js.native
+object kik extends TopLevel[Kik]
 

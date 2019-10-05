@@ -57,16 +57,16 @@ object BatchDescribeMergeConflictsInput {
     conflictDetailLevel: ConflictDetailLevelTypeEnum = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     filePaths: FilePaths = null,
-    maxConflictFiles: js.UndefOr[MaxResults] = js.undefined,
-    maxMergeHunks: js.UndefOr[MaxResults] = js.undefined,
+    maxConflictFiles: Int | Double = null,
+    maxMergeHunks: Int | Double = null,
     nextToken: NextToken = null
   ): BatchDescribeMergeConflictsInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier, mergeOption = mergeOption.asInstanceOf[js.Any], repositoryName = repositoryName, sourceCommitSpecifier = sourceCommitSpecifier)
     if (conflictDetailLevel != null) __obj.updateDynamic("conflictDetailLevel")(conflictDetailLevel.asInstanceOf[js.Any])
     if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
     if (filePaths != null) __obj.updateDynamic("filePaths")(filePaths)
-    if (!js.isUndefined(maxConflictFiles)) __obj.updateDynamic("maxConflictFiles")(maxConflictFiles)
-    if (!js.isUndefined(maxMergeHunks)) __obj.updateDynamic("maxMergeHunks")(maxMergeHunks)
+    if (maxConflictFiles != null) __obj.updateDynamic("maxConflictFiles")(maxConflictFiles.asInstanceOf[js.Any])
+    if (maxMergeHunks != null) __obj.updateDynamic("maxMergeHunks")(maxMergeHunks.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[BatchDescribeMergeConflictsInput]
   }

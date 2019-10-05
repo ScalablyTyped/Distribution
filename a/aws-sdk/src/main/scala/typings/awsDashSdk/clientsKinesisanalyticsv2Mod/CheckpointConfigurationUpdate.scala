@@ -26,16 +26,16 @@ trait CheckpointConfigurationUpdate extends js.Object {
 object CheckpointConfigurationUpdate {
   @scala.inline
   def apply(
-    CheckpointIntervalUpdate: js.UndefOr[CheckpointInterval] = js.undefined,
-    CheckpointingEnabledUpdate: js.UndefOr[BooleanObject] = js.undefined,
+    CheckpointIntervalUpdate: Int | Double = null,
+    CheckpointingEnabledUpdate: js.UndefOr[Boolean] = js.undefined,
     ConfigurationTypeUpdate: ConfigurationType = null,
-    MinPauseBetweenCheckpointsUpdate: js.UndefOr[MinPauseBetweenCheckpoints] = js.undefined
+    MinPauseBetweenCheckpointsUpdate: Int | Double = null
   ): CheckpointConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CheckpointIntervalUpdate)) __obj.updateDynamic("CheckpointIntervalUpdate")(CheckpointIntervalUpdate)
+    if (CheckpointIntervalUpdate != null) __obj.updateDynamic("CheckpointIntervalUpdate")(CheckpointIntervalUpdate.asInstanceOf[js.Any])
     if (!js.isUndefined(CheckpointingEnabledUpdate)) __obj.updateDynamic("CheckpointingEnabledUpdate")(CheckpointingEnabledUpdate)
     if (ConfigurationTypeUpdate != null) __obj.updateDynamic("ConfigurationTypeUpdate")(ConfigurationTypeUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinPauseBetweenCheckpointsUpdate)) __obj.updateDynamic("MinPauseBetweenCheckpointsUpdate")(MinPauseBetweenCheckpointsUpdate)
+    if (MinPauseBetweenCheckpointsUpdate != null) __obj.updateDynamic("MinPauseBetweenCheckpointsUpdate")(MinPauseBetweenCheckpointsUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckpointConfigurationUpdate]
   }
 }

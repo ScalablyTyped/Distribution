@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.VersionDefinition because var conflicts: description. Inlined build, major, minor, patch, prerelease, raw, version */ @JSImport("postman-collection", "Version")
 @js.native
 class Version () extends PropertyBase[VersionDefinition] {

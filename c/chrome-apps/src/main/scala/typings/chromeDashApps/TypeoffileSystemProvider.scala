@@ -1,31 +1,31 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.AbortRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.Action
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.CloseFileRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.ConfigureRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.CopyEntryRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.CreateDirectoryRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.CreateFileRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.DeleteEntryRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.EntryMetadata
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.ExecuteActionRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.FileSystemInfo
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.GetActionsRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.MetadataRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.MountOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.MoveEntryRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.NotificationOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.OpenFileRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.ReadDirectoryRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.ReadFileRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.TruncateRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.UnmountOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.UnmountRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.WatcherRequestedEventOptions
-import typings.chromeDashApps.chromeNs.fileSystemProviderNs.WriteFileRequestedEventOptions
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.fileSystemProvider.AbortRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.Action
+import typings.chromeDashApps.chrome.fileSystemProvider.CloseFileRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.ConfigureRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.CopyEntryRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.CreateDirectoryRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.CreateFileRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.DeleteEntryRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.EntryMetadata
+import typings.chromeDashApps.chrome.fileSystemProvider.ExecuteActionRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.FileSystemInfo
+import typings.chromeDashApps.chrome.fileSystemProvider.GetActionsRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.MetadataRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.MountOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.MoveEntryRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.NotificationOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.OpenFileRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.ReadDirectoryRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.ReadFileRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.TruncateRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.UnmountOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.UnmountRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.WatcherRequestedEventOptions
+import typings.chromeDashApps.chrome.fileSystemProvider.WriteFileRequestedEventOptions
 import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
@@ -52,6 +52,12 @@ trait TypeoffileSystemProvider extends js.Object {
     * For success, 'OK' must be used.
     * */
   val ProviderError: Anon_ABORT = js.native
+  /**
+    * Internal interfaces, not for use
+    * @private
+    * @internal
+    */
+  val _internal_ : js.Any = js.native
   /**
     * Raised when aborting an operation with operationRequestId is requested.
     * The operation executed with operationRequestId must be immediately stopped
@@ -537,12 +543,6 @@ trait TypeoffileSystemProvider extends js.Object {
       Unit
     ]
   ] = js.native
-  /**
-    * Internal interfaces, not for use
-    * @private
-    * @internal
-    */
-  val underscoreInternalUnderscoreNs: js.Any = js.native
   /**
     * Returns information about a file system with the passed fileSystemId.
     * @since Chrome 42.

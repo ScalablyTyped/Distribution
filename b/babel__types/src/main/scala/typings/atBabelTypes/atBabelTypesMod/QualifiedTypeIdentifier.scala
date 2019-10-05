@@ -39,3 +39,10 @@ object QualifiedTypeIdentifier {
   }
 }
 
+@JSImport("@babel/types", "qualifiedTypeIdentifier")
+@js.native
+object qualifiedTypeIdentifier extends js.Object {
+  def apply(id: Identifier, qualification: Identifier): QualifiedTypeIdentifier = js.native
+  def apply(id: Identifier, qualification: QualifiedTypeIdentifier): QualifiedTypeIdentifier = js.native
+}
+

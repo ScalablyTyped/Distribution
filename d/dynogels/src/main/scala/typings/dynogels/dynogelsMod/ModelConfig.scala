@@ -1,6 +1,6 @@
 package typings.dynogels.dynogelsMod
 
-import typings.dynogels.dynogelsMod.AWSNs.DynamoDB
+import typings.dynogels.dynogelsMod.AWS.DynamoDB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

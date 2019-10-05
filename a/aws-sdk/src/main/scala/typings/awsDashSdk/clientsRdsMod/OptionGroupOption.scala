@@ -74,7 +74,7 @@ trait OptionGroupOption extends js.Object {
 object OptionGroupOption {
   @scala.inline
   def apply(
-    DefaultPort: js.UndefOr[IntegerOptional] = js.undefined,
+    DefaultPort: Int | scala.Double = null,
     Description: String = null,
     EngineName: String = null,
     MajorEngineVersion: String = null,
@@ -84,15 +84,15 @@ object OptionGroupOption {
     OptionGroupOptionVersions: OptionGroupOptionVersionsList = null,
     OptionsConflictsWith: OptionsConflictsWith = null,
     OptionsDependedOn: OptionsDependedOn = null,
-    Permanent: js.UndefOr[Boolean] = js.undefined,
-    Persistent: js.UndefOr[Boolean] = js.undefined,
-    PortRequired: js.UndefOr[Boolean] = js.undefined,
-    RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.undefined,
-    VpcOnly: js.UndefOr[Boolean] = js.undefined
+    Permanent: js.UndefOr[scala.Boolean] = js.undefined,
+    Persistent: js.UndefOr[scala.Boolean] = js.undefined,
+    PortRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsOptionVersionDowngrade: js.UndefOr[scala.Boolean] = js.undefined,
+    VpcOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): OptionGroupOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DefaultPort)) __obj.updateDynamic("DefaultPort")(DefaultPort)
+    if (DefaultPort != null) __obj.updateDynamic("DefaultPort")(DefaultPort.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName)
     if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion)

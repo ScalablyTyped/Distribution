@@ -23,9 +23,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashNativeDashI18nMod extends js.Object {
   def getLanguages(): js.Promise[js.Array[String]] = js.native
-  @JSName("default")
   @js.native
-  object defaultNs extends js.Object {
+  object default extends js.Object {
     var defaultLocale: String = js.native
     var defaultSeparator: String = js.native
     var fallbacks: Boolean = js.native

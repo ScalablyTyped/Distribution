@@ -1,5 +1,6 @@
 package typings.bigDotJs.bigDotJsMod.Global
 
+import org.scalablytyped.runtime.TopLevel
 import typings.bigDotJs.bigDotJsMod.BigSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,4 +22,9 @@ class Big protected ()
     */
   def this(value: BigSource) = this()
 }
+
+@JSGlobal("Big")
+@js.native
+object Big
+  extends TopLevel[typings.bigDotJs.bigDotJsMod.Global.BigJs.BigConstructor]
 

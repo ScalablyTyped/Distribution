@@ -25,3 +25,10 @@ class EarlyStopping () extends Callback {
   /* protected */ def monitorFunc(currVal: Double, prevVal: Double): Boolean = js.native
 }
 
+@JSImport("@tensorflow/tfjs-layers/dist/callbacks", "earlyStopping")
+@js.native
+object earlyStopping extends js.Object {
+  def apply(): EarlyStopping = js.native
+  def apply(args: EarlyStoppingCallbackArgs): EarlyStopping = js.native
+}
+

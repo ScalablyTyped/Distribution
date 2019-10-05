@@ -16,9 +16,9 @@ trait MultiValueGenericProps[OptionType /* <: OptionTypeBase */] extends js.Obje
 
 object MultiValueGenericProps {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](children: ReactNode, data: OptionType, innerProps: Anon_ClassName, selectProps: js.Any): MultiValueGenericProps[OptionType] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], innerProps = innerProps, selectProps = selectProps)
-  
+  def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: Anon_ClassName, selectProps: js.Any, children: ReactNode = null): MultiValueGenericProps[OptionType] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps, selectProps = selectProps)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiValueGenericProps[OptionType]]
   }
 }

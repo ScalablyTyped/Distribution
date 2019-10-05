@@ -1,7 +1,7 @@
 package typings.telebot.telebotMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import typings.std.RegExp
 import typings.telebot.Anon_CacheTime

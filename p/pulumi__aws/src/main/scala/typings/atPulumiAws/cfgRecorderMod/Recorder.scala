@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgRecorderMod
 
-import typings.atPulumiAws.typesOutputMod.cfgNs.RecorderRecordingGroup
+import typings.atPulumiAws.typesOutputMod.cfg.RecorderRecordingGroup
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

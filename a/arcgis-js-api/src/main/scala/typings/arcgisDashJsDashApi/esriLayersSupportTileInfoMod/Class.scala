@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportTileInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TileInfoProperties
+import typings.arcgisDashJsDashApi.__esri.TileInfo
+import typings.arcgisDashJsDashApi.__esri.TileInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

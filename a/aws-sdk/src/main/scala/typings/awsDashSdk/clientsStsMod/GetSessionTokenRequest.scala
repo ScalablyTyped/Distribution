@@ -1,6 +1,6 @@
 package typings.awsDashSdk.clientsStsMod
 
-import typings.awsDashSdk.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentialsNs.TemporaryCredentialsOptions
+import typings.awsDashSdk.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,12 +23,12 @@ trait GetSessionTokenRequest extends TemporaryCredentialsOptions {
 object GetSessionTokenRequest {
   @scala.inline
   def apply(
-    DurationSeconds: js.UndefOr[durationSecondsType] = js.undefined,
+    DurationSeconds: Int | Double = null,
     SerialNumber: serialNumberType = null,
     TokenCode: tokenCodeType = null
   ): GetSessionTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds)
+    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
     if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber)
     if (TokenCode != null) __obj.updateDynamic("TokenCode")(TokenCode)
     __obj.asInstanceOf[GetSessionTokenRequest]

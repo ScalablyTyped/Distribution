@@ -38,7 +38,7 @@ object Options {
     maxRedirects: Int | Double = null,
     method: String = null,
     redirects: Int | Double = null,
-    timeout: js.UndefOr[ms] = js.undefined,
+    timeout: Int | Double = null,
     tls: TlsOptions = null,
     userAgent: String = null
   ): Options = {
@@ -53,7 +53,7 @@ object Options {
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
     __obj.asInstanceOf[Options]

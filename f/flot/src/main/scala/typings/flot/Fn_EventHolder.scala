@@ -1,6 +1,6 @@
 package typings.flot
 
-import typings.flot.jqueryNs.flotNs.plot
+import typings.flot.jquery.flot.plot
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -32,7 +32,7 @@ object UpdateThreatIntelSetRequest {
   def apply(
     DetectorId: DetectorId,
     ThreatIntelSetId: String,
-    Activate: js.UndefOr[Boolean] = js.undefined,
+    Activate: js.UndefOr[scala.Boolean] = js.undefined,
     Location: Location = null,
     Name: Name = null
   ): UpdateThreatIntelSetRequest = {

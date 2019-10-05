@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Explorer
+import typings.activexDashOutlook.Outlook.Explorer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Explorer extends js.Object {
-  val Explorer: typings.activexDashOutlook.OutlookNs.Explorer
+  val Explorer: typings.activexDashOutlook.Outlook.Explorer
 }
 
 object Anon_Explorer {

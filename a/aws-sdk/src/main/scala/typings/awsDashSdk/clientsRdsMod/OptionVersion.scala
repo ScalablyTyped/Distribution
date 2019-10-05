@@ -17,7 +17,7 @@ trait OptionVersion extends js.Object {
 
 object OptionVersion {
   @scala.inline
-  def apply(IsDefault: js.UndefOr[Boolean] = js.undefined, Version: String = null): OptionVersion = {
+  def apply(IsDefault: js.UndefOr[scala.Boolean] = js.undefined, Version: String = null): OptionVersion = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
     if (Version != null) __obj.updateDynamic("Version")(Version)

@@ -21,13 +21,9 @@ trait ListItemsRequest extends js.Object {
 
 object ListItemsRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[ListLimit] = js.undefined,
-    NextToken: PaginationToken = null,
-    Path: ListPathNaming = null
-  ): ListItemsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: PaginationToken = null, Path: ListPathNaming = null): ListItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Path != null) __obj.updateDynamic("Path")(Path)
     __obj.asInstanceOf[ListItemsRequest]

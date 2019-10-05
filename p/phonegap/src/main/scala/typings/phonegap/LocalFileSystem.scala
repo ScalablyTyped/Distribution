@@ -1,5 +1,6 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +15,7 @@ trait LocalFileSystem extends js.Object {
   var TEMPORARY: Double
 }
 
-object LocalFileSystem {
-  @scala.inline
-  def apply(PERSISTENT: Double, TEMPORARY: Double): LocalFileSystem = {
-    val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT, TEMPORARY = TEMPORARY)
-  
-    __obj.asInstanceOf[LocalFileSystem]
-  }
-}
+@JSGlobal("LocalFileSystem")
+@js.native
+object LocalFileSystem extends TopLevel[LocalFileSystem]
 

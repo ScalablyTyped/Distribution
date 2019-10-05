@@ -2,7 +2,7 @@ package typings.atJupyterlabObservables.libModeldbMod
 
 import typings.atJupyterlabObservables.atJupyterlabObservablesStrings.Map
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap
-import typings.atJupyterlabObservables.libObservablemapMod.IObservableMapNs.IChangedArgs
+import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.IChangedArgs
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`

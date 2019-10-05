@@ -54,9 +54,9 @@ object ListClosedWorkflowExecutionsInput {
     closeStatusFilter: CloseStatusFilter = null,
     closeTimeFilter: ExecutionTimeFilter = null,
     executionFilter: WorkflowExecutionFilter = null,
-    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
+    maximumPageSize: Int | Double = null,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined,
+    reverseOrder: js.UndefOr[Boolean] = js.undefined,
     startTimeFilter: ExecutionTimeFilter = null,
     tagFilter: TagFilter = null,
     typeFilter: WorkflowTypeFilter = null
@@ -65,7 +65,7 @@ object ListClosedWorkflowExecutionsInput {
     if (closeStatusFilter != null) __obj.updateDynamic("closeStatusFilter")(closeStatusFilter)
     if (closeTimeFilter != null) __obj.updateDynamic("closeTimeFilter")(closeTimeFilter)
     if (executionFilter != null) __obj.updateDynamic("executionFilter")(executionFilter)
-    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize)
+    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
     if (startTimeFilter != null) __obj.updateDynamic("startTimeFilter")(startTimeFilter)

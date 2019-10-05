@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("expect-puppeteer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(instance: ElementHandle[Element] | Page): ExpectPuppeteer = js.native
+  def apply(instance: ElementHandle[Element]): ExpectPuppeteer = js.native
+  def apply(instance: Page): ExpectPuppeteer = js.native
 }
 

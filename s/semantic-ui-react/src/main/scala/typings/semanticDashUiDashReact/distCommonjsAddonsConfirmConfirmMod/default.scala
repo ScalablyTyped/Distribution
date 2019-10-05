@@ -1,6 +1,8 @@
 package typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: ConfirmProps) = this()
   def this(props: ConfirmProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react/dist/commonjs/addons/Confirm/Confirm", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentClass[ConfirmProps, ComponentState]]
 

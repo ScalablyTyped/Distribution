@@ -8,12 +8,15 @@ trait Noise extends js.Object {
   def get(x: Double, y: Double): Double
 }
 
-object Noise {
-  @scala.inline
-  def apply(get: (Double, Double) => Double): Noise = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
-    __obj.asInstanceOf[Noise]
+@JSImport("rot-js", "Noise")
+@js.native
+object Noise extends js.Object {
+  @js.native
+  class Simplex () extends Noise {
+    def this(gradients: Double) = this()
+    /* CompleteClass */
+    override def get(x: Double, y: Double): Double = js.native
   }
+  
 }
 

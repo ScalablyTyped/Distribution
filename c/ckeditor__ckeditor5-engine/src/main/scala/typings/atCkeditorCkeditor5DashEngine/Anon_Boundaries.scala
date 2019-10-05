@@ -1,8 +1,8 @@
 package typings.atCkeditorCkeditor5DashEngine
 
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.Position
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.Range
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerDirection
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.Position
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.Range
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.TreeWalkerDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

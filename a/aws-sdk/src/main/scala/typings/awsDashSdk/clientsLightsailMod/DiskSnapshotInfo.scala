@@ -13,9 +13,9 @@ trait DiskSnapshotInfo extends js.Object {
 
 object DiskSnapshotInfo {
   @scala.inline
-  def apply(sizeInGb: js.UndefOr[integer] = js.undefined): DiskSnapshotInfo = {
+  def apply(sizeInGb: Int | Double = null): DiskSnapshotInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb)
+    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskSnapshotInfo]
   }
 }

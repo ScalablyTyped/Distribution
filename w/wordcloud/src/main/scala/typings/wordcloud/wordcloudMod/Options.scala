@@ -1,5 +1,6 @@
 package typings.wordcloud.wordcloudMod
 
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,7 +124,7 @@ object Options {
       String
     ]) = null,
     clearCanvas: js.UndefOr[Boolean] = js.undefined,
-    click: EventCallback = null,
+    click: (/* item */ ListEntry, /* dimension */ Dimension, /* event */ MouseEvent) => Unit = null,
     color: String | (js.Function5[
       /* word */ String, 
       /* weight */ String | Double, 
@@ -138,7 +139,7 @@ object Options {
     fontFamily: String = null,
     fontWeight: String | Double = null,
     gridSize: Int | Double = null,
-    hover: EventCallback = null,
+    hover: (/* item */ ListEntry, /* dimension */ Dimension, /* event */ MouseEvent) => Unit = null,
     list: js.Array[_ | ListEntry] = null,
     maskColor: String = null,
     maskGapWidth: Int | Double = null,
@@ -158,7 +159,7 @@ object Options {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction3(click))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(drawMask)) __obj.updateDynamic("drawMask")(drawMask)
     if (!js.isUndefined(drawOutOfBound)) __obj.updateDynamic("drawOutOfBound")(drawOutOfBound)
@@ -166,7 +167,7 @@ object Options {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction3(hover))
     if (list != null) __obj.updateDynamic("list")(list)
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
     if (maskGapWidth != null) __obj.updateDynamic("maskGapWidth")(maskGapWidth.asInstanceOf[js.Any])

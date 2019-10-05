@@ -1,8 +1,8 @@
 package typings.activexDashDiskquota
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.DIDiskQuotaUser
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.DiskQuotaControl
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

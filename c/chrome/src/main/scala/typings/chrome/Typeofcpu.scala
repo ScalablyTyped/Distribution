@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.systemNs.cpuNs.CpuInfo
+import typings.chrome.chrome.system.cpu.CpuInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,8 +17,8 @@ import typings.atOracleOraclejet.ojeditablevalueMod.editableValueSettablePropert
 import typings.atOracleOraclejet.ojmessagingMod.^
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

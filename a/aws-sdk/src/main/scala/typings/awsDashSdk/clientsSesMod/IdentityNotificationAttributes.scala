@@ -42,9 +42,9 @@ object IdentityNotificationAttributes {
     ComplaintTopic: NotificationTopic,
     DeliveryTopic: NotificationTopic,
     ForwardingEnabled: Enabled,
-    HeadersInBounceNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
-    HeadersInComplaintNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
-    HeadersInDeliveryNotificationsEnabled: js.UndefOr[Enabled] = js.undefined
+    HeadersInBounceNotificationsEnabled: js.UndefOr[Boolean] = js.undefined,
+    HeadersInComplaintNotificationsEnabled: js.UndefOr[Boolean] = js.undefined,
+    HeadersInDeliveryNotificationsEnabled: js.UndefOr[Boolean] = js.undefined
   ): IdentityNotificationAttributes = {
     val __obj = js.Dynamic.literal(BounceTopic = BounceTopic, ComplaintTopic = ComplaintTopic, DeliveryTopic = DeliveryTopic, ForwardingEnabled = ForwardingEnabled)
     if (!js.isUndefined(HeadersInBounceNotificationsEnabled)) __obj.updateDynamic("HeadersInBounceNotificationsEnabled")(HeadersInBounceNotificationsEnabled)

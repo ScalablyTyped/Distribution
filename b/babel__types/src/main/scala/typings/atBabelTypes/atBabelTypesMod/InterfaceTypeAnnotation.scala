@@ -41,3 +41,11 @@ object InterfaceTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "interfaceTypeAnnotation")
+@js.native
+object interfaceTypeAnnotation extends js.Object {
+  def apply(_extends: js.UndefOr[scala.Nothing], body: ObjectTypeAnnotation): InterfaceTypeAnnotation = js.native
+  def apply(_extends: js.Array[InterfaceExtends], body: ObjectTypeAnnotation): InterfaceTypeAnnotation = js.native
+  def apply(_extends: Null, body: ObjectTypeAnnotation): InterfaceTypeAnnotation = js.native
+}
+

@@ -2,7 +2,7 @@ package typings.conf.confMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`

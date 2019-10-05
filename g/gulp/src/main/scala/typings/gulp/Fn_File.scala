@@ -1,6 +1,6 @@
 package typings.gulp
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.vinylMod.File
 import typings.vinylDashFs.Anon_Cwd
 import typings.vinylDashFs.Anon_CwdDirMode

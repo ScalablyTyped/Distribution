@@ -1,15 +1,15 @@
 package typings.griddleDashReact.griddleDashReactMod
 
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.CellProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.FilterProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.RowProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsToggleProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.SettingsWrapperProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableBodyProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingCellProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableHeadingProps
-import typings.griddleDashReact.griddleDashReactMod.componentsNs.TableProps
+import typings.griddleDashReact.griddleDashReactMod.components.CellProps
+import typings.griddleDashReact.griddleDashReactMod.components.FilterProps
+import typings.griddleDashReact.griddleDashReactMod.components.RowProps
+import typings.griddleDashReact.griddleDashReactMod.components.SettingsProps
+import typings.griddleDashReact.griddleDashReactMod.components.SettingsToggleProps
+import typings.griddleDashReact.griddleDashReactMod.components.SettingsWrapperProps
+import typings.griddleDashReact.griddleDashReactMod.components.TableBodyProps
+import typings.griddleDashReact.griddleDashReactMod.components.TableHeadingCellProps
+import typings.griddleDashReact.griddleDashReactMod.components.TableHeadingProps
+import typings.griddleDashReact.griddleDashReactMod.components.TableProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

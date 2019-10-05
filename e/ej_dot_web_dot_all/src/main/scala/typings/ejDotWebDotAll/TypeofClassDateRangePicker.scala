@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.DateRangePicker
-import typings.ejDotWebDotAll.ejNs.DateRangePickerNs.Model
+import typings.ejDotWebDotAll.ej.DateRangePicker
+import typings.ejDotWebDotAll.ej.DateRangePicker.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -34,8 +34,8 @@ trait ListAccountSettingsRequest extends js.Object {
 object ListAccountSettingsRequest {
   @scala.inline
   def apply(
-    effectiveSettings: js.UndefOr[Boolean] = js.undefined,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    effectiveSettings: js.UndefOr[scala.Boolean] = js.undefined,
+    maxResults: Int | scala.Double = null,
     name: SettingName = null,
     nextToken: String = null,
     principalArn: String = null,
@@ -43,7 +43,7 @@ object ListAccountSettingsRequest {
   ): ListAccountSettingsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(effectiveSettings)) __obj.updateDynamic("effectiveSettings")(effectiveSettings)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (principalArn != null) __obj.updateDynamic("principalArn")(principalArn)

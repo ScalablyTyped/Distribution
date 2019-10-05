@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersDotDensityRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DotDensityRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DotDensityRendererProperties
+import typings.arcgisDashJsDashApi.__esri.DotDensityRenderer
+import typings.arcgisDashJsDashApi.__esri.DotDensityRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

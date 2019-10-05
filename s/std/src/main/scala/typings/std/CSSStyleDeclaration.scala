@@ -514,9 +514,5 @@ trait CSSStyleDeclaration
 
 @JSGlobal("CSSStyleDeclaration")
 @js.native
-class CSSStyleDeclarationCls () extends CSSStyleDeclaration
-
-@JSGlobal("CSSStyleDeclaration")
-@js.native
 object CSSStyleDeclaration extends Instantiable0[CSSStyleDeclaration]
 

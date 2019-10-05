@@ -76,7 +76,7 @@ object RequestSpotLaunchSpecification {
   def apply(
     AddressingType: String = null,
     BlockDeviceMappings: BlockDeviceMappingList = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
     IamInstanceProfile: IamInstanceProfileSpecification = null,
     ImageId: String = null,
     InstanceType: InstanceType = null,

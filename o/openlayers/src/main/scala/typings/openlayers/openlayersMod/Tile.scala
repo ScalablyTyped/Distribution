@@ -1,7 +1,7 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.TileNs.State
-import typings.openlayers.openlayersMod.eventsNs.EventTarget
+import typings.openlayers.openlayersMod.Tile.State
+import typings.openlayers.openlayersMod.events.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,5 +30,11 @@ class Tile protected () extends EventTarget {
     * @api
     */
   def load(): Unit = js.native
+}
+
+@JSImport("openlayers", "Tile")
+@js.native
+object Tile extends js.Object {
+  type State = Double
 }
 

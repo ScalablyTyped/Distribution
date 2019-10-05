@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distRegularizersMod
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serializationNs.Serializable
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serialization.Serializable
 import typings.atTensorflowTfjsDashCore.distSerializationMod.ConfigDict
 import typings.atTensorflowTfjsDashCore.distSerializationMod.SerializableConstructor
 import scala.scalajs.js

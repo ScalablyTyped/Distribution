@@ -1,7 +1,7 @@
 package typings.amapDashJsDashSdk
 
-import typings.amapDashJsDashSdk.AMapNs.DrivingPolicy
-import typings.amapDashJsDashSdk.AMapNs.Map
+import typings.amapDashJsDashSdk.AMap.DrivingPolicy
+import typings.amapDashJsDashSdk.AMap.Map
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

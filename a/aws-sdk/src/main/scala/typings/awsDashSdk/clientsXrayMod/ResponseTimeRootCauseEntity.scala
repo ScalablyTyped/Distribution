@@ -22,12 +22,12 @@ trait ResponseTimeRootCauseEntity extends js.Object {
 object ResponseTimeRootCauseEntity {
   @scala.inline
   def apply(
-    Coverage: js.UndefOr[NullableDouble] = js.undefined,
+    Coverage: Int | scala.Double = null,
     Name: String = null,
-    Remote: js.UndefOr[NullableBoolean] = js.undefined
+    Remote: js.UndefOr[scala.Boolean] = js.undefined
   ): ResponseTimeRootCauseEntity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Coverage)) __obj.updateDynamic("Coverage")(Coverage)
+    if (Coverage != null) __obj.updateDynamic("Coverage")(Coverage.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (!js.isUndefined(Remote)) __obj.updateDynamic("Remote")(Remote)
     __obj.asInstanceOf[ResponseTimeRootCauseEntity]

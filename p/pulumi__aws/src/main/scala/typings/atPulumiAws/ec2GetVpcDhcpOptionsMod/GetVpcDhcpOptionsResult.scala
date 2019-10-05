@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetVpcDhcpOptionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcDhcpOptionsFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetVpcDhcpOptionsFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

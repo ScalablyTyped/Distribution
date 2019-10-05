@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_AccessibilityComments
 import typings.astDashTypes.genKindsMod.AssignmentPatternKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSParameterProperty
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSParameterProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

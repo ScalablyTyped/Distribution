@@ -35,17 +35,17 @@ object DescribeHostReservationOfferingsRequest {
   @scala.inline
   def apply(
     Filter: FilterList = null,
-    MaxDuration: js.UndefOr[Integer] = js.undefined,
-    MaxResults: js.UndefOr[DescribeHostReservationsMaxResults] = js.undefined,
-    MinDuration: js.UndefOr[Integer] = js.undefined,
+    MaxDuration: Int | scala.Double = null,
+    MaxResults: Int | scala.Double = null,
+    MinDuration: Int | scala.Double = null,
     NextToken: String = null,
     OfferingId: String = null
   ): DescribeHostReservationOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(MaxDuration)) __obj.updateDynamic("MaxDuration")(MaxDuration)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
-    if (!js.isUndefined(MinDuration)) __obj.updateDynamic("MinDuration")(MinDuration)
+    if (MaxDuration != null) __obj.updateDynamic("MaxDuration")(MaxDuration.asInstanceOf[js.Any])
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (MinDuration != null) __obj.updateDynamic("MinDuration")(MinDuration.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId)
     __obj.asInstanceOf[DescribeHostReservationOfferingsRequest]

@@ -34,7 +34,7 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(
-    ContentLength: js.UndefOr[NonNegativeLong] = js.undefined,
+    ContentLength: Int | Double = null,
     ContentType: ContentType = null,
     ETag: ETag = null,
     LastModified: TimeStamp = null,
@@ -42,7 +42,7 @@ object Item {
     Type: ItemType = null
   ): Item = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength)
+    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
     if (ETag != null) __obj.updateDynamic("ETag")(ETag)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)

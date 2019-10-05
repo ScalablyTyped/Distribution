@@ -1,14 +1,14 @@
 package typings.atJupyterlabApplication.libShellMod
 
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
-import typings.atJupyterlabApplication.libShellMod.ILabShellNs.Area
-import typings.atJupyterlabApplication.libShellMod.ILabShellNs.IChangedArgs
-import typings.atJupyterlabApplication.libShellMod.ILabShellNs.ILayout
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IOpenOptions
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
+import typings.atJupyterlabApplication.libShellMod.ILabShell.Area
+import typings.atJupyterlabApplication.libShellMod.ILabShell.IChangedArgs
+import typings.atJupyterlabApplication.libShellMod.ILabShell.ILayout
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
-import typings.atPhosphorWidgets.libDockpanelMod.DockPanelNs.Mode
+import typings.atPhosphorWidgets.libDockpanelMod.DockPanel.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

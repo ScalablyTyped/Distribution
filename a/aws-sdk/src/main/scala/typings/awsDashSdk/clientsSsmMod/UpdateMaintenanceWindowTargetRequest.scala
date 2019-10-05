@@ -43,7 +43,7 @@ object UpdateMaintenanceWindowTargetRequest {
     Description: MaintenanceWindowDescription = null,
     Name: MaintenanceWindowName = null,
     OwnerInformation: OwnerInformation = null,
-    Replace: js.UndefOr[Boolean] = js.undefined,
+    Replace: js.UndefOr[scala.Boolean] = js.undefined,
     Targets: Targets = null
   ): UpdateMaintenanceWindowTargetRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId, WindowTargetId = WindowTargetId)

@@ -1,0 +1,15 @@
+package typings.d3.d3Mod
+
+import typings.d3.d3Strings.html
+import typings.d3DashSelection.d3DashSelectionMod.BaseType
+import typings.std.HTMLHtmlElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("d3", "creator")
+@js.native
+object creator_html extends js.Object {
+  def apply(name: html): js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement] = js.native
+}
+

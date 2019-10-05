@@ -22,3 +22,9 @@ object Property {
   }
 }
 
+@JSImport("css-tree", "property")
+@js.native
+object property extends js.Object {
+  def apply(value: String): Property = js.native
+}
+

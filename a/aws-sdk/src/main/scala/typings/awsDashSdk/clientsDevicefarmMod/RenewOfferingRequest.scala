@@ -17,10 +17,10 @@ trait RenewOfferingRequest extends js.Object {
 
 object RenewOfferingRequest {
   @scala.inline
-  def apply(offeringId: OfferingIdentifier = null, quantity: js.UndefOr[Integer] = js.undefined): RenewOfferingRequest = {
+  def apply(offeringId: OfferingIdentifier = null, quantity: Int | scala.Double = null): RenewOfferingRequest = {
     val __obj = js.Dynamic.literal()
     if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId)
-    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewOfferingRequest]
   }
 }

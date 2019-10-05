@@ -39,3 +39,9 @@ object TSAsExpression {
   }
 }
 
+@JSImport("@babel/types", "tsAsExpression")
+@js.native
+object tsAsExpression extends js.Object {
+  def apply(expression: Expression, typeAnnotation: TSType): TSAsExpression = js.native
+}
+

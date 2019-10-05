@@ -1,7 +1,7 @@
 package typings.duplexer3.duplexer3Mod
 
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -129,7 +129,7 @@ object AutomationExecution {
     ProgressCounters: ProgressCounters = null,
     ResolvedTargets: ResolvedTargets = null,
     StepExecutions: StepExecutionList = null,
-    StepExecutionsTruncated: js.UndefOr[Boolean] = js.undefined,
+    StepExecutionsTruncated: js.UndefOr[scala.Boolean] = js.undefined,
     Target: String = null,
     TargetLocations: TargetLocations = null,
     TargetMaps: TargetMaps = null,

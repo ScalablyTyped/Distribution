@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.ClinicalImpression
+import typings.fhir.fhir.ClinicalImpression
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

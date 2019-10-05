@@ -1,6 +1,6 @@
 package typings.vscodeDashJsonrpc.libMessageReaderMod
 
-import typings.node.NodeJSNs.Process
+import typings.node.NodeJS.Process
 import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.std.Error
 import typings.vscodeDashJsonrpc.libEventsMod.Disposable

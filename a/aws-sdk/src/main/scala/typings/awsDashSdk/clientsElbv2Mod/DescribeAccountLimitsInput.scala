@@ -17,10 +17,10 @@ trait DescribeAccountLimitsInput extends js.Object {
 
 object DescribeAccountLimitsInput {
   @scala.inline
-  def apply(Marker: Marker = null, PageSize: js.UndefOr[PageSize] = js.undefined): DescribeAccountLimitsInput = {
+  def apply(Marker: Marker = null, PageSize: Int | Double = null): DescribeAccountLimitsInput = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountLimitsInput]
   }
 }

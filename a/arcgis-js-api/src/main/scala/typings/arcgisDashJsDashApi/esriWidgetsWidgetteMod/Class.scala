@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriWidgetsWidgetteMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Widgette
+import typings.arcgisDashJsDashApi.__esri.Widgette
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

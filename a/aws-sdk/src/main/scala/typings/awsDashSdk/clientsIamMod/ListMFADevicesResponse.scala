@@ -23,7 +23,7 @@ object ListMFADevicesResponse {
   @scala.inline
   def apply(
     MFADevices: mfaDeviceListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListMFADevicesResponse = {
     val __obj = js.Dynamic.literal(MFADevices = MFADevices)

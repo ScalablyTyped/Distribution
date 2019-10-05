@@ -1,7 +1,7 @@
 package typings.ably
 
-import typings.ably.ablyMod.TypesNs.DevicePushState
-import typings.ably.ablyMod.TypesNs.capabilityOp
+import typings.ably.ablyMod.Types.DevicePushState
+import typings.ably.ablyMod.Types.capabilityOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2clientvpnEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2clientvpnNs.EndpointAuthenticationOptions
-import typings.atPulumiAws.typesOutputMod.ec2clientvpnNs.EndpointConnectionLogOptions
+import typings.atPulumiAws.typesOutputMod.ec2clientvpn.EndpointAuthenticationOptions
+import typings.atPulumiAws.typesOutputMod.ec2clientvpn.EndpointConnectionLogOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

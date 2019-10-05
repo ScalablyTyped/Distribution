@@ -13,12 +13,6 @@ trait PromiseRejectionEvent extends Event {
 
 @JSGlobal("PromiseRejectionEvent")
 @js.native
-class PromiseRejectionEventCls protected () extends PromiseRejectionEvent {
-  def this(`type`: java.lang.String, eventInitDict: PromiseRejectionEventInit) = this()
-}
-
-@JSGlobal("PromiseRejectionEvent")
-@js.native
 object PromiseRejectionEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

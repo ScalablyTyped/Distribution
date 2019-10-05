@@ -5,6 +5,7 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.sourceWMSServerTypeMod.WMSServerType
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +43,7 @@ object Options {
     serverType: WMSServerType | String = null,
     tileClass: typings.ol.imageTileMod.default = null,
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     transition: Int | Double = null,
     url: String = null,
     urls: js.Array[String] = null,
@@ -59,7 +60,7 @@ object Options {
     if (serverType != null) __obj.updateDynamic("serverType")(serverType.asInstanceOf[js.Any])
     if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (urls != null) __obj.updateDynamic("urls")(urls)

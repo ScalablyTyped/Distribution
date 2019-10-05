@@ -1,11 +1,11 @@
 package typings.atPulumiAws.elastictranscoderPresetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetAudio
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetAudioCodecOptions
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetThumbnails
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetVideo
-import typings.atPulumiAws.typesInputMod.elastictranscoderNs.PresetVideoWatermark
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PresetAudio
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PresetAudioCodecOptions
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PresetThumbnails
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PresetVideo
+import typings.atPulumiAws.typesInputMod.elastictranscoder.PresetVideoWatermark
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -23,12 +23,16 @@ trait Color extends js.Object {
   val red: Double
 }
 
-object Color {
-  @scala.inline
-  def apply(alpha: Double, blue: Double, green: Double, red: Double): Color = {
-    val __obj = js.Dynamic.literal(alpha = alpha, blue = blue, green = green, red = red)
-  
-    __obj.asInstanceOf[Color]
-  }
+@JSImport("vscode-languageserver-types", "Color")
+@js.native
+object Color extends js.Object {
+  /**
+    * Creates a new Color literal.
+    */
+  def create(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
+  /**
+    * Checks whether the given literal conforms to the [Color](#Color) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = js.native
 }
 

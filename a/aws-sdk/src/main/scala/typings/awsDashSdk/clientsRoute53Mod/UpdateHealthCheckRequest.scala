@@ -81,16 +81,16 @@ object UpdateHealthCheckRequest {
     HealthCheckId: HealthCheckId,
     AlarmIdentifier: AlarmIdentifier = null,
     ChildHealthChecks: ChildHealthCheckList = null,
-    Disabled: js.UndefOr[Disabled] = js.undefined,
-    EnableSNI: js.UndefOr[EnableSNI] = js.undefined,
-    FailureThreshold: js.UndefOr[FailureThreshold] = js.undefined,
+    Disabled: js.UndefOr[Boolean] = js.undefined,
+    EnableSNI: js.UndefOr[Boolean] = js.undefined,
+    FailureThreshold: Int | Double = null,
     FullyQualifiedDomainName: FullyQualifiedDomainName = null,
-    HealthCheckVersion: js.UndefOr[HealthCheckVersion] = js.undefined,
-    HealthThreshold: js.UndefOr[HealthThreshold] = js.undefined,
+    HealthCheckVersion: Int | Double = null,
+    HealthThreshold: Int | Double = null,
     IPAddress: IPAddress = null,
     InsufficientDataHealthStatus: InsufficientDataHealthStatus = null,
-    Inverted: js.UndefOr[Inverted] = js.undefined,
-    Port: js.UndefOr[Port] = js.undefined,
+    Inverted: js.UndefOr[Boolean] = js.undefined,
+    Port: Int | Double = null,
     Regions: HealthCheckRegionList = null,
     ResetElements: ResettableElementNameList = null,
     ResourcePath: ResourcePath = null,
@@ -101,14 +101,14 @@ object UpdateHealthCheckRequest {
     if (ChildHealthChecks != null) __obj.updateDynamic("ChildHealthChecks")(ChildHealthChecks)
     if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled)
     if (!js.isUndefined(EnableSNI)) __obj.updateDynamic("EnableSNI")(EnableSNI)
-    if (!js.isUndefined(FailureThreshold)) __obj.updateDynamic("FailureThreshold")(FailureThreshold)
+    if (FailureThreshold != null) __obj.updateDynamic("FailureThreshold")(FailureThreshold.asInstanceOf[js.Any])
     if (FullyQualifiedDomainName != null) __obj.updateDynamic("FullyQualifiedDomainName")(FullyQualifiedDomainName)
-    if (!js.isUndefined(HealthCheckVersion)) __obj.updateDynamic("HealthCheckVersion")(HealthCheckVersion)
-    if (!js.isUndefined(HealthThreshold)) __obj.updateDynamic("HealthThreshold")(HealthThreshold)
+    if (HealthCheckVersion != null) __obj.updateDynamic("HealthCheckVersion")(HealthCheckVersion.asInstanceOf[js.Any])
+    if (HealthThreshold != null) __obj.updateDynamic("HealthThreshold")(HealthThreshold.asInstanceOf[js.Any])
     if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress)
     if (InsufficientDataHealthStatus != null) __obj.updateDynamic("InsufficientDataHealthStatus")(InsufficientDataHealthStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(Inverted)) __obj.updateDynamic("Inverted")(Inverted)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Regions != null) __obj.updateDynamic("Regions")(Regions)
     if (ResetElements != null) __obj.updateDynamic("ResetElements")(ResetElements)
     if (ResourcePath != null) __obj.updateDynamic("ResourcePath")(ResourcePath)

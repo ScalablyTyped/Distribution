@@ -29,3 +29,9 @@ object Variable extends js.Object {
   var termType: String = js.native
 }
 
+@JSImport("rdflib", "variable")
+@js.native
+object variable extends js.Object {
+  def apply(name: String): Variable = js.native
+}
+

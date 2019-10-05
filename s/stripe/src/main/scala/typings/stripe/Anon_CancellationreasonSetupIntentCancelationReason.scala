@@ -1,6 +1,6 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.setupIntentsNs.SetupIntentCancelationReason
+import typings.stripe.stripeMod.setupIntents.SetupIntentCancelationReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

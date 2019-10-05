@@ -43,3 +43,9 @@ object DoWhileStatement {
   }
 }
 
+@JSImport("@babel/types", "doWhileStatement")
+@js.native
+object doWhileStatement extends js.Object {
+  def apply(test: Expression, body: Statement): DoWhileStatement = js.native
+}
+

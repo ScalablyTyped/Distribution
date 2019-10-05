@@ -1,7 +1,7 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.StaveLineNs.TextJustification
-import typings.vexflow.VexNs.FlowNs.StaveLineNs.TextVerticalPosition
+import typings.vexflow.Vex.Flow.StaveLine.TextJustification
+import typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -35,3 +35,9 @@ object TSBooleanKeyword {
   }
 }
 
+@JSImport("@babel/types", "tsBooleanKeyword")
+@js.native
+object tsBooleanKeyword extends js.Object {
+  def apply(): TSBooleanKeyword = js.native
+}
+

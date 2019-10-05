@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotSheets
 
-import typings.gapiDotClientDotSheets.gapiNs.clientNs.sheetsNs.CopySheetToAnotherSpreadsheetRequest
+import typings.gapiDotClientDotSheets.gapi.client.sheets.CopySheetToAnotherSpreadsheetRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

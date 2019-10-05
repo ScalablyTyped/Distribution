@@ -1,8 +1,8 @@
 package typings.openjscad
 
-import typings.openjscad.CSGNs.Matrix4x4
-import typings.openjscad.CSGNs.Plane
-import typings.openjscad.CSGNs.Vector3D
+import typings.openjscad.CSG.Matrix4x4
+import typings.openjscad.CSG.Plane
+import typings.openjscad.CSG.Vector3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

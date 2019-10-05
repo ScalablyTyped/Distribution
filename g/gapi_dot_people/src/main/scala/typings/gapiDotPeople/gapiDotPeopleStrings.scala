@@ -1,9 +1,9 @@
 package typings.gapiDotPeople
 
-import typings.gapiDotPeople.gapiNs.clientNs.peopleNs.NicknameType
-import typings.gapiDotPeople.gapiNs.clientNs.peopleNs.ObjectType
-import typings.gapiDotPeople.gapiNs.clientNs.peopleNs.SourceType
-import typings.gapiDotPeople.gapiNs.clientNs.peopleNs.peopleNs.connectionsNs.SortOrder
+import typings.gapiDotPeople.gapi.client.people.NicknameType
+import typings.gapiDotPeople.gapi.client.people.ObjectType
+import typings.gapiDotPeople.gapi.client.people.SourceType
+import typings.gapiDotPeople.gapi.client.people.people.connections.SortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

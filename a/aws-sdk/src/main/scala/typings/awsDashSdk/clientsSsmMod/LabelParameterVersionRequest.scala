@@ -21,13 +21,9 @@ trait LabelParameterVersionRequest extends js.Object {
 
 object LabelParameterVersionRequest {
   @scala.inline
-  def apply(
-    Labels: ParameterLabelList,
-    Name: PSParameterName,
-    ParameterVersion: js.UndefOr[PSParameterVersion] = js.undefined
-  ): LabelParameterVersionRequest = {
+  def apply(Labels: ParameterLabelList, Name: PSParameterName, ParameterVersion: Int | Double = null): LabelParameterVersionRequest = {
     val __obj = js.Dynamic.literal(Labels = Labels, Name = Name)
-    if (!js.isUndefined(ParameterVersion)) __obj.updateDynamic("ParameterVersion")(ParameterVersion)
+    if (ParameterVersion != null) __obj.updateDynamic("ParameterVersion")(ParameterVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelParameterVersionRequest]
   }
 }

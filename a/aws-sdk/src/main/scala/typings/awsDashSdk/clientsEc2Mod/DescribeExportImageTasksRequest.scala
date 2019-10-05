@@ -30,17 +30,17 @@ trait DescribeExportImageTasksRequest extends js.Object {
 object DescribeExportImageTasksRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ExportImageTaskIds: ExportImageTaskIdList = null,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeExportImageTasksMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null
   ): DescribeExportImageTasksRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (ExportImageTaskIds != null) __obj.updateDynamic("ExportImageTaskIds")(ExportImageTaskIds)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeExportImageTasksRequest]
   }

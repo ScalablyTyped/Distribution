@@ -1,11 +1,11 @@
 package typings.webgme
 
-import typings.webgme.CoreNs.DataObject
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeClassesNs.LibraryInfo
-import typings.webgme.GmeCommonNs.MetadataHash
-import typings.webgme.GmeCommonNs.Name
-import typings.webgme.GmeCommonNs.ResultCallback
+import typings.webgme.Core.DataObject
+import typings.webgme.Core.Node
+import typings.webgme.GmeClasses.LibraryInfo
+import typings.webgme.GmeCommon.MetadataHash
+import typings.webgme.GmeCommon.Name
+import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

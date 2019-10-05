@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViews2dViewStateMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Extent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewState
+import typings.arcgisDashJsDashApi.__esri.Extent
+import typings.arcgisDashJsDashApi.__esri.ViewState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

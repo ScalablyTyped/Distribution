@@ -1,0 +1,20 @@
+package typings.typedoc
+
+import typings.typedoc.distLibModelsTypesAbstractMod.Type
+import typings.typedoc.distLibModelsTypesTupleMod.TupleType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("typedoc/dist/lib/models/types/tuple", JSImport.Namespace)
+@js.native
+object distLibModelsTypesTupleMod extends js.Object {
+  @js.native
+  class TupleType protected () extends Type {
+    def this(elements: js.Array[Type]) = this()
+    var elements: js.Array[Type] = js.native
+    def equals(`type`: TupleType): Boolean = js.native
+  }
+  
+}
+

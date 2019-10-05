@@ -16,3 +16,13 @@ class Polygon[P] protected ()
   ) = this()
 }
 
+@JSImport("leaflet", "polygon")
+@js.native
+object polygon extends js.Object {
+  def apply(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): Polygon[_] = js.native
+  def apply(
+    latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression],
+    options: PolylineOptions
+  ): Polygon[_] = js.native
+}
+

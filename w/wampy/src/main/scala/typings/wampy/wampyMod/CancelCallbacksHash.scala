@@ -11,10 +11,10 @@ trait CancelCallbacksHash extends js.Object {
 
 object CancelCallbacksHash {
   @scala.inline
-  def apply(onError: Callback = null, onSuccess: Callback = null): CancelCallbacksHash = {
+  def apply(onError: () => Unit = null, onSuccess: () => Unit = null): CancelCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     __obj.asInstanceOf[CancelCallbacksHash]
   }
 }

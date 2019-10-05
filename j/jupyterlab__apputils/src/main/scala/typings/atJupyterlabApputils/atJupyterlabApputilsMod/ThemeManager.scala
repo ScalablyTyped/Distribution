@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libThememanagerMod.ThemeManagerNs.IOptions
+import typings.atJupyterlabApputils.libThememanagerMod.ThemeManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

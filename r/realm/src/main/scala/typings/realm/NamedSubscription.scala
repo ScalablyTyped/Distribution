@@ -1,6 +1,6 @@
 package typings.realm
 
-import typings.realm.RealmNs.SyncNs.SubscriptionState
+import typings.realm.Realm.Sync.SubscriptionState
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

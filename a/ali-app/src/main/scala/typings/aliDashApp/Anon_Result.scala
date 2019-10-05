@@ -1,6 +1,6 @@
 package typings.aliDashApp
 
-import typings.aliDashApp.myNs.MultiLevelSelectItem
+import typings.aliDashApp.my.MultiLevelSelectItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serializationNs.Serializable
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serialization.Serializable
 import typings.atTensorflowTfjsDashCore.distSerializationMod.ConfigDict
 import typings.atTensorflowTfjsDashCore.distSerializationMod.SerializableConstructor
 import typings.atTensorflowTfjsDashLayers.distModelsMod.SequentialArgs
@@ -30,5 +30,12 @@ object Sequential extends js.Object {
     customObjects: ConfigDict,
     fastWeightInit: Boolean
   ): T = js.native
+}
+
+@JSImport("@tensorflow/tfjs-node", "sequential")
+@js.native
+object sequential extends js.Object {
+  def apply(): typings.atTensorflowTfjsDashLayers.distModelsMod.Sequential = js.native
+  def apply(config: SequentialArgs): typings.atTensorflowTfjsDashLayers.distModelsMod.Sequential = js.native
 }
 

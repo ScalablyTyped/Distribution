@@ -31,17 +31,17 @@ object WorkspaceProperties {
   @scala.inline
   def apply(
     ComputeTypeName: Compute = null,
-    RootVolumeSizeGib: js.UndefOr[RootVolumeSizeGib] = js.undefined,
+    RootVolumeSizeGib: Int | Double = null,
     RunningMode: RunningMode = null,
-    RunningModeAutoStopTimeoutInMinutes: js.UndefOr[RunningModeAutoStopTimeoutInMinutes] = js.undefined,
-    UserVolumeSizeGib: js.UndefOr[UserVolumeSizeGib] = js.undefined
+    RunningModeAutoStopTimeoutInMinutes: Int | Double = null,
+    UserVolumeSizeGib: Int | Double = null
   ): WorkspaceProperties = {
     val __obj = js.Dynamic.literal()
     if (ComputeTypeName != null) __obj.updateDynamic("ComputeTypeName")(ComputeTypeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RootVolumeSizeGib)) __obj.updateDynamic("RootVolumeSizeGib")(RootVolumeSizeGib)
+    if (RootVolumeSizeGib != null) __obj.updateDynamic("RootVolumeSizeGib")(RootVolumeSizeGib.asInstanceOf[js.Any])
     if (RunningMode != null) __obj.updateDynamic("RunningMode")(RunningMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(RunningModeAutoStopTimeoutInMinutes)) __obj.updateDynamic("RunningModeAutoStopTimeoutInMinutes")(RunningModeAutoStopTimeoutInMinutes)
-    if (!js.isUndefined(UserVolumeSizeGib)) __obj.updateDynamic("UserVolumeSizeGib")(UserVolumeSizeGib)
+    if (RunningModeAutoStopTimeoutInMinutes != null) __obj.updateDynamic("RunningModeAutoStopTimeoutInMinutes")(RunningModeAutoStopTimeoutInMinutes.asInstanceOf[js.Any])
+    if (UserVolumeSizeGib != null) __obj.updateDynamic("UserVolumeSizeGib")(UserVolumeSizeGib.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProperties]
   }
 }

@@ -15,14 +15,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.rawValue
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.OptionContext
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOneNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOneNs.ojAnimateStart
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOneNs.ojValueUpdated
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojAnimateEnd
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojAnimateStart
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojValueUpdated
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
@@ -55,11 +55,11 @@ trait ojComboboxOneEventMap[K, D]
   var ojAnimateEnd_ojComboboxOneEventMap: ojAnimateEnd
   @JSName("ojAnimateStart")
   var ojAnimateStart_ojComboboxOneEventMap: ojAnimateStart
-  var ojValueUpdated: typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOneNs.ojValueUpdated
+  var ojValueUpdated: typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxOne.ojValueUpdated
   var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]]
   var optionsChanged: JetElementCustomEvent[
     (js.Array[
-      typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Optgroup
+      typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
     ]) | (DataProvider[K, D]) | Null
   ]
   var optionsKeysChanged: JetElementCustomEvent[Anon_ChildKeysChildren]
@@ -146,7 +146,7 @@ object ojComboboxOneEventMap {
     optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]],
     optionsChanged: JetElementCustomEvent[
       (js.Array[
-        typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Optgroup
+        typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
       ]) | (DataProvider[K, D]) | Null
     ],
     optionsKeysChanged: JetElementCustomEvent[Anon_ChildKeysChildren],

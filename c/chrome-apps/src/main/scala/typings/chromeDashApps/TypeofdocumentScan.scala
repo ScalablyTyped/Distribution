@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.documentScanNs.DocumentScanCallbackArg
-import typings.chromeDashApps.chromeNs.documentScanNs.DocumentScanOptions
+import typings.chromeDashApps.chrome.documentScan.DocumentScanCallbackArg
+import typings.chromeDashApps.chrome.documentScan.DocumentScanOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

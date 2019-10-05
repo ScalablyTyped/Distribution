@@ -45,7 +45,7 @@ object Schedule {
     EndTime: __string = null,
     EventFilter: CampaignEventFilter = null,
     Frequency: Frequency = null,
-    IsLocalTime: js.UndefOr[__boolean] = js.undefined,
+    IsLocalTime: js.UndefOr[Boolean] = js.undefined,
     QuietTime: QuietTime = null,
     Timezone: __string = null
   ): Schedule = {

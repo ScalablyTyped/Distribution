@@ -1,11 +1,11 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.UINs.AndroidNs.CardView
-import typings.titanium.TitaniumNs.UINs.AndroidNs.DrawerLayout
-import typings.titanium.TitaniumNs.UINs.AndroidNs.ProgressIndicator
-import typings.titanium.TitaniumNs.UINs.AndroidNs.SearchView
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.UI.Android.CardView
+import typings.titanium.Titanium.UI.Android.DrawerLayout
+import typings.titanium.Titanium.UI.Android.ProgressIndicator
+import typings.titanium.Titanium.UI.Android.SearchView
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,7 +26,7 @@ trait GetServiceSettingsResponse extends js.Object {
 object GetServiceSettingsResponse {
   @scala.inline
   def apply(
-    EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined,
+    EnableCrossAccountsDiscovery: js.UndefOr[scala.Boolean] = js.undefined,
     OrganizationConfiguration: OrganizationConfiguration = null,
     S3BucketArn: String = null,
     SnsTopicArn: String = null

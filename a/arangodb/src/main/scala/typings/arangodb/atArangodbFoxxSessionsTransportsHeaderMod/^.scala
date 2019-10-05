@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbFoxxSessionsTransportsHeaderMod
 
-import typings.arangodb.FoxxNs.SessionTransport
+import typings.arangodb.Foxx.SessionTransport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -137,15 +137,15 @@ object Run {
     appUpload: AmazonResourceName = null,
     arn: AmazonResourceName = null,
     billingMethod: BillingMethod = null,
-    completedJobs: js.UndefOr[Integer] = js.undefined,
+    completedJobs: Int | scala.Double = null,
     counters: Counters = null,
     created: DateTime = null,
     customerArtifactPaths: CustomerArtifactPaths = null,
     deviceMinutes: DeviceMinutes = null,
     devicePoolArn: AmazonResourceName = null,
     deviceSelectionResult: DeviceSelectionResult = null,
-    eventCount: js.UndefOr[Integer] = js.undefined,
-    jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
+    eventCount: Int | scala.Double = null,
+    jobTimeoutMinutes: Int | scala.Double = null,
     locale: String = null,
     location: Location = null,
     message: Message = null,
@@ -156,13 +156,13 @@ object Run {
     radios: Radios = null,
     result: ExecutionResult = null,
     resultCode: ExecutionResultCode = null,
-    seed: js.UndefOr[Integer] = js.undefined,
-    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
+    seed: Int | scala.Double = null,
+    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
     started: DateTime = null,
     status: ExecutionStatus = null,
     stopped: DateTime = null,
     testSpecArn: AmazonResourceName = null,
-    totalJobs: js.UndefOr[Integer] = js.undefined,
+    totalJobs: Int | scala.Double = null,
     `type`: TestType = null,
     webUrl: String = null
   ): Run = {
@@ -170,15 +170,15 @@ object Run {
     if (appUpload != null) __obj.updateDynamic("appUpload")(appUpload)
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(completedJobs)) __obj.updateDynamic("completedJobs")(completedJobs)
+    if (completedJobs != null) __obj.updateDynamic("completedJobs")(completedJobs.asInstanceOf[js.Any])
     if (counters != null) __obj.updateDynamic("counters")(counters)
     if (created != null) __obj.updateDynamic("created")(created)
     if (customerArtifactPaths != null) __obj.updateDynamic("customerArtifactPaths")(customerArtifactPaths)
     if (deviceMinutes != null) __obj.updateDynamic("deviceMinutes")(deviceMinutes)
     if (devicePoolArn != null) __obj.updateDynamic("devicePoolArn")(devicePoolArn)
     if (deviceSelectionResult != null) __obj.updateDynamic("deviceSelectionResult")(deviceSelectionResult)
-    if (!js.isUndefined(eventCount)) __obj.updateDynamic("eventCount")(eventCount)
-    if (!js.isUndefined(jobTimeoutMinutes)) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes)
+    if (eventCount != null) __obj.updateDynamic("eventCount")(eventCount.asInstanceOf[js.Any])
+    if (jobTimeoutMinutes != null) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (location != null) __obj.updateDynamic("location")(location)
     if (message != null) __obj.updateDynamic("message")(message)
@@ -189,13 +189,13 @@ object Run {
     if (radios != null) __obj.updateDynamic("radios")(radios)
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (resultCode != null) __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed)
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign)
     if (started != null) __obj.updateDynamic("started")(started)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (stopped != null) __obj.updateDynamic("stopped")(stopped)
     if (testSpecArn != null) __obj.updateDynamic("testSpecArn")(testSpecArn)
-    if (!js.isUndefined(totalJobs)) __obj.updateDynamic("totalJobs")(totalJobs)
+    if (totalJobs != null) __obj.updateDynamic("totalJobs")(totalJobs.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
     __obj.asInstanceOf[Run]

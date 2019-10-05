@@ -1,7 +1,7 @@
 package typings.swiz.swizMod
 
-import typings.swiz.swizMod.structNs.IField
-import typings.swiz.swizMod.structNs.IObj
+import typings.swiz.swizMod.struct.IField
+import typings.swiz.swizMod.struct.IObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

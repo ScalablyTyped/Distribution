@@ -1,7 +1,7 @@
 package typings.barcode.barcodeMod
 
-import typings.node.NodeJSNs.ErrnoException
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

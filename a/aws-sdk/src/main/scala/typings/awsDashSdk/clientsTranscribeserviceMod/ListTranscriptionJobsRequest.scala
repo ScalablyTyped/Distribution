@@ -27,13 +27,13 @@ object ListTranscriptionJobsRequest {
   @scala.inline
   def apply(
     JobNameContains: TranscriptionJobName = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     Status: TranscriptionJobStatus = null
   ): ListTranscriptionJobsRequest = {
     val __obj = js.Dynamic.literal()
     if (JobNameContains != null) __obj.updateDynamic("JobNameContains")(JobNameContains)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTranscriptionJobsRequest]

@@ -1,7 +1,7 @@
 package typings.activexDashFaxcomexlib
 
-import typings.activexDashFaxcomexlib.FAXCOMEXLibNs.FaxAccount
-import typings.activexDashFaxcomexlib.FAXCOMEXLibNs.FaxJobStatus
+import typings.activexDashFaxcomexlib.FAXCOMEXLib.FaxAccount
+import typings.activexDashFaxcomexlib.FAXCOMEXLib.FaxJobStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

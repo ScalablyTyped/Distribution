@@ -1,6 +1,7 @@
 package typings.ol.sourceBingMapsMod
 
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,7 @@ object Options {
     hidpi: js.UndefOr[Boolean] = js.undefined,
     maxZoom: Int | Double = null,
     reprojectionErrorThreshold: Int | Double = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     transition: Int | Double = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -38,7 +39,7 @@ object Options {
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
     __obj.asInstanceOf[Options]

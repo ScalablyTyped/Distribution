@@ -3,7 +3,7 @@ package typings.twilioDashVideo.twilioDashVideoMod
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Blob
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.ID
+import typings.twilioDashVideo.twilioDashVideoMod.Track.ID
 import typings.twilioDashVideo.twilioDashVideoStrings.data
 import scala.scalajs.js
 import scala.scalajs.js.`|`

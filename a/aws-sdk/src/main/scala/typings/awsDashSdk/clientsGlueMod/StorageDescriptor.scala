@@ -60,16 +60,16 @@ object StorageDescriptor {
   def apply(
     BucketColumns: NameStringList = null,
     Columns: ColumnList = null,
-    Compressed: js.UndefOr[Boolean] = js.undefined,
+    Compressed: js.UndefOr[scala.Boolean] = js.undefined,
     InputFormat: FormatString = null,
     Location: LocationString = null,
-    NumberOfBuckets: js.UndefOr[Integer] = js.undefined,
+    NumberOfBuckets: Int | Double = null,
     OutputFormat: FormatString = null,
     Parameters: ParametersMap = null,
     SerdeInfo: SerDeInfo = null,
     SkewedInfo: SkewedInfo = null,
     SortColumns: OrderList = null,
-    StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
+    StoredAsSubDirectories: js.UndefOr[scala.Boolean] = js.undefined
   ): StorageDescriptor = {
     val __obj = js.Dynamic.literal()
     if (BucketColumns != null) __obj.updateDynamic("BucketColumns")(BucketColumns)
@@ -77,7 +77,7 @@ object StorageDescriptor {
     if (!js.isUndefined(Compressed)) __obj.updateDynamic("Compressed")(Compressed)
     if (InputFormat != null) __obj.updateDynamic("InputFormat")(InputFormat)
     if (Location != null) __obj.updateDynamic("Location")(Location)
-    if (!js.isUndefined(NumberOfBuckets)) __obj.updateDynamic("NumberOfBuckets")(NumberOfBuckets)
+    if (NumberOfBuckets != null) __obj.updateDynamic("NumberOfBuckets")(NumberOfBuckets.asInstanceOf[js.Any])
     if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     if (SerdeInfo != null) __obj.updateDynamic("SerdeInfo")(SerdeInfo)

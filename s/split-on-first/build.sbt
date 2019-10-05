@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "split-on-first"
-version := "1.1.0-bbc1b9"
-scalaVersion := "2.12.9"
+version := "1.1.0-d7dc43"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

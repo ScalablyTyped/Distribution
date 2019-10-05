@@ -1,9 +1,9 @@
 package typings.jqueryDotAjaxfile
 
-import typings.jqueryDotAjaxfile.KnockoutComponentTypesNs.Config
-import typings.jqueryDotAjaxfile.KnockoutComponentTypesNs.Definition
-import typings.jqueryDotAjaxfile.KnockoutComponentTypesNs.EmptyConfig
-import typings.jqueryDotAjaxfile.KnockoutComponentTypesNs.Loader
+import typings.jqueryDotAjaxfile.KnockoutComponentTypes.Config
+import typings.jqueryDotAjaxfile.KnockoutComponentTypes.Definition
+import typings.jqueryDotAjaxfile.KnockoutComponentTypes.EmptyConfig
+import typings.jqueryDotAjaxfile.KnockoutComponentTypes.Loader
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

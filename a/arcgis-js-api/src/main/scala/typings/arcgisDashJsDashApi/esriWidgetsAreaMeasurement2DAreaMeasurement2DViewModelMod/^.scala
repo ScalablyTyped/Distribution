@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2DViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2DViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

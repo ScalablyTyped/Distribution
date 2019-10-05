@@ -13,14 +13,9 @@ trait DocumentFilter extends js.Object {
   var scheme: js.UndefOr[String] = js.undefined
 }
 
-object DocumentFilter {
-  @scala.inline
-  def apply(language: String = null, pattern: String = null, scheme: String = null): DocumentFilter = {
-    val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    __obj.asInstanceOf[DocumentFilter]
-  }
+@JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentFilter")
+@js.native
+object DocumentFilter extends js.Object {
+  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.DocumentFilter */ Boolean = js.native
 }
 

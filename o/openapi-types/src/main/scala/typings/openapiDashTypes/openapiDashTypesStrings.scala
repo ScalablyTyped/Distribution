@@ -1,6 +1,6 @@
 package typings.openapiDashTypes
 
-import typings.openapiDashTypes.openapiDashTypesMod.OpenAPIV3Ns.NonArraySchemaObjectType
+import typings.openapiDashTypes.openapiDashTypesMod.OpenAPIV3.NonArraySchemaObjectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

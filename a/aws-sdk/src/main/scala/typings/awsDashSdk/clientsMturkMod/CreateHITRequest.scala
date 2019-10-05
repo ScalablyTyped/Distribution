@@ -80,12 +80,12 @@ object CreateHITRequest {
     Reward: CurrencyAmount,
     Title: String,
     AssignmentReviewPolicy: ReviewPolicy = null,
-    AutoApprovalDelayInSeconds: js.UndefOr[Long] = js.undefined,
+    AutoApprovalDelayInSeconds: Int | Double = null,
     HITLayoutId: EntityId = null,
     HITLayoutParameters: HITLayoutParameterList = null,
     HITReviewPolicy: ReviewPolicy = null,
     Keywords: String = null,
-    MaxAssignments: js.UndefOr[Integer] = js.undefined,
+    MaxAssignments: Int | Double = null,
     QualificationRequirements: QualificationRequirementList = null,
     Question: String = null,
     RequesterAnnotation: String = null,
@@ -93,12 +93,12 @@ object CreateHITRequest {
   ): CreateHITRequest = {
     val __obj = js.Dynamic.literal(AssignmentDurationInSeconds = AssignmentDurationInSeconds, Description = Description, LifetimeInSeconds = LifetimeInSeconds, Reward = Reward, Title = Title)
     if (AssignmentReviewPolicy != null) __obj.updateDynamic("AssignmentReviewPolicy")(AssignmentReviewPolicy)
-    if (!js.isUndefined(AutoApprovalDelayInSeconds)) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds)
+    if (AutoApprovalDelayInSeconds != null) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.asInstanceOf[js.Any])
     if (HITLayoutId != null) __obj.updateDynamic("HITLayoutId")(HITLayoutId)
     if (HITLayoutParameters != null) __obj.updateDynamic("HITLayoutParameters")(HITLayoutParameters)
     if (HITReviewPolicy != null) __obj.updateDynamic("HITReviewPolicy")(HITReviewPolicy)
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords)
-    if (!js.isUndefined(MaxAssignments)) __obj.updateDynamic("MaxAssignments")(MaxAssignments)
+    if (MaxAssignments != null) __obj.updateDynamic("MaxAssignments")(MaxAssignments.asInstanceOf[js.Any])
     if (QualificationRequirements != null) __obj.updateDynamic("QualificationRequirements")(QualificationRequirements)
     if (Question != null) __obj.updateDynamic("Question")(Question)
     if (RequesterAnnotation != null) __obj.updateDynamic("RequesterAnnotation")(RequesterAnnotation)

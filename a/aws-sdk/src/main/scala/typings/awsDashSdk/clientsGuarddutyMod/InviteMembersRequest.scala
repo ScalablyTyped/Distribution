@@ -28,7 +28,7 @@ object InviteMembersRequest {
   def apply(
     AccountIds: AccountIds,
     DetectorId: DetectorId,
-    DisableEmailNotification: js.UndefOr[Boolean] = js.undefined,
+    DisableEmailNotification: js.UndefOr[scala.Boolean] = js.undefined,
     Message: String = null
   ): InviteMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds, DetectorId = DetectorId)

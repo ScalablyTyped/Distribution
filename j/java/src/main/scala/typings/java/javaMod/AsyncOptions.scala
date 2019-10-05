@@ -17,12 +17,12 @@ object AsyncOptions {
     syncSuffix: String,
     asyncSuffix: String = null,
     promiseSuffix: String = null,
-    promisify: Promisify = null
+    promisify: (/* funct */ js.Function, /* receiver */ js.UndefOr[js.Any]) => js.Function = null
   ): AsyncOptions = {
     val __obj = js.Dynamic.literal(syncSuffix = syncSuffix)
     if (asyncSuffix != null) __obj.updateDynamic("asyncSuffix")(asyncSuffix)
     if (promiseSuffix != null) __obj.updateDynamic("promiseSuffix")(promiseSuffix)
-    if (promisify != null) __obj.updateDynamic("promisify")(promisify)
+    if (promisify != null) __obj.updateDynamic("promisify")(js.Any.fromFunction2(promisify))
     __obj.asInstanceOf[AsyncOptions]
   }
 }

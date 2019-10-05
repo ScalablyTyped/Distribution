@@ -66,7 +66,7 @@ object JobTemplate {
     CreatedAt: __timestampUnix = null,
     Description: __string = null,
     LastUpdated: __timestampUnix = null,
-    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
+    Priority: Int | Double = null,
     Queue: __string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Type: Type = null
@@ -78,7 +78,7 @@ object JobTemplate {
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

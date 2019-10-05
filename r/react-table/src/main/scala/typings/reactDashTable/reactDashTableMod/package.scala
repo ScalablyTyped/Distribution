@@ -14,6 +14,7 @@ package object reactDashTableMod {
   type Accessor[D] = String | js.Array[String] | AccessorFunction[D]
   type AccessorFunction[D] = js.Function1[/* row */ D, js.Any]
   type Aggregator = js.Function2[/* values */ js.Any, /* rows */ js.Any, js.Any]
+  type Column[D] = Column_[D]
   type ComponentPropsGetter0 = js.Function4[
     /* finalState */ js.Any, 
     /* rowInfo */ js.UndefOr[scala.Nothing], 

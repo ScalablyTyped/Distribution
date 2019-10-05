@@ -7,7 +7,7 @@ import typings.officeDashUiDashFabricDashReact.libButtonMod.BaseButton
 import typings.officeDashUiDashFabricDashReact.libButtonMod.Button
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement

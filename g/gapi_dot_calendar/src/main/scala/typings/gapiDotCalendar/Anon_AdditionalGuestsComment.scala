@@ -1,7 +1,7 @@
 package typings.gapiDotCalendar
 
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.AttendeeResponseStatus
-import typings.gapiDotCalendar.gapiNs.clientNs.calendarNs.integer
+import typings.gapiDotCalendar.gapi.client.calendar.AttendeeResponseStatus
+import typings.gapiDotCalendar.gapi.client.calendar.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +28,13 @@ object Anon_AdditionalGuestsComment {
     resource: Boolean,
     responseStatus: AttendeeResponseStatus,
     self: Boolean,
-    additionalGuests: js.UndefOr[integer] = js.undefined,
+    additionalGuests: Int | Double = null,
     comment: String = null,
     displayName: String = null,
     optional: js.UndefOr[Boolean] = js.undefined
   ): Anon_AdditionalGuestsComment = {
     val __obj = js.Dynamic.literal(email = email, id = id, organizer = organizer, resource = resource, responseStatus = responseStatus, self = self)
-    if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests)
+    if (additionalGuests != null) __obj.updateDynamic("additionalGuests")(additionalGuests.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)

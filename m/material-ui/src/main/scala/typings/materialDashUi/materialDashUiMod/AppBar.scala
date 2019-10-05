@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "AppBar")
 @js.native
 class AppBar ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.AppBar
+  extends typings.materialDashUi.__MaterialUI.AppBar
 

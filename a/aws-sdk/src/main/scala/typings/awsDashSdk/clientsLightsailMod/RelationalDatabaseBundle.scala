@@ -47,25 +47,25 @@ object RelationalDatabaseBundle {
   @scala.inline
   def apply(
     bundleId: String = null,
-    cpuCount: js.UndefOr[integer] = js.undefined,
-    diskSizeInGb: js.UndefOr[integer] = js.undefined,
+    cpuCount: Int | Double = null,
+    diskSizeInGb: Int | Double = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     isEncrypted: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    price: js.UndefOr[float] = js.undefined,
-    ramSizeInGb: js.UndefOr[float] = js.undefined,
-    transferPerMonthInGb: js.UndefOr[integer] = js.undefined
+    price: Int | Double = null,
+    ramSizeInGb: Int | Double = null,
+    transferPerMonthInGb: Int | Double = null
   ): RelationalDatabaseBundle = {
     val __obj = js.Dynamic.literal()
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
-    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount)
-    if (!js.isUndefined(diskSizeInGb)) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb)
+    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
+    if (diskSizeInGb != null) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.asInstanceOf[js.Any])
     if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
     if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price)
-    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb)
-    if (!js.isUndefined(transferPerMonthInGb)) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb)
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (ramSizeInGb != null) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.asInstanceOf[js.Any])
+    if (transferPerMonthInGb != null) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseBundle]
   }
 }

@@ -1,7 +1,9 @@
 package typings.reactDashAlbus.reactDashAlbusMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,8 @@ class Step protected ()
   def this(props: StepProps) = this()
   def this(props: StepProps, context: js.Any) = this()
 }
+
+@JSImport("react-albus", "Step")
+@js.native
+object Step extends TopLevel[ComponentType[StepProps]]
 

@@ -1,5 +1,6 @@
 package typings.bunyan.bunyanMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,4 +17,8 @@ trait StdSerializers extends Serializers {
   def req(input: js.Any): js.Any = js.native
   def res(input: js.Any): js.Any = js.native
 }
+
+@JSImport("bunyan", "stdSerializers")
+@js.native
+object stdSerializers extends TopLevel[StdSerializers]
 

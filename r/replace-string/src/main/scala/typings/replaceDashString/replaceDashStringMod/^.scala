@@ -23,7 +23,9 @@ object ^ extends js.Object {
   //=> 'Foo 🐑❤️ Bar'
   ```
   */
-  def apply(input: String, needle: String, replacement: String | ReplacementFunction): String = js.native
-  def apply(input: String, needle: String, replacement: String | ReplacementFunction, options: Options): String = js.native
+  def apply(input: String, needle: String, replacement: String): String = js.native
+  def apply(input: String, needle: String, replacement: String, options: Options): String = js.native
+  def apply(input: String, needle: String, replacement: ReplacementFunction): String = js.native
+  def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = js.native
 }
 

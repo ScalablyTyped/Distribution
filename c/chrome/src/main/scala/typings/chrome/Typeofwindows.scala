@@ -1,10 +1,10 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.windowsNs.CreateData
-import typings.chrome.chromeNs.windowsNs.GetInfo
-import typings.chrome.chromeNs.windowsNs.UpdateInfo
-import typings.chrome.chromeNs.windowsNs.WindowIdEvent
-import typings.chrome.chromeNs.windowsNs.WindowReferenceEvent
+import typings.chrome.chrome.windows.CreateData
+import typings.chrome.chrome.windows.GetInfo
+import typings.chrome.chrome.windows.UpdateInfo
+import typings.chrome.chrome.windows.WindowIdEvent
+import typings.chrome.chrome.windows.WindowReferenceEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

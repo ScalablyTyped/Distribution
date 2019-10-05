@@ -1,6 +1,6 @@
 package typings.arangodb.atArangodbGeneralDashGraphMod
 
-import typings.arangodb.ArangoDBNs.EdgeDirection
+import typings.arangodb.ArangoDB.EdgeDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

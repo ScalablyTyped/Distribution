@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +24,9 @@ trait History extends js.Object {
 
 @JSGlobal("History")
 @js.native
-class HistoryCls () extends History
-
-@JSGlobal("History")
-@js.native
 object History extends Instantiable0[History]
+
+@JSGlobal("history")
+@js.native
+object history extends TopLevel[History]
 

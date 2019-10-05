@@ -1,6 +1,6 @@
 package typings.nodeDashForge
 
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
+import typings.nodeDashForge.nodeDashForgeMod.pki.ed25519.NativeBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

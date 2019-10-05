@@ -51,14 +51,14 @@ object SplunkDestinationConfiguration {
     HECToken: HECToken,
     S3Configuration: S3DestinationConfiguration,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    HECAcknowledgmentTimeoutInSeconds: js.UndefOr[HECAcknowledgmentTimeoutInSeconds] = js.undefined,
+    HECAcknowledgmentTimeoutInSeconds: Int | Double = null,
     ProcessingConfiguration: ProcessingConfiguration = null,
     RetryOptions: SplunkRetryOptions = null,
     S3BackupMode: SplunkS3BackupMode = null
   ): SplunkDestinationConfiguration = {
     val __obj = js.Dynamic.literal(HECEndpoint = HECEndpoint, HECEndpointType = HECEndpointType.asInstanceOf[js.Any], HECToken = HECToken, S3Configuration = S3Configuration)
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
-    if (!js.isUndefined(HECAcknowledgmentTimeoutInSeconds)) __obj.updateDynamic("HECAcknowledgmentTimeoutInSeconds")(HECAcknowledgmentTimeoutInSeconds)
+    if (HECAcknowledgmentTimeoutInSeconds != null) __obj.updateDynamic("HECAcknowledgmentTimeoutInSeconds")(HECAcknowledgmentTimeoutInSeconds.asInstanceOf[js.Any])
     if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration)
     if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions)
     if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])

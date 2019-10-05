@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,4 +21,8 @@ trait RenderStack extends js.Object {
   def showItem(id: String): Unit = js.native
   def showItem(id: Double): Unit = js.native
 }
+
+@JSImport("webix", "RenderStack")
+@js.native
+object RenderStack extends TopLevel[RenderStack]
 

@@ -29,10 +29,10 @@ object SendAnnouncementRequest {
     ClientRequestToken: ClientRequestToken,
     Content: Content,
     RoomFilters: FilterList,
-    TimeToLiveInSeconds: js.UndefOr[TimeToLiveInSeconds] = js.undefined
+    TimeToLiveInSeconds: Int | Double = null
   ): SendAnnouncementRequest = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken, Content = Content, RoomFilters = RoomFilters)
-    if (!js.isUndefined(TimeToLiveInSeconds)) __obj.updateDynamic("TimeToLiveInSeconds")(TimeToLiveInSeconds)
+    if (TimeToLiveInSeconds != null) __obj.updateDynamic("TimeToLiveInSeconds")(TimeToLiveInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAnnouncementRequest]
   }
 }

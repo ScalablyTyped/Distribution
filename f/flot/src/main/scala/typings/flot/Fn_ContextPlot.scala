@@ -1,7 +1,7 @@
 package typings.flot
 
-import typings.flot.jqueryNs.flotNs.dataSeries
-import typings.flot.jqueryNs.flotNs.plot
+import typings.flot.jquery.flot.dataSeries
+import typings.flot.jquery.flot.plot
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,8 @@
 package typings.polymerDashTs
 
-import typings.polymerDashTs.polymerNs.Base
-import typings.polymerDashTs.polymerNs.Element
-import typings.polymerDashTs.polymerNs.dom
+import typings.polymerDashTs.polymer.Base
+import typings.polymerDashTs.polymer.Element
+import typings.polymerDashTs.polymer.dom
 import typings.std.FunctionConstructor
 import typings.std.HTMLElement
 import scala.scalajs.js

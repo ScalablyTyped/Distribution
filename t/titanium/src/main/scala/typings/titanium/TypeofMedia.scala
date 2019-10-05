@@ -1,16 +1,16 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Blob
-import typings.titanium.TitaniumNs.FilesystemNs.File
-import typings.titanium.TitaniumNs.MediaNs.AudioPlayer
-import typings.titanium.TitaniumNs.MediaNs.AudioRecorder
-import typings.titanium.TitaniumNs.MediaNs.Item
-import typings.titanium.TitaniumNs.MediaNs.MusicPlayer
-import typings.titanium.TitaniumNs.MediaNs.Sound
-import typings.titanium.TitaniumNs.MediaNs.SystemAlert
-import typings.titanium.TitaniumNs.MediaNs.VideoPlayer
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Blob
+import typings.titanium.Titanium.Filesystem.File
+import typings.titanium.Titanium.Media.AudioPlayer
+import typings.titanium.Titanium.Media.AudioRecorder
+import typings.titanium.Titanium.Media.Item
+import typings.titanium.Titanium.Media.MusicPlayer
+import typings.titanium.Titanium.Media.Sound
+import typings.titanium.Titanium.Media.SystemAlert
+import typings.titanium.Titanium.Media.VideoPlayer
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -264,7 +264,7 @@ trait TypeofMedia extends js.Object {
   /**
   		 * Android-specific media-related functionality.
   		 */
-  val AndroidNs: TypeofAndroidAddEventListenerApiName = js.native
+  val Android: TypeofAndroidAddEventListenerApiName = js.native
   /**
   		 * Constant specifying that app is authorized to use camera. This is available on iOS7 and later.
   		 */

@@ -21,7 +21,11 @@ trait ResetImageAttributeRequest extends js.Object {
 
 object ResetImageAttributeRequest {
   @scala.inline
-  def apply(Attribute: ResetImageAttributeName, ImageId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ResetImageAttributeRequest = {
+  def apply(
+    Attribute: ResetImageAttributeName,
+    ImageId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResetImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], ImageId = ImageId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ResetImageAttributeRequest]

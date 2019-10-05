@@ -1,6 +1,6 @@
 package typings.navermaps
 
-import typings.navermaps.naverNs.mapsNs.ServiceNs.AddressItem
+import typings.navermaps.naver.maps.Service.AddressItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

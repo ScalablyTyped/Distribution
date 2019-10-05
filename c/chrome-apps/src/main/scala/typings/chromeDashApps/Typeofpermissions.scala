@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.permissionsNs.PermissionEvent
-import typings.chromeDashApps.chromeNs.permissionsNs.Permissions
+import typings.chromeDashApps.chrome.permissions.PermissionEvent
+import typings.chromeDashApps.chrome.permissions.Permissions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -37,3 +37,17 @@ object JSXAttribute {
   }
 }
 
+@JSImport("babel-types", "jSXAttribute")
+@js.native
+object jSXAttribute extends js.Object {
+  def apply(): JSXAttribute = js.native
+  def apply(name: JSXIdentifier): JSXAttribute = js.native
+  def apply(name: JSXIdentifier, value: JSXElement): JSXAttribute = js.native
+  def apply(name: JSXIdentifier, value: JSXExpressionContainer): JSXAttribute = js.native
+  def apply(name: JSXIdentifier, value: StringLiteral): JSXAttribute = js.native
+  def apply(name: JSXNamespacedName): JSXAttribute = js.native
+  def apply(name: JSXNamespacedName, value: JSXElement): JSXAttribute = js.native
+  def apply(name: JSXNamespacedName, value: JSXExpressionContainer): JSXAttribute = js.native
+  def apply(name: JSXNamespacedName, value: StringLiteral): JSXAttribute = js.native
+}
+

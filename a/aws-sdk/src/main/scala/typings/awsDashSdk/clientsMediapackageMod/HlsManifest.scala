@@ -59,11 +59,11 @@ object HlsManifest {
   def apply(
     Id: __string,
     AdMarkers: AdMarkers = null,
-    IncludeIframeOnlyStream: js.UndefOr[__boolean] = js.undefined,
+    IncludeIframeOnlyStream: js.UndefOr[Boolean] = js.undefined,
     ManifestName: __string = null,
     PlaylistType: PlaylistType = null,
-    PlaylistWindowSeconds: js.UndefOr[__integer] = js.undefined,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[__integer] = js.undefined,
+    PlaylistWindowSeconds: Int | Double = null,
+    ProgramDateTimeIntervalSeconds: Int | Double = null,
     Url: __string = null
   ): HlsManifest = {
     val __obj = js.Dynamic.literal(Id = Id)
@@ -71,8 +71,8 @@ object HlsManifest {
     if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream)
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName)
     if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PlaylistWindowSeconds)) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds)
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds)
+    if (PlaylistWindowSeconds != null) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.asInstanceOf[js.Any])
+    if (ProgramDateTimeIntervalSeconds != null) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.asInstanceOf[js.Any])
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[HlsManifest]
   }

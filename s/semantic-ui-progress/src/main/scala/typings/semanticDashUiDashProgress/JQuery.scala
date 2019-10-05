@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashProgress
 
-import typings.semanticDashUiDashProgress.SemanticUINs.Progress
-import typings.semanticDashUiDashProgress.SemanticUINs.ProgressSettings
+import typings.semanticDashUiDashProgress.SemanticUI.Progress
+import typings.semanticDashUiDashProgress.SemanticUI.ProgressSettings
 import typings.semanticDashUiDashProgress.semanticDashUiDashProgressStrings.`get normalized value`
 import typings.semanticDashUiDashProgress.semanticDashUiDashProgressStrings.`get percent`
 import typings.semanticDashUiDashProgress.semanticDashUiDashProgressStrings.`get text`

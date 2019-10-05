@@ -22,7 +22,7 @@ trait DkimAttributes extends js.Object {
 object DkimAttributes {
   @scala.inline
   def apply(
-    SigningEnabled: js.UndefOr[Enabled] = js.undefined,
+    SigningEnabled: js.UndefOr[Boolean] = js.undefined,
     Status: DkimStatus = null,
     Tokens: DnsTokenList = null
   ): DkimAttributes = {

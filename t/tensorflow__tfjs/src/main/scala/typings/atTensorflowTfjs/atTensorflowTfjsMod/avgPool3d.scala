@@ -2,6 +2,9 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCDHW
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NDHWC
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.round
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
@@ -25,14 +28,14 @@ object avgPool3d extends js.Object {
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
+    dimRoundingMode: floor | round | ceil
   ): T = js.native
   def apply[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil,
+    dimRoundingMode: floor | round | ceil,
     dataFormat: NDHWC | NCDHW
   ): T = js.native
   def apply[T /* <: Tensor4D | Tensor5D */](
@@ -40,7 +43,7 @@ object avgPool3d extends js.Object {
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil,
+    dimRoundingMode: floor | round | ceil,
     dataFormat: NDHWC | NCDHW,
     dilations: (js.Tuple3[Double, Double, Double]) | Double
   ): T = js.native

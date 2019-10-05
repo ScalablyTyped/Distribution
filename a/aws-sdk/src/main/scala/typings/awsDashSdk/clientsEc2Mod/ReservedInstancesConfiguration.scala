@@ -31,14 +31,14 @@ object ReservedInstancesConfiguration {
   @scala.inline
   def apply(
     AvailabilityZone: String = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
+    InstanceCount: Int | scala.Double = null,
     InstanceType: InstanceType = null,
     Platform: String = null,
     Scope: scope = null
   ): ReservedInstancesConfiguration = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform)
     if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])

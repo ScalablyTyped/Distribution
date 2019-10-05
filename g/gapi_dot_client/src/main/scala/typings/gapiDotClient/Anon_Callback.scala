@@ -1,6 +1,6 @@
 package typings.gapiDotClient
 
-import typings.gapiDotClient.gapiNs.clientNs.Response
+import typings.gapiDotClient.gapi.client.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,5 @@ trait DataValue extends js.Object {
 
 @JSImport("webix", "DataValue")
 @js.native
-class DataValueCls () extends DataValue {
-  def this(config: DataValueConfig) = this()
-}
+object DataValue extends TopLevel[DataValueFactory]
 

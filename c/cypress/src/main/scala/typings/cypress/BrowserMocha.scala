@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.MochaNs.Interface
+import typings.cypress.Mocha.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

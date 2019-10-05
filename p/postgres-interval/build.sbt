@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "postgres-interval"
-version := "1.2.0-037d42"
-scalaVersion := "2.12.9"
+version := "1.2.0-e48026"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

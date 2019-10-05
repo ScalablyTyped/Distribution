@@ -1,5 +1,6 @@
 package typings.rxjs.internalUtilUnsubscriptionErrorMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,22 +12,5 @@ trait UnsubscriptionError extends Error {
 
 @JSImport("rxjs/internal/util/UnsubscriptionError", "UnsubscriptionError")
 @js.native
-class UnsubscriptionErrorCls protected () extends UnsubscriptionError {
-  def this(errors: js.Array[_]) = this()
-  /* CompleteClass */
-  override val errors: js.Array[_] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
-
-object UnsubscriptionError {
-  @scala.inline
-  def apply(errors: js.Array[_], message: String, name: String, stack: String = null): UnsubscriptionError = {
-    val __obj = js.Dynamic.literal(errors = errors, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    __obj.asInstanceOf[UnsubscriptionError]
-  }
-}
+object UnsubscriptionError extends TopLevel[UnsubscriptionErrorCtor]
 

@@ -24,13 +24,13 @@ object DescribeQueriesRequest {
   @scala.inline
   def apply(
     logGroupName: LogGroupName = null,
-    maxResults: js.UndefOr[DescribeQueriesMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     status: QueryStatus = null
   ): DescribeQueriesRequest = {
     val __obj = js.Dynamic.literal()
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeQueriesRequest]

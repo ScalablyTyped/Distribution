@@ -1,0 +1,57 @@
+package typings.behavior3.b3
+
+import org.scalablytyped.runtime.TopLevel
+import typings.behavior3.Anon_Children
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Composite is the base class for all composite nodes. Thus, if you want to
+  * create new custom composite nodes, you need to inherit from this class.
+  *
+  * When creating composite nodes, you will need to propagate the tick signal
+  * to the children nodes manually. To do that, override the `tick` method and
+  * call the `_execute` method on all nodes. For instance, take a look at how
+  * the Sequence node inherit this class and how it call its children:
+  *
+  *     // Inherit from Composite, using the util function Class.
+  *     class Sequence extends Composite {
+  *
+  *       constructor(){
+  *         // Remember to set the name of the node.
+  *         super({name: 'Sequence'});
+  *       }
+  *
+  *       // Override the tick function
+  *       tick(tick) {
+  *
+  *         // Iterates over the children
+  *         for (var i=0; i<this.children.length; i++) {
+  *
+  *           // Propagate the tick
+  *           var status = this.children[i]._execute(tick);
+  *
+  *           if (status !== SUCCESS) {
+  *               return status;
+  *           }
+  *         }
+  *
+  *         return SUCCESS;
+  *       }
+  *     };
+  *
+  */
+@JSGlobal("b3.Composite")
+@js.native
+/**
+  * Creates an instance of Composite.
+  */
+class Composite () extends BaseNode {
+  def this(hasChildrenNameTitleProperties: Anon_Children) = this()
+}
+
+@JSGlobal("b3.COMPOSITE")
+@js.native
+object COMPOSITE extends TopLevel[String]
+

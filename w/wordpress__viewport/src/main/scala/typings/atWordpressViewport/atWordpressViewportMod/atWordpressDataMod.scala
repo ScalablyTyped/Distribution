@@ -7,7 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@wordpress/viewport", "@wordpress/data")
+/* augmented module */
+@JSImport("@wordpress/data", JSImport.Namespace)
 @js.native
 object atWordpressDataMod extends js.Object {
   @JSName("dispatch")

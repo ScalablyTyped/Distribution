@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISeparatedSyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISeparatedSyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ArgumentListSyntax")
 @js.native
 class ArgumentListSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ArgumentListSyntax {
+  extends typings.typescriptDashServices.TypeScript.ArgumentListSyntax {
   def this(
-    typeArgumentList: typings.typescriptDashServices.TypeScriptNs.TypeArgumentListSyntax,
+    typeArgumentList: typings.typescriptDashServices.TypeScript.TypeArgumentListSyntax,
     openParenToken: ISyntaxToken,
     _arguments: ISeparatedSyntaxList,
     closeParenToken: ISyntaxToken,
@@ -23,7 +23,7 @@ class ArgumentListSyntax protected ()
 @JSImport("typescript-services", "ArgumentListSyntax")
 @js.native
 object ArgumentListSyntax extends js.Object {
-  def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ArgumentListSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ArgumentListSyntax = js.native
+  def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptDashServices.TypeScript.ArgumentListSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ArgumentListSyntax = js.native
 }
 

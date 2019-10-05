@@ -1,8 +1,8 @@
 package typings.node.readlineMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.nodeStrings.SIGCONT
 import typings.node.nodeStrings.SIGINT

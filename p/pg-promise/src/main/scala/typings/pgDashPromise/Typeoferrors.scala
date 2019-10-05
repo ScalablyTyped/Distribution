@@ -1,10 +1,10 @@
 package typings.pgDashPromise
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.ParameterizedQueryError
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.PreparedStatementError
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.QueryFileError
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.QueryResultError
+import typings.pgDashPromise.pgDashPromiseMod.errors.ParameterizedQueryError
+import typings.pgDashPromise.pgDashPromiseMod.errors.PreparedStatementError
+import typings.pgDashPromise.pgDashPromiseMod.errors.QueryFileError
+import typings.pgDashPromise.pgDashPromiseMod.errors.QueryResultError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 trait Typeoferrors extends js.Object {
   // ParameterizedQueryError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.ParameterizedQueryError.html
-  var ParameterizedQueryError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errorsNs.ParameterizedQueryError]
+  var ParameterizedQueryError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errors.ParameterizedQueryError]
   // PreparedStatementError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.PreparedStatementError.html
-  var PreparedStatementError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errorsNs.PreparedStatementError]
+  var PreparedStatementError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errors.PreparedStatementError]
   // QueryFileError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryFileError.html
-  var QueryFileError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errorsNs.QueryFileError]
+  var QueryFileError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errors.QueryFileError]
   // QueryResultError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryResultError.html
-  var QueryResultError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errorsNs.QueryResultError]
+  var QueryResultError: Instantiable0[typings.pgDashPromise.pgDashPromiseMod.errors.QueryResultError]
 }
 
 object Typeoferrors {

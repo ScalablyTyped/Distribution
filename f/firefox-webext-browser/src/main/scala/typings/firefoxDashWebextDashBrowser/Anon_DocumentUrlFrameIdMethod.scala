@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.HttpHeaders
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.ResourceType
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.HttpHeaders
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.ResourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

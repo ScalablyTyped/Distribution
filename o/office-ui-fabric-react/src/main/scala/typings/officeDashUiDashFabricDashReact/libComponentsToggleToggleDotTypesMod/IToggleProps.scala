@@ -6,7 +6,7 @@ import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement

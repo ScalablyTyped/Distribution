@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiFromInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiFromInstanceEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.AmiFromInstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.AmiFromInstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.AmiFromInstanceEphemeralBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

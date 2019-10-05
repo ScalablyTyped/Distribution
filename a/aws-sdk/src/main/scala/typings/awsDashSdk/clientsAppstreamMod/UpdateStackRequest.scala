@@ -58,7 +58,7 @@ object UpdateStackRequest {
     AccessEndpoints: AccessEndpointList = null,
     ApplicationSettings: ApplicationSettings = null,
     AttributesToDelete: StackAttributes = null,
-    DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined,
+    DeleteStorageConnectors: js.UndefOr[scala.Boolean] = js.undefined,
     Description: Description = null,
     DisplayName: DisplayName = null,
     FeedbackURL: FeedbackURL = null,

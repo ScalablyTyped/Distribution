@@ -17,7 +17,7 @@ trait RejectVpcPeeringConnectionRequest extends js.Object {
 
 object RejectVpcPeeringConnectionRequest {
   @scala.inline
-  def apply(VpcPeeringConnectionId: String, DryRun: js.UndefOr[Boolean] = js.undefined): RejectVpcPeeringConnectionRequest = {
+  def apply(VpcPeeringConnectionId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): RejectVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[RejectVpcPeeringConnectionRequest]

@@ -1,5 +1,6 @@
 package typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFortawesomeFontawesomeDashSvgDashCore.Anon_Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +14,8 @@ trait DOM extends js.Object {
   def insertCss(): String = js.native
   def watch(): Unit = js.native
 }
+
+@JSImport("@fortawesome/fontawesome-svg-core", "dom")
+@js.native
+object dom extends TopLevel[DOM]
 

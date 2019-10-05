@@ -49,7 +49,7 @@ object Parameter {
     SourceResult: String = null,
     Type: ParameterType = null,
     Value: PSParameterValue = null,
-    Version: js.UndefOr[PSParameterVersion] = js.undefined
+    Version: Int | Double = null
   ): Parameter = {
     val __obj = js.Dynamic.literal()
     if (ARN != null) __obj.updateDynamic("ARN")(ARN)
@@ -59,7 +59,7 @@ object Parameter {
     if (SourceResult != null) __obj.updateDynamic("SourceResult")(SourceResult)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
 }

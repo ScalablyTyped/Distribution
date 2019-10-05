@@ -1,5 +1,6 @@
 package typings.riot.riotMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,4 +42,8 @@ trait Util extends js.Object {
   def tmpl(expression: String): js.Any = js.native
   def tmpl(expression: String, data: js.Any): js.Any = js.native
 }
+
+@JSImport("riot", "util")
+@js.native
+object util extends TopLevel[Util]
 

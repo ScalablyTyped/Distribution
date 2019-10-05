@@ -17,10 +17,10 @@ trait FaceSearchSettings extends js.Object {
 
 object FaceSearchSettings {
   @scala.inline
-  def apply(CollectionId: CollectionId = null, FaceMatchThreshold: js.UndefOr[Percent] = js.undefined): FaceSearchSettings = {
+  def apply(CollectionId: CollectionId = null, FaceMatchThreshold: Int | Double = null): FaceSearchSettings = {
     val __obj = js.Dynamic.literal()
     if (CollectionId != null) __obj.updateDynamic("CollectionId")(CollectionId)
-    if (!js.isUndefined(FaceMatchThreshold)) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold)
+    if (FaceMatchThreshold != null) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceSearchSettings]
   }
 }

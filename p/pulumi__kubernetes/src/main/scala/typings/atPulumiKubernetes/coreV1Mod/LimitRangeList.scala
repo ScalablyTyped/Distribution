@@ -19,10 +19,10 @@ class LimitRangeList protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.LimitRangeList) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.LimitRangeList) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.LimitRangeList,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.LimitRangeList,
     opts: CustomResourceOptions
   ) = this()
 }

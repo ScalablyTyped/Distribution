@@ -1,13 +1,13 @@
 package typings.amplify.amplifyMod
 
-import typings.jquery.JQueryNs.AjaxNs.CompleteCallback
-import typings.jquery.JQueryNs.AjaxNs.ErrorCallback
-import typings.jquery.JQueryNs.AjaxNs.StatusCodeCallbacks
-import typings.jquery.JQueryNs.AjaxNs.SuccessCallback
-import typings.jquery.JQueryNs.AjaxNs.XHRFields
-import typings.jquery.JQueryNs.PlainObject
-import typings.jquery.JQueryNs.TypeOrArray
-import typings.jquery.JQueryNs.jqXHR
+import typings.jquery.JQuery.Ajax.CompleteCallback
+import typings.jquery.JQuery.Ajax.ErrorCallback
+import typings.jquery.JQuery.Ajax.StatusCodeCallbacks
+import typings.jquery.JQuery.Ajax.SuccessCallback
+import typings.jquery.JQuery.Ajax.XHRFields
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.TypeOrArray
+import typings.jquery.JQuery.jqXHR
 import typings.jquery.jqueryNumbers.`false`
 import typings.jquery.jqueryNumbers.`true`
 import typings.jquery.jqueryStrings.html
@@ -23,7 +23,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AjaxSettings
-  extends typings.jquery.JQueryNs.AjaxSettings[js.Any] {
+  extends typings.jquery.JQuery.AjaxSettings[js.Any] {
   @JSName("cache")
   var cache_AjaxSettings: js.UndefOr[js.Any] = js.undefined
   var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.undefined

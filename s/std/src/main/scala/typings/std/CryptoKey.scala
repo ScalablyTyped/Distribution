@@ -15,18 +15,5 @@ trait CryptoKey extends js.Object {
 
 @JSGlobal("CryptoKey")
 @js.native
-class CryptoKeyCls () extends CryptoKey {
-  /* CompleteClass */
-  override val algorithm: KeyAlgorithm = js.native
-  /* CompleteClass */
-  override val extractable: scala.Boolean = js.native
-  /* CompleteClass */
-  override val `type`: KeyType = js.native
-  /* CompleteClass */
-  override val usages: js.Array[KeyUsage] = js.native
-}
-
-@JSGlobal("CryptoKey")
-@js.native
 object CryptoKey extends Instantiable0[CryptoKey]
 

@@ -37,7 +37,7 @@ object DescribeAlarmsInput {
     ActionPrefix: ActionPrefix = null,
     AlarmNamePrefix: AlarmNamePrefix = null,
     AlarmNames: AlarmNames = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    MaxRecords: Int | Double = null,
     NextToken: NextToken = null,
     StateValue: StateValue = null
   ): DescribeAlarmsInput = {
@@ -45,7 +45,7 @@ object DescribeAlarmsInput {
     if (ActionPrefix != null) __obj.updateDynamic("ActionPrefix")(ActionPrefix)
     if (AlarmNamePrefix != null) __obj.updateDynamic("AlarmNamePrefix")(AlarmNamePrefix)
     if (AlarmNames != null) __obj.updateDynamic("AlarmNames")(AlarmNames)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmsInput]

@@ -10,17 +10,14 @@ trait SMSMfaSettingsType extends js.Object {
     */
   var Enabled: js.UndefOr[BooleanType] = js.undefined
   /**
-    * The preferred MFA method.
+    * Specifies whether SMS is the preferred MFA method.
     */
   var PreferredMfa: js.UndefOr[BooleanType] = js.undefined
 }
 
 object SMSMfaSettingsType {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[BooleanType] = js.undefined,
-    PreferredMfa: js.UndefOr[BooleanType] = js.undefined
-  ): SMSMfaSettingsType = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined, PreferredMfa: js.UndefOr[Boolean] = js.undefined): SMSMfaSettingsType = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     if (!js.isUndefined(PreferredMfa)) __obj.updateDynamic("PreferredMfa")(PreferredMfa)

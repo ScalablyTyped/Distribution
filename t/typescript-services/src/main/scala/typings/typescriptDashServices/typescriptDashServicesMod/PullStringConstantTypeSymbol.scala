@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullStringConstantTypeSymbol")
 @js.native
 class PullStringConstantTypeSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullStringConstantTypeSymbol {
+  extends typings.typescriptDashServices.TypeScript.PullStringConstantTypeSymbol {
   def this(name: String) = this()
 }
 

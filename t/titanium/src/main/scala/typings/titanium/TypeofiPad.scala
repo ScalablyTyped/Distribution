@@ -1,8 +1,8 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.UINs.iPadNs.DocumentViewer
-import typings.titanium.TitaniumNs.UINs.iPadNs.Popover
-import typings.titanium.TitaniumNs.UINs.iPadNs.SplitWindow
+import typings.titanium.Titanium.UI.iPad.DocumentViewer
+import typings.titanium.Titanium.UI.iPad.Popover
+import typings.titanium.Titanium.UI.iPad.SplitWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

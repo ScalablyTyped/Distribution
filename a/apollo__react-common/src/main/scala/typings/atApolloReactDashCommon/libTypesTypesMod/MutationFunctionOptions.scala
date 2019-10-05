@@ -1,8 +1,11 @@
 package typings.atApolloReactDashCommon.libTypesTypesMod
 
+import typings.apolloDashCache.libTypesDataProxyMod.DataProxy
 import typings.apolloDashClient.coreTypesMod.PureQueryOptions
 import typings.apolloDashClient.coreWatchQueryOptionsMod.MutationUpdaterFn
 import typings.apolloDashClient.coreWatchQueryOptionsMod.WatchQueryFetchPolicy
+import typings.apolloDashLink.libTypesMod.FetchResult
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +28,7 @@ object MutationFunctionOptions {
     fetchPolicy: WatchQueryFetchPolicy = null,
     optimisticResponse: TData | (js.Function1[/* vars */ TVariables | js.Object, TData]) = null,
     refetchQueries: (js.Array[String | PureQueryOptions]) | RefetchQueriesFunction = null,
-    update: MutationUpdaterFn[TData] = null,
+    update: (/* proxy */ DataProxy, /* mutationResult */ FetchResult[TData, Record[String, js.Any], Record[String, js.Any]]) => Unit = null,
     variables: TVariables = null
   ): MutationFunctionOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
@@ -34,7 +37,7 @@ object MutationFunctionOptions {
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationFunctionOptions[TData, TVariables]]
   }

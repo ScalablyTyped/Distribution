@@ -2,9 +2,9 @@ package typings.wegameDashApi
 
 import typings.wegameDashApi.wegameDashApiStrings.`2d`
 import typings.wegameDashApi.wegameDashApiStrings.webgl
-import typings.wegameDashApi.wxNs.typesNs.RenderingContextConfig
-import typings.wegameDashApi.wxNs.typesNs.ToTempFileParams
-import typings.wegameDashApi.wxNs.typesNs.ToTempFileSyncParams
+import typings.wegameDashApi.wx.types.RenderingContextConfig
+import typings.wegameDashApi.wx.types.ToTempFileParams
+import typings.wegameDashApi.wx.types.ToTempFileSyncParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

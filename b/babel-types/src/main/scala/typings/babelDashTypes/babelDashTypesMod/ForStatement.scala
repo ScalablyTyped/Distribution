@@ -43,3 +43,17 @@ object ForStatement {
   }
 }
 
+@JSImport("babel-types", "forStatement")
+@js.native
+object forStatement extends js.Object {
+  def apply(): ForStatement = js.native
+  def apply(init: Expression): ForStatement = js.native
+  def apply(init: Expression, test: Expression): ForStatement = js.native
+  def apply(init: Expression, test: Expression, update: Expression): ForStatement = js.native
+  def apply(init: Expression, test: Expression, update: Expression, body: Statement): ForStatement = js.native
+  def apply(init: VariableDeclaration): ForStatement = js.native
+  def apply(init: VariableDeclaration, test: Expression): ForStatement = js.native
+  def apply(init: VariableDeclaration, test: Expression, update: Expression): ForStatement = js.native
+  def apply(init: VariableDeclaration, test: Expression, update: Expression, body: Statement): ForStatement = js.native
+}
+

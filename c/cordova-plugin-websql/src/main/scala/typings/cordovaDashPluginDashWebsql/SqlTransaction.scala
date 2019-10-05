@@ -31,9 +31,5 @@ trait SqlTransaction extends js.Object {
 
 @JSGlobal("SqlTransaction")
 @js.native
-class SqlTransactionCls () extends SqlTransaction
-
-@JSGlobal("SqlTransaction")
-@js.native
 object SqlTransaction extends Instantiable0[SqlTransaction]
 

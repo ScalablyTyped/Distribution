@@ -1,7 +1,7 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiMod.LifecycleNs.FailAction
-import typings.hapi.hapiMod.UtilNs.Dictionary
+import typings.hapi.hapiMod.Lifecycle.FailAction
+import typings.hapi.hapiMod.Util.Dictionary
 import typings.hapi.hapiNumbers.`200`
 import typings.hapi.hapiNumbers.`204`
 import typings.joi.joiMod.ValidationOptions

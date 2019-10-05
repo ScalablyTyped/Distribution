@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(root: String): ReaddirpStream = js.native
   def apply(root: String, options: ReaddirpOptions): ReaddirpStream = js.native
-  def promise(root: String): js.Promise[js.Array[EntryInfo]] = js.native
-  def promise(root: String, options: ReaddirpOptions): js.Promise[js.Array[EntryInfo]] = js.native
 }
 

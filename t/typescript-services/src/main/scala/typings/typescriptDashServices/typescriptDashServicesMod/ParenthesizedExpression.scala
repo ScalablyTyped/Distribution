@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ParenthesizedExpression")
 @js.native
 class ParenthesizedExpression protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ParenthesizedExpression {
+  extends typings.typescriptDashServices.TypeScript.ParenthesizedExpression {
   def this(
-    openParenTrailingComments: js.Array[typings.typescriptDashServices.TypeScriptNs.Comment],
-    expression: typings.typescriptDashServices.TypeScriptNs.AST
+    openParenTrailingComments: js.Array[typings.typescriptDashServices.TypeScript.Comment],
+    expression: typings.typescriptDashServices.TypeScript.AST
   ) = this()
 }
 

@@ -28,7 +28,7 @@ object ListBucketInventoryConfigurationsOutput {
   def apply(
     ContinuationToken: Token = null,
     InventoryConfigurationList: InventoryConfigurationList = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     NextContinuationToken: NextToken = null
   ): ListBucketInventoryConfigurationsOutput = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.DataNs.XmlNs.DomNs.IXmlNode
+import typings.winrt.Windows.Data.Xml.Dom.IXmlNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

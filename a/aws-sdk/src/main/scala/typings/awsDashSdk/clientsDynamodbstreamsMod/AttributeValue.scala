@@ -51,13 +51,13 @@ object AttributeValue {
   @scala.inline
   def apply(
     B: BinaryAttributeValue = null,
-    BOOL: js.UndefOr[BooleanAttributeValue] = js.undefined,
+    BOOL: js.UndefOr[Boolean] = js.undefined,
     BS: BinarySetAttributeValue = null,
     L: ListAttributeValue = null,
     M: MapAttributeValue = null,
     N: NumberAttributeValue = null,
     NS: NumberSetAttributeValue = null,
-    NULL: js.UndefOr[NullAttributeValue] = js.undefined,
+    NULL: js.UndefOr[Boolean] = js.undefined,
     S: StringAttributeValue = null,
     SS: StringSetAttributeValue = null
   ): AttributeValue = {

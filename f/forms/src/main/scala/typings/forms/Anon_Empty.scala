@@ -1,5 +1,6 @@
 package typings.forms
 
+import typings.forms.formsMod.Form
 import typings.forms.formsMod.FormHandleCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,16 +16,16 @@ trait Anon_Empty extends js.Object {
 object Anon_Empty {
   @scala.inline
   def apply(
-    empty: FormHandleCallback = null,
-    error: FormHandleCallback = null,
-    other: FormHandleCallback = null,
-    success: FormHandleCallback = null
+    empty: /* form */ Form => Unit = null,
+    error: /* form */ Form => Unit = null,
+    other: /* form */ Form => Unit = null,
+    success: /* form */ Form => Unit = null
   ): Anon_Empty = {
     val __obj = js.Dynamic.literal()
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (other != null) __obj.updateDynamic("other")(other)
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (empty != null) __obj.updateDynamic("empty")(js.Any.fromFunction1(empty))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (other != null) __obj.updateDynamic("other")(js.Any.fromFunction1(other))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[Anon_Empty]
   }
 }

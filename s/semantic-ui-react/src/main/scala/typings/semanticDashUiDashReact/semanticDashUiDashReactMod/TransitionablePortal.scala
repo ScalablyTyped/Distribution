@@ -1,6 +1,8 @@
 package typings.semanticDashUiDashReact.semanticDashUiDashReactMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
 import scala.scalajs.js
@@ -14,4 +16,8 @@ class TransitionablePortal protected ()
   def this(props: TransitionablePortalProps) = this()
   def this(props: TransitionablePortalProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react", "TransitionablePortal")
+@js.native
+object TransitionablePortal extends TopLevel[ComponentClass[TransitionablePortalProps, ComponentState]]
 

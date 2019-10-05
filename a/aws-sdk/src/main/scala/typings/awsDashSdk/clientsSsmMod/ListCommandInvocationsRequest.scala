@@ -35,10 +35,10 @@ object ListCommandInvocationsRequest {
   @scala.inline
   def apply(
     CommandId: CommandId = null,
-    Details: js.UndefOr[Boolean] = js.undefined,
+    Details: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: CommandFilterList = null,
     InstanceId: InstanceId = null,
-    MaxResults: js.UndefOr[CommandMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListCommandInvocationsRequest = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object ListCommandInvocationsRequest {
     if (!js.isUndefined(Details)) __obj.updateDynamic("Details")(Details)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListCommandInvocationsRequest]
   }

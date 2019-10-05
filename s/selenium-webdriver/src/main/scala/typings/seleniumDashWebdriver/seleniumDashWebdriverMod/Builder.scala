@@ -1,7 +1,7 @@
 package typings.seleniumDashWebdriver.seleniumDashWebdriverMod
 
 import typings.seleniumDashWebdriver.chromeMod.ServiceBuilder
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.loggingNs.Preferences
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Preferences
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

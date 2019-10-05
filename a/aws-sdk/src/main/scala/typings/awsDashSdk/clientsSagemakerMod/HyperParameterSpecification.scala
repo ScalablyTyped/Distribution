@@ -42,8 +42,8 @@ object HyperParameterSpecification {
     Type: ParameterType,
     DefaultValue: ParameterValue = null,
     Description: EntityDescription = null,
-    IsRequired: js.UndefOr[Boolean] = js.undefined,
-    IsTunable: js.UndefOr[Boolean] = js.undefined,
+    IsRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    IsTunable: js.UndefOr[scala.Boolean] = js.undefined,
     Range: ParameterRange = null
   ): HyperParameterSpecification = {
     val __obj = js.Dynamic.literal(Name = Name, Type = Type.asInstanceOf[js.Any])

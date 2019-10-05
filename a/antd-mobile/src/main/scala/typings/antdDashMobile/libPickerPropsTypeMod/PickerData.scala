@@ -13,9 +13,10 @@ trait PickerData extends js.Object {
 
 object PickerData {
   @scala.inline
-  def apply(label: ReactNode, value: String | Double, children: js.Array[PickerData] = null): PickerData = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(value: String | Double, children: js.Array[PickerData] = null, label: ReactNode = null): PickerData = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerData]
   }
 }

@@ -1,6 +1,7 @@
 package typings.halogen.halogenMod
 
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +9,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("halogen", "PacmanLoader")
 @js.native
-class PacmanLoaderCls protected ()
-  extends Component[MarginLoaderProps[Double], ComponentState, js.Any] {
-  def this(props: MarginLoaderProps[Double]) = this()
-  def this(props: MarginLoaderProps[Double], context: js.Any) = this()
-}
+object PacmanLoader extends TopLevel[ComponentClass[MarginLoaderProps[Double], ComponentState]]
 

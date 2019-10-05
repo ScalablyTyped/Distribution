@@ -35,15 +35,15 @@ object ListPoliciesRequest {
   @scala.inline
   def apply(
     Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
-    OnlyAttached: js.UndefOr[booleanType] = js.undefined,
+    MaxItems: Int | Double = null,
+    OnlyAttached: js.UndefOr[Boolean] = js.undefined,
     PathPrefix: policyPathType = null,
     PolicyUsageFilter: PolicyUsageType = null,
     Scope: policyScopeType = null
   ): ListPoliciesRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (!js.isUndefined(OnlyAttached)) __obj.updateDynamic("OnlyAttached")(OnlyAttached)
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix)
     if (PolicyUsageFilter != null) __obj.updateDynamic("PolicyUsageFilter")(PolicyUsageFilter.asInstanceOf[js.Any])

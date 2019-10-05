@@ -52,26 +52,26 @@ object ReservedDBInstancesOffering {
   def apply(
     CurrencyCode: String = null,
     DBInstanceClass: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    Duration: Int | scala.Double = null,
+    FixedPrice: Int | scala.Double = null,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
     RecurringCharges: RecurringChargeList = null,
     ReservedDBInstancesOfferingId: String = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedDBInstancesOffering = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType)
     if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription)
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges)
     if (ReservedDBInstancesOfferingId != null) __obj.updateDynamic("ReservedDBInstancesOfferingId")(ReservedDBInstancesOfferingId)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedDBInstancesOffering]
   }
 }

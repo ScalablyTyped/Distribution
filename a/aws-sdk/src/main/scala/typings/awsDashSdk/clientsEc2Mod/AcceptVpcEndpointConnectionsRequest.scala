@@ -21,7 +21,11 @@ trait AcceptVpcEndpointConnectionsRequest extends js.Object {
 
 object AcceptVpcEndpointConnectionsRequest {
   @scala.inline
-  def apply(ServiceId: String, VpcEndpointIds: ValueStringList, DryRun: js.UndefOr[Boolean] = js.undefined): AcceptVpcEndpointConnectionsRequest = {
+  def apply(
+    ServiceId: String,
+    VpcEndpointIds: ValueStringList,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): AcceptVpcEndpointConnectionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId, VpcEndpointIds = VpcEndpointIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AcceptVpcEndpointConnectionsRequest]

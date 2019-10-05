@@ -1,6 +1,6 @@
 package typings.atPulumiAws.appsyncResolverMod
 
-import typings.atPulumiAws.typesInputMod.appsyncNs.ResolverPipelineConfig
+import typings.atPulumiAws.typesInputMod.appsync.ResolverPipelineConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

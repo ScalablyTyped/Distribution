@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "RaycastResult")
 @js.native
 class RaycastResult protected ()
-  extends typings.playcanvas.pcNs.RaycastResult {
+  extends typings.playcanvas.pc.RaycastResult {
   def this(
-    entity: typings.playcanvas.pcNs.Entity,
-    point: typings.playcanvas.pcNs.Vec3,
-    normal: typings.playcanvas.pcNs.Vec3
+    entity: typings.playcanvas.pc.Entity,
+    point: typings.playcanvas.pc.Vec3,
+    normal: typings.playcanvas.pc.Vec3
   ) = this()
 }
 

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetCustomerGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.GetCustomerGatewayFilter
+import typings.atPulumiAws.typesInputMod.ec2.GetCustomerGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

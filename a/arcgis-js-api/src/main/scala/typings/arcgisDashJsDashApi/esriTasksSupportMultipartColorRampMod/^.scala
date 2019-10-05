@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportMultipartColorRampMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MultipartColorRampConstructor
+import typings.arcgisDashJsDashApi.__esri.MultipartColorRampConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

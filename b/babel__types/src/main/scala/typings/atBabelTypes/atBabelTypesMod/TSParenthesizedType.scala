@@ -37,3 +37,9 @@ object TSParenthesizedType {
   }
 }
 
+@JSImport("@babel/types", "tsParenthesizedType")
+@js.native
+object tsParenthesizedType extends js.Object {
+  def apply(typeAnnotation: TSType): TSParenthesizedType = js.native
+}
+

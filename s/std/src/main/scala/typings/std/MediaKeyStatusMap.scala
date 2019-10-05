@@ -27,9 +27,5 @@ trait MediaKeyStatusMap extends js.Object {
 
 @JSGlobal("MediaKeyStatusMap")
 @js.native
-class MediaKeyStatusMapCls () extends MediaKeyStatusMap
-
-@JSGlobal("MediaKeyStatusMap")
-@js.native
 object MediaKeyStatusMap extends Instantiable0[MediaKeyStatusMap]
 

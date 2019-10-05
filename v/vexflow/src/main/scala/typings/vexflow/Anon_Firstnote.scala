@@ -1,6 +1,6 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.Note
+import typings.vexflow.Vex.Flow.Note
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

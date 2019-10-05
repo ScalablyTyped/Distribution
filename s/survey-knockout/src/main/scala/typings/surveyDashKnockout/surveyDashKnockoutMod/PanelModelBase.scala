@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IParentElement because var conflicts: isReadOnly. Inlined addElement, removeElement
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurveyElement because Already inherited
 - typings.surveyDashKnockout.surveyDashKnockoutMod.IPanel because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
@@ -97,6 +99,8 @@ class PanelModelBase ()
   def addElement(element: IElement): Boolean = js.native
   def addElement(element: IElement, index: Double): Boolean = js.native
   def addElementCallback(element: IElement): Unit = js.native
+  @JSName("addElement")
+  def addElement_Any(element: IElement, index: Double): js.Any = js.native
   /**
     * Creates a new panel and adds it into the end of the elements list. Returns null, if the panel could not be created or could not be added into page or panel.
     * @param name a panel name

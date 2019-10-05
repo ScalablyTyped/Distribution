@@ -1,5 +1,7 @@
 package typings.atTensorflowTfjsDashConverter.distSrcOperationsTypesMod
 
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +20,12 @@ object OpMapper {
     category: Category,
     tfOpName: String,
     attrs: js.Array[AttrParamMapper] = null,
-    customExecutor: OpExecutor = null,
+    customExecutor: /* node */ GraphNode => Tensor[Rank] | js.Array[Tensor[Rank]] | (js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]]) = null,
     inputs: js.Array[InputParamMapper] = null
   ): OpMapper = {
     val __obj = js.Dynamic.literal(category = category, tfOpName = tfOpName)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (customExecutor != null) __obj.updateDynamic("customExecutor")(customExecutor)
+    if (customExecutor != null) __obj.updateDynamic("customExecutor")(js.Any.fromFunction1(customExecutor))
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     __obj.asInstanceOf[OpMapper]
   }

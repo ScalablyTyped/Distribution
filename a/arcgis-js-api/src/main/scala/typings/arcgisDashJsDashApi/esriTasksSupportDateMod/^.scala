@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportDateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.supportDateConstructor
+import typings.arcgisDashJsDashApi.__esri.supportDateConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

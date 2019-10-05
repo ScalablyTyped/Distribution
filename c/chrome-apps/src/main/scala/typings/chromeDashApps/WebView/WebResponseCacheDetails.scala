@@ -1,0 +1,46 @@
+package typings.chromeDashApps.WebView
+
+import typings.chromeDashApps.chrome.double
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.webRequest.ResourceType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait WebResponseCacheDetails extends WebResponseHeadersDetails {
+  /** Indicates if this response was fetched from disk cache. */
+  var fromCache: Boolean
+  /**
+    * Optional.
+    * The server IP address that the request was actually sent to. Note that it may be a literal IPv6 address.
+    */
+  var ip: js.UndefOr[String] = js.undefined
+}
+
+object WebResponseCacheDetails {
+  @scala.inline
+  def apply(
+    frameId: integer,
+    fromCache: Boolean,
+    method: String,
+    parentFrameId: integer,
+    requestId: String,
+    statusCode: integer,
+    statusLine: String,
+    tabId: integer,
+    timeStamp: double,
+    `type`: ResourceType,
+    url: String,
+    initiator: String = null,
+    ip: String = null,
+    responseHeaders: js.Array[HttpHeader] = null
+  ): WebResponseCacheDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[WebResponseCacheDetails]
+  }
+}
+

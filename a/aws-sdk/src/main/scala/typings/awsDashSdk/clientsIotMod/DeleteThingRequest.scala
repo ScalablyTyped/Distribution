@@ -17,9 +17,9 @@ trait DeleteThingRequest extends js.Object {
 
 object DeleteThingRequest {
   @scala.inline
-  def apply(thingName: ThingName, expectedVersion: js.UndefOr[OptionalVersion] = js.undefined): DeleteThingRequest = {
+  def apply(thingName: ThingName, expectedVersion: Int | Double = null): DeleteThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteThingRequest]
   }
 }

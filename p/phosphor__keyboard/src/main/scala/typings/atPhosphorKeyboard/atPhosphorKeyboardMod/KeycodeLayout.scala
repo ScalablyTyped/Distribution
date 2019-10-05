@@ -1,6 +1,9 @@
 package typings.atPhosphorKeyboard.atPhosphorKeyboardMod
 
-import typings.atPhosphorKeyboard.atPhosphorKeyboardMod.KeycodeLayoutNs.CodeMap
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
+import typings.atPhosphorKeyboard.atPhosphorKeyboardMod.KeycodeLayout.CodeMap
+import typings.atPhosphorKeyboard.atPhosphorKeyboardMod.KeycodeLayout.KeySet
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,5 +59,26 @@ class KeycodeLayout protected () extends IKeyboardLayout {
     */
   /* CompleteClass */
   override def keys(): js.Array[String] = js.native
+}
+
+@JSImport("@phosphor/keyboard", "KeycodeLayout")
+@js.native
+object KeycodeLayout extends js.Object {
+  /**
+    * Extract the set of keys from a code map.
+    *
+    * @param code - The code map of interest.
+    *
+    * @returns A set of the keys in the code map.
+    */
+  def extractKeys(codes: CodeMap): KeySet = js.native
+  /**
+    * A type alias for a keycode map.
+    */
+  type CodeMap = NumberDictionary[String]
+  /**
+    * A type alias for a key set.
+    */
+  type KeySet = StringDictionary[Boolean]
 }
 

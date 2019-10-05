@@ -1,8 +1,8 @@
 package typings.atPulumiAws.wafregionalWebAclMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclDefaultAction
-import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclLoggingConfiguration
-import typings.atPulumiAws.typesInputMod.wafregionalNs.WebAclRule
+import typings.atPulumiAws.typesInputMod.wafregional.WebAclDefaultAction
+import typings.atPulumiAws.typesInputMod.wafregional.WebAclLoggingConfiguration
+import typings.atPulumiAws.typesInputMod.wafregional.WebAclRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

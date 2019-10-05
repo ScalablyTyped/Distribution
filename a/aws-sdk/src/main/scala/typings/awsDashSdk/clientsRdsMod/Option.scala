@@ -51,9 +51,9 @@ object Option {
     OptionName: String = null,
     OptionSettings: OptionSettingConfigurationList = null,
     OptionVersion: String = null,
-    Permanent: js.UndefOr[Boolean] = js.undefined,
-    Persistent: js.UndefOr[Boolean] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Permanent: js.UndefOr[scala.Boolean] = js.undefined,
+    Persistent: js.UndefOr[scala.Boolean] = js.undefined,
+    Port: Int | scala.Double = null,
     VpcSecurityGroupMemberships: VpcSecurityGroupMembershipList = null
   ): Option = {
     val __obj = js.Dynamic.literal()
@@ -64,7 +64,7 @@ object Option {
     if (OptionVersion != null) __obj.updateDynamic("OptionVersion")(OptionVersion)
     if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent)
     if (!js.isUndefined(Persistent)) __obj.updateDynamic("Persistent")(Persistent)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (VpcSecurityGroupMemberships != null) __obj.updateDynamic("VpcSecurityGroupMemberships")(VpcSecurityGroupMemberships)
     __obj.asInstanceOf[Option]
   }

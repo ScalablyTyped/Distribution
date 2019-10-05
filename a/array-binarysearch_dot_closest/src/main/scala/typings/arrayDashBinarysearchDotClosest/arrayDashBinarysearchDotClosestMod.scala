@@ -36,5 +36,8 @@ object arrayDashBinarysearchDotClosestMod extends js.Object {
     bgn: Double,
     end: Double
   ): Double = js.native
+  def apply[T](arr: js.Array[T], `val`: T, fn: Null, ths: js.Any): Double = js.native
+  def apply[T](arr: js.Array[T], `val`: T, fn: Null, ths: js.Any, bgn: Double): Double = js.native
+  def apply[T](arr: js.Array[T], `val`: T, fn: Null, ths: js.Any, bgn: Double, end: Double): Double = js.native
 }
 

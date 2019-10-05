@@ -25,14 +25,9 @@ trait ListFacetAttributesRequest extends js.Object {
 
 object ListFacetAttributesRequest {
   @scala.inline
-  def apply(
-    Name: FacetName,
-    SchemaArn: Arn,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListFacetAttributesRequest = {
+  def apply(Name: FacetName, SchemaArn: Arn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListFacetAttributesRequest = {
     val __obj = js.Dynamic.literal(Name = Name, SchemaArn = SchemaArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListFacetAttributesRequest]
   }

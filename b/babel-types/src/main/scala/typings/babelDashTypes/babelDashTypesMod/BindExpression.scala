@@ -36,3 +36,11 @@ object BindExpression {
   }
 }
 
+@JSImport("babel-types", "bindExpression")
+@js.native
+object bindExpression extends js.Object {
+  def apply(): BindExpression = js.native
+  def apply(`object`: Expression): BindExpression = js.native
+  def apply(`object`: Expression, callee: Expression): BindExpression = js.native
+}
+

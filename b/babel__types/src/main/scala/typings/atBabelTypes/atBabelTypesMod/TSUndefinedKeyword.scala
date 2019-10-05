@@ -35,3 +35,9 @@ object TSUndefinedKeyword {
   }
 }
 
+@JSImport("@babel/types", "tsUndefinedKeyword")
+@js.native
+object tsUndefinedKeyword extends js.Object {
+  def apply(): TSUndefinedKeyword = js.native
+}
+

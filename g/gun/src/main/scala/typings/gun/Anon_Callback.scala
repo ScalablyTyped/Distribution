@@ -1,6 +1,6 @@
 package typings.gun
 
-import typings.gun.gunMod.GunNs.CryptoKeyPair
+import typings.gun.gunMod.Gun.CryptoKeyPair
 import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js

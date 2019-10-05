@@ -36,17 +36,17 @@ object ProcessDetails {
   def apply(
     LaunchedAt: NonEmptyString = null,
     Name: NonEmptyString = null,
-    ParentPid: js.UndefOr[Integer] = js.undefined,
+    ParentPid: Int | scala.Double = null,
     Path: NonEmptyString = null,
-    Pid: js.UndefOr[Integer] = js.undefined,
+    Pid: Int | scala.Double = null,
     TerminatedAt: NonEmptyString = null
   ): ProcessDetails = {
     val __obj = js.Dynamic.literal()
     if (LaunchedAt != null) __obj.updateDynamic("LaunchedAt")(LaunchedAt)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(ParentPid)) __obj.updateDynamic("ParentPid")(ParentPid)
+    if (ParentPid != null) __obj.updateDynamic("ParentPid")(ParentPid.asInstanceOf[js.Any])
     if (Path != null) __obj.updateDynamic("Path")(Path)
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid)
+    if (Pid != null) __obj.updateDynamic("Pid")(Pid.asInstanceOf[js.Any])
     if (TerminatedAt != null) __obj.updateDynamic("TerminatedAt")(TerminatedAt)
     __obj.asInstanceOf[ProcessDetails]
   }

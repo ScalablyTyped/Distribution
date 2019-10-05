@@ -10,7 +10,7 @@ import typings.moment.momentMod.MomentBuiltinFormat
 import typings.moment.momentMod.MomentFormatSpecification
 import typings.moment.momentMod.MomentInput
 import typings.moment.momentMod.MomentParsingFlagsOpt
-import typings.moment.momentMod.unitOfTimeNs.All
+import typings.moment.momentMod.unitOfTime.All
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait Anon_CalendarFormat extends js.Object {
   var defaultFormat: String = js.native
   var defaultFormatUtc: String = js.native
   var fn: Moment = js.native
-  val unitOfTimeNs: js.Any = js.native
+  val unitOfTime: js.Any = js.native
   var version: String = js.native
   def apply(): Moment = js.native
   def apply(inp: MomentInput): Moment = js.native

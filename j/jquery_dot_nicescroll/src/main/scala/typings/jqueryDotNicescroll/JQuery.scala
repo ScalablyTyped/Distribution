@@ -1,7 +1,7 @@
 package typings.jqueryDotNicescroll
 
-import typings.jqueryDotNicescroll.JQueryNiceScrollNs.NiceScroll
-import typings.jqueryDotNicescroll.JQueryNiceScrollNs.NiceScrollOptions
+import typings.jqueryDotNicescroll.JQueryNiceScroll.NiceScroll
+import typings.jqueryDotNicescroll.JQueryNiceScroll.NiceScrollOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

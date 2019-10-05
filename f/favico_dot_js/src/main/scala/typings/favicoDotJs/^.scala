@@ -1,6 +1,6 @@
 package typings.favicoDotJs
 
-import typings.favicoDotJs.favicojsNs.FavicoJsStatic
+import typings.favicoDotJs.favicojs.FavicoJsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,12 +22,12 @@ object ActionObject {
   def apply[TContext, TEvent /* <: EventObject */](
     `type`: String,
     StringDictionary: /* other */ StringDictionary[js.Any] = null,
-    exec: ActionFunction[TContext, TEvent] = null
+    exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): ActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[ActionObject[TContext, TEvent]]
   }
 }

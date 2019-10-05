@@ -26,7 +26,7 @@ trait FunctionConfigurationEnvironment extends js.Object {
 object FunctionConfigurationEnvironment {
   @scala.inline
   def apply(
-    AccessSysfs: js.UndefOr[__boolean] = js.undefined,
+    AccessSysfs: js.UndefOr[Boolean] = js.undefined,
     Execution: FunctionExecutionConfig = null,
     ResourceAccessPolicies: __listOfResourceAccessPolicy = null,
     Variables: __mapOf__string = null

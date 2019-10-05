@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPointMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointConstructor
+import typings.arcgisDashJsDashApi.__esri.PointConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

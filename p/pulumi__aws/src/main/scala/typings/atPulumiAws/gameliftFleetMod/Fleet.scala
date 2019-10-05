@@ -1,8 +1,8 @@
 package typings.atPulumiAws.gameliftFleetMod
 
-import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetEc2InboundPermission
-import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetResourceCreationLimitPolicy
-import typings.atPulumiAws.typesOutputMod.gameliftNs.FleetRuntimeConfiguration
+import typings.atPulumiAws.typesOutputMod.gamelift.FleetEc2InboundPermission
+import typings.atPulumiAws.typesOutputMod.gamelift.FleetResourceCreationLimitPolicy
+import typings.atPulumiAws.typesOutputMod.gamelift.FleetRuntimeConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

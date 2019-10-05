@@ -29,7 +29,7 @@ object UpdateTeamMemberRequest {
     projectId: ProjectId,
     userArn: UserArn,
     projectRole: Role = null,
-    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
+    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined
   ): UpdateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId, userArn = userArn)
     if (projectRole != null) __obj.updateDynamic("projectRole")(projectRole)

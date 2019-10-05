@@ -1,5 +1,6 @@
 package typings.handlebarsDashHelpers.handlebarsDashHelpersMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,4 +44,8 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
 }
+
+@JSImport("handlebars-helpers", "utils")
+@js.native
+object utils extends TopLevel[Utils]
 

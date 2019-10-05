@@ -1,0 +1,16 @@
+package typings.reactDashPropsDashDecorators
+
+import typings.react.reactMod.ValidationMap
+import typings.reactDashPropsDashDecorators.reactDashPropsDashDecoratorsMod.ClassDecorator
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-props-decorators", JSImport.Namespace)
+@js.native
+object reactDashPropsDashDecoratorsMod extends js.Object {
+  var defaultProps: js.Function1[/* defaultProps */ js.Any, ClassDecorator] = js.native
+  var propTypes: js.Function1[/* map */ ValidationMap[js.Any], ClassDecorator] = js.native
+  type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | Unit]
+}
+

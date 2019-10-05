@@ -27,7 +27,7 @@ object UpdateResourceShareRequest {
   @scala.inline
   def apply(
     resourceShareArn: String,
-    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
     clientToken: String = null,
     name: String = null
   ): UpdateResourceShareRequest = {

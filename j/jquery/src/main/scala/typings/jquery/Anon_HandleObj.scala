@@ -1,6 +1,6 @@
 package typings.jquery
 
-import typings.jquery.JQueryNs.HandleObject
+import typings.jquery.JQuery.HandleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,14 +21,10 @@ trait ListVersionsByFunctionRequest extends js.Object {
 
 object ListVersionsByFunctionRequest {
   @scala.inline
-  def apply(
-    FunctionName: NamespacedFunctionName,
-    Marker: String = null,
-    MaxItems: js.UndefOr[MaxListItems] = js.undefined
-  ): ListVersionsByFunctionRequest = {
+  def apply(FunctionName: NamespacedFunctionName, Marker: String = null, MaxItems: Int | Double = null): ListVersionsByFunctionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVersionsByFunctionRequest]
   }
 }

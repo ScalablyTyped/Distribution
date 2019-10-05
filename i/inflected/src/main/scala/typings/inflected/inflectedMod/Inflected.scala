@@ -1,8 +1,8 @@
 package typings.inflected.inflectedMod
 
-import typings.inflected.inflectedMod.OptionsNs.Humanize
-import typings.inflected.inflectedMod.OptionsNs.Parameterize
-import typings.inflected.inflectedMod.OptionsNs.Transliterate
+import typings.inflected.inflectedMod.Options.Humanize
+import typings.inflected.inflectedMod.Options.Parameterize
+import typings.inflected.inflectedMod.Options.Transliterate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

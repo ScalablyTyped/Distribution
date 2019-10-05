@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackDashEnv {
-  import typings.webpackDashEnv.underscoreUnderscoreWebpackModuleApiNs.Module
-  import typings.webpackDashEnv.underscoreUnderscoreWebpackModuleApiNs.RequireFunction
+  import typings.webpackDashEnv.__WebpackModuleApi.Module
+  import typings.webpackDashEnv.__WebpackModuleApi.RequireFunction
 
   type NodeModule = Module
   type NodeRequire = RequireFunction

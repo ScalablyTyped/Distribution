@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ecsTaskDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionPlacementConstraint
-import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionProxyConfiguration
-import typings.atPulumiAws.typesInputMod.ecsNs.TaskDefinitionVolume
+import typings.atPulumiAws.typesInputMod.ecs.TaskDefinitionPlacementConstraint
+import typings.atPulumiAws.typesInputMod.ecs.TaskDefinitionProxyConfiguration
+import typings.atPulumiAws.typesInputMod.ecs.TaskDefinitionVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

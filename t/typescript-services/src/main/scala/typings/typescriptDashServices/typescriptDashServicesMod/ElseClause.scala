@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ElseClause")
 @js.native
 class ElseClause protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ElseClause {
-  def this(statement: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.ElseClause {
+  def this(statement: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

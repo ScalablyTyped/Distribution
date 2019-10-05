@@ -1,5 +1,6 @@
 package typings.atOracleOraclejet.ojfilepickerMod
 
+import typings.atOracleOraclejet.Anon_Files
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElement
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetSetPropertyType
@@ -106,9 +107,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionstart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.volumechange
 import typings.atOracleOraclejet.atOracleOraclejetStrings.waiting
 import typings.atOracleOraclejet.atOracleOraclejetStrings.wheel
-import typings.atOracleOraclejet.ojfilepickerMod.ojFilePickerNs.ojSelect
+import typings.atOracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
@@ -990,5 +992,11 @@ trait ojFilePicker extends JetElement[ojFilePickerSettableProperties] {
   def setProperty_accept(property: accept): Unit = js.native
   @JSName("setProperty")
   def setProperty_accept(property: accept, value: js.Array[String]): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojfilepicker", "ojFilePicker")
+@js.native
+object ojFilePicker extends js.Object {
+  type ojSelect = CustomEvent[Anon_Files]
 }
 

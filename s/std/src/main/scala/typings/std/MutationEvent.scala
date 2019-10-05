@@ -30,10 +30,6 @@ trait MutationEvent extends Event {
 
 @JSGlobal("MutationEvent")
 @js.native
-class MutationEventCls () extends MutationEvent
-
-@JSGlobal("MutationEvent")
-@js.native
 object MutationEvent extends Instantiable0[MutationEvent] {
   val ADDITION: Double = js.native
   val MODIFICATION: Double = js.native

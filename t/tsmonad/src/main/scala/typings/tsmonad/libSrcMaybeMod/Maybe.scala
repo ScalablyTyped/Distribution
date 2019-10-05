@@ -58,3 +58,9 @@ object Maybe extends js.Object {
   def sequence[T](t: StringDictionary[Maybe[T]]): Maybe[StringDictionary[T]] = js.native
 }
 
+@JSImport("tsmonad/lib/src/maybe", "maybe")
+@js.native
+object maybe extends js.Object {
+  def apply[T](t: T): Maybe[T] = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.lovefield.lovefieldMod
 
-import typings.lovefield.lovefieldMod.schemaNs.Column
+import typings.lovefield.lovefieldMod.schema.Column
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.eventDashTargetDashShim
 
-import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTargetNs.Mode
+import typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

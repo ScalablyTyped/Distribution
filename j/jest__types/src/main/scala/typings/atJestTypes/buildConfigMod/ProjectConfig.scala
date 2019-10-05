@@ -21,7 +21,7 @@ trait ProjectConfig extends js.Object {
   var displayName: js.UndefOr[DisplayName] = js.undefined
   var errorOnDeprecated: Boolean
   var extraGlobals: js.Array[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
   ]
   var filter: js.UndefOr[Path | Null] = js.undefined
   var forceCoverageMatch: js.Array[Glob]
@@ -79,7 +79,7 @@ object ProjectConfig {
     detectOpenHandles: Boolean,
     errorOnDeprecated: Boolean,
     extraGlobals: js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
     ],
     forceCoverageMatch: js.Array[Glob],
     globals: ConfigGlobals,

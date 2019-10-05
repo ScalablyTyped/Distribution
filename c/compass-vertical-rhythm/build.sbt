@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "compass-vertical-rhythm"
-version := "1.4-dt-20190927Z-5d175d"
-scalaVersion := "2.12.9"
+version := "1.4-dt-20190927Z-a7dcc9"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

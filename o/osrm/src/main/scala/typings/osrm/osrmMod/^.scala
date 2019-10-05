@@ -16,9 +16,3 @@ class ^ protected () extends OSRM {
   def this(name: String) = this()
 }
 
-@JSImport("osrm", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  val version: Double = js.native
-}
-

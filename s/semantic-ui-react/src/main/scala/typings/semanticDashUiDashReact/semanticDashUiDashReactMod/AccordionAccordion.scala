@@ -1,6 +1,8 @@
 package typings.semanticDashUiDashReact.semanticDashUiDashReactMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps
 import scala.scalajs.js
@@ -14,4 +16,8 @@ class AccordionAccordion protected ()
   def this(props: AccordionAccordionProps) = this()
   def this(props: AccordionAccordionProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react", "AccordionAccordion")
+@js.native
+object AccordionAccordion extends TopLevel[ComponentClass[AccordionAccordionProps, ComponentState]]
 

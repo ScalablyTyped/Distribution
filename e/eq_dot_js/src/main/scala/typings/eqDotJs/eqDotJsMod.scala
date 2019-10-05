@@ -1,7 +1,7 @@
 package typings.eqDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.eqDotJs.eqNs.EqjsStatic
+import typings.eqDotJs.eq.EqjsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

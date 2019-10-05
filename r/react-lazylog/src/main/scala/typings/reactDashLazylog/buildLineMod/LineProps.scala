@@ -1,6 +1,8 @@
 package typings.reactDashLazylog.buildLineMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.reactDashLazylog.Anon_Text
@@ -33,7 +35,7 @@ object LineProps {
     rowHeight: Double,
     formatPart: /* text */ String => ReactNode = null,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    onLineNumberClick: MouseEventHandler[HTMLAnchorElement] = null,
+    onLineNumberClick: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit = null,
     onRowClick: () => _ = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
@@ -41,7 +43,7 @@ object LineProps {
     val __obj = js.Dynamic.literal(data = data, number = number, rowHeight = rowHeight)
     if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (onLineNumberClick != null) __obj.updateDynamic("onLineNumberClick")(onLineNumberClick)
+    if (onLineNumberClick != null) __obj.updateDynamic("onLineNumberClick")(js.Any.fromFunction1(onLineNumberClick))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction0(onRowClick))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -48,7 +48,7 @@ object DeleteFileInput {
     repositoryName: RepositoryName,
     commitMessage: Message = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
+    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
     name: Name = null
   ): DeleteFileInput = {
     val __obj = js.Dynamic.literal(branchName = branchName, filePath = filePath, parentCommitId = parentCommitId, repositoryName = repositoryName)

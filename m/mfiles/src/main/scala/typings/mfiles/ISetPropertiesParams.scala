@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFACLEnforcingMode
-import typings.mfiles.MFilesNs.MFObjectOperationFlags
+import typings.mfiles.MFiles.MFACLEnforcingMode
+import typings.mfiles.MFiles.MFObjectOperationFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

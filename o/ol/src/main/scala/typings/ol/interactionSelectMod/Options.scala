@@ -1,6 +1,7 @@
 package typings.ol.interactionSelectMod
 
 import typings.ol.eventsConditionMod.Condition
+import typings.ol.featureMod.FeatureLike
 import typings.ol.styleStyleMod.StyleLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +29,7 @@ object Options {
     addCondition: Condition = null,
     condition: Condition = null,
     features: typings.ol.collectionMod.default[typings.ol.featureMod.default] = null,
-    filter: FilterFunction = null,
+    filter: (/* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default) => Boolean = null,
     hitTolerance: Int | Double = null,
     layers: js.Array[typings.ol.layerLayerMod.default] | (js.Function1[/* p0 */ typings.ol.layerLayerMod.default, Boolean]) = null,
     multi: js.UndefOr[Boolean] = js.undefined,
@@ -41,7 +42,7 @@ object Options {
     if (addCondition != null) __obj.updateDynamic("addCondition")(addCondition)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (features != null) __obj.updateDynamic("features")(features)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)

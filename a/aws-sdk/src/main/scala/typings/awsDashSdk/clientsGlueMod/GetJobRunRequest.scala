@@ -24,7 +24,7 @@ object GetJobRunRequest {
   def apply(
     JobName: NameString,
     RunId: IdString,
-    PredecessorsIncluded: js.UndefOr[BooleanValue] = js.undefined
+    PredecessorsIncluded: js.UndefOr[scala.Boolean] = js.undefined
   ): GetJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName, RunId = RunId)
     if (!js.isUndefined(PredecessorsIncluded)) __obj.updateDynamic("PredecessorsIncluded")(PredecessorsIncluded)

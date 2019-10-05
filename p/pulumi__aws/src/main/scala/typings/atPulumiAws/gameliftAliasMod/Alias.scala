@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftAliasMod
 
-import typings.atPulumiAws.typesOutputMod.gameliftNs.AliasRoutingStrategy
+import typings.atPulumiAws.typesOutputMod.gamelift.AliasRoutingStrategy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

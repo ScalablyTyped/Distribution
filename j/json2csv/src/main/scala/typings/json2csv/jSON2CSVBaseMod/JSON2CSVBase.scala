@@ -1,7 +1,7 @@
 package typings.json2csv.jSON2CSVBaseMod
 
-import typings.json2csv.jSON2CSVBaseMod.json2csvNs.FieldInfo
-import typings.json2csv.jSON2CSVBaseMod.json2csvNs.Options
+import typings.json2csv.jSON2CSVBaseMod.json2csv.FieldInfo
+import typings.json2csv.jSON2CSVBaseMod.json2csv.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

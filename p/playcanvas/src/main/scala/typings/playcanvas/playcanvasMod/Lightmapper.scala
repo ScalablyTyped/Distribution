@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Lightmapper")
 @js.native
 class Lightmapper protected ()
-  extends typings.playcanvas.pcNs.Lightmapper {
+  extends typings.playcanvas.pc.Lightmapper {
   def this(
-    device: typings.playcanvas.pcNs.GraphicsDevice,
-    root: typings.playcanvas.pcNs.Entity,
-    scene: typings.playcanvas.pcNs.Scene,
-    renderer: typings.playcanvas.pcNs.ForwardRenderer,
-    assets: typings.playcanvas.pcNs.AssetRegistry
+    device: typings.playcanvas.pc.GraphicsDevice,
+    root: typings.playcanvas.pc.Entity,
+    scene: typings.playcanvas.pc.Scene,
+    renderer: typings.playcanvas.pc.ForwardRenderer,
+    assets: typings.playcanvas.pc.AssetRegistry
   ) = this()
 }
 

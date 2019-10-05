@@ -1,5 +1,6 @@
 package typings.grpc.grpcMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +15,9 @@ trait VerifyOptions extends js.Object {
 
 object VerifyOptions {
   @scala.inline
-  def apply(checkServerIdentity: CheckServerIdentityCallback = null): VerifyOptions = {
+  def apply(checkServerIdentity: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error] = null): VerifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     __obj.asInstanceOf[VerifyOptions]
   }
 }

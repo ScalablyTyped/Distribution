@@ -1,7 +1,7 @@
 package typings.flot
 
-import typings.flot.jqueryNs.flotNs.canvasPoint
-import typings.flot.jqueryNs.flotNs.plot
+import typings.flot.jquery.flot.canvasPoint
+import typings.flot.jquery.flot.plot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

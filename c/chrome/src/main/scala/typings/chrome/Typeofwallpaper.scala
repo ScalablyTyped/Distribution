@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.wallpaperNs.WallpaperDetails
+import typings.chrome.chrome.wallpaper.WallpaperDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

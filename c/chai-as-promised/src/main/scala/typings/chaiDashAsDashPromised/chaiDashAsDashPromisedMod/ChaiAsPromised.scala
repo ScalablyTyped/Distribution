@@ -1,7 +1,7 @@
 package typings.chaiDashAsDashPromised.chaiDashAsDashPromisedMod
 
-import typings.chai.ChaiNs.ChaiPlugin
-import typings.chaiDashAsDashPromised.ChaiNs.PromisedAssertion
+import typings.chai.Chai.ChaiPlugin
+import typings.chaiDashAsDashPromised.Chai.PromisedAssertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

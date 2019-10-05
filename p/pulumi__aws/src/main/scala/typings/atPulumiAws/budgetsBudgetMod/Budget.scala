@@ -1,8 +1,8 @@
 package typings.atPulumiAws.budgetsBudgetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.budgetsNs.BudgetCostTypes
-import typings.atPulumiAws.typesOutputMod.budgetsNs.BudgetNotification
+import typings.atPulumiAws.typesOutputMod.budgets.BudgetCostTypes
+import typings.atPulumiAws.typesOutputMod.budgets.BudgetNotification
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

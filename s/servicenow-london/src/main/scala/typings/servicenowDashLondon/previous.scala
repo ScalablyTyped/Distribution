@@ -1,5 +1,6 @@
 package typings.servicenowDashLondon
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ class previous protected () extends ScopedGlideRecord {
     */
   def this(tableName: String) = this()
 }
+
+@JSGlobal("previous")
+@js.native
+object previous extends TopLevel[ScopedGlideRecord]
 

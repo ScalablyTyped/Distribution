@@ -1,6 +1,6 @@
 package typings.atWordpressApiDashFetch
 
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.PostFormat
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.PostFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

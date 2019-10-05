@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksRailsAppLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.RailsAppLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.RailsAppLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

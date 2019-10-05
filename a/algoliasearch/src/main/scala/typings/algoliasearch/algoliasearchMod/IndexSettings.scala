@@ -188,7 +188,7 @@ trait IndexSettings extends js.Object {
     */
   var queryLanguages: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any
     ]
   ] = js.undefined
   /**
@@ -302,7 +302,7 @@ object IndexSettings {
     paginationLimitedTo: Int | Double = null,
     placeholders: StringDictionary[js.Array[String]] = null,
     queryLanguages: js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any
     ] = null,
     queryType: prefixAll | prefixLast | prefixNone = null,
     ranking: js.Array[String] = null,

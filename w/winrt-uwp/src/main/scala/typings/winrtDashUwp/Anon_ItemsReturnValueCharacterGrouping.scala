@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.GlobalizationNs.CollationNs.CharacterGrouping
+import typings.winrtDashUwp.Windows.Globalization.Collation.CharacterGrouping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

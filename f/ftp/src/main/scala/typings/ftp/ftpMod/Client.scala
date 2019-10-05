@@ -1,7 +1,7 @@
 package typings.ftp.ftpMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Error

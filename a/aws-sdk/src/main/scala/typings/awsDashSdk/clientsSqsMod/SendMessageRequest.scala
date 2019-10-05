@@ -40,14 +40,14 @@ object SendMessageRequest {
   def apply(
     MessageBody: String,
     QueueUrl: String,
-    DelaySeconds: js.UndefOr[Integer] = js.undefined,
+    DelaySeconds: Int | Double = null,
     MessageAttributes: MessageBodyAttributeMap = null,
     MessageDeduplicationId: String = null,
     MessageGroupId: String = null,
     MessageSystemAttributes: MessageBodySystemAttributeMap = null
   ): SendMessageRequest = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody, QueueUrl = QueueUrl)
-    if (!js.isUndefined(DelaySeconds)) __obj.updateDynamic("DelaySeconds")(DelaySeconds)
+    if (DelaySeconds != null) __obj.updateDynamic("DelaySeconds")(DelaySeconds.asInstanceOf[js.Any])
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes)
     if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId)
     if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId)

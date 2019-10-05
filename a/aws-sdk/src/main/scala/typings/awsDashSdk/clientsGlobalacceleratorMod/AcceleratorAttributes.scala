@@ -22,7 +22,7 @@ trait AcceleratorAttributes extends js.Object {
 object AcceleratorAttributes {
   @scala.inline
   def apply(
-    FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined,
+    FlowLogsEnabled: js.UndefOr[Boolean] = js.undefined,
     FlowLogsS3Bucket: GenericString = null,
     FlowLogsS3Prefix: GenericString = null
   ): AcceleratorAttributes = {

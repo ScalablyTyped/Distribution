@@ -1,6 +1,6 @@
 package typings.atPulumiAws.glueSecurityConfigurationMod
 
-import typings.atPulumiAws.typesInputMod.glueNs.SecurityConfigurationEncryptionConfiguration
+import typings.atPulumiAws.typesInputMod.glue.SecurityConfigurationEncryptionConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

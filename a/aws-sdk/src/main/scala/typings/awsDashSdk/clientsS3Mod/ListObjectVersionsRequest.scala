@@ -39,7 +39,7 @@ object ListObjectVersionsRequest {
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
     KeyMarker: KeyMarker = null,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
+    MaxKeys: Int | Double = null,
     Prefix: Prefix = null,
     VersionIdMarker: VersionIdMarker = null
   ): ListObjectVersionsRequest = {
@@ -47,7 +47,7 @@ object ListObjectVersionsRequest {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker)
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys)
+    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
     if (VersionIdMarker != null) __obj.updateDynamic("VersionIdMarker")(VersionIdMarker)
     __obj.asInstanceOf[ListObjectVersionsRequest]

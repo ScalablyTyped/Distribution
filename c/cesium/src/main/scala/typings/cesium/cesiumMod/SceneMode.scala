@@ -28,5 +28,6 @@ object SceneMode extends js.Object {
   /* 3 */ val SCENE3D: typings.cesium.cesiumMod.SceneMode.SCENE3D with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SceneMode with Double] = js.native
+  def getMorphTime(value: SceneMode): Double = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.toastr
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -131,4 +132,8 @@ trait Toastr extends js.Object {
   def warning(message: String, title: String): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
 }
+
+@JSGlobal("toastr")
+@js.native
+object toastr extends TopLevel[Toastr]
 

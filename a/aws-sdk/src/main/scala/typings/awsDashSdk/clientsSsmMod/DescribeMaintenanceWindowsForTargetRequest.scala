@@ -28,11 +28,11 @@ object DescribeMaintenanceWindowsForTargetRequest {
   def apply(
     ResourceType: MaintenanceWindowResourceType,
     Targets: Targets,
-    MaxResults: js.UndefOr[MaintenanceWindowSearchMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeMaintenanceWindowsForTargetRequest = {
     val __obj = js.Dynamic.literal(ResourceType = ResourceType.asInstanceOf[js.Any], Targets = Targets)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeMaintenanceWindowsForTargetRequest]
   }

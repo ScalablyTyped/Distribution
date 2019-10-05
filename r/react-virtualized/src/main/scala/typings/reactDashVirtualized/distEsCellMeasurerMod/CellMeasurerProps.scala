@@ -30,7 +30,6 @@ object CellMeasurerProps {
   @scala.inline
   def apply(
     cache: CellMeasurerCacheInterface,
-    children: (js.Function1[/* props */ Anon_Measure, ReactNode]) | ReactNode,
     parent: MeasuredCellParent,
     StringDictionary: /**
     * PLEASE NOTE
@@ -40,13 +39,15 @@ object CellMeasurerProps {
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
   /* key */ StringDictionary[js.Any] = null,
+    children: (js.Function1[/* props */ Anon_Measure, ReactNode]) | ReactNode = null,
     columnIndex: Int | Double = null,
     index: Int | Double = null,
     rowIndex: Int | Double = null,
     style: CSSProperties = null
   ): CellMeasurerProps = {
-    val __obj = js.Dynamic.literal(cache = cache, children = children.asInstanceOf[js.Any], parent = parent)
+    val __obj = js.Dynamic.literal(cache = cache, parent = parent)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])

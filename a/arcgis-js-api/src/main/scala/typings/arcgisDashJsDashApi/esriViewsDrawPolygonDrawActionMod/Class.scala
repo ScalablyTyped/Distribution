@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawPolygonDrawActionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonDrawAction
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonDrawActionProperties
+import typings.arcgisDashJsDashApi.__esri.PolygonDrawAction
+import typings.arcgisDashJsDashApi.__esri.PolygonDrawActionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

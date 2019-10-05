@@ -24,7 +24,7 @@ object RegisterResourceRequest {
   def apply(
     ResourceArn: ResourceArnString,
     RoleArn: IAMRoleArn = null,
-    UseServiceLinkedRole: js.UndefOr[NullableBoolean] = js.undefined
+    UseServiceLinkedRole: js.UndefOr[Boolean] = js.undefined
   ): RegisterResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)

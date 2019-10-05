@@ -17,7 +17,7 @@ trait DeleteFlowLogsRequest extends js.Object {
 
 object DeleteFlowLogsRequest {
   @scala.inline
-  def apply(FlowLogIds: ValueStringList, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteFlowLogsRequest = {
+  def apply(FlowLogIds: ValueStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteFlowLogsRequest = {
     val __obj = js.Dynamic.literal(FlowLogIds = FlowLogIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteFlowLogsRequest]

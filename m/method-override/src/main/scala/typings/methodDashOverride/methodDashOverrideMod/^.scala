@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): RequestHandler = js.native
-  def apply(getter: String | (js.Function2[/* req */ Request, /* res */ Response, String])): RequestHandler = js.native
+  def apply(getter: String): RequestHandler = js.native
+  def apply(getter: String, options: MethodOverrideOptions): RequestHandler = js.native
+  def apply(getter: js.Function2[/* req */ Request, /* res */ Response, String]): RequestHandler = js.native
   def apply(
-    getter: String | (js.Function2[/* req */ Request, /* res */ Response, String]),
+    getter: js.Function2[/* req */ Request, /* res */ Response, String],
     options: MethodOverrideOptions
   ): RequestHandler = js.native
 }

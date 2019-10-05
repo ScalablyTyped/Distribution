@@ -27,12 +27,12 @@ object ListWorkersWithQualificationTypeRequest {
   @scala.inline
   def apply(
     QualificationTypeId: EntityId,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     Status: QualificationStatus = null
   ): ListWorkersWithQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkersWithQualificationTypeRequest]

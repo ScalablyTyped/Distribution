@@ -1,7 +1,7 @@
 package typings.imagemapster
 
-import typings.imagemapster.imagemapsterMod.Global.ImageMapsterNs.State
-import typings.imagemapster.imagemapsterMod.Global.ImageMapsterNs.ToolTipCloseEvent
+import typings.imagemapster.imagemapsterMod.Global.ImageMapster.State
+import typings.imagemapster.imagemapsterMod.Global.ImageMapster.ToolTipCloseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

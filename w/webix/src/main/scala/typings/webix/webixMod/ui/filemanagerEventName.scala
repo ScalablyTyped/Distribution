@@ -1,0 +1,85 @@
+package typings.webix.webixMod.ui
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.webix.webixStrings.onAfterAdd
+  - typings.webix.webixStrings.onAfterBack
+  - typings.webix.webixStrings.onAfterCreateFolder
+  - typings.webix.webixStrings.onAfterDelete
+  - typings.webix.webixStrings.onAfterDeleteFile
+  - typings.webix.webixStrings.onAfterDrop
+  - typings.webix.webixStrings.onAfterDynParse
+  - typings.webix.webixStrings.onAfterEditFile
+  - typings.webix.webixStrings.onAfterEditStop
+  - typings.webix.webixStrings.onAfterFileUpload
+  - typings.webix.webixStrings.onAfterHideTree
+  - typings.webix.webixStrings.onAfterLevelDown
+  - typings.webix.webixStrings.onAfterLevelUp
+  - typings.webix.webixStrings.onAfterLoad
+  - typings.webix.webixStrings.onAfterMarkCopy
+  - typings.webix.webixStrings.onAfterMarkCut
+  - typings.webix.webixStrings.onAfterMenu
+  - typings.webix.webixStrings.onAfterModeChange
+  - typings.webix.webixStrings.onAfterPasteFile
+  - typings.webix.webixStrings.onAfterPathClick
+  - typings.webix.webixStrings.onAfterRun
+  - typings.webix.webixStrings.onAfterSearch
+  - typings.webix.webixStrings.onAfterShowTree
+  - typings.webix.webixStrings.onAfterSort
+  - typings.webix.webixStrings.onAfterUploadDialog
+  - typings.webix.webixStrings.onBeforeAdd
+  - typings.webix.webixStrings.onBeforeBack
+  - typings.webix.webixStrings.onBeforeCreateFolder
+  - typings.webix.webixStrings.onBeforeDelete
+  - typings.webix.webixStrings.onBeforeDeleteFile
+  - typings.webix.webixStrings.onBeforeDrag
+  - typings.webix.webixStrings.onBeforeDragIn
+  - typings.webix.webixStrings.onBeforeDrop
+  - typings.webix.webixStrings.onBeforeDynLoad
+  - typings.webix.webixStrings.onBeforeDynParse
+  - typings.webix.webixStrings.onBeforeEditFile
+  - typings.webix.webixStrings.onBeforeEditStop
+  - typings.webix.webixStrings.onBeforeFileUpload
+  - typings.webix.webixStrings.onBeforeHideTree
+  - typings.webix.webixStrings.onBeforeLevelDown
+  - typings.webix.webixStrings.onBeforeLevelUp
+  - typings.webix.webixStrings.onBeforeLoad
+  - typings.webix.webixStrings.onBeforeMarkCopy
+  - typings.webix.webixStrings.onBeforeMarkCut
+  - typings.webix.webixStrings.onBeforeMenu
+  - typings.webix.webixStrings.onBeforeModeChange
+  - typings.webix.webixStrings.onBeforePasteFile
+  - typings.webix.webixStrings.onBeforeRequest
+  - typings.webix.webixStrings.onBeforeRun
+  - typings.webix.webixStrings.onBeforeSearch
+  - typings.webix.webixStrings.onBeforeSearchRequest
+  - typings.webix.webixStrings.onBeforeShowTree
+  - typings.webix.webixStrings.onBeforeSort
+  - typings.webix.webixStrings.onBeforeUploadDialog
+  - typings.webix.webixStrings.onBindRequest
+  - typings.webix.webixStrings.onComponentInit
+  - typings.webix.webixStrings.onCopyError
+  - typings.webix.webixStrings.onDataRequest
+  - typings.webix.webixStrings.onDataUpdate
+  - typings.webix.webixStrings.onDestruct
+  - typings.webix.webixStrings.onDynLoadError
+  - typings.webix.webixStrings.onErrorResponse
+  - typings.webix.webixStrings.onFolderSelect
+  - typings.webix.webixStrings.onHideSearchResults
+  - typings.webix.webixStrings.onHistoryChange
+  - typings.webix.webixStrings.onItemRename
+  - typings.webix.webixStrings.onItemSelect
+  - typings.webix.webixStrings.onLoadError
+  - typings.webix.webixStrings.onMoveError
+  - typings.webix.webixStrings.onPathComplete
+  - typings.webix.webixStrings.onPathLevel
+  - typings.webix.webixStrings.onShowSearchResults
+  - typings.webix.webixStrings.onSuccessResponse
+  - typings.webix.webixStrings.onViewInit
+  - typings.webix.webixStrings.onViewShow
+*/
+trait filemanagerEventName extends js.Object
+

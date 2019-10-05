@@ -20,6 +20,7 @@ package object googleDashProtobufMod {
   type BinaryWriteCallback = js.Function2[/* value */ js.Any, /* binaryWriter */ BinaryWriter, Unit]
   type ByteSource = ArrayBuffer | Uint8Array | js.Array[Double] | String
   type FieldValue = js.UndefOr[String | Double | Boolean | Uint8Array | FieldValueArray]
+  type Map[K, V] = Map_[K, V]
   type RepeatedFieldType = js.Array[ScalarFieldType | Uint8Array]
   type ScalarFieldType = Boolean | Double | String
 }

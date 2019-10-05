@@ -10,24 +10,9 @@ trait TSTypeParameterInstantiation extends Node {
   var type_TSTypeParameterInstantiation: typings.babelDashTypes.babelDashTypesStrings.TSTypeParameterInstantiation
 }
 
-object TSTypeParameterInstantiation {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    params: js.Array[TSType],
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSTypeParameterInstantiation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSTypeParameterInstantiation = {
-    val __obj = js.Dynamic.literal(end = end, loc = loc, params = params, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSTypeParameterInstantiation]
-  }
+@JSImport("babel-types", "TSTypeParameterInstantiation")
+@js.native
+object TSTypeParameterInstantiation extends js.Object {
+  def apply(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
 }
 

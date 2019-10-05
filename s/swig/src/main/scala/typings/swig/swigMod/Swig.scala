@@ -2,8 +2,8 @@ package typings.swig.swigMod
 
 import typings.std.Error
 import typings.swig.Typeofloaders
-import typings.swig.swigMod.lexerNs.TYPES
-import typings.swig.swigMod.parserNs.ParseReturn
+import typings.swig.swigMod.lexer.TYPES
+import typings.swig.swigMod.parser.ParseReturn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

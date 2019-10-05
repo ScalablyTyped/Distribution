@@ -1,8 +1,9 @@
 package typings.gulp.gulpMod
 
 import typings.gulp.Fn_File
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.fsMod.FSWatcher
+import typings.undertaker.undertakerMod.^
 import typings.vinyl.vinylMod.File
 import typings.vinylDashFs.Anon_Cwd
 import typings.vinylDashFs.Anon_CwdDirMode
@@ -13,8 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Gulp
-  extends typings.undertaker.undertakerMod.^ {
+trait Gulp extends ^ {
   /**
     * Can be piped to and it will write files. Re-emits all data passed to it so you can pipe to multiple folders.
     * Folders that don't exist will be created.

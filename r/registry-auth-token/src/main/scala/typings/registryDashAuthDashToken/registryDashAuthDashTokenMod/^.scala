@@ -16,7 +16,9 @@ object ^ extends js.Object {
     * first parameter, this parameter is ignored.
     * @returns The `NpmCredentials` object or undefined if no match found.
     */
-  def apply(registryUrl: String | AuthOptions): NpmCredentials = js.native
-  def apply(registryUrl: String | AuthOptions, options: AuthOptions): NpmCredentials = js.native
+  def apply(registryUrl: String): NpmCredentials = js.native
+  def apply(registryUrl: String, options: AuthOptions): NpmCredentials = js.native
+  def apply(registryUrl: AuthOptions): NpmCredentials = js.native
+  def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = js.native
 }
 

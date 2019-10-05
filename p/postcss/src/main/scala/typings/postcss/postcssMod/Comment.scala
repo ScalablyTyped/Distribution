@@ -25,3 +25,15 @@ trait Comment
   var `type`: comment = js.native
 }
 
+@JSImport("postcss", "comment")
+@js.native
+object comment extends js.Object {
+  /**
+    * Creates a new Comment node.
+    * @param defaults Properties for the new Comment node.
+    * @returns The new node.
+    */
+  def apply(): Comment = js.native
+  def apply(defaults: CommentNewProps): Comment = js.native
+}
+

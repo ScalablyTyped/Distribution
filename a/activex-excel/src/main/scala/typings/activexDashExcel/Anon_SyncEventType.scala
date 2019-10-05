@@ -1,7 +1,7 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.Workbook
-import typings.activexDashOffice.OfficeNs.MsoSyncEventType
+import typings.activexDashExcel.Excel.Workbook
+import typings.activexDashOffice.Office.MsoSyncEventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,10 @@
 package typings.expressDashNtlm.expressDashNtlmMod
 
 import typings.express.expressMod.Handler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.node.tlsMod.ConnectionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,26 +25,26 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    badrequest: Handler = null,
+    badrequest: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
     debug: (/* prefix */ String, /* message */ String) => Unit = null,
     domain: String = null,
     domaincontroller: String = null,
-    forbidden: Handler = null,
-    internalservererror: Handler = null,
+    forbidden: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
+    internalservererror: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
     prefix: String = null,
     tlsOptions: ConnectionOptions = null,
-    unauthorized: Handler = null
+    unauthorized: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (badrequest != null) __obj.updateDynamic("badrequest")(badrequest)
+    if (badrequest != null) __obj.updateDynamic("badrequest")(js.Any.fromFunction3(badrequest))
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction2(debug))
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (domaincontroller != null) __obj.updateDynamic("domaincontroller")(domaincontroller)
-    if (forbidden != null) __obj.updateDynamic("forbidden")(forbidden)
-    if (internalservererror != null) __obj.updateDynamic("internalservererror")(internalservererror)
+    if (forbidden != null) __obj.updateDynamic("forbidden")(js.Any.fromFunction3(forbidden))
+    if (internalservererror != null) __obj.updateDynamic("internalservererror")(js.Any.fromFunction3(internalservererror))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
-    if (unauthorized != null) __obj.updateDynamic("unauthorized")(unauthorized)
+    if (unauthorized != null) __obj.updateDynamic("unauthorized")(js.Any.fromFunction3(unauthorized))
     __obj.asInstanceOf[Options]
   }
 }

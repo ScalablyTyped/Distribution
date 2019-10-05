@@ -14,14 +14,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.start
 import typings.atOracleOraclejet.atOracleOraclejetStrings.top
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojAnimateStart
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeCurrentItem
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeSelect
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojCollapse
-import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojExpand
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse
+import typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -52,14 +52,14 @@ trait ojNavigationListEventMap[K, D] extends baseComponentEventMap[ojNavigationL
   var expandedChanged: JetElementCustomEvent[KeySet[K]]
   var hierarchyMenuThresholdChanged: JetElementCustomEvent[Double]
   var itemChanged: JetElementCustomEvent[Anon_ContextRendererSelectable[K, D]]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojAnimateStart
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeCollapse
-  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeCurrentItem
-  var ojBeforeExpand: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeExpand
-  var ojBeforeSelect: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojBeforeSelect
-  var ojCollapse: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojCollapse
-  var ojExpand: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationListNs.ojExpand
+  var ojAnimateEnd: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojAnimateStart
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCollapse
+  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeCurrentItem
+  var ojBeforeExpand: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeExpand
+  var ojBeforeSelect: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojBeforeSelect
+  var ojCollapse: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojCollapse
+  var ojExpand: typings.atOracleOraclejet.ojnavigationlistMod.ojNavigationList.ojExpand
   var overflowChanged: JetElementCustomEvent[popup | hidden]
   var rootLabelChanged: JetElementCustomEvent[String | Null]
   var selectionChanged: JetElementCustomEvent[K]

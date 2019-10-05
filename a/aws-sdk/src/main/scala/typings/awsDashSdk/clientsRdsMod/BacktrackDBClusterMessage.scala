@@ -28,8 +28,8 @@ object BacktrackDBClusterMessage {
   def apply(
     BacktrackTo: TStamp,
     DBClusterIdentifier: String,
-    Force: js.UndefOr[BooleanOptional] = js.undefined,
-    UseEarliestTimeOnPointInTimeUnavailable: js.UndefOr[BooleanOptional] = js.undefined
+    Force: js.UndefOr[scala.Boolean] = js.undefined,
+    UseEarliestTimeOnPointInTimeUnavailable: js.UndefOr[scala.Boolean] = js.undefined
   ): BacktrackDBClusterMessage = {
     val __obj = js.Dynamic.literal(BacktrackTo = BacktrackTo, DBClusterIdentifier = DBClusterIdentifier)
     if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force)

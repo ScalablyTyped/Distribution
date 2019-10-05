@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashArrivalDashRange
 
-import typings.amapDashJsDashApiDashArrivalDashRange.AMapNs.ArrivalRangeNs.SearchStatus
+import typings.amapDashJsDashApiDashArrivalDashRange.AMap.ArrivalRange.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

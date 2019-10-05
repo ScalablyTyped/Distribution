@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/closestIndexTo", JSImport.Namespace)
 @js.native
 object closestIndexToMod extends js.Object {
-  def default(dateToCompare: Double, datesArray: js.Array[Date | Double]): Double = js.native
-  def default(dateToCompare: Date, datesArray: js.Array[Date | Double]): Double = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(dateToCompare: Double, datesArray: js.Array[Date | Double]): Double = js.native
+    def apply(dateToCompare: Date, datesArray: js.Array[Date | Double]): Double = js.native
+  }
+  
 }
 

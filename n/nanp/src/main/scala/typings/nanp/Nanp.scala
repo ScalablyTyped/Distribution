@@ -1,5 +1,6 @@
 package typings.nanp
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,4 +23,8 @@ trait Nanp extends js.Object {
     */
   def strip(phoneNumber: String): String = js.native
 }
+
+@JSGlobal("nanp")
+@js.native
+object nanp extends TopLevel[Nanp]
 

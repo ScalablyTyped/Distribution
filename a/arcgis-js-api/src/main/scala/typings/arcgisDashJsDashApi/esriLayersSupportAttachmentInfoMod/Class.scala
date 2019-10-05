@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportAttachmentInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentInfoProperties
+import typings.arcgisDashJsDashApi.__esri.AttachmentInfo
+import typings.arcgisDashJsDashApi.__esri.AttachmentInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

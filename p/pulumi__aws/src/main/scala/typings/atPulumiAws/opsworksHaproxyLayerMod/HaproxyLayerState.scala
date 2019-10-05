@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksHaproxyLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.HaproxyLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.HaproxyLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

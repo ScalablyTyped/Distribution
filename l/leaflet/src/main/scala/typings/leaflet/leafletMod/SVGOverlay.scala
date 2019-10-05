@@ -28,3 +28,12 @@ class SVGOverlay protected () extends Layer {
   def setZIndex(value: Double): this.type = js.native
 }
 
+@JSImport("leaflet", "svgOverlay")
+@js.native
+object svgOverlay extends js.Object {
+  def apply(svgImage: String, bounds: LatLngBoundsExpression): SVGOverlay = js.native
+  def apply(svgImage: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay = js.native
+  def apply(svgImage: SVGElement, bounds: LatLngBoundsExpression): SVGOverlay = js.native
+  def apply(svgImage: SVGElement, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay = js.native
+}
+

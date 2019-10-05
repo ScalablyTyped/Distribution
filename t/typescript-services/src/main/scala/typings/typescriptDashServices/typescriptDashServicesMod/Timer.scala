@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Timer")
 @js.native
 class Timer ()
-  extends typings.typescriptDashServices.TypeScriptNs.Timer
+  extends typings.typescriptDashServices.TypeScript.Timer
 

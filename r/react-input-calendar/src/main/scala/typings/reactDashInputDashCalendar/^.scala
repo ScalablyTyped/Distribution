@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var ReactInputCalendar: Instantiable0[typings.reactDashInputDashCalendar.reactInputCalendarNs.ReactInputCalendar] = js.native
+  var ReactInputCalendar: Instantiable0[typings.reactDashInputDashCalendar.reactInputCalendar.ReactInputCalendar] = js.native
 }
 

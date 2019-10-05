@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Drawer")
 @js.native
 class Drawer ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Drawer
+  extends typings.materialDashUi.__MaterialUI.Drawer
 

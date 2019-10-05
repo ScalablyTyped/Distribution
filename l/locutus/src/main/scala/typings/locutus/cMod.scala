@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/c", JSImport.Namespace)
 @js.native
 object cMod extends js.Object {
-  @JSName("math")
   @js.native
-  object mathNs extends js.Object {
-    def abs(): js.Any = js.native
-    def abs(mixedNumber: js.Any): js.Any = js.native
+  object math extends js.Object {
+    @js.native
+    object abs extends js.Object {
+      def apply(): js.Any = js.native
+      def apply(mixedNumber: js.Any): js.Any = js.native
+    }
+    
   }
   
 }

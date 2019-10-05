@@ -1,12 +1,12 @@
 package typings.deezerDashSdk
 
-import typings.deezerDashSdk.DeezerSdkNs.ConnectionStatus
-import typings.deezerDashSdk.DeezerSdkNs.HttpMethod
-import typings.deezerDashSdk.DeezerSdkNs.PlayerEvent
-import typings.deezerDashSdk.DeezerSdkNs.RadioType
-import typings.deezerDashSdk.DeezerSdkNs.WidgetFormat
-import typings.deezerDashSdk.DeezerSdkNs.WidgetLayout
-import typings.deezerDashSdk.DeezerSdkNs.WidgetSize
+import typings.deezerDashSdk.DeezerSdk.ConnectionStatus
+import typings.deezerDashSdk.DeezerSdk.HttpMethod
+import typings.deezerDashSdk.DeezerSdk.PlayerEvent
+import typings.deezerDashSdk.DeezerSdk.RadioType
+import typings.deezerDashSdk.DeezerSdk.WidgetFormat
+import typings.deezerDashSdk.DeezerSdk.WidgetLayout
+import typings.deezerDashSdk.DeezerSdk.WidgetSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

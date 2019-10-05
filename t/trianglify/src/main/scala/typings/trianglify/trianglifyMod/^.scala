@@ -1,7 +1,7 @@
 package typings.trianglify.trianglifyMod
 
-import typings.trianglify.trianglifyMod.trianglifyNs.Options
-import typings.trianglify.trianglifyMod.trianglifyNs.Pattern
+import typings.trianglify.trianglifyMod.trianglify.Options
+import typings.trianglify.trianglifyMod.trianglify.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

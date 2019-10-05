@@ -44,7 +44,7 @@ object DescribeFleetMetadataResponse {
     FleetName: FleetName = null,
     FleetStatus: FleetStatus = null,
     LastUpdatedTime: DateTime = null,
-    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[scala.Boolean] = js.undefined
   ): DescribeFleetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode)

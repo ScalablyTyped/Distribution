@@ -1,5 +1,6 @@
 package typings.styledDashComponents.styledDashComponentsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -20,4 +21,8 @@ class ThemeProvider protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("styled-components", "ThemeProvider")
+@js.native
+object ThemeProvider extends TopLevel[ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]]]
 

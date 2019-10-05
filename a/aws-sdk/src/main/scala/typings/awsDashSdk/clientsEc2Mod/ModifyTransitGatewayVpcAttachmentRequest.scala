@@ -32,7 +32,7 @@ object ModifyTransitGatewayVpcAttachmentRequest {
   def apply(
     TransitGatewayAttachmentId: String,
     AddSubnetIds: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: ModifyTransitGatewayVpcAttachmentRequestOptions = null,
     RemoveSubnetIds: ValueStringList = null
   ): ModifyTransitGatewayVpcAttachmentRequest = {

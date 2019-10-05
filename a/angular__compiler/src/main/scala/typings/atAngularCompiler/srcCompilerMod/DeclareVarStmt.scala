@@ -1,5 +1,6 @@
 package typings.atAngularCompiler.srcCompilerMod
 
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,35 +21,30 @@ class DeclareVarStmt protected ()
     value: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type
   ) = this()
-  def this(
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
-  ) = this()
+  def this(name: String, value: js.UndefOr[scala.Nothing], `type`: Null, modifiers: js.Array[StmtModifier]) = this()
   def this(
     name: String,
     value: js.UndefOr[scala.Nothing],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: String,
     value: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: String,
     value: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+    modifiers: js.Array[StmtModifier]
   ) = this()
   def this(
     name: String,
     value: js.UndefOr[scala.Nothing],
     `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
+    modifiers: js.Array[StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -62,7 +58,7 @@ class DeclareVarStmt protected ()
     name: String,
     value: js.UndefOr[scala.Nothing],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
+    modifiers: js.Array[StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -76,7 +72,7 @@ class DeclareVarStmt protected ()
     name: String,
     value: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: Null,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
+    modifiers: js.Array[StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -90,7 +86,7 @@ class DeclareVarStmt protected ()
     name: String,
     value: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
+    modifiers: js.Array[StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(

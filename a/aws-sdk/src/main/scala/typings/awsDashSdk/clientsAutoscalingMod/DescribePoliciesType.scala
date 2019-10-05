@@ -31,14 +31,14 @@ object DescribePoliciesType {
   @scala.inline
   def apply(
     AutoScalingGroupName: ResourceName = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    MaxRecords: Int | Double = null,
     NextToken: XmlString = null,
     PolicyNames: PolicyNames = null,
     PolicyTypes: PolicyTypes = null
   ): DescribePoliciesType = {
     val __obj = js.Dynamic.literal()
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames)
     if (PolicyTypes != null) __obj.updateDynamic("PolicyTypes")(PolicyTypes)

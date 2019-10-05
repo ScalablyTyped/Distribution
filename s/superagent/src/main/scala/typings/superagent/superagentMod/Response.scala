@@ -1,6 +1,6 @@
 package typings.superagent.superagentMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.XMLHttpRequest
 import typings.superagent.superagentStrings.`Set-Cookie`
 import scala.scalajs.js

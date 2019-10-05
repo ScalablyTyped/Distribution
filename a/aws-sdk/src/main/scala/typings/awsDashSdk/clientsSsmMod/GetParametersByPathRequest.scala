@@ -35,14 +35,14 @@ object GetParametersByPathRequest {
   @scala.inline
   def apply(
     Path: PSParameterName,
-    MaxResults: js.UndefOr[GetParametersByPathMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ParameterFilters: ParameterStringFilterList = null,
-    Recursive: js.UndefOr[Boolean] = js.undefined,
-    WithDecryption: js.UndefOr[Boolean] = js.undefined
+    Recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
   ): GetParametersByPathRequest = {
     val __obj = js.Dynamic.literal(Path = Path)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ParameterFilters != null) __obj.updateDynamic("ParameterFilters")(ParameterFilters)
     if (!js.isUndefined(Recursive)) __obj.updateDynamic("Recursive")(Recursive)

@@ -52,7 +52,7 @@ object MatchmakingTicket {
   def apply(
     ConfigurationName: MatchmakingIdStringModel = null,
     EndTime: Timestamp = null,
-    EstimatedWaitTime: js.UndefOr[WholeNumber] = js.undefined,
+    EstimatedWaitTime: Int | scala.Double = null,
     GameSessionConnectionInfo: GameSessionConnectionInfo = null,
     Players: PlayerList = null,
     StartTime: Timestamp = null,
@@ -64,7 +64,7 @@ object MatchmakingTicket {
     val __obj = js.Dynamic.literal()
     if (ConfigurationName != null) __obj.updateDynamic("ConfigurationName")(ConfigurationName)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(EstimatedWaitTime)) __obj.updateDynamic("EstimatedWaitTime")(EstimatedWaitTime)
+    if (EstimatedWaitTime != null) __obj.updateDynamic("EstimatedWaitTime")(EstimatedWaitTime.asInstanceOf[js.Any])
     if (GameSessionConnectionInfo != null) __obj.updateDynamic("GameSessionConnectionInfo")(GameSessionConnectionInfo)
     if (Players != null) __obj.updateDynamic("Players")(Players)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)

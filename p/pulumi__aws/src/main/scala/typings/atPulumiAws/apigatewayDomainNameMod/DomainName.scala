@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDomainNameMod
 
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.DomainNameEndpointConfiguration
+import typings.atPulumiAws.typesOutputMod.apigateway.DomainNameEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

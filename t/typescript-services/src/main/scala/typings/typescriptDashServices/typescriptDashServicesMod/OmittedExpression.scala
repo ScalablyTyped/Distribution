@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "OmittedExpression")
 @js.native
 class OmittedExpression ()
-  extends typings.typescriptDashServices.TypeScriptNs.OmittedExpression
+  extends typings.typescriptDashServices.TypeScript.OmittedExpression
 

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distCommonMod.commonNs.IErrorCallback
+import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
 import typings.mendixmodelsdk.distSdkInternalModelDashServerDashClientMod.IModelServerClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`

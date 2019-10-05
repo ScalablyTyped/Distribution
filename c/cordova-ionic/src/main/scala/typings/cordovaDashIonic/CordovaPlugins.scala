@@ -1,12 +1,12 @@
 package typings.cordovaDashIonic
 
-import typings.cordovaDashIonic.IonicNs.Keyboard
+import typings.cordovaDashIonic.Ionic.Keyboard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CordovaPlugins extends js.Object {
-  var Keyboard: typings.cordovaDashIonic.IonicNs.Keyboard
+  var Keyboard: typings.cordovaDashIonic.Ionic.Keyboard
 }
 
 object CordovaPlugins {

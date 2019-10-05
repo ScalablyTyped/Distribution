@@ -1,10 +1,10 @@
 package typings.detox
 
-import typings.detox.detoxMod.Global.DetoxNs.Direction
-import typings.detox.detoxMod.Global.DetoxNs.LocationPermission
-import typings.detox.detoxMod.Global.DetoxNs.Orientation
-import typings.detox.detoxMod.Global.DetoxNs.PermissionState
-import typings.detox.detoxMod.Global.DetoxNs.Speed
+import typings.detox.detoxMod.Global.Detox.Direction
+import typings.detox.detoxMod.Global.Detox.LocationPermission
+import typings.detox.detoxMod.Global.Detox.Orientation
+import typings.detox.detoxMod.Global.Detox.PermissionState
+import typings.detox.detoxMod.Global.Detox.Speed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.atPhosphorDisposable.atPhosphorDisposableMod
 
+import typings.atPhosphorAlgorithm.libIterMod.IterableOrArrayLike
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,5 +38,18 @@ class ObservableDisposableSet ()
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+}
+
+@JSImport("@phosphor/disposable", "ObservableDisposableSet")
+@js.native
+object ObservableDisposableSet extends js.Object {
+  /**
+    * Create an observable disposable set from an iterable of items.
+    *
+    * @param items - The iterable or array-like object of interest.
+    *
+    * @returns A new disposable initialized with the given items.
+    */
+  def from(items: IterableOrArrayLike[IDisposable]): ObservableDisposableSet = js.native
 }
 

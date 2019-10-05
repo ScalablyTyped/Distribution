@@ -30,11 +30,11 @@ trait UpgradeTarget extends js.Object {
 object UpgradeTarget {
   @scala.inline
   def apply(
-    AutoUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     Description: String = null,
     Engine: String = null,
     EngineVersion: String = null,
-    IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+    IsMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
   ): UpgradeTarget = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoUpgrade)) __obj.updateDynamic("AutoUpgrade")(AutoUpgrade)

@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("pull-stream/sources/keys", JSImport.Namespace)
 @js.native
 object sourcesKeysMod extends js.Object {
+  def apply(obj: js.Array[_]): Source[String] = js.native
+  def apply(obj: js.Array[_], onAbort: js.Function1[/* err */ js.UndefOr[Error | Null], _]): Source[String] = js.native
   /**
     * Stream the key names from an object (or array).
     */
-  def apply(obj: js.Object | js.Array[_]): Source[String] = js.native
-  def apply(obj: js.Object | js.Array[_], onAbort: js.Function1[/* err */ js.UndefOr[Error | Null], _]): Source[String] = js.native
+  def apply(obj: js.Object): Source[String] = js.native
+  def apply(obj: js.Object, onAbort: js.Function1[/* err */ js.UndefOr[Error | Null], _]): Source[String] = js.native
 }
 

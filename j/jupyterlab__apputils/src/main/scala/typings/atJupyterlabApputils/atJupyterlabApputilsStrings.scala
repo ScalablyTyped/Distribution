@@ -1,7 +1,7 @@
 package typings.atJupyterlabApputils
 
-import typings.atJupyterlabApputils.libIframeMod.IFrameNs.ReferrerPolicy
-import typings.atJupyterlabApputils.libIframeMod.IFrameNs.SandboxExceptions
+import typings.atJupyterlabApputils.libIframeMod.IFrame.ReferrerPolicy
+import typings.atJupyterlabApputils.libIframeMod.IFrame.SandboxExceptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

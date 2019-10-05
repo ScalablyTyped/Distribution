@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_BankDetails
 import typings.braintreeDashWeb.Anon_Client
 import scala.scalajs.js
@@ -111,4 +112,8 @@ trait USBankAccount extends js.Object {
     */
   def tokenize(options: Anon_BankDetails, callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "usBankAccount")
+@js.native
+object usBankAccount extends TopLevel[USBankAccount]
 

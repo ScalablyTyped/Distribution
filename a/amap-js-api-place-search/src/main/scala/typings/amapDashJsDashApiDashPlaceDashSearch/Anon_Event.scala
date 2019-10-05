@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashPlaceDashSearch
 
-import typings.amapDashJsDashApi.AMapNs.InfoWindow
+import typings.amapDashJsDashApi.AMap.InfoWindow
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import scala.scalajs.js

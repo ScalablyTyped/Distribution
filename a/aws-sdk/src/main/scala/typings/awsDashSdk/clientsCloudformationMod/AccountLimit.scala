@@ -17,10 +17,10 @@ trait AccountLimit extends js.Object {
 
 object AccountLimit {
   @scala.inline
-  def apply(Name: LimitName = null, Value: js.UndefOr[LimitValue] = js.undefined): AccountLimit = {
+  def apply(Name: LimitName = null, Value: Int | Double = null): AccountLimit = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountLimit]
   }
 }

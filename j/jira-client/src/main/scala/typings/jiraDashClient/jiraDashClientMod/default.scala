@@ -1,6 +1,6 @@
 package typings.jiraDashClient.jiraDashClientMod
 
-import typings.jiraDashClient.jiraDashClientMod.JiraApiNs.JiraApiOptions
+import typings.jiraDashClient.jiraDashClientMod.JiraApi.JiraApiOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

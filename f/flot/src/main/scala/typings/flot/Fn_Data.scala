@@ -1,8 +1,8 @@
 package typings.flot
 
-import typings.flot.jqueryNs.flotNs.dataSeries
-import typings.flot.jqueryNs.flotNs.datapoints
-import typings.flot.jqueryNs.flotNs.plot
+import typings.flot.jquery.flot.dataSeries
+import typings.flot.jquery.flot.datapoints
+import typings.flot.jquery.flot.plot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

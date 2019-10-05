@@ -1,5 +1,6 @@
 package typings.hibp.hibpMod
 
+import typings.hibp.Anon_BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,5 +46,12 @@ object Breach {
   
     __obj.asInstanceOf[Breach]
   }
+}
+
+@JSImport("hibp", "breach")
+@js.native
+object breach extends js.Object {
+  def apply(breachName: String): js.Promise[Breach | Null] = js.native
+  def apply(breachName: String, options: Anon_BaseUrl): js.Promise[Breach | Null] = js.native
 }
 

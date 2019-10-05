@@ -1,7 +1,7 @@
 package typings.introDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.introDotJs.IntroJsNs.Factory
+import typings.introDotJs.IntroJs.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

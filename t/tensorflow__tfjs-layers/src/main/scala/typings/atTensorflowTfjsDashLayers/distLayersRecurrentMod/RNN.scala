@@ -1,12 +1,13 @@
 package typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod
 
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serializationNs.Serializable
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.serialization.Serializable
 import typings.atTensorflowTfjsDashCore.distSerializationMod.ConfigDict
 import typings.atTensorflowTfjsDashCore.distSerializationMod.SerializableConstructor
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.InputSpec
 import typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer
+import typings.atTensorflowTfjsDashLayers.distTypesMod.RnnStepFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,5 +50,51 @@ object RNN extends js.Object {
   /** @nocollapse */
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+}
+
+@JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "rnn")
+@js.native
+object rnn extends js.Object {
+  def apply(stepFunction: RnnStepFunction, inputs: Tensor[Rank], initialStates: js.Array[Tensor[Rank]]): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
+  def apply(
+    stepFunction: RnnStepFunction,
+    inputs: Tensor[Rank],
+    initialStates: js.Array[Tensor[Rank]],
+    goBackwards: Boolean
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
+  def apply(
+    stepFunction: RnnStepFunction,
+    inputs: Tensor[Rank],
+    initialStates: js.Array[Tensor[Rank]],
+    goBackwards: Boolean,
+    mask: Tensor[Rank]
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
+  def apply(
+    stepFunction: RnnStepFunction,
+    inputs: Tensor[Rank],
+    initialStates: js.Array[Tensor[Rank]],
+    goBackwards: Boolean,
+    mask: Tensor[Rank],
+    constants: js.Array[Tensor[Rank]]
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
+  def apply(
+    stepFunction: RnnStepFunction,
+    inputs: Tensor[Rank],
+    initialStates: js.Array[Tensor[Rank]],
+    goBackwards: Boolean,
+    mask: Tensor[Rank],
+    constants: js.Array[Tensor[Rank]],
+    unroll: Boolean
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
+  def apply(
+    stepFunction: RnnStepFunction,
+    inputs: Tensor[Rank],
+    initialStates: js.Array[Tensor[Rank]],
+    goBackwards: Boolean,
+    mask: Tensor[Rank],
+    constants: js.Array[Tensor[Rank]],
+    unroll: Boolean,
+    needPerStepOutputs: Boolean
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], js.Array[Tensor[Rank]]] = js.native
 }
 

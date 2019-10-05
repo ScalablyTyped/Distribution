@@ -1,6 +1,6 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.CurveNs.Position
+import typings.vexflow.Vex.Flow.Curve.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

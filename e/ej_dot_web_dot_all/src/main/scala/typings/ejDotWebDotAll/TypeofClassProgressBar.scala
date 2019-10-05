@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.ProgressBar
-import typings.ejDotWebDotAll.ejNs.ProgressBarNs.Model
+import typings.ejDotWebDotAll.ej.ProgressBar
+import typings.ejDotWebDotAll.ej.ProgressBar.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

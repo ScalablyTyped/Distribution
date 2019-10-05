@@ -113,7 +113,7 @@ object Route {
     component: Type[_] = null,
     data: Data = null,
     loadChildren: LoadChildren = null,
-    matcher: UrlMatcher = null,
+    matcher: (/* segments */ js.Array[UrlSegment], /* group */ UrlSegmentGroup, /* route */ Route) => UrlMatchResult = null,
     outlet: String = null,
     path: String = null,
     pathMatch: String = null,
@@ -130,7 +130,7 @@ object Route {
     if (component != null) __obj.updateDynamic("component")(component)
     if (data != null) __obj.updateDynamic("data")(data)
     if (loadChildren != null) __obj.updateDynamic("loadChildren")(loadChildren.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(matcher)
+    if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction3(matcher))
     if (outlet != null) __obj.updateDynamic("outlet")(outlet)
     if (path != null) __obj.updateDynamic("path")(path)
     if (pathMatch != null) __obj.updateDynamic("pathMatch")(pathMatch)

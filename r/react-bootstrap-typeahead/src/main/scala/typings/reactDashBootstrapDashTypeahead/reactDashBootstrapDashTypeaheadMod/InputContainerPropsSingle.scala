@@ -40,7 +40,6 @@ object InputContainerPropsSingle {
     `aria-owns`: String,
     autoComplete: String,
     disabled: Boolean,
-    inputRef: LegacyRef[HTMLInputElement],
     onBlur: Event => Unit,
     onChange: js.Array[T] => Unit,
     onClick: Event => Unit,
@@ -48,14 +47,16 @@ object InputContainerPropsSingle {
     onKeyDown: Event => Unit,
     role: combobox,
     value: String,
+    inputRef: LegacyRef[HTMLInputElement] = null,
     placeholder: String = null
   ): InputContainerPropsSingle[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, inputRef = inputRef.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role, value = value)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role, value = value)
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`)
     __obj.updateDynamic("aria-haspopup")(`aria-haspopup`)
     __obj.updateDynamic("aria-owns")(`aria-owns`)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     __obj.asInstanceOf[InputContainerPropsSingle[T]]
   }

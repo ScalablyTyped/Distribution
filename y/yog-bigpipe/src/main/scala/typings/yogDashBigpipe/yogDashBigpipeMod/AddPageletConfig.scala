@@ -1,6 +1,6 @@
 package typings.yogDashBigpipe.yogDashBigpipeMod
 
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AddPageletConfig extends js.Object {
   var id: String
   var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var mode: js.UndefOr[typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode] = js.undefined
+  var mode: js.UndefOr[typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode] = js.undefined
 }
 
 object AddPageletConfig {

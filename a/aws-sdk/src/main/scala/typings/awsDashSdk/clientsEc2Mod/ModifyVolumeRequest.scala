@@ -31,15 +31,15 @@ object ModifyVolumeRequest {
   @scala.inline
   def apply(
     VolumeId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    Size: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
+    Size: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): ModifyVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVolumeRequest]
   }

@@ -23,3 +23,10 @@ object EventChannel {
   }
 }
 
+@JSImport("@redux-saga/core/types", "eventChannel")
+@js.native
+object eventChannel extends js.Object {
+  def apply[T](subscribe: Subscribe[T]): EventChannel[T] = js.native
+  def apply[T](subscribe: Subscribe[T], buffer: typings.node.Buffer): EventChannel[T] = js.native
+}
+

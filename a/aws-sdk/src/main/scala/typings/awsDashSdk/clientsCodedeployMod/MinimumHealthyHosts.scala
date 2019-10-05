@@ -17,10 +17,10 @@ trait MinimumHealthyHosts extends js.Object {
 
 object MinimumHealthyHosts {
   @scala.inline
-  def apply(`type`: MinimumHealthyHostsType = null, value: js.UndefOr[MinimumHealthyHostsValue] = js.undefined): MinimumHealthyHosts = {
+  def apply(`type`: MinimumHealthyHostsType = null, value: Int | Double = null): MinimumHealthyHosts = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinimumHealthyHosts]
   }
 }

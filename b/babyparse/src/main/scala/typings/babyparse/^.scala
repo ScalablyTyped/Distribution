@@ -1,6 +1,6 @@
 package typings.babyparse
 
-import typings.babyparse.BabyParseNs.Static
+import typings.babyparse.BabyParse.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -53,21 +53,21 @@ object CreateReplicationJobRequest {
     seedReplicationTime: Timestamp,
     serverId: ServerId,
     description: Description = null,
-    encrypted: js.UndefOr[Encrypted] = js.undefined,
-    frequency: js.UndefOr[Frequency] = js.undefined,
+    encrypted: js.UndefOr[Boolean] = js.undefined,
+    frequency: Int | Double = null,
     kmsKeyId: KmsKeyId = null,
     licenseType: LicenseType = null,
-    numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined,
+    numberOfRecentAmisToKeep: Int | Double = null,
     roleName: RoleName = null,
-    runOnce: js.UndefOr[RunOnce] = js.undefined
+    runOnce: js.UndefOr[Boolean] = js.undefined
   ): CreateReplicationJobRequest = {
     val __obj = js.Dynamic.literal(seedReplicationTime = seedReplicationTime, serverId = serverId)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
-    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency)
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId)
     if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfRecentAmisToKeep)) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep)
+    if (numberOfRecentAmisToKeep != null) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName)
     if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce)
     __obj.asInstanceOf[CreateReplicationJobRequest]

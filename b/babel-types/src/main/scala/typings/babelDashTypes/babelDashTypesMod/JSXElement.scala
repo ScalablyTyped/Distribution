@@ -42,3 +42,22 @@ object JSXElement {
   }
 }
 
+@JSImport("babel-types", "jSXElement")
+@js.native
+object jSXElement extends js.Object {
+  def apply(): JSXElement = js.native
+  def apply(openingElement: JSXOpeningElement): JSXElement = js.native
+  def apply(openingElement: JSXOpeningElement, closingElement: JSXClosingElement): JSXElement = js.native
+  def apply(
+    openingElement: JSXOpeningElement,
+    closingElement: JSXClosingElement,
+    children: js.Array[JSXElement | JSXExpressionContainer | JSXText]
+  ): JSXElement = js.native
+  def apply(
+    openingElement: JSXOpeningElement,
+    closingElement: JSXClosingElement,
+    children: js.Array[JSXElement | JSXExpressionContainer | JSXText],
+    selfClosing: Boolean
+  ): JSXElement = js.native
+}
+

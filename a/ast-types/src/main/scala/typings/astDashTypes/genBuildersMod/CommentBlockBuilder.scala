@@ -1,7 +1,7 @@
 package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_Leading
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.CommentBlock
+import typings.astDashTypes.genNamedTypesMod.namedTypes.CommentBlock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

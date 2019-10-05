@@ -11,23 +11,9 @@ trait TSBooleanKeyword
   var type_TSBooleanKeyword: typings.babelDashTypes.babelDashTypesStrings.TSBooleanKeyword
 }
 
-object TSBooleanKeyword {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSBooleanKeyword,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSBooleanKeyword = {
-    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSBooleanKeyword]
-  }
+@JSImport("babel-types", "TSBooleanKeyword")
+@js.native
+object TSBooleanKeyword extends js.Object {
+  def apply(): TSBooleanKeyword = js.native
 }
 

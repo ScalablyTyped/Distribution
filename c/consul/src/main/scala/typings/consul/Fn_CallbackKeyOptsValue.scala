@@ -1,7 +1,7 @@
 package typings.consul
 
 import typings.consul.consulMod.Callback
-import typings.consul.consulMod.KvNs.SetOptions
+import typings.consul.consulMod.Kv.SetOptions
 import typings.consul.consulMod.Thenable
 import typings.node.Buffer
 import scala.scalajs.js

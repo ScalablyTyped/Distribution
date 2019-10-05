@@ -12,11 +12,15 @@ trait SubscribeCallbacksHash extends js.Object {
 
 object SubscribeCallbacksHash {
   @scala.inline
-  def apply(onError: ErrorCallback = null, onEvent: EventCallback = null, onSuccess: Callback = null): SubscribeCallbacksHash = {
+  def apply(
+    onError: /* args */ ErrorArgs => Unit = null,
+    onEvent: /* args */ DataArgs => Unit = null,
+    onSuccess: () => Unit = null
+  ): SubscribeCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction1(onEvent))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     __obj.asInstanceOf[SubscribeCallbacksHash]
   }
 }

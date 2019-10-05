@@ -1,7 +1,7 @@
 package typings.atPulumiAws.globalacceleratorAcceleratorMod
 
-import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.AcceleratorAttributes
-import typings.atPulumiAws.typesOutputMod.globalacceleratorNs.AcceleratorIpSet
+import typings.atPulumiAws.typesOutputMod.globalaccelerator.AcceleratorAttributes
+import typings.atPulumiAws.typesOutputMod.globalaccelerator.AcceleratorIpSet
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

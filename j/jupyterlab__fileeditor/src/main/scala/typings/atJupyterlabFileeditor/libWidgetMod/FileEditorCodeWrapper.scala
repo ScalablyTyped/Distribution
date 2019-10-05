@@ -1,8 +1,8 @@
 package typings.atJupyterlabFileeditor.libWidgetMod
 
 import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.Context
-import typings.atJupyterlabFileeditor.libWidgetMod.FileEditorNs.IOptions
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
+import typings.atJupyterlabFileeditor.libWidgetMod.FileEditor.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

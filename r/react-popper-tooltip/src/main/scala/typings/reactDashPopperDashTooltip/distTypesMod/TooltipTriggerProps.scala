@@ -1,7 +1,7 @@
 package typings.reactDashPopperDashTooltip.distTypesMod
 
-import typings.popperDotJs.popperDotJsMod.PopperNs.Modifiers
-import typings.popperDotJs.popperDotJsMod.PopperNs.Placement
+import typings.popperDotJs.popperDotJsMod.Popper.Modifiers
+import typings.popperDotJs.popperDotJsMod.Popper.Placement
 import typings.react.reactMod.ReactNode
 import typings.reactDashPopper.reactDashPopperMod.RefHandler
 import typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipStrings.`right-click`
@@ -107,14 +107,14 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => ReactNode,
     trigger: none | click | `right-click` | hover,
     usePortal: Boolean,
-    getTooltipRef: RefHandler = null,
-    getTriggerRef: RefHandler = null,
+    getTooltipRef: /* ref */ HTMLElement | Null => Unit = null,
+    getTriggerRef: /* ref */ HTMLElement | Null => Unit = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal)
-    if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef)
-    if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef)
+    if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(js.Any.fromFunction1(getTooltipRef))
+    if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(js.Any.fromFunction1(getTriggerRef))
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown)
     __obj.asInstanceOf[TooltipTriggerProps]

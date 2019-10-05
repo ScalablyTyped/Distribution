@@ -15,13 +15,6 @@ trait IDBVersionChangeEvent extends Event {
 
 @JSGlobal("IDBVersionChangeEvent")
 @js.native
-class IDBVersionChangeEventCls protected () extends IDBVersionChangeEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: IDBVersionChangeEventInit) = this()
-}
-
-@JSGlobal("IDBVersionChangeEvent")
-@js.native
 object IDBVersionChangeEvent
   extends Instantiable1[/* type */ java.lang.String, IDBVersionChangeEvent]
      with Instantiable2[

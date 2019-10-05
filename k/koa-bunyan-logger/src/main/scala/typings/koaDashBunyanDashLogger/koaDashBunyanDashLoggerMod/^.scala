@@ -12,9 +12,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): Middleware[DefaultState, DefaultContext] = js.native
   def apply(logger: typings.bunyan.bunyanMod.^): Middleware[DefaultState, DefaultContext] = js.native
-  def requestIdContext(): Middleware[DefaultState, DefaultContext] = js.native
-  def requestIdContext(opts: RequestIdContextOptions): Middleware[DefaultState, DefaultContext] = js.native
-  def requestLogger(): Middleware[DefaultState, DefaultContext] = js.native
-  def requestLogger(opts: RequestLoggerOptions): Middleware[DefaultState, DefaultContext] = js.native
 }
 

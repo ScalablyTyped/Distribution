@@ -1,7 +1,7 @@
 package typings.stellarDashSdk
 
 import typings.std.Error
-import typings.stellarDashSdk.stellarDashSdkMod.HorizonNs.BaseResponse
+import typings.stellarDashSdk.stellarDashSdkMod.Horizon.BaseResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

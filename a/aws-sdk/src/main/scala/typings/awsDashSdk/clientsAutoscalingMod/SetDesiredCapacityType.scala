@@ -24,7 +24,7 @@ object SetDesiredCapacityType {
   def apply(
     AutoScalingGroupName: ResourceName,
     DesiredCapacity: AutoScalingGroupDesiredCapacity,
-    HonorCooldown: js.UndefOr[HonorCooldown] = js.undefined
+    HonorCooldown: js.UndefOr[Boolean] = js.undefined
   ): SetDesiredCapacityType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName, DesiredCapacity = DesiredCapacity)
     if (!js.isUndefined(HonorCooldown)) __obj.updateDynamic("HonorCooldown")(HonorCooldown)

@@ -35,7 +35,7 @@ object VolumeAttachment {
   @scala.inline
   def apply(
     AttachTime: DateTime = null,
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
     Device: String = null,
     InstanceId: String = null,
     State: VolumeAttachmentState = null,

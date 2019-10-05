@@ -15,17 +15,6 @@ trait Pattern[T] extends js.Object {
 
 @JSImport("hexo-util", "Pattern")
 @js.native
-class PatternCls[T] protected () extends Pattern[T] {
-  def this(rule: js.Function1[/* str */ String, T]) = this()
-  def this(rule: Pattern[T]) = this()
-  /* CompleteClass */
-  override def `match`(str: String): T = js.native
-  /* CompleteClass */
-  override def test(str: String): Boolean = js.native
-}
-
-@JSImport("hexo-util", "Pattern")
-@js.native
 object Pattern
   extends Instantiable1[
       (/* rule */ js.Function1[/* str */ String, js.Object]) | (/* rule */ Pattern[js.Object]) | (/* rule */ RegExp) | (/* rule */ String), 

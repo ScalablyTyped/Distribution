@@ -51,7 +51,7 @@ object ListTasksRequest {
     desiredStatus: DesiredStatus = null,
     family: String = null,
     launchType: LaunchType = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
+    maxResults: Int | scala.Double = null,
     nextToken: String = null,
     serviceName: String = null,
     startedBy: String = null
@@ -62,7 +62,7 @@ object ListTasksRequest {
     if (desiredStatus != null) __obj.updateDynamic("desiredStatus")(desiredStatus.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
     if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy)

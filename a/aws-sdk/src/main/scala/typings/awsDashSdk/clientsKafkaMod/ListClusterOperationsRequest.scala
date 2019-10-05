@@ -28,13 +28,9 @@ trait ListClusterOperationsRequest extends js.Object {
 
 object ListClusterOperationsRequest {
   @scala.inline
-  def apply(
-    ClusterArn: __string,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: __string = null
-  ): ListClusterOperationsRequest = {
+  def apply(ClusterArn: __string, MaxResults: Int | Double = null, NextToken: __string = null): ListClusterOperationsRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListClusterOperationsRequest]
   }

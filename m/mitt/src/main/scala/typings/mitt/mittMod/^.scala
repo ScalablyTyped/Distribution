@@ -2,9 +2,9 @@ package typings.mitt.mittMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.mitt.mittNs.Emitter
-import typings.mitt.mittNs.Handler
-import typings.mitt.mittNs.MittStatic
+import typings.mitt.mitt.Emitter
+import typings.mitt.mitt.Handler
+import typings.mitt.mitt.MittStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

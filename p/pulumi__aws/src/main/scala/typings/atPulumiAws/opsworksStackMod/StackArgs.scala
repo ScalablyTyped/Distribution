@@ -1,7 +1,7 @@
 package typings.atPulumiAws.opsworksStackMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.opsworksNs.StackCustomCookbooksSource
+import typings.atPulumiAws.typesInputMod.opsworks.StackCustomCookbooksSource
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

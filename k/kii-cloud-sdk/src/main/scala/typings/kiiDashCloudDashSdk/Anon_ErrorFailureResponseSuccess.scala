@@ -1,6 +1,6 @@
 package typings.kiiDashCloudDashSdk
 
-import typings.kiiDashCloudDashSdk.KiiCloudNs.KiiMqttInstallationResponse
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiMqttInstallationResponse
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

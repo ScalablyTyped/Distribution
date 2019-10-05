@@ -12,7 +12,7 @@ import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
 import typings.atReactDashNativeDashCommunityViewpager.atReactDashNativeDashCommunityViewpagerMod.default
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.PureComponent
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent

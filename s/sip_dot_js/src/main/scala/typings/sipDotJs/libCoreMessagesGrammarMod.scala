@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/messages/grammar", JSImport.Namespace)
 @js.native
 object libCoreMessagesGrammarMod extends js.Object {
-  @JSName("Grammar")
   @js.native
-  object GrammarNs extends js.Object {
+  object Grammar extends js.Object {
     /**
       * Parse the given string and returns a SIP.URI instance or undefined if
       * it is an invalid URI.

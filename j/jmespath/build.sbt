@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jmespath"
-version := "0.15-dt-20180214Z-816a93"
-scalaVersion := "2.12.9"
+version := "0.15-dt-20180214Z-ec6c80"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

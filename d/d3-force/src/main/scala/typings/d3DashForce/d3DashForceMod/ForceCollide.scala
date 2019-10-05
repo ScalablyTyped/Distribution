@@ -75,3 +75,13 @@ trait ForceCollide[NodeDatum /* <: SimulationNodeDatum */]
   def strength(strength: Double): this.type = js.native
 }
 
+@JSImport("d3-force", "forceCollide")
+@js.native
+object forceCollide extends js.Object {
+  def apply[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](
+    radius: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double]
+  ): ForceCollide[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide[NodeDatum] = js.native
+}
+

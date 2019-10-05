@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmDocumentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ssmNs.DocumentParameter
-import typings.atPulumiAws.typesInputMod.ssmNs.DocumentPermissions
+import typings.atPulumiAws.typesInputMod.ssm.DocumentParameter
+import typings.atPulumiAws.typesInputMod.ssm.DocumentPermissions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

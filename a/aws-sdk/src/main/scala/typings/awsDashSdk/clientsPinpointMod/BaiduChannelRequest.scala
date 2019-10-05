@@ -21,7 +21,7 @@ trait BaiduChannelRequest extends js.Object {
 
 object BaiduChannelRequest {
   @scala.inline
-  def apply(ApiKey: __string, SecretKey: __string, Enabled: js.UndefOr[__boolean] = js.undefined): BaiduChannelRequest = {
+  def apply(ApiKey: __string, SecretKey: __string, Enabled: js.UndefOr[Boolean] = js.undefined): BaiduChannelRequest = {
     val __obj = js.Dynamic.literal(ApiKey = ApiKey, SecretKey = SecretKey)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[BaiduChannelRequest]

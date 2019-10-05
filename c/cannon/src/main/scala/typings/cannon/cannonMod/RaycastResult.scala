@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "RaycastResult")
 @js.native
 class RaycastResult ()
-  extends typings.cannon.CANNONNs.RaycastResult
+  extends typings.cannon.CANNON.RaycastResult
 

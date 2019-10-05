@@ -1,7 +1,7 @@
 package typings.atJupyterlabDocregistry.libMimedocumentMod
 
 import typings.atJupyterlabDocregistry.libDefaultMod.DocumentWidget
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

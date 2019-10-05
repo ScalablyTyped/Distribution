@@ -32,12 +32,12 @@ object ListNodesInput {
   def apply(
     MemberId: ResourceIdString,
     NetworkId: ResourceIdString,
-    MaxResults: js.UndefOr[NodeListMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     Status: NodeStatus = null
   ): ListNodesInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId, NetworkId = NetworkId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodesInput]

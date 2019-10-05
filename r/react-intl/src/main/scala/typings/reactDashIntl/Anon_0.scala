@@ -1,7 +1,7 @@
 package typings.reactDashIntl
 
 import typings.react.reactMod.ReactElement
-import typings.std.IntlNs.NumberFormatPart
+import typings.std.Intl.NumberFormatPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

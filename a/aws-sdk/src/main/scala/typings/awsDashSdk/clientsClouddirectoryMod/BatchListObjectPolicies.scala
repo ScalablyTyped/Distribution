@@ -21,13 +21,9 @@ trait BatchListObjectPolicies extends js.Object {
 
 object BatchListObjectPolicies {
   @scala.inline
-  def apply(
-    ObjectReference: ObjectReference,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null
-  ): BatchListObjectPolicies = {
+  def apply(ObjectReference: ObjectReference, MaxResults: Int | Double = null, NextToken: NextToken = null): BatchListObjectPolicies = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[BatchListObjectPolicies]
   }

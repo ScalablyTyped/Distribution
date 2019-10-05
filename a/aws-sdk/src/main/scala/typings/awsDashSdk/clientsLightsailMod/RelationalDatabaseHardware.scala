@@ -21,15 +21,11 @@ trait RelationalDatabaseHardware extends js.Object {
 
 object RelationalDatabaseHardware {
   @scala.inline
-  def apply(
-    cpuCount: js.UndefOr[integer] = js.undefined,
-    diskSizeInGb: js.UndefOr[integer] = js.undefined,
-    ramSizeInGb: js.UndefOr[float] = js.undefined
-  ): RelationalDatabaseHardware = {
+  def apply(cpuCount: Int | Double = null, diskSizeInGb: Int | Double = null, ramSizeInGb: Int | Double = null): RelationalDatabaseHardware = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount)
-    if (!js.isUndefined(diskSizeInGb)) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb)
-    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb)
+    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
+    if (diskSizeInGb != null) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.asInstanceOf[js.Any])
+    if (ramSizeInGb != null) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseHardware]
   }
 }

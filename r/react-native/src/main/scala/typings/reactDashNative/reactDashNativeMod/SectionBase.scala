@@ -1,6 +1,7 @@
 package typings.reactDashNative.reactDashNativeMod
 
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +21,13 @@ object SectionBase {
     ItemSeparatorComponent: ComponentType[_] = null,
     key: String = null,
     keyExtractor: (/* item */ ItemT, /* index */ Double) => String = null,
-    renderItem: SectionListRenderItem[ItemT] = null
+    renderItem: /* info */ SectionListRenderItemInfo[ItemT] => ReactElement | Null = null
   ): SectionBase[ItemT] = {
     val __obj = js.Dynamic.literal(data = data)
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem)
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
     __obj.asInstanceOf[SectionBase[ItemT]]
   }
 }

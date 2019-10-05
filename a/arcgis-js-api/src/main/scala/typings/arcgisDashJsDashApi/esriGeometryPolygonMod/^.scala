@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPolygonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolygonConstructor
+import typings.arcgisDashJsDashApi.__esri.PolygonConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

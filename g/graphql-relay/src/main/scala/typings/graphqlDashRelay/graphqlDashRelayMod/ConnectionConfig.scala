@@ -3,6 +3,7 @@ package typings.graphqlDashRelay.graphqlDashRelayMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.typeDefinitionMod.GraphQLFieldConfigMap
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeDefinitionMod.Thunk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,15 +25,15 @@ object ConnectionConfig {
     connectionFields: Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = null,
     edgeFields: Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = null,
     name: String = null,
-    resolveCursor: GraphQLFieldResolver[_, _, StringDictionary[_]] = null,
-    resolveNode: GraphQLFieldResolver[_, _, StringDictionary[_]] = null
+    resolveCursor: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
+    resolveNode: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null
   ): ConnectionConfig = {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
     if (connectionFields != null) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
     if (edgeFields != null) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (resolveCursor != null) __obj.updateDynamic("resolveCursor")(resolveCursor)
-    if (resolveNode != null) __obj.updateDynamic("resolveNode")(resolveNode)
+    if (resolveCursor != null) __obj.updateDynamic("resolveCursor")(js.Any.fromFunction4(resolveCursor))
+    if (resolveNode != null) __obj.updateDynamic("resolveNode")(js.Any.fromFunction4(resolveNode))
     __obj.asInstanceOf[ConnectionConfig]
   }
 }

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersHeatmapRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapRendererProperties
+import typings.arcgisDashJsDashApi.__esri.HeatmapRenderer
+import typings.arcgisDashJsDashApi.__esri.HeatmapRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

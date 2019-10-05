@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.CookieDefaults
-import typings.cypress.CypressNs.DebugOptions
+import typings.cypress.Cypress.CookieDefaults
+import typings.cypress.Cypress.DebugOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

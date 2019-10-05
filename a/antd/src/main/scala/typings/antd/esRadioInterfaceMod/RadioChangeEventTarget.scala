@@ -1,9 +1,10 @@
 package typings.antd.esRadioInterfaceMod
 
 import typings.antd.esCheckboxCheckboxMod.AbstractCheckboxProps
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.KeyboardEventHandler
-import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -27,11 +28,11 @@ object RadioChangeEventTarget {
     id: String = null,
     name: String = null,
     onChange: RadioChangeEvent => Unit = null,
-    onClick: MouseEventHandler[HTMLElement] = null,
-    onKeyDown: KeyboardEventHandler[HTMLElement] = null,
-    onKeyPress: KeyboardEventHandler[HTMLElement] = null,
-    onMouseEnter: MouseEventHandler[HTMLElement] = null,
-    onMouseLeave: MouseEventHandler[HTMLElement] = null,
+    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
+    onKeyDown: KeyboardEvent[HTMLElement] => Unit = null,
+    onKeyPress: KeyboardEvent[HTMLElement] => Unit = null,
+    onMouseEnter: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null,
     tabIndex: Int | Double = null,
@@ -46,11 +47,11 @@ object RadioChangeEventTarget {
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

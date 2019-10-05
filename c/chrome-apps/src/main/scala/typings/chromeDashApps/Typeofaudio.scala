@@ -1,12 +1,12 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.audioNs.AudioDeviceInfo
-import typings.chromeDashApps.chromeNs.audioNs.DeviceIdLists
-import typings.chromeDashApps.chromeNs.audioNs.Filter
-import typings.chromeDashApps.chromeNs.audioNs.SetDeviceProperties
-import typings.chromeDashApps.chromeNs.audioNs.StreamType
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.audio.AudioDeviceInfo
+import typings.chromeDashApps.chrome.audio.DeviceIdLists
+import typings.chromeDashApps.chrome.audio.Filter
+import typings.chromeDashApps.chrome.audio.SetDeviceProperties
+import typings.chromeDashApps.chrome.audio.StreamType
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

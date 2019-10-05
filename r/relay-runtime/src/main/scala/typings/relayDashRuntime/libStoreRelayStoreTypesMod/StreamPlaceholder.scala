@@ -9,12 +9,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StreamPlaceholder extends IncrementalDataPlaceholder {
-  var kind: stream
-  var label: String
-  var node: NormalizationSelectableNode
-  var parentID: DataID
-  var path: js.Array[String]
-  var variables: Variables
+  val kind: stream
+  val label: String
+  val node: NormalizationSelectableNode
+  val parentID: DataID
+  val path: js.Array[String]
+  val variables: Variables
 }
 
 object StreamPlaceholder {

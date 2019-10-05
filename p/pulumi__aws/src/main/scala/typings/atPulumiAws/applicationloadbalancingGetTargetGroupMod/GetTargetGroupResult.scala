@@ -1,8 +1,8 @@
 package typings.atPulumiAws.applicationloadbalancingGetTargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.GetTargetGroupHealthCheck
-import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.GetTargetGroupStickiness
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancing.GetTargetGroupHealthCheck
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancing.GetTargetGroupStickiness
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.atPhosphorDisposable.atPhosphorDisposableMod
 
+import typings.atPhosphorAlgorithm.libIterMod.IterableOrArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,5 +64,18 @@ class DisposableSet () extends IDisposable {
     * If the item is not contained in the set, this is a no-op.
     */
   def remove(item: IDisposable): Unit = js.native
+}
+
+@JSImport("@phosphor/disposable", "DisposableSet")
+@js.native
+object DisposableSet extends js.Object {
+  /**
+    * Create a disposable set from an iterable of items.
+    *
+    * @param items - The iterable or array-like object of interest.
+    *
+    * @returns A new disposable initialized with the given items.
+    */
+  def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.amapDashJsDashSdk
 
-import typings.amapDashJsDashSdk.AMapNs.LngLat
+import typings.amapDashJsDashSdk.AMap.LngLat
 import typings.amapDashJsDashSdk.amapDashJsDashSdkStrings.EPSG3395
 import typings.amapDashJsDashSdk.amapDashJsDashSdkStrings.EPSG3857
 import typings.amapDashJsDashSdk.amapDashJsDashSdkStrings.EPSG4326

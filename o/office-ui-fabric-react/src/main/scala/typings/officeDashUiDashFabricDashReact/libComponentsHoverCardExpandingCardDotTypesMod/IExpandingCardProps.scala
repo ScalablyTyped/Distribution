@@ -2,6 +2,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingC
 
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardBaseCardDotTypesMod.IBaseCardProps
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,16 +40,16 @@ object IExpandingCardProps {
     compactCardHeight: Int | Double = null,
     expandedCardHeight: Int | Double = null,
     mode: ExpandingCardMode = null,
-    onRenderCompactCard: IRenderFunction[_] = null,
-    onRenderExpandedCard: IRenderFunction[_] = null
+    onRenderCompactCard: (/* props */ js.UndefOr[_], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[_], Element | Null]]) => Element | Null = null,
+    onRenderExpandedCard: (/* props */ js.UndefOr[_], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[_], Element | Null]]) => Element | Null = null
   ): IExpandingCardProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IBaseCardProps)
     if (compactCardHeight != null) __obj.updateDynamic("compactCardHeight")(compactCardHeight.asInstanceOf[js.Any])
     if (expandedCardHeight != null) __obj.updateDynamic("expandedCardHeight")(expandedCardHeight.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onRenderCompactCard != null) __obj.updateDynamic("onRenderCompactCard")(onRenderCompactCard)
-    if (onRenderExpandedCard != null) __obj.updateDynamic("onRenderExpandedCard")(onRenderExpandedCard)
+    if (onRenderCompactCard != null) __obj.updateDynamic("onRenderCompactCard")(js.Any.fromFunction2(onRenderCompactCard))
+    if (onRenderExpandedCard != null) __obj.updateDynamic("onRenderExpandedCard")(js.Any.fromFunction2(onRenderExpandedCard))
     __obj.asInstanceOf[IExpandingCardProps]
   }
 }

@@ -1,5 +1,6 @@
 package typings.ecore.ecoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,4 +29,8 @@ trait EObject extends js.Object {
   def setEClass(eClass: EClass): Unit = js.native
   def unset(attrs: js.Any, options: js.Any): EObject = js.native
 }
+
+@JSImport("ecore", "EObject")
+@js.native
+object EObject extends TopLevel[EObject]
 

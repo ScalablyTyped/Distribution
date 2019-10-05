@@ -1,12 +1,12 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.ImageDetails
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.InjectDetails
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.Port
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.PageSettings
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.Tab
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.ZoomSettings
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs._TabsOnUpdatedEvent
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.ImageDetails
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.InjectDetails
+import typings.firefoxDashWebextDashBrowser.browser.runtime.Port
+import typings.firefoxDashWebextDashBrowser.browser.tabs.PageSettings
+import typings.firefoxDashWebextDashBrowser.browser.tabs.Tab
+import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettings
+import typings.firefoxDashWebextDashBrowser.browser.tabs._TabsOnUpdatedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -175,7 +175,7 @@ trait Typeoftabs extends js.Object {
     */
   def hide(tabIds: Double): js.Promise[js.Array[Double]] = js.native
   /** Highlights the given tabs. */
-  def highlight(highlightInfo: Anon_Populate): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.Window]] = js.native
+  def highlight(highlightInfo: Anon_Populate): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to insert.

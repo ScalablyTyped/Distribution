@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -162,22 +163,22 @@ object IgZoombar {
     language: String = null,
     locale: js.Any = null,
     provider: js.Any = null,
-    providerCreated: ProviderCreatedEvent = null,
+    providerCreated: (/* event */ Event, /* ui */ ProviderCreatedEventUIParam) => Unit = null,
     regional: String | js.Object = null,
     tabIndex: Int | Double = null,
     target: String | js.Object = null,
     width: String | Double = null,
-    windowDragEnded: WindowDragEndedEvent = null,
-    windowDragEnding: WindowDragEndingEvent = null,
-    windowDragStarted: WindowDragStartedEvent = null,
-    windowDragStarting: WindowDragStartingEvent = null,
-    windowDragging: WindowDraggingEvent = null,
+    windowDragEnded: (/* event */ Event, /* ui */ WindowDragEndedEventUIParam) => Unit = null,
+    windowDragEnding: (/* event */ Event, /* ui */ WindowDragEndingEventUIParam) => Unit = null,
+    windowDragStarted: (/* event */ Event, /* ui */ WindowDragStartedEventUIParam) => Unit = null,
+    windowDragStarting: (/* event */ Event, /* ui */ WindowDragStartingEventUIParam) => Unit = null,
+    windowDragging: (/* event */ Event, /* ui */ WindowDraggingEventUIParam) => Unit = null,
     windowPanDuration: Int | Double = null,
-    windowResized: WindowResizedEvent = null,
-    windowResizing: WindowResizingEvent = null,
+    windowResized: (/* event */ Event, /* ui */ WindowResizedEventUIParam) => Unit = null,
+    windowResizing: (/* event */ Event, /* ui */ WindowResizingEventUIParam) => Unit = null,
     zoomAction: String = null,
-    zoomChanged: ZoomChangedEvent = null,
-    zoomChanging: ZoomChangingEvent = null,
+    zoomChanged: (/* event */ Event, /* ui */ ZoomChangedEventUIParam) => Unit = null,
+    zoomChanging: (/* event */ Event, /* ui */ ZoomChangingEventUIParam) => Unit = null,
     zoomWindowMinWidth: Int | Double = null,
     zoomWindowMoveDistance: Int | Double = null
   ): IgZoombar = {
@@ -190,22 +191,22 @@ object IgZoombar {
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (providerCreated != null) __obj.updateDynamic("providerCreated")(providerCreated)
+    if (providerCreated != null) __obj.updateDynamic("providerCreated")(js.Any.fromFunction2(providerCreated))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowDragEnded != null) __obj.updateDynamic("windowDragEnded")(windowDragEnded)
-    if (windowDragEnding != null) __obj.updateDynamic("windowDragEnding")(windowDragEnding)
-    if (windowDragStarted != null) __obj.updateDynamic("windowDragStarted")(windowDragStarted)
-    if (windowDragStarting != null) __obj.updateDynamic("windowDragStarting")(windowDragStarting)
-    if (windowDragging != null) __obj.updateDynamic("windowDragging")(windowDragging)
+    if (windowDragEnded != null) __obj.updateDynamic("windowDragEnded")(js.Any.fromFunction2(windowDragEnded))
+    if (windowDragEnding != null) __obj.updateDynamic("windowDragEnding")(js.Any.fromFunction2(windowDragEnding))
+    if (windowDragStarted != null) __obj.updateDynamic("windowDragStarted")(js.Any.fromFunction2(windowDragStarted))
+    if (windowDragStarting != null) __obj.updateDynamic("windowDragStarting")(js.Any.fromFunction2(windowDragStarting))
+    if (windowDragging != null) __obj.updateDynamic("windowDragging")(js.Any.fromFunction2(windowDragging))
     if (windowPanDuration != null) __obj.updateDynamic("windowPanDuration")(windowPanDuration.asInstanceOf[js.Any])
-    if (windowResized != null) __obj.updateDynamic("windowResized")(windowResized)
-    if (windowResizing != null) __obj.updateDynamic("windowResizing")(windowResizing)
+    if (windowResized != null) __obj.updateDynamic("windowResized")(js.Any.fromFunction2(windowResized))
+    if (windowResizing != null) __obj.updateDynamic("windowResizing")(js.Any.fromFunction2(windowResizing))
     if (zoomAction != null) __obj.updateDynamic("zoomAction")(zoomAction)
-    if (zoomChanged != null) __obj.updateDynamic("zoomChanged")(zoomChanged)
-    if (zoomChanging != null) __obj.updateDynamic("zoomChanging")(zoomChanging)
+    if (zoomChanged != null) __obj.updateDynamic("zoomChanged")(js.Any.fromFunction2(zoomChanged))
+    if (zoomChanging != null) __obj.updateDynamic("zoomChanging")(js.Any.fromFunction2(zoomChanging))
     if (zoomWindowMinWidth != null) __obj.updateDynamic("zoomWindowMinWidth")(zoomWindowMinWidth.asInstanceOf[js.Any])
     if (zoomWindowMoveDistance != null) __obj.updateDynamic("zoomWindowMoveDistance")(zoomWindowMoveDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgZoombar]

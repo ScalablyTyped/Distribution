@@ -42,14 +42,14 @@ object ScaleImageOptions {
   @scala.inline
   def apply(
     maxSize: Double,
-    customResizer: CustomResizerCallBack = null,
+    customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
     includeExif: js.UndefOr[Boolean] = js.undefined,
     orient: js.UndefOr[Boolean] = js.undefined,
     quality: Int | Double = null,
     `type`: String = null
   ): ScaleImageOptions = {
     val __obj = js.Dynamic.literal(maxSize = maxSize)
-    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
     if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
     if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

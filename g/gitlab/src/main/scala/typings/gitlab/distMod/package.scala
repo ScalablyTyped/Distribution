@@ -14,7 +14,7 @@ package object distMod {
   type Gitlab = InstanceType[
     Bundle[
       /* import warning: ImportType.apply Failed type conversion: typeof APIServices */ js.Any, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 87 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ js.Any
     ]
   ]
   type GroupsBundle = InstanceType[

@@ -1,6 +1,7 @@
 package typings.reactDashRte.reactDashRteMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.draftDashJs.draftDashJsMod.ContentBlock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +17,14 @@ object ExportOptions {
   @scala.inline
   def apply(
     blockRenderers: StringDictionary[BlockRenderer] = null,
-    blockStyleFn: BlockStyleFn = null,
-    entityStyleFn: EntityStyleFn = null,
+    blockStyleFn: /* block */ ContentBlock => RenderConfig = null,
+    entityStyleFn: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any => RenderConfig = null,
     inlineStyles: StringDictionary[RenderConfig] = null
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()
     if (blockRenderers != null) __obj.updateDynamic("blockRenderers")(blockRenderers)
-    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(blockStyleFn)
-    if (entityStyleFn != null) __obj.updateDynamic("entityStyleFn")(entityStyleFn)
+    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
+    if (entityStyleFn != null) __obj.updateDynamic("entityStyleFn")(js.Any.fromFunction1(entityStyleFn))
     if (inlineStyles != null) __obj.updateDynamic("inlineStyles")(inlineStyles)
     __obj.asInstanceOf[ExportOptions]
   }

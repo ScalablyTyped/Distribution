@@ -1,6 +1,6 @@
 package typings.jqueryDashAwesomeDashCursor
 
-import typings.jqueryDashAwesomeDashCursor.JQueryAwesomeCursorNs.flip
+import typings.jqueryDashAwesomeDashCursor.JQueryAwesomeCursor.flip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

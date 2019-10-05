@@ -1,6 +1,6 @@
 package typings.lobibox
 
-import typings.lobibox.LobiboxModuleNs.LobiboxStatic
+import typings.lobibox.LobiboxModule.LobiboxStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

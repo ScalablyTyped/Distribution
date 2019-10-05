@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Skin")
 @js.native
 class Skin protected ()
-  extends typings.playcanvas.pcNs.Skin {
+  extends typings.playcanvas.pc.Skin {
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
-    ibp: js.Array[typings.playcanvas.pcNs.Mat4],
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
+    ibp: js.Array[typings.playcanvas.pc.Mat4],
     boneNames: js.Array[String]
   ) = this()
 }

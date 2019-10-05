@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreEventedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.EventedConstructor
+import typings.arcgisDashJsDashApi.__esri.EventedConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

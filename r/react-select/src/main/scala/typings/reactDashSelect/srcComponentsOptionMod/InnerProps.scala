@@ -1,5 +1,7 @@
 package typings.reactDashSelect.srcComponentsOptionMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -20,12 +22,12 @@ object InnerProps {
   def apply(
     id: String,
     key: String,
-    onClick: MouseEventHandler[HTMLDivElement],
-    onMouseMove: MouseEventHandler[HTMLDivElement],
-    onMouseOver: MouseEventHandler[HTMLDivElement],
+    onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
+    onMouseMove: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
+    onMouseOver: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
     tabIndex: Double
   ): InnerProps = {
-    val __obj = js.Dynamic.literal(id = id, key = key, onClick = onClick, onMouseMove = onMouseMove, onMouseOver = onMouseOver, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(id = id, key = key, onClick = js.Any.fromFunction1(onClick), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseOver = js.Any.fromFunction1(onMouseOver), tabIndex = tabIndex)
   
     __obj.asInstanceOf[InnerProps]
   }

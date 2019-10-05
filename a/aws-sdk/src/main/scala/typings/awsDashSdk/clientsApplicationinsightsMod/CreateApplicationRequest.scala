@@ -23,7 +23,7 @@ object CreateApplicationRequest {
   @scala.inline
   def apply(
     ResourceGroupName: ResourceGroupName,
-    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
+    OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null
   ): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName)

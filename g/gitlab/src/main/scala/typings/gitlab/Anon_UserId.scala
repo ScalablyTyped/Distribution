@@ -11,9 +11,9 @@ trait Anon_UserId extends js.Object {
 
 object Anon_UserId {
   @scala.inline
-  def apply(userId: js.UndefOr[UserId] = js.undefined): Anon_UserId = {
+  def apply(userId: Int | Double = null): Anon_UserId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(userId)) __obj.updateDynamic("userId")(userId)
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UserId]
   }
 }

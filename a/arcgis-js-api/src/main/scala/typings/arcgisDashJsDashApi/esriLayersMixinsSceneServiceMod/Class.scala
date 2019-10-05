@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsSceneServiceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneService
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneServiceProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneServiceVersion
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.SceneService
+import typings.arcgisDashJsDashApi.__esri.SceneServiceProperties
+import typings.arcgisDashJsDashApi.__esri.SceneServiceVersion
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

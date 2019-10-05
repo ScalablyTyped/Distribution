@@ -10,9 +10,9 @@ trait SqlTagConfigurationType extends js.Object {
 
 object SqlTagConfigurationType {
   @scala.inline
-  def apply(normalizeIdentifier: IdentifierNormalizerType = null): SqlTagConfigurationType = {
+  def apply(normalizeIdentifier: /* identifierName */ String => String = null): SqlTagConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (normalizeIdentifier != null) __obj.updateDynamic("normalizeIdentifier")(normalizeIdentifier)
+    if (normalizeIdentifier != null) __obj.updateDynamic("normalizeIdentifier")(js.Any.fromFunction1(normalizeIdentifier))
     __obj.asInstanceOf[SqlTagConfigurationType]
   }
 }

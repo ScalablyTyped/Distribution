@@ -1,11 +1,11 @@
 package typings.activexDashWia
 
-import typings.activexDashWia.WIANs.CommonDialog
-import typings.activexDashWia.WIANs.DeviceManager
-import typings.activexDashWia.WIANs.ImageFile
-import typings.activexDashWia.WIANs.ImageProcess
-import typings.activexDashWia.WIANs.Rational
-import typings.activexDashWia.WIANs.Vector
+import typings.activexDashWia.WIA.CommonDialog
+import typings.activexDashWia.WIA.DeviceManager
+import typings.activexDashWia.WIA.ImageFile
+import typings.activexDashWia.WIA.ImageProcess
+import typings.activexDashWia.WIA.Rational
+import typings.activexDashWia.WIA.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

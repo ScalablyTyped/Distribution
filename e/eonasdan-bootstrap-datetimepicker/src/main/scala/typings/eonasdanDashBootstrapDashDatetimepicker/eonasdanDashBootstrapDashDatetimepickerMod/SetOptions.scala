@@ -1,6 +1,7 @@
 package typings.eonasdanDashBootstrapDashDatetimepicker.eonasdanDashBootstrapDashDatetimepickerMod
 
 import typings.eonasdanDashBootstrapDashDatetimepicker.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery
+import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +69,7 @@ object SetOptions {
     locale: String = null,
     maxDate: DateComparable | Boolean = null,
     minDate: DateComparable | Boolean = null,
-    parseInputDate: ParseInputDateFunction = null,
+    parseInputDate: /* inputDate */ String => Moment = null,
     showClear: js.UndefOr[Boolean] = js.undefined,
     showClose: js.UndefOr[Boolean] = js.undefined,
     showTodayButton: js.UndefOr[Boolean] = js.undefined,
@@ -110,7 +111,7 @@ object SetOptions {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (parseInputDate != null) __obj.updateDynamic("parseInputDate")(parseInputDate)
+    if (parseInputDate != null) __obj.updateDynamic("parseInputDate")(js.Any.fromFunction1(parseInputDate))
     if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear)
     if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
     if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton)

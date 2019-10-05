@@ -1,5 +1,6 @@
 package typings.grommet.componentsMaskedInputMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.grommetStrings.id
 import typings.grommet.grommetStrings.mask
 import typings.grommet.grommetStrings.name
@@ -8,6 +9,7 @@ import typings.grommet.grommetStrings.size
 import typings.grommet.grommetStrings.value
 import typings.react.HTMLInputElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.InputHTMLAttributes
@@ -39,4 +41,16 @@ class MaskedInput protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/MaskedInput", "MaskedInput")
+@js.native
+object MaskedInput extends TopLevel[
+      ComponentClass[
+        MaskedInputProps with (Omit[
+          DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+          id | mask | name | plain | size | value
+        ]), 
+        ComponentState
+      ]
+    ]
 

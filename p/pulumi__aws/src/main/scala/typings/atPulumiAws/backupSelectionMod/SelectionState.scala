@@ -1,6 +1,6 @@
 package typings.atPulumiAws.backupSelectionMod
 
-import typings.atPulumiAws.typesInputMod.backupNs.SelectionSelectionTag
+import typings.atPulumiAws.typesInputMod.backup.SelectionSelectionTag
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

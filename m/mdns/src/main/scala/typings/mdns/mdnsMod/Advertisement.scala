@@ -1,6 +1,7 @@
 package typings.mdns.mdnsMod
 
-import typings.node.NodeJSNs.EventEmitter
+import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +12,8 @@ trait Advertisement extends EventEmitter {
   def stop(): Unit = js.native
 }
 
+// --- Statics & Classes ---
 @JSImport("mdns", "Advertisement")
 @js.native
-class AdvertisementCls protected () extends Advertisement {
-  def this(serviceType: ServiceType, port: Double) = this()
-  def this(serviceType: ServiceType, port: Double, options: AdvertisementOptions) = this()
-  def this(
-    serviceType: ServiceType,
-    port: Double,
-    options: AdvertisementOptions,
-    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
-  ) = this()
-}
+object Advertisement extends TopLevel[AdvertisementCreatable]
 

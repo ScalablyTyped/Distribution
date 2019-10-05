@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libMainareawidgetMod.MainAreaWidgetNs.IOptions
+import typings.atJupyterlabApputils.libMainareawidgetMod.MainAreaWidget.IOptions
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

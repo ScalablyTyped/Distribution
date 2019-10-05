@@ -1,8 +1,8 @@
 package typings.inversifyDashExpressDashUtils
 
 import typings.inversifyDashExpressDashUtils.dtsConstantsMod.PARAMETER_TYPE
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.HandlerDecorator
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.Middleware
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.HandlerDecorator
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.Middleware
 import typings.std.ParameterDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

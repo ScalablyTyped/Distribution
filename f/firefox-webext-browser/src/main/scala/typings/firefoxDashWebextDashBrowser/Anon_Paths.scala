@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.experimentsNs.APIChildScope
-import typings.firefoxDashWebextDashBrowser.browserNs.experimentsNs.APIPaths
-import typings.firefoxDashWebextDashBrowser.browserNs.experimentsNs.ExperimentURL
+import typings.firefoxDashWebextDashBrowser.browser.experiments.APIChildScope
+import typings.firefoxDashWebextDashBrowser.browser.experiments.APIPaths
+import typings.firefoxDashWebextDashBrowser.browser.experiments.ExperimentURL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

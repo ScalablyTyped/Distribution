@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ant-design__dark-theme"
-version := "1.0.3-4049de"
-scalaVersion := "2.12.9"
+version := "1.0.3-1dec9a"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

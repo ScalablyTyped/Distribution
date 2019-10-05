@@ -28,16 +28,16 @@ object UpdateEventSourceMappingRequest {
   @scala.inline
   def apply(
     UUID: String,
-    BatchSize: js.UndefOr[BatchSize] = js.undefined,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
+    BatchSize: Int | Double = null,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     FunctionName: FunctionName = null,
-    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined
+    MaximumBatchingWindowInSeconds: Int | Double = null
   ): UpdateEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID)
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize)
+    if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName)
-    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds)
+    if (MaximumBatchingWindowInSeconds != null) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEventSourceMappingRequest]
   }
 }

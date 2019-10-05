@@ -1,10 +1,10 @@
 package typings.virtualDashDom.vnodeVnodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.virtualDashDom.VirtualDOMNs.VNode
-import typings.virtualDashDom.VirtualDOMNs.VNodeConstructor
-import typings.virtualDashDom.VirtualDOMNs.VProperties
-import typings.virtualDashDom.VirtualDOMNs.VTree
+import typings.virtualDashDom.VirtualDOM.VNode
+import typings.virtualDashDom.VirtualDOM.VNodeConstructor
+import typings.virtualDashDom.VirtualDOM.VProperties
+import typings.virtualDashDom.VirtualDOM.VTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -42,3 +42,12 @@ object TSImportEqualsDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsImportEqualsDeclaration")
+@js.native
+object tsImportEqualsDeclaration extends js.Object {
+  def apply(id: Identifier, moduleReference: TSEntityName): TSImportEqualsDeclaration = js.native
+  def apply(id: Identifier, moduleReference: TSEntityName, isExport: Boolean): TSImportEqualsDeclaration = js.native
+  def apply(id: Identifier, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = js.native
+  def apply(id: Identifier, moduleReference: TSExternalModuleReference, isExport: Boolean): TSImportEqualsDeclaration = js.native
+}
+

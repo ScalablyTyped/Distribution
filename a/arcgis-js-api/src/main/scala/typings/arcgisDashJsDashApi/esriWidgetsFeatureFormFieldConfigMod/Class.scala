@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureFormFieldConfigMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldConfig
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldConfigProperties
+import typings.arcgisDashJsDashApi.__esri.FieldConfig
+import typings.arcgisDashJsDashApi.__esri.FieldConfigProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

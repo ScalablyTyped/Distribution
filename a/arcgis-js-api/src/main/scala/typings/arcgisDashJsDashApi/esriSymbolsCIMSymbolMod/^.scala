@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsCIMSymbolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CIMSymbolConstructor
+import typings.arcgisDashJsDashApi.__esri.CIMSymbolConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.elasticlunr.elasticlunrMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,5 +26,30 @@ object Pipeline extends js.Object {
   def load(serialised: SerialisedPipeline): Pipeline = js.native
   def registerFunction(fn: PipelineFunction, label: String): Unit = js.native
   def warnIfFunctionNotRegistered(fn: PipelineFunction): Unit = js.native
+  @js.native
+  object registeredFunctions extends js.Object {
+    @js.native
+    object stemmer extends js.Object {
+      val label: String = js.native
+      def apply(w: String): String = js.native
+    }
+    
+    @js.native
+    object stopWordFilter extends js.Object {
+      val label: String = js.native
+      def apply(token: String): String = js.native
+      @js.native
+      object stopWords extends /* key */ StringDictionary[Boolean]
+      
+    }
+    
+    @js.native
+    object trimmer extends js.Object {
+      val label: String = js.native
+      def apply(token: String): String = js.native
+    }
+    
+  }
+  
 }
 

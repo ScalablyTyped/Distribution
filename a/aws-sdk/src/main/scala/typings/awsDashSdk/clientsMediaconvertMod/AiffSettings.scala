@@ -21,15 +21,11 @@ trait AiffSettings extends js.Object {
 
 object AiffSettings {
   @scala.inline
-  def apply(
-    BitDepth: js.UndefOr[__integerMin16Max24] = js.undefined,
-    Channels: js.UndefOr[__integerMin1Max64] = js.undefined,
-    SampleRate: js.UndefOr[__integerMin8000Max192000] = js.undefined
-  ): AiffSettings = {
+  def apply(BitDepth: Int | Double = null, Channels: Int | Double = null, SampleRate: Int | Double = null): AiffSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BitDepth)) __obj.updateDynamic("BitDepth")(BitDepth)
-    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels)
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate)
+    if (BitDepth != null) __obj.updateDynamic("BitDepth")(BitDepth.asInstanceOf[js.Any])
+    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
+    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AiffSettings]
   }
 }

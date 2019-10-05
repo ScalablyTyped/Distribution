@@ -28,12 +28,12 @@ object ListTargetsByRuleRequest {
   def apply(
     Rule: RuleName,
     EventBusName: EventBusName = null,
-    Limit: js.UndefOr[LimitMax100] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: NextToken = null
   ): ListTargetsByRuleRequest = {
     val __obj = js.Dynamic.literal(Rule = Rule)
     if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListTargetsByRuleRequest]
   }

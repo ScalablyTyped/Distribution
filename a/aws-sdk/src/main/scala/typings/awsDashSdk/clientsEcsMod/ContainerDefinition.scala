@@ -163,38 +163,38 @@ object ContainerDefinition {
   @scala.inline
   def apply(
     command: StringList = null,
-    cpu: js.UndefOr[Integer] = js.undefined,
+    cpu: Int | scala.Double = null,
     dependsOn: ContainerDependencies = null,
-    disableNetworking: js.UndefOr[BoxedBoolean] = js.undefined,
+    disableNetworking: js.UndefOr[scala.Boolean] = js.undefined,
     dnsSearchDomains: StringList = null,
     dnsServers: StringList = null,
     dockerLabels: DockerLabelsMap = null,
     dockerSecurityOptions: StringList = null,
     entryPoint: StringList = null,
     environment: EnvironmentVariables = null,
-    essential: js.UndefOr[BoxedBoolean] = js.undefined,
+    essential: js.UndefOr[scala.Boolean] = js.undefined,
     extraHosts: HostEntryList = null,
     firelensConfiguration: FirelensConfiguration = null,
     healthCheck: HealthCheck = null,
     hostname: String = null,
     image: String = null,
-    interactive: js.UndefOr[BoxedBoolean] = js.undefined,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
     links: StringList = null,
     linuxParameters: LinuxParameters = null,
     logConfiguration: LogConfiguration = null,
-    memory: js.UndefOr[BoxedInteger] = js.undefined,
-    memoryReservation: js.UndefOr[BoxedInteger] = js.undefined,
+    memory: Int | scala.Double = null,
+    memoryReservation: Int | scala.Double = null,
     mountPoints: MountPointList = null,
     name: String = null,
     portMappings: PortMappingList = null,
-    privileged: js.UndefOr[BoxedBoolean] = js.undefined,
-    pseudoTerminal: js.UndefOr[BoxedBoolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[BoxedBoolean] = js.undefined,
+    privileged: js.UndefOr[scala.Boolean] = js.undefined,
+    pseudoTerminal: js.UndefOr[scala.Boolean] = js.undefined,
+    readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined,
     repositoryCredentials: RepositoryCredentials = null,
     resourceRequirements: ResourceRequirements = null,
     secrets: SecretList = null,
-    startTimeout: js.UndefOr[BoxedInteger] = js.undefined,
-    stopTimeout: js.UndefOr[BoxedInteger] = js.undefined,
+    startTimeout: Int | scala.Double = null,
+    stopTimeout: Int | scala.Double = null,
     systemControls: SystemControls = null,
     ulimits: UlimitList = null,
     user: String = null,
@@ -203,7 +203,7 @@ object ContainerDefinition {
   ): ContainerDefinition = {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command)
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu)
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn)
     if (!js.isUndefined(disableNetworking)) __obj.updateDynamic("disableNetworking")(disableNetworking)
     if (dnsSearchDomains != null) __obj.updateDynamic("dnsSearchDomains")(dnsSearchDomains)
@@ -222,8 +222,8 @@ object ContainerDefinition {
     if (links != null) __obj.updateDynamic("links")(links)
     if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters)
     if (logConfiguration != null) __obj.updateDynamic("logConfiguration")(logConfiguration)
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory)
-    if (!js.isUndefined(memoryReservation)) __obj.updateDynamic("memoryReservation")(memoryReservation)
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
     if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints)
     if (name != null) __obj.updateDynamic("name")(name)
     if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings)
@@ -233,8 +233,8 @@ object ContainerDefinition {
     if (repositoryCredentials != null) __obj.updateDynamic("repositoryCredentials")(repositoryCredentials)
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements)
     if (secrets != null) __obj.updateDynamic("secrets")(secrets)
-    if (!js.isUndefined(startTimeout)) __obj.updateDynamic("startTimeout")(startTimeout)
-    if (!js.isUndefined(stopTimeout)) __obj.updateDynamic("stopTimeout")(stopTimeout)
+    if (startTimeout != null) __obj.updateDynamic("startTimeout")(startTimeout.asInstanceOf[js.Any])
+    if (stopTimeout != null) __obj.updateDynamic("stopTimeout")(stopTimeout.asInstanceOf[js.Any])
     if (systemControls != null) __obj.updateDynamic("systemControls")(systemControls)
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits)
     if (user != null) __obj.updateDynamic("user")(user)

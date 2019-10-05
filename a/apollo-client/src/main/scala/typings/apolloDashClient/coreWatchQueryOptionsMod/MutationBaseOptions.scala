@@ -1,7 +1,10 @@
 package typings.apolloDashClient.coreWatchQueryOptionsMod
 
+import typings.apolloDashCache.libTypesDataProxyMod.DataProxy
 import typings.apolloDashClient.coreTypesMod.MutationQueryReducersMap
+import typings.apolloDashLink.libTypesMod.FetchResult
 import typings.graphql.executionExecuteMod.ExecutionResult
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +28,7 @@ object MutationBaseOptions {
     errorPolicy: ErrorPolicy = null,
     optimisticResponse: T | (js.Function1[/* vars */ TVariables, T]) = null,
     refetchQueries: (js.Function1[/* result */ ExecutionResult[T], RefetchQueryDescription]) | RefetchQueryDescription = null,
-    update: MutationUpdaterFn[T] = null,
+    update: (/* proxy */ DataProxy, /* mutationResult */ FetchResult[T, Record[String, js.Any], Record[String, js.Any]]) => Unit = null,
     updateQueries: MutationQueryReducersMap[T] = null,
     variables: TVariables = null
   ): MutationBaseOptions[T, TVariables] = {
@@ -34,7 +37,7 @@ object MutationBaseOptions {
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationBaseOptions[T, TVariables]]

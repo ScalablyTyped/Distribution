@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
-import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationEphemeralBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.LaunchConfigurationRootBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.LaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.LaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.LaunchConfigurationRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

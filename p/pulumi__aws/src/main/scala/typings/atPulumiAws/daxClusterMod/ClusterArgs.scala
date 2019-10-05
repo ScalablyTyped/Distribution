@@ -1,7 +1,7 @@
 package typings.atPulumiAws.daxClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.daxNs.ClusterServerSideEncryption
+import typings.atPulumiAws.typesInputMod.dax.ClusterServerSideEncryption
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

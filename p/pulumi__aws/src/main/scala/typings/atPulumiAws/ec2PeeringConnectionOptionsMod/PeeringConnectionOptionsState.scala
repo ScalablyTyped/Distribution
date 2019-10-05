@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2PeeringConnectionOptionsMod
 
-import typings.atPulumiAws.typesInputMod.ec2Ns.PeeringConnectionOptionsAccepter
-import typings.atPulumiAws.typesInputMod.ec2Ns.PeeringConnectionOptionsRequester
+import typings.atPulumiAws.typesInputMod.ec2.PeeringConnectionOptionsAccepter
+import typings.atPulumiAws.typesInputMod.ec2.PeeringConnectionOptionsRequester
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

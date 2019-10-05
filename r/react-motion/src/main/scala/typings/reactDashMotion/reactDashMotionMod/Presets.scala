@@ -1,5 +1,6 @@
 package typings.reactDashMotion.reactDashMotionMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +14,8 @@ class Presets () extends js.Object {
   var stiff: OpaqueConfig = js.native
   var wobbly: OpaqueConfig = js.native
 }
+
+@JSImport("react-motion", "presets")
+@js.native
+object presets extends TopLevel[Presets]
 

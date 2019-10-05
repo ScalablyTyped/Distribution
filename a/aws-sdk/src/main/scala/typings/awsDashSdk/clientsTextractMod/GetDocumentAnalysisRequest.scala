@@ -21,9 +21,9 @@ trait GetDocumentAnalysisRequest extends js.Object {
 
 object GetDocumentAnalysisRequest {
   @scala.inline
-  def apply(JobId: JobId, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: PaginationToken = null): GetDocumentAnalysisRequest = {
+  def apply(JobId: JobId, MaxResults: Int | Double = null, NextToken: PaginationToken = null): GetDocumentAnalysisRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetDocumentAnalysisRequest]
   }

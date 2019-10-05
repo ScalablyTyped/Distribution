@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.geomNs.Geometry
+import typings.openlayers.openlayersMod.geom.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

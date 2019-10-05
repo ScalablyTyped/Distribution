@@ -1,8 +1,8 @@
 package typings.reactDashGeosuggest.reactDashGeosuggestMod
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngBounds
-import typings.googlemaps.googleNs.mapsNs.placesNs.AutocompletePrediction
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngBounds
+import typings.googlemaps.google.maps.places.AutocompletePrediction
 import typings.reactDashGeosuggest.Typeofmaps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

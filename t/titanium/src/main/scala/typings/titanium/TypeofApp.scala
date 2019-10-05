@@ -1,7 +1,7 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait TypeofApp extends js.Object {
   /**
   		 * A module used to access Android application resources.
   		 */
-  val AndroidNs: TypeofAndroidAddEventListener = js.native
+  val Android: TypeofAndroidAddEventListener = js.native
   /**
   		 * Convenience constant for system event "accessibilityannouncement".
   		 */
@@ -24,7 +24,7 @@ trait TypeofApp extends js.Object {
   		 * The App Properties module is used for storing application-related data in property/value pairs
   		 * that persist beyond application sessions and device power cycles.
   		 */
-  val PropertiesNs: TypeofProperties = js.native
+  val Properties: TypeofProperties = js.native
   /**
   		 * Indicates whether Accessibility is enabled by the system.
   		 */
@@ -73,7 +73,7 @@ trait TypeofApp extends js.Object {
   		 * The top-level App iOS module, available only to iOS devices, that includes the facilities to
   		 * create and manage local notifications and background services.
   		 */
-  val iOSNs: TypeofiOSAddEventListener = js.native
+  val iOS: TypeofiOSAddEventListener = js.native
   /**
   		 * Application ID, from `tiapp.xml`.
   		 */

@@ -1,7 +1,7 @@
 package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.ejDotWebDotAll.ejNs.Widget
+import typings.ejDotWebDotAll.ej.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

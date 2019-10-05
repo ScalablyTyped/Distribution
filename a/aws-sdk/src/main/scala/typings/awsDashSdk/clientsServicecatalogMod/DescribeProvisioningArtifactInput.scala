@@ -29,7 +29,7 @@ object DescribeProvisioningArtifactInput {
     ProductId: Id,
     ProvisioningArtifactId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    Verbose: js.UndefOr[Verbose] = js.undefined
+    Verbose: js.UndefOr[Boolean] = js.undefined
   ): DescribeProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ProductId = ProductId, ProvisioningArtifactId = ProvisioningArtifactId)
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)

@@ -1,5 +1,6 @@
 package typings.router5.typesConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,4 +31,8 @@ object Constants {
     __obj.asInstanceOf[Constants]
   }
 }
+
+@JSImport("router5/types/constants", "constants")
+@js.native
+object constants extends TopLevel[Constants]
 

@@ -28,8 +28,8 @@ object CreateRequestValidatorRequest {
   def apply(
     restApiId: String,
     name: String = null,
-    validateRequestBody: js.UndefOr[Boolean] = js.undefined,
-    validateRequestParameters: js.UndefOr[Boolean] = js.undefined
+    validateRequestBody: js.UndefOr[scala.Boolean] = js.undefined,
+    validateRequestParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateRequestValidatorRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)
     if (name != null) __obj.updateDynamic("name")(name)

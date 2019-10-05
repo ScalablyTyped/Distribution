@@ -34,18 +34,18 @@ trait StackSummary extends js.Object {
 object StackSummary {
   @scala.inline
   def apply(
-    AppsCount: js.UndefOr[Integer] = js.undefined,
+    AppsCount: Int | scala.Double = null,
     Arn: String = null,
     InstancesCount: InstancesCount = null,
-    LayersCount: js.UndefOr[Integer] = js.undefined,
+    LayersCount: Int | scala.Double = null,
     Name: String = null,
     StackId: String = null
   ): StackSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AppsCount)) __obj.updateDynamic("AppsCount")(AppsCount)
+    if (AppsCount != null) __obj.updateDynamic("AppsCount")(AppsCount.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (InstancesCount != null) __obj.updateDynamic("InstancesCount")(InstancesCount)
-    if (!js.isUndefined(LayersCount)) __obj.updateDynamic("LayersCount")(LayersCount)
+    if (LayersCount != null) __obj.updateDynamic("LayersCount")(LayersCount.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (StackId != null) __obj.updateDynamic("StackId")(StackId)
     __obj.asInstanceOf[StackSummary]

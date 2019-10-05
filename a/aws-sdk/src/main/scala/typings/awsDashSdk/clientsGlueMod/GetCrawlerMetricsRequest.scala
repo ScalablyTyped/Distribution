@@ -21,14 +21,10 @@ trait GetCrawlerMetricsRequest extends js.Object {
 
 object GetCrawlerMetricsRequest {
   @scala.inline
-  def apply(
-    CrawlerNameList: CrawlerNameList = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
-    NextToken: Token = null
-  ): GetCrawlerMetricsRequest = {
+  def apply(CrawlerNameList: CrawlerNameList = null, MaxResults: Int | Double = null, NextToken: Token = null): GetCrawlerMetricsRequest = {
     val __obj = js.Dynamic.literal()
     if (CrawlerNameList != null) __obj.updateDynamic("CrawlerNameList")(CrawlerNameList)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetCrawlerMetricsRequest]
   }

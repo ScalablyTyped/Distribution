@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsHistogramMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Histogram
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HistogramProperties
+import typings.arcgisDashJsDashApi.__esri.Histogram
+import typings.arcgisDashJsDashApi.__esri.HistogramProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

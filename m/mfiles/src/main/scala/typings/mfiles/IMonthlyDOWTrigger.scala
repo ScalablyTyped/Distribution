@@ -1,8 +1,8 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFTriggerMonth
-import typings.mfiles.MFilesNs.MFTriggerWeekDay
-import typings.mfiles.MFilesNs.MFTriggerWeekOfMonth
+import typings.mfiles.MFiles.MFTriggerMonth
+import typings.mfiles.MFiles.MFTriggerWeekDay
+import typings.mfiles.MFiles.MFTriggerWeekOfMonth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

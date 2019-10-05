@@ -1,7 +1,7 @@
 package typings.crossfilter
 
-import typings.crossfilter.CrossFilterNs.Selector
-import typings.crossfilter.CrossFilterNs.Sort
+import typings.crossfilter.CrossFilter.Selector
+import typings.crossfilter.CrossFilter.Sort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

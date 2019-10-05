@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInView
-import typings.mfiles.MFilesNs.MFFolderDefType
+import typings.mfiles.MFiles.MFBuiltInView
+import typings.mfiles.MFiles.MFFolderDefType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

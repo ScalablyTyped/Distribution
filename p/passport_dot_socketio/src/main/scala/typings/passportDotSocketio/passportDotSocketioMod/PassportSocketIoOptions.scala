@@ -1,6 +1,10 @@
 package typings.passportDotSocketio.passportDotSocketioMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.expressDashSession.expressDashSessionMod.Store
 import typings.passport.passportMod.PassportStatic
 import scala.scalajs.js
@@ -53,7 +57,7 @@ object PassportSocketIoOptions {
   @scala.inline
   def apply(
     store: Store,
-    cookieParser: RequestHandler = null,
+    cookieParser: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
     fail: (/* data */ js.Any, /* message */ String, /* critical */ String, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit = null,
     key: String = null,
     passport: PassportStatic = null,
@@ -61,7 +65,7 @@ object PassportSocketIoOptions {
     success: (/* data */ js.Any, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit = null
   ): PassportSocketIoOptions = {
     val __obj = js.Dynamic.literal(store = store)
-    if (cookieParser != null) __obj.updateDynamic("cookieParser")(cookieParser)
+    if (cookieParser != null) __obj.updateDynamic("cookieParser")(js.Any.fromFunction3(cookieParser))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction4(fail))
     if (key != null) __obj.updateDynamic("key")(key)
     if (passport != null) __obj.updateDynamic("passport")(passport)

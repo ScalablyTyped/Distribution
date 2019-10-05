@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotDfareporting
 
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.Recipient
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.Recipient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

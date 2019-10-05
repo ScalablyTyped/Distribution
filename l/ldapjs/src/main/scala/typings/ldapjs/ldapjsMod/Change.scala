@@ -13,15 +13,5 @@ trait Change extends js.Object {
 
 @JSImport("ldapjs", "Change")
 @js.native
-class ChangeCls protected () extends Change {
-  def this(change: Change) = this()
-  /* CompleteClass */
-  override var modification: StringDictionary[js.Any] = js.native
-  /* CompleteClass */
-  override var operation: String = js.native
-}
-
-@JSImport("ldapjs", "Change")
-@js.native
 object Change extends Instantiable1[/* change */ Change, Change]
 

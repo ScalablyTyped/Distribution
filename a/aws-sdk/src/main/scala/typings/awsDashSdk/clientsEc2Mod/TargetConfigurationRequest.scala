@@ -17,9 +17,9 @@ trait TargetConfigurationRequest extends js.Object {
 
 object TargetConfigurationRequest {
   @scala.inline
-  def apply(OfferingId: String, InstanceCount: js.UndefOr[Integer] = js.undefined): TargetConfigurationRequest = {
+  def apply(OfferingId: String, InstanceCount: Int | scala.Double = null): TargetConfigurationRequest = {
     val __obj = js.Dynamic.literal(OfferingId = OfferingId)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfigurationRequest]
   }
 }

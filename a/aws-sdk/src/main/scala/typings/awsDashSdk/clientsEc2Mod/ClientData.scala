@@ -28,13 +28,13 @@ object ClientData {
   def apply(
     Comment: String = null,
     UploadEnd: DateTime = null,
-    UploadSize: js.UndefOr[Double] = js.undefined,
+    UploadSize: Int | scala.Double = null,
     UploadStart: DateTime = null
   ): ClientData = {
     val __obj = js.Dynamic.literal()
     if (Comment != null) __obj.updateDynamic("Comment")(Comment)
     if (UploadEnd != null) __obj.updateDynamic("UploadEnd")(UploadEnd)
-    if (!js.isUndefined(UploadSize)) __obj.updateDynamic("UploadSize")(UploadSize)
+    if (UploadSize != null) __obj.updateDynamic("UploadSize")(UploadSize.asInstanceOf[js.Any])
     if (UploadStart != null) __obj.updateDynamic("UploadStart")(UploadStart)
     __obj.asInstanceOf[ClientData]
   }

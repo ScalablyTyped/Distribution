@@ -1,6 +1,6 @@
 package typings.angularDashPromiseDashTracker.angularMod
 
-import typings.angularDashPromiseDashTracker.angularMod.promisetrackerNs.PromiseTracker
+import typings.angularDashPromiseDashTracker.angularMod.promisetracker.PromiseTracker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

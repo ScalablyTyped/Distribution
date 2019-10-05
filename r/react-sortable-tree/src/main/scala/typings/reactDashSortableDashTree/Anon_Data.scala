@@ -1,6 +1,8 @@
 package typings.reactDashSortableDashTree
 
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.SearchData
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeIndex
+import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeNode
 import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,14 +20,14 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(
-    getNodeKey: GetNodeKeyFunction,
+    getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
     searchMethod: SearchData => Boolean,
     expandAllMatchPaths: js.UndefOr[Boolean] = js.undefined,
     expandFocusMatchPaths: js.UndefOr[Boolean] = js.undefined,
     searchFocusOffset: Int | Double = null,
     searchQuery: String | Double = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(getNodeKey = getNodeKey, searchMethod = js.Any.fromFunction1(searchMethod))
+    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), searchMethod = js.Any.fromFunction1(searchMethod))
     if (!js.isUndefined(expandAllMatchPaths)) __obj.updateDynamic("expandAllMatchPaths")(expandAllMatchPaths)
     if (!js.isUndefined(expandFocusMatchPaths)) __obj.updateDynamic("expandFocusMatchPaths")(expandFocusMatchPaths)
     if (searchFocusOffset != null) __obj.updateDynamic("searchFocusOffset")(searchFocusOffset.asInstanceOf[js.Any])

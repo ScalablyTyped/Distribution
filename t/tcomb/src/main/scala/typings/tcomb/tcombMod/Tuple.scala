@@ -17,3 +17,10 @@ trait Tuple[T] extends Type[T] {
   def update(instance: T, spec: UpdatePatch): T = js.native
 }
 
+@JSImport("tcomb", "tuple")
+@js.native
+object tuple extends js.Object {
+  def apply[T](types: js.Array[Constructor[_]]): Tuple[T] = js.native
+  def apply[T](types: js.Array[Constructor[_]], name: String): Tuple[T] = js.native
+}
+

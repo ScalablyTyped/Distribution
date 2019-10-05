@@ -34,13 +34,13 @@ object GenerateDataKeyRequest {
     EncryptionContext: EncryptionContextType = null,
     GrantTokens: GrantTokenList = null,
     KeySpec: DataKeySpec = null,
-    NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.undefined
+    NumberOfBytes: Int | Double = null
   ): GenerateDataKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId)
     if (EncryptionContext != null) __obj.updateDynamic("EncryptionContext")(EncryptionContext)
     if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens)
     if (KeySpec != null) __obj.updateDynamic("KeySpec")(KeySpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfBytes)) __obj.updateDynamic("NumberOfBytes")(NumberOfBytes)
+    if (NumberOfBytes != null) __obj.updateDynamic("NumberOfBytes")(NumberOfBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyRequest]
   }
 }

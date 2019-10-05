@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSticky
 
-import typings.semanticDashUiDashSticky.SemanticUINs.Sticky
-import typings.semanticDashUiDashSticky.SemanticUINs.StickySettings
+import typings.semanticDashUiDashSticky.SemanticUI.Sticky
+import typings.semanticDashUiDashSticky.SemanticUI.StickySettings
 import typings.semanticDashUiDashSticky.semanticDashUiDashStickyStrings.destroy
 import typings.semanticDashUiDashSticky.semanticDashUiDashStickyStrings.refresh
 import typings.semanticDashUiDashSticky.semanticDashUiDashStickyStrings.setting

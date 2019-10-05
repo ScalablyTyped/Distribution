@@ -1,9 +1,11 @@
 package typings.grommet.grommetMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsClockMod.ClockProps
 import typings.react.HTMLDivElement
 import typings.react.SVGSVGElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
@@ -26,4 +28,13 @@ class Clock protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet", "Clock")
+@js.native
+object Clock extends TopLevel[
+      ComponentClass[
+        ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
+        ComponentState
+      ]
+    ]
 

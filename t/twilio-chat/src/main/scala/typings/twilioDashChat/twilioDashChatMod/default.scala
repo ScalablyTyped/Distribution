@@ -1,6 +1,6 @@
 package typings.twilioDashChat.twilioDashChatMod
 
-import typings.twilioDashChat.twilioDashChatMod.ClientNs.Options
+import typings.twilioDashChat.twilioDashChatMod.Client.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -36,7 +36,7 @@ object ImageDetail {
   def apply(
     imageDigest: ImageDigest = null,
     imagePushedAt: PushTimestamp = null,
-    imageSizeInBytes: js.UndefOr[ImageSizeInBytes] = js.undefined,
+    imageSizeInBytes: Int | Double = null,
     imageTags: ImageTagList = null,
     registryId: RegistryId = null,
     repositoryName: RepositoryName = null
@@ -44,7 +44,7 @@ object ImageDetail {
     val __obj = js.Dynamic.literal()
     if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest)
     if (imagePushedAt != null) __obj.updateDynamic("imagePushedAt")(imagePushedAt)
-    if (!js.isUndefined(imageSizeInBytes)) __obj.updateDynamic("imageSizeInBytes")(imageSizeInBytes)
+    if (imageSizeInBytes != null) __obj.updateDynamic("imageSizeInBytes")(imageSizeInBytes.asInstanceOf[js.Any])
     if (imageTags != null) __obj.updateDynamic("imageTags")(imageTags)
     if (registryId != null) __obj.updateDynamic("registryId")(registryId)
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)

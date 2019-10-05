@@ -15,12 +15,13 @@ trait TextDocumentEdit extends js.Object {
   var textDocument: VersionedTextDocumentIdentifier
 }
 
-object TextDocumentEdit {
-  @scala.inline
-  def apply(edits: js.Array[TextEdit], textDocument: VersionedTextDocumentIdentifier): TextDocumentEdit = {
-    val __obj = js.Dynamic.literal(edits = edits, textDocument = textDocument)
-  
-    __obj.asInstanceOf[TextDocumentEdit]
-  }
+@JSImport("vscode-languageserver-types", "TextDocumentEdit")
+@js.native
+object TextDocumentEdit extends js.Object {
+  /**
+    * Creates a new `TextDocumentEdit`
+    */
+  def create(textDocument: VersionedTextDocumentIdentifier, edits: js.Array[TextEdit]): TextDocumentEdit = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = js.native
 }
 

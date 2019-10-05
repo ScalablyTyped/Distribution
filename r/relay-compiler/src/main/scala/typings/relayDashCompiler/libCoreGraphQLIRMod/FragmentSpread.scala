@@ -24,11 +24,11 @@ object FragmentSpread {
     directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.FragmentSpread,
     loc: Location,
-    metadata: Metadata,
-    name: String
+    name: String,
+    metadata: Metadata = null
   ): FragmentSpread = {
-    val __obj = js.Dynamic.literal(args = args, directives = directives, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name)
-  
+    val __obj = js.Dynamic.literal(args = args, directives = directives, kind = kind, loc = loc, name = name)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentSpread]
   }
 }

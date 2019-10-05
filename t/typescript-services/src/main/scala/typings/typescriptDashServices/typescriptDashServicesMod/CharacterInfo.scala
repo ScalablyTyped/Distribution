@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CharacterInfo")
 @js.native
 class CharacterInfo ()
-  extends typings.typescriptDashServices.TypeScriptNs.CharacterInfo
+  extends typings.typescriptDashServices.TypeScript.CharacterInfo
 
 /* static members */
 @JSImport("typescript-services", "CharacterInfo")

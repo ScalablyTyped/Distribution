@@ -22,11 +22,11 @@ object GraphQLUnionTypeConfig {
     name: String,
     types: js.Array[GraphQLObjectType],
     description: String = null,
-    resolveType: GraphQLTypeResolveFn = null
+    resolveType: (/* value */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => GraphQLObjectType = null
   ): GraphQLUnionTypeConfig = {
     val __obj = js.Dynamic.literal(name = name, types = types)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
+    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction3(resolveType))
     __obj.asInstanceOf[GraphQLUnionTypeConfig]
   }
 }

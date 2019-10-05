@@ -1,7 +1,7 @@
 package typings.rmcDashPicker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactInstance
 import typings.rmcDashPicker.esPickerTypesMod.IPickerProps
 import scala.scalajs.js

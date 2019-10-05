@@ -1,5 +1,6 @@
 package typings.hystrixjs.hystrixjsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,4 +43,8 @@ trait CommandFactory extends js.Object {
   def getOrCreate_R_CommandBuilderA0[R](commandKey: String, commandGroup: String): CommandBuilderA0[R] = js.native
   def resetCache(): Unit = js.native
 }
+
+@JSImport("hystrixjs", "commandFactory")
+@js.native
+object commandFactory extends TopLevel[CommandFactory]
 

@@ -1,0 +1,199 @@
+package typings.atTypescriptDashEslintTypescriptDashEstree
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@typescript-eslint/typescript-estree/dist/ts-estree", JSImport.Namespace)
+@js.native
+object distTsDashEstreeMod extends js.Object {
+  @js.native
+  object AST_NODE_TYPES extends js.Object {
+    /* "ArrayExpression" */ val ArrayExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ArrayExpression with String = js.native
+    /* "ArrayPattern" */ val ArrayPattern: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ArrayPattern with String = js.native
+    /* "ArrowFunctionExpression" */ val ArrowFunctionExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ArrowFunctionExpression with String = js.native
+    /* "AssignmentExpression" */ val AssignmentExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.AssignmentExpression with String = js.native
+    /* "AssignmentPattern" */ val AssignmentPattern: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.AssignmentPattern with String = js.native
+    /* "AwaitExpression" */ val AwaitExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.AwaitExpression with String = js.native
+    /* "BigIntLiteral" */ val BigIntLiteral: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.BigIntLiteral with String = js.native
+    /* "BinaryExpression" */ val BinaryExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.BinaryExpression with String = js.native
+    /* "BlockStatement" */ val BlockStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.BlockStatement with String = js.native
+    /* "BreakStatement" */ val BreakStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.BreakStatement with String = js.native
+    /* "CallExpression" */ val CallExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.CallExpression with String = js.native
+    /* "CatchClause" */ val CatchClause: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.CatchClause with String = js.native
+    /* "ClassBody" */ val ClassBody: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ClassBody with String = js.native
+    /* "ClassDeclaration" */ val ClassDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ClassDeclaration with String = js.native
+    /* "ClassExpression" */ val ClassExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ClassExpression with String = js.native
+    /* "ClassProperty" */ val ClassProperty: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ClassProperty with String = js.native
+    /* "ConditionalExpression" */ val ConditionalExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ConditionalExpression with String = js.native
+    /* "ContinueStatement" */ val ContinueStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ContinueStatement with String = js.native
+    /* "DebuggerStatement" */ val DebuggerStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.DebuggerStatement with String = js.native
+    /* "Decorator" */ val Decorator: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Decorator with String = js.native
+    /* "DoWhileStatement" */ val DoWhileStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.DoWhileStatement with String = js.native
+    /* "EmptyStatement" */ val EmptyStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.EmptyStatement with String = js.native
+    /* "ExportAllDeclaration" */ val ExportAllDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ExportAllDeclaration with String = js.native
+    /* "ExportDefaultDeclaration" */ val ExportDefaultDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ExportDefaultDeclaration with String = js.native
+    /* "ExportNamedDeclaration" */ val ExportNamedDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ExportNamedDeclaration with String = js.native
+    /* "ExportSpecifier" */ val ExportSpecifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ExportSpecifier with String = js.native
+    /* "ExpressionStatement" */ val ExpressionStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ExpressionStatement with String = js.native
+    /* "ForInStatement" */ val ForInStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ForInStatement with String = js.native
+    /* "ForOfStatement" */ val ForOfStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ForOfStatement with String = js.native
+    /* "ForStatement" */ val ForStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ForStatement with String = js.native
+    /* "FunctionDeclaration" */ val FunctionDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.FunctionDeclaration with String = js.native
+    /* "FunctionExpression" */ val FunctionExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.FunctionExpression with String = js.native
+    /* "Identifier" */ val Identifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Identifier with String = js.native
+    /* "IfStatement" */ val IfStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.IfStatement with String = js.native
+    /* "Import" */ val Import: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Import with String = js.native
+    /* "ImportDeclaration" */ val ImportDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportDeclaration with String = js.native
+    /* "ImportDefaultSpecifier" */ val ImportDefaultSpecifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportDefaultSpecifier with String = js.native
+    /* "ImportNamespaceSpecifier" */ val ImportNamespaceSpecifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportNamespaceSpecifier with String = js.native
+    /* "ImportSpecifier" */ val ImportSpecifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportSpecifier with String = js.native
+    /* "JSXAttribute" */ val JSXAttribute: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXAttribute with String = js.native
+    /* "JSXClosingElement" */ val JSXClosingElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXClosingElement with String = js.native
+    /* "JSXClosingFragment" */ val JSXClosingFragment: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXClosingFragment with String = js.native
+    /* "JSXElement" */ val JSXElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXElement with String = js.native
+    /* "JSXEmptyExpression" */ val JSXEmptyExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXEmptyExpression with String = js.native
+    /* "JSXExpressionContainer" */ val JSXExpressionContainer: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXExpressionContainer with String = js.native
+    /* "JSXFragment" */ val JSXFragment: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXFragment with String = js.native
+    /* "JSXIdentifier" */ val JSXIdentifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXIdentifier with String = js.native
+    /* "JSXMemberExpression" */ val JSXMemberExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXMemberExpression with String = js.native
+    /* "JSXNamespacedName" */ val JSXNamespacedName: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXNamespacedName with String = js.native
+    /* "JSXOpeningElement" */ val JSXOpeningElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXOpeningElement with String = js.native
+    /* "JSXOpeningFragment" */ val JSXOpeningFragment: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXOpeningFragment with String = js.native
+    /* "JSXSpreadAttribute" */ val JSXSpreadAttribute: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXSpreadAttribute with String = js.native
+    /* "JSXSpreadChild" */ val JSXSpreadChild: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXSpreadChild with String = js.native
+    /* "JSXText" */ val JSXText: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.JSXText with String = js.native
+    /* "LabeledStatement" */ val LabeledStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.LabeledStatement with String = js.native
+    /* "Literal" */ val Literal: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Literal with String = js.native
+    /* "LogicalExpression" */ val LogicalExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.LogicalExpression with String = js.native
+    /* "MemberExpression" */ val MemberExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.MemberExpression with String = js.native
+    /* "MetaProperty" */ val MetaProperty: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.MetaProperty with String = js.native
+    /* "MethodDefinition" */ val MethodDefinition: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.MethodDefinition with String = js.native
+    /* "NewExpression" */ val NewExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.NewExpression with String = js.native
+    /* "ObjectExpression" */ val ObjectExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ObjectExpression with String = js.native
+    /* "ObjectPattern" */ val ObjectPattern: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ObjectPattern with String = js.native
+    /* "Program" */ val Program: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Program with String = js.native
+    /* "Property" */ val Property: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Property with String = js.native
+    /* "RestElement" */ val RestElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.RestElement with String = js.native
+    /* "ReturnStatement" */ val ReturnStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ReturnStatement with String = js.native
+    /* "SequenceExpression" */ val SequenceExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.SequenceExpression with String = js.native
+    /* "SpreadElement" */ val SpreadElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.SpreadElement with String = js.native
+    /* "Super" */ val Super: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.Super with String = js.native
+    /* "SwitchCase" */ val SwitchCase: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.SwitchCase with String = js.native
+    /* "SwitchStatement" */ val SwitchStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.SwitchStatement with String = js.native
+    /* "TSAbstractClassProperty" */ val TSAbstractClassProperty: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAbstractClassProperty with String = js.native
+    /* "TSAbstractKeyword" */ val TSAbstractKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAbstractKeyword with String = js.native
+    /* "TSAbstractMethodDefinition" */ val TSAbstractMethodDefinition: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAbstractMethodDefinition with String = js.native
+    /* "TSAnyKeyword" */ val TSAnyKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAnyKeyword with String = js.native
+    /* "TSArrayType" */ val TSArrayType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSArrayType with String = js.native
+    /* "TSAsExpression" */ val TSAsExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAsExpression with String = js.native
+    /* "TSAsyncKeyword" */ val TSAsyncKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSAsyncKeyword with String = js.native
+    /* "TSBigIntKeyword" */ val TSBigIntKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSBigIntKeyword with String = js.native
+    /* "TSBooleanKeyword" */ val TSBooleanKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSBooleanKeyword with String = js.native
+    /* "TSCallSignatureDeclaration" */ val TSCallSignatureDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSCallSignatureDeclaration with String = js.native
+    /* "TSClassImplements" */ val TSClassImplements: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSClassImplements with String = js.native
+    /* "TSConditionalType" */ val TSConditionalType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSConditionalType with String = js.native
+    /* "TSConstructSignatureDeclaration" */ val TSConstructSignatureDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSConstructSignatureDeclaration with String = js.native
+    /* "TSConstructorType" */ val TSConstructorType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSConstructorType with String = js.native
+    /* "TSDeclareFunction" */ val TSDeclareFunction: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSDeclareFunction with String = js.native
+    /* "TSDeclareKeyword" */ val TSDeclareKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSDeclareKeyword with String = js.native
+    /* "TSEmptyBodyFunctionExpression" */ val TSEmptyBodyFunctionExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSEmptyBodyFunctionExpression with String = js.native
+    /* "TSEnumDeclaration" */ val TSEnumDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSEnumDeclaration with String = js.native
+    /* "TSEnumMember" */ val TSEnumMember: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSEnumMember with String = js.native
+    /* "TSExportAssignment" */ val TSExportAssignment: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSExportAssignment with String = js.native
+    /* "TSExportKeyword" */ val TSExportKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSExportKeyword with String = js.native
+    /* "TSExternalModuleReference" */ val TSExternalModuleReference: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSExternalModuleReference with String = js.native
+    /* "TSFunctionType" */ val TSFunctionType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSFunctionType with String = js.native
+    /* "TSImportEqualsDeclaration" */ val TSImportEqualsDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSImportEqualsDeclaration with String = js.native
+    /* "TSImportType" */ val TSImportType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSImportType with String = js.native
+    /* "TSIndexSignature" */ val TSIndexSignature: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSIndexSignature with String = js.native
+    /* "TSIndexedAccessType" */ val TSIndexedAccessType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSIndexedAccessType with String = js.native
+    /* "TSInferType" */ val TSInferType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSInferType with String = js.native
+    /* "TSInterfaceBody" */ val TSInterfaceBody: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSInterfaceBody with String = js.native
+    /* "TSInterfaceDeclaration" */ val TSInterfaceDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSInterfaceDeclaration with String = js.native
+    /* "TSInterfaceHeritage" */ val TSInterfaceHeritage: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSInterfaceHeritage with String = js.native
+    /* "TSIntersectionType" */ val TSIntersectionType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSIntersectionType with String = js.native
+    /* "TSLiteralType" */ val TSLiteralType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSLiteralType with String = js.native
+    /* "TSMappedType" */ val TSMappedType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSMappedType with String = js.native
+    /* "TSMethodSignature" */ val TSMethodSignature: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSMethodSignature with String = js.native
+    /* "TSModuleBlock" */ val TSModuleBlock: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSModuleBlock with String = js.native
+    /* "TSModuleDeclaration" */ val TSModuleDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSModuleDeclaration with String = js.native
+    /* "TSNamespaceExportDeclaration" */ val TSNamespaceExportDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSNamespaceExportDeclaration with String = js.native
+    /* "TSNeverKeyword" */ val TSNeverKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSNeverKeyword with String = js.native
+    /* "TSNonNullExpression" */ val TSNonNullExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSNonNullExpression with String = js.native
+    /* "TSNullKeyword" */ val TSNullKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSNullKeyword with String = js.native
+    /* "TSNumberKeyword" */ val TSNumberKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSNumberKeyword with String = js.native
+    /* "TSObjectKeyword" */ val TSObjectKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSObjectKeyword with String = js.native
+    /* "TSOptionalType" */ val TSOptionalType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSOptionalType with String = js.native
+    /* "TSParameterProperty" */ val TSParameterProperty: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSParameterProperty with String = js.native
+    /* "TSParenthesizedType" */ val TSParenthesizedType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSParenthesizedType with String = js.native
+    /* "TSPrivateKeyword" */ val TSPrivateKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSPrivateKeyword with String = js.native
+    /* "TSPropertySignature" */ val TSPropertySignature: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSPropertySignature with String = js.native
+    /* "TSProtectedKeyword" */ val TSProtectedKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSProtectedKeyword with String = js.native
+    /* "TSPublicKeyword" */ val TSPublicKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSPublicKeyword with String = js.native
+    /* "TSQualifiedName" */ val TSQualifiedName: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSQualifiedName with String = js.native
+    /* "TSQuestionToken" */ val TSQuestionToken: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSQuestionToken with String = js.native
+    /* "TSReadonlyKeyword" */ val TSReadonlyKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSReadonlyKeyword with String = js.native
+    /* "TSRestType" */ val TSRestType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSRestType with String = js.native
+    /* "TSStaticKeyword" */ val TSStaticKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSStaticKeyword with String = js.native
+    /* "TSStringKeyword" */ val TSStringKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSStringKeyword with String = js.native
+    /* "TSSymbolKeyword" */ val TSSymbolKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSSymbolKeyword with String = js.native
+    /* "TSThisType" */ val TSThisType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSThisType with String = js.native
+    /* "TSTupleType" */ val TSTupleType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTupleType with String = js.native
+    /* "TSTypeAliasDeclaration" */ val TSTypeAliasDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeAliasDeclaration with String = js.native
+    /* "TSTypeAnnotation" */ val TSTypeAnnotation: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeAnnotation with String = js.native
+    /* "TSTypeAssertion" */ val TSTypeAssertion: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeAssertion with String = js.native
+    /* "TSTypeLiteral" */ val TSTypeLiteral: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeLiteral with String = js.native
+    /* "TSTypeOperator" */ val TSTypeOperator: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeOperator with String = js.native
+    /* "TSTypeParameter" */ val TSTypeParameter: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeParameter with String = js.native
+    /* "TSTypeParameterDeclaration" */ val TSTypeParameterDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeParameterDeclaration with String = js.native
+    /* "TSTypeParameterInstantiation" */ val TSTypeParameterInstantiation: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeParameterInstantiation with String = js.native
+    /* "TSTypePredicate" */ val TSTypePredicate: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypePredicate with String = js.native
+    /* "TSTypeQuery" */ val TSTypeQuery: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeQuery with String = js.native
+    /* "TSTypeReference" */ val TSTypeReference: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeReference with String = js.native
+    /* "TSUndefinedKeyword" */ val TSUndefinedKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSUndefinedKeyword with String = js.native
+    /* "TSUnionType" */ val TSUnionType: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSUnionType with String = js.native
+    /* "TSUnknownKeyword" */ val TSUnknownKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSUnknownKeyword with String = js.native
+    /* "TSVoidKeyword" */ val TSVoidKeyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSVoidKeyword with String = js.native
+    /* "TaggedTemplateExpression" */ val TaggedTemplateExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TaggedTemplateExpression with String = js.native
+    /* "TemplateElement" */ val TemplateElement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TemplateElement with String = js.native
+    /* "TemplateLiteral" */ val TemplateLiteral: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TemplateLiteral with String = js.native
+    /* "ThisExpression" */ val ThisExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ThisExpression with String = js.native
+    /* "ThrowStatement" */ val ThrowStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ThrowStatement with String = js.native
+    /* "TryStatement" */ val TryStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TryStatement with String = js.native
+    /* "UnaryExpression" */ val UnaryExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.UnaryExpression with String = js.native
+    /* "UpdateExpression" */ val UpdateExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.UpdateExpression with String = js.native
+    /* "VariableDeclaration" */ val VariableDeclaration: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.VariableDeclaration with String = js.native
+    /* "VariableDeclarator" */ val VariableDeclarator: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.VariableDeclarator with String = js.native
+    /* "WhileStatement" */ val WhileStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.WhileStatement with String = js.native
+    /* "WithStatement" */ val WithStatement: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.WithStatement with String = js.native
+    /* "YieldExpression" */ val YieldExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.YieldExpression with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES with String
+      ] = js.native
+  }
+  
+  @js.native
+  object AST_TOKEN_TYPES extends js.Object {
+    /* "Block" */ val Block: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Block with java.lang.String = js.native
+    /* "Boolean" */ val Boolean: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Boolean with java.lang.String = js.native
+    /* "Identifier" */ val Identifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Identifier with java.lang.String = js.native
+    /* "JSXIdentifier" */ val JSXIdentifier: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.JSXIdentifier with java.lang.String = js.native
+    /* "JSXText" */ val JSXText: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.JSXText with java.lang.String = js.native
+    /* "Keyword" */ val Keyword: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Keyword with java.lang.String = js.native
+    /* "Line" */ val Line: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Line with java.lang.String = js.native
+    /* "Null" */ val Null: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Null with java.lang.String = js.native
+    /* "Numeric" */ val Numeric: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Numeric with java.lang.String = js.native
+    /* "Punctuator" */ val Punctuator: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Punctuator with java.lang.String = js.native
+    /* "RegularExpression" */ val RegularExpression: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.RegularExpression with java.lang.String = js.native
+    /* "String" */ val String: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.String with java.lang.String = js.native
+    /* "Template" */ val Template: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES.Template with java.lang.String = js.native
+    @JSBracketAccess
+    def apply(value: java.lang.String): js.UndefOr[
+        typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_TOKEN_TYPES with java.lang.String
+      ] = js.native
+  }
+  
+}
+

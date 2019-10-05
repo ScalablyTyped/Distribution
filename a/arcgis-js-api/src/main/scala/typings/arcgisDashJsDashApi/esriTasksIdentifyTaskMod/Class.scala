@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksIdentifyTaskMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IdentifyTask
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IdentifyTaskProperties
+import typings.arcgisDashJsDashApi.__esri.IdentifyTask
+import typings.arcgisDashJsDashApi.__esri.IdentifyTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

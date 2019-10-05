@@ -5,10 +5,10 @@ import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDash
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
-import typings.vitalsigns.vitalsignsMod.vitalsignsNs.ConstraintWrapper
-import typings.vitalsigns.vitalsignsMod.vitalsignsNs.Monitor
-import typings.vitalsigns.vitalsignsMod.vitalsignsNs.MonitorField
-import typings.vitalsigns.vitalsignsMod.vitalsignsNs.ReportOptions
+import typings.vitalsigns.vitalsignsMod.vitalsigns.ConstraintWrapper
+import typings.vitalsigns.vitalsignsMod.vitalsigns.Monitor
+import typings.vitalsigns.vitalsignsMod.vitalsigns.MonitorField
+import typings.vitalsigns.vitalsignsMod.vitalsigns.ReportOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

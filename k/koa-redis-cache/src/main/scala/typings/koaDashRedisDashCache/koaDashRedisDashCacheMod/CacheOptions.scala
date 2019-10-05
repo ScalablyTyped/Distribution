@@ -1,5 +1,6 @@
 package typings.koaDashRedisDashCache.koaDashRedisDashCacheMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +51,7 @@ object CacheOptions {
     exclude: js.Array[String] = null,
     expire: Int | Double = null,
     maxLength: Int | Double = null,
-    onerror: onErrorCallback = null,
+    onerror: /* error */ Error => Unit = null,
     passParam: String = null,
     prefix: String | getPrefixCallback = null,
     redis: RedisOptions = null,
@@ -60,7 +61,7 @@ object CacheOptions {
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (passParam != null) __obj.updateDynamic("passParam")(passParam)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis)

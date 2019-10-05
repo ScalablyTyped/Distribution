@@ -17,7 +17,7 @@ trait ResolvedTargets extends js.Object {
 
 object ResolvedTargets {
   @scala.inline
-  def apply(ParameterValues: TargetParameterList = null, Truncated: js.UndefOr[Boolean] = js.undefined): ResolvedTargets = {
+  def apply(ParameterValues: TargetParameterList = null, Truncated: js.UndefOr[scala.Boolean] = js.undefined): ResolvedTargets = {
     val __obj = js.Dynamic.literal()
     if (ParameterValues != null) __obj.updateDynamic("ParameterValues")(ParameterValues)
     if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated)

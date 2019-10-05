@@ -29,7 +29,7 @@ object RestoreTableToPointInTimeInput {
     SourceTableName: TableName,
     TargetTableName: TableName,
     RestoreDateTime: _Date = null,
-    UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.undefined
+    UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
   ): RestoreTableToPointInTimeInput = {
     val __obj = js.Dynamic.literal(SourceTableName = SourceTableName, TargetTableName = TargetTableName)
     if (RestoreDateTime != null) __obj.updateDynamic("RestoreDateTime")(RestoreDateTime)

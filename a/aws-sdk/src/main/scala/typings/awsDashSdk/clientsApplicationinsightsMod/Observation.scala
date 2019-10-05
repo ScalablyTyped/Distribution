@@ -74,7 +74,7 @@ object Observation {
     SourceType: SourceType = null,
     StartTime: StartTime = null,
     Unit: Unit = null,
-    Value: js.UndefOr[Value] = js.undefined
+    Value: Int | Double = null
   ): Observation = {
     val __obj = js.Dynamic.literal()
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
@@ -89,7 +89,7 @@ object Observation {
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observation]
   }
 }

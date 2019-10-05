@@ -19,5 +19,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Model")
 @js.native
 class Model ()
-  extends typings.playcanvas.pcNs.Model
+  extends typings.playcanvas.pc.Model
 

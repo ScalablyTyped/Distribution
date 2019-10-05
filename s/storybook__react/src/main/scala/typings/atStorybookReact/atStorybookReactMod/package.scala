@@ -8,7 +8,7 @@ package object atStorybookReactMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.atStorybookReact.Anon_Kind
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
 
   type DecoratorParameters = StringDictionary[js.Any]
   type RenderFunction = js.Function0[Renderable | js.Array[Renderable]]

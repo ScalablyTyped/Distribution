@@ -1,9 +1,13 @@
 package typings.reactDashVirtualized
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndices
 import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetter
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetterParams
+import typings.reactDashVirtualized.distEsListMod.ListRowProps
 import typings.reactDashVirtualized.distEsListMod.ListRowRenderer
 import typings.reactDashVirtualized.distEsScrollSyncMod.OnScrollParams
 import typings.reactDashVirtualized.reactDashVirtualizedMod.Index
@@ -76,7 +80,7 @@ object Anon_AutoHeight {
     height: Double,
     rowCount: Double,
     rowHeight: Double | (js.Function1[/* info */ Index, Double]),
-    rowRenderer: ListRowRenderer,
+    rowRenderer: /* props */ ListRowProps => ReactNode,
     width: Double,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -85,7 +89,7 @@ object Anon_AutoHeight {
     noRowsRenderer: () => Element = null,
     onRowsRendered: /* info */ Anon_OverscanStartIndex => Unit = null,
     onScroll: /* params */ OnScrollParams => Unit = null,
-    overscanIndicesGetter: OverscanIndicesGetter = null,
+    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices = null,
     overscanRowCount: Int | Double = null,
     scrollToAlignment: String = null,
     scrollToIndex: Int | Double = null,
@@ -93,7 +97,7 @@ object Anon_AutoHeight {
     style: CSSProperties = null,
     tabIndex: Int | Double = null
   ): Anon_AutoHeight = {
-    val __obj = js.Dynamic.literal(height = height, rowCount = rowCount, rowHeight = rowHeight.asInstanceOf[js.Any], rowRenderer = rowRenderer, width = width)
+    val __obj = js.Dynamic.literal(height = height, rowCount = rowCount, rowHeight = rowHeight.asInstanceOf[js.Any], rowRenderer = js.Any.fromFunction1(rowRenderer), width = width)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (className != null) __obj.updateDynamic("className")(className)
     if (deferredMeasurementCache != null) __obj.updateDynamic("deferredMeasurementCache")(deferredMeasurementCache)
@@ -101,7 +105,7 @@ object Anon_AutoHeight {
     if (noRowsRenderer != null) __obj.updateDynamic("noRowsRenderer")(js.Any.fromFunction0(noRowsRenderer))
     if (onRowsRendered != null) __obj.updateDynamic("onRowsRendered")(js.Any.fromFunction1(onRowsRendered))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(overscanIndicesGetter)
+    if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(js.Any.fromFunction1(overscanIndicesGetter))
     if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
     if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment)
     if (scrollToIndex != null) __obj.updateDynamic("scrollToIndex")(scrollToIndex.asInstanceOf[js.Any])

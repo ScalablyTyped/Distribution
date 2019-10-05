@@ -66,12 +66,12 @@ object UserImportJobType {
     CompletionDate: DateType = null,
     CompletionMessage: CompletionMessageType = null,
     CreationDate: DateType = null,
-    FailedUsers: js.UndefOr[LongType] = js.undefined,
-    ImportedUsers: js.UndefOr[LongType] = js.undefined,
+    FailedUsers: Int | Double = null,
+    ImportedUsers: Int | Double = null,
     JobId: UserImportJobIdType = null,
     JobName: UserImportJobNameType = null,
     PreSignedUrl: PreSignedUrlType = null,
-    SkippedUsers: js.UndefOr[LongType] = js.undefined,
+    SkippedUsers: Int | Double = null,
     StartDate: DateType = null,
     Status: UserImportJobStatusType = null,
     UserPoolId: UserPoolIdType = null
@@ -81,12 +81,12 @@ object UserImportJobType {
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate)
     if (CompletionMessage != null) __obj.updateDynamic("CompletionMessage")(CompletionMessage)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (!js.isUndefined(FailedUsers)) __obj.updateDynamic("FailedUsers")(FailedUsers)
-    if (!js.isUndefined(ImportedUsers)) __obj.updateDynamic("ImportedUsers")(ImportedUsers)
+    if (FailedUsers != null) __obj.updateDynamic("FailedUsers")(FailedUsers.asInstanceOf[js.Any])
+    if (ImportedUsers != null) __obj.updateDynamic("ImportedUsers")(ImportedUsers.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId)
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl)
-    if (!js.isUndefined(SkippedUsers)) __obj.updateDynamic("SkippedUsers")(SkippedUsers)
+    if (SkippedUsers != null) __obj.updateDynamic("SkippedUsers")(SkippedUsers.asInstanceOf[js.Any])
     if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId)

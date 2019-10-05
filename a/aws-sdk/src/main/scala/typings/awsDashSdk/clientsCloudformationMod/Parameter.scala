@@ -29,7 +29,7 @@ object Parameter {
     ParameterKey: ParameterKey = null,
     ParameterValue: ParameterValue = null,
     ResolvedValue: ParameterValue = null,
-    UsePreviousValue: js.UndefOr[UsePreviousValue] = js.undefined
+    UsePreviousValue: js.UndefOr[Boolean] = js.undefined
   ): Parameter = {
     val __obj = js.Dynamic.literal()
     if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey)

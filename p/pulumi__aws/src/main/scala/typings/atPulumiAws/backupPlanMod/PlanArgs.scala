@@ -1,7 +1,7 @@
 package typings.atPulumiAws.backupPlanMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.backupNs.PlanRule
+import typings.atPulumiAws.typesInputMod.backup.PlanRule
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

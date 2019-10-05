@@ -1,6 +1,6 @@
 package typings.monacoDashEditor
 
-import typings.monacoDashEditor.monacoDashEditorMod.editorNs.ITextModel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.ITextModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

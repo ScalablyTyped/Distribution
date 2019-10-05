@@ -1,5 +1,6 @@
 package typings.reapop.reapopMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reapop.ADD_NOTIFICATION
 import typings.reapop.REMOVE_NOTIFICATION
 import typings.reapop.REMOVE_NOTIFICATIONS
@@ -28,4 +29,8 @@ object Types {
     __obj.asInstanceOf[Types]
   }
 }
+
+@JSImport("reapop", "types")
+@js.native
+object types extends TopLevel[Types]
 

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2SecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.SecurityGroupEgress
-import typings.atPulumiAws.typesInputMod.ec2Ns.SecurityGroupIngress
+import typings.atPulumiAws.typesInputMod.ec2.SecurityGroupEgress
+import typings.atPulumiAws.typesInputMod.ec2.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -112,8 +112,8 @@ object TrainingJob {
   def apply(
     AlgorithmSpecification: AlgorithmSpecification = null,
     CreationTime: Timestamp = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
     FailureReason: FailureReason = null,
     FinalMetricDataList: FinalMetricDataList = null,
     HyperParameters: HyperParameters = null,

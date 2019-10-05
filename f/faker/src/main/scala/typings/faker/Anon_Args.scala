@@ -1,10 +1,10 @@
 package typings.faker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.faker.FakerNs.Card
-import typings.faker.FakerNs.ContextualCard
-import typings.faker.FakerNs.Transaction
-import typings.faker.FakerNs.UserCard
+import typings.faker.Faker.Card
+import typings.faker.Faker.ContextualCard
+import typings.faker.Faker.Transaction
+import typings.faker.Faker.UserCard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

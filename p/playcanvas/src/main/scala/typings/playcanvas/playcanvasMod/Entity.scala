@@ -68,8 +68,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Entity")
 @js.native
 class Entity ()
-  extends typings.playcanvas.pcNs.Entity {
+  extends typings.playcanvas.pc.Entity {
   def this(name: String) = this()
-  def this(name: String, app: typings.playcanvas.pcNs.Application) = this()
+  def this(name: String, app: typings.playcanvas.pc.Application) = this()
 }
 

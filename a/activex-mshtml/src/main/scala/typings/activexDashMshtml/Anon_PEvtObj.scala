@@ -1,6 +1,6 @@
 package typings.activexDashMshtml
 
-import typings.activexDashMshtml.MSHTMLNs.IHTMLEventObj
+import typings.activexDashMshtml.MSHTML.IHTMLEventObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,26 +10,5 @@ trait SVGAnimateElement extends SVGAnimationElement
 
 @JSGlobal("SVGAnimateElement")
 @js.native
-class SVGAnimateElementCls () extends SVGAnimateElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-}
-
-@JSGlobal("SVGAnimateElement")
-@js.native
 object SVGAnimateElement extends Instantiable0[SVGAnimateElement]
 

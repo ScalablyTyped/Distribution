@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashTransition
 
-import typings.semanticDashUiDashTransition.SemanticUINs.Transition
-import typings.semanticDashUiDashTransition.SemanticUINs.TransitionSettings
+import typings.semanticDashUiDashTransition.SemanticUI.Transition
+import typings.semanticDashUiDashTransition.SemanticUI.TransitionSettings
 import typings.semanticDashUiDashTransition.semanticDashUiDashTransitionStrings.`clear queue`
 import typings.semanticDashUiDashTransition.semanticDashUiDashTransitionStrings.`force repaint`
 import typings.semanticDashUiDashTransition.semanticDashUiDashTransitionStrings.`get animation event`

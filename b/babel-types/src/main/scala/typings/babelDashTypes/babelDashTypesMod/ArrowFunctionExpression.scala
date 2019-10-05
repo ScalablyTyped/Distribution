@@ -54,3 +54,14 @@ object ArrowFunctionExpression {
   }
 }
 
+@JSImport("babel-types", "arrowFunctionExpression")
+@js.native
+object arrowFunctionExpression extends js.Object {
+  def apply(): ArrowFunctionExpression = js.native
+  def apply(params: js.Array[LVal]): ArrowFunctionExpression = js.native
+  def apply(params: js.Array[LVal], body: BlockStatement): ArrowFunctionExpression = js.native
+  def apply(params: js.Array[LVal], body: BlockStatement, async: Boolean): ArrowFunctionExpression = js.native
+  def apply(params: js.Array[LVal], body: Expression): ArrowFunctionExpression = js.native
+  def apply(params: js.Array[LVal], body: Expression, async: Boolean): ArrowFunctionExpression = js.native
+}
+

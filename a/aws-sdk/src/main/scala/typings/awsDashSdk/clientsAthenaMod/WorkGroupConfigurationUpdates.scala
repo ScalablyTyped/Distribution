@@ -34,15 +34,15 @@ trait WorkGroupConfigurationUpdates extends js.Object {
 object WorkGroupConfigurationUpdates {
   @scala.inline
   def apply(
-    BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined,
-    EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
-    PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
-    RemoveBytesScannedCutoffPerQuery: js.UndefOr[BoxedBoolean] = js.undefined,
-    RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
+    BytesScannedCutoffPerQuery: Int | Double = null,
+    EnforceWorkGroupConfiguration: js.UndefOr[scala.Boolean] = js.undefined,
+    PublishCloudWatchMetricsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    RemoveBytesScannedCutoffPerQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    RequesterPaysEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ResultConfigurationUpdates: ResultConfigurationUpdates = null
   ): WorkGroupConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesScannedCutoffPerQuery)) __obj.updateDynamic("BytesScannedCutoffPerQuery")(BytesScannedCutoffPerQuery)
+    if (BytesScannedCutoffPerQuery != null) __obj.updateDynamic("BytesScannedCutoffPerQuery")(BytesScannedCutoffPerQuery.asInstanceOf[js.Any])
     if (!js.isUndefined(EnforceWorkGroupConfiguration)) __obj.updateDynamic("EnforceWorkGroupConfiguration")(EnforceWorkGroupConfiguration)
     if (!js.isUndefined(PublishCloudWatchMetricsEnabled)) __obj.updateDynamic("PublishCloudWatchMetricsEnabled")(PublishCloudWatchMetricsEnabled)
     if (!js.isUndefined(RemoveBytesScannedCutoffPerQuery)) __obj.updateDynamic("RemoveBytesScannedCutoffPerQuery")(RemoveBytesScannedCutoffPerQuery)

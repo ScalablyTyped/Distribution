@@ -13,7 +13,7 @@ trait RejectVpcPeeringConnectionResult extends js.Object {
 
 object RejectVpcPeeringConnectionResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): RejectVpcPeeringConnectionResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): RejectVpcPeeringConnectionResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[RejectVpcPeeringConnectionResult]

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryHeightModelInfoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeightModelInfoConstructor
+import typings.arcgisDashJsDashApi.__esri.HeightModelInfoConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

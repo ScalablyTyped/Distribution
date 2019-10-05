@@ -1,7 +1,7 @@
 package typings.meteor.serverDashRenderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`

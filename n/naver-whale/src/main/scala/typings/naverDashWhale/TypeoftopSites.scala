@@ -1,7 +1,7 @@
 package typings.naverDashWhale
 
-import typings.naverDashWhale.whaleNs.topSitesNs.MostVisitedURL
-import typings.naverDashWhale.whaleNs.topSitesNs.MostVisitedURL2
+import typings.naverDashWhale.whale.topSites.MostVisitedURL
+import typings.naverDashWhale.whale.topSites.MostVisitedURL2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

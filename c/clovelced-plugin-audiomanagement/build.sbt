@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "clovelced-plugin-audiomanagement"
-version := "1.0-dt-20190116Z-f0c1a2"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20190116Z-f7d20d"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

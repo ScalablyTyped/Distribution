@@ -18,9 +18,5 @@ trait HTMLFormControlsCollection extends HTMLCollectionBase {
 
 @JSGlobal("HTMLFormControlsCollection")
 @js.native
-class HTMLFormControlsCollectionCls () extends HTMLFormControlsCollection
-
-@JSGlobal("HTMLFormControlsCollection")
-@js.native
 object HTMLFormControlsCollection extends Instantiable0[HTMLFormControlsCollection]
 

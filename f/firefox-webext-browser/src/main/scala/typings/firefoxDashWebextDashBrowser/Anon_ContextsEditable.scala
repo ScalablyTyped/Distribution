@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionNs.ViewType
-import typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+import typings.firefoxDashWebextDashBrowser.browser.extension.ViewType
+import typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

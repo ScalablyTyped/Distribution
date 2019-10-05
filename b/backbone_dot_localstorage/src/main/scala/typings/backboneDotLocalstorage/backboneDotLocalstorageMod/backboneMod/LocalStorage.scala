@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("backbone.localstorage/backbone", "LocalStorage")
+@JSImport("backbone", "LocalStorage")
 @js.native
 class LocalStorage protected () extends js.Object {
   def this(name: String) = this()

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.rdsNs.InstanceS3Import
+import typings.atPulumiAws.typesOutputMod.rds.InstanceS3Import
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

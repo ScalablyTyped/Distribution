@@ -1,13 +1,13 @@
 package typings.videoDotJs.videoDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoDotJs.videoDotJsMod.videojsNs.Child
-import typings.videoDotJs.videoDotJsMod.videojsNs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojsNs.ControlBarOptions
-import typings.videoDotJs.videoDotJsMod.videojsNs.LanguageTranslations
-import typings.videoDotJs.videoDotJsMod.videojsNs.TechNs.SourceObject
-import typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackOptions
-import typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackSettingsOptions
+import typings.videoDotJs.videoDotJsMod.videojs.Child
+import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
+import typings.videoDotJs.videoDotJsMod.videojs.ControlBarOptions
+import typings.videoDotJs.videoDotJsMod.videojs.LanguageTranslations
+import typings.videoDotJs.videoDotJsMod.videojs.Tech.SourceObject
+import typings.videoDotJs.videoDotJsMod.videojs.TextTrackOptions
+import typings.videoDotJs.videoDotJsMod.videojs.TextTrackSettingsOptions
 import typings.videoDotJs.videoDotJsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

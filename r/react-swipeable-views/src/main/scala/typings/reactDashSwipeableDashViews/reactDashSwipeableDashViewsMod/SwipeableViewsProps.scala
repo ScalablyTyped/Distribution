@@ -45,9 +45,9 @@ object SwipeableViewsProps {
     hysteresis: Int | Double = null,
     ignoreNativeScroll: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
-    onChangeIndex: OnChangeIndexCallback = null,
-    onSwitching: OnSwitchingCallback = null,
-    onTransitionEnd: OnTransitionEndCallback = null,
+    onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit = null,
+    onSwitching: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit = null,
+    onTransitionEnd: () => Unit = null,
     resistance: js.UndefOr[Boolean] = js.undefined,
     slideClassName: String = null,
     slideStyle: CSSProperties = null,
@@ -67,9 +67,9 @@ object SwipeableViewsProps {
     if (hysteresis != null) __obj.updateDynamic("hysteresis")(hysteresis.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreNativeScroll)) __obj.updateDynamic("ignoreNativeScroll")(ignoreNativeScroll)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (onChangeIndex != null) __obj.updateDynamic("onChangeIndex")(onChangeIndex)
-    if (onSwitching != null) __obj.updateDynamic("onSwitching")(onSwitching)
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
+    if (onChangeIndex != null) __obj.updateDynamic("onChangeIndex")(js.Any.fromFunction2(onChangeIndex))
+    if (onSwitching != null) __obj.updateDynamic("onSwitching")(js.Any.fromFunction2(onSwitching))
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
     if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance)
     if (slideClassName != null) __obj.updateDynamic("slideClassName")(slideClassName)
     if (slideStyle != null) __obj.updateDynamic("slideStyle")(slideStyle)

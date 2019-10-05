@@ -1,5 +1,6 @@
 package typings.abstractDashLeveldown.abstractDashLeveldownMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,5 @@ trait AbstractChainedBatch[K, V] extends AbstractOptions {
 
 @JSImport("abstract-leveldown", "AbstractChainedBatch")
 @js.native
-class AbstractChainedBatchCls[K, V] protected () extends AbstractChainedBatch[K, V] {
-  // tslint:disable-next-line no-unnecessary-generics
-  def this(db: js.Any) = this()
-}
+object AbstractChainedBatch extends TopLevel[AbstractChainedBatchConstructor]
 

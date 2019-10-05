@@ -1,6 +1,6 @@
 package typings.nodeDashRal.nodeDashRalMod
 
-import typings.nodeDashRal.nodeDashRalMod.BalanceNs.BalanceContextClass
+import typings.nodeDashRal.nodeDashRalMod.Balance.BalanceContextClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,15 @@ abstract class Balance () extends js.Object {
 @JSImport("node-ral", "Balance")
 @js.native
 object Balance extends js.Object {
+  @js.native
+  class BalanceContextClass protected () extends js.Object {
+    def this(serviceID: String, service: Service) = this()
+    var crossIDCServers: js.Array[String] = js.native
+    var currentIDC: String = js.native
+    var reqIDCServers: js.Array[String] = js.native
+    var serviceID: String = js.native
+  }
+  
   var BalanceContext: BalanceContextConstructor = js.native
 }
 

@@ -43,3 +43,13 @@ object JSXFragment {
   }
 }
 
+@JSImport("@babel/types", "jsxFragment")
+@js.native
+object jsxFragment extends js.Object {
+  def apply(
+    openingFragment: JSXOpeningFragment,
+    closingFragment: JSXClosingFragment,
+    children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]
+  ): JSXFragment = js.native
+}
+

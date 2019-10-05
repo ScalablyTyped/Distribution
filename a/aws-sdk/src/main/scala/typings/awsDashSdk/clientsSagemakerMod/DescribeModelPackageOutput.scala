@@ -55,7 +55,7 @@ object DescribeModelPackageOutput {
     ModelPackageName: EntityName,
     ModelPackageStatus: ModelPackageStatus,
     ModelPackageStatusDetails: ModelPackageStatusDetails,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ModelPackageDescription: EntityDescription = null,
     SourceAlgorithmSpecification: SourceAlgorithmSpecification = null,

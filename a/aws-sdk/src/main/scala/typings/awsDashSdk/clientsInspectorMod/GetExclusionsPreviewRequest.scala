@@ -33,12 +33,12 @@ object GetExclusionsPreviewRequest {
     assessmentTemplateArn: Arn,
     previewToken: UUID,
     locale: Locale = null,
-    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: PaginationToken = null
   ): GetExclusionsPreviewRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn, previewToken = previewToken)
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetExclusionsPreviewRequest]
   }

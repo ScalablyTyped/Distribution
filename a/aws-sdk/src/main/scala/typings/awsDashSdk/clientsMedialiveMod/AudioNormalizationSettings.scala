@@ -24,12 +24,12 @@ object AudioNormalizationSettings {
   def apply(
     Algorithm: AudioNormalizationAlgorithm = null,
     AlgorithmControl: AudioNormalizationAlgorithmControl = null,
-    TargetLkfs: js.UndefOr[__doubleMinNegative59Max0] = js.undefined
+    TargetLkfs: Int | Double = null
   ): AudioNormalizationSettings = {
     val __obj = js.Dynamic.literal()
     if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
     if (AlgorithmControl != null) __obj.updateDynamic("AlgorithmControl")(AlgorithmControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetLkfs)) __obj.updateDynamic("TargetLkfs")(TargetLkfs)
+    if (TargetLkfs != null) __obj.updateDynamic("TargetLkfs")(TargetLkfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioNormalizationSettings]
   }
 }

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.backupPlanMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.backupNs.PlanRule
+import typings.atPulumiAws.typesOutputMod.backup.PlanRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

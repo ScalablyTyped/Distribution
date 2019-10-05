@@ -1,6 +1,9 @@
 package typings.arangodb.atArangodbFoxxGraphqlMod
 
+import typings.graphql.errorFormatErrorMod.GraphQLFormattedError
+import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import typings.graphql.graphqlMod.GraphQLSchema
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +24,7 @@ object GraphQLOptions {
   def apply(
     schema: GraphQLSchema,
     context: js.Any = null,
-    formatError: GraphQLFormatErrorFunction = null,
+    formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, js.Any]] = null,
     graphiql: js.UndefOr[Boolean] = js.undefined,
     graphql: GraphQLModule = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
@@ -30,7 +33,7 @@ object GraphQLOptions {
   ): GraphQLOptions = {
     val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
-    if (formatError != null) __obj.updateDynamic("formatError")(formatError)
+    if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
     if (graphql != null) __obj.updateDynamic("graphql")(graphql)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalByteMatchSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.ByteMatchSetByteMatchTuple
+import typings.atPulumiAws.typesOutputMod.wafregional.ByteMatchSetByteMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

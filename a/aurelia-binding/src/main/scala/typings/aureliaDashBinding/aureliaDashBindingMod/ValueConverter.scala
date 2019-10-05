@@ -14,3 +14,9 @@ class ValueConverter protected () extends Expression {
   var name: String = js.native
 }
 
+@JSImport("aurelia-binding", "valueConverter")
+@js.native
+object valueConverter extends js.Object {
+  def apply(name: String): js.Any = js.native
+}
+

@@ -35,3 +35,11 @@ object ImportSpecifier {
   }
 }
 
+@JSImport("babel-types", "importSpecifier")
+@js.native
+object importSpecifier extends js.Object {
+  def apply(): ImportSpecifier = js.native
+  def apply(local: Identifier): ImportSpecifier = js.native
+  def apply(local: Identifier, imported: Identifier): ImportSpecifier = js.native
+}
+

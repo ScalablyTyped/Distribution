@@ -2,6 +2,7 @@ package typings.stompit.libConnectMod
 
 import typings.node.netMod.IpcNetConnectOpts
 import typings.node.netMod.Socket
+import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
 import typings.stompit.stompitNumbers.`false`
@@ -29,7 +30,7 @@ object NetIpcConnectOptions {
     heartbeat: Heartbeat = null,
     heartbeatDelayMargin: Int | Double = null,
     heartbeatOutputMargin: Int | Double = null,
-    outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
+    outgoingFrameStream: ^ = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
     ssl: `false` = null,

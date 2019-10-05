@@ -10,8 +10,12 @@ import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
 import typings.reactDashNative.reactDashNativeMod.BackgroundPropType
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNative.reactDashNativeMod.Insets
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
+import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
+import typings.reactDashNative.reactDashNativeMod.TargetedEvent
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNative.reactDashNativeStrings.`no-hide-descendants`
@@ -100,8 +104,14 @@ object IconProps {
     borderRadius: Int | Double = null,
     color: String = null,
     containerStyle: StyleProp[ViewStyle] = null,
+    delayLongPress: Int | Double = null,
+    delayPressIn: Int | Double = null,
+    delayPressOut: Int | Double = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     disabledStyle: StyleProp[ViewStyle] = null,
     ellipsizeMode: head | middle | tail | clip = null,
+    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
+    hitSlop: Insets = null,
     iconStyle: TextStyle = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     lineBreakMode: head | middle | tail | clip = null,
@@ -111,12 +121,17 @@ object IconProps {
     numberOfLines: Int | Double = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
     onHideUnderlay: () => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMagicTap: () => Unit = null,
     onPress: /* event */ GestureResponderEvent => Unit = null,
+    onPressIn: /* event */ GestureResponderEvent => Unit = null,
+    onPressOut: /* event */ GestureResponderEvent => Unit = null,
     onShowUnderlay: () => Unit = null,
+    pressRetentionOffset: Insets = null,
     raised: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
     reverseColor: String = null,
@@ -128,6 +143,7 @@ object IconProps {
     suppressHighlighting: js.UndefOr[Boolean] = js.undefined,
     testID: String = null,
     textBreakStrategy: simple | highQuality | balanced = null,
+    tvParallaxProperties: TVParallaxProperties = null,
     `type`: IconType = null,
     underlayColor: String = null,
     useForeground: js.UndefOr[Boolean] = js.undefined
@@ -155,8 +171,14 @@ object IconProps {
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
+    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
+    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
     if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
+    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
@@ -166,12 +188,17 @@ object IconProps {
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onHideUnderlay != null) __obj.updateDynamic("onHideUnderlay")(js.Any.fromFunction0(onHideUnderlay))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (onShowUnderlay != null) __obj.updateDynamic("onShowUnderlay")(js.Any.fromFunction0(onShowUnderlay))
+    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
     if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (reverseColor != null) __obj.updateDynamic("reverseColor")(reverseColor)
@@ -183,6 +210,7 @@ object IconProps {
     if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting)
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
     if (!js.isUndefined(useForeground)) __obj.updateDynamic("useForeground")(useForeground)

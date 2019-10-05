@@ -1,6 +1,6 @@
 package typings.jqueryDashGalleria
 
-import typings.jqueryDashGalleria.GalleriaJSNs.GalleriaFactory
+import typings.jqueryDashGalleria.GalleriaJS.GalleriaFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDirectLineMeasurement3DDirectLineMeasurement3DViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectLineMeasurement3DViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.DirectLineMeasurement3DViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

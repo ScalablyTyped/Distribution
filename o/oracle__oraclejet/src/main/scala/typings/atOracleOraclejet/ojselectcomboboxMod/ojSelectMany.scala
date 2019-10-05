@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojselectcomboboxMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_ChildKeysChildrenLabelValue
 import typings.atOracleOraclejet.Anon_Class
 import typings.atOracleOraclejet.Anon_FilterFurtherMoreMatchesFound
@@ -30,9 +32,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.value
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valueOptions
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valueOptionsChanged
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectManyNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectManyNs.ojAnimateStart
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectMany.ojAnimateEnd
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectMany.ojAnimateStart
+import typings.std.CustomEvent
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -59,7 +62,7 @@ trait ojSelectMany[K, D]
   var onOptionsChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Array[
-        typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+        typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
       ]) | (DataProvider[K, D]) | Null
     ], 
     _
@@ -75,7 +78,7 @@ trait ojSelectMany[K, D]
   var onValueOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Anon_LabelValue] | Null], _]) | Null = js.native
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.native
   var options: (js.Array[
-    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   var optionsKeys: Anon_ChildKeysChildrenLabelValue = js.native
   var pickerAttributes: Anon_Class = js.native
@@ -134,7 +137,7 @@ trait ojSelectMany[K, D]
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
         (js.Array[
-          typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+          typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
         ]) | (DataProvider[K, D]) | Null
       ], 
       _
@@ -147,7 +150,7 @@ trait ojSelectMany[K, D]
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
         (js.Array[
-          typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+          typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
         ]) | (DataProvider[K, D]) | Null
       ], 
       _
@@ -242,7 +245,7 @@ trait ojSelectMany[K, D]
   def getProperty_optionRenderer(property: optionRenderer): js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.native
   @JSName("getProperty")
   def getProperty_options(property: options): (js.Array[
-    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
   def getProperty_optionsKeys(property: optionsKeys): Anon_ChildKeysChildrenLabelValue = js.native
@@ -273,7 +276,7 @@ trait ojSelectMany[K, D]
   def setProperty_options(
     property: options,
     value: js.Array[
-      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
     ]
   ): Unit = js.native
   @JSName("setProperty")
@@ -300,5 +303,12 @@ trait ojSelectMany[K, D]
   def setProperty_valueOptions(property: valueOptions): Unit = js.native
   @JSName("setProperty")
   def setProperty_valueOptions(property: valueOptions, value: js.Array[Anon_LabelValue]): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojselectcombobox", "ojSelectMany")
+@js.native
+object ojSelectMany extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

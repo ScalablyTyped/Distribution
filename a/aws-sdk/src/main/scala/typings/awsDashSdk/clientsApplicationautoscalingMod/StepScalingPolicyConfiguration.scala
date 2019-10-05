@@ -31,16 +31,16 @@ object StepScalingPolicyConfiguration {
   @scala.inline
   def apply(
     AdjustmentType: AdjustmentType = null,
-    Cooldown: js.UndefOr[Cooldown] = js.undefined,
+    Cooldown: Int | Double = null,
     MetricAggregationType: MetricAggregationType = null,
-    MinAdjustmentMagnitude: js.UndefOr[MinAdjustmentMagnitude] = js.undefined,
+    MinAdjustmentMagnitude: Int | Double = null,
     StepAdjustments: StepAdjustments = null
   ): StepScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal()
     if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Cooldown)) __obj.updateDynamic("Cooldown")(Cooldown)
+    if (Cooldown != null) __obj.updateDynamic("Cooldown")(Cooldown.asInstanceOf[js.Any])
     if (MetricAggregationType != null) __obj.updateDynamic("MetricAggregationType")(MetricAggregationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinAdjustmentMagnitude)) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude)
+    if (MinAdjustmentMagnitude != null) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude.asInstanceOf[js.Any])
     if (StepAdjustments != null) __obj.updateDynamic("StepAdjustments")(StepAdjustments)
     __obj.asInstanceOf[StepScalingPolicyConfiguration]
   }

@@ -2,7 +2,7 @@ package typings.cli.cliMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cli.Anon_0
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

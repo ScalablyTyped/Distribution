@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Renderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RendererProperties
+import typings.arcgisDashJsDashApi.__esri.Renderer
+import typings.arcgisDashJsDashApi.__esri.RendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

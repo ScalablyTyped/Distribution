@@ -40,19 +40,19 @@ object VideoDescription {
   def apply(
     Name: __string,
     CodecSettings: VideoCodecSettings = null,
-    Height: js.UndefOr[__integer] = js.undefined,
+    Height: Int | Double = null,
     RespondToAfd: VideoDescriptionRespondToAfd = null,
     ScalingBehavior: VideoDescriptionScalingBehavior = null,
-    Sharpness: js.UndefOr[__integerMin0Max100] = js.undefined,
-    Width: js.UndefOr[__integer] = js.undefined
+    Sharpness: Int | Double = null,
+    Width: Int | Double = null
   ): VideoDescription = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (CodecSettings != null) __obj.updateDynamic("CodecSettings")(CodecSettings)
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
     if (RespondToAfd != null) __obj.updateDynamic("RespondToAfd")(RespondToAfd.asInstanceOf[js.Any])
     if (ScalingBehavior != null) __obj.updateDynamic("ScalingBehavior")(ScalingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sharpness)) __obj.updateDynamic("Sharpness")(Sharpness)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Sharpness != null) __obj.updateDynamic("Sharpness")(Sharpness.asInstanceOf[js.Any])
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDescription]
   }
 }

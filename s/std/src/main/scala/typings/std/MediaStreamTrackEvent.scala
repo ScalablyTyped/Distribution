@@ -13,12 +13,6 @@ trait MediaStreamTrackEvent extends Event {
 
 @JSGlobal("MediaStreamTrackEvent")
 @js.native
-class MediaStreamTrackEventCls protected () extends MediaStreamTrackEvent {
-  def this(`type`: java.lang.String, eventInitDict: MediaStreamTrackEventInit) = this()
-}
-
-@JSGlobal("MediaStreamTrackEvent")
-@js.native
 object MediaStreamTrackEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

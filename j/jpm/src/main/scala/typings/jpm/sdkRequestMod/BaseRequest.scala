@@ -1,6 +1,6 @@
 package typings.jpm.sdkRequestMod
 
-import typings.jpm.FFAddonSDKNs.SDKURL
+import typings.jpm.FFAddonSDK.SDKURL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

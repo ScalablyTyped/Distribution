@@ -92,7 +92,7 @@ object Options {
     cc: String | Address | (js.Array[String | Address]) = null,
     component: String = null,
     connection: Socket = null,
-    connectionTimeout: js.UndefOr[ms] = js.undefined,
+    connectionTimeout: Int | Double = null,
     customAuth: CustomAuthenticationHandlers = null,
     date: Date | String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
@@ -104,7 +104,7 @@ object Options {
     envelope: Envelope | typings.nodemailer.libMimeDashNodeMod.Envelope = null,
     from: String | Address = null,
     getSocket: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit = null,
-    greetingTimeout: js.UndefOr[ms] = js.undefined,
+    greetingTimeout: Int | Double = null,
     headers: Headers = null,
     host: String = null,
     html: String | Buffer | Readable | AttachmentLike = null,
@@ -128,7 +128,7 @@ object Options {
     sender: String | Address = null,
     service: String = null,
     socket: Socket = null,
-    socketTimeout: js.UndefOr[ms] = js.undefined,
+    socketTimeout: Int | Double = null,
     subject: String = null,
     text: String | Buffer | Readable | AttachmentLike = null,
     textEncoding: TextEncoding = null,
@@ -148,7 +148,7 @@ object Options {
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component)
     if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth)
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
@@ -160,7 +160,7 @@ object Options {
     if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (getSocket != null) __obj.updateDynamic("getSocket")(js.Any.fromFunction2(getSocket))
-    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
+    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
@@ -184,7 +184,7 @@ object Options {
     if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service)
     if (socket != null) __obj.updateDynamic("socket")(socket)
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding)

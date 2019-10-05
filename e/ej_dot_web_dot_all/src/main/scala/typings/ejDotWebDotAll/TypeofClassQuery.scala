@@ -1,7 +1,7 @@
 package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ejDotWebDotAll.ejNs.Query
+import typings.ejDotWebDotAll.ej.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

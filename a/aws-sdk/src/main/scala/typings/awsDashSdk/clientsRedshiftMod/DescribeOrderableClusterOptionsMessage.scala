@@ -28,13 +28,13 @@ object DescribeOrderableClusterOptionsMessage {
   def apply(
     ClusterVersion: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     NodeType: String = null
   ): DescribeOrderableClusterOptionsMessage = {
     val __obj = js.Dynamic.literal()
     if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
     __obj.asInstanceOf[DescribeOrderableClusterOptionsMessage]
   }

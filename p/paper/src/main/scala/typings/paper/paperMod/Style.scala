@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Style")
 @js.native
 class Style ()
-  extends typings.paper.paperNs.Style
+  extends typings.paper.paper.Style
 

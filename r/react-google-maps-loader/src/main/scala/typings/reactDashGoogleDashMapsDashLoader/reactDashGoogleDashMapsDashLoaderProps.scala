@@ -1,6 +1,6 @@
 package typings.reactDashGoogleDashMapsDashLoader
 
-import typings.reactDashGoogleDashMapsDashLoader.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
+import typings.reactDashGoogleDashMapsDashLoader.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoader.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

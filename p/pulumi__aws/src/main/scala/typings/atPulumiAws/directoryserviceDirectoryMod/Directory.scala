@@ -1,8 +1,8 @@
 package typings.atPulumiAws.directoryserviceDirectoryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.directoryserviceNs.DirectoryConnectSettings
-import typings.atPulumiAws.typesOutputMod.directoryserviceNs.DirectoryVpcSettings
+import typings.atPulumiAws.typesOutputMod.directoryservice.DirectoryConnectSettings
+import typings.atPulumiAws.typesOutputMod.directoryservice.DirectoryVpcSettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

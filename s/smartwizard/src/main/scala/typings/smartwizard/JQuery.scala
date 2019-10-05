@@ -1,6 +1,6 @@
 package typings.smartwizard
 
-import typings.smartwizard.JQuerySmartwizardNs.SmartWizardOptions
+import typings.smartwizard.JQuerySmartwizard.SmartWizardOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

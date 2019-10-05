@@ -68,22 +68,22 @@ object ExportJobResponse {
     Id: __string,
     JobStatus: JobStatus,
     Type: __string,
-    CompletedPieces: js.UndefOr[__integer] = js.undefined,
+    CompletedPieces: Int | Double = null,
     CompletionDate: __string = null,
-    FailedPieces: js.UndefOr[__integer] = js.undefined,
+    FailedPieces: Int | Double = null,
     Failures: ListOf__string = null,
-    TotalFailures: js.UndefOr[__integer] = js.undefined,
-    TotalPieces: js.UndefOr[__integer] = js.undefined,
-    TotalProcessed: js.UndefOr[__integer] = js.undefined
+    TotalFailures: Int | Double = null,
+    TotalPieces: Int | Double = null,
+    TotalProcessed: Int | Double = null
   ): ExportJobResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, CreationDate = CreationDate, Definition = Definition, Id = Id, JobStatus = JobStatus.asInstanceOf[js.Any], Type = Type)
-    if (!js.isUndefined(CompletedPieces)) __obj.updateDynamic("CompletedPieces")(CompletedPieces)
+    if (CompletedPieces != null) __obj.updateDynamic("CompletedPieces")(CompletedPieces.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate)
-    if (!js.isUndefined(FailedPieces)) __obj.updateDynamic("FailedPieces")(FailedPieces)
+    if (FailedPieces != null) __obj.updateDynamic("FailedPieces")(FailedPieces.asInstanceOf[js.Any])
     if (Failures != null) __obj.updateDynamic("Failures")(Failures)
-    if (!js.isUndefined(TotalFailures)) __obj.updateDynamic("TotalFailures")(TotalFailures)
-    if (!js.isUndefined(TotalPieces)) __obj.updateDynamic("TotalPieces")(TotalPieces)
-    if (!js.isUndefined(TotalProcessed)) __obj.updateDynamic("TotalProcessed")(TotalProcessed)
+    if (TotalFailures != null) __obj.updateDynamic("TotalFailures")(TotalFailures.asInstanceOf[js.Any])
+    if (TotalPieces != null) __obj.updateDynamic("TotalPieces")(TotalPieces.asInstanceOf[js.Any])
+    if (TotalProcessed != null) __obj.updateDynamic("TotalProcessed")(TotalProcessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportJobResponse]
   }
 }

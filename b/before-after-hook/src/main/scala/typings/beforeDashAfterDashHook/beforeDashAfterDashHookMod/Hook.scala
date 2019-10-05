@@ -1,6 +1,7 @@
 package typings.beforeDashAfterDashHook.beforeDashAfterDashHookMod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +20,5 @@ trait Hook extends Instantiable0[HookCollection] {
 
 @JSImport("before-after-hook", "Hook")
 @js.native
-class HookCls () extends HookCollection
+object Hook extends TopLevel[Hook]
 

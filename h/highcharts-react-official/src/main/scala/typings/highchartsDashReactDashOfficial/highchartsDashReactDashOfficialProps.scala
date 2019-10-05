@@ -1,13 +1,13 @@
 package typings.highchartsDashReactDashOfficial
 
-import typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReactNs.Props
+import typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReact.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait highchartsDashReactDashOfficialProps {
   @scala.inline
-  def HighchartsDashReactDashOfficialProps: Props.type = typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReactNs.Props
+  def HighchartsDashReactDashOfficialProps: Props.type = typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReact.Props
   type HighchartsDashReactDashOfficialProps = Props
 }
 

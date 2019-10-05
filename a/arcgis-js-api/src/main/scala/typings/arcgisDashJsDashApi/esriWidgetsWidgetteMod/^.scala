@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsWidgetteMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WidgetteConstructor
+import typings.arcgisDashJsDashApi.__esri.WidgetteConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -20,13 +20,6 @@ trait WheelEvent extends MouseEvent {
 
 @JSGlobal("WheelEvent")
 @js.native
-class WheelEventCls protected () extends WheelEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: WheelEventInit) = this()
-}
-
-@JSGlobal("WheelEvent")
-@js.native
 object WheelEvent
   extends Instantiable1[/* type */ java.lang.String, WheelEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ WheelEventInit, WheelEvent] {

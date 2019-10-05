@@ -16,15 +16,6 @@ trait ForeignFunction extends js.Object {
 
 @JSImport("ffi-napi", "ForeignFunction")
 @js.native
-class ForeignFunctionCls protected () extends ForeignFunction {
-  def this(ptr: Buffer, retType: String, argTypes: js.Array[_]) = this()
-  def this(ptr: Buffer, retType: Type, argTypes: js.Array[_]) = this()
-  def this(ptr: Buffer, retType: String, argTypes: js.Array[_], abi: Double) = this()
-  def this(ptr: Buffer, retType: Type, argTypes: js.Array[_], abi: Double) = this()
-}
-
-@JSImport("ffi-napi", "ForeignFunction")
-@js.native
 object ForeignFunction
   extends Instantiable3[
       /* ptr */ Buffer, 

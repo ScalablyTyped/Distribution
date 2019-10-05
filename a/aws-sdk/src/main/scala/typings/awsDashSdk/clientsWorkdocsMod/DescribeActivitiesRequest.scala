@@ -53,8 +53,8 @@ object DescribeActivitiesRequest {
     ActivityTypes: ActivityNamesFilterType = null,
     AuthenticationToken: AuthenticationHeaderType = null,
     EndTime: TimestampType = null,
-    IncludeIndirectActivities: js.UndefOr[BooleanType] = js.undefined,
-    Limit: js.UndefOr[LimitType] = js.undefined,
+    IncludeIndirectActivities: js.UndefOr[Boolean] = js.undefined,
+    Limit: Int | Double = null,
     Marker: MarkerType = null,
     OrganizationId: IdType = null,
     ResourceId: IdType = null,
@@ -66,7 +66,7 @@ object DescribeActivitiesRequest {
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
     if (!js.isUndefined(IncludeIndirectActivities)) __obj.updateDynamic("IncludeIndirectActivities")(IncludeIndirectActivities)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId)
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)

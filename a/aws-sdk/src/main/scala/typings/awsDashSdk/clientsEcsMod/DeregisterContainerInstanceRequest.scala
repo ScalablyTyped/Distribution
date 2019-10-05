@@ -21,7 +21,7 @@ trait DeregisterContainerInstanceRequest extends js.Object {
 
 object DeregisterContainerInstanceRequest {
   @scala.inline
-  def apply(containerInstance: String, cluster: String = null, force: js.UndefOr[BoxedBoolean] = js.undefined): DeregisterContainerInstanceRequest = {
+  def apply(containerInstance: String, cluster: String = null, force: js.UndefOr[scala.Boolean] = js.undefined): DeregisterContainerInstanceRequest = {
     val __obj = js.Dynamic.literal(containerInstance = containerInstance)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)

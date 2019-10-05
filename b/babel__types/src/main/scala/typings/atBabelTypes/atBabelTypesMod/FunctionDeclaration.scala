@@ -61,3 +61,53 @@ object FunctionDeclaration {
   }
 }
 
+@JSImport("@babel/types", "functionDeclaration")
+@js.native
+object functionDeclaration extends js.Object {
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement
+  ): FunctionDeclaration = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean
+  ): FunctionDeclaration = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean
+  ): FunctionDeclaration = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean,
+    declare: Boolean
+  ): FunctionDeclaration = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean,
+    declare: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
+  ): FunctionDeclaration = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean,
+    declare: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop
+  ): FunctionDeclaration = js.native
+}
+

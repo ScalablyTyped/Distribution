@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashVisibility
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashVisibility.SemanticUINs.Visibility
+import typings.semanticDashUiDashVisibility.SemanticUI.Visibility
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

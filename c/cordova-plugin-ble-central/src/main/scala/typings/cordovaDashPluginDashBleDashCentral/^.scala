@@ -1,6 +1,6 @@
 package typings.cordovaDashPluginDashBleDashCentral
 
-import typings.cordovaDashPluginDashBleDashCentral.BLECentralPluginNs.BLECentralPluginStatic
+import typings.cordovaDashPluginDashBleDashCentral.BLECentralPlugin.BLECentralPluginStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

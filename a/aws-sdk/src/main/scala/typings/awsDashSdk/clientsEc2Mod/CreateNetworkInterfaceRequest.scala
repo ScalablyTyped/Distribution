@@ -52,25 +52,25 @@ object CreateNetworkInterfaceRequest {
   def apply(
     SubnetId: String,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
     InterfaceType: NetworkInterfaceCreationType = null,
-    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
+    Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddressSpecificationList = null,
-    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
+    SecondaryPrivateIpAddressCount: Int | scala.Double = null
   ): CreateNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
     if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
+    if (Ipv6AddressCount != null) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.asInstanceOf[js.Any])
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress)
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses)
-    if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount)
+    if (SecondaryPrivateIpAddressCount != null) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInterfaceRequest]
   }
 }

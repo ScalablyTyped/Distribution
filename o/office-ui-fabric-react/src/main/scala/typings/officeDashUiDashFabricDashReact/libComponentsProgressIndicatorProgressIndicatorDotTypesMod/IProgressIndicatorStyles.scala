@@ -20,15 +20,20 @@ trait IProgressIndicatorStyles extends js.Object {
 object IProgressIndicatorStyles {
   @scala.inline
   def apply(
-    itemDescription: IStyle,
-    itemName: IStyle,
-    itemProgress: IStyle,
-    progressBar: IStyle,
-    progressTrack: IStyle,
-    root: IStyle
+    itemDescription: IStyle = null,
+    itemName: IStyle = null,
+    itemProgress: IStyle = null,
+    progressBar: IStyle = null,
+    progressTrack: IStyle = null,
+    root: IStyle = null
   ): IProgressIndicatorStyles = {
-    val __obj = js.Dynamic.literal(itemDescription = itemDescription.asInstanceOf[js.Any], itemName = itemName.asInstanceOf[js.Any], itemProgress = itemProgress.asInstanceOf[js.Any], progressBar = progressBar.asInstanceOf[js.Any], progressTrack = progressTrack.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (itemDescription != null) __obj.updateDynamic("itemDescription")(itemDescription.asInstanceOf[js.Any])
+    if (itemName != null) __obj.updateDynamic("itemName")(itemName.asInstanceOf[js.Any])
+    if (itemProgress != null) __obj.updateDynamic("itemProgress")(itemProgress.asInstanceOf[js.Any])
+    if (progressBar != null) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
+    if (progressTrack != null) __obj.updateDynamic("progressTrack")(progressTrack.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressIndicatorStyles]
   }
 }

@@ -3,8 +3,8 @@ package typings.angularDashOdataDashResources
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.angularDashOdataDashResources.ODataNs.IExecutable
-import typings.angularDashOdataDashResources.ODataNs.Predicate
+import typings.angularDashOdataDashResources.OData.IExecutable
+import typings.angularDashOdataDashResources.OData.Predicate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

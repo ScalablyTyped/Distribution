@@ -40,3 +40,10 @@ object ClassImplements {
   }
 }
 
+@JSImport("@babel/types", "classImplements")
+@js.native
+object classImplements extends js.Object {
+  def apply(id: Identifier): ClassImplements = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterInstantiation): ClassImplements = js.native
+}
+

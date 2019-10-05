@@ -1,9 +1,9 @@
 package typings.atPulumiAws.eksGetClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.eksNs.GetClusterCertificateAuthority
-import typings.atPulumiAws.typesOutputMod.eksNs.GetClusterIdentity
-import typings.atPulumiAws.typesOutputMod.eksNs.GetClusterVpcConfig
+import typings.atPulumiAws.typesOutputMod.eks.GetClusterCertificateAuthority
+import typings.atPulumiAws.typesOutputMod.eks.GetClusterIdentity
+import typings.atPulumiAws.typesOutputMod.eks.GetClusterVpcConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

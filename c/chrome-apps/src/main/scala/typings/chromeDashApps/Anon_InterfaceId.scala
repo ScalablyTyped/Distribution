@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait Anon_InterfaceId extends js.Object {
 
 object Anon_InterfaceId {
   @scala.inline
-  def apply(productId: integer, vendorId: integer, interfaceId: js.UndefOr[integer] = js.undefined): Anon_InterfaceId = {
+  def apply(productId: integer, vendorId: integer, interfaceId: Int | Double = null): Anon_InterfaceId = {
     val __obj = js.Dynamic.literal(productId = productId, vendorId = vendorId)
-    if (!js.isUndefined(interfaceId)) __obj.updateDynamic("interfaceId")(interfaceId)
+    if (interfaceId != null) __obj.updateDynamic("interfaceId")(interfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InterfaceId]
   }
 }

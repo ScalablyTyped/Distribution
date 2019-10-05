@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsComputedLocObject
 import typings.astDashTypes.genKindsMod.JSXIdentifierKind
 import typings.astDashTypes.genKindsMod.JSXMemberExpressionKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXMemberExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXMemberExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

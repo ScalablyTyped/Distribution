@@ -50,3 +50,30 @@ object CallExpression {
   }
 }
 
+@JSImport("@babel/types", "callExpression")
+@js.native
+object callExpression extends js.Object {
+  def apply(
+    callee: Expression | V8IntrinsicIdentifier,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder]
+  ): CallExpression = js.native
+  def apply(
+    callee: Expression | V8IntrinsicIdentifier,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: `true` | `false`
+  ): CallExpression = js.native
+  def apply(
+    callee: Expression | V8IntrinsicIdentifier,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: `true` | `false`,
+    typeArguments: TypeParameterInstantiation
+  ): CallExpression = js.native
+  def apply(
+    callee: Expression | V8IntrinsicIdentifier,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: `true` | `false`,
+    typeArguments: TypeParameterInstantiation,
+    typeParameters: TSTypeParameterInstantiation
+  ): CallExpression = js.native
+}
+

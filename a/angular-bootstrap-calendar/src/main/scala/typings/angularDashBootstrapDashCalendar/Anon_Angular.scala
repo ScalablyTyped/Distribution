@@ -1,6 +1,6 @@
 package typings.angularDashBootstrapDashCalendar
 
-import typings.angularDashBootstrapDashCalendar.angularMod.bootstrapNs.calendarNs.IFormats
+import typings.angularDashBootstrapDashCalendar.angularMod.bootstrap.calendar.IFormats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

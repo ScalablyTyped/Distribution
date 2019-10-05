@@ -215,18 +215,18 @@ object DBCluster {
     ActivityStreamKmsKeyId: String = null,
     ActivityStreamMode: ActivityStreamMode = null,
     ActivityStreamStatus: ActivityStreamStatus = null,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
     AssociatedRoles: DBClusterRoles = null,
     AvailabilityZones: AvailabilityZones = null,
-    BacktrackConsumedChangeRecords: js.UndefOr[LongOptional] = js.undefined,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    Capacity: js.UndefOr[IntegerOptional] = js.undefined,
+    BacktrackConsumedChangeRecords: Int | scala.Double = null,
+    BacktrackWindow: Int | scala.Double = null,
+    BackupRetentionPeriod: Int | scala.Double = null,
+    Capacity: Int | scala.Double = null,
     CharacterSetName: String = null,
     CloneGroupId: String = null,
     ClusterCreateTime: TStamp = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
-    CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
+    CrossAccountClone: js.UndefOr[scala.Boolean] = js.undefined,
     CustomEndpoints: StringList = null,
     DBClusterArn: String = null,
     DBClusterIdentifier: String = null,
@@ -236,7 +236,7 @@ object DBCluster {
     DBSubnetGroup: String = null,
     DatabaseName: String = null,
     DbClusterResourceId: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EarliestBacktrackTime: TStamp = null,
     EarliestRestorableTime: TStamp = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
@@ -245,14 +245,14 @@ object DBCluster {
     EngineMode: String = null,
     EngineVersion: String = null,
     HostedZoneId: String = null,
-    HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    HttpEndpointEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     LatestRestorableTime: TStamp = null,
     MasterUsername: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PercentProgress: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ReadReplicaIdentifiers: ReadReplicaIdentifierList = null,
@@ -260,7 +260,7 @@ object DBCluster {
     ReplicationSourceIdentifier: String = null,
     ScalingConfigurationInfo: ScalingConfigurationInfo = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBCluster = {
     val __obj = js.Dynamic.literal()
@@ -268,13 +268,13 @@ object DBCluster {
     if (ActivityStreamKmsKeyId != null) __obj.updateDynamic("ActivityStreamKmsKeyId")(ActivityStreamKmsKeyId)
     if (ActivityStreamMode != null) __obj.updateDynamic("ActivityStreamMode")(ActivityStreamMode.asInstanceOf[js.Any])
     if (ActivityStreamStatus != null) __obj.updateDynamic("ActivityStreamStatus")(ActivityStreamStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BacktrackConsumedChangeRecords)) __obj.updateDynamic("BacktrackConsumedChangeRecords")(BacktrackConsumedChangeRecords)
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
-    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity)
+    if (BacktrackConsumedChangeRecords != null) __obj.updateDynamic("BacktrackConsumedChangeRecords")(BacktrackConsumedChangeRecords.asInstanceOf[js.Any])
+    if (BacktrackWindow != null) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.asInstanceOf[js.Any])
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
+    if (Capacity != null) __obj.updateDynamic("Capacity")(Capacity.asInstanceOf[js.Any])
     if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName)
     if (CloneGroupId != null) __obj.updateDynamic("CloneGroupId")(CloneGroupId)
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
@@ -305,7 +305,7 @@ object DBCluster {
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ReadReplicaIdentifiers != null) __obj.updateDynamic("ReadReplicaIdentifiers")(ReadReplicaIdentifiers)

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.organizationsOrganizationalUnitMod
 
-import typings.atPulumiAws.typesOutputMod.organizationsNs.OrganizationalUnitAccount
+import typings.atPulumiAws.typesOutputMod.organizations.OrganizationalUnitAccount
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

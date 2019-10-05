@@ -20,3 +20,10 @@ class Role protected () extends js.Object {
   def is(childRoleName: String, params: RoleParams): Role = js.native
 }
 
+@JSImport("imperium", "role")
+@js.native
+object role extends js.Object {
+  def apply(roleName: String): Role = js.native
+  def apply(roleName: String, getAcl: GetAcl): Role = js.native
+}
+

@@ -228,7 +228,7 @@ object SMTPServerOptions {
     cert: String | (js.Array[Buffer | String]) | Buffer = null,
     ciphers: String = null,
     clientCertEngine: String = null,
-    closeTimeout: js.UndefOr[ms] = js.undefined,
+    closeTimeout: Int | Double = null,
     crl: String | Buffer | (js.Array[String | Buffer]) = null,
     dhparam: String | Buffer = null,
     disableReverseLookup: js.UndefOr[Boolean] = js.undefined,
@@ -272,7 +272,7 @@ object SMTPServerOptions {
     sessionTimeout: Int | Double = null,
     size: Int | Double = null,
     sniOptions: StringDictionary[TlsOptions] | (Map[String, TlsOptions]) = null,
-    socketTimeout: js.UndefOr[ms] = js.undefined,
+    socketTimeout: Int | Double = null,
     ticketKeys: Buffer = null,
     useProxy: js.UndefOr[Boolean] = js.undefined,
     useXClient: js.UndefOr[Boolean] = js.undefined,
@@ -289,7 +289,7 @@ object SMTPServerOptions {
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
-    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout)
+    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
     if (!js.isUndefined(disableReverseLookup)) __obj.updateDynamic("disableReverseLookup")(disableReverseLookup)
@@ -329,7 +329,7 @@ object SMTPServerOptions {
     if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sniOptions != null) __obj.updateDynamic("sniOptions")(sniOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
     if (ticketKeys != null) __obj.updateDynamic("ticketKeys")(ticketKeys)
     if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy)
     if (!js.isUndefined(useXClient)) __obj.updateDynamic("useXClient")(useXClient)

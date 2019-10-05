@@ -1,6 +1,7 @@
 package typings.reactDashLoadableDashVisibility
 
-import typings.reactDashLoadable.LoadableExportNs.Loadable
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashLoadable.LoadableExport.Loadable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-loadable-visibility/react-loadable", JSImport.Namespace)
 @js.native
 object reactDashLoadableMod extends js.Object {
-  val default: Loadable = js.native
+  @js.native
+  object default extends TopLevel[Loadable]
+  
 }
 

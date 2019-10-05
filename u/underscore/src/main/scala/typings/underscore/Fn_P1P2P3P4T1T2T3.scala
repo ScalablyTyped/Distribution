@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Fn_P1P2P3P4T1T2T3[T1, T3, T8, T4, T2] extends js.Object {
+trait Fn_P1P2P3P4T1T2T3[T4, T1, T2, T3, T8] extends js.Object {
   def apply(p1: T1, p2: T2, p3: T3, p4: T4): T8 = js.native
 }
 

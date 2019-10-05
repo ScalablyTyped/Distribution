@@ -1,5 +1,6 @@
 package typings.axeDashCore.axeDashCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,23 +18,10 @@ trait AxeResults extends js.Object {
   var violations: js.Array[Result]
 }
 
-object AxeResults {
-  @scala.inline
-  def apply(
-    inapplicable: js.Array[Result],
-    incomplete: js.Array[Result],
-    passes: js.Array[Result],
-    testEngine: TestEngine,
-    testEnvironment: TestEnvironment,
-    testRunner: TestRunner,
-    timestamp: String,
-    toolOptions: RunOptions,
-    url: String,
-    violations: js.Array[Result]
-  ): AxeResults = {
-    val __obj = js.Dynamic.literal(inapplicable = inapplicable, incomplete = incomplete, passes = passes, testEngine = testEngine, testEnvironment = testEnvironment, testRunner = testRunner, timestamp = timestamp, toolOptions = toolOptions, url = url, violations = violations)
-  
-    __obj.asInstanceOf[AxeResults]
-  }
-}
+/**
+	 * Object for axe Results
+	 */
+@JSImport("axe-core", "AxeResults")
+@js.native
+object AxeResults extends TopLevel[AxeResults]
 

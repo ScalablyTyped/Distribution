@@ -35,3 +35,11 @@ object MetaProperty {
   }
 }
 
+@JSImport("babel-types", "metaProperty")
+@js.native
+object metaProperty extends js.Object {
+  def apply(): MetaProperty = js.native
+  def apply(meta: String): MetaProperty = js.native
+  def apply(meta: String, property: String): MetaProperty = js.native
+}
+

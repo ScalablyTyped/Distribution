@@ -13,9 +13,10 @@ trait RealmRoleProps extends js.Object {
 
 object RealmRoleProps {
   @scala.inline
-  def apply(children: ReactNode, error: ReactNode, realmRole: String): RealmRoleProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], realmRole = realmRole)
-  
+  def apply(realmRole: String, children: ReactNode = null, error: ReactNode = null): RealmRoleProps = {
+    val __obj = js.Dynamic.literal(realmRole = realmRole)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealmRoleProps]
   }
 }

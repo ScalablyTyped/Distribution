@@ -1,6 +1,6 @@
 package typings.bootstrapDashSlider
 
-import typings.jquery.JQueryNs.Event
+import typings.jquery.JQuery.Event
 import typings.std.Element
 import typings.std.TouchList
 import typings.std.Window

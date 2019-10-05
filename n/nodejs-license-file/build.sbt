@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nodejs-license-file"
-version := "4.0-dt-20190327Z-bf0830"
-scalaVersion := "2.12.9"
+version := "4.0-dt-20190327Z-e8648f"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

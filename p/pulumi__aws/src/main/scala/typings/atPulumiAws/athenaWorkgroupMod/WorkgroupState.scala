@@ -1,7 +1,7 @@
 package typings.atPulumiAws.athenaWorkgroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.athenaNs.WorkgroupConfiguration
+import typings.atPulumiAws.typesInputMod.athena.WorkgroupConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

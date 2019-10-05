@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ExternalModuleReferenceSyntax")
 @js.native
 class ExternalModuleReferenceSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ExternalModuleReferenceSyntax {
+  extends typings.typescriptDashServices.TypeScript.ExternalModuleReferenceSyntax {
   def this(
     requireKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
@@ -22,6 +22,6 @@ class ExternalModuleReferenceSyntax protected ()
 @JSImport("typescript-services", "ExternalModuleReferenceSyntax")
 @js.native
 object ExternalModuleReferenceSyntax extends js.Object {
-  def create1(stringLiteral: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ExternalModuleReferenceSyntax = js.native
+  def create1(stringLiteral: ISyntaxToken): typings.typescriptDashServices.TypeScript.ExternalModuleReferenceSyntax = js.native
 }
 

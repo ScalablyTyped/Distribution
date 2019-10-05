@@ -36,18 +36,18 @@ object TestInvokeMethodResponse {
   def apply(
     body: String = null,
     headers: MapOfStringToString = null,
-    latency: js.UndefOr[Long] = js.undefined,
+    latency: Int | scala.Double = null,
     log: String = null,
     multiValueHeaders: MapOfStringToList = null,
-    status: js.UndefOr[Integer] = js.undefined
+    status: Int | scala.Double = null
   ): TestInvokeMethodResponse = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency)
+    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log)
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeMethodResponse]
   }
 }

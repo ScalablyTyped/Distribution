@@ -1,28 +1,28 @@
 package typings.cypress
 
-import typings.cypress.JQueryNs.AjaxSettings
-import typings.cypress.JQueryNs.CSSHook
-import typings.cypress.JQueryNs.DeferredStatic
-import typings.cypress.JQueryNs.Duration
-import typings.cypress.JQueryNs.EffectsOptions
-import typings.cypress.JQueryNs.EventLike
-import typings.cypress.JQueryNs.EventStatic
-import typings.cypress.JQueryNs.PlainObject
-import typings.cypress.JQueryNs.Promise
-import typings.cypress.JQueryNs.Promise2
-import typings.cypress.JQueryNs.Promise3
-import typings.cypress.JQueryNs.Queue
-import typings.cypress.JQueryNs.QueueFunction
-import typings.cypress.JQueryNs.Selector
-import typings.cypress.JQueryNs.SpeedSettings
-import typings.cypress.JQueryNs.Thenable
-import typings.cypress.JQueryNs.Transport
-import typings.cypress.JQueryNs.TypeOrArray
-import typings.cypress.JQueryNs.UrlAjaxSettings
-import typings.cypress.JQueryNs.ValHook
-import typings.cypress.JQueryNs.htmlString
-import typings.cypress.JQueryNs.jqXHR
-import typings.cypress.JQueryNs.jqXHRNs.DoneCallback
+import typings.cypress.JQuery.AjaxSettings
+import typings.cypress.JQuery.CSSHook
+import typings.cypress.JQuery.DeferredStatic
+import typings.cypress.JQuery.Duration
+import typings.cypress.JQuery.EffectsOptions
+import typings.cypress.JQuery.EventLike
+import typings.cypress.JQuery.EventStatic
+import typings.cypress.JQuery.PlainObject
+import typings.cypress.JQuery.Promise
+import typings.cypress.JQuery.Promise2
+import typings.cypress.JQuery.Promise3
+import typings.cypress.JQuery.Queue
+import typings.cypress.JQuery.QueueFunction
+import typings.cypress.JQuery.Selector
+import typings.cypress.JQuery.SpeedSettings
+import typings.cypress.JQuery.Thenable
+import typings.cypress.JQuery.Transport
+import typings.cypress.JQuery.TypeOrArray
+import typings.cypress.JQuery.UrlAjaxSettings
+import typings.cypress.JQuery.ValHook
+import typings.cypress.JQuery.htmlString
+import typings.cypress.JQuery.jqXHR
+import typings.cypress.JQuery.jqXHR.DoneCallback
 import typings.cypress.cypressNumbers.`false`
 import typings.cypress.cypressNumbers.`true`
 import typings.cypress.cypressStrings.`null`
@@ -144,6 +144,17 @@ trait JQueryStatic extends js.Object {
   // tslint:disable-next-line:unified-signatures
   def apply[T /* <: Element */](elementArray: js.Array[T]): JQuery[T] = js.native
   /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param element A DOM element to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
+  // tslint:disable-next-line:unified-signatures
+  def apply[T /* <: Element */](element: T): JQuery[T] = js.native
+  /**
     * Creates DOM elements on the fly from the provided string of raw HTML.
     *
     * @param html A string of HTML to create on the fly. Note that this parses HTML, not XML.
@@ -158,14 +169,6 @@ trait JQueryStatic extends js.Object {
   def apply[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
   def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
   def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    *
-    * @param object A plain object to wrap in a jQuery object.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    */
-  def apply[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
     * by passing an HTML string.
@@ -185,8 +188,8 @@ trait JQueryStatic extends js.Object {
     * @since 1.7
     */
   // tslint:disable-next-line:ban-types no-unnecessary-generics
-  def Callbacks[T /* <: js.Function */](): typings.cypress.JQueryNs.Callbacks[T] = js.native
-  def Callbacks[T /* <: js.Function */](flags: String): typings.cypress.JQueryNs.Callbacks[T] = js.native
+  def Callbacks[T /* <: js.Function */](): typings.cypress.JQuery.Callbacks[T] = js.native
+  def Callbacks[T /* <: js.Function */](flags: String): typings.cypress.JQuery.Callbacks[T] = js.native
   /**
     * A factory function that returns a chainable utility object with methods to register multiple
     * callbacks into callback queues, invoke callback queues, and relay the success or failure state of
@@ -196,19 +199,19 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.Deferred/ }\`
     * @since 1.5
     */
-  def Deferred[TR, TJ, TN](): typings.cypress.JQueryNs.Deferred[TR, TJ, TN] = js.native
+  def Deferred[TR, TJ, TN](): typings.cypress.JQuery.Deferred[TR, TJ, TN] = js.native
   def Deferred[TR, TJ, TN](
     beforeStart: js.ThisFunction1[
-      /* this */ typings.cypress.JQueryNs.Deferred[TR, TJ, TN], 
-      /* deferred */ typings.cypress.JQueryNs.Deferred[TR, TJ, TN], 
+      /* this */ typings.cypress.JQuery.Deferred[TR, TJ, TN], 
+      /* deferred */ typings.cypress.JQuery.Deferred[TR, TJ, TN], 
       Unit
     ]
-  ): typings.cypress.JQueryNs.Deferred[TR, TJ, TN] = js.native
+  ): typings.cypress.JQuery.Deferred[TR, TJ, TN] = js.native
   // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String, properties: T): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String, properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: EventLike */, TTarget /* <: EventTarget */](properties: T): (typings.cypress.JQueryNs.Event[TTarget, Null]) with T = js.native
+  def Event[T /* <: EventLike */, TTarget /* <: EventTarget */](properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     *
@@ -855,11 +858,11 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
     * @since 1.8
     */
-  def parseHTML(data: String): js.Array[typings.cypress.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context_keepScripts: Boolean): js.Array[typings.cypress.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context_keepScripts: Document): js.Array[typings.cypress.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[typings.cypress.JQueryNs.Node] = js.native
-  def parseHTML(data: String, context: Null, keepScripts: Boolean): js.Array[typings.cypress.JQueryNs.Node] = js.native
+  def parseHTML(data: String): js.Array[typings.cypress.JQuery.Node] = js.native
+  def parseHTML(data: String, context_keepScripts: Boolean): js.Array[typings.cypress.JQuery.Node] = js.native
+  def parseHTML(data: String, context_keepScripts: Document): js.Array[typings.cypress.JQuery.Node] = js.native
+  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[typings.cypress.JQuery.Node] = js.native
+  def parseHTML(data: String, context: Null, keepScripts: Boolean): js.Array[typings.cypress.JQuery.Node] = js.native
   /**
     * Parses a string into an array of DOM nodes.
     *
@@ -869,7 +872,7 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
     * @since 1.8
     */
-  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[typings.cypress.JQueryNs.Node] = js.native
+  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[typings.cypress.JQuery.Node] = js.native
   /**
     * Takes a well-formed JSON string and returns the resulting JavaScript value.
     *

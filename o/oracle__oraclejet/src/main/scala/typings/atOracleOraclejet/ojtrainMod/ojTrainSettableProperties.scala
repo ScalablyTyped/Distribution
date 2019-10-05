@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet.ojtrainMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentSettableProperties
-import typings.atOracleOraclejet.ojtrainMod.ojTrainNs.Step
+import typings.atOracleOraclejet.ojtrainMod.ojTrain.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

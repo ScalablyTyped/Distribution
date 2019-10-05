@@ -82,12 +82,10 @@ trait IEntity extends js.Object {
   def toXML(): XML
 }
 
-object IEntity {
-  @scala.inline
-  def apply(TAG: () => String, construct: XML => Unit, key: () => js.Any, toXML: () => XML): IEntity = {
-    val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), key = js.Any.fromFunction0(key), toXML = js.Any.fromFunction0(toXML))
-  
-    __obj.asInstanceOf[IEntity]
-  }
+@JSImport("samchon/protocol/entity/IEntity", "IEntity")
+@js.native
+object IEntity extends js.Object {
+  def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = js.native
+  def toXML(entity: IEntity, prohibited_names: String*): XML = js.native
 }
 

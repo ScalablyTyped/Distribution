@@ -46,8 +46,8 @@ object ImportSnapshotRequest {
     ClientToken: String = null,
     Description: String = null,
     DiskContainer: SnapshotDiskContainer = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     RoleName: String = null
   ): ImportSnapshotRequest = {

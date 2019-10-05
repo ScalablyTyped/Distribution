@@ -13,7 +13,7 @@ trait ModifyVpcEndpointServicePermissionsResult extends js.Object {
 
 object ModifyVpcEndpointServicePermissionsResult {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): ModifyVpcEndpointServicePermissionsResult = {
+  def apply(ReturnValue: js.UndefOr[scala.Boolean] = js.undefined): ModifyVpcEndpointServicePermissionsResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue)
     __obj.asInstanceOf[ModifyVpcEndpointServicePermissionsResult]

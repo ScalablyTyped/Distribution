@@ -17,9 +17,9 @@ trait LocalPortDetails extends js.Object {
 
 object LocalPortDetails {
   @scala.inline
-  def apply(Port: js.UndefOr[Integer] = js.undefined, PortName: String = null): LocalPortDetails = {
+  def apply(Port: Int | scala.Double = null, PortName: String = null): LocalPortDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PortName != null) __obj.updateDynamic("PortName")(PortName)
     __obj.asInstanceOf[LocalPortDetails]
   }

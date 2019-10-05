@@ -1,8 +1,8 @@
 package typings.atJupyterlabDocregistry.libRegistryMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.Toolbar
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IContext
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.IModel
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IContext
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

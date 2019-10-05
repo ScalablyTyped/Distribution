@@ -1,5 +1,6 @@
 package typings.aframe.aframeMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -31,4 +32,8 @@ trait ANode extends HTMLElement {
   def setAttribute(`type`: String, newValue: js.Any): Unit = js.native
   def unregisterMixin(id: String): Unit = js.native
 }
+
+@JSImport("aframe", "ANode")
+@js.native
+object ANode extends TopLevel[ANode]
 

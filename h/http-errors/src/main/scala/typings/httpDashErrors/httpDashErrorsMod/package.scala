@@ -14,7 +14,7 @@ package object httpDashErrorsMod {
   type CreateHttpError = js.Function1[/* repeated */ Error | String | Double | StringDictionary[js.Any], HttpError]
   type HttpErrorConstructor = Instantiable1[js.UndefOr[/* msg */ String], HttpError]
   type NamedConstructors = Anon_Code with (Record[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any, 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any, 
     HttpErrorConstructor
   ])
 }

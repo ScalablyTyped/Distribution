@@ -1,7 +1,7 @@
 package typings.reactDashIcons
 
 import typings.react.reactMod.Context
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashIcons.libEsmIconBaseMod.IconBaseProps
 import typings.reactDashIcons.libEsmIconBaseMod.IconTree
 import typings.reactDashIcons.libEsmIconsManifestMod.IconManifest

@@ -1,6 +1,6 @@
 package typings.linq4js
 
-import typings.linq4js.Linq4JSNs.OrderEntry
+import typings.linq4js.Linq4JS.OrderEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

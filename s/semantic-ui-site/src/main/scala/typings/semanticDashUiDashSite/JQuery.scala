@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSite
 
-import typings.semanticDashUiDashSite.SemanticUINs.Site
-import typings.semanticDashUiDashSite.SemanticUINs.SiteSettings
+import typings.semanticDashUiDashSite.SemanticUI.Site
+import typings.semanticDashUiDashSite.SemanticUI.SiteSettings
 import typings.semanticDashUiDashSite.semanticDashUiDashSiteStrings.destroy
 import typings.semanticDashUiDashSite.semanticDashUiDashSiteStrings.setting
 import scala.scalajs.js

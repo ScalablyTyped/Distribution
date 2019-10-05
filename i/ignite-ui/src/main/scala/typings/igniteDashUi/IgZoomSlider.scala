@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -124,19 +125,19 @@ object IgZoomSlider {
     orientation: String = null,
     panTransitionDuration: Int | Double = null,
     pixelScalingRatio: Int | Double = null,
-    propertyChanged: PropertyChangedEvent = null,
+    propertyChanged: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit = null,
     rangeThumbBrush: js.Any = null,
     rangeThumbOutline: js.Any = null,
     rangeThumbRidgesBrush: js.Any = null,
     rangeThumbStrokeThickness: Int | Double = null,
-    resolvingAxisValue: ResolvingAxisValueEvent = null,
+    resolvingAxisValue: (/* event */ Event, /* ui */ ResolvingAxisValueEventUIParam) => Unit = null,
     startInset: Int | Double = null,
     thumbCalloutTextStyle: js.Any = null,
     trackEndInset: Int | Double = null,
     trackStartInset: Int | Double = null,
     width: String | Double = null,
     windowRect: js.Any = null,
-    windowRectChanged: WindowRectChangedEvent = null
+    windowRectChanged: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit = null
   ): IgZoomSlider = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -179,19 +180,19 @@ object IgZoomSlider {
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (panTransitionDuration != null) __obj.updateDynamic("panTransitionDuration")(panTransitionDuration.asInstanceOf[js.Any])
     if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
-    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(propertyChanged)
+    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(js.Any.fromFunction2(propertyChanged))
     if (rangeThumbBrush != null) __obj.updateDynamic("rangeThumbBrush")(rangeThumbBrush)
     if (rangeThumbOutline != null) __obj.updateDynamic("rangeThumbOutline")(rangeThumbOutline)
     if (rangeThumbRidgesBrush != null) __obj.updateDynamic("rangeThumbRidgesBrush")(rangeThumbRidgesBrush)
     if (rangeThumbStrokeThickness != null) __obj.updateDynamic("rangeThumbStrokeThickness")(rangeThumbStrokeThickness.asInstanceOf[js.Any])
-    if (resolvingAxisValue != null) __obj.updateDynamic("resolvingAxisValue")(resolvingAxisValue)
+    if (resolvingAxisValue != null) __obj.updateDynamic("resolvingAxisValue")(js.Any.fromFunction2(resolvingAxisValue))
     if (startInset != null) __obj.updateDynamic("startInset")(startInset.asInstanceOf[js.Any])
     if (thumbCalloutTextStyle != null) __obj.updateDynamic("thumbCalloutTextStyle")(thumbCalloutTextStyle)
     if (trackEndInset != null) __obj.updateDynamic("trackEndInset")(trackEndInset.asInstanceOf[js.Any])
     if (trackStartInset != null) __obj.updateDynamic("trackStartInset")(trackStartInset.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)
-    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(windowRectChanged)
+    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(js.Any.fromFunction2(windowRectChanged))
     __obj.asInstanceOf[IgZoomSlider]
   }
 }

@@ -26,16 +26,16 @@ trait PriceSchedule extends js.Object {
 object PriceSchedule {
   @scala.inline
   def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
+    Active: js.UndefOr[scala.Boolean] = js.undefined,
     CurrencyCode: CurrencyCodeValues = null,
-    Price: js.UndefOr[Double] = js.undefined,
-    Term: js.UndefOr[Long] = js.undefined
+    Price: Int | scala.Double = null,
+    Term: Int | scala.Double = null
   ): PriceSchedule = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active)
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price)
-    if (!js.isUndefined(Term)) __obj.updateDynamic("Term")(Term)
+    if (Price != null) __obj.updateDynamic("Price")(Price.asInstanceOf[js.Any])
+    if (Term != null) __obj.updateDynamic("Term")(Term.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceSchedule]
   }
 }

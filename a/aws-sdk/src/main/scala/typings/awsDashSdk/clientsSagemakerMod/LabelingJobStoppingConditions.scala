@@ -18,12 +18,12 @@ trait LabelingJobStoppingConditions extends js.Object {
 object LabelingJobStoppingConditions {
   @scala.inline
   def apply(
-    MaxHumanLabeledObjectCount: js.UndefOr[MaxHumanLabeledObjectCount] = js.undefined,
-    MaxPercentageOfInputDatasetLabeled: js.UndefOr[MaxPercentageOfInputDatasetLabeled] = js.undefined
+    MaxHumanLabeledObjectCount: Int | Double = null,
+    MaxPercentageOfInputDatasetLabeled: Int | Double = null
   ): LabelingJobStoppingConditions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxHumanLabeledObjectCount)) __obj.updateDynamic("MaxHumanLabeledObjectCount")(MaxHumanLabeledObjectCount)
-    if (!js.isUndefined(MaxPercentageOfInputDatasetLabeled)) __obj.updateDynamic("MaxPercentageOfInputDatasetLabeled")(MaxPercentageOfInputDatasetLabeled)
+    if (MaxHumanLabeledObjectCount != null) __obj.updateDynamic("MaxHumanLabeledObjectCount")(MaxHumanLabeledObjectCount.asInstanceOf[js.Any])
+    if (MaxPercentageOfInputDatasetLabeled != null) __obj.updateDynamic("MaxPercentageOfInputDatasetLabeled")(MaxPercentageOfInputDatasetLabeled.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobStoppingConditions]
   }
 }

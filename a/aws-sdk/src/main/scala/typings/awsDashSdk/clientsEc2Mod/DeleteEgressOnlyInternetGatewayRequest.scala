@@ -19,7 +19,7 @@ object DeleteEgressOnlyInternetGatewayRequest {
   @scala.inline
   def apply(
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteEgressOnlyInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(EgressOnlyInternetGatewayId = EgressOnlyInternetGatewayId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

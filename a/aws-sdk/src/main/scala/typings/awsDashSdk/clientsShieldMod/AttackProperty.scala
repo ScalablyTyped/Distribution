@@ -33,14 +33,14 @@ object AttackProperty {
     AttackLayer: AttackLayer = null,
     AttackPropertyIdentifier: AttackPropertyIdentifier = null,
     TopContributors: TopContributors = null,
-    Total: js.UndefOr[Long] = js.undefined,
+    Total: Int | scala.Double = null,
     Unit: Unit = null
   ): AttackProperty = {
     val __obj = js.Dynamic.literal()
     if (AttackLayer != null) __obj.updateDynamic("AttackLayer")(AttackLayer.asInstanceOf[js.Any])
     if (AttackPropertyIdentifier != null) __obj.updateDynamic("AttackPropertyIdentifier")(AttackPropertyIdentifier.asInstanceOf[js.Any])
     if (TopContributors != null) __obj.updateDynamic("TopContributors")(TopContributors)
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total)
+    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackProperty]
   }

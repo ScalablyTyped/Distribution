@@ -1,6 +1,6 @@
 package typings.foundation
 
-import typings.foundation.FoundationNs.Options
+import typings.foundation.Foundation.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

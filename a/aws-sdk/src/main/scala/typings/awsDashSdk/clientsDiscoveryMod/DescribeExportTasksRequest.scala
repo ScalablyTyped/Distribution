@@ -28,13 +28,13 @@ object DescribeExportTasksRequest {
   def apply(
     exportIds: ExportIds = null,
     filters: ExportFilters = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): DescribeExportTasksRequest = {
     val __obj = js.Dynamic.literal()
     if (exportIds != null) __obj.updateDynamic("exportIds")(exportIds)
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeExportTasksRequest]
   }

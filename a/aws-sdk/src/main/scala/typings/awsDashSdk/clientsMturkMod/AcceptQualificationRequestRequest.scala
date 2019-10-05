@@ -17,9 +17,9 @@ trait AcceptQualificationRequestRequest extends js.Object {
 
 object AcceptQualificationRequestRequest {
   @scala.inline
-  def apply(QualificationRequestId: String, IntegerValue: js.UndefOr[Integer] = js.undefined): AcceptQualificationRequestRequest = {
+  def apply(QualificationRequestId: String, IntegerValue: Int | Double = null): AcceptQualificationRequestRequest = {
     val __obj = js.Dynamic.literal(QualificationRequestId = QualificationRequestId)
-    if (!js.isUndefined(IntegerValue)) __obj.updateDynamic("IntegerValue")(IntegerValue)
+    if (IntegerValue != null) __obj.updateDynamic("IntegerValue")(IntegerValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptQualificationRequestRequest]
   }
 }

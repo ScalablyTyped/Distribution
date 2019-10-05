@@ -34,7 +34,7 @@ trait AuthorizationRule extends js.Object {
 object AuthorizationRule {
   @scala.inline
   def apply(
-    AccessAll: js.UndefOr[Boolean] = js.undefined,
+    AccessAll: js.UndefOr[scala.Boolean] = js.undefined,
     ClientVpnEndpointId: String = null,
     Description: String = null,
     DestinationCidr: String = null,

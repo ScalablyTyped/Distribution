@@ -2,8 +2,8 @@ package typings.atOracleOraclejet.ojmessageMod
 
 import typings.atOracleOraclejet.Anon_Categories
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetSettableProperties
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.DisplayOptions
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.Message
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

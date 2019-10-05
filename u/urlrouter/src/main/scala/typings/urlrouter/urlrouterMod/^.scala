@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(handler: js.Function1[/* app */ App, Unit]): HttpHandler = js.native
-  def _UrlRouterfunc(handler: js.Function1[/* app */ App, Unit]): Unit = js.native
-  def _UrlRouterfunc(handler: js.Function1[/* app */ App, Unit], options: js.Any): Unit = js.native
 }
 

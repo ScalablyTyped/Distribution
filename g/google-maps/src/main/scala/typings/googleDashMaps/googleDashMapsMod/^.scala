@@ -16,14 +16,5 @@ object ^ extends js.Object {
   var URL: String = js.native
   var VERSION: String = js.native
   var WINDOW_CALLBACK_NAME: String = js.native
-  def createLoader(): Unit = js.native
-  def createUrl(): String = js.native
-  def isLoaded(): Boolean = js.native
-  def load(): Unit = js.native
-  def load(callBack: CallBack): Unit = js.native
-  def makeMock(): Unit = js.native
-  def onLoad(): Unit = js.native
-  def onLoad(callBack: CallBack): Unit = js.native
-  def release(callBack: js.Function): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotPrediction
 
-import typings.gapiDotClientDotPrediction.gapiNs.clientNs.predictionNs.Insert2
+import typings.gapiDotClientDotPrediction.gapi.client.prediction.Insert2
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -83,9 +83,9 @@ object ModifyReplicationGroupMessage {
   @scala.inline
   def apply(
     ReplicationGroupId: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutomaticFailoverEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
     CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
@@ -97,7 +97,7 @@ object ModifyReplicationGroupMessage {
     PrimaryClusterId: String = null,
     ReplicationGroupDescription: String = null,
     SecurityGroupIds: SecurityGroupIdsList = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null,
     SnapshottingClusterId: String = null
   ): ModifyReplicationGroupMessage = {
@@ -116,7 +116,7 @@ object ModifyReplicationGroupMessage {
     if (PrimaryClusterId != null) __obj.updateDynamic("PrimaryClusterId")(PrimaryClusterId)
     if (ReplicationGroupDescription != null) __obj.updateDynamic("ReplicationGroupDescription")(ReplicationGroupDescription)
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     if (SnapshottingClusterId != null) __obj.updateDynamic("SnapshottingClusterId")(SnapshottingClusterId)
     __obj.asInstanceOf[ModifyReplicationGroupMessage]

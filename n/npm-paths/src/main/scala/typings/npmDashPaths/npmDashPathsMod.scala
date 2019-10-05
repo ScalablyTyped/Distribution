@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object npmDashPathsMod extends js.Object {
   def apply(): js.Array[String] = js.native
-  def apply(cwd: String | Anon_Cwd): js.Array[String] = js.native
+  def apply(cwd: String): js.Array[String] = js.native
+  def apply(cwd: Anon_Cwd): js.Array[String] = js.native
 }
 

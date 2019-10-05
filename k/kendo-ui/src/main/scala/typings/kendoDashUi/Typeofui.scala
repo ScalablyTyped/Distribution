@@ -1,8 +1,8 @@
 package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.DraggableOptions
-import typings.kendoDashUi.kendoNs.uiNs.DropTargetAreaOptions
+import typings.kendoDashUi.kendo.ui.DraggableOptions
+import typings.kendoDashUi.kendo.ui.DropTargetAreaOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait Typeofui extends js.Object {
   var Draggable: Instantiable2[
     /* element */ Element, 
     js.UndefOr[/* options */ DraggableOptions], 
-    typings.kendoDashUi.kendoNs.uiNs.Draggable
+    typings.kendoDashUi.kendo.ui.Draggable
   ] = js.native
   var Drawer: TypeofClassDrawer = js.native
   var DropDownList: TypeofClassDropDownList = js.native
@@ -38,7 +38,7 @@ trait Typeofui extends js.Object {
   var DropTargetArea: Instantiable2[
     /* element */ Element, 
     js.UndefOr[/* options */ DropTargetAreaOptions], 
-    typings.kendoDashUi.kendoNs.uiNs.DropTargetArea
+    typings.kendoDashUi.kendo.ui.DropTargetArea
   ] = js.native
   var Editor: TypeofClassEditor = js.native
   var Filter: TypeofClassFilter = js.native
@@ -86,7 +86,7 @@ trait Typeofui extends js.Object {
   var Validator: TypeofClassValidator = js.native
   var Widget: TypeofClassWidget = js.native
   var Window: TypeofClassWindow = js.native
-  val editorNs: Typeofeditor = js.native
+  val editor: Typeofeditor = js.native
   def plugin(
     widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native

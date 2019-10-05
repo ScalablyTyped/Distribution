@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Step")
 @js.native
 class Step ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.StepperNs.Step
+  extends typings.materialDashUi.__MaterialUI.Stepper.Step
 

@@ -34,14 +34,15 @@ object ConnectionField {
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ConnectionField,
     label: String,
     loc: Location,
-    metadata: Metadata,
     name: String,
     resolver: String,
     selections: js.Array[Selection],
-    `type`: GraphQLOutputType
+    `type`: GraphQLOutputType,
+    metadata: Metadata = null
   ): ConnectionField = {
-    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, label = label, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, resolver = resolver, selections = selections)
+    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, label = label, loc = loc, name = name, resolver = resolver, selections = selections)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionField]
   }
 }

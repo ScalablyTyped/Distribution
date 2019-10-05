@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.notifications.NotificationOptions
 import typings.chromeDashApps.chromeDashAppsNumbers.`true`
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.integer
-import typings.chromeDashApps.chromeNs.notificationsNs.NotificationOptions
 import typings.std.Exclude
 import typings.std.Partial
 import scala.scalajs.js

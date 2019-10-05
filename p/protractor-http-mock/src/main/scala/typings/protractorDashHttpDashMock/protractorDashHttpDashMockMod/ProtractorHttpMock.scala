@@ -1,7 +1,7 @@
 package typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod
 
 import typings.protractorDashHttpDashMock.Anon_ProtractorConfig
-import typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod.requestsNs.AllRequests
+import typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod.requests.AllRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

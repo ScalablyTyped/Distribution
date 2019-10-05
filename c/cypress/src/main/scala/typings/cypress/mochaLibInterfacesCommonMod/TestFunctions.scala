@@ -1,7 +1,7 @@
 package typings.cypress.mochaLibInterfacesCommonMod
 
 import typings.cypress.Mocha
-import typings.cypress.MochaNs.Test
+import typings.cypress.Mocha.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

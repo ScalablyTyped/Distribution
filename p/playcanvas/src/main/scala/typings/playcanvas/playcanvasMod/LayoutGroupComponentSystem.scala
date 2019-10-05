@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "LayoutGroupComponentSystem")
 @js.native
 class LayoutGroupComponentSystem protected ()
-  extends typings.playcanvas.pcNs.LayoutGroupComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.LayoutGroupComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

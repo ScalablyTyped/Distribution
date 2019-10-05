@@ -13,9 +13,10 @@ trait ModalProviderProps extends js.Object {
 
 object ModalProviderProps {
   @scala.inline
-  def apply(children: ReactNode, backgroundComponent: AnyStyledComponent = null): ModalProviderProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def apply(backgroundComponent: AnyStyledComponent = null, children: ReactNode = null): ModalProviderProps = {
+    val __obj = js.Dynamic.literal()
     if (backgroundComponent != null) __obj.updateDynamic("backgroundComponent")(backgroundComponent)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProviderProps]
   }
 }

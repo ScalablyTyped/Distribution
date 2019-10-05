@@ -1,5 +1,6 @@
 package typings.lodash.fpMod
 
+import typings.lodash.Typeoflodash
 import typings.lodash.lodashMod.AnyKindOfDictionary
 import typings.lodash.lodashMod.AssignCustomizer
 import typings.lodash.lodashMod.Cancelable
@@ -3783,7 +3784,7 @@ trait LoDashFp extends js.Object {
   def negate[A1, A2](predicate: js.Function2[/* a1 */ A1, /* a2 */ A2, Boolean]): js.Function2[/* a1 */ A1, /* a2 */ A2, Boolean] = js.native
   @JSName("negate")
   def negate_A1[A1](predicate: js.Function1[/* a1 */ A1, Boolean]): js.Function1[/* a1 */ A1, Boolean] = js.native
-  def noConflict(): LoDashFp = js.native
+  def noConflict(): Typeoflodash = js.native
   def noop(args: js.Any*): Unit = js.native
   def now(): Double = js.native
   def nth(n: Double): LodashNth1x1 = js.native

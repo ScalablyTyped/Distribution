@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksServiceAreaTaskMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServiceAreaTaskConstructor
+import typings.arcgisDashJsDashApi.__esri.ServiceAreaTaskConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var Please: typings.pleasejs.PleaseJSNs.Please = js.native
+  var Please: typings.pleasejs.PleaseJS.Please = js.native
 }
 

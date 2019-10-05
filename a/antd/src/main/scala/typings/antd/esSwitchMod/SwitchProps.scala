@@ -2,6 +2,7 @@ package typings.antd.esSwitchMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +34,8 @@ object SwitchProps {
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
-    onChange: SwitchChangeEventHandler = null,
-    onClick: SwitchClickEventHandler = null,
+    onChange: (/* checked */ Boolean, /* event */ MouseEvent) => Unit = null,
+    onClick: (/* checked */ Boolean, /* event */ MouseEvent) => Unit = null,
     prefixCls: String = null,
     size: SwitchSize = null,
     style: CSSProperties = null,
@@ -49,8 +50,8 @@ object SwitchProps {
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size)
     if (style != null) __obj.updateDynamic("style")(style)

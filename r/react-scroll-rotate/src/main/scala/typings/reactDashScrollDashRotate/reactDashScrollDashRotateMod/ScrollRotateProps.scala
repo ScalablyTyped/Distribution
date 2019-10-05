@@ -21,8 +21,8 @@ trait ScrollRotateProps extends js.Object {
 object ScrollRotateProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     animationDuration: Int | Double = null,
+    children: ReactNode = null,
     from: Int | Double = null,
     loops: Int | Double = null,
     method: px | prec = null,
@@ -30,8 +30,9 @@ object ScrollRotateProps {
     throttle: Int | Double = null,
     to: Int | Double = null
   ): ScrollRotateProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (loops != null) __obj.updateDynamic("loops")(loops.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])

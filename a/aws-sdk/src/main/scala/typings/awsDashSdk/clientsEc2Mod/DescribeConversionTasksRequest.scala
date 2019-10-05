@@ -17,7 +17,7 @@ trait DescribeConversionTasksRequest extends js.Object {
 
 object DescribeConversionTasksRequest {
   @scala.inline
-  def apply(ConversionTaskIds: ConversionIdStringList = null, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeConversionTasksRequest = {
+  def apply(ConversionTaskIds: ConversionIdStringList = null, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeConversionTasksRequest = {
     val __obj = js.Dynamic.literal()
     if (ConversionTaskIds != null) __obj.updateDynamic("ConversionTaskIds")(ConversionTaskIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

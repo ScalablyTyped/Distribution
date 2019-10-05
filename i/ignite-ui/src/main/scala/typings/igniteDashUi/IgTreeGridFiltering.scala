@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -411,14 +412,14 @@ object IgTreeGridFiltering {
     advancedModeHeaderButtonLocation: String = null,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     columnSettings: js.Array[IgGridFilteringColumnSetting] = null,
-    dataFiltered: DataFilteredEvent = null,
-    dataFiltering: DataFilteringEvent = null,
+    dataFiltered: (/* event */ Event, /* ui */ DataFilteredEventUIParam) => Unit = null,
+    dataFiltering: (/* event */ Event, /* ui */ DataFilteringEventUIParam) => Unit = null,
     dialogWidget: String = null,
     displayMode: js.Any = null,
-    dropDownClosed: DropDownClosedEvent = null,
-    dropDownClosing: DropDownClosingEvent = null,
-    dropDownOpened: DropDownOpenedEvent = null,
-    dropDownOpening: DropDownOpeningEvent = null,
+    dropDownClosed: (/* event */ Event, /* ui */ DropDownClosedEventUIParam) => Unit = null,
+    dropDownClosing: (/* event */ Event, /* ui */ DropDownClosingEventUIParam) => Unit = null,
+    dropDownOpened: (/* event */ Event, /* ui */ DropDownOpenedEventUIParam) => Unit = null,
+    dropDownOpening: (/* event */ Event, /* ui */ DropDownOpeningEventUIParam) => Unit = null,
     featureChooserText: String = null,
     featureChooserTextAdvancedFilter: String = null,
     featureChooserTextHide: String = null,
@@ -427,25 +428,25 @@ object IgTreeGridFiltering {
     filterDialogAddButtonWidth: String | Double = null,
     filterDialogAddConditionDropDownTemplate: String = null,
     filterDialogAddConditionTemplate: String = null,
-    filterDialogClosed: FilterDialogClosedEvent = null,
-    filterDialogClosing: FilterDialogClosingEvent = null,
+    filterDialogClosed: (/* event */ Event, /* ui */ FilterDialogClosedEventUIParam) => Unit = null,
+    filterDialogClosing: (/* event */ Event, /* ui */ FilterDialogClosingEventUIParam) => Unit = null,
     filterDialogColumnDropDownDefaultWidth: String | Double = null,
     filterDialogContainment: String = null,
-    filterDialogContentsRendered: FilterDialogContentsRenderedEvent = null,
-    filterDialogContentsRendering: FilterDialogContentsRenderingEvent = null,
+    filterDialogContentsRendered: (/* event */ Event, /* ui */ FilterDialogContentsRenderedEventUIParam) => Unit = null,
+    filterDialogContentsRendering: (/* event */ Event, /* ui */ FilterDialogContentsRenderingEventUIParam) => Unit = null,
     filterDialogExprInputDefaultWidth: String | Double = null,
-    filterDialogFilterAdded: FilterDialogFilterAddedEvent = null,
-    filterDialogFilterAdding: FilterDialogFilterAddingEvent = null,
+    filterDialogFilterAdded: (/* event */ Event, /* ui */ FilterDialogFilterAddedEventUIParam) => Unit = null,
+    filterDialogFilterAdding: (/* event */ Event, /* ui */ FilterDialogFilterAddingEventUIParam) => Unit = null,
     filterDialogFilterConditionTemplate: String = null,
     filterDialogFilterDropDownDefaultWidth: String | Double = null,
     filterDialogFilterTemplate: String = null,
-    filterDialogFiltering: FilterDialogFilteringEvent = null,
+    filterDialogFiltering: (/* event */ Event, /* ui */ FilterDialogFilteringEventUIParam) => Unit = null,
     filterDialogHeight: String | Double = null,
     filterDialogMaxFilterCount: Int | Double = null,
-    filterDialogMoving: FilterDialogMovingEvent = null,
+    filterDialogMoving: (/* event */ Event, /* ui */ FilterDialogMovingEventUIParam) => Unit = null,
     filterDialogOkCancelButtonWidth: String | Double = null,
-    filterDialogOpened: FilterDialogOpenedEvent = null,
-    filterDialogOpening: FilterDialogOpeningEvent = null,
+    filterDialogOpened: (/* event */ Event, /* ui */ FilterDialogOpenedEventUIParam) => Unit = null,
+    filterDialogOpening: (/* event */ Event, /* ui */ FilterDialogOpeningEventUIParam) => Unit = null,
     filterDialogWidth: String | Double = null,
     filterDropDownAnimationDuration: Int | Double = null,
     filterDropDownAnimations: String = null,
@@ -479,14 +480,14 @@ object IgTreeGridFiltering {
     if (advancedModeHeaderButtonLocation != null) __obj.updateDynamic("advancedModeHeaderButtonLocation")(advancedModeHeaderButtonLocation)
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(dataFiltered)
-    if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(dataFiltering)
+    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(js.Any.fromFunction2(dataFiltered))
+    if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(js.Any.fromFunction2(dataFiltering))
     if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
-    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
-    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
-    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
-    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(js.Any.fromFunction2(dropDownClosed))
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(js.Any.fromFunction2(dropDownClosing))
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(js.Any.fromFunction2(dropDownOpened))
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(js.Any.fromFunction2(dropDownOpening))
     if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
     if (featureChooserTextAdvancedFilter != null) __obj.updateDynamic("featureChooserTextAdvancedFilter")(featureChooserTextAdvancedFilter)
     if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide)
@@ -495,25 +496,25 @@ object IgTreeGridFiltering {
     if (filterDialogAddButtonWidth != null) __obj.updateDynamic("filterDialogAddButtonWidth")(filterDialogAddButtonWidth.asInstanceOf[js.Any])
     if (filterDialogAddConditionDropDownTemplate != null) __obj.updateDynamic("filterDialogAddConditionDropDownTemplate")(filterDialogAddConditionDropDownTemplate)
     if (filterDialogAddConditionTemplate != null) __obj.updateDynamic("filterDialogAddConditionTemplate")(filterDialogAddConditionTemplate)
-    if (filterDialogClosed != null) __obj.updateDynamic("filterDialogClosed")(filterDialogClosed)
-    if (filterDialogClosing != null) __obj.updateDynamic("filterDialogClosing")(filterDialogClosing)
+    if (filterDialogClosed != null) __obj.updateDynamic("filterDialogClosed")(js.Any.fromFunction2(filterDialogClosed))
+    if (filterDialogClosing != null) __obj.updateDynamic("filterDialogClosing")(js.Any.fromFunction2(filterDialogClosing))
     if (filterDialogColumnDropDownDefaultWidth != null) __obj.updateDynamic("filterDialogColumnDropDownDefaultWidth")(filterDialogColumnDropDownDefaultWidth.asInstanceOf[js.Any])
     if (filterDialogContainment != null) __obj.updateDynamic("filterDialogContainment")(filterDialogContainment)
-    if (filterDialogContentsRendered != null) __obj.updateDynamic("filterDialogContentsRendered")(filterDialogContentsRendered)
-    if (filterDialogContentsRendering != null) __obj.updateDynamic("filterDialogContentsRendering")(filterDialogContentsRendering)
+    if (filterDialogContentsRendered != null) __obj.updateDynamic("filterDialogContentsRendered")(js.Any.fromFunction2(filterDialogContentsRendered))
+    if (filterDialogContentsRendering != null) __obj.updateDynamic("filterDialogContentsRendering")(js.Any.fromFunction2(filterDialogContentsRendering))
     if (filterDialogExprInputDefaultWidth != null) __obj.updateDynamic("filterDialogExprInputDefaultWidth")(filterDialogExprInputDefaultWidth.asInstanceOf[js.Any])
-    if (filterDialogFilterAdded != null) __obj.updateDynamic("filterDialogFilterAdded")(filterDialogFilterAdded)
-    if (filterDialogFilterAdding != null) __obj.updateDynamic("filterDialogFilterAdding")(filterDialogFilterAdding)
+    if (filterDialogFilterAdded != null) __obj.updateDynamic("filterDialogFilterAdded")(js.Any.fromFunction2(filterDialogFilterAdded))
+    if (filterDialogFilterAdding != null) __obj.updateDynamic("filterDialogFilterAdding")(js.Any.fromFunction2(filterDialogFilterAdding))
     if (filterDialogFilterConditionTemplate != null) __obj.updateDynamic("filterDialogFilterConditionTemplate")(filterDialogFilterConditionTemplate)
     if (filterDialogFilterDropDownDefaultWidth != null) __obj.updateDynamic("filterDialogFilterDropDownDefaultWidth")(filterDialogFilterDropDownDefaultWidth.asInstanceOf[js.Any])
     if (filterDialogFilterTemplate != null) __obj.updateDynamic("filterDialogFilterTemplate")(filterDialogFilterTemplate)
-    if (filterDialogFiltering != null) __obj.updateDynamic("filterDialogFiltering")(filterDialogFiltering)
+    if (filterDialogFiltering != null) __obj.updateDynamic("filterDialogFiltering")(js.Any.fromFunction2(filterDialogFiltering))
     if (filterDialogHeight != null) __obj.updateDynamic("filterDialogHeight")(filterDialogHeight.asInstanceOf[js.Any])
     if (filterDialogMaxFilterCount != null) __obj.updateDynamic("filterDialogMaxFilterCount")(filterDialogMaxFilterCount.asInstanceOf[js.Any])
-    if (filterDialogMoving != null) __obj.updateDynamic("filterDialogMoving")(filterDialogMoving)
+    if (filterDialogMoving != null) __obj.updateDynamic("filterDialogMoving")(js.Any.fromFunction2(filterDialogMoving))
     if (filterDialogOkCancelButtonWidth != null) __obj.updateDynamic("filterDialogOkCancelButtonWidth")(filterDialogOkCancelButtonWidth.asInstanceOf[js.Any])
-    if (filterDialogOpened != null) __obj.updateDynamic("filterDialogOpened")(filterDialogOpened)
-    if (filterDialogOpening != null) __obj.updateDynamic("filterDialogOpening")(filterDialogOpening)
+    if (filterDialogOpened != null) __obj.updateDynamic("filterDialogOpened")(js.Any.fromFunction2(filterDialogOpened))
+    if (filterDialogOpening != null) __obj.updateDynamic("filterDialogOpening")(js.Any.fromFunction2(filterDialogOpening))
     if (filterDialogWidth != null) __obj.updateDynamic("filterDialogWidth")(filterDialogWidth.asInstanceOf[js.Any])
     if (filterDropDownAnimationDuration != null) __obj.updateDynamic("filterDropDownAnimationDuration")(filterDropDownAnimationDuration.asInstanceOf[js.Any])
     if (filterDropDownAnimations != null) __obj.updateDynamic("filterDropDownAnimations")(filterDropDownAnimations)

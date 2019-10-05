@@ -29,13 +29,13 @@ object DiskImageDescription {
     Checksum: String = null,
     Format: DiskImageFormat = null,
     ImportManifestUrl: String = null,
-    Size: js.UndefOr[Long] = js.undefined
+    Size: Int | scala.Double = null
   ): DiskImageDescription = {
     val __obj = js.Dynamic.literal()
     if (Checksum != null) __obj.updateDynamic("Checksum")(Checksum)
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (ImportManifestUrl != null) __obj.updateDynamic("ImportManifestUrl")(ImportManifestUrl)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskImageDescription]
   }
 }

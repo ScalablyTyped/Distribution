@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportLODMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LOD
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LODProperties
+import typings.arcgisDashJsDashApi.__esri.LOD
+import typings.arcgisDashJsDashApi.__esri.LODProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,9 @@
 package typings.grommet.componentsTabsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
@@ -23,4 +25,13 @@ class Tabs protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/Tabs", "Tabs")
+@js.native
+object Tabs extends TopLevel[
+      ComponentClass[
+        TabsProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+        ComponentState
+      ]
+    ]
 

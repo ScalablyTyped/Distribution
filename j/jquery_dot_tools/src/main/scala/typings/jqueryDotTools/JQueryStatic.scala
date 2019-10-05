@@ -1,6 +1,6 @@
 package typings.jqueryDotTools
 
-import typings.jqueryDotTools.JQueryToolsNs.ToolsStatic
+import typings.jqueryDotTools.JQueryTools.ToolsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

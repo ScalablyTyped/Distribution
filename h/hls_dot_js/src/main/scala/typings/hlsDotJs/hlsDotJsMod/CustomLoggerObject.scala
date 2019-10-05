@@ -15,18 +15,18 @@ trait CustomLoggerObject extends js.Object {
 object CustomLoggerObject {
   @scala.inline
   def apply(
-    debug: CustomLogger = null,
-    error: CustomLogger = null,
-    info: CustomLogger = null,
-    log: CustomLogger = null,
-    warn: CustomLogger = null
+    debug: /* repeated */ js.Any => Unit = null,
+    error: /* repeated */ js.Any => Unit = null,
+    info: /* repeated */ js.Any => Unit = null,
+    log: /* repeated */ js.Any => Unit = null,
+    warn: /* repeated */ js.Any => Unit = null
   ): CustomLoggerObject = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
+    if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction1(warn))
     __obj.asInstanceOf[CustomLoggerObject]
   }
 }

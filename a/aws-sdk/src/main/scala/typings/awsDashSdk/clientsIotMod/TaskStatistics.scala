@@ -38,22 +38,22 @@ trait TaskStatistics extends js.Object {
 object TaskStatistics {
   @scala.inline
   def apply(
-    canceledChecks: js.UndefOr[CanceledChecksCount] = js.undefined,
-    compliantChecks: js.UndefOr[CompliantChecksCount] = js.undefined,
-    failedChecks: js.UndefOr[FailedChecksCount] = js.undefined,
-    inProgressChecks: js.UndefOr[InProgressChecksCount] = js.undefined,
-    nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.undefined,
-    totalChecks: js.UndefOr[TotalChecksCount] = js.undefined,
-    waitingForDataCollectionChecks: js.UndefOr[WaitingForDataCollectionChecksCount] = js.undefined
+    canceledChecks: Int | Double = null,
+    compliantChecks: Int | Double = null,
+    failedChecks: Int | Double = null,
+    inProgressChecks: Int | Double = null,
+    nonCompliantChecks: Int | Double = null,
+    totalChecks: Int | Double = null,
+    waitingForDataCollectionChecks: Int | Double = null
   ): TaskStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canceledChecks)) __obj.updateDynamic("canceledChecks")(canceledChecks)
-    if (!js.isUndefined(compliantChecks)) __obj.updateDynamic("compliantChecks")(compliantChecks)
-    if (!js.isUndefined(failedChecks)) __obj.updateDynamic("failedChecks")(failedChecks)
-    if (!js.isUndefined(inProgressChecks)) __obj.updateDynamic("inProgressChecks")(inProgressChecks)
-    if (!js.isUndefined(nonCompliantChecks)) __obj.updateDynamic("nonCompliantChecks")(nonCompliantChecks)
-    if (!js.isUndefined(totalChecks)) __obj.updateDynamic("totalChecks")(totalChecks)
-    if (!js.isUndefined(waitingForDataCollectionChecks)) __obj.updateDynamic("waitingForDataCollectionChecks")(waitingForDataCollectionChecks)
+    if (canceledChecks != null) __obj.updateDynamic("canceledChecks")(canceledChecks.asInstanceOf[js.Any])
+    if (compliantChecks != null) __obj.updateDynamic("compliantChecks")(compliantChecks.asInstanceOf[js.Any])
+    if (failedChecks != null) __obj.updateDynamic("failedChecks")(failedChecks.asInstanceOf[js.Any])
+    if (inProgressChecks != null) __obj.updateDynamic("inProgressChecks")(inProgressChecks.asInstanceOf[js.Any])
+    if (nonCompliantChecks != null) __obj.updateDynamic("nonCompliantChecks")(nonCompliantChecks.asInstanceOf[js.Any])
+    if (totalChecks != null) __obj.updateDynamic("totalChecks")(totalChecks.asInstanceOf[js.Any])
+    if (waitingForDataCollectionChecks != null) __obj.updateDynamic("waitingForDataCollectionChecks")(waitingForDataCollectionChecks.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskStatistics]
   }
 }

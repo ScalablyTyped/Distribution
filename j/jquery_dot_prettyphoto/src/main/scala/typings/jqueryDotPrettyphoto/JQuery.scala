@@ -1,7 +1,7 @@
 package typings.jqueryDotPrettyphoto
 
-import typings.jqueryDotPrettyphoto.scaronUnderscorePrettyPhotoNs.PrettyPhotoSettings
-import typings.jqueryDotPrettyphoto.scaronUnderscorePrettyPhotoNs.moduleJQuery
+import typings.jqueryDotPrettyphoto.scaron_prettyPhoto.PrettyPhotoSettings
+import typings.jqueryDotPrettyphoto.scaron_prettyPhoto.moduleJQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

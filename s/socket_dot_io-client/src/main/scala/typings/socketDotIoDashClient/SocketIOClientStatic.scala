@@ -1,10 +1,10 @@
 package typings.socketDotIoDashClient
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.socketDotIoDashClient.SocketIOClientNs.ConnectOpts
-import typings.socketDotIoDashClient.SocketIOClientNs.Manager
-import typings.socketDotIoDashClient.SocketIOClientNs.ManagerStatic
-import typings.socketDotIoDashClient.SocketIOClientNs.Socket
+import typings.socketDotIoDashClient.SocketIOClient.ConnectOpts
+import typings.socketDotIoDashClient.SocketIOClient.Manager
+import typings.socketDotIoDashClient.SocketIOClient.ManagerStatic
+import typings.socketDotIoDashClient.SocketIOClient.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait SocketIOClientStatic extends js.Object {
   /**
   	 * Socket constructor - exposed for the standalone build
   	 */
-  var Socket: typings.socketDotIoDashClient.SocketIOClientNs.Socket = js.native
+  var Socket: typings.socketDotIoDashClient.SocketIOClient.Socket = js.native
   /**
     * Managers cache
     */
@@ -58,7 +58,7 @@ trait SocketIOClientStatic extends js.Object {
   /**
   	 * Manager constructor - exposed for the standalone build
   	 */
-  def Manager(opts: ConnectOpts): typings.socketDotIoDashClient.SocketIOClientNs.Manager = js.native
+  def Manager(opts: ConnectOpts): typings.socketDotIoDashClient.SocketIOClient.Manager = js.native
   /**
   		 * Creates a new Manager
   		 * @param uri The URI that we're connecting to (e.g. http://localhost:4000)
@@ -68,8 +68,8 @@ trait SocketIOClientStatic extends js.Object {
   /**
   	 * Manager constructor - exposed for the standalone build
   	 */
-  def Manager(uri: String): typings.socketDotIoDashClient.SocketIOClientNs.Manager = js.native
-  def Manager(uri: String, opts: ConnectOpts): typings.socketDotIoDashClient.SocketIOClientNs.Manager = js.native
+  def Manager(uri: String): typings.socketDotIoDashClient.SocketIOClient.Manager = js.native
+  def Manager(uri: String, opts: ConnectOpts): typings.socketDotIoDashClient.SocketIOClient.Manager = js.native
   /**
   	 * @see the default constructor (io(opts))
   	 */

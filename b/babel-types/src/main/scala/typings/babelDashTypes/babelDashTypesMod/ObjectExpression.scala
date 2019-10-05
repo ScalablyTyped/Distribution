@@ -33,3 +33,10 @@ object ObjectExpression {
   }
 }
 
+@JSImport("babel-types", "objectExpression")
+@js.native
+object objectExpression extends js.Object {
+  def apply(): ObjectExpression = js.native
+  def apply(properties: js.Array[ObjectProperty | ObjectMethod | SpreadProperty]): ObjectExpression = js.native
+}
+

@@ -1,5 +1,6 @@
 package typings.ngtoaster.ngtoasterMod
 
+import typings.std.Event
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,11 +39,11 @@ object IToast {
   def apply(
     body: String = null,
     bodyOutputType: String = null,
-    clickHandler: EventListener = null,
+    clickHandler: /* evt */ Event => Unit = null,
     closeHtml: String = null,
     directiveData: js.Any = null,
-    onHideCallback: IToastCallback = null,
-    onShowCallback: IToastCallback = null,
+    onHideCallback: /* toast */ IToast => Unit = null,
+    onShowCallback: /* toast */ IToast => Unit = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     tapToDismiss: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
@@ -53,11 +54,11 @@ object IToast {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body)
     if (bodyOutputType != null) __obj.updateDynamic("bodyOutputType")(bodyOutputType)
-    if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
+    if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction1(clickHandler))
     if (closeHtml != null) __obj.updateDynamic("closeHtml")(closeHtml)
     if (directiveData != null) __obj.updateDynamic("directiveData")(directiveData)
-    if (onHideCallback != null) __obj.updateDynamic("onHideCallback")(onHideCallback)
-    if (onShowCallback != null) __obj.updateDynamic("onShowCallback")(onShowCallback)
+    if (onHideCallback != null) __obj.updateDynamic("onHideCallback")(js.Any.fromFunction1(onHideCallback))
+    if (onShowCallback != null) __obj.updateDynamic("onShowCallback")(js.Any.fromFunction1(onShowCallback))
     if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
     if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

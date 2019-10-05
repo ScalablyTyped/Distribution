@@ -11,10 +11,10 @@ trait PublishCallbacksHash extends js.Object {
 
 object PublishCallbacksHash {
   @scala.inline
-  def apply(onError: ErrorCallback = null, onSuccess: Callback = null): PublishCallbacksHash = {
+  def apply(onError: /* args */ ErrorArgs => Unit = null, onSuccess: () => Unit = null): PublishCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     __obj.asInstanceOf[PublishCallbacksHash]
   }
 }

@@ -1,7 +1,7 @@
 package typings.svgDashSprite.svgDashSpriteMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -27,7 +27,9 @@ object ^ extends js.Object {
     * @param server Initialize request-stats with an instance a HTTP server.
     * @param statsCallback A callback which will be called for each completed HTTP request with a stats object.
     */
-  def apply(server: Server | typings.node.httpsMod.Server): StatsEmitter = js.native
-  def apply(server: Server | typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = js.native
+  def apply(server: Server): StatsEmitter = js.native
+  def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = js.native
+  def apply(server: typings.node.httpsMod.Server): StatsEmitter = js.native
+  def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = js.native
 }
 

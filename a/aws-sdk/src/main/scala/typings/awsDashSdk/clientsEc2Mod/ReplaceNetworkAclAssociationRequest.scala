@@ -21,7 +21,7 @@ trait ReplaceNetworkAclAssociationRequest extends js.Object {
 
 object ReplaceNetworkAclAssociationRequest {
   @scala.inline
-  def apply(AssociationId: String, NetworkAclId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ReplaceNetworkAclAssociationRequest = {
+  def apply(AssociationId: String, NetworkAclId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ReplaceNetworkAclAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId, NetworkAclId = NetworkAclId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ReplaceNetworkAclAssociationRequest]

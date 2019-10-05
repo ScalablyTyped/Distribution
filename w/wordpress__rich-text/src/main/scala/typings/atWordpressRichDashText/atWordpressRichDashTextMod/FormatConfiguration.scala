@@ -18,7 +18,7 @@ trait FormatConfiguration extends js.Object {
     js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String])
   ] = js.undefined
   var `object`: js.UndefOr[Boolean] = js.undefined
-  var tagName: (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any) with String
+  var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String
   var title: String
 }
 
@@ -26,7 +26,7 @@ object FormatConfiguration {
   @scala.inline
   def apply(
     edit: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<FormatProps> */ js.Any,
-    tagName: (/* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any) with String,
+    tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String,
     title: String,
     attributes: Record[String, String] = null,
     className: String = null,

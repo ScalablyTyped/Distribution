@@ -54,7 +54,7 @@ object Event {
     blockName: BlockName = null,
     describeBlock: DescribeBlock = null,
     error: String | Exception = null,
-    fn: HookFn = null,
+    fn: /* done */ js.UndefOr[DoneFn] => js.UndefOr[js.Promise[js.Any] | Null] = null,
     hook: Hook = null,
     hookType: HookType = null,
     mode: BlockMode = null,
@@ -70,7 +70,7 @@ object Event {
     if (blockName != null) __obj.updateDynamic("blockName")(blockName)
     if (describeBlock != null) __obj.updateDynamic("describeBlock")(describeBlock)
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction1(fn))
     if (hook != null) __obj.updateDynamic("hook")(hook)
     if (hookType != null) __obj.updateDynamic("hookType")(hookType)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

@@ -9,12 +9,18 @@ trait Location extends js.Object {
   var uri: String
 }
 
-object Location {
-  @scala.inline
-  def apply(range: Range, uri: String): Location = {
-    val __obj = js.Dynamic.literal(range = range, uri = uri)
-  
-    __obj.asInstanceOf[Location]
-  }
+@JSImport("vscode-languageserver-types", "Location")
+@js.native
+object Location extends js.Object {
+  /**
+    * Creates a Location literal.
+    * @param uri The location's uri.
+    * @param range The location's range.
+    */
+  def create(uri: String, range: Range): Location = js.native
+  /**
+    * Checks whether the given literal conforms to the [Location](#Location) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean = js.native
 }
 

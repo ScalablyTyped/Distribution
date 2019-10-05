@@ -1,0 +1,19 @@
+package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AccordionGroupCancelEventArgs extends ProcessingModeCancelEventArgs {
+  val group: BootstrapAccordionGroup
+}
+
+object AccordionGroupCancelEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, group: BootstrapAccordionGroup, processOnServer: Boolean, sender: Control): AccordionGroupCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, processOnServer = processOnServer, sender = sender)
+  
+    __obj.asInstanceOf[AccordionGroupCancelEventArgs]
+  }
+}
+

@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriWidgetsTrackTrackViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Graphic
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrackViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrackViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.Graphic
+import typings.arcgisDashJsDashApi.__esri.MapView
+import typings.arcgisDashJsDashApi.__esri.SceneView
+import typings.arcgisDashJsDashApi.__esri.TrackViewModel
+import typings.arcgisDashJsDashApi.__esri.TrackViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

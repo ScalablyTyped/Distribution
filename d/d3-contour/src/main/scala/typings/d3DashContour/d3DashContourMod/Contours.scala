@@ -89,3 +89,9 @@ trait Contours extends js.Object {
   def thresholds(thresholds: js.Array[Double]): this.type = js.native
 }
 
+@JSImport("d3-contour", "contours")
+@js.native
+object contours extends js.Object {
+  def apply(): Contours = js.native
+}
+

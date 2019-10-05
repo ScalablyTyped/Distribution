@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "VertexFormat")
 @js.native
 class VertexFormat protected ()
-  extends typings.playcanvas.pcNs.VertexFormat {
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice, description: js.Array[js.Object]) = this()
+  extends typings.playcanvas.pc.VertexFormat {
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, description: js.Array[js.Object]) = this()
 }
 

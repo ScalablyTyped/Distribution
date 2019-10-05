@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: String): String = js.native
-  def apply(input: String, options: SpeakingURLOptions | String): String = js.native
-  def createSlug(options: SpeakingURLOptions): js.Function1[/* input */ String, String] = js.native
+  def apply(input: String, options: String): String = js.native
+  def apply(input: String, options: SpeakingURLOptions): String = js.native
 }
 

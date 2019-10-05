@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriMapMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Map
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapProperties
+import typings.arcgisDashJsDashApi.__esri.Map
+import typings.arcgisDashJsDashApi.__esri.MapProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

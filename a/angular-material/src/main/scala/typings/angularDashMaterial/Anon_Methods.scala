@@ -1,6 +1,6 @@
 package typings.angularDashMaterial
 
-import typings.angularDashMaterial.angularDashMaterialMod.angularMod.materialNs.IDialogOptions
+import typings.angularDashMaterial.angularDashMaterialMod.angularMod.material.IDialogOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

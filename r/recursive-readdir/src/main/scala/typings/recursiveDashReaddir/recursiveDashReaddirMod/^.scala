@@ -1,7 +1,7 @@
 package typings.recursiveDashReaddir.recursiveDashReaddirMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.recursiveDashReaddir.recursiveDashReaddirMod.RecursiveReaddirNs.readDir
+import typings.recursiveDashReaddir.recursiveDashReaddirMod.RecursiveReaddir.readDir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -46,25 +46,25 @@ trait DirectoryLimits extends js.Object {
 object DirectoryLimits {
   @scala.inline
   def apply(
-    CloudOnlyDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyDirectoriesLimit: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyDirectoriesLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined,
-    CloudOnlyMicrosoftADCurrentCount: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyMicrosoftADLimit: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyMicrosoftADLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined,
-    ConnectedDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined,
-    ConnectedDirectoriesLimit: js.UndefOr[Limit] = js.undefined,
-    ConnectedDirectoriesLimitReached: js.UndefOr[ConnectedDirectoriesLimitReached] = js.undefined
+    CloudOnlyDirectoriesCurrentCount: Int | Double = null,
+    CloudOnlyDirectoriesLimit: Int | Double = null,
+    CloudOnlyDirectoriesLimitReached: js.UndefOr[Boolean] = js.undefined,
+    CloudOnlyMicrosoftADCurrentCount: Int | Double = null,
+    CloudOnlyMicrosoftADLimit: Int | Double = null,
+    CloudOnlyMicrosoftADLimitReached: js.UndefOr[Boolean] = js.undefined,
+    ConnectedDirectoriesCurrentCount: Int | Double = null,
+    ConnectedDirectoriesLimit: Int | Double = null,
+    ConnectedDirectoriesLimitReached: js.UndefOr[Boolean] = js.undefined
   ): DirectoryLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CloudOnlyDirectoriesCurrentCount)) __obj.updateDynamic("CloudOnlyDirectoriesCurrentCount")(CloudOnlyDirectoriesCurrentCount)
-    if (!js.isUndefined(CloudOnlyDirectoriesLimit)) __obj.updateDynamic("CloudOnlyDirectoriesLimit")(CloudOnlyDirectoriesLimit)
+    if (CloudOnlyDirectoriesCurrentCount != null) __obj.updateDynamic("CloudOnlyDirectoriesCurrentCount")(CloudOnlyDirectoriesCurrentCount.asInstanceOf[js.Any])
+    if (CloudOnlyDirectoriesLimit != null) __obj.updateDynamic("CloudOnlyDirectoriesLimit")(CloudOnlyDirectoriesLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(CloudOnlyDirectoriesLimitReached)) __obj.updateDynamic("CloudOnlyDirectoriesLimitReached")(CloudOnlyDirectoriesLimitReached)
-    if (!js.isUndefined(CloudOnlyMicrosoftADCurrentCount)) __obj.updateDynamic("CloudOnlyMicrosoftADCurrentCount")(CloudOnlyMicrosoftADCurrentCount)
-    if (!js.isUndefined(CloudOnlyMicrosoftADLimit)) __obj.updateDynamic("CloudOnlyMicrosoftADLimit")(CloudOnlyMicrosoftADLimit)
+    if (CloudOnlyMicrosoftADCurrentCount != null) __obj.updateDynamic("CloudOnlyMicrosoftADCurrentCount")(CloudOnlyMicrosoftADCurrentCount.asInstanceOf[js.Any])
+    if (CloudOnlyMicrosoftADLimit != null) __obj.updateDynamic("CloudOnlyMicrosoftADLimit")(CloudOnlyMicrosoftADLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(CloudOnlyMicrosoftADLimitReached)) __obj.updateDynamic("CloudOnlyMicrosoftADLimitReached")(CloudOnlyMicrosoftADLimitReached)
-    if (!js.isUndefined(ConnectedDirectoriesCurrentCount)) __obj.updateDynamic("ConnectedDirectoriesCurrentCount")(ConnectedDirectoriesCurrentCount)
-    if (!js.isUndefined(ConnectedDirectoriesLimit)) __obj.updateDynamic("ConnectedDirectoriesLimit")(ConnectedDirectoriesLimit)
+    if (ConnectedDirectoriesCurrentCount != null) __obj.updateDynamic("ConnectedDirectoriesCurrentCount")(ConnectedDirectoriesCurrentCount.asInstanceOf[js.Any])
+    if (ConnectedDirectoriesLimit != null) __obj.updateDynamic("ConnectedDirectoriesLimit")(ConnectedDirectoriesLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(ConnectedDirectoriesLimitReached)) __obj.updateDynamic("ConnectedDirectoriesLimitReached")(ConnectedDirectoriesLimitReached)
     __obj.asInstanceOf[DirectoryLimits]
   }

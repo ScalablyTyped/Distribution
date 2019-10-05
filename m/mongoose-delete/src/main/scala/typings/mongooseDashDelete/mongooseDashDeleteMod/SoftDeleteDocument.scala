@@ -1,7 +1,7 @@
 package typings.mongooseDashDelete.mongooseDashDeleteMod
 
 import typings.mongoose.mongooseMod.Document
-import typings.mongoose.mongooseMod.TypesNs.ObjectId
+import typings.mongoose.mongooseMod.Types.ObjectId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

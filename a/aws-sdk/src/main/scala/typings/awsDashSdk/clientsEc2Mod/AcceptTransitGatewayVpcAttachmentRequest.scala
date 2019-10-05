@@ -17,7 +17,7 @@ trait AcceptTransitGatewayVpcAttachmentRequest extends js.Object {
 
 object AcceptTransitGatewayVpcAttachmentRequest {
   @scala.inline
-  def apply(TransitGatewayAttachmentId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AcceptTransitGatewayVpcAttachmentRequest = {
+  def apply(TransitGatewayAttachmentId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): AcceptTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AcceptTransitGatewayVpcAttachmentRequest]

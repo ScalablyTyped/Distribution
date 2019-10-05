@@ -1,6 +1,6 @@
 package typings.bootstrapDashMaxlength
 
-import typings.bootstrapDashMaxlength.BootstrapMaxlengthNs.Options
+import typings.bootstrapDashMaxlength.BootstrapMaxlength.Options
 import typings.bootstrapDashMaxlength.bootstrapDashMaxlengthStrings.maxlengthDOThidden
 import typings.bootstrapDashMaxlength.bootstrapDashMaxlengthStrings.maxlengthDOTreposition
 import typings.bootstrapDashMaxlength.bootstrapDashMaxlengthStrings.maxlengthDOTshown

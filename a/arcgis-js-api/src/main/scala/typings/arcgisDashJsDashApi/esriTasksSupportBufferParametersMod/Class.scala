@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportBufferParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BufferParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BufferParametersProperties
+import typings.arcgisDashJsDashApi.__esri.BufferParameters
+import typings.arcgisDashJsDashApi.__esri.BufferParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

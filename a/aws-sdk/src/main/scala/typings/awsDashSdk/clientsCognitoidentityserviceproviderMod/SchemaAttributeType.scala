@@ -39,11 +39,11 @@ object SchemaAttributeType {
   @scala.inline
   def apply(
     AttributeDataType: AttributeDataType = null,
-    DeveloperOnlyAttribute: js.UndefOr[BooleanType] = js.undefined,
-    Mutable: js.UndefOr[BooleanType] = js.undefined,
+    DeveloperOnlyAttribute: js.UndefOr[Boolean] = js.undefined,
+    Mutable: js.UndefOr[Boolean] = js.undefined,
     Name: CustomAttributeNameType = null,
     NumberAttributeConstraints: NumberAttributeConstraintsType = null,
-    Required: js.UndefOr[BooleanType] = js.undefined,
+    Required: js.UndefOr[Boolean] = js.undefined,
     StringAttributeConstraints: StringAttributeConstraintsType = null
   ): SchemaAttributeType = {
     val __obj = js.Dynamic.literal()

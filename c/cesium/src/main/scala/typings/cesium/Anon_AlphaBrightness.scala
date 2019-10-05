@@ -1,6 +1,6 @@
 package typings.cesium
 
-import typings.cesium.cesiumMod.ImageryLayerNs.ValueFunc
+import typings.cesium.cesiumMod.ImageryLayer.ValueFunc
 import typings.cesium.cesiumMod.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`

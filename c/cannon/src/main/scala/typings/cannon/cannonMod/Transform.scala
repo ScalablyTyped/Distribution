@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Transform")
 @js.native
 class Transform ()
-  extends typings.cannon.CANNONNs.Transform
+  extends typings.cannon.CANNON.Transform
 
 /* static members */
 @JSImport("cannon", "Transform")
 @js.native
 object Transform extends js.Object {
   def pointToLocalFrame(
-    position: typings.cannon.CANNONNs.Vec3,
-    quaternion: typings.cannon.CANNONNs.Quaternion,
-    worldPoint: typings.cannon.CANNONNs.Vec3
-  ): typings.cannon.CANNONNs.Vec3 = js.native
+    position: typings.cannon.CANNON.Vec3,
+    quaternion: typings.cannon.CANNON.Quaternion,
+    worldPoint: typings.cannon.CANNON.Vec3
+  ): typings.cannon.CANNON.Vec3 = js.native
   def pointToLocalFrame(
-    position: typings.cannon.CANNONNs.Vec3,
-    quaternion: typings.cannon.CANNONNs.Quaternion,
-    worldPoint: typings.cannon.CANNONNs.Vec3,
-    result: typings.cannon.CANNONNs.Vec3
-  ): typings.cannon.CANNONNs.Vec3 = js.native
+    position: typings.cannon.CANNON.Vec3,
+    quaternion: typings.cannon.CANNON.Quaternion,
+    worldPoint: typings.cannon.CANNON.Vec3,
+    result: typings.cannon.CANNON.Vec3
+  ): typings.cannon.CANNON.Vec3 = js.native
   def pointToWorldFrame(
-    position: typings.cannon.CANNONNs.Vec3,
-    quaternion: typings.cannon.CANNONNs.Quaternion,
-    localPoint: typings.cannon.CANNONNs.Vec3
-  ): typings.cannon.CANNONNs.Vec3 = js.native
+    position: typings.cannon.CANNON.Vec3,
+    quaternion: typings.cannon.CANNON.Quaternion,
+    localPoint: typings.cannon.CANNON.Vec3
+  ): typings.cannon.CANNON.Vec3 = js.native
   def pointToWorldFrame(
-    position: typings.cannon.CANNONNs.Vec3,
-    quaternion: typings.cannon.CANNONNs.Quaternion,
-    localPoint: typings.cannon.CANNONNs.Vec3,
-    result: typings.cannon.CANNONNs.Vec3
-  ): typings.cannon.CANNONNs.Vec3 = js.native
+    position: typings.cannon.CANNON.Vec3,
+    quaternion: typings.cannon.CANNON.Quaternion,
+    localPoint: typings.cannon.CANNON.Vec3,
+    result: typings.cannon.CANNON.Vec3
+  ): typings.cannon.CANNON.Vec3 = js.native
 }
 

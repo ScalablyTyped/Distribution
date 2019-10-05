@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMod {
-  type Rule[S /* <: typings.markdownDashIt.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ */] = js.Function2[/* state */ S, /* silent */ js.UndefOr[Boolean], Boolean | Unit]
+  import typings.markdownDashIt.libRulesUnderscoreCoreStateUnderscoreCoreMod.^
+
+  type Rule[S /* <: ^ */] = js.Function2[/* state */ S, /* silent */ js.UndefOr[Boolean], Boolean | Unit]
   type RuleBlock = Rule[typings.markdownDashIt.libRulesUnderscoreBlockStateUnderscoreBlockMod.^]
   type RuleInline = Rule[typings.markdownDashIt.libRulesUnderscoreInlineStateUnderscoreInlineMod.^]
   type RulerBlock = typings.markdownDashIt.libRulerMod.^[typings.markdownDashIt.libRulesUnderscoreBlockStateUnderscoreBlockMod.^]

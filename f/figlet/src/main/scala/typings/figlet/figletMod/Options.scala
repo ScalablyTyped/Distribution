@@ -17,14 +17,14 @@ object Options {
   def apply(
     font: Fonts = null,
     horizontalLayout: KerningMethods = null,
-    printDirection: js.UndefOr[PrintDirection] = js.undefined,
+    printDirection: Int | Double = null,
     showHardBlanks: js.UndefOr[Boolean] = js.undefined,
     verticalLayout: KerningMethods = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font)
     if (horizontalLayout != null) __obj.updateDynamic("horizontalLayout")(horizontalLayout)
-    if (!js.isUndefined(printDirection)) __obj.updateDynamic("printDirection")(printDirection)
+    if (printDirection != null) __obj.updateDynamic("printDirection")(printDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(showHardBlanks)) __obj.updateDynamic("showHardBlanks")(showHardBlanks)
     if (verticalLayout != null) __obj.updateDynamic("verticalLayout")(verticalLayout)
     __obj.asInstanceOf[Options]

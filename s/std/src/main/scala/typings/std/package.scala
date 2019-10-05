@@ -67,8 +67,8 @@ package object std {
   type ElementTagNameMap = HTMLElementTagNameMap with (Pick[
     SVGElementTagNameMap, 
     Exclude[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 57 */ js.Any, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any, 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
     ]
   ])
   type EvalError = Error

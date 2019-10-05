@@ -111,7 +111,7 @@ object RunJobFlowInput {
     BootstrapActions: BootstrapActionConfigList = null,
     Configurations: ConfigurationList = null,
     CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
+    EbsRootVolumeSize: Int | Double = null,
     JobFlowRole: XmlString = null,
     KerberosAttributes: KerberosAttributes = null,
     LogUri: XmlString = null,
@@ -124,7 +124,7 @@ object RunJobFlowInput {
     Steps: StepConfigList = null,
     SupportedProducts: SupportedProductsList = null,
     Tags: TagList = null,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
+    VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
   ): RunJobFlowInput = {
     val __obj = js.Dynamic.literal(Instances = Instances, Name = Name)
     if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo)
@@ -134,7 +134,7 @@ object RunJobFlowInput {
     if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions)
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations)
     if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId)
-    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize)
+    if (EbsRootVolumeSize != null) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.asInstanceOf[js.Any])
     if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole)
     if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes)
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)

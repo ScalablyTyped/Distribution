@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -352,7 +353,7 @@ object IgPieChart {
   /* optionName */ StringDictionary[js.Any] = null,
     allowSliceExplosion: js.UndefOr[Boolean] = js.undefined,
     allowSliceSelection: js.UndefOr[Boolean] = js.undefined,
-    browserNotSupported: BrowserNotSupportedEvent = null,
+    browserNotSupported: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit = null,
     brushes: js.Any = null,
     dataLabel: String = null,
     dataSource: js.Any = null,
@@ -363,7 +364,7 @@ object IgPieChart {
     explodedSlices: js.Array[_] = null,
     formatLabel: js.Function = null,
     height: String | Double = null,
-    labelClick: LabelClickEvent = null,
+    labelClick: (/* event */ Event, /* ui */ LabelClickEventUIParam) => Unit = null,
     labelExtent: Int | Double = null,
     labelInnerColor: String = null,
     labelMemberPath: String = null,
@@ -387,24 +388,24 @@ object IgPieChart {
     regional: String | js.Object = null,
     responseDataKey: String = null,
     selectedItem: js.Any = null,
-    selectedItemChanged: SelectedItemChangedEvent = null,
-    selectedItemChanging: SelectedItemChangingEvent = null,
+    selectedItemChanged: (/* event */ Event, /* ui */ SelectedItemChangedEventUIParam) => Unit = null,
+    selectedItemChanging: (/* event */ Event, /* ui */ SelectedItemChangingEventUIParam) => Unit = null,
     selectedItems: js.Array[_] = null,
-    selectedItemsChanged: SelectedItemsChangedEvent = null,
-    selectedItemsChanging: SelectedItemsChangingEvent = null,
+    selectedItemsChanged: (/* event */ Event, /* ui */ SelectedItemsChangedEventUIParam) => Unit = null,
+    selectedItemsChanging: (/* event */ Event, /* ui */ SelectedItemsChangingEventUIParam) => Unit = null,
     selectedSlices: js.Array[_] = null,
     selectedStyle: js.Any = null,
     selectionMode: String = null,
     showTooltip: js.UndefOr[Boolean] = js.undefined,
-    sliceClick: SliceClickEvent = null,
+    sliceClick: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Unit = null,
     startAngle: Int | Double = null,
     sweepDirection: String = null,
     textStyle: String = null,
     theme: String = null,
-    tooltipHidden: TooltipHiddenEvent = null,
-    tooltipHiding: TooltipHidingEvent = null,
-    tooltipShowing: TooltipShowingEvent = null,
-    tooltipShown: TooltipShownEvent = null,
+    tooltipHidden: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit = null,
+    tooltipHiding: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit = null,
+    tooltipShowing: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit = null,
+    tooltipShown: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit = null,
     tooltipTemplate: String = null,
     valueMemberPath: String = null,
     width: String | Double = null
@@ -413,7 +414,7 @@ object IgPieChart {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowSliceExplosion)) __obj.updateDynamic("allowSliceExplosion")(allowSliceExplosion)
     if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection)
-    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(js.Any.fromFunction2(browserNotSupported))
     if (brushes != null) __obj.updateDynamic("brushes")(brushes)
     if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
@@ -424,7 +425,7 @@ object IgPieChart {
     if (explodedSlices != null) __obj.updateDynamic("explodedSlices")(explodedSlices)
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (labelClick != null) __obj.updateDynamic("labelClick")(labelClick)
+    if (labelClick != null) __obj.updateDynamic("labelClick")(js.Any.fromFunction2(labelClick))
     if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
     if (labelInnerColor != null) __obj.updateDynamic("labelInnerColor")(labelInnerColor)
     if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath)
@@ -448,24 +449,24 @@ object IgPieChart {
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
-    if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(selectedItemChanged)
-    if (selectedItemChanging != null) __obj.updateDynamic("selectedItemChanging")(selectedItemChanging)
+    if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(js.Any.fromFunction2(selectedItemChanged))
+    if (selectedItemChanging != null) __obj.updateDynamic("selectedItemChanging")(js.Any.fromFunction2(selectedItemChanging))
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (selectedItemsChanged != null) __obj.updateDynamic("selectedItemsChanged")(selectedItemsChanged)
-    if (selectedItemsChanging != null) __obj.updateDynamic("selectedItemsChanging")(selectedItemsChanging)
+    if (selectedItemsChanged != null) __obj.updateDynamic("selectedItemsChanged")(js.Any.fromFunction2(selectedItemsChanged))
+    if (selectedItemsChanging != null) __obj.updateDynamic("selectedItemsChanging")(js.Any.fromFunction2(selectedItemsChanging))
     if (selectedSlices != null) __obj.updateDynamic("selectedSlices")(selectedSlices)
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
     if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (sliceClick != null) __obj.updateDynamic("sliceClick")(sliceClick)
+    if (sliceClick != null) __obj.updateDynamic("sliceClick")(js.Any.fromFunction2(sliceClick))
     if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
     if (sweepDirection != null) __obj.updateDynamic("sweepDirection")(sweepDirection)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
-    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
-    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
-    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2(tooltipHidden))
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2(tooltipHiding))
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2(tooltipShowing))
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2(tooltipShown))
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
     if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

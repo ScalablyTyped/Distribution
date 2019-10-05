@@ -34,7 +34,7 @@ object Script {
     CreationTime: Timestamp = null,
     Name: NonZeroAndMaxString = null,
     ScriptId: ScriptId = null,
-    SizeOnDisk: js.UndefOr[PositiveLong] = js.undefined,
+    SizeOnDisk: Int | scala.Double = null,
     StorageLocation: S3Location = null,
     Version: NonZeroAndMaxString = null
   ): Script = {
@@ -42,7 +42,7 @@ object Script {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId)
-    if (!js.isUndefined(SizeOnDisk)) __obj.updateDynamic("SizeOnDisk")(SizeOnDisk)
+    if (SizeOnDisk != null) __obj.updateDynamic("SizeOnDisk")(SizeOnDisk.asInstanceOf[js.Any])
     if (StorageLocation != null) __obj.updateDynamic("StorageLocation")(StorageLocation)
     if (Version != null) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[Script]

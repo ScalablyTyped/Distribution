@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsHomeMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Home
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HomeProperties
+import typings.arcgisDashJsDashApi.__esri.Home
+import typings.arcgisDashJsDashApi.__esri.HomeProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

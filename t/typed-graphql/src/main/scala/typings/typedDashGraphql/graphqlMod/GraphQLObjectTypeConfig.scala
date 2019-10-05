@@ -19,12 +19,12 @@ object GraphQLObjectTypeConfig {
     name: String,
     description: String = null,
     interfaces: GraphQLInterfacesThunk | js.Array[GraphQLInterfaceType] = null,
-    isTypeOf: GraphQLIsTypeOfFn = null
+    isTypeOf: (/* source */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => Boolean = null
   ): GraphQLObjectTypeConfig = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(isTypeOf)
+    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
     __obj.asInstanceOf[GraphQLObjectTypeConfig]
   }
 }

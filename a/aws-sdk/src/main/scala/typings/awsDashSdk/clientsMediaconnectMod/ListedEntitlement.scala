@@ -24,10 +24,10 @@ object ListedEntitlement {
   def apply(
     EntitlementArn: __string,
     EntitlementName: __string,
-    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined
+    DataTransferSubscriberFeePercent: Int | Double = null
   ): ListedEntitlement = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn, EntitlementName = EntitlementName)
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
+    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedEntitlement]
   }
 }

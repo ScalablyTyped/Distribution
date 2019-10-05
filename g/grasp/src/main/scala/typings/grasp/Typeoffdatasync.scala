@@ -1,23 +1,21 @@
 package typings.grasp
 
+import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Typeoffdatasync extends js.Object {
   /**
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.
     */
-  def __promisify__(fd: Double): js.Promise[Unit]
-}
-
-object Typeoffdatasync {
-  @scala.inline
-  def apply(__promisify__ : Double => js.Promise[Unit]): Typeoffdatasync = {
-    val __obj = js.Dynamic.literal(__promisify__ = js.Any.fromFunction1(__promisify__))
-  
-    __obj.asInstanceOf[Typeoffdatasync]
-  }
+  def apply(fd: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  /**
+    * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
+    * @param fd A file descriptor.
+    */
+  def __promisify__(fd: Double): js.Promise[Unit] = js.native
 }
 

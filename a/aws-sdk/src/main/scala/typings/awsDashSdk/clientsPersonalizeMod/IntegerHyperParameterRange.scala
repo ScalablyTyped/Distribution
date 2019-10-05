@@ -21,14 +21,10 @@ trait IntegerHyperParameterRange extends js.Object {
 
 object IntegerHyperParameterRange {
   @scala.inline
-  def apply(
-    maxValue: js.UndefOr[IntegerMaxValue] = js.undefined,
-    minValue: js.UndefOr[IntegerMinValue] = js.undefined,
-    name: ParameterName = null
-  ): IntegerHyperParameterRange = {
+  def apply(maxValue: Int | Double = null, minValue: Int | Double = null, name: ParameterName = null): IntegerHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue)
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[IntegerHyperParameterRange]
   }

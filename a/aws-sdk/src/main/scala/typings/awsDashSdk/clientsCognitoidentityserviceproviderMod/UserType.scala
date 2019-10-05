@@ -39,7 +39,7 @@ object UserType {
   @scala.inline
   def apply(
     Attributes: AttributeListType = null,
-    Enabled: js.UndefOr[BooleanType] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     MFAOptions: MFAOptionListType = null,
     UserCreateDate: DateType = null,
     UserLastModifiedDate: DateType = null,

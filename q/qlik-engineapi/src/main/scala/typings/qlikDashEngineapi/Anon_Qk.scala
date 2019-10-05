@@ -1,7 +1,7 @@
 package typings.qlikDashEngineapi
 
-import typings.qlikDashEngineapi.EngineAPINs.ISourceKeyRecord
-import typings.qlikDashEngineapi.EngineAPINs.ITableRecord
+import typings.qlikDashEngineapi.EngineAPI.ISourceKeyRecord
+import typings.qlikDashEngineapi.EngineAPI.ITableRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

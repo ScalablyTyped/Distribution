@@ -1,6 +1,7 @@
 package typings.showdown.showdownMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,4 +25,11 @@ object Helper {
     __obj.asInstanceOf[Helper]
   }
 }
+
+/**
+  * Showdown helper.
+  */
+@JSImport("showdown", "helper")
+@js.native
+object helper extends TopLevel[Helper]
 

@@ -5,7 +5,7 @@ import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
 import typings.atJupyterlabExtensionmanager.libQueryMod.ISearchResult
 import typings.atJupyterlabExtensionmanager.libQueryMod.Searcher
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
-import typings.atJupyterlabServices.libServerconnectionMod.ServerConnectionNs.ISettings
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -203,5 +203,16 @@ class ListModel protected () extends VDomModel {
     */
   /* protected */ def update(): js.Promise[Unit] = js.native
   /* protected */ def update(refreshInstalled: Boolean): js.Promise[Unit] = js.native
+}
+
+@JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel")
+@js.native
+object ListModel extends js.Object {
+  /**
+    * Utility function to check whether an entry can be updated.
+    *
+    * @param entry The entry to check.
+    */
+  def entryHasUpdate(entry: IEntry): Boolean = js.native
 }
 

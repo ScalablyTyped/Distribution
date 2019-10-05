@@ -22,12 +22,12 @@ trait Scte35TimeSignalApos extends js.Object {
 object Scte35TimeSignalApos {
   @scala.inline
   def apply(
-    AdAvailOffset: js.UndefOr[__integerMinNegative1000Max1000] = js.undefined,
+    AdAvailOffset: Int | Double = null,
     NoRegionalBlackoutFlag: Scte35AposNoRegionalBlackoutBehavior = null,
     WebDeliveryAllowedFlag: Scte35AposWebDeliveryAllowedBehavior = null
   ): Scte35TimeSignalApos = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdAvailOffset)) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset)
+    if (AdAvailOffset != null) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset.asInstanceOf[js.Any])
     if (NoRegionalBlackoutFlag != null) __obj.updateDynamic("NoRegionalBlackoutFlag")(NoRegionalBlackoutFlag.asInstanceOf[js.Any])
     if (WebDeliveryAllowedFlag != null) __obj.updateDynamic("WebDeliveryAllowedFlag")(WebDeliveryAllowedFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35TimeSignalApos]

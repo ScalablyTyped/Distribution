@@ -33,9 +33,9 @@ object TextOptions {
   def apply(
     AnalysisScheme: Word = null,
     DefaultValue: FieldValue = null,
-    HighlightEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
-    SortEnabled: js.UndefOr[Boolean] = js.undefined,
+    HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    SortEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     SourceField: FieldName = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()

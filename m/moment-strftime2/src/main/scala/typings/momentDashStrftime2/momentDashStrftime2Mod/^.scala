@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var modifiers: Modifiers = js.native
   var separator: String = js.native
-  def installTo(moment: js.Object): Unit = js.native
 }
 

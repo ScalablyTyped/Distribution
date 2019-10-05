@@ -1,0 +1,32 @@
+package typings.atAwsDashSdkClientDashCodecommitDashNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-codecommit-node/types/GetCommentsForPullRequestExceptionsUnion", JSImport.Namespace)
+@js.native
+object typesGetCommentsForPullRequestExceptionsUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPullRequestIdRequiredExceptionMod.PullRequestIdRequiredException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesPullRequestDoesNotExistExceptionMod.PullRequestDoesNotExistException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidPullRequestIdExceptionMod.InvalidPullRequestIdException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommitIdRequiredExceptionMod.CommitIdRequiredException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidCommitIdExceptionMod.InvalidCommitIdException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesCommitDoesNotExistExceptionMod.CommitDoesNotExistException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidMaxResultsExceptionMod.InvalidMaxResultsException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesRepositoryNotAssociatedWithPullRequestExceptionMod.RepositoryNotAssociatedWithPullRequestException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException
+    - typings.atAwsDashSdkClientDashCodecommitDashNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
+  */
+  trait GetCommentsForPullRequestExceptionsUnion extends js.Object
+  
+}
+

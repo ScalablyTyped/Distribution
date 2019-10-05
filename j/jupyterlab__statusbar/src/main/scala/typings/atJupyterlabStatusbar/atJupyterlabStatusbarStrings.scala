@@ -1,7 +1,7 @@
 package typings.atJupyterlabStatusbar
 
-import typings.atJupyterlabStatusbar.libDefaultsMemoryUsageMod.MemoryUsageNs.MemoryUnit
-import typings.atJupyterlabStatusbar.libTokensMod.IStatusBarNs.Alignment
+import typings.atJupyterlabStatusbar.libDefaultsMemoryUsageMod.MemoryUsage.MemoryUnit
+import typings.atJupyterlabStatusbar.libTokensMod.IStatusBar.Alignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

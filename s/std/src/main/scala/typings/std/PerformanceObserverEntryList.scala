@@ -15,9 +15,5 @@ trait PerformanceObserverEntryList extends js.Object {
 
 @JSGlobal("PerformanceObserverEntryList")
 @js.native
-class PerformanceObserverEntryListCls () extends PerformanceObserverEntryList
-
-@JSGlobal("PerformanceObserverEntryList")
-@js.native
 object PerformanceObserverEntryList extends Instantiable0[PerformanceObserverEntryList]
 

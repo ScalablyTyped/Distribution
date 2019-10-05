@@ -13,7 +13,7 @@ trait DescribeAggregateIdFormatRequest extends js.Object {
 
 object DescribeAggregateIdFormatRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): DescribeAggregateIdFormatRequest = {
+  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeAggregateIdFormatRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeAggregateIdFormatRequest]

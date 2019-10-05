@@ -1,6 +1,7 @@
 package typings.redis.redisMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +52,7 @@ object ClientOpts {
     prefix: String = null,
     rename_commands: StringDictionary[String] = null,
     retry_max_delay: Int | Double = null,
-    retry_strategy: RetryStrategy = null,
+    retry_strategy: /* options */ RetryStrategyOptions => Double | Error = null,
     retry_unfulfilled_commands: js.UndefOr[Boolean] = js.undefined,
     return_buffers: js.UndefOr[Boolean] = js.undefined,
     socket_initialdelay: Int | Double = null,
@@ -77,7 +78,7 @@ object ClientOpts {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (rename_commands != null) __obj.updateDynamic("rename_commands")(rename_commands)
     if (retry_max_delay != null) __obj.updateDynamic("retry_max_delay")(retry_max_delay.asInstanceOf[js.Any])
-    if (retry_strategy != null) __obj.updateDynamic("retry_strategy")(retry_strategy)
+    if (retry_strategy != null) __obj.updateDynamic("retry_strategy")(js.Any.fromFunction1(retry_strategy))
     if (!js.isUndefined(retry_unfulfilled_commands)) __obj.updateDynamic("retry_unfulfilled_commands")(retry_unfulfilled_commands)
     if (!js.isUndefined(return_buffers)) __obj.updateDynamic("return_buffers")(return_buffers)
     if (socket_initialdelay != null) __obj.updateDynamic("socket_initialdelay")(socket_initialdelay.asInstanceOf[js.Any])

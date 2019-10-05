@@ -17,9 +17,9 @@ trait MonetaryAmount extends js.Object {
 
 object MonetaryAmount {
   @scala.inline
-  def apply(amount: js.UndefOr[Double] = js.undefined, currencyCode: CurrencyCode = null): MonetaryAmount = {
+  def apply(amount: Int | scala.Double = null, currencyCode: CurrencyCode = null): MonetaryAmount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonetaryAmount]
   }

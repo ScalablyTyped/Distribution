@@ -50,3 +50,16 @@ object UnaryExpression {
   }
 }
 
+@JSImport("@babel/types", "unaryExpression")
+@js.native
+object unaryExpression extends js.Object {
+  def apply(operator: `!`, argument: Expression): UnaryExpression = js.native
+  def apply(operator: `!`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: `+`, argument: Expression): UnaryExpression = js.native
+  def apply(operator: `+`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: `-`, argument: Expression): UnaryExpression = js.native
+  def apply(operator: `-`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: `~`, argument: Expression): UnaryExpression = js.native
+  def apply(operator: `~`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+}
+

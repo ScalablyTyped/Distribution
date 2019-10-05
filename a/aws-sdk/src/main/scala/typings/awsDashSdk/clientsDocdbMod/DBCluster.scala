@@ -128,7 +128,7 @@ object DBCluster {
   def apply(
     AssociatedRoles: DBClusterRoles = null,
     AvailabilityZones: AvailabilityZones = null,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    BackupRetentionPeriod: Int | Double = null,
     ClusterCreateTime: TStamp = null,
     DBClusterArn: String = null,
     DBClusterIdentifier: String = null,
@@ -136,7 +136,7 @@ object DBCluster {
     DBClusterParameterGroup: String = null,
     DBSubnetGroup: String = null,
     DbClusterResourceId: String = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EarliestRestorableTime: TStamp = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
     Endpoint: String = null,
@@ -146,20 +146,20 @@ object DBCluster {
     KmsKeyId: String = null,
     LatestRestorableTime: TStamp = null,
     MasterUsername: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     PercentProgress: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     ReaderEndpoint: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBCluster = {
     val __obj = js.Dynamic.literal()
     if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
     if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn)
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)
@@ -179,7 +179,7 @@ object DBCluster {
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ReaderEndpoint != null) __obj.updateDynamic("ReaderEndpoint")(ReaderEndpoint)

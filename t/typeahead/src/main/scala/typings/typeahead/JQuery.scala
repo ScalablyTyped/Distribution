@@ -1,8 +1,8 @@
 package typings.typeahead
 
 import typings.jquery.JQueryEventObject
-import typings.typeahead.TwitterNs.TypeaheadNs.Dataset
-import typings.typeahead.TwitterNs.TypeaheadNs.Options
+import typings.typeahead.Twitter.Typeahead.Dataset
+import typings.typeahead.Twitter.Typeahead.Options
 import typings.typeahead.typeaheadStrings.`typeahead:active`
 import typings.typeahead.typeaheadStrings.`typeahead:asynccancel`
 import typings.typeahead.typeaheadStrings.`typeahead:asyncreceive`

@@ -2,7 +2,7 @@ package typings.foreverDashMonitor.foreverDashMonitorMod
 
 import typings.foreverDashMonitor.Anon_ArgsCommand
 import typings.foreverDashMonitor.foreverDashMonitorNumbers.`false`
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

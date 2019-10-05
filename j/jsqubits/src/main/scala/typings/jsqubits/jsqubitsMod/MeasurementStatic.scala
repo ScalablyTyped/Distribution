@@ -1,8 +1,8 @@
 package typings.jsqubits.jsqubitsMod
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.jsqubits.jsqubitsMod.jsqubitsNs.Measurement
-import typings.jsqubits.jsqubitsMod.jsqubitsNs.QState
+import typings.jsqubits.jsqubitsMod.jsqubits.Measurement
+import typings.jsqubits.jsqubitsMod.jsqubits.QState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

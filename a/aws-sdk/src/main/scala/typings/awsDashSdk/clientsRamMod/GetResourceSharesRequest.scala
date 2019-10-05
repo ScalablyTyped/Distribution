@@ -39,7 +39,7 @@ object GetResourceSharesRequest {
   @scala.inline
   def apply(
     resourceOwner: ResourceOwner,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     name: String = null,
     nextToken: String = null,
     resourceShareArns: ResourceShareArnList = null,
@@ -47,7 +47,7 @@ object GetResourceSharesRequest {
     tagFilters: TagFilters = null
   ): GetResourceSharesRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (resourceShareArns != null) __obj.updateDynamic("resourceShareArns")(resourceShareArns)

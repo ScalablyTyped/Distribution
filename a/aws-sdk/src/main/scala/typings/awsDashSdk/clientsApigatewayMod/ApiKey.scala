@@ -53,7 +53,7 @@ object ApiKey {
     createdDate: Timestamp = null,
     customerId: String = null,
     description: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: String = null,
     lastUpdatedDate: Timestamp = null,
     name: String = null,

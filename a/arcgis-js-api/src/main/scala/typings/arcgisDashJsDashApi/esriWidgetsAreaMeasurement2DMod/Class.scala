@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsAreaMeasurement2DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2DProperties
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2D
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,12 @@
 package typings.activexDashAdox
 
-import typings.activexDashAdox.ADOXNs.Catalog
-import typings.activexDashAdox.ADOXNs.Column
-import typings.activexDashAdox.ADOXNs.Group
-import typings.activexDashAdox.ADOXNs.Index
-import typings.activexDashAdox.ADOXNs.Key
-import typings.activexDashAdox.ADOXNs.Table
-import typings.activexDashAdox.ADOXNs.User
+import typings.activexDashAdox.ADOX.Catalog
+import typings.activexDashAdox.ADOX.Column
+import typings.activexDashAdox.ADOX.Group
+import typings.activexDashAdox.ADOX.Index
+import typings.activexDashAdox.ADOX.Key
+import typings.activexDashAdox.ADOX.Table
+import typings.activexDashAdox.ADOX.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

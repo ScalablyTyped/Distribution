@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudwatchMetricAlarmMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.MetricAlarmMetricQuery
+import typings.atPulumiAws.typesOutputMod.cloudwatch.MetricAlarmMetricQuery
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

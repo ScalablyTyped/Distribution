@@ -21,7 +21,11 @@ trait DescribeFpgaImageAttributeRequest extends js.Object {
 
 object DescribeFpgaImageAttributeRequest {
   @scala.inline
-  def apply(Attribute: FpgaImageAttributeName, FpgaImageId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeFpgaImageAttributeRequest = {
+  def apply(
+    Attribute: FpgaImageAttributeName,
+    FpgaImageId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DescribeFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], FpgaImageId = FpgaImageId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeFpgaImageAttributeRequest]

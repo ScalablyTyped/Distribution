@@ -1,5 +1,6 @@
 package typings.atLinguiCore.i18nMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atLinguiCore.atLinguiCoreStrings.cardinal
 import typings.atLinguiCore.atLinguiCoreStrings.ordinal
 import typings.atLinguiCore.selectMod.PluralProps
@@ -37,4 +38,8 @@ class I18n () extends js.Object {
   def t(strings: TemplateStringsArray, values: js.Any*): String = js.native
   def use(language: String): I18n = js.native
 }
+
+@JSImport("@lingui/core/i18n", "i18n")
+@js.native
+object i18n extends TopLevel[I18n]
 

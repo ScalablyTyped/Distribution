@@ -32,8 +32,8 @@ object DetachVolumeRequest {
   def apply(
     VolumeId: String,
     Device: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Force: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Force: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceId: String = null
   ): DetachVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId)

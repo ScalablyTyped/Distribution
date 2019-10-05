@@ -2,9 +2,9 @@ package typings.winreg.winregMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
-import typings.winreg.WinregNs.Options
-import typings.winreg.WinregNs.Registry
-import typings.winreg.WinregNs.RegistryItem
+import typings.winreg.Winreg.Options
+import typings.winreg.Winreg.Registry
+import typings.winreg.Winreg.RegistryItem
 import typings.winreg.WinregStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`

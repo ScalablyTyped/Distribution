@@ -47,7 +47,7 @@ object SplunkDestinationUpdate {
   @scala.inline
   def apply(
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    HECAcknowledgmentTimeoutInSeconds: js.UndefOr[HECAcknowledgmentTimeoutInSeconds] = js.undefined,
+    HECAcknowledgmentTimeoutInSeconds: Int | Double = null,
     HECEndpoint: HECEndpoint = null,
     HECEndpointType: HECEndpointType = null,
     HECToken: HECToken = null,
@@ -58,7 +58,7 @@ object SplunkDestinationUpdate {
   ): SplunkDestinationUpdate = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
-    if (!js.isUndefined(HECAcknowledgmentTimeoutInSeconds)) __obj.updateDynamic("HECAcknowledgmentTimeoutInSeconds")(HECAcknowledgmentTimeoutInSeconds)
+    if (HECAcknowledgmentTimeoutInSeconds != null) __obj.updateDynamic("HECAcknowledgmentTimeoutInSeconds")(HECAcknowledgmentTimeoutInSeconds.asInstanceOf[js.Any])
     if (HECEndpoint != null) __obj.updateDynamic("HECEndpoint")(HECEndpoint)
     if (HECEndpointType != null) __obj.updateDynamic("HECEndpointType")(HECEndpointType.asInstanceOf[js.Any])
     if (HECToken != null) __obj.updateDynamic("HECToken")(HECToken)

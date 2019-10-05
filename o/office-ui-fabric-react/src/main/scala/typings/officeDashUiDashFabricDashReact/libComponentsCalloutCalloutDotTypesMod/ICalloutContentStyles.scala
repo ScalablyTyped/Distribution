@@ -30,9 +30,19 @@ trait ICalloutContentStyles extends js.Object {
 
 object ICalloutContentStyles {
   @scala.inline
-  def apply(beak: IStyle, beakCurtain: IStyle, calloutMain: IStyle, container: IStyle, root: IStyle): ICalloutContentStyles = {
-    val __obj = js.Dynamic.literal(beak = beak.asInstanceOf[js.Any], beakCurtain = beakCurtain.asInstanceOf[js.Any], calloutMain = calloutMain.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+  def apply(
+    beak: IStyle = null,
+    beakCurtain: IStyle = null,
+    calloutMain: IStyle = null,
+    container: IStyle = null,
+    root: IStyle = null
+  ): ICalloutContentStyles = {
+    val __obj = js.Dynamic.literal()
+    if (beak != null) __obj.updateDynamic("beak")(beak.asInstanceOf[js.Any])
+    if (beakCurtain != null) __obj.updateDynamic("beakCurtain")(beakCurtain.asInstanceOf[js.Any])
+    if (calloutMain != null) __obj.updateDynamic("calloutMain")(calloutMain.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutContentStyles]
   }
 }

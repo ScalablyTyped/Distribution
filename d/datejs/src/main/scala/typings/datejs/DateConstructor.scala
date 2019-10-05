@@ -1,7 +1,7 @@
 package typings.datejs
 
-import typings.datejs.sugarpakNs.IDateLiteral
-import typings.datejs.sugarpakNs.IOrientation
+import typings.datejs.sugarpak.IDateLiteral
+import typings.datejs.sugarpak.IOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

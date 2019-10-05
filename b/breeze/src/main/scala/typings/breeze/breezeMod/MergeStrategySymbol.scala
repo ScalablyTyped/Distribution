@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "MergeStrategySymbol")
 @js.native
 class MergeStrategySymbol ()
-  extends typings.breeze.breezeNs.MergeStrategySymbol
+  extends typings.breeze.breeze.MergeStrategySymbol
 

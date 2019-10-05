@@ -1,6 +1,6 @@
 package typings.atPulumiAws.dynamodbDynamodbMixinsMod
 
-import typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table
+import typings.atPulumiAws.dynamodbTableMod.Table
 import typings.atPulumiAws.lambdaMod.EventSourceMapping
 import typings.atPulumiAws.lambdaMod.EventSubscription
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions

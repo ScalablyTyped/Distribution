@@ -16,14 +16,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.cellNavigation
 import typings.atOracleOraclejet.atOracleOraclejetStrings.loadMoreOnScroll
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.scroll
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.CurrentCell
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.Selection
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeCurrentCell
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeEdit
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeEditEnd
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojResize
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojScroll
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojSort
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.Selection
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojResize
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojSort
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
@@ -54,12 +54,12 @@ trait ojDataGridEventMap[K, D] extends baseComponentEventMap[ojDataGridSettableP
   var editModeChanged: JetElementCustomEvent[none | cellNavigation | cellEdit]
   var gridlinesChanged: JetElementCustomEvent[Anon_Hidden]
   var headerChanged: JetElementCustomEvent[Anon_ColumnColumnEnd[K, D]]
-  var ojBeforeCurrentCell: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeCurrentCell[K]
-  var ojBeforeEdit: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeEdit[K, D]
-  var ojBeforeEditEnd: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojBeforeEditEnd[K, D]
-  var ojResize: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojResize
-  var ojScroll: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojScroll
-  var ojSort: typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.ojSort
+  var ojBeforeCurrentCell: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K]
+  var ojBeforeEdit: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D]
+  var ojBeforeEditEnd: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D]
+  var ojResize: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojResize
+  var ojScroll: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll
+  var ojSort: typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.ojSort
   var scrollPolicyChanged: JetElementCustomEvent[auto | loadMoreOnScroll | scroll]
   var scrollPolicyOptionsChanged: JetElementCustomEvent[Anon_MaxColumnCount]
   var scrollPositionChanged: JetElementCustomEvent[Anon_ColumnIndex[K]]

@@ -36,7 +36,7 @@ object Edge {
   def apply(
     Aliases: AliasList = null,
     EndTime: Timestamp = null,
-    ReferenceId: js.UndefOr[NullableInteger] = js.undefined,
+    ReferenceId: Int | scala.Double = null,
     ResponseTimeHistogram: Histogram = null,
     StartTime: Timestamp = null,
     SummaryStatistics: EdgeStatistics = null
@@ -44,7 +44,7 @@ object Edge {
     val __obj = js.Dynamic.literal()
     if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(ReferenceId)) __obj.updateDynamic("ReferenceId")(ReferenceId)
+    if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
     if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics)

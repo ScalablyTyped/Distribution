@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriCoreEventedMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Evented
+import typings.arcgisDashJsDashApi.__esri.Evented
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

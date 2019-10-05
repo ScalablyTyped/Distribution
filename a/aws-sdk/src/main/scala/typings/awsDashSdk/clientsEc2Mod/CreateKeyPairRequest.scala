@@ -17,7 +17,7 @@ trait CreateKeyPairRequest extends js.Object {
 
 object CreateKeyPairRequest {
   @scala.inline
-  def apply(KeyName: String, DryRun: js.UndefOr[Boolean] = js.undefined): CreateKeyPairRequest = {
+  def apply(KeyName: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateKeyPairRequest]

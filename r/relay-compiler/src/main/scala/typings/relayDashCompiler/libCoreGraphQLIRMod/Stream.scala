@@ -26,12 +26,13 @@ object Stream {
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Stream,
     label: String,
     loc: Location,
-    metadata: Metadata,
     selections: js.Array[Selection],
-    `if`: ArgumentValue = null
+    `if`: ArgumentValue = null,
+    metadata: Metadata = null
   ): Stream = {
-    val __obj = js.Dynamic.literal(initialCount = initialCount, kind = kind, label = label, loc = loc, metadata = metadata.asInstanceOf[js.Any], selections = selections)
+    val __obj = js.Dynamic.literal(initialCount = initialCount, kind = kind, label = label, loc = loc, selections = selections)
     if (`if` != null) __obj.updateDynamic("if")(`if`)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stream]
   }
 }

@@ -1,7 +1,7 @@
 package typings.pouchdbDashMapreduce
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.AllDocsMeta
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.ExistingDocument
+import typings.pouchdbDashCore.PouchDB.Core.AllDocsMeta
+import typings.pouchdbDashCore.PouchDB.Core.ExistingDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

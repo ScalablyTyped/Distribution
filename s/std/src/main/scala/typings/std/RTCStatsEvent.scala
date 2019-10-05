@@ -12,12 +12,6 @@ trait RTCStatsEvent extends Event {
 
 @JSGlobal("RTCStatsEvent")
 @js.native
-class RTCStatsEventCls protected () extends RTCStatsEvent {
-  def this(`type`: java.lang.String, eventInitDict: RTCStatsEventInit) = this()
-}
-
-@JSGlobal("RTCStatsEvent")
-@js.native
 object RTCStatsEvent
   extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ RTCStatsEventInit, RTCStatsEvent]
 

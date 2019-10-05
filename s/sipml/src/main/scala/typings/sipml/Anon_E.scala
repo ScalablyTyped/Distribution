@@ -1,7 +1,7 @@
 package typings.sipml
 
-import typings.sipml.SIPmlNs.SessionNs.Event
-import typings.sipml.SIPmlNs.SessionNs.EventSubscriptionType
+import typings.sipml.SIPml.Session.Event
+import typings.sipml.SIPml.Session.EventSubscriptionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

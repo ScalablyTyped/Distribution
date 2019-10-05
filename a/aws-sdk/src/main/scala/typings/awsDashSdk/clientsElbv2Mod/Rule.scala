@@ -32,7 +32,7 @@ object Rule {
   def apply(
     Actions: Actions = null,
     Conditions: RuleConditionList = null,
-    IsDefault: js.UndefOr[IsDefault] = js.undefined,
+    IsDefault: js.UndefOr[Boolean] = js.undefined,
     Priority: String = null,
     RuleArn: RuleArn = null
   ): Rule = {

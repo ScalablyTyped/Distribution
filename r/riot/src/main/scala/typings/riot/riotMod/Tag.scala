@@ -17,3 +17,23 @@ abstract class Tag protected () extends TagInterface {
   def this(element: Element, opts: TagOpts) = this()
 }
 
+@JSImport("riot", "tag")
+@js.native
+object tag extends js.Object {
+  def apply[T /* <: TagInterface */](tagName: String, html: String): String = js.native
+  def apply[T /* <: TagInterface */](tagName: String, html: String, css: String): String = js.native
+  def apply[T /* <: TagInterface */](tagName: String, html: String, css: String, attrs: String): String = js.native
+  def apply[T /* <: TagInterface */](
+    tagName: String,
+    html: String,
+    css: String,
+    attrs: String,
+    constructor: js.ThisFunction1[/* this */ T, /* opts */ js.UndefOr[TagOpts], Unit]
+  ): String = js.native
+  def apply[T /* <: TagInterface */](
+    tagName: String,
+    html: Boolean,
+    constructor: js.ThisFunction1[/* this */ T, /* opts */ js.UndefOr[TagOpts], Unit]
+  ): String = js.native
+}
+

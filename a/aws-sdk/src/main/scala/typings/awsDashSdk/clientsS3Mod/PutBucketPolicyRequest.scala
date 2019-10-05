@@ -28,7 +28,7 @@ object PutBucketPolicyRequest {
   def apply(
     Bucket: BucketName,
     Policy: Policy,
-    ConfirmRemoveSelfBucketAccess: js.UndefOr[ConfirmRemoveSelfBucketAccess] = js.undefined,
+    ConfirmRemoveSelfBucketAccess: js.UndefOr[Boolean] = js.undefined,
     ContentMD5: ContentMD5 = null
   ): PutBucketPolicyRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket, Policy = Policy)

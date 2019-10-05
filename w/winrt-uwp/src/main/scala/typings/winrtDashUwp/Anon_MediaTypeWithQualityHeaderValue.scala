@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.WebNs.HttpNs.HeadersNs.HttpMediaTypeWithQualityHeaderValue
+import typings.winrtDashUwp.Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

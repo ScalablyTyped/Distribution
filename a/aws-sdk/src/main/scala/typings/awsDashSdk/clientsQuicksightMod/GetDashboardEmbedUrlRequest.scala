@@ -42,13 +42,13 @@ object GetDashboardEmbedUrlRequest {
     DashboardId: String,
     IdentityType: IdentityType,
     ResetDisabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SessionLifetimeInMinutes: js.UndefOr[SessionLifetimeInMinutes] = js.undefined,
+    SessionLifetimeInMinutes: Int | Double = null,
     UndoRedoDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     UserArn: Arn = null
   ): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, DashboardId = DashboardId, IdentityType = IdentityType.asInstanceOf[js.Any])
     if (!js.isUndefined(ResetDisabled)) __obj.updateDynamic("ResetDisabled")(ResetDisabled)
-    if (!js.isUndefined(SessionLifetimeInMinutes)) __obj.updateDynamic("SessionLifetimeInMinutes")(SessionLifetimeInMinutes)
+    if (SessionLifetimeInMinutes != null) __obj.updateDynamic("SessionLifetimeInMinutes")(SessionLifetimeInMinutes.asInstanceOf[js.Any])
     if (!js.isUndefined(UndoRedoDisabled)) __obj.updateDynamic("UndoRedoDisabled")(UndoRedoDisabled)
     if (UserArn != null) __obj.updateDynamic("UserArn")(UserArn)
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]

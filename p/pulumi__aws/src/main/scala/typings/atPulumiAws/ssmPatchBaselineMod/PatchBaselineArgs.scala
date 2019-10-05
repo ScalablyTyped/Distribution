@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmPatchBaselineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ssmNs.PatchBaselineApprovalRule
-import typings.atPulumiAws.typesInputMod.ssmNs.PatchBaselineGlobalFilter
+import typings.atPulumiAws.typesInputMod.ssm.PatchBaselineApprovalRule
+import typings.atPulumiAws.typesInputMod.ssm.PatchBaselineGlobalFilter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

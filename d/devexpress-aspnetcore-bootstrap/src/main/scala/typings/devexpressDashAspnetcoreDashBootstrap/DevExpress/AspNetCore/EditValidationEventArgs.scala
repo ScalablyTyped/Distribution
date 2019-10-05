@@ -1,0 +1,21 @@
+package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait EditValidationEventArgs extends EventArgs {
+  var errorText: String
+  var isValid: Boolean
+  var value: String
+}
+
+object EditValidationEventArgs {
+  @scala.inline
+  def apply(errorText: String, isValid: Boolean, sender: Control, value: String): EditValidationEventArgs = {
+    val __obj = js.Dynamic.literal(errorText = errorText, isValid = isValid, sender = sender, value = value)
+  
+    __obj.asInstanceOf[EditValidationEventArgs]
+  }
+}
+

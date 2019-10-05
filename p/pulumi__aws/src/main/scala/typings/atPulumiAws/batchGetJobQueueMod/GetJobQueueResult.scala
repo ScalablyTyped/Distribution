@@ -1,6 +1,6 @@
 package typings.atPulumiAws.batchGetJobQueueMod
 
-import typings.atPulumiAws.typesOutputMod.batchNs.GetJobQueueComputeEnvironmentOrder
+import typings.atPulumiAws.typesOutputMod.batch.GetJobQueueComputeEnvironmentOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.cannon.cannonMod
 
-import typings.cannon.CANNONNs.ISpringOptions
+import typings.cannon.CANNON.ISpringOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Spring")
 @js.native
 class Spring ()
-  extends typings.cannon.CANNONNs.Spring {
+  extends typings.cannon.CANNON.Spring {
   def this(options: ISpringOptions) = this()
 }
 

@@ -27,9 +27,9 @@ object UpdateApplicationRequest {
   @scala.inline
   def apply(
     ResourceGroupName: ResourceGroupName,
-    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
+    OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
-    RemoveSNSTopic: js.UndefOr[RemoveSNSTopic] = js.undefined
+    RemoveSNSTopic: js.UndefOr[Boolean] = js.undefined
   ): UpdateApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName)
     if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled)

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.IParentOnMap because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because Already inherited
 - typings.yandexDashMaps.yandexDashMapsMod.IGeoObjectCollection because var conflicts: events, options. Inlined add, add, each, each, get, getBounds, getIterator, getLength, getPixelBounds, indexOf, remove, removeAll, set, splice */ @JSImport("yandex-maps", "GeoObjectCollection")
 @js.native
 class GeoObjectCollection () extends IGeoObject {

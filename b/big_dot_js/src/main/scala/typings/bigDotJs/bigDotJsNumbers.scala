@@ -1,7 +1,7 @@
 package typings.bigDotJs
 
-import typings.bigDotJs.bigDotJsMod.Global.BigJsNs.Comparison
-import typings.bigDotJs.bigDotJsMod.Global.BigJsNs.RoundingMode
+import typings.bigDotJs.bigDotJsMod.Global.BigJs.Comparison
+import typings.bigDotJs.bigDotJsMod.Global.BigJs.RoundingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

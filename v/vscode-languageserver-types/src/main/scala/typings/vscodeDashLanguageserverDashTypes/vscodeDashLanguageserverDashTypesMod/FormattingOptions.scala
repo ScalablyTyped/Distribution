@@ -20,19 +20,16 @@ trait FormattingOptions
   var tabSize: Double
 }
 
-object FormattingOptions {
-  @scala.inline
-  def apply(
-    insertSpaces: Boolean,
-    tabSize: Double,
-    StringDictionary: /**
-    * Signature for further properties.
+@JSImport("vscode-languageserver-types", "FormattingOptions")
+@js.native
+object FormattingOptions extends js.Object {
+  /**
+    * Creates a new FormattingOptions literal.
     */
-  /* key */ StringDictionary[Boolean | Double | String] = null
-  ): FormattingOptions = {
-    val __obj = js.Dynamic.literal(insertSpaces = insertSpaces, tabSize = tabSize)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[FormattingOptions]
-  }
+  def create(tabSize: Double, insertSpaces: Boolean): FormattingOptions = js.native
+  /**
+    * Checks whether the given literal conforms to the [FormattingOptions](#FormattingOptions) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = js.native
 }
 

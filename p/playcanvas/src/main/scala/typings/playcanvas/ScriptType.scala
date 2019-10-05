@@ -1,9 +1,9 @@
 package typings.playcanvas
 
-import typings.playcanvas.pcNs.Application
-import typings.playcanvas.pcNs.Entity
-import typings.playcanvas.pcNs.EventHandler
-import typings.playcanvas.pcNs.ScriptAttributes
+import typings.playcanvas.pc.Application
+import typings.playcanvas.pc.Entity
+import typings.playcanvas.pc.EventHandler
+import typings.playcanvas.pc.ScriptAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

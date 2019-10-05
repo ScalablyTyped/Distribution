@@ -39,10 +39,10 @@ object TextAreaItemPropsType {
     labelNumber: Int | Double = null,
     maxLength: Int | Double = null,
     name: String = null,
-    onBlur: TextAreaEventHandle = null,
-    onChange: TextAreaEventHandle = null,
+    onBlur: /* val */ js.UndefOr[String] => Unit = null,
+    onChange: /* val */ js.UndefOr[String] => Unit = null,
     onErrorClick: () => Unit = null,
-    onFocus: TextAreaEventHandle = null,
+    onFocus: /* val */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     rows: Int | Double = null,
     title: ReactNode = null,
@@ -59,10 +59,10 @@ object TextAreaItemPropsType {
     if (labelNumber != null) __obj.updateDynamic("labelNumber")(labelNumber.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction0(onErrorClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

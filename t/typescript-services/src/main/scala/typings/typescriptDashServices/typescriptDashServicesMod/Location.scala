@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Location")
 @js.native
 class Location protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.Location {
+  extends typings.typescriptDashServices.TypeScript.Location {
   def this(
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
     start: Double,
     length: Double
   ) = this()
@@ -21,8 +21,8 @@ class Location protected ()
 @js.native
 object Location extends js.Object {
   def equals(
-    location1: typings.typescriptDashServices.TypeScriptNs.Location,
-    location2: typings.typescriptDashServices.TypeScriptNs.Location
+    location1: typings.typescriptDashServices.TypeScript.Location,
+    location2: typings.typescriptDashServices.TypeScript.Location
   ): Boolean = js.native
 }
 

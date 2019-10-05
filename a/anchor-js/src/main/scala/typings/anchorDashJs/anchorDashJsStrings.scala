@@ -1,7 +1,7 @@
 package typings.anchorDashJs
 
-import typings.anchorDashJs.anchorDashJsMod.anchorjsNs.AnchorPlacement
-import typings.anchorDashJs.anchorDashJsMod.anchorjsNs.AnchorVisibility
+import typings.anchorDashJs.anchorDashJsMod.anchorjs.AnchorPlacement
+import typings.anchorDashJs.anchorDashJsMod.anchorjs.AnchorVisibility
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,21 @@
+package typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ControllerMetadata extends js.Object {
+  var middleware: js.Array[Middleware]
+  var path: String
+  var target: js.Any
+}
+
+object ControllerMetadata {
+  @scala.inline
+  def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
+    val __obj = js.Dynamic.literal(middleware = middleware, path = path, target = target)
+  
+    __obj.asInstanceOf[ControllerMetadata]
+  }
+}
+

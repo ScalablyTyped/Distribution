@@ -21,17 +21,17 @@ object RenderMarkProps {
   def apply(
     annotations: List[Annotation] | js.Array[Annotation],
     attributes: RenderAttributes,
-    children: ReactNode,
     decorations: List[Decoration] | js.Array[Annotation],
     editor: Editor,
     mark: Mark,
     marks: Set[Mark],
     node: Node,
     offset: Double,
-    text: String
+    text: String,
+    children: ReactNode = null
   ): RenderMarkProps = {
-    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], attributes = attributes, children = children.asInstanceOf[js.Any], decorations = decorations.asInstanceOf[js.Any], editor = editor, mark = mark, marks = marks, node = node, offset = offset, text = text)
-  
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], attributes = attributes, decorations = decorations.asInstanceOf[js.Any], editor = editor, mark = mark, marks = marks, node = node, offset = offset, text = text)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderMarkProps]
   }
 }

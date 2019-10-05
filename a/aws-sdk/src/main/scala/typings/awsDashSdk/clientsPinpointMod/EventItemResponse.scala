@@ -17,10 +17,10 @@ trait EventItemResponse extends js.Object {
 
 object EventItemResponse {
   @scala.inline
-  def apply(Message: __string = null, StatusCode: js.UndefOr[__integer] = js.undefined): EventItemResponse = {
+  def apply(Message: __string = null, StatusCode: Int | Double = null): EventItemResponse = {
     val __obj = js.Dynamic.literal()
     if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventItemResponse]
   }
 }

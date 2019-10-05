@@ -48,12 +48,12 @@ object GetMetricDataRequest {
     InstanceId: InstanceId,
     StartTime: timestamp,
     Groupings: Groupings = null,
-    MaxResults: js.UndefOr[MaxResult100] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): GetMetricDataRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime, Filters = Filters, HistoricalMetrics = HistoricalMetrics, InstanceId = InstanceId, StartTime = StartTime)
     if (Groupings != null) __obj.updateDynamic("Groupings")(Groupings)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetMetricDataRequest]
   }

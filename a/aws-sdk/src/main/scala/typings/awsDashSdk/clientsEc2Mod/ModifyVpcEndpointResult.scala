@@ -13,7 +13,7 @@ trait ModifyVpcEndpointResult extends js.Object {
 
 object ModifyVpcEndpointResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): ModifyVpcEndpointResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ModifyVpcEndpointResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[ModifyVpcEndpointResult]

@@ -1,5 +1,7 @@
 package typings.reactDashMosaicDashComponent.libContextTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.Context
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +12,7 @@ trait MosaicContext[T /* <: MosaicKey */] extends js.Object {
   var mosaicId: String
 }
 
-object MosaicContext {
-  @scala.inline
-  def apply[T /* <: MosaicKey */](mosaicActions: MosaicRootActions[T], mosaicId: String): MosaicContext[T] = {
-    val __obj = js.Dynamic.literal(mosaicActions = mosaicActions, mosaicId = mosaicId)
-  
-    __obj.asInstanceOf[MosaicContext[T]]
-  }
-}
+@JSImport("react-mosaic-component/lib/contextTypes", "MosaicContext")
+@js.native
+object MosaicContext extends TopLevel[Context[MosaicContext[String | Double]]]
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "split"
-version := "v1.0.1-dt-20190322Z-89871f"
-scalaVersion := "2.12.9"
+version := "v1.0.1-dt-20190322Z-1a2e34"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-410ad9")
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-251f35")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

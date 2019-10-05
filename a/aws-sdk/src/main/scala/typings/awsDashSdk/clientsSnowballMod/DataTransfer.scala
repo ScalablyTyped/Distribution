@@ -26,16 +26,16 @@ trait DataTransfer extends js.Object {
 object DataTransfer {
   @scala.inline
   def apply(
-    BytesTransferred: js.UndefOr[Long] = js.undefined,
-    ObjectsTransferred: js.UndefOr[Long] = js.undefined,
-    TotalBytes: js.UndefOr[Long] = js.undefined,
-    TotalObjects: js.UndefOr[Long] = js.undefined
+    BytesTransferred: Int | Double = null,
+    ObjectsTransferred: Int | Double = null,
+    TotalBytes: Int | Double = null,
+    TotalObjects: Int | Double = null
   ): DataTransfer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred)
-    if (!js.isUndefined(ObjectsTransferred)) __obj.updateDynamic("ObjectsTransferred")(ObjectsTransferred)
-    if (!js.isUndefined(TotalBytes)) __obj.updateDynamic("TotalBytes")(TotalBytes)
-    if (!js.isUndefined(TotalObjects)) __obj.updateDynamic("TotalObjects")(TotalObjects)
+    if (BytesTransferred != null) __obj.updateDynamic("BytesTransferred")(BytesTransferred.asInstanceOf[js.Any])
+    if (ObjectsTransferred != null) __obj.updateDynamic("ObjectsTransferred")(ObjectsTransferred.asInstanceOf[js.Any])
+    if (TotalBytes != null) __obj.updateDynamic("TotalBytes")(TotalBytes.asInstanceOf[js.Any])
+    if (TotalObjects != null) __obj.updateDynamic("TotalObjects")(TotalObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransfer]
   }
 }

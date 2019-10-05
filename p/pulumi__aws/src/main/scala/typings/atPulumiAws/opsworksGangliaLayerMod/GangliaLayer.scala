@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksGangliaLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.GangliaLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.GangliaLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/getOverlappingDaysInIntervals", JSImport.Namespace)
 @js.native
 object esmGetOverlappingDaysInIntervalsMod extends js.Object {
-  def default(intervalLeft: Interval, intervalRight: Interval): Double = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(intervalLeft: Interval, intervalRight: Interval): Double = js.native
+  }
+  
 }
 

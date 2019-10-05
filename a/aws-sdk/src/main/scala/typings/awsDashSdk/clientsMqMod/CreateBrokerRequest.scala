@@ -74,7 +74,7 @@ trait CreateBrokerRequest extends js.Object {
 object CreateBrokerRequest {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[__boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     BrokerName: __string = null,
     Configuration: ConfigurationId = null,
     CreatorRequestId: __string = null,
@@ -85,7 +85,7 @@ object CreateBrokerRequest {
     HostInstanceType: __string = null,
     Logs: Logs = null,
     MaintenanceWindowStartTime: WeeklyStartTime = null,
-    PubliclyAccessible: js.UndefOr[__boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
     SecurityGroups: __listOf__string = null,
     SubnetIds: __listOf__string = null,
     Tags: __mapOf__string = null,

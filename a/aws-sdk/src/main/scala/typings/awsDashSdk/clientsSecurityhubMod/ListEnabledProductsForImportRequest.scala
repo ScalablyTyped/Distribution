@@ -17,9 +17,9 @@ trait ListEnabledProductsForImportRequest extends js.Object {
 
 object ListEnabledProductsForImportRequest {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListEnabledProductsForImportRequest = {
+  def apply(MaxResults: Int | scala.Double = null, NextToken: NextToken = null): ListEnabledProductsForImportRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListEnabledProductsForImportRequest]
   }

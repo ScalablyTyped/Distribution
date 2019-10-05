@@ -22,16 +22,16 @@ object RenderAnnotationProps {
     annotation: Annotation,
     annotations: List[Annotation] | js.Array[Annotation],
     attributes: RenderAttributes,
-    children: ReactNode,
     decorations: List[Decoration] | js.Array[Annotation],
     editor: Editor,
     marks: Set[Mark],
     node: Node,
     offset: Double,
-    text: String
+    text: String,
+    children: ReactNode = null
   ): RenderAnnotationProps = {
-    val __obj = js.Dynamic.literal(annotation = annotation, annotations = annotations.asInstanceOf[js.Any], attributes = attributes, children = children.asInstanceOf[js.Any], decorations = decorations.asInstanceOf[js.Any], editor = editor, marks = marks, node = node, offset = offset, text = text)
-  
+    val __obj = js.Dynamic.literal(annotation = annotation, annotations = annotations.asInstanceOf[js.Any], attributes = attributes, decorations = decorations.asInstanceOf[js.Any], editor = editor, marks = marks, node = node, offset = offset, text = text)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderAnnotationProps]
   }
 }

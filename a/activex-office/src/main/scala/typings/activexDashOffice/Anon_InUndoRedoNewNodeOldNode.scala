@@ -1,6 +1,6 @@
 package typings.activexDashOffice
 
-import typings.activexDashOffice.OfficeNs.CustomXMLNode
+import typings.activexDashOffice.Office.CustomXMLNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

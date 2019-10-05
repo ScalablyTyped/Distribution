@@ -104,7 +104,7 @@ object ClusterInfo {
     CurrentVersion: __string = null,
     EncryptionInfo: EncryptionInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null,
-    NumberOfBrokerNodes: js.UndefOr[__integer] = js.undefined,
+    NumberOfBrokerNodes: Int | Double = null,
     State: ClusterState = null,
     Tags: __mapOf__string = null,
     ZookeeperConnectString: __string = null
@@ -120,7 +120,7 @@ object ClusterInfo {
     if (CurrentVersion != null) __obj.updateDynamic("CurrentVersion")(CurrentVersion)
     if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo)
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes)
+    if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (ZookeeperConnectString != null) __obj.updateDynamic("ZookeeperConnectString")(ZookeeperConnectString)

@@ -21,13 +21,9 @@ trait ListQueryExecutionsInput extends js.Object {
 
 object ListQueryExecutionsInput {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxQueryExecutionsCount] = js.undefined,
-    NextToken: Token = null,
-    WorkGroup: WorkGroupName = null
-  ): ListQueryExecutionsInput = {
+  def apply(MaxResults: Int | Double = null, NextToken: Token = null, WorkGroup: WorkGroupName = null): ListQueryExecutionsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (WorkGroup != null) __obj.updateDynamic("WorkGroup")(WorkGroup)
     __obj.asInstanceOf[ListQueryExecutionsInput]

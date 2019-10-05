@@ -15,3 +15,10 @@ trait Register extends js.Object {
   def getTypeInfo(code: String, fileName: String, position: Double): TypeInfo = js.native
 }
 
+@JSImport("ts-node", "register")
+@js.native
+object register extends js.Object {
+  def apply(): Register = js.native
+  def apply(opts: Options): Register = js.native
+}
+

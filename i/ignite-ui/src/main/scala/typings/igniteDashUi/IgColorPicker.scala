@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +39,13 @@ object IgColorPicker {
   	 * Option for igColorPicker
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    colorSelected: ColorSelectedEvent = null,
+    colorSelected: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit = null,
     colors: String = null,
     standardColors: js.Array[_] = null
   ): IgColorPicker = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (colorSelected != null) __obj.updateDynamic("colorSelected")(colorSelected)
+    if (colorSelected != null) __obj.updateDynamic("colorSelected")(js.Any.fromFunction2(colorSelected))
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (standardColors != null) __obj.updateDynamic("standardColors")(standardColors)
     __obj.asInstanceOf[IgColorPicker]

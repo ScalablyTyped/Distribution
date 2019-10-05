@@ -17,9 +17,9 @@ trait SegmentReference extends js.Object {
 
 object SegmentReference {
   @scala.inline
-  def apply(Id: __string, Version: js.UndefOr[__integer] = js.undefined): SegmentReference = {
+  def apply(Id: __string, Version: Int | Double = null): SegmentReference = {
     val __obj = js.Dynamic.literal(Id = Id)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentReference]
   }
 }

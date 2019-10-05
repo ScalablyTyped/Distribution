@@ -54,3 +54,9 @@ object Options {
   }
 }
 
+@JSImport("apicache", "options")
+@js.native
+object options extends js.Object {
+  def apply(options: Options): js.Any = js.native
+}
+

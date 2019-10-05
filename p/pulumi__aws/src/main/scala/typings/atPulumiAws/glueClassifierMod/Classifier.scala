@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueClassifierMod
 
-import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierGrokClassifier
-import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierJsonClassifier
-import typings.atPulumiAws.typesOutputMod.glueNs.ClassifierXmlClassifier
+import typings.atPulumiAws.typesOutputMod.glue.ClassifierGrokClassifier
+import typings.atPulumiAws.typesOutputMod.glue.ClassifierJsonClassifier
+import typings.atPulumiAws.typesOutputMod.glue.ClassifierXmlClassifier
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

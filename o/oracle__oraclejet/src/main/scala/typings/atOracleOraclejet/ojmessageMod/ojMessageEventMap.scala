@@ -2,11 +2,11 @@ package typings.atOracleOraclejet.ojmessageMod
 
 import typings.atOracleOraclejet.Anon_Categories
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.DisplayOptions
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.Message
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojAnimateStart
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojClose
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.Message
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.ojClose
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -31,9 +31,9 @@ import scala.scalajs.js.annotation._
 trait ojMessageEventMap extends HTMLElementEventMap {
   var displayOptionsChanged: JetElementCustomEvent[DisplayOptions]
   var messageChanged: JetElementCustomEvent[Message]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojAnimateStart
-  var ojClose: typings.atOracleOraclejet.ojmessageMod.ojMessageNs.ojClose
+  var ojAnimateEnd: typings.atOracleOraclejet.ojmessageMod.ojMessage.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojmessageMod.ojMessage.ojAnimateStart
+  var ojClose: typings.atOracleOraclejet.ojmessageMod.ojMessage.ojClose
   var translationsChanged: JetElementCustomEvent[Anon_Categories]
 }
 

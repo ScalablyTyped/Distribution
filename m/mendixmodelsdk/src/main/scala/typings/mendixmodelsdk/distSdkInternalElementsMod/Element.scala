@@ -9,6 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure because Already inherited
+- typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
 @js.native
 abstract class Element protected () extends AbstractElement {

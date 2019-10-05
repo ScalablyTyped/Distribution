@@ -1,6 +1,6 @@
 package typings.activexDashMsforms
 
-import typings.activexDashMsforms.MSFormsNs.Image
+import typings.activexDashMsforms.MSForms.Image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

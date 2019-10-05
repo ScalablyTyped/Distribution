@@ -55,13 +55,6 @@ trait MSPointerEvent extends MouseEvent {
 
 @JSGlobal("MSPointerEvent")
 @js.native
-class MSPointerEventCls protected () extends MSPointerEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: PointerEventInit) = this()
-}
-
-@JSGlobal("MSPointerEvent")
-@js.native
 object MSPointerEvent
   extends Instantiable1[/* typeArg */ java.lang.String, MSPointerEvent]
      with Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ PointerEventInit, MSPointerEvent]

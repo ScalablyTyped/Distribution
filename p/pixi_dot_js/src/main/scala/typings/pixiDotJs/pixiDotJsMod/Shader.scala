@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Shader")
 @js.native
 class Shader protected ()
-  extends typings.pixiDotJs.PIXINs.Shader {
+  extends typings.pixiDotJs.PIXI.Shader {
   def this(gl: WebGLRenderingContext, vertexSrc: String, fragmentSrc: String) = this()
   def this(gl: WebGLRenderingContext, vertexSrc: String, fragmentSrc: js.Array[String]) = this()
   def this(gl: WebGLRenderingContext, vertexSrc: js.Array[String], fragmentSrc: String) = this()

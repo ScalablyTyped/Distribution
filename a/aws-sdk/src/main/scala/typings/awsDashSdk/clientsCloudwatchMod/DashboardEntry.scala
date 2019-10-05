@@ -29,13 +29,13 @@ object DashboardEntry {
     DashboardArn: DashboardArn = null,
     DashboardName: DashboardName = null,
     LastModified: LastModified = null,
-    Size: js.UndefOr[Size] = js.undefined
+    Size: Int | Double = null
   ): DashboardEntry = {
     val __obj = js.Dynamic.literal()
     if (DashboardArn != null) __obj.updateDynamic("DashboardArn")(DashboardArn)
     if (DashboardName != null) __obj.updateDynamic("DashboardName")(DashboardName)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardEntry]
   }
 }

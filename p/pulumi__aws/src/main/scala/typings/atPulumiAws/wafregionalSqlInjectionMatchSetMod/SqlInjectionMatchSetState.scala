@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalSqlInjectionMatchSetMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.SqlInjectionMatchSetSqlInjectionMatchTuple
+import typings.atPulumiAws.typesInputMod.wafregional.SqlInjectionMatchSetSqlInjectionMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

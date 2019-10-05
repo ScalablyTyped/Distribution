@@ -1,7 +1,9 @@
 package typings.atMaterialDashUiCore.dialogDialogMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: DialogProps) = this()
   def this(props: DialogProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/core/Dialog/Dialog", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentType[DialogProps]]
 

@@ -26,13 +26,13 @@ trait UpdateFileSystemWindowsConfiguration extends js.Object {
 object UpdateFileSystemWindowsConfiguration {
   @scala.inline
   def apply(
-    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
+    AutomaticBackupRetentionDays: Int | Double = null,
     DailyAutomaticBackupStartTime: DailyTime = null,
     SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryConfigurationUpdates = null,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): UpdateFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays)
+    if (AutomaticBackupRetentionDays != null) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.asInstanceOf[js.Any])
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime)
     if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration)
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime)

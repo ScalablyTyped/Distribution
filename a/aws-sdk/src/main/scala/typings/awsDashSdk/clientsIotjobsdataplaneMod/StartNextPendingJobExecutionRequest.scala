@@ -21,14 +21,10 @@ trait StartNextPendingJobExecutionRequest extends js.Object {
 
 object StartNextPendingJobExecutionRequest {
   @scala.inline
-  def apply(
-    thingName: ThingName,
-    statusDetails: DetailsMap = null,
-    stepTimeoutInMinutes: js.UndefOr[StepTimeoutInMinutes] = js.undefined
-  ): StartNextPendingJobExecutionRequest = {
+  def apply(thingName: ThingName, statusDetails: DetailsMap = null, stepTimeoutInMinutes: Int | Double = null): StartNextPendingJobExecutionRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName)
     if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
-    if (!js.isUndefined(stepTimeoutInMinutes)) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes)
+    if (stepTimeoutInMinutes != null) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartNextPendingJobExecutionRequest]
   }
 }

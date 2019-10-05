@@ -1,5 +1,6 @@
 package typings.antd.esConfigDashProviderMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.antd.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typings.antd.esLocaleDashProviderMod.Locale
 import typings.std.HTMLElement
@@ -18,4 +19,9 @@ trait ConfigConsumerProps extends js.Object {
   def getPrefixCls(suffixCls: String): String = js.native
   def getPrefixCls(suffixCls: String, customizePrefixCls: String): String = js.native
 }
+
+@JSImport("antd/es/config-provider", "configConsumerProps")
+@js.native
+object configConsumerProps
+  extends TopLevel[js.Array[String]]
 

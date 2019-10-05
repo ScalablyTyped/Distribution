@@ -1,7 +1,7 @@
 package typings.rcDashEditorDashCore.libEditorCoreMod
 
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftBlockRenderConfig
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftBlockRenderConfig
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftInlineStyle
 import typings.draftDashJs.draftDashJsMod.EditorState
 import typings.immutable.immutableMod.List
 import typings.immutable.immutableMod.Map

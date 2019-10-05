@@ -1,6 +1,6 @@
 package typings.atPulumiAws.kmsGetSecretsMod
 
-import typings.atPulumiAws.typesInputMod.kmsNs.GetSecretsSecret
+import typings.atPulumiAws.typesInputMod.kms.GetSecretsSecret
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

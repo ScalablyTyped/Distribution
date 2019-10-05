@@ -22,12 +22,12 @@ trait ListStreamsInput extends js.Object {
 object ListStreamsInput {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[ListStreamsInputLimit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     StreamNameCondition: StreamNameCondition = null
   ): ListStreamsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StreamNameCondition != null) __obj.updateDynamic("StreamNameCondition")(StreamNameCondition)
     __obj.asInstanceOf[ListStreamsInput]

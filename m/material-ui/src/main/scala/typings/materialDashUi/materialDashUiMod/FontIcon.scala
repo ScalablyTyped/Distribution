@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "FontIcon")
 @js.native
 class FontIcon ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.FontIcon
+  extends typings.materialDashUi.__MaterialUI.FontIcon
 

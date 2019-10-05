@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsExpressionLoc
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.TSQualifiedNameKind
 import typings.astDashTypes.genKindsMod.TSTypeParameterInstantiationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSExpressionWithTypeArguments
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSExpressionWithTypeArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

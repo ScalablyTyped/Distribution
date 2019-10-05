@@ -1,5 +1,7 @@
 package typings.tstl.tstlMod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +20,9 @@ class Exception ()
     */
   def this(message: String) = this()
 }
+
+@JSImport("tstl", "exception")
+@js.native
+object exception
+  extends TopLevel[Instantiable0[typings.tstl.exceptionExceptionMod.Exception]]
 

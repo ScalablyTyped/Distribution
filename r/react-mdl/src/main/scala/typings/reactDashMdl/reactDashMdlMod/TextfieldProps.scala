@@ -1,7 +1,7 @@
 package typings.reactDashMdl.reactDashMdlMod
 
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -39,7 +39,7 @@ object TextfieldProps {
     inputClassName: String = null,
     maxRows: Int | Double = null,
     name: String = null,
-    onChange: FormEventHandler[HTMLInputElement] = null,
+    onChange: FormEvent[HTMLInputElement] => Unit = null,
     pattern: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
@@ -58,7 +58,7 @@ object TextfieldProps {
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

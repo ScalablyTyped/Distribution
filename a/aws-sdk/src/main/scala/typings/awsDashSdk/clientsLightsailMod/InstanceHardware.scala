@@ -21,15 +21,11 @@ trait InstanceHardware extends js.Object {
 
 object InstanceHardware {
   @scala.inline
-  def apply(
-    cpuCount: js.UndefOr[integer] = js.undefined,
-    disks: DiskList = null,
-    ramSizeInGb: js.UndefOr[float] = js.undefined
-  ): InstanceHardware = {
+  def apply(cpuCount: Int | Double = null, disks: DiskList = null, ramSizeInGb: Int | Double = null): InstanceHardware = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount)
+    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
     if (disks != null) __obj.updateDynamic("disks")(disks)
-    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb)
+    if (ramSizeInGb != null) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceHardware]
   }
 }

@@ -83,7 +83,7 @@ object Job {
     status: ExecutionStatus = null,
     stopped: DateTime = null,
     `type`: TestType = null,
-    videoCapture: js.UndefOr[VideoCapture] = js.undefined,
+    videoCapture: js.UndefOr[scala.Boolean] = js.undefined,
     videoEndpoint: String = null
   ): Job = {
     val __obj = js.Dynamic.literal()

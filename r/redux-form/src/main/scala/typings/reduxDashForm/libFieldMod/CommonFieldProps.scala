@@ -16,13 +16,13 @@ object CommonFieldProps {
   @scala.inline
   def apply(
     name: String,
-    onBlur: EventWithDataHandler[FocusEvent[_]],
-    onChange: EventWithDataHandler[ChangeEvent[_]],
-    onDragStart: EventHandler[DragEvent[_]],
-    onDrop: EventHandler[DragEvent[_]],
-    onFocus: EventHandler[FocusEvent[_]]
+    onBlur: (/* event */ js.UndefOr[FocusEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
+    onChange: (/* event */ js.UndefOr[ChangeEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
+    onDragStart: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
+    onDrop: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
+    onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit
   ): CommonFieldProps = {
-    val __obj = js.Dynamic.literal(name = name, onBlur = onBlur, onChange = onChange, onDragStart = onDragStart, onDrop = onDrop, onFocus = onFocus)
+    val __obj = js.Dynamic.literal(name = name, onBlur = js.Any.fromFunction4(onBlur), onChange = js.Any.fromFunction4(onChange), onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
   
     __obj.asInstanceOf[CommonFieldProps]
   }

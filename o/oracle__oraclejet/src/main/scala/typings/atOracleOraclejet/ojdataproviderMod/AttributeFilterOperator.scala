@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojdataproviderMod
 
-import typings.atOracleOraclejet.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
+import typings.atOracleOraclejet.ojdataproviderMod.AttributeFilterOperator.AttributeOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +11,23 @@ trait AttributeFilterOperator[D] extends js.Object {
   var value: js.Any
 }
 
-object AttributeFilterOperator {
-  @scala.inline
-  def apply[D](attribute: String, op: AttributeOperator, value: js.Any): AttributeFilterOperator[D] = {
-    val __obj = js.Dynamic.literal(attribute = attribute, op = op, value = value)
+@JSImport("@oracle/oraclejet/ojdataprovider", "AttributeFilterOperator")
+@js.native
+object AttributeFilterOperator extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARco
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLAReq
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARew
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARpr
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARgt
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARge
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARlt
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARle
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARne
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARregex
+    - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARsw
+  */
+  trait AttributeOperator extends js.Object
   
-    __obj.asInstanceOf[AttributeFilterOperator[D]]
-  }
 }
 

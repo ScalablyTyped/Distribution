@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
 
 object InputProps {
   @scala.inline
-  def apply(onBlur: InputEventHandler = null, onFocus: InputEventHandler = null): InputProps = {
+  def apply(
+    onBlur: /* value */ js.UndefOr[String] => Unit = null,
+    onFocus: /* value */ js.UndefOr[String] => Unit = null
+  ): InputProps = {
     val __obj = js.Dynamic.literal()
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     __obj.asInstanceOf[InputProps]
   }
 }

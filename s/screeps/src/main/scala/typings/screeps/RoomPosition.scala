@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.TopLevel
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
 import typings.screeps.screepsStrings.energy
@@ -272,13 +273,5 @@ trait RoomPosition extends js.Object {
 
 @JSGlobal("RoomPosition")
 @js.native
-class RoomPositionCls protected () extends RoomPosition {
-  /**
-    * You can create new RoomPosition object using its constructor.
-    * @param x X position in the room.
-    * @param y Y position in the room.
-    * @param roomName The room name.
-    */
-  def this(x: Double, y: Double, roomName: String) = this()
-}
+object RoomPosition extends TopLevel[RoomPositionConstructor]
 

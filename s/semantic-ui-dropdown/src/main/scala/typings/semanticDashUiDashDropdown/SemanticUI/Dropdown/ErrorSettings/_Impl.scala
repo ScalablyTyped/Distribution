@@ -1,0 +1,38 @@
+package typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.ErrorSettings
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _Impl extends js.Object {
+  /**
+    * @default 'You called a dropdown action that was not defined'
+    */
+  var action: String
+  /**
+    * @default 'Once a select has been initialized behaviors must be called on the created ui dropdown'
+    */
+  var alreadySetup: String
+  /**
+    * @default 'Allowing user additions currently requires the use of labels.'
+    */
+  var labels: String
+  /**
+    * @default 'The method you called is not defined.'
+    */
+  var method: String
+  /**
+    * @default 'This module requires ui transitions <https: github.com="" semantic-org="" ui-transition="">'
+    */
+  var noTransition: String
+}
+
+object _Impl {
+  @scala.inline
+  def apply(action: String, alreadySetup: String, labels: String, method: String, noTransition: String): _Impl = {
+    val __obj = js.Dynamic.literal(action = action, alreadySetup = alreadySetup, labels = labels, method = method, noTransition = noTransition)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

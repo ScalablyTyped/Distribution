@@ -1,7 +1,7 @@
 package typings.yogDashBigpipe
 
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.mode
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.status
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.mode
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

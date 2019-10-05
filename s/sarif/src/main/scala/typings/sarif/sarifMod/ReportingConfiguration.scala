@@ -1,6 +1,6 @@
 package typings.sarif.sarifMod
 
-import typings.sarif.sarifMod.ReportingConfigurationNs.level
+import typings.sarif.sarifMod.ReportingConfiguration.level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ReportingConfiguration extends js.Object {
   /**
     * Specifies the failure level for the report.
     */
-  var level: js.UndefOr[typings.sarif.sarifMod.ReportingConfigurationNs.level] = js.undefined
+  var level: js.UndefOr[level] = js.undefined
   /**
     * Contains configuration information specific to a report.
     */
@@ -28,22 +28,16 @@ trait ReportingConfiguration extends js.Object {
   var rank: js.UndefOr[Double] = js.undefined
 }
 
-object ReportingConfiguration {
-  @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    level: level = null,
-    parameters: PropertyBag = null,
-    properties: PropertyBag = null,
-    rank: Int | Double = null
-  ): ReportingConfiguration = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ReportingConfiguration]
-  }
+@JSImport("sarif", "ReportingConfiguration")
+@js.native
+object ReportingConfiguration extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.none
+    - typings.sarif.sarifStrings.note
+    - typings.sarif.sarifStrings.warning
+    - typings.sarif.sarifStrings.error
+  */
+  trait level extends js.Object
+  
 }
 

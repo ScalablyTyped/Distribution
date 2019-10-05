@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.openpgpMod.enumsNs.reasonForRevocation
+import typings.openpgp.openpgpMod.enums.reasonForRevocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

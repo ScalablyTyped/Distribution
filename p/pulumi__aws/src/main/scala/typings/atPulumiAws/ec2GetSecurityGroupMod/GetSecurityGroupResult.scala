@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSecurityGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetSecurityGroupFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetSecurityGroupFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

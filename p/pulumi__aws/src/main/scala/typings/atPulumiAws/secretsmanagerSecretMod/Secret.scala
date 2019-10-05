@@ -1,7 +1,7 @@
 package typings.atPulumiAws.secretsmanagerSecretMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.secretsmanagerNs.SecretRotationRules
+import typings.atPulumiAws.typesOutputMod.secretsmanager.SecretRotationRules
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

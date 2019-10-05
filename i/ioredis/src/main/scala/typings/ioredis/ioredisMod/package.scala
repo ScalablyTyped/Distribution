@@ -8,7 +8,7 @@ package object ioredisMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.ioredis.Anon_Host
   import typings.node.Buffer
-  import typings.node.NodeJSNs.ErrnoException
+  import typings.node.NodeJS.ErrnoException
 
   type CallbackFunction[T] = js.Function2[/* err */ js.UndefOr[ErrnoException | Null], /* result */ js.UndefOr[T], Unit]
   type ClusterNode = String | Double | NodeConfiguration

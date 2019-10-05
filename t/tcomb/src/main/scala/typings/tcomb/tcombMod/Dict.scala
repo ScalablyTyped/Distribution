@@ -18,3 +18,10 @@ trait Dict[T] extends Type[StringDictionary[T]] {
   def update(instance: StringDictionary[StringDictionary[T]], spec: UpdatePatch): StringDictionary[StringDictionary[T]] = js.native
 }
 
+@JSImport("tcomb", "dict")
+@js.native
+object dict extends js.Object {
+  def apply[T](domain: Constructor[String], codomain: Constructor[T]): Dict[T] = js.native
+  def apply[T](domain: Constructor[String], codomain: Constructor[T], name: String): Dict[T] = js.native
+}
+

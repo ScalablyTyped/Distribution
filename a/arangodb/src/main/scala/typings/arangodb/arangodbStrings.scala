@@ -1,16 +1,16 @@
 package typings.arangodb
 
-import typings.arangodb.ArangoDBNs.ArangoSearchViewConsolidationType
-import typings.arangodb.ArangoDBNs.EdgeDirection
-import typings.arangodb.ArangoDBNs.EngineType
-import typings.arangodb.ArangoDBNs.ErrorName
-import typings.arangodb.ArangoDBNs.HashAlgorithm
-import typings.arangodb.ArangoDBNs.HttpMethod
-import typings.arangodb.ArangoDBNs.HttpStatus
-import typings.arangodb.ArangoDBNs.IndexType
-import typings.arangodb.ArangoDBNs.JwtAlgorithm
-import typings.arangodb.ArangoDBNs.KeyGeneratorType
-import typings.arangodb.FoxxNs.ConfigurationType
+import typings.arangodb.ArangoDB.ArangoSearchViewConsolidationType
+import typings.arangodb.ArangoDB.EdgeDirection
+import typings.arangodb.ArangoDB.EngineType
+import typings.arangodb.ArangoDB.ErrorName
+import typings.arangodb.ArangoDB.HashAlgorithm
+import typings.arangodb.ArangoDB.HttpMethod
+import typings.arangodb.ArangoDB.HttpStatus
+import typings.arangodb.ArangoDB.IndexType
+import typings.arangodb.ArangoDB.JwtAlgorithm
+import typings.arangodb.ArangoDB.KeyGeneratorType
+import typings.arangodb.Foxx.ConfigurationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

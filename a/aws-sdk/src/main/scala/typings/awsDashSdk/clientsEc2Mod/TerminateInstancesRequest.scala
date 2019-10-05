@@ -17,7 +17,7 @@ trait TerminateInstancesRequest extends js.Object {
 
 object TerminateInstancesRequest {
   @scala.inline
-  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[Boolean] = js.undefined): TerminateInstancesRequest = {
+  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): TerminateInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[TerminateInstancesRequest]

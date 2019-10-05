@@ -17,12 +17,9 @@ trait CreateDirectConnectGatewayRequest extends js.Object {
 
 object CreateDirectConnectGatewayRequest {
   @scala.inline
-  def apply(
-    directConnectGatewayName: DirectConnectGatewayName,
-    amazonSideAsn: js.UndefOr[LongAsn] = js.undefined
-  ): CreateDirectConnectGatewayRequest = {
+  def apply(directConnectGatewayName: DirectConnectGatewayName, amazonSideAsn: Int | Double = null): CreateDirectConnectGatewayRequest = {
     val __obj = js.Dynamic.literal(directConnectGatewayName = directConnectGatewayName)
-    if (!js.isUndefined(amazonSideAsn)) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDirectConnectGatewayRequest]
   }
 }

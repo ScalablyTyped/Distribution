@@ -3,7 +3,7 @@ package typings.atPulumiAws.elasticbeanstalkEnvironmentMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.atPulumiAws.elasticbeanstalkApplicationVersionMod.ApplicationVersion
-import typings.atPulumiAws.typesInputMod.elasticbeanstalkNs.EnvironmentSetting
+import typings.atPulumiAws.typesInputMod.elasticbeanstalk.EnvironmentSetting
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

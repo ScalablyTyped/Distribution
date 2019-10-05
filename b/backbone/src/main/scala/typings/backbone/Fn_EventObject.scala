@@ -1,6 +1,6 @@
 package typings.backbone
 
-import typings.jquery.JQueryNs.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

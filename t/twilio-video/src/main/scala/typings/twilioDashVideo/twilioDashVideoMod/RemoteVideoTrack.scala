@@ -1,6 +1,8 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.SID
+import typings.std.HTMLMediaElement
+import typings.std.HTMLVideoElement
+import typings.twilioDashVideo.twilioDashVideoMod.Track.SID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +17,18 @@ class RemoteVideoTrack ()
   override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */
   override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def attach(): HTMLVideoElement = js.native
+  /* InferMemberOverrides */
+  override def attach(element: String): HTMLVideoElement = js.native
+  /* InferMemberOverrides */
+  override def attach(element: HTMLMediaElement): HTMLVideoElement = js.native
+  /* InferMemberOverrides */
+  override def detach(): js.Array[HTMLMediaElement] = js.native
+  /* InferMemberOverrides */
+  override def detach(element: String): js.Array[HTMLMediaElement] = js.native
+  /* InferMemberOverrides */
+  override def detach(element: HTMLMediaElement): js.Array[HTMLMediaElement] = js.native
   /* InferMemberOverrides */
   override def emit(event: String, args: js.Any*): Boolean = js.native
   /* InferMemberOverrides */

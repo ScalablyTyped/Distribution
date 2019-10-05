@@ -28,13 +28,13 @@ object DescribeEnvironmentManagedActionHistoryRequest {
   def apply(
     EnvironmentId: EnvironmentId = null,
     EnvironmentName: EnvironmentName = null,
-    MaxItems: js.UndefOr[Integer] = js.undefined,
+    MaxItems: Int | Double = null,
     NextToken: String = null
   ): DescribeEnvironmentManagedActionHistoryRequest = {
     val __obj = js.Dynamic.literal()
     if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId)
     if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeEnvironmentManagedActionHistoryRequest]
   }

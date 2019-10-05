@@ -1,5 +1,6 @@
 package typings.d3DashColor.d3DashColorMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,4 +27,8 @@ object Color {
     __obj.asInstanceOf[Color]
   }
 }
+
+@JSImport("d3-color", "color")
+@js.native
+object color extends TopLevel[ColorFactory]
 

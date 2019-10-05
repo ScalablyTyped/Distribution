@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ModelHandler")
 @js.native
 class ModelHandler protected ()
-  extends typings.playcanvas.pcNs.ModelHandler {
+  extends typings.playcanvas.pc.ModelHandler {
   def this(
-    device: typings.playcanvas.pcNs.GraphicsDevice,
-    defaultMaterial: typings.playcanvas.pcNs.StandardMaterial
+    device: typings.playcanvas.pc.GraphicsDevice,
+    defaultMaterial: typings.playcanvas.pc.StandardMaterial
   ) = this()
 }
 

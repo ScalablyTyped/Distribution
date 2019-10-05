@@ -14,14 +14,14 @@ trait Extension extends js.Object {
 object Extension {
   @scala.inline
   def apply(
-    incoming: Listener = null,
-    outgoing: Listener = null,
+    incoming: /* message */ Message => Unit = null,
+    outgoing: /* message */ Message => Unit = null,
     registered: (/* name */ String, /* cometd */ CometD) => Unit = null,
     unregistered: () => Unit = null
   ): Extension = {
     val __obj = js.Dynamic.literal()
-    if (incoming != null) __obj.updateDynamic("incoming")(incoming)
-    if (outgoing != null) __obj.updateDynamic("outgoing")(outgoing)
+    if (incoming != null) __obj.updateDynamic("incoming")(js.Any.fromFunction1(incoming))
+    if (outgoing != null) __obj.updateDynamic("outgoing")(js.Any.fromFunction1(outgoing))
     if (registered != null) __obj.updateDynamic("registered")(js.Any.fromFunction2(registered))
     if (unregistered != null) __obj.updateDynamic("unregistered")(js.Any.fromFunction0(unregistered))
     __obj.asInstanceOf[Extension]

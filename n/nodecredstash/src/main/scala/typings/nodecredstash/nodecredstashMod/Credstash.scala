@@ -3,8 +3,8 @@ package typings.nodecredstash.nodecredstashMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsDashSdk.clientsDynamodbMod.AttributeMap
 import typings.awsDashSdk.clientsKmsMod.DecryptResponse
-import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DeleteItemOutput
-import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.PutItemOutput
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient.DeleteItemOutput
+import typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient.PutItemOutput
 import typings.nodecredstash.Anon_Context
 import typings.nodecredstash.Anon_ContextName
 import typings.nodecredstash.Anon_ContextStartsWith

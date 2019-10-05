@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsButtonButtonGroupMod
 
 import typings.atBlueprintjsCore.libEsmCommonAlignmentMod.Alignment
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -43,7 +42,6 @@ object IButtonGroupProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
-    IProps: IProps = null,
     alignText: Alignment = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     large: js.UndefOr[Boolean] = js.undefined,
@@ -52,7 +50,6 @@ object IButtonGroupProps {
   ): IButtonGroupProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     if (alignText != null) __obj.updateDynamic("alignText")(alignText)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)

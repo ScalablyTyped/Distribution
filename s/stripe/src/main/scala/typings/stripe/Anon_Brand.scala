@@ -1,8 +1,8 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.paymentMethodsNs.CardBrand
-import typings.stripe.stripeMod.paymentMethodsNs.CardChecks
-import typings.stripe.stripeMod.paymentMethodsNs.CardWallet
+import typings.stripe.stripeMod.paymentMethods.CardBrand
+import typings.stripe.stripeMod.paymentMethods.CardChecks
+import typings.stripe.stripeMod.paymentMethods.CardWallet
 import typings.stripe.stripeStrings.credit
 import typings.stripe.stripeStrings.debit
 import typings.stripe.stripeStrings.prepaid

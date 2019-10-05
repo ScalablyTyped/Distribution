@@ -1,5 +1,6 @@
 package typings.reactDashNative.reactDashNativeMod
 
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +13,14 @@ trait AppConfig extends js.Object {
 
 object AppConfig {
   @scala.inline
-  def apply(appKey: String, component: ComponentProvider = null, run: Runnable = null): AppConfig = {
+  def apply(
+    appKey: String,
+    component: () => ComponentType[js.Any] = null,
+    run: /* appParameters */ js.Any => Unit = null
+  ): AppConfig = {
     val __obj = js.Dynamic.literal(appKey = appKey)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (run != null) __obj.updateDynamic("run")(run)
+    if (component != null) __obj.updateDynamic("component")(js.Any.fromFunction0(component))
+    if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction1(run))
     __obj.asInstanceOf[AppConfig]
   }
 }

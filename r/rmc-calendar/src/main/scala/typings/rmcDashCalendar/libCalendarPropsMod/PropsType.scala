@@ -2,8 +2,8 @@ package typings.rmcDashCalendar.libCalendarPropsMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.ExtraData
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.Locale
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.ExtraData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.Locale
 import typings.rmcDashCalendar.rmcDashCalendarStrings.horizontal
 import typings.rmcDashCalendar.rmcDashCalendarStrings.normal
 import typings.rmcDashCalendar.rmcDashCalendarStrings.one

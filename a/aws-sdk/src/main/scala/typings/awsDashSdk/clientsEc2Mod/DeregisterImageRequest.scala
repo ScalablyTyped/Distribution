@@ -17,7 +17,7 @@ trait DeregisterImageRequest extends js.Object {
 
 object DeregisterImageRequest {
   @scala.inline
-  def apply(ImageId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeregisterImageRequest = {
+  def apply(ImageId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeregisterImageRequest = {
     val __obj = js.Dynamic.literal(ImageId = ImageId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeregisterImageRequest]

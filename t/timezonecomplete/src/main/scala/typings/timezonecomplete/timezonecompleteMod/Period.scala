@@ -1,5 +1,7 @@
 package typings.timezonecomplete.timezonecompleteMod
 
+import typings.timezonecomplete.distLibBasicsMod.TimeUnit
+import typings.timezonecomplete.distLibPeriodMod.PeriodDst
 import typings.timezonecomplete.distLibPeriodMod.PeriodJson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,21 +65,17 @@ class Period protected ()
     * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
     * @throws timezonecomplete.Argument.Dst for invalid dst value
     */
-  def this(
-    reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
-    amount: Double,
-    unit: typings.timezonecomplete.distLibBasicsMod.TimeUnit
-  ) = this()
+  def this(reference: typings.timezonecomplete.distLibDatetimeMod.DateTime, amount: Double, unit: TimeUnit) = this()
   def this(
     reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
     interval: typings.timezonecomplete.distLibDurationMod.Duration,
-    dst: typings.timezonecomplete.distLibPeriodMod.PeriodDst
+    dst: PeriodDst
   ) = this()
   def this(
     reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
     amount: Double,
-    unit: typings.timezonecomplete.distLibBasicsMod.TimeUnit,
-    dst: typings.timezonecomplete.distLibPeriodMod.PeriodDst
+    unit: TimeUnit,
+    dst: PeriodDst
   ) = this()
 }
 

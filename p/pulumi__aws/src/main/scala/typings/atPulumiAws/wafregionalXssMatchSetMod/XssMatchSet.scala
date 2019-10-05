@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalXssMatchSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.XssMatchSetXssMatchTuple
+import typings.atPulumiAws.typesOutputMod.wafregional.XssMatchSetXssMatchTuple
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

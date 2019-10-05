@@ -2,7 +2,7 @@ package typings.activexDashStdole
 
 import typings.activexDashStdole.activexDashStdoleStrings.FontChanged
 import typings.activexDashStdole.activexDashStdoleStrings.PropertyName
-import typings.activexDashStdole.stdoleNs.StdFont
+import typings.activexDashStdole.stdole.StdFont
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

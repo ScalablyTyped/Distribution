@@ -1,9 +1,9 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.editNs.afterCellEditHandler
-import typings.uiDashGrid.uiDashGridMod.editNs.beginCellEditHandler
-import typings.uiDashGrid.uiDashGridMod.editNs.cancelCellEditHandler
+import typings.uiDashGrid.uiDashGridMod.edit.afterCellEditHandler
+import typings.uiDashGrid.uiDashGridMod.edit.beginCellEditHandler
+import typings.uiDashGrid.uiDashGridMod.edit.cancelCellEditHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

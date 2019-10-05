@@ -4,9 +4,9 @@ import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkDo
 import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +56,7 @@ class CoachmarkBase protected ()
   @JSName("dismiss")
   def dismiss_MCoachmarkBase(ev: KeyboardEvent[HTMLElement]): Unit = js.native
   @JSName("dismiss")
-  def dismiss_MCoachmarkBase(ev: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def dismiss_MCoachmarkBase(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   @JSName("dismiss")
   def dismiss_MCoachmarkBase(ev: Event): Unit = js.native
   @JSName("shouldComponentUpdate")

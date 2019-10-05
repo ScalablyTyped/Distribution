@@ -31,3 +31,9 @@ object ThisExpression {
   }
 }
 
+@JSImport("babel-types", "thisExpression")
+@js.native
+object thisExpression extends js.Object {
+  def apply(): ThisExpression = js.native
+}
+

@@ -2,12 +2,12 @@ package typings.atBlueprintjsCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.ErrorInfo
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactInstance
 import typings.std.Error
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,7 +53,7 @@ trait Anon_CallBack extends js.Object {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
   def render(): ReactElement = js.native
-  def renderContextMenu(e: MouseEvent[HTMLElement, typings.std.MouseEvent]): Element = js.native
+  def renderContextMenu(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Element = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[/* prevState */ js.Object, /* props */ js.Object, js.Object | (Pick[js.Object, K])]
   ): Unit = js.native

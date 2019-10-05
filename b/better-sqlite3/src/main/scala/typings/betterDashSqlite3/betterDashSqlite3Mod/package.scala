@@ -11,15 +11,15 @@ package object betterDashSqlite3Mod {
   import typings.integer.integerMod.IntLike
 
   type ArgumentTypes[F /* <: VariableArgFunction */] = js.Any
-  type ColumnDefinition = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.ColumnDefinition
-  type Database = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.Database
+  type ColumnDefinition = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.ColumnDefinition
+  type Database = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database
   type Integer = (js.Function1[/* val */ IntLike, IntClass]) with TypeofInteger
   type SqliteError = Instantiable2[
     /* message */ String, 
     /* code */ String, 
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError */ js.Object
   ]
-  type Statement[BindParameters /* <: js.Array[_] | js.Object */] = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.Statement[js.Array[BindParameters] | BindParameters]
-  type Transaction = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3Ns.Transaction[VariableArgFunction]
+  type Statement[BindParameters /* <: js.Array[_] | js.Object */] = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
+  type Transaction = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Transaction[VariableArgFunction]
   type VariableArgFunction = js.Function1[/* repeated */ js.Any, js.Any]
 }

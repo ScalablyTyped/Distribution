@@ -23,13 +23,13 @@ object QueryExecutionStatistics {
   @scala.inline
   def apply(
     DataManifestLocation: String = null,
-    DataScannedInBytes: js.UndefOr[Long] = js.undefined,
-    EngineExecutionTimeInMillis: js.UndefOr[Long] = js.undefined
+    DataScannedInBytes: Int | Double = null,
+    EngineExecutionTimeInMillis: Int | Double = null
   ): QueryExecutionStatistics = {
     val __obj = js.Dynamic.literal()
     if (DataManifestLocation != null) __obj.updateDynamic("DataManifestLocation")(DataManifestLocation)
-    if (!js.isUndefined(DataScannedInBytes)) __obj.updateDynamic("DataScannedInBytes")(DataScannedInBytes)
-    if (!js.isUndefined(EngineExecutionTimeInMillis)) __obj.updateDynamic("EngineExecutionTimeInMillis")(EngineExecutionTimeInMillis)
+    if (DataScannedInBytes != null) __obj.updateDynamic("DataScannedInBytes")(DataScannedInBytes.asInstanceOf[js.Any])
+    if (EngineExecutionTimeInMillis != null) __obj.updateDynamic("EngineExecutionTimeInMillis")(EngineExecutionTimeInMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionStatistics]
   }
 }

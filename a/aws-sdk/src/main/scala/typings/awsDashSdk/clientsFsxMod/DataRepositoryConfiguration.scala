@@ -24,12 +24,12 @@ object DataRepositoryConfiguration {
   def apply(
     ExportPath: ArchivePath = null,
     ImportPath: ArchivePath = null,
-    ImportedFileChunkSize: js.UndefOr[Megabytes] = js.undefined
+    ImportedFileChunkSize: Int | Double = null
   ): DataRepositoryConfiguration = {
     val __obj = js.Dynamic.literal()
     if (ExportPath != null) __obj.updateDynamic("ExportPath")(ExportPath)
     if (ImportPath != null) __obj.updateDynamic("ImportPath")(ImportPath)
-    if (!js.isUndefined(ImportedFileChunkSize)) __obj.updateDynamic("ImportedFileChunkSize")(ImportedFileChunkSize)
+    if (ImportedFileChunkSize != null) __obj.updateDynamic("ImportedFileChunkSize")(ImportedFileChunkSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryConfiguration]
   }
 }

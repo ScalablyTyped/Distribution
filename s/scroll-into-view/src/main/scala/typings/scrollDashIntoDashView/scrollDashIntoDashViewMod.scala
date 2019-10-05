@@ -1,7 +1,7 @@
 package typings.scrollDashIntoDashView
 
 import org.scalablytyped.runtime.TopLevel
-import typings.scrollDashIntoDashView.underscoreUnderscoreScrollIntoViewNs.ScrollIntoView
+import typings.scrollDashIntoDashView.__ScrollIntoView.ScrollIntoView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

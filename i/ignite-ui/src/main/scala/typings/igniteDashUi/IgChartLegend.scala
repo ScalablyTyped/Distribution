@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,10 +102,10 @@ object IgChartLegend {
   /* optionName */ StringDictionary[js.Any] = null,
     height: String | Double = null,
     language: String = null,
-    legendItemMouseEnter: LegendItemMouseEnterEvent = null,
-    legendItemMouseLeave: LegendItemMouseLeaveEvent = null,
-    legendItemMouseLeftButtonDown: LegendItemMouseLeftButtonDownEvent = null,
-    legendItemMouseLeftButtonUp: LegendItemMouseLeftButtonUpEvent = null,
+    legendItemMouseEnter: (/* event */ Event, /* ui */ LegendItemMouseEnterEventUIParam) => Unit = null,
+    legendItemMouseLeave: (/* event */ Event, /* ui */ LegendItemMouseLeaveEventUIParam) => Unit = null,
+    legendItemMouseLeftButtonDown: (/* event */ Event, /* ui */ LegendItemMouseLeftButtonDownEventUIParam) => Unit = null,
+    legendItemMouseLeftButtonUp: (/* event */ Event, /* ui */ LegendItemMouseLeftButtonUpEventUIParam) => Unit = null,
     locale: js.Any = null,
     regional: String | js.Object = null,
     theme: String = null,
@@ -115,10 +116,10 @@ object IgChartLegend {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
-    if (legendItemMouseEnter != null) __obj.updateDynamic("legendItemMouseEnter")(legendItemMouseEnter)
-    if (legendItemMouseLeave != null) __obj.updateDynamic("legendItemMouseLeave")(legendItemMouseLeave)
-    if (legendItemMouseLeftButtonDown != null) __obj.updateDynamic("legendItemMouseLeftButtonDown")(legendItemMouseLeftButtonDown)
-    if (legendItemMouseLeftButtonUp != null) __obj.updateDynamic("legendItemMouseLeftButtonUp")(legendItemMouseLeftButtonUp)
+    if (legendItemMouseEnter != null) __obj.updateDynamic("legendItemMouseEnter")(js.Any.fromFunction2(legendItemMouseEnter))
+    if (legendItemMouseLeave != null) __obj.updateDynamic("legendItemMouseLeave")(js.Any.fromFunction2(legendItemMouseLeave))
+    if (legendItemMouseLeftButtonDown != null) __obj.updateDynamic("legendItemMouseLeftButtonDown")(js.Any.fromFunction2(legendItemMouseLeftButtonDown))
+    if (legendItemMouseLeftButtonUp != null) __obj.updateDynamic("legendItemMouseLeftButtonUp")(js.Any.fromFunction2(legendItemMouseLeftButtonUp))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

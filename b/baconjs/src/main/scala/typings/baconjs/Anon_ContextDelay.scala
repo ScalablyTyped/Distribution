@@ -1,6 +1,6 @@
 package typings.baconjs
 
-import typings.baconjs.BaconNs.Property
+import typings.baconjs.Bacon.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

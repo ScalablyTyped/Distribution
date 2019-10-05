@@ -1,9 +1,9 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.devtoolsNs.inspectedWindowNs.Resource
-import typings.chrome.chromeNs.devtoolsNs.panelsNs.ElementsPanel
-import typings.chrome.chromeNs.devtoolsNs.panelsNs.ExtensionPanel
-import typings.chrome.chromeNs.devtoolsNs.panelsNs.SourcesPanel
+import typings.chrome.chrome.devtools.inspectedWindow.Resource
+import typings.chrome.chrome.devtools.panels.ElementsPanel
+import typings.chrome.chrome.devtools.panels.ExtensionPanel
+import typings.chrome.chrome.devtools.panels.SourcesPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.activexDashVbide
 
-import typings.activexDashVbide.VBIDENs.CommandBarEvents
-import typings.activexDashVbide.VBIDENs.References
-import typings.activexDashVbide.VBIDENs.ReferencesEvents
+import typings.activexDashVbide.VBIDE.CommandBarEvents
+import typings.activexDashVbide.VBIDE.References
+import typings.activexDashVbide.VBIDE.ReferencesEvents
 import typings.activexDashVbide.activexDashVbideStrings.CancelDefault
 import typings.activexDashVbide.activexDashVbideStrings.Click
 import typings.activexDashVbide.activexDashVbideStrings.CommandBarControl

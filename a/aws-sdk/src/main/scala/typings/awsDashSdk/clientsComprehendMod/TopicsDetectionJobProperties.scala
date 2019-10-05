@@ -65,7 +65,7 @@ object TopicsDetectionJobProperties {
     JobName: JobName = null,
     JobStatus: JobStatus = null,
     Message: AnyLengthString = null,
-    NumberOfTopics: js.UndefOr[Integer] = js.undefined,
+    NumberOfTopics: Int | scala.Double = null,
     OutputDataConfig: OutputDataConfig = null,
     SubmitTime: Timestamp = null,
     VolumeKmsKeyId: KmsKeyId = null,
@@ -79,7 +79,7 @@ object TopicsDetectionJobProperties {
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (!js.isUndefined(NumberOfTopics)) __obj.updateDynamic("NumberOfTopics")(NumberOfTopics)
+    if (NumberOfTopics != null) __obj.updateDynamic("NumberOfTopics")(NumberOfTopics.asInstanceOf[js.Any])
     if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig)
     if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime)
     if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId)

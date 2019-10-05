@@ -1,5 +1,7 @@
 package typings.reactour.reactourMod
 
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
@@ -18,13 +20,13 @@ trait ArrowProps extends js.Object {
 object ArrowProps {
   @scala.inline
   def apply(
-    onClick: MouseEventHandler[HTMLButtonElement],
+    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null
   ): ArrowProps = {
-    val __obj = js.Dynamic.literal(onClick = onClick)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)

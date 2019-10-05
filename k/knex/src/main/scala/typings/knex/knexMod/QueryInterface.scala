@@ -3,7 +3,7 @@ package typings.knex.knexMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.knex.Anon_Asc
 import typings.knex.Anon_Column
-import typings.knex.knexMod.DeferredKeySelectionNs.AddUnionMember
+import typings.knex.knexMod.DeferredKeySelection.AddUnionMember
 import typings.knex.knexNumbers.`false`
 import typings.knex.knexStrings.Count
 import typings.knex.knexStrings.asc

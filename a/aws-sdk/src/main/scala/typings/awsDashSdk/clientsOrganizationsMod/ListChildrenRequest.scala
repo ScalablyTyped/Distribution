@@ -28,11 +28,11 @@ object ListChildrenRequest {
   def apply(
     ChildType: ChildType,
     ParentId: ParentId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListChildrenRequest = {
     val __obj = js.Dynamic.literal(ChildType = ChildType.asInstanceOf[js.Any], ParentId = ParentId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListChildrenRequest]
   }

@@ -1,7 +1,7 @@
 package typings.gapiDotClientDotBooks
 
-import typings.gapiDotClientDotBooks.gapiNs.clientNs.booksNs.ReadingPosition
-import typings.gapiDotClientDotBooks.gapiNs.clientNs.booksNs.Review
+import typings.gapiDotClientDotBooks.gapi.client.books.ReadingPosition
+import typings.gapiDotClientDotBooks.gapi.client.books.Review
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

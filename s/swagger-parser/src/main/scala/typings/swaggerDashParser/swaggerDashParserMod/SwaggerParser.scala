@@ -1,6 +1,6 @@
 package typings.swaggerDashParser.swaggerDashParserMod
 
-import typings.openapiDashTypes.openapiDashTypesMod.OpenAPINs.Document
+import typings.openapiDashTypes.openapiDashTypesMod.OpenAPI.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

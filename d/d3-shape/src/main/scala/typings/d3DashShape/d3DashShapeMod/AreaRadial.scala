@@ -269,3 +269,9 @@ trait AreaRadial[Datum] extends js.Object {
   def startAngle(angle: Double): this.type = js.native
 }
 
+@JSImport("d3-shape", "areaRadial")
+@js.native
+object areaRadial extends js.Object {
+  def apply(): AreaRadial[js.Tuple2[Double, Double]] = js.native
+}
+

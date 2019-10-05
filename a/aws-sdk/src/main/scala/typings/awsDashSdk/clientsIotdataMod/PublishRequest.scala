@@ -21,10 +21,10 @@ trait PublishRequest extends js.Object {
 
 object PublishRequest {
   @scala.inline
-  def apply(topic: Topic, payload: Payload = null, qos: js.UndefOr[Qos] = js.undefined): PublishRequest = {
+  def apply(topic: Topic, payload: Payload = null, qos: Int | Double = null): PublishRequest = {
     val __obj = js.Dynamic.literal(topic = topic)
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(qos)) __obj.updateDynamic("qos")(qos)
+    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishRequest]
   }
 }

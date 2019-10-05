@@ -21,17 +21,10 @@ trait SignatureInformation extends js.Object {
   var parameters: js.UndefOr[js.Array[ParameterInformation]] = js.undefined
 }
 
-object SignatureInformation {
-  @scala.inline
-  def apply(
-    label: String,
-    documentation: String | MarkupContent = null,
-    parameters: js.Array[ParameterInformation] = null
-  ): SignatureInformation = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    __obj.asInstanceOf[SignatureInformation]
-  }
+@JSImport("vscode-languageserver-types", "SignatureInformation")
+@js.native
+object SignatureInformation extends js.Object {
+  def create(label: String): SignatureInformation = js.native
+  def create(label: String, documentation: String, parameters: ParameterInformation*): SignatureInformation = js.native
 }
 

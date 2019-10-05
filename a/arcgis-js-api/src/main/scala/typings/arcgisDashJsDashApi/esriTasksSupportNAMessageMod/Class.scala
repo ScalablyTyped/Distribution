@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportNAMessageMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NAMessage
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NAMessageProperties
+import typings.arcgisDashJsDashApi.__esri.NAMessage
+import typings.arcgisDashJsDashApi.__esri.NAMessageProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

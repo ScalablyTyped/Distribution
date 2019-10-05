@@ -1,7 +1,7 @@
 package typings.yaml.yamlMod
 
 import typings.std.Array
-import typings.yaml.yamlMod.cstNs.Document
+import typings.yaml.yamlMod.cst.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

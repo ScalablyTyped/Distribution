@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModuleImportPointer extends js.Object {
-  var __fragmentPropName: String
-  var __module_component: js.Any
-  var fragmentRefs: js.Any
+  @JSName("$fragmentRefs")
+  val $fragmentRefs: js.Any
+  val __fragmentPropName: js.UndefOr[String | Null] = js.undefined
+  val __module_component: js.Any
 }
 
 object ModuleImportPointer {
   @scala.inline
-  def apply(__fragmentPropName: String, __module_component: js.Any, fragmentRefs: js.Any): ModuleImportPointer = {
-    val __obj = js.Dynamic.literal(__fragmentPropName = __fragmentPropName, __module_component = __module_component, fragmentRefs = fragmentRefs)
-  
+  def apply($fragmentRefs: js.Any, __module_component: js.Any, __fragmentPropName: String = null): ModuleImportPointer = {
+    val __obj = js.Dynamic.literal($fragmentRefs = $fragmentRefs, __module_component = __module_component)
+    if (__fragmentPropName != null) __obj.updateDynamic("__fragmentPropName")(__fragmentPropName)
     __obj.asInstanceOf[ModuleImportPointer]
   }
 }

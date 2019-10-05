@@ -12,3 +12,11 @@ import scala.scalajs.js.annotation._
 */
 trait Diff[LHS, RHS] extends js.Object
 
+@JSImport("deep-diff", "diff")
+@js.native
+object diff extends js.Object {
+  def apply[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = js.native
+  def apply[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): Accumulator[LHS, RHS] = js.native
+  def apply[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = js.native
+}
+

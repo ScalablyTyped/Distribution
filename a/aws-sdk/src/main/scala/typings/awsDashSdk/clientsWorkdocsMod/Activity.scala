@@ -48,7 +48,7 @@ object Activity {
   def apply(
     CommentMetadata: CommentMetadata = null,
     Initiator: UserMetadata = null,
-    IsIndirectActivity: js.UndefOr[BooleanType] = js.undefined,
+    IsIndirectActivity: js.UndefOr[Boolean] = js.undefined,
     OrganizationId: IdType = null,
     OriginalParent: ResourceMetadata = null,
     Participants: Participants = null,

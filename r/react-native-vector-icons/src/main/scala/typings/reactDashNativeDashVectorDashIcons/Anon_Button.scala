@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Button extends Instantiable0[Icon] {
-  var Button: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.IconNs.Button] = js.native
-  var TabBarItem: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.IconNs.TabBarItem] = js.native
-  var TabBarItemIOS: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.IconNs.TabBarItemIOS] = js.native
-  var ToolbarAndroid: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.IconNs.ToolbarAndroid] = js.native
+  var Button: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.Button] = js.native
+  var TabBarItem: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.TabBarItem] = js.native
+  var TabBarItemIOS: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.TabBarItemIOS] = js.native
+  var ToolbarAndroid: Instantiable0[typings.reactDashNativeDashVectorDashIcons.iconMod.Icon.ToolbarAndroid] = js.native
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

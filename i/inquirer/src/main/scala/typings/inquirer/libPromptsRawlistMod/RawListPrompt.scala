@@ -1,6 +1,6 @@
 package typings.inquirer.libPromptsRawlistMod
 
-import typings.inquirer.inquirerMod.promptsNs.SuccessfulPromptStateData
+import typings.inquirer.inquirerMod.prompts.SuccessfulPromptStateData
 import typings.inquirer.inquirerStrings.down
 import typings.inquirer.inquirerStrings.up
 import scala.scalajs.js

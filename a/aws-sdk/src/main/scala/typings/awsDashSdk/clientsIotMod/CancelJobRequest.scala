@@ -28,7 +28,7 @@ object CancelJobRequest {
   def apply(
     jobId: JobId,
     comment: Comment = null,
-    force: js.UndefOr[ForceFlag] = js.undefined,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
     reasonCode: ReasonCode = null
   ): CancelJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId)

@@ -12,9 +12,5 @@ trait DataCue extends TextTrackCue {
 
 @JSGlobal("DataCue")
 @js.native
-class DataCueCls () extends DataCue
-
-@JSGlobal("DataCue")
-@js.native
 object DataCue extends Instantiable0[DataCue]
 

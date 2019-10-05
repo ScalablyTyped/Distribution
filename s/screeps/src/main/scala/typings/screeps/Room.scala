@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.TopLevel
 import typings.screeps.screepsNumbers.`false`
 import typings.screeps.screepsNumbers.`true`
 import typings.screeps.screepsStrings.constructionSite
@@ -431,7 +432,5 @@ trait Room extends js.Object {
 
 @JSGlobal("Room")
 @js.native
-class RoomCls protected () extends Room {
-  def this(id: String) = this()
-}
+object Room extends TopLevel[RoomConstructor]
 

@@ -61,7 +61,7 @@ object DescribeAlgorithmOutput {
     CreationTime: CreationTime,
     TrainingSpecification: TrainingSpecification,
     AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ProductId: ProductId = null,
     ValidationSpecification: AlgorithmValidationSpecification = null

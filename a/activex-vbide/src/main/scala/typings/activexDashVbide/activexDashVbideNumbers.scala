@@ -1,15 +1,15 @@
 package typings.activexDashVbide
 
-import typings.activexDashVbide.VBIDENs.vbextFileTypes
-import typings.activexDashVbide.VBIDENs.vbext_CodePaneview
-import typings.activexDashVbide.VBIDENs.vbext_ComponentType
-import typings.activexDashVbide.VBIDENs.vbext_ProcKind
-import typings.activexDashVbide.VBIDENs.vbext_ProjectProtection
-import typings.activexDashVbide.VBIDENs.vbext_ProjectType
-import typings.activexDashVbide.VBIDENs.vbext_RefKind
-import typings.activexDashVbide.VBIDENs.vbext_VBAMode
-import typings.activexDashVbide.VBIDENs.vbext_WindowState
-import typings.activexDashVbide.VBIDENs.vbext_WindowType
+import typings.activexDashVbide.VBIDE.vbextFileTypes
+import typings.activexDashVbide.VBIDE.vbext_CodePaneview
+import typings.activexDashVbide.VBIDE.vbext_ComponentType
+import typings.activexDashVbide.VBIDE.vbext_ProcKind
+import typings.activexDashVbide.VBIDE.vbext_ProjectProtection
+import typings.activexDashVbide.VBIDE.vbext_ProjectType
+import typings.activexDashVbide.VBIDE.vbext_RefKind
+import typings.activexDashVbide.VBIDE.vbext_VBAMode
+import typings.activexDashVbide.VBIDE.vbext_WindowState
+import typings.activexDashVbide.VBIDE.vbext_WindowType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

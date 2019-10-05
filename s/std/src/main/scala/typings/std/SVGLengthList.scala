@@ -24,9 +24,5 @@ trait SVGLengthList extends /* index */ NumberDictionary[SVGLength] {
 
 @JSGlobal("SVGLengthList")
 @js.native
-class SVGLengthListCls () extends SVGLengthList
-
-@JSGlobal("SVGLengthList")
-@js.native
 object SVGLengthList extends Instantiable0[SVGLengthList]
 

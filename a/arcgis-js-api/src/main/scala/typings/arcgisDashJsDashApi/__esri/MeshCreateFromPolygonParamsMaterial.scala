@@ -1,0 +1,35 @@
+package typings.arcgisDashJsDashApi.__esri
+
+import typings.std.HTMLCanvasElement
+import typings.std.HTMLImageElement
+import typings.std.Object
+import typings.std.PropertyKey
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MeshCreateFromPolygonParamsMaterial extends Object {
+  /**
+    * The material color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
+    */
+  var color: js.UndefOr[
+    ValueMeshColor | ImageMeshColor | String | HTMLImageElement | HTMLCanvasElement | js.Array[Double]
+  ] = js.undefined
+}
+
+object MeshCreateFromPolygonParamsMaterial {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    color: ValueMeshColor | ImageMeshColor | String | HTMLImageElement | HTMLCanvasElement | js.Array[Double] = null
+  ): MeshCreateFromPolygonParamsMaterial = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshCreateFromPolygonParamsMaterial]
+  }
+}
+

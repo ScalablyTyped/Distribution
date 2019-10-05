@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawPointDrawActionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointDrawActionConstructor
+import typings.arcgisDashJsDashApi.__esri.PointDrawActionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

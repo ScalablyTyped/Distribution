@@ -164,3 +164,9 @@ object Nest {
   }
 }
 
+@JSImport("d3-collection", "nest")
+@js.native
+object nest extends js.Object {
+  def apply[Datum, RollupType](): Nest[Datum, RollupType] = js.native
+}
+

@@ -20,7 +20,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.single
 import typings.atOracleOraclejet.atOracleOraclejetStrings.top
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentSettableProperties
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.ReferenceObject
+import typings.atOracleOraclejet.ojganttMod.ojGantt.ReferenceObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.algoliasearchDashHelper.algoliasearchDashHelperMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.Operator
-import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.OperatorList
+import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParameters.Operator
+import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParameters.OperatorList
 import typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.allOptional
 import typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.attribute
 import typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.disjunctiveFacets
@@ -148,7 +148,21 @@ class SearchParameters () extends QueryParameters {
 @JSImport("algoliasearch-helper", "SearchParameters")
 @js.native
 object SearchParameters extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`=`
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`>`
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`>=`
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`<`
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`<=`
+    - typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.`!=`
+  */
+  trait Operator extends js.Object
+  
   def make(newParameters: QueryParameters): SearchParameters = js.native
   def validate(currentState: SearchParameters, parameters: QueryParameters): Null | Error = js.native
+  type FacetList = js.Array[String]
+  type OperatorList = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in algoliasearch-helper.algoliasearch-helper.SearchParameters.Operator ]:? std.Array<number | std.Array<number>>}
+    */ typings.algoliasearchDashHelper.algoliasearchDashHelperStrings.OperatorList with js.Any
 }
 

@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **7762** Javascript libraries,
+This is the home of Scala.js typings for **7771** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               247500     11636031      1065176      2967577      7603278
- Markdown              7884       279865        93075            0       186790
+ Scala               286092     12189101      1197014      2978128      8013959
+ Markdown              7889       280403        93159            0       187244
  JSON                     9           90            0            0           90
  Makefile                 2           33            7            0           26
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               255396     11916025      1158258      2967577      7790190
+ Total               293993     12469633      1290180      2978128      8201325
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201910040758")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201910051042")
 ```
 
 ### `build.sbt`
@@ -127,7 +127,7 @@ object D {
 ### Code away
 After that you should be good to go and start coding:
 ```scala
-  import typings.std.^.console
+  import typings.std.console
   console.warn("Hello, World!")
 ```
 
@@ -213,78 +213,46 @@ There are loads of details as to how the conversion is done.
 Not everything is optimal of course.
 The following points try to explain the big picture:
 
-### Whatsup with fooNs, fooMod, foo and all that?
+### Whatsup with naming?
 
-Typescript does namespacing differently than Scala, so you can have
-a library, a `var`/`function`, a `module` and a `namespace` all with the same name.
+Modules receive pretty long names, because we flatten the namespace.
+The names should be predicable once you get the hang of it.
 
-For that reason we need to setup a rather elaborate renaming scheme on the Scala side
- to avoid name collisions.
-The `Foo` without suffix is reserved for companion objects with static members, enums,
- and for conversion of things like `declare val foo: {...}` which is also converted into an `object`.
+for instance a typescript import such as this:
+```typescript
+import AnchorLong from "antd/es/anchor/AnchorLink";
+```
+will be in ScalablyTyped:
+```
+import typings.antd.esAnchorAnchorLinkMod.{default => AnchorLong}
+```
 
-Module names in particular tend to be pretty long, because we flatten the module namespace.
-
-On the bright side javascript imports were never super clean in the first place,
-and we have way better tooling in Scala to handle it - meaning you shouldn't write much of those yourself.
-
-A somewhat nice way of handling this is to bundle your commonly used imports somewhere, for instance:
+A somewhat smart way of handling this is to bundle your commonly used imports somewhere, for instance:
 ```scala
+
 package object myapp {
-  type Avatar = typings.materialDashUi.avatarMod.default
-  val React = typings.react.dsl
+  type AnchorLong = typings.antd.esAnchorAnchorLinkMod.default
+  val AnchorLong = typings.antd.esAnchorAnchorLinkMod.default
 }
 
 ```
 
-Note: Earlier we used `Lib` as a suffix for all library names, we now managed to drop it.
+Note: Earlier we used `Lib` and `NS` as a suffixes for all library and namespace names, we now managed to drop them.
 Migration should be easy with a search/replace of `typings.xxxLib => typings.xxx`.
 
 ### Whatsup with the hats?
 
-We normally convert typescript namespaces and modules into scala packages.
+We convert typescript namespaces and modules into scala packages.
 
 In idiomatic scala top level members inside would be placed into package objects,
 but those are unfortunately [broken](https://github.com/scala-js/scala-js/issues/1892) when used as javascript facades.
-For that reason we put them into objects called `^`.
+For that reason we upgrade `var` and `def` to `object` instead.
 
-The scheme is like this:
-```scala
-package typings
-package std
+You will see that quite a few packages have an object (and/or a class) called `^`. This is a reference to the module itself,
+and you might need to refer it.
 
-import scalajs.js
-import scalajs.js.`|`
-import scalajs.js.annotation._
-
-@JSGlobalScope
-@js.native
-object ^ extends js.Object {
-  val Array: std.ArrayConstructor = js.native
-  // ...
-}
-// usage: typings.std.^.Array.newInstance(1)
-```
-
-Note that this is the "normal" container format.
-If a container doesn't introduce new types (or if a namespace is exported in a module),
-the "compact" format is used instead where everything goes into an object.
-
-Modules which are classes are also called `^`, for instance:
-```scala
-package typings.awsDashSdk.clientsDynamodbMod
-
-@JSImport("aws-sdk/clients/dynamodb", JSImport.Namespace)
-@js.native
-class ^ () extends DynamoDB {
-  def this(options: ClientConfiguration) = this()
-}
-
-//usage:
-import typings.awsDashSdk.clientsDynamodbMod.{^ => DynamoDb}
-new DynamoDb(ClientConfiguration(...))
-
-```
+- To use classes which are exported as a module in commonjs (defined in Typescript as `export = class Foo {}`, used in Scala as `new typings.node.eventsMod.^()`)
+- If you want to mutate top-level members (`typings.std.^.onerror = (x, _, _, _, _) => typings.std.console.warn(x)`)
 
 ### Whatsup with those version strings?
 
@@ -415,7 +383,7 @@ trait Anon_BlobParts
   with ScalablyTyped.runtime.Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
 
 //usage
-val blob: Blob = typings.std.^.window.Blob.newInstance0()
+val blob: Blob = typings.std.window.Blob.newInstance0()
 ```
 
 #### inferred classes

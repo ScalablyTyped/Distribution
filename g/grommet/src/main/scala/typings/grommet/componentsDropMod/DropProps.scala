@@ -13,6 +13,8 @@ import typings.grommet.grommetStrings.visible
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.utilsMod.KeyboardType
+import typings.react.reactMod.KeyboardEvent
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +38,7 @@ object DropProps {
     align: Anon_BottomLeft = null,
     elevation: none | xsmall | small | medium | large | xlarge | String = null,
     onClickOutside: /* repeated */ js.Any => _ = null,
-    onEsc: KeyboardType = null,
+    onEsc: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
@@ -48,7 +50,7 @@ object DropProps {
     if (align != null) __obj.updateDynamic("align")(align)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
-    if (onEsc != null) __obj.updateDynamic("onEsc")(onEsc)
+    if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)

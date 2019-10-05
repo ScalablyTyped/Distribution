@@ -22,13 +22,6 @@ trait AnalyserNode extends AudioNode {
 
 @JSGlobal("AnalyserNode")
 @js.native
-class AnalyserNodeCls protected () extends AnalyserNode {
-  def this(context: BaseAudioContext) = this()
-  def this(context: BaseAudioContext, options: AnalyserOptions) = this()
-}
-
-@JSGlobal("AnalyserNode")
-@js.native
 object AnalyserNode
   extends Instantiable1[/* context */ BaseAudioContext, AnalyserNode]
      with Instantiable2[/* context */ BaseAudioContext, /* options */ AnalyserOptions, AnalyserNode]

@@ -1,11 +1,11 @@
 package typings.cypress.mochaMod
 
 import typings.cypress.Mocha
-import typings.cypress.MochaNs.HookFunction
-import typings.cypress.MochaNs.MochaOptions
-import typings.cypress.MochaNs.PendingTestFunction
-import typings.cypress.MochaNs.SuiteFunction
-import typings.cypress.MochaNs.TestFunction
+import typings.cypress.Mocha.HookFunction
+import typings.cypress.Mocha.MochaOptions
+import typings.cypress.Mocha.PendingTestFunction
+import typings.cypress.Mocha.SuiteFunction
+import typings.cypress.Mocha.TestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -113,14 +113,5 @@ object ^ extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   var xit: PendingTestFunction = js.native
-  /**
-    * Triggers root suite execution.
-    *
-    * - _Only available if flag --delay is passed into Mocha._
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#runWithSuite
-    */
-  def run(): Unit = js.native
 }
 

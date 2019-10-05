@@ -1,5 +1,6 @@
 package typings.jqueryDotPnotify
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -33,7 +34,5 @@ trait PNotify extends js.Object {
 
 @JSGlobal("PNotify")
 @js.native
-class PNotifyCls () extends PNotify {
-  def this(options: PNotifyOptions) = this()
-}
+object PNotify extends TopLevel[PNotifyConstructor]
 

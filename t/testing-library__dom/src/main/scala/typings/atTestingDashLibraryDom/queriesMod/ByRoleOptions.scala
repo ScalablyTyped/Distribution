@@ -1,7 +1,6 @@
 package typings.atTestingDashLibraryDom.queriesMod
 
 import typings.atTestingDashLibraryDom.matchesMod.MatcherOptions
-import typings.atTestingDashLibraryDom.matchesMod.NormalizerFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +21,14 @@ object ByRoleOptions {
     collapseWhitespace: js.UndefOr[Boolean] = js.undefined,
     exact: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    normalizer: NormalizerFn = null,
+    normalizer: /* text */ String => String = null,
     trim: js.UndefOr[Boolean] = js.undefined
   ): ByRoleOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (normalizer != null) __obj.updateDynamic("normalizer")(normalizer)
+    if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
     if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
     __obj.asInstanceOf[ByRoleOptions]
   }

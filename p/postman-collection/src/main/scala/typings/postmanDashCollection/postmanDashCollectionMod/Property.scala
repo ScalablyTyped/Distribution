@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.postmanDashCollection.postmanDashCollectionMod.PropertyBaseDefinition because Already inherited
 - typings.postmanDashCollection.postmanDashCollectionMod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
 class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {

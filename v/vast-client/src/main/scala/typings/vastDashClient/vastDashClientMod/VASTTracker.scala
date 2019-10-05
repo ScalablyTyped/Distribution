@@ -1,6 +1,6 @@
 package typings.vastDashClient.vastDashClientMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

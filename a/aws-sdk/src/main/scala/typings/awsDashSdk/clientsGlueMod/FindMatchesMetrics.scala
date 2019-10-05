@@ -30,18 +30,18 @@ trait FindMatchesMetrics extends js.Object {
 object FindMatchesMetrics {
   @scala.inline
   def apply(
-    AreaUnderPRCurve: js.UndefOr[GenericBoundedDouble] = js.undefined,
+    AreaUnderPRCurve: Int | Double = null,
     ConfusionMatrix: ConfusionMatrix = null,
-    F1: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    Precision: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    Recall: js.UndefOr[GenericBoundedDouble] = js.undefined
+    F1: Int | Double = null,
+    Precision: Int | Double = null,
+    Recall: Int | Double = null
   ): FindMatchesMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AreaUnderPRCurve)) __obj.updateDynamic("AreaUnderPRCurve")(AreaUnderPRCurve)
+    if (AreaUnderPRCurve != null) __obj.updateDynamic("AreaUnderPRCurve")(AreaUnderPRCurve.asInstanceOf[js.Any])
     if (ConfusionMatrix != null) __obj.updateDynamic("ConfusionMatrix")(ConfusionMatrix)
-    if (!js.isUndefined(F1)) __obj.updateDynamic("F1")(F1)
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision)
-    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall)
+    if (F1 != null) __obj.updateDynamic("F1")(F1.asInstanceOf[js.Any])
+    if (Precision != null) __obj.updateDynamic("Precision")(Precision.asInstanceOf[js.Any])
+    if (Recall != null) __obj.updateDynamic("Recall")(Recall.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindMatchesMetrics]
   }
 }

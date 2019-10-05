@@ -24,7 +24,7 @@ object ListAliasesResponse {
   def apply(
     Aliases: AliasList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
+    Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListAliasesResponse = {
     val __obj = js.Dynamic.literal()
     if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)

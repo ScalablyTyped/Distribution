@@ -47,14 +47,14 @@ object DescribeDBEngineVersionsMessage {
   @scala.inline
   def apply(
     DBParameterGroupFamily: String = null,
-    DefaultOnly: js.UndefOr[Boolean] = js.undefined,
+    DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     Filters: FilterList = null,
-    ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined,
-    ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined,
+    ListSupportedCharacterSets: js.UndefOr[scala.Boolean] = js.undefined,
+    ListSupportedTimezones: js.UndefOr[scala.Boolean] = js.undefined,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    MaxRecords: Int | Double = null
   ): DescribeDBEngineVersionsMessage = {
     val __obj = js.Dynamic.literal()
     if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily)
@@ -65,7 +65,7 @@ object DescribeDBEngineVersionsMessage {
     if (!js.isUndefined(ListSupportedCharacterSets)) __obj.updateDynamic("ListSupportedCharacterSets")(ListSupportedCharacterSets)
     if (!js.isUndefined(ListSupportedTimezones)) __obj.updateDynamic("ListSupportedTimezones")(ListSupportedTimezones)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBEngineVersionsMessage]
   }
 }

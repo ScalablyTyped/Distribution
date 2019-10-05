@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -222,12 +223,12 @@ object IgQRCodeBarcode {
     barBrush: String = null,
     barsFillMode: String = null,
     data: String = null,
-    dataChanged: DataChangedEvent = null,
+    dataChanged: (/* event */ Event, /* ui */ DataChangedEventUIParam) => Unit = null,
     eciHeaderDisplayMode: String = null,
     eciNumber: Int | Double = null,
     encodingMode: String = null,
     errorCorrectionLevel: String = null,
-    errorMessageDisplaying: ErrorMessageDisplayingEvent = null,
+    errorMessageDisplaying: (/* event */ Event, /* ui */ ErrorMessageDisplayingEventUIParam) => Unit = null,
     errorMessageText: String = null,
     fnc1Mode: String = null,
     font: String = null,
@@ -252,12 +253,12 @@ object IgQRCodeBarcode {
     if (barBrush != null) __obj.updateDynamic("barBrush")(barBrush)
     if (barsFillMode != null) __obj.updateDynamic("barsFillMode")(barsFillMode)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataChanged != null) __obj.updateDynamic("dataChanged")(dataChanged)
+    if (dataChanged != null) __obj.updateDynamic("dataChanged")(js.Any.fromFunction2(dataChanged))
     if (eciHeaderDisplayMode != null) __obj.updateDynamic("eciHeaderDisplayMode")(eciHeaderDisplayMode)
     if (eciNumber != null) __obj.updateDynamic("eciNumber")(eciNumber.asInstanceOf[js.Any])
     if (encodingMode != null) __obj.updateDynamic("encodingMode")(encodingMode)
     if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
-    if (errorMessageDisplaying != null) __obj.updateDynamic("errorMessageDisplaying")(errorMessageDisplaying)
+    if (errorMessageDisplaying != null) __obj.updateDynamic("errorMessageDisplaying")(js.Any.fromFunction2(errorMessageDisplaying))
     if (errorMessageText != null) __obj.updateDynamic("errorMessageText")(errorMessageText)
     if (fnc1Mode != null) __obj.updateDynamic("fnc1Mode")(fnc1Mode)
     if (font != null) __obj.updateDynamic("font")(font)

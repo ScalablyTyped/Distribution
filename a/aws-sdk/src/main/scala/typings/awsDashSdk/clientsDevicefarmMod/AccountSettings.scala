@@ -43,18 +43,18 @@ object AccountSettings {
   @scala.inline
   def apply(
     awsAccountNumber: AWSAccountNumber = null,
-    defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
-    maxJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
+    defaultJobTimeoutMinutes: Int | scala.Double = null,
+    maxJobTimeoutMinutes: Int | scala.Double = null,
     maxSlots: MaxSlotMap = null,
-    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
+    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
     trialMinutes: TrialMinutes = null,
     unmeteredDevices: PurchasedDevicesMap = null,
     unmeteredRemoteAccessDevices: PurchasedDevicesMap = null
   ): AccountSettings = {
     val __obj = js.Dynamic.literal()
     if (awsAccountNumber != null) __obj.updateDynamic("awsAccountNumber")(awsAccountNumber)
-    if (!js.isUndefined(defaultJobTimeoutMinutes)) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes)
-    if (!js.isUndefined(maxJobTimeoutMinutes)) __obj.updateDynamic("maxJobTimeoutMinutes")(maxJobTimeoutMinutes)
+    if (defaultJobTimeoutMinutes != null) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes.asInstanceOf[js.Any])
+    if (maxJobTimeoutMinutes != null) __obj.updateDynamic("maxJobTimeoutMinutes")(maxJobTimeoutMinutes.asInstanceOf[js.Any])
     if (maxSlots != null) __obj.updateDynamic("maxSlots")(maxSlots)
     if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign)
     if (trialMinutes != null) __obj.updateDynamic("trialMinutes")(trialMinutes)

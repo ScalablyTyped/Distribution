@@ -1,6 +1,9 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.SeqNs.Keyed
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import typings.immutable.immutableMod.Record.Factory
+import typings.immutable.immutableMod.Seq.Keyed
 import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.std.Partial
@@ -122,5 +125,38 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
     * @see `Map#withMutations`
     */
   def withMutations(mutator: js.Function1[/* mutable */ this.type, _]): this.type = js.native
+}
+
+@JSImport("immutable", "Record")
+@js.native
+object Record extends js.Object {
+  @js.native
+  trait Factory[TProps /* <: js.Object */]
+    extends Instantiable0[Record[TProps] with TProps]
+       with Instantiable1[
+          (/* values */ Iterable[js.Tuple2[String, js.Any]]) | (/* values */ Partial[TProps]), 
+          Record[TProps] with TProps
+        ] {
+    /**
+      * The name provided to `Record(values, name)` can be accessed with
+      * `displayName`.
+      */
+    var displayName: String = js.native
+    def apply(): Record[TProps] with TProps = js.native
+    def apply(values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
+    def apply(values: Partial[TProps]): Record[TProps] with TProps = js.native
+  }
+  
+  def apply[TProps](defaultValues: TProps): Factory[TProps] = js.native
+  def apply[TProps](defaultValues: TProps, name: String): Factory[TProps] = js.native
+  def getDescriptiveName(record: Record[_]): String = js.native
+  def isRecord(maybeRecord: js.Any): /* is immutable.immutable.Record<any> */ Boolean = js.native
+  @js.native
+  object Factory extends js.Object {
+    def apply[TProps /* <: js.Object */](): Record[TProps] with TProps = js.native
+    def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
+    def apply[TProps /* <: js.Object */](values: Partial[TProps]): Record[TProps] with TProps = js.native
+  }
+  
 }
 

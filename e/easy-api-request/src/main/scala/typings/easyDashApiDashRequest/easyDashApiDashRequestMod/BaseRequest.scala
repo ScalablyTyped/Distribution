@@ -1,5 +1,6 @@
 package typings.easyDashApiDashRequest.easyDashApiDashRequestMod
 
+import typings.bunyan.bunyanMod.^
 import typings.easyDashApiDashRequest.Anon_Cb
 import typings.request.requestMod.Request
 import typings.std.IArguments
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait BaseRequest extends js.Object {
   var base: Request = js.native
   var jSend: Boolean = js.native
-  var log: typings.bunyan.bunyanMod.^ = js.native
+  var log: ^ = js.native
   var replyCookies: js.Array[String] = js.native
   var req: typings.express.expressMod.Request = js.native
   def _do(args: IArguments): js.Any = js.native

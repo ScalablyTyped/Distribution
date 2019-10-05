@@ -12,13 +12,13 @@ trait Typeofcast extends js.Object {
     * Cast Application Framework
     * @see https://developers.google.com/cast/docs/reference/chrome/cast.framework
     */
-  val frameworkNs: Typeofframework
+  val framework: Typeofframework
 }
 
 object Typeofcast {
   @scala.inline
-  def apply(frameworkNs: Typeofframework): Typeofcast = {
-    val __obj = js.Dynamic.literal(frameworkNs = frameworkNs)
+  def apply(framework: Typeofframework): Typeofcast = {
+    val __obj = js.Dynamic.literal(framework = framework)
   
     __obj.asInstanceOf[Typeofcast]
   }

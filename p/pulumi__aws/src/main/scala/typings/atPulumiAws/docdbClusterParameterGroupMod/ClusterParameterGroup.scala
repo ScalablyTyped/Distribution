@@ -1,7 +1,7 @@
 package typings.atPulumiAws.docdbClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.docdbNs.ClusterParameterGroupParameter
+import typings.atPulumiAws.typesOutputMod.docdb.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -2,7 +2,7 @@ package typings.projectDashOxford.projectDashOxfordMod
 
 import typings.bluebird.bluebirdMod.^
 import typings.projectDashOxford.Anon_PersonId
-import typings.projectDashOxford.projectDashOxfordMod.PersonResponsesNs.Face
+import typings.projectDashOxford.projectDashOxfordMod.PersonResponses.Face
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +59,7 @@ class Person () extends js.Object {
     * @param {string} personId          - The target person to get.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def get(personGroupId: String, personId: String): ^[typings.projectDashOxford.projectDashOxfordMod.PersonResponsesNs.Person] = js.native
+  def get(personGroupId: String, personId: String): ^[typings.projectDashOxford.projectDashOxfordMod.PersonResponses.Person] = js.native
   /**
     * Get a face for a person.
     *
@@ -75,9 +75,7 @@ class Person () extends js.Object {
     * @param {string} personGroupId     - The target person's person group.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def list(personGroupId: String): ^[
-    js.Array[typings.projectDashOxford.projectDashOxfordMod.PersonResponsesNs.Person]
-  ] = js.native
+  def list(personGroupId: String): ^[js.Array[typings.projectDashOxford.projectDashOxfordMod.PersonResponses.Person]] = js.native
   /**
     * Updates a person's information.
     *

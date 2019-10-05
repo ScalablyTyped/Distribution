@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +34,7 @@ trait InterShardMemory extends js.Object {
   def setLocal(value: String): Unit
 }
 
-object InterShardMemory {
-  @scala.inline
-  def apply(getLocal: () => String, getRemote: String => String | Null, setLocal: String => Unit): InterShardMemory = {
-    val __obj = js.Dynamic.literal(getLocal = js.Any.fromFunction0(getLocal), getRemote = js.Any.fromFunction1(getRemote), setLocal = js.Any.fromFunction1(setLocal))
-  
-    __obj.asInstanceOf[InterShardMemory]
-  }
-}
+@JSGlobal("InterShardMemory")
+@js.native
+object InterShardMemory extends TopLevel[InterShardMemory]
 

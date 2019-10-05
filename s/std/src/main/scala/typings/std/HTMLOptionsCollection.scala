@@ -37,9 +37,5 @@ trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
 
 @JSGlobal("HTMLOptionsCollection")
 @js.native
-class HTMLOptionsCollectionCls () extends HTMLOptionsCollection
-
-@JSGlobal("HTMLOptionsCollection")
-@js.native
 object HTMLOptionsCollection extends Instantiable0[HTMLOptionsCollection]
 

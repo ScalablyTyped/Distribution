@@ -1,6 +1,6 @@
 package typings.enigmaDotJs
 
-import typings.enigmaDotJs.enigmaJSNs.IGeneratedAPI
+import typings.enigmaDotJs.enigmaJS.IGeneratedAPI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

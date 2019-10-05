@@ -37,7 +37,7 @@ object CopyDBClusterSnapshotMessage {
   def apply(
     SourceDBClusterSnapshotIdentifier: String,
     TargetDBClusterSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTags: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     PreSignedUrl: String = null,
     SourceRegion: String = null,

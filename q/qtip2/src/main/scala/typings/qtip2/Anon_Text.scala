@@ -1,6 +1,6 @@
 package typings.qtip2
 
-import typings.qtip2.QTip2Ns.Title
+import typings.qtip2.QTip2.Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

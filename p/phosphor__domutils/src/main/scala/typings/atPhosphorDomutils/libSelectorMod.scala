@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/domutils/lib/selector", JSImport.Namespace)
 @js.native
 object libSelectorMod extends js.Object {
-  @JSName("Selector")
   @js.native
-  object SelectorNs extends js.Object {
+  object Selector extends js.Object {
     /**
       * Calculate the specificity of a single CSS selector.
       *

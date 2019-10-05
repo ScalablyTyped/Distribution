@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Global {
-  import typings.eslint.eslintMod.RuleNs.RuleFixer
+  import typings.eslint.eslintMod.Rule.RuleFixer
   import typings.std.Set
 
   type Fixer = RuleFixer
@@ -13,8 +13,8 @@ package object Global {
   type JSXElement = ASTNode
   type JSXFragment = ASTNode
   type JSXSpreadAttribute = ASTNode
-  type Scope = typings.eslint.eslintMod.ScopeNs.Scope
-  type Token = typings.eslint.eslintMod.ASTNs.Token
+  type Scope = typings.eslint.eslintMod.Scope.Scope
+  type Token = typings.eslint.eslintMod.AST.Token
   type TypeDeclarationBuilder = js.Function3[
     /* annotation */ ASTNode, 
     /* parentName */ String, 

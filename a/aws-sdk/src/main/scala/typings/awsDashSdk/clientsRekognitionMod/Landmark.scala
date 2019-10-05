@@ -21,15 +21,11 @@ trait Landmark extends js.Object {
 
 object Landmark {
   @scala.inline
-  def apply(
-    Type: LandmarkType = null,
-    X: js.UndefOr[Float] = js.undefined,
-    Y: js.UndefOr[Float] = js.undefined
-  ): Landmark = {
+  def apply(Type: LandmarkType = null, X: Int | Double = null, Y: Int | Double = null): Landmark = {
     val __obj = js.Dynamic.literal()
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(X)) __obj.updateDynamic("X")(X)
-    if (!js.isUndefined(Y)) __obj.updateDynamic("Y")(Y)
+    if (X != null) __obj.updateDynamic("X")(X.asInstanceOf[js.Any])
+    if (Y != null) __obj.updateDynamic("Y")(Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Landmark]
   }
 }

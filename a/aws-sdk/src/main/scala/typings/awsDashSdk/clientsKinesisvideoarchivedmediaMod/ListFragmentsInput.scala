@@ -28,12 +28,12 @@ object ListFragmentsInput {
   def apply(
     StreamName: StreamName,
     FragmentSelector: FragmentSelector = null,
-    MaxResults: js.UndefOr[PageLimit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListFragmentsInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName)
     if (FragmentSelector != null) __obj.updateDynamic("FragmentSelector")(FragmentSelector)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListFragmentsInput]
   }

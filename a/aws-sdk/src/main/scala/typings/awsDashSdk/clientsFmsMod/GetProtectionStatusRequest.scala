@@ -36,14 +36,14 @@ object GetProtectionStatusRequest {
   def apply(
     PolicyId: PolicyId,
     EndTime: TimeStamp = null,
-    MaxResults: js.UndefOr[PaginationMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     MemberAccountId: AWSAccountId = null,
     NextToken: PaginationToken = null,
     StartTime: TimeStamp = null
   ): GetProtectionStatusRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (MemberAccountId != null) __obj.updateDynamic("MemberAccountId")(MemberAccountId)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)

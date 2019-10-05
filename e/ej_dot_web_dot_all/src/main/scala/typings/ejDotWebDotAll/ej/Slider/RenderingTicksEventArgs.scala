@@ -1,0 +1,38 @@
+package typings.ejDotWebDotAll.ej.Slider
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RenderingTicksEventArgs extends js.Object {
+  /** if the event should be canceled; otherwise, false.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** returns the current Li element
+    */
+  var tick: js.UndefOr[js.Any] = js.undefined
+  /** returns slider tick value
+    */
+  var value: js.UndefOr[Double] = js.undefined
+  /** returns the value type either tooltip or label value
+    */
+  var valueType: js.UndefOr[String] = js.undefined
+}
+
+object RenderingTicksEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    tick: js.Any = null,
+    value: Int | Double = null,
+    valueType: String = null
+  ): RenderingTicksEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (tick != null) __obj.updateDynamic("tick")(tick)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    __obj.asInstanceOf[RenderingTicksEventArgs]
+  }
+}
+

@@ -14,13 +14,6 @@ trait DelayNode extends AudioNode {
 
 @JSGlobal("DelayNode")
 @js.native
-class DelayNodeCls protected () extends DelayNode {
-  def this(context: BaseAudioContext) = this()
-  def this(context: BaseAudioContext, options: DelayOptions) = this()
-}
-
-@JSGlobal("DelayNode")
-@js.native
 object DelayNode
   extends Instantiable1[/* context */ BaseAudioContext, DelayNode]
      with Instantiable2[/* context */ BaseAudioContext, /* options */ DelayOptions, DelayNode]

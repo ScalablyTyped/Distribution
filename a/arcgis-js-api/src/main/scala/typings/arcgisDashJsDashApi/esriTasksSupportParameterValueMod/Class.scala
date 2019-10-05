@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportParameterValueMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ParameterValue
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ParameterValueProperties
+import typings.arcgisDashJsDashApi.__esri.ParameterValue
+import typings.arcgisDashJsDashApi.__esri.ParameterValueProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

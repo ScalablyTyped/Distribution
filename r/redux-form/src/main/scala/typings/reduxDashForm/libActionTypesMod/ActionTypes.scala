@@ -1,5 +1,6 @@
 package typings.reduxDashForm.libActionTypesMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,4 +87,8 @@ object ActionTypes {
     __obj.asInstanceOf[ActionTypes]
   }
 }
+
+@JSImport("redux-form/lib/actionTypes", "actionTypes")
+@js.native
+object actionTypes extends TopLevel[ActionTypes]
 

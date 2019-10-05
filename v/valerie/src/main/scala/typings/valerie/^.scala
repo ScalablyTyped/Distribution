@@ -1,6 +1,6 @@
 package typings.valerie
 
-import typings.valerie.ValerieNs.Static
+import typings.valerie.Valerie.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

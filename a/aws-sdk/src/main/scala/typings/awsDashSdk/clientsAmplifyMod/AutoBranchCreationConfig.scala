@@ -44,9 +44,9 @@ object AutoBranchCreationConfig {
   def apply(
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
-    enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
-    enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
-    enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined,
+    enableAutoBuild: js.UndefOr[Boolean] = js.undefined,
+    enableBasicAuth: js.UndefOr[Boolean] = js.undefined,
+    enablePullRequestPreview: js.UndefOr[Boolean] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     framework: Framework = null,
     stage: Stage = null

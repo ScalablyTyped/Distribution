@@ -36,7 +36,7 @@ object DevicePool {
   def apply(
     arn: AmazonResourceName = null,
     description: Message = null,
-    maxDevices: js.UndefOr[Integer] = js.undefined,
+    maxDevices: Int | scala.Double = null,
     name: Name = null,
     rules: Rules = null,
     `type`: DevicePoolType = null
@@ -44,7 +44,7 @@ object DevicePool {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices)
+    if (maxDevices != null) __obj.updateDynamic("maxDevices")(maxDevices.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (rules != null) __obj.updateDynamic("rules")(rules)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

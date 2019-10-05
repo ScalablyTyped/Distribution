@@ -24,7 +24,7 @@ object DeleteProvisionedProductPlanInput {
   def apply(
     PlanId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    IgnoreErrors: js.UndefOr[IgnoreErrors] = js.undefined
+    IgnoreErrors: js.UndefOr[Boolean] = js.undefined
   ): DeleteProvisionedProductPlanInput = {
     val __obj = js.Dynamic.literal(PlanId = PlanId)
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)

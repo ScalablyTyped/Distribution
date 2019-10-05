@@ -53,13 +53,13 @@ object DescribeMergeConflictsInput {
     sourceCommitSpecifier: CommitName,
     conflictDetailLevel: ConflictDetailLevelTypeEnum = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
-    maxMergeHunks: js.UndefOr[MaxResults] = js.undefined,
+    maxMergeHunks: Int | Double = null,
     nextToken: NextToken = null
   ): DescribeMergeConflictsInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier, filePath = filePath, mergeOption = mergeOption.asInstanceOf[js.Any], repositoryName = repositoryName, sourceCommitSpecifier = sourceCommitSpecifier)
     if (conflictDetailLevel != null) __obj.updateDynamic("conflictDetailLevel")(conflictDetailLevel.asInstanceOf[js.Any])
     if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxMergeHunks)) __obj.updateDynamic("maxMergeHunks")(maxMergeHunks)
+    if (maxMergeHunks != null) __obj.updateDynamic("maxMergeHunks")(maxMergeHunks.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeMergeConflictsInput]
   }

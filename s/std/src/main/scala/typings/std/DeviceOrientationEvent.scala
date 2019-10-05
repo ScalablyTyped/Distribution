@@ -17,13 +17,6 @@ trait DeviceOrientationEvent extends Event {
 
 @JSGlobal("DeviceOrientationEvent")
 @js.native
-class DeviceOrientationEventCls protected () extends DeviceOrientationEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: DeviceOrientationEventInit) = this()
-}
-
-@JSGlobal("DeviceOrientationEvent")
-@js.native
 object DeviceOrientationEvent
   extends Instantiable1[/* type */ java.lang.String, DeviceOrientationEvent]
      with Instantiable2[

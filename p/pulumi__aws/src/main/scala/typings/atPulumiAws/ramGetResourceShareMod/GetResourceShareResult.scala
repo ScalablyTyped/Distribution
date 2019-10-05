@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ramGetResourceShareMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ramNs.GetResourceShareFilter
+import typings.atPulumiAws.typesOutputMod.ram.GetResourceShareFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.jpm.sdkContextDashMenuMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,4 +9,8 @@ import scala.scalajs.js.annotation._
 trait SelectorContext extends Context {
   def apply(selector: String): js.Object = js.native
 }
+
+@JSImport("sdk/context-menu", "SelectorContext")
+@js.native
+object SelectorContext extends TopLevel[SelectorContext]
 

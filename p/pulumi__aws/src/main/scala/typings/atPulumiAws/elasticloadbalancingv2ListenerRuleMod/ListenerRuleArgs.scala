@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticloadbalancingv2ListenerRuleMod
 
-import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2Ns.ListenerRuleAction
-import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2Ns.ListenerRuleCondition
+import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2.ListenerRuleAction
+import typings.atPulumiAws.typesInputMod.elasticloadbalancingv2.ListenerRuleCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

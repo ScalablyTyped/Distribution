@@ -38,15 +38,16 @@ trait ReactourStep extends js.Object {
 object ReactourStep {
   @scala.inline
   def apply(
-    content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]),
     action: /* domNode */ js.Any => Unit = null,
+    content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]) = null,
     position: ReactourStepPosition = null,
     selector: String = null,
     stepInteraction: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): ReactourStep = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction)

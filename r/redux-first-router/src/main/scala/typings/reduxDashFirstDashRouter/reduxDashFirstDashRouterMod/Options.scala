@@ -110,7 +110,7 @@ object Options {
   def apply[TKeys, TState](
     basename: String = null,
     createHistory: () => History[typings.history.historyMod.LocationState] = null,
-    displayConfirmLeave: DisplayConfirmLeave = null,
+    displayConfirmLeave: (/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit]) => Unit = null,
     extra: js.Any = null,
     initialDispatch: js.UndefOr[Boolean] = js.undefined,
     initialEntries: HistoryEntries = null,
@@ -129,7 +129,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (basename != null) __obj.updateDynamic("basename")(basename)
     if (createHistory != null) __obj.updateDynamic("createHistory")(js.Any.fromFunction0(createHistory))
-    if (displayConfirmLeave != null) __obj.updateDynamic("displayConfirmLeave")(displayConfirmLeave)
+    if (displayConfirmLeave != null) __obj.updateDynamic("displayConfirmLeave")(js.Any.fromFunction2(displayConfirmLeave))
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (!js.isUndefined(initialDispatch)) __obj.updateDynamic("initialDispatch")(initialDispatch)
     if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries)

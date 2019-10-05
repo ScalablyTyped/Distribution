@@ -18,7 +18,6 @@ trait TooltipPropsWithOverlay
 object TooltipPropsWithOverlay {
   @scala.inline
   def apply(
-    overlay: ReactNode | RenderFunction,
     align: TooltipAlignConfig = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
@@ -33,6 +32,7 @@ object TooltipPropsWithOverlay {
     mouseLeaveDelay: Int | Double = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
     openClassName: String = null,
+    overlay: ReactNode | RenderFunction = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: TooltipPlacement = null,
@@ -43,7 +43,7 @@ object TooltipPropsWithOverlay {
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipPropsWithOverlay = {
-    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
@@ -58,6 +58,7 @@ object TooltipPropsWithOverlay {
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (placement != null) __obj.updateDynamic("placement")(placement)

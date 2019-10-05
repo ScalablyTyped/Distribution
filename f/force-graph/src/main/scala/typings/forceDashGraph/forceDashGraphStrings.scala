@@ -1,6 +1,6 @@
 package typings.forceDashGraph
 
-import typings.forceDashGraph.forceDashGraphMod.ForceGraphNs.DagMode
+import typings.forceDashGraph.forceDashGraphMod.ForceGraph.DagMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

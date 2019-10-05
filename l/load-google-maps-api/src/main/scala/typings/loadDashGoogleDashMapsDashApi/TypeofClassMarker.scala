@@ -1,7 +1,7 @@
 package typings.loadDashGoogleDashMapsDashApi
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.googlemaps.googleNs.mapsNs.Marker
+import typings.googlemaps.google.maps.Marker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

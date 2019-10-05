@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var OAuth2: typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2Ns.OAuth2 = js.native
+  var OAuth2: typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.OAuth2 = js.native
 }
 

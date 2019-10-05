@@ -5,8 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
 - typings.yandexDashMaps.yandexDashMapsMod.IPolygonGeometryAccess because var conflicts: events. Inlined contains, get, getChildGeometry, getClosest, getCoordinates, getFillRule, getLength, insert, remove, set, setCoordinates, setFillRule, splice */ trait IBasePolygonGeometry extends IBaseGeometry {
   def contains(position: js.Array[Double]): Boolean
+  def freeze(): IFreezable
   def get(index: Double): js.Array[js.Array[Double]]
   def getChildGeometry(index: Double): ILinearRingGeometryAccess
   def getClosest(anchorPosition: js.Array[Double]): js.Object
@@ -14,11 +16,13 @@ import scala.scalajs.js.annotation._
   def getFillRule(): String
   def getLength(): Double
   def insert(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess
+  def isFrozen(): Boolean
   def remove(index: Double): ILinearRingGeometryAccess
   def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess
   def setCoordinates(coordinates: js.Array[js.Array[js.Array[Double]]]): IPolygonGeometryAccess
   def setFillRule(fillRule: String): IPolygonGeometryAccess
   def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess]
+  def unfreeze(): IFreezable
 }
 
 object IBasePolygonGeometry {

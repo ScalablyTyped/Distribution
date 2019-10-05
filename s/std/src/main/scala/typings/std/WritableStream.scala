@@ -18,13 +18,6 @@ trait WritableStream[W] extends js.Object {
 
 @JSGlobal("WritableStream")
 @js.native
-class WritableStreamCls[W] () extends WritableStream[W] {
-  def this(underlyingSink: UnderlyingSink[W]) = this()
-  def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
-}
-
-@JSGlobal("WritableStream")
-@js.native
 object WritableStream
   extends Instantiable0[WritableStream[js.Object]]
      with Instantiable1[/* underlyingSink */ UnderlyingSink[js.Object], WritableStream[js.Object]]

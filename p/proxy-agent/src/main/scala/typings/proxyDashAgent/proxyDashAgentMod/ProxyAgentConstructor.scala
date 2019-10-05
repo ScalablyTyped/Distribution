@@ -2,7 +2,7 @@ package typings.proxyDashAgent.proxyDashAgentMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.agentDashBase.agentDashBaseMod.AgentOptions
-import typings.proxyDashAgent.proxyDashAgentMod.ProxyAgentNs.ProxyAgent
+import typings.proxyDashAgent.proxyDashAgentMod.ProxyAgent.ProxyAgent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

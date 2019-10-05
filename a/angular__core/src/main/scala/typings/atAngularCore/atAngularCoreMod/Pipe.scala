@@ -1,5 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,26 +27,5 @@ trait Pipe extends js.Object {
 
 @JSImport("@angular/core", "Pipe")
 @js.native
-class PipeCls protected () extends Pipe {
-  /**
-    * See the `Pipe` decorator.
-    */
-  def this(obj: Pipe) = this()
-  /**
-    * The pipe name to use in template bindings.
-    * Typically uses [lowerCamelCase](guide/glossary#case-types)
-    * because the name cannot contain hyphens.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-}
-
-object Pipe {
-  @scala.inline
-  def apply(name: String, pure: js.UndefOr[Boolean] = js.undefined): Pipe = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
-    __obj.asInstanceOf[Pipe]
-  }
-}
+object Pipe extends TopLevel[PipeDecorator]
 

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.dmsEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.dmsNs.EndpointMongodbSettings
-import typings.atPulumiAws.typesOutputMod.dmsNs.EndpointS3Settings
+import typings.atPulumiAws.typesOutputMod.dms.EndpointMongodbSettings
+import typings.atPulumiAws.typesOutputMod.dms.EndpointS3Settings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

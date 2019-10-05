@@ -1,9 +1,9 @@
 package typings.moment.momentMod
 
-import typings.moment.momentMod.unitOfTimeNs.All
-import typings.moment.momentMod.unitOfTimeNs.Diff
-import typings.moment.momentMod.unitOfTimeNs.DurationConstructor
-import typings.moment.momentMod.unitOfTimeNs.StartOf
+import typings.moment.momentMod.unitOfTime.All
+import typings.moment.momentMod.unitOfTime.Diff
+import typings.moment.momentMod.unitOfTime.DurationConstructor
+import typings.moment.momentMod.unitOfTime.StartOf
 import typings.moment.momentStrings.`()`
 import typings.moment.momentStrings.`(]`
 import typings.moment.momentStrings.`[)`

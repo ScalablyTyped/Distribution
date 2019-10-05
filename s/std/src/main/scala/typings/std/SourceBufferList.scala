@@ -78,9 +78,5 @@ trait SourceBufferList
 
 @JSGlobal("SourceBufferList")
 @js.native
-class SourceBufferListCls () extends SourceBufferList
-
-@JSGlobal("SourceBufferList")
-@js.native
 object SourceBufferList extends Instantiable0[SourceBufferList]
 

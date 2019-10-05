@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @js.native
 trait IModelUnit extends IAbstractUnit {
   def asLoaded(): IAbstractElement = js.native

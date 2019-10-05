@@ -1,10 +1,10 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.hidNs.DeviceOptions
-import typings.chromeDashApps.chromeNs.hidNs.HidDeviceInfo
-import typings.chromeDashApps.chromeNs.hidNs.UserSelectedDevicePickerOptions
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.hid.DeviceOptions
+import typings.chromeDashApps.chrome.hid.HidDeviceInfo
+import typings.chromeDashApps.chrome.hid.UserSelectedDevicePickerOptions
+import typings.chromeDashApps.chrome.integer
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.eggDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,4 +88,8 @@ class Egg () extends js.Object {
     */
   def listen(): Egg = js.native
 }
+
+@JSGlobal("egg")
+@js.native
+object egg extends TopLevel[Egg]
 

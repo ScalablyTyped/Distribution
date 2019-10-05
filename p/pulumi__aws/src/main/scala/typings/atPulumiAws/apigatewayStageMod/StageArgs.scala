@@ -3,7 +3,7 @@ package typings.atPulumiAws.apigatewayStageMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.apigatewayDeploymentMod.Deployment
 import typings.atPulumiAws.apigatewayRestApiMod.RestApi
-import typings.atPulumiAws.typesInputMod.apigatewayNs.StageAccessLogSettings
+import typings.atPulumiAws.typesInputMod.apigateway.StageAccessLogSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

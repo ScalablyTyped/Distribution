@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.DatePicker
-import typings.kendoDashUi.kendoNs.uiNs.DatePickerOptions
+import typings.kendoDashUi.kendo.ui.DatePicker
+import typings.kendoDashUi.kendo.ui.DatePickerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.node.http2Mod
 
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js

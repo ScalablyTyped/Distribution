@@ -1,6 +1,6 @@
 package typings.atPulumiAws.ssmMaintenanceWindowTargetMod
 
-import typings.atPulumiAws.typesInputMod.ssmNs.MaintenanceWindowTargetTarget
+import typings.atPulumiAws.typesInputMod.ssm.MaintenanceWindowTargetTarget
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

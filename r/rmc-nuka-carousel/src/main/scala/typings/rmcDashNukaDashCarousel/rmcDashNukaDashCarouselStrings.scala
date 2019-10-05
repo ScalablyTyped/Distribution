@@ -1,6 +1,6 @@
 package typings.rmcDashNukaDashCarousel
 
-import typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
+import typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,47 +9,47 @@ object rmcDashNukaDashCarouselStrings {
   @js.native
   sealed trait BottomCenter
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait BottomLeft
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait BottomRight
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait CenterCenter
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait CenterLeft
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait CenterRight
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait TopCenter
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait TopLeft
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait TopRight
     extends IDecoratorPosition
-       with typings.rmcDashNukaDashCarousel.esCarouselMod.IDecoratorPosition
+       with typings.rmcDashNukaDashCarousel.libCarouselMod.IDecoratorPosition
   
   @js.native
   sealed trait auto extends js.Object

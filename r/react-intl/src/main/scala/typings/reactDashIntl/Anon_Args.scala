@@ -3,9 +3,9 @@ package typings.reactDashIntl
 import typings.intlDashMessageformat.distCoreMod.Options
 import typings.intlDashMessageformat.distFormattersMod.Formats
 import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
-import typings.std.IntlNs.DateTimeFormatOptions
-import typings.std.IntlNs.NumberFormatOptions
-import typings.std.IntlNs.PluralRulesOptions
+import typings.std.Intl.DateTimeFormatOptions
+import typings.std.Intl.NumberFormatOptions
+import typings.std.Intl.PluralRulesOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

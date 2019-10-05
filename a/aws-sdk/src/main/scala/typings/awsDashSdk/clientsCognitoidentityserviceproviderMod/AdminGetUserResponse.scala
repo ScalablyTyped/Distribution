@@ -10,7 +10,7 @@ trait AdminGetUserResponse extends js.Object {
     */
   var Enabled: js.UndefOr[BooleanType] = js.undefined
   /**
-    * Specifies the options for MFA (e.g., email or phone number).
+    *  This response parameter is no longer supported. It provides information only about SMS MFA configurations. It doesn't provide information about TOTP software token MFA configurations. To look up information about either type of MFA configuration, use the AdminGetUserResponse$UserMFASettingList response instead.
     */
   var MFAOptions: js.UndefOr[MFAOptionListType] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait AdminGetUserResponse extends js.Object {
     */
   var UserLastModifiedDate: js.UndefOr[DateType] = js.undefined
   /**
-    * The list of the user's MFA settings.
+    * The MFA options that are enabled for the user. The possible values in this list are SMS_MFA and SOFTWARE_TOKEN_MFA.
     */
   var UserMFASettingList: js.UndefOr[UserMFASettingListType] = js.undefined
   /**
@@ -47,7 +47,7 @@ object AdminGetUserResponse {
   @scala.inline
   def apply(
     Username: UsernameType,
-    Enabled: js.UndefOr[BooleanType] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     MFAOptions: MFAOptionListType = null,
     PreferredMfaSetting: StringType = null,
     UserAttributes: AttributeListType = null,

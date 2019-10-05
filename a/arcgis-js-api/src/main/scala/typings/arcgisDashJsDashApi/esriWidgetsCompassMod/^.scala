@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsCompassMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CompassConstructor
+import typings.arcgisDashJsDashApi.__esri.CompassConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

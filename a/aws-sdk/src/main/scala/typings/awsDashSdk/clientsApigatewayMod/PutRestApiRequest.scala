@@ -32,7 +32,7 @@ object PutRestApiRequest {
   def apply(
     body: _Blob,
     restApiId: String,
-    failOnWarnings: js.UndefOr[Boolean] = js.undefined,
+    failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined,
     mode: PutMode = null,
     parameters: MapOfStringToString = null
   ): PutRestApiRequest = {

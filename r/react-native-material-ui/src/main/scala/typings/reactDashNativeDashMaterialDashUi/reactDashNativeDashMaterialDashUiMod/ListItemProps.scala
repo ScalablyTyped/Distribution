@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiNumbers.`1`
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiNumbers.`2`
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiNumbers.`3`

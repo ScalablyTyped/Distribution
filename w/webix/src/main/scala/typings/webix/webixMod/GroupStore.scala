@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,4 +11,8 @@ trait GroupStore extends js.Object {
   def group(config: js.Any, target: String): Unit = js.native
   def ungroup(): Unit = js.native
 }
+
+@JSImport("webix", "GroupStore")
+@js.native
+object GroupStore extends TopLevel[GroupStore]
 

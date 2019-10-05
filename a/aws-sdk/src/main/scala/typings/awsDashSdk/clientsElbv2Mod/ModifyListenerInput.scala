@@ -37,14 +37,14 @@ object ModifyListenerInput {
     ListenerArn: ListenerArn,
     Certificates: CertificateList = null,
     DefaultActions: Actions = null,
-    Port: js.UndefOr[Port] = js.undefined,
+    Port: Int | Double = null,
     Protocol: ProtocolEnum = null,
     SslPolicy: SslPolicyName = null
   ): ModifyListenerInput = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn)
     if (Certificates != null) __obj.updateDynamic("Certificates")(Certificates)
     if (DefaultActions != null) __obj.updateDynamic("DefaultActions")(DefaultActions)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (SslPolicy != null) __obj.updateDynamic("SslPolicy")(SslPolicy)
     __obj.asInstanceOf[ModifyListenerInput]

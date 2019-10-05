@@ -27,13 +27,13 @@ object ListReviewableHITsRequest {
   @scala.inline
   def apply(
     HITTypeId: EntityId = null,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     Status: ReviewableHITStatus = null
   ): ListReviewableHITsRequest = {
     val __obj = js.Dynamic.literal()
     if (HITTypeId != null) __obj.updateDynamic("HITTypeId")(HITTypeId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReviewableHITsRequest]

@@ -50,8 +50,8 @@ class DiagramEngine () extends BaseEntity[DiagramEngineListener] {
   def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): Boolean = js.native
   def clearRepaintEntities(): Unit = js.native
   def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]]): Unit = js.native
-  def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.reactMod.Global.JSXNs.Element | Null = js.native
-  def generateWidgetForNode(node: NodeModel): typings.react.reactMod.Global.JSXNs.Element | Null = js.native
+  def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.reactMod.Global.JSX.Element | Null = js.native
+  def generateWidgetForNode(node: NodeModel): typings.react.reactMod.Global.JSX.Element | Null = js.native
   /**
     * A representation of the canvas in the following format:
     *

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -14,4 +15,8 @@ class SignalCellularConnectedNoInternet2Bar protected ()
   def this(props: SvgIconProps) = this()
   def this(props: SvgIconProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/icons", "SignalCellularConnectedNoInternet2Bar")
+@js.native
+object SignalCellularConnectedNoInternet2Bar extends TopLevel[SvgIconComponent]
 

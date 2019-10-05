@@ -1,11 +1,11 @@
 package typings.atPulumiAws.route53RecordMod
 
 import typings.atPulumiAws.route53RecordTypeMod.RecordType
-import typings.atPulumiAws.typesInputMod.route53Ns.RecordAlias
-import typings.atPulumiAws.typesInputMod.route53Ns.RecordFailoverRoutingPolicy
-import typings.atPulumiAws.typesInputMod.route53Ns.RecordGeolocationRoutingPolicy
-import typings.atPulumiAws.typesInputMod.route53Ns.RecordLatencyRoutingPolicy
-import typings.atPulumiAws.typesInputMod.route53Ns.RecordWeightedRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53.RecordAlias
+import typings.atPulumiAws.typesInputMod.route53.RecordFailoverRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53.RecordGeolocationRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53.RecordLatencyRoutingPolicy
+import typings.atPulumiAws.typesInputMod.route53.RecordWeightedRoutingPolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

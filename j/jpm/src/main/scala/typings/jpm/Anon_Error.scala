@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.NSIException
+import typings.jpm.FFAddonSDK.NSIException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

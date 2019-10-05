@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLayerListListItemPanelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ListItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ListItemPanel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Widget
+import typings.arcgisDashJsDashApi.__esri.ListItem
+import typings.arcgisDashJsDashApi.__esri.ListItemPanel
+import typings.arcgisDashJsDashApi.__esri.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

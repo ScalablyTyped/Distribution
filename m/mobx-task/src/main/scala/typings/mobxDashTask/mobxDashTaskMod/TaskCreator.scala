@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- js.Function because Already inherited
 - typings.std.PropertyDecorator because var conflicts: length. Inlined  */ @js.native
 trait TaskCreator[K /* <: String */] extends MethodDecorator {
   def apply(options: Pick[TaskOptions[WithoutPromise[_]], K]): PropertyDecorator = js.native

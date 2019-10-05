@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksFindTaskMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindTask
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FindTaskProperties
+import typings.arcgisDashJsDashApi.__esri.FindTask
+import typings.arcgisDashJsDashApi.__esri.FindTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

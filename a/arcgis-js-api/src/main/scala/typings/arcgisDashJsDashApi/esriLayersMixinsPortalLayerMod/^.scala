@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsPortalLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.PortalLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

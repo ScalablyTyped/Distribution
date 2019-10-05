@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportGeneralizeParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeneralizeParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeneralizeParametersProperties
+import typings.arcgisDashJsDashApi.__esri.GeneralizeParameters
+import typings.arcgisDashJsDashApi.__esri.GeneralizeParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

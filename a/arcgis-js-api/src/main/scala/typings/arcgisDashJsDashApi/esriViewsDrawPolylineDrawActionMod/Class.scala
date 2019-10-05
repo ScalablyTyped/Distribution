@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawPolylineDrawActionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolylineDrawAction
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolylineDrawActionProperties
+import typings.arcgisDashJsDashApi.__esri.PolylineDrawAction
+import typings.arcgisDashJsDashApi.__esri.PolylineDrawActionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

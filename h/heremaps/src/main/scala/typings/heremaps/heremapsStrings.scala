@@ -1,7 +1,7 @@
 package typings.heremaps
 
-import typings.heremaps.HNs.mapNs.SpatialStyleNs.LineCap
-import typings.heremaps.HNs.mapNs.SpatialStyleNs.LineJoin
+import typings.heremaps.H.map.SpatialStyle.LineCap
+import typings.heremaps.H.map.SpatialStyle.LineJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

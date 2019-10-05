@@ -1,6 +1,6 @@
 package typings.jqueryDotTinycarousel
 
-import typings.jqueryDotTinycarousel.JQueryTinyCarouselNs.JQueryTinyCarouselOptions
+import typings.jqueryDotTinycarousel.JQueryTinyCarousel.JQueryTinyCarouselOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

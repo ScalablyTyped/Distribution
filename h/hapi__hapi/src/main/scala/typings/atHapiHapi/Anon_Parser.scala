@@ -1,6 +1,6 @@
 package typings.atHapiHapi
 
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

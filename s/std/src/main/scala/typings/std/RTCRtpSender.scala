@@ -22,10 +22,6 @@ trait RTCRtpSender extends js.Object {
 
 @JSGlobal("RTCRtpSender")
 @js.native
-class RTCRtpSenderCls () extends RTCRtpSender
-
-@JSGlobal("RTCRtpSender")
-@js.native
 object RTCRtpSender extends Instantiable0[RTCRtpSender] {
   def getCapabilities(kind: java.lang.String): RTCRtpCapabilities | Null = js.native
 }

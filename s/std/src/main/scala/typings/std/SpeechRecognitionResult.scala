@@ -17,9 +17,5 @@ trait SpeechRecognitionResult extends /* index */ NumberDictionary[SpeechRecogni
 
 @JSGlobal("SpeechRecognitionResult")
 @js.native
-class SpeechRecognitionResultCls () extends SpeechRecognitionResult
-
-@JSGlobal("SpeechRecognitionResult")
-@js.native
 object SpeechRecognitionResult extends Instantiable0[SpeechRecognitionResult]
 

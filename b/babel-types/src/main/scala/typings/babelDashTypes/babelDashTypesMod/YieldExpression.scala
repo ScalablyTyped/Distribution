@@ -36,3 +36,11 @@ object YieldExpression {
   }
 }
 
+@JSImport("babel-types", "yieldExpression")
+@js.native
+object yieldExpression extends js.Object {
+  def apply(): YieldExpression = js.native
+  def apply(argument: Expression): YieldExpression = js.native
+  def apply(argument: Expression, delegate: Boolean): YieldExpression = js.native
+}
+

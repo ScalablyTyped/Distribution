@@ -1,15 +1,15 @@
 package typings.atPulumiAws.cognitoUserPoolMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolAdminCreateUserConfig
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolDeviceConfiguration
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolEmailConfiguration
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolLambdaConfig
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolPasswordPolicy
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolSchema
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolSmsConfiguration
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolUserPoolAddOns
-import typings.atPulumiAws.typesOutputMod.cognitoNs.UserPoolVerificationMessageTemplate
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolAdminCreateUserConfig
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolDeviceConfiguration
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolEmailConfiguration
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolLambdaConfig
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolPasswordPolicy
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolSchema
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolSmsConfiguration
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolUserPoolAddOns
+import typings.atPulumiAws.typesOutputMod.cognito.UserPoolVerificationMessageTemplate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

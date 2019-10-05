@@ -30,7 +30,7 @@ trait DescribeReservedInstancesRequest extends js.Object {
 object DescribeReservedInstancesRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     OfferingClass: OfferingClassType = null,
     OfferingType: OfferingTypeValues = null,

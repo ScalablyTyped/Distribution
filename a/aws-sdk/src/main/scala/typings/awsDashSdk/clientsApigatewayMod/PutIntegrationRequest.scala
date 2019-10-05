@@ -88,7 +88,7 @@ object PutIntegrationRequest {
     passthroughBehavior: String = null,
     requestParameters: MapOfStringToString = null,
     requestTemplates: MapOfStringToString = null,
-    timeoutInMillis: js.UndefOr[NullableInteger] = js.undefined,
+    timeoutInMillis: Int | scala.Double = null,
     uri: String = null
   ): PutIntegrationRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod, resourceId = resourceId, restApiId = restApiId)
@@ -103,7 +103,7 @@ object PutIntegrationRequest {
     if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior)
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters)
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates)
-    if (!js.isUndefined(timeoutInMillis)) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis)
+    if (timeoutInMillis != null) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri)
     __obj.asInstanceOf[PutIntegrationRequest]
   }

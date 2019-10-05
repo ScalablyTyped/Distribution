@@ -1,7 +1,7 @@
 package typings.backboneDashAssociations.backboneMod
 
 import typings.backbone.backboneMod.Model
-import typings.backboneDashAssociations.backboneMod.AssociationsNs.IRelation
+import typings.backboneDashAssociations.backboneMod.Associations.IRelation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +36,5 @@ trait Map[K, V] extends js.Object {
 
 @JSGlobal("Map")
 @js.native
-class MapCls[K, V] () extends Map[K, V] {
-  def this(entries: js.Array[js.Tuple2[K, V]]) = this()
-  def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
-}
+object Map extends TopLevel[MapConstructor]
 

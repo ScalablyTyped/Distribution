@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -30,4 +31,8 @@ trait KanbanView extends js.Object {
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
 }
+
+@JSImport("webix", "KanbanView")
+@js.native
+object KanbanView extends TopLevel[KanbanView]
 

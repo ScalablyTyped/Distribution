@@ -1,6 +1,6 @@
 package typings.baidumapDashWebDashSdk
 
-import typings.baidumapDashWebDashSdk.BMapNs.Size
+import typings.baidumapDashWebDashSdk.BMap.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsxDashChaiMod {
-  import typings.chai.ChaiNs.ChaiPlugin
+  import typings.chai.Chai.ChaiPlugin
 
   type jsxChaiFunction = ChaiPlugin
 }

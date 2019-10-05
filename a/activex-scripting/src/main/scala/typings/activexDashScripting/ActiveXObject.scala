@@ -1,6 +1,6 @@
 package typings.activexDashScripting
 
-import typings.activexDashScripting.ScriptingNs.Dictionary
+import typings.activexDashScripting.Scripting.Dictionary
 import typings.activexDashScripting.activexDashScriptingStrings.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxRewriter")
 @js.native
 class SyntaxRewriter ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxRewriter
+  extends typings.typescriptDashServices.TypeScript.SyntaxRewriter
 

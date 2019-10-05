@@ -14,21 +14,68 @@ trait LibraTransactionResponse extends js.Object {
   def awaitConfirmation(client: LibraClient): js.Promise[Unit]
 }
 
-object LibraTransactionResponse {
-  @scala.inline
+@JSImport("libra-core", "LibraTransactionResponse")
+@js.native
+object LibraTransactionResponse extends js.Object {
+  def apply(signedTransaction: LibraSignedTransaction, validatorId: Uint8Array): Unit = js.native
+  def apply(signedTransaction: LibraSignedTransaction, validatorId: Uint8Array, acStatus: Double): Unit = js.native
   def apply(
-    awaitConfirmation: LibraClient => js.Promise[Unit],
     signedTransaction: LibraSignedTransaction,
     validatorId: Uint8Array,
-    acStatus: LibraAdmissionControlStatus | Double = null,
-    mempoolStatus: LibraMempoolTransactionStatus | Double = null,
-    vmStatus: LibraVMStatusError = null
-  ): LibraTransactionResponse = {
-    val __obj = js.Dynamic.literal(awaitConfirmation = js.Any.fromFunction1(awaitConfirmation), signedTransaction = signedTransaction, validatorId = validatorId)
-    if (acStatus != null) __obj.updateDynamic("acStatus")(acStatus.asInstanceOf[js.Any])
-    if (mempoolStatus != null) __obj.updateDynamic("mempoolStatus")(mempoolStatus.asInstanceOf[js.Any])
-    if (vmStatus != null) __obj.updateDynamic("vmStatus")(vmStatus)
-    __obj.asInstanceOf[LibraTransactionResponse]
-  }
+    acStatus: Double,
+    mempoolStatus: Double
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: Double,
+    mempoolStatus: Double,
+    vmStatus: LibraVMStatusError
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: Double,
+    mempoolStatus: LibraMempoolTransactionStatus
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: Double,
+    mempoolStatus: LibraMempoolTransactionStatus,
+    vmStatus: LibraVMStatusError
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: LibraAdmissionControlStatus
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: LibraAdmissionControlStatus,
+    mempoolStatus: Double
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: LibraAdmissionControlStatus,
+    mempoolStatus: Double,
+    vmStatus: LibraVMStatusError
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: LibraAdmissionControlStatus,
+    mempoolStatus: LibraMempoolTransactionStatus
+  ): Unit = js.native
+  def apply(
+    signedTransaction: LibraSignedTransaction,
+    validatorId: Uint8Array,
+    acStatus: LibraAdmissionControlStatus,
+    mempoolStatus: LibraMempoolTransactionStatus,
+    vmStatus: LibraVMStatusError
+  ): Unit = js.native
+  def awaitConfirmation(client: LibraClient): js.Promise[Unit] = js.native
 }
 

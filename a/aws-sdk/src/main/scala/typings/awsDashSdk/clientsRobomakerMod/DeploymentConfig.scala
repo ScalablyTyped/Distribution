@@ -22,14 +22,14 @@ trait DeploymentConfig extends js.Object {
 object DeploymentConfig {
   @scala.inline
   def apply(
-    concurrentDeploymentPercentage: js.UndefOr[Percentage] = js.undefined,
-    failureThresholdPercentage: js.UndefOr[Percentage] = js.undefined,
-    robotDeploymentTimeoutInSeconds: js.UndefOr[DeploymentTimeout] = js.undefined
+    concurrentDeploymentPercentage: Int | Double = null,
+    failureThresholdPercentage: Int | Double = null,
+    robotDeploymentTimeoutInSeconds: Int | Double = null
   ): DeploymentConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concurrentDeploymentPercentage)) __obj.updateDynamic("concurrentDeploymentPercentage")(concurrentDeploymentPercentage)
-    if (!js.isUndefined(failureThresholdPercentage)) __obj.updateDynamic("failureThresholdPercentage")(failureThresholdPercentage)
-    if (!js.isUndefined(robotDeploymentTimeoutInSeconds)) __obj.updateDynamic("robotDeploymentTimeoutInSeconds")(robotDeploymentTimeoutInSeconds)
+    if (concurrentDeploymentPercentage != null) __obj.updateDynamic("concurrentDeploymentPercentage")(concurrentDeploymentPercentage.asInstanceOf[js.Any])
+    if (failureThresholdPercentage != null) __obj.updateDynamic("failureThresholdPercentage")(failureThresholdPercentage.asInstanceOf[js.Any])
+    if (robotDeploymentTimeoutInSeconds != null) __obj.updateDynamic("robotDeploymentTimeoutInSeconds")(robotDeploymentTimeoutInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfig]
   }
 }

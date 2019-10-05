@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/loaders/Cache", JSImport.Namespace)
 @js.native
 object srcLoadersCacheMod extends js.Object {
-  @JSName("Cache")
   @js.native
-  object CacheNs extends js.Object {
+  object Cache extends js.Object {
     var enabled: Boolean = js.native
     var files: js.Any = js.native
     def add(key: String, file: js.Any): Unit = js.native

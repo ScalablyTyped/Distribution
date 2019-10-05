@@ -1,6 +1,6 @@
 package typings.uiDashRouterDashExtras
 
-import typings.uiDashRouterDashExtras.angularMod.uiNs.IRedirectParams
+import typings.uiDashRouterDashExtras.angularMod.ui.IRedirectParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

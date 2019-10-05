@@ -21,9 +21,9 @@ trait ListSmartHomeAppliancesRequest extends js.Object {
 
 object ListSmartHomeAppliancesRequest {
   @scala.inline
-  def apply(RoomArn: Arn, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListSmartHomeAppliancesRequest = {
+  def apply(RoomArn: Arn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListSmartHomeAppliancesRequest = {
     val __obj = js.Dynamic.literal(RoomArn = RoomArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListSmartHomeAppliancesRequest]
   }

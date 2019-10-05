@@ -1,9 +1,9 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.IntegerParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.NameParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.StringParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.x509Ns.Extension
+import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

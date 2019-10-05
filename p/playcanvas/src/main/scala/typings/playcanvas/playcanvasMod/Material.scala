@@ -61,5 +61,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Material")
 @js.native
 class Material ()
-  extends typings.playcanvas.pcNs.Material
+  extends typings.playcanvas.pc.Material
 

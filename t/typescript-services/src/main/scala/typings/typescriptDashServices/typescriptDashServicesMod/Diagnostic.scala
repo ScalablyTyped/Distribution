@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "Diagnostic")
 @js.native
 class Diagnostic protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.Diagnostic {
+  extends typings.typescriptDashServices.TypeScript.Diagnostic {
   def this(
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
     start: Double,
     length: Double,
     diagnosticKey: String
   ) = this()
   def this(
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
     start: Double,
     length: Double,
     diagnosticKey: String,
@@ -25,12 +25,12 @@ class Diagnostic protected ()
   ) = this()
   def this(
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
     start: Double,
     length: Double,
     diagnosticKey: String,
     _arguments: js.Array[_],
-    additionalLocations: js.Array[typings.typescriptDashServices.TypeScriptNs.Location]
+    additionalLocations: js.Array[typings.typescriptDashServices.TypeScript.Location]
   ) = this()
 }
 
@@ -39,8 +39,8 @@ class Diagnostic protected ()
 @js.native
 object Diagnostic extends js.Object {
   def equals(
-    diagnostic1: typings.typescriptDashServices.TypeScriptNs.Diagnostic,
-    diagnostic2: typings.typescriptDashServices.TypeScriptNs.Diagnostic
+    diagnostic1: typings.typescriptDashServices.TypeScript.Diagnostic,
+    diagnostic2: typings.typescriptDashServices.TypeScript.Diagnostic
   ): Boolean = js.native
 }
 

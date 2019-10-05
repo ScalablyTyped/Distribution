@@ -1,6 +1,6 @@
 package typings.vastDashClient.vastDashClientMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Document
 import typings.std.Exclude
 import typings.std.Pick

@@ -87,7 +87,7 @@ object ImageBuilder {
     Description: String = null,
     DisplayName: String = null,
     DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    EnableDefaultInternetAccess: js.UndefOr[scala.Boolean] = js.undefined,
     IamRoleArn: Arn = null,
     ImageArn: Arn = null,
     ImageBuilderErrors: ResourceErrors = null,

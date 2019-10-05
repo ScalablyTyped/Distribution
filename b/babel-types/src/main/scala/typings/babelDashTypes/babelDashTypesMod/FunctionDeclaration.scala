@@ -53,3 +53,14 @@ object FunctionDeclaration {
   }
 }
 
+@JSImport("babel-types", "functionDeclaration")
+@js.native
+object functionDeclaration extends js.Object {
+  def apply(): FunctionDeclaration = js.native
+  def apply(id: Identifier): FunctionDeclaration = js.native
+  def apply(id: Identifier, params: js.Array[LVal]): FunctionDeclaration = js.native
+  def apply(id: Identifier, params: js.Array[LVal], body: BlockStatement): FunctionDeclaration = js.native
+  def apply(id: Identifier, params: js.Array[LVal], body: BlockStatement, generator: Boolean): FunctionDeclaration = js.native
+  def apply(id: Identifier, params: js.Array[LVal], body: BlockStatement, generator: Boolean, async: Boolean): FunctionDeclaration = js.native
+}
+

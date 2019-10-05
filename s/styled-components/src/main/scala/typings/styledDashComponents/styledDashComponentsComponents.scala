@@ -12,7 +12,7 @@ object styledDashComponentsComponents extends styledDashComponentsProps {
   @scala.inline
   def StyleSheetManager: ComponentType[typings.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps] = js.constructorOf[typings.styledDashComponents.macroMod.StyleSheetManager].asInstanceOf[typings.react.reactMod.ComponentType[typings.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps]]
   @scala.inline
-  def ThemeConsumer: ComponentType[ConsumerProps[AnyIfEmpty[DefaultTheme]]] = typings.styledDashComponents.macroMod.^.ThemeConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
+  def ThemeConsumer: ComponentType[ConsumerProps[AnyIfEmpty[DefaultTheme]]] = typings.styledDashComponents.macroMod.ThemeConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.react.reactMod.ConsumerProps[
     typings.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[typings.styledDashComponents.styledDashComponentsMod.DefaultTheme]
   ]]]

@@ -1,7 +1,7 @@
 package typings.inversifyDashExpressDashUtils
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.AuthProvider
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.AuthProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

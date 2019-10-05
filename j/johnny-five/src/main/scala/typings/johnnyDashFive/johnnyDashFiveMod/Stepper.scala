@@ -34,3 +34,19 @@ class Stepper protected () extends js.Object {
   def within(range: js.Array[Double], unit: String, cb: js.Function0[Unit]): Unit = js.native
 }
 
+@JSImport("johnny-five", "Stepper")
+@js.native
+object Stepper extends js.Object {
+  @js.native
+  class TYPE () extends js.Object
+  
+  /* static members */
+  @js.native
+  object TYPE extends js.Object {
+    var DRIVER: Double = js.native
+    var FOUR_WIRE: Double = js.native
+    var TWO_WIRE: Double = js.native
+  }
+  
+}
+

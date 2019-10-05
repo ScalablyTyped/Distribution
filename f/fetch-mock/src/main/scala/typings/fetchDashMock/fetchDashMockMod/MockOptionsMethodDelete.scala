@@ -14,7 +14,7 @@ trait MockOptionsMethodDelete extends MockOptions {
 object MockOptionsMethodDelete {
   @scala.inline
   def apply(
-    functionMatcher: MockMatcherFunction = null,
+    functionMatcher: (/* url */ String, /* opts */ MockRequest) => Boolean = null,
     headers: StringDictionary[String | Double] = null,
     includeContentLength: js.UndefOr[Boolean] = js.undefined,
     matcher: MockMatcher = null,
@@ -28,7 +28,7 @@ object MockOptionsMethodDelete {
     sendAsJson: js.UndefOr[Boolean] = js.undefined
   ): MockOptionsMethodDelete = {
     val __obj = js.Dynamic.literal()
-    if (functionMatcher != null) __obj.updateDynamic("functionMatcher")(functionMatcher)
+    if (functionMatcher != null) __obj.updateDynamic("functionMatcher")(js.Any.fromFunction2(functionMatcher))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength)
     if (matcher != null) __obj.updateDynamic("matcher")(matcher.asInstanceOf[js.Any])

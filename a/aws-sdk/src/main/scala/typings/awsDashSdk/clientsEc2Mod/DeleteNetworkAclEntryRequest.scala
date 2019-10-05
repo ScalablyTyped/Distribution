@@ -29,7 +29,7 @@ object DeleteNetworkAclEntryRequest {
     Egress: Boolean,
     NetworkAclId: String,
     RuleNumber: Integer,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteNetworkAclEntryRequest = {
     val __obj = js.Dynamic.literal(Egress = Egress, NetworkAclId = NetworkAclId, RuleNumber = RuleNumber)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

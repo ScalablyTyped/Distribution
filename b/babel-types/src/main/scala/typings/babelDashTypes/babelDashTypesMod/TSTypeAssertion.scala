@@ -13,25 +13,9 @@ trait TSTypeAssertion
   var type_TSTypeAssertion: typings.babelDashTypes.babelDashTypesStrings.TSTypeAssertion
 }
 
-object TSTypeAssertion {
-  @scala.inline
-  def apply(
-    end: Double,
-    expression: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSTypeAssertion,
-    typeAnnotation: TSType,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSTypeAssertion = {
-    val __obj = js.Dynamic.literal(end = end, expression = expression, loc = loc, start = start, typeAnnotation = typeAnnotation)
-    __obj.updateDynamic("type")(`type`)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSTypeAssertion]
-  }
+@JSImport("babel-types", "TSTypeAssertion")
+@js.native
+object TSTypeAssertion extends js.Object {
+  def apply(typeAnnotation: TSType, expression: Expression): TSTypeAssertion = js.native
 }
 

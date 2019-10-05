@@ -1,6 +1,7 @@
 package typings.egg.eggMod
 
 import typings.accepts.acceptsMod.Accepts
+import typings.eggDashCookies.eggDashCookiesMod.^
 import typings.eggDashLogger.eggDashLoggerMod.EggLogger
 import typings.koa.koaMod.BaseContext
 import typings.node.httpMod.IncomingMessage
@@ -20,9 +21,9 @@ trait Context extends BaseContext {
     * @see Request#acceptJSON
     */
   var acceptJSON: Boolean = js.native
-  var app: typings.eggDashView.eggMod.Application = js.native
+  var app: Application = js.native
   // The new 'cookies' instead of Koa's.
-  var cookies: typings.eggDashCookies.eggDashCookiesMod.^ = js.native
+  var cookies: ^ = js.native
   /**
     * Set the ctx.body.data value
     *
@@ -152,10 +153,10 @@ trait Context extends BaseContext {
   var realStatus: Double = js.native
   // properties of koa.Context
   var req: IncomingMessage = js.native
-  var request: typings.std.Request = js.native
+  var request: Request = js.native
   var res: ServerResponse = js.native
   var respond: js.UndefOr[Boolean] = js.native
-  var response: typings.std.Response = js.native
+  var response: Response = js.native
   var service: IService = js.native
   /**
     * Request start time

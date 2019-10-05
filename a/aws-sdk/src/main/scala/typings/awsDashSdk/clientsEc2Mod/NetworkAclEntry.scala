@@ -43,13 +43,13 @@ object NetworkAclEntry {
   @scala.inline
   def apply(
     CidrBlock: String = null,
-    Egress: js.UndefOr[Boolean] = js.undefined,
+    Egress: js.UndefOr[scala.Boolean] = js.undefined,
     IcmpTypeCode: IcmpTypeCode = null,
     Ipv6CidrBlock: String = null,
     PortRange: PortRange = null,
     Protocol: String = null,
     RuleAction: RuleAction = null,
-    RuleNumber: js.UndefOr[Integer] = js.undefined
+    RuleNumber: Int | scala.Double = null
   ): NetworkAclEntry = {
     val __obj = js.Dynamic.literal()
     if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock)
@@ -59,7 +59,7 @@ object NetworkAclEntry {
     if (PortRange != null) __obj.updateDynamic("PortRange")(PortRange)
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol)
     if (RuleAction != null) __obj.updateDynamic("RuleAction")(RuleAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(RuleNumber)) __obj.updateDynamic("RuleNumber")(RuleNumber)
+    if (RuleNumber != null) __obj.updateDynamic("RuleNumber")(RuleNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAclEntry]
   }
 }

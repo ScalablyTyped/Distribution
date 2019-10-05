@@ -1,6 +1,6 @@
 package typings.atJupyterlabServices.atJupyterlabServicesMod
 
-import typings.atJupyterlabServices.libKernelManagerMod.KernelManagerNs.IOptions
+import typings.atJupyterlabServices.libKernelManagerMod.KernelManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

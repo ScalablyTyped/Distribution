@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotBigquery
 
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.ErrorProto
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.ErrorProto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

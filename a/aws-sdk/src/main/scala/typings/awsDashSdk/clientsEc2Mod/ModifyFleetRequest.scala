@@ -28,7 +28,7 @@ object ModifyFleetRequest {
   def apply(
     FleetId: FleetIdentifier,
     TargetCapacitySpecification: TargetCapacitySpecificationRequest,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null
   ): ModifyFleetRequest = {
     val __obj = js.Dynamic.literal(FleetId = FleetId, TargetCapacitySpecification = TargetCapacitySpecification)

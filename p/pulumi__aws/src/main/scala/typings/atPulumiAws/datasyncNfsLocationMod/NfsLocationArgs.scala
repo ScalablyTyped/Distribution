@@ -1,7 +1,7 @@
 package typings.atPulumiAws.datasyncNfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.datasyncNs.NfsLocationOnPremConfig
+import typings.atPulumiAws.typesInputMod.datasync.NfsLocationOnPremConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

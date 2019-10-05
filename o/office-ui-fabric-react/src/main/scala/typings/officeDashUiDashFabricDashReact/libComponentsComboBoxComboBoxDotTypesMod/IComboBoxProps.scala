@@ -13,6 +13,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelec
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.off
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.on
 import typings.react.reactMod.FormEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -233,7 +234,7 @@ object IComboBoxProps {
     onMenuDismissed: () => Unit = null,
     onMenuOpen: () => Unit = null,
     onPendingValueChanged: (/* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double], /* value */ js.UndefOr[String]) => Unit = null,
-    onRenderLowerContent: IRenderFunction[IComboBoxProps] = null,
+    onRenderLowerContent: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null = null,
     onResolveOptions: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]] = null,
     onScrollToItem: /* itemIndex */ Double => Unit = null,
     persistMenu: js.UndefOr[Boolean] = js.undefined,
@@ -267,7 +268,7 @@ object IComboBoxProps {
     if (onMenuDismissed != null) __obj.updateDynamic("onMenuDismissed")(js.Any.fromFunction0(onMenuDismissed))
     if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(js.Any.fromFunction0(onMenuOpen))
     if (onPendingValueChanged != null) __obj.updateDynamic("onPendingValueChanged")(js.Any.fromFunction3(onPendingValueChanged))
-    if (onRenderLowerContent != null) __obj.updateDynamic("onRenderLowerContent")(onRenderLowerContent)
+    if (onRenderLowerContent != null) __obj.updateDynamic("onRenderLowerContent")(js.Any.fromFunction2(onRenderLowerContent))
     if (onResolveOptions != null) __obj.updateDynamic("onResolveOptions")(js.Any.fromFunction1(onResolveOptions))
     if (onScrollToItem != null) __obj.updateDynamic("onScrollToItem")(js.Any.fromFunction1(onScrollToItem))
     if (!js.isUndefined(persistMenu)) __obj.updateDynamic("persistMenu")(persistMenu)

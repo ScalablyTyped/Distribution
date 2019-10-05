@@ -2,6 +2,7 @@ package typings.reactDashBootstrapDashDateDashPicker.reactDashBootstrapDashDateD
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.StatelessComponent
@@ -56,10 +57,10 @@ object DatePickerProps {
     minDate: String = null,
     monthLabels: js.Array[String] = null,
     nextButtonElement: ReactNode = null,
-    onBlur: FocusEventHandler[_] = null,
-    onChange: ChangeCallback = null,
+    onBlur: FocusEvent[_] => Unit = null,
+    onChange: (/* value */ String, /* formattedValue */ String) => Unit = null,
     onClear: () => Unit = null,
-    onFocus: FocusEventHandler[_] = null,
+    onFocus: FocusEvent[_] => Unit = null,
     previousButtonElement: ReactNode = null,
     showClearButton: js.UndefOr[Boolean] = js.undefined,
     showTodayButton: js.UndefOr[Boolean] = js.undefined,
@@ -84,10 +85,10 @@ object DatePickerProps {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels)
     if (nextButtonElement != null) __obj.updateDynamic("nextButtonElement")(nextButtonElement.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (previousButtonElement != null) __obj.updateDynamic("previousButtonElement")(previousButtonElement.asInstanceOf[js.Any])
     if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton)
     if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton)

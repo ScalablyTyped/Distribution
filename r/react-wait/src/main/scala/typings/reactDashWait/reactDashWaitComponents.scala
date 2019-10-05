@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashWaitComponents extends reactDashWaitProps {
   @scala.inline
-  def Waiter: ComponentType[js.Object] = typings.reactDashWait.reactDashWaitMod.^.Waiter.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def Waiter: ComponentType[js.Object] = typings.reactDashWait.reactDashWaitMod.Waiter.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
 }
 

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebsceneEnvironmentMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.EnvironmentConstructor
+import typings.arcgisDashJsDashApi.__esri.EnvironmentConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,10 +17,10 @@ trait ComparedSourceImageFace extends js.Object {
 
 object ComparedSourceImageFace {
   @scala.inline
-  def apply(BoundingBox: BoundingBox = null, Confidence: js.UndefOr[Percent] = js.undefined): ComparedSourceImageFace = {
+  def apply(BoundingBox: BoundingBox = null, Confidence: Int | Double = null): ComparedSourceImageFace = {
     val __obj = js.Dynamic.literal()
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComparedSourceImageFace]
   }
 }

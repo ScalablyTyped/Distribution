@@ -2,12 +2,12 @@ package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.electron.ElectronNs.BrowserView
-import typings.electron.ElectronNs.BrowserWindow
-import typings.electron.ElectronNs.BrowserWindowConstructorOptions
-import typings.electron.ElectronNs.DevToolsExtensions
-import typings.electron.ElectronNs.Extensions
-import typings.electron.ElectronNs.WebContents
+import typings.electron.Electron.BrowserView
+import typings.electron.Electron.BrowserWindow
+import typings.electron.Electron.BrowserWindowConstructorOptions
+import typings.electron.Electron.DevToolsExtensions
+import typings.electron.Electron.Extensions
+import typings.electron.Electron.WebContents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

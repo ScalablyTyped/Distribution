@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashDropzoneComponents extends reactDashDropzoneProps {
   @scala.inline
-  def `react-dropzone`: ComponentType[DropzoneProps with RefAttributes[DropzoneRef]] = typings.reactDashDropzone.reactDashDropzoneMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[
+  def ReactDashDropzone: ComponentType[DropzoneProps with RefAttributes[DropzoneRef]] = typings.reactDashDropzone.reactDashDropzoneMod.default.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashDropzone.reactDashDropzoneMod.DropzoneProps with typings.react.reactMod.RefAttributes[typings.reactDashDropzone.reactDashDropzoneMod.DropzoneRef]]]
 }
 

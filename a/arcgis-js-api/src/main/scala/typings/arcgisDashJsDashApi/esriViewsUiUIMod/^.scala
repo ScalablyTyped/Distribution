@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsUiUIMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UIConstructor
+import typings.arcgisDashJsDashApi.__esri.UIConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

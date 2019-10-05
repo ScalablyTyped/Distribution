@@ -24,8 +24,8 @@ object Animatable {
     animationId: Int | Double = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
-    onAnimationEnd: RechartsFunction = null,
-    onAnimationStart: RechartsFunction = null
+    onAnimationEnd: /* repeated */ js.Any => Unit = null,
+    onAnimationStart: /* repeated */ js.Any => Unit = null
   ): Animatable = {
     val __obj = js.Dynamic.literal()
     if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])
@@ -34,8 +34,8 @@ object Animatable {
     if (animationId != null) __obj.updateDynamic("animationId")(animationId.asInstanceOf[js.Any])
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
+    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
     __obj.asInstanceOf[Animatable]
   }
 }

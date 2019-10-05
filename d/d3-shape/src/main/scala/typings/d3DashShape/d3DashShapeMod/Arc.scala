@@ -259,3 +259,9 @@ trait Arc[This, Datum] extends js.Object {
   def startAngle(angle: Double): this.type = js.native
 }
 
+@JSImport("d3-shape", "arc")
+@js.native
+object arc extends js.Object {
+  def apply(): Arc[_, DefaultArcObject] = js.native
+}
+

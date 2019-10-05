@@ -1,5 +1,6 @@
 package typings.viewporter
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,4 +34,8 @@ object Viewporter {
     __obj.asInstanceOf[Viewporter]
   }
 }
+
+@JSGlobal("viewporter")
+@js.native
+object viewporter extends TopLevel[Viewporter]
 

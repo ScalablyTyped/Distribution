@@ -33,12 +33,12 @@ object DiscoverInstancesRequest {
     NamespaceName: NamespaceName,
     ServiceName: ServiceName,
     HealthStatus: HealthStatusFilter = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     QueryParameters: Attributes = null
   ): DiscoverInstancesRequest = {
     val __obj = js.Dynamic.literal(NamespaceName = NamespaceName, ServiceName = ServiceName)
     if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (QueryParameters != null) __obj.updateDynamic("QueryParameters")(QueryParameters)
     __obj.asInstanceOf[DiscoverInstancesRequest]
   }

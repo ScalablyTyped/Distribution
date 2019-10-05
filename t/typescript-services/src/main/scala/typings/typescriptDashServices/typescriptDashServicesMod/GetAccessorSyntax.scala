@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "GetAccessorSyntax")
 @js.native
 class GetAccessorSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.GetAccessorSyntax {
+  extends typings.typescriptDashServices.TypeScript.GetAccessorSyntax {
   def this(
     modifiers: ISyntaxList,
     getKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax,
-    typeAnnotation: typings.typescriptDashServices.TypeScriptNs.TypeAnnotationSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterListSyntax,
+    typeAnnotation: typings.typescriptDashServices.TypeScript.TypeAnnotationSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -28,9 +28,9 @@ object GetAccessorSyntax extends js.Object {
   def create(
     getKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterListSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.GetAccessorSyntax = js.native
-  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.GetAccessorSyntax = js.native
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterListSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax
+  ): typings.typescriptDashServices.TypeScript.GetAccessorSyntax = js.native
+  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScript.GetAccessorSyntax = js.native
 }
 

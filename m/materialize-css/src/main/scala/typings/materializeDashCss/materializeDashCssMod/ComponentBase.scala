@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "ComponentBase")
 @js.native
 abstract class ComponentBase[TOptions] ()
-  extends typings.materializeDashCss.MNs.ComponentBase[TOptions] {
+  extends typings.materializeDashCss.M.ComponentBase[TOptions] {
   def this(options: Partial[TOptions]) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +12,8 @@ trait CSS extends js.Object {
   def supports(property: java.lang.String): scala.Boolean = js.native
   def supports(property: java.lang.String, value: java.lang.String): scala.Boolean = js.native
 }
+
+@JSGlobal("CSS")
+@js.native
+object CSS extends TopLevel[CSS]
 

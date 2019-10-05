@@ -104,7 +104,7 @@ object CloneStackRequest {
     Attributes: StackAttributes = null,
     ChefConfiguration: ChefConfiguration = null,
     CloneAppIds: Strings = null,
-    ClonePermissions: js.UndefOr[Boolean] = js.undefined,
+    ClonePermissions: js.UndefOr[scala.Boolean] = js.undefined,
     ConfigurationManager: StackConfigurationManager = null,
     CustomCookbooksSource: Source = null,
     CustomJson: String = null,
@@ -117,8 +117,8 @@ object CloneStackRequest {
     HostnameTheme: String = null,
     Name: String = null,
     Region: String = null,
-    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
     VpcId: String = null
   ): CloneStackRequest = {
     val __obj = js.Dynamic.literal(ServiceRoleArn = ServiceRoleArn, SourceStackId = SourceStackId)

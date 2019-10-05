@@ -1,6 +1,6 @@
 package typings.deezerDashSdk
 
-import typings.deezerDashSdk.DeezerSdkNs.RepeatMode
+import typings.deezerDashSdk.DeezerSdk.RepeatMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

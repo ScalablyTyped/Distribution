@@ -3,7 +3,6 @@ package typings.gfc.gfcMod
 import typings.gfc.Anon_Stderr
 import typings.node.Buffer
 import typings.node.childUnderscoreProcessMod.ExecException
-import typings.node.childUnderscoreProcessMod.ExecSyncOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,9 +33,5 @@ object ^ extends js.Object {
     ]
   ): Unit = js.native
   def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Anon_Stderr] = js.native
-  def sync(): String | Buffer = js.native
-  def sync(cwd: String): String | Buffer = js.native
-  def sync(cwd: String, options: Options[ExecSyncOptions]): String | Buffer = js.native
-  def sync(options: Options[ExecSyncOptions]): String | Buffer = js.native
 }
 

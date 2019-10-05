@@ -39,7 +39,7 @@ object Action {
     JobName: NameString = null,
     NotificationProperty: NotificationProperty = null,
     SecurityConfiguration: NameString = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined
+    Timeout: Int | Double = null
   ): Action = {
     val __obj = js.Dynamic.literal()
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
@@ -47,7 +47,7 @@ object Action {
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty)
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

@@ -1,6 +1,6 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.Glyph
+import typings.vexflow.Vex.Flow.Glyph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

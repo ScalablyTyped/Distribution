@@ -39,13 +39,13 @@ object XMLClassifier {
     CreationTime: Timestamp = null,
     LastUpdated: Timestamp = null,
     RowTag: RowTag = null,
-    Version: js.UndefOr[VersionId] = js.undefined
+    Version: Int | Double = null
   ): XMLClassifier = {
     val __obj = js.Dynamic.literal(Classification = Classification, Name = Name)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
     if (RowTag != null) __obj.updateDynamic("RowTag")(RowTag)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLClassifier]
   }
 }

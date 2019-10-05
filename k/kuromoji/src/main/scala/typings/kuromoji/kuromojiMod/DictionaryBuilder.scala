@@ -1,6 +1,6 @@
 package typings.kuromoji.kuromojiMod
 
-import typings.doublearray.doublearrayNs.DoubleArray
+import typings.doublearray.doublearray.DoubleArray
 import typings.kuromoji.Anon_Tokeninfodictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,5 +39,11 @@ object DictionaryBuilder {
   
     __obj.asInstanceOf[DictionaryBuilder]
   }
+}
+
+@JSImport("kuromoji", "dictionaryBuilder")
+@js.native
+object dictionaryBuilder extends js.Object {
+  def apply(): DictionaryBuilder = js.native
 }
 

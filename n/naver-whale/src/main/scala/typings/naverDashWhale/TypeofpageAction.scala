@@ -1,10 +1,10 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.pageActionNs.GetDetails
-import typings.chrome.chromeNs.pageActionNs.IconDetails
-import typings.chrome.chromeNs.pageActionNs.PageActionClickedEvent
-import typings.chrome.chromeNs.pageActionNs.PopupDetails
-import typings.chrome.chromeNs.pageActionNs.TitleDetails
+import typings.chrome.chrome.pageAction.GetDetails
+import typings.chrome.chrome.pageAction.IconDetails
+import typings.chrome.chrome.pageAction.PageActionClickedEvent
+import typings.chrome.chrome.pageAction.PopupDetails
+import typings.chrome.chrome.pageAction.TitleDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

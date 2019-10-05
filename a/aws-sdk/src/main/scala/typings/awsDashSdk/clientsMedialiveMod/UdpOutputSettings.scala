@@ -25,11 +25,11 @@ object UdpOutputSettings {
   def apply(
     ContainerSettings: UdpContainerSettings,
     Destination: OutputLocationRef,
-    BufferMsec: js.UndefOr[__integerMin0Max10000] = js.undefined,
+    BufferMsec: Int | Double = null,
     FecOutputSettings: FecOutputSettings = null
   ): UdpOutputSettings = {
     val __obj = js.Dynamic.literal(ContainerSettings = ContainerSettings, Destination = Destination)
-    if (!js.isUndefined(BufferMsec)) __obj.updateDynamic("BufferMsec")(BufferMsec)
+    if (BufferMsec != null) __obj.updateDynamic("BufferMsec")(BufferMsec.asInstanceOf[js.Any])
     if (FecOutputSettings != null) __obj.updateDynamic("FecOutputSettings")(FecOutputSettings)
     __obj.asInstanceOf[UdpOutputSettings]
   }

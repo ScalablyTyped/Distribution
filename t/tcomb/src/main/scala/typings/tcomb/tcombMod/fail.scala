@@ -1,0 +1,12 @@
+package typings.tcomb.tcombMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tcomb", "fail")
+@js.native
+object fail extends js.Object {
+  def apply(message: String): Unit = js.native
+}
+

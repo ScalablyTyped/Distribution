@@ -38,7 +38,7 @@ trait CSVInput extends js.Object {
 object CSVInput {
   @scala.inline
   def apply(
-    AllowQuotedRecordDelimiter: js.UndefOr[AllowQuotedRecordDelimiter] = js.undefined,
+    AllowQuotedRecordDelimiter: js.UndefOr[Boolean] = js.undefined,
     Comments: Comments = null,
     FieldDelimiter: FieldDelimiter = null,
     FileHeaderInfo: FileHeaderInfo = null,

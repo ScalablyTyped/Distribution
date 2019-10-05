@@ -1,5 +1,6 @@
 package typings.coreDashJs
 
+import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,5 +17,11 @@ trait $for[T] extends IterableIterator[T] {
   def map[U](callbackfn: js.Function2[/* value */ T, /* key */ js.Any, U], thisArg: js.Any): $for[U] = js.native
   def of(callbackfn: js.Function2[/* value */ T, /* key */ js.Any, Unit]): Unit = js.native
   def of(callbackfn: js.Function2[/* value */ T, /* key */ js.Any, Unit], thisArg: js.Any): Unit = js.native
+}
+
+@JSGlobal("$for")
+@js.native
+object $for extends js.Object {
+  def apply[T](iterable: Iterable[T]): $for[T] = js.native
 }
 

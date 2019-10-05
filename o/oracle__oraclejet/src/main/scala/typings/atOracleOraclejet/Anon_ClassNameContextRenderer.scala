@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.HeaderContext
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.LabelContext
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.HeaderContext
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.LabelContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

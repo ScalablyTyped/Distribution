@@ -1,6 +1,6 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.i18nNs.LanguageDetectionResult
+import typings.chrome.chrome.i18n.LanguageDetectionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

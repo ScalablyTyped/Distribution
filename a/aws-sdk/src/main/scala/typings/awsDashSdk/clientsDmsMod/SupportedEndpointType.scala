@@ -29,7 +29,7 @@ object SupportedEndpointType {
     EndpointType: ReplicationEndpointTypeValue = null,
     EngineDisplayName: String = null,
     EngineName: String = null,
-    SupportsCDC: js.UndefOr[Boolean] = js.undefined
+    SupportsCDC: js.UndefOr[scala.Boolean] = js.undefined
   ): SupportedEndpointType = {
     val __obj = js.Dynamic.literal()
     if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])

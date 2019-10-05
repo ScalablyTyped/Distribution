@@ -28,7 +28,7 @@ object ExpectedAttributeValue {
   def apply(
     AttributeValueList: AttributeValueList = null,
     ComparisonOperator: ComparisonOperator = null,
-    Exists: js.UndefOr[BooleanObject] = js.undefined,
+    Exists: js.UndefOr[Boolean] = js.undefined,
     Value: AttributeValue = null
   ): ExpectedAttributeValue = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.pgDashPromise.Anon_Cnd
 import typings.pgDashPromise.Anon_CndMode
 import typings.pgDashPromise.Anon_Duration

@@ -1,66 +1,66 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.WebViewNs.ContextType
-import typings.chromeDashApps.WebViewNs.EventsNs.DialogMessageType
-import typings.chromeDashApps.WebViewNs.EventsNs.ExitEventReason
-import typings.chromeDashApps.WebViewNs.EventsNs.LoadAbortReason
-import typings.chromeDashApps.WebViewNs.EventsNs.RequestedPermission
-import typings.chromeDashApps.WebViewNs.EventsNs.WindowOpenDisposition
-import typings.chromeDashApps.WebViewNs.ZoomMode
-import typings.chromeDashApps.chromeNs.accessibilityFeaturesNs.LevelOfControl
-import typings.chromeDashApps.chromeNs.accessibilityFeaturesNs.Scope
-import typings.chromeDashApps.chromeNs.audioNs.DeviceType
-import typings.chromeDashApps.chromeNs.audioNs.StreamType
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.AdvertisementType
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
-import typings.chromeDashApps.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
-import typings.chromeDashApps.chromeNs.bluetoothNs.DeviceFilterType
-import typings.chromeDashApps.chromeNs.bluetoothNs.DeviceVendorIdSource
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnAcceptErrorCode
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnReceiveErrorCode
-import typings.chromeDashApps.chromeNs.certificateProviderNs.Hash
-import typings.chromeDashApps.chromeNs.clipboardNs.ImageType
-import typings.chromeDashApps.chromeNs.contextMenusNs.MediaType
-import typings.chromeDashApps.chromeNs.extensionTypesNs.CSSOrigin
-import typings.chromeDashApps.chromeNs.extensionTypesNs.RunAt
-import typings.chromeDashApps.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId
-import typings.chromeDashApps.chromeNs.gcmNs.DisallowedKeys
-import typings.chromeDashApps.chromeNs.i18nNs.LanguageCode
-import typings.chromeDashApps.chromeNs.i18nNs.kLanguageInfoTable
-import typings.chromeDashApps.chromeNs.idleNs.IdleState
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.GalleryChangedType
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.Interactive
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.MetadataOptionsType
-import typings.chromeDashApps.chromeNs.mediaGalleriesNs.ScanProgressType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ActivationStateType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.CaptivePortalStatus
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ClientCertType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ConnectionStateType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.DeviceState
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.EthernetAuthenticationType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.IPConfigType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.IPConfigurationType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.InterfaceType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ManagedObject
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.NetworkType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.ProxySettingsType
-import typings.chromeDashApps.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.ObjectFunction
-import typings.chromeDashApps.chromeNs.runtimeNs.ChromeOSOnlyPermissions
-import typings.chromeDashApps.chromeNs.runtimeNs.DevOnly
-import typings.chromeDashApps.chromeNs.runtimeNs.JSONBasicTypes
-import typings.chromeDashApps.chromeNs.runtimeNs.KioskOnlyPermissions
-import typings.chromeDashApps.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
-import typings.chromeDashApps.chromeNs.runtimeNs.Permission
-import typings.chromeDashApps.chromeNs.runtimeNs.UndocumentedPermissions
-import typings.chromeDashApps.chromeNs.runtimeNs.UrlMatches
-import typings.chromeDashApps.chromeNs.signedInDevicesNs.OS
-import typings.chromeDashApps.chromeNs.storageNs.StorageAreas
-import typings.chromeDashApps.chromeNs.typesNs.ChromeSettingScope
-import typings.chromeDashApps.chromeNs.wallpaperNs.WallpaperLayoutType
-import typings.chromeDashApps.chromeNs.webRequestNs.ResourceType
-import typings.chromeDashApps.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
-import typings.chromeDashApps.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
-import typings.chromeDashApps.chromeNs.webViewRequestNs.Stage
+import typings.chromeDashApps.WebView.ContextType
+import typings.chromeDashApps.WebView.Events.DialogMessageType
+import typings.chromeDashApps.WebView.Events.ExitEventReason
+import typings.chromeDashApps.WebView.Events.LoadAbortReason
+import typings.chromeDashApps.WebView.Events.RequestedPermission
+import typings.chromeDashApps.WebView.Events.WindowOpenDisposition
+import typings.chromeDashApps.WebView.ZoomMode
+import typings.chromeDashApps.chrome.accessibilityFeatures.LevelOfControl
+import typings.chromeDashApps.chrome.accessibilityFeatures.Scope
+import typings.chromeDashApps.chrome.audio.DeviceType
+import typings.chromeDashApps.chrome.audio.StreamType
+import typings.chromeDashApps.chrome.bluetooth.DeviceFilterType
+import typings.chromeDashApps.chrome.bluetooth.DeviceVendorIdSource
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.AdvertisementType
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.CharacteristicProperties
+import typings.chromeDashApps.chrome.bluetoothLowEnergy.DescriptorPermissions
+import typings.chromeDashApps.chrome.bluetoothSocket.OnAcceptErrorCode
+import typings.chromeDashApps.chrome.bluetoothSocket.OnReceiveErrorCode
+import typings.chromeDashApps.chrome.certificateProvider.Hash
+import typings.chromeDashApps.chrome.clipboard.ImageType
+import typings.chromeDashApps.chrome.contextMenus.MediaType
+import typings.chromeDashApps.chrome.extensionTypes.CSSOrigin
+import typings.chromeDashApps.chrome.extensionTypes.RunAt
+import typings.chromeDashApps.chrome.fileBrowserHandler.FileBrowserHandleExecuteId
+import typings.chromeDashApps.chrome.gcm.DisallowedKeys
+import typings.chromeDashApps.chrome.i18n.LanguageCode
+import typings.chromeDashApps.chrome.i18n.kLanguageInfoTable
+import typings.chromeDashApps.chrome.idle.IdleState
+import typings.chromeDashApps.chrome.mediaGalleries.GalleryChangedType
+import typings.chromeDashApps.chrome.mediaGalleries.Interactive
+import typings.chromeDashApps.chrome.mediaGalleries.MetadataOptionsType
+import typings.chromeDashApps.chrome.mediaGalleries.ScanProgressType
+import typings.chromeDashApps.chrome.networking.onc.ActivationStateType
+import typings.chromeDashApps.chrome.networking.onc.CaptivePortalStatus
+import typings.chromeDashApps.chrome.networking.onc.ClientCertType
+import typings.chromeDashApps.chrome.networking.onc.ConnectionStateType
+import typings.chromeDashApps.chrome.networking.onc.DeviceState
+import typings.chromeDashApps.chrome.networking.onc.EthernetAuthenticationType
+import typings.chromeDashApps.chrome.networking.onc.IPConfigType
+import typings.chromeDashApps.chrome.networking.onc.IPConfigurationType
+import typings.chromeDashApps.chrome.networking.onc.InterfaceType
+import typings.chromeDashApps.chrome.networking.onc.ManagedObject
+import typings.chromeDashApps.chrome.networking.onc.NetworkType
+import typings.chromeDashApps.chrome.networking.onc.ProxySettingsType
+import typings.chromeDashApps.chrome.networking.onc._internal_.ObjectFunction
+import typings.chromeDashApps.chrome.runtime.ChromeOSOnlyPermissions
+import typings.chromeDashApps.chrome.runtime.DevOnly
+import typings.chromeDashApps.chrome.runtime.JSONBasicTypes
+import typings.chromeDashApps.chrome.runtime.KioskOnlyPermissions
+import typings.chromeDashApps.chrome.runtime.NotAllowedAsOptionalPermissions
+import typings.chromeDashApps.chrome.runtime.Permission
+import typings.chromeDashApps.chrome.runtime.UndocumentedPermissions
+import typings.chromeDashApps.chrome.runtime.UrlMatches
+import typings.chromeDashApps.chrome.signedInDevices.OS
+import typings.chromeDashApps.chrome.storage.StorageAreas
+import typings.chromeDashApps.chrome.types.ChromeSettingScope
+import typings.chromeDashApps.chrome.wallpaper.WallpaperLayoutType
+import typings.chromeDashApps.chrome.webRequest.ResourceType
+import typings.chromeDashApps.chrome.webViewRequest.DeclarativeWebRequestActionsList
+import typings.chromeDashApps.chrome.webViewRequest.DeclarativeWebRequestEventList
+import typings.chromeDashApps.chrome.webViewRequest.Stage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -601,11 +601,11 @@ object chromeDashAppsStrings {
   sealed trait asynchronous extends js.Object
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.chromeDashApps.chromeNs.runtimeNs.Permission because Already inherited */ @js.native
+  - typings.chromeDashApps.chrome.runtime.Permission because Already inherited */ @js.native
   sealed trait audio
     extends KioskOnlyPermissions
        with ContextType
-       with typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+       with typings.chromeDashApps.chrome.bluetooth.DeviceType
        with MediaType
   
   @js.native
@@ -696,7 +696,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait carAudio
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait ceb extends kLanguageInfoTable
@@ -763,7 +763,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait computer
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait confirm extends DialogMessageType
@@ -801,17 +801,17 @@ object chromeDashAppsStrings {
   @js.native
   sealed trait controllable_by_this_extension
     extends LevelOfControl
-       with typings.chromeDashApps.chromeNs.typesNs.LevelOfControl
+       with typings.chromeDashApps.chrome.types.LevelOfControl
   
   @js.native
   sealed trait controlled_by_other_extensions
     extends LevelOfControl
-       with typings.chromeDashApps.chromeNs.typesNs.LevelOfControl
+       with typings.chromeDashApps.chrome.types.LevelOfControl
   
   @js.native
   sealed trait controlled_by_this_extension
     extends LevelOfControl
-       with typings.chromeDashApps.chromeNs.typesNs.LevelOfControl
+       with typings.chromeDashApps.chrome.types.LevelOfControl
   
   @js.native
   sealed trait copy extends js.Object
@@ -968,7 +968,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait desktop_or_laptop
-    extends typings.chromeDashApps.chromeNs.signedInDevicesNs.DeviceType
+    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
   
   @js.native
   sealed trait development extends js.Object
@@ -1297,7 +1297,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait gamepad
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait gcm extends Permission
@@ -1478,7 +1478,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait joystick
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait jpeg extends ImageType
@@ -1494,11 +1494,11 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait keyboard
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait keyboardMouseCombo
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait keydown extends js.Object
@@ -1709,11 +1709,11 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait modem
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait mouse
-    extends typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -1816,7 +1816,7 @@ object chromeDashAppsStrings {
   @js.native
   sealed trait not_controllable
     extends LevelOfControl
-       with typings.chromeDashApps.chromeNs.typesNs.LevelOfControl
+       with typings.chromeDashApps.chrome.types.LevelOfControl
   
   @js.native
   sealed trait not_listening extends OnAcceptErrorCode
@@ -1929,7 +1929,7 @@ object chromeDashAppsStrings {
   @js.native
   sealed trait peripheral
     extends AdvertisementType
-       with typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+       with typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait permissionrequest extends js.Object
@@ -1939,8 +1939,8 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait phone
-    extends typings.chromeDashApps.chromeNs.signedInDevicesNs.DeviceType
-       with typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
+       with typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait ping extends ResourceType
@@ -2320,8 +2320,8 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait tablet
-    extends typings.chromeDashApps.chromeNs.signedInDevicesNs.DeviceType
-       with typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
+       with typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
   sealed trait te extends kLanguageInfoTable
@@ -2435,7 +2435,7 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait unknown
-    extends typings.chromeDashApps.chromeNs.signedInDevicesNs.DeviceType
+    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
        with OS
        with ObjectFunction
   
@@ -2492,7 +2492,7 @@ object chromeDashAppsStrings {
   @js.native
   sealed trait video
     extends ContextType
-       with typings.chromeDashApps.chromeNs.bluetoothNs.DeviceType
+       with typings.chromeDashApps.chrome.bluetooth.DeviceType
        with MediaType
   
   @js.native

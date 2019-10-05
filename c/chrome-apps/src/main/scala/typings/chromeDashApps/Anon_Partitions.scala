@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.runtimeNs.WebViewPartition
+import typings.chromeDashApps.chrome.runtime.WebViewPartition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

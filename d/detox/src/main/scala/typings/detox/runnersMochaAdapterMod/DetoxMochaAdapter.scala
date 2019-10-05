@@ -1,6 +1,6 @@
 package typings.detox.runnersMochaAdapterMod
 
-import typings.detox.detoxMod.Global.DetoxNs.Detox
+import typings.detox.detoxMod.Global.Detox.Detox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,13 +21,10 @@ trait Hdr10Settings extends js.Object {
 
 object Hdr10Settings {
   @scala.inline
-  def apply(
-    MaxCll: js.UndefOr[__integerMin0Max32768] = js.undefined,
-    MaxFall: js.UndefOr[__integerMin0Max32768] = js.undefined
-  ): Hdr10Settings = {
+  def apply(MaxCll: Int | Double = null, MaxFall: Int | Double = null): Hdr10Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxCll)) __obj.updateDynamic("MaxCll")(MaxCll)
-    if (!js.isUndefined(MaxFall)) __obj.updateDynamic("MaxFall")(MaxFall)
+    if (MaxCll != null) __obj.updateDynamic("MaxCll")(MaxCll.asInstanceOf[js.Any])
+    if (MaxFall != null) __obj.updateDynamic("MaxFall")(MaxFall.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hdr10Settings]
   }
 }

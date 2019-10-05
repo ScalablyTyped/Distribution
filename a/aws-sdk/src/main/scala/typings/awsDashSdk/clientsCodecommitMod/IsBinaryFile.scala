@@ -22,9 +22,9 @@ trait IsBinaryFile extends js.Object {
 object IsBinaryFile {
   @scala.inline
   def apply(
-    base: js.UndefOr[CapitalBoolean] = js.undefined,
-    destination: js.UndefOr[CapitalBoolean] = js.undefined,
-    source: js.UndefOr[CapitalBoolean] = js.undefined
+    base: js.UndefOr[Boolean] = js.undefined,
+    destination: js.UndefOr[Boolean] = js.undefined,
+    source: js.UndefOr[Boolean] = js.undefined
   ): IsBinaryFile = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(base)) __obj.updateDynamic("base")(base)

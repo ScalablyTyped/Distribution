@@ -11,9 +11,5 @@ trait RTCStatsReport
 
 @JSGlobal("RTCStatsReport")
 @js.native
-class RTCStatsReportCls () extends RTCStatsReport
-
-@JSGlobal("RTCStatsReport")
-@js.native
 object RTCStatsReport extends Instantiable0[RTCStatsReport]
 

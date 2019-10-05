@@ -113,7 +113,6 @@ object DrawerLayoutProperties {
   def apply(
     drawerPosition: left | right,
     drawerWidth: Double,
-    renderNavigationView: ReactNode,
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: typings.reactDashNative.reactDashNativeStrings.none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
@@ -140,10 +139,10 @@ object DrawerLayoutProperties {
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
-    onDrawerClose: DrawerLayoutCloseEventHandler = null,
-    onDrawerOpen: DrawerLayoutOpenEventHandler = null,
-    onDrawerSlide: DrawerLayoutSlideEventHandler = null,
-    onDrawerStateChanged: DrawerLayoutStateChangeEventHandler = null,
+    onDrawerClose: () => Unit = null,
+    onDrawerOpen: () => Unit = null,
+    onDrawerSlide: /* event */ DrawerLayoutSlideEvent => Unit = null,
+    onDrawerStateChanged: /* state */ String => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onMagicTap: () => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
@@ -165,6 +164,7 @@ object DrawerLayoutProperties {
     onTouchStart: /* event */ GestureResponderEvent => Unit = null,
     pointerEvents: `box-none` | typings.reactDashNative.reactDashNativeStrings.none | `box-only` | auto = null,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
+    renderNavigationView: ReactNode = null,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     statusBarBackgroundColor: String = null,
@@ -177,7 +177,7 @@ object DrawerLayoutProperties {
     tvParallaxTiltAngle: Int | Double = null,
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   ): DrawerLayoutProperties = {
-    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth, renderNavigationView = renderNavigationView.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
@@ -204,10 +204,10 @@ object DrawerLayoutProperties {
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onDrawerClose != null) __obj.updateDynamic("onDrawerClose")(onDrawerClose)
-    if (onDrawerOpen != null) __obj.updateDynamic("onDrawerOpen")(onDrawerOpen)
-    if (onDrawerSlide != null) __obj.updateDynamic("onDrawerSlide")(onDrawerSlide)
-    if (onDrawerStateChanged != null) __obj.updateDynamic("onDrawerStateChanged")(onDrawerStateChanged)
+    if (onDrawerClose != null) __obj.updateDynamic("onDrawerClose")(js.Any.fromFunction0(onDrawerClose))
+    if (onDrawerOpen != null) __obj.updateDynamic("onDrawerOpen")(js.Any.fromFunction0(onDrawerOpen))
+    if (onDrawerSlide != null) __obj.updateDynamic("onDrawerSlide")(js.Any.fromFunction1(onDrawerSlide))
+    if (onDrawerStateChanged != null) __obj.updateDynamic("onDrawerStateChanged")(js.Any.fromFunction1(onDrawerStateChanged))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
@@ -229,6 +229,7 @@ object DrawerLayoutProperties {
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
+    if (renderNavigationView != null) __obj.updateDynamic("renderNavigationView")(renderNavigationView.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS)
     if (statusBarBackgroundColor != null) __obj.updateDynamic("statusBarBackgroundColor")(statusBarBackgroundColor)

@@ -17,10 +17,10 @@ trait Trait extends js.Object {
 
 object Trait {
   @scala.inline
-  def apply(Name: AttributeName = null, Score: js.UndefOr[Float] = js.undefined): Trait = {
+  def apply(Name: AttributeName = null, Score: Int | Double = null): Trait = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score)
+    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trait]
   }
 }

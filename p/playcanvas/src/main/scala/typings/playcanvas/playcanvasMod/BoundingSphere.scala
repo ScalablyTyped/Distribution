@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "BoundingSphere")
 @js.native
 class BoundingSphere ()
-  extends typings.playcanvas.pcNs.BoundingSphere {
-  def this(center: typings.playcanvas.pcNs.Vec3) = this()
-  def this(center: typings.playcanvas.pcNs.Vec3, radius: Double) = this()
+  extends typings.playcanvas.pc.BoundingSphere {
+  def this(center: typings.playcanvas.pc.Vec3) = this()
+  def this(center: typings.playcanvas.pc.Vec3, radius: Double) = this()
 }
 

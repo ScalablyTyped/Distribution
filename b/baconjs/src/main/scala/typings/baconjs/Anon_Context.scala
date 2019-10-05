@@ -1,6 +1,6 @@
 package typings.baconjs
 
-import typings.baconjs.BaconNs.EventStream
+import typings.baconjs.Bacon.EventStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

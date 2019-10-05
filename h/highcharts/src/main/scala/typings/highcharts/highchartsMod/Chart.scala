@@ -510,3 +510,14 @@ class Chart protected () extends js.Object {
   def zoomOut(): Unit = js.native
 }
 
+@JSImport("highcharts", "chart")
+@js.native
+object chart extends js.Object {
+  def apply(options: Options): Chart = js.native
+  def apply(options: Options, callback: ChartCallbackFunction): Chart = js.native
+  def apply(renderTo: String, options: Options): Chart = js.native
+  def apply(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart = js.native
+  def apply(renderTo: HTMLDOMElement, options: Options): Chart = js.native
+  def apply(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart = js.native
+}
+

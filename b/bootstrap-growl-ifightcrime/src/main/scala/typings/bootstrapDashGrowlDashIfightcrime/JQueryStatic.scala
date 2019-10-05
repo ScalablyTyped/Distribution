@@ -1,6 +1,6 @@
 package typings.bootstrapDashGrowlDashIfightcrime
 
-import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrimeNs.Options
+import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrime.Options
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js

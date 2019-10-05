@@ -1,7 +1,7 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.DefIntegerObject
-import typings.webgme.GmeCommonNs.DefStringObject
+import typings.webgme.GmeCommon.DefIntegerObject
+import typings.webgme.GmeCommon.DefStringObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

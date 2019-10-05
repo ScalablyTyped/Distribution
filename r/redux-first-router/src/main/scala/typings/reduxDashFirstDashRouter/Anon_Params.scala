@@ -13,9 +13,10 @@ trait Anon_Params extends js.Object {
 
 object Anon_Params {
   @scala.inline
-  def apply(params: Nullable[Params], path: Nullable[String]): Anon_Params = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
+  def apply(params: Nullable[Params] = null, path: Nullable[String] = null): Anon_Params = {
+    val __obj = js.Dynamic.literal()
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Params]
   }
 }

@@ -1,7 +1,7 @@
 package typings.valerie
 
-import typings.valerie.ValerieNs.PropertyValidationState
-import typings.valerie.ValerieNs.ValidationOptions
+import typings.valerie.Valerie.PropertyValidationState
+import typings.valerie.Valerie.ValidationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

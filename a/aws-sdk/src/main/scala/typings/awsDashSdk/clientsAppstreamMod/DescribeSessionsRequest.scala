@@ -37,13 +37,13 @@ object DescribeSessionsRequest {
     FleetName: String,
     StackName: String,
     AuthenticationType: AuthenticationType = null,
-    Limit: js.UndefOr[Integer] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: String = null,
     UserId: UserId = null
   ): DescribeSessionsRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName, StackName = StackName)
     if (AuthenticationType != null) __obj.updateDynamic("AuthenticationType")(AuthenticationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (UserId != null) __obj.updateDynamic("UserId")(UserId)
     __obj.asInstanceOf[DescribeSessionsRequest]

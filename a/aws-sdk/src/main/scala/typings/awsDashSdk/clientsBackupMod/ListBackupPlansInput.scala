@@ -22,13 +22,13 @@ trait ListBackupPlansInput extends js.Object {
 object ListBackupPlansInput {
   @scala.inline
   def apply(
-    IncludeDeleted: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    IncludeDeleted: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListBackupPlansInput = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(IncludeDeleted)) __obj.updateDynamic("IncludeDeleted")(IncludeDeleted)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListBackupPlansInput]
   }

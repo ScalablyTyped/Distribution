@@ -17,10 +17,10 @@ trait Position extends js.Object {
 
 object Position {
   @scala.inline
-  def apply(Column: js.UndefOr[ColumnNumber] = js.undefined, Line: js.UndefOr[LineNumber] = js.undefined): Position = {
+  def apply(Column: Int | Double = null, Line: Int | Double = null): Position = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Column)) __obj.updateDynamic("Column")(Column)
-    if (!js.isUndefined(Line)) __obj.updateDynamic("Line")(Line)
+    if (Column != null) __obj.updateDynamic("Column")(Column.asInstanceOf[js.Any])
+    if (Line != null) __obj.updateDynamic("Line")(Line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
 }

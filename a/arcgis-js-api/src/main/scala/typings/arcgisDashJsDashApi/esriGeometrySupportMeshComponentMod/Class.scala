@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportMeshComponentMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshComponent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshComponentProperties
+import typings.arcgisDashJsDashApi.__esri.MeshComponent
+import typings.arcgisDashJsDashApi.__esri.MeshComponentProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

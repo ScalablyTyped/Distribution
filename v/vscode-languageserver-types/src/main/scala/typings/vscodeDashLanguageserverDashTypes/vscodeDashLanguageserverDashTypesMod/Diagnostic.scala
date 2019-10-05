@@ -35,22 +35,37 @@ trait Diagnostic extends js.Object {
   var source: js.UndefOr[String] = js.undefined
 }
 
-object Diagnostic {
-  @scala.inline
-  def apply(
-    message: String,
+@JSImport("vscode-languageserver-types", "Diagnostic")
+@js.native
+object Diagnostic extends js.Object {
+  /**
+    * Creates a new Diagnostic literal.
+    */
+  def create(range: Range, message: String): Diagnostic = js.native
+  def create(range: Range, message: String, severity: DiagnosticSeverity): Diagnostic = js.native
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String): Diagnostic = js.native
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String, source: String): Diagnostic = js.native
+  def create(
     range: Range,
-    code: Double | String = null,
-    relatedInformation: js.Array[DiagnosticRelatedInformation] = null,
-    severity: DiagnosticSeverity = null,
-    source: String = null
-  ): Diagnostic = {
-    val __obj = js.Dynamic.literal(message = message, range = range)
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (source != null) __obj.updateDynamic("source")(source)
-    __obj.asInstanceOf[Diagnostic]
-  }
+    message: String,
+    severity: DiagnosticSeverity,
+    code: String,
+    source: String,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = js.native
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = js.native
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = js.native
+  def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: Double,
+    source: String,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = js.native
+  /**
+    * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = js.native
 }
 

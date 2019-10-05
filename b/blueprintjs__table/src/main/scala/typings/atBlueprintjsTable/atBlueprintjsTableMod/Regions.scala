@@ -5,6 +5,7 @@ import typings.atBlueprintjsTable.libEsmCommonCellMod.IFocusedCellCoordinates
 import typings.atBlueprintjsTable.libEsmRegionsMod.ICellCoordinate
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
 import typings.atBlueprintjsTable.libEsmRegionsMod.IStyledRegionGroup
+import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -124,7 +125,7 @@ object Regions extends js.Object {
     *
     * In this case, this method would return `RegionCardinality.CELLS`.
     */
-  def getRegionCardinality(region: IRegion): typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality = js.native
+  def getRegionCardinality(region: IRegion): RegionCardinality = js.native
   /**
     * Returns true if the regions contain a region that has FULL_COLUMNS
     * cardinality and contains the specified column index.

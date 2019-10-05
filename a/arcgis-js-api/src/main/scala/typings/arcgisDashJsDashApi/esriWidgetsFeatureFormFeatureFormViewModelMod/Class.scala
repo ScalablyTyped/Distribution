@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureFormFeatureFormViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureFormViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureFormViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.FeatureFormViewModel
+import typings.arcgisDashJsDashApi.__esri.FeatureFormViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

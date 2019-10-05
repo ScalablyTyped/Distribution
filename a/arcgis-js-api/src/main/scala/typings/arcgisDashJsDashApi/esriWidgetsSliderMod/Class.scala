@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Slider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SliderProperties
+import typings.arcgisDashJsDashApi.__esri.Slider
+import typings.arcgisDashJsDashApi.__esri.SliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

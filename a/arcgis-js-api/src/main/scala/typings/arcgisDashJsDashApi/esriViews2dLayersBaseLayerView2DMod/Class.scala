@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViews2dLayersBaseLayerView2DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseLayerView2D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BaseLayerView2DProperties
+import typings.arcgisDashJsDashApi.__esri.BaseLayerView2D
+import typings.arcgisDashJsDashApi.__esri.BaseLayerView2DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

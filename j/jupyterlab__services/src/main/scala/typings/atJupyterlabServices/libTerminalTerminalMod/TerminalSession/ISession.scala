@@ -1,0 +1,78 @@
+package typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession
+
+import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
+import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * An interface for a terminal session.
+  */
+trait ISession extends IDisposable {
+  /**
+    * Test whether the session is ready.
+    */
+  val isReady: Boolean
+  /**
+    * A signal emitted when a message is received from the server.
+    */
+  var messageReceived: ISignal[ISession, IMessage]
+  /**
+    * The model associated with the session.
+    */
+  val model: IModel
+  /**
+    * Get the name of the terminal session.
+    */
+  val name: String
+  /**
+    * A promise that fulfills when the session is initially ready.
+    */
+  val ready: js.Promise[Unit]
+  /**
+    * The server settings for the session.
+    */
+  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
+  /**
+    * A signal emitted when the session is shut down.
+    */
+  var terminated: ISignal[ISession, Unit]
+  /**
+    * Reconnect to the terminal.
+    *
+    * @returns A promise that resolves when the terminal has reconnected.
+    */
+  def reconnect(): js.Promise[Unit]
+  /**
+    * Send a message to the terminal session.
+    */
+  def send(message: IMessage): Unit
+  /**
+    * Shut down the terminal session.
+    */
+  def shutdown(): js.Promise[Unit]
+}
+
+object ISession {
+  @scala.inline
+  def apply(
+    dispose: () => Unit,
+    isDisposed: Boolean,
+    isReady: Boolean,
+    messageReceived: ISignal[ISession, IMessage],
+    model: IModel,
+    name: String,
+    ready: js.Promise[Unit],
+    reconnect: () => js.Promise[Unit],
+    send: IMessage => Unit,
+    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any,
+    shutdown: () => js.Promise[Unit],
+    terminated: ISignal[ISession, Unit]
+  ): ISession = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, isReady = isReady, messageReceived = messageReceived, model = model, name = name, ready = ready, reconnect = js.Any.fromFunction0(reconnect), send = js.Any.fromFunction1(send), serverSettings = serverSettings, shutdown = js.Any.fromFunction0(shutdown), terminated = terminated)
+  
+    __obj.asInstanceOf[ISession]
+  }
+}
+

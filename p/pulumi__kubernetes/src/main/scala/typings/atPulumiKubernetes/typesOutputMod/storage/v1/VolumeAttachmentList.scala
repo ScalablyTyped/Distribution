@@ -1,0 +1,51 @@
+package typings.atPulumiKubernetes.typesOutputMod.storage.v1
+
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * VolumeAttachmentList is a collection of VolumeAttachment objects.
+  */
+trait VolumeAttachmentList extends js.Object {
+  /**
+    * APIVersion defines the versioned schema of this representation of an object. Servers should
+    * convert recognized schemas to the latest internal value, and may reject unrecognized
+    * values. More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+    */
+  val apiVersion: `storageDOTk8sDOTio/v1`
+  /**
+    * Items is the list of VolumeAttachments
+    */
+  val items: js.Array[VolumeAttachment]
+  /**
+    * Kind is a string value representing the REST resource this object represents. Servers may
+    * infer this from the endpoint the client submits requests to. Cannot be updated. In
+    * CamelCase. More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+    */
+  val kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList
+  /**
+    * Standard list metadata More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+    */
+  val metadata: ListMeta
+}
+
+object VolumeAttachmentList {
+  @scala.inline
+  def apply(
+    apiVersion: `storageDOTk8sDOTio/v1`,
+    items: js.Array[VolumeAttachment],
+    kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList,
+    metadata: ListMeta
+  ): VolumeAttachmentList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[VolumeAttachmentList]
+  }
+}
+

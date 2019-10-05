@@ -17,7 +17,7 @@ trait ResizeInfo extends js.Object {
 
 object ResizeInfo {
   @scala.inline
-  def apply(AllowCancelResize: js.UndefOr[Boolean] = js.undefined, ResizeType: String = null): ResizeInfo = {
+  def apply(AllowCancelResize: js.UndefOr[scala.Boolean] = js.undefined, ResizeType: String = null): ResizeInfo = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AllowCancelResize)) __obj.updateDynamic("AllowCancelResize")(AllowCancelResize)
     if (ResizeType != null) __obj.updateDynamic("ResizeType")(ResizeType)

@@ -49,20 +49,20 @@ object UpdateJobExecutionRequest {
     jobId: JobId,
     status: JobExecutionStatus,
     thingName: ThingName,
-    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
-    expectedVersion: js.UndefOr[ExpectedVersion] = js.undefined,
-    includeJobDocument: js.UndefOr[IncludeJobDocument] = js.undefined,
-    includeJobExecutionState: js.UndefOr[IncludeExecutionState] = js.undefined,
+    executionNumber: Int | Double = null,
+    expectedVersion: Int | Double = null,
+    includeJobDocument: js.UndefOr[Boolean] = js.undefined,
+    includeJobExecutionState: js.UndefOr[Boolean] = js.undefined,
     statusDetails: DetailsMap = null,
-    stepTimeoutInMinutes: js.UndefOr[StepTimeoutInMinutes] = js.undefined
+    stepTimeoutInMinutes: Int | Double = null
   ): UpdateJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId, status = status.asInstanceOf[js.Any], thingName = thingName)
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(includeJobDocument)) __obj.updateDynamic("includeJobDocument")(includeJobDocument)
     if (!js.isUndefined(includeJobExecutionState)) __obj.updateDynamic("includeJobExecutionState")(includeJobExecutionState)
     if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
-    if (!js.isUndefined(stepTimeoutInMinutes)) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes)
+    if (stepTimeoutInMinutes != null) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobExecutionRequest]
   }
 }

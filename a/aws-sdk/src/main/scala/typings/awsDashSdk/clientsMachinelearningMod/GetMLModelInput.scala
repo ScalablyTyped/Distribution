@@ -17,7 +17,7 @@ trait GetMLModelInput extends js.Object {
 
 object GetMLModelInput {
   @scala.inline
-  def apply(MLModelId: EntityId, Verbose: js.UndefOr[Verbose] = js.undefined): GetMLModelInput = {
+  def apply(MLModelId: EntityId, Verbose: js.UndefOr[Boolean] = js.undefined): GetMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId)
     if (!js.isUndefined(Verbose)) __obj.updateDynamic("Verbose")(Verbose)
     __obj.asInstanceOf[GetMLModelInput]

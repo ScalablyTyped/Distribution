@@ -1,6 +1,6 @@
 package typings.onesignalDashCordovaDashPlugin
 
-import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPluginNs.OSPermissionState
+import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPlugin.OSPermissionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

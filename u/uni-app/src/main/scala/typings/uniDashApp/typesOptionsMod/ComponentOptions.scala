@@ -1,23 +1,23 @@
 package typings.uniDashApp.typesOptionsMod
 
 import typings.uniDashApp.AnyObject
-import typings.uniDashApp.AppNs.LaunchShowOption
-import typings.uniDashApp.AppNs.PageNotFoundOption
-import typings.uniDashApp.PageNs.BackPressOption
-import typings.uniDashApp.PageNs.CustomShareContent
-import typings.uniDashApp.PageNs.NavigationBarButtonTapOption
-import typings.uniDashApp.PageNs.NavigationBarSearchInputEvent
-import typings.uniDashApp.PageNs.PageInstance
-import typings.uniDashApp.PageNs.PageScrollOption
-import typings.uniDashApp.PageNs.ShareAppMessageOption
-import typings.uniDashApp.PageNs.TabItemTapOption
+import typings.uniDashApp.App.LaunchShowOption
+import typings.uniDashApp.App.PageNotFoundOption
+import typings.uniDashApp.Page.BackPressOption
+import typings.uniDashApp.Page.CustomShareContent
+import typings.uniDashApp.Page.NavigationBarButtonTapOption
+import typings.uniDashApp.Page.NavigationBarSearchInputEvent
+import typings.uniDashApp.Page.PageInstance
+import typings.uniDashApp.Page.PageScrollOption
+import typings.uniDashApp.Page.ShareAppMessageOption
+import typings.uniDashApp.Page.TabItemTapOption
 import typings.vue.typesVueMod.Vue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.uniDashApp.AppNs.AppInstance because var conflicts: onHide, onShow. Inlined globalData, onLaunch, onError, onPageNotFound, onUniNViewMessage */ trait ComponentOptions[V /* <: Vue */]
+- typings.uniDashApp.App.AppInstance because var conflicts: onHide, onShow. Inlined globalData, onLaunch, onError, onPageNotFound, onUniNViewMessage */ trait ComponentOptions[V /* <: Vue */]
   extends PageInstance[js.Any, js.Any] {
   /**
     * 全局对象

@@ -5,7 +5,7 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps
 import typings.atBlueprintjsCore.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

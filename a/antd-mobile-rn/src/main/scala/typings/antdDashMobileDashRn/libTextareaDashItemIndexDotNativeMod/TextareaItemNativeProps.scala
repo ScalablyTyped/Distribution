@@ -1,6 +1,5 @@
 package typings.antdDashMobileDashRn.libTextareaDashItemIndexDotNativeMod
 
-import typings.antdDashMobileDashRn.libTextareaDashItemPropsTypeMod.TextAreaEventHandle
 import typings.antdDashMobileDashRn.libTextareaDashItemPropsTypeMod.TextAreaItemPropsType
 import typings.antdDashMobileDashRn.libTextareaDashItemStyleIndexDotNativeMod.ITextareaItemStyle
 import typings.react.reactMod.ReactNode
@@ -29,11 +28,11 @@ object TextareaItemNativeProps {
     last: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
     name: String = null,
-    onBlur: TextAreaEventHandle = null,
-    onChange: TextAreaEventHandle = null,
+    onBlur: /* val */ js.UndefOr[String] => Unit = null,
+    onChange: /* val */ js.UndefOr[String] => Unit = null,
     onContentSizeChange: /* e */ js.Any => Unit = null,
     onErrorClick: () => Unit = null,
-    onFocus: TextAreaEventHandle = null,
+    onFocus: /* val */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     rows: Int | Double = null,
     styles: ITextareaItemStyle = null,
@@ -52,11 +51,11 @@ object TextareaItemNativeProps {
     if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
     if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction0(onErrorClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles)

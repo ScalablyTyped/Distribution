@@ -17,7 +17,5 @@ object ^ extends js.Object {
     */
   def apply(emitter: EventSource, event: String): js.Promise[_] = js.native
   def apply(emitter: EventSource, event: String, options: EventToPromiseOptions): js.Promise[_] = js.native
-  def multi(emitter: EventSource, successEvents: js.Array[String]): js.Promise[_] = js.native
-  def multi(emitter: EventSource, successEvents: js.Array[String], errorEvents: js.Array[String]): js.Promise[_] = js.native
 }
 

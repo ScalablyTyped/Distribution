@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.TypeArgumentMap
+import typings.typescriptDashServices.TypeScript.TypeArgumentMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullInstantiatedTypeReferenceSymbol")
 @js.native
 class PullInstantiatedTypeReferenceSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullInstantiatedTypeReferenceSymbol {
+  extends typings.typescriptDashServices.TypeScript.PullInstantiatedTypeReferenceSymbol {
   def this(
-    referencedTypeSymbol: typings.typescriptDashServices.TypeScriptNs.PullTypeSymbol,
+    referencedTypeSymbol: typings.typescriptDashServices.TypeScript.PullTypeSymbol,
     _typeParameterArgumentMap: TypeArgumentMap,
     isInstanceReferenceType: Boolean
   ) = this()
@@ -21,9 +21,9 @@ class PullInstantiatedTypeReferenceSymbol protected ()
 @js.native
 object PullInstantiatedTypeReferenceSymbol extends js.Object {
   def create(
-    resolver: typings.typescriptDashServices.TypeScriptNs.PullTypeResolver,
-    `type`: typings.typescriptDashServices.TypeScriptNs.PullTypeSymbol,
+    resolver: typings.typescriptDashServices.TypeScript.PullTypeResolver,
+    `type`: typings.typescriptDashServices.TypeScript.PullTypeSymbol,
     typeParameterArgumentMap: TypeArgumentMap
-  ): typings.typescriptDashServices.TypeScriptNs.PullInstantiatedTypeReferenceSymbol = js.native
+  ): typings.typescriptDashServices.TypeScript.PullInstantiatedTypeReferenceSymbol = js.native
 }
 

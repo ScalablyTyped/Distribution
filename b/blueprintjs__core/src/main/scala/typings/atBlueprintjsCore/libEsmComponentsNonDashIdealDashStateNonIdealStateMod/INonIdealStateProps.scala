@@ -3,7 +3,7 @@ package typings.atBlueprintjsCore.libEsmComponentsNonDashIdealDashStateNonIdealS
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactChild
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js

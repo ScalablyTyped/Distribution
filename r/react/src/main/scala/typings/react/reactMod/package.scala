@@ -54,7 +54,7 @@ package object reactMod {
     * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
     * or ComponentPropsWithoutRef when refs are not supported.
     */
-  type ComponentProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
+  type ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
   type ComponentPropsWithRef[T /* <: ElementType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[InstanceType[T]])
   type ComponentPropsWithoutRef[T /* <: ElementType[_] */] = PropsWithoutRef[ComponentProps[T]]
   type ComponentState = js.Any
@@ -155,7 +155,7 @@ package object reactMod {
   // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   type ReactChild = ReactElement | ReactText
-  type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, P] = ReactElement
+  type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, P] = ReactElement
   type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement

@@ -2,10 +2,10 @@ package typings.atJupyterlabCells.libModelMod
 
 import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel
 import typings.atJupyterlabCells.atJupyterlabCellsStrings.raw
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IModel
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.ITextSelection
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.ITextSelection
 import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.IRawCell
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.IRawCell
 import typings.atJupyterlabObservables.libModeldbMod.IModelDB
 import typings.atJupyterlabObservables.libObservablejsonMod.IObservableJSON
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap

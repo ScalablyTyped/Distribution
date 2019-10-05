@@ -95,9 +95,9 @@ object CreateServiceRequest {
     cluster: String = null,
     deploymentConfiguration: DeploymentConfiguration = null,
     deploymentController: DeploymentController = null,
-    desiredCount: js.UndefOr[BoxedInteger] = js.undefined,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
-    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
+    desiredCount: Int | scala.Double = null,
+    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
+    healthCheckGracePeriodSeconds: Int | scala.Double = null,
     launchType: LaunchType = null,
     loadBalancers: LoadBalancers = null,
     networkConfiguration: NetworkConfiguration = null,
@@ -116,9 +116,9 @@ object CreateServiceRequest {
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration)
     if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController)
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount)
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
     if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags)
-    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds)
+    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers)
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)

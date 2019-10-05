@@ -1,6 +1,6 @@
 package typings.parcelDashEnv
 
-import typings.parcelDashEnv.NodeJSNs.Process
+import typings.parcelDashEnv.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

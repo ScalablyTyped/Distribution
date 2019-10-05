@@ -1,6 +1,8 @@
 package typings.observeDashJs.observeDashJsMod
 
-import typings.observeDashJs.observeDashJsMod.observejsNs.ArrayObserver_instance
+import org.scalablytyped.runtime.TopLevel
+import typings.observeDashJs.observeDashJsMod.observejs.ArrayObserver_instance
+import typings.observeDashJs.observeDashJsMod.observejs.ArrayObserver_static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +16,8 @@ class ArrayObserver protected () extends ArrayObserver_instance {
   		 */
   def this(receiver: js.Array[_]) = this()
 }
+
+@JSImport("observe-js", "ArrayObserver")
+@js.native
+object ArrayObserver extends TopLevel[ArrayObserver_static]
 

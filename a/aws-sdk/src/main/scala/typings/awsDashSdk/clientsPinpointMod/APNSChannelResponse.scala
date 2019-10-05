@@ -62,14 +62,14 @@ object APNSChannelResponse {
     ApplicationId: __string = null,
     CreationDate: __string = null,
     DefaultAuthenticationMethod: __string = null,
-    Enabled: js.UndefOr[__boolean] = js.undefined,
-    HasCredential: js.UndefOr[__boolean] = js.undefined,
-    HasTokenKey: js.UndefOr[__boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
+    HasCredential: js.UndefOr[Boolean] = js.undefined,
+    HasTokenKey: js.UndefOr[Boolean] = js.undefined,
     Id: __string = null,
-    IsArchived: js.UndefOr[__boolean] = js.undefined,
+    IsArchived: js.UndefOr[Boolean] = js.undefined,
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
-    Version: js.UndefOr[__integer] = js.undefined
+    Version: Int | Double = null
   ): APNSChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
@@ -82,7 +82,7 @@ object APNSChannelResponse {
     if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSChannelResponse]
   }
 }

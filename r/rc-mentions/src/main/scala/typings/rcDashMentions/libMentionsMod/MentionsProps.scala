@@ -3,6 +3,7 @@ package typings.rcDashMentions.libMentionsMod
 import typings.rcDashMentions.libOptionMod.OptionProps
 import typings.rcDashMentions.rcDashMentionsNumbers.`false`
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
@@ -45,9 +46,9 @@ object MentionsProps {
     filterOption: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean]) = null,
     getPopupContainer: () => HTMLElement = null,
     notFoundContent: ReactNode = null,
-    onBlur: FocusEventHandler[HTMLTextAreaElement] = null,
+    onBlur: FocusEvent[HTMLTextAreaElement] => Unit = null,
     onChange: /* text */ String => Unit = null,
-    onFocus: FocusEventHandler[HTMLTextAreaElement] = null,
+    onFocus: FocusEvent[HTMLTextAreaElement] => Unit = null,
     onSearch: (/* text */ String, /* prefix */ String) => Unit = null,
     onSelect: (/* option */ OptionProps, /* prefix */ String) => Unit = null,
     placement: Placement = null,
@@ -66,9 +67,9 @@ object MentionsProps {
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction0(getPopupContainer))
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (placement != null) __obj.updateDynamic("placement")(placement)

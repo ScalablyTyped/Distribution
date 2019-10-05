@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "EqualsValueClause")
 @js.native
 class EqualsValueClause protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.EqualsValueClause {
-  def this(value: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.EqualsValueClause {
+  def this(value: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

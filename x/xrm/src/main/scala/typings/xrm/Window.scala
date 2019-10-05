@@ -1,7 +1,7 @@
 package typings.xrm
 
-import typings.xrm.XrmNs.GlobalContext
-import typings.xrm.XrmNs.XrmStatic
+import typings.xrm.Xrm.GlobalContext
+import typings.xrm.Xrm.XrmStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

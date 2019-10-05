@@ -1,10 +1,11 @@
 package typings.ddDashTrace.ddDashTraceMod
 
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.cassandra_driver
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.generic_pool
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.limitd_client
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mongodb_core
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise_js
+import org.scalablytyped.runtime.TopLevel
+import typings.ddDashTrace.ddDashTraceMod.plugins.cassandra_driver
+import typings.ddDashTrace.ddDashTraceMod.plugins.generic_pool
+import typings.ddDashTrace.ddDashTraceMod.plugins.limitd_client
+import typings.ddDashTrace.ddDashTraceMod.plugins.mongodb_core
+import typings.ddDashTrace.ddDashTraceMod.plugins.promise_js
 import typings.ddDashTrace.ddDashTraceStrings.`cassandra-driver`
 import typings.ddDashTrace.ddDashTraceStrings.`generic-pool`
 import typings.ddDashTrace.ddDashTraceStrings.`limitd-client`
@@ -114,25 +115,25 @@ trait Tracer
   @JSName("use")
   def use_amqp10(plugin: amqp10, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_amqp10(plugin: amqp10, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqp10): this.type = js.native
+  def use_amqp10(plugin: amqp10, config: typings.ddDashTrace.ddDashTraceMod.plugins.amqp10): this.type = js.native
   @JSName("use")
   def use_amqplib(plugin: amqplib): this.type = js.native
   @JSName("use")
   def use_amqplib(plugin: amqplib, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_amqplib(plugin: amqplib, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqplib): this.type = js.native
+  def use_amqplib(plugin: amqplib, config: typings.ddDashTrace.ddDashTraceMod.plugins.amqplib): this.type = js.native
   @JSName("use")
   def use_bluebird(plugin: bluebird): this.type = js.native
   @JSName("use")
   def use_bluebird(plugin: bluebird, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_bluebird(plugin: bluebird, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.bluebird): this.type = js.native
+  def use_bluebird(plugin: bluebird, config: typings.ddDashTrace.ddDashTraceMod.plugins.bluebird): this.type = js.native
   @JSName("use")
   def use_bunyan(plugin: bunyan): this.type = js.native
   @JSName("use")
   def use_bunyan(plugin: bunyan, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_bunyan(plugin: bunyan, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.bunyan): this.type = js.native
+  def use_bunyan(plugin: bunyan, config: typings.ddDashTrace.ddDashTraceMod.plugins.bunyan): this.type = js.native
   @JSName("use")
   def use_cassandradriver(plugin: `cassandra-driver`): this.type = js.native
   @JSName("use")
@@ -144,37 +145,37 @@ trait Tracer
   @JSName("use")
   def use_connect(plugin: connect, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_connect(plugin: connect, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect): this.type = js.native
+  def use_connect(plugin: connect, config: typings.ddDashTrace.ddDashTraceMod.plugins.connect): this.type = js.native
   @JSName("use")
   def use_couchbase(plugin: couchbase): this.type = js.native
   @JSName("use")
   def use_couchbase(plugin: couchbase, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_couchbase(plugin: couchbase, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase): this.type = js.native
+  def use_couchbase(plugin: couchbase, config: typings.ddDashTrace.ddDashTraceMod.plugins.couchbase): this.type = js.native
   @JSName("use")
   def use_dns(plugin: dns): this.type = js.native
   @JSName("use")
   def use_dns(plugin: dns, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_dns(plugin: dns, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.dns): this.type = js.native
+  def use_dns(plugin: dns, config: typings.ddDashTrace.ddDashTraceMod.plugins.dns): this.type = js.native
   @JSName("use")
   def use_elasticsearch(plugin: elasticsearch): this.type = js.native
   @JSName("use")
   def use_elasticsearch(plugin: elasticsearch, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_elasticsearch(plugin: elasticsearch, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.elasticsearch): this.type = js.native
+  def use_elasticsearch(plugin: elasticsearch, config: typings.ddDashTrace.ddDashTraceMod.plugins.elasticsearch): this.type = js.native
   @JSName("use")
   def use_express(plugin: express): this.type = js.native
   @JSName("use")
   def use_express(plugin: express, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_express(plugin: express, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.express): this.type = js.native
+  def use_express(plugin: express, config: typings.ddDashTrace.ddDashTraceMod.plugins.express): this.type = js.native
   @JSName("use")
   def use_fastify(plugin: fastify): this.type = js.native
   @JSName("use")
   def use_fastify(plugin: fastify, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_fastify(plugin: fastify, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.fastify): this.type = js.native
+  def use_fastify(plugin: fastify, config: typings.ddDashTrace.ddDashTraceMod.plugins.fastify): this.type = js.native
   @JSName("use")
   def use_genericpool(plugin: `generic-pool`): this.type = js.native
   @JSName("use")
@@ -186,49 +187,49 @@ trait Tracer
   @JSName("use")
   def use_graphql(plugin: graphql, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_graphql(plugin: graphql, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql): this.type = js.native
+  def use_graphql(plugin: graphql, config: typings.ddDashTrace.ddDashTraceMod.plugins.graphql): this.type = js.native
   @JSName("use")
   def use_grpc(plugin: grpc): this.type = js.native
   @JSName("use")
   def use_grpc(plugin: grpc, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_grpc(plugin: grpc, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc): this.type = js.native
+  def use_grpc(plugin: grpc, config: typings.ddDashTrace.ddDashTraceMod.plugins.grpc): this.type = js.native
   @JSName("use")
   def use_hapi(plugin: hapi): this.type = js.native
   @JSName("use")
   def use_hapi(plugin: hapi, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_hapi(plugin: hapi, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.hapi): this.type = js.native
+  def use_hapi(plugin: hapi, config: typings.ddDashTrace.ddDashTraceMod.plugins.hapi): this.type = js.native
   @JSName("use")
   def use_http(plugin: http): this.type = js.native
   @JSName("use")
   def use_http(plugin: http, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_http(plugin: http, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http): this.type = js.native
+  def use_http(plugin: http, config: typings.ddDashTrace.ddDashTraceMod.plugins.http): this.type = js.native
   @JSName("use")
   def use_http2(plugin: http2): this.type = js.native
   @JSName("use")
   def use_http2(plugin: http2, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_http2(plugin: http2, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2): this.type = js.native
+  def use_http2(plugin: http2, config: typings.ddDashTrace.ddDashTraceMod.plugins.http2): this.type = js.native
   @JSName("use")
   def use_ioredis(plugin: ioredis): this.type = js.native
   @JSName("use")
   def use_ioredis(plugin: ioredis, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_ioredis(plugin: ioredis, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.ioredis): this.type = js.native
+  def use_ioredis(plugin: ioredis, config: typings.ddDashTrace.ddDashTraceMod.plugins.ioredis): this.type = js.native
   @JSName("use")
   def use_knex(plugin: knex): this.type = js.native
   @JSName("use")
   def use_knex(plugin: knex, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_knex(plugin: knex, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.knex): this.type = js.native
+  def use_knex(plugin: knex, config: typings.ddDashTrace.ddDashTraceMod.plugins.knex): this.type = js.native
   @JSName("use")
   def use_koa(plugin: koa): this.type = js.native
   @JSName("use")
   def use_koa(plugin: koa, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_koa(plugin: koa, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa): this.type = js.native
+  def use_koa(plugin: koa, config: typings.ddDashTrace.ddDashTraceMod.plugins.koa): this.type = js.native
   @JSName("use")
   def use_limitdclient(plugin: `limitd-client`): this.type = js.native
   @JSName("use")
@@ -240,7 +241,7 @@ trait Tracer
   @JSName("use")
   def use_memcached(plugin: memcached, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_memcached(plugin: memcached, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.memcached): this.type = js.native
+  def use_memcached(plugin: memcached, config: typings.ddDashTrace.ddDashTraceMod.plugins.memcached): this.type = js.native
   @JSName("use")
   def use_mongodbcore(plugin: `mongodb-core`): this.type = js.native
   @JSName("use")
@@ -252,43 +253,43 @@ trait Tracer
   @JSName("use")
   def use_mysql(plugin: mysql, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_mysql(plugin: mysql, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql): this.type = js.native
+  def use_mysql(plugin: mysql, config: typings.ddDashTrace.ddDashTraceMod.plugins.mysql): this.type = js.native
   @JSName("use")
   def use_mysql2(plugin: mysql2): this.type = js.native
   @JSName("use")
   def use_mysql2(plugin: mysql2, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_mysql2(plugin: mysql2, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql2): this.type = js.native
+  def use_mysql2(plugin: mysql2, config: typings.ddDashTrace.ddDashTraceMod.plugins.mysql2): this.type = js.native
   @JSName("use")
   def use_net(plugin: net): this.type = js.native
   @JSName("use")
   def use_net(plugin: net, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_net(plugin: net, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.net): this.type = js.native
+  def use_net(plugin: net, config: typings.ddDashTrace.ddDashTraceMod.plugins.net): this.type = js.native
   @JSName("use")
   def use_paperplane(plugin: paperplane): this.type = js.native
   @JSName("use")
   def use_paperplane(plugin: paperplane, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_paperplane(plugin: paperplane, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.paperplane): this.type = js.native
+  def use_paperplane(plugin: paperplane, config: typings.ddDashTrace.ddDashTraceMod.plugins.paperplane): this.type = js.native
   @JSName("use")
   def use_pg(plugin: pg): this.type = js.native
   @JSName("use")
   def use_pg(plugin: pg, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_pg(plugin: pg, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.pg): this.type = js.native
+  def use_pg(plugin: pg, config: typings.ddDashTrace.ddDashTraceMod.plugins.pg): this.type = js.native
   @JSName("use")
   def use_pino(plugin: pino): this.type = js.native
   @JSName("use")
   def use_pino(plugin: pino, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_pino(plugin: pino, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.pino): this.type = js.native
+  def use_pino(plugin: pino, config: typings.ddDashTrace.ddDashTraceMod.plugins.pino): this.type = js.native
   @JSName("use")
   def use_promise(plugin: promise): this.type = js.native
   @JSName("use")
   def use_promise(plugin: promise, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_promise(plugin: promise, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise): this.type = js.native
+  def use_promise(plugin: promise, config: typings.ddDashTrace.ddDashTraceMod.plugins.promise): this.type = js.native
   @JSName("use")
   def use_promisejs(plugin: `promise-js`): this.type = js.native
   @JSName("use")
@@ -300,43 +301,43 @@ trait Tracer
   @JSName("use")
   def use_q(plugin: q, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_q(plugin: q, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.q): this.type = js.native
+  def use_q(plugin: q, config: typings.ddDashTrace.ddDashTraceMod.plugins.q): this.type = js.native
   @JSName("use")
   def use_redis(plugin: redis): this.type = js.native
   @JSName("use")
   def use_redis(plugin: redis, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_redis(plugin: redis, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.redis): this.type = js.native
+  def use_redis(plugin: redis, config: typings.ddDashTrace.ddDashTraceMod.plugins.redis): this.type = js.native
   @JSName("use")
   def use_restify(plugin: restify): this.type = js.native
   @JSName("use")
   def use_restify(plugin: restify, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_restify(plugin: restify, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.restify): this.type = js.native
+  def use_restify(plugin: restify, config: typings.ddDashTrace.ddDashTraceMod.plugins.restify): this.type = js.native
   @JSName("use")
   def use_router(plugin: router): this.type = js.native
   @JSName("use")
   def use_router(plugin: router, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_router(plugin: router, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.router): this.type = js.native
+  def use_router(plugin: router, config: typings.ddDashTrace.ddDashTraceMod.plugins.router): this.type = js.native
   @JSName("use")
   def use_tedious(plugin: tedious): this.type = js.native
   @JSName("use")
   def use_tedious(plugin: tedious, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_tedious(plugin: tedious, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.tedious): this.type = js.native
+  def use_tedious(plugin: tedious, config: typings.ddDashTrace.ddDashTraceMod.plugins.tedious): this.type = js.native
   @JSName("use")
   def use_when(plugin: when): this.type = js.native
   @JSName("use")
   def use_when(plugin: when, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_when(plugin: when, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.when): this.type = js.native
+  def use_when(plugin: when, config: typings.ddDashTrace.ddDashTraceMod.plugins.when): this.type = js.native
   @JSName("use")
   def use_winston(plugin: winston): this.type = js.native
   @JSName("use")
   def use_winston(plugin: winston, config: Boolean): this.type = js.native
   @JSName("use")
-  def use_winston(plugin: winston, config: typings.ddDashTrace.ddDashTraceMod.pluginsNs.winston): this.type = js.native
+  def use_winston(plugin: winston, config: typings.ddDashTrace.ddDashTraceMod.plugins.winston): this.type = js.native
   /**
     * Wrap a function to automatically create a span activated on its
     * scope when it's called.
@@ -354,4 +355,8 @@ trait Tracer
   def wrap[T](name: String, fn: T): T = js.native
   def wrap[T](name: String, options: TraceOptions with SpanOptions, fn: T): T = js.native
 }
+
+@JSImport("dd-trace", "tracer")
+@js.native
+object tracer extends TopLevel[Tracer]
 

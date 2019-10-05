@@ -57,10 +57,6 @@ trait MSGestureEvent extends UIEvent {
 
 @JSGlobal("MSGestureEvent")
 @js.native
-class MSGestureEventCls () extends MSGestureEvent
-
-@JSGlobal("MSGestureEvent")
-@js.native
 object MSGestureEvent extends Instantiable0[MSGestureEvent] {
   val MSGESTURE_FLAG_BEGIN: Double = js.native
   val MSGESTURE_FLAG_CANCEL: Double = js.native

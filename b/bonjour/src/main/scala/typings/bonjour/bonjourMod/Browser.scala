@@ -2,7 +2,7 @@ package typings.bonjour.bonjourMod
 
 import typings.bonjour.bonjourStrings.down
 import typings.bonjour.bonjourStrings.up
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

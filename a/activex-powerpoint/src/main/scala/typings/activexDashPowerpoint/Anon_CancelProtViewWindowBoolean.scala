@@ -1,6 +1,6 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.ProtectedViewWindow
+import typings.activexDashPowerpoint.PowerPoint.ProtectedViewWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

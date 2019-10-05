@@ -61,7 +61,6 @@ trait ModalProps extends js.Object {
 object ModalProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     isVisible: Boolean,
     animationIn: AnimationConfig = null,
     animationInTiming: Int | Double = null,
@@ -72,6 +71,7 @@ object ModalProps {
     backdropOpacity: Int | Double = null,
     backdropTransitionInTiming: Int | Double = null,
     backdropTransitionOutTiming: Int | Double = null,
+    children: ReactNode = null,
     coverScreen: js.UndefOr[Boolean] = js.undefined,
     customBackdrop: ReactNode = null,
     deviceHeight: Int | Double = null,
@@ -104,7 +104,7 @@ object ModalProps {
     swipeThreshold: Int | Double = null,
     useNativeDriver: js.UndefOr[Boolean] = js.undefined
   ): ModalProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isVisible = isVisible)
+    val __obj = js.Dynamic.literal(isVisible = isVisible)
     if (animationIn != null) __obj.updateDynamic("animationIn")(animationIn.asInstanceOf[js.Any])
     if (animationInTiming != null) __obj.updateDynamic("animationInTiming")(animationInTiming.asInstanceOf[js.Any])
     if (animationOut != null) __obj.updateDynamic("animationOut")(animationOut.asInstanceOf[js.Any])
@@ -114,6 +114,7 @@ object ModalProps {
     if (backdropOpacity != null) __obj.updateDynamic("backdropOpacity")(backdropOpacity.asInstanceOf[js.Any])
     if (backdropTransitionInTiming != null) __obj.updateDynamic("backdropTransitionInTiming")(backdropTransitionInTiming.asInstanceOf[js.Any])
     if (backdropTransitionOutTiming != null) __obj.updateDynamic("backdropTransitionOutTiming")(backdropTransitionOutTiming.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen)
     if (customBackdrop != null) __obj.updateDynamic("customBackdrop")(customBackdrop.asInstanceOf[js.Any])
     if (deviceHeight != null) __obj.updateDynamic("deviceHeight")(deviceHeight.asInstanceOf[js.Any])

@@ -3,7 +3,7 @@ package typings.reactDashToolbox.libMenuMenuMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.auto
 import typings.reactDashToolbox.reactDashToolboxStrings.bottomLeft
 import typings.reactDashToolbox.reactDashToolboxStrings.bottomRight

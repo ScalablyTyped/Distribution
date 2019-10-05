@@ -23,3 +23,9 @@ object Registration {
   }
 }
 
+@JSImport("aurelia-dependency-injection", "registration")
+@js.native
+object registration extends js.Object {
+  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](value: Registration[TBase, TImpl, TArgs]): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = js.native
+}
+

@@ -24,7 +24,7 @@ object UpdateBotRequest {
   def apply(
     AccountId: NonEmptyString,
     BotId: NonEmptyString,
-    Disabled: js.UndefOr[NullableBoolean] = js.undefined
+    Disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateBotRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId, BotId = BotId)
     if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled)

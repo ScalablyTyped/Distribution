@@ -42,18 +42,18 @@ object InstancePortInfo {
     accessFrom: String = null,
     accessType: PortAccessType = null,
     commonName: String = null,
-    fromPort: js.UndefOr[Port] = js.undefined,
+    fromPort: Int | Double = null,
     protocol: NetworkProtocol = null,
-    toPort: js.UndefOr[Port] = js.undefined
+    toPort: Int | Double = null
   ): InstancePortInfo = {
     val __obj = js.Dynamic.literal()
     if (accessDirection != null) __obj.updateDynamic("accessDirection")(accessDirection.asInstanceOf[js.Any])
     if (accessFrom != null) __obj.updateDynamic("accessFrom")(accessFrom)
     if (accessType != null) __obj.updateDynamic("accessType")(accessType.asInstanceOf[js.Any])
     if (commonName != null) __obj.updateDynamic("commonName")(commonName)
-    if (!js.isUndefined(fromPort)) __obj.updateDynamic("fromPort")(fromPort)
+    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPort)) __obj.updateDynamic("toPort")(toPort)
+    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancePortInfo]
   }
 }

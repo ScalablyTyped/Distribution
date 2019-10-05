@@ -1,8 +1,8 @@
 package typings.atPulumiAws.s3BucketNotificationMod
 
-import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationLambdaFunction
-import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationQueue
-import typings.atPulumiAws.typesOutputMod.s3Ns.BucketNotificationTopic
+import typings.atPulumiAws.typesOutputMod.s3.BucketNotificationLambdaFunction
+import typings.atPulumiAws.typesOutputMod.s3.BucketNotificationQueue
+import typings.atPulumiAws.typesOutputMod.s3.BucketNotificationTopic
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

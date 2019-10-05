@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Polygon protected ()
   extends typings.parse.nodeMod.Polygon {
-  def this(arg1: js.Array[js.Array[Double] | typings.parse.ParseNs.GeoPoint]) = this()
+  def this(arg1: js.Array[js.Array[Double] | typings.parse.Parse.GeoPoint]) = this()
 }
 

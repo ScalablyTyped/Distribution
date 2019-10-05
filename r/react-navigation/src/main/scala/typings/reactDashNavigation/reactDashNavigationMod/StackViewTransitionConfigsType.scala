@@ -25,10 +25,10 @@ object StackViewTransitionConfigsType {
     FadeOutToBottomAndroid: TransitionConfig,
     ModalSlideFromBottomIOS: TransitionConfig,
     SlideFromRightIOS: TransitionConfig,
-    defaultTransitionConfig: TransitionConfigurer,
+    defaultTransitionConfig: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ NavigationTransitionProps, /* isModal */ Boolean) => TransitionConfig,
     getTransitionConfig: (TransitionConfigurer, NavigationTransitionProps, NavigationTransitionProps, Boolean) => TransitionConfig
   ): StackViewTransitionConfigsType = {
-    val __obj = js.Dynamic.literal(FadeInFromBottomAndroid = FadeInFromBottomAndroid, FadeOutToBottomAndroid = FadeOutToBottomAndroid, ModalSlideFromBottomIOS = ModalSlideFromBottomIOS, SlideFromRightIOS = SlideFromRightIOS, defaultTransitionConfig = defaultTransitionConfig, getTransitionConfig = js.Any.fromFunction4(getTransitionConfig))
+    val __obj = js.Dynamic.literal(FadeInFromBottomAndroid = FadeInFromBottomAndroid, FadeOutToBottomAndroid = FadeOutToBottomAndroid, ModalSlideFromBottomIOS = ModalSlideFromBottomIOS, SlideFromRightIOS = SlideFromRightIOS, defaultTransitionConfig = js.Any.fromFunction3(defaultTransitionConfig), getTransitionConfig = js.Any.fromFunction4(getTransitionConfig))
   
     __obj.asInstanceOf[StackViewTransitionConfigsType]
   }

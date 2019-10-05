@@ -1,6 +1,6 @@
 package typings.rcDashSlider.rcDashSliderMod
 
-import typings.rcDashTooltip.rcDashTooltipMod.RCTooltipNs.Props
+import typings.rcDashTooltip.rcDashTooltipMod.RCTooltip.Props
 import typings.react.reactMod.ReactNode
 import typings.std.Partial
 import scala.scalajs.js

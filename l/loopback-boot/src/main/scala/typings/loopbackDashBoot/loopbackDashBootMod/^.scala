@@ -79,11 +79,9 @@ object ^ extends js.Object {
     * @param app LoopBack application created by loopback().
     * @param options Boot options; If String, this is the application root directory; if object, has below properties.
     */
-  def apply(app: LoopBackApplication, options: String | OptionsLB): Unit = js.native
-  def apply(
-    app: LoopBackApplication,
-    options: String | OptionsLB,
-    callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  def apply(app: LoopBackApplication, options: String): Unit = js.native
+  def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def apply(app: LoopBackApplication, options: OptionsLB): Unit = js.native
+  def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

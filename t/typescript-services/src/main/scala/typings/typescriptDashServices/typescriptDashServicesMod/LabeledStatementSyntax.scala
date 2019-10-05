@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IStatementSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IStatementSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "LabeledStatementSyntax")
 @js.native
 class LabeledStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.LabeledStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.LabeledStatementSyntax {
   def this(
     identifier: ISyntaxToken,
     colonToken: ISyntaxToken,
@@ -22,6 +22,6 @@ class LabeledStatementSyntax protected ()
 @JSImport("typescript-services", "LabeledStatementSyntax")
 @js.native
 object LabeledStatementSyntax extends js.Object {
-  def create1(identifier: ISyntaxToken, statement: IStatementSyntax): typings.typescriptDashServices.TypeScriptNs.LabeledStatementSyntax = js.native
+  def create1(identifier: ISyntaxToken, statement: IStatementSyntax): typings.typescriptDashServices.TypeScript.LabeledStatementSyntax = js.native
 }
 

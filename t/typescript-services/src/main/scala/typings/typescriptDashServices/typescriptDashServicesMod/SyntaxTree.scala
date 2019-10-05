@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxTree")
 @js.native
 class SyntaxTree protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxTree {
+  extends typings.typescriptDashServices.TypeScript.SyntaxTree {
   def this(
-    sourceUnit: typings.typescriptDashServices.TypeScriptNs.SourceUnitSyntax,
+    sourceUnit: typings.typescriptDashServices.TypeScript.SourceUnitSyntax,
     isDeclaration: Boolean,
-    diagnostics: js.Array[typings.typescriptDashServices.TypeScriptNs.Diagnostic],
+    diagnostics: js.Array[typings.typescriptDashServices.TypeScript.Diagnostic],
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
-    parseOtions: typings.typescriptDashServices.TypeScriptNs.ParseOptions
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
+    parseOtions: typings.typescriptDashServices.TypeScript.ParseOptions
   ) = this()
 }
 

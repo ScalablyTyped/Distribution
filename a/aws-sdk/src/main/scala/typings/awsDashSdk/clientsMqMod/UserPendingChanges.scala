@@ -22,7 +22,7 @@ trait UserPendingChanges extends js.Object {
 object UserPendingChanges {
   @scala.inline
   def apply(
-    ConsoleAccess: js.UndefOr[__boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
     Groups: __listOf__string = null,
     PendingChange: ChangeType = null
   ): UserPendingChanges = {

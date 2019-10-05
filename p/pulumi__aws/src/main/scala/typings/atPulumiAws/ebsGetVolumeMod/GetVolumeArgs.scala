@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ebsGetVolumeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ebsNs.GetVolumeFilter
+import typings.atPulumiAws.typesInputMod.ebs.GetVolumeFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

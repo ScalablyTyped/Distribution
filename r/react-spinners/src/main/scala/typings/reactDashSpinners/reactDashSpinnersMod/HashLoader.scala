@@ -1,6 +1,8 @@
 package typings.reactDashSpinners.reactDashSpinnersMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import scala.scalajs.js
@@ -14,4 +16,8 @@ class HashLoader protected ()
   def this(props: LoaderSizeProps) = this()
   def this(props: LoaderSizeProps, context: js.Any) = this()
 }
+
+@JSImport("react-spinners", "HashLoader")
+@js.native
+object HashLoader extends TopLevel[ComponentClass[LoaderSizeProps, ComponentState]]
 

@@ -53,9 +53,9 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Shader")
 @js.native
 class Shader protected ()
-  extends typings.playcanvas.pcNs.Shader {
+  extends typings.playcanvas.pc.Shader {
   def this(
-    graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice,
+    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     definition: Anon_Attributes,
     precache: js.Any
   ) = this()

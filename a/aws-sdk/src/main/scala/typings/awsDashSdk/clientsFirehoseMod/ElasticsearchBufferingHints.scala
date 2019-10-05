@@ -17,13 +17,10 @@ trait ElasticsearchBufferingHints extends js.Object {
 
 object ElasticsearchBufferingHints {
   @scala.inline
-  def apply(
-    IntervalInSeconds: js.UndefOr[ElasticsearchBufferingIntervalInSeconds] = js.undefined,
-    SizeInMBs: js.UndefOr[ElasticsearchBufferingSizeInMBs] = js.undefined
-  ): ElasticsearchBufferingHints = {
+  def apply(IntervalInSeconds: Int | Double = null, SizeInMBs: Int | Double = null): ElasticsearchBufferingHints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IntervalInSeconds)) __obj.updateDynamic("IntervalInSeconds")(IntervalInSeconds)
-    if (!js.isUndefined(SizeInMBs)) __obj.updateDynamic("SizeInMBs")(SizeInMBs)
+    if (IntervalInSeconds != null) __obj.updateDynamic("IntervalInSeconds")(IntervalInSeconds.asInstanceOf[js.Any])
+    if (SizeInMBs != null) __obj.updateDynamic("SizeInMBs")(SizeInMBs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchBufferingHints]
   }
 }

@@ -24,7 +24,7 @@ object ModifyVolumeAttributeRequest {
   def apply(
     VolumeId: String,
     AutoEnableIO: AttributeBooleanValue = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyVolumeAttributeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId)
     if (AutoEnableIO != null) __obj.updateDynamic("AutoEnableIO")(AutoEnableIO)

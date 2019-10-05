@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 /*Interfaces*/
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.yandexDashMaps.yandexDashMapsMod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze- typings.yandexDashMaps.yandexDashMapsMod.IChild because var conflicts: events. Inlined getParent, setParent, setParent */ @js.native
+- typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
+- typings.yandexDashMaps.yandexDashMapsMod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
+- typings.yandexDashMaps.yandexDashMapsMod.IChild because var conflicts: events. Inlined getParent, setParent, setParent */ @js.native
 trait IBaloon[T] extends IPopup[T] {
   def autoPan(): js.Promise[T] = js.native
   def freeze(): IFreezable = js.native

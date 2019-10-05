@@ -39,31 +39,31 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    blankReplacement: ReplacementFunction = null,
+    blankReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
     br: String = null,
     bulletListMarker: `-` | `+` | typings.turndown.turndownStrings.`*` = null,
     codeBlockStyle: indented | fenced = null,
-    defaultReplacement: ReplacementFunction = null,
+    defaultReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
     emDelimiter: Underscore | typings.turndown.turndownStrings.`*` = null,
     fence: BACKTICKBACKTICKBACKTICK | `~~~` = null,
     headingStyle: setext | atx = null,
     hr: String = null,
-    keepReplacement: ReplacementFunction = null,
+    keepReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
     linkReferenceStyle: full | collapsed | shortcut = null,
     linkStyle: inlined | referenced = null,
     strongDelimiter: __ | `**` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (blankReplacement != null) __obj.updateDynamic("blankReplacement")(blankReplacement)
+    if (blankReplacement != null) __obj.updateDynamic("blankReplacement")(js.Any.fromFunction3(blankReplacement))
     if (br != null) __obj.updateDynamic("br")(br)
     if (bulletListMarker != null) __obj.updateDynamic("bulletListMarker")(bulletListMarker.asInstanceOf[js.Any])
     if (codeBlockStyle != null) __obj.updateDynamic("codeBlockStyle")(codeBlockStyle.asInstanceOf[js.Any])
-    if (defaultReplacement != null) __obj.updateDynamic("defaultReplacement")(defaultReplacement)
+    if (defaultReplacement != null) __obj.updateDynamic("defaultReplacement")(js.Any.fromFunction3(defaultReplacement))
     if (emDelimiter != null) __obj.updateDynamic("emDelimiter")(emDelimiter.asInstanceOf[js.Any])
     if (fence != null) __obj.updateDynamic("fence")(fence.asInstanceOf[js.Any])
     if (headingStyle != null) __obj.updateDynamic("headingStyle")(headingStyle.asInstanceOf[js.Any])
     if (hr != null) __obj.updateDynamic("hr")(hr)
-    if (keepReplacement != null) __obj.updateDynamic("keepReplacement")(keepReplacement)
+    if (keepReplacement != null) __obj.updateDynamic("keepReplacement")(js.Any.fromFunction3(keepReplacement))
     if (linkReferenceStyle != null) __obj.updateDynamic("linkReferenceStyle")(linkReferenceStyle.asInstanceOf[js.Any])
     if (linkStyle != null) __obj.updateDynamic("linkStyle")(linkStyle.asInstanceOf[js.Any])
     if (strongDelimiter != null) __obj.updateDynamic("strongDelimiter")(strongDelimiter.asInstanceOf[js.Any])

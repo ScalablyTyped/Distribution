@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalDashReact.fundamentalDashReactStrings.button
 import typings.fundamentalDashReact.fundamentalDashReactStrings.reset
 import typings.fundamentalDashReact.fundamentalDashReactStrings.submit
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait ButtonProps
   /* Set to **true** if button is part of global navbar. */
   var navbar: js.UndefOr[Boolean] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[/* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent], Unit]
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
   ] = js.undefined
   /* Indicates the importance of the button. */
   var option: js.UndefOr[ButtonOptions] = js.undefined
@@ -42,7 +42,7 @@ object ButtonProps {
     dropdown: js.UndefOr[Boolean] = js.undefined,
     glyph: String = null,
     navbar: js.UndefOr[Boolean] = js.undefined,
-    onClick: /* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit = null,
+    onClick: /* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit = null,
     option: ButtonOptions = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     `type`: ButtonTypes = null,

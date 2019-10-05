@@ -50,10 +50,10 @@ object FormProps {
     preSubmit: (/* values */ FormValues, /* formApi */ FormApi) => FormValues = null,
     preValidate: /* values */ FormValues => FormValues = null,
     render: /* formApi */ FormApi => RenderReturn = null,
-    validateError: ValidateValuesFunction = null,
+    validateError: /* values */ FormValues => FormErrors = null,
     validateOnSubmit: js.UndefOr[Boolean] = js.undefined,
     validateSuccess: (/* values */ FormValues, /* errors */ FormErrors) => FormErrors = null,
-    validateWarning: ValidateValuesFunction = null
+    validateWarning: /* values */ FormValues => FormErrors = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
     if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators)
@@ -68,10 +68,10 @@ object FormProps {
     if (preSubmit != null) __obj.updateDynamic("preSubmit")(js.Any.fromFunction2(preSubmit))
     if (preValidate != null) __obj.updateDynamic("preValidate")(js.Any.fromFunction1(preValidate))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (validateError != null) __obj.updateDynamic("validateError")(validateError)
+    if (validateError != null) __obj.updateDynamic("validateError")(js.Any.fromFunction1(validateError))
     if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit)
     if (validateSuccess != null) __obj.updateDynamic("validateSuccess")(js.Any.fromFunction2(validateSuccess))
-    if (validateWarning != null) __obj.updateDynamic("validateWarning")(validateWarning)
+    if (validateWarning != null) __obj.updateDynamic("validateWarning")(js.Any.fromFunction1(validateWarning))
     __obj.asInstanceOf[FormProps]
   }
 }

@@ -23,3 +23,11 @@ trait Struct[T]
   def update(instance: T, spec: UpdatePatch): T = js.native
 }
 
+@JSImport("tcomb", "struct")
+@js.native
+object struct extends js.Object {
+  def apply[T](props: StructProps): Struct[T] = js.native
+  def apply[T](props: StructProps, name: String): Struct[T] = js.native
+  def apply[T](props: StructProps, name: StructOptions): Struct[T] = js.native
+}
+

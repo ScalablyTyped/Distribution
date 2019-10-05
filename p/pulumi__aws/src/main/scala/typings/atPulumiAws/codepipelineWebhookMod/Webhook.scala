@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelineWebhookMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.codepipelineNs.WebhookAuthenticationConfiguration
-import typings.atPulumiAws.typesOutputMod.codepipelineNs.WebhookFilter
+import typings.atPulumiAws.typesOutputMod.codepipeline.WebhookAuthenticationConfiguration
+import typings.atPulumiAws.typesOutputMod.codepipeline.WebhookFilter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

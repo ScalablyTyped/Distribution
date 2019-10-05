@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesSupportColorStopMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorStop
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorStopProperties
+import typings.arcgisDashJsDashApi.__esri.ColorStop
+import typings.arcgisDashJsDashApi.__esri.ColorStopProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

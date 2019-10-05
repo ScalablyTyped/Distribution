@@ -1,6 +1,6 @@
 package typings.dotdotdot
 
-import typings.dotdotdot.JQueryDotDotDotNs.IDotDotDotOptions
+import typings.dotdotdot.JQueryDotDotDot.IDotDotDotOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

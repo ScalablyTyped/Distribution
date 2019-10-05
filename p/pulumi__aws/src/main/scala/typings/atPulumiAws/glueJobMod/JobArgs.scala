@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueJobMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.glueNs.JobCommand
-import typings.atPulumiAws.typesInputMod.glueNs.JobExecutionProperty
+import typings.atPulumiAws.typesInputMod.glue.JobCommand
+import typings.atPulumiAws.typesInputMod.glue.JobExecutionProperty
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

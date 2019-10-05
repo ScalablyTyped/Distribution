@@ -1,5 +1,6 @@
 package typings.atOracleOraclejet.ojcollapsibleMod
 
+import typings.atOracleOraclejet.Anon_ContentHeader
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.disabled
@@ -10,10 +11,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.expandAreaChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.expanded
 import typings.atOracleOraclejet.atOracleOraclejetStrings.expandedChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.header
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojCollapse
-import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsibleNs.ojExpand
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeCollapse
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojBeforeExpand
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojCollapse
+import typings.atOracleOraclejet.ojcollapsibleMod.ojCollapsible.ojExpand
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -119,5 +121,14 @@ trait ojCollapsible extends baseComponent[ojCollapsibleSettableProperties] {
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_expanded(property: expanded, value: Boolean): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojcollapsible", "ojCollapsible")
+@js.native
+object ojCollapsible extends js.Object {
+  type ojBeforeCollapse = CustomEvent[Anon_ContentHeader]
+  type ojBeforeExpand = CustomEvent[Anon_ContentHeader]
+  type ojCollapse = CustomEvent[Anon_ContentHeader]
+  type ojExpand = CustomEvent[Anon_ContentHeader]
 }
 

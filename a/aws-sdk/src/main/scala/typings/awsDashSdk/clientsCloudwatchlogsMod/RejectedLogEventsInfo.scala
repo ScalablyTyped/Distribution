@@ -22,14 +22,14 @@ trait RejectedLogEventsInfo extends js.Object {
 object RejectedLogEventsInfo {
   @scala.inline
   def apply(
-    expiredLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined,
-    tooNewLogEventStartIndex: js.UndefOr[LogEventIndex] = js.undefined,
-    tooOldLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined
+    expiredLogEventEndIndex: Int | Double = null,
+    tooNewLogEventStartIndex: Int | Double = null,
+    tooOldLogEventEndIndex: Int | Double = null
   ): RejectedLogEventsInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expiredLogEventEndIndex)) __obj.updateDynamic("expiredLogEventEndIndex")(expiredLogEventEndIndex)
-    if (!js.isUndefined(tooNewLogEventStartIndex)) __obj.updateDynamic("tooNewLogEventStartIndex")(tooNewLogEventStartIndex)
-    if (!js.isUndefined(tooOldLogEventEndIndex)) __obj.updateDynamic("tooOldLogEventEndIndex")(tooOldLogEventEndIndex)
+    if (expiredLogEventEndIndex != null) __obj.updateDynamic("expiredLogEventEndIndex")(expiredLogEventEndIndex.asInstanceOf[js.Any])
+    if (tooNewLogEventStartIndex != null) __obj.updateDynamic("tooNewLogEventStartIndex")(tooNewLogEventStartIndex.asInstanceOf[js.Any])
+    if (tooOldLogEventEndIndex != null) __obj.updateDynamic("tooOldLogEventEndIndex")(tooOldLogEventEndIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectedLogEventsInfo]
   }
 }

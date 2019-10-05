@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val DZ: typings.deezerDashSdk.DeezerSdkNs.DZ = js.native
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/init | DZ.init}
     */

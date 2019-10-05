@@ -22,13 +22,13 @@ trait AnnotationValue extends js.Object {
 object AnnotationValue {
   @scala.inline
   def apply(
-    BooleanValue: js.UndefOr[NullableBoolean] = js.undefined,
-    NumberValue: js.UndefOr[NullableDouble] = js.undefined,
+    BooleanValue: js.UndefOr[scala.Boolean] = js.undefined,
+    NumberValue: Int | scala.Double = null,
     StringValue: String = null
   ): AnnotationValue = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(BooleanValue)) __obj.updateDynamic("BooleanValue")(BooleanValue)
-    if (!js.isUndefined(NumberValue)) __obj.updateDynamic("NumberValue")(NumberValue)
+    if (NumberValue != null) __obj.updateDynamic("NumberValue")(NumberValue.asInstanceOf[js.Any])
     if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue)
     __obj.asInstanceOf[AnnotationValue]
   }

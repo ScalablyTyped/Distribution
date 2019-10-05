@@ -4,7 +4,7 @@ import typings.atFrctlFractal.Anon_HandleString
 import typings.atFrctlFractal.Anon_Mount
 import typings.atFrctlFractal.Anon_MountPath
 import typings.atFrctlFractal.Anon_Params
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
 import typings.atFrctlFractal.atFrctlFractalNumbers.`false`
 import typings.atFrctlFractal.atFrctlFractalStrings.favicon
 import typings.atFrctlFractal.atFrctlFractalStrings.format

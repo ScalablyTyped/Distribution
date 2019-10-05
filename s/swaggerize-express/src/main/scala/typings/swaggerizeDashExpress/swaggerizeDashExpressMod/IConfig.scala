@@ -1,7 +1,7 @@
 package typings.swaggerizeDashExpress.swaggerizeDashExpressMod
 
 import typings.express.expressMod.IRoute
-import typings.swaggerizeDashExpress.swaggerizeDashExpressMod.SwaggerNs.ApiDefinition
+import typings.swaggerizeDashExpress.swaggerizeDashExpressMod.Swagger.ApiDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,9 @@
 package typings.grommet.componentsCheckBoxMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.HTMLInputElement
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.InputHTMLAttributes
@@ -23,4 +25,13 @@ class CheckBox protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("grommet/components/CheckBox", "CheckBox")
+@js.native
+object CheckBox extends TopLevel[
+      ComponentClass[
+        CheckBoxProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+        ComponentState
+      ]
+    ]
 

@@ -17,7 +17,7 @@ trait DeleteSubnetRequest extends js.Object {
 
 object DeleteSubnetRequest {
   @scala.inline
-  def apply(SubnetId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteSubnetRequest = {
+  def apply(SubnetId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteSubnetRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteSubnetRequest]

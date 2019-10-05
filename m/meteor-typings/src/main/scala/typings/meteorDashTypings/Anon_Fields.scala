@@ -1,7 +1,7 @@
 package typings.meteorDashTypings
 
-import typings.meteorDashTypings.MongoNs.FieldSpecifier
-import typings.meteorDashTypings.MongoNs.SortSpecifier
+import typings.meteorDashTypings.Mongo.FieldSpecifier
+import typings.meteorDashTypings.Mongo.SortSpecifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

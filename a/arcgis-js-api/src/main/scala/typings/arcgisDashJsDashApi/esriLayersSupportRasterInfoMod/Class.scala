@@ -1,12 +1,12 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportRasterInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Extent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureSet
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Point
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterInfoProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterInfoStatistics
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.Extent
+import typings.arcgisDashJsDashApi.__esri.FeatureSet
+import typings.arcgisDashJsDashApi.__esri.Point
+import typings.arcgisDashJsDashApi.__esri.RasterInfo
+import typings.arcgisDashJsDashApi.__esri.RasterInfoProperties
+import typings.arcgisDashJsDashApi.__esri.RasterInfoStatistics
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

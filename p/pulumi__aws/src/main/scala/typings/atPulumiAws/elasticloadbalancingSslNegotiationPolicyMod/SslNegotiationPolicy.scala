@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticloadbalancingSslNegotiationPolicyMod
 
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingNs.SslNegotiationPolicyAttribute
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancing.SslNegotiationPolicyAttribute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

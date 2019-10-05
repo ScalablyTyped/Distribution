@@ -1,5 +1,6 @@
 package typings.atFeathersjsErrors.atFeathersjsErrorsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,4 +51,8 @@ object Errors {
     __obj.asInstanceOf[Errors]
   }
 }
+
+@JSImport("@feathersjs/errors", "errors")
+@js.native
+object errors extends TopLevel[Errors]
 

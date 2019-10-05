@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,10 +99,10 @@ object IgTreeGridTooltips {
     inherit: js.UndefOr[Boolean] = js.undefined,
     showDelay: Int | Double = null,
     style: String = null,
-    tooltipHidden: TooltipHiddenEvent = null,
-    tooltipHiding: TooltipHidingEvent = null,
-    tooltipShowing: TooltipShowingEvent = null,
-    tooltipShown: TooltipShownEvent = null,
+    tooltipHidden: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit = null,
+    tooltipHiding: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit = null,
+    tooltipShowing: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit = null,
+    tooltipShown: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit = null,
     visibility: String = null
   ): IgTreeGridTooltips = {
     val __obj = js.Dynamic.literal()
@@ -114,10 +115,10 @@ object IgTreeGridTooltips {
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
-    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
-    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
-    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2(tooltipHidden))
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2(tooltipHiding))
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2(tooltipShowing))
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2(tooltipShown))
     if (visibility != null) __obj.updateDynamic("visibility")(visibility)
     __obj.asInstanceOf[IgTreeGridTooltips]
   }

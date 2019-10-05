@@ -180,29 +180,29 @@ object HlsGroupSettings {
     EncryptionType: HlsEncryptionType = null,
     HlsCdnSettings: HlsCdnSettings = null,
     IFrameOnlyPlaylists: IFrameOnlyPlaylistType = null,
-    IndexNSegments: js.UndefOr[__integerMin3] = js.undefined,
+    IndexNSegments: Int | Double = null,
     InputLossAction: InputLossActionForHlsOut = null,
     IvInManifest: HlsIvInManifest = null,
     IvSource: HlsIvSource = null,
-    KeepSegments: js.UndefOr[__integerMin1] = js.undefined,
+    KeepSegments: Int | Double = null,
     KeyFormat: __string = null,
     KeyFormatVersions: __string = null,
     KeyProviderSettings: KeyProviderSettings = null,
     ManifestCompression: HlsManifestCompression = null,
     ManifestDurationFormat: HlsManifestDurationFormat = null,
-    MinSegmentLength: js.UndefOr[__integerMin0] = js.undefined,
+    MinSegmentLength: Int | Double = null,
     Mode: HlsMode = null,
     OutputSelection: HlsOutputSelection = null,
     ProgramDateTime: HlsProgramDateTime = null,
-    ProgramDateTimePeriod: js.UndefOr[__integerMin0Max3600] = js.undefined,
+    ProgramDateTimePeriod: Int | Double = null,
     RedundantManifest: HlsRedundantManifest = null,
-    SegmentLength: js.UndefOr[__integerMin1] = js.undefined,
+    SegmentLength: Int | Double = null,
     SegmentationMode: HlsSegmentationMode = null,
-    SegmentsPerSubdirectory: js.UndefOr[__integerMin1] = js.undefined,
+    SegmentsPerSubdirectory: Int | Double = null,
     StreamInfResolution: HlsStreamInfResolution = null,
     TimedMetadataId3Frame: HlsTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: js.UndefOr[__integerMin0] = js.undefined,
-    TimestampDeltaMilliseconds: js.UndefOr[__integerMin0] = js.undefined,
+    TimedMetadataId3Period: Int | Double = null,
+    TimestampDeltaMilliseconds: Int | Double = null,
     TsFileMode: HlsTsFileMode = null
   ): HlsGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination)
@@ -218,29 +218,29 @@ object HlsGroupSettings {
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     if (HlsCdnSettings != null) __obj.updateDynamic("HlsCdnSettings")(HlsCdnSettings)
     if (IFrameOnlyPlaylists != null) __obj.updateDynamic("IFrameOnlyPlaylists")(IFrameOnlyPlaylists.asInstanceOf[js.Any])
-    if (!js.isUndefined(IndexNSegments)) __obj.updateDynamic("IndexNSegments")(IndexNSegments)
+    if (IndexNSegments != null) __obj.updateDynamic("IndexNSegments")(IndexNSegments.asInstanceOf[js.Any])
     if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
     if (IvInManifest != null) __obj.updateDynamic("IvInManifest")(IvInManifest.asInstanceOf[js.Any])
     if (IvSource != null) __obj.updateDynamic("IvSource")(IvSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeepSegments)) __obj.updateDynamic("KeepSegments")(KeepSegments)
+    if (KeepSegments != null) __obj.updateDynamic("KeepSegments")(KeepSegments.asInstanceOf[js.Any])
     if (KeyFormat != null) __obj.updateDynamic("KeyFormat")(KeyFormat)
     if (KeyFormatVersions != null) __obj.updateDynamic("KeyFormatVersions")(KeyFormatVersions)
     if (KeyProviderSettings != null) __obj.updateDynamic("KeyProviderSettings")(KeyProviderSettings)
     if (ManifestCompression != null) __obj.updateDynamic("ManifestCompression")(ManifestCompression.asInstanceOf[js.Any])
     if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinSegmentLength)) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength)
+    if (MinSegmentLength != null) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     if (OutputSelection != null) __obj.updateDynamic("OutputSelection")(OutputSelection.asInstanceOf[js.Any])
     if (ProgramDateTime != null) __obj.updateDynamic("ProgramDateTime")(ProgramDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimePeriod)) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod)
+    if (ProgramDateTimePeriod != null) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod.asInstanceOf[js.Any])
     if (RedundantManifest != null) __obj.updateDynamic("RedundantManifest")(RedundantManifest.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength)
+    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
     if (SegmentationMode != null) __obj.updateDynamic("SegmentationMode")(SegmentationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsPerSubdirectory)) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory)
+    if (SegmentsPerSubdirectory != null) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory.asInstanceOf[js.Any])
     if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])
     if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period)
-    if (!js.isUndefined(TimestampDeltaMilliseconds)) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds)
+    if (TimedMetadataId3Period != null) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.asInstanceOf[js.Any])
+    if (TimestampDeltaMilliseconds != null) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds.asInstanceOf[js.Any])
     if (TsFileMode != null) __obj.updateDynamic("TsFileMode")(TsFileMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsGroupSettings]
   }

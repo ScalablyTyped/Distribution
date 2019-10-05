@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_ClientKount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,4 +46,8 @@ trait DataCollector extends js.Object {
   def teardown(): Unit = js.native
   def teardown(callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "dataCollector")
+@js.native
+object dataCollector extends TopLevel[DataCollector]
 

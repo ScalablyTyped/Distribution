@@ -1,11 +1,11 @@
 package typings.atPulumiAws.ec2GetInstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceCreditSpecification
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceEphemeralBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceFilter
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetInstanceRootBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetInstanceCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.GetInstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetInstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetInstanceFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetInstanceRootBlockDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

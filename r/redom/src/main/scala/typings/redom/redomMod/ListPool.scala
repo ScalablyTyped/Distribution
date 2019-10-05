@@ -14,3 +14,11 @@ class ListPool protected () extends js.Object {
   def update(data: js.Array[_], context: js.Any): Unit = js.native
 }
 
+@JSImport("redom", "listPool")
+@js.native
+object listPool extends js.Object {
+  def apply(View: RedomComponentConstructor): ListPool = js.native
+  def apply(View: RedomComponentConstructor, key: String): ListPool = js.native
+  def apply(View: RedomComponentConstructor, key: String, initData: js.Any): ListPool = js.native
+}
+

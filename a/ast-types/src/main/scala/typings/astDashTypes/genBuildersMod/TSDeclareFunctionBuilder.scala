@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.NoopKind
 import typings.astDashTypes.genKindsMod.PatternKind
 import typings.astDashTypes.genKindsMod.TSTypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSDeclareFunction
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSDeclareFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

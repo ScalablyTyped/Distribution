@@ -1,7 +1,7 @@
 package typings.consul.consulMod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.consul.consulMod.WatchNs.Options
+import typings.consul.consulMod.Watch.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

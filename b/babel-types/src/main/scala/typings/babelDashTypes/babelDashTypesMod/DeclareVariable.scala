@@ -36,3 +36,10 @@ object DeclareVariable {
   }
 }
 
+@JSImport("babel-types", "declareVariable")
+@js.native
+object declareVariable extends js.Object {
+  def apply(): DeclareVariable = js.native
+  def apply(id: Identifier): DeclareVariable = js.native
+}
+

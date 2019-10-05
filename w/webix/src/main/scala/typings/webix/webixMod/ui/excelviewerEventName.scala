@@ -1,0 +1,99 @@
+package typings.webix.webixMod.ui
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.webix.webixStrings.onAfterAdd
+  - typings.webix.webixStrings.onAfterAreaAdd
+  - typings.webix.webixStrings.onAfterAreaRemove
+  - typings.webix.webixStrings.onAfterBlockSelect
+  - typings.webix.webixStrings.onAfterColumnDrop
+  - typings.webix.webixStrings.onAfterColumnDropOrder
+  - typings.webix.webixStrings.onAfterColumnHide
+  - typings.webix.webixStrings.onAfterColumnShow
+  - typings.webix.webixStrings.onAfterContextMenu
+  - typings.webix.webixStrings.onAfterDelete
+  - typings.webix.webixStrings.onAfterDrop
+  - typings.webix.webixStrings.onAfterEditStart
+  - typings.webix.webixStrings.onAfterEditStop
+  - typings.webix.webixStrings.onAfterFilter
+  - typings.webix.webixStrings.onAfterLoad
+  - typings.webix.webixStrings.onAfterRender
+  - typings.webix.webixStrings.onAfterScroll
+  - typings.webix.webixStrings.onAfterSelect
+  - typings.webix.webixStrings.onAfterSort
+  - typings.webix.webixStrings.onAfterUnSelect
+  - typings.webix.webixStrings.onAreaDrag
+  - typings.webix.webixStrings.onBeforeAdd
+  - typings.webix.webixStrings.onBeforeAreaAdd
+  - typings.webix.webixStrings.onBeforeAreaRemove
+  - typings.webix.webixStrings.onBeforeBlockSelect
+  - typings.webix.webixStrings.onBeforeColumnDrag
+  - typings.webix.webixStrings.onBeforeColumnDrop
+  - typings.webix.webixStrings.onBeforeColumnDropOrder
+  - typings.webix.webixStrings.onBeforeColumnHide
+  - typings.webix.webixStrings.onBeforeColumnShow
+  - typings.webix.webixStrings.onBeforeContextMenu
+  - typings.webix.webixStrings.onBeforeDelete
+  - typings.webix.webixStrings.onBeforeDrag
+  - typings.webix.webixStrings.onBeforeDragIn
+  - typings.webix.webixStrings.onBeforeDrop
+  - typings.webix.webixStrings.onBeforeDropOut
+  - typings.webix.webixStrings.onBeforeEditStart
+  - typings.webix.webixStrings.onBeforeEditStop
+  - typings.webix.webixStrings.onBeforeFilter
+  - typings.webix.webixStrings.onBeforeLoad
+  - typings.webix.webixStrings.onBeforeRender
+  - typings.webix.webixStrings.onBeforeSelect
+  - typings.webix.webixStrings.onBeforeSort
+  - typings.webix.webixStrings.onBeforeUnSelect
+  - typings.webix.webixStrings.onBindRequest
+  - typings.webix.webixStrings.onBlur
+  - typings.webix.webixStrings.onCheck
+  - typings.webix.webixStrings.onCollectValues
+  - typings.webix.webixStrings.onColumnResize
+  - typings.webix.webixStrings.onDataRequest
+  - typings.webix.webixStrings.onDataUpdate
+  - typings.webix.webixStrings.onDestruct
+  - typings.webix.webixStrings.onDragOut
+  - typings.webix.webixStrings.onEditorChange
+  - typings.webix.webixStrings.onEnter
+  - typings.webix.webixStrings.onFocus
+  - typings.webix.webixStrings.onHeaderClick
+  - typings.webix.webixStrings.onItemClick
+  - typings.webix.webixStrings.onItemDblClick
+  - typings.webix.webixStrings.onKeyPress
+  - typings.webix.webixStrings.onLiveEdit
+  - typings.webix.webixStrings.onLoadError
+  - typings.webix.webixStrings.onLongTouch
+  - typings.webix.webixStrings.onMouseMove
+  - typings.webix.webixStrings.onMouseMoving
+  - typings.webix.webixStrings.onMouseOut
+  - typings.webix.webixStrings.onPaste
+  - typings.webix.webixStrings.onResize
+  - typings.webix.webixStrings.onRowResize
+  - typings.webix.webixStrings.onScrollX
+  - typings.webix.webixStrings.onScrollY
+  - typings.webix.webixStrings.onSelectChange
+  - typings.webix.webixStrings.onStructureLoad
+  - typings.webix.webixStrings.onStructureUpdate
+  - typings.webix.webixStrings.onSubViewClose
+  - typings.webix.webixStrings.onSubViewCreate
+  - typings.webix.webixStrings.onSubViewOpen
+  - typings.webix.webixStrings.onSubViewRender
+  - typings.webix.webixStrings.onSwipeX
+  - typings.webix.webixStrings.onSwipeY
+  - typings.webix.webixStrings.onTabFocus
+  - typings.webix.webixStrings.onTimedKeyPress
+  - typings.webix.webixStrings.onTouchEnd
+  - typings.webix.webixStrings.onTouchMove
+  - typings.webix.webixStrings.onTouchStart
+  - typings.webix.webixStrings.onValidationError
+  - typings.webix.webixStrings.onValidationSuccess
+  - typings.webix.webixStrings.onViewResize
+  - typings.webix.webixStrings.onViewShow
+*/
+trait excelviewerEventName extends js.Object
+

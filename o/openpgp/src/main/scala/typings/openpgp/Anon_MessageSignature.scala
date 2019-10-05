@@ -1,7 +1,7 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpMod.messageNs.Message
-import typings.openpgp.openpgpMod.signatureNs.Signature
+import typings.openpgp.openpgpMod.message.Message
+import typings.openpgp.openpgpMod.signature.Signature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

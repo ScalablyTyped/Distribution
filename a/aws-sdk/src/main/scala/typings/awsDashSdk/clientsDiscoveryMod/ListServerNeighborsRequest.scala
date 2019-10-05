@@ -31,13 +31,13 @@ object ListServerNeighborsRequest {
   @scala.inline
   def apply(
     configurationId: ConfigurationId,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | Double = null,
     neighborConfigurationIds: ConfigurationIdList = null,
     nextToken: String = null,
-    portInformationNeeded: js.UndefOr[Boolean] = js.undefined
+    portInformationNeeded: js.UndefOr[scala.Boolean] = js.undefined
   ): ListServerNeighborsRequest = {
     val __obj = js.Dynamic.literal(configurationId = configurationId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (neighborConfigurationIds != null) __obj.updateDynamic("neighborConfigurationIds")(neighborConfigurationIds)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (!js.isUndefined(portInformationNeeded)) __obj.updateDynamic("portInformationNeeded")(portInformationNeeded)

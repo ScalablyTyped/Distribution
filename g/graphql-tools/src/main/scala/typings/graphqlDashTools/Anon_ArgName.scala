@@ -2,11 +2,14 @@ package typings.graphqlDashTools
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloDashLink.apolloDashLinkMod.ApolloLink
+import typings.graphql.executionExecuteMod.ExecutionResult
+import typings.graphql.executionExecuteMod.ExecutionResultDataDefault
 import typings.graphql.graphqlMod.GraphQLSchema
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
 import typings.graphql.utilitiesBuildASTSchemaMod.BuildSchemaOptions
 import typings.graphql.utilitiesSchemaPrinterMod.Options
 import typings.graphqlDashTools.distStitchingMakeRemoteExecutableSchemaMod.Fetcher
+import typings.graphqlDashTools.distStitchingMakeRemoteExecutableSchemaMod.FetcherOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,14 +31,14 @@ object Anon_ArgName {
     schema: GraphQLSchema | String,
     buildSchemaOptions: BuildSchemaOptions = null,
     createResolver: /* fetcher */ Fetcher => GraphQLFieldResolver[_, _, StringDictionary[_]] = null,
-    fetcher: Fetcher = null,
+    fetcher: /* operation */ FetcherOperation => js.Promise[ExecutionResult[ExecutionResultDataDefault]] = null,
     link: ApolloLink = null,
     printSchemaOptions: Options = null
   ): Anon_ArgName = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (buildSchemaOptions != null) __obj.updateDynamic("buildSchemaOptions")(buildSchemaOptions)
     if (createResolver != null) __obj.updateDynamic("createResolver")(js.Any.fromFunction1(createResolver))
-    if (fetcher != null) __obj.updateDynamic("fetcher")(fetcher)
+    if (fetcher != null) __obj.updateDynamic("fetcher")(js.Any.fromFunction1(fetcher))
     if (link != null) __obj.updateDynamic("link")(link)
     if (printSchemaOptions != null) __obj.updateDynamic("printSchemaOptions")(printSchemaOptions)
     __obj.asInstanceOf[Anon_ArgName]

@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Application")
 @js.native
 class Application protected ()
-  extends typings.playcanvas.pcNs.Application {
+  extends typings.playcanvas.pc.Application {
   def this(canvas: Element, options: Anon_AssetPrefix) = this()
 }
 
@@ -72,7 +72,7 @@ object Application extends js.Object {
     * @example
     * var app = pc.Application.getApplication();
     */
-  def getApplication(): js.UndefOr[typings.playcanvas.pcNs.Application] = js.native
-  def getApplication(id: String): js.UndefOr[typings.playcanvas.pcNs.Application] = js.native
+  def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = js.native
+  def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = js.native
 }
 

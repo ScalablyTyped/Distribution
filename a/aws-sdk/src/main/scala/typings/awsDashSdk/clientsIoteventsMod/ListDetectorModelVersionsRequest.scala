@@ -21,13 +21,9 @@ trait ListDetectorModelVersionsRequest extends js.Object {
 
 object ListDetectorModelVersionsRequest {
   @scala.inline
-  def apply(
-    detectorModelName: DetectorModelName,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): ListDetectorModelVersionsRequest = {
+  def apply(detectorModelName: DetectorModelName, maxResults: Int | Double = null, nextToken: NextToken = null): ListDetectorModelVersionsRequest = {
     val __obj = js.Dynamic.literal(detectorModelName = detectorModelName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListDetectorModelVersionsRequest]
   }

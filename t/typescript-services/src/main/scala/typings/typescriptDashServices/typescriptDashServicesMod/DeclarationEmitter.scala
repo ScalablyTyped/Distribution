@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "DeclarationEmitter")
 @js.native
 class DeclarationEmitter protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.DeclarationEmitter {
+  extends typings.typescriptDashServices.TypeScript.DeclarationEmitter {
   def this(
     emittingFileName: String,
-    document: typings.typescriptDashServices.TypeScriptNs.Document,
-    compiler: typings.typescriptDashServices.TypeScriptNs.TypeScriptCompiler,
-    emitOptions: typings.typescriptDashServices.TypeScriptNs.EmitOptions,
-    semanticInfoChain: typings.typescriptDashServices.TypeScriptNs.SemanticInfoChain
+    document: typings.typescriptDashServices.TypeScript.Document,
+    compiler: typings.typescriptDashServices.TypeScript.TypeScriptCompiler,
+    emitOptions: typings.typescriptDashServices.TypeScript.EmitOptions,
+    semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain
   ) = this()
 }
 
@@ -21,6 +21,6 @@ class DeclarationEmitter protected ()
 @JSImport("typescript-services", "DeclarationEmitter")
 @js.native
 object DeclarationEmitter extends js.Object {
-  def getEnclosingContainer(ast: typings.typescriptDashServices.TypeScriptNs.AST): typings.typescriptDashServices.TypeScriptNs.AST = js.native
+  def getEnclosingContainer(ast: typings.typescriptDashServices.TypeScript.AST): typings.typescriptDashServices.TypeScript.AST = js.native
 }
 

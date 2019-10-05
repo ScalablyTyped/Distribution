@@ -1,6 +1,6 @@
 package typings.jqueryDashAjaxDashChain
 
-import typings.jqueryDashAjaxDashChain.ajaxChainNs.JQueryAjaxChainStatic
+import typings.jqueryDashAjaxDashChain.ajaxChain.JQueryAjaxChainStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

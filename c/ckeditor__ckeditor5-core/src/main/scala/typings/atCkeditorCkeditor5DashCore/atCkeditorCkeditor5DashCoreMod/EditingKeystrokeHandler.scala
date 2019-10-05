@@ -1,8 +1,8 @@
 package typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod
 
 import typings.atCkeditorCkeditor5DashCore.Anon_PriorityNumber
-import typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod.editorNs.Editor
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.observerNs.KeyEventData
+import typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod.editor.Editor
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.observer.KeyEventData
 import typings.atCkeditorCkeditor5DashUtils.atCkeditorCkeditor5DashUtilsMod.KeystrokeHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -21,7 +21,7 @@ trait DeleteSecurityGroupRequest extends js.Object {
 
 object DeleteSecurityGroupRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[Boolean] = js.undefined, GroupId: String = null, GroupName: String = null): DeleteSecurityGroupRequest = {
+  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined, GroupId: String = null, GroupName: String = null): DeleteSecurityGroupRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId)

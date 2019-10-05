@@ -31,7 +31,7 @@ object ApplicationInfo {
   @scala.inline
   def apply(
     LifeCycle: LifeCycle = null,
-    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
+    OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
     Remarks: Remarks = null,
     ResourceGroupName: ResourceGroupName = null

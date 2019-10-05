@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersPointCloudRGBRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudRGBRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudRGBRendererProperties
+import typings.arcgisDashJsDashApi.__esri.PointCloudRGBRenderer
+import typings.arcgisDashJsDashApi.__esri.PointCloudRGBRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atFrctlFractal.atFrctlFractalMod
 
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

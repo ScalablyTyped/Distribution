@@ -151,9 +151,5 @@ trait IDBObjectStore extends js.Object {
 
 @JSGlobal("IDBObjectStore")
 @js.native
-class IDBObjectStoreCls () extends IDBObjectStore
-
-@JSGlobal("IDBObjectStore")
-@js.native
 object IDBObjectStore extends Instantiable0[IDBObjectStore]
 

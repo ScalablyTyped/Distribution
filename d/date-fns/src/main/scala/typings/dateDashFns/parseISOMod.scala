@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/parseISO", JSImport.Namespace)
 @js.native
 object parseISOMod extends js.Object {
-  def default(argument: String): Date = js.native
-  def default(argument: String, options: Anon_012): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(argument: String): Date = js.native
+    def apply(argument: String, options: Anon_012): Date = js.native
+  }
+  
 }
 

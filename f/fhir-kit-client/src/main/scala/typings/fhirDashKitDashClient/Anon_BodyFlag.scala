@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.Flag
+import typings.fhir.fhir.Flag
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.traverson.traversonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.traverson.traversonMod.TraversonNs.TraversonMethods
+import typings.traverson.traversonMod.Traverson.TraversonMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

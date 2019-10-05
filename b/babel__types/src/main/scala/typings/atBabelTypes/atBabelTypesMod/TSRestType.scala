@@ -37,3 +37,9 @@ object TSRestType {
   }
 }
 
+@JSImport("@babel/types", "tsRestType")
+@js.native
+object tsRestType extends js.Object {
+  def apply(typeAnnotation: TSType): TSRestType = js.native
+}
+

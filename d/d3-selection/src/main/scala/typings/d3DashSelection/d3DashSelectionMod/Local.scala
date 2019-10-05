@@ -43,3 +43,9 @@ object Local {
   }
 }
 
+@JSImport("d3-selection", "local")
+@js.native
+object local extends js.Object {
+  def apply[T](): Local[T] = js.native
+}
+

@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashGeocoder
 
-import typings.amapDashJsDashApiDashGeocoder.AMapNs.GeocoderNs.SearchStatus
+import typings.amapDashJsDashApiDashGeocoder.AMap.Geocoder.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

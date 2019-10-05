@@ -1,7 +1,7 @@
 package typings.dsv.dsvMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dsv.dsvMod.underscoreDsvNs.Dsv
+import typings.dsv.dsvMod._dsv.Dsv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

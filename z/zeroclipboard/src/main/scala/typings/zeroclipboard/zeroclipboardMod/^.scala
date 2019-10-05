@@ -2,9 +2,9 @@ package typings.zeroclipboard.zeroclipboardMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
-import typings.zeroclipboard.ZCNs.List
-import typings.zeroclipboard.ZCNs.ZeroClipboardClient
-import typings.zeroclipboard.ZCNs.ZeroClipboardStatic
+import typings.zeroclipboard.ZC.List
+import typings.zeroclipboard.ZC.ZeroClipboardClient
+import typings.zeroclipboard.ZC.ZeroClipboardStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.restifyDashPlugins.restifyDashPluginsMod
 
+import typings.restify.restifyMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,5 +42,12 @@ object ServeStatic {
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeStatic]
   }
+}
+
+@JSImport("restify-plugins", "serveStatic")
+@js.native
+object serveStatic extends js.Object {
+  def apply(): RequestHandler = js.native
+  def apply(options: ServeStatic): RequestHandler = js.native
 }
 

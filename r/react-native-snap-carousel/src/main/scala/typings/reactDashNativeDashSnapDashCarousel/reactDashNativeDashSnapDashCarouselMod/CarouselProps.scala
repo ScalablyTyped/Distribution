@@ -2,10 +2,10 @@ package typings.reactDashNativeDashSnapDashCarousel.reactDashNativeDashSnapDashC
 
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedValue
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.DecayAnimationConfig
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.SpringAnimationConfig
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.TimingAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedValue
+import typings.reactDashNative.reactDashNativeMod.Animated.DecayAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.SpringAnimationConfig
+import typings.reactDashNative.reactDashNativeMod.Animated.TimingAnimationConfig
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.NativeScrollEvent
 import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent

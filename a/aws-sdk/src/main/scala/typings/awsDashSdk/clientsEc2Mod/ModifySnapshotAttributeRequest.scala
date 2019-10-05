@@ -41,7 +41,7 @@ object ModifySnapshotAttributeRequest {
     SnapshotId: String,
     Attribute: SnapshotAttributeName = null,
     CreateVolumePermission: CreateVolumePermissionModifications = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     GroupNames: GroupNameStringList = null,
     OperationType: OperationType = null,
     UserIds: UserIdStringList = null

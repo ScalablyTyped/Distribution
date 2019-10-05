@@ -8,9 +8,7 @@ trait Anon_EdgeLabel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.edgeLabel
     */
-  var edgeLabel: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
-  ] = js.undefined
+  var edgeLabel: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.itemStyle
     */
@@ -28,7 +26,7 @@ trait Anon_EdgeLabel extends js.Object {
 object Anon_EdgeLabel {
   @scala.inline
   def apply(
-    edgeLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    edgeLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     itemStyle: Anon_BorderColorBorderType = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
     lineStyle: Anon_ColorOpacityShadowBlur = null

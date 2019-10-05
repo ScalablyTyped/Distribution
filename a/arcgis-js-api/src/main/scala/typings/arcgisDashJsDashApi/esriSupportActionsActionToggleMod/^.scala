@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSupportActionsActionToggleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionToggleConstructor
+import typings.arcgisDashJsDashApi.__esri.ActionToggleConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

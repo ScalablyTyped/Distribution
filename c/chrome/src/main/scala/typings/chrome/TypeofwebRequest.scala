@@ -1,13 +1,13 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.webRequestNs.WebAuthenticationChallengeEvent
-import typings.chrome.chromeNs.webRequestNs.WebRedirectionResponseEvent
-import typings.chrome.chromeNs.webRequestNs.WebRequestBodyEvent
-import typings.chrome.chromeNs.webRequestNs.WebRequestHeadersEvent
-import typings.chrome.chromeNs.webRequestNs.WebRequestHeadersSynchronousEvent
-import typings.chrome.chromeNs.webRequestNs.WebResponseCacheEvent
-import typings.chrome.chromeNs.webRequestNs.WebResponseErrorEvent
-import typings.chrome.chromeNs.webRequestNs.WebResponseHeadersEvent
+import typings.chrome.chrome.webRequest.WebAuthenticationChallengeEvent
+import typings.chrome.chrome.webRequest.WebRedirectionResponseEvent
+import typings.chrome.chrome.webRequest.WebRequestBodyEvent
+import typings.chrome.chrome.webRequest.WebRequestHeadersEvent
+import typings.chrome.chrome.webRequest.WebRequestHeadersSynchronousEvent
+import typings.chrome.chrome.webRequest.WebResponseCacheEvent
+import typings.chrome.chrome.webRequest.WebResponseErrorEvent
+import typings.chrome.chrome.webRequest.WebResponseHeadersEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

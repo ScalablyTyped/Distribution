@@ -10,7 +10,7 @@ package object mongooseMod {
   import typings.std.ErrorConstructor
   import typings.std.Map
 
-  type CastError = typings.mongoose.mongooseMod.ErrorNs.CastError
+  type CastError = typings.mongoose.mongooseMod.Error.CastError
   type ClientSession = typings.mongodb.mongodbMod.ClientSession
   // Because the mongoose Map type shares a name with the default global interface,
   // this type alias has to exist outside of the namespace
@@ -56,5 +56,6 @@ package object mongooseMod {
     * Intellisense for Schema definitions
     */
   type SchemaDefinition = StringDictionary[SchemaTypeOpts[js.Any] | Schema[js.Any] | SchemaType]
+  type SchemaTypeOpts[T] = SchemaTypeOpts_[T]
   type TagSet = StringDictionary[String]
 }

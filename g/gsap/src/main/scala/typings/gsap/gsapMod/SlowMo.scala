@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("gsap", "SlowMo")
 @js.native
 class SlowMo ()
-  extends typings.gsap.gsapNs.SlowMo
+  extends typings.gsap.gsap.SlowMo
 
 /* static members */
 @JSImport("gsap", "SlowMo")
 @js.native
 object SlowMo extends js.Object {
-  var ease: typings.gsap.gsapNs.SlowMo = js.native
+  var ease: typings.gsap.gsap.SlowMo = js.native
 }
 

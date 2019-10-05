@@ -1,6 +1,6 @@
 package typings.meteor.meteorMeteorMod
 
-import typings.meteor.meteorMeteorMod.MeteorNs.Connection
+import typings.meteor.meteorMeteorMod.Meteor.Connection
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

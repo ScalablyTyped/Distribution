@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Tags")
 @js.native
 class Tags ()
-  extends typings.playcanvas.pcNs.Tags {
+  extends typings.playcanvas.pc.Tags {
   def this(parent: js.Any) = this()
 }
 

@@ -1,7 +1,7 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.paginationNs.paginationChangedHandler
+import typings.uiDashGrid.uiDashGridMod.pagination.paginationChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

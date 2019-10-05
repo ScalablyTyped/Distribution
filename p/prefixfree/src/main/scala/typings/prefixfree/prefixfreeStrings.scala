@@ -1,7 +1,7 @@
 package typings.prefixfree
 
-import typings.prefixfree.PrefixFreeNs.KnownPrefixCSS
-import typings.prefixfree.PrefixFreeNs.KnownPrefixJS
+import typings.prefixfree.PrefixFree.KnownPrefixCSS
+import typings.prefixfree.PrefixFree.KnownPrefixJS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

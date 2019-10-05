@@ -27,7 +27,7 @@ object UpdateAcceleratorAttributesRequest {
   @scala.inline
   def apply(
     AcceleratorArn: GenericString,
-    FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined,
+    FlowLogsEnabled: js.UndefOr[Boolean] = js.undefined,
     FlowLogsS3Bucket: GenericString = null,
     FlowLogsS3Prefix: GenericString = null
   ): UpdateAcceleratorAttributesRequest = {

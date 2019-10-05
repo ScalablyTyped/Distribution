@@ -29,11 +29,11 @@ object GetServiceLastAccessedDetailsWithEntitiesRequest {
     JobId: jobIDType,
     ServiceNamespace: serviceNamespaceType,
     Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
+    MaxItems: Int | Double = null
   ): GetServiceLastAccessedDetailsWithEntitiesRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId, ServiceNamespace = ServiceNamespace)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLastAccessedDetailsWithEntitiesRequest]
   }
 }

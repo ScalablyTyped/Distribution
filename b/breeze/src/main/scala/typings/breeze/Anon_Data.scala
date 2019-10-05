@@ -1,8 +1,8 @@
 package typings.breeze
 
-import typings.breeze.breezeNs.KeyMapping
-import typings.breeze.breezeNs.NodeContext
-import typings.breeze.breezeNs.QueryContext
+import typings.breeze.breeze.KeyMapping
+import typings.breeze.breeze.NodeContext
+import typings.breeze.breeze.QueryContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

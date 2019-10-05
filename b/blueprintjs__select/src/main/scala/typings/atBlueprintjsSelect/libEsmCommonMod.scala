@@ -27,9 +27,8 @@ object libEsmCommonMod extends js.Object {
   def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode, initialContent: ReactNode): ReactNode = js.native
-  @JSName("Classes")
   @js.native
-  object ClassesNs extends js.Object {
+  object Classes extends js.Object {
     val MULTISELECT: String = js.native
     val MULTISELECT_POPOVER: String = js.native
     val OMNIBAR: String = js.native

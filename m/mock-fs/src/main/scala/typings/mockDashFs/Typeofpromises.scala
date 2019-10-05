@@ -21,7 +21,7 @@ import typings.node.fsMod.Dirent
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
-import typings.node.fsMod.promisesNs.FileHandle
+import typings.node.fsMod.promises.FileHandle
 import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js

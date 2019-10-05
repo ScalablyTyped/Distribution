@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashEmbed
 
-import typings.semanticDashUiDashEmbed.SemanticUINs.Embed
-import typings.semanticDashUiDashEmbed.SemanticUINs.EmbedSettings
+import typings.semanticDashUiDashEmbed.SemanticUI.Embed
+import typings.semanticDashUiDashEmbed.SemanticUI.EmbedSettings
 import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedStrings.`get id`
 import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedStrings.`get placeholder`
 import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedStrings.`get sources`

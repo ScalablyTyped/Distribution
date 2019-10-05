@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersMapImageLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapImageLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapImageLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Sublayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.Collection
+import typings.arcgisDashJsDashApi.__esri.MapImageLayer
+import typings.arcgisDashJsDashApi.__esri.MapImageLayerProperties
+import typings.arcgisDashJsDashApi.__esri.Sublayer
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

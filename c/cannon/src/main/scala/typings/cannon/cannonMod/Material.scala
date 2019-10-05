@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Material")
 @js.native
 class Material protected ()
-  extends typings.cannon.CANNONNs.Material {
+  extends typings.cannon.CANNON.Material {
   def this(name: String) = this()
 }
 

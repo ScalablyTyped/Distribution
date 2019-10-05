@@ -1,5 +1,6 @@
 package typings.restify.restifyMod
 
+import typings.bunyan.bunyanMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Router protected () extends js.Object {
   def this(options: RouterOptions) = this()
-  var log: js.UndefOr[typings.bunyan.bunyanMod.^] = js.native
+  var log: js.UndefOr[^] = js.native
   var name: String = js.native
   var onceNext: Boolean = js.native
   var strictNext: Boolean = js.native

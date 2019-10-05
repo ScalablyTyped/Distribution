@@ -1,7 +1,7 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPNs.JsGridNs.IStyleTypeNs.Splitter
-import typings.sharepoint.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle
+import typings.sharepoint.SP.JsGrid.IStyleType.Splitter
+import typings.sharepoint.SP.JsGrid.IStyleType.SplitterHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

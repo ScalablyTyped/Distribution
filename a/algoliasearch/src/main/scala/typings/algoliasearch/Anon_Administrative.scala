@@ -1,6 +1,6 @@
 package typings.algoliasearch
 
-import typings.algoliasearch.algoliasearchMod.PlacesNs.highlightResultValueInterface
+import typings.algoliasearch.algoliasearchMod.Places.highlightResultValueInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

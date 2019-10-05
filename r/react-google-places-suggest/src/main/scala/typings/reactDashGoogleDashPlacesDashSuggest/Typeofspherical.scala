@@ -1,7 +1,7 @@
 package typings.reactDashGoogleDashPlacesDashSuggest
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.MVCArray
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.MVCArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.reactDashAlert.reactDashAlertMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashAlert.reactDashAlertStrings.fade
 import typings.reactDashAlert.reactDashAlertStrings.scale
 import scala.scalajs.js
@@ -19,4 +20,8 @@ object Transitions {
     __obj.asInstanceOf[Transitions]
   }
 }
+
+@JSImport("react-alert", "transitions")
+@js.native
+object transitions extends TopLevel[Transitions]
 

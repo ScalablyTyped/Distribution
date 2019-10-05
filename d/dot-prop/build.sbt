@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dot-prop"
-version := "5.1.0-3f810e"
-scalaVersion := "2.12.9"
+version := "5.1.0-ab1daf"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

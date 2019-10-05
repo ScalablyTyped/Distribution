@@ -27,12 +27,12 @@ object ListUsersRequest {
   @scala.inline
   def apply(
     AccountId: NonEmptyString,
-    MaxResults: js.UndefOr[ProfileServiceMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null,
     UserEmail: EmailAddress = null
   ): ListUsersRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (UserEmail != null) __obj.updateDynamic("UserEmail")(UserEmail)
     __obj.asInstanceOf[ListUsersRequest]

@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashCore.distEngineMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.Anon_Factory
 import typings.atTensorflowTfjsDashCore.Anon_Grads
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.DataMover
@@ -154,6 +155,10 @@ class Engine protected ()
   def time(query: js.Function0[Unit]): js.Promise[TimingInfo] = js.native
   def write(destBackend: KernelBackend, dataId: DataId, values: BackendValues): Unit = js.native
 }
+
+@JSImport("@tensorflow/tfjs-core/dist/engine", "ENGINE")
+@js.native
+object ENGINE extends TopLevel[Engine]
 
 /* static members */
 @JSImport("@tensorflow/tfjs-core/dist/engine", "Engine")

@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableMod.HandsontableNs.wotNs.CellCoords
+import typings.handsontable.handsontableMod.Handsontable.wot.CellCoords
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

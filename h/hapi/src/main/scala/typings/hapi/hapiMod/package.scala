@@ -11,7 +11,7 @@ package object hapiMod {
   import typings.catbox.catboxMod.PolicyOptionVariants
   import typings.hapi.Anon_Cache
   import typings.hapi.Anon_Constructor
-  import typings.hapi.hapiMod.LifecycleNs.Method
+  import typings.hapi.hapiMod.Lifecycle.Method
   import typings.hapi.hapiNumbers.`false`
   import typings.hapi.hapiNumbers.`true`
   import typings.joi.joiMod.Schema

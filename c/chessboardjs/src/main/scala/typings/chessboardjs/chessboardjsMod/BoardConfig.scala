@@ -36,15 +36,15 @@ object BoardConfig {
     draggable: js.UndefOr[Boolean] = js.undefined,
     dropOffBoard: DropOffBoardType = null,
     moveSpeed: Double | SpeedType = null,
-    onChange: Callback = null,
-    onDragMove: Callback = null,
-    onDragStart: Callback = null,
-    onDrop: Callback = null,
-    onMouseoutSquare: Callback = null,
-    onMouseoverSquare: Callback = null,
-    onMoveEnd: Callback = null,
-    onSnapEnd: Callback = null,
-    onSnapbackEnd: Callback = null,
+    onChange: () => Unit = null,
+    onDragMove: () => Unit = null,
+    onDragStart: () => Unit = null,
+    onDrop: () => Unit = null,
+    onMouseoutSquare: () => Unit = null,
+    onMouseoverSquare: () => Unit = null,
+    onMoveEnd: () => Unit = null,
+    onSnapEnd: () => Unit = null,
+    onSnapbackEnd: () => Unit = null,
     orientation: OrientationType = null,
     pieceTheme: String | Callback = null,
     position: PositionType = null,
@@ -60,15 +60,15 @@ object BoardConfig {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (dropOffBoard != null) __obj.updateDynamic("dropOffBoard")(dropOffBoard)
     if (moveSpeed != null) __obj.updateDynamic("moveSpeed")(moveSpeed.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onMouseoutSquare != null) __obj.updateDynamic("onMouseoutSquare")(onMouseoutSquare)
-    if (onMouseoverSquare != null) __obj.updateDynamic("onMouseoverSquare")(onMouseoverSquare)
-    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(onMoveEnd)
-    if (onSnapEnd != null) __obj.updateDynamic("onSnapEnd")(onSnapEnd)
-    if (onSnapbackEnd != null) __obj.updateDynamic("onSnapbackEnd")(onSnapbackEnd)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
+    if (onDragMove != null) __obj.updateDynamic("onDragMove")(js.Any.fromFunction0(onDragMove))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction0(onDrop))
+    if (onMouseoutSquare != null) __obj.updateDynamic("onMouseoutSquare")(js.Any.fromFunction0(onMouseoutSquare))
+    if (onMouseoverSquare != null) __obj.updateDynamic("onMouseoverSquare")(js.Any.fromFunction0(onMouseoverSquare))
+    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction0(onMoveEnd))
+    if (onSnapEnd != null) __obj.updateDynamic("onSnapEnd")(js.Any.fromFunction0(onSnapEnd))
+    if (onSnapbackEnd != null) __obj.updateDynamic("onSnapbackEnd")(js.Any.fromFunction0(onSnapbackEnd))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (pieceTheme != null) __obj.updateDynamic("pieceTheme")(pieceTheme.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

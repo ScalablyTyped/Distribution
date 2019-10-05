@@ -1,5 +1,6 @@
 package typings.reactDashTouch.reactDashTouchMod
 
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +17,8 @@ trait DraggableProps extends js.Object {
 
 object DraggableProps {
   @scala.inline
-  def apply(children: DraggableCallback, style: DraggableStyle): DraggableProps = {
-    val __obj = js.Dynamic.literal(children = children, style = style)
+  def apply(children: /* argument */ DraggableCallbackArgument => Element, style: DraggableStyle): DraggableProps = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), style = style)
   
     __obj.asInstanceOf[DraggableProps]
   }

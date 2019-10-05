@@ -45,9 +45,5 @@ trait NodeList extends /* index */ NumberDictionary[Node] {
 
 @JSGlobal("NodeList")
 @js.native
-class NodeListCls () extends NodeList
-
-@JSGlobal("NodeList")
-@js.native
 object NodeList extends Instantiable0[NodeList]
 

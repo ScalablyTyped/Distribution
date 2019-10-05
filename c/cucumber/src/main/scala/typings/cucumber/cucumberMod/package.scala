@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object cucumberMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.cucumber.cucumberMod.eventsNs.Event
+  import typings.cucumber.cucumberMod.events.Event
 
   type EventHook = js.Function2[/* event */ Event, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
   type GlobalHookCode = js.Function1[/* callback */ js.UndefOr[CallbackStepDefinition], Unit]

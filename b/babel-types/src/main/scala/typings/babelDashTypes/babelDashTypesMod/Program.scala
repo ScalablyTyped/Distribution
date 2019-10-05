@@ -43,3 +43,11 @@ object Program {
   }
 }
 
+@JSImport("babel-types", "program")
+@js.native
+object program extends js.Object {
+  def apply(): Program = js.native
+  def apply(body: js.Array[Statement | ModuleDeclaration]): Program = js.native
+  def apply(body: js.Array[Statement | ModuleDeclaration], directives: js.Array[Directive]): Program = js.native
+}
+

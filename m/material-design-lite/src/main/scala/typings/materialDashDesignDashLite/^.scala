@@ -1,6 +1,6 @@
 package typings.materialDashDesignDashLite
 
-import typings.materialDashDesignDashLite.MaterialDesignLiteNs.ComponentHandler
+import typings.materialDashDesignDashLite.MaterialDesignLite.ComponentHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.rss.rssMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rss.rssMod.NodeRSSNs.FeedOptions
-import typings.rss.rssMod.NodeRSSNs.RSS
-import typings.rss.rssMod.NodeRSSNs.RSSFactory
+import typings.rss.rssMod.NodeRSS.FeedOptions
+import typings.rss.rssMod.NodeRSS.RSS
+import typings.rss.rssMod.NodeRSS.RSSFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

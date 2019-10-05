@@ -1,8 +1,8 @@
 package typings.googleDashAdwordsDashScripts
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.BaseNs.Blob
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.DriveNs.File
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.Sheet
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Blob
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.File
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Sheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

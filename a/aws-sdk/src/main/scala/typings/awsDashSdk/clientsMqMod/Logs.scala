@@ -17,7 +17,7 @@ trait Logs extends js.Object {
 
 object Logs {
   @scala.inline
-  def apply(Audit: js.UndefOr[__boolean] = js.undefined, General: js.UndefOr[__boolean] = js.undefined): Logs = {
+  def apply(Audit: js.UndefOr[Boolean] = js.undefined, General: js.UndefOr[Boolean] = js.undefined): Logs = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Audit)) __obj.updateDynamic("Audit")(Audit)
     if (!js.isUndefined(General)) __obj.updateDynamic("General")(General)

@@ -1,19 +1,19 @@
 package typings.baiduDashApp
 
-import typings.baiduDashApp.swanNs.CameraDevice
-import typings.baiduDashApp.swanNs.EventType
-import typings.baiduDashApp.swanNs.ImageSizeType
-import typings.baiduDashApp.swanNs.ImageSourceType
-import typings.baiduDashApp.swanNs.LineCapType
-import typings.baiduDashApp.swanNs.LineJoinType
-import typings.baiduDashApp.swanNs.PaymentSignType
-import typings.baiduDashApp.swanNs.Scope
-import typings.baiduDashApp.swanNs.TimingFunction
-import typings.baiduDashApp.swanNs.TouchEventType
-import typings.baiduDashApp.swanNs.TransitionEventType
-import typings.baiduDashApp.swanNs.VideoSourceType
-import typings.baiduDashApp.swanNs.networkType
-import typings.baiduDashApp.swanNs.scanType
+import typings.baiduDashApp.swan.CameraDevice
+import typings.baiduDashApp.swan.EventType
+import typings.baiduDashApp.swan.ImageSizeType
+import typings.baiduDashApp.swan.ImageSourceType
+import typings.baiduDashApp.swan.LineCapType
+import typings.baiduDashApp.swan.LineJoinType
+import typings.baiduDashApp.swan.PaymentSignType
+import typings.baiduDashApp.swan.Scope
+import typings.baiduDashApp.swan.TimingFunction
+import typings.baiduDashApp.swan.TouchEventType
+import typings.baiduDashApp.swan.TransitionEventType
+import typings.baiduDashApp.swan.VideoSourceType
+import typings.baiduDashApp.swan.networkType
+import typings.baiduDashApp.swan.scanType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -254,7 +254,7 @@ object baiduDashAppStrings {
   sealed trait success extends js.Object
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.baiduDashApp.swanNs.EventType because Already inherited */ @js.native
+  - typings.baiduDashApp.swan.EventType because Already inherited */ @js.native
   sealed trait tap extends TouchEventType
   
   @js.native

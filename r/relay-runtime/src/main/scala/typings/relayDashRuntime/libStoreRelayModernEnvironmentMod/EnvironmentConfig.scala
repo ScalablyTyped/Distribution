@@ -3,7 +3,6 @@ package typings.relayDashRuntime.libStoreRelayModernEnvironmentMod
 import typings.relayDashRuntime.libHandlersRelayDefaultHandlerProviderMod.HandlerProvider
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.Network
 import typings.relayDashRuntime.libStoreRelayModernQueryExecutorMod.TaskScheduler
-import typings.relayDashRuntime.libStoreRelayStoreTypesMod.LogFunction
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.LoggerProvider
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.MissingFieldHandler
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.OperationLoader
@@ -14,16 +13,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EnvironmentConfig extends js.Object {
-  var configName: js.UndefOr[String] = js.undefined
-  var handlerProvider: js.UndefOr[HandlerProvider] = js.undefined
-  var log: js.UndefOr[LogFunction] = js.undefined
-  var loggerProvider: js.UndefOr[LoggerProvider] = js.undefined
-  var missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler]] = js.undefined
-  var network: Network
-  var operationLoader: js.UndefOr[OperationLoader] = js.undefined
-  var operationTracker: js.UndefOr[OperationTracker] = js.undefined
-  var scheduler: js.UndefOr[TaskScheduler] = js.undefined
-  var store: Store
+  val configName: js.UndefOr[String] = js.undefined
+  val handlerProvider: js.UndefOr[HandlerProvider | Null] = js.undefined
+  val loggerProvider: js.UndefOr[LoggerProvider | Null] = js.undefined
+  val missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler] | Null] = js.undefined
+  val network: Network
+  val operationLoader: js.UndefOr[OperationLoader | Null] = js.undefined
+  val operationTracker: js.UndefOr[OperationTracker | Null] = js.undefined
+  val scheduler: js.UndefOr[TaskScheduler | Null] = js.undefined
+  val store: Store
 }
 
 object EnvironmentConfig {
@@ -32,8 +30,7 @@ object EnvironmentConfig {
     network: Network,
     store: Store,
     configName: String = null,
-    handlerProvider: HandlerProvider = null,
-    log: LogFunction = null,
+    handlerProvider: /* handle */ String => js.Any = null,
     loggerProvider: LoggerProvider = null,
     missingFieldHandlers: js.Array[MissingFieldHandler] = null,
     operationLoader: OperationLoader = null,
@@ -42,8 +39,7 @@ object EnvironmentConfig {
   ): EnvironmentConfig = {
     val __obj = js.Dynamic.literal(network = network, store = store)
     if (configName != null) __obj.updateDynamic("configName")(configName)
-    if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(handlerProvider)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(js.Any.fromFunction1(handlerProvider))
     if (loggerProvider != null) __obj.updateDynamic("loggerProvider")(loggerProvider)
     if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers)
     if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader)

@@ -19,3 +19,9 @@ object Reduced {
   }
 }
 
+@JSImport("transducers-js", "reduced")
+@js.native
+object reduced extends js.Object {
+  def apply[TResult](x: TResult): Reduced[TResult] = js.native
+}
+

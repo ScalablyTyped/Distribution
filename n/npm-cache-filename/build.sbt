@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "npm-cache-filename"
-version := "1.0-dt-20190911Z-aedc7d"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20190911Z-7b2aa7"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

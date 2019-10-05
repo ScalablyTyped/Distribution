@@ -39,7 +39,7 @@ object ContainerStateChange {
   @scala.inline
   def apply(
     containerName: String = null,
-    exitCode: js.UndefOr[BoxedInteger] = js.undefined,
+    exitCode: Int | scala.Double = null,
     imageDigest: String = null,
     networkBindings: NetworkBindings = null,
     reason: String = null,
@@ -48,7 +48,7 @@ object ContainerStateChange {
   ): ContainerStateChange = {
     val __obj = js.Dynamic.literal()
     if (containerName != null) __obj.updateDynamic("containerName")(containerName)
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
     if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest)
     if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings)
     if (reason != null) __obj.updateDynamic("reason")(reason)

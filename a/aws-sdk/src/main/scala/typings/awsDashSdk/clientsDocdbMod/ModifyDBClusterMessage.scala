@@ -63,29 +63,29 @@ object ModifyDBClusterMessage {
   @scala.inline
   def apply(
     DBClusterIdentifier: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
+    BackupRetentionPeriod: Int | Double = null,
     CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
     DBClusterParameterGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EngineVersion: String = null,
     MasterUserPassword: String = null,
     NewDBClusterIdentifier: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | Double = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): ModifyDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (NewDBClusterIdentifier != null) __obj.updateDynamic("NewDBClusterIdentifier")(NewDBClusterIdentifier)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds)

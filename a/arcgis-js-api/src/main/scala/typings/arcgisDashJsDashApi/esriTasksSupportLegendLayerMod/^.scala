@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportLegendLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LegendLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.LegendLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

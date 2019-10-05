@@ -1,9 +1,10 @@
 package typings.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharepoint.SPClientTemplatesNs.FieldSchema
-import typings.sharepoint.SPClientTemplatesNs.ListSchema
-import typings.sharepoint.SPClientTemplatesNs.RenderContext
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPClientTemplates.FieldSchema
+import typings.sharepoint.SPClientTemplates.ListSchema
+import typings.sharepoint.SPClientTemplates.RenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,4 +27,8 @@ class SPMgr () extends js.Object {
   ): String = js.native
   def RenderHeader(renderCtx: RenderContext, field: FieldSchema): String = js.native
 }
+
+@JSGlobal("spMgr")
+@js.native
+object spMgr extends TopLevel[SPMgr]
 

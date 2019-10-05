@@ -1,6 +1,6 @@
 package typings.n3.n3Mod
 
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.rdfDashJs.rdfDashJsMod.Sink
 import scala.scalajs.js
 import scala.scalajs.js.`|`

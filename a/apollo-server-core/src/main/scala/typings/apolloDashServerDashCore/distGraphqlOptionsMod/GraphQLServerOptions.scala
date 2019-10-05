@@ -5,13 +5,22 @@ import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheCon
 import typings.apolloDashServerDashCaching.apolloDashServerDashCachingMod.InMemoryLRUCache
 import typings.apolloDashServerDashCaching.distKeyValueCacheMod.KeyValueCache
 import typings.apolloDashServerDashPluginDashBase.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLExecutionResult
 import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLExecutor
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLRequestContext
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.ValueOrPromise
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.WithRequired
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesStrings.document
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesStrings.operation
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesStrings.operationName
+import typings.apolloDashServerDashTypes.apolloDashServerDashTypesStrings.queryHash
 import typings.graphql.errorFormatErrorMod.GraphQLFormattedError
 import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.graphqlMod.GraphQLSchema
 import typings.graphql.graphqlMod.ValidationContext
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphqlDashExtensions.graphqlDashExtensionsMod.GraphQLExtension
 import typings.graphqlDashTools.distInterfacesMod.GraphQLParseOptions
 import typings.std.Record
@@ -51,9 +60,12 @@ object GraphQLServerOptions {
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     documentStore: InMemoryLRUCache[DocumentNode] = null,
-    executor: GraphQLExecutor[Record[String, _]] = null,
+    executor: /* requestContext */ WithRequired[
+      GraphQLRequestContext[Record[String, _]], 
+      document | operationName | operation | queryHash
+    ] => ValueOrPromise[GraphQLExecutionResult] = null,
     extensions: js.Array[js.Function0[GraphQLExtension[_]]] = null,
-    fieldResolver: GraphQLFieldResolver[_, TContext, StringDictionary[_]] = null,
+    fieldResolver: (_, StringDictionary[_], TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null,
     formatResponse: js.Function = null,
     parseOptions: GraphQLParseOptions = null,
@@ -71,9 +83,9 @@ object GraphQLServerOptions {
     if (dataSources != null) __obj.updateDynamic("dataSources")(js.Any.fromFunction0(dataSources))
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (documentStore != null) __obj.updateDynamic("documentStore")(documentStore)
-    if (executor != null) __obj.updateDynamic("executor")(executor)
+    if (executor != null) __obj.updateDynamic("executor")(js.Any.fromFunction1(executor))
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(formatResponse)
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions)

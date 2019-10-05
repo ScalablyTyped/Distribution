@@ -73,9 +73,9 @@ object CalendarListBaseProps {
     maxDate: TCalendarDate = null,
     minDate: TCalendarDate = null,
     monthFormat: String = null,
-    onDayLongPress: DateCallbackHandler = null,
-    onDayPress: DateCallbackHandler = null,
-    onMonthChange: DateCallbackHandler = null,
+    onDayLongPress: /* date */ DateObject => Unit = null,
+    onDayPress: /* date */ DateObject => Unit = null,
+    onMonthChange: /* date */ DateObject => Unit = null,
     onPressArrowLeft: /* substractMonth */ js.Function0[Unit] => Unit = null,
     onPressArrowRight: /* addMonth */ js.Function0[Unit] => Unit = null,
     onVisibleMonthsChange: /* months */ js.Array[DateObject] => Unit = null,
@@ -107,9 +107,9 @@ object CalendarListBaseProps {
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat)
-    if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(onDayLongPress)
-    if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
+    if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(js.Any.fromFunction1(onDayLongPress))
+    if (onDayPress != null) __obj.updateDynamic("onDayPress")(js.Any.fromFunction1(onDayPress))
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
     if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(js.Any.fromFunction1(onPressArrowLeft))
     if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(js.Any.fromFunction1(onPressArrowRight))
     if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(js.Any.fromFunction1(onVisibleMonthsChange))

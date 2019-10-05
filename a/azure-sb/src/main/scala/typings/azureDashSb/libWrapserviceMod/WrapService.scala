@@ -1,7 +1,7 @@
 package typings.azureDashSb.libWrapserviceMod
 
 import typings.azureDashSb.Anon_Callback
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.ResponseCallback
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.ResponseCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,12 +33,12 @@ object UpdateGroupRequest {
     GroupName: GroupNameType,
     UserPoolId: UserPoolIdType,
     Description: DescriptionType = null,
-    Precedence: js.UndefOr[PrecedenceType] = js.undefined,
+    Precedence: Int | Double = null,
     RoleArn: ArnType = null
   ): UpdateGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName, UserPoolId = UserPoolId)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Precedence)) __obj.updateDynamic("Precedence")(Precedence)
+    if (Precedence != null) __obj.updateDynamic("Precedence")(Precedence.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     __obj.asInstanceOf[UpdateGroupRequest]
   }

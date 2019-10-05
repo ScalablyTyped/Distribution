@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "authenticator"
-version := "1.1-dt-20190821Z-62d58c"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20190821Z-da21a1"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

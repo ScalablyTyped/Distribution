@@ -21,14 +21,10 @@ trait SearchFlowTemplatesRequest extends js.Object {
 
 object SearchFlowTemplatesRequest {
   @scala.inline
-  def apply(
-    filters: FlowTemplateFilters = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): SearchFlowTemplatesRequest = {
+  def apply(filters: FlowTemplateFilters = null, maxResults: Int | Double = null, nextToken: NextToken = null): SearchFlowTemplatesRequest = {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[SearchFlowTemplatesRequest]
   }

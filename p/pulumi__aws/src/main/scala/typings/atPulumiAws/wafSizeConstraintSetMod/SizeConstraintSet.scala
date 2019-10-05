@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafSizeConstraintSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.SizeConstraintSetSizeConstraint
+import typings.atPulumiAws.typesOutputMod.waf.SizeConstraintSetSizeConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

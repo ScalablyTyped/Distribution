@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionType")
 @js.native
 class FunctionType protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionType {
+  extends typings.typescriptDashServices.TypeScript.FunctionType {
   def this(
-    typeParameterList: typings.typescriptDashServices.TypeScriptNs.TypeParameterList,
-    parameterList: typings.typescriptDashServices.TypeScriptNs.ParameterList,
-    `type`: typings.typescriptDashServices.TypeScriptNs.AST
+    typeParameterList: typings.typescriptDashServices.TypeScript.TypeParameterList,
+    parameterList: typings.typescriptDashServices.TypeScript.ParameterList,
+    `type`: typings.typescriptDashServices.TypeScript.AST
   ) = this()
 }
 

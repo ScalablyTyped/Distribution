@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "BigInteger")
 @js.native
 class BigInteger ()
-  extends typings.jsrsasign.jsrsasignNs.BigInteger
+  extends typings.jsrsasign.jsrsasign.BigInteger
 
 /* static members */
 @JSImport("jsrsasign", "BigInteger")
 @js.native
 object BigInteger extends js.Object {
-  val ONE: typings.jsrsasign.jsrsasignNs.BigInteger = js.native
-  val ZERO: typings.jsrsasign.jsrsasignNs.BigInteger = js.native
+  val ONE: typings.jsrsasign.jsrsasign.BigInteger = js.native
+  val ZERO: typings.jsrsasign.jsrsasign.BigInteger = js.native
 }
 

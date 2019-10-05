@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafByteMatchSetMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.ByteMatchSetByteMatchTuple
+import typings.atPulumiAws.typesInputMod.waf.ByteMatchSetByteMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

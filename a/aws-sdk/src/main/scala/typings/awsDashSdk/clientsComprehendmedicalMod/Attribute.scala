@@ -42,21 +42,21 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    Id: js.UndefOr[Integer] = js.undefined,
-    RelationshipScore: js.UndefOr[Float] = js.undefined,
-    Score: js.UndefOr[Float] = js.undefined,
+    BeginOffset: Int | Double = null,
+    EndOffset: Int | Double = null,
+    Id: Int | Double = null,
+    RelationshipScore: Int | Double = null,
+    Score: Int | Double = null,
     Text: String = null,
     Traits: TraitList = null,
     Type: EntitySubType = null
   ): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset)
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset)
-    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(RelationshipScore)) __obj.updateDynamic("RelationshipScore")(RelationshipScore)
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score)
+    if (BeginOffset != null) __obj.updateDynamic("BeginOffset")(BeginOffset.asInstanceOf[js.Any])
+    if (EndOffset != null) __obj.updateDynamic("EndOffset")(EndOffset.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (RelationshipScore != null) __obj.updateDynamic("RelationshipScore")(RelationshipScore.asInstanceOf[js.Any])
+    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text)
     if (Traits != null) __obj.updateDynamic("Traits")(Traits)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

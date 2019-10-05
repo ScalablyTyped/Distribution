@@ -32,12 +32,12 @@ object DescribePatchPropertiesRequest {
   def apply(
     OperatingSystem: OperatingSystem,
     Property: PatchProperty,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     PatchSet: PatchSet = null
   ): DescribePatchPropertiesRequest = {
     val __obj = js.Dynamic.literal(OperatingSystem = OperatingSystem.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PatchSet != null) __obj.updateDynamic("PatchSet")(PatchSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchPropertiesRequest]

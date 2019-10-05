@@ -17,9 +17,9 @@ trait ListDomainsRequest extends js.Object {
 
 object ListDomainsRequest {
   @scala.inline
-  def apply(MaxNumberOfDomains: js.UndefOr[Integer] = js.undefined, NextToken: String = null): ListDomainsRequest = {
+  def apply(MaxNumberOfDomains: Int | Double = null, NextToken: String = null): ListDomainsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxNumberOfDomains)) __obj.updateDynamic("MaxNumberOfDomains")(MaxNumberOfDomains)
+    if (MaxNumberOfDomains != null) __obj.updateDynamic("MaxNumberOfDomains")(MaxNumberOfDomains.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDomainsRequest]
   }

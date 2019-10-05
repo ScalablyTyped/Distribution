@@ -1,5 +1,6 @@
 package typings.cordovaDashPluginDashDevice
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,4 +47,8 @@ object Device {
     __obj.asInstanceOf[Device]
   }
 }
+
+@JSGlobal("device")
+@js.native
+object device extends TopLevel[Device]
 

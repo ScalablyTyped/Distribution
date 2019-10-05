@@ -40,7 +40,7 @@ object CreateLaunchTemplateVersionRequest {
   def apply(
     LaunchTemplateData: RequestLaunchTemplateData,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null,
     SourceVersion: String = null,

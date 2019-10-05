@@ -31,7 +31,7 @@ object Principal {
   @scala.inline
   def apply(
     creationTime: DateTime = null,
-    external: js.UndefOr[Boolean] = js.undefined,
+    external: js.UndefOr[scala.Boolean] = js.undefined,
     id: String = null,
     lastUpdatedTime: DateTime = null,
     resourceShareArn: String = null

@@ -55,3 +55,13 @@ object ClassExpression {
   }
 }
 
+@JSImport("babel-types", "classExpression")
+@js.native
+object classExpression extends js.Object {
+  def apply(): ClassExpression = js.native
+  def apply(id: Identifier): ClassExpression = js.native
+  def apply(id: Identifier, superClass: Expression): ClassExpression = js.native
+  def apply(id: Identifier, superClass: Expression, body: ClassBody): ClassExpression = js.native
+  def apply(id: Identifier, superClass: Expression, body: ClassBody, decorators: js.Array[Decorator]): ClassExpression = js.native
+}
+

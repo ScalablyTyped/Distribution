@@ -1,5 +1,6 @@
 package typings.dateDashFns
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/fp/eachWeekOfIntervalWithOptions", JSImport.Namespace)
 @js.native
 object fpEachWeekOfIntervalWithOptionsMod extends js.Object {
-  val default: CurriedFn2[js.Object, Interval, js.Array[Date]] = js.native
+  @js.native
+  object default
+    extends TopLevel[CurriedFn2[js.Object, Interval, js.Array[Date]]]
+  
 }
 

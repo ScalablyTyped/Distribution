@@ -1,0 +1,100 @@
+package typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri
+
+import typings.leaflet.leafletMod.CrossOrigin
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Options for `L.esri.DynamicMapLayer`
+  */
+trait DynamicMapLayerOptions
+  extends RasterLayerOptions
+     with LayerOptionsBase {
+  /**
+    * If enabled, appends a timestamp to each request to ensure a fresh image is created server-side.
+    */
+  var disableCache: js.UndefOr[Boolean] = js.undefined
+  /**
+    * JSON object literal used to manipulate the layer symbology defined in the service itself. Requires a 10.1
+    * (or above) map service which supports dynamicLayers requests.
+    */
+  var dynamicLayers: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Output format of the image.
+    * @default 'png24'
+    */
+  var format: js.UndefOr[String] = js.undefined
+  /**
+    * 	SQL filters to define what features will be included in the image rendered by the service. An object is
+    * 	used with keys that map each query to its respective layer.
+    *
+    * { 3: "STATE_NAME='Kansas'", 9: "POP2007>25000" }
+    */
+  var layerDefs: js.UndefOr[js.Any] = js.undefined
+  /**
+    * An array of Layer IDs like [3,4,5] to show from the service.
+    */
+  var layers: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * Allow the server to produce transparent images.
+    */
+  var transparent: js.UndefOr[Boolean] = js.undefined
+}
+
+object DynamicMapLayerOptions {
+  @scala.inline
+  def apply(
+    url: String,
+    alt: String = null,
+    attribution: String = null,
+    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
+    className: String = null,
+    crossOrigin: CrossOrigin = null,
+    disableCache: js.UndefOr[Boolean] = js.undefined,
+    dynamicLayers: js.Any = null,
+    errorOverlayUrl: String = null,
+    f: String = null,
+    format: String = null,
+    interactive: js.UndefOr[Boolean] = js.undefined,
+    layerDefs: js.Any = null,
+    layers: js.Array[_] = null,
+    maxZoom: Int | Double = null,
+    minZoom: Int | Double = null,
+    opacity: Int | Double = null,
+    pane: String = null,
+    position: String = null,
+    proxy: String = null,
+    token: String = null,
+    transparent: js.UndefOr[Boolean] = js.undefined,
+    useCors: js.UndefOr[Boolean] = js.undefined,
+    zIndex: Int | Double = null
+  ): DynamicMapLayerOptions = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache)
+    if (dynamicLayers != null) __obj.updateDynamic("dynamicLayers")(dynamicLayers)
+    if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl)
+    if (f != null) __obj.updateDynamic("f")(f)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (layerDefs != null) __obj.updateDynamic("layerDefs")(layerDefs)
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(useCors)) __obj.updateDynamic("useCors")(useCors)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DynamicMapLayerOptions]
+  }
+}
+

@@ -38,7 +38,7 @@ object CopyFpgaImageRequest {
     SourceRegion: String,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Name: String = null
   ): CopyFpgaImageRequest = {
     val __obj = js.Dynamic.literal(SourceFpgaImageId = SourceFpgaImageId, SourceRegion = SourceRegion)

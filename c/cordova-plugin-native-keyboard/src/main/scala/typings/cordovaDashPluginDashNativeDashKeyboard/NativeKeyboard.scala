@@ -1,5 +1,6 @@
 package typings.cordovaDashPluginDashNativeDashKeyboard
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,4 +50,9 @@ trait NativeKeyboard extends js.Object {
     onError: js.Function1[/* err */ js.Any, Unit]
   ): Unit = js.native
 }
+
+/** NativeKeyboard instance */
+@JSGlobal("NativeKeyboard")
+@js.native
+object NativeKeyboard extends TopLevel[NativeKeyboard]
 

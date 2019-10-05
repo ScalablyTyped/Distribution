@@ -2,7 +2,7 @@ package typings.atOracleOraclejet
 
 import typings.atOracleOraclejet.atOracleOraclejetStrings.disable
 import typings.atOracleOraclejet.atOracleOraclejetStrings.enable
-import typings.atOracleOraclejet.ojdatagridMod.ojDataGridNs.HeaderContext
+import typings.atOracleOraclejet.ojdatagridMod.ojDataGrid.HeaderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

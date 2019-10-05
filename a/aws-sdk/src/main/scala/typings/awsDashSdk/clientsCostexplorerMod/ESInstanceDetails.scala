@@ -30,11 +30,11 @@ trait ESInstanceDetails extends js.Object {
 object ESInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
     InstanceClass: GenericString = null,
     InstanceSize: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
   ): ESInstanceDetails = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration)

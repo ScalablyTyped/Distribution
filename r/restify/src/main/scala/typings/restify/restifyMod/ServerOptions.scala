@@ -1,5 +1,6 @@
 package typings.restify.restifyMod
 
+import typings.bunyan.bunyanMod.^
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait ServerOptions extends js.Object {
   var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
   var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var log: js.UndefOr[typings.bunyan.bunyanMod.^] = js.undefined
+  var log: js.UndefOr[^] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var noWriteContinue: js.UndefOr[Boolean] = js.undefined
   var onceNext: js.UndefOr[Boolean] = js.undefined
@@ -49,7 +50,7 @@ object ServerOptions {
     httpsServerOptions: typings.node.httpsMod.ServerOptions = null,
     ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer | (js.Array[String | Buffer]) = null,
-    log: typings.bunyan.bunyanMod.^ = null,
+    log: ^ = null,
     name: String = null,
     noWriteContinue: js.UndefOr[Boolean] = js.undefined,
     onceNext: js.UndefOr[Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 package typings.jsoneditor.jsoneditorMod
 
-import typings.ace.AceAjaxNs.Ace
+import typings.ace.AceAjax.Ace
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

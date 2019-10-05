@@ -1,14 +1,14 @@
 package typings.atPulumiAws.codebuildProjectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectArtifacts
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectCache
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectEnvironment
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectLogsConfig
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSecondaryArtifact
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSecondarySource
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectSource
-import typings.atPulumiAws.typesInputMod.codebuildNs.ProjectVpcConfig
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectArtifacts
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectCache
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectEnvironment
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectLogsConfig
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectSecondaryArtifact
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectSecondarySource
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectSource
+import typings.atPulumiAws.typesInputMod.codebuild.ProjectVpcConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.dogapi.dogapiMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.dogapi.Anon_Aggregationkey
 import typings.std.Error
 import scala.scalajs.js
@@ -20,4 +21,8 @@ trait event extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* res */ EventCreateResponse, Unit]
   ): Unit = js.native
 }
+
+@JSImport("dogapi", "event")
+@js.native
+object event extends TopLevel[event]
 

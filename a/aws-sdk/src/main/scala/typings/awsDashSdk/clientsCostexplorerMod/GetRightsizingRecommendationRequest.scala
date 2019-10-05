@@ -26,12 +26,12 @@ object GetRightsizingRecommendationRequest {
     Service: GenericString,
     Filter: Expression = null,
     NextPageToken: NextPageToken = null,
-    PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
+    PageSize: Int | Double = null
   ): GetRightsizingRecommendationRequest = {
     val __obj = js.Dynamic.literal(Service = Service)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
     if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRightsizingRecommendationRequest]
   }
 }

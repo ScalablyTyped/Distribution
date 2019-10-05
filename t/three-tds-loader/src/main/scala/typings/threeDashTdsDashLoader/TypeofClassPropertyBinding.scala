@@ -1,7 +1,7 @@
 package typings.threeDashTdsDashLoader
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.three.srcAnimationPropertyBindingMod.PropertyBindingNs.Composite
+import typings.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite
 import typings.three.threeMod.PropertyBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`

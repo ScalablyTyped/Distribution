@@ -23,7 +23,7 @@ object Notification {
   @scala.inline
   def apply(
     JobStatesToNotify: JobStateList = null,
-    NotifyAll: js.UndefOr[Boolean] = js.undefined,
+    NotifyAll: js.UndefOr[scala.Boolean] = js.undefined,
     SnsTopicARN: SnsTopicARN = null
   ): Notification = {
     val __obj = js.Dynamic.literal()

@@ -21,15 +21,11 @@ trait FileSizes extends js.Object {
 
 object FileSizes {
   @scala.inline
-  def apply(
-    base: js.UndefOr[FileSize] = js.undefined,
-    destination: js.UndefOr[FileSize] = js.undefined,
-    source: js.UndefOr[FileSize] = js.undefined
-  ): FileSizes = {
+  def apply(base: Int | Double = null, destination: Int | Double = null, source: Int | Double = null): FileSizes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base)
-    if (!js.isUndefined(destination)) __obj.updateDynamic("destination")(destination)
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSizes]
   }
 }

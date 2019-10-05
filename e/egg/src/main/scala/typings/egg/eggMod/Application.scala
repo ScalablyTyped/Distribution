@@ -49,6 +49,6 @@ class Application () extends EggApplication {
     * @see Context#runInBackground
     * @param {Function} scope - the first args is an anonymous ctx
     */
-  def runInBackground(scope: js.Function1[/* ctx */ typings.eggDashView.eggMod.Context, Unit]): Unit = js.native
+  def runInBackground(scope: js.Function1[/* ctx */ Context, Unit]): Unit = js.native
 }
 

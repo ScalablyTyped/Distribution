@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mqGetBrokerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.mqNs.GetBrokerLogs
+import typings.atPulumiAws.typesInputMod.mq.GetBrokerLogs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

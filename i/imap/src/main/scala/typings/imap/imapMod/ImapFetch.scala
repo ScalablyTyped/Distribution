@@ -2,7 +2,7 @@ package typings.imap.imapMod
 
 import typings.imap.imapStrings.error
 import typings.imap.imapStrings.message
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

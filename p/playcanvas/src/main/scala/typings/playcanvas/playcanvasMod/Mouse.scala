@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Mouse")
 @js.native
 class Mouse ()
-  extends typings.playcanvas.pcNs.Mouse {
+  extends typings.playcanvas.pc.Mouse {
   def this(element: Element) = this()
 }
 

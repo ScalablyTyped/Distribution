@@ -64,7 +64,7 @@ object ImportImageResult {
   def apply(
     Architecture: String = null,
     Description: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Hypervisor: String = null,
     ImageId: String = null,
     ImportTaskId: String = null,

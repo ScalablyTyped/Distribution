@@ -1,6 +1,6 @@
 package typings.atPhosphorWidgets.atPhosphorWidgetsMod
 
-import typings.atPhosphorWidgets.libScrollbarMod.ScrollBarNs.IOptions
+import typings.atPhosphorWidgets.libScrollbarMod.ScrollBar.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

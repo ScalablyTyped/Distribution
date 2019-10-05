@@ -17,7 +17,9 @@ class SurveyModel ()
      with ISurveyData
      with ISurveyImpl
      with ISurveyTriggerOwner
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[js.Any]
+     with ITextProcessor
+     with ISurveyErrorOwner {
   def this(jsonObj: js.Any) = this()
   /**
     * depricated, misspelling, use pageCount property
@@ -1138,7 +1140,8 @@ class SurveyModel ()
   def getCorrectedAnswerCount(): Double = js.native
   def getCorrectedAnswers(): Double = js.native
   def getDataValueCore(valuesHash: js.Any, key: String): js.Any = js.native
-  def getErrorCustomText(text: String, error: SurveyError): String = js.native
+  /* CompleteClass */
+  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* CompleteClass */
   override def getFilteredProperties(): js.Any = js.native
   /* CompleteClass */
@@ -1149,8 +1152,10 @@ class SurveyModel ()
   def getInCorrectedAnswerCount(): Double = js.native
   def getInCorrectedAnswers(): Double = js.native
   def getLocString(str: String): js.Any = js.native
-  def getLocale(): String = js.native
-  def getMarkdownHtml(text: String): String = js.native
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
   /* CompleteClass */
   override def getObjects(pages: js.Array[String], questions: js.Array[String]): js.Array[_] = js.native
   def getPage(index: Double): PageModel = js.native
@@ -1189,7 +1194,8 @@ class SurveyModel ()
     */
   def getPlainData(): js.Array[_] = js.native
   def getPlainData(options: Anon_Calculations): js.Array[_] = js.native
-  def getProcessedText(text: String): String = js.native
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   /**
     * Returns the progress that a user made by answering on the survey.
     */
@@ -1324,8 +1330,10 @@ class SurveyModel ()
     */
   def prevPage(): Boolean = js.native
   def processHtml(html: String): String = js.native
-  def processText(text: String, returnDisplayValue: Boolean): String = js.native
-  def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
+  /* CompleteClass */
+  override def processText(text: String, returnDisplayValue: Boolean): String = js.native
+  /* CompleteClass */
+  override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
   def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
   @JSName("questionAdded")
   def questionAdded_Any(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native

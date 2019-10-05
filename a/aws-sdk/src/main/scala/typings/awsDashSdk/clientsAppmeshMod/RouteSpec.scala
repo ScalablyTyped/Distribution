@@ -21,14 +21,10 @@ trait RouteSpec extends js.Object {
 
 object RouteSpec {
   @scala.inline
-  def apply(
-    httpRoute: HttpRoute = null,
-    priority: js.UndefOr[RoutePriority] = js.undefined,
-    tcpRoute: TcpRoute = null
-  ): RouteSpec = {
+  def apply(httpRoute: HttpRoute = null, priority: Int | Double = null, tcpRoute: TcpRoute = null): RouteSpec = {
     val __obj = js.Dynamic.literal()
     if (httpRoute != null) __obj.updateDynamic("httpRoute")(httpRoute)
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (tcpRoute != null) __obj.updateDynamic("tcpRoute")(tcpRoute)
     __obj.asInstanceOf[RouteSpec]
   }

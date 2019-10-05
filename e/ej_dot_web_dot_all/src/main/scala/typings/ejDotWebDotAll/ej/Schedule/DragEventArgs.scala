@@ -1,0 +1,43 @@
+package typings.ejDotWebDotAll.ej.Schedule
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DragEventArgs extends js.Object {
+  /** Returns the cancel option value.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** Returns the default dragging interval range in minutes
+    */
+  var interval: js.UndefOr[Double] = js.undefined
+  /** Returns the Schedule model.
+    */
+  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  /** Returns the target of the drag over appointment.
+    */
+  var target: js.UndefOr[js.Any] = js.undefined
+  /** Returns the name of the event.
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+}
+
+object DragEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    interval: Int | Double = null,
+    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    target: js.Any = null,
+    `type`: String = null
+  ): DragEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DragEventArgs]
+  }
+}
+

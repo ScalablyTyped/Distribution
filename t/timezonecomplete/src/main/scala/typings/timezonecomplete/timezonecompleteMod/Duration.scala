@@ -1,5 +1,6 @@
 package typings.timezonecomplete.timezonecompleteMod
 
+import typings.timezonecomplete.distLibBasicsMod.TimeUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,7 @@ class Duration ()
     * @throws timezonecomplete.Argument.S for invalid string
     */
   def this(s: String) = this()
-  def this(amount: Double, unit: typings.timezonecomplete.distLibBasicsMod.TimeUnit) = this()
+  def this(amount: Double, unit: TimeUnit) = this()
 }
 
 /* static members */

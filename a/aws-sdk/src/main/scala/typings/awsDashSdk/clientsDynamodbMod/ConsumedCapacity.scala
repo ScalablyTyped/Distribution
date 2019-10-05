@@ -38,22 +38,22 @@ trait ConsumedCapacity extends js.Object {
 object ConsumedCapacity {
   @scala.inline
   def apply(
-    CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
+    CapacityUnits: Int | scala.Double = null,
     GlobalSecondaryIndexes: SecondaryIndexesCapacityMap = null,
     LocalSecondaryIndexes: SecondaryIndexesCapacityMap = null,
-    ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
+    ReadCapacityUnits: Int | scala.Double = null,
     Table: Capacity = null,
     TableName: TableName = null,
-    WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
+    WriteCapacityUnits: Int | scala.Double = null
   ): ConsumedCapacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits)
+    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
     if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)
-    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits)
+    if (ReadCapacityUnits != null) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.asInstanceOf[js.Any])
     if (Table != null) __obj.updateDynamic("Table")(Table)
     if (TableName != null) __obj.updateDynamic("TableName")(TableName)
-    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits)
+    if (WriteCapacityUnits != null) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumedCapacity]
   }
 }

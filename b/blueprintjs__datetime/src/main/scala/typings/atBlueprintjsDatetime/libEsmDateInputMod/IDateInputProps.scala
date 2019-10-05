@@ -6,7 +6,7 @@ import typings.atBlueprintjsCore.libEsmComponentsFormsInputGroupMod.IInputGroupP
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeNumbers.`false`
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashDayDashPicker.typesPropsMod.DayPickerProps
 import typings.std.Date
 import typings.std.Partial

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticacheParameterGroupMod
 
-import typings.atPulumiAws.typesOutputMod.elasticacheNs.ParameterGroupParameter
+import typings.atPulumiAws.typesOutputMod.elasticache.ParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

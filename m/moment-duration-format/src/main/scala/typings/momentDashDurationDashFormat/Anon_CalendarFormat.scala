@@ -10,7 +10,7 @@ import typings.moment.momentMod.MomentBuiltinFormat
 import typings.moment.momentMod.MomentFormatSpecification
 import typings.moment.momentMod.MomentInput
 import typings.moment.momentMod.MomentParsingFlagsOpt
-import typings.moment.momentMod.unitOfTimeNs.All
+import typings.moment.momentMod.unitOfTime.All
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +22,9 @@ trait Anon_CalendarFormat extends js.Object {
   var RFC_2822: MomentBuiltinFormat = js.native
   var defaultFormat: String = js.native
   var defaultFormatUtc: String = js.native
-  val durationNs: Typeofduration = js.native
+  val duration: Typeofduration = js.native
   var fn: Moment = js.native
-  val unitOfTimeNs: js.Any = js.native
+  val unitOfTime: js.Any = js.native
   var version: String = js.native
   def apply(): Moment = js.native
   def apply(inp: MomentInput): Moment = js.native
@@ -35,7 +35,6 @@ trait Anon_CalendarFormat extends js.Object {
   def calendarFormat(m: Moment, now: Moment): String = js.native
   def defineLocale(language: String, localeSpec: Unit): Locale = js.native
   def defineLocale(language: String, localeSpec: LocaleSpecification): Locale = js.native
-  def duration(): Duration = js.native
   def duration(inp: DurationInputArg1): Duration = js.native
   def duration(inp: DurationInputArg1, unit: DurationInputArg2): Duration = js.native
   def invalid(): Moment = js.native

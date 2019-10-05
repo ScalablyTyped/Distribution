@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -323,8 +324,8 @@ object IgTileManager {
     cols: Int | Double = null,
     columnHeight: String | Double | js.Array[_] = null,
     columnWidth: String | Double | js.Array[_] = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
@@ -340,8 +341,8 @@ object IgTileManager {
     preventMaximizingSelector: String = null,
     rearrangeItems: js.UndefOr[Boolean] = js.undefined,
     regional: String | js.Object = null,
-    rendered: RenderedEvent = null,
-    rendering: RenderingEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    rendering: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit = null,
     requestType: String = null,
     responseContentType: String = null,
     responseDataKey: String = null,
@@ -352,12 +353,12 @@ object IgTileManager {
     rows: Int | Double = null,
     showRightPanelScroll: js.UndefOr[Boolean] = js.undefined,
     splitterOptions: IgTileManagerSplitterOptions = null,
-    tileMaximized: TileMaximizedEvent = null,
-    tileMaximizing: TileMaximizingEvent = null,
-    tileMinimized: TileMinimizedEvent = null,
-    tileMinimizing: TileMinimizingEvent = null,
-    tileRendered: TileRenderedEvent = null,
-    tileRendering: TileRenderingEvent = null,
+    tileMaximized: (/* event */ Event, /* ui */ TileMaximizedEventUIParam) => Unit = null,
+    tileMaximizing: (/* event */ Event, /* ui */ TileMaximizingEventUIParam) => Unit = null,
+    tileMinimized: (/* event */ Event, /* ui */ TileMinimizedEventUIParam) => Unit = null,
+    tileMinimizing: (/* event */ Event, /* ui */ TileMinimizingEventUIParam) => Unit = null,
+    tileRendered: (/* event */ Event, /* ui */ TileRenderedEventUIParam) => Unit = null,
+    tileRendering: (/* event */ Event, /* ui */ TileRenderingEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgTileManager = {
     val __obj = js.Dynamic.literal()
@@ -366,8 +367,8 @@ object IgTileManager {
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (columnHeight != null) __obj.updateDynamic("columnHeight")(columnHeight.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
@@ -383,8 +384,8 @@ object IgTileManager {
     if (preventMaximizingSelector != null) __obj.updateDynamic("preventMaximizingSelector")(preventMaximizingSelector)
     if (!js.isUndefined(rearrangeItems)) __obj.updateDynamic("rearrangeItems")(rearrangeItems)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2(rendering))
     if (requestType != null) __obj.updateDynamic("requestType")(requestType)
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
@@ -395,12 +396,12 @@ object IgTileManager {
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (!js.isUndefined(showRightPanelScroll)) __obj.updateDynamic("showRightPanelScroll")(showRightPanelScroll)
     if (splitterOptions != null) __obj.updateDynamic("splitterOptions")(splitterOptions)
-    if (tileMaximized != null) __obj.updateDynamic("tileMaximized")(tileMaximized)
-    if (tileMaximizing != null) __obj.updateDynamic("tileMaximizing")(tileMaximizing)
-    if (tileMinimized != null) __obj.updateDynamic("tileMinimized")(tileMinimized)
-    if (tileMinimizing != null) __obj.updateDynamic("tileMinimizing")(tileMinimizing)
-    if (tileRendered != null) __obj.updateDynamic("tileRendered")(tileRendered)
-    if (tileRendering != null) __obj.updateDynamic("tileRendering")(tileRendering)
+    if (tileMaximized != null) __obj.updateDynamic("tileMaximized")(js.Any.fromFunction2(tileMaximized))
+    if (tileMaximizing != null) __obj.updateDynamic("tileMaximizing")(js.Any.fromFunction2(tileMaximizing))
+    if (tileMinimized != null) __obj.updateDynamic("tileMinimized")(js.Any.fromFunction2(tileMinimized))
+    if (tileMinimizing != null) __obj.updateDynamic("tileMinimizing")(js.Any.fromFunction2(tileMinimizing))
+    if (tileRendered != null) __obj.updateDynamic("tileRendered")(js.Any.fromFunction2(tileRendered))
+    if (tileRendering != null) __obj.updateDynamic("tileRendering")(js.Any.fromFunction2(tileRendering))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManager]
   }

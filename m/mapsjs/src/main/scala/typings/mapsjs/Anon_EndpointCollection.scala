@@ -1,6 +1,6 @@
 package typings.mapsjs
 
-import typings.mapsjs.mapsjsMod.tileNs.quad
+import typings.mapsjs.mapsjsMod.tile.quad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

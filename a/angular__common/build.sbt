@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "angular__common"
-version := "8.2.7-2582c8"
-scalaVersion := "2.12.9"
+version := "8.2.9-213e16"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__core" % "8.2.7-53ac19",
-  "org.scalablytyped" %%% "rxjs" % "6.5.3-9938ed",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "angular__core" % "8.2.9-30ab1d",
+  "org.scalablytyped" %%% "rxjs" % "6.5.3-b128ef",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

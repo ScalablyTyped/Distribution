@@ -23,12 +23,18 @@ trait Position extends js.Object {
   var line: Double
 }
 
-object Position {
-  @scala.inline
-  def apply(character: Double, line: Double): Position = {
-    val __obj = js.Dynamic.literal(character = character, line = line)
-  
-    __obj.asInstanceOf[Position]
-  }
+@JSImport("vscode-languageserver-types", "Position")
+@js.native
+object Position extends js.Object {
+  /**
+    * Creates a new Position literal from the given line and character.
+    * @param line The position's line.
+    * @param character The position's character.
+    */
+  def create(line: Double, character: Double): Position = js.native
+  /**
+    * Checks whether the given liternal conforms to the [Position](#Position) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = js.native
 }
 

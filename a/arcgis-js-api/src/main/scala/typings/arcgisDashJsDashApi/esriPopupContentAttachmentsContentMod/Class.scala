@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupContentAttachmentsContentMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentsContent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttachmentsContentProperties
+import typings.arcgisDashJsDashApi.__esri.AttachmentsContent
+import typings.arcgisDashJsDashApi.__esri.AttachmentsContentProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

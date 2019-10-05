@@ -1,5 +1,6 @@
 package typings.node.clusterMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Error
 import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.node.eventsMod.EventEmitter
@@ -111,4 +112,8 @@ class Worker () extends EventEmitter {
   def send(message: js.Any, sendHandle: js.Any): Boolean = js.native
   def send(message: js.Any, sendHandle: js.Any, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
 }
+
+@JSImport("cluster", "worker")
+@js.native
+object worker extends TopLevel[Worker]
 

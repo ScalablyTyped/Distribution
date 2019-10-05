@@ -1,8 +1,8 @@
 package typings.hapi.hapiMod
 
 import typings.hapi.Anon_Annotated
-import typings.hapi.hapiMod.LifecycleNs.FailAction
-import typings.hapi.hapiMod.UtilNs.Dictionary
+import typings.hapi.hapiMod.Lifecycle.FailAction
+import typings.hapi.hapiMod.Util.Dictionary
 import typings.hapi.hapiNumbers.`false`
 import typings.hapi.hapiStrings.gunzip
 import scala.scalajs.js

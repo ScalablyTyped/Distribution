@@ -1,6 +1,6 @@
 package typings.jqueryDashMaskmoney
 
-import typings.jqueryDashMaskmoney.jQueryMaskMoneyNs.Options
+import typings.jqueryDashMaskmoney.jQueryMaskMoney.Options
 import typings.jqueryDashMaskmoney.jqueryDashMaskmoneyStrings.destroy
 import typings.jqueryDashMaskmoney.jqueryDashMaskmoneyStrings.mask
 import typings.jqueryDashMaskmoney.jqueryDashMaskmoneyStrings.unmasked

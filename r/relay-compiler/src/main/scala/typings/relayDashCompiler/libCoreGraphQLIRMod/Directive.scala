@@ -21,11 +21,11 @@ object Directive {
     args: js.Array[Argument],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Directive,
     loc: Location,
-    metadata: Metadata,
-    name: String
+    name: String,
+    metadata: Metadata = null
   ): Directive = {
-    val __obj = js.Dynamic.literal(args = args, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name)
-  
+    val __obj = js.Dynamic.literal(args = args, kind = kind, loc = loc, name = name)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive]
   }
 }

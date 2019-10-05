@@ -1,7 +1,7 @@
 package typings.sarif.sarifMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sarif.sarifMod.RunNs.columnKind
+import typings.sarif.sarifMod.Run.columnKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait Run extends js.Object {
   /**
     * Specifies the unit in which the tool measures columns.
     */
-  var columnKind: js.UndefOr[typings.sarif.sarifMod.RunNs.columnKind] = js.undefined
+  var columnKind: js.UndefOr[columnKind] = js.undefined
   /**
     * A conversion object that describes how a converter transformed an analysis tool's native reporting format into
     * the SARIF format.
@@ -133,67 +133,14 @@ trait Run extends js.Object {
   var webResponses: js.UndefOr[js.Array[WebResponse]] = js.undefined
 }
 
-object Run {
-  @scala.inline
-  def apply(
-    tool: Tool,
-    addresses: js.Array[Address] = null,
-    artifacts: js.Array[Artifact] = null,
-    automationDetails: RunAutomationDetails = null,
-    baselineGuid: String = null,
-    columnKind: columnKind = null,
-    conversion: Conversion = null,
-    defaultEncoding: String = null,
-    defaultSourceLanguage: String = null,
-    externalPropertyFileReferences: ExternalPropertyFileReferences = null,
-    graphs: js.Array[Graph] = null,
-    invocations: js.Array[Invocation] = null,
-    language: String = null,
-    logicalLocations: js.Array[LogicalLocation] = null,
-    newlineSequences: js.Array[String] = null,
-    originalUriBaseIds: StringDictionary[ArtifactLocation] = null,
-    policies: js.Array[ToolComponent] = null,
-    properties: PropertyBag = null,
-    redactionTokens: js.Array[String] = null,
-    results: js.Array[Result] = null,
-    runAggregates: js.Array[RunAutomationDetails] = null,
-    specialLocations: SpecialLocations = null,
-    taxonomies: js.Array[ToolComponent] = null,
-    threadFlowLocations: js.Array[ThreadFlowLocation] = null,
-    translations: js.Array[ToolComponent] = null,
-    versionControlProvenance: js.Array[VersionControlDetails] = null,
-    webRequests: js.Array[WebRequest] = null,
-    webResponses: js.Array[WebResponse] = null
-  ): Run = {
-    val __obj = js.Dynamic.literal(tool = tool)
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
-    if (automationDetails != null) __obj.updateDynamic("automationDetails")(automationDetails)
-    if (baselineGuid != null) __obj.updateDynamic("baselineGuid")(baselineGuid)
-    if (columnKind != null) __obj.updateDynamic("columnKind")(columnKind)
-    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
-    if (defaultSourceLanguage != null) __obj.updateDynamic("defaultSourceLanguage")(defaultSourceLanguage)
-    if (externalPropertyFileReferences != null) __obj.updateDynamic("externalPropertyFileReferences")(externalPropertyFileReferences)
-    if (graphs != null) __obj.updateDynamic("graphs")(graphs)
-    if (invocations != null) __obj.updateDynamic("invocations")(invocations)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
-    if (newlineSequences != null) __obj.updateDynamic("newlineSequences")(newlineSequences)
-    if (originalUriBaseIds != null) __obj.updateDynamic("originalUriBaseIds")(originalUriBaseIds)
-    if (policies != null) __obj.updateDynamic("policies")(policies)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (redactionTokens != null) __obj.updateDynamic("redactionTokens")(redactionTokens)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (runAggregates != null) __obj.updateDynamic("runAggregates")(runAggregates)
-    if (specialLocations != null) __obj.updateDynamic("specialLocations")(specialLocations)
-    if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
-    if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
-    if (versionControlProvenance != null) __obj.updateDynamic("versionControlProvenance")(versionControlProvenance)
-    if (webRequests != null) __obj.updateDynamic("webRequests")(webRequests)
-    if (webResponses != null) __obj.updateDynamic("webResponses")(webResponses)
-    __obj.asInstanceOf[Run]
-  }
+@JSImport("sarif", "Run")
+@js.native
+object Run extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.utf16CodeUnits
+    - typings.sarif.sarifStrings.unicodeCodePoints
+  */
+  trait columnKind extends js.Object
+  
 }
 

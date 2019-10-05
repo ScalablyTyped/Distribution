@@ -1,7 +1,7 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceMap
-import typings.winrt.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair
+import typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMap
+import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

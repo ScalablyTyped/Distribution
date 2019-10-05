@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ResourceLoader")
 @js.native
 class ResourceLoader protected ()
-  extends typings.playcanvas.pcNs.ResourceLoader {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.ResourceLoader {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

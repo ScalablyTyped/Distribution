@@ -78,7 +78,7 @@ object NumberValidateResponse {
     OriginalCountryCodeIso2: __string = null,
     OriginalPhoneNumber: __string = null,
     PhoneType: __string = null,
-    PhoneTypeCode: js.UndefOr[__integer] = js.undefined,
+    PhoneTypeCode: Int | Double = null,
     Timezone: __string = null,
     ZipCode: __string = null
   ): NumberValidateResponse = {
@@ -94,7 +94,7 @@ object NumberValidateResponse {
     if (OriginalCountryCodeIso2 != null) __obj.updateDynamic("OriginalCountryCodeIso2")(OriginalCountryCodeIso2)
     if (OriginalPhoneNumber != null) __obj.updateDynamic("OriginalPhoneNumber")(OriginalPhoneNumber)
     if (PhoneType != null) __obj.updateDynamic("PhoneType")(PhoneType)
-    if (!js.isUndefined(PhoneTypeCode)) __obj.updateDynamic("PhoneTypeCode")(PhoneTypeCode)
+    if (PhoneTypeCode != null) __obj.updateDynamic("PhoneTypeCode")(PhoneTypeCode.asInstanceOf[js.Any])
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
     if (ZipCode != null) __obj.updateDynamic("ZipCode")(ZipCode)
     __obj.asInstanceOf[NumberValidateResponse]

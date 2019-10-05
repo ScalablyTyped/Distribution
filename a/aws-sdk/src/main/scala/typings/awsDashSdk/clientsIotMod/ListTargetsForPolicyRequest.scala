@@ -21,10 +21,10 @@ trait ListTargetsForPolicyRequest extends js.Object {
 
 object ListTargetsForPolicyRequest {
   @scala.inline
-  def apply(policyName: PolicyName, marker: Marker = null, pageSize: js.UndefOr[PageSize] = js.undefined): ListTargetsForPolicyRequest = {
+  def apply(policyName: PolicyName, marker: Marker = null, pageSize: Int | Double = null): ListTargetsForPolicyRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName)
     if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsForPolicyRequest]
   }
 }

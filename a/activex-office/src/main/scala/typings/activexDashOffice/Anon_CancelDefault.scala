@@ -1,6 +1,6 @@
 package typings.activexDashOffice
 
-import typings.activexDashOffice.OfficeNs.CommandBarButton
+import typings.activexDashOffice.Office.CommandBarButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

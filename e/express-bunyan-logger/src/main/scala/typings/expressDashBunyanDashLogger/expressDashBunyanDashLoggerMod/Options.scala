@@ -1,5 +1,9 @@
 package typings.expressDashBunyanDashLogger.expressDashBunyanDashLoggerMod
 
+import typings.bunyan.bunyanMod.^
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +16,7 @@ import scala.scalajs.js.annotation._
   var immediate: js.UndefOr[Boolean] = js.undefined
   var includesFn: js.UndefOr[IncludesFunction] = js.undefined
   var levelFn: js.UndefOr[LevelFunction] = js.undefined
-  var logger: js.UndefOr[typings.bunyan.bunyanMod.^] = js.undefined
+  var logger: js.UndefOr[^] = js.undefined
   var obfuscate: js.UndefOr[js.Array[String]] = js.undefined
   var obfuscatePlaceholder: js.UndefOr[String] = js.undefined
   var parseUA: js.UndefOr[Boolean] = js.undefined
@@ -23,11 +27,11 @@ object Options {
   def apply(
     excludes: js.Array[String] = null,
     format: String | FormatFunction = null,
-    genReqId: RequestIdGenFunction = null,
+    genReqId: /* req */ Request => String = null,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    includesFn: IncludesFunction = null,
-    levelFn: LevelFunction = null,
-    logger: typings.bunyan.bunyanMod.^ = null,
+    includesFn: (/* req */ Request, /* res */ Response) => js.Any = null,
+    levelFn: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String = null,
+    logger: ^ = null,
     obfuscate: js.Array[String] = null,
     obfuscatePlaceholder: String = null,
     parseUA: js.UndefOr[Boolean] = js.undefined
@@ -35,10 +39,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (excludes != null) __obj.updateDynamic("excludes")(excludes)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (genReqId != null) __obj.updateDynamic("genReqId")(genReqId)
+    if (genReqId != null) __obj.updateDynamic("genReqId")(js.Any.fromFunction1(genReqId))
     if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (includesFn != null) __obj.updateDynamic("includesFn")(includesFn)
-    if (levelFn != null) __obj.updateDynamic("levelFn")(levelFn)
+    if (includesFn != null) __obj.updateDynamic("includesFn")(js.Any.fromFunction2(includesFn))
+    if (levelFn != null) __obj.updateDynamic("levelFn")(js.Any.fromFunction3(levelFn))
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (obfuscate != null) __obj.updateDynamic("obfuscate")(obfuscate)
     if (obfuscatePlaceholder != null) __obj.updateDynamic("obfuscatePlaceholder")(obfuscatePlaceholder)

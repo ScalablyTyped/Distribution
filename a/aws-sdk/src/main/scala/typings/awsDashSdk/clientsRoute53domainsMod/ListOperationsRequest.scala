@@ -21,14 +21,10 @@ trait ListOperationsRequest extends js.Object {
 
 object ListOperationsRequest {
   @scala.inline
-  def apply(
-    Marker: PageMarker = null,
-    MaxItems: js.UndefOr[PageMaxItems] = js.undefined,
-    SubmittedSince: Timestamp = null
-  ): ListOperationsRequest = {
+  def apply(Marker: PageMarker = null, MaxItems: Int | Double = null, SubmittedSince: Timestamp = null): ListOperationsRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (SubmittedSince != null) __obj.updateDynamic("SubmittedSince")(SubmittedSince)
     __obj.asInstanceOf[ListOperationsRequest]
   }

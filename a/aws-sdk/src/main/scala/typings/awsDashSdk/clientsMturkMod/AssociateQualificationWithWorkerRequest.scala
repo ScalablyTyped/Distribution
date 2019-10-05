@@ -28,11 +28,11 @@ object AssociateQualificationWithWorkerRequest {
   def apply(
     QualificationTypeId: EntityId,
     WorkerId: CustomerId,
-    IntegerValue: js.UndefOr[Integer] = js.undefined,
-    SendNotification: js.UndefOr[Boolean] = js.undefined
+    IntegerValue: Int | Double = null,
+    SendNotification: js.UndefOr[scala.Boolean] = js.undefined
   ): AssociateQualificationWithWorkerRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId, WorkerId = WorkerId)
-    if (!js.isUndefined(IntegerValue)) __obj.updateDynamic("IntegerValue")(IntegerValue)
+    if (IntegerValue != null) __obj.updateDynamic("IntegerValue")(IntegerValue.asInstanceOf[js.Any])
     if (!js.isUndefined(SendNotification)) __obj.updateDynamic("SendNotification")(SendNotification)
     __obj.asInstanceOf[AssociateQualificationWithWorkerRequest]
   }

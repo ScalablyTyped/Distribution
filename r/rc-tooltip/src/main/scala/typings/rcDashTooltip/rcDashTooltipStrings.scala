@@ -1,7 +1,7 @@
 package typings.rcDashTooltip
 
-import typings.rcDashTooltip.rcDashTooltipMod.RCTooltipNs.Placement
-import typings.rcDashTooltip.rcDashTooltipMod.RCTooltipNs.Trigger
+import typings.rcDashTooltip.rcDashTooltipMod.RCTooltip.Placement
+import typings.rcDashTooltip.rcDashTooltipMod.RCTooltip.Trigger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

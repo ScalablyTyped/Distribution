@@ -21,10 +21,10 @@ trait UpdateLagRequest extends js.Object {
 
 object UpdateLagRequest {
   @scala.inline
-  def apply(lagId: LagId, lagName: LagName = null, minimumLinks: js.UndefOr[Count] = js.undefined): UpdateLagRequest = {
+  def apply(lagId: LagId, lagName: LagName = null, minimumLinks: Int | Double = null): UpdateLagRequest = {
     val __obj = js.Dynamic.literal(lagId = lagId)
     if (lagName != null) __obj.updateDynamic("lagName")(lagName)
-    if (!js.isUndefined(minimumLinks)) __obj.updateDynamic("minimumLinks")(minimumLinks)
+    if (minimumLinks != null) __obj.updateDynamic("minimumLinks")(minimumLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLagRequest]
   }
 }

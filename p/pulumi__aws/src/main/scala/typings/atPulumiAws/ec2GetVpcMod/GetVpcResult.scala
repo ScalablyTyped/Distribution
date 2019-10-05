@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2GetVpcMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcCidrBlockAssociation
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetVpcFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetVpcCidrBlockAssociation
+import typings.atPulumiAws.typesOutputMod.ec2.GetVpcFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

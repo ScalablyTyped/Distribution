@@ -1,6 +1,6 @@
 package typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod
 
-import typings.atJupyterlabCoreutils.libSettingregistryMod.SettingsNs.IOptions
+import typings.atJupyterlabCoreutils.libSettingregistryMod.Settings.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

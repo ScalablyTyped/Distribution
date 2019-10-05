@@ -20,16 +20,17 @@ trait FrameComponentProps extends IframeHTMLAttributes[HTMLIFrameElement] {
 object FrameComponentProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     IframeHTMLAttributes: IframeHTMLAttributes[HTMLIFrameElement] = null,
+    children: ReactNode = null,
     contentDidMount: () => Unit = null,
     contentDidUpdate: () => Unit = null,
     head: ReactNode = null,
     initialContent: String = null,
     mountTarget: String = null
   ): FrameComponentProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IframeHTMLAttributes)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (contentDidMount != null) __obj.updateDynamic("contentDidMount")(js.Any.fromFunction0(contentDidMount))
     if (contentDidUpdate != null) __obj.updateDynamic("contentDidUpdate")(js.Any.fromFunction0(contentDidUpdate))
     if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])

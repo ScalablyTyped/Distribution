@@ -48,14 +48,14 @@ object CreateFilterRequest {
     Action: FilterAction = null,
     ClientToken: ClientToken = null,
     Description: FilterDescription = null,
-    Rank: js.UndefOr[FilterRank] = js.undefined,
+    Rank: Int | scala.Double = null,
     Tags: TagMap = null
   ): CreateFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FindingCriteria = FindingCriteria, Name = Name)
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank)
+    if (Rank != null) __obj.updateDynamic("Rank")(Rank.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateFilterRequest]
   }

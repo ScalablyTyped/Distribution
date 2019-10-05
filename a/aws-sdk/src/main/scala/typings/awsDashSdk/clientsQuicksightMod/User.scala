@@ -38,7 +38,7 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
+    Active: js.UndefOr[scala.Boolean] = js.undefined,
     Arn: Arn = null,
     Email: String = null,
     IdentityType: IdentityType = null,

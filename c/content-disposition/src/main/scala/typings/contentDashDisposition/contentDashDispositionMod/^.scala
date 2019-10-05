@@ -10,6 +10,5 @@ object ^ extends js.Object {
   def apply(): String = js.native
   def apply(filename: String): String = js.native
   def apply(filename: String, options: Options): String = js.native
-  def parse(contentDispositionHeader: String): ContentDisposition = js.native
 }
 

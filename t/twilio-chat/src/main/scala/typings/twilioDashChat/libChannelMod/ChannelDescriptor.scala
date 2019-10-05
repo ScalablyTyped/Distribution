@@ -1,7 +1,7 @@
 package typings.twilioDashChat.libChannelMod
 
-import typings.twilioDashChat.libChannelMod.ChannelNs.NotificationLevel
-import typings.twilioDashChat.libChannelMod.ChannelNs.Type
+import typings.twilioDashChat.libChannelMod.Channel.NotificationLevel
+import typings.twilioDashChat.libChannelMod.Channel.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

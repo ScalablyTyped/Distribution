@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.platformKeysNs.Match
-import typings.chromeDashApps.chromeNs.platformKeysNs.SelectDetails
-import typings.chromeDashApps.chromeNs.platformKeysNs.VerificationDetails
-import typings.chromeDashApps.chromeNs.platformKeysNs.VerificationResult
+import typings.chromeDashApps.chrome.platformKeys.Match
+import typings.chromeDashApps.chrome.platformKeys.SelectDetails
+import typings.chromeDashApps.chrome.platformKeys.VerificationDetails
+import typings.chromeDashApps.chrome.platformKeys.VerificationResult
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto

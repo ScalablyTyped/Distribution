@@ -1,7 +1,7 @@
 package typings.jsrsasign.jsrsasignMod
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.cryptoNs.DSA
-import typings.jsrsasign.jsrsasignNs.KJURNs.cryptoNs.ECDSA
+import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
+import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "X509")
 @js.native
 class X509 ()
-  extends typings.jsrsasign.jsrsasignNs.X509
+  extends typings.jsrsasign.jsrsasign.X509
 
 /* static members */
 @JSImport("jsrsasign", "X509")
@@ -21,7 +21,7 @@ object X509 extends js.Object {
     * @param h hexadecimal string of X.509 certificate for RSA/ECDSA/DSA public key
     * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
     */
-  def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   /**
     * get RSA/DSA/ECDSA public key object from PEM certificate string
     * @param sCertPEM PEM formatted RSA/ECDSA/DSA X.509 certificate
@@ -29,7 +29,7 @@ object X509 extends js.Object {
     * @description
     * NOTE: DSA is also supported since x509 1.1.2.
     */
-  def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasignNs.RSAKey | DSA | ECDSA = js.native
+  def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   /**
     * get public key information from PEM certificate
     * @param sCertPEM string of PEM formatted certificate

@@ -35,7 +35,7 @@ object ListPermissionsRequest {
   @scala.inline
   def apply(
     CatalogId: CatalogIdString = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null,
     Principal: DataLakePrincipal = null,
     Resource: Resource = null,
@@ -43,7 +43,7 @@ object ListPermissionsRequest {
   ): ListPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Principal != null) __obj.updateDynamic("Principal")(Principal)
     if (Resource != null) __obj.updateDynamic("Resource")(Resource)

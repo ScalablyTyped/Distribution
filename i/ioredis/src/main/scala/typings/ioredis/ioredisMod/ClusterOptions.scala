@@ -1,5 +1,6 @@
 package typings.ioredis.ioredisMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +27,7 @@ object ClusterOptions {
   @scala.inline
   def apply(
     clusterRetryStrategy: (/* times */ Double, /* reason */ js.UndefOr[Error]) => Double | Null = null,
-    dnsLookup: DNSLookupFunction = null,
+    dnsLookup: (/* hostname */ String, /* callback */ js.Function3[/* err */ ErrnoException, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     enableOfflineQueue: js.UndefOr[Boolean] = js.undefined,
     enableReadyCheck: js.UndefOr[Boolean] = js.undefined,
     lazyConnect: js.UndefOr[Boolean] = js.undefined,
@@ -42,7 +43,7 @@ object ClusterOptions {
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
     if (clusterRetryStrategy != null) __obj.updateDynamic("clusterRetryStrategy")(js.Any.fromFunction2(clusterRetryStrategy))
-    if (dnsLookup != null) __obj.updateDynamic("dnsLookup")(dnsLookup)
+    if (dnsLookup != null) __obj.updateDynamic("dnsLookup")(js.Any.fromFunction2(dnsLookup))
     if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue)
     if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck)
     if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect)

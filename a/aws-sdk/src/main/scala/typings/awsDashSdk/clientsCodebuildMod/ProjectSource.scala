@@ -49,18 +49,18 @@ object ProjectSource {
     `type`: SourceType,
     auth: SourceAuth = null,
     buildspec: String = null,
-    gitCloneDepth: js.UndefOr[GitCloneDepth] = js.undefined,
+    gitCloneDepth: Int | Double = null,
     gitSubmodulesConfig: GitSubmodulesConfig = null,
-    insecureSsl: js.UndefOr[WrapperBoolean] = js.undefined,
+    insecureSsl: js.UndefOr[scala.Boolean] = js.undefined,
     location: String = null,
-    reportBuildStatus: js.UndefOr[WrapperBoolean] = js.undefined,
+    reportBuildStatus: js.UndefOr[scala.Boolean] = js.undefined,
     sourceIdentifier: String = null
   ): ProjectSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec)
-    if (!js.isUndefined(gitCloneDepth)) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth)
+    if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])
     if (gitSubmodulesConfig != null) __obj.updateDynamic("gitSubmodulesConfig")(gitSubmodulesConfig)
     if (!js.isUndefined(insecureSsl)) __obj.updateDynamic("insecureSsl")(insecureSsl)
     if (location != null) __obj.updateDynamic("location")(location)

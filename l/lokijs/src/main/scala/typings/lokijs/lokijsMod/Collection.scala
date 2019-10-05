@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lokijs", "Collection")
 @js.native
 class Collection[E /* <: js.Object */] ()
-  extends typings.lokijs.LokiConstructorNs.Collection[E]
+  extends typings.lokijs.LokiConstructor.Collection[E]
 

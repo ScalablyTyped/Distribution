@@ -1,8 +1,8 @@
 package typings.ractive.ractiveMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ractive.RactiveNs.NewOptions
-import typings.ractive.RactiveNs.Static
+import typings.ractive.Ractive.NewOptions
+import typings.ractive.Ractive.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ractive", JSImport.Namespace)
 @js.native
 class ^ protected ()
-  extends typings.ractive.RactiveNs.Ractive {
+  extends typings.ractive.Ractive.Ractive {
   def this(options: NewOptions) = this()
 }
 

@@ -5,7 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.cote.coteMod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo- typings.cote.coteMod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts- typings.cote.coteMod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo, subset */ trait StatusAdvertisement extends RequesterAdvertisement {
+- typings.cote.coteMod.Advertisement because Already inherited
+- typings.cote.coteMod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo
+- typings.cote.coteMod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts
+- typings.cote.coteMod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo, subset */ trait StatusAdvertisement extends RequesterAdvertisement {
   /**
     * Event types that a Publisher can publish.
     */

@@ -1,5 +1,6 @@
 package typings.d3DashRandom.d3DashRandomMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ trait RandomLogNormal extends RandomNumberGenerationSource {
   def apply(mu: Double): js.Function0[Double] = js.native
   def apply(mu: Double, sigma: Double): js.Function0[Double] = js.native
 }
+
+@JSImport("d3-random", "randomLogNormal")
+@js.native
+object randomLogNormal extends TopLevel[RandomLogNormal]
 

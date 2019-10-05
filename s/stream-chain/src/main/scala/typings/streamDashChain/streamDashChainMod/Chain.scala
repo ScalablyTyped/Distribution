@@ -12,3 +12,10 @@ trait Chain extends Duplex {
   var streams: js.Array[Stream] = js.native
 }
 
+@JSImport("stream-chain", "chain")
+@js.native
+object chain extends js.Object {
+  def apply(fns: js.Array[StreamItem]): Chain = js.native
+  def apply(fns: js.Array[StreamItem], options: ChainOptions): Chain = js.native
+}
+

@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ trait MouseEvents extends js.Object {
   def on_dblclick(args: js.Any*): js.Any = js.native
   def on_mouse_move(args: js.Any*): js.Any = js.native
 }
+
+@JSImport("webix", "MouseEvents")
+@js.native
+object MouseEvents extends TopLevel[MouseEvents]
 

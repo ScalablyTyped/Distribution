@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(options: PlacesOptions): EventEmitter = js.native
-  def version(): String = js.native
 }
 

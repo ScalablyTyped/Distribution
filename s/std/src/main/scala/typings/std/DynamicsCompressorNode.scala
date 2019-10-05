@@ -19,13 +19,6 @@ trait DynamicsCompressorNode extends AudioNode {
 
 @JSGlobal("DynamicsCompressorNode")
 @js.native
-class DynamicsCompressorNodeCls protected () extends DynamicsCompressorNode {
-  def this(context: BaseAudioContext) = this()
-  def this(context: BaseAudioContext, options: DynamicsCompressorOptions) = this()
-}
-
-@JSGlobal("DynamicsCompressorNode")
-@js.native
 object DynamicsCompressorNode
   extends Instantiable1[/* context */ BaseAudioContext, DynamicsCompressorNode]
      with Instantiable2[

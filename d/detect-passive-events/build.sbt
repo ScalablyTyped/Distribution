@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "detect-passive-events"
-version := "1.0-dt-20180214Z-9a5bbc"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20180214Z-ad7fa8"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

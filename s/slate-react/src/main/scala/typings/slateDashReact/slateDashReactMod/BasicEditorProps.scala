@@ -30,7 +30,7 @@ object BasicEditorProps {
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    onChange: OnChangeFn = null,
+    onChange: /* change */ OnChangeParam => js.Any = null,
     placeholder: js.Any = null,
     plugins: Plugins = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -44,7 +44,7 @@ object BasicEditorProps {
     if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

@@ -42,3 +42,15 @@ object ForOfStatement {
   }
 }
 
+@JSImport("babel-types", "forOfStatement")
+@js.native
+object forOfStatement extends js.Object {
+  def apply(): ForOfStatement = js.native
+  def apply(left: LVal): ForOfStatement = js.native
+  def apply(left: LVal, right: Expression): ForOfStatement = js.native
+  def apply(left: LVal, right: Expression, body: Statement): ForOfStatement = js.native
+  def apply(left: VariableDeclaration): ForOfStatement = js.native
+  def apply(left: VariableDeclaration, right: Expression): ForOfStatement = js.native
+  def apply(left: VariableDeclaration, right: Expression, body: Statement): ForOfStatement = js.native
+}
+

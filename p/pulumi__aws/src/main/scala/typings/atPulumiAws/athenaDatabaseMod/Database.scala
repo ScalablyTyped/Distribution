@@ -1,6 +1,6 @@
 package typings.atPulumiAws.athenaDatabaseMod
 
-import typings.atPulumiAws.typesOutputMod.athenaNs.DatabaseEncryptionConfiguration
+import typings.atPulumiAws.typesOutputMod.athena.DatabaseEncryptionConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

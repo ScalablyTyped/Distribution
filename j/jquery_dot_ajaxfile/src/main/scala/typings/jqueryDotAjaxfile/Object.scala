@@ -1,6 +1,6 @@
 package typings.jqueryDotAjaxfile
 
-import typings.jqueryDotAjaxfile.ChaiNs.Assertion
+import typings.jqueryDotAjaxfile.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

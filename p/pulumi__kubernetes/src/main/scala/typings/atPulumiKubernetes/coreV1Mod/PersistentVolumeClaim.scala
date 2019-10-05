@@ -19,10 +19,10 @@ class PersistentVolumeClaim protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.PersistentVolumeClaim) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.PersistentVolumeClaim,
     opts: CustomResourceOptions
   ) = this()
 }

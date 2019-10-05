@@ -37,7 +37,7 @@ object EventDestination {
     MatchingEventTypes: EventTypes,
     Name: EventDestinationName,
     CloudWatchDestination: CloudWatchDestination = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     KinesisFirehoseDestination: KinesisFirehoseDestination = null,
     SNSDestination: SNSDestination = null
   ): EventDestination = {

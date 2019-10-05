@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.Row
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.RowTask
+import typings.atOracleOraclejet.ojganttMod.ojGantt.Row
+import typings.atOracleOraclejet.ojganttMod.ojGantt.RowTask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

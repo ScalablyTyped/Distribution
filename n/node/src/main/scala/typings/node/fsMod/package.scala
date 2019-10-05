@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object fsMod {
   import typings.node.Anon_EncodingFlagMode
-  import typings.node.NodeJSNs.TypedArray
+  import typings.node.NodeJS.TypedArray
   import typings.std.DataView
 
   type BinaryData = DataView | TypedArray

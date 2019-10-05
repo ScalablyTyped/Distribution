@@ -28,13 +28,13 @@ object ListDocumentsRequest {
   def apply(
     DocumentFilterList: DocumentFilterList = null,
     Filters: DocumentKeyValuesFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListDocumentsRequest = {
     val __obj = js.Dynamic.literal()
     if (DocumentFilterList != null) __obj.updateDynamic("DocumentFilterList")(DocumentFilterList)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListDocumentsRequest]
   }

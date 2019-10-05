@@ -1,9 +1,9 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.AllDocsMeta
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.DocumentId
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.DocumentKey
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.ExistingDocument
+import typings.pouchdbDashCore.PouchDB.Core.AllDocsMeta
+import typings.pouchdbDashCore.PouchDB.Core.DocumentId
+import typings.pouchdbDashCore.PouchDB.Core.DocumentKey
+import typings.pouchdbDashCore.PouchDB.Core.ExistingDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

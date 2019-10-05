@@ -43,7 +43,7 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
     JobCreationDate: dateType,
     JobStatus: jobStatusType,
     Error: ErrorDetails = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): GetServiceLastAccessedDetailsWithEntitiesResponse = {
     val __obj = js.Dynamic.literal(EntityDetailsList = EntityDetailsList, JobCompletionDate = JobCompletionDate, JobCreationDate = JobCreationDate, JobStatus = JobStatus.asInstanceOf[js.Any])

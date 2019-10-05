@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.AutoComplete
-import typings.kendoDashUi.kendoNs.uiNs.AutoCompleteOptions
+import typings.kendoDashUi.kendo.ui.AutoComplete
+import typings.kendoDashUi.kendo.ui.AutoCompleteOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

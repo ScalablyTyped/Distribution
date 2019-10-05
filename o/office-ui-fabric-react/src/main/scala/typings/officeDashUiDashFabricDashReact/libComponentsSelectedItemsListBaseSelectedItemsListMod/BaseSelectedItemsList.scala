@@ -5,7 +5,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBas
 import typings.officeDashUiDashFabricDashReact.libSelectionMod.Selection
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

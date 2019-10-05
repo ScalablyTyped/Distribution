@@ -37,3 +37,9 @@ object TSOptionalType {
   }
 }
 
+@JSImport("@babel/types", "tsOptionalType")
+@js.native
+object tsOptionalType extends js.Object {
+  def apply(typeAnnotation: TSType): TSOptionalType = js.native
+}
+

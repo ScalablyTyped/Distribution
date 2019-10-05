@@ -1,7 +1,7 @@
 package typings.cassanknex.cassanknexMod
 
 import typings.cassandraDashDriver.cassandraDashDriverMod.ResultCallback
-import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.Row
+import typings.cassandraDashDriver.cassandraDashDriverMod.types.Row
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

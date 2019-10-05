@@ -1,6 +1,6 @@
 package typings.cucumber.cucumberMod
 
-import typings.cucumber.cucumberMod.eventsNs.Event
+import typings.cucumber.cucumberMod.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

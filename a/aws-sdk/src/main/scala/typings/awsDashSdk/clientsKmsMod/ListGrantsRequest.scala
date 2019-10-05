@@ -21,9 +21,9 @@ trait ListGrantsRequest extends js.Object {
 
 object ListGrantsRequest {
   @scala.inline
-  def apply(KeyId: KeyIdType, Limit: js.UndefOr[LimitType] = js.undefined, Marker: MarkerType = null): ListGrantsRequest = {
+  def apply(KeyId: KeyIdType, Limit: Int | Double = null, Marker: MarkerType = null): ListGrantsRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[ListGrantsRequest]
   }

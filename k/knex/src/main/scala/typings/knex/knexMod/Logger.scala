@@ -14,16 +14,16 @@ trait Logger extends js.Object {
 object Logger {
   @scala.inline
   def apply(
-    debug: LogFn = null,
+    debug: /* message */ String => Unit = null,
     deprecate: (/* method */ String, /* alternative */ String) => Unit = null,
-    error: LogFn = null,
-    warn: LogFn = null
+    error: /* message */ String => Unit = null,
+    warn: /* message */ String => Unit = null
   ): Logger = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (deprecate != null) __obj.updateDynamic("deprecate")(js.Any.fromFunction2(deprecate))
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
+    if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Logger]
   }
 }

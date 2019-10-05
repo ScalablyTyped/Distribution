@@ -83,11 +83,11 @@ object CreateLaunchConfigurationType {
   @scala.inline
   def apply(
     LaunchConfigurationName: XmlStringMaxLen255,
-    AssociatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
     BlockDeviceMappings: BlockDeviceMappings = null,
     ClassicLinkVPCId: XmlStringMaxLen255 = null,
     ClassicLinkVPCSecurityGroups: ClassicLinkVPCSecurityGroups = null,
-    EbsOptimized: js.UndefOr[EbsOptimized] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     IamInstanceProfile: XmlStringMaxLen1600 = null,
     ImageId: XmlStringMaxLen255 = null,
     InstanceId: XmlStringMaxLen19 = null,

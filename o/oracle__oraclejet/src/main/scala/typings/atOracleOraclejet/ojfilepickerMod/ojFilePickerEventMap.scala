@@ -7,7 +7,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.clickAndDrop
 import typings.atOracleOraclejet.atOracleOraclejetStrings.drop
 import typings.atOracleOraclejet.atOracleOraclejetStrings.multiple
 import typings.atOracleOraclejet.atOracleOraclejetStrings.single
-import typings.atOracleOraclejet.ojfilepickerMod.ojFilePickerNs.ojSelect
+import typings.atOracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
 
 trait ojFilePickerEventMap extends HTMLElementEventMap {
   var acceptChanged: JetElementCustomEvent[js.Array[String] | Null]
-  var ojSelect: typings.atOracleOraclejet.ojfilepickerMod.ojFilePickerNs.ojSelect
+  var ojSelect: typings.atOracleOraclejet.ojfilepickerMod.ojFilePicker.ojSelect
   var selectOnChanged: JetElementCustomEvent[auto | click | drop | clickAndDrop]
   var selectionModeChanged: JetElementCustomEvent[multiple | single]
 }

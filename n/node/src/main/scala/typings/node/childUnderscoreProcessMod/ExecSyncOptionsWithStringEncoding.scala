@@ -1,7 +1,7 @@
 package typings.node.childUnderscoreProcessMod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

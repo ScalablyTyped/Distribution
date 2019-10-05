@@ -28,12 +28,12 @@ object ListAttachedPoliciesRequest {
   def apply(
     target: PolicyTarget,
     marker: Marker = null,
-    pageSize: js.UndefOr[PageSize] = js.undefined,
-    recursive: js.UndefOr[Recursive] = js.undefined
+    pageSize: Int | Double = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined
   ): ListAttachedPoliciesRequest = {
     val __obj = js.Dynamic.literal(target = target)
     if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
     __obj.asInstanceOf[ListAttachedPoliciesRequest]
   }

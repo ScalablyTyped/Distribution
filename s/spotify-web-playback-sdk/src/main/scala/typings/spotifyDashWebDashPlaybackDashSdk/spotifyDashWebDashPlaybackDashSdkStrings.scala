@@ -1,6 +1,6 @@
 package typings.spotifyDashWebDashPlaybackDashSdk
 
-import typings.spotifyDashWebDashPlaybackDashSdk.SpotifyNs.ErrorTypes
+import typings.spotifyDashWebDashPlaybackDashSdk.Spotify.ErrorTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

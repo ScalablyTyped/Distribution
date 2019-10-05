@@ -1,9 +1,9 @@
 package typings.markerDashAnimateDashUnobtrusive
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
-import typings.googlemaps.googleNs.mapsNs.LatLngLiteral
-import typings.googlemaps.googleNs.mapsNs.Marker
-import typings.markerDashAnimateDashUnobtrusive.jQueryNs.easingNs.IEasingType
+import typings.googlemaps.google.maps.LatLng
+import typings.googlemaps.google.maps.LatLngLiteral
+import typings.googlemaps.google.maps.Marker
+import typings.markerDashAnimateDashUnobtrusive.jQuery.easing.IEasingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

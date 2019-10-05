@@ -74,21 +74,21 @@ trait ContainerInstance extends js.Object {
 object ContainerInstance {
   @scala.inline
   def apply(
-    agentConnected: js.UndefOr[Boolean] = js.undefined,
+    agentConnected: js.UndefOr[scala.Boolean] = js.undefined,
     agentUpdateStatus: AgentUpdateStatus = null,
     attachments: Attachments = null,
     attributes: Attributes = null,
     containerInstanceArn: String = null,
     ec2InstanceId: String = null,
-    pendingTasksCount: js.UndefOr[Integer] = js.undefined,
+    pendingTasksCount: Int | scala.Double = null,
     registeredAt: Timestamp = null,
     registeredResources: Resources = null,
     remainingResources: Resources = null,
-    runningTasksCount: js.UndefOr[Integer] = js.undefined,
+    runningTasksCount: Int | scala.Double = null,
     status: String = null,
     statusReason: String = null,
     tags: Tags = null,
-    version: js.UndefOr[Long] = js.undefined,
+    version: Int | scala.Double = null,
     versionInfo: VersionInfo = null
   ): ContainerInstance = {
     val __obj = js.Dynamic.literal()
@@ -98,15 +98,15 @@ object ContainerInstance {
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (containerInstanceArn != null) __obj.updateDynamic("containerInstanceArn")(containerInstanceArn)
     if (ec2InstanceId != null) __obj.updateDynamic("ec2InstanceId")(ec2InstanceId)
-    if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount)
+    if (pendingTasksCount != null) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.asInstanceOf[js.Any])
     if (registeredAt != null) __obj.updateDynamic("registeredAt")(registeredAt)
     if (registeredResources != null) __obj.updateDynamic("registeredResources")(registeredResources)
     if (remainingResources != null) __obj.updateDynamic("remainingResources")(remainingResources)
-    if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount)
+    if (runningTasksCount != null) __obj.updateDynamic("runningTasksCount")(runningTasksCount.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
     if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (versionInfo != null) __obj.updateDynamic("versionInfo")(versionInfo)
     __obj.asInstanceOf[ContainerInstance]
   }

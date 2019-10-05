@@ -98,9 +98,9 @@ object CreateAutoScalingGroupType {
     MaxSize: AutoScalingGroupMaxSize,
     MinSize: AutoScalingGroupMinSize,
     AvailabilityZones: AvailabilityZones = null,
-    DefaultCooldown: js.UndefOr[Cooldown] = js.undefined,
-    DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined,
-    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
+    DefaultCooldown: Int | Double = null,
+    DesiredCapacity: Int | Double = null,
+    HealthCheckGracePeriod: Int | Double = null,
     HealthCheckType: XmlStringMaxLen32 = null,
     InstanceId: XmlStringMaxLen19 = null,
     LaunchConfigurationName: ResourceName = null,
@@ -108,7 +108,7 @@ object CreateAutoScalingGroupType {
     LifecycleHookSpecificationList: LifecycleHookSpecifications = null,
     LoadBalancerNames: LoadBalancerNames = null,
     MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
+    NewInstancesProtectedFromScaleIn: js.UndefOr[Boolean] = js.undefined,
     PlacementGroup: XmlStringMaxLen255 = null,
     ServiceLinkedRoleARN: ResourceName = null,
     Tags: Tags = null,
@@ -118,9 +118,9 @@ object CreateAutoScalingGroupType {
   ): CreateAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName, MaxSize = MaxSize, MinSize = MinSize)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(DefaultCooldown)) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown)
-    if (!js.isUndefined(DesiredCapacity)) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity)
-    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod)
+    if (DefaultCooldown != null) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown.asInstanceOf[js.Any])
+    if (DesiredCapacity != null) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.asInstanceOf[js.Any])
+    if (HealthCheckGracePeriod != null) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.asInstanceOf[js.Any])
     if (HealthCheckType != null) __obj.updateDynamic("HealthCheckType")(HealthCheckType)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
     if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName)

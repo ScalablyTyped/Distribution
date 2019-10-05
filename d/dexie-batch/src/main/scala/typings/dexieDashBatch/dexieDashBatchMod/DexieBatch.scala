@@ -1,7 +1,7 @@
 package typings.dexieDashBatch.dexieDashBatchMod
 
-import typings.dexie.dexieMod.DexieNs.Collection
-import typings.dexie.dexieMod.DexieNs.Promise
+import typings.dexie.dexieMod.Dexie.Collection
+import typings.dexie.dexieMod.Dexie.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

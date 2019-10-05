@@ -33,12 +33,12 @@ object MeterUsageRequest {
     ProductCode: ProductCode,
     Timestamp: Timestamp,
     UsageDimension: UsageDimension,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    UsageQuantity: js.UndefOr[UsageQuantity] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    UsageQuantity: Int | Double = null
   ): MeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode, Timestamp = Timestamp, UsageDimension = UsageDimension)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(UsageQuantity)) __obj.updateDynamic("UsageQuantity")(UsageQuantity)
+    if (UsageQuantity != null) __obj.updateDynamic("UsageQuantity")(UsageQuantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterUsageRequest]
   }
 }

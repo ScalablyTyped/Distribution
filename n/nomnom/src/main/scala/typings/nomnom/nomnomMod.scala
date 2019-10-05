@@ -1,7 +1,7 @@
 package typings.nomnom
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nomnom.NomnomInternalNs.Parser
+import typings.nomnom.NomnomInternal.Parser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

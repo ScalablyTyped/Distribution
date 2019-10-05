@@ -48,7 +48,7 @@ object ListRecoveryPointsByBackupVaultInput {
     ByCreatedBefore: timestamp = null,
     ByResourceArn: ARN = null,
     ByResourceType: ResourceType = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): ListRecoveryPointsByBackupVaultInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName)
@@ -57,7 +57,7 @@ object ListRecoveryPointsByBackupVaultInput {
     if (ByCreatedBefore != null) __obj.updateDynamic("ByCreatedBefore")(ByCreatedBefore)
     if (ByResourceArn != null) __obj.updateDynamic("ByResourceArn")(ByResourceArn)
     if (ByResourceType != null) __obj.updateDynamic("ByResourceType")(ByResourceType)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListRecoveryPointsByBackupVaultInput]
   }

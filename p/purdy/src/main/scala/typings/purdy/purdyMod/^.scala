@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: js.Object, options: Options): Unit = js.native
-  def purdy(options: Options): Instance = js.native
-  def stringify(obj: js.Object, options: Options): String = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.angularDashLocalDashStorage
 
-import typings.angularDashLocalDashStorage.angularDashLocalDashStorageMod.angularMod.localNs.storageNs.StorageType
+import typings.angularDashLocalDashStorage.angularDashLocalDashStorageMod.angularMod.local.storage.StorageType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

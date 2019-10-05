@@ -2,8 +2,8 @@ package typings.draftDashConvert.draftDashConvertMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.draftDashJs.draftDashJsMod.ContentBlock
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftInlineStyleType
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.EncodingNs.RawDraftEntity
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftInlineStyleType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Encoding.RawDraftEntity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

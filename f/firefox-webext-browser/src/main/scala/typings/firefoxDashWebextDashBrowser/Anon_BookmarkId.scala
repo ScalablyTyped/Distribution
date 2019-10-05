@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs._OverrideContextContext
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus._OverrideContextContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

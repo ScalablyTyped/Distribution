@@ -1,8 +1,8 @@
 package typings.atPulumiAws.batchJobDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.batchNs.JobDefinitionRetryStrategy
-import typings.atPulumiAws.typesInputMod.batchNs.JobDefinitionTimeout
+import typings.atPulumiAws.typesInputMod.batch.JobDefinitionRetryStrategy
+import typings.atPulumiAws.typesInputMod.batch.JobDefinitionTimeout
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

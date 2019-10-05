@@ -1,13 +1,13 @@
 package typings.openpgp.openpgpMod
 
 import typings.openpgp.Infinity
-import typings.openpgp.openpgpMod.enumsNs.keyStatus
-import typings.openpgp.openpgpMod.packetNs.List
-import typings.openpgp.openpgpMod.packetNs.PublicKey
-import typings.openpgp.openpgpMod.packetNs.PublicSubkey
-import typings.openpgp.openpgpMod.packetNs.SecretKey
-import typings.openpgp.openpgpMod.packetNs.SecretSubkey
-import typings.openpgp.openpgpMod.packetNs.Signature
+import typings.openpgp.openpgpMod.enums.keyStatus
+import typings.openpgp.openpgpMod.packet.List
+import typings.openpgp.openpgpMod.packet.PublicKey
+import typings.openpgp.openpgpMod.packet.PublicSubkey
+import typings.openpgp.openpgpMod.packet.SecretKey
+import typings.openpgp.openpgpMod.packet.SecretSubkey
+import typings.openpgp.openpgpMod.packet.Signature
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,7 +80,7 @@ class SubKey () extends js.Object {
     * @param date optional, override the creationtime of the revocation signature
     * @returns new subkey with revocation signature
     */
-  def revoke(primaryKey: SecretKey, reasonForRevocation: revoke_reasonForRevocation, date: Date): js.Promise[typings.openpgp.openpgpMod.keyNs.SubKey] = js.native
+  def revoke(primaryKey: SecretKey, reasonForRevocation: revoke_reasonForRevocation, date: Date): js.Promise[typings.openpgp.openpgpMod.key.SubKey] = js.native
   /**
     * Transforms structured subkey data to packetlist
     * @returns
@@ -92,8 +92,8 @@ class SubKey () extends js.Object {
     * @param primaryKey primary key used for validation
     * @returns
     */
-  def update(subKey: typings.openpgp.openpgpMod.keyNs.SubKey, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def update(subKey: typings.openpgp.openpgpMod.keyNs.SubKey, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(subKey: typings.openpgp.openpgpMod.key.SubKey, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(subKey: typings.openpgp.openpgpMod.key.SubKey, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verify subkey. Checks for revocation signatures, expiration time

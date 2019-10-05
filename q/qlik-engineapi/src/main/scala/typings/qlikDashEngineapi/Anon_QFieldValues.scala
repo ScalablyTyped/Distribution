@@ -1,6 +1,6 @@
 package typings.qlikDashEngineapi
 
-import typings.qlikDashEngineapi.EngineAPINs.IFieldValue
+import typings.qlikDashEngineapi.EngineAPI.IFieldValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

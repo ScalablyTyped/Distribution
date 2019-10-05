@@ -30,18 +30,18 @@ trait TaskStatisticsForAuditCheck extends js.Object {
 object TaskStatisticsForAuditCheck {
   @scala.inline
   def apply(
-    canceledFindingsCount: js.UndefOr[CanceledFindingsCount] = js.undefined,
-    failedFindingsCount: js.UndefOr[FailedFindingsCount] = js.undefined,
-    skippedFindingsCount: js.UndefOr[SkippedFindingsCount] = js.undefined,
-    succeededFindingsCount: js.UndefOr[SucceededFindingsCount] = js.undefined,
-    totalFindingsCount: js.UndefOr[TotalFindingsCount] = js.undefined
+    canceledFindingsCount: Int | Double = null,
+    failedFindingsCount: Int | Double = null,
+    skippedFindingsCount: Int | Double = null,
+    succeededFindingsCount: Int | Double = null,
+    totalFindingsCount: Int | Double = null
   ): TaskStatisticsForAuditCheck = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canceledFindingsCount)) __obj.updateDynamic("canceledFindingsCount")(canceledFindingsCount)
-    if (!js.isUndefined(failedFindingsCount)) __obj.updateDynamic("failedFindingsCount")(failedFindingsCount)
-    if (!js.isUndefined(skippedFindingsCount)) __obj.updateDynamic("skippedFindingsCount")(skippedFindingsCount)
-    if (!js.isUndefined(succeededFindingsCount)) __obj.updateDynamic("succeededFindingsCount")(succeededFindingsCount)
-    if (!js.isUndefined(totalFindingsCount)) __obj.updateDynamic("totalFindingsCount")(totalFindingsCount)
+    if (canceledFindingsCount != null) __obj.updateDynamic("canceledFindingsCount")(canceledFindingsCount.asInstanceOf[js.Any])
+    if (failedFindingsCount != null) __obj.updateDynamic("failedFindingsCount")(failedFindingsCount.asInstanceOf[js.Any])
+    if (skippedFindingsCount != null) __obj.updateDynamic("skippedFindingsCount")(skippedFindingsCount.asInstanceOf[js.Any])
+    if (succeededFindingsCount != null) __obj.updateDynamic("succeededFindingsCount")(succeededFindingsCount.asInstanceOf[js.Any])
+    if (totalFindingsCount != null) __obj.updateDynamic("totalFindingsCount")(totalFindingsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskStatisticsForAuditCheck]
   }
 }

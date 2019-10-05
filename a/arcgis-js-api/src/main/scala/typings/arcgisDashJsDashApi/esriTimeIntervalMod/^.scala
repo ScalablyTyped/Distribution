@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTimeIntervalMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeIntervalConstructor
+import typings.arcgisDashJsDashApi.__esri.TimeIntervalConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

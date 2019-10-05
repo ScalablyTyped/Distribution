@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsLocParamsRest
 import typings.astDashTypes.genKindsMod.FlowTypeKind
 import typings.astDashTypes.genKindsMod.FunctionTypeParamKind
 import typings.astDashTypes.genKindsMod.TypeParameterDeclarationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.FunctionTypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.FunctionTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

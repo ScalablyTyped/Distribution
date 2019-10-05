@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ForwardRenderer")
 @js.native
 class ForwardRenderer protected ()
-  extends typings.playcanvas.pcNs.ForwardRenderer {
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice) = this()
+  extends typings.playcanvas.pc.ForwardRenderer {
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
 }
 

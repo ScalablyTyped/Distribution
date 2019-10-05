@@ -1,6 +1,6 @@
 package typings.cordovaDashSqliteDashStorage
 
-import typings.cordovaDashSqliteDashStorage.SQLitePluginNs.SQLite
+import typings.cordovaDashSqliteDashStorage.SQLitePlugin.SQLite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

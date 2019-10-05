@@ -472,14 +472,14 @@ object GridOptions {
     functionsReadOnly: js.UndefOr[Boolean] = js.undefined,
     getBusinessKeyForNode: /* node */ RowNode => String = null,
     getChildCount: /* dataItem */ js.Any => Double = null,
-    getContextMenuItems: GetContextMenuItems = null,
-    getDataPath: GetDataPath = null,
+    getContextMenuItems: /* params */ GetContextMenuItemsParams => js.Array[String | MenuItemDef] = null,
+    getDataPath: /* data */ js.Any => js.Array[String] = null,
     getDocument: () => Document = null,
-    getMainMenuItems: GetMainMenuItems = null,
-    getNodeChildDetails: GetNodeChildDetails = null,
+    getMainMenuItems: /* params */ GetMainMenuItemsParams => js.Array[String | MenuItemDef] = null,
+    getNodeChildDetails: /* dataItem */ js.Any => NodeChildDetails = null,
     getRowClass: /* params */ js.Any => String | js.Array[String] = null,
     getRowHeight: js.Function = null,
-    getRowNodeId: GetRowNodeIdFunc = null,
+    getRowNodeId: /* data */ js.Any => String = null,
     getRowStyle: js.Function = null,
     gridAutoHeight: js.UndefOr[Boolean] = js.undefined,
     groupColumnDef: ColDef = null,
@@ -508,8 +508,8 @@ object GridOptions {
     infiniteInitialRowCount: Int | Double = null,
     isExternalFilterPresent: () => Boolean = null,
     isFullWidthCell: /* rowNode */ RowNode => Boolean = null,
-    isRowMaster: IsRowMaster = null,
-    isRowSelectable: IsRowSelectable = null,
+    isRowMaster: /* dataItem */ js.Any => Boolean = null,
+    isRowSelectable: /* node */ RowNode => Boolean = null,
     loadingOverlayComponent: Anon_ILoadingOverlayComp | String = null,
     loadingOverlayComponentFramework: js.Any = null,
     localeText: js.Any = null,
@@ -728,14 +728,14 @@ object GridOptions {
     if (!js.isUndefined(functionsReadOnly)) __obj.updateDynamic("functionsReadOnly")(functionsReadOnly)
     if (getBusinessKeyForNode != null) __obj.updateDynamic("getBusinessKeyForNode")(js.Any.fromFunction1(getBusinessKeyForNode))
     if (getChildCount != null) __obj.updateDynamic("getChildCount")(js.Any.fromFunction1(getChildCount))
-    if (getContextMenuItems != null) __obj.updateDynamic("getContextMenuItems")(getContextMenuItems)
-    if (getDataPath != null) __obj.updateDynamic("getDataPath")(getDataPath)
+    if (getContextMenuItems != null) __obj.updateDynamic("getContextMenuItems")(js.Any.fromFunction1(getContextMenuItems))
+    if (getDataPath != null) __obj.updateDynamic("getDataPath")(js.Any.fromFunction1(getDataPath))
     if (getDocument != null) __obj.updateDynamic("getDocument")(js.Any.fromFunction0(getDocument))
-    if (getMainMenuItems != null) __obj.updateDynamic("getMainMenuItems")(getMainMenuItems)
-    if (getNodeChildDetails != null) __obj.updateDynamic("getNodeChildDetails")(getNodeChildDetails)
+    if (getMainMenuItems != null) __obj.updateDynamic("getMainMenuItems")(js.Any.fromFunction1(getMainMenuItems))
+    if (getNodeChildDetails != null) __obj.updateDynamic("getNodeChildDetails")(js.Any.fromFunction1(getNodeChildDetails))
     if (getRowClass != null) __obj.updateDynamic("getRowClass")(js.Any.fromFunction1(getRowClass))
     if (getRowHeight != null) __obj.updateDynamic("getRowHeight")(getRowHeight)
-    if (getRowNodeId != null) __obj.updateDynamic("getRowNodeId")(getRowNodeId)
+    if (getRowNodeId != null) __obj.updateDynamic("getRowNodeId")(js.Any.fromFunction1(getRowNodeId))
     if (getRowStyle != null) __obj.updateDynamic("getRowStyle")(getRowStyle)
     if (!js.isUndefined(gridAutoHeight)) __obj.updateDynamic("gridAutoHeight")(gridAutoHeight)
     if (groupColumnDef != null) __obj.updateDynamic("groupColumnDef")(groupColumnDef)
@@ -764,8 +764,8 @@ object GridOptions {
     if (infiniteInitialRowCount != null) __obj.updateDynamic("infiniteInitialRowCount")(infiniteInitialRowCount.asInstanceOf[js.Any])
     if (isExternalFilterPresent != null) __obj.updateDynamic("isExternalFilterPresent")(js.Any.fromFunction0(isExternalFilterPresent))
     if (isFullWidthCell != null) __obj.updateDynamic("isFullWidthCell")(js.Any.fromFunction1(isFullWidthCell))
-    if (isRowMaster != null) __obj.updateDynamic("isRowMaster")(isRowMaster)
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(isRowSelectable)
+    if (isRowMaster != null) __obj.updateDynamic("isRowMaster")(js.Any.fromFunction1(isRowMaster))
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (loadingOverlayComponent != null) __obj.updateDynamic("loadingOverlayComponent")(loadingOverlayComponent.asInstanceOf[js.Any])
     if (loadingOverlayComponentFramework != null) __obj.updateDynamic("loadingOverlayComponentFramework")(loadingOverlayComponentFramework)
     if (localeText != null) __obj.updateDynamic("localeText")(localeText)

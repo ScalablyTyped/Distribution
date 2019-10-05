@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFullscreenMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FullscreenConstructor
+import typings.arcgisDashJsDashApi.__esri.FullscreenConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

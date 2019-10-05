@@ -8,11 +8,12 @@
 [warn ] Phase2ToScalaJs.scala:43 Processing mergerino [id => mergerino, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => mergerino, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building mergerino... [id => mergerino, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/mergerino/mergerinoMod/package.scala:22:82
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/mergerino/mergerinoMod.scala:39:82
 [E]      illegal cyclic reference involving type MultipleTopLevelPatch
-[E]      L22:   type Merge[S /* <: js.Object */] = js.Function2[/* source */ S, /* repeated */ MultipleTopLevelPatch[S], S]
+[E]      L39:   type Merge[S /* <: js.Object */] = js.Function2[/* source */ S, /* repeated */ MultipleTopLevelPatch[S], S]
 [E]                                                                                            ^
-[E] src/main/scala/typings/mergerino/mergerinoMod/package.scala: L22 [E1]
+[E] src/main/scala/typings/mergerino/mergerinoMod.scala: L39 [E1]
 [E] Failed to compile 'mergerino'
  [id => mergerino, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [mergerino => Compilation failed] [id => mergerino, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [mergerino => Compilation failed] [id => mergerino, phase => publish] 

@@ -38,7 +38,7 @@ object SystemInstanceDescription {
     s3BucketName: S3BucketName = null,
     summary: SystemInstanceSummary = null,
     validatedDependencyRevisions: DependencyRevisions = null,
-    validatedNamespaceVersion: js.UndefOr[Version] = js.undefined
+    validatedNamespaceVersion: Int | Double = null
   ): SystemInstanceDescription = {
     val __obj = js.Dynamic.literal()
     if (definition != null) __obj.updateDynamic("definition")(definition)
@@ -47,7 +47,7 @@ object SystemInstanceDescription {
     if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName)
     if (summary != null) __obj.updateDynamic("summary")(summary)
     if (validatedDependencyRevisions != null) __obj.updateDynamic("validatedDependencyRevisions")(validatedDependencyRevisions)
-    if (!js.isUndefined(validatedNamespaceVersion)) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion)
+    if (validatedNamespaceVersion != null) __obj.updateDynamic("validatedNamespaceVersion")(validatedNamespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInstanceDescription]
   }
 }

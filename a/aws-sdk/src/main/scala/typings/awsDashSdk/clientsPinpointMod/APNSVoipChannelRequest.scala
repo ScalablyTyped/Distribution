@@ -45,7 +45,7 @@ object APNSVoipChannelRequest {
     BundleId: __string = null,
     Certificate: __string = null,
     DefaultAuthenticationMethod: __string = null,
-    Enabled: js.UndefOr[__boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     PrivateKey: __string = null,
     TeamId: __string = null,
     TokenKey: __string = null,

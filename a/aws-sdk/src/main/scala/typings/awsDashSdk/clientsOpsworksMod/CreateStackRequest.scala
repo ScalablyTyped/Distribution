@@ -102,8 +102,8 @@ object CreateStackRequest {
     DefaultSshKeyName: String = null,
     DefaultSubnetId: String = null,
     HostnameTheme: String = null,
-    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
     VpcId: String = null
   ): CreateStackRequest = {
     val __obj = js.Dynamic.literal(DefaultInstanceProfileArn = DefaultInstanceProfileArn, Name = Name, Region = Region, ServiceRoleArn = ServiceRoleArn)

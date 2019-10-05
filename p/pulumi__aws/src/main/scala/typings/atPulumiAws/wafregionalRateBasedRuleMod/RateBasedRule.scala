@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRateBasedRuleMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.RateBasedRulePredicate
+import typings.atPulumiAws.typesOutputMod.wafregional.RateBasedRulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -30,5 +30,8 @@ object Stash extends js.Object {
     message: String,
     flags: Double
   ): js.Promise[typings.nodegit.oidMod.Oid] = js.native
+  type APPLY_FLAGS = typings.nodegit.stashMod.Stash.APPLY_FLAGS
+  type APPLY_PROGRESS = typings.nodegit.stashMod.Stash.APPLY_PROGRESS
+  type FLAGS = typings.nodegit.stashMod.Stash.FLAGS
 }
 

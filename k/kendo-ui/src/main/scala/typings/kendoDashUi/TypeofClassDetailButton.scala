@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.DetailButton
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.DetailButtonOptions
+import typings.kendoDashUi.kendo.mobile.ui.DetailButton
+import typings.kendoDashUi.kendo.mobile.ui.DetailButtonOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

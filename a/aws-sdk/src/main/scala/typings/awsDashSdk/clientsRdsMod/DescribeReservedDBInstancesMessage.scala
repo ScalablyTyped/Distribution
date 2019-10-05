@@ -59,8 +59,8 @@ object DescribeReservedDBInstancesMessage {
     Filters: FilterList = null,
     LeaseId: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
     ReservedDBInstanceId: String = null,
@@ -72,7 +72,7 @@ object DescribeReservedDBInstancesMessage {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType)
     if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription)

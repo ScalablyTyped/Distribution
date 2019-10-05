@@ -1,5 +1,6 @@
 package typings.pathfinding.pathfindingMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,5 @@ trait BiBestFirstFinder extends BiAStarFinder
 
 @JSImport("pathfinding", "BiBestFirstFinder")
 @js.native
-class BiBestFirstFinderCls () extends BiBestFirstFinder {
-  def this(opt: JumpPointFinderOptions) = this()
-  /* CompleteClass */
-  override def findPath(startX: Double, startY: Double, endX: Double, endY: Double, matrix: Grid): js.Array[js.Array[Double]] = js.native
-}
+object BiBestFirstFinder extends TopLevel[BiBestFirstFinder]
 

@@ -1,5 +1,6 @@
 package typings.jotformDashCssDotJs.jotformDashCssDotJsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,4 +91,8 @@ trait CssJs extends js.Object {
 @JSImport("jotform-css.js", "cssjs")
 @js.native
 class cssjs () extends CssJs
+
+@JSImport("jotform-css.js", "cssjs")
+@js.native
+object cssjs extends TopLevel[CssJsConstructor]
 

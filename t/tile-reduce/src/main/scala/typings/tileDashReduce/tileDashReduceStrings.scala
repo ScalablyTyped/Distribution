@@ -1,6 +1,6 @@
 package typings.tileDashReduce
 
-import typings.tileDashReduce.TileReduceNs.Types
+import typings.tileDashReduce.TileReduce.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

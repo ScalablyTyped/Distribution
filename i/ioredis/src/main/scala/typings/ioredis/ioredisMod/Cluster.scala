@@ -1,7 +1,7 @@
 package typings.ioredis.ioredisMod
 
 import typings.ioredis.ioredisStrings.OK
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

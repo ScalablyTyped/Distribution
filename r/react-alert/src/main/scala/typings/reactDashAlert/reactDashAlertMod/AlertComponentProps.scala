@@ -14,9 +14,9 @@ trait AlertComponentProps extends js.Object {
 
 object AlertComponentProps {
   @scala.inline
-  def apply(close: () => Unit, id: String, message: ReactNode, options: AlertCustomOptionsWithType): AlertComponentProps = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id, message = message.asInstanceOf[js.Any], options = options)
-  
+  def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType, message: ReactNode = null): AlertComponentProps = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id, options = options)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertComponentProps]
   }
 }

@@ -54,21 +54,21 @@ object PutScalingPolicyInput {
     MetricName: MetricName,
     Name: NonZeroAndMaxString,
     ComparisonOperator: ComparisonOperatorType = null,
-    EvaluationPeriods: js.UndefOr[PositiveInteger] = js.undefined,
+    EvaluationPeriods: Int | scala.Double = null,
     PolicyType: PolicyType = null,
-    ScalingAdjustment: js.UndefOr[Integer] = js.undefined,
+    ScalingAdjustment: Int | scala.Double = null,
     ScalingAdjustmentType: ScalingAdjustmentType = null,
     TargetConfiguration: TargetConfiguration = null,
-    Threshold: js.UndefOr[Double] = js.undefined
+    Threshold: Int | scala.Double = null
   ): PutScalingPolicyInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId, MetricName = MetricName.asInstanceOf[js.Any], Name = Name)
     if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods)
+    if (EvaluationPeriods != null) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.asInstanceOf[js.Any])
     if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScalingAdjustment)) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment)
+    if (ScalingAdjustment != null) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment.asInstanceOf[js.Any])
     if (ScalingAdjustmentType != null) __obj.updateDynamic("ScalingAdjustmentType")(ScalingAdjustmentType.asInstanceOf[js.Any])
     if (TargetConfiguration != null) __obj.updateDynamic("TargetConfiguration")(TargetConfiguration)
-    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold)
+    if (Threshold != null) __obj.updateDynamic("Threshold")(Threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScalingPolicyInput]
   }
 }

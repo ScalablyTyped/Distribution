@@ -78,7 +78,7 @@ object ModifyInstanceAttributeRequest {
     Attribute: InstanceAttributeName = null,
     BlockDeviceMappings: InstanceBlockDeviceMappingSpecificationList = null,
     DisableApiTermination: AttributeBooleanValue = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EbsOptimized: AttributeBooleanValue = null,
     EnaSupport: AttributeBooleanValue = null,
     Groups: GroupIdStringList = null,

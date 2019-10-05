@@ -1,6 +1,6 @@
 package typings.succinct
 
-import typings.succinct.JQuerySuccinctNs.Options
+import typings.succinct.JQuerySuccinct.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

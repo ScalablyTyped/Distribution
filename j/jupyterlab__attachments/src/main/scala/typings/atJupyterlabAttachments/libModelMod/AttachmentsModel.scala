@@ -1,10 +1,11 @@
 package typings.atJupyterlabAttachments.libModelMod
 
-import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModelNs.ChangedArgs
-import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModelNs.IContentFactory
-import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModelNs.IOptions
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.IAttachments
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.IMimeBundle
+import typings.atJupyterlabAttachments.libModelMod.AttachmentsModel.ContentFactory
+import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.ChangedArgs
+import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.IContentFactory
+import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.IOptions
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.IAttachments
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.IMimeBundle
 import typings.atJupyterlabRendermime.libAttachmentmodelMod.IAttachmentModel
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -126,5 +127,26 @@ class AttachmentsModel () extends IAttachmentsModel {
     */
   /* CompleteClass */
   override def toJSON(): IAttachments = js.native
+}
+
+@JSImport("@jupyterlab/attachments/lib/model", "AttachmentsModel")
+@js.native
+object AttachmentsModel extends js.Object {
+  /**
+    * The default implementation of a `IAttachemntsModel.IContentFactory`.
+    */
+  @js.native
+  class ContentFactory () extends IContentFactory {
+    /**
+      * Create an attachment model.
+      */
+    /* CompleteClass */
+    override def createAttachmentModel(options: typings.atJupyterlabRendermime.libAttachmentmodelMod.IAttachmentModel.IOptions): IAttachmentModel = js.native
+  }
+  
+  /**
+    * The default attachment model factory.
+    */
+  val defaultContentFactory: ContentFactory = js.native
 }
 

@@ -243,8 +243,5 @@ trait atAntDashDesignReactDashNativeProps {
   @scala.inline
   def WithThemeProps: typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps.type = typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps
   type WithThemeProps[T, S] = typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps[T, S]
-  @scala.inline
-  def switchProps: AntmSwitchProps.type = typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps
-  type switchProps = AntmSwitchProps
 }
 

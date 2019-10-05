@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchLogMetricFilterMod
 
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.LogMetricFilterMetricTransformation
+import typings.atPulumiAws.typesInputMod.cloudwatch.LogMetricFilterMetricTransformation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

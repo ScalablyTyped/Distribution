@@ -40,16 +40,16 @@ object DescribeSnapshotsMessage {
   def apply(
     CacheClusterId: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     ReplicationGroupId: String = null,
-    ShowNodeGroupConfig: js.UndefOr[BooleanOptional] = js.undefined,
+    ShowNodeGroupConfig: js.UndefOr[scala.Boolean] = js.undefined,
     SnapshotName: String = null,
     SnapshotSource: String = null
   ): DescribeSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId)
     if (!js.isUndefined(ShowNodeGroupConfig)) __obj.updateDynamic("ShowNodeGroupConfig")(ShowNodeGroupConfig)
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName)

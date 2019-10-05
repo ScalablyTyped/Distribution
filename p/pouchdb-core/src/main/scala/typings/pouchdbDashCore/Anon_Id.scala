@@ -1,6 +1,6 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.DocumentId
+import typings.pouchdbDashCore.PouchDB.Core.DocumentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

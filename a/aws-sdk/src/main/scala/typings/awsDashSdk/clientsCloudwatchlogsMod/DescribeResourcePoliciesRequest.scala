@@ -14,9 +14,9 @@ trait DescribeResourcePoliciesRequest extends js.Object {
 
 object DescribeResourcePoliciesRequest {
   @scala.inline
-  def apply(limit: js.UndefOr[DescribeLimit] = js.undefined, nextToken: NextToken = null): DescribeResourcePoliciesRequest = {
+  def apply(limit: Int | Double = null, nextToken: NextToken = null): DescribeResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeResourcePoliciesRequest]
   }

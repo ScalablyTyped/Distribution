@@ -51,7 +51,7 @@ object RdsDbInstance {
     DbPassword: String = null,
     DbUser: String = null,
     Engine: String = null,
-    MissingOnRds: js.UndefOr[Boolean] = js.undefined,
+    MissingOnRds: js.UndefOr[scala.Boolean] = js.undefined,
     RdsDbInstanceArn: String = null,
     Region: String = null,
     StackId: String = null

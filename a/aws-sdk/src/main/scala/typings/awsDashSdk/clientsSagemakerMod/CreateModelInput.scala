@@ -41,7 +41,7 @@ object CreateModelInput {
     ExecutionRoleArn: RoleArn,
     ModelName: ModelName,
     Containers: ContainerDefinitionList = null,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
     PrimaryContainer: ContainerDefinition = null,
     Tags: TagList = null,
     VpcConfig: VpcConfig = null

@@ -2,11 +2,11 @@ package typings.realm.realmMod
 
 import typings.realm.ProgressPromise
 import typings.realm.Realm
-import typings.realm.RealmNs.Configuration
-import typings.realm.RealmNs.Object
-import typings.realm.RealmNs.ObjectSchema
-import typings.realm.RealmNs.SyncNs.ProgressNotificationCallback
-import typings.realm.RealmNs.SyncNs.User
+import typings.realm.Realm.Configuration
+import typings.realm.Realm.Object
+import typings.realm.Realm.ObjectSchema
+import typings.realm.Realm.Sync.ProgressNotificationCallback
+import typings.realm.Realm.Sync.User
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import scala.scalajs.js

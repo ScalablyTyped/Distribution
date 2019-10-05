@@ -54,7 +54,7 @@ object CreateBucketRequest {
     GrantReadACP: GrantReadACP = null,
     GrantWrite: GrantWrite = null,
     GrantWriteACP: GrantWriteACP = null,
-    ObjectLockEnabledForBucket: js.UndefOr[ObjectLockEnabledForBucket] = js.undefined
+    ObjectLockEnabledForBucket: js.UndefOr[Boolean] = js.undefined
   ): CreateBucketRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket)
     if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])

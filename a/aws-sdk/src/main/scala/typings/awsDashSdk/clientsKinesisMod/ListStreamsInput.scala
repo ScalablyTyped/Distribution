@@ -17,13 +17,10 @@ trait ListStreamsInput extends js.Object {
 
 object ListStreamsInput {
   @scala.inline
-  def apply(
-    ExclusiveStartStreamName: StreamName = null,
-    Limit: js.UndefOr[ListStreamsInputLimit] = js.undefined
-  ): ListStreamsInput = {
+  def apply(ExclusiveStartStreamName: StreamName = null, Limit: Int | Double = null): ListStreamsInput = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartStreamName != null) __obj.updateDynamic("ExclusiveStartStreamName")(ExclusiveStartStreamName)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamsInput]
   }
 }

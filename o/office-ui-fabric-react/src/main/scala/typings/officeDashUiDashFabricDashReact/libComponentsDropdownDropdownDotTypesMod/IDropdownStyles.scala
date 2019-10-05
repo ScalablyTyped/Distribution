@@ -57,29 +57,47 @@ trait IDropdownStyles extends js.Object {
 object IDropdownStyles {
   @scala.inline
   def apply(
-    callout: IStyle,
-    caretDown: IStyle,
-    caretDownWrapper: IStyle,
-    dropdown: IStyle,
-    dropdownDivider: IStyle,
-    dropdownItem: IStyle,
-    dropdownItemDisabled: IStyle,
-    dropdownItemHeader: IStyle,
-    dropdownItemHidden: IStyle,
-    dropdownItemSelected: IStyle,
-    dropdownItemSelectedAndDisabled: IStyle,
-    dropdownItems: IStyle,
-    dropdownItemsWrapper: IStyle,
-    dropdownOptionText: IStyle,
-    errorMessage: IStyle,
-    label: IStyle,
-    panel: IStyle,
-    root: IStyle,
     subComponentStyles: IDropdownSubComponentStyles,
-    title: IStyle
+    callout: IStyle = null,
+    caretDown: IStyle = null,
+    caretDownWrapper: IStyle = null,
+    dropdown: IStyle = null,
+    dropdownDivider: IStyle = null,
+    dropdownItem: IStyle = null,
+    dropdownItemDisabled: IStyle = null,
+    dropdownItemHeader: IStyle = null,
+    dropdownItemHidden: IStyle = null,
+    dropdownItemSelected: IStyle = null,
+    dropdownItemSelectedAndDisabled: IStyle = null,
+    dropdownItems: IStyle = null,
+    dropdownItemsWrapper: IStyle = null,
+    dropdownOptionText: IStyle = null,
+    errorMessage: IStyle = null,
+    label: IStyle = null,
+    panel: IStyle = null,
+    root: IStyle = null,
+    title: IStyle = null
   ): IDropdownStyles = {
-    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], caretDown = caretDown.asInstanceOf[js.Any], caretDownWrapper = caretDownWrapper.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], dropdownDivider = dropdownDivider.asInstanceOf[js.Any], dropdownItem = dropdownItem.asInstanceOf[js.Any], dropdownItemDisabled = dropdownItemDisabled.asInstanceOf[js.Any], dropdownItemHeader = dropdownItemHeader.asInstanceOf[js.Any], dropdownItemHidden = dropdownItemHidden.asInstanceOf[js.Any], dropdownItemSelected = dropdownItemSelected.asInstanceOf[js.Any], dropdownItemSelectedAndDisabled = dropdownItemSelectedAndDisabled.asInstanceOf[js.Any], dropdownItems = dropdownItems.asInstanceOf[js.Any], dropdownItemsWrapper = dropdownItemsWrapper.asInstanceOf[js.Any], dropdownOptionText = dropdownOptionText.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], subComponentStyles = subComponentStyles, title = title.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (caretDown != null) __obj.updateDynamic("caretDown")(caretDown.asInstanceOf[js.Any])
+    if (caretDownWrapper != null) __obj.updateDynamic("caretDownWrapper")(caretDownWrapper.asInstanceOf[js.Any])
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
+    if (dropdownDivider != null) __obj.updateDynamic("dropdownDivider")(dropdownDivider.asInstanceOf[js.Any])
+    if (dropdownItem != null) __obj.updateDynamic("dropdownItem")(dropdownItem.asInstanceOf[js.Any])
+    if (dropdownItemDisabled != null) __obj.updateDynamic("dropdownItemDisabled")(dropdownItemDisabled.asInstanceOf[js.Any])
+    if (dropdownItemHeader != null) __obj.updateDynamic("dropdownItemHeader")(dropdownItemHeader.asInstanceOf[js.Any])
+    if (dropdownItemHidden != null) __obj.updateDynamic("dropdownItemHidden")(dropdownItemHidden.asInstanceOf[js.Any])
+    if (dropdownItemSelected != null) __obj.updateDynamic("dropdownItemSelected")(dropdownItemSelected.asInstanceOf[js.Any])
+    if (dropdownItemSelectedAndDisabled != null) __obj.updateDynamic("dropdownItemSelectedAndDisabled")(dropdownItemSelectedAndDisabled.asInstanceOf[js.Any])
+    if (dropdownItems != null) __obj.updateDynamic("dropdownItems")(dropdownItems.asInstanceOf[js.Any])
+    if (dropdownItemsWrapper != null) __obj.updateDynamic("dropdownItemsWrapper")(dropdownItemsWrapper.asInstanceOf[js.Any])
+    if (dropdownOptionText != null) __obj.updateDynamic("dropdownOptionText")(dropdownOptionText.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownStyles]
   }
 }

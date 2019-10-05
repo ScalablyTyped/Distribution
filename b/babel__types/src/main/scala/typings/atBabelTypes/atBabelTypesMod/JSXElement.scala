@@ -46,3 +46,26 @@ object JSXElement {
   }
 }
 
+@JSImport("@babel/types", "jsxElement")
+@js.native
+object jsxElement extends js.Object {
+  def apply(
+    openingElement: JSXOpeningElement,
+    closingElement: js.UndefOr[scala.Nothing],
+    children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+    selfClosing: js.Any
+  ): JSXElement = js.native
+  def apply(
+    openingElement: JSXOpeningElement,
+    closingElement: Null,
+    children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+    selfClosing: js.Any
+  ): JSXElement = js.native
+  def apply(
+    openingElement: JSXOpeningElement,
+    closingElement: JSXClosingElement,
+    children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+    selfClosing: js.Any
+  ): JSXElement = js.native
+}
+

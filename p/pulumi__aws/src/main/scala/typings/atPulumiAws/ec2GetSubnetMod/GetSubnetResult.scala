@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2GetSubnetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetSubnetFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetSubnetFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,9 +12,5 @@ trait MSMediaKeyNeededEvent extends Event {
 
 @JSGlobal("MSMediaKeyNeededEvent")
 @js.native
-class MSMediaKeyNeededEventCls () extends MSMediaKeyNeededEvent
-
-@JSGlobal("MSMediaKeyNeededEvent")
-@js.native
 object MSMediaKeyNeededEvent extends Instantiable0[MSMediaKeyNeededEvent]
 

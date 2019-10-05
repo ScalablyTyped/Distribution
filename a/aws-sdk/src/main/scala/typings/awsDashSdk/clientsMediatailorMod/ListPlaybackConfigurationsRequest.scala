@@ -17,9 +17,9 @@ trait ListPlaybackConfigurationsRequest extends js.Object {
 
 object ListPlaybackConfigurationsRequest {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[__integerMin1Max100] = js.undefined, NextToken: __string = null): ListPlaybackConfigurationsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: __string = null): ListPlaybackConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListPlaybackConfigurationsRequest]
   }

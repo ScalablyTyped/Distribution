@@ -2,9 +2,11 @@ package typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Mod
 
 import typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Strings.auto
 import typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Strings.hidden
+import typings.react.Event
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
+import typings.react.reactMod.SyntheticEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -299,15 +301,15 @@ object TableProps {
     onColumnResizeEndCallback: (/* newColumnWidth */ Double, /* columnKey */ String) => Unit = null,
     onContentHeightChange: /* newHeight */ Double => Unit = null,
     onHorizontalScroll: /* scrollPos */ Double => Boolean = null,
-    onRowClick: TableRowEventHandler = null,
-    onRowDoubleClick: TableRowEventHandler = null,
-    onRowMouseDown: TableRowEventHandler = null,
-    onRowMouseEnter: TableRowEventHandler = null,
-    onRowMouseLeave: TableRowEventHandler = null,
-    onRowMouseUp: TableRowEventHandler = null,
-    onRowTouchEnd: TableRowEventHandler = null,
-    onRowTouchMove: TableRowEventHandler = null,
-    onRowTouchStart: TableRowEventHandler = null,
+    onRowClick: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowDoubleClick: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseDown: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseEnter: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseLeave: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseUp: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchEnd: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchMove: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchStart: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
     onScrollEnd: (/* x */ Double, /* y */ Double) => Unit = null,
     onScrollStart: (/* x */ Double, /* y */ Double) => Unit = null,
     onVerticalScroll: /* scrollPos */ Double => Boolean = null,
@@ -347,15 +349,15 @@ object TableProps {
     if (onColumnResizeEndCallback != null) __obj.updateDynamic("onColumnResizeEndCallback")(js.Any.fromFunction2(onColumnResizeEndCallback))
     if (onContentHeightChange != null) __obj.updateDynamic("onContentHeightChange")(js.Any.fromFunction1(onContentHeightChange))
     if (onHorizontalScroll != null) __obj.updateDynamic("onHorizontalScroll")(js.Any.fromFunction1(onHorizontalScroll))
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
-    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
-    if (onRowMouseDown != null) __obj.updateDynamic("onRowMouseDown")(onRowMouseDown)
-    if (onRowMouseEnter != null) __obj.updateDynamic("onRowMouseEnter")(onRowMouseEnter)
-    if (onRowMouseLeave != null) __obj.updateDynamic("onRowMouseLeave")(onRowMouseLeave)
-    if (onRowMouseUp != null) __obj.updateDynamic("onRowMouseUp")(onRowMouseUp)
-    if (onRowTouchEnd != null) __obj.updateDynamic("onRowTouchEnd")(onRowTouchEnd)
-    if (onRowTouchMove != null) __obj.updateDynamic("onRowTouchMove")(onRowTouchMove)
-    if (onRowTouchStart != null) __obj.updateDynamic("onRowTouchStart")(onRowTouchStart)
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction2(onRowDoubleClick))
+    if (onRowMouseDown != null) __obj.updateDynamic("onRowMouseDown")(js.Any.fromFunction2(onRowMouseDown))
+    if (onRowMouseEnter != null) __obj.updateDynamic("onRowMouseEnter")(js.Any.fromFunction2(onRowMouseEnter))
+    if (onRowMouseLeave != null) __obj.updateDynamic("onRowMouseLeave")(js.Any.fromFunction2(onRowMouseLeave))
+    if (onRowMouseUp != null) __obj.updateDynamic("onRowMouseUp")(js.Any.fromFunction2(onRowMouseUp))
+    if (onRowTouchEnd != null) __obj.updateDynamic("onRowTouchEnd")(js.Any.fromFunction2(onRowTouchEnd))
+    if (onRowTouchMove != null) __obj.updateDynamic("onRowTouchMove")(js.Any.fromFunction2(onRowTouchMove))
+    if (onRowTouchStart != null) __obj.updateDynamic("onRowTouchStart")(js.Any.fromFunction2(onRowTouchStart))
     if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(js.Any.fromFunction2(onScrollEnd))
     if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(js.Any.fromFunction2(onScrollStart))
     if (onVerticalScroll != null) __obj.updateDynamic("onVerticalScroll")(js.Any.fromFunction1(onVerticalScroll))

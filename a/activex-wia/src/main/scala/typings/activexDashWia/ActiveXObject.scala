@@ -1,7 +1,7 @@
 package typings.activexDashWia
 
-import typings.activexDashWia.WIANs.DeviceManager
-import typings.activexDashWia.WIANs.Vector
+import typings.activexDashWia.WIA.DeviceManager
+import typings.activexDashWia.WIA.Vector
 import typings.activexDashWia.activexDashWiaStrings.DeviceID
 import typings.activexDashWia.activexDashWiaStrings.EventID
 import typings.activexDashWia.activexDashWiaStrings.Item

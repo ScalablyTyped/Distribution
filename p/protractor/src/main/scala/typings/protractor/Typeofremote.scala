@@ -12,27 +12,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofremote extends js.Object {
-  var DriverService: Instantiable2[
+  var DriverService: (Instantiable2[
     /* executable */ String, 
     /* options */ ServiceOptions, 
     typings.seleniumDashWebdriver.remoteMod.DriverService
-  ]
-  val DriverServiceNs: TypeofDriverService
+  ]) | TypeofDriverService
   var FileDetector: Instantiable0[typings.seleniumDashWebdriver.remoteMod.FileDetector]
-  var SeleniumServer: Instantiable1[/* jar */ String, typings.seleniumDashWebdriver.remoteMod.SeleniumServer]
-  val SeleniumServerNs: js.Any
+  var SeleniumServer: js.Any | (Instantiable1[/* jar */ String, typings.seleniumDashWebdriver.remoteMod.SeleniumServer])
 }
 
 object Typeofremote {
   @scala.inline
   def apply(
     DriverService: Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService],
-    DriverServiceNs: TypeofDriverService,
     FileDetector: Instantiable0[FileDetector],
-    SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer],
-    SeleniumServerNs: js.Any
+    SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer]
   ): Typeofremote = {
-    val __obj = js.Dynamic.literal(DriverService = DriverService, DriverServiceNs = DriverServiceNs, FileDetector = FileDetector, SeleniumServer = SeleniumServer, SeleniumServerNs = SeleniumServerNs)
+    val __obj = js.Dynamic.literal(DriverService = DriverService, FileDetector = FileDetector, SeleniumServer = SeleniumServer)
   
     __obj.asInstanceOf[Typeofremote]
   }

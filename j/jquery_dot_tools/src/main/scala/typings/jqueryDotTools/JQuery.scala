@@ -1,7 +1,7 @@
 package typings.jqueryDotTools
 
-import typings.jqueryDotTools.JQueryToolsNs.overlayNs.Overlay
-import typings.jqueryDotTools.JQueryToolsNs.overlayNs.OverlayOptions
+import typings.jqueryDotTools.JQueryTools.overlay.Overlay
+import typings.jqueryDotTools.JQueryTools.overlay.OverlayOptions
 import typings.jqueryDotTools.jqueryDotToolsStrings.overlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Model
-import typings.ejDotWebDotAll.ejNs.datavisualizationNs.RangeNavigator
+import typings.ejDotWebDotAll.ej.Model
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

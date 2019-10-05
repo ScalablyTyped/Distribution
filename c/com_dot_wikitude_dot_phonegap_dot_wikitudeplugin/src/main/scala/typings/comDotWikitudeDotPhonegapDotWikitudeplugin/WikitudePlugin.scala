@@ -1,5 +1,6 @@
 package typings.comDotWikitudeDotPhonegapDotWikitudeplugin
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.JSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -64,4 +65,8 @@ trait WikitudePlugin extends js.Object {
   def setOnUrlInvokeCallback(onUrlInvokeCallback: js.Function1[/* success */ String, Unit]): Unit = js.native
   def show(): Unit = js.native
 }
+
+@JSGlobal("WikitudePlugin")
+@js.native
+object WikitudePlugin extends TopLevel[WikitudePlugin]
 

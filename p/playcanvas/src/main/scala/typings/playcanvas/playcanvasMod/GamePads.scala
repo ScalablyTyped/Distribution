@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "GamePads")
 @js.native
 class GamePads ()
-  extends typings.playcanvas.pcNs.GamePads
+  extends typings.playcanvas.pc.GamePads
 

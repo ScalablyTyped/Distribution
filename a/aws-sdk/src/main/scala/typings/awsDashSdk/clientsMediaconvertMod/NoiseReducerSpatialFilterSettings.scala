@@ -22,14 +22,14 @@ trait NoiseReducerSpatialFilterSettings extends js.Object {
 object NoiseReducerSpatialFilterSettings {
   @scala.inline
   def apply(
-    PostFilterSharpenStrength: js.UndefOr[__integerMin0Max3] = js.undefined,
-    Speed: js.UndefOr[__integerMinNegative2Max3] = js.undefined,
-    Strength: js.UndefOr[__integerMin0Max16] = js.undefined
+    PostFilterSharpenStrength: Int | Double = null,
+    Speed: Int | Double = null,
+    Strength: Int | Double = null
   ): NoiseReducerSpatialFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(PostFilterSharpenStrength)) __obj.updateDynamic("PostFilterSharpenStrength")(PostFilterSharpenStrength)
-    if (!js.isUndefined(Speed)) __obj.updateDynamic("Speed")(Speed)
-    if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength)
+    if (PostFilterSharpenStrength != null) __obj.updateDynamic("PostFilterSharpenStrength")(PostFilterSharpenStrength.asInstanceOf[js.Any])
+    if (Speed != null) __obj.updateDynamic("Speed")(Speed.asInstanceOf[js.Any])
+    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerSpatialFilterSettings]
   }
 }

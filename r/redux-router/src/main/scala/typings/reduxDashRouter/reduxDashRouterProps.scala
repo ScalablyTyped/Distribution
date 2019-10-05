@@ -12,40 +12,22 @@ import scala.scalajs.js.annotation._
 
 trait reduxDashRouterProps {
   @scala.inline
-  def ReduxRouterNsMemoryRouterProps: MemoryRouterProps.type = typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
-  type ReduxRouterNsMemoryRouterProps = MemoryRouterProps
+  def ReduxRouterMemoryRouterProps: MemoryRouterProps.type = typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
+  type ReduxRouterMemoryRouterProps = MemoryRouterProps
   @scala.inline
-  def ReduxRouterNsPromptProps: PromptProps.type = typings.reactDashRouter.reactDashRouterMod.PromptProps
-  type ReduxRouterNsPromptProps = PromptProps
+  def ReduxRouterPromptProps: PromptProps.type = typings.reactDashRouter.reactDashRouterMod.PromptProps
+  type ReduxRouterPromptProps = PromptProps
   @scala.inline
-  def ReduxRouterNsRedirectProps: RedirectProps.type = typings.reactDashRouter.reactDashRouterMod.RedirectProps
-  type ReduxRouterNsRedirectProps = RedirectProps
+  def ReduxRouterRedirectProps: RedirectProps.type = typings.reactDashRouter.reactDashRouterMod.RedirectProps
+  type ReduxRouterRedirectProps = RedirectProps
   @scala.inline
-  def ReduxRouterNsRouterProps: RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
-  type ReduxRouterNsRouterProps = RouterProps
+  def ReduxRouterRouterProps: RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
+  type ReduxRouterRouterProps = RouterProps
   @scala.inline
-  def ReduxRouterNsStaticRouterProps: StaticRouterProps.type = typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
-  type ReduxRouterNsStaticRouterProps = StaticRouterProps
+  def ReduxRouterStaticRouterProps: StaticRouterProps.type = typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
+  type ReduxRouterStaticRouterProps = StaticRouterProps
   @scala.inline
-  def ReduxRouterNsSwitchProps: SwitchProps.type = typings.reactDashRouter.reactDashRouterMod.SwitchProps
-  type ReduxRouterNsSwitchProps = SwitchProps
-  @scala.inline
-  def defaultNsMemoryRouterProps: MemoryRouterProps.type = typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
-  type defaultNsMemoryRouterProps = MemoryRouterProps
-  @scala.inline
-  def defaultNsPromptProps: PromptProps.type = typings.reactDashRouter.reactDashRouterMod.PromptProps
-  type defaultNsPromptProps = PromptProps
-  @scala.inline
-  def defaultNsRedirectProps: RedirectProps.type = typings.reactDashRouter.reactDashRouterMod.RedirectProps
-  type defaultNsRedirectProps = RedirectProps
-  @scala.inline
-  def defaultNsRouterProps: RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
-  type defaultNsRouterProps = RouterProps
-  @scala.inline
-  def defaultNsStaticRouterProps: StaticRouterProps.type = typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
-  type defaultNsStaticRouterProps = StaticRouterProps
-  @scala.inline
-  def defaultNsSwitchProps: SwitchProps.type = typings.reactDashRouter.reactDashRouterMod.SwitchProps
-  type defaultNsSwitchProps = SwitchProps
+  def ReduxRouterSwitchProps: SwitchProps.type = typings.reactDashRouter.reactDashRouterMod.SwitchProps
+  type ReduxRouterSwitchProps = SwitchProps
 }
 

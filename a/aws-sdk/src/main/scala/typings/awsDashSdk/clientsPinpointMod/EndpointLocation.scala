@@ -36,16 +36,16 @@ object EndpointLocation {
   def apply(
     City: __string = null,
     Country: __string = null,
-    Latitude: js.UndefOr[__double] = js.undefined,
-    Longitude: js.UndefOr[__double] = js.undefined,
+    Latitude: Int | Double = null,
+    Longitude: Int | Double = null,
     PostalCode: __string = null,
     Region: __string = null
   ): EndpointLocation = {
     val __obj = js.Dynamic.literal()
     if (City != null) __obj.updateDynamic("City")(City)
     if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (!js.isUndefined(Latitude)) __obj.updateDynamic("Latitude")(Latitude)
-    if (!js.isUndefined(Longitude)) __obj.updateDynamic("Longitude")(Longitude)
+    if (Latitude != null) __obj.updateDynamic("Latitude")(Latitude.asInstanceOf[js.Any])
+    if (Longitude != null) __obj.updateDynamic("Longitude")(Longitude.asInstanceOf[js.Any])
     if (PostalCode != null) __obj.updateDynamic("PostalCode")(PostalCode)
     if (Region != null) __obj.updateDynamic("Region")(Region)
     __obj.asInstanceOf[EndpointLocation]

@@ -10,5 +10,8 @@ object reactDashCssDashTransitionDashReplaceComponents extends reactDashCssDashT
   @scala.inline
   def Class: ComponentType[Props] = js.constructorOf[typings.reactDashCssDashTransitionDashReplace.reactDashCssDashTransitionDashReplaceMod.Class].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashCssDashTransitionDashReplace.reactDashCssDashTransitionDashReplaceMod.Props]]
+  @scala.inline
+  def ReactDashCssDashTransitionDashReplace: ComponentType[Props] = typings.reactDashCssDashTransitionDashReplace.reactDashCssDashTransitionDashReplaceMod.^.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashCssDashTransitionDashReplace.reactDashCssDashTransitionDashReplaceMod.Props]]
 }
 

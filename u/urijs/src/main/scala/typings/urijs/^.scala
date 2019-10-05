@@ -1,7 +1,7 @@
 package typings.urijs
 
-import typings.urijs.uriNs.URIStatic
-import typings.urijs.uriNs.URITemplateStatic
+import typings.urijs.uri.URIStatic
+import typings.urijs.uri.URITemplateStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

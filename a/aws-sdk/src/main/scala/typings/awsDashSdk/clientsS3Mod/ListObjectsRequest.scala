@@ -39,7 +39,7 @@ object ListObjectsRequest {
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
     Marker: Marker = null,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
+    MaxKeys: Int | Double = null,
     Prefix: Prefix = null,
     RequestPayer: RequestPayer = null
   ): ListObjectsRequest = {
@@ -47,7 +47,7 @@ object ListObjectsRequest {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys)
+    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsRequest]

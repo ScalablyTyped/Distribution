@@ -29,3 +29,9 @@ object Config {
   }
 }
 
+@JSImport("karma", "config")
+@js.native
+object config extends js.Object {
+  def parseConfig(configFilePath: String, cliOptions: ConfigOptions): Config = js.native
+}
+

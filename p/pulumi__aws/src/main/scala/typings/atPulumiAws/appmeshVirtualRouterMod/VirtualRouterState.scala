@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualRouterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualRouterSpec
+import typings.atPulumiAws.typesInputMod.appmesh.VirtualRouterSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,13 +1,13 @@
 package typings.atPulumiAws.emrClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterBootstrapAction
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterCoreInstanceGroup
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterEc2Attributes
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterInstanceGroup
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterKerberosAttributes
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterMasterInstanceGroup
-import typings.atPulumiAws.typesOutputMod.emrNs.ClusterStep
+import typings.atPulumiAws.typesOutputMod.emr.ClusterBootstrapAction
+import typings.atPulumiAws.typesOutputMod.emr.ClusterCoreInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emr.ClusterEc2Attributes
+import typings.atPulumiAws.typesOutputMod.emr.ClusterInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emr.ClusterKerberosAttributes
+import typings.atPulumiAws.typesOutputMod.emr.ClusterMasterInstanceGroup
+import typings.atPulumiAws.typesOutputMod.emr.ClusterStep
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

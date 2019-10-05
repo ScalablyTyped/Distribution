@@ -2,7 +2,9 @@ package typings.muicss.reactMod
 
 import typings.muicss.muicssStrings.left
 import typings.muicss.muicssStrings.right
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -26,7 +28,7 @@ object DropdownProps {
     alignMenu: left | right = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
-    onOutsideClick: MouseEventHandler[HTMLDivElement] = null,
+    onOutsideClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     size: String = null,
     variant: String = null
   ): DropdownProps = {
@@ -35,7 +37,7 @@ object DropdownProps {
     if (alignMenu != null) __obj.updateDynamic("alignMenu")(alignMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onOutsideClick != null) __obj.updateDynamic("onOutsideClick")(onOutsideClick)
+    if (onOutsideClick != null) __obj.updateDynamic("onOutsideClick")(js.Any.fromFunction1(onOutsideClick))
     if (size != null) __obj.updateDynamic("size")(size)
     if (variant != null) __obj.updateDynamic("variant")(variant)
     __obj.asInstanceOf[DropdownProps]

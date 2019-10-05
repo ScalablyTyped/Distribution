@@ -1,7 +1,7 @@
 package typings.reactDashTypist.reactDashTypistMod
 
-import typings.reactDashTypist.reactDashTypistMod.TypistNs.CurrentTextProps
-import typings.reactDashTypist.reactDashTypistMod.TypistNs.CursorProps
+import typings.reactDashTypist.reactDashTypistMod.Typist.CurrentTextProps
+import typings.reactDashTypist.reactDashTypistMod.Typist.CursorProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait Typeofsystem extends js.Object {
     * Permissions: "system.cpu"
     * @since Chrome 32.
     */
-  val cpuNs: Typeofcpu
+  val cpu: Typeofcpu
   ////////////////////
   // System Display //
   ////////////////////
@@ -22,7 +22,7 @@ trait Typeofsystem extends js.Object {
     * Permissions: 'system.display'
     * @since Chrome 30.
     */
-  val displayNs: Typeofdisplay
+  val display: Typeofdisplay
   ////////////////////
   // System Memory
   ////////////////////
@@ -31,7 +31,7 @@ trait Typeofsystem extends js.Object {
     * Permissions:  "system.memory"
     * @since Chrome 32.
     */
-  val memoryNs: Typeofmemory
+  val memory: Typeofmemory
   ////////////////////
   // System Storage
   ////////////////////
@@ -40,18 +40,13 @@ trait Typeofsystem extends js.Object {
     * Permissions:  "system.storage"
     * @since Chrome 30.
     */
-  val storageNs: TypeofstorageCallback
+  val storage: TypeofstorageCallback
 }
 
 object Typeofsystem {
   @scala.inline
-  def apply(
-    cpuNs: Typeofcpu,
-    displayNs: Typeofdisplay,
-    memoryNs: Typeofmemory,
-    storageNs: TypeofstorageCallback
-  ): Typeofsystem = {
-    val __obj = js.Dynamic.literal(cpuNs = cpuNs, displayNs = displayNs, memoryNs = memoryNs, storageNs = storageNs)
+  def apply(cpu: Typeofcpu, display: Typeofdisplay, memory: Typeofmemory, storage: TypeofstorageCallback): Typeofsystem = {
+    val __obj = js.Dynamic.literal(cpu = cpu, display = display, memory = memory, storage = storage)
   
     __obj.asInstanceOf[Typeofsystem]
   }

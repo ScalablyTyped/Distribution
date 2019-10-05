@@ -89,7 +89,7 @@ object GetObjectRequest {
     IfModifiedSince: IfModifiedSince = null,
     IfNoneMatch: IfNoneMatch = null,
     IfUnmodifiedSince: IfUnmodifiedSince = null,
-    PartNumber: js.UndefOr[PartNumber] = js.undefined,
+    PartNumber: Int | Double = null,
     Range: Range = null,
     RequestPayer: RequestPayer = null,
     ResponseCacheControl: ResponseCacheControl = null,
@@ -108,7 +108,7 @@ object GetObjectRequest {
     if (IfModifiedSince != null) __obj.updateDynamic("IfModifiedSince")(IfModifiedSince)
     if (IfNoneMatch != null) __obj.updateDynamic("IfNoneMatch")(IfNoneMatch)
     if (IfUnmodifiedSince != null) __obj.updateDynamic("IfUnmodifiedSince")(IfUnmodifiedSince)
-    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber)
+    if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
     if (Range != null) __obj.updateDynamic("Range")(Range)
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (ResponseCacheControl != null) __obj.updateDynamic("ResponseCacheControl")(ResponseCacheControl)

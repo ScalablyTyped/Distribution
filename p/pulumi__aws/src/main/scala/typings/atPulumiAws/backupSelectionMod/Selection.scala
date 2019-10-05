@@ -1,6 +1,6 @@
 package typings.atPulumiAws.backupSelectionMod
 
-import typings.atPulumiAws.typesOutputMod.backupNs.SelectionSelectionTag
+import typings.atPulumiAws.typesOutputMod.backup.SelectionSelectionTag
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

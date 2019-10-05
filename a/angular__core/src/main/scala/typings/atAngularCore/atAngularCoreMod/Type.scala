@@ -1,6 +1,8 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
+import typings.std.FunctionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +14,5 @@ trait Type[T]
 
 @JSImport("@angular/core", "Type")
 @js.native
-class TypeCls protected ()
-  extends js.Function {
-  /**
-    * Creates a new function.
-    * @param args A list of arguments the function accepts.
-    */
-  def this(args: String*) = this()
-}
+object Type extends TopLevel[FunctionConstructor]
 

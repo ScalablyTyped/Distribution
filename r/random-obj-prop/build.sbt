@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "random-obj-prop"
-version := "2.0.0-dfcd87"
-scalaVersion := "2.12.9"
+version := "2.0.0-fdae7f"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -36,3 +36,9 @@ object ExistsTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "existsTypeAnnotation")
+@js.native
+object existsTypeAnnotation extends js.Object {
+  def apply(): ExistsTypeAnnotation = js.native
+}
+

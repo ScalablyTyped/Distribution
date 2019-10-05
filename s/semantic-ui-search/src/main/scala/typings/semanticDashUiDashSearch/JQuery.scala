@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashSearch
 
-import typings.semanticDashUiDashSearch.SemanticUINs.Search
-import typings.semanticDashUiDashSearch.SemanticUINs.SearchSettings
+import typings.semanticDashUiDashSearch.SemanticUI.Search
+import typings.semanticDashUiDashSearch.SemanticUI.SearchSettings
 import typings.semanticDashUiDashSearch.semanticDashUiDashSearchStrings.`add results`
 import typings.semanticDashUiDashSearch.semanticDashUiDashSearchStrings.`cancel query`
 import typings.semanticDashUiDashSearch.semanticDashUiDashSearchStrings.`clear cache`

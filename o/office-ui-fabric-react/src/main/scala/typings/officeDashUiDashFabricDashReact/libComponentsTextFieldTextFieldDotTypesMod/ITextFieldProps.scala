@@ -8,7 +8,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.FormEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import typings.std.RegExp
@@ -227,10 +227,10 @@ object ITextFieldProps {
     onChange: (/* event */ FormEvent[HTMLInputElement | HTMLTextAreaElement], /* newValue */ js.UndefOr[String]) => Unit = null,
     onGetErrorMessage: /* value */ String => js.UndefOr[String | Element | (js.Thenable[String | Element])] = null,
     onNotifyValidationResult: (/* errorMessage */ String | Element, /* value */ js.UndefOr[String]) => Unit = null,
-    onRenderDescription: IRenderFunction[ITextFieldProps] = null,
-    onRenderLabel: IRenderFunction[ITextFieldProps] = null,
-    onRenderPrefix: IRenderFunction[ITextFieldProps] = null,
-    onRenderSuffix: IRenderFunction[ITextFieldProps] = null,
+    onRenderDescription: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
+    onRenderLabel: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
+    onRenderPrefix: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
+    onRenderSuffix: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
     prefix: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     resizable: js.UndefOr[Boolean] = js.undefined,
@@ -266,10 +266,10 @@ object ITextFieldProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onGetErrorMessage != null) __obj.updateDynamic("onGetErrorMessage")(js.Any.fromFunction1(onGetErrorMessage))
     if (onNotifyValidationResult != null) __obj.updateDynamic("onNotifyValidationResult")(js.Any.fromFunction2(onNotifyValidationResult))
-    if (onRenderDescription != null) __obj.updateDynamic("onRenderDescription")(onRenderDescription)
-    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(onRenderLabel)
-    if (onRenderPrefix != null) __obj.updateDynamic("onRenderPrefix")(onRenderPrefix)
-    if (onRenderSuffix != null) __obj.updateDynamic("onRenderSuffix")(onRenderSuffix)
+    if (onRenderDescription != null) __obj.updateDynamic("onRenderDescription")(js.Any.fromFunction2(onRenderDescription))
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
+    if (onRenderPrefix != null) __obj.updateDynamic("onRenderPrefix")(js.Any.fromFunction2(onRenderPrefix))
+    if (onRenderSuffix != null) __obj.updateDynamic("onRenderSuffix")(js.Any.fromFunction2(onRenderSuffix))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)

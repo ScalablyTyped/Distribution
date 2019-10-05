@@ -30,7 +30,7 @@ object RichTextEditorProps {
     contentInset: ContentInset,
     contentPlaceholder: String,
     customCSS: RichTextStyles,
-    editorInitializedCallback: FunctionWithZeroArgs,
+    editorInitializedCallback: () => Unit,
     enableOnChange: Boolean,
     footerHeight: Double,
     hiddenTitle: Boolean,
@@ -38,7 +38,7 @@ object RichTextEditorProps {
     initialTitleHTML: String,
     titlePlaceholder: String
   ): RichTextEditorProps = {
-    val __obj = js.Dynamic.literal(contentInset = contentInset, contentPlaceholder = contentPlaceholder, customCSS = customCSS, editorInitializedCallback = editorInitializedCallback, enableOnChange = enableOnChange, footerHeight = footerHeight, hiddenTitle = hiddenTitle, initialContentHTML = initialContentHTML, initialTitleHTML = initialTitleHTML, titlePlaceholder = titlePlaceholder)
+    val __obj = js.Dynamic.literal(contentInset = contentInset, contentPlaceholder = contentPlaceholder, customCSS = customCSS, editorInitializedCallback = js.Any.fromFunction0(editorInitializedCallback), enableOnChange = enableOnChange, footerHeight = footerHeight, hiddenTitle = hiddenTitle, initialContentHTML = initialContentHTML, initialTitleHTML = initialTitleHTML, titlePlaceholder = titlePlaceholder)
   
     __obj.asInstanceOf[RichTextEditorProps]
   }

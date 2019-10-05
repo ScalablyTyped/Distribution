@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var phantom: Phantom = js.native
-  def require(module: String): js.Any = js.native
 }
 

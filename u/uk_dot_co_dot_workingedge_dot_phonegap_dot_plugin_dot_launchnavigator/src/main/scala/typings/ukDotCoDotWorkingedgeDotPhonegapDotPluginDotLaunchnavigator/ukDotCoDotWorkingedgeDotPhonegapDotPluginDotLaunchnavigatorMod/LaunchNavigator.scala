@@ -1,5 +1,6 @@
 package typings.ukDotCoDotWorkingedgeDotPhonegapDotPluginDotLaunchnavigator.ukDotCoDotWorkingedgeDotPhonegapDotPluginDotLaunchnavigatorMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -135,4 +136,8 @@ trait LaunchNavigator extends js.Object {
   def userSelect(destination: String, options: LaunchNavigatorOptions): Unit = js.native
   def userSelect(destination: js.Array[Double], options: LaunchNavigatorOptions): Unit = js.native
 }
+
+@JSImport("uk.co.workingedge.phonegap.plugin.launchnavigator", "launchnavigator")
+@js.native
+object launchnavigator extends TopLevel[LaunchNavigator]
 

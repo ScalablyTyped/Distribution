@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ButtonComponentSystem")
 @js.native
 class ButtonComponentSystem protected ()
-  extends typings.playcanvas.pcNs.ButtonComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.ButtonComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

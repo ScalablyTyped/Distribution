@@ -6,7 +6,7 @@ import typings.officeDashUiDashFabricDashReact.Anon_HeightWidth
 import typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionStyleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionStyles
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.InputHTMLAttributes
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -82,7 +82,7 @@ object IChoiceGroupOption {
     imageSize: Anon_HeightWidth = null,
     imageSrc: String = null,
     labelId: String = null,
-    onRenderField: IRenderFunction[IChoiceGroupOption] = null,
+    onRenderField: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null = null,
     onRenderLabel: /* option */ IChoiceGroupOption => Element = null,
     selectedImageSrc: String = null,
     styles: IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles] = null
@@ -98,7 +98,7 @@ object IChoiceGroupOption {
     if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize)
     if (imageSrc != null) __obj.updateDynamic("imageSrc")(imageSrc)
     if (labelId != null) __obj.updateDynamic("labelId")(labelId)
-    if (onRenderField != null) __obj.updateDynamic("onRenderField")(onRenderField)
+    if (onRenderField != null) __obj.updateDynamic("onRenderField")(js.Any.fromFunction2(onRenderField))
     if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction1(onRenderLabel))
     if (selectedImageSrc != null) __obj.updateDynamic("selectedImageSrc")(selectedImageSrc)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

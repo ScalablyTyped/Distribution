@@ -1,6 +1,6 @@
 package typings.asana
 
-import typings.asana.asanaMod.resourcesNs.VersionInfo
+import typings.asana.asanaMod.resources.VersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

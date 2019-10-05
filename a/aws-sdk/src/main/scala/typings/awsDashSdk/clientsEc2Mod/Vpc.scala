@@ -55,7 +55,7 @@ object Vpc {
     DhcpOptionsId: String = null,
     InstanceTenancy: Tenancy = null,
     Ipv6CidrBlockAssociationSet: VpcIpv6CidrBlockAssociationSet = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
+    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     OwnerId: String = null,
     State: VpcState = null,
     Tags: TagList = null,

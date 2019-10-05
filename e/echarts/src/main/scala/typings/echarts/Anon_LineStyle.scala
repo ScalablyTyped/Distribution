@@ -1,6 +1,6 @@
 package typings.echarts
 
-import typings.echarts.echartsNs.EChartOptionNs.LineStyle
+import typings.echarts.echarts.EChartOption.LineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

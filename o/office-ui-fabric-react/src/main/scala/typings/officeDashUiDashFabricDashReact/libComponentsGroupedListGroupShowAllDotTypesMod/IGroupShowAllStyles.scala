@@ -11,9 +11,9 @@ trait IGroupShowAllStyles extends js.Object {
 
 object IGroupShowAllStyles {
   @scala.inline
-  def apply(root: IStyle): IGroupShowAllStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IGroupShowAllStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupShowAllStyles]
   }
 }

@@ -1,5 +1,6 @@
 package typings.sipDotJs.libCoreMod
 
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState
 import typings.sipDotJs.libCoreTransactionsTransactionDashUserMod.TransactionUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ abstract class Transaction protected ()
     _transport: typings.sipDotJs.libCoreTransportMod.Transport,
     _user: TransactionUser,
     _id: String,
-    _state: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState,
+    _state: TransactionState,
     loggerCategory: String
   ) = this()
 }

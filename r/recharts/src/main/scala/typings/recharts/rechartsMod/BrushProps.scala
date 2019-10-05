@@ -36,11 +36,11 @@ object BrushProps {
     endIndex: Int | Double = null,
     fill: String = null,
     height: Int | Double = null,
-    onChange: RechartsFunction = null,
+    onChange: /* repeated */ js.Any => Unit = null,
     padding: Partial[Margin] = null,
     startIndex: Int | Double = null,
     stroke: String = null,
-    tickFormatter: TickFormatterFunction = null,
+    tickFormatter: /* value */ js.Any => js.Any = null,
     travellerWidth: Int | Double = null,
     updateId: String | Double = null,
     width: Int | Double = null,
@@ -55,11 +55,11 @@ object BrushProps {
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(tickFormatter)
+    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1(tickFormatter))
     if (travellerWidth != null) __obj.updateDynamic("travellerWidth")(travellerWidth.asInstanceOf[js.Any])
     if (updateId != null) __obj.updateDynamic("updateId")(updateId.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

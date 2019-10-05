@@ -26,8 +26,8 @@ trait VpcConfigRequest extends js.Object {
 object VpcConfigRequest {
   @scala.inline
   def apply(
-    endpointPrivateAccess: js.UndefOr[BoxedBoolean] = js.undefined,
-    endpointPublicAccess: js.UndefOr[BoxedBoolean] = js.undefined,
+    endpointPrivateAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    endpointPublicAccess: js.UndefOr[scala.Boolean] = js.undefined,
     securityGroupIds: StringList = null,
     subnetIds: StringList = null
   ): VpcConfigRequest = {

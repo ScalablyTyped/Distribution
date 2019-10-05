@@ -58,9 +58,9 @@ trait ServiceQuota extends js.Object {
 object ServiceQuota {
   @scala.inline
   def apply(
-    Adjustable: js.UndefOr[QuotaAdjustable] = js.undefined,
+    Adjustable: js.UndefOr[Boolean] = js.undefined,
     ErrorReason: ErrorReason = null,
-    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
+    GlobalQuota: js.UndefOr[Boolean] = js.undefined,
     Period: QuotaPeriod = null,
     QuotaArn: QuotaArn = null,
     QuotaCode: QuotaCode = null,
@@ -69,7 +69,7 @@ object ServiceQuota {
     ServiceName: ServiceName = null,
     Unit: QuotaUnit = null,
     UsageMetric: MetricInfo = null,
-    Value: js.UndefOr[QuotaValue] = js.undefined
+    Value: Int | Double = null
   ): ServiceQuota = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Adjustable)) __obj.updateDynamic("Adjustable")(Adjustable)
@@ -83,7 +83,7 @@ object ServiceQuota {
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit)
     if (UsageMetric != null) __obj.updateDynamic("UsageMetric")(UsageMetric)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceQuota]
   }
 }

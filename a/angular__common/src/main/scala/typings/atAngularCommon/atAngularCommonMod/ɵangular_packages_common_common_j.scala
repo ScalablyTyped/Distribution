@@ -9,10 +9,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Extracted nested Instantiables into classes in ɵangular_packages_common_common_jNs */
 @JSImport("@angular/common", "ɵangular_packages_common_common_j")
 @js.native
 object ɵangular_packages_common_common_j extends js.Object {
+  @js.native
+  class provide () extends ɵNgStyleImpl
+  
+  @js.native
+  class useClass protected () extends ɵNgStyleR2Impl {
+    def this(_ngEl: ElementRef[_], _differs: KeyValueDiffers, _renderer: Renderer2) = this()
+  }
+  
   var provide: Instantiable0[ɵNgStyleImpl] = js.native
   var useClass: Instantiable3[
     /* _ngEl */ ElementRef[js.Any], 

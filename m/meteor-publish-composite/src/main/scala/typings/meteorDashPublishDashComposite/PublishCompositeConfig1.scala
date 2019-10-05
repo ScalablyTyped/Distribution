@@ -1,6 +1,6 @@
 package typings.meteorDashPublishDashComposite
 
-import typings.meteor.MongoNs.Cursor
+import typings.meteor.Mongo.Cursor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

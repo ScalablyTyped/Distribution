@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Vec2")
 @js.native
 class Vec2 ()
-  extends typings.playcanvas.pcNs.Vec2 {
+  extends typings.playcanvas.pc.Vec2 {
   def this(x: js.Array[Number]) = this()
   def this(x: Double) = this()
   def this(x: js.Array[Number], y: Double) = this()
@@ -37,7 +37,7 @@ object Vec2 extends js.Object {
     * @name pc.Vec2.ONE
     * @description A constant vector set to [1, 1].
     */
-  val ONE: typings.playcanvas.pcNs.Vec2 = js.native
+  val ONE: typings.playcanvas.pc.Vec2 = js.native
   /**
     * @field
     * @static
@@ -46,7 +46,7 @@ object Vec2 extends js.Object {
     * @name pc.Vec2.RIGHT
     * @description A constant vector set to [1, 0].
     */
-  val RIGHT: typings.playcanvas.pcNs.Vec2 = js.native
+  val RIGHT: typings.playcanvas.pc.Vec2 = js.native
   /**
     * @field
     * @static
@@ -55,7 +55,7 @@ object Vec2 extends js.Object {
     * @name pc.Vec2.UP
     * @description A constant vector set to [0, 1].
     */
-  val UP: typings.playcanvas.pcNs.Vec2 = js.native
+  val UP: typings.playcanvas.pc.Vec2 = js.native
   /**
     * @field
     * @static
@@ -64,6 +64,6 @@ object Vec2 extends js.Object {
     * @name pc.Vec2.ZERO
     * @description A constant vector set to [0, 0].
     */
-  val ZERO: typings.playcanvas.pcNs.Vec2 = js.native
+  val ZERO: typings.playcanvas.pc.Vec2 = js.native
 }
 

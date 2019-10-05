@@ -1,5 +1,6 @@
 package typings.is
 
+import org.scalablytyped.runtime.TopLevel
 import typings.is.isStrings.affirmative
 import typings.is.isStrings.alphaNumeric
 import typings.is.isStrings.caPostalCode
@@ -109,4 +110,8 @@ trait Is extends IsStatic {
   @JSName("setRegexp")
   def setRegexp_usZipCode(value: RegExp, regexp: usZipCode): Boolean = js.native
 }
+
+@JSGlobal("is")
+@js.native
+object is extends TopLevel[Is]
 

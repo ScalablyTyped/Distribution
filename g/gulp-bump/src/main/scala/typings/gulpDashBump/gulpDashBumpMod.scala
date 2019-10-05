@@ -1,7 +1,7 @@
 package typings.gulpDashBump
 
 import typings.bumpDashRegex.bumpDashRegexMod.Options
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

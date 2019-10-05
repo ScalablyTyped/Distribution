@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.FoundationNs.IWwwFormUrlDecoderEntry
+import typings.winrt.Windows.Foundation.IWwwFormUrlDecoderEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

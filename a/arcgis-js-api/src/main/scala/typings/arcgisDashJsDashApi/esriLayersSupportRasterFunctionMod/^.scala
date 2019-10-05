@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportRasterFunctionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterFunctionConstructor
+import typings.arcgisDashJsDashApi.__esri.RasterFunctionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

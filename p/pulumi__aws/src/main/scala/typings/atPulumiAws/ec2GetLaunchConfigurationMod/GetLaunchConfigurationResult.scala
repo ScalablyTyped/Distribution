@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2GetLaunchConfigurationMod
 
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationEphemeralBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetLaunchConfigurationRootBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.GetLaunchConfigurationRootBlockDevice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

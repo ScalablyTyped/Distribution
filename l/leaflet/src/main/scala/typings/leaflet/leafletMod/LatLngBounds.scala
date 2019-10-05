@@ -30,3 +30,10 @@ class LatLngBounds protected () extends js.Object {
   def toBBoxString(): String = js.native
 }
 
+@JSImport("leaflet", "latLngBounds")
+@js.native
+object latLngBounds extends js.Object {
+  def apply(latlngs: js.Array[LatLngExpression]): LatLngBounds = js.native
+  def apply(southWest: LatLngExpression, northEast: LatLngExpression): LatLngBounds = js.native
+}
+

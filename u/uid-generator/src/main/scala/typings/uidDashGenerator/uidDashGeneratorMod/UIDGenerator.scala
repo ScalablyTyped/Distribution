@@ -1,5 +1,6 @@
 package typings.uidDashGenerator.uidDashGeneratorMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,5 @@ trait UIDGenerator extends js.Object {
 
 @JSImport("uid-generator", "UIDGenerator")
 @js.native
-class UIDGeneratorCls () extends UIDGenerator {
-  def this(baseEncoding: String) = this()
-  def this(bitSize: Double) = this()
-  def this(bitSize: Double, baseEncoding: String) = this()
-}
+object UIDGenerator extends TopLevel[UIDGeneratorConstructor]
 

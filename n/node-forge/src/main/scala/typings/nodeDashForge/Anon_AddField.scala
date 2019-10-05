@@ -1,7 +1,7 @@
 package typings.nodeDashForge
 
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.CertificateField
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.CertificateFieldOptions
+import typings.nodeDashForge.nodeDashForgeMod.pki.CertificateField
+import typings.nodeDashForge.nodeDashForgeMod.pki.CertificateFieldOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

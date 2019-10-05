@@ -109,7 +109,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "LightComponent")
 @js.native
 class LightComponent protected ()
-  extends typings.playcanvas.pcNs.LightComponent {
-  def this(system: typings.playcanvas.pcNs.LightComponentSystem, entity: typings.playcanvas.pcNs.Entity) = this()
+  extends typings.playcanvas.pc.LightComponent {
+  def this(system: typings.playcanvas.pc.LightComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

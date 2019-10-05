@@ -1,6 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,4 +42,8 @@ trait DataProcessor extends js.Object {
   def validate(): Boolean = js.native
   def validate(mode: js.Any): Boolean = js.native
 }
+
+@JSImport("webix", "DataProcessor")
+@js.native
+object DataProcessor extends TopLevel[DataProcessor]
 

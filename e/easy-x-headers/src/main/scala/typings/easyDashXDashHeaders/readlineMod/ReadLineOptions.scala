@@ -1,7 +1,7 @@
 package typings.easyDashXDashHeaders.readlineMod
 
-import typings.easyDashXDashHeaders.NodeJSNs.ReadableStream
-import typings.easyDashXDashHeaders.NodeJSNs.WritableStream
+import typings.easyDashXDashHeaders.NodeJS.ReadableStream
+import typings.easyDashXDashHeaders.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

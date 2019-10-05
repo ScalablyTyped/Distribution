@@ -11,9 +11,11 @@ trait Anon_Concurrent extends js.Object {
 
 object Anon_Concurrent {
   @scala.inline
-  def apply(concurrent: ItConcurrentBase = null): Anon_Concurrent = {
+  def apply(
+    concurrent: (/* testName */ String, /* testFn */ js.Function0[js.Promise[js.Any]], /* timeout */ js.UndefOr[Double]) => Unit = null
+  ): Anon_Concurrent = {
     val __obj = js.Dynamic.literal()
-    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent)
+    if (concurrent != null) __obj.updateDynamic("concurrent")(js.Any.fromFunction3(concurrent))
     __obj.asInstanceOf[Anon_Concurrent]
   }
 }

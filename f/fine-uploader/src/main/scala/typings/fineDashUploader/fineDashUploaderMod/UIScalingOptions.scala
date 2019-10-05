@@ -1,6 +1,7 @@
 package typings.fineDashUploader.fineDashUploaderMod
 
-import typings.fineDashUploader.libCoreMod.CustomResizerCallBack
+import typings.fineDashUploader.libCoreMod.PromiseOptions
+import typings.fineDashUploader.libCoreMod.ResizeInfo
 import typings.fineDashUploader.libCoreMod.ScalingOptions
 import typings.fineDashUploader.libCoreMod.SizeOptions
 import scala.scalajs.js
@@ -19,7 +20,7 @@ trait UIScalingOptions extends ScalingOptions {
 object UIScalingOptions {
   @scala.inline
   def apply(
-    customResizer: CustomResizerCallBack = null,
+    customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
     defaultQuality: Int | Double = null,
     defaultType: String = null,
     failureText: String = null,
@@ -30,7 +31,7 @@ object UIScalingOptions {
     sizes: SizeOptions = null
   ): UIScalingOptions = {
     val __obj = js.Dynamic.literal()
-    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
     if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (failureText != null) __obj.updateDynamic("failureText")(failureText)

@@ -74,17 +74,17 @@ object EmailChannelResponse {
     ApplicationId: __string = null,
     ConfigurationSet: __string = null,
     CreationDate: __string = null,
-    Enabled: js.UndefOr[__boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     FromAddress: __string = null,
-    HasCredential: js.UndefOr[__boolean] = js.undefined,
+    HasCredential: js.UndefOr[Boolean] = js.undefined,
     Id: __string = null,
     Identity: __string = null,
-    IsArchived: js.UndefOr[__boolean] = js.undefined,
+    IsArchived: js.UndefOr[Boolean] = js.undefined,
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
-    MessagesPerSecond: js.UndefOr[__integer] = js.undefined,
+    MessagesPerSecond: Int | Double = null,
     RoleArn: __string = null,
-    Version: js.UndefOr[__integer] = js.undefined
+    Version: Int | Double = null
   ): EmailChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
@@ -98,9 +98,9 @@ object EmailChannelResponse {
     if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond)
+    if (MessagesPerSecond != null) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelResponse]
   }
 }

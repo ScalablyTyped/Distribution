@@ -1,6 +1,6 @@
 package typings.atPulumiAws.s3BucketMetricMod
 
-import typings.atPulumiAws.typesInputMod.s3Ns.BucketMetricFilter
+import typings.atPulumiAws.typesInputMod.s3.BucketMetricFilter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

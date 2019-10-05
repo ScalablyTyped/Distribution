@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMapNotesLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapNotesLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.MapNotesLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

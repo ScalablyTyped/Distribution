@@ -1,8 +1,8 @@
 package typings.orientjs.orientjsMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.orientjs.orientjsMod.MigrationNs.MigrationManager
-import typings.orientjs.orientjsMod.MigrationNs.MigrationManagerConfig
+import typings.orientjs.orientjsMod.Migration.MigrationManager
+import typings.orientjs.orientjsMod.Migration.MigrationManagerConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

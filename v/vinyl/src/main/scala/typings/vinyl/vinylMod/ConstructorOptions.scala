@@ -2,7 +2,7 @@ package typings.vinyl.vinylMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`

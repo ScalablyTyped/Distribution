@@ -46,3 +46,24 @@ object TSModuleDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsModuleDeclaration")
+@js.native
+object tsModuleDeclaration extends js.Object {
+  def apply(id: Identifier, body: TSModuleBlock): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleBlock, declare: Boolean): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleBlock, declare: Boolean, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleBlock, declare: Null, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleDeclaration): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleDeclaration, declare: Boolean): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleDeclaration, declare: Boolean, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: Identifier, body: TSModuleDeclaration, declare: Null, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleBlock): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleBlock, declare: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleBlock, declare: Boolean, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleBlock, declare: Null, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleDeclaration): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleDeclaration, declare: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleDeclaration, declare: Boolean, global: Boolean): TSModuleDeclaration = js.native
+  def apply(id: StringLiteral, body: TSModuleDeclaration, declare: Null, global: Boolean): TSModuleDeclaration = js.native
+}
+

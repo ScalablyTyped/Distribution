@@ -31,7 +31,7 @@ object TypedAttributeValue {
   @scala.inline
   def apply(
     BinaryValue: BinaryAttributeValue = null,
-    BooleanValue: js.UndefOr[BooleanAttributeValue] = js.undefined,
+    BooleanValue: js.UndefOr[Boolean] = js.undefined,
     DatetimeValue: DatetimeAttributeValue = null,
     NumberValue: NumberAttributeValue = null,
     StringValue: StringAttributeValue = null

@@ -1,6 +1,6 @@
 package typings.jqueryDashMaskDashPlugin
 
-import typings.jqueryDashMaskDashPlugin.jQueryMaskNs.Options
+import typings.jqueryDashMaskDashPlugin.jQueryMask.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

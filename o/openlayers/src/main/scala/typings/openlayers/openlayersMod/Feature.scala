@@ -1,8 +1,8 @@
 package typings.openlayers.openlayersMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openlayers.openlayersMod.geomNs.Geometry
-import typings.openlayers.openlayersMod.styleNs.Style
+import typings.openlayers.openlayersMod.geom.Geometry
+import typings.openlayers.openlayersMod.style.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

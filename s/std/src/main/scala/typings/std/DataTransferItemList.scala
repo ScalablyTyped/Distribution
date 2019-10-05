@@ -33,9 +33,5 @@ trait DataTransferItemList extends /* name */ NumberDictionary[DataTransferItem]
 
 @JSGlobal("DataTransferItemList")
 @js.native
-class DataTransferItemListCls () extends DataTransferItemList
-
-@JSGlobal("DataTransferItemList")
-@js.native
 object DataTransferItemList extends Instantiable0[DataTransferItemList]
 

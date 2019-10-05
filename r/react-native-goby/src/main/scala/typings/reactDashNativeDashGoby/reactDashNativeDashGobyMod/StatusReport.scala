@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod
 
-import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus
+import typings.reactDashNativeDashGoby.reactDashNativeDashGobyMod.Goby.DeploymentStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,9 +17,9 @@ trait ListProgressUpdateStreamsRequest extends js.Object {
 
 object ListProgressUpdateStreamsRequest {
   @scala.inline
-  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: Token = null): ListProgressUpdateStreamsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: Token = null): ListProgressUpdateStreamsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListProgressUpdateStreamsRequest]
   }

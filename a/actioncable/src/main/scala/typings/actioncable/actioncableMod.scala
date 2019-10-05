@@ -1,6 +1,6 @@
 package typings.actioncable
 
-import typings.actioncable.ActionCableNs.Cable
+import typings.actioncable.ActionCable.Cable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

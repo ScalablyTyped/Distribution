@@ -1,7 +1,9 @@
 package typings.formol.formolMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,9 @@ class FieldSet protected ()
   def this(props: FieldSetProps[_]) = this()
   def this(props: FieldSetProps[_], context: js.Any) = this()
 }
+
+@JSImport("formol", "FieldSet")
+@js.native
+object FieldSet
+  extends TopLevel[ComponentType[FieldSetProps[js.Any]]]
 

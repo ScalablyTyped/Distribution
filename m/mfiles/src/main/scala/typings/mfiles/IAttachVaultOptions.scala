@@ -1,6 +1,6 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFAttachVaultOptionsFlag
+import typings.mfiles.MFiles.MFAttachVaultOptionsFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

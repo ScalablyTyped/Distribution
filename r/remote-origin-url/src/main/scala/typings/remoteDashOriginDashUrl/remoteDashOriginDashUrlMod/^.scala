@@ -9,13 +9,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): js.Promise[js.UndefOr[String]] = js.native
   def apply(callback: Callback): Unit = js.native
-  def apply(options: String | Options): js.Promise[js.UndefOr[String]] = js.native
-  def apply(options: String | Options, callback: Callback): Unit = js.native
-  def promise(): js.Promise[js.UndefOr[String]] = js.native
-  def promise(options: String): js.Promise[js.UndefOr[String]] = js.native
-  def promise(options: Options): js.Promise[js.UndefOr[String]] = js.native
-  def sync(): js.UndefOr[String] = js.native
-  def sync(options: String): js.UndefOr[String] = js.native
-  def sync(options: Options): js.UndefOr[String] = js.native
+  def apply(options: String): js.Promise[js.UndefOr[String]] = js.native
+  def apply(options: String, callback: Callback): Unit = js.native
+  def apply(options: Options): js.Promise[js.UndefOr[String]] = js.native
+  def apply(options: Options, callback: Callback): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libVdomMod.VDomRendererNs.IModel
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.nock.nockMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.nock.Anon_Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,4 +19,8 @@ trait Back extends js.Object {
   ): Unit = js.native
   def setMode(mode: BackMode): Unit = js.native
 }
+
+@JSImport("nock", "back")
+@js.native
+object back extends TopLevel[Back]
 

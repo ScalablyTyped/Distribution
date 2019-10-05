@@ -17,9 +17,9 @@ trait DescribeAggregationAuthorizationsRequest extends js.Object {
 
 object DescribeAggregationAuthorizationsRequest {
   @scala.inline
-  def apply(Limit: js.UndefOr[Limit] = js.undefined, NextToken: String = null): DescribeAggregationAuthorizationsRequest = {
+  def apply(Limit: Int | Double = null, NextToken: String = null): DescribeAggregationAuthorizationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeAggregationAuthorizationsRequest]
   }

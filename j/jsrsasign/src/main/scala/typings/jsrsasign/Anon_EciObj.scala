@@ -1,7 +1,7 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.cmsNs.EncapsulatedContentInfo
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.cmsNs.SignedData
+import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo
+import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

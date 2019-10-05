@@ -42,7 +42,6 @@ class ^ protected () extends Filter {
 @JSImport("bloom-filter", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def MurmurHash3(seed: Double, data: Buffer): Double = js.native
   def create(elements: Double, falsePositiveRate: Double): Filter = js.native
   def create(elements: Double, falsePositiveRate: Double, nTweak: Double): Filter = js.native
   def create(elements: Double, falsePositiveRate: Double, nTweak: Double, nFlags: Double): Filter = js.native

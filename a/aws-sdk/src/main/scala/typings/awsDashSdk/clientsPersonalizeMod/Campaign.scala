@@ -48,7 +48,7 @@ object Campaign {
     failureReason: FailureReason = null,
     lastUpdatedDateTime: _Date = null,
     latestCampaignUpdate: CampaignUpdateSummary = null,
-    minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined,
+    minProvisionedTPS: Int | Double = null,
     name: Name = null,
     solutionVersionArn: Arn = null,
     status: Status = null
@@ -59,7 +59,7 @@ object Campaign {
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime)
     if (latestCampaignUpdate != null) __obj.updateDynamic("latestCampaignUpdate")(latestCampaignUpdate)
-    if (!js.isUndefined(minProvisionedTPS)) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS)
+    if (minProvisionedTPS != null) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn)
     if (status != null) __obj.updateDynamic("status")(status)

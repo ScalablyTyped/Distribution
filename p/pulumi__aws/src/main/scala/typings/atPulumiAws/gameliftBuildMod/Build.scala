@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftBuildMod
 
-import typings.atPulumiAws.typesOutputMod.gameliftNs.BuildStorageLocation
+import typings.atPulumiAws.typesOutputMod.gamelift.BuildStorageLocation
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

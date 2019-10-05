@@ -3,7 +3,7 @@ package typings.qDashIo
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.q.qMod.Promise
-import typings.qDashIo.QioFSNs.Stats
+import typings.qDashIo.QioFS.Stats
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

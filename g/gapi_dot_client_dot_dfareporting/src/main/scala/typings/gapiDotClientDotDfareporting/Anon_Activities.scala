@@ -1,10 +1,10 @@
 package typings.gapiDotClientDotDfareporting
 
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.Activities
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.CustomRichMediaEvents
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.DateRange
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.DimensionValue
-import typings.gapiDotClientDotDfareporting.gapiNs.clientNs.dfareportingNs.SortedDimension
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.Activities
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.CustomRichMediaEvents
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.DateRange
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.DimensionValue
+import typings.gapiDotClientDotDfareporting.gapi.client.dfareporting.SortedDimension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

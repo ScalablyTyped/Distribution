@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "GSSolver")
 @js.native
 class GSSolver ()
-  extends typings.cannon.CANNONNs.GSSolver
+  extends typings.cannon.CANNON.GSSolver
 

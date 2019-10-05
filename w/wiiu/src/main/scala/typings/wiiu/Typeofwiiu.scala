@@ -1,8 +1,8 @@
 package typings.wiiu
 
-import typings.wiiu.wiiuNs.ImageView
-import typings.wiiu.wiiuNs.VideoPlayer
-import typings.wiiu.wiiuNs.WiiuGamePad
+import typings.wiiu.wiiu.ImageView
+import typings.wiiu.wiiu.VideoPlayer
+import typings.wiiu.wiiu.WiiuGamePad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

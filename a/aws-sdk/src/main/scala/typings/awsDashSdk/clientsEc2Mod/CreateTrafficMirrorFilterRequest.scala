@@ -28,7 +28,7 @@ object CreateTrafficMirrorFilterRequest {
   def apply(
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null
   ): CreateTrafficMirrorFilterRequest = {
     val __obj = js.Dynamic.literal()

@@ -46,14 +46,72 @@ object PropertiesHyphen {
   def apply[TLength](
     ObsoletePropertiesHyphen: ObsoletePropertiesHyphen[TLength] = null,
     StandardPropertiesHyphen: StandardPropertiesHyphen[TLength] = null,
-    SvgPropertiesHyphen: SvgPropertiesHyphen[TLength] = null,
-    VendorPropertiesHyphen: VendorPropertiesHyphen[TLength] = null
+    VendorPropertiesHyphen: VendorPropertiesHyphen[TLength] = null,
+    `alignment-baseline`: AlignmentBaselineProperty = null,
+    `baseline-shift`: BaselineShiftProperty[TLength] = null,
+    `clip-rule`: ClipRuleProperty = null,
+    `color-interpolation`: ColorInterpolationProperty = null,
+    `color-rendering`: ColorRenderingProperty = null,
+    `dominant-baseline`: DominantBaselineProperty = null,
+    fill: FillProperty = null,
+    `fill-opacity`: GlobalsNumber = null,
+    `fill-rule`: FillRuleProperty = null,
+    `flood-color`: FloodColorProperty = null,
+    `flood-opacity`: GlobalsNumber = null,
+    `glyph-orientation-vertical`: GlyphOrientationVerticalProperty = null,
+    `lighting-color`: LightingColorProperty = null,
+    marker: MarkerProperty = null,
+    `marker-end`: MarkerEndProperty = null,
+    `marker-mid`: MarkerMidProperty = null,
+    `marker-start`: MarkerStartProperty = null,
+    `shape-rendering`: ShapeRenderingProperty = null,
+    `stop-color`: StopColorProperty = null,
+    `stop-opacity`: GlobalsNumber = null,
+    stroke: StrokeProperty = null,
+    `stroke-dasharray`: StrokeDasharrayProperty[TLength] = null,
+    `stroke-dashoffset`: StrokeDashoffsetProperty[TLength] = null,
+    `stroke-linecap`: StrokeLinecapProperty = null,
+    `stroke-linejoin`: StrokeLinejoinProperty = null,
+    `stroke-miterlimit`: GlobalsNumber = null,
+    `stroke-opacity`: GlobalsNumber = null,
+    `stroke-width`: StrokeWidthProperty[TLength] = null,
+    `text-anchor`: TextAnchorProperty = null,
+    `vector-effect`: VectorEffectProperty = null
   ): PropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphen)
     js.Dynamic.global.Object.assign(__obj, StandardPropertiesHyphen)
-    js.Dynamic.global.Object.assign(__obj, SvgPropertiesHyphen)
     js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphen)
+    if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`)
+    if (`baseline-shift` != null) __obj.updateDynamic("baseline-shift")(`baseline-shift`.asInstanceOf[js.Any])
+    if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`)
+    if (`color-interpolation` != null) __obj.updateDynamic("color-interpolation")(`color-interpolation`)
+    if (`color-rendering` != null) __obj.updateDynamic("color-rendering")(`color-rendering`)
+    if (`dominant-baseline` != null) __obj.updateDynamic("dominant-baseline")(`dominant-baseline`)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
+    if (`fill-rule` != null) __obj.updateDynamic("fill-rule")(`fill-rule`)
+    if (`flood-color` != null) __obj.updateDynamic("flood-color")(`flood-color`.asInstanceOf[js.Any])
+    if (`flood-opacity` != null) __obj.updateDynamic("flood-opacity")(`flood-opacity`.asInstanceOf[js.Any])
+    if (`glyph-orientation-vertical` != null) __obj.updateDynamic("glyph-orientation-vertical")(`glyph-orientation-vertical`.asInstanceOf[js.Any])
+    if (`lighting-color` != null) __obj.updateDynamic("lighting-color")(`lighting-color`.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (`marker-end` != null) __obj.updateDynamic("marker-end")(`marker-end`.asInstanceOf[js.Any])
+    if (`marker-mid` != null) __obj.updateDynamic("marker-mid")(`marker-mid`.asInstanceOf[js.Any])
+    if (`marker-start` != null) __obj.updateDynamic("marker-start")(`marker-start`.asInstanceOf[js.Any])
+    if (`shape-rendering` != null) __obj.updateDynamic("shape-rendering")(`shape-rendering`)
+    if (`stop-color` != null) __obj.updateDynamic("stop-color")(`stop-color`.asInstanceOf[js.Any])
+    if (`stop-opacity` != null) __obj.updateDynamic("stop-opacity")(`stop-opacity`.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (`stroke-dasharray` != null) __obj.updateDynamic("stroke-dasharray")(`stroke-dasharray`.asInstanceOf[js.Any])
+    if (`stroke-dashoffset` != null) __obj.updateDynamic("stroke-dashoffset")(`stroke-dashoffset`.asInstanceOf[js.Any])
+    if (`stroke-linecap` != null) __obj.updateDynamic("stroke-linecap")(`stroke-linecap`)
+    if (`stroke-linejoin` != null) __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`)
+    if (`stroke-miterlimit` != null) __obj.updateDynamic("stroke-miterlimit")(`stroke-miterlimit`.asInstanceOf[js.Any])
+    if (`stroke-opacity` != null) __obj.updateDynamic("stroke-opacity")(`stroke-opacity`.asInstanceOf[js.Any])
+    if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
+    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`)
+    if (`vector-effect` != null) __obj.updateDynamic("vector-effect")(`vector-effect`)
     __obj.asInstanceOf[PropertiesHyphen[TLength]]
   }
 }

@@ -1,7 +1,7 @@
 package typings.owlDotCarousel
 
-import typings.owlDotCarousel.OwlCarouselNs.OnEvent
-import typings.owlDotCarousel.OwlCarouselNs.TriggerEvent
+import typings.owlDotCarousel.OwlCarousel.OnEvent
+import typings.owlDotCarousel.OwlCarousel.TriggerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

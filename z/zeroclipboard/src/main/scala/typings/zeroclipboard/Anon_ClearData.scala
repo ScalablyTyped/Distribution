@@ -1,6 +1,6 @@
 package typings.zeroclipboard
 
-import typings.zeroclipboard.ZCNs.Dictionary
+import typings.zeroclipboard.ZC.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

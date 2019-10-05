@@ -50,7 +50,7 @@ object WorkflowExecutionInfo {
     executionStatus: ExecutionStatus,
     startTimestamp: Timestamp,
     workflowType: WorkflowType,
-    cancelRequested: js.UndefOr[Canceled] = js.undefined,
+    cancelRequested: js.UndefOr[Boolean] = js.undefined,
     closeStatus: CloseStatus = null,
     closeTimestamp: Timestamp = null,
     parent: WorkflowExecution = null,

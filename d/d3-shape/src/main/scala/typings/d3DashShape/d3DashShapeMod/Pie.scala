@@ -1,5 +1,6 @@
 package typings.d3DashShape.d3DashShapeMod
 
+import typings.d3DashShape.Anon_ValueOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -192,5 +193,11 @@ trait Pie[This, Datum] extends js.Object {
     * @param value Constant value to be used.
     */
   def value(value: Double): this.type = js.native
+}
+
+@JSImport("d3-shape", "pie")
+@js.native
+object pie extends js.Object {
+  def apply(): Pie[_, Double | Anon_ValueOf] = js.native
 }
 

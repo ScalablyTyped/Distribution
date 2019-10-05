@@ -1,6 +1,6 @@
 package typings.nodeDashJose
 
-import typings.nodeDashJose.nodeDashJoseMod.JWKNs.KeyUse
+import typings.nodeDashJose.nodeDashJoseMod.JWK.KeyUse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

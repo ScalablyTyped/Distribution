@@ -20,3 +20,17 @@ trait TelnetServer extends /**
   */
 Instantiable0[TelnetServer]
 
+/**
+* 
+*/
+@JSGlobal("TelnetServer")
+@js.native
+object TelnetServer extends js.Object {
+  /**
+    * 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_TelnetServer_setOptions
+    */
+  def setOptions(options: js.Any): Unit = js.native
+}
+

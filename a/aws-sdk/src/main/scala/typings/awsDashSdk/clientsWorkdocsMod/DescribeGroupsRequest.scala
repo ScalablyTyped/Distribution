@@ -32,13 +32,13 @@ object DescribeGroupsRequest {
   def apply(
     SearchQuery: SearchQueryType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    Limit: js.UndefOr[PositiveIntegerType] = js.undefined,
+    Limit: Int | Double = null,
     Marker: MarkerType = null,
     OrganizationId: IdType = null
   ): DescribeGroupsRequest = {
     val __obj = js.Dynamic.literal(SearchQuery = SearchQuery)
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId)
     __obj.asInstanceOf[DescribeGroupsRequest]

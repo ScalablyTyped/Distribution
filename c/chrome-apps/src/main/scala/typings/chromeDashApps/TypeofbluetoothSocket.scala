@@ -1,14 +1,14 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.CreateInfo
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.ListenOptions
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnAcceptErrorEvent
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnAcceptEvent
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnReceiveErrorEvent
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.OnReceiveEvent
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.SocketInfo
-import typings.chromeDashApps.chromeNs.bluetoothSocketNs.SocketProperties
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.bluetoothSocket.CreateInfo
+import typings.chromeDashApps.chrome.bluetoothSocket.ListenOptions
+import typings.chromeDashApps.chrome.bluetoothSocket.OnAcceptErrorEvent
+import typings.chromeDashApps.chrome.bluetoothSocket.OnAcceptEvent
+import typings.chromeDashApps.chrome.bluetoothSocket.OnReceiveErrorEvent
+import typings.chromeDashApps.chrome.bluetoothSocket.OnReceiveEvent
+import typings.chromeDashApps.chrome.bluetoothSocket.SocketInfo
+import typings.chromeDashApps.chrome.bluetoothSocket.SocketProperties
+import typings.chromeDashApps.chrome.integer
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

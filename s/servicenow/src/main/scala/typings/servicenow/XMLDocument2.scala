@@ -1,6 +1,6 @@
 package typings.servicenow
 
-import typings.servicenow.servicenowNs.XMLNode
+import typings.servicenow.servicenow.XMLNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

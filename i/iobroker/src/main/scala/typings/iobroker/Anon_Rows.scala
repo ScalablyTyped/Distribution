@@ -1,6 +1,6 @@
 package typings.iobroker
 
-import typings.iobroker.iobrokerMod.Global.ioBrokerNs.GetObjectViewItem
+import typings.iobroker.iobrokerMod.Global.ioBroker.GetObjectViewItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

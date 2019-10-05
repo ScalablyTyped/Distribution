@@ -1,8 +1,8 @@
 package typings.atPulumiAws.wafWebAclMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.WebAclDefaultAction
-import typings.atPulumiAws.typesOutputMod.wafNs.WebAclLoggingConfiguration
-import typings.atPulumiAws.typesOutputMod.wafNs.WebAclRule
+import typings.atPulumiAws.typesOutputMod.waf.WebAclDefaultAction
+import typings.atPulumiAws.typesOutputMod.waf.WebAclLoggingConfiguration
+import typings.atPulumiAws.typesOutputMod.waf.WebAclRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

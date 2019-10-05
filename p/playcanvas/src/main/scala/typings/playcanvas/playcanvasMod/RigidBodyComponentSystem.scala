@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "RigidBodyComponentSystem")
 @js.native
 class RigidBodyComponentSystem protected ()
-  extends typings.playcanvas.pcNs.RigidBodyComponentSystem {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.RigidBodyComponentSystem {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

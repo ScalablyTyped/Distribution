@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_placeholder"
-version := "2.1.1-dt-20190322Z-3f6668"
-scalaVersion := "2.12.9"
+version := "2.1.1-dt-20190322Z-fddaa0"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

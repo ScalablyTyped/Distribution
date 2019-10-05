@@ -1,7 +1,7 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.eventsNs.Event
-import typings.chrome.chromeNs.ttsEngineNs.TtsEngineSpeakEvent
+import typings.chrome.chrome.events.Event
+import typings.chrome.chrome.ttsEngine.TtsEngineSpeakEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

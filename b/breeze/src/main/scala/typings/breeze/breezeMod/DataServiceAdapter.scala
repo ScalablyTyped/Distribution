@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "DataServiceAdapter")
 @js.native
 class DataServiceAdapter ()
-  extends typings.breeze.breezeNs.DataServiceAdapter
+  extends typings.breeze.breeze.DataServiceAdapter
 

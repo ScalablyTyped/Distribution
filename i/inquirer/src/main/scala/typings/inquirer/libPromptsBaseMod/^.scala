@@ -1,9 +1,9 @@
 package typings.inquirer.libPromptsBaseMod
 
 import typings.inquirer.inquirerMod.Answers
-import typings.inquirer.inquirerMod.promptsNs.PromptEventPipes
-import typings.inquirer.inquirerMod.promptsNs.PromptOptions
-import typings.inquirer.inquirerMod.promptsNs.PromptState
+import typings.inquirer.inquirerMod.prompts.PromptEventPipes
+import typings.inquirer.inquirerMod.prompts.PromptOptions
+import typings.inquirer.inquirerMod.prompts.PromptState
 import typings.node.readlineMod.Interface
 import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js

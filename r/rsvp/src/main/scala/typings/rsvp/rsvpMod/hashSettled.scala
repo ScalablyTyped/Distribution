@@ -11,7 +11,7 @@ object hashSettled extends js.Object {
     `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T
-  ): typings.rsvp.rsvpMod.RSVPNs.Promise[
+  ): typings.rsvp.rsvpMod.RSVP.Promise[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T
@@ -21,7 +21,7 @@ object hashSettled extends js.Object {
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T,
     label: String
-  ): typings.rsvp.rsvpMod.RSVPNs.Promise[
+  ): typings.rsvp.rsvpMod.RSVP.Promise[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T

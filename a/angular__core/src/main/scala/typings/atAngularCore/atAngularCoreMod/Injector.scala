@@ -1,5 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.Anon_Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,6 +27,10 @@ abstract class Injector () extends js.Object {
   def get[T](token: Type[T], notFoundValue: T): T = js.native
   def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
 }
+
+@JSImport("@angular/core", "INJECTOR")
+@js.native
+object INJECTOR extends TopLevel[InjectionToken[Injector]]
 
 /* static members */
 @JSImport("@angular/core", "Injector")

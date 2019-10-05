@@ -18,13 +18,6 @@ trait ErrorEvent extends Event {
 
 @JSGlobal("ErrorEvent")
 @js.native
-class ErrorEventCls protected () extends ErrorEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: ErrorEventInit) = this()
-}
-
-@JSGlobal("ErrorEvent")
-@js.native
 object ErrorEvent
   extends Instantiable1[/* type */ java.lang.String, ErrorEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ErrorEventInit, ErrorEvent]

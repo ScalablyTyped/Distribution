@@ -1,6 +1,7 @@
 package typings.atJupyterlabCells.atJupyterlabCellsMod
 
-import typings.atJupyterlabCells.libInputareaMod.InputAreaNs.IOptions
+import typings.atJupyterlabCells.libInputareaMod.InputArea.IOptions
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,5 +14,38 @@ class InputArea protected ()
     * Construct an input area widget.
     */
   def this(options: IOptions) = this()
+}
+
+@JSImport("@jupyterlab/cells", "InputArea")
+@js.native
+object InputArea extends js.Object {
+  /**
+    * Default implementation of `IContentFactory`.
+    *
+    * This defaults to using an `editorFactory` based on CodeMirror.
+    */
+  @js.native
+  /**
+    * Construct a `ContentFactory`.
+    */
+  class ContentFactory ()
+    extends typings.atJupyterlabCells.libInputareaMod.InputArea.ContentFactory {
+    def this(options: typings.atJupyterlabCells.libInputareaMod.InputArea.ContentFactory.IOptions) = this()
+  }
+  
+  /**
+    * The default `ContentFactory` instance.
+    */
+  val defaultContentFactory: typings.atJupyterlabCells.libInputareaMod.InputArea.ContentFactory = js.native
+  /**
+    * The default editor factory singleton based on CodeMirror.
+    */
+  val defaultEditorFactory: Factory = js.native
+  /**
+    * A namespace for the input area content factory.
+    */
+  @js.native
+  object ContentFactory extends js.Object
+  
 }
 

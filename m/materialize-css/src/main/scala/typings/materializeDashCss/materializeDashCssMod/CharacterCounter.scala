@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "CharacterCounter")
 @js.native
 class CharacterCounter ()
-  extends typings.materializeDashCss.MNs.CharacterCounter
+  extends typings.materializeDashCss.M.CharacterCounter
 
 /* static members */
 @JSImport("materialize-css", "CharacterCounter")
@@ -19,16 +19,16 @@ object CharacterCounter extends js.Object {
   /**
     * Get Instance
     */
-  def getInstance(elem: Element): typings.materializeDashCss.MNs.CharacterCounter = js.native
+  def getInstance(elem: Element): typings.materializeDashCss.M.CharacterCounter = js.native
   /**
     * Init CharacterCounters
     */
-  def init(els: MElements): js.Array[typings.materializeDashCss.MNs.CharacterCounter] = js.native
-  def init(els: MElements, options: Partial[js.UndefOr[scala.Nothing]]): js.Array[typings.materializeDashCss.MNs.CharacterCounter] = js.native
+  def init(els: MElements): js.Array[typings.materializeDashCss.M.CharacterCounter] = js.native
+  def init(els: MElements, options: Partial[js.UndefOr[scala.Nothing]]): js.Array[typings.materializeDashCss.M.CharacterCounter] = js.native
   /**
     * Init CharacterCounter
     */
-  def init(els: Element): typings.materializeDashCss.MNs.CharacterCounter = js.native
-  def init(els: Element, options: Partial[js.UndefOr[scala.Nothing]]): typings.materializeDashCss.MNs.CharacterCounter = js.native
+  def init(els: Element): typings.materializeDashCss.M.CharacterCounter = js.native
+  def init(els: Element, options: Partial[js.UndefOr[scala.Nothing]]): typings.materializeDashCss.M.CharacterCounter = js.native
 }
 

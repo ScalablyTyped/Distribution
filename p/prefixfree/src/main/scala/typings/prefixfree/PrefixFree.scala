@@ -1,9 +1,10 @@
 package typings.prefixfree
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.prefixfree.PrefixFreeNs.KnownPrefixCSS
-import typings.prefixfree.PrefixFreeNs.KnownPrefixJS
-import typings.prefixfree.StyleFixNs.StyleFixer
+import org.scalablytyped.runtime.TopLevel
+import typings.prefixfree.PrefixFree.KnownPrefixCSS
+import typings.prefixfree.PrefixFree.KnownPrefixJS
+import typings.prefixfree.StyleFix.StyleFixer
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,5 +40,29 @@ trait PrefixFree extends js.Object {
   def property(property: String): String = js.native
   def value(value: String): String = js.native
   def value(value: String, property: String): String = js.native
+}
+
+// PrefixFree
+@JSGlobal("PrefixFree")
+@js.native
+object PrefixFree extends TopLevel[PrefixFree] {
+  /** The known prefixes used for CSS properties. */
+  /* Rewritten from type alias, can be one of: 
+    - typings.prefixfree.prefixfreeStrings.`-moz-`
+    - typings.prefixfree.prefixfreeStrings.`-ms-`
+    - typings.prefixfree.prefixfreeStrings.`-o-`
+    - typings.prefixfree.prefixfreeStrings.`-webkit-`
+  */
+  trait KnownPrefixCSS extends js.Object
+  
+  /** The known prefixes used for CSS properties in `CSSStyleDeclaration`. */
+  /* Rewritten from type alias, can be one of: 
+    - typings.prefixfree.prefixfreeStrings.Moz
+    - typings.prefixfree.prefixfreeStrings.Ms
+    - typings.prefixfree.prefixfreeStrings.O
+    - typings.prefixfree.prefixfreeStrings.Webkit
+  */
+  trait KnownPrefixJS extends js.Object
+  
 }
 

@@ -28,7 +28,7 @@ object GetGroupResponse {
   def apply(
     Group: Group,
     Users: userListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): GetGroupResponse = {
     val __obj = js.Dynamic.literal(Group = Group, Users = Users)

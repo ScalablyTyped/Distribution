@@ -30,14 +30,14 @@ trait DoubleArrayOptions extends js.Object {
 object DoubleArrayOptions {
   @scala.inline
   def apply(
-    DefaultValue: js.UndefOr[Double] = js.undefined,
-    FacetEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
-    SearchEnabled: js.UndefOr[Boolean] = js.undefined,
+    DefaultValue: Int | scala.Double = null,
+    FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     SourceFields: FieldNameCommaList = null
   ): DoubleArrayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DefaultValue)) __obj.updateDynamic("DefaultValue")(DefaultValue)
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled)
     if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled)
     if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled)

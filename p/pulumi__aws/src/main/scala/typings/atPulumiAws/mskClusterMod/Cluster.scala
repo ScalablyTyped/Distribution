@@ -1,10 +1,10 @@
 package typings.atPulumiAws.mskClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.mskNs.ClusterBrokerNodeGroupInfo
-import typings.atPulumiAws.typesOutputMod.mskNs.ClusterClientAuthentication
-import typings.atPulumiAws.typesOutputMod.mskNs.ClusterConfigurationInfo
-import typings.atPulumiAws.typesOutputMod.mskNs.ClusterEncryptionInfo
+import typings.atPulumiAws.typesOutputMod.msk.ClusterBrokerNodeGroupInfo
+import typings.atPulumiAws.typesOutputMod.msk.ClusterClientAuthentication
+import typings.atPulumiAws.typesOutputMod.msk.ClusterConfigurationInfo
+import typings.atPulumiAws.typesOutputMod.msk.ClusterEncryptionInfo
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

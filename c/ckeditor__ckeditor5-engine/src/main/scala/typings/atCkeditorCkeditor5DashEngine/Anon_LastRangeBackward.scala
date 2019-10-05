@@ -1,7 +1,7 @@
 package typings.atCkeditorCkeditor5DashEngine
 
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.DocumentFragment
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.viewNs.Element
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.DocumentFragment
+import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.view.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

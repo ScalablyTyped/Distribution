@@ -44,7 +44,6 @@ import typings.react.reactMod.DragEvent
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
@@ -54,6 +53,7 @@ import typings.react.reactMod.UIEvent
 import typings.react.reactMod.WheelEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,8 +142,12 @@ trait Anon_About extends js.Object {
   var onAnimationIterationCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent[HTMLElement], Unit]] = js.undefined
   var onAnimationStart: js.UndefOr[js.Function1[/* event */ AnimationEvent[HTMLElement], Unit]] = js.undefined
   var onAnimationStartCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent[HTMLElement], Unit]] = js.undefined
-  var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onAuxClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
+  var onAuxClick: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onAuxClickCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
   var onBeforeInput: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
   var onBeforeInputCapture: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement], Unit]] = js.undefined
@@ -154,22 +158,34 @@ trait Anon_About extends js.Object {
   var onCanPlayThroughCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
   var onChangeCapture: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
+  var onClick: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onClickCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
   var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
   var onCompositionEndCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
   var onCompositionStart: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
   var onCompositionStartCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
   var onCompositionUpdate: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
   var onCompositionUpdateCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent[HTMLElement], Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onContextMenuCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
   var onCopy: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
   var onCopyCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
   var onCut: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
   var onCutCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
-  var onDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onDoubleClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
+  var onDoubleClick: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onDoubleClickCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
   var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], Unit]] = js.undefined
   var onDragCapture: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], Unit]] = js.undefined
   var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent[HTMLElement], Unit]] = js.undefined
@@ -220,18 +236,42 @@ trait Anon_About extends js.Object {
   var onLoadedMetadataCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent[HTMLElement], Unit]] = js.undefined
   var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent[HTMLElement], Unit]] = js.undefined
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseOut: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, typings.std.MouseEvent], Unit]] = js.undefined
+  var onMouseDown: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseDownCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseEnter: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseLeave: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseMove: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseOut: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseOutCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseOver: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseOverCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseUp: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
+  var onMouseUpCapture: js.UndefOr[
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent], Unit]
+  ] = js.undefined
   var onPaste: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
   var onPasteCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent[HTMLElement], Unit]] = js.undefined
   var onPause: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
@@ -400,8 +440,8 @@ object Anon_About {
     onAnimationIterationCapture: /* event */ AnimationEvent[HTMLElement] => Unit = null,
     onAnimationStart: /* event */ AnimationEvent[HTMLElement] => Unit = null,
     onAnimationStartCapture: /* event */ AnimationEvent[HTMLElement] => Unit = null,
-    onAuxClick: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onAuxClickCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
+    onAuxClick: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onAuxClickCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
     onBeforeInput: /* event */ FormEvent[HTMLElement] => Unit = null,
     onBeforeInputCapture: /* event */ FormEvent[HTMLElement] => Unit = null,
     onBlur: /* event */ FocusEvent[HTMLElement] => Unit = null,
@@ -412,22 +452,22 @@ object Anon_About {
     onCanPlayThroughCapture: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     onChange: /* event */ FormEvent[HTMLElement] => Unit = null,
     onChangeCapture: /* event */ FormEvent[HTMLElement] => Unit = null,
-    onClick: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onClickCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
+    onClick: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onClickCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
     onCompositionEnd: /* event */ CompositionEvent[HTMLElement] => Unit = null,
     onCompositionEndCapture: /* event */ CompositionEvent[HTMLElement] => Unit = null,
     onCompositionStart: /* event */ CompositionEvent[HTMLElement] => Unit = null,
     onCompositionStartCapture: /* event */ CompositionEvent[HTMLElement] => Unit = null,
     onCompositionUpdate: /* event */ CompositionEvent[HTMLElement] => Unit = null,
     onCompositionUpdateCapture: /* event */ CompositionEvent[HTMLElement] => Unit = null,
-    onContextMenu: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onContextMenuCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
+    onContextMenu: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onContextMenuCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
     onCopy: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
     onCopyCapture: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
     onCut: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
     onCutCapture: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
-    onDoubleClick: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onDoubleClickCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
+    onDoubleClick: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onDoubleClickCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
     onDrag: /* event */ DragEvent[HTMLElement] => Unit = null,
     onDragCapture: /* event */ DragEvent[HTMLElement] => Unit = null,
     onDragEnd: /* event */ DragEvent[HTMLElement] => Unit = null,
@@ -478,18 +518,18 @@ object Anon_About {
     onLoadedMetadataCapture: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     onLostPointerCapture: /* event */ PointerEvent[HTMLElement] => Unit = null,
     onLostPointerCaptureCapture: /* event */ PointerEvent[HTMLElement] => Unit = null,
-    onMouseDown: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseDownCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseEnter: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseLeave: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseMove: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseMoveCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseOut: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseOutCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseOver: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseOverCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseUp: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
-    onMouseUpCapture: /* event */ MouseEvent[HTMLElement, typings.std.MouseEvent] => Unit = null,
+    onMouseDown: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseDownCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseEnter: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseLeave: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseMove: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseMoveCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseOut: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseOutCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseOver: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseOverCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseUp: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
+    onMouseUpCapture: /* event */ typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent] => Unit = null,
     onPaste: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
     onPasteCapture: /* event */ ClipboardEvent[HTMLElement] => Unit = null,
     onPause: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,

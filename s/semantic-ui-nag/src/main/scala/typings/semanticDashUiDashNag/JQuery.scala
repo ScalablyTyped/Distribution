@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashNag
 
-import typings.semanticDashUiDashNag.SemanticUINs.Nag
-import typings.semanticDashUiDashNag.SemanticUINs.NagSettings
+import typings.semanticDashUiDashNag.SemanticUI.Nag
+import typings.semanticDashUiDashNag.SemanticUI.NagSettings
 import typings.semanticDashUiDashNag.semanticDashUiDashNagStrings.clear
 import typings.semanticDashUiDashNag.semanticDashUiDashNagStrings.destroy
 import typings.semanticDashUiDashNag.semanticDashUiDashNagStrings.hide

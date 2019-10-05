@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "styletron-engine-atomic"
-version := "1.1-dt-20190528Z-e5937b"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20190528Z-865ced"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-873ace")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
+  "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-298009")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

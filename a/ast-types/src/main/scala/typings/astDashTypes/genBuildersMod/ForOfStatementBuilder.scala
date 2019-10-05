@@ -5,7 +5,7 @@ import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.PatternKind
 import typings.astDashTypes.genKindsMod.StatementKind
 import typings.astDashTypes.genKindsMod.VariableDeclarationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ForOfStatement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ForOfStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

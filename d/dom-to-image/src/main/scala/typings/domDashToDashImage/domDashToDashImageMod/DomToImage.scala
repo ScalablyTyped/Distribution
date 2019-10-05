@@ -1,5 +1,6 @@
 package typings.domDashToDashImage.domDashToDashImageMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Blob
 import typings.std.Node
 import scala.scalajs.js
@@ -19,4 +20,8 @@ trait DomToImage extends js.Object {
   def toSvg(node: Node): js.Promise[String] = js.native
   def toSvg(node: Node, options: Options): js.Promise[String] = js.native
 }
+
+@JSImport("dom-to-image", "DomToImage")
+@js.native
+object DomToImage extends TopLevel[DomToImage]
 

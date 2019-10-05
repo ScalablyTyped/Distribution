@@ -62,8 +62,8 @@ object CreatePredictorRequest {
     EncryptionConfig: EncryptionConfig = null,
     EvaluationParameters: EvaluationParameters = null,
     HPOConfig: HyperParameterTuningJobConfig = null,
-    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[Boolean] = js.undefined,
+    PerformAutoML: js.UndefOr[scala.Boolean] = js.undefined,
+    PerformHPO: js.UndefOr[scala.Boolean] = js.undefined,
     TrainingParameters: TrainingParameters = null
   ): CreatePredictorRequest = {
     val __obj = js.Dynamic.literal(FeaturizationConfig = FeaturizationConfig, ForecastHorizon = ForecastHorizon, InputDataConfig = InputDataConfig, PredictorName = PredictorName)

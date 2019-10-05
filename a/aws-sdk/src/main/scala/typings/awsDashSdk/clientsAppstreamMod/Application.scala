@@ -39,7 +39,7 @@ object Application {
   @scala.inline
   def apply(
     DisplayName: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     IconURL: String = null,
     LaunchParameters: String = null,
     LaunchPath: String = null,

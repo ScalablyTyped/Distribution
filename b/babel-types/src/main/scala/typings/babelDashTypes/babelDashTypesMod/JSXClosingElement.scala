@@ -34,3 +34,11 @@ object JSXClosingElement {
   }
 }
 
+@JSImport("babel-types", "jSXClosingElement")
+@js.native
+object jSXClosingElement extends js.Object {
+  def apply(): JSXClosingElement = js.native
+  def apply(name: JSXIdentifier): JSXClosingElement = js.native
+  def apply(name: JSXMemberExpression): JSXClosingElement = js.native
+}
+

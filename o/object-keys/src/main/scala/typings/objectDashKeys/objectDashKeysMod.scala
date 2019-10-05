@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectDashKeysMod extends js.Object {
   def apply(`object`: js.Object): js.Array[String] = js.native
-  def shim(): js.Function1[/* object */ js.Object, js.Array[String]] = js.native
+  def shim(): js.Any = js.native
 }
 

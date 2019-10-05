@@ -81,7 +81,7 @@ object RelationalDatabaseSnapshot {
     location: ResourceLocation = null,
     name: ResourceName = null,
     resourceType: ResourceType = null,
-    sizeInGb: js.UndefOr[integer] = js.undefined,
+    sizeInGb: Int | Double = null,
     state: NonEmptyString = null,
     supportCode: String = null,
     tags: TagList = null
@@ -98,7 +98,7 @@ object RelationalDatabaseSnapshot {
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb)
+    if (sizeInGb != null) __obj.updateDynamic("sizeInGb")(sizeInGb.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)
     if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode)
     if (tags != null) __obj.updateDynamic("tags")(tags)

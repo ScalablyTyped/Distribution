@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashDimmer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashDimmer.SemanticUINs.Dimmer
+import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

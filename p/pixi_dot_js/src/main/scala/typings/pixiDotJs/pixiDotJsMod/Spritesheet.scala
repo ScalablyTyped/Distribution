@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Spritesheet")
 @js.native
 class Spritesheet protected ()
-  extends typings.pixiDotJs.PIXINs.Spritesheet {
-  def this(baseTexture: typings.pixiDotJs.PIXINs.BaseTexture, data: js.Any) = this()
-  def this(baseTexture: typings.pixiDotJs.PIXINs.BaseTexture, data: js.Any, resolutionFilename: String) = this()
+  extends typings.pixiDotJs.PIXI.Spritesheet {
+  def this(baseTexture: typings.pixiDotJs.PIXI.BaseTexture, data: js.Any) = this()
+  def this(baseTexture: typings.pixiDotJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
 }
 
 /* static members */

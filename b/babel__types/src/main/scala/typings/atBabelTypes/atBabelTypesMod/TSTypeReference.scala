@@ -40,3 +40,10 @@ object TSTypeReference {
   }
 }
 
+@JSImport("@babel/types", "tsTypeReference")
+@js.native
+object tsTypeReference extends js.Object {
+  def apply(typeName: TSEntityName): TSTypeReference = js.native
+  def apply(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeReference = js.native
+}
+

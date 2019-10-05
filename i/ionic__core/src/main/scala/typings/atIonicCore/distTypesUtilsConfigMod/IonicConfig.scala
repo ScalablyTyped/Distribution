@@ -3,6 +3,7 @@ package typings.atIonicCore.distTypesUtilsConfigMod
 import typings.atIonicCore.distTypesComponentsSpinnerSpinnerDashConfigsMod.SpinnerTypes
 import typings.atIonicCore.distTypesComponentsTabDashBarTabDashBarDashInterfaceMod.TabButtonLayout
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -164,10 +165,10 @@ object IonicConfig {
     _forceStatusbarPadding: js.UndefOr[Boolean] = js.undefined,
     _testing: js.UndefOr[Boolean] = js.undefined,
     _zoneGate: /* h */ js.Function0[_] => _ = null,
-    actionSheetEnter: AnimationBuilder = null,
-    actionSheetLeave: AnimationBuilder = null,
-    alertEnter: AnimationBuilder = null,
-    alertLeave: AnimationBuilder = null,
+    actionSheetEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    actionSheetLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    alertEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    alertLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     animated: js.UndefOr[Boolean] = js.undefined,
     backButtonIcon: String = null,
     backButtonText: String = null,
@@ -178,20 +179,20 @@ object IonicConfig {
     inputBlurring: js.UndefOr[Boolean] = js.undefined,
     inputShims: js.UndefOr[Boolean] = js.undefined,
     keyboardHeight: Int | Double = null,
-    loadingEnter: AnimationBuilder = null,
-    loadingLeave: AnimationBuilder = null,
+    loadingEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    loadingLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     loadingSpinner: SpinnerTypes = null,
     menuIcon: String = null,
     menuType: String = null,
-    modalEnter: AnimationBuilder = null,
-    modalLeave: AnimationBuilder = null,
+    modalEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    modalLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: Mode = null,
-    navAnimation: AnimationBuilder = null,
+    navAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     persistConfig: js.UndefOr[Boolean] = js.undefined,
-    pickerEnter: AnimationBuilder = null,
-    pickerLeave: AnimationBuilder = null,
-    popoverEnter: AnimationBuilder = null,
-    popoverLeave: AnimationBuilder = null,
+    pickerEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    pickerLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    popoverEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    popoverLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     refreshingIcon: String = null,
     refreshingSpinner: SpinnerTypes = null,
     rippleEffect: js.UndefOr[Boolean] = js.undefined,
@@ -201,17 +202,17 @@ object IonicConfig {
     statusTap: js.UndefOr[Boolean] = js.undefined,
     swipeBackEnabled: js.UndefOr[Boolean] = js.undefined,
     tabButtonLayout: TabButtonLayout = null,
-    toastEnter: AnimationBuilder = null,
-    toastLeave: AnimationBuilder = null
+    toastEnter: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    toastLeave: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null
   ): IonicConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(_forceStatusbarPadding)) __obj.updateDynamic("_forceStatusbarPadding")(_forceStatusbarPadding)
     if (!js.isUndefined(_testing)) __obj.updateDynamic("_testing")(_testing)
     if (_zoneGate != null) __obj.updateDynamic("_zoneGate")(js.Any.fromFunction1(_zoneGate))
-    if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(actionSheetEnter)
-    if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(actionSheetLeave)
-    if (alertEnter != null) __obj.updateDynamic("alertEnter")(alertEnter)
-    if (alertLeave != null) __obj.updateDynamic("alertLeave")(alertLeave)
+    if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(js.Any.fromFunction3(actionSheetEnter))
+    if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(js.Any.fromFunction3(actionSheetLeave))
+    if (alertEnter != null) __obj.updateDynamic("alertEnter")(js.Any.fromFunction3(alertEnter))
+    if (alertLeave != null) __obj.updateDynamic("alertLeave")(js.Any.fromFunction3(alertLeave))
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (backButtonIcon != null) __obj.updateDynamic("backButtonIcon")(backButtonIcon)
     if (backButtonText != null) __obj.updateDynamic("backButtonText")(backButtonText)
@@ -222,20 +223,20 @@ object IonicConfig {
     if (!js.isUndefined(inputBlurring)) __obj.updateDynamic("inputBlurring")(inputBlurring)
     if (!js.isUndefined(inputShims)) __obj.updateDynamic("inputShims")(inputShims)
     if (keyboardHeight != null) __obj.updateDynamic("keyboardHeight")(keyboardHeight.asInstanceOf[js.Any])
-    if (loadingEnter != null) __obj.updateDynamic("loadingEnter")(loadingEnter)
-    if (loadingLeave != null) __obj.updateDynamic("loadingLeave")(loadingLeave)
+    if (loadingEnter != null) __obj.updateDynamic("loadingEnter")(js.Any.fromFunction3(loadingEnter))
+    if (loadingLeave != null) __obj.updateDynamic("loadingLeave")(js.Any.fromFunction3(loadingLeave))
     if (loadingSpinner != null) __obj.updateDynamic("loadingSpinner")(loadingSpinner)
     if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon)
     if (menuType != null) __obj.updateDynamic("menuType")(menuType)
-    if (modalEnter != null) __obj.updateDynamic("modalEnter")(modalEnter)
-    if (modalLeave != null) __obj.updateDynamic("modalLeave")(modalLeave)
+    if (modalEnter != null) __obj.updateDynamic("modalEnter")(js.Any.fromFunction3(modalEnter))
+    if (modalLeave != null) __obj.updateDynamic("modalLeave")(js.Any.fromFunction3(modalLeave))
     if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (navAnimation != null) __obj.updateDynamic("navAnimation")(navAnimation)
+    if (navAnimation != null) __obj.updateDynamic("navAnimation")(js.Any.fromFunction3(navAnimation))
     if (!js.isUndefined(persistConfig)) __obj.updateDynamic("persistConfig")(persistConfig)
-    if (pickerEnter != null) __obj.updateDynamic("pickerEnter")(pickerEnter)
-    if (pickerLeave != null) __obj.updateDynamic("pickerLeave")(pickerLeave)
-    if (popoverEnter != null) __obj.updateDynamic("popoverEnter")(popoverEnter)
-    if (popoverLeave != null) __obj.updateDynamic("popoverLeave")(popoverLeave)
+    if (pickerEnter != null) __obj.updateDynamic("pickerEnter")(js.Any.fromFunction3(pickerEnter))
+    if (pickerLeave != null) __obj.updateDynamic("pickerLeave")(js.Any.fromFunction3(pickerLeave))
+    if (popoverEnter != null) __obj.updateDynamic("popoverEnter")(js.Any.fromFunction3(popoverEnter))
+    if (popoverLeave != null) __obj.updateDynamic("popoverLeave")(js.Any.fromFunction3(popoverLeave))
     if (refreshingIcon != null) __obj.updateDynamic("refreshingIcon")(refreshingIcon)
     if (refreshingSpinner != null) __obj.updateDynamic("refreshingSpinner")(refreshingSpinner)
     if (!js.isUndefined(rippleEffect)) __obj.updateDynamic("rippleEffect")(rippleEffect)
@@ -245,8 +246,8 @@ object IonicConfig {
     if (!js.isUndefined(statusTap)) __obj.updateDynamic("statusTap")(statusTap)
     if (!js.isUndefined(swipeBackEnabled)) __obj.updateDynamic("swipeBackEnabled")(swipeBackEnabled)
     if (tabButtonLayout != null) __obj.updateDynamic("tabButtonLayout")(tabButtonLayout)
-    if (toastEnter != null) __obj.updateDynamic("toastEnter")(toastEnter)
-    if (toastLeave != null) __obj.updateDynamic("toastLeave")(toastLeave)
+    if (toastEnter != null) __obj.updateDynamic("toastEnter")(js.Any.fromFunction3(toastEnter))
+    if (toastLeave != null) __obj.updateDynamic("toastLeave")(js.Any.fromFunction3(toastLeave))
     __obj.asInstanceOf[IonicConfig]
   }
 }

@@ -22,8 +22,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.squarified
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojtreemapMod.ojTreemapNs.ojBeforeDrill
-import typings.atOracleOraclejet.ojtreemapMod.ojTreemapNs.ojDrill
+import typings.atOracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill
+import typings.atOracleOraclejet.ojtreemapMod.ojTreemap.ojDrill
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -67,8 +67,8 @@ trait ojTreemapEventMap[K, D] extends dvtBaseComponentEventMap[ojTreemapSettable
   var nodeContentChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertDK[K, D]]
   var nodeDefaultsChanged: JetElementCustomEvent[Anon_BottomCenter]
   var nodeSeparatorsChanged: JetElementCustomEvent[bevels | gaps]
-  var ojBeforeDrill: typings.atOracleOraclejet.ojtreemapMod.ojTreemapNs.ojBeforeDrill
-  var ojDrill: typings.atOracleOraclejet.ojtreemapMod.ojTreemapNs.ojDrill
+  var ojBeforeDrill: typings.atOracleOraclejet.ojtreemapMod.ojTreemap.ojBeforeDrill
+  var ojDrill: typings.atOracleOraclejet.ojtreemapMod.ojTreemap.ojDrill
   var rootNodeChanged: JetElementCustomEvent[
     /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
   ]

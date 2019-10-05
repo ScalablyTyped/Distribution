@@ -1,5 +1,6 @@
 package typings.highcharts.highchartsMod
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,8 +126,8 @@ object ChartEventsOptions {
   @scala.inline
   def apply(
     addSeries: ChartAddSeriesCallbackFunction = null,
-    afterPrint: ExportingAfterPrintCallbackFunction = null,
-    beforePrint: ExportingBeforePrintCallbackFunction = null,
+    afterPrint: (/* chart */ Chart, /* event */ Event) => Unit = null,
+    beforePrint: (/* chart */ Chart, /* event */ Event) => Unit = null,
     click: ChartClickCallbackFunction = null,
     drilldown: DrilldownCallbackFunction = null,
     drillup: DrillupCallbackFunction = null,
@@ -139,8 +140,8 @@ object ChartEventsOptions {
   ): ChartEventsOptions = {
     val __obj = js.Dynamic.literal()
     if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries)
-    if (afterPrint != null) __obj.updateDynamic("afterPrint")(afterPrint)
-    if (beforePrint != null) __obj.updateDynamic("beforePrint")(beforePrint)
+    if (afterPrint != null) __obj.updateDynamic("afterPrint")(js.Any.fromFunction2(afterPrint))
+    if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction2(beforePrint))
     if (click != null) __obj.updateDynamic("click")(click)
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
     if (drillup != null) __obj.updateDynamic("drillup")(drillup)

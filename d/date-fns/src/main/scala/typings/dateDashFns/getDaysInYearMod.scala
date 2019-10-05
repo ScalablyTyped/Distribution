@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/getDaysInYear", JSImport.Namespace)
 @js.native
 object getDaysInYearMod extends js.Object {
-  def default(date: Double): Double = js.native
-  def default(date: Date): Double = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double): Double = js.native
+    def apply(date: Date): Double = js.native
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 package typings.mendixmodelsdk.distSdkInternalTransportationMod
 
-import typings.mendixmodelsdk.distCommonMod.commonNs.ICallback
-import typings.mendixmodelsdk.distCommonMod.commonNs.IErrorCallback
+import typings.mendixmodelsdk.distCommonMod.common.ICallback
+import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

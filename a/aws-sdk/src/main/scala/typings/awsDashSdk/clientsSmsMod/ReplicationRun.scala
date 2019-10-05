@@ -57,7 +57,7 @@ object ReplicationRun {
     amiId: AmiId = null,
     completedTime: Timestamp = null,
     description: Description = null,
-    encrypted: js.UndefOr[Encrypted] = js.undefined,
+    encrypted: js.UndefOr[Boolean] = js.undefined,
     kmsKeyId: KmsKeyId = null,
     replicationRunId: ReplicationRunId = null,
     scheduledStartTime: Timestamp = null,

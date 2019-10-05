@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotSheets
 
-import typings.gapiDotClientDotSheets.gapiNs.clientNs.sheetsNs.BatchGetValuesByDataFilterRequest
+import typings.gapiDotClientDotSheets.gapi.client.sheets.BatchGetValuesByDataFilterRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

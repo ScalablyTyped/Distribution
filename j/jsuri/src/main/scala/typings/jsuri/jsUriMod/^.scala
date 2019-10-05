@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param {string} str
   */
 class ^ ()
-  extends typings.jsuri.jsuriNs.Uri {
+  extends typings.jsuri.jsuri.Uri {
   def this(str: String) = this()
 }
 

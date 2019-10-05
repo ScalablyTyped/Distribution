@@ -29,14 +29,15 @@ object ScalarField {
     directives: js.Array[Directive],
     kind: typings.relayDashCompiler.relayDashCompilerStrings.ScalarField,
     loc: Location,
-    metadata: Metadata,
     name: String,
     `type`: ScalarFieldType,
-    handles: js.Array[Handle] = null
+    handles: js.Array[Handle] = null,
+    metadata: Metadata = null
   ): ScalarField = {
-    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, loc = loc, name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (handles != null) __obj.updateDynamic("handles")(handles)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalarField]
   }
 }

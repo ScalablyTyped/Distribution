@@ -32,9 +32,9 @@ object DefaultWorkspaceCreationProperties {
   def apply(
     CustomSecurityGroupId: SecurityGroupId = null,
     DefaultOu: DefaultOu = null,
-    EnableInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
-    EnableWorkDocs: js.UndefOr[BooleanObject] = js.undefined,
-    UserEnabledAsLocalAdministrator: js.UndefOr[BooleanObject] = js.undefined
+    EnableInternetAccess: js.UndefOr[Boolean] = js.undefined,
+    EnableWorkDocs: js.UndefOr[Boolean] = js.undefined,
+    UserEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.undefined
   ): DefaultWorkspaceCreationProperties = {
     val __obj = js.Dynamic.literal()
     if (CustomSecurityGroupId != null) __obj.updateDynamic("CustomSecurityGroupId")(CustomSecurityGroupId)

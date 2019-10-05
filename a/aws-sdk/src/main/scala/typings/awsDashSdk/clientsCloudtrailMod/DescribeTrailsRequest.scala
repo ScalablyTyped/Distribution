@@ -17,7 +17,7 @@ trait DescribeTrailsRequest extends js.Object {
 
 object DescribeTrailsRequest {
   @scala.inline
-  def apply(includeShadowTrails: js.UndefOr[Boolean] = js.undefined, trailNameList: TrailNameList = null): DescribeTrailsRequest = {
+  def apply(includeShadowTrails: js.UndefOr[scala.Boolean] = js.undefined, trailNameList: TrailNameList = null): DescribeTrailsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(includeShadowTrails)) __obj.updateDynamic("includeShadowTrails")(includeShadowTrails)
     if (trailNameList != null) __obj.updateDynamic("trailNameList")(trailNameList)

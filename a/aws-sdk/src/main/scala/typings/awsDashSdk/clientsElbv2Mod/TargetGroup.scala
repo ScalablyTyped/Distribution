@@ -74,39 +74,39 @@ trait TargetGroup extends js.Object {
 object TargetGroup {
   @scala.inline
   def apply(
-    HealthCheckEnabled: js.UndefOr[HealthCheckEnabled] = js.undefined,
-    HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined,
+    HealthCheckEnabled: js.UndefOr[Boolean] = js.undefined,
+    HealthCheckIntervalSeconds: Int | Double = null,
     HealthCheckPath: Path = null,
     HealthCheckPort: HealthCheckPort = null,
     HealthCheckProtocol: ProtocolEnum = null,
-    HealthCheckTimeoutSeconds: js.UndefOr[HealthCheckTimeoutSeconds] = js.undefined,
-    HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined,
+    HealthCheckTimeoutSeconds: Int | Double = null,
+    HealthyThresholdCount: Int | Double = null,
     LoadBalancerArns: LoadBalancerArns = null,
     Matcher: Matcher = null,
-    Port: js.UndefOr[Port] = js.undefined,
+    Port: Int | Double = null,
     Protocol: ProtocolEnum = null,
     TargetGroupArn: TargetGroupArn = null,
     TargetGroupName: TargetGroupName = null,
     TargetType: TargetTypeEnum = null,
-    UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined,
+    UnhealthyThresholdCount: Int | Double = null,
     VpcId: VpcId = null
   ): TargetGroup = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(HealthCheckEnabled)) __obj.updateDynamic("HealthCheckEnabled")(HealthCheckEnabled)
-    if (!js.isUndefined(HealthCheckIntervalSeconds)) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds)
+    if (HealthCheckIntervalSeconds != null) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds.asInstanceOf[js.Any])
     if (HealthCheckPath != null) __obj.updateDynamic("HealthCheckPath")(HealthCheckPath)
     if (HealthCheckPort != null) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort)
     if (HealthCheckProtocol != null) __obj.updateDynamic("HealthCheckProtocol")(HealthCheckProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckTimeoutSeconds)) __obj.updateDynamic("HealthCheckTimeoutSeconds")(HealthCheckTimeoutSeconds)
-    if (!js.isUndefined(HealthyThresholdCount)) __obj.updateDynamic("HealthyThresholdCount")(HealthyThresholdCount)
+    if (HealthCheckTimeoutSeconds != null) __obj.updateDynamic("HealthCheckTimeoutSeconds")(HealthCheckTimeoutSeconds.asInstanceOf[js.Any])
+    if (HealthyThresholdCount != null) __obj.updateDynamic("HealthyThresholdCount")(HealthyThresholdCount.asInstanceOf[js.Any])
     if (LoadBalancerArns != null) __obj.updateDynamic("LoadBalancerArns")(LoadBalancerArns)
     if (Matcher != null) __obj.updateDynamic("Matcher")(Matcher)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn)
     if (TargetGroupName != null) __obj.updateDynamic("TargetGroupName")(TargetGroupName)
     if (TargetType != null) __obj.updateDynamic("TargetType")(TargetType.asInstanceOf[js.Any])
-    if (!js.isUndefined(UnhealthyThresholdCount)) __obj.updateDynamic("UnhealthyThresholdCount")(UnhealthyThresholdCount)
+    if (UnhealthyThresholdCount != null) __obj.updateDynamic("UnhealthyThresholdCount")(UnhealthyThresholdCount.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
     __obj.asInstanceOf[TargetGroup]
   }

@@ -130,8 +130,8 @@ object AgendaProps {
     minDate: TCalendarDate = null,
     monthFormat: String = null,
     onCalendarToggled: /* calendarOpened */ Boolean => Unit = null,
-    onDayChange: DateCallbackHandler = null,
-    onDayPress: DateCallbackHandler = null,
+    onDayChange: /* date */ DateObject => Unit = null,
+    onDayPress: /* date */ DateObject => Unit = null,
     onRefresh: () => Unit = null,
     pastScrollRange: Int | Double = null,
     refreshControl: ReactNode = null,
@@ -154,8 +154,8 @@ object AgendaProps {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat)
     if (onCalendarToggled != null) __obj.updateDynamic("onCalendarToggled")(js.Any.fromFunction1(onCalendarToggled))
-    if (onDayChange != null) __obj.updateDynamic("onDayChange")(onDayChange)
-    if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
+    if (onDayChange != null) __obj.updateDynamic("onDayChange")(js.Any.fromFunction1(onDayChange))
+    if (onDayPress != null) __obj.updateDynamic("onDayPress")(js.Any.fromFunction1(onDayPress))
     if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
     if (pastScrollRange != null) __obj.updateDynamic("pastScrollRange")(pastScrollRange.asInstanceOf[js.Any])
     if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])

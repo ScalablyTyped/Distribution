@@ -1,7 +1,7 @@
 package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.kendoDashUi.kendoNs.mobileNs.uiNs.Widget
+import typings.kendoDashUi.kendo.mobile.ui.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait TypeofuiActionSheet extends js.Object {
   var Switch: TypeofClassSwitchElement
   var TabStrip: TypeofClassTabStripElement
   var View: TypeofClassView
-  var Widget: Instantiable0[typings.kendoDashUi.kendoNs.mobileNs.uiNs.Widget]
+  var Widget: Instantiable0[typings.kendoDashUi.kendo.mobile.ui.Widget]
 }
 
 object TypeofuiActionSheet {

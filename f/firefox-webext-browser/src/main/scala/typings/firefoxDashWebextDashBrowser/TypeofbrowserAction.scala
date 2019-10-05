@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.browserActionNs.ColorArray
-import typings.firefoxDashWebextDashBrowser.browserNs.browserActionNs.Details
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.Tab
+import typings.firefoxDashWebextDashBrowser.browser.browserAction.ColorArray
+import typings.firefoxDashWebextDashBrowser.browser.browserAction.Details
+import typings.firefoxDashWebextDashBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

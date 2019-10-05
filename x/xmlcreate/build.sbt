@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xmlcreate"
-version := "2.0.1-39f49c"
-scalaVersion := "2.12.9"
+version := "2.0.1-ee12f4"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

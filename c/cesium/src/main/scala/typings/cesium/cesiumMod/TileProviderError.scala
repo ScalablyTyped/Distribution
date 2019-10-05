@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.TileProviderErrorNs.RetryFunction
+import typings.cesium.cesiumMod.TileProviderError.RetryFunction
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -108,5 +108,6 @@ object TileProviderError extends js.Object {
     errorDetails: Error
   ): TileProviderError = js.native
   def handleSuccess(previousError: TileProviderError): Unit = js.native
+  type RetryFunction = js.Function0[Unit]
 }
 

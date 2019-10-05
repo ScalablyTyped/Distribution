@@ -1,6 +1,6 @@
 package typings.notify
 
-import typings.notify.NotifyNs.Options
+import typings.notify.Notify.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQueryStatic extends js.Object {
   @JSName("notify")
-  var notify_Original: typings.notify.NotifyNs.JQueryStatic = js.native
+  var notify_Original: typings.notify.Notify.JQueryStatic = js.native
   def notify(data: js.Any): Unit = js.native
   def notify(data: js.Any, className: String): Unit = js.native
   def notify(data: js.Any, options: Options): Unit = js.native

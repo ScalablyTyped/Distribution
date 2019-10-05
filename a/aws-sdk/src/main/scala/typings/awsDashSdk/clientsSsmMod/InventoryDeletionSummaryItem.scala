@@ -22,13 +22,13 @@ trait InventoryDeletionSummaryItem extends js.Object {
 object InventoryDeletionSummaryItem {
   @scala.inline
   def apply(
-    Count: js.UndefOr[ResourceCount] = js.undefined,
-    RemainingCount: js.UndefOr[RemainingCount] = js.undefined,
+    Count: Int | Double = null,
+    RemainingCount: Int | Double = null,
     Version: InventoryItemSchemaVersion = null
   ): InventoryDeletionSummaryItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
-    if (!js.isUndefined(RemainingCount)) __obj.updateDynamic("RemainingCount")(RemainingCount)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (RemainingCount != null) __obj.updateDynamic("RemainingCount")(RemainingCount.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[InventoryDeletionSummaryItem]
   }

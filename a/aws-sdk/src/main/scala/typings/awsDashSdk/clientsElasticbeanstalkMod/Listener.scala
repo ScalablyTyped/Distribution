@@ -17,9 +17,9 @@ trait Listener extends js.Object {
 
 object Listener {
   @scala.inline
-  def apply(Port: js.UndefOr[Integer] = js.undefined, Protocol: String = null): Listener = {
+  def apply(Port: Int | Double = null, Protocol: String = null): Listener = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol)
     __obj.asInstanceOf[Listener]
   }

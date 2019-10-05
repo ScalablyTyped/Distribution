@@ -57,13 +57,13 @@ object CreateStageRequest {
     deploymentId: String,
     restApiId: String,
     stageName: String,
-    cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined,
+    cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     cacheClusterSize: CacheClusterSize = null,
     canarySettings: CanarySettings = null,
     description: String = null,
     documentationVersion: String = null,
     tags: MapOfStringToString = null,
-    tracingEnabled: js.UndefOr[Boolean] = js.undefined,
+    tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     variables: MapOfStringToString = null
   ): CreateStageRequest = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId, restApiId = restApiId, stageName = stageName)

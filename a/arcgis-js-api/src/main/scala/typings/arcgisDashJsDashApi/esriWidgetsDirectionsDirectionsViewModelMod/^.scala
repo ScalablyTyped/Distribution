@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDirectionsDirectionsViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectionsViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.DirectionsViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

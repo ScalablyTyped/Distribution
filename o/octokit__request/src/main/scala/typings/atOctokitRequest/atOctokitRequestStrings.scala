@@ -109,6 +109,9 @@ object atOctokitRequestStrings {
   sealed trait `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions` extends js.Object
   
   @js.native
+  sealed trait `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` extends js.Object
+  
+  @js.native
   sealed trait `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` extends js.Object
   
   @js.native
@@ -529,6 +532,9 @@ object atOctokitRequestStrings {
   sealed trait `GET /repos/:owner/:repo/branches/:branch/protection/restrictions` extends js.Object
   
   @js.native
+  sealed trait `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` extends js.Object
+  
+  @js.native
   sealed trait `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` extends js.Object
   
   @js.native
@@ -637,10 +643,10 @@ object atOctokitRequestStrings {
   sealed trait `GET /repos/:owner/:repo/git/commits/:commit_sha` extends js.Object
   
   @js.native
-  sealed trait `GET /repos/:owner/:repo/git/refs/:namespace` extends js.Object
+  sealed trait `GET /repos/:owner/:repo/git/matching-refs/:ref` extends js.Object
   
   @js.native
-  sealed trait `GET /repos/:owner/:repo/git/refs/:ref` extends js.Object
+  sealed trait `GET /repos/:owner/:repo/git/ref/:ref` extends js.Object
   
   @js.native
   sealed trait `GET /repos/:owner/:repo/git/tags/:tag_sha` extends js.Object
@@ -1168,7 +1174,7 @@ object atOctokitRequestStrings {
   sealed trait `PATCH /repos/:owner/:repo/issues/comments/:comment_id` extends js.Object
   
   @js.native
-  sealed trait `PATCH /repos/:owner/:repo/labels/:current_name` extends js.Object
+  sealed trait `PATCH /repos/:owner/:repo/labels/:name` extends js.Object
   
   @js.native
   sealed trait `PATCH /repos/:owner/:repo/milestones/:milestone_number` extends js.Object
@@ -1288,6 +1294,9 @@ object atOctokitRequestStrings {
   sealed trait `POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` extends js.Object
   
   @js.native
+  sealed trait `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` extends js.Object
+  
+  @js.native
   sealed trait `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` extends js.Object
   
   @js.native
@@ -1313,6 +1322,9 @@ object atOctokitRequestStrings {
   
   @js.native
   sealed trait `POST /repos/:owner/:repo/deployments/:deployment_id/statuses` extends js.Object
+  
+  @js.native
+  sealed trait `POST /repos/:owner/:repo/dispatches` extends js.Object
   
   @js.native
   sealed trait `POST /repos/:owner/:repo/forks` extends js.Object
@@ -1387,6 +1399,9 @@ object atOctokitRequestStrings {
   sealed trait `POST /repos/:owner/:repo/pulls/:pull_number/comments` extends js.Object
   
   @js.native
+  sealed trait `POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies` extends js.Object
+  
+  @js.native
   sealed trait `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers` extends js.Object
   
   @js.native
@@ -1444,9 +1459,6 @@ object atOctokitRequestStrings {
   sealed trait `POST /user/repos` extends js.Object
   
   @js.native
-  sealed trait `POST :url` extends js.Object
-  
-  @js.native
   sealed trait PUT extends Method
   
   @js.native
@@ -1490,6 +1502,9 @@ object atOctokitRequestStrings {
   
   @js.native
   sealed trait `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` extends js.Object
+  
+  @js.native
+  sealed trait `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` extends js.Object
   
   @js.native
   sealed trait `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` extends js.Object
@@ -1640,6 +1655,8 @@ object atOctokitRequestStrings {
   def `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` = "DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts".asInstanceOf[`DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`]
   @scala.inline
   def `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`: `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions` = "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions".asInstanceOf[`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`]
+  @scala.inline
+  def `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` = "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps".asInstanceOf[`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`]
   @scala.inline
   def `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` = "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams".asInstanceOf[`DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`]
   @scala.inline
@@ -1921,6 +1938,8 @@ object atOctokitRequestStrings {
   @scala.inline
   def `GET /repos/:owner/:repo/branches/:branch/protection/restrictions`: `GET /repos/:owner/:repo/branches/:branch/protection/restrictions` = "GET /repos/:owner/:repo/branches/:branch/protection/restrictions".asInstanceOf[`GET /repos/:owner/:repo/branches/:branch/protection/restrictions`]
   @scala.inline
+  def `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` = "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps".asInstanceOf[`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`]
+  @scala.inline
   def `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` = "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams".asInstanceOf[`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`]
   @scala.inline
   def `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users` = "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users".asInstanceOf[`GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`]
@@ -1993,9 +2012,9 @@ object atOctokitRequestStrings {
   @scala.inline
   def `GET /repos/:owner/:repo/git/commits/:commit_sha`: `GET /repos/:owner/:repo/git/commits/:commit_sha` = "GET /repos/:owner/:repo/git/commits/:commit_sha".asInstanceOf[`GET /repos/:owner/:repo/git/commits/:commit_sha`]
   @scala.inline
-  def `GET /repos/:owner/:repo/git/refs/:namespace`: `GET /repos/:owner/:repo/git/refs/:namespace` = "GET /repos/:owner/:repo/git/refs/:namespace".asInstanceOf[`GET /repos/:owner/:repo/git/refs/:namespace`]
+  def `GET /repos/:owner/:repo/git/matching-refs/:ref`: `GET /repos/:owner/:repo/git/matching-refs/:ref` = "GET /repos/:owner/:repo/git/matching-refs/:ref".asInstanceOf[`GET /repos/:owner/:repo/git/matching-refs/:ref`]
   @scala.inline
-  def `GET /repos/:owner/:repo/git/refs/:ref`: `GET /repos/:owner/:repo/git/refs/:ref` = "GET /repos/:owner/:repo/git/refs/:ref".asInstanceOf[`GET /repos/:owner/:repo/git/refs/:ref`]
+  def `GET /repos/:owner/:repo/git/ref/:ref`: `GET /repos/:owner/:repo/git/ref/:ref` = "GET /repos/:owner/:repo/git/ref/:ref".asInstanceOf[`GET /repos/:owner/:repo/git/ref/:ref`]
   @scala.inline
   def `GET /repos/:owner/:repo/git/tags/:tag_sha`: `GET /repos/:owner/:repo/git/tags/:tag_sha` = "GET /repos/:owner/:repo/git/tags/:tag_sha".asInstanceOf[`GET /repos/:owner/:repo/git/tags/:tag_sha`]
   @scala.inline
@@ -2347,7 +2366,7 @@ object atOctokitRequestStrings {
   @scala.inline
   def `PATCH /repos/:owner/:repo/issues/comments/:comment_id`: `PATCH /repos/:owner/:repo/issues/comments/:comment_id` = "PATCH /repos/:owner/:repo/issues/comments/:comment_id".asInstanceOf[`PATCH /repos/:owner/:repo/issues/comments/:comment_id`]
   @scala.inline
-  def `PATCH /repos/:owner/:repo/labels/:current_name`: `PATCH /repos/:owner/:repo/labels/:current_name` = "PATCH /repos/:owner/:repo/labels/:current_name".asInstanceOf[`PATCH /repos/:owner/:repo/labels/:current_name`]
+  def `PATCH /repos/:owner/:repo/labels/:name`: `PATCH /repos/:owner/:repo/labels/:name` = "PATCH /repos/:owner/:repo/labels/:name".asInstanceOf[`PATCH /repos/:owner/:repo/labels/:name`]
   @scala.inline
   def `PATCH /repos/:owner/:repo/milestones/:milestone_number`: `PATCH /repos/:owner/:repo/milestones/:milestone_number` = "PATCH /repos/:owner/:repo/milestones/:milestone_number".asInstanceOf[`PATCH /repos/:owner/:repo/milestones/:milestone_number`]
   @scala.inline
@@ -2427,6 +2446,8 @@ object atOctokitRequestStrings {
   @scala.inline
   def `POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: `POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` = "POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts".asInstanceOf[`POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`]
   @scala.inline
+  def `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` = "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps".asInstanceOf[`POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`]
+  @scala.inline
   def `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` = "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams".asInstanceOf[`POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`]
   @scala.inline
   def `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users` = "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users".asInstanceOf[`POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users`]
@@ -2444,6 +2465,8 @@ object atOctokitRequestStrings {
   def `POST /repos/:owner/:repo/deployments`: `POST /repos/:owner/:repo/deployments` = "POST /repos/:owner/:repo/deployments".asInstanceOf[`POST /repos/:owner/:repo/deployments`]
   @scala.inline
   def `POST /repos/:owner/:repo/deployments/:deployment_id/statuses`: `POST /repos/:owner/:repo/deployments/:deployment_id/statuses` = "POST /repos/:owner/:repo/deployments/:deployment_id/statuses".asInstanceOf[`POST /repos/:owner/:repo/deployments/:deployment_id/statuses`]
+  @scala.inline
+  def `POST /repos/:owner/:repo/dispatches`: `POST /repos/:owner/:repo/dispatches` = "POST /repos/:owner/:repo/dispatches".asInstanceOf[`POST /repos/:owner/:repo/dispatches`]
   @scala.inline
   def `POST /repos/:owner/:repo/forks`: `POST /repos/:owner/:repo/forks` = "POST /repos/:owner/:repo/forks".asInstanceOf[`POST /repos/:owner/:repo/forks`]
   @scala.inline
@@ -2493,6 +2516,8 @@ object atOctokitRequestStrings {
   @scala.inline
   def `POST /repos/:owner/:repo/pulls/:pull_number/comments`: `POST /repos/:owner/:repo/pulls/:pull_number/comments` = "POST /repos/:owner/:repo/pulls/:pull_number/comments".asInstanceOf[`POST /repos/:owner/:repo/pulls/:pull_number/comments`]
   @scala.inline
+  def `POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies`: `POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies` = "POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies".asInstanceOf[`POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies`]
+  @scala.inline
   def `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers` = "POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers".asInstanceOf[`POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`]
   @scala.inline
   def `POST /repos/:owner/:repo/pulls/:pull_number/reviews`: `POST /repos/:owner/:repo/pulls/:pull_number/reviews` = "POST /repos/:owner/:repo/pulls/:pull_number/reviews".asInstanceOf[`POST /repos/:owner/:repo/pulls/:pull_number/reviews`]
@@ -2531,8 +2556,6 @@ object atOctokitRequestStrings {
   @scala.inline
   def `POST /user/repos`: `POST /user/repos` = "POST /user/repos".asInstanceOf[`POST /user/repos`]
   @scala.inline
-  def `POST :url`: `POST :url` = "POST :url".asInstanceOf[`POST :url`]
-  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def `PUT /authorizations/clients/:client_id`: `PUT /authorizations/clients/:client_id` = "PUT /authorizations/clients/:client_id".asInstanceOf[`PUT /authorizations/clients/:client_id`]
@@ -2562,6 +2585,8 @@ object atOctokitRequestStrings {
   def `PUT /repos/:owner/:repo/branches/:branch/protection`: `PUT /repos/:owner/:repo/branches/:branch/protection` = "PUT /repos/:owner/:repo/branches/:branch/protection".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection`]
   @scala.inline
   def `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` = "PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`]
+  @scala.inline
+  def `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`: `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps` = "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps`]
   @scala.inline
   def `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams` = "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`]
   @scala.inline

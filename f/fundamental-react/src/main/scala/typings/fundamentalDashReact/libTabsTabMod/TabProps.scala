@@ -1,8 +1,8 @@
 package typings.fundamentalDashReact.libTabsTabMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLAnchorElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait TabProps
   /* _INTERNAL USE ONLY._ */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ MouseEvent[HTMLAnchorElement, typings.std.MouseEvent], 
+      /* event */ typings.react.reactMod.MouseEvent[HTMLAnchorElement, MouseEvent], 
       /* index */ Double, 
       Unit
     ]
@@ -44,7 +44,7 @@ object TabProps {
     id: String = null,
     index: Int | Double = null,
     linkProps: StringDictionary[js.Any] = null,
-    onClick: (/* event */ MouseEvent[HTMLAnchorElement, typings.std.MouseEvent], /* index */ Double) => Unit = null,
+    onClick: (/* event */ typings.react.reactMod.MouseEvent[HTMLAnchorElement, MouseEvent], /* index */ Double) => Unit = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     tabContentProps: StringDictionary[js.Any] = null,
     title: String = null

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "good-storage"
-version := "1.1-dt-20190826Z-1d0d22"
-scalaVersion := "2.12.9"
+version := "1.1-dt-20190826Z-95be65"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

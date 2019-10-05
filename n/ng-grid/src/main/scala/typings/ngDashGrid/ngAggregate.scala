@@ -1,7 +1,9 @@
 package typings.ngDashGrid
 
-import typings.ngDashGrid.ngGridNs.IAggregate
-import typings.ngDashGrid.ngGridNs.IRowFactory
+import org.scalablytyped.runtime.TopLevel
+import typings.ngDashGrid.ngGrid.IAggregate
+import typings.ngDashGrid.ngGrid.IAggregateStatic
+import typings.ngDashGrid.ngGrid.IRowFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,4 +47,8 @@ class ngAggregate protected () extends IAggregate {
   /* CompleteClass */
   override var rowIndex: Double = js.native
 }
+
+@JSGlobal("ngAggregate")
+@js.native
+object ngAggregate extends TopLevel[IAggregateStatic]
 

@@ -1,6 +1,6 @@
 package typings.jqueryDotTinyscrollbar
 
-import typings.jqueryDotTinyscrollbar.JQueryTinyScrollbarNs.JQueryTinyScrollbarOptions
+import typings.jqueryDotTinyscrollbar.JQueryTinyScrollbar.JQueryTinyScrollbarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

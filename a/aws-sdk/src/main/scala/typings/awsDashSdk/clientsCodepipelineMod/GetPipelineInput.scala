@@ -17,9 +17,9 @@ trait GetPipelineInput extends js.Object {
 
 object GetPipelineInput {
   @scala.inline
-  def apply(name: PipelineName, version: js.UndefOr[PipelineVersion] = js.undefined): GetPipelineInput = {
+  def apply(name: PipelineName, version: Int | Double = null): GetPipelineInput = {
     val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPipelineInput]
   }
 }

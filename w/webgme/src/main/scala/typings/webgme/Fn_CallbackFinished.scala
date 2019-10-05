@@ -1,10 +1,10 @@
 package typings.webgme
 
-import typings.webgme.CoreNs.DataObject
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeClassesNs.TraversalOptions
-import typings.webgme.GmeCommonNs.ResultCallback
-import typings.webgme.GmeCommonNs.VoidFn
+import typings.webgme.Core.DataObject
+import typings.webgme.Core.Node
+import typings.webgme.GmeClasses.TraversalOptions
+import typings.webgme.GmeCommon.ResultCallback
+import typings.webgme.GmeCommon.VoidFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

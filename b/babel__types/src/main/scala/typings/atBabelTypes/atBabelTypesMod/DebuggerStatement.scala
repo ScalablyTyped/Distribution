@@ -35,3 +35,9 @@ object DebuggerStatement {
   }
 }
 
+@JSImport("@babel/types", "debuggerStatement")
+@js.native
+object debuggerStatement extends js.Object {
+  def apply(): DebuggerStatement = js.native
+}
+

@@ -37,3 +37,9 @@ object TSNonNullExpression {
   }
 }
 
+@JSImport("@babel/types", "tsNonNullExpression")
+@js.native
+object tsNonNullExpression extends js.Object {
+  def apply(expression: Expression): TSNonNullExpression = js.native
+}
+

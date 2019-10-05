@@ -56,7 +56,7 @@ object Certificate {
     CertificateOwner: String = null,
     CertificatePem: String = null,
     CertificateWallet: CertificateWallet = null,
-    KeyLength: js.UndefOr[IntegerOptional] = js.undefined,
+    KeyLength: Int | Double = null,
     SigningAlgorithm: String = null,
     ValidFromDate: TStamp = null,
     ValidToDate: TStamp = null
@@ -68,7 +68,7 @@ object Certificate {
     if (CertificateOwner != null) __obj.updateDynamic("CertificateOwner")(CertificateOwner)
     if (CertificatePem != null) __obj.updateDynamic("CertificatePem")(CertificatePem)
     if (CertificateWallet != null) __obj.updateDynamic("CertificateWallet")(CertificateWallet.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeyLength)) __obj.updateDynamic("KeyLength")(KeyLength)
+    if (KeyLength != null) __obj.updateDynamic("KeyLength")(KeyLength.asInstanceOf[js.Any])
     if (SigningAlgorithm != null) __obj.updateDynamic("SigningAlgorithm")(SigningAlgorithm)
     if (ValidFromDate != null) __obj.updateDynamic("ValidFromDate")(ValidFromDate)
     if (ValidToDate != null) __obj.updateDynamic("ValidToDate")(ValidToDate)

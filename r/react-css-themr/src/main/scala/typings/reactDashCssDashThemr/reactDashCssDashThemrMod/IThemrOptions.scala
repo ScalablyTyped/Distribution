@@ -1,5 +1,6 @@
 package typings.reactDashCssDashThemr.reactDashCssDashThemrMod
 
+import typings.reactDashCssDashThemr.Anon_Theme
 import typings.reactDashCssDashThemr.reactDashCssDashThemrNumbers.`false`
 import typings.reactDashCssDashThemr.reactDashCssDashThemrStrings.deeply
 import typings.reactDashCssDashThemr.reactDashCssDashThemrStrings.softly
@@ -17,10 +18,13 @@ trait IThemrOptions extends js.Object {
 
 object IThemrOptions {
   @scala.inline
-  def apply(composeTheme: deeply | softly | `false` = null, mapThemrProps: TMapThemrProps[js.Object] = null): IThemrOptions = {
+  def apply(
+    composeTheme: deeply | softly | `false` = null,
+    mapThemrProps: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object with Anon_Theme = null
+  ): IThemrOptions = {
     val __obj = js.Dynamic.literal()
     if (composeTheme != null) __obj.updateDynamic("composeTheme")(composeTheme.asInstanceOf[js.Any])
-    if (mapThemrProps != null) __obj.updateDynamic("mapThemrProps")(mapThemrProps)
+    if (mapThemrProps != null) __obj.updateDynamic("mapThemrProps")(js.Any.fromFunction2(mapThemrProps))
     __obj.asInstanceOf[IThemrOptions]
   }
 }

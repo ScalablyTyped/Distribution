@@ -1,8 +1,8 @@
 package typings.virtualDashDom.vnodeVtextMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.virtualDashDom.VirtualDOMNs.VText
-import typings.virtualDashDom.VirtualDOMNs.VTextConstructor
+import typings.virtualDashDom.VirtualDOM.VText
+import typings.virtualDashDom.VirtualDOM.VTextConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

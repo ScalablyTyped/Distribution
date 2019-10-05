@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("backbone")
+@JSImport("backbone", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
   var Many: String = js.native

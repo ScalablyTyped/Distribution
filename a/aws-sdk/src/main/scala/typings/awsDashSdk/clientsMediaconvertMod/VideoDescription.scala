@@ -76,15 +76,15 @@ object VideoDescription {
     ColorMetadata: ColorMetadata = null,
     Crop: Rectangle = null,
     DropFrameTimecode: DropFrameTimecode = null,
-    FixedAfd: js.UndefOr[__integerMin0Max15] = js.undefined,
-    Height: js.UndefOr[__integerMin32Max4096] = js.undefined,
+    FixedAfd: Int | Double = null,
+    Height: Int | Double = null,
     Position: Rectangle = null,
     RespondToAfd: RespondToAfd = null,
     ScalingBehavior: ScalingBehavior = null,
-    Sharpness: js.UndefOr[__integerMin0Max100] = js.undefined,
+    Sharpness: Int | Double = null,
     TimecodeInsertion: VideoTimecodeInsertion = null,
     VideoPreprocessors: VideoPreprocessor = null,
-    Width: js.UndefOr[__integerMin32Max4096] = js.undefined
+    Width: Int | Double = null
   ): VideoDescription = {
     val __obj = js.Dynamic.literal()
     if (AfdSignaling != null) __obj.updateDynamic("AfdSignaling")(AfdSignaling.asInstanceOf[js.Any])
@@ -93,15 +93,15 @@ object VideoDescription {
     if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
     if (Crop != null) __obj.updateDynamic("Crop")(Crop)
     if (DropFrameTimecode != null) __obj.updateDynamic("DropFrameTimecode")(DropFrameTimecode.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedAfd)) __obj.updateDynamic("FixedAfd")(FixedAfd)
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
+    if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
     if (Position != null) __obj.updateDynamic("Position")(Position)
     if (RespondToAfd != null) __obj.updateDynamic("RespondToAfd")(RespondToAfd.asInstanceOf[js.Any])
     if (ScalingBehavior != null) __obj.updateDynamic("ScalingBehavior")(ScalingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sharpness)) __obj.updateDynamic("Sharpness")(Sharpness)
+    if (Sharpness != null) __obj.updateDynamic("Sharpness")(Sharpness.asInstanceOf[js.Any])
     if (TimecodeInsertion != null) __obj.updateDynamic("TimecodeInsertion")(TimecodeInsertion.asInstanceOf[js.Any])
     if (VideoPreprocessors != null) __obj.updateDynamic("VideoPreprocessors")(VideoPreprocessors)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDescription]
   }
 }

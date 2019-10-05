@@ -17,10 +17,10 @@ trait LabelDetection extends js.Object {
 
 object LabelDetection {
   @scala.inline
-  def apply(Label: Label = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): LabelDetection = {
+  def apply(Label: Label = null, Timestamp: Int | Double = null): LabelDetection = {
     val __obj = js.Dynamic.literal()
     if (Label != null) __obj.updateDynamic("Label")(Label)
-    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp)
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDetection]
   }
 }

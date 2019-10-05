@@ -1,8 +1,8 @@
 package typings.flowdoc
 
-import typings.flowdoc.FlowNs.Connection
-import typings.flowdoc.FlowNs.Point
-import typings.flowdoc.FlowNs.Size
+import typings.flowdoc.Flow.Connection
+import typings.flowdoc.Flow.Point
+import typings.flowdoc.Flow.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

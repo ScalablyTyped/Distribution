@@ -2,7 +2,7 @@ package typings.cypress
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.ChaiNs.Assertion
+import typings.cypress.Chai.Assertion
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Text

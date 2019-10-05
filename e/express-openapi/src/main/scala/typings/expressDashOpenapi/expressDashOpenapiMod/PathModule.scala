@@ -1,6 +1,6 @@
 package typings.expressDashOpenapi.expressDashOpenapiMod
 
-import typings.expressDashOpenapi.expressDashOpenapiMod.OpenApiNs.Parameters
+import typings.expressDashOpenapi.expressDashOpenapiMod.OpenApi.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

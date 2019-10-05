@@ -1,6 +1,6 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsMod.mapNs.actionNs.Manager
+import typings.yandexDashMaps.yandexDashMapsMod.map.action.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

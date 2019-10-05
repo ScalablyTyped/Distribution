@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Application
   extends IRouter[Application]
-     with typings.easyDashXapiDashSupertest.ExpressNs.Application {
+     with typings.easyDashXapiDashSupertest.Express.Application {
   @JSName("get")
   var get_Original_Application: Fn_Handlers = js.native
   var locals: js.Any = js.native

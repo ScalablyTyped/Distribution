@@ -17,9 +17,9 @@ trait PartOfSpeechTag extends js.Object {
 
 object PartOfSpeechTag {
   @scala.inline
-  def apply(Score: js.UndefOr[Float] = js.undefined, Tag: PartOfSpeechTagType = null): PartOfSpeechTag = {
+  def apply(Score: Int | scala.Double = null, Tag: PartOfSpeechTagType = null): PartOfSpeechTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score)
+    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
     if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartOfSpeechTag]
   }

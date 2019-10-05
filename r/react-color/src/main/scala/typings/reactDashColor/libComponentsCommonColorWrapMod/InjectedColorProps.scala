@@ -1,5 +1,7 @@
 package typings.reactDashColor.libComponentsCommonColorWrapMod
 
+import typings.reactDashColor.reactDashColorMod.Color
+import typings.reactDashColor.reactDashColorMod.ColorResult
 import typings.reactDashColor.reactDashColorMod.HSLColor
 import typings.reactDashColor.reactDashColorMod.RGBColor
 import scala.scalajs.js
@@ -18,13 +20,13 @@ object InjectedColorProps {
   def apply(
     hex: String = null,
     hsl: HSLColor = null,
-    onChange: ColorWrapChangeHandler = null,
+    onChange: /* color */ Color | ColorResult => Unit = null,
     rgb: RGBColor = null
   ): InjectedColorProps = {
     val __obj = js.Dynamic.literal()
     if (hex != null) __obj.updateDynamic("hex")(hex)
     if (hsl != null) __obj.updateDynamic("hsl")(hsl)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (rgb != null) __obj.updateDynamic("rgb")(rgb)
     __obj.asInstanceOf[InjectedColorProps]
   }

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Keyboard")
 @js.native
 class Keyboard ()
-  extends typings.playcanvas.pcNs.Keyboard {
+  extends typings.playcanvas.pc.Keyboard {
   def this(element: Element) = this()
   def this(element: Window) = this()
   def this(element: Element, options: Anon_PreventDefault) = this()

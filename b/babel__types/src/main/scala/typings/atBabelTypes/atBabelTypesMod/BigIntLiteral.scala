@@ -40,3 +40,9 @@ object BigIntLiteral {
   }
 }
 
+@JSImport("@babel/types", "bigIntLiteral")
+@js.native
+object bigIntLiteral extends js.Object {
+  def apply(value: String): BigIntLiteral = js.native
+}
+

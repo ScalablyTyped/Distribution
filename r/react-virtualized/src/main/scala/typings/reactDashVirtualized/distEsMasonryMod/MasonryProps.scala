@@ -2,6 +2,9 @@ package typings.reactDashVirtualized.distEsMasonryMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ReactNode
+import typings.reactDashVirtualized.Anon_ClientHeight
+import typings.reactDashVirtualized.Anon_StartIndex
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCacheInterface
 import typings.reactDashVirtualized.distEsCellMeasurerMod.KeyMapper
 import scala.scalajs.js
@@ -43,7 +46,7 @@ object MasonryProps {
     cellCount: Double,
     cellMeasurerCache: CellMeasurerCacheInterface,
     cellPositioner: Positioner,
-    cellRenderer: CellRenderer,
+    cellRenderer: /* props */ MasonryCellProps => ReactNode,
     height: Double,
     width: Double,
     StringDictionary: /**
@@ -56,22 +59,22 @@ object MasonryProps {
   /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     id: String = null,
-    keyMapper: KeyMapper = null,
-    onCellsRendered: OnCellsRenderedCallback = null,
-    onScroll: OnScrollCallback = null,
+    keyMapper: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any = null,
+    onCellsRendered: /* params */ Anon_StartIndex => Unit = null,
+    onScroll: /* params */ Anon_ClientHeight => Unit = null,
     overscanByPixels: Int | Double = null,
     role: String = null,
     scrollingResetTimeInterval: Int | Double = null,
     style: CSSProperties = null,
     tabIndex: Int | Double = null
   ): MasonryProps = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, cellCount = cellCount, cellMeasurerCache = cellMeasurerCache, cellPositioner = cellPositioner, cellRenderer = cellRenderer, height = height, width = width)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight, cellCount = cellCount, cellMeasurerCache = cellMeasurerCache, cellPositioner = cellPositioner, cellRenderer = js.Any.fromFunction1(cellRenderer), height = height, width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (keyMapper != null) __obj.updateDynamic("keyMapper")(keyMapper)
-    if (onCellsRendered != null) __obj.updateDynamic("onCellsRendered")(onCellsRendered)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (keyMapper != null) __obj.updateDynamic("keyMapper")(js.Any.fromFunction2(keyMapper))
+    if (onCellsRendered != null) __obj.updateDynamic("onCellsRendered")(js.Any.fromFunction1(onCellsRendered))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (overscanByPixels != null) __obj.updateDynamic("overscanByPixels")(overscanByPixels.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)
     if (scrollingResetTimeInterval != null) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.asInstanceOf[js.Any])

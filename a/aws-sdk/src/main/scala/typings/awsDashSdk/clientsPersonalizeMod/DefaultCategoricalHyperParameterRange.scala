@@ -22,7 +22,7 @@ trait DefaultCategoricalHyperParameterRange extends js.Object {
 object DefaultCategoricalHyperParameterRange {
   @scala.inline
   def apply(
-    isTunable: js.UndefOr[Tunable] = js.undefined,
+    isTunable: js.UndefOr[scala.Boolean] = js.undefined,
     name: ParameterName = null,
     values: CategoricalValues = null
   ): DefaultCategoricalHyperParameterRange = {

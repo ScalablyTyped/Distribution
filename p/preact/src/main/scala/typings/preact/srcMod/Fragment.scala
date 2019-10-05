@@ -1,5 +1,6 @@
 package typings.preact.srcMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +12,13 @@ class Fragment protected ()
   def this(props: js.Object) = this()
   def this(props: js.Object, context: js.Any) = this()
 }
+
+//
+// Preact Built-in Components
+// -----------------------------------
+// TODO: Revisit what the public type of this is...
+@JSImport("preact/src", "Fragment")
+@js.native
+object Fragment
+  extends TopLevel[ComponentClass[js.Object, js.Object]]
 

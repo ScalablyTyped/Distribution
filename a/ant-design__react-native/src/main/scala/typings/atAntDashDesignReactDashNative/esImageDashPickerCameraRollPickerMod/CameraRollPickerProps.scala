@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.CameraRollAssetType
 import typings.reactDashNative.reactDashNativeMod.CameraRollGroupType
 import typings.reactDashNative.reactDashNativeMod.GetPhotosParamType

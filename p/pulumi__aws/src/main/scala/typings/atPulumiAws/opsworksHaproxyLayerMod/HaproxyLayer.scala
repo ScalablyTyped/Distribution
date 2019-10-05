@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksHaproxyLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.HaproxyLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.HaproxyLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

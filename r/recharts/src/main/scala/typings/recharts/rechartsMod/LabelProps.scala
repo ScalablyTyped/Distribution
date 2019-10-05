@@ -26,7 +26,7 @@ object LabelProps {
     children: js.Array[ReactNode] | ReactNode = null,
     className: String = null,
     content: ReactElement | ContentRenderer[_] = null,
-    formatter: LabelFormatter = null,
+    formatter: /* label */ String | Double => ReactNode = null,
     offset: Int | Double = null,
     position: PositionType = null,
     value: Double | String = null,
@@ -37,7 +37,7 @@ object LabelProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

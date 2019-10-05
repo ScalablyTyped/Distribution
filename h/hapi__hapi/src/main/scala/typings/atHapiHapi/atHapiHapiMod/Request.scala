@@ -3,9 +3,9 @@ package typings.atHapiHapi.atHapiHapiMod
 import typings.atHapiBoom.atHapiBoomMod.^
 import typings.atHapiHapi.Anon_Close
 import typings.atHapiHapi.Anon_Req
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.Dictionary
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL
-import typings.atHapiHapi.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS_PARTIAL
+import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import typings.atHapiPodium.atHapiPodiumMod.Podium
 import typings.node.Buffer
 import typings.node.streamMod.Readable

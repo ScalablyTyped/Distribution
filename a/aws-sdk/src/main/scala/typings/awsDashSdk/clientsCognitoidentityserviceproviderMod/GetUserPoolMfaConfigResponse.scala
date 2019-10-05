@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetUserPoolMfaConfigResponse extends js.Object {
   /**
-    * The multi-factor (MFA) configuration.
+    * The multi-factor (MFA) configuration. Valid values include:    OFF MFA will not be used for any users.    ON MFA is required for all users to sign in.    OPTIONAL MFA will be required only for individual users who have an MFA factor enabled.  
     */
   var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   /**

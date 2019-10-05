@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.browsingDataNs.DataTypeSet
-import typings.firefoxDashWebextDashBrowser.browserNs.browsingDataNs.RemovalOptions
+import typings.firefoxDashWebextDashBrowser.browser.browsingData.DataTypeSet
+import typings.firefoxDashWebextDashBrowser.browser.browsingData.RemovalOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

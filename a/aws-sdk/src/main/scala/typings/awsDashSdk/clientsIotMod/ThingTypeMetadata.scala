@@ -23,7 +23,7 @@ object ThingTypeMetadata {
   @scala.inline
   def apply(
     creationDate: CreationDate = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
+    deprecated: js.UndefOr[scala.Boolean] = js.undefined,
     deprecationDate: DeprecationDate = null
   ): ThingTypeMetadata = {
     val __obj = js.Dynamic.literal()

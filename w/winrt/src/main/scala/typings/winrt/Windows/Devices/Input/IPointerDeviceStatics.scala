@@ -1,0 +1,21 @@
+package typings.winrt.Windows.Devices.Input
+
+import typings.winrt.Windows.Foundation.Collections.IVectorView
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IPointerDeviceStatics extends js.Object {
+  def getPointerDevice(pointerId: Double): PointerDevice
+  def getPointerDevices(): IVectorView[PointerDevice]
+}
+
+object IPointerDeviceStatics {
+  @scala.inline
+  def apply(getPointerDevice: Double => PointerDevice, getPointerDevices: () => IVectorView[PointerDevice]): IPointerDeviceStatics = {
+    val __obj = js.Dynamic.literal(getPointerDevice = js.Any.fromFunction1(getPointerDevice), getPointerDevices = js.Any.fromFunction0(getPointerDevices))
+  
+    __obj.asInstanceOf[IPointerDeviceStatics]
+  }
+}
+

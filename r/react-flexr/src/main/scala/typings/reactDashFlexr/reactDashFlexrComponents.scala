@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashFlexrComponents extends reactDashFlexrProps {
   @scala.inline
-  def Cell: ComponentType[typings.reactDashFlexr.underscoreUnderscoreReactFlexrNs.CellProps] = js.constructorOf[typings.reactDashFlexr.reactDashFlexrMod.Cell].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlexr.underscoreUnderscoreReactFlexrNs.CellProps]]
+  def Cell: ComponentType[typings.reactDashFlexr.__ReactFlexr.CellProps] = js.constructorOf[typings.reactDashFlexr.reactDashFlexrMod.Cell].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlexr.__ReactFlexr.CellProps]]
   @scala.inline
-  def Grid: ComponentType[typings.reactDashFlexr.underscoreUnderscoreReactFlexrNs.GridProps] = js.constructorOf[typings.reactDashFlexr.reactDashFlexrMod.Grid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlexr.underscoreUnderscoreReactFlexrNs.GridProps]]
+  def Grid: ComponentType[typings.reactDashFlexr.__ReactFlexr.GridProps] = js.constructorOf[typings.reactDashFlexr.reactDashFlexrMod.Grid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlexr.__ReactFlexr.GridProps]]
 }
 

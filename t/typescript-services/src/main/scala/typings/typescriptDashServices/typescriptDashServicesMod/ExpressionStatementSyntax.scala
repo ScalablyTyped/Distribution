@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ExpressionStatementSyntax")
 @js.native
 class ExpressionStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ExpressionStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.ExpressionStatementSyntax {
   def this(expression: IExpressionSyntax, semicolonToken: ISyntaxToken, parsedInStrictMode: Boolean) = this()
 }
 
@@ -17,6 +17,6 @@ class ExpressionStatementSyntax protected ()
 @JSImport("typescript-services", "ExpressionStatementSyntax")
 @js.native
 object ExpressionStatementSyntax extends js.Object {
-  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScriptNs.ExpressionStatementSyntax = js.native
+  def create1(expression: IExpressionSyntax): typings.typescriptDashServices.TypeScript.ExpressionStatementSyntax = js.native
 }
 

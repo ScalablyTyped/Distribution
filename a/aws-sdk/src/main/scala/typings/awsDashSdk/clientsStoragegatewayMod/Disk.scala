@@ -42,7 +42,7 @@ object Disk {
     DiskId: DiskId = null,
     DiskNode: String = null,
     DiskPath: String = null,
-    DiskSizeInBytes: js.UndefOr[long] = js.undefined,
+    DiskSizeInBytes: Int | Double = null,
     DiskStatus: String = null
   ): Disk = {
     val __obj = js.Dynamic.literal()
@@ -52,7 +52,7 @@ object Disk {
     if (DiskId != null) __obj.updateDynamic("DiskId")(DiskId)
     if (DiskNode != null) __obj.updateDynamic("DiskNode")(DiskNode)
     if (DiskPath != null) __obj.updateDynamic("DiskPath")(DiskPath)
-    if (!js.isUndefined(DiskSizeInBytes)) __obj.updateDynamic("DiskSizeInBytes")(DiskSizeInBytes)
+    if (DiskSizeInBytes != null) __obj.updateDynamic("DiskSizeInBytes")(DiskSizeInBytes.asInstanceOf[js.Any])
     if (DiskStatus != null) __obj.updateDynamic("DiskStatus")(DiskStatus)
     __obj.asInstanceOf[Disk]
   }

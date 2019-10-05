@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftGameSessionQueueMod
 
-import typings.atPulumiAws.typesOutputMod.gameliftNs.GameSessionQueuePlayerLatencyPolicy
+import typings.atPulumiAws.typesOutputMod.gamelift.GameSessionQueuePlayerLatencyPolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

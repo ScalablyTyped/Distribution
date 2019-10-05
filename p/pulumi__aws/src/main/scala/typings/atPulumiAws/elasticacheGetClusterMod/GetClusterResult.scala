@@ -1,7 +1,7 @@
 package typings.atPulumiAws.elasticacheGetClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.elasticacheNs.GetClusterCacheNode
+import typings.atPulumiAws.typesOutputMod.elasticache.GetClusterCacheNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

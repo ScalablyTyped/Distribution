@@ -15,22 +15,6 @@ trait TransformStream[I, O] extends js.Object {
 
 @JSGlobal("TransformStream")
 @js.native
-class TransformStreamCls[I, O] () extends TransformStream[I, O] {
-  def this(transformer: Transformer[I, O]) = this()
-  def this(transformer: Transformer[I, O], writableStrategy: QueuingStrategy[I]) = this()
-  def this(
-    transformer: Transformer[I, O],
-    writableStrategy: QueuingStrategy[I],
-    readableStrategy: QueuingStrategy[O]
-  ) = this()
-  /* CompleteClass */
-  override val readable: ReadableStream[O] = js.native
-  /* CompleteClass */
-  override val writable: WritableStream[I] = js.native
-}
-
-@JSGlobal("TransformStream")
-@js.native
 object TransformStream
   extends Instantiable0[TransformStream[js.Object, js.Object]]
      with Instantiable1[

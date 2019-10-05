@@ -17,7 +17,7 @@ trait DeactivatePipelineInput extends js.Object {
 
 object DeactivatePipelineInput {
   @scala.inline
-  def apply(pipelineId: id, cancelActive: js.UndefOr[cancelActive] = js.undefined): DeactivatePipelineInput = {
+  def apply(pipelineId: id, cancelActive: js.UndefOr[Boolean] = js.undefined): DeactivatePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId)
     if (!js.isUndefined(cancelActive)) __obj.updateDynamic("cancelActive")(cancelActive)
     __obj.asInstanceOf[DeactivatePipelineInput]

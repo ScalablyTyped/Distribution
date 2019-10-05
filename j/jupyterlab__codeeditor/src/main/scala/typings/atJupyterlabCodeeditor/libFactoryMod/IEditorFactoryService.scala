@@ -1,7 +1,7 @@
 package typings.atJupyterlabCodeeditor.libFactoryMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IOptions
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

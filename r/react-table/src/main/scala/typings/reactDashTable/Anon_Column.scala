@@ -15,8 +15,13 @@ trait Anon_Column extends js.Object {
 
 object Anon_Column {
   @scala.inline
-  def apply(column: Column[_], filter: js.Any, onChange: ReactTableFunction, key: String = null): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column, filter = filter, onChange = onChange)
+  def apply(
+    column: Column[_],
+    filter: js.Any,
+    onChange: /* value */ js.UndefOr[js.Any] => Unit,
+    key: String = null
+  ): Anon_Column = {
+    val __obj = js.Dynamic.literal(column = column, filter = filter, onChange = js.Any.fromFunction1(onChange))
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[Anon_Column]
   }

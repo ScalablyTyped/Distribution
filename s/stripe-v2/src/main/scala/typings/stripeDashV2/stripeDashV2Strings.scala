@@ -1,10 +1,10 @@
 package typings.stripeDashV2
 
-import typings.stripeDashV2.stripeNs.StripeApplePayBillingContactField
-import typings.stripeDashV2.stripeNs.StripeApplePayShipping
-import typings.stripeDashV2.stripeNs.StripeApplePayShippingContactField
-import typings.stripeDashV2.stripeNs.StripeCardDataBrand
-import typings.stripeDashV2.stripeNs.StripeCardDataFunding
+import typings.stripeDashV2.stripe.StripeApplePayBillingContactField
+import typings.stripeDashV2.stripe.StripeApplePayShipping
+import typings.stripeDashV2.stripe.StripeApplePayShippingContactField
+import typings.stripeDashV2.stripe.StripeCardDataBrand
+import typings.stripeDashV2.stripe.StripeCardDataFunding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

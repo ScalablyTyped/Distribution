@@ -1,6 +1,6 @@
 package typings.knockback
 
-import typings.knockback.KnockbackNs.Static
+import typings.knockback.Knockback.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

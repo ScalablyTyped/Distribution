@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Parser", JSImport.Namespace)
 @js.native
 object libParserMod extends js.Object {
-  @JSName("Parser")
   @js.native
-  object ParserNs extends js.Object {
+  object Parser extends js.Object {
     def getHeader(data: js.Any, headerStart: Double): Double = js.native
     def parseHeader(message: IncomingRequestMessage, data: js.Any, headerStart: Double, headerEnd: Double): Boolean | Anon_Error = js.native
     def parseHeader(message: IncomingResponseMessage, data: js.Any, headerStart: Double, headerEnd: Double): Boolean | Anon_Error = js.native

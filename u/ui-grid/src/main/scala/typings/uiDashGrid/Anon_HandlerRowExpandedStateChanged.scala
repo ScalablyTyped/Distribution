@@ -1,7 +1,7 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.expandableNs.rowExpandedStateChangedHandler
+import typings.uiDashGrid.uiDashGridMod.expandable.rowExpandedStateChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

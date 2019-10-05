@@ -13,12 +13,12 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    autocomplete: AutoCompleteFunction = null,
+    autocomplete: /* input */ String => js.Array[String] = null,
     history: History = null,
     sigint: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete)
+    if (autocomplete != null) __obj.updateDynamic("autocomplete")(js.Any.fromFunction1(autocomplete))
     if (history != null) __obj.updateDynamic("history")(history)
     if (!js.isUndefined(sigint)) __obj.updateDynamic("sigint")(sigint)
     __obj.asInstanceOf[Config]

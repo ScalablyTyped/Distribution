@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashTab
 
-import typings.semanticDashUiDashTab.SemanticUINs.Tab
-import typings.semanticDashUiDashTab.SemanticUINs.TabSettings
+import typings.semanticDashUiDashTab.SemanticUI.Tab
+import typings.semanticDashUiDashTab.SemanticUI.TabSettings
 import typings.semanticDashUiDashTab.semanticDashUiDashTabNumbers.`false`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.`cache add`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.`cache read`

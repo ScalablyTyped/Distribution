@@ -23,12 +23,12 @@ object EsamSettings {
   @scala.inline
   def apply(
     ManifestConfirmConditionNotification: EsamManifestConfirmConditionNotification = null,
-    ResponseSignalPreroll: js.UndefOr[__integerMin0Max30000] = js.undefined,
+    ResponseSignalPreroll: Int | Double = null,
     SignalProcessingNotification: EsamSignalProcessingNotification = null
   ): EsamSettings = {
     val __obj = js.Dynamic.literal()
     if (ManifestConfirmConditionNotification != null) __obj.updateDynamic("ManifestConfirmConditionNotification")(ManifestConfirmConditionNotification)
-    if (!js.isUndefined(ResponseSignalPreroll)) __obj.updateDynamic("ResponseSignalPreroll")(ResponseSignalPreroll)
+    if (ResponseSignalPreroll != null) __obj.updateDynamic("ResponseSignalPreroll")(ResponseSignalPreroll.asInstanceOf[js.Any])
     if (SignalProcessingNotification != null) __obj.updateDynamic("SignalProcessingNotification")(SignalProcessingNotification)
     __obj.asInstanceOf[EsamSettings]
   }

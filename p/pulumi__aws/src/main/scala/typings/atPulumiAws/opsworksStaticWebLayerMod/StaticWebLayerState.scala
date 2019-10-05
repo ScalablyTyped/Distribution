@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksStaticWebLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.StaticWebLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.StaticWebLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

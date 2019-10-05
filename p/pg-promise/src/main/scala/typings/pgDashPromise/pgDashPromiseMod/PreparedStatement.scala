@@ -1,6 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
-import typings.pgDashPromise.pgDashPromiseMod.errorsNs.PreparedStatementError
+import typings.pgDashPromise.pgDashPromiseMod.errors.PreparedStatementError
 import typings.pgDashPromise.pgDashPromiseStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

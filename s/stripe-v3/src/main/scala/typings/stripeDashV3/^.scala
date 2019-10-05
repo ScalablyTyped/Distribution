@@ -1,6 +1,6 @@
 package typings.stripeDashV3
 
-import typings.stripeDashV3.stripeNs.StripeStatic
+import typings.stripeDashV3.stripe.StripeStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

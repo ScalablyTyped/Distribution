@@ -1,7 +1,7 @@
 package typings.angularDashMocks.angularDashMocksMod.angularMod
 
-import typings.angularDashMocks.angularDashMocksMod.angularMod.mockNs.IHttpHeaders
-import typings.angularDashMocks.angularDashMocksMod.angularMod.mockNs.IRequestHandler
+import typings.angularDashMocks.angularDashMocksMod.angularMod.mock.IHttpHeaders
+import typings.angularDashMocks.angularDashMocksMod.angularMod.mock.IRequestHandler
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

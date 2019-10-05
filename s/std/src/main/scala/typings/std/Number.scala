@@ -1,6 +1,7 @@
 package typings.std
 
-import typings.std.IntlNs.NumberFormatOptions
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +33,8 @@ trait Number extends js.Object {
   def toString(radix: Double): java.lang.String = js.native
 }
 
+/** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
 @JSGlobal("Number")
 @js.native
-class NumberCls () extends Number {
-  def this(value: js.Any) = this()
-}
+object Number extends TopLevel[NumberConstructor]
 

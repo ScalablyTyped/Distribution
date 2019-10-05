@@ -49,9 +49,8 @@ object libFilesMod extends js.Object {
     tracer: js.Function2[/* message */ String, /* verbose */ js.UndefOr[String], Unit]
   ): Thenable[String] = js.native
   def uriToFilePath(uri: String): js.UndefOr[String] = js.native
-  @JSName("FileSystem")
   @js.native
-  object FileSystemNs extends js.Object {
+  object FileSystem extends js.Object {
     def isCaseSensitive(): Boolean = js.native
     def isParent(parent: String, child: String): Boolean = js.native
   }

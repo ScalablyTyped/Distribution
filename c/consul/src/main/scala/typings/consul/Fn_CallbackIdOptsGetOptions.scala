@@ -1,6 +1,6 @@
 package typings.consul
 
-import typings.consul.consulMod.AclNs.GetOptions
+import typings.consul.consulMod.Acl.GetOptions
 import typings.consul.consulMod.Callback
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js

@@ -1,5 +1,6 @@
 package typings.atOracleOraclejet.ojaccordionMod
 
+import typings.atOracleOraclejet.Anon_FromCollapsible
 import typings.atOracleOraclejet.Anon_Id
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponent
@@ -7,10 +8,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.expanded
 import typings.atOracleOraclejet.atOracleOraclejetStrings.expandedChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.multiple
 import typings.atOracleOraclejet.atOracleOraclejetStrings.multipleChanged
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojCollapse
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojExpand
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojExpand
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -103,5 +105,14 @@ trait ojAccordion extends baseComponent[ojAccordionSettableProperties] {
   def setProperty_expanded(property: expanded, value: js.Array[Anon_Id | Double | String]): Unit = js.native
   @JSName("setProperty")
   def setProperty_multiple(property: multiple, value: Boolean): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojaccordion", "ojAccordion")
+@js.native
+object ojAccordion extends js.Object {
+  type ojBeforeCollapse = CustomEvent[Anon_FromCollapsible]
+  type ojBeforeExpand = CustomEvent[Anon_FromCollapsible]
+  type ojCollapse = CustomEvent[Anon_FromCollapsible]
+  type ojExpand = CustomEvent[Anon_FromCollapsible]
 }
 

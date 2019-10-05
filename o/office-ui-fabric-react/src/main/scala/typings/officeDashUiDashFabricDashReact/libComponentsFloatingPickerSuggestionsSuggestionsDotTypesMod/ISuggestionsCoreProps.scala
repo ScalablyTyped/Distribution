@@ -6,7 +6,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSu
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsItemDotTypesMod.ISuggestionItemProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js

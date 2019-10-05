@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_BodyCommentsExtends
 import typings.astDashTypes.genKindsMod.InterfaceExtendsKind
 import typings.astDashTypes.genKindsMod.ObjectTypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.InterfaceTypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.InterfaceTypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

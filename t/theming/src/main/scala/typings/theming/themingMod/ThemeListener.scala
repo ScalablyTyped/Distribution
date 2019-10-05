@@ -1,6 +1,8 @@
 package typings.theming.themingMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.ValidationMap
+import typings.theming.themingStrings.__THEMING__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,4 +27,8 @@ object ThemeListener {
     __obj.asInstanceOf[ThemeListener[C]]
   }
 }
+
+@JSImport("theming", "themeListener")
+@js.native
+object themeListener extends TopLevel[ThemeListener[__THEMING__]]
 

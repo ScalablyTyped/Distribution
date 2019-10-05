@@ -59,7 +59,7 @@ object DescribeThingGroupResponse {
     thingGroupMetadata: ThingGroupMetadata = null,
     thingGroupName: ThingGroupName = null,
     thingGroupProperties: ThingGroupProperties = null,
-    version: js.UndefOr[Version] = js.undefined
+    version: Int | Double = null
   ): DescribeThingGroupResponse = {
     val __obj = js.Dynamic.literal()
     if (indexName != null) __obj.updateDynamic("indexName")(indexName)
@@ -71,7 +71,7 @@ object DescribeThingGroupResponse {
     if (thingGroupMetadata != null) __obj.updateDynamic("thingGroupMetadata")(thingGroupMetadata)
     if (thingGroupName != null) __obj.updateDynamic("thingGroupName")(thingGroupName)
     if (thingGroupProperties != null) __obj.updateDynamic("thingGroupProperties")(thingGroupProperties)
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingGroupResponse]
   }
 }

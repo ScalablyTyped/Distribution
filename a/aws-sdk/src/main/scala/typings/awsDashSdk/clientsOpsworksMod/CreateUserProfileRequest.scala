@@ -27,7 +27,7 @@ object CreateUserProfileRequest {
   @scala.inline
   def apply(
     IamUserArn: String,
-    AllowSelfManagement: js.UndefOr[Boolean] = js.undefined,
+    AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined,
     SshPublicKey: String = null,
     SshUsername: String = null
   ): CreateUserProfileRequest = {

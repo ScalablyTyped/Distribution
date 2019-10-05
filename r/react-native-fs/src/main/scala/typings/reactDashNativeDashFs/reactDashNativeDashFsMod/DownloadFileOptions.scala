@@ -26,19 +26,19 @@ object DownloadFileOptions {
     fromUrl: String,
     toFile: String,
     background: js.UndefOr[Boolean] = js.undefined,
-    begin: DownloadCallbackBegin = null,
+    begin: /* res */ DownloadBeginCallbackResult => Unit = null,
     connectionTimeout: Int | Double = null,
     headers: Headers = null,
-    progress: DownloadCallbackProgress = null,
+    progress: /* res */ DownloadProgressCallbackResult => Unit = null,
     progressDivider: Int | Double = null,
     readTimeout: Int | Double = null
   ): DownloadFileOptions = {
     val __obj = js.Dynamic.literal(fromUrl = fromUrl, toFile = toFile)
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
-    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (progressDivider != null) __obj.updateDynamic("progressDivider")(progressDivider.asInstanceOf[js.Any])
     if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFileOptions]

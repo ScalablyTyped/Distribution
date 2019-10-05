@@ -13,7 +13,7 @@ trait GetEbsEncryptionByDefaultRequest extends js.Object {
 
 object GetEbsEncryptionByDefaultRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): GetEbsEncryptionByDefaultRequest = {
+  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): GetEbsEncryptionByDefaultRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[GetEbsEncryptionByDefaultRequest]

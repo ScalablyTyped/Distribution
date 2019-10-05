@@ -23,7 +23,7 @@ object ApproveAssignmentRequest {
   @scala.inline
   def apply(
     AssignmentId: EntityId,
-    OverrideRejection: js.UndefOr[Boolean] = js.undefined,
+    OverrideRejection: js.UndefOr[scala.Boolean] = js.undefined,
     RequesterFeedback: String = null
   ): ApproveAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId)

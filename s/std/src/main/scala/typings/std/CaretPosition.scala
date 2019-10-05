@@ -13,16 +13,5 @@ trait CaretPosition extends js.Object {
 
 @JSGlobal("CaretPosition")
 @js.native
-class CaretPositionCls () extends CaretPosition {
-  /* CompleteClass */
-  override val offset: Double = js.native
-  /* CompleteClass */
-  override val offsetNode: Node = js.native
-  /* CompleteClass */
-  override def getClientRect(): DOMRect | Null = js.native
-}
-
-@JSGlobal("CaretPosition")
-@js.native
 object CaretPosition extends Instantiable0[CaretPosition]
 

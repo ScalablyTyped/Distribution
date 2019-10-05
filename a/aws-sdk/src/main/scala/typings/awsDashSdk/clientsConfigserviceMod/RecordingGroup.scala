@@ -22,8 +22,8 @@ trait RecordingGroup extends js.Object {
 object RecordingGroup {
   @scala.inline
   def apply(
-    allSupported: js.UndefOr[AllSupported] = js.undefined,
-    includeGlobalResourceTypes: js.UndefOr[IncludeGlobalResourceTypes] = js.undefined,
+    allSupported: js.UndefOr[scala.Boolean] = js.undefined,
+    includeGlobalResourceTypes: js.UndefOr[scala.Boolean] = js.undefined,
     resourceTypes: ResourceTypeList = null
   ): RecordingGroup = {
     val __obj = js.Dynamic.literal()

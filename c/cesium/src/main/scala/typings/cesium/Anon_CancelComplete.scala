@@ -1,7 +1,7 @@
 package typings.cesium
 
-import typings.cesium.cesiumMod.CameraNs.FlightCancelledCallback
-import typings.cesium.cesiumMod.CameraNs.FlightCompleteCallback
+import typings.cesium.cesiumMod.Camera.FlightCancelledCallback
+import typings.cesium.cesiumMod.Camera.FlightCompleteCallback
 import typings.cesium.cesiumMod.EasingFunction
 import typings.cesium.cesiumMod.HeadingPitchRange
 import typings.cesium.cesiumMod.Matrix4
@@ -25,8 +25,8 @@ trait Anon_CancelComplete extends js.Object {
 object Anon_CancelComplete {
   @scala.inline
   def apply(
-    cancel: FlightCancelledCallback = null,
-    complete: FlightCompleteCallback = null,
+    cancel: () => Unit = null,
+    complete: () => Unit = null,
     duration: Int | Double = null,
     easingFunction: EasingFunction = null,
     endTransform: Matrix4 = null,
@@ -37,8 +37,8 @@ object Anon_CancelComplete {
     pitchAdjustHeight: Int | Double = null
   ): Anon_CancelComplete = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easingFunction != null) __obj.updateDynamic("easingFunction")(easingFunction)
     if (endTransform != null) __obj.updateDynamic("endTransform")(endTransform)

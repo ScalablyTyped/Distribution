@@ -21,12 +21,11 @@ trait CreateFile extends ResourceOperation {
   var uri: String
 }
 
-object CreateFile {
-  @scala.inline
-  def apply(kind: create, uri: String, options: CreateFileOptions = null): CreateFile = {
-    val __obj = js.Dynamic.literal(kind = kind, uri = uri)
-    if (options != null) __obj.updateDynamic("options")(options)
-    __obj.asInstanceOf[CreateFile]
-  }
+@JSImport("vscode-languageserver-types", "CreateFile")
+@js.native
+object CreateFile extends js.Object {
+  def create(uri: String): CreateFile = js.native
+  def create(uri: String, options: CreateFileOptions): CreateFile = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean = js.native
 }
 

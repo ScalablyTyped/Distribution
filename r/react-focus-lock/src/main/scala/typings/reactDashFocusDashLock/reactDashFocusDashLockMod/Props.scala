@@ -74,10 +74,10 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: ReactNode,
     allowTextSelection: js.UndefOr[Boolean] = js.undefined,
     as: ReactType[_] = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
+    children: ReactNode = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
@@ -90,10 +90,11 @@ object Props {
     shards: js.Array[RefObject[_] | HTMLElement] = null,
     whiteList: /* activeElement */ HTMLElement => Boolean = null
   ): Props = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTextSelection)) __obj.updateDynamic("allowTextSelection")(allowTextSelection)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (group != null) __obj.updateDynamic("group")(group)

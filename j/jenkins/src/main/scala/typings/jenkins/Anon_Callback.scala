@@ -2,7 +2,7 @@ package typings.jenkins
 
 import typings.jenkins.jenkinsStrings.html
 import typings.jenkins.jenkinsStrings.text
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

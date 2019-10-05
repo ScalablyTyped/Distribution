@@ -1,11 +1,15 @@
 organization := "org.scalablytyped"
 name := "mali-onerror"
-version := "0.1-dt-20181120Z-cd626c"
-scalaVersion := "2.12.9"
+version := "0.1-dt-20181120Z-f412af"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "grpc" % "1.21.1-b4b036",
+  "org.scalablytyped" %%% "mali" % "0.19.0-c9d198",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-d60ad2",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

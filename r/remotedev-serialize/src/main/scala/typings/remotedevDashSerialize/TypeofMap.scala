@@ -1,11 +1,17 @@
 package typings.remotedevDashSerialize
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.immutableMod.Map
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofMap extends js.Object {
+  def apply(): Map[_, _] = js.native
+  def apply[V](obj: StringDictionary[V]): Map[String, V] = js.native
+  def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): Map[K, V] = js.native
   /**
     * True if the provided value is a Map
     *
@@ -16,7 +22,7 @@ trait TypeofMap extends js.Object {
     * Map.isMap(Map()) // true
     * ```
     */
-  def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean
+  def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean = js.native
   /**
     * Creates a new Map from alternating keys and values
     *
@@ -33,18 +39,6 @@ trait TypeofMap extends js.Object {
     *
     * @deprecated Use Map([ [ 'k', 'v' ] ]) or Map({ k: 'v' })
     */
-  def of(keyValues: js.Any*): Map[_, _]
-}
-
-object TypeofMap {
-  @scala.inline
-  def apply(
-    isMap: js.Any => /* is immutable.immutable.Map<any, any> */ Boolean,
-    of: /* repeated */ js.Any => Map[_, _]
-  ): TypeofMap = {
-    val __obj = js.Dynamic.literal(isMap = js.Any.fromFunction1(isMap), of = js.Any.fromFunction1(of))
-  
-    __obj.asInstanceOf[TypeofMap]
-  }
+  def of(keyValues: js.Any*): Map[_, _] = js.native
 }
 

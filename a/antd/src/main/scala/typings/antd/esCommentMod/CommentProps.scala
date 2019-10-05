@@ -30,22 +30,23 @@ trait CommentProps extends js.Object {
 object CommentProps {
   @scala.inline
   def apply(
-    content: ReactNode,
     actions: js.Array[ReactNode] = null,
     author: ReactNode = null,
     avatar: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
+    content: ReactNode = null,
     datetime: ReactNode = null,
     prefixCls: String = null,
     style: CSSProperties = null
   ): CommentProps = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)

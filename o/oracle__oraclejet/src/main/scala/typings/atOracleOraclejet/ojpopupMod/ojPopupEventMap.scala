@@ -11,14 +11,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.modeless
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.popup
 import typings.atOracleOraclejet.atOracleOraclejetStrings.simple
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.Position
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojAnimateStart
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojBeforeClose
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojBeforeOpen
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojClose
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojFocus
-import typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojOpen
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.Position
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojClose
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojFocus
+import typings.atOracleOraclejet.ojpopupMod.ojPopup.ojOpen
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -44,13 +44,13 @@ trait ojPopupEventMap extends baseComponentEventMap[ojPopupSettableProperties] {
   var chromeChanged: JetElementCustomEvent[default | none]
   var initialFocusChanged: JetElementCustomEvent[auto | none | firstFocusable | popup]
   var modalityChanged: JetElementCustomEvent[modeless | modal]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojAnimateStart
-  var ojBeforeClose: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojBeforeClose
-  var ojBeforeOpen: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojBeforeOpen
-  var ojClose: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojClose
-  var ojFocus: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojFocus
-  var ojOpen: typings.atOracleOraclejet.ojpopupMod.ojPopupNs.ojOpen
+  var ojAnimateEnd: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojAnimateStart
+  var ojBeforeClose: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojBeforeClose
+  var ojBeforeOpen: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojBeforeOpen
+  var ojClose: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojClose
+  var ojFocus: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojFocus
+  var ojOpen: typings.atOracleOraclejet.ojpopupMod.ojPopup.ojOpen
   var positionChanged: JetElementCustomEvent[Position]
   var tailChanged: JetElementCustomEvent[none | simple]
 }

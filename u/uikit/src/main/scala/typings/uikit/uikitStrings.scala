@@ -1,6 +1,6 @@
 package typings.uikit
 
-import typings.uikit.UIkitNs.DropdownPosition
+import typings.uikit.UIkit.DropdownPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

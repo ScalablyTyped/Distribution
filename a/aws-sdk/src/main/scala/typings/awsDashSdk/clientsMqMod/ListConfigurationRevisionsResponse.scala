@@ -27,13 +27,13 @@ object ListConfigurationRevisionsResponse {
   @scala.inline
   def apply(
     ConfigurationId: __string = null,
-    MaxResults: js.UndefOr[__integer] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: __string = null,
     Revisions: __listOfConfigurationRevision = null
   ): ListConfigurationRevisionsResponse = {
     val __obj = js.Dynamic.literal()
     if (ConfigurationId != null) __obj.updateDynamic("ConfigurationId")(ConfigurationId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Revisions != null) __obj.updateDynamic("Revisions")(Revisions)
     __obj.asInstanceOf[ListConfigurationRevisionsResponse]

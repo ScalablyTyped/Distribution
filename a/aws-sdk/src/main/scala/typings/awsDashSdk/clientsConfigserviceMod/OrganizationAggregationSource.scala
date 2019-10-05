@@ -23,7 +23,7 @@ object OrganizationAggregationSource {
   @scala.inline
   def apply(
     RoleArn: String,
-    AllAwsRegions: js.UndefOr[Boolean] = js.undefined,
+    AllAwsRegions: js.UndefOr[scala.Boolean] = js.undefined,
     AwsRegions: AggregatorRegionList = null
   ): OrganizationAggregationSource = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn)

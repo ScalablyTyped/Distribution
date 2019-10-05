@@ -21,9 +21,9 @@ trait ChangeMessageVisibilityBatchRequestEntry extends js.Object {
 
 object ChangeMessageVisibilityBatchRequestEntry {
   @scala.inline
-  def apply(Id: String, ReceiptHandle: String, VisibilityTimeout: js.UndefOr[Integer] = js.undefined): ChangeMessageVisibilityBatchRequestEntry = {
+  def apply(Id: String, ReceiptHandle: String, VisibilityTimeout: Int | Double = null): ChangeMessageVisibilityBatchRequestEntry = {
     val __obj = js.Dynamic.literal(Id = Id, ReceiptHandle = ReceiptHandle)
-    if (!js.isUndefined(VisibilityTimeout)) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout)
+    if (VisibilityTimeout != null) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeMessageVisibilityBatchRequestEntry]
   }
 }

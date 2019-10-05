@@ -11,10 +11,13 @@ trait LoaderEntry extends js.Object {
 
 object LoaderEntry {
   @scala.inline
-  def apply(async: AsyncLoader = null, sync: SyncLoader = null): LoaderEntry = {
+  def apply(
+    async: (/* filepath */ String, /* content */ String) => Config | Null | (js.Promise[js.Object | Null]) = null,
+    sync: (/* filepath */ String, /* content */ String) => Config | Null = null
+  ): LoaderEntry = {
     val __obj = js.Dynamic.literal()
-    if (async != null) __obj.updateDynamic("async")(async)
-    if (sync != null) __obj.updateDynamic("sync")(sync)
+    if (async != null) __obj.updateDynamic("async")(js.Any.fromFunction2(async))
+    if (sync != null) __obj.updateDynamic("sync")(js.Any.fromFunction2(sync))
     __obj.asInstanceOf[LoaderEntry]
   }
 }

@@ -1,6 +1,8 @@
 package typings.reactDashSlick.reactDashSlickMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,14 +21,14 @@ object CustomArrowProps {
   def apply(
     className: String = null,
     currentSlide: Int | Double = null,
-    onClick: MouseEventHandler[_] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
     slideCount: Int | Double = null,
     style: CSSProperties = null
   ): CustomArrowProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (currentSlide != null) __obj.updateDynamic("currentSlide")(currentSlide.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[CustomArrowProps]

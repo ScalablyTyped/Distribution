@@ -50,3 +50,14 @@ object ForStatement {
   }
 }
 
+@JSImport("@babel/types", "forStatement")
+@js.native
+object forStatement extends js.Object {
+  def apply(
+    init: js.UndefOr[VariableDeclaration | Expression | Null],
+    test: js.UndefOr[Expression | Null],
+    update: js.UndefOr[Expression | Null],
+    body: Statement
+  ): ForStatement = js.native
+}
+

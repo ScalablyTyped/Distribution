@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 package object openlayersMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.openlayers.openlayersMod.eventsNs.Event
-  import typings.openlayers.openlayersMod.geomNs.Geometry
-  import typings.openlayers.openlayersMod.geomNs.SimpleGeometry
-  import typings.openlayers.openlayersMod.layerNs.Layer
-  import typings.openlayers.openlayersMod.olxNs.FrameState
-  import typings.openlayers.openlayersMod.projNs.Projection
-  import typings.openlayers.openlayersMod.styleNs.Style
+  import typings.openlayers.openlayersMod.events.Event
+  import typings.openlayers.openlayersMod.geom.Geometry
+  import typings.openlayers.openlayersMod.geom.SimpleGeometry
+  import typings.openlayers.openlayersMod.layer.Layer
+  import typings.openlayers.openlayersMod.olx.FrameState
+  import typings.openlayers.openlayersMod.proj.Projection
+  import typings.openlayers.openlayersMod.style.Style
   import typings.std.CanvasGradient
   import typings.std.CanvasPattern
   import typings.std.HTMLCanvasElement
@@ -60,19 +60,19 @@ package object openlayersMod {
     js.Array[Double] | ImageData
   ]
   type SelectFilterFunction = js.Function2[
-    /* feature */ Feature | typings.openlayers.openlayersMod.renderNs.Feature, 
+    /* feature */ Feature | typings.openlayers.openlayersMod.render.Feature, 
     /* layer */ Layer, 
     Boolean
   ]
   type Size = js.Tuple2[Double, Double]
   type StyleFunction = js.Function2[
-    /* feature */ Feature | typings.openlayers.openlayersMod.renderNs.Feature, 
+    /* feature */ Feature | typings.openlayers.openlayersMod.render.Feature, 
     /* resolution */ Double, 
     Style | js.Array[Style] | Null
   ]
   type StyleGeometryFunction = js.Function1[
-    /* feature */ Feature | typings.openlayers.openlayersMod.renderNs.Feature, 
-    Geometry | typings.openlayers.openlayersMod.renderNs.Feature
+    /* feature */ Feature | typings.openlayers.openlayersMod.render.Feature, 
+    Geometry | typings.openlayers.openlayersMod.render.Feature
   ]
   type TileCoord = js.Tuple3[Double, Double, Double]
   type TileLoadFunctionType = js.Function2[/* tile */ Tile, /* url */ String, Unit]

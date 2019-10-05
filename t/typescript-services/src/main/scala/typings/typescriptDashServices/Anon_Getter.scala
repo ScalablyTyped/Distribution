@@ -1,7 +1,7 @@
 package typings.typescriptDashServices
 
-import typings.typescriptDashServices.TypeScriptNs.GetAccessor
-import typings.typescriptDashServices.TypeScriptNs.SetAccessor
+import typings.typescriptDashServices.TypeScript.GetAccessor
+import typings.typescriptDashServices.TypeScript.SetAccessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

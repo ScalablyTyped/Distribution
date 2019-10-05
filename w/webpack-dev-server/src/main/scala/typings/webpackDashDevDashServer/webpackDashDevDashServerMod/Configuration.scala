@@ -5,7 +5,7 @@ import typings.connectDashHistoryDashApiDashFallback.connectDashHistoryDashApiDa
 import typings.express.expressMod.Application
 import typings.node.httpsMod.ServerOptions
 import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
-import typings.webpack.webpackMod.OptionsNs.Stats
+import typings.webpack.webpackMod.Options.Stats
 import typings.webpack.webpackMod.WatchOptions
 import typings.webpackDashDevDashServer.Anon_Errors
 import typings.webpackDashDevDashServer.webpackDashDevDashServerStrings.error

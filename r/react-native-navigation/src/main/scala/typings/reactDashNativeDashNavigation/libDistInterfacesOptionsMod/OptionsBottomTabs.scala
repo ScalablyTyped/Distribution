@@ -84,7 +84,7 @@ object OptionsBottomTabs {
     currentTabId: String = null,
     currentTabIndex: Int | Double = null,
     drawBehind: js.UndefOr[Boolean] = js.undefined,
-    elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    elevation: Int | Double = null,
     hideShadow: js.UndefOr[Boolean] = js.undefined,
     tabsAttachMode: together | afterInitialTab | onSwitchToTab = null,
     testID: String = null,
@@ -99,7 +99,7 @@ object OptionsBottomTabs {
     if (currentTabId != null) __obj.updateDynamic("currentTabId")(currentTabId)
     if (currentTabIndex != null) __obj.updateDynamic("currentTabIndex")(currentTabIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation)
+    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow)
     if (tabsAttachMode != null) __obj.updateDynamic("tabsAttachMode")(tabsAttachMode.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)

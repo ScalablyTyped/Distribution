@@ -23,5 +23,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "EventHandler")
 @js.native
 class EventHandler ()
-  extends typings.playcanvas.pcNs.EventHandler
+  extends typings.playcanvas.pc.EventHandler
 

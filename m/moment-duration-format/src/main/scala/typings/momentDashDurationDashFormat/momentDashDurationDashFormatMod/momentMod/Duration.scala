@@ -20,3 +20,9 @@ trait Duration extends js.Object {
   def format(template: TemplateFunction, settings: DurationFormatSettings): String = js.native
 }
 
+@JSImport("moment", "duration")
+@js.native
+object duration extends js.Object {
+  val fn: Duration = js.native
+}
+

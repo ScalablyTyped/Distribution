@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ElementInput")
 @js.native
 class ElementInput protected ()
-  extends typings.playcanvas.pcNs.ElementInput {
+  extends typings.playcanvas.pc.ElementInput {
   def this(domElement: Element) = this()
   def this(domElement: Element, options: Anon_UseMouse) = this()
 }

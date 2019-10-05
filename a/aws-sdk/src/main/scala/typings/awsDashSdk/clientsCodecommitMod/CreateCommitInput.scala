@@ -56,7 +56,7 @@ object CreateCommitInput {
     commitMessage: Message = null,
     deleteFiles: DeleteFileEntries = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
+    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
     parentCommitId: CommitId = null,
     putFiles: PutFileEntries = null,
     setFileModes: SetFileModeEntries = null

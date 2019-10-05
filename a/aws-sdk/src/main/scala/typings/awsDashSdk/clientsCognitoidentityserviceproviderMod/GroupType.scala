@@ -42,7 +42,7 @@ object GroupType {
     Description: DescriptionType = null,
     GroupName: GroupNameType = null,
     LastModifiedDate: DateType = null,
-    Precedence: js.UndefOr[PrecedenceType] = js.undefined,
+    Precedence: Int | Double = null,
     RoleArn: ArnType = null,
     UserPoolId: UserPoolIdType = null
   ): GroupType = {
@@ -51,7 +51,7 @@ object GroupType {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (!js.isUndefined(Precedence)) __obj.updateDynamic("Precedence")(Precedence)
+    if (Precedence != null) __obj.updateDynamic("Precedence")(Precedence.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId)
     __obj.asInstanceOf[GroupType]

@@ -6,10 +6,9 @@ import typings.lodash.lodashMod.LoDashImplicitWrapper
 import typings.lodash.lodashMod.LoDashStatic
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.nodeDashRal.nodeDashRalMod.RALNs.RalRunner
-import typings.yog2DashKernel.Anon_AppendExtPath
 import typings.yog2DashKernel.Anon_CleanCache
-import typings.yog2DashKernel.Fn_Name
+import typings.yog2DashKernel.TypeofRAL
+import typings.yog2DashKernel.TypeofRALPromise
 import typings.yog2DashKernel.Typeofexpress
 import typings.yogDashLog.yogDashLogMod.Logger
 import scala.scalajs.js
@@ -18,8 +17,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Yog extends js.Object {
-  @JSName("RAL")
-  var RAL_Original: Anon_AppendExtPath = js.native
+  var RAL: TypeofRAL = js.native
   var ROOT_PATH: String = js.native
   @JSName("_")
   var __Original: LoDashStatic = js.native
@@ -31,9 +29,8 @@ trait Yog extends js.Object {
   ]) with Typeofexpress = js.native
   var log: Logger = js.native
   // 当 yog.conf.promise.overrideRAL 为true时，可以当作promise使用
-  var ral: Anon_AppendExtPath | Fn_Name = js.native
-  @JSName("ralP")
-  var ralP_Original: Fn_Name = js.native
+  var ral: TypeofRAL | TypeofRALPromise = js.native
+  var ralP: TypeofRALPromise = js.native
   // debug模式时存在
   var reloadApp: js.UndefOr[js.Function1[/* appName */ String, Unit]] = js.native
   // debug模式时存在
@@ -41,8 +38,6 @@ trait Yog extends js.Object {
   // debug模式时存在
   var reloadView: js.UndefOr[js.Function0[Unit]] = js.native
   var view: Anon_CleanCache = js.native
-  def RAL(serviceName: String): RalRunner = js.native
-  def RAL(serviceName: String, options: js.Object): RalRunner = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -132,7 +127,5 @@ trait Yog extends js.Object {
   def bootstrap(option: YogBootstrapOption): Unit = js.native
   def bootstrap(option: YogBootstrapOption, callback: js.Function0[Unit]): Unit = js.native
   def express(): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express = js.native
-  def ralP[T](name: String): js.Promise[T] = js.native
-  def ralP[T](name: String, options: js.Object): js.Promise[T] = js.native
 }
 

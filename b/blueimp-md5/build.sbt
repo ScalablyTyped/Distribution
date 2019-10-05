@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "blueimp-md5"
-version := "v2.7.0-dt-20190322Z-08a58a"
-scalaVersion := "2.12.9"
+version := "v2.7.0-dt-20190322Z-1aebdd"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -2,6 +2,7 @@ package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -282,8 +283,8 @@ object IgDialog {
   	 * Option for igDialog
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    animationEnded: AnimationEndedEvent = null,
-    blur: BlurEvent = null,
+    animationEnded: (/* event */ Event, /* ui */ AnimationEndedEventUIParam) => Unit = null,
+    blur: (/* event */ Event, /* ui */ BlurEventUIParam) => Unit = null,
     closeAnimation: js.Any = null,
     closeButtonTitle: String = null,
     closeOnEscape: js.UndefOr[Boolean] = js.undefined,
@@ -292,7 +293,7 @@ object IgDialog {
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableDblclick: js.Any = null,
     enableHeaderFocus: js.UndefOr[Boolean] = js.undefined,
-    focus: IgFocusEvent = null,
+    focus: (/* event */ Event, /* ui */ IgFocusEventUIParam) => Unit = null,
     footerText: String = null,
     headerText: String = null,
     height: Double | String = null,
@@ -322,8 +323,8 @@ object IgDialog {
     showMinimizeButton: js.UndefOr[Boolean] = js.undefined,
     showPinButton: js.UndefOr[Boolean] = js.undefined,
     state: String = null,
-    stateChanged: StateChangedEvent = null,
-    stateChanging: StateChangingEvent = null,
+    stateChanged: (/* event */ Event, /* ui */ StateChangedEventUIParam) => Unit = null,
+    stateChanging: (/* event */ Event, /* ui */ StateChangingEventUIParam) => Unit = null,
     tabIndex: Int | Double = null,
     temporaryUrl: String = null,
     trackFocus: js.UndefOr[Boolean] = js.undefined,
@@ -333,8 +334,8 @@ object IgDialog {
   ): IgDialog = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationEnded != null) __obj.updateDynamic("animationEnded")(animationEnded)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (animationEnded != null) __obj.updateDynamic("animationEnded")(js.Any.fromFunction2(animationEnded))
+    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))
     if (closeAnimation != null) __obj.updateDynamic("closeAnimation")(closeAnimation)
     if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle)
     if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
@@ -343,7 +344,7 @@ object IgDialog {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (enableDblclick != null) __obj.updateDynamic("enableDblclick")(enableDblclick)
     if (!js.isUndefined(enableHeaderFocus)) __obj.updateDynamic("enableHeaderFocus")(enableHeaderFocus)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (footerText != null) __obj.updateDynamic("footerText")(footerText)
     if (headerText != null) __obj.updateDynamic("headerText")(headerText)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -373,8 +374,8 @@ object IgDialog {
     if (!js.isUndefined(showMinimizeButton)) __obj.updateDynamic("showMinimizeButton")(showMinimizeButton)
     if (!js.isUndefined(showPinButton)) __obj.updateDynamic("showPinButton")(showPinButton)
     if (state != null) __obj.updateDynamic("state")(state)
-    if (stateChanged != null) __obj.updateDynamic("stateChanged")(stateChanged)
-    if (stateChanging != null) __obj.updateDynamic("stateChanging")(stateChanging)
+    if (stateChanged != null) __obj.updateDynamic("stateChanged")(js.Any.fromFunction2(stateChanged))
+    if (stateChanging != null) __obj.updateDynamic("stateChanging")(js.Any.fromFunction2(stateChanging))
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (temporaryUrl != null) __obj.updateDynamic("temporaryUrl")(temporaryUrl)
     if (!js.isUndefined(trackFocus)) __obj.updateDynamic("trackFocus")(trackFocus)

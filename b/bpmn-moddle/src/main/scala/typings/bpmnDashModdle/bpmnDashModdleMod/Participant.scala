@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
 - typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait Participant extends InteractionNode {
   /**
     * Attributes that aren't defined by the BPMN Spec such

@@ -1,11 +1,11 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.BrowserInfo
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.MessageSender
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.OnRestartRequiredReason
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.PlatformInfo
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.Port
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs.WebExtensionManifest
+import typings.firefoxDashWebextDashBrowser.browser._manifest.WebExtensionManifest
+import typings.firefoxDashWebextDashBrowser.browser.runtime.BrowserInfo
+import typings.firefoxDashWebextDashBrowser.browser.runtime.MessageSender
+import typings.firefoxDashWebextDashBrowser.browser.runtime.OnRestartRequiredReason
+import typings.firefoxDashWebextDashBrowser.browser.runtime.PlatformInfo
+import typings.firefoxDashWebextDashBrowser.browser.runtime.Port
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

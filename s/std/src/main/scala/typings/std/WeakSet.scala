@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,5 @@ trait WeakSet[T /* <: js.Object */] extends js.Object {
 
 @JSGlobal("WeakSet")
 @js.native
-class WeakSetCls[T /* <: js.Object */] () extends WeakSet[T] {
-  def this(iterable: Iterable[T]) = this()
-  def this(values: js.Array[T]) = this()
-}
+object WeakSet extends TopLevel[WeakSetConstructor]
 

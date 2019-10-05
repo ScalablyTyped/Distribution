@@ -23,6 +23,7 @@ import typings.relayDashCompiler.libCoreGraphQLIRMod.Stream
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Variable
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.NodeVisitorObject
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitFn
+import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +62,9 @@ object Anon_ArgumentClientExtension {
   @scala.inline
   def apply(
     Argument: NodeVisitorObject[Argument] = null,
-    ClientExtension: VisitFn[ClientExtension] = null,
+    ClientExtension: (ClientExtension, /* key */ js.UndefOr[js.Any], /* parent */ js.UndefOr[Null | VisitNode | js.Array[VisitNode]], /* path */ js.UndefOr[js.Array[js.Any]], /* ancestors */ js.UndefOr[js.Array[VisitNode | js.Array[VisitNode]]]) => // Note: ancestors includes arrays which contain the visited node
+  // These correspond to array indices in `path`.
+  js.Any = null,
     Condition: NodeVisitorObject[Condition] = null,
     ConnectionField: NodeVisitorObject[ConnectionField] = null,
     Defer: NodeVisitorObject[Defer] = null,
@@ -84,7 +87,7 @@ object Anon_ArgumentClientExtension {
   ): Anon_ArgumentClientExtension = {
     val __obj = js.Dynamic.literal()
     if (Argument != null) __obj.updateDynamic("Argument")(Argument.asInstanceOf[js.Any])
-    if (ClientExtension != null) __obj.updateDynamic("ClientExtension")(ClientExtension)
+    if (ClientExtension != null) __obj.updateDynamic("ClientExtension")(js.Any.fromFunction5(ClientExtension))
     if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
     if (ConnectionField != null) __obj.updateDynamic("ConnectionField")(ConnectionField.asInstanceOf[js.Any])
     if (Defer != null) __obj.updateDynamic("Defer")(Defer.asInstanceOf[js.Any])

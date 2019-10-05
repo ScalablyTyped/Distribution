@@ -30,16 +30,16 @@ trait DescribeNetworkAclsRequest extends js.Object {
 object DescribeNetworkAclsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeNetworkAclsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NetworkAclIds: ValueStringList = null,
     NextToken: String = null
   ): DescribeNetworkAclsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NetworkAclIds != null) __obj.updateDynamic("NetworkAclIds")(NetworkAclIds)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeNetworkAclsRequest]

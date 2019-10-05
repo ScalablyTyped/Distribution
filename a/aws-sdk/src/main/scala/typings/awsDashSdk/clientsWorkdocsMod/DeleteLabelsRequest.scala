@@ -28,7 +28,7 @@ object DeleteLabelsRequest {
   def apply(
     ResourceId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    DeleteAll: js.UndefOr[BooleanType] = js.undefined,
+    DeleteAll: js.UndefOr[Boolean] = js.undefined,
     Labels: SharedLabels = null
   ): DeleteLabelsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId)

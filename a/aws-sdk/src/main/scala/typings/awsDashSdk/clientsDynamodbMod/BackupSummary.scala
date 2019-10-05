@@ -54,7 +54,7 @@ object BackupSummary {
     BackupCreationDateTime: BackupCreationDateTime = null,
     BackupExpiryDateTime: _Date = null,
     BackupName: BackupName = null,
-    BackupSizeBytes: js.UndefOr[BackupSizeBytes] = js.undefined,
+    BackupSizeBytes: Int | scala.Double = null,
     BackupStatus: BackupStatus = null,
     BackupType: BackupType = null,
     TableArn: TableArn = null,
@@ -66,7 +66,7 @@ object BackupSummary {
     if (BackupCreationDateTime != null) __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime)
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime)
     if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName)
-    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes)
+    if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
     if (BackupStatus != null) __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
     if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)

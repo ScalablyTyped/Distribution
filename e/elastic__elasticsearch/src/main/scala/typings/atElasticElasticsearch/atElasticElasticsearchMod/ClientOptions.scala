@@ -14,6 +14,8 @@ import typings.atElasticElasticsearch.libConnectionMod.agentFn
 import typings.atElasticElasticsearch.libPoolMod.ApiKeyAuth
 import typings.atElasticElasticsearch.libPoolMod.BasicAuth
 import typings.atElasticElasticsearch.libSerializerMod.default
+import typings.atElasticElasticsearch.libTransportMod.TransportRequestOptions
+import typings.atElasticElasticsearch.libTransportMod.TransportRequestParams
 import typings.atElasticElasticsearch.libTransportMod.generateRequestIdFn
 import typings.atElasticElasticsearch.libTransportMod.nodeFilterFn
 import typings.atElasticElasticsearch.libTransportMod.nodeSelectorFn
@@ -61,12 +63,12 @@ object ClientOptions {
     auth: BasicAuth | ApiKeyAuth = null,
     cloud: Anon_Id = null,
     compression: gzip = null,
-    generateRequestId: generateRequestIdFn = null,
+    generateRequestId: (/* params */ TransportRequestParams, /* options */ TransportRequestOptions) => js.Any = null,
     headers: anyObject = null,
     maxRetries: Int | Double = null,
     name: String = null,
     node: String | (js.Array[NodeOptions | String]) | NodeOptions = null,
-    nodeFilter: nodeFilterFn = null,
+    nodeFilter: /* connection */ typings.atElasticElasticsearch.libConnectionMod.default => Boolean = null,
     nodeSelector: nodeSelectorFn | String = null,
     nodes: String | js.Array[String] = null,
     pingTimeout: Int | Double = null,
@@ -88,12 +90,12 @@ object ClientOptions {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (cloud != null) __obj.updateDynamic("cloud")(cloud)
     if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (generateRequestId != null) __obj.updateDynamic("generateRequestId")(generateRequestId)
+    if (generateRequestId != null) __obj.updateDynamic("generateRequestId")(js.Any.fromFunction2(generateRequestId))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (nodeFilter != null) __obj.updateDynamic("nodeFilter")(nodeFilter)
+    if (nodeFilter != null) __obj.updateDynamic("nodeFilter")(js.Any.fromFunction1(nodeFilter))
     if (nodeSelector != null) __obj.updateDynamic("nodeSelector")(nodeSelector.asInstanceOf[js.Any])
     if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])

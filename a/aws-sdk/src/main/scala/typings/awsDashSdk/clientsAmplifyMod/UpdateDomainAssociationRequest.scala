@@ -29,7 +29,7 @@ object UpdateDomainAssociationRequest {
     appId: AppId,
     domainName: DomainName,
     subDomainSettings: SubDomainSettings,
-    enableAutoSubDomain: js.UndefOr[EnableAutoSubDomain] = js.undefined
+    enableAutoSubDomain: js.UndefOr[Boolean] = js.undefined
   ): UpdateDomainAssociationRequest = {
     val __obj = js.Dynamic.literal(appId = appId, domainName = domainName, subDomainSettings = subDomainSettings)
     if (!js.isUndefined(enableAutoSubDomain)) __obj.updateDynamic("enableAutoSubDomain")(enableAutoSubDomain)

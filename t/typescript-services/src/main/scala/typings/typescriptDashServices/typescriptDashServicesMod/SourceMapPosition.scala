@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SourceMapPosition")
 @js.native
 class SourceMapPosition ()
-  extends typings.typescriptDashServices.TypeScriptNs.SourceMapPosition
+  extends typings.typescriptDashServices.TypeScript.SourceMapPosition
 

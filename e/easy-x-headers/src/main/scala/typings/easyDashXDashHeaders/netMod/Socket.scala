@@ -46,12 +46,6 @@ trait Socket extends Duplex {
 
 @JSImport("net", "Socket")
 @js.native
-class SocketCls () extends Socket {
-  def this(options: Anon_AllowHalfOpen) = this()
-}
-
-@JSImport("net", "Socket")
-@js.native
 object Socket
   extends Instantiable0[Socket]
      with Instantiable1[/* options */ Anon_AllowHalfOpen, Socket]

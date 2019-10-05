@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/coreutils/lib/uuid", JSImport.Namespace)
 @js.native
 object libUuidMod extends js.Object {
-  @JSName("UUID")
   @js.native
-  object UUIDNs extends js.Object {
+  object UUID extends js.Object {
     /**
       * A function which generates UUID v4 identifiers.
       *

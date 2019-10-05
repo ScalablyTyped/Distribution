@@ -2,8 +2,8 @@ package typings.consul.consulMod
 
 import typings.consul.Fn_CallbackOptsLeaderOptions
 import typings.consul.Fn_CallbackOptsPeersOptions
-import typings.consul.consulMod.StatusNs.LeaderOptions
-import typings.consul.consulMod.StatusNs.PeersOptions
+import typings.consul.consulMod.Status.LeaderOptions
+import typings.consul.consulMod.Status.PeersOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,5 +47,12 @@ trait Status extends js.Object {
     * Returns the current Raft peer set
     */
   def peers[TData](opts: PeersOptions, callback: Callback[TData]): Unit = js.native
+}
+
+@JSImport("consul", "Status")
+@js.native
+object Status extends js.Object {
+  type LeaderOptions = CommonOptions
+  type PeersOptions = CommonOptions
 }
 

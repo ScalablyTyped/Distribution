@@ -21,7 +21,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.square
 import typings.atOracleOraclejet.atOracleOraclejetStrings.star
 import typings.atOracleOraclejet.atOracleOraclejetStrings.triangle
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojgaugeMod.ojLedGaugeNs.Threshold
+import typings.atOracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

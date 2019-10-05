@@ -26,16 +26,16 @@ trait HostProperties extends js.Object {
 object HostProperties {
   @scala.inline
   def apply(
-    Cores: js.UndefOr[Integer] = js.undefined,
+    Cores: Int | scala.Double = null,
     InstanceType: String = null,
-    Sockets: js.UndefOr[Integer] = js.undefined,
-    TotalVCpus: js.UndefOr[Integer] = js.undefined
+    Sockets: Int | scala.Double = null,
+    TotalVCpus: Int | scala.Double = null
   ): HostProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Cores)) __obj.updateDynamic("Cores")(Cores)
+    if (Cores != null) __obj.updateDynamic("Cores")(Cores.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
-    if (!js.isUndefined(Sockets)) __obj.updateDynamic("Sockets")(Sockets)
-    if (!js.isUndefined(TotalVCpus)) __obj.updateDynamic("TotalVCpus")(TotalVCpus)
+    if (Sockets != null) __obj.updateDynamic("Sockets")(Sockets.asInstanceOf[js.Any])
+    if (TotalVCpus != null) __obj.updateDynamic("TotalVCpus")(TotalVCpus.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostProperties]
   }
 }

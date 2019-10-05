@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "sanitize-filename"
-version := "1.6.3-507b93"
-scalaVersion := "2.12.9"
+version := "1.6.3-1c8990"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -48,10 +48,10 @@ object CreateApplicationVersionMessage {
   def apply(
     ApplicationName: ApplicationName,
     VersionLabel: VersionLabel,
-    AutoCreateApplication: js.UndefOr[AutoCreateApplication] = js.undefined,
+    AutoCreateApplication: js.UndefOr[Boolean] = js.undefined,
     BuildConfiguration: BuildConfiguration = null,
     Description: Description = null,
-    Process: js.UndefOr[ApplicationVersionProccess] = js.undefined,
+    Process: js.UndefOr[Boolean] = js.undefined,
     SourceBuildInformation: SourceBuildInformation = null,
     SourceBundle: S3Location = null,
     Tags: Tags = null

@@ -1,7 +1,7 @@
 package typings.webpackDashHotDashClient.webpackDashHotDashClientMod
 
 import typings.node.netMod.Server
-import typings.webpack.webpackMod.OptionsNs.Stats
+import typings.webpack.webpackMod.Options.Stats
 import typings.webpackDashHotDashClient.webpackDashHotDashClientStrings.debug
 import typings.webpackDashHotDashClient.webpackDashHotDashClientStrings.error
 import typings.webpackDashHotDashClient.webpackDashHotDashClientStrings.info

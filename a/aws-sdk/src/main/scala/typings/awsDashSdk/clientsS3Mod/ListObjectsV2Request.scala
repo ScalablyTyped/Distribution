@@ -50,8 +50,8 @@ object ListObjectsV2Request {
     ContinuationToken: Token = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    FetchOwner: js.UndefOr[FetchOwner] = js.undefined,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
+    FetchOwner: js.UndefOr[Boolean] = js.undefined,
+    MaxKeys: Int | Double = null,
     Prefix: Prefix = null,
     RequestPayer: RequestPayer = null,
     StartAfter: StartAfter = null
@@ -61,7 +61,7 @@ object ListObjectsV2Request {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (!js.isUndefined(FetchOwner)) __obj.updateDynamic("FetchOwner")(FetchOwner)
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys)
+    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (StartAfter != null) __obj.updateDynamic("StartAfter")(StartAfter)

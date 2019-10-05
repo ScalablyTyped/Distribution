@@ -34,3 +34,10 @@ object UnionTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "unionTypeAnnotation")
+@js.native
+object unionTypeAnnotation extends js.Object {
+  def apply(): UnionTypeAnnotation = js.native
+  def apply(types: js.Array[FlowTypeAnnotation]): UnionTypeAnnotation = js.native
+}
+

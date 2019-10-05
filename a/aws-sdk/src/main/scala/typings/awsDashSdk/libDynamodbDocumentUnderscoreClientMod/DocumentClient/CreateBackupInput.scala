@@ -1,0 +1,26 @@
+package typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreateBackupInput extends js.Object {
+  /**
+    * Specified name for the backup.
+    */
+  var BackupName: typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient.BackupName
+  /**
+    * The name of the table.
+    */
+  var TableName: typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient.TableName
+}
+
+object CreateBackupInput {
+  @scala.inline
+  def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
+    val __obj = js.Dynamic.literal(BackupName = BackupName, TableName = TableName)
+  
+    __obj.asInstanceOf[CreateBackupInput]
+  }
+}
+

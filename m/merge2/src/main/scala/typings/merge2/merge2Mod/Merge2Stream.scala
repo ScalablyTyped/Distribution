@@ -1,7 +1,7 @@
 package typings.merge2.merge2Mod
 
 import typings.merge2.merge2Strings.queueDrain
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

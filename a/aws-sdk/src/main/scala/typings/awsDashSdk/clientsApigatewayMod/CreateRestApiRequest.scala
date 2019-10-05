@@ -56,7 +56,7 @@ object CreateRestApiRequest {
     cloneFrom: String = null,
     description: String = null,
     endpointConfiguration: EndpointConfiguration = null,
-    minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined,
+    minimumCompressionSize: Int | scala.Double = null,
     policy: String = null,
     tags: MapOfStringToString = null,
     version: String = null
@@ -67,7 +67,7 @@ object CreateRestApiRequest {
     if (cloneFrom != null) __obj.updateDynamic("cloneFrom")(cloneFrom)
     if (description != null) __obj.updateDynamic("description")(description)
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration)
-    if (!js.isUndefined(minimumCompressionSize)) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize)
+    if (minimumCompressionSize != null) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (version != null) __obj.updateDynamic("version")(version)

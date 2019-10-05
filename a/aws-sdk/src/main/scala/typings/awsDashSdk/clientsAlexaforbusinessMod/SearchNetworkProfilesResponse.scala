@@ -24,12 +24,12 @@ object SearchNetworkProfilesResponse {
   def apply(
     NetworkProfiles: NetworkProfileDataList = null,
     NextToken: NextToken = null,
-    TotalCount: js.UndefOr[TotalCount] = js.undefined
+    TotalCount: Int | Double = null
   ): SearchNetworkProfilesResponse = {
     val __obj = js.Dynamic.literal()
     if (NetworkProfiles != null) __obj.updateDynamic("NetworkProfiles")(NetworkProfiles)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount)
+    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchNetworkProfilesResponse]
   }
 }

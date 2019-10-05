@@ -23,7 +23,7 @@ object DescribeExpressionsRequest {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    Deployed: js.UndefOr[Boolean] = js.undefined,
+    Deployed: js.UndefOr[scala.Boolean] = js.undefined,
     ExpressionNames: StandardNameList = null
   ): DescribeExpressionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)

@@ -20,7 +20,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.mongodb.mongodbMod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary- typings.mongodb.mongodbMod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
+- typings.mongodb.mongodbMod.HighAvailabilityOptions because var conflicts: domainsEnabled, haInterval, readPreference. Inlined ha, readPreferenceTags
+- typings.mongodb.mongodbMod.SSLOptions because Already inherited
+- typings.mongodb.mongodbMod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary
+- typings.mongodb.mongodbMod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
   extends DbCreateOptions
      with ServerOptions
      with SocketOptions {
@@ -44,6 +47,10 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
   /**
+    * Default: true; Turn on high availability monitoring.
+    */
+  var ha: js.UndefOr[Boolean] = js.undefined
+  /**
     * Custom logger object
     */
   var logger: js.UndefOr[js.Object | log] = js.undefined
@@ -60,6 +67,8 @@ import scala.scalajs.js.annotation._
     * Default: 5
     */
   var numberOfRetries: js.UndefOr[scala.Double] = js.undefined
+  /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
+  var readPreferenceTags: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * The name of the replicaset to connect to.
     */

@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofReactTestUtils extends js.Object {
-  val SimulateNs: TypeofSimulate = js.native
+  val Simulate: TypeofSimulate = js.native
   def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = js.native
   @JSName("act")
   def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[js.UndefOr[scala.Nothing]] = js.native

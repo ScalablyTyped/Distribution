@@ -79,7 +79,7 @@ object Stage {
   @scala.inline
   def apply(
     accessLogSettings: AccessLogSettings = null,
-    cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined,
+    cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     cacheClusterSize: CacheClusterSize = null,
     cacheClusterStatus: CacheClusterStatus = null,
     canarySettings: CanarySettings = null,
@@ -92,7 +92,7 @@ object Stage {
     methodSettings: MapOfMethodSettings = null,
     stageName: String = null,
     tags: MapOfStringToString = null,
-    tracingEnabled: js.UndefOr[Boolean] = js.undefined,
+    tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     variables: MapOfStringToString = null,
     webAclArn: String = null
   ): Stage = {

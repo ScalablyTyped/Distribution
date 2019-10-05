@@ -1,5 +1,6 @@
 package typings.jpm.sdkPageDashModMod
 
+import typings.jpm.Anon_AttachTo
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +11,9 @@ trait PageMod extends js.Object {
   def destroy(): Unit
 }
 
-object PageMod {
-  @scala.inline
-  def apply(destroy: () => Unit, include: String | (js.Array[RegExp | String]) | RegExp): PageMod = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), include = include.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[PageMod]
-  }
+@JSImport("sdk/page-mod", "PageMod")
+@js.native
+object PageMod extends js.Object {
+  def apply(options: Anon_AttachTo): PageMod = js.native
 }
 

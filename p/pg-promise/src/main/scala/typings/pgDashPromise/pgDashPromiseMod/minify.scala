@@ -6,10 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Extracted nested Instantiables into classes in minifyNs */
 @JSImport("pg-promise", "minify")
 @js.native
 object minify extends js.Object {
+  @js.native
+  class SQLParsingError ()
+    extends typings.pgDashMinify.pgDashMinifyMod.SQLParsingError
+  
   var SQLParsingError: Instantiable0[typings.pgDashMinify.pgDashMinifyMod.SQLParsingError] = js.native
   def apply(sql: String): String = js.native
   def apply(sql: String, options: IMinifyOptions): String = js.native

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2VpnConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.VpnConnectionRoute
-import typings.atPulumiAws.typesInputMod.ec2Ns.VpnConnectionVgwTelemetry
+import typings.atPulumiAws.typesInputMod.ec2.VpnConnectionRoute
+import typings.atPulumiAws.typesInputMod.ec2.VpnConnectionVgwTelemetry
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.n3.n3Mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +12,8 @@ class Writer[Q /* <: typings.rdfDashJs.rdfDashJsMod.BaseQuad */] () extends N3Wr
   def this(options: WriterOptions) = this()
   def this(fd: js.Any, options: WriterOptions) = this()
 }
+
+@JSImport("n3", "Writer")
+@js.native
+object Writer extends TopLevel[WriterConstructor]
 

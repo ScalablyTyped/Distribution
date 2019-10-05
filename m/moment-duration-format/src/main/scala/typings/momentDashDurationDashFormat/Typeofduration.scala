@@ -5,16 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Typeofduration extends js.Object {
-  val fn: Duration
-}
-
-object Typeofduration {
-  @scala.inline
-  def apply(fn: Duration): Typeofduration = {
-    val __obj = js.Dynamic.literal(fn = fn)
-  
-    __obj.asInstanceOf[Typeofduration]
-  }
+  val fn: Duration = js.native
+  def apply(): typings.moment.momentMod.Duration = js.native
 }
 

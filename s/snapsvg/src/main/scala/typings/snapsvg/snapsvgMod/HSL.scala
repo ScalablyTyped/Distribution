@@ -19,3 +19,9 @@ object HSL {
   }
 }
 
+@JSImport("snapsvg", "hsl")
+@js.native
+object hsl extends js.Object {
+  def apply(h: Double, s: Double, l: Double): HSL = js.native
+}
+

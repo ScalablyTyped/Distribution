@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "TransformBase")
 @js.native
 class TransformBase ()
-  extends typings.pixiDotJs.PIXINs.TransformBase
+  extends typings.pixiDotJs.PIXI.TransformBase
 
 /* static members */
 @JSImport("pixi.js", "TransformBase")
 @js.native
 object TransformBase extends js.Object {
-  var IDENTITY: typings.pixiDotJs.PIXINs.TransformBase = js.native
+  var IDENTITY: typings.pixiDotJs.PIXI.TransformBase = js.native
 }
 

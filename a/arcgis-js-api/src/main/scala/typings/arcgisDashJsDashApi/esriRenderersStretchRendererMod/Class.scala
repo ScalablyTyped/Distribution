@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersStretchRendererMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StretchRenderer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StretchRendererProperties
+import typings.arcgisDashJsDashApi.__esri.StretchRenderer
+import typings.arcgisDashJsDashApi.__esri.StretchRendererProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

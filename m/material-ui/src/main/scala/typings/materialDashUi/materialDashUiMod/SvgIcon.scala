@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "SvgIcon")
 @js.native
 class SvgIcon ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.SvgIcon
+  extends typings.materialDashUi.__MaterialUI.SvgIcon
 

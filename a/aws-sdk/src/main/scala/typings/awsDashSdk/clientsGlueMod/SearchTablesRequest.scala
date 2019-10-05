@@ -36,7 +36,7 @@ object SearchTablesRequest {
   def apply(
     CatalogId: CatalogIdString = null,
     Filters: SearchPropertyPredicates = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: Token = null,
     SearchText: ValueString = null,
     SortCriteria: SortCriteria = null
@@ -44,7 +44,7 @@ object SearchTablesRequest {
     val __obj = js.Dynamic.literal()
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SearchText != null) __obj.updateDynamic("SearchText")(SearchText)
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria)

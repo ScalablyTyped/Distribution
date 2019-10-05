@@ -1,7 +1,7 @@
 package typings.atPulumiAws.rdsClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.rdsNs.ClusterParameterGroupParameter
+import typings.atPulumiAws.typesOutputMod.rds.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

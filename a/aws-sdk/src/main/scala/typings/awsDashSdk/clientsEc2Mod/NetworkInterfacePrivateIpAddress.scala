@@ -27,7 +27,7 @@ object NetworkInterfacePrivateIpAddress {
   @scala.inline
   def apply(
     Association: NetworkInterfaceAssociation = null,
-    Primary: js.UndefOr[Boolean] = js.undefined,
+    Primary: js.UndefOr[scala.Boolean] = js.undefined,
     PrivateDnsName: String = null,
     PrivateIpAddress: String = null
   ): NetworkInterfacePrivateIpAddress = {

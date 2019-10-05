@@ -1,6 +1,6 @@
 package typings.atJupyterlabCsvviewer.libToolbarMod
 
-import typings.atJupyterlabCsvviewer.libToolbarMod.CSVToolbarNs.IOptions
+import typings.atJupyterlabCsvviewer.libToolbarMod.CSVToolbar.IOptions
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import typings.std.Event

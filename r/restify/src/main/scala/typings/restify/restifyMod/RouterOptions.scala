@@ -1,12 +1,13 @@
 package typings.restify.restifyMod
 
+import typings.bunyan.bunyanMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RouterOptions extends js.Object {
   var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
-  var log: js.UndefOr[typings.bunyan.bunyanMod.^] = js.undefined
+  var log: js.UndefOr[^] = js.undefined
   var onceNext: js.UndefOr[Boolean] = js.undefined
   var registry: js.UndefOr[RouterRegistryRadix] = js.undefined
   var strictNext: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +17,7 @@ object RouterOptions {
   @scala.inline
   def apply(
     ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
-    log: typings.bunyan.bunyanMod.^ = null,
+    log: ^ = null,
     onceNext: js.UndefOr[Boolean] = js.undefined,
     registry: RouterRegistryRadix = null,
     strictNext: js.UndefOr[Boolean] = js.undefined

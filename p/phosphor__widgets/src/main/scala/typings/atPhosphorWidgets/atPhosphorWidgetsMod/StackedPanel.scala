@@ -1,6 +1,6 @@
 package typings.atPhosphorWidgets.atPhosphorWidgetsMod
 
-import typings.atPhosphorWidgets.libStackedpanelMod.StackedPanelNs.IOptions
+import typings.atPhosphorWidgets.libStackedpanelMod.StackedPanel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

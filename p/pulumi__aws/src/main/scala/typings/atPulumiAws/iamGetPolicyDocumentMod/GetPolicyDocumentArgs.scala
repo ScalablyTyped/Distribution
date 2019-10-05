@@ -1,6 +1,6 @@
 package typings.atPulumiAws.iamGetPolicyDocumentMod
 
-import typings.atPulumiAws.typesInputMod.iamNs.GetPolicyDocumentStatement
+import typings.atPulumiAws.typesInputMod.iam.GetPolicyDocumentStatement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

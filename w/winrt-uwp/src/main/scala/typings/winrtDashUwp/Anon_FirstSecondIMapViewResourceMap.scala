@@ -1,7 +1,7 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceMap
-import typings.winrtDashUwp.WindowsNs.FoundationNs.CollectionsNs.IMapView
+import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Core.ResourceMap
+import typings.winrtDashUwp.Windows.Foundation.Collections.IMapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

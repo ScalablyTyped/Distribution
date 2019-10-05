@@ -29,20 +29,19 @@ trait FoldingRange extends js.Object {
   var startLine: Double
 }
 
-object FoldingRange {
-  @scala.inline
-  def apply(
-    endLine: Double,
-    startLine: Double,
-    endCharacter: Int | Double = null,
-    kind: String = null,
-    startCharacter: Int | Double = null
-  ): FoldingRange = {
-    val __obj = js.Dynamic.literal(endLine = endLine, startLine = startLine)
-    if (endCharacter != null) __obj.updateDynamic("endCharacter")(endCharacter.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (startCharacter != null) __obj.updateDynamic("startCharacter")(startCharacter.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FoldingRange]
-  }
+@JSImport("vscode-languageserver-types", "FoldingRange")
+@js.native
+object FoldingRange extends js.Object {
+  /**
+    * Creates a new FoldingRange literal.
+    */
+  def create(startLine: Double, endLine: Double): FoldingRange = js.native
+  def create(startLine: Double, endLine: Double, startCharacter: Double): FoldingRange = js.native
+  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): FoldingRange = js.native
+  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): FoldingRange = js.native
+  /**
+    * Checks whether the given literal conforms to the [FoldingRange](#FoldingRange) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = js.native
 }
 

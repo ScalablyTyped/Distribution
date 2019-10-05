@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/extras/ImageUtils", JSImport.Namespace)
 @js.native
 object srcExtrasImageUtilsMod extends js.Object {
-  @JSName("ImageUtils")
   @js.native
-  object ImageUtilsNs extends js.Object {
+  object ImageUtils extends js.Object {
     var crossOrigin: String = js.native
     def loadTexture(url: String): Texture = js.native
     def loadTexture(url: String, mapping: Mapping): Texture = js.native

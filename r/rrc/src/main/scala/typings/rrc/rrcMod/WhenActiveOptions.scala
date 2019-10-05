@@ -19,7 +19,7 @@ object WhenActiveOptions {
   def apply(
     className: String = null,
     exact: js.UndefOr[Boolean] = js.undefined,
-    isActive: IsActiveCallback = null,
+    isActive: () => Boolean = null,
     pathProp: String = null,
     strict: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
@@ -27,7 +27,7 @@ object WhenActiveOptions {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (isActive != null) __obj.updateDynamic("isActive")(isActive)
+    if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction0(isActive))
     if (pathProp != null) __obj.updateDynamic("pathProp")(pathProp)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (style != null) __obj.updateDynamic("style")(style)

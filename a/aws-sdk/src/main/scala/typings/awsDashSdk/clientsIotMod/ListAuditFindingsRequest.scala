@@ -40,7 +40,7 @@ object ListAuditFindingsRequest {
   def apply(
     checkName: AuditCheckName = null,
     endTime: Timestamp = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     resourceIdentifier: ResourceIdentifier = null,
     startTime: Timestamp = null,
@@ -49,7 +49,7 @@ object ListAuditFindingsRequest {
     val __obj = js.Dynamic.literal()
     if (checkName != null) __obj.updateDynamic("checkName")(checkName)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)

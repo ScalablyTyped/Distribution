@@ -16,3 +16,9 @@ class DropWhile[TResult, TInput] protected () extends Transformer[TResult, TInpu
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "dropWhile")
+@js.native
+object dropWhile extends js.Object {
+  def apply[TInput](pred: js.Function1[/* input */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+}
+

@@ -17,10 +17,10 @@ trait BlueInstanceTerminationOption extends js.Object {
 
 object BlueInstanceTerminationOption {
   @scala.inline
-  def apply(action: InstanceAction = null, terminationWaitTimeInMinutes: js.UndefOr[Duration] = js.undefined): BlueInstanceTerminationOption = {
+  def apply(action: InstanceAction = null, terminationWaitTimeInMinutes: Int | Double = null): BlueInstanceTerminationOption = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminationWaitTimeInMinutes)) __obj.updateDynamic("terminationWaitTimeInMinutes")(terminationWaitTimeInMinutes)
+    if (terminationWaitTimeInMinutes != null) __obj.updateDynamic("terminationWaitTimeInMinutes")(terminationWaitTimeInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlueInstanceTerminationOption]
   }
 }

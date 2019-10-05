@@ -17,7 +17,7 @@ object DecayProps {
   @scala.inline
   def apply(
     from: Int | Double = null,
-    modifyTarget: ModifyTarget = null,
+    modifyTarget: /* v */ Double => Double = null,
     power: Int | Double = null,
     restDelta: Int | Double = null,
     timeConstant: Int | Double = null,
@@ -25,7 +25,7 @@ object DecayProps {
   ): DecayProps = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (modifyTarget != null) __obj.updateDynamic("modifyTarget")(modifyTarget)
+    if (modifyTarget != null) __obj.updateDynamic("modifyTarget")(js.Any.fromFunction1(modifyTarget))
     if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
     if (restDelta != null) __obj.updateDynamic("restDelta")(restDelta.asInstanceOf[js.Any])
     if (timeConstant != null) __obj.updateDynamic("timeConstant")(timeConstant.asInstanceOf[js.Any])

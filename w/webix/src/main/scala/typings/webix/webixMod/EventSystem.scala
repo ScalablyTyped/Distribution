@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,4 +16,8 @@ trait EventSystem extends js.Object {
   def mapEvent(map: js.Any): Unit = js.native
   def unblockEvent(): Unit = js.native
 }
+
+@JSImport("webix", "EventSystem")
+@js.native
+object EventSystem extends TopLevel[EventSystem]
 

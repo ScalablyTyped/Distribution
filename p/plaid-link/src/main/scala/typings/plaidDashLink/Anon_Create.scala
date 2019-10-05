@@ -1,7 +1,7 @@
 package typings.plaidDashLink
 
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.CreateConfig
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.LinkHandler
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.CreateConfig
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.LinkHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

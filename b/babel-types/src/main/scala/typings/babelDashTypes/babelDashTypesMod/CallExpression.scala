@@ -35,3 +35,11 @@ object CallExpression {
   }
 }
 
+@JSImport("babel-types", "callExpression")
+@js.native
+object callExpression extends js.Object {
+  def apply(): CallExpression = js.native
+  def apply(callee: Expression): CallExpression = js.native
+  def apply(callee: Expression, _arguments: js.Array[Expression | SpreadElement]): CallExpression = js.native
+}
+

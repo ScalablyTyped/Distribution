@@ -36,15 +36,15 @@ object DescribeSpotFleetRequestHistoryRequest {
   def apply(
     SpotFleetRequestId: String,
     StartTime: DateTime,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EventType: EventType = null,
-    MaxResults: js.UndefOr[DescribeSpotFleetRequestHistoryMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeSpotFleetRequestHistoryRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId, StartTime = StartTime)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryRequest]
   }

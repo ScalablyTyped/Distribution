@@ -17,11 +17,11 @@ object CommonFieldInputProps {
   @scala.inline
   def apply(
     name: String,
-    onDragStart: EventHandler[DragEvent[_]],
-    onDrop: EventHandler[DragEvent[_]],
-    onFocus: EventHandler[FocusEvent[_]]
+    onDragStart: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
+    onDrop: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
+    onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit
   ): CommonFieldInputProps = {
-    val __obj = js.Dynamic.literal(name = name, onDragStart = onDragStart, onDrop = onDrop, onFocus = onFocus)
+    val __obj = js.Dynamic.literal(name = name, onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
   
     __obj.asInstanceOf[CommonFieldInputProps]
   }

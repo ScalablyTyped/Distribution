@@ -1,6 +1,6 @@
 package typings.firebaseDashAdmin
 
-import typings.firebaseDashAdmin.adminNs.databaseNs.DataSnapshot
+import typings.firebaseDashAdmin.admin.database.DataSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

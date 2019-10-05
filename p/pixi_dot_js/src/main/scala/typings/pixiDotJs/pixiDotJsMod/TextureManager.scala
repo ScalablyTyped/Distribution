@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "TextureManager")
 @js.native
 class TextureManager protected ()
-  extends typings.pixiDotJs.PIXINs.TextureManager {
-  def this(renderer: typings.pixiDotJs.PIXINs.WebGLRenderer) = this()
+  extends typings.pixiDotJs.PIXI.TextureManager {
+  def this(renderer: typings.pixiDotJs.PIXI.WebGLRenderer) = this()
 }
 

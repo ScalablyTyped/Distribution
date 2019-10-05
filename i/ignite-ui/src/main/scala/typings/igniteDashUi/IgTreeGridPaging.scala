@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -292,8 +293,8 @@ object IgTreeGridPaging {
     breadcrumbKey: String = null,
     contextRowLoadingText: String = null,
     contextRowMode: String = null,
-    contextRowRendered: ContextRowRenderedEvent = null,
-    contextRowRendering: ContextRowRenderingEvent = null,
+    contextRowRendered: (/* event */ Event, /* ui */ ContextRowRenderedEventUIParam) => Unit = null,
+    contextRowRendering: (/* event */ Event, /* ui */ ContextRowRenderingEventUIParam) => Unit = null,
     contextRowRootText: String = null,
     currentPageDropDownLeadingLabel: String = null,
     currentPageDropDownTooltip: String = null,
@@ -311,12 +312,12 @@ object IgTreeGridPaging {
     nextPageLabelText: String = null,
     nextPageTooltip: String = null,
     pageCountLimit: Int | Double = null,
-    pageIndexChanged: PageIndexChangedEvent = null,
-    pageIndexChanging: PageIndexChangingEvent = null,
+    pageIndexChanged: (/* event */ Event, /* ui */ PageIndexChangedEventUIParam) => Unit = null,
+    pageIndexChanging: (/* event */ Event, /* ui */ PageIndexChangingEventUIParam) => Unit = null,
     pageIndexUrlKey: String = null,
     pageSize: Int | Double = null,
-    pageSizeChanged: PageSizeChangedEvent = null,
-    pageSizeChanging: PageSizeChangingEvent = null,
+    pageSizeChanged: (/* event */ Event, /* ui */ PageSizeChangedEventUIParam) => Unit = null,
+    pageSizeChanging: (/* event */ Event, /* ui */ PageSizeChangingEventUIParam) => Unit = null,
     pageSizeDropDownLabel: String = null,
     pageSizeDropDownLocation: String = null,
     pageSizeDropDownTooltip: String = null,
@@ -326,8 +327,8 @@ object IgTreeGridPaging {
     pageTooltipFormat: String = null,
     pagerRecordsLabelTemplate: String = null,
     pagerRecordsLabelTooltip: String = null,
-    pagerRendered: PagerRenderedEvent = null,
-    pagerRendering: PagerRenderingEvent = null,
+    pagerRendered: (/* event */ Event, /* ui */ PagerRenderedEventUIParam) => Unit = null,
+    pagerRendering: (/* event */ Event, /* ui */ PagerRenderingEventUIParam) => Unit = null,
     persist: js.UndefOr[Boolean] = js.undefined,
     prevPageLabelText: String = null,
     prevPageTooltip: String = null,
@@ -346,8 +347,8 @@ object IgTreeGridPaging {
     if (breadcrumbKey != null) __obj.updateDynamic("breadcrumbKey")(breadcrumbKey)
     if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText)
     if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
-    if (contextRowRendered != null) __obj.updateDynamic("contextRowRendered")(contextRowRendered)
-    if (contextRowRendering != null) __obj.updateDynamic("contextRowRendering")(contextRowRendering)
+    if (contextRowRendered != null) __obj.updateDynamic("contextRowRendered")(js.Any.fromFunction2(contextRowRendered))
+    if (contextRowRendering != null) __obj.updateDynamic("contextRowRendering")(js.Any.fromFunction2(contextRowRendering))
     if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText)
     if (currentPageDropDownLeadingLabel != null) __obj.updateDynamic("currentPageDropDownLeadingLabel")(currentPageDropDownLeadingLabel)
     if (currentPageDropDownTooltip != null) __obj.updateDynamic("currentPageDropDownTooltip")(currentPageDropDownTooltip)
@@ -365,12 +366,12 @@ object IgTreeGridPaging {
     if (nextPageLabelText != null) __obj.updateDynamic("nextPageLabelText")(nextPageLabelText)
     if (nextPageTooltip != null) __obj.updateDynamic("nextPageTooltip")(nextPageTooltip)
     if (pageCountLimit != null) __obj.updateDynamic("pageCountLimit")(pageCountLimit.asInstanceOf[js.Any])
-    if (pageIndexChanged != null) __obj.updateDynamic("pageIndexChanged")(pageIndexChanged)
-    if (pageIndexChanging != null) __obj.updateDynamic("pageIndexChanging")(pageIndexChanging)
+    if (pageIndexChanged != null) __obj.updateDynamic("pageIndexChanged")(js.Any.fromFunction2(pageIndexChanged))
+    if (pageIndexChanging != null) __obj.updateDynamic("pageIndexChanging")(js.Any.fromFunction2(pageIndexChanging))
     if (pageIndexUrlKey != null) __obj.updateDynamic("pageIndexUrlKey")(pageIndexUrlKey)
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizeChanged != null) __obj.updateDynamic("pageSizeChanged")(pageSizeChanged)
-    if (pageSizeChanging != null) __obj.updateDynamic("pageSizeChanging")(pageSizeChanging)
+    if (pageSizeChanged != null) __obj.updateDynamic("pageSizeChanged")(js.Any.fromFunction2(pageSizeChanged))
+    if (pageSizeChanging != null) __obj.updateDynamic("pageSizeChanging")(js.Any.fromFunction2(pageSizeChanging))
     if (pageSizeDropDownLabel != null) __obj.updateDynamic("pageSizeDropDownLabel")(pageSizeDropDownLabel)
     if (pageSizeDropDownLocation != null) __obj.updateDynamic("pageSizeDropDownLocation")(pageSizeDropDownLocation)
     if (pageSizeDropDownTooltip != null) __obj.updateDynamic("pageSizeDropDownTooltip")(pageSizeDropDownTooltip)
@@ -380,8 +381,8 @@ object IgTreeGridPaging {
     if (pageTooltipFormat != null) __obj.updateDynamic("pageTooltipFormat")(pageTooltipFormat)
     if (pagerRecordsLabelTemplate != null) __obj.updateDynamic("pagerRecordsLabelTemplate")(pagerRecordsLabelTemplate)
     if (pagerRecordsLabelTooltip != null) __obj.updateDynamic("pagerRecordsLabelTooltip")(pagerRecordsLabelTooltip)
-    if (pagerRendered != null) __obj.updateDynamic("pagerRendered")(pagerRendered)
-    if (pagerRendering != null) __obj.updateDynamic("pagerRendering")(pagerRendering)
+    if (pagerRendered != null) __obj.updateDynamic("pagerRendered")(js.Any.fromFunction2(pagerRendered))
+    if (pagerRendering != null) __obj.updateDynamic("pagerRendering")(js.Any.fromFunction2(pagerRendering))
     if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
     if (prevPageLabelText != null) __obj.updateDynamic("prevPageLabelText")(prevPageLabelText)
     if (prevPageTooltip != null) __obj.updateDynamic("prevPageTooltip")(prevPageTooltip)

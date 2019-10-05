@@ -24,7 +24,7 @@ object CancelSpotFleetRequestsRequest {
   def apply(
     SpotFleetRequestIds: ValueStringList,
     TerminateInstances: Boolean,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CancelSpotFleetRequestsRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestIds = SpotFleetRequestIds, TerminateInstances = TerminateInstances)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

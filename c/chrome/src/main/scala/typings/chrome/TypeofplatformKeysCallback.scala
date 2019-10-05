@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.platformKeysNs.ClientCertificateSelectDetails
-import typings.chrome.chromeNs.platformKeysNs.Match
-import typings.chrome.chromeNs.platformKeysNs.ServerCertificateVerificationDetails
-import typings.chrome.chromeNs.platformKeysNs.ServerCertificateVerificationResult
+import typings.chrome.chrome.platformKeys.ClientCertificateSelectDetails
+import typings.chrome.chrome.platformKeys.Match
+import typings.chrome.chrome.platformKeys.ServerCertificateVerificationDetails
+import typings.chrome.chrome.platformKeys.ServerCertificateVerificationResult
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto

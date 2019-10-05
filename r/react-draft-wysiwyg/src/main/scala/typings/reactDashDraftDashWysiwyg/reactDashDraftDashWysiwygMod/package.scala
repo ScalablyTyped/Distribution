@@ -8,7 +8,7 @@ package object reactDashDraftDashWysiwygMod {
   import typings.react.Event
   import typings.react.reactMod.KeyboardEvent
 
-  type RawDraftContentState = typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.EncodingNs.RawDraftContentState
+  type RawDraftContentState = typings.draftDashJs.draftDashJsMod.Draft.Model.Encoding.RawDraftContentState
   type SyntheticEvent = typings.react.reactMod.SyntheticEvent[js.Object, Event]
   type SyntheticKeyboardEvent = KeyboardEvent[js.Object]
 }

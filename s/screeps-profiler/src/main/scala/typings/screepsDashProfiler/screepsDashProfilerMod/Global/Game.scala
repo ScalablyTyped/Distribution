@@ -1,5 +1,6 @@
 package typings.screepsDashProfiler.screepsDashProfilerMod.Global
 
+import org.scalablytyped.runtime.TopLevel
 import typings.screepsDashProfiler.screepsDashProfilerMod.ScreepsGameProfiler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,12 +14,7 @@ trait Game extends js.Object {
   var profiler: ScreepsGameProfiler
 }
 
-object Game {
-  @scala.inline
-  def apply(profiler: ScreepsGameProfiler): Game = {
-    val __obj = js.Dynamic.literal(profiler = profiler)
-  
-    __obj.asInstanceOf[Game]
-  }
-}
+@JSGlobal("Game")
+@js.native
+object Game extends TopLevel[Game]
 

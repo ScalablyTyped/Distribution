@@ -1,7 +1,10 @@
 package typings.atBlueprintjsTable.libEsmInteractionsSelectableMod
 
 import typings.atBlueprintjsTable.libEsmCommonCellMod.IFocusedCellCoordinates
+import typings.atBlueprintjsTable.libEsmInteractionsDraggableMod.ICoordinateData
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,14 +63,14 @@ object ISelectableProps {
     enableMultipleSelection: js.UndefOr[Boolean] = js.undefined,
     focusedCell: IFocusedCellCoordinates = null,
     onSelectionEnd: /* regions */ js.Array[IRegion] => Unit = null,
-    selectedRegionTransform: ISelectedRegionTransform = null,
+    selectedRegionTransform: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => IRegion = null,
     selectedRegions: js.Array[IRegion] = null
   ): ISelectableProps = {
     val __obj = js.Dynamic.literal(onFocusedCell = js.Any.fromFunction1(onFocusedCell), onSelection = js.Any.fromFunction1(onSelection))
     if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection)
     if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell)
     if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(js.Any.fromFunction1(onSelectionEnd))
-    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(selectedRegionTransform)
+    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(js.Any.fromFunction3(selectedRegionTransform))
     if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions)
     __obj.asInstanceOf[ISelectableProps]
   }

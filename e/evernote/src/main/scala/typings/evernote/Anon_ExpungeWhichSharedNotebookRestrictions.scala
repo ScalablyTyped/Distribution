@@ -1,6 +1,6 @@
 package typings.evernote
 
-import typings.evernote.evernoteMod.EvernoteNs.SharedNotebookInstanceRestrictions
+import typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

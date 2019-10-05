@@ -27,12 +27,12 @@ object DescribeImagePermissionsRequest {
   @scala.inline
   def apply(
     Name: Name,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null,
     SharedAwsAccountIds: AwsAccountIdList = null
   ): DescribeImagePermissionsRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SharedAwsAccountIds != null) __obj.updateDynamic("SharedAwsAccountIds")(SharedAwsAccountIds)
     __obj.asInstanceOf[DescribeImagePermissionsRequest]

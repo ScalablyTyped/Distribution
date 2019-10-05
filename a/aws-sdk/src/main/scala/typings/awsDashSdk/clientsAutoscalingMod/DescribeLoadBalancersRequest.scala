@@ -21,13 +21,9 @@ trait DescribeLoadBalancersRequest extends js.Object {
 
 object DescribeLoadBalancersRequest {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: XmlString = null
-  ): DescribeLoadBalancersRequest = {
+  def apply(AutoScalingGroupName: ResourceName, MaxRecords: Int | Double = null, NextToken: XmlString = null): DescribeLoadBalancersRequest = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeLoadBalancersRequest]
   }

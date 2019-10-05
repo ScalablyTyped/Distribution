@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebsceneLightingMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Lighting
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LightingProperties
+import typings.arcgisDashJsDashApi.__esri.Lighting
+import typings.arcgisDashJsDashApi.__esri.LightingProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

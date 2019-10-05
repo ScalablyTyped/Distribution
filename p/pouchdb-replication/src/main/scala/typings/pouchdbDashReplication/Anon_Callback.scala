@@ -1,10 +1,10 @@
 package typings.pouchdbDashReplication
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.Callback
-import typings.pouchdbDashReplication.PouchDBNs.Database
-import typings.pouchdbDashReplication.PouchDBNs.ReplicationNs.ReplicateOptions
-import typings.pouchdbDashReplication.PouchDBNs.ReplicationNs.Replication
-import typings.pouchdbDashReplication.PouchDBNs.ReplicationNs.ReplicationResultComplete
+import typings.pouchdbDashCore.PouchDB.Core.Callback
+import typings.pouchdbDashReplication.PouchDB.Database
+import typings.pouchdbDashReplication.PouchDB.Replication.ReplicateOptions
+import typings.pouchdbDashReplication.PouchDB.Replication.Replication
+import typings.pouchdbDashReplication.PouchDB.Replication.ReplicationResultComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.i18nextDashNodeDashFsDashBackend.i18nextDashNodeDashFsDashBacken
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.i18nextDashNodeDashFsDashBackend.i18nextNodeFsBackEndNs.i18nextNodeFsBackEndOptions
+import typings.i18nextDashNodeDashFsDashBackend.i18nextNodeFsBackEnd.i18nextNodeFsBackEndOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.typeahead.bloodhoundMod
 
 import typings.typeahead.Bloodhound
-import typings.typeahead.BloodhoundNs.BloodhoundOptions
-import typings.typeahead.BloodhoundNs.Tokenizers
+import typings.typeahead.Bloodhound.BloodhoundOptions
+import typings.typeahead.Bloodhound.Tokenizers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

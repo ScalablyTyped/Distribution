@@ -17,7 +17,7 @@ trait LogSetup extends js.Object {
 
 object LogSetup {
   @scala.inline
-  def apply(enabled: js.UndefOr[BoxedBoolean] = js.undefined, types: LogTypes = null): LogSetup = {
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, types: LogTypes = null): LogSetup = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (types != null) __obj.updateDynamic("types")(types)

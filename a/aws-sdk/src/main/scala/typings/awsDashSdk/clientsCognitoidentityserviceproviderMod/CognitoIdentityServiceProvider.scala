@@ -26,12 +26,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddCustomAttributesResponse, Unit]
   ): Request[AddCustomAttributesResponse, AWSError] = js.native
   /**
-    * Adds the specified user to the specified group. Requires developer credentials.
+    * Adds the specified user to the specified group. Calling this action requires developer credentials.
     */
   def adminAddUserToGroup(): Request[js.Object, AWSError] = js.native
   def adminAddUserToGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds the specified user to the specified group. Requires developer credentials.
+    * Adds the specified user to the specified group. Calling this action requires developer credentials.
     */
   def adminAddUserToGroup(params: AdminAddUserToGroupRequest): Request[js.Object, AWSError] = js.native
   def adminAddUserToGroup(
@@ -39,12 +39,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Confirms user registration as an admin without using a confirmation code. Works on any user. Requires developer credentials.
+    * Confirms user registration as an admin without using a confirmation code. Works on any user. Calling this action requires developer credentials.
     */
   def adminConfirmSignUp(): Request[AdminConfirmSignUpResponse, AWSError] = js.native
   def adminConfirmSignUp(callback: js.Function2[/* err */ AWSError, /* data */ AdminConfirmSignUpResponse, Unit]): Request[AdminConfirmSignUpResponse, AWSError] = js.native
   /**
-    * Confirms user registration as an admin without using a confirmation code. Works on any user. Requires developer credentials.
+    * Confirms user registration as an admin without using a confirmation code. Works on any user. Calling this action requires developer credentials.
     */
   def adminConfirmSignUp(params: AdminConfirmSignUpRequest): Request[AdminConfirmSignUpResponse, AWSError] = js.native
   def adminConfirmSignUp(
@@ -65,12 +65,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminCreateUserResponse, Unit]
   ): Request[AdminCreateUserResponse, AWSError] = js.native
   /**
-    * Deletes a user as an administrator. Works on any user. Requires developer credentials.
+    * Deletes a user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminDeleteUser(): Request[js.Object, AWSError] = js.native
   def adminDeleteUser(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a user as an administrator. Works on any user. Requires developer credentials.
+    * Deletes a user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminDeleteUser(params: AdminDeleteUserRequest): Request[js.Object, AWSError] = js.native
   def adminDeleteUser(
@@ -78,12 +78,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the user attributes in a user pool as an administrator. Works on any user. Requires developer credentials.
+    * Deletes the user attributes in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminDeleteUserAttributes(): Request[AdminDeleteUserAttributesResponse, AWSError] = js.native
   def adminDeleteUserAttributes(callback: js.Function2[/* err */ AWSError, /* data */ AdminDeleteUserAttributesResponse, Unit]): Request[AdminDeleteUserAttributesResponse, AWSError] = js.native
   /**
-    * Deletes the user attributes in a user pool as an administrator. Works on any user. Requires developer credentials.
+    * Deletes the user attributes in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminDeleteUserAttributes(params: AdminDeleteUserAttributesRequest): Request[AdminDeleteUserAttributesResponse, AWSError] = js.native
   def adminDeleteUserAttributes(
@@ -104,12 +104,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableProviderForUserResponse, Unit]
   ): Request[AdminDisableProviderForUserResponse, AWSError] = js.native
   /**
-    * Disables the specified user as an administrator. Works on any user. Requires developer credentials.
+    * Disables the specified user. Calling this action requires developer credentials.
     */
   def adminDisableUser(): Request[AdminDisableUserResponse, AWSError] = js.native
   def adminDisableUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableUserResponse, Unit]): Request[AdminDisableUserResponse, AWSError] = js.native
   /**
-    * Disables the specified user as an administrator. Works on any user. Requires developer credentials.
+    * Disables the specified user. Calling this action requires developer credentials.
     */
   def adminDisableUser(params: AdminDisableUserRequest): Request[AdminDisableUserResponse, AWSError] = js.native
   def adminDisableUser(
@@ -117,12 +117,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminDisableUserResponse, Unit]
   ): Request[AdminDisableUserResponse, AWSError] = js.native
   /**
-    * Enables the specified user as an administrator. Works on any user. Requires developer credentials.
+    * Enables the specified user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminEnableUser(): Request[AdminEnableUserResponse, AWSError] = js.native
   def adminEnableUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminEnableUserResponse, Unit]): Request[AdminEnableUserResponse, AWSError] = js.native
   /**
-    * Enables the specified user as an administrator. Works on any user. Requires developer credentials.
+    * Enables the specified user as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminEnableUser(params: AdminEnableUserRequest): Request[AdminEnableUserResponse, AWSError] = js.native
   def adminEnableUser(
@@ -130,12 +130,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminEnableUserResponse, Unit]
   ): Request[AdminEnableUserResponse, AWSError] = js.native
   /**
-    * Forgets the device, as an administrator. Requires developer credentials.
+    * Forgets the device, as an administrator. Calling this action requires developer credentials.
     */
   def adminForgetDevice(): Request[js.Object, AWSError] = js.native
   def adminForgetDevice(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Forgets the device, as an administrator. Requires developer credentials.
+    * Forgets the device, as an administrator. Calling this action requires developer credentials.
     */
   def adminForgetDevice(params: AdminForgetDeviceRequest): Request[js.Object, AWSError] = js.native
   def adminForgetDevice(
@@ -143,12 +143,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Gets the device, as an administrator. Requires developer credentials.
+    * Gets the device, as an administrator. Calling this action requires developer credentials.
     */
   def adminGetDevice(): Request[AdminGetDeviceResponse, AWSError] = js.native
   def adminGetDevice(callback: js.Function2[/* err */ AWSError, /* data */ AdminGetDeviceResponse, Unit]): Request[AdminGetDeviceResponse, AWSError] = js.native
   /**
-    * Gets the device, as an administrator. Requires developer credentials.
+    * Gets the device, as an administrator. Calling this action requires developer credentials.
     */
   def adminGetDevice(params: AdminGetDeviceRequest): Request[AdminGetDeviceResponse, AWSError] = js.native
   def adminGetDevice(
@@ -156,12 +156,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminGetDeviceResponse, Unit]
   ): Request[AdminGetDeviceResponse, AWSError] = js.native
   /**
-    * Gets the specified user by user name in a user pool as an administrator. Works on any user. Requires developer credentials.
+    * Gets the specified user by user name in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminGetUser(): Request[AdminGetUserResponse, AWSError] = js.native
   def adminGetUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminGetUserResponse, Unit]): Request[AdminGetUserResponse, AWSError] = js.native
   /**
-    * Gets the specified user by user name in a user pool as an administrator. Works on any user. Requires developer credentials.
+    * Gets the specified user by user name in a user pool as an administrator. Works on any user. Calling this action requires developer credentials.
     */
   def adminGetUser(params: AdminGetUserRequest): Request[AdminGetUserResponse, AWSError] = js.native
   def adminGetUser(
@@ -169,12 +169,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminGetUserResponse, Unit]
   ): Request[AdminGetUserResponse, AWSError] = js.native
   /**
-    * Initiates the authentication flow, as an administrator. Requires developer credentials.
+    * Initiates the authentication flow, as an administrator. Calling this action requires developer credentials.
     */
   def adminInitiateAuth(): Request[AdminInitiateAuthResponse, AWSError] = js.native
   def adminInitiateAuth(callback: js.Function2[/* err */ AWSError, /* data */ AdminInitiateAuthResponse, Unit]): Request[AdminInitiateAuthResponse, AWSError] = js.native
   /**
-    * Initiates the authentication flow, as an administrator. Requires developer credentials.
+    * Initiates the authentication flow, as an administrator. Calling this action requires developer credentials.
     */
   def adminInitiateAuth(params: AdminInitiateAuthRequest): Request[AdminInitiateAuthResponse, AWSError] = js.native
   def adminInitiateAuth(
@@ -195,12 +195,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminLinkProviderForUserResponse, Unit]
   ): Request[AdminLinkProviderForUserResponse, AWSError] = js.native
   /**
-    * Lists devices, as an administrator. Requires developer credentials.
+    * Lists devices, as an administrator. Calling this action requires developer credentials.
     */
   def adminListDevices(): Request[AdminListDevicesResponse, AWSError] = js.native
   def adminListDevices(callback: js.Function2[/* err */ AWSError, /* data */ AdminListDevicesResponse, Unit]): Request[AdminListDevicesResponse, AWSError] = js.native
   /**
-    * Lists devices, as an administrator. Requires developer credentials.
+    * Lists devices, as an administrator. Calling this action requires developer credentials.
     */
   def adminListDevices(params: AdminListDevicesRequest): Request[AdminListDevicesResponse, AWSError] = js.native
   def adminListDevices(
@@ -208,12 +208,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminListDevicesResponse, Unit]
   ): Request[AdminListDevicesResponse, AWSError] = js.native
   /**
-    * Lists the groups that the user belongs to. Requires developer credentials.
+    * Lists the groups that the user belongs to. Calling this action requires developer credentials.
     */
   def adminListGroupsForUser(): Request[AdminListGroupsForUserResponse, AWSError] = js.native
   def adminListGroupsForUser(callback: js.Function2[/* err */ AWSError, /* data */ AdminListGroupsForUserResponse, Unit]): Request[AdminListGroupsForUserResponse, AWSError] = js.native
   /**
-    * Lists the groups that the user belongs to. Requires developer credentials.
+    * Lists the groups that the user belongs to. Calling this action requires developer credentials.
     */
   def adminListGroupsForUser(params: AdminListGroupsForUserRequest): Request[AdminListGroupsForUserResponse, AWSError] = js.native
   def adminListGroupsForUser(
@@ -234,12 +234,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminListUserAuthEventsResponse, Unit]
   ): Request[AdminListUserAuthEventsResponse, AWSError] = js.native
   /**
-    * Removes the specified user from the specified group. Requires developer credentials.
+    * Removes the specified user from the specified group. Calling this action requires developer credentials.
     */
   def adminRemoveUserFromGroup(): Request[js.Object, AWSError] = js.native
   def adminRemoveUserFromGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes the specified user from the specified group. Requires developer credentials.
+    * Removes the specified user from the specified group. Calling this action requires developer credentials.
     */
   def adminRemoveUserFromGroup(params: AdminRemoveUserFromGroupRequest): Request[js.Object, AWSError] = js.native
   def adminRemoveUserFromGroup(
@@ -247,12 +247,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Requires developer credentials.
+    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Calling this action requires developer credentials.
     */
   def adminResetUserPassword(): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   def adminResetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ AdminResetUserPasswordResponse, Unit]): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   /**
-    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Requires developer credentials.
+    * Resets the specified user's password in a user pool as an administrator. Works on any user. When a developer calls this API, the current password is invalidated, so it must be changed. If a user tries to sign in after the API is called, the app will get a PasswordResetRequiredException exception back and should direct the user down the flow to reset the password, which is the same as the forgot password flow. In addition, if the user pool has phone verification selected and a verified phone number exists for the user, or if email verification is selected and a verified email exists for the user, calling this API will also result in sending a message to the end user with the code to change their password. Calling this action requires developer credentials.
     */
   def adminResetUserPassword(params: AdminResetUserPasswordRequest): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   def adminResetUserPassword(
@@ -260,12 +260,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminResetUserPasswordResponse, Unit]
   ): Request[AdminResetUserPasswordResponse, AWSError] = js.native
   /**
-    * Responds to an authentication challenge, as an administrator. Requires developer credentials.
+    * Responds to an authentication challenge, as an administrator. Calling this action requires developer credentials.
     */
   def adminRespondToAuthChallenge(): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   def adminRespondToAuthChallenge(callback: js.Function2[/* err */ AWSError, /* data */ AdminRespondToAuthChallengeResponse, Unit]): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   /**
-    * Responds to an authentication challenge, as an administrator. Requires developer credentials.
+    * Responds to an authentication challenge, as an administrator. Calling this action requires developer credentials.
     */
   def adminRespondToAuthChallenge(params: AdminRespondToAuthChallengeRequest): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   def adminRespondToAuthChallenge(
@@ -273,12 +273,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminRespondToAuthChallengeResponse, Unit]
   ): Request[AdminRespondToAuthChallengeResponse, AWSError] = js.native
   /**
-    * Sets the user's multi-factor authentication (MFA) preference.
+    * Sets the user's multi-factor authentication (MFA) preference, including which MFA options are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
   def adminSetUserMFAPreference(): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   def adminSetUserMFAPreference(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserMFAPreferenceResponse, Unit]): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * Sets the user's multi-factor authentication (MFA) preference.
+    * Sets the user's multi-factor authentication (MFA) preference, including which MFA options are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
   def adminSetUserMFAPreference(params: AdminSetUserMFAPreferenceRequest): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   def adminSetUserMFAPreference(
@@ -286,12 +286,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserMFAPreferenceResponse, Unit]
   ): Request[AdminSetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * 
+    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status will be placed into the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user does not sign in before it expires, the user will not be able to sign in and their password will need to be reset by an administrator.  Once the user has set a new password, or the password is permanent, the user status will be set to Confirmed.
     */
   def adminSetUserPassword(): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   def adminSetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserPasswordResponse, Unit]): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   /**
-    * 
+    * Sets the specified user's password in a user pool as an administrator. Works on any user.  The password can be temporary or permanent. If it is temporary, the user status will be placed into the FORCE_CHANGE_PASSWORD state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the NEW_PASSWORD_REQUIRED challenge. If the user does not sign in before it expires, the user will not be able to sign in and their password will need to be reset by an administrator.  Once the user has set a new password, or the password is permanent, the user status will be set to Confirmed.
     */
   def adminSetUserPassword(params: AdminSetUserPasswordRequest): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   def adminSetUserPassword(
@@ -299,12 +299,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserPasswordResponse, Unit]
   ): Request[AdminSetUserPasswordResponse, AWSError] = js.native
   /**
-    * Sets all the user settings for a specified user name. Works on any user. Requires developer credentials.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the AdminSetUserMFAPreference action instead.
     */
   def adminSetUserSettings(): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ AdminSetUserSettingsResponse, Unit]): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   /**
-    * Sets all the user settings for a specified user name. Works on any user. Requires developer credentials.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the AdminSetUserMFAPreference action instead.
     */
   def adminSetUserSettings(params: AdminSetUserSettingsRequest): Request[AdminSetUserSettingsResponse, AWSError] = js.native
   def adminSetUserSettings(
@@ -325,12 +325,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateAuthEventFeedbackResponse, Unit]
   ): Request[AdminUpdateAuthEventFeedbackResponse, AWSError] = js.native
   /**
-    * Updates the device status as an administrator. Requires developer credentials.
+    * Updates the device status as an administrator. Calling this action requires developer credentials.
     */
   def adminUpdateDeviceStatus(): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
   def adminUpdateDeviceStatus(callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateDeviceStatusResponse, Unit]): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
   /**
-    * Updates the device status as an administrator. Requires developer credentials.
+    * Updates the device status as an administrator. Calling this action requires developer credentials.
     */
   def adminUpdateDeviceStatus(params: AdminUpdateDeviceStatusRequest): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
   def adminUpdateDeviceStatus(
@@ -338,12 +338,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateDeviceStatusResponse, Unit]
   ): Request[AdminUpdateDeviceStatusResponse, AWSError] = js.native
   /**
-    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Requires developer credentials.
+    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Calling this action requires developer credentials.
     */
   def adminUpdateUserAttributes(): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   def adminUpdateUserAttributes(callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateUserAttributesResponse, Unit]): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Requires developer credentials.
+    * Updates the specified user's attributes, including developer attributes, as an administrator. Works on any user. For custom attributes, you must prepend the custom: prefix to the attribute name. In addition to updating user attributes, this API can also be used to mark phone and email as verified. Calling this action requires developer credentials.
     */
   def adminUpdateUserAttributes(params: AdminUpdateUserAttributesRequest): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   def adminUpdateUserAttributes(
@@ -351,12 +351,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateUserAttributesResponse, Unit]
   ): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices, as an administrator. Requires developer credentials.
+    * Signs out users from all devices, as an administrator. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(callback: js.Function2[/* err */ AWSError, /* data */ AdminUserGlobalSignOutResponse, Unit]): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices, as an administrator. Requires developer credentials.
+    * Signs out users from all devices, as an administrator. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(params: AdminUserGlobalSignOutRequest): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(
@@ -429,12 +429,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ConfirmSignUpResponse, Unit]
   ): Request[ConfirmSignUpResponse, AWSError] = js.native
   /**
-    * Creates a new group in the specified user pool. Requires developer credentials.
+    * Creates a new group in the specified user pool. Calling this action requires developer credentials.
     */
   def createGroup(): Request[CreateGroupResponse, AWSError] = js.native
   def createGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupResponse, Unit]): Request[CreateGroupResponse, AWSError] = js.native
   /**
-    * Creates a new group in the specified user pool. Requires developer credentials.
+    * Creates a new group in the specified user pool. Calling this action requires developer credentials.
     */
   def createGroup(params: CreateGroupRequest): Request[CreateGroupResponse, AWSError] = js.native
   def createGroup(
@@ -520,12 +520,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserPoolDomainResponse, Unit]
   ): Request[CreateUserPoolDomainResponse, AWSError] = js.native
   /**
-    * Deletes a group. Currently only groups with no members can be deleted. Requires developer credentials.
+    * Deletes a group. Currently only groups with no members can be deleted. Calling this action requires developer credentials.
     */
   def deleteGroup(): Request[js.Object, AWSError] = js.native
   def deleteGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a group. Currently only groups with no members can be deleted. Requires developer credentials.
+    * Deletes a group. Currently only groups with no members can be deleted. Calling this action requires developer credentials.
     */
   def deleteGroup(params: DeleteGroupRequest): Request[js.Object, AWSError] = js.native
   def deleteGroup(params: DeleteGroupRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -761,12 +761,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResponse, Unit]
   ): Request[GetDeviceResponse, AWSError] = js.native
   /**
-    * Gets a group. Requires developer credentials.
+    * Gets a group. Calling this action requires developer credentials.
     */
   def getGroup(): Request[GetGroupResponse, AWSError] = js.native
   def getGroup(callback: js.Function2[/* err */ AWSError, /* data */ GetGroupResponse, Unit]): Request[GetGroupResponse, AWSError] = js.native
   /**
-    * Gets a group. Requires developer credentials.
+    * Gets a group. Calling this action requires developer credentials.
     */
   def getGroup(params: GetGroupRequest): Request[GetGroupResponse, AWSError] = js.native
   def getGroup(
@@ -895,12 +895,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesResponse, Unit]
   ): Request[ListDevicesResponse, AWSError] = js.native
   /**
-    * Lists the groups associated with a user pool. Requires developer credentials.
+    * Lists the groups associated with a user pool. Calling this action requires developer credentials.
     */
   def listGroups(): Request[ListGroupsResponse, AWSError] = js.native
   def listGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListGroupsResponse, Unit]): Request[ListGroupsResponse, AWSError] = js.native
   /**
-    * Lists the groups associated with a user pool. Requires developer credentials.
+    * Lists the groups associated with a user pool. Calling this action requires developer credentials.
     */
   def listGroups(params: ListGroupsRequest): Request[ListGroupsResponse, AWSError] = js.native
   def listGroups(
@@ -999,12 +999,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
   /**
-    * Lists the users in the specified group. Requires developer credentials.
+    * Lists the users in the specified group. Calling this action requires developer credentials.
     */
   def listUsersInGroup(): Request[ListUsersInGroupResponse, AWSError] = js.native
   def listUsersInGroup(callback: js.Function2[/* err */ AWSError, /* data */ ListUsersInGroupResponse, Unit]): Request[ListUsersInGroupResponse, AWSError] = js.native
   /**
-    * Lists the users in the specified group. Requires developer credentials.
+    * Lists the users in the specified group. Calling this action requires developer credentials.
     */
   def listUsersInGroup(params: ListUsersInGroupRequest): Request[ListUsersInGroupResponse, AWSError] = js.native
   def listUsersInGroup(
@@ -1064,12 +1064,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SetUICustomizationResponse, Unit]
   ): Request[SetUICustomizationResponse, AWSError] = js.native
   /**
-    * Set the user's multi-factor authentication (MFA) method preference.
+    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
   def setUserMFAPreference(): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   def setUserMFAPreference(callback: js.Function2[/* err */ AWSError, /* data */ SetUserMFAPreferenceResponse, Unit]): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * Set the user's multi-factor authentication (MFA) method preference.
+    * Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are enabled and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are enabled. If multiple options are enabled and no preference is set, a challenge to choose an MFA option will be returned during sign in.
     */
   def setUserMFAPreference(params: SetUserMFAPreferenceRequest): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   def setUserMFAPreference(
@@ -1077,12 +1077,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SetUserMFAPreferenceResponse, Unit]
   ): Request[SetUserMFAPreferenceResponse, AWSError] = js.native
   /**
-    * Set the user pool MFA configuration.
+    * Set the user pool multi-factor authentication (MFA) configuration.
     */
   def setUserPoolMfaConfig(): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   def setUserPoolMfaConfig(callback: js.Function2[/* err */ AWSError, /* data */ SetUserPoolMfaConfigResponse, Unit]): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   /**
-    * Set the user pool MFA configuration.
+    * Set the user pool multi-factor authentication (MFA) configuration.
     */
   def setUserPoolMfaConfig(params: SetUserPoolMfaConfigRequest): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   def setUserPoolMfaConfig(
@@ -1090,12 +1090,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SetUserPoolMfaConfigResponse, Unit]
   ): Request[SetUserPoolMfaConfigResponse, AWSError] = js.native
   /**
-    * Sets the user settings like multi-factor authentication (MFA). If MFA is to be removed for a particular attribute pass the attribute with code delivery as null. If null list is passed, all MFA options are removed.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the SetUserMFAPreference action instead.
     */
   def setUserSettings(): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(callback: js.Function2[/* err */ AWSError, /* data */ SetUserSettingsResponse, Unit]): Request[SetUserSettingsResponse, AWSError] = js.native
   /**
-    * Sets the user settings like multi-factor authentication (MFA). If MFA is to be removed for a particular attribute pass the attribute with code delivery as null. If null list is passed, all MFA options are removed.
+    *  This action is no longer supported. You can use it to configure only SMS MFA. You can't use it to configure TOTP software token MFA. To configure either type of MFA, use the SetUserMFAPreference action instead.
     */
   def setUserSettings(params: SetUserSettingsRequest): Request[SetUserSettingsResponse, AWSError] = js.native
   def setUserSettings(
@@ -1191,12 +1191,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceStatusResponse, Unit]
   ): Request[UpdateDeviceStatusResponse, AWSError] = js.native
   /**
-    * Updates the specified group with the specified attributes. Requires developer credentials.
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
     */
   def updateGroup(): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupResponse, Unit]): Request[UpdateGroupResponse, AWSError] = js.native
   /**
-    * Updates the specified group with the specified attributes. Requires developer credentials.
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
     */
   def updateGroup(params: UpdateGroupRequest): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(

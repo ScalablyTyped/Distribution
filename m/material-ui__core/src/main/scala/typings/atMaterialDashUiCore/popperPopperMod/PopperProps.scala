@@ -30,10 +30,10 @@ trait PopperProps extends HTMLAttributes[HTMLDivElement] {
 object PopperProps {
   @scala.inline
   def apply(
-    children: ReactNode | (js.Function1[/* props */ Anon_Placement, ReactNode]),
     open: Boolean,
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
     anchorEl: HTMLElement | ReferenceObject | (js.Function1[/* element */ HTMLElement, HTMLElement]) = null,
+    children: ReactNode | (js.Function1[/* props */ Anon_Placement, ReactNode]) = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,
     disablePortal: js.UndefOr[Boolean] = js.undefined,
     keepMounted: js.UndefOr[Boolean] = js.undefined,
@@ -42,9 +42,10 @@ object PopperProps {
     popperOptions: js.Object = null,
     transition: js.UndefOr[Boolean] = js.undefined
   ): PopperProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], open = open)
+    val __obj = js.Dynamic.literal(open = open)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal)
     if (!js.isUndefined(keepMounted)) __obj.updateDynamic("keepMounted")(keepMounted)

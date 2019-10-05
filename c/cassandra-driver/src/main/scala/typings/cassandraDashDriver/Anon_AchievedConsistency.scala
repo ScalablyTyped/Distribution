@@ -2,8 +2,8 @@ package typings.cassandraDashDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cassandraDashDriver.cassandraDashDriverMod.Host
-import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.Uuid
-import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.consistencies
+import typings.cassandraDashDriver.cassandraDashDriverMod.types.Uuid
+import typings.cassandraDashDriver.cassandraDashDriverMod.types.consistencies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

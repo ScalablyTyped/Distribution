@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Response
   extends ServerResponse
-     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response {
+     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Response {
   @JSName("app")
   var app_Original: Application = js.native
   var charset: String = js.native

@@ -17,7 +17,7 @@ trait CancelBundleTaskRequest extends js.Object {
 
 object CancelBundleTaskRequest {
   @scala.inline
-  def apply(BundleId: String, DryRun: js.UndefOr[Boolean] = js.undefined): CancelBundleTaskRequest = {
+  def apply(BundleId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CancelBundleTaskRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CancelBundleTaskRequest]

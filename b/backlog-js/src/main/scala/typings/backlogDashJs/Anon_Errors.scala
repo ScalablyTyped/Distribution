@@ -1,6 +1,6 @@
 package typings.backlogDashJs
 
-import typings.backlogDashJs.backlogDashJsMod.ErrorNs.BacklogErrorMessage
+import typings.backlogDashJs.backlogDashJsMod.Error.BacklogErrorMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

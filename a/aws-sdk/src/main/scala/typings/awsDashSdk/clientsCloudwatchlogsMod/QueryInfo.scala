@@ -30,14 +30,14 @@ trait QueryInfo extends js.Object {
 object QueryInfo {
   @scala.inline
   def apply(
-    createTime: js.UndefOr[Timestamp] = js.undefined,
+    createTime: Int | Double = null,
     logGroupName: LogGroupName = null,
     queryId: QueryId = null,
     queryString: QueryString = null,
     status: QueryStatus = null
   ): QueryInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(createTime)) __obj.updateDynamic("createTime")(createTime)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
     if (queryId != null) __obj.updateDynamic("queryId")(queryId)
     if (queryString != null) __obj.updateDynamic("queryString")(queryString)

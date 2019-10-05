@@ -12,13 +12,9 @@ trait ListTagsForResourceRequest extends js.Object {
 
 object ListTagsForResourceRequest {
   @scala.inline
-  def apply(
-    ResourceARN: ResourceArn,
-    Limit: js.UndefOr[PaginationLimit] = js.undefined,
-    NextMarker: NextMarker = null
-  ): ListTagsForResourceRequest = {
+  def apply(ResourceARN: ResourceArn, Limit: Int | Double = null, NextMarker: NextMarker = null): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }

@@ -10,17 +10,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.leaflet.leafletMod.GridLayerOptions because Already inherited
+- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined accessToken, crossOrigin, detectRetina, errorTileUrl, id, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse
 - typings.leaflet.leafletMod.WMSOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined crs, format, layers, styles, transparent, uppercase, version */ trait WMSTileLayerProps
   extends GridLayerProps
      with TileLayerEvents {
+  var accessToken: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   var crs: js.UndefOr[CRS] = js.undefined
+  var detectRetina: js.UndefOr[Boolean] = js.undefined
+  var errorTileUrl: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var layers: js.UndefOr[String] = js.undefined
+  var maxNativeZoom: js.UndefOr[Double] = js.undefined
+  var minNativeZoom: js.UndefOr[Double] = js.undefined
   var styles: js.UndefOr[String] = js.undefined
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
+  var tms: js.UndefOr[Boolean] = js.undefined
   var transparent: js.UndefOr[Boolean] = js.undefined
   var uppercase: js.UndefOr[Boolean] = js.undefined
   var url: String
   var version: js.UndefOr[String] = js.undefined
+  var zoomOffset: js.UndefOr[Double] = js.undefined
+  var zoomReverse: js.UndefOr[Boolean] = js.undefined
 }
 
 object WMSTileLayerProps {

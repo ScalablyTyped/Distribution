@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueTriggerMod
 
-import typings.atPulumiAws.typesOutputMod.glueNs.TriggerAction
-import typings.atPulumiAws.typesOutputMod.glueNs.TriggerPredicate
+import typings.atPulumiAws.typesOutputMod.glue.TriggerAction
+import typings.atPulumiAws.typesOutputMod.glue.TriggerPredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,0 +1,25 @@
+package typings.kendoDashUi.kendo.ui
+
+import typings.std.Element
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TreeViewExpandEvent extends TreeViewEvent {
+  var node: js.UndefOr[Element] = js.undefined
+}
+
+object TreeViewExpandEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: () => Boolean,
+    preventDefault: js.Function,
+    sender: TreeView,
+    node: Element = null
+  ): TreeViewExpandEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[TreeViewExpandEvent]
+  }
+}
+

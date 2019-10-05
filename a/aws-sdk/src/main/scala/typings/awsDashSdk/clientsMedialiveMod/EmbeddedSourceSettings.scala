@@ -28,14 +28,14 @@ object EmbeddedSourceSettings {
   def apply(
     Convert608To708: EmbeddedConvert608To708 = null,
     Scte20Detection: EmbeddedScte20Detection = null,
-    Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined,
-    Source608TrackNumber: js.UndefOr[__integerMin1Max5] = js.undefined
+    Source608ChannelNumber: Int | Double = null,
+    Source608TrackNumber: Int | Double = null
   ): EmbeddedSourceSettings = {
     val __obj = js.Dynamic.literal()
     if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
     if (Scte20Detection != null) __obj.updateDynamic("Scte20Detection")(Scte20Detection.asInstanceOf[js.Any])
-    if (!js.isUndefined(Source608ChannelNumber)) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber)
-    if (!js.isUndefined(Source608TrackNumber)) __obj.updateDynamic("Source608TrackNumber")(Source608TrackNumber)
+    if (Source608ChannelNumber != null) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber.asInstanceOf[js.Any])
+    if (Source608TrackNumber != null) __obj.updateDynamic("Source608TrackNumber")(Source608TrackNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedSourceSettings]
   }
 }

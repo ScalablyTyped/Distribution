@@ -1,6 +1,6 @@
 package typings.atJupyterlabTerminal
 
-import typings.atJupyterlabTerminal.libTokensMod.ITerminalNs.Theme
+import typings.atJupyterlabTerminal.libTokensMod.ITerminal.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -77,11 +77,11 @@ object Workspace {
     ErrorMessage: Description = null,
     IpAddress: IpAddress = null,
     ModificationStates: ModificationStateList = null,
-    RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
+    RootVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
     State: WorkspaceState = null,
     SubnetId: SubnetId = null,
     UserName: UserName = null,
-    UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
+    UserVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
     VolumeEncryptionKey: VolumeEncryptionKey = null,
     WorkspaceId: WorkspaceId = null,
     WorkspaceProperties: WorkspaceProperties = null

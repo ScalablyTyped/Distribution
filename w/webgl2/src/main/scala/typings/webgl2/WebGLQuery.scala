@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLQuery")
 @js.native
-class WebGLQueryCls () extends WebGLQuery
-
-@JSGlobal("WebGLQuery")
-@js.native
 object WebGLQuery extends Instantiable0[WebGLQuery]
 

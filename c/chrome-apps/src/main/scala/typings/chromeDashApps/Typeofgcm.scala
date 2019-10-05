@@ -1,10 +1,10 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.gcmNs.GcmError
-import typings.chromeDashApps.chromeNs.gcmNs.IncomingMessage
-import typings.chromeDashApps.chromeNs.gcmNs.OutgoingMessage
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.gcm.GcmError
+import typings.chromeDashApps.chrome.gcm.IncomingMessage
+import typings.chromeDashApps.chrome.gcm.OutgoingMessage
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,46 @@
+package typings.winrtDashUwp.Windows.Storage.Search
+
+import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import typings.winrtDashUwp.Windows.Storage.StorageFolder
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Represents a query for content properties in the ContentIndexer . */
+@JSGlobal("Windows.Storage.Search.ContentIndexerQuery")
+@js.native
+abstract class ContentIndexerQuery () extends js.Object {
+  /** Gets the StorageFolder representation of the app-provided items in the ContentIndexer query. */
+  var queryFolder: StorageFolder = js.native
+  /**
+    * Runs the query on the app's indexed content properties.
+    * @return When this method completes, it returns the query results, represented as a collection of IIndexableContent instances.
+    */
+  def getAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  /**
+    * Runs the query on the app's indexed content properties and returns the specified number of items from the specified start index in the results collection.
+    * @param startIndex The index of the first item to get from the results collection.
+    * @param maxItems The maximum number of items to get.
+    * @return When this method completes, it returns the query results, represented as a collection of IndexableContent instances.
+    */
+  def getAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  /**
+    * Gets the number of items in the search results.
+    * @return When this method completes, it returns the number of items in the search results.
+    */
+  def getCountAsync(): IPromiseWithIAsyncOperation[Double] = js.native
+  /**
+    * Retrieves a collection of property sets for an app, where the property sets are key-value pairs.
+    * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
+    */
+  def getPropertiesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  /**
+    * Runs the query on the app's indexed content properties and returns the specified number of properties from the specified start index in the results collection.
+    * @param startIndex The index of the first item to get from the results collection.
+    * @param maxItems The maximum number of items to get.
+    * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
+    */
+  def getPropertiesAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+}
+

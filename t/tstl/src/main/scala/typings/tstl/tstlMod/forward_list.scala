@@ -43,3 +43,20 @@ class forward_list[T] ()
   def this(n: Double, `val`: T) = this()
 }
 
+@JSImport("tstl", "forward_list")
+@js.native
+object forward_list extends js.Object {
+  /**
+    * Iterator of the ForwardList.
+    *
+    * @author Jeongho Nam <http://samchon.org>
+    */
+  @js.native
+  /**
+    * @hidden
+    */
+  class Iterator[T] protected ()
+    extends typings.tstl.containerMod.forward_list.Iterator[T]
+  
+}
+

@@ -1,6 +1,6 @@
 package typings.arangodb
 
-import typings.arangodb.FoxxNs.Router
+import typings.arangodb.Foxx.Router
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

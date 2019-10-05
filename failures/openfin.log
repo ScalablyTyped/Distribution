@@ -248,16 +248,16 @@
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(openfin) [id => openfin, phase => typescript] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timing))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timing))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.timing [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof window.performance.timing [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timing) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timeOrigin))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(timeOrigin))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.timeOrigin [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof window.performance.timeOrigin [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(timeOrigin) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(navigation))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(window), TsIdentSimple(performance), TsIdentSimple(navigation))) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof window.performance.navigation [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/elipc) / TsExport() / TsExporteeTree() / TsDeclClass(ElIPCTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclClass(Transport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/websocket) / TsExport() / TsExporteeTree() / TsDeclClass(WebSocketTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof window.performance.navigation [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/window) / TsExport() / TsExporteeTree() / TsDeclInterface(WindowPerformanceReport) / TsMemberProperty(navigation) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/elipc) / TsExport() / TsExporteeTree() / TsDeclClass(ElIPCTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/transport) / TsDeclClass(Transport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof READY_STATE [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/transport/websocket) / TsExport() / TsExporteeTree() / TsDeclClass(WebSocketTransport) / TsMemberProperty(READY_STATE) / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isRunning) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(quit) [id => openfin, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/application/application) / TsDeclClass(Application))] 
@@ -901,8 +901,8 @@
 [info ] ImportType.scala:245 Failed type conversion: EventTypes[symbol] [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/base) / TsDeclClass(EmitterBase) / TsMemberFunction(removeListener) / TsFunParam() / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: EventTypes[E] [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/base) / TsDeclClass(EmitterBase) / TsMemberFunction(removeListener) / TsFunParam() / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: EventTypes[E] [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/base) / TsDeclClass(EmitterBase) / TsMemberFunction(removeListener) / TsFunParam() / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
-[warn ] ImportTree.scala:397 Dropping List(TsIdentSimple(nonHotkeyEvents), TsIdentSimple(REGISTERED)) [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/globalHotkey) / TsDeclInterface(GlobalHotkeyEvents) / TsMemberIndex())] 
-[warn ] ImportTree.scala:397 Dropping List(TsIdentSimple(nonHotkeyEvents), TsIdentSimple(UNREGISTERED)) [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/globalHotkey) / TsDeclInterface(GlobalHotkeyEvents) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(nonHotkeyEvents), TsIdentSimple(REGISTERED)) [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/globalHotkey) / TsDeclInterface(GlobalHotkeyEvents) / TsMemberIndex())] 
+[warn ] ImportTree.scala:386 Dropping List(TsIdentSimple(nonHotkeyEvents), TsIdentSimple(UNREGISTERED)) [id => openfin, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(openfin/_v2/api/events/globalHotkey) / TsDeclInterface(GlobalHotkeyEvents) / TsMemberIndex())] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(EventEmitter))) at Name(typings) / Name(openfin) / Name(underscoreV2TransportWebsocketMod) / Name(WebSocketTransport) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(internal))),List(),NoComments), TypeRef(QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(EventEmitter))),List(),NoComments)) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportWebsocketMod) / Name(WebSocketTransport)] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(EventEmitter))) at Name(typings) / Name(openfin) / Name(underscoreV2TransportElipcMod) / Name(ElIPCTransport) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(internal))),List(),NoComments), TypeRef(QualifiedName(List(Name(typings), Name(node), Name(eventsMod), Name(EventEmitter))),List(),NoComments)) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportElipcMod) / Name(ElIPCTransport)] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
@@ -911,55 +911,18 @@
 - typings.openfin.underscoreV2ApiEventsBaseMod.RuntimeEvent because Already inherited [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiEventsBaseMod) / Name(WindowEvent)] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typings.openfin.underscoreV2ApiEventsBaseMod.RuntimeEvent because Already inherited [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiEventsFrameMod) / Name(FrameEvent)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(uuid) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiBaseMod) / Name(Reply)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(messageCounter, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentNodeDashEnvMod) / Name(default)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(resolveUrl, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentOpenfinDashEnvMod) / Name(default)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(os, macLaunch, winLaunch, Security_Realm_Config_Key, OpenFin_Installer, Installer_Work_Dir, launch) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2LauncherLauncherMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(NotImplementedError)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(NotSupportedError)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(UnexpectedActionError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(DisconnectedError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(DuplicateCorrelationError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(NoAckError)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(NotImplementedError)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(NotSupportedError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(RuntimeError)] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2TransportTransportDashErrorsMod) / Name(UnexpectedActionError)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(messageCounter, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentNodeDashEnvMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(uuid) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2ApiBaseMod) / Name(Reply)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(os, macLaunch, winLaunch, Security_Realm_Config_Key, OpenFin_Installer, Installer_Work_Dir, launch) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2LauncherLauncherMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(resolveUrl, getNextMessageId, createChildWindow, isWindowExists, getRandomId, getCurrentEntityIdentity, retrievePort, getWebWindow, writeToken) [id => openfin, phase => scala.js, this => Name(typings) / Name(openfin) / Name(underscoreV2EnvironmentOpenfinDashEnvMod) / Name(default)] 
 [debug] PhaseRunner.scala:84 Success [id => openfin, phase => scala.js] 
-[warn ] Phase3Compile.scala:214 Building openfin... [id => openfin, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E7] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
-[E]      not found: type Type
-[E]      L17:     */ typings.openfin.openfinStrings.WindowEvents with (WindowEventMapping[window, Type])
-[E]                                                                                               ^
-[E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala:37:112
-[E]      not found: type Type
-[E]      L37:     */ typings.openfin.openfinStrings.ExternalWindowEvents with (ExternalWindowEventMapping[`external-window`, Type])
-[E]                                                                                                                          ^
-[E] [E5] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala:12:79
-[E]      not found: type Type
-[E]      L12:     */ typings.openfin.openfinStrings.ViewEvents with (ViewEventMapping[view, Type])
-[E]                                                                                         ^
-[E] [E4] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala:11:161
-[E]      not found: type Type
-[E]      L11:   type ApplicationEvents = PropagatedWindowEvents[application] with typings.openfin.openfinStrings.ApplicationEvents with (ApplicationEventMapping[application, Type])
-[E]                                                                                                                                                                           ^
-[E] [E3] src/main/scala/typings/openfin/underscoreV2ApiEventsSystemMod/package.scala:15:177
-[E]      not found: type Type
-[E]      L15:   type SystemEvents = PropagatedWindowEvents[system] with PropagatedApplicationEvents[system] with typings.openfin.openfinStrings.SystemEvents with (SystemEventMapping[system, Type])
-[E]                                                                                                                                                                                           ^
-[E] [E2] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala:14:114
-[E]      not found: type Type
-[E]      L14:     */ typings.openfin.openfinStrings.PropagatedApplicationEvents with (PropagatedApplicationEventMapping[Topic, Type])
-[E]                                                                                                                            ^
-[E] [E1] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:13:104
-[E]      not found: type Type
-[E]      L13:     */ typings.openfin.openfinStrings.PropagatedWindowEvents with (PropagatedWindowEventMapping[Topic, Type])
-[E]                                                                                                                  ^
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala: L11 [E4], L14 [E2]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod/package.scala: L37 [E6]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsSystemMod/package.scala: L15 [E3]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala: L13 [E1], L17 [E7]
-[E] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala: L12 [E5]
-[E] Failed to compile 'openfin'
- [id => openfin, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 
 [warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibrarySimple(openfin) [id => openfin, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
@@ -972,3 +935,42 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
+[warn ] Phase3Compile.scala:214 Building openfin... [id => openfin, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E8] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:17:85
+[E]      not found: type Type
+[E]      L17:     */ typings.openfin.openfinStrings.WindowEvents with (WindowEventMapping[window, Type])
+[E]                                                                                               ^
+[E] [E7] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod.scala:39:112
+[E]      not found: type Type
+[E]      L39:     */ typings.openfin.openfinStrings.ExternalWindowEvents with (ExternalWindowEventMapping[`external-window`, Type])
+[E]                                                                                                                          ^
+[E] [E6] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala:12:79
+[E]      not found: type Type
+[E]      L12:     */ typings.openfin.openfinStrings.ViewEvents with (ViewEventMapping[view, Type])
+[E]                                                                                         ^
+[E] [E5] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala:11:161
+[E]      not found: type Type
+[E]      L11:   type ApplicationEvents = PropagatedWindowEvents[application] with typings.openfin.openfinStrings.ApplicationEvents with (ApplicationEventMapping[application, Type])
+[E]                                                                                                                                                                           ^
+[E] [E4] src/main/scala/typings/openfin/underscoreV2ApiEventsSystemMod/package.scala:15:177
+[E]      not found: type Type
+[E]      L15:   type SystemEvents = PropagatedWindowEvents[system] with PropagatedApplicationEvents[system] with typings.openfin.openfinStrings.SystemEvents with (SystemEventMapping[system, Type])
+[E]                                                                                                                                                                                           ^
+[E] [E3] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala:14:114
+[E]      not found: type Type
+[E]      L14:     */ typings.openfin.openfinStrings.PropagatedApplicationEvents with (PropagatedApplicationEventMapping[Topic, Type])
+[E]                                                                                                                            ^
+[E] [E2] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala:13:104
+[E]      not found: type Type
+[E]      L13:     */ typings.openfin.openfinStrings.PropagatedWindowEvents with (PropagatedWindowEventMapping[Topic, Type])
+[E]                                                                                                                  ^
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsApplicationMod/package.scala: L11 [E5], L14 [E3]
+[E] src/main/scala/typings/openfin/openfinMod/fin/OpenFinWindow.scala: L6 [E1]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsSystemMod/package.scala: L15 [E4]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsWindowMod/package.scala: L13 [E2], L17 [E8]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsExternalWindowMod.scala: L39 [E7]
+[E] src/main/scala/typings/openfin/underscoreV2ApiEventsBrowserviewMod/package.scala: L12 [E6]
+[E] Failed to compile 'openfin'
+ [id => openfin, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => publish] 

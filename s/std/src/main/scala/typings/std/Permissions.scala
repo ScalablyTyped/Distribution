@@ -15,9 +15,5 @@ trait Permissions extends js.Object {
 
 @JSGlobal("Permissions")
 @js.native
-class PermissionsCls () extends Permissions
-
-@JSGlobal("Permissions")
-@js.native
 object Permissions extends Instantiable0[Permissions]
 

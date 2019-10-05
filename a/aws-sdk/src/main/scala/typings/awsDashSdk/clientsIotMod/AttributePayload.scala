@@ -17,7 +17,7 @@ trait AttributePayload extends js.Object {
 
 object AttributePayload {
   @scala.inline
-  def apply(attributes: Attributes = null, merge: js.UndefOr[Flag] = js.undefined): AttributePayload = {
+  def apply(attributes: Attributes = null, merge: js.UndefOr[scala.Boolean] = js.undefined): AttributePayload = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)

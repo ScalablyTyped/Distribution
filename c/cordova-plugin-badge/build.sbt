@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-badge"
-version := "0.8-dt-20180214Z-38c856"
-scalaVersion := "2.12.9"
+version := "0.8-dt-20180214Z-bfc51a"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

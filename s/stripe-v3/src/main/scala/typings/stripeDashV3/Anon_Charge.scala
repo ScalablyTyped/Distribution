@@ -1,6 +1,6 @@
 package typings.stripeDashV3
 
-import typings.stripeDashV3.stripeNs.paymentMethodNs.PaymentMethodDetails
+import typings.stripeDashV3.stripe.paymentMethod.PaymentMethodDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

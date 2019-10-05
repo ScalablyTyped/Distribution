@@ -1,8 +1,8 @@
 package typings.jqueryDotAjaxfile
 
-import typings.jqueryDotAjaxfile.ChaiNs.ChaiStatic
-import typings.jqueryDotAjaxfile.MochaNs.IContextDefinition
-import typings.jqueryDotAjaxfile.MochaNs.ITestDefinition
+import typings.jqueryDotAjaxfile.Chai.ChaiStatic
+import typings.jqueryDotAjaxfile.Mocha.IContextDefinition
+import typings.jqueryDotAjaxfile.Mocha.ITestDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,21 +27,5 @@ object ^ extends js.Object {
   var test: ITestDefinition = js.native
   var xdescribe: IContextDefinition = js.native
   var xit: ITestDefinition = js.native
-  def after(action: js.Function0[Unit]): Unit = js.native
-  def after(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def afterEach(action: js.Function0[Unit]): Unit = js.native
-  def afterEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def before(action: js.Function0[Unit]): Unit = js.native
-  def before(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def beforeEach(action: js.Function0[Unit]): Unit = js.native
-  def beforeEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def setup(action: js.Function0[Unit]): Unit = js.native
-  def setup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def suiteSetup(action: js.Function0[Unit]): Unit = js.native
-  def suiteSetup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def suiteTeardown(action: js.Function0[Unit]): Unit = js.native
-  def suiteTeardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
-  def teardown(action: js.Function0[Unit]): Unit = js.native
-  def teardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.native
 }
 

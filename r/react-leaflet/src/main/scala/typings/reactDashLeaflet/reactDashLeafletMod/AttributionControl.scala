@@ -1,6 +1,6 @@
 package typings.reactDashLeaflet.reactDashLeafletMod
 
-import typings.leaflet.leafletMod.ControlNs.Attribution
+import typings.leaflet.leafletMod.Control.Attribution
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

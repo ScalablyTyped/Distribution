@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebscenePresentationMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Presentation
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PresentationProperties
+import typings.arcgisDashJsDashApi.__esri.Presentation
+import typings.arcgisDashJsDashApi.__esri.PresentationProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

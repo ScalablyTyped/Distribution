@@ -12,8 +12,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
   def apply(options: MongoSanitizeOptions): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
-  def has(payload: js.Any): Boolean = js.native
-  def sanitize[T](payload: T): T = js.native
-  def sanitize[T](payload: T, options: MongoSanitizeOptions): T = js.native
 }
 

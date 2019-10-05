@@ -1,7 +1,7 @@
 package typings.gulpDashTsd.gulpDashTsdMod
 
 import typings.gulp.gulpMod.TaskCallback
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atIonicCliDashFramework.definitionsMod
 
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

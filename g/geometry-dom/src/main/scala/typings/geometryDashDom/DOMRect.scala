@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMRect")
 @js.native
 class DOMRect protected ()
-  extends typings.geometryDashDom.GeometryDomNs.DOMRect {
+  extends typings.geometryDashDom.GeometryDom.DOMRect {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
   /**
     * max(y coordinate, y coordinate + height dimension)
@@ -60,6 +60,6 @@ object DOMRect
       /* y */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      typings.geometryDashDom.GeometryDomNs.DOMRect
+      typings.geometryDashDom.GeometryDom.DOMRect
     ]
 

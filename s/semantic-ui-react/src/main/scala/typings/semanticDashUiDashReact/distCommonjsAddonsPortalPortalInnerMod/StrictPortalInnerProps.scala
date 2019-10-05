@@ -32,13 +32,14 @@ trait StrictPortalInnerProps extends js.Object {
 object StrictPortalInnerProps {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     innerRef: Ref[_] = null,
     mountNode: js.Any = null,
     onMount: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit = null,
     onUnmount: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit = null
   ): StrictPortalInnerProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
     if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))

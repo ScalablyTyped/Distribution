@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "AST")
 @js.native
 class AST ()
-  extends typings.typescriptDashServices.TypeScriptNs.AST
+  extends typings.typescriptDashServices.TypeScript.AST
 

@@ -56,12 +56,6 @@ trait FormData extends _BodyInit {
 
 @JSGlobal("FormData")
 @js.native
-class FormDataCls () extends FormData {
-  def this(form: HTMLFormElement) = this()
-}
-
-@JSGlobal("FormData")
-@js.native
 object FormData
   extends Instantiable0[FormData]
      with Instantiable1[/* form */ HTMLFormElement, FormData]

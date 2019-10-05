@@ -3,8 +3,8 @@ package typings.googleDashProtobuf.googleDashProtobufMod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.googleDashProtobuf.Anon_T
 import typings.googleDashProtobuf.TypeofClassMessage
-import typings.googleDashProtobuf.googleDashProtobufMod.MessageNs.MessageArray
-import typings.googleDashProtobuf.googleDashProtobufMod.MessageNs.StaticToObject
+import typings.googleDashProtobuf.googleDashProtobufMod.Message.MessageArray
+import typings.googleDashProtobuf.googleDashProtobufMod.Message.StaticToObject
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -154,5 +154,7 @@ object Message extends js.Object {
     toObjectFn: js.Function2[/* includeInstance */ Boolean, /* data */ T, js.Object],
     includeInstance: Boolean
   ): js.Array[js.Object] = js.native
+  type MessageArray = js.Array[js.Any]
+  type StaticToObject = js.Function2[/* includeInstance */ Boolean, /* msg */ Message, js.Object]
 }
 

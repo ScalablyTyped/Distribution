@@ -13,8 +13,8 @@ trait BaseTransition extends js.Object {
 
 object BaseTransition {
   @scala.inline
-  def apply(in: Boolean, onExited: fn): BaseTransition = {
-    val __obj = js.Dynamic.literal(in = in, onExited = onExited)
+  def apply(in: Boolean, onExited: () => Unit): BaseTransition = {
+    val __obj = js.Dynamic.literal(in = in, onExited = js.Any.fromFunction0(onExited))
   
     __obj.asInstanceOf[BaseTransition]
   }

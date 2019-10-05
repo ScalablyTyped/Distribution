@@ -27,7 +27,7 @@ object CreateTransitGatewayRequest {
   @scala.inline
   def apply(
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: TransitGatewayRequestOptions = null,
     TagSpecifications: TagSpecificationList = null
   ): CreateTransitGatewayRequest = {

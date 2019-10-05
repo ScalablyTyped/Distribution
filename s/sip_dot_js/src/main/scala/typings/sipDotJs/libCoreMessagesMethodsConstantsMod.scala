@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/messages/methods/constants", JSImport.Namespace)
 @js.native
 object libCoreMessagesMethodsConstantsMod extends js.Object {
-  @JSName("C")
   @js.native
-  object CNs extends js.Object {
+  object C extends js.Object {
     val ACK: typings.sipDotJs.sipDotJsStrings.ACK = js.native
     val BYE: typings.sipDotJs.sipDotJsStrings.BYE = js.native
     val CANCEL: typings.sipDotJs.sipDotJsStrings.CANCEL = js.native

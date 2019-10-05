@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ComponentSystemRegistry")
 @js.native
 class ComponentSystemRegistry ()
-  extends typings.playcanvas.pcNs.ComponentSystemRegistry
+  extends typings.playcanvas.pc.ComponentSystemRegistry
 

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportIdentifyParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IdentifyParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IdentifyParametersProperties
+import typings.arcgisDashJsDashApi.__esri.IdentifyParameters
+import typings.arcgisDashJsDashApi.__esri.IdentifyParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

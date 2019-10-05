@@ -1,6 +1,6 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPNs.JsGridNs.IStyleTypeNs.Header
+import typings.sharepoint.SP.JsGrid.IStyleType.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

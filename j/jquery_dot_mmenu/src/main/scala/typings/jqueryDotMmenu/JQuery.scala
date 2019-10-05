@@ -1,8 +1,8 @@
 package typings.jqueryDotMmenu
 
-import typings.jqueryDotMmenu.JQueryMmenuNs.API
-import typings.jqueryDotMmenu.JQueryMmenuNs.Configurations
-import typings.jqueryDotMmenu.JQueryMmenuNs.Options
+import typings.jqueryDotMmenu.JQueryMmenu.API
+import typings.jqueryDotMmenu.JQueryMmenu.Configurations
+import typings.jqueryDotMmenu.JQueryMmenu.Options
 import typings.jqueryDotMmenu.jqueryDotMmenuStrings.mmenu
 import scala.scalajs.js
 import scala.scalajs.js.`|`

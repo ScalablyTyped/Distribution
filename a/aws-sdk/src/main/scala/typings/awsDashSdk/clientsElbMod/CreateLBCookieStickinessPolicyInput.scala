@@ -24,10 +24,10 @@ object CreateLBCookieStickinessPolicyInput {
   def apply(
     LoadBalancerName: AccessPointName,
     PolicyName: PolicyName,
-    CookieExpirationPeriod: js.UndefOr[CookieExpirationPeriod] = js.undefined
+    CookieExpirationPeriod: Int | Double = null
   ): CreateLBCookieStickinessPolicyInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName, PolicyName = PolicyName)
-    if (!js.isUndefined(CookieExpirationPeriod)) __obj.updateDynamic("CookieExpirationPeriod")(CookieExpirationPeriod)
+    if (CookieExpirationPeriod != null) __obj.updateDynamic("CookieExpirationPeriod")(CookieExpirationPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLBCookieStickinessPolicyInput]
   }
 }

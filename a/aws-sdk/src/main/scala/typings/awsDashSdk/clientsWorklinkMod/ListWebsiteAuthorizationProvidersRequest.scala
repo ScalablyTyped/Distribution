@@ -21,9 +21,9 @@ trait ListWebsiteAuthorizationProvidersRequest extends js.Object {
 
 object ListWebsiteAuthorizationProvidersRequest {
   @scala.inline
-  def apply(FleetArn: FleetArn, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListWebsiteAuthorizationProvidersRequest = {
+  def apply(FleetArn: FleetArn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListWebsiteAuthorizationProvidersRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListWebsiteAuthorizationProvidersRequest]
   }

@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportElevationSamplerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ElevationSampler
+import typings.arcgisDashJsDashApi.__esri.ElevationSampler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

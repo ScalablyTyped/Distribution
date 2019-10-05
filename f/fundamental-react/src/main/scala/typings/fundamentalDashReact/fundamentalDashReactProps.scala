@@ -119,12 +119,6 @@ trait fundamentalDashReactProps {
   def LabelProps: typings.fundamentalDashReact.libBadgeLabelMod.LabelProps.type = typings.fundamentalDashReact.libBadgeLabelMod.LabelProps
   type LabelProps = typings.fundamentalDashReact.libBadgeLabelMod.LabelProps
   @scala.inline
-  def ListProps: typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps.type = typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps
-  type ListProps = typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListProps
-  @scala.inline
-  def ListItemProps: typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps.type = typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps
-  type ListItemProps = typings.fundamentalDashReact.libSideNavigationSideNavMod.SideNavListItemProps
-  @scala.inline
   def LocalizationEditorProps: typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps.type = typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
   type LocalizationEditorProps = typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
   @scala.inline
@@ -207,55 +201,5 @@ trait fundamentalDashReactProps {
   @scala.inline
   def TreeViewTreeProps: typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps.type = typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps
   type TreeViewTreeProps = typings.fundamentalDashReact.libTreeViewTreeViewMod.TreeProps
-  @scala.inline
-  def libBadgeModBadgeProps: typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps.type = typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps
-  type libBadgeModBadgeProps = typings.fundamentalDashReact.libBadgeBadgeMod.BadgeProps
-  @scala.inline
-  def libBadgeModCounterProps: typings.fundamentalDashReact.libBadgeCounterMod.CounterProps.type = typings.fundamentalDashReact.libBadgeCounterMod.CounterProps
-  type libBadgeModCounterProps = typings.fundamentalDashReact.libBadgeCounterMod.CounterProps
-  @scala.inline
-  def libBadgeModLabelProps: typings.fundamentalDashReact.libBadgeLabelMod.LabelProps.type = typings.fundamentalDashReact.libBadgeLabelMod.LabelProps
-  type libBadgeModLabelProps = typings.fundamentalDashReact.libBadgeLabelMod.LabelProps
-  @scala.inline
-  def libBadgeModStatusProps: typings.fundamentalDashReact.libBadgeStatusMod.StatusProps.type = typings.fundamentalDashReact.libBadgeStatusMod.StatusProps
-  type libBadgeModStatusProps = typings.fundamentalDashReact.libBadgeStatusMod.StatusProps
-  @scala.inline
-  def libButtonModButtonProps: typings.fundamentalDashReact.libButtonButtonMod.ButtonProps.type = typings.fundamentalDashReact.libButtonButtonMod.ButtonProps
-  type libButtonModButtonProps = typings.fundamentalDashReact.libButtonButtonMod.ButtonProps
-  type libButtonModButtonGroupProps = typings.fundamentalDashReact.libButtonButtonGroupMod.ButtonGroupProps
-  @scala.inline
-  def libComboboxInputModComboboxInputProps: typings.fundamentalDashReact.libComboboxInputComboboxInputMod.ComboboxInputProps.type = typings.fundamentalDashReact.libComboboxInputComboboxInputMod.ComboboxInputProps
-  type libComboboxInputModComboboxInputProps = typings.fundamentalDashReact.libComboboxInputComboboxInputMod.ComboboxInputProps
-  @scala.inline
-  def libDropdownModDropdownProps: typings.fundamentalDashReact.libDropdownDropdownMod.DropdownProps.type = typings.fundamentalDashReact.libDropdownDropdownMod.DropdownProps
-  type libDropdownModDropdownProps = typings.fundamentalDashReact.libDropdownDropdownMod.DropdownProps
-  @scala.inline
-  def libIconModIconProps: typings.fundamentalDashReact.libIconIconMod.IconProps.type = typings.fundamentalDashReact.libIconIconMod.IconProps
-  type libIconModIconProps = typings.fundamentalDashReact.libIconIconMod.IconProps
-  @scala.inline
-  def libIdentifierModIdentifierProps: typings.fundamentalDashReact.libIdentifierIdentifierMod.IdentifierProps.type = typings.fundamentalDashReact.libIdentifierIdentifierMod.IdentifierProps
-  type libIdentifierModIdentifierProps = typings.fundamentalDashReact.libIdentifierIdentifierMod.IdentifierProps
-  @scala.inline
-  def libImageModImageProps: typings.fundamentalDashReact.libImageImageMod.ImageProps.type = typings.fundamentalDashReact.libImageImageMod.ImageProps
-  type libImageModImageProps = typings.fundamentalDashReact.libImageImageMod.ImageProps
-  @scala.inline
-  def libInlineHelpModInlineHelpProps: typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpProps.type = typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpProps
-  type libInlineHelpModInlineHelpProps = typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpProps
-  type libInputGroupFormGroupModFormGroupProps[T] = StringDictionary[T]
-  @scala.inline
-  def libLocalizationEditorModLocalizationEditorProps: typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps.type = typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
-  type libLocalizationEditorModLocalizationEditorProps = typings.fundamentalDashReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
-  @scala.inline
-  def libPanelModPanelGridProps: typings.fundamentalDashReact.libPanelPanelGridMod.PanelGridProps.type = typings.fundamentalDashReact.libPanelPanelGridMod.PanelGridProps
-  type libPanelModPanelGridProps = typings.fundamentalDashReact.libPanelPanelGridMod.PanelGridProps
-  @scala.inline
-  def libTableModTableProps: typings.fundamentalDashReact.libTableTableMod.TableProps.type = typings.fundamentalDashReact.libTableTableMod.TableProps
-  type libTableModTableProps = typings.fundamentalDashReact.libTableTableMod.TableProps
-  @scala.inline
-  def libTileModTileGridProps: typings.fundamentalDashReact.libTileTileGridMod.TileGridProps.type = typings.fundamentalDashReact.libTileTileGridMod.TileGridProps
-  type libTileModTileGridProps = typings.fundamentalDashReact.libTileTileGridMod.TileGridProps
-  @scala.inline
-  def libTokenModTokenProps: typings.fundamentalDashReact.libTokenTokenMod.TokenProps.type = typings.fundamentalDashReact.libTokenTokenMod.TokenProps
-  type libTokenModTokenProps = typings.fundamentalDashReact.libTokenTokenMod.TokenProps
 }
 

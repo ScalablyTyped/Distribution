@@ -20,12 +20,6 @@ trait VTTCue extends TextTrackCue {
 
 @JSGlobal("VTTCue")
 @js.native
-class VTTCueCls protected () extends VTTCue {
-  def this(startTime: Double, endTime: Double, text: java.lang.String) = this()
-}
-
-@JSGlobal("VTTCue")
-@js.native
 object VTTCue
   extends Instantiable3[/* startTime */ Double, /* endTime */ Double, /* text */ java.lang.String, VTTCue]
 

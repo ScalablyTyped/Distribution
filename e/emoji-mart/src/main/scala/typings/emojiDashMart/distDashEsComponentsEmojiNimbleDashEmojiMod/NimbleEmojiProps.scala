@@ -3,7 +3,6 @@ package typings.emojiDashMart.distDashEsComponentsEmojiNimbleDashEmojiMod
 import typings.emojiDashMart.distDashEsUtilsDataMod.Data
 import typings.emojiDashMart.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData
 import typings.emojiDashMart.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
-import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.BackgroundImageFn
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSet
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
@@ -25,7 +24,7 @@ object NimbleEmojiProps {
     data: Data,
     emoji: String | EmojiData,
     size: Double,
-    backgroundImageFn: BackgroundImageFn = null,
+    backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
     fallback: (/* emoji */ EmojiData, NimbleEmojiProps) => Component[js.Object, js.Object, _] = null,
     forceSize: js.UndefOr[Boolean] = js.undefined,
     html: js.UndefOr[Boolean] = js.undefined,
@@ -41,7 +40,7 @@ object NimbleEmojiProps {
     tooltip: js.UndefOr[Boolean] = js.undefined
   ): NimbleEmojiProps = {
     val __obj = js.Dynamic.literal(data = data, emoji = emoji.asInstanceOf[js.Any], size = size)
-    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
+    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize)
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)

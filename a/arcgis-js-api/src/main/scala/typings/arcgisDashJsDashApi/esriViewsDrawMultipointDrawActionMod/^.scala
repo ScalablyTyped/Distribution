@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawMultipointDrawActionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MultipointDrawActionConstructor
+import typings.arcgisDashJsDashApi.__esri.MultipointDrawActionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

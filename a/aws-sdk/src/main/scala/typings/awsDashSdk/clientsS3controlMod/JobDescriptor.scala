@@ -78,7 +78,7 @@ trait JobDescriptor extends js.Object {
 object JobDescriptor {
   @scala.inline
   def apply(
-    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
+    ConfirmationRequired: js.UndefOr[scala.Boolean] = js.undefined,
     CreationTime: JobCreationTime = null,
     Description: NonEmptyMaxLength256String = null,
     FailureReasons: JobFailureList = null,
@@ -86,7 +86,7 @@ object JobDescriptor {
     JobId: JobId = null,
     Manifest: JobManifest = null,
     Operation: JobOperation = null,
-    Priority: js.UndefOr[JobPriority] = js.undefined,
+    Priority: Int | Double = null,
     ProgressSummary: JobProgressSummary = null,
     Report: JobReport = null,
     RoleArn: IAMRoleArn = null,
@@ -105,7 +105,7 @@ object JobDescriptor {
     if (JobId != null) __obj.updateDynamic("JobId")(JobId)
     if (Manifest != null) __obj.updateDynamic("Manifest")(Manifest)
     if (Operation != null) __obj.updateDynamic("Operation")(Operation)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (ProgressSummary != null) __obj.updateDynamic("ProgressSummary")(ProgressSummary)
     if (Report != null) __obj.updateDynamic("Report")(Report)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)

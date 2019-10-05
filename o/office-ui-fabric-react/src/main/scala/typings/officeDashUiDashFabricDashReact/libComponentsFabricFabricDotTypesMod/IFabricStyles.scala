@@ -11,9 +11,9 @@ trait IFabricStyles extends js.Object {
 
 object IFabricStyles {
   @scala.inline
-  def apply(root: IStyle): IFabricStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IFabricStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFabricStyles]
   }
 }

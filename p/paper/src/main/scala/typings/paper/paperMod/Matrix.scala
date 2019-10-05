@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Matrix")
 @js.native
 class Matrix protected ()
-  extends typings.paper.paperNs.Matrix {
+  extends typings.paper.paper.Matrix {
   /**
     * Creates a 2D affine transformation matrix
     * @param matrix - the matrix to copy the values from
     */
-  def this(matrix: typings.paper.paperNs.Matrix) = this()
+  def this(matrix: typings.paper.paper.Matrix) = this()
   /**
     * Creates a 2D affine transformation matrix
     * @param array - the matrix values to initialize this matrix with

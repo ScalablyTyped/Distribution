@@ -32,7 +32,7 @@ object PurchaseReservedInstancesOfferingRequest {
   def apply(
     InstanceCount: Integer,
     ReservedInstancesOfferingId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LimitPrice: ReservedInstanceLimitPrice = null,
     PurchaseTime: DateTime = null
   ): PurchaseReservedInstancesOfferingRequest = {

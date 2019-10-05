@@ -37,14 +37,14 @@ object SearchFlowExecutionsRequest {
     systemInstanceId: Urn,
     endTime: Timestamp = null,
     flowExecutionId: FlowExecutionId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     startTime: Timestamp = null
   ): SearchFlowExecutionsRequest = {
     val __obj = js.Dynamic.literal(systemInstanceId = systemInstanceId)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (flowExecutionId != null) __obj.updateDynamic("flowExecutionId")(flowExecutionId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)
     __obj.asInstanceOf[SearchFlowExecutionsRequest]

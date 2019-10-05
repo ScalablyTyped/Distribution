@@ -1,6 +1,6 @@
 package typings.hapi
 
-import typings.hapi.hapiMod.LifecycleNs._FailAction
+import typings.hapi.hapiMod.Lifecycle._FailAction
 import typings.hapi.hapiMod.PayloadOutput
 import typings.hapi.hapiMod.ReferrerPolicy
 import typings.hapi.hapiMod.RequestEventType
@@ -8,9 +8,9 @@ import typings.hapi.hapiMod.RouteOptionsAccessEntity
 import typings.hapi.hapiMod.RouteRequestExtType
 import typings.hapi.hapiMod.ServerExtType
 import typings.hapi.hapiMod.ServerRequestExtType
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.hapi.hapiMod.Util.HTTP_METHODS
+import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL
+import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

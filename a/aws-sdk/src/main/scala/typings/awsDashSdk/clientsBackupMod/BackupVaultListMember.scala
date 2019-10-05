@@ -39,7 +39,7 @@ object BackupVaultListMember {
     CreationDate: timestamp = null,
     CreatorRequestId: String = null,
     EncryptionKeyArn: ARN = null,
-    NumberOfRecoveryPoints: js.UndefOr[long] = js.undefined
+    NumberOfRecoveryPoints: Int | Double = null
   ): BackupVaultListMember = {
     val __obj = js.Dynamic.literal()
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn)
@@ -47,7 +47,7 @@ object BackupVaultListMember {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId)
     if (EncryptionKeyArn != null) __obj.updateDynamic("EncryptionKeyArn")(EncryptionKeyArn)
-    if (!js.isUndefined(NumberOfRecoveryPoints)) __obj.updateDynamic("NumberOfRecoveryPoints")(NumberOfRecoveryPoints)
+    if (NumberOfRecoveryPoints != null) __obj.updateDynamic("NumberOfRecoveryPoints")(NumberOfRecoveryPoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupVaultListMember]
   }
 }

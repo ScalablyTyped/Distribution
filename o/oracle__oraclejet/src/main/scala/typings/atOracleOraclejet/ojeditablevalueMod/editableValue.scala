@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojeditablevalueMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_ConverterHint
 import typings.atOracleOraclejet.Anon_Definition
 import typings.atOracleOraclejet.Anon_Instruction
@@ -25,9 +27,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.validChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.value
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valueChanged
-import typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojeditablevalueMod.editableValueNs.ojAnimateStart
+import typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd
+import typings.atOracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateStart
 import typings.atOracleOraclejet.ojmessagingMod.^
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -238,5 +241,12 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("setProperty")
   def setProperty_value(property: value, value: SV): Unit = js.native
   def showMessages(): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojeditablevalue", "editableValue")
+@js.native
+object editableValue extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

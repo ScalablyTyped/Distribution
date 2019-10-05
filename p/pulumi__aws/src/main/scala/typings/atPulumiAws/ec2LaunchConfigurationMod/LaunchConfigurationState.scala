@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ec2LaunchConfigurationMod
 
 import typings.atPulumiAws.iamMod.InstanceProfile
-import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationEbsBlockDevice
-import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationEphemeralBlockDevice
-import typings.atPulumiAws.typesInputMod.ec2Ns.LaunchConfigurationRootBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.LaunchConfigurationEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.LaunchConfigurationEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.LaunchConfigurationRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

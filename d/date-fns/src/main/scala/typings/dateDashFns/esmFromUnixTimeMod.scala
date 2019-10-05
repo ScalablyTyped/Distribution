@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/fromUnixTime", JSImport.Namespace)
 @js.native
 object esmFromUnixTimeMod extends js.Object {
-  def default(unixTime: Double): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(unixTime: Double): Date = js.native
+  }
+  
 }
 

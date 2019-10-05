@@ -1,8 +1,8 @@
 package typings.validator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.validator.ValidatorJSNs.IsMobilePhoneOptions
-import typings.validator.ValidatorJSNs.MobilePhoneLocale
+import typings.validator.ValidatorJS.IsMobilePhoneOptions
+import typings.validator.ValidatorJS.MobilePhoneLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

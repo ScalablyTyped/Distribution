@@ -1,6 +1,7 @@
 package typings.vue.typesVueMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.Record
 import typings.vue.Fn_Array
@@ -210,4 +211,8 @@ trait Vue extends js.Object {
     options: WatchOptions
   ): js.Function0[Unit] = js.native
 }
+
+@JSImport("vue/types/vue", "Vue")
+@js.native
+object Vue extends TopLevel[VueConstructor[Vue]]
 

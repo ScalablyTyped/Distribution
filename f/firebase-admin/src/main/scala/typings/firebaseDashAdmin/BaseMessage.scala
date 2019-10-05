@@ -1,11 +1,11 @@
 package typings.firebaseDashAdmin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseDashAdmin.adminNs.messagingNs.AndroidConfig
-import typings.firebaseDashAdmin.adminNs.messagingNs.ApnsConfig
-import typings.firebaseDashAdmin.adminNs.messagingNs.FcmOptions
-import typings.firebaseDashAdmin.adminNs.messagingNs.Notification
-import typings.firebaseDashAdmin.adminNs.messagingNs.WebpushConfig
+import typings.firebaseDashAdmin.admin.messaging.AndroidConfig
+import typings.firebaseDashAdmin.admin.messaging.ApnsConfig
+import typings.firebaseDashAdmin.admin.messaging.FcmOptions
+import typings.firebaseDashAdmin.admin.messaging.Notification
+import typings.firebaseDashAdmin.admin.messaging.WebpushConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.nomnom
 
-import typings.nomnom.NomnomInternalNs.Parser
+import typings.nomnom.NomnomInternal.Parser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

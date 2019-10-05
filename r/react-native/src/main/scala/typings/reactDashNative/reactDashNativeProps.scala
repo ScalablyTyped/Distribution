@@ -1,5 +1,6 @@
 package typings.reactDashNative
 
+import typings.react.reactMod.ReactType
 import typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
 import typings.reactDashNative.reactDashNativeMod.ARTGroupProps
 import typings.reactDashNative.reactDashNativeMod.ARTShapeProps
@@ -10,23 +11,23 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeProps {
   @scala.inline
-  def ARTNsClippingRectangleProps: ARTClippingRectangleProps.type = typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
-  type ARTNsClippingRectangleProps = ARTClippingRectangleProps
+  def ARTClippingRectangleClsProps: ARTClippingRectangleProps.type = typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
+  type ARTClippingRectangleClsProps = ARTClippingRectangleProps
   @scala.inline
-  def ARTNsGroupProps: ARTGroupProps.type = typings.reactDashNative.reactDashNativeMod.ARTGroupProps
-  type ARTNsGroupProps = ARTGroupProps
+  def ARTGroupClsProps: ARTGroupProps.type = typings.reactDashNative.reactDashNativeMod.ARTGroupProps
+  type ARTGroupClsProps = ARTGroupProps
   @scala.inline
-  def ARTNsShapeProps: ARTShapeProps.type = typings.reactDashNative.reactDashNativeMod.ARTShapeProps
-  type ARTNsShapeProps = ARTShapeProps
+  def ARTShapeClsProps: ARTShapeProps.type = typings.reactDashNative.reactDashNativeMod.ARTShapeProps
+  type ARTShapeClsProps = ARTShapeProps
   @scala.inline
-  def ARTNsSurfaceProps: ARTSurfaceProps.type = typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps
-  type ARTNsSurfaceProps = ARTSurfaceProps
-  @scala.inline
-  def ARTNsTextProps: typings.reactDashNative.reactDashNativeMod.ARTTextProps.type = typings.reactDashNative.reactDashNativeMod.ARTTextProps
-  type ARTNsTextProps = typings.reactDashNative.reactDashNativeMod.ARTTextProps
+  def ARTSurfaceClsProps: ARTSurfaceProps.type = typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps
+  type ARTSurfaceClsProps = ARTSurfaceProps
   @scala.inline
   def ARTTextProps: typings.reactDashNative.reactDashNativeMod.ARTTextProps.type = typings.reactDashNative.reactDashNativeMod.ARTTextProps
   type ARTTextProps = typings.reactDashNative.reactDashNativeMod.ARTTextProps
+  @scala.inline
+  def ARTTextClsProps: typings.reactDashNative.reactDashNativeMod.ARTTextProps.type = typings.reactDashNative.reactDashNativeMod.ARTTextProps
+  type ARTTextClsProps = typings.reactDashNative.reactDashNativeMod.ARTTextProps
   @scala.inline
   def ActivityIndicatorProps: typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps.type = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps
   type ActivityIndicatorProps = typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps
@@ -39,6 +40,7 @@ trait reactDashNativeProps {
   @scala.inline
   def ClippingRectangleProps: ARTClippingRectangleProps.type = typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
   type ClippingRectangleProps = ARTClippingRectangleProps
+  type CreateElementProps[P] = ReactType[P]
   @scala.inline
   def DatePickerIOSProps: typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps.type = typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps
   type DatePickerIOSProps = typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps

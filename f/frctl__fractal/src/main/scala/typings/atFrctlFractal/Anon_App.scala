@@ -1,8 +1,8 @@
 package typings.atFrctlFractal
 
 import typings.atFrctlFractal.atFrctlFractalMod.Adapter
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity
-import typings.atFrctlFractal.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.EntitySource
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.Entity
+import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.EntitySource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

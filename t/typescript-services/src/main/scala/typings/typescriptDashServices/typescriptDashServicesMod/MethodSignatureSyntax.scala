@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MethodSignatureSyntax")
 @js.native
 class MethodSignatureSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.MethodSignatureSyntax {
+  extends typings.typescriptDashServices.TypeScript.MethodSignatureSyntax {
   def this(
     propertyName: ISyntaxToken,
     questionToken: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -23,8 +23,8 @@ class MethodSignatureSyntax protected ()
 object MethodSignatureSyntax extends js.Object {
   def create(
     propertyName: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.MethodSignatureSyntax = js.native
-  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.MethodSignatureSyntax = js.native
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax
+  ): typings.typescriptDashServices.TypeScript.MethodSignatureSyntax = js.native
+  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScript.MethodSignatureSyntax = js.native
 }
 

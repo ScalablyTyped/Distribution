@@ -17,7 +17,6 @@ class IonSegment protected () extends js.Object {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionChange: EventEmitter[CustomEvent[_]] = js.native
-  var ionStyle: EventEmitter[CustomEvent[_]] = js.native
   var z: NgZone = js.native
 }
 

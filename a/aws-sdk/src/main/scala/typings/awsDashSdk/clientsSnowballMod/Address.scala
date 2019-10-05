@@ -70,7 +70,7 @@ object Address {
     City: String = null,
     Company: String = null,
     Country: String = null,
-    IsRestricted: js.UndefOr[Boolean] = js.undefined,
+    IsRestricted: js.UndefOr[scala.Boolean] = js.undefined,
     Landmark: String = null,
     Name: String = null,
     PhoneNumber: String = null,

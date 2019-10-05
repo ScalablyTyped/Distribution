@@ -24,7 +24,7 @@ object StartInstancesRequest {
   def apply(
     InstanceIds: InstanceIdStringList,
     AdditionalInfo: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): StartInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds)
     if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo)

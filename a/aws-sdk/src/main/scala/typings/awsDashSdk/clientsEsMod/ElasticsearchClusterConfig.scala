@@ -38,19 +38,19 @@ trait ElasticsearchClusterConfig extends js.Object {
 object ElasticsearchClusterConfig {
   @scala.inline
   def apply(
-    DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined,
-    DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined,
+    DedicatedMasterCount: Int | scala.Double = null,
+    DedicatedMasterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     DedicatedMasterType: ESPartitionInstanceType = null,
-    InstanceCount: js.UndefOr[IntegerClass] = js.undefined,
+    InstanceCount: Int | scala.Double = null,
     InstanceType: ESPartitionInstanceType = null,
     ZoneAwarenessConfig: ZoneAwarenessConfig = null,
-    ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
+    ZoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ElasticsearchClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DedicatedMasterCount)) __obj.updateDynamic("DedicatedMasterCount")(DedicatedMasterCount)
+    if (DedicatedMasterCount != null) __obj.updateDynamic("DedicatedMasterCount")(DedicatedMasterCount.asInstanceOf[js.Any])
     if (!js.isUndefined(DedicatedMasterEnabled)) __obj.updateDynamic("DedicatedMasterEnabled")(DedicatedMasterEnabled)
     if (DedicatedMasterType != null) __obj.updateDynamic("DedicatedMasterType")(DedicatedMasterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (ZoneAwarenessConfig != null) __obj.updateDynamic("ZoneAwarenessConfig")(ZoneAwarenessConfig)
     if (!js.isUndefined(ZoneAwarenessEnabled)) __obj.updateDynamic("ZoneAwarenessEnabled")(ZoneAwarenessEnabled)

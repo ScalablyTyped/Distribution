@@ -1,6 +1,8 @@
 package typings.semanticDashUiDashReact.semanticDashUiDashReactMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps
 import scala.scalajs.js
@@ -14,4 +16,8 @@ class AccordionTitle protected ()
   def this(props: AccordionTitleProps) = this()
   def this(props: AccordionTitleProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react", "AccordionTitle")
+@js.native
+object AccordionTitle extends TopLevel[ComponentClass[AccordionTitleProps, ComponentState]]
 

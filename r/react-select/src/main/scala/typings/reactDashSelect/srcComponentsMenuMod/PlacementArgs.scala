@@ -22,13 +22,13 @@ object PlacementArgs {
   def apply(
     isFixedPosition: Boolean,
     maxHeight: Double,
-    menuEl: Ref[_],
     minHeight: Double,
     placement: bottom | top | auto,
-    shouldScroll: Boolean
+    shouldScroll: Boolean,
+    menuEl: Ref[_] = null
   ): PlacementArgs = {
-    val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition, maxHeight = maxHeight, menuEl = menuEl.asInstanceOf[js.Any], minHeight = minHeight, placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll)
-  
+    val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition, maxHeight = maxHeight, minHeight = minHeight, placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll)
+    if (menuEl != null) __obj.updateDynamic("menuEl")(menuEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementArgs]
   }
 }

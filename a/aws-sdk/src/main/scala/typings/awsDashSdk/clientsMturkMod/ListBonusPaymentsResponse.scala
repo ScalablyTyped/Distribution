@@ -21,12 +21,12 @@ object ListBonusPaymentsResponse {
   def apply(
     BonusPayments: BonusPaymentList = null,
     NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined
+    NumResults: Int | Double = null
   ): ListBonusPaymentsResponse = {
     val __obj = js.Dynamic.literal()
     if (BonusPayments != null) __obj.updateDynamic("BonusPayments")(BonusPayments)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults)
+    if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBonusPaymentsResponse]
   }
 }

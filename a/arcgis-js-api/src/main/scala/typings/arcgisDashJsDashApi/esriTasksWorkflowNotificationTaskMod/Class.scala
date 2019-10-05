@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksWorkflowNotificationTaskMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NotificationTask
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NotificationTaskProperties
+import typings.arcgisDashJsDashApi.__esri.NotificationTask
+import typings.arcgisDashJsDashApi.__esri.NotificationTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

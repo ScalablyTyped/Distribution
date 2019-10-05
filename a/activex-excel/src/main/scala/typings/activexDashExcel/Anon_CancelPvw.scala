@@ -1,6 +1,6 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.ProtectedViewWindow
+import typings.activexDashExcel.Excel.ProtectedViewWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

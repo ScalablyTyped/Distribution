@@ -1,8 +1,8 @@
 package typings.webgme
 
 import typings.std.Error
-import typings.webgme.CoreNs.Node
-import typings.webgme.GmeCommonNs.InAttr
+import typings.webgme.Core.Node
+import typings.webgme.GmeCommon.InAttr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

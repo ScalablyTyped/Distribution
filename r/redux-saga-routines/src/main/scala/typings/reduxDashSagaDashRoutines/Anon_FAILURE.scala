@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_FAILURE[TRequestPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TSuccessPayloadCreator, TTriggerPayloadCreator] extends js.Object {
+trait Anon_FAILURE[TRequestPayloadCreator, TFulfillPayloadCreator, TSuccessPayloadCreator, TTriggerPayloadCreator, TFailurePayloadCreator] extends js.Object {
   var FAILURE: js.UndefOr[TFailurePayloadCreator] = js.undefined
   var FULFILL: js.UndefOr[TFulfillPayloadCreator] = js.undefined
   var REQUEST: js.UndefOr[TRequestPayloadCreator] = js.undefined
@@ -17,7 +17,7 @@ trait Anon_FAILURE[TRequestPayloadCreator, TFailurePayloadCreator, TFulfillPaylo
   var trigger: js.UndefOr[TTriggerPayloadCreator] = js.undefined
 }
 
-trait Anon_Failure[TFulfillActionCreator, TFailureActionCreator, TRequestActionCreator, TTriggerActionCreator, TSuccessActionCreator] extends js.Object {
+trait Anon_Failure[TFailureActionCreator, TTriggerActionCreator, TFulfillActionCreator, TRequestActionCreator, TSuccessActionCreator] extends js.Object {
   var failure: TFailureActionCreator
   var fulfill: TFulfillActionCreator
   var request: TRequestActionCreator
@@ -27,7 +27,7 @@ trait Anon_Failure[TFulfillActionCreator, TFailureActionCreator, TRequestActionC
 
 object Anon_FAILURE {
   @scala.inline
-  def apply[TRequestPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TSuccessPayloadCreator, TTriggerPayloadCreator](
+  def apply[TRequestPayloadCreator, TFulfillPayloadCreator, TSuccessPayloadCreator, TTriggerPayloadCreator, TFailurePayloadCreator](
     FAILURE: TFailurePayloadCreator = null,
     FULFILL: TFulfillPayloadCreator = null,
     REQUEST: TRequestPayloadCreator = null,
@@ -40,10 +40,10 @@ object Anon_FAILURE {
     trigger: TTriggerPayloadCreator = null
   ): Anon_FAILURE[
     TRequestPayloadCreator, 
-    TFailurePayloadCreator, 
     TFulfillPayloadCreator, 
     TSuccessPayloadCreator, 
-    TTriggerPayloadCreator
+    TTriggerPayloadCreator, 
+    TFailurePayloadCreator
   ] = {
     val __obj = js.Dynamic.literal()
     if (FAILURE != null) __obj.updateDynamic("FAILURE")(FAILURE.asInstanceOf[js.Any])
@@ -58,35 +58,35 @@ object Anon_FAILURE {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FAILURE[
   TRequestPayloadCreator, 
-  TFailurePayloadCreator, 
   TFulfillPayloadCreator, 
   TSuccessPayloadCreator, 
-  TTriggerPayloadCreator]]
+  TTriggerPayloadCreator, 
+  TFailurePayloadCreator]]
   }
 }
 
 object Anon_Failure {
   @scala.inline
-  def apply[TFulfillActionCreator, TFailureActionCreator, TRequestActionCreator, TTriggerActionCreator, TSuccessActionCreator](
+  def apply[TFailureActionCreator, TTriggerActionCreator, TFulfillActionCreator, TRequestActionCreator, TSuccessActionCreator](
     failure: TFailureActionCreator,
     fulfill: TFulfillActionCreator,
     request: TRequestActionCreator,
     success: TSuccessActionCreator,
     trigger: TTriggerActionCreator
   ): Anon_Failure[
-    TFulfillActionCreator, 
     TFailureActionCreator, 
-    TRequestActionCreator, 
     TTriggerActionCreator, 
+    TFulfillActionCreator, 
+    TRequestActionCreator, 
     TSuccessActionCreator
   ] = {
     val __obj = js.Dynamic.literal(failure = failure.asInstanceOf[js.Any], fulfill = fulfill.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Failure[
-  TFulfillActionCreator, 
   TFailureActionCreator, 
-  TRequestActionCreator, 
   TTriggerActionCreator, 
+  TFulfillActionCreator, 
+  TRequestActionCreator, 
   TSuccessActionCreator]]
   }
 }

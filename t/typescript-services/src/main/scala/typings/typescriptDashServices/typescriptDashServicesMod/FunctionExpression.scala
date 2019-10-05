@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionExpression")
 @js.native
 class FunctionExpression protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionExpression {
+  extends typings.typescriptDashServices.TypeScript.FunctionExpression {
   def this(
-    identifier: typings.typescriptDashServices.TypeScriptNs.Identifier,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignature,
-    block: typings.typescriptDashServices.TypeScriptNs.Block
+    identifier: typings.typescriptDashServices.TypeScript.Identifier,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignature,
+    block: typings.typescriptDashServices.TypeScript.Block
   ) = this()
 }
 

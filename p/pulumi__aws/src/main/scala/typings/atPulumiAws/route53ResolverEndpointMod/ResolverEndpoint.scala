@@ -1,7 +1,7 @@
 package typings.atPulumiAws.route53ResolverEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.route53Ns.ResolverEndpointIpAddress
+import typings.atPulumiAws.typesOutputMod.route53.ResolverEndpointIpAddress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

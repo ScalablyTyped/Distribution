@@ -9,8 +9,8 @@ package object distTypesMod {
   import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
   import typings.reactDashIntl.reactDashIntlStrings.localeMatcher
   import typings.std.Exclude
-  import typings.std.IntlNs.DateTimeFormatOptions
-  import typings.std.IntlNs.PluralRulesOptions
+  import typings.std.Intl.DateTimeFormatOptions
+  import typings.std.Intl.PluralRulesOptions
   import typings.std.Pick
 
   type FormatDateOptions = (Exclude[DateTimeFormatOptions, localeMatcher]) with CustomFormatConfig

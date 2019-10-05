@@ -1,8 +1,5 @@
 package typings.webix.webixMod
 
-import typings.std.Event
-import typings.std.HTMLElement
-import typings.webix.webixMod.uiNs.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -104,95 +101,5 @@ object ^ extends js.Object {
   var rules: typings.webix.webixMod.rules = js.native
   var storage: typings.webix.webixMod.storage = js.native
   var version: String = js.native
-  @JSName("$$")
-  def $$(id: String): baseview = js.native
-  @JSName("$$")
-  def $$(id: Event): baseview = js.native
-  @JSName("$$")
-  def $$(id: HTMLElement): baseview = js.native
-  def ajax(): Ajax | js.Promise[_] = js.native
-  def ajax(url: String): Ajax | js.Promise[_] = js.native
-  def ajax(url: String, params: js.Any): Ajax | js.Promise[_] = js.native
-  def alert(text: js.Any): js.Promise[_] = js.native
-  def alert(text: js.Any, `type`: String): js.Promise[_] = js.native
-  def alert(text: js.Any, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
-  def alert(text: js.Any, `type`: WebixCallback): js.Promise[_] = js.native
-  def alert(text: js.Any, `type`: WebixCallback, callback: WebixCallback): js.Promise[_] = js.native
-  def animate(html_element: HTMLElement, animation: js.Any): Unit = js.native
-  def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
-  def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
-  def bind(code: WebixCallback, master: js.Any): WebixCallback = js.native
-  def blockEvent(): Unit = js.native
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
-  def clone(source: js.Any): js.Any = js.native
-  def confirm(text: js.Any): js.Promise[_] = js.native
-  def confirm(text: js.Any, `type`: String): js.Promise[_] = js.native
-  def confirm(text: js.Any, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
-  def confirm(text: js.Any, `type`: WebixCallback): js.Promise[_] = js.native
-  def confirm(text: js.Any, `type`: WebixCallback, callback: WebixCallback): js.Promise[_] = js.native
-  def copy(source: js.Any): js.Any = js.native
-  def delay(code: WebixCallback): Double = js.native
-  def delay(code: WebixCallback, owner: js.Any): Double = js.native
-  def delay(code: WebixCallback, owner: js.Any, params: js.Array[_]): Double = js.native
-  def delay(code: WebixCallback, owner: js.Any, params: js.Array[_], delay: Double): Double = js.native
-  def detachEvent(id: String): Unit = js.native
-  def dp(name: js.Any): js.Any = js.native
-  def editStop(): Unit = js.native
-  def event(node: String, event: String, handler: WebixCallback): String | Double = js.native
-  def event(node: String, event: String, handler: WebixCallback, context: js.Any): String | Double = js.native
-  def event(node: HTMLElement, event: String, handler: WebixCallback): String | Double = js.native
-  def event(node: HTMLElement, event: String, handler: WebixCallback, context: js.Any): String | Double = js.native
-  def eventRemove(id: String): Unit = js.native
-  def eventRemove(id: Double): Unit = js.native
-  def exec(code: String): Unit = js.native
-  def extend(target: js.Any, source: js.Any): js.Any = js.native
-  def extend(target: js.Any, source: js.Any, overwrite: Boolean): js.Any = js.native
-  def hasEvent(name: String): Boolean = js.native
-  def isArray(check: js.Any): Boolean = js.native
-  def isDate(check: js.Any): Boolean = js.native
-  def isUndefined(check: js.Any): Boolean = js.native
-  def mapEvent(map: js.Any): Unit = js.native
-  def message(content: js.Any): String = js.native
-  def message(content: js.Any, `type`: String): String = js.native
-  def message(content: js.Any, `type`: String, expire: Double): String = js.native
-  def message(content: js.Any, `type`: String, expire: Double, id: String): String = js.native
-  def message(content: js.Any, `type`: String, expire: Double, id: Double): String = js.native
-  def modalbox(text: js.Any): js.Promise[_] = js.native
-  def modalbox(text: js.Any, `type`: String): js.Promise[_] = js.native
-  def modalbox(text: js.Any, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
-  def modalbox(text: js.Any, `type`: WebixCallback): js.Promise[_] = js.native
-  def modalbox(text: js.Any, `type`: WebixCallback, callback: WebixCallback): js.Promise[_] = js.native
-  def once(code: WebixCallback): Unit = js.native
-  def print(view: js.Any): Unit = js.native
-  def print(view: js.Any, options: js.Any): Unit = js.native
-  def proto(target: js.Any, mixins: js.Any*): js.Any = js.native
-  def protoUI(target: js.Any, mixins: js.Any*): js.Any = js.native
-  def proxy(`type`: String, source: String): js.Any = js.native
-  def ready(code: WebixCallback): Unit = js.native
-  def remote(): Unit = js.native
-  def require(url: js.Any): js.Promise[_] = js.native
-  def require(url: js.Any, callback: WebixCallback): js.Promise[_] = js.native
-  def require(url: js.Any, callback: WebixCallback, master: js.Any): js.Promise[_] = js.native
-  def send(url: String, values: js.Any, method: String, target: String): Unit = js.native
-  def single(source: WebixCallback): WebixCallback = js.native
-  def stringify(obj: js.Any): String = js.native
-  def template(template: String): WebixCallback = js.native
-  def toCSV(id: js.Any): js.Any = js.native
-  def toCSV(id: js.Any, options: js.Any): js.Any = js.native
-  def toExcel(id: js.Any): js.Any = js.native
-  def toExcel(id: js.Any, options: js.Any): js.Any = js.native
-  def toFunctor(name: String): WebixCallback = js.native
-  def toNode(id: String): HTMLElement = js.native
-  def toPDF(id: js.Any): js.Any = js.native
-  def toPDF(id: js.Any, options: js.Any): js.Any = js.native
-  def toPNG(id: js.Any): js.Any = js.native
-  def toPNG(id: js.Any, options: js.Any): js.Any = js.native
-  def `type`(config: js.Any): Unit = js.native
-  def ui(config: js.Any): baseview = js.native
-  def ui(config: js.Any, parent: js.Any): baseview = js.native
-  def ui(config: js.Any, parent: js.Any, replacement: js.Any): baseview = js.native
-  def uid(): Double = js.native
-  def unblockEvent(): Unit = js.native
-  def wrap(target: WebixCallback, source: WebixCallback): WebixCallback = js.native
 }
 

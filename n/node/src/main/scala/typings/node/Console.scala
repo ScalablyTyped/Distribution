@@ -1,7 +1,8 @@
 package typings.node
 
-import typings.node.NodeJSNs.ConsoleConstructor
-import typings.node.NodeJSNs.InspectOptions
+import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeJS.ConsoleConstructor
+import typings.node.NodeJS.InspectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -149,4 +150,8 @@ trait Console extends js.Object {
   def warn(): Unit = js.native
   def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
 }
+
+@JSGlobal("console")
+@js.native
+object console extends TopLevel[Console]
 

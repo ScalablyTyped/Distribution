@@ -46,12 +46,12 @@ trait GlobalSecondaryIndexDescription extends js.Object {
 object GlobalSecondaryIndexDescription {
   @scala.inline
   def apply(
-    Backfilling: js.UndefOr[Backfilling] = js.undefined,
+    Backfilling: js.UndefOr[Boolean] = js.undefined,
     IndexArn: String = null,
     IndexName: IndexName = null,
-    IndexSizeBytes: js.UndefOr[Long] = js.undefined,
+    IndexSizeBytes: Int | scala.Double = null,
     IndexStatus: IndexStatus = null,
-    ItemCount: js.UndefOr[Long] = js.undefined,
+    ItemCount: Int | scala.Double = null,
     KeySchema: KeySchema = null,
     Projection: Projection = null,
     ProvisionedThroughput: ProvisionedThroughputDescription = null
@@ -60,9 +60,9 @@ object GlobalSecondaryIndexDescription {
     if (!js.isUndefined(Backfilling)) __obj.updateDynamic("Backfilling")(Backfilling)
     if (IndexArn != null) __obj.updateDynamic("IndexArn")(IndexArn)
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
-    if (!js.isUndefined(IndexSizeBytes)) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes)
+    if (IndexSizeBytes != null) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes.asInstanceOf[js.Any])
     if (IndexStatus != null) __obj.updateDynamic("IndexStatus")(IndexStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
     if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
     if (Projection != null) __obj.updateDynamic("Projection")(Projection)
     if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)

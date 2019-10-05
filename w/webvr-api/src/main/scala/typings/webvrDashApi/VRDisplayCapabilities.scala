@@ -15,20 +15,5 @@ trait VRDisplayCapabilities extends js.Object {
 
 @JSGlobal("VRDisplayCapabilities")
 @js.native
-class VRDisplayCapabilitiesCls () extends VRDisplayCapabilities {
-  /* CompleteClass */
-  override val canPresent: Boolean = js.native
-  /* CompleteClass */
-  override val hasExternalDisplay: Boolean = js.native
-  /* CompleteClass */
-  override val hasOrientation: Boolean = js.native
-  /* CompleteClass */
-  override val hasPosition: Boolean = js.native
-  /* CompleteClass */
-  override val maxLayers: Double = js.native
-}
-
-@JSGlobal("VRDisplayCapabilities")
-@js.native
 object VRDisplayCapabilities extends Instantiable0[VRDisplayCapabilities]
 

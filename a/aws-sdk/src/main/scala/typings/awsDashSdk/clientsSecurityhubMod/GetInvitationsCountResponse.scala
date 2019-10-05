@@ -13,9 +13,9 @@ trait GetInvitationsCountResponse extends js.Object {
 
 object GetInvitationsCountResponse {
   @scala.inline
-  def apply(InvitationsCount: js.UndefOr[Integer] = js.undefined): GetInvitationsCountResponse = {
+  def apply(InvitationsCount: Int | scala.Double = null): GetInvitationsCountResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InvitationsCount)) __obj.updateDynamic("InvitationsCount")(InvitationsCount)
+    if (InvitationsCount != null) __obj.updateDynamic("InvitationsCount")(InvitationsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInvitationsCountResponse]
   }
 }

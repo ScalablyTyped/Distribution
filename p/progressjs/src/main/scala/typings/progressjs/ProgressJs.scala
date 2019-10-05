@@ -1,5 +1,6 @@
 package typings.progressjs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,4 +68,8 @@ trait ProgressJs extends js.Object {
     */
   def start(): ProgressJs = js.native
 }
+
+@JSGlobal("progressJs")
+@js.native
+object progressJs extends TopLevel[ProgressJsStatic]
 

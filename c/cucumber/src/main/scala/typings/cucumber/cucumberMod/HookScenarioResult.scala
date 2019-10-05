@@ -1,6 +1,6 @@
 package typings.cucumber.cucumberMod
 
-import typings.cucumber.cucumberMod.pickleNs.Pickle
+import typings.cucumber.cucumberMod.pickle.Pickle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

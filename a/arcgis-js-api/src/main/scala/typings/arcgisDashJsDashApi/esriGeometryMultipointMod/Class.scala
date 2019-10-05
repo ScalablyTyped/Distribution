@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryMultipointMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Multipoint
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MultipointProperties
+import typings.arcgisDashJsDashApi.__esri.Multipoint
+import typings.arcgisDashJsDashApi.__esri.MultipointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod
 
-import typings.atJupyterlabCoreutils.libRestorablepoolMod.RestorablePoolNs.IOptions
+import typings.atJupyterlabCoreutils.libRestorablepoolMod.RestorablePool.IOptions
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IObservableDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

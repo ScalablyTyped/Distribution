@@ -1,7 +1,7 @@
 package typings.pixiDotJs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.pixiDotJs.PIXINs.WebGLRenderer
+import typings.pixiDotJs.PIXI.WebGLRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebdocApplicationPropertiesSearchLayerFieldMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchLayerField
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchLayerFieldProperties
+import typings.arcgisDashJsDashApi.__esri.SearchLayerField
+import typings.arcgisDashJsDashApi.__esri.SearchLayerFieldProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

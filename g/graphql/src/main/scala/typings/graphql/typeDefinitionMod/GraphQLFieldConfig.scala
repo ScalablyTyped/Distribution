@@ -27,8 +27,8 @@ object GraphQLFieldConfig {
     deprecationReason: Maybe[String] = null,
     description: Maybe[String] = null,
     extensions: Maybe[Record[String, _]] = null,
-    resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
-    subscribe: GraphQLFieldResolver[TSource, TContext, TArgs] = null
+    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
+    subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLFieldConfig[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -37,8 +37,8 @@ object GraphQLFieldConfig {
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[GraphQLFieldConfig[TSource, TContext, TArgs]]
   }
 }

@@ -1,6 +1,6 @@
 package typings.nodeDashForge
 
-import typings.nodeDashForge.nodeDashForgeMod.pkiNs.ed25519Ns.BinaryBuffer
+import typings.nodeDashForge.nodeDashForgeMod.pki.ed25519.BinaryBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
-import typings.twilioDashVideo.twilioDashVideoMod.VideoTrackNs.Dimensions
+import typings.twilioDashVideo.twilioDashVideoMod.VideoTrack.Dimensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

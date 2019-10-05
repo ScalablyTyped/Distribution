@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pollyjs__utils"
-version := "2.6-dt-20190924Z-ad4c27"
-scalaVersion := "2.12.9"
+version := "2.6-dt-20190924Z-65f06c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

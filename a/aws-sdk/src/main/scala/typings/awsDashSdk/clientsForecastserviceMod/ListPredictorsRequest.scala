@@ -21,14 +21,10 @@ trait ListPredictorsRequest extends js.Object {
 
 object ListPredictorsRequest {
   @scala.inline
-  def apply(
-    Filters: Filters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListPredictorsRequest = {
+  def apply(Filters: Filters = null, MaxResults: Int | scala.Double = null, NextToken: NextToken = null): ListPredictorsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListPredictorsRequest]
   }

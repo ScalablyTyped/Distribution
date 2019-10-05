@@ -1,7 +1,7 @@
 package typings.jqueryDotUiDotLayout
 
-import typings.jqueryDotUiDotLayout.JQueryUILayoutNs.Layout
-import typings.jqueryDotUiDotLayout.JQueryUILayoutNs.Options
+import typings.jqueryDotUiDotLayout.JQueryUILayout.Layout
+import typings.jqueryDotUiDotLayout.JQueryUILayout.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

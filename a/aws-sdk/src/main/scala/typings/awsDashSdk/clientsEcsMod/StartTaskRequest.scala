@@ -53,7 +53,7 @@ object StartTaskRequest {
     containerInstances: StringList,
     taskDefinition: String,
     cluster: String = null,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
+    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
     group: String = null,
     networkConfiguration: NetworkConfiguration = null,
     overrides: TaskOverride = null,

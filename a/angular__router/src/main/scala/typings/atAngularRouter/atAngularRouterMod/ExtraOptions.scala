@@ -35,11 +35,24 @@ trait ExtraOptions extends js.Object {
     */
   var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
   /**
-    * One of `enabled` (the default) or `disabled`.
-    * By default, the initial navigation starts before the root component is created.
-    * The bootstrap is blocked until the initial navigation is complete.
+    * One of `enabled` or `disabled`.
+    * When set to `enabled`, the initial navigation starts before the root component is created.
+    * The bootstrap is blocked until the initial navigation is complete. This value is required for
+    * [server-side rendering](guide/universal) to work.
     * When set to `disabled`, the initial navigation is not performed.
     * The location listener is set up before the root component gets created.
+    * Use if there is a reason to have more control over when the router
+    * starts its initial navigation due to some complex initialization logic.
+    *
+    * Legacy values are deprecated since v4 and should not be used for new applications:
+    *
+    * * `legacy_enabled` - Default for compatibility.
+    * The initial navigation starts after the root component has been created,
+    * but the bootstrap is not blocked until the initial navigation is complete.
+    * * `legacy_disabled` - The initial navigation is not performed.
+    * The location listener is set up after the root component gets created.
+    * * `true` - same as `legacy_enabled`.
+    * * `false` - same as `legacy_disabled`.
     */
   var initialNavigation: js.UndefOr[InitialNavigation] = js.undefined
   /**
@@ -167,7 +180,7 @@ object ExtraOptions {
   def apply(
     anchorScrolling: disabled | enabled = null,
     enableTracing: js.UndefOr[Boolean] = js.undefined,
-    errorHandler: ErrorHandler = null,
+    errorHandler: /* error */ js.Any => js.Any = null,
     initialNavigation: InitialNavigation = null,
     malformedUriErrorHandler: (/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String) => UrlTree = null,
     onSameUrlNavigation: reload | ignore = null,
@@ -182,7 +195,7 @@ object ExtraOptions {
     val __obj = js.Dynamic.literal()
     if (anchorScrolling != null) __obj.updateDynamic("anchorScrolling")(anchorScrolling.asInstanceOf[js.Any])
     if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing)
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation)
     if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(js.Any.fromFunction3(malformedUriErrorHandler))
     if (onSameUrlNavigation != null) __obj.updateDynamic("onSameUrlNavigation")(onSameUrlNavigation.asInstanceOf[js.Any])

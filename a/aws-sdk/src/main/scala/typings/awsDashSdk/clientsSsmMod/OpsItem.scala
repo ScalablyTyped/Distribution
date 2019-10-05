@@ -74,7 +74,7 @@ object OpsItem {
     Notifications: OpsItemNotifications = null,
     OperationalData: OpsItemOperationalData = null,
     OpsItemId: OpsItemId = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
+    Priority: Int | Double = null,
     RelatedOpsItems: RelatedOpsItems = null,
     Source: OpsItemSource = null,
     Status: OpsItemStatus = null,
@@ -90,7 +90,7 @@ object OpsItem {
     if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications)
     if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData)
     if (OpsItemId != null) __obj.updateDynamic("OpsItemId")(OpsItemId)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RelatedOpsItems != null) __obj.updateDynamic("RelatedOpsItems")(RelatedOpsItems)
     if (Source != null) __obj.updateDynamic("Source")(Source)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

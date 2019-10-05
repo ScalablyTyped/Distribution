@@ -4,12 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait OptimisticUpdateRelayPayload extends OptimisticUpdate {
-  var operation: OperationDescriptor = js.native
-  var payload: RelayResponsePayload = js.native
-  @JSName("updater")
-  var updater_Original: SelectorStoreUpdater[js.Object] = js.native
-  def updater(store: RecordSourceSelectorProxy, data: js.Object): Unit = js.native
+  val operation: OperationDescriptor
+  val payload: RelayResponsePayload
+  val updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+}
+
+object OptimisticUpdateRelayPayload {
+  @scala.inline
+  def apply(
+    operation: OperationDescriptor,
+    payload: RelayResponsePayload,
+    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null
+  ): OptimisticUpdateRelayPayload = {
+    val __obj = js.Dynamic.literal(operation = operation, payload = payload)
+    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
+    __obj.asInstanceOf[OptimisticUpdateRelayPayload]
+  }
 }
 

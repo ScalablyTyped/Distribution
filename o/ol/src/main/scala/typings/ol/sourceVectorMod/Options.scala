@@ -1,5 +1,6 @@
 package typings.ol.sourceVectorMod
 
+import typings.ol.extentMod.Extent
 import typings.ol.featureloaderMod.FeatureLoader
 import typings.ol.featureloaderMod.FeatureUrlFunction
 import typings.ol.sourceSourceMod.AttributionLike
@@ -29,7 +30,7 @@ object Options {
     format: typings.ol.formatFeatureMod.default = null,
     loader: FeatureLoader = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,
-    strategy: LoadingStrategy = null,
+    strategy: (/* p0 */ Extent, /* p1 */ Double) => js.Array[Extent] = null,
     url: String | FeatureUrlFunction = null,
     useSpatialIndex: js.UndefOr[Boolean] = js.undefined,
     wrapX: js.UndefOr[Boolean] = js.undefined
@@ -40,7 +41,7 @@ object Options {
     if (format != null) __obj.updateDynamic("format")(format)
     if (loader != null) __obj.updateDynamic("loader")(loader)
     if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (strategy != null) __obj.updateDynamic("strategy")(js.Any.fromFunction2(strategy))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (!js.isUndefined(useSpatialIndex)) __obj.updateDynamic("useSpatialIndex")(useSpatialIndex)
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "TypeOfExpression")
 @js.native
 class TypeOfExpression protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.TypeOfExpression {
-  def this(expression: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.TypeOfExpression {
+  def this(expression: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

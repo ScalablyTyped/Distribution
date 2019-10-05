@@ -42,24 +42,24 @@ trait InstanceHealthSummary extends js.Object {
 object InstanceHealthSummary {
   @scala.inline
   def apply(
-    Degraded: js.UndefOr[NullableInteger] = js.undefined,
-    Info: js.UndefOr[NullableInteger] = js.undefined,
-    NoData: js.UndefOr[NullableInteger] = js.undefined,
-    Ok: js.UndefOr[NullableInteger] = js.undefined,
-    Pending: js.UndefOr[NullableInteger] = js.undefined,
-    Severe: js.UndefOr[NullableInteger] = js.undefined,
-    Unknown: js.UndefOr[NullableInteger] = js.undefined,
-    Warning: js.UndefOr[NullableInteger] = js.undefined
+    Degraded: Int | Double = null,
+    Info: Int | Double = null,
+    NoData: Int | Double = null,
+    Ok: Int | Double = null,
+    Pending: Int | Double = null,
+    Severe: Int | Double = null,
+    Unknown: Int | Double = null,
+    Warning: Int | Double = null
   ): InstanceHealthSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Degraded)) __obj.updateDynamic("Degraded")(Degraded)
-    if (!js.isUndefined(Info)) __obj.updateDynamic("Info")(Info)
-    if (!js.isUndefined(NoData)) __obj.updateDynamic("NoData")(NoData)
-    if (!js.isUndefined(Ok)) __obj.updateDynamic("Ok")(Ok)
-    if (!js.isUndefined(Pending)) __obj.updateDynamic("Pending")(Pending)
-    if (!js.isUndefined(Severe)) __obj.updateDynamic("Severe")(Severe)
-    if (!js.isUndefined(Unknown)) __obj.updateDynamic("Unknown")(Unknown)
-    if (!js.isUndefined(Warning)) __obj.updateDynamic("Warning")(Warning)
+    if (Degraded != null) __obj.updateDynamic("Degraded")(Degraded.asInstanceOf[js.Any])
+    if (Info != null) __obj.updateDynamic("Info")(Info.asInstanceOf[js.Any])
+    if (NoData != null) __obj.updateDynamic("NoData")(NoData.asInstanceOf[js.Any])
+    if (Ok != null) __obj.updateDynamic("Ok")(Ok.asInstanceOf[js.Any])
+    if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
+    if (Severe != null) __obj.updateDynamic("Severe")(Severe.asInstanceOf[js.Any])
+    if (Unknown != null) __obj.updateDynamic("Unknown")(Unknown.asInstanceOf[js.Any])
+    if (Warning != null) __obj.updateDynamic("Warning")(Warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceHealthSummary]
   }
 }

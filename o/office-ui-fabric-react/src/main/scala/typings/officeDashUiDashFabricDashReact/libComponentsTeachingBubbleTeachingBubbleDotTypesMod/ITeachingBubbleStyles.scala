@@ -24,22 +24,34 @@ trait ITeachingBubbleStyles extends js.Object {
 object ITeachingBubbleStyles {
   @scala.inline
   def apply(
-    body: IStyle,
-    bodyContent: IStyle,
-    closeButton: IStyle,
-    content: IStyle,
-    footer: IStyle,
-    header: IStyle,
-    headline: IStyle,
-    imageContent: IStyle,
-    primaryButton: IStyle,
-    root: IStyle,
-    secondaryButton: IStyle,
-    subText: IStyle,
-    subComponentStyles: ITeachingBubbleSubComponentStyles = null
+    body: IStyle = null,
+    bodyContent: IStyle = null,
+    closeButton: IStyle = null,
+    content: IStyle = null,
+    footer: IStyle = null,
+    header: IStyle = null,
+    headline: IStyle = null,
+    imageContent: IStyle = null,
+    primaryButton: IStyle = null,
+    root: IStyle = null,
+    secondaryButton: IStyle = null,
+    subComponentStyles: ITeachingBubbleSubComponentStyles = null,
+    subText: IStyle = null
   ): ITeachingBubbleStyles = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], bodyContent = bodyContent.asInstanceOf[js.Any], closeButton = closeButton.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headline = headline.asInstanceOf[js.Any], imageContent = imageContent.asInstanceOf[js.Any], primaryButton = primaryButton.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], secondaryButton = secondaryButton.asInstanceOf[js.Any], subText = subText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (bodyContent != null) __obj.updateDynamic("bodyContent")(bodyContent.asInstanceOf[js.Any])
+    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (imageContent != null) __obj.updateDynamic("imageContent")(imageContent.asInstanceOf[js.Any])
+    if (primaryButton != null) __obj.updateDynamic("primaryButton")(primaryButton.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (secondaryButton != null) __obj.updateDynamic("secondaryButton")(secondaryButton.asInstanceOf[js.Any])
     if (subComponentStyles != null) __obj.updateDynamic("subComponentStyles")(subComponentStyles)
+    if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITeachingBubbleStyles]
   }
 }

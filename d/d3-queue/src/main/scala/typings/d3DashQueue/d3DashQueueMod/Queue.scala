@@ -59,3 +59,10 @@ object Queue {
   }
 }
 
+@JSImport("d3-queue", "queue")
+@js.native
+object queue extends js.Object {
+  def apply(): Queue = js.native
+  def apply(concurrency: Double): Queue = js.native
+}
+

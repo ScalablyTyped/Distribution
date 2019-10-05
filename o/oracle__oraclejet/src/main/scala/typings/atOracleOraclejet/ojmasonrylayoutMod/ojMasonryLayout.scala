@@ -1,21 +1,29 @@
 package typings.atOracleOraclejet.ojmasonrylayoutMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
+import typings.atOracleOraclejet.Anon_FromIndex
+import typings.atOracleOraclejet.Anon_FromIndexPropName
+import typings.atOracleOraclejet.Anon_IndexPropName
 import typings.atOracleOraclejet.Anon_LabelCut
+import typings.atOracleOraclejet.Anon_PreviousSizeStyleClass
+import typings.atOracleOraclejet.Anon_PropNameTile
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.reorderHandle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.reorderHandleChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojAnimateStart
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeInsert
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeRemove
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeReorder
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojBeforeResize
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojInsert
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojRemove
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojReorder
-import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayoutNs.ojResize
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateStart
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeInsert
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeRemove
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeReorder
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojBeforeResize
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojInsert
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojRemove
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojReorder
+import typings.atOracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojResize
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -170,5 +178,20 @@ trait ojMasonryLayout extends baseComponent[ojMasonryLayoutSettableProperties] {
   def setProperty_reorderHandle(property: reorderHandle, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: Anon_LabelCut): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojmasonrylayout", "ojMasonryLayout")
+@js.native
+object ojMasonryLayout extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
+  type ojBeforeInsert = CustomEvent[Anon_IndexPropName]
+  type ojBeforeRemove = CustomEvent[Anon_PropNameTile]
+  type ojBeforeReorder = CustomEvent[Anon_FromIndex]
+  type ojBeforeResize = CustomEvent[Anon_PreviousSizeStyleClass]
+  type ojInsert = CustomEvent[Anon_IndexPropName]
+  type ojRemove = CustomEvent[Anon_PropNameTile]
+  type ojReorder = CustomEvent[Anon_FromIndexPropName]
+  type ojResize = CustomEvent[Anon_PreviousSizeStyleClass]
 }
 

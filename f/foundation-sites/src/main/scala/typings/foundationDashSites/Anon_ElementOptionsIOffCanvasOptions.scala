@@ -2,8 +2,8 @@ package typings.foundationDashSites
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.foundationDashSites.FoundationSitesNs.IOffCanvasOptions
-import typings.foundationDashSites.FoundationSitesNs.OffCanvas
+import typings.foundationDashSites.FoundationSites.IOffCanvasOptions
+import typings.foundationDashSites.FoundationSites.OffCanvas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

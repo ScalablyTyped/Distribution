@@ -1,9 +1,9 @@
 package typings.jqueryDashCountdown
 
-import typings.jqueryDashCountdown.jQueryCountdownNs.Controls
-import typings.jqueryDashCountdown.jQueryCountdownNs.Event
-import typings.jqueryDashCountdown.jQueryCountdownNs.Methods
-import typings.jqueryDashCountdown.jQueryCountdownNs.Options
+import typings.jqueryDashCountdown.jQueryCountdown.Controls
+import typings.jqueryDashCountdown.jQueryCountdown.Event
+import typings.jqueryDashCountdown.jQueryCountdown.Methods
+import typings.jqueryDashCountdown.jQueryCountdown.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

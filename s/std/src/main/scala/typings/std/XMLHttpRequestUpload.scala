@@ -10,9 +10,5 @@ trait XMLHttpRequestUpload extends XMLHttpRequestEventTarget
 
 @JSGlobal("XMLHttpRequestUpload")
 @js.native
-class XMLHttpRequestUploadCls () extends XMLHttpRequestUpload
-
-@JSGlobal("XMLHttpRequestUpload")
-@js.native
 object XMLHttpRequestUpload extends Instantiable0[XMLHttpRequestUpload]
 

@@ -14,13 +14,6 @@ trait PopStateEvent extends Event {
 
 @JSGlobal("PopStateEvent")
 @js.native
-class PopStateEventCls protected () extends PopStateEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: PopStateEventInit) = this()
-}
-
-@JSGlobal("PopStateEvent")
-@js.native
 object PopStateEvent
   extends Instantiable1[/* type */ java.lang.String, PopStateEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ PopStateEventInit, PopStateEvent]

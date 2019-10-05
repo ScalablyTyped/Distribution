@@ -1,6 +1,7 @@
 package typings.nodeDashRal.nodeDashRalMod
 
-import typings.nodeDashRal.nodeDashRalMod.RALNs.NormalizerManager
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashRal.nodeDashRalMod.RAL.NormalizerManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,4 +25,8 @@ trait Config extends js.Object {
   def normalize(): js.Object = js.native
   def normalize(config: Service): js.Object = js.native
 }
+
+@JSImport("node-ral", "Config")
+@js.native
+object Config extends TopLevel[Config]
 

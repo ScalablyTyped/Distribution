@@ -44,19 +44,19 @@ object DescribeScheduledInstanceAvailabilityRequest {
   def apply(
     FirstSlotStartTimeRange: SlotDateTimeRangeRequest,
     Recurrence: ScheduledInstanceRecurrenceRequest,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeScheduledInstanceAvailabilityMaxResults] = js.undefined,
-    MaxSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
-    MinSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
+    MaxSlotDurationInHours: Int | scala.Double = null,
+    MinSlotDurationInHours: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeScheduledInstanceAvailabilityRequest = {
     val __obj = js.Dynamic.literal(FirstSlotStartTimeRange = FirstSlotStartTimeRange, Recurrence = Recurrence)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
-    if (!js.isUndefined(MaxSlotDurationInHours)) __obj.updateDynamic("MaxSlotDurationInHours")(MaxSlotDurationInHours)
-    if (!js.isUndefined(MinSlotDurationInHours)) __obj.updateDynamic("MinSlotDurationInHours")(MinSlotDurationInHours)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (MaxSlotDurationInHours != null) __obj.updateDynamic("MaxSlotDurationInHours")(MaxSlotDurationInHours.asInstanceOf[js.Any])
+    if (MinSlotDurationInHours != null) __obj.updateDynamic("MinSlotDurationInHours")(MinSlotDurationInHours.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeScheduledInstanceAvailabilityRequest]
   }

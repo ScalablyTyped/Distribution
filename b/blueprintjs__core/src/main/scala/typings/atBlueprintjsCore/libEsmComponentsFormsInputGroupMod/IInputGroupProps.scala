@@ -6,8 +6,8 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.FormEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -66,7 +66,7 @@ object IInputGroupProps {
     intent: Intent = null,
     large: js.UndefOr[Boolean] = js.undefined,
     leftIcon: IconName | MaybeElement = null,
-    onChange: FormEventHandler[HTMLElement] = null,
+    onChange: FormEvent[HTMLElement] => Unit = null,
     placeholder: String = null,
     rightElement: Element = null,
     round: js.UndefOr[Boolean] = js.undefined,
@@ -83,7 +83,7 @@ object IInputGroupProps {
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement)
     if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)

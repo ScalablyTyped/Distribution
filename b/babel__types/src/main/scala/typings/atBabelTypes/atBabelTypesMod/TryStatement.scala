@@ -43,3 +43,12 @@ object TryStatement {
   }
 }
 
+@JSImport("@babel/types", "tryStatement")
+@js.native
+object tryStatement extends js.Object {
+  def apply(block: BlockStatement): TryStatement = js.native
+  def apply(block: BlockStatement, handler: Null, finalizer: BlockStatement): TryStatement = js.native
+  def apply(block: BlockStatement, handler: CatchClause): TryStatement = js.native
+  def apply(block: BlockStatement, handler: CatchClause, finalizer: BlockStatement): TryStatement = js.native
+}
+

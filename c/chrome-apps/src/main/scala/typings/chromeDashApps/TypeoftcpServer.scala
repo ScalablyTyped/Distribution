@@ -1,12 +1,12 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.integer
-import typings.chromeDashApps.chromeNs.socketsNs.AcceptErrorEventArgs
-import typings.chromeDashApps.chromeNs.socketsNs.AcceptEventArgs
-import typings.chromeDashApps.chromeNs.socketsNs.CreateInfo
-import typings.chromeDashApps.chromeNs.socketsNs.tcpServerNs.SocketInfo
-import typings.chromeDashApps.chromeNs.socketsNs.tcpServerNs.SocketProperties
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.integer
+import typings.chromeDashApps.chrome.sockets.AcceptErrorEventArgs
+import typings.chromeDashApps.chrome.sockets.AcceptEventArgs
+import typings.chromeDashApps.chrome.sockets.CreateInfo
+import typings.chromeDashApps.chrome.sockets.tcpServer.SocketInfo
+import typings.chromeDashApps.chrome.sockets.tcpServer.SocketProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

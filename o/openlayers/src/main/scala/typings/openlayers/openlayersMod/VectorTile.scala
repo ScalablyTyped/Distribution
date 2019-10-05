@@ -1,7 +1,7 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.TileNs.State
-import typings.openlayers.openlayersMod.projNs.Projection
+import typings.openlayers.openlayersMod.Tile.State
+import typings.openlayers.openlayersMod.proj.Projection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ class VectorTile protected () extends Tile {
     tileCoord: TileCoord,
     state: State,
     src: String,
-    format: typings.openlayers.openlayersMod.formatNs.Feature,
+    format: typings.openlayers.openlayersMod.format.Feature,
     tileLoadFunction: TileLoadFunctionType
   ) = this()
   /**
@@ -28,7 +28,7 @@ class VectorTile protected () extends Tile {
     * @return Feature format.
     * @api
     */
-  def getFormat(): typings.openlayers.openlayersMod.formatNs.Feature = js.native
+  def getFormat(): typings.openlayers.openlayersMod.format.Feature = js.native
   /**
     * @param features Features.
     * @api

@@ -1,6 +1,6 @@
 package typings.typescriptDashServices
 
-import typings.typescriptDashServices.TypeScriptNs.EnclosingTypeWalkerState
+import typings.typescriptDashServices.TypeScript.EnclosingTypeWalkerState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

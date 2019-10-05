@@ -1,8 +1,8 @@
 package typings.fsDashFinder.fsDashFinderMod
 
-import typings.fsDashFinder.fsDashFinderMod.FsFinderNs.AsyncFunction
-import typings.fsDashFinder.fsDashFinderMod.FsFinderNs.Finder
-import typings.fsDashFinder.fsDashFinderMod.FsFinderNs.Type
+import typings.fsDashFinder.fsDashFinderMod.FsFinder.AsyncFunction
+import typings.fsDashFinder.fsDashFinderMod.FsFinder.Finder
+import typings.fsDashFinder.fsDashFinderMod.FsFinder.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

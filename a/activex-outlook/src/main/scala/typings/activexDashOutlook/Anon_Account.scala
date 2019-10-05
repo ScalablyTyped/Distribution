@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Account
+import typings.activexDashOutlook.Outlook.Account
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Account extends js.Object {
-  val Account: typings.activexDashOutlook.OutlookNs.Account
+  val Account: typings.activexDashOutlook.Outlook.Account
 }
 
 object Anon_Account {

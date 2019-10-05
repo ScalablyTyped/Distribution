@@ -68,23 +68,23 @@ package object styledDashComponentsMod {
     - typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
   */
   type SimpleInterpolation = _SimpleInterpolation | String | Double | FalseyValue
-  type StyledComponent[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] = (// the "string" allows this to be used as an object key
+  type StyledComponent[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
   String) with (StyledComponentBase[C, T, O, A])
   type StyledComponentInnerAttrs[C /* <: AnyStyledComponent */] = js.Any
   type StyledComponentInnerComponent[C /* <: ComponentType[_] */] = C
   type StyledComponentInnerOtherProps[C /* <: AnyStyledComponent */] = js.Any
   type StyledComponentProps[// The Component from whose props are derived
-  C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, // The Theme from the current context
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, // The Theme from the current context
   T /* <: js.Object */, // The other props added by the template
   O /* <: js.Object */, // The props that are made optional by .attrs
   A /* <: String */] = (WithOptionalTheme[
     (Omit[(ReactDefaultizedProps[C, ComponentPropsWithRef[C]]) with O, A]) with (Partial[Pick[ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with WithChildrenIfReactComponentClass[C]
-  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] = (StyledComponentProps[C, T, O, A]) with Anon_As[C]
-  type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */] = ComponentPropsWithRef[C | StyledComponentInnerComponent[C]]
-  type StyledFunction[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */] = ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
+  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] = (StyledComponentProps[C, T, O, A]) with Anon_As[C]
+  type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = ComponentPropsWithRef[C | StyledComponentInnerComponent[C]]
+  type StyledFunction[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
   type StyledProps[P] = ThemedStyledProps[P, AnyIfEmpty[DefaultTheme]]
   type ThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = BaseThemeProviderComponent[AnyIfEmpty[T], AnyIfEmpty[U]]
   type ThemedCssFunction[T /* <: js.Object */] = BaseThemedCssFunction[AnyIfEmpty[T]]
@@ -95,7 +95,7 @@ package object styledDashComponentsMod {
   // we need to manually add a `children` field.
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/pull/31945
   // and https://github.com/DefinitelyTyped/DefinitelyTyped/pull/32843
-  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */] = js.Object | Anon_Children
+  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = js.Object | Anon_Children
   type WithOptionalTheme[P /* <: Anon_ThemeT[T] */, T] = P with Anon_ThemeT[T]
   type WithThemeFnInterface[T /* <: js.Object */] = BaseWithThemeFnInterface[AnyIfEmpty[T]]
 }

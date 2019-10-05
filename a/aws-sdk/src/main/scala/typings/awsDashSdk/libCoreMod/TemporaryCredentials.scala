@@ -1,6 +1,6 @@
 package typings.awsDashSdk.libCoreMod
 
-import typings.awsDashSdk.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentialsNs.TemporaryCredentialsOptions
+import typings.awsDashSdk.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,4 +24,9 @@ class TemporaryCredentials ()
     masterCredentials: typings.awsDashSdk.libCredentialsMod.Credentials
   ) = this()
 }
+
+// Needed to expose interfaces on the class
+@JSImport("aws-sdk/lib/core", "TemporaryCredentials")
+@js.native
+object TemporaryCredentials extends js.Object
 

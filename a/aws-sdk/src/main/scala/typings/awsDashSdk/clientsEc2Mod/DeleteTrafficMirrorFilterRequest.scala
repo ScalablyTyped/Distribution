@@ -17,7 +17,7 @@ trait DeleteTrafficMirrorFilterRequest extends js.Object {
 
 object DeleteTrafficMirrorFilterRequest {
   @scala.inline
-  def apply(TrafficMirrorFilterId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteTrafficMirrorFilterRequest = {
+  def apply(TrafficMirrorFilterId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteTrafficMirrorFilterRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterId = TrafficMirrorFilterId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteTrafficMirrorFilterRequest]

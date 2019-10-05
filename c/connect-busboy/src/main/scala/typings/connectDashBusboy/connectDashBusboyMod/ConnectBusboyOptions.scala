@@ -1,7 +1,7 @@
 package typings.connectDashBusboy.connectDashBusboyMod
 
 import typings.busboy.Anon_FieldNameSize
-import typings.busboy.busboyNs.BusboyConfig
+import typings.busboy.busboy.BusboyConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

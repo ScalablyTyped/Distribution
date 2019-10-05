@@ -1,6 +1,6 @@
 package typings.emberDashQunit.emberDashQunitMod
 
-import typings.ember.emberMod.defaultNs.Resolver
+import typings.ember.emberMod.default.Resolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

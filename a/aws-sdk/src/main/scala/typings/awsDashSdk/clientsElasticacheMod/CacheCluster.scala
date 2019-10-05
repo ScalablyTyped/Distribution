@@ -107,9 +107,9 @@ trait CacheCluster extends js.Object {
 object CacheCluster {
   @scala.inline
   def apply(
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AtRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AuthTokenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     CacheClusterCreateTime: TStamp = null,
     CacheClusterId: String = null,
     CacheClusterStatus: String = null,
@@ -123,15 +123,15 @@ object CacheCluster {
     Engine: String = null,
     EngineVersion: String = null,
     NotificationConfiguration: NotificationConfiguration = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    NumCacheNodes: Int | scala.Double = null,
     PendingModifiedValues: PendingModifiedValues = null,
     PreferredAvailabilityZone: String = null,
     PreferredMaintenanceWindow: String = null,
     ReplicationGroupId: String = null,
     SecurityGroups: SecurityGroupMembershipList = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+    TransitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): CacheCluster = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled)
@@ -150,13 +150,13 @@ object CacheCluster {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration)
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes)
+    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)
     if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId)
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled)
     __obj.asInstanceOf[CacheCluster]

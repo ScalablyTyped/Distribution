@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportMapImageMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapImage
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapImageProperties
+import typings.arcgisDashJsDashApi.__esri.MapImage
+import typings.arcgisDashJsDashApi.__esri.MapImageProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

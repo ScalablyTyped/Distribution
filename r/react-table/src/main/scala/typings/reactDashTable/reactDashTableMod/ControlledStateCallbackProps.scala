@@ -31,14 +31,14 @@ trait ControlledStateCallbackProps extends js.Object {
 object ControlledStateCallbackProps {
   @scala.inline
   def apply(
-    onExpandedChange: ExpandedChangeFunction,
-    onFilteredChange: FilteredChangeFunction,
-    onPageChange: PageChangeFunction,
-    onPageSizeChange: PageSizeChangeFunction,
-    onResizedChange: ResizedChangeFunction,
-    onSortedChange: SortedChangeFunction
+    onExpandedChange: (/* column */ js.Any, /* event */ js.Any, /* isTouch */ Boolean) => Unit,
+    onFilteredChange: (/* newFiltering */ js.Array[Filter], /* column */ js.Any, /* value */ js.Any) => Unit,
+    onPageChange: /* page */ Double => Unit,
+    onPageSizeChange: (/* newPageSize */ Double, /* newPage */ Double) => Unit,
+    onResizedChange: (/* newResized */ js.Array[Resize], /* event */ js.Any) => Unit,
+    onSortedChange: (/* newSorted */ js.Array[SortingRule], /* column */ js.Any, /* additive */ Boolean) => Unit
   ): ControlledStateCallbackProps = {
-    val __obj = js.Dynamic.literal(onExpandedChange = onExpandedChange, onFilteredChange = onFilteredChange, onPageChange = onPageChange, onPageSizeChange = onPageSizeChange, onResizedChange = onResizedChange, onSortedChange = onSortedChange)
+    val __obj = js.Dynamic.literal(onExpandedChange = js.Any.fromFunction3(onExpandedChange), onFilteredChange = js.Any.fromFunction3(onFilteredChange), onPageChange = js.Any.fromFunction1(onPageChange), onPageSizeChange = js.Any.fromFunction2(onPageSizeChange), onResizedChange = js.Any.fromFunction2(onResizedChange), onSortedChange = js.Any.fromFunction3(onSortedChange))
   
     __obj.asInstanceOf[ControlledStateCallbackProps]
   }

@@ -58,7 +58,6 @@ import typings.csstype.csstypeMod.MozOutlineRadiusProperty
 import typings.csstype.csstypeMod.MozTextBlinkProperty
 import typings.csstype.csstypeMod.MozUserInputProperty
 import typings.csstype.csstypeMod.MozWindowShadowProperty
-import typings.csstype.csstypeMod.ObsoletePropertiesFallback
 import typings.csstype.csstypeMod.OutlineColorProperty
 import typings.csstype.csstypeMod.OutlineProperty
 import typings.csstype.csstypeMod.OutlineStyleProperty
@@ -78,7 +77,6 @@ import typings.csstype.csstypeMod.StrokeLinecapProperty
 import typings.csstype.csstypeMod.StrokeLinejoinProperty
 import typings.csstype.csstypeMod.StrokeProperty
 import typings.csstype.csstypeMod.StrokeWidthProperty
-import typings.csstype.csstypeMod.SvgPropertiesFallback
 import typings.csstype.csstypeMod.TextAlignLastProperty
 import typings.csstype.csstypeMod.TextAnchorProperty
 import typings.csstype.csstypeMod.TextCombineUprightProperty
@@ -97,7 +95,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.csstype.csstypeMod.ObsoletePropertiesFallback because var conflicts: clip. Inlined KhtmlBoxAlign, KhtmlBoxDirection, KhtmlBoxFlex, KhtmlBoxFlexGroup, KhtmlBoxLines, KhtmlBoxOrdinalGroup, KhtmlBoxOrient, KhtmlBoxPack, KhtmlLineBreak, KhtmlOpacity, KhtmlUserSelect, MozBackgroundClip, MozBackgroundInlinePolicy, MozBackgroundOrigin, MozBackgroundSize, MozBinding, MozBorderRadius, MozBorderRadiusBottomleft, MozBorderRadiusBottomright, MozBorderRadiusTopleft, MozBorderRadiusTopright, MozBoxAlign, MozBoxDirection, MozBoxFlex, MozBoxOrdinalGroup, MozBoxOrient, MozBoxPack, MozBoxShadow, MozOpacity, MozOutline, MozOutlineColor, MozOutlineRadius, MozOutlineStyle, MozOutlineWidth, MozTextAlignLast, MozTextBlink, MozTextDecorationColor, MozTextDecorationLine, MozTextDecorationStyle, MozUserInput, MozWindowShadow, OAnimation, OAnimationDelay, OAnimationDirection, OAnimationDuration, OAnimationFillMode, OAnimationIterationCount, OAnimationName, OAnimationPlayState, OAnimationTimingFunction, OBackgroundSize, OBorderImage, OTransform, OTransition, OTransitionDelay, OTransitionDuration, OTransitionProperty, OTransitionTimingFunction, WebkitBoxAlign, WebkitBoxDirection, WebkitBoxFlex, WebkitBoxFlexGroup, WebkitBoxLines, WebkitBoxOrdinalGroup, WebkitBoxOrient, WebkitBoxPack, WebkitScrollSnapPointsX, WebkitScrollSnapPointsY, boxAlign, boxDirection, boxFlex, boxFlexGroup, boxLines, boxOrdinalGroup, boxOrient, boxPack, fontVariantAlternates, gridColumnGap, gridGap, gridRowGap, imeMode, msImeMode, offsetBlock, offsetBlockEnd, offsetBlockStart, offsetInline, offsetInlineEnd, offsetInlineStart, scrollSnapCoordinate, scrollSnapDestination, scrollSnapPointsX, scrollSnapPointsY, scrollSnapTypeX, scrollSnapTypeY, textCombineHorizontal- typings.csstype.csstypeMod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clip, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSProperties
+- typings.csstype.csstypeMod.ObsoletePropertiesFallback because var conflicts: clip. Inlined KhtmlBoxAlign, KhtmlBoxDirection, KhtmlBoxFlex, KhtmlBoxFlexGroup, KhtmlBoxLines, KhtmlBoxOrdinalGroup, KhtmlBoxOrient, KhtmlBoxPack, KhtmlLineBreak, KhtmlOpacity, KhtmlUserSelect, MozBackgroundClip, MozBackgroundInlinePolicy, MozBackgroundOrigin, MozBackgroundSize, MozBinding, MozBorderRadius, MozBorderRadiusBottomleft, MozBorderRadiusBottomright, MozBorderRadiusTopleft, MozBorderRadiusTopright, MozBoxAlign, MozBoxDirection, MozBoxFlex, MozBoxOrdinalGroup, MozBoxOrient, MozBoxPack, MozBoxShadow, MozOpacity, MozOutline, MozOutlineColor, MozOutlineRadius, MozOutlineStyle, MozOutlineWidth, MozTextAlignLast, MozTextBlink, MozTextDecorationColor, MozTextDecorationLine, MozTextDecorationStyle, MozUserInput, MozWindowShadow, OAnimation, OAnimationDelay, OAnimationDirection, OAnimationDuration, OAnimationFillMode, OAnimationIterationCount, OAnimationName, OAnimationPlayState, OAnimationTimingFunction, OBackgroundSize, OBorderImage, OTransform, OTransition, OTransitionDelay, OTransitionDuration, OTransitionProperty, OTransitionTimingFunction, WebkitBoxAlign, WebkitBoxDirection, WebkitBoxFlex, WebkitBoxFlexGroup, WebkitBoxLines, WebkitBoxOrdinalGroup, WebkitBoxOrient, WebkitBoxPack, WebkitScrollSnapPointsX, WebkitScrollSnapPointsY, boxAlign, boxDirection, boxFlex, boxFlexGroup, boxLines, boxOrdinalGroup, boxOrient, boxPack, fontVariantAlternates, gridColumnGap, gridGap, gridRowGap, imeMode, msImeMode, offsetBlock, offsetBlockEnd, offsetBlockStart, offsetInline, offsetInlineEnd, offsetInlineStart, scrollSnapCoordinate, scrollSnapDestination, scrollSnapPointsX, scrollSnapPointsY, scrollSnapTypeX, scrollSnapTypeY, textCombineHorizontal
+- typings.csstype.csstypeMod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clip, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSProperties
   extends StandardPropertiesFallback[TLength]
      with VendorPropertiesHyphenFallback[TLength] {
   /**
@@ -906,17 +905,265 @@ object CSSProperties {
   @scala.inline
   def apply(
     $unique: js.UndefOr[Boolean] = js.undefined,
-    ObsoletePropertiesFallback: ObsoletePropertiesFallback[TLength] = null,
+    KhtmlBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
+    KhtmlBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
+    KhtmlBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    KhtmlBoxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    KhtmlBoxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
+    KhtmlBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    KhtmlBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
+    KhtmlBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
+    KhtmlLineBreak: LineBreakProperty | js.Array[LineBreakProperty] = null,
+    KhtmlOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    KhtmlUserSelect: UserSelectProperty | js.Array[UserSelectProperty] = null,
+    MozBackgroundClip: BackgroundClipProperty | js.Array[BackgroundClipProperty] = null,
+    MozBackgroundInlinePolicy: BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty] = null,
+    MozBackgroundOrigin: BackgroundOriginProperty | js.Array[BackgroundOriginProperty] = null,
+    MozBackgroundSize: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
+    MozBinding: MozBindingProperty | js.Array[MozBindingProperty] = null,
+    MozBorderRadius: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
+    MozBorderRadiusBottomleft: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]] = null,
+    MozBorderRadiusBottomright: BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]] = null,
+    MozBorderRadiusTopleft: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]] = null,
+    MozBorderRadiusTopright: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
+    MozBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
+    MozBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
+    MozBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    MozBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    MozBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
+    MozBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
+    MozBoxShadow: BoxShadowProperty | js.Array[BoxShadowProperty] = null,
+    MozOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    MozOutline: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
+    MozOutlineColor: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
+    MozOutlineRadius: MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]] = null,
+    MozOutlineStyle: OutlineStyleProperty | js.Array[OutlineStyleProperty] = null,
+    MozOutlineWidth: OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]] = null,
+    MozTextAlignLast: TextAlignLastProperty | js.Array[TextAlignLastProperty] = null,
+    MozTextBlink: MozTextBlinkProperty | js.Array[MozTextBlinkProperty] = null,
+    MozTextDecorationColor: TextDecorationColorProperty | js.Array[TextDecorationColorProperty] = null,
+    MozTextDecorationLine: TextDecorationLineProperty | js.Array[TextDecorationLineProperty] = null,
+    MozTextDecorationStyle: TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty] = null,
+    MozUserInput: MozUserInputProperty | js.Array[MozUserInputProperty] = null,
+    MozWindowShadow: MozWindowShadowProperty | js.Array[MozWindowShadowProperty] = null,
+    OAnimation: AnimationProperty | js.Array[AnimationProperty] = null,
+    OAnimationDelay: GlobalsString | js.Array[GlobalsString] = null,
+    OAnimationDirection: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
+    OAnimationDuration: GlobalsString | js.Array[GlobalsString] = null,
+    OAnimationFillMode: AnimationFillModeProperty | js.Array[AnimationFillModeProperty] = null,
+    OAnimationIterationCount: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty] = null,
+    OAnimationName: AnimationNameProperty | js.Array[AnimationNameProperty] = null,
+    OAnimationPlayState: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty] = null,
+    OAnimationTimingFunction: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty] = null,
+    OBackgroundSize: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
+    OBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    OTransform: TransformProperty | js.Array[TransformProperty] = null,
+    OTransition: TransitionProperty | js.Array[TransitionProperty] = null,
+    OTransitionDelay: GlobalsString | js.Array[GlobalsString] = null,
+    OTransitionDuration: GlobalsString | js.Array[GlobalsString] = null,
+    OTransitionProperty: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
+    OTransitionTimingFunction: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     StandardPropertiesFallback: StandardPropertiesFallback[TLength] = null,
-    SvgPropertiesFallback: SvgPropertiesFallback[TLength] = null,
-    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null
+    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null,
+    WebkitBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
+    WebkitBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
+    WebkitBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    WebkitBoxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    WebkitBoxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
+    WebkitBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    WebkitBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
+    WebkitBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
+    WebkitScrollSnapPointsX: ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty] = null,
+    WebkitScrollSnapPointsY: ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty] = null,
+    alignmentBaseline: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty] = null,
+    baselineShift: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]] = null,
+    boxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
+    boxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
+    boxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    boxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    boxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
+    boxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    boxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
+    boxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
+    clip: ClipProperty | js.Array[ClipProperty] = null,
+    clipRule: ClipRuleProperty | js.Array[ClipRuleProperty] = null,
+    colorInterpolation: ColorInterpolationProperty | js.Array[ColorInterpolationProperty] = null,
+    colorRendering: ColorRenderingProperty | js.Array[ColorRenderingProperty] = null,
+    dominantBaseline: DominantBaselineProperty | js.Array[DominantBaselineProperty] = null,
+    fill: FillProperty | js.Array[FillProperty] = null,
+    fillOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    fillRule: FillRuleProperty | js.Array[FillRuleProperty] = null,
+    floodColor: FloodColorProperty | js.Array[FloodColorProperty] = null,
+    floodOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    fontVariantAlternates: FontVariantAlternatesProperty | js.Array[FontVariantAlternatesProperty] = null,
+    glyphOrientationVertical: GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty] = null,
+    gridColumnGap: GridColumnGapProperty[TLength] | js.Array[GridColumnGapProperty[TLength]] = null,
+    gridGap: GridGapProperty[TLength] | js.Array[GridGapProperty[TLength]] = null,
+    gridRowGap: GridRowGapProperty[TLength] | js.Array[GridRowGapProperty[TLength]] = null,
+    imeMode: ImeModeProperty | js.Array[ImeModeProperty] = null,
+    lightingColor: LightingColorProperty | js.Array[LightingColorProperty] = null,
+    marker: MarkerProperty | js.Array[MarkerProperty] = null,
+    markerEnd: MarkerEndProperty | js.Array[MarkerEndProperty] = null,
+    markerMid: MarkerMidProperty | js.Array[MarkerMidProperty] = null,
+    markerStart: MarkerStartProperty | js.Array[MarkerStartProperty] = null,
+    msImeMode: ImeModeProperty | js.Array[ImeModeProperty] = null,
+    offsetBlock: InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]] = null,
+    offsetBlockEnd: InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]] = null,
+    offsetBlockStart: InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]] = null,
+    offsetInline: InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]] = null,
+    offsetInlineEnd: InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]] = null,
+    offsetInlineStart: InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]] = null,
+    scrollSnapCoordinate: ScrollSnapCoordinateProperty[TLength] | js.Array[ScrollSnapCoordinateProperty[TLength]] = null,
+    scrollSnapDestination: ScrollSnapDestinationProperty[TLength] | js.Array[ScrollSnapDestinationProperty[TLength]] = null,
+    scrollSnapPointsX: ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty] = null,
+    scrollSnapPointsY: ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty] = null,
+    scrollSnapTypeX: ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty] = null,
+    scrollSnapTypeY: ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty] = null,
+    shapeRendering: ShapeRenderingProperty | js.Array[ShapeRenderingProperty] = null,
+    stopColor: StopColorProperty | js.Array[StopColorProperty] = null,
+    stopOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    stroke: StrokeProperty | js.Array[StrokeProperty] = null,
+    strokeDasharray: StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]] = null,
+    strokeDashoffset: StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]] = null,
+    strokeLinecap: StrokeLinecapProperty | js.Array[StrokeLinecapProperty] = null,
+    strokeLinejoin: StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty] = null,
+    strokeMiterlimit: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    strokeOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    strokeWidth: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]] = null,
+    textAnchor: TextAnchorProperty | js.Array[TextAnchorProperty] = null,
+    textCombineHorizontal: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
+    vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): CSSProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($unique)) __obj.updateDynamic("$unique")($unique)
-    js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesFallback)
+    if (KhtmlBoxAlign != null) __obj.updateDynamic("KhtmlBoxAlign")(KhtmlBoxAlign.asInstanceOf[js.Any])
+    if (KhtmlBoxDirection != null) __obj.updateDynamic("KhtmlBoxDirection")(KhtmlBoxDirection.asInstanceOf[js.Any])
+    if (KhtmlBoxFlex != null) __obj.updateDynamic("KhtmlBoxFlex")(KhtmlBoxFlex.asInstanceOf[js.Any])
+    if (KhtmlBoxFlexGroup != null) __obj.updateDynamic("KhtmlBoxFlexGroup")(KhtmlBoxFlexGroup.asInstanceOf[js.Any])
+    if (KhtmlBoxLines != null) __obj.updateDynamic("KhtmlBoxLines")(KhtmlBoxLines.asInstanceOf[js.Any])
+    if (KhtmlBoxOrdinalGroup != null) __obj.updateDynamic("KhtmlBoxOrdinalGroup")(KhtmlBoxOrdinalGroup.asInstanceOf[js.Any])
+    if (KhtmlBoxOrient != null) __obj.updateDynamic("KhtmlBoxOrient")(KhtmlBoxOrient.asInstanceOf[js.Any])
+    if (KhtmlBoxPack != null) __obj.updateDynamic("KhtmlBoxPack")(KhtmlBoxPack.asInstanceOf[js.Any])
+    if (KhtmlLineBreak != null) __obj.updateDynamic("KhtmlLineBreak")(KhtmlLineBreak.asInstanceOf[js.Any])
+    if (KhtmlOpacity != null) __obj.updateDynamic("KhtmlOpacity")(KhtmlOpacity.asInstanceOf[js.Any])
+    if (KhtmlUserSelect != null) __obj.updateDynamic("KhtmlUserSelect")(KhtmlUserSelect.asInstanceOf[js.Any])
+    if (MozBackgroundClip != null) __obj.updateDynamic("MozBackgroundClip")(MozBackgroundClip.asInstanceOf[js.Any])
+    if (MozBackgroundInlinePolicy != null) __obj.updateDynamic("MozBackgroundInlinePolicy")(MozBackgroundInlinePolicy.asInstanceOf[js.Any])
+    if (MozBackgroundOrigin != null) __obj.updateDynamic("MozBackgroundOrigin")(MozBackgroundOrigin.asInstanceOf[js.Any])
+    if (MozBackgroundSize != null) __obj.updateDynamic("MozBackgroundSize")(MozBackgroundSize.asInstanceOf[js.Any])
+    if (MozBinding != null) __obj.updateDynamic("MozBinding")(MozBinding.asInstanceOf[js.Any])
+    if (MozBorderRadius != null) __obj.updateDynamic("MozBorderRadius")(MozBorderRadius.asInstanceOf[js.Any])
+    if (MozBorderRadiusBottomleft != null) __obj.updateDynamic("MozBorderRadiusBottomleft")(MozBorderRadiusBottomleft.asInstanceOf[js.Any])
+    if (MozBorderRadiusBottomright != null) __obj.updateDynamic("MozBorderRadiusBottomright")(MozBorderRadiusBottomright.asInstanceOf[js.Any])
+    if (MozBorderRadiusTopleft != null) __obj.updateDynamic("MozBorderRadiusTopleft")(MozBorderRadiusTopleft.asInstanceOf[js.Any])
+    if (MozBorderRadiusTopright != null) __obj.updateDynamic("MozBorderRadiusTopright")(MozBorderRadiusTopright.asInstanceOf[js.Any])
+    if (MozBoxAlign != null) __obj.updateDynamic("MozBoxAlign")(MozBoxAlign.asInstanceOf[js.Any])
+    if (MozBoxDirection != null) __obj.updateDynamic("MozBoxDirection")(MozBoxDirection.asInstanceOf[js.Any])
+    if (MozBoxFlex != null) __obj.updateDynamic("MozBoxFlex")(MozBoxFlex.asInstanceOf[js.Any])
+    if (MozBoxOrdinalGroup != null) __obj.updateDynamic("MozBoxOrdinalGroup")(MozBoxOrdinalGroup.asInstanceOf[js.Any])
+    if (MozBoxOrient != null) __obj.updateDynamic("MozBoxOrient")(MozBoxOrient.asInstanceOf[js.Any])
+    if (MozBoxPack != null) __obj.updateDynamic("MozBoxPack")(MozBoxPack.asInstanceOf[js.Any])
+    if (MozBoxShadow != null) __obj.updateDynamic("MozBoxShadow")(MozBoxShadow.asInstanceOf[js.Any])
+    if (MozOpacity != null) __obj.updateDynamic("MozOpacity")(MozOpacity.asInstanceOf[js.Any])
+    if (MozOutline != null) __obj.updateDynamic("MozOutline")(MozOutline.asInstanceOf[js.Any])
+    if (MozOutlineColor != null) __obj.updateDynamic("MozOutlineColor")(MozOutlineColor.asInstanceOf[js.Any])
+    if (MozOutlineRadius != null) __obj.updateDynamic("MozOutlineRadius")(MozOutlineRadius.asInstanceOf[js.Any])
+    if (MozOutlineStyle != null) __obj.updateDynamic("MozOutlineStyle")(MozOutlineStyle.asInstanceOf[js.Any])
+    if (MozOutlineWidth != null) __obj.updateDynamic("MozOutlineWidth")(MozOutlineWidth.asInstanceOf[js.Any])
+    if (MozTextAlignLast != null) __obj.updateDynamic("MozTextAlignLast")(MozTextAlignLast.asInstanceOf[js.Any])
+    if (MozTextBlink != null) __obj.updateDynamic("MozTextBlink")(MozTextBlink.asInstanceOf[js.Any])
+    if (MozTextDecorationColor != null) __obj.updateDynamic("MozTextDecorationColor")(MozTextDecorationColor.asInstanceOf[js.Any])
+    if (MozTextDecorationLine != null) __obj.updateDynamic("MozTextDecorationLine")(MozTextDecorationLine.asInstanceOf[js.Any])
+    if (MozTextDecorationStyle != null) __obj.updateDynamic("MozTextDecorationStyle")(MozTextDecorationStyle.asInstanceOf[js.Any])
+    if (MozUserInput != null) __obj.updateDynamic("MozUserInput")(MozUserInput.asInstanceOf[js.Any])
+    if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow.asInstanceOf[js.Any])
+    if (OAnimation != null) __obj.updateDynamic("OAnimation")(OAnimation.asInstanceOf[js.Any])
+    if (OAnimationDelay != null) __obj.updateDynamic("OAnimationDelay")(OAnimationDelay.asInstanceOf[js.Any])
+    if (OAnimationDirection != null) __obj.updateDynamic("OAnimationDirection")(OAnimationDirection.asInstanceOf[js.Any])
+    if (OAnimationDuration != null) __obj.updateDynamic("OAnimationDuration")(OAnimationDuration.asInstanceOf[js.Any])
+    if (OAnimationFillMode != null) __obj.updateDynamic("OAnimationFillMode")(OAnimationFillMode.asInstanceOf[js.Any])
+    if (OAnimationIterationCount != null) __obj.updateDynamic("OAnimationIterationCount")(OAnimationIterationCount.asInstanceOf[js.Any])
+    if (OAnimationName != null) __obj.updateDynamic("OAnimationName")(OAnimationName.asInstanceOf[js.Any])
+    if (OAnimationPlayState != null) __obj.updateDynamic("OAnimationPlayState")(OAnimationPlayState.asInstanceOf[js.Any])
+    if (OAnimationTimingFunction != null) __obj.updateDynamic("OAnimationTimingFunction")(OAnimationTimingFunction.asInstanceOf[js.Any])
+    if (OBackgroundSize != null) __obj.updateDynamic("OBackgroundSize")(OBackgroundSize.asInstanceOf[js.Any])
+    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
+    if (OTransform != null) __obj.updateDynamic("OTransform")(OTransform.asInstanceOf[js.Any])
+    if (OTransition != null) __obj.updateDynamic("OTransition")(OTransition.asInstanceOf[js.Any])
+    if (OTransitionDelay != null) __obj.updateDynamic("OTransitionDelay")(OTransitionDelay.asInstanceOf[js.Any])
+    if (OTransitionDuration != null) __obj.updateDynamic("OTransitionDuration")(OTransitionDuration.asInstanceOf[js.Any])
+    if (OTransitionProperty != null) __obj.updateDynamic("OTransitionProperty")(OTransitionProperty.asInstanceOf[js.Any])
+    if (OTransitionTimingFunction != null) __obj.updateDynamic("OTransitionTimingFunction")(OTransitionTimingFunction.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StandardPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, SvgPropertiesFallback)
     js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphenFallback)
+    if (WebkitBoxAlign != null) __obj.updateDynamic("WebkitBoxAlign")(WebkitBoxAlign.asInstanceOf[js.Any])
+    if (WebkitBoxDirection != null) __obj.updateDynamic("WebkitBoxDirection")(WebkitBoxDirection.asInstanceOf[js.Any])
+    if (WebkitBoxFlex != null) __obj.updateDynamic("WebkitBoxFlex")(WebkitBoxFlex.asInstanceOf[js.Any])
+    if (WebkitBoxFlexGroup != null) __obj.updateDynamic("WebkitBoxFlexGroup")(WebkitBoxFlexGroup.asInstanceOf[js.Any])
+    if (WebkitBoxLines != null) __obj.updateDynamic("WebkitBoxLines")(WebkitBoxLines.asInstanceOf[js.Any])
+    if (WebkitBoxOrdinalGroup != null) __obj.updateDynamic("WebkitBoxOrdinalGroup")(WebkitBoxOrdinalGroup.asInstanceOf[js.Any])
+    if (WebkitBoxOrient != null) __obj.updateDynamic("WebkitBoxOrient")(WebkitBoxOrient.asInstanceOf[js.Any])
+    if (WebkitBoxPack != null) __obj.updateDynamic("WebkitBoxPack")(WebkitBoxPack.asInstanceOf[js.Any])
+    if (WebkitScrollSnapPointsX != null) __obj.updateDynamic("WebkitScrollSnapPointsX")(WebkitScrollSnapPointsX.asInstanceOf[js.Any])
+    if (WebkitScrollSnapPointsY != null) __obj.updateDynamic("WebkitScrollSnapPointsY")(WebkitScrollSnapPointsY.asInstanceOf[js.Any])
+    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
+    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
+    if (boxAlign != null) __obj.updateDynamic("boxAlign")(boxAlign.asInstanceOf[js.Any])
+    if (boxDirection != null) __obj.updateDynamic("boxDirection")(boxDirection.asInstanceOf[js.Any])
+    if (boxFlex != null) __obj.updateDynamic("boxFlex")(boxFlex.asInstanceOf[js.Any])
+    if (boxFlexGroup != null) __obj.updateDynamic("boxFlexGroup")(boxFlexGroup.asInstanceOf[js.Any])
+    if (boxLines != null) __obj.updateDynamic("boxLines")(boxLines.asInstanceOf[js.Any])
+    if (boxOrdinalGroup != null) __obj.updateDynamic("boxOrdinalGroup")(boxOrdinalGroup.asInstanceOf[js.Any])
+    if (boxOrient != null) __obj.updateDynamic("boxOrient")(boxOrient.asInstanceOf[js.Any])
+    if (boxPack != null) __obj.updateDynamic("boxPack")(boxPack.asInstanceOf[js.Any])
+    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
+    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
+    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
+    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
+    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
+    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
+    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
+    if (fontVariantAlternates != null) __obj.updateDynamic("fontVariantAlternates")(fontVariantAlternates.asInstanceOf[js.Any])
+    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
+    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
+    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
+    if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
+    if (imeMode != null) __obj.updateDynamic("imeMode")(imeMode.asInstanceOf[js.Any])
+    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
+    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
+    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
+    if (msImeMode != null) __obj.updateDynamic("msImeMode")(msImeMode.asInstanceOf[js.Any])
+    if (offsetBlock != null) __obj.updateDynamic("offsetBlock")(offsetBlock.asInstanceOf[js.Any])
+    if (offsetBlockEnd != null) __obj.updateDynamic("offsetBlockEnd")(offsetBlockEnd.asInstanceOf[js.Any])
+    if (offsetBlockStart != null) __obj.updateDynamic("offsetBlockStart")(offsetBlockStart.asInstanceOf[js.Any])
+    if (offsetInline != null) __obj.updateDynamic("offsetInline")(offsetInline.asInstanceOf[js.Any])
+    if (offsetInlineEnd != null) __obj.updateDynamic("offsetInlineEnd")(offsetInlineEnd.asInstanceOf[js.Any])
+    if (offsetInlineStart != null) __obj.updateDynamic("offsetInlineStart")(offsetInlineStart.asInstanceOf[js.Any])
+    if (scrollSnapCoordinate != null) __obj.updateDynamic("scrollSnapCoordinate")(scrollSnapCoordinate.asInstanceOf[js.Any])
+    if (scrollSnapDestination != null) __obj.updateDynamic("scrollSnapDestination")(scrollSnapDestination.asInstanceOf[js.Any])
+    if (scrollSnapPointsX != null) __obj.updateDynamic("scrollSnapPointsX")(scrollSnapPointsX.asInstanceOf[js.Any])
+    if (scrollSnapPointsY != null) __obj.updateDynamic("scrollSnapPointsY")(scrollSnapPointsY.asInstanceOf[js.Any])
+    if (scrollSnapTypeX != null) __obj.updateDynamic("scrollSnapTypeX")(scrollSnapTypeX.asInstanceOf[js.Any])
+    if (scrollSnapTypeY != null) __obj.updateDynamic("scrollSnapTypeY")(scrollSnapTypeY.asInstanceOf[js.Any])
+    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
+    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
+    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
+    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
+    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
+    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
+    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
+    if (textCombineHorizontal != null) __obj.updateDynamic("textCombineHorizontal")(textCombineHorizontal.asInstanceOf[js.Any])
+    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSProperties]
   }
 }

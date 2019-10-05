@@ -1,8 +1,8 @@
 package typings.tweetnacl.tweetnaclMod
 
 import typings.std.Uint8Array
-import typings.tweetnacl.tweetnaclMod.boxNs.keyPair
-import typings.tweetnacl.tweetnaclMod.boxNs.open
+import typings.tweetnacl.tweetnaclMod.box.keyPair
+import typings.tweetnacl.tweetnaclMod.box.open
 import typings.tweetnacl.tweetnaclNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,5 +24,22 @@ trait box extends js.Object {
   def before(publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array = js.native
   def keyPair(): BoxKeyPair = js.native
   def open(msg: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array | `false` = js.native
+}
+
+@JSImport("tweetnacl", "box")
+@js.native
+object box extends js.Object {
+  @js.native
+  trait keyPair extends js.Object {
+    def apply(): BoxKeyPair = js.native
+    def fromSecretKey(secretKey: Uint8Array): BoxKeyPair = js.native
+  }
+  
+  @js.native
+  trait open extends js.Object {
+    def apply(msg: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array | `false` = js.native
+    def after(box: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array | `false` = js.native
+  }
+  
 }
 

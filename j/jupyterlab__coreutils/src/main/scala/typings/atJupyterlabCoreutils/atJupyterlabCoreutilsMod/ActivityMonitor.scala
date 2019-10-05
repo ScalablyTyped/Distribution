@@ -1,6 +1,6 @@
 package typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod
 
-import typings.atJupyterlabCoreutils.libActivitymonitorMod.ActivityMonitorNs.IOptions
+import typings.atJupyterlabCoreutils.libActivitymonitorMod.ActivityMonitor.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

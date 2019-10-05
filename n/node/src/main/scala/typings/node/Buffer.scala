@@ -1,6 +1,6 @@
 package typings.node
 
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._PathLike
 import typings.std.ArrayBuffer

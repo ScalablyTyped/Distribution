@@ -1,7 +1,7 @@
 package typings.atPulumiAws.glueConnectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.glueNs.ConnectionPhysicalConnectionRequirements
+import typings.atPulumiAws.typesInputMod.glue.ConnectionPhysicalConnectionRequirements
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

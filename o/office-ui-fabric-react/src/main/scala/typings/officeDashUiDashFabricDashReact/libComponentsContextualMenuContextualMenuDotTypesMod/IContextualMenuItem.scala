@@ -12,6 +12,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
@@ -260,7 +261,7 @@ object IContextualMenuItem {
     onClick: (/* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], /* item */ js.UndefOr[IContextualMenuItem]) => Boolean | Unit = null,
     onMouseDown: (/* item */ IContextualMenuItem, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     onRender: (/* item */ js.Any, /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]) => ReactNode = null,
-    onRenderIcon: IRenderFunction[IContextualMenuItemProps] = null,
+    onRenderIcon: (/* props */ js.UndefOr[IContextualMenuItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuItemProps], Element | Null]]) => Element | Null = null,
     primaryDisabled: js.UndefOr[Boolean] = js.undefined,
     rel: String = null,
     role: String = null,
@@ -297,7 +298,7 @@ object IContextualMenuItem {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction2(onMouseDown))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction2(onRender))
-    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(onRenderIcon)
+    if (onRenderIcon != null) __obj.updateDynamic("onRenderIcon")(js.Any.fromFunction2(onRenderIcon))
     if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled)
     if (rel != null) __obj.updateDynamic("rel")(rel)
     if (role != null) __obj.updateDynamic("role")(role)

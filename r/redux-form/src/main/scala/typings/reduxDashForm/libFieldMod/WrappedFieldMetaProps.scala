@@ -30,7 +30,7 @@ object WrappedFieldMetaProps {
     asyncValidating: Boolean,
     autofilled: Boolean,
     dirty: Boolean,
-    dispatch: Dispatch[_],
+    dispatch: _ => _,
     form: String,
     initial: js.Any,
     invalid: Boolean,
@@ -44,7 +44,7 @@ object WrappedFieldMetaProps {
     error: js.Any = null,
     warning: js.Any = null
   ): WrappedFieldMetaProps = {
-    val __obj = js.Dynamic.literal(asyncValidating = asyncValidating, autofilled = autofilled, dirty = dirty, dispatch = dispatch, form = form, initial = initial, invalid = invalid, pristine = pristine, submitFailed = submitFailed, submitting = submitting, touched = touched, valid = valid, visited = visited)
+    val __obj = js.Dynamic.literal(asyncValidating = asyncValidating, autofilled = autofilled, dirty = dirty, dispatch = js.Any.fromFunction1(dispatch), form = form, initial = initial, invalid = invalid, pristine = pristine, submitFailed = submitFailed, submitting = submitting, touched = touched, valid = valid, visited = visited)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (error != null) __obj.updateDynamic("error")(error)
     if (warning != null) __obj.updateDynamic("warning")(warning)

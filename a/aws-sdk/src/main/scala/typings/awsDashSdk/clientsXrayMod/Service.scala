@@ -68,9 +68,9 @@ object Service {
     EndTime: Timestamp = null,
     Name: String = null,
     Names: ServiceNames = null,
-    ReferenceId: js.UndefOr[NullableInteger] = js.undefined,
+    ReferenceId: Int | scala.Double = null,
     ResponseTimeHistogram: Histogram = null,
-    Root: js.UndefOr[NullableBoolean] = js.undefined,
+    Root: js.UndefOr[scala.Boolean] = js.undefined,
     StartTime: Timestamp = null,
     State: String = null,
     SummaryStatistics: ServiceStatistics = null,
@@ -83,7 +83,7 @@ object Service {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Names != null) __obj.updateDynamic("Names")(Names)
-    if (!js.isUndefined(ReferenceId)) __obj.updateDynamic("ReferenceId")(ReferenceId)
+    if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
     if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram)
     if (!js.isUndefined(Root)) __obj.updateDynamic("Root")(Root)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)

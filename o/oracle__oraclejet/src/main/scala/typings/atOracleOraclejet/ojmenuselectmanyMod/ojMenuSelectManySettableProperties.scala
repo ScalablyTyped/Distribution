@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojmenuselectmanyMod
 
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetSettableProperties
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojmenuselectmanyMod.ojMenuSelectManyNs.Option
+import typings.atOracleOraclejet.ojmenuselectmanyMod.ojMenuSelectMany.Option
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

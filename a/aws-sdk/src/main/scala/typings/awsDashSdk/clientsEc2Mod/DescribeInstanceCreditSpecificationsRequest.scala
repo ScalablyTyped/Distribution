@@ -30,17 +30,17 @@ trait DescribeInstanceCreditSpecificationsRequest extends js.Object {
 object DescribeInstanceCreditSpecificationsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     InstanceIds: InstanceIdStringList = null,
-    MaxResults: js.UndefOr[DescribeInstanceCreditSpecificationsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeInstanceCreditSpecificationsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeInstanceCreditSpecificationsRequest]
   }

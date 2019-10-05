@@ -134,7 +134,7 @@ object IHoverCardProps {
     onCardExpand: () => Unit = null,
     onCardHide: () => Unit = null,
     onCardVisible: () => Unit = null,
-    openHotKey: js.UndefOr[KeyCodes] = js.undefined,
+    openHotKey: Int | Double = null,
     plainCardProps: IPlainCardProps = null,
     setAriaDescribedBy: js.UndefOr[Boolean] = js.undefined,
     setInitialFocus: js.UndefOr[Boolean] = js.undefined,
@@ -159,7 +159,7 @@ object IHoverCardProps {
     if (onCardExpand != null) __obj.updateDynamic("onCardExpand")(js.Any.fromFunction0(onCardExpand))
     if (onCardHide != null) __obj.updateDynamic("onCardHide")(js.Any.fromFunction0(onCardHide))
     if (onCardVisible != null) __obj.updateDynamic("onCardVisible")(js.Any.fromFunction0(onCardVisible))
-    if (!js.isUndefined(openHotKey)) __obj.updateDynamic("openHotKey")(openHotKey)
+    if (openHotKey != null) __obj.updateDynamic("openHotKey")(openHotKey.asInstanceOf[js.Any])
     if (plainCardProps != null) __obj.updateDynamic("plainCardProps")(plainCardProps)
     if (!js.isUndefined(setAriaDescribedBy)) __obj.updateDynamic("setAriaDescribedBy")(setAriaDescribedBy)
     if (!js.isUndefined(setInitialFocus)) __obj.updateDynamic("setInitialFocus")(setInitialFocus)

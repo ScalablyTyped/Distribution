@@ -1,6 +1,6 @@
 package typings.xstate
 
-import typings.xstate.esTypesMod._StateTypes
+import typings.xstate.libTypesMod._StateTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +33,12 @@ object xstateStrings {
   @js.native
   sealed trait atomic
     extends _StateTypes
-       with typings.xstate.libTypesMod._StateTypes
+       with typings.xstate.esTypesMod._StateTypes
   
   @js.native
   sealed trait compound
     extends _StateTypes
-       with typings.xstate.libTypesMod._StateTypes
+       with typings.xstate.esTypesMod._StateTypes
   
   @js.native
   sealed trait deep extends js.Object
@@ -49,12 +49,12 @@ object xstateStrings {
   @js.native
   sealed trait `final`
     extends _StateTypes
-       with typings.xstate.libTypesMod._StateTypes
+       with typings.xstate.esTypesMod._StateTypes
   
   @js.native
   sealed trait history
     extends _StateTypes
-       with typings.xstate.libTypesMod._StateTypes
+       with typings.xstate.esTypesMod._StateTypes
   
   @js.native
   sealed trait internal extends js.Object
@@ -62,7 +62,7 @@ object xstateStrings {
   @js.native
   sealed trait parallel
     extends _StateTypes
-       with typings.xstate.libTypesMod._StateTypes
+       with typings.xstate.esTypesMod._StateTypes
   
   @js.native
   sealed trait platform extends js.Object

@@ -17,10 +17,10 @@ trait Datapoint extends js.Object {
 
 object Datapoint {
   @scala.inline
-  def apply(Timestamp: TimestampType = null, Value: js.UndefOr[MetricScale] = js.undefined): Datapoint = {
+  def apply(Timestamp: TimestampType = null, Value: Int | Double = null): Datapoint = {
     val __obj = js.Dynamic.literal()
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datapoint]
   }
 }

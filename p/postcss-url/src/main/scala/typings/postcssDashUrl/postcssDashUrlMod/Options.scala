@@ -1,6 +1,8 @@
 package typings.postcssDashUrl.postcssDashUrlMod
 
+import typings.postcssDashUrl.Anon_AbsolutePath
 import typings.postcssDashUrl.Anon_Append
+import typings.postcssDashUrl.Anon_File
 import typings.postcssDashUrl.postcssDashUrlStrings.`inline`
 import typings.postcssDashUrl.postcssDashUrlStrings.copy
 import typings.postcssDashUrl.postcssDashUrlStrings.rebase
@@ -76,7 +78,7 @@ object Options {
   def apply(
     assetsPath: Boolean | String = null,
     basePath: String | js.Array[String] = null,
-    fallback: CustomTransformFunction = null,
+    fallback: (/* asset */ Anon_AbsolutePath, /* dir */ Anon_File) => String = null,
     filter: RegExp | CustomFilterFunction | String = null,
     hashOptions: Anon_Append = null,
     ignoreFragmentWarning: js.UndefOr[Boolean] = js.undefined,
@@ -89,7 +91,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (assetsPath != null) __obj.updateDynamic("assetsPath")(assetsPath.asInstanceOf[js.Any])
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (hashOptions != null) __obj.updateDynamic("hashOptions")(hashOptions)
     if (!js.isUndefined(ignoreFragmentWarning)) __obj.updateDynamic("ignoreFragmentWarning")(ignoreFragmentWarning)

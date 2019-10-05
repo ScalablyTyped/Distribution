@@ -1,5 +1,6 @@
 package typings.aureliaDashPal.aureliaDashPalMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.aureliaDashPal.Anon_DONE
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
@@ -78,4 +79,8 @@ trait Platform extends js.Object {
     */
   def requestAnimationFrame(callback: js.Function1[/* animationFrameStart */ Double, Unit]): Double = js.native
 }
+
+@JSImport("aurelia-pal", "PLATFORM")
+@js.native
+object PLATFORM extends TopLevel[Platform]
 

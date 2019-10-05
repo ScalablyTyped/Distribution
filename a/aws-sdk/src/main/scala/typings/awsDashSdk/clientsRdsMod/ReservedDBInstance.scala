@@ -76,11 +76,11 @@ object ReservedDBInstance {
   def apply(
     CurrencyCode: String = null,
     DBInstanceClass: String = null,
-    DBInstanceCount: js.UndefOr[Integer] = js.undefined,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
+    DBInstanceCount: Int | scala.Double = null,
+    Duration: Int | scala.Double = null,
+    FixedPrice: Int | scala.Double = null,
     LeaseId: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OfferingType: String = null,
     ProductDescription: String = null,
     RecurringCharges: RecurringChargeList = null,
@@ -89,14 +89,14 @@ object ReservedDBInstance {
     ReservedDBInstancesOfferingId: String = null,
     StartTime: TStamp = null,
     State: String = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedDBInstance = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
-    if (!js.isUndefined(DBInstanceCount)) __obj.updateDynamic("DBInstanceCount")(DBInstanceCount)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (DBInstanceCount != null) __obj.updateDynamic("DBInstanceCount")(DBInstanceCount.asInstanceOf[js.Any])
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType)
@@ -107,7 +107,7 @@ object ReservedDBInstance {
     if (ReservedDBInstancesOfferingId != null) __obj.updateDynamic("ReservedDBInstancesOfferingId")(ReservedDBInstancesOfferingId)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     if (State != null) __obj.updateDynamic("State")(State)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedDBInstance]
   }
 }

@@ -38,14 +38,14 @@ object CreateActivationRequest {
     DefaultInstanceName: DefaultInstanceName = null,
     Description: ActivationDescription = null,
     ExpirationDate: ExpirationDate = null,
-    RegistrationLimit: js.UndefOr[RegistrationLimit] = js.undefined,
+    RegistrationLimit: Int | Double = null,
     Tags: TagList = null
   ): CreateActivationRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole)
     if (DefaultInstanceName != null) __obj.updateDynamic("DefaultInstanceName")(DefaultInstanceName)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate)
-    if (!js.isUndefined(RegistrationLimit)) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit)
+    if (RegistrationLimit != null) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateActivationRequest]
   }

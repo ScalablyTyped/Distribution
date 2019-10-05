@@ -1,5 +1,6 @@
 package typings.jsonapiDashSerializer.jsonapiDashSerializerMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,4 +13,8 @@ class Error protected () extends JSONAPIError {
   /* CompleteClass */
   override var errors: js.Array[_] = js.native
 }
+
+@JSImport("jsonapi-serializer", "Error")
+@js.native
+object Error extends TopLevel[ErrorConstructor]
 

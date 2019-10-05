@@ -16,9 +16,5 @@ trait CustomElementRegistry extends js.Object {
 
 @JSGlobal("CustomElementRegistry")
 @js.native
-class CustomElementRegistryCls () extends CustomElementRegistry
-
-@JSGlobal("CustomElementRegistry")
-@js.native
 object CustomElementRegistry extends Instantiable0[CustomElementRegistry]
 

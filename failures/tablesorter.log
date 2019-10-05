@@ -423,9 +423,9 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(bind) [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter) / TsGlobal() / TsDeclInterface(JQuery))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(bind) [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter) / TsGlobal() / TsDeclInterface(JQuery))] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Max) [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Filtering/Formatter/Options/UIOptionsBase) / TsDeclTypeAlias(UIOptionsBase) / TsTypeParam() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded oldAjaxSuccess into 1 methods [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Paging/PagerConfigurationStore) / TsDeclInterface(PagerConfigurationStore))] 
 [info ] ExpandCallables.scala:48 Expanded applyWidgets into 1 methods [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/System/TriggerNameMap) / TsDeclInterface(TriggerNameMap))] 
 [info ] ExpandCallables.scala:48 Expanded updateHeaders into 1 methods [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/System/TriggerNameMap) / TsDeclInterface(TriggerNameMap))] 
-[info ] ExpandCallables.scala:48 Expanded oldAjaxSuccess into 1 methods [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Paging/PagerConfigurationStore) / TsDeclInterface(PagerConfigurationStore))] 
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing tablesorter [id => tablesorter, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => scala.js] 
@@ -442,3 +442,4 @@
 [E] Failed to compile 'tablesorter'
  [id => tablesorter, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => publish] 

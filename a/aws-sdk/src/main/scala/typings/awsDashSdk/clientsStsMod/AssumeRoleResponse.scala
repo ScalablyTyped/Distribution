@@ -24,12 +24,12 @@ object AssumeRoleResponse {
   def apply(
     AssumedRoleUser: AssumedRoleUser = null,
     Credentials: Credentials = null,
-    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
+    PackedPolicySize: Int | Double = null
   ): AssumeRoleResponse = {
     val __obj = js.Dynamic.literal()
     if (AssumedRoleUser != null) __obj.updateDynamic("AssumedRoleUser")(AssumedRoleUser)
     if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials)
-    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize)
+    if (PackedPolicySize != null) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleResponse]
   }
 }

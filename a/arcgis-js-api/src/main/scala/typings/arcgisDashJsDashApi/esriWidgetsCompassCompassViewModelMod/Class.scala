@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsCompassCompassViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CompassViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CompassViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.CompassViewModel
+import typings.arcgisDashJsDashApi.__esri.CompassViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

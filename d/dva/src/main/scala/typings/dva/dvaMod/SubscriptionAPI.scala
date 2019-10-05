@@ -14,8 +14,8 @@ trait SubscriptionAPI extends js.Object {
 
 object SubscriptionAPI {
   @scala.inline
-  def apply(dispatch: Dispatch[_], history: History[LocationState]): SubscriptionAPI = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch, history = history)
+  def apply(dispatch: _ => _, history: History[LocationState]): SubscriptionAPI = {
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), history = history)
   
     __obj.asInstanceOf[SubscriptionAPI]
   }

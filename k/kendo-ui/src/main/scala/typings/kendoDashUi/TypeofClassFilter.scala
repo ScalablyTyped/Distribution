@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.Filter
-import typings.kendoDashUi.kendoNs.uiNs.FilterOptions
+import typings.kendoDashUi.kendo.ui.Filter
+import typings.kendoDashUi.kendo.ui.FilterOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

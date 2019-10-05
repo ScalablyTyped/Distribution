@@ -80,10 +80,10 @@ object FormFunctionProps {
     preSubmit: (/* values */ FormValues, /* formApi */ FormApi) => FormValues = null,
     preValidate: /* values */ FormValues => FormValues = null,
     render: /* formApi */ FormApi => RenderReturn = null,
-    validateError: ValidateValuesFunction = null,
+    validateError: /* values */ FormValues => FormErrors = null,
     validateOnSubmit: js.UndefOr[Boolean] = js.undefined,
     validateSuccess: (/* values */ FormValues, /* errors */ FormErrors) => FormErrors = null,
-    validateWarning: ValidateValuesFunction = null
+    validateWarning: /* values */ FormValues => FormErrors = null
   ): FormFunctionProps = {
     val __obj = js.Dynamic.literal(addValue = js.Any.fromFunction2(addValue), asyncValidations = asyncValidations, errors = errors, getFormState = js.Any.fromFunction0(getFormState), nestedErrors = nestedErrors, removeValue = js.Any.fromFunction2(removeValue), resetAll = js.Any.fromFunction0(resetAll), setAllTouched = js.Any.fromFunction1(setAllTouched), setAllValues = js.Any.fromFunction1(setAllValues), setError = js.Any.fromFunction2(setError), setFormState = js.Any.fromFunction1(setFormState), setSuccess = js.Any.fromFunction2(setSuccess), setTouched = js.Any.fromFunction2(setTouched), setValue = js.Any.fromFunction2(setValue), setWarning = js.Any.fromFunction2(setWarning), submitForm = js.Any.fromFunction1(submitForm), submits = submits, submitted = submitted, successes = successes, swapValues = js.Any.fromFunction3(swapValues), touched = touched, validating = validating, validationFailed = validationFailed, validationFailures = validationFailures, values = values, warnings = warnings)
     if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators)
@@ -99,10 +99,10 @@ object FormFunctionProps {
     if (preSubmit != null) __obj.updateDynamic("preSubmit")(js.Any.fromFunction2(preSubmit))
     if (preValidate != null) __obj.updateDynamic("preValidate")(js.Any.fromFunction1(preValidate))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (validateError != null) __obj.updateDynamic("validateError")(validateError)
+    if (validateError != null) __obj.updateDynamic("validateError")(js.Any.fromFunction1(validateError))
     if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit)
     if (validateSuccess != null) __obj.updateDynamic("validateSuccess")(js.Any.fromFunction2(validateSuccess))
-    if (validateWarning != null) __obj.updateDynamic("validateWarning")(validateWarning)
+    if (validateWarning != null) __obj.updateDynamic("validateWarning")(js.Any.fromFunction1(validateWarning))
     __obj.asInstanceOf[FormFunctionProps]
   }
 }

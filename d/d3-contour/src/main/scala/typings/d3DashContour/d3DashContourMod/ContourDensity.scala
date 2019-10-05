@@ -128,3 +128,9 @@ trait ContourDensity[Datum] extends js.Object {
   def y(y: js.Function1[/* d */ Datum, Double]): this.type = js.native
 }
 
+@JSImport("d3-contour", "contourDensity")
+@js.native
+object contourDensity extends js.Object {
+  def apply[Datum](): ContourDensity[Datum] = js.native
+}
+

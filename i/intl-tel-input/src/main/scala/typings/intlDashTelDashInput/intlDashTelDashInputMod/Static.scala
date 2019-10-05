@@ -1,6 +1,6 @@
 package typings.intlDashTelDashInput.intlDashTelDashInputMod
 
-import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtilsNs.CountryData
+import typings.intlDashTelDashInput.intlDashTelDashInputMod.intlTelInputUtils.CountryData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

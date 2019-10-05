@@ -21,7 +21,11 @@ trait ResetInstanceAttributeRequest extends js.Object {
 
 object ResetInstanceAttributeRequest {
   @scala.inline
-  def apply(Attribute: InstanceAttributeName, InstanceId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ResetInstanceAttributeRequest = {
+  def apply(
+    Attribute: InstanceAttributeName,
+    InstanceId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResetInstanceAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], InstanceId = InstanceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ResetInstanceAttributeRequest]

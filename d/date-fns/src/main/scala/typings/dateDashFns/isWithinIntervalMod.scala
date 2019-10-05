@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/isWithinInterval", JSImport.Namespace)
 @js.native
 object isWithinIntervalMod extends js.Object {
-  def default(date: Double, interval: typings.dateDashFns.dateDashFnsMod.Interval): Boolean = js.native
-  def default(date: Date, interval: typings.dateDashFns.dateDashFnsMod.Interval): Boolean = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double, interval: typings.dateDashFns.dateDashFnsMod.Interval): Boolean = js.native
+    def apply(date: Date, interval: typings.dateDashFns.dateDashFnsMod.Interval): Boolean = js.native
+  }
+  
 }
 

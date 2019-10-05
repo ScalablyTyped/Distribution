@@ -19,3 +19,9 @@ object Bounds {
   }
 }
 
+@JSImport("latlon-geohash", "bounds")
+@js.native
+object bounds extends js.Object {
+  def apply(geohash: String): Bounds = js.native
+}
+

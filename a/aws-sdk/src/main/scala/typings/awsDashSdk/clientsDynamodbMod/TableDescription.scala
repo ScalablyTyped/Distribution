@@ -86,7 +86,7 @@ object TableDescription {
     BillingModeSummary: BillingModeSummary = null,
     CreationDateTime: _Date = null,
     GlobalSecondaryIndexes: GlobalSecondaryIndexDescriptionList = null,
-    ItemCount: js.UndefOr[Long] = js.undefined,
+    ItemCount: Int | scala.Double = null,
     KeySchema: KeySchema = null,
     LatestStreamArn: StreamArn = null,
     LatestStreamLabel: String = null,
@@ -98,7 +98,7 @@ object TableDescription {
     TableArn: String = null,
     TableId: TableId = null,
     TableName: TableName = null,
-    TableSizeBytes: js.UndefOr[Long] = js.undefined,
+    TableSizeBytes: Int | scala.Double = null,
     TableStatus: TableStatus = null
   ): TableDescription = {
     val __obj = js.Dynamic.literal()
@@ -106,7 +106,7 @@ object TableDescription {
     if (BillingModeSummary != null) __obj.updateDynamic("BillingModeSummary")(BillingModeSummary)
     if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime)
     if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
     if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
     if (LatestStreamArn != null) __obj.updateDynamic("LatestStreamArn")(LatestStreamArn)
     if (LatestStreamLabel != null) __obj.updateDynamic("LatestStreamLabel")(LatestStreamLabel)
@@ -118,7 +118,7 @@ object TableDescription {
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
     if (TableId != null) __obj.updateDynamic("TableId")(TableId)
     if (TableName != null) __obj.updateDynamic("TableName")(TableName)
-    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes)
+    if (TableSizeBytes != null) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.asInstanceOf[js.Any])
     if (TableStatus != null) __obj.updateDynamic("TableStatus")(TableStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDescription]
   }

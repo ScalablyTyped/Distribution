@@ -41,3 +41,10 @@ object ObjectTypeCallProperty {
   }
 }
 
+@JSImport("@babel/types", "objectTypeCallProperty")
+@js.native
+object objectTypeCallProperty extends js.Object {
+  def apply(value: FlowType): ObjectTypeCallProperty = js.native
+  def apply(value: FlowType, _static: Boolean): ObjectTypeCallProperty = js.native
+}
+

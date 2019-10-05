@@ -1,37 +1,21 @@
 package typings.steed.steedMod
 
-import typings.steed.Fn_Arr
-import typings.steed.Fn_ArrCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Steed extends js.Object {
-  @JSName("eachSeries")
-  var eachSeries_Original: Fn_Arr = js.native
-  @JSName("mapSeries")
-  var mapSeries_Original: Fn_ArrCallback = js.native
+  var eachSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.each */ js.Any = js.native
+  var mapSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof steed.map */ js.Any = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E]): Unit = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): Unit = js.native
   def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): Unit = js.native
   def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): Unit = js.native
-  def eachSeries[T, E](arr: js.Array[T], iterator: SteedIterator[T, E]): Unit = js.native
-  def eachSeries[T, E](arr: js.Array[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): Unit = js.native
-  def eachSeries[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): Unit = js.native
-  def eachSeries[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): Unit = js.native
   def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E]): Unit = js.native
   def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E], callback: SteedResultArrayCallback[R, E]): Unit = js.native
   def map[T, R, E](arr: Dictionary[T], iterator: SteedResultIterator[T, R, E]): Unit = js.native
   def map[T, R, E](
-    arr: Dictionary[T],
-    iterator: SteedResultIterator[T, R, E],
-    callback: SteedResultArrayCallback[R, E]
-  ): Unit = js.native
-  def mapSeries[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E]): Unit = js.native
-  def mapSeries[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E], callback: SteedResultArrayCallback[R, E]): Unit = js.native
-  def mapSeries[T, R, E](arr: Dictionary[T], iterator: SteedResultIterator[T, R, E]): Unit = js.native
-  def mapSeries[T, R, E](
     arr: Dictionary[T],
     iterator: SteedResultIterator[T, R, E],
     callback: SteedResultArrayCallback[R, E]

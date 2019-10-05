@@ -1,6 +1,6 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointerNs.ValueType
+import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js

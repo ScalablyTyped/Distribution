@@ -40,3 +40,10 @@ object ContinueStatement {
   }
 }
 
+@JSImport("@babel/types", "continueStatement")
+@js.native
+object continueStatement extends js.Object {
+  def apply(): ContinueStatement = js.native
+  def apply(label: Identifier): ContinueStatement = js.native
+}
+

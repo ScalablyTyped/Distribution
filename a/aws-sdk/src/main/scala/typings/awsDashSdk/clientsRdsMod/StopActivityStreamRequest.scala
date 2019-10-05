@@ -17,7 +17,7 @@ trait StopActivityStreamRequest extends js.Object {
 
 object StopActivityStreamRequest {
   @scala.inline
-  def apply(ResourceArn: String, ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined): StopActivityStreamRequest = {
+  def apply(ResourceArn: String, ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined): StopActivityStreamRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     __obj.asInstanceOf[StopActivityStreamRequest]

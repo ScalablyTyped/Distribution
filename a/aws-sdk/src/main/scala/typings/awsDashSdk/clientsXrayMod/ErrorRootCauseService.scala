@@ -36,7 +36,7 @@ object ErrorRootCauseService {
   def apply(
     AccountId: String = null,
     EntityPath: ErrorRootCauseEntityPath = null,
-    Inferred: js.UndefOr[NullableBoolean] = js.undefined,
+    Inferred: js.UndefOr[scala.Boolean] = js.undefined,
     Name: String = null,
     Names: ServiceNames = null,
     Type: String = null

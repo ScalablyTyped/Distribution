@@ -26,7 +26,7 @@ trait MergeMetadata extends js.Object {
 object MergeMetadata {
   @scala.inline
   def apply(
-    isMerged: js.UndefOr[IsMerged] = js.undefined,
+    isMerged: js.UndefOr[Boolean] = js.undefined,
     mergeCommitId: CommitId = null,
     mergeOption: MergeOptionTypeEnum = null,
     mergedBy: Arn = null

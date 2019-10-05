@@ -40,14 +40,10 @@ object PaginationData {
     defaultCurrent: Double,
     defaultPageSize: Double,
     hideOnSinglePage: Boolean,
-    jumpNextIcon: ComponentType[js.Object] | ReactNode,
-    jumpPrevIcon: ComponentType[js.Object] | ReactNode,
     locale: js.Object,
-    nextIcon: ComponentType[js.Object] | ReactNode,
     pageSize: Double,
     pageSizeOptions: js.Array[String],
     prefixCls: String,
-    prevIcon: ComponentType[js.Object] | ReactNode,
     selectComponentClass: ComponentType[js.Object],
     selectPrefixCls: String,
     showLessItems: Boolean,
@@ -56,10 +52,17 @@ object PaginationData {
     showSizeChanger: Boolean,
     showTitle: Boolean,
     style: CSSProperties,
-    total: Double
+    total: Double,
+    jumpNextIcon: ComponentType[js.Object] | ReactNode = null,
+    jumpPrevIcon: ComponentType[js.Object] | ReactNode = null,
+    nextIcon: ComponentType[js.Object] | ReactNode = null,
+    prevIcon: ComponentType[js.Object] | ReactNode = null
   ): PaginationData = {
-    val __obj = js.Dynamic.literal(className = className, current = current, defaultCurrent = defaultCurrent, defaultPageSize = defaultPageSize, hideOnSinglePage = hideOnSinglePage, jumpNextIcon = jumpNextIcon.asInstanceOf[js.Any], jumpPrevIcon = jumpPrevIcon.asInstanceOf[js.Any], locale = locale, nextIcon = nextIcon.asInstanceOf[js.Any], pageSize = pageSize, pageSizeOptions = pageSizeOptions, prefixCls = prefixCls, prevIcon = prevIcon.asInstanceOf[js.Any], selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls, showLessItems = showLessItems, showPrevNextJumpers = showPrevNextJumpers, showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger, showTitle = showTitle, style = style, total = total)
-  
+    val __obj = js.Dynamic.literal(className = className, current = current, defaultCurrent = defaultCurrent, defaultPageSize = defaultPageSize, hideOnSinglePage = hideOnSinglePage, locale = locale, pageSize = pageSize, pageSizeOptions = pageSizeOptions, prefixCls = prefixCls, selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls, showLessItems = showLessItems, showPrevNextJumpers = showPrevNextJumpers, showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger, showTitle = showTitle, style = style, total = total)
+    if (jumpNextIcon != null) __obj.updateDynamic("jumpNextIcon")(jumpNextIcon.asInstanceOf[js.Any])
+    if (jumpPrevIcon != null) __obj.updateDynamic("jumpPrevIcon")(jumpPrevIcon.asInstanceOf[js.Any])
+    if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.asInstanceOf[js.Any])
+    if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationData]
   }
 }

@@ -27,7 +27,7 @@ object DBInstanceStatusInfo {
   @scala.inline
   def apply(
     Message: String = null,
-    Normal: js.UndefOr[Boolean] = js.undefined,
+    Normal: js.UndefOr[scala.Boolean] = js.undefined,
     Status: String = null,
     StatusType: String = null
   ): DBInstanceStatusInfo = {

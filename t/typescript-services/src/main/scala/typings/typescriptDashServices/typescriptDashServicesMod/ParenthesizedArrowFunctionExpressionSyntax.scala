@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ParenthesizedArrowFunctionExpressionSyntax")
 @js.native
 class ParenthesizedArrowFunctionExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ParenthesizedArrowFunctionExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax {
   def this(
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
     equalsGreaterThanToken: ISyntaxToken,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     expression: IExpressionSyntax,
     parsedInStrictMode: Boolean
   ) = this()
@@ -24,9 +24,9 @@ class ParenthesizedArrowFunctionExpressionSyntax protected ()
 @js.native
 object ParenthesizedArrowFunctionExpressionSyntax extends js.Object {
   def create(
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
     equalsGreaterThanToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.ParenthesizedArrowFunctionExpressionSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.ParenthesizedArrowFunctionExpressionSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax = js.native
 }
 

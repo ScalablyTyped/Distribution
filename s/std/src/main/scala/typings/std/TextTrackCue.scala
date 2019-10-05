@@ -79,12 +79,6 @@ trait TextTrackCue extends EventTarget {
 
 @JSGlobal("TextTrackCue")
 @js.native
-class TextTrackCueCls protected () extends TextTrackCue {
-  def this(startTime: Double, endTime: Double, text: java.lang.String) = this()
-}
-
-@JSGlobal("TextTrackCue")
-@js.native
 object TextTrackCue
   extends Instantiable3[
       /* startTime */ Double, 

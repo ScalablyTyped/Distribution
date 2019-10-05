@@ -34,7 +34,7 @@ trait ListJobsRequest extends js.Object {
 object ListJobsRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[LaserMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     status: JobStatus = null,
     targetSelection: TargetSelection = null,
@@ -42,7 +42,7 @@ object ListJobsRequest {
     thingGroupName: ThingGroupName = null
   ): ListJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (targetSelection != null) __obj.updateDynamic("targetSelection")(targetSelection.asInstanceOf[js.Any])

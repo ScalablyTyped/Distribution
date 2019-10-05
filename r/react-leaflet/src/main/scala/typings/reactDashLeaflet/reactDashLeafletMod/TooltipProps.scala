@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.leaflet.leafletMod.DivOverlayOptions because Already inherited
 - typings.leaflet.leafletMod.TooltipOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined direction, interactive, opacity, permanent, sticky */ trait TooltipProps extends DivOverlayProps {
   var direction: js.UndefOr[Direction] = js.undefined
   var interactive: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation._
 object TooltipProps {
   @scala.inline
   def apply(
-    children: Children,
+    children: Children = null,
     className: String = null,
     direction: Direction = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +33,8 @@ object TooltipProps {
     sticky: js.UndefOr[Boolean] = js.undefined,
     zoomAnimation: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)

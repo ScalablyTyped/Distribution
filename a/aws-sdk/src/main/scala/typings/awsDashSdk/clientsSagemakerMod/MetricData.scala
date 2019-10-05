@@ -21,15 +21,11 @@ trait MetricData extends js.Object {
 
 object MetricData {
   @scala.inline
-  def apply(
-    MetricName: MetricName = null,
-    Timestamp: Timestamp = null,
-    Value: js.UndefOr[Float] = js.undefined
-  ): MetricData = {
+  def apply(MetricName: MetricName = null, Timestamp: Timestamp = null, Value: Int | Double = null): MetricData = {
     val __obj = js.Dynamic.literal()
     if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName)
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricData]
   }
 }

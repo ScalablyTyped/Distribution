@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
+import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

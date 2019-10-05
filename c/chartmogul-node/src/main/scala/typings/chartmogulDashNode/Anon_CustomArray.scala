@@ -1,6 +1,6 @@
 package typings.chartmogulDashNode
 
-import typings.chartmogulDashNode.chartmogulDashNodeMod.CustomerNs.NewCustomAttributes
+import typings.chartmogulDashNode.chartmogulDashNodeMod.Customer.NewCustomAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

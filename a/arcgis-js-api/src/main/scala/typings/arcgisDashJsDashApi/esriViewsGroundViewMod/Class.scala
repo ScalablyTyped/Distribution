@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsGroundViewMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GroundView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GroundViewProperties
+import typings.arcgisDashJsDashApi.__esri.GroundView
+import typings.arcgisDashJsDashApi.__esri.GroundViewProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

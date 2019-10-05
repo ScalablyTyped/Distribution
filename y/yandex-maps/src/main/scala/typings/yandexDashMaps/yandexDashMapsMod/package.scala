@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yandexDashMapsMod {
-  import typings.yandexDashMaps.yandexDashMapsMod.geometryNs.Point
+  import typings.yandexDashMaps.yandexDashMapsMod.geometry.Point
 
   type IChildOnMap = IChild[IControlParent]
   type IControl = IChildOnMap

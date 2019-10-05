@@ -19,10 +19,10 @@ class SecretList protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.SecretList) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.SecretList) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.SecretList,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.SecretList,
     opts: CustomResourceOptions
   ) = this()
 }

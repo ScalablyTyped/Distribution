@@ -1,6 +1,6 @@
 package typings.atPulumiAws.globalacceleratorListenerMod
 
-import typings.atPulumiAws.typesInputMod.globalacceleratorNs.ListenerPortRange
+import typings.atPulumiAws.typesInputMod.globalaccelerator.ListenerPortRange
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -43,14 +43,14 @@ object ZookeeperNodeInfo {
     AttachedENIId: __string = null,
     ClientVpcIpAddress: __string = null,
     Endpoints: __listOf__string = null,
-    ZookeeperId: js.UndefOr[__double] = js.undefined,
+    ZookeeperId: Int | Double = null,
     ZookeeperVersion: __string = null
   ): ZookeeperNodeInfo = {
     val __obj = js.Dynamic.literal()
     if (AttachedENIId != null) __obj.updateDynamic("AttachedENIId")(AttachedENIId)
     if (ClientVpcIpAddress != null) __obj.updateDynamic("ClientVpcIpAddress")(ClientVpcIpAddress)
     if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints)
-    if (!js.isUndefined(ZookeeperId)) __obj.updateDynamic("ZookeeperId")(ZookeeperId)
+    if (ZookeeperId != null) __obj.updateDynamic("ZookeeperId")(ZookeeperId.asInstanceOf[js.Any])
     if (ZookeeperVersion != null) __obj.updateDynamic("ZookeeperVersion")(ZookeeperVersion)
     __obj.asInstanceOf[ZookeeperNodeInfo]
   }

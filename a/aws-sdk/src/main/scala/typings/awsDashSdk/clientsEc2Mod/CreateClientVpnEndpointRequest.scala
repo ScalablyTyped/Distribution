@@ -61,8 +61,8 @@ object CreateClientVpnEndpointRequest {
     ClientToken: String = null,
     Description: String = null,
     DnsServers: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null,
     TransportProtocol: TransportProtocol = null
   ): CreateClientVpnEndpointRequest = {

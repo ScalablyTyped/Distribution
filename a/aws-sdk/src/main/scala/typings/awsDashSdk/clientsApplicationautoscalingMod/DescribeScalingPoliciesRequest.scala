@@ -35,14 +35,14 @@ object DescribeScalingPoliciesRequest {
   @scala.inline
   def apply(
     ServiceNamespace: ServiceNamespace,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: XmlString = null,
     PolicyNames: ResourceIdsMaxLen1600 = null,
     ResourceId: ResourceIdMaxLen1600 = null,
     ScalableDimension: ScalableDimension = null
   ): DescribeScalingPoliciesRequest = {
     val __obj = js.Dynamic.literal(ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames)
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)

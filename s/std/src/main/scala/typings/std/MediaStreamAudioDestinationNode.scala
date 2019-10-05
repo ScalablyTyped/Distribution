@@ -13,13 +13,6 @@ trait MediaStreamAudioDestinationNode extends AudioNode {
 
 @JSGlobal("MediaStreamAudioDestinationNode")
 @js.native
-class MediaStreamAudioDestinationNodeCls protected () extends MediaStreamAudioDestinationNode {
-  def this(context: AudioContext) = this()
-  def this(context: AudioContext, options: AudioNodeOptions) = this()
-}
-
-@JSGlobal("MediaStreamAudioDestinationNode")
-@js.native
 object MediaStreamAudioDestinationNode
   extends Instantiable1[/* context */ AudioContext, MediaStreamAudioDestinationNode]
      with Instantiable2[

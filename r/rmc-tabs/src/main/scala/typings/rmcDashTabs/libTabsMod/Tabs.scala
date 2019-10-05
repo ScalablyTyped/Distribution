@@ -2,7 +2,7 @@ package typings.rmcDashTabs.libTabsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rcDashGesture.rcDashGestureMod.IGestureStatus
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.rmcDashTabs.Anon_Children
 import typings.rmcDashTabs.Anon_OffsetOnPanEnd

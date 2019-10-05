@@ -63,11 +63,11 @@ object RestoreDBClusterFromSnapshotMessage {
     SnapshotIdentifier: String,
     AvailabilityZones: AvailabilityZones = null,
     DBSubnetGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
     EngineVersion: String = null,
     KmsKeyId: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | Double = null,
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBClusterFromSnapshotMessage = {
@@ -78,7 +78,7 @@ object RestoreDBClusterFromSnapshotMessage {
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds)
     __obj.asInstanceOf[RestoreDBClusterFromSnapshotMessage]

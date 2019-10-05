@@ -49,7 +49,7 @@ object StreamInfo {
     roleArn: RoleArn = null,
     streamArn: StreamArn = null,
     streamId: StreamId = null,
-    streamVersion: js.UndefOr[StreamVersion] = js.undefined
+    streamVersion: Int | Double = null
   ): StreamInfo = {
     val __obj = js.Dynamic.literal()
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
@@ -59,7 +59,7 @@ object StreamInfo {
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
     if (streamArn != null) __obj.updateDynamic("streamArn")(streamArn)
     if (streamId != null) __obj.updateDynamic("streamId")(streamId)
-    if (!js.isUndefined(streamVersion)) __obj.updateDynamic("streamVersion")(streamVersion)
+    if (streamVersion != null) __obj.updateDynamic("streamVersion")(streamVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamInfo]
   }
 }

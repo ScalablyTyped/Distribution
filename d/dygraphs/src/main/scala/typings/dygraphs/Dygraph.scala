@@ -1,11 +1,11 @@
 package typings.dygraphs
 
-import typings.dygraphs.dygraphsNs.Annotation
-import typings.dygraphs.dygraphsNs.Area
-import typings.dygraphs.dygraphsNs.Axis
-import typings.dygraphs.dygraphsNs.Data
-import typings.dygraphs.dygraphsNs.Options
-import typings.dygraphs.dygraphsNs.SeriesProperties
+import typings.dygraphs.dygraphs.Annotation
+import typings.dygraphs.dygraphs.Area
+import typings.dygraphs.dygraphs.Axis
+import typings.dygraphs.dygraphs.Data
+import typings.dygraphs.dygraphs.Options
+import typings.dygraphs.dygraphs.SeriesProperties
 import typings.dygraphs.dygraphsStrings.x
 import typings.dygraphs.dygraphsStrings.y
 import typings.std.HTMLElement

@@ -53,7 +53,7 @@ object InputSettings {
     CaptionSelectors: __listOfCaptionSelector = null,
     DeblockFilter: InputDeblockFilter = null,
     DenoiseFilter: InputDenoiseFilter = null,
-    FilterStrength: js.UndefOr[__integerMin1Max5] = js.undefined,
+    FilterStrength: Int | Double = null,
     InputFilter: InputFilter = null,
     NetworkInputSettings: NetworkInputSettings = null,
     SourceEndBehavior: InputSourceEndBehavior = null,
@@ -64,7 +64,7 @@ object InputSettings {
     if (CaptionSelectors != null) __obj.updateDynamic("CaptionSelectors")(CaptionSelectors)
     if (DeblockFilter != null) __obj.updateDynamic("DeblockFilter")(DeblockFilter.asInstanceOf[js.Any])
     if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength)
+    if (FilterStrength != null) __obj.updateDynamic("FilterStrength")(FilterStrength.asInstanceOf[js.Any])
     if (InputFilter != null) __obj.updateDynamic("InputFilter")(InputFilter.asInstanceOf[js.Any])
     if (NetworkInputSettings != null) __obj.updateDynamic("NetworkInputSettings")(NetworkInputSettings)
     if (SourceEndBehavior != null) __obj.updateDynamic("SourceEndBehavior")(SourceEndBehavior.asInstanceOf[js.Any])

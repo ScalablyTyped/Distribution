@@ -12,9 +12,10 @@ trait Anon_Composite extends js.Object {
 
 object Anon_Composite {
   @scala.inline
-  def apply(composite: JSONValue, user: JSONValue): Anon_Composite = {
-    val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
+  def apply(composite: JSONValue = null, user: JSONValue = null): Anon_Composite = {
+    val __obj = js.Dynamic.literal()
+    if (composite != null) __obj.updateDynamic("composite")(composite.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Composite]
   }
 }

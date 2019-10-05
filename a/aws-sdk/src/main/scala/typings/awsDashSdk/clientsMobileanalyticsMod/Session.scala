@@ -26,13 +26,13 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(
-    duration: js.UndefOr[Long] = js.undefined,
+    duration: Int | scala.Double = null,
     id: String50Chars = null,
     startTimestamp: ISO8601Timestamp = null,
     stopTimestamp: ISO8601Timestamp = null
   ): Session = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp)
     if (stopTimestamp != null) __obj.updateDynamic("stopTimestamp")(stopTimestamp)

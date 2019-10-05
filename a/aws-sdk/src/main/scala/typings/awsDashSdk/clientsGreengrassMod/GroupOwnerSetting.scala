@@ -17,7 +17,7 @@ trait GroupOwnerSetting extends js.Object {
 
 object GroupOwnerSetting {
   @scala.inline
-  def apply(AutoAddGroupOwner: js.UndefOr[__boolean] = js.undefined, GroupOwner: __string = null): GroupOwnerSetting = {
+  def apply(AutoAddGroupOwner: js.UndefOr[Boolean] = js.undefined, GroupOwner: __string = null): GroupOwnerSetting = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoAddGroupOwner)) __obj.updateDynamic("AutoAddGroupOwner")(AutoAddGroupOwner)
     if (GroupOwner != null) __obj.updateDynamic("GroupOwner")(GroupOwner)

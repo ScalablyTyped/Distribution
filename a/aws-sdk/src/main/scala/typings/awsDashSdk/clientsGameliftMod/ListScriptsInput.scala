@@ -17,9 +17,9 @@ trait ListScriptsInput extends js.Object {
 
 object ListScriptsInput {
   @scala.inline
-  def apply(Limit: js.UndefOr[PositiveInteger] = js.undefined, NextToken: NonEmptyString = null): ListScriptsInput = {
+  def apply(Limit: Int | scala.Double = null, NextToken: NonEmptyString = null): ListScriptsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListScriptsInput]
   }

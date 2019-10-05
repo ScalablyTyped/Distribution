@@ -35,7 +35,7 @@ object DescribeMetricFiltersRequest {
   @scala.inline
   def apply(
     filterNamePrefix: FilterName = null,
-    limit: js.UndefOr[DescribeLimit] = js.undefined,
+    limit: Int | Double = null,
     logGroupName: LogGroupName = null,
     metricName: MetricName = null,
     metricNamespace: MetricNamespace = null,
@@ -43,7 +43,7 @@ object DescribeMetricFiltersRequest {
   ): DescribeMetricFiltersRequest = {
     val __obj = js.Dynamic.literal()
     if (filterNamePrefix != null) __obj.updateDynamic("filterNamePrefix")(filterNamePrefix)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
     if (metricName != null) __obj.updateDynamic("metricName")(metricName)
     if (metricNamespace != null) __obj.updateDynamic("metricNamespace")(metricNamespace)

@@ -1,6 +1,6 @@
 package typings.microsoftDashLiveDashConnect
 
-import typings.microsoftDashLiveDashConnect.MicrosoftNs.LiveNs.API
+import typings.microsoftDashLiveDashConnect.Microsoft.Live.API
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

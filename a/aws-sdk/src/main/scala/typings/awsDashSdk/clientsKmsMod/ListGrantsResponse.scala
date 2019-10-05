@@ -24,7 +24,7 @@ object ListGrantsResponse {
   def apply(
     Grants: GrantList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[BooleanType] = js.undefined
+    Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListGrantsResponse = {
     val __obj = js.Dynamic.literal()
     if (Grants != null) __obj.updateDynamic("Grants")(Grants)

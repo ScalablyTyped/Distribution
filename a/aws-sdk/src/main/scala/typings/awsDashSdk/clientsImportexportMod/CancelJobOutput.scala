@@ -10,7 +10,7 @@ trait CancelJobOutput extends js.Object {
 
 object CancelJobOutput {
   @scala.inline
-  def apply(Success: js.UndefOr[Success] = js.undefined): CancelJobOutput = {
+  def apply(Success: js.UndefOr[Boolean] = js.undefined): CancelJobOutput = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success)
     __obj.asInstanceOf[CancelJobOutput]

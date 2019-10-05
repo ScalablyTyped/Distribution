@@ -1,16 +1,16 @@
 package typings.atPulumiAws.iotTopicRuleMod
 
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleCloudwatchAlarm
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleCloudwatchMetric
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleDynamodb
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleElasticsearch
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleFirehose
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleKinesis
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleLambda
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleRepublish
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleS3
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleSns
-import typings.atPulumiAws.typesOutputMod.iotNs.TopicRuleSqs
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleCloudwatchAlarm
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleCloudwatchMetric
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleDynamodb
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleElasticsearch
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleFirehose
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleKinesis
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleLambda
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleRepublish
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleS3
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleSns
+import typings.atPulumiAws.typesOutputMod.iot.TopicRuleSqs
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -28,11 +28,11 @@ object DescribeScalingPlanResourcesRequest {
   def apply(
     ScalingPlanName: ScalingPlanName,
     ScalingPlanVersion: ScalingPlanVersion,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeScalingPlanResourcesRequest = {
     val __obj = js.Dynamic.literal(ScalingPlanName = ScalingPlanName, ScalingPlanVersion = ScalingPlanVersion)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeScalingPlanResourcesRequest]
   }

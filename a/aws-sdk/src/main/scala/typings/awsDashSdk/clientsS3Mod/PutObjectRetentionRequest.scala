@@ -37,7 +37,7 @@ object PutObjectRetentionRequest {
   def apply(
     Bucket: BucketName,
     Key: ObjectKey,
-    BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined,
+    BypassGovernanceRetention: js.UndefOr[Boolean] = js.undefined,
     ContentMD5: ContentMD5 = null,
     RequestPayer: RequestPayer = null,
     Retention: ObjectLockRetention = null,

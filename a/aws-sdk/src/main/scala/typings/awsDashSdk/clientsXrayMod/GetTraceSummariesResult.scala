@@ -29,13 +29,13 @@ object GetTraceSummariesResult {
     ApproximateTime: Timestamp = null,
     NextToken: String = null,
     TraceSummaries: TraceSummaryList = null,
-    TracesProcessedCount: js.UndefOr[NullableLong] = js.undefined
+    TracesProcessedCount: Int | scala.Double = null
   ): GetTraceSummariesResult = {
     val __obj = js.Dynamic.literal()
     if (ApproximateTime != null) __obj.updateDynamic("ApproximateTime")(ApproximateTime)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (TraceSummaries != null) __obj.updateDynamic("TraceSummaries")(TraceSummaries)
-    if (!js.isUndefined(TracesProcessedCount)) __obj.updateDynamic("TracesProcessedCount")(TracesProcessedCount)
+    if (TracesProcessedCount != null) __obj.updateDynamic("TracesProcessedCount")(TracesProcessedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesResult]
   }
 }

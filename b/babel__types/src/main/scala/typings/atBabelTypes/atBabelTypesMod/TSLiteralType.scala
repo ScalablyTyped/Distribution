@@ -37,3 +37,11 @@ object TSLiteralType {
   }
 }
 
+@JSImport("@babel/types", "tsLiteralType")
+@js.native
+object tsLiteralType extends js.Object {
+  def apply(literal: BooleanLiteral): TSLiteralType = js.native
+  def apply(literal: NumericLiteral): TSLiteralType = js.native
+  def apply(literal: StringLiteral): TSLiteralType = js.native
+}
+

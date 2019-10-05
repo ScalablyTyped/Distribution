@@ -23,7 +23,7 @@ object AssociateVpcCidrBlockRequest {
   @scala.inline
   def apply(
     VpcId: String,
-    AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.undefined,
+    AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined,
     CidrBlock: String = null
   ): AssociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId)

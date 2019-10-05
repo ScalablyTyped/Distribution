@@ -1,7 +1,7 @@
 package typings.nodeDashForge
 
-import typings.nodeDashForge.nodeDashForgeMod.tlsNs.AlertNs.Description
-import typings.nodeDashForge.nodeDashForgeMod.tlsNs.Verified
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description
+import typings.nodeDashForge.nodeDashForgeMod.tls.Verified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

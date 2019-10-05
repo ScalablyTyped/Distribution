@@ -18,3 +18,10 @@ class Router protected () extends RedomComponent {
   def update_MRouter(route: String, data: js.Any): Unit = js.native
 }
 
+@JSImport("redom", "router")
+@js.native
+object router extends js.Object {
+  def apply(parent: RedomQuery, Views: RouterDictionary): Router = js.native
+  def apply(parent: RedomQuery, Views: RouterDictionary, initData: js.Any): Router = js.native
+}
+

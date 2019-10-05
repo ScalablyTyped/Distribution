@@ -57,7 +57,7 @@ object ReplaceRouteRequest {
     RouteTableId: String,
     DestinationCidrBlock: String = null,
     DestinationIpv6CidrBlock: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EgressOnlyInternetGatewayId: String = null,
     GatewayId: String = null,
     InstanceId: String = null,

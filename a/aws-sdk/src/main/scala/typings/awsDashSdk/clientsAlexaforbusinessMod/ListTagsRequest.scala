@@ -21,9 +21,9 @@ trait ListTagsRequest extends js.Object {
 
 object ListTagsRequest {
   @scala.inline
-  def apply(Arn: Arn, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListTagsRequest = {
+  def apply(Arn: Arn, MaxResults: Int | Double = null, NextToken: NextToken = null): ListTagsRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListTagsRequest]
   }

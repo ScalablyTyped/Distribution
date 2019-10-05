@@ -22,13 +22,13 @@ trait StreamSelection extends js.Object {
 object StreamSelection {
   @scala.inline
   def apply(
-    MaxVideoBitsPerSecond: js.UndefOr[__integer] = js.undefined,
-    MinVideoBitsPerSecond: js.UndefOr[__integer] = js.undefined,
+    MaxVideoBitsPerSecond: Int | Double = null,
+    MinVideoBitsPerSecond: Int | Double = null,
     StreamOrder: StreamOrder = null
   ): StreamSelection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxVideoBitsPerSecond)) __obj.updateDynamic("MaxVideoBitsPerSecond")(MaxVideoBitsPerSecond)
-    if (!js.isUndefined(MinVideoBitsPerSecond)) __obj.updateDynamic("MinVideoBitsPerSecond")(MinVideoBitsPerSecond)
+    if (MaxVideoBitsPerSecond != null) __obj.updateDynamic("MaxVideoBitsPerSecond")(MaxVideoBitsPerSecond.asInstanceOf[js.Any])
+    if (MinVideoBitsPerSecond != null) __obj.updateDynamic("MinVideoBitsPerSecond")(MinVideoBitsPerSecond.asInstanceOf[js.Any])
     if (StreamOrder != null) __obj.updateDynamic("StreamOrder")(StreamOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSelection]
   }

@@ -2,11 +2,11 @@ package typings.atPulumiAws.lambdaFunctionMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionDeadLetterConfig
-import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionEnvironment
-import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionTracingConfig
-import typings.atPulumiAws.typesInputMod.lambdaNs.FunctionVpcConfig
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
+import typings.atPulumiAws.typesInputMod.lambda.FunctionDeadLetterConfig
+import typings.atPulumiAws.typesInputMod.lambda.FunctionEnvironment
+import typings.atPulumiAws.typesInputMod.lambda.FunctionTracingConfig
+import typings.atPulumiAws.typesInputMod.lambda.FunctionVpcConfig
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Archive
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

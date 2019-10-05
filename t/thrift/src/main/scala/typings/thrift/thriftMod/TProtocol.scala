@@ -1,8 +1,9 @@
 package typings.thrift.thriftMod
 
 import typings.node.Buffer
-import typings.thrift.thriftMod.ThriftNs.MessageType
-import typings.thrift.thriftMod.ThriftNs.Type
+import typings.nodeDashInt64.nodeDashInt64Mod.^
+import typings.thrift.thriftMod.Thrift.MessageType
+import typings.thrift.thriftMod.Thrift.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ trait TProtocol extends js.Object {
   def readFieldEnd(): Unit = js.native
   def readI16(): Double = js.native
   def readI32(): Double = js.native
-  def readI64(): typings.nodeDashInt64.nodeDashInt64Mod.^ = js.native
+  def readI64(): ^ = js.native
   def readListBegin(): TList = js.native
   def readListEnd(): Unit = js.native
   def readMapBegin(): TMap = js.native
@@ -43,7 +44,7 @@ trait TProtocol extends js.Object {
   def writeI16(i16: Double): Unit = js.native
   def writeI32(i32: Double): Unit = js.native
   def writeI64(i64: Double): Unit = js.native
-  def writeI64(i64: typings.nodeDashInt64.nodeDashInt64Mod.^): Unit = js.native
+  def writeI64(i64: ^): Unit = js.native
   def writeListBegin(etype: Type, size: Double): Unit = js.native
   def writeListEnd(): Unit = js.native
   def writeMapBegin(ktype: Type, vtype: Type, size: Double): Unit = js.native

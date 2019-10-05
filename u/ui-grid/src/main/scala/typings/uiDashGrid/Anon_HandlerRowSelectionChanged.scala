@@ -1,8 +1,8 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.selectionNs.rowSelectionChangedBatchHandler
-import typings.uiDashGrid.uiDashGridMod.selectionNs.rowSelectionChangedHandler
+import typings.uiDashGrid.uiDashGridMod.selection.rowSelectionChangedBatchHandler
+import typings.uiDashGrid.uiDashGridMod.selection.rowSelectionChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

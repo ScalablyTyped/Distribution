@@ -26,13 +26,13 @@ trait ListTopicRulesRequest extends js.Object {
 object ListTopicRulesRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[GEMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
-    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
+    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     topic: Topic = null
   ): ListTopicRulesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled)
     if (topic != null) __obj.updateDynamic("topic")(topic)

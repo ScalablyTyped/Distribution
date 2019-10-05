@@ -17,16 +17,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class View[TModel /* <: Model */] ()
   extends typings.backbone.backboneMod.View[TModel]
-     with RegionsMixin {
+     with RegionsMixin
+     with DomMixin
+     with CommonMixin {
   def this(options: ViewOptions[TModel]) = this()
   /* CompleteClass */
   override var addRegion: js.Any = js.native
   /* CompleteClass */
   override var addRegions: js.Any = js.native
+  /* CompleteClass */
+  override var appendChildren: js.Any = js.native
+  /* CompleteClass */
+  override var beforeEl: js.Any = js.native
   /**
     * Behavior objects to assign to this View.
     */
   var behaviors: (js.Array[Anon_BehaviorClass | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  /* CompleteClass */
+  override var bindEvents: js.Any = js.native
   @JSName("bindUIElements")
   var bindUIElements_FView: js.Any = js.native
   /**
@@ -34,15 +42,25 @@ class View[TModel /* <: Model */] ()
     * collection view.
     */
   var childViewEventPrefix: js.Any | String | `false` = js.native
+  /* CompleteClass */
+  override var createBuffer: js.Any = js.native
   @JSName("delegateEntityEvents")
   var delegateEntityEvents_FView: js.Any = js.native
   var destroy: js.Any = js.native
   /* CompleteClass */
   override var detachChildView: js.Any = js.native
   /* CompleteClass */
+  override var detachContents: js.Any = js.native
+  /* CompleteClass */
+  override var detachEl: js.Any = js.native
+  /* CompleteClass */
   override var emptyRegions: js.Any = js.native
   /* CompleteClass */
+  override var findEls: js.Any = js.native
+  /* CompleteClass */
   override var getChildView: js.Any = js.native
+  /* CompleteClass */
+  override var getOption: js.Any = js.native
   /* CompleteClass */
   override var getRegion: js.Any = js.native
   /* CompleteClass */
@@ -57,16 +75,26 @@ class View[TModel /* <: Model */] ()
   var isDestroyed_FView: js.Any = js.native
   @JSName("isRendered")
   var isRendered_FView: js.Any = js.native
+  /* CompleteClass */
+  override var mergeOptions: js.Any = js.native
   /**
     * Bind to events that occur on attached models.
     */
   var modelEvents: EventsHash = js.native
   /* CompleteClass */
+  override var normalizeMethods: js.Any = js.native
+  /* CompleteClass */
   override var regionClass: js.Any = js.native
+  /* CompleteClass */
+  override var removeEl: js.Any = js.native
   /* CompleteClass */
   override var removeRegion: js.Any = js.native
   /* CompleteClass */
   override var removeRegions: js.Any = js.native
+  /* CompleteClass */
+  override var replaceEl: js.Any = js.native
+  /* CompleteClass */
+  override var setInnerContent: js.Any = js.native
   /* CompleteClass */
   override var showChildView: js.Any = js.native
   /**
@@ -88,6 +116,8 @@ class View[TModel /* <: Model */] ()
     * throughout the view with the ui attribute.
     */
   var ui: js.Any = js.native
+  /* CompleteClass */
+  override var unbindEvents: js.Any = js.native
   @JSName("unbindUIElements")
   var unbindUIElements_FView: js.Any = js.native
   @JSName("undelegateEntityEvents")
@@ -108,7 +138,8 @@ class View[TModel /* <: Model */] ()
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param children is jQuery.append argument: http://api.jquery.com/append/
     */
-  def appendChildren(el: js.Any, children: js.Any): Unit = js.native
+  @JSName("appendChildren")
+  def appendChildren_MView(el: js.Any, children: js.Any): Unit = js.native
   /**
     * Used to attached the rendered template to this View's element.
     */
@@ -119,12 +150,14 @@ class View[TModel /* <: Model */] ()
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param sibling is jQuery.before argument: http://api.jquery.com/before/
     */
-  def beforeEl(el: js.Any, sibling: js.Any): Unit = js.native
+  @JSName("beforeEl")
+  def beforeEl_MView(el: js.Any, sibling: js.Any): Unit = js.native
   /**
     * This method is used to bind a backbone "entity" (collection/model) to
     * methods on a target object.
     */
-  def bindEvents(entity: js.Any, bindings: js.Any): Unit = js.native
+  @JSName("bindEvents")
+  def bindEvents_MView(entity: js.Any, bindings: js.Any): Unit = js.native
   /**
     * Bind UI elements to this view. By default this is called in the
     * render method. (undocumented)
@@ -134,7 +167,8 @@ class View[TModel /* <: Model */] ()
     * Returns a new HTML DOM node instance. The resulting node can be
     * passed into the other DOM functions.
     */
-  def createBuffer(): DocumentFragment = js.native
+  @JSName("createBuffer")
+  def createBuffer_MView(): DocumentFragment = js.native
   /**
     * Delegate entity events. (undocumented)
     */
@@ -160,12 +194,14 @@ class View[TModel /* <: Model */] ()
     * in the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  def detachContents(el: js.Any): Unit = js.native
+  @JSName("detachContents")
+  def detachContents_MView(el: js.Any): Unit = js.native
   /**
     * Detach el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  def detachEl(el: js.Any): Unit = js.native
+  @JSName("detachEl")
+  def detachEl_MView(el: js.Any): Unit = js.native
   /**
     * Empty all regions from this View.
     */
@@ -179,7 +215,8 @@ class View[TModel /* <: Model */] ()
     * @param selector is a jQuery argument: https://api.jquery.com/jQuery/
     * @param context is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  def findEls(selector: js.Any, context: js.Any): Unit = js.native
+  @JSName("findEls")
+  def findEls_MView(selector: js.Any, context: js.Any): Unit = js.native
   /**
     * Get the view from a region.
     */
@@ -190,7 +227,8 @@ class View[TModel /* <: Model */] ()
     * the object's this.options, with this.options taking precedence.
     * @param optionName the name of the option to retrieve.
     */
-  def getOption(optionName: String): js.Any = js.native
+  @JSName("getOption")
+  def getOption_MView(optionName: String): js.Any = js.native
   /**
     * Return a region from this View.
     */
@@ -236,7 +274,8 @@ class View[TModel /* <: Model */] ()
     * A handy function to pluck certain options and attach them directly
     * to an instance.
     */
-  def mergeOptions(options: js.Any, keys: js.Any): Unit = js.native
+  @JSName("mergeOptions")
+  def mergeOptions_MView(options: js.Any, keys: js.Any): Unit = js.native
   /**
     * Mix in template context methods. Looks for a templateContext
     * attribute, which can either be an object literal, or a function that
@@ -249,7 +288,8 @@ class View[TModel /* <: Model */] ()
     * and returns the same hash with the function names replaced with the
     * function references themselves.
     */
-  def normalizeMethods[T](hash: js.Any): T = js.native
+  @JSName("normalizeMethods")
+  def normalizeMethods_MView[T](hash: js.Any): T = js.native
   /**
     * Event that is triggered after a Region has been added.
     */
@@ -315,7 +355,8 @@ class View[TModel /* <: Model */] ()
     * Remove el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  def removeEl(el: js.Any): Unit = js.native
+  @JSName("removeEl")
+  def removeEl_MView(el: js.Any): Unit = js.native
   /**
     * Remove a region from this View.
     */
@@ -329,7 +370,8 @@ class View[TModel /* <: Model */] ()
   /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
-  def replaceEl(newEl: HTMLElement, oldEL: HTMLElement): Unit = js.native
+  @JSName("replaceEl")
+  def replaceEl_MView(newEl: HTMLElement, oldEL: HTMLElement): Unit = js.native
   /**
     * Method used by this.serializeData to serialize this View's collection
     * data.
@@ -352,7 +394,8 @@ class View[TModel /* <: Model */] ()
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param html is a jQuery.html argument: https://api.jquery.com/html/
     */
-  def setInnerContent(el: js.Any, html: String): Unit = js.native
+  @JSName("setInnerContent")
+  def setInnerContent_MView(el: js.Any, html: String): Unit = js.native
   /**
     * Used to set the renderer for this View. The rendere function is
     * passed the template and the data and is expected to return an html
@@ -377,7 +420,8 @@ class View[TModel /* <: Model */] ()
     * This method can be used to unbind callbacks from entities'
     * (collection/model) events.
     */
-  def unbindEvents(entity: js.Any, bindings: js.Any): Unit = js.native
+  @JSName("unbindEvents")
+  def unbindEvents_MView(entity: js.Any, bindings: js.Any): Unit = js.native
   /**
     * Bind UI elements from this view. (undocumented)
     */

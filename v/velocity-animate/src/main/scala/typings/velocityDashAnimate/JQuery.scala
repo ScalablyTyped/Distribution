@@ -1,10 +1,10 @@
 package typings.velocityDashAnimate
 
-import typings.velocityDashAnimate.jqueryNs.velocityNs.Easing
-import typings.velocityDashAnimate.jqueryNs.velocityNs.ElementCallback
-import typings.velocityDashAnimate.jqueryNs.velocityNs.Options
-import typings.velocityDashAnimate.jqueryNs.velocityNs.Properties
-import typings.velocityDashAnimate.jqueryNs.velocityNs.RegisteredEffectOptions
+import typings.velocityDashAnimate.jquery.velocity.Easing
+import typings.velocityDashAnimate.jquery.velocity.ElementCallback
+import typings.velocityDashAnimate.jquery.velocity.Options
+import typings.velocityDashAnimate.jquery.velocity.Properties
+import typings.velocityDashAnimate.jquery.velocity.RegisteredEffectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

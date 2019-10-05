@@ -8,6 +8,7 @@ import typings.atNivoLegends.atNivoLegendsMod.LegendProps
 import typings.atNivoRadar.atNivoRadarStrings.auto
 import typings.atNivoRadar.atNivoRadarStrings.circular
 import typings.atNivoRadar.atNivoRadarStrings.linear
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,11 +63,11 @@ object CommonRadarProps {
     dotLabelFormat: String | CustomFormatter = null,
     dotLabelYOffset: Int | Double = null,
     dotSize: Int | Double = null,
-    dotSymbol: CustomDotSymbol = null,
+    dotSymbol: /* repeated */ js.Any => ReactNode = null,
     enableDotLabel: js.UndefOr[Boolean] = js.undefined,
     enableDots: js.UndefOr[Boolean] = js.undefined,
     fillOpacity: Int | Double = null,
-    gridLabel: GridLabelCustomFunction = null,
+    gridLabel: /* repeated */ js.Any => String = null,
     gridLabelOffset: Int | Double = null,
     gridLevels: Int | Double = null,
     gridShape: circular | linear = null,
@@ -88,11 +89,11 @@ object CommonRadarProps {
     if (dotLabelFormat != null) __obj.updateDynamic("dotLabelFormat")(dotLabelFormat.asInstanceOf[js.Any])
     if (dotLabelYOffset != null) __obj.updateDynamic("dotLabelYOffset")(dotLabelYOffset.asInstanceOf[js.Any])
     if (dotSize != null) __obj.updateDynamic("dotSize")(dotSize.asInstanceOf[js.Any])
-    if (dotSymbol != null) __obj.updateDynamic("dotSymbol")(dotSymbol)
+    if (dotSymbol != null) __obj.updateDynamic("dotSymbol")(js.Any.fromFunction1(dotSymbol))
     if (!js.isUndefined(enableDotLabel)) __obj.updateDynamic("enableDotLabel")(enableDotLabel)
     if (!js.isUndefined(enableDots)) __obj.updateDynamic("enableDots")(enableDots)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (gridLabel != null) __obj.updateDynamic("gridLabel")(gridLabel)
+    if (gridLabel != null) __obj.updateDynamic("gridLabel")(js.Any.fromFunction1(gridLabel))
     if (gridLabelOffset != null) __obj.updateDynamic("gridLabelOffset")(gridLabelOffset.asInstanceOf[js.Any])
     if (gridLevels != null) __obj.updateDynamic("gridLevels")(gridLevels.asInstanceOf[js.Any])
     if (gridShape != null) __obj.updateDynamic("gridShape")(gridShape.asInstanceOf[js.Any])

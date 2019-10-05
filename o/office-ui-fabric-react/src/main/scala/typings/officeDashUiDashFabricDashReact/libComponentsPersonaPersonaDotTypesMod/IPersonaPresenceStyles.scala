@@ -12,9 +12,10 @@ trait IPersonaPresenceStyles extends js.Object {
 
 object IPersonaPresenceStyles {
   @scala.inline
-  def apply(presence: IStyle, presenceIcon: IStyle): IPersonaPresenceStyles = {
-    val __obj = js.Dynamic.literal(presence = presence.asInstanceOf[js.Any], presenceIcon = presenceIcon.asInstanceOf[js.Any])
-  
+  def apply(presence: IStyle = null, presenceIcon: IStyle = null): IPersonaPresenceStyles = {
+    val __obj = js.Dynamic.literal()
+    if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
+    if (presenceIcon != null) __obj.updateDynamic("presenceIcon")(presenceIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaPresenceStyles]
   }
 }

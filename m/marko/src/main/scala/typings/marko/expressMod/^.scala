@@ -3,7 +3,6 @@ package typings.marko.expressMod
 import typings.express.expressMod.Application
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
-import typings.express.expressMod.RouterOptions
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +21,5 @@ object ^ extends js.Object {
     * Creates an Express application. The express() function is a top-level function exported by the express module.
     */
   def apply(): Express = js.native
-  def Router(): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router = js.native
-  def Router(options: RouterOptions): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router = js.native
 }
 

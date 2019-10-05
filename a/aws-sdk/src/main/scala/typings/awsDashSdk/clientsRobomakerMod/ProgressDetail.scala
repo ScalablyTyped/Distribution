@@ -27,14 +27,14 @@ object ProgressDetail {
   @scala.inline
   def apply(
     currentProgress: RobotDeploymentStep = null,
-    estimatedTimeRemainingSeconds: js.UndefOr[GenericInteger] = js.undefined,
-    percentDone: js.UndefOr[PercentDone] = js.undefined,
+    estimatedTimeRemainingSeconds: Int | Double = null,
+    percentDone: Int | Double = null,
     targetResource: GenericString = null
   ): ProgressDetail = {
     val __obj = js.Dynamic.literal()
     if (currentProgress != null) __obj.updateDynamic("currentProgress")(currentProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedTimeRemainingSeconds)) __obj.updateDynamic("estimatedTimeRemainingSeconds")(estimatedTimeRemainingSeconds)
-    if (!js.isUndefined(percentDone)) __obj.updateDynamic("percentDone")(percentDone)
+    if (estimatedTimeRemainingSeconds != null) __obj.updateDynamic("estimatedTimeRemainingSeconds")(estimatedTimeRemainingSeconds.asInstanceOf[js.Any])
+    if (percentDone != null) __obj.updateDynamic("percentDone")(percentDone.asInstanceOf[js.Any])
     if (targetResource != null) __obj.updateDynamic("targetResource")(targetResource)
     __obj.asInstanceOf[ProgressDetail]
   }

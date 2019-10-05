@@ -21,10 +21,10 @@ trait MetricValue extends js.Object {
 
 object MetricValue {
   @scala.inline
-  def apply(cidrs: Cidrs = null, count: js.UndefOr[UnsignedLong] = js.undefined, ports: Ports = null): MetricValue = {
+  def apply(cidrs: Cidrs = null, count: Int | Double = null, ports: Ports = null): MetricValue = {
     val __obj = js.Dynamic.literal()
     if (cidrs != null) __obj.updateDynamic("cidrs")(cidrs)
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (ports != null) __obj.updateDynamic("ports")(ports)
     __obj.asInstanceOf[MetricValue]
   }

@@ -1,10 +1,11 @@
 package typings.h2o2.h2o2Mod
 
+import typings.boom.boomMod.^
 import typings.h2o2.h2o2Numbers.`false`
 import typings.h2o2.h2o2Strings.http
 import typings.h2o2.h2o2Strings.https
 import typings.h2o2.h2o2Strings.upstream
-import typings.hapi.hapiMod.LifecycleNs.ReturnValue
+import typings.hapi.hapiMod.Lifecycle.ReturnValue
 import typings.hapi.hapiMod.Request
 import typings.hapi.hapiMod.ResponseToolkit
 import typings.hapi.hapiMod.RouteOptions
@@ -43,7 +44,7 @@ trait ProxyHandlerOptions extends js.Object {
   var onResponse: js.UndefOr[
     js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.boom.boomMod.^[_], 
+      /* err */ Null | ^[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 
@@ -83,7 +84,7 @@ object ProxyHandlerOptions {
     maxSockets: `false` | Double = null,
     onResponse: js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.boom.boomMod.^[_], 
+      /* err */ Null | ^[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 

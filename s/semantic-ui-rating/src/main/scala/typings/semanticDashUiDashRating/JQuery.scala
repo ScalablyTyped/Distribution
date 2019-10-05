@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashRating
 
-import typings.semanticDashUiDashRating.SemanticUINs.Rating
-import typings.semanticDashUiDashRating.SemanticUINs.RatingSettings
+import typings.semanticDashUiDashRating.SemanticUI.Rating
+import typings.semanticDashUiDashRating.SemanticUI.RatingSettings
 import typings.semanticDashUiDashRating.semanticDashUiDashRatingStrings.`clear rating`
 import typings.semanticDashUiDashRating.semanticDashUiDashRatingStrings.`get rating`
 import typings.semanticDashUiDashRating.semanticDashUiDashRatingStrings.`set rating`

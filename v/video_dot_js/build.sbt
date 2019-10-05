@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "video_dot_js"
-version := "7.2-dt-20190916Z-b29c33"
-scalaVersion := "2.12.9"
+version := "7.2-dt-20190916Z-b36c9e"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

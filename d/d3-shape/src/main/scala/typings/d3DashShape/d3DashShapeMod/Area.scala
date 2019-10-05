@@ -264,3 +264,9 @@ trait Area[Datum] extends js.Object {
   def y1_This(): this.type = js.native
 }
 
+@JSImport("d3-shape", "area")
+@js.native
+object area extends js.Object {
+  def apply(): Area[js.Tuple2[Double, Double]] = js.native
+}
+

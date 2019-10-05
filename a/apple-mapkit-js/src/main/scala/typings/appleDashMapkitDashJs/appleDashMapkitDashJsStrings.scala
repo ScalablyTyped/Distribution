@@ -1,8 +1,8 @@
 package typings.appleDashMapkitDashJs
 
-import typings.appleDashMapkitDashJs.mapkitNs.AnnotationEventType
-import typings.appleDashMapkitDashJs.mapkitNs.InitializationEventType
-import typings.appleDashMapkitDashJs.mapkitNs.OverlayEventType
+import typings.appleDashMapkitDashJs.mapkit.AnnotationEventType
+import typings.appleDashMapkitDashJs.mapkit.InitializationEventType
+import typings.appleDashMapkitDashJs.mapkit.OverlayEventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

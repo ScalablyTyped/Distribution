@@ -1,6 +1,6 @@
 package typings.pendoDashIoDashBrowser
 
-import typings.pendoDashIoDashBrowser.pendoNs.Guide
+import typings.pendoDashIoDashBrowser.pendo.Guide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

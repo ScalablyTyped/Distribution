@@ -1,6 +1,6 @@
 package typings.atJupyterlabOutputarea.libWidgetMod
 
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.ExecutionCount
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.ExecutionCount
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

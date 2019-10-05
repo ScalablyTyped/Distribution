@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullAccessorSymbol")
 @js.native
 class PullAccessorSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullAccessorSymbol {
+  extends typings.typescriptDashServices.TypeScript.PullAccessorSymbol {
   def this(name: String) = this()
 }
 

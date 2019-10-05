@@ -18,10 +18,10 @@ object AssignmentCommutativeReducerContainer {
   def apply(
     assignmentCommutative: `true`,
     factory: StyleObject => AssignmentCommutativeReducerContainer,
-    reducer: Reducer,
+    reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject,
     style: StyleObject
   ): AssignmentCommutativeReducerContainer = {
-    val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative, factory = js.Any.fromFunction1(factory), reducer = reducer, style = style)
+    val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative, factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style)
   
     __obj.asInstanceOf[AssignmentCommutativeReducerContainer]
   }

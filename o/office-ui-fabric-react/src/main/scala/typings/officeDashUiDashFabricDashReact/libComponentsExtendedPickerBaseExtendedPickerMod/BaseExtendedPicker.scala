@@ -11,13 +11,13 @@ import typings.officeDashUiDashFabricDashReact.libSelectionMod.Selection
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.RefObject
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +62,7 @@ class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
   /* protected */ def onBackspace(ev: KeyboardEvent[HTMLElement]): Unit = js.native
   /* protected */ def onCopy(ev: ClipboardEvent[HTMLElement]): Unit = js.native
   /* protected */ def onInputChange(value: String): Unit = js.native
-  /* protected */ def onInputClick(ev: MouseEvent[HTMLInputElement | Autofill, typings.std.MouseEvent]): Unit = js.native
+  /* protected */ def onInputClick(ev: typings.react.reactMod.MouseEvent[HTMLInputElement | Autofill, MouseEvent]): Unit = js.native
   /* protected */ def onInputFocus(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native
   /* protected */ def onPaste(ev: ClipboardEvent[HTMLInputElement | Autofill]): Unit = js.native
   /* protected */ def onSelectionChange(): Unit = js.native

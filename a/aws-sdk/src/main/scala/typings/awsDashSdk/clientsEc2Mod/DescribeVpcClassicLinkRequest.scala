@@ -22,7 +22,7 @@ trait DescribeVpcClassicLinkRequest extends js.Object {
 object DescribeVpcClassicLinkRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     VpcIds: VpcClassicLinkIdList = null
   ): DescribeVpcClassicLinkRequest = {

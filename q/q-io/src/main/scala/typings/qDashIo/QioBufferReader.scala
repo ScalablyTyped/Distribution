@@ -2,7 +2,7 @@ package typings.qDashIo
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.Buffer
-import typings.qDashIo.QioNs.Reader
+import typings.qDashIo.Qio.Reader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

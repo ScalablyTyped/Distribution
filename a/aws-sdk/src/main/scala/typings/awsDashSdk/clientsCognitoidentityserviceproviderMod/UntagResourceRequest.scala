@@ -12,14 +12,14 @@ trait UntagResourceRequest extends js.Object {
   /**
     * The keys of the tags to remove from the user pool.
     */
-  var TagKeys: js.UndefOr[UserPoolTagsListType] = js.undefined
+  var TagKeys: UserPoolTagsListType
 }
 
 object UntagResourceRequest {
   @scala.inline
-  def apply(ResourceArn: ArnType, TagKeys: UserPoolTagsListType = null): UntagResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
-    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys)
+  def apply(ResourceArn: ArnType, TagKeys: UserPoolTagsListType): UntagResourceRequest = {
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn, TagKeys = TagKeys)
+  
     __obj.asInstanceOf[UntagResourceRequest]
   }
 }

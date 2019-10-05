@@ -17,12 +17,13 @@ object VDOMEl {
   @scala.inline
   def apply(
     attributes: Attributes,
-    children: ReactNode | VDOMEl | (js.Array[ReactNode | VDOMEl]),
     tagName: String,
+    children: ReactNode | VDOMEl | (js.Array[ReactNode | VDOMEl]) = null,
     eventHandlers: EventHandlers = null,
     key: Double | String = null
   ): VDOMEl = {
-    val __obj = js.Dynamic.literal(attributes = attributes, children = children.asInstanceOf[js.Any], tagName = tagName)
+    val __obj = js.Dynamic.literal(attributes = attributes, tagName = tagName)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[VDOMEl]

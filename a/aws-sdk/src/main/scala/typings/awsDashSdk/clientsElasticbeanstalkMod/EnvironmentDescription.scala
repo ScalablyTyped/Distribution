@@ -90,7 +90,7 @@ trait EnvironmentDescription extends js.Object {
 object EnvironmentDescription {
   @scala.inline
   def apply(
-    AbortableOperationInProgress: js.UndefOr[AbortableOperationInProgress] = js.undefined,
+    AbortableOperationInProgress: js.UndefOr[Boolean] = js.undefined,
     ApplicationName: ApplicationName = null,
     CNAME: DNSCname = null,
     DateCreated: CreationDate = null,

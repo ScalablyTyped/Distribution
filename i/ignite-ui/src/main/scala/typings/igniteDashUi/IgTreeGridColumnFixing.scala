@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,13 +112,13 @@ object IgTreeGridColumnFixing {
   	 * Option for igTreeGridColumnFixing
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    columnFixed: ColumnFixedEvent = null,
-    columnFixing: ColumnFixingEvent = null,
-    columnFixingRefused: ColumnFixingRefusedEvent = null,
+    columnFixed: (/* event */ Event, /* ui */ ColumnFixedEventUIParam) => Unit = null,
+    columnFixing: (/* event */ Event, /* ui */ ColumnFixingEventUIParam) => Unit = null,
+    columnFixingRefused: (/* event */ Event, /* ui */ ColumnFixingRefusedEventUIParam) => Unit = null,
     columnSettings: js.Array[IgGridColumnFixingColumnSetting] = null,
-    columnUnfixed: ColumnUnfixedEvent = null,
-    columnUnfixing: ColumnUnfixingEvent = null,
-    columnUnfixingRefused: ColumnUnfixingRefusedEvent = null,
+    columnUnfixed: (/* event */ Event, /* ui */ ColumnUnfixedEventUIParam) => Unit = null,
+    columnUnfixing: (/* event */ Event, /* ui */ ColumnUnfixingEventUIParam) => Unit = null,
+    columnUnfixingRefused: (/* event */ Event, /* ui */ ColumnUnfixingRefusedEventUIParam) => Unit = null,
     featureChooserTextFixedColumn: String = null,
     featureChooserTextUnfixedColumn: String = null,
     fixNondataColumns: js.UndefOr[Boolean] = js.undefined,
@@ -133,13 +134,13 @@ object IgTreeGridColumnFixing {
   ): IgTreeGridColumnFixing = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnFixed != null) __obj.updateDynamic("columnFixed")(columnFixed)
-    if (columnFixing != null) __obj.updateDynamic("columnFixing")(columnFixing)
-    if (columnFixingRefused != null) __obj.updateDynamic("columnFixingRefused")(columnFixingRefused)
+    if (columnFixed != null) __obj.updateDynamic("columnFixed")(js.Any.fromFunction2(columnFixed))
+    if (columnFixing != null) __obj.updateDynamic("columnFixing")(js.Any.fromFunction2(columnFixing))
+    if (columnFixingRefused != null) __obj.updateDynamic("columnFixingRefused")(js.Any.fromFunction2(columnFixingRefused))
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (columnUnfixed != null) __obj.updateDynamic("columnUnfixed")(columnUnfixed)
-    if (columnUnfixing != null) __obj.updateDynamic("columnUnfixing")(columnUnfixing)
-    if (columnUnfixingRefused != null) __obj.updateDynamic("columnUnfixingRefused")(columnUnfixingRefused)
+    if (columnUnfixed != null) __obj.updateDynamic("columnUnfixed")(js.Any.fromFunction2(columnUnfixed))
+    if (columnUnfixing != null) __obj.updateDynamic("columnUnfixing")(js.Any.fromFunction2(columnUnfixing))
+    if (columnUnfixingRefused != null) __obj.updateDynamic("columnUnfixingRefused")(js.Any.fromFunction2(columnUnfixingRefused))
     if (featureChooserTextFixedColumn != null) __obj.updateDynamic("featureChooserTextFixedColumn")(featureChooserTextFixedColumn)
     if (featureChooserTextUnfixedColumn != null) __obj.updateDynamic("featureChooserTextUnfixedColumn")(featureChooserTextUnfixedColumn)
     if (!js.isUndefined(fixNondataColumns)) __obj.updateDynamic("fixNondataColumns")(fixNondataColumns)

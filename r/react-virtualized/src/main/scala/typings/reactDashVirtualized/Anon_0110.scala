@@ -1,6 +1,9 @@
 package typings.reactDashVirtualized
 
+import typings.react.reactMod.ReactNode
+import typings.reactDashVirtualized.distEsTableMod.TableHeaderRowProps
 import typings.reactDashVirtualized.distEsTableMod.TableHeaderRowRenderer
+import typings.reactDashVirtualized.distEsTableMod.TableRowProps
 import typings.reactDashVirtualized.distEsTableMod.TableRowRenderer
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`-1`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`0`
@@ -32,16 +35,16 @@ object Anon_0110 {
     disableHeader: `false`,
     estimatedRowSize: `30`,
     headerHeight: `0`,
-    headerRowRenderer: TableHeaderRowRenderer,
+    headerRowRenderer: /* props */ TableHeaderRowProps => ReactNode,
     noRowsRenderer: () => Null,
     onRowsRendered: () => Null,
     onScroll: () => Null,
     overscanRowCount: `10`,
-    rowRenderer: TableRowRenderer,
+    rowRenderer: /* props */ TableRowProps => ReactNode,
     scrollToAlignment: auto,
     scrollToIndex: `-1`
   ): Anon_0110 = {
-    val __obj = js.Dynamic.literal(disableHeader = disableHeader, estimatedRowSize = estimatedRowSize, headerHeight = headerHeight, headerRowRenderer = headerRowRenderer, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanRowCount = overscanRowCount, rowRenderer = rowRenderer, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
+    val __obj = js.Dynamic.literal(disableHeader = disableHeader, estimatedRowSize = estimatedRowSize, headerHeight = headerHeight, headerRowRenderer = js.Any.fromFunction1(headerRowRenderer), noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanRowCount = overscanRowCount, rowRenderer = js.Any.fromFunction1(rowRenderer), scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
   
     __obj.asInstanceOf[Anon_0110]
   }

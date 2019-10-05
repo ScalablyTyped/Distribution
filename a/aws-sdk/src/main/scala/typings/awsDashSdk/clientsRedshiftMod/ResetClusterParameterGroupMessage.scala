@@ -24,7 +24,7 @@ object ResetClusterParameterGroupMessage {
   def apply(
     ParameterGroupName: String,
     Parameters: ParametersList = null,
-    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
+    ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): ResetClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName)
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)

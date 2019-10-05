@@ -63,12 +63,12 @@ object LicenseConfiguration {
   @scala.inline
   def apply(
     ConsumedLicenseSummaryList: ConsumedLicenseSummaryList = null,
-    ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined,
+    ConsumedLicenses: Int | Double = null,
     Description: String = null,
     LicenseConfigurationArn: String = null,
     LicenseConfigurationId: String = null,
-    LicenseCount: js.UndefOr[BoxLong] = js.undefined,
-    LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined,
+    LicenseCount: Int | Double = null,
+    LicenseCountHardLimit: js.UndefOr[scala.Boolean] = js.undefined,
     LicenseCountingType: LicenseCountingType = null,
     LicenseRules: StringList = null,
     ManagedResourceSummaryList: ManagedResourceSummaryList = null,
@@ -78,11 +78,11 @@ object LicenseConfiguration {
   ): LicenseConfiguration = {
     val __obj = js.Dynamic.literal()
     if (ConsumedLicenseSummaryList != null) __obj.updateDynamic("ConsumedLicenseSummaryList")(ConsumedLicenseSummaryList)
-    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses)
+    if (ConsumedLicenses != null) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (LicenseConfigurationArn != null) __obj.updateDynamic("LicenseConfigurationArn")(LicenseConfigurationArn)
     if (LicenseConfigurationId != null) __obj.updateDynamic("LicenseConfigurationId")(LicenseConfigurationId)
-    if (!js.isUndefined(LicenseCount)) __obj.updateDynamic("LicenseCount")(LicenseCount)
+    if (LicenseCount != null) __obj.updateDynamic("LicenseCount")(LicenseCount.asInstanceOf[js.Any])
     if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit)
     if (LicenseCountingType != null) __obj.updateDynamic("LicenseCountingType")(LicenseCountingType.asInstanceOf[js.Any])
     if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules)

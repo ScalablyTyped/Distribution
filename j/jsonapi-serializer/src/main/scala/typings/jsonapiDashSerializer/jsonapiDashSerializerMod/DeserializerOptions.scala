@@ -28,14 +28,14 @@ object DeserializerOptions {
     id: String = null,
     keyForAttribute: `dash-case` | `lisp-case` | `spinal-case` | `kebab-case` | underscore_case | snake_case | camelCase | CamelCase | KeyForAttribute = null,
     pluralizeType: js.UndefOr[Boolean] = js.undefined,
-    transform: Transform = null,
+    transform: /* record */ js.Any => js.Any = null,
     typeAsAttribute: js.UndefOr[Boolean] = js.undefined
   ): DeserializerOptions = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id)
     if (keyForAttribute != null) __obj.updateDynamic("keyForAttribute")(keyForAttribute.asInstanceOf[js.Any])
     if (!js.isUndefined(pluralizeType)) __obj.updateDynamic("pluralizeType")(pluralizeType)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (!js.isUndefined(typeAsAttribute)) __obj.updateDynamic("typeAsAttribute")(typeAsAttribute)
     __obj.asInstanceOf[DeserializerOptions]
   }

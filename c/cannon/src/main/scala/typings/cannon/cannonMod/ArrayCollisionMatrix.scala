@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "ArrayCollisionMatrix")
 @js.native
 class ArrayCollisionMatrix ()
-  extends typings.cannon.CANNONNs.ArrayCollisionMatrix
+  extends typings.cannon.CANNON.ArrayCollisionMatrix
 

@@ -11,9 +11,9 @@ trait Anon_MergerequestIId extends js.Object {
 
 object Anon_MergerequestIId {
   @scala.inline
-  def apply(mergerequestIId: js.UndefOr[MergeRequestId] = js.undefined): Anon_MergerequestIId = {
+  def apply(mergerequestIId: Int | Double = null): Anon_MergerequestIId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mergerequestIId)) __obj.updateDynamic("mergerequestIId")(mergerequestIId)
+    if (mergerequestIId != null) __obj.updateDynamic("mergerequestIId")(mergerequestIId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MergerequestIId]
   }
 }

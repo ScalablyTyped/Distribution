@@ -1,7 +1,7 @@
 package typings.inversifyDashExpressDashUtils.dtsResultsExceptionResultMod
 
 import typings.inversifyDashExpressDashUtils.dtsHttpResponseMessageMod.HttpResponseMessage
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.IHttpActionResult
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.IHttpActionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

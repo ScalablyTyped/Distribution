@@ -1,11 +1,14 @@
 package typings.atJupyterlabObservables.libUndoablelistMod
 
 import typings.atJupyterlabObservables.libObservablelistMod.ObservableList
+import typings.atPhosphorCoreutils.libJsonMod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
+- typings.atJupyterlabObservables.libObservablelistMod.IObservableList because Already inherited
 - typings.atJupyterlabObservables.libUndoablelistMod.IObservableUndoableList because var conflicts: length. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
 @js.native
 class ObservableUndoableList[T] protected () extends ObservableList[T] {
@@ -73,5 +76,27 @@ class ObservableUndoableList[T] protected () extends ObservableList[T] {
     * Undo an operation.
     */
   def undo(): Unit = js.native
+}
+
+@JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
+@js.native
+object ObservableUndoableList extends js.Object {
+  /**
+    * A default, identity serializer.
+    */
+  @js.native
+  class IdentitySerializer[T /* <: JSONValue */] () extends ISerializer[T] {
+    /**
+      * Deserialize the object from JSON.
+      */
+    /* CompleteClass */
+    override def fromJSON(value: JSONValue): T = js.native
+    /**
+      * Convert the object to JSON.
+      */
+    /* CompleteClass */
+    override def toJSON(value: T): JSONValue = js.native
+  }
+  
 }
 

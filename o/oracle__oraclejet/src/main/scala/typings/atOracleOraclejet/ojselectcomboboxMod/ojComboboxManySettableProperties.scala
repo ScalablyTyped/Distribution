@@ -14,11 +14,11 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.OptionContext
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.AsyncValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Converter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredConverter
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validation.RegisteredValidator
 import typings.atOracleOraclejet.ojvalidationDashBaseMod.Validator
 import typings.std.Element
 import scala.scalajs.js
@@ -32,7 +32,7 @@ trait ojComboboxManySettableProperties[K, D]
   var minLength: Double
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.undefined
   var options: (js.Array[
-    typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Optgroup
+    typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null
   var optionsKeys: Anon_ChildKeysChildren
   var pickerAttributes: Anon_Class
@@ -69,7 +69,7 @@ object ojComboboxManySettableProperties {
     describedBy: String = null,
     optionRenderer: /* param0 */ OptionContext => Element = null,
     options: (js.Array[
-      typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.Optgroup
+      typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
     ]) | (DataProvider[K, D]) = null,
     placeholder: String = null,
     rawValue: String = null,

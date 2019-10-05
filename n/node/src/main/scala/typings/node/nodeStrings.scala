@@ -1,8 +1,8 @@
 package typings.node
 
-import typings.node.NodeJSNs.MultipleResolveType
-import typings.node.NodeJSNs.Platform
-import typings.node.NodeJSNs.Signals
+import typings.node.NodeJS.MultipleResolveType
+import typings.node.NodeJS.Platform
+import typings.node.NodeJS.Signals
 import typings.node.bufferMod.TranscodeEncoding
 import typings.node.childUnderscoreProcessMod.StdioNull
 import typings.node.childUnderscoreProcessMod._StdioOptions
@@ -17,7 +17,7 @@ import typings.node.cryptoMod.KeyType
 import typings.node.cryptoMod.Utf8AsciiBinaryEncoding
 import typings.node.cryptoMod.Utf8AsciiLatin1Encoding
 import typings.node.dgramMod.SocketType
-import typings.node.fsMod.symlinkNs.Type
+import typings.node.fsMod.symlink.Type
 import typings.node.tlsMod.SecureVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`

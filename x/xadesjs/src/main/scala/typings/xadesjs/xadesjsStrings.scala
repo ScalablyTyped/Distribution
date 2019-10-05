@@ -1,7 +1,7 @@
 package typings.xadesjs
 
-import typings.xadesjs.xadesjsMod.xmlNs.IdentifierQualifier
-import typings.xadesjs.xadesjsMod.xmlNs._EncodingType
+import typings.xadesjs.xadesjsMod.xml.IdentifierQualifier
+import typings.xadesjs.xadesjsMod.xml._EncodingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

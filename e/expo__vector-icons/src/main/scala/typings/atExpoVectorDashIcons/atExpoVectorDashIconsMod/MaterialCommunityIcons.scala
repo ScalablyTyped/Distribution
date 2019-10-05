@@ -15,6 +15,22 @@ class MaterialCommunityIcons () extends default
 @JSImport("@expo/vector-icons", "MaterialCommunityIcons")
 @js.native
 object MaterialCommunityIcons extends js.Object {
+  @js.native
+  class Button ()
+    extends typings.reactDashNativeDashVectorDashIcons.materialCommunityIconsMod.default.Button
+  
+  @js.native
+  class TabBarItem ()
+    extends typings.reactDashNativeDashVectorDashIcons.materialCommunityIconsMod.default.TabBarItem
+  
+  @js.native
+  class TabBarItemIOS ()
+    extends typings.reactDashNativeDashVectorDashIcons.materialCommunityIconsMod.default.TabBarItemIOS
+  
+  @js.native
+  class ToolbarAndroid ()
+    extends typings.reactDashNativeDashVectorDashIcons.materialCommunityIconsMod.default.ToolbarAndroid
+  
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native

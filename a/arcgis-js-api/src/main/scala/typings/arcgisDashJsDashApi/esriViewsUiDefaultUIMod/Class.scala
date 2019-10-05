@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsUiDefaultUIMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DefaultUI
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DefaultUIProperties
+import typings.arcgisDashJsDashApi.__esri.DefaultUI
+import typings.arcgisDashJsDashApi.__esri.DefaultUIProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

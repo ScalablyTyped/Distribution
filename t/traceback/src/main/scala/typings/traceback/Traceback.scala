@@ -1,5 +1,6 @@
 package typings.traceback
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,4 +62,8 @@ object Traceback {
     __obj.asInstanceOf[Traceback]
   }
 }
+
+@JSGlobal("traceback")
+@js.native
+object traceback extends TopLevel[TracebackStatic]
 

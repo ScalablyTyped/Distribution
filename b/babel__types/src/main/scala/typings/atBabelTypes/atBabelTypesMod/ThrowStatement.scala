@@ -39,3 +39,9 @@ object ThrowStatement {
   }
 }
 
+@JSImport("@babel/types", "throwStatement")
+@js.native
+object throwStatement extends js.Object {
+  def apply(argument: Expression): ThrowStatement = js.native
+}
+

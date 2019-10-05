@@ -36,3 +36,11 @@ object ObjectTypeProperty {
   }
 }
 
+@JSImport("babel-types", "objectTypeProperty")
+@js.native
+object objectTypeProperty extends js.Object {
+  def apply(): ObjectTypeProperty = js.native
+  def apply(key: Expression): ObjectTypeProperty = js.native
+  def apply(key: Expression, value: FlowTypeAnnotation): ObjectTypeProperty = js.native
+}
+

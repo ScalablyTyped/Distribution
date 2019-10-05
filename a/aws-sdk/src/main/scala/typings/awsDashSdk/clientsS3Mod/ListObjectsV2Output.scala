@@ -63,9 +63,9 @@ object ListObjectsV2Output {
     ContinuationToken: Token = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    KeyCount: js.UndefOr[KeyCount] = js.undefined,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    KeyCount: Int | Double = null,
+    MaxKeys: Int | Double = null,
     Name: BucketName = null,
     NextContinuationToken: NextToken = null,
     Prefix: Prefix = null,
@@ -78,8 +78,8 @@ object ListObjectsV2Output {
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (!js.isUndefined(KeyCount)) __obj.updateDynamic("KeyCount")(KeyCount)
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys)
+    if (KeyCount != null) __obj.updateDynamic("KeyCount")(KeyCount.asInstanceOf[js.Any])
+    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken)
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)

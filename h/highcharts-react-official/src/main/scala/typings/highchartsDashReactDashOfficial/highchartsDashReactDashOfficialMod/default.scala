@@ -1,6 +1,6 @@
 package typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod
 
-import typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReactNs.Props
+import typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReact.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

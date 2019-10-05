@@ -1,5 +1,6 @@
 package typings.weappDashApi.weappDashApiMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +17,7 @@ trait Page extends js.Object {
   def setData(data: js.Any): Unit
 }
 
-object Page {
-  @scala.inline
-  def apply(setData: js.Any => Unit): Page = {
-    val __obj = js.Dynamic.literal(setData = js.Any.fromFunction1(setData))
-  
-    __obj.asInstanceOf[Page]
-  }
-}
+@JSImport("weapp-api", "Page")
+@js.native
+object Page extends TopLevel[PageConstructor]
 

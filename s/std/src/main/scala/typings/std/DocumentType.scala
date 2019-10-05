@@ -15,9 +15,5 @@ trait DocumentType extends ChildNode {
 
 @JSGlobal("DocumentType")
 @js.native
-class DocumentTypeCls () extends DocumentType
-
-@JSGlobal("DocumentType")
-@js.native
 object DocumentType extends Instantiable0[DocumentType]
 

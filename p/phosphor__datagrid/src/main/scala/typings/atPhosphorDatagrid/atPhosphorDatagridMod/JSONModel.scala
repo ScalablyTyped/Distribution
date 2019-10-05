@@ -1,6 +1,6 @@
 package typings.atPhosphorDatagrid.atPhosphorDatagridMod
 
-import typings.atPhosphorDatagrid.libJsonmodelMod.JSONModelNs.IOptions
+import typings.atPhosphorDatagrid.libJsonmodelMod.JSONModel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

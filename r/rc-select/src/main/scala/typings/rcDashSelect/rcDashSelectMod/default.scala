@@ -1,6 +1,6 @@
 package typings.rcDashSelect.rcDashSelectMod
 
-import typings.rcDashSelect.rcDashSelectMod.RcSelectNs.Select
+import typings.rcDashSelect.rcDashSelectMod.RcSelect.Select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

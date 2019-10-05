@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBasemapGallerySupportLocalBasemapsSourceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocalBasemapsSource
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocalBasemapsSourceProperties
+import typings.arcgisDashJsDashApi.__esri.LocalBasemapsSource
+import typings.arcgisDashJsDashApi.__esri.LocalBasemapsSourceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

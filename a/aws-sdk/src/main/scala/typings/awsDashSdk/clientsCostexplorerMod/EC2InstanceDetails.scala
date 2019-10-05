@@ -43,12 +43,12 @@ object EC2InstanceDetails {
   @scala.inline
   def apply(
     AvailabilityZone: GenericString = null,
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
     Family: GenericString = null,
     InstanceType: GenericString = null,
     Platform: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined,
+    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined,
     Tenancy: GenericString = null
   ): EC2InstanceDetails = {
     val __obj = js.Dynamic.literal()

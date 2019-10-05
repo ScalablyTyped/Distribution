@@ -1,7 +1,7 @@
 package typings.inquirer.inquirerMod
 
 import typings.inquirer.Anon_Ui
-import typings.inquirer.inquirerMod.promptsNs.PromptCollection
+import typings.inquirer.inquirerMod.prompts.PromptCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

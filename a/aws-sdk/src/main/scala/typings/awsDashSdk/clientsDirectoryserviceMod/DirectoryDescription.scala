@@ -110,7 +110,7 @@ object DirectoryDescription {
     Alias: AliasName = null,
     ConnectSettings: DirectoryConnectSettingsDescription = null,
     Description: Description = null,
-    DesiredNumberOfDomainControllers: js.UndefOr[DesiredNumberOfDomainControllers] = js.undefined,
+    DesiredNumberOfDomainControllers: Int | Double = null,
     DirectoryId: DirectoryId = null,
     DnsIpAddrs: DnsIpAddrs = null,
     Edition: DirectoryEdition = null,
@@ -124,7 +124,7 @@ object DirectoryDescription {
     ShareStatus: ShareStatus = null,
     ShortName: DirectoryShortName = null,
     Size: DirectorySize = null,
-    SsoEnabled: js.UndefOr[SsoEnabled] = js.undefined,
+    SsoEnabled: js.UndefOr[Boolean] = js.undefined,
     Stage: DirectoryStage = null,
     StageLastUpdatedDateTime: LastUpdatedDateTime = null,
     StageReason: StageReason = null,
@@ -136,7 +136,7 @@ object DirectoryDescription {
     if (Alias != null) __obj.updateDynamic("Alias")(Alias)
     if (ConnectSettings != null) __obj.updateDynamic("ConnectSettings")(ConnectSettings)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(DesiredNumberOfDomainControllers)) __obj.updateDynamic("DesiredNumberOfDomainControllers")(DesiredNumberOfDomainControllers)
+    if (DesiredNumberOfDomainControllers != null) __obj.updateDynamic("DesiredNumberOfDomainControllers")(DesiredNumberOfDomainControllers.asInstanceOf[js.Any])
     if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId)
     if (DnsIpAddrs != null) __obj.updateDynamic("DnsIpAddrs")(DnsIpAddrs)
     if (Edition != null) __obj.updateDynamic("Edition")(Edition.asInstanceOf[js.Any])

@@ -1,18 +1,20 @@
 package typings.atApolloReactDashComponents.libTypesMod
 
+import typings.apolloDashCache.libTypesDataProxyMod.DataProxy
 import typings.apolloDashClient.apolloDashClientMod.ApolloError
 import typings.apolloDashClient.apolloDashClientMod.default
 import typings.apolloDashClient.coreTypesMod.PureQueryOptions
 import typings.apolloDashClient.coreWatchQueryOptionsMod.ErrorPolicy
-import typings.apolloDashClient.coreWatchQueryOptionsMod.MutationUpdaterFn
 import typings.apolloDashClient.coreWatchQueryOptionsMod.WatchQueryFetchPolicy
+import typings.apolloDashLink.libTypesMod.FetchResult
 import typings.atApolloReactDashCommon.libTypesTypesMod.BaseMutationOptions
 import typings.atApolloReactDashCommon.libTypesTypesMod.Context
 import typings.atApolloReactDashCommon.libTypesTypesMod.MutationFunction
 import typings.atApolloReactDashCommon.libTypesTypesMod.MutationResult
 import typings.atApolloReactDashCommon.libTypesTypesMod.RefetchQueriesFunction
 import typings.graphql.languageAstMod.DocumentNode
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +40,7 @@ object MutationComponentOptions {
     onError: /* error */ ApolloError => Unit = null,
     optimisticResponse: TData | (js.Function1[TVariables, TData]) = null,
     refetchQueries: (js.Array[String | PureQueryOptions]) | RefetchQueriesFunction = null,
-    update: MutationUpdaterFn[TData] = null,
+    update: (/* proxy */ DataProxy, /* mutationResult */ FetchResult[TData, Record[String, js.Any], Record[String, js.Any]]) => Unit = null,
     variables: TVariables = null
   ): MutationComponentOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), mutation = mutation)
@@ -53,7 +55,7 @@ object MutationComponentOptions {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationComponentOptions[TData, TVariables]]
   }

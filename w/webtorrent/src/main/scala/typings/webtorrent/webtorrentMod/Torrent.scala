@@ -2,7 +2,7 @@ package typings.webtorrent.webtorrentMod
 
 import typings.bittorrentDashProtocol.bittorrentDashProtocolMod.Wire
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
 import typings.std.Date

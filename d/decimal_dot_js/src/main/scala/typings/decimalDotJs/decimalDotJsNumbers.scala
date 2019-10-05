@@ -1,7 +1,7 @@
 package typings.decimalDotJs
 
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Modulo
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Rounding
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Modulo
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Rounding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

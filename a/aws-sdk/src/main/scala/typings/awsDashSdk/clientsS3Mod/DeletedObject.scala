@@ -26,7 +26,7 @@ trait DeletedObject extends js.Object {
 object DeletedObject {
   @scala.inline
   def apply(
-    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
+    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
     DeleteMarkerVersionId: DeleteMarkerVersionId = null,
     Key: ObjectKey = null,
     VersionId: ObjectVersionId = null

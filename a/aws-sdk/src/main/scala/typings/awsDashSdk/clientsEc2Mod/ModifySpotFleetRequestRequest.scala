@@ -28,13 +28,13 @@ object ModifySpotFleetRequestRequest {
   def apply(
     SpotFleetRequestId: String,
     ExcessCapacityTerminationPolicy: ExcessCapacityTerminationPolicy = null,
-    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
-    TargetCapacity: js.UndefOr[Integer] = js.undefined
+    OnDemandTargetCapacity: Int | scala.Double = null,
+    TargetCapacity: Int | scala.Double = null
   ): ModifySpotFleetRequestRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId)
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity)
-    if (!js.isUndefined(TargetCapacity)) __obj.updateDynamic("TargetCapacity")(TargetCapacity)
+    if (OnDemandTargetCapacity != null) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.asInstanceOf[js.Any])
+    if (TargetCapacity != null) __obj.updateDynamic("TargetCapacity")(TargetCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySpotFleetRequestRequest]
   }
 }

@@ -28,6 +28,7 @@ object objectDotOmitMod extends js.Object {
     * @param object
     * @param keys
     */
-  def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: GKey | js.Array[GKey]): Omit[GObject, GKey] = js.native
+  def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = js.native
+  def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = js.native
 }
 

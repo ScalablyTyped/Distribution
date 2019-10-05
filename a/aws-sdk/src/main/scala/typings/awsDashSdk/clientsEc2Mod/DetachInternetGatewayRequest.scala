@@ -21,7 +21,7 @@ trait DetachInternetGatewayRequest extends js.Object {
 
 object DetachInternetGatewayRequest {
   @scala.inline
-  def apply(InternetGatewayId: String, VpcId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DetachInternetGatewayRequest = {
+  def apply(InternetGatewayId: String, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DetachInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId, VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DetachInternetGatewayRequest]

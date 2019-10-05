@@ -34,14 +34,14 @@ object GameSessionQueue {
     GameSessionQueueArn: ArnStringModel = null,
     Name: GameSessionQueueName = null,
     PlayerLatencyPolicies: PlayerLatencyPolicyList = null,
-    TimeoutInSeconds: js.UndefOr[WholeNumber] = js.undefined
+    TimeoutInSeconds: Int | scala.Double = null
   ): GameSessionQueue = {
     val __obj = js.Dynamic.literal()
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations)
     if (GameSessionQueueArn != null) __obj.updateDynamic("GameSessionQueueArn")(GameSessionQueueArn)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (PlayerLatencyPolicies != null) __obj.updateDynamic("PlayerLatencyPolicies")(PlayerLatencyPolicies)
-    if (!js.isUndefined(TimeoutInSeconds)) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds)
+    if (TimeoutInSeconds != null) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionQueue]
   }
 }

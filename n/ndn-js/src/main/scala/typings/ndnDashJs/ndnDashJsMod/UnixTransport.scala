@@ -9,3 +9,14 @@ import scala.scalajs.js.annotation._
 class UnixTransport ()
   extends typings.ndnDashJs.transportMod.UnixTransport
 
+@JSImport("ndn-js", "UnixTransport")
+@js.native
+object UnixTransport extends js.Object {
+  @js.native
+  class ConnectionInfo protected ()
+    extends typings.ndnDashJs.transportMod.UnixTransport.ConnectionInfo {
+    def this(filePath: String) = this()
+  }
+  
+}
+

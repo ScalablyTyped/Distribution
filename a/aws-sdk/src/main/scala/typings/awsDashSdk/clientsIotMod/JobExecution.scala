@@ -54,9 +54,9 @@ trait JobExecution extends js.Object {
 object JobExecution {
   @scala.inline
   def apply(
-    approximateSecondsBeforeTimedOut: js.UndefOr[ApproximateSecondsBeforeTimedOut] = js.undefined,
-    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
-    forceCanceled: js.UndefOr[Forced] = js.undefined,
+    approximateSecondsBeforeTimedOut: Int | Double = null,
+    executionNumber: Int | Double = null,
+    forceCanceled: js.UndefOr[scala.Boolean] = js.undefined,
     jobId: JobId = null,
     lastUpdatedAt: DateType = null,
     queuedAt: DateType = null,
@@ -64,11 +64,11 @@ object JobExecution {
     status: JobExecutionStatus = null,
     statusDetails: JobExecutionStatusDetails = null,
     thingArn: ThingArn = null,
-    versionNumber: js.UndefOr[VersionNumber] = js.undefined
+    versionNumber: Int | Double = null
   ): JobExecution = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(approximateSecondsBeforeTimedOut)) __obj.updateDynamic("approximateSecondsBeforeTimedOut")(approximateSecondsBeforeTimedOut)
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber)
+    if (approximateSecondsBeforeTimedOut != null) __obj.updateDynamic("approximateSecondsBeforeTimedOut")(approximateSecondsBeforeTimedOut.asInstanceOf[js.Any])
+    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
     if (!js.isUndefined(forceCanceled)) __obj.updateDynamic("forceCanceled")(forceCanceled)
     if (jobId != null) __obj.updateDynamic("jobId")(jobId)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
@@ -77,7 +77,7 @@ object JobExecution {
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
     if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn)
-    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber)
+    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecution]
   }
 }

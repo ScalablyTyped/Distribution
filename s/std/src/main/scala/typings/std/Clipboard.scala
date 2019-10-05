@@ -13,9 +13,5 @@ trait Clipboard extends EventTarget {
 
 @JSGlobal("Clipboard")
 @js.native
-class ClipboardCls () extends Clipboard
-
-@JSGlobal("Clipboard")
-@js.native
 object Clipboard extends Instantiable0[Clipboard]
 

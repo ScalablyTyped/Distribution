@@ -1,7 +1,7 @@
 package typings.loaderDashRunner.loaderDashRunnerMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
+import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

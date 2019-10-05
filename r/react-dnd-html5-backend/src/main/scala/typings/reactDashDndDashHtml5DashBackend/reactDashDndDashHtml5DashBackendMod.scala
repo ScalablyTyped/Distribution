@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
 object reactDashDndDashHtml5DashBackendMod extends js.Object {
   val default: BackendFactory = js.native
   def getEmptyImage(): HTMLImageElement = js.native
-  @JSName("NativeTypes")
   @js.native
-  object NativeTypesNs extends js.Object {
+  object NativeTypes extends js.Object {
     val FILE: __NATIVE_FILE__ = js.native
     val TEXT: __NATIVE_TEXT__ = js.native
     val URL: __NATIVE_URL__ = js.native

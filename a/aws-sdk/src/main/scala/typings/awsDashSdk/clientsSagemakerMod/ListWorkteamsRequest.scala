@@ -30,14 +30,14 @@ trait ListWorkteamsRequest extends js.Object {
 object ListWorkteamsRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NameContains: WorkteamName = null,
     NextToken: NextToken = null,
     SortBy: ListWorkteamsSortByOptions = null,
     SortOrder: SortOrder = null
   ): ListWorkteamsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSketchSketchViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SketchViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SketchViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.SketchViewModel
+import typings.arcgisDashJsDashApi.__esri.SketchViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

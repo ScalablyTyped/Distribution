@@ -22,14 +22,14 @@ trait StoreConfig[S] extends js.Object {
 object StoreConfig {
   @scala.inline
   def apply[S](
-    reducer: Reducer[S, AnyAction],
+    reducer: (/* state */ js.UndefOr[S], AnyAction) => S,
     actions: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | IterableIterator[_]]] = null,
     controls: StringDictionary[js.Function1[/* action */ AnyAction, _]] = null,
     initialState: S = null,
     resolvers: StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null,
     selectors: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]] = null
   ): StoreConfig[S] = {
-    val __obj = js.Dynamic.literal(reducer = reducer)
+    val __obj = js.Dynamic.literal(reducer = js.Any.fromFunction2(reducer))
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (controls != null) __obj.updateDynamic("controls")(controls)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])

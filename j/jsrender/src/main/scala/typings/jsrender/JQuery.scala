@@ -1,7 +1,7 @@
 package typings.jsrender
 
-import typings.jsrender.JsViewsNs.Hash
-import typings.jsrender.JsViewsNs.TemplateRender
+import typings.jsrender.JsViews.Hash
+import typings.jsrender.JsViews.TemplateRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

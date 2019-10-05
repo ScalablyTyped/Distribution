@@ -2,7 +2,7 @@ package typings.atPulumiAws.datasyncEfsLocationMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesOutputMod.datasyncNs.EfsLocationEc2Config
+import typings.atPulumiAws.typesOutputMod.datasync.EfsLocationEc2Config
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

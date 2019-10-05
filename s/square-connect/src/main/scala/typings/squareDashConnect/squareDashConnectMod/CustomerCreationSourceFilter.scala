@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilterNs.RuleEnum
+import typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilter.RuleEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +19,27 @@ class CustomerCreationSourceFilter () extends js.Object {
     * See [CustomerCreationSource](#type-customercreationsource) for possible values.
     */
   var values: js.UndefOr[js.Array[CustomerSourceEnum]] = js.native
+}
+
+@JSImport("square-connect", "CustomerCreationSourceFilter")
+@js.native
+object CustomerCreationSourceFilter extends js.Object {
+  @js.native
+  sealed trait RuleEnum extends js.Object
+  
+  @js.native
+  object RuleEnum extends js.Object {
+    @js.native
+    sealed trait EXCLUDE extends RuleEnum
+    
+    @js.native
+    sealed trait INCLUDE extends RuleEnum
+    
+    /* "EXCLUDE" */ val EXCLUDE: typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilter.RuleEnum.EXCLUDE with String = js.native
+    /* "INCLUDE" */ val INCLUDE: typings.squareDashConnect.squareDashConnectMod.CustomerCreationSourceFilter.RuleEnum.INCLUDE with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RuleEnum with String] = js.native
+  }
+  
 }
 

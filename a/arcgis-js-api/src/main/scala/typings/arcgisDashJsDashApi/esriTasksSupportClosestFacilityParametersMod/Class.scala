@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportClosestFacilityParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClosestFacilityParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClosestFacilityParametersProperties
+import typings.arcgisDashJsDashApi.__esri.ClosestFacilityParameters
+import typings.arcgisDashJsDashApi.__esri.ClosestFacilityParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "FetchStrategySymbol")
 @js.native
 class FetchStrategySymbol ()
-  extends typings.breeze.breezeNs.FetchStrategySymbol
+  extends typings.breeze.breeze.FetchStrategySymbol
 

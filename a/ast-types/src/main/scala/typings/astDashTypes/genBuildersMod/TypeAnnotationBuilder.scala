@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocTypeAnnotation
 import typings.astDashTypes.genKindsMod.FlowTypeKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TypeAnnotation
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TypeAnnotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

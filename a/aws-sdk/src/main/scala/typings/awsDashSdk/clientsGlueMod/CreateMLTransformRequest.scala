@@ -55,18 +55,18 @@ object CreateMLTransformRequest {
     Parameters: TransformParameters,
     Role: RoleString,
     Description: DescriptionString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
-    MaxRetries: js.UndefOr[NullableInteger] = js.undefined,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
+    MaxCapacity: Int | Double = null,
+    MaxRetries: Int | Double = null,
+    NumberOfWorkers: Int | Double = null,
+    Timeout: Int | Double = null,
     WorkerType: WorkerType = null
   ): CreateMLTransformRequest = {
     val __obj = js.Dynamic.literal(InputRecordTables = InputRecordTables, Name = Name, Parameters = Parameters, Role = Role)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
-    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries)
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
+    if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
+    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMLTransformRequest]
   }

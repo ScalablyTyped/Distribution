@@ -43,23 +43,23 @@ trait EventSourceMappingConfiguration extends js.Object {
 object EventSourceMappingConfiguration {
   @scala.inline
   def apply(
-    BatchSize: js.UndefOr[BatchSize] = js.undefined,
+    BatchSize: Int | Double = null,
     EventSourceArn: Arn = null,
     FunctionArn: FunctionArn = null,
     LastModified: _Date = null,
     LastProcessingResult: String = null,
-    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined,
+    MaximumBatchingWindowInSeconds: Int | Double = null,
     State: String = null,
     StateTransitionReason: String = null,
     UUID: String = null
   ): EventSourceMappingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize)
+    if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
     if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn)
     if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
     if (LastProcessingResult != null) __obj.updateDynamic("LastProcessingResult")(LastProcessingResult)
-    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds)
+    if (MaximumBatchingWindowInSeconds != null) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State)
     if (StateTransitionReason != null) __obj.updateDynamic("StateTransitionReason")(StateTransitionReason)
     if (UUID != null) __obj.updateDynamic("UUID")(UUID)

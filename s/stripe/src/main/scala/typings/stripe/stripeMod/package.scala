@@ -14,8 +14,8 @@ package object stripeMod {
     */
   type HeaderOptions = IHeaderOptions | String
   // Helper
-  type IBankAccount = typings.stripe.stripeMod.bankAccountsNs.IBankAccount
-  type ICard = typings.stripe.stripeMod.cardsNs.ICard
+  type IBankAccount = typings.stripe.stripeMod.bankAccounts.IBankAccount
+  type ICard = typings.stripe.stripeMod.cards.ICard
   /**
     * A filter on the list based on this object field. The value can
     * be a string with an integer Unix timestamp, or it can be a
@@ -33,5 +33,5 @@ package object stripeMod {
     */
   type IOptionsMetadata = StringDictionary[String | Double]
   type IResponseFn[R] = js.Function2[/* err */ IStripeError, /* value */ R, Unit]
-  type ISource = typings.stripe.stripeMod.sourcesNs.ISource
+  type ISource = typings.stripe.stripeMod.sources.ISource
 }

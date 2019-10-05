@@ -95,8 +95,8 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Texture")
 @js.native
 class Texture protected ()
-  extends typings.playcanvas.pcNs.Texture {
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice) = this()
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice, options: Anon_AddressU) = this()
+  extends typings.playcanvas.pc.Texture {
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, options: Anon_AddressU) = this()
 }
 

@@ -26,3 +26,9 @@ object CurveKeyPair {
   }
 }
 
+@JSImport("zeromq", "curveKeypair")
+@js.native
+object curveKeypair extends js.Object {
+  def apply(): CurveKeyPair = js.native
+}
+

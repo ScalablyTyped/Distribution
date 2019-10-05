@@ -10,23 +10,19 @@ import typings.egg.Anon_FastReady
 import typings.egg.Anon_Ignore
 import typings.eggDashLogger.eggDashLoggerMod.EggLoggerOptions
 import typings.node.Buffer
-import typings.node.NodeJSNs.ErrnoException
-import typings.node.fsMod.MakeDirectoryOptions
-import typings.node.fsMod.PathLike
 import typings.node.netMod.Socket
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait EggAppConfig
   extends /* prop */ StringDictionary[js.Any] {
   /**
     * The current HOME directory
     */
-  var HOME: String = js.native
-  var baseDir: String = js.native
+  var HOME: String
+  var baseDir: String
   /**
     * The option of `bodyParser` middleware
     *
@@ -44,33 +40,33 @@ trait EggAppConfig
     * @property {string[]} enableTypes - parser will only parse when request type hits enableTypes, default is ['json', 'form']
     * @property {any} extendTypes - support extend types
     */
-  var bodyParser: Anon_Enable = js.native
+  var bodyParser: Anon_Enable
   /**
     * customLoader config
     */
-  var customLoader: StringDictionary[CustomLoaderConfig] = js.native
+  var customLoader: StringDictionary[CustomLoaderConfig]
   /** custom logger of egg */
-  var customLogger: StringDictionary[EggLoggerOptions] = js.native
-  var development: Anon_FastReady = js.native
+  var customLogger: StringDictionary[EggLoggerOptions]
+  var development: Anon_FastReady
   /**
     * It will ignore special keys when dumpConfig
     */
-  var dump: Anon_Ignore = js.native
+  var dump: Anon_Ignore
   /**
     * The environment of egg
     */
-  var env: EggEnvType = js.native
-  var hostHeaders: String = js.native
+  var env: EggEnvType
+  var hostHeaders: String
   /** Configuration of httpclient in egg. */
-  var httpclient: HttpClientConfig = js.native
+  var httpclient: HttpClientConfig
   /**
     * I18n options
     */
-  var i18n: Anon_CookieField = js.native
+  var i18n: Anon_CookieField
   /**
     * Detect request' ip from specified headers, not case-sensitive. Only worked when config.proxy set to true.
     */
-  var ipHeaders: String = js.native
+  var ipHeaders: String
   /**
     * jsonp options
     * @member Config#jsonp
@@ -79,12 +75,11 @@ trait EggAppConfig
     * @property {Boolean} csrf - enable csrf check or not. default to false
     * @property {String|RegExp|Array} whiteList - referrer white list
     */
-  @JSName("jsonp")
-  var jsonp_Original: Anon_Callback = js.native
+  var jsonp: Anon_Callback
   /**
     * The key that signing cookies. It can contain multiple keys seperated by .
     */
-  var keys: String = js.native
+  var keys: String
   /**
     * logger options
     * @member Config#logger
@@ -101,18 +96,18 @@ trait EggAppConfig
     * @property {Object} coreLogger - custom config of coreLogger
     * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to true
     */
-  var logger: EggLoggerConfig = js.native
-  var middleware: js.Array[String] = js.native
+  var logger: EggLoggerConfig
+  var middleware: js.Array[String]
   /**
     * The name of the application
     */
-  var name: String = js.native
+  var name: String
   /**
     * package.json
     */
-  var pkg: js.Any = js.native
-  var rundir: String = js.native
-  var security: Anon_Csp = js.native
+  var pkg: js.Any
+  var rundir: String
+  var security: Anon_Csp
   /**
     * server timeout in milliseconds, default to 2 minutes.
     *
@@ -120,73 +115,49 @@ trait EggAppConfig
     *
     * @see https://nodejs.org/api/http.html#http_server_timeout
     */
-  var serverTimeout: Double | Null = js.native
-  var siteFile: PlainObject[String | Buffer] = js.native
-  var static: Anon_Buffer with PlainObject[_] = js.native
-  var watcher: PlainObject[_] = js.native
-  var workerStartTimeout: Double = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(path: PathLike, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(
-    path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(path: PathLike, options: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(path: PathLike, options: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(path: PathLike, options: Null, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
-  /**
-    * jsonp options
-    * @member Config#jsonp
-    * @property {String} callback - jsonp callback method key, default to `_callback`
-    * @property {Number} limit - callback method name's max length, default to `50`
-    * @property {Boolean} csrf - enable csrf check or not. default to false
-    * @property {String|RegExp|Array} whiteList - referrer white list
-    */
-  def jsonp(
-    path: PathLike,
-    options: MakeDirectoryOptions,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def onClientError(err: Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse] = js.native
+  var serverTimeout: Double | Null
+  var siteFile: PlainObject[String | Buffer]
+  var static: Anon_Buffer with PlainObject[_]
+  var watcher: PlainObject[_]
+  var workerStartTimeout: Double
+  def onClientError(err: Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse]
+}
+
+object EggAppConfig {
+  @scala.inline
+  def apply(
+    HOME: String,
+    baseDir: String,
+    bodyParser: Anon_Enable,
+    customLoader: StringDictionary[CustomLoaderConfig],
+    customLogger: StringDictionary[EggLoggerOptions],
+    development: Anon_FastReady,
+    dump: Anon_Ignore,
+    env: EggEnvType,
+    hostHeaders: String,
+    httpclient: HttpClientConfig,
+    i18n: Anon_CookieField,
+    ipHeaders: String,
+    jsonp: Anon_Callback,
+    keys: String,
+    logger: EggLoggerConfig,
+    middleware: js.Array[String],
+    name: String,
+    onClientError: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse],
+    pkg: js.Any,
+    rundir: String,
+    security: Anon_Csp,
+    siteFile: PlainObject[String | Buffer],
+    static: Anon_Buffer with PlainObject[_],
+    watcher: PlainObject[_],
+    workerStartTimeout: Double,
+    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    serverTimeout: Int | Double = null
+  ): EggAppConfig = {
+    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, bodyParser = bodyParser, customLoader = customLoader, customLogger = customLogger, development = development, dump = dump, env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders, httpclient = httpclient, i18n = i18n, ipHeaders = ipHeaders, jsonp = jsonp, keys = keys, logger = logger, middleware = middleware, name = name, onClientError = js.Any.fromFunction3(onClientError), pkg = pkg, rundir = rundir, security = security, siteFile = siteFile, static = static, watcher = watcher, workerStartTimeout = workerStartTimeout)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EggAppConfig]
+  }
 }
 

@@ -66,8 +66,8 @@ object Message {
     JsonBody: __string = null,
     MediaUrl: __string = null,
     RawContent: __string = null,
-    SilentPush: js.UndefOr[__boolean] = js.undefined,
-    TimeToLive: js.UndefOr[__integer] = js.undefined,
+    SilentPush: js.UndefOr[Boolean] = js.undefined,
+    TimeToLive: Int | Double = null,
     Title: __string = null,
     Url: __string = null
   ): Message = {
@@ -81,7 +81,7 @@ object Message {
     if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl)
     if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent)
     if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush)
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive)
+    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title)
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[Message]

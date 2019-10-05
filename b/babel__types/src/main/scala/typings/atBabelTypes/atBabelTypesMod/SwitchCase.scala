@@ -39,3 +39,11 @@ object SwitchCase {
   }
 }
 
+@JSImport("@babel/types", "switchCase")
+@js.native
+object switchCase extends js.Object {
+  def apply(test: js.UndefOr[scala.Nothing], consequent: js.Array[Statement]): SwitchCase = js.native
+  def apply(test: Null, consequent: js.Array[Statement]): SwitchCase = js.native
+  def apply(test: Expression, consequent: js.Array[Statement]): SwitchCase = js.native
+}
+

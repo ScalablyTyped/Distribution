@@ -1,6 +1,6 @@
 package typings.tinymce.tinymceMod
 
-import typings.tinymce.tinymceMod.htmlNs.Node
+import typings.tinymce.tinymceMod.html.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.FoundationNs.Point
+import typings.winrt.Windows.Foundation.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

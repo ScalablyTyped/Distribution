@@ -32,14 +32,14 @@ object Celebrity {
   def apply(
     Face: ComparedFace = null,
     Id: RekognitionUniqueId = null,
-    MatchConfidence: js.UndefOr[Percent] = js.undefined,
+    MatchConfidence: Int | Double = null,
     Name: String = null,
     Urls: Urls = null
   ): Celebrity = {
     val __obj = js.Dynamic.literal()
     if (Face != null) __obj.updateDynamic("Face")(Face)
     if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(MatchConfidence)) __obj.updateDynamic("MatchConfidence")(MatchConfidence)
+    if (MatchConfidence != null) __obj.updateDynamic("MatchConfidence")(MatchConfidence.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Urls != null) __obj.updateDynamic("Urls")(Urls)
     __obj.asInstanceOf[Celebrity]

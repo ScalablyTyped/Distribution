@@ -62,37 +62,6 @@ trait SVGFETurbulenceElement
 
 @JSGlobal("SVGFETurbulenceElement")
 @js.native
-class SVGFETurbulenceElementCls () extends SVGFETurbulenceElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override val height: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val result: SVGAnimatedString = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override val width: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override val x: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override val y: SVGAnimatedLength = js.native
-}
-
-@JSGlobal("SVGFETurbulenceElement")
-@js.native
 object SVGFETurbulenceElement extends Instantiable0[SVGFETurbulenceElement] {
   val SVG_STITCHTYPE_NOSTITCH: Double = js.native
   val SVG_STITCHTYPE_STITCH: Double = js.native

@@ -1,7 +1,7 @@
 package typings.node.moduleMod
 
 import typings.node.Anon_BuiltinModules
-import typings.node.NodeJSNs.Module
+import typings.node.NodeJS.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

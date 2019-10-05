@@ -56,9 +56,5 @@ trait ServiceWorkerRegistration extends EventTarget {
 
 @JSGlobal("ServiceWorkerRegistration")
 @js.native
-class ServiceWorkerRegistrationCls () extends ServiceWorkerRegistration
-
-@JSGlobal("ServiceWorkerRegistration")
-@js.native
 object ServiceWorkerRegistration extends Instantiable0[ServiceWorkerRegistration]
 

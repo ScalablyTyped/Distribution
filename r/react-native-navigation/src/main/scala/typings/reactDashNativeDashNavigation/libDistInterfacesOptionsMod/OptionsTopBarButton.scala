@@ -83,7 +83,7 @@ object OptionsTopBarButton {
     enabled: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontWeight: FontWeight = null,
-    icon: js.UndefOr[ImageRequireSource] = js.undefined,
+    icon: Int | Double = null,
     iconInsets: IconInsets = null,
     showAsAction: ifRoom | withText | always | never = null,
     systemItem: SystemItemIcon = null,
@@ -98,7 +98,7 @@ object OptionsTopBarButton {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
     if (showAsAction != null) __obj.updateDynamic("showAsAction")(showAsAction.asInstanceOf[js.Any])
     if (systemItem != null) __obj.updateDynamic("systemItem")(systemItem)

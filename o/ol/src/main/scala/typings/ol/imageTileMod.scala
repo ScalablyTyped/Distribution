@@ -1,0 +1,44 @@
+package typings.ol
+
+import typings.ol.imageTileMod.ImageTile
+import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Options
+import typings.ol.tileStateMod.TileState
+import typings.ol.tilecoordMod.TileCoord
+import typings.std.HTMLCanvasElement
+import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("ol/ImageTile", JSImport.Namespace)
+@js.native
+object imageTileMod extends js.Object {
+  @js.native
+  trait ImageTile
+    extends typings.ol.tileMod.default {
+    def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
+  }
+  
+  @js.native
+  class default protected () extends ImageTile {
+    def this(
+      tileCoord: TileCoord,
+      state: TileState,
+      src: String,
+      crossOrigin: String,
+      tileLoadFunction: LoadFunction
+    ) = this()
+    def this(
+      tileCoord: TileCoord,
+      state: TileState,
+      src: String,
+      crossOrigin: String,
+      tileLoadFunction: LoadFunction,
+      opt_options: Options
+    ) = this()
+  }
+  
+}
+

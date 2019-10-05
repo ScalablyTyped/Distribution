@@ -1,6 +1,6 @@
 package typings.zeroclipboard
 
-import typings.zeroclipboard.ZCNs.ZeroClipboardStatic
+import typings.zeroclipboard.ZC.ZeroClipboardStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

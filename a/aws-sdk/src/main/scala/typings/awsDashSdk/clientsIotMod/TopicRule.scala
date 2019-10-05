@@ -47,7 +47,7 @@ object TopicRule {
     createdAt: CreatedAtDate = null,
     description: Description = null,
     errorAction: Action = null,
-    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
+    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     ruleName: RuleName = null,
     sql: SQL = null
   ): TopicRule = {

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -192,34 +193,34 @@ object IgGridHiding {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     columnChooserAnimationDuration: Int | Double = null,
-    columnChooserButtonApplyClick: ColumnChooserButtonApplyClickEvent = null,
+    columnChooserButtonApplyClick: (/* event */ Event, /* ui */ ColumnChooserButtonApplyClickEventUIParam) => Unit = null,
     columnChooserButtonApplyText: String = null,
     columnChooserButtonCancelText: String = null,
-    columnChooserButtonResetClick: ColumnChooserButtonResetClickEvent = null,
+    columnChooserButtonResetClick: (/* event */ Event, /* ui */ ColumnChooserButtonResetClickEventUIParam) => Unit = null,
     columnChooserCaptionText: String = null,
-    columnChooserClosed: ColumnChooserClosedEvent = null,
-    columnChooserClosing: ColumnChooserClosingEvent = null,
+    columnChooserClosed: (/* event */ Event, /* ui */ ColumnChooserClosedEventUIParam) => Unit = null,
+    columnChooserClosing: (/* event */ Event, /* ui */ ColumnChooserClosingEventUIParam) => Unit = null,
     columnChooserContainment: String = null,
-    columnChooserContentsRendered: ColumnChooserContentsRenderedEvent = null,
-    columnChooserContentsRendering: ColumnChooserContentsRenderingEvent = null,
+    columnChooserContentsRendered: (/* event */ Event, /* ui */ ColumnChooserContentsRenderedEventUIParam) => Unit = null,
+    columnChooserContentsRendering: (/* event */ Event, /* ui */ ColumnChooserContentsRenderingEventUIParam) => Unit = null,
     columnChooserDisplayText: String = null,
     columnChooserHeight: String = null,
     columnChooserHideOnClick: js.UndefOr[Boolean] = js.undefined,
     columnChooserHideText: String = null,
-    columnChooserMoving: ColumnChooserMovingEvent = null,
-    columnChooserOpened: ColumnChooserOpenedEvent = null,
-    columnChooserOpening: ColumnChooserOpeningEvent = null,
+    columnChooserMoving: (/* event */ Event, /* ui */ ColumnChooserMovingEventUIParam) => Unit = null,
+    columnChooserOpened: (/* event */ Event, /* ui */ ColumnChooserOpenedEventUIParam) => Unit = null,
+    columnChooserOpening: (/* event */ Event, /* ui */ ColumnChooserOpeningEventUIParam) => Unit = null,
     columnChooserResetButtonLabel: String = null,
     columnChooserShowText: String = null,
     columnChooserWidth: String = null,
-    columnHidden: ColumnHiddenEvent = null,
+    columnHidden: (/* event */ Event, /* ui */ ColumnHiddenEventUIParam) => Unit = null,
     columnHideText: String = null,
-    columnHiding: ColumnHidingEvent = null,
-    columnHidingRefused: ColumnHidingRefusedEvent = null,
+    columnHiding: (/* event */ Event, /* ui */ ColumnHidingEventUIParam) => Unit = null,
+    columnHidingRefused: (/* event */ Event, /* ui */ ColumnHidingRefusedEventUIParam) => Unit = null,
     columnSettings: js.Array[IgGridHidingColumnSetting] = null,
-    columnShowing: ColumnShowingEvent = null,
-    columnShowingRefused: ColumnShowingRefusedEvent = null,
-    columnShown: ColumnShownEvent = null,
+    columnShowing: (/* event */ Event, /* ui */ ColumnShowingEventUIParam) => Unit = null,
+    columnShowingRefused: (/* event */ Event, /* ui */ ColumnShowingRefusedEventUIParam) => Unit = null,
+    columnShown: (/* event */ Event, /* ui */ ColumnShownEventUIParam) => Unit = null,
     dialogWidget: String = null,
     dropDownAnimationDuration: Int | Double = null,
     hiddenColumnIndicatorHeaderWidth: Int | Double = null,
@@ -227,40 +228,40 @@ object IgGridHiding {
     inherit: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     locale: IgGridHidingLocale = null,
-    multiColumnHiding: MultiColumnHidingEvent = null,
+    multiColumnHiding: (/* event */ Event, /* ui */ MultiColumnHidingEventUIParam) => Unit = null,
     regional: String | js.Object = null
   ): IgGridHiding = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columnChooserAnimationDuration != null) __obj.updateDynamic("columnChooserAnimationDuration")(columnChooserAnimationDuration.asInstanceOf[js.Any])
-    if (columnChooserButtonApplyClick != null) __obj.updateDynamic("columnChooserButtonApplyClick")(columnChooserButtonApplyClick)
+    if (columnChooserButtonApplyClick != null) __obj.updateDynamic("columnChooserButtonApplyClick")(js.Any.fromFunction2(columnChooserButtonApplyClick))
     if (columnChooserButtonApplyText != null) __obj.updateDynamic("columnChooserButtonApplyText")(columnChooserButtonApplyText)
     if (columnChooserButtonCancelText != null) __obj.updateDynamic("columnChooserButtonCancelText")(columnChooserButtonCancelText)
-    if (columnChooserButtonResetClick != null) __obj.updateDynamic("columnChooserButtonResetClick")(columnChooserButtonResetClick)
+    if (columnChooserButtonResetClick != null) __obj.updateDynamic("columnChooserButtonResetClick")(js.Any.fromFunction2(columnChooserButtonResetClick))
     if (columnChooserCaptionText != null) __obj.updateDynamic("columnChooserCaptionText")(columnChooserCaptionText)
-    if (columnChooserClosed != null) __obj.updateDynamic("columnChooserClosed")(columnChooserClosed)
-    if (columnChooserClosing != null) __obj.updateDynamic("columnChooserClosing")(columnChooserClosing)
+    if (columnChooserClosed != null) __obj.updateDynamic("columnChooserClosed")(js.Any.fromFunction2(columnChooserClosed))
+    if (columnChooserClosing != null) __obj.updateDynamic("columnChooserClosing")(js.Any.fromFunction2(columnChooserClosing))
     if (columnChooserContainment != null) __obj.updateDynamic("columnChooserContainment")(columnChooserContainment)
-    if (columnChooserContentsRendered != null) __obj.updateDynamic("columnChooserContentsRendered")(columnChooserContentsRendered)
-    if (columnChooserContentsRendering != null) __obj.updateDynamic("columnChooserContentsRendering")(columnChooserContentsRendering)
+    if (columnChooserContentsRendered != null) __obj.updateDynamic("columnChooserContentsRendered")(js.Any.fromFunction2(columnChooserContentsRendered))
+    if (columnChooserContentsRendering != null) __obj.updateDynamic("columnChooserContentsRendering")(js.Any.fromFunction2(columnChooserContentsRendering))
     if (columnChooserDisplayText != null) __obj.updateDynamic("columnChooserDisplayText")(columnChooserDisplayText)
     if (columnChooserHeight != null) __obj.updateDynamic("columnChooserHeight")(columnChooserHeight)
     if (!js.isUndefined(columnChooserHideOnClick)) __obj.updateDynamic("columnChooserHideOnClick")(columnChooserHideOnClick)
     if (columnChooserHideText != null) __obj.updateDynamic("columnChooserHideText")(columnChooserHideText)
-    if (columnChooserMoving != null) __obj.updateDynamic("columnChooserMoving")(columnChooserMoving)
-    if (columnChooserOpened != null) __obj.updateDynamic("columnChooserOpened")(columnChooserOpened)
-    if (columnChooserOpening != null) __obj.updateDynamic("columnChooserOpening")(columnChooserOpening)
+    if (columnChooserMoving != null) __obj.updateDynamic("columnChooserMoving")(js.Any.fromFunction2(columnChooserMoving))
+    if (columnChooserOpened != null) __obj.updateDynamic("columnChooserOpened")(js.Any.fromFunction2(columnChooserOpened))
+    if (columnChooserOpening != null) __obj.updateDynamic("columnChooserOpening")(js.Any.fromFunction2(columnChooserOpening))
     if (columnChooserResetButtonLabel != null) __obj.updateDynamic("columnChooserResetButtonLabel")(columnChooserResetButtonLabel)
     if (columnChooserShowText != null) __obj.updateDynamic("columnChooserShowText")(columnChooserShowText)
     if (columnChooserWidth != null) __obj.updateDynamic("columnChooserWidth")(columnChooserWidth)
-    if (columnHidden != null) __obj.updateDynamic("columnHidden")(columnHidden)
+    if (columnHidden != null) __obj.updateDynamic("columnHidden")(js.Any.fromFunction2(columnHidden))
     if (columnHideText != null) __obj.updateDynamic("columnHideText")(columnHideText)
-    if (columnHiding != null) __obj.updateDynamic("columnHiding")(columnHiding)
-    if (columnHidingRefused != null) __obj.updateDynamic("columnHidingRefused")(columnHidingRefused)
+    if (columnHiding != null) __obj.updateDynamic("columnHiding")(js.Any.fromFunction2(columnHiding))
+    if (columnHidingRefused != null) __obj.updateDynamic("columnHidingRefused")(js.Any.fromFunction2(columnHidingRefused))
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (columnShowing != null) __obj.updateDynamic("columnShowing")(columnShowing)
-    if (columnShowingRefused != null) __obj.updateDynamic("columnShowingRefused")(columnShowingRefused)
-    if (columnShown != null) __obj.updateDynamic("columnShown")(columnShown)
+    if (columnShowing != null) __obj.updateDynamic("columnShowing")(js.Any.fromFunction2(columnShowing))
+    if (columnShowingRefused != null) __obj.updateDynamic("columnShowingRefused")(js.Any.fromFunction2(columnShowingRefused))
+    if (columnShown != null) __obj.updateDynamic("columnShown")(js.Any.fromFunction2(columnShown))
     if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
     if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
     if (hiddenColumnIndicatorHeaderWidth != null) __obj.updateDynamic("hiddenColumnIndicatorHeaderWidth")(hiddenColumnIndicatorHeaderWidth.asInstanceOf[js.Any])
@@ -268,7 +269,7 @@ object IgGridHiding {
     if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (multiColumnHiding != null) __obj.updateDynamic("multiColumnHiding")(multiColumnHiding)
+    if (multiColumnHiding != null) __obj.updateDynamic("multiColumnHiding")(js.Any.fromFunction2(multiColumnHiding))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridHiding]
   }

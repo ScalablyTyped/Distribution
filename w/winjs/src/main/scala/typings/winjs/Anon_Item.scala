@@ -1,6 +1,6 @@
 package typings.winjs
 
-import typings.winjs.WinJSNs.UtilitiesNs.IPosition
+import typings.winjs.WinJS.Utilities.IPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

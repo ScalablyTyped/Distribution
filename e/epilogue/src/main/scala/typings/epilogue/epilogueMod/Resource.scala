@@ -44,3 +44,10 @@ class Resource protected () extends js.Object {
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
 }
 
+@JSImport("epilogue", "resource")
+@js.native
+object resource extends js.Object {
+  def apply(): Resource = js.native
+  def apply(options: ResourceOptions): Resource = js.native
+}
+

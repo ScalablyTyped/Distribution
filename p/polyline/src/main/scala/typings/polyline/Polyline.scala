@@ -1,5 +1,6 @@
 package typings.polyline
 
+import org.scalablytyped.runtime.TopLevel
 import typings.geojson.geojsonMod.Feature
 import typings.geojson.geojsonMod.GeoJsonProperties
 import typings.geojson.geojsonMod.LineString
@@ -18,4 +19,8 @@ trait Polyline extends js.Object {
   def fromGeoJSON(geojson: LineString): String = js.native
   def fromGeoJSON(geojson: LineString, precision: Double): String = js.native
 }
+
+@JSGlobal("polyline")
+@js.native
+object polyline extends TopLevel[Polyline]
 

@@ -21,13 +21,9 @@ trait DescribeOpsItemsRequest extends js.Object {
 
 object DescribeOpsItemsRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[OpsItemMaxResults] = js.undefined,
-    NextToken: String = null,
-    OpsItemFilters: OpsItemFilters = null
-  ): DescribeOpsItemsRequest = {
+  def apply(MaxResults: Int | Double = null, NextToken: String = null, OpsItemFilters: OpsItemFilters = null): DescribeOpsItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (OpsItemFilters != null) __obj.updateDynamic("OpsItemFilters")(OpsItemFilters)
     __obj.asInstanceOf[DescribeOpsItemsRequest]

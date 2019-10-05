@@ -1,6 +1,6 @@
 package typings.deferDashPromise.deferDashPromiseMod
 
-import typings.deferDashPromise.deferDashPromiseMod.Global.DeferPromiseNs.Deferred
+import typings.deferDashPromise.deferDashPromiseMod.Global.DeferPromise.Deferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

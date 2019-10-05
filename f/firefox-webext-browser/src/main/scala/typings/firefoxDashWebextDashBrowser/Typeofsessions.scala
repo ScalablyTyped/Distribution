@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.sessionsNs.Device
-import typings.firefoxDashWebextDashBrowser.browserNs.sessionsNs.Filter
-import typings.firefoxDashWebextDashBrowser.browserNs.sessionsNs.Session
+import typings.firefoxDashWebextDashBrowser.browser.sessions.Device
+import typings.firefoxDashWebextDashBrowser.browser.sessions.Filter
+import typings.firefoxDashWebextDashBrowser.browser.sessions.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

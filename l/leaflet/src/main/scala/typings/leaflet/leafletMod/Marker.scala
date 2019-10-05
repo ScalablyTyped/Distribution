@@ -26,3 +26,10 @@ class Marker[P] protected () extends Layer {
   def toGeoJSON(): Feature[typings.geojson.geojsonMod.Point, P] = js.native
 }
 
+@JSImport("leaflet", "marker")
+@js.native
+object marker extends js.Object {
+  def apply(latlng: LatLngExpression): Marker[_] = js.native
+  def apply(latlng: LatLngExpression, options: MarkerOptions): Marker[_] = js.native
+}
+

@@ -5,20 +5,20 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
-import typings.chrome.chromeNs.castNs.ApiConfig
-import typings.chrome.chromeNs.castNs.AutoJoinPolicy
-import typings.chrome.chromeNs.castNs.Capability
-import typings.chrome.chromeNs.castNs.DefaultActionPolicy
-import typings.chrome.chromeNs.castNs.Error
-import typings.chrome.chromeNs.castNs.ErrorCode
-import typings.chrome.chromeNs.castNs.Image
-import typings.chrome.chromeNs.castNs.Receiver
-import typings.chrome.chromeNs.castNs.ReceiverAction
-import typings.chrome.chromeNs.castNs.ReceiverAvailability
-import typings.chrome.chromeNs.castNs.SenderPlatform
-import typings.chrome.chromeNs.castNs.Session
-import typings.chrome.chromeNs.castNs.SessionRequest
-import typings.chrome.chromeNs.castNs.Volume
+import typings.chrome.chrome.cast.ApiConfig
+import typings.chrome.chrome.cast.AutoJoinPolicy
+import typings.chrome.chrome.cast.Capability
+import typings.chrome.chrome.cast.DefaultActionPolicy
+import typings.chrome.chrome.cast.Error
+import typings.chrome.chrome.cast.ErrorCode
+import typings.chrome.chrome.cast.Image
+import typings.chrome.chrome.cast.Receiver
+import typings.chrome.chrome.cast.ReceiverAction
+import typings.chrome.chrome.cast.ReceiverAvailability
+import typings.chrome.chrome.cast.SenderPlatform
+import typings.chrome.chrome.cast.Session
+import typings.chrome.chrome.cast.SessionRequest
+import typings.chrome.chrome.cast.Volume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,50 +31,50 @@ trait Typeofcast extends js.Object {
     /* receiverListener */ js.Function1[/* receiverAvailability */ ReceiverAvailability, Unit], 
     js.UndefOr[/* autoJoinPolicy */ AutoJoinPolicy], 
     js.UndefOr[/* defaultActionPolicy */ DefaultActionPolicy], 
-    typings.chrome.chromeNs.castNs.ApiConfig
+    typings.chrome.chrome.cast.ApiConfig
   ] = js.native
   var Error: Instantiable3[
     /* code */ ErrorCode, 
     js.UndefOr[/* description */ String], 
     js.UndefOr[/* details */ js.Object], 
-    typings.chrome.chromeNs.castNs.Error
+    typings.chrome.chrome.cast.Error
   ] = js.native
-  var Image: Instantiable1[/* url */ String, typings.chrome.chromeNs.castNs.Image] = js.native
+  var Image: Instantiable1[/* url */ String, typings.chrome.chrome.cast.Image] = js.native
   var Receiver: Instantiable4[
     /* label */ String, 
     /* friendlyName */ String, 
     js.UndefOr[/* capabilities */ js.Array[Capability]], 
     js.UndefOr[/* volume */ Volume], 
-    typings.chrome.chromeNs.castNs.Receiver
+    typings.chrome.chrome.cast.Receiver
   ] = js.native
   var ReceiverDisplayStatus: Instantiable2[
     /* statusText */ String, 
     /* appImages */ js.Array[Image], 
-    typings.chrome.chromeNs.castNs.ReceiverDisplayStatus
+    typings.chrome.chrome.cast.ReceiverDisplayStatus
   ] = js.native
-  var SenderApplication: Instantiable1[/* platform */ SenderPlatform, typings.chrome.chromeNs.castNs.SenderApplication] = js.native
+  var SenderApplication: Instantiable1[/* platform */ SenderPlatform, typings.chrome.chrome.cast.SenderApplication] = js.native
   var Session: Instantiable5[
     /* sessionId */ String, 
     /* appId */ String, 
     /* displayName */ String, 
     /* appImages */ js.Array[Image], 
     /* receiver */ Receiver, 
-    typings.chrome.chromeNs.castNs.Session
+    typings.chrome.chrome.cast.Session
   ] = js.native
   var SessionRequest: Instantiable3[
     /* appId */ String, 
     js.UndefOr[/* capabilities */ js.Array[Capability]], 
     js.UndefOr[/* timeout */ Double], 
-    typings.chrome.chromeNs.castNs.SessionRequest
+    typings.chrome.chrome.cast.SessionRequest
   ] = js.native
   var VERSION: js.Array[Double] = js.native
   var Volume: Instantiable2[
     js.UndefOr[/* level */ Double], 
     js.UndefOr[/* muted */ Boolean], 
-    typings.chrome.chromeNs.castNs.Volume
+    typings.chrome.chrome.cast.Volume
   ] = js.native
   var isAvailable: Boolean = js.native
-  val mediaNs: Typeofmedia = js.native
+  val media: Typeofmedia = js.native
   def addReceiverActionListener(listener: js.Function2[/* receiver */ Receiver, /* receiverAction */ ReceiverAction, Unit]): Unit = js.native
   def initialize(
     apiConfig: ApiConfig,

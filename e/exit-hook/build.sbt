@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "exit-hook"
-version := "2.2.0-432b38"
-scalaVersion := "2.12.9"
+version := "2.2.0-14166c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

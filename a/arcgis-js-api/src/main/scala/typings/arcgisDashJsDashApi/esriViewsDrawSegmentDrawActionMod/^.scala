@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsDrawSegmentDrawActionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SegmentDrawActionConstructor
+import typings.arcgisDashJsDashApi.__esri.SegmentDrawActionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

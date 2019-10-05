@@ -35,3 +35,11 @@ object InterfaceExtends {
   }
 }
 
+@JSImport("babel-types", "interfaceExtends")
+@js.native
+object interfaceExtends extends js.Object {
+  def apply(): InterfaceExtends = js.native
+  def apply(id: Identifier): InterfaceExtends = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterInstantiation): InterfaceExtends = js.native
+}
+

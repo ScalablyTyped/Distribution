@@ -1,7 +1,7 @@
 package typings.phin.phinMod
 
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`

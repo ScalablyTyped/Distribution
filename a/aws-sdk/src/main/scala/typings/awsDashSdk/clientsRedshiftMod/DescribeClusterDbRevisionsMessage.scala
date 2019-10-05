@@ -21,15 +21,11 @@ trait DescribeClusterDbRevisionsMessage extends js.Object {
 
 object DescribeClusterDbRevisionsMessage {
   @scala.inline
-  def apply(
-    ClusterIdentifier: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
-  ): DescribeClusterDbRevisionsMessage = {
+  def apply(ClusterIdentifier: String = null, Marker: String = null, MaxRecords: Int | scala.Double = null): DescribeClusterDbRevisionsMessage = {
     val __obj = js.Dynamic.literal()
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterDbRevisionsMessage]
   }
 }

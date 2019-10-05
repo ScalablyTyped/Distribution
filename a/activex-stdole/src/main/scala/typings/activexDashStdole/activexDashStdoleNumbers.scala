@@ -1,7 +1,7 @@
 package typings.activexDashStdole
 
-import typings.activexDashStdole.stdoleNs.LoadPictureConstants
-import typings.activexDashStdole.stdoleNs.OLE_TRISTATE
+import typings.activexDashStdole.stdole.LoadPictureConstants
+import typings.activexDashStdole.stdole.OLE_TRISTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

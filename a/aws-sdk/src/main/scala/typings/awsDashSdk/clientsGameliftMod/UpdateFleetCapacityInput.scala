@@ -27,14 +27,14 @@ object UpdateFleetCapacityInput {
   @scala.inline
   def apply(
     FleetId: FleetId,
-    DesiredInstances: js.UndefOr[WholeNumber] = js.undefined,
-    MaxSize: js.UndefOr[WholeNumber] = js.undefined,
-    MinSize: js.UndefOr[WholeNumber] = js.undefined
+    DesiredInstances: Int | scala.Double = null,
+    MaxSize: Int | scala.Double = null,
+    MinSize: Int | scala.Double = null
   ): UpdateFleetCapacityInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId)
-    if (!js.isUndefined(DesiredInstances)) __obj.updateDynamic("DesiredInstances")(DesiredInstances)
-    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize)
-    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize)
+    if (DesiredInstances != null) __obj.updateDynamic("DesiredInstances")(DesiredInstances.asInstanceOf[js.Any])
+    if (MaxSize != null) __obj.updateDynamic("MaxSize")(MaxSize.asInstanceOf[js.Any])
+    if (MinSize != null) __obj.updateDynamic("MinSize")(MinSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetCapacityInput]
   }
 }

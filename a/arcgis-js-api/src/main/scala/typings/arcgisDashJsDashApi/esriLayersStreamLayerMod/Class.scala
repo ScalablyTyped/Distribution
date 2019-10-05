@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersStreamLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StreamLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.StreamLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.StreamLayer
+import typings.arcgisDashJsDashApi.__esri.StreamLayerProperties
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

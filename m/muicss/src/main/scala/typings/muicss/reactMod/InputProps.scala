@@ -1,6 +1,8 @@
 package typings.muicss.reactMod
 
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.InputHTMLAttributes
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
@@ -27,7 +29,7 @@ object InputProps {
     inputRef: Ref[HTMLInputElement] = null,
     invalid: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
-    onLabelClick: MouseEventHandler[HTMLInputElement] = null
+    onLabelClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null
   ): InputProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
@@ -36,7 +38,7 @@ object InputProps {
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (!js.isUndefined(invalid)) __obj.updateDynamic("invalid")(invalid)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onLabelClick != null) __obj.updateDynamic("onLabelClick")(onLabelClick)
+    if (onLabelClick != null) __obj.updateDynamic("onLabelClick")(js.Any.fromFunction1(onLabelClick))
     __obj.asInstanceOf[InputProps]
   }
 }

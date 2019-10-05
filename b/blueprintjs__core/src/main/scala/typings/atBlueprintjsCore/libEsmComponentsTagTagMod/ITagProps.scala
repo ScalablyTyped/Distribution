@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTagTagMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
 import typings.react.NativeMouseEvent
@@ -88,7 +87,6 @@ object ITagProps {
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLSpanElement] = null,
     IIntentProps: IIntentProps = null,
-    IProps: IProps = null,
     active: js.UndefOr[Boolean] = js.undefined,
     fill: js.UndefOr[Boolean] = js.undefined,
     icon: IconName | MaybeElement = null,
@@ -104,7 +102,6 @@ object ITagProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, IIntentProps)
-    js.Dynamic.global.Object.assign(__obj, IProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

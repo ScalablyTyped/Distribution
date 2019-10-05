@@ -56,22 +56,22 @@ object ConfigurationOptionDescription {
   def apply(
     ChangeSeverity: ConfigurationOptionSeverity = null,
     DefaultValue: ConfigurationOptionDefaultValue = null,
-    MaxLength: js.UndefOr[OptionRestrictionMaxLength] = js.undefined,
-    MaxValue: js.UndefOr[OptionRestrictionMaxValue] = js.undefined,
-    MinValue: js.UndefOr[OptionRestrictionMinValue] = js.undefined,
+    MaxLength: Int | Double = null,
+    MaxValue: Int | Double = null,
+    MinValue: Int | Double = null,
     Name: ConfigurationOptionName = null,
     Namespace: OptionNamespace = null,
     Regex: OptionRestrictionRegex = null,
-    UserDefined: js.UndefOr[UserDefinedOption] = js.undefined,
+    UserDefined: js.UndefOr[Boolean] = js.undefined,
     ValueOptions: ConfigurationOptionPossibleValues = null,
     ValueType: ConfigurationOptionValueType = null
   ): ConfigurationOptionDescription = {
     val __obj = js.Dynamic.literal()
     if (ChangeSeverity != null) __obj.updateDynamic("ChangeSeverity")(ChangeSeverity)
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength)
-    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue)
-    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue)
+    if (MaxLength != null) __obj.updateDynamic("MaxLength")(MaxLength.asInstanceOf[js.Any])
+    if (MaxValue != null) __obj.updateDynamic("MaxValue")(MaxValue.asInstanceOf[js.Any])
+    if (MinValue != null) __obj.updateDynamic("MinValue")(MinValue.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace)
     if (Regex != null) __obj.updateDynamic("Regex")(Regex)

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportJobInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.JobInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.JobInfoProperties
+import typings.arcgisDashJsDashApi.__esri.JobInfo
+import typings.arcgisDashJsDashApi.__esri.JobInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

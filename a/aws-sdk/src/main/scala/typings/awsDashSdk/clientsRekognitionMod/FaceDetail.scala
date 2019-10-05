@@ -73,7 +73,7 @@ object FaceDetail {
     AgeRange: AgeRange = null,
     Beard: Beard = null,
     BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
+    Confidence: Int | Double = null,
     Emotions: Emotions = null,
     Eyeglasses: Eyeglasses = null,
     EyesOpen: EyeOpen = null,
@@ -90,7 +90,7 @@ object FaceDetail {
     if (AgeRange != null) __obj.updateDynamic("AgeRange")(AgeRange)
     if (Beard != null) __obj.updateDynamic("Beard")(Beard)
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (Emotions != null) __obj.updateDynamic("Emotions")(Emotions)
     if (Eyeglasses != null) __obj.updateDynamic("Eyeglasses")(Eyeglasses)
     if (EyesOpen != null) __obj.updateDynamic("EyesOpen")(EyesOpen)

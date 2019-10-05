@@ -31,14 +31,14 @@ object DescribeComplianceByResourceRequest {
   @scala.inline
   def apply(
     ComplianceTypes: ComplianceTypes = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: NextToken = null,
     ResourceId: BaseResourceId = null,
     ResourceType: StringWithCharLimit256 = null
   ): DescribeComplianceByResourceRequest = {
     val __obj = js.Dynamic.literal()
     if (ComplianceTypes != null) __obj.updateDynamic("ComplianceTypes")(ComplianceTypes)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)

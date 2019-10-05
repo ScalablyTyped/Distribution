@@ -13,7 +13,7 @@ trait ScheduledInstancesMonitoring extends js.Object {
 
 object ScheduledInstancesMonitoring {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): ScheduledInstancesMonitoring = {
+  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined): ScheduledInstancesMonitoring = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[ScheduledInstancesMonitoring]

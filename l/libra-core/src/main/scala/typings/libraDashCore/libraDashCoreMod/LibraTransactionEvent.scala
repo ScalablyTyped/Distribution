@@ -13,13 +13,11 @@ trait LibraTransactionEvent extends js.Object {
   var sequenceNumber: default
 }
 
-object LibraTransactionEvent {
-  @scala.inline
-  def apply(data: Uint8Array, sequenceNumber: default, address: AccountAddress = null, path: Uint8Array = null): LibraTransactionEvent = {
-    val __obj = js.Dynamic.literal(data = data, sequenceNumber = sequenceNumber)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (path != null) __obj.updateDynamic("path")(path)
-    __obj.asInstanceOf[LibraTransactionEvent]
-  }
+@JSImport("libra-core", "LibraTransactionEvent")
+@js.native
+object LibraTransactionEvent extends js.Object {
+  def apply(data: Uint8Array, sequenceNumber: default): Unit = js.native
+  def apply(data: Uint8Array, sequenceNumber: default, address: AccountAddress): Unit = js.native
+  def apply(data: Uint8Array, sequenceNumber: default, address: AccountAddress, path: Uint8Array): Unit = js.native
 }
 

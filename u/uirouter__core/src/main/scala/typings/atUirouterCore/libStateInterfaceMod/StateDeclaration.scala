@@ -5,6 +5,7 @@ import typings.atUirouterCore.libCommonCommonMod.IInjectable
 import typings.atUirouterCore.libParamsInterfaceMod.ParamDeclaration
 import typings.atUirouterCore.libResolveInterfaceMod.ResolvePolicy
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
+import typings.atUirouterCore.libTransitionInterfaceMod.HookResult
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionStateHookFn
 import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import scala.scalajs.js
@@ -597,9 +598,9 @@ object StateDeclaration {
     dynamic: js.UndefOr[Boolean] = js.undefined,
     lazyLoad: (/* transition */ Transition, /* state */ StateDeclaration) => js.Promise[LazyLoadResult] = null,
     name: String = null,
-    onEnter: TransitionStateHookFn = null,
-    onExit: TransitionStateHookFn = null,
-    onRetain: TransitionStateHookFn = null,
+    onEnter: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
+    onExit: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
+    onRetain: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
     params: StringDictionary[ParamDeclaration | js.Any] = null,
     parent: String | StateDeclaration = null,
     redirectTo: RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult]) = null,
@@ -616,9 +617,9 @@ object StateDeclaration {
     if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onRetain != null) __obj.updateDynamic("onRetain")(onRetain)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
+    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction2(onExit))
+    if (onRetain != null) __obj.updateDynamic("onRetain")(js.Any.fromFunction2(onRetain))
     if (params != null) __obj.updateDynamic("params")(params)
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])

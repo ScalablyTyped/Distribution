@@ -59,12 +59,12 @@ object ProresSettings {
     CodecProfile: ProresCodecProfile = null,
     FramerateControl: ProresFramerateControl = null,
     FramerateConversionAlgorithm: ProresFramerateConversionAlgorithm = null,
-    FramerateDenominator: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
-    FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    FramerateDenominator: Int | Double = null,
+    FramerateNumerator: Int | Double = null,
     InterlaceMode: ProresInterlaceMode = null,
     ParControl: ProresParControl = null,
-    ParDenominator: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
-    ParNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    ParDenominator: Int | Double = null,
+    ParNumerator: Int | Double = null,
     SlowPal: ProresSlowPal = null,
     Telecine: ProresTelecine = null
   ): ProresSettings = {
@@ -72,12 +72,12 @@ object ProresSettings {
     if (CodecProfile != null) __obj.updateDynamic("CodecProfile")(CodecProfile.asInstanceOf[js.Any])
     if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
     if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator)
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator)
+    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
+    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
     if (InterlaceMode != null) __obj.updateDynamic("InterlaceMode")(InterlaceMode.asInstanceOf[js.Any])
     if (ParControl != null) __obj.updateDynamic("ParControl")(ParControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator)
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator)
+    if (ParDenominator != null) __obj.updateDynamic("ParDenominator")(ParDenominator.asInstanceOf[js.Any])
+    if (ParNumerator != null) __obj.updateDynamic("ParNumerator")(ParNumerator.asInstanceOf[js.Any])
     if (SlowPal != null) __obj.updateDynamic("SlowPal")(SlowPal.asInstanceOf[js.Any])
     if (Telecine != null) __obj.updateDynamic("Telecine")(Telecine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProresSettings]

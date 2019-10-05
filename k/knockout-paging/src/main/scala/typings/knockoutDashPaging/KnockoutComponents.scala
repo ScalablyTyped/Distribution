@@ -1,9 +1,9 @@
 package typings.knockoutDashPaging
 
-import typings.knockoutDashPaging.KnockoutComponentTypesNs.Config
-import typings.knockoutDashPaging.KnockoutComponentTypesNs.Definition
-import typings.knockoutDashPaging.KnockoutComponentTypesNs.EmptyConfig
-import typings.knockoutDashPaging.KnockoutComponentTypesNs.Loader
+import typings.knockoutDashPaging.KnockoutComponentTypes.Config
+import typings.knockoutDashPaging.KnockoutComponentTypes.Definition
+import typings.knockoutDashPaging.KnockoutComponentTypes.EmptyConfig
+import typings.knockoutDashPaging.KnockoutComponentTypes.Loader
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

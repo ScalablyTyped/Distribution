@@ -14,3 +14,9 @@ trait Impress extends js.Object {
   def prev(): js.Any = js.native
 }
 
+@JSGlobal("impress")
+@js.native
+object impress extends js.Object {
+  def apply(): Impress = js.native
+}
+

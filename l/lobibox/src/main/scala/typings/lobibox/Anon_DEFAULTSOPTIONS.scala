@@ -1,10 +1,10 @@
 package typings.lobibox
 
-import typings.lobibox.LobiboxModuleNs.AlertOptions
-import typings.lobibox.LobiboxModuleNs.LobiboxStatic
-import typings.lobibox.LobiboxModuleNs.MessageBoxesDefault
-import typings.lobibox.LobiboxModuleNs.NotifyDefault
-import typings.lobibox.LobiboxModuleNs.NotifyOptions
+import typings.lobibox.LobiboxModule.AlertOptions
+import typings.lobibox.LobiboxModule.LobiboxStatic
+import typings.lobibox.LobiboxModule.MessageBoxesDefault
+import typings.lobibox.LobiboxModule.NotifyDefault
+import typings.lobibox.LobiboxModule.NotifyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

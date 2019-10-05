@@ -1,12 +1,12 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.NetworkNs.BonjourBrowser
-import typings.titanium.TitaniumNs.NetworkNs.BonjourService
-import typings.titanium.TitaniumNs.NetworkNs.Cookie
-import typings.titanium.TitaniumNs.NetworkNs.HTTPClient
-import typings.titanium.TitaniumNs.NetworkNs.TCPSocket
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Network.BonjourBrowser
+import typings.titanium.Titanium.Network.BonjourService
+import typings.titanium.Titanium.Network.Cookie
+import typings.titanium.Titanium.Network.HTTPClient
+import typings.titanium.Titanium.Network.TCPSocket
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,7 +94,7 @@ trait TypeofNetwork extends js.Object {
   /**
   		 * Socket module, used for creating sockets.
   		 */
-  val SocketNs: TypeofSocket = js.native
+  val Socket: TypeofSocket = js.native
   /**
   		 * Constant value specifying TLS version 1.0 for SSL.
   		 */

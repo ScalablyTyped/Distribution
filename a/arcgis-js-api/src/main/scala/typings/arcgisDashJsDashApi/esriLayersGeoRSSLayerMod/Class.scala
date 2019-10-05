@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersGeoRSSLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoRSSLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoRSSLayerProperties
+import typings.arcgisDashJsDashApi.__esri.GeoRSSLayer
+import typings.arcgisDashJsDashApi.__esri.GeoRSSLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

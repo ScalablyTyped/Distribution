@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "WebGLState")
 @js.native
 class WebGLState protected ()
-  extends typings.pixiDotJs.PIXINs.WebGLState {
+  extends typings.pixiDotJs.PIXI.WebGLState {
   def this(gl: WebGLRenderingContext) = this()
 }
 

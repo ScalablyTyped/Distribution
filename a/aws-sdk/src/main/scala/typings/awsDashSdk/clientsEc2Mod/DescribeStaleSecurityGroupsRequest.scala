@@ -27,13 +27,13 @@ object DescribeStaleSecurityGroupsRequest {
   @scala.inline
   def apply(
     VpcId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[DescribeStaleSecurityGroupsMaxResults] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: DescribeStaleSecurityGroupsNextToken = null
   ): DescribeStaleSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeStaleSecurityGroupsRequest]
   }

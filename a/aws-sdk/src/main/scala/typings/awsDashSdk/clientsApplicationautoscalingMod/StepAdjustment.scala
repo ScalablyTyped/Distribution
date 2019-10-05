@@ -23,12 +23,12 @@ object StepAdjustment {
   @scala.inline
   def apply(
     ScalingAdjustment: ScalingAdjustment,
-    MetricIntervalLowerBound: js.UndefOr[MetricScale] = js.undefined,
-    MetricIntervalUpperBound: js.UndefOr[MetricScale] = js.undefined
+    MetricIntervalLowerBound: Int | Double = null,
+    MetricIntervalUpperBound: Int | Double = null
   ): StepAdjustment = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment)
-    if (!js.isUndefined(MetricIntervalLowerBound)) __obj.updateDynamic("MetricIntervalLowerBound")(MetricIntervalLowerBound)
-    if (!js.isUndefined(MetricIntervalUpperBound)) __obj.updateDynamic("MetricIntervalUpperBound")(MetricIntervalUpperBound)
+    if (MetricIntervalLowerBound != null) __obj.updateDynamic("MetricIntervalLowerBound")(MetricIntervalLowerBound.asInstanceOf[js.Any])
+    if (MetricIntervalUpperBound != null) __obj.updateDynamic("MetricIntervalUpperBound")(MetricIntervalUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepAdjustment]
   }
 }

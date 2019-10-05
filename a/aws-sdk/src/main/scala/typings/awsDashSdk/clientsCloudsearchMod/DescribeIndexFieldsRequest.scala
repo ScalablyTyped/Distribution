@@ -23,7 +23,7 @@ object DescribeIndexFieldsRequest {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    Deployed: js.UndefOr[Boolean] = js.undefined,
+    Deployed: js.UndefOr[scala.Boolean] = js.undefined,
     FieldNames: DynamicFieldNameList = null
   ): DescribeIndexFieldsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)

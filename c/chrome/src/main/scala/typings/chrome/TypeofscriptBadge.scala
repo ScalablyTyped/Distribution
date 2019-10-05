@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.scriptBadgeNs.AttentionDetails
-import typings.chrome.chromeNs.scriptBadgeNs.GetPopupDetails
-import typings.chrome.chromeNs.scriptBadgeNs.ScriptBadgeClickedEvent
-import typings.chrome.chromeNs.scriptBadgeNs.SetPopupDetails
+import typings.chrome.chrome.scriptBadge.AttentionDetails
+import typings.chrome.chrome.scriptBadge.GetPopupDetails
+import typings.chrome.chrome.scriptBadge.ScriptBadgeClickedEvent
+import typings.chrome.chrome.scriptBadge.SetPopupDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

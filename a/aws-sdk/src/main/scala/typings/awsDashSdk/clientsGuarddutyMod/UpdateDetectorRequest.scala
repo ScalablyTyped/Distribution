@@ -23,7 +23,7 @@ object UpdateDetectorRequest {
   @scala.inline
   def apply(
     DetectorId: DetectorId,
-    Enable: js.UndefOr[Boolean] = js.undefined,
+    Enable: js.UndefOr[scala.Boolean] = js.undefined,
     FindingPublishingFrequency: FindingPublishingFrequency = null
   ): UpdateDetectorRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)

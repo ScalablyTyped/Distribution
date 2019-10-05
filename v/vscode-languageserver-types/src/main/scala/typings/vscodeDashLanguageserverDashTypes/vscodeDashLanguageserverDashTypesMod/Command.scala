@@ -20,12 +20,16 @@ trait Command extends js.Object {
   var title: String
 }
 
-object Command {
-  @scala.inline
-  def apply(command: String, title: String, arguments: js.Array[_] = null): Command = {
-    val __obj = js.Dynamic.literal(command = command, title = title)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    __obj.asInstanceOf[Command]
-  }
+@JSImport("vscode-languageserver-types", "Command")
+@js.native
+object Command extends js.Object {
+  /**
+    * Creates a new Command literal.
+    */
+  def create(title: String, command: String, args: js.Any*): Command = js.native
+  /**
+    * Checks whether the given literal conforms to the [Command](#Command) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = js.native
 }
 

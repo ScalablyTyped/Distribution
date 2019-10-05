@@ -10,3 +10,9 @@ class Directory () extends js.Object {
   var _directory: js.Any = js.native
 }
 
+@JSImport("mock-fs", "directory")
+@js.native
+object directory extends js.Object {
+  def apply(config: DirectoryConfig): Directory = js.native
+}
+

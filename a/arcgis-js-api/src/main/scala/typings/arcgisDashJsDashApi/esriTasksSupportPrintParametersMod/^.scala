@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportPrintParametersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PrintParametersConstructor
+import typings.arcgisDashJsDashApi.__esri.PrintParametersConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

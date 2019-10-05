@@ -98,50 +98,50 @@ trait JobRun extends js.Object {
 object JobRun {
   @scala.inline
   def apply(
-    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
+    AllocatedCapacity: Int | Double = null,
     Arguments: GenericMap = null,
-    Attempt: js.UndefOr[AttemptCount] = js.undefined,
+    Attempt: Int | Double = null,
     CompletedOn: TimestampValue = null,
     ErrorMessage: ErrorString = null,
-    ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined,
+    ExecutionTime: Int | Double = null,
     GlueVersion: GlueVersionString = null,
     Id: IdString = null,
     JobName: NameString = null,
     JobRunState: JobRunState = null,
     LastModifiedOn: TimestampValue = null,
     LogGroupName: GenericString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
+    MaxCapacity: Int | Double = null,
     NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
+    NumberOfWorkers: Int | Double = null,
     PredecessorRuns: PredecessorList = null,
     PreviousRunId: IdString = null,
     SecurityConfiguration: NameString = null,
     StartedOn: TimestampValue = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
+    Timeout: Int | Double = null,
     TriggerName: NameString = null,
     WorkerType: WorkerType = null
   ): JobRun = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity)
+    if (AllocatedCapacity != null) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.asInstanceOf[js.Any])
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
-    if (!js.isUndefined(Attempt)) __obj.updateDynamic("Attempt")(Attempt)
+    if (Attempt != null) __obj.updateDynamic("Attempt")(Attempt.asInstanceOf[js.Any])
     if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn)
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    if (!js.isUndefined(ExecutionTime)) __obj.updateDynamic("ExecutionTime")(ExecutionTime)
+    if (ExecutionTime != null) __obj.updateDynamic("ExecutionTime")(ExecutionTime.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (JobRunState != null) __obj.updateDynamic("JobRunState")(JobRunState.asInstanceOf[js.Any])
     if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn)
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName)
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
+    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty)
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers)
+    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
     if (PredecessorRuns != null) __obj.updateDynamic("PredecessorRuns")(PredecessorRuns)
     if (PreviousRunId != null) __obj.updateDynamic("PreviousRunId")(PreviousRunId)
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
     if (StartedOn != null) __obj.updateDynamic("StartedOn")(StartedOn)
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (TriggerName != null) __obj.updateDynamic("TriggerName")(TriggerName)
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobRun]

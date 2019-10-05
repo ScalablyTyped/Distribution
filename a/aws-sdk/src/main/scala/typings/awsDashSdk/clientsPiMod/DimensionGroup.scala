@@ -21,10 +21,10 @@ trait DimensionGroup extends js.Object {
 
 object DimensionGroup {
   @scala.inline
-  def apply(Group: String, Dimensions: StringList = null, Limit: js.UndefOr[Limit] = js.undefined): DimensionGroup = {
+  def apply(Group: String, Dimensions: StringList = null, Limit: Int | scala.Double = null): DimensionGroup = {
     val __obj = js.Dynamic.literal(Group = Group)
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionGroup]
   }
 }

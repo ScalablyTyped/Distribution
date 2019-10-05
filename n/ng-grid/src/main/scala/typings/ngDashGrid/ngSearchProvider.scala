@@ -1,9 +1,11 @@
 package typings.ngDashGrid
 
+import org.scalablytyped.runtime.TopLevel
 import typings.angular.angularMod.IFilterService
-import typings.ngDashGrid.ngGridNs.IGridInstance
-import typings.ngDashGrid.ngGridNs.IGridScope
-import typings.ngDashGrid.ngGridNs.ISearchProvider
+import typings.ngDashGrid.ngGrid.IGridInstance
+import typings.ngDashGrid.ngGrid.IGridScope
+import typings.ngDashGrid.ngGrid.ISearchProvider
+import typings.ngDashGrid.ngGrid.ISearchProviderStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +21,8 @@ class ngSearchProvider protected () extends ISearchProvider {
   /* CompleteClass */
   override def evalFilter(): Unit = js.native
 }
+
+@JSGlobal("ngSearchProvider")
+@js.native
+object ngSearchProvider extends TopLevel[ISearchProviderStatic]
 

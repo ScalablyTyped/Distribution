@@ -23,7 +23,7 @@ package object distTypesEnhancersMod {
   type BoxPropValue = js.UndefOr[String | Double | `false` | Null]
   type CssProps = (Pick[
     StandardProperties[String | `0`], 
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 132 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 132 */ js.Any
   ]) with (Pick[ObsoleteProperties[String | `0`], gridColumnGap | gridGap | gridRowGap])
   type EnhancerProps = BoxCssProps[CssProps] with Anon_Clearfix
   type PropAliases = StringDictionary[js.Array[String]]

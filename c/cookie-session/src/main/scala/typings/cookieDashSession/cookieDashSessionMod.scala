@@ -1,6 +1,6 @@
 package typings.cookieDashSession
 
-import typings.cookieDashSession.CookieSessionInterfacesNs.CookieSessionOptions
+import typings.cookieDashSession.CookieSessionInterfaces.CookieSessionOptions
 import typings.express.expressMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`

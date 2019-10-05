@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_BillingAddress
 import typings.braintreeDashWeb.Anon_ClientFields
 import scala.scalajs.js
@@ -265,4 +266,8 @@ trait HostedFields extends js.Object {
   def tokenize(options: Anon_BillingAddress): js.Promise[HostedFieldsTokenizePayload] = js.native
   def tokenize(options: Anon_BillingAddress, callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "hostedFields")
+@js.native
+object hostedFields extends TopLevel[HostedFields]
 

@@ -12,9 +12,5 @@ object ^ extends js.Object {
   var EMFILE_MAX: Double = js.native
   def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  def __promisify__(path: String): js.Promise[Unit] = js.native
-  def __promisify__(path: String, options: Options): js.Promise[Unit] = js.native
-  def sync(path: String): Unit = js.native
-  def sync(path: String, options: Options): Unit = js.native
 }
 

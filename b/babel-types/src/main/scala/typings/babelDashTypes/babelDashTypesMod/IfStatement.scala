@@ -38,3 +38,12 @@ object IfStatement {
   }
 }
 
+@JSImport("babel-types", "ifStatement")
+@js.native
+object ifStatement extends js.Object {
+  def apply(): IfStatement = js.native
+  def apply(test: Expression): IfStatement = js.native
+  def apply(test: Expression, consequent: Statement): IfStatement = js.native
+  def apply(test: Expression, consequent: Statement, alternate: Statement): IfStatement = js.native
+}
+

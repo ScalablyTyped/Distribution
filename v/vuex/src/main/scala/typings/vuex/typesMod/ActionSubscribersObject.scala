@@ -11,10 +11,10 @@ trait ActionSubscribersObject[P, S] extends js.Object {
 
 object ActionSubscribersObject {
   @scala.inline
-  def apply[P, S](after: ActionSubscriber[P, S] = null, before: ActionSubscriber[P, S] = null): ActionSubscribersObject[P, S] = {
+  def apply[P, S](after: (P, S) => js.Any = null, before: (P, S) => js.Any = null): ActionSubscribersObject[P, S] = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     __obj.asInstanceOf[ActionSubscribersObject[P, S]]
   }
 }

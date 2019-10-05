@@ -1,0 +1,19 @@
+package typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreateLineResponse extends js.Object {
+  var objectId: js.UndefOr[String] = js.undefined
+}
+
+object CreateLineResponse {
+  @scala.inline
+  def apply(objectId: String = null): CreateLineResponse = {
+    val __obj = js.Dynamic.literal()
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    __obj.asInstanceOf[CreateLineResponse]
+  }
+}
+

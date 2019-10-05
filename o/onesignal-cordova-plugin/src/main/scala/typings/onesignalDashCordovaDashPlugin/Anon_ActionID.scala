@@ -1,6 +1,6 @@
 package typings.onesignalDashCordovaDashPlugin
 
-import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPluginNs.OSActionType
+import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPlugin.OSActionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

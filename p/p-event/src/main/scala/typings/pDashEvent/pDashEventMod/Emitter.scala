@@ -16,20 +16,20 @@ trait Emitter[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[
 object Emitter {
   @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    addEventListener: AddRemoveListener[EventName, EmittedType] = null,
-    addListener: AddRemoveListener[EventName, EmittedType] = null,
-    off: AddRemoveListener[EventName, EmittedType] = null,
-    on: AddRemoveListener[EventName, EmittedType] = null,
-    removeEventListener: AddRemoveListener[EventName, EmittedType] = null,
-    removeListener: AddRemoveListener[EventName, EmittedType] = null
+    addEventListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
+    addListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
+    off: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
+    on: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
+    removeEventListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null,
+    removeListener: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit = null
   ): Emitter[EventName, EmittedType] = {
     val __obj = js.Dynamic.literal()
-    if (addEventListener != null) __obj.updateDynamic("addEventListener")(addEventListener)
-    if (addListener != null) __obj.updateDynamic("addListener")(addListener)
-    if (off != null) __obj.updateDynamic("off")(off)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (removeEventListener != null) __obj.updateDynamic("removeEventListener")(removeEventListener)
-    if (removeListener != null) __obj.updateDynamic("removeListener")(removeListener)
+    if (addEventListener != null) __obj.updateDynamic("addEventListener")(js.Any.fromFunction2(addEventListener))
+    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener))
+    if (off != null) __obj.updateDynamic("off")(js.Any.fromFunction2(off))
+    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction2(on))
+    if (removeEventListener != null) __obj.updateDynamic("removeEventListener")(js.Any.fromFunction2(removeEventListener))
+    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction2(removeListener))
     __obj.asInstanceOf[Emitter[EventName, EmittedType]]
   }
 }

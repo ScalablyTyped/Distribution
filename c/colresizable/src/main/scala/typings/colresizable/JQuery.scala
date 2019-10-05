@@ -1,6 +1,6 @@
 package typings.colresizable
 
-import typings.colresizable.colResizableNs.Settings
+import typings.colresizable.colResizable.Settings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

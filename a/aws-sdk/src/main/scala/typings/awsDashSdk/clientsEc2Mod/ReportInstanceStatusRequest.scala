@@ -42,7 +42,7 @@ object ReportInstanceStatusRequest {
     ReasonCodes: ReasonCodesList,
     Status: ReportStatusType,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EndTime: DateTime = null,
     StartTime: DateTime = null
   ): ReportInstanceStatusRequest = {

@@ -48,7 +48,7 @@ object TrainingSpecification {
     MetricDefinitions: MetricDefinitionList = null,
     SupportedHyperParameters: HyperParameterSpecifications = null,
     SupportedTuningJobObjectiveMetrics: HyperParameterTuningJobObjectives = null,
-    SupportsDistributedTraining: js.UndefOr[Boolean] = js.undefined,
+    SupportsDistributedTraining: js.UndefOr[scala.Boolean] = js.undefined,
     TrainingImageDigest: ImageDigest = null
   ): TrainingSpecification = {
     val __obj = js.Dynamic.literal(SupportedTrainingInstanceTypes = SupportedTrainingInstanceTypes, TrainingChannels = TrainingChannels, TrainingImage = TrainingImage)

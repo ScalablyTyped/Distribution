@@ -1,6 +1,6 @@
 package typings.dav.davMod
 
-import typings.dav.davMod.transportNs.Transport
+import typings.dav.davMod.transport.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

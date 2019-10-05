@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.userScriptsNs.RegisteredUserScript
-import typings.firefoxDashWebextDashBrowser.browserNs.userScriptsNs.UserScriptOptions
+import typings.firefoxDashWebextDashBrowser.browser.userScripts.RegisteredUserScript
+import typings.firefoxDashWebextDashBrowser.browser.userScripts.UserScriptOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

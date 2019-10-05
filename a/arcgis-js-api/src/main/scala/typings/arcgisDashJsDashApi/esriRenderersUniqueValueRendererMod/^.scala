@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersUniqueValueRendererMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UniqueValueRendererConstructor
+import typings.arcgisDashJsDashApi.__esri.UniqueValueRendererConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

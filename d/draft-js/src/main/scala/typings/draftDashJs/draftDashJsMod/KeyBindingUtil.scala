@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "KeyBindingUtil")
 @js.native
 class KeyBindingUtil ()
-  extends typings.draftDashJs.draftDashJsMod.DraftNs.ComponentNs.UtilsNs.KeyBindingUtil
+  extends typings.draftDashJs.draftDashJsMod.Draft.Component.Utils.KeyBindingUtil
 
 /* static members */
 @JSImport("draft-js", "KeyBindingUtil")

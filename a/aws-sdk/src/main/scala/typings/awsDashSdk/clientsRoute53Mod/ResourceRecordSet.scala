@@ -68,13 +68,13 @@ object ResourceRecordSet {
     Failover: ResourceRecordSetFailover = null,
     GeoLocation: GeoLocation = null,
     HealthCheckId: HealthCheckId = null,
-    MultiValueAnswer: js.UndefOr[ResourceRecordSetMultiValueAnswer] = js.undefined,
+    MultiValueAnswer: js.UndefOr[Boolean] = js.undefined,
     Region: ResourceRecordSetRegion = null,
     ResourceRecords: ResourceRecords = null,
     SetIdentifier: ResourceRecordSetIdentifier = null,
-    TTL: js.UndefOr[TTL] = js.undefined,
+    TTL: Int | Double = null,
     TrafficPolicyInstanceId: TrafficPolicyInstanceId = null,
-    Weight: js.UndefOr[ResourceRecordSetWeight] = js.undefined
+    Weight: Int | Double = null
   ): ResourceRecordSet = {
     val __obj = js.Dynamic.literal(Name = Name, Type = Type.asInstanceOf[js.Any])
     if (AliasTarget != null) __obj.updateDynamic("AliasTarget")(AliasTarget)
@@ -85,9 +85,9 @@ object ResourceRecordSet {
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (ResourceRecords != null) __obj.updateDynamic("ResourceRecords")(ResourceRecords)
     if (SetIdentifier != null) __obj.updateDynamic("SetIdentifier")(SetIdentifier)
-    if (!js.isUndefined(TTL)) __obj.updateDynamic("TTL")(TTL)
+    if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
     if (TrafficPolicyInstanceId != null) __obj.updateDynamic("TrafficPolicyInstanceId")(TrafficPolicyInstanceId)
-    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight)
+    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRecordSet]
   }
 }

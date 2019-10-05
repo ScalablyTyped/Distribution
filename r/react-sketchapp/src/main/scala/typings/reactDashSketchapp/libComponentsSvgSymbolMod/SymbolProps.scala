@@ -15,12 +15,13 @@ trait SymbolProps extends js.Object {
 object SymbolProps {
   @scala.inline
   def apply(
-    children: js.Array[ReactNode] | ReactNode,
     id: String,
+    children: js.Array[ReactNode] | ReactNode = null,
     preserveAspectRatio: String = null,
     viewBox: String = null
   ): SymbolProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id)
+    val __obj = js.Dynamic.literal(id = id)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
     __obj.asInstanceOf[SymbolProps]

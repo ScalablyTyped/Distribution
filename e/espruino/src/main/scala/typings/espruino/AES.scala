@@ -1,6 +1,7 @@
 package typings.espruino
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,30 @@ trait AES extends /**
   * @return  
   */
 Instantiable0[AES]
+
+/**
+* 
+*/
+@JSGlobal("AES")
+@js.native
+object AES extends js.Object {
+  /**
+    * 
+    * @param passphrase 
+    * @param key 
+    * @param options 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_AES_decrypt
+    */
+  def decrypt(passphrase: js.Any, key: js.Any, options: js.Any): ArrayBuffer = js.native
+  /**
+    * 
+    * @param passphrase 
+    * @param key 
+    * @param options 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_AES_encrypt
+    */
+  def encrypt(passphrase: js.Any, key: js.Any, options: js.Any): ArrayBuffer = js.native
+}
 

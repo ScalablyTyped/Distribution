@@ -19,10 +19,10 @@ class ResourceQuota protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceQuota) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.core.v1.ResourceQuota) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.coreNs.v1Ns.ResourceQuota,
+    args: typings.atPulumiKubernetes.typesInputMod.core.v1.ResourceQuota,
     opts: CustomResourceOptions
   ) = this()
 }

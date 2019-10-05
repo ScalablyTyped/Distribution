@@ -2,6 +2,7 @@ package typings.egg.eggMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
+import typings.eggDashCookies.eggDashCookiesMod.^
 import typings.eggDashCore.eggDashCoreMod.EggCoreBase
 import typings.eggDashCore.eggDashCoreMod.EggCoreOptions
 import typings.eggDashLogger.eggDashLoggerMod.EggContextLogger
@@ -16,13 +17,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("egg", "EggApplication")
 @js.native
-class EggApplication ()
-  extends EggCoreBase[typings.eggDashView.eggMod.EggAppConfig] {
+class EggApplication () extends EggCoreBase[EggAppConfig] {
   def this(options: EggCoreOptions) = this()
   /**
     * export context base classes, let framework can impl sub class and over context extend easily.
     */
-  var ContextCookies: Instantiable0[typings.eggDashCookies.eggDashCookiesMod.^] = js.native
+  var ContextCookies: Instantiable0[^] = js.native
   var ContextHttpClient: EggContextHttpClientConstructor = js.native
   var ContextLogger: Instantiable2[/* ctx */ js.Any, /* logger */ Logger[LoggerOptions], EggContextLogger] = js.native
   var Controller: Instantiable0[typings.egg.eggMod.Controller] = js.native
@@ -73,8 +73,8 @@ class EggApplication ()
     * @param {Request} req - if you want to mock request like querystring, you can pass an object to this function.
     * @return {Context} context
     */
-  def createAnonymousContext(): typings.eggDashView.eggMod.Context = js.native
-  def createAnonymousContext(req: typings.std.Request): typings.eggDashView.eggMod.Context = js.native
+  def createAnonymousContext(): Context = js.native
+  def createAnonymousContext(req: Request): Context = js.native
   /**
     * http request helper base on httpclient, it will auto save httpclient log.
     * Keep the same api with httpclient.request(url, args).

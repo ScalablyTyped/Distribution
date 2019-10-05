@@ -28,14 +28,14 @@ object Part {
   def apply(
     ETag: ETag = null,
     LastModified: LastModified = null,
-    PartNumber: js.UndefOr[PartNumber] = js.undefined,
-    Size: js.UndefOr[Size] = js.undefined
+    PartNumber: Int | Double = null,
+    Size: Int | Double = null
   ): Part = {
     val __obj = js.Dynamic.literal()
     if (ETag != null) __obj.updateDynamic("ETag")(ETag)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Part]
   }
 }

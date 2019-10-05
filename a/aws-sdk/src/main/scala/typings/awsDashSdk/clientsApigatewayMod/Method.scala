@@ -54,7 +54,7 @@ trait Method extends js.Object {
 object Method {
   @scala.inline
   def apply(
-    apiKeyRequired: js.UndefOr[NullableBoolean] = js.undefined,
+    apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined,
     authorizationScopes: ListOfString = null,
     authorizationType: String = null,
     authorizerId: String = null,

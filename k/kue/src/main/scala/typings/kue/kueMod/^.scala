@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var app: Application = js.native
   var workers: js.Array[Worker] = js.native
-  def createQueue(): Queue = js.native
-  def createQueue(options: js.Object): Queue = js.native
 }
 

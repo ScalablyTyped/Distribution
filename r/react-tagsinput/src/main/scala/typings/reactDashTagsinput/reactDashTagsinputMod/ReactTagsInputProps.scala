@@ -3,6 +3,8 @@ package typings.reactDashTagsinput.reactDashTagsinputMod
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.Props
+import typings.react.reactMod.ReactChild
+import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.reactDashTagsinput.Tag
 import typings.std.RegExp
@@ -62,7 +64,7 @@ object ReactTagsInputProps {
     ref: LegacyRef[TagsInput] = null,
     removeKeys: js.Array[Double] = null,
     renderInput: /* props */ RenderInputProps => ReactNode = null,
-    renderLayout: RenderLayout = null,
+    renderLayout: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild = null,
     renderTag: /* props */ RenderTagProps => ReactNode = null,
     tagDisplayProp: String = null,
     tagProps: TagProps = null,
@@ -89,7 +91,7 @@ object ReactTagsInputProps {
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeKeys != null) __obj.updateDynamic("removeKeys")(removeKeys)
     if (renderInput != null) __obj.updateDynamic("renderInput")(js.Any.fromFunction1(renderInput))
-    if (renderLayout != null) __obj.updateDynamic("renderLayout")(renderLayout)
+    if (renderLayout != null) __obj.updateDynamic("renderLayout")(js.Any.fromFunction2(renderLayout))
     if (renderTag != null) __obj.updateDynamic("renderTag")(js.Any.fromFunction1(renderTag))
     if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp)
     if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps)

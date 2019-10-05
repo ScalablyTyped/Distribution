@@ -1,6 +1,6 @@
 package typings.chartmogulDashNode
 
-import typings.chartmogulDashNode.chartmogulDashNodeMod.InvoiceNs.Invoice
+import typings.chartmogulDashNode.chartmogulDashNodeMod.Invoice.Invoice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

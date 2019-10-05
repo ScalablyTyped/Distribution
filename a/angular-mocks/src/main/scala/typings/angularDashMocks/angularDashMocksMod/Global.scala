@@ -2,7 +2,7 @@ package typings.angularDashMocks.angularDashMocksMod
 
 import typings.angular.JQuery
 import typings.angularDashMocks.angularDashMocksMod.angularMod.IInjectStatic
-import typings.angularDashMocks.angularDashMocksMod.angularMod.mockNs.IBrowserTriggerEventData
+import typings.angularDashMocks.angularDashMocksMod.angularMod.mock.IBrowserTriggerEventData
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,8 @@
 package typings.reactDashVirtualized
 
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndices
 import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetter
+import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetterParams
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`-1`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`10`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`30`
@@ -30,12 +32,12 @@ object Anon_1 {
     noRowsRenderer: () => Null,
     onRowsRendered: () => Unit,
     onScroll: () => Unit,
-    overscanIndicesGetter: OverscanIndicesGetter,
+    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices,
     overscanRowCount: `10`,
     scrollToAlignment: auto,
     scrollToIndex: `-1`
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, estimatedRowSize = estimatedRowSize, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = overscanIndicesGetter, overscanRowCount = overscanRowCount, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight, estimatedRowSize = estimatedRowSize, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
   
     __obj.asInstanceOf[Anon_1]
   }

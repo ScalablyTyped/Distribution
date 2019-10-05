@@ -35,7 +35,7 @@ object ITextFilterParams {
     defaultOption: String = null,
     filterOptions: js.Array[String] = null,
     newRowsAction: String = null,
-    textCustomComparator: TextComparator = null,
+    textCustomComparator: (/* filter */ String, /* gridValue */ js.Any, /* filterText */ String) => Boolean = null,
     textFormatter: /* from */ String => String = null
   ): ITextFilterParams = {
     val __obj = js.Dynamic.literal($scope = $scope, colDef = colDef, column = column, context = context, doesRowPassOtherFilter = js.Any.fromFunction1(doesRowPassOtherFilter), filterChangedCallback = js.Any.fromFunction0(filterChangedCallback), filterModifiedCallback = js.Any.fromFunction0(filterModifiedCallback), rowModel = rowModel, suppressAndOrCondition = suppressAndOrCondition, valueGetter = js.Any.fromFunction1(valueGetter))
@@ -46,7 +46,7 @@ object ITextFilterParams {
     if (defaultOption != null) __obj.updateDynamic("defaultOption")(defaultOption)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
     if (newRowsAction != null) __obj.updateDynamic("newRowsAction")(newRowsAction)
-    if (textCustomComparator != null) __obj.updateDynamic("textCustomComparator")(textCustomComparator)
+    if (textCustomComparator != null) __obj.updateDynamic("textCustomComparator")(js.Any.fromFunction3(textCustomComparator))
     if (textFormatter != null) __obj.updateDynamic("textFormatter")(js.Any.fromFunction1(textFormatter))
     __obj.asInstanceOf[ITextFilterParams]
   }

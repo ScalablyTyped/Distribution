@@ -87,18 +87,18 @@ object CreateLayerRequest {
     StackId: String,
     Type: LayerType,
     Attributes: LayerAttributes = null,
-    AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined,
-    AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined,
+    AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined,
     CloudWatchLogsConfiguration: CloudWatchLogsConfiguration = null,
     CustomInstanceProfileArn: String = null,
     CustomJson: String = null,
     CustomRecipes: Recipes = null,
     CustomSecurityGroupIds: Strings = null,
-    EnableAutoHealing: js.UndefOr[Boolean] = js.undefined,
-    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
+    EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined,
+    InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined,
     LifecycleEventConfiguration: LifecycleEventConfiguration = null,
     Packages: Strings = null,
-    UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined,
+    UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined,
     VolumeConfigurations: VolumeConfigurations = null
   ): CreateLayerRequest = {
     val __obj = js.Dynamic.literal(Name = Name, Shortname = Shortname, StackId = StackId, Type = Type.asInstanceOf[js.Any])

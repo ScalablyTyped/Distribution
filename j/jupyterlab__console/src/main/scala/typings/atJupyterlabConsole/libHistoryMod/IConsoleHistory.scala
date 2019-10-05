@@ -1,7 +1,7 @@
 package typings.atJupyterlabConsole.libHistoryMod
 
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.IEditor
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

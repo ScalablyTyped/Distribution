@@ -4,7 +4,7 @@
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(falcor-router) [id => falcor-router, phase => typescript] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(FalcorRouter), TsIdentSimple(CreatedRouter))) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(FalcorRouter), TsIdentSimple(CreatedRouter))) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:134 Couldn't resolve typeof FalcorRouter.CreatedRouter [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:202 Couldn't resolve typeof FalcorRouter.CreatedRouter [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(FalcorRouter) / TsMemberFunction(createClass) / TsFunSig() / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclClass(CreatedRouter))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(call) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclInterface(CallRoute))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(get) [id => falcor-router, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(falcor-router) / TsDeclInterface(GetRoute))] 
@@ -16,45 +16,34 @@
 [warn ] Phase2ToScalaJs.scala:43 Processing falcor-router [id => falcor-router, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => falcor-router, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building falcor-router... [id => falcor-router, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E9] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:17:86
+[error] Phase3Compile.scala:240 [E] [E6] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:17:86
 [E]      not found: type Observable
 [E]      L17:   def apply(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): SetRoute = {
 [E]                                                                                                ^
-[E] [E8] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:12:74
+[E] [E5] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:12:74
 [E]      not found: type Observable
 [E]      L12:   def set(jsonGraph: JSONGraph): RouteResult | js.Promise[RouteResult] | Observable[RouteResult]
 [E]                                                                                    ^
-[E] [E7] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala:4:8
-[E]      object Observable is not a member of package typings.rx.rxMod
-[E]      L4: import typings.rx.rxMod.Observable
-[E]          ^^^^^^^
-[E] [E6] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala:17:66
+[E] [E4] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala:17:66
 [E]      not found: type Observable
 [E]      L17:     get: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult],
 [E]                                                                            ^
-[E] [E5] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala:11:75
+[E] [E3] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala:11:75
 [E]      not found: type Observable
 [E]      L11:   def get(pathset: RoutePathSet): RouteResult | js.Promise[RouteResult] | Observable[RouteResult]
 [E]                                                                                     ^
-[E] [E4] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala:3:8
-[E]      object Observable is not a member of package typings.rx.rxMod
-[E]      L3: import typings.rx.rxMod.Observable
-[E]          ^^^^^^^
-[E] [E3] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala:17:90
+[E] [E2] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala:17:90
 [E]      not found: type Observable
 [E]      L17:     call: (RoutePathSet, js.Array[_]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
 [E]                                                                                                    ^
-[E] [E2] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala:11:104
+[E] [E1] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala:11:104
 [E]      not found: type Observable
 [E]      L11:   def call(callPath: RoutePathSet, args: js.Array[_]): CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
 [E]                                                                                                                  ^
-[E] [E1] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala:3:8
-[E]      object Observable is not a member of package typings.rx.rxMod
-[E]      L3: import typings.rx.rxMod.Observable
-[E]          ^^^^^^^
-[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala: L3 [E4], L11 [E5], L17 [E6]
-[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala: L3 [E1], L11 [E2], L17 [E3]
-[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala: L4 [E7], L12 [E8], L17 [E9]
+[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/GetRoute.scala: L11 [E3], L17 [E4]
+[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/CallRoute.scala: L11 [E1], L17 [E2]
+[E] src/main/scala/typings/falcorDashRouter/falcorDashRouterMod/SetRoute.scala: L12 [E5], L17 [E6]
 [E] Failed to compile 'falcor-router'
  [id => falcor-router, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [falcor-router => Compilation failed] [id => falcor-router, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [falcor-router => Compilation failed] [id => falcor-router, phase => publish] 

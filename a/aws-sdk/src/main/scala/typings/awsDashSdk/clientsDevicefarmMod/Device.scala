@@ -101,19 +101,19 @@ object Device {
     fleetName: String = null,
     fleetType: String = null,
     formFactor: DeviceFormFactor = null,
-    heapSize: js.UndefOr[Long] = js.undefined,
+    heapSize: Int | scala.Double = null,
     image: String = null,
     instances: DeviceInstances = null,
     manufacturer: String = null,
-    memory: js.UndefOr[Long] = js.undefined,
+    memory: Int | scala.Double = null,
     model: String = null,
     modelId: String = null,
     name: Name = null,
     os: String = null,
     platform: DevicePlatform = null,
     radio: String = null,
-    remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined,
-    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
+    remoteAccessEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     resolution: Resolution = null
   ): Device = {
     val __obj = js.Dynamic.literal()
@@ -124,11 +124,11 @@ object Device {
     if (fleetName != null) __obj.updateDynamic("fleetName")(fleetName)
     if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType)
     if (formFactor != null) __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(heapSize)) __obj.updateDynamic("heapSize")(heapSize)
+    if (heapSize != null) __obj.updateDynamic("heapSize")(heapSize.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)
     if (instances != null) __obj.updateDynamic("instances")(instances)
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory)
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model)
     if (modelId != null) __obj.updateDynamic("modelId")(modelId)
     if (name != null) __obj.updateDynamic("name")(name)

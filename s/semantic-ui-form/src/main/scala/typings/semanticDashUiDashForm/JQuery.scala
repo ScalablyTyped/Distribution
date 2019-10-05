@@ -1,10 +1,10 @@
 package typings.semanticDashUiDashForm
 
-import typings.semanticDashUiDashForm.SemanticUINs.Form
-import typings.semanticDashUiDashForm.SemanticUINs.FormNs.Fields
-import typings.semanticDashUiDashForm.SemanticUINs.FormNs.Rule
-import typings.semanticDashUiDashForm.SemanticUINs.FormNs.Rules
-import typings.semanticDashUiDashForm.SemanticUINs.FormSettings
+import typings.semanticDashUiDashForm.SemanticUI.Form
+import typings.semanticDashUiDashForm.SemanticUI.Form.Fields
+import typings.semanticDashUiDashForm.SemanticUI.Form.Rule
+import typings.semanticDashUiDashForm.SemanticUI.Form.Rules
+import typings.semanticDashUiDashForm.SemanticUI.FormSettings
 import typings.semanticDashUiDashForm.semanticDashUiDashFormStrings.`add errors`
 import typings.semanticDashUiDashForm.semanticDashUiDashFormStrings.`add field`
 import typings.semanticDashUiDashForm.semanticDashUiDashFormStrings.`add fields`

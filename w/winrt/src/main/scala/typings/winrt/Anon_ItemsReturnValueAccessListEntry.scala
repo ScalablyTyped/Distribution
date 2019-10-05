@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.StorageNs.AccessCacheNs.AccessListEntry
+import typings.winrt.Windows.Storage.AccessCache.AccessListEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -62,7 +62,6 @@ object Cell {
     result: Double | String | Date,
     style: Style,
     `type`: ValueType,
-    value: CellValue,
     alignment: Alignment = null,
     border: Borders = null,
     dataValidation: DataValidation = null,
@@ -71,9 +70,10 @@ object Cell {
     master: Cell = null,
     name: String = null,
     names: js.Array[String] = null,
-    numFmt: String = null
+    numFmt: String = null,
+    value: CellValue = null
   ): Cell = {
-    val __obj = js.Dynamic.literal(formula = formula, formulaType = formulaType, removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], style = style, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula = formula, formulaType = formulaType, removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], style = style)
     __obj.updateDynamic("type")(`type`)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
     if (border != null) __obj.updateDynamic("border")(border)
@@ -84,6 +84,7 @@ object Cell {
     if (name != null) __obj.updateDynamic("name")(name)
     if (names != null) __obj.updateDynamic("names")(names)
     if (numFmt != null) __obj.updateDynamic("numFmt")(numFmt)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell]
   }
 }

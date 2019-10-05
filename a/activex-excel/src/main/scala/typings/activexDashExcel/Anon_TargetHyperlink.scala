@@ -1,6 +1,6 @@
 package typings.activexDashExcel
 
-import typings.activexDashExcel.ExcelNs.Hyperlink
+import typings.activexDashExcel.Excel.Hyperlink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

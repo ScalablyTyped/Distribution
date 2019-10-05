@@ -142,3 +142,9 @@ trait Line[Datum] extends js.Object {
   def y(y: Double): this.type = js.native
 }
 
+@JSImport("d3-shape", "line")
+@js.native
+object line extends js.Object {
+  def apply(): Line[js.Tuple2[Double, Double]] = js.native
+}
+

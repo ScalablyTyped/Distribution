@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionExpressionSyntax")
 @js.native
 class FunctionExpressionSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionExpressionSyntax {
+  extends typings.typescriptDashServices.TypeScript.FunctionExpressionSyntax {
   def this(
     functionKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -24,9 +24,9 @@ class FunctionExpressionSyntax protected ()
 object FunctionExpressionSyntax extends js.Object {
   def create(
     functionKeyword: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.FunctionExpressionSyntax = js.native
-  def create1(): typings.typescriptDashServices.TypeScriptNs.FunctionExpressionSyntax = js.native
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax
+  ): typings.typescriptDashServices.TypeScript.FunctionExpressionSyntax = js.native
+  def create1(): typings.typescriptDashServices.TypeScript.FunctionExpressionSyntax = js.native
 }
 

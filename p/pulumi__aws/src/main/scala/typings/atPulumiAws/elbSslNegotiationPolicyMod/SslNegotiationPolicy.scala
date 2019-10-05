@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elbSslNegotiationPolicyMod
 
-import typings.atPulumiAws.typesOutputMod.elbNs.SslNegotiationPolicyAttribute
+import typings.atPulumiAws.typesOutputMod.elb.SslNegotiationPolicyAttribute
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

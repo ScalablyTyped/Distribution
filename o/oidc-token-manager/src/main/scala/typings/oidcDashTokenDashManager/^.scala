@@ -1,7 +1,7 @@
 package typings.oidcDashTokenDashManager
 
-import typings.oidcDashTokenDashManager.OidcNs.OidcClient_Static
-import typings.oidcDashTokenDashManager.OidcNs.OidcTokenManager_Static
+import typings.oidcDashTokenDashManager.Oidc.OidcClient_Static
+import typings.oidcDashTokenDashManager.Oidc.OidcTokenManager_Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

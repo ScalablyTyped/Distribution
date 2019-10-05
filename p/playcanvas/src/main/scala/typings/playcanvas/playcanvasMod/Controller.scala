@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Controller")
 @js.native
 class Controller ()
-  extends typings.playcanvas.pcNs.Controller {
+  extends typings.playcanvas.pc.Controller {
   def this(element: Element) = this()
   def this(element: Element, options: Anon_Gamepads) = this()
 }

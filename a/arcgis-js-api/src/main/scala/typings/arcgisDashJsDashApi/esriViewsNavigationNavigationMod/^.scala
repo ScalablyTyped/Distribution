@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsNavigationNavigationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NavigationConstructor
+import typings.arcgisDashJsDashApi.__esri.NavigationConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

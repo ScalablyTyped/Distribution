@@ -13,16 +13,5 @@ trait MSStream extends js.Object {
 
 @JSGlobal("MSStream")
 @js.native
-class MSStreamCls () extends MSStream {
-  /* CompleteClass */
-  override val `type`: java.lang.String = js.native
-  /* CompleteClass */
-  override def msClose(): Unit = js.native
-  /* CompleteClass */
-  override def msDetachStream(): js.Any = js.native
-}
-
-@JSGlobal("MSStream")
-@js.native
 object MSStream extends Instantiable0[MSStream]
 

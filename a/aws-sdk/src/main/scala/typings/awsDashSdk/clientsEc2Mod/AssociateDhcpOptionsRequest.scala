@@ -21,7 +21,7 @@ trait AssociateDhcpOptionsRequest extends js.Object {
 
 object AssociateDhcpOptionsRequest {
   @scala.inline
-  def apply(DhcpOptionsId: String, VpcId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AssociateDhcpOptionsRequest = {
+  def apply(DhcpOptionsId: String, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): AssociateDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpOptionsId = DhcpOptionsId, VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AssociateDhcpOptionsRequest]

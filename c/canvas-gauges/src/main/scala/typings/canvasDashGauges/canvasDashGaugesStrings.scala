@@ -1,7 +1,7 @@
 package typings.canvasDashGauges
 
-import typings.canvasDashGauges.CanvasGaugesNs.FontStyle
-import typings.canvasDashGauges.CanvasGaugesNs.FontWeight
+import typings.canvasDashGauges.CanvasGauges.FontStyle
+import typings.canvasDashGauges.CanvasGauges.FontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

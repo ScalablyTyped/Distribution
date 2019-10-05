@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupContentTextContentMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TextContent
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TextContentProperties
+import typings.arcgisDashJsDashApi.__esri.TextContent
+import typings.arcgisDashJsDashApi.__esri.TextContentProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

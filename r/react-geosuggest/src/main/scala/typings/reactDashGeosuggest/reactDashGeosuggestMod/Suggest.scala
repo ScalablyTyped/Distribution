@@ -1,6 +1,6 @@
 package typings.reactDashGeosuggest.reactDashGeosuggestMod
 
-import typings.googlemaps.googleNs.mapsNs.GeocoderResult
+import typings.googlemaps.google.maps.GeocoderResult
 import typings.reactDashGeosuggest.Anon_Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`

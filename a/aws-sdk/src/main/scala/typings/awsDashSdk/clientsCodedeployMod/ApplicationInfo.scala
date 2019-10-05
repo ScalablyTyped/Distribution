@@ -39,7 +39,7 @@ object ApplicationInfo {
     computePlatform: ComputePlatform = null,
     createTime: Timestamp = null,
     gitHubAccountName: GitHubAccountTokenName = null,
-    linkedToGitHub: js.UndefOr[Boolean] = js.undefined
+    linkedToGitHub: js.UndefOr[scala.Boolean] = js.undefined
   ): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
     if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)

@@ -24,12 +24,12 @@ object Condition {
     condition: Literal | Variable,
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Condition,
     loc: Location,
-    metadata: Metadata,
     passingValue: Boolean,
-    selections: js.Array[Selection]
+    selections: js.Array[Selection],
+    metadata: Metadata = null
   ): Condition = {
-    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], passingValue = passingValue, selections = selections)
-  
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind, loc = loc, passingValue = passingValue, selections = selections)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
 }

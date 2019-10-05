@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object checkMod extends js.Object {
   def check(value: js.Any, pattern: js.Any): Unit = js.native
-  @JSName("Match")
   @js.native
-  object MatchNs extends js.Object {
+  object Match extends js.Object {
     var Any: js.Any = js.native
     var Boolean: js.Any = js.native
     var Integer: js.Any = js.native

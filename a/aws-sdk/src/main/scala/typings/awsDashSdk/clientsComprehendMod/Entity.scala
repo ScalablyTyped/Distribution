@@ -30,16 +30,16 @@ trait Entity extends js.Object {
 object Entity {
   @scala.inline
   def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    Score: js.UndefOr[Float] = js.undefined,
+    BeginOffset: Int | scala.Double = null,
+    EndOffset: Int | scala.Double = null,
+    Score: Int | scala.Double = null,
     Text: String = null,
     Type: EntityType = null
   ): Entity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset)
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset)
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score)
+    if (BeginOffset != null) __obj.updateDynamic("BeginOffset")(BeginOffset.asInstanceOf[js.Any])
+    if (EndOffset != null) __obj.updateDynamic("EndOffset")(EndOffset.asInstanceOf[js.Any])
+    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]

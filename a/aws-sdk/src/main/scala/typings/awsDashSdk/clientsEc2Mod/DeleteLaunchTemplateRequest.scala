@@ -22,7 +22,7 @@ trait DeleteLaunchTemplateRequest extends js.Object {
 object DeleteLaunchTemplateRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LaunchTemplateId: String = null,
     LaunchTemplateName: LaunchTemplateName = null
   ): DeleteLaunchTemplateRequest = {

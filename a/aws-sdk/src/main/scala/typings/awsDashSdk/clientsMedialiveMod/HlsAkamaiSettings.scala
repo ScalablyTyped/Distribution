@@ -38,20 +38,20 @@ trait HlsAkamaiSettings extends js.Object {
 object HlsAkamaiSettings {
   @scala.inline
   def apply(
-    ConnectionRetryInterval: js.UndefOr[__integerMin0] = js.undefined,
-    FilecacheDuration: js.UndefOr[__integerMin0Max600] = js.undefined,
+    ConnectionRetryInterval: Int | Double = null,
+    FilecacheDuration: Int | Double = null,
     HttpTransferMode: HlsAkamaiHttpTransferMode = null,
-    NumRetries: js.UndefOr[__integerMin0] = js.undefined,
-    RestartDelay: js.UndefOr[__integerMin0Max15] = js.undefined,
+    NumRetries: Int | Double = null,
+    RestartDelay: Int | Double = null,
     Salt: __string = null,
     Token: __string = null
   ): HlsAkamaiSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval)
-    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration)
+    if (ConnectionRetryInterval != null) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.asInstanceOf[js.Any])
+    if (FilecacheDuration != null) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.asInstanceOf[js.Any])
     if (HttpTransferMode != null) __obj.updateDynamic("HttpTransferMode")(HttpTransferMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries)
-    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay)
+    if (NumRetries != null) __obj.updateDynamic("NumRetries")(NumRetries.asInstanceOf[js.Any])
+    if (RestartDelay != null) __obj.updateDynamic("RestartDelay")(RestartDelay.asInstanceOf[js.Any])
     if (Salt != null) __obj.updateDynamic("Salt")(Salt)
     if (Token != null) __obj.updateDynamic("Token")(Token)
     __obj.asInstanceOf[HlsAkamaiSettings]

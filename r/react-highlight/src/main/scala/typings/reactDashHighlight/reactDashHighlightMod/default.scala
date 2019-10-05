@@ -1,6 +1,8 @@
 package typings.reactDashHighlight.reactDashHighlightMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +15,11 @@ class default protected ()
   def this(props: HighlightProps) = this()
   def this(props: HighlightProps, context: js.Any) = this()
 }
+
+/**
+  * Visually prettifies child code with highlight.js.
+  */
+@JSImport("react-highlight", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentClass[HighlightProps, ComponentState]]
 

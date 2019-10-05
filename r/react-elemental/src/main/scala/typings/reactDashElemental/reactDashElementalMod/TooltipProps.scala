@@ -21,17 +21,18 @@ trait TooltipProps extends js.Object {
 object TooltipProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     contents: ReactElement,
     bottom: js.UndefOr[Boolean] = js.undefined,
+    children: ReactNode = null,
     offset: Int | Double = null,
     persistent: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     top: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], contents = contents)
+    val __obj = js.Dynamic.literal(contents = contents)
     if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
     if (style != null) __obj.updateDynamic("style")(style)

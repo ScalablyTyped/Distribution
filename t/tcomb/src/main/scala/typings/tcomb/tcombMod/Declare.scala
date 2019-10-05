@@ -15,3 +15,10 @@ trait Declare[T] extends Type[T] {
   def update(instance: T, spec: UpdatePatch): T = js.native
 }
 
+@JSImport("tcomb", "declare")
+@js.native
+object declare extends js.Object {
+  def apply[T](): Declare[T] = js.native
+  def apply[T](name: String): Declare[T] = js.native
+}
+

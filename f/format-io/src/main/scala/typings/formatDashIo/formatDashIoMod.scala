@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 object formatDashIoMod extends js.Object {
   def addSlashToEnd(path: String): String = js.native
   def size(size: Double): String = js.native
-  @JSName("permissions")
   @js.native
-  object permissionsNs extends js.Object {
+  object permissions extends js.Object {
     /**
       * Converts Unix-like permissions from symbolic to numeric notation.
       * @param perm A string of Unix-like permission in symbolic notation.

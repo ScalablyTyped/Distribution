@@ -31,13 +31,9 @@ trait ListVirtualRoutersInput extends js.Object {
 
 object ListVirtualRoutersInput {
   @scala.inline
-  def apply(
-    meshName: ResourceName,
-    limit: js.UndefOr[ListVirtualRoutersLimit] = js.undefined,
-    nextToken: String = null
-  ): ListVirtualRoutersInput = {
+  def apply(meshName: ResourceName, limit: Int | Double = null, nextToken: String = null): ListVirtualRoutersInput = {
     val __obj = js.Dynamic.literal(meshName = meshName)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListVirtualRoutersInput]
   }

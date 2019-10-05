@@ -18,14 +18,14 @@ trait reactDashNativeDashSvgDashChartsProps {
   def BarChartProps: typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChartProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChartProps
   type BarChartProps[T] = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.BarChartProps[T]
   @scala.inline
-  def DecoratorsNsHorizontalLineProps: HorizontalLineProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
-  type DecoratorsNsHorizontalLineProps = HorizontalLineProps
+  def DecoratorsHorizontalLineProps: HorizontalLineProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
+  type DecoratorsHorizontalLineProps = HorizontalLineProps
   @scala.inline
-  def DecoratorsNsPointProps: PointProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps
-  type DecoratorsNsPointProps = PointProps
+  def DecoratorsPointProps: PointProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PointProps
+  type DecoratorsPointProps = PointProps
   @scala.inline
-  def DecoratorsNsTooltipProps: TooltipProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps
-  type DecoratorsNsTooltipProps = TooltipProps
+  def DecoratorsTooltipProps: TooltipProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.TooltipProps
+  type DecoratorsTooltipProps = TooltipProps
   @scala.inline
   def GridProps: typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.GridProps.type = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.GridProps
   type GridProps[T] = typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.GridProps[T]

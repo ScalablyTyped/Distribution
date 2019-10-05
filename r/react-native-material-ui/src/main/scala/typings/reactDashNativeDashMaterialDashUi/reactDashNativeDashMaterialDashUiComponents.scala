@@ -1,14 +1,7 @@
 package typings.reactDashNativeDashMaterialDashUi
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationAction
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.CheckBoxProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderAccountProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderProps
-import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerSectionProps
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeConsumerProps
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeProviderProps
 import scala.scalajs.js
@@ -37,7 +30,9 @@ object reactDashNativeDashMaterialDashUiComponents extends reactDashNativeDashMa
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigation].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationProps]]
   @scala.inline
-  def BottomNavigationNsAction: ComponentType[BottomNavigationAction] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationNs.Action].asInstanceOf[typings.react.reactMod.ComponentType[
+  def BottomNavigationAction: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationAction
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigation.Action].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.BottomNavigationAction]]
   @scala.inline
   def Button: ComponentType[
@@ -58,24 +53,30 @@ object reactDashNativeDashMaterialDashUiComponents extends reactDashNativeDashMa
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Dialog].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogProps]]
   @scala.inline
+  def DialogActions: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Dialog.Actions].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps]]
+  @scala.inline
+  def DialogContent: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Dialog.Content].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps]]
+  @scala.inline
   def DialogDefaultActions: ComponentType[
     typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActionsProps
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActions].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogDefaultActionsProps]]
   @scala.inline
-  def DialogNsActions: ComponentType[DialogActionsProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogNs.Actions].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogActionsProps]]
-  @scala.inline
-  def DialogNsContent: ComponentType[DialogContentProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogNs.Content].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogContentProps]]
-  @scala.inline
-  def DialogNsTitle: ComponentType[DialogTitleProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogNs.Title].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps]]
-  @scala.inline
   def DialogStackedActions: ComponentType[
     typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActionsProps
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActions].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogStackedActionsProps]]
+  @scala.inline
+  def DialogTitle: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Dialog.Title].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DialogTitleProps]]
   @scala.inline
   def Divider: ComponentType[
     typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DividerProps
@@ -87,13 +88,19 @@ object reactDashNativeDashMaterialDashUiComponents extends reactDashNativeDashMa
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Drawer].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerProps]]
   @scala.inline
-  def DrawerNsHeader: ComponentType[DrawerHeaderProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerNs.Header].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DrawerHeader: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Drawer.Header].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderProps]]
   @scala.inline
-  def DrawerNsHeaderNsAccount: ComponentType[DrawerHeaderAccountProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerNs.HeaderNs.Account].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DrawerHeaderAccount: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderAccountProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Drawer.Header.Account].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerHeaderAccountProps]]
   @scala.inline
-  def DrawerNsSection: ComponentType[DrawerSectionProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerNs.Section].asInstanceOf[typings.react.reactMod.ComponentType[
+  def DrawerSection: ComponentType[
+    typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerSectionProps
+  ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Drawer.Section].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.DrawerSectionProps]]
   @scala.inline
   def Icon: ComponentType[
@@ -131,10 +138,10 @@ object reactDashNativeDashMaterialDashUiComponents extends reactDashNativeDashMa
   ] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.Subheader].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.SubheaderProps]]
   @scala.inline
-  def ThemeContextNsConsumer: ComponentType[ThemeConsumerProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeContextNs.Consumer].asInstanceOf[typings.react.reactMod.ComponentType[
+  def ThemeContextConsumer: ComponentType[ThemeConsumerProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeContext.Consumer].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeConsumerProps]]
   @scala.inline
-  def ThemeContextNsProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeContextNs.Provider].asInstanceOf[typings.react.reactMod.ComponentType[
+  def ThemeContextProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeContext.Provider].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod.ThemeProviderProps]]
   @scala.inline
   def Toolbar: ComponentType[

@@ -24,7 +24,7 @@ class Map protected () extends Evented {
   var scrollWheelZoom: Handler = js.native
   var tap: js.UndefOr[Handler] = js.native
   var touchZoom: Handler = js.native
-  var zoomControl: typings.leaflet.leafletMod.ControlNs.Zoom = js.native
+  var zoomControl: typings.leaflet.leafletMod.Control.Zoom = js.native
   // Methods for layers and controls
   def addControl(control: Control): this.type = js.native
   // Other methods
@@ -135,5 +135,14 @@ class Map protected () extends Evented {
   def zoomOut(): this.type = js.native
   def zoomOut(delta: Double): this.type = js.native
   def zoomOut(delta: Double, options: ZoomOptions): this.type = js.native
+}
+
+@JSImport("leaflet", "map")
+@js.native
+object map extends js.Object {
+  def apply(element: String): Map = js.native
+  def apply(element: String, options: MapOptions): Map = js.native
+  def apply(element: HTMLElement): Map = js.native
+  def apply(element: HTMLElement, options: MapOptions): Map = js.native
 }
 

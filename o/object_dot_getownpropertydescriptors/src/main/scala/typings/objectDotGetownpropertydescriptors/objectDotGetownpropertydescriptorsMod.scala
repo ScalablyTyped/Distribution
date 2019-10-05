@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectDotGetownpropertydescriptorsMod extends js.Object {
   def apply[T /* <: js.Object */](o: T): `_backtick^_backtick` with T with PropertyDescriptorMap = js.native
-  def getPolyfill(): Fn_O = js.native
-  def implementation(): Fn_O = js.native
-  def shim(): Fn_O = js.native
+  def getPolyfill(): js.Any = js.native
+  def implementation(): js.Any = js.native
+  def shim(): js.Any = js.native
 }
 

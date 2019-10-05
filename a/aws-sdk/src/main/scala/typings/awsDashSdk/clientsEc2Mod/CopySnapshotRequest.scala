@@ -46,8 +46,8 @@ object CopySnapshotRequest {
     SourceSnapshotId: String,
     Description: String = null,
     DestinationRegion: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KmsKeyId: String = null,
     PresignedUrl: String = null
   ): CopySnapshotRequest = {

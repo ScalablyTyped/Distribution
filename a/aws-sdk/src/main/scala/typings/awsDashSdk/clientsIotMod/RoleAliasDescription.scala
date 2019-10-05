@@ -39,7 +39,7 @@ object RoleAliasDescription {
   @scala.inline
   def apply(
     creationDate: DateType = null,
-    credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined,
+    credentialDurationSeconds: Int | Double = null,
     lastModifiedDate: DateType = null,
     owner: AwsAccountId = null,
     roleAlias: RoleAlias = null,
@@ -48,7 +48,7 @@ object RoleAliasDescription {
   ): RoleAliasDescription = {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (!js.isUndefined(credentialDurationSeconds)) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds)
+    if (credentialDurationSeconds != null) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (roleAlias != null) __obj.updateDynamic("roleAlias")(roleAlias)

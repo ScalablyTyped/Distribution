@@ -17,10 +17,10 @@ trait VideoDetail extends js.Object {
 
 object VideoDetail {
   @scala.inline
-  def apply(HeightInPx: js.UndefOr[__integer] = js.undefined, WidthInPx: js.UndefOr[__integer] = js.undefined): VideoDetail = {
+  def apply(HeightInPx: Int | Double = null, WidthInPx: Int | Double = null): VideoDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(HeightInPx)) __obj.updateDynamic("HeightInPx")(HeightInPx)
-    if (!js.isUndefined(WidthInPx)) __obj.updateDynamic("WidthInPx")(WidthInPx)
+    if (HeightInPx != null) __obj.updateDynamic("HeightInPx")(HeightInPx.asInstanceOf[js.Any])
+    if (WidthInPx != null) __obj.updateDynamic("WidthInPx")(WidthInPx.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDetail]
   }
 }

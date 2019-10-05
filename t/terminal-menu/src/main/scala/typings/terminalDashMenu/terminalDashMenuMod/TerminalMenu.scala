@@ -1,6 +1,6 @@
 package typings.terminalDashMenu.terminalDashMenuMod
 
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`

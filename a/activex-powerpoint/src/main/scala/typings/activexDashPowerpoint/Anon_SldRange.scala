@@ -1,6 +1,6 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.SlideRange
+import typings.activexDashPowerpoint.PowerPoint.SlideRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

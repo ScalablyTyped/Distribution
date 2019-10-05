@@ -4,7 +4,7 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactNode
 import typings.reactDashColor.reactDashColorMod.Color
-import typings.reactDashColor.reactDashColorMod.ColorChangeHandler
+import typings.reactDashColor.reactDashColorMod.ColorResult
 import typings.reactDashColor.reactDashColorMod.CustomPickerProps
 import typings.reactDashColor.reactDashColorStrings.horizontal
 import typings.reactDashColor.reactDashColorStrings.vertical
@@ -19,14 +19,14 @@ trait HueProps extends CustomPickerProps[Hue] {
 object HueProps {
   @scala.inline
   def apply(
-    onChange: ColorChangeHandler,
+    onChange: /* color */ ColorResult => Unit,
     color: Color = null,
     direction: horizontal | vertical = null,
     key: Key = null,
     pointer: ReactNode = null,
     ref: LegacyRef[Hue] = null
   ): HueProps = {
-    val __obj = js.Dynamic.literal(onChange = onChange)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

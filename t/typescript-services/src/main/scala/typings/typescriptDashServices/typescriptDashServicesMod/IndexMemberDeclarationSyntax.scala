@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "IndexMemberDeclarationSyntax")
 @js.native
 class IndexMemberDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.IndexMemberDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.IndexMemberDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
-    indexSignature: typings.typescriptDashServices.TypeScriptNs.IndexSignatureSyntax,
+    indexSignature: typings.typescriptDashServices.TypeScript.IndexSignatureSyntax,
     semicolonToken: ISyntaxToken,
     parsedInStrictMode: Boolean
   ) = this()
@@ -23,9 +23,9 @@ class IndexMemberDeclarationSyntax protected ()
 @js.native
 object IndexMemberDeclarationSyntax extends js.Object {
   def create(
-    indexSignature: typings.typescriptDashServices.TypeScriptNs.IndexSignatureSyntax,
+    indexSignature: typings.typescriptDashServices.TypeScript.IndexSignatureSyntax,
     semicolonToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.IndexMemberDeclarationSyntax = js.native
-  def create1(indexSignature: typings.typescriptDashServices.TypeScriptNs.IndexSignatureSyntax): typings.typescriptDashServices.TypeScriptNs.IndexMemberDeclarationSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.IndexMemberDeclarationSyntax = js.native
+  def create1(indexSignature: typings.typescriptDashServices.TypeScript.IndexSignatureSyntax): typings.typescriptDashServices.TypeScript.IndexMemberDeclarationSyntax = js.native
 }
 

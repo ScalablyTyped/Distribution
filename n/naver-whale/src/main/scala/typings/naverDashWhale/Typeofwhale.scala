@@ -13,7 +13,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 22.
     * Permissions:  "alarms"
     */
-  val alarmsNs: Typeofalarms
+  val alarms: Typeofalarms
   ////////////////////
   // Bookmarks
   ////////////////////
@@ -22,7 +22,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 5.
     * Permissions:  "bookmarks"
     */
-  val bookmarksNs: Typeofbookmarks
+  val bookmarks: Typeofbookmarks
   ////////////////////
   // Browser Action
   ////////////////////
@@ -31,7 +31,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 5.
     * Manifest:  "browser_action": {...}
     */
-  val browserActionNs: TypeofbrowserAction
+  val browserAction: TypeofbrowserAction
   ////////////////////
   // Browsing Data
   ////////////////////
@@ -40,7 +40,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 19.
     * Permissions:  "browsingData"
     */
-  val browsingDataNs: TypeofbrowsingData
+  val browsingData: TypeofbrowsingData
   ////////////////////
   // Commands
   ////////////////////
@@ -49,7 +49,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 25.
     * Manifest:  "commands": {...}
     */
-  val commandsNs: Typeofcommands
+  val commands: Typeofcommands
   ////////////////////
   // Content Settings
   ////////////////////
@@ -58,7 +58,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 16.
     * Permissions:  "contentSettings"
     */
-  val contentSettingsNs: TypeofcontentSettings
+  val contentSettings: TypeofcontentSettings
   ////////////////////
   // Context Menus
   ////////////////////
@@ -67,7 +67,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 6.
     * Permissions:  "contextMenus"
     */
-  val contextMenusNs: TypeofcontextMenus
+  val contextMenus: TypeofcontextMenus
   ////////////////////
   // Cookies
   ////////////////////
@@ -76,7 +76,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 6.
     * Permissions:  "cookies", host permissions
     */
-  val cookiesNs: Typeofcookies
+  val cookies: Typeofcookies
   ////////////////////
   // Declarative Content
   ////////////////////
@@ -85,7 +85,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 33.
     * Permissions:  "declarativeContent"
     */
-  val declarativeContentNs: TypeofdeclarativeContent
+  val declarativeContent: TypeofdeclarativeContent
   ////////////////////
   // DesktopCapture
   ////////////////////
@@ -94,9 +94,9 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 34.
     * Permissions:  "desktopCapture"
     */
-  val desktopCaptureNs: TypeofdesktopCapture
-  val devtoolsNs: Typeofdevtools
-  val downloadsNs: Typeofdownloads
+  val desktopCapture: TypeofdesktopCapture
+  val devtools: Typeofdevtools
+  val downloads: Typeofdownloads
   ////////////////////
   // Events
   ////////////////////
@@ -104,7 +104,7 @@ trait Typeofwhale extends js.Object {
     * The chrome.events namespace contains common types used by APIs dispatching events to notify you when something interesting happens.
     * Availability: Since Chrome 21.
     */
-  val eventsNs: js.Any
+  val events: js.Any
   ////////////////////
   // Extension
   ////////////////////
@@ -112,7 +112,7 @@ trait Typeofwhale extends js.Object {
     * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
     * Availability: Since Chrome 5.
     */
-  val extensionNs: Typeofextension
+  val extension: Typeofextension
   ////////////////////
   // Font Settings
   ////////////////////
@@ -121,7 +121,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 22.
     * Permissions:  "fontSettings"
     */
-  val fontSettingsNs: TypeoffontSettings
+  val fontSettings: TypeoffontSettings
   ////////////////////
   // Google Cloud Messaging
   ////////////////////
@@ -130,7 +130,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 35.
     * Permissions:  "gcm"
     */
-  val gcmNs: Typeofgcm
+  val gcm: Typeofgcm
   ////////////////////
   // History
   ////////////////////
@@ -139,7 +139,7 @@ trait Typeofwhale extends js.Object {
     * Availability: Since Chrome 5.
     * Permissions:  "history"
     */
-  val historyNs: Typeofhistory
+  val history: Typeofhistory
   ////////////////////
   // i18n
   ////////////////////
@@ -147,7 +147,7 @@ trait Typeofwhale extends js.Object {
     * Use the chrome.i18n infrastructure to implement internationalization across your whole app or extension.
     * @since Chrome 5.
     */
-  val i18nNs: Typeofi18n
+  val i18n: Typeofi18n
   ////////////////////
   // Idle
   ////////////////////
@@ -156,7 +156,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "idle"
     * @since Chrome 6.
     */
-  val idleNs: Typeofidle
+  val idle: Typeofidle
   ////////////////////
   // Management
   ////////////////////
@@ -165,7 +165,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "management"
     * @since Chrome 8.
     */
-  val managementNs: Typeofmanagement
+  val management: Typeofmanagement
   ////////////////////
   // Notifications
   // https://developer.chrome.com/extensions/notifications
@@ -175,7 +175,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "notifications"
     * @since Chrome 28.
     */
-  val notificationsNs: Typeofnotifications
+  val notifications: Typeofnotifications
   ////////////////////
   // Omnibox
   ////////////////////
@@ -184,7 +184,7 @@ trait Typeofwhale extends js.Object {
     * Manifest:  "omnibox": {...}
     * @since Chrome 9.
     */
-  val omniboxNs: Typeofomnibox
+  val omnibox: Typeofomnibox
   ////////////////////
   // Page Action
   ////////////////////
@@ -193,7 +193,7 @@ trait Typeofwhale extends js.Object {
     * Manifest:  "page_action": {...}
     * @since Chrome 5.
     */
-  val pageActionNs: TypeofpageAction
+  val pageAction: TypeofpageAction
   ////////////////////
   // Page Capture
   ////////////////////
@@ -202,7 +202,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "pageCapture"
     * @since Chrome 18.
     */
-  val pageCaptureNs: TypeofpageCapture
+  val pageCapture: TypeofpageCapture
   ////////////////////
   // Permissions
   ////////////////////
@@ -210,7 +210,7 @@ trait Typeofwhale extends js.Object {
     * Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
     * @since Chrome 16.
     */
-  val permissionsNs: Typeofpermissions
+  val permissions: Typeofpermissions
   ////////////////////
   // Power
   ////////////////////
@@ -219,7 +219,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "power"
     * @since Chrome 27.
     */
-  val powerNs: Typeofpower
+  val power: Typeofpower
   ////////////////////
   // Printer Provider
   ////////////////////
@@ -228,7 +228,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "printerProvider"
     * @since Chrome 44.
     */
-  val printerProviderNs: TypeofprinterProvider
+  val printerProvider: TypeofprinterProvider
   ////////////////////
   // Privacy
   ////////////////////
@@ -238,7 +238,7 @@ trait Typeofwhale extends js.Object {
     * The Chrome Privacy Whitepaper gives background detail regarding the features which this API can control.
     * @since Chrome 18.
     */
-  val privacyNs: Typeofprivacy
+  val privacy: Typeofprivacy
   ////////////////////
   // Proxy
   ////////////////////
@@ -247,7 +247,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "proxy"
     * @since Chrome 13.
     */
-  val proxyNs: Typeofproxy
+  val proxy: Typeofproxy
   ////////////////////
   // Runtime
   ////////////////////
@@ -255,8 +255,8 @@ trait Typeofwhale extends js.Object {
     * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
     * @since Chrome 22
     */
-  val runtimeNs: Typeofruntime
-  val sidebarActionNs: TypeofsidebarAction
+  val runtime: Typeofruntime
+  val sidebarAction: TypeofsidebarAction
   ////////////////////
   // Storage
   ////////////////////
@@ -265,8 +265,8 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "storage"
     * @since Chrome 20.
     */
-  val storageNs: Typeofstorage
-  val systemNs: Typeofsystem
+  val storage: Typeofstorage
+  val system: Typeofsystem
   ////////////////////
   // TabCapture
   ////////////////////
@@ -275,7 +275,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "tabCapture"
     * @since Chrome 31.
     */
-  val tabCaptureNs: TypeoftabCapture
+  val tabCapture: TypeoftabCapture
   ////////////////////
   // Tabs
   ////////////////////
@@ -284,17 +284,8 @@ trait Typeofwhale extends js.Object {
     * Permissions: The majority of the chrome.tabs API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab.
     * @since Chrome 5.
     */
-  val tabsNs: Typeoftabs
-  val topSitesNs: TypeoftopSites
-  ////////////////////
-  // Text to Speech Engine
-  ////////////////////
-  /**
-    * Use the chrome.ttsEngine API to implement a text-to-speech(TTS) engine using an extension. If your extension registers using this API, it will receive events containing an utterance to be spoken and other parameters when any extension or Chrome App uses the tts API to generate speech. Your extension can then use any available web technology to synthesize and output the speech, and send events back to the calling function to report the status.
-    * Permissions:  "ttsEngine"
-    * @since Chrome 14.
-    */
-  val ttsEngineNs: TypeofttsEngine
+  val tabs: Typeoftabs
+  val topSites: TypeoftopSites
   ////////////////////
   // Text to Speech
   ////////////////////
@@ -303,7 +294,16 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "tts"
     * @since Chrome 14.
     */
-  val ttsNs: Typeoftts
+  val tts: Typeoftts
+  ////////////////////
+  // Text to Speech Engine
+  ////////////////////
+  /**
+    * Use the chrome.ttsEngine API to implement a text-to-speech(TTS) engine using an extension. If your extension registers using this API, it will receive events containing an utterance to be spoken and other parameters when any extension or Chrome App uses the tts API to generate speech. Your extension can then use any available web technology to synthesize and output the speech, and send events back to the calling function to report the status.
+    * Permissions:  "ttsEngine"
+    * @since Chrome 14.
+    */
+  val ttsEngine: TypeofttsEngine
   ////////////////////
   // Types
   ////////////////////
@@ -311,7 +311,7 @@ trait Typeofwhale extends js.Object {
     * The chrome.types API contains type declarations for Chrome.
     * @since Chrome 13.
     */
-  val typesNs: js.Any
+  val types: js.Any
   ////////////////////
   // Web Navigation
   ////////////////////
@@ -320,7 +320,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "webNavigation"
     * @since Chrome 16.
     */
-  val webNavigationNs: TypeofwebNavigation
+  val webNavigation: TypeofwebNavigation
   ////////////////////
   // Web Request
   ////////////////////
@@ -329,7 +329,7 @@ trait Typeofwhale extends js.Object {
     * Permissions:  "webRequest", host permissions
     * @since Chrome 17.
     */
-  val webRequestNs: TypeofwebRequest
+  val webRequest: TypeofwebRequest
   ////////////////////
   // Windows
   ////////////////////
@@ -338,56 +338,56 @@ trait Typeofwhale extends js.Object {
     * Permissions: The chrome.windows API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab objects.
     * @since Chrome 5.
     */
-  val windowsNs: Typeofwindows
+  val windows: Typeofwindows
 }
 
 object Typeofwhale {
   @scala.inline
   def apply(
-    alarmsNs: Typeofalarms,
-    bookmarksNs: Typeofbookmarks,
-    browserActionNs: TypeofbrowserAction,
-    browsingDataNs: TypeofbrowsingData,
-    commandsNs: Typeofcommands,
-    contentSettingsNs: TypeofcontentSettings,
-    contextMenusNs: TypeofcontextMenus,
-    cookiesNs: Typeofcookies,
-    declarativeContentNs: TypeofdeclarativeContent,
-    desktopCaptureNs: TypeofdesktopCapture,
-    devtoolsNs: Typeofdevtools,
-    downloadsNs: Typeofdownloads,
-    eventsNs: js.Any,
-    extensionNs: Typeofextension,
-    fontSettingsNs: TypeoffontSettings,
-    gcmNs: Typeofgcm,
-    historyNs: Typeofhistory,
-    i18nNs: Typeofi18n,
-    idleNs: Typeofidle,
-    managementNs: Typeofmanagement,
-    notificationsNs: Typeofnotifications,
-    omniboxNs: Typeofomnibox,
-    pageActionNs: TypeofpageAction,
-    pageCaptureNs: TypeofpageCapture,
-    permissionsNs: Typeofpermissions,
-    powerNs: Typeofpower,
-    printerProviderNs: TypeofprinterProvider,
-    privacyNs: Typeofprivacy,
-    proxyNs: Typeofproxy,
-    runtimeNs: Typeofruntime,
-    sidebarActionNs: TypeofsidebarAction,
-    storageNs: Typeofstorage,
-    systemNs: Typeofsystem,
-    tabCaptureNs: TypeoftabCapture,
-    tabsNs: Typeoftabs,
-    topSitesNs: TypeoftopSites,
-    ttsEngineNs: TypeofttsEngine,
-    ttsNs: Typeoftts,
-    typesNs: js.Any,
-    webNavigationNs: TypeofwebNavigation,
-    webRequestNs: TypeofwebRequest,
-    windowsNs: Typeofwindows
+    alarms: Typeofalarms,
+    bookmarks: Typeofbookmarks,
+    browserAction: TypeofbrowserAction,
+    browsingData: TypeofbrowsingData,
+    commands: Typeofcommands,
+    contentSettings: TypeofcontentSettings,
+    contextMenus: TypeofcontextMenus,
+    cookies: Typeofcookies,
+    declarativeContent: TypeofdeclarativeContent,
+    desktopCapture: TypeofdesktopCapture,
+    devtools: Typeofdevtools,
+    downloads: Typeofdownloads,
+    events: js.Any,
+    extension: Typeofextension,
+    fontSettings: TypeoffontSettings,
+    gcm: Typeofgcm,
+    history: Typeofhistory,
+    i18n: Typeofi18n,
+    idle: Typeofidle,
+    management: Typeofmanagement,
+    notifications: Typeofnotifications,
+    omnibox: Typeofomnibox,
+    pageAction: TypeofpageAction,
+    pageCapture: TypeofpageCapture,
+    permissions: Typeofpermissions,
+    power: Typeofpower,
+    printerProvider: TypeofprinterProvider,
+    privacy: Typeofprivacy,
+    proxy: Typeofproxy,
+    runtime: Typeofruntime,
+    sidebarAction: TypeofsidebarAction,
+    storage: Typeofstorage,
+    system: Typeofsystem,
+    tabCapture: TypeoftabCapture,
+    tabs: Typeoftabs,
+    topSites: TypeoftopSites,
+    tts: Typeoftts,
+    ttsEngine: TypeofttsEngine,
+    types: js.Any,
+    webNavigation: TypeofwebNavigation,
+    webRequest: TypeofwebRequest,
+    windows: Typeofwindows
   ): Typeofwhale = {
-    val __obj = js.Dynamic.literal(alarmsNs = alarmsNs, bookmarksNs = bookmarksNs, browserActionNs = browserActionNs, browsingDataNs = browsingDataNs, commandsNs = commandsNs, contentSettingsNs = contentSettingsNs, contextMenusNs = contextMenusNs, cookiesNs = cookiesNs, declarativeContentNs = declarativeContentNs, desktopCaptureNs = desktopCaptureNs, devtoolsNs = devtoolsNs, downloadsNs = downloadsNs, eventsNs = eventsNs, extensionNs = extensionNs, fontSettingsNs = fontSettingsNs, gcmNs = gcmNs, historyNs = historyNs, i18nNs = i18nNs, idleNs = idleNs, managementNs = managementNs, notificationsNs = notificationsNs, omniboxNs = omniboxNs, pageActionNs = pageActionNs, pageCaptureNs = pageCaptureNs, permissionsNs = permissionsNs, powerNs = powerNs, printerProviderNs = printerProviderNs, privacyNs = privacyNs, proxyNs = proxyNs, runtimeNs = runtimeNs, sidebarActionNs = sidebarActionNs, storageNs = storageNs, systemNs = systemNs, tabCaptureNs = tabCaptureNs, tabsNs = tabsNs, topSitesNs = topSitesNs, ttsEngineNs = ttsEngineNs, ttsNs = ttsNs, typesNs = typesNs, webNavigationNs = webNavigationNs, webRequestNs = webRequestNs, windowsNs = windowsNs)
+    val __obj = js.Dynamic.literal(alarms = alarms, bookmarks = bookmarks, browserAction = browserAction, browsingData = browsingData, commands = commands, contentSettings = contentSettings, contextMenus = contextMenus, cookies = cookies, declarativeContent = declarativeContent, desktopCapture = desktopCapture, devtools = devtools, downloads = downloads, events = events, extension = extension, fontSettings = fontSettings, gcm = gcm, history = history, i18n = i18n, idle = idle, management = management, notifications = notifications, omnibox = omnibox, pageAction = pageAction, pageCapture = pageCapture, permissions = permissions, power = power, printerProvider = printerProvider, privacy = privacy, proxy = proxy, runtime = runtime, sidebarAction = sidebarAction, storage = storage, system = system, tabCapture = tabCapture, tabs = tabs, topSites = topSites, tts = tts, ttsEngine = ttsEngine, types = types, webNavigation = webNavigation, webRequest = webRequest, windows = windows)
   
     __obj.asInstanceOf[Typeofwhale]
   }

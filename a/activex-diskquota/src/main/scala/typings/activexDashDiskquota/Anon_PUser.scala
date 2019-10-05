@@ -1,6 +1,6 @@
 package typings.activexDashDiskquota
 
-import typings.activexDashDiskquota.DiskQuotaTypeLibraryNs.DIDiskQuotaUser
+import typings.activexDashDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.reactDashBootstrapDashDaterangepicker
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashBootstrapDashDaterangepicker.ReactBootstrapDaterangepickerNs.DateRangePicker
+import typings.reactDashBootstrapDashDaterangepicker.ReactBootstrapDaterangepicker.DateRangePicker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

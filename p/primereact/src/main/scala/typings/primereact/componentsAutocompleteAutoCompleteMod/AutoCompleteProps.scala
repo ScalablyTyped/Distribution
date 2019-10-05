@@ -3,7 +3,7 @@ package typings.primereact.componentsAutocompleteAutoCompleteMod
 import typings.primereact.Anon_OriginalEvent
 import typings.primereact.Anon_OriginalEventValue
 import typings.primereact.componentsTooltipTooltipOptionsMod.TooltipOptions
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
 import typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.nest
 import scala.scalajs.js
@@ -38,4 +39,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
 }
+
+@JSImport("@fortawesome/fontawesome-svg-core", "config")
+@js.native
+object config extends TopLevel[Config]
 

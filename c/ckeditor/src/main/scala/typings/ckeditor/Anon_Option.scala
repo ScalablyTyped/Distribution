@@ -1,7 +1,7 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.htmlParserNs.rule
-import typings.ckeditor.CKEDITORNs.htmlParserNs.ruleOptions
+import typings.ckeditor.CKEDITOR.htmlParser.rule
+import typings.ckeditor.CKEDITOR.htmlParser.ruleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

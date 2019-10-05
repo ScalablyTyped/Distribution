@@ -21,7 +21,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequiredOptions
-  extends typings.prettier.prettierMod.docNs.printerNs.Options {
+  extends typings.prettier.prettierMod.doc.printer.Options {
   /**
     * Include parentheses around a sole arrow function parameter.
     */

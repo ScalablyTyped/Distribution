@@ -9,6 +9,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotB
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaSharedProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaSize
 import typings.react.reactMod.ClassAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import scala.scalajs.js
@@ -81,8 +82,8 @@ object IFacepileProps {
     getPersonaProps: /* persona */ IFacepilePersona => IPersonaSharedProps = null,
     key: Key = null,
     maxDisplayablePersonas: Int | Double = null,
-    onRenderPersona: IRenderFunction[IFacepilePersona] = null,
-    onRenderPersonaCoin: IRenderFunction[IFacepilePersona] = null,
+    onRenderPersona: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null = null,
+    onRenderPersonaCoin: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null = null,
     overflowButtonProps: IButtonProps = null,
     overflowButtonType: OverflowButtonType = null,
     overflowPersonas: js.Array[IFacepilePersona] = null,
@@ -101,8 +102,8 @@ object IFacepileProps {
     if (getPersonaProps != null) __obj.updateDynamic("getPersonaProps")(js.Any.fromFunction1(getPersonaProps))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxDisplayablePersonas != null) __obj.updateDynamic("maxDisplayablePersonas")(maxDisplayablePersonas.asInstanceOf[js.Any])
-    if (onRenderPersona != null) __obj.updateDynamic("onRenderPersona")(onRenderPersona)
-    if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(onRenderPersonaCoin)
+    if (onRenderPersona != null) __obj.updateDynamic("onRenderPersona")(js.Any.fromFunction2(onRenderPersona))
+    if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(js.Any.fromFunction2(onRenderPersonaCoin))
     if (overflowButtonProps != null) __obj.updateDynamic("overflowButtonProps")(overflowButtonProps)
     if (overflowButtonType != null) __obj.updateDynamic("overflowButtonType")(overflowButtonType)
     if (overflowPersonas != null) __obj.updateDynamic("overflowPersonas")(overflowPersonas)

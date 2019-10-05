@@ -27,12 +27,12 @@ object ListMembersRequest {
   @scala.inline
   def apply(
     DetectorId: DetectorId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     OnlyAssociated: String = null
   ): ListMembersRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (OnlyAssociated != null) __obj.updateDynamic("OnlyAssociated")(OnlyAssociated)
     __obj.asInstanceOf[ListMembersRequest]

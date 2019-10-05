@@ -1,6 +1,7 @@
 package typings.reactDashNative.reactDashNativeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashNative.Anon_Screen
 import typings.reactDashNative.reactDashNativeStrings.change
 import typings.reactDashNative.reactDashNativeStrings.screen
@@ -51,4 +52,8 @@ trait Dimensions extends js.Object {
     */
   def set(dims: StringDictionary[js.Any]): Unit = js.native
 }
+
+@JSImport("react-native", "Dimensions")
+@js.native
+object Dimensions extends TopLevel[Dimensions]
 

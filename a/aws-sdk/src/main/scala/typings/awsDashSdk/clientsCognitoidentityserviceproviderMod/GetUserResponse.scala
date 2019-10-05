@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GetUserResponse extends js.Object {
   /**
-    * Specifies the options for MFA (e.g., email or phone number).
+    *  This response parameter is no longer supported. It provides information only about SMS MFA configurations. It doesn't provide information about TOTP software token MFA configurations. To look up information about either type of MFA configuration, use the use the GetUserResponse$UserMFASettingList response instead.
     */
   var MFAOptions: js.UndefOr[MFAOptionListType] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait GetUserResponse extends js.Object {
     */
   var UserAttributes: AttributeListType
   /**
-    * The list of the user's MFA settings.
+    * The MFA options that are enabled for the user. The possible values in this list are SMS_MFA and SOFTWARE_TOKEN_MFA.
     */
   var UserMFASettingList: js.UndefOr[UserMFASettingListType] = js.undefined
   /**

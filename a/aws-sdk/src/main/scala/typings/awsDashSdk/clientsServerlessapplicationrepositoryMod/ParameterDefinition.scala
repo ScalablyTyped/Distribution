@@ -86,11 +86,11 @@ object ParameterDefinition {
     ConstraintDescription: __string = null,
     DefaultValue: __string = null,
     Description: __string = null,
-    MaxLength: js.UndefOr[__integer] = js.undefined,
-    MaxValue: js.UndefOr[__integer] = js.undefined,
-    MinLength: js.UndefOr[__integer] = js.undefined,
-    MinValue: js.UndefOr[__integer] = js.undefined,
-    NoEcho: js.UndefOr[__boolean] = js.undefined,
+    MaxLength: Int | Double = null,
+    MaxValue: Int | Double = null,
+    MinLength: Int | Double = null,
+    MinValue: Int | Double = null,
+    NoEcho: js.UndefOr[Boolean] = js.undefined,
     Type: __string = null
   ): ParameterDefinition = {
     val __obj = js.Dynamic.literal(Name = Name, ReferencedByResources = ReferencedByResources)
@@ -99,10 +99,10 @@ object ParameterDefinition {
     if (ConstraintDescription != null) __obj.updateDynamic("ConstraintDescription")(ConstraintDescription)
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength)
-    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue)
-    if (!js.isUndefined(MinLength)) __obj.updateDynamic("MinLength")(MinLength)
-    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue)
+    if (MaxLength != null) __obj.updateDynamic("MaxLength")(MaxLength.asInstanceOf[js.Any])
+    if (MaxValue != null) __obj.updateDynamic("MaxValue")(MaxValue.asInstanceOf[js.Any])
+    if (MinLength != null) __obj.updateDynamic("MinLength")(MinLength.asInstanceOf[js.Any])
+    if (MinValue != null) __obj.updateDynamic("MinValue")(MinValue.asInstanceOf[js.Any])
     if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho)
     if (Type != null) __obj.updateDynamic("Type")(Type)
     __obj.asInstanceOf[ParameterDefinition]

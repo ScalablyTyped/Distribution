@@ -15,9 +15,9 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectManyNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectManyNs.ojAnimateStart
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectMany.ojAnimateEnd
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectMany.ojAnimateStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -53,7 +53,7 @@ trait ojSelectManyEventMap[K, D]
   var optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]]
   var optionsChanged: JetElementCustomEvent[
     (js.Array[
-      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
     ]) | (DataProvider[K, D]) | Null
   ]
   var optionsKeysChanged: JetElementCustomEvent[Anon_ChildKeysChildrenLabelValue]
@@ -137,7 +137,7 @@ object ojSelectManyEventMap {
     optionRendererChanged: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]],
     optionsChanged: JetElementCustomEvent[
       (js.Array[
-        typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+        typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
       ]) | (DataProvider[K, D]) | Null
     ],
     optionsKeysChanged: JetElementCustomEvent[Anon_ChildKeysChildrenLabelValue],

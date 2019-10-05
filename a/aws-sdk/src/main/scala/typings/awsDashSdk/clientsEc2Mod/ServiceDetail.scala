@@ -54,17 +54,17 @@ trait ServiceDetail extends js.Object {
 object ServiceDetail {
   @scala.inline
   def apply(
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
-    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
+    ManagesVpcEndpoints: js.UndefOr[scala.Boolean] = js.undefined,
     Owner: String = null,
     PrivateDnsName: String = null,
     ServiceId: String = null,
     ServiceName: String = null,
     ServiceType: ServiceTypeDetailSet = null,
     Tags: TagList = null,
-    VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.undefined
+    VpcEndpointPolicySupported: js.UndefOr[scala.Boolean] = js.undefined
   ): ServiceDetail = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)

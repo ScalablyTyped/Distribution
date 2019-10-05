@@ -29,7 +29,7 @@ object AssociateClientVpnTargetNetworkRequest {
     ClientVpnEndpointId: String,
     SubnetId: String,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): AssociateClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, SubnetId = SubnetId)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)

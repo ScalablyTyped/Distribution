@@ -55,7 +55,7 @@ object ProductViewSummary {
   @scala.inline
   def apply(
     Distributor: ProductViewDistributor = null,
-    HasDefaultPath: js.UndefOr[HasDefaultPath] = js.undefined,
+    HasDefaultPath: js.UndefOr[Boolean] = js.undefined,
     Id: Id = null,
     Name: ProductViewName = null,
     Owner: ProductViewOwner = null,

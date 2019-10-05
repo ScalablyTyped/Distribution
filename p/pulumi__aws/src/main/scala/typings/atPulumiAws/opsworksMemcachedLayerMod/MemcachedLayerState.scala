@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksMemcachedLayerMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.MemcachedLayerEbsVolume
+import typings.atPulumiAws.typesInputMod.opsworks.MemcachedLayerEbsVolume
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

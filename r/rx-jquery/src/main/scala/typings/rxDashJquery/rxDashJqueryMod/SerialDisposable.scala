@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "SerialDisposable")
 @js.native
 class SerialDisposable ()
-  extends typings.rxDashLite.RxNs.SerialDisposable
+  extends typings.rxDashLite.Rx.SerialDisposable
 

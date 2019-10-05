@@ -43,3 +43,26 @@ object TSConstructSignatureDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsConstructSignatureDeclaration")
+@js.native
+object tsConstructSignatureDeclaration extends js.Object {
+  def apply(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
+  def apply(
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSConstructSignatureDeclaration = js.native
+  def apply(typeParameters: Null, parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
+  def apply(
+    typeParameters: Null,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSConstructSignatureDeclaration = js.native
+  def apply(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
+  def apply(
+    typeParameters: TSTypeParameterDeclaration,
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSConstructSignatureDeclaration = js.native
+}
+

@@ -1,0 +1,72 @@
+package typings.winrt.Windows.Data.Xml.Dom
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IXmlElement extends IXmlNode {
+  var tagName: String
+  def getAttribute(attributeName: String): String
+  def getAttributeNS(namespaceUri: js.Any, localName: String): String
+  def getAttributeNode(attributeName: String): XmlAttribute
+  def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute
+  def getElementsByTagName(tagName: String): XmlNodeList
+  def removeAttribute(attributeName: String): Unit
+  def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit
+  def removeAttributeNode(attributeNode: XmlAttribute): XmlAttribute
+  def setAttribute(attributeName: String, attributeValue: String): Unit
+  def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit
+  def setAttributeNode(newAttribute: XmlAttribute): XmlAttribute
+  def setAttributeNodeNS(newAttribute: XmlAttribute): XmlAttribute
+}
+
+object IXmlElement {
+  @scala.inline
+  def apply(
+    appendChild: IXmlNode => IXmlNode,
+    attributes: XmlNamedNodeMap,
+    childNodes: XmlNodeList,
+    cloneNode: Boolean => IXmlNode,
+    firstChild: IXmlNode,
+    getAttribute: String => String,
+    getAttributeNS: (js.Any, String) => String,
+    getAttributeNode: String => XmlAttribute,
+    getAttributeNodeNS: (js.Any, String) => XmlAttribute,
+    getElementsByTagName: String => XmlNodeList,
+    getXml: () => String,
+    hasChildNodes: () => Boolean,
+    innerText: String,
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    lastChild: IXmlNode,
+    localName: js.Any,
+    namespaceUri: js.Any,
+    nextSibling: IXmlNode,
+    nodeName: String,
+    nodeType: NodeType,
+    nodeValue: js.Any,
+    normalize: () => Unit,
+    ownerDocument: XmlDocument,
+    parentNode: IXmlNode,
+    prefix: js.Any,
+    previousSibling: IXmlNode,
+    removeAttribute: String => Unit,
+    removeAttributeNS: (js.Any, String) => Unit,
+    removeAttributeNode: XmlAttribute => XmlAttribute,
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    setAttribute: (String, String) => Unit,
+    setAttributeNS: (js.Any, String, String) => Unit,
+    setAttributeNode: XmlAttribute => XmlAttribute,
+    setAttributeNodeNS: XmlAttribute => XmlAttribute,
+    tagName: String
+  ): IXmlElement = {
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes, childNodes = childNodes, cloneNode = js.Any.fromFunction1(cloneNode), firstChild = firstChild, getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText, insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild, localName = localName, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), tagName = tagName)
+  
+    __obj.asInstanceOf[IXmlElement]
+  }
+}
+

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -393,7 +394,7 @@ object IgRadialGauge {
   	 * Option for igRadialGauge
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    alignLabel: AlignLabelEvent = null,
+    alignLabel: (/* event */ Event, /* ui */ AlignLabelEventUIParam) => Unit = null,
     backingBrush: String = null,
     backingCornerRadius: Int | Double = null,
     backingInnerExtent: Int | Double = null,
@@ -407,7 +408,7 @@ object IgRadialGauge {
     duplicateLabelOmissionStrategy: String = null,
     font: String = null,
     fontBrush: String = null,
-    formatLabel: FormatLabelEvent = null,
+    formatLabel: (/* event */ Event, /* ui */ FormatLabelEventUIParam) => Unit = null,
     height: String | Double = null,
     interval: Int | Double = null,
     isNeedleDraggingConstrained: js.UndefOr[Boolean] = js.undefined,
@@ -463,12 +464,12 @@ object IgRadialGauge {
     transitionEasingFunction: js.Any = null,
     transitionProgress: Int | Double = null,
     value: Int | Double = null,
-    valueChanged: ValueChangedEvent = null,
+    valueChanged: (/* event */ Event, /* ui */ ValueChangedEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgRadialGauge = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (alignLabel != null) __obj.updateDynamic("alignLabel")(alignLabel)
+    if (alignLabel != null) __obj.updateDynamic("alignLabel")(js.Any.fromFunction2(alignLabel))
     if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush)
     if (backingCornerRadius != null) __obj.updateDynamic("backingCornerRadius")(backingCornerRadius.asInstanceOf[js.Any])
     if (backingInnerExtent != null) __obj.updateDynamic("backingInnerExtent")(backingInnerExtent.asInstanceOf[js.Any])
@@ -482,7 +483,7 @@ object IgRadialGauge {
     if (duplicateLabelOmissionStrategy != null) __obj.updateDynamic("duplicateLabelOmissionStrategy")(duplicateLabelOmissionStrategy)
     if (font != null) __obj.updateDynamic("font")(font)
     if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush)
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(isNeedleDraggingConstrained)) __obj.updateDynamic("isNeedleDraggingConstrained")(isNeedleDraggingConstrained)
@@ -538,7 +539,7 @@ object IgRadialGauge {
     if (transitionEasingFunction != null) __obj.updateDynamic("transitionEasingFunction")(transitionEasingFunction)
     if (transitionProgress != null) __obj.updateDynamic("transitionProgress")(transitionProgress.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(js.Any.fromFunction2(valueChanged))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgRadialGauge]
   }

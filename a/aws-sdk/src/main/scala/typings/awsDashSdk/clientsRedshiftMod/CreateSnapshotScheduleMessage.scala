@@ -34,8 +34,8 @@ trait CreateSnapshotScheduleMessage extends js.Object {
 object CreateSnapshotScheduleMessage {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[BooleanOptional] = js.undefined,
-    NextInvocations: js.UndefOr[IntegerOptional] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    NextInvocations: Int | scala.Double = null,
     ScheduleDefinitions: ScheduleDefinitionList = null,
     ScheduleDescription: String = null,
     ScheduleIdentifier: String = null,
@@ -43,7 +43,7 @@ object CreateSnapshotScheduleMessage {
   ): CreateSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(NextInvocations)) __obj.updateDynamic("NextInvocations")(NextInvocations)
+    if (NextInvocations != null) __obj.updateDynamic("NextInvocations")(NextInvocations.asInstanceOf[js.Any])
     if (ScheduleDefinitions != null) __obj.updateDynamic("ScheduleDefinitions")(ScheduleDefinitions)
     if (ScheduleDescription != null) __obj.updateDynamic("ScheduleDescription")(ScheduleDescription)
     if (ScheduleIdentifier != null) __obj.updateDynamic("ScheduleIdentifier")(ScheduleIdentifier)

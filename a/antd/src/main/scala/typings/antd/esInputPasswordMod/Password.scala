@@ -1,7 +1,7 @@
 package typings.antd.esInputPasswordMod
 
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

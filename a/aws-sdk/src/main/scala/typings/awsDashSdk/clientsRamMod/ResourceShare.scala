@@ -46,7 +46,7 @@ trait ResourceShare extends js.Object {
 object ResourceShare {
   @scala.inline
   def apply(
-    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
+    allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined,
     creationTime: DateTime = null,
     lastUpdatedTime: DateTime = null,
     name: String = null,

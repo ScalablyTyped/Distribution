@@ -1,5 +1,6 @@
 package typings.wonderDotJs.distEs2015Mod
 
+import typings.wonderDotJs.distEs2015DeviceEScreenSizeMod.EScreenSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +15,6 @@ class MainData ()
 @js.native
 object MainData extends js.Object {
   var isTest: Boolean = js.native
-  var screenSize: typings.wonderDotJs.distEs2015DeviceEScreenSizeMod.EScreenSize with typings.wonderDotJs.distEs2015StructureRectRegionMod.RectRegion = js.native
+  var screenSize: EScreenSize with typings.wonderDotJs.distEs2015StructureRectRegionMod.RectRegion = js.native
 }
 

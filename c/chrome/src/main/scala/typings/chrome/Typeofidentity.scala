@@ -1,11 +1,11 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.identityNs.AccountInfo
-import typings.chrome.chromeNs.identityNs.SignInChangeEvent
-import typings.chrome.chromeNs.identityNs.TokenDetails
-import typings.chrome.chromeNs.identityNs.TokenInformation
-import typings.chrome.chromeNs.identityNs.UserInfo
-import typings.chrome.chromeNs.identityNs.WebAuthFlowOptions
+import typings.chrome.chrome.identity.AccountInfo
+import typings.chrome.chrome.identity.SignInChangeEvent
+import typings.chrome.chrome.identity.TokenDetails
+import typings.chrome.chrome.identity.TokenInformation
+import typings.chrome.chrome.identity.UserInfo
+import typings.chrome.chrome.identity.WebAuthFlowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

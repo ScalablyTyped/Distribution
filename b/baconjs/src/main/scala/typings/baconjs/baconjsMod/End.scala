@@ -16,5 +16,5 @@ import scala.scalajs.js.annotation._
   * @constructs Bacon.End
   * */
 class End[A] ()
-  extends typings.baconjs.BaconNs.End[A]
+  extends typings.baconjs.Bacon.End[A]
 

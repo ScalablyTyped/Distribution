@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriSupportActionsActionBaseMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionBase
+import typings.arcgisDashJsDashApi.__esri.ActionBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

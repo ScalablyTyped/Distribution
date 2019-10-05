@@ -20,3 +20,9 @@ object RGB {
   }
 }
 
+@JSImport("snapsvg", "rgb")
+@js.native
+object rgb extends js.Object {
+  def apply(r: Double, g: Double, b: Double): RGB = js.native
+}
+

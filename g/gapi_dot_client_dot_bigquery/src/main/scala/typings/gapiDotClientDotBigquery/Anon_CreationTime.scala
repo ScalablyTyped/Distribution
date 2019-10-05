@@ -1,7 +1,7 @@
 package typings.gapiDotClientDotBigquery
 
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.TableReference
-import typings.gapiDotClientDotBigquery.gapiNs.clientNs.bigqueryNs.TimePartitioning
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.TableReference
+import typings.gapiDotClientDotBigquery.gapi.client.bigquery.TimePartitioning
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

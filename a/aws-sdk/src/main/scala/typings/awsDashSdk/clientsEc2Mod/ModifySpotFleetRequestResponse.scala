@@ -13,7 +13,7 @@ trait ModifySpotFleetRequestResponse extends js.Object {
 
 object ModifySpotFleetRequestResponse {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): ModifySpotFleetRequestResponse = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): ModifySpotFleetRequestResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[ModifySpotFleetRequestResponse]

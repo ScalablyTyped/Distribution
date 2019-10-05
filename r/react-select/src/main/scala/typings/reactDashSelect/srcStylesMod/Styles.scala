@@ -1,5 +1,6 @@
 package typings.reactDashSelect.srcStylesMod
 
+import typings.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,52 +35,52 @@ trait Styles extends js.Object {
 object Styles {
   @scala.inline
   def apply(
-    clearIndicator: styleFn = null,
-    container: styleFn = null,
-    control: styleFn = null,
-    dropdownIndicator: styleFn = null,
-    group: styleFn = null,
-    groupHeading: styleFn = null,
-    indicatorSeparator: styleFn = null,
-    indicatorsContainer: styleFn = null,
-    input: styleFn = null,
-    loadingIndicator: styleFn = null,
-    loadingMessage: styleFn = null,
-    menu: styleFn = null,
-    menuList: styleFn = null,
-    menuPortal: styleFn = null,
-    multiValue: styleFn = null,
-    multiValueLabel: styleFn = null,
-    multiValueRemove: styleFn = null,
-    noOptionsMessage: styleFn = null,
-    option: styleFn = null,
-    placeholder: styleFn = null,
-    singleValue: styleFn = null,
-    valueContainer: styleFn = null
+    clearIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    container: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    control: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    dropdownIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    group: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    groupHeading: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    indicatorSeparator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    indicatorsContainer: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    input: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    loadingIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    loadingMessage: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    menu: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    menuList: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    menuPortal: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    multiValue: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    multiValueLabel: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    multiValueRemove: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    noOptionsMessage: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    option: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    placeholder: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    singleValue: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
+    valueContainer: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null
   ): Styles = {
     val __obj = js.Dynamic.literal()
-    if (clearIndicator != null) __obj.updateDynamic("clearIndicator")(clearIndicator)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (control != null) __obj.updateDynamic("control")(control)
-    if (dropdownIndicator != null) __obj.updateDynamic("dropdownIndicator")(dropdownIndicator)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (groupHeading != null) __obj.updateDynamic("groupHeading")(groupHeading)
-    if (indicatorSeparator != null) __obj.updateDynamic("indicatorSeparator")(indicatorSeparator)
-    if (indicatorsContainer != null) __obj.updateDynamic("indicatorsContainer")(indicatorsContainer)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator)
-    if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(loadingMessage)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (menuList != null) __obj.updateDynamic("menuList")(menuList)
-    if (menuPortal != null) __obj.updateDynamic("menuPortal")(menuPortal)
-    if (multiValue != null) __obj.updateDynamic("multiValue")(multiValue)
-    if (multiValueLabel != null) __obj.updateDynamic("multiValueLabel")(multiValueLabel)
-    if (multiValueRemove != null) __obj.updateDynamic("multiValueRemove")(multiValueRemove)
-    if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(noOptionsMessage)
-    if (option != null) __obj.updateDynamic("option")(option)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (singleValue != null) __obj.updateDynamic("singleValue")(singleValue)
-    if (valueContainer != null) __obj.updateDynamic("valueContainer")(valueContainer)
+    if (clearIndicator != null) __obj.updateDynamic("clearIndicator")(js.Any.fromFunction2(clearIndicator))
+    if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction2(container))
+    if (control != null) __obj.updateDynamic("control")(js.Any.fromFunction2(control))
+    if (dropdownIndicator != null) __obj.updateDynamic("dropdownIndicator")(js.Any.fromFunction2(dropdownIndicator))
+    if (group != null) __obj.updateDynamic("group")(js.Any.fromFunction2(group))
+    if (groupHeading != null) __obj.updateDynamic("groupHeading")(js.Any.fromFunction2(groupHeading))
+    if (indicatorSeparator != null) __obj.updateDynamic("indicatorSeparator")(js.Any.fromFunction2(indicatorSeparator))
+    if (indicatorsContainer != null) __obj.updateDynamic("indicatorsContainer")(js.Any.fromFunction2(indicatorsContainer))
+    if (input != null) __obj.updateDynamic("input")(js.Any.fromFunction2(input))
+    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(js.Any.fromFunction2(loadingIndicator))
+    if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(js.Any.fromFunction2(loadingMessage))
+    if (menu != null) __obj.updateDynamic("menu")(js.Any.fromFunction2(menu))
+    if (menuList != null) __obj.updateDynamic("menuList")(js.Any.fromFunction2(menuList))
+    if (menuPortal != null) __obj.updateDynamic("menuPortal")(js.Any.fromFunction2(menuPortal))
+    if (multiValue != null) __obj.updateDynamic("multiValue")(js.Any.fromFunction2(multiValue))
+    if (multiValueLabel != null) __obj.updateDynamic("multiValueLabel")(js.Any.fromFunction2(multiValueLabel))
+    if (multiValueRemove != null) __obj.updateDynamic("multiValueRemove")(js.Any.fromFunction2(multiValueRemove))
+    if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(js.Any.fromFunction2(noOptionsMessage))
+    if (option != null) __obj.updateDynamic("option")(js.Any.fromFunction2(option))
+    if (placeholder != null) __obj.updateDynamic("placeholder")(js.Any.fromFunction2(placeholder))
+    if (singleValue != null) __obj.updateDynamic("singleValue")(js.Any.fromFunction2(singleValue))
+    if (valueContainer != null) __obj.updateDynamic("valueContainer")(js.Any.fromFunction2(valueContainer))
     __obj.asInstanceOf[Styles]
   }
 }

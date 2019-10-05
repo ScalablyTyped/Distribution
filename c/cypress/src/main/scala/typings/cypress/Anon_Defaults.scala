@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.ServerOptions
+import typings.cypress.Cypress.ServerOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

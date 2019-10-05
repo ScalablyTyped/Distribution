@@ -21,13 +21,9 @@ trait ListSecurityProfilesRequest extends js.Object {
 
 object ListSecurityProfilesRequest {
   @scala.inline
-  def apply(
-    InstanceId: InstanceId,
-    MaxResults: js.UndefOr[MaxResult1000] = js.undefined,
-    NextToken: NextToken = null
-  ): ListSecurityProfilesRequest = {
+  def apply(InstanceId: InstanceId, MaxResults: Int | Double = null, NextToken: NextToken = null): ListSecurityProfilesRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListSecurityProfilesRequest]
   }

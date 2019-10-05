@@ -49,7 +49,7 @@ object UpdateDevEndpointRequest {
     DeleteArguments: StringList = null,
     DeletePublicKeys: PublicKeysList = null,
     PublicKey: GenericString = null,
-    UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.undefined
+    UpdateEtlLibraries: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName)
     if (AddArguments != null) __obj.updateDynamic("AddArguments")(AddArguments)

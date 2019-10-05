@@ -27,12 +27,12 @@ object ListSecurityProfilesForTargetRequest {
   @scala.inline
   def apply(
     securityProfileTargetArn: SecurityProfileTargetArn,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
-    recursive: js.UndefOr[Recursive] = js.undefined
+    recursive: js.UndefOr[scala.Boolean] = js.undefined
   ): ListSecurityProfilesForTargetRequest = {
     val __obj = js.Dynamic.literal(securityProfileTargetArn = securityProfileTargetArn)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
     __obj.asInstanceOf[ListSecurityProfilesForTargetRequest]

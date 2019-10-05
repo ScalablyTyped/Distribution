@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashSortableDashGrid
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedInterpolation
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

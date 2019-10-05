@@ -30,10 +30,10 @@ object TextDocumentContentProvider {
   @scala.inline
   def apply(
     provideTextDocumentContent: (Uri, CancellationToken) => ProviderResult[String],
-    onDidChange: Event[Uri] = null
+    onDidChange: (/* listener */ js.Function1[Uri, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable = null
   ): TextDocumentContentProvider = {
     val __obj = js.Dynamic.literal(provideTextDocumentContent = js.Any.fromFunction2(provideTextDocumentContent))
-    if (onDidChange != null) __obj.updateDynamic("onDidChange")(onDidChange)
+    if (onDidChange != null) __obj.updateDynamic("onDidChange")(js.Any.fromFunction3(onDidChange))
     __obj.asInstanceOf[TextDocumentContentProvider]
   }
 }

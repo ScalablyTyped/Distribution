@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sasl-external"
-version := "0.1-dt-20181205Z-b901c2"
-scalaVersion := "2.12.9"
+version := "0.1-dt-20181205Z-1913bf"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-713588",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-23d4c5",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

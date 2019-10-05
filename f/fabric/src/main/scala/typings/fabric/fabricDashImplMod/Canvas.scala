@@ -16,6 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.fabric.fabricDashImplMod.IStaticCanvasOptions because Already inherited
 - typings.fabric.fabricDashImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, clipTo, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniScaleTransform, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick */ @JSImport("fabric/fabric-impl", "Canvas")
 @js.native
 class Canvas protected () extends StaticCanvas {

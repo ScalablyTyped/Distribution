@@ -14,12 +14,6 @@ trait VRDisplayEvent extends Event {
 
 @JSGlobal("VRDisplayEvent")
 @js.native
-class VRDisplayEventCls protected () extends VRDisplayEvent {
-  def this(`type`: java.lang.String, eventInitDict: VRDisplayEventInit) = this()
-}
-
-@JSGlobal("VRDisplayEvent")
-@js.native
 object VRDisplayEvent
   extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ VRDisplayEventInit, VRDisplayEvent]
 

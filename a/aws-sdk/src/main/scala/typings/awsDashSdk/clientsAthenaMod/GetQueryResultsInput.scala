@@ -21,13 +21,9 @@ trait GetQueryResultsInput extends js.Object {
 
 object GetQueryResultsInput {
   @scala.inline
-  def apply(
-    QueryExecutionId: QueryExecutionId,
-    MaxResults: js.UndefOr[MaxQueryResults] = js.undefined,
-    NextToken: Token = null
-  ): GetQueryResultsInput = {
+  def apply(QueryExecutionId: QueryExecutionId, MaxResults: Int | Double = null, NextToken: Token = null): GetQueryResultsInput = {
     val __obj = js.Dynamic.literal(QueryExecutionId = QueryExecutionId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetQueryResultsInput]
   }

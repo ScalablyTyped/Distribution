@@ -1,7 +1,7 @@
 package typings.atWordpressCoreDashData
 
 import typings.atWordpressApiDashFetch.Anon_Formats
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.SchemaNs.User
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.User
 import typings.atWordpressCoreDashData.atWordpressCoreDashDataMod.Autosave
 import typings.atWordpressCoreDashData.atWordpressCoreDashDataMod.Entity
 import typings.atWordpressCoreDashData.atWordpressCoreDashDataStrings.create

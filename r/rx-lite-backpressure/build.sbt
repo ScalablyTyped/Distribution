@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rx-lite-backpressure"
-version := "4.0-dt-20180214Z-bc7ab3"
-scalaVersion := "2.12.9"
+version := "4.0-dt-20180214Z-39400c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-94909f",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-46a599",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

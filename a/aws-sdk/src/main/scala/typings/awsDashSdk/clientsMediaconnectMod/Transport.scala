@@ -40,18 +40,18 @@ object Transport {
   def apply(
     Protocol: Protocol,
     CidrAllowList: __listOf__string = null,
-    MaxBitrate: js.UndefOr[__integer] = js.undefined,
-    MaxLatency: js.UndefOr[__integer] = js.undefined,
+    MaxBitrate: Int | Double = null,
+    MaxLatency: Int | Double = null,
     RemoteId: __string = null,
-    SmoothingLatency: js.UndefOr[__integer] = js.undefined,
+    SmoothingLatency: Int | Double = null,
     StreamId: __string = null
   ): Transport = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any])
     if (CidrAllowList != null) __obj.updateDynamic("CidrAllowList")(CidrAllowList)
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate)
-    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency)
+    if (MaxBitrate != null) __obj.updateDynamic("MaxBitrate")(MaxBitrate.asInstanceOf[js.Any])
+    if (MaxLatency != null) __obj.updateDynamic("MaxLatency")(MaxLatency.asInstanceOf[js.Any])
     if (RemoteId != null) __obj.updateDynamic("RemoteId")(RemoteId)
-    if (!js.isUndefined(SmoothingLatency)) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency)
+    if (SmoothingLatency != null) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId)
     __obj.asInstanceOf[Transport]
   }

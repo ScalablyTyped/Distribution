@@ -1,5 +1,6 @@
 package typings.numeral
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,4 +57,8 @@ trait Numeral extends js.Object {
   def value(): Double = js.native
   def zeroFormat(format: String): Unit = js.native
 }
+
+@JSGlobal("numeral")
+@js.native
+object numeral extends TopLevel[Numeral]
 

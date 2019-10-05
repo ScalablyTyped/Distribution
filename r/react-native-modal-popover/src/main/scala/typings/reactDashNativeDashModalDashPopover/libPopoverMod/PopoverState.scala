@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashModalDashPopover.libPopoverMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNativeDashModalDashPopover.libPopoverGeometryMod.Geometry
 import typings.reactDashNativeDashModalDashPopover.libPopoverGeometryMod.Placement
 import typings.reactDashNativeDashModalDashPopover.libPopoverGeometryMod.Point

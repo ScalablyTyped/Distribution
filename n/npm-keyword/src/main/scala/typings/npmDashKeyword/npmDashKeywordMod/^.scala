@@ -1,6 +1,5 @@
 package typings.npmDashKeyword.npmDashKeywordMod
 
-import typings.npmDashKeyword.Anon_Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Anon_Count = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmKeyword */ js.Any = js.native
   /**
   	Get a list of npm packages with a certain keyword.
   	@param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.
@@ -43,24 +41,6 @@ object ^ extends js.Object {
   	*/
   def count(keyword: String): js.Promise[Double] = js.native
   def count(keyword: js.Array[String]): js.Promise[Double] = js.native
-  /**
-  	Get a list of npm packages with a certain keyword.
-  	@param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.
-  	@returns A list of packages having the specified keyword in their package.json `keyword` property.
-  	@example
-  	```
-  	import npmKeyword = require('npm-keyword');
-  	(async () => {
-  		console.log(await npmKeyword('gulpplugin'));
-  		//=> [{name: 'gulp-autoprefixer', description: '…'}, …]
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default(keyword: String): js.Promise[js.Array[PackageDescriptor]] = js.native
-  def default(keyword: String, options: Options): js.Promise[js.Array[PackageDescriptor]] = js.native
-  def default(keyword: js.Array[String]): js.Promise[js.Array[PackageDescriptor]] = js.native
-  def default(keyword: js.Array[String], options: Options): js.Promise[js.Array[PackageDescriptor]] = js.native
   /**
   	Get a list of npm package names with a certain keyword.
   	@param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.

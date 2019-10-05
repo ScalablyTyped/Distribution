@@ -102,11 +102,11 @@ trait Server extends js.Object {
 object Server {
   @scala.inline
   def apply(
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
-    BackupRetentionCount: js.UndefOr[Integer] = js.undefined,
+    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    BackupRetentionCount: Int | Double = null,
     CloudFormationStackArn: String = null,
     CreatedAt: Timestamp = null,
-    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
+    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
     Endpoint: String = null,
     Engine: String = null,
     EngineAttributes: EngineAttributes = null,
@@ -128,7 +128,7 @@ object Server {
   ): Server = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress)
-    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount)
+    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
     if (CloudFormationStackArn != null) __obj.updateDynamic("CloudFormationStackArn")(CloudFormationStackArn)
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup)

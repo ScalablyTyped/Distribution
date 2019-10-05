@@ -23,12 +23,12 @@ object DescribeFleetUtilizationInput {
   @scala.inline
   def apply(
     FleetIds: FleetIdList = null,
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
+    Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null
   ): DescribeFleetUtilizationInput = {
     val __obj = js.Dynamic.literal()
     if (FleetIds != null) __obj.updateDynamic("FleetIds")(FleetIds)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeFleetUtilizationInput]
   }

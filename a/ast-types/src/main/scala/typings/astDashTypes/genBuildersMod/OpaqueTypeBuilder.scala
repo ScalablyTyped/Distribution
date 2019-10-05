@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsIdImpltype
 import typings.astDashTypes.genKindsMod.FlowTypeKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.TypeParameterDeclarationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.OpaqueType
+import typings.astDashTypes.genNamedTypesMod.namedTypes.OpaqueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

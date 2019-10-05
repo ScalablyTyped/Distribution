@@ -30,7 +30,7 @@ package object eggMod {
   type IController = PlainObject[js.Any]
   type IMiddleware = PlainObject[js.Any]
   type IService = PlainObject[js.Any]
-  type IgnoreItem = String | RegExp | (js.Function1[/* ctx */ typings.eggDashView.eggMod.Context, Boolean])
+  type IgnoreItem = String | RegExp | (js.Function1[/* ctx */ Context, Boolean])
   type IgnoreOrMatch = IgnoreItem | js.Array[IgnoreItem]
   type LoggerLevel = typings.eggDashLogger.eggDashLoggerMod.LoggerLevel
   // plain object

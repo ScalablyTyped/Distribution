@@ -1,9 +1,7 @@
 package typings.meteorDashAstronomy
 
-import typings.meteorDashAstronomy.MeteorAstronomyNs.Class
-import typings.meteorDashAstronomy.MeteorAstronomyNs.ClassModel
-import typings.meteorDashAstronomy.MeteorAstronomyNs.Enum
-import typings.meteorDashAstronomy.MeteorAstronomyNs.EnumModel
+import typings.meteorDashAstronomy.MeteorAstronomy.ClassModel
+import typings.meteorDashAstronomy.MeteorAstronomy.EnumModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,16 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object `jagi:astronomyMod` extends js.Object {
   // tslint:disable-line:no-single-declare-module
-  @JSName("Class")
   @js.native
-  object ClassNs extends js.Object {
-    def create[T /* <: js.Object */](model: ClassModel[T]): Class[T] = js.native
+  object Class extends js.Object {
+    def create[T /* <: js.Object */](model: ClassModel[T]): typings.meteorDashAstronomy.MeteorAstronomy.Class[T] = js.native
   }
   
-  @JSName("Enum")
   @js.native
-  object EnumNs extends js.Object {
-    def create[T](model: EnumModel[T]): Enum[T] = js.native
+  object Enum extends js.Object {
+    def create[T](model: EnumModel[T]): typings.meteorDashAstronomy.MeteorAstronomy.Enum[T] = js.native
   }
   
 }

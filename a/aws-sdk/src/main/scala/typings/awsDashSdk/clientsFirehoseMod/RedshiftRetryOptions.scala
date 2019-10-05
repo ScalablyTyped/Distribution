@@ -13,9 +13,9 @@ trait RedshiftRetryOptions extends js.Object {
 
 object RedshiftRetryOptions {
   @scala.inline
-  def apply(DurationInSeconds: js.UndefOr[RedshiftRetryDurationInSeconds] = js.undefined): RedshiftRetryOptions = {
+  def apply(DurationInSeconds: Int | Double = null): RedshiftRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationInSeconds)) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds)
+    if (DurationInSeconds != null) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftRetryOptions]
   }
 }

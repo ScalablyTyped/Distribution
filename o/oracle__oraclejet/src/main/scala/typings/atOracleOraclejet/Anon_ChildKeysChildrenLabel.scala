@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.OptionsKeys
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.OptionsKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

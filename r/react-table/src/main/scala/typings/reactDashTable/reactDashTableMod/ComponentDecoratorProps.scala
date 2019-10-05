@@ -32,30 +32,30 @@ trait ComponentDecoratorProps extends js.Object {
 object ComponentDecoratorProps {
   @scala.inline
   def apply(
-    getLoadingProps: ComponentPropsGetter0,
-    getNoDataProps: ComponentPropsGetter0,
-    getPaginationProps: ComponentPropsGetter0,
-    getProps: ComponentPropsGetterRC | ComponentPropsGetterC | ComponentPropsGetter0,
-    getResizerProps: ComponentPropsGetter0,
-    getTableProps: ComponentPropsGetter0,
-    getTbodyProps: ComponentPropsGetter0,
-    getTdProps: ComponentPropsGetterRC | ComponentPropsGetterR,
-    getTfootProps: ComponentPropsGetter0,
-    getTfootTdProps: ComponentPropsGetterC,
-    getTfootTrProps: ComponentPropsGetter0,
-    getTheadFilterProps: ComponentPropsGetter0,
-    getTheadFilterThProps: ComponentPropsGetterC,
-    getTheadFilterTrProps: ComponentPropsGetter0,
-    getTheadGroupProps: ComponentPropsGetter0,
-    getTheadGroupThProps: ComponentPropsGetterC,
-    getTheadGroupTrProps: ComponentPropsGetter0,
-    getTheadProps: ComponentPropsGetter0,
-    getTheadThProps: ComponentPropsGetterC,
-    getTheadTrProps: ComponentPropsGetter0,
-    getTrGroupProps: ComponentPropsGetterR | ComponentPropsGetter0,
-    getTrProps: ComponentPropsGetterR | ComponentPropsGetter0
+    getLoadingProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getNoDataProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getPaginationProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getProps: (/* finalState */ js.Any, js.UndefOr[RowInfo], js.UndefOr[Column[js.Any]], js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getResizerProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTableProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTbodyProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTdProps: (/* finalState */ js.Any, js.UndefOr[RowInfo], js.UndefOr[Column[js.Any]], js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTfootProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTfootTdProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[Column[js.Any]], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTfootTrProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadFilterProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadFilterThProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[Column[js.Any]], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadFilterTrProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadGroupProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadGroupThProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[Column[js.Any]], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadGroupTrProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadThProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[Column[js.Any]], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTheadTrProps: (/* finalState */ js.Any, /* rowInfo */ js.UndefOr[scala.Nothing], /* column */ js.UndefOr[scala.Nothing], /* instance */ js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTrGroupProps: (/* finalState */ js.Any, js.UndefOr[RowInfo], js.UndefOr[scala.Nothing], js.UndefOr[js.Any]) => js.UndefOr[js.Object],
+    getTrProps: (/* finalState */ js.Any, js.UndefOr[RowInfo], js.UndefOr[scala.Nothing], js.UndefOr[js.Any]) => js.UndefOr[js.Object]
   ): ComponentDecoratorProps = {
-    val __obj = js.Dynamic.literal(getLoadingProps = getLoadingProps, getNoDataProps = getNoDataProps, getPaginationProps = getPaginationProps, getProps = getProps.asInstanceOf[js.Any], getResizerProps = getResizerProps, getTableProps = getTableProps, getTbodyProps = getTbodyProps, getTdProps = getTdProps.asInstanceOf[js.Any], getTfootProps = getTfootProps, getTfootTdProps = getTfootTdProps, getTfootTrProps = getTfootTrProps, getTheadFilterProps = getTheadFilterProps, getTheadFilterThProps = getTheadFilterThProps, getTheadFilterTrProps = getTheadFilterTrProps, getTheadGroupProps = getTheadGroupProps, getTheadGroupThProps = getTheadGroupThProps, getTheadGroupTrProps = getTheadGroupTrProps, getTheadProps = getTheadProps, getTheadThProps = getTheadThProps, getTheadTrProps = getTheadTrProps, getTrGroupProps = getTrGroupProps.asInstanceOf[js.Any], getTrProps = getTrProps.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getLoadingProps = js.Any.fromFunction4(getLoadingProps), getNoDataProps = js.Any.fromFunction4(getNoDataProps), getPaginationProps = js.Any.fromFunction4(getPaginationProps), getProps = js.Any.fromFunction4(getProps), getResizerProps = js.Any.fromFunction4(getResizerProps), getTableProps = js.Any.fromFunction4(getTableProps), getTbodyProps = js.Any.fromFunction4(getTbodyProps), getTdProps = js.Any.fromFunction4(getTdProps), getTfootProps = js.Any.fromFunction4(getTfootProps), getTfootTdProps = js.Any.fromFunction4(getTfootTdProps), getTfootTrProps = js.Any.fromFunction4(getTfootTrProps), getTheadFilterProps = js.Any.fromFunction4(getTheadFilterProps), getTheadFilterThProps = js.Any.fromFunction4(getTheadFilterThProps), getTheadFilterTrProps = js.Any.fromFunction4(getTheadFilterTrProps), getTheadGroupProps = js.Any.fromFunction4(getTheadGroupProps), getTheadGroupThProps = js.Any.fromFunction4(getTheadGroupThProps), getTheadGroupTrProps = js.Any.fromFunction4(getTheadGroupTrProps), getTheadProps = js.Any.fromFunction4(getTheadProps), getTheadThProps = js.Any.fromFunction4(getTheadThProps), getTheadTrProps = js.Any.fromFunction4(getTheadTrProps), getTrGroupProps = js.Any.fromFunction4(getTrGroupProps), getTrProps = js.Any.fromFunction4(getTrProps))
   
     __obj.asInstanceOf[ComponentDecoratorProps]
   }

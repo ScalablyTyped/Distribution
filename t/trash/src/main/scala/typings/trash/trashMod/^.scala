@@ -18,7 +18,9 @@ object ^ extends js.Object {
   })();
   ```
   */
-  def apply(input: String | js.Array[String]): js.Promise[Unit] = js.native
-  def apply(input: String | js.Array[String], options: Options): js.Promise[Unit] = js.native
+  def apply(input: String): js.Promise[Unit] = js.native
+  def apply(input: String, options: Options): js.Promise[Unit] = js.native
+  def apply(input: js.Array[String]): js.Promise[Unit] = js.native
+  def apply(input: js.Array[String], options: Options): js.Promise[Unit] = js.native
 }
 

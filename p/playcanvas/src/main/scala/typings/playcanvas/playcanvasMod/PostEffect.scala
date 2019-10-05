@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "PostEffect")
 @js.native
 class PostEffect protected ()
-  extends typings.playcanvas.pcNs.PostEffect {
-  def this(graphicsDevice: typings.playcanvas.pcNs.GraphicsDevice) = this()
+  extends typings.playcanvas.pc.PostEffect {
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
 }
 

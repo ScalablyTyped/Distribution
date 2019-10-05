@@ -4,8 +4,10 @@ import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrOb
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelectableDroppableTextDotTypesMod.ISelectableDroppableTextProps
 import typings.react.reactMod.FormEvent
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -105,9 +107,7 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
     * get rendered into a Panel while ResponsiveMode.Small would result in the Dropdown
     * options always getting rendered in a Panel.
     */
-  var responsiveMode: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
-  ] = js.undefined
+  var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
   /**
     * Keys of the selected items. If you provide this, you must maintain selection
     * state by observing onChange events and passing a new value in when changed.
@@ -139,13 +139,13 @@ object IDropdownProps {
     onChange: (/* event */ FormEvent[HTMLDivElement], /* option */ js.UndefOr[IDropdownOption], /* index */ js.UndefOr[Double]) => Unit = null,
     onChanged: (/* option */ IDropdownOption, /* index */ js.UndefOr[Double]) => Unit = null,
     onDismiss: () => Unit = null,
-    onRenderCaretDown: IRenderFunction[IDropdownProps] = null,
-    onRenderLabel: IRenderFunction[IDropdownProps] = null,
-    onRenderPlaceHolder: IRenderFunction[IDropdownProps] = null,
-    onRenderPlaceholder: IRenderFunction[IDropdownProps] = null,
-    onRenderTitle: IRenderFunction[js.Array[IDropdownOption]] = null,
+    onRenderCaretDown: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
+    onRenderLabel: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
+    onRenderPlaceHolder: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
+    onRenderPlaceholder: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
+    onRenderTitle: (/* props */ js.UndefOr[js.Array[IDropdownOption]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[IDropdownOption]], Element | Null]]) => Element | Null = null,
     placeHolder: String = null,
-    responsiveMode: typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode = null,
+    responsiveMode: ResponsiveMode = null,
     selectedKeys: js.Array[Double | String] = null,
     styles: IStyleFunctionOrObject[IDropdownStyleProps, IDropdownStyles] = null,
     theme: ITheme = null
@@ -162,11 +162,11 @@ object IDropdownProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction2(onChanged))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (onRenderCaretDown != null) __obj.updateDynamic("onRenderCaretDown")(onRenderCaretDown)
-    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(onRenderLabel)
-    if (onRenderPlaceHolder != null) __obj.updateDynamic("onRenderPlaceHolder")(onRenderPlaceHolder)
-    if (onRenderPlaceholder != null) __obj.updateDynamic("onRenderPlaceholder")(onRenderPlaceholder)
-    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(onRenderTitle)
+    if (onRenderCaretDown != null) __obj.updateDynamic("onRenderCaretDown")(js.Any.fromFunction2(onRenderCaretDown))
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
+    if (onRenderPlaceHolder != null) __obj.updateDynamic("onRenderPlaceHolder")(js.Any.fromFunction2(onRenderPlaceHolder))
+    if (onRenderPlaceholder != null) __obj.updateDynamic("onRenderPlaceholder")(js.Any.fromFunction2(onRenderPlaceholder))
+    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(js.Any.fromFunction2(onRenderTitle))
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
     if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)

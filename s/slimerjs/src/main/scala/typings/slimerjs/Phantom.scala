@@ -1,5 +1,6 @@
 package typings.slimerjs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,4 +26,8 @@ trait Phantom extends js.Object {
   // Callbacks
   def onError(msg: String, trace: js.Array[String]): js.Any = js.native
 }
+
+@JSGlobal("phantom")
+@js.native
+object phantom extends TopLevel[Phantom]
 

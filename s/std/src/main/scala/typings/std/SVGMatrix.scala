@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SVGMatrix")
 @js.native
-class SVGMatrixCls () extends DOMMatrix {
-  def this(init: java.lang.String) = this()
-  def this(init: js.Array[Double]) = this()
-}
-
-@JSGlobal("SVGMatrix")
-@js.native
 object SVGMatrix
   extends Instantiable0[DOMMatrix]
      with Instantiable1[(/* init */ js.Array[Double]) | (/* init */ java.lang.String), DOMMatrix] {

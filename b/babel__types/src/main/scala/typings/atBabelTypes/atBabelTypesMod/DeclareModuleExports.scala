@@ -40,3 +40,9 @@ object DeclareModuleExports {
   }
 }
 
+@JSImport("@babel/types", "declareModuleExports")
+@js.native
+object declareModuleExports extends js.Object {
+  def apply(typeAnnotation: TypeAnnotation): DeclareModuleExports = js.native
+}
+

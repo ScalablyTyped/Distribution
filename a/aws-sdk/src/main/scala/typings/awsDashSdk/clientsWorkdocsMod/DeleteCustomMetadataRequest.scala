@@ -32,7 +32,7 @@ object DeleteCustomMetadataRequest {
   def apply(
     ResourceId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    DeleteAll: js.UndefOr[BooleanType] = js.undefined,
+    DeleteAll: js.UndefOr[Boolean] = js.undefined,
     Keys: CustomMetadataKeyList = null,
     VersionId: DocumentVersionIdType = null
   ): DeleteCustomMetadataRequest = {

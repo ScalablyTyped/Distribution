@@ -2,8 +2,8 @@ package typings.foundationDashSites
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.foundationDashSites.FoundationSitesNs.Equalizer
-import typings.foundationDashSites.FoundationSitesNs.IEqualizerOptions
+import typings.foundationDashSites.FoundationSites.Equalizer
+import typings.foundationDashSites.FoundationSites.IEqualizerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.chaiDashUuid
 
-import typings.chaiDashUuid.chaiDashUuidMod.Global.ChaiNs.UuidVersion
+import typings.chaiDashUuid.chaiDashUuidMod.Global.Chai.UuidVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

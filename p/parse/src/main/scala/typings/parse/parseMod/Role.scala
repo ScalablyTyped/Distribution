@@ -21,6 +21,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Role protected ()
   extends typings.parse.nodeMod.Role {
-  def this(name: String, acl: typings.parse.ParseNs.ACL) = this()
+  def this(name: String, acl: typings.parse.Parse.ACL) = this()
 }
 

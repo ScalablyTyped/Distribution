@@ -17,7 +17,7 @@ trait SqsAction extends js.Object {
 
 object SqsAction {
   @scala.inline
-  def apply(queueUrl: QueueUrl, useBase64: js.UndefOr[UseBase64] = js.undefined): SqsAction = {
+  def apply(queueUrl: QueueUrl, useBase64: js.UndefOr[Boolean] = js.undefined): SqsAction = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl)
     if (!js.isUndefined(useBase64)) __obj.updateDynamic("useBase64")(useBase64)
     __obj.asInstanceOf[SqsAction]

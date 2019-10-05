@@ -22,12 +22,12 @@ object InlineDataFragmentSpread {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.InlineDataFragmentSpread,
     loc: Location,
-    metadata: Metadata,
     name: String,
-    selections: js.Array[Selection]
+    selections: js.Array[Selection],
+    metadata: Metadata = null
   ): InlineDataFragmentSpread = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, selections = selections)
-  
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, name = name, selections = selections)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineDataFragmentSpread]
   }
 }

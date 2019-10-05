@@ -2,10 +2,10 @@ package typings.chrome
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.chrome.chromeNs.declarativeContentNs.PageChangedEvent
-import typings.chrome.chromeNs.declarativeContentNs.PageStateMatcher
-import typings.chrome.chromeNs.declarativeContentNs.PageStateMatcherProperties
-import typings.chrome.chromeNs.declarativeContentNs.ShowPageAction
+import typings.chrome.chrome.declarativeContent.PageChangedEvent
+import typings.chrome.chrome.declarativeContent.PageStateMatcher
+import typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
+import typings.chrome.chrome.declarativeContent.ShowPageAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 trait TypeofdeclarativeContent extends js.Object {
   var PageStateMatcher: Instantiable1[
     /* options */ PageStateMatcherProperties, 
-    typings.chrome.chromeNs.declarativeContentNs.PageStateMatcher
+    typings.chrome.chrome.declarativeContent.PageStateMatcher
   ]
-  var PageStateMatcherProperties: Instantiable0[typings.chrome.chromeNs.declarativeContentNs.PageStateMatcherProperties]
-  var ShowPageAction: Instantiable0[typings.chrome.chromeNs.declarativeContentNs.ShowPageAction]
+  var PageStateMatcherProperties: Instantiable0[typings.chrome.chrome.declarativeContent.PageStateMatcherProperties]
+  var ShowPageAction: Instantiable0[typings.chrome.chrome.declarativeContent.ShowPageAction]
   var onPageChanged: PageChangedEvent
 }
 

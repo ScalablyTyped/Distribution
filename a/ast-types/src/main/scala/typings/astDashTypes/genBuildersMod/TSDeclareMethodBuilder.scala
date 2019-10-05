@@ -8,7 +8,7 @@ import typings.astDashTypes.genKindsMod.NumericLiteralKind
 import typings.astDashTypes.genKindsMod.PatternKind
 import typings.astDashTypes.genKindsMod.StringLiteralKind
 import typings.astDashTypes.genKindsMod.TSTypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSDeclareMethod
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSDeclareMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

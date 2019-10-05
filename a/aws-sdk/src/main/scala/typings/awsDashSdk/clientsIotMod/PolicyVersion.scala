@@ -23,7 +23,7 @@ object PolicyVersion {
   @scala.inline
   def apply(
     createDate: DateType = null,
-    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
+    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
     versionId: PolicyVersionId = null
   ): PolicyVersion = {
     val __obj = js.Dynamic.literal()

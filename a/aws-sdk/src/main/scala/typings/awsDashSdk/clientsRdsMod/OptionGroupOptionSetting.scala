@@ -45,8 +45,8 @@ object OptionGroupOptionSetting {
     AllowedValues: String = null,
     ApplyType: String = null,
     DefaultValue: String = null,
-    IsModifiable: js.UndefOr[Boolean] = js.undefined,
-    IsRequired: js.UndefOr[Boolean] = js.undefined,
+    IsModifiable: js.UndefOr[scala.Boolean] = js.undefined,
+    IsRequired: js.UndefOr[scala.Boolean] = js.undefined,
     MinimumEngineVersionPerAllowedValue: MinimumEngineVersionPerAllowedValueList = null,
     SettingDescription: String = null,
     SettingName: String = null

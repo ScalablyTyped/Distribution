@@ -10,5 +10,5 @@ package object atMaterialDashUiIconsMod {
   import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   import typings.react.reactMod.ComponentType
 
-  type SvgIconComponent = ComponentType[SvgIconProps] with (Instantiable1[/* props */ SvgIconProps, default])
+  type SvgIconComponent = (Instantiable1[/* props */ SvgIconProps, default]) with ComponentType[SvgIconProps]
 }

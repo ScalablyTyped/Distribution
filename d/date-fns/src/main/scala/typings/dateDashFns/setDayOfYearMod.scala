@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/setDayOfYear", JSImport.Namespace)
 @js.native
 object setDayOfYearMod extends js.Object {
-  def default(date: Double, dayOfYear: Double): Date = js.native
-  def default(date: Date, dayOfYear: Double): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double, dayOfYear: Double): Date = js.native
+    def apply(date: Date, dayOfYear: Double): Date = js.native
+  }
+  
 }
 

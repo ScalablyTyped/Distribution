@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashIndoorDashMap
 
-import typings.amapDashJsDashApiDashIndoorDashMap.AMapNs.IndoorMapNs.ShopCategory
+import typings.amapDashJsDashApiDashIndoorDashMap.AMap.IndoorMap.ShopCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

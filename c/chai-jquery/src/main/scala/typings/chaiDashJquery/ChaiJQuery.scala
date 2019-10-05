@@ -2,7 +2,7 @@ package typings.chaiDashJquery
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.chaiDashJquery.ChaiNs.Assertion
+import typings.chaiDashJquery.Chai.Assertion
 import typings.jquery.JQuery
 import typings.jquery.JQueryAjaxSettings
 import typings.jquery.JQueryAnimationOptions

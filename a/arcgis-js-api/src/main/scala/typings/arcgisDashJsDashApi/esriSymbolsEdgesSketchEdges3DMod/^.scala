@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsEdgesSketchEdges3DMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SketchEdges3DConstructor
+import typings.arcgisDashJsDashApi.__esri.SketchEdges3DConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.zenDashObservable.zenDashObservableMod
 
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservableNs.ObservableLike
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservableNs.Observer
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservableNs.Subscription
+import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.ObservableLike
+import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.Observer
+import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

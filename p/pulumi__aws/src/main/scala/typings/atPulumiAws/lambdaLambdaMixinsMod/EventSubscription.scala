@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaLambdaMixinsMod
 
-import typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function
+import typings.atPulumiAws.lambdaFunctionMod.Function
 import typings.atPulumiAws.lambdaPermissionMod.Permission
 import typings.atPulumiPulumi.atPulumiPulumiMod.ComponentResource
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions

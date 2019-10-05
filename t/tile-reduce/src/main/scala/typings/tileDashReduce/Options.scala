@@ -1,8 +1,8 @@
 package typings.tileDashReduce
 
-import typings.tileDashReduce.TileReduceNs.BBox
-import typings.tileDashReduce.TileReduceNs.Source
-import typings.tileDashReduce.TileReduceNs.Tile
+import typings.tileDashReduce.TileReduce.BBox
+import typings.tileDashReduce.TileReduce.Source
+import typings.tileDashReduce.TileReduce.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

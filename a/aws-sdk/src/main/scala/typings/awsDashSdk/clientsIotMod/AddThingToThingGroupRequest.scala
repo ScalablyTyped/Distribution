@@ -30,7 +30,7 @@ trait AddThingToThingGroupRequest extends js.Object {
 object AddThingToThingGroupRequest {
   @scala.inline
   def apply(
-    overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined,
+    overrideDynamicGroups: js.UndefOr[scala.Boolean] = js.undefined,
     thingArn: ThingArn = null,
     thingGroupArn: ThingGroupArn = null,
     thingGroupName: ThingGroupName = null,

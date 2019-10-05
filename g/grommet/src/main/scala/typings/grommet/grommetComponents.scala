@@ -253,7 +253,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Grid: ComponentType[
     GridProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.^.Grid.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Grid.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsGridMod.GridProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLDivElement], 
     typings.react.HTMLDivElement
@@ -269,7 +269,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Heading: ComponentType[
     HeadingProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
-  ] = typings.grommet.grommetMod.^.Heading.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Heading.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsHeadingMod.HeadingProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.HTMLAttributes[typings.react.HTMLHeadingElement], 
@@ -280,7 +280,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Image: ComponentType[
     ImageProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
-  ] = typings.grommet.grommetMod.^.Image.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Image.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsImageMod.ImageProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.ImgHTMLAttributes[typings.react.HTMLImageElement], 
     typings.react.HTMLImageElement
@@ -335,7 +335,7 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
       color
     ])
-  ] = typings.grommet.grommetMod.^.Paragraph.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Paragraph.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsParagraphMod.ParagraphProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.HTMLAttributes[typings.react.HTMLParagraphElement], 
@@ -385,9 +385,9 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Select: ComponentType[typings.grommet.componentsSelectMod.SelectProps] = js.constructorOf[typings.grommet.grommetMod.Select].asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSelectMod.SelectProps]]
   @scala.inline
-  def SkipLink: ComponentType[typings.grommet.componentsSkipLinkMod.SkipLinkProps] = typings.grommet.grommetMod.^.SkipLink.asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSkipLinkMod.SkipLinkProps]]
+  def SkipLink: ComponentType[typings.grommet.componentsSkipLinkMod.SkipLinkProps] = typings.grommet.grommetMod.SkipLink.asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSkipLinkMod.SkipLinkProps]]
   @scala.inline
-  def SkipLinkTarget: ComponentType[typings.grommet.componentsSkipLinkTargetMod.SkipLinkTargetProps] = typings.grommet.grommetMod.^.SkipLinkTarget.asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSkipLinkTargetMod.SkipLinkTargetProps]]
+  def SkipLinkTarget: ComponentType[typings.grommet.componentsSkipLinkTargetMod.SkipLinkTargetProps] = typings.grommet.grommetMod.SkipLinkTarget.asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSkipLinkTargetMod.SkipLinkTargetProps]]
   @scala.inline
   def SkipLinks: ComponentType[typings.grommet.componentsSkipLinksMod.SkipLinksProps] = js.constructorOf[typings.grommet.grommetMod.SkipLinks].asInstanceOf[typings.react.reactMod.ComponentType[typings.grommet.componentsSkipLinksMod.SkipLinksProps]]
   @scala.inline
@@ -415,7 +415,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Table: ComponentType[
     TableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
-  ] = typings.grommet.grommetMod.^.Table.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Table.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableMod.TableProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.TableHTMLAttributes[typings.react.HTMLTableElement], 
     typings.react.HTMLTableElement
@@ -423,7 +423,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TableBody: ComponentType[
     TableBodyProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.^.TableBody.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TableBody.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableBodyMod.TableBodyProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLTableSectionElement], 
     typings.react.HTMLTableSectionElement
@@ -431,7 +431,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TableCell: ComponentType[
     TableCellProps with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
-  ] = typings.grommet.grommetMod.^.TableCell.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TableCell.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableCellMod.TableCellProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.TdHTMLAttributes[typings.react.HTMLTableDataCellElement], 
     typings.react.HTMLTableDataCellElement
@@ -439,7 +439,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TableFooter: ComponentType[
     TableFooterProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.^.TableFooter.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TableFooter.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableFooterMod.TableFooterProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLTableSectionElement], 
     typings.react.HTMLTableSectionElement
@@ -447,7 +447,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TableHeader: ComponentType[
     TableHeaderProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.^.TableHeader.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TableHeader.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableHeaderMod.TableHeaderProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLTableSectionElement], 
     typings.react.HTMLTableSectionElement
@@ -455,7 +455,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TableRow: ComponentType[
     TableRowProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement])
-  ] = typings.grommet.grommetMod.^.TableRow.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TableRow.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTableRowMod.TableRowProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLTableRowElement], 
     typings.react.HTMLTableRowElement
@@ -471,7 +471,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Text: ComponentType[
     TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
-  ] = typings.grommet.grommetMod.^.Text.asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Text.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTextMod.TextProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.HTMLAttributes[typings.react.HTMLSpanElement], 

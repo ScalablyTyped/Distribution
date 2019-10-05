@@ -59,29 +59,29 @@ object DescribeThingRegistrationTaskResponse {
   @scala.inline
   def apply(
     creationDate: CreationDate = null,
-    failureCount: js.UndefOr[Count] = js.undefined,
+    failureCount: Int | Double = null,
     inputFileBucket: RegistryS3BucketName = null,
     inputFileKey: RegistryS3KeyName = null,
     lastModifiedDate: LastModifiedDate = null,
     message: ErrorMessage = null,
-    percentageProgress: js.UndefOr[Percentage] = js.undefined,
+    percentageProgress: Int | Double = null,
     roleArn: RoleArn = null,
     status: Status = null,
-    successCount: js.UndefOr[Count] = js.undefined,
+    successCount: Int | Double = null,
     taskId: TaskId = null,
     templateBody: TemplateBody = null
   ): DescribeThingRegistrationTaskResponse = {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (!js.isUndefined(failureCount)) __obj.updateDynamic("failureCount")(failureCount)
+    if (failureCount != null) __obj.updateDynamic("failureCount")(failureCount.asInstanceOf[js.Any])
     if (inputFileBucket != null) __obj.updateDynamic("inputFileBucket")(inputFileBucket)
     if (inputFileKey != null) __obj.updateDynamic("inputFileKey")(inputFileKey)
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(percentageProgress)) __obj.updateDynamic("percentageProgress")(percentageProgress)
+    if (percentageProgress != null) __obj.updateDynamic("percentageProgress")(percentageProgress.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount)
+    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
     if (taskId != null) __obj.updateDynamic("taskId")(taskId)
     if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody)
     __obj.asInstanceOf[DescribeThingRegistrationTaskResponse]

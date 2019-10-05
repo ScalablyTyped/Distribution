@@ -1,5 +1,6 @@
 package typings.ol.controlMousePositionMod
 
+import typings.ol.coordinateMod.Coordinate
 import typings.ol.coordinateMod.CoordinateFormat
 import typings.ol.projMod.ProjectionLike
 import typings.std.HTMLElement
@@ -20,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     className: String = null,
-    coordinateFormat: CoordinateFormat = null,
+    coordinateFormat: /* p0 */ js.UndefOr[Coordinate] => String = null,
     projection: ProjectionLike = null,
     render: /* p0 */ typings.ol.mapEventMod.default => Unit = null,
     target: HTMLElement | String = null,
@@ -28,7 +29,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(coordinateFormat)
+    if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(js.Any.fromFunction1(coordinateFormat))
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

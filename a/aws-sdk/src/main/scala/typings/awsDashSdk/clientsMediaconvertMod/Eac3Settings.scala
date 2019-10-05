@@ -95,46 +95,46 @@ object Eac3Settings {
   @scala.inline
   def apply(
     AttenuationControl: Eac3AttenuationControl = null,
-    Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined,
+    Bitrate: Int | Double = null,
     BitstreamMode: Eac3BitstreamMode = null,
     CodingMode: Eac3CodingMode = null,
     DcFilter: Eac3DcFilter = null,
-    Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined,
+    Dialnorm: Int | Double = null,
     DynamicRangeCompressionLine: Eac3DynamicRangeCompressionLine = null,
     DynamicRangeCompressionRf: Eac3DynamicRangeCompressionRf = null,
     LfeControl: Eac3LfeControl = null,
     LfeFilter: Eac3LfeFilter = null,
-    LoRoCenterMixLevel: js.UndefOr[__doubleMinNegative60Max3] = js.undefined,
-    LoRoSurroundMixLevel: js.UndefOr[__doubleMinNegative60MaxNegative1] = js.undefined,
-    LtRtCenterMixLevel: js.UndefOr[__doubleMinNegative60Max3] = js.undefined,
-    LtRtSurroundMixLevel: js.UndefOr[__doubleMinNegative60MaxNegative1] = js.undefined,
+    LoRoCenterMixLevel: Int | Double = null,
+    LoRoSurroundMixLevel: Int | Double = null,
+    LtRtCenterMixLevel: Int | Double = null,
+    LtRtSurroundMixLevel: Int | Double = null,
     MetadataControl: Eac3MetadataControl = null,
     PassthroughControl: Eac3PassthroughControl = null,
     PhaseControl: Eac3PhaseControl = null,
-    SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined,
+    SampleRate: Int | Double = null,
     StereoDownmix: Eac3StereoDownmix = null,
     SurroundExMode: Eac3SurroundExMode = null,
     SurroundMode: Eac3SurroundMode = null
   ): Eac3Settings = {
     val __obj = js.Dynamic.literal()
     if (AttenuationControl != null) __obj.updateDynamic("AttenuationControl")(AttenuationControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate)
+    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
     if (BitstreamMode != null) __obj.updateDynamic("BitstreamMode")(BitstreamMode.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
     if (DcFilter != null) __obj.updateDynamic("DcFilter")(DcFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(Dialnorm)) __obj.updateDynamic("Dialnorm")(Dialnorm)
+    if (Dialnorm != null) __obj.updateDynamic("Dialnorm")(Dialnorm.asInstanceOf[js.Any])
     if (DynamicRangeCompressionLine != null) __obj.updateDynamic("DynamicRangeCompressionLine")(DynamicRangeCompressionLine.asInstanceOf[js.Any])
     if (DynamicRangeCompressionRf != null) __obj.updateDynamic("DynamicRangeCompressionRf")(DynamicRangeCompressionRf.asInstanceOf[js.Any])
     if (LfeControl != null) __obj.updateDynamic("LfeControl")(LfeControl.asInstanceOf[js.Any])
     if (LfeFilter != null) __obj.updateDynamic("LfeFilter")(LfeFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(LoRoCenterMixLevel)) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel)
-    if (!js.isUndefined(LoRoSurroundMixLevel)) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel)
-    if (!js.isUndefined(LtRtCenterMixLevel)) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel)
-    if (!js.isUndefined(LtRtSurroundMixLevel)) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel)
+    if (LoRoCenterMixLevel != null) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel.asInstanceOf[js.Any])
+    if (LoRoSurroundMixLevel != null) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel.asInstanceOf[js.Any])
+    if (LtRtCenterMixLevel != null) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel.asInstanceOf[js.Any])
+    if (LtRtSurroundMixLevel != null) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel.asInstanceOf[js.Any])
     if (MetadataControl != null) __obj.updateDynamic("MetadataControl")(MetadataControl.asInstanceOf[js.Any])
     if (PassthroughControl != null) __obj.updateDynamic("PassthroughControl")(PassthroughControl.asInstanceOf[js.Any])
     if (PhaseControl != null) __obj.updateDynamic("PhaseControl")(PhaseControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate)
+    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
     if (StereoDownmix != null) __obj.updateDynamic("StereoDownmix")(StereoDownmix.asInstanceOf[js.Any])
     if (SurroundExMode != null) __obj.updateDynamic("SurroundExMode")(SurroundExMode.asInstanceOf[js.Any])
     if (SurroundMode != null) __obj.updateDynamic("SurroundMode")(SurroundMode.asInstanceOf[js.Any])

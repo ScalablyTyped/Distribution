@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueCatalogTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.glueNs.CatalogTablePartitionKey
-import typings.atPulumiAws.typesOutputMod.glueNs.CatalogTableStorageDescriptor
+import typings.atPulumiAws.typesOutputMod.glue.CatalogTablePartitionKey
+import typings.atPulumiAws.typesOutputMod.glue.CatalogTableStorageDescriptor
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

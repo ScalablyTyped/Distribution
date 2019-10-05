@@ -16,18 +16,16 @@ object distEnhancersMod extends js.Object {
   val propNames: js.Array[String] = js.native
   val propTypes: PropTypesMapping = js.native
   val propValidators: PropValidators = js.native
-  @JSName("background")
   @js.native
-  object backgroundNs extends js.Object {
+  object background extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("borderRadius")
   @js.native
-  object borderRadiusNs extends js.Object {
+  object borderRadius extends js.Object {
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
@@ -38,9 +36,8 @@ object distEnhancersMod extends js.Object {
     
   }
   
-  @JSName("borders")
   @js.native
-  object bordersNs extends js.Object {
+  object borders extends js.Object {
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
@@ -54,126 +51,112 @@ object distEnhancersMod extends js.Object {
     
   }
   
-  @JSName("boxShadow")
   @js.native
-  object boxShadowNs extends js.Object {
+  object boxShadow extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("dimensions")
   @js.native
-  object dimensionsNs extends js.Object {
+  object dimensions extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("flex")
   @js.native
-  object flexNs extends js.Object {
+  object flex extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("grid")
   @js.native
-  object gridNs extends js.Object {
+  object grid extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("interaction")
   @js.native
-  object interactionNs extends js.Object {
+  object interaction extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("layout")
   @js.native
-  object layoutNs extends js.Object {
+  object layout extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("list")
   @js.native
-  object listNs extends js.Object {
+  object list extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("opacity")
   @js.native
-  object opacityNs extends js.Object {
+  object opacity extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("overflow")
   @js.native
-  object overflowNs extends js.Object {
+  object overflow extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("position")
   @js.native
-  object positionNs extends js.Object {
+  object position extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("spacing")
   @js.native
-  object spacingNs extends js.Object {
+  object spacing extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("text")
   @js.native
-  object textNs extends js.Object {
+  object text extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("transform")
   @js.native
-  object transformNs extends js.Object {
+  object transform extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native
     val propValidators: PropValidators = js.native
   }
   
-  @JSName("transition")
   @js.native
-  object transitionNs extends js.Object {
+  object transition extends js.Object {
     val propAliases: PropAliases = js.native
     val propEnhancers: PropEnhancers = js.native
     val propTypes: PropTypesMapping = js.native

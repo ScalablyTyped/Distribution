@@ -1,6 +1,6 @@
 package typings.electron
 
-import typings.electron.ElectronNs.WebviewTag
+import typings.electron.Electron.WebviewTag
 import typings.electron.electronStrings.webview
 import scala.scalajs.js
 import scala.scalajs.js.`|`

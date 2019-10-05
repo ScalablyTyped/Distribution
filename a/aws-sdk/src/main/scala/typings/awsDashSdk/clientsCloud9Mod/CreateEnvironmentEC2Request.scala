@@ -40,14 +40,14 @@ object CreateEnvironmentEC2Request {
   def apply(
     instanceType: InstanceType,
     name: EnvironmentName,
-    automaticStopTimeMinutes: js.UndefOr[AutomaticStopTimeMinutes] = js.undefined,
+    automaticStopTimeMinutes: Int | Double = null,
     clientRequestToken: ClientRequestToken = null,
     description: EnvironmentDescription = null,
     ownerArn: UserArn = null,
     subnetId: SubnetId = null
   ): CreateEnvironmentEC2Request = {
     val __obj = js.Dynamic.literal(instanceType = instanceType, name = name)
-    if (!js.isUndefined(automaticStopTimeMinutes)) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes)
+    if (automaticStopTimeMinutes != null) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
     if (description != null) __obj.updateDynamic("description")(description)
     if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn)

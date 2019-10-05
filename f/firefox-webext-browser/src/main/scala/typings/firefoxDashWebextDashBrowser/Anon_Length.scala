@@ -1,6 +1,6 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.DescriptionStyleType
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.DescriptionStyleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

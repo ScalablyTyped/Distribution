@@ -1,7 +1,7 @@
 package typings.mocha
 
-import typings.mocha.MochaNs.Interface
-import typings.mocha.MochaNs.Reporter
+import typings.mocha.Mocha.Interface
+import typings.mocha.Mocha.Reporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

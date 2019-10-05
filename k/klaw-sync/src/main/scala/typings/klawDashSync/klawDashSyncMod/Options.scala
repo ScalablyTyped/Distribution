@@ -53,7 +53,7 @@ object Options {
   @scala.inline
   def apply(
     depthLimit: Int | Double = null,
-    filter: Filter = null,
+    filter: /* item */ Item => Boolean = null,
     fs: Anon_Path = null,
     nodir: js.UndefOr[Boolean] = js.undefined,
     nofile: js.UndefOr[Boolean] = js.undefined,
@@ -61,7 +61,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir)
     if (!js.isUndefined(nofile)) __obj.updateDynamic("nofile")(nofile)

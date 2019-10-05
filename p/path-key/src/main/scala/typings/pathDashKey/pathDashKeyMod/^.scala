@@ -1,6 +1,5 @@
 package typings.pathDashKey.pathDashKeyMod
 
-import typings.pathDashKey.Anon_Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,7 @@ object ^ extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pathKey(options?: pathKey.Options): string;
   // export = pathKey;
-  @JSName("default")
-  var default_Original: Anon_Default = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pathKey */ js.Any = js.native
   /**
   	Get the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable key cross-platform.
   	@example
@@ -26,21 +24,5 @@ object ^ extends js.Object {
   	*/
   def apply(): String = js.native
   def apply(options: Options): String = js.native
-  /**
-  	Get the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable key cross-platform.
-  	@example
-  	```
-  	import pathKey = require('path-key');
-  	const key = pathKey();
-  	//=> 'PATH'
-  	const PATH = process.env[key];
-  	//=> '/usr/local/bin:/usr/bin:/bin'
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pathKey(options?: pathKey.Options): string;
-  // export = pathKey;
-  def default(): String = js.native
-  def default(options: Options): String = js.native
 }
 

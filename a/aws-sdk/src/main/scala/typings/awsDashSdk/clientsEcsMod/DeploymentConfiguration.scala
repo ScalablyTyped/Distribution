@@ -17,13 +17,10 @@ trait DeploymentConfiguration extends js.Object {
 
 object DeploymentConfiguration {
   @scala.inline
-  def apply(
-    maximumPercent: js.UndefOr[BoxedInteger] = js.undefined,
-    minimumHealthyPercent: js.UndefOr[BoxedInteger] = js.undefined
-  ): DeploymentConfiguration = {
+  def apply(maximumPercent: Int | scala.Double = null, minimumHealthyPercent: Int | scala.Double = null): DeploymentConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maximumPercent)) __obj.updateDynamic("maximumPercent")(maximumPercent)
-    if (!js.isUndefined(minimumHealthyPercent)) __obj.updateDynamic("minimumHealthyPercent")(minimumHealthyPercent)
+    if (maximumPercent != null) __obj.updateDynamic("maximumPercent")(maximumPercent.asInstanceOf[js.Any])
+    if (minimumHealthyPercent != null) __obj.updateDynamic("minimumHealthyPercent")(minimumHealthyPercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfiguration]
   }
 }

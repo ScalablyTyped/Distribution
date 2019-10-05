@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cfgDeliveryChannelMod
 
-import typings.atPulumiAws.typesOutputMod.cfgNs.DeliveryChannelSnapshotDeliveryProperties
+import typings.atPulumiAws.typesOutputMod.cfg.DeliveryChannelSnapshotDeliveryProperties
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,8 +1,8 @@
 package typings.draftDashJs.draftDashJsMod
 
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.DecoratorsNs.DraftDecoratorType
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorChangeType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Decorators.DraftDecoratorType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftInlineStyle
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorChangeType
 import typings.immutable.immutableMod.List
 import typings.immutable.immutableMod.OrderedMap
 import typings.immutable.immutableMod.Stack
@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "EditorState")
 @js.native
 class EditorState ()
-  extends typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState {
+  extends typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState {
   /* CompleteClass */
   override def getAllowUndo(): Boolean = js.native
   /* CompleteClass */
   override def getBlockTree(blockKey: String): List[_] = js.native
   /* CompleteClass */
-  override def getCurrentContent(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState = js.native
+  override def getCurrentContent(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState = js.native
   /**
     * Get the appropriate inline style for the editor state. If an
     * override is in place, use it. Otherwise, the current style is
@@ -44,13 +44,13 @@ class EditorState ()
   /* CompleteClass */
   override def getLastChangeType(): EditorChangeType = js.native
   /* CompleteClass */
-  override def getNativelyRenderedContent(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState = js.native
+  override def getNativelyRenderedContent(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState = js.native
   /* CompleteClass */
-  override def getRedoStack(): Stack[typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState] = js.native
+  override def getRedoStack(): Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState] = js.native
   /* CompleteClass */
-  override def getSelection(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState = js.native
+  override def getSelection(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState = js.native
   /* CompleteClass */
-  override def getUndoStack(): Stack[typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState] = js.native
+  override def getUndoStack(): Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState] = js.native
   /* CompleteClass */
   override def isInCompositionMode(): Boolean = js.native
   /* CompleteClass */
@@ -76,17 +76,17 @@ object EditorState extends js.Object {
     * To forcibly move the DOM selection, see `EditorState.forceSelection`.
     */
   def acceptSelection(
-    editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
-    selection: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
-  def create(config: js.Object): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
-  def createEmpty(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
-  def createEmpty(decorator: DraftDecoratorType): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
-  def createWithContent(contentState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
+    selection: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
+  def create(config: js.Object): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
+  def createEmpty(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
+  def createEmpty(decorator: DraftDecoratorType): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
+  def createWithContent(contentState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   def createWithContent(
-    contentState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState,
+    contentState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState,
     decorator: DraftDecoratorType
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * At times, we need to force the DOM selection to be where we
     * need it to be. This can occur when the anchor or focus nodes
@@ -100,46 +100,46 @@ object EditorState extends js.Object {
     * in ContentState.
     */
   def forceSelection(
-    editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
-    selection: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
+    selection: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * Force focus to the end of the editor. This is useful in scenarios
     * where we want to programmatically focus the input and it makes sense
     * to allow the user to continue working seamlessly.
     */
-  def moveFocusToEnd(editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  def moveFocusToEnd(editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * Move selection to the end of the editor without forcing focus.
     */
-  def moveSelectionToEnd(editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  def moveSelectionToEnd(editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * Push the current ContentState onto the undo stack if it should be
     * considered a boundary state, and set the provided ContentState as the
     * new current content.
     */
   def push(
-    editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
-    contentState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState,
+    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
+    contentState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState,
     changeType: EditorChangeType
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * Make the top ContentState in the redo stack the new current content and
     * push the current content onto the undo stack.
     */
-  def redo(editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  def redo(editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   def set(
-    editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
+    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
     put: js.Object
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   def setInlineStyleOverride(
-    editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
+    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
     inlineStyleOverride: DraftInlineStyle
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
   /**
     * Make the top ContentState in the undo stack the new current content and
     * push the current content onto the redo stack.
     */
-  def undo(editorState: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState = js.native
+  def undo(editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState = js.native
 }
 

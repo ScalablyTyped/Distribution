@@ -2,7 +2,7 @@ package typings.reactDashInputDashCalendar
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashInputDashCalendar.reactInputCalendarNs.ReactInputCalendar
+import typings.reactDashInputDashCalendar.reactInputCalendar.ReactInputCalendar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

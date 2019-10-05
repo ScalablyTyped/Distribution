@@ -24,13 +24,18 @@ trait ColorPresentation extends js.Object {
   var textEdit: js.UndefOr[TextEdit] = js.undefined
 }
 
-object ColorPresentation {
-  @scala.inline
-  def apply(label: String, additionalTextEdits: js.Array[TextEdit] = null, textEdit: TextEdit = null): ColorPresentation = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits)
-    if (textEdit != null) __obj.updateDynamic("textEdit")(textEdit)
-    __obj.asInstanceOf[ColorPresentation]
-  }
+@JSImport("vscode-languageserver-types", "ColorPresentation")
+@js.native
+object ColorPresentation extends js.Object {
+  /**
+    * Creates a new ColorInformation literal.
+    */
+  def create(label: String): ColorPresentation = js.native
+  def create(label: String, textEdit: TextEdit): ColorPresentation = js.native
+  def create(label: String, textEdit: TextEdit, additionalTextEdits: js.Array[TextEdit]): ColorPresentation = js.native
+  /**
+    * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.atJupyterlabCoreutils
 
-import typings.atJupyterlabCoreutils.libInterfacesMod.IPollNs.State
+import typings.atJupyterlabCoreutils.libInterfacesMod.IPoll.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

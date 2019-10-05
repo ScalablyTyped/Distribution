@@ -1,7 +1,7 @@
 package typings.urbanairshipDashCordova
 
-import typings.urbanairshipDashCordova.UrbanAirshipPluginNs.PushEvent
-import typings.urbanairshipDashCordova.UrbanAirshipPluginNs.RegistrationEvent
+import typings.urbanairshipDashCordova.UrbanAirshipPlugin.PushEvent
+import typings.urbanairshipDashCordova.UrbanAirshipPlugin.RegistrationEvent
 import typings.urbanairshipDashCordova.urbanairshipDashCordovaStrings.urbanairshipDOTpush
 import typings.urbanairshipDashCordova.urbanairshipDashCordovaStrings.urbanairshipDOTregistration
 import scala.scalajs.js

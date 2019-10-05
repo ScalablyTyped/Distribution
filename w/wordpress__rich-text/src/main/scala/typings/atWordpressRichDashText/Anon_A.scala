@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait Anon_A extends js.Object {
   var element: Element
   var multilineTag: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 120 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
   ] = js.undefined
   var multilineWrapperTags: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
     ]
   ] = js.undefined
   var range: js.UndefOr[Range] = js.undefined
@@ -23,9 +23,9 @@ object Anon_A {
   @scala.inline
   def apply(
     element: Element,
-    multilineTag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 120 */ js.Any = null,
+    multilineTag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any = null,
     multilineWrapperTags: js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
     ] = null,
     range: Range = null
   ): Anon_A = {

@@ -5,12 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait OptimisticResponseConfig extends js.Object {
-  var operation: OperationDescriptor = js.native
-  var response: PayloadData = js.native
-  @JSName("updater")
-  var updater_Original: SelectorStoreUpdater[js.Object] = js.native
-  def updater(store: RecordSourceSelectorProxy, data: js.Object): Unit = js.native
+  val operation: OperationDescriptor
+  val response: js.UndefOr[PayloadData | Null] = js.undefined
+  val updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+}
+
+object OptimisticResponseConfig {
+  @scala.inline
+  def apply(
+    operation: OperationDescriptor,
+    response: PayloadData = null,
+    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null
+  ): OptimisticResponseConfig = {
+    val __obj = js.Dynamic.literal(operation = operation)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
+    __obj.asInstanceOf[OptimisticResponseConfig]
+  }
 }
 

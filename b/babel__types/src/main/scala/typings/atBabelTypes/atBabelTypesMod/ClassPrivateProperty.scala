@@ -44,3 +44,12 @@ object ClassPrivateProperty {
   }
 }
 
+@JSImport("@babel/types", "classPrivateProperty")
+@js.native
+object classPrivateProperty extends js.Object {
+  def apply(key: PrivateName): ClassPrivateProperty = js.native
+  def apply(key: PrivateName, value: Null, decorators: js.Array[Decorator]): ClassPrivateProperty = js.native
+  def apply(key: PrivateName, value: Expression): ClassPrivateProperty = js.native
+  def apply(key: PrivateName, value: Expression, decorators: js.Array[Decorator]): ClassPrivateProperty = js.native
+}
+

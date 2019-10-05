@@ -1,6 +1,7 @@
 package typings.reactDashFa.reactDashFaMod
 
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +9,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-fa", "IconStack")
 @js.native
-class IconStackCls protected ()
-  extends Component[IconStackProps, ComponentState, js.Any] {
-  def this(props: IconStackProps) = this()
-  def this(props: IconStackProps, context: js.Any) = this()
-}
+object IconStack extends TopLevel[ComponentClass[IconStackProps, ComponentState]]
 

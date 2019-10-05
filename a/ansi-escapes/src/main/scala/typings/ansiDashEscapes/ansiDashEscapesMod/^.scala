@@ -1,6 +1,5 @@
 package typings.ansiDashEscapes.ansiDashEscapesMod
 
-import typings.ansiDashEscapes.Anon_Beep
 import typings.ansiDashEscapes.Anon_Cwd
 import typings.node.Buffer
 import scala.scalajs.js
@@ -55,7 +54,7 @@ object ^ extends js.Object {
   	*/
   var cursorShow: String = js.native
   // TODO: remove this in the next major version
-  var default: Anon_Beep = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ansiEscapes */ js.Any = js.native
   /**
   	Erase the screen from the current line down to the bottom of the screen.
   	*/

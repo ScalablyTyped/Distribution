@@ -13,7 +13,7 @@ trait EnableEbsEncryptionByDefaultResult extends js.Object {
 
 object EnableEbsEncryptionByDefaultResult {
   @scala.inline
-  def apply(EbsEncryptionByDefault: js.UndefOr[Boolean] = js.undefined): EnableEbsEncryptionByDefaultResult = {
+  def apply(EbsEncryptionByDefault: js.UndefOr[scala.Boolean] = js.undefined): EnableEbsEncryptionByDefaultResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(EbsEncryptionByDefault)) __obj.updateDynamic("EbsEncryptionByDefault")(EbsEncryptionByDefault)
     __obj.asInstanceOf[EnableEbsEncryptionByDefaultResult]

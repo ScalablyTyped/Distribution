@@ -22,12 +22,13 @@ trait ClickAwayListenerProps extends js.Object {
 object ClickAwayListenerProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     onClickAway: ChangeEvent[js.Object] => Unit,
+    children: ReactNode = null,
     mouseEvent: onClick | onMouseDown | onMouseUp | `false` = null,
     touchEvent: onTouchStart | onTouchEnd | `false` = null
   ): ClickAwayListenerProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onClickAway = js.Any.fromFunction1(onClickAway))
+    val __obj = js.Dynamic.literal(onClickAway = js.Any.fromFunction1(onClickAway))
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (mouseEvent != null) __obj.updateDynamic("mouseEvent")(mouseEvent.asInstanceOf[js.Any])
     if (touchEvent != null) __obj.updateDynamic("touchEvent")(touchEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickAwayListenerProps]

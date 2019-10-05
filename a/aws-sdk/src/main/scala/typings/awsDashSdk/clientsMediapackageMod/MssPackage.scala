@@ -21,14 +21,14 @@ object MssPackage {
   @scala.inline
   def apply(
     Encryption: MssEncryption = null,
-    ManifestWindowSeconds: js.UndefOr[__integer] = js.undefined,
-    SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined,
+    ManifestWindowSeconds: Int | Double = null,
+    SegmentDurationSeconds: Int | Double = null,
     StreamSelection: StreamSelection = null
   ): MssPackage = {
     val __obj = js.Dynamic.literal()
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(ManifestWindowSeconds)) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds)
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds)
+    if (ManifestWindowSeconds != null) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds.asInstanceOf[js.Any])
+    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection)
     __obj.asInstanceOf[MssPackage]
   }

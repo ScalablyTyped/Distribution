@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriLayersIntegratedMeshLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IntegratedMeshLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.IntegratedMeshLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneServiceVersion
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpatialReference
+import typings.arcgisDashJsDashApi.__esri.IntegratedMeshLayer
+import typings.arcgisDashJsDashApi.__esri.IntegratedMeshLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.SceneServiceVersion
+import typings.arcgisDashJsDashApi.__esri.SpatialReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

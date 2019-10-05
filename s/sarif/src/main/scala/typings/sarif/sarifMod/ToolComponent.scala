@@ -1,7 +1,7 @@
 package typings.sarif.sarifMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sarif.sarifMod.ToolComponentNs.contents
+import typings.sarif.sarifMod.ToolComponent.contents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ToolComponent extends js.Object {
   /**
     * The kinds of data contained in this object.
     */
-  var contents: js.UndefOr[js.Array[typings.sarif.sarifMod.ToolComponentNs.contents]] = js.undefined
+  var contents: js.UndefOr[js.Array[contents]] = js.undefined
   /**
     * The binary version of the tool component's primary executable file expressed as four non-negative integers
     * separated by a period (for operating systems that express file versions in this way).
@@ -135,67 +135,14 @@ trait ToolComponent extends js.Object {
   var version: js.UndefOr[String] = js.undefined
 }
 
-object ToolComponent {
-  @scala.inline
-  def apply(
-    name: String,
-    associatedComponent: ToolComponentReference = null,
-    contents: js.Array[contents] = null,
-    dottedQuadFileVersion: String = null,
-    downloadUri: String = null,
-    fullDescription: MultiformatMessageString = null,
-    fullName: String = null,
-    globalMessageStrings: StringDictionary[MultiformatMessageString] = null,
-    guid: String = null,
-    informationUri: String = null,
-    isComprehensive: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    localizedDataSemanticVersion: String = null,
-    locations: js.Array[ArtifactLocation] = null,
-    minimumRequiredLocalizedDataSemanticVersion: String = null,
-    notifications: js.Array[ReportingDescriptor] = null,
-    organization: String = null,
-    product: String = null,
-    productSuite: String = null,
-    properties: PropertyBag = null,
-    releaseDateUtc: String = null,
-    rules: js.Array[ReportingDescriptor] = null,
-    semanticVersion: String = null,
-    shortDescription: MultiformatMessageString = null,
-    supportedTaxonomies: js.Array[ToolComponentReference] = null,
-    taxa: js.Array[ReportingDescriptor] = null,
-    translationMetadata: TranslationMetadata = null,
-    version: String = null
-  ): ToolComponent = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (associatedComponent != null) __obj.updateDynamic("associatedComponent")(associatedComponent)
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (dottedQuadFileVersion != null) __obj.updateDynamic("dottedQuadFileVersion")(dottedQuadFileVersion)
-    if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri)
-    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
-    if (globalMessageStrings != null) __obj.updateDynamic("globalMessageStrings")(globalMessageStrings)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (informationUri != null) __obj.updateDynamic("informationUri")(informationUri)
-    if (!js.isUndefined(isComprehensive)) __obj.updateDynamic("isComprehensive")(isComprehensive)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (localizedDataSemanticVersion != null) __obj.updateDynamic("localizedDataSemanticVersion")(localizedDataSemanticVersion)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (minimumRequiredLocalizedDataSemanticVersion != null) __obj.updateDynamic("minimumRequiredLocalizedDataSemanticVersion")(minimumRequiredLocalizedDataSemanticVersion)
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
-    if (organization != null) __obj.updateDynamic("organization")(organization)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (productSuite != null) __obj.updateDynamic("productSuite")(productSuite)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (releaseDateUtc != null) __obj.updateDynamic("releaseDateUtc")(releaseDateUtc)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (semanticVersion != null) __obj.updateDynamic("semanticVersion")(semanticVersion)
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
-    if (supportedTaxonomies != null) __obj.updateDynamic("supportedTaxonomies")(supportedTaxonomies)
-    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
-    if (translationMetadata != null) __obj.updateDynamic("translationMetadata")(translationMetadata)
-    if (version != null) __obj.updateDynamic("version")(version)
-    __obj.asInstanceOf[ToolComponent]
-  }
+@JSImport("sarif", "ToolComponent")
+@js.native
+object ToolComponent extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.sarif.sarifStrings.localizedData
+    - typings.sarif.sarifStrings.nonLocalizedData
+  */
+  trait contents extends js.Object
+  
 }
 

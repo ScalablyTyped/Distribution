@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "commercetools__enzyme-extensions"
-version := "3.0-dt-20190219Z-26e132"
-scalaVersion := "2.12.9"
+version := "3.0-dt-20190219Z-9a32da"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-f1664d",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-f980df",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-1ea0bd",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-e91184",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-06c3ac",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-b3917f",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-e5f29b",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-0023d2",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-cca292",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

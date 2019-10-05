@@ -89,13 +89,13 @@ object Finding {
     userAttributes: UserAttributeList,
     assetAttributes: AssetAttributes = null,
     assetType: AssetType = null,
-    confidence: js.UndefOr[IocConfidence] = js.undefined,
+    confidence: Int | Double = null,
     description: Text = null,
     id: FindingId = null,
-    indicatorOfCompromise: js.UndefOr[Bool] = js.undefined,
-    numericSeverity: js.UndefOr[NumericSeverity] = js.undefined,
+    indicatorOfCompromise: js.UndefOr[Boolean] = js.undefined,
+    numericSeverity: Int | Double = null,
     recommendation: Text = null,
-    schemaVersion: js.UndefOr[NumericVersion] = js.undefined,
+    schemaVersion: Int | Double = null,
     service: ServiceName = null,
     serviceAttributes: InspectorServiceAttributes = null,
     severity: Severity = null,
@@ -104,13 +104,13 @@ object Finding {
     val __obj = js.Dynamic.literal(arn = arn, attributes = attributes, createdAt = createdAt, updatedAt = updatedAt, userAttributes = userAttributes)
     if (assetAttributes != null) __obj.updateDynamic("assetAttributes")(assetAttributes)
     if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence)
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(indicatorOfCompromise)) __obj.updateDynamic("indicatorOfCompromise")(indicatorOfCompromise)
-    if (!js.isUndefined(numericSeverity)) __obj.updateDynamic("numericSeverity")(numericSeverity)
+    if (numericSeverity != null) __obj.updateDynamic("numericSeverity")(numericSeverity.asInstanceOf[js.Any])
     if (recommendation != null) __obj.updateDynamic("recommendation")(recommendation)
-    if (!js.isUndefined(schemaVersion)) __obj.updateDynamic("schemaVersion")(schemaVersion)
+    if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service)
     if (serviceAttributes != null) __obj.updateDynamic("serviceAttributes")(serviceAttributes)
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])

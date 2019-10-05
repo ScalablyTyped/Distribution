@@ -14,13 +14,6 @@ trait FocusEvent extends UIEvent {
 
 @JSGlobal("FocusEvent")
 @js.native
-class FocusEventCls protected () extends FocusEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: FocusEventInit) = this()
-}
-
-@JSGlobal("FocusEvent")
-@js.native
 object FocusEvent
   extends Instantiable1[/* type */ java.lang.String, FocusEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ FocusEventInit, FocusEvent]

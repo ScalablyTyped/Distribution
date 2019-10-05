@@ -71,7 +71,7 @@ object Route {
   @scala.inline
   def apply(
     RouteKey: SelectionKey,
-    ApiKeyRequired: js.UndefOr[__boolean] = js.undefined,
+    ApiKeyRequired: js.UndefOr[Boolean] = js.undefined,
     AuthorizationScopes: AuthorizationScopes = null,
     AuthorizationType: AuthorizationType = null,
     AuthorizerId: Id = null,

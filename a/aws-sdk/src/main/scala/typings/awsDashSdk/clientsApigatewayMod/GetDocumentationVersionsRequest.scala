@@ -21,9 +21,9 @@ trait GetDocumentationVersionsRequest extends js.Object {
 
 object GetDocumentationVersionsRequest {
   @scala.inline
-  def apply(restApiId: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetDocumentationVersionsRequest = {
+  def apply(restApiId: String, limit: Int | scala.Double = null, position: String = null): GetDocumentationVersionsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[GetDocumentationVersionsRequest]
   }

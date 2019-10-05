@@ -17,7 +17,7 @@ trait GCMChannelRequest extends js.Object {
 
 object GCMChannelRequest {
   @scala.inline
-  def apply(ApiKey: __string, Enabled: js.UndefOr[__boolean] = js.undefined): GCMChannelRequest = {
+  def apply(ApiKey: __string, Enabled: js.UndefOr[Boolean] = js.undefined): GCMChannelRequest = {
     val __obj = js.Dynamic.literal(ApiKey = ApiKey)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[GCMChannelRequest]

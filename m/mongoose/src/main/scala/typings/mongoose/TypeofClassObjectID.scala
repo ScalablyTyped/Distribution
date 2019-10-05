@@ -45,11 +45,11 @@ trait TypeofClassObjectID extends Instantiable0[ObjectID] {
 
 @js.native
 trait TypeofClassObjectId
-  extends Instantiable1[/* key */ String, typings.mongoose.mongooseMod.SchemaNs.TypesNs.ObjectId]
+  extends Instantiable1[/* key */ String, typings.mongoose.mongooseMod.Schema.Types.ObjectId]
      with Instantiable2[
       /* key */ String, 
       /* options */ js.Any, 
-      typings.mongoose.mongooseMod.SchemaNs.TypesNs.ObjectId
+      typings.mongoose.mongooseMod.Schema.Types.ObjectId
     ] {
   /** This schema type's name, to defend against minifiers that mangle function names. */
   var schemaName: String = js.native

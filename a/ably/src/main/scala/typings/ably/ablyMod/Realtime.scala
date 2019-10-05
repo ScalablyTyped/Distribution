@@ -1,6 +1,6 @@
 package typings.ably.ablyMod
 
-import typings.ably.ablyMod.TypesNs.RealtimeCallbacks
+import typings.ably.ablyMod.Types.RealtimeCallbacks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

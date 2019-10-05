@@ -17,10 +17,10 @@ trait WeightedQuantileLoss extends js.Object {
 
 object WeightedQuantileLoss {
   @scala.inline
-  def apply(LossValue: js.UndefOr[Double] = js.undefined, Quantile: js.UndefOr[Double] = js.undefined): WeightedQuantileLoss = {
+  def apply(LossValue: Int | scala.Double = null, Quantile: Int | scala.Double = null): WeightedQuantileLoss = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(LossValue)) __obj.updateDynamic("LossValue")(LossValue)
-    if (!js.isUndefined(Quantile)) __obj.updateDynamic("Quantile")(Quantile)
+    if (LossValue != null) __obj.updateDynamic("LossValue")(LossValue.asInstanceOf[js.Any])
+    if (Quantile != null) __obj.updateDynamic("Quantile")(Quantile.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedQuantileLoss]
   }
 }

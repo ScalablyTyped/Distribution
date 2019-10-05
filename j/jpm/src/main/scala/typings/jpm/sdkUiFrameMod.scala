@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/frame", JSImport.Namespace)
 @js.native
 object sdkUiFrameMod extends js.Object {
-  def Frame(options: Anon_Event): typings.jpm.FFAddonSDKNs.Frame = js.native
+  def Frame(options: Anon_Event): typings.jpm.FFAddonSDK.Frame = js.native
 }
 

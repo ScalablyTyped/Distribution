@@ -1,7 +1,7 @@
 package typings.menubar
 
-import typings.menubar.MenubarNs.MenubarApp
-import typings.menubar.MenubarNs.MenubarOptions
+import typings.menubar.Menubar.MenubarApp
+import typings.menubar.Menubar.MenubarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

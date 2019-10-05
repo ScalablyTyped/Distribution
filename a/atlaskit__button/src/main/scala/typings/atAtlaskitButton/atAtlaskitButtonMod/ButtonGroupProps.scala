@@ -14,9 +14,10 @@ trait ButtonGroupProps extends js.Object {
 
 object ButtonGroupProps {
   @scala.inline
-  def apply(children: ReactNode, appearance: ButtonAppearances = null): ButtonGroupProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def apply(appearance: ButtonAppearances = null, children: ReactNode = null): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
     if (appearance != null) __obj.updateDynamic("appearance")(appearance)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupProps]
   }
 }

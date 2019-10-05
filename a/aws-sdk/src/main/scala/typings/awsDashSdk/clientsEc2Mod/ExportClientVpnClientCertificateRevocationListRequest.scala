@@ -17,7 +17,7 @@ trait ExportClientVpnClientCertificateRevocationListRequest extends js.Object {
 
 object ExportClientVpnClientCertificateRevocationListRequest {
   @scala.inline
-  def apply(ClientVpnEndpointId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ExportClientVpnClientCertificateRevocationListRequest = {
+  def apply(ClientVpnEndpointId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ExportClientVpnClientCertificateRevocationListRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ExportClientVpnClientCertificateRevocationListRequest]

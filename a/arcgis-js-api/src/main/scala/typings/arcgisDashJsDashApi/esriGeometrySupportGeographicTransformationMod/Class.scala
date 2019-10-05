@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportGeographicTransformationMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeographicTransformation
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeographicTransformationStep
+import typings.arcgisDashJsDashApi.__esri.GeographicTransformation
+import typings.arcgisDashJsDashApi.__esri.GeographicTransformationStep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

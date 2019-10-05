@@ -16,3 +16,9 @@ class PartitionAll[TResult, TInput] protected () extends Transformer[TResult, TI
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "partitionAll")
+@js.native
+object partitionAll extends js.Object {
+  def apply[TResult, TInput](n: Double): Transducer[TInput, js.Array[TInput]] = js.native
+}
+

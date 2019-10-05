@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "TransformStatic")
 @js.native
 class TransformStatic ()
-  extends typings.pixiDotJs.PIXINs.TransformStatic
+  extends typings.pixiDotJs.PIXI.TransformStatic
 

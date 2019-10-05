@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/isSaturday", JSImport.Namespace)
 @js.native
 object isSaturdayMod extends js.Object {
-  def default(date: Double): Boolean = js.native
-  def default(date: Date): Boolean = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double): Boolean = js.native
+    def apply(date: Date): Boolean = js.native
+  }
+  
 }
 

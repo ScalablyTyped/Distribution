@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Asset")
 @js.native
 class Asset protected ()
-  extends typings.playcanvas.pcNs.Asset {
+  extends typings.playcanvas.pc.Asset {
   def this(name: String, `type`: String, file: js.Any) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any) = this()
 }

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("millisecond", JSImport.Namespace)
 @js.native
 object millisecondMod extends js.Object {
-  def apply(ms: String | Double): Double = js.native
+  def apply(ms: String): Double = js.native
+  def apply(ms: Double): Double = js.native
 }
 

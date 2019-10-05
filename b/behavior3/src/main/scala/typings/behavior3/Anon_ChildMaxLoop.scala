@@ -1,6 +1,6 @@
 package typings.behavior3
 
-import typings.behavior3.b3Ns.BaseNode
+import typings.behavior3.b3.BaseNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

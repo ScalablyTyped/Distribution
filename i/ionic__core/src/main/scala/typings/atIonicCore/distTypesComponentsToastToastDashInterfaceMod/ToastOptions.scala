@@ -5,6 +5,7 @@ import typings.atIonicCore.atIonicCoreStrings.middle
 import typings.atIonicCore.atIonicCoreStrings.top
 import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,11 +39,11 @@ object ToastOptions {
     color: Color = null,
     cssClass: String | js.Array[String] = null,
     duration: Int | Double = null,
-    enterAnimation: AnimationBuilder = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     header: String = null,
     id: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: AnimationBuilder = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     message: String = null,
     mode: Mode = null,
     position: top | bottom | middle = null,
@@ -56,11 +57,11 @@ object ToastOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose)
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (message != null) __obj.updateDynamic("message")(message)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

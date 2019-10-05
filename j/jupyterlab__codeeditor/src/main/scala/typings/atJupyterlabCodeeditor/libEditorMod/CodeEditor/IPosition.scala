@@ -1,0 +1,30 @@
+package typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor
+
+import typings.atPhosphorCoreutils.libJsonMod.JSONObject
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * A zero-based position in the editor.
+  */
+trait IPosition extends JSONObject {
+  /**
+    * The cursor column number.
+    */
+  val column: Double
+  /**
+    * The cursor line number.
+    */
+  val line: Double
+}
+
+object IPosition {
+  @scala.inline
+  def apply(column: Double, line: Double): IPosition = {
+    val __obj = js.Dynamic.literal(column = column, line = line)
+  
+    __obj.asInstanceOf[IPosition]
+  }
+}
+

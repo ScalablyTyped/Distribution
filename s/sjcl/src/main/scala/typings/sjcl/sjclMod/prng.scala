@@ -1,5 +1,6 @@
 package typings.sjcl.sjclMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,4 +10,8 @@ import scala.scalajs.js.annotation._
 class prng protected () extends SjclRandom {
   def this(defaultParanoia: Double) = this()
 }
+
+@JSImport("sjcl", "prng")
+@js.native
+object prng extends TopLevel[SjclRandomStatic]
 

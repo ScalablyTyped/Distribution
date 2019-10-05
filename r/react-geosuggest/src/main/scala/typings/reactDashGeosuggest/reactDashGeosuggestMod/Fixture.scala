@@ -1,6 +1,6 @@
 package typings.reactDashGeosuggest.reactDashGeosuggestMod
 
-import typings.googlemaps.googleNs.mapsNs.LatLng
+import typings.googlemaps.google.maps.LatLng
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

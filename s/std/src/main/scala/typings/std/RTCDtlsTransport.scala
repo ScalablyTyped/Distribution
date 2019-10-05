@@ -76,9 +76,5 @@ trait RTCDtlsTransport
 
 @JSGlobal("RTCDtlsTransport")
 @js.native
-class RTCDtlsTransportCls () extends RTCDtlsTransport
-
-@JSGlobal("RTCDtlsTransport")
-@js.native
 object RTCDtlsTransport extends Instantiable0[RTCDtlsTransport]
 

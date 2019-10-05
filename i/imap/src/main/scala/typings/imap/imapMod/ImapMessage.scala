@@ -3,8 +3,8 @@ package typings.imap.imapMod
 import typings.imap.imapStrings.attributes
 import typings.imap.imapStrings.body
 import typings.imap.imapStrings.end
-import typings.node.NodeJSNs.EventEmitter
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.EventEmitter
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

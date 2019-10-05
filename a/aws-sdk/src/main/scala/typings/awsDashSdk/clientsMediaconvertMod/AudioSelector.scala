@@ -56,9 +56,9 @@ object AudioSelector {
     DefaultSelection: AudioDefaultSelection = null,
     ExternalAudioFileInput: __stringPatternS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = null,
     LanguageCode: LanguageCode = null,
-    Offset: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined,
+    Offset: Int | Double = null,
     Pids: __listOf__integerMin1Max2147483647 = null,
-    ProgramSelection: js.UndefOr[__integerMin0Max8] = js.undefined,
+    ProgramSelection: Int | Double = null,
     RemixSettings: RemixSettings = null,
     SelectorType: AudioSelectorType = null,
     Tracks: __listOf__integerMin1Max2147483647 = null
@@ -68,9 +68,9 @@ object AudioSelector {
     if (DefaultSelection != null) __obj.updateDynamic("DefaultSelection")(DefaultSelection.asInstanceOf[js.Any])
     if (ExternalAudioFileInput != null) __obj.updateDynamic("ExternalAudioFileInput")(ExternalAudioFileInput)
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Offset)) __obj.updateDynamic("Offset")(Offset)
+    if (Offset != null) __obj.updateDynamic("Offset")(Offset.asInstanceOf[js.Any])
     if (Pids != null) __obj.updateDynamic("Pids")(Pids)
-    if (!js.isUndefined(ProgramSelection)) __obj.updateDynamic("ProgramSelection")(ProgramSelection)
+    if (ProgramSelection != null) __obj.updateDynamic("ProgramSelection")(ProgramSelection.asInstanceOf[js.Any])
     if (RemixSettings != null) __obj.updateDynamic("RemixSettings")(RemixSettings)
     if (SelectorType != null) __obj.updateDynamic("SelectorType")(SelectorType.asInstanceOf[js.Any])
     if (Tracks != null) __obj.updateDynamic("Tracks")(Tracks)

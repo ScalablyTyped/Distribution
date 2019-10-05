@@ -1,7 +1,7 @@
 package typings.bitcoinjsDashLib
 
 import typings.bitcoinjsDashLib.bitcoinjsDashLibMod.Network
-import typings.bitcoinjsDashLib.bitcoinjsDashLibMod.paymentsNs.Redeem
+import typings.bitcoinjsDashLib.bitcoinjsDashLibMod.payments.Redeem
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

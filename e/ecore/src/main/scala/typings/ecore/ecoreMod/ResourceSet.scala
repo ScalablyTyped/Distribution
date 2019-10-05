@@ -13,3 +13,9 @@ trait ResourceSet extends EObject {
   def toJSON(): js.Any = js.native
 }
 
+@JSImport("ecore", "ResourceSet")
+@js.native
+object ResourceSet extends js.Object {
+  def create(): ResourceSet = js.native
+}
+

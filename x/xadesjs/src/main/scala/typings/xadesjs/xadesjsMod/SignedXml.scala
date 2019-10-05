@@ -4,7 +4,7 @@ import typings.std.Algorithm
 import typings.std.CryptoKey
 import typings.std.Document
 import typings.std.Element
-import typings.xadesjs.xadesjsMod.xmlNs.QualifyingProperties
+import typings.xadesjs.xadesjsMod.xml.QualifyingProperties
 import typings.xmldsigjs.xmldsigjsMod.X509Certificate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,8 +17,8 @@ class SignedXml ()
   def this(node: Document) = this()
   def this(node: Element) = this()
   val Properties: QualifyingProperties | Null = js.native
-  val SignedProperties: typings.xadesjs.xadesjsMod.xmlNs.SignedProperties = js.native
-  val UnsignedProperties: typings.xadesjs.xadesjsMod.xmlNs.UnsignedProperties = js.native
+  val SignedProperties: typings.xadesjs.xadesjsMod.xml.SignedProperties = js.native
+  val UnsignedProperties: typings.xadesjs.xadesjsMod.xml.UnsignedProperties = js.native
   var properties: QualifyingProperties | Null = js.native
   /* protected */ def ApplySignOptions(
     signature: typings.xmldsigjs.xmldsigjsMod.Signature,

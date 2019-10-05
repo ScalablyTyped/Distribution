@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "PointText")
 @js.native
 class PointText protected ()
-  extends typings.paper.paperNs.PointText {
+  extends typings.paper.paper.PointText {
   /**
     * Creates a point text item from the properties described by an object literal.
     * @param object - an object literal containing properties describing the path's attributes
@@ -17,6 +17,6 @@ class PointText protected ()
     * Creates a point text item
     * @param point - the position where the text will start
     */
-  def this(point: typings.paper.paperNs.Point) = this()
+  def this(point: typings.paper.paper.Point) = this()
 }
 

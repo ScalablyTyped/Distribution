@@ -1,6 +1,6 @@
 package typings.hapi
 
-import typings.hapi.hapiMod.UtilNs.Dictionary
+import typings.hapi.hapiMod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

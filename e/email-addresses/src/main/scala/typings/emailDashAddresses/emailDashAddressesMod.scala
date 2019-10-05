@@ -1,9 +1,9 @@
 package typings.emailDashAddresses
 
-import typings.emailDashAddresses.emailAddressesNs.Options
-import typings.emailDashAddresses.emailAddressesNs.ParsedGroup
-import typings.emailDashAddresses.emailAddressesNs.ParsedMailbox
-import typings.emailDashAddresses.emailAddressesNs.ParsedResult
+import typings.emailDashAddresses.emailAddresses.Options
+import typings.emailDashAddresses.emailAddresses.ParsedGroup
+import typings.emailDashAddresses.emailAddresses.ParsedMailbox
+import typings.emailDashAddresses.emailAddresses.ParsedResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

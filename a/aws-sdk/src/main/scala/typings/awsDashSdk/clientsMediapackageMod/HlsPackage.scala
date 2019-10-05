@@ -62,13 +62,13 @@ object HlsPackage {
     AdTriggers: AdTriggers = null,
     AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
     Encryption: HlsEncryption = null,
-    IncludeIframeOnlyStream: js.UndefOr[__boolean] = js.undefined,
+    IncludeIframeOnlyStream: js.UndefOr[Boolean] = js.undefined,
     PlaylistType: PlaylistType = null,
-    PlaylistWindowSeconds: js.UndefOr[__integer] = js.undefined,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[__integer] = js.undefined,
-    SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined,
+    PlaylistWindowSeconds: Int | Double = null,
+    ProgramDateTimeIntervalSeconds: Int | Double = null,
+    SegmentDurationSeconds: Int | Double = null,
     StreamSelection: StreamSelection = null,
-    UseAudioRenditionGroup: js.UndefOr[__boolean] = js.undefined
+    UseAudioRenditionGroup: js.UndefOr[Boolean] = js.undefined
   ): HlsPackage = {
     val __obj = js.Dynamic.literal()
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
@@ -77,9 +77,9 @@ object HlsPackage {
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream)
     if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PlaylistWindowSeconds)) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds)
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds)
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds)
+    if (PlaylistWindowSeconds != null) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.asInstanceOf[js.Any])
+    if (ProgramDateTimeIntervalSeconds != null) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.asInstanceOf[js.Any])
+    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection)
     if (!js.isUndefined(UseAudioRenditionGroup)) __obj.updateDynamic("UseAudioRenditionGroup")(UseAudioRenditionGroup)
     __obj.asInstanceOf[HlsPackage]

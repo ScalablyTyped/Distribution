@@ -1,6 +1,6 @@
 package typings.reactDashDevDashUtils
 
-import typings.webpack.webpackMod.StatsNs.ToJsonOutput
+import typings.webpack.webpackMod.Stats.ToJsonOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.dynatable
 
-import typings.dynatable.JQueryDynatableNs.Options
+import typings.dynatable.JQueryDynatable.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

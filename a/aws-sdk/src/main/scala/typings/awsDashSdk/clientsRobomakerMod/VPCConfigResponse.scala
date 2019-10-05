@@ -26,7 +26,7 @@ trait VPCConfigResponse extends js.Object {
 object VPCConfigResponse {
   @scala.inline
   def apply(
-    assignPublicIp: js.UndefOr[Boolean] = js.undefined,
+    assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined,
     securityGroups: SecurityGroups = null,
     subnets: Subnets = null,
     vpcId: GenericString = null

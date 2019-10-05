@@ -1,8 +1,8 @@
 package typings.arangodb.atArangodbFoxxSessionsMod
 
-import typings.arangodb.ArangoDBNs.Collection
-import typings.arangodb.FoxxNs.SessionStorage
-import typings.arangodb.FoxxNs.SessionTransport
+import typings.arangodb.ArangoDB.Collection
+import typings.arangodb.Foxx.SessionStorage
+import typings.arangodb.Foxx.SessionTransport
 import typings.arangodb.arangodbStrings.cookie
 import typings.arangodb.arangodbStrings.header
 import scala.scalajs.js

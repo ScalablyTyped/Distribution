@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNativeDashTabDashView.Anon_Measured
 import typings.reactDashNativeDashTabDashView.Anon_Remove
 import scala.scalajs.js

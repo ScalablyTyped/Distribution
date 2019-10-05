@@ -17,6 +17,8 @@ trait GaOptions extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var sampleRate: js.UndefOr[Double] = js.undefined
   var siteSpeedSampleRate: js.UndefOr[Double] = js.undefined
+  var storage: js.UndefOr[String] = js.undefined
+  var storeGac: js.UndefOr[Boolean] = js.undefined
   var userId: js.UndefOr[String] = js.undefined
 }
 
@@ -35,6 +37,8 @@ object GaOptions {
     name: String = null,
     sampleRate: Int | Double = null,
     siteSpeedSampleRate: Int | Double = null,
+    storage: String = null,
+    storeGac: js.UndefOr[Boolean] = js.undefined,
     userId: String = null
   ): GaOptions = {
     val __obj = js.Dynamic.literal()
@@ -50,6 +54,8 @@ object GaOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (siteSpeedSampleRate != null) __obj.updateDynamic("siteSpeedSampleRate")(siteSpeedSampleRate.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (!js.isUndefined(storeGac)) __obj.updateDynamic("storeGac")(storeGac)
     if (userId != null) __obj.updateDynamic("userId")(userId)
     __obj.asInstanceOf[GaOptions]
   }

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLocateMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Locate
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocateProperties
+import typings.arcgisDashJsDashApi.__esri.Locate
+import typings.arcgisDashJsDashApi.__esri.LocateProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

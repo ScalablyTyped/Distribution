@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocTypesArray
 import typings.astDashTypes.genKindsMod.TSTypeKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSIntersectionType
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSIntersectionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

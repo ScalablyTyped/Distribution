@@ -3,7 +3,7 @@ package typings.rest.interceptorMod
 import typings.rest.restMod.Meta
 import typings.rest.restMod.Request
 import typings.rest.restMod.Response
-import typings.when.WhenNs.Promise
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

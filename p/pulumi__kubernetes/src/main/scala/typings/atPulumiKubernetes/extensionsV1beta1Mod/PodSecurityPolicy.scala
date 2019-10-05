@@ -19,13 +19,10 @@ class PodSecurityPolicy protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.PodSecurityPolicy) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.PodSecurityPolicy
-  ) = this()
-  def this(
-    name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.PodSecurityPolicy,
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.PodSecurityPolicy,
     opts: CustomResourceOptions
   ) = this()
 }

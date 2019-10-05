@@ -1,6 +1,6 @@
 package typings.twilioDashChat.twilioDashChatMod
 
-import typings.twilioDashChat.libPushnotificationMod.PushNotificationNs.Descriptor
+import typings.twilioDashChat.libPushnotificationMod.PushNotification.Descriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore.stylesTransitionsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,4 +31,8 @@ object Duration {
     __obj.asInstanceOf[Duration]
   }
 }
+
+@JSImport("@material-ui/core/styles/transitions", "duration")
+@js.native
+object duration extends TopLevel[Duration]
 

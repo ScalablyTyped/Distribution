@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.ResultCallback
+import typings.webgme.GmeCommon.ResultCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

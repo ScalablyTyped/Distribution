@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Rectangle")
 @js.native
 class Rectangle protected ()
-  extends typings.paper.paperNs.Rectangle {
+  extends typings.paper.paper.Rectangle {
   /**
     * Creates a Rectangle object.
     * @param object - an object containing properties to be set on the rectangle.
@@ -17,19 +17,19 @@ class Rectangle protected ()
     * Creates a new rectangle object from the passed rectangle object.
     * @param rt - the rectangle to copy from
     */
-  def this(rt: typings.paper.paperNs.Rectangle) = this()
+  def this(rt: typings.paper.paper.Rectangle) = this()
   /**
     * Creates a rectangle object from the passed points. These do not necessarily need to be the top left and bottom right corners, the constructor figures out how to fit a rectangle between them.
     * @param from - The first point defining the rectangle
     * @param to - The second point defining the rectangle
     */
-  def this(from: typings.paper.paperNs.Point, to: typings.paper.paperNs.Point) = this()
+  def this(from: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
   /**
     * Creates a Rectangle object.
     * @param point - the top-left point of the rectangle
     * @param size - the size of the rectangle
     */
-  def this(point: typings.paper.paperNs.Point, size: typings.paper.paperNs.Size) = this()
+  def this(point: typings.paper.paper.Point, size: typings.paper.paper.Size) = this()
   /**
     * Creates a rectangle object.
     * @param x - the left coordinate

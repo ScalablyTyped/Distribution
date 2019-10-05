@@ -1,7 +1,7 @@
 package typings.gulpDashPostcss.gulpDashPostcssMod
 
 import typings.gulpDashPostcss.Anon_Options
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`

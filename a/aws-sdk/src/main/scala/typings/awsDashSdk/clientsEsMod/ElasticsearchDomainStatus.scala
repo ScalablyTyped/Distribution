@@ -102,8 +102,8 @@ object ElasticsearchDomainStatus {
     AccessPolicies: PolicyDocument = null,
     AdvancedOptions: AdvancedOptions = null,
     CognitoOptions: CognitoOptions = null,
-    Created: js.UndefOr[Boolean] = js.undefined,
-    Deleted: js.UndefOr[Boolean] = js.undefined,
+    Created: js.UndefOr[scala.Boolean] = js.undefined,
+    Deleted: js.UndefOr[scala.Boolean] = js.undefined,
     DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
     ElasticsearchVersion: ElasticsearchVersionString = null,
@@ -112,10 +112,10 @@ object ElasticsearchDomainStatus {
     Endpoints: EndpointsMap = null,
     LogPublishingOptions: LogPublishingOptions = null,
     NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptions = null,
-    Processing: js.UndefOr[Boolean] = js.undefined,
+    Processing: js.UndefOr[scala.Boolean] = js.undefined,
     ServiceSoftwareOptions: ServiceSoftwareOptions = null,
     SnapshotOptions: SnapshotOptions = null,
-    UpgradeProcessing: js.UndefOr[Boolean] = js.undefined,
+    UpgradeProcessing: js.UndefOr[scala.Boolean] = js.undefined,
     VPCOptions: VPCDerivedInfo = null
   ): ElasticsearchDomainStatus = {
     val __obj = js.Dynamic.literal(ARN = ARN, DomainId = DomainId, DomainName = DomainName, ElasticsearchClusterConfig = ElasticsearchClusterConfig)

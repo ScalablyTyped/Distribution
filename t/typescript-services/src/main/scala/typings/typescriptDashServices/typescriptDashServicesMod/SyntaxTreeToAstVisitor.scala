@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SyntaxTreeToAstVisitor")
 @js.native
 class SyntaxTreeToAstVisitor protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SyntaxTreeToAstVisitor {
+  extends typings.typescriptDashServices.TypeScript.SyntaxTreeToAstVisitor {
   def this(
     fileName: String,
-    lineMap: typings.typescriptDashServices.TypeScriptNs.LineMap,
-    compilationSettings: typings.typescriptDashServices.TypeScriptNs.ImmutableCompilationSettings
+    lineMap: typings.typescriptDashServices.TypeScript.LineMap,
+    compilationSettings: typings.typescriptDashServices.TypeScript.ImmutableCompilationSettings
   ) = this()
 }
 
@@ -20,10 +20,10 @@ class SyntaxTreeToAstVisitor protected ()
 @js.native
 object SyntaxTreeToAstVisitor extends js.Object {
   def visit(
-    syntaxTree: typings.typescriptDashServices.TypeScriptNs.SyntaxTree,
+    syntaxTree: typings.typescriptDashServices.TypeScript.SyntaxTree,
     fileName: String,
-    compilationSettings: typings.typescriptDashServices.TypeScriptNs.ImmutableCompilationSettings,
+    compilationSettings: typings.typescriptDashServices.TypeScript.ImmutableCompilationSettings,
     incrementalAST: Boolean
-  ): typings.typescriptDashServices.TypeScriptNs.SourceUnit = js.native
+  ): typings.typescriptDashServices.TypeScript.SourceUnit = js.native
 }
 

@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/isAfter", JSImport.Namespace)
 @js.native
 object isAfterMod extends js.Object {
-  def default(date: Double, dateToCompare: Double): Boolean = js.native
-  def default(date: Double, dateToCompare: Date): Boolean = js.native
-  def default(date: Date, dateToCompare: Double): Boolean = js.native
-  def default(date: Date, dateToCompare: Date): Boolean = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double, dateToCompare: Double): Boolean = js.native
+    def apply(date: Double, dateToCompare: Date): Boolean = js.native
+    def apply(date: Date, dateToCompare: Double): Boolean = js.native
+    def apply(date: Date, dateToCompare: Date): Boolean = js.native
+  }
+  
 }
 

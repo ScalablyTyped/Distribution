@@ -17,7 +17,7 @@ trait BatchGetWorkflowsRequest extends js.Object {
 
 object BatchGetWorkflowsRequest {
   @scala.inline
-  def apply(Names: WorkflowNames, IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined): BatchGetWorkflowsRequest = {
+  def apply(Names: WorkflowNames, IncludeGraph: js.UndefOr[scala.Boolean] = js.undefined): BatchGetWorkflowsRequest = {
     val __obj = js.Dynamic.literal(Names = Names)
     if (!js.isUndefined(IncludeGraph)) __obj.updateDynamic("IncludeGraph")(IncludeGraph)
     __obj.asInstanceOf[BatchGetWorkflowsRequest]

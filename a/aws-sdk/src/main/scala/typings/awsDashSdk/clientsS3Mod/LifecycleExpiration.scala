@@ -23,12 +23,12 @@ object LifecycleExpiration {
   @scala.inline
   def apply(
     Date: _Date = null,
-    Days: js.UndefOr[Days] = js.undefined,
-    ExpiredObjectDeleteMarker: js.UndefOr[ExpiredObjectDeleteMarker] = js.undefined
+    Days: Int | Double = null,
+    ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
   ): LifecycleExpiration = {
     val __obj = js.Dynamic.literal()
     if (Date != null) __obj.updateDynamic("Date")(Date)
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days)
+    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
     if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker)
     __obj.asInstanceOf[LifecycleExpiration]
   }

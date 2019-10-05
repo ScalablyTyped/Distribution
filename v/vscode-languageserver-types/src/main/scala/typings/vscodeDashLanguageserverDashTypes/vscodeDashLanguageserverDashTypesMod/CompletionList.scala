@@ -15,12 +15,17 @@ trait CompletionList extends js.Object {
   var items: js.Array[CompletionItem]
 }
 
-object CompletionList {
-  @scala.inline
-  def apply(isIncomplete: Boolean, items: js.Array[CompletionItem]): CompletionList = {
-    val __obj = js.Dynamic.literal(isIncomplete = isIncomplete, items = items)
-  
-    __obj.asInstanceOf[CompletionList]
-  }
+@JSImport("vscode-languageserver-types", "CompletionList")
+@js.native
+object CompletionList extends js.Object {
+  /**
+    * Creates a new completion list.
+    *
+    * @param items The completion items.
+    * @param isIncomplete The list is not complete.
+    */
+  def create(): CompletionList = js.native
+  def create(items: js.Array[CompletionItem]): CompletionList = js.native
+  def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = js.native
 }
 

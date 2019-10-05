@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCameraMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Camera
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CameraProperties
+import typings.arcgisDashJsDashApi.__esri.Camera
+import typings.arcgisDashJsDashApi.__esri.CameraProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

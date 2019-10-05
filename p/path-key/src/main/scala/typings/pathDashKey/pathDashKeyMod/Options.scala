@@ -1,7 +1,7 @@
 package typings.pathDashKey.pathDashKeyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJSNs.Platform
+import typings.node.NodeJS.Platform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.relayDashTestDashUtils.libRelayModernMockEnvironmentMod
 
-import typings.relayDashRuntime.Anon_CacheConfigOperation
-import typings.relayDashRuntime.Anon_OperationOptimisticResponse
-import typings.relayDashRuntime.Anon_OperationSource
+import typings.relayDashRuntime.Anon_CacheConfig
+import typings.relayDashRuntime.Anon_Key
+import typings.relayDashRuntime.Anon_Operation
 import typings.relayDashRuntime.libNetworkRelayNetworkLoggerTransactionMod.LoggerTransactionConfig
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.Network
@@ -41,10 +41,10 @@ object RelayMockEnvironment {
     check: NormalizationSelector => Boolean,
     commitPayload: (OperationDescriptor, PayloadData) => Unit,
     commitUpdate: StoreUpdater => Unit,
-    execute: Anon_CacheConfigOperation => RelayObservable[GraphQLResponse],
-    executeMutation: Anon_OperationOptimisticResponse => RelayObservable[GraphQLResponse],
-    executeWithSource: Anon_OperationSource => RelayObservable[GraphQLResponse],
-    getLogger: LoggerTransactionConfig => Logger,
+    execute: Anon_CacheConfig => RelayObservable[GraphQLResponse],
+    executeMutation: Anon_Key => RelayObservable[GraphQLResponse],
+    executeWithSource: Anon_Operation => RelayObservable[GraphQLResponse],
+    getLogger: LoggerTransactionConfig => js.UndefOr[Logger | Null],
     getNetwork: () => Network,
     getOperationTracker: () => RelayOperationTracker,
     getStore: () => Store,

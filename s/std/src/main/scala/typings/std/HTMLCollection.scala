@@ -15,9 +15,5 @@ trait HTMLCollection extends HTMLCollectionBase {
 
 @JSGlobal("HTMLCollection")
 @js.native
-class HTMLCollectionCls () extends HTMLCollection
-
-@JSGlobal("HTMLCollection")
-@js.native
 object HTMLCollection extends Instantiable0[HTMLCollection]
 

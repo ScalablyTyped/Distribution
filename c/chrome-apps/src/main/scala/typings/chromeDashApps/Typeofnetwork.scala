@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.systemNs.networkNs.NetworkInterface
+import typings.chromeDashApps.chrome.system.network.NetworkInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -312,17 +313,17 @@ object IgTree {
     animationDuration: Int | Double = null,
     bindings: IgTreeBindings = null,
     checkboxMode: String = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     defaultNodeTarget: String = null,
-    drag: DragEvent = null,
+    drag: (/* event */ Event, /* ui */ DragEventUIParam) => Unit = null,
     dragAndDrop: js.UndefOr[Boolean] = js.undefined,
     dragAndDropSettings: IgTreeDragAndDropSettings = null,
-    dragStart: DragStartEvent = null,
-    dragStop: DragStopEvent = null,
+    dragStart: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit = null,
+    dragStop: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit = null,
     height: String | Double = null,
     hotTracking: js.UndefOr[Boolean] = js.undefined,
     initialExpandDepth: Int | Double = null,
@@ -332,31 +333,31 @@ object IgTree {
     leafNodeImageUrl: String = null,
     loadOnDemand: js.UndefOr[Boolean] = js.undefined,
     locale: js.Any = null,
-    nodeCheckstateChanged: NodeCheckstateChangedEvent = null,
-    nodeCheckstateChanging: NodeCheckstateChangingEvent = null,
-    nodeClick: NodeClickEvent = null,
-    nodeCollapsed: NodeCollapsedEvent = null,
-    nodeCollapsing: NodeCollapsingEvent = null,
-    nodeDoubleClick: NodeDoubleClickEvent = null,
-    nodeDropped: NodeDroppedEvent = null,
-    nodeDropping: NodeDroppingEvent = null,
-    nodeExpanded: NodeExpandedEvent = null,
-    nodeExpanding: NodeExpandingEvent = null,
-    nodePopulated: NodePopulatedEvent = null,
-    nodePopulating: NodePopulatingEvent = null,
+    nodeCheckstateChanged: (/* event */ Event, /* ui */ NodeCheckstateChangedEventUIParam) => Unit = null,
+    nodeCheckstateChanging: (/* event */ Event, /* ui */ NodeCheckstateChangingEventUIParam) => Unit = null,
+    nodeClick: (/* event */ Event, /* ui */ NodeClickEventUIParam) => Unit = null,
+    nodeCollapsed: (/* event */ Event, /* ui */ NodeCollapsedEventUIParam) => Unit = null,
+    nodeCollapsing: (/* event */ Event, /* ui */ NodeCollapsingEventUIParam) => Unit = null,
+    nodeDoubleClick: (/* event */ Event, /* ui */ NodeDoubleClickEventUIParam) => Unit = null,
+    nodeDropped: (/* event */ Event, /* ui */ NodeDroppedEventUIParam) => Unit = null,
+    nodeDropping: (/* event */ Event, /* ui */ NodeDroppingEventUIParam) => Unit = null,
+    nodeExpanded: (/* event */ Event, /* ui */ NodeExpandedEventUIParam) => Unit = null,
+    nodeExpanding: (/* event */ Event, /* ui */ NodeExpandingEventUIParam) => Unit = null,
+    nodePopulated: (/* event */ Event, /* ui */ NodePopulatedEventUIParam) => Unit = null,
+    nodePopulating: (/* event */ Event, /* ui */ NodePopulatingEventUIParam) => Unit = null,
     parentNodeImageClass: String = null,
     parentNodeImageTooltip: String = null,
     parentNodeImageUrl: String = null,
     pathSeparator: String = null,
     regional: String | js.Object = null,
-    rendered: RenderedEvent = null,
-    rendering: RenderingEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    rendering: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit = null,
     requestType: String = null,
     responseContentType: String = null,
     responseDataKey: String = null,
     responseDataType: String = null,
-    selectionChanged: IgTreeSelectionChangedEvent = null,
-    selectionChanging: SelectionChangingEvent = null,
+    selectionChanged: (/* event */ Event, /* ui */ IgTreeSelectionChangedEventUIParam) => Unit = null,
+    selectionChanging: (/* event */ Event, /* ui */ SelectionChangingEventUIParam) => Unit = null,
     singleBranchExpand: js.UndefOr[Boolean] = js.undefined,
     updateUrl: String = null,
     width: String | Double = null
@@ -366,17 +367,17 @@ object IgTree {
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings)
     if (checkboxMode != null) __obj.updateDynamic("checkboxMode")(checkboxMode)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (defaultNodeTarget != null) __obj.updateDynamic("defaultNodeTarget")(defaultNodeTarget)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
     if (!js.isUndefined(dragAndDrop)) __obj.updateDynamic("dragAndDrop")(dragAndDrop)
     if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
+    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hotTracking)) __obj.updateDynamic("hotTracking")(hotTracking)
     if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
@@ -386,31 +387,31 @@ object IgTree {
     if (leafNodeImageUrl != null) __obj.updateDynamic("leafNodeImageUrl")(leafNodeImageUrl)
     if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (nodeCheckstateChanged != null) __obj.updateDynamic("nodeCheckstateChanged")(nodeCheckstateChanged)
-    if (nodeCheckstateChanging != null) __obj.updateDynamic("nodeCheckstateChanging")(nodeCheckstateChanging)
-    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick)
-    if (nodeCollapsed != null) __obj.updateDynamic("nodeCollapsed")(nodeCollapsed)
-    if (nodeCollapsing != null) __obj.updateDynamic("nodeCollapsing")(nodeCollapsing)
-    if (nodeDoubleClick != null) __obj.updateDynamic("nodeDoubleClick")(nodeDoubleClick)
-    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(nodeDropped)
-    if (nodeDropping != null) __obj.updateDynamic("nodeDropping")(nodeDropping)
-    if (nodeExpanded != null) __obj.updateDynamic("nodeExpanded")(nodeExpanded)
-    if (nodeExpanding != null) __obj.updateDynamic("nodeExpanding")(nodeExpanding)
-    if (nodePopulated != null) __obj.updateDynamic("nodePopulated")(nodePopulated)
-    if (nodePopulating != null) __obj.updateDynamic("nodePopulating")(nodePopulating)
+    if (nodeCheckstateChanged != null) __obj.updateDynamic("nodeCheckstateChanged")(js.Any.fromFunction2(nodeCheckstateChanged))
+    if (nodeCheckstateChanging != null) __obj.updateDynamic("nodeCheckstateChanging")(js.Any.fromFunction2(nodeCheckstateChanging))
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(js.Any.fromFunction2(nodeClick))
+    if (nodeCollapsed != null) __obj.updateDynamic("nodeCollapsed")(js.Any.fromFunction2(nodeCollapsed))
+    if (nodeCollapsing != null) __obj.updateDynamic("nodeCollapsing")(js.Any.fromFunction2(nodeCollapsing))
+    if (nodeDoubleClick != null) __obj.updateDynamic("nodeDoubleClick")(js.Any.fromFunction2(nodeDoubleClick))
+    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(js.Any.fromFunction2(nodeDropped))
+    if (nodeDropping != null) __obj.updateDynamic("nodeDropping")(js.Any.fromFunction2(nodeDropping))
+    if (nodeExpanded != null) __obj.updateDynamic("nodeExpanded")(js.Any.fromFunction2(nodeExpanded))
+    if (nodeExpanding != null) __obj.updateDynamic("nodeExpanding")(js.Any.fromFunction2(nodeExpanding))
+    if (nodePopulated != null) __obj.updateDynamic("nodePopulated")(js.Any.fromFunction2(nodePopulated))
+    if (nodePopulating != null) __obj.updateDynamic("nodePopulating")(js.Any.fromFunction2(nodePopulating))
     if (parentNodeImageClass != null) __obj.updateDynamic("parentNodeImageClass")(parentNodeImageClass)
     if (parentNodeImageTooltip != null) __obj.updateDynamic("parentNodeImageTooltip")(parentNodeImageTooltip)
     if (parentNodeImageUrl != null) __obj.updateDynamic("parentNodeImageUrl")(parentNodeImageUrl)
     if (pathSeparator != null) __obj.updateDynamic("pathSeparator")(pathSeparator)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2(rendering))
     if (requestType != null) __obj.updateDynamic("requestType")(requestType)
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
-    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
-    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(selectionChanging)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(js.Any.fromFunction2(selectionChanged))
+    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(js.Any.fromFunction2(selectionChanging))
     if (!js.isUndefined(singleBranchExpand)) __obj.updateDynamic("singleBranchExpand")(singleBranchExpand)
     if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

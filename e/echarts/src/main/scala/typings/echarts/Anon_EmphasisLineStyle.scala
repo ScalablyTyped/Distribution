@@ -8,14 +8,14 @@ trait Anon_EmphasisLineStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis
     */
-  var emphasis: js.UndefOr[Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
+  var emphasis: js.UndefOr[Anon_LineStyleAnonColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * The line stlye of edge.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * The
     * [name of source node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name)
@@ -46,8 +46,8 @@ trait Anon_EmphasisLineStyle extends js.Object {
 object Anon_EmphasisLineStyle {
   @scala.inline
   def apply(
-    emphasis: Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = null,
-    lineStyle: Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = null,
+    emphasis: Anon_LineStyleAnonColorCurvenessOpacityShadowBlur = null,
+    lineStyle: Anon_ColorCurvenessOpacityShadowBlur = null,
     source: String = null,
     target: String = null,
     value: Int | Double = null

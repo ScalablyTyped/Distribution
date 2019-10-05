@@ -53,25 +53,25 @@ object TrafficMirrorSession {
     Description: String = null,
     NetworkInterfaceId: String = null,
     OwnerId: String = null,
-    PacketLength: js.UndefOr[Integer] = js.undefined,
-    SessionNumber: js.UndefOr[Integer] = js.undefined,
+    PacketLength: Int | scala.Double = null,
+    SessionNumber: Int | scala.Double = null,
     Tags: TagList = null,
     TrafficMirrorFilterId: String = null,
     TrafficMirrorSessionId: String = null,
     TrafficMirrorTargetId: String = null,
-    VirtualNetworkId: js.UndefOr[Integer] = js.undefined
+    VirtualNetworkId: Int | scala.Double = null
   ): TrafficMirrorSession = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId)
-    if (!js.isUndefined(PacketLength)) __obj.updateDynamic("PacketLength")(PacketLength)
-    if (!js.isUndefined(SessionNumber)) __obj.updateDynamic("SessionNumber")(SessionNumber)
+    if (PacketLength != null) __obj.updateDynamic("PacketLength")(PacketLength.asInstanceOf[js.Any])
+    if (SessionNumber != null) __obj.updateDynamic("SessionNumber")(SessionNumber.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (TrafficMirrorFilterId != null) __obj.updateDynamic("TrafficMirrorFilterId")(TrafficMirrorFilterId)
     if (TrafficMirrorSessionId != null) __obj.updateDynamic("TrafficMirrorSessionId")(TrafficMirrorSessionId)
     if (TrafficMirrorTargetId != null) __obj.updateDynamic("TrafficMirrorTargetId")(TrafficMirrorTargetId)
-    if (!js.isUndefined(VirtualNetworkId)) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId)
+    if (VirtualNetworkId != null) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorSession]
   }
 }

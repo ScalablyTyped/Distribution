@@ -1,6 +1,7 @@
 package typings.aureliaDashLogging.aureliaDashLoggingMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,4 +51,8 @@ object LogLevel {
     __obj.asInstanceOf[LogLevel]
   }
 }
+
+@JSImport("aurelia-logging", "logLevel")
+@js.native
+object logLevel extends TopLevel[LogLevel]
 

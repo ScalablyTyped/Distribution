@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchLogMetricFilterMod
 
-import typings.atPulumiAws.typesOutputMod.cloudwatchNs.LogMetricFilterMetricTransformation
+import typings.atPulumiAws.typesOutputMod.cloudwatch.LogMetricFilterMetricTransformation
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

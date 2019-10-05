@@ -5,9 +5,9 @@ import typings.atOracleOraclejet.atOracleOraclejetMod.JetSettableProperties
 import typings.atOracleOraclejet.atOracleOraclejetStrings.general
 import typings.atOracleOraclejet.atOracleOraclejetStrings.notification
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.DisplayOptions
-import typings.atOracleOraclejet.ojmessageMod.ojMessageNs.Message
-import typings.atOracleOraclejet.ojmessagesMod.ojMessagesNs.Position
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
+import typings.atOracleOraclejet.ojmessageMod.ojMessage.Message
+import typings.atOracleOraclejet.ojmessagesMod.ojMessages.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

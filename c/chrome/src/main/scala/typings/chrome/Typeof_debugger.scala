@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.underscoreDebuggerNs.Debuggee
-import typings.chrome.chromeNs.underscoreDebuggerNs.DebuggerDetachedEvent
-import typings.chrome.chromeNs.underscoreDebuggerNs.DebuggerEventEvent
-import typings.chrome.chromeNs.underscoreDebuggerNs.TargetInfo
+import typings.chrome.chrome._debugger.Debuggee
+import typings.chrome.chrome._debugger.DebuggerDetachedEvent
+import typings.chrome.chrome._debugger.DebuggerEventEvent
+import typings.chrome.chrome._debugger.TargetInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -27,8 +27,8 @@ trait PopoverProps extends js.Object {
 object PopoverProps {
   @scala.inline
   def apply(
-    body: ReactNode,
     appendTarget: Element = null,
+    body: ReactNode = null,
     className: String = null,
     enterExitTransitionDurationMs: Int | Double = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
@@ -40,8 +40,9 @@ object PopoverProps {
     target: ReactElement = null,
     tipSize: Int | Double = null
   ): PopoverProps = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (appendTarget != null) __obj.updateDynamic("appendTarget")(appendTarget)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (enterExitTransitionDurationMs != null) __obj.updateDynamic("enterExitTransitionDurationMs")(enterExitTransitionDurationMs.asInstanceOf[js.Any])
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)

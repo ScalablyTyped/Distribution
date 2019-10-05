@@ -68,7 +68,7 @@ trait ScalingOptions extends js.Object {
 object ScalingOptions {
   @scala.inline
   def apply(
-    customResizer: CustomResizerCallBack = null,
+    customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
     defaultQuality: Int | Double = null,
     defaultType: String = null,
     failureText: String = null,
@@ -78,7 +78,7 @@ object ScalingOptions {
     sizes: SizeOptions = null
   ): ScalingOptions = {
     val __obj = js.Dynamic.literal()
-    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
     if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (failureText != null) __obj.updateDynamic("failureText")(failureText)

@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashPlaceDashSearch
 
-import typings.amapDashJsDashApiDashPlaceDashSearch.AMapNs.PlaceSearchNs.Cinema
+import typings.amapDashJsDashApiDashPlaceDashSearch.AMap.PlaceSearch.Cinema
 import typings.amapDashJsDashApiDashPlaceDashSearch.amapDashJsDashApiDashPlaceDashSearchStrings.CINEMA
 import scala.scalajs.js
 import scala.scalajs.js.`|`

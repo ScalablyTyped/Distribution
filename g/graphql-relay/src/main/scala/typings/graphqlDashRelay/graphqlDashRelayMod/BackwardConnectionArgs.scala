@@ -1,5 +1,7 @@
 package typings.graphqlDashRelay.graphqlDashRelayMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.graphql.typeDefinitionMod.GraphQLFieldConfigArgumentMap
 import typings.graphqlDashRelay.Anon_Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,4 +20,8 @@ object BackwardConnectionArgs {
     __obj.asInstanceOf[BackwardConnectionArgs]
   }
 }
+
+@JSImport("graphql-relay", "backwardConnectionArgs")
+@js.native
+object backwardConnectionArgs extends TopLevel[GraphQLFieldConfigArgumentMap with BackwardConnectionArgs]
 

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.organizationsOrganizationalUnitMod
 
-import typings.atPulumiAws.typesInputMod.organizationsNs.OrganizationalUnitAccount
+import typings.atPulumiAws.typesInputMod.organizations.OrganizationalUnitAccount
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -23,7 +23,7 @@ object VPCConfig {
   @scala.inline
   def apply(
     subnets: Subnets,
-    assignPublicIp: js.UndefOr[Boolean] = js.undefined,
+    assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined,
     securityGroups: SecurityGroups = null
   ): VPCConfig = {
     val __obj = js.Dynamic.literal(subnets = subnets)

@@ -5,40 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatHistoryReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomBanList
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomCreated
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomError
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomHistoryReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomInfo
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomInvitation
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomInviteDeclined
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomMessageModified
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomMessageNotModified
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomMessageReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomMessageRemoved
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomNewParticipant
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomOperation
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomParticipantExit
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomParticipants
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomPresenceUpdate
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomStateUpdate
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomSubjectChange
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatRoomsDataReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.ChatStateUpdate
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.MessageModified
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.MessageNotModified
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.MessageReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.MessageRemoved
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.MessageStatus
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.PresenceUpdate
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.RosterItemChange
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.RosterPresenceUpdate
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.RosterReceived
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.SubscriptionRequest
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.SystemError
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.UCConnected
-  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypesNs.UCDisconnected
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatHistoryReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomBanList
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomCreated
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomError
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomHistoryReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomInfo
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomInvitation
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomInviteDeclined
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomMessageModified
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomMessageNotModified
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomMessageReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomMessageRemoved
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomNewParticipant
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomOperation
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomParticipantExit
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomParticipants
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomPresenceUpdate
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomStateUpdate
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomSubjectChange
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomsDataReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatStateUpdate
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.MessageModified
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.MessageNotModified
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.MessageReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.MessageRemoved
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.MessageStatus
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.PresenceUpdate
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.RosterItemChange
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.RosterPresenceUpdate
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.RosterReceived
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.SubscriptionRequest
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.SystemError
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.UCConnected
+  - typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.UCDisconnected
 */
 trait VoxImplantIMEvent extends js.Object
 

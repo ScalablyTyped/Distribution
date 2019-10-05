@@ -173,6 +173,7 @@ import typings.elementDashReady.elementDashReadyStrings.video
 import typings.elementDashReady.elementDashReadyStrings.view
 import typings.elementDashReady.elementDashReadyStrings.wbr
 import typings.std.Element
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
@@ -224,10 +225,12 @@ import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
 import typings.std.HTMLQuoteElement
+import typings.std.HTMLScriptElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLSlotElement
 import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
+import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
 import typings.std.HTMLTableColElement
 import typings.std.HTMLTableDataCellElement
@@ -238,10 +241,10 @@ import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
 import typings.std.HTMLTextAreaElement
 import typings.std.HTMLTimeElement
+import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
-import typings.std.SVGAElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -287,15 +290,12 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
-import typings.std.SVGScriptElement
 import typings.std.SVGStopElement
-import typings.std.SVGStyleElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
 import typings.std.SVGTSpanElement
 import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
-import typings.std.SVGTitleElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
@@ -323,12 +323,12 @@ object ^ extends js.Object {
   })();
   ```
   */
-  def apply(selector: a): StoppablePromise[js.UndefOr[SVGAElement]] = js.native
+  def apply(selector: a): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = js.native
   def apply(selector: abbr): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: abbr, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: address): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: address, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  def apply(selector: a, options: Options): StoppablePromise[js.UndefOr[SVGAElement]] = js.native
+  def apply(selector: a, options: Options): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = js.native
   def apply(selector: applet): StoppablePromise[js.UndefOr[HTMLAppletElement]] = js.native
   def apply(selector: applet, options: Options): StoppablePromise[js.UndefOr[HTMLAppletElement]] = js.native
   def apply(selector: area): StoppablePromise[js.UndefOr[HTMLAreaElement]] = js.native
@@ -588,8 +588,8 @@ object ^ extends js.Object {
   def apply(selector: s): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: samp): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: samp, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  def apply(selector: script): StoppablePromise[js.UndefOr[SVGScriptElement]] = js.native
-  def apply(selector: script, options: Options): StoppablePromise[js.UndefOr[SVGScriptElement]] = js.native
+  def apply(selector: script): StoppablePromise[js.UndefOr[HTMLScriptElement]] = js.native
+  def apply(selector: script, options: Options): StoppablePromise[js.UndefOr[HTMLScriptElement]] = js.native
   def apply(selector: section): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: section, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: select): StoppablePromise[js.UndefOr[HTMLSelectElement]] = js.native
@@ -607,8 +607,8 @@ object ^ extends js.Object {
   def apply(selector: stop, options: Options): StoppablePromise[js.UndefOr[SVGStopElement]] = js.native
   def apply(selector: strong): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: strong, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  def apply(selector: style): StoppablePromise[js.UndefOr[SVGStyleElement]] = js.native
-  def apply(selector: style, options: Options): StoppablePromise[js.UndefOr[SVGStyleElement]] = js.native
+  def apply(selector: style): StoppablePromise[js.UndefOr[HTMLStyleElement]] = js.native
+  def apply(selector: style, options: Options): StoppablePromise[js.UndefOr[HTMLStyleElement]] = js.native
   def apply(selector: sub): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: sub, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
   def apply(selector: summary): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
@@ -643,8 +643,8 @@ object ^ extends js.Object {
   def apply(selector: th, options: Options): StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]] = js.native
   def apply(selector: time): StoppablePromise[js.UndefOr[HTMLTimeElement]] = js.native
   def apply(selector: time, options: Options): StoppablePromise[js.UndefOr[HTMLTimeElement]] = js.native
-  def apply(selector: title): StoppablePromise[js.UndefOr[SVGTitleElement]] = js.native
-  def apply(selector: title, options: Options): StoppablePromise[js.UndefOr[SVGTitleElement]] = js.native
+  def apply(selector: title): StoppablePromise[js.UndefOr[HTMLTitleElement]] = js.native
+  def apply(selector: title, options: Options): StoppablePromise[js.UndefOr[HTMLTitleElement]] = js.native
   def apply(selector: tr): StoppablePromise[js.UndefOr[HTMLTableRowElement]] = js.native
   def apply(selector: track): StoppablePromise[js.UndefOr[HTMLTrackElement]] = js.native
   def apply(selector: track, options: Options): StoppablePromise[js.UndefOr[HTMLTrackElement]] = js.native

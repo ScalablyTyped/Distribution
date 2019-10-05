@@ -54,19 +54,28 @@ trait INavStyles extends js.Object {
 object INavStyles {
   @scala.inline
   def apply(
-    chevronButton: IStyle,
-    chevronIcon: IStyle,
-    compositeLink: IStyle,
-    group: IStyle,
-    groupContent: IStyle,
-    link: IStyle,
-    linkText: IStyle,
-    navItem: IStyle,
-    navItems: IStyle,
-    root: IStyle
+    chevronButton: IStyle = null,
+    chevronIcon: IStyle = null,
+    compositeLink: IStyle = null,
+    group: IStyle = null,
+    groupContent: IStyle = null,
+    link: IStyle = null,
+    linkText: IStyle = null,
+    navItem: IStyle = null,
+    navItems: IStyle = null,
+    root: IStyle = null
   ): INavStyles = {
-    val __obj = js.Dynamic.literal(chevronButton = chevronButton.asInstanceOf[js.Any], chevronIcon = chevronIcon.asInstanceOf[js.Any], compositeLink = compositeLink.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], groupContent = groupContent.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], navItem = navItem.asInstanceOf[js.Any], navItems = navItems.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (chevronButton != null) __obj.updateDynamic("chevronButton")(chevronButton.asInstanceOf[js.Any])
+    if (chevronIcon != null) __obj.updateDynamic("chevronIcon")(chevronIcon.asInstanceOf[js.Any])
+    if (compositeLink != null) __obj.updateDynamic("compositeLink")(compositeLink.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (groupContent != null) __obj.updateDynamic("groupContent")(groupContent.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
+    if (navItem != null) __obj.updateDynamic("navItem")(navItem.asInstanceOf[js.Any])
+    if (navItems != null) __obj.updateDynamic("navItems")(navItems.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavStyles]
   }
 }

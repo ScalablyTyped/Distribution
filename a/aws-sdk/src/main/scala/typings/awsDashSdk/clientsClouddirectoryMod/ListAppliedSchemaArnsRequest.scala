@@ -27,12 +27,12 @@ object ListAppliedSchemaArnsRequest {
   @scala.inline
   def apply(
     DirectoryArn: Arn,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     SchemaArn: Arn = null
   ): ListAppliedSchemaArnsRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn)
     __obj.asInstanceOf[ListAppliedSchemaArnsRequest]

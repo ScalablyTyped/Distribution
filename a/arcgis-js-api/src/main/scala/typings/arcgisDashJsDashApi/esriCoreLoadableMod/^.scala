@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreLoadableMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LoadableConstructor
+import typings.arcgisDashJsDashApi.__esri.LoadableConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

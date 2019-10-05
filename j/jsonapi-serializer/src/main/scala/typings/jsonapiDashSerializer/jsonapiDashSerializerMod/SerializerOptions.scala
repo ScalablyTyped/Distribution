@@ -40,8 +40,8 @@ object SerializerOptions {
     relationshipLinks: js.Object = null,
     relationshipMeta: js.Object = null,
     topLevelLinks: js.Array[js.Function0[Unit] | String] = null,
-    transform: Transform = null,
-    typeForAttribute: TypeForAttribute = null
+    transform: /* record */ js.Any => js.Any = null,
+    typeForAttribute: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any = null
   ): SerializerOptions = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
@@ -58,8 +58,8 @@ object SerializerOptions {
     if (relationshipLinks != null) __obj.updateDynamic("relationshipLinks")(relationshipLinks)
     if (relationshipMeta != null) __obj.updateDynamic("relationshipMeta")(relationshipMeta)
     if (topLevelLinks != null) __obj.updateDynamic("topLevelLinks")(topLevelLinks)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (typeForAttribute != null) __obj.updateDynamic("typeForAttribute")(typeForAttribute)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
+    if (typeForAttribute != null) __obj.updateDynamic("typeForAttribute")(js.Any.fromFunction2(typeForAttribute))
     __obj.asInstanceOf[SerializerOptions]
   }
 }

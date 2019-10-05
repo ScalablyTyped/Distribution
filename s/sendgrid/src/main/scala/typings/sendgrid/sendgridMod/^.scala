@@ -1,7 +1,7 @@
 package typings.sendgrid.sendgridMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sendgrid.sendgridMod.SendGridNs.SendGridConstructor
+import typings.sendgrid.sendgridMod.SendGrid.SendGridConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

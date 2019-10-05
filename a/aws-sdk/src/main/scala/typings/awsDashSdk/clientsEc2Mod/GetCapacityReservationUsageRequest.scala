@@ -27,13 +27,13 @@ object GetCapacityReservationUsageRequest {
   @scala.inline
   def apply(
     CapacityReservationId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[GetCapacityReservationUsageRequestMaxResults] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): GetCapacityReservationUsageRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetCapacityReservationUsageRequest]
   }

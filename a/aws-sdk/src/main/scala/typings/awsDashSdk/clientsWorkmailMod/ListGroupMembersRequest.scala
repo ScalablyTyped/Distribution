@@ -28,11 +28,11 @@ object ListGroupMembersRequest {
   def apply(
     GroupId: WorkMailIdentifier,
     OrganizationId: OrganizationId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListGroupMembersRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId, OrganizationId = OrganizationId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListGroupMembersRequest]
   }

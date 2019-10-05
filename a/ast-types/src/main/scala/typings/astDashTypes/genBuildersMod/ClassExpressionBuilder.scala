@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_BodyCommentsIdImplements
 import typings.astDashTypes.genKindsMod.ClassBodyKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

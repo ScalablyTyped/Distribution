@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLayerListMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerList
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerListProperties
+import typings.arcgisDashJsDashApi.__esri.LayerList
+import typings.arcgisDashJsDashApi.__esri.LayerListProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

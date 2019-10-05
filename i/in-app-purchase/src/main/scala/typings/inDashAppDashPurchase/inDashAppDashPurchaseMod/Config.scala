@@ -67,3 +67,9 @@ object Config {
   }
 }
 
+@JSImport("in-app-purchase", "config")
+@js.native
+object config extends js.Object {
+  def apply(params: Config): Unit = js.native
+}
+

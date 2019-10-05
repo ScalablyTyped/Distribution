@@ -13,9 +13,9 @@ trait TrackSourceSettings extends js.Object {
 
 object TrackSourceSettings {
   @scala.inline
-  def apply(TrackNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined): TrackSourceSettings = {
+  def apply(TrackNumber: Int | Double = null): TrackSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(TrackNumber)) __obj.updateDynamic("TrackNumber")(TrackNumber)
+    if (TrackNumber != null) __obj.updateDynamic("TrackNumber")(TrackNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSourceSettings]
   }
 }

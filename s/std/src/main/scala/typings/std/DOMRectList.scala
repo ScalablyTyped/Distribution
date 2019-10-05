@@ -16,9 +16,5 @@ trait DOMRectList extends /* index */ NumberDictionary[DOMRect] {
 
 @JSGlobal("DOMRectList")
 @js.native
-class DOMRectListCls () extends DOMRectList
-
-@JSGlobal("DOMRectList")
-@js.native
 object DOMRectList extends Instantiable0[DOMRectList]
 

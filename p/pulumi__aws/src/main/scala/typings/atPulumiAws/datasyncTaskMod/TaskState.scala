@@ -2,7 +2,7 @@ package typings.atPulumiAws.datasyncTaskMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesInputMod.datasyncNs.TaskOptions
+import typings.atPulumiAws.typesInputMod.datasync.TaskOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.autolinker
 
-import typings.autolinker.underscoreUnderscoreAutolinkerNs.Static
+import typings.autolinker.__Autolinker.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

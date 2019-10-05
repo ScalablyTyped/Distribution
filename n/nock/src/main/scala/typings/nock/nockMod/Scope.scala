@@ -1,7 +1,7 @@
 package typings.nock.nockMod
 
 import typings.nock.Fn_Uri
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Date
 import typings.std.RegExp
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.rsvp.rsvpMod
 
-import typings.rsvp.rsvpMod.RSVPNs.Deferred
+import typings.rsvp.rsvpMod.RSVP.Deferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

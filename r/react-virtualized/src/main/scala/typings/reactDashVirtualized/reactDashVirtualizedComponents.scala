@@ -31,7 +31,7 @@ object reactDashVirtualizedComponents extends reactDashVirtualizedProps {
   @scala.inline
   def ScrollSync: ComponentType[typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSyncProps] = js.constructorOf[typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSync].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSyncProps]]
   @scala.inline
-  def SortIndicator: ComponentType[Anon_SortDirection] = typings.reactDashVirtualized.distEsTableMod.^.SortIndicator.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashVirtualized.Anon_SortDirection]]
+  def SortIndicator: ComponentType[Anon_SortDirection] = typings.reactDashVirtualized.distEsTableMod.SortIndicator.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashVirtualized.Anon_SortDirection]]
   @scala.inline
   def Table: ComponentType[typings.reactDashVirtualized.distEsTableMod.TableProps] = js.constructorOf[typings.reactDashVirtualized.distEsTableMod.Table].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashVirtualized.distEsTableMod.TableProps]]
   @scala.inline

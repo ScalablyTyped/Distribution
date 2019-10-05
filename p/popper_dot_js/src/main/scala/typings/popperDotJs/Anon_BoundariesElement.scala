@@ -1,8 +1,8 @@
 package typings.popperDotJs
 
-import typings.popperDotJs.popperDotJsMod.PopperNs.Boundary
-import typings.popperDotJs.popperDotJsMod.PopperNs.Padding
-import typings.popperDotJs.popperDotJsMod.PopperNs.Position
+import typings.popperDotJs.popperDotJsMod.Popper.Boundary
+import typings.popperDotJs.popperDotJsMod.Popper.Padding
+import typings.popperDotJs.popperDotJsMod.Popper.Position
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

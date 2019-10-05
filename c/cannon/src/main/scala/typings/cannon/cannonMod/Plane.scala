@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Plane")
 @js.native
 class Plane ()
-  extends typings.cannon.CANNONNs.Plane
+  extends typings.cannon.CANNON.Plane
 

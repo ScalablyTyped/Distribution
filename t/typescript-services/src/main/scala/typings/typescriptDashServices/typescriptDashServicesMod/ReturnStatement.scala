@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ReturnStatement")
 @js.native
 class ReturnStatement protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ReturnStatement {
-  def this(expression: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.ReturnStatement {
+  def this(expression: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

@@ -1,5 +1,6 @@
 package typings.miniprogramDashWxs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -113,39 +114,8 @@ trait Math extends js.Object {
   def tan(x: Double): Double
 }
 
-object Math {
-  @scala.inline
-  def apply(
-    E: Double,
-    LN10: Double,
-    LN2: Double,
-    LOG10E: Double,
-    LOG2E: Double,
-    PI: Double,
-    SQRT1_2: Double,
-    SQRT2: Double,
-    abs: Double => Double,
-    acos: Double => Double,
-    asin: Double => Double,
-    atan: Double => Double,
-    atan2: (Double, Double) => Double,
-    ceil: Double => Double,
-    cos: Double => Double,
-    exp: Double => Double,
-    floor: Double => Double,
-    log: Double => Double,
-    max: /* repeated */ Double => Double,
-    min: /* repeated */ Double => Double,
-    pow: (Double, Double) => Double,
-    random: () => Double,
-    round: Double => Double,
-    sin: Double => Double,
-    sqrt: Double => Double,
-    tan: Double => Double
-  ): Math = {
-    val __obj = js.Dynamic.literal(E = E, LN10 = LN10, LN2 = LN2, LOG10E = LOG10E, LOG2E = LOG2E, PI = PI, SQRT1_2 = SQRT1_2, SQRT2 = SQRT2, abs = js.Any.fromFunction1(abs), acos = js.Any.fromFunction1(acos), asin = js.Any.fromFunction1(asin), atan = js.Any.fromFunction1(atan), atan2 = js.Any.fromFunction2(atan2), ceil = js.Any.fromFunction1(ceil), cos = js.Any.fromFunction1(cos), exp = js.Any.fromFunction1(exp), floor = js.Any.fromFunction1(floor), log = js.Any.fromFunction1(log), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), pow = js.Any.fromFunction2(pow), random = js.Any.fromFunction0(random), round = js.Any.fromFunction1(round), sin = js.Any.fromFunction1(sin), sqrt = js.Any.fromFunction1(sqrt), tan = js.Any.fromFunction1(tan))
-  
-    __obj.asInstanceOf[Math]
-  }
-}
+/** An intrinsic object that provides basic mathematics functionality and constants. */
+@JSGlobal("Math")
+@js.native
+object Math extends TopLevel[Math]
 

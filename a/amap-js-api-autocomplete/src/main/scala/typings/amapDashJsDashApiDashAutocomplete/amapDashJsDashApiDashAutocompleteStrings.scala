@@ -1,7 +1,7 @@
 package typings.amapDashJsDashApiDashAutocomplete
 
-import typings.amapDashJsDashApiDashAutocomplete.AMapNs.AutocompleteNs.DataType
-import typings.amapDashJsDashApiDashAutocomplete.AMapNs.AutocompleteNs.SearchStatus
+import typings.amapDashJsDashApiDashAutocomplete.AMap.Autocomplete.DataType
+import typings.amapDashJsDashApiDashAutocomplete.AMap.Autocomplete.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

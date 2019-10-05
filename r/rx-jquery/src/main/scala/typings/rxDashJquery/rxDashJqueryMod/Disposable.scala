@@ -1,6 +1,6 @@
 package typings.rxDashJquery.rxDashJqueryMod
 
-import typings.rxDashCore.RxNs.IDisposable
+import typings.rxDashCore.Rx.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "Disposable")
 @js.native
 class Disposable protected ()
-  extends typings.rxDashLite.RxNs.Disposable {
+  extends typings.rxDashLite.Rx.Disposable {
   def this(action: js.Function0[Unit]) = this()
 }
 

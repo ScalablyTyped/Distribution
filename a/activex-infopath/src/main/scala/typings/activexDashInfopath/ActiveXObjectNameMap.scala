@@ -1,8 +1,8 @@
 package typings.activexDashInfopath
 
-import typings.activexDashInfopath.InfoPathNs.Application
-import typings.activexDashInfopath.InfoPathNs.ExternalApplication
-import typings.activexDashInfopath.InfoPathNs.InfoPathEditorObject
+import typings.activexDashInfopath.InfoPath.Application
+import typings.activexDashInfopath.InfoPath.ExternalApplication
+import typings.activexDashInfopath.InfoPath.InfoPathEditorObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

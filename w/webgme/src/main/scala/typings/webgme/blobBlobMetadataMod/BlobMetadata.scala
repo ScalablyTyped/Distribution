@@ -1,12 +1,12 @@
 package typings.webgme.blobBlobMetadataMod
 
-import typings.webgme.CoreNs.DataObject
+import typings.webgme.Core.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BlobMetadata
-  extends typings.webgme.BlobsNs.BlobMetadata
+  extends typings.webgme.Blobs.BlobMetadata
 
 object BlobMetadata {
   @scala.inline

@@ -34,7 +34,7 @@ object CreateNetworkInterfacePermissionRequest {
     Permission: InterfacePermissionType,
     AwsAccountId: String = null,
     AwsService: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateNetworkInterfacePermissionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId, Permission = Permission.asInstanceOf[js.Any])
     if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId)

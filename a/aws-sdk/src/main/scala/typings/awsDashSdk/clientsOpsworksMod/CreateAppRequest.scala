@@ -66,7 +66,7 @@ object CreateAppRequest {
     DataSources: DataSources = null,
     Description: String = null,
     Domains: Strings = null,
-    EnableSsl: js.UndefOr[Boolean] = js.undefined,
+    EnableSsl: js.UndefOr[scala.Boolean] = js.undefined,
     Environment: EnvironmentVariables = null,
     Shortname: String = null,
     SslConfiguration: SslConfiguration = null

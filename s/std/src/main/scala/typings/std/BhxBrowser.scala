@@ -35,9 +35,5 @@ trait BhxBrowser extends js.Object {
 
 @JSGlobal("BhxBrowser")
 @js.native
-class BhxBrowserCls () extends BhxBrowser
-
-@JSGlobal("BhxBrowser")
-@js.native
 object BhxBrowser extends Instantiable0[BhxBrowser]
 

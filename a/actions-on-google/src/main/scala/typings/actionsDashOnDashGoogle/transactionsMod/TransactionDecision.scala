@@ -2,7 +2,7 @@ package typings.actionsDashOnDashGoogle.transactionsMod
 
 import typings.actionsDashOnDashGoogle.Anon_ActionOrderId
 import typings.actionsDashOnDashGoogle.Anon_ResultType
-import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValuesNs.TransactionUserDecision
+import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValues.TransactionUserDecision
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

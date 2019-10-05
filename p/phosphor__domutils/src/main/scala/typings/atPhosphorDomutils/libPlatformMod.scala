@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/domutils/lib/platform", JSImport.Namespace)
 @js.native
 object libPlatformMod extends js.Object {
-  @JSName("Platform")
   @js.native
-  object PlatformNs extends js.Object {
+  object Platform extends js.Object {
     /**
       * A flag indicating whether the browser is Edge.
       */

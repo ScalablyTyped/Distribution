@@ -1,8 +1,8 @@
 package typings.cypress.mochaLibInterfacesCommonMod
 
-import typings.cypress.MochaNs.AsyncFunc
-import typings.cypress.MochaNs.Func
-import typings.cypress.MochaNs.Suite
+import typings.cypress.Mocha.AsyncFunc
+import typings.cypress.Mocha.Func
+import typings.cypress.Mocha.Suite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

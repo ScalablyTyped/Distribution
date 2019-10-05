@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Store
+import typings.activexDashOutlook.Outlook.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Store extends js.Object {
-  val Store: typings.activexDashOutlook.OutlookNs.Store
+  val Store: typings.activexDashOutlook.Outlook.Store
 }
 
 object Anon_Store {

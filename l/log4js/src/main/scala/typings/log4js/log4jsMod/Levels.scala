@@ -1,5 +1,6 @@
 package typings.log4js.log4jsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,4 +41,8 @@ object Levels {
     __obj.asInstanceOf[Levels]
   }
 }
+
+@JSImport("log4js", "levels")
+@js.native
+object levels extends TopLevel[Levels]
 

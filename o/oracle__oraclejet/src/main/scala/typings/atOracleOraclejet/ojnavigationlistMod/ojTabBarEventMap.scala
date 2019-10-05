@@ -16,15 +16,15 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.progressive
 import typings.atOracleOraclejet.atOracleOraclejetStrings.start
 import typings.atOracleOraclejet.atOracleOraclejetStrings.top
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojAnimateStart
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeCurrentItem
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeDeselect
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeRemove
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeSelect
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojDeselect
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojRemove
-import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojReorder
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove
+import typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -54,15 +54,15 @@ trait ojTabBarEventMap[K, D] extends baseComponentEventMap[ojTabBarSettablePrope
   var displayChanged: JetElementCustomEvent[all | icons]
   var edgeChanged: JetElementCustomEvent[top | bottom | start | end]
   var itemChanged: JetElementCustomEvent[Anon_ContextRendererSelectableBoolean[K, D]]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojAnimateStart
-  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeCurrentItem
-  var ojBeforeDeselect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeDeselect
-  var ojBeforeRemove: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeRemove
-  var ojBeforeSelect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojBeforeSelect
-  var ojDeselect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojDeselect
-  var ojRemove: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojRemove
-  var ojReorder: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBarNs.ojReorder
+  var ojAnimateEnd: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojAnimateStart
+  var ojBeforeCurrentItem: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeCurrentItem
+  var ojBeforeDeselect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeDeselect
+  var ojBeforeRemove: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeRemove
+  var ojBeforeSelect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojBeforeSelect
+  var ojDeselect: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojDeselect
+  var ojRemove: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojRemove
+  var ojReorder: typings.atOracleOraclejet.ojnavigationlistMod.ojTabBar.ojReorder
   var overflowChanged: JetElementCustomEvent[popup | hidden]
   var reorderableChanged: JetElementCustomEvent[enabled | disabled]
   var selectionChanged: JetElementCustomEvent[

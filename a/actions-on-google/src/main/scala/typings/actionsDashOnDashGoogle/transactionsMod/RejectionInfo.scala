@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle.transactionsMod
 
-import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValuesNs.ReasonType
+import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValues.ReasonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportImageMeshColorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ImageMeshColorConstructor
+import typings.arcgisDashJsDashApi.__esri.ImageMeshColorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

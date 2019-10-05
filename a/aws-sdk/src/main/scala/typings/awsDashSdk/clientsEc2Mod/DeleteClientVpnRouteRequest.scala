@@ -28,7 +28,7 @@ object DeleteClientVpnRouteRequest {
   def apply(
     ClientVpnEndpointId: String,
     DestinationCidrBlock: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TargetVpcSubnetId: String = null
   ): DeleteClientVpnRouteRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, DestinationCidrBlock = DestinationCidrBlock)

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportTimeInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfoProperties
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.TimeInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

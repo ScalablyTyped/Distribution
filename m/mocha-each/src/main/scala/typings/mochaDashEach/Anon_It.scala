@@ -1,7 +1,7 @@
 package typings.mochaDashEach
 
-import typings.mocha.MochaNs.ITest
-import typings.mocha.MochaNs.ITestCallbackContext
+import typings.mocha.Mocha.ITest
+import typings.mocha.Mocha.ITestCallbackContext
 import typings.mochaDashEach.mochaDashEachMod.ForEachITestDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`

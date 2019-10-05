@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportRelationshipQueryMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelationshipQuery
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RelationshipQueryProperties
+import typings.arcgisDashJsDashApi.__esri.RelationshipQuery
+import typings.arcgisDashJsDashApi.__esri.RelationshipQueryProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

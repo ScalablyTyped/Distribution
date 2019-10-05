@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.Print
-import typings.ejDotWebDotAll.ejNs.PrintNs.Model
+import typings.ejDotWebDotAll.ej.Print
+import typings.ejDotWebDotAll.ej.Print.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

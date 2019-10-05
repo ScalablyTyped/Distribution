@@ -13,7 +13,7 @@ trait ParameterConstraints extends js.Object {
 
 object ParameterConstraints {
   @scala.inline
-  def apply(Required: js.UndefOr[__boolean] = js.undefined): ParameterConstraints = {
+  def apply(Required: js.UndefOr[Boolean] = js.undefined): ParameterConstraints = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required)
     __obj.asInstanceOf[ParameterConstraints]

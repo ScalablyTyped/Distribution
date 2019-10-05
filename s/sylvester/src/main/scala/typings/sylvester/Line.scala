@@ -1,5 +1,7 @@
 package typings.sylvester
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sylvester.Sylvester.LineStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,4 +113,8 @@ trait Line extends js.Object {
     */
   def translate(vector: Vector): Line = js.native
 }
+
+@JSGlobal("Line")
+@js.native
+object Line extends TopLevel[LineStatic]
 

@@ -2,7 +2,7 @@ package typings.rmcDashNukaDashCarousel.esCarouselMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.rmcDashNukaDashCarousel.Anon_BeginValue
 import typings.rmcDashNukaDashCarousel.Anon_Bottom
 import typings.rmcDashNukaDashCarousel.Anon_BottomPosition

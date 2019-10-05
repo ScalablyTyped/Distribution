@@ -1,8 +1,10 @@
 package typings.ngDashGrid
 
-import typings.ngDashGrid.ngGridNs.IRow
-import typings.ngDashGrid.ngGridNs.IRowConfig
-import typings.ngDashGrid.ngGridNs.ISelectionProvider
+import org.scalablytyped.runtime.TopLevel
+import typings.ngDashGrid.ngGrid.IRow
+import typings.ngDashGrid.ngGrid.IRowConfig
+import typings.ngDashGrid.ngGrid.IRowStatic
+import typings.ngDashGrid.ngGrid.ISelectionProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,4 +58,8 @@ class ngRow protected () extends IRow {
   /* CompleteClass */
   override def toggleSelected(event: js.Any): Boolean = js.native
 }
+
+@JSGlobal("ngRow")
+@js.native
+object ngRow extends TopLevel[IRowStatic]
 

@@ -1,6 +1,6 @@
 package typings.applicationinsightsDashJs
 
-import typings.applicationinsightsDashJs.MicrosoftNs.ApplicationInsightsNs.IAppInsights
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.IAppInsights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

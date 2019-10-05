@@ -22,14 +22,14 @@ trait Timing extends js.Object {
 object Timing {
   @scala.inline
   def apply(
-    FinishTimeMillis: js.UndefOr[NullableLong] = js.undefined,
-    StartTimeMillis: js.UndefOr[NullableLong] = js.undefined,
-    SubmitTimeMillis: js.UndefOr[NullableLong] = js.undefined
+    FinishTimeMillis: Int | Double = null,
+    StartTimeMillis: Int | Double = null,
+    SubmitTimeMillis: Int | Double = null
   ): Timing = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FinishTimeMillis)) __obj.updateDynamic("FinishTimeMillis")(FinishTimeMillis)
-    if (!js.isUndefined(StartTimeMillis)) __obj.updateDynamic("StartTimeMillis")(StartTimeMillis)
-    if (!js.isUndefined(SubmitTimeMillis)) __obj.updateDynamic("SubmitTimeMillis")(SubmitTimeMillis)
+    if (FinishTimeMillis != null) __obj.updateDynamic("FinishTimeMillis")(FinishTimeMillis.asInstanceOf[js.Any])
+    if (StartTimeMillis != null) __obj.updateDynamic("StartTimeMillis")(StartTimeMillis.asInstanceOf[js.Any])
+    if (SubmitTimeMillis != null) __obj.updateDynamic("SubmitTimeMillis")(SubmitTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timing]
   }
 }

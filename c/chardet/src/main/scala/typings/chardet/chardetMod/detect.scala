@@ -1,0 +1,14 @@
+package typings.chardet.chardetMod
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("chardet", "detect")
+@js.native
+object detect extends js.Object {
+  def apply(buf: Buffer): Result = js.native
+  def apply(buf: Buffer, opts: Options): Result = js.native
+}
+

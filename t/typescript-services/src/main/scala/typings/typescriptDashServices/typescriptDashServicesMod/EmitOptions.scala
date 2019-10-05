@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "EmitOptions")
 @js.native
 class EmitOptions protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.EmitOptions {
+  extends typings.typescriptDashServices.TypeScript.EmitOptions {
   def this(
-    compiler: typings.typescriptDashServices.TypeScriptNs.TypeScriptCompiler,
+    compiler: typings.typescriptDashServices.TypeScript.TypeScriptCompiler,
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
 }

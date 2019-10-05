@@ -1,6 +1,6 @@
 package typings.thrift.thriftMod
 
-import typings.thrift.thriftMod.ThriftNs.MessageType
+import typings.thrift.thriftMod.Thrift.MessageType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

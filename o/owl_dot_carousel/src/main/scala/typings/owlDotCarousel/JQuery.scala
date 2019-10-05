@@ -1,9 +1,9 @@
 package typings.owlDotCarousel
 
-import typings.owlDotCarousel.OwlCarouselNs.HandlerCallback
-import typings.owlDotCarousel.OwlCarouselNs.OnEvent
-import typings.owlDotCarousel.OwlCarouselNs.Options
-import typings.owlDotCarousel.OwlCarouselNs.TriggerEvent
+import typings.owlDotCarousel.OwlCarousel.HandlerCallback
+import typings.owlDotCarousel.OwlCarousel.OnEvent
+import typings.owlDotCarousel.OwlCarousel.Options
+import typings.owlDotCarousel.OwlCarousel.TriggerEvent
 import typings.owlDotCarousel.owlDotCarouselStrings.destroy
 import scala.scalajs.js
 import scala.scalajs.js.`|`

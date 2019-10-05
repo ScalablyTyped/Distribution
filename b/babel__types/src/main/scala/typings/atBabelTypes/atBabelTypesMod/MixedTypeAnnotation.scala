@@ -37,3 +37,9 @@ object MixedTypeAnnotation {
   }
 }
 
+@JSImport("@babel/types", "mixedTypeAnnotation")
+@js.native
+object mixedTypeAnnotation extends js.Object {
+  def apply(): MixedTypeAnnotation = js.native
+}
+

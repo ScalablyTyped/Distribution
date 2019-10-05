@@ -18,9 +18,5 @@ trait Attr extends Node {
 
 @JSGlobal("Attr")
 @js.native
-class AttrCls () extends Attr
-
-@JSGlobal("Attr")
-@js.native
 object Attr extends Instantiable0[Attr]
 

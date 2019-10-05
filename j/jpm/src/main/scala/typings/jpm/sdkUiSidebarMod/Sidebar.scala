@@ -1,6 +1,7 @@
 package typings.jpm.sdkUiSidebarMod
 
-import typings.jpm.FFAddonSDKNs.BrowserWindow
+import typings.jpm.Anon_Id
+import typings.jpm.FFAddonSDK.BrowserWindow
 import typings.jpm.jpmStrings.attach
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.hide
@@ -50,5 +51,11 @@ trait Sidebar extends js.Object {
   def removeListener_show(event: show, handler: js.Function): Unit = js.native
   def show(): Unit = js.native
   def show(window: BrowserWindow): Unit = js.native
+}
+
+@JSImport("sdk/ui/sidebar", "Sidebar")
+@js.native
+object Sidebar extends js.Object {
+  def apply(options: Anon_Id): Sidebar = js.native
 }
 

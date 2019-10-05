@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesRotationVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RotationVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RotationVariableProperties
+import typings.arcgisDashJsDashApi.__esri.RotationVariable
+import typings.arcgisDashJsDashApi.__esri.RotationVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

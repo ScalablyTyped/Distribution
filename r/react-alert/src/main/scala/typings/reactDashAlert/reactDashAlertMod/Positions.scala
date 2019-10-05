@@ -1,5 +1,6 @@
 package typings.reactDashAlert.reactDashAlertMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashAlert.reactDashAlertStrings.`bottom center`
 import typings.reactDashAlert.reactDashAlertStrings.`bottom left`
 import typings.reactDashAlert.reactDashAlertStrings.`bottom right`
@@ -43,4 +44,8 @@ object Positions {
     __obj.asInstanceOf[Positions]
   }
 }
+
+@JSImport("react-alert", "positions")
+@js.native
+object positions extends TopLevel[Positions]
 

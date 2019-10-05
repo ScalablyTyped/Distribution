@@ -16,8 +16,10 @@ package object leafletMod {
   type BoundsExpression = Bounds | BoundsLiteral
   type BoundsLiteral = js.Tuple2[PointTuple, PointTuple]
   type Content = String | HTMLElement
+  type Control = Control_
   type CrossOrigin = Boolean | String
   type DoneCallback = js.Function2[/* error */ js.UndefOr[Error], /* tile */ js.UndefOr[HTMLElement], Unit]
+  type Icon[T /* <: BaseIconOptions */] = Icon_[T]
   type InternalTiles = StringDictionary[Anon_Active]
   type LatLngBoundsExpression = LatLngBounds | LatLngBoundsLiteral
   type LatLngBoundsLiteral = js.Array[LatLngTuple]

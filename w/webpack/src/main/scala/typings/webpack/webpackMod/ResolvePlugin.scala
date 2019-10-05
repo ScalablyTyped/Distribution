@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack", "ResolvePlugin")
 @js.native
 abstract class ResolvePlugin ()
-  extends typings.tapable.tapableMod.TapableNs.Plugin {
+  extends typings.tapable.tapableMod.Tapable.Plugin {
   /* CompleteClass */
   @JSName("apply")
   override def apply(args: js.Any*): Unit = js.native

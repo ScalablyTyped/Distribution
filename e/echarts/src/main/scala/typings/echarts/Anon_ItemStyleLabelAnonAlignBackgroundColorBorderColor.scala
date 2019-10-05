@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
 }

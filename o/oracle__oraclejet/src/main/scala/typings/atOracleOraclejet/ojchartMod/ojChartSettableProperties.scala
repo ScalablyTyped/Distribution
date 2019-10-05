@@ -70,7 +70,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.withoutRescale
 import typings.atOracleOraclejet.atOracleOraclejetStrings.x
 import typings.atOracleOraclejet.atOracleOraclejetStrings.y
 import typings.atOracleOraclejet.atOracleOraclejetStrings.zoom
-import typings.atOracleOraclejet.ojchartMod.ojChartNs.DataLabelContext
+import typings.atOracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentSettableProperties
 import scala.scalajs.js

@@ -28,7 +28,7 @@ object CreateAcceleratorRequest {
   def apply(
     IdempotencyToken: IdempotencyToken,
     Name: GenericString,
-    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     IpAddressType: IpAddressType = null
   ): CreateAcceleratorRequest = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken, Name = Name)

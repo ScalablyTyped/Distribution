@@ -13,9 +13,10 @@ trait CardTabListType extends js.Object {
 
 object CardTabListType {
   @scala.inline
-  def apply(key: String, tab: ReactNode, disabled: js.UndefOr[Boolean] = js.undefined): CardTabListType = {
-    val __obj = js.Dynamic.literal(key = key, tab = tab.asInstanceOf[js.Any])
+  def apply(key: String, disabled: js.UndefOr[Boolean] = js.undefined, tab: ReactNode = null): CardTabListType = {
+    val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardTabListType]
   }
 }

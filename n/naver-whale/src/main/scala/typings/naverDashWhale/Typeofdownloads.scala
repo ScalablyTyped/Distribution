@@ -1,6 +1,6 @@
 package typings.naverDashWhale
 
-import typings.naverDashWhale.chromeNs.downloadsNs.StateType
+import typings.naverDashWhale.chrome.downloads.StateType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

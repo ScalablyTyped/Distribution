@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometrySupportMeshTextureMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshTexture
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MeshTextureProperties
+import typings.arcgisDashJsDashApi.__esri.MeshTexture
+import typings.arcgisDashJsDashApi.__esri.MeshTextureProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

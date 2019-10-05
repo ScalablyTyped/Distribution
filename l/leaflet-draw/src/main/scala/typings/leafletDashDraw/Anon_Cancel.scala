@@ -1,6 +1,6 @@
 package typings.leafletDashDraw
 
-import typings.leafletDashDraw.leafletMod.LocalizationNs.Action
+import typings.leafletDashDraw.leafletMod.Localization.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

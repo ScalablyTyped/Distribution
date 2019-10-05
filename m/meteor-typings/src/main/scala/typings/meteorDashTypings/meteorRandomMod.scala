@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/random", JSImport.Namespace)
 @js.native
 object meteorRandomMod extends js.Object {
-  @JSName("Random")
   @js.native
-  object RandomNs extends js.Object {
+  object Random extends js.Object {
     // @param array, @return a random element in array
     def choice(array: js.Array[_]): String = js.native
     // @param str, @return a random char in str

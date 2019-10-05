@@ -85,7 +85,7 @@ object ClientVpnEndpoint {
     DnsName: String = null,
     DnsServers: ValueStringList = null,
     ServerCertificateArn: String = null,
-    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
+    SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
     Status: ClientVpnEndpointStatus = null,
     Tags: TagList = null,
     TransportProtocol: TransportProtocol = null,

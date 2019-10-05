@@ -1,6 +1,6 @@
 package typings.echarts
 
-import typings.echarts.echartsNs.VisualMapNs.RangeObject
+import typings.echarts.echarts.VisualMap.RangeObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

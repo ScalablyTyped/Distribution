@@ -56,7 +56,7 @@ object CreateNetworkAclEntryRequest {
     RuleAction: RuleAction,
     RuleNumber: Integer,
     CidrBlock: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     IcmpTypeCode: IcmpTypeCode = null,
     Ipv6CidrBlock: String = null,
     PortRange: PortRange = null

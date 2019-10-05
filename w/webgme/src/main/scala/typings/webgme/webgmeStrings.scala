@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.GmeNs.TerritoryEventType
+import typings.webgme.Gme.TerritoryEventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.primereact.componentsMultiselectMultiSelectMod
 
 import typings.primereact.Anon_OriginalEventValue
 import typings.primereact.componentsTooltipTooltipOptionsMod.TooltipOptions
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js

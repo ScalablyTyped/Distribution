@@ -31,13 +31,6 @@ trait PannerNode extends AudioNode {
 
 @JSGlobal("PannerNode")
 @js.native
-class PannerNodeCls protected () extends PannerNode {
-  def this(context: BaseAudioContext) = this()
-  def this(context: BaseAudioContext, options: PannerOptions) = this()
-}
-
-@JSGlobal("PannerNode")
-@js.native
 object PannerNode
   extends Instantiable1[/* context */ BaseAudioContext, PannerNode]
      with Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]

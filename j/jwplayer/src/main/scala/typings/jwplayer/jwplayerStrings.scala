@@ -1,6 +1,6 @@
 package typings.jwplayer
 
-import typings.jwplayer.jwplayerNs.NoParamEvent
+import typings.jwplayer.jwplayer.NoParamEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -36,3 +36,9 @@ object PipelineTopicExpression {
   }
 }
 
+@JSImport("@babel/types", "pipelineTopicExpression")
+@js.native
+object pipelineTopicExpression extends js.Object {
+  def apply(expression: Expression): PipelineTopicExpression = js.native
+}
+

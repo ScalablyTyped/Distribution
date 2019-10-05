@@ -31,14 +31,14 @@ object DescribeEventSubscriptionsMessage {
   @scala.inline
   def apply(
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxRecords: Int | scala.Double = null,
     SubscriptionName: String = null,
     TagKeys: TagKeyList = null,
     TagValues: TagValueList = null
   ): DescribeEventSubscriptionsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (SubscriptionName != null) __obj.updateDynamic("SubscriptionName")(SubscriptionName)
     if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys)
     if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues)

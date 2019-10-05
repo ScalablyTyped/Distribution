@@ -1,6 +1,6 @@
 package typings.googleDashAppsDashScript
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.Integer
+import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +12,10 @@ trait Anon_Max extends js.Object {
 
 object Anon_Max {
   @scala.inline
-  def apply(max: js.UndefOr[Integer] = js.undefined, start: js.UndefOr[Integer] = js.undefined): Anon_Max = {
+  def apply(max: Int | Double = null, start: Int | Double = null): Anon_Max = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Max]
   }
 }

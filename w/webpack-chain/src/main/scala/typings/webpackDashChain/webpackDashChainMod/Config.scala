@@ -3,8 +3,8 @@ package typings.webpackDashChain.webpackDashChainMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.webpackMod.Configuration
 import typings.webpack.webpackMod.ExternalsElement
-import typings.webpack.webpackMod.OptionsNs.Stats
-import typings.webpack.webpackMod.OptionsNs.WatchOptions
+import typings.webpack.webpackMod.Options.Stats
+import typings.webpack.webpackMod.Options.WatchOptions
 import typings.webpackDashChain.webpackDashChainStrings.development
 import typings.webpackDashChain.webpackDashChainStrings.none
 import typings.webpackDashChain.webpackDashChainStrings.production
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Config
-  extends typings.webpackDashChain.webpackDashChainMod.underscoreUnderscoreConfigNs.TypedChainedMap[Unit, js.Any] {
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Unit, js.Any] {
   var devServer: DevServer = js.native
   var entryPoints: TypedChainedMap[Config, EntryPoint] = js.native
   var module: Module = js.native

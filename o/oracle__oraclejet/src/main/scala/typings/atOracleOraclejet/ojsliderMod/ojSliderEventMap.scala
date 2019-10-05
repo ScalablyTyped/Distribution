@@ -15,8 +15,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojsliderMod.ojSliderNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojsliderMod.ojSliderNs.ojAnimateStart
+import typings.atOracleOraclejet.ojsliderMod.ojSlider.ojAnimateEnd
+import typings.atOracleOraclejet.ojsliderMod.ojSlider.ojAnimateStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

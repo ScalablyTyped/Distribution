@@ -64,7 +64,7 @@ trait IMenuItemProps
     * @default "a"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   /**
     * A space-delimited list of class names to pass along to the text wrapper element.
@@ -78,7 +78,6 @@ trait IMenuItemProps
 object IMenuItemProps {
   @scala.inline
   def apply(
-    text: ReactNode,
     active: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
@@ -93,11 +92,12 @@ object IMenuItemProps {
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     popoverProps: Partial[IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     target: String = null,
+    text: ReactNode = null,
     textClassName: String = null
   ): IMenuItemProps = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -114,6 +114,7 @@ object IMenuItemProps {
     if (!js.isUndefined(shouldDismissPopover)) __obj.updateDynamic("shouldDismissPopover")(shouldDismissPopover)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     if (target != null) __obj.updateDynamic("target")(target)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName)
     __obj.asInstanceOf[IMenuItemProps]
   }

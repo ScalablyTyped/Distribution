@@ -2,8 +2,8 @@ package typings.foundationDashSites
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.foundationDashSites.FoundationSitesNs.ITogglerOptions
-import typings.foundationDashSites.FoundationSitesNs.Toggler
+import typings.foundationDashSites.FoundationSites.ITogglerOptions
+import typings.foundationDashSites.FoundationSites.Toggler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

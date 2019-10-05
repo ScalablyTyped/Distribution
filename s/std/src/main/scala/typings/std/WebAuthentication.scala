@@ -43,9 +43,5 @@ trait WebAuthentication extends js.Object {
 
 @JSGlobal("WebAuthentication")
 @js.native
-class WebAuthenticationCls () extends WebAuthentication
-
-@JSGlobal("WebAuthentication")
-@js.native
 object WebAuthentication extends Instantiable0[WebAuthentication]
 

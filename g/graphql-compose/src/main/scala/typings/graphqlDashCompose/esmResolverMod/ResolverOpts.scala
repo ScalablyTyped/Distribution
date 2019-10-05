@@ -29,7 +29,7 @@ object ResolverOpts {
     kind: ResolverKinds = null,
     name: String = null,
     parent: Resolver[_, TContext, _, _] = null,
-    resolve: ResolverRpCb[TSource, TContext, TArgs] = null,
+    resolve: /* resolveParams */ ResolveParams[TSource, TContext, TArgs] => js.Promise[js.Any] | js.Any = null,
     `type`: ComposeOutputType[TReturn, TContext] = null
   ): ResolverOpts[TSource, TContext, TArgs, TReturn] = {
     val __obj = js.Dynamic.literal()
@@ -40,7 +40,7 @@ object ResolverOpts {
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverOpts[TSource, TContext, TArgs, TReturn]]
   }

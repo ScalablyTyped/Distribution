@@ -1,7 +1,7 @@
 package typings.nodemailerDashStubDashTransport.nodemailerDashStubDashTransportMod
 
 import typings.nodemailer.nodemailerMod.Transport
-import typings.nodemailerDashStubDashTransport.nodemailerDashStubDashTransportMod.StubTransportStaticNs.Options
+import typings.nodemailerDashStubDashTransport.nodemailerDashStubDashTransportMod.StubTransportStatic.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

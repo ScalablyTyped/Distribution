@@ -31,3 +31,10 @@ object FastMap {
   }
 }
 
+@JSImport("vega-util", "fastmap")
+@js.native
+object fastmap extends js.Object {
+  def apply(): FastMap = js.native
+  def apply(`_`: js.Object): FastMap = js.native
+}
+

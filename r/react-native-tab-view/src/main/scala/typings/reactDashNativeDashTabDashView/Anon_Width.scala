@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashTabDashView
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

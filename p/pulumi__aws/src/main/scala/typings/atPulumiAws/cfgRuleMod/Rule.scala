@@ -1,8 +1,8 @@
 package typings.atPulumiAws.cfgRuleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cfgNs.RuleScope
-import typings.atPulumiAws.typesOutputMod.cfgNs.RuleSource
+import typings.atPulumiAws.typesOutputMod.cfg.RuleScope
+import typings.atPulumiAws.typesOutputMod.cfg.RuleSource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

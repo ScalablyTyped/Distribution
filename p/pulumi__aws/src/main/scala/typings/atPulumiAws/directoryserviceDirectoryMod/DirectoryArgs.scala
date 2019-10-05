@@ -1,8 +1,8 @@
 package typings.atPulumiAws.directoryserviceDirectoryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.directoryserviceNs.DirectoryConnectSettings
-import typings.atPulumiAws.typesInputMod.directoryserviceNs.DirectoryVpcSettings
+import typings.atPulumiAws.typesInputMod.directoryservice.DirectoryConnectSettings
+import typings.atPulumiAws.typesInputMod.directoryservice.DirectoryVpcSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

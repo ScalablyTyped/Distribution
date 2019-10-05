@@ -1,87 +1,87 @@
 package typings.ddDashTrace.ddDashTraceMod
 
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqp10
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqplib
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.bluebird
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.bunyan
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.cassandra_driver
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.dns
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.elasticsearch
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.express
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.fastify
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.generic_pool
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.hapi
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.http
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.ioredis
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.knex
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.limitd_client
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.memcached
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mongodb_core
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql2
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.net
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.paperplane
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.pg
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.pino
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise_js
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.q
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.redis
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.restify
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.router
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.tedious
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.when
-import typings.ddDashTrace.ddDashTraceMod.pluginsNs.winston
+import typings.ddDashTrace.ddDashTraceMod.plugins.amqp10
+import typings.ddDashTrace.ddDashTraceMod.plugins.amqplib
+import typings.ddDashTrace.ddDashTraceMod.plugins.bluebird
+import typings.ddDashTrace.ddDashTraceMod.plugins.bunyan
+import typings.ddDashTrace.ddDashTraceMod.plugins.cassandra_driver
+import typings.ddDashTrace.ddDashTraceMod.plugins.connect
+import typings.ddDashTrace.ddDashTraceMod.plugins.couchbase
+import typings.ddDashTrace.ddDashTraceMod.plugins.dns
+import typings.ddDashTrace.ddDashTraceMod.plugins.elasticsearch
+import typings.ddDashTrace.ddDashTraceMod.plugins.express
+import typings.ddDashTrace.ddDashTraceMod.plugins.fastify
+import typings.ddDashTrace.ddDashTraceMod.plugins.generic_pool
+import typings.ddDashTrace.ddDashTraceMod.plugins.graphql
+import typings.ddDashTrace.ddDashTraceMod.plugins.grpc
+import typings.ddDashTrace.ddDashTraceMod.plugins.hapi
+import typings.ddDashTrace.ddDashTraceMod.plugins.http
+import typings.ddDashTrace.ddDashTraceMod.plugins.http2
+import typings.ddDashTrace.ddDashTraceMod.plugins.ioredis
+import typings.ddDashTrace.ddDashTraceMod.plugins.knex
+import typings.ddDashTrace.ddDashTraceMod.plugins.koa
+import typings.ddDashTrace.ddDashTraceMod.plugins.limitd_client
+import typings.ddDashTrace.ddDashTraceMod.plugins.memcached
+import typings.ddDashTrace.ddDashTraceMod.plugins.mongodb_core
+import typings.ddDashTrace.ddDashTraceMod.plugins.mysql
+import typings.ddDashTrace.ddDashTraceMod.plugins.mysql2
+import typings.ddDashTrace.ddDashTraceMod.plugins.net
+import typings.ddDashTrace.ddDashTraceMod.plugins.paperplane
+import typings.ddDashTrace.ddDashTraceMod.plugins.pg
+import typings.ddDashTrace.ddDashTraceMod.plugins.pino
+import typings.ddDashTrace.ddDashTraceMod.plugins.promise
+import typings.ddDashTrace.ddDashTraceMod.plugins.promise_js
+import typings.ddDashTrace.ddDashTraceMod.plugins.q
+import typings.ddDashTrace.ddDashTraceMod.plugins.redis
+import typings.ddDashTrace.ddDashTraceMod.plugins.restify
+import typings.ddDashTrace.ddDashTraceMod.plugins.router
+import typings.ddDashTrace.ddDashTraceMod.plugins.tedious
+import typings.ddDashTrace.ddDashTraceMod.plugins.when
+import typings.ddDashTrace.ddDashTraceMod.plugins.winston
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
 trait Plugins extends js.Object {
-  var amqp10: typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqp10
-  var amqplib: typings.ddDashTrace.ddDashTraceMod.pluginsNs.amqplib
-  var bluebird: typings.ddDashTrace.ddDashTraceMod.pluginsNs.bluebird
-  var bunyan: typings.ddDashTrace.ddDashTraceMod.pluginsNs.bunyan
+  var amqp10: typings.ddDashTrace.ddDashTraceMod.plugins.amqp10
+  var amqplib: typings.ddDashTrace.ddDashTraceMod.plugins.amqplib
+  var bluebird: typings.ddDashTrace.ddDashTraceMod.plugins.bluebird
+  var bunyan: typings.ddDashTrace.ddDashTraceMod.plugins.bunyan
   var `cassandra-driver`: cassandra_driver
-  var connect: typings.ddDashTrace.ddDashTraceMod.pluginsNs.connect
-  var couchbase: typings.ddDashTrace.ddDashTraceMod.pluginsNs.couchbase
-  var dns: typings.ddDashTrace.ddDashTraceMod.pluginsNs.dns
-  var elasticsearch: typings.ddDashTrace.ddDashTraceMod.pluginsNs.elasticsearch
-  var express: typings.ddDashTrace.ddDashTraceMod.pluginsNs.express
-  var fastify: typings.ddDashTrace.ddDashTraceMod.pluginsNs.fastify
+  var connect: typings.ddDashTrace.ddDashTraceMod.plugins.connect
+  var couchbase: typings.ddDashTrace.ddDashTraceMod.plugins.couchbase
+  var dns: typings.ddDashTrace.ddDashTraceMod.plugins.dns
+  var elasticsearch: typings.ddDashTrace.ddDashTraceMod.plugins.elasticsearch
+  var express: typings.ddDashTrace.ddDashTraceMod.plugins.express
+  var fastify: typings.ddDashTrace.ddDashTraceMod.plugins.fastify
   var `generic-pool`: generic_pool
-  var graphql: typings.ddDashTrace.ddDashTraceMod.pluginsNs.graphql
-  var grpc: typings.ddDashTrace.ddDashTraceMod.pluginsNs.grpc
-  var hapi: typings.ddDashTrace.ddDashTraceMod.pluginsNs.hapi
-  var http: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http
-  var http2: typings.ddDashTrace.ddDashTraceMod.pluginsNs.http2
-  var ioredis: typings.ddDashTrace.ddDashTraceMod.pluginsNs.ioredis
-  var knex: typings.ddDashTrace.ddDashTraceMod.pluginsNs.knex
-  var koa: typings.ddDashTrace.ddDashTraceMod.pluginsNs.koa
+  var graphql: typings.ddDashTrace.ddDashTraceMod.plugins.graphql
+  var grpc: typings.ddDashTrace.ddDashTraceMod.plugins.grpc
+  var hapi: typings.ddDashTrace.ddDashTraceMod.plugins.hapi
+  var http: typings.ddDashTrace.ddDashTraceMod.plugins.http
+  var http2: typings.ddDashTrace.ddDashTraceMod.plugins.http2
+  var ioredis: typings.ddDashTrace.ddDashTraceMod.plugins.ioredis
+  var knex: typings.ddDashTrace.ddDashTraceMod.plugins.knex
+  var koa: typings.ddDashTrace.ddDashTraceMod.plugins.koa
   var `limitd-client`: limitd_client
-  var memcached: typings.ddDashTrace.ddDashTraceMod.pluginsNs.memcached
+  var memcached: typings.ddDashTrace.ddDashTraceMod.plugins.memcached
   var `mongodb-core`: mongodb_core
-  var mysql: typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql
-  var mysql2: typings.ddDashTrace.ddDashTraceMod.pluginsNs.mysql2
-  var net: typings.ddDashTrace.ddDashTraceMod.pluginsNs.net
-  var paperplane: typings.ddDashTrace.ddDashTraceMod.pluginsNs.paperplane
-  var pg: typings.ddDashTrace.ddDashTraceMod.pluginsNs.pg
-  var pino: typings.ddDashTrace.ddDashTraceMod.pluginsNs.pino
-  var promise: typings.ddDashTrace.ddDashTraceMod.pluginsNs.promise
+  var mysql: typings.ddDashTrace.ddDashTraceMod.plugins.mysql
+  var mysql2: typings.ddDashTrace.ddDashTraceMod.plugins.mysql2
+  var net: typings.ddDashTrace.ddDashTraceMod.plugins.net
+  var paperplane: typings.ddDashTrace.ddDashTraceMod.plugins.paperplane
+  var pg: typings.ddDashTrace.ddDashTraceMod.plugins.pg
+  var pino: typings.ddDashTrace.ddDashTraceMod.plugins.pino
+  var promise: typings.ddDashTrace.ddDashTraceMod.plugins.promise
   var `promise-js`: promise_js
-  var q: typings.ddDashTrace.ddDashTraceMod.pluginsNs.q
-  var redis: typings.ddDashTrace.ddDashTraceMod.pluginsNs.redis
-  var restify: typings.ddDashTrace.ddDashTraceMod.pluginsNs.restify
-  var router: typings.ddDashTrace.ddDashTraceMod.pluginsNs.router
-  var tedious: typings.ddDashTrace.ddDashTraceMod.pluginsNs.tedious
-  var when: typings.ddDashTrace.ddDashTraceMod.pluginsNs.when
-  var winston: typings.ddDashTrace.ddDashTraceMod.pluginsNs.winston
+  var q: typings.ddDashTrace.ddDashTraceMod.plugins.q
+  var redis: typings.ddDashTrace.ddDashTraceMod.plugins.redis
+  var restify: typings.ddDashTrace.ddDashTraceMod.plugins.restify
+  var router: typings.ddDashTrace.ddDashTraceMod.plugins.router
+  var tedious: typings.ddDashTrace.ddDashTraceMod.plugins.tedious
+  var when: typings.ddDashTrace.ddDashTraceMod.plugins.when
+  var winston: typings.ddDashTrace.ddDashTraceMod.plugins.winston
 }
 
 object Plugins {

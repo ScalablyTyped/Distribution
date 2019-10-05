@@ -1,7 +1,7 @@
 package typings.consul
 
 import typings.consul.consulMod.Callback
-import typings.consul.consulMod.CatalogNs.NodeNs.ServicesOptions
+import typings.consul.consulMod.Catalog.Node.ServicesOptions
 import typings.consul.consulMod.Thenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

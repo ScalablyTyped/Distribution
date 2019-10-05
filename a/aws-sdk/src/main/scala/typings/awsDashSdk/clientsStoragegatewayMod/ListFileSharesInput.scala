@@ -21,14 +21,10 @@ trait ListFileSharesInput extends js.Object {
 
 object ListFileSharesInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN = null,
-    Limit: js.UndefOr[PositiveIntObject] = js.undefined,
-    Marker: Marker = null
-  ): ListFileSharesInput = {
+  def apply(GatewayARN: GatewayARN = null, Limit: Int | Double = null, Marker: Marker = null): ListFileSharesInput = {
     val __obj = js.Dynamic.literal()
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[ListFileSharesInput]
   }

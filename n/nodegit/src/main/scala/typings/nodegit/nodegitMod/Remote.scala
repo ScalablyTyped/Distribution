@@ -34,5 +34,7 @@ object Remote extends js.Object {
   def setAutotag(repo: typings.nodegit.repositoryMod.Repository, remote: String, value: Double): Double = js.native
   def setPushurl(repo: typings.nodegit.repositoryMod.Repository, remote: String, url: String): Double = js.native
   def setUrl(repo: typings.nodegit.repositoryMod.Repository, remote: String, url: String): Double = js.native
+  type AUTOTAG_OPTION = typings.nodegit.remoteMod.Remote.AUTOTAG_OPTION
+  type COMPLETION_TYPE = typings.nodegit.remoteMod.Remote.COMPLETION_TYPE
 }
 

@@ -1,8 +1,10 @@
 package typings.atMaterialDashUiCore.atMaterialDashUiCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +16,8 @@ class Hidden protected ()
   def this(props: HiddenProps) = this()
   def this(props: HiddenProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/core", "Hidden")
+@js.native
+object Hidden extends TopLevel[ComponentType[HiddenProps]]
 

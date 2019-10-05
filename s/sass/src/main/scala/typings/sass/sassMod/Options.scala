@@ -1,7 +1,7 @@
 package typings.sass.sassMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sass.sassMod.typesNs.SassType
+import typings.sass.sassMod.types.SassType
 import typings.sass.sassStrings.compressed
 import typings.sass.sassStrings.cr
 import typings.sass.sassStrings.crlf

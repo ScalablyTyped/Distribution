@@ -25,3 +25,11 @@ trait PolyfillFileReader extends EventTarget {
   def readAsText(b: PolyfillBlob, label: String): Unit = js.native
 }
 
+@JSImport("react-native-fetch-blob", "PolyfillFileReader")
+@js.native
+object PolyfillFileReader extends js.Object {
+  val DONE: Double = js.native
+  val EMPTY: Double = js.native
+  val LOADING: Double = js.native
+}
+

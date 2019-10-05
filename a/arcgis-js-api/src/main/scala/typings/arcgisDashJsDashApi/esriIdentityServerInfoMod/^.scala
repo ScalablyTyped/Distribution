@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriIdentityServerInfoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ServerInfoConstructor
+import typings.arcgisDashJsDashApi.__esri.ServerInfoConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

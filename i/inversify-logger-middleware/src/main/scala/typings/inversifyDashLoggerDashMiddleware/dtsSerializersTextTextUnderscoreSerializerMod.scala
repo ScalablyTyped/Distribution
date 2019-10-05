@@ -1,6 +1,6 @@
 package typings.inversifyDashLoggerDashMiddleware
 
-import typings.inversifyDashLoggerDashMiddleware.dtsInterfacesInterfacesMod.interfacesNs.LogEntry
+import typings.inversifyDashLoggerDashMiddleware.dtsInterfacesInterfacesMod.interfaces.LogEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.gulpDashInject.gulpDashInjectMod
 
+import typings.vinyl.vinylMod.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +34,7 @@ object IOptions {
     removeTags: js.UndefOr[Boolean] = js.undefined,
     selfClosingTag: js.UndefOr[Boolean] = js.undefined,
     starttag: String | ITagFunction = null,
-    transform: ITransformFunction = null
+    transform: (/* filepath */ String, /* file */ js.UndefOr[File], /* index */ js.UndefOr[Double], /* length */ js.UndefOr[Double], /* targetFile */ js.UndefOr[File]) => String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (addPrefix != null) __obj.updateDynamic("addPrefix")(addPrefix)
@@ -47,7 +48,7 @@ object IOptions {
     if (!js.isUndefined(removeTags)) __obj.updateDynamic("removeTags")(removeTags)
     if (!js.isUndefined(selfClosingTag)) __obj.updateDynamic("selfClosingTag")(selfClosingTag)
     if (starttag != null) __obj.updateDynamic("starttag")(starttag.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction5(transform))
     __obj.asInstanceOf[IOptions]
   }
 }

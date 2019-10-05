@@ -17,7 +17,7 @@ trait DeprecateThingTypeRequest extends js.Object {
 
 object DeprecateThingTypeRequest {
   @scala.inline
-  def apply(thingTypeName: ThingTypeName, undoDeprecate: js.UndefOr[UndoDeprecate] = js.undefined): DeprecateThingTypeRequest = {
+  def apply(thingTypeName: ThingTypeName, undoDeprecate: js.UndefOr[scala.Boolean] = js.undefined): DeprecateThingTypeRequest = {
     val __obj = js.Dynamic.literal(thingTypeName = thingTypeName)
     if (!js.isUndefined(undoDeprecate)) __obj.updateDynamic("undoDeprecate")(undoDeprecate)
     __obj.asInstanceOf[DeprecateThingTypeRequest]

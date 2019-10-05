@@ -73,11 +73,11 @@ object UpdateFunctionConfigurationRequest {
     Handler: Handler = null,
     KMSKeyArn: KMSKeyArn = null,
     Layers: LayerList = null,
-    MemorySize: js.UndefOr[MemorySize] = js.undefined,
+    MemorySize: Int | Double = null,
     RevisionId: String = null,
     Role: RoleArn = null,
     Runtime: Runtime = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
+    Timeout: Int | Double = null,
     TracingConfig: TracingConfig = null,
     VpcConfig: VpcConfig = null
   ): UpdateFunctionConfigurationRequest = {
@@ -88,11 +88,11 @@ object UpdateFunctionConfigurationRequest {
     if (Handler != null) __obj.updateDynamic("Handler")(Handler)
     if (KMSKeyArn != null) __obj.updateDynamic("KMSKeyArn")(KMSKeyArn)
     if (Layers != null) __obj.updateDynamic("Layers")(Layers)
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize)
+    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
     if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
     if (Role != null) __obj.updateDynamic("Role")(Role)
     if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
+    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
     if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig)
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[UpdateFunctionConfigurationRequest]

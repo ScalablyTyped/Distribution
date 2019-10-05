@@ -1,6 +1,6 @@
 package typings.jqueryDashSortable
 
-import typings.jqueryDashSortable.JQuerySortableNs.Options
+import typings.jqueryDashSortable.JQuerySortable.Options
 import typings.jqueryDashSortable.jqueryDashSortableStrings.destroy
 import typings.jqueryDashSortable.jqueryDashSortableStrings.disable
 import typings.jqueryDashSortable.jqueryDashSortableStrings.enable

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportOffsetParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OffsetParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.OffsetParametersProperties
+import typings.arcgisDashJsDashApi.__esri.OffsetParameters
+import typings.arcgisDashJsDashApi.__esri.OffsetParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.node.childUnderscoreProcessMod
 
-import typings.node.NodeJSNs.ProcessEnv
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.TypedArray
 import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -3,6 +3,7 @@ package typings.atAngularCompiler.publicUnderscoreApiMod
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileProviderMetadata
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileTokenMetadata
 import typings.atAngularCompiler.srcLifecycleUnderscoreReflectorMod.LifecycleHooks
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ class ProviderAst protected ()
     multiProvider: Boolean,
     eager: Boolean,
     providers: js.Array[CompileProviderMetadata],
-    providerType: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType,
+    providerType: ProviderAstType,
     lifecycleHooks: js.Array[LifecycleHooks],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
     isModule: Boolean

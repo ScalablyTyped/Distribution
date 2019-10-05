@@ -159,3 +159,14 @@ trait GeoPath[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Objec
   def projection_P_UnionGeoConicProjectionGeoProjectionGeoStreamWrapperNull_P[P /* <: GeoConicProjection | GeoProjection | GeoStreamWrapper | Null */](): P = js.native
 }
 
+@JSImport("d3-geo", "geoPath")
+@js.native
+object geoPath extends js.Object {
+  def apply(): GeoPath[_, GeoPermissibleObjects] = js.native
+  def apply(projection: Null, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+  def apply(projection: GeoProjection): GeoPath[_, GeoPermissibleObjects] = js.native
+  def apply(projection: GeoProjection, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+  def apply(projection: GeoStreamWrapper): GeoPath[_, GeoPermissibleObjects] = js.native
+  def apply(projection: GeoStreamWrapper, context: GeoContext): GeoPath[_, GeoPermissibleObjects] = js.native
+}
+

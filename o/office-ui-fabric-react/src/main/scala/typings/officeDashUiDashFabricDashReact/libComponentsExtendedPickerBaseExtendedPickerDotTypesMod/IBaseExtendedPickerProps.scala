@@ -7,8 +7,9 @@ import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDo
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.IInputProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -125,9 +126,9 @@ object IBaseExtendedPickerProps {
     headerComponent: Element = null,
     inputProps: IInputProps = null,
     itemLimit: Int | Double = null,
-    onBlur: FocusEventHandler[HTMLInputElement | Autofill] = null,
+    onBlur: FocusEvent[HTMLInputElement | Autofill] => Unit = null,
     onChange: /* items */ js.UndefOr[js.Array[T]] => Unit = null,
-    onFocus: FocusEventHandler[HTMLInputElement | Autofill] = null,
+    onFocus: FocusEvent[HTMLInputElement | Autofill] => Unit = null,
     onItemAdded: /* addedItem */ T => Unit = null,
     onItemSelected: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T] = null,
     onItemsRemoved: /* removedItems */ js.Array[T] => Unit = null,
@@ -145,9 +146,9 @@ object IBaseExtendedPickerProps {
     if (headerComponent != null) __obj.updateDynamic("headerComponent")(headerComponent)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (itemLimit != null) __obj.updateDynamic("itemLimit")(itemLimit.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onItemAdded != null) __obj.updateDynamic("onItemAdded")(js.Any.fromFunction1(onItemAdded))
     if (onItemSelected != null) __obj.updateDynamic("onItemSelected")(js.Any.fromFunction1(onItemSelected))
     if (onItemsRemoved != null) __obj.updateDynamic("onItemsRemoved")(js.Any.fromFunction1(onItemsRemoved))

@@ -1,6 +1,8 @@
 package typings.reactDashPaginate.reactDashPaginateMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: ReactPaginateProps) = this()
   def this(props: ReactPaginateProps, context: js.Any) = this()
 }
+
+@JSImport("react-paginate", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentClass[ReactPaginateProps, ComponentState]]
 

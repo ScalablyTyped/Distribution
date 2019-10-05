@@ -1,7 +1,7 @@
 package typings.nodeDashForge
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodeDashForge.nodeDashForgeMod.pkcs12Ns.Bag
+import typings.nodeDashForge.nodeDashForgeMod.pkcs12.Bag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

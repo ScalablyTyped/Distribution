@@ -1,6 +1,7 @@
 package typings.styletronDashReact.styletronDashReactMod
 
 import typings.styletronDashReact.styletronDashReactNumbers.`false`
+import typings.styletronDashStandard.styletronDashStandardMod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,11 @@ trait NonAssignmentCommutativeReducerContainer extends ReducerContainer {
 
 object NonAssignmentCommutativeReducerContainer {
   @scala.inline
-  def apply(assignmentCommutative: `false`, reducer: Reducer): NonAssignmentCommutativeReducerContainer = {
-    val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative, reducer = reducer)
+  def apply(
+    assignmentCommutative: `false`,
+    reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject
+  ): NonAssignmentCommutativeReducerContainer = {
+    val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative, reducer = js.Any.fromFunction2(reducer))
   
     __obj.asInstanceOf[NonAssignmentCommutativeReducerContainer]
   }

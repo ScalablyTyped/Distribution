@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "global-tunnel-ng"
-version := "2.1-dt-20180214Z-0bf198"
-scalaVersion := "2.12.9"
+version := "2.1-dt-20180214Z-dd3721"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

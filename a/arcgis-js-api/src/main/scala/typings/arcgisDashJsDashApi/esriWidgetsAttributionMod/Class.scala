@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsAttributionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Attribution
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AttributionProperties
+import typings.arcgisDashJsDashApi.__esri.Attribution
+import typings.arcgisDashJsDashApi.__esri.AttributionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

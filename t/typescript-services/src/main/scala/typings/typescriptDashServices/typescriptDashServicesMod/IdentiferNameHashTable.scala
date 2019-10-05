@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "IdentiferNameHashTable")
 @js.native
 class IdentiferNameHashTable[T] ()
-  extends typings.typescriptDashServices.TypeScriptNs.IdentiferNameHashTable[T]
+  extends typings.typescriptDashServices.TypeScript.IdentiferNameHashTable[T]
 

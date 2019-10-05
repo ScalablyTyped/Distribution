@@ -1,6 +1,6 @@
 package typings.bitcoreDashLib.bitcoreDashLibMod
 
-import typings.bitcoreDashLib.bitcoreDashLibMod.NetworksNs.Network
+import typings.bitcoreDashLib.bitcoreDashLibMod.Networks.Network
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,11 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.certificateProviderNs.CertificateInfo
-import typings.chromeDashApps.chromeNs.certificateProviderNs.PinResponseDetails
-import typings.chromeDashApps.chromeNs.certificateProviderNs.RequestPinDetails
-import typings.chromeDashApps.chromeNs.certificateProviderNs.SignRequest
-import typings.chromeDashApps.chromeNs.certificateProviderNs.StopRequestPinDetails
-import typings.chromeDashApps.chromeNs.eventsNs.Event
+import typings.chromeDashApps.chrome.certificateProvider.CertificateInfo
+import typings.chromeDashApps.chrome.certificateProvider.PinResponseDetails
+import typings.chromeDashApps.chrome.certificateProvider.RequestPinDetails
+import typings.chromeDashApps.chrome.certificateProvider.SignRequest
+import typings.chromeDashApps.chrome.certificateProvider.StopRequestPinDetails
+import typings.chromeDashApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

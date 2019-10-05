@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -546,31 +547,31 @@ object IgHierarchicalGrid {
     avgColumnWidth: String | Double = null,
     avgRowHeight: String | Double = null,
     caption: String = null,
-    captionRendered: CaptionRenderedEvent = null,
-    captionRendering: CaptionRenderingEvent = null,
-    cellClick: CellClickEvent = null,
-    cellRightClick: CellRightClickEvent = null,
-    childGridCreated: ChildGridCreatedEvent = null,
-    childGridCreating: ChildGridCreatingEvent = null,
-    childGridRendered: ChildGridRenderedEvent = null,
-    childrenPopulated: ChildrenPopulatedEvent = null,
-    childrenPopulating: ChildrenPopulatingEvent = null,
+    captionRendered: (/* event */ Event, /* ui */ CaptionRenderedEventUIParam) => Unit = null,
+    captionRendering: (/* event */ Event, /* ui */ CaptionRenderingEventUIParam) => Unit = null,
+    cellClick: (/* event */ Event, /* ui */ CellClickEventUIParam) => Unit = null,
+    cellRightClick: (/* event */ Event, /* ui */ CellRightClickEventUIParam) => Unit = null,
+    childGridCreated: (/* event */ Event, /* ui */ ChildGridCreatedEventUIParam) => Unit = null,
+    childGridCreating: (/* event */ Event, /* ui */ ChildGridCreatingEventUIParam) => Unit = null,
+    childGridRendered: (/* event */ Event, /* ui */ ChildGridRenderedEventUIParam) => Unit = null,
+    childrenPopulated: (/* event */ Event, /* ui */ ChildrenPopulatedEventUIParam) => Unit = null,
+    childrenPopulating: (/* event */ Event, /* ui */ ChildrenPopulatingEventUIParam) => Unit = null,
     collapseTooltip: String = null,
     columnLayouts: js.Array[IgHierarchicalGridColumnLayout] = null,
     columnVirtualization: js.UndefOr[Boolean] = js.undefined,
     columns: js.Array[IgHierarchicalGridColumn] = null,
-    columnsCollectionModified: ColumnsCollectionModifiedEvent = null,
-    created: CreatedEvent = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
-    dataRendered: DataRenderedEvent = null,
-    dataRendering: DataRenderingEvent = null,
+    columnsCollectionModified: (/* event */ Event, /* ui */ ColumnsCollectionModifiedEventUIParam) => Unit = null,
+    created: (/* event */ Event, /* ui */ CreatedEventUIParam) => Unit = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
+    dataRendered: (/* event */ Event, /* ui */ DataRenderedEventUIParam) => Unit = null,
+    dataRendering: (/* event */ Event, /* ui */ DataRenderingEventUIParam) => Unit = null,
     dataSource: String | js.Array[_] | js.Object = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     defaultChildrenDataProperty: String = null,
     defaultColumnWidth: String | Double = null,
-    destroyed: DestroyedEvent = null,
+    destroyed: (/* event */ Event, /* ui */ DestroyedEventUIParam) => Unit = null,
     enableHoverStyles: js.UndefOr[Boolean] = js.undefined,
     enableResizeContainerCheck: js.UndefOr[Boolean] = js.undefined,
     enableUTCDates: js.UndefOr[Boolean] = js.undefined,
@@ -581,11 +582,11 @@ object IgHierarchicalGrid {
     features: js.Array[IgHierarchicalGridFeature] = null,
     fixedFooters: js.UndefOr[Boolean] = js.undefined,
     fixedHeaders: js.UndefOr[Boolean] = js.undefined,
-    footerRendered: FooterRenderedEvent = null,
-    footerRendering: FooterRenderingEvent = null,
-    headerCellRendered: HeaderCellRenderedEvent = null,
-    headerRendered: HeaderRenderedEvent = null,
-    headerRendering: HeaderRenderingEvent = null,
+    footerRendered: (/* event */ Event, /* ui */ FooterRenderedEventUIParam) => Unit = null,
+    footerRendering: (/* event */ Event, /* ui */ FooterRenderingEventUIParam) => Unit = null,
+    headerCellRendered: (/* event */ Event, /* ui */ HeaderCellRenderedEventUIParam) => Unit = null,
+    headerRendered: (/* event */ Event, /* ui */ HeaderRenderedEventUIParam) => Unit = null,
+    headerRendering: (/* event */ Event, /* ui */ HeaderRenderingEventUIParam) => Unit = null,
     height: String | Double = null,
     initialDataBindDepth: Int | Double = null,
     initialExpandDepth: Int | Double = null,
@@ -600,23 +601,23 @@ object IgHierarchicalGrid {
     primaryKey: String = null,
     regional: String | js.Object = null,
     renderCheckboxes: js.UndefOr[Boolean] = js.undefined,
-    rendered: RenderedEvent = null,
-    rendering: RenderingEvent = null,
-    requestError: RequestErrorEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    rendering: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit = null,
+    requestError: (/* event */ Event, /* ui */ RequestErrorEventUIParam) => Unit = null,
     requestType: String = null,
     responseContentType: String = null,
     responseDataKey: String = null,
     responseTotalRecCountKey: String = null,
     rest: js.UndefOr[Boolean] = js.undefined,
     restSettings: IgHierarchicalGridRestSettings = null,
-    rowCollapsed: RowCollapsedEvent = null,
-    rowCollapsing: RowCollapsingEvent = null,
-    rowExpanded: RowExpandedEvent = null,
-    rowExpanding: RowExpandingEvent = null,
+    rowCollapsed: (/* event */ Event, /* ui */ RowCollapsedEventUIParam) => Unit = null,
+    rowCollapsing: (/* event */ Event, /* ui */ RowCollapsingEventUIParam) => Unit = null,
+    rowExpanded: (/* event */ Event, /* ui */ RowExpandedEventUIParam) => Unit = null,
+    rowExpanding: (/* event */ Event, /* ui */ RowExpandingEventUIParam) => Unit = null,
     rowVirtualization: js.UndefOr[Boolean] = js.undefined,
-    rowsRendered: RowsRenderedEvent = null,
-    rowsRendering: RowsRenderingEvent = null,
-    schemaGenerated: SchemaGeneratedEvent = null,
+    rowsRendered: (/* event */ Event, /* ui */ RowsRenderedEventUIParam) => Unit = null,
+    rowsRendering: (/* event */ Event, /* ui */ RowsRenderingEventUIParam) => Unit = null,
+    schemaGenerated: (/* event */ Event, /* ui */ SchemaGeneratedEventUIParam) => Unit = null,
     scrollSettings: IgHierarchicalGridScrollSettings = null,
     serializeTransactionLog: js.UndefOr[Boolean] = js.undefined,
     showFooter: js.UndefOr[Boolean] = js.undefined,
@@ -644,31 +645,31 @@ object IgHierarchicalGrid {
     if (avgColumnWidth != null) __obj.updateDynamic("avgColumnWidth")(avgColumnWidth.asInstanceOf[js.Any])
     if (avgRowHeight != null) __obj.updateDynamic("avgRowHeight")(avgRowHeight.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (captionRendered != null) __obj.updateDynamic("captionRendered")(captionRendered)
-    if (captionRendering != null) __obj.updateDynamic("captionRendering")(captionRendering)
-    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
-    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(cellRightClick)
-    if (childGridCreated != null) __obj.updateDynamic("childGridCreated")(childGridCreated)
-    if (childGridCreating != null) __obj.updateDynamic("childGridCreating")(childGridCreating)
-    if (childGridRendered != null) __obj.updateDynamic("childGridRendered")(childGridRendered)
-    if (childrenPopulated != null) __obj.updateDynamic("childrenPopulated")(childrenPopulated)
-    if (childrenPopulating != null) __obj.updateDynamic("childrenPopulating")(childrenPopulating)
+    if (captionRendered != null) __obj.updateDynamic("captionRendered")(js.Any.fromFunction2(captionRendered))
+    if (captionRendering != null) __obj.updateDynamic("captionRendering")(js.Any.fromFunction2(captionRendering))
+    if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))
+    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(js.Any.fromFunction2(cellRightClick))
+    if (childGridCreated != null) __obj.updateDynamic("childGridCreated")(js.Any.fromFunction2(childGridCreated))
+    if (childGridCreating != null) __obj.updateDynamic("childGridCreating")(js.Any.fromFunction2(childGridCreating))
+    if (childGridRendered != null) __obj.updateDynamic("childGridRendered")(js.Any.fromFunction2(childGridRendered))
+    if (childrenPopulated != null) __obj.updateDynamic("childrenPopulated")(js.Any.fromFunction2(childrenPopulated))
+    if (childrenPopulating != null) __obj.updateDynamic("childrenPopulating")(js.Any.fromFunction2(childrenPopulating))
     if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
     if (columnLayouts != null) __obj.updateDynamic("columnLayouts")(columnLayouts)
     if (!js.isUndefined(columnVirtualization)) __obj.updateDynamic("columnVirtualization")(columnVirtualization)
     if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(columnsCollectionModified)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
-    if (dataRendered != null) __obj.updateDynamic("dataRendered")(dataRendered)
-    if (dataRendering != null) __obj.updateDynamic("dataRendering")(dataRendering)
+    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(js.Any.fromFunction2(columnsCollectionModified))
+    if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction2(created))
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
+    if (dataRendered != null) __obj.updateDynamic("dataRendered")(js.Any.fromFunction2(dataRendered))
+    if (dataRendering != null) __obj.updateDynamic("dataRendering")(js.Any.fromFunction2(dataRendering))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (defaultChildrenDataProperty != null) __obj.updateDynamic("defaultChildrenDataProperty")(defaultChildrenDataProperty)
     if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (destroyed != null) __obj.updateDynamic("destroyed")(destroyed)
+    if (destroyed != null) __obj.updateDynamic("destroyed")(js.Any.fromFunction2(destroyed))
     if (!js.isUndefined(enableHoverStyles)) __obj.updateDynamic("enableHoverStyles")(enableHoverStyles)
     if (!js.isUndefined(enableResizeContainerCheck)) __obj.updateDynamic("enableResizeContainerCheck")(enableResizeContainerCheck)
     if (!js.isUndefined(enableUTCDates)) __obj.updateDynamic("enableUTCDates")(enableUTCDates)
@@ -679,11 +680,11 @@ object IgHierarchicalGrid {
     if (features != null) __obj.updateDynamic("features")(features)
     if (!js.isUndefined(fixedFooters)) __obj.updateDynamic("fixedFooters")(fixedFooters)
     if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
-    if (footerRendered != null) __obj.updateDynamic("footerRendered")(footerRendered)
-    if (footerRendering != null) __obj.updateDynamic("footerRendering")(footerRendering)
-    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(headerCellRendered)
-    if (headerRendered != null) __obj.updateDynamic("headerRendered")(headerRendered)
-    if (headerRendering != null) __obj.updateDynamic("headerRendering")(headerRendering)
+    if (footerRendered != null) __obj.updateDynamic("footerRendered")(js.Any.fromFunction2(footerRendered))
+    if (footerRendering != null) __obj.updateDynamic("footerRendering")(js.Any.fromFunction2(footerRendering))
+    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(js.Any.fromFunction2(headerCellRendered))
+    if (headerRendered != null) __obj.updateDynamic("headerRendered")(js.Any.fromFunction2(headerRendered))
+    if (headerRendering != null) __obj.updateDynamic("headerRendering")(js.Any.fromFunction2(headerRendering))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (initialDataBindDepth != null) __obj.updateDynamic("initialDataBindDepth")(initialDataBindDepth.asInstanceOf[js.Any])
     if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
@@ -698,23 +699,23 @@ object IgHierarchicalGrid {
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (!js.isUndefined(renderCheckboxes)) __obj.updateDynamic("renderCheckboxes")(renderCheckboxes)
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
-    if (requestError != null) __obj.updateDynamic("requestError")(requestError)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2(rendering))
+    if (requestError != null) __obj.updateDynamic("requestError")(js.Any.fromFunction2(requestError))
     if (requestType != null) __obj.updateDynamic("requestType")(requestType)
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
     if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (!js.isUndefined(rest)) __obj.updateDynamic("rest")(rest)
     if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings)
-    if (rowCollapsed != null) __obj.updateDynamic("rowCollapsed")(rowCollapsed)
-    if (rowCollapsing != null) __obj.updateDynamic("rowCollapsing")(rowCollapsing)
-    if (rowExpanded != null) __obj.updateDynamic("rowExpanded")(rowExpanded)
-    if (rowExpanding != null) __obj.updateDynamic("rowExpanding")(rowExpanding)
+    if (rowCollapsed != null) __obj.updateDynamic("rowCollapsed")(js.Any.fromFunction2(rowCollapsed))
+    if (rowCollapsing != null) __obj.updateDynamic("rowCollapsing")(js.Any.fromFunction2(rowCollapsing))
+    if (rowExpanded != null) __obj.updateDynamic("rowExpanded")(js.Any.fromFunction2(rowExpanded))
+    if (rowExpanding != null) __obj.updateDynamic("rowExpanding")(js.Any.fromFunction2(rowExpanding))
     if (!js.isUndefined(rowVirtualization)) __obj.updateDynamic("rowVirtualization")(rowVirtualization)
-    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(rowsRendered)
-    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(rowsRendering)
-    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(schemaGenerated)
+    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(js.Any.fromFunction2(rowsRendered))
+    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(js.Any.fromFunction2(rowsRendering))
+    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(js.Any.fromFunction2(schemaGenerated))
     if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
     if (!js.isUndefined(serializeTransactionLog)) __obj.updateDynamic("serializeTransactionLog")(serializeTransactionLog)
     if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)

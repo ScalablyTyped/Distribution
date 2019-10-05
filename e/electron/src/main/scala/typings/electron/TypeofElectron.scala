@@ -2,59 +2,59 @@ package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.electron.ElectronNs.Accelerator
-import typings.electron.ElectronNs.App
-import typings.electron.ElectronNs.AutoUpdater
-import typings.electron.ElectronNs.BrowserWindowProxy
-import typings.electron.ElectronNs.ClientRequest
-import typings.electron.ElectronNs.Clipboard
-import typings.electron.ElectronNs.ContentTracing
-import typings.electron.ElectronNs.Cookies
-import typings.electron.ElectronNs.CrashReporter
-import typings.electron.ElectronNs.Debugger
-import typings.electron.ElectronNs.DesktopCapturer
-import typings.electron.ElectronNs.Dialog
-import typings.electron.ElectronNs.DownloadItem
-import typings.electron.ElectronNs.EventEmitter
-import typings.electron.ElectronNs.GlobalShortcut
-import typings.electron.ElectronNs.InAppPurchase
-import typings.electron.ElectronNs.IncomingMessage
-import typings.electron.ElectronNs.IpcMain
-import typings.electron.ElectronNs.IpcRenderer
-import typings.electron.ElectronNs.MenuItem
-import typings.electron.ElectronNs.MenuItemConstructorOptions
-import typings.electron.ElectronNs.NativeImage
-import typings.electron.ElectronNs.Net
-import typings.electron.ElectronNs.NetLog
-import typings.electron.ElectronNs.PowerMonitor
-import typings.electron.ElectronNs.PowerSaveBlocker
-import typings.electron.ElectronNs.Protocol
-import typings.electron.ElectronNs.Remote
-import typings.electron.ElectronNs.Screen
-import typings.electron.ElectronNs.Shell
-import typings.electron.ElectronNs.SystemPreferences
-import typings.electron.ElectronNs.TouchBarButton
-import typings.electron.ElectronNs.TouchBarButtonConstructorOptions
-import typings.electron.ElectronNs.TouchBarColorPicker
-import typings.electron.ElectronNs.TouchBarColorPickerConstructorOptions
-import typings.electron.ElectronNs.TouchBarGroup
-import typings.electron.ElectronNs.TouchBarGroupConstructorOptions
-import typings.electron.ElectronNs.TouchBarLabel
-import typings.electron.ElectronNs.TouchBarLabelConstructorOptions
-import typings.electron.ElectronNs.TouchBarPopover
-import typings.electron.ElectronNs.TouchBarPopoverConstructorOptions
-import typings.electron.ElectronNs.TouchBarScrubber
-import typings.electron.ElectronNs.TouchBarScrubberConstructorOptions
-import typings.electron.ElectronNs.TouchBarSegmentedControl
-import typings.electron.ElectronNs.TouchBarSegmentedControlConstructorOptions
-import typings.electron.ElectronNs.TouchBarSlider
-import typings.electron.ElectronNs.TouchBarSliderConstructorOptions
-import typings.electron.ElectronNs.TouchBarSpacer
-import typings.electron.ElectronNs.TouchBarSpacerConstructorOptions
-import typings.electron.ElectronNs.Tray
-import typings.electron.ElectronNs.WebFrame
-import typings.electron.ElectronNs.WebRequest
-import typings.electron.ElectronNs.WebviewTag
+import typings.electron.Electron.Accelerator
+import typings.electron.Electron.App
+import typings.electron.Electron.AutoUpdater
+import typings.electron.Electron.BrowserWindowProxy
+import typings.electron.Electron.ClientRequest
+import typings.electron.Electron.Clipboard
+import typings.electron.Electron.ContentTracing
+import typings.electron.Electron.Cookies
+import typings.electron.Electron.CrashReporter
+import typings.electron.Electron.Debugger
+import typings.electron.Electron.DesktopCapturer
+import typings.electron.Electron.Dialog
+import typings.electron.Electron.DownloadItem
+import typings.electron.Electron.EventEmitter
+import typings.electron.Electron.GlobalShortcut
+import typings.electron.Electron.InAppPurchase
+import typings.electron.Electron.IncomingMessage
+import typings.electron.Electron.IpcMain
+import typings.electron.Electron.IpcRenderer
+import typings.electron.Electron.MenuItem
+import typings.electron.Electron.MenuItemConstructorOptions
+import typings.electron.Electron.NativeImage
+import typings.electron.Electron.Net
+import typings.electron.Electron.NetLog
+import typings.electron.Electron.PowerMonitor
+import typings.electron.Electron.PowerSaveBlocker
+import typings.electron.Electron.Protocol
+import typings.electron.Electron.Remote
+import typings.electron.Electron.Screen
+import typings.electron.Electron.Shell
+import typings.electron.Electron.SystemPreferences
+import typings.electron.Electron.TouchBarButton
+import typings.electron.Electron.TouchBarButtonConstructorOptions
+import typings.electron.Electron.TouchBarColorPicker
+import typings.electron.Electron.TouchBarColorPickerConstructorOptions
+import typings.electron.Electron.TouchBarGroup
+import typings.electron.Electron.TouchBarGroupConstructorOptions
+import typings.electron.Electron.TouchBarLabel
+import typings.electron.Electron.TouchBarLabelConstructorOptions
+import typings.electron.Electron.TouchBarPopover
+import typings.electron.Electron.TouchBarPopoverConstructorOptions
+import typings.electron.Electron.TouchBarScrubber
+import typings.electron.Electron.TouchBarScrubberConstructorOptions
+import typings.electron.Electron.TouchBarSegmentedControl
+import typings.electron.Electron.TouchBarSegmentedControlConstructorOptions
+import typings.electron.Electron.TouchBarSlider
+import typings.electron.Electron.TouchBarSliderConstructorOptions
+import typings.electron.Electron.TouchBarSpacer
+import typings.electron.Electron.TouchBarSpacerConstructorOptions
+import typings.electron.Electron.Tray
+import typings.electron.Electron.WebFrame
+import typings.electron.Electron.WebRequest
+import typings.electron.Electron.WebviewTag
 import typings.electron.electronStrings.host
 import typings.electron.electronStrings.hostname
 import typings.electron.electronStrings.method
@@ -70,65 +70,65 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofElectron extends js.Object {
-  var Accelerator: Instantiable0[typings.electron.ElectronNs.Accelerator]
+  var Accelerator: Instantiable0[typings.electron.Electron.Accelerator]
   var BrowserView: TypeofClassBrowserView
   var BrowserWindow: TypeofClassBrowserWindow
-  var BrowserWindowProxy: Instantiable0[typings.electron.ElectronNs.BrowserWindowProxy]
+  var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
   var ClientRequest: Instantiable1[
     /* options */ method | url | session | partition | typings.electron.electronStrings.protocol | host | hostname | port | path | redirect, 
-    typings.electron.ElectronNs.ClientRequest
+    typings.electron.Electron.ClientRequest
   ]
-  var Cookies: Instantiable0[typings.electron.ElectronNs.Cookies]
-  var Debugger: Instantiable0[typings.electron.ElectronNs.Debugger]
-  var DownloadItem: Instantiable0[typings.electron.ElectronNs.DownloadItem]
+  var Cookies: Instantiable0[typings.electron.Electron.Cookies]
+  var Debugger: Instantiable0[typings.electron.Electron.Debugger]
+  var DownloadItem: Instantiable0[typings.electron.Electron.DownloadItem]
   // TODO: Replace this declaration with NodeJS.EventEmitter
-  var EventEmitter: Instantiable0[typings.electron.ElectronNs.EventEmitter]
-  var IncomingMessage: Instantiable0[typings.electron.ElectronNs.IncomingMessage]
+  var EventEmitter: Instantiable0[typings.electron.Electron.EventEmitter]
+  var IncomingMessage: Instantiable0[typings.electron.Electron.IncomingMessage]
   var Menu: TypeofClassMenu
-  var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.ElectronNs.MenuItem]
+  var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.Electron.MenuItem]
   var NativeImage: TypeofClassNativeImage
   var Notification: TypeofClassNotification
   var Session: TypeofClassSession
   var TouchBar: TypeofClassTouchBar
   var TouchBarButton: Instantiable1[
     /* options */ TouchBarButtonConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarButton
+    typings.electron.Electron.TouchBarButton
   ]
   var TouchBarColorPicker: Instantiable1[
     /* options */ TouchBarColorPickerConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarColorPicker
+    typings.electron.Electron.TouchBarColorPicker
   ]
   var TouchBarGroup: Instantiable1[
     /* options */ TouchBarGroupConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarGroup
+    typings.electron.Electron.TouchBarGroup
   ]
   var TouchBarLabel: Instantiable1[
     /* options */ TouchBarLabelConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarLabel
+    typings.electron.Electron.TouchBarLabel
   ]
   var TouchBarPopover: Instantiable1[
     /* options */ TouchBarPopoverConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarPopover
+    typings.electron.Electron.TouchBarPopover
   ]
   var TouchBarScrubber: Instantiable1[
     /* options */ TouchBarScrubberConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarScrubber
+    typings.electron.Electron.TouchBarScrubber
   ]
   var TouchBarSegmentedControl: Instantiable1[
     /* options */ TouchBarSegmentedControlConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarSegmentedControl
+    typings.electron.Electron.TouchBarSegmentedControl
   ]
   var TouchBarSlider: Instantiable1[
     /* options */ TouchBarSliderConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarSlider
+    typings.electron.Electron.TouchBarSlider
   ]
   var TouchBarSpacer: Instantiable1[
     /* options */ TouchBarSpacerConstructorOptions, 
-    typings.electron.ElectronNs.TouchBarSpacer
+    typings.electron.Electron.TouchBarSpacer
   ]
-  var Tray: Instantiable1[/* image */ NativeImage | String, typings.electron.ElectronNs.Tray]
+  var Tray: Instantiable1[/* image */ NativeImage | String, typings.electron.Electron.Tray]
   var WebContents: TypeofClassWebContents
-  var WebRequest: Instantiable0[typings.electron.ElectronNs.WebRequest]
+  var WebRequest: Instantiable0[typings.electron.Electron.WebRequest]
   val app: App
   val autoUpdater: AutoUpdater
   val clipboard: Clipboard

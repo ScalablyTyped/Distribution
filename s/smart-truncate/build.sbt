@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "smart-truncate"
-version := "1.0-dt-20181231Z-1f6674"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20181231Z-55e7af"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -17,9 +17,9 @@ trait ListGroundStationsRequest extends js.Object {
 
 object ListGroundStationsRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[Integer] = js.undefined, nextToken: String = null): ListGroundStationsRequest = {
+  def apply(maxResults: Int | scala.Double = null, nextToken: String = null): ListGroundStationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListGroundStationsRequest]
   }

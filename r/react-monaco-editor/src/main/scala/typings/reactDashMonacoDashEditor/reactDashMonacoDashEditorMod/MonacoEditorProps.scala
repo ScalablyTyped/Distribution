@@ -42,11 +42,11 @@ object MonacoEditorProps {
   def apply(
     context: js.Any = null,
     defaultValue: String = null,
-    editorDidMount: EditorDidMount = null,
-    editorWillMount: EditorWillMount = null,
+    editorDidMount: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IStandaloneCodeEditor */ /* editor */ js.Any, /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any) => Unit = null,
+    editorWillMount: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any => Unit | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any) = null,
     height: String | Double = null,
     language: String = null,
-    onChange: ChangeHandler = null,
+    onChange: (/* value */ String, /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IModelContentChangedEvent */ /* event */ js.Any) => Unit = null,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any = null,
     overrideServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorOverrideServices */ js.Any = null,
     theme: String = null,
@@ -56,11 +56,11 @@ object MonacoEditorProps {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (editorDidMount != null) __obj.updateDynamic("editorDidMount")(editorDidMount)
-    if (editorWillMount != null) __obj.updateDynamic("editorWillMount")(editorWillMount)
+    if (editorDidMount != null) __obj.updateDynamic("editorDidMount")(js.Any.fromFunction2(editorDidMount))
+    if (editorWillMount != null) __obj.updateDynamic("editorWillMount")(js.Any.fromFunction1(editorWillMount))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (options != null) __obj.updateDynamic("options")(options)
     if (overrideServices != null) __obj.updateDynamic("overrideServices")(overrideServices)
     if (theme != null) __obj.updateDynamic("theme")(theme)

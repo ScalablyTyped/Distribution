@@ -11,12 +11,17 @@ trait TextDocumentIdentifier extends js.Object {
   var uri: String
 }
 
-object TextDocumentIdentifier {
-  @scala.inline
-  def apply(uri: String): TextDocumentIdentifier = {
-    val __obj = js.Dynamic.literal(uri = uri)
-  
-    __obj.asInstanceOf[TextDocumentIdentifier]
-  }
+@JSImport("vscode-languageserver-types", "TextDocumentIdentifier")
+@js.native
+object TextDocumentIdentifier extends js.Object {
+  /**
+    * Creates a new TextDocumentIdentifier literal.
+    * @param uri The document's uri.
+    */
+  def create(uri: String): TextDocumentIdentifier = js.native
+  /**
+    * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = js.native
 }
 

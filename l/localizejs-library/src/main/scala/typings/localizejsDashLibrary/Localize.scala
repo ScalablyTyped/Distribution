@@ -1,7 +1,7 @@
 package typings.localizejsDashLibrary
 
-import typings.localizejsDashLibrary.LocalizeJSNs.ContextNs.Options
-import typings.localizejsDashLibrary.LocalizeJSNs.ContextNs.RateData
+import typings.localizejsDashLibrary.LocalizeJS.Context.Options
+import typings.localizejsDashLibrary.LocalizeJS.Context.RateData
 import typings.localizejsDashLibrary.localizejsDashLibraryStrings.initialize
 import typings.localizejsDashLibrary.localizejsDashLibraryStrings.pluralize
 import typings.localizejsDashLibrary.localizejsDashLibraryStrings.setLanguage

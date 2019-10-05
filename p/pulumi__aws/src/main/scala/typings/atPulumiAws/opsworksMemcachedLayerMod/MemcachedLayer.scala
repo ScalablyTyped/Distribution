@@ -1,6 +1,6 @@
 package typings.atPulumiAws.opsworksMemcachedLayerMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.MemcachedLayerEbsVolume
+import typings.atPulumiAws.typesOutputMod.opsworks.MemcachedLayerEbsVolume
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

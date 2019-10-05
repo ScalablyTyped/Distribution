@@ -6,6 +6,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps
 import typings.officeDashUiDashFabricDashReact.libComponentsOverflowSetOverflowSetDotBaseMod.OverflowSetBase
 import typings.react.reactMod.ClassAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import scala.scalajs.js
@@ -81,7 +82,7 @@ object IOverflowSetProps {
   @scala.inline
   def apply(
     onRenderItem: IOverflowSetItemProps => js.Any,
-    onRenderOverflowButton: IRenderFunction[js.Array[_]],
+    onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[_]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[_]], Element | Null]]) => Element | Null,
     className: String = null,
     componentRef: IRefObject[IOverflowSet] = null,
     doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined,
@@ -96,7 +97,7 @@ object IOverflowSetProps {
     styles: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles] = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): IOverflowSetProps = {
-    val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = onRenderOverflowButton)
+    val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = js.Any.fromFunction2(onRenderOverflowButton))
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone)

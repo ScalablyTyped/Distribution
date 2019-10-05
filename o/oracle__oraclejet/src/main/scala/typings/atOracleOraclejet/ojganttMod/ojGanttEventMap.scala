@@ -20,9 +20,9 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.single
 import typings.atOracleOraclejet.atOracleOraclejetStrings.top
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.ReferenceObject
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.ojMove
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.ojViewportChange
+import typings.atOracleOraclejet.ojganttMod.ojGantt.ReferenceObject
+import typings.atOracleOraclejet.ojganttMod.ojGantt.ojMove
+import typings.atOracleOraclejet.ojganttMod.ojGantt.ojViewportChange
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -54,8 +54,8 @@ trait ojGanttEventMap[K1, K2, D1, D2] extends dvtBaseComponentEventMap[ojGanttSe
   var gridlinesChanged: JetElementCustomEvent[Anon_AutoHidden]
   var majorAxisChanged: JetElementCustomEvent[Anon_Converter]
   var minorAxisChanged: JetElementCustomEvent[Anon_Converter]
-  var ojMove: typings.atOracleOraclejet.ojganttMod.ojGanttNs.ojMove[K2, D2]
-  var ojViewportChange: typings.atOracleOraclejet.ojganttMod.ojGanttNs.ojViewportChange
+  var ojMove: typings.atOracleOraclejet.ojganttMod.ojGantt.ojMove[K2, D2]
+  var ojViewportChange: typings.atOracleOraclejet.ojganttMod.ojGantt.ojViewportChange
   var referenceObjectsChanged: JetElementCustomEvent[js.Array[ReferenceObject]]
   var rowAxisChanged: JetElementCustomEvent[Anon_Label[K2, D2]]
   var rowDefaultsChanged: JetElementCustomEvent[Anon_HeightNumber]

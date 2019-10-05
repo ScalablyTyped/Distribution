@@ -32,13 +32,13 @@ object DescribeFleetEventsInput {
   def apply(
     FleetId: FleetId,
     EndTime: Timestamp = null,
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
+    Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null,
     StartTime: Timestamp = null
   ): DescribeFleetEventsInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId)
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     __obj.asInstanceOf[DescribeFleetEventsInput]

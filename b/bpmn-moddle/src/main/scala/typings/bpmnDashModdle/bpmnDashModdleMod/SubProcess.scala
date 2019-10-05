@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks- typings.bpmnDashModdle.bpmnDashModdleMod.FlowElementsContainer because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubProcess extends Activity {
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks
+- typings.bpmnDashModdle.bpmnDashModdleMod.FlowElementsContainer because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubProcess extends Activity {
   var artifacts: js.Array[Artifact]
   var flowElements: js.Array[FlowElement]
   var incomingConversationLinks: js.Array[ConversationLink]

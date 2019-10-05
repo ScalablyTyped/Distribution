@@ -1,7 +1,7 @@
 package typings.pgDashQueryDashStream.pgDashQueryDashStreamMod
 
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Readable
 import typings.pg.pgMod.Submittable
 import scala.scalajs.js

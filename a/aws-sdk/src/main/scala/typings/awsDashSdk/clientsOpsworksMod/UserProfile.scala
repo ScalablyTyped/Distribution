@@ -30,7 +30,7 @@ trait UserProfile extends js.Object {
 object UserProfile {
   @scala.inline
   def apply(
-    AllowSelfManagement: js.UndefOr[Boolean] = js.undefined,
+    AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined,
     IamUserArn: String = null,
     Name: String = null,
     SshPublicKey: String = null,

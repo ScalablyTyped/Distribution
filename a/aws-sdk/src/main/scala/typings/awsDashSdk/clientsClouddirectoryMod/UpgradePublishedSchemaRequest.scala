@@ -29,7 +29,7 @@ object UpgradePublishedSchemaRequest {
     DevelopmentSchemaArn: Arn,
     MinorVersion: Version,
     PublishedSchemaArn: Arn,
-    DryRun: js.UndefOr[Bool] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): UpgradePublishedSchemaRequest = {
     val __obj = js.Dynamic.literal(DevelopmentSchemaArn = DevelopmentSchemaArn, MinorVersion = MinorVersion, PublishedSchemaArn = PublishedSchemaArn)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

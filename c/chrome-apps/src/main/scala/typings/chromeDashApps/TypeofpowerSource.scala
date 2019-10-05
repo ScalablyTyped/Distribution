@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.systemNs.powerSourceNs.PowerSourceInfo
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.system.powerSource.PowerSourceInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

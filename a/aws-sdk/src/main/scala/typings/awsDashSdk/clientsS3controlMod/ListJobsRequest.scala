@@ -28,12 +28,12 @@ object ListJobsRequest {
   def apply(
     AccountId: AccountId,
     JobStatuses: JobStatusList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NonEmptyMaxLength1024String = null
   ): ListJobsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId)
     if (JobStatuses != null) __obj.updateDynamic("JobStatuses")(JobStatuses)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListJobsRequest]
   }

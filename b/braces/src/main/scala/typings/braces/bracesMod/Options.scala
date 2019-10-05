@@ -96,7 +96,7 @@ object Options {
     nodupes: js.UndefOr[Boolean] = js.undefined,
     quantifiers: js.UndefOr[Boolean] = js.undefined,
     rangeLimit: Int | Double = null,
-    transform: Transform = null,
+    transform: /* str */ String => String = null,
     unescape: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -105,7 +105,7 @@ object Options {
     if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes)
     if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers)
     if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape)
     __obj.asInstanceOf[Options]
   }

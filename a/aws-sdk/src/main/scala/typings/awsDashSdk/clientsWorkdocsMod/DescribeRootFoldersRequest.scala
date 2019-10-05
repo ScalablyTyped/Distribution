@@ -23,11 +23,11 @@ object DescribeRootFoldersRequest {
   @scala.inline
   def apply(
     AuthenticationToken: AuthenticationHeaderType,
-    Limit: js.UndefOr[LimitType] = js.undefined,
+    Limit: Int | Double = null,
     Marker: PageMarkerType = null
   ): DescribeRootFoldersRequest = {
     val __obj = js.Dynamic.literal(AuthenticationToken = AuthenticationToken)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[DescribeRootFoldersRequest]
   }

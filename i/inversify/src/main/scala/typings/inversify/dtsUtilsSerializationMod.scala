@@ -1,10 +1,10 @@
 package typings.inversify
 
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Binding
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Container
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Request
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Target
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Binding
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Request
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("esri-leaflet", "Service")
 @js.native
 abstract class Service ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esriNs.Service
+  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Service
 

@@ -1,8 +1,8 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.ViewQueryNs.ErrorMode
-import typings.couchbase.couchbaseMod.ViewQueryNs.Order
-import typings.couchbase.couchbaseMod.ViewQueryNs.Update
+import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode
+import typings.couchbase.couchbaseMod.ViewQuery.Order
+import typings.couchbase.couchbaseMod.ViewQuery.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -110,11 +110,96 @@ class ViewQuery () extends js.Object {
 @JSImport("couchbase", "ViewQuery")
 @js.native
 object ViewQuery extends js.Object {
+  @js.native
+  sealed trait ErrorMode extends js.Object
+  
+  @js.native
+  sealed trait Order extends js.Object
+  
+  @js.native
+  sealed trait Update extends js.Object
+  
   /**
     * Instantiates a ViewQuery object for the specified design document and view name.
     * @param ddoc The design document to use.
     * @param name The view to use.
     */
   def from(ddoc: String, name: String): ViewQuery = js.native
+  /**
+    * Enumeration for specifying on_error behaviour.
+    */
+  @js.native
+  object ErrorMode extends js.Object {
+    /**
+      * Continues querying when an error occurs.
+      */
+    @js.native
+    sealed trait CONTINUE extends ErrorMode
+    
+    /**
+      * Stops and errors query when an error occurs.
+      */
+    @js.native
+    sealed trait STOP extends ErrorMode
+    
+    /* 0 */ val CONTINUE: typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.CONTINUE with Double = js.native
+    /* 1 */ val STOP: typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.STOP with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ErrorMode with Double] = js.native
+  }
+  
+  /**
+    * Enumeration for specifying view result ordering.
+    */
+  @js.native
+  object Order extends js.Object {
+    /**
+      * Orders with lower values first and higher values last.
+      */
+    @js.native
+    sealed trait ASCENDING extends Order
+    
+    /**
+      * Orders with higher values first and lower values last.
+      */
+    @js.native
+    sealed trait DESCENDING extends Order
+    
+    /* 0 */ val ASCENDING: typings.couchbase.couchbaseMod.ViewQuery.Order.ASCENDING with Double = js.native
+    /* 1 */ val DESCENDING: typings.couchbase.couchbaseMod.ViewQuery.Order.DESCENDING with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Order with Double] = js.native
+  }
+  
+  /**
+    * Enumeration for specifying view update semantics.
+    */
+  @js.native
+  object Update extends js.Object {
+    /**
+      * Forces the view to be indexed after the results of this query has been fetched.
+      */
+    @js.native
+    sealed trait AFTER extends Update
+    
+    /**
+      * Causes the view to be fully indexed before results are retrieved.
+      */
+    @js.native
+    sealed trait BEFORE extends Update
+    
+    /**
+      * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
+      */
+    @js.native
+    sealed trait NONE extends Update
+    
+    /* 2 */ val AFTER: typings.couchbase.couchbaseMod.ViewQuery.Update.AFTER with Double = js.native
+    /* 0 */ val BEFORE: typings.couchbase.couchbaseMod.ViewQuery.Update.BEFORE with Double = js.native
+    /* 1 */ val NONE: typings.couchbase.couchbaseMod.ViewQuery.Update.NONE with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Update with Double] = js.native
+  }
+  
 }
 

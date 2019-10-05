@@ -1,6 +1,6 @@
 package typings.inversifyDashRestifyDashUtils
 
-import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfacesNs.StrOrRegex
+import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfaces.StrOrRegex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -435,12 +436,12 @@ object IgDatePicker {
     displayTimeOffset: js.Any = null,
     dropDownAnimationDuration: Int | Double = null,
     dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined,
-    dropDownItemSelected: DropDownItemSelectedEvent = null,
-    dropDownItemSelecting: DropDownItemSelectingEvent = null,
-    dropDownListClosed: DropDownListClosedEvent = null,
-    dropDownListClosing: DropDownListClosingEvent = null,
-    dropDownListOpened: DropDownListOpenedEvent = null,
-    dropDownListOpening: DropDownListOpeningEvent = null,
+    dropDownItemSelected: (/* event */ Event, /* ui */ DropDownItemSelectedEventUIParam) => Unit = null,
+    dropDownItemSelecting: (/* event */ Event, /* ui */ DropDownItemSelectingEventUIParam) => Unit = null,
+    dropDownListClosed: (/* event */ Event, /* ui */ DropDownListClosedEventUIParam) => Unit = null,
+    dropDownListClosing: (/* event */ Event, /* ui */ DropDownListClosingEventUIParam) => Unit = null,
+    dropDownListOpened: (/* event */ Event, /* ui */ DropDownListOpenedEventUIParam) => Unit = null,
+    dropDownListOpening: (/* event */ Event, /* ui */ DropDownListOpeningEventUIParam) => Unit = null,
     dropDownOnReadOnly: js.UndefOr[Boolean] = js.undefined,
     dropDownOrientation: String = null,
     emptyChar: String = null,
@@ -451,7 +452,7 @@ object IgDatePicker {
     inputMask: String = null,
     inputName: String = null,
     isLimitedToListValues: js.UndefOr[Boolean] = js.undefined,
-    itemSelected: ItemSelectedEvent = null,
+    itemSelected: (/* event */ Event, /* ui */ ItemSelectedEventUIParam) => Unit = null,
     language: String = null,
     limitSpinToCurrentField: js.UndefOr[Boolean] = js.undefined,
     listItemHoverDuration: Int | Double = null,
@@ -498,12 +499,12 @@ object IgDatePicker {
     if (displayTimeOffset != null) __obj.updateDynamic("displayTimeOffset")(displayTimeOffset)
     if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
-    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(dropDownItemSelected)
-    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(dropDownItemSelecting)
-    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(dropDownListClosed)
-    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(dropDownListClosing)
-    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(dropDownListOpened)
-    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(dropDownListOpening)
+    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(js.Any.fromFunction2(dropDownItemSelected))
+    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(js.Any.fromFunction2(dropDownItemSelecting))
+    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(js.Any.fromFunction2(dropDownListClosed))
+    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(js.Any.fromFunction2(dropDownListClosing))
+    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(js.Any.fromFunction2(dropDownListOpened))
+    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(js.Any.fromFunction2(dropDownListOpening))
     if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly)
     if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
     if (emptyChar != null) __obj.updateDynamic("emptyChar")(emptyChar)
@@ -514,7 +515,7 @@ object IgDatePicker {
     if (inputMask != null) __obj.updateDynamic("inputMask")(inputMask)
     if (inputName != null) __obj.updateDynamic("inputName")(inputName)
     if (!js.isUndefined(isLimitedToListValues)) __obj.updateDynamic("isLimitedToListValues")(isLimitedToListValues)
-    if (itemSelected != null) __obj.updateDynamic("itemSelected")(itemSelected)
+    if (itemSelected != null) __obj.updateDynamic("itemSelected")(js.Any.fromFunction2(itemSelected))
     if (language != null) __obj.updateDynamic("language")(language)
     if (!js.isUndefined(limitSpinToCurrentField)) __obj.updateDynamic("limitSpinToCurrentField")(limitSpinToCurrentField)
     if (listItemHoverDuration != null) __obj.updateDynamic("listItemHoverDuration")(listItemHoverDuration.asInstanceOf[js.Any])

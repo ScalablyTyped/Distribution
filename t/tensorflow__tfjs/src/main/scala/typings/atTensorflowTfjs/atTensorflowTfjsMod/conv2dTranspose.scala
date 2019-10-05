@@ -1,5 +1,8 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.round
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
@@ -25,7 +28,7 @@ object conv2dTranspose extends js.Object {
     outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
+    dimRoundingMode: floor | round | ceil
   ): T = js.native
 }
 

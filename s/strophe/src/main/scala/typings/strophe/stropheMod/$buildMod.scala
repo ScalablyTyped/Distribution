@@ -1,11 +1,11 @@
 package typings.strophe.stropheMod
 
-import typings.strophe.stropheMod.StropheNs.Builder
+import typings.strophe.stropheMod.Strophe.Builder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobalScope
+@JSImport("$build", JSImport.Namespace)
 @js.native
 object $buildMod extends js.Object {
   def apply(name: String): Builder = js.native

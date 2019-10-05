@@ -44,3 +44,9 @@ object NamedNode extends js.Object {
   def fromValue(value: ValueType): NamedNode | ValueType = js.native
 }
 
+@JSImport("rdflib", "namedNode")
+@js.native
+object namedNode extends js.Object {
+  def apply(value: String): NamedNode = js.native
+}
+

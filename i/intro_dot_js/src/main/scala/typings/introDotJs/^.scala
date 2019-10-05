@@ -1,6 +1,6 @@
 package typings.introDotJs
 
-import typings.introDotJs.IntroJsNs.Factory
+import typings.introDotJs.IntroJs.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

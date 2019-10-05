@@ -1,7 +1,7 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils
 
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeScopeMod.ScopeType
-import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintLinterMod.LinterNs.RuleLevel
+import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintLinterMod.Linter.RuleLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

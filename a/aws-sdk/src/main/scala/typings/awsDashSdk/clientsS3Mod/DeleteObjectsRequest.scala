@@ -29,7 +29,7 @@ object DeleteObjectsRequest {
   def apply(
     Bucket: BucketName,
     Delete: Delete,
-    BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined,
+    BypassGovernanceRetention: js.UndefOr[Boolean] = js.undefined,
     MFA: MFA = null,
     RequestPayer: RequestPayer = null
   ): DeleteObjectsRequest = {

@@ -34,12 +34,12 @@ trait ElastiCacheInstanceDetails extends js.Object {
 object ElastiCacheInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
     Family: GenericString = null,
     NodeType: GenericString = null,
     ProductDescription: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
   ): ElastiCacheInstanceDetails = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration)

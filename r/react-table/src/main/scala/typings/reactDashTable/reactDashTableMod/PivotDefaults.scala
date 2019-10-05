@@ -11,9 +11,9 @@ trait PivotDefaults extends js.Object {
 
 object PivotDefaults {
   @scala.inline
-  def apply(render: TableCellRenderer): PivotDefaults = {
-    val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
-  
+  def apply(render: TableCellRenderer = null): PivotDefaults = {
+    val __obj = js.Dynamic.literal()
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDefaults]
   }
 }

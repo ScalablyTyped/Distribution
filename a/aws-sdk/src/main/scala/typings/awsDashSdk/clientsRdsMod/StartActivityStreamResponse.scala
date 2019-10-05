@@ -30,7 +30,7 @@ trait StartActivityStreamResponse extends js.Object {
 object StartActivityStreamResponse {
   @scala.inline
   def apply(
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
+    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined,
     KinesisStreamName: String = null,
     KmsKeyId: String = null,
     Mode: ActivityStreamMode = null,

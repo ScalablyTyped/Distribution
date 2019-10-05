@@ -1,8 +1,8 @@
 package typings.lls.llsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lls.llsMod.LargeLocalStorageInterfacesNs.LargeLocalStorageService
-import typings.lls.llsMod.LargeLocalStorageInterfacesNs.Options
+import typings.lls.llsMod.LargeLocalStorageInterfaces.LargeLocalStorageService
+import typings.lls.llsMod.LargeLocalStorageInterfaces.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

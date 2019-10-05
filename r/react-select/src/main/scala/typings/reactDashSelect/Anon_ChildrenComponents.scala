@@ -20,17 +20,17 @@ trait Anon_ChildrenComponents[OptionType /* <: OptionTypeBase */] extends js.Obj
 object Anon_ChildrenComponents {
   @scala.inline
   def apply[OptionType /* <: OptionTypeBase */](
-    children: ReactNode,
     components: js.Any,
     cropWithEllipsis: Boolean,
     data: OptionType,
     innerProps: js.Any,
     isDisabled: Boolean,
     isFocused: Boolean,
-    removeProps: Anon_EventOnClick
+    removeProps: Anon_EventOnClick,
+    children: ReactNode = null
   ): Anon_ChildrenComponents[OptionType] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], components = components, cropWithEllipsis = cropWithEllipsis, data = data.asInstanceOf[js.Any], innerProps = innerProps, isDisabled = isDisabled, isFocused = isFocused, removeProps = removeProps)
-  
+    val __obj = js.Dynamic.literal(components = components, cropWithEllipsis = cropWithEllipsis, data = data.asInstanceOf[js.Any], innerProps = innerProps, isDisabled = isDisabled, isFocused = isFocused, removeProps = removeProps)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenComponents[OptionType]]
   }
 }

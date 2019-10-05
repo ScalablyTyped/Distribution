@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsScaleRangeLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ScaleRangeLayer
+import typings.arcgisDashJsDashApi.__esri.ScaleRangeLayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

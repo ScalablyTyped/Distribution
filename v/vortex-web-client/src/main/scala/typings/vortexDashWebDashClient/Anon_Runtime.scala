@@ -1,12 +1,12 @@
 package typings.vortexDashWebDashClient
 
-import typings.vortexDashWebDashClient.DDSNs.Runtime
+import typings.vortexDashWebDashClient.DDS.Runtime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Runtime extends js.Object {
-  var Runtime: typings.vortexDashWebDashClient.DDSNs.Runtime
+  var Runtime: typings.vortexDashWebDashClient.DDS.Runtime
 }
 
 object Anon_Runtime {

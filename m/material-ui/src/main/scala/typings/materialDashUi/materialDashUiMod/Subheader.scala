@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Subheader")
 @js.native
 class Subheader ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.Subheader
+  extends typings.materialDashUi.__MaterialUI.Subheader
 

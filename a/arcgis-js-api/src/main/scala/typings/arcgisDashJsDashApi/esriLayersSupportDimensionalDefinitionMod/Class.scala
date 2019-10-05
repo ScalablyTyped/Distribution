@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportDimensionalDefinitionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DimensionalDefinition
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DimensionalDefinitionProperties
+import typings.arcgisDashJsDashApi.__esri.DimensionalDefinition
+import typings.arcgisDashJsDashApi.__esri.DimensionalDefinitionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

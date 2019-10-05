@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.Sparkline
-import typings.kendoDashUi.kendoNs.datavizNs.uiNs.SparklineOptions
+import typings.kendoDashUi.kendo.dataviz.ui.Sparkline
+import typings.kendoDashUi.kendo.dataviz.ui.SparklineOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.cassandraDashDriver
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadataNs.caching
+import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.caching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

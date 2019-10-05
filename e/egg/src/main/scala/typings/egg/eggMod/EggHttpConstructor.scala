@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait EggHttpConstructor
-  extends Instantiable1[/* app */ typings.eggDashView.eggMod.Application, EggHttpClient]
+trait EggHttpConstructor extends Instantiable1[/* app */ Application, EggHttpClient]
 

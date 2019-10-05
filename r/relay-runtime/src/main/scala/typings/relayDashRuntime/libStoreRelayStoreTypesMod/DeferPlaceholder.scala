@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeferPlaceholder extends IncrementalDataPlaceholder {
-  var data: PayloadData
-  var kind: defer
-  var label: String
-  var path: js.Array[String]
-  var selector: NormalizationSelector
-  var typeName: String
+  val data: PayloadData
+  val kind: defer
+  val label: String
+  val path: js.Array[String]
+  val selector: NormalizationSelector
+  val typeName: String
 }
 
 object DeferPlaceholder {

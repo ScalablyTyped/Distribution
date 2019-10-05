@@ -1,6 +1,6 @@
 package typings.pixiDotJs.pixiDotJsMod
 
-import typings.pixiDotJs.PIXINs.FontMetrics
+import typings.pixiDotJs.PIXI.FontMetrics
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "TextMetrics")
 @js.native
 class TextMetrics protected ()
-  extends typings.pixiDotJs.PIXINs.TextMetrics {
+  extends typings.pixiDotJs.PIXI.TextMetrics {
   def this(
     text: String,
-    style: typings.pixiDotJs.PIXINs.TextStyle,
+    style: typings.pixiDotJs.PIXI.TextStyle,
     width: Double,
     height: Double,
     lines: js.Array[Double],
@@ -54,19 +54,19 @@ object TextMetrics extends js.Object {
   def isNewline(): Boolean = js.native
   def isNewline(char: String): Boolean = js.native
   def measureFont(font: String): FontMetrics = js.native
-  def measureText(text: String, style: typings.pixiDotJs.PIXINs.TextStyle): typings.pixiDotJs.PIXINs.TextMetrics = js.native
-  def measureText(text: String, style: typings.pixiDotJs.PIXINs.TextStyle, wordWrap: Boolean): typings.pixiDotJs.PIXINs.TextMetrics = js.native
+  def measureText(text: String, style: typings.pixiDotJs.PIXI.TextStyle): typings.pixiDotJs.PIXI.TextMetrics = js.native
+  def measureText(text: String, style: typings.pixiDotJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiDotJs.PIXI.TextMetrics = js.native
   def measureText(
     text: String,
-    style: typings.pixiDotJs.PIXINs.TextStyle,
+    style: typings.pixiDotJs.PIXI.TextStyle,
     wordWrap: Boolean,
     canvas: HTMLCanvasElement
-  ): typings.pixiDotJs.PIXINs.TextMetrics = js.native
+  ): typings.pixiDotJs.PIXI.TextMetrics = js.native
   def tokenize(): js.Array[String] = js.native
   def tokenize(text: String): js.Array[String] = js.native
   def trimRight(): String = js.native
   def trimRight(text: String): String = js.native
-  def wordWrap(text: String, style: typings.pixiDotJs.PIXINs.TextStyle): String = js.native
-  def wordWrap(text: String, style: typings.pixiDotJs.PIXINs.TextStyle, canvas: HTMLCanvasElement): String = js.native
+  def wordWrap(text: String, style: typings.pixiDotJs.PIXI.TextStyle): String = js.native
+  def wordWrap(text: String, style: typings.pixiDotJs.PIXI.TextStyle, canvas: HTMLCanvasElement): String = js.native
 }
 

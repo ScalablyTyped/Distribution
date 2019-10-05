@@ -1,7 +1,7 @@
 package typings.miniprogramDashWxs
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.miniprogramDashWxs.IntlNs.CollatorOptions
+import typings.miniprogramDashWxs.Intl.CollatorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

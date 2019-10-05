@@ -26,15 +26,15 @@ trait FindMatchesParameters extends js.Object {
 object FindMatchesParameters {
   @scala.inline
   def apply(
-    AccuracyCostTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    EnforceProvidedLabels: js.UndefOr[NullableBoolean] = js.undefined,
-    PrecisionRecallTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
+    AccuracyCostTradeoff: Int | Double = null,
+    EnforceProvidedLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    PrecisionRecallTradeoff: Int | Double = null,
     PrimaryKeyColumnName: ColumnNameString = null
   ): FindMatchesParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AccuracyCostTradeoff)) __obj.updateDynamic("AccuracyCostTradeoff")(AccuracyCostTradeoff)
+    if (AccuracyCostTradeoff != null) __obj.updateDynamic("AccuracyCostTradeoff")(AccuracyCostTradeoff.asInstanceOf[js.Any])
     if (!js.isUndefined(EnforceProvidedLabels)) __obj.updateDynamic("EnforceProvidedLabels")(EnforceProvidedLabels)
-    if (!js.isUndefined(PrecisionRecallTradeoff)) __obj.updateDynamic("PrecisionRecallTradeoff")(PrecisionRecallTradeoff)
+    if (PrecisionRecallTradeoff != null) __obj.updateDynamic("PrecisionRecallTradeoff")(PrecisionRecallTradeoff.asInstanceOf[js.Any])
     if (PrimaryKeyColumnName != null) __obj.updateDynamic("PrimaryKeyColumnName")(PrimaryKeyColumnName)
     __obj.asInstanceOf[FindMatchesParameters]
   }

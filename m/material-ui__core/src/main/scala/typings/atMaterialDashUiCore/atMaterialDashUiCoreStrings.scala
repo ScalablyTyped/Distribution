@@ -2,9 +2,9 @@ package typings.atMaterialDashUiCore
 
 import typings.atMaterialDashUiCore.appBarAppBarMod.AppBarClassKey
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PaletteType
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypesNs.Alignment
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypesNs.Color
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypesNs.Margin
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypes.Alignment
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypes.Color
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypes.Margin
 import typings.atMaterialDashUiCore.avatarAvatarMod.AvatarClassKey
 import typings.atMaterialDashUiCore.backdropBackdropMod.BackdropClassKey
 import typings.atMaterialDashUiCore.badgeBadgeMod.BadgeClassKey

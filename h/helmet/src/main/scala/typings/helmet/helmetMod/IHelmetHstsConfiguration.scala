@@ -1,5 +1,7 @@
 package typings.helmet.helmetMod
 
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +26,7 @@ object IHelmetHstsConfiguration {
     includeSubdomains: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
     preload: js.UndefOr[Boolean] = js.undefined,
-    setIf: IHelmetSetIfFunction = null
+    setIf: (/* req */ Request, /* res */ Response) => Boolean = null
   ): IHelmetHstsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
@@ -32,7 +34,7 @@ object IHelmetHstsConfiguration {
     if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
-    if (setIf != null) __obj.updateDynamic("setIf")(setIf)
+    if (setIf != null) __obj.updateDynamic("setIf")(js.Any.fromFunction2(setIf))
     __obj.asInstanceOf[IHelmetHstsConfiguration]
   }
 }

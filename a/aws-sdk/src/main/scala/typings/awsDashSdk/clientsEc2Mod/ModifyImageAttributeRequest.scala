@@ -53,7 +53,7 @@ object ModifyImageAttributeRequest {
     ImageId: String,
     Attribute: String = null,
     Description: AttributeValue = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LaunchPermission: LaunchPermissionModifications = null,
     OperationType: OperationType = null,
     ProductCodes: ProductCodeStringList = null,

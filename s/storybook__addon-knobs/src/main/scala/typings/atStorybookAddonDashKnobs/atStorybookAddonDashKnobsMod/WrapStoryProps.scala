@@ -1,6 +1,7 @@
 package typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsMod
 
 import typings.atStorybookReact.atStorybookReactMod.RenderFunction
+import typings.atStorybookReact.atStorybookReactMod.Renderable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +21,14 @@ object WrapStoryProps {
     context: js.Object = null,
     initialContent: js.Object = null,
     knobStore: js.Object = null,
-    storyFn: RenderFunction = null
+    storyFn: () => Renderable | js.Array[Renderable] = null
   ): WrapStoryProps = {
     val __obj = js.Dynamic.literal()
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (context != null) __obj.updateDynamic("context")(context)
     if (initialContent != null) __obj.updateDynamic("initialContent")(initialContent)
     if (knobStore != null) __obj.updateDynamic("knobStore")(knobStore)
-    if (storyFn != null) __obj.updateDynamic("storyFn")(storyFn)
+    if (storyFn != null) __obj.updateDynamic("storyFn")(js.Any.fromFunction0(storyFn))
     __obj.asInstanceOf[WrapStoryProps]
   }
 }

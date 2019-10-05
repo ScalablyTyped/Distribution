@@ -28,7 +28,7 @@ object RegisterCertificateRequest {
   def apply(
     certificatePem: CertificatePem,
     caCertificatePem: CertificatePem = null,
-    setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined,
+    setAsActive: js.UndefOr[scala.Boolean] = js.undefined,
     status: CertificateStatus = null
   ): RegisterCertificateRequest = {
     val __obj = js.Dynamic.literal(certificatePem = certificatePem)

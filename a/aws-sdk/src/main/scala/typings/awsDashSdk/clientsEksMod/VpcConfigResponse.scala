@@ -30,8 +30,8 @@ trait VpcConfigResponse extends js.Object {
 object VpcConfigResponse {
   @scala.inline
   def apply(
-    endpointPrivateAccess: js.UndefOr[Boolean] = js.undefined,
-    endpointPublicAccess: js.UndefOr[Boolean] = js.undefined,
+    endpointPrivateAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    endpointPublicAccess: js.UndefOr[scala.Boolean] = js.undefined,
     securityGroupIds: StringList = null,
     subnetIds: StringList = null,
     vpcId: String = null

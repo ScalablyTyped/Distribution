@@ -1,5 +1,7 @@
 package typings.reactDashNativeDashScrollableDashTabDashView.reactDashNativeDashScrollableDashTabDashViewMod
 
+import typings.react.reactMod.Global.JSX.Element
+import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
@@ -17,7 +19,7 @@ object ScrollableTabBarProps {
     activeTextColor: String = null,
     backgroundColor: String = null,
     inactiveTextColor: String = null,
-    renderTab: RenderTabProperties = null,
+    renderTab: (/* name */ String, /* pageIndex */ Double, /* isTabActive */ Boolean, /* onPressHandler */ js.Function1[/* pageNumber */ Double, Unit], /* onLayoutHandler */ js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]) => Element = null,
     scrollOffset: Int | Double = null,
     style: ViewStyle = null,
     tabStyle: ViewStyle = null,
@@ -29,7 +31,7 @@ object ScrollableTabBarProps {
     if (activeTextColor != null) __obj.updateDynamic("activeTextColor")(activeTextColor)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (inactiveTextColor != null) __obj.updateDynamic("inactiveTextColor")(inactiveTextColor)
-    if (renderTab != null) __obj.updateDynamic("renderTab")(renderTab)
+    if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction5(renderTab))
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)

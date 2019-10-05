@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypedSnapshot[TData] extends js.Object {
-  var data: TData
-  var isMissingData: Boolean
-  var seenRecords: RecordMap
-  var selector: SingularReaderSelector
+  val data: TData
+  val isMissingData: Boolean
+  val seenRecords: RecordMap
+  val selector: SingularReaderSelector
 }
 
 object TypedSnapshot {

@@ -26,13 +26,13 @@ trait DescribeRepositoriesRequest extends js.Object {
 object DescribeRepositoriesRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     registryId: RegistryId = null,
     repositoryNames: RepositoryNameList = null
   ): DescribeRepositoriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (registryId != null) __obj.updateDynamic("registryId")(registryId)
     if (repositoryNames != null) __obj.updateDynamic("repositoryNames")(repositoryNames)

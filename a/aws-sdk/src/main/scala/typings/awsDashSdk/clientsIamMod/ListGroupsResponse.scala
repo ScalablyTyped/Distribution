@@ -23,7 +23,7 @@ object ListGroupsResponse {
   @scala.inline
   def apply(
     Groups: groupListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListGroupsResponse = {
     val __obj = js.Dynamic.literal(Groups = Groups)

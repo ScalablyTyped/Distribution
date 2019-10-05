@@ -1,0 +1,20 @@
+package typings.inboxsdk.inboxsdkMod.Router
+
+import typings.inboxsdk.inboxsdkMod.Common.DropdownView
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SectionDropdownClickEvent extends js.Object {
+  var dropdown: DropdownView
+}
+
+object SectionDropdownClickEvent {
+  @scala.inline
+  def apply(dropdown: DropdownView): SectionDropdownClickEvent = {
+    val __obj = js.Dynamic.literal(dropdown = dropdown)
+  
+    __obj.asInstanceOf[SectionDropdownClickEvent]
+  }
+}
+

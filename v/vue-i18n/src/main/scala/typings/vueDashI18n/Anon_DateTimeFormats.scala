@@ -1,8 +1,8 @@
 package typings.vueDashI18n
 
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.DateTimeFormats
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.LocaleMessages
-import typings.vueDashI18n.vueDashI18nMod.VueI18nNs.NumberFormats
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeFormats
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages
+import typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

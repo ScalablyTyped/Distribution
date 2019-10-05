@@ -22,14 +22,14 @@ trait ListPoliciesRequest extends js.Object {
 object ListPoliciesRequest {
   @scala.inline
   def apply(
-    ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined,
+    ascendingOrder: js.UndefOr[scala.Boolean] = js.undefined,
     marker: Marker = null,
-    pageSize: js.UndefOr[PageSize] = js.undefined
+    pageSize: Int | Double = null
   ): ListPoliciesRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder)
     if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesRequest]
   }
 }

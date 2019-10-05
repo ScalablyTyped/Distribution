@@ -38,21 +38,21 @@ trait IpPermission extends js.Object {
 object IpPermission {
   @scala.inline
   def apply(
-    FromPort: js.UndefOr[Integer] = js.undefined,
+    FromPort: Int | scala.Double = null,
     IpProtocol: String = null,
     IpRanges: IpRangeList = null,
     Ipv6Ranges: Ipv6RangeList = null,
     PrefixListIds: PrefixListIdList = null,
-    ToPort: js.UndefOr[Integer] = js.undefined,
+    ToPort: Int | scala.Double = null,
     UserIdGroupPairs: UserIdGroupPairList = null
   ): IpPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort)
+    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
     if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol)
     if (IpRanges != null) __obj.updateDynamic("IpRanges")(IpRanges)
     if (Ipv6Ranges != null) __obj.updateDynamic("Ipv6Ranges")(Ipv6Ranges)
     if (PrefixListIds != null) __obj.updateDynamic("PrefixListIds")(PrefixListIds)
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort)
+    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
     if (UserIdGroupPairs != null) __obj.updateDynamic("UserIdGroupPairs")(UserIdGroupPairs)
     __obj.asInstanceOf[IpPermission]
   }

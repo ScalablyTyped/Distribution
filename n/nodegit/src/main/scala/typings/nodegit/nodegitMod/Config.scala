@@ -15,5 +15,6 @@ class Config ()
 object Config extends js.Object {
   def findProgramdata(): js.Promise[typings.nodegit.bufMod.Buf] = js.native
   def openDefault(): js.Promise[typings.nodegit.configMod.Config] = js.native
+  type LEVEL = typings.nodegit.configMod.Config.LEVEL
 }
 

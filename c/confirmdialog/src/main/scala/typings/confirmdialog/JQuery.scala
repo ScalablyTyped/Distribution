@@ -1,6 +1,6 @@
 package typings.confirmdialog
 
-import typings.confirmdialog.optionsNs.confirmOptions
+import typings.confirmdialog.options.confirmOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,13 +21,9 @@ trait ListPrincipalThingsRequest extends js.Object {
 
 object ListPrincipalThingsRequest {
   @scala.inline
-  def apply(
-    principal: Principal,
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): ListPrincipalThingsRequest = {
+  def apply(principal: Principal, maxResults: Int | Double = null, nextToken: NextToken = null): ListPrincipalThingsRequest = {
     val __obj = js.Dynamic.literal(principal = principal)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListPrincipalThingsRequest]
   }

@@ -1,6 +1,6 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.Fraction
+import typings.vexflow.Vex.Flow.Fraction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

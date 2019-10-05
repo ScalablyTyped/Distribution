@@ -25,26 +25,29 @@ trait PasswordPolicyType extends js.Object {
     * In the password policy that you have set, refers to whether you have required users to use at least one uppercase letter in their password.
     */
   var RequireUppercase: js.UndefOr[BooleanType] = js.undefined
+  /**
+    * In the password policy you have set, refers to the number of days a temporary password is valid. If the user does not sign-in during this time, their password will need to be reset by an administrator.  When you set TemporaryPasswordValidityDays for a user pool, you will no longer be able to set the deprecated UnusedAccountValidityDays value for that user pool. 
+    */
   var TemporaryPasswordValidityDays: js.UndefOr[TemporaryPasswordValidityDaysType] = js.undefined
 }
 
 object PasswordPolicyType {
   @scala.inline
   def apply(
-    MinimumLength: js.UndefOr[PasswordPolicyMinLengthType] = js.undefined,
-    RequireLowercase: js.UndefOr[BooleanType] = js.undefined,
-    RequireNumbers: js.UndefOr[BooleanType] = js.undefined,
-    RequireSymbols: js.UndefOr[BooleanType] = js.undefined,
-    RequireUppercase: js.UndefOr[BooleanType] = js.undefined,
-    TemporaryPasswordValidityDays: js.UndefOr[TemporaryPasswordValidityDaysType] = js.undefined
+    MinimumLength: Int | Double = null,
+    RequireLowercase: js.UndefOr[Boolean] = js.undefined,
+    RequireNumbers: js.UndefOr[Boolean] = js.undefined,
+    RequireSymbols: js.UndefOr[Boolean] = js.undefined,
+    RequireUppercase: js.UndefOr[Boolean] = js.undefined,
+    TemporaryPasswordValidityDays: Int | Double = null
   ): PasswordPolicyType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MinimumLength)) __obj.updateDynamic("MinimumLength")(MinimumLength)
+    if (MinimumLength != null) __obj.updateDynamic("MinimumLength")(MinimumLength.asInstanceOf[js.Any])
     if (!js.isUndefined(RequireLowercase)) __obj.updateDynamic("RequireLowercase")(RequireLowercase)
     if (!js.isUndefined(RequireNumbers)) __obj.updateDynamic("RequireNumbers")(RequireNumbers)
     if (!js.isUndefined(RequireSymbols)) __obj.updateDynamic("RequireSymbols")(RequireSymbols)
     if (!js.isUndefined(RequireUppercase)) __obj.updateDynamic("RequireUppercase")(RequireUppercase)
-    if (!js.isUndefined(TemporaryPasswordValidityDays)) __obj.updateDynamic("TemporaryPasswordValidityDays")(TemporaryPasswordValidityDays)
+    if (TemporaryPasswordValidityDays != null) __obj.updateDynamic("TemporaryPasswordValidityDays")(TemporaryPasswordValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordPolicyType]
   }
 }

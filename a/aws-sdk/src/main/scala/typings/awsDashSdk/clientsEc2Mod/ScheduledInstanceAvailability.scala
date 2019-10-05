@@ -63,33 +63,33 @@ object ScheduledInstanceAvailability {
   @scala.inline
   def apply(
     AvailabilityZone: String = null,
-    AvailableInstanceCount: js.UndefOr[Integer] = js.undefined,
+    AvailableInstanceCount: Int | scala.Double = null,
     FirstSlotStartTime: DateTime = null,
     HourlyPrice: String = null,
     InstanceType: String = null,
-    MaxTermDurationInDays: js.UndefOr[Integer] = js.undefined,
-    MinTermDurationInDays: js.UndefOr[Integer] = js.undefined,
+    MaxTermDurationInDays: Int | scala.Double = null,
+    MinTermDurationInDays: Int | scala.Double = null,
     NetworkPlatform: String = null,
     Platform: String = null,
     PurchaseToken: String = null,
     Recurrence: ScheduledInstanceRecurrence = null,
-    SlotDurationInHours: js.UndefOr[Integer] = js.undefined,
-    TotalScheduledInstanceHours: js.UndefOr[Integer] = js.undefined
+    SlotDurationInHours: Int | scala.Double = null,
+    TotalScheduledInstanceHours: Int | scala.Double = null
   ): ScheduledInstanceAvailability = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (!js.isUndefined(AvailableInstanceCount)) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount)
+    if (AvailableInstanceCount != null) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.asInstanceOf[js.Any])
     if (FirstSlotStartTime != null) __obj.updateDynamic("FirstSlotStartTime")(FirstSlotStartTime)
     if (HourlyPrice != null) __obj.updateDynamic("HourlyPrice")(HourlyPrice)
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
-    if (!js.isUndefined(MaxTermDurationInDays)) __obj.updateDynamic("MaxTermDurationInDays")(MaxTermDurationInDays)
-    if (!js.isUndefined(MinTermDurationInDays)) __obj.updateDynamic("MinTermDurationInDays")(MinTermDurationInDays)
+    if (MaxTermDurationInDays != null) __obj.updateDynamic("MaxTermDurationInDays")(MaxTermDurationInDays.asInstanceOf[js.Any])
+    if (MinTermDurationInDays != null) __obj.updateDynamic("MinTermDurationInDays")(MinTermDurationInDays.asInstanceOf[js.Any])
     if (NetworkPlatform != null) __obj.updateDynamic("NetworkPlatform")(NetworkPlatform)
     if (Platform != null) __obj.updateDynamic("Platform")(Platform)
     if (PurchaseToken != null) __obj.updateDynamic("PurchaseToken")(PurchaseToken)
     if (Recurrence != null) __obj.updateDynamic("Recurrence")(Recurrence)
-    if (!js.isUndefined(SlotDurationInHours)) __obj.updateDynamic("SlotDurationInHours")(SlotDurationInHours)
-    if (!js.isUndefined(TotalScheduledInstanceHours)) __obj.updateDynamic("TotalScheduledInstanceHours")(TotalScheduledInstanceHours)
+    if (SlotDurationInHours != null) __obj.updateDynamic("SlotDurationInHours")(SlotDurationInHours.asInstanceOf[js.Any])
+    if (TotalScheduledInstanceHours != null) __obj.updateDynamic("TotalScheduledInstanceHours")(TotalScheduledInstanceHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstanceAvailability]
   }
 }

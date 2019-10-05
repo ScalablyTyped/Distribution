@@ -1,6 +1,6 @@
 package typings.zipkin
 
-import typings.zipkin.zipkinMod.optionNs.IOption
+import typings.zipkin.zipkinMod.option.IOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -40,3 +40,15 @@ object LogicalExpression {
   }
 }
 
+@JSImport("babel-types", "logicalExpression")
+@js.native
+object logicalExpression extends js.Object {
+  def apply(): LogicalExpression = js.native
+  def apply(operator: `&&`): LogicalExpression = js.native
+  def apply(operator: `&&`, left: Expression): LogicalExpression = js.native
+  def apply(operator: `&&`, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: `||`): LogicalExpression = js.native
+  def apply(operator: `||`, left: Expression): LogicalExpression = js.native
+  def apply(operator: `||`, left: Expression, right: Expression): LogicalExpression = js.native
+}
+

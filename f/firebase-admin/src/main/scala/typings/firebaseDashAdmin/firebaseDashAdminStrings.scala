@@ -1,7 +1,7 @@
 package typings.firebaseDashAdmin
 
-import typings.firebaseDashAdmin.adminNs.authNs.HashAlgorithmType
-import typings.firebaseDashAdmin.adminNs.databaseNs.EventType
+import typings.firebaseDashAdmin.admin.auth.HashAlgorithmType
+import typings.firebaseDashAdmin.admin.database.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

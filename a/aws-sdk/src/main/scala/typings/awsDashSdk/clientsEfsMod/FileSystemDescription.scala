@@ -75,17 +75,17 @@ object FileSystemDescription {
     PerformanceMode: PerformanceMode,
     SizeInBytes: FileSystemSize,
     Tags: Tags,
-    Encrypted: js.UndefOr[Encrypted] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     KmsKeyId: KmsKeyId = null,
     Name: TagValue = null,
-    ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined,
+    ProvisionedThroughputInMibps: Int | Double = null,
     ThroughputMode: ThroughputMode = null
   ): FileSystemDescription = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, CreationToken = CreationToken, FileSystemId = FileSystemId, LifeCycleState = LifeCycleState.asInstanceOf[js.Any], NumberOfMountTargets = NumberOfMountTargets, OwnerId = OwnerId, PerformanceMode = PerformanceMode.asInstanceOf[js.Any], SizeInBytes = SizeInBytes, Tags = Tags)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(ProvisionedThroughputInMibps)) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps)
+    if (ProvisionedThroughputInMibps != null) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps.asInstanceOf[js.Any])
     if (ThroughputMode != null) __obj.updateDynamic("ThroughputMode")(ThroughputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemDescription]
   }

@@ -1,5 +1,9 @@
 package typings.sockjsDashClient.sockjsDashClientMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.TopLevel
 import typings.std.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +19,10 @@ class ^ protected () extends WebSocket {
 
 @JSImport("sockjs-client", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
+object ^
+  extends TopLevel[
+      (Instantiable1[/* url */ String, WebSocket]) with (Instantiable2[/* url */ String, /* _reserved */ js.Any, WebSocket]) with (Instantiable3[/* url */ String, /* _reserved */ js.Any, /* options */ Options, WebSocket])
+    ] {
   var CLOSED: typings.sockjsDashClient.sockjsDashClientMod.CLOSED = js.native
   var CLOSING: typings.sockjsDashClient.sockjsDashClientMod.CLOSING = js.native
   var CONNECTING: typings.sockjsDashClient.sockjsDashClientMod.CONNECTING = js.native

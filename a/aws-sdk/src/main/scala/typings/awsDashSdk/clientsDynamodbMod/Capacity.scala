@@ -22,14 +22,14 @@ trait Capacity extends js.Object {
 object Capacity {
   @scala.inline
   def apply(
-    CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
-    ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
-    WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
+    CapacityUnits: Int | scala.Double = null,
+    ReadCapacityUnits: Int | scala.Double = null,
+    WriteCapacityUnits: Int | scala.Double = null
   ): Capacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits)
-    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits)
-    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits)
+    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
+    if (ReadCapacityUnits != null) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.asInstanceOf[js.Any])
+    if (WriteCapacityUnits != null) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capacity]
   }
 }

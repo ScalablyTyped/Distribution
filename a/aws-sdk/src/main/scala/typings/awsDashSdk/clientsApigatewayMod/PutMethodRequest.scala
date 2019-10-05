@@ -58,7 +58,7 @@ object PutMethodRequest {
     httpMethod: String,
     resourceId: String,
     restApiId: String,
-    apiKeyRequired: js.UndefOr[Boolean] = js.undefined,
+    apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined,
     authorizationScopes: ListOfString = null,
     authorizerId: String = null,
     operationName: String = null,

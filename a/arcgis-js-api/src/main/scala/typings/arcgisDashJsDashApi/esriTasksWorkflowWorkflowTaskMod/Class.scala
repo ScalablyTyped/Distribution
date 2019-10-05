@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksWorkflowWorkflowTaskMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WorkflowTask
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WorkflowTaskProperties
+import typings.arcgisDashJsDashApi.__esri.WorkflowTask
+import typings.arcgisDashJsDashApi.__esri.WorkflowTaskProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,9 +17,9 @@ trait Stream extends js.Object {
 
 object Stream {
   @scala.inline
-  def apply(fileId: js.UndefOr[FileId] = js.undefined, streamId: StreamId = null): Stream = {
+  def apply(fileId: Int | Double = null, streamId: StreamId = null): Stream = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileId)) __obj.updateDynamic("fileId")(fileId)
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
     if (streamId != null) __obj.updateDynamic("streamId")(streamId)
     __obj.asInstanceOf[Stream]
   }

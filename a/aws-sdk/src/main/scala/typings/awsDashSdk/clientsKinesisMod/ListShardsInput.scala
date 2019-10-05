@@ -31,14 +31,14 @@ object ListShardsInput {
   @scala.inline
   def apply(
     ExclusiveStartShardId: ShardId = null,
-    MaxResults: js.UndefOr[ListShardsInputLimit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     StreamCreationTimestamp: Timestamp = null,
     StreamName: StreamName = null
   ): ListShardsInput = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartShardId != null) __obj.updateDynamic("ExclusiveStartShardId")(ExclusiveStartShardId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StreamCreationTimestamp != null) __obj.updateDynamic("StreamCreationTimestamp")(StreamCreationTimestamp)
     if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName)

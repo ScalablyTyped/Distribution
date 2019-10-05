@@ -1,8 +1,8 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.idleNs.IdleState
-import typings.chromeDashApps.chromeNs.integer
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.idle.IdleState
+import typings.chromeDashApps.chrome.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

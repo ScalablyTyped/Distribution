@@ -27,3 +27,9 @@ object AreaSelect {
   }
 }
 
+@JSImport("leaflet", "areaSelect")
+@js.native
+object areaSelect extends js.Object {
+  def apply(box: AreaSelectOptions): AreaSelect = js.native
+}
+

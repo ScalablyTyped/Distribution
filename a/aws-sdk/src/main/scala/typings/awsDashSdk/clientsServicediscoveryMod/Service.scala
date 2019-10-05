@@ -62,7 +62,7 @@ object Service {
     HealthCheckConfig: HealthCheckConfig = null,
     HealthCheckCustomConfig: HealthCheckCustomConfig = null,
     Id: ResourceId = null,
-    InstanceCount: js.UndefOr[ResourceCount] = js.undefined,
+    InstanceCount: Int | Double = null,
     Name: ServiceName = null,
     NamespaceId: ResourceId = null
   ): Service = {
@@ -75,7 +75,7 @@ object Service {
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig)
     if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig)
     if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (NamespaceId != null) __obj.updateDynamic("NamespaceId")(NamespaceId)
     __obj.asInstanceOf[Service]

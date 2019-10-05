@@ -63,7 +63,7 @@ object LoadOptions {
   def apply(
     fetchFunc: js.Function = null,
     fromTFHub: js.UndefOr[Boolean] = js.undefined,
-    onProgress: OnProgressCallback = null,
+    onProgress: /* fraction */ Double => Unit = null,
     requestInit: RequestInit = null,
     strict: js.UndefOr[Boolean] = js.undefined,
     weightPathPrefix: String = null
@@ -71,7 +71,7 @@ object LoadOptions {
     val __obj = js.Dynamic.literal()
     if (fetchFunc != null) __obj.updateDynamic("fetchFunc")(fetchFunc)
     if (!js.isUndefined(fromTFHub)) __obj.updateDynamic("fromTFHub")(fromTFHub)
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (requestInit != null) __obj.updateDynamic("requestInit")(requestInit)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (weightPathPrefix != null) __obj.updateDynamic("weightPathPrefix")(weightPathPrefix)

@@ -13,3 +13,9 @@ class BindingBehavior protected () extends Expression {
   var name: String = js.native
 }
 
+@JSImport("aurelia-binding", "bindingBehavior")
+@js.native
+object bindingBehavior extends js.Object {
+  def apply(name: String): js.Any = js.native
+}
+

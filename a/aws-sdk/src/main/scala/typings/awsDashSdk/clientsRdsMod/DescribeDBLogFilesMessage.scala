@@ -39,20 +39,20 @@ object DescribeDBLogFilesMessage {
   @scala.inline
   def apply(
     DBInstanceIdentifier: String,
-    FileLastWritten: js.UndefOr[Long] = js.undefined,
-    FileSize: js.UndefOr[Long] = js.undefined,
+    FileLastWritten: Int | scala.Double = null,
+    FileSize: Int | scala.Double = null,
     FilenameContains: String = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    MaxRecords: Int | scala.Double = null
   ): DescribeDBLogFilesMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier)
-    if (!js.isUndefined(FileLastWritten)) __obj.updateDynamic("FileLastWritten")(FileLastWritten)
-    if (!js.isUndefined(FileSize)) __obj.updateDynamic("FileSize")(FileSize)
+    if (FileLastWritten != null) __obj.updateDynamic("FileLastWritten")(FileLastWritten.asInstanceOf[js.Any])
+    if (FileSize != null) __obj.updateDynamic("FileSize")(FileSize.asInstanceOf[js.Any])
     if (FilenameContains != null) __obj.updateDynamic("FilenameContains")(FilenameContains)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBLogFilesMessage]
   }
 }

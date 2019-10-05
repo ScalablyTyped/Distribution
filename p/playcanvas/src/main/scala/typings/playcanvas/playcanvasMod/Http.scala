@@ -1,5 +1,6 @@
 package typings.playcanvas.playcanvasMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,5 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Http")
 @js.native
 class Http ()
-  extends typings.playcanvas.pcNs.Http
+  extends typings.playcanvas.pc.Http
+
+/**
+  * @static
+  * @readonly
+  * @type {pc.Http}
+  * @name pc.http
+  * @description Default instance of {@link pc.Http}.
+  */
+@JSImport("playcanvas", "http")
+@js.native
+object http
+  extends TopLevel[typings.playcanvas.pc.Http]
 

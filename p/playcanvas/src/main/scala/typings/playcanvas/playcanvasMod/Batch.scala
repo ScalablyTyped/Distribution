@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Batch")
 @js.native
 class Batch protected ()
-  extends typings.playcanvas.pcNs.Batch {
+  extends typings.playcanvas.pc.Batch {
   def this(
-    meshInstances: js.Array[typings.playcanvas.pcNs.MeshInstance],
+    meshInstances: js.Array[typings.playcanvas.pc.MeshInstance],
     dynamic: Boolean,
     batchGroupId: Double
   ) = this()

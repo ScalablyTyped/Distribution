@@ -29,34 +29,21 @@ trait Future[A] extends js.Object {
   def zipWith[B, C](fu: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C]
 }
 
-object Future {
-  @scala.inline
-  def apply[A](
-    andThen: js.Function1[/* t */ Try[A], js.Any] => Future[A],
-    apply1: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any],
-    apply2: (Future[js.Any], Future[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Future[js.Any],
-    chain: Future[js.Any] => FutureBuilder1[A, js.Any],
-    failed: () => Future[Error],
-    fallbackTo: Future[js.Any] => Future[A],
-    filter: js.Function1[/* a */ A, Boolean] => Future[A],
-    flatMap: js.Function1[/* a */ A, Future[js.Any]] => Future[js.Any],
-    foreach: js.Function1[/* a */ A, js.Any] => Unit,
-    getPromise: () => js.Promise[A],
-    isCompleted: () => Boolean,
-    map: js.Function1[/* a */ A, js.Any] => Future[js.Any],
-    onComplete: js.Function1[/* t */ Try[A], js.Any] => Unit,
-    recover: js.Function1[/* e */ Error, Optional[js.Any]] => Future[A],
-    recoverWith: js.Function1[/* e */ Error, Optional[Future[js.Any]]] => Future[A],
-    transform: js.Function1[/* t */ Try[A], Try[js.Any]] => Future[js.Any],
-    transform1: (js.Function1[/* a */ A, js.Any], js.Function1[/* e */ Error, Error]) => Future[js.Any],
-    transformWith: js.Function1[/* t */ Try[A], Future[js.Any]] => Future[js.Any],
-    value: () => Optional[Try[A]],
-    zip: Future[js.Any] => Future[js.Tuple2[A, js.Any]],
-    zipWith: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]
-  ): Future[A] = {
-    val __obj = js.Dynamic.literal(andThen = js.Any.fromFunction1(andThen), apply1 = js.Any.fromFunction2(apply1), apply2 = js.Any.fromFunction3(apply2), chain = js.Any.fromFunction1(chain), failed = js.Any.fromFunction0(failed), fallbackTo = js.Any.fromFunction1(fallbackTo), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), foreach = js.Any.fromFunction1(foreach), getPromise = js.Any.fromFunction0(getPromise), isCompleted = js.Any.fromFunction0(isCompleted), map = js.Any.fromFunction1(map), onComplete = js.Any.fromFunction1(onComplete), recover = js.Any.fromFunction1(recover), recoverWith = js.Any.fromFunction1(recoverWith), transform = js.Any.fromFunction1(transform), transform1 = js.Any.fromFunction2(transform1), transformWith = js.Any.fromFunction1(transformWith), value = js.Any.fromFunction0(value), zip = js.Any.fromFunction1(zip), zipWith = js.Any.fromFunction2(zipWith))
-  
-    __obj.asInstanceOf[Future[A]]
-  }
+@JSImport("scalike", "Future")
+@js.native
+object Future extends js.Object {
+  def apply[A](f: js.Function0[A]): Future[A] = js.native
+  def apply[A](f: js.Promise[A]): Future[A] = js.native
+  def failed[A](e: Error): Future[A] = js.native
+  def find[A](fus: js.Array[Future[A]], f: js.Function1[/* a */ A, Boolean]): Future[Optional[A]] = js.native
+  def firstCompletedOf[A](fus: js.Array[Future[A]]): Future[A] = js.native
+  def foldLeft[A, B](fu: js.Array[Future[A]], zero: B, f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = js.native
+  def fromPromise[A](p: js.Promise[A]): Future[A] = js.native
+  def fromTry[A](t: Try[A]): Future[A] = js.native
+  def reduceLeft[A, B](fu: js.Array[Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = js.native
+  def sequence[A](fus: js.Array[Future[A]]): Future[js.Array[A]] = js.native
+  def successful[A](a: A): Future[A] = js.native
+  def traverse[A, B](fu: js.Array[A], f: js.Function1[/* a */ A, Future[B]]): Future[js.Array[B]] = js.native
+  def unit(): Future[Unit] = js.native
 }
 

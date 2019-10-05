@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_Amount
 import typings.braintreeDashWeb.Anon_Client
 import scala.scalajs.js
@@ -139,4 +140,8 @@ trait PayPal extends js.Object {
     */
   def tokenize(options: Anon_Amount, callback: callback): PayPalTokenizeReturn = js.native
 }
+
+@JSImport("braintree-web", "paypal")
+@js.native
+object paypal extends TopLevel[PayPal]
 

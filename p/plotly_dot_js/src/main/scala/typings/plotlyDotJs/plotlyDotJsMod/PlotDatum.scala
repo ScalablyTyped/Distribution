@@ -22,13 +22,14 @@ object PlotDatum {
     data: PlotData,
     pointIndex: Double,
     pointNumber: Double,
-    x: Datum,
     xaxis: LayoutAxis,
-    y: Datum,
-    yaxis: LayoutAxis
+    yaxis: LayoutAxis,
+    x: Datum = null,
+    y: Datum = null
   ): PlotDatum = {
-    val __obj = js.Dynamic.literal(curveNumber = curveNumber, data = data, pointIndex = pointIndex, pointNumber = pointNumber, x = x.asInstanceOf[js.Any], xaxis = xaxis, y = y.asInstanceOf[js.Any], yaxis = yaxis)
-  
+    val __obj = js.Dynamic.literal(curveNumber = curveNumber, data = data, pointIndex = pointIndex, pointNumber = pointNumber, xaxis = xaxis, yaxis = yaxis)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotDatum]
   }
 }

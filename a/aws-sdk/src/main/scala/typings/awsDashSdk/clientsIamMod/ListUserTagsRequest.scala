@@ -21,14 +21,10 @@ trait ListUserTagsRequest extends js.Object {
 
 object ListUserTagsRequest {
   @scala.inline
-  def apply(
-    UserName: existingUserNameType,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): ListUserTagsRequest = {
+  def apply(UserName: existingUserNameType, Marker: markerType = null, MaxItems: Int | Double = null): ListUserTagsRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserTagsRequest]
   }
 }

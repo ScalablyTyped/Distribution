@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashCheckbox
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashCheckbox.SemanticUINs.Checkbox
+import typings.semanticDashUiDashCheckbox.SemanticUI.Checkbox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

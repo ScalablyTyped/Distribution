@@ -17,7 +17,7 @@ trait DescribeSecurityGroupReferencesRequest extends js.Object {
 
 object DescribeSecurityGroupReferencesRequest {
   @scala.inline
-  def apply(GroupId: GroupIds, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeSecurityGroupReferencesRequest = {
+  def apply(GroupId: GroupIds, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeSecurityGroupReferencesRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeSecurityGroupReferencesRequest]

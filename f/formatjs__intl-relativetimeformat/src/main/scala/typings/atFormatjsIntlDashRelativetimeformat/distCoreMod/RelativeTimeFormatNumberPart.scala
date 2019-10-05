@@ -1,8 +1,8 @@
 package typings.atFormatjsIntlDashRelativetimeformat.distCoreMod
 
 import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.Unit
-import typings.std.IntlNs.NumberFormatPart
-import typings.std.IntlNs.NumberFormatPartTypes
+import typings.std.Intl.NumberFormatPart
+import typings.std.Intl.NumberFormatPartTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: js.Any): String = js.native
-  def apply(obj: js.Any, opts: Comparator | Options): String = js.native
+  def apply(obj: js.Any, opts: Comparator): String = js.native
+  def apply(obj: js.Any, opts: Options): String = js.native
 }
 

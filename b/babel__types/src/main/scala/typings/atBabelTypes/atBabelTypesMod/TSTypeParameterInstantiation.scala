@@ -36,3 +36,9 @@ object TSTypeParameterInstantiation {
   }
 }
 
+@JSImport("@babel/types", "tsTypeParameterInstantiation")
+@js.native
+object tsTypeParameterInstantiation extends js.Object {
+  def apply(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
+}
+

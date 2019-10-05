@@ -69,7 +69,7 @@ object ParameterHistory {
     Tier: ParameterTier = null,
     Type: ParameterType = null,
     Value: PSParameterValue = null,
-    Version: js.UndefOr[PSParameterVersion] = js.undefined
+    Version: Int | Double = null
   ): ParameterHistory = {
     val __obj = js.Dynamic.literal()
     if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern)
@@ -83,7 +83,7 @@ object ParameterHistory {
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value)
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterHistory]
   }
 }

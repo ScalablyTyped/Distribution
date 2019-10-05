@@ -14,3 +14,9 @@ trait Irreducible[T] extends Type[T] {
   var meta_Irreducible: Anon_IdentityKind[T] = js.native
 }
 
+@JSImport("tcomb", "irreducible")
+@js.native
+object irreducible extends js.Object {
+  def apply[T](name: String, predicate: Predicate[_]): Irreducible[T] = js.native
+}
+

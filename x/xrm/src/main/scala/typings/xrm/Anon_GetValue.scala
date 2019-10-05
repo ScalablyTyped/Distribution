@@ -1,6 +1,6 @@
 package typings.xrm
 
-import typings.xrm.XrmEnumNs.StageCategory
+import typings.xrm.XrmEnum.StageCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

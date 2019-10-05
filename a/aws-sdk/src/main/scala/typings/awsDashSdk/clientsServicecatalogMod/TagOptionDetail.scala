@@ -26,7 +26,7 @@ trait TagOptionDetail extends js.Object {
 object TagOptionDetail {
   @scala.inline
   def apply(
-    Active: js.UndefOr[TagOptionActive] = js.undefined,
+    Active: js.UndefOr[Boolean] = js.undefined,
     Id: TagOptionId = null,
     Key: TagOptionKey = null,
     Value: TagOptionValue = null

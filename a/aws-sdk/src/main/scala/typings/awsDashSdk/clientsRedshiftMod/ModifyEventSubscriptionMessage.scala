@@ -39,7 +39,7 @@ object ModifyEventSubscriptionMessage {
   @scala.inline
   def apply(
     SubscriptionName: String,
-    Enabled: js.UndefOr[BooleanOptional] = js.undefined,
+    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
     EventCategories: EventCategoriesList = null,
     Severity: String = null,
     SnsTopicArn: String = null,

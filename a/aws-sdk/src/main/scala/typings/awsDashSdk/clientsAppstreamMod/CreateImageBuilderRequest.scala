@@ -69,7 +69,7 @@ object CreateImageBuilderRequest {
     Description: Description = null,
     DisplayName: DisplayName = null,
     DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    EnableDefaultInternetAccess: js.UndefOr[scala.Boolean] = js.undefined,
     IamRoleArn: Arn = null,
     ImageArn: Arn = null,
     ImageName: String = null,

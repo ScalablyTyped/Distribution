@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashTransition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashTransition.SemanticUINs.Transition
+import typings.semanticDashUiDashTransition.SemanticUI.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

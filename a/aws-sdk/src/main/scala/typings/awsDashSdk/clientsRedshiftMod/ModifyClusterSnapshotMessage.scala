@@ -23,12 +23,12 @@ object ModifyClusterSnapshotMessage {
   @scala.inline
   def apply(
     SnapshotIdentifier: String,
-    Force: js.UndefOr[Boolean] = js.undefined,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    Force: js.UndefOr[scala.Boolean] = js.undefined,
+    ManualSnapshotRetentionPeriod: Int | scala.Double = null
   ): ModifyClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifier = SnapshotIdentifier)
     if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force)
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
+    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterSnapshotMessage]
   }
 }

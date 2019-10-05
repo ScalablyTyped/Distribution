@@ -17,9 +17,9 @@ trait EntityAggregate extends js.Object {
 
 object EntityAggregate {
   @scala.inline
-  def apply(count: js.UndefOr[count] = js.undefined, eventArn: eventArn = null): EntityAggregate = {
+  def apply(count: Int | Double = null, eventArn: eventArn = null): EntityAggregate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (eventArn != null) __obj.updateDynamic("eventArn")(eventArn)
     __obj.asInstanceOf[EntityAggregate]
   }

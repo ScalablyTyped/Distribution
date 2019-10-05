@@ -1,6 +1,6 @@
 package typings.vitalsigns.vitalsignsMod
 
-import typings.vitalsigns.vitalsignsMod.vitalsignsNs.Options
+import typings.vitalsigns.vitalsignsMod.vitalsigns.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

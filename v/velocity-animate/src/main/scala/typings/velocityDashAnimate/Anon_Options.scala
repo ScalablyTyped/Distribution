@@ -1,7 +1,7 @@
 package typings.velocityDashAnimate
 
-import typings.velocityDashAnimate.jqueryNs.velocityNs.Options
-import typings.velocityDashAnimate.jqueryNs.velocityNs.Properties
+import typings.velocityDashAnimate.jquery.velocity.Options
+import typings.velocityDashAnimate.jquery.velocity.Properties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

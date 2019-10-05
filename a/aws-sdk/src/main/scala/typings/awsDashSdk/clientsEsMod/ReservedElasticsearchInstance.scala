@@ -63,10 +63,10 @@ object ReservedElasticsearchInstance {
   @scala.inline
   def apply(
     CurrencyCode: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    ElasticsearchInstanceCount: js.UndefOr[Integer] = js.undefined,
+    Duration: Int | scala.Double = null,
+    ElasticsearchInstanceCount: Int | scala.Double = null,
     ElasticsearchInstanceType: ESPartitionInstanceType = null,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
+    FixedPrice: Int | scala.Double = null,
     PaymentOption: ReservedElasticsearchInstancePaymentOption = null,
     RecurringCharges: RecurringChargeList = null,
     ReservationName: ReservationToken = null,
@@ -74,14 +74,14 @@ object ReservedElasticsearchInstance {
     ReservedElasticsearchInstanceOfferingId: String = null,
     StartTime: UpdateTimestamp = null,
     State: String = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
+    UsagePrice: Int | scala.Double = null
   ): ReservedElasticsearchInstance = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (!js.isUndefined(ElasticsearchInstanceCount)) __obj.updateDynamic("ElasticsearchInstanceCount")(ElasticsearchInstanceCount)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (ElasticsearchInstanceCount != null) __obj.updateDynamic("ElasticsearchInstanceCount")(ElasticsearchInstanceCount.asInstanceOf[js.Any])
     if (ElasticsearchInstanceType != null) __obj.updateDynamic("ElasticsearchInstanceType")(ElasticsearchInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice)
+    if (FixedPrice != null) __obj.updateDynamic("FixedPrice")(FixedPrice.asInstanceOf[js.Any])
     if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
     if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges)
     if (ReservationName != null) __obj.updateDynamic("ReservationName")(ReservationName)
@@ -89,7 +89,7 @@ object ReservedElasticsearchInstance {
     if (ReservedElasticsearchInstanceOfferingId != null) __obj.updateDynamic("ReservedElasticsearchInstanceOfferingId")(ReservedElasticsearchInstanceOfferingId)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     if (State != null) __obj.updateDynamic("State")(State)
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice)
+    if (UsagePrice != null) __obj.updateDynamic("UsagePrice")(UsagePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedElasticsearchInstance]
   }
 }

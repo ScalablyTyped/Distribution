@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreHandleOwnerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HandleOwnerConstructor
+import typings.arcgisDashJsDashApi.__esri.HandleOwnerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

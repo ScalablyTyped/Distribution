@@ -1,5 +1,7 @@
 package typings.tstl.tstlMod
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.baseContainerSetContainerMod.SetContainer
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,5 +62,94 @@ class unordered_multiset[Key] ()
     hash: js.Function1[/* key */ Key, Double],
     equal: js.Function2[/* x */ Key, /* y */ Key, Boolean]
   ) = this()
+}
+
+@JSImport("tstl", "unordered_multiset")
+@js.native
+object unordered_multiset extends js.Object {
+  val Iterator: Instantiable0[
+    typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val iterator: Instantiable0[
+    typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val reverse_iterator: Instantiable0[
+    typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

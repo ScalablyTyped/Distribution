@@ -17,10 +17,10 @@ trait PortRange extends js.Object {
 
 object PortRange {
   @scala.inline
-  def apply(FromPort: js.UndefOr[PortNumber] = js.undefined, ToPort: js.UndefOr[PortNumber] = js.undefined): PortRange = {
+  def apply(FromPort: Int | Double = null, ToPort: Int | Double = null): PortRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort)
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort)
+    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
+    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortRange]
   }
 }

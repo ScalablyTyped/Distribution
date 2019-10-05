@@ -1,7 +1,7 @@
 package typings.chance
 
-import typings.chance.ChanceNs.FirstNameNationalities
-import typings.chance.ChanceNs.LastNameNationalities
+import typings.chance.Chance.FirstNameNationalities
+import typings.chance.Chance.LastNameNationalities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

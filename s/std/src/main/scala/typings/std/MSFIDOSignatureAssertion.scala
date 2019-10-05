@@ -11,16 +11,5 @@ trait MSFIDOSignatureAssertion extends MSAssertion {
 
 @JSGlobal("MSFIDOSignatureAssertion")
 @js.native
-class MSFIDOSignatureAssertionCls () extends MSFIDOSignatureAssertion {
-  /* CompleteClass */
-  override val id: java.lang.String = js.native
-  /* CompleteClass */
-  override val signature: MSFIDOSignature = js.native
-  /* CompleteClass */
-  override val `type`: MSCredentialType = js.native
-}
-
-@JSGlobal("MSFIDOSignatureAssertion")
-@js.native
 object MSFIDOSignatureAssertion extends Instantiable0[MSFIDOSignatureAssertion]
 

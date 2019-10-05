@@ -1,7 +1,7 @@
 package typings.emberDashTestingDashHelpers.emberDashTestingDashHelpersMod
 
 import typings.jquery.JQuery
-import typings.rsvp.rsvpMod.defaultNs.Promise
+import typings.rsvp.rsvpMod.default.Promise
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

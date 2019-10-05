@@ -1,8 +1,8 @@
 package typings.atPulumiAws.acmpcaCertificateAuthorityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.acmpcaNs.CertificateAuthorityCertificateAuthorityConfiguration
-import typings.atPulumiAws.typesOutputMod.acmpcaNs.CertificateAuthorityRevocationConfiguration
+import typings.atPulumiAws.typesOutputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
+import typings.atPulumiAws.typesOutputMod.acmpca.CertificateAuthorityRevocationConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

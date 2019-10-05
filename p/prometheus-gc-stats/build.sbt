@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "prometheus-gc-stats"
-version := "0.6-dt-20190805Z-8c1990"
-scalaVersion := "2.12.9"
+version := "0.6-dt-20190805Z-d755e2"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

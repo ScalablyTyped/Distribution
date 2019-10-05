@@ -28,7 +28,7 @@ object MergeHunk {
   def apply(
     base: MergeHunkDetail = null,
     destination: MergeHunkDetail = null,
-    isConflict: js.UndefOr[IsHunkConflict] = js.undefined,
+    isConflict: js.UndefOr[Boolean] = js.undefined,
     source: MergeHunkDetail = null
   ): MergeHunk = {
     val __obj = js.Dynamic.literal()

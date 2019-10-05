@@ -30,17 +30,17 @@ trait EbsBlockDevice extends js.Object {
 object EbsBlockDevice {
   @scala.inline
   def apply(
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
     SnapshotId: String = null,
-    VolumeSize: js.UndefOr[Integer] = js.undefined,
+    VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null
   ): EbsBlockDevice = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize)
+    if (VolumeSize != null) __obj.updateDynamic("VolumeSize")(VolumeSize.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsBlockDevice]
   }

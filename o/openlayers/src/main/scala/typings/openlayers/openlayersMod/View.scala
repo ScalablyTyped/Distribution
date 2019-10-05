@@ -1,11 +1,11 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.geomNs.SimpleGeometry
-import typings.openlayers.openlayersMod.olxNs.ViewOptions
-import typings.openlayers.openlayersMod.olxNs.animationNs.AnimateCallback
-import typings.openlayers.openlayersMod.olxNs.animationNs.AnimateOptions
-import typings.openlayers.openlayersMod.olxNs.viewNs.FitOptions
-import typings.openlayers.openlayersMod.projNs.Projection
+import typings.openlayers.openlayersMod.geom.SimpleGeometry
+import typings.openlayers.openlayersMod.olx.ViewOptions
+import typings.openlayers.openlayersMod.olx.animation.AnimateCallback
+import typings.openlayers.openlayersMod.olx.animation.AnimateOptions
+import typings.openlayers.openlayersMod.olx.view.FitOptions
+import typings.openlayers.openlayersMod.proj.Projection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

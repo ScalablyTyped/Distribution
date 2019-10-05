@@ -21,7 +21,7 @@ object VsSolutionFile {
   @scala.inline
   def apply(
     projects: js.Array[VsSolutionProject],
-    StringDictionary: StringDictionary[VsSolutionSection] = null,
+    StringDictionary: StringDictionary[js.Any] = null,
     minimumVisualStudioVersion: String = null,
     nestedProjects: VsSolutionSection = null,
     projectConfigurationPlatforms: VsSolutionSection = null,

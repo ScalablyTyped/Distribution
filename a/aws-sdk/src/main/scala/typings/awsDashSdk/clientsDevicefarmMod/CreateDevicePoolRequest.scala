@@ -34,11 +34,11 @@ object CreateDevicePoolRequest {
     projectArn: AmazonResourceName,
     rules: Rules,
     description: Message = null,
-    maxDevices: js.UndefOr[Integer] = js.undefined
+    maxDevices: Int | scala.Double = null
   ): CreateDevicePoolRequest = {
     val __obj = js.Dynamic.literal(name = name, projectArn = projectArn, rules = rules)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices)
+    if (maxDevices != null) __obj.updateDynamic("maxDevices")(maxDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDevicePoolRequest]
   }
 }

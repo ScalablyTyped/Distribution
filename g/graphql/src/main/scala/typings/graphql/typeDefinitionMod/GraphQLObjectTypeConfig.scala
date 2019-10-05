@@ -1,5 +1,6 @@
 package typings.graphql.typeDefinitionMod
 
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.languageAstMod.ObjectTypeDefinitionNode
 import typings.graphql.languageAstMod.ObjectTypeExtensionNode
 import typings.graphql.tsutilsMaybeMod.Maybe
@@ -29,7 +30,7 @@ object GraphQLObjectTypeConfig {
     extensionASTNodes: Maybe[js.Array[ObjectTypeExtensionNode]] = null,
     extensions: Maybe[Record[String, _]] = null,
     interfaces: Thunk[Maybe[js.Array[GraphQLInterfaceType]]] = null,
-    isTypeOf: Maybe[GraphQLIsTypeOfFn[TSource, TContext]] = null
+    isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null
   ): GraphQLObjectTypeConfig[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
@@ -37,7 +38,7 @@ object GraphQLObjectTypeConfig {
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(isTypeOf.asInstanceOf[js.Any])
+    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
     __obj.asInstanceOf[GraphQLObjectTypeConfig[TSource, TContext, TArgs]]
   }
 }

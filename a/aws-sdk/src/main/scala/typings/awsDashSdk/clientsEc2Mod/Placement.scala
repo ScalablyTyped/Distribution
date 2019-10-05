@@ -42,7 +42,7 @@ object Placement {
     AvailabilityZone: String = null,
     GroupName: String = null,
     HostId: String = null,
-    PartitionNumber: js.UndefOr[Integer] = js.undefined,
+    PartitionNumber: Int | scala.Double = null,
     SpreadDomain: String = null,
     Tenancy: Tenancy = null
   ): Placement = {
@@ -51,7 +51,7 @@ object Placement {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName)
     if (HostId != null) __obj.updateDynamic("HostId")(HostId)
-    if (!js.isUndefined(PartitionNumber)) __obj.updateDynamic("PartitionNumber")(PartitionNumber)
+    if (PartitionNumber != null) __obj.updateDynamic("PartitionNumber")(PartitionNumber.asInstanceOf[js.Any])
     if (SpreadDomain != null) __obj.updateDynamic("SpreadDomain")(SpreadDomain)
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]

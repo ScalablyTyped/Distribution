@@ -1,10 +1,10 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.ToStringLiteral
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.networkingNs.configNs.NetworkInfo
-import typings.chromeDashApps.chromeNs.networkingNs.configNs.NetworkInfoFilterHexSSID
-import typings.chromeDashApps.chromeNs.networkingNs.configNs.NetworkInfoFilterSSID
+import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.networking.config.NetworkInfo
+import typings.chromeDashApps.chrome.networking.config.NetworkInfoFilterHexSSID
+import typings.chromeDashApps.chrome.networking.config.NetworkInfoFilterSSID
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

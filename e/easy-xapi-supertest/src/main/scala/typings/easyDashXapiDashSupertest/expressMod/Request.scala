@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Request
   extends ServerRequest
-     with typings.easyDashXapiDashSupertest.ExpressNs.Request {
+     with typings.easyDashXapiDashSupertest.Express.Request {
   /**
     * Return an array of Accepted media types
     * ordered from highest quality to lowest.

@@ -29,7 +29,7 @@ object PutResourceAttributesRequest {
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
     ResourceAttributeList: ResourceAttributeList,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): PutResourceAttributesRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName, ProgressUpdateStream = ProgressUpdateStream, ResourceAttributeList = ResourceAttributeList)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

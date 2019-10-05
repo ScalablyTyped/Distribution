@@ -1,7 +1,7 @@
 package typings.atPulumiAws.kmsGetSecretsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.kmsNs.GetSecretsSecret
+import typings.atPulumiAws.typesOutputMod.kms.GetSecretsSecret
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

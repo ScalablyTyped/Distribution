@@ -1,7 +1,7 @@
 package typings.objectDashHash.objectDashHashMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.objectDashHash.objectDashHashMod.ObjectHashNs.Hash
+import typings.objectDashHash.objectDashHashMod.ObjectHash.Hash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

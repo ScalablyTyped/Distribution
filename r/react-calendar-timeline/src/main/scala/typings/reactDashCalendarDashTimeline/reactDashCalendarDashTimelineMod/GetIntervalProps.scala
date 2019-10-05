@@ -1,7 +1,9 @@
 package typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod
 
 import typings.react.Element
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,10 +17,14 @@ trait GetIntervalProps extends js.Object {
 
 object GetIntervalProps {
   @scala.inline
-  def apply(interval: Interval = null, onClick: MouseEventHandler[Element] = null, style: CSSProperties = null): GetIntervalProps = {
+  def apply(
+    interval: Interval = null,
+    onClick: MouseEvent[Element, NativeMouseEvent] => scala.Unit = null,
+    style: CSSProperties = null
+  ): GetIntervalProps = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[GetIntervalProps]
   }

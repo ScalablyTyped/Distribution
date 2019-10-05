@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "FunctionPropertyAssignmentSyntax")
 @js.native
 class FunctionPropertyAssignmentSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.FunctionPropertyAssignmentSyntax {
+  extends typings.typescriptDashServices.TypeScript.FunctionPropertyAssignmentSyntax {
   def this(
     propertyName: ISyntaxToken,
-    callSignature: typings.typescriptDashServices.TypeScriptNs.CallSignatureSyntax,
-    block: typings.typescriptDashServices.TypeScriptNs.BlockSyntax,
+    callSignature: typings.typescriptDashServices.TypeScript.CallSignatureSyntax,
+    block: typings.typescriptDashServices.TypeScript.BlockSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -21,6 +21,6 @@ class FunctionPropertyAssignmentSyntax protected ()
 @JSImport("typescript-services", "FunctionPropertyAssignmentSyntax")
 @js.native
 object FunctionPropertyAssignmentSyntax extends js.Object {
-  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.FunctionPropertyAssignmentSyntax = js.native
+  def create1(propertyName: ISyntaxToken): typings.typescriptDashServices.TypeScript.FunctionPropertyAssignmentSyntax = js.native
 }
 

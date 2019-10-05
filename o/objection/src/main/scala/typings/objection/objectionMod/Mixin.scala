@@ -1,5 +1,6 @@
 package typings.objection.objectionMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +14,8 @@ trait Mixin extends js.Object {
   def apply[MC /* <: ModelClass[_] */](modelClass: MC, plugins: Plugin*): MC = js.native
   def apply[MC /* <: ModelClass[_] */](modelClass: MC, plugins: js.Array[Plugin]): MC = js.native
 }
+
+@JSImport("objection", "mixin")
+@js.native
+object mixin extends TopLevel[Mixin]
 

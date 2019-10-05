@@ -2,7 +2,7 @@ package typings.oja.ojaMod
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import scala.scalajs.js

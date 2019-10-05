@@ -1,6 +1,6 @@
 package typings.bunyanDashConfig.bunyanDashConfigMod
 
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

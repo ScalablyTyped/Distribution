@@ -68,8 +68,8 @@ object RunTaskRequest {
   def apply(
     taskDefinition: String,
     cluster: String = null,
-    count: js.UndefOr[BoxedInteger] = js.undefined,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
+    count: Int | scala.Double = null,
+    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
     group: String = null,
     launchType: LaunchType = null,
     networkConfiguration: NetworkConfiguration = null,
@@ -83,7 +83,7 @@ object RunTaskRequest {
   ): RunTaskRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags)
     if (group != null) __obj.updateDynamic("group")(group)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])

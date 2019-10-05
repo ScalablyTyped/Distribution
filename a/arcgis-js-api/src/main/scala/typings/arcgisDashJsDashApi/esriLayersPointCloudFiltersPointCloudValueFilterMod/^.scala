@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersPointCloudFiltersPointCloudValueFilterMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudValueFilterConstructor
+import typings.arcgisDashJsDashApi.__esri.PointCloudValueFilterConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

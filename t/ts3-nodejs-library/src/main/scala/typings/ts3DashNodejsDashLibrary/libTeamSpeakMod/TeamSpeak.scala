@@ -10,6 +10,10 @@ import typings.ts3DashNodejsDashLibrary.libNodeChannelMod.TeamSpeakChannel
 import typings.ts3DashNodejsDashLibrary.libNodeClientMod.TeamSpeakClient
 import typings.ts3DashNodejsDashLibrary.libNodeServerGroupMod.TeamSpeakServerGroup
 import typings.ts3DashNodejsDashLibrary.libNodeServerMod.TeamSpeakServer
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.ReasonIdentifier
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TokenType
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ChannelCreate
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ChannelDelete
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ChannelMove
@@ -429,11 +433,7 @@ class TeamSpeak protected () extends EventEmitter {
     * @param reasonid the reasonid
     * @param reasonmsg the message the client should receive when getting kicked
     */
-  def clientKick(
-    clid: Double,
-    reasonid: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.ReasonIdentifier,
-    reasonmsg: String
-  ): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def clientKick(clid: Double, reasonid: ReasonIdentifier, reasonmsg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
     * Lists all Clients with a given Filter
     */
@@ -696,7 +696,7 @@ class TeamSpeak protected () extends EventEmitter {
     * @param loglevel level 1 to 4
     * @param logmsg message to log
     */
-  def logAdd(loglevel: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel, logmsg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def logAdd(loglevel: LogLevel, logmsg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
     * Displays a specified number of entries from the servers log.
     * If instance is set to 1, the server will return lines from the master logfile (ts3server_0.log) instead of the selected virtual server logfile.
@@ -834,21 +834,10 @@ class TeamSpeak protected () extends EventEmitter {
     * @param description token description
     * @param customset token custom set
     */
-  def privilegeKeyAdd(tokentype: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TokenType, group: Double): js.Promise[Token] = js.native
-  def privilegeKeyAdd(tokentype: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TokenType, group: Double, cid: Double): js.Promise[Token] = js.native
-  def privilegeKeyAdd(
-    tokentype: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TokenType,
-    group: Double,
-    cid: Double,
-    description: String
-  ): js.Promise[Token] = js.native
-  def privilegeKeyAdd(
-    tokentype: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TokenType,
-    group: Double,
-    cid: Double,
-    description: String,
-    customset: String
-  ): js.Promise[Token] = js.native
+  def privilegeKeyAdd(tokentype: TokenType, group: Double): js.Promise[Token] = js.native
+  def privilegeKeyAdd(tokentype: TokenType, group: Double, cid: Double): js.Promise[Token] = js.native
+  def privilegeKeyAdd(tokentype: TokenType, group: Double, cid: Double, description: String): js.Promise[Token] = js.native
+  def privilegeKeyAdd(tokentype: TokenType, group: Double, cid: Double, description: String, customset: String): js.Promise[Token] = js.native
   /**
     * Deletes an existing token matching the token key specified with token.
     * @param token the token which should be deleted
@@ -908,11 +897,7 @@ class TeamSpeak protected () extends EventEmitter {
     * @param targetmode targetmode (1: client, 2: channel, 3: server)
     * @param msg the message the client should receive
     */
-  def sendTextMessage(
-    target: Double,
-    targetmode: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode,
-    msg: String
-  ): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def sendTextMessage(target: Double, targetmode: TextMessageTargetMode, msg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
     * Creates a new virtual server using the given properties and displays its ID, port and initial administrator privilege key.
     * If virtualserver_port is not specified, the server will test for the first unused UDP port

@@ -34,19 +34,19 @@ trait RestoreStatus extends js.Object {
 object RestoreStatus {
   @scala.inline
   def apply(
-    CurrentRestoreRateInMegaBytesPerSecond: js.UndefOr[Double] = js.undefined,
-    ElapsedTimeInSeconds: js.UndefOr[Long] = js.undefined,
-    EstimatedTimeToCompletionInSeconds: js.UndefOr[Long] = js.undefined,
-    ProgressInMegaBytes: js.UndefOr[Long] = js.undefined,
-    SnapshotSizeInMegaBytes: js.UndefOr[Long] = js.undefined,
+    CurrentRestoreRateInMegaBytesPerSecond: Int | scala.Double = null,
+    ElapsedTimeInSeconds: Int | scala.Double = null,
+    EstimatedTimeToCompletionInSeconds: Int | scala.Double = null,
+    ProgressInMegaBytes: Int | scala.Double = null,
+    SnapshotSizeInMegaBytes: Int | scala.Double = null,
     Status: String = null
   ): RestoreStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentRestoreRateInMegaBytesPerSecond)) __obj.updateDynamic("CurrentRestoreRateInMegaBytesPerSecond")(CurrentRestoreRateInMegaBytesPerSecond)
-    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds)
-    if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds)
-    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes)
-    if (!js.isUndefined(SnapshotSizeInMegaBytes)) __obj.updateDynamic("SnapshotSizeInMegaBytes")(SnapshotSizeInMegaBytes)
+    if (CurrentRestoreRateInMegaBytesPerSecond != null) __obj.updateDynamic("CurrentRestoreRateInMegaBytesPerSecond")(CurrentRestoreRateInMegaBytesPerSecond.asInstanceOf[js.Any])
+    if (ElapsedTimeInSeconds != null) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.asInstanceOf[js.Any])
+    if (EstimatedTimeToCompletionInSeconds != null) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.asInstanceOf[js.Any])
+    if (ProgressInMegaBytes != null) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.asInstanceOf[js.Any])
+    if (SnapshotSizeInMegaBytes != null) __obj.updateDynamic("SnapshotSizeInMegaBytes")(SnapshotSizeInMegaBytes.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status)
     __obj.asInstanceOf[RestoreStatus]
   }

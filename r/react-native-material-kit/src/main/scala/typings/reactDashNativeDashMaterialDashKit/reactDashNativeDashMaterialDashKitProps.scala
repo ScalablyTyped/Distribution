@@ -30,8 +30,8 @@ trait reactDashNativeDashMaterialDashKitProps {
   def MKProgressProps: MKProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKProgressProperties
   type MKProgressProps = MKProgressProperties
   @scala.inline
-  def MKProgressNsIndeterminateProps: IndeterminateProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
-  type MKProgressNsIndeterminateProps = IndeterminateProgressProperties
+  def MKProgressIndeterminateProps: IndeterminateProgressProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
+  type MKProgressIndeterminateProps = IndeterminateProgressProperties
   @scala.inline
   def MKRadioButtonProps: MKRadioButtonProperties.type = typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties
   type MKRadioButtonProps = MKRadioButtonProperties

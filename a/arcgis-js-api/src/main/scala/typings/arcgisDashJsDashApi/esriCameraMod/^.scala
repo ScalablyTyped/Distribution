@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCameraMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CameraConstructor
+import typings.arcgisDashJsDashApi.__esri.CameraConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

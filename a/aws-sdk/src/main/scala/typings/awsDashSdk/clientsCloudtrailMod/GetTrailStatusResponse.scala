@@ -78,7 +78,7 @@ trait GetTrailStatusResponse extends js.Object {
 object GetTrailStatusResponse {
   @scala.inline
   def apply(
-    IsLogging: js.UndefOr[Boolean] = js.undefined,
+    IsLogging: js.UndefOr[scala.Boolean] = js.undefined,
     LatestCloudWatchLogsDeliveryError: String = null,
     LatestCloudWatchLogsDeliveryTime: _Date = null,
     LatestDeliveryAttemptSucceeded: String = null,

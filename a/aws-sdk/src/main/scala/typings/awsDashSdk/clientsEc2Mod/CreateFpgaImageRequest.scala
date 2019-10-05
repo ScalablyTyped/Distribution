@@ -37,7 +37,7 @@ object CreateFpgaImageRequest {
     InputStorageLocation: StorageLocation,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LogsStorageLocation: StorageLocation = null,
     Name: String = null
   ): CreateFpgaImageRequest = {

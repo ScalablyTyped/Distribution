@@ -1,12 +1,12 @@
 package typings.atPulumiAws.dynamodbGetTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTableAttribute
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTableGlobalSecondaryIndex
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTableLocalSecondaryIndex
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTablePointInTimeRecovery
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTableServerSideEncryption
-import typings.atPulumiAws.typesOutputMod.dynamodbNs.GetTableTtl
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTableAttribute
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTableGlobalSecondaryIndex
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTableLocalSecondaryIndex
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTablePointInTimeRecovery
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTableServerSideEncryption
+import typings.atPulumiAws.typesOutputMod.dynamodb.GetTableTtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

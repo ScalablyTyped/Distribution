@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,4 +25,8 @@ trait DataMove extends js.Object {
   def moveUp(id: String, step: Double): Unit = js.native
   def moveUp(id: Double, step: Double): Unit = js.native
 }
+
+@JSImport("webix", "DataMove")
+@js.native
+object DataMove extends TopLevel[DataMove]
 

@@ -23,12 +23,12 @@ object OverallVolume {
   @scala.inline
   def apply(
     DomainIspPlacements: DomainIspPlacements = null,
-    ReadRatePercent: js.UndefOr[Percentage] = js.undefined,
+    ReadRatePercent: Int | Double = null,
     VolumeStatistics: VolumeStatistics = null
   ): OverallVolume = {
     val __obj = js.Dynamic.literal()
     if (DomainIspPlacements != null) __obj.updateDynamic("DomainIspPlacements")(DomainIspPlacements)
-    if (!js.isUndefined(ReadRatePercent)) __obj.updateDynamic("ReadRatePercent")(ReadRatePercent)
+    if (ReadRatePercent != null) __obj.updateDynamic("ReadRatePercent")(ReadRatePercent.asInstanceOf[js.Any])
     if (VolumeStatistics != null) __obj.updateDynamic("VolumeStatistics")(VolumeStatistics)
     __obj.asInstanceOf[OverallVolume]
   }

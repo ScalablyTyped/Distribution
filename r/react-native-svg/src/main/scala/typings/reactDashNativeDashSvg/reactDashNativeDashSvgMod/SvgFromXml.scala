@@ -1,6 +1,8 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,4 +14,8 @@ class SvgFromXml protected ()
   def this(props: XmlProps) = this()
   def this(props: XmlProps, context: js.Any) = this()
 }
+
+@JSImport("react-native-svg", "SvgFromXml")
+@js.native
+object SvgFromXml extends TopLevel[ComponentClass[XmlProps, XmlState]]
 

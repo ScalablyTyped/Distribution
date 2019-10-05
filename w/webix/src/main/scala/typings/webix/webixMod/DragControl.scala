@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -38,4 +39,8 @@ trait DragControl extends js.Object {
   def getNode(): HTMLElement = js.native
   def sendSignal(signal: String): Unit = js.native
 }
+
+@JSImport("webix", "DragControl")
+@js.native
+object DragControl extends TopLevel[DragControl]
 

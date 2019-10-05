@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashDropdown
 
-import typings.semanticDashUiDashDropdown.SemanticUINs.Dropdown
-import typings.semanticDashUiDashDropdown.SemanticUINs.DropdownSettings
+import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown
+import typings.semanticDashUiDashDropdown.SemanticUI.DropdownSettings
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.`bind intent`
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.`bind mouse events`
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.`bind touch events`

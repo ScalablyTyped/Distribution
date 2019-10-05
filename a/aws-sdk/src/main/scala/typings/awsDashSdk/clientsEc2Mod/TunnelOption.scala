@@ -74,39 +74,39 @@ trait TunnelOption extends js.Object {
 object TunnelOption {
   @scala.inline
   def apply(
-    DpdTimeoutSeconds: js.UndefOr[Integer] = js.undefined,
+    DpdTimeoutSeconds: Int | scala.Double = null,
     IkeVersions: IKEVersionsList = null,
     OutsideIpAddress: String = null,
     Phase1DHGroupNumbers: Phase1DHGroupNumbersList = null,
     Phase1EncryptionAlgorithms: Phase1EncryptionAlgorithmsList = null,
     Phase1IntegrityAlgorithms: Phase1IntegrityAlgorithmsList = null,
-    Phase1LifetimeSeconds: js.UndefOr[Integer] = js.undefined,
+    Phase1LifetimeSeconds: Int | scala.Double = null,
     Phase2DHGroupNumbers: Phase2DHGroupNumbersList = null,
     Phase2EncryptionAlgorithms: Phase2EncryptionAlgorithmsList = null,
     Phase2IntegrityAlgorithms: Phase2IntegrityAlgorithmsList = null,
-    Phase2LifetimeSeconds: js.UndefOr[Integer] = js.undefined,
+    Phase2LifetimeSeconds: Int | scala.Double = null,
     PreSharedKey: String = null,
-    RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined,
-    RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined,
-    ReplayWindowSize: js.UndefOr[Integer] = js.undefined,
+    RekeyFuzzPercentage: Int | scala.Double = null,
+    RekeyMarginTimeSeconds: Int | scala.Double = null,
+    ReplayWindowSize: Int | scala.Double = null,
     TunnelInsideCidr: String = null
   ): TunnelOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DpdTimeoutSeconds)) __obj.updateDynamic("DpdTimeoutSeconds")(DpdTimeoutSeconds)
+    if (DpdTimeoutSeconds != null) __obj.updateDynamic("DpdTimeoutSeconds")(DpdTimeoutSeconds.asInstanceOf[js.Any])
     if (IkeVersions != null) __obj.updateDynamic("IkeVersions")(IkeVersions)
     if (OutsideIpAddress != null) __obj.updateDynamic("OutsideIpAddress")(OutsideIpAddress)
     if (Phase1DHGroupNumbers != null) __obj.updateDynamic("Phase1DHGroupNumbers")(Phase1DHGroupNumbers)
     if (Phase1EncryptionAlgorithms != null) __obj.updateDynamic("Phase1EncryptionAlgorithms")(Phase1EncryptionAlgorithms)
     if (Phase1IntegrityAlgorithms != null) __obj.updateDynamic("Phase1IntegrityAlgorithms")(Phase1IntegrityAlgorithms)
-    if (!js.isUndefined(Phase1LifetimeSeconds)) __obj.updateDynamic("Phase1LifetimeSeconds")(Phase1LifetimeSeconds)
+    if (Phase1LifetimeSeconds != null) __obj.updateDynamic("Phase1LifetimeSeconds")(Phase1LifetimeSeconds.asInstanceOf[js.Any])
     if (Phase2DHGroupNumbers != null) __obj.updateDynamic("Phase2DHGroupNumbers")(Phase2DHGroupNumbers)
     if (Phase2EncryptionAlgorithms != null) __obj.updateDynamic("Phase2EncryptionAlgorithms")(Phase2EncryptionAlgorithms)
     if (Phase2IntegrityAlgorithms != null) __obj.updateDynamic("Phase2IntegrityAlgorithms")(Phase2IntegrityAlgorithms)
-    if (!js.isUndefined(Phase2LifetimeSeconds)) __obj.updateDynamic("Phase2LifetimeSeconds")(Phase2LifetimeSeconds)
+    if (Phase2LifetimeSeconds != null) __obj.updateDynamic("Phase2LifetimeSeconds")(Phase2LifetimeSeconds.asInstanceOf[js.Any])
     if (PreSharedKey != null) __obj.updateDynamic("PreSharedKey")(PreSharedKey)
-    if (!js.isUndefined(RekeyFuzzPercentage)) __obj.updateDynamic("RekeyFuzzPercentage")(RekeyFuzzPercentage)
-    if (!js.isUndefined(RekeyMarginTimeSeconds)) __obj.updateDynamic("RekeyMarginTimeSeconds")(RekeyMarginTimeSeconds)
-    if (!js.isUndefined(ReplayWindowSize)) __obj.updateDynamic("ReplayWindowSize")(ReplayWindowSize)
+    if (RekeyFuzzPercentage != null) __obj.updateDynamic("RekeyFuzzPercentage")(RekeyFuzzPercentage.asInstanceOf[js.Any])
+    if (RekeyMarginTimeSeconds != null) __obj.updateDynamic("RekeyMarginTimeSeconds")(RekeyMarginTimeSeconds.asInstanceOf[js.Any])
+    if (ReplayWindowSize != null) __obj.updateDynamic("ReplayWindowSize")(ReplayWindowSize.asInstanceOf[js.Any])
     if (TunnelInsideCidr != null) __obj.updateDynamic("TunnelInsideCidr")(TunnelInsideCidr)
     __obj.asInstanceOf[TunnelOption]
   }

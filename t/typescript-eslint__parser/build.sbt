@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "typescript-eslint__parser"
-version := "1.13.0-193c88"
-scalaVersion := "2.12.9"
+version := "1.13.0-388e8d"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eslint-visitor-keys" % "1.0-dt-20180217Z-6b92b1",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-58e914",
-  "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "typescript" % "3.6.3-fd0781",
-  "org.scalablytyped" %%% "typescript-eslint__experimental-utils" % "1.13.0-b5b13d",
-  "org.scalablytyped" %%% "typescript-eslint__typescript-estree" % "1.13.0-a35630")
+  "org.scalablytyped" %%% "eslint-visitor-keys" % "1.0-dt-20180217Z-e870a9",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-9fcec6",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
+  "org.scalablytyped" %%% "typescript" % "3.6.3-9955ce",
+  "org.scalablytyped" %%% "typescript-eslint__experimental-utils" % "1.13.0-bc9fb9",
+  "org.scalablytyped" %%% "typescript-eslint__typescript-estree" % "1.13.0-ace239")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

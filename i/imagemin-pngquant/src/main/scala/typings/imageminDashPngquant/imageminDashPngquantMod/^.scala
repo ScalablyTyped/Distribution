@@ -1,7 +1,7 @@
 package typings.imageminDashPngquant.imageminDashPngquantMod
 
 import typings.imagemin.imageminMod.Plugin
-import typings.imageminDashPngquant.imageminDashPngquantMod.ImageminPngquantNs.Options
+import typings.imageminDashPngquant.imageminDashPngquantMod.ImageminPngquant.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

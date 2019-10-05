@@ -1,7 +1,7 @@
 package typings.yandexDashMoneyDashSdk.yandexDashMoneyDashSdkMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.yandexDashMoneyDashSdk.YandexMoneySDKNs.WalletNs.GetAccessTokenResult
+import typings.yandexDashMoneyDashSdk.YandexMoneySDK.Wallet.GetAccessTokenResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

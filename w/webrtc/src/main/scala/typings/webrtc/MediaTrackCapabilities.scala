@@ -1,6 +1,6 @@
 package typings.webrtc
 
-import typings.webrtc.W3CNs.DoubleRange
+import typings.webrtc.W3C.DoubleRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

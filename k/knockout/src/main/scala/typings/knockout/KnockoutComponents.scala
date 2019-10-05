@@ -1,9 +1,9 @@
 package typings.knockout
 
-import typings.knockout.KnockoutComponentTypesNs.Config
-import typings.knockout.KnockoutComponentTypesNs.Definition
-import typings.knockout.KnockoutComponentTypesNs.EmptyConfig
-import typings.knockout.KnockoutComponentTypesNs.Loader
+import typings.knockout.KnockoutComponentTypes.Config
+import typings.knockout.KnockoutComponentTypes.Definition
+import typings.knockout.KnockoutComponentTypes.EmptyConfig
+import typings.knockout.KnockoutComponentTypes.Loader
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -45,18 +45,18 @@ trait IColumnProps
 object IColumnProps {
   @scala.inline
   def apply(
-    cellRenderer: ICellRenderer = null,
+    cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement = null,
     className: String = null,
-    columnHeaderCellRenderer: IColumnHeaderRenderer = null,
+    columnHeaderCellRenderer: /* columnIndex */ Double => ReactElement = null,
     id: String | Double = null,
     loadingOptions: js.Array[ColumnLoadingOption] = null,
     name: String = null,
     nameRenderer: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement = null
   ): IColumnProps = {
     val __obj = js.Dynamic.literal()
-    if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(cellRenderer)
+    if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(js.Any.fromFunction2(cellRenderer))
     if (className != null) __obj.updateDynamic("className")(className)
-    if (columnHeaderCellRenderer != null) __obj.updateDynamic("columnHeaderCellRenderer")(columnHeaderCellRenderer)
+    if (columnHeaderCellRenderer != null) __obj.updateDynamic("columnHeaderCellRenderer")(js.Any.fromFunction1(columnHeaderCellRenderer))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (loadingOptions != null) __obj.updateDynamic("loadingOptions")(loadingOptions)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -4,7 +4,7 @@ import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
 import typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.IHeaderCellProps
 import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.ResizeHandle
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

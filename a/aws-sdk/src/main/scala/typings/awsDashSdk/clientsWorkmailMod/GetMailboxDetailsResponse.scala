@@ -17,13 +17,10 @@ trait GetMailboxDetailsResponse extends js.Object {
 
 object GetMailboxDetailsResponse {
   @scala.inline
-  def apply(
-    MailboxQuota: js.UndefOr[MailboxQuota] = js.undefined,
-    MailboxSize: js.UndefOr[MailboxSize] = js.undefined
-  ): GetMailboxDetailsResponse = {
+  def apply(MailboxQuota: Int | Double = null, MailboxSize: Int | Double = null): GetMailboxDetailsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MailboxQuota)) __obj.updateDynamic("MailboxQuota")(MailboxQuota)
-    if (!js.isUndefined(MailboxSize)) __obj.updateDynamic("MailboxSize")(MailboxSize)
+    if (MailboxQuota != null) __obj.updateDynamic("MailboxQuota")(MailboxQuota.asInstanceOf[js.Any])
+    if (MailboxSize != null) __obj.updateDynamic("MailboxSize")(MailboxSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMailboxDetailsResponse]
   }
 }

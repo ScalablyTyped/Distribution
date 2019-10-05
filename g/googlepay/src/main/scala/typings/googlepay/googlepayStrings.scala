@@ -1,14 +1,14 @@
 package typings.googlepay
 
-import typings.googlepay.googleNs.paymentsNs.apiNs.AllowedAuthMethod
-import typings.googlepay.googleNs.paymentsNs.apiNs.AllowedCardNetwork
-import typings.googlepay.googleNs.paymentsNs.apiNs.BillingAddressFormat
-import typings.googlepay.googleNs.paymentsNs.apiNs.ButtonColor
-import typings.googlepay.googleNs.paymentsNs.apiNs.ButtonType
-import typings.googlepay.googleNs.paymentsNs.apiNs.EnvironmentType
-import typings.googlepay.googleNs.paymentsNs.apiNs.ErrorStatusCode
-import typings.googlepay.googleNs.paymentsNs.apiNs.TokenizationType
-import typings.googlepay.googleNs.paymentsNs.apiNs.TotalPriceStatus
+import typings.googlepay.google.payments.api.AllowedAuthMethod
+import typings.googlepay.google.payments.api.AllowedCardNetwork
+import typings.googlepay.google.payments.api.BillingAddressFormat
+import typings.googlepay.google.payments.api.ButtonColor
+import typings.googlepay.google.payments.api.ButtonType
+import typings.googlepay.google.payments.api.EnvironmentType
+import typings.googlepay.google.payments.api.ErrorStatusCode
+import typings.googlepay.google.payments.api.TokenizationType
+import typings.googlepay.google.payments.api.TotalPriceStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

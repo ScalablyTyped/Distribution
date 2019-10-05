@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +37,7 @@ object IgProgressBar {
   /* optionName */ StringDictionary[js.Any] = null,
     animate: js.UndefOr[Boolean] = js.undefined,
     animateTimeout: Int | Double = null,
-    change: ChangeEvent = null,
+    change: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit = null,
     endValue: Int | Double = null,
     height: String = null,
     max: Int | Double = null,
@@ -51,7 +52,7 @@ object IgProgressBar {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animateTimeout != null) __obj.updateDynamic("animateTimeout")(animateTimeout.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change)
+    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

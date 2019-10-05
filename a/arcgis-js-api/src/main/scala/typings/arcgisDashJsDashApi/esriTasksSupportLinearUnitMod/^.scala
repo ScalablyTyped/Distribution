@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportLinearUnitMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LinearUnitConstructor
+import typings.arcgisDashJsDashApi.__esri.LinearUnitConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

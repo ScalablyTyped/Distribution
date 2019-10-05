@@ -11,7 +11,7 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     *
     * @default
     * "#fff',"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.borderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     * and use `borderColorSaturation` to lift the saturation.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.borderColorSaturation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderColorSaturation
     */
   var borderColorSaturation: js.UndefOr[String] = js.undefined
   /**
@@ -57,7 +57,7 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     * [gapWidth](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.gapWidth)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.borderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -66,7 +66,7 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     * by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -74,7 +74,7 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     * ~ 1.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.colorAlpha
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.colorAlpha
     */
   var colorAlpha: js.UndefOr[Double] = js.undefined
   /**
@@ -82,28 +82,28 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
     * The range is between 0 ~ 1.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.colorSaturation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.colorSaturation
     */
   var colorSaturation: js.UndefOr[Double] = js.undefined
   /**
     * Gaps between child nodes.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.gapWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.gapWidth
     */
   var gapWidth: js.UndefOr[Double] = js.undefined
   /**
     * Stroke color of each rect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.strokeColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.strokeColor
     */
   var strokeColor: js.UndefOr[String] = js.undefined
   /**
     * Stroke width of each rect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle.strokeWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.strokeWidth
     */
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }

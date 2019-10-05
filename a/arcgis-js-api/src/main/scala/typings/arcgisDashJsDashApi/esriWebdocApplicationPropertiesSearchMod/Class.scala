@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWebdocApplicationPropertiesSearchMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Search
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SearchProperties
+import typings.arcgisDashJsDashApi.__esri.Search
+import typings.arcgisDashJsDashApi.__esri.SearchProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

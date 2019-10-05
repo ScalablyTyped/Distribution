@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@phosphor/coreutils/lib/random", JSImport.Namespace)
 @js.native
 object libRandomMod extends js.Object {
-  @JSName("Random")
   @js.native
-  object RandomNs extends js.Object {
+  object Random extends js.Object {
     /**
       * A function which generates random bytes.
       *

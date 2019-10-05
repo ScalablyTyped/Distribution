@@ -56,13 +56,13 @@ trait Fn_A extends js.Object {
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): FunctionComponentElement[P] = js.native
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
   def apply[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
+  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
   def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     children: ReactNode*
   ): ReactSVGElement = js.native
   def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: ClassAttributes[T] with P,
     children: ReactNode*
   ): ReactSVGElement = js.native

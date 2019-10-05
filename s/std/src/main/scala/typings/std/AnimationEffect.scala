@@ -15,9 +15,5 @@ trait AnimationEffect extends js.Object {
 
 @JSGlobal("AnimationEffect")
 @js.native
-class AnimationEffectCls () extends AnimationEffect
-
-@JSGlobal("AnimationEffect")
-@js.native
 object AnimationEffect extends Instantiable0[AnimationEffect]
 

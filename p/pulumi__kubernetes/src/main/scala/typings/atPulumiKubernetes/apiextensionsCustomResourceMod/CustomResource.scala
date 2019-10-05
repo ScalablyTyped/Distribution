@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.apiextensionsCustomResourceMod
 
-import typings.atPulumiKubernetes.typesOutputMod.metaNs.v1Ns.ObjectMeta
+import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Output
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js

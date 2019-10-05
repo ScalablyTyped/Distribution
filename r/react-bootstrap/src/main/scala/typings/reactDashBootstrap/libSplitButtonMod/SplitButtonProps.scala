@@ -22,19 +22,20 @@ object SplitButtonProps {
   @scala.inline
   def apply(
     id: String,
-    title: ReactNode,
     bsSize: Sizes = null,
     bsStyle: String = null,
     dropdownTitle: js.Any = null,
     dropup: js.UndefOr[Boolean] = js.undefined,
-    pullRight: js.UndefOr[Boolean] = js.undefined
+    pullRight: js.UndefOr[Boolean] = js.undefined,
+    title: ReactNode = null
   ): SplitButtonProps = {
-    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
     if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle)
     if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup)
     if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitButtonProps]
   }
 }

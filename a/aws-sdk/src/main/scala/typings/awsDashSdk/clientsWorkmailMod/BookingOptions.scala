@@ -22,9 +22,9 @@ trait BookingOptions extends js.Object {
 object BookingOptions {
   @scala.inline
   def apply(
-    AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined,
-    AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined,
-    AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
+    AutoAcceptRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoDeclineConflictingRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoDeclineRecurringRequests: js.UndefOr[scala.Boolean] = js.undefined
   ): BookingOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests)

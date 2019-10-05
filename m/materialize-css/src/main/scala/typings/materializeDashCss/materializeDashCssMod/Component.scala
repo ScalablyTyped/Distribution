@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Component")
 @js.native
 abstract class Component[TOptions] protected ()
-  extends typings.materializeDashCss.MNs.Component[TOptions] {
+  extends typings.materializeDashCss.M.Component[TOptions] {
   /**
     * Construct component instance and set everything up
     */

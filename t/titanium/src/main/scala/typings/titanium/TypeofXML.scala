@@ -1,9 +1,9 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
-import typings.titanium.TitaniumNs.XMLNs.Document
-import typings.titanium.TitaniumNs.XMLNs.Node
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
+import typings.titanium.Titanium.XML.Document
+import typings.titanium.Titanium.XML.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

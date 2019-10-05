@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSupportGeolocationPositioningMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeolocationPositioning
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Graphic
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneView
+import typings.arcgisDashJsDashApi.__esri.GeolocationPositioning
+import typings.arcgisDashJsDashApi.__esri.Graphic
+import typings.arcgisDashJsDashApi.__esri.MapView
+import typings.arcgisDashJsDashApi.__esri.SceneView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

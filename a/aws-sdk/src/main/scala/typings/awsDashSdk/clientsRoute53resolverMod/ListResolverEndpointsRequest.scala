@@ -21,14 +21,10 @@ trait ListResolverEndpointsRequest extends js.Object {
 
 object ListResolverEndpointsRequest {
   @scala.inline
-  def apply(
-    Filters: Filters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListResolverEndpointsRequest = {
+  def apply(Filters: Filters = null, MaxResults: Int | Double = null, NextToken: NextToken = null): ListResolverEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListResolverEndpointsRequest]
   }

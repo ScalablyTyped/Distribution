@@ -27,9 +27,9 @@ object CreateVpcEndpointServiceConfigurationRequest {
   @scala.inline
   def apply(
     NetworkLoadBalancerArns: ValueStringList,
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(NetworkLoadBalancerArns = NetworkLoadBalancerArns)
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)

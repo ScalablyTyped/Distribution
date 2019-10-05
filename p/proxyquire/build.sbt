@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "proxyquire"
-version := "1.3.0-dt-20190322Z-0fc33c"
-scalaVersion := "2.12.9"
+version := "1.3.0-dt-20190322Z-95aa0e"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

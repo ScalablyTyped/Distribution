@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/startOfWeekYear", JSImport.Namespace)
 @js.native
 object esmStartOfWeekYearMod extends js.Object {
-  def default(date: Double): Date = js.native
-  def default(date: Double, options: Anon_01234567): Date = js.native
-  def default(date: Date): Date = js.native
-  def default(date: Date, options: Anon_01234567): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(date: Double): Date = js.native
+    def apply(date: Double, options: Anon_01234567): Date = js.native
+    def apply(date: Date): Date = js.native
+    def apply(date: Date, options: Anon_01234567): Date = js.native
+  }
+  
 }
 

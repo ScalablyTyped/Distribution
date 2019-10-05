@@ -22,9 +22,7 @@ trait Anon_Bottom extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis
     */
-  var emphasis: js.UndefOr[
-    Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColorShadowOffsetX
-  ] = js.undefined
+  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
     * When is no content in breadcrumb, this minimal width need
     * to be set up.
@@ -51,9 +49,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.itemStyle
     */
-  var itemStyle: js.UndefOr[
-    Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColorShadowOffsetX
-  ] = js.undefined
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
     * Distance between asdf component and the left side of the
     * container.
@@ -120,10 +116,10 @@ object Anon_Bottom {
   @scala.inline
   def apply(
     bottom: Double | String = null,
-    emphasis: Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColorShadowOffsetX = null,
+    emphasis: Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
     emptyItemWidth: Int | Double = null,
     height: Int | Double = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColorShadowOffsetX = null,
+    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur = null,
     left: Double | String = null,
     right: Double | String = null,
     show: js.UndefOr[Boolean] = js.undefined,

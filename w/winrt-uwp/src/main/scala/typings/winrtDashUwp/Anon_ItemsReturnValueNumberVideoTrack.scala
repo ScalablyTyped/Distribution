@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.MediaNs.CoreNs.VideoTrack
+import typings.winrtDashUwp.Windows.Media.Core.VideoTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "ToolbarTitle")
 @js.native
 class ToolbarTitle ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.ToolbarNs.ToolbarTitle
+  extends typings.materialDashUi.__MaterialUI.Toolbar.ToolbarTitle
 

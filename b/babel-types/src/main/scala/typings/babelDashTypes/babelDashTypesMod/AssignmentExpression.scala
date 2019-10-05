@@ -49,3 +49,12 @@ object AssignmentExpression {
   }
 }
 
+@JSImport("babel-types", "assignmentExpression")
+@js.native
+object assignmentExpression extends js.Object {
+  def apply(): AssignmentExpression = js.native
+  def apply(operator: String): AssignmentExpression = js.native
+  def apply(operator: String, left: LVal): AssignmentExpression = js.native
+  def apply(operator: String, left: LVal, right: Expression): AssignmentExpression = js.native
+}
+

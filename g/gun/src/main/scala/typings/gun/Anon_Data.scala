@@ -1,7 +1,7 @@
 package typings.gun
 
-import typings.gun.gunMod.GunNs.DisallowArray
-import typings.gun.gunMod.GunNs.Saveable
+import typings.gun.gunMod.Gun.DisallowArray
+import typings.gun.gunMod.Gun.Saveable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

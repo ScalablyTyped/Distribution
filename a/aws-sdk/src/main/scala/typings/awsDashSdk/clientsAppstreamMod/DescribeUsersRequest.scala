@@ -21,13 +21,9 @@ trait DescribeUsersRequest extends js.Object {
 
 object DescribeUsersRequest {
   @scala.inline
-  def apply(
-    AuthenticationType: AuthenticationType,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null
-  ): DescribeUsersRequest = {
+  def apply(AuthenticationType: AuthenticationType, MaxResults: Int | Double = null, NextToken: String = null): DescribeUsersRequest = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeUsersRequest]
   }

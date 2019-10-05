@@ -10,9 +10,5 @@ trait DOMSettableTokenList extends DOMTokenList
 
 @JSGlobal("DOMSettableTokenList")
 @js.native
-class DOMSettableTokenListCls () extends DOMSettableTokenList
-
-@JSGlobal("DOMSettableTokenList")
-@js.native
 object DOMSettableTokenList extends Instantiable0[DOMSettableTokenList]
 

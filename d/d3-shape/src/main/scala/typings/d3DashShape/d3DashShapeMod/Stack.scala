@@ -1,5 +1,6 @@
 package typings.d3DashShape.d3DashShapeMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,5 +112,11 @@ trait Stack[This, Datum, Key] extends js.Object {
     * @param value A constant value.
     */
   def value(value: Double): this.type = js.native
+}
+
+@JSImport("d3-shape", "stack")
+@js.native
+object stack extends js.Object {
+  def apply(): Stack[_, StringDictionary[Double], String] = js.native
 }
 

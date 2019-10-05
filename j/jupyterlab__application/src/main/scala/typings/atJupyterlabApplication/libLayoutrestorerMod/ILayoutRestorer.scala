@@ -1,9 +1,11 @@
 package typings.atJupyterlabApplication.libLayoutrestorerMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.WidgetTracker
 import typings.atJupyterlabCoreutils.libInterfacesMod.IRestorable
 import typings.atJupyterlabCoreutils.libInterfacesMod.IRestorer
-import typings.atJupyterlabCoreutils.libInterfacesMod.IRestorerNs.IOptions
+import typings.atJupyterlabCoreutils.libInterfacesMod.IRestorer.IOptions
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IObservableDisposable
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
@@ -31,16 +33,7 @@ trait ILayoutRestorer
   def restore[T /* <: Widget */](tracker: WidgetTracker[T], options: IOptions[T]): js.Promise[_]
 }
 
-object ILayoutRestorer {
-  @scala.inline
-  def apply(
-    add: (Widget, String) => Unit,
-    restore: (WidgetTracker[js.Any], IOptions[js.Any]) => js.Promise[_],
-    restored: js.Promise[Unit]
-  ): ILayoutRestorer = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), restore = js.Any.fromFunction2(restore), restored = restored)
-  
-    __obj.asInstanceOf[ILayoutRestorer]
-  }
-}
+@JSImport("@jupyterlab/application/lib/layoutrestorer", "ILayoutRestorer")
+@js.native
+object ILayoutRestorer extends TopLevel[Token[ILayoutRestorer]]
 

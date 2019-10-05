@@ -37,7 +37,7 @@ object CreateAlgorithmInput {
     AlgorithmName: EntityName,
     TrainingSpecification: TrainingSpecification,
     AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ValidationSpecification: AlgorithmValidationSpecification = null
   ): CreateAlgorithmInput = {

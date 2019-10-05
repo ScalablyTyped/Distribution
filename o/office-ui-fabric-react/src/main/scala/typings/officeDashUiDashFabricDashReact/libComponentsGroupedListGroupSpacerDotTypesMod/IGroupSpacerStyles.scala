@@ -11,9 +11,9 @@ trait IGroupSpacerStyles extends js.Object {
 
 object IGroupSpacerStyles {
   @scala.inline
-  def apply(root: IStyle): IGroupSpacerStyles = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
+  def apply(root: IStyle = null): IGroupSpacerStyles = {
+    val __obj = js.Dynamic.literal()
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupSpacerStyles]
   }
 }

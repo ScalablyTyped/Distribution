@@ -2,6 +2,7 @@ package typings.request.requestMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.caseless.caselessMod.Httpified
+import typings.formDashData.formDashDataMod.^
 import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
@@ -103,7 +104,7 @@ trait Request
   def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   /* InferMemberOverrides */
   override def eventNames(): js.Array[String | js.Symbol] = js.native
-  def form(): typings.formDashData.formDashDataMod.^ = js.native
+  def form(): ^ = js.native
   def form(form: js.Any): Request = js.native
   /* InferMemberOverrides */
   override def getMaxListeners(): Double = js.native

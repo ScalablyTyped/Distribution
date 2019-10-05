@@ -1,5 +1,7 @@
 package typings.aureliaDashDependencyDashInjection.aureliaDashDependencyDashInjectionMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.aureliaDashDependencyDashInjection.Anon_Decorates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,4 +18,9 @@ object Resolver {
     __obj.asInstanceOf[Resolver]
   }
 }
+
+@JSImport("aurelia-dependency-injection", "resolver")
+@js.native
+object resolver
+  extends TopLevel[Anon_Decorates with js.Function0[_]]
 

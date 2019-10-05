@@ -68,3 +68,20 @@ object ClassDeclaration {
   }
 }
 
+@JSImport("@babel/types", "classDeclaration")
+@js.native
+object classDeclaration extends js.Object {
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    `abstract`: js.UndefOr[Boolean | Null],
+    declare: js.UndefOr[Boolean | Null],
+    _implements: js.UndefOr[(js.Array[TSExpressionWithTypeArguments | ClassImplements]) | Null],
+    mixins: js.UndefOr[js.Any | Null],
+    superTypeParameters: js.UndefOr[TypeParameterInstantiation | TSTypeParameterInstantiation | Null],
+    typeParameters: js.UndefOr[TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | Null]
+  ): ClassDeclaration = js.native
+}
+

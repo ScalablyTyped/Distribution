@@ -1,7 +1,8 @@
 package typings.reactDashFlatpickr.reactDashFlatpickrMod
 
-import typings.flatpickr.flatpickrMod.flatpickrNs.OptionsNs.Hook
-import typings.flatpickr.flatpickrMod.flatpickrNs.OptionsNs.Options
+import typings.flatpickr.distTypesInstanceMod.Instance
+import typings.flatpickr.flatpickrMod.flatpickr.Options.Hook
+import typings.flatpickr.flatpickrMod.flatpickr.Options.Options
 import typings.react.reactMod.ReactElement
 import typings.reactDashFlatpickr.reactDashFlatpickrStrings.options
 import typings.reactDashFlatpickr.reactDashFlatpickrStrings.render
@@ -42,14 +43,14 @@ object DateTimePickerProps {
   def apply(
     className: String = null,
     defaultValue: String = null,
-    onChange: Hook = null,
-    onClose: Hook = null,
-    onDayCreate: Hook = null,
-    onMonthChange: Hook = null,
-    onOpen: Hook = null,
-    onReady: Hook = null,
-    onValueUpdate: Hook = null,
-    onYearChange: Hook = null,
+    onChange: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onClose: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onDayCreate: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onMonthChange: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onOpen: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onReady: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onValueUpdate: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onYearChange: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ Instance, /* data */ js.UndefOr[js.Any]) => Unit = null,
     options: Options = null,
     render: (/* props */ Omit[DateTimePickerProps, options | render], /* ref */ js.Function1[/* node */ HTMLInputElement, Unit]) => ReactElement = null,
     value: String | Date | Double | (js.Array[String | Date | Double]) = null
@@ -57,14 +58,14 @@ object DateTimePickerProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onDayCreate != null) __obj.updateDynamic("onDayCreate")(onDayCreate)
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
-    if (onValueUpdate != null) __obj.updateDynamic("onValueUpdate")(onValueUpdate)
-    if (onYearChange != null) __obj.updateDynamic("onYearChange")(onYearChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction4(onClose))
+    if (onDayCreate != null) __obj.updateDynamic("onDayCreate")(js.Any.fromFunction4(onDayCreate))
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction4(onMonthChange))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction4(onOpen))
+    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction4(onReady))
+    if (onValueUpdate != null) __obj.updateDynamic("onValueUpdate")(js.Any.fromFunction4(onValueUpdate))
+    if (onYearChange != null) __obj.updateDynamic("onYearChange")(js.Any.fromFunction4(onYearChange))
     if (options != null) __obj.updateDynamic("options")(options)
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

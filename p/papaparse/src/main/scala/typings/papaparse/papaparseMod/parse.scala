@@ -1,7 +1,7 @@
 package typings.papaparse.papaparseMod
 
-import typings.node.NodeJSNs.ReadWriteStream
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`

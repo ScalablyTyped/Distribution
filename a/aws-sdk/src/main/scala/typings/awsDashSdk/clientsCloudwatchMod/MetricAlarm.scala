@@ -118,30 +118,30 @@ trait MetricAlarm extends js.Object {
 object MetricAlarm {
   @scala.inline
   def apply(
-    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
+    ActionsEnabled: js.UndefOr[Boolean] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmArn: AlarmArn = null,
     AlarmConfigurationUpdatedTimestamp: Timestamp = null,
     AlarmDescription: AlarmDescription = null,
     AlarmName: AlarmName = null,
     ComparisonOperator: ComparisonOperator = null,
-    DatapointsToAlarm: js.UndefOr[DatapointsToAlarm] = js.undefined,
+    DatapointsToAlarm: Int | Double = null,
     Dimensions: Dimensions = null,
     EvaluateLowSampleCountPercentile: EvaluateLowSampleCountPercentile = null,
-    EvaluationPeriods: js.UndefOr[EvaluationPeriods] = js.undefined,
+    EvaluationPeriods: Int | Double = null,
     ExtendedStatistic: ExtendedStatistic = null,
     InsufficientDataActions: ResourceList = null,
     MetricName: MetricName = null,
     Metrics: MetricDataQueries = null,
     Namespace: Namespace = null,
     OKActions: ResourceList = null,
-    Period: js.UndefOr[Period] = js.undefined,
+    Period: Int | Double = null,
     StateReason: StateReason = null,
     StateReasonData: StateReasonData = null,
     StateUpdatedTimestamp: Timestamp = null,
     StateValue: StateValue = null,
     Statistic: Statistic = null,
-    Threshold: js.UndefOr[Threshold] = js.undefined,
+    Threshold: Int | Double = null,
     ThresholdMetricId: MetricId = null,
     TreatMissingData: TreatMissingData = null,
     Unit: StandardUnit = null
@@ -154,23 +154,23 @@ object MetricAlarm {
     if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription)
     if (AlarmName != null) __obj.updateDynamic("AlarmName")(AlarmName)
     if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatapointsToAlarm)) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm)
+    if (DatapointsToAlarm != null) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
     if (EvaluateLowSampleCountPercentile != null) __obj.updateDynamic("EvaluateLowSampleCountPercentile")(EvaluateLowSampleCountPercentile)
-    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods)
+    if (EvaluationPeriods != null) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.asInstanceOf[js.Any])
     if (ExtendedStatistic != null) __obj.updateDynamic("ExtendedStatistic")(ExtendedStatistic)
     if (InsufficientDataActions != null) __obj.updateDynamic("InsufficientDataActions")(InsufficientDataActions)
     if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName)
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace)
     if (OKActions != null) __obj.updateDynamic("OKActions")(OKActions)
-    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period)
+    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
     if (StateReason != null) __obj.updateDynamic("StateReason")(StateReason)
     if (StateReasonData != null) __obj.updateDynamic("StateReasonData")(StateReasonData)
     if (StateUpdatedTimestamp != null) __obj.updateDynamic("StateUpdatedTimestamp")(StateUpdatedTimestamp)
     if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
-    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold)
+    if (Threshold != null) __obj.updateDynamic("Threshold")(Threshold.asInstanceOf[js.Any])
     if (ThresholdMetricId != null) __obj.updateDynamic("ThresholdMetricId")(ThresholdMetricId)
     if (TreatMissingData != null) __obj.updateDynamic("TreatMissingData")(TreatMissingData)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])

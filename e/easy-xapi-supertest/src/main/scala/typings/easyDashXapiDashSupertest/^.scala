@@ -1,8 +1,7 @@
 package typings.easyDashXapiDashSupertest
 
-import typings.easyDashXapiDashSupertest.NodeJSNs.Global
-import typings.easyDashXapiDashSupertest.NodeJSNs.Process
-import typings.easyDashXapiDashSupertest.NodeJSNs.Timer
+import typings.easyDashXapiDashSupertest.NodeJS.Global
+import typings.easyDashXapiDashSupertest.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +15,5 @@ object ^ extends js.Object {
   var exports: js.Any = js.native
   var global: Global = js.native
   var process: Process = js.native
-  def clearImmediate(immediateId: js.Any): Unit = js.native
-  def clearInterval(intervalId: Timer): Unit = js.native
-  def clearTimeout(timeoutId: Timer): Unit = js.native
-  def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): js.Any = js.native
-  def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer = js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer = js.native
 }
 

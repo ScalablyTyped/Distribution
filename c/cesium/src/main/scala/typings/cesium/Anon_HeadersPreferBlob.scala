@@ -1,7 +1,9 @@
 package typings.cesium
 
 import typings.cesium.cesiumMod.DefaultProxy
-import typings.cesium.cesiumMod.ResourceNs.RetryCallback
+import typings.cesium.cesiumMod.Resource
+import typings.cesium.cesiumMod.Resource.RetryCallback
+import typings.std.Error
 import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +31,7 @@ object Anon_HeadersPreferBlob {
     queryParameters: js.Any = null,
     request: Request = null,
     retryAttempts: Int | Double = null,
-    retryCallback: RetryCallback = null,
+    retryCallback: (/* resource */ Resource, /* error */ Error) => Unit = null,
     templateValues: js.Any = null
   ): Anon_HeadersPreferBlob = {
     val __obj = js.Dynamic.literal(url = url)
@@ -39,7 +41,7 @@ object Anon_HeadersPreferBlob {
     if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
     if (request != null) __obj.updateDynamic("request")(request)
     if (retryAttempts != null) __obj.updateDynamic("retryAttempts")(retryAttempts.asInstanceOf[js.Any])
-    if (retryCallback != null) __obj.updateDynamic("retryCallback")(retryCallback)
+    if (retryCallback != null) __obj.updateDynamic("retryCallback")(js.Any.fromFunction2(retryCallback))
     if (templateValues != null) __obj.updateDynamic("templateValues")(templateValues)
     __obj.asInstanceOf[Anon_HeadersPreferBlob]
   }

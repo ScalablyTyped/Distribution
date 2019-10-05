@@ -1,6 +1,6 @@
 package typings.electronDashUtil.electronDashUtilMod
 
-import typings.electron.ElectronNs.Size
+import typings.electron.Electron.Size
 import typings.electron.electronMod.BrowserWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`

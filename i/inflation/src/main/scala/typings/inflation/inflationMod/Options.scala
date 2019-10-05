@@ -3,7 +3,7 @@ package typings.inflation.inflationMod
 import typings.inflation.inflationStrings.deflate
 import typings.inflation.inflationStrings.gzip
 import typings.inflation.inflationStrings.identity
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.node.zlibMod.ZlibOptions
 import typings.std.ArrayBuffer
 import typings.std.DataView

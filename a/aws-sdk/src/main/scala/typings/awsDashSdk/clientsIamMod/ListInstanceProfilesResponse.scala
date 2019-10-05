@@ -23,7 +23,7 @@ object ListInstanceProfilesResponse {
   @scala.inline
   def apply(
     InstanceProfiles: instanceProfileListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListInstanceProfilesResponse = {
     val __obj = js.Dynamic.literal(InstanceProfiles = InstanceProfiles)

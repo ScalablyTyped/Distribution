@@ -19,10 +19,10 @@ class DaemonSetList protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(name: String) = this()
-  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.DaemonSetList) = this()
+  def this(name: String, args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.DaemonSetList) = this()
   def this(
     name: String,
-    args: typings.atPulumiKubernetes.typesInputMod.extensionsNs.v1beta1Ns.DaemonSetList,
+    args: typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1.DaemonSetList,
     opts: CustomResourceOptions
   ) = this()
 }

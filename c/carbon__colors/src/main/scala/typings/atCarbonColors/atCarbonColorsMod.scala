@@ -115,7 +115,6 @@ object atCarbonColorsMod extends js.Object {
   val white0: String = js.native
   val yellow: String = js.native
   val yellow20: String = js.native
-  def rgba(hexcode: String, opacity: Double): String = js.native
   @js.native
   object blue extends js.Object {
     var `10`: String = js.native
@@ -244,6 +243,11 @@ object atCarbonColorsMod extends js.Object {
     var `70`: String = js.native
     var `80`: String = js.native
     var `90`: String = js.native
+  }
+  
+  @js.native
+  object rgba extends js.Object {
+    def apply(hexcode: String, opacity: Double): String = js.native
   }
   
   @js.native

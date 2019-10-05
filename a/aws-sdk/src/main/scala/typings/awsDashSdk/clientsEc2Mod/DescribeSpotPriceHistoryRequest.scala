@@ -47,11 +47,11 @@ object DescribeSpotPriceHistoryRequest {
   @scala.inline
   def apply(
     AvailabilityZone: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EndTime: DateTime = null,
     Filters: FilterList = null,
     InstanceTypes: InstanceTypeList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     ProductDescriptions: ProductDescriptionList = null,
     StartTime: DateTime = null
@@ -62,7 +62,7 @@ object DescribeSpotPriceHistoryRequest {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (InstanceTypes != null) __obj.updateDynamic("InstanceTypes")(InstanceTypes)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ProductDescriptions != null) __obj.updateDynamic("ProductDescriptions")(ProductDescriptions)
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)

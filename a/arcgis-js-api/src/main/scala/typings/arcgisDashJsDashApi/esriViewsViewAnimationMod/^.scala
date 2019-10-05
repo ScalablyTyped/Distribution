@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsViewAnimationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewAnimationConstructor
+import typings.arcgisDashJsDashApi.__esri.ViewAnimationConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

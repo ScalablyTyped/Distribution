@@ -85,9 +85,8 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-expect", JSImport.Namespace)
 @js.native
 object jasmineDashExpectMod extends js.Object {
-  @JSName("default")
   @js.native
-  object defaultNs extends js.Object {
+  object default extends js.Object {
     val toBeAfter: ToBeAfter = js.native
     val toBeArray: ToBeArray = js.native
     val toBeArrayOfBooleans: ToBeArrayOfBooleans = js.native

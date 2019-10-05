@@ -28,16 +28,16 @@ object Anon_0150 {
   @scala.inline
   def apply(
     autoHeight: `false`,
-    keyMapper: identity,
-    onCellsRendered: noop,
-    onScroll: noop,
+    keyMapper: /* value */ js.Any => js.Any,
+    onCellsRendered: () => Unit,
+    onScroll: () => Unit,
     overscanByPixels: `20`,
     role: grid,
     scrollingResetTimeInterval: `150`,
     style: emptyObject,
     tabIndex: `0`
   ): Anon_0150 = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, keyMapper = keyMapper, onCellsRendered = onCellsRendered, onScroll = onScroll, overscanByPixels = overscanByPixels, role = role, scrollingResetTimeInterval = scrollingResetTimeInterval, style = style, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight, keyMapper = js.Any.fromFunction1(keyMapper), onCellsRendered = js.Any.fromFunction0(onCellsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanByPixels = overscanByPixels, role = role, scrollingResetTimeInterval = scrollingResetTimeInterval, style = style, tabIndex = tabIndex)
   
     __obj.asInstanceOf[Anon_0150]
   }

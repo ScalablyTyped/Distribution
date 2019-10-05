@@ -1,5 +1,6 @@
 package typings.recharts.rechartsMod
 
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object TooltipPayload {
     color: String = null,
     dataKey: DataKey = null,
     fill: String = null,
-    formatter: TooltipFormatter = null,
+    formatter: (/* value */ String | Double | (js.Array[String | Double]), /* name */ String, /* entry */ TooltipPayload, /* index */ Double) => ReactNode = null,
     payload: js.Any = null,
     unit: String = null
   ): TooltipPayload = {
@@ -31,7 +32,7 @@ object TooltipPayload {
     if (color != null) __obj.updateDynamic("color")(color)
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction4(formatter))
     if (payload != null) __obj.updateDynamic("payload")(payload)
     if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[TooltipPayload]

@@ -17,3 +17,11 @@ trait Database extends js.Object {
   def serverDate(options: js.Object): ServerDate = js.native
 }
 
+@JSImport("wx-server-sdk", "database")
+@js.native
+object database extends js.Object {
+  // 数据库 API
+  def apply(): Database = js.native
+  def apply(options: DatabaseOptions): Database = js.native
+}
+

@@ -2,7 +2,7 @@ package typings.rcDashTimeDashPicker.rcDashTimeDashPickerMod
 
 import typings.moment.momentMod.Moment
 import typings.rcDashTimeDashPicker.Anon_Open
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,6 @@ object TimePickerProps {
     addon: TimePicker => Element,
     allowEmpty: Boolean,
     className: String,
-    clearIcon: ReactNode,
     clearText: String,
     defaultOpenValue: Moment,
     defaultValue: Moment,
@@ -64,7 +63,6 @@ object TimePickerProps {
     hideDisabledOptions: Boolean,
     hourStep: Double,
     id: String,
-    inputIcon: ReactNode,
     inputReadOnly: Boolean,
     minuteStep: Double,
     onChange: Moment => Unit,
@@ -81,10 +79,13 @@ object TimePickerProps {
     showSecond: Boolean,
     transitionName: String,
     use12Hours: Boolean,
-    value: Moment
+    value: Moment,
+    clearIcon: ReactNode = null,
+    inputIcon: ReactNode = null
   ): TimePickerProps = {
-    val __obj = js.Dynamic.literal(addon = js.Any.fromFunction1(addon), allowEmpty = allowEmpty, className = className, clearIcon = clearIcon.asInstanceOf[js.Any], clearText = clearText, defaultOpenValue = defaultOpenValue, defaultValue = defaultValue, disabled = disabled, disabledHours = js.Any.fromFunction0(disabledHours), disabledMinutes = js.Any.fromFunction1(disabledMinutes), disabledSeconds = js.Any.fromFunction2(disabledSeconds), focusOnOpen = focusOnOpen, format = format, hideDisabledOptions = hideDisabledOptions, hourStep = hourStep, id = id, inputIcon = inputIcon.asInstanceOf[js.Any], inputReadOnly = inputReadOnly, minuteStep = minuteStep, onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen), open = open, placeholder = placeholder, placement = placement, popupClassName = popupClassName, prefixCls = prefixCls, secondStep = secondStep, showHour = showHour, showMinute = showMinute, showSecond = showSecond, transitionName = transitionName, use12Hours = use12Hours, value = value)
-  
+    val __obj = js.Dynamic.literal(addon = js.Any.fromFunction1(addon), allowEmpty = allowEmpty, className = className, clearText = clearText, defaultOpenValue = defaultOpenValue, defaultValue = defaultValue, disabled = disabled, disabledHours = js.Any.fromFunction0(disabledHours), disabledMinutes = js.Any.fromFunction1(disabledMinutes), disabledSeconds = js.Any.fromFunction2(disabledSeconds), focusOnOpen = focusOnOpen, format = format, hideDisabledOptions = hideDisabledOptions, hourStep = hourStep, id = id, inputReadOnly = inputReadOnly, minuteStep = minuteStep, onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen), open = open, placeholder = placeholder, placement = placement, popupClassName = popupClassName, prefixCls = prefixCls, secondStep = secondStep, showHour = showHour, showMinute = showMinute, showSecond = showSecond, transitionName = transitionName, use12Hours = use12Hours, value = value)
+    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
+    if (inputIcon != null) __obj.updateDynamic("inputIcon")(inputIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerProps]
   }
 }

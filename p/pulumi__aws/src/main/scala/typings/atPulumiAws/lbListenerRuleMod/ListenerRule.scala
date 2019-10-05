@@ -1,7 +1,7 @@
 package typings.atPulumiAws.lbListenerRuleMod
 
-import typings.atPulumiAws.typesOutputMod.lbNs.ListenerRuleAction
-import typings.atPulumiAws.typesOutputMod.lbNs.ListenerRuleCondition
+import typings.atPulumiAws.typesOutputMod.lb.ListenerRuleAction
+import typings.atPulumiAws.typesOutputMod.lb.ListenerRuleCondition
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -2,8 +2,8 @@ package typings.yaml.yamlMod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.RegExp
-import typings.yaml.yamlMod.astNs.Document
-import typings.yaml.yamlMod.cstNs.Node
+import typings.yaml.yamlMod.ast.Document
+import typings.yaml.yamlMod.cst.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,13 +39,13 @@ trait Tag extends js.Object {
     * If test is set, will be called with the resulting match as arguments.
     * Otherwise, will be called as `resolve(doc, cstNode)`.
     */
-  def resolve(doc: Document, cstNode: Node): typings.yaml.yamlMod.astNs.Node = js.native
-  def resolve(`match`: String*): typings.yaml.yamlMod.astNs.Node = js.native
+  def resolve(doc: Document, cstNode: Node): typings.yaml.yamlMod.ast.Node = js.native
+  def resolve(`match`: String*): typings.yaml.yamlMod.ast.Node = js.native
   /**
     * @param item the node being stringified.
     * @param ctx contains the stringifying context variables.
     * @param onComment a function that should be called if the stringifier includes the item's comment in its output.
     */
-  def stringify(item: typings.yaml.yamlMod.astNs.Node, ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
+  def stringify(item: typings.yaml.yamlMod.ast.Node, ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
 }
 

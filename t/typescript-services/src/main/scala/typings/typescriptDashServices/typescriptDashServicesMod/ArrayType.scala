@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ArrayType")
 @js.native
 class ArrayType protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ArrayType {
-  def this(`type`: typings.typescriptDashServices.TypeScriptNs.AST) = this()
+  extends typings.typescriptDashServices.TypeScript.ArrayType {
+  def this(`type`: typings.typescriptDashServices.TypeScript.AST) = this()
 }
 

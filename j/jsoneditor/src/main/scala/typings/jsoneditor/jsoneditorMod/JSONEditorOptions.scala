@@ -1,7 +1,7 @@
 package typings.jsoneditor.jsoneditorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ace.AceAjaxNs.Ace
+import typings.ace.AceAjax.Ace
 import typings.ajv.ajvMod.Ajv
 import typings.jsoneditor.Anon_Field
 import typings.std.Error

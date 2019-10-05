@@ -1,6 +1,7 @@
 package typings.sauronjs.coreSauronMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.sauronjs.coreServiceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ trait SauronInstance extends js.Object {
   def plugin(plugin: js.Function2[/* instance */ this.type, /* options */ js.Any, Unit], options: js.Any): SauronInstance = js.native
   def rebootstrap(): Unit = js.native
   def rebootstrap(map: SauronComponentMap): Unit = js.native
-  def service(Service: Instantiable1[/* options */ js.Any, typings.sauronjs.coreServiceMod.^], options: js.Any): SauronInstance = js.native
+  def service(Service: Instantiable1[/* options */ js.Any, ^], options: js.Any): SauronInstance = js.native
 }
 

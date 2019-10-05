@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofgeometry extends js.Object {
-  val encodingNs: Typeofencoding
-  val polyNs: Typeofpoly
+  val encoding: Typeofencoding
+  val poly: Typeofpoly
   /**
     * Utility functions for computing geodesic angles, distances and areas.
     * The default radius is Earth's radius of 6378137 meters.
     */
-  val sphericalNs: Typeofspherical
+  val spherical: Typeofspherical
 }
 
 object Typeofgeometry {
   @scala.inline
-  def apply(encodingNs: Typeofencoding, polyNs: Typeofpoly, sphericalNs: Typeofspherical): Typeofgeometry = {
-    val __obj = js.Dynamic.literal(encodingNs = encodingNs, polyNs = polyNs, sphericalNs = sphericalNs)
+  def apply(encoding: Typeofencoding, poly: Typeofpoly, spherical: Typeofspherical): Typeofgeometry = {
+    val __obj = js.Dynamic.literal(encoding = encoding, poly = poly, spherical = spherical)
   
     __obj.asInstanceOf[Typeofgeometry]
   }

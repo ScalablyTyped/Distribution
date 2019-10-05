@@ -1,8 +1,8 @@
 package typings.jqueryDotSoap
 
 import typings.jquery.JQueryXHR
-import typings.jqueryDotSoap.JQuerySOAPNs.Options
-import typings.jqueryDotSoap.JQuerySOAPNs.SOAP
+import typings.jqueryDotSoap.JQuerySOAP.Options
+import typings.jqueryDotSoap.JQuerySOAP.SOAP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

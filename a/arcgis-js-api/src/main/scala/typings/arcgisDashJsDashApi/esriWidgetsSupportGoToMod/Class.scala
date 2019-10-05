@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSupportGoToMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GoTo
+import typings.arcgisDashJsDashApi.__esri.GoTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

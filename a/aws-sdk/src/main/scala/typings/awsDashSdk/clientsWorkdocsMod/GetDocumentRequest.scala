@@ -24,7 +24,7 @@ object GetDocumentRequest {
   def apply(
     DocumentId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
+    IncludeCustomMetadata: js.UndefOr[Boolean] = js.undefined
   ): GetDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId)
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)

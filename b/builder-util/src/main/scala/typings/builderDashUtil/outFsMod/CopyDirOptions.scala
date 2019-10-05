@@ -1,5 +1,7 @@
 package typings.builderDashUtil.outFsMod
 
+import typings.fsDashExtra.fsDashExtraMod.Stats
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +15,14 @@ trait CopyDirOptions extends js.Object {
 object CopyDirOptions {
   @scala.inline
   def apply(
-    filter: Filter = null,
+    filter: (/* file */ String, /* stat */ Stats) => Boolean = null,
     isUseHardLink: /* file */ String => Boolean = null,
-    transformer: FileTransformer = null
+    transformer: /* file */ String => (js.Promise[Null | String | Buffer | CopyFileTransformer]) | Null | String | Buffer | CopyFileTransformer = null
   ): CopyDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (isUseHardLink != null) __obj.updateDynamic("isUseHardLink")(js.Any.fromFunction1(isUseHardLink))
-    if (transformer != null) __obj.updateDynamic("transformer")(transformer)
+    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction1(transformer))
     __obj.asInstanceOf[CopyDirOptions]
   }
 }

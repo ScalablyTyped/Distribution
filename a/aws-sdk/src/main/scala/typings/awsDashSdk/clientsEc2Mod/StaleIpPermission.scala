@@ -34,19 +34,19 @@ trait StaleIpPermission extends js.Object {
 object StaleIpPermission {
   @scala.inline
   def apply(
-    FromPort: js.UndefOr[Integer] = js.undefined,
+    FromPort: Int | scala.Double = null,
     IpProtocol: String = null,
     IpRanges: IpRanges = null,
     PrefixListIds: PrefixListIdSet = null,
-    ToPort: js.UndefOr[Integer] = js.undefined,
+    ToPort: Int | scala.Double = null,
     UserIdGroupPairs: UserIdGroupPairSet = null
   ): StaleIpPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort)
+    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
     if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol)
     if (IpRanges != null) __obj.updateDynamic("IpRanges")(IpRanges)
     if (PrefixListIds != null) __obj.updateDynamic("PrefixListIds")(PrefixListIds)
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort)
+    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
     if (UserIdGroupPairs != null) __obj.updateDynamic("UserIdGroupPairs")(UserIdGroupPairs)
     __obj.asInstanceOf[StaleIpPermission]
   }

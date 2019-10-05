@@ -67,34 +67,34 @@ object DomainDeliverabilityCampaign {
   @scala.inline
   def apply(
     CampaignId: CampaignId = null,
-    DeleteRate: js.UndefOr[Percentage] = js.undefined,
+    DeleteRate: Int | Double = null,
     Esps: Esps = null,
     FirstSeenDateTime: Timestamp = null,
     FromAddress: Identity = null,
     ImageUrl: ImageUrl = null,
-    InboxCount: js.UndefOr[Volume] = js.undefined,
+    InboxCount: Int | Double = null,
     LastSeenDateTime: Timestamp = null,
-    ProjectedVolume: js.UndefOr[Volume] = js.undefined,
-    ReadDeleteRate: js.UndefOr[Percentage] = js.undefined,
-    ReadRate: js.UndefOr[Percentage] = js.undefined,
+    ProjectedVolume: Int | Double = null,
+    ReadDeleteRate: Int | Double = null,
+    ReadRate: Int | Double = null,
     SendingIps: IpList = null,
-    SpamCount: js.UndefOr[Volume] = js.undefined,
+    SpamCount: Int | Double = null,
     Subject: Subject = null
   ): DomainDeliverabilityCampaign = {
     val __obj = js.Dynamic.literal()
     if (CampaignId != null) __obj.updateDynamic("CampaignId")(CampaignId)
-    if (!js.isUndefined(DeleteRate)) __obj.updateDynamic("DeleteRate")(DeleteRate)
+    if (DeleteRate != null) __obj.updateDynamic("DeleteRate")(DeleteRate.asInstanceOf[js.Any])
     if (Esps != null) __obj.updateDynamic("Esps")(Esps)
     if (FirstSeenDateTime != null) __obj.updateDynamic("FirstSeenDateTime")(FirstSeenDateTime)
     if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress)
     if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl)
-    if (!js.isUndefined(InboxCount)) __obj.updateDynamic("InboxCount")(InboxCount)
+    if (InboxCount != null) __obj.updateDynamic("InboxCount")(InboxCount.asInstanceOf[js.Any])
     if (LastSeenDateTime != null) __obj.updateDynamic("LastSeenDateTime")(LastSeenDateTime)
-    if (!js.isUndefined(ProjectedVolume)) __obj.updateDynamic("ProjectedVolume")(ProjectedVolume)
-    if (!js.isUndefined(ReadDeleteRate)) __obj.updateDynamic("ReadDeleteRate")(ReadDeleteRate)
-    if (!js.isUndefined(ReadRate)) __obj.updateDynamic("ReadRate")(ReadRate)
+    if (ProjectedVolume != null) __obj.updateDynamic("ProjectedVolume")(ProjectedVolume.asInstanceOf[js.Any])
+    if (ReadDeleteRate != null) __obj.updateDynamic("ReadDeleteRate")(ReadDeleteRate.asInstanceOf[js.Any])
+    if (ReadRate != null) __obj.updateDynamic("ReadRate")(ReadRate.asInstanceOf[js.Any])
     if (SendingIps != null) __obj.updateDynamic("SendingIps")(SendingIps)
-    if (!js.isUndefined(SpamCount)) __obj.updateDynamic("SpamCount")(SpamCount)
+    if (SpamCount != null) __obj.updateDynamic("SpamCount")(SpamCount.asInstanceOf[js.Any])
     if (Subject != null) __obj.updateDynamic("Subject")(Subject)
     __obj.asInstanceOf[DomainDeliverabilityCampaign]
   }

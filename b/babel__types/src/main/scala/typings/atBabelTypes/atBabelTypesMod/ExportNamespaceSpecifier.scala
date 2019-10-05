@@ -37,3 +37,9 @@ object ExportNamespaceSpecifier {
   }
 }
 
+@JSImport("@babel/types", "exportNamespaceSpecifier")
+@js.native
+object exportNamespaceSpecifier extends js.Object {
+  def apply(exported: Identifier): ExportNamespaceSpecifier = js.native
+}
+

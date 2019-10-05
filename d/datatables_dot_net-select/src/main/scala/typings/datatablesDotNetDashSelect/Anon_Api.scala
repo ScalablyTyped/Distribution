@@ -1,6 +1,6 @@
 package typings.datatablesDotNetDashSelect
 
-import typings.datatablesDotNetDashSelect.DataTablesNs.Api
+import typings.datatablesDotNetDashSelect.DataTables.Api
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.api
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.multi
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.os

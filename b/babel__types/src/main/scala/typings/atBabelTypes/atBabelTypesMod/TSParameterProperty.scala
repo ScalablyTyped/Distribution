@@ -46,3 +46,12 @@ object TSParameterProperty {
   }
 }
 
+@JSImport("@babel/types", "tsParameterProperty")
+@js.native
+object tsParameterProperty extends js.Object {
+  def apply(parameter: AssignmentPattern): TSParameterProperty = js.native
+  def apply(parameter: AssignmentPattern, accessibility: Null, readonly: Boolean): TSParameterProperty = js.native
+  def apply(parameter: Identifier): TSParameterProperty = js.native
+  def apply(parameter: Identifier, accessibility: Null, readonly: Boolean): TSParameterProperty = js.native
+}
+

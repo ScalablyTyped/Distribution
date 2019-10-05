@@ -10,8 +10,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojswitchMod.ojSwitchNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojswitchMod.ojSwitchNs.ojAnimateStart
+import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateEnd
+import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

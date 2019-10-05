@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Transform")
 @js.native
 class Transform ()
-  extends typings.pixiDotJs.PIXINs.Transform
+  extends typings.pixiDotJs.PIXI.Transform
 

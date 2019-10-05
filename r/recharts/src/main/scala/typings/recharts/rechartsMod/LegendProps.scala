@@ -1,6 +1,7 @@
 package typings.recharts.rechartsMod
 
 import typings.react.reactMod.ReactElement
+import typings.recharts.Anon_HeightWidth
 import typings.recharts.rechartsStrings.bottom
 import typings.recharts.rechartsStrings.center
 import typings.recharts.rechartsStrings.left
@@ -40,16 +41,18 @@ object LegendProps {
     chartHeight: Int | Double = null,
     chartWidth: Int | Double = null,
     content: ReactElement | ContentRenderer[LegendProps] = null,
-    formatter: LegendValueFormatter = null,
+    formatter: (/* value */ js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
+    ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => js.Any = null,
     height: Int | Double = null,
     iconSize: Int | Double = null,
     iconType: IconType = null,
     layout: LayoutType = null,
     margin: Partial[Margin] = null,
-    onBBoxUpdate: BBoxUpdateCallback = null,
-    onClick: RechartsFunction = null,
-    onMouseEnter: RechartsFunction = null,
-    onMouseLeave: RechartsFunction = null,
+    onBBoxUpdate: /* box */ Anon_HeightWidth => Unit = null,
+    onClick: /* repeated */ js.Any => Unit = null,
+    onMouseEnter: /* repeated */ js.Any => Unit = null,
+    onMouseLeave: /* repeated */ js.Any => Unit = null,
     payload: js.Array[LegendPayload] = null,
     verticalAlign: top | middle | bottom = null,
     width: Int | Double = null,
@@ -60,16 +63,16 @@ object LegendProps {
     if (chartHeight != null) __obj.updateDynamic("chartHeight")(chartHeight.asInstanceOf[js.Any])
     if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction3(formatter))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
     if (iconType != null) __obj.updateDynamic("iconType")(iconType)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (onBBoxUpdate != null) __obj.updateDynamic("onBBoxUpdate")(onBBoxUpdate)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onBBoxUpdate != null) __obj.updateDynamic("onBBoxUpdate")(js.Any.fromFunction1(onBBoxUpdate))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (payload != null) __obj.updateDynamic("payload")(payload)
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.jqueryDotSimplemodal
 
-import typings.jqueryDotSimplemodal.SimpleModalNs.JQueryExtension
-import typings.jqueryDotSimplemodal.SimpleModalNs.SimpleModalOptions
+import typings.jqueryDotSimplemodal.SimpleModal.JQueryExtension
+import typings.jqueryDotSimplemodal.SimpleModal.SimpleModalOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

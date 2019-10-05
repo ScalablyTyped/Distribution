@@ -1,8 +1,8 @@
 package typings.cesium.cesiumMod
 
 import typings.cesium.Anon_IsStartIncluded
-import typings.cesium.cesiumMod.TimeIntervalNs.DataComparer
-import typings.cesium.cesiumMod.TimeIntervalNs.MergeCallback
+import typings.cesium.cesiumMod.TimeInterval.DataComparer
+import typings.cesium.cesiumMod.TimeInterval.MergeCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

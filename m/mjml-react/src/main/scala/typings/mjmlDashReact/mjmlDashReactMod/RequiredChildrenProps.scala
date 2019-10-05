@@ -11,9 +11,9 @@ trait RequiredChildrenProps extends js.Object {
 
 object RequiredChildrenProps {
   @scala.inline
-  def apply(children: ReactNode): RequiredChildrenProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null): RequiredChildrenProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredChildrenProps]
   }
 }

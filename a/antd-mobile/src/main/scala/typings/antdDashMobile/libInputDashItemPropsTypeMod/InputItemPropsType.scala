@@ -60,10 +60,10 @@ object InputItemPropsType {
     moneyKeyboardHeader: ReactNode = null,
     moneyKeyboardWrapProps: js.Object = null,
     name: String = null,
-    onBlur: InputEventHandler = null,
+    onBlur: /* value */ js.UndefOr[String] => Unit = null,
     onChange: /* value */ String => Unit = null,
-    onFocus: InputEventHandler = null,
-    onVirtualKeyboardConfirm: InputEventHandler = null,
+    onFocus: /* value */ js.UndefOr[String] => Unit = null,
+    onVirtualKeyboardConfirm: /* value */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     textAlign: left | center = null,
     `type`: text | bankCard | phone | password | number | digit | money = null,
@@ -86,10 +86,10 @@ object InputItemPropsType {
     if (moneyKeyboardHeader != null) __obj.updateDynamic("moneyKeyboardHeader")(moneyKeyboardHeader.asInstanceOf[js.Any])
     if (moneyKeyboardWrapProps != null) __obj.updateDynamic("moneyKeyboardWrapProps")(moneyKeyboardWrapProps)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(onVirtualKeyboardConfirm)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(js.Any.fromFunction1(onVirtualKeyboardConfirm))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

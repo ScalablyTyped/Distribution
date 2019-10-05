@@ -1,7 +1,7 @@
 package typings.atPulumiAws.sagemakerEndpointConfigurationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.sagemakerNs.EndpointConfigurationProductionVariant
+import typings.atPulumiAws.typesInputMod.sagemaker.EndpointConfigurationProductionVariant
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

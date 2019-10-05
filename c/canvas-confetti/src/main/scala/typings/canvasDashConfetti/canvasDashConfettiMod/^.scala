@@ -1,6 +1,5 @@
 package typings.canvasDashConfetti.canvasDashConfettiMod
 
-import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,5 @@ object ^ extends js.Object {
   var Promise: js.Any = js.native
   def apply(): js.Promise[Null] | Null = js.native
   def apply(options: Options): js.Promise[Null] | Null = js.native
-  def create(canvas: HTMLCanvasElement): js.Function1[/* options */ js.UndefOr[Options], js.Promise[Null] | Null] = js.native
-  def create(canvas: HTMLCanvasElement, options: GlobalOptions): js.Function1[/* options */ js.UndefOr[Options], js.Promise[Null] | Null] = js.native
 }
 

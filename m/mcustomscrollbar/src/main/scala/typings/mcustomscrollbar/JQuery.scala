@@ -1,7 +1,7 @@
 package typings.mcustomscrollbar
 
-import typings.mcustomscrollbar.MCustomScrollbarNs.CustomScrollbarOptions
-import typings.mcustomscrollbar.MCustomScrollbarNs.ScrollToParameterOptions
+import typings.mcustomscrollbar.MCustomScrollbar.CustomScrollbarOptions
+import typings.mcustomscrollbar.MCustomScrollbar.ScrollToParameterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

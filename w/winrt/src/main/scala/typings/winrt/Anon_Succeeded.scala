@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency
+import typings.winrt.Windows.Media.Capture.PowerlineFrequency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

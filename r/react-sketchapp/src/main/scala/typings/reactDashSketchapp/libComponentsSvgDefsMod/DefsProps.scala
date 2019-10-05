@@ -11,9 +11,9 @@ trait DefsProps extends js.Object {
 
 object DefsProps {
   @scala.inline
-  def apply(children: js.Array[ReactNode] | ReactNode): DefsProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: js.Array[ReactNode] | ReactNode = null): DefsProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefsProps]
   }
 }

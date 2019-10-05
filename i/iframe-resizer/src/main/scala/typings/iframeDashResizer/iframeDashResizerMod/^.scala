@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("iframe-resizer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(options: IFrameOptions, target: String | HTMLElement): js.Array[IFrameComponent] = js.native
+  def apply(options: IFrameOptions, target: String): js.Array[IFrameComponent] = js.native
+  def apply(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = js.native
 }
 

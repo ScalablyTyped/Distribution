@@ -17,9 +17,9 @@ trait InstanceCount extends js.Object {
 
 object InstanceCount {
   @scala.inline
-  def apply(InstanceCount: js.UndefOr[Integer] = js.undefined, State: ListingState = null): InstanceCount = {
+  def apply(InstanceCount: Int | scala.Double = null, State: ListingState = null): InstanceCount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCount]
   }

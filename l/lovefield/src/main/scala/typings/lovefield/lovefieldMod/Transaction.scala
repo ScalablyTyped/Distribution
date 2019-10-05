@@ -1,7 +1,7 @@
 package typings.lovefield.lovefieldMod
 
-import typings.lovefield.lovefieldMod.queryNs.Builder
-import typings.lovefield.lovefieldMod.schemaNs.Table
+import typings.lovefield.lovefieldMod.query.Builder
+import typings.lovefield.lovefieldMod.schema.Table
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

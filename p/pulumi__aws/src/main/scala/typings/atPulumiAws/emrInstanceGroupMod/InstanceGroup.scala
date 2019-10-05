@@ -1,6 +1,6 @@
 package typings.atPulumiAws.emrInstanceGroupMod
 
-import typings.atPulumiAws.typesOutputMod.emrNs.InstanceGroupEbsConfig
+import typings.atPulumiAws.typesOutputMod.emr.InstanceGroupEbsConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

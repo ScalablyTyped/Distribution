@@ -28,9 +28,5 @@ trait DOMStringList
 
 @JSGlobal("DOMStringList")
 @js.native
-class DOMStringListCls () extends DOMStringList
-
-@JSGlobal("DOMStringList")
-@js.native
 object DOMStringList extends Instantiable0[DOMStringList]
 

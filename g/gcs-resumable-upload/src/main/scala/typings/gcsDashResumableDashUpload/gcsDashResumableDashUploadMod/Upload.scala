@@ -9,14 +9,14 @@ import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.proj
 import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.publicRead
 import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.GoogleAuth
 import typings.node.Buffer
+import typings.pumpify.pumpifyMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("gcs-resumable-upload", "Upload")
 @js.native
-class Upload protected ()
-  extends typings.pumpify.pumpifyMod.^ {
+class Upload protected () extends ^ {
   def this(cfg: UploadConfig) = this()
   var apiEndpoint: String = js.native
   var authClient: GoogleAuth = js.native
@@ -63,5 +63,11 @@ class Upload protected ()
   def createURI(callback: CreateUriCallback): Unit = js.native
   /* protected */ def createURIAsync(): js.Promise[String] = js.native
   def deleteConfig(): Unit = js.native
+}
+
+@JSImport("gcs-resumable-upload", "upload")
+@js.native
+object upload extends js.Object {
+  def apply(cfg: UploadConfig): Upload = js.native
 }
 

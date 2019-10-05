@@ -1,5 +1,7 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeScopeManagerMod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeScopeMod.Scope
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeVariableMod.Variable
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Node
@@ -42,4 +44,8 @@ trait ScopeManager extends js.Object {
   def release(node: Node): Scope | Null = js.native
   def release(node: Node, inner: Boolean): Scope | Null = js.native
 }
+
+@JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope/ScopeManager", "ScopeManager")
+@js.native
+object ScopeManager extends TopLevel[Instantiable1[/* options */ ScopeManagerOptions, ScopeManager]]
 

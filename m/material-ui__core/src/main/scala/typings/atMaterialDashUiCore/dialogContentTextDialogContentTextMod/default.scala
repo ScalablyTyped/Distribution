@@ -1,7 +1,9 @@
 package typings.atMaterialDashUiCore.dialogContentTextDialogContentTextMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: DialogContentTextProps) = this()
   def this(props: DialogContentTextProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/core/DialogContentText/DialogContentText", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentType[DialogContentTextProps]]
 

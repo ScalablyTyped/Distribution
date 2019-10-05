@@ -29,7 +29,7 @@ import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
 import typings.react.reactMod.FC
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.reactDashApollo.reactDashApolloStrings.client
@@ -43,9 +43,6 @@ import scala.scalajs.js.annotation._
 object reactDashApolloMod extends js.Object {
   val ApolloConsumer: FC[ApolloConsumerProps] = js.native
   val ApolloProvider: FC[ApolloProviderProps[js.Any]] = js.native
-  def Mutation[TData, TVariables](props: MutationComponentOptions[TData, TVariables]): Element | Null = js.native
-  def Query[TData, TVariables](props: QueryComponentOptions[TData, TVariables]): Element | Null = js.native
-  def Subscription[TData, TVariables](props: SubscriptionComponentOptions[TData, TVariables]): Element | Null = js.native
   def getApolloContext(): Context[ApolloContextValue] = js.native
   def getDataFromTree(tree: ReactNode): js.Promise[String] = js.native
   def getDataFromTree(tree: ReactNode, context: StringDictionary[js.Any]): js.Promise[String] = js.native
@@ -118,9 +115,9 @@ object reactDashApolloMod extends js.Object {
     /* WrappedComponent */ ComponentType[TProps with TChildProps], 
     ComponentClass[TProps, _]
   ] = js.native
-  @JSName("Mutation")
   @js.native
-  object MutationNs extends js.Object {
+  object Mutation extends js.Object {
+    def apply[TData, TVariables](props: MutationComponentOptions[TData, TVariables]): Element | Null = js.native
     @js.native
     object propTypes extends js.Object {
       var awaitRefetchQueries: Requireable[Boolean] = js.native
@@ -139,9 +136,9 @@ object reactDashApolloMod extends js.Object {
     
   }
   
-  @JSName("Query")
   @js.native
-  object QueryNs extends js.Object {
+  object Query extends js.Object {
+    def apply[TData, TVariables](props: QueryComponentOptions[TData, TVariables]): Element | Null = js.native
     @js.native
     object propTypes extends js.Object {
       var children: Validator[js.Function1[/* repeated */ _, _]] = js.native
@@ -160,9 +157,9 @@ object reactDashApolloMod extends js.Object {
     
   }
   
-  @JSName("Subscription")
   @js.native
-  object SubscriptionNs extends js.Object {
+  object Subscription extends js.Object {
+    def apply[TData, TVariables](props: SubscriptionComponentOptions[TData, TVariables]): Element | Null = js.native
     @js.native
     object propTypes extends js.Object {
       var children: Requireable[js.Function1[/* repeated */ _, _]] = js.native

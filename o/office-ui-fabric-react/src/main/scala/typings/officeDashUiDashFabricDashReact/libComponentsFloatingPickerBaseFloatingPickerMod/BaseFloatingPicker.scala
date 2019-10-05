@@ -7,7 +7,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSugges
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsControlProps
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsStoreMod.SuggestionsStore
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.RefObject
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement

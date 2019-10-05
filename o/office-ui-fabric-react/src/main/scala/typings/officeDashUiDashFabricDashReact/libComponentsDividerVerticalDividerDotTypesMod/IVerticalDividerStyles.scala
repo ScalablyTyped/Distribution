@@ -18,9 +18,10 @@ trait IVerticalDividerStyles extends js.Object {
 
 object IVerticalDividerStyles {
   @scala.inline
-  def apply(divider: IStyle, wrapper: IStyle): IVerticalDividerStyles = {
-    val __obj = js.Dynamic.literal(divider = divider.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
-  
+  def apply(divider: IStyle = null, wrapper: IStyle = null): IVerticalDividerStyles = {
+    val __obj = js.Dynamic.literal()
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVerticalDividerStyles]
   }
 }

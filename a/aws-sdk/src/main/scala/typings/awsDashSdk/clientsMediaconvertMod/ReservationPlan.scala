@@ -38,7 +38,7 @@ object ReservationPlan {
     ExpiresAt: __timestampUnix = null,
     PurchasedAt: __timestampUnix = null,
     RenewalType: RenewalType = null,
-    ReservedSlots: js.UndefOr[__integer] = js.undefined,
+    ReservedSlots: Int | Double = null,
     Status: ReservationPlanStatus = null
   ): ReservationPlan = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object ReservationPlan {
     if (ExpiresAt != null) __obj.updateDynamic("ExpiresAt")(ExpiresAt)
     if (PurchasedAt != null) __obj.updateDynamic("PurchasedAt")(PurchasedAt)
     if (RenewalType != null) __obj.updateDynamic("RenewalType")(RenewalType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReservedSlots)) __obj.updateDynamic("ReservedSlots")(ReservedSlots)
+    if (ReservedSlots != null) __obj.updateDynamic("ReservedSlots")(ReservedSlots.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationPlan]
   }

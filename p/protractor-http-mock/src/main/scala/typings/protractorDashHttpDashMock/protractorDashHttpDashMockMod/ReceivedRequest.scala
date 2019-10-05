@@ -1,6 +1,6 @@
 package typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod
 
-import typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod.requestsNs.Method
+import typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod.requests.Method
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

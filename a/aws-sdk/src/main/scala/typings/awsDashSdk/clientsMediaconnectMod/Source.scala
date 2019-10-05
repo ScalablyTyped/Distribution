@@ -52,22 +52,22 @@ object Source {
   def apply(
     Name: __string,
     SourceArn: __string,
-    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
+    DataTransferSubscriberFeePercent: Int | Double = null,
     Decryption: Encryption = null,
     Description: __string = null,
     EntitlementArn: __string = null,
     IngestIp: __string = null,
-    IngestPort: js.UndefOr[__integer] = js.undefined,
+    IngestPort: Int | Double = null,
     Transport: Transport = null,
     WhitelistCidr: __string = null
   ): Source = {
     val __obj = js.Dynamic.literal(Name = Name, SourceArn = SourceArn)
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
+    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
     if (Decryption != null) __obj.updateDynamic("Decryption")(Decryption)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn)
     if (IngestIp != null) __obj.updateDynamic("IngestIp")(IngestIp)
-    if (!js.isUndefined(IngestPort)) __obj.updateDynamic("IngestPort")(IngestPort)
+    if (IngestPort != null) __obj.updateDynamic("IngestPort")(IngestPort.asInstanceOf[js.Any])
     if (Transport != null) __obj.updateDynamic("Transport")(Transport)
     if (WhitelistCidr != null) __obj.updateDynamic("WhitelistCidr")(WhitelistCidr)
     __obj.asInstanceOf[Source]

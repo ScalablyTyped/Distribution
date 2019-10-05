@@ -1,6 +1,7 @@
 package typings.babelDashTypes.babelDashTypesMod
 
 import typings.babelDashTypes.Anon_Cooked
+import typings.babelDashTypes.Anon_CookedRaw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,5 +33,13 @@ object TemplateElement {
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
     __obj.asInstanceOf[TemplateElement]
   }
+}
+
+@JSImport("babel-types", "templateElement")
+@js.native
+object templateElement extends js.Object {
+  def apply(): TemplateElement = js.native
+  def apply(value: Anon_CookedRaw): TemplateElement = js.native
+  def apply(value: Anon_CookedRaw, tail: Boolean): TemplateElement = js.native
 }
 

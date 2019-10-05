@@ -21,13 +21,9 @@ trait HealthCheckConfig extends js.Object {
 
 object HealthCheckConfig {
   @scala.inline
-  def apply(
-    Type: HealthCheckType,
-    FailureThreshold: js.UndefOr[FailureThreshold] = js.undefined,
-    ResourcePath: ResourcePath = null
-  ): HealthCheckConfig = {
+  def apply(Type: HealthCheckType, FailureThreshold: Int | Double = null, ResourcePath: ResourcePath = null): HealthCheckConfig = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailureThreshold)) __obj.updateDynamic("FailureThreshold")(FailureThreshold)
+    if (FailureThreshold != null) __obj.updateDynamic("FailureThreshold")(FailureThreshold.asInstanceOf[js.Any])
     if (ResourcePath != null) __obj.updateDynamic("ResourcePath")(ResourcePath)
     __obj.asInstanceOf[HealthCheckConfig]
   }

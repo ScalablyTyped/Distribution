@@ -13,12 +13,6 @@ trait OfflineAudioCompletionEvent extends Event {
 
 @JSGlobal("OfflineAudioCompletionEvent")
 @js.native
-class OfflineAudioCompletionEventCls protected () extends OfflineAudioCompletionEvent {
-  def this(`type`: java.lang.String, eventInitDict: OfflineAudioCompletionEventInit) = this()
-}
-
-@JSGlobal("OfflineAudioCompletionEvent")
-@js.native
 object OfflineAudioCompletionEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

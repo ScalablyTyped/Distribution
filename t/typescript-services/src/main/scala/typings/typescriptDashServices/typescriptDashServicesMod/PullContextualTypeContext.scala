@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullContextualTypeContext")
 @js.native
 class PullContextualTypeContext protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullContextualTypeContext {
+  extends typings.typescriptDashServices.TypeScript.PullContextualTypeContext {
   def this(
-    contextualType: typings.typescriptDashServices.TypeScriptNs.PullTypeSymbol,
+    contextualType: typings.typescriptDashServices.TypeScript.PullTypeSymbol,
     provisional: Boolean,
     isInferentiallyTyping: Boolean,
-    typeArgumentInferenceContext: typings.typescriptDashServices.TypeScriptNs.TypeArgumentInferenceContext
+    typeArgumentInferenceContext: typings.typescriptDashServices.TypeScript.TypeArgumentInferenceContext
   ) = this()
 }
 

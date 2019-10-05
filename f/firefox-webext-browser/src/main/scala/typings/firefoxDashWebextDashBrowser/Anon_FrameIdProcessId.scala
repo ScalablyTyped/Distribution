@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionQualifier
-import typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionQualifier
+import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

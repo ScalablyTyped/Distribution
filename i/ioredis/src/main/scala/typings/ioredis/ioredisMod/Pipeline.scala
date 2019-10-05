@@ -16,7 +16,7 @@ import typings.ioredis.ioredisStrings.count
 import typings.ioredis.ioredisStrings.group
 import typings.ioredis.ioredisStrings.maxlen
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

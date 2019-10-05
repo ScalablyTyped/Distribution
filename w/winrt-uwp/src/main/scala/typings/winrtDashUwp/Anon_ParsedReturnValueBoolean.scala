@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.DevicesNs.UsbNs.UsbInterfaceDescriptor
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbInterfaceDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

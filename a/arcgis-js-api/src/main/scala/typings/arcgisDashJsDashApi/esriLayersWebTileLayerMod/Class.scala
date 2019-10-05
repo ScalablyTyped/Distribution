@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersWebTileLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WebTileLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WebTileLayerProperties
+import typings.arcgisDashJsDashApi.__esri.WebTileLayer
+import typings.arcgisDashJsDashApi.__esri.WebTileLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

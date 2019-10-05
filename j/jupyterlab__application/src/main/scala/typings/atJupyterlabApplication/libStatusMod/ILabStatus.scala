@@ -1,7 +1,9 @@
 package typings.atJupyterlabApplication.libStatusMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -39,19 +41,7 @@ trait ILabStatus extends js.Object {
   def setDirty(): IDisposable
 }
 
-object ILabStatus {
-  @scala.inline
-  def apply(
-    busySignal: ISignal[JupyterFrontEnd[IShell], Boolean],
-    dirtySignal: ISignal[JupyterFrontEnd[IShell], Boolean],
-    isBusy: Boolean,
-    isDirty: Boolean,
-    setBusy: () => IDisposable,
-    setDirty: () => IDisposable
-  ): ILabStatus = {
-    val __obj = js.Dynamic.literal(busySignal = busySignal, dirtySignal = dirtySignal, isBusy = isBusy, isDirty = isDirty, setBusy = js.Any.fromFunction0(setBusy), setDirty = js.Any.fromFunction0(setDirty))
-  
-    __obj.asInstanceOf[ILabStatus]
-  }
-}
+@JSImport("@jupyterlab/application/lib/status", "ILabStatus")
+@js.native
+object ILabStatus extends TopLevel[Token[ILabStatus]]
 

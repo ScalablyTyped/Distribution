@@ -3,7 +3,7 @@ package typings.modesl.modeslMod
 import typings.modesl.modeslStrings.json
 import typings.modesl.modeslStrings.plain
 import typings.modesl.modeslStrings.xml
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

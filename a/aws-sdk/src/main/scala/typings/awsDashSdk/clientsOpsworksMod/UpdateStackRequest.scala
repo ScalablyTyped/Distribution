@@ -98,8 +98,8 @@ object UpdateStackRequest {
     HostnameTheme: String = null,
     Name: String = null,
     ServiceRoleArn: String = null,
-    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
+    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateStackRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId)
     if (AgentVersion != null) __obj.updateDynamic("AgentVersion")(AgentVersion)

@@ -1,9 +1,9 @@
 package typings.paper
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.paper.paperNs.CompoundPath
-import typings.paper.paperNs.Path
-import typings.paper.paperNs.PathItem
+import typings.paper.paper.CompoundPath
+import typings.paper.paper.Path
+import typings.paper.paper.PathItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -27,9 +27,9 @@ object UpdateDomainContactPrivacyRequest {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    AdminPrivacy: js.UndefOr[Boolean] = js.undefined,
-    RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined,
-    TechPrivacy: js.UndefOr[Boolean] = js.undefined
+    AdminPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
+    RegistrantPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
+    TechPrivacy: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateDomainContactPrivacyRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)
     if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy)

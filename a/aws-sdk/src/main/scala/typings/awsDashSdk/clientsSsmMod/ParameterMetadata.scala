@@ -59,7 +59,7 @@ object ParameterMetadata {
     Policies: ParameterPolicyList = null,
     Tier: ParameterTier = null,
     Type: ParameterType = null,
-    Version: js.UndefOr[PSParameterVersion] = js.undefined
+    Version: Int | Double = null
   ): ParameterMetadata = {
     val __obj = js.Dynamic.literal()
     if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern)
@@ -71,7 +71,7 @@ object ParameterMetadata {
     if (Policies != null) __obj.updateDynamic("Policies")(Policies)
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterMetadata]
   }
 }

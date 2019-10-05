@@ -1,6 +1,6 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.AuthModes
+import typings.weixinDashApp.wx.AuthModes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

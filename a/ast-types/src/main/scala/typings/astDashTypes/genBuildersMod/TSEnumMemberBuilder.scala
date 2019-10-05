@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsIdInitializer
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.StringLiteralKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSEnumMember
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSEnumMember
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

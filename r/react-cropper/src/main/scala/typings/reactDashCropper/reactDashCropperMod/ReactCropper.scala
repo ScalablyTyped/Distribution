@@ -1,5 +1,6 @@
 package typings.reactDashCropper.reactDashCropperMod
 
+import typings.cropperjs.cropperjsMod.cropperjs
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.cropperjs.cropperjsMod.^ because Inheritance from two classes. Inlined  */ @js.native
 trait ReactCropper
-  extends Component[ReactCropperProps, js.Object, js.Any] {
+  extends Component[ReactCropperProps, js.Object, js.Any]
+     with cropperjs {
   def on(eventname: String, callback: js.Function0[Unit]): Unit = js.native
 }
 

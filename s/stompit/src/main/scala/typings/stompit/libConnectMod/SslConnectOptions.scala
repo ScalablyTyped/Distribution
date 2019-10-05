@@ -2,13 +2,15 @@ package typings.stompit.libConnectMod
 
 import typings.node.Buffer
 import typings.node.Error
-import typings.node.netMod.LookupFunction
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.std.Uint8Array
+import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
 import typings.stompit.stompitNumbers.`true`
@@ -48,11 +50,11 @@ object SslConnectOptions {
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    lookup: LookupFunction = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
     minVersion: SecureVersion = null,
-    outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
+    outgoingFrameStream: ^ = null,
     passphrase: String = null,
     path: String = null,
     pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
@@ -91,7 +93,7 @@ object SslConnectOptions {
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
     if (host != null) __obj.updateDynamic("host")(host)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
     if (minDHSize != null) __obj.updateDynamic("minDHSize")(minDHSize.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)

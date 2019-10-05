@@ -1,7 +1,7 @@
 package typings.lobibox
 
-import typings.lobibox.LobiboxModuleNs.ConfirmOptions
-import typings.lobibox.LobiboxModuleNs.MessageBoxesDefault
+import typings.lobibox.LobiboxModule.ConfirmOptions
+import typings.lobibox.LobiboxModule.MessageBoxesDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

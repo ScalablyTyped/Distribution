@@ -76,16 +76,16 @@ object UpdateAutoScalingGroupType {
   def apply(
     AutoScalingGroupName: ResourceName,
     AvailabilityZones: AvailabilityZones = null,
-    DefaultCooldown: js.UndefOr[Cooldown] = js.undefined,
-    DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined,
-    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
+    DefaultCooldown: Int | Double = null,
+    DesiredCapacity: Int | Double = null,
+    HealthCheckGracePeriod: Int | Double = null,
     HealthCheckType: XmlStringMaxLen32 = null,
     LaunchConfigurationName: ResourceName = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
-    MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined,
-    MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined,
+    MaxSize: Int | Double = null,
+    MinSize: Int | Double = null,
     MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
+    NewInstancesProtectedFromScaleIn: js.UndefOr[Boolean] = js.undefined,
     PlacementGroup: XmlStringMaxLen255 = null,
     ServiceLinkedRoleARN: ResourceName = null,
     TerminationPolicies: TerminationPolicies = null,
@@ -93,14 +93,14 @@ object UpdateAutoScalingGroupType {
   ): UpdateAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (!js.isUndefined(DefaultCooldown)) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown)
-    if (!js.isUndefined(DesiredCapacity)) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity)
-    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod)
+    if (DefaultCooldown != null) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown.asInstanceOf[js.Any])
+    if (DesiredCapacity != null) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.asInstanceOf[js.Any])
+    if (HealthCheckGracePeriod != null) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.asInstanceOf[js.Any])
     if (HealthCheckType != null) __obj.updateDynamic("HealthCheckType")(HealthCheckType)
     if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName)
     if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate)
-    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize)
-    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize)
+    if (MaxSize != null) __obj.updateDynamic("MaxSize")(MaxSize.asInstanceOf[js.Any])
+    if (MinSize != null) __obj.updateDynamic("MinSize")(MinSize.asInstanceOf[js.Any])
     if (MixedInstancesPolicy != null) __obj.updateDynamic("MixedInstancesPolicy")(MixedInstancesPolicy)
     if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn)
     if (PlacementGroup != null) __obj.updateDynamic("PlacementGroup")(PlacementGroup)

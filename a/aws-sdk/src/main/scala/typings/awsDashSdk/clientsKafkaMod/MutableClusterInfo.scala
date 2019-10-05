@@ -30,12 +30,12 @@ object MutableClusterInfo {
   def apply(
     BrokerEBSVolumeInfo: __listOfBrokerEBSVolumeInfo = null,
     ConfigurationInfo: ConfigurationInfo = null,
-    NumberOfBrokerNodes: js.UndefOr[__integer] = js.undefined
+    NumberOfBrokerNodes: Int | Double = null
   ): MutableClusterInfo = {
     val __obj = js.Dynamic.literal()
     if (BrokerEBSVolumeInfo != null) __obj.updateDynamic("BrokerEBSVolumeInfo")(BrokerEBSVolumeInfo)
     if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo)
-    if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes)
+    if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutableClusterInfo]
   }
 }

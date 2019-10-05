@@ -1,9 +1,9 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFFileFormat
-import typings.mfiles.MFilesNs.MFFileOpenMethod
-import typings.mfiles.MFilesNs.MFLatestSpecificBehavior
-import typings.mfiles.MFilesNs.MFOCRZoneRecognitionMode
+import typings.mfiles.MFiles.MFFileFormat
+import typings.mfiles.MFiles.MFFileOpenMethod
+import typings.mfiles.MFiles.MFLatestSpecificBehavior
+import typings.mfiles.MFiles.MFOCRZoneRecognitionMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

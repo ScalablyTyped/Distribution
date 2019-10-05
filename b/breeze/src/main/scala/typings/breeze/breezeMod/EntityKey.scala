@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "EntityKey")
 @js.native
 class EntityKey protected ()
-  extends typings.breeze.breezeNs.EntityKey {
-  def this(entityType: typings.breeze.breezeNs.EntityType, keyValue: js.Any) = this()
-  def this(entityType: typings.breeze.breezeNs.EntityType, keyValues: js.Array[_]) = this()
+  extends typings.breeze.breeze.EntityKey {
+  def this(entityType: typings.breeze.breeze.EntityType, keyValue: js.Any) = this()
+  def this(entityType: typings.breeze.breeze.EntityType, keyValues: js.Array[_]) = this()
 }
 
 /* static members */
 @JSImport("breeze", "EntityKey")
 @js.native
 object EntityKey extends js.Object {
-  def equals(k1: typings.breeze.breezeNs.EntityKey, k2: typings.breeze.breezeNs.EntityKey): Boolean = js.native
+  def equals(k1: typings.breeze.breeze.EntityKey, k2: typings.breeze.breeze.EntityKey): Boolean = js.native
 }
 

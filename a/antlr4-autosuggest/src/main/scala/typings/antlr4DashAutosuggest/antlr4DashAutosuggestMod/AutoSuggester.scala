@@ -1,5 +1,7 @@
 package typings.antlr4DashAutosuggest.antlr4DashAutosuggestMod
 
+import typings.antlr4.antlr4Mod.Lexer
+import typings.antlr4.antlr4Mod.Parser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,5 +17,12 @@ object AutoSuggester {
   
     __obj.asInstanceOf[AutoSuggester]
   }
+}
+
+@JSImport("antlr4-autosuggest", "autosuggester")
+@js.native
+object autosuggester extends js.Object {
+  def apply(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser]): AutoSuggester = js.native
+  def apply(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser], casePref: CasePreference): AutoSuggester = js.native
 }
 

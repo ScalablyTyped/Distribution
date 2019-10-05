@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "TouchDevice")
 @js.native
 class TouchDevice protected ()
-  extends typings.playcanvas.pcNs.TouchDevice {
+  extends typings.playcanvas.pc.TouchDevice {
   def this(element: Element) = this()
 }
 

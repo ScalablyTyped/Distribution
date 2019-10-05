@@ -35,3 +35,11 @@ object FunctionTypeParam {
   }
 }
 
+@JSImport("babel-types", "functionTypeParam")
+@js.native
+object functionTypeParam extends js.Object {
+  def apply(): FunctionTypeParam = js.native
+  def apply(name: Identifier): FunctionTypeParam = js.native
+  def apply(name: Identifier, typeAnnotation: FlowTypeAnnotation): FunctionTypeParam = js.native
+}
+

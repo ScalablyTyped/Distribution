@@ -28,12 +28,12 @@ object IClientPublishOptions {
   @scala.inline
   def apply(
     qos: QoS,
-    cbStorePut: StorePutCallback = null,
+    cbStorePut: () => Unit = null,
     dup: js.UndefOr[Boolean] = js.undefined,
     retain: js.UndefOr[Boolean] = js.undefined
   ): IClientPublishOptions = {
     val __obj = js.Dynamic.literal(qos = qos)
-    if (cbStorePut != null) __obj.updateDynamic("cbStorePut")(cbStorePut)
+    if (cbStorePut != null) __obj.updateDynamic("cbStorePut")(js.Any.fromFunction0(cbStorePut))
     if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup)
     if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
     __obj.asInstanceOf[IClientPublishOptions]

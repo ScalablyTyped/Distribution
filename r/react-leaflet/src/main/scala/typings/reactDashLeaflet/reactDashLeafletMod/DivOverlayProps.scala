@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object DivOverlayProps {
   @scala.inline
   def apply(
-    children: Children,
+    children: Children = null,
     className: String = null,
     leaflet: LeafletContext = null,
     offset: PointExpression = null,
@@ -27,7 +27,8 @@ object DivOverlayProps {
     pane: String = null,
     zoomAnimation: js.UndefOr[Boolean] = js.undefined
   ): DivOverlayProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

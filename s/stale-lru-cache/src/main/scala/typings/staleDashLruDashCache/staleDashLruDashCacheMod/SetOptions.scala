@@ -14,12 +14,12 @@ object SetOptions {
   @scala.inline
   def apply[K, V](
     maxAge: Int | Double = null,
-    revalidate: RevalidationCallback[K, V] = null,
+    revalidate: (K, /* callback */ OptionsCallback[K, V]) => Unit = null,
     staleWhileRevalidate: Int | Double = null
   ): SetOptions[K, V] = {
     val __obj = js.Dynamic.literal()
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (revalidate != null) __obj.updateDynamic("revalidate")(revalidate)
+    if (revalidate != null) __obj.updateDynamic("revalidate")(js.Any.fromFunction2(revalidate))
     if (staleWhileRevalidate != null) __obj.updateDynamic("staleWhileRevalidate")(staleWhileRevalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions[K, V]]
   }

@@ -1,6 +1,6 @@
 package typings.less
 
-import typings.less.LessNs.PluginManager
+import typings.less.Less.PluginManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

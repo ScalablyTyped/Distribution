@@ -1,8 +1,8 @@
 package typings.bootstrapDashGrowlDashIfightcrime
 
-import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrimeNs.AlignType
-import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrimeNs.OffsetPositionType
-import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrimeNs._AlertType
+import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrime.AlignType
+import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrime.OffsetPositionType
+import typings.bootstrapDashGrowlDashIfightcrime.BootstrapGrowlIfightcrime._AlertType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

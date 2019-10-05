@@ -1,8 +1,8 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.runtimeNs.SocketTcpPermission
-import typings.chromeDashApps.chromeNs.runtimeNs.SocketTcpServerPermission
-import typings.chromeDashApps.chromeNs.runtimeNs.SocketUdpPermission
+import typings.chromeDashApps.chrome.runtime.SocketTcpPermission
+import typings.chromeDashApps.chrome.runtime.SocketTcpServerPermission
+import typings.chromeDashApps.chrome.runtime.SocketUdpPermission
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

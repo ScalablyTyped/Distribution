@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafSizeConstraintSetMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.SizeConstraintSetSizeConstraint
+import typings.atPulumiAws.typesInputMod.waf.SizeConstraintSetSizeConstraint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

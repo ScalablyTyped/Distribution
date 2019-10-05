@@ -1,13 +1,13 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Store
+import typings.activexDashOutlook.Outlook.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CancelStore extends js.Object {
   var Cancel: Boolean
-  val Store: typings.activexDashOutlook.OutlookNs.Store
+  val Store: typings.activexDashOutlook.Outlook.Store
 }
 
 object Anon_CancelStore {

@@ -3,7 +3,7 @@ package typings.yogDashBigpipe.yogDashBigpipeMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Readable
 import typings.yogDashBigpipe.Anon_Key
-import typings.yogDashBigpipe.yogDashBigpipeMod.PageletNs.status
+import typings.yogDashBigpipe.yogDashBigpipeMod.Pagelet.status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

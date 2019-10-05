@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.resourcetimingbufferfull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,9 +70,9 @@ trait Performance extends EventTarget {
 
 @JSGlobal("Performance")
 @js.native
-class PerformanceCls () extends Performance
-
-@JSGlobal("Performance")
-@js.native
 object Performance extends Instantiable0[Performance]
+
+@JSGlobal("performance")
+@js.native
+object performance extends TopLevel[Performance]
 

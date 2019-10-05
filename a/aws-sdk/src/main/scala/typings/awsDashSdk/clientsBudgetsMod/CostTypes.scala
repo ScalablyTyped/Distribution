@@ -54,17 +54,17 @@ trait CostTypes extends js.Object {
 object CostTypes {
   @scala.inline
   def apply(
-    IncludeCredit: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeDiscount: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeOtherSubscription: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeRecurring: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeRefund: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeSubscription: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeSupport: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeTax: js.UndefOr[NullableBoolean] = js.undefined,
-    IncludeUpfront: js.UndefOr[NullableBoolean] = js.undefined,
-    UseAmortized: js.UndefOr[NullableBoolean] = js.undefined,
-    UseBlended: js.UndefOr[NullableBoolean] = js.undefined
+    IncludeCredit: js.UndefOr[Boolean] = js.undefined,
+    IncludeDiscount: js.UndefOr[Boolean] = js.undefined,
+    IncludeOtherSubscription: js.UndefOr[Boolean] = js.undefined,
+    IncludeRecurring: js.UndefOr[Boolean] = js.undefined,
+    IncludeRefund: js.UndefOr[Boolean] = js.undefined,
+    IncludeSubscription: js.UndefOr[Boolean] = js.undefined,
+    IncludeSupport: js.UndefOr[Boolean] = js.undefined,
+    IncludeTax: js.UndefOr[Boolean] = js.undefined,
+    IncludeUpfront: js.UndefOr[Boolean] = js.undefined,
+    UseAmortized: js.UndefOr[Boolean] = js.undefined,
+    UseBlended: js.UndefOr[Boolean] = js.undefined
   ): CostTypes = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(IncludeCredit)) __obj.updateDynamic("IncludeCredit")(IncludeCredit)

@@ -24,23 +24,25 @@ object GraphQLField {
   @scala.inline
   def apply[TSource, TContext, TArgs](
     args: js.Array[GraphQLArgument],
-    description: Maybe[String],
-    extensions: Maybe[Record[String, _]],
     name: String,
     `type`: GraphQLOutputType,
     astNode: Maybe[FieldDefinitionNode] = null,
     deprecationReason: Maybe[String] = null,
+    description: Maybe[String] = null,
+    extensions: Maybe[Record[String, _]] = null,
     isDeprecated: js.UndefOr[Boolean] = js.undefined,
-    resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
-    subscribe: GraphQLFieldResolver[TSource, TContext, TArgs] = null
+    resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
+    subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLField[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(args = args, description = description.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(args = args, name = name)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
+    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[GraphQLField[TSource, TContext, TArgs]]
   }
 }

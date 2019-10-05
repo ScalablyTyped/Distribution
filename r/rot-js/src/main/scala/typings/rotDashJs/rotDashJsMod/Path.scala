@@ -12,3 +12,14 @@ class Path protected () extends js.Object {
   def compute(fromX: Double, fromY: Double, callback: PathCallback): Unit = js.native
 }
 
+@JSImport("rot-js", "Path")
+@js.native
+object Path extends js.Object {
+  @js.native
+  class AStar () extends Path
+  
+  @js.native
+  class Dijkstra () extends Path
+  
+}
+

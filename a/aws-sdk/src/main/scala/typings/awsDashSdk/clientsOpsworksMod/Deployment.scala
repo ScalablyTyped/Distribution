@@ -65,7 +65,7 @@ object Deployment {
     CreatedAt: DateTime = null,
     CustomJson: String = null,
     DeploymentId: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
+    Duration: Int | scala.Double = null,
     IamUserArn: String = null,
     InstanceIds: Strings = null,
     StackId: String = null,
@@ -79,7 +79,7 @@ object Deployment {
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (CustomJson != null) __obj.updateDynamic("CustomJson")(CustomJson)
     if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId)
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
     if (IamUserArn != null) __obj.updateDynamic("IamUserArn")(IamUserArn)
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds)
     if (StackId != null) __obj.updateDynamic("StackId")(StackId)

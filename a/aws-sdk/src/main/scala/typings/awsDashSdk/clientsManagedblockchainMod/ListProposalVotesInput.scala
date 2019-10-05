@@ -28,11 +28,11 @@ object ListProposalVotesInput {
   def apply(
     NetworkId: ResourceIdString,
     ProposalId: ResourceIdString,
-    MaxResults: js.UndefOr[ProposalListMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null
   ): ListProposalVotesInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId, ProposalId = ProposalId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListProposalVotesInput]
   }

@@ -1,9 +1,9 @@
 package typings.w3cDashImageDashCapture
 
-import typings.w3cDashImageDashCapture.W3CNs.ConstrainPoint2D
-import typings.webrtc.W3CNs.ConstrainBoolean
-import typings.webrtc.W3CNs.ConstrainDouble
-import typings.webrtc.W3CNs.ConstrainString
+import typings.w3cDashImageDashCapture.W3C.ConstrainPoint2D
+import typings.webrtc.W3C.ConstrainBoolean
+import typings.webrtc.W3C.ConstrainDouble
+import typings.webrtc.W3C.ConstrainString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintRuleMod
 
+import typings.std.IterableIterator
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,10 +23,14 @@ trait ReportDescriptorBase[TMessageIds /* <: String */] extends js.Object {
 
 object ReportDescriptorBase {
   @scala.inline
-  def apply[TMessageIds /* <: String */](messageId: TMessageIds, data: Record[String, _] = null, fix: ReportFixFunction = null): ReportDescriptorBase[TMessageIds] = {
+  def apply[TMessageIds /* <: String */](
+    messageId: TMessageIds,
+    data: Record[String, _] = null,
+    fix: /* fixer */ RuleFixer => Null | RuleFix | js.Array[RuleFix] | IterableIterator[RuleFix] = null
+  ): ReportDescriptorBase[TMessageIds] = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
-    if (fix != null) __obj.updateDynamic("fix")(fix)
+    if (fix != null) __obj.updateDynamic("fix")(js.Any.fromFunction1(fix))
     __obj.asInstanceOf[ReportDescriptorBase[TMessageIds]]
   }
 }

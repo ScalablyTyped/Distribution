@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/min", JSImport.Namespace)
 @js.native
 object minMod extends js.Object {
-  def default(datesArray: js.Array[Date | Double]): Date = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(datesArray: js.Array[Date | Double]): Date = js.native
+  }
+  
 }
 

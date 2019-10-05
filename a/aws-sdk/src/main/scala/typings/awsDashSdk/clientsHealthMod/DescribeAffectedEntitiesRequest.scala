@@ -28,12 +28,12 @@ object DescribeAffectedEntitiesRequest {
   def apply(
     filter: EntityFilter,
     locale: locale = null,
-    maxResults: js.UndefOr[maxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: nextToken = null
   ): DescribeAffectedEntitiesRequest = {
     val __obj = js.Dynamic.literal(filter = filter)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[DescribeAffectedEntitiesRequest]
   }

@@ -1,5 +1,6 @@
 package typings.xmldom.xmldomMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,4 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class DOMImplementation ()
   extends typings.std.DOMImplementation
+
+@JSImport("xmldom", "DOMImplementation")
+@js.native
+object DOMImplementation extends TopLevel[DOMImplementationStatic]
 

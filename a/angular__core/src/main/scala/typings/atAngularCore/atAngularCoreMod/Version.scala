@@ -1,5 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,4 +14,8 @@ class Version protected () extends js.Object {
   val minor: String = js.native
   val patch: String = js.native
 }
+
+@JSImport("@angular/core", "VERSION")
+@js.native
+object VERSION extends TopLevel[Version]
 

@@ -1,7 +1,7 @@
 package typings.atBlueprintjsSelect.libEsmComponentsQueryDashListQueryListMod
 
 import typings.atBlueprintjsSelect.libEsmCommonListItemsPropsMod.IListItemsProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js

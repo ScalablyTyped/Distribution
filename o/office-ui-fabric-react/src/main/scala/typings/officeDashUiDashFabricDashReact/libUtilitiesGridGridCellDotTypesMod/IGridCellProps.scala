@@ -3,7 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridCellDotTypes
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonBaseButtonDotClassNamesMod.IButtonClassNames
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLButtonElement

@@ -1,5 +1,6 @@
 package typings.xssDashFilters
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,4 +77,8 @@ object XSSFilters {
     __obj.asInstanceOf[XSSFilters]
   }
 }
+
+@JSGlobal("xssFilters")
+@js.native
+object xssFilters extends TopLevel[XSSFilters]
 

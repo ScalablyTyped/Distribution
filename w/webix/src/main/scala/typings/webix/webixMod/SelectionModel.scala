@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,8 @@ trait SelectionModel extends js.Object {
   def unselect(id: String): Unit = js.native
   def unselectAll(): Unit = js.native
 }
+
+@JSImport("webix", "SelectionModel")
+@js.native
+object SelectionModel extends TopLevel[SelectionModel]
 

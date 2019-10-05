@@ -17,12 +17,9 @@ trait RetentionPeriod extends js.Object {
 
 object RetentionPeriod {
   @scala.inline
-  def apply(
-    numberOfDays: js.UndefOr[RetentionPeriodInDays] = js.undefined,
-    unlimited: js.UndefOr[UnlimitedRetentionPeriod] = js.undefined
-  ): RetentionPeriod = {
+  def apply(numberOfDays: Int | Double = null, unlimited: js.UndefOr[Boolean] = js.undefined): RetentionPeriod = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(numberOfDays)) __obj.updateDynamic("numberOfDays")(numberOfDays)
+    if (numberOfDays != null) __obj.updateDynamic("numberOfDays")(numberOfDays.asInstanceOf[js.Any])
     if (!js.isUndefined(unlimited)) __obj.updateDynamic("unlimited")(unlimited)
     __obj.asInstanceOf[RetentionPeriod]
   }

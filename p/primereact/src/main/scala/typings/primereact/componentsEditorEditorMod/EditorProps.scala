@@ -2,7 +2,7 @@ package typings.primereact.componentsEditorEditorMod
 
 import typings.primereact.Anon_DeltaHtmlValue
 import typings.primereact.Anon_OldRange
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

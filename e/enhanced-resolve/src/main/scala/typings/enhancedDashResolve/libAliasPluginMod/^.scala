@@ -1,6 +1,6 @@
 package typings.enhancedDashResolve.libAliasPluginMod
 
-import typings.enhancedDashResolve.enhancedDashResolveMod.ResolverFactoryNs.AliasItem
+import typings.enhancedDashResolve.enhancedDashResolveMod.ResolverFactory.AliasItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

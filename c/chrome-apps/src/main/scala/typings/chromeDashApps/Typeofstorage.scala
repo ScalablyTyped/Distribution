@@ -1,12 +1,12 @@
 package typings.chromeDashApps
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.storageNs.LocalStorageArea
-import typings.chromeDashApps.chromeNs.storageNs.ManagedStorageArea
-import typings.chromeDashApps.chromeNs.storageNs.StorageAreas
-import typings.chromeDashApps.chromeNs.storageNs.StorageChange
-import typings.chromeDashApps.chromeNs.storageNs.SyncStorageArea
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.storage.LocalStorageArea
+import typings.chromeDashApps.chrome.storage.ManagedStorageArea
+import typings.chromeDashApps.chrome.storage.StorageAreas
+import typings.chromeDashApps.chrome.storage.StorageChange
+import typings.chromeDashApps.chrome.storage.SyncStorageArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

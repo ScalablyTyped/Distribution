@@ -1,7 +1,7 @@
 package typings.d3pie
 
-import typings.d3pie.d3pieNs.ID3PieLabelsOptions
-import typings.d3pie.d3pieNs.ID3PieStyleOptions
+import typings.d3pie.d3pie.ID3PieLabelsOptions
+import typings.d3pie.d3pie.ID3PieStyleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

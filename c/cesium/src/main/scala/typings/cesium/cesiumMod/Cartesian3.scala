@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.cesium.cesiumMod.Property because Inheritance from two classes. Inlined isConstant, definitionChanged, getValue, getValue, equals, equals
 - typings.cesium.cesiumMod.PositionProperty because Inheritance from two classes. Inlined referenceFrame, getValueInReferenceFrame, getValueInReferenceFrame */ @JSImport("cesium", "Cartesian3")
 @js.native
 class Cartesian3 () extends Packable {
@@ -19,13 +20,17 @@ class Cartesian3 () extends Packable {
   var z: Double = js.native
   def clone(result: Cartesian3): Cartesian3 = js.native
   def equals(): Boolean = js.native
+  def equals(other: Property): Boolean = js.native
   def equals(right: Cartesian3): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
   def getValue(time: JulianDate): Cartesian3 = js.native
+  def getValue(time: JulianDate, result: js.Any): js.Any = js.native
   def getValue(time: JulianDate, result: Cartesian3): Cartesian3 = js.native
   def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame): Cartesian3 = js.native
   def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame, result: Cartesian3): Cartesian3 = js.native
+  @JSName("getValue")
+  def getValue_Any(time: JulianDate): js.Any = js.native
 }
 
 /* static members */

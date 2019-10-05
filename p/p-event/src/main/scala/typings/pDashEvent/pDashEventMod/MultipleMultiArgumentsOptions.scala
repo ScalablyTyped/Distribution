@@ -15,13 +15,13 @@ object MultipleMultiArgumentsOptions {
   def apply[EmittedType /* <: js.Array[_] */](
     count: Double,
     multiArgs: `true`,
-    filter: FilterFunction[EmittedType] = null,
+    filter: EmittedType => Boolean = null,
     rejectionEvents: js.Array[String | js.Symbol] = null,
     resolveImmediately: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): MultipleMultiArgumentsOptions[EmittedType] = {
     val __obj = js.Dynamic.literal(count = count, multiArgs = multiArgs)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
     if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

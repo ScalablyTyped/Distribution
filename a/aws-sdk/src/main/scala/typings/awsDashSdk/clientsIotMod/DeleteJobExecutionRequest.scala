@@ -29,7 +29,7 @@ object DeleteJobExecutionRequest {
     executionNumber: ExecutionNumber,
     jobId: JobId,
     thingName: ThingName,
-    force: js.UndefOr[ForceFlag] = js.undefined
+    force: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteJobExecutionRequest = {
     val __obj = js.Dynamic.literal(executionNumber = executionNumber, jobId = jobId, thingName = thingName)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)

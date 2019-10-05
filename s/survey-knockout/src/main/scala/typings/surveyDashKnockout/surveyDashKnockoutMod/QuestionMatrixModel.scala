@@ -32,11 +32,11 @@ class QuestionMatrixModel protected ()
   /* CompleteClass */
   override def getColumns(): js.Array[_] = js.native
   def getDefaultCellText(column: js.Any): String = js.native
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override def getLocale(): String = js.native
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override def getMarkdownHtml(text: String): String = js.native
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   /* CompleteClass */
   override def getRows(): js.Array[_] = js.native

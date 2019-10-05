@@ -2,6 +2,7 @@ package typings.winston.winstonMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,5 @@ trait Container
 
 @JSImport("winston", "Container")
 @js.native
-class ContainerCls () extends Container {
-  def this(options: LoggerOptions) = this()
-}
+object Container extends TopLevel[Container]
 

@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation._
   * @param position [optional] - the center position at which the raster item is placed
   */
 class Raster ()
-  extends typings.paper.paperNs.Raster {
+  extends typings.paper.paper.Raster {
   def this(config: js.Any) = this()
   def this(source: String) = this()
   def this(source: HTMLCanvasElement) = this()
   def this(source: HTMLImageElement) = this()
-  def this(source: String, position: typings.paper.paperNs.Point) = this()
-  def this(source: HTMLCanvasElement, position: typings.paper.paperNs.Point) = this()
-  def this(source: HTMLImageElement, position: typings.paper.paperNs.Point) = this()
+  def this(source: String, position: typings.paper.paper.Point) = this()
+  def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
+  def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
 }
 

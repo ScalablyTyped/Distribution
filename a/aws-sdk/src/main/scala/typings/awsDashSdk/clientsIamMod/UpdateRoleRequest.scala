@@ -24,11 +24,11 @@ object UpdateRoleRequest {
   def apply(
     RoleName: roleNameType,
     Description: roleDescriptionType = null,
-    MaxSessionDuration: js.UndefOr[roleMaxSessionDurationType] = js.undefined
+    MaxSessionDuration: Int | Double = null
   ): UpdateRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration)
+    if (MaxSessionDuration != null) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleRequest]
   }
 }

@@ -17,9 +17,9 @@ trait DetectModerationLabelsRequest extends js.Object {
 
 object DetectModerationLabelsRequest {
   @scala.inline
-  def apply(Image: Image, MinConfidence: js.UndefOr[Percent] = js.undefined): DetectModerationLabelsRequest = {
+  def apply(Image: Image, MinConfidence: Int | Double = null): DetectModerationLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image)
-    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence)
+    if (MinConfidence != null) __obj.updateDynamic("MinConfidence")(MinConfidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectModerationLabelsRequest]
   }
 }

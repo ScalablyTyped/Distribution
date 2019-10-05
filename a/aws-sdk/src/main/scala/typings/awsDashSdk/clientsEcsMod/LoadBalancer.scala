@@ -27,13 +27,13 @@ object LoadBalancer {
   @scala.inline
   def apply(
     containerName: String = null,
-    containerPort: js.UndefOr[BoxedInteger] = js.undefined,
+    containerPort: Int | scala.Double = null,
     loadBalancerName: String = null,
     targetGroupArn: String = null
   ): LoadBalancer = {
     val __obj = js.Dynamic.literal()
     if (containerName != null) __obj.updateDynamic("containerName")(containerName)
-    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort)
+    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
     if (loadBalancerName != null) __obj.updateDynamic("loadBalancerName")(loadBalancerName)
     if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn)
     __obj.asInstanceOf[LoadBalancer]

@@ -73,7 +73,7 @@ object GetPatchBaselineResult {
     ApprovalRules: PatchRuleGroup = null,
     ApprovedPatches: PatchIdList = null,
     ApprovedPatchesComplianceLevel: PatchComplianceLevel = null,
-    ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined,
+    ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined,
     BaselineId: BaselineId = null,
     CreatedDate: DateTime = null,
     Description: BaselineDescription = null,

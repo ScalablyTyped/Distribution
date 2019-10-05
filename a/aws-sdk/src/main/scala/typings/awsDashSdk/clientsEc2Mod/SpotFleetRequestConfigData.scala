@@ -103,20 +103,20 @@ object SpotFleetRequestConfigData {
     AllocationStrategy: AllocationStrategy = null,
     ClientToken: String = null,
     ExcessCapacityTerminationPolicy: ExcessCapacityTerminationPolicy = null,
-    FulfilledCapacity: js.UndefOr[Double] = js.undefined,
+    FulfilledCapacity: Int | scala.Double = null,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
-    InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined,
+    InstancePoolsToUseCount: Int | scala.Double = null,
     LaunchSpecifications: LaunchSpecsList = null,
     LaunchTemplateConfigs: LaunchTemplateConfigList = null,
     LoadBalancersConfig: LoadBalancersConfig = null,
     OnDemandAllocationStrategy: OnDemandAllocationStrategy = null,
-    OnDemandFulfilledCapacity: js.UndefOr[Double] = js.undefined,
+    OnDemandFulfilledCapacity: Int | scala.Double = null,
     OnDemandMaxTotalPrice: String = null,
-    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
-    ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined,
+    OnDemandTargetCapacity: Int | scala.Double = null,
+    ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined,
     SpotMaxTotalPrice: String = null,
     SpotPrice: String = null,
-    TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined,
+    TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined,
     Type: FleetType = null,
     ValidFrom: DateTime = null,
     ValidUntil: DateTime = null
@@ -125,16 +125,16 @@ object SpotFleetRequestConfigData {
     if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(FulfilledCapacity)) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity)
+    if (FulfilledCapacity != null) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancePoolsToUseCount)) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount)
+    if (InstancePoolsToUseCount != null) __obj.updateDynamic("InstancePoolsToUseCount")(InstancePoolsToUseCount.asInstanceOf[js.Any])
     if (LaunchSpecifications != null) __obj.updateDynamic("LaunchSpecifications")(LaunchSpecifications)
     if (LaunchTemplateConfigs != null) __obj.updateDynamic("LaunchTemplateConfigs")(LaunchTemplateConfigs)
     if (LoadBalancersConfig != null) __obj.updateDynamic("LoadBalancersConfig")(LoadBalancersConfig)
     if (OnDemandAllocationStrategy != null) __obj.updateDynamic("OnDemandAllocationStrategy")(OnDemandAllocationStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnDemandFulfilledCapacity)) __obj.updateDynamic("OnDemandFulfilledCapacity")(OnDemandFulfilledCapacity)
+    if (OnDemandFulfilledCapacity != null) __obj.updateDynamic("OnDemandFulfilledCapacity")(OnDemandFulfilledCapacity.asInstanceOf[js.Any])
     if (OnDemandMaxTotalPrice != null) __obj.updateDynamic("OnDemandMaxTotalPrice")(OnDemandMaxTotalPrice)
-    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity)
+    if (OnDemandTargetCapacity != null) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.asInstanceOf[js.Any])
     if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances)
     if (SpotMaxTotalPrice != null) __obj.updateDynamic("SpotMaxTotalPrice")(SpotMaxTotalPrice)
     if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice)

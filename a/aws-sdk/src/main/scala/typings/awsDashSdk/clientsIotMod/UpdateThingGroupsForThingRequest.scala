@@ -26,7 +26,7 @@ trait UpdateThingGroupsForThingRequest extends js.Object {
 object UpdateThingGroupsForThingRequest {
   @scala.inline
   def apply(
-    overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined,
+    overrideDynamicGroups: js.UndefOr[scala.Boolean] = js.undefined,
     thingGroupsToAdd: ThingGroupList = null,
     thingGroupsToRemove: ThingGroupList = null,
     thingName: ThingName = null

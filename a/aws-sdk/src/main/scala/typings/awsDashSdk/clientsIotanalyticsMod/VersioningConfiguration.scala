@@ -17,12 +17,9 @@ trait VersioningConfiguration extends js.Object {
 
 object VersioningConfiguration {
   @scala.inline
-  def apply(
-    maxVersions: js.UndefOr[MaxVersions] = js.undefined,
-    unlimited: js.UndefOr[UnlimitedVersioning] = js.undefined
-  ): VersioningConfiguration = {
+  def apply(maxVersions: Int | Double = null, unlimited: js.UndefOr[Boolean] = js.undefined): VersioningConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxVersions)) __obj.updateDynamic("maxVersions")(maxVersions)
+    if (maxVersions != null) __obj.updateDynamic("maxVersions")(maxVersions.asInstanceOf[js.Any])
     if (!js.isUndefined(unlimited)) __obj.updateDynamic("unlimited")(unlimited)
     __obj.asInstanceOf[VersioningConfiguration]
   }

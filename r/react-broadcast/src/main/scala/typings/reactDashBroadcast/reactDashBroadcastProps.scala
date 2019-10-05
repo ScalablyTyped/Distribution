@@ -1,16 +1,16 @@
 package typings.reactDashBroadcast
 
-import typings.reactDashBroadcast.reactDashBroadcastMod.BroadcastNs.Props
+import typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashBroadcastProps {
   @scala.inline
-  def BroadcastProps: Props.type = typings.reactDashBroadcast.reactDashBroadcastMod.BroadcastNs.Props
-  type BroadcastProps[T] = Props[T]
+  def Broadcast_Props: Props.type = typings.reactDashBroadcast.reactDashBroadcastMod.Broadcast.Props
+  type Broadcast_Props[T] = Props[T]
   @scala.inline
-  def SubscriberProps: typings.reactDashBroadcast.reactDashBroadcastMod.SubscriberNs.Props.type = typings.reactDashBroadcast.reactDashBroadcastMod.SubscriberNs.Props
-  type SubscriberProps[T] = typings.reactDashBroadcast.reactDashBroadcastMod.SubscriberNs.Props[T]
+  def Subscriber_Props: typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber.Props.type = typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber.Props
+  type Subscriber_Props[T] = typings.reactDashBroadcast.reactDashBroadcastMod.Subscriber.Props[T]
 }
 

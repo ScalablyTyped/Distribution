@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsViewAnimationMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewAnimation
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewAnimationProperties
+import typings.arcgisDashJsDashApi.__esri.ViewAnimation
+import typings.arcgisDashJsDashApi.__esri.ViewAnimationProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

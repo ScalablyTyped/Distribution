@@ -1,7 +1,7 @@
 package typings.atPulumiAws.neptuneClusterParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.neptuneNs.ClusterParameterGroupParameter
+import typings.atPulumiAws.typesInputMod.neptune.ClusterParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

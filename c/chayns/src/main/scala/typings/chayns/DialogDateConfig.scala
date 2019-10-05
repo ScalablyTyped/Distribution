@@ -1,6 +1,6 @@
 package typings.chayns
 
-import typings.chayns.chaynsNs.dialogNs.dateType
+import typings.chayns.chayns.dialog.dateType
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 // chayns.dialog.date()
 trait DialogDateConfig extends js.Object {
-  var dateType: typings.chayns.chaynsNs.dialogNs.dateType
+  var dateType: typings.chayns.chayns.dialog.dateType
   var maxDate: js.UndefOr[Date] = js.undefined
   var minDate: js.UndefOr[Date] = js.undefined
   var preSelect: js.UndefOr[Date] = js.undefined

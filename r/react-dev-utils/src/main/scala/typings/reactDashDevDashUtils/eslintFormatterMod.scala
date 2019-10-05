@@ -1,6 +1,6 @@
 package typings.reactDashDevDashUtils
 
-import typings.eslint.eslintMod.CLIEngineNs.LintResult
+import typings.eslint.eslintMod.CLIEngine.LintResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

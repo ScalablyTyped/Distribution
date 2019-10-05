@@ -1,6 +1,6 @@
 package typings.webgme
 
-import typings.webgme.GmeCommonNs.Path
+import typings.webgme.GmeCommon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

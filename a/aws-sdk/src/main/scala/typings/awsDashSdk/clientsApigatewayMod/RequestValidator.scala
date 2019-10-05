@@ -28,8 +28,8 @@ object RequestValidator {
   def apply(
     id: String = null,
     name: String = null,
-    validateRequestBody: js.UndefOr[Boolean] = js.undefined,
-    validateRequestParameters: js.UndefOr[Boolean] = js.undefined
+    validateRequestBody: js.UndefOr[scala.Boolean] = js.undefined,
+    validateRequestParameters: js.UndefOr[scala.Boolean] = js.undefined
   ): RequestValidator = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id)

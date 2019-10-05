@@ -1,5 +1,6 @@
 package typings.promiseDashFtp.promiseDashFtpMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.promiseDashFtp.promiseDashFtpStrings.`Bad sequence of commands`
 import typings.promiseDashFtp.promiseDashFtpStrings.`Can_quotet open data connection`
 import typings.promiseDashFtp.promiseDashFtpStrings.`Command not implemented for that parameter`
@@ -41,46 +42,7 @@ trait ERROR_CODES extends js.Object {
   var `553`: `Requested action not taken / File name not allowed`
 }
 
-object ERROR_CODES {
-  @scala.inline
-  def apply(
-    `421`: `Service not available, closing control connection`,
-    `425`: `Can_quotet open data connection`,
-    `426`: `Connection closed, transfer aborted`,
-    `450`: `Requested file action not taken / File unavailable (eDOTgDOT, file busy)`,
-    `451`: `Requested action aborted: local error in processing`,
-    `452`: `Requested action not taken / Insufficient storage space in system`,
-    `500`: `Syntax error / Command unrecognized`,
-    `501`: `Syntax error in parameters or arguments`,
-    `502`: `Command not implemented`,
-    `503`: `Bad sequence of commands`,
-    `504`: `Command not implemented for that parameter`,
-    `530`: `Not logged in`,
-    `532`: `Need account for storing files`,
-    `550`: `Requested action not taken / File unavailable (eDOTgDOT, file not found, no access)`,
-    `551`: `Requested action aborted: page type unknown`,
-    `552`: `Requested file action aborted / Exceeded storage allocation (for current directory or dataset)`,
-    `553`: `Requested action not taken / File name not allowed`
-  ): ERROR_CODES = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("421")(`421`)
-    __obj.updateDynamic("425")(`425`)
-    __obj.updateDynamic("426")(`426`)
-    __obj.updateDynamic("450")(`450`)
-    __obj.updateDynamic("451")(`451`)
-    __obj.updateDynamic("452")(`452`)
-    __obj.updateDynamic("500")(`500`)
-    __obj.updateDynamic("501")(`501`)
-    __obj.updateDynamic("502")(`502`)
-    __obj.updateDynamic("503")(`503`)
-    __obj.updateDynamic("504")(`504`)
-    __obj.updateDynamic("530")(`530`)
-    __obj.updateDynamic("532")(`532`)
-    __obj.updateDynamic("550")(`550`)
-    __obj.updateDynamic("551")(`551`)
-    __obj.updateDynamic("552")(`552`)
-    __obj.updateDynamic("553")(`553`)
-    __obj.asInstanceOf[ERROR_CODES]
-  }
-}
+@JSImport("promise-ftp", "ERROR_CODES")
+@js.native
+object ERROR_CODES extends TopLevel[ERROR_CODES]
 

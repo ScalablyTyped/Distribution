@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueJobMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.glueNs.JobCommand
-import typings.atPulumiAws.typesOutputMod.glueNs.JobExecutionProperty
+import typings.atPulumiAws.typesOutputMod.glue.JobCommand
+import typings.atPulumiAws.typesOutputMod.glue.JobExecutionProperty
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

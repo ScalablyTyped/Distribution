@@ -274,7 +274,7 @@ trait TextInputMaskProps
 object TextInputMaskProps {
   @scala.inline
   def apply(
-    onChangeText: onChangeTextCallback,
+    onChangeText: (/* formatted */ String, /* extracted */ js.UndefOr[String]) => Unit,
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: typings.reactDashNative.reactDashNativeStrings.none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
@@ -377,7 +377,7 @@ object TextInputMaskProps {
     underlineColorAndroid: String = null,
     value: String = null
   ): TextInputMaskProps = {
-    val __obj = js.Dynamic.literal(onChangeText = onChangeText)
+    val __obj = js.Dynamic.literal(onChangeText = js.Any.fromFunction2(onChangeText))
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

@@ -33,12 +33,12 @@ object DescribeCommentsRequest {
     DocumentId: ResourceIdType,
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
+    Limit: Int | Double = null,
     Marker: MarkerType = null
   ): DescribeCommentsRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId, VersionId = VersionId)
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[DescribeCommentsRequest]
   }

@@ -23,9 +23,9 @@ object styleConfig {
   @scala.inline
   def apply(
     headingStyle: underline | linebreak | hashify = null,
-    imgProcess: imgProcess = null,
+    imgProcess: (/* src */ String, /* alt */ String) => String = null,
     keepNbsps: js.UndefOr[Boolean] = js.undefined,
-    linkProcess: linkProcess = null,
+    linkProcess: (/* href */ String, /* linkText */ String) => String = null,
     listIndentionTabs: Int | Double = null,
     listStyle: indentation | linebreak = null,
     oIndentionChar: String = null,
@@ -33,9 +33,9 @@ object styleConfig {
   ): styleConfig = {
     val __obj = js.Dynamic.literal()
     if (headingStyle != null) __obj.updateDynamic("headingStyle")(headingStyle.asInstanceOf[js.Any])
-    if (imgProcess != null) __obj.updateDynamic("imgProcess")(imgProcess)
+    if (imgProcess != null) __obj.updateDynamic("imgProcess")(js.Any.fromFunction2(imgProcess))
     if (!js.isUndefined(keepNbsps)) __obj.updateDynamic("keepNbsps")(keepNbsps)
-    if (linkProcess != null) __obj.updateDynamic("linkProcess")(linkProcess)
+    if (linkProcess != null) __obj.updateDynamic("linkProcess")(js.Any.fromFunction2(linkProcess))
     if (listIndentionTabs != null) __obj.updateDynamic("listIndentionTabs")(listIndentionTabs.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (oIndentionChar != null) __obj.updateDynamic("oIndentionChar")(oIndentionChar)

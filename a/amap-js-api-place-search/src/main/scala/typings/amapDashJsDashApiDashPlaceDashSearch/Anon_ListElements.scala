@@ -1,7 +1,7 @@
 package typings.amapDashJsDashApiDashPlaceDashSearch
 
-import typings.amapDashJsDashApi.AMapNs.Marker
-import typings.amapDashJsDashApiDashPlaceDashSearch.AMapNs.PlaceSearchNs.SelectChangeEventData
+import typings.amapDashJsDashApi.AMap.Marker
+import typings.amapDashJsDashApiDashPlaceDashSearch.AMap.PlaceSearch.SelectChangeEventData
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

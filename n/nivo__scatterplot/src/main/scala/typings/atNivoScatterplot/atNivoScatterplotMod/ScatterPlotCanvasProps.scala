@@ -6,6 +6,10 @@ import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CssMixBlendMode
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.ReactNode
+import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,19 +38,19 @@ object ScatterPlotCanvasProps {
     legends: js.Array[LegendProps] = null,
     margin: Box = null,
     nodeSize: Double | DerivedDatumProp[Double] | DynamicSizeSpec = null,
-    onClick: MouseHandler = null,
-    onMouseEnter: MouseHandler = null,
-    onMouseLeave: MouseHandler = null,
-    onMouseMove: MouseHandler = null,
+    onClick: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseMove: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     pixelRatio: Int | Double = null,
-    renderNode: NodeCanvasComponent = null,
+    renderNode: (/* ctx */ CanvasRenderingContext2D, /* props */ NodeProps) => Unit = null,
     theme: Theme = null,
-    tooltip: CustomTooltip = null,
+    tooltip: /* hasNode */ js.Any => ReactNode = null,
     useMesh: js.UndefOr[Boolean] = js.undefined,
     xFormat: String | ValueFormatter = null,
-    xScale: Scale = null,
+    xScale: /* value */ Value => Double = null,
     yFormat: String | ValueFormatter = null,
-    yScale: Scale = null
+    yScale: /* value */ Value => Double = null
   ): ScatterPlotCanvasProps = {
     val __obj = js.Dynamic.literal(data = data)
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
@@ -63,19 +67,19 @@ object ScatterPlotCanvasProps {
     if (legends != null) __obj.updateDynamic("legends")(legends)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (renderNode != null) __obj.updateDynamic("renderNode")(renderNode)
+    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction2(renderNode))
     if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(js.Any.fromFunction1(tooltip))
     if (!js.isUndefined(useMesh)) __obj.updateDynamic("useMesh")(useMesh)
     if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat.asInstanceOf[js.Any])
-    if (xScale != null) __obj.updateDynamic("xScale")(xScale)
+    if (xScale != null) __obj.updateDynamic("xScale")(js.Any.fromFunction1(xScale))
     if (yFormat != null) __obj.updateDynamic("yFormat")(yFormat.asInstanceOf[js.Any])
-    if (yScale != null) __obj.updateDynamic("yScale")(yScale)
+    if (yScale != null) __obj.updateDynamic("yScale")(js.Any.fromFunction1(yScale))
     __obj.asInstanceOf[ScatterPlotCanvasProps]
   }
 }

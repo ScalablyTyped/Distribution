@@ -1,6 +1,6 @@
 package typings.pouchdbDashCore
 
-import typings.pouchdbDashCore.PouchDBNs.CoreNs.GetMeta
+import typings.pouchdbDashCore.PouchDB.Core.GetMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

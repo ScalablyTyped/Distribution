@@ -1,7 +1,7 @@
 package typings.rmcDashCalendar.esCalendarHeaderMod
 
 import typings.react.reactMod.ReactNode
-import typings.rmcDashCalendar.esDateDataTypesMod.ModelsNs.Locale
+import typings.rmcDashCalendar.esDateDataTypesMod.Models.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

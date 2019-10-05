@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -13,4 +14,8 @@ class default protected ()
   def this(props: MessageProps) = this()
   def this(props: MessageProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react/dist/commonjs/collections/Message/Message", JSImport.Default)
+@js.native
+object default extends TopLevel[MessageComponent]
 

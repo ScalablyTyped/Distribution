@@ -1,12 +1,12 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFACLMode
-import typings.mfiles.MFilesNs.MFAuthType
-import typings.mfiles.MFilesNs.MFObjectAccess
-import typings.mfiles.MFilesNs.MFObjectTypeAccess
-import typings.mfiles.MFilesNs.MFProductMode
-import typings.mfiles.MFilesNs.MFPropertyDefAccess
-import typings.mfiles.MFilesNs.MFVaultAccess
+import typings.mfiles.MFiles.MFACLMode
+import typings.mfiles.MFiles.MFAuthType
+import typings.mfiles.MFiles.MFObjectAccess
+import typings.mfiles.MFiles.MFObjectTypeAccess
+import typings.mfiles.MFiles.MFProductMode
+import typings.mfiles.MFiles.MFPropertyDefAccess
+import typings.mfiles.MFiles.MFVaultAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

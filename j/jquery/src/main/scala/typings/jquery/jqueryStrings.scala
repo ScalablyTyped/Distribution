@@ -1,9 +1,9 @@
 package typings.jquery
 
-import typings.jquery.JQueryNs.AjaxNs.ErrorTextStatus
-import typings.jquery.JQueryNs.AjaxNs.SuccessTextStatus
-import typings.jquery.JQueryNs._Duration
-import typings.jquery.JQueryNs.__Falsy
+import typings.jquery.JQuery.Ajax.ErrorTextStatus
+import typings.jquery.JQuery.Ajax.SuccessTextStatus
+import typings.jquery.JQuery._Duration
+import typings.jquery.JQuery.__Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

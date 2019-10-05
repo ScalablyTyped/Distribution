@@ -31,16 +31,16 @@ object ModifyCapacityReservationRequest {
   @scala.inline
   def apply(
     CapacityReservationId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EndDate: DateTime = null,
     EndDateType: EndDateType = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined
+    InstanceCount: Int | scala.Double = null
   ): ModifyCapacityReservationRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate)
     if (EndDateType != null) __obj.updateDynamic("EndDateType")(EndDateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCapacityReservationRequest]
   }
 }

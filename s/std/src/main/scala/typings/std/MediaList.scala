@@ -20,9 +20,5 @@ trait MediaList
 
 @JSGlobal("MediaList")
 @js.native
-class MediaListCls () extends MediaList
-
-@JSGlobal("MediaList")
-@js.native
 object MediaList extends Instantiable0[MediaList]
 

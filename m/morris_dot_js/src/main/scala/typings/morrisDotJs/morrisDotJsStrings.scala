@@ -1,7 +1,7 @@
 package typings.morrisDotJs
 
-import typings.morrisDotJs.morrisNs.AutoAlways
-import typings.morrisDotJs.morrisNs.Interval
+import typings.morrisDotJs.morris.AutoAlways
+import typings.morrisDotJs.morris.Interval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

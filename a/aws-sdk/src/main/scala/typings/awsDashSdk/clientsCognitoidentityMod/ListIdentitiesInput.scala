@@ -28,7 +28,7 @@ object ListIdentitiesInput {
   def apply(
     IdentityPoolId: IdentityPoolId,
     MaxResults: QueryLimit,
-    HideDisabled: js.UndefOr[HideDisabled] = js.undefined,
+    HideDisabled: js.UndefOr[Boolean] = js.undefined,
     NextToken: PaginationKey = null
   ): ListIdentitiesInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId, MaxResults = MaxResults)

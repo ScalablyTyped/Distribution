@@ -17,9 +17,9 @@ trait MapIterationEventDetails extends js.Object {
 
 object MapIterationEventDetails {
   @scala.inline
-  def apply(index: js.UndefOr[UnsignedInteger] = js.undefined, name: Name = null): MapIterationEventDetails = {
+  def apply(index: Int | Double = null, name: Name = null): MapIterationEventDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[MapIterationEventDetails]
   }

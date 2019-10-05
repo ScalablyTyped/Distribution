@@ -1,5 +1,6 @@
 package typings.restifyDashPlugins.restifyDashPluginsMod
 
+import typings.restify.restifyMod.RequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,5 +22,12 @@ object RequestLogger {
     if (serializers != null) __obj.updateDynamic("serializers")(serializers)
     __obj.asInstanceOf[RequestLogger]
   }
+}
+
+@JSImport("restify-plugins", "requestLogger")
+@js.native
+object requestLogger extends js.Object {
+  def apply(): RequestHandler = js.native
+  def apply(options: RequestLogger): RequestHandler = js.native
 }
 

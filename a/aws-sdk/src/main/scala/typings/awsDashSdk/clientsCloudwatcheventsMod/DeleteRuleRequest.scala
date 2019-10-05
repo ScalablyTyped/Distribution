@@ -21,7 +21,7 @@ trait DeleteRuleRequest extends js.Object {
 
 object DeleteRuleRequest {
   @scala.inline
-  def apply(Name: RuleName, EventBusName: EventBusName = null, Force: js.UndefOr[Boolean] = js.undefined): DeleteRuleRequest = {
+  def apply(Name: RuleName, EventBusName: EventBusName = null, Force: js.UndefOr[scala.Boolean] = js.undefined): DeleteRuleRequest = {
     val __obj = js.Dynamic.literal(Name = Name)
     if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
     if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force)

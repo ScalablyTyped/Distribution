@@ -15,7 +15,7 @@ object ^ extends js.Object {
       js.UndefOr[
         (/* options */ typings.streamDashJson.filtersFilterBaseMod.FilterOptions) | typings.streamDashJson.streamersStreamBaseMod.StreamOptions | TransformOptions
       ], 
-      Transform | typings.streamDashJson.filtersFilterBaseMod.^  | typings.streamDashJson.streamersStreamBaseMod.^ 
+      Transform | typings.streamDashJson.streamersStreamBaseMod.^  | typings.streamDashJson.filtersFilterBaseMod.^ 
     ]
   ): typings.streamDashChain.streamDashChainMod.^ = js.native
   def apply(fn: js.Function1[/* options */ js.UndefOr[TransformOptions], Transform], options: ParserOptions): typings.streamDashChain.streamDashChainMod.^ = js.native

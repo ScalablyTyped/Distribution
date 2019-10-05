@@ -22,7 +22,7 @@ trait CloudWatchLoggingOptions extends js.Object {
 object CloudWatchLoggingOptions {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[BooleanObject] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     LogGroupName: LogGroupName = null,
     LogStreamName: LogStreamName = null
   ): CloudWatchLoggingOptions = {

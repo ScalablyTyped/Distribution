@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.declarativeContentNs.PageStateMatcherProperties
+import typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

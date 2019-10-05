@@ -8,6 +8,7 @@ import typings.slate.slateMod.Query
 import typings.slate.slateMod.QueryFunc
 import typings.slate.slateMod.SchemaProperties
 import typings.slate.slateMod.SlateError
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -115,29 +116,29 @@ object Plugin {
     commands: StringDictionary[CommandFunc] = null,
     decorateNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     normalizeNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => (js.Function1[/* editor */ typings.slate.slateMod.Editor, Unit]) | Unit = null,
-    onBeforeInput: EventHook = null,
-    onBlur: EventHook = null,
+    onBeforeInput: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onBlur: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onChange: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onClick: EventHook = null,
+    onClick: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onCommand: (/* command */ Command, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onCompositionEnd: EventHook = null,
-    onCompositionStart: EventHook = null,
+    onCompositionEnd: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCompositionStart: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onConstruct: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onCopy: EventHook = null,
-    onCut: EventHook = null,
-    onDragEnd: EventHook = null,
-    onDragEnter: EventHook = null,
-    onDragExit: EventHook = null,
-    onDragLeave: EventHook = null,
-    onDragOver: EventHook = null,
-    onDragStart: EventHook = null,
-    onDrop: EventHook = null,
-    onFocus: EventHook = null,
-    onInput: EventHook = null,
-    onKeyDown: EventHook = null,
-    onPaste: EventHook = null,
+    onCopy: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCut: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragEnd: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragEnter: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragExit: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragLeave: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragOver: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragStart: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDrop: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onFocus: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onInput: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onKeyDown: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onPaste: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onQuery: (/* query */ Query, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onSelect: EventHook = null,
+    onSelect: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     queries: StringDictionary[QueryFunc] = null,
     renderAnnotation: (/* props */ RenderAnnotationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderBlock: (/* props */ RenderBlockProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
@@ -154,29 +155,29 @@ object Plugin {
     if (commands != null) __obj.updateDynamic("commands")(commands)
     if (decorateNode != null) __obj.updateDynamic("decorateNode")(js.Any.fromFunction3(decorateNode))
     if (normalizeNode != null) __obj.updateDynamic("normalizeNode")(js.Any.fromFunction3(normalizeNode))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction3(onBeforeInput))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction3(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
     if (onCommand != null) __obj.updateDynamic("onCommand")(js.Any.fromFunction3(onCommand))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd)
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart)
+    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction3(onCompositionEnd))
+    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction3(onCompositionStart))
     if (onConstruct != null) __obj.updateDynamic("onConstruct")(js.Any.fromFunction2(onConstruct))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCut != null) __obj.updateDynamic("onCut")(onCut)
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
+    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction3(onCopy))
+    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction3(onCut))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction3(onDragEnd))
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction3(onDragEnter))
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction3(onDragExit))
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction3(onDragLeave))
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction3(onDragOver))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction3(onDragStart))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction3(onDrop))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction3(onFocus))
+    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction3(onInput))
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction3(onKeyDown))
+    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction3(onPaste))
     if (onQuery != null) __obj.updateDynamic("onQuery")(js.Any.fromFunction3(onQuery))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction3(onSelect))
     if (queries != null) __obj.updateDynamic("queries")(queries)
     if (renderAnnotation != null) __obj.updateDynamic("renderAnnotation")(js.Any.fromFunction3(renderAnnotation))
     if (renderBlock != null) __obj.updateDynamic("renderBlock")(js.Any.fromFunction3(renderBlock))

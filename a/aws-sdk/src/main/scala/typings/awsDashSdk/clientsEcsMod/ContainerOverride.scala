@@ -39,19 +39,19 @@ object ContainerOverride {
   @scala.inline
   def apply(
     command: StringList = null,
-    cpu: js.UndefOr[BoxedInteger] = js.undefined,
+    cpu: Int | scala.Double = null,
     environment: EnvironmentVariables = null,
-    memory: js.UndefOr[BoxedInteger] = js.undefined,
-    memoryReservation: js.UndefOr[BoxedInteger] = js.undefined,
+    memory: Int | scala.Double = null,
+    memoryReservation: Int | scala.Double = null,
     name: String = null,
     resourceRequirements: ResourceRequirements = null
   ): ContainerOverride = {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command)
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu)
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory)
-    if (!js.isUndefined(memoryReservation)) __obj.updateDynamic("memoryReservation")(memoryReservation)
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements)
     __obj.asInstanceOf[ContainerOverride]

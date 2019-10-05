@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "Tab")
 @js.native
 class Tab ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.TabsNs.Tab
+  extends typings.materialDashUi.__MaterialUI.Tabs.Tab
 

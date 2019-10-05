@@ -28,8 +28,8 @@ object TerminateEnvironmentMessage {
   def apply(
     EnvironmentId: EnvironmentId = null,
     EnvironmentName: EnvironmentName = null,
-    ForceTerminate: js.UndefOr[ForceTerminate] = js.undefined,
-    TerminateResources: js.UndefOr[TerminateEnvironmentResources] = js.undefined
+    ForceTerminate: js.UndefOr[Boolean] = js.undefined,
+    TerminateResources: js.UndefOr[Boolean] = js.undefined
   ): TerminateEnvironmentMessage = {
     val __obj = js.Dynamic.literal()
     if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId)

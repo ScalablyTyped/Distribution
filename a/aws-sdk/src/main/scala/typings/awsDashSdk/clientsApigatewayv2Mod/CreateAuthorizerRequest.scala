@@ -85,13 +85,13 @@ object CreateAuthorizerRequest {
     IdentitySource: IdentitySourceList,
     Name: StringWithLengthBetween1And128,
     AuthorizerCredentialsArn: Arn = null,
-    AuthorizerResultTtlInSeconds: js.UndefOr[IntegerWithLengthBetween0And3600] = js.undefined,
+    AuthorizerResultTtlInSeconds: Int | Double = null,
     IdentityValidationExpression: StringWithLengthBetween0And1024 = null,
     ProviderArns: ProviderArnList = null
   ): CreateAuthorizerRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId, AuthorizerType = AuthorizerType.asInstanceOf[js.Any], AuthorizerUri = AuthorizerUri, IdentitySource = IdentitySource, Name = Name)
     if (AuthorizerCredentialsArn != null) __obj.updateDynamic("AuthorizerCredentialsArn")(AuthorizerCredentialsArn)
-    if (!js.isUndefined(AuthorizerResultTtlInSeconds)) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds)
+    if (AuthorizerResultTtlInSeconds != null) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds.asInstanceOf[js.Any])
     if (IdentityValidationExpression != null) __obj.updateDynamic("IdentityValidationExpression")(IdentityValidationExpression)
     if (ProviderArns != null) __obj.updateDynamic("ProviderArns")(ProviderArns)
     __obj.asInstanceOf[CreateAuthorizerRequest]

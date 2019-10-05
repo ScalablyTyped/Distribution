@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.Scheduler
-import typings.kendoDashUi.kendoNs.uiNs.SchedulerOptions
+import typings.kendoDashUi.kendo.ui.Scheduler
+import typings.kendoDashUi.kendo.ui.SchedulerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

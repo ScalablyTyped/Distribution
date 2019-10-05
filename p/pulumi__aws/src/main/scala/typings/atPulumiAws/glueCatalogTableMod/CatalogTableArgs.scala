@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueCatalogTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.glueNs.CatalogTablePartitionKey
-import typings.atPulumiAws.typesInputMod.glueNs.CatalogTableStorageDescriptor
+import typings.atPulumiAws.typesInputMod.glue.CatalogTablePartitionKey
+import typings.atPulumiAws.typesInputMod.glue.CatalogTableStorageDescriptor
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

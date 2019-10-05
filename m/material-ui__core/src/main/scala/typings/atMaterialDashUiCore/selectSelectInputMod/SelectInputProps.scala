@@ -6,6 +6,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.filled
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.outlined
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.standard
 import typings.react.reactMod.ChangeEvent
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactNode
@@ -61,10 +62,10 @@ object SelectInputProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputRef: /* ref */ HTMLSelectElement | Anon_NodeValue => Unit = null,
     name: String = null,
-    onBlur: FocusEventHandler[_] = null,
+    onBlur: FocusEvent[_] => Unit = null,
     onChange: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit = null,
     onClose: /* event */ ChangeEvent[js.Object] => Unit = null,
-    onFocus: FocusEventHandler[_] = null,
+    onFocus: FocusEvent[_] => Unit = null,
     onOpen: /* event */ ChangeEvent[js.Object] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -80,10 +81,10 @@ object SelectInputProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

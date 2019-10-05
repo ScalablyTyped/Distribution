@@ -15,7 +15,7 @@ trait ServerAttachOptions
 object ServerAttachOptions {
   @scala.inline
   def apply(
-    allowRequest: AllowRequestFunction = null,
+    allowRequest: (/* req */ IncomingMessage, /* fn */ js.Function2[/* err */ js.UndefOr[String | Null], /* success */ Boolean, Unit]) => Unit = null,
     allowUpgrades: js.UndefOr[Boolean] = js.undefined,
     cookie: String | Boolean = null,
     cookieHttpOnly: js.UndefOr[Boolean] = js.undefined,
@@ -35,7 +35,7 @@ object ServerAttachOptions {
     wsEngine: ws | uws = null
   ): ServerAttachOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowRequest != null) __obj.updateDynamic("allowRequest")(allowRequest)
+    if (allowRequest != null) __obj.updateDynamic("allowRequest")(js.Any.fromFunction2(allowRequest))
     if (!js.isUndefined(allowUpgrades)) __obj.updateDynamic("allowUpgrades")(allowUpgrades)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (!js.isUndefined(cookieHttpOnly)) __obj.updateDynamic("cookieHttpOnly")(cookieHttpOnly)

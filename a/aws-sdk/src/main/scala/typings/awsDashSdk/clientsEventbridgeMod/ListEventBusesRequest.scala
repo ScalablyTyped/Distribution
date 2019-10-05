@@ -21,13 +21,9 @@ trait ListEventBusesRequest extends js.Object {
 
 object ListEventBusesRequest {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[LimitMax100] = js.undefined,
-    NamePrefix: EventBusName = null,
-    NextToken: NextToken = null
-  ): ListEventBusesRequest = {
+  def apply(Limit: Int | Double = null, NamePrefix: EventBusName = null, NextToken: NextToken = null): ListEventBusesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NamePrefix != null) __obj.updateDynamic("NamePrefix")(NamePrefix)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListEventBusesRequest]

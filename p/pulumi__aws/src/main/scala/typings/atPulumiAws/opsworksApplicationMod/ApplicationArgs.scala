@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksApplicationMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationAppSource
-import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationEnvironment
-import typings.atPulumiAws.typesInputMod.opsworksNs.ApplicationSslConfiguration
+import typings.atPulumiAws.typesInputMod.opsworks.ApplicationAppSource
+import typings.atPulumiAws.typesInputMod.opsworks.ApplicationEnvironment
+import typings.atPulumiAws.typesInputMod.opsworks.ApplicationSslConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

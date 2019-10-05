@@ -33,5 +33,13 @@ object ImageryLayer extends js.Object {
   var DEFAULT_GAMMA: Double = js.native
   var DEFAULT_HUE: Double = js.native
   var DEFAULT_SATURATION: Double = js.native
+  type ValueFunc = js.Function5[
+    /* frameState */ js.Any, 
+    /* layer */ ImageryLayer, 
+    /* x */ Double, 
+    /* y */ Double, 
+    /* level */ Double, 
+    Double
+  ]
 }
 

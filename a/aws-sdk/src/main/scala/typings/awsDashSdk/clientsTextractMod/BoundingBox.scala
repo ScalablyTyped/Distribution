@@ -26,16 +26,16 @@ trait BoundingBox extends js.Object {
 object BoundingBox {
   @scala.inline
   def apply(
-    Height: js.UndefOr[Float] = js.undefined,
-    Left: js.UndefOr[Float] = js.undefined,
-    Top: js.UndefOr[Float] = js.undefined,
-    Width: js.UndefOr[Float] = js.undefined
+    Height: Int | Double = null,
+    Left: Int | Double = null,
+    Top: Int | Double = null,
+    Width: Int | Double = null
   ): BoundingBox = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
-    if (!js.isUndefined(Left)) __obj.updateDynamic("Left")(Left)
-    if (!js.isUndefined(Top)) __obj.updateDynamic("Top")(Top)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    if (Left != null) __obj.updateDynamic("Left")(Left.asInstanceOf[js.Any])
+    if (Top != null) __obj.updateDynamic("Top")(Top.asInstanceOf[js.Any])
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundingBox]
   }
 }

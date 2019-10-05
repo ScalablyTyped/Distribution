@@ -32,14 +32,14 @@ object DescribeJobDefinitionsRequest {
   def apply(
     jobDefinitionName: String = null,
     jobDefinitions: StringList = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: String = null,
     status: String = null
   ): DescribeJobDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     if (jobDefinitionName != null) __obj.updateDynamic("jobDefinitionName")(jobDefinitionName)
     if (jobDefinitions != null) __obj.updateDynamic("jobDefinitions")(jobDefinitions)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (status != null) __obj.updateDynamic("status")(status)
     __obj.asInstanceOf[DescribeJobDefinitionsRequest]

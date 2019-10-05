@@ -17,9 +17,9 @@ trait ScheduleKeyDeletionRequest extends js.Object {
 
 object ScheduleKeyDeletionRequest {
   @scala.inline
-  def apply(KeyId: KeyIdType, PendingWindowInDays: js.UndefOr[PendingWindowInDaysType] = js.undefined): ScheduleKeyDeletionRequest = {
+  def apply(KeyId: KeyIdType, PendingWindowInDays: Int | Double = null): ScheduleKeyDeletionRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId)
-    if (!js.isUndefined(PendingWindowInDays)) __obj.updateDynamic("PendingWindowInDays")(PendingWindowInDays)
+    if (PendingWindowInDays != null) __obj.updateDynamic("PendingWindowInDays")(PendingWindowInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionRequest]
   }
 }

@@ -17,7 +17,7 @@ trait DeleteWorkGroupInput extends js.Object {
 
 object DeleteWorkGroupInput {
   @scala.inline
-  def apply(WorkGroup: WorkGroupName, RecursiveDeleteOption: js.UndefOr[BoxedBoolean] = js.undefined): DeleteWorkGroupInput = {
+  def apply(WorkGroup: WorkGroupName, RecursiveDeleteOption: js.UndefOr[scala.Boolean] = js.undefined): DeleteWorkGroupInput = {
     val __obj = js.Dynamic.literal(WorkGroup = WorkGroup)
     if (!js.isUndefined(RecursiveDeleteOption)) __obj.updateDynamic("RecursiveDeleteOption")(RecursiveDeleteOption)
     __obj.asInstanceOf[DeleteWorkGroupInput]

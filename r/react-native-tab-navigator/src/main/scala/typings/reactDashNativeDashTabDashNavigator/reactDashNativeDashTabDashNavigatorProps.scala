@@ -1,6 +1,5 @@
 package typings.reactDashNativeDashTabDashNavigator
 
-import typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +9,13 @@ trait reactDashNativeDashTabDashNavigatorProps {
   def ReactDashNativeDashTabDashNavigatorProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   type ReactDashNativeDashTabDashNavigatorProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   @scala.inline
+  def ReactDashNativeDashTabDashNavigatorItemProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  type ReactDashNativeDashTabDashNavigatorItemProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  @scala.inline
   def TabNavigatorProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   type TabNavigatorProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
   @scala.inline
-  def TabNavigatorNsItemProps: TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
-  type TabNavigatorNsItemProps = TabNavigatorItemProps
-  @scala.inline
-  def defaultNsItemProps: TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
-  type defaultNsItemProps = TabNavigatorItemProps
+  def TabNavigatorItemProps: typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps.type = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  type TabNavigatorItemProps = typings.reactDashNativeDashTabDashNavigator.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
 }
 

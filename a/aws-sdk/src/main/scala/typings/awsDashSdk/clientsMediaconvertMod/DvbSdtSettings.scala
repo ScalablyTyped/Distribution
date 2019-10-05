@@ -27,13 +27,13 @@ object DvbSdtSettings {
   @scala.inline
   def apply(
     OutputSdt: OutputSdt = null,
-    SdtInterval: js.UndefOr[__integerMin25Max2000] = js.undefined,
+    SdtInterval: Int | Double = null,
     ServiceName: __stringMin1Max256 = null,
     ServiceProviderName: __stringMin1Max256 = null
   ): DvbSdtSettings = {
     val __obj = js.Dynamic.literal()
     if (OutputSdt != null) __obj.updateDynamic("OutputSdt")(OutputSdt.asInstanceOf[js.Any])
-    if (!js.isUndefined(SdtInterval)) __obj.updateDynamic("SdtInterval")(SdtInterval)
+    if (SdtInterval != null) __obj.updateDynamic("SdtInterval")(SdtInterval.asInstanceOf[js.Any])
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (ServiceProviderName != null) __obj.updateDynamic("ServiceProviderName")(ServiceProviderName)
     __obj.asInstanceOf[DvbSdtSettings]

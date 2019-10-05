@@ -546,7 +546,6 @@
 [info ] ExpandCallables.scala:48 Expanded modifyF into 5 methods [id => monocle-ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Traversal))] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing monocle-ts [id => monocle-ts, phase => scala.js] 
-[info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Optional) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Lens) / TsMemberFunction(fromProp) / TsTypeFunction() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Lens) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Lens) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
@@ -566,7 +565,7 @@
 [info ] ImportType.scala:245 Failed type conversion: keyof S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof S ]: -? S[K] extends std.Option? K : never}[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclTypeAlias(OptionPropertyNames) / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Optional) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts/es6) / TsDeclClass(Optional) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Lens) / TsMemberFunction(fromProp) / TsTypeFunction() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Lens) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Lens) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
@@ -586,22 +585,24 @@
 [info ] ImportType.scala:245 Failed type conversion: keyof S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeParam() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: S[K1] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclInterface(LensFromPath) / TsMemberCall() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof S ]: -? S[K] extends std.Option? K : never}[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclTypeAlias(OptionPropertyNames) / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: S[keyof S] [id => monocle-ts, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(monocle-ts) / TsDeclClass(Optional) / TsMemberFunction(fromNullableProp) / TsTypeFunction() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(es6Mod) / Name(ModifyF)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF) [id => monocle-ts, phase => scala.js, this => Name(typings) / Name(monocleDashTs) / Name(monocleDashTsMod) / Name(ModifyF)] 
 [debug] PhaseRunner.scala:84 Success [id => monocle-ts, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building monocle-ts... [id => monocle-ts, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala:9:67
+[error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/monocleDashTs/monocleDashTsMod.scala:676:67
 [E]      not found: type A
-[E]      L9:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
-[E]                                                                            ^
-[E] [E1] src/main/scala/typings/monocleDashTs/es6Mod/package.scala:9:67
+[E]      L676:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
+[E]                                                                              ^
+[E] [E1] src/main/scala/typings/monocleDashTs/es6Mod.scala:676:67
 [E]      not found: type A
-[E]      L9:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
-[E]                                                                            ^
-[E] src/main/scala/typings/monocleDashTs/es6Mod/package.scala: L9 [E1]
-[E] src/main/scala/typings/monocleDashTs/monocleDashTsMod/package.scala: L9 [E2]
+[E]      L676:   type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = A
+[E]                                                                              ^
+[E] src/main/scala/typings/monocleDashTs/monocleDashTsMod.scala: L676 [E2]
+[E] src/main/scala/typings/monocleDashTs/es6Mod.scala: L676 [E1]
 [E] Failed to compile 'monocle-ts'
  [id => monocle-ts, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [monocle-ts => Compilation failed] [id => monocle-ts, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [monocle-ts => Compilation failed] [id => monocle-ts, phase => publish] 

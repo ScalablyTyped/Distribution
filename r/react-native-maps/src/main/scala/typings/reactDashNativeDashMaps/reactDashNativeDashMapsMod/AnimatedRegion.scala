@@ -1,8 +1,8 @@
 package typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.AnimatedWithChildren
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.CompositeAnimation
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedWithChildren
+import typings.reactDashNative.reactDashNativeMod.Animated.CompositeAnimation
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

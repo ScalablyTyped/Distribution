@@ -1,6 +1,7 @@
 package typings.reactDashTimeago.reactDashTimeagoMod
 
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.ReactNode
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,9 @@ object ReactTimeagoProps {
   def apply[T /* <: ComponentType[js.Object] */](
     date: String | Double | Date,
     component: String | T = null,
-    formatter: Formatter = null,
+    formatter: (/* value */ Double, /* unit */ Unit, /* suffix */ Suffix, /* epochMiliseconds */ Double, /* nextFormatter */ js.UndefOr[
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
+    ]) => ReactNode = null,
     live: js.UndefOr[Boolean] = js.undefined,
     maxPeriod: Int | Double = null,
     minPeriod: Int | Double = null,
@@ -31,7 +34,7 @@ object ReactTimeagoProps {
   ): ReactTimeagoProps[T] = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5(formatter))
     if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
     if (maxPeriod != null) __obj.updateDynamic("maxPeriod")(maxPeriod.asInstanceOf[js.Any])
     if (minPeriod != null) __obj.updateDynamic("minPeriod")(minPeriod.asInstanceOf[js.Any])

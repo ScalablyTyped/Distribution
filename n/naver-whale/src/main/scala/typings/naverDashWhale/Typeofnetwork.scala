@@ -1,7 +1,7 @@
 package typings.naverDashWhale
 
-import typings.chrome.chromeNs.devtoolsNs.networkNs.NavigatedEvent
-import typings.chrome.chromeNs.devtoolsNs.networkNs.RequestFinishedEvent
+import typings.chrome.chrome.devtools.network.NavigatedEvent
+import typings.chrome.chrome.devtools.network.RequestFinishedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

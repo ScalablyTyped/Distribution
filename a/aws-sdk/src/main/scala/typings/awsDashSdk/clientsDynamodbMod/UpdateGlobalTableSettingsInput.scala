@@ -38,14 +38,14 @@ object UpdateGlobalTableSettingsInput {
     GlobalTableBillingMode: BillingMode = null,
     GlobalTableGlobalSecondaryIndexSettingsUpdate: GlobalTableGlobalSecondaryIndexSettingsUpdateList = null,
     GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
-    GlobalTableProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    GlobalTableProvisionedWriteCapacityUnits: Int | scala.Double = null,
     ReplicaSettingsUpdate: ReplicaSettingsUpdateList = null
   ): UpdateGlobalTableSettingsInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName)
     if (GlobalTableBillingMode != null) __obj.updateDynamic("GlobalTableBillingMode")(GlobalTableBillingMode.asInstanceOf[js.Any])
     if (GlobalTableGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("GlobalTableGlobalSecondaryIndexSettingsUpdate")(GlobalTableGlobalSecondaryIndexSettingsUpdate)
     if (GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate")(GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate)
-    if (!js.isUndefined(GlobalTableProvisionedWriteCapacityUnits)) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityUnits")(GlobalTableProvisionedWriteCapacityUnits)
+    if (GlobalTableProvisionedWriteCapacityUnits != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityUnits")(GlobalTableProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
     if (ReplicaSettingsUpdate != null) __obj.updateDynamic("ReplicaSettingsUpdate")(ReplicaSettingsUpdate)
     __obj.asInstanceOf[UpdateGlobalTableSettingsInput]
   }

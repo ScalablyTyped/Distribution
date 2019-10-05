@@ -40,7 +40,7 @@ object Options {
     decimalCount: Int | Double = null,
     frequency: Int | Double = null,
     gravityNormalized: js.UndefOr[Boolean] = js.undefined,
-    logger: LogListener = null,
+    logger: /* data */ LoggerData => Unit = null,
     orientationBase: String = null,
     screenAdjusted: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -48,7 +48,7 @@ object Options {
     if (decimalCount != null) __obj.updateDynamic("decimalCount")(decimalCount.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (!js.isUndefined(gravityNormalized)) __obj.updateDynamic("gravityNormalized")(gravityNormalized)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (orientationBase != null) __obj.updateDynamic("orientationBase")(orientationBase)
     if (!js.isUndefined(screenAdjusted)) __obj.updateDynamic("screenAdjusted")(screenAdjusted)
     __obj.asInstanceOf[Options]

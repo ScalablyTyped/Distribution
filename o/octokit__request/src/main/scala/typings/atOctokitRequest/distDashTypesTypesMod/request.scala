@@ -59,12 +59,12 @@ trait request extends js.Object {
   /**
     * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
     */
-  def endpoint[R /* <: typings.atOctokitEndpoint.distDashTypesTypesMod.Route */](route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 516 */ js.Any): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
+  def endpoint[R /* <: typings.atOctokitEndpoint.distDashTypesTypesMod.Route */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 521 */ js.Any): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
   /**
     * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
     */
   def endpoint[R /* <: typings.atOctokitEndpoint.distDashTypesTypesMod.Route */](
-    route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 516 */ js.Any,
+    route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 521 */ js.Any,
     options: typings.atOctokitEndpoint.distDashTypesTypesMod.Parameters | ((/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][0] */ js.Any) with typings.atOctokitEndpoint.distDashTypesTypesMod.Parameters)
   ): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
 }

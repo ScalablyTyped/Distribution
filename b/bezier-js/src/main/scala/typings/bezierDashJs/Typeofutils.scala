@@ -1,14 +1,14 @@
 package typings.bezierDashJs
 
-import typings.bezierDashJs.BezierJsNs.Arc
-import typings.bezierDashJs.BezierJsNs.BBox
-import typings.bezierDashJs.BezierJsNs.Bezier
-import typings.bezierDashJs.BezierJsNs.Closest
-import typings.bezierDashJs.BezierJsNs.Line
-import typings.bezierDashJs.BezierJsNs.MinMax
-import typings.bezierDashJs.BezierJsNs.Offset
-import typings.bezierDashJs.BezierJsNs.Point
-import typings.bezierDashJs.BezierJsNs.Shape
+import typings.bezierDashJs.BezierJs.Arc
+import typings.bezierDashJs.BezierJs.BBox
+import typings.bezierDashJs.BezierJs.Bezier
+import typings.bezierDashJs.BezierJs.Closest
+import typings.bezierDashJs.BezierJs.Line
+import typings.bezierDashJs.BezierJs.MinMax
+import typings.bezierDashJs.BezierJs.Offset
+import typings.bezierDashJs.BezierJs.Point
+import typings.bezierDashJs.BezierJs.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersVectorTileLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VectorTileLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.VectorTileLayerProperties
+import typings.arcgisDashJsDashApi.__esri.VectorTileLayer
+import typings.arcgisDashJsDashApi.__esri.VectorTileLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.restify.restifyMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.bunyan.bunyanMod.^
 import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.Url
 import scala.scalajs.js
@@ -16,7 +17,7 @@ trait Request extends IncomingMessage {
   /** available when serveStatic plugin is used. */
   var files: js.UndefOr[StringDictionary[RequestFileInterface]] = js.native
   /** bunyan logger you can piggyback on. */
-  var log: typings.bunyan.bunyanMod.^ = js.native
+  var log: ^ = js.native
   /** available when queryParser or bodyParser plugin is used with mapParams enabled. */
   var params: js.UndefOr[js.Any] = js.native
   /** available when queryParser plugin is used. */

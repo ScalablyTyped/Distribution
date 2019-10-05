@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ssmAssociationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ssmNs.AssociationOutputLocation
-import typings.atPulumiAws.typesOutputMod.ssmNs.AssociationTarget
+import typings.atPulumiAws.typesOutputMod.ssm.AssociationOutputLocation
+import typings.atPulumiAws.typesOutputMod.ssm.AssociationTarget
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -4,6 +4,7 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.sourceWMTSRequestEncodingMod.WMTSRequestEncoding
 import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +48,7 @@ object Options {
     reprojectionErrorThreshold: Int | Double = null,
     requestEncoding: WMTSRequestEncoding | String = null,
     tileClass: typings.ol.imageTileMod.default = null,
-    tileLoadFunction: LoadFunction = null,
+    tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     tilePixelRatio: Int | Double = null,
     transition: Int | Double = null,
     url: String = null,
@@ -65,7 +66,7 @@ object Options {
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (requestEncoding != null) __obj.updateDynamic("requestEncoding")(requestEncoding.asInstanceOf[js.Any])
     if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

@@ -43,8 +43,8 @@ object ServiceQuotaIncreaseRequestInTemplate {
   @scala.inline
   def apply(
     AwsRegion: AwsRegion = null,
-    DesiredValue: js.UndefOr[QuotaValue] = js.undefined,
-    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
+    DesiredValue: Int | Double = null,
+    GlobalQuota: js.UndefOr[Boolean] = js.undefined,
     QuotaCode: QuotaCode = null,
     QuotaName: QuotaName = null,
     ServiceCode: ServiceCode = null,
@@ -53,7 +53,7 @@ object ServiceQuotaIncreaseRequestInTemplate {
   ): ServiceQuotaIncreaseRequestInTemplate = {
     val __obj = js.Dynamic.literal()
     if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion)
-    if (!js.isUndefined(DesiredValue)) __obj.updateDynamic("DesiredValue")(DesiredValue)
+    if (DesiredValue != null) __obj.updateDynamic("DesiredValue")(DesiredValue.asInstanceOf[js.Any])
     if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota)
     if (QuotaCode != null) __obj.updateDynamic("QuotaCode")(QuotaCode)
     if (QuotaName != null) __obj.updateDynamic("QuotaName")(QuotaName)

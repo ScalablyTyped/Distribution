@@ -23,7 +23,7 @@ object ListAccessKeysResponse {
   @scala.inline
   def apply(
     AccessKeyMetadata: accessKeyMetadataListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListAccessKeysResponse = {
     val __obj = js.Dynamic.literal(AccessKeyMetadata = AccessKeyMetadata)

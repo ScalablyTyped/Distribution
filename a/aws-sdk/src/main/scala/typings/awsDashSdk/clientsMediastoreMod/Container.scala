@@ -35,7 +35,7 @@ object Container {
   @scala.inline
   def apply(
     ARN: ContainerARN = null,
-    AccessLoggingEnabled: js.UndefOr[ContainerAccessLoggingEnabled] = js.undefined,
+    AccessLoggingEnabled: js.UndefOr[Boolean] = js.undefined,
     CreationTime: TimeStamp = null,
     Endpoint: Endpoint = null,
     Name: ContainerName = null,

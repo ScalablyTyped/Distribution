@@ -2,10 +2,10 @@ package typings.atPulumiAws
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkMod.DynamoDBNs.Converter
+import typings.awsDashSdk.awsDashSdkMod.DynamoDB.Converter
 import typings.awsDashSdk.clientsDynamodbMod.AttributeMap
 import typings.awsDashSdk.clientsDynamodbMod.AttributeValue
-import typings.awsDashSdk.libDynamodbConverterMod.ConverterNs.ConverterOptions
+import typings.awsDashSdk.libDynamodbConverterMod.Converter.ConverterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

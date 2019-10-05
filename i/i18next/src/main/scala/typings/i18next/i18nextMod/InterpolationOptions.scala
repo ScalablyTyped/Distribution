@@ -99,7 +99,7 @@ object InterpolationOptions {
     defaultVariables: StringDictionary[js.Any] = null,
     escape: /* str */ String => String = null,
     escapeValue: js.UndefOr[Boolean] = js.undefined,
-    format: FormatFunction = null,
+    format: (/* value */ js.Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String]) => String = null,
     formatSeparator: String = null,
     maxReplaces: Int | Double = null,
     nestingPrefix: String = null,
@@ -118,7 +118,7 @@ object InterpolationOptions {
     if (defaultVariables != null) __obj.updateDynamic("defaultVariables")(defaultVariables)
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
     if (!js.isUndefined(escapeValue)) __obj.updateDynamic("escapeValue")(escapeValue)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (formatSeparator != null) __obj.updateDynamic("formatSeparator")(formatSeparator)
     if (maxReplaces != null) __obj.updateDynamic("maxReplaces")(maxReplaces.asInstanceOf[js.Any])
     if (nestingPrefix != null) __obj.updateDynamic("nestingPrefix")(nestingPrefix)

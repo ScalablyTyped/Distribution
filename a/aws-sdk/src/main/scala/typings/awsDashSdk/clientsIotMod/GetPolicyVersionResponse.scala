@@ -44,7 +44,7 @@ object GetPolicyVersionResponse {
   def apply(
     creationDate: DateType = null,
     generationId: GenerationId = null,
-    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
+    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
     lastModifiedDate: DateType = null,
     policyArn: PolicyArn = null,
     policyDocument: PolicyDocument = null,

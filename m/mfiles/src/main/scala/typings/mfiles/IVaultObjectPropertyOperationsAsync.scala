@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFACLEnforcingMode
-import typings.mfiles.MFilesNs.MFMetadataSyncFormat
+import typings.mfiles.MFiles.MFACLEnforcingMode
+import typings.mfiles.MFiles.MFMetadataSyncFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

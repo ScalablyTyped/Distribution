@@ -54,10 +54,10 @@ trait ServiceConfiguration extends js.Object {
 object ServiceConfiguration {
   @scala.inline
   def apply(
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
-    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
+    ManagesVpcEndpoints: js.UndefOr[scala.Boolean] = js.undefined,
     NetworkLoadBalancerArns: ValueStringList = null,
     PrivateDnsName: String = null,
     ServiceId: String = null,

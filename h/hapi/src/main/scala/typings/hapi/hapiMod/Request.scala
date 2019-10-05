@@ -3,9 +3,9 @@ package typings.hapi.hapiMod
 import typings.boom.boomMod.^
 import typings.hapi.Anon_Close
 import typings.hapi.Anon_Req
-import typings.hapi.hapiMod.UtilNs.Dictionary
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
-import typings.hapi.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.hapi.hapiMod.Util.Dictionary
+import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL
+import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.urlMod.URL

@@ -32,14 +32,14 @@ object GetInventoryRequest {
   def apply(
     Aggregators: InventoryAggregatorList = null,
     Filters: InventoryFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ResultAttributes: ResultAttributeList = null
   ): GetInventoryRequest = {
     val __obj = js.Dynamic.literal()
     if (Aggregators != null) __obj.updateDynamic("Aggregators")(Aggregators)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResultAttributes != null) __obj.updateDynamic("ResultAttributes")(ResultAttributes)
     __obj.asInstanceOf[GetInventoryRequest]

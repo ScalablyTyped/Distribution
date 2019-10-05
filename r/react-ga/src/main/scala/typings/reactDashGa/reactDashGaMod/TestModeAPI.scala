@@ -1,5 +1,6 @@
 package typings.reactDashGa.reactDashGaMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ object TestModeAPI {
     __obj.asInstanceOf[TestModeAPI]
   }
 }
+
+@JSImport("react-ga", "testModeAPI")
+@js.native
+object testModeAPI extends TopLevel[TestModeAPI]
 

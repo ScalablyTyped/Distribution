@@ -1,6 +1,6 @@
 package typings.dotDashObject
 
-import typings.dotDashObject.DotObjectNs.DotConstructor
+import typings.dotDashObject.DotObject.DotConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,9 +2,9 @@ package typings.azureDashSb.libNotificationhubserviceMod
 
 import typings.azureDashSb.Anon_Etag
 import typings.azureDashSb.Anon_HeadersObject
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.ListNotificationHubsOptions
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.NotificationHubInstallation
-import typings.azureDashSb.azureDashSbMod.AzureNs.ServiceBusNs.NotificationHubRegistration
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.ListNotificationHubsOptions
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.NotificationHubInstallation
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.NotificationHubRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

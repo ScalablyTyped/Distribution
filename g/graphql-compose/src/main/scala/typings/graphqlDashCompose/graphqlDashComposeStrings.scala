@@ -1,6 +1,6 @@
 package typings.graphqlDashCompose
 
-import typings.graphqlDashCompose.libResolverMod.ResolverKinds
+import typings.graphqlDashCompose.esmResolverMod.ResolverKinds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,17 +39,17 @@ object graphqlDashComposeStrings {
   @js.native
   sealed trait mutation
     extends ResolverKinds
-       with typings.graphqlDashCompose.esmResolverMod.ResolverKinds
+       with typings.graphqlDashCompose.libResolverMod.ResolverKinds
   
   @js.native
   sealed trait query
     extends ResolverKinds
-       with typings.graphqlDashCompose.esmResolverMod.ResolverKinds
+       with typings.graphqlDashCompose.libResolverMod.ResolverKinds
   
   @js.native
   sealed trait subscription
     extends ResolverKinds
-       with typings.graphqlDashCompose.esmResolverMod.ResolverKinds
+       with typings.graphqlDashCompose.libResolverMod.ResolverKinds
   
   @scala.inline
   def ComposeFieldConfigArgumentMap: ComposeFieldConfigArgumentMap = "ComposeFieldConfigArgumentMap".asInstanceOf[ComposeFieldConfigArgumentMap]

@@ -1,6 +1,6 @@
 package typings.dav.davMod
 
-import typings.dav.davMod.transportNs.Transport
+import typings.dav.davMod.transport.Transport
 import typings.dav.davStrings.caldav
 import typings.dav.davStrings.carddav
 import scala.scalajs.js

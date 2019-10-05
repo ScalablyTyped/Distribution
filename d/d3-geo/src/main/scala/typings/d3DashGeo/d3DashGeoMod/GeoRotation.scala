@@ -20,3 +20,10 @@ trait GeoRotation extends js.Object {
   def invert(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
 }
 
+@JSImport("d3-geo", "geoRotation")
+@js.native
+object geoRotation extends js.Object {
+  def apply(angles: js.Tuple2[Double, Double]): GeoRotation = js.native
+  def apply(angles: js.Tuple3[Double, Double, Double]): GeoRotation = js.native
+}
+

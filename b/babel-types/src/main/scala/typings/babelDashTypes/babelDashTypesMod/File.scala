@@ -35,3 +35,12 @@ object File {
   }
 }
 
+@JSImport("babel-types", "file")
+@js.native
+object file extends js.Object {
+  def apply(): File = js.native
+  def apply(program: Program): File = js.native
+  def apply(program: Program, comments: js.Array[Comment]): File = js.native
+  def apply(program: Program, comments: js.Array[Comment], tokens: js.Array[_]): File = js.native
+}
+

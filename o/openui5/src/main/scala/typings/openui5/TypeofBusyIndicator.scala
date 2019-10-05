@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofBusyIndicator extends js.Object {
-  val tilsNs: js.Any = js.native
+  val tils: js.Any = js.native
   /**
     * Registers a handler for the "close" event
     * @param fnFunction The function to call, when the event occurs.           This function will be

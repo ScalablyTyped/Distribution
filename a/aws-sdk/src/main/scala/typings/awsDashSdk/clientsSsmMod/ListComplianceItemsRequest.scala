@@ -31,14 +31,14 @@ object ListComplianceItemsRequest {
   @scala.inline
   def apply(
     Filters: ComplianceStringFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     ResourceIds: ComplianceResourceIdList = null,
     ResourceTypes: ComplianceResourceTypeList = null
   ): ListComplianceItemsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (ResourceIds != null) __obj.updateDynamic("ResourceIds")(ResourceIds)
     if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes)

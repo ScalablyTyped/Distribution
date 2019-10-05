@@ -36,7 +36,7 @@ object ProvisioningArtifactParameter {
   def apply(
     DefaultValue: DefaultValue = null,
     Description: Description = null,
-    IsNoEcho: js.UndefOr[NoEcho] = js.undefined,
+    IsNoEcho: js.UndefOr[Boolean] = js.undefined,
     ParameterConstraints: ParameterConstraints = null,
     ParameterKey: ParameterKey = null,
     ParameterType: ParameterType = null

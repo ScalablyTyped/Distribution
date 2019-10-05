@@ -34,3 +34,10 @@ object NullableTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "nullableTypeAnnotation")
+@js.native
+object nullableTypeAnnotation extends js.Object {
+  def apply(): NullableTypeAnnotation = js.native
+  def apply(typeAnnotation: FlowTypeAnnotation): NullableTypeAnnotation = js.native
+}
+

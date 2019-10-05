@@ -1,7 +1,7 @@
 package typings.atPulumiAws.mediapackageChannelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.mediapackageNs.ChannelHlsIngest
+import typings.atPulumiAws.typesInputMod.mediapackage.ChannelHlsIngest
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

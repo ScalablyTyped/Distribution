@@ -38,3 +38,11 @@ object TypeParameter {
   }
 }
 
+@JSImport("babel-types", "typeParameter")
+@js.native
+object typeParameter extends js.Object {
+  def apply(): TypeParameter = js.native
+  def apply(bound: TypeAnnotation): TypeParameter = js.native
+  def apply(bound: TypeAnnotation, default_ : Flow): TypeParameter = js.native
+}
+

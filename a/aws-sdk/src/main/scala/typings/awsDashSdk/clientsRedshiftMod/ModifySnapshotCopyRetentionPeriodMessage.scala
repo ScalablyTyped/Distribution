@@ -21,7 +21,11 @@ trait ModifySnapshotCopyRetentionPeriodMessage extends js.Object {
 
 object ModifySnapshotCopyRetentionPeriodMessage {
   @scala.inline
-  def apply(ClusterIdentifier: String, RetentionPeriod: Integer, Manual: js.UndefOr[Boolean] = js.undefined): ModifySnapshotCopyRetentionPeriodMessage = {
+  def apply(
+    ClusterIdentifier: String,
+    RetentionPeriod: Integer,
+    Manual: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModifySnapshotCopyRetentionPeriodMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier, RetentionPeriod = RetentionPeriod)
     if (!js.isUndefined(Manual)) __obj.updateDynamic("Manual")(Manual)
     __obj.asInstanceOf[ModifySnapshotCopyRetentionPeriodMessage]

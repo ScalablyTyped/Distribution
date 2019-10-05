@@ -1,7 +1,7 @@
 package typings.zeromq.zeromqMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -147,5 +147,14 @@ class Socket () extends EventEmitter {
     * @param filter The filter
     */
   def unsubscribe(filter: String): Socket = js.native
+}
+
+@JSImport("zeromq", "socket")
+@js.native
+object socket extends js.Object {
+  def apply(`type`: String): Socket = js.native
+  def apply(`type`: String, options: js.Any): Socket = js.native
+  def apply(`type`: Double): Socket = js.native
+  def apply(`type`: Double, options: js.Any): Socket = js.native
 }
 

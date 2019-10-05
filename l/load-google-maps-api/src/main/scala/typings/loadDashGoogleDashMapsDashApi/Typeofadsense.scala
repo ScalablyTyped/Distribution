@@ -1,8 +1,8 @@
 package typings.loadDashGoogleDashMapsDashApi
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.googlemaps.googleNs.mapsNs.adsenseNs.AdUnit
-import typings.googlemaps.googleNs.mapsNs.adsenseNs.AdUnitOptions
+import typings.googlemaps.google.maps.adsense.AdUnit
+import typings.googlemaps.google.maps.adsense.AdUnitOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait Typeofadsense extends js.Object {
   var AdUnit: Instantiable2[
     /* container */ Element, 
     /* opts */ AdUnitOptions, 
-    typings.googlemaps.googleNs.mapsNs.adsenseNs.AdUnit
+    typings.googlemaps.google.maps.adsense.AdUnit
   ]
 }
 

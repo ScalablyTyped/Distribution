@@ -1,7 +1,7 @@
 package typings.tstl.tstlMod
 
 import typings.tstl.baseDisposableIPartialContainersMod._IInsert
-import typings.tstl.functionalIPointerMod.IPointerNs.ValueType
+import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

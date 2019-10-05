@@ -9,7 +9,7 @@ import typings.minipass.minipassStrings.finish
 import typings.minipass.minipassStrings.prefinish
 import typings.minipass.minipassStrings.readable
 import typings.minipass.minipassStrings.resume
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.cordovarduino
 
-import typings.cordovarduino.CordovardunioNs.Serial
+import typings.cordovarduino.Cordovardunio.Serial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

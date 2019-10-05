@@ -1,7 +1,7 @@
 package typings.analyticsDashNode.analyticsDashNodeMod
 
 import typings.analyticsDashNode.Anon_Enable
-import typings.analyticsDashNode.analyticsDashNodeMod.AnalyticsNodeNs.Analytics
+import typings.analyticsDashNode.analyticsDashNodeMod.AnalyticsNode.Analytics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

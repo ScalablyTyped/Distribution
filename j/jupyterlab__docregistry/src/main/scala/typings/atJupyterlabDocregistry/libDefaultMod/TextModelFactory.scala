@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocregistry.libDefaultMod
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistryNs.CodeModelFactory
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.CodeModelFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

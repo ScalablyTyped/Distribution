@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanel
-import typings.kendoDashUi.kendoNs.uiNs.ResponsivePanelOptions
+import typings.kendoDashUi.kendo.ui.ResponsivePanel
+import typings.kendoDashUi.kendo.ui.ResponsivePanelOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

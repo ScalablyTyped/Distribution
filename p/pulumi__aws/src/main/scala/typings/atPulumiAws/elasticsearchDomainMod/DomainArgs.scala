@@ -2,14 +2,14 @@ package typings.atPulumiAws.elasticsearchDomainMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.iamDocumentsMod.PolicyDocument
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainClusterConfig
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainCognitoOptions
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainEbsOptions
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainEncryptAtRest
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainLogPublishingOption
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainNodeToNodeEncryption
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainSnapshotOptions
-import typings.atPulumiAws.typesInputMod.elasticsearchNs.DomainVpcOptions
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainClusterConfig
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainCognitoOptions
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainEbsOptions
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainEncryptAtRest
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainLogPublishingOption
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainNodeToNodeEncryption
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainSnapshotOptions
+import typings.atPulumiAws.typesInputMod.elasticsearch.DomainVpcOptions
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

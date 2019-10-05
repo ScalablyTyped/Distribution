@@ -21,12 +21,11 @@ trait DeleteFile extends ResourceOperation {
   var uri: String
 }
 
-object DeleteFile {
-  @scala.inline
-  def apply(kind: delete, uri: String, options: DeleteFileOptions = null): DeleteFile = {
-    val __obj = js.Dynamic.literal(kind = kind, uri = uri)
-    if (options != null) __obj.updateDynamic("options")(options)
-    __obj.asInstanceOf[DeleteFile]
-  }
+@JSImport("vscode-languageserver-types", "DeleteFile")
+@js.native
+object DeleteFile extends js.Object {
+  def create(uri: String): DeleteFile = js.native
+  def create(uri: String, options: DeleteFileOptions): DeleteFile = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean = js.native
 }
 

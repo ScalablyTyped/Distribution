@@ -23,7 +23,7 @@ object ListAccountAliasesResponse {
   @scala.inline
   def apply(
     AccountAliases: accountAliasListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListAccountAliasesResponse = {
     val __obj = js.Dynamic.literal(AccountAliases = AccountAliases)

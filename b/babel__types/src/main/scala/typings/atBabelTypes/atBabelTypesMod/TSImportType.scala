@@ -43,3 +43,12 @@ object TSImportType {
   }
 }
 
+@JSImport("@babel/types", "tsImportType")
+@js.native
+object tsImportType extends js.Object {
+  def apply(argument: StringLiteral): TSImportType = js.native
+  def apply(argument: StringLiteral, qualifier: Null, typeParameters: TSTypeParameterInstantiation): TSImportType = js.native
+  def apply(argument: StringLiteral, qualifier: TSEntityName): TSImportType = js.native
+  def apply(argument: StringLiteral, qualifier: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSImportType = js.native
+}
+

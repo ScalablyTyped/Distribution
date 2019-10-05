@@ -77,7 +77,7 @@ object GameSession {
   def apply(
     CreationTime: Timestamp = null,
     CreatorId: NonZeroAndMaxString = null,
-    CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    CurrentPlayerSessionCount: Int | scala.Double = null,
     DnsName: DnsName = null,
     FleetId: FleetId = null,
     GameProperties: GamePropertyList = null,
@@ -85,10 +85,10 @@ object GameSession {
     GameSessionId: NonZeroAndMaxString = null,
     IpAddress: IpAddress = null,
     MatchmakerData: MatchmakerData = null,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    MaximumPlayerSessionCount: Int | scala.Double = null,
     Name: NonZeroAndMaxString = null,
     PlayerSessionCreationPolicy: PlayerSessionCreationPolicy = null,
-    Port: js.UndefOr[PortNumber] = js.undefined,
+    Port: Int | scala.Double = null,
     Status: GameSessionStatus = null,
     StatusReason: GameSessionStatusReason = null,
     TerminationTime: Timestamp = null
@@ -96,7 +96,7 @@ object GameSession {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId)
-    if (!js.isUndefined(CurrentPlayerSessionCount)) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount)
+    if (CurrentPlayerSessionCount != null) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount.asInstanceOf[js.Any])
     if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName)
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
     if (GameProperties != null) __obj.updateDynamic("GameProperties")(GameProperties)
@@ -104,10 +104,10 @@ object GameSession {
     if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
     if (MatchmakerData != null) __obj.updateDynamic("MatchmakerData")(MatchmakerData)
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount)
+    if (MaximumPlayerSessionCount != null) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (PlayerSessionCreationPolicy != null) __obj.updateDynamic("PlayerSessionCreationPolicy")(PlayerSessionCreationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     if (TerminationTime != null) __obj.updateDynamic("TerminationTime")(TerminationTime)

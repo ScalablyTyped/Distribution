@@ -3,6 +3,7 @@ package typings.rcDashGesture.esMod
 import typings.rcDashGesture.rcDashGestureStrings.all
 import typings.rcDashGesture.rcDashGestureStrings.horizontal
 import typings.rcDashGesture.rcDashGestureStrings.vertical
+import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -54,77 +55,77 @@ object IGesture {
     direction: all | vertical | horizontal = null,
     enablePinch: js.UndefOr[Boolean] = js.undefined,
     enableRotate: js.UndefOr[Boolean] = js.undefined,
-    onPan: GestureHandler = null,
-    onPanCancel: GestureHandler = null,
-    onPanDown: GestureHandler = null,
-    onPanEnd: GestureHandler = null,
-    onPanLeft: GestureHandler = null,
-    onPanMove: GestureHandler = null,
-    onPanRight: GestureHandler = null,
-    onPanStart: GestureHandler = null,
-    onPanUp: GestureHandler = null,
-    onPinch: GestureHandler = null,
-    onPinchCancel: GestureHandler = null,
-    onPinchEnd: GestureHandler = null,
-    onPinchIn: GestureHandler = null,
-    onPinchMove: GestureHandler = null,
-    onPinchOut: GestureHandler = null,
-    onPinchStart: GestureHandler = null,
-    onPress: GestureHandler = null,
-    onPressUp: GestureHandler = null,
-    onRotate: GestureHandler = null,
-    onRotateCancel: GestureHandler = null,
-    onRotateEnd: GestureHandler = null,
-    onRotateMove: GestureHandler = null,
-    onRotateStart: GestureHandler = null,
-    onSwipe: GestureHandler = null,
-    onSwipeDown: GestureHandler = null,
-    onSwipeLeft: GestureHandler = null,
-    onSwipeRight: GestureHandler = null,
-    onSwipeUp: GestureHandler = null,
-    onTap: GestureHandler = null,
-    onTouchCancel: TouchEventHandler[HTMLElement] = null,
-    onTouchEnd: TouchEventHandler[HTMLElement] = null,
-    onTouchMove: TouchEventHandler[HTMLElement] = null,
-    onTouchStart: TouchEventHandler[HTMLElement] = null
+    onPan: /* s */ IGestureStatus => Unit = null,
+    onPanCancel: /* s */ IGestureStatus => Unit = null,
+    onPanDown: /* s */ IGestureStatus => Unit = null,
+    onPanEnd: /* s */ IGestureStatus => Unit = null,
+    onPanLeft: /* s */ IGestureStatus => Unit = null,
+    onPanMove: /* s */ IGestureStatus => Unit = null,
+    onPanRight: /* s */ IGestureStatus => Unit = null,
+    onPanStart: /* s */ IGestureStatus => Unit = null,
+    onPanUp: /* s */ IGestureStatus => Unit = null,
+    onPinch: /* s */ IGestureStatus => Unit = null,
+    onPinchCancel: /* s */ IGestureStatus => Unit = null,
+    onPinchEnd: /* s */ IGestureStatus => Unit = null,
+    onPinchIn: /* s */ IGestureStatus => Unit = null,
+    onPinchMove: /* s */ IGestureStatus => Unit = null,
+    onPinchOut: /* s */ IGestureStatus => Unit = null,
+    onPinchStart: /* s */ IGestureStatus => Unit = null,
+    onPress: /* s */ IGestureStatus => Unit = null,
+    onPressUp: /* s */ IGestureStatus => Unit = null,
+    onRotate: /* s */ IGestureStatus => Unit = null,
+    onRotateCancel: /* s */ IGestureStatus => Unit = null,
+    onRotateEnd: /* s */ IGestureStatus => Unit = null,
+    onRotateMove: /* s */ IGestureStatus => Unit = null,
+    onRotateStart: /* s */ IGestureStatus => Unit = null,
+    onSwipe: /* s */ IGestureStatus => Unit = null,
+    onSwipeDown: /* s */ IGestureStatus => Unit = null,
+    onSwipeLeft: /* s */ IGestureStatus => Unit = null,
+    onSwipeRight: /* s */ IGestureStatus => Unit = null,
+    onSwipeUp: /* s */ IGestureStatus => Unit = null,
+    onTap: /* s */ IGestureStatus => Unit = null,
+    onTouchCancel: TouchEvent[HTMLElement] => Unit = null,
+    onTouchEnd: TouchEvent[HTMLElement] => Unit = null,
+    onTouchMove: TouchEvent[HTMLElement] => Unit = null,
+    onTouchStart: TouchEvent[HTMLElement] => Unit = null
   ): IGesture = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(enablePinch)) __obj.updateDynamic("enablePinch")(enablePinch)
     if (!js.isUndefined(enableRotate)) __obj.updateDynamic("enableRotate")(enableRotate)
-    if (onPan != null) __obj.updateDynamic("onPan")(onPan)
-    if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(onPanCancel)
-    if (onPanDown != null) __obj.updateDynamic("onPanDown")(onPanDown)
-    if (onPanEnd != null) __obj.updateDynamic("onPanEnd")(onPanEnd)
-    if (onPanLeft != null) __obj.updateDynamic("onPanLeft")(onPanLeft)
-    if (onPanMove != null) __obj.updateDynamic("onPanMove")(onPanMove)
-    if (onPanRight != null) __obj.updateDynamic("onPanRight")(onPanRight)
-    if (onPanStart != null) __obj.updateDynamic("onPanStart")(onPanStart)
-    if (onPanUp != null) __obj.updateDynamic("onPanUp")(onPanUp)
-    if (onPinch != null) __obj.updateDynamic("onPinch")(onPinch)
-    if (onPinchCancel != null) __obj.updateDynamic("onPinchCancel")(onPinchCancel)
-    if (onPinchEnd != null) __obj.updateDynamic("onPinchEnd")(onPinchEnd)
-    if (onPinchIn != null) __obj.updateDynamic("onPinchIn")(onPinchIn)
-    if (onPinchMove != null) __obj.updateDynamic("onPinchMove")(onPinchMove)
-    if (onPinchOut != null) __obj.updateDynamic("onPinchOut")(onPinchOut)
-    if (onPinchStart != null) __obj.updateDynamic("onPinchStart")(onPinchStart)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressUp != null) __obj.updateDynamic("onPressUp")(onPressUp)
-    if (onRotate != null) __obj.updateDynamic("onRotate")(onRotate)
-    if (onRotateCancel != null) __obj.updateDynamic("onRotateCancel")(onRotateCancel)
-    if (onRotateEnd != null) __obj.updateDynamic("onRotateEnd")(onRotateEnd)
-    if (onRotateMove != null) __obj.updateDynamic("onRotateMove")(onRotateMove)
-    if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(onRotateStart)
-    if (onSwipe != null) __obj.updateDynamic("onSwipe")(onSwipe)
-    if (onSwipeDown != null) __obj.updateDynamic("onSwipeDown")(onSwipeDown)
-    if (onSwipeLeft != null) __obj.updateDynamic("onSwipeLeft")(onSwipeLeft)
-    if (onSwipeRight != null) __obj.updateDynamic("onSwipeRight")(onSwipeRight)
-    if (onSwipeUp != null) __obj.updateDynamic("onSwipeUp")(onSwipeUp)
-    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
+    if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(js.Any.fromFunction1(onPanCancel))
+    if (onPanDown != null) __obj.updateDynamic("onPanDown")(js.Any.fromFunction1(onPanDown))
+    if (onPanEnd != null) __obj.updateDynamic("onPanEnd")(js.Any.fromFunction1(onPanEnd))
+    if (onPanLeft != null) __obj.updateDynamic("onPanLeft")(js.Any.fromFunction1(onPanLeft))
+    if (onPanMove != null) __obj.updateDynamic("onPanMove")(js.Any.fromFunction1(onPanMove))
+    if (onPanRight != null) __obj.updateDynamic("onPanRight")(js.Any.fromFunction1(onPanRight))
+    if (onPanStart != null) __obj.updateDynamic("onPanStart")(js.Any.fromFunction1(onPanStart))
+    if (onPanUp != null) __obj.updateDynamic("onPanUp")(js.Any.fromFunction1(onPanUp))
+    if (onPinch != null) __obj.updateDynamic("onPinch")(js.Any.fromFunction1(onPinch))
+    if (onPinchCancel != null) __obj.updateDynamic("onPinchCancel")(js.Any.fromFunction1(onPinchCancel))
+    if (onPinchEnd != null) __obj.updateDynamic("onPinchEnd")(js.Any.fromFunction1(onPinchEnd))
+    if (onPinchIn != null) __obj.updateDynamic("onPinchIn")(js.Any.fromFunction1(onPinchIn))
+    if (onPinchMove != null) __obj.updateDynamic("onPinchMove")(js.Any.fromFunction1(onPinchMove))
+    if (onPinchOut != null) __obj.updateDynamic("onPinchOut")(js.Any.fromFunction1(onPinchOut))
+    if (onPinchStart != null) __obj.updateDynamic("onPinchStart")(js.Any.fromFunction1(onPinchStart))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressUp != null) __obj.updateDynamic("onPressUp")(js.Any.fromFunction1(onPressUp))
+    if (onRotate != null) __obj.updateDynamic("onRotate")(js.Any.fromFunction1(onRotate))
+    if (onRotateCancel != null) __obj.updateDynamic("onRotateCancel")(js.Any.fromFunction1(onRotateCancel))
+    if (onRotateEnd != null) __obj.updateDynamic("onRotateEnd")(js.Any.fromFunction1(onRotateEnd))
+    if (onRotateMove != null) __obj.updateDynamic("onRotateMove")(js.Any.fromFunction1(onRotateMove))
+    if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(js.Any.fromFunction1(onRotateStart))
+    if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1(onSwipe))
+    if (onSwipeDown != null) __obj.updateDynamic("onSwipeDown")(js.Any.fromFunction1(onSwipeDown))
+    if (onSwipeLeft != null) __obj.updateDynamic("onSwipeLeft")(js.Any.fromFunction1(onSwipeLeft))
+    if (onSwipeRight != null) __obj.updateDynamic("onSwipeRight")(js.Any.fromFunction1(onSwipeRight))
+    if (onSwipeUp != null) __obj.updateDynamic("onSwipeUp")(js.Any.fromFunction1(onSwipeUp))
+    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     __obj.asInstanceOf[IGesture]
   }
 }

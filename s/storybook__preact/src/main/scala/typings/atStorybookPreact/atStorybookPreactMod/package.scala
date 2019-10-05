@@ -8,10 +8,10 @@ package object atStorybookPreactMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.atStorybookPreact.Anon_Kind
   import typings.preact.srcMod.AnyComponent
-  import typings.react.reactMod.Global.JSXNs.Element
+  import typings.react.reactMod.Global.JSX.Element
 
   type DecoratorParameters = StringDictionary[js.Any]
   type RenderFunction = js.Function0[Renderable | js.Array[Renderable]]
-  type Renderable = (AnyComponent[js.Object, js.Object]) | Element | typings.preact.srcJsxMod.JSXInternalNs.Element
+  type Renderable = (AnyComponent[js.Object, js.Object]) | Element | typings.preact.srcJsxMod.JSXInternal.Element
   type StoryDecorator = js.Function2[/* story */ RenderFunction, /* context */ Anon_Kind, Renderable | Null]
 }

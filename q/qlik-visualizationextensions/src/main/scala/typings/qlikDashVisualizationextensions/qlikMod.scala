@@ -1,7 +1,7 @@
 package typings.qlikDashVisualizationextensions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.qlikDashVisualizationextensions.RootAPINs.IRoot
+import typings.qlikDashVisualizationextensions.RootAPI.IRoot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

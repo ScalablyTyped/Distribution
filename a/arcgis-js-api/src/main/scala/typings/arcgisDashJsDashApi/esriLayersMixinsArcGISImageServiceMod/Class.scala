@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsArcGISImageServiceMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISImageService
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISImageServiceProperties
+import typings.arcgisDashJsDashApi.__esri.ArcGISImageService
+import typings.arcgisDashJsDashApi.__esri.ArcGISImageServiceProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

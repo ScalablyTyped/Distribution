@@ -1,7 +1,7 @@
 package typings.atJupyterlabMainmenuDashExtension
 
 import typings.atJupyterlabApplication.atJupyterlabApplicationMod.JupyterFrontEnd
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
 import typings.atJupyterlabApplication.libShellMod.ILabShell
 import typings.atJupyterlabApplication.libTokensMod.IRouter
@@ -67,9 +67,8 @@ object atJupyterlabMainmenuDashExtensionMod extends js.Object {
   def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu): Unit = js.native
   def createTabsMenu(app: JupyterFrontEnd[IShell], menu: TabsMenu, labShell: ILabShell): Unit = js.native
   def createViewMenu(app: JupyterFrontEnd[IShell], menu: ViewMenu): Unit = js.native
-  @JSName("CommandIDs")
   @js.native
-  object CommandIDsNs extends js.Object {
+  object CommandIDs extends js.Object {
     val activateById: `tabsmenu:activate-by-id` = js.native
     val activatePreviouslyUsedTab: `tabsmenu:activate-previously-used-tab` = js.native
     val changeKernel: `kernelmenu:change` = js.native

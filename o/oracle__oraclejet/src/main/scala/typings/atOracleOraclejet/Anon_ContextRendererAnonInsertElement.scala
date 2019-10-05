@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojganttMod.ojGanttNs.RowAxisLabelRendererContext
+import typings.atOracleOraclejet.ojganttMod.ojGantt.RowAxisLabelRendererContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

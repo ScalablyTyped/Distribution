@@ -21,14 +21,10 @@ trait SimpleScalingPolicyConfiguration extends js.Object {
 
 object SimpleScalingPolicyConfiguration {
   @scala.inline
-  def apply(
-    ScalingAdjustment: Integer,
-    AdjustmentType: AdjustmentType = null,
-    CoolDown: js.UndefOr[Integer] = js.undefined
-  ): SimpleScalingPolicyConfiguration = {
+  def apply(ScalingAdjustment: Integer, AdjustmentType: AdjustmentType = null, CoolDown: Int | Double = null): SimpleScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment)
     if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(CoolDown)) __obj.updateDynamic("CoolDown")(CoolDown)
+    if (CoolDown != null) __obj.updateDynamic("CoolDown")(CoolDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleScalingPolicyConfiguration]
   }
 }

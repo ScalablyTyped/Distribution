@@ -1,6 +1,6 @@
 package typings.primereact.componentsSliderSliderMod
 
-import typings.primereact.Anon_OriginalEventValueEventNumber_158693640
+import typings.primereact.Anon_OriginalEventValueEventNumber_995925214
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ trait SliderProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValueEventNumber_158693640, Unit]] = js.undefined
-  var onSlideEnd: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValueEventNumber_158693640, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValueEventNumber_995925214, Unit]] = js.undefined
+  var onSlideEnd: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValueEventNumber_995925214, Unit]] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -29,8 +29,8 @@ object SliderProps {
     id: String = null,
     max: Int | Double = null,
     min: Int | Double = null,
-    onChange: /* e */ Anon_OriginalEventValueEventNumber_158693640 => Unit = null,
-    onSlideEnd: /* e */ Anon_OriginalEventValueEventNumber_158693640 => Unit = null,
+    onChange: /* e */ Anon_OriginalEventValueEventNumber_995925214 => Unit = null,
+    onSlideEnd: /* e */ Anon_OriginalEventValueEventNumber_995925214 => Unit = null,
     orientation: String = null,
     range: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,

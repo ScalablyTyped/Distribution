@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(options: Options): DependencyObj = js.native
-  def toList(options: Options): js.Array[String] = js.native
 }
 

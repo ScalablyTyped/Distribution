@@ -1,5 +1,6 @@
 package typings.nock.nockMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,4 +13,8 @@ trait Recorder extends js.Object {
   def rec(options: Boolean): Unit = js.native
   def rec(options: RecorderOptions): Unit = js.native
 }
+
+@JSImport("nock", "recorder")
+@js.native
+object recorder extends TopLevel[Recorder]
 

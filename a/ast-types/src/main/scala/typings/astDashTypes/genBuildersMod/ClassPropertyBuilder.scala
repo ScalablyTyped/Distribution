@@ -6,7 +6,7 @@ import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.LiteralKind
 import typings.astDashTypes.genKindsMod.TSTypeAnnotationKind
 import typings.astDashTypes.genKindsMod.TypeAnnotationKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ClassProperty
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ClassProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

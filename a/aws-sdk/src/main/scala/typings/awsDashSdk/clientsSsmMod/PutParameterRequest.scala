@@ -56,7 +56,7 @@ object PutParameterRequest {
     AllowedPattern: AllowedPattern = null,
     Description: ParameterDescription = null,
     KeyId: ParameterKeyId = null,
-    Overwrite: js.UndefOr[Boolean] = js.undefined,
+    Overwrite: js.UndefOr[scala.Boolean] = js.undefined,
     Policies: ParameterPolicies = null,
     Tags: TagList = null,
     Tier: ParameterTier = null

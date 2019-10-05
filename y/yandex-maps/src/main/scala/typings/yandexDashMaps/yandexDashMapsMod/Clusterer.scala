@@ -1,18 +1,19 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsMod.clustererNs.Hint
+import typings.yandexDashMaps.yandexDashMapsMod.clusterer.Hint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
 - typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "Clusterer")
 @js.native
 class Clusterer ()
   extends IChildOnMap
      with IParentOnMap {
   def this(options: IClustererOptions) = this()
-  var balloon: typings.yandexDashMaps.yandexDashMapsMod.clustererNs.Balloon = js.native
+  var balloon: typings.yandexDashMaps.yandexDashMapsMod.clusterer.Balloon = js.native
   /* CompleteClass */
   override var events: IEventManager = js.native
   // 	balloonopen:
@@ -27,5 +28,25 @@ class Clusterer ()
   /* InferMemberOverrides */
   override def setParent(parent: js.Object): this.type = js.native
   def setParent(parent: IControlParent): this.type = js.native
+}
+
+@JSImport("yandex-maps", "clusterer")
+@js.native
+object clusterer extends js.Object {
+  @js.native
+  class Balloon protected () extends IBalloonManager[Clusterer] {
+    //tslint:disable-line no-shadowed-variable
+    def this(clusterer: Clusterer) = this()
+    /* CompleteClass */
+    override var events: IEventManager = js.native
+  }
+  
+  @js.native
+  class Hint protected () extends IHintManager[Clusterer] {
+    def this(clusterer: Clusterer) = this()
+    /* CompleteClass */
+    override var events: IEventManager = js.native
+  }
+  
 }
 

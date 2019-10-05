@@ -31,7 +31,7 @@ object Server {
   @scala.inline
   def apply(
     replicationJobId: ReplicationJobId = null,
-    replicationJobTerminated: js.UndefOr[ReplicationJobTerminated] = js.undefined,
+    replicationJobTerminated: js.UndefOr[Boolean] = js.undefined,
     serverId: ServerId = null,
     serverType: ServerType = null,
     vmServer: VmServer = null

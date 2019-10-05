@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScriptHandler")
 @js.native
 class ScriptHandler protected ()
-  extends typings.playcanvas.pcNs.ScriptHandler {
-  def this(app: typings.playcanvas.pcNs.Application) = this()
+  extends typings.playcanvas.pc.ScriptHandler {
+  def this(app: typings.playcanvas.pc.Application) = this()
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "NullLogger")
 @js.native
 class NullLogger ()
-  extends typings.typescriptDashServices.TypeScriptNs.NullLogger
+  extends typings.typescriptDashServices.TypeScript.NullLogger
 

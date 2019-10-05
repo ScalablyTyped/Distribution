@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,40 +126,40 @@ object IgSplitter {
   	 * Option for igSplitter
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    collapsed: CollapsedEvent = null,
+    collapsed: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit = null,
     dragDelta: Int | Double = null,
-    expanded: ExpandedEvent = null,
+    expanded: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit = null,
     height: String | Double = null,
     language: String = null,
-    layoutRefreshed: LayoutRefreshedEvent = null,
-    layoutRefreshing: LayoutRefreshingEvent = null,
+    layoutRefreshed: (/* event */ Event, /* ui */ LayoutRefreshedEventUIParam) => Unit = null,
+    layoutRefreshing: (/* event */ Event, /* ui */ LayoutRefreshingEventUIParam) => Unit = null,
     locale: js.Any = null,
     orientation: String = null,
     panels: js.Array[IgSplitterPanel] = null,
     regional: String | js.Object = null,
-    resizeEnded: ResizeEndedEvent = null,
+    resizeEnded: (/* event */ Event, /* ui */ ResizeEndedEventUIParam) => Unit = null,
     resizeOtherSplitters: js.UndefOr[Boolean] = js.undefined,
-    resizeStarted: ResizeStartedEvent = null,
-    resizing: ResizingEvent = null,
+    resizeStarted: (/* event */ Event, /* ui */ ResizeStartedEventUIParam) => Unit = null,
+    resizing: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgSplitter = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction2(collapsed))
     if (dragDelta != null) __obj.updateDynamic("dragDelta")(dragDelta.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction2(expanded))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
-    if (layoutRefreshed != null) __obj.updateDynamic("layoutRefreshed")(layoutRefreshed)
-    if (layoutRefreshing != null) __obj.updateDynamic("layoutRefreshing")(layoutRefreshing)
+    if (layoutRefreshed != null) __obj.updateDynamic("layoutRefreshed")(js.Any.fromFunction2(layoutRefreshed))
+    if (layoutRefreshing != null) __obj.updateDynamic("layoutRefreshing")(js.Any.fromFunction2(layoutRefreshing))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (panels != null) __obj.updateDynamic("panels")(panels)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (resizeEnded != null) __obj.updateDynamic("resizeEnded")(resizeEnded)
+    if (resizeEnded != null) __obj.updateDynamic("resizeEnded")(js.Any.fromFunction2(resizeEnded))
     if (!js.isUndefined(resizeOtherSplitters)) __obj.updateDynamic("resizeOtherSplitters")(resizeOtherSplitters)
-    if (resizeStarted != null) __obj.updateDynamic("resizeStarted")(resizeStarted)
-    if (resizing != null) __obj.updateDynamic("resizing")(resizing)
+    if (resizeStarted != null) __obj.updateDynamic("resizeStarted")(js.Any.fromFunction2(resizeStarted))
+    if (resizing != null) __obj.updateDynamic("resizing")(js.Any.fromFunction2(resizing))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSplitter]
   }

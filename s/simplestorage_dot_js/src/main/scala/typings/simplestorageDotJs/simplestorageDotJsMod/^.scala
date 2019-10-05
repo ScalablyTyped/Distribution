@@ -1,7 +1,7 @@
 package typings.simplestorageDotJs.simplestorageDotJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.simplestorageDotJs.simplestorageDotJsMod.simplestoragejsNs.SimpleStorage
+import typings.simplestorageDotJs.simplestorageDotJsMod.simplestoragejs.SimpleStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

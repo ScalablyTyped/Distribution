@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsElements
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.RestElementKind
 import typings.astDashTypes.genKindsMod.SpreadElementKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.ArrayExpression
+import typings.astDashTypes.genNamedTypesMod.namedTypes.ArrayExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

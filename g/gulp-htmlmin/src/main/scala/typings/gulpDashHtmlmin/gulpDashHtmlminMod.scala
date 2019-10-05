@@ -1,7 +1,7 @@
 package typings.gulpDashHtmlmin
 
 import typings.htmlDashMinifier.htmlDashMinifierMod.Options
-import typings.node.NodeJSNs.ReadWriteStream
+import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

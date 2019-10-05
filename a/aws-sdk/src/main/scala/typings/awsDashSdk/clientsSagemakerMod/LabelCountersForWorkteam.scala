@@ -21,15 +21,11 @@ trait LabelCountersForWorkteam extends js.Object {
 
 object LabelCountersForWorkteam {
   @scala.inline
-  def apply(
-    HumanLabeled: js.UndefOr[LabelCounter] = js.undefined,
-    PendingHuman: js.UndefOr[LabelCounter] = js.undefined,
-    Total: js.UndefOr[LabelCounter] = js.undefined
-  ): LabelCountersForWorkteam = {
+  def apply(HumanLabeled: Int | Double = null, PendingHuman: Int | Double = null, Total: Int | Double = null): LabelCountersForWorkteam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(HumanLabeled)) __obj.updateDynamic("HumanLabeled")(HumanLabeled)
-    if (!js.isUndefined(PendingHuman)) __obj.updateDynamic("PendingHuman")(PendingHuman)
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total)
+    if (HumanLabeled != null) __obj.updateDynamic("HumanLabeled")(HumanLabeled.asInstanceOf[js.Any])
+    if (PendingHuman != null) __obj.updateDynamic("PendingHuman")(PendingHuman.asInstanceOf[js.Any])
+    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelCountersForWorkteam]
   }
 }

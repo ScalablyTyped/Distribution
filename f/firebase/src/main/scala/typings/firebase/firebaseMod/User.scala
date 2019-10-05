@@ -1,14 +1,14 @@
 package typings.firebase.firebaseMod
 
 import typings.firebase.Anon_DisplayName
-import typings.firebase.firebaseMod.authNs.ActionCodeSettings
-import typings.firebase.firebaseMod.authNs.ApplicationVerifier
-import typings.firebase.firebaseMod.authNs.AuthCredential
-import typings.firebase.firebaseMod.authNs.AuthProvider
-import typings.firebase.firebaseMod.authNs.ConfirmationResult
-import typings.firebase.firebaseMod.authNs.IdTokenResult
-import typings.firebase.firebaseMod.authNs.UserCredential
-import typings.firebase.firebaseMod.authNs.UserMetadata
+import typings.firebase.firebaseMod.auth.ActionCodeSettings
+import typings.firebase.firebaseMod.auth.ApplicationVerifier
+import typings.firebase.firebaseMod.auth.AuthCredential
+import typings.firebase.firebaseMod.auth.AuthProvider
+import typings.firebase.firebaseMod.auth.ConfirmationResult
+import typings.firebase.firebaseMod.auth.IdTokenResult
+import typings.firebase.firebaseMod.auth.UserCredential
+import typings.firebase.firebaseMod.auth.UserMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

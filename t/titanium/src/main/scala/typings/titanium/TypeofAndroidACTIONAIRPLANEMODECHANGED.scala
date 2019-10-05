@@ -1,19 +1,19 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.AndroidNs.Activity
-import typings.titanium.TitaniumNs.AndroidNs.BigPictureStyle
-import typings.titanium.TitaniumNs.AndroidNs.BigTextStyle
-import typings.titanium.TitaniumNs.AndroidNs.BroadcastReceiver
-import typings.titanium.TitaniumNs.AndroidNs.Intent
-import typings.titanium.TitaniumNs.AndroidNs.Notification
-import typings.titanium.TitaniumNs.AndroidNs.NotificationChannel
-import typings.titanium.TitaniumNs.AndroidNs.PendingIntent
-import typings.titanium.TitaniumNs.AndroidNs.QuickSettingsService
-import typings.titanium.TitaniumNs.AndroidNs.RemoteViews
-import typings.titanium.TitaniumNs.AndroidNs.Service
-import typings.titanium.TitaniumNs.UINs.AndroidNs.DrawerLayout
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Android.Activity
+import typings.titanium.Titanium.Android.BigPictureStyle
+import typings.titanium.Titanium.Android.BigTextStyle
+import typings.titanium.Titanium.Android.BroadcastReceiver
+import typings.titanium.Titanium.Android.Intent
+import typings.titanium.Titanium.Android.Notification
+import typings.titanium.Titanium.Android.NotificationChannel
+import typings.titanium.Titanium.Android.PendingIntent
+import typings.titanium.Titanium.Android.QuickSettingsService
+import typings.titanium.Titanium.Android.RemoteViews
+import typings.titanium.Titanium.Android.Service
+import typings.titanium.Titanium.UI.Android.DrawerLayout
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -458,7 +458,7 @@ trait TypeofAndroidACTIONAIRPLANEMODECHANGED extends js.Object {
   		 * The Android.Calendar module provides proxies and methods for accessing the native Android
   		 * calendar functionality.
   		 */
-  val CalendarNs: TypeofCalendar = js.native
+  val Calendar: TypeofCalendar = js.native
   /**
   		 * Use all default settings for a notification; see
   		 * [Notification.defaults](Titanium.Android.Notification.defaults).
@@ -739,7 +739,7 @@ trait TypeofAndroidACTIONAIRPLANEMODECHANGED extends js.Object {
   /**
   		 * Module for managing notifications.
   		 */
-  val NotificationManagerNs: TypeofNotificationManager = js.native
+  val NotificationManager: TypeofNotificationManager = js.native
   /**
   		 * Not used.
   		 */
@@ -778,6 +778,10 @@ trait TypeofAndroidACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   val PRIORITY_MIN: Double = js.native
   /**
+  		 * The Titanium binding of the Android system-wide resources class.
+  		 */
+  val R: TypeofR = js.native
+  /**
   		 * Used with [setResult](Titanium.Android.Activity.setResult) to specify that
   		 * an activity was canceled.
   		 */
@@ -792,10 +796,6 @@ trait TypeofAndroidACTIONAIRPLANEMODECHANGED extends js.Object {
   		 * an activity succeeded.
   		 */
   val RESULT_OK: Double = js.native
-  /**
-  		 * The Titanium binding of the Android system-wide resources class.
-  		 */
-  val RNs: TypeofR = js.native
   /**
   		 * Use with [requestedOrientation](Titanium.Android.Activity.requestedOrientation) to
   		 * specify the activity should run in the same orientation as the activity behind it

@@ -32,13 +32,13 @@ object ListConstraintsForPortfolioInput {
   def apply(
     PortfolioId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
+    PageSize: Int | Double = null,
     PageToken: PageToken = null,
     ProductId: Id = null
   ): ListConstraintsForPortfolioInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId)
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize)
+    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
     if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId)
     __obj.asInstanceOf[ListConstraintsForPortfolioInput]

@@ -17,28 +17,10 @@ trait TSParameterProperty
   var type_TSParameterProperty: typings.babelDashTypes.babelDashTypesStrings.TSParameterProperty
 }
 
-object TSParameterProperty {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    parameter: Identifier | AssignmentPattern,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSParameterProperty,
-    accessibility: public | `private` | `protected` = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null
-  ): TSParameterProperty = {
-    val __obj = js.Dynamic.literal(end = end, loc = loc, parameter = parameter.asInstanceOf[js.Any], start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSParameterProperty]
-  }
+@JSImport("babel-types", "TSParameterProperty")
+@js.native
+object TSParameterProperty extends js.Object {
+  def apply(parameter: AssignmentPattern): TSParameterProperty = js.native
+  def apply(parameter: Identifier): TSParameterProperty = js.native
 }
 

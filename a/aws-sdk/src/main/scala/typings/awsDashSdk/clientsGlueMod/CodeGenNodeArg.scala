@@ -21,7 +21,7 @@ trait CodeGenNodeArg extends js.Object {
 
 object CodeGenNodeArg {
   @scala.inline
-  def apply(Name: CodeGenArgName, Value: CodeGenArgValue, Param: js.UndefOr[Boolean] = js.undefined): CodeGenNodeArg = {
+  def apply(Name: CodeGenArgName, Value: CodeGenArgValue, Param: js.UndefOr[scala.Boolean] = js.undefined): CodeGenNodeArg = {
     val __obj = js.Dynamic.literal(Name = Name, Value = Value)
     if (!js.isUndefined(Param)) __obj.updateDynamic("Param")(Param)
     __obj.asInstanceOf[CodeGenNodeArg]

@@ -40,3 +40,10 @@ object BreakStatement {
   }
 }
 
+@JSImport("@babel/types", "breakStatement")
+@js.native
+object breakStatement extends js.Object {
+  def apply(): BreakStatement = js.native
+  def apply(label: Identifier): BreakStatement = js.native
+}
+

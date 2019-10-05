@@ -23,7 +23,7 @@ object SimulatePolicyResponse {
   @scala.inline
   def apply(
     EvaluationResults: EvaluationResultsListType = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): SimulatePolicyResponse = {
     val __obj = js.Dynamic.literal()

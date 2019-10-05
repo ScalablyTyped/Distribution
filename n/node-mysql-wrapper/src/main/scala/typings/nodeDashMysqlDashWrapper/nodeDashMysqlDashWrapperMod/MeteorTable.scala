@@ -1,7 +1,7 @@
 package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 
 import typings.nodeDashMysqlDashWrapper.Anon_Multi
-import typings.nodeDashMysqlDashWrapper.MongoNs.Collection
+import typings.nodeDashMysqlDashWrapper.Mongo.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

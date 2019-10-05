@@ -1,9 +1,9 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.corners
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.direction
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
+import typings.materialDashUi.__MaterialUI.propTypes.corners
+import typings.materialDashUi.__MaterialUI.propTypes.cornersAndCenter
+import typings.materialDashUi.__MaterialUI.propTypes.direction
+import typings.materialDashUi.__MaterialUI.propTypes.tooltipHorizontal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object materialDashUiStrings {
   
   @js.native
   sealed trait bottom
-    extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+    extends typings.materialDashUi.__MaterialUI.propTypes.vertical
   
   @js.native
   sealed trait `bottom-center` extends cornersAndCenter
@@ -47,7 +47,7 @@ object materialDashUiStrings {
   @js.native
   sealed trait center
     extends tooltipHorizontal
-       with typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+       with typings.materialDashUi.__MaterialUI.propTypes.vertical
   
   @js.native
   sealed trait determinate extends js.Object
@@ -76,7 +76,7 @@ object materialDashUiStrings {
   @js.native
   sealed trait left
     extends direction
-       with typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+       with typings.materialDashUi.__MaterialUI.propTypes.horizontal
        with tooltipHorizontal
   
   @js.native
@@ -84,7 +84,7 @@ object materialDashUiStrings {
   
   @js.native
   sealed trait middle
-    extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+    extends typings.materialDashUi.__MaterialUI.propTypes.horizontal
   
   @js.native
   sealed trait portrait extends js.Object
@@ -95,12 +95,12 @@ object materialDashUiStrings {
   @js.native
   sealed trait right
     extends direction
-       with typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+       with typings.materialDashUi.__MaterialUI.propTypes.horizontal
        with tooltipHorizontal
   
   @js.native
   sealed trait top
-    extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+    extends typings.materialDashUi.__MaterialUI.propTypes.vertical
   
   @js.native
   sealed trait `top-center` extends cornersAndCenter

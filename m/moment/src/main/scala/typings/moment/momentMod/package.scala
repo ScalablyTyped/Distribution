@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object momentMod {
-  import typings.moment.momentMod.unitOfTimeNs.DurationConstructor
+  import typings.moment.momentMod.unitOfTime.DurationConstructor
   import typings.std.Date
 
   /* Rewritten from type alias, can be one of: 

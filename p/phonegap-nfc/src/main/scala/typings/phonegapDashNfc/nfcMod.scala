@@ -1,7 +1,7 @@
 package typings.phonegapDashNfc
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phonegapDashNfc.PhoneGapNfcNs.Nfc
+import typings.phonegapDashNfc.PhoneGapNfc.Nfc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

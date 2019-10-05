@@ -18,7 +18,7 @@ trait Typeofenterprise extends js.Object {
     * @description
     * Use the chrome.enterprise.deviceAttributes API to read device attributes.
     */
-  val deviceAttributesNs: TypeofdeviceAttributes
+  val deviceAttributes: TypeofdeviceAttributes
   /**
     * @requires Permissions: 'enterprise.platformKeys'
     * @requires Note: This API is only available to apps force-installed by enterprise policy.
@@ -28,13 +28,13 @@ trait Typeofenterprise extends js.Object {
     * The certificates will be managed by the platform and can be used for TLS authentication, network access or by other extension through chrome.platformKeys.
     * @see[Documentation]{@link https://developer.chrome.com/extensions/enterprise_platformKeys}
     */
-  val platformKeysNs: TypeofplatformKeys
+  val platformKeys: TypeofplatformKeys
 }
 
 object Typeofenterprise {
   @scala.inline
-  def apply(deviceAttributesNs: TypeofdeviceAttributes, platformKeysNs: TypeofplatformKeys): Typeofenterprise = {
-    val __obj = js.Dynamic.literal(deviceAttributesNs = deviceAttributesNs, platformKeysNs = platformKeysNs)
+  def apply(deviceAttributes: TypeofdeviceAttributes, platformKeys: TypeofplatformKeys): Typeofenterprise = {
+    val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes, platformKeys = platformKeys)
   
     __obj.asInstanceOf[Typeofenterprise]
   }

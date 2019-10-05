@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "Installation")
 @js.native
 class Installation ()
-  extends typings.parse.ParseNs.Installation
+  extends typings.parse.Parse.Installation
 

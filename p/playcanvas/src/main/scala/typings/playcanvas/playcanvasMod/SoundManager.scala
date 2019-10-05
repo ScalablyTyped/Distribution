@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SoundManager")
 @js.native
 class SoundManager ()
-  extends typings.playcanvas.pcNs.SoundManager {
+  extends typings.playcanvas.pc.SoundManager {
   def this(options: Anon_ForceWebAudioApi) = this()
 }
 

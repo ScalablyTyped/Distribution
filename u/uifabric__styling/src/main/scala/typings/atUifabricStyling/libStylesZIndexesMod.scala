@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/styles/zIndexes", JSImport.Namespace)
 @js.native
 object libStylesZIndexesMod extends js.Object {
-  @JSName("ZIndexes")
   @js.native
-  object ZIndexesNs extends js.Object {
+  object ZIndexes extends js.Object {
     val Coachmark: Double = js.native
     val FocusStyle: Double = js.native
     val KeytipLayer: Double = js.native

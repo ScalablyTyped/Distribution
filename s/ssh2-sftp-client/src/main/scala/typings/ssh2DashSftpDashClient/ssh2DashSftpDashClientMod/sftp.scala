@@ -1,7 +1,7 @@
 package typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.ssh2.ssh2Mod.ConnectConfig
 import typings.ssh2.ssh2Mod.SFTPWrapper
 import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientNumbers.`false`

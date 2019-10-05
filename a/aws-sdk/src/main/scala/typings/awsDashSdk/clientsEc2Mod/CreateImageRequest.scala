@@ -38,8 +38,8 @@ object CreateImageRequest {
     Name: String,
     BlockDeviceMappings: BlockDeviceMappingRequestList = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    NoReboot: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    NoReboot: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateImageRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId, Name = Name)
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings)

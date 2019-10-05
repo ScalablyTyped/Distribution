@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("btoa", JSImport.Namespace)
 @js.native
 object btoaMod extends js.Object {
-  def apply(str: String | Buffer): String = js.native
+  def apply(str: String): String = js.native
+  def apply(str: Buffer): String = js.native
 }
 

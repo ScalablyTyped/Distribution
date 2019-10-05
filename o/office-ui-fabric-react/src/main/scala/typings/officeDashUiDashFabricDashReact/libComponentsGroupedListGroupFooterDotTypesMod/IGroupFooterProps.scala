@@ -3,12 +3,12 @@ package typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupFoo
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
-import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroup
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroupDividerProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewportMod.IViewport
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
@@ -40,7 +40,7 @@ object IGroupFooterProps {
     isSelected: js.UndefOr[Boolean] = js.undefined,
     loadingText: String = null,
     onGroupHeaderClick: /* group */ IGroup => Unit = null,
-    onRenderTitle: IRenderFunction[IGroupHeaderProps] = null,
+    onRenderTitle: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null = null,
     onToggleCollapse: /* group */ IGroup => Unit = null,
     onToggleSelectGroup: /* group */ IGroup => Unit = null,
     onToggleSummarize: /* group */ IGroup => Unit = null,
@@ -67,7 +67,7 @@ object IGroupFooterProps {
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
     if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
     if (onGroupHeaderClick != null) __obj.updateDynamic("onGroupHeaderClick")(js.Any.fromFunction1(onGroupHeaderClick))
-    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(onRenderTitle)
+    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(js.Any.fromFunction2(onRenderTitle))
     if (onToggleCollapse != null) __obj.updateDynamic("onToggleCollapse")(js.Any.fromFunction1(onToggleCollapse))
     if (onToggleSelectGroup != null) __obj.updateDynamic("onToggleSelectGroup")(js.Any.fromFunction1(onToggleSelectGroup))
     if (onToggleSummarize != null) __obj.updateDynamic("onToggleSummarize")(js.Any.fromFunction1(onToggleSummarize))

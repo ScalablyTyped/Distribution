@@ -31,13 +31,13 @@ object ReduxLoggerOptions {
     collapsed: Boolean | LoggerPredicate = null,
     colors: ColorsObject | `false` = null,
     diff: js.UndefOr[Boolean] = js.undefined,
-    diffPredicate: LoggerPredicate = null,
+    diffPredicate: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean = null,
     duration: js.UndefOr[Boolean] = js.undefined,
     errorTransformer: /* error */ js.Any => _ = null,
     level: String | ActionToString | LevelObject = null,
     logErrors: js.UndefOr[Boolean] = js.undefined,
     logger: js.Any = null,
-    predicate: LoggerPredicate = null,
+    predicate: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean = null,
     stateTransformer: /* state */ js.Any => _ = null,
     timestamp: js.UndefOr[Boolean] = js.undefined,
     titleFormatter: (/* formattedAction */ js.Any, /* formattedTime */ String, /* took */ Double) => String = null
@@ -47,13 +47,13 @@ object ReduxLoggerOptions {
     if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (!js.isUndefined(diff)) __obj.updateDynamic("diff")(diff)
-    if (diffPredicate != null) __obj.updateDynamic("diffPredicate")(diffPredicate)
+    if (diffPredicate != null) __obj.updateDynamic("diffPredicate")(js.Any.fromFunction3(diffPredicate))
     if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration)
     if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction1(errorTransformer))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (!js.isUndefined(logErrors)) __obj.updateDynamic("logErrors")(logErrors)
     if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction3(predicate))
     if (stateTransformer != null) __obj.updateDynamic("stateTransformer")(js.Any.fromFunction1(stateTransformer))
     if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
     if (titleFormatter != null) __obj.updateDynamic("titleFormatter")(js.Any.fromFunction3(titleFormatter))

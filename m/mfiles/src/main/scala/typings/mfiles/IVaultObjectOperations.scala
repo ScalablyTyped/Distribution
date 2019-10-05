@@ -1,11 +1,11 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFBuiltInObjectType
-import typings.mfiles.MFilesNs.MFBuiltInView
-import typings.mfiles.MFilesNs.MFLatestSpecificBehavior
-import typings.mfiles.MFilesNs.MFObjectWindowMode
-import typings.mfiles.MFilesNs.MFRelationshipsMode
-import typings.mfiles.MFilesNs.MFilesURLType
+import typings.mfiles.MFiles.MFBuiltInObjectType
+import typings.mfiles.MFiles.MFBuiltInView
+import typings.mfiles.MFiles.MFLatestSpecificBehavior
+import typings.mfiles.MFiles.MFObjectWindowMode
+import typings.mfiles.MFiles.MFRelationshipsMode
+import typings.mfiles.MFiles.MFilesURLType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

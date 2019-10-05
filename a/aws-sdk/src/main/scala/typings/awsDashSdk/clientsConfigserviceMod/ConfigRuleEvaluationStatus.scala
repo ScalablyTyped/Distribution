@@ -58,7 +58,7 @@ object ConfigRuleEvaluationStatus {
     ConfigRuleId: String = null,
     ConfigRuleName: StringWithCharLimit64 = null,
     FirstActivatedTime: _Date = null,
-    FirstEvaluationStarted: js.UndefOr[Boolean] = js.undefined,
+    FirstEvaluationStarted: js.UndefOr[scala.Boolean] = js.undefined,
     LastErrorCode: String = null,
     LastErrorMessage: String = null,
     LastFailedEvaluationTime: _Date = null,

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsArcGISCachedServiceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ArcGISCachedServiceConstructor
+import typings.arcgisDashJsDashApi.__esri.ArcGISCachedServiceConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

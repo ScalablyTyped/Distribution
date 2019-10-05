@@ -1,5 +1,6 @@
 package typings.minimatch.minimatchMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,4 +11,8 @@ class Minimatch protected () extends IMinimatch {
   def this(pattern: String) = this()
   def this(pattern: String, options: IOptions) = this()
 }
+
+@JSImport("minimatch", "Minimatch")
+@js.native
+object Minimatch extends TopLevel[IMinimatchStatic]
 

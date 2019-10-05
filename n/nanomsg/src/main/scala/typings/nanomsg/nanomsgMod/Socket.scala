@@ -18,3 +18,10 @@ class Socket protected () extends js.Object {
   def shutdown(addr: String): Unit = js.native
 }
 
+@JSImport("nanomsg", "socket")
+@js.native
+object socket extends js.Object {
+  def apply(`type`: String): Socket = js.native
+  def apply(`type`: String, opts: Options): Socket = js.native
+}
+

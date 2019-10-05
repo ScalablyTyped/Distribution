@@ -56,18 +56,18 @@ object CreateTrafficMirrorSessionRequest {
     TrafficMirrorTargetId: String,
     ClientToken: String = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PacketLength: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    PacketLength: Int | scala.Double = null,
     TagSpecifications: TagSpecificationList = null,
-    VirtualNetworkId: js.UndefOr[Integer] = js.undefined
+    VirtualNetworkId: Int | scala.Double = null
   ): CreateTrafficMirrorSessionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId, SessionNumber = SessionNumber, TrafficMirrorFilterId = TrafficMirrorFilterId, TrafficMirrorTargetId = TrafficMirrorTargetId)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(PacketLength)) __obj.updateDynamic("PacketLength")(PacketLength)
+    if (PacketLength != null) __obj.updateDynamic("PacketLength")(PacketLength.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
-    if (!js.isUndefined(VirtualNetworkId)) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId)
+    if (VirtualNetworkId != null) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrafficMirrorSessionRequest]
   }
 }

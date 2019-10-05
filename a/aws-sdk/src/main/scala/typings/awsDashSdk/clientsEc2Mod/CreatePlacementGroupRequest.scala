@@ -26,15 +26,15 @@ trait CreatePlacementGroupRequest extends js.Object {
 object CreatePlacementGroupRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     GroupName: String = null,
-    PartitionCount: js.UndefOr[Integer] = js.undefined,
+    PartitionCount: Int | scala.Double = null,
     Strategy: PlacementStrategy = null
   ): CreatePlacementGroupRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName)
-    if (!js.isUndefined(PartitionCount)) __obj.updateDynamic("PartitionCount")(PartitionCount)
+    if (PartitionCount != null) __obj.updateDynamic("PartitionCount")(PartitionCount.asInstanceOf[js.Any])
     if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlacementGroupRequest]
   }

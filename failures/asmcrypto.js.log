@@ -99,7 +99,7 @@
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/asmcrypto.js/dist_es8/rsa/rsa.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/asmcrypto.js),TsIdentLibrarySimple(asmcrypto.js)),TsIdentModule(None,List(asmcrypto.js, dist_es8, rsa, rsa))) [id => asmcrypto.js, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(asmcrypto.js, dist_es8, rsa, rsa)) [id => asmcrypto.js, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(asmcrypto.js) [id => asmcrypto.js, phase => typescript] 
-[info ] ResolveTypeQueries.scala:150 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(BigNumber_extGCD)))) [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js/dist_es8/bignum/bignum) / TsExport() / TsExporteeTree() / TsDeclClass(BigNumber) / TsMemberProperty(extGCD) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:218 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(BigNumber_extGCD)))) [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js/dist_es8/bignum/bignum) / TsExport() / TsExporteeTree() / TsDeclClass(BigNumber) / TsMemberProperty(extGCD) / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js/dist_es8/aes/aes.asm) / TsDeclClass(AES_asm))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(set_key) [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js/dist_es8/aes/aes.asm) / TsDeclClass(AES_asm))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(set_iv) [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js/dist_es8/aes/aes.asm) / TsDeclClass(AES_asm))] 
@@ -360,9 +360,9 @@
 [info ] ExpandCallables.scala:48 Expanded extGCD into 1 methods [id => asmcrypto.js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(asmcrypto.js) / TsDeclClass(BigNumber))] 
 [debug] PhaseRunner.scala:84 Success [id => asmcrypto.js, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing asmcrypto.js [id => asmcrypto.js, phase => scala.js] 
-[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(IllegalArgumentError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(IllegalStateError)] 
 [info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(SecurityError)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(message, name) [id => asmcrypto.js, phase => scala.js, this => Name(typings) / Name(asmcryptoDotJs) / Name(distUnderscoreEs8OtherErrorsMod) / Name(IllegalArgumentError)] 
 [debug] PhaseRunner.scala:84 Success [id => asmcrypto.js, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building asmcrypto_dot_js... [id => asmcrypto.js, phase => build] 
 [error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/asmcryptoDotJs/distUnderscoreEs8HashSha512Sha512DotAsmMod/sha512result.scala:93:143
@@ -379,3 +379,4 @@
 [E] Failed to compile 'asmcrypto_dot_js'
  [id => asmcrypto.js, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [asmcrypto.js => Compilation failed] [id => asmcrypto.js, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [asmcrypto.js => Compilation failed] [id => asmcrypto.js, phase => publish] 

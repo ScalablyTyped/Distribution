@@ -1,6 +1,8 @@
 package typings.fineDashUploader.fineDashUploaderMod
 
 import typings.fineDashUploader.libCoreMod.CustomResizerCallBack
+import typings.fineDashUploader.libCoreMod.PromiseOptions
+import typings.fineDashUploader.libCoreMod.ResizeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,13 +44,13 @@ trait UIThumbnailsOptions extends js.Object {
 object UIThumbnailsOptions {
   @scala.inline
   def apply(
-    customResizer: CustomResizerCallBack = null,
+    customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
     maxCount: Int | Double = null,
     placeholders: UIThumbnailsPlaceholderOptions = null,
     timeBetweenThumbs: Int | Double = null
   ): UIThumbnailsOptions = {
     val __obj = js.Dynamic.literal()
-    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
     if (timeBetweenThumbs != null) __obj.updateDynamic("timeBetweenThumbs")(timeBetweenThumbs.asInstanceOf[js.Any])

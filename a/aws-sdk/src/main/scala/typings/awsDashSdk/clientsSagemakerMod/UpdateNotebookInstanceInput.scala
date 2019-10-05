@@ -66,15 +66,15 @@ object UpdateNotebookInstanceInput {
     AcceleratorTypes: NotebookInstanceAcceleratorTypes = null,
     AdditionalCodeRepositories: AdditionalCodeRepositoryNamesOrUrls = null,
     DefaultCodeRepository: CodeRepositoryNameOrUrl = null,
-    DisassociateAcceleratorTypes: js.UndefOr[DisassociateNotebookInstanceAcceleratorTypes] = js.undefined,
-    DisassociateAdditionalCodeRepositories: js.UndefOr[DisassociateAdditionalCodeRepositories] = js.undefined,
-    DisassociateDefaultCodeRepository: js.UndefOr[DisassociateDefaultCodeRepository] = js.undefined,
-    DisassociateLifecycleConfig: js.UndefOr[DisassociateNotebookInstanceLifecycleConfig] = js.undefined,
+    DisassociateAcceleratorTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    DisassociateAdditionalCodeRepositories: js.UndefOr[scala.Boolean] = js.undefined,
+    DisassociateDefaultCodeRepository: js.UndefOr[scala.Boolean] = js.undefined,
+    DisassociateLifecycleConfig: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceType: InstanceType = null,
     LifecycleConfigName: NotebookInstanceLifecycleConfigName = null,
     RoleArn: RoleArn = null,
     RootAccess: RootAccess = null,
-    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
+    VolumeSizeInGB: Int | Double = null
   ): UpdateNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName)
     if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes)
@@ -88,7 +88,7 @@ object UpdateNotebookInstanceInput {
     if (LifecycleConfigName != null) __obj.updateDynamic("LifecycleConfigName")(LifecycleConfigName)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (RootAccess != null) __obj.updateDynamic("RootAccess")(RootAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB)
+    if (VolumeSizeInGB != null) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotebookInstanceInput]
   }
 }

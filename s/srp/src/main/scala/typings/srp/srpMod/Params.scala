@@ -1,20 +1,21 @@
 package typings.srp.srpMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.bignum.bignumMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Params extends js.Object {
-  var N: typings.bignum.bignumMod.^
+  var N: ^
   var N_length_bits: Double
-  var g: typings.bignum.bignumMod.^
+  var g: ^
   var hash: String
 }
 
 object Params {
   @scala.inline
-  def apply(N: typings.bignum.bignumMod.^, N_length_bits: Double, g: typings.bignum.bignumMod.^, hash: String): Params = {
+  def apply(N: ^, N_length_bits: Double, g: ^, hash: String): Params = {
     val __obj = js.Dynamic.literal(N = N, N_length_bits = N_length_bits, g = g, hash = hash)
   
     __obj.asInstanceOf[Params]

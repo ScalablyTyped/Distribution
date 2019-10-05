@@ -30,12 +30,12 @@ object UpdateMaintenanceStartTimeInput {
     GatewayARN: GatewayARN,
     HourOfDay: HourOfDay,
     MinuteOfHour: MinuteOfHour,
-    DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined,
-    DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
+    DayOfMonth: Int | Double = null,
+    DayOfWeek: Int | Double = null
   ): UpdateMaintenanceStartTimeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN, HourOfDay = HourOfDay, MinuteOfHour = MinuteOfHour)
-    if (!js.isUndefined(DayOfMonth)) __obj.updateDynamic("DayOfMonth")(DayOfMonth)
-    if (!js.isUndefined(DayOfWeek)) __obj.updateDynamic("DayOfWeek")(DayOfWeek)
+    if (DayOfMonth != null) __obj.updateDynamic("DayOfMonth")(DayOfMonth.asInstanceOf[js.Any])
+    if (DayOfWeek != null) __obj.updateDynamic("DayOfWeek")(DayOfWeek.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMaintenanceStartTimeInput]
   }
 }

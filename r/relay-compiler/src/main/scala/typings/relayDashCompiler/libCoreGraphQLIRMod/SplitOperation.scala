@@ -27,13 +27,14 @@ object SplitOperation {
   def apply(
     kind: typings.relayDashCompiler.relayDashCompilerStrings.SplitOperation,
     loc: Location,
-    metadata: Metadata,
     name: String,
     selections: js.Array[Selection],
-    `type`: GraphQLCompositeType
+    `type`: GraphQLCompositeType,
+    metadata: Metadata = null
   ): SplitOperation = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind, loc = loc, name = name, selections = selections)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitOperation]
   }
 }

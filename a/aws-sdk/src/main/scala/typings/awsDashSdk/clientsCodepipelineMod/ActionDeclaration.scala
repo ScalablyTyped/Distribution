@@ -49,7 +49,7 @@ object ActionDeclaration {
     outputArtifacts: OutputArtifactList = null,
     region: AWSRegionName = null,
     roleArn: RoleArn = null,
-    runOrder: js.UndefOr[ActionRunOrder] = js.undefined
+    runOrder: Int | Double = null
   ): ActionDeclaration = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId, name = name)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)
@@ -57,7 +57,7 @@ object ActionDeclaration {
     if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts)
     if (region != null) __obj.updateDynamic("region")(region)
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
-    if (!js.isUndefined(runOrder)) __obj.updateDynamic("runOrder")(runOrder)
+    if (runOrder != null) __obj.updateDynamic("runOrder")(runOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionDeclaration]
   }
 }

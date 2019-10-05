@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashSassMod {
-  import typings.nodeDashSass.nodeDashSassMod.typesNs.ReturnValue
-  import typings.nodeDashSass.nodeDashSassMod.typesNs.Value
+  import typings.nodeDashSass.nodeDashSassMod.types.ReturnValue
+  import typings.nodeDashSass.nodeDashSassMod.types.Value
   import typings.std.Error
   import typings.std.Record
 
@@ -123,8 +123,8 @@ package object nodeDashSassMod {
     - typings.nodeDashSass.Anon_Contents
     - typings.std.Error
     - scala.Null
-    - typings.nodeDashSass.nodeDashSassMod.typesNs.Null
-    - typings.nodeDashSass.nodeDashSassMod.typesNs.Error
+    - typings.nodeDashSass.nodeDashSassMod.types.Null
+    - typings.nodeDashSass.nodeDashSassMod.types.Error
   */
   type ImporterReturnType = _ImporterReturnType | Error | Null
   type SassFunction = SyncSassFunction | AsyncSassFunction

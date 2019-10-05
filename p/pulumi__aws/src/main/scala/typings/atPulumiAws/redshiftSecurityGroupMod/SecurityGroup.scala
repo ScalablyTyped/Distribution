@@ -1,6 +1,6 @@
 package typings.atPulumiAws.redshiftSecurityGroupMod
 
-import typings.atPulumiAws.typesOutputMod.redshiftNs.SecurityGroupIngress
+import typings.atPulumiAws.typesOutputMod.redshift.SecurityGroupIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

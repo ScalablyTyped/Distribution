@@ -34,10 +34,10 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "SoundInstance3d")
 @js.native
 class SoundInstance3d protected ()
-  extends typings.playcanvas.pcNs.SoundInstance3d {
+  extends typings.playcanvas.pc.SoundInstance3d {
   def this(
-    manager: typings.playcanvas.pcNs.SoundManager,
-    sound: typings.playcanvas.pcNs.Sound,
+    manager: typings.playcanvas.pc.SoundManager,
+    sound: typings.playcanvas.pc.Sound,
     options: Anon_DistanceModel
   ) = this()
 }

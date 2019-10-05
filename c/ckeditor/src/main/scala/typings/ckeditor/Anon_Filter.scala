@@ -1,12 +1,12 @@
 package typings.ckeditor
 
-import typings.ckeditor.CKEDITORNs.filter
+import typings.ckeditor.CKEDITOR.filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Filter extends js.Object {
-  var filter: js.UndefOr[typings.ckeditor.CKEDITORNs.filter] = js.undefined
+  var filter: js.UndefOr[typings.ckeditor.CKEDITOR.filter] = js.undefined
 }
 
 object Anon_Filter {

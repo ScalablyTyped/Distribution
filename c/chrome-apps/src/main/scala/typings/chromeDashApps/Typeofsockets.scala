@@ -11,7 +11,7 @@ trait Typeofsockets extends js.Object {
     * @since Chrome 33.
     * @requires Manifest: 'Sockets': {...}
     */
-  val tcpNs: Typeoftcp
+  val tcp: Typeoftcp
   /**
     * Use the chrome.sockets.tcpServer API to create server applications using TCP
     * connections. This API supersedes the TCP functionality previously found in
@@ -20,7 +20,7 @@ trait Typeofsockets extends js.Object {
     * @since Chrome 33
     * @see https://developer.chrome.com/apps/sockets_tcpServer
     */
-  val tcpServerNs: TypeoftcpServer
+  val tcpServer: TypeoftcpServer
   /**
     * Use the chrome.sockets.udp API to send and receive data over the network
     * using UDP connections. This API supersedes the UDP functionality previously
@@ -29,13 +29,13 @@ trait Typeofsockets extends js.Object {
     * @since Chrome 33
     * @see https://developer.chrome.com/apps/sockets_udp
     */
-  val udpNs: Typeofudp
+  val udp: Typeofudp
 }
 
 object Typeofsockets {
   @scala.inline
-  def apply(tcpNs: Typeoftcp, tcpServerNs: TypeoftcpServer, udpNs: Typeofudp): Typeofsockets = {
-    val __obj = js.Dynamic.literal(tcpNs = tcpNs, tcpServerNs = tcpServerNs, udpNs = udpNs)
+  def apply(tcp: Typeoftcp, tcpServer: TypeoftcpServer, udp: Typeofudp): Typeofsockets = {
+    val __obj = js.Dynamic.literal(tcp = tcp, tcpServer = tcpServer, udp = udp)
   
     __obj.asInstanceOf[Typeofsockets]
   }

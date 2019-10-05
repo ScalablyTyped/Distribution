@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "ErrorFromName")
 @js.native
 class ErrorFromName protected ()
-  extends typings.winjs.WinJSNs.ErrorFromName {
+  extends typings.winjs.WinJS.ErrorFromName {
   //#region Constructors
   /**
     * Creates an Error object with the specified name and message properties.

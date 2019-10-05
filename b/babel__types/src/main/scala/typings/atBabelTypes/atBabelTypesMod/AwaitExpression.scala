@@ -38,3 +38,9 @@ object AwaitExpression {
   }
 }
 
+@JSImport("@babel/types", "awaitExpression")
+@js.native
+object awaitExpression extends js.Object {
+  def apply(argument: Expression): AwaitExpression = js.native
+}
+

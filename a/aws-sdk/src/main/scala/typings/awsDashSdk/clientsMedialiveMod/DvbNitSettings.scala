@@ -24,10 +24,10 @@ object DvbNitSettings {
   def apply(
     NetworkId: __integerMin0Max65536,
     NetworkName: __stringMin1Max256,
-    RepInterval: js.UndefOr[__integerMin25Max10000] = js.undefined
+    RepInterval: Int | Double = null
   ): DvbNitSettings = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId, NetworkName = NetworkName)
-    if (!js.isUndefined(RepInterval)) __obj.updateDynamic("RepInterval")(RepInterval)
+    if (RepInterval != null) __obj.updateDynamic("RepInterval")(RepInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbNitSettings]
   }
 }

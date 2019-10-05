@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet
 
-import typings.atOracleOraclejet.ojnboxMod.ojNBoxNs.TooltipContext
+import typings.atOracleOraclejet.ojnboxMod.ojNBox.TooltipContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

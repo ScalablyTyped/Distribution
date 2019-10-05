@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MemberNameArray")
 @js.native
 class MemberNameArray ()
-  extends typings.typescriptDashServices.TypeScriptNs.MemberNameArray
+  extends typings.typescriptDashServices.TypeScript.MemberNameArray
 

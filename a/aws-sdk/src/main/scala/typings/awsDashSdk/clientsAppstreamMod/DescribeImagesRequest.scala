@@ -31,14 +31,14 @@ object DescribeImagesRequest {
   @scala.inline
   def apply(
     Arns: ArnList = null,
-    MaxResults: js.UndefOr[DescribeImagesMaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     Names: StringList = null,
     NextToken: String = null,
     Type: VisibilityType = null
   ): DescribeImagesRequest = {
     val __obj = js.Dynamic.literal()
     if (Arns != null) __obj.updateDynamic("Arns")(Arns)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

@@ -24,12 +24,12 @@ object DescribeCacheSecurityGroupsMessage {
   def apply(
     CacheSecurityGroupName: String = null,
     Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    MaxRecords: Int | scala.Double = null
   ): DescribeCacheSecurityGroupsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheSecurityGroupName != null) __obj.updateDynamic("CacheSecurityGroupName")(CacheSecurityGroupName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheSecurityGroupsMessage]
   }
 }

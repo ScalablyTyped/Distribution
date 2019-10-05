@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsDirectLineMeasurement3DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectLineMeasurement3D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.DirectLineMeasurement3DProperties
+import typings.arcgisDashJsDashApi.__esri.DirectLineMeasurement3D
+import typings.arcgisDashJsDashApi.__esri.DirectLineMeasurement3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

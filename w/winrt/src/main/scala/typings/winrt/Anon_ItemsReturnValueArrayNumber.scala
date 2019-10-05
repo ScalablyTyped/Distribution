@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceQualifier
+import typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

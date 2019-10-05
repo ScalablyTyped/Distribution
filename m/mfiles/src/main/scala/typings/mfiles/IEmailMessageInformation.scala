@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFEmailImportance
-import typings.mfiles.MFilesNs.MFEmailSensitivity
+import typings.mfiles.MFiles.MFEmailImportance
+import typings.mfiles.MFiles.MFEmailSensitivity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

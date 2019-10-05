@@ -62,13 +62,13 @@ object RemediationConfiguration {
     TargetId: StringWithCharLimit256,
     TargetType: RemediationTargetType,
     Arn: StringWithCharLimit1024 = null,
-    Automatic: js.UndefOr[Boolean] = js.undefined,
+    Automatic: js.UndefOr[scala.Boolean] = js.undefined,
     CreatedByService: StringWithCharLimit1024 = null,
     ExecutionControls: ExecutionControls = null,
-    MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.undefined,
+    MaximumAutomaticAttempts: Int | Double = null,
     Parameters: RemediationParameters = null,
     ResourceType: String = null,
-    RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.undefined,
+    RetryAttemptSeconds: Int | Double = null,
     TargetVersion: String = null
   ): RemediationConfiguration = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName, TargetId = TargetId, TargetType = TargetType.asInstanceOf[js.Any])
@@ -76,10 +76,10 @@ object RemediationConfiguration {
     if (!js.isUndefined(Automatic)) __obj.updateDynamic("Automatic")(Automatic)
     if (CreatedByService != null) __obj.updateDynamic("CreatedByService")(CreatedByService)
     if (ExecutionControls != null) __obj.updateDynamic("ExecutionControls")(ExecutionControls)
-    if (!js.isUndefined(MaximumAutomaticAttempts)) __obj.updateDynamic("MaximumAutomaticAttempts")(MaximumAutomaticAttempts)
+    if (MaximumAutomaticAttempts != null) __obj.updateDynamic("MaximumAutomaticAttempts")(MaximumAutomaticAttempts.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
-    if (!js.isUndefined(RetryAttemptSeconds)) __obj.updateDynamic("RetryAttemptSeconds")(RetryAttemptSeconds)
+    if (RetryAttemptSeconds != null) __obj.updateDynamic("RetryAttemptSeconds")(RetryAttemptSeconds.asInstanceOf[js.Any])
     if (TargetVersion != null) __obj.updateDynamic("TargetVersion")(TargetVersion)
     __obj.asInstanceOf[RemediationConfiguration]
   }

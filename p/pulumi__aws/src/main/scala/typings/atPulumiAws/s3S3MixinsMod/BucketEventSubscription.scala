@@ -1,7 +1,7 @@
 package typings.atPulumiAws.s3S3MixinsMod
 
 import typings.atPulumiAws.lambdaMod.EventSubscription
-import typings.atPulumiAws.s3S3MixinsMod.s3BucketMod.Bucket
+import typings.atPulumiAws.s3BucketMod.Bucket
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

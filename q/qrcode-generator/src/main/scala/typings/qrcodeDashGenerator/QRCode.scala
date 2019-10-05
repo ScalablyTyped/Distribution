@@ -1,5 +1,6 @@
 package typings.qrcodeDashGenerator
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,4 +32,8 @@ trait QRCode extends js.Object {
   def renderTo2dContext(context: CanvasRenderingContext2D): Unit = js.native
   def renderTo2dContext(context: CanvasRenderingContext2D, cellSize: Double): Unit = js.native
 }
+
+@JSGlobal("qrcode")
+@js.native
+object qrcode extends TopLevel[QRCodeFactory]
 

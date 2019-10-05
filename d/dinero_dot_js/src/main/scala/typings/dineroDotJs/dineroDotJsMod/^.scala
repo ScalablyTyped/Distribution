@@ -13,6 +13,5 @@ object ^ extends js.Object {
   var globalRoundingMode: String = js.native
   def apply(): Dinero = js.native
   def apply(options: Options): Dinero = js.native
-  def normalizePrecision(objects: js.Array[Dinero]): js.Array[Dinero] = js.native
 }
 

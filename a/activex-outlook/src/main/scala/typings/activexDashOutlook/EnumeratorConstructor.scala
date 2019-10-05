@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.activexDashOutlook.OutlookNs.ItemProperties
-import typings.activexDashOutlook.OutlookNs.ItemProperty
-import typings.activexDashOutlook.OutlookNs.Reminder
-import typings.activexDashOutlook.OutlookNs.Reminders
-import typings.activexDashOutlook.OutlookNs.View
-import typings.activexDashOutlook.OutlookNs.Views
+import typings.activexDashOutlook.Outlook.ItemProperties
+import typings.activexDashOutlook.Outlook.ItemProperty
+import typings.activexDashOutlook.Outlook.Reminder
+import typings.activexDashOutlook.Outlook.Reminders
+import typings.activexDashOutlook.Outlook.View
+import typings.activexDashOutlook.Outlook.Views
 import typings.std.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

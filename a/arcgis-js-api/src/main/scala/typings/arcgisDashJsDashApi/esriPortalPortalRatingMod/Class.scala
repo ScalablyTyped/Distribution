@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPortalPortalRatingMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalRating
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalRatingProperties
+import typings.arcgisDashJsDashApi.__esri.PortalRating
+import typings.arcgisDashJsDashApi.__esri.PortalRatingProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

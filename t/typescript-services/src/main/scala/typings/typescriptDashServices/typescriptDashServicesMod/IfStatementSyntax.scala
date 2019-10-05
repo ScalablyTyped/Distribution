@@ -1,8 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.IExpressionSyntax
-import typings.typescriptDashServices.TypeScriptNs.IStatementSyntax
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.IExpressionSyntax
+import typings.typescriptDashServices.TypeScript.IStatementSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "IfStatementSyntax")
 @js.native
 class IfStatementSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.IfStatementSyntax {
+  extends typings.typescriptDashServices.TypeScript.IfStatementSyntax {
   def this(
     ifKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
     condition: IExpressionSyntax,
     closeParenToken: ISyntaxToken,
     statement: IStatementSyntax,
-    elseClause: typings.typescriptDashServices.TypeScriptNs.ElseClauseSyntax,
+    elseClause: typings.typescriptDashServices.TypeScript.ElseClauseSyntax,
     parsedInStrictMode: Boolean
   ) = this()
 }
@@ -32,7 +32,7 @@ object IfStatementSyntax extends js.Object {
     condition: IExpressionSyntax,
     closeParenToken: ISyntaxToken,
     statement: IStatementSyntax
-  ): typings.typescriptDashServices.TypeScriptNs.IfStatementSyntax = js.native
-  def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptDashServices.TypeScriptNs.IfStatementSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.IfStatementSyntax = js.native
+  def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptDashServices.TypeScript.IfStatementSyntax = js.native
 }
 

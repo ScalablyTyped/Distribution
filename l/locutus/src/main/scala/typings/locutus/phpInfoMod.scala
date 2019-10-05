@@ -7,21 +7,45 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/php/info", JSImport.Namespace)
 @js.native
 object phpInfoMod extends js.Object {
-  def assert_options(): js.Any = js.native
-  def assert_options(what: js.Any): js.Any = js.native
-  def assert_options(what: js.Any, value: js.Any): js.Any = js.native
-  def getenv(): js.Any = js.native
-  def getenv(varname: js.Any): js.Any = js.native
-  def ini_get(): js.Any = js.native
-  def ini_get(varname: js.Any): js.Any = js.native
-  def ini_set(): js.Any = js.native
-  def ini_set(varname: js.Any): js.Any = js.native
-  def ini_set(varname: js.Any, newvalue: js.Any): js.Any = js.native
-  def set_time_limit(): js.Any = js.native
-  def set_time_limit(seconds: js.Any): js.Any = js.native
-  def version_compare(): js.Any = js.native
-  def version_compare(v1: js.Any): js.Any = js.native
-  def version_compare(v1: js.Any, v2: js.Any): js.Any = js.native
-  def version_compare(v1: js.Any, v2: js.Any, operator: js.Any): js.Any = js.native
+  @js.native
+  object assert_options extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(what: js.Any): js.Any = js.native
+    def apply(what: js.Any, value: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object getenv extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(varname: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object ini_get extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(varname: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object ini_set extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(varname: js.Any): js.Any = js.native
+    def apply(varname: js.Any, newvalue: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object set_time_limit extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(seconds: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object version_compare extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(v1: js.Any): js.Any = js.native
+    def apply(v1: js.Any, v2: js.Any): js.Any = js.native
+    def apply(v1: js.Any, v2: js.Any, operator: js.Any): js.Any = js.native
+  }
+  
 }
 

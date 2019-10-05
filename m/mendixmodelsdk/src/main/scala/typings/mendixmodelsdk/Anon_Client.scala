@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.mendixmodelsdk.distCommonMod.commonNs.IErrorCallback
-import typings.mendixmodelsdk.distSdkConfigMod.configurationNs.ISdkConfig
+import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
+import typings.mendixmodelsdk.distSdkConfigMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalModelDashServerDashClientMod.IModelServerClient
 import scala.scalajs.js

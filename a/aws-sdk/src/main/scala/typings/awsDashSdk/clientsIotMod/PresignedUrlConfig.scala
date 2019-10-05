@@ -17,9 +17,9 @@ trait PresignedUrlConfig extends js.Object {
 
 object PresignedUrlConfig {
   @scala.inline
-  def apply(expiresInSec: js.UndefOr[ExpiresInSec] = js.undefined, roleArn: RoleArn = null): PresignedUrlConfig = {
+  def apply(expiresInSec: Int | Double = null, roleArn: RoleArn = null): PresignedUrlConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expiresInSec)) __obj.updateDynamic("expiresInSec")(expiresInSec)
+    if (expiresInSec != null) __obj.updateDynamic("expiresInSec")(expiresInSec.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
     __obj.asInstanceOf[PresignedUrlConfig]
   }

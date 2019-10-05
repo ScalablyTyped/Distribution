@@ -1,6 +1,7 @@
 package typings.atUirouterAngularjs.atUirouterAngularjsMod
 
 import typings.atUirouterCore.libParamsInterfaceMod.RawParams
+import typings.atUirouterCore.libParamsParamMod.DefType
 import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ class Param protected ()
   def this(
     id: String,
     `type`: typings.atUirouterCore.libParamsParamTypeMod.ParamType,
-    location: typings.atUirouterCore.libParamsParamMod.DefType,
+    location: DefType,
     urlConfig: typings.atUirouterCore.libUrlMod.UrlConfig,
     state: StateDeclaration
   ) = this()

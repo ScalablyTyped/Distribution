@@ -1,9 +1,9 @@
 package typings.summernote.summernoteMod.Global
 
-import typings.jquery.JQueryNs.Node
-import typings.summernote.summernoteMod.Global.SummernoteNs.CreateLinkOptions
-import typings.summernote.summernoteMod.Global.SummernoteNs.EditImageCallback
-import typings.summernote.summernoteMod.Global.SummernoteNs.Options
+import typings.jquery.JQuery.Node
+import typings.summernote.summernoteMod.Global.Summernote.CreateLinkOptions
+import typings.summernote.summernoteMod.Global.Summernote.EditImageCallback
+import typings.summernote.summernoteMod.Global.Summernote.Options
 import typings.summernote.summernoteStrings.backColor
 import typings.summernote.summernoteStrings.bold
 import typings.summernote.summernoteStrings.code

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsBasemapGallerySupportBasemapGalleryItemMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapGalleryItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BasemapGalleryItemProperties
+import typings.arcgisDashJsDashApi.__esri.BasemapGalleryItem
+import typings.arcgisDashJsDashApi.__esri.BasemapGalleryItemProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

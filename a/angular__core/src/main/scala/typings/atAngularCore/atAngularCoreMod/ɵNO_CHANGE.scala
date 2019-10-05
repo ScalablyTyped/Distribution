@@ -1,5 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.atAngularCoreStrings.NO_CHANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,12 +10,7 @@ trait ɵNO_CHANGE extends js.Object {
   var brand: NO_CHANGE
 }
 
-object ɵNO_CHANGE {
-  @scala.inline
-  def apply(brand: NO_CHANGE): ɵNO_CHANGE = {
-    val __obj = js.Dynamic.literal(brand = brand)
-  
-    __obj.asInstanceOf[ɵNO_CHANGE]
-  }
-}
+@JSImport("@angular/core", "ɵNO_CHANGE")
+@js.native
+object ɵNO_CHANGE extends TopLevel[ɵNO_CHANGE]
 

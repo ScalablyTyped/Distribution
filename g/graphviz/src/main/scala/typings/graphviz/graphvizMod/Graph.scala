@@ -52,3 +52,9 @@ trait Graph extends HasAttributes {
   def to_dot(): String = js.native
 }
 
+@JSImport("graphviz", "graph")
+@js.native
+object graph extends js.Object {
+  def apply(id: String): Graph = js.native
+}
+

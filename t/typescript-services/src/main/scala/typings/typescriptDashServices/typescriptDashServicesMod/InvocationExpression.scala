@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "InvocationExpression")
 @js.native
 class InvocationExpression protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.InvocationExpression {
+  extends typings.typescriptDashServices.TypeScript.InvocationExpression {
   def this(
-    expression: typings.typescriptDashServices.TypeScriptNs.AST,
-    argumentList: typings.typescriptDashServices.TypeScriptNs.ArgumentList
+    expression: typings.typescriptDashServices.TypeScript.AST,
+    argumentList: typings.typescriptDashServices.TypeScript.ArgumentList
   ) = this()
 }
 

@@ -1,7 +1,7 @@
 package typings.paper
 
-import typings.paper.paperNs.Curve
-import typings.paper.paperNs.Segment
+import typings.paper.paper.Curve
+import typings.paper.paper.Segment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -45,8 +45,8 @@ object GetDASHStreamingSessionURLInput {
     DASHFragmentSelector: DASHFragmentSelector = null,
     DisplayFragmentNumber: DASHDisplayFragmentNumber = null,
     DisplayFragmentTimestamp: DASHDisplayFragmentTimestamp = null,
-    Expires: js.UndefOr[Expires] = js.undefined,
-    MaxManifestFragmentResults: js.UndefOr[PageLimit] = js.undefined,
+    Expires: Int | Double = null,
+    MaxManifestFragmentResults: Int | Double = null,
     PlaybackMode: DASHPlaybackMode = null,
     StreamARN: ResourceARN = null,
     StreamName: StreamName = null
@@ -55,8 +55,8 @@ object GetDASHStreamingSessionURLInput {
     if (DASHFragmentSelector != null) __obj.updateDynamic("DASHFragmentSelector")(DASHFragmentSelector)
     if (DisplayFragmentNumber != null) __obj.updateDynamic("DisplayFragmentNumber")(DisplayFragmentNumber.asInstanceOf[js.Any])
     if (DisplayFragmentTimestamp != null) __obj.updateDynamic("DisplayFragmentTimestamp")(DisplayFragmentTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires)
-    if (!js.isUndefined(MaxManifestFragmentResults)) __obj.updateDynamic("MaxManifestFragmentResults")(MaxManifestFragmentResults)
+    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (MaxManifestFragmentResults != null) __obj.updateDynamic("MaxManifestFragmentResults")(MaxManifestFragmentResults.asInstanceOf[js.Any])
     if (PlaybackMode != null) __obj.updateDynamic("PlaybackMode")(PlaybackMode.asInstanceOf[js.Any])
     if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN)
     if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName)

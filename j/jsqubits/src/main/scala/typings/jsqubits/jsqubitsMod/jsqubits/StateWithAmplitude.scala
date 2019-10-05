@@ -1,0 +1,29 @@
+package typings.jsqubits.jsqubitsMod.jsqubits
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StateWithAmplitude extends js.Object {
+  var amplitude: Complex
+  var index: Double
+  var numBits: Double
+  def asBitString(): String
+  def asNumber(): Double
+}
+
+object StateWithAmplitude {
+  @scala.inline
+  def apply(
+    amplitude: Complex,
+    asBitString: () => String,
+    asNumber: () => Double,
+    index: Double,
+    numBits: Double
+  ): StateWithAmplitude = {
+    val __obj = js.Dynamic.literal(amplitude = amplitude, asBitString = js.Any.fromFunction0(asBitString), asNumber = js.Any.fromFunction0(asNumber), index = index, numBits = numBits)
+  
+    __obj.asInstanceOf[StateWithAmplitude]
+  }
+}
+

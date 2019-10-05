@@ -5,6 +5,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaCoinPersonaCoinDotBaseMod.PersonaCoinBase
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotBaseMod.PersonaBase
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -149,9 +150,9 @@ object IPersonaSharedProps {
     initialsColor: PersonaInitialsColor | String = null,
     isOutOfOffice: js.UndefOr[Boolean] = js.undefined,
     onPhotoLoadingStateChange: /* newImageLoadState */ ImageLoadState => Unit = null,
-    onRenderCoin: IRenderFunction[IPersonaSharedProps] = null,
-    onRenderInitials: IRenderFunction[IPersonaSharedProps] = null,
-    onRenderPersonaCoin: IRenderFunction[IPersonaSharedProps] = null,
+    onRenderCoin: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null = null,
+    onRenderInitials: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null = null,
+    onRenderPersonaCoin: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null = null,
     optionalText: String = null,
     presence: PersonaPresence = null,
     presenceTitle: String = null,
@@ -179,9 +180,9 @@ object IPersonaSharedProps {
     if (initialsColor != null) __obj.updateDynamic("initialsColor")(initialsColor.asInstanceOf[js.Any])
     if (!js.isUndefined(isOutOfOffice)) __obj.updateDynamic("isOutOfOffice")(isOutOfOffice)
     if (onPhotoLoadingStateChange != null) __obj.updateDynamic("onPhotoLoadingStateChange")(js.Any.fromFunction1(onPhotoLoadingStateChange))
-    if (onRenderCoin != null) __obj.updateDynamic("onRenderCoin")(onRenderCoin)
-    if (onRenderInitials != null) __obj.updateDynamic("onRenderInitials")(onRenderInitials)
-    if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(onRenderPersonaCoin)
+    if (onRenderCoin != null) __obj.updateDynamic("onRenderCoin")(js.Any.fromFunction2(onRenderCoin))
+    if (onRenderInitials != null) __obj.updateDynamic("onRenderInitials")(js.Any.fromFunction2(onRenderInitials))
+    if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(js.Any.fromFunction2(onRenderPersonaCoin))
     if (optionalText != null) __obj.updateDynamic("optionalText")(optionalText)
     if (presence != null) __obj.updateDynamic("presence")(presence)
     if (presenceTitle != null) __obj.updateDynamic("presenceTitle")(presenceTitle)

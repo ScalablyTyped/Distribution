@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 object wouterComponents extends wouterProps {
   @scala.inline
-  def Link: ComponentType[typings.wouter.wouterMod.LinkProps] = typings.wouter.wouterMod.^.Link.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.LinkProps]]
+  def Link: ComponentType[typings.wouter.wouterMod.LinkProps] = typings.wouter.wouterMod.Link.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.LinkProps]]
   @scala.inline
-  def Redirect: ComponentType[typings.wouter.wouterMod.RedirectProps] = typings.wouter.wouterMod.^.Redirect.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.RedirectProps]]
+  def Redirect: ComponentType[typings.wouter.wouterMod.RedirectProps] = typings.wouter.wouterMod.Redirect.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.RedirectProps]]
   @scala.inline
-  def Route: ComponentType[typings.wouter.wouterMod.RouteProps] = typings.wouter.wouterMod.^.Route.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.RouteProps]]
+  def Route: ComponentType[typings.wouter.wouterMod.RouteProps] = typings.wouter.wouterMod.Route.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.RouteProps]]
   @scala.inline
-  def Router: ComponentType[Partial[RouterProps] with Anon_Children] = typings.wouter.wouterMod.^.Router.asInstanceOf[typings.react.reactMod.ComponentType[
+  def Router: ComponentType[Partial[RouterProps] with Anon_Children] = typings.wouter.wouterMod.Router.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.std.Partial[typings.wouter.wouterMod.RouterProps] with typings.wouter.Anon_Children]]
   @scala.inline
-  def Switch: ComponentType[typings.wouter.wouterMod.SwitchProps] = typings.wouter.wouterMod.^.Switch.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.SwitchProps]]
+  def Switch: ComponentType[typings.wouter.wouterMod.SwitchProps] = typings.wouter.wouterMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[typings.wouter.wouterMod.SwitchProps]]
 }
 

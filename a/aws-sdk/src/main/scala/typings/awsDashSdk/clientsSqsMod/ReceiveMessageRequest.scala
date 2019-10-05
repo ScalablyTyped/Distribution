@@ -40,19 +40,19 @@ object ReceiveMessageRequest {
   def apply(
     QueueUrl: String,
     AttributeNames: AttributeNameList = null,
-    MaxNumberOfMessages: js.UndefOr[Integer] = js.undefined,
+    MaxNumberOfMessages: Int | Double = null,
     MessageAttributeNames: MessageAttributeNameList = null,
     ReceiveRequestAttemptId: String = null,
-    VisibilityTimeout: js.UndefOr[Integer] = js.undefined,
-    WaitTimeSeconds: js.UndefOr[Integer] = js.undefined
+    VisibilityTimeout: Int | Double = null,
+    WaitTimeSeconds: Int | Double = null
   ): ReceiveMessageRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl)
     if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames)
-    if (!js.isUndefined(MaxNumberOfMessages)) __obj.updateDynamic("MaxNumberOfMessages")(MaxNumberOfMessages)
+    if (MaxNumberOfMessages != null) __obj.updateDynamic("MaxNumberOfMessages")(MaxNumberOfMessages.asInstanceOf[js.Any])
     if (MessageAttributeNames != null) __obj.updateDynamic("MessageAttributeNames")(MessageAttributeNames)
     if (ReceiveRequestAttemptId != null) __obj.updateDynamic("ReceiveRequestAttemptId")(ReceiveRequestAttemptId)
-    if (!js.isUndefined(VisibilityTimeout)) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout)
-    if (!js.isUndefined(WaitTimeSeconds)) __obj.updateDynamic("WaitTimeSeconds")(WaitTimeSeconds)
+    if (VisibilityTimeout != null) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout.asInstanceOf[js.Any])
+    if (WaitTimeSeconds != null) __obj.updateDynamic("WaitTimeSeconds")(WaitTimeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveMessageRequest]
   }
 }

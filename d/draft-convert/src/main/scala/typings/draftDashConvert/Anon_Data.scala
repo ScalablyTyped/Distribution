@@ -1,6 +1,6 @@
 package typings.draftDashConvert
 
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftBlockType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

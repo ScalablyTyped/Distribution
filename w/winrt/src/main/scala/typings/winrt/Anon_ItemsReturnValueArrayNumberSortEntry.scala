@@ -1,6 +1,6 @@
 package typings.winrt
 
-import typings.winrt.WindowsNs.StorageNs.SearchNs.SortEntry
+import typings.winrt.Windows.Storage.Search.SortEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

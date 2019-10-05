@@ -11,6 +11,6 @@ object HistoricalScheduler
   extends Instantiable2[
       /* initialClock */ Double, 
       /* comparer */ js.Function2[/* first */ Double, /* second */ Double, Double], 
-      typings.rxDashLiteDashVirtualtime.RxNs.HistoricalScheduler
+      typings.rxDashLiteDashVirtualtime.Rx.HistoricalScheduler
     ]
 

@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
-import typings.typescriptDashServices.TypeScriptNs.ITypeSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ITypeSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ArrayTypeSyntax")
 @js.native
 class ArrayTypeSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ArrayTypeSyntax {
+  extends typings.typescriptDashServices.TypeScript.ArrayTypeSyntax {
   def this(
     `type`: ITypeSyntax,
     openBracketToken: ISyntaxToken,
@@ -22,6 +22,6 @@ class ArrayTypeSyntax protected ()
 @JSImport("typescript-services", "ArrayTypeSyntax")
 @js.native
 object ArrayTypeSyntax extends js.Object {
-  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScriptNs.ArrayTypeSyntax = js.native
+  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScript.ArrayTypeSyntax = js.native
 }
 

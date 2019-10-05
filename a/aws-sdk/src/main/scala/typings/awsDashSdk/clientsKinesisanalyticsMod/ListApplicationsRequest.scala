@@ -17,13 +17,10 @@ trait ListApplicationsRequest extends js.Object {
 
 object ListApplicationsRequest {
   @scala.inline
-  def apply(
-    ExclusiveStartApplicationName: ApplicationName = null,
-    Limit: js.UndefOr[ListApplicationsInputLimit] = js.undefined
-  ): ListApplicationsRequest = {
+  def apply(ExclusiveStartApplicationName: ApplicationName = null, Limit: Int | Double = null): ListApplicationsRequest = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartApplicationName != null) __obj.updateDynamic("ExclusiveStartApplicationName")(ExclusiveStartApplicationName)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationsRequest]
   }
 }

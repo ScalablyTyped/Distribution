@@ -62,14 +62,14 @@ object CreateProfileRequest {
     WakeWord: WakeWord,
     ClientRequestToken: ClientRequestToken = null,
     Locale: DeviceLocale = null,
-    MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
-    PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
-    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
+    MaxVolumeLimit: Int | Double = null,
+    PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateProfileRequest = {
     val __obj = js.Dynamic.literal(Address = Address, DistanceUnit = DistanceUnit.asInstanceOf[js.Any], ProfileName = ProfileName, TemperatureUnit = TemperatureUnit.asInstanceOf[js.Any], Timezone = Timezone, WakeWord = WakeWord.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (Locale != null) __obj.updateDynamic("Locale")(Locale)
-    if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit)
+    if (MaxVolumeLimit != null) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled)
     if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled)
     __obj.asInstanceOf[CreateProfileRequest]

@@ -12,12 +12,9 @@ trait MessageTransports extends js.Object {
   var writer: MessageWriter
 }
 
-object MessageTransports {
-  @scala.inline
-  def apply(reader: MessageReader, writer: MessageWriter, detached: js.UndefOr[Boolean] = js.undefined): MessageTransports = {
-    val __obj = js.Dynamic.literal(reader = reader, writer = writer)
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    __obj.asInstanceOf[MessageTransports]
-  }
+@JSImport("vscode-languageclient/lib/client", "MessageTransports")
+@js.native
+object MessageTransports extends js.Object {
+  def is(value: js.Any): /* is vscode-languageclient.vscode-languageclient/lib/client.MessageTransports */ Boolean = js.native
 }
 

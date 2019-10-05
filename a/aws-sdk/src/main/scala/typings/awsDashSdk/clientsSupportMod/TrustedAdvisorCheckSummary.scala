@@ -36,7 +36,7 @@ object TrustedAdvisorCheckSummary {
     resourcesSummary: TrustedAdvisorResourcesSummary,
     status: String,
     timestamp: String,
-    hasFlaggedResources: js.UndefOr[Boolean] = js.undefined
+    hasFlaggedResources: js.UndefOr[scala.Boolean] = js.undefined
   ): TrustedAdvisorCheckSummary = {
     val __obj = js.Dynamic.literal(categorySpecificSummary = categorySpecificSummary, checkId = checkId, resourcesSummary = resourcesSummary, status = status, timestamp = timestamp)
     if (!js.isUndefined(hasFlaggedResources)) __obj.updateDynamic("hasFlaggedResources")(hasFlaggedResources)

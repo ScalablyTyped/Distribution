@@ -19,7 +19,7 @@ object GetPutOptions {
     expires: Int | Double = null,
     isExpired: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
-    onExpire: OnExpireCallback = null,
+    onExpire: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit = null,
     storeOnReject: js.UndefOr[Boolean] = js.undefined,
     storeOnResolve: js.UndefOr[Boolean] = js.undefined
   ): GetPutOptions = {
@@ -29,7 +29,7 @@ object GetPutOptions {
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (onExpire != null) __obj.updateDynamic("onExpire")(onExpire)
+    if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
     if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject)
     if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve)
     __obj.asInstanceOf[GetPutOptions]

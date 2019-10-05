@@ -1,6 +1,6 @@
 package typings.activexDashPowerpoint
 
-import typings.activexDashPowerpoint.PowerPointNs.Slide
+import typings.activexDashPowerpoint.PowerPoint.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

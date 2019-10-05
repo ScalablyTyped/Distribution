@@ -1,6 +1,8 @@
 package typings.favicoDotJs
 
-import typings.favicoDotJs.favicojsNs.FavicoJsOptions
+import org.scalablytyped.runtime.TopLevel
+import typings.favicoDotJs.favicojs.FavicoJsOptions
+import typings.favicoDotJs.favicojs.FavicoJsStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +10,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Favico")
 @js.native
 class Favico ()
-  extends typings.favicoDotJs.favicojsNs.Favico {
+  extends typings.favicoDotJs.favicojs.Favico {
   def this(opt: FavicoJsOptions) = this()
 }
+
+@JSGlobal("Favico")
+@js.native
+object Favico extends TopLevel[FavicoJsStatic]
 

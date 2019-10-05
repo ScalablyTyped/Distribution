@@ -16,3 +16,9 @@ class TakeWhile[TResult, TInput] protected () extends Transformer[TResult, TInpu
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "takeWhile")
+@js.native
+object takeWhile extends js.Object {
+  def apply[TInput](pred: js.Function1[/* n */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+}
+

@@ -39,12 +39,12 @@ object LabelingJobForWorkteamSummary {
     WorkRequesterAccountId: AccountId,
     LabelCounters: LabelCountersForWorkteam = null,
     LabelingJobName: LabelingJobName = null,
-    NumberOfHumanWorkersPerDataObject: js.UndefOr[NumberOfHumanWorkersPerDataObject] = js.undefined
+    NumberOfHumanWorkersPerDataObject: Int | Double = null
   ): LabelingJobForWorkteamSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, JobReferenceCode = JobReferenceCode, WorkRequesterAccountId = WorkRequesterAccountId)
     if (LabelCounters != null) __obj.updateDynamic("LabelCounters")(LabelCounters)
     if (LabelingJobName != null) __obj.updateDynamic("LabelingJobName")(LabelingJobName)
-    if (!js.isUndefined(NumberOfHumanWorkersPerDataObject)) __obj.updateDynamic("NumberOfHumanWorkersPerDataObject")(NumberOfHumanWorkersPerDataObject)
+    if (NumberOfHumanWorkersPerDataObject != null) __obj.updateDynamic("NumberOfHumanWorkersPerDataObject")(NumberOfHumanWorkersPerDataObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobForWorkteamSummary]
   }
 }

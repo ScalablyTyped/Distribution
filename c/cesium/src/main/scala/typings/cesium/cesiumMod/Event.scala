@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.EventNs.RemoveCallback
+import typings.cesium.cesiumMod.Event.RemoveCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,5 +16,11 @@ class Event[T /* <: js.Array[_] */] () extends js.Object {
   ): Unit = js.native
   def removeEventListener(listener: js.Function1[/* args */ T, Unit]): Boolean = js.native
   def removeEventListener(listener: js.Function1[/* args */ T, Unit], scope: js.Any): Boolean = js.native
+}
+
+@JSImport("cesium", "Event")
+@js.native
+object Event extends js.Object {
+  type RemoveCallback = js.Function0[Unit]
 }
 

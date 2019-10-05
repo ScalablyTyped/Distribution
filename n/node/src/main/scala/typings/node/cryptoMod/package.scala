@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cryptoMod {
-  import typings.node.NodeJSNs.TypedArray
+  import typings.node.NodeJS.TypedArray
   import typings.std.DataView
 
   type Binary = TypedArray | DataView

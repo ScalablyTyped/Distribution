@@ -1,7 +1,7 @@
 package typings.qlikDashEngineapi
 
-import typings.qlikDashEngineapi.EngineAPINs.INxAxisData
-import typings.qlikDashEngineapi.EngineAPINs.INxDataPage
+import typings.qlikDashEngineapi.EngineAPI.INxAxisData
+import typings.qlikDashEngineapi.EngineAPI.INxDataPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

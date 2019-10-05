@@ -1,6 +1,6 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpMod.keyNs.Key
+import typings.openpgp.openpgpMod.key.Key
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

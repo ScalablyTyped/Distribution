@@ -22,9 +22,9 @@ trait SuspendedState extends js.Object {
 object SuspendedState {
   @scala.inline
   def apply(
-    DynamicScalingInSuspended: js.UndefOr[ScalingSuspended] = js.undefined,
-    DynamicScalingOutSuspended: js.UndefOr[ScalingSuspended] = js.undefined,
-    ScheduledScalingSuspended: js.UndefOr[ScalingSuspended] = js.undefined
+    DynamicScalingInSuspended: js.UndefOr[Boolean] = js.undefined,
+    DynamicScalingOutSuspended: js.UndefOr[Boolean] = js.undefined,
+    ScheduledScalingSuspended: js.UndefOr[Boolean] = js.undefined
   ): SuspendedState = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DynamicScalingInSuspended)) __obj.updateDynamic("DynamicScalingInSuspended")(DynamicScalingInSuspended)

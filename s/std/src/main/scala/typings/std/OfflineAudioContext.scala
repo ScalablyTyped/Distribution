@@ -53,13 +53,6 @@ trait OfflineAudioContext extends BaseAudioContext {
 
 @JSGlobal("OfflineAudioContext")
 @js.native
-class OfflineAudioContextCls protected () extends OfflineAudioContext {
-  def this(contextOptions: OfflineAudioContextOptions) = this()
-  def this(numberOfChannels: Double, length: Double, sampleRate: Double) = this()
-}
-
-@JSGlobal("OfflineAudioContext")
-@js.native
 object OfflineAudioContext
   extends Instantiable1[/* contextOptions */ OfflineAudioContextOptions, OfflineAudioContext]
      with Instantiable3[

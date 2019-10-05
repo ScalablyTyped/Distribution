@@ -27,12 +27,12 @@ object ListDomainsInput {
   @scala.inline
   def apply(
     registrationStatus: RegistrationStatus,
-    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
+    maximumPageSize: Int | Double = null,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
+    reverseOrder: js.UndefOr[Boolean] = js.undefined
   ): ListDomainsInput = {
     val __obj = js.Dynamic.literal(registrationStatus = registrationStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize)
+    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
     __obj.asInstanceOf[ListDomainsInput]

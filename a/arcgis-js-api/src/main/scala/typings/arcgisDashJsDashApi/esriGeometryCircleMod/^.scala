@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryCircleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CircleConstructor
+import typings.arcgisDashJsDashApi.__esri.CircleConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

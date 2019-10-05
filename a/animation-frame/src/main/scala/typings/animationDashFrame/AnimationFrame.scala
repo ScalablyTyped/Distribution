@@ -1,6 +1,7 @@
 package typings.animationDashFrame
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,5 +13,5 @@ trait AnimationFrame extends Instantiable0[AnimationFrame] {
 
 @JSGlobal("AnimationFrame")
 @js.native
-class AnimationFrameCls () extends AnimationFrame
+object AnimationFrame extends TopLevel[AnimationFrame]
 

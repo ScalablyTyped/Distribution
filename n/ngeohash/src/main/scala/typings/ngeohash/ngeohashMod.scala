@@ -1,8 +1,8 @@
 package typings.ngeohash
 
-import typings.ngeohash.ngeohashNs.GeographicBoundingBox
-import typings.ngeohash.ngeohashNs.GeographicPoint
-import typings.ngeohash.ngeohashNs.NSEW
+import typings.ngeohash.ngeohash.GeographicBoundingBox
+import typings.ngeohash.ngeohash.GeographicPoint
+import typings.ngeohash.ngeohash.NSEW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

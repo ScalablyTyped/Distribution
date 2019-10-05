@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Skeleton")
 @js.native
 class Skeleton protected ()
-  extends typings.playcanvas.pcNs.Skeleton {
-  def this(graph: typings.playcanvas.pcNs.GraphNode) = this()
+  extends typings.playcanvas.pc.Skeleton {
+  def this(graph: typings.playcanvas.pc.GraphNode) = this()
 }
 

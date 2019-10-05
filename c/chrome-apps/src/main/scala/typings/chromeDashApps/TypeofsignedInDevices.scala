@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.signedInDevicesNs.DeviceInfo
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.signedInDevices.DeviceInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

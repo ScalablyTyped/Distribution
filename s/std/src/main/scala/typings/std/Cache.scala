@@ -26,9 +26,5 @@ trait Cache extends js.Object {
 
 @JSGlobal("Cache")
 @js.native
-class CacheCls () extends Cache
-
-@JSGlobal("Cache")
-@js.native
 object Cache extends Instantiable0[Cache]
 

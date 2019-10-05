@@ -18,9 +18,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(beforeParse: BeforeParse = null, reviver: Reviver = null): Options = {
+  def apply(beforeParse: /* data */ String => String = null, reviver: Reviver = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (beforeParse != null) __obj.updateDynamic("beforeParse")(beforeParse)
+    if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
     if (reviver != null) __obj.updateDynamic("reviver")(reviver)
     __obj.asInstanceOf[Options]
   }

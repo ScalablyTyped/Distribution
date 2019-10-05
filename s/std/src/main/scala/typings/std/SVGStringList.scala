@@ -25,9 +25,5 @@ trait SVGStringList
 
 @JSGlobal("SVGStringList")
 @js.native
-class SVGStringListCls () extends SVGStringList
-
-@JSGlobal("SVGStringList")
-@js.native
 object SVGStringList extends Instantiable0[SVGStringList]
 

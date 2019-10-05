@@ -1,7 +1,7 @@
 package typings.reactDashMdl.reactDashMdlMod
 
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

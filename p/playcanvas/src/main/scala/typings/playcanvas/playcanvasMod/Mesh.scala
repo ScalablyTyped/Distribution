@@ -37,5 +37,5 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Mesh")
 @js.native
 class Mesh ()
-  extends typings.playcanvas.pcNs.Mesh
+  extends typings.playcanvas.pc.Mesh
 

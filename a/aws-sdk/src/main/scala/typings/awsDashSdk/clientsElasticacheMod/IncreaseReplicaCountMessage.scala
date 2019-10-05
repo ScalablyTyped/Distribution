@@ -28,11 +28,11 @@ object IncreaseReplicaCountMessage {
   def apply(
     ApplyImmediately: Boolean,
     ReplicationGroupId: String,
-    NewReplicaCount: js.UndefOr[IntegerOptional] = js.undefined,
+    NewReplicaCount: Int | scala.Double = null,
     ReplicaConfiguration: ReplicaConfigurationList = null
   ): IncreaseReplicaCountMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately, ReplicationGroupId = ReplicationGroupId)
-    if (!js.isUndefined(NewReplicaCount)) __obj.updateDynamic("NewReplicaCount")(NewReplicaCount)
+    if (NewReplicaCount != null) __obj.updateDynamic("NewReplicaCount")(NewReplicaCount.asInstanceOf[js.Any])
     if (ReplicaConfiguration != null) __obj.updateDynamic("ReplicaConfiguration")(ReplicaConfiguration)
     __obj.asInstanceOf[IncreaseReplicaCountMessage]
   }

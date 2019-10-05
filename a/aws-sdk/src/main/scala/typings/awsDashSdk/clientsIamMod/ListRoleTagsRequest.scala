@@ -21,14 +21,10 @@ trait ListRoleTagsRequest extends js.Object {
 
 object ListRoleTagsRequest {
   @scala.inline
-  def apply(
-    RoleName: roleNameType,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): ListRoleTagsRequest = {
+  def apply(RoleName: roleNameType, Marker: markerType = null, MaxItems: Int | Double = null): ListRoleTagsRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoleTagsRequest]
   }
 }

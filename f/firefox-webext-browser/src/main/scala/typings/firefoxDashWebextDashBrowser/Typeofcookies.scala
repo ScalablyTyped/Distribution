@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.cookiesNs.Cookie
-import typings.firefoxDashWebextDashBrowser.browserNs.cookiesNs.CookieStore
+import typings.firefoxDashWebextDashBrowser.browser.cookies.Cookie
+import typings.firefoxDashWebextDashBrowser.browser.cookies.CookieStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

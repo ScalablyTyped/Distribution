@@ -1,9 +1,9 @@
 package typings.raygun
 
-import typings.raygun.raygunMod.raygunNs.KeyValueObject
-import typings.raygun.raygunMod.raygunNs.RaygunErrorObject
-import typings.raygun.raygunMod.raygunNs.RaygunRequest
-import typings.raygun.raygunMod.raygunNs.RaygunUser
+import typings.raygun.raygunMod.raygun.KeyValueObject
+import typings.raygun.raygunMod.raygun.RaygunErrorObject
+import typings.raygun.raygunMod.raygun.RaygunRequest
+import typings.raygun.raygunMod.raygun.RaygunUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

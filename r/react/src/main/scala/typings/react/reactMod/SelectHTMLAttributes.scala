@@ -28,7 +28,7 @@ object SelectHTMLAttributes {
     form: String = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onChange: ChangeEventHandler[T] = null,
+    onChange: ChangeEvent[T] => Unit = null,
     required: js.UndefOr[Boolean] = js.undefined,
     size: Int | Double = null,
     value: String | js.Array[String] | Double = null
@@ -41,7 +41,7 @@ object SelectHTMLAttributes {
     if (form != null) __obj.updateDynamic("form")(form)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

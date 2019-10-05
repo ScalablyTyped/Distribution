@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object lambdaLambdaMixinsMod {
   import typings.atPulumiAws.Anon_CodePathOptions
+  import typings.atPulumiAws.lambdaFunctionMod.Function
   import typings.atPulumiAws.lambdaFunctionMod.FunctionArgs
-  import typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function
   import typings.atPulumiAws.utilsMod.Overwrite
 
   type BaseCallbackFunctionArgs = Overwrite[FunctionArgs, Anon_CodePathOptions]

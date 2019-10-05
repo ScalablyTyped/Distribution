@@ -17,9 +17,5 @@ trait CSSRuleList extends /* index */ NumberDictionary[CSSRule] {
 
 @JSGlobal("CSSRuleList")
 @js.native
-class CSSRuleListCls () extends CSSRuleList
-
-@JSGlobal("CSSRuleList")
-@js.native
 object CSSRuleList extends Instantiable0[CSSRuleList]
 

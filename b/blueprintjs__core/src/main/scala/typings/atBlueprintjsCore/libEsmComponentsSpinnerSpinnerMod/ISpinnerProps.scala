@@ -28,7 +28,7 @@ trait ISpinnerProps
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   /**
     * A value between 0 and 1 (inclusive) representing how far along the operation is.
@@ -44,7 +44,7 @@ object ISpinnerProps {
     className: String = null,
     intent: Intent = null,
     size: Int | Double = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     value: Int | Double = null
   ): ISpinnerProps = {
     val __obj = js.Dynamic.literal()

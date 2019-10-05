@@ -17,7 +17,7 @@ trait ModifyEbsDefaultKmsKeyIdRequest extends js.Object {
 
 object ModifyEbsDefaultKmsKeyIdRequest {
   @scala.inline
-  def apply(KmsKeyId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ModifyEbsDefaultKmsKeyIdRequest = {
+  def apply(KmsKeyId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ModifyEbsDefaultKmsKeyIdRequest = {
     val __obj = js.Dynamic.literal(KmsKeyId = KmsKeyId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ModifyEbsDefaultKmsKeyIdRequest]

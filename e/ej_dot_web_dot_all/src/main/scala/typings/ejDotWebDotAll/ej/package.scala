@@ -1,0 +1,79 @@
+package typings.ejDotWebDotAll
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object ej {
+  type Accordion = Accordion_
+  type Autocomplete = Autocomplete_
+  type Button = Button_
+  type Calculate = Calculate_
+  type Captcha = Captcha_
+  type CheckBox = CheckBox_
+  type ColorPicker = ColorPicker_
+  type ComboBox = ComboBox_
+  type DatePicker = DatePicker_
+  type DateRangePicker = DateRangePicker_
+  type DateTimePicker = DateTimePicker_
+  type Dialog = Dialog_
+  type DocumentEditor = DocumentEditor_
+  type Draggable = Draggable_
+  type DropDownList = DropDownList_
+  type DropDownTree = DropDownTree_
+  type Droppable = Droppable_
+  type Editor = Editor_
+  type FileExplorer = FileExplorer_
+  type Gantt = Gantt_
+  type Grid = Grid_
+  type GroupButton = GroupButton_
+  type Kanban = Kanban_
+  type ListBox = ListBox_
+  type ListView = ListView_
+  type MaskEdit = MaskEdit_
+  type Menu = Menu_
+  type NavigationDrawer = NavigationDrawer_
+  type Pager = Pager_
+  type PdfViewer = PdfViewer_
+  type PivotChart = PivotChart_
+  type PivotClient = PivotClient_
+  type PivotGauge = PivotGauge_
+  type PivotGrid = PivotGrid_
+  type PivotPager = PivotPager_
+  type PivotSchemaDesigner = PivotSchemaDesigner_
+  type PivotTreeMap = PivotTreeMap_
+  type Print = Print_
+  type ProgressBar = ProgressBar_
+  type RTE = RTE_
+  type RadialMenu = RadialMenu_
+  type RadialSlider = RadialSlider_
+  type RadioButton = RadioButton_
+  type Rating = Rating_
+  type RecurrenceEditor = RecurrenceEditor_
+  type ReportDesigner = ReportDesigner_
+  type ReportViewer = ReportViewer_
+  type Resizable = Resizable_
+  type Ribbon = Ribbon_
+  type Rotator = Rotator_
+  type Schedule = Schedule_
+  type Scroller = Scroller_
+  type Signature = Signature_
+  type Slider = Slider_
+  type Sparkline = Sparkline_
+  type SpellCheck = SpellCheck_
+  type SplitButton = SplitButton_
+  type Splitter = Splitter_
+  type Spreadsheet = Spreadsheet_
+  type SunburstChart = SunburstChart_
+  type Tab = Tab_
+  type TagCloud = TagCloud_
+  type Tile = Tile_
+  type TimePicker = TimePicker_
+  type ToggleButton = ToggleButton_
+  type Toolbar = Toolbar_
+  type Tooltip = Tooltip_
+  type TreeGrid = TreeGrid_
+  type TreeView = TreeView_
+  type Uploadbox = Uploadbox_
+  type WaitingPopup = WaitingPopup_
+}

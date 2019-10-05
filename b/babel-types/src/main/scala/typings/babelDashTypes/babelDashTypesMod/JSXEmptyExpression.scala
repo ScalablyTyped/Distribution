@@ -32,3 +32,9 @@ object JSXEmptyExpression {
   }
 }
 
+@JSImport("babel-types", "jSXEmptyExpression")
+@js.native
+object jSXEmptyExpression extends js.Object {
+  def apply(): JSXEmptyExpression = js.native
+}
+

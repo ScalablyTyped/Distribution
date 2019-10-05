@@ -1,6 +1,6 @@
 package typings.gaeaDashModel
 
-import typings.gaeaDashModel.FitGaeaNs.ViewportComponentFullInfo
+import typings.gaeaDashModel.FitGaea.ViewportComponentFullInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

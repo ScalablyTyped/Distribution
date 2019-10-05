@@ -1,6 +1,6 @@
 package typings.jqueryDotFinger
 
-import typings.jqueryDotFinger.JQueryFingerNs.JQueryFingerOptions
+import typings.jqueryDotFinger.JQueryFinger.JQueryFingerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

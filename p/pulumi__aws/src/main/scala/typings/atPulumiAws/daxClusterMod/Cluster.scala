@@ -1,8 +1,8 @@
 package typings.atPulumiAws.daxClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.daxNs.ClusterNode
-import typings.atPulumiAws.typesOutputMod.daxNs.ClusterServerSideEncryption
+import typings.atPulumiAws.typesOutputMod.dax.ClusterNode
+import typings.atPulumiAws.typesOutputMod.dax.ClusterServerSideEncryption
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

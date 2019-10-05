@@ -1,6 +1,6 @@
 package typings.googleDotVisualization
 
-import typings.googleDotVisualization.googleNs.visualizationNs.LabelStyle
+import typings.googleDotVisualization.google.visualization.LabelStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

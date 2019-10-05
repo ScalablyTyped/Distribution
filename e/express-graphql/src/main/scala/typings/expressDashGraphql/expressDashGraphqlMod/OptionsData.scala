@@ -8,9 +8,14 @@ import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.graphqlMod.GraphQLSchema
 import typings.graphql.graphqlMod.Source
 import typings.graphql.graphqlMod.ValidationContext
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageVisitorMod.ASTVisitor
+import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.graphql.typeDefinitionMod.GraphQLAbstractType
 import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
+import typings.graphql.typeDefinitionMod.GraphQLObjectType
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
 import typings.graphql.validationValidationContextMod.ValidationRule
 import scala.scalajs.js
@@ -113,12 +118,12 @@ object OptionsData {
     customParseFn: /* source */ Source => DocumentNode | Null = null,
     customValidateFn: (/* schema */ GraphQLSchema, /* documentAST */ DocumentNode, /* rules */ js.Array[ValidationRule]) => js.Array[GraphQLError] = null,
     extensions: /* info */ RequestInfo => StringDictionary[_] = null,
-    fieldResolver: GraphQLFieldResolver[_, _, StringDictionary[_]] = null,
+    fieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: /* error */ GraphQLError => _ = null,
     graphiql: js.UndefOr[Boolean] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     rootValue: js.Any = null,
-    typeResolver: GraphQLTypeResolver[_, _, StringDictionary[_]] = null,
+    typeResolver: (_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]] = null,
     validationRules: js.Array[js.Function1[/* ctx */ ValidationContext, ASTVisitor]] = null
   ): OptionsData = {
     val __obj = js.Dynamic.literal(schema = schema)
@@ -128,12 +133,12 @@ object OptionsData {
     if (customParseFn != null) __obj.updateDynamic("customParseFn")(js.Any.fromFunction1(customParseFn))
     if (customValidateFn != null) __obj.updateDynamic("customValidateFn")(js.Any.fromFunction3(customValidateFn))
     if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
-    if (typeResolver != null) __obj.updateDynamic("typeResolver")(typeResolver)
+    if (typeResolver != null) __obj.updateDynamic("typeResolver")(js.Any.fromFunction4(typeResolver))
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
     __obj.asInstanceOf[OptionsData]
   }

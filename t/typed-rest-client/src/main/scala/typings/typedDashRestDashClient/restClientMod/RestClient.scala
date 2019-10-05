@@ -1,6 +1,6 @@
 package typings.typedDashRestDashClient.restClientMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.typedDashRestDashClient.httpClientMod.HttpClient
 import typings.typedDashRestDashClient.interfacesMod.IRequestHandler
 import scala.scalajs.js

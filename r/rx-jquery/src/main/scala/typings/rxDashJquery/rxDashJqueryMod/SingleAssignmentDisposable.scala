@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-jquery", "SingleAssignmentDisposable")
 @js.native
 class SingleAssignmentDisposable ()
-  extends typings.rxDashLite.RxNs.SingleAssignmentDisposable
+  extends typings.rxDashLite.Rx.SingleAssignmentDisposable
 

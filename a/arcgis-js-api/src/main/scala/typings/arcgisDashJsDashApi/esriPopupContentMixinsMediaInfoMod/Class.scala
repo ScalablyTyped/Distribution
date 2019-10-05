@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriPopupContentMixinsMediaInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MediaInfo
+import typings.arcgisDashJsDashApi.__esri.MediaInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

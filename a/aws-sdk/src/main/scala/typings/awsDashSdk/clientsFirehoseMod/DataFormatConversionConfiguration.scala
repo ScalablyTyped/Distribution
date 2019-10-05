@@ -26,7 +26,7 @@ trait DataFormatConversionConfiguration extends js.Object {
 object DataFormatConversionConfiguration {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[BooleanObject] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     InputFormatConfiguration: InputFormatConfiguration = null,
     OutputFormatConfiguration: OutputFormatConfiguration = null,
     SchemaConfiguration: SchemaConfiguration = null

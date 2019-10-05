@@ -34,7 +34,7 @@ trait Schedule extends js.Object {
 object Schedule {
   @scala.inline
   def apply(
-    CopyTags: js.UndefOr[CopyTags] = js.undefined,
+    CopyTags: js.UndefOr[Boolean] = js.undefined,
     CreateRule: CreateRule = null,
     Name: ScheduleName = null,
     RetainRule: RetainRule = null,

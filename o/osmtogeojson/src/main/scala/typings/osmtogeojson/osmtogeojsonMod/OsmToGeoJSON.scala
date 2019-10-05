@@ -1,7 +1,7 @@
 package typings.osmtogeojson.osmtogeojsonMod
 
-import typings.osmtogeojson.osmtogeojsonMod.GeoJSONNs.GeoJSONObject
-import typings.osmtogeojson.osmtogeojsonMod.OsmJSONNs.OsmJSONObject
+import typings.osmtogeojson.osmtogeojsonMod.GeoJSON.GeoJSONObject
+import typings.osmtogeojson.osmtogeojsonMod.OsmJSON.OsmJSONObject
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`

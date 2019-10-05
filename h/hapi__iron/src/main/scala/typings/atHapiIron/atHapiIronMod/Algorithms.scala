@@ -1,5 +1,6 @@
 package typings.atHapiIron.atHapiIronMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atHapiIron.Anon_IvBits
 import typings.atHapiIron.Anon_KeyBits
 import scala.scalajs.js
@@ -21,4 +22,8 @@ object Algorithms {
     __obj.asInstanceOf[Algorithms]
   }
 }
+
+@JSImport("@hapi/iron", "algorithms")
+@js.native
+object algorithms extends TopLevel[Algorithms]
 

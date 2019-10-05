@@ -2,7 +2,7 @@ package typings.reactDashVirtualizedDashSelect.reactDashVirtualizedDashSelectMod
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

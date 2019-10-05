@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -166,67 +167,67 @@ object IgCheckboxEditor {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     allowNullValue: js.UndefOr[Boolean] = js.undefined,
-    blur: BlurEvent = null,
+    blur: (/* event */ Event, /* ui */ BlurEventUIParam) => Unit = null,
     checked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    focus: IgFocusEvent = null,
+    focus: (/* event */ Event, /* ui */ IgFocusEventUIParam) => Unit = null,
     height: String | Double = null,
     iconClass: String = null,
     inputName: String = null,
-    keydown: KeydownEvent = null,
-    keypress: KeypressEvent = null,
-    keyup: KeyupEvent = null,
+    keydown: (/* event */ Event, /* ui */ KeydownEventUIParam) => Unit = null,
+    keypress: (/* event */ Event, /* ui */ KeypressEventUIParam) => Unit = null,
+    keyup: (/* event */ Event, /* ui */ KeyupEventUIParam) => Unit = null,
     language: String = null,
     locale: js.Any = null,
-    mousedown: MousedownEvent = null,
-    mousemove: MousemoveEvent = null,
-    mouseout: MouseoutEvent = null,
-    mouseover: MouseoverEvent = null,
-    mouseup: MouseupEvent = null,
+    mousedown: (/* event */ Event, /* ui */ MousedownEventUIParam) => Unit = null,
+    mousemove: (/* event */ Event, /* ui */ MousemoveEventUIParam) => Unit = null,
+    mouseout: (/* event */ Event, /* ui */ MouseoutEventUIParam) => Unit = null,
+    mouseover: (/* event */ Event, /* ui */ MouseoverEventUIParam) => Unit = null,
+    mouseup: (/* event */ Event, /* ui */ MouseupEventUIParam) => Unit = null,
     nullValue: js.Any = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     regional: String | js.Object = null,
-    rendered: RenderedEvent = null,
-    rendering: RenderingEvent = null,
+    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
+    rendering: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit = null,
     size: String = null,
     tabIndex: Int | Double = null,
     validatorOptions: js.Any = null,
     value: js.Any = null,
-    valueChanged: ValueChangedEvent = null,
-    valueChanging: ValueChangingEvent = null,
+    valueChanged: (/* event */ Event, /* ui */ ValueChangedEventUIParam) => Unit = null,
+    valueChanging: (/* event */ Event, /* ui */ ValueChangingEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgCheckboxEditor = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (inputName != null) __obj.updateDynamic("inputName")(inputName)
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
-    if (keypress != null) __obj.updateDynamic("keypress")(keypress)
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
+    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction2(keydown))
+    if (keypress != null) __obj.updateDynamic("keypress")(js.Any.fromFunction2(keypress))
+    if (keyup != null) __obj.updateDynamic("keyup")(js.Any.fromFunction2(keyup))
     if (language != null) __obj.updateDynamic("language")(language)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (mousedown != null) __obj.updateDynamic("mousedown")(mousedown)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
-    if (mouseup != null) __obj.updateDynamic("mouseup")(mouseup)
+    if (mousedown != null) __obj.updateDynamic("mousedown")(js.Any.fromFunction2(mousedown))
+    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction2(mousemove))
+    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction2(mouseout))
+    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction2(mouseover))
+    if (mouseup != null) __obj.updateDynamic("mouseup")(js.Any.fromFunction2(mouseup))
     if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
+    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2(rendering))
     if (size != null) __obj.updateDynamic("size")(size)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
     if (value != null) __obj.updateDynamic("value")(value)
-    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
-    if (valueChanging != null) __obj.updateDynamic("valueChanging")(valueChanging)
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(js.Any.fromFunction2(valueChanged))
+    if (valueChanging != null) __obj.updateDynamic("valueChanging")(js.Any.fromFunction2(valueChanging))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgCheckboxEditor]
   }

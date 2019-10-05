@@ -1,9 +1,9 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.Buffer
-import typings.titanium.TitaniumNs.Proxy
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.Buffer
+import typings.titanium.Titanium.Proxy
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,100 +14,100 @@ object Ti extends js.Object {
   /**
   	 * The top-level API module, containing methods to output messages to the system log.
   	 */
-  val APINs: TypeofAPI = js.native
+  val API: TypeofAPI = js.native
   /**
   	 * The top-level Accelerometer module, used to determine the device's physical position.
   	 */
-  val AccelerometerNs: TypeofAccelerometer = js.native
+  val Accelerometer: TypeofAccelerometer = js.native
   /**
   	 * Used for transmitting developer-defined Analytics events to the Appcelerator Analytics product.
   	 */
-  val AnalyticsNs: TypeofAnalytics = js.native
+  val Analytics: TypeofAnalytics = js.native
   /**
   	 * The top-level Android module.
   	 */
-  val AndroidNs: TypeofAndroidACTIONAIRPLANEMODECHANGED = js.native
+  val Android: TypeofAndroidACTIONAIRPLANEMODECHANGED = js.native
   /**
   	 * The top-level App module is mainly used for accessing information about the
   	 * application at runtime, and for sending or listening for system events.
   	 */
-  val AppNs: TypeofApp = js.native
+  val App: TypeofApp = js.native
   /**
   	 * The Calendar module provides an API for accessing the native calendar functionality.
   	 */
-  val CalendarNs: TypeofCalendarATTENDEEROLECHAIR = js.native
+  val Calendar: TypeofCalendarATTENDEEROLECHAIR = js.native
   /**
   	 * A module for translating between primitive types and raw byte streams.
   	 */
-  val CodecNs: TypeofCodec = js.native
+  val Codec: TypeofCodec = js.native
   /**
   	 * The top-level Contacts module, used for accessing and modifying the system contacts address book.
   	 */
-  val ContactsNs: TypeofContacts = js.native
+  val Contacts: TypeofContacts = js.native
   /**
   	 * The top-level `Database` module, used for creating and accessing the
   	 * in-application SQLite database.
   	 */
-  val DatabaseNs: TypeofDatabase = js.native
+  val Database: TypeofDatabase = js.native
   /**
   	 * The top level filesystem module, used to access files and directories on the device.
   	 */
-  val FilesystemNs: TypeofFilesystem = js.native
+  val Filesystem: TypeofFilesystem = js.native
   /**
   	 * The top level Geolocation module. The Geolocation module is used for accessing device location based information.
   	 */
-  val GeolocationNs: TypeofGeolocation = js.native
+  val Geolocation: TypeofGeolocation = js.native
   /**
   	 * The Gesture module is responsible for high-level device gestures such as orientation changes
   	 * and shake gestures.
   	 */
-  val GestureNs: TypeofGesture = js.native
+  val Gesture: TypeofGesture = js.native
   /**
   	 * The top level Locale module.
   	 */
-  val LocaleNs: TypeofLocale = js.native
+  val Locale: TypeofLocale = js.native
   /**
   	 * The top-level Media module.
   	 */
-  val MediaNs: TypeofMedia = js.native
+  val Media: TypeofMedia = js.native
   /**
   	 * Base type for all Titanium modules.
   	 */
-  val ModuleNs: TypeofModule = js.native
+  val Module: TypeofModule = js.native
   /**
   	 * The top level network module.
   	 */
-  val NetworkNs: TypeofNetwork = js.native
+  val Network: TypeofNetwork = js.native
   /**
   	 * The top-level Platform module.  The Platform module is used to access the device's platform-related
   	 * functionality.
   	 */
-  val PlatformNs: TypeofPlatform = js.native
+  val Platform: TypeofPlatform = js.native
   /**
   	 * Stream module containing stream utility methods.
   	 */
-  val StreamNs: TypeofStream = js.native
+  val Stream: TypeofStream = js.native
   /**
   	 * The main <Titanium.UI> module.
   	 */
-  val UINs: TypeofUI = js.native
+  val UI: TypeofUI = js.native
   /**
   	 * The top-level Utils module, containing a set of JavaScript methods that are often useful when
   	 * building applications.
   	 */
-  val UtilsNs: TypeofUtils = js.native
+  val Utils: TypeofUtils = js.native
   /**
   	 * Used to enable data and file transfers between a watchOS and iOS application.
   	 */
-  val WatchSessionNs: TypeofWatchSession = js.native
+  val WatchSession: TypeofWatchSession = js.native
   /**
   	 * The top level XML module.  The XML module is used for parsing and processing XML-based content.
   	 */
-  val XMLNs: TypeofXML = js.native
+  val XML: TypeofXML = js.native
   /**
   	 * The top level Yahoo module.  The Yahoo module is used for accessing Yahoo related API services.
   	 */
-  val YahooNs: TypeofYahoo = js.native
+  val Yahoo: TypeofYahoo = js.native
   /**
   	 * The name of the API that this proxy corresponds to.
   	 */

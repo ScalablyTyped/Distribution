@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,27 +22,7 @@ trait env extends js.Object {
   var translate: String
 }
 
-object env {
-  @scala.inline
-  def apply(
-    cssPrefix: String,
-    isFF: Boolean,
-    isIE: Boolean,
-    isSafari: Boolean,
-    isWebKit: Boolean,
-    jsPrefix: String,
-    mouse: js.Any,
-    strict: Boolean,
-    svg: Boolean,
-    transform: Boolean,
-    transition: Boolean,
-    transitionDuration: String,
-    transitionEnd: String,
-    translate: String
-  ): env = {
-    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix, isFF = isFF, isIE = isIE, isSafari = isSafari, isWebKit = isWebKit, jsPrefix = jsPrefix, mouse = mouse, strict = strict, svg = svg, transform = transform, transition = transition, transitionDuration = transitionDuration, transitionEnd = transitionEnd, translate = translate)
-  
-    __obj.asInstanceOf[env]
-  }
-}
+@JSImport("webix", "env")
+@js.native
+object env extends TopLevel[env]
 

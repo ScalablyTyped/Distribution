@@ -14,13 +14,6 @@ trait CompositionEvent extends UIEvent {
 
 @JSGlobal("CompositionEvent")
 @js.native
-class CompositionEventCls protected () extends CompositionEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: CompositionEventInit) = this()
-}
-
-@JSGlobal("CompositionEvent")
-@js.native
 object CompositionEvent
   extends Instantiable1[/* type */ java.lang.String, CompositionEvent]
      with Instantiable2[

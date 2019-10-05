@@ -14,3 +14,10 @@ trait Loader extends js.Object {
   def sanitize(uri: String, options: js.Any): js.Promise[Anon_Href] = js.native
 }
 
+@JSImport("vega-typings/types/runtime", "loader")
+@js.native
+object loader extends js.Object {
+  def apply(): Loader = js.native
+  def apply(opt: LoaderOptions): Loader = js.native
+}
+

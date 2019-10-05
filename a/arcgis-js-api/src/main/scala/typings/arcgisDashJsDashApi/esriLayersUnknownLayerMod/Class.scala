@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersUnknownLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnknownLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.UnknownLayerProperties
+import typings.arcgisDashJsDashApi.__esri.UnknownLayer
+import typings.arcgisDashJsDashApi.__esri.UnknownLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

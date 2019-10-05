@@ -1,6 +1,6 @@
 package typings.reactDashDataDashGrid
 
-import typings.reactDashDataDashGrid.AdazzleReactDataGridNs.SelectionParams
+import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SelectionParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

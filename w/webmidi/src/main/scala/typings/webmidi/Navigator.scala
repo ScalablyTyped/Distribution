@@ -1,7 +1,7 @@
 package typings.webmidi
 
-import typings.webmidi.WebMidiNs.MIDIAccess
-import typings.webmidi.WebMidiNs.MIDIOptions
+import typings.webmidi.WebMidi.MIDIAccess
+import typings.webmidi.WebMidi.MIDIOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayAccountMod
 
-import typings.atPulumiAws.typesInputMod.apigatewayNs.AccountThrottleSettings
+import typings.atPulumiAws.typesInputMod.apigateway.AccountThrottleSettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

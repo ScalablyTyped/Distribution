@@ -23,3 +23,13 @@ trait CRS extends js.Object {
   def zoom(scale: Double): Double = js.native
 }
 
+@JSImport("leaflet", "CRS")
+@js.native
+object CRS extends js.Object {
+  val EPSG3395: CRS = js.native
+  val EPSG3857: CRS = js.native
+  val EPSG4326: CRS = js.native
+  val Earth: CRS = js.native
+  val Simple: CRS = js.native
+}
+

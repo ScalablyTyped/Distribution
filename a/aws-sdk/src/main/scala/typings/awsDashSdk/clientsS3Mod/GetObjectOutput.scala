@@ -137,20 +137,20 @@ object GetObjectOutput {
     ContentDisposition: ContentDisposition = null,
     ContentEncoding: ContentEncoding = null,
     ContentLanguage: ContentLanguage = null,
-    ContentLength: js.UndefOr[ContentLength] = js.undefined,
+    ContentLength: Int | Double = null,
     ContentRange: ContentRange = null,
     ContentType: ContentType = null,
-    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
+    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
     ETag: ETag = null,
     Expiration: Expiration = null,
     Expires: Expires = null,
     LastModified: LastModified = null,
     Metadata: Metadata = null,
-    MissingMeta: js.UndefOr[MissingMeta] = js.undefined,
+    MissingMeta: Int | Double = null,
     ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = null,
     ObjectLockMode: ObjectLockMode = null,
     ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = null,
-    PartsCount: js.UndefOr[PartsCount] = js.undefined,
+    PartsCount: Int | Double = null,
     ReplicationStatus: ReplicationStatus = null,
     RequestCharged: RequestCharged = null,
     Restore: Restore = null,
@@ -159,7 +159,7 @@ object GetObjectOutput {
     SSEKMSKeyId: SSEKMSKeyId = null,
     ServerSideEncryption: ServerSideEncryption = null,
     StorageClass: StorageClass = null,
-    TagCount: js.UndefOr[TagCount] = js.undefined,
+    TagCount: Int | Double = null,
     VersionId: ObjectVersionId = null,
     WebsiteRedirectLocation: WebsiteRedirectLocation = null
   ): GetObjectOutput = {
@@ -170,7 +170,7 @@ object GetObjectOutput {
     if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition)
     if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding)
     if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage)
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength)
+    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
     if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange)
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
     if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker)
@@ -179,11 +179,11 @@ object GetObjectOutput {
     if (Expires != null) __obj.updateDynamic("Expires")(Expires)
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
     if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
-    if (!js.isUndefined(MissingMeta)) __obj.updateDynamic("MissingMeta")(MissingMeta)
+    if (MissingMeta != null) __obj.updateDynamic("MissingMeta")(MissingMeta.asInstanceOf[js.Any])
     if (ObjectLockLegalHoldStatus != null) __obj.updateDynamic("ObjectLockLegalHoldStatus")(ObjectLockLegalHoldStatus.asInstanceOf[js.Any])
     if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
     if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate)
-    if (!js.isUndefined(PartsCount)) __obj.updateDynamic("PartsCount")(PartsCount)
+    if (PartsCount != null) __obj.updateDynamic("PartsCount")(PartsCount.asInstanceOf[js.Any])
     if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (Restore != null) __obj.updateDynamic("Restore")(Restore)
@@ -192,7 +192,7 @@ object GetObjectOutput {
     if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(TagCount)) __obj.updateDynamic("TagCount")(TagCount)
+    if (TagCount != null) __obj.updateDynamic("TagCount")(TagCount.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
     if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation)
     __obj.asInstanceOf[GetObjectOutput]

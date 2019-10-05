@@ -17,7 +17,7 @@ trait DeleteInternetGatewayRequest extends js.Object {
 
 object DeleteInternetGatewayRequest {
   @scala.inline
-  def apply(InternetGatewayId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteInternetGatewayRequest = {
+  def apply(InternetGatewayId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteInternetGatewayRequest]

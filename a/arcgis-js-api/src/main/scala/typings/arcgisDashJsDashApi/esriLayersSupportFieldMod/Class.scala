@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportFieldMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Field
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FieldProperties
+import typings.arcgisDashJsDashApi.__esri.Field
+import typings.arcgisDashJsDashApi.__esri.FieldProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

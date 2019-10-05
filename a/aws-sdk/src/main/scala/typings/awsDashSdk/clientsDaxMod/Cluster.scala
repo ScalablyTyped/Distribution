@@ -78,7 +78,7 @@ trait Cluster extends js.Object {
 object Cluster {
   @scala.inline
   def apply(
-    ActiveNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    ActiveNodes: Int | Double = null,
     ClusterArn: String = null,
     ClusterDiscoveryEndpoint: Endpoint = null,
     ClusterName: String = null,
@@ -94,10 +94,10 @@ object Cluster {
     SecurityGroups: SecurityGroupMembershipList = null,
     Status: String = null,
     SubnetGroup: String = null,
-    TotalNodes: js.UndefOr[IntegerOptional] = js.undefined
+    TotalNodes: Int | Double = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActiveNodes)) __obj.updateDynamic("ActiveNodes")(ActiveNodes)
+    if (ActiveNodes != null) __obj.updateDynamic("ActiveNodes")(ActiveNodes.asInstanceOf[js.Any])
     if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn)
     if (ClusterDiscoveryEndpoint != null) __obj.updateDynamic("ClusterDiscoveryEndpoint")(ClusterDiscoveryEndpoint)
     if (ClusterName != null) __obj.updateDynamic("ClusterName")(ClusterName)
@@ -113,7 +113,7 @@ object Cluster {
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups)
     if (Status != null) __obj.updateDynamic("Status")(Status)
     if (SubnetGroup != null) __obj.updateDynamic("SubnetGroup")(SubnetGroup)
-    if (!js.isUndefined(TotalNodes)) __obj.updateDynamic("TotalNodes")(TotalNodes)
+    if (TotalNodes != null) __obj.updateDynamic("TotalNodes")(TotalNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
 }

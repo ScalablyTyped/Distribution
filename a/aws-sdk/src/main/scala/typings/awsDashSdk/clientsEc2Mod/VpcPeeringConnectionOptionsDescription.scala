@@ -22,9 +22,9 @@ trait VpcPeeringConnectionOptionsDescription extends js.Object {
 object VpcPeeringConnectionOptionsDescription {
   @scala.inline
   def apply(
-    AllowDnsResolutionFromRemoteVpc: js.UndefOr[Boolean] = js.undefined,
-    AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[Boolean] = js.undefined,
-    AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[Boolean] = js.undefined
+    AllowDnsResolutionFromRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[scala.Boolean] = js.undefined
   ): VpcPeeringConnectionOptionsDescription = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AllowDnsResolutionFromRemoteVpc)) __obj.updateDynamic("AllowDnsResolutionFromRemoteVpc")(AllowDnsResolutionFromRemoteVpc)

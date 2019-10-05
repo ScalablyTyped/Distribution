@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
+import typings.typescriptDashServices.TypeScript.PullElementKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "PullSignatureSymbol")
 @js.native
 class PullSignatureSymbol protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol {
-  def this(kind: typings.typescriptDashServices.TypeScriptNs.PullElementKind) = this()
-  def this(kind: typings.typescriptDashServices.TypeScriptNs.PullElementKind, _isDefinition: Boolean) = this()
+  extends typings.typescriptDashServices.TypeScript.PullSignatureSymbol {
+  def this(kind: PullElementKind) = this()
+  def this(kind: PullElementKind, _isDefinition: Boolean) = this()
 }
 
 /* static members */
@@ -17,39 +18,39 @@ class PullSignatureSymbol protected ()
 @js.native
 object PullSignatureSymbol extends js.Object {
   def getSignatureTypeMemberName(
-    candidateSignature: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol,
-    signatures: js.Array[typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol],
-    scopeSymbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol
-  ): typings.typescriptDashServices.TypeScriptNs.MemberNameArray = js.native
+    candidateSignature: typings.typescriptDashServices.TypeScript.PullSignatureSymbol,
+    signatures: js.Array[typings.typescriptDashServices.TypeScript.PullSignatureSymbol],
+    scopeSymbol: typings.typescriptDashServices.TypeScript.PullSymbol
+  ): typings.typescriptDashServices.TypeScript.MemberNameArray = js.native
   def getSignaturesTypeNameEx(
-    signatures: js.Array[typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol],
+    signatures: js.Array[typings.typescriptDashServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean
-  ): js.Array[typings.typescriptDashServices.TypeScriptNs.MemberName] = js.native
+  ): js.Array[typings.typescriptDashServices.TypeScript.MemberName] = js.native
   def getSignaturesTypeNameEx(
-    signatures: js.Array[typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol],
+    signatures: js.Array[typings.typescriptDashServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
-    scopeSymbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol
-  ): js.Array[typings.typescriptDashServices.TypeScriptNs.MemberName] = js.native
+    scopeSymbol: typings.typescriptDashServices.TypeScript.PullSymbol
+  ): js.Array[typings.typescriptDashServices.TypeScript.MemberName] = js.native
   def getSignaturesTypeNameEx(
-    signatures: js.Array[typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol],
+    signatures: js.Array[typings.typescriptDashServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
-    scopeSymbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol,
+    scopeSymbol: typings.typescriptDashServices.TypeScript.PullSymbol,
     getPrettyTypeName: Boolean
-  ): js.Array[typings.typescriptDashServices.TypeScriptNs.MemberName] = js.native
+  ): js.Array[typings.typescriptDashServices.TypeScript.MemberName] = js.native
   def getSignaturesTypeNameEx(
-    signatures: js.Array[typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol],
+    signatures: js.Array[typings.typescriptDashServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
-    scopeSymbol: typings.typescriptDashServices.TypeScriptNs.PullSymbol,
+    scopeSymbol: typings.typescriptDashServices.TypeScript.PullSymbol,
     getPrettyTypeName: Boolean,
-    candidateSignature: typings.typescriptDashServices.TypeScriptNs.PullSignatureSymbol
-  ): js.Array[typings.typescriptDashServices.TypeScriptNs.MemberName] = js.native
+    candidateSignature: typings.typescriptDashServices.TypeScript.PullSignatureSymbol
+  ): js.Array[typings.typescriptDashServices.TypeScript.MemberName] = js.native
 }
 

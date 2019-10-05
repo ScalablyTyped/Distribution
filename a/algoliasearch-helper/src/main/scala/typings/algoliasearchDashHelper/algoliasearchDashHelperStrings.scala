@@ -1,6 +1,6 @@
 package typings.algoliasearchDashHelper
 
-import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParametersNs.Operator
+import typings.algoliasearchDashHelper.algoliasearchDashHelperMod.SearchParameters.Operator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

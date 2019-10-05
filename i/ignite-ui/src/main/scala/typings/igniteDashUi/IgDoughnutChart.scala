@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -183,15 +184,15 @@ object IgDoughnutChart {
   /* optionName */ StringDictionary[js.Any] = null,
     allowSliceExplosion: js.UndefOr[Boolean] = js.undefined,
     allowSliceSelection: js.UndefOr[Boolean] = js.undefined,
-    browserNotSupported: BrowserNotSupportedEvent = null,
-    dataBinding: DataBindingEvent = null,
-    dataBound: DataBoundEvent = null,
+    browserNotSupported: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit = null,
+    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
+    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
     dataSource: js.Any = null,
     dataSourceType: String = null,
     dataSourceUrl: String = null,
     height: String | Double = null,
-    hideTooltip: HideTooltipEvent = null,
-    holeDimensionsChanged: HoleDimensionsChangedEvent = null,
+    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
+    holeDimensionsChanged: (/* event */ Event, /* ui */ HoleDimensionsChangedEventUIParam) => Unit = null,
     innerExtent: Int | Double = null,
     isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.undefined,
     maxRecCount: Int | Double = null,
@@ -200,28 +201,28 @@ object IgDoughnutChart {
     responseTotalRecCountKey: String = null,
     selectedStyle: js.Any = null,
     series: js.Array[IgDoughnutChartSeries] = null,
-    sliceClick: SliceClickEvent = null,
-    tooltipHidden: TooltipHiddenEvent = null,
-    tooltipHiding: TooltipHidingEvent = null,
-    tooltipShowing: TooltipShowingEvent = null,
-    tooltipShown: TooltipShownEvent = null,
+    sliceClick: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Unit = null,
+    tooltipHidden: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit = null,
+    tooltipHiding: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit = null,
+    tooltipShowing: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit = null,
+    tooltipShown: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit = null,
     tooltipTemplate: String = null,
-    updateTooltip: UpdateTooltipEvent = null,
+    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
     width: String | Double = null
   ): IgDoughnutChart = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowSliceExplosion)) __obj.updateDynamic("allowSliceExplosion")(allowSliceExplosion)
     if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection)
-    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
-    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(js.Any.fromFunction2(browserNotSupported))
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
+    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
-    if (holeDimensionsChanged != null) __obj.updateDynamic("holeDimensionsChanged")(holeDimensionsChanged)
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
+    if (holeDimensionsChanged != null) __obj.updateDynamic("holeDimensionsChanged")(js.Any.fromFunction2(holeDimensionsChanged))
     if (innerExtent != null) __obj.updateDynamic("innerExtent")(innerExtent.asInstanceOf[js.Any])
     if (!js.isUndefined(isSurfaceInteractionDisabled)) __obj.updateDynamic("isSurfaceInteractionDisabled")(isSurfaceInteractionDisabled)
     if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
@@ -230,13 +231,13 @@ object IgDoughnutChart {
     if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
     if (series != null) __obj.updateDynamic("series")(series)
-    if (sliceClick != null) __obj.updateDynamic("sliceClick")(sliceClick)
-    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
-    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
-    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
-    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (sliceClick != null) __obj.updateDynamic("sliceClick")(js.Any.fromFunction2(sliceClick))
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2(tooltipHidden))
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2(tooltipHiding))
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2(tooltipShowing))
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2(tooltipShown))
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgDoughnutChart]
   }

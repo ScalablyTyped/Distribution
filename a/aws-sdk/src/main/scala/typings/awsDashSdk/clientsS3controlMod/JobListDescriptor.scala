@@ -46,7 +46,7 @@ object JobListDescriptor {
     Description: NonEmptyMaxLength256String = null,
     JobId: JobId = null,
     Operation: OperationName = null,
-    Priority: js.UndefOr[JobPriority] = js.undefined,
+    Priority: Int | Double = null,
     ProgressSummary: JobProgressSummary = null,
     Status: JobStatus = null,
     TerminationDate: JobTerminationDate = null
@@ -56,7 +56,7 @@ object JobListDescriptor {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (JobId != null) __obj.updateDynamic("JobId")(JobId)
     if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (ProgressSummary != null) __obj.updateDynamic("ProgressSummary")(ProgressSummary)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TerminationDate != null) __obj.updateDynamic("TerminationDate")(TerminationDate)

@@ -38,3 +38,13 @@ object DeclareModule {
   }
 }
 
+@JSImport("babel-types", "declareModule")
+@js.native
+object declareModule extends js.Object {
+  def apply(): DeclareModule = js.native
+  def apply(id: Identifier): DeclareModule = js.native
+  def apply(id: Identifier, body: BlockStatement): DeclareModule = js.native
+  def apply(id: StringLiteral): DeclareModule = js.native
+  def apply(id: StringLiteral, body: BlockStatement): DeclareModule = js.native
+}
+

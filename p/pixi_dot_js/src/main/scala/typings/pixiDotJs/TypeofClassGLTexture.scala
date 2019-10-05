@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
-import typings.pixiDotJs.PIXINs.glCoreNs.GLTexture
+import typings.pixiDotJs.PIXI.glCore.GLTexture
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

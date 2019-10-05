@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "BaseTexture")
 @js.native
 class BaseTexture ()
-  extends typings.pixiDotJs.PIXINs.BaseTexture {
+  extends typings.pixiDotJs.PIXI.BaseTexture {
   def this(source: HTMLCanvasElement) = this()
   def this(source: HTMLImageElement) = this()
   def this(source: HTMLVideoElement) = this()
@@ -26,24 +26,24 @@ class BaseTexture ()
 @JSImport("pixi.js", "BaseTexture")
 @js.native
 object BaseTexture extends js.Object {
-  def addToCache(baseTexture: typings.pixiDotJs.PIXINs.BaseTexture, id: String): Unit = js.native
-  def from(source: String): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: String, scaleMode: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: String, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLCanvasElement): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLCanvasElement, scaleMode: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLCanvasElement, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLImageElement): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLImageElement, scaleMode: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def from(source: HTMLImageElement, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromCanvas(canvas: HTMLCanvasElement): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromCanvas(canvas: HTMLCanvasElement, scaleMode: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromCanvas(canvas: HTMLCanvasElement, scaleMode: Double, origin: String): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromImage(imageUrl: String): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromImage(imageUrl: String, crossorigin: Boolean): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromImage(imageUrl: String, crossorigin: Boolean, scaleMode: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def fromImage(imageUrl: String, crossorigin: Boolean, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def removeFromCache(baseTexture: String): typings.pixiDotJs.PIXINs.BaseTexture = js.native
-  def removeFromCache(baseTexture: typings.pixiDotJs.PIXINs.BaseTexture): typings.pixiDotJs.PIXINs.BaseTexture = js.native
+  def addToCache(baseTexture: typings.pixiDotJs.PIXI.BaseTexture, id: String): Unit = js.native
+  def from(source: String): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: String, scaleMode: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: String, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLCanvasElement): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLCanvasElement, scaleMode: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLCanvasElement, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLImageElement): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLImageElement, scaleMode: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLImageElement, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromCanvas(canvas: HTMLCanvasElement): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromCanvas(canvas: HTMLCanvasElement, scaleMode: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromCanvas(canvas: HTMLCanvasElement, scaleMode: Double, origin: String): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromImage(imageUrl: String): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromImage(imageUrl: String, crossorigin: Boolean): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromImage(imageUrl: String, crossorigin: Boolean, scaleMode: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def fromImage(imageUrl: String, crossorigin: Boolean, scaleMode: Double, sourceScale: Double): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def removeFromCache(baseTexture: String): typings.pixiDotJs.PIXI.BaseTexture = js.native
+  def removeFromCache(baseTexture: typings.pixiDotJs.PIXI.BaseTexture): typings.pixiDotJs.PIXI.BaseTexture = js.native
 }
 

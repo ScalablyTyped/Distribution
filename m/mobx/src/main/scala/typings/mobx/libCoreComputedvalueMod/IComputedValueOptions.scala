@@ -20,7 +20,7 @@ object IComputedValueOptions {
   @scala.inline
   def apply[T](
     context: js.Any = null,
-    equals: IEqualsComparer[T] = null,
+    equals: (T, T) => Boolean = null,
     get: () => T = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -29,7 +29,7 @@ object IComputedValueOptions {
   ): IComputedValueOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
     if (name != null) __obj.updateDynamic("name")(name)

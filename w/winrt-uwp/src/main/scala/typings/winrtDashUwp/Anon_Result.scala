@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.FoundationNs.NumericsNs.Matrix4x4
+import typings.winrtDashUwp.Windows.Foundation.Numerics.Matrix4x4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

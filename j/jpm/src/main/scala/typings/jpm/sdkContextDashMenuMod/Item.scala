@@ -1,5 +1,6 @@
 package typings.jpm.sdkContextDashMenuMod
 
+import typings.jpm.Anon_AccessKey
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,23 +17,9 @@ trait Item extends ItemMenuSeparator {
   def destroy(): Unit
 }
 
-object Item {
-  @scala.inline
-  def apply(
-    context: ItemContext,
-    data: js.Any,
-    destroy: () => Unit,
-    image: String | URL,
-    label: String,
-    contentScript: String | js.Array[String] = null,
-    contentScriptFile: String | js.Array[String] = null,
-    parentMenu: Menu = null
-  ): Item = {
-    val __obj = js.Dynamic.literal(context = context, data = data, destroy = js.Any.fromFunction0(destroy), image = image.asInstanceOf[js.Any], label = label)
-    if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
-    if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
-    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
-    __obj.asInstanceOf[Item]
-  }
+@JSImport("sdk/context-menu", "Item")
+@js.native
+object Item extends js.Object {
+  def apply(options: Anon_AccessKey): Item = js.native
 }
 

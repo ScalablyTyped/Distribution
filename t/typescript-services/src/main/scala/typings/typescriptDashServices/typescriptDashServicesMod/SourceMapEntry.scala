@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SourceMapEntry")
 @js.native
 class SourceMapEntry protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SourceMapEntry {
+  extends typings.typescriptDashServices.TypeScript.SourceMapEntry {
   def this(
     emittedFile: String,
     emittedLine: Double,

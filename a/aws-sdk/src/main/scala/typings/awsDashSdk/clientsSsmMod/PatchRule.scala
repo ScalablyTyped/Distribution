@@ -29,7 +29,7 @@ object PatchRule {
     ApproveAfterDays: ApproveAfterDays,
     PatchFilterGroup: PatchFilterGroup,
     ComplianceLevel: PatchComplianceLevel = null,
-    EnableNonSecurity: js.UndefOr[Boolean] = js.undefined
+    EnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
   ): PatchRule = {
     val __obj = js.Dynamic.literal(ApproveAfterDays = ApproveAfterDays, PatchFilterGroup = PatchFilterGroup)
     if (ComplianceLevel != null) __obj.updateDynamic("ComplianceLevel")(ComplianceLevel.asInstanceOf[js.Any])

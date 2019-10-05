@@ -22,7 +22,7 @@ trait DescribeKeyPairsRequest extends js.Object {
 object DescribeKeyPairsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     KeyNames: KeyNameStringList = null
   ): DescribeKeyPairsRequest = {

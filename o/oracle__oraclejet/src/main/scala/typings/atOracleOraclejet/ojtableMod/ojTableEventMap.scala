@@ -18,18 +18,18 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.loadMoreOnScroll
 import typings.atOracleOraclejet.atOracleOraclejetStrings.none
 import typings.atOracleOraclejet.atOracleOraclejetStrings.rowEdit
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ColumnSelectionEnd
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ColumnSelectionStart
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.CurrentRow
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.RowRendererContext
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.RowSelectionEnd
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.RowSelectionStart
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojAnimateStart
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeCurrentRow
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeRowEdit
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeRowEditEnd
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.ojSort
+import typings.atOracleOraclejet.ojtableMod.ojTable.ColumnSelectionEnd
+import typings.atOracleOraclejet.ojtableMod.ojTable.ColumnSelectionStart
+import typings.atOracleOraclejet.ojtableMod.ojTable.CurrentRow
+import typings.atOracleOraclejet.ojtableMod.ojTable.RowRendererContext
+import typings.atOracleOraclejet.ojtableMod.ojTable.RowSelectionEnd
+import typings.atOracleOraclejet.ojtableMod.ojTable.RowSelectionStart
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojAnimateEnd
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojAnimateStart
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd
+import typings.atOracleOraclejet.ojtableMod.ojTable.ojSort
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -65,12 +65,12 @@ trait ojTableEventMap[K, D] extends baseComponentEventMap[ojTableSettablePropert
     /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
   ]
   var horizontalGridVisibleChanged: JetElementCustomEvent[auto | enabled | disabled]
-  var ojAnimateEnd: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojAnimateEnd
-  var ojAnimateStart: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojAnimateStart
-  var ojBeforeCurrentRow: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeCurrentRow[K]
-  var ojBeforeRowEdit: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeRowEdit
-  var ojBeforeRowEditEnd: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojBeforeRowEditEnd
-  var ojSort: typings.atOracleOraclejet.ojtableMod.ojTableNs.ojSort
+  var ojAnimateEnd: typings.atOracleOraclejet.ojtableMod.ojTable.ojAnimateEnd
+  var ojAnimateStart: typings.atOracleOraclejet.ojtableMod.ojTable.ojAnimateStart
+  var ojBeforeCurrentRow: typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeCurrentRow[K]
+  var ojBeforeRowEdit: typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeRowEdit
+  var ojBeforeRowEditEnd: typings.atOracleOraclejet.ojtableMod.ojTable.ojBeforeRowEditEnd
+  var ojSort: typings.atOracleOraclejet.ojtableMod.ojTable.ojSort
   var rowRendererChanged: JetElementCustomEvent[
     (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
   ]

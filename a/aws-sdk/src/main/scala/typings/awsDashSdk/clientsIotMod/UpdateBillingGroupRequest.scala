@@ -24,10 +24,10 @@ object UpdateBillingGroupRequest {
   def apply(
     billingGroupName: BillingGroupName,
     billingGroupProperties: BillingGroupProperties,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
+    expectedVersion: Int | Double = null
   ): UpdateBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName, billingGroupProperties = billingGroupProperties)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBillingGroupRequest]
   }
 }

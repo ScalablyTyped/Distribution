@@ -6,7 +6,7 @@ import typings.d3DashSelection.d3DashSelectionMod.BaseType
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import typings.dagre.dagreMod.Edge
 import typings.dagre.dagreMod.Node
-import typings.dagre.dagreMod.graphlibNs.Graph
+import typings.dagre.dagreMod.graphlib.Graph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

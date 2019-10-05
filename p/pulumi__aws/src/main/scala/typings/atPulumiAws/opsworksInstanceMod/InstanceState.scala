@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksInstanceMod
 
-import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceEbsBlockDevice
-import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceEphemeralBlockDevice
-import typings.atPulumiAws.typesInputMod.opsworksNs.InstanceRootBlockDevice
+import typings.atPulumiAws.typesInputMod.opsworks.InstanceEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.opsworks.InstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.opsworks.InstanceRootBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

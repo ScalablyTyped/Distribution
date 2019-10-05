@@ -13,7 +13,7 @@ trait EnableVpcClassicLinkResult extends js.Object {
 
 object EnableVpcClassicLinkResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): EnableVpcClassicLinkResult = {
+  def apply(Return: js.UndefOr[scala.Boolean] = js.undefined): EnableVpcClassicLinkResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return)
     __obj.asInstanceOf[EnableVpcClassicLinkResult]

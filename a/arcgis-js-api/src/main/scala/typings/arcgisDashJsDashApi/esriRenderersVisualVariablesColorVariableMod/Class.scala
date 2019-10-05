@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersVisualVariablesColorVariableMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorVariable
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ColorVariableProperties
+import typings.arcgisDashJsDashApi.__esri.ColorVariable
+import typings.arcgisDashJsDashApi.__esri.ColorVariableProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

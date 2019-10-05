@@ -40,6 +40,5 @@ object ^ extends js.Object {
   var Edit: typings.ecore.ecoreMod.Edit = js.native
   var JSObject: typings.ecore.ecoreMod.JSObject = js.native
   var Resource: typings.ecore.ecoreMod.Resource = js.native
-  def create(eClass: EClass): EObject = js.native
 }
 

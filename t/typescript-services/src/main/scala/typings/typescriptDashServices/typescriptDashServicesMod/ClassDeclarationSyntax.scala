@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxList
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxList
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ClassDeclarationSyntax")
 @js.native
 class ClassDeclarationSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ClassDeclarationSyntax {
+  extends typings.typescriptDashServices.TypeScript.ClassDeclarationSyntax {
   def this(
     modifiers: ISyntaxList,
     classKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
-    typeParameterList: typings.typescriptDashServices.TypeScriptNs.TypeParameterListSyntax,
+    typeParameterList: typings.typescriptDashServices.TypeScript.TypeParameterListSyntax,
     heritageClauses: ISyntaxList,
     openBraceToken: ISyntaxToken,
     classElements: ISyntaxList,
@@ -32,7 +32,7 @@ object ClassDeclarationSyntax extends js.Object {
     identifier: ISyntaxToken,
     openBraceToken: ISyntaxToken,
     closeBraceToken: ISyntaxToken
-  ): typings.typescriptDashServices.TypeScriptNs.ClassDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ClassDeclarationSyntax = js.native
+  ): typings.typescriptDashServices.TypeScript.ClassDeclarationSyntax = js.native
+  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScript.ClassDeclarationSyntax = js.native
 }
 

@@ -14,13 +14,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    customLanguageInterface: GetInterfaceLanguageCallback = null,
+    customLanguageInterface: () => String = null,
     logsEnabled: js.UndefOr[Boolean] = js.undefined,
     pseudo: js.UndefOr[Boolean] = js.undefined,
     pseudoMultipleLanguages: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (customLanguageInterface != null) __obj.updateDynamic("customLanguageInterface")(customLanguageInterface)
+    if (customLanguageInterface != null) __obj.updateDynamic("customLanguageInterface")(js.Any.fromFunction0(customLanguageInterface))
     if (!js.isUndefined(logsEnabled)) __obj.updateDynamic("logsEnabled")(logsEnabled)
     if (!js.isUndefined(pseudo)) __obj.updateDynamic("pseudo")(pseudo)
     if (!js.isUndefined(pseudoMultipleLanguages)) __obj.updateDynamic("pseudoMultipleLanguages")(pseudoMultipleLanguages)

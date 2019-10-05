@@ -35,14 +35,14 @@ object OptionsTopBarBackButton {
   @scala.inline
   def apply(
     color: Color = null,
-    icon: js.UndefOr[ImageRequireSource] = js.undefined,
+    icon: Int | Double = null,
     showTitle: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsTopBarBackButton = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle)
     if (title != null) __obj.updateDynamic("title")(title)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelinePipelineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.codepipelineNs.PipelineArtifactStore
-import typings.atPulumiAws.typesInputMod.codepipelineNs.PipelineStage
+import typings.atPulumiAws.typesInputMod.codepipeline.PipelineArtifactStore
+import typings.atPulumiAws.typesInputMod.codepipeline.PipelineStage
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

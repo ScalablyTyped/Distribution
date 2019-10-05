@@ -1,8 +1,8 @@
 package typings.googleDashAppsDashScript
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.DataUnderscoreStudioNs.NumericOperator
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.DataUnderscoreStudioNs.RegexpOperator
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.URLUnderscoreFetchNs.HttpMethod
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.NumericOperator
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.RegexpOperator
+import typings.googleDashAppsDashScript.GoogleAppsScript.URL_Fetch.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,9 +13,15 @@ trait ActionMetaLocation extends js.Object {
 
 object ActionMetaLocation {
   @scala.inline
-  def apply(current: Location, history: Nullable[HistoryData], kind: Nullable[String], prev: Location): ActionMetaLocation = {
-    val __obj = js.Dynamic.literal(current = current, history = history.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], prev = prev)
-  
+  def apply(
+    current: Location,
+    prev: Location,
+    history: Nullable[HistoryData] = null,
+    kind: Nullable[String] = null
+  ): ActionMetaLocation = {
+    val __obj = js.Dynamic.literal(current = current, prev = prev)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionMetaLocation]
   }
 }

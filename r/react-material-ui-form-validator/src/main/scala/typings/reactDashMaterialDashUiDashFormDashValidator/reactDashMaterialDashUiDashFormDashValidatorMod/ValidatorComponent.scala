@@ -1,6 +1,6 @@
 package typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod
 
-import typings.materialDashUi.underscoreUnderscoreMaterialUINs.TextFieldProps
+import typings.materialDashUi.__MaterialUI.TextFieldProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

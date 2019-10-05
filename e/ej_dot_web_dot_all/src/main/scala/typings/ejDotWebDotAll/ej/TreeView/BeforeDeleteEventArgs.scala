@@ -1,0 +1,63 @@
+package typings.ejDotWebDotAll.ej.TreeView
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait BeforeDeleteEventArgs extends js.Object {
+  /** if the event should be canceled; otherwise, false.
+    */
+  var cancel: js.UndefOr[Boolean] = js.undefined
+  /** returns the event object
+    */
+  var event: js.UndefOr[js.Any] = js.undefined
+  /** returns the TreeView model
+    */
+  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  /** returns the given target node values
+    */
+  var nodeDetails: js.UndefOr[js.Any] = js.undefined
+  /** returns the parent node values
+    */
+  var parentDetails: js.UndefOr[js.Any] = js.undefined
+  /** returns the current parent element of the target node
+    */
+  var parentElement: js.UndefOr[js.Any] = js.undefined
+  /** returns the currently removed nodes
+    */
+  var removedNodes: js.UndefOr[js.Array[_]] = js.undefined
+  /** returns the target element, the given node to be deleted
+    */
+  var target: js.UndefOr[js.Any] = js.undefined
+  /** returns the name of the event
+    */
+  var `type`: js.UndefOr[String] = js.undefined
+}
+
+object BeforeDeleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[Boolean] = js.undefined,
+    event: js.Any = null,
+    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    nodeDetails: js.Any = null,
+    parentDetails: js.Any = null,
+    parentElement: js.Any = null,
+    removedNodes: js.Array[_] = null,
+    target: js.Any = null,
+    `type`: String = null
+  ): BeforeDeleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (removedNodes != null) __obj.updateDynamic("removedNodes")(removedNodes)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeDeleteEventArgs]
+  }
+}
+

@@ -34,11 +34,11 @@ trait DescribeSecurityGroupsRequest extends js.Object {
 object DescribeSecurityGroupsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     GroupIds: GroupIdStringList = null,
     GroupNames: GroupNameStringList = null,
-    MaxResults: js.UndefOr[DescribeSecurityGroupsMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object DescribeSecurityGroupsRequest {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds)
     if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeSecurityGroupsRequest]
   }

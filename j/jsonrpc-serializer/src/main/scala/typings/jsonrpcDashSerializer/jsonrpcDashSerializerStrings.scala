@@ -1,7 +1,7 @@
 package typings.jsonrpcDashSerializer
 
 import typings.jsonrpcDashSerializer.jsonrpcDashSerializerMod.PayloadType
-import typings.jsonrpcDashSerializer.jsonrpcDashSerializerMod.errNs.ErrorName
+import typings.jsonrpcDashSerializer.jsonrpcDashSerializerMod.err.ErrorName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

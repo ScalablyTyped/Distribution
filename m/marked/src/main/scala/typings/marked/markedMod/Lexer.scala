@@ -21,3 +21,14 @@ object Lexer extends js.Object {
   def lex(src: TokensList, options: MarkedOptions): TokensList = js.native
 }
 
+@JSImport("marked", "lexer")
+@js.native
+object lexer extends js.Object {
+  /**
+    * @param src String of markdown source to be compiled
+    * @param options Hash of options
+    */
+  def apply(src: String): TokensList = js.native
+  def apply(src: String, options: MarkedOptions): TokensList = js.native
+}
+

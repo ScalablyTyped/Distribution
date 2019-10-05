@@ -1,7 +1,7 @@
 package typings.notify
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.notify.NotifyNs.ClassCSS
+import typings.notify.Notify.ClassCSS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.reactDashPopperDashTooltip.distTypesMod
 
-import typings.popperDotJs.popperDotJsMod.PopperNs.Placement
+import typings.popperDotJs.popperDotJsMod.Popper.Placement
 import typings.reactDashPopper.reactDashPopperMod.RefHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`

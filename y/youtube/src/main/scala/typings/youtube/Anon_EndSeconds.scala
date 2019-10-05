@@ -1,6 +1,6 @@
 package typings.youtube
 
-import typings.youtube.YTNs.SuggestedVideoQuality
+import typings.youtube.YT.SuggestedVideoQuality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

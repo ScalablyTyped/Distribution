@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableMod.HandsontableNs.customBordersNs.BorderOptions
+import typings.handsontable.handsontableMod.Handsontable.customBorders.BorderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

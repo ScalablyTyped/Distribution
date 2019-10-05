@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -38,4 +39,8 @@ trait html extends js.Object {
   def stopEvent(ev: Event): Boolean = js.native
   def triggerEvent(node: HTMLElement, `type`: String, name: String): Unit = js.native
 }
+
+@JSImport("webix", "html")
+@js.native
+object html extends TopLevel[html]
 

@@ -1,7 +1,7 @@
 package typings.gsap.gsapMod
 
-import typings.gsap.gsapNs.Tween
-import typings.gsap.gsapNs.TweenConfig
+import typings.gsap.gsap.Tween
+import typings.gsap.gsap.TweenConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gsap", "TweenMax")
 @js.native
 class TweenMax protected ()
-  extends typings.gsap.gsapNs.TweenMax {
+  extends typings.gsap.gsap.TweenMax {
   def this(target: js.Object, duration: Double, vars: js.Object) = this()
 }
 
@@ -18,31 +18,31 @@ class TweenMax protected ()
 @js.native
 object TweenMax extends js.Object {
   /** Provides a simple way to call a () => void after a set amount of time (or frames). */
-  def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.gsap.gsapNs.TweenMax = js.native
-  def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): typings.gsap.gsapNs.TweenMax = js.native
+  def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.gsap.gsap.TweenMax = js.native
+  def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): typings.gsap.gsap.TweenMax = js.native
   def delayedCall(
     delay: Double,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     params: js.Array[_],
     scope: js.Object
-  ): typings.gsap.gsapNs.TweenMax = js.native
+  ): typings.gsap.gsap.TweenMax = js.native
   def delayedCall(
     delay: Double,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     params: js.Array[_],
     scope: js.Object,
     useFrames: Boolean
-  ): typings.gsap.gsapNs.TweenMax = js.native
+  ): typings.gsap.gsap.TweenMax = js.native
   /**
     * Static method for creating a TweenMax instance that tweens backwards - you define the BEGINNING values and the current values are used as the destination values which is great for
     * doing things like animating objects onto the screen because you can set them up initially the way you want them to look at the end of the tween and then animate in from elsewhere.
     */
-  def from(target: js.Object, duration: Double, vars: js.Object): typings.gsap.gsapNs.TweenMax = js.native
+  def from(target: js.Object, duration: Double, vars: js.Object): typings.gsap.gsap.TweenMax = js.native
   /**
     * Static method for creating a TweenMax instance that allows you to define both the starting and ending values (as opposed to to() and from() tweens which are based on the target's
     * current values at one end or the other).
     */
-  def fromTo(target: js.Object, duration: Double, fromVars: js.Object, toVars: js.Object): typings.gsap.gsapNs.TweenMax = js.native
+  def fromTo(target: js.Object, duration: Double, fromVars: js.Object, toVars: js.Object): typings.gsap.gsap.TweenMax = js.native
   /** Returns an array containing all tweens (and optionally timelines too, excluding the root timelines). */
   def getAllTweens(): js.Array[Tween] = js.native
   def getAllTweens(includeTimelines: Boolean): js.Array[Tween] = js.native
@@ -81,7 +81,7 @@ object TweenMax extends js.Object {
   def resumeAll(tweens: Boolean, delayedCalls: Boolean): Unit = js.native
   def resumeAll(tweens: Boolean, delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   /** Immediately sets properties of the target accordingly - essentially a zero-duration to() tween with a more intuitive name. */
-  def set(target: js.Object, vars: js.Object): typings.gsap.gsapNs.TweenMax = js.native
+  def set(target: js.Object, vars: js.Object): typings.gsap.gsap.TweenMax = js.native
   /**
     * Tweens an array of targets from a common set of destination values (using the current values as the destination), but staggers their start times by a specified amount of time, creating
     * an evenly-spaced sequence with a surprisingly small amount of code.
@@ -173,6 +173,6 @@ object TweenMax extends js.Object {
     onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
   /** Static method for creating a TweenMax instance that animates to the specified destination values (from the current values). */
-  def to(target: js.Object, duration: Double, vars: TweenConfig): typings.gsap.gsapNs.TweenMax = js.native
+  def to(target: js.Object, duration: Double, vars: TweenConfig): typings.gsap.gsap.TweenMax = js.native
 }
 

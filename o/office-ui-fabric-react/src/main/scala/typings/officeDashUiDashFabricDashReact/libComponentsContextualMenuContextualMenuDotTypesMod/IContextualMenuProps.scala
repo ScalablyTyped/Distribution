@@ -6,6 +6,7 @@ import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIRectangleMod.IRectangle
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
+import typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.Target
 import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotClassNamesMod.IContextualMenuClassNames
@@ -16,6 +17,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithRespons
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.StatelessComponent
@@ -86,9 +88,7 @@ trait IContextualMenuProps
     * How the element should be positioned
     * @defaultvalue DirectionalHint.bottomAutoEdge
     */
-  var directionalHint: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
-  ] = js.undefined
+  var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
   /**
     * If true the position will not change sides in an attempt to fit the ContextualMenu within bounds.
     * It will still attempt to align it to whatever bounds are given.
@@ -99,9 +99,7 @@ trait IContextualMenuProps
     * How the element should be positioned in RTL layouts.
     * If not specified, a mirror of `directionalHint` will be used instead
     */
-  var directionalHintForRTL: js.UndefOr[
-    typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
-  ] = js.undefined
+  var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
   /**
     * If true do not render on a new layer. If false render on a new layer.
     * @defaultvalue false
@@ -263,9 +261,9 @@ object IContextualMenuProps {
     contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps] = null,
     coverTarget: js.UndefOr[Boolean] = js.undefined,
     delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined,
-    directionalHint: typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint = null,
+    directionalHint: DirectionalHint = null,
     directionalHintFixed: js.UndefOr[Boolean] = js.undefined,
-    directionalHintForRTL: typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint = null,
+    directionalHintForRTL: DirectionalHint = null,
     doNotLayer: js.UndefOr[Boolean] = js.undefined,
     focusZoneProps: IFocusZoneProps = null,
     gapSpace: Int | Double = null,
@@ -279,8 +277,8 @@ object IContextualMenuProps {
     onItemClick: (/* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], /* item */ js.UndefOr[IContextualMenuItem]) => Boolean | Unit = null,
     onMenuDismissed: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Unit = null,
     onMenuOpened: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Unit = null,
-    onRenderMenuList: IRenderFunction[IContextualMenuListProps] = null,
-    onRenderSubMenu: IRenderFunction[IContextualMenuProps] = null,
+    onRenderMenuList: (/* props */ js.UndefOr[IContextualMenuListProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuListProps], Element | Null]]) => Element | Null = null,
+    onRenderSubMenu: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuProps], Element | Null]]) => Element | Null = null,
     responsiveMode: ResponsiveMode = null,
     shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined,
     shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined,
@@ -320,8 +318,8 @@ object IContextualMenuProps {
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onMenuDismissed != null) __obj.updateDynamic("onMenuDismissed")(js.Any.fromFunction1(onMenuDismissed))
     if (onMenuOpened != null) __obj.updateDynamic("onMenuOpened")(js.Any.fromFunction1(onMenuOpened))
-    if (onRenderMenuList != null) __obj.updateDynamic("onRenderMenuList")(onRenderMenuList)
-    if (onRenderSubMenu != null) __obj.updateDynamic("onRenderSubMenu")(onRenderSubMenu)
+    if (onRenderMenuList != null) __obj.updateDynamic("onRenderMenuList")(js.Any.fromFunction2(onRenderMenuList))
+    if (onRenderSubMenu != null) __obj.updateDynamic("onRenderSubMenu")(js.Any.fromFunction2(onRenderSubMenu))
     if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
     if (!js.isUndefined(shouldFocusOnContainer)) __obj.updateDynamic("shouldFocusOnContainer")(shouldFocusOnContainer)
     if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount)

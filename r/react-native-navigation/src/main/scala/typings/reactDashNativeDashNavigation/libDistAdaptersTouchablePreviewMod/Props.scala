@@ -24,14 +24,15 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     onPeekIn: () => Unit = null,
     onPeekOut: () => Unit = null,
     onPress: () => Unit = null,
     onPressIn: /* payload */ Anon_ReactTag => Unit = null,
     touchableComponent: TouchableHighlight | TouchableOpacity | TouchableNativeFeedback | TouchableWithoutFeedback | ReactNode = null
   ): Props = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onPeekIn != null) __obj.updateDynamic("onPeekIn")(js.Any.fromFunction0(onPeekIn))
     if (onPeekOut != null) __obj.updateDynamic("onPeekOut")(js.Any.fromFunction0(onPeekOut))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))

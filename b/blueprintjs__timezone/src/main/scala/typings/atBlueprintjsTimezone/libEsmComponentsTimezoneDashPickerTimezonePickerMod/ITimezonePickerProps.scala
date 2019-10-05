@@ -5,6 +5,7 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmComponentsButtonAbstractButtonMod.IButtonProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsInputGroupMod.IInputGroupProps
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
+import typings.atBlueprintjsTimezone.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
 import typings.std.Date
 import typings.std.Partial
 import scala.scalajs.js
@@ -59,9 +60,7 @@ trait ITimezonePickerProps extends IProps {
     * This prop will be ignored if `children` is provided.
     * @default TimezoneDisplayFormat.OFFSET
     */
-  var valueDisplayFormat: js.UndefOr[
-    typings.atBlueprintjsTimezone.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
-  ] = js.undefined
+  var valueDisplayFormat: js.UndefOr[TimezoneDisplayFormat] = js.undefined
   /**
     * Callback invoked when the user selects a timezone.
     */
@@ -81,7 +80,7 @@ object ITimezonePickerProps {
     popoverProps: Partial[IPopoverProps] = null,
     showLocalTimezone: js.UndefOr[Boolean] = js.undefined,
     value: String = null,
-    valueDisplayFormat: typings.atBlueprintjsTimezone.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat = null
+    valueDisplayFormat: TimezoneDisplayFormat = null
   ): ITimezonePickerProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)

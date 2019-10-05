@@ -1,7 +1,7 @@
 package typings.inquirer.libUiPromptMod
 
 import typings.inquirer.inquirerMod.StreamOptions
-import typings.inquirer.inquirerMod.promptsNs.PromptCollection
+import typings.inquirer.inquirerMod.prompts.PromptCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

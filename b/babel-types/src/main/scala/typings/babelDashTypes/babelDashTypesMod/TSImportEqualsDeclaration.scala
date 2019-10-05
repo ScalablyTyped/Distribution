@@ -14,27 +14,10 @@ trait TSImportEqualsDeclaration
   var type_TSImportEqualsDeclaration: typings.babelDashTypes.babelDashTypesStrings.TSImportEqualsDeclaration
 }
 
-object TSImportEqualsDeclaration {
-  @scala.inline
-  def apply(
-    end: Double,
-    id: Identifier,
-    loc: SourceLocation,
-    moduleReference: TSEntityName | TSExternalModuleReference,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSImportEqualsDeclaration,
-    innerComments: js.Array[Comment] = null,
-    isExport: js.UndefOr[Boolean] = js.undefined,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSImportEqualsDeclaration = {
-    val __obj = js.Dynamic.literal(end = end, id = id, loc = loc, moduleReference = moduleReference.asInstanceOf[js.Any], start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSImportEqualsDeclaration]
-  }
+@JSImport("babel-types", "TSImportEqualsDeclaration")
+@js.native
+object TSImportEqualsDeclaration extends js.Object {
+  def apply(id: Identifier, moduleReference: TSEntityName): TSImportEqualsDeclaration = js.native
+  def apply(id: Identifier, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = js.native
 }
 

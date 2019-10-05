@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsHistogramRangeSliderMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HistogramRangeSlider
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HistogramRangeSliderProperties
+import typings.arcgisDashJsDashApi.__esri.HistogramRangeSlider
+import typings.arcgisDashJsDashApi.__esri.HistogramRangeSliderProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

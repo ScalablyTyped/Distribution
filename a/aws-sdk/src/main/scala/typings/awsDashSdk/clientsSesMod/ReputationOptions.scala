@@ -23,8 +23,8 @@ object ReputationOptions {
   @scala.inline
   def apply(
     LastFreshStart: LastFreshStart = null,
-    ReputationMetricsEnabled: js.UndefOr[Enabled] = js.undefined,
-    SendingEnabled: js.UndefOr[Enabled] = js.undefined
+    ReputationMetricsEnabled: js.UndefOr[Boolean] = js.undefined,
+    SendingEnabled: js.UndefOr[Boolean] = js.undefined
   ): ReputationOptions = {
     val __obj = js.Dynamic.literal()
     if (LastFreshStart != null) __obj.updateDynamic("LastFreshStart")(LastFreshStart)

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportAreasAndLengthsParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreasAndLengthsParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreasAndLengthsParametersProperties
+import typings.arcgisDashJsDashApi.__esri.AreasAndLengthsParameters
+import typings.arcgisDashJsDashApi.__esri.AreasAndLengthsParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.avoscloudDashSdk.leanengineMod
 
-import typings.avoscloudDashSdk.avoscloudDashSdkMod.ObjectNs.DestroyAllOptions
-import typings.avoscloudDashSdk.avoscloudDashSdkMod.ObjectNs.SaveAllOptions
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.Object.DestroyAllOptions
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.Object.SaveAllOptions
 import typings.avoscloudDashSdk.avoscloudDashSdkMod.SuccessFailureOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpMod.typeNs.keyidNs.Keyid
+import typings.openpgp.openpgpMod.`type`.keyid.Keyid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

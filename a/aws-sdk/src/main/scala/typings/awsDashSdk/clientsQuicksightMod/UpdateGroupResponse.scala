@@ -21,11 +21,11 @@ trait UpdateGroupResponse extends js.Object {
 
 object UpdateGroupResponse {
   @scala.inline
-  def apply(Group: Group = null, RequestId: String = null, Status: js.UndefOr[StatusCode] = js.undefined): UpdateGroupResponse = {
+  def apply(Group: Group = null, RequestId: String = null, Status: Int | Double = null): UpdateGroupResponse = {
     val __obj = js.Dynamic.literal()
     if (Group != null) __obj.updateDynamic("Group")(Group)
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status)
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupResponse]
   }
 }

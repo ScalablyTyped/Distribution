@@ -9,7 +9,6 @@ import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStri
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.phone
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.text
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.top
-import typings.atAntDashDesignReactDashNative.esInputDashItemPropsTypeMod.InputEventHandler
 import typings.atAntDashDesignReactDashNative.esInputDashItemPropsTypeMod.InputItemPropsType
 import typings.atAntDashDesignReactDashNative.esInputDashItemStyleMod.InputItemStyle
 import typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeStyles
@@ -45,12 +44,12 @@ object InputItemProps {
     locale: js.Object = null,
     maxLength: Int | Double = null,
     name: String = null,
-    onBlur: InputEventHandler = null,
+    onBlur: /* value */ js.UndefOr[String] => Unit = null,
     onChange: /* value */ String => Unit = null,
     onErrorClick: /* event */ GestureResponderEvent => Unit = null,
     onExtraClick: /* event */ GestureResponderEvent => Unit = null,
-    onFocus: InputEventHandler = null,
-    onVirtualKeyboardConfirm: InputEventHandler = null,
+    onFocus: /* value */ js.UndefOr[String] => Unit = null,
+    onVirtualKeyboardConfirm: /* value */ js.UndefOr[String] => Unit = null,
     placeholder: String = null,
     styles: Partial[InputItemStyle] = null,
     textAlign: left | center = null,
@@ -71,12 +70,12 @@ object InputItemProps {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction1(onErrorClick))
     if (onExtraClick != null) __obj.updateDynamic("onExtraClick")(js.Any.fromFunction1(onExtraClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(onVirtualKeyboardConfirm)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(js.Any.fromFunction1(onVirtualKeyboardConfirm))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])

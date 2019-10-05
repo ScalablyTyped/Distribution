@@ -1,9 +1,9 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.electron.ElectronNs.Menu
-import typings.electron.ElectronNs.MenuItem
-import typings.electron.ElectronNs.MenuItemConstructorOptions
+import typings.electron.Electron.Menu
+import typings.electron.Electron.MenuItem
+import typings.electron.Electron.MenuItemConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

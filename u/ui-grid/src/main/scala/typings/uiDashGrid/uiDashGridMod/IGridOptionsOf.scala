@@ -5,28 +5,28 @@ import typings.angular.angularMod.IPromise
 import typings.angular.angularMod.IScope
 import typings.uiDashGrid.Fn_CurrentPage
 import typings.uiDashGrid.Fn_Scope
-import typings.uiDashGrid.uiDashGridMod.treeBaseNs.IGridTreeBaseCustomAggregation
+import typings.uiDashGrid.uiDashGridMod.treeBase.IGridTreeBaseCustomAggregation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGridOptionsOf[TEntity]
-  extends typings.uiDashGrid.uiDashGridMod.cellNavNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.editNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.expandableNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.exporterNs.IGridOptions[TEntity]
-     with typings.uiDashGrid.uiDashGridMod.groupingNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.importerNs.IGridOptions[TEntity]
-     with typings.uiDashGrid.uiDashGridMod.infiniteScrollNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.moveColumnsNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.paginationNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.pinningNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.resizeColumnsNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.rowEditNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.saveStateNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.selectionNs.IGridOptions
-     with typings.uiDashGrid.uiDashGridMod.treeBaseNs.IGridOptions[TEntity]
-     with typings.uiDashGrid.uiDashGridMod.treeViewNs.IGridOptions {
+  extends typings.uiDashGrid.uiDashGridMod.cellNav.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.edit.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.expandable.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.exporter.IGridOptions[TEntity]
+     with typings.uiDashGrid.uiDashGridMod.grouping.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.importer.IGridOptions[TEntity]
+     with typings.uiDashGrid.uiDashGridMod.infiniteScroll.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.moveColumns.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.pagination.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.pinning.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.resizeColumns.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.rowEdit.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.saveState.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.selection.IGridOptions
+     with typings.uiDashGrid.uiDashGridMod.treeBase.IGridOptions[TEntity]
+     with typings.uiDashGrid.uiDashGridMod.treeView.IGridOptions {
   /**
     * Default time in milliseconds to throttle aggregation calcuations, defaults to 500ms
     */
@@ -449,7 +449,7 @@ object IGridOptionsOf {
     infiniteScrollDown: js.UndefOr[Boolean] = js.undefined,
     infiniteScrollRowsFromEnd: Int | Double = null,
     infiniteScrollUp: js.UndefOr[Boolean] = js.undefined,
-    isRowSelectable: /* row */ typings.uiDashGrid.uiDashGridMod.selectionNs.IGridRow => Boolean = null,
+    isRowSelectable: /* row */ typings.uiDashGrid.uiDashGridMod.selection.IGridRow => Boolean = null,
     maxVisibleColumnCount: Int | Double = null,
     minRowsToShow: Int | Double = null,
     minimumColumnSize: Int | Double = null,

@@ -16,3 +16,9 @@ trait MulticastChannel[T] extends js.Object {
   ): Unit = js.native
 }
 
+@JSImport("@redux-saga/core/types", "multicastChannel")
+@js.native
+object multicastChannel extends js.Object {
+  def apply[T](): MulticastChannel[T] = js.native
+}
+

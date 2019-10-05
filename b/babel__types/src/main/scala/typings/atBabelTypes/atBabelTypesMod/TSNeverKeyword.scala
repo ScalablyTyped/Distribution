@@ -35,3 +35,9 @@ object TSNeverKeyword {
   }
 }
 
+@JSImport("@babel/types", "tsNeverKeyword")
+@js.native
+object tsNeverKeyword extends js.Object {
+  def apply(): TSNeverKeyword = js.native
+}
+

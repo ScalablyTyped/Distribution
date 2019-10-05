@@ -23,7 +23,7 @@ object ListUserTagsResponse {
   @scala.inline
   def apply(
     Tags: tagListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Marker: responseMarkerType = null
   ): ListUserTagsResponse = {
     val __obj = js.Dynamic.literal(Tags = Tags)

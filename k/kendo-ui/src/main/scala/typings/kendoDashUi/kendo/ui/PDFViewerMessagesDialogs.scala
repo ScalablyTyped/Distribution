@@ -1,0 +1,30 @@
+package typings.kendoDashUi.kendo.ui
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PDFViewerMessagesDialogs extends js.Object {
+  var cancel: js.UndefOr[String] = js.undefined
+  var exportAsDialog: js.UndefOr[PDFViewerMessagesDialogsExportAsDialog] = js.undefined
+  var okText: js.UndefOr[String] = js.undefined
+  var save: js.UndefOr[String] = js.undefined
+}
+
+object PDFViewerMessagesDialogs {
+  @scala.inline
+  def apply(
+    cancel: String = null,
+    exportAsDialog: PDFViewerMessagesDialogsExportAsDialog = null,
+    okText: String = null,
+    save: String = null
+  ): PDFViewerMessagesDialogs = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (exportAsDialog != null) __obj.updateDynamic("exportAsDialog")(exportAsDialog)
+    if (okText != null) __obj.updateDynamic("okText")(okText)
+    if (save != null) __obj.updateDynamic("save")(save)
+    __obj.asInstanceOf[PDFViewerMessagesDialogs]
+  }
+}
+

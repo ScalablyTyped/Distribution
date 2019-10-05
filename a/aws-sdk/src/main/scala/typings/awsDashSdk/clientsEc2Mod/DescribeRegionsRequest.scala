@@ -26,8 +26,8 @@ trait DescribeRegionsRequest extends js.Object {
 object DescribeRegionsRequest {
   @scala.inline
   def apply(
-    AllRegions: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    AllRegions: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     RegionNames: RegionNameStringList = null
   ): DescribeRegionsRequest = {

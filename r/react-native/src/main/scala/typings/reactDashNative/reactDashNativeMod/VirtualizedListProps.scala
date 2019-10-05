@@ -44,7 +44,7 @@ trait VirtualizedListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[
 object VirtualizedListProps {
   @scala.inline
   def apply[ItemT](
-    renderItem: ListRenderItem[ItemT],
+    renderItem: /* info */ ListRenderItemInfo[ItemT] => ReactElement | Null,
     ListEmptyComponent: ComponentType[_] | ReactElement = null,
     ListFooterComponent: ComponentType[_] | ReactElement = null,
     ListHeaderComponent: ComponentType[_] | ReactElement = null,
@@ -175,7 +175,7 @@ object VirtualizedListProps {
     windowSize: Int | Double = null,
     zoomScale: Int | Double = null
   ): VirtualizedListProps[ItemT] = {
-    val __obj = js.Dynamic.literal(renderItem = renderItem)
+    val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])
     if (ListHeaderComponent != null) __obj.updateDynamic("ListHeaderComponent")(ListHeaderComponent.asInstanceOf[js.Any])

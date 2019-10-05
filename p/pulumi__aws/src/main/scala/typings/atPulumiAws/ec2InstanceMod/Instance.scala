@@ -2,11 +2,11 @@ package typings.atPulumiAws.ec2InstanceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.ec2InstanceTypeMod.InstanceType
-import typings.atPulumiAws.typesOutputMod.ec2Ns.InstanceCreditSpecification
-import typings.atPulumiAws.typesOutputMod.ec2Ns.InstanceEbsBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.InstanceEphemeralBlockDevice
-import typings.atPulumiAws.typesOutputMod.ec2Ns.InstanceNetworkInterface
-import typings.atPulumiAws.typesOutputMod.ec2Ns.InstanceRootBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.InstanceCreditSpecification
+import typings.atPulumiAws.typesOutputMod.ec2.InstanceEbsBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.InstanceEphemeralBlockDevice
+import typings.atPulumiAws.typesOutputMod.ec2.InstanceNetworkInterface
+import typings.atPulumiAws.typesOutputMod.ec2.InstanceRootBlockDevice
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

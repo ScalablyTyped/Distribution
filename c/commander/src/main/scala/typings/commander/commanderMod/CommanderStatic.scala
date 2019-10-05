@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CommanderStatic
-  extends typings.commander.commanderMod.localNs.Command {
-  var Command: Instantiable1[js.UndefOr[/* name */ String], typings.commander.commanderMod.localNs.Command] = js.native
+  extends typings.commander.commanderMod.local.Command {
+  var Command: Instantiable1[js.UndefOr[/* name */ String], typings.commander.commanderMod.local.Command] = js.native
   var CommandOptions: typings.commander.commanderMod.CommandOptions = js.native
   var Option: Instantiable2[
     /* flags */ String, 
     js.UndefOr[/* description */ String], 
-    typings.commander.commanderMod.localNs.Option
+    typings.commander.commanderMod.local.Option
   ] = js.native
   var ParseOptionsResult: typings.commander.commanderMod.ParseOptionsResult = js.native
 }

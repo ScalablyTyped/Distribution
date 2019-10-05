@@ -1,0 +1,2126 @@
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(rethinkdb) [id => rethinkdb, phase => typescript, file => ../types/rethinkdb/index.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => rethinkdb, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rethinkdb/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rethinkdb),TsIdentLibrarySimple(rethinkdb)),TsIdentModule(None,List(rethinkdb))) [id => rethinkdb, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(rethinkdb) [id => rethinkdb, phase => typescript] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(dbCreate) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(dbDrop) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(dbList) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(db) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(table) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(asc) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(desc) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(point) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(polygon) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(circle) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(sum) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(avg) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(expr) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(now) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(epochTime) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(branch) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(js) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(uuid) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasNext) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(each) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(each) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(each) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(each) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toArray) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toArray) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toArray) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(toArray) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclClass(Cursor))] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Row))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(close) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reconnect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reconnect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reconnect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(server) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(server) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(use) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(addListener) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(on) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Connection))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(tableCreate) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Db))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(tableDrop) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Db))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(tableList) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Db))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(table) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Db))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wait) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Db))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(update) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Writeable))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(replace) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Writeable))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(replace) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Writeable))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(delete) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Writeable))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasFields) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(HasFields))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(hasFields) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(HasFields))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Polygon))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(indexCreate) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(indexDrop) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(indexList) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(indexWait) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(insert) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(insert) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(get) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getAll) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getIntersecting) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wait) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(between) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(coerceTo) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(coerceTo) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(filter) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(filter) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(filter) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(changes) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(innerJoin) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(outerJoin) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(eqJoin) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(eqJoin) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(zip) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(map) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(withFields) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(concatMap) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(orderBy) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(orderBy) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(skip) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(limit) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(slice) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(nth) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(indexesOf) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isEmpty) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(union) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sample) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(getField) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(reduce) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(count) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(distinct) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(groupedMapReduce) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(groupBy) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(contains) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(pluck) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(without) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Sequence))] 
+[info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(ExpressionFunction))] 
+[info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(JoinFunction))] 
+[info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(ReduceFunction))] 
+[info ] PreferTypeAlias.scala:168 Could not simplify rethinkdb.rethinkdb.BooleanMap to function type alias because of circular references Vector(TsQIdent(List(TsIdentLibrarySimple(rethinkdb), TsIdentModule(None,List(rethinkdb)), TsIdentSimple(BooleanMap)))) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(BooleanMap))] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(merge) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(append) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(contains) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(and) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(or) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(eq) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(ne) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(not) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(gt) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(ge) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(lt) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(le) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(add) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(add) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sub) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(sub) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mul) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(div) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mod) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(distance) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(default) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Expression))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Operation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Operation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Operation))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(run) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Operation))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(ReqlError))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(ReqlDriverError))] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_UseOutdated) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclFunction(table) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Timeout) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclFunction(js) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Function) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb) / TsDeclInterface(Table) / TsMemberFunction(indexWait) / TsFunSig() / TsTypeRef() / TsTypeRef() / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => rethinkdb, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:43 Processing rethinkdb [id => rethinkdb, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => rethinkdb, phase => scala.js] 
+[warn ] Phase3Compile.scala:214 Building rethinkdb... [id => rethinkdb, phase => build] 
+[error] Phase3Compile.scala:240 [E] [E530] src/main/scala/typings/rethinkdb/rethinkdbMod/uuid.scala:11:52
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def apply(input: String): Operation[String] = js.native
+[E]                                                                ^
+[E] [E529] src/main/scala/typings/rethinkdb/rethinkdbMod/uuid.scala:10:39
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(): Operation[String] = js.native
+[E]                                                   ^
+[E] [E528] src/main/scala/typings/rethinkdb/rethinkdbMod/uuid.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E527] src/main/scala/typings/rethinkdb/rethinkdbMod/uuid.scala:9:24
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object uuid extends js.Object {
+[E]                                   ^
+[E] [E525] src/main/scala/typings/rethinkdb/rethinkdbMod/sum.scala:10:44
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(prop: String): Aggregator = js.native
+[E]                                                        ^
+[E] [E524] src/main/scala/typings/rethinkdb/rethinkdbMod/sum.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E523] src/main/scala/typings/rethinkdb/rethinkdbMod/sum.scala:9:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object sum extends js.Object {
+[E]                                  ^
+[E] [E521] src/main/scala/typings/rethinkdb/rethinkdbMod/polygon.scala:10:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(point: Point*): Polygon = js.native
+[E]                                                      ^
+[E] [E520] src/main/scala/typings/rethinkdb/rethinkdbMod/polygon.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E519] src/main/scala/typings/rethinkdb/rethinkdbMod/polygon.scala:9:27
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object polygon extends js.Object {
+[E]                                      ^
+[E] [E517] src/main/scala/typings/rethinkdb/rethinkdbMod/now.scala:10:38
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(): Expression[Time] = js.native
+[E]                                                  ^
+[E] [E516] src/main/scala/typings/rethinkdb/rethinkdbMod/now.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E515] src/main/scala/typings/rethinkdb/rethinkdbMod/now.scala:9:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object now extends js.Object {
+[E]                                  ^
+[E] [E513] src/main/scala/typings/rethinkdb/rethinkdbMod/js.scala:12:70
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def apply(jsString: String, opts: Anon_Timeout): Operation[_] = js.native
+[E]                                                                                  ^
+[E] [E512] src/main/scala/typings/rethinkdb/rethinkdbMod/js.scala:11:50
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def apply(jsString: String): Operation[_] = js.native
+[E]                                                              ^
+[E] [E511] src/main/scala/typings/rethinkdb/rethinkdbMod/js.scala:9:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: @js.native
+[E]                ^
+[E] [E509] src/main/scala/typings/rethinkdb/rethinkdbMod/expr.scala:10:48
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(stuff: js.Any): Expression[_] = js.native
+[E]                                                            ^
+[E] [E508] src/main/scala/typings/rethinkdb/rethinkdbMod/expr.scala:10:23
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(stuff: js.Any): Expression[_] = js.native
+[E]                                   ^
+[E] [E507] src/main/scala/typings/rethinkdb/rethinkdbMod/expr.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E506] src/main/scala/typings/rethinkdb/rethinkdbMod/expr.scala:9:24
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object expr extends js.Object {
+[E]                                   ^
+[E] [E504] src/main/scala/typings/rethinkdb/rethinkdbMod/epochTime.scala:10:38
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(): Expression[Time] = js.native
+[E]                                                  ^
+[E] [E503] src/main/scala/typings/rethinkdb/rethinkdbMod/epochTime.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E502] src/main/scala/typings/rethinkdb/rethinkdbMod/epochTime.scala:9:29
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object epochTime extends js.Object {
+[E]                                        ^
+[E] [E500] src/main/scala/typings/rethinkdb/rethinkdbMod/desc.scala:10:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(property: String): Sort = js.native
+[E]                                                      ^
+[E] [E499] src/main/scala/typings/rethinkdb/rethinkdbMod/desc.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E498] src/main/scala/typings/rethinkdb/rethinkdbMod/desc.scala:9:24
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object desc extends js.Object {
+[E]                                   ^
+[E] [E496] src/main/scala/typings/rethinkdb/rethinkdbMod/dbList.scala:10:49
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(): Operation[js.Array[String]] = js.native
+[E]                                                             ^
+[E] [E495] src/main/scala/typings/rethinkdb/rethinkdbMod/dbList.scala:10:29
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(): Operation[js.Array[String]] = js.native
+[E]                                         ^
+[E] [E494] src/main/scala/typings/rethinkdb/rethinkdbMod/dbList.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E493] src/main/scala/typings/rethinkdb/rethinkdbMod/dbList.scala:9:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object dbList extends js.Object {
+[E]                                     ^
+[E] [E491] src/main/scala/typings/rethinkdb/rethinkdbMod/dbDrop.scala:10:55
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(name: String): Operation[DropResult] = js.native
+[E]                                                                   ^
+[E] [E490] src/main/scala/typings/rethinkdb/rethinkdbMod/dbDrop.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E489] src/main/scala/typings/rethinkdb/rethinkdbMod/dbDrop.scala:9:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object dbDrop extends js.Object {
+[E]                                     ^
+[E] [E487] src/main/scala/typings/rethinkdb/rethinkdbMod/dbCreate.scala:10:57
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(name: String): Operation[CreateResult] = js.native
+[E]                                                                     ^
+[E] [E486] src/main/scala/typings/rethinkdb/rethinkdbMod/dbCreate.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E485] src/main/scala/typings/rethinkdb/rethinkdbMod/dbCreate.scala:9:28
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object dbCreate extends js.Object {
+[E]                                       ^
+[E] [E483] src/main/scala/typings/rethinkdb/rethinkdbMod/count.scala:9:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: @js.native
+[E]                ^
+[E] [E481] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:13:123
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def apply(opts: ConnectionOptions, cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, Unit]): Unit = js.native
+[E]                                                                                                                                       ^
+[E] [E480] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:13:45
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def apply(opts: ConnectionOptions, cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, Unit]): Unit = js.native
+[E]                                                         ^
+[E] [E479] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:12:67
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def apply(opts: ConnectionOptions): js.Promise[Connection] = js.native
+[E]                                                                               ^
+[E] [E478] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:12:42
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def apply(opts: ConnectionOptions): js.Promise[Connection] = js.native
+[E]                                                      ^
+[E] [E477] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:11:112
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def apply(host: String, cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, Unit]): Unit = js.native
+[E]                                                                                                                            ^
+[E] [E476] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:11:34
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def apply(host: String, cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, Unit]): Unit = js.native
+[E]                                              ^
+[E] [E475] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:10:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(host: String): js.Promise[Connection] = js.native
+[E]                                                                    ^
+[E] [E474] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:10:31
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(host: String): js.Promise[Connection] = js.native
+[E]                                           ^
+[E] [E473] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E472] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala:9:27
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object connect extends js.Object {
+[E]                                      ^
+[E] [E470] src/main/scala/typings/rethinkdb/rethinkdbMod/circle.scala:11:82
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def apply(point: Point, radius: Double, options: CircleOptions): Geometry = js.native
+[E]                                                                                              ^
+[E] [E469] src/main/scala/typings/rethinkdb/rethinkdbMod/circle.scala:10:58
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(point: Point, radius: Double): Geometry = js.native
+[E]                                                                      ^
+[E] [E468] src/main/scala/typings/rethinkdb/rethinkdbMod/circle.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E467] src/main/scala/typings/rethinkdb/rethinkdbMod/circle.scala:9:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object circle extends js.Object {
+[E]                                     ^
+[E] [E465] src/main/scala/typings/rethinkdb/rethinkdbMod/branch.scala:10:115
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(test: Expression[Boolean], trueBranch: Expression[_], falseBranch: Expression[_]): Expression[_] = js.native
+[E]                                                                                                                               ^
+[E] [E464] src/main/scala/typings/rethinkdb/rethinkdbMod/branch.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E463] src/main/scala/typings/rethinkdb/rethinkdbMod/branch.scala:9:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object branch extends js.Object {
+[E]                                     ^
+[E] [E461] src/main/scala/typings/rethinkdb/rethinkdbMod/avg.scala:10:44
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(prop: String): Aggregator = js.native
+[E]                                                        ^
+[E] [E460] src/main/scala/typings/rethinkdb/rethinkdbMod/avg.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E459] src/main/scala/typings/rethinkdb/rethinkdbMod/avg.scala:9:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object avg extends js.Object {
+[E]                                  ^
+[E] [E457] src/main/scala/typings/rethinkdb/rethinkdbMod/asc.scala:10:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def apply(property: String): Sort = js.native
+[E]                                                      ^
+[E] [E456] src/main/scala/typings/rethinkdb/rethinkdbMod/asc.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E455] src/main/scala/typings/rethinkdb/rethinkdbMod/asc.scala:9:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object asc extends js.Object {
+[E]                                  ^
+[E] [E453] src/main/scala/typings/rethinkdb/rethinkdbMod/^.scala:10:30
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   var count: Aggregator = js.native
+[E]                                          ^
+[E] [E452] src/main/scala/typings/rethinkdb/rethinkdbMod/^.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E451] src/main/scala/typings/rethinkdb/rethinkdbMod/^.scala:9:21
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: object ^ extends js.Object {
+[E]                                ^
+[E] [E449] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:15:83
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def update(obj: js.Object, options: UpdateOptions): Operation[WriteResult] = js.native
+[E]                                                                                               ^
+[E] [E448] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:15:22
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def update(obj: js.Object, options: UpdateOptions): Operation[WriteResult] = js.native
+[E]                                  ^
+[E] [E447] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:14:59
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def update(obj: js.Object): Operation[WriteResult] = js.native
+[E]                                                                       ^
+[E] [E446] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:14:22
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def update(obj: js.Object): Operation[WriteResult] = js.native
+[E]                                  ^
+[E] [E445] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:13:84
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def replace(obj: js.Object, options: UpdateOptions): Operation[WriteResult] = js.native
+[E]                                                                                                ^
+[E] [E444] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:13:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def replace(obj: js.Object, options: UpdateOptions): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E443] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:12:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def replace(obj: js.Object): Operation[WriteResult] = js.native
+[E]                                                                        ^
+[E] [E442] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:12:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def replace(obj: js.Object): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E441] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:11:73
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def replace(expr: ExpressionFunction[_]): Operation[WriteResult] = js.native
+[E]                                                                                     ^
+[E] [E440] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:10:67
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def delete(options: UpdateOptions): Operation[WriteResult] = js.native
+[E]                                                                               ^
+[E] [E439] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:9:45
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   def delete(): Operation[WriteResult] = js.native
+[E]                                                        ^
+[E] [E437] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:203
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                                                                                                                                                                       ^
+[E] [E436] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:182
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                                                                                                                                                  ^
+[E] [E435] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:162
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                                                                                                                              ^
+[E] [E434] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:141
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                                                                                                         ^
+[E] [E433] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:84
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                                                ^
+[E] [E432] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:62
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                                          ^
+[E] [E431] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:44
+[E]        reassignment to val
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                                        ^
+[E] [E430] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:31:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L31:     val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+[E]                                ^
+[E] [E429] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:25:24
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:     generated_keys: js.Array[String],
+[E]                                    ^
+[E] [E428] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:12:26
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   var generated_keys: js.Array[String]
+[E]                                      ^
+[E] [E427] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala:8:30
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: trait WriteResult extends js.Object {
+[E]                                         ^
+[E] [E425] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitResult.scala:14:42
+[E]        reassignment to val
+[E]        L14:     val __obj = js.Dynamic.literal(ready = ready)
+[E]                                                      ^
+[E] [E424] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitResult.scala:14:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:     val __obj = js.Dynamic.literal(ready = ready)
+[E]                                ^
+[E] [E423] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitResult.scala:7:29
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait WaitResult extends js.Object {
+[E]                                        ^
+[E] [E421] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:15:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:     val __obj = js.Dynamic.literal()
+[E]                                ^
+[E] [E420] src/main/scala/typings/rethinkdb/rethinkdbMod/waitFor.scala:12:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12: trait waitFor extends js.Object
+[E]                                      ^
+[E] [E419] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:9:72
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var waitFor: js.UndefOr[typings.rethinkdb.rethinkdbMod.waitFor] = js.undefined
+[E]                                                                                   ^
+[E] [E418] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:9:19
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var waitFor: js.UndefOr[typings.rethinkdb.rethinkdbMod.waitFor] = js.undefined
+[E]                              ^
+[E] [E417] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:8:40
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8:   var timeout: js.UndefOr[Double] = js.undefined
+[E]                                                   ^
+[E] [E416] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:8:19
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8:   var timeout: js.UndefOr[Double] = js.undefined
+[E]                              ^
+[E] [E414] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:25:13
+[E]        value isUndefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:     if (!js.isUndefined(returnChanges)) __obj.updateDynamic("returnChanges")(returnChanges)
+[E]                         ^
+[E] [E413] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:24:13
+[E]        value isUndefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:     if (!js.isUndefined(nonAtomic)) __obj.updateDynamic("nonAtomic")(nonAtomic)
+[E]                         ^
+[E] [E412] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:22:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:     val __obj = js.Dynamic.literal()
+[E]                                ^
+[E] [E411] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:20:45
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L20:     returnChanges: js.UndefOr[Boolean] = js.undefined
+[E]                                                         ^
+[E] [E410] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:19:41
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L19:     nonAtomic: js.UndefOr[Boolean] = js.undefined,
+[E]                                                     ^
+[E] [E409] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:20:23
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L20:     returnChanges: js.UndefOr[Boolean] = js.undefined
+[E]                                   ^
+[E] [E408] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:19:19
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L19:     nonAtomic: js.UndefOr[Boolean] = js.undefined,
+[E]                               ^
+[E] [E407] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:12:47
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   var returnChanges: js.UndefOr[Boolean] = js.undefined
+[E]                                                           ^
+[E] [E406] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:12:25
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   var returnChanges: js.UndefOr[Boolean] = js.undefined
+[E]                                     ^
+[E] [E405] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:11:43
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   var nonAtomic: js.UndefOr[Boolean] = js.undefined
+[E]                                                       ^
+[E] [E404] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:11:21
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   var nonAtomic: js.UndefOr[Boolean] = js.undefined
+[E]                                 ^
+[E] [E403] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:10:48
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   var durability: js.UndefOr[hard | soft] = js.undefined
+[E]                                                            ^
+[E] [E402] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:10:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   var durability: js.UndefOr[hard | soft] = js.undefined
+[E]                                  ^
+[E] [E401] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala:9:32
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: trait UpdateOptions extends js.Object {
+[E]                                           ^
+[E] [E399] src/main/scala/typings/rethinkdb/rethinkdbMod/Time.scala:18:97
+[E]        reassignment to val
+[E]        L18:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+[E]                                                                                                             ^
+[E] [E398] src/main/scala/typings/rethinkdb/rethinkdbMod/Time.scala:18:74
+[E]        reassignment to val
+[E]        L18:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+[E]                                                                                      ^
+[E] [E397] src/main/scala/typings/rethinkdb/rethinkdbMod/Time.scala:18:48
+[E]        reassignment to val
+[E]        L18:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+[E]                                                            ^
+[E] [E396] src/main/scala/typings/rethinkdb/rethinkdbMod/Time.scala:18:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+[E]                                ^
+[E] [E394] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:24:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:     val __obj = js.Dynamic.literal()
+[E]                                ^
+[E] [E393] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:13:44
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   var primary_key: js.UndefOr[String] = js.undefined
+[E]                                                        ^
+[E] [E392] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:13:23
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   var primary_key: js.UndefOr[String] = js.undefined
+[E]                                   ^
+[E] [E391] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:12:43
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   var durability: js.UndefOr[String] = js.undefined
+[E]                                                       ^
+[E] [E390] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:12:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   var durability: js.UndefOr[String] = js.undefined
+[E]                                  ^
+[E] [E389] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:10:43
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   var datacenter: js.UndefOr[String] = js.undefined
+[E]                                                       ^
+[E] [E388] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:10:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   var datacenter: js.UndefOr[String] = js.undefined
+[E]                                  ^
+[E] [E387] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:9:43
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var cache_size: js.UndefOr[Double] = js.undefined
+[E]                                                      ^
+[E] [E386] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:9:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var cache_size: js.UndefOr[Double] = js.undefined
+[E]                                 ^
+[E] [E384] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:137:66
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L137:   def apply(name: String, options: Anon_UseOutdated): Table = js.native
+[E]                                                                               ^
+[E] [E383] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:136:39
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L136:   def apply(name: String): Table = js.native
+[E]                                                    ^
+[E] [E382] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:134:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L134: @js.native
+[E]                  ^
+[E] [E381] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:135:25
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L135: object table extends js.Object {
+[E]                                      ^
+[E] [E380] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:130:66
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L130:   def wait(WaitOptions: WaitOptions): Operation[WaitResult] = js.native
+[E]                                                                               ^
+[E] [E379] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:129:85
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L129:   def insert(obj: js.Array[_], options: InsertOptions): Operation[WriteResult] = js.native
+[E]                                                                                                  ^
+[E] [E378] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:129:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L129:   def insert(obj: js.Array[_], options: InsertOptions): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E377] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:128:61
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L128:   def insert(obj: js.Array[_]): Operation[WriteResult] = js.native
+[E]                                                                          ^
+[E] [E376] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:128:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L128:   def insert(obj: js.Array[_]): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E375] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:127:80
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L127:   def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
+[E]                                                                                             ^
+[E] [E374] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:127:22
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L127:   def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E373] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:126:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L126:   def insert(obj: js.Any): Operation[WriteResult] = js.native
+[E]                                                                     ^
+[E] [E372] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:126:22
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L126:   def insert(obj: js.Any): Operation[WriteResult] = js.native
+[E]                                   ^
+[E] [E371] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:125:72
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L125:   def indexWait(name: String): Operation[js.Array[Anon_Function]] = js.native
+[E]                                                                                     ^
+[E] [E370] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:125:45
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L125:   def indexWait(name: String): Operation[js.Array[Anon_Function]] = js.native
+[E]                                                          ^
+[E] [E369] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:124:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L124:   def indexWait(): Operation[js.Array[Anon_Function]] = js.native
+[E]                                                                         ^
+[E] [E368] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:124:33
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L124:   def indexWait(): Operation[js.Array[Anon_Function]] = js.native
+[E]                                              ^
+[E] [E367] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:123:53
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L123:   def indexList(): Operation[js.Array[String]] = js.native
+[E]                                                                  ^
+[E] [E366] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:123:33
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L123:   def indexList(): Operation[js.Array[String]] = js.native
+[E]                                              ^
+[E] [E365] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:122:59
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L122:   def indexDrop(name: String): Operation[DropResult] = js.native
+[E]                                                                        ^
+[E] [E364] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:121:88
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L121:   def indexCreate(name: String, index: IndexFunction[_]): Operation[CreateResult] = js.native
+[E]                                                                                                     ^
+[E] [E363] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala:11:73
+[E]        type Function1 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   type IndexFunction[U] = Expression[U] | js.Array[Expression[U]] | (js.Function1[/* doc */ Expression[js.Any], Expression[U] | js.Array[Expression[U]]])
+[E]                                                                                     ^
+[E] [E362] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala:11:46
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   type IndexFunction[U] = Expression[U] | js.Array[Expression[U]] | (js.Function1[/* doc */ Expression[js.Any], Expression[U] | js.Array[Expression[U]]])
+[E]                                                          ^
+[E] [E361] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:120:63
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L120:   def indexCreate(name: String): Operation[CreateResult] = js.native
+[E]                                                                            ^
+[E] [E360] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:119:72
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L119:   def getIntersecting(geometry: Geometry, index: Index): Sequence = js.native
+[E]                                                                                     ^
+[E] [E359] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:118:77
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L118:   def getAll(key: Expression[_ | js.Array[_]], index: Index): Sequence = js.native
+[E]                                                                                          ^
+[E] [E358] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:118:37
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L118:   def getAll(key: Expression[_ | js.Array[_]], index: Index): Sequence = js.native
+[E]                                                  ^
+[E] [E357] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:112:49
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L112:   def getAll(key: Expression[_]): Sequence = js.native
+[E]                                                              ^
+[E] [E356] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:105:44
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L105:   def getAll(keys: String*): Sequence = js.native
+[E]                                                         ^
+[E] [E355] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:100:112
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L100:   def getAll(key: String, key2: String, key3: String, key4: String, key5: String, index: Index): Sequence = js.native
+[E]                                                                                                                             ^
+[E] [E354] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:99:98
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L99:   def getAll(key: String, key2: String, key3: String, key4: String, key5: String): Sequence = js.native
+[E]                                                                                                              ^
+[E] [E353] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:93:98
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L93:   def getAll(key: String, key2: String, key3: String, key4: String, index: Index): Sequence = js.native
+[E]                                                                                                              ^
+[E] [E352] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:92:84
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L92:   def getAll(key: String, key2: String, key3: String, key4: String): Sequence = js.native
+[E]                                                                                                ^
+[E] [E351] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:86:84
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L86:   def getAll(key: String, key2: String, key3: String, index: Index): Sequence = js.native
+[E]                                                                                                ^
+[E] [E350] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:85:70
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L85:   def getAll(key: String, key2: String, key3: String): Sequence = js.native
+[E]                                                                                  ^
+[E] [E349] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:79:70
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L79:   def getAll(key: String, key2: String, index: Index): Sequence = js.native
+[E]                                                                                  ^
+[E] [E348] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:78:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L78:   def getAll(key: String, key2: String): Sequence = js.native
+[E]                                                                    ^
+[E] [E347] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:72:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L72:   def getAll(key: String, index: Index): Sequence = js.native
+[E]                                                                    ^
+[E] [E346] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:71:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L71:   def getAll(key: String): Sequence = js.native
+[E]                                                      ^
+[E] [E345] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:66:74
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L66:   def getAll(compoundKey: js.Array[String], index: Index): Sequence = js.native
+[E]                                                                                      ^
+[E] [E344] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:66:30
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L66:   def getAll(compoundKey: js.Array[String], index: Index): Sequence = js.native
+[E]                                          ^
+[E] [E343] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:59:106
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L59:   def getAll(compoundKey: js.Array[String], compoundKey2: js.Array[String], index: Index): Sequence = js.native
+[E]                                                                                                                      ^
+[E] [E342] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:59:62
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L59:   def getAll(compoundKey: js.Array[String], compoundKey2: js.Array[String], index: Index): Sequence = js.native
+[E]                                                                          ^
+[E] [E341] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:59:30
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L59:   def getAll(compoundKey: js.Array[String], compoundKey2: js.Array[String], index: Index): Sequence = js.native
+[E]                                          ^
+[E] [E340] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:52:20
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L52:   ): Sequence = js.native
+[E]                                ^
+[E] [E339] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:50:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L50:     compoundKey3: js.Array[String],
+[E]                                  ^
+[E] [E338] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:49:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L49:     compoundKey2: js.Array[String],
+[E]                                  ^
+[E] [E337] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:48:21
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L48:     compoundKey: js.Array[String],
+[E]                                 ^
+[E] [E336] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:40:20
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L40:   ): Sequence = js.native
+[E]                                ^
+[E] [E335] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:38:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L38:     compoundKey4: js.Array[String],
+[E]                                  ^
+[E] [E334] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:37:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L37:     compoundKey3: js.Array[String],
+[E]                                  ^
+[E] [E333] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:36:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L36:     compoundKey2: js.Array[String],
+[E]                                  ^
+[E] [E332] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:35:21
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L35:     compoundKey: js.Array[String],
+[E]                                 ^
+[E] [E331] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:27:20
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L27:   ): Sequence = js.native
+[E]                                ^
+[E] [E330] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:25:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:     compoundKey5: js.Array[String],
+[E]                                  ^
+[E] [E329] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:24:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:     compoundKey4: js.Array[String],
+[E]                                  ^
+[E] [E328] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:23:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L23:     compoundKey3: js.Array[String],
+[E]                                  ^
+[E] [E327] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:22:22
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:     compoundKey2: js.Array[String],
+[E]                                  ^
+[E] [E326] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:21:21
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L21:     compoundKey: js.Array[String],
+[E]                                 ^
+[E] [E325] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:13:109
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def get[TObjectType /* <: js.Object */](key: String): (Operation[TObjectType | Null]) with Writeable = js.native
+[E]                                                                                                                         ^
+[E] [E324] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala:9:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: @js.native
+[E]                ^
+[E] [E322] src/main/scala/typings/rethinkdb/rethinkdbMod/Sort.scala:7:23
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait Sort extends js.Object
+[E]                                  ^
+[E] [E320] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:16:51
+[E]        reassignment to val
+[E]        L16:     val __obj = js.Dynamic.literal(id = id, proxy = proxy)
+[E]                                                               ^
+[E] [E319] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:16:39
+[E]        reassignment to val
+[E]        L16:     val __obj = js.Dynamic.literal(id = id, proxy = proxy)
+[E]                                                   ^
+[E] [E318] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:16:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L16:     val __obj = js.Dynamic.literal(id = id, proxy = proxy)
+[E]                                ^
+[E] [E317] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:9:37
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var name: js.UndefOr[String] = js.undefined
+[E]                                                ^
+[E] [E316] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:9:16
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var name: js.UndefOr[String] = js.undefined
+[E]                           ^
+[E] [E315] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala:7:31
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait ServerResult extends js.Object {
+[E]                                          ^
+[E] [E313] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:48:7
+[E]        method filter is defined twice;
+[E]          the conflicting method filter was defined at line 47:7
+[E]        L48:   def filter(rql: ExpressionFunction[Boolean]): Sequence = js.native
+[E]                   ^
+[E] [E312] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:78:28
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L78:   def zip(): Sequence = js.native
+[E]                                        ^
+[E] [E311] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:77:46
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L77:   def without(props: String*): Sequence = js.native
+[E]                                                          ^
+[E] [E310] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:76:53
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L76:   def withFields(selectors: js.Any*): Sequence = js.native
+[E]                                                                 ^
+[E] [E309] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:76:32
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L76:   def withFields(selectors: js.Any*): Sequence = js.native
+[E]                                            ^
+[E] [E308] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:75:48
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L75:   def union(sequence: Sequence): Sequence = js.native
+[E]                                                            ^
+[E] [E307] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:74:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L74:   def slice(start: Double, end: Double): Sequence = js.native
+[E]                                                                    ^
+[E] [E306] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:73:43
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L73:   def slice(start: Double): Sequence = js.native
+[E]                                                       ^
+[E] [E305] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:72:38
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L72:   def skip(n: Double): Sequence = js.native
+[E]                                                  ^
+[E] [E304] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:71:40
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L71:   def sample(n: Double): Sequence = js.native
+[E]                                                    ^
+[E] [E303] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:70:70
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L70:   def reduce(r: ReduceFunction[_], base: js.Any): Expression[_] = js.native
+[E]                                                                                  ^
+[E] [E302] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:70:45
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L70:   def reduce(r: ReduceFunction[_], base: js.Any): Expression[_] = js.native
+[E]                                                         ^
+[E] [E301] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:69:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L69:   def reduce(r: ReduceFunction[_]): Expression[_] = js.native
+[E]                                                                    ^
+[E] [E300] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:67:44
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L67:   def pluck(props: String*): Sequence = js.native
+[E]                                                        ^
+[E] [E299] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:65:81
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L65:   def outerJoin(sequence: Sequence, join: JoinFunction[Boolean]): Sequence = js.native
+[E]                                                                                             ^
+[E] [E298] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:64:54
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L64:   def orderBy(keys: (Sort | String)*): Sequence = js.native
+[E]                                                                  ^
+[E] [E297] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:63:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L63:   def nth(n: Double): Expression[_] = js.native
+[E]                                                      ^
+[E] [E296] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:62:49
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L62:   def merge(`object`: js.Object): Sequence = js.native
+[E]                                                             ^
+[E] [E295] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:62:26
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L62:   def merge(`object`: js.Object): Sequence = js.native
+[E]                                      ^
+[E] [E294] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:61:67
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L61:   def merge(cb: ExpressionFunction[Expression[_]]): Sequence = js.native
+[E]                                                                               ^
+[E] [E293] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:60:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L60:   def map(transform: ExpressionFunction[_]): Sequence = js.native
+[E]                                                                        ^
+[E] [E292] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:58:39
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L58:   def limit(n: Double): Sequence = js.native
+[E]                                                   ^
+[E] [E291] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:57:43
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L57:   def isEmpty(): Expression[Boolean] = js.native
+[E]                                                       ^
+[E] [E290] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:56:81
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L56:   def innerJoin(sequence: Sequence, join: JoinFunction[Boolean]): Sequence = js.native
+[E]                                                                                             ^
+[E] [E289] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala:12:29
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   type JoinFunction[U] = js.Function2[/* left */ Expression[js.Any], /* right */ Expression[js.Any], Expression[U]]
+[E]                                         ^
+[E] [E288] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:53:45
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L53:   def indexesOf(obj: js.Any): Sequence = js.native
+[E]                                                         ^
+[E] [E287] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:53:25
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L53:   def indexesOf(obj: js.Any): Sequence = js.native
+[E]                                     ^
+[E] [E286] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:52:138
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L52:   def groupedMapReduce(group: ExpressionFunction[_], map: ExpressionFunction[_], reduce: ReduceFunction[_], base: js.Any): Sequence = js.native
+[E]                                                                                                                                                      ^
+[E] [E285] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:52:118
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L52:   def groupedMapReduce(group: ExpressionFunction[_], map: ExpressionFunction[_], reduce: ReduceFunction[_], base: js.Any): Sequence = js.native
+[E]                                                                                                                                  ^
+[E] [E284] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:51:124
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L51:   def groupedMapReduce(group: ExpressionFunction[_], map: ExpressionFunction[_], reduce: ReduceFunction[_]): Sequence = js.native
+[E]                                                                                                                                        ^
+[E] [E283] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala:14:31
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   type ReduceFunction[U] = js.Function2[/* acc */ Expression[js.Any], /* val */ Expression[js.Any], Expression[U]]
+[E]                                           ^
+[E] [E282] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:50:69
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L50:   def groupBy(aggregators: Aggregator*): Expression[js.Object] = js.native
+[E]                                                                                 ^
+[E] [E281] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:50:56
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L50:   def groupBy(aggregators: Aggregator*): Expression[js.Object] = js.native
+[E]                                                                    ^
+[E] [E280] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:49:45
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L49:   def getField(prop: String): Sequence = js.native
+[E]                                                         ^
+[E] [E279] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:48:63
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L48:   def filter(rql: ExpressionFunction[Boolean]): Sequence = js.native
+[E]                                                                           ^
+[E] [E278] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:47:55
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L47:   def filter(rql: Expression[Boolean]): Sequence = js.native
+[E]                                                                   ^
+[E] [E277] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:46:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L46:   def filter(obj: StringDictionary[js.Any]): Sequence = js.native
+[E]                                                                        ^
+[E] [E276] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:46:39
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L46:   def filter(obj: StringDictionary[js.Any]): Sequence = js.native
+[E]                                                   ^
+[E] [E275] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:45:106
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L45:   def eqJoin(leftAttribute: ExpressionFunction[_], rightSequence: Sequence, index: Index): Sequence = js.native
+[E]                                                                                                                      ^
+[E] [E274] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:44:92
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L44:   def eqJoin(leftAttribute: ExpressionFunction[_], rightSequence: Sequence): Sequence = js.native
+[E]                                                                                                        ^
+[E] [E273] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:43:91
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L43:   def eqJoin(leftAttribute: String, rightSequence: Sequence, index: Index): Sequence = js.native
+[E]                                                                                                       ^
+[E] [E272] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:42:77
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L42:   def eqJoin(leftAttribute: String, rightSequence: Sequence): Sequence = js.native
+[E]                                                                                         ^
+[E] [E271] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:41:33
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L41:   def distinct(): Sequence = js.native
+[E]                                             ^
+[E] [E270] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:40:40
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L40:   def count(): Expression[Double] = js.native
+[E]                                                    ^
+[E] [E269] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:39:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L39:   def contains(prop: String): Expression[Boolean] = js.native
+[E]                                                                    ^
+[E] [E268] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:37:66
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L37:   def concatMap(transform: ExpressionFunction[_]): Sequence = js.native
+[E]                                                                              ^
+[E] [E267] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala:10:35
+[E]        type Function1 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   type ExpressionFunction[U] = js.Function1[/* doc */ Expression[js.Any], Expression[U]]
+[E]                                               ^
+[E] [E266] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:36:66
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L36:   def coerceTo_object(key: `object`): Expression[js.Object] = js.native
+[E]                                                                              ^
+[E] [E265] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:36:53
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L36:   def coerceTo_object(key: `object`): Expression[js.Object] = js.native
+[E]                                                                 ^
+[E] [E264] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:34:64
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L34:   def coerceTo_array(key: array): Expression[js.Array[_]] = js.native
+[E]                                                                            ^
+[E] [E263] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:34:49
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L34:   def coerceTo_array(key: array): Expression[js.Array[_]] = js.native
+[E]                                                             ^
+[E] [E262] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:27:52
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L27:   def changes(opts: ChangesOptions): Sequence = js.native
+[E]                                                                ^
+[E] [E261] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:26:32
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L26:   def changes(): Sequence = js.native
+[E]                                            ^
+[E] [E260] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:15:74
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def between(lower: js.Any, upper: js.Any, index: Index): Sequence = js.native
+[E]                                                                                      ^
+[E] [E259] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:15:40
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def between(lower: js.Any, upper: js.Any, index: Index): Sequence = js.native
+[E]                                                    ^
+[E] [E258] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:15:25
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def between(lower: js.Any, upper: js.Any, index: Index): Sequence = js.native
+[E]                                     ^
+[E] [E257] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:14:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def between(lower: js.Any, upper: js.Any): Sequence = js.native
+[E]                                                                        ^
+[E] [E256] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:14:40
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def between(lower: js.Any, upper: js.Any): Sequence = js.native
+[E]                                                    ^
+[E] [E255] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:14:25
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def between(lower: js.Any, upper: js.Any): Sequence = js.native
+[E]                                     ^
+[E] [E254] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala:10:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10: @js.native
+[E]                 ^
+[E] [E252] src/main/scala/typings/rethinkdb/rethinkdbMod/Row.scala:13:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13: @js.native
+[E]                 ^
+[E] [E251] src/main/scala/typings/rethinkdb/rethinkdbMod/Row.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E250] src/main/scala/typings/rethinkdb/rethinkdbMod/Row.scala:10:25
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   extends Expression[js.Any]
+[E]                                     ^
+[E] [E248] src/main/scala/typings/rethinkdb/rethinkdbMod/ReqlType.scala:15:48
+[E]        reassignment to val
+[E]        L15:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$)
+[E]                                                            ^
+[E] [E247] src/main/scala/typings/rethinkdb/rethinkdbMod/ReqlType.scala:15:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$)
+[E]                                ^
+[E] [E245] src/main/scala/typings/rethinkdb/rethinkdbMod/Point.scala:12:51
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def apply(lng: Double, lat: Double): Point = js.native
+[E]                                                               ^
+[E] [E244] src/main/scala/typings/rethinkdb/rethinkdbMod/Point.scala:10:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10: @js.native
+[E]                 ^
+[E] [E243] src/main/scala/typings/rethinkdb/rethinkdbMod/Point.scala:11:25
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11: object point extends js.Object {
+[E]                                     ^
+[E] [E242] src/main/scala/typings/rethinkdb/rethinkdbMod/Point.scala:7:24
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait Point extends js.Object
+[E]                                   ^
+[E] [E240] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:484
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+[E] [E239] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:440
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+[E] [E238] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:420
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+[E] [E237] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:401
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+[E] [E236] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:377
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                                                     ^
+[E] [E235] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:345
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                                                     ^
+[E] [E234] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:313
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                                                     ^
+[E] [E233] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:283
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                                                                       ^
+[E] [E232] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:233
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                                                     ^
+[E] [E231] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:192
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                            ^
+[E] [E230] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:131
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                                               ^
+[E] [E229] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:114
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                                                              ^
+[E] [E228] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:74
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                                                      ^
+[E] [E227] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:47
+[E]        reassignment to val
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                                           ^
+[E] [E226] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:95:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L95:     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+[E]                                ^
+[E] [E224] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:18:121
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   def run(conn: Connection, opts: OperationOptions, cb: js.Function2[/* err */ Error, /* result */ T, Unit]): Unit = js.native
+[E]                                                                                                                                     ^
+[E] [E223] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:18:60
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   def run(conn: Connection, opts: OperationOptions, cb: js.Function2[/* err */ Error, /* result */ T, Unit]): Unit = js.native
+[E]                                                                        ^
+[E] [E222] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:12:73
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def run(conn: Connection, opts: OperationOptions): js.Promise[T] = js.native
+[E]                                                                                     ^
+[E] [E221] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala:14:35
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14: trait OperationOptions extends js.Object {
+[E]                                               ^
+[E] [E220] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:12:57
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def run(conn: Connection, opts: OperationOptions): js.Promise[T] = js.native
+[E]                                                                     ^
+[E] [E219] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:11:97
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def run(conn: Connection, cb: js.Function2[/* err */ Error, /* result */ T, Unit]): Unit = js.native
+[E]                                                                                                             ^
+[E] [E218] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:11:36
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def run(conn: Connection, cb: js.Function2[/* err */ Error, /* result */ T, Unit]): Unit = js.native
+[E]                                                ^
+[E] [E217] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:10:49
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def run(conn: Connection): js.Promise[T] = js.native
+[E]                                                             ^
+[E] [E216] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:10:33
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def run(conn: Connection): js.Promise[T] = js.native
+[E]                                             ^
+[E] [E214] src/main/scala/typings/rethinkdb/rethinkdbMod/NoReplyWait.scala:14:48
+[E]        reassignment to val
+[E]        L14:     val __obj = js.Dynamic.literal(noreplyWait = noreplyWait)
+[E]                                                            ^
+[E] [E213] src/main/scala/typings/rethinkdb/rethinkdbMod/NoReplyWait.scala:14:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:     val __obj = js.Dynamic.literal(noreplyWait = noreplyWait)
+[E]                                ^
+[E] [E211] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:15:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:     val __obj = js.Dynamic.literal(left = left, right = right)
+[E]                                ^
+[E] [E210] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:14:37
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def apply(left: js.Any, right: js.Any): JoinResult = {
+[E]                                                 ^
+[E] [E209] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:14:22
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def apply(left: js.Any, right: js.Any): JoinResult = {
+[E]                                  ^
+[E] [E208] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:9:17
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var right: js.Any
+[E]                            ^
+[E] [E207] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:8:16
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8:   var left: js.Any
+[E]                           ^
+[E] [E206] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala:7:29
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait JoinResult extends js.Object {
+[E]                                        ^
+[E] [E204] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:28:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L28:     val __obj = js.Dynamic.literal()
+[E]                                ^
+[E] [E203] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:24:46
+[E]        type Function3 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:     conflict: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _]) = null,
+[E]                                                          ^
+[E] [E202] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:18:56
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   var returnChanges: js.UndefOr[Boolean | always] = js.undefined
+[E]                                                                    ^
+[E] [E201] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:18:25
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   var returnChanges: js.UndefOr[Boolean | always] = js.undefined
+[E]                                     ^
+[E] [E200] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:17:48
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L17:   var durability: js.UndefOr[hard | soft] = js.undefined
+[E]                                                            ^
+[E] [E199] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:17:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L17:   var durability: js.UndefOr[hard | soft] = js.undefined
+[E]                                  ^
+[E] [E198] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:16:10
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L16:   ] = js.undefined
+[E]                      ^
+[E] [E197] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:14:20
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   var conflict: js.UndefOr[
+[E]                                ^
+[E] [E196] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala:13:32
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13: trait InsertOptions extends js.Object {
+[E]                                            ^
+[E] [E194] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:17:42
+[E]        reassignment to val
+[E]        L17:     val __obj = js.Dynamic.literal(index = index)
+[E]                                                      ^
+[E] [E193] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:17:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L17:     val __obj = js.Dynamic.literal(index = index)
+[E]                                ^
+[E] [E192] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:11:44
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   var right_bound: js.UndefOr[String] = js.undefined
+[E]                                                        ^
+[E] [E191] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:11:23
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   var right_bound: js.UndefOr[String] = js.undefined
+[E]                                   ^
+[E] [E190] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:9:43
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var left_bound: js.UndefOr[String] = js.undefined
+[E]                                                      ^
+[E] [E189] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:9:22
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   var left_bound: js.UndefOr[String] = js.undefined
+[E]                                 ^
+[E] [E188] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala:7:24
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait Index extends js.Object {
+[E]                                   ^
+[E] [E186] src/main/scala/typings/rethinkdb/rethinkdbMod/HasFields.scala:24:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:   def hasFields(selector: BooleanMap): T = js.native
+[E]                                                           ^
+[E] [E185] src/main/scala/typings/rethinkdb/rethinkdbMod/HasFields.scala:16:42
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L16:   def hasFields(fields: String*): T = js.native
+[E]                                                      ^
+[E] [E183] src/main/scala/typings/rethinkdb/rethinkdbMod/GetTableOptions.scala:14:48
+[E]        reassignment to val
+[E]        L14:     val __obj = js.Dynamic.literal(useOutdated = useOutdated)
+[E]                                                            ^
+[E] [E182] src/main/scala/typings/rethinkdb/rethinkdbMod/GetTableOptions.scala:14:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:     val __obj = js.Dynamic.literal(useOutdated = useOutdated)
+[E]                                ^
+[E] [E179] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:56:65
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L56:   def sub(n: Double, numbers: Double*): Expression[Double] = js.native
+[E]                                                                             ^
+[E] [E178] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:46:48
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L46:   def sub(date: Time): Expression[Double] = js.native
+[E]                                                            ^
+[E] [E177] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:36:60
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L36:   def or(b: Expression[Boolean]): Expression[Boolean] = js.native
+[E]                                                                        ^
+[E] [E176] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:35:48
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L35:   def or(b: Boolean): Expression[Boolean] = js.native
+[E]                                                            ^
+[E] [E175] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:34:39
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L34:   def not(): Expression[Boolean] = js.native
+[E]                                                   ^
+[E] [E174] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:33:54
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L33:   def ne(v: Expression[_]): Expression[Boolean] = js.native
+[E]                                                                  ^
+[E] [E173] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:32:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L32:   def ne(v: js.Any): Expression[Boolean] = js.native
+[E]                                                           ^
+[E] [E172] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:32:16
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L32:   def ne(v: js.Any): Expression[Boolean] = js.native
+[E]                            ^
+[E] [E171] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:31:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L31:   def mul(n: Double): Expression[Double] = js.native
+[E]                                                           ^
+[E] [E170] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:30:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L30:   def mod(n: Double): Expression[Double] = js.native
+[E]                                                           ^
+[E] [E169] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:29:71
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L29:   def merge(query: Expression[js.Object]): Expression[js.Object] = js.native
+[E]                                                                                   ^
+[E] [E168] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:29:34
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L29:   def merge(query: Expression[js.Object]): Expression[js.Object] = js.native
+[E]                                              ^
+[E] [E167] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:29:58
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L29:   def merge(query: Expression[js.Object]): Expression[js.Object] = js.native
+[E]                                                                      ^
+[E] [E166] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:28:46
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L28:   def lt(value: T): Expression[Boolean] = js.native
+[E]                                                          ^
+[E] [E165] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:27:46
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L27:   def le(value: T): Expression[Boolean] = js.native
+[E]                                                          ^
+[E] [E164] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:26:46
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L26:   def gt(value: T): Expression[Boolean] = js.native
+[E]                                                          ^
+[E] [E163] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:25:46
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:   def ge(value: T): Expression[Boolean] = js.native
+[E]                                                          ^
+[E] [E162] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:24:54
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:   def eq(v: Expression[_]): Expression[Boolean] = js.native
+[E]                                                                  ^
+[E] [E161] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:23:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L23:   def eq(v: js.Any): Expression[Boolean] = js.native
+[E]                                                           ^
+[E] [E160] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:23:16
+[E]        type Any is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L23:   def eq(v: js.Any): Expression[Boolean] = js.native
+[E]                            ^
+[E] [E159] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:22:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:   def div(n: Double): Expression[Double] = js.native
+[E]                                                           ^
+[E] [E158] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:21:87
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L21:   def distance(geometry: Geometry, options: DistanceOptions): Expression[Double] = js.native
+[E]                                                                                                   ^
+[E] [E157] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:20:61
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L20:   def distance(geometry: Geometry): Expression[Double] = js.native
+[E]                                                                         ^
+[E] [E156] src/main/scala/typings/rethinkdb/rethinkdbMod/Geometry.scala:7:27
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait Geometry extends js.Object
+[E]                                      ^
+[E] [E155] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:19:45
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L19:   def default(value: T): Expression[T] = js.native
+[E]                                                         ^
+[E] [E154] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:18:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   def contains(prop: String): Expression[Boolean] = js.native
+[E]                                                                    ^
+[E] [E153] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:17:56
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L17:   def append(prop: String): Expression[js.Object] = js.native
+[E]                                                                    ^
+[E] [E152] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:17:43
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L17:   def append(prop: String): Expression[js.Object] = js.native
+[E]                                                       ^
+[E] [E151] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:16:61
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L16:   def and(b: Expression[Boolean]): Expression[Boolean] = js.native
+[E]                                                                         ^
+[E] [E150] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:15:49
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def and(b: Boolean): Expression[Boolean] = js.native
+[E]                                                             ^
+[E] [E149] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:14:59
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def add(n: Expression[Double]): Expression[Double] = js.native
+[E]                                                                       ^
+[E] [E148] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:13:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def add(n: Double): Expression[Double] = js.native
+[E]                                                           ^
+[E] [E147] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:12:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def apply(prop: String): Expression[_] = js.native
+[E]                                                           ^
+[E] [E146] src/main/scala/typings/rethinkdb/rethinkdbMod/HasFields.scala:7:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: @js.native
+[E]                ^
+[E] [E145] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:8:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: @js.native
+[E]                ^
+[E] [E144] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:7:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: @js.native
+[E]                ^
+[E] [E143] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala:7:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: @js.native
+[E]                ^
+[E] [E141] src/main/scala/typings/rethinkdb/rethinkdbMod/DropResult.scala:14:44
+[E]        reassignment to val
+[E]        L14:     val __obj = js.Dynamic.literal(dropped = dropped)
+[E]                                                        ^
+[E] [E140] src/main/scala/typings/rethinkdb/rethinkdbMod/DropResult.scala:14:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:     val __obj = js.Dynamic.literal(dropped = dropped)
+[E]                                ^
+[E] [E139] src/main/scala/typings/rethinkdb/rethinkdbMod/DropResult.scala:7:29
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait DropResult extends js.Object {
+[E]                                        ^
+[E] [E137] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:28:20
+[E]        value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L28:     val __obj = js.Dynamic.literal()
+[E]                                ^
+[E] [E136] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:22:52
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:   var unit: js.UndefOr[m | km | mi | nm | ft] = js.undefined
+[E]                                                                ^
+[E] [E135] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:22:16
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:   var unit: js.UndefOr[m | km | mi | nm | ft] = js.undefined
+[E]                            ^
+[E] [E134] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:18:55
+[E]        value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   var geoSystem: js.UndefOr[WGS84 | unit_sphere] = js.undefined
+[E]                                                                   ^
+[E] [E133] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:18:21
+[E]        type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L18:   var geoSystem: js.UndefOr[WGS84 | unit_sphere] = js.undefined
+[E]                                 ^
+[E] [E131] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:21:36
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L21:   def apply(name: String): Db = js.native
+[E]                                                ^
+[E] [E130] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:19:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L19: @js.native
+[E]                 ^
+[E] [E129] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:20:22
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L20: object db extends js.Object {
+[E]                                  ^
+[E] [E128] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:15:66
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L15:   def wait(waitOptions: WaitOptions): Operation[WaitResult] = js.native
+[E]                                                                              ^
+[E] [E127] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala:7:30
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait WaitOptions extends js.Object {
+[E]                                         ^
+[E] [E126] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:14:53
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def tableList(): Operation[js.Array[String]] = js.native
+[E]                                                                 ^
+[E] [E125] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:14:33
+[E]        type Array is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L14:   def tableList(): Operation[js.Array[String]] = js.native
+[E]                                             ^
+[E] [E124] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:13:59
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L13:   def tableDrop(name: String): Operation[DropResult] = js.native
+[E]                                                                       ^
+[E] [E123] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:12:86
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L12:   def tableCreate(name: String, options: TableOptions): Operation[CreateResult] = js.native
+[E]                                                                                                  ^
+[E] [E122] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala:7:31
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait TableOptions extends js.Object {
+[E]                                          ^
+[E] [E121] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:11:63
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L11:   def tableCreate(name: String): Operation[CreateResult] = js.native
+[E]                                                                           ^
+[E] [E120] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:10:65
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L10:   def table(name: String, options: GetTableOptions): Table = js.native
+[E]                                                                             ^
+[E] [E119] src/main/scala/typings/rethinkdb/rethinkdbMod/GetTableOptions.scala:7:34
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: trait GetTableOptions extends js.Object {
+[E]                                             ^
+[E] [E118] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:9:39
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9:   def table(name: String): Table = js.native
+[E]                                                  ^
+[E] [E117] src/main/scala/typings/rethinkdb/rethinkdbMod/HasFields.scala:8:31
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: trait HasFields[T] extends js.Object {
+[E]                                          ^
+[E] [E116] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala:8:28
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: trait Writeable extends js.Object {
+[E]                                       ^
+[E] [E115] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala:9:31
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L9: trait Operation[T] extends js.Object {
+[E]                                          ^
+[E] [E114] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:7:5
+[E]        type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L7: @js.native
+[E]                ^
+[E] [E113] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala:8:21
+[E]        type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L8: trait Db extends js.Object {
+[E]                                ^
+[E] [E111] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:30:96
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L30:   def toArray_T[T](cb: js.Function2[/* err */ Error, /* rows */ js.Array[T], Unit]): Unit = js.native
+[E]                                                                                                            ^
+[E] [E110] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:30:27
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L30:   def toArray_T[T](cb: js.Function2[/* err */ Error, /* rows */ js.Array[T], Unit]): Unit = js.native
+[E]                                       ^
+[E] [E109] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:28:52
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L28:   def toArray_T[T](): js.Promise[js.Array[T]] = js.native
+[E]                                                                ^
+[E] [E108] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:28:26
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L28:   def toArray_T[T](): js.Promise[js.Array[T]] = js.native
+[E]                                      ^
+[E] [E107] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:26:91
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L26:   def toArray(cb: js.Function2[/* err */ Error, /* rows */ js.Array[_], Unit]): Unit = js.native
+[E]                                                                                                       ^
+[E] [E106] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:26:22
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L26:   def toArray(cb: js.Function2[/* err */ Error, /* rows */ js.Array[_], Unit]): Unit = js.native
+[E]                                  ^
+[E] [E105] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:25:47
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:   def toArray(): js.Promise[js.Array[_]] = js.native
+[E]                                                           ^
+[E] [E104] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:25:21
+[E]        type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L25:   def toArray(): js.Promise[js.Array[_]] = js.native
+[E]                                 ^
+[E] [E103] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:24:82
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:   def next_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Unit]): Unit = js.native
+[E]                                                                                              ^
+[E] [E102] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:24:24
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L24:   def next_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Unit]): Unit = js.native
+[E]                                    ^
+[E] [E101] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:22:82
+[E]        value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:   def next(cb: js.Function2[/* err */ Error, /* row */ js.Any, Unit]): Unit = js.native
+[E]                                                                                              ^
+[E] [E100] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:22:19
+[E]        type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]        L22:   def next(cb: js.Function2[/* err */ Error, /* row */ js.Any, Unit]): Unit = js.native
+[E]                               ^
+[E] [E99] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:20:31
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L20:   def hasNext(): Boolean = js.native
+[E]                                          ^
+[E] [E98] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:19:118
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L19:   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                                                                                                                                 ^
+[E] [E97] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:19:90
+[E]       type Function0 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L19:   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                                                                                                     ^
+[E] [E96] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:19:24
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L19:   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                                   ^
+[E] [E95] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:17:92
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L17:   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit]): Unit = js.native
+[E]                                                                                                       ^
+[E] [E94] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:17:24
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L17:   def each_T[T](cb: js.Function2[/* err */ Error, /* row */ T, Boolean | Unit]): Unit = js.native
+[E]                                   ^
+[E] [E93] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:14:118
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   def each(cb: js.Function2[/* err */ Error, /* row */ js.Any, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                                                                                                                                 ^
+[E] [E92] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:14:90
+[E]       type Function0 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   def each(cb: js.Function2[/* err */ Error, /* row */ js.Any, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                                                                                                     ^
+[E] [E91] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:14:19
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   def each(cb: js.Function2[/* err */ Error, /* row */ js.Any, Boolean | Unit], done: js.Function0[Unit]): Unit = js.native
+[E]                              ^
+[E] [E90] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:13:92
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L13:   def each(cb: js.Function2[/* err */ Error, /* row */ js.Any, Boolean | Unit]): Unit = js.native
+[E]                                                                                                       ^
+[E] [E89] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:13:19
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L13:   def each(cb: js.Function2[/* err */ Error, /* row */ js.Any, Boolean | Unit]): Unit = js.native
+[E]                              ^
+[E] [E88] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:12:65
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L12:   def close(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                                                                            ^
+[E] [E87] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:12:20
+[E]       type Function1 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L12:   def close(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                               ^
+[E] [E86] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:11:38
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L11:   def close(): js.Promise[Unit] = js.native
+[E]                                                 ^
+[E] [E85] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:11:19
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L11:   def close(): js.Promise[Unit] = js.native
+[E]                              ^
+[E] [E84] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:9:5
+[E]       type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L9: @js.native
+[E]               ^
+[E] [E83] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala:10:28
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L10: class Cursor () extends js.Object {
+[E]                                       ^
+[E] [E81] src/main/scala/typings/rethinkdb/rethinkdbMod/CreateResult.scala:14:44
+[E]       reassignment to val
+[E]       L14:     val __obj = js.Dynamic.literal(created = created)
+[E]                                                       ^
+[E] [E80] src/main/scala/typings/rethinkdb/rethinkdbMod/CreateResult.scala:14:20
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:     val __obj = js.Dynamic.literal(created = created)
+[E]                               ^
+[E] [E79] src/main/scala/typings/rethinkdb/rethinkdbMod/CreateResult.scala:7:31
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L7: trait CreateResult extends js.Object {
+[E]                                         ^
+[E] [E77] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:44:20
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L44:     val __obj = js.Dynamic.literal()
+[E]                               ^
+[E] [E76] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:30:37
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L30:   var user: js.UndefOr[String] = js.undefined
+[E]                                                ^
+[E] [E75] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:30:16
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L30:   var user: js.UndefOr[String] = js.undefined
+[E]                           ^
+[E] [E74] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:28:40
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L28:   var timeout: js.UndefOr[Double] = js.undefined
+[E]                                                   ^
+[E] [E73] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:28:19
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L28:   var timeout: js.UndefOr[Double] = js.undefined
+[E]                              ^
+[E] [E72] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:26:67
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L26:   var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.undefined
+[E]                                                                              ^
+[E] [E71] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:26:15
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L26:   var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.undefined
+[E]                          ^
+[E] [E70] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:20:37
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L20:   var port: js.UndefOr[Double] = js.undefined
+[E]                                                ^
+[E] [E69] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:20:16
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L20:   var port: js.UndefOr[Double] = js.undefined
+[E]                           ^
+[E] [E68] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:18:41
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   var password: js.UndefOr[String] = js.undefined
+[E]                                                    ^
+[E] [E67] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:18:20
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   var password: js.UndefOr[String] = js.undefined
+[E]                               ^
+[E] [E66] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:16:37
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L16:   var host: js.UndefOr[String] = js.undefined
+[E]                                                ^
+[E] [E65] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:16:16
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L16:   var host: js.UndefOr[String] = js.undefined
+[E]                           ^
+[E] [E64] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:14:35
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   var db: js.UndefOr[String] = js.undefined
+[E]                                              ^
+[E] [E63] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:14:14
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   var db: js.UndefOr[String] = js.undefined
+[E]                         ^
+[E] [E62] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala:12:36
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L12: trait ConnectionOptions extends js.Object {
+[E]                                               ^
+[E] [E60] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:23:38
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L23:   def use(dbName: String): Unit = js.native
+[E]                                                 ^
+[E] [E59] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:22:91
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L22:   def server(cb: js.Function2[/* err */ Error, /* conn */ ServerResult, Unit]): Unit = js.native
+[E]                                                                                                      ^
+[E] [E58] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:22:21
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L22:   def server(cb: js.Function2[/* err */ Error, /* conn */ ServerResult, Unit]): Unit = js.native
+[E]                                ^
+[E] [E57] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:21:47
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L21:   def server(): js.Promise[ServerResult] = js.native
+[E]                                                          ^
+[E] [E56] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:21:20
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L21:   def server(): js.Promise[ServerResult] = js.native
+[E]                               ^
+[E] [E55] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:20:110
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L20:   def reconnect(opts: NoReplyWait, cb: js.Function2[/* err */ Error, /* conn */ this.type, Unit]): Unit = js.native
+[E]                                                                                                                         ^
+[E] [E54] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:20:43
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L20:   def reconnect(opts: NoReplyWait, cb: js.Function2[/* err */ Error, /* conn */ this.type, Unit]): Unit = js.native
+[E]                                                      ^
+[E] [E53] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:19:65
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L19:   def reconnect(opts: NoReplyWait): js.Promise[Connection] = js.native
+[E]                                                                            ^
+[E] [E52] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:19:40
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L19:   def reconnect(opts: NoReplyWait): js.Promise[Connection] = js.native
+[E]                                                   ^
+[E] [E51] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:18:91
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   def reconnect(cb: js.Function2[/* err */ Error, /* conn */ this.type, Unit]): Unit = js.native
+[E]                                                                                                      ^
+[E] [E50] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:18:24
+[E]       type Function2 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   def reconnect(cb: js.Function2[/* err */ Error, /* conn */ this.type, Unit]): Unit = js.native
+[E]                                   ^
+[E] [E49] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:17:48
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L17:   def reconnect(): js.Promise[Connection] = js.native
+[E]                                                           ^
+[E] [E48] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:17:23
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L17:   def reconnect(): js.Promise[Connection] = js.native
+[E]                                  ^
+[E] [E47] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:16:53
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L16:   def on(event: String, cb: js.Function): Unit = js.native
+[E]                                                                ^
+[E] [E46] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:16:32
+[E]       type Function is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L16:   def on(event: String, cb: js.Function): Unit = js.native
+[E]                                           ^
+[E] [E45] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:15:84
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L15:   def close(opts: NoReplyWait, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                                                                                               ^
+[E] [E44] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:15:39
+[E]       type Function1 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L15:   def close(opts: NoReplyWait, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                                                  ^
+[E] [E43] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:14:55
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   def close(opts: NoReplyWait): js.Promise[Unit] = js.native
+[E]                                                                  ^
+[E] [E42] src/main/scala/typings/rethinkdb/rethinkdbMod/NoReplyWait.scala:7:30
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L7: trait NoReplyWait extends js.Object {
+[E]                                        ^
+[E] [E41] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:14:36
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:   def close(opts: NoReplyWait): js.Promise[Unit] = js.native
+[E]                                               ^
+[E] [E40] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:13:65
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L13:   def close(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                                                                            ^
+[E] [E39] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:13:20
+[E]       type Function1 is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L13:   def close(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+[E]                               ^
+[E] [E38] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:12:38
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L12:   def close(): js.Promise[Unit] = js.native
+[E]                                                 ^
+[E] [E37] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:12:19
+[E]       type Promise is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L12:   def close(): js.Promise[Unit] = js.native
+[E]                              ^
+[E] [E36] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:11:62
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L11:   def addListener(event: String, cb: js.Function): Unit = js.native
+[E]                                                                         ^
+[E] [E35] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:11:41
+[E]       type Function is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L11:   def addListener(event: String, cb: js.Function): Unit = js.native
+[E]                                                    ^
+[E] [E34] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:10:26
+[E]       value native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L10:   var open: Boolean = js.native
+[E]                                     ^
+[E] [E33] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:8:5
+[E]       type native is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L8: @js.native
+[E]               ^
+[E] [E32] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala:9:29
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L9: trait Connection extends js.Object {
+[E]                                       ^
+[E] [E30] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:34:13
+[E]       value isUndefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L34:     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+[E]                        ^
+[E] [E29] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:33:20
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L33:     val __obj = js.Dynamic.literal()
+[E]                               ^
+[E] [E28] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:28:36
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L28:     fill: js.UndefOr[Boolean] = js.undefined,
+[E]                                               ^
+[E] [E27] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:28:14
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L28:     fill: js.UndefOr[Boolean] = js.undefined,
+[E]                         ^
+[E] [E26] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:22:44
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L22:   var numVertices: js.UndefOr[Double] = js.undefined
+[E]                                                       ^
+[E] [E25] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:22:23
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L22:   var numVertices: js.UndefOr[Double] = js.undefined
+[E]                                  ^
+[E] [E24] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:18:38
+[E]       value undefined is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   var fill: js.UndefOr[Boolean] = js.undefined
+[E]                                                 ^
+[E] [E23] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala:18:16
+[E]       type UndefOr is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L18:   var fill: js.UndefOr[Boolean] = js.undefined
+[E]                           ^
+[E] [E22] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala:14:34
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14: trait DistanceOptions extends js.Object {
+[E]                                             ^
+[E] [E20] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:212
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                                               ^
+[E] [E19] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:189
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                                                                                                                                                        ^
+[E] [E18] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:159
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                                                                                                                          ^
+[E] [E17] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:127
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                                                                                          ^
+[E] [E16] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:94
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                                                         ^
+[E] [E15] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:56
+[E]       reassignment to val
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                                                                   ^
+[E] [E14] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:51:20
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L51:     val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+[E]                               ^
+[E] [E13] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala:10:33
+[E]       type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L10: trait ChangesOptions extends js.Object {
+[E]                                            ^
+[E] [E11] src/main/scala/typings/rethinkdb/rethinkdbMod/BooleanMap.scala:14:8
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L14:     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+[E]                   ^
+[E] [E10] src/main/scala/typings/rethinkdb/rethinkdbMod/BooleanMap.scala:13:20
+[E]       value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]       L13:     val __obj = js.Dynamic.literal()
+[E]                               ^
+[E] [E8] src/main/scala/typings/rethinkdb/rethinkdbMod/Binary.scala:17:68
+[E]      reassignment to val
+[E]      L17:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, data = data)
+[E]                                                                              ^
+[E] [E7] src/main/scala/typings/rethinkdb/rethinkdbMod/Binary.scala:17:48
+[E]      reassignment to val
+[E]      L17:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, data = data)
+[E]                                                          ^
+[E] [E6] src/main/scala/typings/rethinkdb/rethinkdbMod/Binary.scala:17:20
+[E]      value Dynamic is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]      L17:     val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, data = data)
+[E]                              ^
+[E] [E5] src/main/scala/typings/rethinkdb/rethinkdbMod/ReqlType.scala:7:27
+[E]      type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]      L7: trait ReqlType extends js.Object {
+[E]                                    ^
+[E] [E3] src/main/scala/typings/rethinkdb/rethinkdbMod/Aggregator.scala:7:29
+[E]      type Object is not a member of object typings.rethinkdb.rethinkdbMod.js
+[E]      L7: trait Aggregator extends js.Object
+[E]                                      ^
+[E] [E2] src/main/scala/typings/rethinkdb/rethinkdbMod/js.scala:10:19
+[E]      illegal cyclic reference involving object js
+[E]      L10: object js extends js.Object {
+[E]                             ^
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Geometry.scala: L3 [E180], L7 [E156]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/package.scala: L10 [E267], L11 [E362], L11 [E363], L12 [E289], L14 [E283]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/dbCreate.scala: L3 [E484], L8 [E486], L9 [E485], L10 [E487]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/ChangesOptions.scala: L3 [E12], L10 [E13], L51 [E14], L51 [E15], L51 [E16], L51 [E17], L51 [E18], L51 [E19], L51 [E20]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/BooleanMap.scala: L4 [E9], L13 [E10], L14 [E11]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Sequence.scala: L6 [E253], L10 [E254], L14 [E255], L14 [E256], L14 [E257], L15 [E258], L15 [E259], L15 [E260], L26 [E261], L27 [E262], L34 [E263], L34 [E264], L36 [E265], L36 [E266], L37 [E268], L39 [E269], L40 [E270], L41 [E271], L42 [E272], L43 [E273], L44 [E274], L45 [E275], L46 [E276], L46 [E277], L47 [E278], L48 [E279], L48 [E313], L49 [E280], L50 [E281], L50 [E282], L51 [E284], L52 [E285], L52 [E286], L53 [E287], L53 [E288], L56 [E290], L57 [E291], L58 [E292], L60 [E293], L61 [E294], L62 [E295], L62 [E296], L63 [E297], L64 [E298], L65 [E299], L67 [E300], L69 [E301], L70 [E302], L70 [E303], L71 [E304], L72 [E305], L73 [E306], L74 [E307], L75 [E308], L76 [E309], L76 [E310], L77 [E311], L78 [E312]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/connect.scala: L3 [E471], L8 [E473], L9 [E472], L10 [E474], L10 [E475], L11 [E476], L11 [E477], L12 [E478], L12 [E479], L13 [E480], L13 [E481]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Operation.scala: L4 [E215], L8 [E145], L9 [E115], L10 [E216], L10 [E217], L11 [E218], L11 [E219], L12 [E220], L12 [E222], L18 [E223], L18 [E224]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/^.scala: L3 [E450], L8 [E452], L9 [E451], L10 [E453]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/WriteResult.scala: L4 [E426], L8 [E427], L12 [E428], L25 [E429], L31 [E430], L31 [E431], L31 [E432], L31 [E433], L31 [E434], L31 [E435], L31 [E436], L31 [E437]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/NoReplyWait.scala: L3 [E212], L7 [E42], L14 [E213], L14 [E214]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/waitFor.scala: L3 [E531], L12 [E420]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Connection.scala: L4 [E31], L8 [E33], L9 [E32], L10 [E34], L11 [E35], L11 [E36], L12 [E37], L12 [E38], L13 [E39], L13 [E40], L14 [E41], L14 [E43], L15 [E44], L15 [E45], L16 [E46], L16 [E47], L17 [E48], L17 [E49], L18 [E50], L18 [E51], L19 [E52], L19 [E53], L20 [E54], L20 [E55], L21 [E56], L21 [E57], L22 [E58], L22 [E59], L23 [E60]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/dbDrop.scala: L3 [E488], L8 [E490], L9 [E489], L10 [E491]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Db.scala: L3 [E112], L7 [E114], L8 [E113], L9 [E118], L10 [E120], L11 [E121], L12 [E123], L13 [E124], L14 [E125], L14 [E126], L15 [E128], L19 [E130], L20 [E129], L21 [E131]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/InsertOptions.scala: L9 [E195], L13 [E196], L14 [E197], L16 [E198], L17 [E199], L17 [E200], L18 [E201], L18 [E202], L24 [E203], L28 [E204]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/sum.scala: L3 [E522], L8 [E524], L9 [E523], L10 [E525]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/circle.scala: L3 [E466], L8 [E468], L9 [E467], L10 [E469], L11 [E470]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/TableOptions.scala: L3 [E385], L7 [E122], L9 [E386], L9 [E387], L10 [E388], L10 [E389], L12 [E390], L12 [E391], L13 [E392], L13 [E393], L24 [E394]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/CircleOptions.scala: L10 [E21], L18 [E23], L18 [E24], L22 [E25], L22 [E26], L28 [E27], L28 [E28], L33 [E29], L34 [E30]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/JoinResult.scala: L3 [E205], L7 [E206], L8 [E207], L9 [E208], L14 [E209], L14 [E210], L15 [E211]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Cursor.scala: L4 [E82], L9 [E84], L10 [E83], L11 [E85], L11 [E86], L12 [E87], L12 [E88], L13 [E89], L13 [E90], L14 [E91], L14 [E92], L14 [E93], L17 [E94], L17 [E95], L19 [E96], L19 [E97], L19 [E98], L20 [E99], L22 [E100], L22 [E101], L24 [E102], L24 [E103], L25 [E104], L25 [E105], L26 [E106], L26 [E107], L28 [E108], L28 [E109], L30 [E110], L30 [E111]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitOptions.scala: L3 [E415], L7 [E127], L8 [E416], L8 [E417], L9 [E418], L9 [E419], L15 [E421]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Time.scala: L4 [E395], L18 [E396], L18 [E397], L18 [E398], L18 [E399]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Sort.scala: L3 [E321], L7 [E322]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Binary.scala: L4 [E4], L17 [E6], L17 [E7], L17 [E8]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Expression.scala: L3 [E142], L7 [E143], L12 [E147], L13 [E148], L14 [E149], L15 [E150], L16 [E151], L17 [E152], L17 [E153], L18 [E154], L19 [E155], L20 [E157], L21 [E158], L22 [E159], L23 [E160], L23 [E161], L24 [E162], L25 [E163], L26 [E164], L27 [E165], L28 [E166], L29 [E167], L29 [E168], L29 [E169], L30 [E170], L31 [E171], L32 [E172], L32 [E173], L33 [E174], L34 [E175], L35 [E176], L36 [E177], L46 [E178], L56 [E179]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/WaitResult.scala: L3 [E422], L7 [E423], L14 [E424], L14 [E425]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/polygon.scala: L3 [E518], L8 [E520], L9 [E519], L10 [E521]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Row.scala: L4 [E249], L8 [E251], L10 [E250], L13 [E252]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/CreateResult.scala: L3 [E78], L7 [E79], L14 [E80], L14 [E81]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Writeable.scala: L3 [E438], L7 [E144], L8 [E116], L9 [E439], L10 [E440], L11 [E441], L12 [E442], L12 [E443], L13 [E444], L13 [E445], L14 [E446], L14 [E447], L15 [E448], L15 [E449]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/expr.scala: L3 [E505], L8 [E507], L9 [E506], L10 [E508], L10 [E509]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Aggregator.scala: L3 [E1], L7 [E3]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/dbList.scala: L3 [E492], L8 [E494], L9 [E493], L10 [E495], L10 [E496]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/ServerResult.scala: L3 [E314], L7 [E315], L9 [E316], L9 [E317], L16 [E318], L16 [E319], L16 [E320]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/now.scala: L3 [E514], L8 [E516], L9 [E515], L10 [E517]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/count.scala: L4 [E482], L9 [E483]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Point.scala: L3 [E241], L7 [E242], L10 [E244], L11 [E243], L12 [E245]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/GetTableOptions.scala: L3 [E181], L7 [E119], L14 [E182], L14 [E183]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/branch.scala: L3 [E462], L8 [E464], L9 [E463], L10 [E465]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/ConnectionOptions.scala: L3 [E61], L12 [E62], L14 [E63], L14 [E64], L16 [E65], L16 [E66], L18 [E67], L18 [E68], L20 [E69], L20 [E70], L26 [E71], L26 [E72], L28 [E73], L28 [E74], L30 [E75], L30 [E76], L44 [E77]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/avg.scala: L3 [E458], L8 [E460], L9 [E459], L10 [E461]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/OperationOptions.scala: L10 [E225], L14 [E221], L95 [E226], L95 [E227], L95 [E228], L95 [E229], L95 [E230], L95 [E231], L95 [E232], L95 [E233], L95 [E234], L95 [E235], L95 [E236], L95 [E237], L95 [E238], L95 [E239], L95 [E240]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/js.scala: L4 [E510], L9 [E511], L10 [E2], L11 [E512], L12 [E513]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/HasFields.scala: L3 [E184], L7 [E146], L8 [E117], L16 [E185], L24 [E186]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/DistanceOptions.scala: L10 [E132], L14 [E22], L18 [E133], L18 [E134], L22 [E135], L22 [E136], L28 [E137]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/desc.scala: L3 [E497], L8 [E499], L9 [E498], L10 [E500]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/epochTime.scala: L3 [E501], L8 [E503], L9 [E502], L10 [E504]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/UpdateOptions.scala: L5 [E400], L9 [E401], L10 [E402], L10 [E403], L11 [E404], L11 [E405], L12 [E406], L12 [E407], L19 [E408], L19 [E410], L20 [E409], L20 [E411], L22 [E412], L24 [E413], L25 [E414]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/DropResult.scala: L3 [E138], L7 [E139], L14 [E140], L14 [E141]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Table.scala: L5 [E323], L9 [E324], L13 [E325], L21 [E326], L22 [E327], L23 [E328], L24 [E329], L25 [E330], L27 [E331], L35 [E332], L36 [E333], L37 [E334], L38 [E335], L40 [E336], L48 [E337], L49 [E338], L50 [E339], L52 [E340], L59 [E341], L59 [E342], L59 [E343], L66 [E344], L66 [E345], L71 [E346], L72 [E347], L78 [E348], L79 [E349], L85 [E350], L86 [E351], L92 [E352], L93 [E353], L99 [E354], L100 [E355], L105 [E356], L112 [E357], L118 [E358], L118 [E359], L119 [E360], L120 [E361], L121 [E364], L122 [E365], L123 [E366], L123 [E367], L124 [E368], L124 [E369], L125 [E370], L125 [E371], L126 [E372], L126 [E373], L127 [E374], L127 [E375], L128 [E376], L128 [E377], L129 [E378], L129 [E379], L130 [E380], L134 [E382], L135 [E381], L136 [E383], L137 [E384]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/asc.scala: L3 [E454], L8 [E456], L9 [E455], L10 [E457]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/ReqlType.scala: L3 [E246], L7 [E5], L15 [E247], L15 [E248]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/uuid.scala: L3 [E526], L8 [E528], L9 [E527], L10 [E529], L11 [E530]
+[E] src/main/scala/typings/rethinkdb/rethinkdbMod/Index.scala: L3 [E187], L7 [E188], L9 [E189], L9 [E190], L11 [E191], L11 [E192], L17 [E193], L17 [E194]
+[E] Failed to compile 'rethinkdb'
+ [id => rethinkdb, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [rethinkdb => Compilation failed] [id => rethinkdb, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [rethinkdb => Compilation failed] [id => rethinkdb, phase => publish] 

@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriCoreWorkersConnectionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Connection
+import typings.arcgisDashJsDashApi.__esri.Connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

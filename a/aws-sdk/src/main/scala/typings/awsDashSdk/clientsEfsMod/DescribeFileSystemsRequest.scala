@@ -29,13 +29,13 @@ object DescribeFileSystemsRequest {
     CreationToken: CreationToken = null,
     FileSystemId: FileSystemId = null,
     Marker: Marker = null,
-    MaxItems: js.UndefOr[MaxItems] = js.undefined
+    MaxItems: Int | Double = null
   ): DescribeFileSystemsRequest = {
     val __obj = js.Dynamic.literal()
     if (CreationToken != null) __obj.updateDynamic("CreationToken")(CreationToken)
     if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFileSystemsRequest]
   }
 }

@@ -47,7 +47,7 @@ object ExportInfo {
     exportStatus: ExportStatus,
     statusMessage: ExportStatusMessage,
     configurationsDownloadUrl: ConfigurationsDownloadUrl = null,
-    isTruncated: js.UndefOr[Boolean] = js.undefined,
+    isTruncated: js.UndefOr[scala.Boolean] = js.undefined,
     requestedEndTime: TimeStamp = null,
     requestedStartTime: TimeStamp = null
   ): ExportInfo = {

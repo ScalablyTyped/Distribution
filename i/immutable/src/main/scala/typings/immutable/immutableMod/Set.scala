@@ -1,5 +1,6 @@
 package typings.immutable.immutableMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Set[T]
-  extends typings.immutable.immutableMod.CollectionNs.Set[T] {
+  extends typings.immutable.immutableMod.Collection.Set[T] {
   /**
     * The number of items in this Set.
     */
@@ -92,5 +93,67 @@ trait Set[T]
     * @see `Map#withMutations`
     */
   def withMutations(mutator: js.Function1[/* mutable */ this.type, _]): this.type = js.native
+}
+
+@JSImport("immutable", "Set")
+@js.native
+object Set extends js.Object {
+  def apply(): Set[_] = js.native
+  def apply[T](collection: Iterable[T]): Set[T] = js.native
+  def fromKeys(obj: StringDictionary[js.Any]): Set[String] = js.native
+  /**
+    * `Set.fromKeys()` creates a new immutable Set containing the keys from
+    * this Collection or JavaScript Object.
+    */
+  def fromKeys[T](iter: Collection[T, _]): Set[T] = js.native
+  /**
+    * `Set.intersect()` creates a new immutable Set that is the intersection of
+    * a collection of other sets.
+    *
+    * ```js
+    * const { Set } = require('immutable')
+    * const intersected = Set.intersect([
+    *   Set([ 'a', 'b', 'c' ])
+    *   Set([ 'c', 'a', 't' ])
+    * ])
+    * // Set [ "a", "c"" ]
+    * ```
+    */
+  def intersect[T](sets: Iterable[Iterable[T]]): Set[T] = js.native
+  /**
+    * True if the provided value is a Set
+    */
+  def isSet(maybeSet: js.Any): /* is immutable.immutable.Set<any> */ Boolean = js.native
+  /**
+    * Creates a new Set containing `values`.
+    */
+  def of[T](values: T*): Set[T] = js.native
+  /**
+    * `Set.union()` creates a new immutable Set that is the union of a
+    * collection of other sets.
+    *
+    * ```js
+    * const { Set } = require('immutable')
+    * const unioned = Set.union([
+    *   Set([ 'a', 'b', 'c' ])
+    *   Set([ 'c', 'a', 't' ])
+    * ])
+    * // Set [ "a", "b", "c", "t"" ]
+    * ```
+    */
+  def union[T](sets: Iterable[Iterable[T]]): Set[T] = js.native
+}
+
+@JSImport("immutable", "set")
+@js.native
+object set extends js.Object {
+  def apply[V, C /* <: StringDictionary[V] */](collection: C, key: String, value: V): C = js.native
+  def apply[V, C /* <: js.Array[V] */](collection: C, key: Double, value: V): C = js.native
+  def apply[C, K /* <: String */](
+    `object`: C,
+    key: K,
+    value: /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+  ): C = js.native
+  def apply[K, V, C /* <: Collection[K, V] */](collection: C, key: K, value: V): C = js.native
 }
 

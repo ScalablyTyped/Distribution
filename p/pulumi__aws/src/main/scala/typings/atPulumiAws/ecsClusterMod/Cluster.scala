@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ecsClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ecsNs.ClusterSetting
+import typings.atPulumiAws.typesOutputMod.ecs.ClusterSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

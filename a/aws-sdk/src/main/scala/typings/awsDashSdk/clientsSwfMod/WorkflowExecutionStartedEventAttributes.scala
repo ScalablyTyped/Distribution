@@ -65,7 +65,7 @@ object WorkflowExecutionStartedEventAttributes {
     executionStartToCloseTimeout: DurationInSecondsOptional = null,
     input: Data = null,
     lambdaRole: Arn = null,
-    parentInitiatedEventId: js.UndefOr[EventId] = js.undefined,
+    parentInitiatedEventId: Int | Double = null,
     parentWorkflowExecution: WorkflowExecution = null,
     tagList: TagList = null,
     taskPriority: TaskPriority = null,
@@ -76,7 +76,7 @@ object WorkflowExecutionStartedEventAttributes {
     if (executionStartToCloseTimeout != null) __obj.updateDynamic("executionStartToCloseTimeout")(executionStartToCloseTimeout)
     if (input != null) __obj.updateDynamic("input")(input)
     if (lambdaRole != null) __obj.updateDynamic("lambdaRole")(lambdaRole)
-    if (!js.isUndefined(parentInitiatedEventId)) __obj.updateDynamic("parentInitiatedEventId")(parentInitiatedEventId)
+    if (parentInitiatedEventId != null) __obj.updateDynamic("parentInitiatedEventId")(parentInitiatedEventId.asInstanceOf[js.Any])
     if (parentWorkflowExecution != null) __obj.updateDynamic("parentWorkflowExecution")(parentWorkflowExecution)
     if (tagList != null) __obj.updateDynamic("tagList")(tagList)
     if (taskPriority != null) __obj.updateDynamic("taskPriority")(taskPriority)

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,12 +53,5 @@ trait Function extends js.Object {
 
 @JSGlobal("Function")
 @js.native
-class FunctionCls protected ()
-  extends js.Function {
-  /**
-    * Creates a new function.
-    * @param args A list of arguments the function accepts.
-    */
-  def this(args: java.lang.String*) = this()
-}
+object Function extends TopLevel[FunctionConstructor]
 

@@ -17,10 +17,10 @@ trait Duration extends js.Object {
 
 object Duration {
   @scala.inline
-  def apply(unit: DurationUnit = null, value: js.UndefOr[DurationValue] = js.undefined): Duration = {
+  def apply(unit: DurationUnit = null, value: Int | Double = null): Duration = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
 }

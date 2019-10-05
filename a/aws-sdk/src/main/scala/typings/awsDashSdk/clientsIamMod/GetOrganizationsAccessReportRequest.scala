@@ -28,12 +28,12 @@ object GetOrganizationsAccessReportRequest {
   def apply(
     JobId: jobIDType,
     Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
+    MaxItems: Int | Double = null,
     SortKey: sortKeyType = null
   ): GetOrganizationsAccessReportRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     if (SortKey != null) __obj.updateDynamic("SortKey")(SortKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationsAccessReportRequest]
   }

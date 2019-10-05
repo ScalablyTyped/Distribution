@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDocumentationPartMod
 
-import typings.atPulumiAws.typesOutputMod.apigatewayNs.DocumentationPartLocation
+import typings.atPulumiAws.typesOutputMod.apigateway.DocumentationPartLocation
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -1,6 +1,6 @@
 package typings.soundmanager2
 
-import typings.soundmanager2.soundmanagerNs.ScriptAccess
+import typings.soundmanager2.soundmanager.ScriptAccess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

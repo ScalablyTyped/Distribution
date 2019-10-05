@@ -1,11 +1,11 @@
 package typings.atPulumiAws.elastictranscoderPresetMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetAudio
-import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetAudioCodecOptions
-import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetThumbnails
-import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetVideo
-import typings.atPulumiAws.typesOutputMod.elastictranscoderNs.PresetVideoWatermark
+import typings.atPulumiAws.typesOutputMod.elastictranscoder.PresetAudio
+import typings.atPulumiAws.typesOutputMod.elastictranscoder.PresetAudioCodecOptions
+import typings.atPulumiAws.typesOutputMod.elastictranscoder.PresetThumbnails
+import typings.atPulumiAws.typesOutputMod.elastictranscoder.PresetVideo
+import typings.atPulumiAws.typesOutputMod.elastictranscoder.PresetVideoWatermark
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

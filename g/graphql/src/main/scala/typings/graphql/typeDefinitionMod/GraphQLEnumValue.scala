@@ -20,16 +20,19 @@ trait GraphQLEnumValue extends js.Object {
 object GraphQLEnumValue {
   @scala.inline
   def apply(
-    deprecationReason: Maybe[String],
-    description: Maybe[String],
-    extensions: Maybe[Record[String, _]],
     name: String,
     value: js.Any,
     astNode: Maybe[EnumValueDefinitionNode] = null,
+    deprecationReason: Maybe[String] = null,
+    description: Maybe[String] = null,
+    extensions: Maybe[Record[String, _]] = null,
     isDeprecated: js.UndefOr[Boolean] = js.undefined
   ): GraphQLEnumValue = {
-    val __obj = js.Dynamic.literal(deprecationReason = deprecationReason.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)
     __obj.asInstanceOf[GraphQLEnumValue]
   }

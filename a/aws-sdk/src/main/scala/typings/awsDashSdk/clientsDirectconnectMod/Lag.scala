@@ -74,19 +74,19 @@ trait Lag extends js.Object {
 object Lag {
   @scala.inline
   def apply(
-    allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined,
+    allowsHostedConnections: js.UndefOr[Boolean] = js.undefined,
     awsDevice: AwsDevice = null,
     awsDeviceV2: AwsDeviceV2 = null,
     connections: ConnectionList = null,
     connectionsBandwidth: Bandwidth = null,
     hasLogicalRedundancy: HasLogicalRedundancy = null,
-    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
+    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
     lagId: LagId = null,
     lagName: LagName = null,
     lagState: LagState = null,
     location: LocationCode = null,
-    minimumLinks: js.UndefOr[Count] = js.undefined,
-    numberOfConnections: js.UndefOr[Count] = js.undefined,
+    minimumLinks: Int | Double = null,
+    numberOfConnections: Int | Double = null,
     ownerAccount: OwnerAccount = null,
     region: Region = null,
     tags: TagList = null
@@ -103,8 +103,8 @@ object Lag {
     if (lagName != null) __obj.updateDynamic("lagName")(lagName)
     if (lagState != null) __obj.updateDynamic("lagState")(lagState.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(minimumLinks)) __obj.updateDynamic("minimumLinks")(minimumLinks)
-    if (!js.isUndefined(numberOfConnections)) __obj.updateDynamic("numberOfConnections")(numberOfConnections)
+    if (minimumLinks != null) __obj.updateDynamic("minimumLinks")(minimumLinks.asInstanceOf[js.Any])
+    if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
     if (region != null) __obj.updateDynamic("region")(region)
     if (tags != null) __obj.updateDynamic("tags")(tags)

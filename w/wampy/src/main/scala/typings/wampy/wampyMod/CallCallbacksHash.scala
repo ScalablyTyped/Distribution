@@ -11,10 +11,10 @@ trait CallCallbacksHash extends js.Object {
 
 object CallCallbacksHash {
   @scala.inline
-  def apply(onError: ErrorCallback = null, onSuccess: SuccessCallback = null): CallCallbacksHash = {
+  def apply(onError: /* args */ ErrorArgs => Unit = null, onSuccess: /* args */ DataArgs => Unit = null): CallCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
     __obj.asInstanceOf[CallCallbacksHash]
   }
 }

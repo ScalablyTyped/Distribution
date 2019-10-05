@@ -3,7 +3,7 @@ package typings.antd.esBadgeScrollNumberMod
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentElement
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

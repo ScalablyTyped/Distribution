@@ -1,5 +1,7 @@
 package typings.compression.compressionMod
 
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -108,7 +110,7 @@ object CompressionOptions {
   @scala.inline
   def apply(
     chunkSize: Int | Double = null,
-    filter: CompressionFilter = null,
+    filter: (/* req */ Request, /* res */ Response) => Boolean = null,
     finishFlush: Int | Double = null,
     flush: Int | Double = null,
     level: Int | Double = null,
@@ -119,7 +121,7 @@ object CompressionOptions {
   ): CompressionOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
     if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

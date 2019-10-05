@@ -28,7 +28,7 @@ object SetRepositoryPolicyRequest {
   def apply(
     policyText: RepositoryPolicyText,
     repositoryName: RepositoryName,
-    force: js.UndefOr[ForceFlag] = js.undefined,
+    force: js.UndefOr[Boolean] = js.undefined,
     registryId: RegistryId = null
   ): SetRepositoryPolicyRequest = {
     val __obj = js.Dynamic.literal(policyText = policyText, repositoryName = repositoryName)

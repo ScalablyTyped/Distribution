@@ -1,76 +1,76 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.bookmarksNs.BookmarkTreeNodeType
-import typings.firefoxDashWebextDashBrowser.browserNs.browserSettingsNs.ContextMenuMouseEvent
-import typings.firefoxDashWebextDashBrowser.browserNs.browserSettingsNs.ImageAnimationBehavior
-import typings.firefoxDashWebextDashBrowser.browserNs.clipboardNs._SetImageData
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs.ContextType
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs.ItemType
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs._OnClickDataModifiers
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs._OverrideContextContext
-import typings.firefoxDashWebextDashBrowser.browserNs.cookiesNs.OnChangedCause
-import typings.firefoxDashWebextDashBrowser.browserNs.cookiesNs.SameSiteStatus
-import typings.firefoxDashWebextDashBrowser.browserNs.dnsNs._ResolveFlags
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.DangerType
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.FilenameConflictAction
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.InterruptReason
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs.State
-import typings.firefoxDashWebextDashBrowser.browserNs.downloadsNs._DownloadMethod
-import typings.firefoxDashWebextDashBrowser.browserNs.experimentsNs.APIChildScope
-import typings.firefoxDashWebextDashBrowser.browserNs.experimentsNs.APIParentScope
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionNs.ViewType
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.CSSOrigin
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.ImageFormat
-import typings.firefoxDashWebextDashBrowser.browserNs.extensionTypesNs.RunAt
-import typings.firefoxDashWebextDashBrowser.browserNs.geckoProfilerNs.ProfilerFeature
-import typings.firefoxDashWebextDashBrowser.browserNs.historyNs.TransitionType
-import typings.firefoxDashWebextDashBrowser.browserNs.idleNs.IdleState
-import typings.firefoxDashWebextDashBrowser.browserNs.managementNs.ExtensionDisabledReason
-import typings.firefoxDashWebextDashBrowser.browserNs.managementNs.ExtensionInstallType
-import typings.firefoxDashWebextDashBrowser.browserNs.managementNs.ExtensionType
-import typings.firefoxDashWebextDashBrowser.browserNs.notificationsNs.PermissionLevel
-import typings.firefoxDashWebextDashBrowser.browserNs.notificationsNs.TemplateType
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.DescriptionStyleType
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.OnInputEnteredDisposition
-import typings.firefoxDashWebextDashBrowser.browserNs.privacyNs.networkNs.IPHandlingPolicy
-import typings.firefoxDashWebextDashBrowser.browserNs.privacyNs.websitesNs.TrackingProtectionModeOption
-import typings.firefoxDashWebextDashBrowser.browserNs.privacyNs.websitesNs._CookieConfigBehavior
-import typings.firefoxDashWebextDashBrowser.browserNs.proxyNs._ProxyConfigProxyType
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.OnInstalledReason
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.OnRestartRequiredReason
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.PlatformArch
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.PlatformOs
-import typings.firefoxDashWebextDashBrowser.browserNs.runtimeNs.RequestUpdateCheckStatus
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.MutedInfoReason
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.TabStatus
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.UpdatePropertyName
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.WindowType
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.ZoomSettingsMode
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.ZoomSettingsScope
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs._QueryScreen
-import typings.firefoxDashWebextDashBrowser.browserNs.telemetryNs.ScalarType
-import typings.firefoxDashWebextDashBrowser.browserNs.typesNs.LevelOfControl
-import typings.firefoxDashWebextDashBrowser.browserNs.typesNs.SettingScope
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._OptionalPermission
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._Permission
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
-import typings.firefoxDashWebextDashBrowser.browserNs.underscoreManifestNs._WebExtensionManifestIncognito
-import typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionQualifier
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.CertificateTransparencyStatus
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.OnAuthRequiredOptions
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.OnBeforeRequestOptions
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.OnBeforeSendHeadersOptions
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.OnHeadersReceivedOptions
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs.ResourceType
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs._SecurityInfoProtocolVersion
-import typings.firefoxDashWebextDashBrowser.browserNs.webRequestNs._SecurityInfoState
-import typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.CreateType
-import typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowState
+import typings.firefoxDashWebextDashBrowser.browser._manifest._OptionalPermission
+import typings.firefoxDashWebextDashBrowser.browser._manifest._Permission
+import typings.firefoxDashWebextDashBrowser.browser._manifest._ProtocolHandlerProtocol
+import typings.firefoxDashWebextDashBrowser.browser._manifest._ThemeTypeAdditionalBackgroundsAlignment
+import typings.firefoxDashWebextDashBrowser.browser._manifest._ThemeTypeAdditionalBackgroundsTiling
+import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestBrowserActionDefaultArea
+import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
+import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
+import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestIncognito
+import typings.firefoxDashWebextDashBrowser.browser.bookmarks.BookmarkTreeNodeType
+import typings.firefoxDashWebextDashBrowser.browser.browserSettings.ContextMenuMouseEvent
+import typings.firefoxDashWebextDashBrowser.browser.browserSettings.ImageAnimationBehavior
+import typings.firefoxDashWebextDashBrowser.browser.clipboard._SetImageData
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus.ContextType
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus.ItemType
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus._OnClickDataModifiers
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus._OverrideContextContext
+import typings.firefoxDashWebextDashBrowser.browser.cookies.OnChangedCause
+import typings.firefoxDashWebextDashBrowser.browser.cookies.SameSiteStatus
+import typings.firefoxDashWebextDashBrowser.browser.dns._ResolveFlags
+import typings.firefoxDashWebextDashBrowser.browser.downloads.DangerType
+import typings.firefoxDashWebextDashBrowser.browser.downloads.FilenameConflictAction
+import typings.firefoxDashWebextDashBrowser.browser.downloads.InterruptReason
+import typings.firefoxDashWebextDashBrowser.browser.downloads.State
+import typings.firefoxDashWebextDashBrowser.browser.downloads._DownloadMethod
+import typings.firefoxDashWebextDashBrowser.browser.experiments.APIChildScope
+import typings.firefoxDashWebextDashBrowser.browser.experiments.APIParentScope
+import typings.firefoxDashWebextDashBrowser.browser.extension.ViewType
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.CSSOrigin
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.ImageFormat
+import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.RunAt
+import typings.firefoxDashWebextDashBrowser.browser.geckoProfiler.ProfilerFeature
+import typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
+import typings.firefoxDashWebextDashBrowser.browser.idle.IdleState
+import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionDisabledReason
+import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionInstallType
+import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionType
+import typings.firefoxDashWebextDashBrowser.browser.notifications.PermissionLevel
+import typings.firefoxDashWebextDashBrowser.browser.notifications.TemplateType
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.DescriptionStyleType
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.OnInputEnteredDisposition
+import typings.firefoxDashWebextDashBrowser.browser.privacy.network.IPHandlingPolicy
+import typings.firefoxDashWebextDashBrowser.browser.privacy.websites.TrackingProtectionModeOption
+import typings.firefoxDashWebextDashBrowser.browser.privacy.websites._CookieConfigBehavior
+import typings.firefoxDashWebextDashBrowser.browser.proxy._ProxyConfigProxyType
+import typings.firefoxDashWebextDashBrowser.browser.runtime.OnInstalledReason
+import typings.firefoxDashWebextDashBrowser.browser.runtime.OnRestartRequiredReason
+import typings.firefoxDashWebextDashBrowser.browser.runtime.PlatformArch
+import typings.firefoxDashWebextDashBrowser.browser.runtime.PlatformOs
+import typings.firefoxDashWebextDashBrowser.browser.runtime.RequestUpdateCheckStatus
+import typings.firefoxDashWebextDashBrowser.browser.tabs.MutedInfoReason
+import typings.firefoxDashWebextDashBrowser.browser.tabs.TabStatus
+import typings.firefoxDashWebextDashBrowser.browser.tabs.UpdatePropertyName
+import typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
+import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsMode
+import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsScope
+import typings.firefoxDashWebextDashBrowser.browser.tabs._QueryScreen
+import typings.firefoxDashWebextDashBrowser.browser.telemetry.ScalarType
+import typings.firefoxDashWebextDashBrowser.browser.types.LevelOfControl
+import typings.firefoxDashWebextDashBrowser.browser.types.SettingScope
+import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionQualifier
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.CertificateTransparencyStatus
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnAuthRequiredOptions
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnBeforeRequestOptions
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnBeforeSendHeadersOptions
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnHeadersReceivedOptions
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.ResourceType
+import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoProtocolVersion
+import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoState
+import typings.firefoxDashWebextDashBrowser.browser.windows.CreateType
+import typings.firefoxDashWebextDashBrowser.browser.windows.WindowState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +82,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait Alt
     extends _OnClickDataModifiers
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OnClickDataModifiers
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
   
   @js.native
   sealed trait Application extends _QueryScreen
@@ -93,12 +93,12 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait Command
     extends _OnClickDataModifiers
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OnClickDataModifiers
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
   
   @js.native
   sealed trait Ctrl
     extends _OnClickDataModifiers
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OnClickDataModifiers
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
   
   @js.native
   sealed trait Empty extends js.Object
@@ -142,7 +142,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait MacCtrl
     extends _OnClickDataModifiers
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OnClickDataModifiers
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
   
   @js.native
   sealed trait NETWORK_DISCONNECTED extends InterruptReason
@@ -186,7 +186,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait Shift
     extends _OnClickDataModifiers
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OnClickDataModifiers
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
   
   @js.native
   sealed trait TLSv1 extends _SecurityInfoProtocolVersion
@@ -230,7 +230,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait all
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait allow_all extends _CookieConfigBehavior
@@ -250,7 +250,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait app
     extends WindowType
-       with typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
   
   @js.native
   sealed trait app_update extends OnRestartRequiredReason
@@ -270,7 +270,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait audio
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait author extends CSSOrigin
@@ -284,12 +284,12 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait auto_bookmark
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait auto_subframe
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait auto_toplevel extends TransitionType
@@ -317,9 +317,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait bookmark
     extends BookmarkTreeNodeType
        with ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
        with _OverrideContextContext
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OverrideContextContext
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OverrideContextContext
   
   @js.native
   sealed trait bookmarks extends _OptionalPermission
@@ -339,7 +339,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait browser_action
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait browser_update extends OnInstalledReason
@@ -371,7 +371,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait checkbox
     extends ItemType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ItemType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
   
   @js.native
   sealed trait cipher extends js.Object
@@ -456,7 +456,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait devtools
     extends WindowType
-       with typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
        with _Permission
   
   @js.native
@@ -513,7 +513,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait editable
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait evicted extends OnChangedCause
@@ -550,7 +550,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait form_submit
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait forward_back extends TransitionQualifier
@@ -558,7 +558,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait frame
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait from_address_bar extends TransitionQualifier
@@ -572,7 +572,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait generated
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait geo extends _ProtocolHandlerProtocol
@@ -612,7 +612,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait image
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
        with ResourceType
        with TemplateType
   
@@ -669,18 +669,18 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait keyword
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
        with _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
   sealed trait keyword_generated
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait launcher
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait lax extends SameSiteStatus
@@ -703,9 +703,9 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait link
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
        with TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait linux extends PlatformOs
@@ -745,7 +745,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait manual_subframe
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait `match` extends DescriptionStyleType
@@ -830,10 +830,10 @@ object firefoxDashWebextDashBrowserStrings {
        with ExtensionInstallType
        with ImageAnimationBehavior
        with ItemType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ItemType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
        with WindowState
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
   
   @js.native
   sealed trait not_allowed extends _WebExtensionManifestIncognito
@@ -878,23 +878,23 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait page
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait page_action
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait panel
     extends CreateType
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
   
   @js.native
   sealed trait password
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait `per-origin` extends ZoomSettingsScope
@@ -939,7 +939,7 @@ object firefoxDashWebextDashBrowserStrings {
     extends CreateType
        with ViewType
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browserNs.windowsNs.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
   
   @js.native
   sealed trait pref extends _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
@@ -973,7 +973,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait radio
     extends ItemType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ItemType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
   
   @js.native
   sealed trait regular extends SettingScope
@@ -993,7 +993,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait reload
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait repeat extends _ThemeTypeAdditionalBackgroundsTiling
@@ -1051,13 +1051,13 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait selection
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait separator
     extends BookmarkTreeNodeType
        with ItemType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ItemType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
   
   @js.native
   sealed trait seqstyle extends ProfilerFeature
@@ -1106,7 +1106,7 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait start_page
-    extends typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+    extends typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait startup extends js.Object
@@ -1138,10 +1138,10 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait tab
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
        with ViewType
        with _OverrideContextContext
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs._OverrideContextContext
+       with typings.firefoxDashWebextDashBrowser.browser.menus._OverrideContextContext
   
   @js.native
   sealed trait tabHide extends _OptionalPermission
@@ -1177,7 +1177,7 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait tools_menu
-    extends typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+    extends typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait top extends _ThemeTypeAdditionalBackgroundsAlignment
@@ -1191,7 +1191,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait typed
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browserNs.webNavigationNs.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
   sealed trait uncommon extends DangerType
@@ -1232,7 +1232,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait video
     extends ContextType
-       with typings.firefoxDashWebextDashBrowser.browserNs.menusNs.ContextType
+       with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
   
   @js.native
   sealed trait weak extends _SecurityInfoState

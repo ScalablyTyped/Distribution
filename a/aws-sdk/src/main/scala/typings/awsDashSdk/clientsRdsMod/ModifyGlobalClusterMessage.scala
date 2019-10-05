@@ -22,7 +22,7 @@ trait ModifyGlobalClusterMessage extends js.Object {
 object ModifyGlobalClusterMessage {
   @scala.inline
   def apply(
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     GlobalClusterIdentifier: String = null,
     NewGlobalClusterIdentifier: String = null
   ): ModifyGlobalClusterMessage = {

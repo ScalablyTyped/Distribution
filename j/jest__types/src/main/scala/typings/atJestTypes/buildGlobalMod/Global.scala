@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Global
-  extends typings.node.NodeJSNs.Global
+  extends typings.node.NodeJS.Global
      with /* extras */ StringDictionary[js.Any] {
   var __coverage__ : CoverageMapData = js.native
   @JSName("describe")

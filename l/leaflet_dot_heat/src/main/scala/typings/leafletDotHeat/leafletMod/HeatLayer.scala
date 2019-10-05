@@ -14,3 +14,9 @@ trait HeatLayer extends TileLayer {
   def setOptions(options: HeatMapOptions): HeatLayer = js.native
 }
 
+@JSImport("leaflet", "heatLayer")
+@js.native
+object heatLayer extends js.Object {
+  def apply(latlngs: js.Array[LatLng | HeatLatLngTuple], options: HeatMapOptions): HeatLayer = js.native
+}
+

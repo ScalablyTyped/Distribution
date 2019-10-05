@@ -150,14 +150,6 @@ trait WebSocket extends EventTarget {
 
 @JSGlobal("WebSocket")
 @js.native
-class WebSocketCls protected () extends WebSocket {
-  def this(url: java.lang.String) = this()
-  def this(url: java.lang.String, protocols: java.lang.String) = this()
-  def this(url: java.lang.String, protocols: js.Array[java.lang.String]) = this()
-}
-
-@JSGlobal("WebSocket")
-@js.native
 object WebSocket
   extends Instantiable2[
       /* url */ java.lang.String, 

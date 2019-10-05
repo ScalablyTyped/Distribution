@@ -36,7 +36,7 @@ object CreateVpnConnectionRequest {
   def apply(
     CustomerGatewayId: String,
     Type: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Options: VpnConnectionOptionsSpecification = null,
     TransitGatewayId: String = null,
     VpnGatewayId: String = null

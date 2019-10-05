@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.enterpriseNs.platformKeysNs.Token
+import typings.chromeDashApps.chrome.enterprise.platformKeys.Token
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

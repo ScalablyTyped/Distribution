@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.pointerNs.PointerEvent
+import typings.openlayers.openlayersMod.pointer.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

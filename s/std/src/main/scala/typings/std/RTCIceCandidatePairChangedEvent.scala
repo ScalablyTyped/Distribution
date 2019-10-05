@@ -12,9 +12,5 @@ trait RTCIceCandidatePairChangedEvent extends Event {
 
 @JSGlobal("RTCIceCandidatePairChangedEvent")
 @js.native
-class RTCIceCandidatePairChangedEventCls () extends RTCIceCandidatePairChangedEvent
-
-@JSGlobal("RTCIceCandidatePairChangedEvent")
-@js.native
 object RTCIceCandidatePairChangedEvent extends Instantiable0[RTCIceCandidatePairChangedEvent]
 

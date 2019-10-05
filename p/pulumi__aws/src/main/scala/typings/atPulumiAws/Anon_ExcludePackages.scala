@@ -1,5 +1,6 @@
 package typings.atPulumiAws
 
+import typings.atPulumiAws.lambdaLambdaMixinsMod.Context
 import typings.atPulumiAws.serverlessFunctionMod.Handler
 import typings.atPulumiAws.serverlessFunctionMod.HandlerFactory
 import scala.scalajs.js
@@ -43,15 +44,15 @@ object Anon_ExcludePackages {
   @scala.inline
   def apply(
     excludePackages: js.Array[String] = null,
-    factoryFunc: HandlerFactory = null,
-    func: Handler = null,
+    factoryFunc: () => Handler = null,
+    func: (js.Any, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], Unit]) => js.Promise[js.Any] | Unit = null,
     includePackages: js.Array[String] = null,
     includePaths: js.Array[String] = null
   ): Anon_ExcludePackages = {
     val __obj = js.Dynamic.literal()
     if (excludePackages != null) __obj.updateDynamic("excludePackages")(excludePackages)
-    if (factoryFunc != null) __obj.updateDynamic("factoryFunc")(factoryFunc)
-    if (func != null) __obj.updateDynamic("func")(func)
+    if (factoryFunc != null) __obj.updateDynamic("factoryFunc")(js.Any.fromFunction0(factoryFunc))
+    if (func != null) __obj.updateDynamic("func")(js.Any.fromFunction3(func))
     if (includePackages != null) __obj.updateDynamic("includePackages")(includePackages)
     if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths)
     __obj.asInstanceOf[Anon_ExcludePackages]

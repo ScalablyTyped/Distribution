@@ -13,7 +13,7 @@ trait OrganizationsDecisionDetail extends js.Object {
 
 object OrganizationsDecisionDetail {
   @scala.inline
-  def apply(AllowedByOrganizations: js.UndefOr[booleanType] = js.undefined): OrganizationsDecisionDetail = {
+  def apply(AllowedByOrganizations: js.UndefOr[Boolean] = js.undefined): OrganizationsDecisionDetail = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AllowedByOrganizations)) __obj.updateDynamic("AllowedByOrganizations")(AllowedByOrganizations)
     __obj.asInstanceOf[OrganizationsDecisionDetail]

@@ -183,10 +183,10 @@ trait DataOptions extends js.Object {
 object DataOptions {
   @scala.inline
   def apply(
-    beforeParse: DataBeforeParseCallbackFunction = null,
+    beforeParse: /* csv */ String => String = null,
     columns: js.Array[js.Array[DataValueType]] = null,
     columnsURL: String = null,
-    complete: DataCompleteCallbackFunction = null,
+    complete: /* chartOptions */ Options => Unit = null,
     csv: String = null,
     csvURL: String = null,
     dataRefreshRate: Int | Double = null,
@@ -200,8 +200,8 @@ object DataOptions {
     googleSpreadsheetWorksheet: String = null,
     itemDelimiter: String = null,
     lineDelimiter: String = null,
-    parseDate: DataParseDateCallbackFunction = null,
-    parsed: DataParsedCallbackFunction = null,
+    parseDate: /* dateValue */ String => Double = null,
+    parsed: /* columns */ js.Array[js.Array[js.Any]] => js.UndefOr[Boolean] = null,
     rows: js.Array[js.Array[DataValueType]] = null,
     rowsURL: String = null,
     seriesMapping: js.Array[Dictionary[Double]] = null,
@@ -211,10 +211,10 @@ object DataOptions {
     table: String | HTMLElement = null
   ): DataOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeParse != null) __obj.updateDynamic("beforeParse")(beforeParse)
+    if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (columnsURL != null) __obj.updateDynamic("columnsURL")(columnsURL)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (csv != null) __obj.updateDynamic("csv")(csv)
     if (csvURL != null) __obj.updateDynamic("csvURL")(csvURL)
     if (dataRefreshRate != null) __obj.updateDynamic("dataRefreshRate")(dataRefreshRate.asInstanceOf[js.Any])
@@ -228,8 +228,8 @@ object DataOptions {
     if (googleSpreadsheetWorksheet != null) __obj.updateDynamic("googleSpreadsheetWorksheet")(googleSpreadsheetWorksheet)
     if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter)
     if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter)
-    if (parseDate != null) __obj.updateDynamic("parseDate")(parseDate)
-    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
+    if (parseDate != null) __obj.updateDynamic("parseDate")(js.Any.fromFunction1(parseDate))
+    if (parsed != null) __obj.updateDynamic("parsed")(js.Any.fromFunction1(parsed))
     if (rows != null) __obj.updateDynamic("rows")(rows)
     if (rowsURL != null) __obj.updateDynamic("rowsURL")(rowsURL)
     if (seriesMapping != null) __obj.updateDynamic("seriesMapping")(seriesMapping)

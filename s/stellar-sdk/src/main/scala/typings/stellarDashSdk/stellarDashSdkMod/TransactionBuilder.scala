@@ -1,6 +1,6 @@
 package typings.stellarDashSdk.stellarDashSdkMod
 
-import typings.stellarDashBase.stellarDashBaseMod.TransactionBuilderNs.TransactionBuilderOptions
+import typings.stellarDashBase.stellarDashBaseMod.TransactionBuilder.TransactionBuilderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

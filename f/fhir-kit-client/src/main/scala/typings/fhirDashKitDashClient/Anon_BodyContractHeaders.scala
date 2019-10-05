@@ -1,6 +1,6 @@
 package typings.fhirDashKitDashClient
 
-import typings.fhir.fhirNs.Contract
+import typings.fhir.fhir.Contract
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.jsrsasign
 
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.HexParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.NameParam
-import typings.jsrsasign.jsrsasignNs.KJURNs.asn1Ns.ObjectIdentifierParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
+import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

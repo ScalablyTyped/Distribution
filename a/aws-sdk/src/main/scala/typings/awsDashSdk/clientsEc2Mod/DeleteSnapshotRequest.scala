@@ -17,7 +17,7 @@ trait DeleteSnapshotRequest extends js.Object {
 
 object DeleteSnapshotRequest {
   @scala.inline
-  def apply(SnapshotId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteSnapshotRequest = {
+  def apply(SnapshotId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteSnapshotRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DeleteSnapshotRequest]

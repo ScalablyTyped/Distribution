@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ns-api"
-version := "2.0-dt-20180801Z-7d8f13"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20180801Z-529bd5"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

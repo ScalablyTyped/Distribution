@@ -28,12 +28,12 @@ object SearchFacesByImageRequest {
   def apply(
     CollectionId: CollectionId,
     Image: Image,
-    FaceMatchThreshold: js.UndefOr[Percent] = js.undefined,
-    MaxFaces: js.UndefOr[MaxFaces] = js.undefined
+    FaceMatchThreshold: Int | Double = null,
+    MaxFaces: Int | Double = null
   ): SearchFacesByImageRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId, Image = Image)
-    if (!js.isUndefined(FaceMatchThreshold)) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold)
-    if (!js.isUndefined(MaxFaces)) __obj.updateDynamic("MaxFaces")(MaxFaces)
+    if (FaceMatchThreshold != null) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.asInstanceOf[js.Any])
+    if (MaxFaces != null) __obj.updateDynamic("MaxFaces")(MaxFaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesByImageRequest]
   }
 }

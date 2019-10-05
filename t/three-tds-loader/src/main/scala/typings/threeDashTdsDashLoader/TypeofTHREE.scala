@@ -97,7 +97,7 @@ trait TypeofTHREE extends js.Object {
   var AnimationLoader: Instantiable0[typings.three.threeMod.AnimationLoader] = js.native
   var AnimationMixer: Instantiable1[/* root */ js.Any, typings.three.threeMod.AnimationMixer] = js.native
   var AnimationObjectGroup: Instantiable1[/* args (repeated) */ js.Any, typings.three.threeMod.AnimationObjectGroup] = js.native
-  val AnimationUtilsNs: TypeofAnimationUtils = js.native
+  val AnimationUtils: TypeofAnimationUtils = js.native
   var ArcCurve: Instantiable6[
     /* aX */ Double, 
     /* aY */ Double, 
@@ -155,9 +155,9 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var BufferGeometry: TypeofClassBufferGeometry = js.native
   var BufferGeometryLoader: Instantiable0[typings.three.threeMod.BufferGeometryLoader] = js.native
-  val BufferGeometryUtilsNs: TypeofBufferGeometryUtils = js.native
+  val BufferGeometryUtils: TypeofBufferGeometryUtils = js.native
   val ByteType: TextureDataType = js.native
-  val CacheNs: TypeofCache = js.native
+  val Cache: TypeofCache = js.native
   var Camera: Instantiable0[typings.three.threeMod.Camera] = js.native
   var CameraHelper: Instantiable1[/* camera */ Camera, typings.three.threeMod.CameraHelper] = js.native
   var CanvasTexture: Instantiable9[
@@ -266,7 +266,7 @@ trait TypeofTHREE extends js.Object {
   val CullFaceNone: CullFace = js.native
   var Curve: TypeofClassCurve = js.native
   var CurvePath: Instantiable0[typings.three.threeMod.CurvePath[Vector]] = js.native
-  val CurveUtilsNs: TypeofCurveUtils = js.native
+  val CurveUtils: TypeofCurveUtils = js.native
   val CustomBlending: Blending = js.native
   var CylinderBufferGeometry: Instantiable8[
     js.UndefOr[/* radiusTop */ Double], 
@@ -403,7 +403,7 @@ trait TypeofTHREE extends js.Object {
   val GammaEncoding: TextureEncoding = js.native
   var Geometry: Instantiable0[typings.three.threeMod.Geometry] = js.native
   var GeometryIdCount: Double = js.native
-  val GeometryUtilsNs: TypeofGeometryUtils = js.native
+  val GeometryUtils: TypeofGeometryUtils = js.native
   val GreaterDepth: DepthModes = js.native
   val GreaterEqualDepth: DepthModes = js.native
   val GreaterEqualStencilFunc: StencilFunc = js.native
@@ -422,7 +422,7 @@ trait TypeofTHREE extends js.Object {
   var IcosahedronGeometry: Instantiable0[typings.three.threeMod.IcosahedronGeometry] = js.native
   var ImageBitmapLoader: Instantiable0[typings.three.threeMod.ImageBitmapLoader] = js.native
   var ImageLoader: Instantiable0[typings.three.threeMod.ImageLoader] = js.native
-  val ImageUtilsNs: TypeofImageUtils = js.native
+  val ImageUtils: TypeofImageUtils = js.native
   var ImmediateRenderObject: Instantiable1[/* material */ Material, typings.three.threeMod.ImmediateRenderObject] = js.native
   val IncrementStencilOp: StencilOp = js.native
   val IncrementWrapStencilOp: StencilOp = js.native
@@ -525,7 +525,7 @@ trait TypeofTHREE extends js.Object {
   var Material: Instantiable0[typings.three.threeMod.Material] = js.native
   var MaterialIdCount: Double = js.native
   var MaterialLoader: Instantiable0[typings.three.threeMod.MaterialLoader] = js.native
-  val MathNs: TypeofMath = js.native
+  val Math: TypeofMath = js.native
   var Matrix3: Instantiable0[typings.three.threeMod.Matrix3] = js.native
   var Matrix4: Instantiable0[typings.three.threeMod.Matrix4] = js.native
   val MaxEquation: BlendingEquation = js.native
@@ -632,8 +632,7 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var PositionalAudio: Instantiable1[/* listener */ AudioListener, typings.three.threeMod.PositionalAudio] = js.native
   var PositionalAudioHelper: Instantiable1[/* audio */ PositionalAudio, typings.three.threeMod.PositionalAudioHelper] = js.native
-  var PropertyBinding: TypeofClassPropertyBinding = js.native
-  val PropertyBindingNs: TypeofPropertyBinding = js.native
+  var PropertyBinding: TypeofClassPropertyBinding | TypeofPropertyBinding = js.native
   var PropertyMixer: Instantiable3[
     /* binding */ js.Any, 
     /* typeName */ String, 
@@ -726,7 +725,7 @@ trait TypeofTHREE extends js.Object {
     typings.three.threeMod.RingGeometry
   ] = js.native
   var Scene: Instantiable0[typings.three.threeMod.Scene] = js.native
-  val SceneUtilsNs: TypeofSceneUtils = js.native
+  val SceneUtils: TypeofSceneUtils = js.native
   var ShaderChunk: Anon_Alphamapfragment = js.native
   var ShaderLib: Anon_Background = js.native
   var ShaderMaterial: Instantiable0[typings.three.threeMod.ShaderMaterial] = js.native
@@ -735,7 +734,7 @@ trait TypeofTHREE extends js.Object {
   var ShapeBufferGeometry: Instantiable1[/* shapes */ Shape, typings.three.threeMod.ShapeBufferGeometry] = js.native
   var ShapeGeometry: Instantiable1[/* shapes */ Shape, typings.three.threeMod.ShapeGeometry] = js.native
   var ShapePath: Instantiable0[typings.three.threeMod.ShapePath] = js.native
-  val ShapeUtilsNs: TypeofShapeUtils = js.native
+  val ShapeUtils: TypeofShapeUtils = js.native
   val ShortType: TextureDataType = js.native
   var Skeleton: Instantiable1[/* bones */ js.Array[Bone], typings.three.threeMod.Skeleton] = js.native
   var SkeletonHelper: Instantiable1[/* bone */ Object3D, typings.three.threeMod.SkeletonHelper] = js.native
@@ -857,7 +856,7 @@ trait TypeofTHREE extends js.Object {
   val Uncharted2ToneMapping: ToneMapping = js.native
   var Uniform: Instantiable1[/* value */ js.Any, typings.three.threeMod.Uniform] = js.native
   var UniformsLib: Anon_Aomap = js.native
-  val UniformsUtilsNs: js.Any = js.native
+  val UniformsUtils: js.Any = js.native
   val UnsignedByteType: TextureDataType = js.native
   val UnsignedInt248Type: PixelType = js.native
   val UnsignedIntType: TextureDataType = js.native

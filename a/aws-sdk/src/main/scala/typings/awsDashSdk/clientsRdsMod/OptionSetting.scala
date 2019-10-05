@@ -51,8 +51,8 @@ object OptionSetting {
     DataType: String = null,
     DefaultValue: String = null,
     Description: String = null,
-    IsCollection: js.UndefOr[Boolean] = js.undefined,
-    IsModifiable: js.UndefOr[Boolean] = js.undefined,
+    IsCollection: js.UndefOr[scala.Boolean] = js.undefined,
+    IsModifiable: js.UndefOr[scala.Boolean] = js.undefined,
     Name: String = null,
     Value: String = null
   ): OptionSetting = {

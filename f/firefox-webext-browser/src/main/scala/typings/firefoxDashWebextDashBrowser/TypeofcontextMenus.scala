@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.contextMenusNs.OnClickData
-import typings.firefoxDashWebextDashBrowser.browserNs.tabsNs.Tab
+import typings.firefoxDashWebextDashBrowser.browser.contextMenus.OnClickData
+import typings.firefoxDashWebextDashBrowser.browser.tabs.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

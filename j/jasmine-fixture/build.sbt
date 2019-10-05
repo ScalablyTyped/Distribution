@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jasmine-fixture"
-version := "1.0-dt-20181026Z-f8a287"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20181026Z-d1406c"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jsonata"
-version := "1.3-dt-20190212Z-66a0e1"
-scalaVersion := "2.12.9"
+version := "1.3-dt-20190212Z-7d498d"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

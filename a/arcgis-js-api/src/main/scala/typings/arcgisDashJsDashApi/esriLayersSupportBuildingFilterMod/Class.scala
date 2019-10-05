@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportBuildingFilterMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BuildingFilter
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BuildingFilterBlock
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.BuildingFilterProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
+import typings.arcgisDashJsDashApi.__esri.BuildingFilter
+import typings.arcgisDashJsDashApi.__esri.BuildingFilterBlock
+import typings.arcgisDashJsDashApi.__esri.BuildingFilterProperties
+import typings.arcgisDashJsDashApi.__esri.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

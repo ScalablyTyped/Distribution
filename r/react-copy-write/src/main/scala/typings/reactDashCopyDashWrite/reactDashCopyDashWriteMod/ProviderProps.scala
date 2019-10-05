@@ -1,6 +1,6 @@
 package typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

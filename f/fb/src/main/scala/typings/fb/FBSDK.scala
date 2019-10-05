@@ -1,6 +1,6 @@
 package typings.fb
 
-import typings.fb.FBNs.LoginStatusResponse
+import typings.fb.FB.LoginStatusResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsLayersSupportFeatureFilterMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureFilter
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureFilterProperties
+import typings.arcgisDashJsDashApi.__esri.FeatureFilter
+import typings.arcgisDashJsDashApi.__esri.FeatureFilterProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

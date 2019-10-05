@@ -56,7 +56,7 @@ object ActionExecutionDetail {
     lastUpdateTime: Timestamp = null,
     output: ActionExecutionOutput = null,
     pipelineExecutionId: PipelineExecutionId = null,
-    pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined,
+    pipelineVersion: Int | Double = null,
     stageName: StageName = null,
     startTime: Timestamp = null,
     status: ActionExecutionStatus = null
@@ -68,7 +68,7 @@ object ActionExecutionDetail {
     if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
     if (output != null) __obj.updateDynamic("output")(output)
     if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId)
-    if (!js.isUndefined(pipelineVersion)) __obj.updateDynamic("pipelineVersion")(pipelineVersion)
+    if (pipelineVersion != null) __obj.updateDynamic("pipelineVersion")(pipelineVersion.asInstanceOf[js.Any])
     if (stageName != null) __obj.updateDynamic("stageName")(stageName)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

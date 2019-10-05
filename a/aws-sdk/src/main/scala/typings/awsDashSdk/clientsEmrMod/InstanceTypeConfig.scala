@@ -36,17 +36,17 @@ object InstanceTypeConfig {
   def apply(
     InstanceType: InstanceType,
     BidPrice: XmlStringMaxLen256 = null,
-    BidPriceAsPercentageOfOnDemandPrice: js.UndefOr[NonNegativeDouble] = js.undefined,
+    BidPriceAsPercentageOfOnDemandPrice: Int | Double = null,
     Configurations: ConfigurationList = null,
     EbsConfiguration: EbsConfiguration = null,
-    WeightedCapacity: js.UndefOr[WholeNumber] = js.undefined
+    WeightedCapacity: Int | Double = null
   ): InstanceTypeConfig = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType)
     if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice)
-    if (!js.isUndefined(BidPriceAsPercentageOfOnDemandPrice)) __obj.updateDynamic("BidPriceAsPercentageOfOnDemandPrice")(BidPriceAsPercentageOfOnDemandPrice)
+    if (BidPriceAsPercentageOfOnDemandPrice != null) __obj.updateDynamic("BidPriceAsPercentageOfOnDemandPrice")(BidPriceAsPercentageOfOnDemandPrice.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations)
     if (EbsConfiguration != null) __obj.updateDynamic("EbsConfiguration")(EbsConfiguration)
-    if (!js.isUndefined(WeightedCapacity)) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity)
+    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTypeConfig]
   }
 }

@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baconjs", "Error")
 @js.native
 class Error[E] protected ()
-  extends typings.baconjs.BaconNs.Error[E] {
+  extends typings.baconjs.Bacon.Error[E] {
   /**
     * @constructor
     * @constructs Error

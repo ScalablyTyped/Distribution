@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.RangeSlider
-import typings.kendoDashUi.kendoNs.uiNs.RangeSliderOptions
+import typings.kendoDashUi.kendo.ui.RangeSlider
+import typings.kendoDashUi.kendo.ui.RangeSliderOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

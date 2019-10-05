@@ -72,12 +72,12 @@ object GetBotResponse {
   def apply(
     abortStatement: Statement = null,
     checksum: String = null,
-    childDirected: js.UndefOr[Boolean] = js.undefined,
+    childDirected: js.UndefOr[scala.Boolean] = js.undefined,
     clarificationPrompt: Prompt = null,
     createdDate: Timestamp = null,
     description: Description = null,
     failureReason: String = null,
-    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
+    idleSessionTTLInSeconds: Int | Double = null,
     intents: IntentList = null,
     lastUpdatedDate: Timestamp = null,
     locale: Locale = null,
@@ -94,7 +94,7 @@ object GetBotResponse {
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate)
     if (description != null) __obj.updateDynamic("description")(description)
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
-    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds)
+    if (idleSessionTTLInSeconds != null) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents)
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])

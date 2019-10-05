@@ -21,7 +21,7 @@ trait ReplaceableAttribute extends js.Object {
 
 object ReplaceableAttribute {
   @scala.inline
-  def apply(Name: String, Value: String, Replace: js.UndefOr[Boolean] = js.undefined): ReplaceableAttribute = {
+  def apply(Name: String, Value: String, Replace: js.UndefOr[scala.Boolean] = js.undefined): ReplaceableAttribute = {
     val __obj = js.Dynamic.literal(Name = Name, Value = Value)
     if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace)
     __obj.asInstanceOf[ReplaceableAttribute]

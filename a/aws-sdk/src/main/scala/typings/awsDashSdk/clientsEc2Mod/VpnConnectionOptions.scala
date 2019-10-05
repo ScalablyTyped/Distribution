@@ -17,7 +17,10 @@ trait VpnConnectionOptions extends js.Object {
 
 object VpnConnectionOptions {
   @scala.inline
-  def apply(StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined, TunnelOptions: TunnelOptionsList = null): VpnConnectionOptions = {
+  def apply(
+    StaticRoutesOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    TunnelOptions: TunnelOptionsList = null
+  ): VpnConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(StaticRoutesOnly)) __obj.updateDynamic("StaticRoutesOnly")(StaticRoutesOnly)
     if (TunnelOptions != null) __obj.updateDynamic("TunnelOptions")(TunnelOptions)

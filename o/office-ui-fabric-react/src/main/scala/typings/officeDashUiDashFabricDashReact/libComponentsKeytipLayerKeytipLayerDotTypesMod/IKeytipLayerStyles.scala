@@ -11,9 +11,9 @@ trait IKeytipLayerStyles extends js.Object {
 
 object IKeytipLayerStyles {
   @scala.inline
-  def apply(innerContent: IStyle): IKeytipLayerStyles = {
-    val __obj = js.Dynamic.literal(innerContent = innerContent.asInstanceOf[js.Any])
-  
+  def apply(innerContent: IStyle = null): IKeytipLayerStyles = {
+    val __obj = js.Dynamic.literal()
+    if (innerContent != null) __obj.updateDynamic("innerContent")(innerContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipLayerStyles]
   }
 }

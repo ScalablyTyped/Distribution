@@ -1,6 +1,6 @@
 package typings.signatureUnderscorePad
 
-import typings.signatureUnderscorePad.signatureUnderscorePadMod.SignaturePadNs.Bezier
+import typings.signatureUnderscorePad.signatureUnderscorePadMod.SignaturePad.Bezier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

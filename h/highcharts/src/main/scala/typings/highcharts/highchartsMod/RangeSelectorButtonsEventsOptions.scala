@@ -1,5 +1,6 @@
 package typings.highcharts.highchartsMod
 
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +20,9 @@ trait RangeSelectorButtonsEventsOptions extends js.Object {
 
 object RangeSelectorButtonsEventsOptions {
   @scala.inline
-  def apply(click: RangeSelectorClickCallbackFunction = null): RangeSelectorButtonsEventsOptions = {
+  def apply(click: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit = null): RangeSelectorButtonsEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
     __obj.asInstanceOf[RangeSelectorButtonsEventsOptions]
   }
 }

@@ -21,13 +21,9 @@ trait ListIdentityProvidersRequest extends js.Object {
 
 object ListIdentityProvidersRequest {
   @scala.inline
-  def apply(
-    UserPoolId: UserPoolIdType,
-    MaxResults: js.UndefOr[ListProvidersLimitType] = js.undefined,
-    NextToken: PaginationKeyType = null
-  ): ListIdentityProvidersRequest = {
+  def apply(UserPoolId: UserPoolIdType, MaxResults: Int | Double = null, NextToken: PaginationKeyType = null): ListIdentityProvidersRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListIdentityProvidersRequest]
   }

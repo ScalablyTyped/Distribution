@@ -15,12 +15,6 @@ trait AudioProcessingEvent extends Event {
 
 @JSGlobal("AudioProcessingEvent")
 @js.native
-class AudioProcessingEventCls protected () extends AudioProcessingEvent {
-  def this(`type`: java.lang.String, eventInitDict: AudioProcessingEventInit) = this()
-}
-
-@JSGlobal("AudioProcessingEvent")
-@js.native
 object AudioProcessingEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

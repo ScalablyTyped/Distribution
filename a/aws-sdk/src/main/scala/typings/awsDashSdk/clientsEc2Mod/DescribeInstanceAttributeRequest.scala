@@ -21,7 +21,11 @@ trait DescribeInstanceAttributeRequest extends js.Object {
 
 object DescribeInstanceAttributeRequest {
   @scala.inline
-  def apply(Attribute: InstanceAttributeName, InstanceId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeInstanceAttributeRequest = {
+  def apply(
+    Attribute: InstanceAttributeName,
+    InstanceId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DescribeInstanceAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], InstanceId = InstanceId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeInstanceAttributeRequest]

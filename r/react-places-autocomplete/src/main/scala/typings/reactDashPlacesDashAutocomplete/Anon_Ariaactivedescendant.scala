@@ -1,7 +1,9 @@
 package typings.reactDashPlacesDashAutocomplete
 
 import typings.react.Element
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.combobox
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.list
@@ -32,15 +34,15 @@ object Anon_Ariaactivedescendant {
     `aria-expanded`: Boolean,
     autoComplete: off,
     disabled: Boolean,
-    onBlur: FocusEventHandler[Element],
+    onBlur: FocusEvent[Element] => Unit,
     onChange: Anon_Target => Unit,
-    onKeyDown: KeyboardEventHandler[Element],
+    onKeyDown: KeyboardEvent[Element] => Unit,
     role: combobox,
     `type`: text,
     `aria-activedescendant`: String = null,
     value: String = null
   ): Anon_Ariaactivedescendant = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, onBlur = onBlur, onChange = js.Any.fromFunction1(onChange), onKeyDown = onKeyDown, role = role)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role)
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`)
     __obj.updateDynamic("aria-expanded")(`aria-expanded`)
     __obj.updateDynamic("type")(`type`)

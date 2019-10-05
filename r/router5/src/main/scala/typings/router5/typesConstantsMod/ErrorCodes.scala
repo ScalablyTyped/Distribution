@@ -1,5 +1,6 @@
 package typings.router5.typesConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,4 +35,8 @@ object ErrorCodes {
     __obj.asInstanceOf[ErrorCodes]
   }
 }
+
+@JSImport("router5/types/constants", "errorCodes")
+@js.native
+object errorCodes extends TopLevel[ErrorCodes]
 

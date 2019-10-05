@@ -12,10 +12,14 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(cmp: Comparator = null, replacer: Replacer = null, space: Double | String = null): Options = {
+  def apply(
+    cmp: (/* a */ Element, /* b */ Element) => Double = null,
+    replacer: (/* key */ String, /* value */ js.Any) => js.Any = null,
+    space: Double | String = null
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cmp != null) __obj.updateDynamic("cmp")(cmp)
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (cmp != null) __obj.updateDynamic("cmp")(js.Any.fromFunction2(cmp))
+    if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

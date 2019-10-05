@@ -1,7 +1,7 @@
 package typings.reduxDashBootstrap
 
-import typings.reduxDashBootstrap.dtsInterfacesInterfacesMod.interfacesNs.BoostrapOptions
-import typings.reduxDashBootstrap.dtsInterfacesInterfacesMod.interfacesNs.BootstrapResult
+import typings.reduxDashBootstrap.dtsInterfacesInterfacesMod.interfaces.BoostrapOptions
+import typings.reduxDashBootstrap.dtsInterfacesInterfacesMod.interfaces.BootstrapResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

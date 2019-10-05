@@ -11,10 +11,10 @@ trait UnregisterCallbacksHash extends js.Object {
 
 object UnregisterCallbacksHash {
   @scala.inline
-  def apply(onError: ErrorCallback = null, onSuccess: Callback = null): UnregisterCallbacksHash = {
+  def apply(onError: /* args */ ErrorArgs => Unit = null, onSuccess: () => Unit = null): UnregisterCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     __obj.asInstanceOf[UnregisterCallbacksHash]
   }
 }

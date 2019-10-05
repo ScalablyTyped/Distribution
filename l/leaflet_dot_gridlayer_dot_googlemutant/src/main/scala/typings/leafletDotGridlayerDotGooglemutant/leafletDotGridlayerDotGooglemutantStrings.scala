@@ -1,6 +1,6 @@
 package typings.leafletDotGridlayerDotGooglemutant
 
-import typings.leafletDotGridlayerDotGooglemutant.leafletMod.gridLayerNs.GoogleMutantType
+import typings.leafletDotGridlayerDotGooglemutant.leafletMod.gridLayer.GoogleMutantType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

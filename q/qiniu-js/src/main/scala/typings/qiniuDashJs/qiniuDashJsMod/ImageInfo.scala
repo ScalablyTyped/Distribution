@@ -38,3 +38,9 @@ object ImageInfo {
   }
 }
 
+@JSImport("qiniu-js", "imageInfo")
+@js.native
+object imageInfo extends js.Object {
+  def apply(key: String, domain: String): js.Promise[ImageInfo] = js.native
+}
+

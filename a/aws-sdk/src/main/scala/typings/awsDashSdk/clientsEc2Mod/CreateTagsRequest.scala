@@ -21,7 +21,7 @@ trait CreateTagsRequest extends js.Object {
 
 object CreateTagsRequest {
   @scala.inline
-  def apply(Resources: ResourceIdList, Tags: TagList, DryRun: js.UndefOr[Boolean] = js.undefined): CreateTagsRequest = {
+  def apply(Resources: ResourceIdList, Tags: TagList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateTagsRequest = {
     val __obj = js.Dynamic.literal(Resources = Resources, Tags = Tags)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateTagsRequest]

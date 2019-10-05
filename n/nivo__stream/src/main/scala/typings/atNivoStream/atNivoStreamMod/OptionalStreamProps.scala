@@ -13,6 +13,7 @@ import typings.atNivoCore.atNivoCoreMod.SvgDefsAndFill
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
 import typings.atNivoScales.atNivoScalesMod.Scale
+import typings.atNivoStream.Anon_0
 import typings.atNivoStream.atNivoStreamStrings.center
 import typings.atNivoStream.atNivoStreamStrings.end
 import typings.atNivoStream.atNivoStreamStrings.start
@@ -77,10 +78,10 @@ object OptionalStreamProps {
     offsetType: StackOffset,
     order: StackOrder,
     renderDot: StreamDotsItem,
-    stack: StackFunc[T],
+    stack: /* data */ js.Array[T] => js.Array[js.Array[Anon_0[T]]],
     theme: Theme,
     tooltipFormat: TooltipFormatter[T] | String,
-    tooltipLabel: TooltipLabel[T],
+    tooltipLabel: T => String,
     xScale: Scale,
     yScale: Scale,
     axisBottom: AxisProps = null,
@@ -90,7 +91,7 @@ object OptionalStreamProps {
     defs: js.Array[Anon_Id] = null,
     fill: js.Array[Anon_[T]] = null
   ): OptionalStreamProps[T] = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], curve = curve, dotBorderColor = dotBorderColor.asInstanceOf[js.Any], dotBorderWidth = dotBorderWidth.asInstanceOf[js.Any], dotColor = dotColor.asInstanceOf[js.Any], dotPosition = dotPosition.asInstanceOf[js.Any], dotSize = dotSize.asInstanceOf[js.Any], enableDots = enableDots, enableGridX = enableGridX, enableGridY = enableGridY, enableStackTooltip = enableStackTooltip, fillOpacity = fillOpacity, isInteractive = isInteractive, legends = legends, margin = margin, offsetType = offsetType, order = order, renderDot = renderDot, stack = stack, theme = theme, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], tooltipLabel = tooltipLabel, xScale = xScale, yScale = yScale)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], curve = curve, dotBorderColor = dotBorderColor.asInstanceOf[js.Any], dotBorderWidth = dotBorderWidth.asInstanceOf[js.Any], dotColor = dotColor.asInstanceOf[js.Any], dotPosition = dotPosition.asInstanceOf[js.Any], dotSize = dotSize.asInstanceOf[js.Any], enableDots = enableDots, enableGridX = enableGridX, enableGridY = enableGridY, enableStackTooltip = enableStackTooltip, fillOpacity = fillOpacity, isInteractive = isInteractive, legends = legends, margin = margin, offsetType = offsetType, order = order, renderDot = renderDot, stack = js.Any.fromFunction1(stack), theme = theme, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], tooltipLabel = js.Any.fromFunction1(tooltipLabel), xScale = xScale, yScale = yScale)
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)

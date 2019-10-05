@@ -21,3 +21,9 @@ object TableNodes {
   }
 }
 
+@JSImport("prosemirror-tables", "tableNodes")
+@js.native
+object tableNodes extends js.Object {
+  def apply(options: TableNodesOptions): TableNodes = js.native
+}
+

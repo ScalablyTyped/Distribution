@@ -1,7 +1,7 @@
 package typings.emscripten
 
-import typings.emscripten.EmscriptenNs.EnvironmentType
-import typings.emscripten.EmscriptenNs.ValueType
+import typings.emscripten.Emscripten.EnvironmentType
+import typings.emscripten.Emscripten.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

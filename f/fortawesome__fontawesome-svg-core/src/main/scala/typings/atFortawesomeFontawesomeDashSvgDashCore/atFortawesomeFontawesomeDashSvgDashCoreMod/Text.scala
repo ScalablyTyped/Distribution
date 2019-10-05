@@ -22,3 +22,10 @@ object Text {
   }
 }
 
+@JSImport("@fortawesome/fontawesome-svg-core", "text")
+@js.native
+object text extends js.Object {
+  def apply(content: String): Text = js.native
+  def apply(content: String, params: TextParams): Text = js.native
+}
+

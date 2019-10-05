@@ -1,8 +1,8 @@
 package typings.atPulumiAws.workspacesGetBundleMod
 
-import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleComputeType
-import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleRootStorage
-import typings.atPulumiAws.typesOutputMod.workspacesNs.GetBundleUserStorage
+import typings.atPulumiAws.typesOutputMod.workspaces.GetBundleComputeType
+import typings.atPulumiAws.typesOutputMod.workspaces.GetBundleRootStorage
+import typings.atPulumiAws.typesOutputMod.workspaces.GetBundleUserStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

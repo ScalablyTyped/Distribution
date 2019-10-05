@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashSwipeout.reactDashNativeDashSwipeoutMod
 
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.reactDashNativeDashSwipeout.reactDashNativeDashSwipeoutStrings.delete
 import typings.reactDashNativeDashSwipeout.reactDashNativeDashSwipeoutStrings.primary

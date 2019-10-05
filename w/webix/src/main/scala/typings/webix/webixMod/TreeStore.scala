@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,4 +52,8 @@ trait TreeStore extends js.Object {
   def serialize(): js.Array[_] = js.native
   def serialize(all: Boolean): js.Array[_] = js.native
 }
+
+@JSImport("webix", "TreeStore")
+@js.native
+object TreeStore extends TopLevel[TreeStore]
 

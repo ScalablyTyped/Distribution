@@ -66,3 +66,9 @@ class URI protected () extends js.Object {
   def toAor(show_port: Boolean): String = js.native
 }
 
+@JSImport("jssip", "URI")
+@js.native
+object URI extends js.Object {
+  def parse(uri: String): URI = js.native
+}
+

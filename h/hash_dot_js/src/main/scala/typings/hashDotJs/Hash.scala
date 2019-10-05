@@ -1,5 +1,6 @@
 package typings.hashDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.hashDotJs.hashDotJsStrings.hex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,4 +35,8 @@ trait Hash extends js.Object {
   def sha384(): Sha384 = js.native
   def sha512(): Sha512 = js.native
 }
+
+@JSGlobal("hash")
+@js.native
+object hash extends TopLevel[Hash]
 

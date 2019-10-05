@@ -1,5 +1,7 @@
 package typings.node.netMod
 
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +24,12 @@ object TcpNetConnectOpts {
     host: java.lang.String = null,
     localAddress: java.lang.String = null,
     localPort: Int | Double = null,
-    lookup: LookupFunction = null,
+    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* address */ java.lang.String, 
+      /* family */ Double, 
+      Unit
+    ]) => Unit = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     writable: js.UndefOr[Boolean] = js.undefined
@@ -35,7 +42,7 @@ object TcpNetConnectOpts {
     if (host != null) __obj.updateDynamic("host")(host)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)

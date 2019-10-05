@@ -18,9 +18,5 @@ trait RandomSource extends js.Object {
 
 @JSGlobal("RandomSource")
 @js.native
-class RandomSourceCls () extends RandomSource
-
-@JSGlobal("RandomSource")
-@js.native
 object RandomSource extends Instantiable0[RandomSource]
 

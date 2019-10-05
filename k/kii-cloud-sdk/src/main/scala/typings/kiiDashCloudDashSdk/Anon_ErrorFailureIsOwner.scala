@@ -1,7 +1,7 @@
 package typings.kiiDashCloudDashSdk
 
-import typings.kiiDashCloudDashSdk.KiiCloudNs.KiiThing
-import typings.kiiDashCloudDashSdk.KiiCloudNs.KiiUser
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiThing
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiUser
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

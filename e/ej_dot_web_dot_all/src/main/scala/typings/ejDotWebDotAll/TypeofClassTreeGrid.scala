@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.TreeGrid
-import typings.ejDotWebDotAll.ejNs.TreeGridNs.Model
+import typings.ejDotWebDotAll.ej.TreeGrid
+import typings.ejDotWebDotAll.ej.TreeGrid.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

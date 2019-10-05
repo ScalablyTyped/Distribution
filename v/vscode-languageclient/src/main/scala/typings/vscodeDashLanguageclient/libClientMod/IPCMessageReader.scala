@@ -1,6 +1,6 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
-import typings.node.NodeJSNs.Process
+import typings.node.NodeJS.Process
 import typings.node.childUnderscoreProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`

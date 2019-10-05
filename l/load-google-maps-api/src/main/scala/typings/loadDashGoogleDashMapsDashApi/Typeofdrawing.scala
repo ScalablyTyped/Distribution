@@ -1,13 +1,13 @@
 package typings.loadDashGoogleDashMapsDashApi
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.googlemaps.googleNs.mapsNs.drawingNs.DrawingManager
+import typings.googlemaps.google.maps.drawing.DrawingManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofdrawing extends js.Object {
-  var DrawingManager: Instantiable0[typings.googlemaps.googleNs.mapsNs.drawingNs.DrawingManager]
+  var DrawingManager: Instantiable0[typings.googlemaps.google.maps.drawing.DrawingManager]
 }
 
 object Typeofdrawing {

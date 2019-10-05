@@ -1,7 +1,7 @@
 package typings.ssh2.ssh2Mod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.ssh2.ssh2Strings.force
 import typings.ssh2.ssh2Strings.md5
 import typings.ssh2.ssh2Strings.sha1

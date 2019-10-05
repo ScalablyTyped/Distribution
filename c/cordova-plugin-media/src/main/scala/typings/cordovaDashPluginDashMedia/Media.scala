@@ -69,19 +69,6 @@ trait Media extends js.Object {
 
 @JSGlobal("Media")
 @js.native
-class MediaCls protected () extends Media {
-  def this(src: String, mediaSuccess: js.Function0[Unit]) = this()
-  def this(src: String, mediaSuccess: js.Function0[Unit], mediaError: js.Function1[/* error */ MediaError, _]) = this()
-  def this(
-    src: String,
-    mediaSuccess: js.Function0[Unit],
-    mediaError: js.Function1[/* error */ MediaError, _],
-    mediaStatus: js.Function1[/* status */ Double, Unit]
-  ) = this()
-}
-
-@JSGlobal("Media")
-@js.native
 object Media
   extends Instantiable2[/* src */ String, /* mediaSuccess */ js.Function0[Unit], Media]
      with Instantiable3[

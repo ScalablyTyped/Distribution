@@ -15,12 +15,13 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: ReactNode,
     text: String,
+    children: ReactNode = null,
     onCopy: (/* text */ String, /* result */ Boolean) => Unit = null,
     options: Options = null
   ): Props = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], text = text)
+    val __obj = js.Dynamic.literal(text = text)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction2(onCopy))
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Props]

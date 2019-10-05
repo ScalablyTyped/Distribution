@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Frustum")
 @js.native
 class Frustum protected ()
-  extends typings.playcanvas.pcNs.Frustum {
-  def this(projectionMatrix: typings.playcanvas.pcNs.Mat4, viewMatrix: typings.playcanvas.pcNs.Mat4) = this()
+  extends typings.playcanvas.pc.Frustum {
+  def this(projectionMatrix: typings.playcanvas.pc.Mat4, viewMatrix: typings.playcanvas.pc.Mat4) = this()
 }
 

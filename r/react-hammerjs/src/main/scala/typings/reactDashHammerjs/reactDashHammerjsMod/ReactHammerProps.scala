@@ -1,6 +1,7 @@
 package typings.reactDashHammerjs.reactDashHammerjsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.hammerjs.HammerInput
 import typings.hammerjs.HammerListener
 import typings.hammerjs.Recognizer
 import typings.reactDashHammerjs.reactDashHammerjsStrings.DIRECTION_ALL
@@ -48,55 +49,55 @@ trait ReactHammerProps extends js.Object {
 object ReactHammerProps {
   @scala.inline
   def apply(
-    action: HammerListener = null,
+    action: /* event */ HammerInput => Unit = null,
     direction: DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL = null,
-    onDoubleTap: HammerListener = null,
-    onPan: HammerListener = null,
-    onPanCancel: HammerListener = null,
-    onPanEnd: HammerListener = null,
-    onPanStart: HammerListener = null,
-    onPinch: HammerListener = null,
-    onPinchCancel: HammerListener = null,
-    onPinchEnd: HammerListener = null,
-    onPinchIn: HammerListener = null,
-    onPinchOut: HammerListener = null,
-    onPinchStart: HammerListener = null,
-    onPress: HammerListener = null,
-    onPressUp: HammerListener = null,
-    onRotate: HammerListener = null,
-    onRotateCancel: HammerListener = null,
-    onRotateEnd: HammerListener = null,
-    onRotateMove: HammerListener = null,
-    onRotateStart: HammerListener = null,
-    onSwipe: HammerListener = null,
-    onTap: HammerListener = null,
+    onDoubleTap: /* event */ HammerInput => Unit = null,
+    onPan: /* event */ HammerInput => Unit = null,
+    onPanCancel: /* event */ HammerInput => Unit = null,
+    onPanEnd: /* event */ HammerInput => Unit = null,
+    onPanStart: /* event */ HammerInput => Unit = null,
+    onPinch: /* event */ HammerInput => Unit = null,
+    onPinchCancel: /* event */ HammerInput => Unit = null,
+    onPinchEnd: /* event */ HammerInput => Unit = null,
+    onPinchIn: /* event */ HammerInput => Unit = null,
+    onPinchOut: /* event */ HammerInput => Unit = null,
+    onPinchStart: /* event */ HammerInput => Unit = null,
+    onPress: /* event */ HammerInput => Unit = null,
+    onPressUp: /* event */ HammerInput => Unit = null,
+    onRotate: /* event */ HammerInput => Unit = null,
+    onRotateCancel: /* event */ HammerInput => Unit = null,
+    onRotateEnd: /* event */ HammerInput => Unit = null,
+    onRotateMove: /* event */ HammerInput => Unit = null,
+    onRotateStart: /* event */ HammerInput => Unit = null,
+    onSwipe: /* event */ HammerInput => Unit = null,
+    onTap: /* event */ HammerInput => Unit = null,
     options: HammerOptionsWithRecognizers = null,
     recognizeWith: StringDictionary[Recognizer | String] = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ReactHammerProps = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (onDoubleTap != null) __obj.updateDynamic("onDoubleTap")(onDoubleTap)
-    if (onPan != null) __obj.updateDynamic("onPan")(onPan)
-    if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(onPanCancel)
-    if (onPanEnd != null) __obj.updateDynamic("onPanEnd")(onPanEnd)
-    if (onPanStart != null) __obj.updateDynamic("onPanStart")(onPanStart)
-    if (onPinch != null) __obj.updateDynamic("onPinch")(onPinch)
-    if (onPinchCancel != null) __obj.updateDynamic("onPinchCancel")(onPinchCancel)
-    if (onPinchEnd != null) __obj.updateDynamic("onPinchEnd")(onPinchEnd)
-    if (onPinchIn != null) __obj.updateDynamic("onPinchIn")(onPinchIn)
-    if (onPinchOut != null) __obj.updateDynamic("onPinchOut")(onPinchOut)
-    if (onPinchStart != null) __obj.updateDynamic("onPinchStart")(onPinchStart)
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
-    if (onPressUp != null) __obj.updateDynamic("onPressUp")(onPressUp)
-    if (onRotate != null) __obj.updateDynamic("onRotate")(onRotate)
-    if (onRotateCancel != null) __obj.updateDynamic("onRotateCancel")(onRotateCancel)
-    if (onRotateEnd != null) __obj.updateDynamic("onRotateEnd")(onRotateEnd)
-    if (onRotateMove != null) __obj.updateDynamic("onRotateMove")(onRotateMove)
-    if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(onRotateStart)
-    if (onSwipe != null) __obj.updateDynamic("onSwipe")(onSwipe)
-    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
+    if (onDoubleTap != null) __obj.updateDynamic("onDoubleTap")(js.Any.fromFunction1(onDoubleTap))
+    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
+    if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(js.Any.fromFunction1(onPanCancel))
+    if (onPanEnd != null) __obj.updateDynamic("onPanEnd")(js.Any.fromFunction1(onPanEnd))
+    if (onPanStart != null) __obj.updateDynamic("onPanStart")(js.Any.fromFunction1(onPanStart))
+    if (onPinch != null) __obj.updateDynamic("onPinch")(js.Any.fromFunction1(onPinch))
+    if (onPinchCancel != null) __obj.updateDynamic("onPinchCancel")(js.Any.fromFunction1(onPinchCancel))
+    if (onPinchEnd != null) __obj.updateDynamic("onPinchEnd")(js.Any.fromFunction1(onPinchEnd))
+    if (onPinchIn != null) __obj.updateDynamic("onPinchIn")(js.Any.fromFunction1(onPinchIn))
+    if (onPinchOut != null) __obj.updateDynamic("onPinchOut")(js.Any.fromFunction1(onPinchOut))
+    if (onPinchStart != null) __obj.updateDynamic("onPinchStart")(js.Any.fromFunction1(onPinchStart))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
+    if (onPressUp != null) __obj.updateDynamic("onPressUp")(js.Any.fromFunction1(onPressUp))
+    if (onRotate != null) __obj.updateDynamic("onRotate")(js.Any.fromFunction1(onRotate))
+    if (onRotateCancel != null) __obj.updateDynamic("onRotateCancel")(js.Any.fromFunction1(onRotateCancel))
+    if (onRotateEnd != null) __obj.updateDynamic("onRotateEnd")(js.Any.fromFunction1(onRotateEnd))
+    if (onRotateMove != null) __obj.updateDynamic("onRotateMove")(js.Any.fromFunction1(onRotateMove))
+    if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(js.Any.fromFunction1(onRotateStart))
+    if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1(onSwipe))
+    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
     if (options != null) __obj.updateDynamic("options")(options)
     if (recognizeWith != null) __obj.updateDynamic("recognizeWith")(recognizeWith)
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)

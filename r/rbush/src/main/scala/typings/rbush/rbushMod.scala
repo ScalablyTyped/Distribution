@@ -1,7 +1,7 @@
 package typings.rbush
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rbush.rbushNs.IRBush
+import typings.rbush.rbush.IRBush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

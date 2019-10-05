@@ -13,9 +13,5 @@ trait PageTransitionEvent extends Event {
 
 @JSGlobal("PageTransitionEvent")
 @js.native
-class PageTransitionEventCls () extends PageTransitionEvent
-
-@JSGlobal("PageTransitionEvent")
-@js.native
 object PageTransitionEvent extends Instantiable0[PageTransitionEvent]
 

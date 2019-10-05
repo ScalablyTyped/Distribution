@@ -28,7 +28,7 @@ object ModifyTrafficMirrorFilterNetworkServicesRequest {
   def apply(
     TrafficMirrorFilterId: String,
     AddNetworkServices: TrafficMirrorNetworkServiceList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     RemoveNetworkServices: TrafficMirrorNetworkServiceList = null
   ): ModifyTrafficMirrorFilterNetworkServicesRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterId = TrafficMirrorFilterId)

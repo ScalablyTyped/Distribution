@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
+import typings.typescriptDashServices.TypeScript.OutputFileType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,19 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "OutputFile")
 @js.native
 class OutputFile protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.OutputFile {
+  extends typings.typescriptDashServices.TypeScript.OutputFile {
+  def this(name: String, writeByteOrderMark: Boolean, text: String, fileType: OutputFileType) = this()
   def this(
     name: String,
     writeByteOrderMark: Boolean,
     text: String,
-    fileType: typings.typescriptDashServices.TypeScriptNs.OutputFileType
-  ) = this()
-  def this(
-    name: String,
-    writeByteOrderMark: Boolean,
-    text: String,
-    fileType: typings.typescriptDashServices.TypeScriptNs.OutputFileType,
-    sourceMapEntries: js.Array[typings.typescriptDashServices.TypeScriptNs.SourceMapEntry]
+    fileType: OutputFileType,
+    sourceMapEntries: js.Array[typings.typescriptDashServices.TypeScript.SourceMapEntry]
   ) = this()
 }
 

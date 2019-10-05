@@ -32,12 +32,12 @@ object QueryObjectsInput {
   def apply(
     pipelineId: id,
     sphere: String,
-    limit: js.UndefOr[int] = js.undefined,
+    limit: Int | Double = null,
     marker: String = null,
     query: Query = null
   ): QueryObjectsInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId, sphere = sphere)
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker)
     if (query != null) __obj.updateDynamic("query")(query)
     __obj.asInstanceOf[QueryObjectsInput]

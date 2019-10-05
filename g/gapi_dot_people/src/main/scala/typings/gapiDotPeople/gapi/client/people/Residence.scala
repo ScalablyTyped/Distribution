@@ -1,0 +1,21 @@
+package typings.gapiDotPeople.gapi.client.people
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Residence extends js.Object {
+  var current: Boolean
+  var metadata: FieldMetadata
+  var value: String
+}
+
+object Residence {
+  @scala.inline
+  def apply(current: Boolean, metadata: FieldMetadata, value: String): Residence = {
+    val __obj = js.Dynamic.literal(current = current, metadata = metadata, value = value)
+  
+    __obj.asInstanceOf[Residence]
+  }
+}
+

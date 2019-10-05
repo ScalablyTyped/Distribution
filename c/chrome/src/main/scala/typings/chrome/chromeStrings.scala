@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.contentSettingsNs.ScopeEnum
-import typings.chrome.chromeNs.omniboxNs.OnInputEnteredDisposition
-import typings.chrome.chromeNs.runtimeNs.RequestUpdateCheckStatus
-import typings.chrome.chromeNs.webRequestNs.ResourceType
+import typings.chrome.chrome.contentSettings.ScopeEnum
+import typings.chrome.chrome.omnibox.OnInputEnteredDisposition
+import typings.chrome.chrome.runtime.RequestUpdateCheckStatus
+import typings.chrome.chrome.webRequest.ResourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

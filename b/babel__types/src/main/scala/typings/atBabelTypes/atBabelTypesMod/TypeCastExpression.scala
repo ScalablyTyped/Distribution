@@ -41,3 +41,9 @@ object TypeCastExpression {
   }
 }
 
+@JSImport("@babel/types", "typeCastExpression")
+@js.native
+object typeCastExpression extends js.Object {
+  def apply(expression: Expression, typeAnnotation: TypeAnnotation): TypeCastExpression = js.native
+}
+

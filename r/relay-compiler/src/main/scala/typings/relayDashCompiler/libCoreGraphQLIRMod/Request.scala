@@ -25,14 +25,15 @@ object Request {
     fragment: Fragment,
     kind: typings.relayDashCompiler.relayDashCompilerStrings.Request,
     loc: Location,
-    metadata: Metadata,
     name: String,
     root: Root,
     id: String = null,
+    metadata: Metadata = null,
     text: String = null
   ): Request = {
-    val __obj = js.Dynamic.literal(fragment = fragment, kind = kind, loc = loc, metadata = metadata.asInstanceOf[js.Any], name = name, root = root)
+    val __obj = js.Dynamic.literal(fragment = fragment, kind = kind, loc = loc, name = name, root = root)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Request]
   }

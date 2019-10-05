@@ -1,6 +1,6 @@
 package typings.reactDashFlexr
 
-import typings.reactDashFlexr.underscoreUnderscoreReactFlexrNs.ErgonomicType
+import typings.reactDashFlexr.__ReactFlexr.ErgonomicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

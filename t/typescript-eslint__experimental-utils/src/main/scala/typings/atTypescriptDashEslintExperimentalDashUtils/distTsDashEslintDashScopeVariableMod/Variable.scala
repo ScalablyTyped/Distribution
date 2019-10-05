@@ -1,5 +1,7 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeVariableMod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeDefinitionMod.Definition
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeReferenceMod.Reference
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Identifier
@@ -15,18 +17,7 @@ trait Variable extends js.Object {
   var references: js.Array[Reference]
 }
 
-object Variable {
-  @scala.inline
-  def apply(
-    defs: js.Array[Definition],
-    identifiers: js.Array[Identifier],
-    name: String,
-    references: js.Array[Reference],
-    eslintUsed: js.UndefOr[Boolean] = js.undefined
-  ): Variable = {
-    val __obj = js.Dynamic.literal(defs = defs, identifiers = identifiers, name = name, references = references)
-    if (!js.isUndefined(eslintUsed)) __obj.updateDynamic("eslintUsed")(eslintUsed)
-    __obj.asInstanceOf[Variable]
-  }
-}
+@JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope/Variable", "Variable")
+@js.native
+object Variable extends TopLevel[Instantiable0[Variable]]
 

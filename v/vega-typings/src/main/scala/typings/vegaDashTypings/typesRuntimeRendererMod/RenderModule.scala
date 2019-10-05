@@ -25,3 +25,9 @@ object RenderModule {
   }
 }
 
+@JSImport("vega-typings/types/runtime/renderer", "renderModule")
+@js.native
+object renderModule extends js.Object {
+  def apply(moduleName: String, renderModule: RenderModule): RenderModule = js.native
+}
+

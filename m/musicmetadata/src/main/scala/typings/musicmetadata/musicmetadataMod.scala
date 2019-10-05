@@ -1,7 +1,7 @@
 package typings.musicmetadata
 
-import typings.musicmetadata.MMNs.Metadata
-import typings.musicmetadata.MMNs.Options
+import typings.musicmetadata.MM.Metadata
+import typings.musicmetadata.MM.Options
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.std.Error

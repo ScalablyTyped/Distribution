@@ -17,9 +17,9 @@ trait GetConnectorsRequest extends js.Object {
 
 object GetConnectorsRequest {
   @scala.inline
-  def apply(maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): GetConnectorsRequest = {
+  def apply(maxResults: Int | Double = null, nextToken: NextToken = null): GetConnectorsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetConnectorsRequest]
   }

@@ -22,14 +22,14 @@ trait FecOutputSettings extends js.Object {
 object FecOutputSettings {
   @scala.inline
   def apply(
-    ColumnDepth: js.UndefOr[__integerMin4Max20] = js.undefined,
+    ColumnDepth: Int | Double = null,
     IncludeFec: FecOutputIncludeFec = null,
-    RowLength: js.UndefOr[__integerMin1Max20] = js.undefined
+    RowLength: Int | Double = null
   ): FecOutputSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ColumnDepth)) __obj.updateDynamic("ColumnDepth")(ColumnDepth)
+    if (ColumnDepth != null) __obj.updateDynamic("ColumnDepth")(ColumnDepth.asInstanceOf[js.Any])
     if (IncludeFec != null) __obj.updateDynamic("IncludeFec")(IncludeFec.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowLength)) __obj.updateDynamic("RowLength")(RowLength)
+    if (RowLength != null) __obj.updateDynamic("RowLength")(RowLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[FecOutputSettings]
   }
 }

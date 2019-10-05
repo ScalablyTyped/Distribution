@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.OrderFulfillmentPickupDetailsNs.ScheduleTypeEnum
+import typings.squareDashConnect.squareDashConnectMod.OrderFulfillmentPickupDetails.ScheduleTypeEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,5 +87,27 @@ class OrderFulfillmentPickupDetails () extends js.Object {
     * See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values.
     */
   var schedule_type: js.UndefOr[ScheduleTypeEnum] = js.native
+}
+
+@JSImport("square-connect", "OrderFulfillmentPickupDetails")
+@js.native
+object OrderFulfillmentPickupDetails extends js.Object {
+  @js.native
+  sealed trait ScheduleTypeEnum extends js.Object
+  
+  @js.native
+  object ScheduleTypeEnum extends js.Object {
+    @js.native
+    sealed trait ASAP extends ScheduleTypeEnum
+    
+    @js.native
+    sealed trait SCHEDULED extends ScheduleTypeEnum
+    
+    /* "ASAP" */ val ASAP: typings.squareDashConnect.squareDashConnectMod.OrderFulfillmentPickupDetails.ScheduleTypeEnum.ASAP with String = js.native
+    /* "SCHEDULED" */ val SCHEDULED: typings.squareDashConnect.squareDashConnectMod.OrderFulfillmentPickupDetails.ScheduleTypeEnum.SCHEDULED with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ScheduleTypeEnum with String] = js.native
+  }
+  
 }
 

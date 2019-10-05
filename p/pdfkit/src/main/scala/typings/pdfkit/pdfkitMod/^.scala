@@ -1,8 +1,8 @@
 package typings.pdfkit.pdfkitMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pdfkit.PDFKitNs.PDFDocument
-import typings.pdfkit.PDFKitNs.PDFDocumentOptions
+import typings.pdfkit.PDFKit.PDFDocument
+import typings.pdfkit.PDFKit.PDFDocumentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

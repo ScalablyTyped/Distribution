@@ -17,10 +17,10 @@ trait LaunchTemplateCpuOptionsRequest extends js.Object {
 
 object LaunchTemplateCpuOptionsRequest {
   @scala.inline
-  def apply(CoreCount: js.UndefOr[Integer] = js.undefined, ThreadsPerCore: js.UndefOr[Integer] = js.undefined): LaunchTemplateCpuOptionsRequest = {
+  def apply(CoreCount: Int | scala.Double = null, ThreadsPerCore: Int | scala.Double = null): LaunchTemplateCpuOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CoreCount)) __obj.updateDynamic("CoreCount")(CoreCount)
-    if (!js.isUndefined(ThreadsPerCore)) __obj.updateDynamic("ThreadsPerCore")(ThreadsPerCore)
+    if (CoreCount != null) __obj.updateDynamic("CoreCount")(CoreCount.asInstanceOf[js.Any])
+    if (ThreadsPerCore != null) __obj.updateDynamic("ThreadsPerCore")(ThreadsPerCore.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateCpuOptionsRequest]
   }
 }

@@ -1,6 +1,7 @@
 package typings.statsDotJs
 
-import typings.statsDotJs.StatsNs.Panel
+import typings.statsDotJs.Stats.Panel
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,17 @@ class Stats () extends js.Object {
     */
   def showPanel(value: Double): Unit = js.native
   def update(): Unit = js.native
+}
+
+@JSGlobal("Stats")
+@js.native
+object Stats extends js.Object {
+  @js.native
+  class Panel protected () extends js.Object {
+    def this(name: String, foregroundColor: String, backgroundColor: String) = this()
+    var dom: HTMLCanvasElement = js.native
+    def update(value: Double, maxValue: Double): Unit = js.native
+  }
+  
 }
 

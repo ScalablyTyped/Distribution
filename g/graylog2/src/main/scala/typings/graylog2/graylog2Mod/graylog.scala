@@ -624,3 +624,9 @@ class graylog protected () extends EventEmitter {
   ): Unit = js.native
 }
 
+@JSImport("graylog2", "graylog")
+@js.native
+object graylog extends js.Object {
+  val graylog: typings.graylog2.graylog2Mod.graylog = js.native
+}
+

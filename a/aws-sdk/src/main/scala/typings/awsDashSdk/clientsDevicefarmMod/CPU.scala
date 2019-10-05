@@ -21,10 +21,10 @@ trait CPU extends js.Object {
 
 object CPU {
   @scala.inline
-  def apply(architecture: String = null, clock: js.UndefOr[Double] = js.undefined, frequency: String = null): CPU = {
+  def apply(architecture: String = null, clock: Int | scala.Double = null, frequency: String = null): CPU = {
     val __obj = js.Dynamic.literal()
     if (architecture != null) __obj.updateDynamic("architecture")(architecture)
-    if (!js.isUndefined(clock)) __obj.updateDynamic("clock")(clock)
+    if (clock != null) __obj.updateDynamic("clock")(clock.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency)
     __obj.asInstanceOf[CPU]
   }

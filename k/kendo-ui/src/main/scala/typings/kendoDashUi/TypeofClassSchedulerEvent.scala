@@ -2,11 +2,11 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.kendoDashUi.kendoNs.dataNs.DataSourceSchemaModelFields
-import typings.kendoDashUi.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray
-import typings.kendoDashUi.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject
-import typings.kendoDashUi.kendoNs.dataNs.SchedulerEvent
-import typings.kendoDashUi.kendoNs.dataNs.SchedulerEventData
+import typings.kendoDashUi.kendo.data.DataSourceSchemaModelFields
+import typings.kendoDashUi.kendo.data.DataSourceSchemaModelWithFieldsArray
+import typings.kendoDashUi.kendo.data.DataSourceSchemaModelWithFieldsObject
+import typings.kendoDashUi.kendo.data.SchedulerEvent
+import typings.kendoDashUi.kendo.data.SchedulerEventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

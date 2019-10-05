@@ -6,7 +6,7 @@ import typings.astDashTypes.genKindsMod.TSConstructSignatureDeclarationKind
 import typings.astDashTypes.genKindsMod.TSIndexSignatureKind
 import typings.astDashTypes.genKindsMod.TSMethodSignatureKind
 import typings.astDashTypes.genKindsMod.TSPropertySignatureKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TSTypeLiteral
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TSTypeLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

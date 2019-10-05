@@ -11,12 +11,12 @@ trait IPointer[T] extends js.Object {
   var value: T
 }
 
-object IPointer {
-  @scala.inline
-  def apply[T](value: T): IPointer[T] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[IPointer[T]]
-  }
+@JSImport("tstl/functional/IPointer", "IPointer")
+@js.native
+object IPointer extends js.Object {
+  /**
+    * Inference of Value Type.
+    */
+  type ValueType[Pointer /* <: IPointer[_] */] = js.Any
 }
 

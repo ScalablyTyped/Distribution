@@ -1,8 +1,8 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.ButtonStyle
-import typings.wegameDashApi.wxNs.typesNs.ButtonType
-import typings.wegameDashApi.wxNs.typesNs.GameClubButtonIcon
+import typings.wegameDashApi.wx.types.ButtonStyle
+import typings.wegameDashApi.wx.types.ButtonType
+import typings.wegameDashApi.wx.types.GameClubButtonIcon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

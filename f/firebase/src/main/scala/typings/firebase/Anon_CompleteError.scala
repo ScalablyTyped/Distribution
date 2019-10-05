@@ -1,7 +1,7 @@
 package typings.firebase
 
-import typings.firebase.firebaseMod.firestoreNs.DocumentSnapshot
-import typings.firebase.firebaseMod.firestoreNs.FirestoreError
+import typings.firebase.firebaseMod.firestore.DocumentSnapshot
+import typings.firebase.firebaseMod.firestore.FirestoreError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

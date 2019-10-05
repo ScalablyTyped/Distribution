@@ -1,6 +1,7 @@
 package typings.reactDashVirtualized.distEsGridMod
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
 import typings.reactDashVirtualized.distEsCellMeasurerMod.MeasuredCellParent
 import typings.reactDashVirtualized.reactDashVirtualizedMod.Map
@@ -33,7 +34,7 @@ object GridCellRangeProps {
   @scala.inline
   def apply(
     cellCache: Map[_],
-    cellRenderer: GridCellRenderer,
+    cellRenderer: /* props */ GridCellProps => ReactNode,
     columnSizeAndPositionManager: CellSizeAndPositionManager,
     columnStartIndex: Double,
     columnStopIndex: Double,
@@ -51,7 +52,7 @@ object GridCellRangeProps {
     visibleColumnIndices: VisibleCellRange,
     visibleRowIndices: VisibleCellRange
   ): GridCellRangeProps = {
-    val __obj = js.Dynamic.literal(cellCache = cellCache, cellRenderer = cellRenderer, columnSizeAndPositionManager = columnSizeAndPositionManager, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, deferredMeasurementCache = deferredMeasurementCache, horizontalOffsetAdjustment = horizontalOffsetAdjustment, isScrolling = isScrolling, parent = parent, rowSizeAndPositionManager = rowSizeAndPositionManager, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex, scrollLeft = scrollLeft, scrollTop = scrollTop, styleCache = styleCache, verticalOffsetAdjustment = verticalOffsetAdjustment, visibleColumnIndices = visibleColumnIndices, visibleRowIndices = visibleRowIndices)
+    val __obj = js.Dynamic.literal(cellCache = cellCache, cellRenderer = js.Any.fromFunction1(cellRenderer), columnSizeAndPositionManager = columnSizeAndPositionManager, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, deferredMeasurementCache = deferredMeasurementCache, horizontalOffsetAdjustment = horizontalOffsetAdjustment, isScrolling = isScrolling, parent = parent, rowSizeAndPositionManager = rowSizeAndPositionManager, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex, scrollLeft = scrollLeft, scrollTop = scrollTop, styleCache = styleCache, verticalOffsetAdjustment = verticalOffsetAdjustment, visibleColumnIndices = visibleColumnIndices, visibleRowIndices = visibleRowIndices)
   
     __obj.asInstanceOf[GridCellRangeProps]
   }

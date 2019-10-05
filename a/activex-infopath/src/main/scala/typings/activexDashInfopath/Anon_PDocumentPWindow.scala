@@ -1,7 +1,7 @@
 package typings.activexDashInfopath
 
-import typings.activexDashInfopath.InfoPathNs.Window
-import typings.activexDashInfopath.InfoPathNs._XDocument
+import typings.activexDashInfopath.InfoPath.Window
+import typings.activexDashInfopath.InfoPath._XDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

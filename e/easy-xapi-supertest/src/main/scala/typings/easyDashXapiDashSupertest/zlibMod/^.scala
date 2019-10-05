@@ -1,7 +1,5 @@
 package typings.easyDashXapiDashSupertest.zlibMod
 
-import typings.easyDashXapiDashSupertest.Buffer
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,40 +38,5 @@ object ^ extends js.Object {
   var Z_TREES: Double = js.native
   var Z_UNKNOWN: Double = js.native
   var Z_VERSION_ERROR: Double = js.native
-  def createDeflate(): Deflate = js.native
-  def createDeflate(options: ZlibOptions): Deflate = js.native
-  def createDeflateRaw(): DeflateRaw = js.native
-  def createDeflateRaw(options: ZlibOptions): DeflateRaw = js.native
-  def createGunzip(): Gunzip = js.native
-  def createGunzip(options: ZlibOptions): Gunzip = js.native
-  def createGzip(): Gzip = js.native
-  def createGzip(options: ZlibOptions): Gzip = js.native
-  def createInflate(): Inflate = js.native
-  def createInflate(options: ZlibOptions): Inflate = js.native
-  def createInflateRaw(): InflateRaw = js.native
-  def createInflateRaw(options: ZlibOptions): InflateRaw = js.native
-  def createUnzip(): Unzip = js.native
-  def createUnzip(options: ZlibOptions): Unzip = js.native
-  def deflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def deflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def deflateRawSync(buf: Buffer): js.Any = js.native
-  def deflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def deflateSync(buf: Buffer): js.Any = js.native
-  def deflateSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def gunzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def gunzipSync(buf: Buffer): js.Any = js.native
-  def gunzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def gzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def gzipSync(buf: Buffer): js.Any = js.native
-  def gzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def inflate(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def inflateRaw(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def inflateRawSync(buf: Buffer): js.Any = js.native
-  def inflateRawSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def inflateSync(buf: Buffer): js.Any = js.native
-  def inflateSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
-  def unzip(buf: Buffer, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  def unzipSync(buf: Buffer): js.Any = js.native
-  def unzipSync(buf: Buffer, options: ZlibOptions): js.Any = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.switchery.switcheryMod
 
-import typings.switchery.switcheryMod.SwitcheryNs.SwitcheryStatic
+import typings.switchery.switcheryMod.Switchery.SwitcheryStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

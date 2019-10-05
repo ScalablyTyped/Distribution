@@ -1,7 +1,7 @@
 package typings.pizzip.pizzipMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.Platform
+import typings.node.NodeJS.Platform
 import typings.pizzip.Anon_1
 import typings.pizzip.pizzipStrings.DOS
 import typings.pizzip.pizzipStrings.UNIX

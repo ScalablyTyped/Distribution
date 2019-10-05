@@ -1,15 +1,15 @@
 package typings.realm
 
-import typings.realm.RealmNs.SyncNs.AccessLevel
-import typings.realm.RealmNs.SyncNs.ClientResyncMode
-import typings.realm.RealmNs.SyncNs.LogLevel
-import typings.realm.RealmNs.SyncNs.OpenRealmBehaviorType
-import typings.realm.RealmNs.SyncNs.OpenRealmTimeOutBehavior
-import typings.realm.RealmNs.SyncNs.ProgressDirection
-import typings.realm.RealmNs.SyncNs.ProgressMode
-import typings.realm.RealmNs.SyncNs.RealmListenerEventName
-import typings.realm.RealmNs.SyncNs.SessionStopPolicy
-import typings.realm.RealmNs._PropertyType
+import typings.realm.Realm.Sync.AccessLevel
+import typings.realm.Realm.Sync.ClientResyncMode
+import typings.realm.Realm.Sync.LogLevel
+import typings.realm.Realm.Sync.OpenRealmBehaviorType
+import typings.realm.Realm.Sync.OpenRealmTimeOutBehavior
+import typings.realm.Realm.Sync.ProgressDirection
+import typings.realm.Realm.Sync.ProgressMode
+import typings.realm.Realm.Sync.RealmListenerEventName
+import typings.realm.Realm.Sync.SessionStopPolicy
+import typings.realm.Realm._PropertyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

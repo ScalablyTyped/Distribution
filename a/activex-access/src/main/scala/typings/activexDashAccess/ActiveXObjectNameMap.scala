@@ -1,9 +1,9 @@
 package typings.activexDashAccess
 
-import typings.activexDashAccess.AccWizObjectsNs.FieldList
-import typings.activexDashAccess.AccWizObjectsNs.ImexGrid
-import typings.activexDashAccess.AccWizObjectsNs.WizShellLinkA
-import typings.activexDashAccess.AccessNs.Application
+import typings.activexDashAccess.AccWizObjects.FieldList
+import typings.activexDashAccess.AccWizObjects.ImexGrid
+import typings.activexDashAccess.AccWizObjects.WizShellLinkA
+import typings.activexDashAccess.Access.Application
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

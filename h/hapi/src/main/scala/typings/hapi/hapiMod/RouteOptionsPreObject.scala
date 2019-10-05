@@ -1,8 +1,8 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiMod.LifecycleNs.FailAction
-import typings.hapi.hapiMod.LifecycleNs.Method
-import typings.hapi.hapiMod.LifecycleNs.ReturnValue
+import typings.hapi.hapiMod.Lifecycle.FailAction
+import typings.hapi.hapiMod.Lifecycle.Method
+import typings.hapi.hapiMod.Lifecycle.ReturnValue
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

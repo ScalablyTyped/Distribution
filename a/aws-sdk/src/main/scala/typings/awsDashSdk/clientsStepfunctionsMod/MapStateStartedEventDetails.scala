@@ -13,9 +13,9 @@ trait MapStateStartedEventDetails extends js.Object {
 
 object MapStateStartedEventDetails {
   @scala.inline
-  def apply(length: js.UndefOr[UnsignedInteger] = js.undefined): MapStateStartedEventDetails = {
+  def apply(length: Int | Double = null): MapStateStartedEventDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStateStartedEventDetails]
   }
 }

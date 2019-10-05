@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "IndexMemberDeclaration")
 @js.native
 class IndexMemberDeclaration protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.IndexMemberDeclaration {
-  def this(indexSignature: typings.typescriptDashServices.TypeScriptNs.IndexSignature) = this()
+  extends typings.typescriptDashServices.TypeScript.IndexMemberDeclaration {
+  def this(indexSignature: typings.typescriptDashServices.TypeScript.IndexSignature) = this()
 }
 

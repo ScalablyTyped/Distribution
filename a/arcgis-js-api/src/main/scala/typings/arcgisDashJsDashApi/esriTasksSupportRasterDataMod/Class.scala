@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportRasterDataMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterData
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterDataProperties
+import typings.arcgisDashJsDashApi.__esri.RasterData
+import typings.arcgisDashJsDashApi.__esri.RasterDataProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

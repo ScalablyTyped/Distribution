@@ -1,9 +1,9 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.gcmNs.GcmErrorEvent
-import typings.chrome.chromeNs.gcmNs.MessageDeletionEvent
-import typings.chrome.chromeNs.gcmNs.MessageReceptionEvent
-import typings.chrome.chromeNs.gcmNs.OutgoingMessage
+import typings.chrome.chrome.gcm.GcmErrorEvent
+import typings.chrome.chrome.gcm.MessageDeletionEvent
+import typings.chrome.chrome.gcm.MessageReceptionEvent
+import typings.chrome.chrome.gcm.OutgoingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

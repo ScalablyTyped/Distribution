@@ -25,3 +25,12 @@ object Counter {
   }
 }
 
+@JSImport("@fortawesome/fontawesome-svg-core", "counter")
+@js.native
+object counter extends js.Object {
+  def apply(content: String): Counter = js.native
+  def apply(content: String, params: CounterParams): Counter = js.native
+  def apply(content: Double): Counter = js.native
+  def apply(content: Double, params: CounterParams): Counter = js.native
+}
+

@@ -2,7 +2,7 @@ package typings.elasticDashApmDashNode.elasticDashApmDashNodeMod
 
 import typings.elasticDashApmDashNode.Anon_Connect
 import typings.elasticDashApmDashNode.Anon_Name
-import typings.elasticDashApmDashNode.elasticDashApmDashNodeMod.AwsLambdaNs.Handler
+import typings.elasticDashApmDashNode.elasticDashApmDashNodeMod.AwsLambda.Handler
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

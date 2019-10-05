@@ -3,10 +3,10 @@ package typings.videoDotJs
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.videoDotJs.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback
-import typings.videoDotJs.videoDotJsMod.videojsNs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojsNs.Player
-import typings.videoDotJs.videoDotJsMod.videojsNs.Spacer
+import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
+import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
+import typings.videoDotJs.videoDotJsMod.videojs.Player
+import typings.videoDotJs.videoDotJsMod.videojs.Spacer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

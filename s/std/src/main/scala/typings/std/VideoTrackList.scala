@@ -111,9 +111,5 @@ trait VideoTrackList
 
 @JSGlobal("VideoTrackList")
 @js.native
-class VideoTrackListCls () extends VideoTrackList
-
-@JSGlobal("VideoTrackList")
-@js.native
 object VideoTrackList extends Instantiable0[VideoTrackList]
 

@@ -35,8 +35,6 @@ object Anon_ActiveTabAnimatedBottom {
     animated: Boolean,
     goToTab: js.Any,
     instanceId: Double,
-    tabBarTextStyle: StyleProp[TextStyle],
-    tabBarUnderlineStyle: StyleProp[ViewStyle],
     tabs: js.Array[TabData],
     onTabClick: (/* tab */ TabData, /* index */ Double) => Unit = null,
     renderTab: /* tab */ TabData => ReactNode = null,
@@ -44,9 +42,11 @@ object Anon_ActiveTabAnimatedBottom {
     tabBarActiveTextColor: String = null,
     tabBarBackgroundColor: String = null,
     tabBarInactiveTextColor: String = null,
-    tabBarPosition: top | bottom = null
+    tabBarPosition: top | bottom = null,
+    tabBarTextStyle: StyleProp[TextStyle] = null,
+    tabBarUnderlineStyle: StyleProp[ViewStyle] = null
   ): Anon_ActiveTabAnimatedBottom = {
-    val __obj = js.Dynamic.literal(activeTab = activeTab, animated = animated, goToTab = goToTab, instanceId = instanceId, tabBarTextStyle = tabBarTextStyle.asInstanceOf[js.Any], tabBarUnderlineStyle = tabBarUnderlineStyle.asInstanceOf[js.Any], tabs = tabs)
+    val __obj = js.Dynamic.literal(activeTab = activeTab, animated = animated, goToTab = goToTab, instanceId = instanceId, tabs = tabs)
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction2(onTabClick))
     if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction1(renderTab))
     if (renderUnderline != null) __obj.updateDynamic("renderUnderline")(js.Any.fromFunction1(renderUnderline))
@@ -54,6 +54,8 @@ object Anon_ActiveTabAnimatedBottom {
     if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor)
     if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor)
     if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
+    if (tabBarTextStyle != null) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
+    if (tabBarUnderlineStyle != null) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveTabAnimatedBottom]
   }
 }

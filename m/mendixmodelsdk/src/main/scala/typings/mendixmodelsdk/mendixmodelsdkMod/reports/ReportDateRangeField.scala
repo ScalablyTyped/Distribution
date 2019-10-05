@@ -1,0 +1,44 @@
+package typings.mendixmodelsdk.mendixmodelsdkMod.reports
+
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * See: {@link https://docs.mendix.com/refguide7/date-range-field relevant section in reference guide}
+  */
+@JSImport("mendixmodelsdk", "reports.ReportDateRangeField")
+@js.native
+class ReportDateRangeField protected ()
+  extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.reports.ReportDateRangeField {
+  def this(
+    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    structureTypeName: String,
+    id: String,
+    isPartial: Boolean,
+    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
+    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+  ) = this()
+}
+
+/* static members */
+@JSImport("mendixmodelsdk", "reports.ReportDateRangeField")
+@js.native
+object ReportDateRangeField extends js.Object {
+  var structureTypeName: String = js.native
+  var versionInfo: typings.mendixmodelsdk.distGenReportsMod.StructureVersionInfo = js.native
+  /**
+    * Creates and returns a new ReportDateRangeField instance in the SDK and on the server.
+    * Expects one argument: the IModel object the instance will "live on".
+    * After creation, assign or add this instance to a property that accepts this kind of objects.
+    */
+  def create(model: IModel): typings.mendixmodelsdk.distGenReportsMod.reports.ReportDateRangeField = js.native
+  /**
+    * Creates and returns a new ReportDateRangeField instance in the SDK and on the server.
+    * The new ReportDateRangeField will be automatically stored in the 'fields' property
+    * of the parent ReportDateRangeSelector element passed as argument.
+    */
+  def createIn(container: typings.mendixmodelsdk.distGenReportsMod.reports.ReportDateRangeSelector): typings.mendixmodelsdk.distGenReportsMod.reports.ReportDateRangeField = js.native
+}
+

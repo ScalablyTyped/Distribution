@@ -1,11 +1,11 @@
 package typings.facebookDashInstantDashGames
 
-import typings.facebookDashInstantDashGames.FBInstantNs.ContextFilter
-import typings.facebookDashInstantDashGames.FBInstantNs.ErrorCodeType
-import typings.facebookDashInstantDashGames.FBInstantNs.Intent
-import typings.facebookDashInstantDashGames.FBInstantNs.Platform
-import typings.facebookDashInstantDashGames.FBInstantNs.Type
-import typings.facebookDashInstantDashGames.FBInstantNs.UpdateAction
+import typings.facebookDashInstantDashGames.FBInstant.ContextFilter
+import typings.facebookDashInstantDashGames.FBInstant.ErrorCodeType
+import typings.facebookDashInstantDashGames.FBInstant.Intent
+import typings.facebookDashInstantDashGames.FBInstant.Platform
+import typings.facebookDashInstantDashGames.FBInstant.Type
+import typings.facebookDashInstantDashGames.FBInstant.UpdateAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

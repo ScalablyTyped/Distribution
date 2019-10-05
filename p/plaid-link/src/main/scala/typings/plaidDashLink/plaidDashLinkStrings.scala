@@ -1,12 +1,12 @@
 package typings.plaidDashLink
 
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.Country
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.Environment
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.EventName
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.ExitStatus
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.Language
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.Product
-import typings.plaidDashLink.plaidDashLinkMod.PlaidNs.VerificationStatus
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.Country
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.Environment
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.EventName
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.ExitStatus
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.Language
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.Product
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.VerificationStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,12 +13,12 @@ trait IDirectivePrePost[TScope /* <: IScope */, TElement /* <: JQLite */, TAttri
 object IDirectivePrePost {
   @scala.inline
   def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
-    post: IDirectiveLinkFn[TScope, TElement, TAttributes, TController] = null,
-    pre: IDirectiveLinkFn[TScope, TElement, TAttributes, TController] = null
+    post: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null,
+    pre: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null
   ): IDirectivePrePost[TScope, TElement, TAttributes, TController] = {
     val __obj = js.Dynamic.literal()
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction5(post))
+    if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction5(pre))
     __obj.asInstanceOf[IDirectivePrePost[TScope, TElement, TAttributes, TController]]
   }
 }

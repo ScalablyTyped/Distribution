@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Options for Model.create method
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.sequelize.sequelizeMod.ReturningOptions because Already inherited
 - typings.sequelize.sequelizeMod.BuildOptions because var conflicts: returning. Inlined raw, isNewRecord, include */ trait CreateOptions extends InstanceSaveOptions {
   /**
     * an array of include options - Used to build prefetched/included model instances. See `set`

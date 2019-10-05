@@ -27,14 +27,14 @@ object ComputeCapacityStatus {
   @scala.inline
   def apply(
     Desired: Integer,
-    Available: js.UndefOr[Integer] = js.undefined,
-    InUse: js.UndefOr[Integer] = js.undefined,
-    Running: js.UndefOr[Integer] = js.undefined
+    Available: Int | Double = null,
+    InUse: Int | Double = null,
+    Running: Int | Double = null
   ): ComputeCapacityStatus = {
     val __obj = js.Dynamic.literal(Desired = Desired)
-    if (!js.isUndefined(Available)) __obj.updateDynamic("Available")(Available)
-    if (!js.isUndefined(InUse)) __obj.updateDynamic("InUse")(InUse)
-    if (!js.isUndefined(Running)) __obj.updateDynamic("Running")(Running)
+    if (Available != null) __obj.updateDynamic("Available")(Available.asInstanceOf[js.Any])
+    if (InUse != null) __obj.updateDynamic("InUse")(InUse.asInstanceOf[js.Any])
+    if (Running != null) __obj.updateDynamic("Running")(Running.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeCapacityStatus]
   }
 }

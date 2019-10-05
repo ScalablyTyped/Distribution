@@ -5,10 +5,10 @@ import typings.backbone.backboneMod.Collection
 import typings.backbone.backboneMod.History
 import typings.backbone.backboneMod.Model
 import typings.jquery.JQuery
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.htmlString
 import typings.jquery.JQueryAjaxSettings
-import typings.jquery.JQueryNs.PlainObject
-import typings.jquery.JQueryNs.Selector
-import typings.jquery.JQueryNs.htmlString
 import typings.jquery.JQueryStatic
 import typings.jquery.JQueryXHR
 import typings.std.ArrayLike

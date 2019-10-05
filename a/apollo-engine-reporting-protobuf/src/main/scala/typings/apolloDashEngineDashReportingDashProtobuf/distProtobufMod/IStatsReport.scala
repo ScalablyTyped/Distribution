@@ -1,7 +1,7 @@
 package typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.googleNs.protobufNs.ITimestamp
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.google.protobuf.ITimestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

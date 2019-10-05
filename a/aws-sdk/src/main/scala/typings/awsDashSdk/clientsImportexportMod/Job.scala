@@ -15,7 +15,7 @@ object Job {
   @scala.inline
   def apply(
     CreationDate: CreationDate = null,
-    IsCanceled: js.UndefOr[IsCanceled] = js.undefined,
+    IsCanceled: js.UndefOr[Boolean] = js.undefined,
     JobId: JobId = null,
     JobType: JobType = null
   ): Job = {

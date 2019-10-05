@@ -1,7 +1,7 @@
 package typings.atPulumiAws.codedeployDeploymentConfigMod
 
-import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentConfigMinimumHealthyHosts
-import typings.atPulumiAws.typesInputMod.codedeployNs.DeploymentConfigTrafficRoutingConfig
+import typings.atPulumiAws.typesInputMod.codedeploy.DeploymentConfigMinimumHealthyHosts
+import typings.atPulumiAws.typesInputMod.codedeploy.DeploymentConfigTrafficRoutingConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

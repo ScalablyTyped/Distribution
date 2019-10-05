@@ -1,6 +1,6 @@
 package typings.alt
 
-import typings.alt.AltJSNs.Alt
+import typings.alt.AltJS.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

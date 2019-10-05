@@ -1,7 +1,7 @@
 package typings.atPulumiAws.worklinkFleetMod
 
-import typings.atPulumiAws.typesInputMod.worklinkNs.FleetIdentityProvider
-import typings.atPulumiAws.typesInputMod.worklinkNs.FleetNetwork
+import typings.atPulumiAws.typesInputMod.worklink.FleetIdentityProvider
+import typings.atPulumiAws.typesInputMod.worklink.FleetNetwork
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchLogGroupMixinsMod
 
-import typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup
+import typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup
 import typings.atPulumiAws.cloudwatchLogSubscriptionFilterMod.LogSubscriptionFilter
 import typings.atPulumiAws.lambdaMod.EventSubscription
 import typings.atPulumiPulumi.resourceMod.ComponentResourceOptions

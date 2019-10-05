@@ -17,7 +17,7 @@ trait ImportLabelsTaskRunProperties extends js.Object {
 
 object ImportLabelsTaskRunProperties {
   @scala.inline
-  def apply(InputS3Path: UriString = null, Replace: js.UndefOr[ReplaceBoolean] = js.undefined): ImportLabelsTaskRunProperties = {
+  def apply(InputS3Path: UriString = null, Replace: js.UndefOr[scala.Boolean] = js.undefined): ImportLabelsTaskRunProperties = {
     val __obj = js.Dynamic.literal()
     if (InputS3Path != null) __obj.updateDynamic("InputS3Path")(InputS3Path)
     if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace)

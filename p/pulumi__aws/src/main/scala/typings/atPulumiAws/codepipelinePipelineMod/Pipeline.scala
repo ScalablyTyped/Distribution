@@ -1,8 +1,8 @@
 package typings.atPulumiAws.codepipelinePipelineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.codepipelineNs.PipelineArtifactStore
-import typings.atPulumiAws.typesOutputMod.codepipelineNs.PipelineStage
+import typings.atPulumiAws.typesOutputMod.codepipeline.PipelineArtifactStore
+import typings.atPulumiAws.typesOutputMod.codepipeline.PipelineStage
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

@@ -16,3 +16,9 @@ class Wrap[TResult, TInput] protected () extends Transformer[TResult, TInput] {
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "wrap")
+@js.native
+object wrap extends js.Object {
+  def apply[TResult, TInput](stepFn: Reducer[TResult, TInput]): Transformer[TResult, TInput] = js.native
+}
+

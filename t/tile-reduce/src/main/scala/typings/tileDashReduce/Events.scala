@@ -1,6 +1,6 @@
 package typings.tileDashReduce
 
-import typings.tileDashReduce.TileReduceNs.Tile
+import typings.tileDashReduce.TileReduce.Tile
 import typings.tileDashReduce.tileDashReduceStrings.end
 import typings.tileDashReduce.tileDashReduceStrings.map
 import typings.tileDashReduce.tileDashReduceStrings.reduce

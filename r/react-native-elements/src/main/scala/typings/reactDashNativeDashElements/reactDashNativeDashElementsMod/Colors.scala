@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reactDashNativeDashElements.Anon_Android
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,4 +50,8 @@ object Colors {
     __obj.asInstanceOf[Colors]
   }
 }
+
+@JSImport("react-native-elements", "colors")
+@js.native
+object colors extends TopLevel[Colors]
 

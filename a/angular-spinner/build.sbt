@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "angular-spinner"
-version := "0.5.1-dt-20190322Z-735ae8"
-scalaVersion := "2.12.9"
+version := "0.5.1-dt-20190322Z-3424d6"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

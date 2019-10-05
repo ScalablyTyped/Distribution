@@ -3,9 +3,9 @@ package typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkPositionin
 import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkPositioningContainerPositioningContainerDotTypesMod.IPositioningContainerProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,11 +72,11 @@ class PositioningContainer protected () extends BaseComponent[IPositioningContai
     */
   def dismiss(): Unit = js.native
   def dismiss(ev: KeyboardEvent[HTMLElement]): Unit = js.native
-  def dismiss(ev: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def dismiss(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def dismiss(ev: Event): Unit = js.native
   def onResize(): Unit = js.native
   def onResize(ev: KeyboardEvent[HTMLElement]): Unit = js.native
-  def onResize(ev: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
+  def onResize(ev: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def onResize(ev: Event): Unit = js.native
 }
 

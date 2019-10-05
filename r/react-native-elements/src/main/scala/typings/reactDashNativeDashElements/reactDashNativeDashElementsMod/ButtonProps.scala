@@ -37,6 +37,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsAndroid because Already inherited
+- typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityProps because Already inherited
+- typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps because Already inherited
 - typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, tvParallaxProperties. Inlined background, useForeground */ trait ButtonProps extends TouchableOpacityProps {
   /**
     * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback

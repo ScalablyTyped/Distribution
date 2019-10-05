@@ -2,8 +2,8 @@ package typings.ejDotWebDotAll
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.ejDotWebDotAll.ejNs.PivotChart
-import typings.ejDotWebDotAll.ejNs.PivotChartNs.Model
+import typings.ejDotWebDotAll.ej.PivotChart
+import typings.ejDotWebDotAll.ej.PivotChart.Model
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

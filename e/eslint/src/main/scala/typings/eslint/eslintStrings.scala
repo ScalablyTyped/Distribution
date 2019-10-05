@@ -1,7 +1,7 @@
 package typings.eslint
 
-import typings.eslint.eslintMod.ASTNs.TokenType
-import typings.eslint.eslintMod.LinterNs.RuleLevel
+import typings.eslint.eslintMod.AST.TokenType
+import typings.eslint.eslintMod.Linter.RuleLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

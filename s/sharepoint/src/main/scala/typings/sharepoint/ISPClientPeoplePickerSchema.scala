@@ -1,8 +1,8 @@
 package typings.sharepoint
 
-import typings.sharepoint.SPNs.Guid
-import typings.sharepoint.SPNs.UrlZone
-import typings.sharepoint.SPNs.UtilitiesNs.PrincipalSource
+import typings.sharepoint.SP.Guid
+import typings.sharepoint.SP.UrlZone
+import typings.sharepoint.SP.Utilities.PrincipalSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait ISPClientPeoplePickerSchema extends js.Object {
   var SearchPrincipalSource: js.UndefOr[PrincipalSource] = js.undefined
   var SharePointGroupID: js.UndefOr[Double] = js.undefined
   var TopLevelElementId: js.UndefOr[String] = js.undefined
-  var UrlZone: js.UndefOr[typings.sharepoint.SPNs.UrlZone] = js.undefined
+  var UrlZone: js.UndefOr[typings.sharepoint.SP.UrlZone] = js.undefined
   var UseLocalSuggestionCache: js.UndefOr[Boolean] = js.undefined
   var UserNoQueryPermission: js.UndefOr[Boolean] = js.undefined
   var VisibleSuggestions: js.UndefOr[Double] = js.undefined

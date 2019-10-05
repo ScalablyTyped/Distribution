@@ -1,5 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.atAngularCoreNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -189,34 +190,5 @@ trait NgModule extends js.Object {
 
 @JSImport("@angular/core", "NgModule")
 @js.native
-class NgModuleCls () extends NgModule {
-  def this(obj: NgModule) = this()
-}
-
-object NgModule {
-  @scala.inline
-  def apply(
-    bootstrap: js.Array[Type[_] | js.Array[_]] = null,
-    declarations: js.Array[Type[_] | js.Array[_]] = null,
-    entryComponents: js.Array[Type[_] | js.Array[_]] = null,
-    exports: js.Array[Type[_] | js.Array[_]] = null,
-    id: String = null,
-    imports: js.Array[Type[_] | ModuleWithProviders[js.Object] | js.Array[_]] = null,
-    jit: `true` = null,
-    providers: js.Array[Provider] = null,
-    schemas: js.Array[SchemaMetadata | js.Array[_]] = null
-  ): NgModule = {
-    val __obj = js.Dynamic.literal()
-    if (bootstrap != null) __obj.updateDynamic("bootstrap")(bootstrap)
-    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
-    if (entryComponents != null) __obj.updateDynamic("entryComponents")(entryComponents)
-    if (exports != null) __obj.updateDynamic("exports")(exports)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (jit != null) __obj.updateDynamic("jit")(jit)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
-    __obj.asInstanceOf[NgModule]
-  }
-}
+object NgModule extends TopLevel[NgModuleDecorator]
 

@@ -31,7 +31,7 @@ object NextModuleMapOptions {
   {[ P in keyof E ]: next-server.next-server/dynamic.DynamicComponent<E[P]>}
     */ typings.nextDashServer.nextDashServerStrings.NextModuleMapOptions with E) => ReactNode,
     loadableGenerated: Anon_Modules = null,
-    loading: ComponentType[typings.reactDashLoadable.LoadableExportNs.LoadingComponentProps] | js.Function0[Null] = null,
+    loading: ComponentType[typings.reactDashLoadable.LoadableExport.LoadingComponentProps] | js.Function0[Null] = null,
     ssr: js.UndefOr[Boolean] = js.undefined
   ): NextModuleMapOptions[P, E] = {
     val __obj = js.Dynamic.literal(modules = js.Any.fromFunction0(modules), render = js.Any.fromFunction2(render))

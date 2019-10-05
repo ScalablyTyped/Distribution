@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_bootstrap_dot_wizard"
-version := "0.0-unknown-dt-20190322Z-9c35e3"
-scalaVersion := "2.12.9"
+version := "0.0-unknown-dt-20190322Z-f06a97"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -3,7 +3,7 @@ package typings.dynamodb
 import org.scalablytyped.runtime.StringDictionary
 import typings.bunyan.bunyanMod.^
 import typings.dynamodb.callbackMod.Callback
-import typings.dynamodb.modelMod.ModelNs.OperationOptions
+import typings.dynamodb.modelMod.Model.OperationOptions
 import typings.dynamodb.queryMod.Query
 import typings.dynamodb.scanMod.ParallelScan
 import typings.dynamodb.scanMod.Scan

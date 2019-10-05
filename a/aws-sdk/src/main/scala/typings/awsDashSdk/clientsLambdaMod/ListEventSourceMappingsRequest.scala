@@ -29,13 +29,13 @@ object ListEventSourceMappingsRequest {
     EventSourceArn: Arn = null,
     FunctionName: FunctionName = null,
     Marker: String = null,
-    MaxItems: js.UndefOr[MaxListItems] = js.undefined
+    MaxItems: Int | Double = null
   ): ListEventSourceMappingsRequest = {
     val __obj = js.Dynamic.literal()
     if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn)
     if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventSourceMappingsRequest]
   }
 }

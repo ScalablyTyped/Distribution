@@ -1,7 +1,7 @@
 package typings.paper
 
-import typings.paper.paperNs.Matrix
-import typings.paper.paperNs.Rectangle
+import typings.paper.paper.Matrix
+import typings.paper.paper.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

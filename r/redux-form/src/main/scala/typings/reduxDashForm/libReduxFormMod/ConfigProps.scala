@@ -1,6 +1,7 @@
 package typings.reduxDashForm.libReduxFormMod
 
 import typings.redux.reduxMod.Dispatch
+import typings.reduxDashForm.libReducerMod.FormStateMap
 import typings.reduxDashForm.reduxDashFormMod.FormErrors
 import typings.reduxDashForm.reduxDashFormMod.FormWarnings
 import typings.std.Partial
@@ -93,7 +94,7 @@ object ConfigProps {
     destroyOnUnmount: js.UndefOr[Boolean] = js.undefined,
     enableReinitialize: js.UndefOr[Boolean] = js.undefined,
     forceUnregisterOnUnmount: js.UndefOr[Boolean] = js.undefined,
-    getFormState: GetFormState = null,
+    getFormState: /* state */ js.Any => FormStateMap = null,
     immutableProps: js.Array[String] = null,
     initialValues: Partial[FormData] = null,
     keepDirtyOnReinitialize: js.UndefOr[Boolean] = js.undefined,
@@ -121,7 +122,7 @@ object ConfigProps {
     if (!js.isUndefined(destroyOnUnmount)) __obj.updateDynamic("destroyOnUnmount")(destroyOnUnmount)
     if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize)
     if (!js.isUndefined(forceUnregisterOnUnmount)) __obj.updateDynamic("forceUnregisterOnUnmount")(forceUnregisterOnUnmount)
-    if (getFormState != null) __obj.updateDynamic("getFormState")(getFormState)
+    if (getFormState != null) __obj.updateDynamic("getFormState")(js.Any.fromFunction1(getFormState))
     if (immutableProps != null) __obj.updateDynamic("immutableProps")(immutableProps)
     if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues)
     if (!js.isUndefined(keepDirtyOnReinitialize)) __obj.updateDynamic("keepDirtyOnReinitialize")(keepDirtyOnReinitialize)

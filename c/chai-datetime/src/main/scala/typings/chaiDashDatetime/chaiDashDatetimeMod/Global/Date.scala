@@ -1,6 +1,6 @@
 package typings.chaiDashDatetime.chaiDashDatetimeMod.Global
 
-import typings.chaiDashDatetime.chaiDashDatetimeMod.Global.ChaiNs.Assertion
+import typings.chaiDashDatetime.chaiDashDatetimeMod.Global.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

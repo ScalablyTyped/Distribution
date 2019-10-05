@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rx", "ConnectableObservableCls")
 @js.native
 class ConnectableObservableCls[T] ()
-  extends typings.rxDashCoreDashBinding.RxNs.ConnectableObservableCls[T]
+  extends typings.rxDashCoreDashBinding.Rx.ConnectableObservableCls[T]
 

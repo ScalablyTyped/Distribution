@@ -1,7 +1,7 @@
 package typings.draftDashJs.draftDashJsMod
 
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadataConfig
-import typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadataConfig
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftInlineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "CharacterMetadata")
 @js.native
 class CharacterMetadata ()
-  extends typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata {
+  extends typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata {
   /* CompleteClass */
   override def getEntity(): String = js.native
   /* CompleteClass */
@@ -22,26 +22,26 @@ class CharacterMetadata ()
 @JSImport("draft-js", "CharacterMetadata")
 @js.native
 object CharacterMetadata extends js.Object {
-  def applyEntity(record: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
+  def applyEntity(record: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
   def applyEntity(
-    record: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata,
+    record: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata,
     entityKey: String
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
   def applyStyle(
-    record: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata,
+    record: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata,
     style: String
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
   /**
     * Use this function instead of the `CharacterMetadata` constructor.
     * Since most content generally uses only a very small number of
     * style/entity permutations, we can reuse these objects as often as
     * possible.
     */
-  def create(): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
-  def create(config: CharacterMetadataConfig): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
+  def create(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
+  def create(config: CharacterMetadataConfig): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
   def removeStyle(
-    record: typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata,
+    record: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata,
     style: String
-  ): typings.draftDashJs.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
+  ): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata = js.native
 }
 

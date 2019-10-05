@@ -1,6 +1,6 @@
 package typings.clearbladejsDashClient.globalMod
 
-import typings.clearbladejsDashClient.CbClientNs.ClearBladeGlobal
+import typings.clearbladejsDashClient.CbClient.ClearBladeGlobal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

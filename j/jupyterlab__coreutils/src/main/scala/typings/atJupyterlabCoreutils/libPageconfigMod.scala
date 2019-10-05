@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/pageconfig", JSImport.Namespace)
 @js.native
 object libPageconfigMod extends js.Object {
-  @JSName("PageConfig")
   @js.native
-  object PageConfigNs extends js.Object {
+  object PageConfig extends js.Object {
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */

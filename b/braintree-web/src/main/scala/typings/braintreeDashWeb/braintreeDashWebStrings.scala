@@ -1,6 +1,6 @@
 package typings.braintreeDashWeb
 
-import typings.braintreeDashWeb.braintreeDashWebMod.BraintreeErrorNs.Types
+import typings.braintreeDashWeb.braintreeDashWebMod.BraintreeError.Types
 import typings.braintreeDashWeb.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
 import scala.scalajs.js
 import scala.scalajs.js.`|`

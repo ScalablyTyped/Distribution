@@ -7,30 +7,58 @@ import scala.scalajs.js.annotation._
 @JSImport("locutus/php/bc", JSImport.Namespace)
 @js.native
 object phpBcMod extends js.Object {
-  def bcadd(): js.Any = js.native
-  def bcadd(leftOperand: js.Any): js.Any = js.native
-  def bcadd(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  def bcadd(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  def bccomp(): js.Any = js.native
-  def bccomp(leftOperand: js.Any): js.Any = js.native
-  def bccomp(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  def bccomp(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  def bcdiv(): js.Any = js.native
-  def bcdiv(leftOperand: js.Any): js.Any = js.native
-  def bcdiv(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  def bcdiv(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  def bcmul(): js.Any = js.native
-  def bcmul(leftOperand: js.Any): js.Any = js.native
-  def bcmul(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  def bcmul(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  def bcround(): js.Any = js.native
-  def bcround(`val`: js.Any): js.Any = js.native
-  def bcround(`val`: js.Any, precision: js.Any): js.Any = js.native
-  def bcscale(): js.Any = js.native
-  def bcscale(scale: js.Any): js.Any = js.native
-  def bcsub(): js.Any = js.native
-  def bcsub(leftOperand: js.Any): js.Any = js.native
-  def bcsub(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  def bcsub(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  @js.native
+  object bcadd extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(leftOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bccomp extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(leftOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bcdiv extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(leftOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bcmul extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(leftOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bcround extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(`val`: js.Any): js.Any = js.native
+    def apply(`val`: js.Any, precision: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bcscale extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(scale: js.Any): js.Any = js.native
+  }
+  
+  @js.native
+  object bcsub extends js.Object {
+    def apply(): js.Any = js.native
+    def apply(leftOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
+    def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  }
+  
 }
 

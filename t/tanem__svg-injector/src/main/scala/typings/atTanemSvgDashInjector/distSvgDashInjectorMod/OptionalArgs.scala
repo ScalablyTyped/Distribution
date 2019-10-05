@@ -4,6 +4,8 @@ import typings.atTanemSvgDashInjector.distTypesMod.AfterAll
 import typings.atTanemSvgDashInjector.distTypesMod.BeforeEach
 import typings.atTanemSvgDashInjector.distTypesMod.Errback
 import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts
+import typings.std.Element
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,16 +21,16 @@ trait OptionalArgs extends js.Object {
 object OptionalArgs {
   @scala.inline
   def apply(
-    afterAll: AfterAll = null,
-    afterEach: Errback = null,
-    beforeEach: BeforeEach = null,
+    afterAll: /* elementsLoaded */ Double => Unit = null,
+    afterEach: (/* error */ Error | Null, /* svg */ js.UndefOr[Element]) => Unit = null,
+    beforeEach: /* svg */ Element => Unit = null,
     evalScripts: EvalScripts = null,
     renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
   ): OptionalArgs = {
     val __obj = js.Dynamic.literal()
-    if (afterAll != null) __obj.updateDynamic("afterAll")(afterAll)
-    if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach)
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach)
+    if (afterAll != null) __obj.updateDynamic("afterAll")(js.Any.fromFunction1(afterAll))
+    if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction2(afterEach))
+    if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction1(beforeEach))
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
     if (!js.isUndefined(renumerateIRIElements)) __obj.updateDynamic("renumerateIRIElements")(renumerateIRIElements)
     __obj.asInstanceOf[OptionalArgs]

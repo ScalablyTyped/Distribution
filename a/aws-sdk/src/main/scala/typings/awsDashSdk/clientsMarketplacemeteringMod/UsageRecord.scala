@@ -29,10 +29,10 @@ object UsageRecord {
     CustomerIdentifier: CustomerIdentifier,
     Dimension: UsageDimension,
     Timestamp: Timestamp,
-    Quantity: js.UndefOr[UsageQuantity] = js.undefined
+    Quantity: Int | Double = null
   ): UsageRecord = {
     val __obj = js.Dynamic.literal(CustomerIdentifier = CustomerIdentifier, Dimension = Dimension, Timestamp = Timestamp)
-    if (!js.isUndefined(Quantity)) __obj.updateDynamic("Quantity")(Quantity)
+    if (Quantity != null) __obj.updateDynamic("Quantity")(Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageRecord]
   }
 }

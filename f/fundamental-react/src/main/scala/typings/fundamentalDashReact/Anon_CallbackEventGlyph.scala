@@ -1,14 +1,14 @@
 package typings.fundamentalDashReact
 
-import typings.react.reactMod.MouseEvent
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CallbackEventGlyph extends js.Object {
   var callback: js.UndefOr[
-    js.Function1[/* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent], Unit]
+    js.Function1[/* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
   ] = js.undefined
   var glyph: String
   var image: String
@@ -23,7 +23,7 @@ object Anon_CallbackEventGlyph {
     glyph: String,
     image: String,
     title: String,
-    callback: /* event */ MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit = null,
+    callback: /* event */ typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit = null,
     link: String = null,
     url: String = null
   ): Anon_CallbackEventGlyph = {

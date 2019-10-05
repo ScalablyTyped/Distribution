@@ -1,0 +1,42 @@
+package typings.winrtDashUwp.Windows.Devices.PointOfService
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait CashDrawerStatusKind extends js.Object
+
+/** Defines the constants that indicate the cash drawer power status. */
+@JSGlobal("Windows.Devices.PointOfService.CashDrawerStatusKind")
+@js.native
+object CashDrawerStatusKind extends js.Object {
+  /** The device status is not any of the above states. This is available so a POS driver can provide custom notifications to the app. */
+  @js.native
+  sealed trait extended extends CashDrawerStatusKind
+  
+  /** The device is powered off or detached from the terminal. */
+  @js.native
+  sealed trait off extends CashDrawerStatusKind
+  
+  /** The device is either off or offline, but the current state can not be distinguished. */
+  @js.native
+  sealed trait offOrOffline extends CashDrawerStatusKind
+  
+  /** The device is powered on but is not available to respond to requests. */
+  @js.native
+  sealed trait offline extends CashDrawerStatusKind
+  
+  /** The device is powered on and ready to use. */
+  @js.native
+  sealed trait online extends CashDrawerStatusKind
+  
+  /* 4 */ val extended: typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.extended with Double = js.native
+  /* 1 */ val off: typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.off with Double = js.native
+  /* 3 */ val offOrOffline: typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.offOrOffline with Double = js.native
+  /* 2 */ val offline: typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.offline with Double = js.native
+  /* 0 */ val online: typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.online with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[CashDrawerStatusKind with Double] = js.native
+}
+

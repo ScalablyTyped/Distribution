@@ -1,8 +1,8 @@
 package typings.jpm
 
-import typings.jpm.FFAddonSDKNs.BrowserWindow
-import typings.jpm.FFAddonSDKNs.ContentWorker
-import typings.jpm.FFAddonSDKNs.Tab
+import typings.jpm.FFAddonSDK.BrowserWindow
+import typings.jpm.FFAddonSDK.ContentWorker
+import typings.jpm.FFAddonSDK.Tab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,23 +70,23 @@ object IgSplitButton {
   	 * Option for igSplitButton
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    click: ClickEvent = null,
-    collapsed: CollapsedEvent = null,
-    collapsing: CollapsingEvent = null,
+    click: (/* event */ Event, /* ui */ ClickEventUIParam) => Unit = null,
+    collapsed: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit = null,
+    collapsing: (/* event */ Event, /* ui */ CollapsingEventUIParam) => Unit = null,
     defaultItemName: String = null,
-    expanded: ExpandedEvent = null,
-    expanding: ExpandingEvent = null,
+    expanded: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit = null,
+    expanding: (/* event */ Event, /* ui */ ExpandingEventUIParam) => Unit = null,
     items: js.Array[IgSplitButtonItem] = null,
     swapDefaultEnabled: js.UndefOr[Boolean] = js.undefined
   ): IgSplitButton = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
-    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
+    if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction2(collapsed))
+    if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction2(collapsing))
     if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction2(expanded))
+    if (expanding != null) __obj.updateDynamic("expanding")(js.Any.fromFunction2(expanding))
     if (items != null) __obj.updateDynamic("items")(items)
     if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled)
     __obj.asInstanceOf[IgSplitButton]

@@ -15,12 +15,6 @@ trait RTCPeerConnectionIceErrorEvent extends Event {
 
 @JSGlobal("RTCPeerConnectionIceErrorEvent")
 @js.native
-class RTCPeerConnectionIceErrorEventCls protected () extends RTCPeerConnectionIceErrorEvent {
-  def this(`type`: java.lang.String, eventInitDict: RTCPeerConnectionIceErrorEventInit) = this()
-}
-
-@JSGlobal("RTCPeerConnectionIceErrorEvent")
-@js.native
 object RTCPeerConnectionIceErrorEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

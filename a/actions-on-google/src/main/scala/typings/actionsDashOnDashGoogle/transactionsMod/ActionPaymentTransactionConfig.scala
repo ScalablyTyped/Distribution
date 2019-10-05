@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle.transactionsMod
 
-import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValuesNs.PaymentType
+import typings.actionsDashOnDashGoogle.transactionsMod.TransactionValues.PaymentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

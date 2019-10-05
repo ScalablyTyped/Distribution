@@ -1,0 +1,17 @@
+package typings.eslintDashVisitorDashKeys
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.eslintDashVisitorDashKeys.eslintDashVisitorDashKeysMod.VisitorKeys
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("eslint-visitor-keys", JSImport.Namespace)
+@js.native
+object eslintDashVisitorDashKeysMod extends js.Object {
+  val KEYS: VisitorKeys = js.native
+  def getKeys(node: js.Object): js.Array[String] = js.native
+  def unionWith(keys: VisitorKeys): VisitorKeys = js.native
+  type VisitorKeys = StringDictionary[js.UndefOr[js.Array[String]]]
+}
+

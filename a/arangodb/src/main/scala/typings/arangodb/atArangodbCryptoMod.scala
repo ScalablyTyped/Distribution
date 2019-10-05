@@ -1,7 +1,7 @@
 package typings.arangodb
 
-import typings.arangodb.ArangoDBNs.HashAlgorithm
-import typings.arangodb.ArangoDBNs.JwtAlgorithm
+import typings.arangodb.ArangoDB.HashAlgorithm
+import typings.arangodb.ArangoDB.JwtAlgorithm
 import typings.arangodb.arangodbStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,7 @@
 package typings.atOracleOraclejet.ojsliderMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.Anon_InvalidStep
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.`type`
@@ -21,8 +23,9 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.typeChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.value
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
-import typings.atOracleOraclejet.ojsliderMod.ojSliderNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojsliderMod.ojSliderNs.ojAnimateStart
+import typings.atOracleOraclejet.ojsliderMod.ojSlider.ojAnimateEnd
+import typings.atOracleOraclejet.ojsliderMod.ojSlider.ojAnimateStart
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -156,5 +159,12 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojslider", "ojSlider")
+@js.native
+object ojSlider extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

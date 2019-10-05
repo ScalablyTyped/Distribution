@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object zchatDashBrowserMod {
-  import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.ChatEventData
+  import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEvent.ChatEventData
 
   /* Rewritten from type alias, can be one of: 
-    - typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.ChatEventData
+    - typings.zchatDashBrowser.zchatDashBrowserMod.ChatEvent.ChatEventData
     - typings.zchatDashBrowser.Anon_Chatqueueposition
     - typings.zchatDashBrowser.Anon_Nick
     - typings.zchatDashBrowser.Anon_Lastread

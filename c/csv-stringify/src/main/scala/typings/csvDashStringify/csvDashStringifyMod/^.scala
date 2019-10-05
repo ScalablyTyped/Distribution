@@ -14,7 +14,7 @@ object ^ extends js.Object {
   def apply(): Stringifier = js.native
   def apply(
     input: js.Array[js.Array[_] | js.Object],
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* output */ String, Unit]
+    callback: js.Function2[js.UndefOr[Error], /* output */ String, Unit]
   ): Unit = js.native
   /**
     * Callback version: string in --> callback with string out
@@ -22,7 +22,7 @@ object ^ extends js.Object {
   def apply(
     input: js.Array[js.Array[_] | js.Object],
     opts: StringifyOpts,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* output */ String, Unit]
+    callback: js.Function2[js.UndefOr[Error], /* output */ String, Unit]
   ): Unit = js.native
   def apply(opts: StringifyOpts): Stringifier = js.native
 }

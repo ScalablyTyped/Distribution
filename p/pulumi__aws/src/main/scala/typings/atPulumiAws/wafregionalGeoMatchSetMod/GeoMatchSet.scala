@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalGeoMatchSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafregionalNs.GeoMatchSetGeoMatchConstraint
+import typings.atPulumiAws.typesOutputMod.wafregional.GeoMatchSetGeoMatchConstraint
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

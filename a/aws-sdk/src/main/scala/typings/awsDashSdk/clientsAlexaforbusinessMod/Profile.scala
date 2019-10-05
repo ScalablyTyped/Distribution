@@ -65,13 +65,13 @@ object Profile {
     Address: Address = null,
     AddressBookArn: Arn = null,
     DistanceUnit: DistanceUnit = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
+    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     Locale: DeviceLocale = null,
-    MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
-    PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
+    MaxVolumeLimit: Int | Double = null,
+    PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,
-    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined,
+    SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     TemperatureUnit: TemperatureUnit = null,
     Timezone: Timezone = null,
     WakeWord: WakeWord = null
@@ -82,7 +82,7 @@ object Profile {
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
     if (Locale != null) __obj.updateDynamic("Locale")(Locale)
-    if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit)
+    if (MaxVolumeLimit != null) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled)
     if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn)
     if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName)

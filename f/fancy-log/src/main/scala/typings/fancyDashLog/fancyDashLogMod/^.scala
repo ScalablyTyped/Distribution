@@ -1,7 +1,7 @@
 package typings.fancyDashLog.fancyDashLogMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.fancyDashLog.fancyDashLogMod.FancyLogNs.Logger
+import typings.fancyDashLog.fancyDashLogMod.FancyLog.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

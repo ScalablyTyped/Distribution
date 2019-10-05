@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersGraphicsLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GraphicsLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GraphicsLayerProperties
+import typings.arcgisDashJsDashApi.__esri.GraphicsLayer
+import typings.arcgisDashJsDashApi.__esri.GraphicsLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

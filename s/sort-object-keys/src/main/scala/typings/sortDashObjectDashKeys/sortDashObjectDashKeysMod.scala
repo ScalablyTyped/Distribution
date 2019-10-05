@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object sortDashObjectDashKeysMod extends js.Object {
   def apply[T](`object`: T): T = js.native
-  def apply[T](`object`: T, sortWith: js.Array[String] | (js.Function2[/* a */ String, /* b */ String, Double])): T = js.native
+  def apply[T](`object`: T, sortWith: js.Array[String]): T = js.native
+  def apply[T](`object`: T, sortWith: js.Function2[/* a */ String, /* b */ String, Double]): T = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsSpinnerSpinnerViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpinnerViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SpinnerViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.SpinnerViewModel
+import typings.arcgisDashJsDashApi.__esri.SpinnerViewModelProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

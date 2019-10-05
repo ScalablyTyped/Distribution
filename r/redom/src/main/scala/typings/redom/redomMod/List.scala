@@ -28,3 +28,14 @@ object List extends js.Object {
   def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = js.native
 }
 
+@JSImport("redom", "list")
+@js.native
+object list extends js.Object {
+  def apply(parent: RedomQuery, View: RedomComponentConstructor): List = js.native
+  def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String): List = js.native
+  def apply(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): List = js.native
+  def extend(parent: RedomQuery, View: RedomComponentConstructor): RedomComponentConstructor = js.native
+  def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String): RedomComponentConstructor = js.native
+  def extend(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any): RedomComponentConstructor = js.native
+}
+

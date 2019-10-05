@@ -1,6 +1,11 @@
 package typings.graphqlDashCompose.esmUnionTypeComposerMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
+import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.graphql.typeDefinitionMod.GraphQLAbstractType
+import typings.graphql.typeDefinitionMod.GraphQLObjectType
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
 import typings.graphqlDashCompose.esmObjectTypeComposerMod.ComposeObjectType
 import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Extensions
@@ -23,13 +28,13 @@ object ComposeUnionTypeConfig {
     name: String,
     description: String = null,
     extensions: Extensions = null,
-    resolveType: GraphQLTypeResolver[TSource, TContext, StringDictionary[_]] = null,
+    resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null,
     types: Thunk[js.Array[ComposeObjectType]] = null
   ): ComposeUnionTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
+    if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeUnionTypeConfig[TSource, TContext]]
   }

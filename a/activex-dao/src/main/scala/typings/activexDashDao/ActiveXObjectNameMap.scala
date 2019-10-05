@@ -1,13 +1,13 @@
 package typings.activexDashDao
 
-import typings.activexDashDao.DAONs.DBEngine
-import typings.activexDashDao.DAONs.Field
-import typings.activexDashDao.DAONs.Group
-import typings.activexDashDao.DAONs.Index
-import typings.activexDashDao.DAONs.QueryDef
-import typings.activexDashDao.DAONs.Relation
-import typings.activexDashDao.DAONs.TableDef
-import typings.activexDashDao.DAONs.User
+import typings.activexDashDao.DAO.DBEngine
+import typings.activexDashDao.DAO.Field
+import typings.activexDashDao.DAO.Group
+import typings.activexDashDao.DAO.Index
+import typings.activexDashDao.DAO.QueryDef
+import typings.activexDashDao.DAO.Relation
+import typings.activexDashDao.DAO.TableDef
+import typings.activexDashDao.DAO.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

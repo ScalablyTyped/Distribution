@@ -1,7 +1,7 @@
 package typings.baidumapDashWebDashSdk
 
-import typings.baidumapDashWebDashSdk.BMapNs.Point
-import typings.baidumapDashWebDashSdk.BMapNs.Polyline
+import typings.baidumapDashWebDashSdk.BMap.Point
+import typings.baidumapDashWebDashSdk.BMap.Polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

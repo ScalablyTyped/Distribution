@@ -36,3 +36,9 @@ object DirectiveLiteral {
   }
 }
 
+@JSImport("@babel/types", "directiveLiteral")
+@js.native
+object directiveLiteral extends js.Object {
+  def apply(value: String): DirectiveLiteral = js.native
+}
+

@@ -42,7 +42,7 @@ object IComponentOptions {
     displayName: String = null,
     factoryOptions: IFactoryOptions[TComponentProps] = null,
     fields: js.Array[String] = null,
-    state: IStateComponentType[TComponentProps, TViewProps] = null,
+    state: TComponentProps => TViewProps = null,
     statics: TStatics = null,
     styles: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet] = null,
     tokens: ITokenFunctionOrObject[TViewProps, TTokens] = null
@@ -51,7 +51,7 @@ object IComponentOptions {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (factoryOptions != null) __obj.updateDynamic("factoryOptions")(factoryOptions)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(js.Any.fromFunction1(state))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])

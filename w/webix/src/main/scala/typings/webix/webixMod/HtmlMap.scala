@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,4 +41,8 @@ trait HtmlMap extends js.Object {
   def hide(html: HTMLElement, userdata: String, mode: Boolean): Unit = js.native
   def render(html: HTMLElement): Unit = js.native
 }
+
+@JSImport("webix", "HtmlMap")
+@js.native
+object HtmlMap extends TopLevel[HtmlMap]
 

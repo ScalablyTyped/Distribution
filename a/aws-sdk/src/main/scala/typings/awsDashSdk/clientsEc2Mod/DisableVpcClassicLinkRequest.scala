@@ -17,7 +17,7 @@ trait DisableVpcClassicLinkRequest extends js.Object {
 
 object DisableVpcClassicLinkRequest {
   @scala.inline
-  def apply(VpcId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DisableVpcClassicLinkRequest = {
+  def apply(VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DisableVpcClassicLinkRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DisableVpcClassicLinkRequest]

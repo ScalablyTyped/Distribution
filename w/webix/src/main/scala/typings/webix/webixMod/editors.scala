@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,27 +22,7 @@ trait editors extends js.Object {
   var text: String
 }
 
-object editors {
-  @scala.inline
-  def apply(
-    $popup: js.Any,
-    checkbox: String,
-    color: String,
-    combo: String,
-    date: String,
-    `inline-checkbox`: String,
-    `inline-text`: String,
-    multiselect: String,
-    password: String,
-    popup: String,
-    richselect: String,
-    select: String,
-    text: String
-  ): editors = {
-    val __obj = js.Dynamic.literal($popup = $popup, checkbox = checkbox, color = color, combo = combo, date = date, multiselect = multiselect, password = password, popup = popup, richselect = richselect, select = select, text = text)
-    __obj.updateDynamic("inline-checkbox")(`inline-checkbox`)
-    __obj.updateDynamic("inline-text")(`inline-text`)
-    __obj.asInstanceOf[editors]
-  }
-}
+@JSImport("webix", "editors")
+@js.native
+object editors extends TopLevel[editors]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CandidateInferenceInfo")
 @js.native
 class CandidateInferenceInfo ()
-  extends typings.typescriptDashServices.TypeScriptNs.CandidateInferenceInfo
+  extends typings.typescriptDashServices.TypeScript.CandidateInferenceInfo
 

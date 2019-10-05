@@ -1,7 +1,9 @@
 package typings.reactstrap.libListGroupItemMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
@@ -35,7 +37,7 @@ object ListGroupItemProps {
     cssModule: CSSModule = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
-    onClick: MouseEventHandler[_] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
     tag: ReactType[_] = null
   ): ListGroupItemProps = {
     val __obj = js.Dynamic.literal()
@@ -48,7 +50,7 @@ object ListGroupItemProps {
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (href != null) __obj.updateDynamic("href")(href)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupItemProps]
   }

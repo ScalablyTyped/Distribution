@@ -1,8 +1,8 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.electron.ElectronNs.Notification
-import typings.electron.ElectronNs.NotificationConstructorOptions
+import typings.electron.Electron.Notification
+import typings.electron.Electron.NotificationConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

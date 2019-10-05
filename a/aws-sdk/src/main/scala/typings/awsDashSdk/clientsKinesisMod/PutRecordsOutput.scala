@@ -24,11 +24,11 @@ object PutRecordsOutput {
   def apply(
     Records: PutRecordsResultEntryList,
     EncryptionType: EncryptionType = null,
-    FailedRecordCount: js.UndefOr[PositiveIntegerObject] = js.undefined
+    FailedRecordCount: Int | Double = null
   ): PutRecordsOutput = {
     val __obj = js.Dynamic.literal(Records = Records)
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailedRecordCount)) __obj.updateDynamic("FailedRecordCount")(FailedRecordCount)
+    if (FailedRecordCount != null) __obj.updateDynamic("FailedRecordCount")(FailedRecordCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsOutput]
   }
 }

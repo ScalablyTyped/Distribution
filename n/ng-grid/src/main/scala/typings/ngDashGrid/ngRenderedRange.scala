@@ -1,6 +1,8 @@
 package typings.ngDashGrid
 
-import typings.ngDashGrid.ngGridNs.IRenderedRange
+import org.scalablytyped.runtime.TopLevel
+import typings.ngDashGrid.ngGrid.IRenderedRange
+import typings.ngDashGrid.ngGrid.IRenderedRangeStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,4 +16,8 @@ class ngRenderedRange protected () extends IRenderedRange {
   /* CompleteClass */
   override var topRow: Double = js.native
 }
+
+@JSGlobal("ngRenderedRange")
+@js.native
+object ngRenderedRange extends TopLevel[IRenderedRangeStatic]
 

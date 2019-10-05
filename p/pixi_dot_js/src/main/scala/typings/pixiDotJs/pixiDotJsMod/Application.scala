@@ -1,6 +1,6 @@
 package typings.pixiDotJs.pixiDotJsMod
 
-import typings.pixiDotJs.PIXINs.ApplicationOptions
+import typings.pixiDotJs.PIXI.ApplicationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Application")
 @js.native
 class Application ()
-  extends typings.pixiDotJs.PIXINs.Application {
+  extends typings.pixiDotJs.PIXI.Application {
   def this(options: ApplicationOptions) = this()
   def this(
     width: js.UndefOr[Double],

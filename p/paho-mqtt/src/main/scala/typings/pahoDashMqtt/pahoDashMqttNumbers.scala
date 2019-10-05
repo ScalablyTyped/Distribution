@@ -1,6 +1,6 @@
 package typings.pahoDashMqtt
 
-import typings.pahoDashMqtt.pahoDashMqttMod.Global.PahoNs.MQTTNs.Qos
+import typings.pahoDashMqtt.pahoDashMqttMod.Global.Paho.MQTT.Qos
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

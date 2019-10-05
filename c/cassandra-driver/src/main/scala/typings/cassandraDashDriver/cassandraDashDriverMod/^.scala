@@ -11,7 +11,5 @@ object ^ extends js.Object {
   var Encoder: EncoderStatic = js.native
   var ExecutionOptions: ExecutionOptionsStatic = js.native
   var ExecutionProfile: ExecutionProfileStatic = js.native
-  val version: String = js.native
-  def defaultOptions(): ClientOptions = js.native
 }
 

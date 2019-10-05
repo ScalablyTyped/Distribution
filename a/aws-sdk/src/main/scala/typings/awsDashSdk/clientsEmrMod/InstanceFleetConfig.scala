@@ -38,15 +38,15 @@ object InstanceFleetConfig {
     InstanceTypeConfigs: InstanceTypeConfigList = null,
     LaunchSpecifications: InstanceFleetProvisioningSpecifications = null,
     Name: XmlStringMaxLen256 = null,
-    TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
-    TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
+    TargetOnDemandCapacity: Int | Double = null,
+    TargetSpotCapacity: Int | Double = null
   ): InstanceFleetConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetType = InstanceFleetType.asInstanceOf[js.Any])
     if (InstanceTypeConfigs != null) __obj.updateDynamic("InstanceTypeConfigs")(InstanceTypeConfigs)
     if (LaunchSpecifications != null) __obj.updateDynamic("LaunchSpecifications")(LaunchSpecifications)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(TargetOnDemandCapacity)) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity)
-    if (!js.isUndefined(TargetSpotCapacity)) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity)
+    if (TargetOnDemandCapacity != null) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.asInstanceOf[js.Any])
+    if (TargetSpotCapacity != null) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetConfig]
   }
 }

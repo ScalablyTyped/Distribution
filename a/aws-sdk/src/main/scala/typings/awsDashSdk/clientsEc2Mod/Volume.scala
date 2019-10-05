@@ -61,10 +61,10 @@ object Volume {
     Attachments: VolumeAttachmentList = null,
     AvailabilityZone: String = null,
     CreateTime: DateTime = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
-    Size: js.UndefOr[Integer] = js.undefined,
+    Size: Int | scala.Double = null,
     SnapshotId: String = null,
     State: VolumeState = null,
     Tags: TagList = null,
@@ -76,9 +76,9 @@ object Volume {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

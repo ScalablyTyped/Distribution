@@ -107,3 +107,9 @@ trait ForceManyBody[NodeDatum /* <: SimulationNodeDatum */]
   def theta(theta: Double): this.type = js.native
 }
 
+@JSImport("d3-force", "forceManyBody")
+@js.native
+object forceManyBody extends js.Object {
+  def apply[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody[NodeDatum] = js.native
+}
+

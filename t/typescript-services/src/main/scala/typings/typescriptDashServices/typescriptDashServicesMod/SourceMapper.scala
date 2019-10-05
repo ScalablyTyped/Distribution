@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "SourceMapper")
 @js.native
 class SourceMapper protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.SourceMapper {
+  extends typings.typescriptDashServices.TypeScript.SourceMapper {
   def this(
-    jsFile: typings.typescriptDashServices.TypeScriptNs.TextWriter,
-    sourceMapOut: typings.typescriptDashServices.TypeScriptNs.TextWriter,
-    document: typings.typescriptDashServices.TypeScriptNs.Document,
+    jsFile: typings.typescriptDashServices.TypeScript.TextWriter,
+    sourceMapOut: typings.typescriptDashServices.TypeScript.TextWriter,
+    document: typings.typescriptDashServices.TypeScript.Document,
     jsFilePath: String,
-    emitOptions: typings.typescriptDashServices.TypeScriptNs.EmitOptions,
+    emitOptions: typings.typescriptDashServices.TypeScript.EmitOptions,
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
 }

@@ -1,16 +1,16 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.fontSettingsNs.DefaultFixedFontSizeChangedEvent
-import typings.chrome.chromeNs.fontSettingsNs.DefaultFontSizeChangedEvent
-import typings.chrome.chromeNs.fontSettingsNs.DefaultFontSizeDetails
-import typings.chrome.chromeNs.fontSettingsNs.FontChangedEvent
-import typings.chrome.chromeNs.fontSettingsNs.FontDetails
-import typings.chrome.chromeNs.fontSettingsNs.FontDetailsResult
-import typings.chrome.chromeNs.fontSettingsNs.FontName
-import typings.chrome.chromeNs.fontSettingsNs.FontSizeDetails
-import typings.chrome.chromeNs.fontSettingsNs.MinimumFontSizeChangedEvent
-import typings.chrome.chromeNs.fontSettingsNs.SetFontDetails
-import typings.chrome.chromeNs.fontSettingsNs.SetFontSizeDetails
+import typings.chrome.chrome.fontSettings.DefaultFixedFontSizeChangedEvent
+import typings.chrome.chrome.fontSettings.DefaultFontSizeChangedEvent
+import typings.chrome.chrome.fontSettings.DefaultFontSizeDetails
+import typings.chrome.chrome.fontSettings.FontChangedEvent
+import typings.chrome.chrome.fontSettings.FontDetails
+import typings.chrome.chrome.fontSettings.FontDetailsResult
+import typings.chrome.chrome.fontSettings.FontName
+import typings.chrome.chrome.fontSettings.FontSizeDetails
+import typings.chrome.chrome.fontSettings.MinimumFontSizeChangedEvent
+import typings.chrome.chrome.fontSettings.SetFontDetails
+import typings.chrome.chrome.fontSettings.SetFontSizeDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

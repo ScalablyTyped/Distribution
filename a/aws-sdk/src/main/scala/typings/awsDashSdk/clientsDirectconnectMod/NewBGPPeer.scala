@@ -32,14 +32,14 @@ object NewBGPPeer {
   def apply(
     addressFamily: AddressFamily = null,
     amazonAddress: AmazonAddress = null,
-    asn: js.UndefOr[ASN] = js.undefined,
+    asn: Int | Double = null,
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null
   ): NewBGPPeer = {
     val __obj = js.Dynamic.literal()
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress)
-    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn)
+    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey)
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     __obj.asInstanceOf[NewBGPPeer]

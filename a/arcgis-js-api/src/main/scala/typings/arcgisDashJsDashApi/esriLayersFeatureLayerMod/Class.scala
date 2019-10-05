@@ -1,9 +1,9 @@
 package typings.arcgisDashJsDashApi.esriLayersFeatureLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FeatureLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.FeatureLayer
+import typings.arcgisDashJsDashApi.__esri.FeatureLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

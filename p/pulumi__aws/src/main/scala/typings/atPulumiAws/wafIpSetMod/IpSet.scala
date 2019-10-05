@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafIpSetMod
 
-import typings.atPulumiAws.typesOutputMod.wafNs.IpSetIpSetDescriptor
+import typings.atPulumiAws.typesOutputMod.waf.IpSetIpSetDescriptor
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

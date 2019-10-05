@@ -1,13 +1,13 @@
 package typings.azureDashSb.azureDashSbMod
 
+import typings.azureDashSb.libServicebusserviceMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("azure-sb", "ServiceBusService")
 @js.native
-class ServiceBusService protected ()
-  extends typings.azureDashSb.libServicebusserviceMod.^ {
+class ServiceBusService protected () extends ^ {
   def this(
     configOrNamespaceOrConnectionString: js.UndefOr[String],
     accessKey: js.UndefOr[String],

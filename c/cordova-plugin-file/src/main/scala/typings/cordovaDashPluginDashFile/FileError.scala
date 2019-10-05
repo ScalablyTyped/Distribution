@@ -12,15 +12,6 @@ trait FileError extends js.Object {
 
 @JSGlobal("FileError")
 @js.native
-class FileErrorCls protected () extends FileError {
-  def this(code: Double) = this()
-  /** Error code */
-  /* CompleteClass */
-  override var code: Double = js.native
-}
-
-@JSGlobal("FileError")
-@js.native
 object FileError extends Instantiable1[/* code */ Double, FileError] {
   var ABORT_ERR: Double = js.native
   var ENCODING_ERR: Double = js.native

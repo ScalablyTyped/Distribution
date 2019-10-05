@@ -27,14 +27,14 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
   @scala.inline
   def apply(
     TargetValue: Double,
-    DisableScaleIn: js.UndefOr[BooleanObject] = js.undefined,
-    ScaleInCooldown: js.UndefOr[IntegerObject] = js.undefined,
-    ScaleOutCooldown: js.UndefOr[IntegerObject] = js.undefined
+    DisableScaleIn: js.UndefOr[Boolean] = js.undefined,
+    ScaleInCooldown: Int | scala.Double = null,
+    ScaleOutCooldown: Int | scala.Double = null
   ): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue)
     if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn)
-    if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown)
-    if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown)
+    if (ScaleInCooldown != null) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.asInstanceOf[js.Any])
+    if (ScaleOutCooldown != null) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
   }
 }

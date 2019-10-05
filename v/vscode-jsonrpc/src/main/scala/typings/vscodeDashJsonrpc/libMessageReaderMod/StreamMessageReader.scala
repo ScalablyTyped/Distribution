@@ -1,6 +1,6 @@
 package typings.vscodeDashJsonrpc.libMessageReaderMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import typings.vscodeDashJsonrpc.libEventsMod.Disposable
 import scala.scalajs.js

@@ -16,29 +16,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofprometheus extends js.Object {
   var AggregatorRegistry: TypeofClassAggregatorRegistry = js.native
-  var Counter: Instantiable1[
+  var Counter: js.Any | (Instantiable1[
     /* configuration */ CounterConfiguration, 
     typings.promDashClient.promDashClientMod.Counter
-  ] = js.native
-  val CounterNs: js.Any = js.native
-  var Gauge: Instantiable1[
+  ]) = js.native
+  var Gauge: js.Any | (Instantiable1[
     /* configuration */ GaugeConfiguration, 
     typings.promDashClient.promDashClientMod.Gauge
-  ] = js.native
-  val GaugeNs: js.Any = js.native
-  var Histogram: Instantiable1[
+  ]) = js.native
+  var Histogram: js.Any | (Instantiable1[
     /* configuration */ HistogramConfiguration, 
     typings.promDashClient.promDashClientMod.Histogram
-  ] = js.native
-  val HistogramNs: js.Any = js.native
-  var Pushgateway: Instantiable1[/* url */ String, typings.promDashClient.promDashClientMod.Pushgateway] = js.native
-  val PushgatewayNs: js.Any = js.native
+  ]) = js.native
+  var Pushgateway: js.Any | (Instantiable1[/* url */ String, typings.promDashClient.promDashClientMod.Pushgateway]) = js.native
   var Registry: TypeofClassRegistry = js.native
-  var Summary: Instantiable1[
+  var Summary: js.Any | (Instantiable1[
     /* configuration */ SummaryConfiguration, 
     typings.promDashClient.promDashClientMod.Summary
-  ] = js.native
-  val SummaryNs: js.Any = js.native
+  ]) = js.native
   val register: Registry = js.native
   def collectDefaultMetrics(): ReturnType[Fn_Arguments] = js.native
   def collectDefaultMetrics(config: DefaultMetricsCollectorConfiguration): ReturnType[Fn_Arguments] = js.native

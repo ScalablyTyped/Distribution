@@ -1,6 +1,6 @@
 package typings.webdriverio
 
-import typings.webdriverio.WebdriverIOAsyncNs.Element
+import typings.webdriverio.WebdriverIOAsync.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

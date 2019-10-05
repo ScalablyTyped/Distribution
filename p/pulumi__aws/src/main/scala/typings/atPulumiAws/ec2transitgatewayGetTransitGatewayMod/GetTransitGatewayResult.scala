@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2transitgatewayGetTransitGatewayMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2transitgatewayNs.GetTransitGatewayFilter
+import typings.atPulumiAws.typesOutputMod.ec2transitgateway.GetTransitGatewayFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

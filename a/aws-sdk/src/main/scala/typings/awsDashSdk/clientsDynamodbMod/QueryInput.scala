@@ -78,7 +78,7 @@ object QueryInput {
     TableName: TableName,
     AttributesToGet: AttributeNameList = null,
     ConditionalOperator: ConditionalOperator = null,
-    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
     ExclusiveStartKey: Key = null,
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ExpressionAttributeValues: ExpressionAttributeValueMap = null,
@@ -86,11 +86,11 @@ object QueryInput {
     IndexName: IndexName = null,
     KeyConditionExpression: KeyExpression = null,
     KeyConditions: KeyConditions = null,
-    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
+    Limit: Int | scala.Double = null,
     ProjectionExpression: ProjectionExpression = null,
     QueryFilter: FilterConditionMap = null,
     ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ScanIndexForward: js.UndefOr[BooleanObject] = js.undefined,
+    ScanIndexForward: js.UndefOr[Boolean] = js.undefined,
     Select: Select = null
   ): QueryInput = {
     val __obj = js.Dynamic.literal(TableName = TableName)
@@ -104,7 +104,7 @@ object QueryInput {
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
     if (KeyConditionExpression != null) __obj.updateDynamic("KeyConditionExpression")(KeyConditionExpression)
     if (KeyConditions != null) __obj.updateDynamic("KeyConditions")(KeyConditions)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
     if (QueryFilter != null) __obj.updateDynamic("QueryFilter")(QueryFilter)
     if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])

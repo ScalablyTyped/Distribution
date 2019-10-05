@@ -1,6 +1,6 @@
 package typings.zchatDashBrowser
 
-import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEventNs.StructuredMessage
+import typings.zchatDashBrowser.zchatDashBrowserMod.ChatEvent.StructuredMessage
 import typings.zchatDashBrowser.zchatDashBrowserStrings.chatDOTmsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -16,18 +16,18 @@ trait MonkeyPatchOptions extends js.Object {
 object MonkeyPatchOptions {
   @scala.inline
   def apply(
-    after: PatchFunction = null,
-    before: PatchFunction = null,
+    after: /* data */ PatchData => js.Any = null,
+    before: /* data */ PatchData => js.Any = null,
     displayName: String = null,
-    instead: PatchFunction = null,
+    instead: /* data */ PatchData => js.Any = null,
     once: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined
   ): MonkeyPatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (instead != null) __obj.updateDynamic("instead")(instead)
+    if (instead != null) __obj.updateDynamic("instead")(js.Any.fromFunction1(instead))
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     __obj.asInstanceOf[MonkeyPatchOptions]

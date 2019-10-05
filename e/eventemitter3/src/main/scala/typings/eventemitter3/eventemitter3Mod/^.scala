@@ -19,7 +19,6 @@ class ^[EventTypes /* <: String | js.Symbol | (/* import warning: ImportType.app
 @JSImport("eventemitter3", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[EventEmitterStatic] {
-  val EventEmitter: EventEmitterStatic = js.native
   var prefixed: String | Boolean = js.native
 }
 

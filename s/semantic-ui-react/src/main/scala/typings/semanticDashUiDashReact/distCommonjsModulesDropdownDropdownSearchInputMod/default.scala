@@ -1,6 +1,8 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,4 +15,8 @@ class default protected ()
   def this(props: DropdownSearchInputProps) = this()
   def this(props: DropdownSearchInputProps, context: js.Any) = this()
 }
+
+@JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownSearchInput", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentClass[DropdownSearchInputProps, ComponentState]]
 

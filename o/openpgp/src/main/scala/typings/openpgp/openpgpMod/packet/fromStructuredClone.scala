@@ -1,0 +1,18 @@
+package typings.openpgp.openpgpMod.packet
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("openpgp", "packet.fromStructuredClone")
+@js.native
+object fromStructuredClone extends js.Object {
+  /**
+    * Allocate a new packet from structured packet clone
+    * @see
+    * @param packetClone packet clone
+    * @returns new packet object with data from packet clone
+    */
+  def apply(packetClone: js.Object): js.Object = js.native
+}
+

@@ -1,6 +1,5 @@
 package typings.atEsfxDisposable
 
-import typings.atEsfxDisposable.atEsfxDisposableStrings.AsyncDisposable
 import typings.atEsfxDisposable.distMod.Disposable
 import typings.std.Iterable
 import scala.scalajs.js
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation._
 @JSImport("@esfx/disposable", JSImport.Namespace)
 @js.native
 object atEsfxDisposableMod extends js.Object {
-  @JSName("AsyncDisposable")
   @js.native
-  object AsyncDisposableNs extends js.Object {
+  object AsyncDisposable extends js.Object {
     /**
       * A well-known symbol used to define an async explicit resource disposal method on an object.
       */
     val asyncDispose: js.Symbol = js.native
-    val name: AsyncDisposable = js.native
+    val name: typings.atEsfxDisposable.atEsfxDisposableStrings.AsyncDisposable = js.native
     /**
       * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
       */
@@ -56,9 +54,8 @@ object atEsfxDisposableMod extends js.Object {
     def use[U](resource: Disposable, callback: js.Function1[/* resource */ Disposable, U | js.Thenable[U]]): js.Promise[U] = js.native
   }
   
-  @JSName("Disposable")
   @js.native
-  object DisposableNs extends js.Object {
+  object Disposable extends js.Object {
     /**
       * A well-known symbol used to define an explicit resource disposal method on an object.
       */
@@ -67,12 +64,12 @@ object atEsfxDisposableMod extends js.Object {
     /**
       * Creates a `Disposable` wrapper around a callback used to dispose of a resource.
       */
-    def create(dispose: js.Function0[Unit]): Disposable = js.native
+    def create(dispose: js.Function0[Unit]): typings.atEsfxDisposable.distMod.Disposable = js.native
     /**
       * Creates a `Disposable` wrapper around a set of other disposables.
       * @param disposables An `Iterable` of `Disposable` objects.
       */
-    def from(disposables: Iterable[js.UndefOr[Disposable | Null]]): Disposable = js.native
+    def from(disposables: Iterable[js.UndefOr[typings.atEsfxDisposable.distMod.Disposable | Null]]): typings.atEsfxDisposable.distMod.Disposable = js.native
     /**
       * Determines whether a value is Disposable.
       */
@@ -90,7 +87,10 @@ object atEsfxDisposableMod extends js.Object {
     /**
       * Executes a callback with the provided `Disposable` resource, disposing the resource when the callback completes.
       */
-    def use[U](resource: Disposable, callback: js.Function1[/* resource */ Disposable, U]): U = js.native
+    def use[U](
+      resource: typings.atEsfxDisposable.distMod.Disposable,
+      callback: js.Function1[/* resource */ typings.atEsfxDisposable.distMod.Disposable, U]
+    ): U = js.native
   }
   
 }

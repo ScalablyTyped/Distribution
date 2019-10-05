@@ -1,6 +1,6 @@
 package typings.onesignalDashCordovaDashPlugin
 
-import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPluginNs.OSSubscriptionState
+import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPlugin.OSSubscriptionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

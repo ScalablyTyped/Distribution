@@ -92,7 +92,7 @@ object AdalConfig {
     clientId: String,
     anonymousEndpoints: js.Array[String] = null,
     cacheLocation: localStorage | sessionStorage = null,
-    callback: TokenCallback = null,
+    callback: (/* errorDesc */ String | Null, /* token */ String | Null, /* error */ js.Any) => Unit = null,
     correlationId: String = null,
     displayCall: /* url */ String => Unit = null,
     endpoints: StringDictionary[String] = null,
@@ -112,7 +112,7 @@ object AdalConfig {
     val __obj = js.Dynamic.literal(clientId = clientId)
     if (anonymousEndpoints != null) __obj.updateDynamic("anonymousEndpoints")(anonymousEndpoints)
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
     if (displayCall != null) __obj.updateDynamic("displayCall")(js.Any.fromFunction1(displayCall))
     if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)

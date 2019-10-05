@@ -13,7 +13,7 @@ trait PutAccountSendingAttributesRequest extends js.Object {
 
 object PutAccountSendingAttributesRequest {
   @scala.inline
-  def apply(SendingEnabled: js.UndefOr[Enabled] = js.undefined): PutAccountSendingAttributesRequest = {
+  def apply(SendingEnabled: js.UndefOr[Boolean] = js.undefined): PutAccountSendingAttributesRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled)
     __obj.asInstanceOf[PutAccountSendingAttributesRequest]

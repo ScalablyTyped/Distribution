@@ -1,8 +1,8 @@
 package typings.jqueryDashToastmessageDashPlugin
 
-import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessageNs.ShowToastCommand
-import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessageNs.ToastPosition
-import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessageNs.ToastType
+import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessage.ShowToastCommand
+import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessage.ToastPosition
+import typings.jqueryDashToastmessageDashPlugin.JQueryToastmessage.ToastType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

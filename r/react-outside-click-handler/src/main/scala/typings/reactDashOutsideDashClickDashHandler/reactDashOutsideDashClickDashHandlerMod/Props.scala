@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
 
 object Props {
   @scala.inline
-  def apply(children: ReactNode, onOutsideClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Props = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onOutsideClick = js.Any.fromFunction1(onOutsideClick))
-  
+  def apply(onOutsideClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit, children: ReactNode = null): Props = {
+    val __obj = js.Dynamic.literal(onOutsideClick = js.Any.fromFunction1(onOutsideClick))
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -61,17 +61,17 @@ object DescribeDimensionKeysRequest {
     ServiceType: ServiceType,
     StartTime: ISOTimestamp,
     Filter: MetricQueryFilterMap = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     PartitionBy: DimensionGroup = null,
-    PeriodInSeconds: js.UndefOr[Integer] = js.undefined
+    PeriodInSeconds: Int | scala.Double = null
   ): DescribeDimensionKeysRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime, GroupBy = GroupBy, Identifier = Identifier, Metric = Metric, ServiceType = ServiceType.asInstanceOf[js.Any], StartTime = StartTime)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (PartitionBy != null) __obj.updateDynamic("PartitionBy")(PartitionBy)
-    if (!js.isUndefined(PeriodInSeconds)) __obj.updateDynamic("PeriodInSeconds")(PeriodInSeconds)
+    if (PeriodInSeconds != null) __obj.updateDynamic("PeriodInSeconds")(PeriodInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDimensionKeysRequest]
   }
 }

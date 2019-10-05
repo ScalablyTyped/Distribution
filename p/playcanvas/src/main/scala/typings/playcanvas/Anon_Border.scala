@@ -1,7 +1,7 @@
 package typings.playcanvas
 
-import typings.playcanvas.pcNs.Vec2
-import typings.playcanvas.pcNs.Vec4
+import typings.playcanvas.pc.Vec2
+import typings.playcanvas.pc.Vec4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.coreDashJs
 
-import typings.coreDashJs.coreNs.Locale
+import typings.coreDashJs.core.Locale
 import typings.std.Iterable
 import typings.std.Iterator
 import typings.std.MapConstructor
@@ -24,7 +24,7 @@ trait Typeofcore extends js.Object {
   val Number: Anon_Acosh = js.native
   val Object: Anon_Assign = js.native
   val Promise: PromiseConstructor = js.native
-  val ReflectNs: TypeofReflect = js.native
+  val Reflect: TypeofReflect = js.native
   val RegExp: Anon_Escape = js.native
   val Set: SetConstructor = js.native
   val String: Anon_At = js.native

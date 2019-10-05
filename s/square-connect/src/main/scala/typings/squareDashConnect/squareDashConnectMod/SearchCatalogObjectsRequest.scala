@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
+import typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,5 +49,51 @@ class SearchCatalogObjectsRequest () extends js.Object {
     * A query to be used to filter or sort the results. If no query is specified, the entire catalog will be returned.
     */
   var query: js.UndefOr[CatalogQuery] = js.native
+}
+
+@JSImport("square-connect", "SearchCatalogObjectsRequest")
+@js.native
+object SearchCatalogObjectsRequest extends js.Object {
+  @js.native
+  sealed trait ObjectTypesEnum extends js.Object
+  
+  @js.native
+  object ObjectTypesEnum extends js.Object {
+    @js.native
+    sealed trait CATEGORY extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait DISCOUNT extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait IMAGE extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait ITEM extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait ITEM_VARIATION extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait MODIFIER extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait MODIFIER_LIST extends ObjectTypesEnum
+    
+    @js.native
+    sealed trait TAX extends ObjectTypesEnum
+    
+    /* "CATEGORY" */ val CATEGORY: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.CATEGORY with String = js.native
+    /* "DISCOUNT" */ val DISCOUNT: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.DISCOUNT with String = js.native
+    /* "IMAGE" */ val IMAGE: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.IMAGE with String = js.native
+    /* "ITEM" */ val ITEM: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.ITEM with String = js.native
+    /* "ITEM_VARIATION" */ val ITEM_VARIATION: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.ITEM_VARIATION with String = js.native
+    /* "MODIFIER" */ val MODIFIER: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.MODIFIER with String = js.native
+    /* "MODIFIER_LIST" */ val MODIFIER_LIST: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.MODIFIER_LIST with String = js.native
+    /* "TAX" */ val TAX: typings.squareDashConnect.squareDashConnectMod.SearchCatalogObjectsRequest.ObjectTypesEnum.TAX with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ObjectTypesEnum with String] = js.native
+  }
+  
 }
 

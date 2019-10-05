@@ -1,8 +1,8 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFFacetSearchFlags
-import typings.mfiles.MFilesNs.MFFullTextSearchFlags
-import typings.mfiles.MFilesNs.MFSearchFlags
+import typings.mfiles.MFiles.MFFacetSearchFlags
+import typings.mfiles.MFiles.MFFullTextSearchFlags
+import typings.mfiles.MFiles.MFSearchFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

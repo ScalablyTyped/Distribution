@@ -2,7 +2,7 @@ package typings.astDashTypes.genBuildersMod
 
 import typings.astDashTypes.Anon_CommentsLocTail
 import typings.astDashTypes.Anon_Cooked
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.TemplateElement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.TemplateElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

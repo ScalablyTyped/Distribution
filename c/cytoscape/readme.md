@@ -1,64 +1,34 @@
-```
-// Type definitions for Cytoscape.js 3.4
-// Project: http://js.cytoscape.org/
-// Definitions by:  Fabian Schmidt and Fred Eisele <https://github.com/phreed>
-//                  Shenghan Gao <https://github.com/wy193777>
-//                  Yuri Pereira Constante <https://github.com/ypconstante>
-//                  Jan-Niclas Struewer <https://github.com/janniclas>
-//                  Cerberuser <https://github.com/cerberuser>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-//
-// Translation from Objects in help to Typescript interface.
-// http://js.cytoscape.org/#notation/functions
-// TypeScript Version: 2.3
-/**
- * cy   --> Cy.Core
- *  the core
- *
- * eles --> Cy.Collection
- *  a collection of one or more elements (nodes and edges)
- *
- * ele  --> Cy.Singular
- *  a collection of a single element (node or edge)
- *
- * node --> Cy.NodeSingular
- *  a collection of a single node
- *
- * nodes -> Cy.NodeCollection
- *  a collection of one or more nodes
- *
- * edge --> Cy.EdgeSingular
- *  a collection of a single edge
- *
- * edges -> Cy.EdgeCollection
- *  a collection of one or more edges
- *
- * The library makes a distinction between input and output parameters
- *  due to the dynamic behaviour of the Cytoscape library.
- *
- * For a input parameter it will always expect:
- *  - Cy.Collection
- *      The input can be any element (node and edge) collection.
- *  - Cy.NodeCollection
- *      The input must be a node collection.
- *  - Cy.EdgeCollection
- *      The input must be a edge collection.
- *  - Cy.Singular
- *      The input must be a single element.
- *  - Cy.NodeSingular
- *      The inut must be a single node.
- *  - Cy.EdgeSingular
- *      The input must be a single edge.
- *
- * For a output of a function it will always give:
- *  - Cy.CollectionElements
- *      The output is a collection of node and edge elements OR single element.
- *  - Cy.EdgeCollection
- *      The output is a collection of edge elements OR single edge.
- *  - Cy.NodeCollection
- *      The output is a collection of node elements OR single node.
- *
- * A number of interfaces contain nothing as they server to collect interfaces.
- *
- */
-```
+
+# Scala.js typings for cytoscape
+
+Typings are for version 3.8
+
+## Library description:
+Graph theory (a.k.a. network) library for analysis and visualisation
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | cytoscape |
+| Keywords           | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
+| # releases         | 72 |
+| # dependents       | 87 |
+| # downloads        | 773206 |
+| # stars            | 7 |
+
+## Links
+- [Homepage](http://js.cytoscape.org)
+- [Bugs](https://github.com/cytoscape/cytoscape.js/issues)
+- [Repository](https://github.com/cytoscape/cytoscape.js)
+- [Npm](https://www.npmjs.com/package/cytoscape)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+

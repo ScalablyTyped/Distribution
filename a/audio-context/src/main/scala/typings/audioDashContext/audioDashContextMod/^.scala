@@ -14,6 +14,7 @@ object ^ extends js.Object {
     * @returns the audio context or null if there was an error or not a web browser.
     */
   def apply(): AudioContext | Null = js.native
-  def apply(options: Options | Double): AudioContext | Null = js.native
+  def apply(options: Double): AudioContext | Null = js.native
+  def apply(options: Options): AudioContext | Null = js.native
 }
 

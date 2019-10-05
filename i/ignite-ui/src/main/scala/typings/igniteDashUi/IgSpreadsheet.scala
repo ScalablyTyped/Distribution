@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -250,29 +251,29 @@ object IgSpreadsheet {
   	 * Option for igSpreadsheet
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    actionExecuted: ActionExecutedEvent = null,
-    actionExecuting: ActionExecutingEvent = null,
+    actionExecuted: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Unit = null,
+    actionExecuting: (/* event */ Event, /* ui */ ActionExecutingEventUIParam) => Unit = null,
     activeCell: String = null,
-    activeCellChanged: ActiveCellChangedEvent = null,
-    activePaneChanged: ActivePaneChangedEvent = null,
-    activeTableChanged: ActiveTableChangedEvent = null,
+    activeCellChanged: (/* event */ Event, /* ui */ ActiveCellChangedEventUIParam) => Unit = null,
+    activePaneChanged: (/* event */ Event, /* ui */ ActivePaneChangedEventUIParam) => Unit = null,
+    activeTableChanged: (/* event */ Event, /* ui */ ActiveTableChangedEventUIParam) => Unit = null,
     activeWorksheet: js.Any = null,
-    activeWorksheetChanged: ActiveWorksheetChangedEvent = null,
+    activeWorksheetChanged: (/* event */ Event, /* ui */ ActiveWorksheetChangedEventUIParam) => Unit = null,
     allowAddWorksheet: js.UndefOr[Boolean] = js.undefined,
     allowDeleteWorksheet: js.UndefOr[Boolean] = js.undefined,
     areGridlinesVisible: js.UndefOr[Boolean] = js.undefined,
     areHeadersVisible: js.UndefOr[Boolean] = js.undefined,
     brushes: IgSpreadsheetBrushes = null,
-    editModeEntered: EditModeEnteredEvent = null,
-    editModeEntering: EditModeEnteringEvent = null,
-    editModeExited: EditModeExitedEvent = null,
-    editModeExiting: EditModeExitingEvent = null,
-    editModeValidationError: EditModeValidationErrorEvent = null,
-    editRangePasswordNeeded: EditRangePasswordNeededEvent = null,
+    editModeEntered: (/* event */ Event, /* ui */ EditModeEnteredEventUIParam) => Unit = null,
+    editModeEntering: (/* event */ Event, /* ui */ EditModeEnteringEventUIParam) => Unit = null,
+    editModeExited: (/* event */ Event, /* ui */ EditModeExitedEventUIParam) => Unit = null,
+    editModeExiting: (/* event */ Event, /* ui */ EditModeExitingEventUIParam) => Unit = null,
+    editModeValidationError: (/* event */ Event, /* ui */ EditModeValidationErrorEventUIParam) => Unit = null,
+    editRangePasswordNeeded: (/* event */ Event, /* ui */ EditRangePasswordNeededEventUIParam) => Unit = null,
     enterKeyNavigationDirection: String = null,
     fixedDecimalPlaceCount: Int | Double = null,
     height: String | Double = null,
-    hyperlinkExecuting: HyperlinkExecutingEvent = null,
+    hyperlinkExecuting: (/* event */ Event, /* ui */ HyperlinkExecutingEventUIParam) => Unit = null,
     isEnterKeyNavigationEnabled: js.UndefOr[Boolean] = js.undefined,
     isFixedDecimalEnabled: js.UndefOr[Boolean] = js.undefined,
     isFormulaBarVisible: js.UndefOr[Boolean] = js.undefined,
@@ -284,40 +285,40 @@ object IgSpreadsheet {
     nameBoxWidth: Int | Double = null,
     regional: String | js.Object = null,
     selectedWorksheets: js.Any = null,
-    selectionChanged: IgSpreadsheetSelectionChangedEvent = null,
+    selectionChanged: (/* event */ Event, /* ui */ IgSpreadsheetSelectionChangedEventUIParam) => Unit = null,
     selectionMode: String = null,
-    userPromptDisplaying: UserPromptDisplayingEvent = null,
+    userPromptDisplaying: (/* event */ Event, /* ui */ UserPromptDisplayingEventUIParam) => Unit = null,
     validationInputMessagePosition: js.Any = null,
     width: String | Double = null,
     workbook: js.Any = null,
-    workbookDirtied: WorkbookDirtiedEvent = null,
+    workbookDirtied: (/* event */ Event, /* ui */ WorkbookDirtiedEventUIParam) => Unit = null,
     zoomLevel: Int | Double = null
   ): IgSpreadsheet = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (actionExecuted != null) __obj.updateDynamic("actionExecuted")(actionExecuted)
-    if (actionExecuting != null) __obj.updateDynamic("actionExecuting")(actionExecuting)
+    if (actionExecuted != null) __obj.updateDynamic("actionExecuted")(js.Any.fromFunction2(actionExecuted))
+    if (actionExecuting != null) __obj.updateDynamic("actionExecuting")(js.Any.fromFunction2(actionExecuting))
     if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
-    if (activeCellChanged != null) __obj.updateDynamic("activeCellChanged")(activeCellChanged)
-    if (activePaneChanged != null) __obj.updateDynamic("activePaneChanged")(activePaneChanged)
-    if (activeTableChanged != null) __obj.updateDynamic("activeTableChanged")(activeTableChanged)
+    if (activeCellChanged != null) __obj.updateDynamic("activeCellChanged")(js.Any.fromFunction2(activeCellChanged))
+    if (activePaneChanged != null) __obj.updateDynamic("activePaneChanged")(js.Any.fromFunction2(activePaneChanged))
+    if (activeTableChanged != null) __obj.updateDynamic("activeTableChanged")(js.Any.fromFunction2(activeTableChanged))
     if (activeWorksheet != null) __obj.updateDynamic("activeWorksheet")(activeWorksheet)
-    if (activeWorksheetChanged != null) __obj.updateDynamic("activeWorksheetChanged")(activeWorksheetChanged)
+    if (activeWorksheetChanged != null) __obj.updateDynamic("activeWorksheetChanged")(js.Any.fromFunction2(activeWorksheetChanged))
     if (!js.isUndefined(allowAddWorksheet)) __obj.updateDynamic("allowAddWorksheet")(allowAddWorksheet)
     if (!js.isUndefined(allowDeleteWorksheet)) __obj.updateDynamic("allowDeleteWorksheet")(allowDeleteWorksheet)
     if (!js.isUndefined(areGridlinesVisible)) __obj.updateDynamic("areGridlinesVisible")(areGridlinesVisible)
     if (!js.isUndefined(areHeadersVisible)) __obj.updateDynamic("areHeadersVisible")(areHeadersVisible)
     if (brushes != null) __obj.updateDynamic("brushes")(brushes)
-    if (editModeEntered != null) __obj.updateDynamic("editModeEntered")(editModeEntered)
-    if (editModeEntering != null) __obj.updateDynamic("editModeEntering")(editModeEntering)
-    if (editModeExited != null) __obj.updateDynamic("editModeExited")(editModeExited)
-    if (editModeExiting != null) __obj.updateDynamic("editModeExiting")(editModeExiting)
-    if (editModeValidationError != null) __obj.updateDynamic("editModeValidationError")(editModeValidationError)
-    if (editRangePasswordNeeded != null) __obj.updateDynamic("editRangePasswordNeeded")(editRangePasswordNeeded)
+    if (editModeEntered != null) __obj.updateDynamic("editModeEntered")(js.Any.fromFunction2(editModeEntered))
+    if (editModeEntering != null) __obj.updateDynamic("editModeEntering")(js.Any.fromFunction2(editModeEntering))
+    if (editModeExited != null) __obj.updateDynamic("editModeExited")(js.Any.fromFunction2(editModeExited))
+    if (editModeExiting != null) __obj.updateDynamic("editModeExiting")(js.Any.fromFunction2(editModeExiting))
+    if (editModeValidationError != null) __obj.updateDynamic("editModeValidationError")(js.Any.fromFunction2(editModeValidationError))
+    if (editRangePasswordNeeded != null) __obj.updateDynamic("editRangePasswordNeeded")(js.Any.fromFunction2(editRangePasswordNeeded))
     if (enterKeyNavigationDirection != null) __obj.updateDynamic("enterKeyNavigationDirection")(enterKeyNavigationDirection)
     if (fixedDecimalPlaceCount != null) __obj.updateDynamic("fixedDecimalPlaceCount")(fixedDecimalPlaceCount.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hyperlinkExecuting != null) __obj.updateDynamic("hyperlinkExecuting")(hyperlinkExecuting)
+    if (hyperlinkExecuting != null) __obj.updateDynamic("hyperlinkExecuting")(js.Any.fromFunction2(hyperlinkExecuting))
     if (!js.isUndefined(isEnterKeyNavigationEnabled)) __obj.updateDynamic("isEnterKeyNavigationEnabled")(isEnterKeyNavigationEnabled)
     if (!js.isUndefined(isFixedDecimalEnabled)) __obj.updateDynamic("isFixedDecimalEnabled")(isFixedDecimalEnabled)
     if (!js.isUndefined(isFormulaBarVisible)) __obj.updateDynamic("isFormulaBarVisible")(isFormulaBarVisible)
@@ -329,13 +330,13 @@ object IgSpreadsheet {
     if (nameBoxWidth != null) __obj.updateDynamic("nameBoxWidth")(nameBoxWidth.asInstanceOf[js.Any])
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (selectedWorksheets != null) __obj.updateDynamic("selectedWorksheets")(selectedWorksheets)
-    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(js.Any.fromFunction2(selectionChanged))
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
-    if (userPromptDisplaying != null) __obj.updateDynamic("userPromptDisplaying")(userPromptDisplaying)
+    if (userPromptDisplaying != null) __obj.updateDynamic("userPromptDisplaying")(js.Any.fromFunction2(userPromptDisplaying))
     if (validationInputMessagePosition != null) __obj.updateDynamic("validationInputMessagePosition")(validationInputMessagePosition)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (workbook != null) __obj.updateDynamic("workbook")(workbook)
-    if (workbookDirtied != null) __obj.updateDynamic("workbookDirtied")(workbookDirtied)
+    if (workbookDirtied != null) __obj.updateDynamic("workbookDirtied")(js.Any.fromFunction2(workbookDirtied))
     if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSpreadsheet]
   }

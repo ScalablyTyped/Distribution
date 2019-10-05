@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLegendSupportActiveLayerInfoMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActiveLayerInfo
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActiveLayerInfoProperties
+import typings.arcgisDashJsDashApi.__esri.ActiveLayerInfo
+import typings.arcgisDashJsDashApi.__esri.ActiveLayerInfoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

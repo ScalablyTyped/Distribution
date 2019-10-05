@@ -28,8 +28,8 @@ object ResultConfigurationUpdates {
   def apply(
     EncryptionConfiguration: EncryptionConfiguration = null,
     OutputLocation: String = null,
-    RemoveEncryptionConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
-    RemoveOutputLocation: js.UndefOr[BoxedBoolean] = js.undefined
+    RemoveEncryptionConfiguration: js.UndefOr[scala.Boolean] = js.undefined,
+    RemoveOutputLocation: js.UndefOr[scala.Boolean] = js.undefined
   ): ResultConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
     if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration)

@@ -1,7 +1,7 @@
 package typings.rabbitDotJs.rabbitDotJsMod
 
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

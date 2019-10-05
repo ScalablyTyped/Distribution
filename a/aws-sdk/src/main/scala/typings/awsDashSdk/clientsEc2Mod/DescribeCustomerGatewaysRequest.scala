@@ -23,7 +23,7 @@ object DescribeCustomerGatewaysRequest {
   @scala.inline
   def apply(
     CustomerGatewayIds: CustomerGatewayIdStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null
   ): DescribeCustomerGatewaysRequest = {
     val __obj = js.Dynamic.literal()

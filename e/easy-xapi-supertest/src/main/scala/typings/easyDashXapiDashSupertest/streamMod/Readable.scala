@@ -1,6 +1,6 @@
 package typings.easyDashXapiDashSupertest.streamMod
 
-import typings.easyDashXapiDashSupertest.NodeJSNs.ReadableStream
+import typings.easyDashXapiDashSupertest.NodeJS.ReadableStream
 import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

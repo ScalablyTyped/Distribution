@@ -1,8 +1,8 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.DefaultSuggestResult
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.OnInputEnteredDisposition
-import typings.firefoxDashWebextDashBrowser.browserNs.omniboxNs.SuggestResult
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.DefaultSuggestResult
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.OnInputEnteredDisposition
+import typings.firefoxDashWebextDashBrowser.browser.omnibox.SuggestResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

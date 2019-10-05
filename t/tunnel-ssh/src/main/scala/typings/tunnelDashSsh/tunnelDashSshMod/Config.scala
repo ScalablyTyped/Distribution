@@ -1,7 +1,7 @@
 package typings.tunnelDashSsh.tunnelDashSshMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.tunnelDashSsh.Anon_Cipher
 import typings.tunnelDashSsh.tunnelDashSshStrings.force
 import scala.scalajs.js

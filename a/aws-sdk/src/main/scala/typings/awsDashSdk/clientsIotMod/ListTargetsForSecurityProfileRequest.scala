@@ -23,11 +23,11 @@ object ListTargetsForSecurityProfileRequest {
   @scala.inline
   def apply(
     securityProfileName: SecurityProfileName,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): ListTargetsForSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListTargetsForSecurityProfileRequest]
   }

@@ -80,13 +80,13 @@ object CmafGroupSettings {
     Destination: __stringPatternS3 = null,
     DestinationSettings: DestinationSettings = null,
     Encryption: CmafEncryptionSettings = null,
-    FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    FragmentLength: Int | Double = null,
     ManifestCompression: CmafManifestCompression = null,
     ManifestDurationFormat: CmafManifestDurationFormat = null,
-    MinBufferTime: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
-    MinFinalSegmentLength: js.UndefOr[__doubleMin0Max2147483647] = js.undefined,
+    MinBufferTime: Int | Double = null,
+    MinFinalSegmentLength: Int | Double = null,
     SegmentControl: CmafSegmentControl = null,
-    SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    SegmentLength: Int | Double = null,
     StreamInfResolution: CmafStreamInfResolution = null,
     WriteDashManifest: CmafWriteDASHManifest = null,
     WriteHlsManifest: CmafWriteHLSManifest = null
@@ -98,13 +98,13 @@ object CmafGroupSettings {
     if (Destination != null) __obj.updateDynamic("Destination")(Destination)
     if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength)
+    if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
     if (ManifestCompression != null) __obj.updateDynamic("ManifestCompression")(ManifestCompression.asInstanceOf[js.Any])
     if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBufferTime)) __obj.updateDynamic("MinBufferTime")(MinBufferTime)
-    if (!js.isUndefined(MinFinalSegmentLength)) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength)
+    if (MinBufferTime != null) __obj.updateDynamic("MinBufferTime")(MinBufferTime.asInstanceOf[js.Any])
+    if (MinFinalSegmentLength != null) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength)
+    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
     if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])
     if (WriteDashManifest != null) __obj.updateDynamic("WriteDashManifest")(WriteDashManifest.asInstanceOf[js.Any])
     if (WriteHlsManifest != null) __obj.updateDynamic("WriteHlsManifest")(WriteHlsManifest.asInstanceOf[js.Any])

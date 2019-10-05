@@ -1,6 +1,6 @@
 package typings.atJupyterlabServices
 
-import typings.atJupyterlabServices.libWorkspaceMod.WorkspaceNs.IWorkspace
+import typings.atJupyterlabServices.libWorkspaceMod.Workspace.IWorkspace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

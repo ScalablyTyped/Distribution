@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksLocatorMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Locator
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocatorProperties
+import typings.arcgisDashJsDashApi.__esri.Locator
+import typings.arcgisDashJsDashApi.__esri.LocatorProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

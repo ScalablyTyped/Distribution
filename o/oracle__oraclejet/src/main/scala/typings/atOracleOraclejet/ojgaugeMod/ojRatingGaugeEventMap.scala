@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet.ojgaugeMod
 
 import typings.atOracleOraclejet.Anon_BorderColorCircle
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0DOT5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
@@ -13,7 +13,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.off
 import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojgaugeMod.ojRatingGaugeNs.Threshold
+import typings.atOracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -46,7 +46,7 @@ trait ojRatingGaugeEventMap extends dvtBaseComponentEventMap[ojRatingGaugeSettab
   var selectedStateChanged: JetElementCustomEvent[Anon_BorderColorCircle]
   var stepChanged: JetElementCustomEvent[`0DOT5` | `1`]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
-  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288]
+  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
   var unselectedStateChanged: JetElementCustomEvent[Anon_BorderColorCircle]
   var valueChanged: JetElementCustomEvent[Double | Null]
@@ -149,7 +149,7 @@ object ojRatingGaugeEventMap {
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],
     timeupdate: Event,
     toggle: Event,
-    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288],
+    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,

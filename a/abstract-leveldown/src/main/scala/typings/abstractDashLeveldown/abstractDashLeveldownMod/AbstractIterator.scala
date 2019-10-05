@@ -1,6 +1,6 @@
 package typings.abstractDashLeveldown.abstractDashLeveldownMod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,28 +13,5 @@ trait AbstractIterator[K, V] extends AbstractOptions {
 
 @JSImport("abstract-leveldown", "AbstractIterator")
 @js.native
-class AbstractIteratorCls[K, V] protected () extends AbstractIterator[K, V] {
-  // tslint:disable-next-line no-unnecessary-generics
-  def this(db: js.Any) = this()
-  /* CompleteClass */
-  override var db: AbstractLevelDOWN[K, V] = js.native
-  /* CompleteClass */
-  override def end(cb: ErrorCallback): Unit = js.native
-  /* CompleteClass */
-  override def next(cb: ErrorKeyValueCallback[K, V]): this.type = js.native
-}
-
-object AbstractIterator {
-  @scala.inline
-  def apply[K, V](
-    db: AbstractLevelDOWN[K, V],
-    end: ErrorCallback => Unit,
-    next: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V],
-    StringDictionary: StringDictionary[js.Any] = null
-  ): AbstractIterator[K, V] = {
-    val __obj = js.Dynamic.literal(db = db, end = js.Any.fromFunction1(end), next = js.Any.fromFunction1(next))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[AbstractIterator[K, V]]
-  }
-}
+object AbstractIterator extends TopLevel[AbstractIteratorConstructor]
 

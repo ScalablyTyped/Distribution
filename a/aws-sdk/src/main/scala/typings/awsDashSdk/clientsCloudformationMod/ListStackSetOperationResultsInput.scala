@@ -28,11 +28,11 @@ object ListStackSetOperationResultsInput {
   def apply(
     OperationId: ClientRequestToken,
     StackSetName: StackSetName,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): ListStackSetOperationResultsInput = {
     val __obj = js.Dynamic.literal(OperationId = OperationId, StackSetName = StackSetName)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListStackSetOperationResultsInput]
   }

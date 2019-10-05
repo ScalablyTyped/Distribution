@@ -1,10 +1,10 @@
 package typings.arcgisDashJsDashApi.esriWidgetsLocateLocateViewModelMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Graphic
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocateViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocateViewModelProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.SceneView
+import typings.arcgisDashJsDashApi.__esri.Graphic
+import typings.arcgisDashJsDashApi.__esri.LocateViewModel
+import typings.arcgisDashJsDashApi.__esri.LocateViewModelProperties
+import typings.arcgisDashJsDashApi.__esri.MapView
+import typings.arcgisDashJsDashApi.__esri.SceneView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

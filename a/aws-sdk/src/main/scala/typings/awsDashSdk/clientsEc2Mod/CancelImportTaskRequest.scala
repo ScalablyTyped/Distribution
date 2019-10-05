@@ -23,7 +23,7 @@ object CancelImportTaskRequest {
   @scala.inline
   def apply(
     CancelReason: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ImportTaskId: String = null
   ): CancelImportTaskRequest = {
     val __obj = js.Dynamic.literal()

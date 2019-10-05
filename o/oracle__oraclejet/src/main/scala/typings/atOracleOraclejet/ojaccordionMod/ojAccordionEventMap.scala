@@ -3,10 +3,10 @@ package typings.atOracleOraclejet.ojaccordionMod
 import typings.atOracleOraclejet.Anon_Id
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.baseComponentEventMap
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojCollapse
-import typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojExpand
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse
+import typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojExpand
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -30,10 +30,10 @@ import scala.scalajs.js.annotation._
 trait ojAccordionEventMap extends baseComponentEventMap[ojAccordionSettableProperties] {
   var expandedChanged: JetElementCustomEvent[js.Array[Anon_Id] | Null]
   var multipleChanged: JetElementCustomEvent[Boolean]
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeCollapse
-  var ojBeforeExpand: typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojBeforeExpand
-  var ojCollapse: typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojCollapse
-  var ojExpand: typings.atOracleOraclejet.ojaccordionMod.ojAccordionNs.ojExpand
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeCollapse
+  var ojBeforeExpand: typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojBeforeExpand
+  var ojCollapse: typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojCollapse
+  var ojExpand: typings.atOracleOraclejet.ojaccordionMod.ojAccordion.ojExpand
 }
 
 object ojAccordionEventMap {

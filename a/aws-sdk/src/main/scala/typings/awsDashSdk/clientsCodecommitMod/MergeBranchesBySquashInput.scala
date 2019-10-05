@@ -63,7 +63,7 @@ object MergeBranchesBySquashInput {
     conflictResolution: ConflictResolution = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
+    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
     targetBranch: BranchName = null
   ): MergeBranchesBySquashInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier, repositoryName = repositoryName, sourceCommitSpecifier = sourceCommitSpecifier)

@@ -90,11 +90,11 @@ object GameSessionPlacement {
     GameSessionRegion: NonZeroAndMaxString = null,
     IpAddress: IpAddress = null,
     MatchmakerData: MatchmakerData = null,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
+    MaximumPlayerSessionCount: Int | scala.Double = null,
     PlacedPlayerSessions: PlacedPlayerSessionList = null,
     PlacementId: IdStringModel = null,
     PlayerLatencies: PlayerLatencyList = null,
-    Port: js.UndefOr[PortNumber] = js.undefined,
+    Port: Int | scala.Double = null,
     StartTime: Timestamp = null,
     Status: GameSessionPlacementState = null
   ): GameSessionPlacement = {
@@ -110,11 +110,11 @@ object GameSessionPlacement {
     if (GameSessionRegion != null) __obj.updateDynamic("GameSessionRegion")(GameSessionRegion)
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
     if (MatchmakerData != null) __obj.updateDynamic("MatchmakerData")(MatchmakerData)
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount)
+    if (MaximumPlayerSessionCount != null) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.asInstanceOf[js.Any])
     if (PlacedPlayerSessions != null) __obj.updateDynamic("PlacedPlayerSessions")(PlacedPlayerSessions)
     if (PlacementId != null) __obj.updateDynamic("PlacementId")(PlacementId)
     if (PlayerLatencies != null) __obj.updateDynamic("PlayerLatencies")(PlayerLatencies)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionPlacement]

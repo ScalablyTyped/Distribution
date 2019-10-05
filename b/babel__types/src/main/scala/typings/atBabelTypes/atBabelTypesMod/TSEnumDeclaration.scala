@@ -49,3 +49,40 @@ object TSEnumDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsEnumDeclaration")
+@js.native
+object tsEnumDeclaration extends js.Object {
+  def apply(id: Identifier, members: js.Array[TSEnumMember]): TSEnumDeclaration = js.native
+  def apply(id: Identifier, members: js.Array[TSEnumMember], _const: Boolean): TSEnumDeclaration = js.native
+  def apply(id: Identifier, members: js.Array[TSEnumMember], _const: Boolean, declare: Boolean): TSEnumDeclaration = js.native
+  def apply(
+    id: Identifier,
+    members: js.Array[TSEnumMember],
+    _const: Boolean,
+    declare: Boolean,
+    initializer: Expression
+  ): TSEnumDeclaration = js.native
+  def apply(
+    id: Identifier,
+    members: js.Array[TSEnumMember],
+    _const: Boolean,
+    declare: Null,
+    initializer: Expression
+  ): TSEnumDeclaration = js.native
+  def apply(id: Identifier, members: js.Array[TSEnumMember], _const: Null, declare: Boolean): TSEnumDeclaration = js.native
+  def apply(
+    id: Identifier,
+    members: js.Array[TSEnumMember],
+    _const: Null,
+    declare: Boolean,
+    initializer: Expression
+  ): TSEnumDeclaration = js.native
+  def apply(
+    id: Identifier,
+    members: js.Array[TSEnumMember],
+    _const: Null,
+    declare: Null,
+    initializer: Expression
+  ): TSEnumDeclaration = js.native
+}
+

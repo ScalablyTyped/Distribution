@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalRegexMatchSetMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.RegexMatchSetRegexMatchTuple
+import typings.atPulumiAws.typesInputMod.wafregional.RegexMatchSetRegexMatchTuple
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

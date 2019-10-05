@@ -17,9 +17,9 @@ trait ListStateMachinesInput extends js.Object {
 
 object ListStateMachinesInput {
   @scala.inline
-  def apply(maxResults: js.UndefOr[PageSize] = js.undefined, nextToken: PageToken = null): ListStateMachinesInput = {
+  def apply(maxResults: Int | Double = null, nextToken: PageToken = null): ListStateMachinesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListStateMachinesInput]
   }

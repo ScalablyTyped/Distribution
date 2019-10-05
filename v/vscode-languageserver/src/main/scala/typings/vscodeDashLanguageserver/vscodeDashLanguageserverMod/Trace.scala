@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,5 +13,7 @@ object Trace extends js.Object {
   /* 2 */ val Verbose: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace.Verbose with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace with Double] = js.native
+  def fromString(value: String): typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace = js.native
+  def toString(value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace): TraceValues = js.native
 }
 

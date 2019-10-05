@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ClassBreaksResult
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.classBreaksClassBreaksParams
+import typings.arcgisDashJsDashApi.__esri.ClassBreaksResult
+import typings.arcgisDashJsDashApi.__esri.classBreaksClassBreaksParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/accounts-base", JSImport.Namespace)
 @js.native
 object meteorAccountsDashBaseMod extends js.Object {
-  @JSName("Accounts")
   @js.native
-  object AccountsNs extends js.Object {
+  object Accounts extends js.Object {
     def createUserWithPhone(options: js.Object): Unit = js.native
     def createUserWithPhone(options: js.Object, callback: js.Function): Unit = js.native
     def isPhoneVerified(): Boolean = js.native

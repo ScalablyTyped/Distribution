@@ -1,9 +1,9 @@
 package typings.rmcDashCalendar.libDateSingleMonthMod
 
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.CellData
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.ExtraData
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.Locale
-import typings.rmcDashCalendar.libDateDataTypesMod.ModelsNs.MonthData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.CellData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.ExtraData
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.Locale
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.MonthData
 import typings.rmcDashCalendar.rmcDashCalendarStrings.normal
 import typings.rmcDashCalendar.rmcDashCalendarStrings.xl
 import typings.std.Date

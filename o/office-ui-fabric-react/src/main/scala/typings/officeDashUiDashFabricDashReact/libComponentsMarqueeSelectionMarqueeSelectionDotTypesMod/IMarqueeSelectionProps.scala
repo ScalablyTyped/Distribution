@@ -7,6 +7,7 @@ import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.ISelection
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +66,7 @@ object IMarqueeSelectionProps {
     isEnabled: js.UndefOr[Boolean] = js.undefined,
     onShouldStartSelection: /* ev */ MouseEvent => Boolean = null,
     rootProps: HTMLAttributes[HTMLDivElement] = null,
-    styles: IStyleFunction[IMarqueeSelectionStyleProps, IMarqueeSelectionStyles] = null,
+    styles: IMarqueeSelectionStyleProps => Partial[IMarqueeSelectionStyles] = null,
     theme: ITheme = null
   ): IMarqueeSelectionProps = {
     val __obj = js.Dynamic.literal(selection = selection)
@@ -76,7 +77,7 @@ object IMarqueeSelectionProps {
     if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
     if (onShouldStartSelection != null) __obj.updateDynamic("onShouldStartSelection")(js.Any.fromFunction1(onShouldStartSelection))
     if (rootProps != null) __obj.updateDynamic("rootProps")(rootProps)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(js.Any.fromFunction1(styles))
     if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[IMarqueeSelectionProps]
   }

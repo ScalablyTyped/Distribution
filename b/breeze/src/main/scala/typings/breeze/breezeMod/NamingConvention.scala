@@ -1,6 +1,6 @@
 package typings.breeze.breezeMod
 
-import typings.breeze.breezeNs.NamingConventionOptions
+import typings.breeze.breeze.NamingConventionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "NamingConvention")
 @js.native
 class NamingConvention protected ()
-  extends typings.breeze.breezeNs.NamingConvention {
+  extends typings.breeze.breeze.NamingConvention {
   def this(config: NamingConventionOptions) = this()
 }
 
@@ -16,8 +16,8 @@ class NamingConvention protected ()
 @JSImport("breeze", "NamingConvention")
 @js.native
 object NamingConvention extends js.Object {
-  var camelCase: typings.breeze.breezeNs.NamingConvention = js.native
-  var defaultInstance: typings.breeze.breezeNs.NamingConvention = js.native
-  var none: typings.breeze.breezeNs.NamingConvention = js.native
+  var camelCase: typings.breeze.breeze.NamingConvention = js.native
+  var defaultInstance: typings.breeze.breeze.NamingConvention = js.native
+  var none: typings.breeze.breeze.NamingConvention = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.windowsDashScriptDashHost
 
-import typings.activexDashIwshruntimelibrary.IWshRuntimeLibraryNs.TextStreamReader
-import typings.activexDashIwshruntimelibrary.IWshRuntimeLibraryNs.TextStreamWriter
+import typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary.TextStreamReader
+import typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary.TextStreamWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,12 +11,12 @@ import typings.nodegit.diffDashLineMod.DiffLine
 import typings.nodegit.fetchDashOptionsMod.FetchOptions
 import typings.nodegit.indexUnderscoreMod.Index
 import typings.nodegit.mergeDashOptionsMod.MergeOptions
-import typings.nodegit.mergeMod.MergeNs.PREFERENCE
+import typings.nodegit.mergeMod.Merge.PREFERENCE
 import typings.nodegit.odbMod.Odb
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.refDashDbMod.Refdb
 import typings.nodegit.referenceMod.Reference
-import typings.nodegit.referenceMod.ReferenceNs.TYPE
+import typings.nodegit.referenceMod.Reference.TYPE
 import typings.nodegit.remoteMod.Remote
 import typings.nodegit.revDashWalkMod.Revwalk
 import typings.nodegit.signatureMod.Signature

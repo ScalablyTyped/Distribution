@@ -2,9 +2,9 @@ package typings.foundationDashSites
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.foundationDashSites.FoundationSitesNs.Abide
-import typings.foundationDashSites.FoundationSitesNs.AbideDefaults
-import typings.foundationDashSites.FoundationSitesNs.IAbideOptions
+import typings.foundationDashSites.FoundationSites.Abide
+import typings.foundationDashSites.FoundationSites.AbideDefaults
+import typings.foundationDashSites.FoundationSites.IAbideOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

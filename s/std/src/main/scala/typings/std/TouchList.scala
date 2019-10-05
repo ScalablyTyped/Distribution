@@ -17,9 +17,5 @@ trait TouchList extends /* index */ NumberDictionary[Touch] {
 
 @JSGlobal("TouchList")
 @js.native
-class TouchListCls () extends TouchList
-
-@JSGlobal("TouchList")
-@js.native
 object TouchList extends Instantiable0[TouchList]
 

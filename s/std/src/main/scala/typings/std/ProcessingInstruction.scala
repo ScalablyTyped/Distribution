@@ -13,20 +13,5 @@ trait ProcessingInstruction extends CharacterData {
 
 @JSGlobal("ProcessingInstruction")
 @js.native
-class ProcessingInstructionCls () extends ProcessingInstruction {
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-}
-
-@JSGlobal("ProcessingInstruction")
-@js.native
 object ProcessingInstruction extends Instantiable0[ProcessingInstruction]
 

@@ -1,6 +1,6 @@
 package typings.amapDashJsDashApiDashStationDashSearch
 
-import typings.amapDashJsDashApiDashStationDashSearch.AMapNs.StationSearchNs.SearchStatus
+import typings.amapDashJsDashApiDashStationDashSearch.AMap.StationSearch.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

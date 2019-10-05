@@ -14,9 +14,9 @@ trait DefaultProps[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object DefaultProps {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](defaultInputValue: String, defaultMenuIsOpen: Boolean, defaultValue: ValueType[OptionType]): DefaultProps[OptionType] = {
-    val __obj = js.Dynamic.literal(defaultInputValue = defaultInputValue, defaultMenuIsOpen = defaultMenuIsOpen, defaultValue = defaultValue.asInstanceOf[js.Any])
-  
+  def apply[OptionType /* <: OptionTypeBase */](defaultInputValue: String, defaultMenuIsOpen: Boolean, defaultValue: ValueType[OptionType] = null): DefaultProps[OptionType] = {
+    val __obj = js.Dynamic.literal(defaultInputValue = defaultInputValue, defaultMenuIsOpen = defaultMenuIsOpen)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultProps[OptionType]]
   }
 }

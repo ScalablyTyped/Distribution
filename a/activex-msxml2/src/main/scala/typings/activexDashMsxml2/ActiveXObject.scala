@@ -1,7 +1,7 @@
 package typings.activexDashMsxml2
 
-import typings.activexDashMsxml2.MSXML2Ns.DOMDocument60
-import typings.activexDashMsxml2.MSXML2Ns.FreeThreadedDOMDocument60
+import typings.activexDashMsxml2.MSXML2.DOMDocument60
+import typings.activexDashMsxml2.MSXML2.FreeThreadedDOMDocument60
 import typings.activexDashMsxml2.activexDashMsxml2Strings.ondataavailable
 import typings.activexDashMsxml2.activexDashMsxml2Strings.onreadystatechange
 import scala.scalajs.js

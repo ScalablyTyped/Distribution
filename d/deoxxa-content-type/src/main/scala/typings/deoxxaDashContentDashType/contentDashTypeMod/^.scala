@@ -1,8 +1,8 @@
 package typings.deoxxaDashContentDashType.contentDashTypeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.deoxxaDashContentDashType.ContentTypeNs.MediaType
-import typings.deoxxaDashContentDashType.ContentTypeNs.MediaTypeStatic
+import typings.deoxxaDashContentDashType.ContentType.MediaType
+import typings.deoxxaDashContentDashType.ContentType.MediaTypeStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

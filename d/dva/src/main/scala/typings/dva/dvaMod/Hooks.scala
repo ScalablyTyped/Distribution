@@ -1,7 +1,9 @@
 package typings.dva.dvaMod
 
 import typings.redux.reduxMod.Action
+import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Dispatch
+import typings.redux.reduxMod.Reducer
 import typings.redux.reduxMod.ReducersMapObject
 import typings.redux.reduxMod.StoreEnhancer
 import typings.std.Error
@@ -29,7 +31,7 @@ object Hooks {
     onEffect: () => Unit = null,
     onError: (/* e */ Error, /* dispatch */ Dispatch[_]) => Unit = null,
     onHmr: () => Unit = null,
-    onReducer: ReducerEnhancer = null,
+    onReducer: /* reducer */ Reducer[js.Any, AnyAction] => Unit = null,
     onStateChange: () => Unit = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
@@ -39,7 +41,7 @@ object Hooks {
     if (onEffect != null) __obj.updateDynamic("onEffect")(js.Any.fromFunction0(onEffect))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
     if (onHmr != null) __obj.updateDynamic("onHmr")(js.Any.fromFunction0(onHmr))
-    if (onReducer != null) __obj.updateDynamic("onReducer")(onReducer)
+    if (onReducer != null) __obj.updateDynamic("onReducer")(js.Any.fromFunction1(onReducer))
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction0(onStateChange))
     __obj.asInstanceOf[Hooks]
   }

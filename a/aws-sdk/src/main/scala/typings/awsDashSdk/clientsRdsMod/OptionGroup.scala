@@ -42,7 +42,7 @@ trait OptionGroup extends js.Object {
 object OptionGroup {
   @scala.inline
   def apply(
-    AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined,
+    AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[scala.Boolean] = js.undefined,
     EngineName: String = null,
     MajorEngineVersion: String = null,
     OptionGroupArn: String = null,

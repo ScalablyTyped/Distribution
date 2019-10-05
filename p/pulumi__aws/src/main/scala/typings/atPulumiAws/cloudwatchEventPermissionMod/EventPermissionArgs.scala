@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cloudwatchEventPermissionMod
 
-import typings.atPulumiAws.typesInputMod.cloudwatchNs.EventPermissionCondition
+import typings.atPulumiAws.typesInputMod.cloudwatch.EventPermissionCondition
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

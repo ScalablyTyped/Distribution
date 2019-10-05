@@ -23,3 +23,10 @@ class GridLayer () extends Layer {
   def setZIndex(zIndex: Double): this.type = js.native
 }
 
+@JSImport("leaflet", "gridLayer")
+@js.native
+object gridLayer extends js.Object {
+  def apply(): GridLayer = js.native
+  def apply(options: GridLayerOptions): GridLayer = js.native
+}
+

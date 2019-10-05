@@ -14,3 +14,11 @@ class Tooltip () extends DivOverlay {
   def setOpacity(`val`: Double): Unit = js.native
 }
 
+@JSImport("leaflet", "tooltip")
+@js.native
+object tooltip extends js.Object {
+  def apply(): Tooltip = js.native
+  def apply(options: TooltipOptions): Tooltip = js.native
+  def apply(options: TooltipOptions, source: Layer): Tooltip = js.native
+}
+

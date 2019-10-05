@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFDataType
-import typings.mfiles.MFilesNs.MFOCRDimensionUnit
+import typings.mfiles.MFiles.MFDataType
+import typings.mfiles.MFiles.MFOCRDimensionUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

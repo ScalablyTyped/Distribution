@@ -1,6 +1,8 @@
 package typings.atOracleOraclejet.ojmoduleDashElementMod
 
 import typings.atOracleOraclejet.Anon_CleanupMode
+import typings.atOracleOraclejet.Anon_PropNameView
+import typings.atOracleOraclejet.Anon_PropNameViewModel
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElement
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetSetPropertyType
@@ -101,12 +103,13 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionstart
 import typings.atOracleOraclejet.atOracleOraclejetStrings.volumechange
 import typings.atOracleOraclejet.atOracleOraclejetStrings.waiting
 import typings.atOracleOraclejet.atOracleOraclejetStrings.wheel
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionEnd
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojTransitionStart
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewConnected
-import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModuleNs.ojViewDisconnected
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionEnd
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojTransitionStart
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewConnected
+import typings.atOracleOraclejet.ojmoduleDashElementMod.ojModule.ojViewDisconnected
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
@@ -1014,5 +1017,14 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
   def setProperty_animation(property: animation, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_config(property: config, value: Anon_CleanupMode): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojmodule-element", "ojModule")
+@js.native
+object ojModule extends js.Object {
+  type ojTransitionEnd = CustomEvent[Anon_PropNameViewModel]
+  type ojTransitionStart = CustomEvent[Anon_PropNameViewModel]
+  type ojViewConnected = CustomEvent[Anon_PropNameViewModel]
+  type ojViewDisconnected = CustomEvent[Anon_PropNameView]
 }
 

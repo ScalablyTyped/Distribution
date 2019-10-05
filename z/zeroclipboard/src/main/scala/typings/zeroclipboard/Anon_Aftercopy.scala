@@ -1,12 +1,12 @@
 package typings.zeroclipboard
 
-import typings.zeroclipboard.ZCNs.EventListenerOrEventListenerObject
-import typings.zeroclipboard.ZCNs.ZeroClipboardAfterCopyEvent
-import typings.zeroclipboard.ZCNs.ZeroClipboardBeforeCopyEvent
-import typings.zeroclipboard.ZCNs.ZeroClipboardCopyEvent
-import typings.zeroclipboard.ZCNs.ZeroClipboardDestroyEvent
-import typings.zeroclipboard.ZCNs.ZeroClipboardErrorEvent
-import typings.zeroclipboard.ZCNs.ZeroClipboardReadyEvent
+import typings.zeroclipboard.ZC.EventListenerOrEventListenerObject
+import typings.zeroclipboard.ZC.ZeroClipboardAfterCopyEvent
+import typings.zeroclipboard.ZC.ZeroClipboardBeforeCopyEvent
+import typings.zeroclipboard.ZC.ZeroClipboardCopyEvent
+import typings.zeroclipboard.ZC.ZeroClipboardDestroyEvent
+import typings.zeroclipboard.ZC.ZeroClipboardErrorEvent
+import typings.zeroclipboard.ZC.ZeroClipboardReadyEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

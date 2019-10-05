@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var BetterCurry: typings.betterDashCurry.BetterCurryModuleNs.BetterCurry = js.native
+  var BetterCurry: typings.betterDashCurry.BetterCurryModule.BetterCurry = js.native
 }
 

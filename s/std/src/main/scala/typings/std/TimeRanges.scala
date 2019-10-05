@@ -14,16 +14,5 @@ trait TimeRanges extends js.Object {
 
 @JSGlobal("TimeRanges")
 @js.native
-class TimeRangesCls () extends TimeRanges {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def end(index: Double): Double = js.native
-  /* CompleteClass */
-  override def start(index: Double): Double = js.native
-}
-
-@JSGlobal("TimeRanges")
-@js.native
 object TimeRanges extends Instantiable0[TimeRanges]
 

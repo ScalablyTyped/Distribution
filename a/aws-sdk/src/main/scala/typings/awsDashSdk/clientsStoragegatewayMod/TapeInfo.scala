@@ -38,7 +38,7 @@ object TapeInfo {
     PoolId: PoolId = null,
     TapeARN: TapeARN = null,
     TapeBarcode: TapeBarcode = null,
-    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
+    TapeSizeInBytes: Int | Double = null,
     TapeStatus: TapeStatus = null
   ): TapeInfo = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object TapeInfo {
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId)
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN)
     if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode)
-    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes)
+    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus)
     __obj.asInstanceOf[TapeInfo]
   }

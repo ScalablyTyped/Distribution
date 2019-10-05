@@ -21,7 +21,5 @@ object ^ extends js.Object {
   var koTemplate: js.Any = js.native
   var registerTemplateEngine: js.Function2[/* ko */ js.Any, /* platform */ String, Unit] = js.native
   var surveyCss: js.Any = js.native
-  def __extends(thisClass: js.Any, baseClass: js.Any): Unit = js.native
-  def getCurrecyCodes(): js.Array[String] = js.native
 }
 

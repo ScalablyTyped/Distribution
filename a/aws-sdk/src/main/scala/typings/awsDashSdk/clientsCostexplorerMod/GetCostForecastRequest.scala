@@ -34,11 +34,11 @@ object GetCostForecastRequest {
     Metric: Metric,
     TimePeriod: DateInterval,
     Filter: Expression = null,
-    PredictionIntervalLevel: js.UndefOr[PredictionIntervalLevel] = js.undefined
+    PredictionIntervalLevel: Int | Double = null
   ): GetCostForecastRequest = {
     val __obj = js.Dynamic.literal(Granularity = Granularity.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any], TimePeriod = TimePeriod)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(PredictionIntervalLevel)) __obj.updateDynamic("PredictionIntervalLevel")(PredictionIntervalLevel)
+    if (PredictionIntervalLevel != null) __obj.updateDynamic("PredictionIntervalLevel")(PredictionIntervalLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCostForecastRequest]
   }
 }

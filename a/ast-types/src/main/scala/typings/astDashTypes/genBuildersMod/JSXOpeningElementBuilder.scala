@@ -6,7 +6,7 @@ import typings.astDashTypes.genKindsMod.JSXIdentifierKind
 import typings.astDashTypes.genKindsMod.JSXMemberExpressionKind
 import typings.astDashTypes.genKindsMod.JSXNamespacedNameKind
 import typings.astDashTypes.genKindsMod.JSXSpreadAttributeKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXOpeningElement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXOpeningElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

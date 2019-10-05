@@ -57,13 +57,13 @@ object UpdateNFSFileShareInput {
     FileShareARN: FileShareARN,
     ClientList: FileShareClientList = null,
     DefaultStorageClass: StorageClass = null,
-    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
+    GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     NFSFileShareDefaults: NFSFileShareDefaults = null,
     ObjectACL: ObjectACL = null,
-    ReadOnly: js.UndefOr[Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[Boolean] = js.undefined,
+    ReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
     Squash: Squash = null
   ): UpdateNFSFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN)

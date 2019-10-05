@@ -1,7 +1,6 @@
 package typings.npmDashName.npmDashNameMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.npmDashName.Anon_Default
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +11,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
   // TODO: remove this in the next major version
-  @JSName("default")
-  var default_Original: Anon_Default = js.native
+  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmName */ js.Any = js.native
   /**
   	Check whether a package/organization name is available (not registered) on npm.
   	An organization name should start with `@` and should not be a scoped package.
@@ -44,37 +42,6 @@ object ^ extends js.Object {
   	*/
   def apply(name: String): js.Promise[Boolean] = js.native
   def apply(name: String, options: Options): js.Promise[Boolean] = js.native
-  /**
-  	Check whether a package/organization name is available (not registered) on npm.
-  	An organization name should start with `@` and should not be a scoped package.
-  	@param name - Name to check.
-  	@returns Whether the given name is available.
-  	@example
-  	```
-  	import npmName = require('npm-name');
-  	(async () => {
-  		// Check a package name
-  		console.log(await npmName('chalk'));
-  		//=> false
-  		// Check an organization name
-  		console.log(await npmName('@ava'));
-  		//=> false
-  		console.log(await npmName('@abc123'));
-  		//=> true
-  		try {
-  			await npmName('_ABC');
-  		} catch (error) {
-  			console.log(error.message);
-  			// Invalid package name: _ABC
-  			// - name cannot start with an underscore
-  			// - name can no longer contain capital letters
-  		}
-  	})();
-  	```
-  	*/
-  // TODO: remove this in the next major version
-  def default(name: String): js.Promise[Boolean] = js.native
-  def default(name: String, options: Options): js.Promise[Boolean] = js.native
   /**
   	Check whether multiple package/organization names are available (not registered) on npm.
   	An organization name should start with `@` and should not be a scoped package.

@@ -1,8 +1,8 @@
 package typings.atPulumiAws.servicediscoveryServiceMod
 
-import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceDnsConfig
-import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceHealthCheckConfig
-import typings.atPulumiAws.typesInputMod.servicediscoveryNs.ServiceHealthCheckCustomConfig
+import typings.atPulumiAws.typesInputMod.servicediscovery.ServiceDnsConfig
+import typings.atPulumiAws.typesInputMod.servicediscovery.ServiceHealthCheckConfig
+import typings.atPulumiAws.typesInputMod.servicediscovery.ServiceHealthCheckCustomConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

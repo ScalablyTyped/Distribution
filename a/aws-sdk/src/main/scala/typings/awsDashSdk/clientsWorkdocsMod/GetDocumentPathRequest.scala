@@ -33,13 +33,13 @@ object GetDocumentPathRequest {
     DocumentId: IdType,
     AuthenticationToken: AuthenticationHeaderType = null,
     Fields: FieldNamesType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
+    Limit: Int | Double = null,
     Marker: PageMarkerType = null
   ): GetDocumentPathRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId)
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
     if (Fields != null) __obj.updateDynamic("Fields")(Fields)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     __obj.asInstanceOf[GetDocumentPathRequest]
   }

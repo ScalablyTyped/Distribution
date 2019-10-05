@@ -1,8 +1,8 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.LogoOptions
-import typings.openlayers.openlayersMod.sourceNs.State
-import typings.openlayers.openlayersMod.tilegridNs.TileGrid
+import typings.openlayers.openlayersMod.olx.LogoOptions
+import typings.openlayers.openlayersMod.source.State
+import typings.openlayers.openlayersMod.tilegrid.TileGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,23 +23,24 @@ trait SourceTileOptions extends js.Object {
 object SourceTileOptions {
   @scala.inline
   def apply(
-    projection: ProjectionLike,
     attributions: AttributionLike = null,
     cacheSize: Int | Double = null,
     extent: Extent = null,
     logo: String | LogoOptions = null,
     opaque: js.UndefOr[Boolean] = js.undefined,
+    projection: ProjectionLike = null,
     state: State = null,
     tileGrid: TileGrid = null,
     tilePixelRatio: Int | Double = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): SourceTileOptions = {
-    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)
     if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])

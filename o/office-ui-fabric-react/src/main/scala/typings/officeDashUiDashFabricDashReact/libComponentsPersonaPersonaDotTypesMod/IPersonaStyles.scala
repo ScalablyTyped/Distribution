@@ -18,16 +18,22 @@ trait IPersonaStyles extends js.Object {
 object IPersonaStyles {
   @scala.inline
   def apply(
-    details: IStyle,
-    optionalText: IStyle,
-    primaryText: IStyle,
-    root: IStyle,
-    secondaryText: IStyle,
-    tertiaryText: IStyle,
-    textContent: IStyle
+    details: IStyle = null,
+    optionalText: IStyle = null,
+    primaryText: IStyle = null,
+    root: IStyle = null,
+    secondaryText: IStyle = null,
+    tertiaryText: IStyle = null,
+    textContent: IStyle = null
   ): IPersonaStyles = {
-    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], optionalText = optionalText.asInstanceOf[js.Any], primaryText = primaryText.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], secondaryText = secondaryText.asInstanceOf[js.Any], tertiaryText = tertiaryText.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (optionalText != null) __obj.updateDynamic("optionalText")(optionalText.asInstanceOf[js.Any])
+    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
+    if (textContent != null) __obj.updateDynamic("textContent")(textContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaStyles]
   }
 }

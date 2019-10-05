@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafIpSetMod
 
-import typings.atPulumiAws.typesInputMod.wafNs.IpSetIpSetDescriptor
+import typings.atPulumiAws.typesInputMod.waf.IpSetIpSetDescriptor
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

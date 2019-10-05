@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object globDashWatcherMod {
   import typings.globDashWatcher.Anon_Complete
-  import typings.node.NodeJSNs.EventEmitter
+  import typings.node.NodeJS.EventEmitter
 
   type AsyncType = EventEmitter | js.Thenable[js.Any] | Anon_Complete
 }

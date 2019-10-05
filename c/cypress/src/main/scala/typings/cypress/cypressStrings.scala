@@ -1,16 +1,16 @@
 package typings.cypress
 
-import typings.cypress.CypressNs.Encodings
-import typings.cypress.CypressNs.HistoryDirection
-import typings.cypress.CypressNs.PositionType
-import typings.cypress.CypressNs.PrevSubject
-import typings.cypress.CypressNs.ViewportOrientation
-import typings.cypress.CypressNs.ViewportPreset
-import typings.cypress.JQueryNs.AjaxNs.ErrorTextStatus
-import typings.cypress.JQueryNs.AjaxNs.SuccessTextStatus
-import typings.cypress.JQueryNs._Duration
-import typings.cypress.MochaNs.Interface
-import typings.cypress.MochaNs.Reporter
+import typings.cypress.Cypress.Encodings
+import typings.cypress.Cypress.HistoryDirection
+import typings.cypress.Cypress.PositionType
+import typings.cypress.Cypress.PrevSubject
+import typings.cypress.Cypress.ViewportOrientation
+import typings.cypress.Cypress.ViewportPreset
+import typings.cypress.JQuery.Ajax.ErrorTextStatus
+import typings.cypress.JQuery.Ajax.SuccessTextStatus
+import typings.cypress.JQuery._Duration
+import typings.cypress.Mocha.Interface
+import typings.cypress.Mocha.Reporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

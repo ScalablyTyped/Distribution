@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersGeoJSONLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoJSONLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GeoJSONLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TimeInfo
+import typings.arcgisDashJsDashApi.__esri.GeoJSONLayer
+import typings.arcgisDashJsDashApi.__esri.GeoJSONLayerProperties
+import typings.arcgisDashJsDashApi.__esri.TimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

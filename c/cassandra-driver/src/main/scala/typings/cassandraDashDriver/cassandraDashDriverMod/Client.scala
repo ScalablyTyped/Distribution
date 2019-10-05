@@ -1,12 +1,13 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.cassandraDashDriver.Anon_Params
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadataNs.ClientState
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadataNs.Metadata
-import typings.cassandraDashDriver.cassandraDashDriverMod.metricsNs.ClientMetrics
-import typings.cassandraDashDriver.cassandraDashDriverMod.typesNs.ResultSet
+import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.ClientState
+import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.Metadata
+import typings.cassandraDashDriver.cassandraDashDriverMod.metrics.ClientMetrics
+import typings.cassandraDashDriver.cassandraDashDriverMod.types.ResultSet
 import typings.node.Buffer
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,7 +51,5 @@ trait Client extends EventEmitter {
 
 @JSImport("cassandra-driver", "Client")
 @js.native
-class ClientCls () extends Client {
-  def this(options: ClientOptions) = this()
-}
+object Client extends TopLevel[ClientStatic]
 

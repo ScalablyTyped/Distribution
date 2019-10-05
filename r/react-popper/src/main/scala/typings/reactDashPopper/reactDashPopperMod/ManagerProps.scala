@@ -11,9 +11,9 @@ trait ManagerProps extends js.Object {
 
 object ManagerProps {
   @scala.inline
-  def apply(children: ReactNode): ManagerProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null): ManagerProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagerProps]
   }
 }

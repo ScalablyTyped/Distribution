@@ -35,7 +35,7 @@ object EventDestinationDefinition {
   @scala.inline
   def apply(
     CloudWatchDestination: CloudWatchDestination = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     KinesisFirehoseDestination: KinesisFirehoseDestination = null,
     MatchingEventTypes: EventTypes = null,
     PinpointDestination: PinpointDestination = null,

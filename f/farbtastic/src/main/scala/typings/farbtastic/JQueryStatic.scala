@@ -1,9 +1,9 @@
 package typings.farbtastic
 
-import typings.farbtastic.JQueryFarbtasticNs.Callback
-import typings.farbtastic.JQueryFarbtasticNs.Farbtastic
-import typings.farbtastic.JQueryFarbtasticNs.Options
-import typings.farbtastic.JQueryFarbtasticNs.Placeholder
+import typings.farbtastic.JQueryFarbtastic.Callback
+import typings.farbtastic.JQueryFarbtastic.Farbtastic
+import typings.farbtastic.JQueryFarbtastic.Options
+import typings.farbtastic.JQueryFarbtastic.Placeholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

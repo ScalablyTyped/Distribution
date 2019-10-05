@@ -36,3 +36,11 @@ object GenericTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "genericTypeAnnotation")
+@js.native
+object genericTypeAnnotation extends js.Object {
+  def apply(): GenericTypeAnnotation = js.native
+  def apply(id: Identifier): GenericTypeAnnotation = js.native
+  def apply(id: Identifier, typeParameters: TypeParameterInstantiation): GenericTypeAnnotation = js.native
+}
+

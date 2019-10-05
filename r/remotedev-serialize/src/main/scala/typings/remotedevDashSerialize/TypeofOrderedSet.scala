@@ -3,12 +3,15 @@ package typings.remotedevDashSerialize
 import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.immutableMod.Collection
 import typings.immutable.immutableMod.OrderedSet
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofOrderedSet extends js.Object {
+  def apply(): OrderedSet[_] = js.native
+  def apply[T](collection: Iterable[T]): OrderedSet[T] = js.native
   def fromKeys(obj: StringDictionary[js.Any]): OrderedSet[String] = js.native
   /**
     * `OrderedSet.fromKeys()` creates a new immutable OrderedSet containing

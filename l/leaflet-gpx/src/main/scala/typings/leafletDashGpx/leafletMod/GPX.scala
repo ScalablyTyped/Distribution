@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("leaflet.GPX")
+@JSImport("leaflet", "GPX")
 @js.native
 class GPX protected ()
   extends FeatureGroup[js.Any] {

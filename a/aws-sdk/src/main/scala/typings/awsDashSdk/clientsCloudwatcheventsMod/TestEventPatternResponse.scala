@@ -13,7 +13,7 @@ trait TestEventPatternResponse extends js.Object {
 
 object TestEventPatternResponse {
   @scala.inline
-  def apply(Result: js.UndefOr[Boolean] = js.undefined): TestEventPatternResponse = {
+  def apply(Result: js.UndefOr[scala.Boolean] = js.undefined): TestEventPatternResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Result)) __obj.updateDynamic("Result")(Result)
     __obj.asInstanceOf[TestEventPatternResponse]

@@ -1,7 +1,7 @@
 package typings.videoDotJs
 
-import typings.videoDotJs.videoDotJsMod.videojsNs.AudioTrackNs.Kind
-import typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Mode
+import typings.videoDotJs.videoDotJsMod.videojs.AudioTrack.Kind
+import typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,11 +81,11 @@ object videoDotJsStrings {
   
   @js.native
   sealed trait captions
-    extends typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
   sealed trait chapters
-    extends typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
   sealed trait clickablecomponent extends js.Object
@@ -98,7 +98,7 @@ object videoDotJsStrings {
   
   @js.native
   sealed trait descriptions
-    extends typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
        with Kind
   
   @js.native
@@ -145,7 +145,7 @@ object videoDotJsStrings {
   
   @js.native
   sealed trait metadata
-    extends typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
   sealed trait modaldialog extends js.Object
@@ -179,7 +179,7 @@ object videoDotJsStrings {
   
   @js.native
   sealed trait subtitles
-    extends typings.videoDotJs.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
   sealed trait text extends js.Object

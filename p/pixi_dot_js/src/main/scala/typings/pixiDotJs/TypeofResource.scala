@@ -1,7 +1,7 @@
 package typings.pixiDotJs
 
-import typings.pixiDotJs.PIXINs.loadersNs.ResourceNs.LOAD_TYPE
-import typings.pixiDotJs.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE
+import typings.pixiDotJs.PIXI.loaders.Resource.LOAD_TYPE
+import typings.pixiDotJs.PIXI.loaders.Resource.XHR_RESPONSE_TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

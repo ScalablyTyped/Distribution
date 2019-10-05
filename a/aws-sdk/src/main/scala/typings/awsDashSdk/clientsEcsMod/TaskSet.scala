@@ -95,16 +95,16 @@ object TaskSet {
   @scala.inline
   def apply(
     clusterArn: String = null,
-    computedDesiredCount: js.UndefOr[Integer] = js.undefined,
+    computedDesiredCount: Int | scala.Double = null,
     createdAt: Timestamp = null,
     externalId: String = null,
     id: String = null,
     launchType: LaunchType = null,
     loadBalancers: LoadBalancers = null,
     networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
+    pendingCount: Int | scala.Double = null,
     platformVersion: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
+    runningCount: Int | scala.Double = null,
     scale: Scale = null,
     serviceArn: String = null,
     serviceRegistries: ServiceRegistries = null,
@@ -118,16 +118,16 @@ object TaskSet {
   ): TaskSet = {
     val __obj = js.Dynamic.literal()
     if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn)
-    if (!js.isUndefined(computedDesiredCount)) __obj.updateDynamic("computedDesiredCount")(computedDesiredCount)
+    if (computedDesiredCount != null) __obj.updateDynamic("computedDesiredCount")(computedDesiredCount.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
     if (externalId != null) __obj.updateDynamic("externalId")(externalId)
     if (id != null) __obj.updateDynamic("id")(id)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers)
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount)
+    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount)
+    if (runningCount != null) __obj.updateDynamic("runningCount")(runningCount.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale)
     if (serviceArn != null) __obj.updateDynamic("serviceArn")(serviceArn)
     if (serviceRegistries != null) __obj.updateDynamic("serviceRegistries")(serviceRegistries)

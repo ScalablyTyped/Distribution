@@ -30,11 +30,11 @@ trait GetAccountResponse extends js.Object {
 object GetAccountResponse {
   @scala.inline
   def apply(
-    DedicatedIpAutoWarmupEnabled: js.UndefOr[Enabled] = js.undefined,
+    DedicatedIpAutoWarmupEnabled: js.UndefOr[Boolean] = js.undefined,
     EnforcementStatus: GeneralEnforcementStatus = null,
-    ProductionAccessEnabled: js.UndefOr[Enabled] = js.undefined,
+    ProductionAccessEnabled: js.UndefOr[Boolean] = js.undefined,
     SendQuota: SendQuota = null,
-    SendingEnabled: js.UndefOr[Enabled] = js.undefined
+    SendingEnabled: js.UndefOr[Boolean] = js.undefined
   ): GetAccountResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DedicatedIpAutoWarmupEnabled)) __obj.updateDynamic("DedicatedIpAutoWarmupEnabled")(DedicatedIpAutoWarmupEnabled)

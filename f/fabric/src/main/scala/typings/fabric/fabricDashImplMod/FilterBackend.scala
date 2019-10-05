@@ -1,5 +1,6 @@
 package typings.fabric.fabricDashImplMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -43,4 +44,9 @@ trait FilterBackend extends js.Object {
   def dispose(): Unit = js.native
   def evictCachesForKey(cacheKey: String): Unit = js.native
 }
+
+@JSImport("fabric/fabric-impl", "filterBackend")
+@js.native
+object filterBackend
+  extends TopLevel[js.UndefOr[FilterBackend]]
 

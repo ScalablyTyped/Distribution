@@ -6,7 +6,7 @@ import typings.astDashTypes.astDashTypesStrings.const
 import typings.astDashTypes.astDashTypesStrings.let
 import typings.astDashTypes.genKindsMod.IdentifierKind
 import typings.astDashTypes.genKindsMod.VariableDeclaratorKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.VariableDeclaration
+import typings.astDashTypes.genNamedTypesMod.namedTypes.VariableDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

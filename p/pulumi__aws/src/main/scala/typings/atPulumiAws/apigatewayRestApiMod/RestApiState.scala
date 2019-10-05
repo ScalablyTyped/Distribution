@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
-import typings.atPulumiAws.typesInputMod.apigatewayNs.RestApiEndpointConfiguration
+import typings.atPulumiAws.typesInputMod.apigateway.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

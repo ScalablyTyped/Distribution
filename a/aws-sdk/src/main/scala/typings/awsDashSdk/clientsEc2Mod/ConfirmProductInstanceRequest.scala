@@ -21,7 +21,7 @@ trait ConfirmProductInstanceRequest extends js.Object {
 
 object ConfirmProductInstanceRequest {
   @scala.inline
-  def apply(InstanceId: String, ProductCode: String, DryRun: js.UndefOr[Boolean] = js.undefined): ConfirmProductInstanceRequest = {
+  def apply(InstanceId: String, ProductCode: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ConfirmProductInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId, ProductCode = ProductCode)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ConfirmProductInstanceRequest]

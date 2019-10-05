@@ -44,14 +44,14 @@ object DescribeConfigurationRevisionResponse {
     Arn: __string = null,
     CreationTime: __timestampIso8601 = null,
     Description: __string = null,
-    Revision: js.UndefOr[__long] = js.undefined,
+    Revision: Int | Double = null,
     ServerProperties: __blob = null
   ): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision)
+    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
     if (ServerProperties != null) __obj.updateDynamic("ServerProperties")(ServerProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]
   }

@@ -16,13 +16,14 @@ trait ReadMoreProps extends js.Object {
 object ReadMoreProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     numberOfLines: Double,
     renderRevealedFooter: js.Function0[Unit] => ReactNode,
     renderTruncatedFooter: js.Function0[Unit] => ReactNode,
+    children: ReactNode = null,
     onReady: () => Unit = null
   ): ReadMoreProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], numberOfLines = numberOfLines, renderRevealedFooter = js.Any.fromFunction1(renderRevealedFooter), renderTruncatedFooter = js.Any.fromFunction1(renderTruncatedFooter))
+    val __obj = js.Dynamic.literal(numberOfLines = numberOfLines, renderRevealedFooter = js.Any.fromFunction1(renderRevealedFooter), renderTruncatedFooter = js.Any.fromFunction1(renderTruncatedFooter))
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
     __obj.asInstanceOf[ReadMoreProps]
   }

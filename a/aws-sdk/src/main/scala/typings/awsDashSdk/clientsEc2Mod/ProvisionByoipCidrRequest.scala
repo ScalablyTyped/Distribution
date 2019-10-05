@@ -29,7 +29,7 @@ object ProvisionByoipCidrRequest {
     Cidr: String,
     CidrAuthorizationContext: CidrAuthorizationContext = null,
     Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr)
     if (CidrAuthorizationContext != null) __obj.updateDynamic("CidrAuthorizationContext")(CidrAuthorizationContext)

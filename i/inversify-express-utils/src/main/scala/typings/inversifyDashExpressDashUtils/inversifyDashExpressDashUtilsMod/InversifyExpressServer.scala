@@ -2,9 +2,9 @@ package typings.inversifyDashExpressDashUtils.inversifyDashExpressDashUtilsMod
 
 import typings.express.expressMod.Application
 import typings.express.expressMod.Router
-import typings.inversify.dtsInterfacesInterfacesMod.interfacesNs.Container
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
 import typings.inversifyDashExpressDashUtils.Anon_AuthProvider
-import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfacesNs.RoutingConfig
+import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.RoutingConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

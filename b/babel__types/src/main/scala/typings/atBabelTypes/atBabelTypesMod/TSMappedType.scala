@@ -46,3 +46,16 @@ object TSMappedType {
   }
 }
 
+@JSImport("@babel/types", "tsMappedType")
+@js.native
+object tsMappedType extends js.Object {
+  def apply(typeParameter: TSTypeParameter): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: Null, optional: Boolean): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: Null, optional: Boolean, readonly: Boolean): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: Null, optional: Null, readonly: Boolean): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: TSType): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: TSType, optional: Boolean): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: TSType, optional: Boolean, readonly: Boolean): TSMappedType = js.native
+  def apply(typeParameter: TSTypeParameter, typeAnnotation: TSType, optional: Null, readonly: Boolean): TSMappedType = js.native
+}
+

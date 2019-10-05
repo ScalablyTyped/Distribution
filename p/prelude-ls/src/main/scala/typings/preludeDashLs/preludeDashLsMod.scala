@@ -273,9 +273,8 @@ object preludeDashLsMod extends js.Object {
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]]): js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]] = js.native
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[C]] = js.native
   def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A], ys: js.Array[B]): js.Array[C] = js.native
-  @JSName("Obj")
   @js.native
-  object ObjNs extends js.Object {
+  object Obj extends js.Object {
     def compact[A](`object`: NumberDictionary[A]): NumberDictionary[A] = js.native
     def compact[A](`object`: StringDictionary[A]): StringDictionary[A] = js.native
     def each[A](f: js.Function1[/* x */ A, Unit]): js.Function1[/* object */ StringDictionary[A], StringDictionary[A]] = js.native
@@ -302,9 +301,8 @@ object preludeDashLsMod extends js.Object {
     def reject[A](f: js.Function1[/* x */ A, Boolean], `object`: StringDictionary[A]): StringDictionary[A] = js.native
   }
   
-  @JSName("Str")
   @js.native
-  object StrNs extends js.Object {
+  object Str extends js.Object {
     def breakStr(f: js.Function1[/* str */ String, Boolean]): js.Function1[/* str */ String, js.Tuple2[String, String]] = js.native
     def breakStr(f: js.Function1[/* str */ String, Boolean], str: String): js.Tuple2[String, String] = js.native
     def drop(n: Double): js.Function1[/* str */ String, String] = js.native

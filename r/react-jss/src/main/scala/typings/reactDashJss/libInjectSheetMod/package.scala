@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object libInjectSheetMod {
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSXNs.LibraryManagedAttributes
+  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
   import typings.reactDashJss.Anon_Classes
   import typings.std.Exclude
   import typings.std.Pick

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.redshiftSecurityGroupMod
 
-import typings.atPulumiAws.typesInputMod.redshiftNs.SecurityGroupIngress
+import typings.atPulumiAws.typesInputMod.redshift.SecurityGroupIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

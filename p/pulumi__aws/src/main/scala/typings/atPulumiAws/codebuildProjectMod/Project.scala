@@ -1,14 +1,14 @@
 package typings.atPulumiAws.codebuildProjectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectArtifacts
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectCache
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectEnvironment
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectLogsConfig
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSecondaryArtifact
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSecondarySource
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectSource
-import typings.atPulumiAws.typesOutputMod.codebuildNs.ProjectVpcConfig
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectArtifacts
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectCache
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectEnvironment
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectLogsConfig
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectSecondaryArtifact
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectSecondarySource
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectSource
+import typings.atPulumiAws.typesOutputMod.codebuild.ProjectVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

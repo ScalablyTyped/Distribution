@@ -46,14 +46,72 @@ object Properties {
   def apply[TLength](
     ObsoleteProperties: ObsoleteProperties[TLength] = null,
     StandardProperties: StandardProperties[TLength] = null,
-    SvgProperties: SvgProperties[TLength] = null,
-    VendorProperties: VendorProperties[TLength] = null
+    VendorProperties: VendorProperties[TLength] = null,
+    alignmentBaseline: AlignmentBaselineProperty = null,
+    baselineShift: BaselineShiftProperty[TLength] = null,
+    clipRule: ClipRuleProperty = null,
+    colorInterpolation: ColorInterpolationProperty = null,
+    colorRendering: ColorRenderingProperty = null,
+    dominantBaseline: DominantBaselineProperty = null,
+    fill: FillProperty = null,
+    fillOpacity: GlobalsNumber = null,
+    fillRule: FillRuleProperty = null,
+    floodColor: FloodColorProperty = null,
+    floodOpacity: GlobalsNumber = null,
+    glyphOrientationVertical: GlyphOrientationVerticalProperty = null,
+    lightingColor: LightingColorProperty = null,
+    marker: MarkerProperty = null,
+    markerEnd: MarkerEndProperty = null,
+    markerMid: MarkerMidProperty = null,
+    markerStart: MarkerStartProperty = null,
+    shapeRendering: ShapeRenderingProperty = null,
+    stopColor: StopColorProperty = null,
+    stopOpacity: GlobalsNumber = null,
+    stroke: StrokeProperty = null,
+    strokeDasharray: StrokeDasharrayProperty[TLength] = null,
+    strokeDashoffset: StrokeDashoffsetProperty[TLength] = null,
+    strokeLinecap: StrokeLinecapProperty = null,
+    strokeLinejoin: StrokeLinejoinProperty = null,
+    strokeMiterlimit: GlobalsNumber = null,
+    strokeOpacity: GlobalsNumber = null,
+    strokeWidth: StrokeWidthProperty[TLength] = null,
+    textAnchor: TextAnchorProperty = null,
+    vectorEffect: VectorEffectProperty = null
   ): Properties[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoleteProperties)
     js.Dynamic.global.Object.assign(__obj, StandardProperties)
-    js.Dynamic.global.Object.assign(__obj, SvgProperties)
     js.Dynamic.global.Object.assign(__obj, VendorProperties)
+    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
+    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
+    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
+    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation)
+    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering)
+    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule)
+    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
+    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
+    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
+    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
+    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
+    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
+    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering)
+    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
+    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
+    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
+    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
+    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin)
+    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor)
+    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect)
     __obj.asInstanceOf[Properties[TLength]]
   }
 }

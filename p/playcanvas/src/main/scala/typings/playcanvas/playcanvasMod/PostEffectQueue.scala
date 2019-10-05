@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "PostEffectQueue")
 @js.native
 class PostEffectQueue protected ()
-  extends typings.playcanvas.pcNs.PostEffectQueue {
-  def this(app: typings.playcanvas.pcNs.Application, camera: typings.playcanvas.pcNs.CameraComponent) = this()
+  extends typings.playcanvas.pc.PostEffectQueue {
+  def this(app: typings.playcanvas.pc.Application, camera: typings.playcanvas.pc.CameraComponent) = this()
 }
 

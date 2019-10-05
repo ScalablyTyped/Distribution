@@ -2,7 +2,7 @@ package typings.rmcDashTabs.libDefaultTabBarMod
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
-import typings.rmcDashTabs.libModelsMod.ModelsNs.TabData
+import typings.rmcDashTabs.libModelsMod.Models.TabData
 import typings.rmcDashTabs.libPropsTypeMod.TabBarPropsType
 import typings.rmcDashTabs.rmcDashTabsStrings.bottom
 import typings.rmcDashTabs.rmcDashTabsStrings.left

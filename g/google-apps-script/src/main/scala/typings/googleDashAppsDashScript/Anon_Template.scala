@@ -1,6 +1,6 @@
 package typings.googleDashAppsDashScript
 
-import typings.googleDashAppsDashScript.GoogleAppsScriptNs.SpreadsheetNs.Sheet
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Sheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

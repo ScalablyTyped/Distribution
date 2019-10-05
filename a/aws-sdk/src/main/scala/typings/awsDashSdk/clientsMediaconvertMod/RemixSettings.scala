@@ -23,13 +23,13 @@ object RemixSettings {
   @scala.inline
   def apply(
     ChannelMapping: ChannelMapping = null,
-    ChannelsIn: js.UndefOr[__integerMin1Max64] = js.undefined,
-    ChannelsOut: js.UndefOr[__integerMin1Max64] = js.undefined
+    ChannelsIn: Int | Double = null,
+    ChannelsOut: Int | Double = null
   ): RemixSettings = {
     val __obj = js.Dynamic.literal()
     if (ChannelMapping != null) __obj.updateDynamic("ChannelMapping")(ChannelMapping)
-    if (!js.isUndefined(ChannelsIn)) __obj.updateDynamic("ChannelsIn")(ChannelsIn)
-    if (!js.isUndefined(ChannelsOut)) __obj.updateDynamic("ChannelsOut")(ChannelsOut)
+    if (ChannelsIn != null) __obj.updateDynamic("ChannelsIn")(ChannelsIn.asInstanceOf[js.Any])
+    if (ChannelsOut != null) __obj.updateDynamic("ChannelsOut")(ChannelsOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemixSettings]
   }
 }

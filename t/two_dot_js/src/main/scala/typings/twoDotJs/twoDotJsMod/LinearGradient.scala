@@ -1,6 +1,6 @@
 package typings.twoDotJs.twoDotJsMod
 
-import typings.twoDotJs.twoDotJsMod.UtilsNs.Collection
+import typings.twoDotJs.twoDotJsMod.Utils.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

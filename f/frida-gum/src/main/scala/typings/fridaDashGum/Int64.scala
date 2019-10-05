@@ -92,3 +92,13 @@ class Int64 protected ()
   def xor(v: Int64): Int64 = js.native
 }
 
+@JSGlobal("int64")
+@js.native
+object int64 extends js.Object {
+  /**
+    * Short-hand for `new Int64(value)`.
+    */
+  def apply(value: String): Int64 = js.native
+  def apply(value: Double): Int64 = js.native
+}
+

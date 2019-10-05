@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.estree.estreeMod.Node because Already inherited
 - typings.estree.estreeMod.Expression because Already inherited */ trait NewExpression
   extends BaseCallExpression
      with CallExpression {

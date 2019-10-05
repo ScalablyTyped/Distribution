@@ -39,10 +39,10 @@ object CreateCsvClassifierRequest {
   @scala.inline
   def apply(
     Name: NameString,
-    AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined,
+    AllowSingleColumn: js.UndefOr[scala.Boolean] = js.undefined,
     ContainsHeader: CsvHeaderOption = null,
     Delimiter: CsvColumnDelimiter = null,
-    DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined,
+    DisableValueTrimming: js.UndefOr[scala.Boolean] = js.undefined,
     Header: CsvHeader = null,
     QuoteSymbol: CsvQuoteSymbol = null
   ): CreateCsvClassifierRequest = {

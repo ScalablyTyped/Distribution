@@ -1,8 +1,8 @@
 package typings.atGoogleDashCloudFirestore
 
-import typings.atGoogleDashCloudFirestore.FirebaseFirestoreNs.DocumentChangeType
-import typings.atGoogleDashCloudFirestore.FirebaseFirestoreNs.OrderByDirection
-import typings.atGoogleDashCloudFirestore.FirebaseFirestoreNs.WhereFilterOp
+import typings.atGoogleDashCloudFirestore.FirebaseFirestore.DocumentChangeType
+import typings.atGoogleDashCloudFirestore.FirebaseFirestore.OrderByDirection
+import typings.atGoogleDashCloudFirestore.FirebaseFirestore.WhereFilterOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atJupyterlabServices.atJupyterlabServicesMod
 
-import typings.atJupyterlabServices.libNbconvertMod.NbConvertManagerNs.IOptions
+import typings.atJupyterlabServices.libNbconvertMod.NbConvertManager.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,7 +26,7 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(
-    ConsoleAccess: js.UndefOr[__boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
     Groups: __listOf__string = null,
     Password: __string = null,
     Username: __string = null

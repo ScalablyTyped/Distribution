@@ -1,6 +1,7 @@
 package typings.activexDashInterop
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +12,8 @@ trait ActiveXObject
       /* progid */ String, 
       /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[keyof activex-interop.ActiveXObjectNameMap] */ js.Any
     ]
+
+@JSGlobal("ActiveXObject")
+@js.native
+object ActiveXObject extends TopLevel[ActiveXObject]
 

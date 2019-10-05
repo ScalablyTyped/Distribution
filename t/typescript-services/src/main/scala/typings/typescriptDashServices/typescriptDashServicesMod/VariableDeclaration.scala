@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "VariableDeclaration")
 @js.native
 class VariableDeclaration protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.VariableDeclaration {
-  def this(declarators: typings.typescriptDashServices.TypeScriptNs.ISeparatedSyntaxList2) = this()
+  extends typings.typescriptDashServices.TypeScript.VariableDeclaration {
+  def this(declarators: typings.typescriptDashServices.TypeScript.ISeparatedSyntaxList2) = this()
 }
 

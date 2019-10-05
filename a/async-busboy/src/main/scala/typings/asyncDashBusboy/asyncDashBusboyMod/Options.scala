@@ -1,8 +1,8 @@
 package typings.asyncDashBusboy.asyncDashBusboyMod
 
 import typings.busboy.Anon_FieldNameSize
-import typings.busboy.busboyNs.BusboyConfig
-import typings.node.NodeJSNs.ReadableStream
+import typings.busboy.busboy.BusboyConfig
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -51,7 +51,7 @@ object GlobalCluster {
   @scala.inline
   def apply(
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     GlobalClusterArn: String = null,
@@ -59,7 +59,7 @@ object GlobalCluster {
     GlobalClusterMembers: GlobalClusterMemberList = null,
     GlobalClusterResourceId: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
   ): GlobalCluster = {
     val __obj = js.Dynamic.literal()
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)

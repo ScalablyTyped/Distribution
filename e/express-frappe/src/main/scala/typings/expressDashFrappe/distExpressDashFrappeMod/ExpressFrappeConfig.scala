@@ -7,6 +7,10 @@ import typings.expressDashFrappe.Anon_Json
 import typings.expressDashFrappe.Anon_Options
 import typings.expressDashRouters.distExpressDashRoutersMod.RouteConfig
 import typings.expressDashRouters.distExpressDashRoutersMod.RouteConfigAlternative
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +31,7 @@ object ExpressFrappeConfig {
   def apply(
     bodyParser: Boolean | Anon_Json = null,
     cors: Boolean | CorsOptions = null,
-    errorHandler: ErrorRequestHandler = null,
+    errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
     io: ExpressFrappeSocketIOConfig = null,
     middleware: js.Array[RequestHandler] = null,
     morgan: js.UndefOr[Boolean] = js.undefined,
@@ -37,7 +41,7 @@ object ExpressFrappeConfig {
     val __obj = js.Dynamic.literal()
     if (bodyParser != null) __obj.updateDynamic("bodyParser")(bodyParser.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction4(errorHandler))
     if (io != null) __obj.updateDynamic("io")(io)
     if (middleware != null) __obj.updateDynamic("middleware")(middleware)
     if (!js.isUndefined(morgan)) __obj.updateDynamic("morgan")(morgan)

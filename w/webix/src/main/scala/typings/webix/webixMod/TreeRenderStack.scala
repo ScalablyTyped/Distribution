@@ -1,5 +1,6 @@
 package typings.webix.webixMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,4 +13,8 @@ trait TreeRenderStack extends js.Object {
   def render(id: String, data: js.Any, `type`: String): Unit = js.native
   def render(id: Double, data: js.Any, `type`: String): Unit = js.native
 }
+
+@JSImport("webix", "TreeRenderStack")
+@js.native
+object TreeRenderStack extends TopLevel[TreeRenderStack]
 

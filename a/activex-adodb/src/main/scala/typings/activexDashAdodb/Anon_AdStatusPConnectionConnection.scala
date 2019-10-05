@@ -1,7 +1,7 @@
 package typings.activexDashAdodb
 
-import typings.activexDashAdodb.ADODBNs.Connection
-import typings.activexDashAdodb.ADODBNs.EventStatusEnum
+import typings.activexDashAdodb.ADODB.Connection
+import typings.activexDashAdodb.ADODB.EventStatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

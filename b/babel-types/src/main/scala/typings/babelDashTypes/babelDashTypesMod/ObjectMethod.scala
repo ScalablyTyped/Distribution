@@ -69,3 +69,9 @@ object ObjectMethod {
   }
 }
 
+@JSImport("babel-types", "objectMethod")
+@js.native
+object objectMethod extends js.Object {
+  def apply(): ObjectMethod = js.native
+}
+

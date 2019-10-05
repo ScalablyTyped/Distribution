@@ -21,9 +21,9 @@ trait DescribeJobExecutionRequest extends js.Object {
 
 object DescribeJobExecutionRequest {
   @scala.inline
-  def apply(jobId: JobId, thingName: ThingName, executionNumber: js.UndefOr[ExecutionNumber] = js.undefined): DescribeJobExecutionRequest = {
+  def apply(jobId: JobId, thingName: ThingName, executionNumber: Int | Double = null): DescribeJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId, thingName = thingName)
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber)
+    if (executionNumber != null) __obj.updateDynamic("executionNumber")(executionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJobExecutionRequest]
   }
 }

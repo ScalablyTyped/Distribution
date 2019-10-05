@@ -11,3 +11,9 @@ class Pool[T, S] () extends Observable[T, S] {
   def unplug(obs: Observable[T, S]): this.type = js.native
 }
 
+@JSImport("kefir", "pool")
+@js.native
+object pool extends js.Object {
+  def apply[T, S](): Pool[T, S] = js.native
+}
+

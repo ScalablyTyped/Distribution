@@ -1,7 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsTabsTabMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

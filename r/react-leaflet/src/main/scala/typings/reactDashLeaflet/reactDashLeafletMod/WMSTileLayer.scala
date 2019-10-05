@@ -1,6 +1,6 @@
 package typings.reactDashLeaflet.reactDashLeafletMod
 
-import typings.leaflet.leafletMod.TileLayerNs.WMS
+import typings.leaflet.leafletMod.TileLayer.WMS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

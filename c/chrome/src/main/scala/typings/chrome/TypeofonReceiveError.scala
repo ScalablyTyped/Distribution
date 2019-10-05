@@ -1,6 +1,6 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.serialNs.onReceiveErrorNs.OnReceiveErrorInfo
+import typings.chrome.chrome.serial.onReceiveError.OnReceiveErrorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

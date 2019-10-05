@@ -1,0 +1,21 @@
+package typings.atCarbonType.atCarbonTypeMod
+
+import typings.atCarbonType.Anon_FontFamily
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@carbon/type", "expressiveHeading05")
+@js.native
+object expressiveHeading05 extends js.Object {
+  var `@media (min-width: 42rem)`: Anon_FontFamily = js.native
+  var `@media (min-width: 66rem)`: Anon_FontFamily = js.native
+  var `@media (min-width: 82rem)`: Anon_FontFamily = js.native
+  var `@media (min-width: 99rem)`: Anon_FontFamily = js.native
+  var fontFamily: String = js.native
+  var fontSize: String = js.native
+  var fontWeight: Double = js.native
+  var letterSpacing: Double = js.native
+  var lineHeight: String = js.native
+}
+

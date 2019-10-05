@@ -19,11 +19,11 @@ object ActivityActionObject {
   def apply[TContext, TEvent /* <: EventObject */](
     activity: ActivityDefinition[TContext, TEvent],
     `type`: Start | Stop,
-    exec: ActionFunction[TContext, TEvent] = null
+    exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): ActivityActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(activity = activity)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[ActivityActionObject[TContext, TEvent]]
   }
 }

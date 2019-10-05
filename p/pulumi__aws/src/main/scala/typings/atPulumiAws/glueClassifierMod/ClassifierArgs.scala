@@ -1,8 +1,8 @@
 package typings.atPulumiAws.glueClassifierMod
 
-import typings.atPulumiAws.typesInputMod.glueNs.ClassifierGrokClassifier
-import typings.atPulumiAws.typesInputMod.glueNs.ClassifierJsonClassifier
-import typings.atPulumiAws.typesInputMod.glueNs.ClassifierXmlClassifier
+import typings.atPulumiAws.typesInputMod.glue.ClassifierGrokClassifier
+import typings.atPulumiAws.typesInputMod.glue.ClassifierJsonClassifier
+import typings.atPulumiAws.typesInputMod.glue.ClassifierXmlClassifier
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

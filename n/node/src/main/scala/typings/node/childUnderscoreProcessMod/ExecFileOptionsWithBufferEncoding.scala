@@ -1,6 +1,6 @@
 package typings.node.childUnderscoreProcessMod
 
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import typings.node.nodeStrings.buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

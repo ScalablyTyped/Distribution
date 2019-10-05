@@ -1,6 +1,6 @@
 package typings.onesignalDashCordovaDashPlugin
 
-import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPluginNs.OSLogLevel
+import typings.onesignalDashCordovaDashPlugin.OneSignalCordovaPlugin.OSLogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

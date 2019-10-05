@@ -1,6 +1,6 @@
 package typings.atJupyterlabStatusbar.atJupyterlabStatusbarMod
 
-import typings.atJupyterlabStatusbar.libComponentsHoverMod.PopupNs.IOptions
+import typings.atJupyterlabStatusbar.libComponentsHoverMod.Popup.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

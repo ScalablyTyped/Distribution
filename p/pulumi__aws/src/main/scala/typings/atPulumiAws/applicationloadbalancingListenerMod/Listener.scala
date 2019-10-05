@@ -1,6 +1,6 @@
 package typings.atPulumiAws.applicationloadbalancingListenerMod
 
-import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.ListenerDefaultAction
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancing.ListenerDefaultAction
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

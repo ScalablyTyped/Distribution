@@ -57,3 +57,9 @@ class Color protected () extends js.Object {
   def tweenTo(to: Color, pos: Double): ColorString = js.native
 }
 
+@JSImport("highcharts", "color")
+@js.native
+object color extends js.Object {
+  def apply(input: ColorType): Color = js.native
+}
+

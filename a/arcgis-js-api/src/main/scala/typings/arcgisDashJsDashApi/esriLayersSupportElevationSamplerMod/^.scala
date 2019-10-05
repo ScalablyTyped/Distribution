@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportElevationSamplerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ElevationSamplerConstructor
+import typings.arcgisDashJsDashApi.__esri.ElevationSamplerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

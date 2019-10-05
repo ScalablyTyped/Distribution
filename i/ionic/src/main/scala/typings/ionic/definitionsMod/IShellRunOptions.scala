@@ -1,7 +1,7 @@
 package typings.ionic.definitionsMod
 
-import typings.node.NodeJSNs.ProcessEnv
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.WritableStream
 import typings.node.childUnderscoreProcessMod.StdioOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

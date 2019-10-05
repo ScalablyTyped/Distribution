@@ -3,7 +3,7 @@ package typings.reactDashBigDashCalendar
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

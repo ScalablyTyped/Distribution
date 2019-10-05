@@ -1,6 +1,6 @@
 package typings.seamless
 
-import typings.seamless.SeamlessNs.Static
+import typings.seamless.Seamless.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

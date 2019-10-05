@@ -25,16 +25,16 @@ object MapContextProps {
     eventManager: EventManager = null,
     map: Map = null,
     mapContainer: HTMLElement = null,
-    onViewStateChange: ContextViewStateChangeHandler = null,
-    onViewportChange: ContextViewportChangeHandler = null,
+    onViewStateChange: /* info */ ContextViewStateChangeInfo => Unit = null,
+    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     viewport: typings.viewportDashMercatorDashProject.viewportDashMercatorDashProjectMod.default = null
   ): MapContextProps = {
     val __obj = js.Dynamic.literal(isDragging = isDragging)
     if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager)
     if (map != null) __obj.updateDynamic("map")(map)
     if (mapContainer != null) __obj.updateDynamic("mapContainer")(mapContainer)
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (viewport != null) __obj.updateDynamic("viewport")(viewport)
     __obj.asInstanceOf[MapContextProps]
   }

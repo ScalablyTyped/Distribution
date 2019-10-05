@@ -11,10 +11,10 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.OptionContext
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.OptionsKeys
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojradiosetMod.ojRadiosetNs.ojAnimateStart
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.OptionContext
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.OptionsKeys
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.ojAnimateEnd
+import typings.atOracleOraclejet.ojradiosetMod.ojRadioset.ojAnimateStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

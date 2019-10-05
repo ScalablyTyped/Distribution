@@ -7,7 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.webicon.iconOptionsDownloadableMod.Downloadable because var conflicts: iconIdParser. Inlined url, uri- typings.webicon.iconOptionsSizeableOptionsMod.SizeableOptions because var conflicts: iconSize. Inlined size, svgIconSize */ trait IconSetOptions extends SvgIcon {
+- typings.webicon.iconIconMod.Icon because Already inherited
+- typings.webicon.iconSizeableMod.Sizeable because Already inherited
+- typings.webicon.iconOptionsDownloadableMod.Downloadable because var conflicts: iconIdParser. Inlined url, uri
+- typings.webicon.iconOptionsSizeableOptionsMod.SizeableOptions because var conflicts: iconSize. Inlined size, svgIconSize */ trait IconSetOptions extends SvgIcon {
   /**
     * A value indicating whether the icons are loaded separately.
     */

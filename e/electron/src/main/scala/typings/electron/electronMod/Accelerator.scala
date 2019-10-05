@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "Accelerator")
 @js.native
 class Accelerator ()
-  extends typings.electron.ElectronNs.Accelerator
+  extends typings.electron.Electron.Accelerator
 

@@ -39,3 +39,15 @@ object UpdateExpression {
   }
 }
 
+@JSImport("babel-types", "updateExpression")
+@js.native
+object updateExpression extends js.Object {
+  def apply(): UpdateExpression = js.native
+  def apply(operator: `++`): UpdateExpression = js.native
+  def apply(operator: `++`, argument: Expression): UpdateExpression = js.native
+  def apply(operator: `++`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
+  def apply(operator: `--`): UpdateExpression = js.native
+  def apply(operator: `--`, argument: Expression): UpdateExpression = js.native
+  def apply(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
+}
+

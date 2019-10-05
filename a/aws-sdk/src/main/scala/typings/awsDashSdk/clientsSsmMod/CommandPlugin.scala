@@ -63,7 +63,7 @@ object CommandPlugin {
     OutputS3BucketName: S3BucketName = null,
     OutputS3KeyPrefix: S3KeyPrefix = null,
     OutputS3Region: S3Region = null,
-    ResponseCode: js.UndefOr[ResponseCode] = js.undefined,
+    ResponseCode: Int | Double = null,
     ResponseFinishDateTime: DateTime = null,
     ResponseStartDateTime: DateTime = null,
     StandardErrorUrl: Url = null,
@@ -77,7 +77,7 @@ object CommandPlugin {
     if (OutputS3BucketName != null) __obj.updateDynamic("OutputS3BucketName")(OutputS3BucketName)
     if (OutputS3KeyPrefix != null) __obj.updateDynamic("OutputS3KeyPrefix")(OutputS3KeyPrefix)
     if (OutputS3Region != null) __obj.updateDynamic("OutputS3Region")(OutputS3Region)
-    if (!js.isUndefined(ResponseCode)) __obj.updateDynamic("ResponseCode")(ResponseCode)
+    if (ResponseCode != null) __obj.updateDynamic("ResponseCode")(ResponseCode.asInstanceOf[js.Any])
     if (ResponseFinishDateTime != null) __obj.updateDynamic("ResponseFinishDateTime")(ResponseFinishDateTime)
     if (ResponseStartDateTime != null) __obj.updateDynamic("ResponseStartDateTime")(ResponseStartDateTime)
     if (StandardErrorUrl != null) __obj.updateDynamic("StandardErrorUrl")(StandardErrorUrl)

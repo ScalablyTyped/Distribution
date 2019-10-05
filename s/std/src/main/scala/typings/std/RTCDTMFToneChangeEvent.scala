@@ -13,12 +13,6 @@ trait RTCDTMFToneChangeEvent extends Event {
 
 @JSGlobal("RTCDTMFToneChangeEvent")
 @js.native
-class RTCDTMFToneChangeEventCls protected () extends RTCDTMFToneChangeEvent {
-  def this(`type`: java.lang.String, eventInitDict: RTCDTMFToneChangeEventInit) = this()
-}
-
-@JSGlobal("RTCDTMFToneChangeEvent")
-@js.native
 object RTCDTMFToneChangeEvent
   extends Instantiable2[
       /* type */ java.lang.String, 

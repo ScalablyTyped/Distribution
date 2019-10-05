@@ -3,7 +3,7 @@ package typings.astDashTypes.genBuildersMod
 import typings.astDashTypes.Anon_CommentsKind
 import typings.astDashTypes.astDashTypesStrings.minus
 import typings.astDashTypes.astDashTypesStrings.plus
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.Variance
+import typings.astDashTypes.genNamedTypesMod.namedTypes.Variance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

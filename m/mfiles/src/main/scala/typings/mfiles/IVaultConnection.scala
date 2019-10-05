@@ -1,7 +1,7 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFAuthType
-import typings.mfiles.MFilesNs.MFVaultConnectionTestResult
+import typings.mfiles.MFiles.MFAuthType
+import typings.mfiles.MFiles.MFVaultConnectionTestResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

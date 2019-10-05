@@ -1,7 +1,7 @@
 package typings.atPulumiAws.lambdaLayerVersionMod
 
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Archive
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions

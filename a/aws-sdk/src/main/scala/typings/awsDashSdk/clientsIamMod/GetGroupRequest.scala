@@ -21,14 +21,10 @@ trait GetGroupRequest extends js.Object {
 
 object GetGroupRequest {
   @scala.inline
-  def apply(
-    GroupName: groupNameType,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): GetGroupRequest = {
+  def apply(GroupName: groupNameType, Marker: markerType = null, MaxItems: Int | Double = null): GetGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems)
+    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupRequest]
   }
 }

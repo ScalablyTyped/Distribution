@@ -56,7 +56,7 @@ object OpsItemSummary {
     LastModifiedTime: DateTime = null,
     OperationalData: OpsItemOperationalData = null,
     OpsItemId: OpsItemId = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
+    Priority: Int | Double = null,
     Source: OpsItemSource = null,
     Status: OpsItemStatus = null,
     Title: OpsItemTitle = null
@@ -68,7 +68,7 @@ object OpsItemSummary {
     if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime)
     if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData)
     if (OpsItemId != null) __obj.updateDynamic("OpsItemId")(OpsItemId)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Source != null) __obj.updateDynamic("Source")(Source)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title)

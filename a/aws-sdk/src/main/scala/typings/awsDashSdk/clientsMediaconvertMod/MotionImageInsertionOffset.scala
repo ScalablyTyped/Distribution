@@ -17,13 +17,10 @@ trait MotionImageInsertionOffset extends js.Object {
 
 object MotionImageInsertionOffset {
   @scala.inline
-  def apply(
-    ImageX: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
-    ImageY: js.UndefOr[__integerMin0Max2147483647] = js.undefined
-  ): MotionImageInsertionOffset = {
+  def apply(ImageX: Int | Double = null, ImageY: Int | Double = null): MotionImageInsertionOffset = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ImageX)) __obj.updateDynamic("ImageX")(ImageX)
-    if (!js.isUndefined(ImageY)) __obj.updateDynamic("ImageY")(ImageY)
+    if (ImageX != null) __obj.updateDynamic("ImageX")(ImageX.asInstanceOf[js.Any])
+    if (ImageY != null) __obj.updateDynamic("ImageY")(ImageY.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionImageInsertionOffset]
   }
 }

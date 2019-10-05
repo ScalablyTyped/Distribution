@@ -1,8 +1,8 @@
 package typings.activexDashMshtml
 
-import typings.activexDashMshtml.MSHTMLNs.CTemplatePrinter
-import typings.activexDashMshtml.MSHTMLNs.HTMLDocument
-import typings.activexDashMshtml.MSHTMLNs.Scriptlet
+import typings.activexDashMshtml.MSHTML.CTemplatePrinter
+import typings.activexDashMshtml.MSHTML.HTMLDocument
+import typings.activexDashMshtml.MSHTML.Scriptlet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

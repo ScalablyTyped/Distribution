@@ -1,12 +1,12 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.socketNs.AcceptInfo
-import typings.chrome.chromeNs.socketNs.CreateInfo
-import typings.chrome.chromeNs.socketNs.NetworkInterface
-import typings.chrome.chromeNs.socketNs.ReadInfo
-import typings.chrome.chromeNs.socketNs.RecvFromInfo
-import typings.chrome.chromeNs.socketNs.SocketInfo
-import typings.chrome.chromeNs.socketNs.WriteInfo
+import typings.chrome.chrome.socket.AcceptInfo
+import typings.chrome.chrome.socket.CreateInfo
+import typings.chrome.chrome.socket.NetworkInterface
+import typings.chrome.chrome.socket.ReadInfo
+import typings.chrome.chrome.socket.RecvFromInfo
+import typings.chrome.chrome.socket.SocketInfo
+import typings.chrome.chrome.socket.WriteInfo
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -97,36 +97,36 @@ object ContainerDetail {
     command: StringList = null,
     containerInstanceArn: String = null,
     environment: EnvironmentVariables = null,
-    exitCode: js.UndefOr[Integer] = js.undefined,
+    exitCode: Int | Double = null,
     image: String = null,
     instanceType: String = null,
     jobRoleArn: String = null,
     linuxParameters: LinuxParameters = null,
     logStreamName: String = null,
-    memory: js.UndefOr[Integer] = js.undefined,
+    memory: Int | Double = null,
     mountPoints: MountPoints = null,
     networkInterfaces: NetworkInterfaceList = null,
-    privileged: js.UndefOr[Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
+    privileged: js.UndefOr[scala.Boolean] = js.undefined,
+    readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined,
     reason: String = null,
     resourceRequirements: ResourceRequirements = null,
     taskArn: String = null,
     ulimits: Ulimits = null,
     user: String = null,
-    vcpus: js.UndefOr[Integer] = js.undefined,
+    vcpus: Int | Double = null,
     volumes: Volumes = null
   ): ContainerDetail = {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command)
     if (containerInstanceArn != null) __obj.updateDynamic("containerInstanceArn")(containerInstanceArn)
     if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType)
     if (jobRoleArn != null) __obj.updateDynamic("jobRoleArn")(jobRoleArn)
     if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters)
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName)
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory)
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints)
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
     if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged)
@@ -136,7 +136,7 @@ object ContainerDetail {
     if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn)
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits)
     if (user != null) __obj.updateDynamic("user")(user)
-    if (!js.isUndefined(vcpus)) __obj.updateDynamic("vcpus")(vcpus)
+    if (vcpus != null) __obj.updateDynamic("vcpus")(vcpus.asInstanceOf[js.Any])
     if (volumes != null) __obj.updateDynamic("volumes")(volumes)
     __obj.asInstanceOf[ContainerDetail]
   }

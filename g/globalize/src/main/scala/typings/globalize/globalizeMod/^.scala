@@ -1,7 +1,7 @@
 package typings.globalize.globalizeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.globalize.distGlobalizeMessageMod.distGlobalizeMod.Static
+import typings.globalize.distGlobalizeMod.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

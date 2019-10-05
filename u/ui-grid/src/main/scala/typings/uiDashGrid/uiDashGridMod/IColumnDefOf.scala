@@ -3,21 +3,21 @@ package typings.uiDashGrid.uiDashGridMod
 import typings.std.FileList
 import typings.uiDashGrid.Anon_GroupPriority
 import typings.uiDashGrid.Fn_Scope
-import typings.uiDashGrid.uiDashGridMod.editNs.IEditDropdown
-import typings.uiDashGrid.uiDashGridMod.treeBaseNs.IGridTreeBaseAggregationObject
+import typings.uiDashGrid.uiDashGridMod.edit.IEditDropdown
+import typings.uiDashGrid.uiDashGridMod.treeBase.IGridTreeBaseAggregationObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IColumnDefOf[TEntity]
-  extends typings.uiDashGrid.uiDashGridMod.cellNavNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.editNs.IColumnDef[TEntity]
-     with typings.uiDashGrid.uiDashGridMod.exporterNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.groupingNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.moveColumnsNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.pinningNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.resizeColumnsNs.IColumnDef
-     with typings.uiDashGrid.uiDashGridMod.treeBaseNs.IColumnDef[TEntity] {
+  extends typings.uiDashGrid.uiDashGridMod.cellNav.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.edit.IColumnDef[TEntity]
+     with typings.uiDashGrid.uiDashGridMod.exporter.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.grouping.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.moveColumns.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.pinning.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.resizeColumns.IColumnDef
+     with typings.uiDashGrid.uiDashGridMod.treeBase.IColumnDef[TEntity] {
   /**
     * defaults to false
     * if set to true hides the label text in the aggregation footer, so only the value is displayed.

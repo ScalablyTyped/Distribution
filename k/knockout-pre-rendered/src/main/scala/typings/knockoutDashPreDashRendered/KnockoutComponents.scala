@@ -1,9 +1,9 @@
 package typings.knockoutDashPreDashRendered
 
-import typings.knockoutDashPreDashRendered.KnockoutComponentTypesNs.Config
-import typings.knockoutDashPreDashRendered.KnockoutComponentTypesNs.Definition
-import typings.knockoutDashPreDashRendered.KnockoutComponentTypesNs.EmptyConfig
-import typings.knockoutDashPreDashRendered.KnockoutComponentTypesNs.Loader
+import typings.knockoutDashPreDashRendered.KnockoutComponentTypes.Config
+import typings.knockoutDashPreDashRendered.KnockoutComponentTypes.Definition
+import typings.knockoutDashPreDashRendered.KnockoutComponentTypes.EmptyConfig
+import typings.knockoutDashPreDashRendered.KnockoutComponentTypes.Loader
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

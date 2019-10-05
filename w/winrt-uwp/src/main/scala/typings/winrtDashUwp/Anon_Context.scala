@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationContext
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

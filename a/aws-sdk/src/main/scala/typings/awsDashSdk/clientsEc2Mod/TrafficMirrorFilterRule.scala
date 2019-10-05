@@ -57,9 +57,9 @@ object TrafficMirrorFilterRule {
     Description: String = null,
     DestinationCidrBlock: String = null,
     DestinationPortRange: TrafficMirrorPortRange = null,
-    Protocol: js.UndefOr[Integer] = js.undefined,
+    Protocol: Int | scala.Double = null,
     RuleAction: TrafficMirrorRuleAction = null,
-    RuleNumber: js.UndefOr[Integer] = js.undefined,
+    RuleNumber: Int | scala.Double = null,
     SourceCidrBlock: String = null,
     SourcePortRange: TrafficMirrorPortRange = null,
     TrafficDirection: TrafficDirection = null,
@@ -70,9 +70,9 @@ object TrafficMirrorFilterRule {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock)
     if (DestinationPortRange != null) __obj.updateDynamic("DestinationPortRange")(DestinationPortRange)
-    if (!js.isUndefined(Protocol)) __obj.updateDynamic("Protocol")(Protocol)
+    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (RuleAction != null) __obj.updateDynamic("RuleAction")(RuleAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(RuleNumber)) __obj.updateDynamic("RuleNumber")(RuleNumber)
+    if (RuleNumber != null) __obj.updateDynamic("RuleNumber")(RuleNumber.asInstanceOf[js.Any])
     if (SourceCidrBlock != null) __obj.updateDynamic("SourceCidrBlock")(SourceCidrBlock)
     if (SourcePortRange != null) __obj.updateDynamic("SourcePortRange")(SourcePortRange)
     if (TrafficDirection != null) __obj.updateDynamic("TrafficDirection")(TrafficDirection.asInstanceOf[js.Any])

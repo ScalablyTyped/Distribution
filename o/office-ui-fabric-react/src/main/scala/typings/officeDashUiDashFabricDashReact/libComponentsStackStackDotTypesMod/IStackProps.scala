@@ -1,7 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsStackStackDotTypesMod
 
 import typings.atUifabricFoundation.Anon_Slots
-import typings.atUifabricFoundation.libIComponentMod.IStyleableComponentProps
 import typings.atUifabricFoundation.libIComponentMod.IStylesFunctionOrObject
 import typings.atUifabricFoundation.libIComponentMod.ITokenFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
@@ -98,7 +97,6 @@ object IStackProps {
     Anon_Slots: Anon_Slots[IStackSlots] = null,
     HTMLAttributes: HTMLAttributes[HTMLElement] = null,
     IStackSlots: IStackSlots = null,
-    IStyleableComponentProps: IStyleableComponentProps[IStackProps, IStackTokens, IStackStyles] = null,
     as: ReactType[HTMLAttributes[HTMLElement]] = null,
     disableShrink: js.UndefOr[Boolean] = js.undefined,
     gap: Double | String = null,
@@ -109,6 +107,9 @@ object IStackProps {
     maxWidth: Double | String = null,
     padding: Double | String = null,
     reversed: js.UndefOr[Boolean] = js.undefined,
+    styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,
+    theme: ITheme = null,
+    tokens: ITokenFunctionOrObject[IStackProps, IStackTokens] = null,
     verticalAlign: Alignment = null,
     verticalFill: js.UndefOr[Boolean] = js.undefined,
     wrap: js.UndefOr[Boolean] = js.undefined
@@ -117,7 +118,6 @@ object IStackProps {
     js.Dynamic.global.Object.assign(__obj, Anon_Slots)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, IStackSlots)
-    js.Dynamic.global.Object.assign(__obj, IStyleableComponentProps)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(disableShrink)) __obj.updateDynamic("disableShrink")(disableShrink)
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
@@ -128,6 +128,9 @@ object IStackProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
     if (!js.isUndefined(verticalFill)) __obj.updateDynamic("verticalFill")(verticalFill)
     if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)

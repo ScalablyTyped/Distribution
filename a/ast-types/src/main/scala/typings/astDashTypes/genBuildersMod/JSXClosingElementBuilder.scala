@@ -4,7 +4,7 @@ import typings.astDashTypes.Anon_CommentsLocNameArray
 import typings.astDashTypes.genKindsMod.JSXIdentifierKind
 import typings.astDashTypes.genKindsMod.JSXMemberExpressionKind
 import typings.astDashTypes.genKindsMod.JSXNamespacedNameKind
-import typings.astDashTypes.genNamedTypesMod.namedTypesNs.JSXClosingElement
+import typings.astDashTypes.genNamedTypesMod.namedTypes.JSXClosingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

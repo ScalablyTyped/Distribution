@@ -348,3 +348,14 @@ trait Graphviz[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PD
   def zoomTranslateExtent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
 }
 
+@JSImport("d3-graphviz", "graphviz")
+@js.native
+object graphviz extends js.Object {
+  def apply(selector: String): Graphviz[BaseType, _, BaseType, _] = js.native
+  def apply(selector: String, options: Boolean): Graphviz[BaseType, _, BaseType, _] = js.native
+  def apply(selector: String, options: GraphvizOptions): Graphviz[BaseType, _, BaseType, _] = js.native
+  def apply(selector: BaseType): Graphviz[BaseType, _, BaseType, _] = js.native
+  def apply(selector: BaseType, options: Boolean): Graphviz[BaseType, _, BaseType, _] = js.native
+  def apply(selector: BaseType, options: GraphvizOptions): Graphviz[BaseType, _, BaseType, _] = js.native
+}
+

@@ -1,5 +1,6 @@
 package typings.atBlueprintjsCore.libEsmCommonPropsMod
 
+import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,10 +18,10 @@ trait IControlledProps extends js.Object {
 
 object IControlledProps {
   @scala.inline
-  def apply(defaultValue: String = null, onChange: FormEventHandler[HTMLElement] = null, value: String = null): IControlledProps = {
+  def apply(defaultValue: String = null, onChange: FormEvent[HTMLElement] => Unit = null, value: String = null): IControlledProps = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IControlledProps]
   }

@@ -61,3 +61,49 @@ object ClassExpression {
   }
 }
 
+@JSImport("@babel/types", "classExpression")
+@js.native
+object classExpression extends js.Object {
+  def apply(id: js.UndefOr[Identifier | Null], superClass: js.UndefOr[Expression | Null], body: ClassBody): ClassExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.Array[Decorator]
+  ): ClassExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.Array[Decorator],
+    _implements: js.Array[TSExpressionWithTypeArguments | ClassImplements]
+  ): ClassExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.Array[Decorator],
+    _implements: js.Array[TSExpressionWithTypeArguments | ClassImplements],
+    mixins: js.Any
+  ): ClassExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.Array[Decorator],
+    _implements: js.Array[TSExpressionWithTypeArguments | ClassImplements],
+    mixins: js.Any,
+    superTypeParameters: TypeParameterInstantiation | TSTypeParameterInstantiation
+  ): ClassExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    superClass: js.UndefOr[Expression | Null],
+    body: ClassBody,
+    decorators: js.Array[Decorator],
+    _implements: js.Array[TSExpressionWithTypeArguments | ClassImplements],
+    mixins: js.Any,
+    superTypeParameters: TypeParameterInstantiation | TSTypeParameterInstantiation,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop
+  ): ClassExpression = js.native
+}
+

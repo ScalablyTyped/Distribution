@@ -1,5 +1,6 @@
 package typings.miniprogramDashWxs
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,4 +20,11 @@ object Module {
     __obj.asInstanceOf[Module]
   }
 }
+
+/**
+  * 模块
+  */
+@JSGlobal("module")
+@js.native
+object module extends TopLevel[Module]
 

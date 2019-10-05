@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:88 Failure, [c3 => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/c3/index.d.ts): Parse error at 417.21 IdentifierName expected] [id => c3, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [c3 => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/c3/index.d.ts): Parse error at 417.21 IdentifierName expected] [id => c3, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [c3 => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/c3/index.d.ts): Parse error at 417.21 IdentifierName expected] [id => c3, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [c3 => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/c3/index.d.ts): Parse error at 417.21 IdentifierName expected] [id => c3, phase => publish] 

@@ -1,9 +1,9 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeNs.eventsNs.Event
-import typings.chromeDashApps.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId
-import typings.chromeDashApps.chromeNs.fileBrowserHandlerNs.SelectFileParameters
-import typings.chromeDashApps.chromeNs.fileBrowserHandlerNs.SelectionResult
+import typings.chromeDashApps.chrome.events.Event
+import typings.chromeDashApps.chrome.fileBrowserHandler.FileBrowserHandleExecuteId
+import typings.chromeDashApps.chrome.fileBrowserHandler.SelectFileParameters
+import typings.chromeDashApps.chrome.fileBrowserHandler.SelectionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ import typings.wegameDashApi.wegameDashApiNumbers.`48000`
 import typings.wegameDashApi.wegameDashApiNumbers.`8000`
 import typings.wegameDashApi.wegameDashApiStrings.aac
 import typings.wegameDashApi.wegameDashApiStrings.mp3
-import typings.wegameDashApi.wxNs.typesNs.AudioSourceType
+import typings.wegameDashApi.wx.types.AudioSourceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

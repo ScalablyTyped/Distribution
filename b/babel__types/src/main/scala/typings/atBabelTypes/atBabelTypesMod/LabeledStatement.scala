@@ -39,3 +39,9 @@ object LabeledStatement {
   }
 }
 
+@JSImport("@babel/types", "labeledStatement")
+@js.native
+object labeledStatement extends js.Object {
+  def apply(label: Identifier, body: Statement): LabeledStatement = js.native
+}
+

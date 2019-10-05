@@ -1,6 +1,6 @@
 package typings.iobroker
 
-import typings.iobroker.iobrokerMod.Global.ioBrokerNs.Object
+import typings.iobroker.iobrokerMod.Global.ioBroker.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

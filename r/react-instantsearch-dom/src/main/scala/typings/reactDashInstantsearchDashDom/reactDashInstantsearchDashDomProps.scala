@@ -13,7 +13,7 @@ trait reactDashInstantsearchDashDomProps {
   def SearchBoxProps: typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps.type = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps
   type SearchBoxProps = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps
   @scala.inline
-  def StatsProps: Anon_Key.type = typings.reactDashInstantsearchDashDom.Anon_Key
+  def StatsProps: typings.reactDashInstantsearchDashDom.Anon_Key.type = typings.reactDashInstantsearchDashDom.Anon_Key
   type StatsProps = Anon_Key
 }
 

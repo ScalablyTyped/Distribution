@@ -6,6 +6,8 @@ import typings.antdDashMobile.antdDashMobileStrings.sm
 import typings.antdDashMobile.antdDashMobileStrings.xs
 import typings.antdDashMobile.antdDashMobileStrings.xxs
 import typings.antdDashMobile.libIconPropsTypeMod.IconPropsType
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.std.SVGSVGElement
 import scala.scalajs.js
@@ -23,13 +25,13 @@ object IconProps {
   def apply(
     `type`: String,
     color: String = null,
-    onClick: MouseEventHandler[SVGSVGElement] = null,
+    onClick: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit = null,
     size: xxs | xs | sm | md | lg = null
   ): IconProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (color != null) __obj.updateDynamic("color")(color)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }

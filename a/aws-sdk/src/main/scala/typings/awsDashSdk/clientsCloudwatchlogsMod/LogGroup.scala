@@ -36,21 +36,21 @@ object LogGroup {
   @scala.inline
   def apply(
     arn: Arn = null,
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
+    creationTime: Int | Double = null,
     kmsKeyId: KmsKeyId = null,
     logGroupName: LogGroupName = null,
-    metricFilterCount: js.UndefOr[FilterCount] = js.undefined,
-    retentionInDays: js.UndefOr[Days] = js.undefined,
-    storedBytes: js.UndefOr[StoredBytes] = js.undefined
+    metricFilterCount: Int | Double = null,
+    retentionInDays: Int | Double = null,
+    storedBytes: Int | Double = null
   ): LogGroup = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId)
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
-    if (!js.isUndefined(metricFilterCount)) __obj.updateDynamic("metricFilterCount")(metricFilterCount)
-    if (!js.isUndefined(retentionInDays)) __obj.updateDynamic("retentionInDays")(retentionInDays)
-    if (!js.isUndefined(storedBytes)) __obj.updateDynamic("storedBytes")(storedBytes)
+    if (metricFilterCount != null) __obj.updateDynamic("metricFilterCount")(metricFilterCount.asInstanceOf[js.Any])
+    if (retentionInDays != null) __obj.updateDynamic("retentionInDays")(retentionInDays.asInstanceOf[js.Any])
+    if (storedBytes != null) __obj.updateDynamic("storedBytes")(storedBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogGroup]
   }
 }

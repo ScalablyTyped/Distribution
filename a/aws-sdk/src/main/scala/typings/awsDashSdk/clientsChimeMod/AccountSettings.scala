@@ -18,8 +18,8 @@ trait AccountSettings extends js.Object {
 object AccountSettings {
   @scala.inline
   def apply(
-    DisableRemoteControl: js.UndefOr[Boolean] = js.undefined,
-    EnableDialOut: js.UndefOr[Boolean] = js.undefined
+    DisableRemoteControl: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableDialOut: js.UndefOr[scala.Boolean] = js.undefined
   ): AccountSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DisableRemoteControl)) __obj.updateDynamic("DisableRemoteControl")(DisableRemoteControl)

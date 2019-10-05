@@ -156,7 +156,7 @@ object antdDashMobileDashRnComponents extends antdDashMobileDashRnProps {
   ] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.SwipeAction].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.antdDashMobileDashRn.libSwipeDashActionIndexDotNativeMod.SwipeActionProps]]
   @scala.inline
-  def Switch: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.antdDashMobileDashRnMod.^.asInstanceOf[js.Dynamic].selectDynamic("Switch").asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
+  def Switch: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.antdDashMobileDashRnMod.Switch.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
   @scala.inline
   def TabBar: ComponentType[typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps]]
   @scala.inline
@@ -172,7 +172,5 @@ object antdDashMobileDashRnComponents extends antdDashMobileDashRnProps {
   def WhiteSpace: ComponentType[typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.WhiteSpace].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps]]
   @scala.inline
   def WingBlank: ComponentType[typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.WingBlank].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libWingDashBlankIndexDotNativeMod.WingBlankProps]]
-  @scala.inline
-  def `index.native`: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
 }
 

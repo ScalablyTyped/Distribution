@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,9 +83,9 @@ trait Location extends js.Object {
 
 @JSGlobal("Location")
 @js.native
-class LocationCls () extends Location
-
-@JSGlobal("Location")
-@js.native
 object Location extends Instantiable0[Location]
+
+@JSGlobal("location")
+@js.native
+object location extends TopLevel[Location]
 

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:no-empty-interface
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because Already inherited
 - typings.bpmnDashModdle.bpmnDashModdleMod.Collaboration because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, isClosed, participants, messageFlows, artifacts, conversations, conversationAssociations, participantAssociations, messageFlowAssociations, correlationKeys, choreographyRef, conversationLinks */ trait Choreography extends FlowElementsContainer {
   var artifacts: js.Array[Artifact]
   var choreographyRef: js.Array[Choreography]

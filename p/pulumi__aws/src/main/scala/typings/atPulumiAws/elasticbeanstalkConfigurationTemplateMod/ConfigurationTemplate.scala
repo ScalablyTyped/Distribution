@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticbeanstalkConfigurationTemplateMod
 
-import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.ConfigurationTemplateSetting
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalk.ConfigurationTemplateSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

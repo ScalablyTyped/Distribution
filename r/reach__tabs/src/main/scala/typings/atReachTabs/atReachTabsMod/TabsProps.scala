@@ -18,15 +18,16 @@ import scala.scalajs.js.annotation._
 object TabsProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     as: String = null,
+    children: ReactNode = null,
     defaultIndex: Int | Double = null,
     index: Int | Double = null,
     onChange: /* index */ Double => Unit = null,
     readOnly: js.UndefOr[Boolean] = js.undefined
   ): TabsProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (defaultIndex != null) __obj.updateDynamic("defaultIndex")(defaultIndex.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

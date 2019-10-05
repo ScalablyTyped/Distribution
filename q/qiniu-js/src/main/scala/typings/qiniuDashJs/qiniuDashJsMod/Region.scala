@@ -38,3 +38,13 @@ object Region extends js.Object {
   def apply(value: Double): js.UndefOr[Region with Double] = js.native
 }
 
+@JSImport("qiniu-js", "region")
+@js.native
+object region extends js.Object {
+  val as0: Region = js.native
+  val na0: Region = js.native
+  val z0: Region = js.native
+  val z1: Region = js.native
+  val z2: Region = js.native
+}
+

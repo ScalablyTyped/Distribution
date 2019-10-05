@@ -2,6 +2,8 @@ package typings.yog2DashKernel.yog2DashKernelMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,41 +32,41 @@ object ActionObject {
   @scala.inline
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    copy: RequestHandler = null,
-    del: RequestHandler = null,
-    delete: RequestHandler = null,
-    get: RequestHandler = null,
-    head: RequestHandler = null,
-    link: RequestHandler = null,
-    lock: RequestHandler = null,
-    options: RequestHandler = null,
-    patch: RequestHandler = null,
-    post: RequestHandler = null,
-    propfind: RequestHandler = null,
-    purge: RequestHandler = null,
-    put: RequestHandler = null,
-    unlick: RequestHandler = null,
-    unlock: RequestHandler = null,
-    view: RequestHandler = null
+    copy: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    del: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    delete: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    get: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    head: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    link: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    lock: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    options: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    patch: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    post: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    propfind: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    purge: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    put: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    unlick: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    unlock: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null,
+    view: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, /* next */ NextFunction) => js.Any = null
   ): ActionObject = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (del != null) __obj.updateDynamic("del")(del)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (lock != null) __obj.updateDynamic("lock")(lock)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (propfind != null) __obj.updateDynamic("propfind")(propfind)
-    if (purge != null) __obj.updateDynamic("purge")(purge)
-    if (put != null) __obj.updateDynamic("put")(put)
-    if (unlick != null) __obj.updateDynamic("unlick")(unlick)
-    if (unlock != null) __obj.updateDynamic("unlock")(unlock)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction3(copy))
+    if (del != null) __obj.updateDynamic("del")(js.Any.fromFunction3(del))
+    if (delete != null) __obj.updateDynamic("delete")(js.Any.fromFunction3(delete))
+    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction3(get))
+    if (head != null) __obj.updateDynamic("head")(js.Any.fromFunction3(head))
+    if (link != null) __obj.updateDynamic("link")(js.Any.fromFunction3(link))
+    if (lock != null) __obj.updateDynamic("lock")(js.Any.fromFunction3(lock))
+    if (options != null) __obj.updateDynamic("options")(js.Any.fromFunction3(options))
+    if (patch != null) __obj.updateDynamic("patch")(js.Any.fromFunction3(patch))
+    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction3(post))
+    if (propfind != null) __obj.updateDynamic("propfind")(js.Any.fromFunction3(propfind))
+    if (purge != null) __obj.updateDynamic("purge")(js.Any.fromFunction3(purge))
+    if (put != null) __obj.updateDynamic("put")(js.Any.fromFunction3(put))
+    if (unlick != null) __obj.updateDynamic("unlick")(js.Any.fromFunction3(unlick))
+    if (unlock != null) __obj.updateDynamic("unlock")(js.Any.fromFunction3(unlock))
+    if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction3(view))
     __obj.asInstanceOf[ActionObject]
   }
 }

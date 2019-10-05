@@ -45,9 +45,9 @@ object WorkspaceRequest {
     BundleId: BundleId,
     DirectoryId: DirectoryId,
     UserName: UserName,
-    RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
+    RootVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
     Tags: TagList = null,
-    UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
+    UserVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
     VolumeEncryptionKey: VolumeEncryptionKey = null,
     WorkspaceProperties: WorkspaceProperties = null
   ): WorkspaceRequest = {

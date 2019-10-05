@@ -1,15 +1,15 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFAutomaticValueType
-import typings.mfiles.MFilesNs.MFBuiltInObjectType
-import typings.mfiles.MFilesNs.MFBuiltInValueList
-import typings.mfiles.MFilesNs.MFContentType
-import typings.mfiles.MFilesNs.MFDataType
-import typings.mfiles.MFilesNs.MFDependencyRelation
-import typings.mfiles.MFilesNs.MFFormattingType
-import typings.mfiles.MFilesNs.MFUpdateType
-import typings.mfiles.MFilesNs.MFValidationType
-import typings.mfiles.MFilesNs.MFValueListSortingType
+import typings.mfiles.MFiles.MFAutomaticValueType
+import typings.mfiles.MFiles.MFBuiltInObjectType
+import typings.mfiles.MFiles.MFBuiltInValueList
+import typings.mfiles.MFiles.MFContentType
+import typings.mfiles.MFiles.MFDataType
+import typings.mfiles.MFiles.MFDependencyRelation
+import typings.mfiles.MFiles.MFFormattingType
+import typings.mfiles.MFiles.MFUpdateType
+import typings.mfiles.MFiles.MFValidationType
+import typings.mfiles.MFiles.MFValueListSortingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

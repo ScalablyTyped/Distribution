@@ -21,14 +21,10 @@ trait ArrayPropertiesDetail extends js.Object {
 
 object ArrayPropertiesDetail {
   @scala.inline
-  def apply(
-    index: js.UndefOr[Integer] = js.undefined,
-    size: js.UndefOr[Integer] = js.undefined,
-    statusSummary: ArrayJobStatusSummary = null
-  ): ArrayPropertiesDetail = {
+  def apply(index: Int | Double = null, size: Int | Double = null, statusSummary: ArrayJobStatusSummary = null): ArrayPropertiesDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (statusSummary != null) __obj.updateDynamic("statusSummary")(statusSummary)
     __obj.asInstanceOf[ArrayPropertiesDetail]
   }

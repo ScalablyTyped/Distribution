@@ -1,6 +1,6 @@
 package typings.inboxsdk
 
-import typings.inboxsdk.inboxsdkMod.ConversationsNs.MessageViewViewStates
+import typings.inboxsdk.inboxsdkMod.Conversations.MessageViewViewStates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

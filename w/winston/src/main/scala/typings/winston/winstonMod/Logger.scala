@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.logform.logformMod.Format
 import typings.node.Anon_End
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
 import typings.std.Error
 import typings.winston.libWinstonConfigMod.AbstractConfigSetLevels
+import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,14 +56,14 @@ trait Logger
   var silent: Boolean = js.native
   @JSName("silly")
   var silly_Original: LeveledLogMethod = js.native
-  var transports: js.Array[typings.winstonDashTransport.winstonDashTransportMod.^] = js.native
+  var transports: js.Array[^] = js.native
   @JSName("verbose")
   var verbose_Original: LeveledLogMethod = js.native
   @JSName("warn")
   var warn_Original: LeveledLogMethod = js.native
   @JSName("warning")
   var warning_Original: LeveledLogMethod = js.native
-  def add(transport: typings.winstonDashTransport.winstonDashTransportMod.^): Logger = js.native
+  def add(transport: ^): Logger = js.native
   /* InferMemberOverrides */
   override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */
@@ -185,7 +186,7 @@ trait Logger
   override def rawListeners(event: String): js.Array[js.Function] = js.native
   /* InferMemberOverrides */
   override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  def remove(transport: typings.winstonDashTransport.winstonDashTransportMod.^): Logger = js.native
+  def remove(transport: ^): Logger = js.native
   /* InferMemberOverrides */
   override def removeAllListeners(): this.type = js.native
   /* InferMemberOverrides */

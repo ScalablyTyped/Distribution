@@ -1,5 +1,6 @@
 package typings.prosemirrorDashMarkdown.prosemirrorDashMarkdownMod
 
+import typings.markdownDashIt.libTokenMod.^
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,9 +26,7 @@ trait TokenConfig extends js.Object {
     * token](https://markdown-it.github.io/markdown-it/#Token) and
     * returns an attribute object.
     */
-  var getAttrs: js.UndefOr[
-    js.Function1[/* token */ typings.markdownDashIt.libTokenMod.^, Record[String, _]]
-  ] = js.undefined
+  var getAttrs: js.UndefOr[js.Function1[/* token */ ^, Record[String, _]]] = js.undefined
   /**
     * When true, ignore content for the matched token.
     */
@@ -51,7 +50,7 @@ object TokenConfig {
   def apply(
     attrs: Record[String, _] = null,
     block: String = null,
-    getAttrs: /* token */ typings.markdownDashIt.libTokenMod.^ => Record[String, _] = null,
+    getAttrs: /* token */ ^ => Record[String, _] = null,
     ignore: js.UndefOr[Boolean] = js.undefined,
     mark: String = null,
     node: String = null

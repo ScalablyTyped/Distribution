@@ -21,7 +21,7 @@ trait DescribeVpcAttributeRequest extends js.Object {
 
 object DescribeVpcAttributeRequest {
   @scala.inline
-  def apply(Attribute: VpcAttributeName, VpcId: String, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeVpcAttributeRequest = {
+  def apply(Attribute: VpcAttributeName, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeVpcAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[DescribeVpcAttributeRequest]

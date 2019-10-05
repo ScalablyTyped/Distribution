@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,20 +54,20 @@ object IgToolbarButton {
   	 * Option for igToolbarButton
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
-    activated: ActivatedEvent = null,
-    activating: ActivatingEvent = null,
+    activated: (/* event */ Event, /* ui */ ActivatedEventUIParam) => Unit = null,
+    activating: (/* event */ Event, /* ui */ ActivatingEventUIParam) => Unit = null,
     allowToggling: js.UndefOr[Boolean] = js.undefined,
-    deactivated: DeactivatedEvent = null,
-    deactivating: DeactivatingEvent = null,
+    deactivated: (/* event */ Event, /* ui */ DeactivatedEventUIParam) => Unit = null,
+    deactivating: (/* event */ Event, /* ui */ DeactivatingEventUIParam) => Unit = null,
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): IgToolbarButton = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (activated != null) __obj.updateDynamic("activated")(activated)
-    if (activating != null) __obj.updateDynamic("activating")(activating)
+    if (activated != null) __obj.updateDynamic("activated")(js.Any.fromFunction2(activated))
+    if (activating != null) __obj.updateDynamic("activating")(js.Any.fromFunction2(activating))
     if (!js.isUndefined(allowToggling)) __obj.updateDynamic("allowToggling")(allowToggling)
-    if (deactivated != null) __obj.updateDynamic("deactivated")(deactivated)
-    if (deactivating != null) __obj.updateDynamic("deactivating")(deactivating)
+    if (deactivated != null) __obj.updateDynamic("deactivated")(js.Any.fromFunction2(deactivated))
+    if (deactivating != null) __obj.updateDynamic("deactivating")(js.Any.fromFunction2(deactivating))
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
     __obj.asInstanceOf[IgToolbarButton]
   }

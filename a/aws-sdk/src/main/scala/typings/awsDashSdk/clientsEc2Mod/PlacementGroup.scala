@@ -27,13 +27,13 @@ object PlacementGroup {
   @scala.inline
   def apply(
     GroupName: String = null,
-    PartitionCount: js.UndefOr[Integer] = js.undefined,
+    PartitionCount: Int | scala.Double = null,
     State: PlacementGroupState = null,
     Strategy: PlacementStrategy = null
   ): PlacementGroup = {
     val __obj = js.Dynamic.literal()
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName)
-    if (!js.isUndefined(PartitionCount)) __obj.updateDynamic("PartitionCount")(PartitionCount)
+    if (PartitionCount != null) __obj.updateDynamic("PartitionCount")(PartitionCount.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementGroup]

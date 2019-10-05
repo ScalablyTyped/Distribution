@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "CompoundPath")
 @js.native
 class CompoundPath protected ()
-  extends typings.paper.paperNs.CompoundPath {
+  extends typings.paper.paper.CompoundPath {
   /**
     * Creates a new compound path item from an object description and places it at the top of the active layer.
     * @param object - an object literal containing properties to be set on the path

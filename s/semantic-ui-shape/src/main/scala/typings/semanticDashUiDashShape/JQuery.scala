@@ -1,8 +1,8 @@
 package typings.semanticDashUiDashShape
 
-import typings.semanticDashUiDashShape.SemanticUINs.Shape
-import typings.semanticDashUiDashShape.SemanticUINs.ShapeNs.Translation
-import typings.semanticDashUiDashShape.SemanticUINs.ShapeSettings
+import typings.semanticDashUiDashShape.SemanticUI.Shape
+import typings.semanticDashUiDashShape.SemanticUI.Shape.Translation
+import typings.semanticDashUiDashShape.SemanticUI.ShapeSettings
 import typings.semanticDashUiDashShape.semanticDashUiDashShapeStrings.`flip back`
 import typings.semanticDashUiDashShape.semanticDashUiDashShapeStrings.`flip down`
 import typings.semanticDashUiDashShape.semanticDashUiDashShapeStrings.`flip left`

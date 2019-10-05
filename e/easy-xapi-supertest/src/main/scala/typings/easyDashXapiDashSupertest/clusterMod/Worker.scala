@@ -1,5 +1,6 @@
 package typings.easyDashXapiDashSupertest.clusterMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.easyDashXapiDashSupertest.childUnderscoreProcessMod.ChildProcess
 import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -20,4 +21,8 @@ class Worker () extends EventEmitter {
   def send(message: js.Any): Unit = js.native
   def send(message: js.Any, sendHandle: js.Any): Unit = js.native
 }
+
+@JSImport("cluster", "worker")
+@js.native
+object worker extends TopLevel[Worker]
 

@@ -1,5 +1,6 @@
 package typings.cordova
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,4 +41,9 @@ trait Cordova extends js.Object {
   /** Access a Cordova module by name. */
   def require(moduleName: String): js.Any = js.native
 }
+
+/** Apache Cordova instance */
+@JSGlobal("cordova")
+@js.native
+object cordova extends TopLevel[Cordova]
 

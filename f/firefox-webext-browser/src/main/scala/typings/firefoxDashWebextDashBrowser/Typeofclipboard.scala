@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser
 
-import typings.firefoxDashWebextDashBrowser.browserNs.clipboardNs.ArrayBuffer
-import typings.firefoxDashWebextDashBrowser.browserNs.clipboardNs._SetImageData
+import typings.firefoxDashWebextDashBrowser.browser.clipboard.ArrayBuffer
+import typings.firefoxDashWebextDashBrowser.browser.clipboard._SetImageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

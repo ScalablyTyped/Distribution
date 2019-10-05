@@ -1,7 +1,7 @@
 package typings.stripeDashV3
 
-import typings.stripeDashV3.stripeNs.paymentRequestNs.ShippingAddress
-import typings.stripeDashV3.stripeNs.paymentRequestNs.UpdateDetails
+import typings.stripeDashV3.stripe.paymentRequest.ShippingAddress
+import typings.stripeDashV3.stripe.paymentRequest.UpdateDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

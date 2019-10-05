@@ -43,3 +43,12 @@ object TSIndexSignature {
   }
 }
 
+@JSImport("@babel/types", "tsIndexSignature")
+@js.native
+object tsIndexSignature extends js.Object {
+  def apply(parameters: js.Array[Identifier]): TSIndexSignature = js.native
+  def apply(parameters: js.Array[Identifier], typeAnnotation: Null, readonly: Boolean): TSIndexSignature = js.native
+  def apply(parameters: js.Array[Identifier], typeAnnotation: TSTypeAnnotation): TSIndexSignature = js.native
+  def apply(parameters: js.Array[Identifier], typeAnnotation: TSTypeAnnotation, readonly: Boolean): TSIndexSignature = js.native
+}
+

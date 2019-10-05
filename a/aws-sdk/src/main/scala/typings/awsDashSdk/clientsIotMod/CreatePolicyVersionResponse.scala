@@ -26,7 +26,7 @@ trait CreatePolicyVersionResponse extends js.Object {
 object CreatePolicyVersionResponse {
   @scala.inline
   def apply(
-    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
+    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
     policyArn: PolicyArn = null,
     policyDocument: PolicyDocument = null,
     policyVersionId: PolicyVersionId = null

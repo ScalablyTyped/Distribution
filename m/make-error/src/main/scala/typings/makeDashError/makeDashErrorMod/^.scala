@@ -17,6 +17,7 @@ object ^ extends js.Object {
   /**
     * Create a specialized error instance.
     */
-  def apply[T /* <: Error */, K](name: String | js.Function, super_ : K): K with SpecializedConstructor[T] = js.native
+  def apply[T /* <: Error */, K](name: String, super_ : K): K with SpecializedConstructor[T] = js.native
+  def apply[T /* <: Error */, K](name: js.Function, super_ : K): K with SpecializedConstructor[T] = js.native
 }
 

@@ -27,12 +27,12 @@ object DescribeConfigurationAggregatorSourcesStatusRequest {
   @scala.inline
   def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
-    Limit: js.UndefOr[Limit] = js.undefined,
+    Limit: Int | Double = null,
     NextToken: String = null,
     UpdateStatus: AggregatedSourceStatusTypeList = null
   ): DescribeConfigurationAggregatorSourcesStatusRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (UpdateStatus != null) __obj.updateDynamic("UpdateStatus")(UpdateStatus)
     __obj.asInstanceOf[DescribeConfigurationAggregatorSourcesStatusRequest]

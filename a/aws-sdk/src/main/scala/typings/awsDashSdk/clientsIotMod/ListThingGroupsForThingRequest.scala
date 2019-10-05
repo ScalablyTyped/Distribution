@@ -21,13 +21,9 @@ trait ListThingGroupsForThingRequest extends js.Object {
 
 object ListThingGroupsForThingRequest {
   @scala.inline
-  def apply(
-    thingName: ThingName,
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): ListThingGroupsForThingRequest = {
+  def apply(thingName: ThingName, maxResults: Int | Double = null, nextToken: NextToken = null): ListThingGroupsForThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[ListThingGroupsForThingRequest]
   }

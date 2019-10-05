@@ -27,13 +27,13 @@ object SearchDevicesRequest {
   @scala.inline
   def apply(
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     SortCriteria: SortList = null
   ): SearchDevicesRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria)
     __obj.asInstanceOf[SearchDevicesRequest]

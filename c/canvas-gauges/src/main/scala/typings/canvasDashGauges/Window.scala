@@ -1,16 +1,16 @@
 package typings.canvasDashGauges
 
-import typings.canvasDashGauges.CanvasGaugesNs.BaseGauge
-import typings.canvasDashGauges.CanvasGaugesNs.LinearGauge
-import typings.canvasDashGauges.CanvasGaugesNs.RadialGauge
+import typings.canvasDashGauges.CanvasGauges.BaseGauge
+import typings.canvasDashGauges.CanvasGauges.LinearGauge
+import typings.canvasDashGauges.CanvasGauges.RadialGauge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Window extends js.Object {
-  var BaseGauge: typings.canvasDashGauges.CanvasGaugesNs.BaseGauge
-  var LinearGauge: typings.canvasDashGauges.CanvasGaugesNs.LinearGauge
-  var RadialGauge: typings.canvasDashGauges.CanvasGaugesNs.RadialGauge
+  var BaseGauge: typings.canvasDashGauges.CanvasGauges.BaseGauge
+  var LinearGauge: typings.canvasDashGauges.CanvasGauges.LinearGauge
+  var RadialGauge: typings.canvasDashGauges.CanvasGauges.RadialGauge
 }
 
 object Window {

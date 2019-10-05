@@ -2,7 +2,7 @@ package typings.atPulumiAws.datasyncTaskMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.typesOutputMod.datasyncNs.TaskOptions
+import typings.atPulumiAws.typesOutputMod.datasync.TaskOptions
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

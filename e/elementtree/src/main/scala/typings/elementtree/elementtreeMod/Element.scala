@@ -35,3 +35,10 @@ trait Element extends js.Object {
   def setSlice(start: Double, stop: Double, elements: js.Array[Element]): Unit = js.native
 }
 
+@JSImport("elementtree", "Element")
+@js.native
+object Element extends js.Object {
+  def apply(ElementTag: String): Element = js.native
+  def apply(ElementTag: String, attrib: Attributes): Element = js.native
+}
+

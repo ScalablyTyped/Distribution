@@ -1,6 +1,8 @@
 package typings.antd.libUploadInterfaceMod
 
 import typings.react.reactMod.CSSProperties
+import typings.std.Blob
+import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,11 +66,11 @@ object UploadProps {
     onRemove: /* file */ UploadFile => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
     openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
-    previewFile: PreviewFileHandler = null,
+    previewFile: /* file */ File | Blob => js.Thenable[String] = null,
     showUploadList: Boolean | ShowUploadListInterface = null,
     style: CSSProperties = null,
     supportServerRender: js.UndefOr[Boolean] = js.undefined,
-    transformFile: TransformFileHandler = null,
+    transformFile: /* file */ RcFile => String | Blob | File | (js.Thenable[String | Blob | File]) = null,
     `type`: UploadType = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): UploadProps = {
@@ -94,11 +96,11 @@ object UploadProps {
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (previewFile != null) __obj.updateDynamic("previewFile")(previewFile)
+    if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender)
-    if (transformFile != null) __obj.updateDynamic("transformFile")(transformFile)
+    if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1(transformFile))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[UploadProps]

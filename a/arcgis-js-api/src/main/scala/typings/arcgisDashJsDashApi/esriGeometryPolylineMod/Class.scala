@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPolylineMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Polyline
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PolylineProperties
+import typings.arcgisDashJsDashApi.__esri.Polyline
+import typings.arcgisDashJsDashApi.__esri.PolylineProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

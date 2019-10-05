@@ -1,6 +1,6 @@
 package typings.randomstring
 
-import typings.randomstring.RandomstringNs.GenerateOptions
+import typings.randomstring.Randomstring.GenerateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

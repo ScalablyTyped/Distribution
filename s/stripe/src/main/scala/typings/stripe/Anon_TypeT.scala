@@ -1,6 +1,6 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.paymentMethodsNs.IPaymentMethodType
+import typings.stripe.stripeMod.paymentMethods.IPaymentMethodType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

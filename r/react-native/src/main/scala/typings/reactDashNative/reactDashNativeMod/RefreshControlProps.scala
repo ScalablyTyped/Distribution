@@ -17,6 +17,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityPropsAndroid because Already inherited
+- typings.reactDashNative.reactDashNativeMod.TVViewPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.AccessibilityProps because Already inherited
+- typings.reactDashNative.reactDashNativeMod.Touchable because Already inherited
+- typings.reactDashNative.reactDashNativeMod.GestureResponderHandlers because Already inherited
+- typings.reactDashNative.reactDashNativeMod.ViewPropsIOS because Already inherited
+- typings.reactDashNative.reactDashNativeMod.ViewPropsAndroid because Already inherited
+- typings.reactDashNative.reactDashNativeMod.ViewProps because Already inherited
 - typings.reactDashNative.reactDashNativeMod.RefreshControlPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, collapsable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined colors, enabled, progressBackgroundColor, size, progressViewOffset */ trait RefreshControlProps extends RefreshControlPropsIOS {
   /**
     * The colors (at least one) that will be used to draw the refresh indicator.

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewpointMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ViewpointConstructor
+import typings.arcgisDashJsDashApi.__esri.ViewpointConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

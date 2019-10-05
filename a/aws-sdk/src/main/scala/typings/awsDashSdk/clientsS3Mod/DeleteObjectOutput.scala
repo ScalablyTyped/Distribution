@@ -19,7 +19,7 @@ trait DeleteObjectOutput extends js.Object {
 object DeleteObjectOutput {
   @scala.inline
   def apply(
-    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
+    DeleteMarker: js.UndefOr[Boolean] = js.undefined,
     RequestCharged: RequestCharged = null,
     VersionId: ObjectVersionId = null
   ): DeleteObjectOutput = {

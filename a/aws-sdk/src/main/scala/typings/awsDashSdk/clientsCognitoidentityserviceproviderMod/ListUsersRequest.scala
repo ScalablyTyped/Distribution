@@ -33,13 +33,13 @@ object ListUsersRequest {
     UserPoolId: UserPoolIdType,
     AttributesToGet: SearchedAttributeNamesListType = null,
     Filter: UserFilterType = null,
-    Limit: js.UndefOr[QueryLimitType] = js.undefined,
+    Limit: Int | Double = null,
     PaginationToken: SearchPaginationTokenType = null
   ): ListUsersRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId)
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken)
     __obj.asInstanceOf[ListUsersRequest]
   }

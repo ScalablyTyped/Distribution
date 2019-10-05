@@ -1,8 +1,8 @@
 package typings.atPulumiAws.lbTargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.lbNs.TargetGroupHealthCheck
-import typings.atPulumiAws.typesOutputMod.lbNs.TargetGroupStickiness
+import typings.atPulumiAws.typesOutputMod.lb.TargetGroupHealthCheck
+import typings.atPulumiAws.typesOutputMod.lb.TargetGroupStickiness
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

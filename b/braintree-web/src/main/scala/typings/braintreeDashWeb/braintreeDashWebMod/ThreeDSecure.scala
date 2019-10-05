@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_AddFrame
 import typings.braintreeDashWeb.Anon_AddFrameAmount
 import typings.braintreeDashWeb.Anon_Bin
@@ -150,4 +151,8 @@ trait ThreeDSecure extends js.Object {
   def verifyCard(options: Anon_AddFrame): js.Promise[ThreeDSecureVerifyPayload] = js.native
   def verifyCard(options: Anon_AddFrameAmount, callback: callback): Unit = js.native
 }
+
+@JSImport("braintree-web", "threeDSecure")
+@js.native
+object threeDSecure extends TopLevel[ThreeDSecure]
 

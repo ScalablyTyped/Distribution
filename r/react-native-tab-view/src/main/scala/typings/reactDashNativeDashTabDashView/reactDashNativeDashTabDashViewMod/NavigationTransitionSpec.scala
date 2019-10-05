@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod
 
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.EasingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,12 +18,12 @@ object NavigationTransitionSpec {
   @scala.inline
   def apply(
     duration: Int | Double = null,
-    easing: EasingFunction = null,
+    easing: /* value */ Double => Double = null,
     timing: (/* value */ Value, /* config */ js.Any) => _ = null
   ): NavigationTransitionSpec = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (timing != null) __obj.updateDynamic("timing")(js.Any.fromFunction2(timing))
     __obj.asInstanceOf[NavigationTransitionSpec]
   }

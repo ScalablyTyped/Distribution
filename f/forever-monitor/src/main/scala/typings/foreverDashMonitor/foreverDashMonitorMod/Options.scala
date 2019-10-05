@@ -1,7 +1,7 @@
 package typings.foreverDashMonitor.foreverDashMonitorMod
 
 import typings.foreverDashMonitor.Anon_Args
-import typings.node.NodeJSNs.ProcessEnv
+import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

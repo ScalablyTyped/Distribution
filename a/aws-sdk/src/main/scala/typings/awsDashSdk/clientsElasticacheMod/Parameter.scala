@@ -50,7 +50,7 @@ object Parameter {
     ChangeType: ChangeType = null,
     DataType: String = null,
     Description: String = null,
-    IsModifiable: js.UndefOr[Boolean] = js.undefined,
+    IsModifiable: js.UndefOr[scala.Boolean] = js.undefined,
     MinimumEngineVersion: String = null,
     ParameterName: String = null,
     ParameterValue: String = null,

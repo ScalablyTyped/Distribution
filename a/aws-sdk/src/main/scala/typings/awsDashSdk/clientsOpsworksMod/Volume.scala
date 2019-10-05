@@ -69,14 +69,14 @@ object Volume {
     AvailabilityZone: String = null,
     Device: String = null,
     Ec2VolumeId: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceId: String = null,
-    Iops: js.UndefOr[Integer] = js.undefined,
+    Iops: Int | scala.Double = null,
     MountPoint: String = null,
     Name: String = null,
     RaidArrayId: String = null,
     Region: String = null,
-    Size: js.UndefOr[Integer] = js.undefined,
+    Size: Int | scala.Double = null,
     Status: String = null,
     VolumeId: String = null,
     VolumeType: String = null
@@ -87,12 +87,12 @@ object Volume {
     if (Ec2VolumeId != null) __obj.updateDynamic("Ec2VolumeId")(Ec2VolumeId)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (MountPoint != null) __obj.updateDynamic("MountPoint")(MountPoint)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId)
     if (Region != null) __obj.updateDynamic("Region")(Region)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status)
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType)

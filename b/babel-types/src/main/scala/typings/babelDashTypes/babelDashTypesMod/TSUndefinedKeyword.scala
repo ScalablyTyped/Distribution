@@ -11,23 +11,9 @@ trait TSUndefinedKeyword
   var type_TSUndefinedKeyword: typings.babelDashTypes.babelDashTypesStrings.TSUndefinedKeyword
 }
 
-object TSUndefinedKeyword {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.TSUndefinedKeyword,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSUndefinedKeyword = {
-    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    __obj.asInstanceOf[TSUndefinedKeyword]
-  }
+@JSImport("babel-types", "TSUndefinedKeyword")
+@js.native
+object TSUndefinedKeyword extends js.Object {
+  def apply(): TSUndefinedKeyword = js.native
 }
 

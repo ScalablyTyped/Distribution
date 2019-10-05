@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cognitoResourceServerMod
 
-import typings.atPulumiAws.typesOutputMod.cognitoNs.ResourceServerScope
+import typings.atPulumiAws.typesOutputMod.cognito.ResourceServerScope
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

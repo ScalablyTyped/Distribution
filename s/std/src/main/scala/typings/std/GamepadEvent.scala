@@ -13,12 +13,6 @@ trait GamepadEvent extends Event {
 
 @JSGlobal("GamepadEvent")
 @js.native
-class GamepadEventCls protected () extends GamepadEvent {
-  def this(`type`: java.lang.String, eventInitDict: GamepadEventInit) = this()
-}
-
-@JSGlobal("GamepadEvent")
-@js.native
 object GamepadEvent
   extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ GamepadEventInit, GamepadEvent]
 

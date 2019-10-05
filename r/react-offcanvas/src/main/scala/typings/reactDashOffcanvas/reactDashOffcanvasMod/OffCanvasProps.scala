@@ -22,14 +22,15 @@ trait OffCanvasProps extends js.Object {
 object OffCanvasProps {
   @scala.inline
   def apply(
-    children: ReactNode,
+    children: ReactNode = null,
     effect: push | overlay | parallax = null,
     isMenuOpened: js.UndefOr[Boolean] = js.undefined,
     position: left | right = null,
     transitionDuration: Int | Double = null,
     width: Int | Double = null
   ): OffCanvasProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (!js.isUndefined(isMenuOpened)) __obj.updateDynamic("isMenuOpened")(isMenuOpened)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

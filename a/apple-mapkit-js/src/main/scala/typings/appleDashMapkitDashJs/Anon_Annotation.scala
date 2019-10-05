@@ -1,7 +1,7 @@
 package typings.appleDashMapkitDashJs
 
-import typings.appleDashMapkitDashJs.mapkitNs.Annotation
-import typings.appleDashMapkitDashJs.mapkitNs.Overlay
+import typings.appleDashMapkitDashJs.mapkit.Annotation
+import typings.appleDashMapkitDashJs.mapkit.Overlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

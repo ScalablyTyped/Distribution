@@ -17,10 +17,10 @@ trait ConfigurationId extends js.Object {
 
 object ConfigurationId {
   @scala.inline
-  def apply(Id: __string = null, Revision: js.UndefOr[__integer] = js.undefined): ConfigurationId = {
+  def apply(Id: __string = null, Revision: Int | Double = null): ConfigurationId = {
     val __obj = js.Dynamic.literal()
     if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision)
+    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationId]
   }
 }

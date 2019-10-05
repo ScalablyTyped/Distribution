@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableMod.underscoreHandsontableNs.Core
+import typings.handsontable.handsontableMod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

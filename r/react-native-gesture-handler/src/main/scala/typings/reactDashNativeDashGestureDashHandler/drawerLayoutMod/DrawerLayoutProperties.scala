@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashGestureDashHandler.drawerLayoutMod
 
 import typings.react.reactMod.ReactNode
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.StatusBarAnimation
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle

@@ -13,9 +13,9 @@ trait BatchArrayProperties extends js.Object {
 
 object BatchArrayProperties {
   @scala.inline
-  def apply(Size: js.UndefOr[Integer] = js.undefined): BatchArrayProperties = {
+  def apply(Size: Int | Double = null): BatchArrayProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchArrayProperties]
   }
 }

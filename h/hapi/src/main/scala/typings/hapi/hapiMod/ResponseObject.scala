@@ -1,9 +1,9 @@
 package typings.hapi.hapiMod
 
 import typings.hapi.Anon_Vary
-import typings.hapi.hapiMod.JsonNs.StringifyReplacer
-import typings.hapi.hapiMod.LifecycleNs.ReturnValue
-import typings.hapi.hapiMod.UtilNs.Dictionary
+import typings.hapi.hapiMod.Json.StringifyReplacer
+import typings.hapi.hapiMod.Lifecycle.ReturnValue
+import typings.hapi.hapiMod.Util.Dictionary
 import typings.hapi.hapiStrings.ascii
 import typings.hapi.hapiStrings.base64
 import typings.hapi.hapiStrings.binary

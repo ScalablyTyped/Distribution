@@ -1,8 +1,8 @@
 package typings.atPulumiAws.opsworksApplicationMod
 
-import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationAppSource
-import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationEnvironment
-import typings.atPulumiAws.typesOutputMod.opsworksNs.ApplicationSslConfiguration
+import typings.atPulumiAws.typesOutputMod.opsworks.ApplicationAppSource
+import typings.atPulumiAws.typesOutputMod.opsworks.ApplicationEnvironment
+import typings.atPulumiAws.typesOutputMod.opsworks.ApplicationSslConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

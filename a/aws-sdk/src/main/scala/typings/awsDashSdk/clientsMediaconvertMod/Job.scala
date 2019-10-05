@@ -101,15 +101,15 @@ object Job {
     BillingTagsSource: BillingTagsSource = null,
     CreatedAt: __timestampUnix = null,
     CurrentPhase: JobPhase = null,
-    ErrorCode: js.UndefOr[__integer] = js.undefined,
+    ErrorCode: Int | Double = null,
     ErrorMessage: __string = null,
     Id: __string = null,
-    JobPercentComplete: js.UndefOr[__integer] = js.undefined,
+    JobPercentComplete: Int | Double = null,
     JobTemplate: __string = null,
     OutputGroupDetails: __listOfOutputGroupDetail = null,
-    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
+    Priority: Int | Double = null,
     Queue: __string = null,
-    RetryCount: js.UndefOr[__integer] = js.undefined,
+    RetryCount: Int | Double = null,
     SimulateReservedQueue: SimulateReservedQueue = null,
     Status: JobStatus = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
@@ -122,15 +122,15 @@ object Job {
     if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (CurrentPhase != null) __obj.updateDynamic("CurrentPhase")(CurrentPhase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorCode)) __obj.updateDynamic("ErrorCode")(ErrorCode)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
     if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(JobPercentComplete)) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete)
+    if (JobPercentComplete != null) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete.asInstanceOf[js.Any])
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
     if (OutputGroupDetails != null) __obj.updateDynamic("OutputGroupDetails")(OutputGroupDetails)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
-    if (!js.isUndefined(RetryCount)) __obj.updateDynamic("RetryCount")(RetryCount)
+    if (RetryCount != null) __obj.updateDynamic("RetryCount")(RetryCount.asInstanceOf[js.Any])
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])

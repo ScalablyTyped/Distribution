@@ -21,3 +21,10 @@ class IfStmt protected () extends Statement {
   var trueCase: js.Array[Statement] = js.native
 }
 
+@JSImport("@angular/compiler/src/output/output_ast", "ifStmt")
+@js.native
+object ifStmt extends js.Object {
+  def apply(condition: Expression, thenClause: js.Array[Statement]): IfStmt = js.native
+  def apply(condition: Expression, thenClause: js.Array[Statement], elseClause: js.Array[Statement]): IfStmt = js.native
+}
+

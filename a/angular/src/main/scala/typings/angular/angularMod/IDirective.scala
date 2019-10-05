@@ -44,7 +44,7 @@ object IDirective {
   @scala.inline
   def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
     bindToController: Boolean | StringDictionary[String] = null,
-    compile: IDirectiveCompileFn[TScope, TElement, TAttributes, TController] = null,
+    compile: (TElement, TAttributes, /* transclude */ ITranscludeFunction) => Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
     controller: String | Injectable[IControllerConstructor] = null,
     controllerAs: String = null,
     link: (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
@@ -62,7 +62,7 @@ object IDirective {
   ): IDirective[TScope, TElement, TAttributes, TController] = {
     val __obj = js.Dynamic.literal()
     if (bindToController != null) __obj.updateDynamic("bindToController")(bindToController.asInstanceOf[js.Any])
-    if (compile != null) __obj.updateDynamic("compile")(compile)
+    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction3(compile))
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])

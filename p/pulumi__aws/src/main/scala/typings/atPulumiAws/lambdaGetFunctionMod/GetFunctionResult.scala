@@ -1,10 +1,10 @@
 package typings.atPulumiAws.lambdaGetFunctionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionDeadLetterConfig
-import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionEnvironment
-import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionTracingConfig
-import typings.atPulumiAws.typesOutputMod.lambdaNs.GetFunctionVpcConfig
+import typings.atPulumiAws.typesOutputMod.lambda.GetFunctionDeadLetterConfig
+import typings.atPulumiAws.typesOutputMod.lambda.GetFunctionEnvironment
+import typings.atPulumiAws.typesOutputMod.lambda.GetFunctionTracingConfig
+import typings.atPulumiAws.typesOutputMod.lambda.GetFunctionVpcConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

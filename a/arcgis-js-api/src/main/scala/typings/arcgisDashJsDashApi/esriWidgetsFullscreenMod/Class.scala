@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFullscreenMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Fullscreen
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FullscreenProperties
+import typings.arcgisDashJsDashApi.__esri.Fullscreen
+import typings.arcgisDashJsDashApi.__esri.FullscreenProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

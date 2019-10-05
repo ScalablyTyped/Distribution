@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashFirebase
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldPath
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.firestore.FieldPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

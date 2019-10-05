@@ -1,7 +1,7 @@
 package typings.tilebelt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tilebelt.tilebeltNs.TilebeltStatic
+import typings.tilebelt.tilebelt.TilebeltStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

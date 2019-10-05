@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsLabelSymbol3DMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LabelSymbol3D
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LabelSymbol3DProperties
+import typings.arcgisDashJsDashApi.__esri.LabelSymbol3D
+import typings.arcgisDashJsDashApi.__esri.LabelSymbol3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

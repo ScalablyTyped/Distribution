@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupLayerOptionsMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerOptions
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LayerOptionsProperties
+import typings.arcgisDashJsDashApi.__esri.LayerOptions
+import typings.arcgisDashJsDashApi.__esri.LayerOptionsProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

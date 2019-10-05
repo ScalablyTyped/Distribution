@@ -45,7 +45,7 @@ object PutLifecycleHookType {
     AutoScalingGroupName: ResourceName,
     LifecycleHookName: AsciiStringMaxLen255,
     DefaultResult: LifecycleActionResult = null,
-    HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined,
+    HeartbeatTimeout: Int | Double = null,
     LifecycleTransition: LifecycleTransition = null,
     NotificationMetadata: XmlStringMaxLen1023 = null,
     NotificationTargetARN: NotificationTargetResourceName = null,
@@ -53,7 +53,7 @@ object PutLifecycleHookType {
   ): PutLifecycleHookType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName, LifecycleHookName = LifecycleHookName)
     if (DefaultResult != null) __obj.updateDynamic("DefaultResult")(DefaultResult)
-    if (!js.isUndefined(HeartbeatTimeout)) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout)
+    if (HeartbeatTimeout != null) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.asInstanceOf[js.Any])
     if (LifecycleTransition != null) __obj.updateDynamic("LifecycleTransition")(LifecycleTransition)
     if (NotificationMetadata != null) __obj.updateDynamic("NotificationMetadata")(NotificationMetadata)
     if (NotificationTargetARN != null) __obj.updateDynamic("NotificationTargetARN")(NotificationTargetARN)

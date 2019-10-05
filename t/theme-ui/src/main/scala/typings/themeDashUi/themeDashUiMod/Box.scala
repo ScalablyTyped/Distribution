@@ -1,5 +1,6 @@
 package typings.themeDashUi.themeDashUiMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.themeDashUi.Anon_As
@@ -21,4 +22,13 @@ class Box protected ()
     context: js.Any
   ) = this()
 }
+
+@JSImport("theme-ui", "Box")
+@js.native
+object Box
+  extends TopLevel[
+      SxComponent[
+        (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps
+      ]
+    ]
 

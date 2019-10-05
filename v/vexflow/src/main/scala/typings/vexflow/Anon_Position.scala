@@ -1,7 +1,7 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.FlowNs.Note
-import typings.vexflow.VexNs.FlowNs.TextBracketNs.Positions
+import typings.vexflow.Vex.Flow.Note
+import typings.vexflow.Vex.Flow.TextBracket.Positions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -121,31 +121,31 @@ object RestoreDBInstanceFromDBSnapshotMessage {
   def apply(
     DBInstanceIdentifier: String,
     DBSnapshotIdentifier: String,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
     DBInstanceClass: String = null,
     DBName: String = null,
     DBParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
+    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
     Domain: String = null,
     DomainIAMRoleName: String = null,
     EnableCloudwatchLogsExports: LogTypeList = null,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
+    EnableIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     LicenseModel: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
+    MultiAZ: js.UndefOr[scala.Boolean] = js.undefined,
     OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | scala.Double = null,
     ProcessorFeatures: ProcessorFeatureList = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     StorageType: String = null,
     Tags: TagList = null,
     TdeCredentialArn: String = null,
     TdeCredentialPassword: String = null,
-    UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined,
+    UseDefaultProcessorFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBInstanceFromDBSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier, DBSnapshotIdentifier = DBSnapshotIdentifier)
@@ -162,11 +162,11 @@ object RestoreDBInstanceFromDBSnapshotMessage {
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)

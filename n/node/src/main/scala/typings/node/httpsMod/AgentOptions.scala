@@ -2,7 +2,8 @@ package typings.node.httpsMod
 
 import typings.node.Buffer
 import typings.node.Error
-import typings.node.netMod.LookupFunction
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.tlsMod.PeerCertificate
@@ -54,7 +55,12 @@ object AgentOptions {
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveMsecs: Int | Double = null,
     key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    lookup: LookupFunction = null,
+    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* address */ java.lang.String, 
+      /* family */ Double, 
+      Unit
+    ]) => Unit = null,
     maxCachedSessions: Int | Double = null,
     maxFreeSockets: Int | Double = null,
     maxSockets: Int | Double = null,
@@ -93,7 +99,7 @@ object AgentOptions {
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
     if (keepAliveMsecs != null) __obj.updateDynamic("keepAliveMsecs")(keepAliveMsecs.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (maxCachedSessions != null) __obj.updateDynamic("maxCachedSessions")(maxCachedSessions.asInstanceOf[js.Any])
     if (maxFreeSockets != null) __obj.updateDynamic("maxFreeSockets")(maxFreeSockets.asInstanceOf[js.Any])
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])

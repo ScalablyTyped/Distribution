@@ -22,7 +22,7 @@ trait DownloadDBLogFilePortionDetails extends js.Object {
 object DownloadDBLogFilePortionDetails {
   @scala.inline
   def apply(
-    AdditionalDataPending: js.UndefOr[Boolean] = js.undefined,
+    AdditionalDataPending: js.UndefOr[scala.Boolean] = js.undefined,
     LogFileData: String = null,
     Marker: String = null
   ): DownloadDBLogFilePortionDetails = {

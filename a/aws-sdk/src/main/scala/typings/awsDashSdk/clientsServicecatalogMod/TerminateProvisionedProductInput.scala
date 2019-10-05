@@ -32,7 +32,7 @@ object TerminateProvisionedProductInput {
   def apply(
     TerminateToken: IdempotencyToken,
     AcceptLanguage: AcceptLanguage = null,
-    IgnoreErrors: js.UndefOr[IgnoreErrors] = js.undefined,
+    IgnoreErrors: js.UndefOr[Boolean] = js.undefined,
     ProvisionedProductId: Id = null,
     ProvisionedProductName: ProvisionedProductNameOrArn = null
   ): TerminateProvisionedProductInput = {

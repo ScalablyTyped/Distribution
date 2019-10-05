@@ -1,6 +1,6 @@
 package typings.qlikDashEngineapi
 
-import typings.qlikDashEngineapi.EngineAPINs.IBNFDef
+import typings.qlikDashEngineapi.EngineAPI.IBNFDef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

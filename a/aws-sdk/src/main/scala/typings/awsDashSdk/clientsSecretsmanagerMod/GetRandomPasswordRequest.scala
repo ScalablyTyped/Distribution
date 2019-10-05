@@ -43,13 +43,13 @@ object GetRandomPasswordRequest {
   @scala.inline
   def apply(
     ExcludeCharacters: ExcludeCharactersType = null,
-    ExcludeLowercase: js.UndefOr[ExcludeLowercaseType] = js.undefined,
-    ExcludeNumbers: js.UndefOr[ExcludeNumbersType] = js.undefined,
-    ExcludePunctuation: js.UndefOr[ExcludePunctuationType] = js.undefined,
-    ExcludeUppercase: js.UndefOr[ExcludeUppercaseType] = js.undefined,
-    IncludeSpace: js.UndefOr[IncludeSpaceType] = js.undefined,
-    PasswordLength: js.UndefOr[PasswordLengthType] = js.undefined,
-    RequireEachIncludedType: js.UndefOr[RequireEachIncludedTypeType] = js.undefined
+    ExcludeLowercase: js.UndefOr[Boolean] = js.undefined,
+    ExcludeNumbers: js.UndefOr[Boolean] = js.undefined,
+    ExcludePunctuation: js.UndefOr[Boolean] = js.undefined,
+    ExcludeUppercase: js.UndefOr[Boolean] = js.undefined,
+    IncludeSpace: js.UndefOr[Boolean] = js.undefined,
+    PasswordLength: Int | Double = null,
+    RequireEachIncludedType: js.UndefOr[Boolean] = js.undefined
   ): GetRandomPasswordRequest = {
     val __obj = js.Dynamic.literal()
     if (ExcludeCharacters != null) __obj.updateDynamic("ExcludeCharacters")(ExcludeCharacters)
@@ -58,7 +58,7 @@ object GetRandomPasswordRequest {
     if (!js.isUndefined(ExcludePunctuation)) __obj.updateDynamic("ExcludePunctuation")(ExcludePunctuation)
     if (!js.isUndefined(ExcludeUppercase)) __obj.updateDynamic("ExcludeUppercase")(ExcludeUppercase)
     if (!js.isUndefined(IncludeSpace)) __obj.updateDynamic("IncludeSpace")(IncludeSpace)
-    if (!js.isUndefined(PasswordLength)) __obj.updateDynamic("PasswordLength")(PasswordLength)
+    if (PasswordLength != null) __obj.updateDynamic("PasswordLength")(PasswordLength.asInstanceOf[js.Any])
     if (!js.isUndefined(RequireEachIncludedType)) __obj.updateDynamic("RequireEachIncludedType")(RequireEachIncludedType)
     __obj.asInstanceOf[GetRandomPasswordRequest]
   }

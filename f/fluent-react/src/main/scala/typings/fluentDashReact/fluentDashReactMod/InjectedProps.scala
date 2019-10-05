@@ -10,8 +10,8 @@ trait InjectedProps extends js.Object {
 
 object InjectedProps {
   @scala.inline
-  def apply(getString: GetString): InjectedProps = {
-    val __obj = js.Dynamic.literal(getString = getString)
+  def apply(getString: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): InjectedProps = {
+    val __obj = js.Dynamic.literal(getString = js.Any.fromFunction2(getString))
   
     __obj.asInstanceOf[InjectedProps]
   }

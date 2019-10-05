@@ -25,14 +25,14 @@ object Anon_InheritResolversFromInterfaces {
     schemas: js.Array[String | GraphQLSchema | DocumentNode | js.Array[GraphQLNamedType]],
     inheritResolversFromInterfaces: js.UndefOr[Boolean] = js.undefined,
     mergeDirectives: js.UndefOr[Boolean] = js.undefined,
-    onTypeConflict: OnTypeConflict = null,
+    onTypeConflict: (/* left */ GraphQLNamedType, /* right */ GraphQLNamedType, /* info */ js.UndefOr[Anon_Left]) => GraphQLNamedType = null,
     resolvers: IResolversParameter = null,
     schemaDirectives: StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
   ): Anon_InheritResolversFromInterfaces = {
     val __obj = js.Dynamic.literal(schemas = schemas)
     if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
     if (!js.isUndefined(mergeDirectives)) __obj.updateDynamic("mergeDirectives")(mergeDirectives)
-    if (onTypeConflict != null) __obj.updateDynamic("onTypeConflict")(onTypeConflict)
+    if (onTypeConflict != null) __obj.updateDynamic("onTypeConflict")(js.Any.fromFunction3(onTypeConflict))
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives)
     __obj.asInstanceOf[Anon_InheritResolversFromInterfaces]

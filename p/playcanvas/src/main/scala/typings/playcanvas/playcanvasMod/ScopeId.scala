@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ScopeId")
 @js.native
 class ScopeId protected ()
-  extends typings.playcanvas.pcNs.ScopeId {
+  extends typings.playcanvas.pc.ScopeId {
   def this(name: String) = this()
 }
 

@@ -1,48 +1,48 @@
 package typings.titanium
 
-import typings.titanium.TitaniumNs.UINs.ActivityIndicator
-import typings.titanium.TitaniumNs.UINs.AlertDialog
-import typings.titanium.TitaniumNs.UINs.Animation
-import typings.titanium.TitaniumNs.UINs.AttributedString
-import typings.titanium.TitaniumNs.UINs.Button
-import typings.titanium.TitaniumNs.UINs.ButtonBar
-import typings.titanium.TitaniumNs.UINs.CoverFlowView
-import typings.titanium.TitaniumNs.UINs.DashboardItem
-import typings.titanium.TitaniumNs.UINs.DashboardView
-import typings.titanium.TitaniumNs.UINs.EmailDialog
-import typings.titanium.TitaniumNs.UINs.ImageView
-import typings.titanium.TitaniumNs.UINs.Label
-import typings.titanium.TitaniumNs.UINs.ListSection
-import typings.titanium.TitaniumNs.UINs.ListView
-import typings.titanium.TitaniumNs.UINs.MaskedImage
-import typings.titanium.TitaniumNs.UINs.Matrix2D
-import typings.titanium.TitaniumNs.UINs.Matrix3D
-import typings.titanium.TitaniumNs.UINs.NavigationWindow
-import typings.titanium.TitaniumNs.UINs.Notification
-import typings.titanium.TitaniumNs.UINs.OptionDialog
-import typings.titanium.TitaniumNs.UINs.Picker
-import typings.titanium.TitaniumNs.UINs.PickerColumn
-import typings.titanium.TitaniumNs.UINs.PickerRow
-import typings.titanium.TitaniumNs.UINs.ProgressBar
-import typings.titanium.TitaniumNs.UINs.RefreshControl
-import typings.titanium.TitaniumNs.UINs.ScrollView
-import typings.titanium.TitaniumNs.UINs.ScrollableView
-import typings.titanium.TitaniumNs.UINs.SearchBar
-import typings.titanium.TitaniumNs.UINs.ShortcutItem
-import typings.titanium.TitaniumNs.UINs.Slider
-import typings.titanium.TitaniumNs.UINs.Switch
-import typings.titanium.TitaniumNs.UINs.Tab
-import typings.titanium.TitaniumNs.UINs.TabGroup
-import typings.titanium.TitaniumNs.UINs.TabbedBar
-import typings.titanium.TitaniumNs.UINs.TableView
-import typings.titanium.TitaniumNs.UINs.TableViewRow
-import typings.titanium.TitaniumNs.UINs.TableViewSection
-import typings.titanium.TitaniumNs.UINs.TextArea
-import typings.titanium.TitaniumNs.UINs.TextField
-import typings.titanium.TitaniumNs.UINs.Toolbar
-import typings.titanium.TitaniumNs.UINs.View
-import typings.titanium.TitaniumNs.UINs.WebView
-import typings.titanium.TitaniumNs.UINs.Window
+import typings.titanium.Titanium.UI.ActivityIndicator
+import typings.titanium.Titanium.UI.AlertDialog
+import typings.titanium.Titanium.UI.Animation
+import typings.titanium.Titanium.UI.AttributedString
+import typings.titanium.Titanium.UI.Button
+import typings.titanium.Titanium.UI.ButtonBar
+import typings.titanium.Titanium.UI.CoverFlowView
+import typings.titanium.Titanium.UI.DashboardItem
+import typings.titanium.Titanium.UI.DashboardView
+import typings.titanium.Titanium.UI.EmailDialog
+import typings.titanium.Titanium.UI.ImageView
+import typings.titanium.Titanium.UI.Label
+import typings.titanium.Titanium.UI.ListSection
+import typings.titanium.Titanium.UI.ListView
+import typings.titanium.Titanium.UI.MaskedImage
+import typings.titanium.Titanium.UI.Matrix2D
+import typings.titanium.Titanium.UI.Matrix3D
+import typings.titanium.Titanium.UI.NavigationWindow
+import typings.titanium.Titanium.UI.Notification
+import typings.titanium.Titanium.UI.OptionDialog
+import typings.titanium.Titanium.UI.Picker
+import typings.titanium.Titanium.UI.PickerColumn
+import typings.titanium.Titanium.UI.PickerRow
+import typings.titanium.Titanium.UI.ProgressBar
+import typings.titanium.Titanium.UI.RefreshControl
+import typings.titanium.Titanium.UI.ScrollView
+import typings.titanium.Titanium.UI.ScrollableView
+import typings.titanium.Titanium.UI.SearchBar
+import typings.titanium.Titanium.UI.ShortcutItem
+import typings.titanium.Titanium.UI.Slider
+import typings.titanium.Titanium.UI.Switch
+import typings.titanium.Titanium.UI.Tab
+import typings.titanium.Titanium.UI.TabGroup
+import typings.titanium.Titanium.UI.TabbedBar
+import typings.titanium.Titanium.UI.TableView
+import typings.titanium.Titanium.UI.TableViewRow
+import typings.titanium.Titanium.UI.TableViewSection
+import typings.titanium.Titanium.UI.TextArea
+import typings.titanium.Titanium.UI.TextField
+import typings.titanium.Titanium.UI.Toolbar
+import typings.titanium.Titanium.UI.View
+import typings.titanium.Titanium.UI.WebView
+import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -430,12 +430,12 @@ trait TypeofUI extends js.Object {
   /**
   		 * A set of constants for the styles available for <Titanium.UI.ActivityIndicator> objects.
   		 */
-  val ActivityIndicatorStyleNs: TypeofActivityIndicatorStyle = js.native
+  val ActivityIndicatorStyle: TypeofActivityIndicatorStyle = js.native
   /**
   		 * The Android-specific UI capabilities. All properties, methods and events in this namespace will
   		 * only work on Android systems.
   		 */
-  val AndroidNs: TypeofAndroid = js.native
+  val Android: TypeofAndroid = js.native
   /**
   		 * Use with [MaskedImage.mode](Titanium.UI.MaskedImage.mode) to specify a blend mode.
   		 */
@@ -559,7 +559,7 @@ trait TypeofUI extends js.Object {
   /**
   		 * A module used for accessing clipboard data.
   		 */
-  val ClipboardNs: TypeofClipboard = js.native
+  val Clipboard: TypeofClipboard = js.native
   /**
   		 * Specifies that all the edges of the window can extend.
   		 */
@@ -1101,16 +1101,16 @@ trait TypeofUI extends js.Object {
   		 * Apple iOS specific UI capabilities.  All properties, methods and events in this namespace will
   		 * only work on Apple iOS devices.
   		 */
-  val iOSNs: TypeofiOS = js.native
+  val iOS: TypeofiOS = js.native
   /**
   		 * iPad specific UI capabilities.
   		 */
-  val iPadNs: TypeofiPad = js.native
+  val iPad: TypeofiPad = js.native
   /**
   		 * The iPhone/iPad-specific UI capabilities.  All properties, methods and events in this namespace
   		 * will only work on Apple iOS systems.
   		 */
-  val iPhoneNs: TypeofiPhone = js.native
+  val iPhone: TypeofiPhone = js.native
   /**
   		 * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
   		 */

@@ -21,7 +21,7 @@ trait ADMChannelRequest extends js.Object {
 
 object ADMChannelRequest {
   @scala.inline
-  def apply(ClientId: __string, ClientSecret: __string, Enabled: js.UndefOr[__boolean] = js.undefined): ADMChannelRequest = {
+  def apply(ClientId: __string, ClientSecret: __string, Enabled: js.UndefOr[Boolean] = js.undefined): ADMChannelRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId, ClientSecret = ClientSecret)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[ADMChannelRequest]

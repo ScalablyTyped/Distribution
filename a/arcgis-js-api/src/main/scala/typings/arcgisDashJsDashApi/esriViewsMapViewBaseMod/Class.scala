@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriViewsMapViewBaseMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapViewBase
+import typings.arcgisDashJsDashApi.__esri.MapViewBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

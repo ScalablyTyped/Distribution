@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "natsort"
-version := "1.0-dt-20190425Z-c1c790"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20190425Z-1d8e79"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

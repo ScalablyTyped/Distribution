@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "emotion__is-prop-valid"
-version := "0.8.3-513f2e"
-scalaVersion := "2.12.9"
+version := "0.8.3-0fe629"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

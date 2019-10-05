@@ -1,0 +1,20 @@
+package typings.atPulumiAws.typesInputMod.batch
+
+import typings.atPulumiPulumi.outputMod.Input
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait JobDefinitionTimeout extends js.Object {
+  var attemptDurationSeconds: js.UndefOr[Input[Double]] = js.undefined
+}
+
+object JobDefinitionTimeout {
+  @scala.inline
+  def apply(attemptDurationSeconds: Input[Double] = null): JobDefinitionTimeout = {
+    val __obj = js.Dynamic.literal()
+    if (attemptDurationSeconds != null) __obj.updateDynamic("attemptDurationSeconds")(attemptDurationSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobDefinitionTimeout]
+  }
+}
+

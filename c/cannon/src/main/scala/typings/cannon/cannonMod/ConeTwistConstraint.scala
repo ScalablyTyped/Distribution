@@ -1,6 +1,6 @@
 package typings.cannon.cannonMod
 
-import typings.cannon.CANNONNs.IConeTwistConstraintOptions
+import typings.cannon.CANNON.IConeTwistConstraintOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "ConeTwistConstraint")
 @js.native
 class ConeTwistConstraint protected ()
-  extends typings.cannon.CANNONNs.ConeTwistConstraint {
-  def this(bodyA: typings.cannon.CANNONNs.Body, bodyB: typings.cannon.CANNONNs.Body) = this()
+  extends typings.cannon.CANNON.ConeTwistConstraint {
+  def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()
   def this(
-    bodyA: typings.cannon.CANNONNs.Body,
-    bodyB: typings.cannon.CANNONNs.Body,
+    bodyA: typings.cannon.CANNON.Body,
+    bodyB: typings.cannon.CANNON.Body,
     options: IConeTwistConstraintOptions
   ) = this()
 }

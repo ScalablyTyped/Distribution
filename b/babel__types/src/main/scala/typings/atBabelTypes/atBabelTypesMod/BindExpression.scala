@@ -40,3 +40,9 @@ object BindExpression {
   }
 }
 
+@JSImport("@babel/types", "bindExpression")
+@js.native
+object bindExpression extends js.Object {
+  def apply(`object`: js.Any, callee: js.Any): BindExpression = js.native
+}
+

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolRoleAttachmentMod
 
-import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolRoleAttachmentRoleMapping
-import typings.atPulumiAws.typesOutputMod.cognitoNs.IdentityPoolRoleAttachmentRoles
+import typings.atPulumiAws.typesOutputMod.cognito.IdentityPoolRoleAttachmentRoleMapping
+import typings.atPulumiAws.typesOutputMod.cognito.IdentityPoolRoleAttachmentRoles
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

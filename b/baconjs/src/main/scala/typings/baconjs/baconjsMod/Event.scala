@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("baconjs", "Event")
 @js.native
 class Event[A] ()
-  extends typings.baconjs.BaconNs.Event[A]
+  extends typings.baconjs.Bacon.Event[A]
 

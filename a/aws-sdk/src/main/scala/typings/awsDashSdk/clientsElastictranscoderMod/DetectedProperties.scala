@@ -30,18 +30,18 @@ trait DetectedProperties extends js.Object {
 object DetectedProperties {
   @scala.inline
   def apply(
-    DurationMillis: js.UndefOr[NullableLong] = js.undefined,
-    FileSize: js.UndefOr[NullableLong] = js.undefined,
+    DurationMillis: Int | Double = null,
+    FileSize: Int | Double = null,
     FrameRate: FloatString = null,
-    Height: js.UndefOr[NullableInteger] = js.undefined,
-    Width: js.UndefOr[NullableInteger] = js.undefined
+    Height: Int | Double = null,
+    Width: Int | Double = null
   ): DetectedProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationMillis)) __obj.updateDynamic("DurationMillis")(DurationMillis)
-    if (!js.isUndefined(FileSize)) __obj.updateDynamic("FileSize")(FileSize)
+    if (DurationMillis != null) __obj.updateDynamic("DurationMillis")(DurationMillis.asInstanceOf[js.Any])
+    if (FileSize != null) __obj.updateDynamic("FileSize")(FileSize.asInstanceOf[js.Any])
     if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate)
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height)
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width)
+    if (Height != null) __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedProperties]
   }
 }

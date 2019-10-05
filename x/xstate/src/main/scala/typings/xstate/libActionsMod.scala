@@ -111,9 +111,8 @@ object libActionsMod extends js.Object {
   def toActivityDefinition[TContext, TEvent /* <: EventObject */](action: ActivityDefinition[TContext, TEvent]): ActivityDefinition[TContext, TEvent] = js.native
   def toEventObject[TEvent /* <: EventObject */](event: Event[TEvent]): TEvent = js.native
   def toEventObject[TEvent /* <: EventObject */](event: Event[TEvent], payload: (Record[String, _]) with js.Object): TEvent = js.native
-  @JSName("actionTypes")
   @js.native
-  object actionTypesNs extends js.Object {
+  object actionTypes extends js.Object {
     val after: String | Double = js.native
     val assign: String | Double = js.native
     val cancel: String | Double = js.native

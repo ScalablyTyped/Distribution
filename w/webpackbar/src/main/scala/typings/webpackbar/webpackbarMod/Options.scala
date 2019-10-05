@@ -1,6 +1,6 @@
 package typings.webpackbar.webpackbarMod
 
-import typings.node.processMod.Global.NodeJSNs.WriteStream
+import typings.node.processMod.Global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

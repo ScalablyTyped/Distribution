@@ -20,9 +20,9 @@ trait TimecodeConfig extends js.Object {
 
 object TimecodeConfig {
   @scala.inline
-  def apply(Source: TimecodeConfigSource, SyncThreshold: js.UndefOr[__integerMin1Max1000000] = js.undefined): TimecodeConfig = {
+  def apply(Source: TimecodeConfigSource, SyncThreshold: Int | Double = null): TimecodeConfig = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
-    if (!js.isUndefined(SyncThreshold)) __obj.updateDynamic("SyncThreshold")(SyncThreshold)
+    if (SyncThreshold != null) __obj.updateDynamic("SyncThreshold")(SyncThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeConfig]
   }
 }

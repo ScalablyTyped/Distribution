@@ -1,6 +1,7 @@
 package typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod
 
 import typings.atIonicCore.distTypesInterfaceMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,12 +31,12 @@ object AlertOptions {
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     buttons: js.Array[AlertButton | String] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: AnimationBuilder = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     header: String = null,
     id: String = null,
     inputs: js.Array[AlertInput] = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: AnimationBuilder = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     message: String = null,
     mode: Mode = null,
     subHeader: String = null,
@@ -46,12 +47,12 @@ object AlertOptions {
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose)
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (message != null) __obj.updateDynamic("message")(message)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (subHeader != null) __obj.updateDynamic("subHeader")(subHeader)

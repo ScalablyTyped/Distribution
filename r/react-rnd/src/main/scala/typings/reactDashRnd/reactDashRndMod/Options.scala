@@ -2,9 +2,13 @@ package typings.reactDashRnd.reactDashRndMod
 
 import typings.reactDashRnd.Anon_Height
 import typings.reactDashRnd.Anon_X
+import typings.reactDashRnd.reactDashRndNumbers.`false`
 import typings.reactDashRnd.reactDashRndStrings.body
 import typings.reactDashRnd.reactDashRndStrings.parent
 import typings.reactDashRnd.reactDashRndStrings.window
+import typings.std.HTMLDivElement
+import typings.std.MouseEvent
+import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,12 +51,12 @@ object Options {
     maxWidth: Double | String,
     minHeight: Double | String,
     minWidth: Double | String,
-    onDrag: DraggableEventHandler,
-    onDragStart: DraggableEventHandler,
-    onDragStop: DraggableEventHandler,
+    onDrag: (/* e */ MouseEvent | TouchEvent, /* data */ DraggableData) => Unit | `false`,
+    onDragStart: (/* e */ MouseEvent | TouchEvent, /* data */ DraggableData) => Unit | `false`,
+    onDragStop: (/* e */ MouseEvent | TouchEvent, /* data */ DraggableData) => Unit | `false`,
     onResize: () => Unit,
     onResizeStart: () => Unit,
-    onResizeStop: ResizeHandler,
+    onResizeStop: (/* e */ MouseEvent | TouchEvent, /* direction */ Direction, /* ref */ HTMLDivElement, /* delta */ Size, /* position */ Position) => Unit,
     resizeHandleClasses: HandleClasses,
     resizeHandleStyles: HandleStyles,
     style: js.Any,
@@ -62,7 +66,7 @@ object Options {
     enableResizing: Enable = null,
     position: Anon_X = null
   ): Options = {
-    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], className = className, default = default, height = height.asInstanceOf[js.Any], lockAspectRatio = lockAspectRatio, maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], onDrag = onDrag, onDragStart = onDragStart, onDragStop = onDragStop, onResize = js.Any.fromFunction0(onResize), onResizeStart = js.Any.fromFunction0(onResizeStart), onResizeStop = onResizeStop, resizeHandleClasses = resizeHandleClasses, resizeHandleStyles = resizeHandleStyles, style = style, width = width.asInstanceOf[js.Any], z = z)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], className = className, default = default, height = height.asInstanceOf[js.Any], lockAspectRatio = lockAspectRatio, maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], onDrag = js.Any.fromFunction2(onDrag), onDragStart = js.Any.fromFunction2(onDragStart), onDragStop = js.Any.fromFunction2(onDragStop), onResize = js.Any.fromFunction0(onResize), onResizeStart = js.Any.fromFunction0(onResizeStart), onResizeStop = js.Any.fromFunction5(onResizeStop), resizeHandleClasses = resizeHandleClasses, resizeHandleStyles = resizeHandleStyles, style = style, width = width.asInstanceOf[js.Any], z = z)
     if (!js.isUndefined(disableDragging)) __obj.updateDynamic("disableDragging")(disableDragging)
     if (enableResizing != null) __obj.updateDynamic("enableResizing")(enableResizing)
     if (position != null) __obj.updateDynamic("position")(position)

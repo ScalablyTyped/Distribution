@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(source: Emitter, target: Emitter): EmitterPipe = js.native
-  def apply(source: Emitter, target: Emitter, emitMethodName: String | js.Symbol): EmitterPipe = js.native
+  def apply(source: Emitter, target: Emitter, emitMethodName: String): EmitterPipe = js.native
+  def apply(source: Emitter, target: Emitter, emitMethodName: js.Symbol): EmitterPipe = js.native
 }
 

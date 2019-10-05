@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
 import typings.node.Anon_End
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

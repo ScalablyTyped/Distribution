@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "MiniSignalBinding")
 @js.native
 class MiniSignalBinding ()
-  extends typings.pixiDotJs.PIXINs.MiniSignalBinding
+  extends typings.pixiDotJs.PIXI.MiniSignalBinding
 

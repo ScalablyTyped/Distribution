@@ -32,3 +32,9 @@ object BooleanLiteralTypeAnnotation {
   }
 }
 
+@JSImport("babel-types", "booleanLiteralTypeAnnotation")
+@js.native
+object booleanLiteralTypeAnnotation extends js.Object {
+  def apply(): BooleanLiteralTypeAnnotation = js.native
+}
+

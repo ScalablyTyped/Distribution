@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "StringUtilities")
 @js.native
 class StringUtilities ()
-  extends typings.typescriptDashServices.TypeScriptNs.StringUtilities
+  extends typings.typescriptDashServices.TypeScript.StringUtilities
 
 /* static members */
 @JSImport("typescript-services", "StringUtilities")

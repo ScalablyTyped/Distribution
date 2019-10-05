@@ -1,14 +1,14 @@
 package typings.nodeDashZendesk
 
-import typings.nodeDashZendesk.nodeDashZendeskMod.RequestsNs.CommentsNs.RequestType
-import typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.Priority
-import typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.Status
-import typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.TicketType
-import typings.nodeDashZendesk.nodeDashZendeskMod.TicketsNs.ViaChannel
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.IdentitiesNs.DeliverableState
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.IdentitiesNs.IdentityType
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.Role
-import typings.nodeDashZendesk.nodeDashZendeskMod.UsersNs.TicketRestriction
+import typings.nodeDashZendesk.nodeDashZendeskMod.Requests.Comments.RequestType
+import typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.Priority
+import typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.Status
+import typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.TicketType
+import typings.nodeDashZendesk.nodeDashZendeskMod.Tickets.ViaChannel
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.DeliverableState
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.IdentityType
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users.Role
+import typings.nodeDashZendesk.nodeDashZendeskMod.Users.TicketRestriction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ object nodeDashZendeskStrings {
   
   @js.native
   sealed trait completed
-    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Status
+    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Status
   
   @js.native
   sealed trait deliverable extends DeliverableState
@@ -56,7 +56,7 @@ object nodeDashZendeskStrings {
   
   @js.native
   sealed trait failed
-    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Status
+    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Status
   
   @js.native
   sealed trait google extends IdentityType
@@ -75,7 +75,7 @@ object nodeDashZendeskStrings {
   
   @js.native
   sealed trait killed
-    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Status
+    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Status
   
   @js.native
   sealed trait low extends Priority
@@ -109,7 +109,7 @@ object nodeDashZendeskStrings {
   
   @js.native
   sealed trait queued
-    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Status
+    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Status
   
   @js.native
   sealed trait requested extends TicketRestriction
@@ -140,7 +140,7 @@ object nodeDashZendeskStrings {
   
   @js.native
   sealed trait working
-    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatusesNs.Status
+    extends typings.nodeDashZendesk.nodeDashZendeskMod.JobStatuses.Status
   
   @scala.inline
   def Comment: Comment = "Comment".asInstanceOf[Comment]

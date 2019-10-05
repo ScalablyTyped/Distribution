@@ -1,5 +1,6 @@
 package typings.levelDashCodec.levelDashCodecMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,5 @@ trait Codec extends js.Object {
 
 @JSImport("level-codec", "Codec")
 @js.native
-class CodecCls () extends Codec {
-  def this(options: CodecOptions) = this()
-}
+object Codec extends TopLevel[CodecConstructor]
 

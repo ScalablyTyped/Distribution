@@ -27,7 +27,7 @@ object DescribeVoicesInput {
   @scala.inline
   def apply(
     Engine: Engine = null,
-    IncludeAdditionalLanguageCodes: js.UndefOr[IncludeAdditionalLanguageCodes] = js.undefined,
+    IncludeAdditionalLanguageCodes: js.UndefOr[Boolean] = js.undefined,
     LanguageCode: LanguageCode = null,
     NextToken: NextToken = null
   ): DescribeVoicesInput = {

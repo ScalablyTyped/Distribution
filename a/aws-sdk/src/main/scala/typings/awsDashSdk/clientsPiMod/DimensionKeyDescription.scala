@@ -24,12 +24,12 @@ object DimensionKeyDescription {
   def apply(
     Dimensions: DimensionMap = null,
     Partitions: MetricValuesList = null,
-    Total: js.UndefOr[Double] = js.undefined
+    Total: Int | scala.Double = null
   ): DimensionKeyDescription = {
     val __obj = js.Dynamic.literal()
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
     if (Partitions != null) __obj.updateDynamic("Partitions")(Partitions)
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total)
+    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionKeyDescription]
   }
 }

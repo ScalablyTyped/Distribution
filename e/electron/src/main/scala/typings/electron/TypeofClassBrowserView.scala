@@ -2,9 +2,9 @@ package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.electron.ElectronNs.BrowserView
-import typings.electron.ElectronNs.BrowserViewConstructorOptions
-import typings.electron.ElectronNs.WebContents
+import typings.electron.Electron.BrowserView
+import typings.electron.Electron.BrowserViewConstructorOptions
+import typings.electron.Electron.WebContents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

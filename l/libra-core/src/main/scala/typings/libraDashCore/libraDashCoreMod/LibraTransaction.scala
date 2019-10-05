@@ -14,18 +14,16 @@ trait LibraTransaction extends js.Object {
   var sequenceNumber: default
 }
 
-object LibraTransaction {
-  @scala.inline
+@JSImport("libra-core", "LibraTransaction")
+@js.native
+object LibraTransaction extends js.Object {
   def apply(
-    expirationTime: default,
-    gasConstraint: LibraGasConstraint,
     program: LibraProgram,
+    gasConstraint: LibraGasConstraint,
+    expirationTime: default,
     sendersAddress: Uint8Array,
     sequenceNumber: default
-  ): LibraTransaction = {
-    val __obj = js.Dynamic.literal(expirationTime = expirationTime, gasConstraint = gasConstraint, program = program, sendersAddress = sendersAddress, sequenceNumber = sequenceNumber)
-  
-    __obj.asInstanceOf[LibraTransaction]
-  }
+  ): Unit = js.native
+  def createTransfer(recipientAddress: String, numAccount: default): LibraTransaction = js.native
 }
 

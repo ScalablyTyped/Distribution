@@ -2,11 +2,11 @@ package typings.googleDashMaps
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.googlemaps.googleNs.mapsNs.placesNs.Autocomplete
-import typings.googlemaps.googleNs.mapsNs.placesNs.AutocompleteService
-import typings.googlemaps.googleNs.mapsNs.placesNs.AutocompleteSessionToken
-import typings.googlemaps.googleNs.mapsNs.placesNs.PlacesService
-import typings.googlemaps.googleNs.mapsNs.placesNs.SearchBox
+import typings.googlemaps.google.maps.places.Autocomplete
+import typings.googlemaps.google.maps.places.AutocompleteService
+import typings.googlemaps.google.maps.places.AutocompleteSessionToken
+import typings.googlemaps.google.maps.places.PlacesService
+import typings.googlemaps.google.maps.places.SearchBox
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -16,18 +16,15 @@ import scala.scalajs.js.annotation._
 trait Typeofplaces extends js.Object {
   var Autocomplete: Instantiable1[
     /* inputField */ HTMLInputElement, 
-    typings.googlemaps.googleNs.mapsNs.placesNs.Autocomplete
+    typings.googlemaps.google.maps.places.Autocomplete
   ]
-  var AutocompleteService: Instantiable0[typings.googlemaps.googleNs.mapsNs.placesNs.AutocompleteService]
-  var AutocompleteSessionToken: Instantiable0[typings.googlemaps.googleNs.mapsNs.placesNs.AutocompleteSessionToken]
+  var AutocompleteService: Instantiable0[typings.googlemaps.google.maps.places.AutocompleteService]
+  var AutocompleteSessionToken: Instantiable0[typings.googlemaps.google.maps.places.AutocompleteSessionToken]
   var PlacesService: Instantiable1[
     /* attrContainer */ HTMLDivElement, 
-    typings.googlemaps.googleNs.mapsNs.placesNs.PlacesService
+    typings.googlemaps.google.maps.places.PlacesService
   ]
-  var SearchBox: Instantiable1[
-    /* inputField */ HTMLInputElement, 
-    typings.googlemaps.googleNs.mapsNs.placesNs.SearchBox
-  ]
+  var SearchBox: Instantiable1[/* inputField */ HTMLInputElement, typings.googlemaps.google.maps.places.SearchBox]
 }
 
 object Typeofplaces {

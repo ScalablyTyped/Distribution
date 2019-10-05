@@ -6,8 +6,8 @@ import typings.atLinguiMacro.reactSelectMod.SelectPropsWithoutI18n
 import typings.atLinguiMacro.transMod.TransPropsWithoutI18n
 import typings.react.reactMod.ComponentType
 import typings.std.Date
-import typings.std.IntlNs.DateTimeFormatOptions
-import typings.std.IntlNs.NumberFormatOptions
+import typings.std.Intl.DateTimeFormatOptions
+import typings.std.Intl.NumberFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 object atLinguiMacroComponents extends atLinguiMacroProps {
   @scala.inline
   def DateFormat: ComponentType[FormatPropsWithoutI18n[Date, DateTimeFormatOptions]] = js.constructorOf[typings.atLinguiMacro.atLinguiMacroMod.DateFormat].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n[typings.std.Date, typings.std.IntlNs.DateTimeFormatOptions]]]
+  typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n[typings.std.Date, typings.std.Intl.DateTimeFormatOptions]]]
   @scala.inline
   def NumberFormat: ComponentType[FormatPropsWithoutI18n[Double, NumberFormatOptions]] = js.constructorOf[typings.atLinguiMacro.atLinguiMacroMod.NumberFormat].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n[scala.Double, typings.std.IntlNs.NumberFormatOptions]]]
+  typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n[scala.Double, typings.std.Intl.NumberFormatOptions]]]
   @scala.inline
   def Plural: ComponentType[PluralPropsWithoutI18n] = js.constructorOf[typings.atLinguiMacro.reactSelectMod.Plural].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiMacro.reactSelectMod.PluralPropsWithoutI18n]]
   @scala.inline

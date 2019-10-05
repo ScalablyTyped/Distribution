@@ -1,9 +1,9 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFAutomaticPermissionsOperationOptions
-import typings.mfiles.MFilesNs.MFBuiltInPropertyDef
-import typings.mfiles.MFilesNs.MFBuiltInValueList
-import typings.mfiles.MFilesNs.MFExternalDBRefreshType
+import typings.mfiles.MFiles.MFAutomaticPermissionsOperationOptions
+import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import typings.mfiles.MFiles.MFBuiltInValueList
+import typings.mfiles.MFiles.MFExternalDBRefreshType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.float32
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.int32
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,38 +10,38 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs", "randomNormal")
 @js.native
 object randomNormal extends js.Object {
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32,
     seed: Double
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: int32
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+  def apply[R /* <: Rank */](
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,

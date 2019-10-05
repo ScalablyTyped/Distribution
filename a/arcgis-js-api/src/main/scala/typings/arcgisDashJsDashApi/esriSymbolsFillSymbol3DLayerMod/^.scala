@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsFillSymbol3DLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.FillSymbol3DLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.FillSymbol3DLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

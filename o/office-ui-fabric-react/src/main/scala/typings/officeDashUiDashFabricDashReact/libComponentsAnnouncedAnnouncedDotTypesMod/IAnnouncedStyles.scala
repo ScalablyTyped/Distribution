@@ -14,9 +14,9 @@ trait IAnnouncedStyles extends js.Object {
 
 object IAnnouncedStyles {
   @scala.inline
-  def apply(screenReaderText: IStyle): IAnnouncedStyles = {
-    val __obj = js.Dynamic.literal(screenReaderText = screenReaderText.asInstanceOf[js.Any])
-  
+  def apply(screenReaderText: IStyle = null): IAnnouncedStyles = {
+    val __obj = js.Dynamic.literal()
+    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnouncedStyles]
   }
 }

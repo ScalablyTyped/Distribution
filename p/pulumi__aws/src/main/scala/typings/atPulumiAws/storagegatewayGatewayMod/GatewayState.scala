@@ -1,6 +1,6 @@
 package typings.atPulumiAws.storagegatewayGatewayMod
 
-import typings.atPulumiAws.typesInputMod.storagegatewayNs.GatewaySmbActiveDirectorySettings
+import typings.atPulumiAws.typesInputMod.storagegateway.GatewaySmbActiveDirectorySettings
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

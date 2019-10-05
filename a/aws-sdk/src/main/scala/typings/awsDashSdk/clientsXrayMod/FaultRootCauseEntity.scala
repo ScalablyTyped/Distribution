@@ -24,7 +24,7 @@ object FaultRootCauseEntity {
   def apply(
     Exceptions: RootCauseExceptions = null,
     Name: String = null,
-    Remote: js.UndefOr[NullableBoolean] = js.undefined
+    Remote: js.UndefOr[scala.Boolean] = js.undefined
   ): FaultRootCauseEntity = {
     val __obj = js.Dynamic.literal()
     if (Exceptions != null) __obj.updateDynamic("Exceptions")(Exceptions)

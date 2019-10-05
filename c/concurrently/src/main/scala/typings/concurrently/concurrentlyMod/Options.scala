@@ -10,8 +10,8 @@ import typings.concurrently.concurrentlyStrings.none
 import typings.concurrently.concurrentlyStrings.pid
 import typings.concurrently.concurrentlyStrings.success
 import typings.concurrently.concurrentlyStrings.time
-import typings.node.NodeJSNs.ReadableStream
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

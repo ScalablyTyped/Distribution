@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.OverlayOptions
+import typings.openlayers.openlayersMod.olx.OverlayOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

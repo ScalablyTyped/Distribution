@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNoDashSsrProps {
   @scala.inline
-  def ReactDashNoDashSsrProps: Anon_OnSSR.type = typings.reactDashNoDashSsr.Anon_OnSSR
+  def ReactDashNoDashSsrProps: typings.reactDashNoDashSsr.Anon_OnSSR.type = typings.reactDashNoDashSsr.Anon_OnSSR
   type ReactDashNoDashSsrProps = Anon_OnSSR
 }
 

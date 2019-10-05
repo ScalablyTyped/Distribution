@@ -1,6 +1,6 @@
 package typings.esriDashLeaflet
 
-import typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esriNs.Basemaps
+import typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Basemaps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,113 @@
+package typings.dhtmlxgantt
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterAutoSchedule
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterBatchUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterLightbox
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkAdd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkDelete
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterQuickInfo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterRedo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterSort
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAdd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAutoSchedule
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDelete
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDrag
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskMove
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAfterUndo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAjaxError
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onAutoScheduleCircularLink
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeAutoSchedule
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeBatchUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeCollapse
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeDataRender
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeExpand
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttReady
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttRender
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeLightbox
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkAdd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDelete
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDisplay
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeMultiSelect
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeParse
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedoStack
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragEnd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragMove
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAdd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAutoSchedule
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskChanged
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDelete
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDisplay
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDrag
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMove
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMultiSelect
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskSelected
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskUpdate
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndoStack
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onCircularLinkError
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onClear
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onCollapse
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onColumnResize
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeEnd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeStart
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onContextMenu
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onDataProcessorReady
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onDataRender
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onDestroy
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onEmptyClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onError
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onExpand
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGanttLayoutReady
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGanttReady
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGanttRender
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGanttScroll
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGridHeaderClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGridResize
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGridResizeEnd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onGridResizeStart
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightbox
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightboxButton
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightboxCancel
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightboxChange
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightboxDelete
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLightboxSave
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLinkClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLinkDblClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLinkIdChange
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLinkValidation
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLoadEnd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onLoadStart
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onMouseMove
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onMultiSelect
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onOptionsLoad
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onParse
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onQuickInfo
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onRowDragEnd
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onRowDragStart
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onScaleAdjusted
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onScaleClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskClosed
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskCreated
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskDblClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskDrag
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskIdChange
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskLoading
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskMultiSelect
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskOpened
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskRowClick
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskSelected
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected
+  - typings.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady
+*/
+trait GanttEventName extends js.Object
+

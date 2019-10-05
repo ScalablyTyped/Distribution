@@ -37,7 +37,7 @@ object PolicySummary {
     PolicyArn: ResourceArn = null,
     PolicyId: PolicyId = null,
     PolicyName: ResourceName = null,
-    RemediationEnabled: js.UndefOr[Boolean] = js.undefined,
+    RemediationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ResourceType: ResourceType = null,
     SecurityServiceType: SecurityServiceType = null
   ): PolicySummary = {

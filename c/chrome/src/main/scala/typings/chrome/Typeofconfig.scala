@@ -1,7 +1,7 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.networkingNs.configNs.CaptivePorttalDetectedEvent
-import typings.chrome.chromeNs.networkingNs.configNs.NetworkInfo
+import typings.chrome.chrome.networking.config.CaptivePorttalDetectedEvent
+import typings.chrome.chrome.networking.config.NetworkInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "iso8601-localizer"
-version := "v1.2.1-dt-20190322Z-7bbc72"
-scalaVersion := "2.12.9"
+version := "v1.2.1-dt-20190322Z-566292"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

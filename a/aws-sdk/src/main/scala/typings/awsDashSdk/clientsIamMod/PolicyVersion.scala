@@ -28,7 +28,7 @@ object PolicyVersion {
   def apply(
     CreateDate: dateType = null,
     Document: policyDocumentType = null,
-    IsDefaultVersion: js.UndefOr[booleanType] = js.undefined,
+    IsDefaultVersion: js.UndefOr[Boolean] = js.undefined,
     VersionId: policyVersionIdType = null
   ): PolicyVersion = {
     val __obj = js.Dynamic.literal()

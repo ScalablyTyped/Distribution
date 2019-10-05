@@ -3,7 +3,8 @@ package typings.imapDashSimple.imapDashSimpleMod
 import typings.imap.imapMod.AppendOptions
 import typings.imap.imapMod.FetchOptions
 import typings.imap.imapMod.MailBoxes
-import typings.node.NodeJSNs.EventEmitter
+import typings.imap.imapMod.^
+import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("imap-simple", "ImapSimple")
 @js.native
 class ImapSimple protected () extends EventEmitter {
-  def this(imap: typings.imap.imapMod.^) = this()
+  def this(imap: ^) = this()
   def addBox(boxName: String): js.Promise[String] = js.native
   /** Create a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
   def addBox(boxName: String, callback: js.Function2[/* err */ Error, /* boxName */ String, Unit]): Unit = js.native

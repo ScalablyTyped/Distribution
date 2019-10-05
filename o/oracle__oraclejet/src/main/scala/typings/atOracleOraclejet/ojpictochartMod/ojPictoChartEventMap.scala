@@ -22,7 +22,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.vertical
 import typings.atOracleOraclejet.atOracleOraclejetStrings.zoom
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
-import typings.atOracleOraclejet.ojpictochartMod.ojPictoChartNs.ojDrill
+import typings.atOracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -59,7 +59,7 @@ trait ojPictoChartEventMap[K, D] extends dvtBaseComponentEventMap[ojPictoChartSe
   var hoverBehaviorDelayChanged: JetElementCustomEvent[Double]
   var layoutChanged: JetElementCustomEvent[vertical | horizontal]
   var layoutOriginChanged: JetElementCustomEvent[topEnd | bottomStart | bottomEnd | topStart]
-  var ojDrill: typings.atOracleOraclejet.ojpictochartMod.ojPictoChartNs.ojDrill
+  var ojDrill: typings.atOracleOraclejet.ojpictochartMod.ojPictoChart.ojDrill
   var rowCountChanged: JetElementCustomEvent[Double | Null]
   var rowHeightChanged: JetElementCustomEvent[Double | Null]
   var selectionChanged: JetElementCustomEvent[js.Array[K]]

@@ -56,7 +56,7 @@ trait IIconProps
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   /**
     * Description string. This string does not appear in normal browsers, but
@@ -70,20 +70,21 @@ trait IIconProps
 object IIconProps {
   @scala.inline
   def apply(
-    icon: IconName | MaybeElement,
     className: String = null,
     color: String = null,
     htmlTitle: String = null,
+    icon: IconName | MaybeElement = null,
     iconSize: Int | Double = null,
     intent: Intent = null,
     style: CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     title: String | `false` = null
   ): IIconProps = {
-    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)
     if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (style != null) __obj.updateDynamic("style")(style)

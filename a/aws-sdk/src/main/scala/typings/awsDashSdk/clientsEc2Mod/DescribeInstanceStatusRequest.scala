@@ -34,11 +34,11 @@ trait DescribeInstanceStatusRequest extends js.Object {
 object DescribeInstanceStatusRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    IncludeAllInstances: js.UndefOr[Boolean] = js.undefined,
+    IncludeAllInstances: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceIds: InstanceIdStringList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null
   ): DescribeInstanceStatusRequest = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +46,7 @@ object DescribeInstanceStatusRequest {
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
     if (!js.isUndefined(IncludeAllInstances)) __obj.updateDynamic("IncludeAllInstances")(IncludeAllInstances)
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeInstanceStatusRequest]
   }

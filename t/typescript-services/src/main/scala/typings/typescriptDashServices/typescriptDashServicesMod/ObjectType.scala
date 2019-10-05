@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ObjectType")
 @js.native
 class ObjectType protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ObjectType {
-  def this(typeMembers: typings.typescriptDashServices.TypeScriptNs.ISeparatedSyntaxList2) = this()
+  extends typings.typescriptDashServices.TypeScript.ObjectType {
+  def this(typeMembers: typings.typescriptDashServices.TypeScript.ISeparatedSyntaxList2) = this()
 }
 

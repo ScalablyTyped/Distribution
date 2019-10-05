@@ -23,12 +23,12 @@ object MaxAgeRule {
   @scala.inline
   def apply(
     Enabled: BoxedBoolean,
-    DeleteSourceFromS3: js.UndefOr[BoxedBoolean] = js.undefined,
-    MaxAgeInDays: js.UndefOr[BoxedInt] = js.undefined
+    DeleteSourceFromS3: js.UndefOr[Boolean] = js.undefined,
+    MaxAgeInDays: Int | Double = null
   ): MaxAgeRule = {
     val __obj = js.Dynamic.literal(Enabled = Enabled)
     if (!js.isUndefined(DeleteSourceFromS3)) __obj.updateDynamic("DeleteSourceFromS3")(DeleteSourceFromS3)
-    if (!js.isUndefined(MaxAgeInDays)) __obj.updateDynamic("MaxAgeInDays")(MaxAgeInDays)
+    if (MaxAgeInDays != null) __obj.updateDynamic("MaxAgeInDays")(MaxAgeInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxAgeRule]
   }
 }

@@ -17,9 +17,9 @@ trait BatchDetectDominantLanguageItemResult extends js.Object {
 
 object BatchDetectDominantLanguageItemResult {
   @scala.inline
-  def apply(Index: js.UndefOr[Integer] = js.undefined, Languages: ListOfDominantLanguages = null): BatchDetectDominantLanguageItemResult = {
+  def apply(Index: Int | scala.Double = null, Languages: ListOfDominantLanguages = null): BatchDetectDominantLanguageItemResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index)
+    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
     if (Languages != null) __obj.updateDynamic("Languages")(Languages)
     __obj.asInstanceOf[BatchDetectDominantLanguageItemResult]
   }

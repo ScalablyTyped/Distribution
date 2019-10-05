@@ -30,16 +30,16 @@ trait DescribeTrafficMirrorTargetsRequest extends js.Object {
 object DescribeTrafficMirrorTargetsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[TrafficMirroringMaxResults] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: NextToken = null,
     TrafficMirrorTargetIds: ValueStringList = null
   ): DescribeTrafficMirrorTargetsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (TrafficMirrorTargetIds != null) __obj.updateDynamic("TrafficMirrorTargetIds")(TrafficMirrorTargetIds)
     __obj.asInstanceOf[DescribeTrafficMirrorTargetsRequest]

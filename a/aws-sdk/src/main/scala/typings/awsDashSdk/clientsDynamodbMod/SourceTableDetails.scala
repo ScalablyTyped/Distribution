@@ -52,15 +52,15 @@ object SourceTableDetails {
     TableId: TableId,
     TableName: TableName,
     BillingMode: BillingMode = null,
-    ItemCount: js.UndefOr[ItemCount] = js.undefined,
+    ItemCount: Int | scala.Double = null,
     TableArn: TableArn = null,
-    TableSizeBytes: js.UndefOr[Long] = js.undefined
+    TableSizeBytes: Int | scala.Double = null
   ): SourceTableDetails = {
     val __obj = js.Dynamic.literal(KeySchema = KeySchema, ProvisionedThroughput = ProvisionedThroughput, TableCreationDateTime = TableCreationDateTime, TableId = TableId, TableName = TableName)
     if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
-    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes)
+    if (TableSizeBytes != null) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTableDetails]
   }
 }

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.pinpointAppMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.pinpointNs.AppCampaignHook
-import typings.atPulumiAws.typesInputMod.pinpointNs.AppLimits
-import typings.atPulumiAws.typesInputMod.pinpointNs.AppQuietTime
+import typings.atPulumiAws.typesInputMod.pinpoint.AppCampaignHook
+import typings.atPulumiAws.typesInputMod.pinpoint.AppLimits
+import typings.atPulumiAws.typesInputMod.pinpoint.AppQuietTime
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.atPulumiAws.apigatewayDocumentationPartMod
 
-import typings.atPulumiAws.typesInputMod.apigatewayNs.DocumentationPartLocation
+import typings.atPulumiAws.typesInputMod.apigateway.DocumentationPartLocation
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

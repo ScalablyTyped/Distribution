@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.std.stdStrings.cached
 import typings.std.stdStrings.checking
 import typings.std.stdStrings.downloading
@@ -279,10 +280,6 @@ trait ApplicationCache extends EventTarget {
 
 @JSGlobal("ApplicationCache")
 @js.native
-class ApplicationCacheCls () extends ApplicationCache
-
-@JSGlobal("ApplicationCache")
-@js.native
 object ApplicationCache extends Instantiable0[ApplicationCache] {
   val CHECKING: Double = js.native
   val DOWNLOADING: Double = js.native
@@ -291,4 +288,8 @@ object ApplicationCache extends Instantiable0[ApplicationCache] {
   val UNCACHED: Double = js.native
   val UPDATEREADY: Double = js.native
 }
+
+@JSGlobal("applicationCache")
+@js.native
+object applicationCache extends TopLevel[ApplicationCache]
 

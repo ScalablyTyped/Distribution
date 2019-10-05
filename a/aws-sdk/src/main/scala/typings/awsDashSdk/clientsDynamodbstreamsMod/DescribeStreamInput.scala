@@ -21,14 +21,10 @@ trait DescribeStreamInput extends js.Object {
 
 object DescribeStreamInput {
   @scala.inline
-  def apply(
-    StreamArn: StreamArn,
-    ExclusiveStartShardId: ShardId = null,
-    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
-  ): DescribeStreamInput = {
+  def apply(StreamArn: StreamArn, ExclusiveStartShardId: ShardId = null, Limit: Int | Double = null): DescribeStreamInput = {
     val __obj = js.Dynamic.literal(StreamArn = StreamArn)
     if (ExclusiveStartShardId != null) __obj.updateDynamic("ExclusiveStartShardId")(ExclusiveStartShardId)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamInput]
   }
 }

@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(filename: String): js.Promise[JSONFile] = js.native
-  def sync(filename: String): JSONFile = js.native
 }
 

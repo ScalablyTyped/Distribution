@@ -3,8 +3,8 @@ package typings.reactDashCodemirror.reactDashCodemirrorMod
 import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
-import typings.reactDashCodemirror.ReactCodeMirrorNs.ReactCodeMirrorClass
-import typings.reactDashCodemirror.ReactCodeMirrorNs.ReactCodeMirrorProps
+import typings.reactDashCodemirror.ReactCodeMirror.ReactCodeMirrorClass
+import typings.reactDashCodemirror.ReactCodeMirror.ReactCodeMirrorProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,11 +22,11 @@ object Refinement {
     id: String,
     index: String,
     label: String,
-    value: RefinementValue,
+    value: /* searchState */ SearchState => SearchState,
     currentRefinement: String = null,
     items: js.Array[Anon_Label] = null
   ): Refinement = {
-    val __obj = js.Dynamic.literal(attribute = attribute, id = id, index = index, label = label, value = value)
+    val __obj = js.Dynamic.literal(attribute = attribute, id = id, index = index, label = label, value = js.Any.fromFunction1(value))
     if (currentRefinement != null) __obj.updateDynamic("currentRefinement")(currentRefinement)
     if (items != null) __obj.updateDynamic("items")(items)
     __obj.asInstanceOf[Refinement]

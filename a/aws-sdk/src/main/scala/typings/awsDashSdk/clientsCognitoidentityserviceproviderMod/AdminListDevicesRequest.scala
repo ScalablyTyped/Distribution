@@ -28,11 +28,11 @@ object AdminListDevicesRequest {
   def apply(
     UserPoolId: UserPoolIdType,
     Username: UsernameType,
-    Limit: js.UndefOr[QueryLimitType] = js.undefined,
+    Limit: Int | Double = null,
     PaginationToken: SearchPaginationTokenType = null
   ): AdminListDevicesRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId, Username = Username)
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken)
     __obj.asInstanceOf[AdminListDevicesRequest]
   }

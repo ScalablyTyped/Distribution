@@ -4,8 +4,8 @@ import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
 import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNodeArray
-import typings.std.IntlNs.DateTimeFormatPart
-import typings.std.IntlNs.NumberFormatPart
+import typings.std.Intl.DateTimeFormatPart
+import typings.std.Intl.NumberFormatPart
 import typings.std.Record
 import typings.std.ReturnType
 import scala.scalajs.js

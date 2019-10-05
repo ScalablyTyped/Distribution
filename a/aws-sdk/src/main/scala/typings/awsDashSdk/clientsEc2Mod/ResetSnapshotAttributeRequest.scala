@@ -21,7 +21,11 @@ trait ResetSnapshotAttributeRequest extends js.Object {
 
 object ResetSnapshotAttributeRequest {
   @scala.inline
-  def apply(Attribute: SnapshotAttributeName, SnapshotId: String, DryRun: js.UndefOr[Boolean] = js.undefined): ResetSnapshotAttributeRequest = {
+  def apply(
+    Attribute: SnapshotAttributeName,
+    SnapshotId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResetSnapshotAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], SnapshotId = SnapshotId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[ResetSnapshotAttributeRequest]

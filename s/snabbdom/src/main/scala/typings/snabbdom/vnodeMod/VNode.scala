@@ -1,6 +1,8 @@
 package typings.snabbdom.vnodeMod
 
+import typings.snabbdom.modulesAttributesMod.Global.Element
 import typings.std.Node
+import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,5 +35,16 @@ object VNode {
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[VNode]
   }
+}
+
+@JSImport("snabbdom/vnode", "vnode")
+@js.native
+object vnode extends js.Object {
+  def apply(): VNode = js.native
+  def apply(sel: String): VNode = js.native
+  def apply(sel: String, data: js.Any): VNode = js.native
+  def apply(sel: String, data: js.Any, children: js.Array[VNode | String]): VNode = js.native
+  def apply(sel: String, data: js.Any, children: js.Array[VNode | String], text: String): VNode = js.native
+  def apply(sel: String, data: js.Any, children: js.Array[VNode | String], text: String, elm: Element | Text): VNode = js.native
 }
 

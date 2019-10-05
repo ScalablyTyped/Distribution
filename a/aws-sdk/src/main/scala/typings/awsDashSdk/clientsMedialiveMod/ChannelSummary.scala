@@ -67,7 +67,7 @@ object ChannelSummary {
     InputSpecification: InputSpecification = null,
     LogLevel: LogLevel = null,
     Name: __string = null,
-    PipelinesRunningCount: js.UndefOr[__integer] = js.undefined,
+    PipelinesRunningCount: Int | Double = null,
     RoleArn: __string = null,
     State: ChannelState = null,
     Tags: Tags = null
@@ -82,7 +82,7 @@ object ChannelSummary {
     if (InputSpecification != null) __obj.updateDynamic("InputSpecification")(InputSpecification)
     if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(PipelinesRunningCount)) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount)
+    if (PipelinesRunningCount != null) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

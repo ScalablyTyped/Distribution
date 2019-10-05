@@ -38,3 +38,15 @@ object JSXOpeningElement {
   }
 }
 
+@JSImport("babel-types", "jSXOpeningElement")
+@js.native
+object jSXOpeningElement extends js.Object {
+  def apply(): JSXOpeningElement = js.native
+  def apply(name: JSXIdentifier): JSXOpeningElement = js.native
+  def apply(name: JSXIdentifier, attributes: js.Array[JSXAttribute]): JSXOpeningElement = js.native
+  def apply(name: JSXIdentifier, attributes: js.Array[JSXAttribute], selfClosing: Boolean): JSXOpeningElement = js.native
+  def apply(name: JSXMemberExpression): JSXOpeningElement = js.native
+  def apply(name: JSXMemberExpression, attributes: js.Array[JSXAttribute]): JSXOpeningElement = js.native
+  def apply(name: JSXMemberExpression, attributes: js.Array[JSXAttribute], selfClosing: Boolean): JSXOpeningElement = js.native
+}
+

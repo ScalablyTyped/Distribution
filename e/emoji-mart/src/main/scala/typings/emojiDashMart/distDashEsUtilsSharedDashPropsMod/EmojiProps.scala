@@ -48,7 +48,7 @@ object EmojiProps {
   def apply(
     emoji: String | EmojiData,
     size: Double,
-    backgroundImageFn: BackgroundImageFn = null,
+    backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
     fallback: (/* emoji */ EmojiData, EmojiProps) => Component[js.Object, js.Object, _] = null,
     forceSize: js.UndefOr[Boolean] = js.undefined,
     html: js.UndefOr[Boolean] = js.undefined,
@@ -64,7 +64,7 @@ object EmojiProps {
     tooltip: js.UndefOr[Boolean] = js.undefined
   ): EmojiProps = {
     val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], size = size)
-    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
+    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize)
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)

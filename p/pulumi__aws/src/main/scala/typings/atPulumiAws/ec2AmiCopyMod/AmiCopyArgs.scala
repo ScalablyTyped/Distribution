@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2AmiCopyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.AmiCopyEbsBlockDevice
-import typings.atPulumiAws.typesInputMod.ec2Ns.AmiCopyEphemeralBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.AmiCopyEbsBlockDevice
+import typings.atPulumiAws.typesInputMod.ec2.AmiCopyEphemeralBlockDevice
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

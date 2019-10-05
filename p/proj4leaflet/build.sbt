@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "proj4leaflet"
-version := "1.0-dt-20181017Z-c0d0a3"
-scalaVersion := "2.12.9"
+version := "1.0-dt-20181017Z-29cc2b"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-2af848",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190927Z-46e521",
-  "org.scalablytyped" %%% "proj4" % "2.5-dt-20181212Z-206bb2",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-cccebd",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190927Z-cee493",
+  "org.scalablytyped" %%% "proj4" % "2.5-dt-20181212Z-8ae9d9",
+  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

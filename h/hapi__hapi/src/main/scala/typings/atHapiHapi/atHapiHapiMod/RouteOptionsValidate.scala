@@ -1,6 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiHapi.atHapiHapiMod.LifecycleNs.FailAction
+import typings.atHapiHapi.atHapiHapiMod.Lifecycle.FailAction
 import typings.atHapiJoi.atHapiJoiMod.ValidationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

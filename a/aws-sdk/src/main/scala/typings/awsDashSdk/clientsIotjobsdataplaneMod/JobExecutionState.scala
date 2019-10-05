@@ -24,12 +24,12 @@ object JobExecutionState {
   def apply(
     status: JobExecutionStatus = null,
     statusDetails: DetailsMap = null,
-    versionNumber: js.UndefOr[VersionNumber] = js.undefined
+    versionNumber: Int | Double = null
   ): JobExecutionState = {
     val __obj = js.Dynamic.literal()
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
-    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber)
+    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionState]
   }
 }

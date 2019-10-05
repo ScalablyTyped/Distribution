@@ -1,6 +1,7 @@
 package typings.halogen.halogenMod
 
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +9,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("halogen", "SkewLoader")
 @js.native
-class SkewLoaderCls protected ()
-  extends Component[SizeLoaderProps, ComponentState, js.Any] {
-  def this(props: SizeLoaderProps) = this()
-  def this(props: SizeLoaderProps, context: js.Any) = this()
-}
+object SkewLoader extends TopLevel[ComponentClass[SizeLoaderProps, ComponentState]]
 

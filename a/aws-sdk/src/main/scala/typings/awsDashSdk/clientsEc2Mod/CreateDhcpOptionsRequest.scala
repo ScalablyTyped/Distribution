@@ -17,7 +17,7 @@ trait CreateDhcpOptionsRequest extends js.Object {
 
 object CreateDhcpOptionsRequest {
   @scala.inline
-  def apply(DhcpConfigurations: NewDhcpConfigurationList, DryRun: js.UndefOr[Boolean] = js.undefined): CreateDhcpOptionsRequest = {
+  def apply(DhcpConfigurations: NewDhcpConfigurationList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpConfigurations = DhcpConfigurations)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateDhcpOptionsRequest]

@@ -3,8 +3,8 @@ package typings.backlogDashJs.backlogDashJsMod
 import typings.backlogDashJs.Anon_Code
 import typings.backlogDashJs.Anon_Host
 import typings.backlogDashJs.Anon_HostRefreshToken
-import typings.backlogDashJs.backlogDashJsMod.EntityNs.OAuth2Ns.AccessToken
-import typings.backlogDashJs.backlogDashJsMod.OptionNs.OAuth2Ns.Credentials
+import typings.backlogDashJs.backlogDashJsMod.Entity.OAuth2.AccessToken
+import typings.backlogDashJs.backlogDashJsMod.Option.OAuth2.Credentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "MaskManager")
 @js.native
 class MaskManager ()
-  extends typings.pixiDotJs.PIXINs.MaskManager
+  extends typings.pixiDotJs.PIXI.MaskManager
 

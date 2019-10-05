@@ -1,7 +1,8 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.IntlNs.CollatorOptions
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Intl.CollatorOptions
 import typings.std.stdStrings.NFC
 import typings.std.stdStrings.NFD
 import typings.std.stdStrings.NFKC
@@ -290,9 +291,10 @@ trait String
   def trimStart(): java.lang.String = js.native
 }
 
+/**
+  * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
+  */
 @JSGlobal("String")
 @js.native
-class StringCls () extends String {
-  def this(value: js.Any) = this()
-}
+object String extends TopLevel[StringConstructor]
 

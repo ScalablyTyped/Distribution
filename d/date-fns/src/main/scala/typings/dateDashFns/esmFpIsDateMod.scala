@@ -1,5 +1,6 @@
 package typings.dateDashFns
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/fp/isDate", JSImport.Namespace)
 @js.native
 object esmFpIsDateMod extends js.Object {
-  val default: CurriedFn1[js.Any, Boolean] = js.native
+  @js.native
+  object default
+    extends TopLevel[CurriedFn1[js.Any, Boolean]]
+  
 }
 

@@ -16,3 +16,9 @@ trait BulkUnregistration extends Disposable {
   def disposeSingle(arg: MessageType): Boolean = js.native
 }
 
+@JSImport("vscode-languageserver", "BulkUnregistration")
+@js.native
+object BulkUnregistration extends js.Object {
+  def create(): BulkUnregistration = js.native
+}
+

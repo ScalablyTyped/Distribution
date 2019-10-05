@@ -26,14 +26,7 @@ trait MessageEvent extends Event {
 
 @JSGlobal("MessageEvent")
 @js.native
-class MessageEventCls protected () extends MessageEvent {
-  def this(`type`: String) = this()
-  def this(`type`: String, eventInitDict: MessageEventInit) = this()
-}
-
-@JSGlobal("MessageEvent")
-@js.native
 object MessageEvent
-  extends Instantiable2[/* type */ String, /* eventInitDict */ MessageEventInit, MessageEvent]
-     with Instantiable1[/* type */ String, MessageEvent]
+  extends Instantiable1[/* type */ String, MessageEvent]
+     with Instantiable2[/* type */ String, /* eventInitDict */ MessageEventInit, MessageEvent]
 

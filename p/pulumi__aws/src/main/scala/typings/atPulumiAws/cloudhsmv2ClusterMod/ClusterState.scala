@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudhsmv2ClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.cloudhsmv2Ns.ClusterClusterCertificates
+import typings.atPulumiAws.typesInputMod.cloudhsmv2.ClusterClusterCertificates
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

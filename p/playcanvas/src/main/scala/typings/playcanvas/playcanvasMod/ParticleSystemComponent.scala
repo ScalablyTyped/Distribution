@@ -103,10 +103,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "ParticleSystemComponent")
 @js.native
 class ParticleSystemComponent protected ()
-  extends typings.playcanvas.pcNs.ParticleSystemComponent {
-  def this(
-    system: typings.playcanvas.pcNs.ParticleSystemComponentSystem,
-    entity: typings.playcanvas.pcNs.Entity
-  ) = this()
+  extends typings.playcanvas.pc.ParticleSystemComponent {
+  def this(system: typings.playcanvas.pc.ParticleSystemComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

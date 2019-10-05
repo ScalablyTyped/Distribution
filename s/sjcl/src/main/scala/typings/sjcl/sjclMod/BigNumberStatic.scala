@@ -3,7 +3,7 @@ package typings.sjcl.sjclMod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.sjcl.Anon_P127
-import typings.sjcl.sjclMod.TypeHelpersNs.Bind1
+import typings.sjcl.sjclMod.TypeHelpers.Bind1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

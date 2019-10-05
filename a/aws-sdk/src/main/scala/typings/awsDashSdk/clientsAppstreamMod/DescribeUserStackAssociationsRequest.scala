@@ -31,14 +31,14 @@ object DescribeUserStackAssociationsRequest {
   @scala.inline
   def apply(
     AuthenticationType: AuthenticationType = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null,
     StackName: String = null,
     UserName: Username = null
   ): DescribeUserStackAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     if (AuthenticationType != null) __obj.updateDynamic("AuthenticationType")(AuthenticationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StackName != null) __obj.updateDynamic("StackName")(StackName)
     if (UserName != null) __obj.updateDynamic("UserName")(UserName)

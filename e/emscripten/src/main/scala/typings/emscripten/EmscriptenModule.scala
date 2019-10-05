@@ -1,12 +1,12 @@
 package typings.emscripten
 
-import typings.emscripten.EmscriptenNs.CCallOpts
-import typings.emscripten.EmscriptenNs.EnvironmentType
-import typings.emscripten.EmscriptenNs.TypeCompatibleWithC
-import typings.emscripten.EmscriptenNs.ValueType
-import typings.emscripten.EmscriptenNs.WebAssemblyExports
-import typings.emscripten.EmscriptenNs.WebAssemblyImports
-import typings.emscripten.WebAssemblyNs.Module
+import typings.emscripten.Emscripten.CCallOpts
+import typings.emscripten.Emscripten.EnvironmentType
+import typings.emscripten.Emscripten.TypeCompatibleWithC
+import typings.emscripten.Emscripten.ValueType
+import typings.emscripten.Emscripten.WebAssemblyExports
+import typings.emscripten.Emscripten.WebAssemblyImports
+import typings.emscripten.WebAssembly.Module
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Float64Array

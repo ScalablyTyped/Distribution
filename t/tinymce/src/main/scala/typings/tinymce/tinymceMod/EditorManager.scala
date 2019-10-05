@@ -1,8 +1,9 @@
 package typings.tinymce.tinymceMod
 
-import typings.tinymce.tinymceMod.domNs.DomQuery
-import typings.tinymce.tinymceMod.utilNs.Observable
-import typings.tinymce.tinymceMod.utilNs.URI
+import org.scalablytyped.runtime.TopLevel
+import typings.tinymce.tinymceMod.dom.DomQuery
+import typings.tinymce.tinymceMod.util.Observable
+import typings.tinymce.tinymceMod.util.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,4 +35,8 @@ trait EditorManager extends Observable {
   def translate(text: String): String = js.native
   def triggerSave(): Unit = js.native
 }
+
+@JSImport("tinymce", "EditorManager")
+@js.native
+object EditorManager extends TopLevel[EditorManager]
 

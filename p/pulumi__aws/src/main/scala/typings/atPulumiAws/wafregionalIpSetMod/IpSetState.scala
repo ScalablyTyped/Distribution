@@ -1,6 +1,6 @@
 package typings.atPulumiAws.wafregionalIpSetMod
 
-import typings.atPulumiAws.typesInputMod.wafregionalNs.IpSetIpSetDescriptor
+import typings.atPulumiAws.typesInputMod.wafregional.IpSetIpSetDescriptor
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,12 +1,12 @@
 package typings.activexDashOutlook
 
-import typings.activexDashOutlook.OutlookNs.Attachment
+import typings.activexDashOutlook.Outlook.Attachment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Attachment extends js.Object {
-  val Attachment: typings.activexDashOutlook.OutlookNs.Attachment
+  val Attachment: typings.activexDashOutlook.Outlook.Attachment
 }
 
 object Anon_Attachment {

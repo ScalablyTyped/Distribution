@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksLocatorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.LocatorConstructor
+import typings.arcgisDashJsDashApi.__esri.LocatorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

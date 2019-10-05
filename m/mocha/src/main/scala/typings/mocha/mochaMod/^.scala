@@ -1,11 +1,11 @@
 package typings.mocha.mochaMod
 
 import typings.mocha.Mocha
-import typings.mocha.MochaNs.HookFunction
-import typings.mocha.MochaNs.MochaOptions
-import typings.mocha.MochaNs.PendingTestFunction
-import typings.mocha.MochaNs.SuiteFunction
-import typings.mocha.MochaNs.TestFunction
+import typings.mocha.Mocha.HookFunction
+import typings.mocha.Mocha.MochaOptions
+import typings.mocha.Mocha.PendingTestFunction
+import typings.mocha.Mocha.SuiteFunction
+import typings.mocha.Mocha.TestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -113,14 +113,5 @@ object ^ extends js.Object {
     * - _Only available when invoked via the mocha CLI._
     */
   var xit: PendingTestFunction = js.native
-  /**
-    * Triggers root suite execution.
-    *
-    * - _Only available if flag --delay is passed into Mocha._
-    * - _Only available when invoked via the mocha CLI._
-    *
-    * @see https://mochajs.org/api/global.html#runWithSuite
-    */
-  def run(): Unit = js.native
 }
 

@@ -60,3 +60,11 @@ class Client () extends js.Object {
   def unsubscribe(id: String): Unit = js.native
 }
 
+@JSImport("stompjs", "client")
+@js.native
+object client extends js.Object {
+  def apply(url: String): Client = js.native
+  def apply(url: String, protocols: String): Client = js.native
+  def apply(url: String, protocols: js.Array[String]): Client = js.native
+}
+

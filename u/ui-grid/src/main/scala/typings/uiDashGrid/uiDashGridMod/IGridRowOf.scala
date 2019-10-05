@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGridRowOf[TEntity]
-  extends typings.uiDashGrid.uiDashGridMod.cellNavNs.IGridRow
-     with typings.uiDashGrid.uiDashGridMod.editNs.IGridRow
-     with typings.uiDashGrid.uiDashGridMod.exporterNs.IGridRow
-     with typings.uiDashGrid.uiDashGridMod.selectionNs.IGridRow
-     with typings.uiDashGrid.uiDashGridMod.expandableNs.IGridRow {
+  extends typings.uiDashGrid.uiDashGridMod.cellNav.IGridRow
+     with typings.uiDashGrid.uiDashGridMod.edit.IGridRow
+     with typings.uiDashGrid.uiDashGridMod.exporter.IGridRow
+     with typings.uiDashGrid.uiDashGridMod.selection.IGridRow
+     with typings.uiDashGrid.uiDashGridMod.expandable.IGridRow {
   /** A reference to an item in gridOptions.data[] */
   var entity: TEntity = js.native
   // Additional features enabled by other modules

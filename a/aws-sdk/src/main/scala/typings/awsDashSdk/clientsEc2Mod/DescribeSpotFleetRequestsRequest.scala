@@ -26,14 +26,14 @@ trait DescribeSpotFleetRequestsRequest extends js.Object {
 object DescribeSpotFleetRequestsRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: Int | scala.Double = null,
     NextToken: String = null,
     SpotFleetRequestIds: ValueStringList = null
   ): DescribeSpotFleetRequestsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SpotFleetRequestIds != null) __obj.updateDynamic("SpotFleetRequestIds")(SpotFleetRequestIds)
     __obj.asInstanceOf[DescribeSpotFleetRequestsRequest]

@@ -12,7 +12,8 @@ object bufferDashFromMod extends js.Object {
   def apply(arrayBuffer: ArrayBuffer): Buffer = js.native
   def apply(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = js.native
   def apply(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
-  def apply(data: js.Array[_] | Buffer): Buffer = js.native
+  def apply(data: js.Array[_]): Buffer = js.native
+  def apply(data: Buffer): Buffer = js.native
   def apply(str: String): Buffer = js.native
   def apply(str: String, encoding: String): Buffer = js.native
 }

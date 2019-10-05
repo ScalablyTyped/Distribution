@@ -23,13 +23,6 @@ trait SecurityPolicyViolationEvent extends Event {
 
 @JSGlobal("SecurityPolicyViolationEvent")
 @js.native
-class SecurityPolicyViolationEventCls protected () extends SecurityPolicyViolationEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: SecurityPolicyViolationEventInit) = this()
-}
-
-@JSGlobal("SecurityPolicyViolationEvent")
-@js.native
 object SecurityPolicyViolationEvent
   extends Instantiable1[/* type */ java.lang.String, SecurityPolicyViolationEvent]
      with Instantiable2[

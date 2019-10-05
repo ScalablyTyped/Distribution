@@ -22,12 +22,12 @@ trait ListOTAUpdatesRequest extends js.Object {
 object ListOTAUpdatesRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     otaUpdateStatus: OTAUpdateStatus = null
   ): ListOTAUpdatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (otaUpdateStatus != null) __obj.updateDynamic("otaUpdateStatus")(otaUpdateStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOTAUpdatesRequest]

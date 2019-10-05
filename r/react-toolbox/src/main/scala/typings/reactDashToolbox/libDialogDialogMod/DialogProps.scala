@@ -3,7 +3,7 @@ package typings.reactDashToolbox.libDialogDialogMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.ReactNode
-import typings.reactDashToolbox.libMod.ReactToolboxNs.Props
+import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import typings.reactDashToolbox.reactDashToolboxStrings.large
 import typings.reactDashToolbox.reactDashToolboxStrings.normal
 import typings.reactDashToolbox.reactDashToolboxStrings.small

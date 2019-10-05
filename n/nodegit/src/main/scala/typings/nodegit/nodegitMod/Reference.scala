@@ -66,5 +66,7 @@ object Reference extends js.Object {
     currentValue: String,
     logMessage: String
   ): js.Promise[typings.nodegit.referenceMod.Reference] = js.native
+  type NORMALIZE = typings.nodegit.referenceMod.Reference.NORMALIZE
+  type TYPE = typings.nodegit.referenceMod.Reference.TYPE
 }
 

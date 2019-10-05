@@ -15,12 +15,12 @@ trait MarkupContent extends js.Object {
   var value: String
 }
 
-object MarkupContent {
-  @scala.inline
-  def apply(kind: MarkupKind, value: String): MarkupContent = {
-    val __obj = js.Dynamic.literal(kind = kind, value = value)
-  
-    __obj.asInstanceOf[MarkupContent]
-  }
+@JSImport("vscode-languageserver-types", "MarkupContent")
+@js.native
+object MarkupContent extends js.Object {
+  /**
+    * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = js.native
 }
 

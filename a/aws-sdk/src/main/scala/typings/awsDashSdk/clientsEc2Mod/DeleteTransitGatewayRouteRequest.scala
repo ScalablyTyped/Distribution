@@ -24,7 +24,7 @@ object DeleteTransitGatewayRouteRequest {
   def apply(
     DestinationCidrBlock: String,
     TransitGatewayRouteTableId: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DeleteTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock, TransitGatewayRouteTableId = TransitGatewayRouteTableId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

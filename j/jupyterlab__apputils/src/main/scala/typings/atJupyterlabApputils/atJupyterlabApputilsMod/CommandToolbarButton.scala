@@ -1,6 +1,6 @@
 package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
-import typings.atJupyterlabApputils.libToolbarMod.CommandToolbarButtonComponentNs.IProps
+import typings.atJupyterlabApputils.libToolbarMod.CommandToolbarButtonComponent.IProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

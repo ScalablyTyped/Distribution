@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriCoreJSONSupportMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.JSONSupport
+import typings.arcgisDashJsDashApi.__esri.JSONSupport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

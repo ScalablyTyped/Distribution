@@ -1,6 +1,6 @@
 package typings.nodeDashWit.nodeDashWitMod
 
-import typings.nodeDashWit.nodeDashWitMod.logNs.Logger
+import typings.nodeDashWit.nodeDashWitMod.log.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

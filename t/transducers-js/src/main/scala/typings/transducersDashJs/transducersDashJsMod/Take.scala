@@ -16,3 +16,9 @@ class Take[TResult, TInput] protected () extends Transformer[TResult, TInput] {
   override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
+@JSImport("transducers-js", "take")
+@js.native
+object take extends js.Object {
+  def apply[TInput](n: Double): Transducer[TInput, TInput] = js.native
+}
+

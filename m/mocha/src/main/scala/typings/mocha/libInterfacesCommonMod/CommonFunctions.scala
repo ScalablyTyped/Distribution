@@ -1,8 +1,8 @@
 package typings.mocha.libInterfacesCommonMod
 
-import typings.mocha.MochaNs.AsyncFunc
-import typings.mocha.MochaNs.Func
-import typings.mocha.MochaNs.Suite
+import typings.mocha.Mocha.AsyncFunc
+import typings.mocha.Mocha.Func
+import typings.mocha.Mocha.Suite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

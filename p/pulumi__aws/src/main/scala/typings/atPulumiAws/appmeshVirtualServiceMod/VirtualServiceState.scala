@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.appmeshNs.VirtualServiceSpec
+import typings.atPulumiAws.typesInputMod.appmesh.VirtualServiceSpec
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

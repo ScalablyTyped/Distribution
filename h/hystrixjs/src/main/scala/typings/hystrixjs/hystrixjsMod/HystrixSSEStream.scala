@@ -1,6 +1,7 @@
 package typings.hystrixjs.hystrixjsMod
 
-import typings.rxDashLiteDashAggregates.RxNs.Observable
+import org.scalablytyped.runtime.TopLevel
+import typings.rxDashLiteDashAggregates.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,4 +19,8 @@ object HystrixSSEStream {
     __obj.asInstanceOf[HystrixSSEStream]
   }
 }
+
+@JSImport("hystrixjs", "hystrixSSEStream")
+@js.native
+object hystrixSSEStream extends TopLevel[HystrixSSEStream]
 

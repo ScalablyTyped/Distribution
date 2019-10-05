@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ec2VpcEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.VpcEndpointDnsEntry
+import typings.atPulumiAws.typesOutputMod.ec2.VpcEndpointDnsEntry
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

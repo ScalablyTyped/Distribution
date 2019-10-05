@@ -1,8 +1,8 @@
 package typings.stripeDashCheckout
 
 import typings.stripeDashCheckout.stripeDashCheckoutStrings.auto
-import typings.stripeDashV3.stripeNs.Source
-import typings.stripeDashV3.stripeNs.Token
+import typings.stripeDashV3.stripe.Source
+import typings.stripeDashV3.stripe.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

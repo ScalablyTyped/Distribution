@@ -143,8 +143,8 @@ object AwsSecurityFinding {
     Types: TypeList,
     UpdatedAt: NonEmptyString,
     Compliance: Compliance = null,
-    Confidence: js.UndefOr[Integer] = js.undefined,
-    Criticality: js.UndefOr[Integer] = js.undefined,
+    Confidence: Int | scala.Double = null,
+    Criticality: Int | scala.Double = null,
     FirstObservedAt: NonEmptyString = null,
     LastObservedAt: NonEmptyString = null,
     Malware: MalwareList = null,
@@ -163,8 +163,8 @@ object AwsSecurityFinding {
   ): AwsSecurityFinding = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, CreatedAt = CreatedAt, Description = Description, GeneratorId = GeneratorId, Id = Id, ProductArn = ProductArn, Resources = Resources, SchemaVersion = SchemaVersion, Severity = Severity, Title = Title, Types = Types, UpdatedAt = UpdatedAt)
     if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
-    if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (Criticality != null) __obj.updateDynamic("Criticality")(Criticality.asInstanceOf[js.Any])
     if (FirstObservedAt != null) __obj.updateDynamic("FirstObservedAt")(FirstObservedAt)
     if (LastObservedAt != null) __obj.updateDynamic("LastObservedAt")(LastObservedAt)
     if (Malware != null) __obj.updateDynamic("Malware")(Malware)

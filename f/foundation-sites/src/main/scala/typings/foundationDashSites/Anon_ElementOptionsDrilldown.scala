@@ -2,8 +2,8 @@ package typings.foundationDashSites
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.foundationDashSites.FoundationSitesNs.Drilldown
-import typings.foundationDashSites.FoundationSitesNs.IDrilldownOptions
+import typings.foundationDashSites.FoundationSites.Drilldown
+import typings.foundationDashSites.FoundationSites.IDrilldownOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

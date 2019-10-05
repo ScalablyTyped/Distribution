@@ -1,7 +1,7 @@
 package typings.atPulumiAws.appmeshVirtualNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.appmeshNs.VirtualNodeSpec
+import typings.atPulumiAws.typesOutputMod.appmesh.VirtualNodeSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

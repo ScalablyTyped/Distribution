@@ -42,9 +42,9 @@ object ModifyClientVpnEndpointRequest {
     ConnectionLogOptions: ConnectionLogOptions = null,
     Description: String = null,
     DnsServers: DnsServersOptionsModifyStructure = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ServerCertificateArn: String = null,
-    SplitTunnel: js.UndefOr[Boolean] = js.undefined
+    SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined
   ): ModifyClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)
     if (ConnectionLogOptions != null) __obj.updateDynamic("ConnectionLogOptions")(ConnectionLogOptions)

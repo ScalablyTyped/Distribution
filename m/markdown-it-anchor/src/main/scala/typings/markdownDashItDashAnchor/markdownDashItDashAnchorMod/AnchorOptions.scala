@@ -1,13 +1,12 @@
 package typings.markdownDashItDashAnchor.markdownDashItDashAnchorMod
 
+import typings.markdownDashIt.libTokenMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnchorOptions extends js.Object {
-  var callback: js.UndefOr[
-    js.Function2[/* token */ typings.markdownDashIt.libTokenMod.^, /* anchor_info */ AnchorInfo, Unit]
-  ] = js.undefined
+  var callback: js.UndefOr[js.Function2[/* token */ ^, /* anchor_info */ AnchorInfo, Unit]] = js.undefined
   var level: js.UndefOr[Double] = js.undefined
   var permalink: js.UndefOr[Boolean] = js.undefined
   var permalinkBefore: js.UndefOr[Boolean] = js.undefined
@@ -29,7 +28,7 @@ trait AnchorOptions extends js.Object {
 object AnchorOptions {
   @scala.inline
   def apply(
-    callback: (/* token */ typings.markdownDashIt.libTokenMod.^, /* anchor_info */ AnchorInfo) => Unit = null,
+    callback: (/* token */ ^, /* anchor_info */ AnchorInfo) => Unit = null,
     level: Int | Double = null,
     permalink: js.UndefOr[Boolean] = js.undefined,
     permalinkBefore: js.UndefOr[Boolean] = js.undefined,

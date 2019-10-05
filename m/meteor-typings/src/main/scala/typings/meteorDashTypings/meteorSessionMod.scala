@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/session", JSImport.Namespace)
 @js.native
 object meteorSessionMod extends js.Object {
-  @JSName("Session")
   @js.native
-  object SessionNs extends js.Object {
+  object Session extends js.Object {
     def equals(key: String, value: String): Boolean = js.native
     def equals(key: String, value: js.Any): Boolean = js.native
     def equals(key: String, value: Boolean): Boolean = js.native

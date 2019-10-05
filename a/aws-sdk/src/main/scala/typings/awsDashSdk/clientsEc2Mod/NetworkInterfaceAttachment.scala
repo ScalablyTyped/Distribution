@@ -40,8 +40,8 @@ object NetworkInterfaceAttachment {
   def apply(
     AttachTime: DateTime = null,
     AttachmentId: String = null,
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    DeviceIndex: js.UndefOr[Integer] = js.undefined,
+    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    DeviceIndex: Int | scala.Double = null,
     InstanceId: String = null,
     InstanceOwnerId: String = null,
     Status: AttachmentStatus = null
@@ -50,7 +50,7 @@ object NetworkInterfaceAttachment {
     if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime)
     if (AttachmentId != null) __obj.updateDynamic("AttachmentId")(AttachmentId)
     if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
-    if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex)
+    if (DeviceIndex != null) __obj.updateDynamic("DeviceIndex")(DeviceIndex.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
     if (InstanceOwnerId != null) __obj.updateDynamic("InstanceOwnerId")(InstanceOwnerId)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

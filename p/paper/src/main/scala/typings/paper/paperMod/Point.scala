@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "Point")
 @js.native
 class Point protected ()
-  extends typings.paper.paperNs.Point {
+  extends typings.paper.paper.Point {
   /**
     * Creates a Point object using the properties in the given object.
     * @param object - the object describing the point's properties
@@ -17,12 +17,12 @@ class Point protected ()
     * Creates a Point object using the coordinates of the given Point object.
     * @param point - the point to copy
     */
-  def this(point: typings.paper.paperNs.Point) = this()
+  def this(point: typings.paper.paper.Point) = this()
   /**
     * Creates a Point object using the width and height values of the given Size object.
     * @param size - the size width and height to use
     */
-  def this(size: typings.paper.paperNs.Size) = this()
+  def this(size: typings.paper.paper.Size) = this()
   /**
     * Creates a Point object using the numbers in the given array as coordinates.
     * @param array - an array of numbers to use as coordinates
@@ -45,16 +45,16 @@ object Point extends js.Object {
     * @param point1 -
     * @param point2 -
     */
-  def max(point1: typings.paper.paperNs.Point, point2: typings.paper.paperNs.Point): typings.paper.paperNs.Point = js.native
+  def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
   /**
     * Returns a new point object with the smallest x and y of the supplied points.
     * @param point1 -
     * @param point2 -
     */
-  def min(point1: typings.paper.paperNs.Point, point2: typings.paper.paperNs.Point): typings.paper.paperNs.Point = js.native
+  def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
   /**
     * Returns a point object with random x and y values between 0 and 1.
     */
-  def random(): typings.paper.paperNs.Point = js.native
+  def random(): typings.paper.paper.Point = js.native
 }
 

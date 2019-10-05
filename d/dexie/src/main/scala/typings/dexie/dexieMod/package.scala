@@ -11,7 +11,9 @@ package object dexieMod {
   import typings.std.DataView
   import typings.std.Date
 
+  type Dexie = Dexie_
   type IndexableType = IndexableTypePart | IndexableTypeArrayReadonly
   type IndexableTypePart = String | Double | Date | ArrayBuffer | ArrayBufferView | DataView | js.Array[js.Array[Unit]]
   type ThenShortcut[T, TResult] = js.Function1[/* value */ T, TResult | js.Thenable[TResult]]
+  type default = default_
 }

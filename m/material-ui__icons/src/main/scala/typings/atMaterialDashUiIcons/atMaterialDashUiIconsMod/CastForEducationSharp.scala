@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiIcons.atMaterialDashUiIconsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -14,4 +15,8 @@ class CastForEducationSharp protected ()
   def this(props: SvgIconProps) = this()
   def this(props: SvgIconProps, context: js.Any) = this()
 }
+
+@JSImport("@material-ui/icons", "CastForEducationSharp")
+@js.native
+object CastForEducationSharp extends TopLevel[SvgIconComponent]
 

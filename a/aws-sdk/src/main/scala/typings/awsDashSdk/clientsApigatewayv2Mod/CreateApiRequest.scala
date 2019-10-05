@@ -47,7 +47,7 @@ object CreateApiRequest {
     RouteSelectionExpression: SelectionExpression,
     ApiKeySelectionExpression: SelectionExpression = null,
     Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    DisableSchemaValidation: js.UndefOr[Boolean] = js.undefined,
     Tags: Tags = null,
     Version: StringWithLengthBetween1And64 = null
   ): CreateApiRequest = {

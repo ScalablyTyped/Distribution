@@ -1,6 +1,6 @@
 package typings.angularDashResource.angularDashResourceMod.angularMod
 
-import typings.angularDashResource.angularDashResourceMod.angularMod.resourceNs.IResourceServiceFactoryFunction
+import typings.angularDashResource.angularDashResourceMod.angularMod.resource.IResourceServiceFactoryFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

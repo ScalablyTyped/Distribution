@@ -2,6 +2,9 @@ package typings.atBlueprintjsCore.libEsmComponentsTreeTreeMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmComponentsTreeTreeNodeMod.ITreeNode
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,23 +51,23 @@ object ITreeProps {
   def apply[T](
     contents: js.Array[ITreeNode[T]],
     className: String = null,
-    onNodeClick: TreeEventHandler[T] = null,
-    onNodeCollapse: TreeEventHandler[T] = null,
-    onNodeContextMenu: TreeEventHandler[T] = null,
-    onNodeDoubleClick: TreeEventHandler[T] = null,
-    onNodeExpand: TreeEventHandler[T] = null,
-    onNodeMouseEnter: TreeEventHandler[T] = null,
-    onNodeMouseLeave: TreeEventHandler[T] = null
+    onNodeClick: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeCollapse: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeContextMenu: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeDoubleClick: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeExpand: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeMouseEnter: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onNodeMouseLeave: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null
   ): ITreeProps[T] = {
     val __obj = js.Dynamic.literal(contents = contents)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onNodeClick != null) __obj.updateDynamic("onNodeClick")(onNodeClick)
-    if (onNodeCollapse != null) __obj.updateDynamic("onNodeCollapse")(onNodeCollapse)
-    if (onNodeContextMenu != null) __obj.updateDynamic("onNodeContextMenu")(onNodeContextMenu)
-    if (onNodeDoubleClick != null) __obj.updateDynamic("onNodeDoubleClick")(onNodeDoubleClick)
-    if (onNodeExpand != null) __obj.updateDynamic("onNodeExpand")(onNodeExpand)
-    if (onNodeMouseEnter != null) __obj.updateDynamic("onNodeMouseEnter")(onNodeMouseEnter)
-    if (onNodeMouseLeave != null) __obj.updateDynamic("onNodeMouseLeave")(onNodeMouseLeave)
+    if (onNodeClick != null) __obj.updateDynamic("onNodeClick")(js.Any.fromFunction3(onNodeClick))
+    if (onNodeCollapse != null) __obj.updateDynamic("onNodeCollapse")(js.Any.fromFunction3(onNodeCollapse))
+    if (onNodeContextMenu != null) __obj.updateDynamic("onNodeContextMenu")(js.Any.fromFunction3(onNodeContextMenu))
+    if (onNodeDoubleClick != null) __obj.updateDynamic("onNodeDoubleClick")(js.Any.fromFunction3(onNodeDoubleClick))
+    if (onNodeExpand != null) __obj.updateDynamic("onNodeExpand")(js.Any.fromFunction3(onNodeExpand))
+    if (onNodeMouseEnter != null) __obj.updateDynamic("onNodeMouseEnter")(js.Any.fromFunction3(onNodeMouseEnter))
+    if (onNodeMouseLeave != null) __obj.updateDynamic("onNodeMouseLeave")(js.Any.fromFunction3(onNodeMouseLeave))
     __obj.asInstanceOf[ITreeProps[T]]
   }
 }

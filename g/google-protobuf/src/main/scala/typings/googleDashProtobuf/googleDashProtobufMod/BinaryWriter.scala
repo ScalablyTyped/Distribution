@@ -1,6 +1,6 @@
 package typings.googleDashProtobuf.googleDashProtobufMod
 
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstantsNs.FieldType
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

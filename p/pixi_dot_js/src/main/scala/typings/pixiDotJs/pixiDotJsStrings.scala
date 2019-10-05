@@ -1,9 +1,9 @@
 package typings.pixiDotJs
 
-import typings.pixiDotJs.PIXINs.interactionNs.InteractionMouseEvents
-import typings.pixiDotJs.PIXINs.interactionNs.InteractionPixiEvents
-import typings.pixiDotJs.PIXINs.interactionNs.InteractionPointerEvents
-import typings.pixiDotJs.PIXINs.interactionNs.InteractionTouchEvents
+import typings.pixiDotJs.PIXI.interaction.InteractionMouseEvents
+import typings.pixiDotJs.PIXI.interaction.InteractionPixiEvents
+import typings.pixiDotJs.PIXI.interaction.InteractionPointerEvents
+import typings.pixiDotJs.PIXI.interaction.InteractionTouchEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Component")
 @js.native
 class Component protected ()
-  extends typings.playcanvas.pcNs.Component {
-  def this(system: typings.playcanvas.pcNs.ComponentSystem, entity: typings.playcanvas.pcNs.Entity) = this()
+  extends typings.playcanvas.pc.Component {
+  def this(system: typings.playcanvas.pc.ComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }
 

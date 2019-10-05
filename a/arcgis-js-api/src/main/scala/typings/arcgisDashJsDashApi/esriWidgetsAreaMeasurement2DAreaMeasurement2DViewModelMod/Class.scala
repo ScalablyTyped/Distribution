@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod
 
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2DViewModel
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2DViewModelMeasurement
+import typings.arcgisDashJsDashApi.__esri.AreaMeasurement2DViewModelMeasurementLabel
+import typings.arcgisDashJsDashApi.__esri.MapView
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-feet`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-inches`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-kilometers`
@@ -15,10 +19,6 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hectares
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2DViewModel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2DViewModelMeasurement
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.AreaMeasurement2DViewModelMeasurementLabel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

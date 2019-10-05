@@ -50,7 +50,7 @@ object Bot {
     BotId: String = null,
     BotType: BotType = null,
     CreatedTimestamp: Iso8601Timestamp = null,
-    Disabled: js.UndefOr[NullableBoolean] = js.undefined,
+    Disabled: js.UndefOr[scala.Boolean] = js.undefined,
     DisplayName: SensitiveString = null,
     SecurityToken: SensitiveString = null,
     UpdatedTimestamp: Iso8601Timestamp = null,

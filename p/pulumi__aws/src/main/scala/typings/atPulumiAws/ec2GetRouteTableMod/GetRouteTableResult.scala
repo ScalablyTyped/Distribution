@@ -1,9 +1,9 @@
 package typings.atPulumiAws.ec2GetRouteTableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableAssociation
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableFilter
-import typings.atPulumiAws.typesOutputMod.ec2Ns.GetRouteTableRoute
+import typings.atPulumiAws.typesOutputMod.ec2.GetRouteTableAssociation
+import typings.atPulumiAws.typesOutputMod.ec2.GetRouteTableFilter
+import typings.atPulumiAws.typesOutputMod.ec2.GetRouteTableRoute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

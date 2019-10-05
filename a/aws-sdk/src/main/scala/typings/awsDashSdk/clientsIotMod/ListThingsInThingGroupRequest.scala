@@ -27,12 +27,12 @@ object ListThingsInThingGroupRequest {
   @scala.inline
   def apply(
     thingGroupName: ThingGroupName,
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
-    recursive: js.UndefOr[Recursive] = js.undefined
+    recursive: js.UndefOr[scala.Boolean] = js.undefined
   ): ListThingsInThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
     __obj.asInstanceOf[ListThingsInThingGroupRequest]

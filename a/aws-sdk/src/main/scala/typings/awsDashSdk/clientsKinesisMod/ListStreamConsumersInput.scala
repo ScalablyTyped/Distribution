@@ -27,12 +27,12 @@ object ListStreamConsumersInput {
   @scala.inline
   def apply(
     StreamARN: StreamARN,
-    MaxResults: js.UndefOr[ListStreamConsumersInputLimit] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: NextToken = null,
     StreamCreationTimestamp: Timestamp = null
   ): ListStreamConsumersInput = {
     val __obj = js.Dynamic.literal(StreamARN = StreamARN)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (StreamCreationTimestamp != null) __obj.updateDynamic("StreamCreationTimestamp")(StreamCreationTimestamp)
     __obj.asInstanceOf[ListStreamConsumersInput]

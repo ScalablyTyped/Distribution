@@ -1,8 +1,8 @@
 package typings.arcgisDashJsDashApi.esriLayersMapNotesLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapNotesLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MapNotesLayerProperties
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PortalItem
+import typings.arcgisDashJsDashApi.__esri.MapNotesLayer
+import typings.arcgisDashJsDashApi.__esri.MapNotesLayerProperties
+import typings.arcgisDashJsDashApi.__esri.PortalItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

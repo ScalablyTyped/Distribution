@@ -17,7 +17,7 @@ trait DescribeAggregateIdFormatResult extends js.Object {
 
 object DescribeAggregateIdFormatResult {
   @scala.inline
-  def apply(Statuses: IdFormatList = null, UseLongIdsAggregated: js.UndefOr[Boolean] = js.undefined): DescribeAggregateIdFormatResult = {
+  def apply(Statuses: IdFormatList = null, UseLongIdsAggregated: js.UndefOr[scala.Boolean] = js.undefined): DescribeAggregateIdFormatResult = {
     val __obj = js.Dynamic.literal()
     if (Statuses != null) __obj.updateDynamic("Statuses")(Statuses)
     if (!js.isUndefined(UseLongIdsAggregated)) __obj.updateDynamic("UseLongIdsAggregated")(UseLongIdsAggregated)

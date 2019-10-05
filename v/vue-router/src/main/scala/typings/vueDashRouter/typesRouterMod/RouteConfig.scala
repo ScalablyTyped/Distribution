@@ -1,6 +1,7 @@
 package typings.vueDashRouter.typesRouterMod
 
 import typings.vue.typesVueMod.Vue
+import typings.vueDashRouter.vueDashRouterNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,10 @@ object RouteConfig {
   def apply(
     path: String,
     alias: String | js.Array[String] = null,
-    beforeEnter: NavigationGuard[Vue] = null,
+    beforeEnter: (/* to */ Route, /* from */ Route, /* next */ js.Function1[
+      /* to */ js.UndefOr[RawLocation | `false` | (js.Function1[Vue, js.Any]) | Unit], 
+      Unit
+    ]) => js.Any = null,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     children: js.Array[RouteConfig] = null,
     component: Component = null,
@@ -38,7 +42,7 @@ object RouteConfig {
   ): RouteConfig = {
     val __obj = js.Dynamic.literal(path = path)
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(beforeEnter)
+    if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(js.Any.fromFunction3(beforeEnter))
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (children != null) __obj.updateDynamic("children")(children)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

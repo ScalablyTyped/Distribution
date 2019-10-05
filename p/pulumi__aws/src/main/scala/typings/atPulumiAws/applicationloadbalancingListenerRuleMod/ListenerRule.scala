@@ -1,7 +1,7 @@
 package typings.atPulumiAws.applicationloadbalancingListenerRuleMod
 
-import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.ListenerRuleAction
-import typings.atPulumiAws.typesOutputMod.applicationloadbalancingNs.ListenerRuleCondition
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancing.ListenerRuleAction
+import typings.atPulumiAws.typesOutputMod.applicationloadbalancing.ListenerRuleCondition
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

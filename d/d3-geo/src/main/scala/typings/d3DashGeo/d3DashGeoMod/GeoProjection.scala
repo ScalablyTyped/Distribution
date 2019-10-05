@@ -333,3 +333,9 @@ trait GeoProjection extends GeoStreamWrapper {
   def translate(point: js.Tuple2[Double, Double]): this.type = js.native
 }
 
+@JSImport("d3-geo", "geoProjection")
+@js.native
+object geoProjection extends js.Object {
+  def apply(project: GeoRawProjection): GeoProjection = js.native
+}
+

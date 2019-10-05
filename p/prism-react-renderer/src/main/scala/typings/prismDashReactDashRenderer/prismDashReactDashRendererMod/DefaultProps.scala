@@ -1,5 +1,6 @@
 package typings.prismDashReactDashRenderer.prismDashReactDashRendererMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ object DefaultProps {
     __obj.asInstanceOf[DefaultProps]
   }
 }
+
+@JSImport("prism-react-renderer", "defaultProps")
+@js.native
+object defaultProps extends TopLevel[DefaultProps]
 

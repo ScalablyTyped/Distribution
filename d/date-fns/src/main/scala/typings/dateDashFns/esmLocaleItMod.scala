@@ -1,5 +1,6 @@
 package typings.dateDashFns
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm/locale/it", JSImport.Namespace)
 @js.native
 object esmLocaleItMod extends js.Object {
-  val default: Locale = js.native
+  @js.native
+  object default extends TopLevel[Locale]
+  
 }
 

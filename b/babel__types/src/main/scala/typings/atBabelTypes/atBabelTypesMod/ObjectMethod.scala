@@ -67,3 +67,20 @@ object ObjectMethod {
   }
 }
 
+@JSImport("@babel/types", "objectMethod")
+@js.native
+object objectMethod extends js.Object {
+  def apply(
+    kind: js.UndefOr[method | get | set],
+    key: js.Any,
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    computed: js.UndefOr[Boolean],
+    async: js.UndefOr[Boolean],
+    decorators: js.UndefOr[js.Array[Decorator] | Null],
+    generator: js.UndefOr[Boolean],
+    returnType: js.UndefOr[TypeAnnotation | TSTypeAnnotation | Noop | Null],
+    typeParameters: js.UndefOr[TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | Null]
+  ): ObjectMethod = js.native
+}
+

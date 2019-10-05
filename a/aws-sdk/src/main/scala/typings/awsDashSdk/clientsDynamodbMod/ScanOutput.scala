@@ -31,17 +31,17 @@ object ScanOutput {
   @scala.inline
   def apply(
     ConsumedCapacity: ConsumedCapacity = null,
-    Count: js.UndefOr[Integer] = js.undefined,
+    Count: Int | scala.Double = null,
     Items: ItemList = null,
     LastEvaluatedKey: Key = null,
-    ScannedCount: js.UndefOr[Integer] = js.undefined
+    ScannedCount: Int | scala.Double = null
   ): ScanOutput = {
     val __obj = js.Dynamic.literal()
     if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
     if (Items != null) __obj.updateDynamic("Items")(Items)
     if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey)
-    if (!js.isUndefined(ScannedCount)) __obj.updateDynamic("ScannedCount")(ScannedCount)
+    if (ScannedCount != null) __obj.updateDynamic("ScannedCount")(ScannedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanOutput]
   }
 }

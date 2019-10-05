@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriPopupExpressionInfoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ExpressionInfoConstructor
+import typings.arcgisDashJsDashApi.__esri.ExpressionInfoConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

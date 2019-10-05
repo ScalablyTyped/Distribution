@@ -17,11 +17,11 @@ object IAsyncPropertyValidator {
   def apply(
     isAcceptable: js.Any => Promise[Boolean],
     isAsync: Boolean,
-    customMessage: IErrorCustomMessage = null,
+    customMessage: (/* config */ js.Any, /* args */ js.Any) => String = null,
     tagName: String = null
   ): IAsyncPropertyValidator = {
     val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable), isAsync = isAsync)
-    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
+    if (customMessage != null) __obj.updateDynamic("customMessage")(js.Any.fromFunction2(customMessage))
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IAsyncPropertyValidator]
   }

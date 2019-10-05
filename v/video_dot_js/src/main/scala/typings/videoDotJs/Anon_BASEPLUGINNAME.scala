@@ -2,8 +2,8 @@ package typings.videoDotJs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoDotJs.videoDotJsMod.videojsNs.Player
-import typings.videoDotJs.videoDotJsMod.videojsNs.Plugin
+import typings.videoDotJs.videoDotJsMod.videojs.Player
+import typings.videoDotJs.videoDotJsMod.videojs.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

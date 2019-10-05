@@ -1,7 +1,7 @@
 package typings.mochaDashSteps.mochaDashStepsMod
 
-import typings.mocha.MochaNs.Func
-import typings.mocha.MochaNs.Test
+import typings.mocha.Mocha.Func
+import typings.mocha.Mocha.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

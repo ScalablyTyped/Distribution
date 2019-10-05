@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsCoordinateConversionCoordinateConversionViewModelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CoordinateConversionViewModelConstructor
+import typings.arcgisDashJsDashApi.__esri.CoordinateConversionViewModelConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

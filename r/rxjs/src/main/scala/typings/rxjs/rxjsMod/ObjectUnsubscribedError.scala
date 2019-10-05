@@ -1,16 +1,12 @@
 package typings.rxjs.rxjsMod
 
-import typings.rxjs.internalUtilObjectUnsubscribedErrorMod.ObjectUnsubscribedError
+import org.scalablytyped.runtime.TopLevel
+import typings.rxjs.internalUtilObjectUnsubscribedErrorMod.ObjectUnsubscribedErrorCtor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rxjs", "ObjectUnsubscribedError")
 @js.native
-class ObjectUnsubscribedErrorCls () extends ObjectUnsubscribedError {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
+object ObjectUnsubscribedError extends TopLevel[ObjectUnsubscribedErrorCtor]
 

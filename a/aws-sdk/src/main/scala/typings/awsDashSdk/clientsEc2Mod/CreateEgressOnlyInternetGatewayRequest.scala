@@ -21,7 +21,7 @@ trait CreateEgressOnlyInternetGatewayRequest extends js.Object {
 
 object CreateEgressOnlyInternetGatewayRequest {
   @scala.inline
-  def apply(VpcId: String, ClientToken: String = null, DryRun: js.UndefOr[Boolean] = js.undefined): CreateEgressOnlyInternetGatewayRequest = {
+  def apply(VpcId: String, ClientToken: String = null, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateEgressOnlyInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

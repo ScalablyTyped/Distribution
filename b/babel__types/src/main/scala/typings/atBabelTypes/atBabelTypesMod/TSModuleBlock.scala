@@ -39,3 +39,9 @@ object TSModuleBlock {
   }
 }
 
+@JSImport("@babel/types", "tsModuleBlock")
+@js.native
+object tsModuleBlock extends js.Object {
+  def apply(body: js.Array[Statement]): TSModuleBlock = js.native
+}
+

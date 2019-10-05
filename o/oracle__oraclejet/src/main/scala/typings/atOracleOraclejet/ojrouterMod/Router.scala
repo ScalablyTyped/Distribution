@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atOracleOraclejet.Anon_HasChanged
 import typings.atOracleOraclejet.Anon_HistoryUpdate
 import typings.atOracleOraclejet.Anon_LifecycleListener
-import typings.atOracleOraclejet.ojrouterMod.RouterStateNs.ConfigOptions
+import typings.atOracleOraclejet.ojrouterMod.RouterState.ConfigOptions
 import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

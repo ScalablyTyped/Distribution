@@ -1,6 +1,6 @@
 package typings.atPulumiAws.cognitoResourceServerMod
 
-import typings.atPulumiAws.typesInputMod.cognitoNs.ResourceServerScope
+import typings.atPulumiAws.typesInputMod.cognito.ResourceServerScope
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

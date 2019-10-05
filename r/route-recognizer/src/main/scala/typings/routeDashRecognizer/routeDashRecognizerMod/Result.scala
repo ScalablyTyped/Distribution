@@ -13,9 +13,9 @@ trait Result extends js.Object {
 
 object Result {
   @scala.inline
-  def apply(handler: Opaque, isDynamic: Boolean, params: Params): Result = {
-    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], isDynamic = isDynamic, params = params)
-  
+  def apply(isDynamic: Boolean, params: Params, handler: Opaque = null): Result = {
+    val __obj = js.Dynamic.literal(isDynamic = isDynamic, params = params)
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

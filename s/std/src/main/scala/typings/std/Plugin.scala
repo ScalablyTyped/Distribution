@@ -36,9 +36,5 @@ trait Plugin extends /* index */ NumberDictionary[MimeType] {
 
 @JSGlobal("Plugin")
 @js.native
-class PluginCls () extends Plugin
-
-@JSGlobal("Plugin")
-@js.native
 object Plugin extends Instantiable0[Plugin]
 

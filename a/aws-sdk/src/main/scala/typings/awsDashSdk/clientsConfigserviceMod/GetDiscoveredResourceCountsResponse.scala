@@ -24,12 +24,12 @@ object GetDiscoveredResourceCountsResponse {
   def apply(
     nextToken: NextToken = null,
     resourceCounts: ResourceCounts = null,
-    totalDiscoveredResources: js.UndefOr[Long] = js.undefined
+    totalDiscoveredResources: Int | Double = null
   ): GetDiscoveredResourceCountsResponse = {
     val __obj = js.Dynamic.literal()
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (resourceCounts != null) __obj.updateDynamic("resourceCounts")(resourceCounts)
-    if (!js.isUndefined(totalDiscoveredResources)) __obj.updateDynamic("totalDiscoveredResources")(totalDiscoveredResources)
+    if (totalDiscoveredResources != null) __obj.updateDynamic("totalDiscoveredResources")(totalDiscoveredResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiscoveredResourceCountsResponse]
   }
 }

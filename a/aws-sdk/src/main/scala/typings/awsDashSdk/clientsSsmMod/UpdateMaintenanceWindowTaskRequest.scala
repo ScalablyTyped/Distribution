@@ -73,8 +73,8 @@ object UpdateMaintenanceWindowTaskRequest {
     MaxConcurrency: MaxConcurrency = null,
     MaxErrors: MaxErrors = null,
     Name: MaintenanceWindowName = null,
-    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
-    Replace: js.UndefOr[Boolean] = js.undefined,
+    Priority: Int | Double = null,
+    Replace: js.UndefOr[scala.Boolean] = js.undefined,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
     TaskArn: MaintenanceWindowTaskArn = null,
@@ -87,7 +87,7 @@ object UpdateMaintenanceWindowTaskRequest {
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency)
     if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace)
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn)
     if (Targets != null) __obj.updateDynamic("Targets")(Targets)

@@ -11,9 +11,9 @@ trait Anon_ChildrenComponentChildren extends js.Object {
 
 object Anon_ChildrenComponentChildren {
   @scala.inline
-  def apply(children: ComponentChildren): Anon_ChildrenComponentChildren = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ComponentChildren = null): Anon_ChildrenComponentChildren = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenComponentChildren]
   }
 }

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMMatrix")
 @js.native
 class DOMMatrix ()
-  extends typings.geometryDashDom.GeometryDomNs.DOMMatrix {
+  extends typings.geometryDashDom.GeometryDom.DOMMatrix {
   def this(array: js.Array[Double]) = this()
-  def this(other: typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly) = this()
+  def this(other: typings.geometryDashDom.GeometryDom.DOMMatrixReadOnly) = this()
   def this(transformList: String) = this()
   def this(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double) = this()
 }
@@ -20,7 +20,7 @@ class DOMMatrix ()
 @JSGlobal("DOMMatrix")
 @js.native
 object DOMMatrix
-  extends Instantiable0[typings.geometryDashDom.GeometryDomNs.DOMMatrix]
+  extends Instantiable0[typings.geometryDashDom.GeometryDom.DOMMatrix]
      with Instantiable6[
       /* a */ Double, 
       /* b */ Double, 
@@ -28,10 +28,10 @@ object DOMMatrix
       /* d */ Double, 
       /* e */ Double, 
       /* f */ Double, 
-      typings.geometryDashDom.GeometryDomNs.DOMMatrix
+      typings.geometryDashDom.GeometryDom.DOMMatrix
     ]
      with Instantiable1[
-      (/* array */ js.Array[Double]) | (/* other */ typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly) | (/* transformList */ String), 
-      typings.geometryDashDom.GeometryDomNs.DOMMatrix
+      (/* array */ js.Array[Double]) | (/* other */ typings.geometryDashDom.GeometryDom.DOMMatrixReadOnly) | (/* transformList */ String), 
+      typings.geometryDashDom.GeometryDom.DOMMatrix
     ]
 

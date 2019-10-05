@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2NetworkAclMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ec2Ns.NetworkAclEgress
-import typings.atPulumiAws.typesInputMod.ec2Ns.NetworkAclIngress
+import typings.atPulumiAws.typesInputMod.ec2.NetworkAclEgress
+import typings.atPulumiAws.typesInputMod.ec2.NetworkAclIngress
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

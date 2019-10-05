@@ -2,9 +2,10 @@ package typings.urllib.urllibMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
+import typings.node.NodeJS.ErrnoException
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingHttpHeaders
-import typings.node.netMod.LookupFunction
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
@@ -43,7 +44,7 @@ object RequestOptions2 {
     httpsAgent: typings.node.httpsMod.Agent = null,
     isRetry: /* res */ HttpClientResponse[_] => Boolean = null,
     key: String | Buffer = null,
-    lookup: LookupFunction = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxRedirects: Int | Double = null,
     method: HttpMethod = null,
     nestedQuerystring: js.UndefOr[Boolean] = js.undefined,
@@ -85,7 +86,7 @@ object RequestOptions2 {
     if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent)
     if (isRetry != null) __obj.updateDynamic("isRetry")(js.Any.fromFunction1(isRetry))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(nestedQuerystring)) __obj.updateDynamic("nestedQuerystring")(nestedQuerystring)

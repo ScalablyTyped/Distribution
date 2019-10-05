@@ -117,8 +117,8 @@ object Stack {
     Region: String = null,
     ServiceRoleArn: String = null,
     StackId: String = null,
-    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
     VpcId: String = null
   ): Stack = {
     val __obj = js.Dynamic.literal()

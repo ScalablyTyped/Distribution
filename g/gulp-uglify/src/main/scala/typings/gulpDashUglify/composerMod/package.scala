@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object composerMod {
   import typings.gulpDashUglify.gulpDashUglifyMod.Options
-  import typings.node.NodeJSNs.ReadWriteStream
+  import typings.node.NodeJS.ReadWriteStream
 
   type Composer = js.Function2[
     /* uglify */ Uglify, 

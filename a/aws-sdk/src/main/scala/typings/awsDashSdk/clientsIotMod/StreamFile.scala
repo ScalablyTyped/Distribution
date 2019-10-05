@@ -17,9 +17,9 @@ trait StreamFile extends js.Object {
 
 object StreamFile {
   @scala.inline
-  def apply(fileId: js.UndefOr[FileId] = js.undefined, s3Location: S3Location = null): StreamFile = {
+  def apply(fileId: Int | Double = null, s3Location: S3Location = null): StreamFile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileId)) __obj.updateDynamic("fileId")(fileId)
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
     if (s3Location != null) __obj.updateDynamic("s3Location")(s3Location)
     __obj.asInstanceOf[StreamFile]
   }

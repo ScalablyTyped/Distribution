@@ -1,6 +1,6 @@
 package typings.jszip.jszipMod
 
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Uint8Array

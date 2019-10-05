@@ -24,7 +24,7 @@ object IdentityInfo {
   def apply(
     IdentityName: Identity = null,
     IdentityType: IdentityType = null,
-    SendingEnabled: js.UndefOr[Enabled] = js.undefined
+    SendingEnabled: js.UndefOr[Boolean] = js.undefined
   ): IdentityInfo = {
     val __obj = js.Dynamic.literal()
     if (IdentityName != null) __obj.updateDynamic("IdentityName")(IdentityName)

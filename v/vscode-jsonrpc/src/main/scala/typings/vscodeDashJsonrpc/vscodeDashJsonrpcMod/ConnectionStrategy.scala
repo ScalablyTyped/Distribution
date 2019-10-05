@@ -16,14 +16,9 @@ trait ConnectionStrategy extends js.Object {
   ] = js.undefined
 }
 
-object ConnectionStrategy {
-  @scala.inline
-  def apply(
-    cancelUndispatched: (/* message */ Message, /* next */ js.Function1[/* message */ Message, js.UndefOr[ResponseMessage]]) => js.UndefOr[ResponseMessage] = null
-  ): ConnectionStrategy = {
-    val __obj = js.Dynamic.literal()
-    if (cancelUndispatched != null) __obj.updateDynamic("cancelUndispatched")(js.Any.fromFunction2(cancelUndispatched))
-    __obj.asInstanceOf[ConnectionStrategy]
-  }
+@JSImport("vscode-jsonrpc", "ConnectionStrategy")
+@js.native
+object ConnectionStrategy extends js.Object {
+  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = js.native
 }
 

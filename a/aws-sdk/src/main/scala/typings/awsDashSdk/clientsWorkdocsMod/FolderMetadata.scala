@@ -58,26 +58,26 @@ object FolderMetadata {
     CreatorId: IdType = null,
     Id: ResourceIdType = null,
     Labels: SharedLabels = null,
-    LatestVersionSize: js.UndefOr[SizeType] = js.undefined,
+    LatestVersionSize: Int | Double = null,
     ModifiedTimestamp: TimestampType = null,
     Name: ResourceNameType = null,
     ParentFolderId: ResourceIdType = null,
     ResourceState: ResourceStateType = null,
     Signature: HashType = null,
-    Size: js.UndefOr[SizeType] = js.undefined
+    Size: Int | Double = null
   ): FolderMetadata = {
     val __obj = js.Dynamic.literal()
     if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp)
     if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Labels != null) __obj.updateDynamic("Labels")(Labels)
-    if (!js.isUndefined(LatestVersionSize)) __obj.updateDynamic("LatestVersionSize")(LatestVersionSize)
+    if (LatestVersionSize != null) __obj.updateDynamic("LatestVersionSize")(LatestVersionSize.asInstanceOf[js.Any])
     if (ModifiedTimestamp != null) __obj.updateDynamic("ModifiedTimestamp")(ModifiedTimestamp)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (ParentFolderId != null) __obj.updateDynamic("ParentFolderId")(ParentFolderId)
     if (ResourceState != null) __obj.updateDynamic("ResourceState")(ResourceState.asInstanceOf[js.Any])
     if (Signature != null) __obj.updateDynamic("Signature")(Signature)
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size)
+    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderMetadata]
   }
 }

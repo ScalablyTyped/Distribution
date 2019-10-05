@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojvalidationDashBaseMod
 
-import typings.atOracleOraclejet.ojvalidationDashBaseMod.RegExpValidatorNs.ValidatorOptions
+import typings.atOracleOraclejet.ojvalidationDashBaseMod.RegExpValidator.ValidatorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

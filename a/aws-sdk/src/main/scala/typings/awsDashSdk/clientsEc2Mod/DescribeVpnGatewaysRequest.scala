@@ -22,7 +22,7 @@ trait DescribeVpnGatewaysRequest extends js.Object {
 object DescribeVpnGatewaysRequest {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Filters: FilterList = null,
     VpnGatewayIds: VpnGatewayIdStringList = null
   ): DescribeVpnGatewaysRequest = {

@@ -73,22 +73,5 @@ object ^ extends js.Object {
     */
   def apply(format: tiny): RequestHandler = js.native
   def apply(format: tiny, options: Options): RequestHandler = js.native
-  /**
-    * Compile a format string in token notation into a format function.
-    */
-  def compile(format: String): FormatFn = js.native
-  /**
-    * Define a named custom format by specifying a format string in token
-    * notation.
-    */
-  def format(name: String, fmt: String): Morgan = js.native
-  /**
-    * Define a named custom format by specifying a format function.
-    */
-  def format(name: String, fmt: FormatFn): Morgan = js.native
-  /**
-    * Define a custom token which can be used in custom morgan logging formats.
-    */
-  def token(name: String, callback: TokenCallbackFn): Morgan = js.native
 }
 

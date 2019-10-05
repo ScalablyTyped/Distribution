@@ -1,6 +1,6 @@
 package typings.atPulumiAws.codecommitTriggerMod
 
-import typings.atPulumiAws.typesOutputMod.codecommitNs.TriggerTrigger
+import typings.atPulumiAws.typesOutputMod.codecommit.TriggerTrigger
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

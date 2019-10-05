@@ -34,14 +34,14 @@ object LambdaFunctionInfo {
     functionAlias: LambdaFunctionAlias = null,
     functionName: LambdaFunctionName = null,
     targetVersion: Version = null,
-    targetVersionWeight: js.UndefOr[TrafficWeight] = js.undefined
+    targetVersionWeight: Int | Double = null
   ): LambdaFunctionInfo = {
     val __obj = js.Dynamic.literal()
     if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion)
     if (functionAlias != null) __obj.updateDynamic("functionAlias")(functionAlias)
     if (functionName != null) __obj.updateDynamic("functionName")(functionName)
     if (targetVersion != null) __obj.updateDynamic("targetVersion")(targetVersion)
-    if (!js.isUndefined(targetVersionWeight)) __obj.updateDynamic("targetVersionWeight")(targetVersionWeight)
+    if (targetVersionWeight != null) __obj.updateDynamic("targetVersionWeight")(targetVersionWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionInfo]
   }
 }

@@ -1,6 +1,6 @@
 package typings.jqueryDotFlagstrap
 
-import typings.jqueryDotFlagstrap.jQueryFlagStrapNs.FlagStrapOptions
+import typings.jqueryDotFlagstrap.jQueryFlagStrap.FlagStrapOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

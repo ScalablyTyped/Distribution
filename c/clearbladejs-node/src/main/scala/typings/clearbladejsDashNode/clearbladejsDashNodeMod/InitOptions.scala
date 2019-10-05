@@ -27,7 +27,7 @@ object InitOptions {
     systemSecret: String,
     URI: String = null,
     callTimeout: Int | Double = null,
-    callback: CbCallback = null,
+    callback: (/* error */ Boolean, /* response */ Resp) => Unit = null,
     defaultQoS: MessagingQOS = null,
     email: String = null,
     logging: js.UndefOr[Boolean] = js.undefined,
@@ -40,7 +40,7 @@ object InitOptions {
     val __obj = js.Dynamic.literal(systemKey = systemKey, systemSecret = systemSecret)
     if (URI != null) __obj.updateDynamic("URI")(URI)
     if (callTimeout != null) __obj.updateDynamic("callTimeout")(callTimeout.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (defaultQoS != null) __obj.updateDynamic("defaultQoS")(defaultQoS)
     if (email != null) __obj.updateDynamic("email")(email)
     if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)

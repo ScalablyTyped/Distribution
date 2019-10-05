@@ -20,5 +20,6 @@ object TraceFormat extends js.Object {
   /* "text" */ val Text: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.Text with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TraceFormat with String] = js.native
+  def fromString(value: String): TraceFormat = js.native
 }
 

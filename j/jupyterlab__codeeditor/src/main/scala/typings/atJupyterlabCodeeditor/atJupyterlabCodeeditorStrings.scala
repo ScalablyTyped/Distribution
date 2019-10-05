@@ -1,6 +1,6 @@
 package typings.atJupyterlabCodeeditor
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditorNs.EdgeLocation
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.EdgeLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

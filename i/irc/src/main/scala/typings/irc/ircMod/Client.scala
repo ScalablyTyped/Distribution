@@ -3,10 +3,10 @@ package typings.irc.ircMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.irc.Anon_Channel
 import typings.irc.Anon_Created
-import typings.irc.ircMod.handlersNs.IJoinChannel
-import typings.irc.ircMod.handlersNs.IPartChannel
-import typings.irc.ircMod.handlersNs.IRaw
-import typings.irc.ircMod.handlersNs.IWhois
+import typings.irc.ircMod.handlers.IJoinChannel
+import typings.irc.ircMod.handlers.IPartChannel
+import typings.irc.ircMod.handlers.IRaw
+import typings.irc.ircMod.handlers.IWhois
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import scala.scalajs.js

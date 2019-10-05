@@ -1,8 +1,8 @@
 package typings.gridfsDashStream.gridfsDashStreamMod
 
-import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStreamNs.Options
-import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStreamNs.ReadStream
-import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStreamNs.WriteStream
+import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.Options
+import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.ReadStream
+import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.WriteStream
 import typings.mongodb.Default
 import typings.mongodb.mongodbMod.Collection
 import typings.std.Error

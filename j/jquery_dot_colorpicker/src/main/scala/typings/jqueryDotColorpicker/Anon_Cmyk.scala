@@ -1,10 +1,10 @@
 package typings.jqueryDotColorpicker
 
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.CMYK
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.HSL
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.HSV
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.LAB
-import typings.jqueryDotColorpicker.JQueryColorpickerStaticNs.RGB
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.CMYK
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.HSL
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.HSV
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.LAB
+import typings.jqueryDotColorpicker.JQueryColorpickerStatic.RGB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

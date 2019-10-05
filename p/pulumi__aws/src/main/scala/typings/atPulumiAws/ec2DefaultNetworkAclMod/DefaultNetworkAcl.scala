@@ -1,8 +1,8 @@
 package typings.atPulumiAws.ec2DefaultNetworkAclMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultNetworkAclEgress
-import typings.atPulumiAws.typesOutputMod.ec2Ns.DefaultNetworkAclIngress
+import typings.atPulumiAws.typesOutputMod.ec2.DefaultNetworkAclEgress
+import typings.atPulumiAws.typesOutputMod.ec2.DefaultNetworkAclIngress
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

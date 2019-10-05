@@ -17,7 +17,7 @@ trait ValidateSecurityProfileBehaviorsResponse extends js.Object {
 
 object ValidateSecurityProfileBehaviorsResponse {
   @scala.inline
-  def apply(valid: js.UndefOr[Valid] = js.undefined, validationErrors: ValidationErrors = null): ValidateSecurityProfileBehaviorsResponse = {
+  def apply(valid: js.UndefOr[scala.Boolean] = js.undefined, validationErrors: ValidationErrors = null): ValidateSecurityProfileBehaviorsResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
     if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors)

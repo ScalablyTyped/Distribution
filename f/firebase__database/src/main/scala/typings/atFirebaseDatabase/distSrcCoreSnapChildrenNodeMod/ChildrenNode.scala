@@ -1,8 +1,8 @@
 package typings.atFirebaseDatabase.distSrcCoreSnapChildrenNodeMod
 
-import typings.atFirebaseDatabase.distSrcCoreSnapChildrenNodeMod.distSrcCoreSnapNodeMod.NamedNode
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexMapMod.IndexMap
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
+import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.NamedNode
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
 import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.SortedMap
 import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.SortedMapIterator

@@ -20,5 +20,27 @@ class Tab protected () extends js.Object {
 @js.native
 object Tab extends js.Object {
   var defaultProps: Anon_DefaultIndex = js.native
+  @js.native
+  object propTypes extends js.Object {
+    @js.native
+    object defaultIndex extends js.Object {
+      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+    }
+    
+    @js.native
+    object onChange extends js.Object {
+      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+    }
+    
+    @js.native
+    object `type` extends js.Object {
+      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
+    }
+    
+  }
+  
 }
 

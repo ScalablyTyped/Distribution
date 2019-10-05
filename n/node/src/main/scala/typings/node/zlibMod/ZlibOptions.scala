@@ -1,6 +1,6 @@
 package typings.node.zlibMod
 
-import typings.node.NodeJSNs.TypedArray
+import typings.node.NodeJS.TypedArray
 import typings.std.ArrayBuffer
 import typings.std.DataView
 import scala.scalajs.js

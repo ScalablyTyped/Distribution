@@ -1,7 +1,7 @@
 package typings.keyv.keyvMod
 
 import typings.keyv.keyvNumbers.`true`
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

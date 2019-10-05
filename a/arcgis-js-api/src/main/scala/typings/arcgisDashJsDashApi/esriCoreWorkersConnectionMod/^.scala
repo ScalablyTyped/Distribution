@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriCoreWorkersConnectionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ConnectionConstructor
+import typings.arcgisDashJsDashApi.__esri.ConnectionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -57,7 +57,7 @@ object StreamOptions {
     flush: js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit] = null,
     highWaterMark: Int | Double = null,
     includeUndecided: js.UndefOr[Boolean] = js.undefined,
-    objectFilter: ObjectFilterFunction = null,
+    objectFilter: /* asm */ typings.streamDashJson.assemblerMod.^ => js.UndefOr[Boolean] = null,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null,
     read_DuplexOptions: js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit] = null,
@@ -113,7 +113,7 @@ object StreamOptions {
     if (flush != null) __obj.updateDynamic("flush")(flush)
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(includeUndecided)) __obj.updateDynamic("includeUndecided")(includeUndecided)
-    if (objectFilter != null) __obj.updateDynamic("objectFilter")(objectFilter)
+    if (objectFilter != null) __obj.updateDynamic("objectFilter")(js.Any.fromFunction1(objectFilter))
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
     if (read != null) __obj.updateDynamic("read")(read)
     if (read_DuplexOptions != null) __obj.updateDynamic("read")(read_DuplexOptions)

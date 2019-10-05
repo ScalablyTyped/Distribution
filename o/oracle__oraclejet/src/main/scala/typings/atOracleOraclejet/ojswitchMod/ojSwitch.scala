@@ -1,11 +1,14 @@
 package typings.atOracleOraclejet.ojswitchMod
 
+import typings.atOracleOraclejet.Anon_Action
+import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly
 import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
-import typings.atOracleOraclejet.ojswitchMod.ojSwitchNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojswitchMod.ojSwitchNs.ojAnimateStart
+import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateEnd
+import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateStart
+import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,5 +38,12 @@ trait ojSwitch extends editableValue[Boolean, ojSwitchSettableProperties, Boolea
   def setProperties(properties: ojSwitchSettablePropertiesLenient): Unit = js.native
   @JSName("setProperty")
   def setProperty_readonly(property: readonly, value: Boolean): Unit = js.native
+}
+
+@JSImport("@oracle/oraclejet/ojswitch", "ojSwitch")
+@js.native
+object ojSwitch extends js.Object {
+  type ojAnimateEnd = CustomEvent[Anon_Action]
+  type ojAnimateStart = CustomEvent[Anon_ActionElement]
 }
 

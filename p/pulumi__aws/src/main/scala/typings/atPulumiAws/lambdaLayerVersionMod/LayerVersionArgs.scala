@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaLayerVersionMod
 
-import typings.atPulumiPulumi.atPulumiPulumiMod.assetNs.Archive
+import typings.atPulumiPulumi.atPulumiPulumiMod.asset.Archive
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cloudtrailTrailMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.cloudtrailNs.TrailEventSelector
+import typings.atPulumiAws.typesOutputMod.cloudtrail.TrailEventSelector
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

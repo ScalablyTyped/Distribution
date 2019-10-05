@@ -122,24 +122,24 @@ trait DBSnapshot extends js.Object {
 object DBSnapshot {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
     AvailabilityZone: String = null,
     DBInstanceIdentifier: String = null,
     DBSnapshotArn: String = null,
     DBSnapshotIdentifier: String = null,
     DbiResourceId: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceCreateTime: TStamp = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
     LicenseModel: String = null,
     MasterUsername: String = null,
     OptionGroupName: String = null,
-    PercentProgress: js.UndefOr[Integer] = js.undefined,
-    Port: js.UndefOr[Integer] = js.undefined,
+    PercentProgress: Int | scala.Double = null,
+    Port: Int | scala.Double = null,
     ProcessorFeatures: ProcessorFeatureList = null,
     SnapshotCreateTime: TStamp = null,
     SnapshotType: String = null,
@@ -152,7 +152,7 @@ object DBSnapshot {
     VpcId: String = null
   ): DBSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier)
     if (DBSnapshotArn != null) __obj.updateDynamic("DBSnapshotArn")(DBSnapshotArn)
@@ -163,13 +163,13 @@ object DBSnapshot {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled)
     if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(PercentProgress)) __obj.updateDynamic("PercentProgress")(PercentProgress)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)
     if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime)
     if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType)

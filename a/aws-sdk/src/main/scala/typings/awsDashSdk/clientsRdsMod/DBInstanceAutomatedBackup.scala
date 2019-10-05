@@ -102,22 +102,22 @@ trait DBInstanceAutomatedBackup extends js.Object {
 object DBInstanceAutomatedBackup {
   @scala.inline
   def apply(
-    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
+    AllocatedStorage: Int | scala.Double = null,
     AvailabilityZone: String = null,
     DBInstanceArn: String = null,
     DBInstanceIdentifier: String = null,
     DbiResourceId: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceCreateTime: TStamp = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
+    Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
     LicenseModel: String = null,
     MasterUsername: String = null,
     OptionGroupName: String = null,
-    Port: js.UndefOr[Integer] = js.undefined,
+    Port: Int | scala.Double = null,
     Region: String = null,
     RestoreWindow: RestoreWindow = null,
     Status: String = null,
@@ -127,7 +127,7 @@ object DBInstanceAutomatedBackup {
     VpcId: String = null
   ): DBInstanceAutomatedBackup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
+    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
     if (DBInstanceArn != null) __obj.updateDynamic("DBInstanceArn")(DBInstanceArn)
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier)
@@ -137,12 +137,12 @@ object DBInstanceAutomatedBackup {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled)
     if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime)
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops)
+    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region)
     if (RestoreWindow != null) __obj.updateDynamic("RestoreWindow")(RestoreWindow)
     if (Status != null) __obj.updateDynamic("Status")(Status)

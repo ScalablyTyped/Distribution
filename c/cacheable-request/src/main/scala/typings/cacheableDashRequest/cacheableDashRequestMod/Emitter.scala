@@ -6,6 +6,7 @@ import typings.cacheableDashRequest.cacheableDashRequestStrings.response
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.ServerResponse
+import typings.responselike.responselikeMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,10 +18,7 @@ trait Emitter extends EventEmitter {
   @JSName("addListener")
   def addListener_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def addListener_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("emit")
   def emit_error(event: error, error: CacheError): Boolean = js.native
   @JSName("emit")
@@ -30,7 +28,7 @@ trait Emitter extends EventEmitter {
   @JSName("emit")
   def emit_response(event: response, response: ServerResponse): Boolean = js.native
   @JSName("emit")
-  def emit_response(event: response, response: typings.responselike.responselikeMod.^): Boolean = js.native
+  def emit_response(event: response, response: ^): Boolean = js.native
   @JSName("listenerCount")
   def listenerCount_error(`type`: error): Double = js.native
   @JSName("listenerCount")
@@ -42,62 +40,43 @@ trait Emitter extends EventEmitter {
   @JSName("listeners")
   def listeners_request(event: request): js.Array[js.Function1[/* request */ ClientRequest, Unit]] = js.native
   @JSName("listeners")
-  def listeners_response(event: response): js.Array[
-    js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ] = js.native
+  def listeners_response(event: response): js.Array[js.Function1[/* response */ ServerResponse | ^ , Unit]] = js.native
   @JSName("off")
   def off_error(event: error, listener: js.Function1[/* error */ RequestError | CacheError, Unit]): this.type = js.native
   @JSName("off")
   def off_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("off")
-  def off_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def off_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* error */ RequestError | CacheError, Unit]): this.type = js.native
   @JSName("on")
   def on_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("on")
-  def on_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def on_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* error */ RequestError | CacheError, Unit]): this.type = js.native
   @JSName("once")
   def once_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("once")
-  def once_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def once_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* error */ RequestError | CacheError, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def prependListener_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* error */ RequestError | CacheError, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def prependOnceListener_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
   @JSName("rawListeners")
   def rawListeners_error(event: error): js.Array[js.Function1[/* error */ RequestError | CacheError, Unit]] = js.native
   @JSName("rawListeners")
   def rawListeners_request(event: request): js.Array[js.Function1[/* request */ ClientRequest, Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_response(event: response): js.Array[
-    js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ] = js.native
+  def rawListeners_response(event: response): js.Array[js.Function1[/* response */ ServerResponse | ^ , Unit]] = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_error(event: error): this.type = js.native
   @JSName("removeAllListeners")
@@ -109,9 +88,6 @@ trait Emitter extends EventEmitter {
   @JSName("removeListener")
   def removeListener_request(event: request, listener: js.Function1[/* request */ ClientRequest, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_response(
-    event: response,
-    listener: js.Function1[/* response */ ServerResponse | typings.responselike.responselikeMod.^ , Unit]
-  ): this.type = js.native
+  def removeListener_response(event: response, listener: js.Function1[/* response */ ServerResponse | ^ , Unit]): this.type = js.native
 }
 

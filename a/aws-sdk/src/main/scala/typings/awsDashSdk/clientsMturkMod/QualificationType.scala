@@ -63,23 +63,23 @@ object QualificationType {
   @scala.inline
   def apply(
     AnswerKey: String = null,
-    AutoGranted: js.UndefOr[Boolean] = js.undefined,
-    AutoGrantedValue: js.UndefOr[Integer] = js.undefined,
+    AutoGranted: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoGrantedValue: Int | Double = null,
     CreationTime: Timestamp = null,
     Description: String = null,
-    IsRequestable: js.UndefOr[Boolean] = js.undefined,
+    IsRequestable: js.UndefOr[scala.Boolean] = js.undefined,
     Keywords: String = null,
     Name: String = null,
     QualificationTypeId: EntityId = null,
     QualificationTypeStatus: QualificationTypeStatus = null,
-    RetryDelayInSeconds: js.UndefOr[Long] = js.undefined,
+    RetryDelayInSeconds: Int | Double = null,
     Test: String = null,
-    TestDurationInSeconds: js.UndefOr[Long] = js.undefined
+    TestDurationInSeconds: Int | Double = null
   ): QualificationType = {
     val __obj = js.Dynamic.literal()
     if (AnswerKey != null) __obj.updateDynamic("AnswerKey")(AnswerKey)
     if (!js.isUndefined(AutoGranted)) __obj.updateDynamic("AutoGranted")(AutoGranted)
-    if (!js.isUndefined(AutoGrantedValue)) __obj.updateDynamic("AutoGrantedValue")(AutoGrantedValue)
+    if (AutoGrantedValue != null) __obj.updateDynamic("AutoGrantedValue")(AutoGrantedValue.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(IsRequestable)) __obj.updateDynamic("IsRequestable")(IsRequestable)
@@ -87,9 +87,9 @@ object QualificationType {
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (QualificationTypeId != null) __obj.updateDynamic("QualificationTypeId")(QualificationTypeId)
     if (QualificationTypeStatus != null) __obj.updateDynamic("QualificationTypeStatus")(QualificationTypeStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryDelayInSeconds)) __obj.updateDynamic("RetryDelayInSeconds")(RetryDelayInSeconds)
+    if (RetryDelayInSeconds != null) __obj.updateDynamic("RetryDelayInSeconds")(RetryDelayInSeconds.asInstanceOf[js.Any])
     if (Test != null) __obj.updateDynamic("Test")(Test)
-    if (!js.isUndefined(TestDurationInSeconds)) __obj.updateDynamic("TestDurationInSeconds")(TestDurationInSeconds)
+    if (TestDurationInSeconds != null) __obj.updateDynamic("TestDurationInSeconds")(TestDurationInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualificationType]
   }
 }

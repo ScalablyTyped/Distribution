@@ -1,8 +1,8 @@
 package typings.eurekaDashJsDashClient
 
-import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClientNs.ActionType
-import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClientNs.DataCenterName
-import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
+import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClient.ActionType
+import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClient.DataCenterName
+import typings.eurekaDashJsDashClient.eurekaDashJsDashClientMod.EurekaClient.InstanceStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

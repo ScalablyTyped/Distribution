@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportMosaicRuleMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MosaicRule
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.MosaicRuleProperties
+import typings.arcgisDashJsDashApi.__esri.MosaicRule
+import typings.arcgisDashJsDashApi.__esri.MosaicRuleProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

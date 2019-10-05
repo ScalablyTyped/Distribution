@@ -45,9 +45,9 @@ object DescribeEnvironmentsMessage {
     ApplicationName: ApplicationName = null,
     EnvironmentIds: EnvironmentIdList = null,
     EnvironmentNames: EnvironmentNamesList = null,
-    IncludeDeleted: js.UndefOr[IncludeDeleted] = js.undefined,
+    IncludeDeleted: js.UndefOr[Boolean] = js.undefined,
     IncludedDeletedBackTo: IncludeDeletedBackTo = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    MaxRecords: Int | Double = null,
     NextToken: Token = null,
     VersionLabel: VersionLabel = null
   ): DescribeEnvironmentsMessage = {
@@ -57,7 +57,7 @@ object DescribeEnvironmentsMessage {
     if (EnvironmentNames != null) __obj.updateDynamic("EnvironmentNames")(EnvironmentNames)
     if (!js.isUndefined(IncludeDeleted)) __obj.updateDynamic("IncludeDeleted")(IncludeDeleted)
     if (IncludedDeletedBackTo != null) __obj.updateDynamic("IncludedDeletedBackTo")(IncludedDeletedBackTo)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel)
     __obj.asInstanceOf[DescribeEnvironmentsMessage]

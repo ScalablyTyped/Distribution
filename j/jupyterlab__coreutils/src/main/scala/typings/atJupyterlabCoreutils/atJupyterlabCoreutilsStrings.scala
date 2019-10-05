@@ -1,12 +1,12 @@
 package typings.atJupyterlabCoreutils
 
-import typings.atJupyterlabCoreutils.libInterfacesMod.IPollNs._Phase
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.CellType
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.OutputType
-import typings.atJupyterlabCoreutils.libNbformatMod.nbformatNs.StreamType
-import typings.atJupyterlabCoreutils.libPollMod.PollNs.Standby
-import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistryNs.IPluginNs.Phase
-import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistryNs.Primitive
+import typings.atJupyterlabCoreutils.libInterfacesMod.IPoll._Phase
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.CellType
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.OutputType
+import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.StreamType
+import typings.atJupyterlabCoreutils.libPollMod.Poll.Standby
+import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry.IPlugin.Phase
+import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry.Primitive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

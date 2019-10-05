@@ -1,0 +1,22 @@
+package typings.extjs.Ext.grid
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait INumberColumn
+  extends typings.extjs.Ext.grid.column.IColumn {
+  /** [Config Option] (String) */
+  var format: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object INumberColumn {
+  @scala.inline
+  def apply(IColumn: typings.extjs.Ext.grid.column.IColumn = null, format: java.lang.String = null): INumberColumn = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IColumn)
+    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[INumberColumn]
+  }
+}
+

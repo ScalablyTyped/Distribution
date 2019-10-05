@@ -9,14 +9,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Extracted nested Instantiables into classes in toughCookieNs */
 @JSImport("jsdom", "toughCookie")
 @js.native
 object toughCookie extends js.Object {
-  var Cookie: TypeofClassCookie = js.native
-  var CookieJar: TypeofClassCookieJar = js.native
-  val CookieJarNs: js.Any = js.native
-  val CookieNs: js.Any = js.native
+  @js.native
+  class MemoryCookieStore ()
+    extends typings.toughDashCookie.toughDashCookieMod.MemoryCookieStore
+  
+  @js.native
+  class Store ()
+    extends typings.toughDashCookie.toughDashCookieMod.Store
+  
+  var Cookie: js.Any | TypeofClassCookie = js.native
+  var CookieJar: js.Any | TypeofClassCookieJar = js.native
   var MemoryCookieStore: Instantiable0[typings.toughDashCookie.toughDashCookieMod.MemoryCookieStore] = js.native
   var Store: Instantiable0[typings.toughDashCookie.toughDashCookieMod.Store] = js.native
   def canonicalDomain(str: String): String = js.native

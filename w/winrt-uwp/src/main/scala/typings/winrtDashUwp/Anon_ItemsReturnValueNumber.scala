@@ -1,6 +1,6 @@
 package typings.winrtDashUwp
 
-import typings.winrtDashUwp.WindowsNs.MediaNs.CoreNs.TimedMetadataTrack
+import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

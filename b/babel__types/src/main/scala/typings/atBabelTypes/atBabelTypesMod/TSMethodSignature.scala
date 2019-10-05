@@ -51,3 +51,34 @@ object TSMethodSignature {
   }
 }
 
+@JSImport("@babel/types", "tsMethodSignature")
+@js.native
+object tsMethodSignature extends js.Object {
+  def apply(
+    key: Expression,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Null],
+    parameters: js.Array[Identifier | RestElement]
+  ): TSMethodSignature = js.native
+  def apply(
+    key: Expression,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Null],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
+  ): TSMethodSignature = js.native
+  def apply(
+    key: Expression,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Null],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation,
+    computed: Boolean
+  ): TSMethodSignature = js.native
+  def apply(
+    key: Expression,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | Null],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation,
+    computed: Boolean,
+    optional: Boolean
+  ): TSMethodSignature = js.native
+}
+

@@ -61,25 +61,25 @@ object PutScalingPolicyType {
     AutoScalingGroupName: ResourceName,
     PolicyName: XmlStringMaxLen255,
     AdjustmentType: XmlStringMaxLen255 = null,
-    Cooldown: js.UndefOr[Cooldown] = js.undefined,
-    EstimatedInstanceWarmup: js.UndefOr[EstimatedInstanceWarmup] = js.undefined,
+    Cooldown: Int | Double = null,
+    EstimatedInstanceWarmup: Int | Double = null,
     MetricAggregationType: XmlStringMaxLen32 = null,
-    MinAdjustmentMagnitude: js.UndefOr[MinAdjustmentMagnitude] = js.undefined,
-    MinAdjustmentStep: js.UndefOr[MinAdjustmentStep] = js.undefined,
+    MinAdjustmentMagnitude: Int | Double = null,
+    MinAdjustmentStep: Int | Double = null,
     PolicyType: XmlStringMaxLen64 = null,
-    ScalingAdjustment: js.UndefOr[PolicyIncrement] = js.undefined,
+    ScalingAdjustment: Int | Double = null,
     StepAdjustments: StepAdjustments = null,
     TargetTrackingConfiguration: TargetTrackingConfiguration = null
   ): PutScalingPolicyType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName, PolicyName = PolicyName)
     if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType)
-    if (!js.isUndefined(Cooldown)) __obj.updateDynamic("Cooldown")(Cooldown)
-    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup)
+    if (Cooldown != null) __obj.updateDynamic("Cooldown")(Cooldown.asInstanceOf[js.Any])
+    if (EstimatedInstanceWarmup != null) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.asInstanceOf[js.Any])
     if (MetricAggregationType != null) __obj.updateDynamic("MetricAggregationType")(MetricAggregationType)
-    if (!js.isUndefined(MinAdjustmentMagnitude)) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude)
-    if (!js.isUndefined(MinAdjustmentStep)) __obj.updateDynamic("MinAdjustmentStep")(MinAdjustmentStep)
+    if (MinAdjustmentMagnitude != null) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude.asInstanceOf[js.Any])
+    if (MinAdjustmentStep != null) __obj.updateDynamic("MinAdjustmentStep")(MinAdjustmentStep.asInstanceOf[js.Any])
     if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType)
-    if (!js.isUndefined(ScalingAdjustment)) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment)
+    if (ScalingAdjustment != null) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment.asInstanceOf[js.Any])
     if (StepAdjustments != null) __obj.updateDynamic("StepAdjustments")(StepAdjustments)
     if (TargetTrackingConfiguration != null) __obj.updateDynamic("TargetTrackingConfiguration")(TargetTrackingConfiguration)
     __obj.asInstanceOf[PutScalingPolicyType]

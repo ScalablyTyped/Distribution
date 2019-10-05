@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "Picker")
 @js.native
 class Picker protected ()
-  extends typings.playcanvas.pcNs.Picker {
-  def this(app: typings.playcanvas.pcNs.Application, width: Double, height: Double) = this()
+  extends typings.playcanvas.pc.Picker {
+  def this(app: typings.playcanvas.pc.Application, width: Double, height: Double) = this()
 }
 

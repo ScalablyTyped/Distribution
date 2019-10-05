@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Ray")
 @js.native
 class Ray ()
-  extends typings.cannon.CANNONNs.Ray {
-  def this(from: typings.cannon.CANNONNs.Vec3) = this()
-  def this(from: typings.cannon.CANNONNs.Vec3, to: typings.cannon.CANNONNs.Vec3) = this()
+  extends typings.cannon.CANNON.Ray {
+  def this(from: typings.cannon.CANNON.Vec3) = this()
+  def this(from: typings.cannon.CANNON.Vec3, to: typings.cannon.CANNON.Vec3) = this()
 }
 

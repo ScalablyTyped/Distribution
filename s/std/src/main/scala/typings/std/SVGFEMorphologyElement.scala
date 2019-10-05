@@ -57,37 +57,6 @@ trait SVGFEMorphologyElement
 
 @JSGlobal("SVGFEMorphologyElement")
 @js.native
-class SVGFEMorphologyElementCls () extends SVGFEMorphologyElement {
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override val height: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override var innerHTML: java.lang.String = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: Element | Null = js.native
-  /* CompleteClass */
-  override val result: SVGAnimatedString = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override val width: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override val x: SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override val y: SVGAnimatedLength = js.native
-}
-
-@JSGlobal("SVGFEMorphologyElement")
-@js.native
 object SVGFEMorphologyElement extends Instantiable0[SVGFEMorphologyElement] {
   val SVG_MORPHOLOGY_OPERATOR_DILATE: Double = js.native
   val SVG_MORPHOLOGY_OPERATOR_ERODE: Double = js.native

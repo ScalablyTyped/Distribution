@@ -31,13 +31,13 @@ object GrantEntitlementRequest {
   @scala.inline
   def apply(
     Subscribers: __listOf__string,
-    DataTransferSubscriberFeePercent: js.UndefOr[__integer] = js.undefined,
+    DataTransferSubscriberFeePercent: Int | Double = null,
     Description: __string = null,
     Encryption: Encryption = null,
     Name: __string = null
   ): GrantEntitlementRequest = {
     val __obj = js.Dynamic.literal(Subscribers = Subscribers)
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent)
+    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (Name != null) __obj.updateDynamic("Name")(Name)

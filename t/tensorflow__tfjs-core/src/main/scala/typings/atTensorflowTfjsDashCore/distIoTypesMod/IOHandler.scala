@@ -11,10 +11,13 @@ trait IOHandler extends js.Object {
 
 object IOHandler {
   @scala.inline
-  def apply(load: LoadHandler = null, save: SaveHandler = null): IOHandler = {
+  def apply(
+    load: () => js.Promise[ModelArtifacts] = null,
+    save: /* modelArtifact */ ModelArtifacts => js.Promise[SaveResult] = null
+  ): IOHandler = {
     val __obj = js.Dynamic.literal()
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (save != null) __obj.updateDynamic("save")(save)
+    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction0(load))
+    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
     __obj.asInstanceOf[IOHandler]
   }
 }

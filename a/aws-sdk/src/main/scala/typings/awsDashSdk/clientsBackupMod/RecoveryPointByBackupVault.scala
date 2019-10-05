@@ -74,7 +74,7 @@ trait RecoveryPointByBackupVault extends js.Object {
 object RecoveryPointByBackupVault {
   @scala.inline
   def apply(
-    BackupSizeInBytes: js.UndefOr[Long] = js.undefined,
+    BackupSizeInBytes: Int | Double = null,
     BackupVaultArn: ARN = null,
     BackupVaultName: BackupVaultName = null,
     CalculatedLifecycle: CalculatedLifecycle = null,
@@ -92,7 +92,7 @@ object RecoveryPointByBackupVault {
     Status: RecoveryPointStatus = null
   ): RecoveryPointByBackupVault = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes)
+    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn)
     if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName)
     if (CalculatedLifecycle != null) __obj.updateDynamic("CalculatedLifecycle")(CalculatedLifecycle)

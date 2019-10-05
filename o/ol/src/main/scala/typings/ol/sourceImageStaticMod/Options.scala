@@ -1,6 +1,7 @@
 package typings.ol.sourceImageStaticMod
 
 import typings.ol.extentMod.Extent
+import typings.ol.imageMod.ImageWrapper
 import typings.ol.imageMod.LoadFunction
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
@@ -26,7 +27,7 @@ object Options {
     attributions: AttributionLike = null,
     crossOrigin: String = null,
     imageExtent: Extent = null,
-    imageLoadFunction: LoadFunction = null,
+    imageLoadFunction: (/* p0 */ ImageWrapper, /* p1 */ String) => Unit = null,
     imageSize: Size = null,
     projection: ProjectionLike = null
   ): Options = {
@@ -34,7 +35,7 @@ object Options {
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (imageExtent != null) __obj.updateDynamic("imageExtent")(imageExtent)
-    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(js.Any.fromFunction2(imageLoadFunction))
     if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize)
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

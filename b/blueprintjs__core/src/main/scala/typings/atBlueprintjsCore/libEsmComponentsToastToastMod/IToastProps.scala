@@ -42,19 +42,20 @@ trait IToastProps
 object IToastProps {
   @scala.inline
   def apply(
-    message: ReactNode,
     action: IActionProps with ILinkProps = null,
     className: String = null,
     icon: IconName | MaybeElement = null,
     intent: Intent = null,
+    message: ReactNode = null,
     onDismiss: /* didTimeoutExpire */ Boolean => Unit = null,
     timeout: Int | Double = null
   ): IToastProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action)
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastProps]

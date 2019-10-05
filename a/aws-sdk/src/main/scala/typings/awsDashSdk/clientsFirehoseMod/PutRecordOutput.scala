@@ -17,7 +17,7 @@ trait PutRecordOutput extends js.Object {
 
 object PutRecordOutput {
   @scala.inline
-  def apply(RecordId: PutResponseRecordId, Encrypted: js.UndefOr[BooleanObject] = js.undefined): PutRecordOutput = {
+  def apply(RecordId: PutResponseRecordId, Encrypted: js.UndefOr[Boolean] = js.undefined): PutRecordOutput = {
     val __obj = js.Dynamic.literal(RecordId = RecordId)
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted)
     __obj.asInstanceOf[PutRecordOutput]

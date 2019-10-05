@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashAccordion
 
 import org.scalablytyped.runtime.TopLevel
-import typings.semanticDashUiDashAccordion.SemanticUINs.Accordion
+import typings.semanticDashUiDashAccordion.SemanticUI.Accordion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.braintreeDashWeb.Anon_Client
 import typings.braintreeDashWeb.Anon_DisplayName
 import typings.braintreeDashWeb.Anon_Token
@@ -134,4 +135,8 @@ object ApplePay {
     __obj.asInstanceOf[ApplePay]
   }
 }
+
+@JSImport("braintree-web", "applePay")
+@js.native
+object applePay extends TopLevel[ApplePay]
 

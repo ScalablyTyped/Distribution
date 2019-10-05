@@ -1,6 +1,8 @@
 package typings.graphqlDashCompose.libObjectTypeComposerMod
 
+import typings.graphql.jsutilsPromiseOrValueMod.PromiseOrValue
 import typings.graphql.typeDefinitionMod.GraphQLIsTypeOfFn
+import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphqlDashCompose.libInterfaceTypeComposerMod.ComposeInterfaceType
 import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
 import typings.graphqlDashCompose.libUtilsDefinitionsMod.Thunk
@@ -27,7 +29,7 @@ object ComposeObjectTypeConfig {
     fields: Thunk[ComposeFieldConfigMap[TSource, TContext]] = null,
     interfaces: Thunk[js.Array[ComposeInterfaceType] | Null] = null,
     isIntrospection: js.UndefOr[Boolean] = js.undefined,
-    isTypeOf: GraphQLIsTypeOfFn[TSource, TContext] = null
+    isTypeOf: (TSource, TContext, /* info */ GraphQLResolveInfo) => PromiseOrValue[Boolean] = null
   ): ComposeObjectTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
@@ -35,7 +37,7 @@ object ComposeObjectTypeConfig {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
     if (!js.isUndefined(isIntrospection)) __obj.updateDynamic("isIntrospection")(isIntrospection)
-    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(isTypeOf)
+    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(js.Any.fromFunction3(isTypeOf))
     __obj.asInstanceOf[ComposeObjectTypeConfig[TSource, TContext]]
   }
 }

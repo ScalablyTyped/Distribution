@@ -1,11 +1,11 @@
 package typings.nodeDashValidator
 
-import typings.nodeDashValidator.ValidatorNs.IsObjectValidator
-import typings.nodeDashValidator.ValidatorNs.Validatable
-import typings.nodeDashValidator.ValidatorOptionsNs.IsDateOptions
-import typings.nodeDashValidator.ValidatorOptionsNs.IsNumberOptions
-import typings.nodeDashValidator.ValidatorOptionsNs.IsStringOptions
-import typings.nodeDashValidator.ValidatorOptionsNs.Options
+import typings.nodeDashValidator.Validator.IsObjectValidator
+import typings.nodeDashValidator.Validator.Validatable
+import typings.nodeDashValidator.ValidatorOptions.IsDateOptions
+import typings.nodeDashValidator.ValidatorOptions.IsNumberOptions
+import typings.nodeDashValidator.ValidatorOptions.IsStringOptions
+import typings.nodeDashValidator.ValidatorOptions.Options
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`

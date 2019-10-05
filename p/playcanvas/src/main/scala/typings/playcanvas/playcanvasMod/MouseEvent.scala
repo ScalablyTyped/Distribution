@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "MouseEvent")
 @js.native
 class MouseEvent protected ()
-  extends typings.playcanvas.pcNs.MouseEvent {
-  def this(mouse: typings.playcanvas.pcNs.Mouse, event: typings.playcanvas.pcNs.MouseEvent) = this()
+  extends typings.playcanvas.pc.MouseEvent {
+  def this(mouse: typings.playcanvas.pc.Mouse, event: typings.playcanvas.pc.MouseEvent) = this()
 }
 

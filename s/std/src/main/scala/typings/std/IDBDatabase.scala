@@ -174,9 +174,5 @@ trait IDBDatabase extends EventTarget {
 
 @JSGlobal("IDBDatabase")
 @js.native
-class IDBDatabaseCls () extends IDBDatabase
-
-@JSGlobal("IDBDatabase")
-@js.native
 object IDBDatabase extends Instantiable0[IDBDatabase]
 

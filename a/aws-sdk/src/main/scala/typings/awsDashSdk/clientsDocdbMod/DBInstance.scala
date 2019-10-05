@@ -114,9 +114,9 @@ trait DBInstance extends js.Object {
 object DBInstance {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     AvailabilityZone: String = null,
-    BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined,
+    BackupRetentionPeriod: Int | Double = null,
     CACertificateIdentifier: String = null,
     DBClusterIdentifier: String = null,
     DBInstanceArn: String = null,
@@ -135,16 +135,16 @@ object DBInstance {
     PendingModifiedValues: PendingModifiedValues = null,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
+    PromotionTier: Int | Double = null,
+    PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined,
     StatusInfos: DBInstanceStatusInfoList = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
+    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBInstance = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
     if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)
     if (DBInstanceArn != null) __obj.updateDynamic("DBInstanceArn")(DBInstanceArn)
@@ -163,7 +163,7 @@ object DBInstance {
     if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier)
+    if (PromotionTier != null) __obj.updateDynamic("PromotionTier")(PromotionTier.asInstanceOf[js.Any])
     if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible)
     if (StatusInfos != null) __obj.updateDynamic("StatusInfos")(StatusInfos)
     if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted)

@@ -1,6 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ExportAssignmentSyntax")
 @js.native
 class ExportAssignmentSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ExportAssignmentSyntax {
+  extends typings.typescriptDashServices.TypeScript.ExportAssignmentSyntax {
   def this(
     exportKeyword: ISyntaxToken,
     equalsToken: ISyntaxToken,
@@ -22,6 +22,6 @@ class ExportAssignmentSyntax protected ()
 @JSImport("typescript-services", "ExportAssignmentSyntax")
 @js.native
 object ExportAssignmentSyntax extends js.Object {
-  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScriptNs.ExportAssignmentSyntax = js.native
+  def create1(identifier: ISyntaxToken): typings.typescriptDashServices.TypeScript.ExportAssignmentSyntax = js.native
 }
 

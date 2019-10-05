@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.xmldsigjs.xmldsigjsMod.IAlgorithm because Already inherited
 - typings.xmldsigjs.xmldsigjsMod.ISignatureAlgorithm because var conflicts: algorithm, namespaceURI. Inlined Sign, Verify, Verify */ @JSImport("xmldsigjs", "SignatureAlgorithm")
 @js.native
 abstract class SignatureAlgorithm () extends XmlAlgorithm {

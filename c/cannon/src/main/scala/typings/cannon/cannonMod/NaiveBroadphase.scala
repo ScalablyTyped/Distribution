@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "NaiveBroadphase")
 @js.native
 class NaiveBroadphase ()
-  extends typings.cannon.CANNONNs.NaiveBroadphase
+  extends typings.cannon.CANNON.NaiveBroadphase
 

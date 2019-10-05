@@ -25,13 +25,6 @@ trait CloseEvent extends Event {
 
 @JSGlobal("CloseEvent")
 @js.native
-class CloseEventCls protected () extends CloseEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: CloseEventInit) = this()
-}
-
-@JSGlobal("CloseEvent")
-@js.native
 object CloseEvent
   extends Instantiable1[/* type */ java.lang.String, CloseEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ CloseEventInit, CloseEvent]

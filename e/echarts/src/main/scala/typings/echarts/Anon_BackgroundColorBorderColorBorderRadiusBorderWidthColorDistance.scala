@@ -13,7 +13,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.label)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.emphasis.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -24,7 +24,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.backgroundColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -36,21 +36,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.borderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.borderRadius
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.borderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * ""#fff""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.color
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -76,7 +76,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.distance
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
   /**
@@ -87,7 +87,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.fontFamily
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -96,7 +96,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * 12
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.fontSize
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.fontStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -128,14 +128,14 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.fontWeight
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
     * Data label formatter, which supports string template
     * and callback function.
-    * In either form, `\n` is supported to represent a new
-    * line.
+    * In either form, `\n` is supported to represent a
+    * new line.
     *
     * **String template**
     *
@@ -144,10 +144,12 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * + `{a}`: series name.
     * + `{b}`: the name of a data item.
     * + `{c}`: the value of a data item.
-    * + `{@xxx}: the value of a dimension named`'xxx'`, for
-    * example,`{@product}`refers the value of`'product'\` dimension。
-    * + `{@[n]}: the value of a dimension at the index of`n`,
-    * for example,`{@\[3\]}\` refers the value at dimensions\[3\].
+    * + `{@xxx}: the value of a dimension named`'xxx'`,
+    * for example,`{@product}`refers the value of`'product'\`
+    * dimension。
+    * + `{@[n]}: the value of a dimension at the index
+    * of`n`, for example,`{@\[3\]}\` refers the value at
+    * dimensions\[3\].
     *
     * **example:**
     *
@@ -168,10 +170,10 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * where `params` is the single dataset needed by formatter,
     * which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.label)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.formatter
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -180,25 +182,26 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * You may want to use it in some cases like using background
     * image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.height
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight` in
-    * parent level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight`
+    * in parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.label)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.lineHeight
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -207,22 +210,23 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * and move `40` vertically.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.offset
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.offset
     */
   var offset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of `[top,
-    * right, bottom, left]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding of
+    * `[top, right, bottom, left]`.
     * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
-    * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
+    * + `padding: [3, 4]`: represents `padding: [3, 4,
+    * 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.padding
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -232,11 +236,11 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * + \[x, y\]
     *
-    * Use relative percentage, or absolute pixel values to
-    * represent position of label relative to top-left corner
-    * of bounding box. For example:
+    * Use relative percentage, or absolute pixel values
+    * to represent position of label relative to top-left
+    * corner of bounding box. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.label)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.emphasis.label)
     *
     * + 'top'
     *
@@ -258,47 +262,45 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * .
     *
     *
-    * @default
-    * "bottom"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.position
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.position
     */
   var position: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
-    * "Rich text styles" can be defined in this `rich` property.
-    * For example:
+    * "Rich text styles" can be defined in this `rich`
+    * property. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.label)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.data.emphasis.label)
     *
     * For more details, see
     * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.rich
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
   /**
-    * Rotate label, from -90 degree to 90, positive value represents
-    * rotate anti-clockwise.
+    * Rotate label, from -90 degree to 90, positive value
+    * represents rotate anti-clockwise.
     *
     * See:
     * [label rotation](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-label-rotation)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.rotate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.rotate
     */
   var rotate: js.UndefOr[Double] = js.undefined
   /**
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.shadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -307,28 +309,28 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.shadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.shadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.shadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
     * Whether to show label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.show
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -340,21 +342,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textBorderColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textBorderWidth
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textShadowBlur
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -363,21 +365,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textShadowColor
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textShadowOffsetX
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.textShadowOffsetY
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -387,21 +389,23 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance extend
     * You may want to use it in some cases like make simple
     * table or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * `width` can also be percent string, like `'100%'`, which
-    * represents the percent of `contentWidth` (that is, the
-    * width without `padding`) of its container box.
+    * `width` can also be percent string, like `'100%'`,
+    * which represents the percent of `contentWidth` (that
+    * is, the width without `padding`) of its container
+    * box.
     * It is based on `contentWidth` because that each text
     * fregment is layout based on the `content box`, where
-    * it makes no sense that calculating width based on `outerWith`
-    * in prectice.
+    * it makes no sense that calculating width based on
+    * `outerWith` in prectice.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.width
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -426,7 +430,7 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance {
     padding: js.Array[_] | Double = null,
     position: js.Array[_] | String = null,
     rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     rotate: Int | Double = null,

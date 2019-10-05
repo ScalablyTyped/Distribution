@@ -1,6 +1,6 @@
 package typings.atPulumiAws.lambdaAliasMod
 
-import typings.atPulumiAws.typesInputMod.lambdaNs.AliasRoutingConfig
+import typings.atPulumiAws.typesInputMod.lambda.AliasRoutingConfig
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.meteor.accountsDashBaseMod
 
-import typings.meteor.MeteorNs.User
+import typings.meteor.Meteor.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

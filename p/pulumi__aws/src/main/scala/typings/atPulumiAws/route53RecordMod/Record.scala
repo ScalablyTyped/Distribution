@@ -1,10 +1,10 @@
 package typings.atPulumiAws.route53RecordMod
 
-import typings.atPulumiAws.typesOutputMod.route53Ns.RecordAlias
-import typings.atPulumiAws.typesOutputMod.route53Ns.RecordFailoverRoutingPolicy
-import typings.atPulumiAws.typesOutputMod.route53Ns.RecordGeolocationRoutingPolicy
-import typings.atPulumiAws.typesOutputMod.route53Ns.RecordLatencyRoutingPolicy
-import typings.atPulumiAws.typesOutputMod.route53Ns.RecordWeightedRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53.RecordAlias
+import typings.atPulumiAws.typesOutputMod.route53.RecordFailoverRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53.RecordGeolocationRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53.RecordLatencyRoutingPolicy
+import typings.atPulumiAws.typesOutputMod.route53.RecordWeightedRoutingPolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

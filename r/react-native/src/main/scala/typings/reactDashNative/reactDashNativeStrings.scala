@@ -1,11 +1,12 @@
 package typings.reactDashNative
 
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionName
 import typings.reactDashNative.reactDashNativeMod.AccessibilityEventName
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
 import typings.reactDashNative.reactDashNativeMod.AlertType
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.ExtrapolateType
+import typings.reactDashNative.reactDashNativeMod.Animated.ExtrapolateType
 import typings.reactDashNative.reactDashNativeMod.AppStateEvent
 import typings.reactDashNative.reactDashNativeMod.AppStateStatus
 import typings.reactDashNative.reactDashNativeMod.CameraRollAssetType
@@ -153,6 +154,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait absolute extends js.Object
+  
+  @js.native
+  sealed trait activate extends AccessibilityActionName
   
   @js.native
   sealed trait active extends AppStateStatus
@@ -444,6 +448,9 @@ object reactDashNativeStrings {
   sealed trait `decimal-pad` extends KeyboardTypeIOS
   
   @js.native
+  sealed trait decrement extends AccessibilityActionName
+  
+  @js.native
   sealed trait default
     extends KeyboardType
        with AlertType
@@ -518,6 +525,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait error extends ResponseType_
+  
+  @js.native
+  sealed trait escape extends AccessibilityActionName
   
   @js.native
   sealed trait expanded extends AccessibilityStates
@@ -633,6 +643,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait include extends RequestCredentials_
+  
+  @js.native
+  sealed trait increment extends AccessibilityActionName
   
   @js.native
   sealed trait inherit extends js.Object
@@ -755,6 +768,9 @@ object reactDashNativeStrings {
   sealed trait `login-password` extends AlertType
   
   @js.native
+  sealed trait longpress extends AccessibilityActionName
+  
+  @js.native
   sealed trait lowercase extends js.Object
   
   @js.native
@@ -762,6 +778,9 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait macos extends PlatformOSType
+  
+  @js.native
+  sealed trait magicTap extends AccessibilityActionName
   
   @js.native
   sealed trait memory extends js.Object
@@ -1334,6 +1353,8 @@ object reactDashNativeStrings {
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
+  def activate: activate = "activate".asInstanceOf[activate]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
@@ -1520,6 +1541,8 @@ object reactDashNativeStrings {
   @scala.inline
   def `decimal-pad`: `decimal-pad` = "decimal-pad".asInstanceOf[`decimal-pad`]
   @scala.inline
+  def decrement: decrement = "decrement".asInstanceOf[decrement]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
@@ -1565,6 +1588,8 @@ object reactDashNativeStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def escape: escape = "escape".asInstanceOf[escape]
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline
@@ -1639,6 +1664,8 @@ object reactDashNativeStrings {
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
   def include: include = "include".asInstanceOf[include]
+  @scala.inline
+  def increment: increment = "increment".asInstanceOf[increment]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
@@ -1718,11 +1745,15 @@ object reactDashNativeStrings {
   @scala.inline
   def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
   @scala.inline
+  def longpress: longpress = "longpress".asInstanceOf[longpress]
+  @scala.inline
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
   def macos: macos = "macos".asInstanceOf[macos]
+  @scala.inline
+  def magicTap: magicTap = "magicTap".asInstanceOf[magicTap]
   @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
   @scala.inline

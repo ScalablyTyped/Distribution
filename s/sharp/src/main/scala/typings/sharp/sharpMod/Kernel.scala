@@ -1,5 +1,6 @@
 package typings.sharp.sharpMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,4 +34,8 @@ object Kernel {
     __obj.asInstanceOf[Kernel]
   }
 }
+
+@JSImport("sharp", "kernel")
+@js.native
+object kernel extends TopLevel[KernelEnum]
 

@@ -21,13 +21,9 @@ trait GetIntentsRequest extends js.Object {
 
 object GetIntentsRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nameContains: IntentName = null,
-    nextToken: NextToken = null
-  ): GetIntentsRequest = {
+  def apply(maxResults: Int | Double = null, nameContains: IntentName = null, nextToken: NextToken = null): GetIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nameContains != null) __obj.updateDynamic("nameContains")(nameContains)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetIntentsRequest]

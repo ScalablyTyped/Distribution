@@ -1,6 +1,6 @@
 package typings.mjmlDashReact
 
-import typings.mjmlDashReact.mjmlDashReactMod.utilsNs.TextAlignment
+import typings.mjmlDashReact.mjmlDashReactMod.utils.TextAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

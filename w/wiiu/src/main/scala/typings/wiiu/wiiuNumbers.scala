@@ -1,8 +1,8 @@
 package typings.wiiu
 
-import typings.wiiu.wiiuNs.Button
-import typings.wiiu.wiiuNs.ImageViewErrorCode
-import typings.wiiu.wiiuNs.TPValidity
+import typings.wiiu.wiiu.Button
+import typings.wiiu.wiiu.ImageViewErrorCode
+import typings.wiiu.wiiu.TPValidity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.atPulumiAws.cognitoIdentityPoolRoleAttachmentMod
 
-import typings.atPulumiAws.typesInputMod.cognitoNs.IdentityPoolRoleAttachmentRoleMapping
-import typings.atPulumiAws.typesInputMod.cognitoNs.IdentityPoolRoleAttachmentRoles
+import typings.atPulumiAws.typesInputMod.cognito.IdentityPoolRoleAttachmentRoleMapping
+import typings.atPulumiAws.typesInputMod.cognito.IdentityPoolRoleAttachmentRoles
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

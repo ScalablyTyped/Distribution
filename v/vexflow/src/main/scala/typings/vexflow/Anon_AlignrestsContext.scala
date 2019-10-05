@@ -1,6 +1,6 @@
 package typings.vexflow
 
-import typings.vexflow.VexNs.IRenderContext
+import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

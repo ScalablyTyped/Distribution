@@ -1,6 +1,7 @@
 package typings.ol.sourceImageWMSMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ol.imageMod.ImageWrapper
 import typings.ol.imageMod.LoadFunction
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
@@ -30,7 +31,7 @@ object Options {
     attributions: AttributionLike = null,
     crossOrigin: String = null,
     hidpi: js.UndefOr[Boolean] = js.undefined,
-    imageLoadFunction: LoadFunction = null,
+    imageLoadFunction: (/* p0 */ ImageWrapper, /* p1 */ String) => Unit = null,
     projection: ProjectionLike = null,
     ratio: Int | Double = null,
     resolutions: js.Array[Double] = null,
@@ -40,7 +41,7 @@ object Options {
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
-    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(js.Any.fromFunction2(imageLoadFunction))
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)

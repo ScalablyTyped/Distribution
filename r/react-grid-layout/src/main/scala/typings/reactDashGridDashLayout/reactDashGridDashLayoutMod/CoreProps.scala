@@ -3,6 +3,8 @@ package typings.reactDashGridDashLayout.reactDashGridDashLayoutMod
 import typings.react.reactMod.CSSProperties
 import typings.reactDashGridDashLayout.reactDashGridDashLayoutStrings.horizontal
 import typings.reactDashGridDashLayout.reactDashGridDashLayoutStrings.vertical
+import typings.std.HTMLElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -130,12 +132,12 @@ object CoreProps {
     isResizable: js.UndefOr[Boolean] = js.undefined,
     margin: js.Tuple2[Double, Double] = null,
     maxRows: Int | Double = null,
-    onDrag: ItemCallback = null,
-    onDragStart: ItemCallback = null,
-    onDragStop: ItemCallback = null,
-    onResize: ItemCallback = null,
-    onResizeStart: ItemCallback = null,
-    onResizeStop: ItemCallback = null,
+    onDrag: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onDragStart: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onDragStop: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onResize: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onResizeStart: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onResizeStop: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
     preventCollision: js.UndefOr[Boolean] = js.undefined,
     rowHeight: Int | Double = null,
     style: CSSProperties = null,
@@ -155,12 +157,12 @@ object CoreProps {
     if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
-    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(onResizeStart)
-    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(onResizeStop)
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction6(onDrag))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction6(onDragStart))
+    if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction6(onDragStop))
+    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction6(onResize))
+    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction6(onResizeStart))
+    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction6(onResizeStop))
     if (!js.isUndefined(preventCollision)) __obj.updateDynamic("preventCollision")(preventCollision)
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

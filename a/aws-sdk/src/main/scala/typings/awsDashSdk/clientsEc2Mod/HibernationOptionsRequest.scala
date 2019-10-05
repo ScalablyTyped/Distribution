@@ -13,7 +13,7 @@ trait HibernationOptionsRequest extends js.Object {
 
 object HibernationOptionsRequest {
   @scala.inline
-  def apply(Configured: js.UndefOr[Boolean] = js.undefined): HibernationOptionsRequest = {
+  def apply(Configured: js.UndefOr[scala.Boolean] = js.undefined): HibernationOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Configured)) __obj.updateDynamic("Configured")(Configured)
     __obj.asInstanceOf[HibernationOptionsRequest]

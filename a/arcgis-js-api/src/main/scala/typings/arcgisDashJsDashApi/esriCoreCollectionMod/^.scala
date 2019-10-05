@@ -2,9 +2,9 @@ package typings.arcgisDashJsDashApi.esriCoreCollectionMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.arcgisDashJsDashApi.Anon_Items
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Collection
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Constructor
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Types
+import typings.arcgisDashJsDashApi.__esri.Collection
+import typings.arcgisDashJsDashApi.__esri.Constructor
+import typings.arcgisDashJsDashApi.__esri.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

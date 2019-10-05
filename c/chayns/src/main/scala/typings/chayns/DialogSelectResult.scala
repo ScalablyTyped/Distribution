@@ -1,12 +1,12 @@
 package typings.chayns
 
-import typings.chayns.chaynsNs.dialogNs.buttonType
+import typings.chayns.chayns.dialog.buttonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DialogSelectResult extends js.Object {
-  var buttonType: typings.chayns.chaynsNs.dialogNs.buttonType
+  var buttonType: typings.chayns.chayns.dialog.buttonType
   var selection: js.Array[DialogSelectResultItem]
 }
 

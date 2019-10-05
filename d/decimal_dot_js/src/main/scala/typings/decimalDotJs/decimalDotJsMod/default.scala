@@ -1,10 +1,10 @@
 package typings.decimalDotJs.decimalDotJsMod
 
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Config
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Constructor
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Modulo
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Rounding
-import typings.decimalDotJs.decimalDotJsMod.DecimalNs.Value
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Config
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Constructor
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Modulo
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Rounding
+import typings.decimalDotJs.decimalDotJsMod.Decimal.Value
 import typings.decimalDotJs.decimalDotJsNumbers.`0`
 import typings.decimalDotJs.decimalDotJsNumbers.`1`
 import typings.decimalDotJs.decimalDotJsNumbers.`2`

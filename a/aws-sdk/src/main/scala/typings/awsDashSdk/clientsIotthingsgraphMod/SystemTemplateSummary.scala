@@ -25,17 +25,12 @@ trait SystemTemplateSummary extends js.Object {
 
 object SystemTemplateSummary {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    createdAt: Timestamp = null,
-    id: Urn = null,
-    revisionNumber: js.UndefOr[Version] = js.undefined
-  ): SystemTemplateSummary = {
+  def apply(arn: Arn = null, createdAt: Timestamp = null, id: Urn = null, revisionNumber: Int | Double = null): SystemTemplateSummary = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemTemplateSummary]
   }
 }

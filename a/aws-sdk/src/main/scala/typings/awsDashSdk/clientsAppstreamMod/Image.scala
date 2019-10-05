@@ -83,7 +83,7 @@ object Image {
     Description: String = null,
     DisplayName: String = null,
     ImageBuilderName: String = null,
-    ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined,
+    ImageBuilderSupported: js.UndefOr[scala.Boolean] = js.undefined,
     ImagePermissions: ImagePermissions = null,
     Platform: PlatformType = null,
     PublicBaseImageReleasedDate: Timestamp = null,

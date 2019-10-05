@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "RefreshIndicator")
 @js.native
 class RefreshIndicator ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.RefreshIndicator
+  extends typings.materialDashUi.__MaterialUI.RefreshIndicator
 

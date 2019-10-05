@@ -1,6 +1,6 @@
 package typings.deezerDashSdk
 
-import typings.deezerDashSdk.DeezerSdkNs.Track
+import typings.deezerDashSdk.DeezerSdk.Track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

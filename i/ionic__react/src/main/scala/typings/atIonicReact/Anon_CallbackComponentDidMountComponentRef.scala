@@ -2,7 +2,7 @@ package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicReact.distTypesContextsIonLifeCycleContextMod.IonLifeCycleContextInterface
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.RefObject
 import scala.scalajs.js

@@ -17,6 +17,5 @@ class ^ protected () extends Pumpify {
 @js.native
 object ^ extends js.Object {
   var obj: Instantiable1[/* streams (repeated) */ Stream, Pumpify] = js.native
-  def ctor(opts: PumpifyFactoryOptions): Instantiable1[/* streams (repeated) */ Stream, Pumpify] = js.native
 }
 

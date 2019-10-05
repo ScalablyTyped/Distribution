@@ -4,6 +4,7 @@ import typings.lodash.Anon_Args
 import typings.lodash.Fn_Array
 import typings.lodash.Fn_Collection
 import typings.lodash.Fn_Value
+import typings.lodash.Typeoflodash
 import typings.lodash.lodashNumbers.`0`
 import typings.lodash.lodashNumbers.`false`
 import typings.lodash.lodashNumbers.`true`
@@ -4883,7 +4884,7 @@ trait LoDashStatic extends js.Object {
     *
     * @return Returns the lodash function.
     */
-  def noConflict(): LoDashStatic = js.native
+  def noConflict(): Typeoflodash = js.native
   /**
     * A no-operation function that returns undefined regardless of the arguments it receives.
     *

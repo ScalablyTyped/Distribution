@@ -28,7 +28,7 @@ object TerminateClientVpnConnectionsRequest {
   def apply(
     ClientVpnEndpointId: String,
     ConnectionId: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Username: String = null
   ): TerminateClientVpnConnectionsRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)

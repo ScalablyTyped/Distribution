@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersPointCloudFiltersPointCloudFilterMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudFilter
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointCloudFilterProperties
+import typings.arcgisDashJsDashApi.__esri.PointCloudFilter
+import typings.arcgisDashJsDashApi.__esri.PointCloudFilterProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

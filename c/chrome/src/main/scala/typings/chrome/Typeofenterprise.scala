@@ -15,7 +15,7 @@ trait Typeofenterprise extends js.Object {
     * Important: This API works only on Chrome OS.
     * Note: This API is only for extensions pre-installed by policy.
     */
-  val deviceAttributesNs: TypeofdeviceAttributes
+  val deviceAttributes: TypeofdeviceAttributes
   ////////////////////
   // Enterprise Platform Keys
   ////////////////////
@@ -26,13 +26,13 @@ trait Typeofenterprise extends js.Object {
     * Important: This API works only on Chrome OS.
     * Note:  This API is only for extensions pre-installed by policy.
     */
-  val platformKeysNs: TypeofplatformKeys
+  val platformKeys: TypeofplatformKeys
 }
 
 object Typeofenterprise {
   @scala.inline
-  def apply(deviceAttributesNs: TypeofdeviceAttributes, platformKeysNs: TypeofplatformKeys): Typeofenterprise = {
-    val __obj = js.Dynamic.literal(deviceAttributesNs = deviceAttributesNs, platformKeysNs = platformKeysNs)
+  def apply(deviceAttributes: TypeofdeviceAttributes, platformKeys: TypeofplatformKeys): Typeofenterprise = {
+    val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes, platformKeys = platformKeys)
   
     __obj.asInstanceOf[Typeofenterprise]
   }

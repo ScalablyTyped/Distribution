@@ -1,8 +1,8 @@
 package typings.mfiles
 
-import typings.mfiles.MFilesNs.MFSearchFlags
-import typings.mfiles.MFilesNs.MFViewFlag
-import typings.mfiles.MFilesNs.MFViewType
+import typings.mfiles.MFiles.MFSearchFlags
+import typings.mfiles.MFiles.MFViewFlag
+import typings.mfiles.MFiles.MFViewType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

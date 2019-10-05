@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "BlendModeManager")
 @js.native
 class BlendModeManager protected ()
-  extends typings.pixiDotJs.PIXINs.BlendModeManager {
-  def this(renderer: typings.pixiDotJs.PIXINs.WebGLRenderer) = this()
+  extends typings.pixiDotJs.PIXI.BlendModeManager {
+  def this(renderer: typings.pixiDotJs.PIXI.WebGLRenderer) = this()
 }
 

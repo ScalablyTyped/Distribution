@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ecma-proposal-math-extensions"
-version := "0.0-dt-20190212Z-aa2f11"
-scalaVersion := "2.12.9"
+version := "0.0-dt-20190212Z-4cdbd0"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

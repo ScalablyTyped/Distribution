@@ -23,13 +23,6 @@ trait PointerEvent extends MouseEvent {
 
 @JSGlobal("PointerEvent")
 @js.native
-class PointerEventCls protected () extends PointerEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: PointerEventInit) = this()
-}
-
-@JSGlobal("PointerEvent")
-@js.native
 object PointerEvent
   extends Instantiable1[/* type */ java.lang.String, PointerEvent]
      with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ PointerEventInit, PointerEvent]

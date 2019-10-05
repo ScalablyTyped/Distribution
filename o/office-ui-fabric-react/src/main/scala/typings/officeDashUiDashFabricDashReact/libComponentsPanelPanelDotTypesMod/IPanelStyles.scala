@@ -67,23 +67,36 @@ trait IPanelStyles extends js.Object {
 object IPanelStyles {
   @scala.inline
   def apply(
-    closeButton: IStyle,
-    commands: IStyle,
-    content: IStyle,
-    contentInner: IStyle,
-    footer: IStyle,
-    footerInner: IStyle,
-    header: IStyle,
-    headerText: IStyle,
-    hiddenPanel: IStyle,
-    main: IStyle,
-    navigation: IStyle,
-    overlay: IStyle,
-    root: IStyle,
-    scrollableContent: IStyle
+    closeButton: IStyle = null,
+    commands: IStyle = null,
+    content: IStyle = null,
+    contentInner: IStyle = null,
+    footer: IStyle = null,
+    footerInner: IStyle = null,
+    header: IStyle = null,
+    headerText: IStyle = null,
+    hiddenPanel: IStyle = null,
+    main: IStyle = null,
+    navigation: IStyle = null,
+    overlay: IStyle = null,
+    root: IStyle = null,
+    scrollableContent: IStyle = null
   ): IPanelStyles = {
-    val __obj = js.Dynamic.literal(closeButton = closeButton.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentInner = contentInner.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], footerInner = footerInner.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerText = headerText.asInstanceOf[js.Any], hiddenPanel = hiddenPanel.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], scrollableContent = scrollableContent.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentInner != null) __obj.updateDynamic("contentInner")(contentInner.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (footerInner != null) __obj.updateDynamic("footerInner")(footerInner.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (hiddenPanel != null) __obj.updateDynamic("hiddenPanel")(hiddenPanel.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (scrollableContent != null) __obj.updateDynamic("scrollableContent")(scrollableContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelStyles]
   }
 }

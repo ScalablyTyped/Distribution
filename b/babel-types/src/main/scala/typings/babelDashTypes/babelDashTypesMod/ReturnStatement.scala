@@ -35,3 +35,10 @@ object ReturnStatement {
   }
 }
 
+@JSImport("babel-types", "returnStatement")
+@js.native
+object returnStatement extends js.Object {
+  def apply(): ReturnStatement = js.native
+  def apply(argument: Expression): ReturnStatement = js.native
+}
+

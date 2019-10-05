@@ -1,6 +1,6 @@
 package typings.segmentDashAnalytics
 
-import typings.segmentDashAnalytics.SegmentAnalyticsNs.AnalyticsJS
+import typings.segmentDashAnalytics.SegmentAnalytics.AnalyticsJS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.atPulumiAws.pinpointAppMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.pinpointNs.AppCampaignHook
-import typings.atPulumiAws.typesOutputMod.pinpointNs.AppLimits
-import typings.atPulumiAws.typesOutputMod.pinpointNs.AppQuietTime
+import typings.atPulumiAws.typesOutputMod.pinpoint.AppCampaignHook
+import typings.atPulumiAws.typesOutputMod.pinpoint.AppLimits
+import typings.atPulumiAws.typesOutputMod.pinpoint.AppQuietTime
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

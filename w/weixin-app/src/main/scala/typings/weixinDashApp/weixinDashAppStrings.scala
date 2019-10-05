@@ -1,20 +1,20 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wxNs.AuthModes
-import typings.weixinDashApp.wxNs.CameraDevice
-import typings.weixinDashApp.wxNs.EventType
-import typings.weixinDashApp.wxNs.ImageSizeType
-import typings.weixinDashApp.wxNs.ImageSourceType
-import typings.weixinDashApp.wxNs.LineCapType
-import typings.weixinDashApp.wxNs.LineJoinType
-import typings.weixinDashApp.wxNs.PaymentSignType
-import typings.weixinDashApp.wxNs.Scope
-import typings.weixinDashApp.wxNs.TimingFunction
-import typings.weixinDashApp.wxNs.TouchEventType
-import typings.weixinDashApp.wxNs.TransitionEventType
-import typings.weixinDashApp.wxNs.VideoSourceType
-import typings.weixinDashApp.wxNs.networkType
-import typings.weixinDashApp.wxNs.scanType
+import typings.weixinDashApp.wx.AuthModes
+import typings.weixinDashApp.wx.CameraDevice
+import typings.weixinDashApp.wx.EventType
+import typings.weixinDashApp.wx.ImageSizeType
+import typings.weixinDashApp.wx.ImageSourceType
+import typings.weixinDashApp.wx.LineCapType
+import typings.weixinDashApp.wx.LineJoinType
+import typings.weixinDashApp.wx.PaymentSignType
+import typings.weixinDashApp.wx.Scope
+import typings.weixinDashApp.wx.TimingFunction
+import typings.weixinDashApp.wx.TouchEventType
+import typings.weixinDashApp.wx.TransitionEventType
+import typings.weixinDashApp.wx.VideoSourceType
+import typings.weixinDashApp.wx.networkType
+import typings.weixinDashApp.wx.scanType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -267,7 +267,7 @@ object weixinDashAppStrings {
   sealed trait success extends js.Object
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.weixinDashApp.wxNs.EventType because Already inherited */ @js.native
+  - typings.weixinDashApp.wx.EventType because Already inherited */ @js.native
   sealed trait tap extends TouchEventType
   
   @js.native

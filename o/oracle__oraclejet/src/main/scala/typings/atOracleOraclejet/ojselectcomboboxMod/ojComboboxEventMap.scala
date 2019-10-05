@@ -10,8 +10,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.pending
 import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueEventMap
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.ojAnimateEnd
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojComboboxNs.ojAnimateStart
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.ojAnimateEnd
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojCombobox.ojAnimateStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent

@@ -1,7 +1,7 @@
 package typings.emissary.emissaryMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mixto.MixtoNs.IMixinStatic
+import typings.mixto.Mixto.IMixinStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

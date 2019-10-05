@@ -67,12 +67,12 @@ object ListPartsOutput {
     AbortRuleId: AbortRuleId = null,
     Bucket: BucketName = null,
     Initiator: Initiator = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
+    IsTruncated: js.UndefOr[Boolean] = js.undefined,
     Key: ObjectKey = null,
-    MaxParts: js.UndefOr[MaxParts] = js.undefined,
-    NextPartNumberMarker: js.UndefOr[NextPartNumberMarker] = js.undefined,
+    MaxParts: Int | Double = null,
+    NextPartNumberMarker: Int | Double = null,
     Owner: Owner = null,
-    PartNumberMarker: js.UndefOr[PartNumberMarker] = js.undefined,
+    PartNumberMarker: Int | Double = null,
     Parts: Parts = null,
     RequestCharged: RequestCharged = null,
     StorageClass: StorageClass = null,
@@ -85,10 +85,10 @@ object ListPartsOutput {
     if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (!js.isUndefined(MaxParts)) __obj.updateDynamic("MaxParts")(MaxParts)
-    if (!js.isUndefined(NextPartNumberMarker)) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker)
+    if (MaxParts != null) __obj.updateDynamic("MaxParts")(MaxParts.asInstanceOf[js.Any])
+    if (NextPartNumberMarker != null) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner)
-    if (!js.isUndefined(PartNumberMarker)) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker)
+    if (PartNumberMarker != null) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.asInstanceOf[js.Any])
     if (Parts != null) __obj.updateDynamic("Parts")(Parts)
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])

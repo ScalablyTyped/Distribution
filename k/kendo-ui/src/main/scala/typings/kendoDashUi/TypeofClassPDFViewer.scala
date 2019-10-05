@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.PDFViewer
-import typings.kendoDashUi.kendoNs.uiNs.PDFViewerOptions
+import typings.kendoDashUi.kendo.ui.PDFViewer
+import typings.kendoDashUi.kendo.ui.PDFViewerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

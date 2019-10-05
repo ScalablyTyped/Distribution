@@ -112,24 +112,24 @@ object OrderableDBInstanceOption {
     Engine: String = null,
     EngineVersion: String = null,
     LicenseModel: String = null,
-    MaxIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined,
-    MaxIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined,
-    MaxStorageSize: js.UndefOr[IntegerOptional] = js.undefined,
-    MinIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined,
-    MinIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined,
-    MinStorageSize: js.UndefOr[IntegerOptional] = js.undefined,
-    MultiAZCapable: js.UndefOr[Boolean] = js.undefined,
-    ReadReplicaCapable: js.UndefOr[Boolean] = js.undefined,
+    MaxIopsPerDbInstance: Int | scala.Double = null,
+    MaxIopsPerGib: Int | scala.Double = null,
+    MaxStorageSize: Int | scala.Double = null,
+    MinIopsPerDbInstance: Int | scala.Double = null,
+    MinIopsPerGib: Int | scala.Double = null,
+    MinStorageSize: Int | scala.Double = null,
+    MultiAZCapable: js.UndefOr[scala.Boolean] = js.undefined,
+    ReadReplicaCapable: js.UndefOr[scala.Boolean] = js.undefined,
     StorageType: String = null,
     SupportedEngineModes: EngineModeList = null,
-    SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined,
-    SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined,
-    SupportsIops: js.UndefOr[Boolean] = js.undefined,
-    SupportsKerberosAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
-    SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined,
-    SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.undefined,
-    SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined,
-    Vpc: js.UndefOr[Boolean] = js.undefined
+    SupportsEnhancedMonitoring: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsIops: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsKerberosAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsPerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsStorageAutoscaling: js.UndefOr[scala.Boolean] = js.undefined,
+    SupportsStorageEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    Vpc: js.UndefOr[scala.Boolean] = js.undefined
   ): OrderableDBInstanceOption = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
@@ -138,12 +138,12 @@ object OrderableDBInstanceOption {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
-    if (!js.isUndefined(MaxIopsPerDbInstance)) __obj.updateDynamic("MaxIopsPerDbInstance")(MaxIopsPerDbInstance)
-    if (!js.isUndefined(MaxIopsPerGib)) __obj.updateDynamic("MaxIopsPerGib")(MaxIopsPerGib)
-    if (!js.isUndefined(MaxStorageSize)) __obj.updateDynamic("MaxStorageSize")(MaxStorageSize)
-    if (!js.isUndefined(MinIopsPerDbInstance)) __obj.updateDynamic("MinIopsPerDbInstance")(MinIopsPerDbInstance)
-    if (!js.isUndefined(MinIopsPerGib)) __obj.updateDynamic("MinIopsPerGib")(MinIopsPerGib)
-    if (!js.isUndefined(MinStorageSize)) __obj.updateDynamic("MinStorageSize")(MinStorageSize)
+    if (MaxIopsPerDbInstance != null) __obj.updateDynamic("MaxIopsPerDbInstance")(MaxIopsPerDbInstance.asInstanceOf[js.Any])
+    if (MaxIopsPerGib != null) __obj.updateDynamic("MaxIopsPerGib")(MaxIopsPerGib.asInstanceOf[js.Any])
+    if (MaxStorageSize != null) __obj.updateDynamic("MaxStorageSize")(MaxStorageSize.asInstanceOf[js.Any])
+    if (MinIopsPerDbInstance != null) __obj.updateDynamic("MinIopsPerDbInstance")(MinIopsPerDbInstance.asInstanceOf[js.Any])
+    if (MinIopsPerGib != null) __obj.updateDynamic("MinIopsPerGib")(MinIopsPerGib.asInstanceOf[js.Any])
+    if (MinStorageSize != null) __obj.updateDynamic("MinStorageSize")(MinStorageSize.asInstanceOf[js.Any])
     if (!js.isUndefined(MultiAZCapable)) __obj.updateDynamic("MultiAZCapable")(MultiAZCapable)
     if (!js.isUndefined(ReadReplicaCapable)) __obj.updateDynamic("ReadReplicaCapable")(ReadReplicaCapable)
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)

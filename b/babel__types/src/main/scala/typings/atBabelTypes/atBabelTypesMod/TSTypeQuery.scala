@@ -37,3 +37,10 @@ object TSTypeQuery {
   }
 }
 
+@JSImport("@babel/types", "tsTypeQuery")
+@js.native
+object tsTypeQuery extends js.Object {
+  def apply(exprName: TSEntityName): TSTypeQuery = js.native
+  def apply(exprName: TSImportType): TSTypeQuery = js.native
+}
+

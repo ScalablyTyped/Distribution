@@ -23,8 +23,8 @@ object DeleteAppRequest {
   @scala.inline
   def apply(
     appId: AppId = null,
-    forceStopAppReplication: js.UndefOr[ForceStopAppReplication] = js.undefined,
-    forceTerminateApp: js.UndefOr[ForceTerminateApp] = js.undefined
+    forceStopAppReplication: js.UndefOr[Boolean] = js.undefined,
+    forceTerminateApp: js.UndefOr[Boolean] = js.undefined
   ): DeleteAppRequest = {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId)

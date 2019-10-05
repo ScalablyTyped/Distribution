@@ -1,8 +1,8 @@
 package typings.atPulumiAws.elasticloadbalancingv2TargetGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.TargetGroupHealthCheck
-import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2Ns.TargetGroupStickiness
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2.TargetGroupHealthCheck
+import typings.atPulumiAws.typesOutputMod.elasticloadbalancingv2.TargetGroupStickiness
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

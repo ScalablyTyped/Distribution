@@ -1,5 +1,6 @@
 package typings.codemirror.codemirrorMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,4 +16,8 @@ class Pos protected () extends Position {
   /* CompleteClass */
   override var line: Double = js.native
 }
+
+@JSImport("codemirror", "Pos")
+@js.native
+object Pos extends TopLevel[PositionConstructor]
 

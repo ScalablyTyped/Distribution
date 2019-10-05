@@ -1,7 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScriptNs.ISyntaxToken
-import typings.typescriptDashServices.TypeScriptNs.ITypeSyntax
+import typings.typescriptDashServices.TypeScript.ISyntaxToken
+import typings.typescriptDashServices.TypeScript.ITypeSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "ConstraintSyntax")
 @js.native
 class ConstraintSyntax protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.ConstraintSyntax {
+  extends typings.typescriptDashServices.TypeScript.ConstraintSyntax {
   def this(extendsKeyword: ISyntaxToken, `type`: ITypeSyntax, parsedInStrictMode: Boolean) = this()
 }
 
@@ -17,6 +17,6 @@ class ConstraintSyntax protected ()
 @JSImport("typescript-services", "ConstraintSyntax")
 @js.native
 object ConstraintSyntax extends js.Object {
-  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScriptNs.ConstraintSyntax = js.native
+  def create1(`type`: ITypeSyntax): typings.typescriptDashServices.TypeScript.ConstraintSyntax = js.native
 }
 

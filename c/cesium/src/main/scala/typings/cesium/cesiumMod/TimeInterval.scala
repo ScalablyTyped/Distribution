@@ -2,8 +2,8 @@ package typings.cesium.cesiumMod
 
 import typings.cesium.Anon_Data
 import typings.cesium.Anon_DataIsStartIncluded
-import typings.cesium.cesiumMod.TimeIntervalNs.DataComparer
-import typings.cesium.cesiumMod.TimeIntervalNs.MergeCallback
+import typings.cesium.cesiumMod.TimeInterval.DataComparer
+import typings.cesium.cesiumMod.TimeInterval.MergeCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,5 +46,7 @@ object TimeInterval extends js.Object {
   def intersect(left: TimeInterval, right: TimeInterval, result: TimeInterval, mergeCallback: MergeCallback): TimeInterval = js.native
   def toIso8601(timeInterval: TimeInterval): String = js.native
   def toIso8601(timeInterval: TimeInterval, precision: Double): String = js.native
+  type DataComparer = js.Function2[/* leftData */ js.Any, /* rightData */ js.Any, Boolean]
+  type MergeCallback = js.Function2[/* leftData */ js.Any, /* rightData */ js.Any, js.Any]
 }
 

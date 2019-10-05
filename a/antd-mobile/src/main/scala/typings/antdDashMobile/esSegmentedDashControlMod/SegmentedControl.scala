@@ -2,7 +2,7 @@ package typings.antdDashMobile.esSegmentedDashControlMod
 
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSXNs.Element
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.std.HTMLDivElement
 import scala.scalajs.js

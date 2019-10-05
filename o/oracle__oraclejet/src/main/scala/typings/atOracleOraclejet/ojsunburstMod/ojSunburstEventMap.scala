@@ -17,13 +17,13 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.touchStart
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojdvtDashBaseMod.dvtBaseComponentEventMap
 import typings.atOracleOraclejet.ojkeysetMod.KeySet
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeCollapse
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeDrill
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeExpand
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojCollapse
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojDrill
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojExpand
-import typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojRotateInput
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojDrill
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojExpand
+import typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
@@ -61,13 +61,13 @@ trait ojSunburstEventMap[K, D] extends dvtBaseComponentEventMap[ojSunburstSettab
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var hoverBehaviorDelayChanged: JetElementCustomEvent[Double]
   var nodeDefaultsChanged: JetElementCustomEvent[Anon_AutoBorderColorBorderWidth]
-  var ojBeforeCollapse: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeCollapse
-  var ojBeforeDrill: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeDrill
-  var ojBeforeExpand: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojBeforeExpand
-  var ojCollapse: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojCollapse
-  var ojDrill: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojDrill
-  var ojExpand: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojExpand
-  var ojRotateInput: typings.atOracleOraclejet.ojsunburstMod.ojSunburstNs.ojRotateInput
+  var ojBeforeCollapse: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeCollapse
+  var ojBeforeDrill: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeDrill
+  var ojBeforeExpand: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojBeforeExpand
+  var ojCollapse: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojCollapse
+  var ojDrill: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojDrill
+  var ojExpand: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojExpand
+  var ojRotateInput: typings.atOracleOraclejet.ojsunburstMod.ojSunburst.ojRotateInput
   var rootNodeChanged: JetElementCustomEvent[
     /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
   ]

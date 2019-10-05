@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriWidgetsFeatureFormInputFieldGroupMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InputFieldGroup
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.InputFieldGroupProperties
+import typings.arcgisDashJsDashApi.__esri.InputFieldGroup
+import typings.arcgisDashJsDashApi.__esri.InputFieldGroupProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportNAMessageMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.NAMessageConstructor
+import typings.arcgisDashJsDashApi.__esri.NAMessageConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

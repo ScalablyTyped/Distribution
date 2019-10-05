@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMMatrixReadOnly")
 @js.native
 class DOMMatrixReadOnly protected ()
-  extends typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly {
+  extends typings.geometryDashDom.GeometryDom.DOMMatrixReadOnly {
   def this(numberSequence: js.Array[Double]) = this()
 }
 
@@ -17,6 +17,6 @@ class DOMMatrixReadOnly protected ()
 object DOMMatrixReadOnly
   extends Instantiable1[
       /* numberSequence */ js.Array[Double], 
-      typings.geometryDashDom.GeometryDomNs.DOMMatrixReadOnly
+      typings.geometryDashDom.GeometryDom.DOMMatrixReadOnly
     ]
 

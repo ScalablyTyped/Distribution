@@ -17,9 +17,9 @@ trait PrintColumnOptions[T] extends js.Object {
 
 object PrintColumnOptions {
   @scala.inline
-  def apply[T](namePrinter: CellPrinter[T] = null, separator: String = null): PrintColumnOptions[T] = {
+  def apply[T](namePrinter: (T, /* width */ Double) => String = null, separator: String = null): PrintColumnOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (namePrinter != null) __obj.updateDynamic("namePrinter")(namePrinter)
+    if (namePrinter != null) __obj.updateDynamic("namePrinter")(js.Any.fromFunction2(namePrinter))
     if (separator != null) __obj.updateDynamic("separator")(separator)
     __obj.asInstanceOf[PrintColumnOptions[T]]
   }

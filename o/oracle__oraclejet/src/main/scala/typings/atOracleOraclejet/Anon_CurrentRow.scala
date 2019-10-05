@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atOracleOraclejet.ojtableMod.ojTableNs.CurrentRow
+import typings.atOracleOraclejet.ojtableMod.ojTable.CurrentRow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

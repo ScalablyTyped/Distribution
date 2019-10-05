@@ -17,10 +17,10 @@ trait TrialMinutes extends js.Object {
 
 object TrialMinutes {
   @scala.inline
-  def apply(remaining: js.UndefOr[Double] = js.undefined, total: js.UndefOr[Double] = js.undefined): TrialMinutes = {
+  def apply(remaining: Int | scala.Double = null, total: Int | scala.Double = null): TrialMinutes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(remaining)) __obj.updateDynamic("remaining")(remaining)
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total)
+    if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrialMinutes]
   }
 }

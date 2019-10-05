@@ -26,13 +26,13 @@ trait ListActiveViolationsRequest extends js.Object {
 object ListActiveViolationsRequest {
   @scala.inline
   def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nextToken: NextToken = null,
     securityProfileName: SecurityProfileName = null,
     thingName: DeviceDefenderThingName = null
   ): ListActiveViolationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName)
     if (thingName != null) __obj.updateDynamic("thingName")(thingName)

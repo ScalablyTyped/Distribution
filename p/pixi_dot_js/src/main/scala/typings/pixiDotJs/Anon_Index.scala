@@ -1,6 +1,6 @@
 package typings.pixiDotJs
 
-import typings.pixiDotJs.PIXINs.FilterDataStackItem
+import typings.pixiDotJs.PIXI.FilterDataStackItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

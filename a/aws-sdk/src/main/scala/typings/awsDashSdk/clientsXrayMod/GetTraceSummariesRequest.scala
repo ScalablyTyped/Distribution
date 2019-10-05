@@ -42,7 +42,7 @@ object GetTraceSummariesRequest {
     StartTime: Timestamp,
     FilterExpression: FilterExpression = null,
     NextToken: String = null,
-    Sampling: js.UndefOr[NullableBoolean] = js.undefined,
+    Sampling: js.UndefOr[scala.Boolean] = js.undefined,
     SamplingStrategy: SamplingStrategy = null,
     TimeRangeType: TimeRangeType = null
   ): GetTraceSummariesRequest = {

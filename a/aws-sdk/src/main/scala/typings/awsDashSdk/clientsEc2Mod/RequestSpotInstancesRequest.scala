@@ -59,10 +59,10 @@ object RequestSpotInstancesRequest {
   @scala.inline
   def apply(
     AvailabilityZoneGroup: String = null,
-    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
+    BlockDurationMinutes: Int | scala.Double = null,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    InstanceCount: Int | scala.Double = null,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
     LaunchGroup: String = null,
     LaunchSpecification: RequestSpotLaunchSpecification = null,
@@ -73,10 +73,10 @@ object RequestSpotInstancesRequest {
   ): RequestSpotInstancesRequest = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup)
-    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes)
+    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount)
+    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
     if (LaunchGroup != null) __obj.updateDynamic("LaunchGroup")(LaunchGroup)
     if (LaunchSpecification != null) __obj.updateDynamic("LaunchSpecification")(LaunchSpecification)

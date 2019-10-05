@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("esri-leaflet", "RasterLayer")
 @js.native
 abstract class RasterLayer ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esriNs.RasterLayer
+  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.RasterLayer
 

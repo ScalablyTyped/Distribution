@@ -2,7 +2,7 @@ package typings.pixiDotJs.pixiDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pixiDotJs.Anon_RendererAny
-import typings.pixiDotJs.PIXINs.WebGLRendererOptions
+import typings.pixiDotJs.PIXI.WebGLRendererOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 // plugintarget mixin end
 class WebGLRenderer ()
-  extends typings.pixiDotJs.PIXINs.WebGLRenderer {
+  extends typings.pixiDotJs.PIXI.WebGLRenderer {
   def this(options: WebGLRendererOptions) = this()
   def this(screenWidth: Double) = this()
   def this(screenWidth: Double, screenHeight: Double) = this()

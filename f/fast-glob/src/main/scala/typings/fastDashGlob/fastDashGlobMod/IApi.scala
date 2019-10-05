@@ -3,7 +3,7 @@ package typings.fastDashGlob.fastDashGlobMod
 import typings.fastDashGlob.outManagersOptionsMod.IPartialOptions
 import typings.fastDashGlob.outTypesEntriesMod.EntryItem
 import typings.fastDashGlob.outTypesPatternsMod.Pattern
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,21 @@
+package typings.atCkeditorCkeditor5DashCore.atCkeditorCkeditor5DashCoreMod.editor.utils
+
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ElementApi extends js.Object {
+  val sourceElement: HTMLElement
+  def updateSourceElement(): Unit
+}
+
+object ElementApi {
+  @scala.inline
+  def apply(sourceElement: HTMLElement, updateSourceElement: () => Unit): ElementApi = {
+    val __obj = js.Dynamic.literal(sourceElement = sourceElement, updateSourceElement = js.Any.fromFunction0(updateSourceElement))
+  
+    __obj.asInstanceOf[ElementApi]
+  }
+}
+

@@ -27,8 +27,8 @@ object CreateVpcRequest {
   @scala.inline
   def apply(
     CidrBlock: String,
-    AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceTenancy: Tenancy = null
   ): CreateVpcRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock)

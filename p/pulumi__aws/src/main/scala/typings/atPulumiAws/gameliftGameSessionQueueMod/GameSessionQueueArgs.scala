@@ -1,6 +1,6 @@
 package typings.atPulumiAws.gameliftGameSessionQueueMod
 
-import typings.atPulumiAws.typesInputMod.gameliftNs.GameSessionQueuePlayerLatencyPolicy
+import typings.atPulumiAws.typesInputMod.gamelift.GameSessionQueuePlayerLatencyPolicy
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

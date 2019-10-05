@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MathPrototype")
 @js.native
 class MathPrototype ()
-  extends typings.typescriptDashServices.TypeScriptNs.MathPrototype
+  extends typings.typescriptDashServices.TypeScript.MathPrototype
 
 /* static members */
 @JSImport("typescript-services", "MathPrototype")

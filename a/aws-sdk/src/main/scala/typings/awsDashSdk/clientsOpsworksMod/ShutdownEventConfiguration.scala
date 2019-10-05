@@ -18,12 +18,12 @@ trait ShutdownEventConfiguration extends js.Object {
 object ShutdownEventConfiguration {
   @scala.inline
   def apply(
-    DelayUntilElbConnectionsDrained: js.UndefOr[Boolean] = js.undefined,
-    ExecutionTimeout: js.UndefOr[Integer] = js.undefined
+    DelayUntilElbConnectionsDrained: js.UndefOr[scala.Boolean] = js.undefined,
+    ExecutionTimeout: Int | scala.Double = null
   ): ShutdownEventConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DelayUntilElbConnectionsDrained)) __obj.updateDynamic("DelayUntilElbConnectionsDrained")(DelayUntilElbConnectionsDrained)
-    if (!js.isUndefined(ExecutionTimeout)) __obj.updateDynamic("ExecutionTimeout")(ExecutionTimeout)
+    if (ExecutionTimeout != null) __obj.updateDynamic("ExecutionTimeout")(ExecutionTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShutdownEventConfiguration]
   }
 }

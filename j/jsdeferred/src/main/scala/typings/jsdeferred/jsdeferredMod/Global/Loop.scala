@@ -21,3 +21,10 @@ object Loop {
   }
 }
 
+@JSGlobal("loop")
+@js.native
+object loop extends js.Object {
+  def apply(n: Double, fun: FunctionWithNumber): Deferred = js.native
+  def apply(n: Loop, fun: FunctionWithNumber): Deferred = js.native
+}
+

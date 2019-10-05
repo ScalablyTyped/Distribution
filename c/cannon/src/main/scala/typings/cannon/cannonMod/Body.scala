@@ -1,7 +1,7 @@
 package typings.cannon.cannonMod
 
-import typings.cannon.CANNONNs.IBodyOptions
-import typings.cannon.CANNONNs.IEvent
+import typings.cannon.CANNON.IBodyOptions
+import typings.cannon.CANNON.IEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cannon", "Body")
 @js.native
 class Body ()
-  extends typings.cannon.CANNONNs.Body {
+  extends typings.cannon.CANNON.Body {
   def this(options: IBodyOptions) = this()
 }
 

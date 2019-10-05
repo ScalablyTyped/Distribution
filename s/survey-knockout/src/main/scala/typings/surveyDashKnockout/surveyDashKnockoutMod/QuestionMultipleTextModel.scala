@@ -5,6 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IParentElement because var conflicts: isReadOnly. Inlined addElement
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurveyElement because Already inherited
+- typings.surveyDashKnockout.surveyDashKnockoutMod.IPanel because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name, parent. Inlined getChildrenLayoutType, getQuestionTitleLocation, elementWidthChanged, indexOf, elements
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ILocalizableOwner because Already inherited
 - typings.surveyDashKnockout.surveyDashKnockoutMod.IMultipleTextData because var conflicts: containsErrors, isPage, isReadOnly, isVisible, name, parent. Inlined getSurvey, getTextProcessor, getMultipleTextValue, setMultipleTextValue, getItemDefaultValue, getIsRequiredText */ @JSImport("survey-knockout", "QuestionMultipleTextModel")
 @js.native
 class QuestionMultipleTextModel protected () extends Question {
@@ -23,6 +27,8 @@ class QuestionMultipleTextModel protected () extends Question {
     */
   var items: js.Array[MultipleTextItemModel] = js.native
   def addElement(element: IElement, index: Double): Unit = js.native
+  @JSName("addElement")
+  def addElement_Any(element: IElement, index: Double): js.Any = js.native
   /**
     * Add a new text item.
     * @param name a item name
@@ -33,6 +39,8 @@ class QuestionMultipleTextModel protected () extends Question {
   def colCountChangedCallback(): Unit = js.native
   /* protected */ def createTextItem(name: String, title: String): MultipleTextItemModel = js.native
   def elementWidthChanged(el: IElement): Unit = js.native
+  @JSName("elementWidthChanged")
+  def elementWidthChanged_Any(el: IElement): js.Any = js.native
   def getChildrenLayoutType(): String = js.native
   def getIsRequiredText(): String = js.native
   def getItemByName(name: String): MultipleTextItemModel = js.native

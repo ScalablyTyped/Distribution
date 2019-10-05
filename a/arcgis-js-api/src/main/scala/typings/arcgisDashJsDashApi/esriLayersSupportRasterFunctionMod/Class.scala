@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersSupportRasterFunctionMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterFunction
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RasterFunctionProperties
+import typings.arcgisDashJsDashApi.__esri.RasterFunction
+import typings.arcgisDashJsDashApi.__esri.RasterFunctionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

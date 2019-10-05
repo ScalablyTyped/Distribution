@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriSymbolsWaterSymbol3DLayerMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WaterSymbol3DLayer
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.WaterSymbol3DLayerProperties
+import typings.arcgisDashJsDashApi.__esri.WaterSymbol3DLayer
+import typings.arcgisDashJsDashApi.__esri.WaterSymbol3DLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

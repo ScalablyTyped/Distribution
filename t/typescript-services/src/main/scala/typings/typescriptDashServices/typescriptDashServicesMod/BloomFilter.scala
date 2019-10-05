@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "BloomFilter")
 @js.native
 class BloomFilter protected ()
-  extends typings.typescriptDashServices.TypeScriptNs.BloomFilter {
+  extends typings.typescriptDashServices.TypeScript.BloomFilter {
   def this(expectedCount: Double) = this()
 }
 

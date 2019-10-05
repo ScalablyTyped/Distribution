@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/isSameISOWeekYear", JSImport.Namespace)
 @js.native
 object isSameISOWeekYearMod extends js.Object {
-  def default(dateLeft: Double, dateRight: Double): Boolean = js.native
-  def default(dateLeft: Double, dateRight: Date): Boolean = js.native
-  def default(dateLeft: Date, dateRight: Double): Boolean = js.native
-  def default(dateLeft: Date, dateRight: Date): Boolean = js.native
+  @js.native
+  object default extends js.Object {
+    def apply(dateLeft: Double, dateRight: Double): Boolean = js.native
+    def apply(dateLeft: Double, dateRight: Date): Boolean = js.native
+    def apply(dateLeft: Date, dateRight: Double): Boolean = js.native
+    def apply(dateLeft: Date, dateRight: Date): Boolean = js.native
+  }
+  
 }
 

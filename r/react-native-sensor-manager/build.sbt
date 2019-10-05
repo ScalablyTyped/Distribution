@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-sensor-manager"
-version := "0.1-dt-20180806Z-a9ce44"
-scalaVersion := "2.12.9"
+version := "0.1-dt-20180806Z-7a57d7"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

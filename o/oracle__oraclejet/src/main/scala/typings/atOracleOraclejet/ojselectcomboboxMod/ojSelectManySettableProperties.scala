@@ -16,7 +16,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.valid
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.atOracleOraclejet.ojmessagingMod.^
-import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.OptionContext
+import typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.OptionContext
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait ojSelectManySettableProperties[K, D]
   var minimumResultsForSearch: Double
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.undefined
   var options: (js.Array[
-    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+    typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null
   var optionsKeys: Anon_ChildKeysChildrenLabelValue
   var pickerAttributes: Anon_Class
@@ -62,7 +62,7 @@ object ojSelectManySettableProperties {
     describedBy: String = null,
     optionRenderer: /* param0 */ OptionContext => Element = null,
     options: (js.Array[
-      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelectNs.Optgroup
+      typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.atOracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
     ]) | (DataProvider[K, D]) = null,
     placeholder: String = null,
     value: js.Array[_] = null,

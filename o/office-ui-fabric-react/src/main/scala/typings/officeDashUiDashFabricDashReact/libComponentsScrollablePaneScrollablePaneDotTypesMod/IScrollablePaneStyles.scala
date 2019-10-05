@@ -31,14 +31,18 @@ trait IScrollablePaneStyles extends js.Object {
 object IScrollablePaneStyles {
   @scala.inline
   def apply(
-    contentContainer: IStyle,
-    root: IStyle,
-    stickyAbove: IStyle,
-    stickyBelow: IStyle,
-    stickyBelowItems: IStyle
+    contentContainer: IStyle = null,
+    root: IStyle = null,
+    stickyAbove: IStyle = null,
+    stickyBelow: IStyle = null,
+    stickyBelowItems: IStyle = null
   ): IScrollablePaneStyles = {
-    val __obj = js.Dynamic.literal(contentContainer = contentContainer.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], stickyAbove = stickyAbove.asInstanceOf[js.Any], stickyBelow = stickyBelow.asInstanceOf[js.Any], stickyBelowItems = stickyBelowItems.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (contentContainer != null) __obj.updateDynamic("contentContainer")(contentContainer.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (stickyAbove != null) __obj.updateDynamic("stickyAbove")(stickyAbove.asInstanceOf[js.Any])
+    if (stickyBelow != null) __obj.updateDynamic("stickyBelow")(stickyBelow.asInstanceOf[js.Any])
+    if (stickyBelowItems != null) __obj.updateDynamic("stickyBelowItems")(stickyBelowItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollablePaneStyles]
   }
 }

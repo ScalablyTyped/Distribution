@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryPointMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Point
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.PointProperties
+import typings.arcgisDashJsDashApi.__esri.Point
+import typings.arcgisDashJsDashApi.__esri.PointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.cesium.cesiumMod
 
 import typings.cesium.Anon_Animation
 import typings.cesium.Anon_Duration
-import typings.cesium.cesiumMod.ViewerNs.ViewerMixin
+import typings.cesium.cesiumMod.Viewer.ViewerMixin
 import typings.std.Element
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
@@ -86,5 +86,11 @@ class Viewer protected () extends js.Object {
   def zoomTo(target: EntityCollection): js.Promise[Boolean] = js.native
   def zoomTo(target: EntityCollection, offset: HeadingPitchRange): js.Promise[Boolean] = js.native
   def zoomTo(target: Entity, offset: HeadingPitchRange): js.Promise[Boolean] = js.native
+}
+
+@JSImport("cesium", "Viewer")
+@js.native
+object Viewer extends js.Object {
+  type ViewerMixin = js.Function2[/* viewer */ Viewer, /* options */ js.Any, Unit]
 }
 

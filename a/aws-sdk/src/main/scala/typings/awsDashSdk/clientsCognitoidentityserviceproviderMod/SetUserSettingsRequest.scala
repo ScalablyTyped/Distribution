@@ -10,7 +10,7 @@ trait SetUserSettingsRequest extends js.Object {
     */
   var AccessToken: TokenModelType
   /**
-    * Specifies the options for MFA (e.g., email or phone number).
+    * You can use this parameter only to set an SMS configuration that uses SMS for delivery.
     */
   var MFAOptions: MFAOptionListType
 }

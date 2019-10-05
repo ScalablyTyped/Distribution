@@ -74,14 +74,14 @@ object Finding {
     Severity: Double,
     Type: FindingType,
     UpdatedAt: String,
-    Confidence: js.UndefOr[Double] = js.undefined,
+    Confidence: Int | scala.Double = null,
     Description: String = null,
     Partition: String = null,
     Service: Service = null,
     Title: String = null
   ): Finding = {
     val __obj = js.Dynamic.literal(AccountId = AccountId, Arn = Arn, CreatedAt = CreatedAt, Id = Id, Region = Region, Resource = Resource, SchemaVersion = SchemaVersion, Severity = Severity, Type = Type, UpdatedAt = UpdatedAt)
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
+    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Partition != null) __obj.updateDynamic("Partition")(Partition)
     if (Service != null) __obj.updateDynamic("Service")(Service)

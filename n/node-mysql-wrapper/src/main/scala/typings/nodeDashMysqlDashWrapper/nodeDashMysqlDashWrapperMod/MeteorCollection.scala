@@ -3,8 +3,8 @@ package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 import typings.nodeDashMysqlDashWrapper.Anon_Doc
 import typings.nodeDashMysqlDashWrapper.Anon_Fields
 import typings.nodeDashMysqlDashWrapper.Anon_FieldsReactive
-import typings.nodeDashMysqlDashWrapper.MongoNs.Collection
-import typings.nodeDashMysqlDashWrapper.MongoNs.Cursor
+import typings.nodeDashMysqlDashWrapper.Mongo.Collection
+import typings.nodeDashMysqlDashWrapper.Mongo.Cursor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

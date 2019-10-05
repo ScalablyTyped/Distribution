@@ -67,23 +67,36 @@ trait IDetailsColumnStyles extends js.Object {
 object IDetailsColumnStyles {
   @scala.inline
   def apply(
-    accessibleLabel: IStyle,
-    borderAfterDropping: IStyle,
-    borderWhileDragging: IStyle,
-    cellName: IStyle,
-    cellTitle: IStyle,
-    cellTooltip: IStyle,
-    filterChevron: IStyle,
-    gripperBarVerticalStyle: IStyle,
-    iconClassName: IStyle,
-    nearIcon: IStyle,
-    noBorderAfterDropping: IStyle,
-    noBorderWhileDragging: IStyle,
-    root: IStyle,
-    sortIcon: IStyle
+    accessibleLabel: IStyle = null,
+    borderAfterDropping: IStyle = null,
+    borderWhileDragging: IStyle = null,
+    cellName: IStyle = null,
+    cellTitle: IStyle = null,
+    cellTooltip: IStyle = null,
+    filterChevron: IStyle = null,
+    gripperBarVerticalStyle: IStyle = null,
+    iconClassName: IStyle = null,
+    nearIcon: IStyle = null,
+    noBorderAfterDropping: IStyle = null,
+    noBorderWhileDragging: IStyle = null,
+    root: IStyle = null,
+    sortIcon: IStyle = null
   ): IDetailsColumnStyles = {
-    val __obj = js.Dynamic.literal(accessibleLabel = accessibleLabel.asInstanceOf[js.Any], borderAfterDropping = borderAfterDropping.asInstanceOf[js.Any], borderWhileDragging = borderWhileDragging.asInstanceOf[js.Any], cellName = cellName.asInstanceOf[js.Any], cellTitle = cellTitle.asInstanceOf[js.Any], cellTooltip = cellTooltip.asInstanceOf[js.Any], filterChevron = filterChevron.asInstanceOf[js.Any], gripperBarVerticalStyle = gripperBarVerticalStyle.asInstanceOf[js.Any], iconClassName = iconClassName.asInstanceOf[js.Any], nearIcon = nearIcon.asInstanceOf[js.Any], noBorderAfterDropping = noBorderAfterDropping.asInstanceOf[js.Any], noBorderWhileDragging = noBorderWhileDragging.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sortIcon = sortIcon.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (accessibleLabel != null) __obj.updateDynamic("accessibleLabel")(accessibleLabel.asInstanceOf[js.Any])
+    if (borderAfterDropping != null) __obj.updateDynamic("borderAfterDropping")(borderAfterDropping.asInstanceOf[js.Any])
+    if (borderWhileDragging != null) __obj.updateDynamic("borderWhileDragging")(borderWhileDragging.asInstanceOf[js.Any])
+    if (cellName != null) __obj.updateDynamic("cellName")(cellName.asInstanceOf[js.Any])
+    if (cellTitle != null) __obj.updateDynamic("cellTitle")(cellTitle.asInstanceOf[js.Any])
+    if (cellTooltip != null) __obj.updateDynamic("cellTooltip")(cellTooltip.asInstanceOf[js.Any])
+    if (filterChevron != null) __obj.updateDynamic("filterChevron")(filterChevron.asInstanceOf[js.Any])
+    if (gripperBarVerticalStyle != null) __obj.updateDynamic("gripperBarVerticalStyle")(gripperBarVerticalStyle.asInstanceOf[js.Any])
+    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
+    if (nearIcon != null) __obj.updateDynamic("nearIcon")(nearIcon.asInstanceOf[js.Any])
+    if (noBorderAfterDropping != null) __obj.updateDynamic("noBorderAfterDropping")(noBorderAfterDropping.asInstanceOf[js.Any])
+    if (noBorderWhileDragging != null) __obj.updateDynamic("noBorderWhileDragging")(noBorderWhileDragging.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (sortIcon != null) __obj.updateDynamic("sortIcon")(sortIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsColumnStyles]
   }
 }

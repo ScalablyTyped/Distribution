@@ -2,9 +2,9 @@ package typings.inquirer.libUiPromptMod
 
 import typings.inquirer.inquirerMod.Answers
 import typings.inquirer.inquirerMod.DistinctQuestion
-import typings.inquirer.inquirerMod.promptsNs.PromptCollection
-import typings.inquirer.inquirerMod.uiNs.FetchedAnswer
-import typings.inquirer.inquirerMod.uiNs.FetchedQuestion
+import typings.inquirer.inquirerMod.prompts.PromptCollection
+import typings.inquirer.inquirerMod.ui.FetchedAnswer
+import typings.inquirer.inquirerMod.ui.FetchedQuestion
 import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

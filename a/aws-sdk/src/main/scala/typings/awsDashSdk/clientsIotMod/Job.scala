@@ -83,7 +83,7 @@ object Job {
     completedAt: DateType = null,
     createdAt: DateType = null,
     description: JobDescription = null,
-    forceCanceled: js.UndefOr[Forced] = js.undefined,
+    forceCanceled: js.UndefOr[scala.Boolean] = js.undefined,
     jobArn: JobArn = null,
     jobExecutionsRolloutConfig: JobExecutionsRolloutConfig = null,
     jobId: JobId = null,

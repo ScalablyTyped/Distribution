@@ -1,12 +1,14 @@
 package typings.ngDashGrid
 
+import org.scalablytyped.runtime.TopLevel
 import typings.angular.angularMod.ITemplateCacheService
-import typings.ngDashGrid.ngGridNs.IColumn
-import typings.ngDashGrid.ngGridNs.IColumnDef
-import typings.ngDashGrid.ngGridNs.IGridInstance
-import typings.ngDashGrid.ngGridNs.IGridOptions
-import typings.ngDashGrid.ngGridNs.IGridScope
-import typings.ngDashGrid.ngGridNs.serviceNs.IDomUtilityService
+import typings.ngDashGrid.ngGrid.IColumn
+import typings.ngDashGrid.ngGrid.IColumnDef
+import typings.ngDashGrid.ngGrid.IColumnStatic
+import typings.ngDashGrid.ngGrid.IGridInstance
+import typings.ngDashGrid.ngGrid.IGridOptions
+import typings.ngDashGrid.ngGrid.IGridScope
+import typings.ngDashGrid.ngGrid.service.IDomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,4 +109,8 @@ class ngColumn protected () extends IColumn {
   /* CompleteClass */
   override def toggleVisible(): Unit = js.native
 }
+
+@JSGlobal("ngColumn")
+@js.native
+object ngColumn extends TopLevel[IColumnStatic]
 

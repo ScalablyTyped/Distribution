@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "create-xpub"
-version := "2.1-dt-20190201Z-ac646b"
-scalaVersion := "2.12.9"
+version := "2.1-dt-20190201Z-8129d2"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

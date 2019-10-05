@@ -21,13 +21,9 @@ trait GetReplicationRunsRequest extends js.Object {
 
 object GetReplicationRunsRequest {
   @scala.inline
-  def apply(
-    replicationJobId: ReplicationJobId,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): GetReplicationRunsRequest = {
+  def apply(replicationJobId: ReplicationJobId, maxResults: Int | Double = null, nextToken: NextToken = null): GetReplicationRunsRequest = {
     val __obj = js.Dynamic.literal(replicationJobId = replicationJobId)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetReplicationRunsRequest]
   }

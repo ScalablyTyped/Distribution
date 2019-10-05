@@ -2,6 +2,7 @@ package typings.ffiDashNapi.ffiDashNapiMod
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.TopLevel
 import typings.ffiDashNapi.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,8 +24,5 @@ trait Callback
 
 @JSImport("ffi-napi", "Callback")
 @js.native
-class CallbackCls protected () extends Buffer {
-  def this(retType: js.Any, argTypes: js.Array[_], fn: js.Any) = this()
-  def this(retType: js.Any, argTypes: js.Array[_], abi: Double, fn: js.Any) = this()
-}
+object Callback extends TopLevel[Callback]
 

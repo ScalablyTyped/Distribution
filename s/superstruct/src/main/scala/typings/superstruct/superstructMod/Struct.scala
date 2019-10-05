@@ -1,5 +1,6 @@
 package typings.superstruct.superstructMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,4 +66,8 @@ trait struct extends js.Object {
   /** `union` structs validate that a value matches at least one of many structs. Their arguments are any other validate struct schema. */
   def union(schemas: js.Array[Type]): Kind = js.native
 }
+
+@JSImport("superstruct", "struct")
+@js.native
+object struct extends TopLevel[struct]
 

@@ -32,13 +32,13 @@ object EnableSnapshotCopyMessage {
   def apply(
     ClusterIdentifier: String,
     DestinationRegion: String,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    RetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
+    RetentionPeriod: Int | scala.Double = null,
     SnapshotCopyGrantName: String = null
   ): EnableSnapshotCopyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier, DestinationRegion = DestinationRegion)
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod)
-    if (!js.isUndefined(RetentionPeriod)) __obj.updateDynamic("RetentionPeriod")(RetentionPeriod)
+    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (RetentionPeriod != null) __obj.updateDynamic("RetentionPeriod")(RetentionPeriod.asInstanceOf[js.Any])
     if (SnapshotCopyGrantName != null) __obj.updateDynamic("SnapshotCopyGrantName")(SnapshotCopyGrantName)
     __obj.asInstanceOf[EnableSnapshotCopyMessage]
   }

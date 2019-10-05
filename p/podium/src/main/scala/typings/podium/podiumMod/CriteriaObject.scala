@@ -40,7 +40,7 @@ object CriteriaObject {
     clone: js.UndefOr[Boolean] = js.undefined,
     count: Int | Double = null,
     filter: String | js.Array[String] | CriteriaFilterOptionsObject = null,
-    listener: Listener = null,
+    listener: (/* data */ js.Any, /* tags */ js.UndefOr[Tags], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null,
     spread: js.UndefOr[Boolean] = js.undefined,
     tags: js.UndefOr[Boolean] = js.undefined
   ): CriteriaObject = {
@@ -50,7 +50,7 @@ object CriteriaObject {
     if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (listener != null) __obj.updateDynamic("listener")(listener)
+    if (listener != null) __obj.updateDynamic("listener")(js.Any.fromFunction3(listener))
     if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
     if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CriteriaObject]

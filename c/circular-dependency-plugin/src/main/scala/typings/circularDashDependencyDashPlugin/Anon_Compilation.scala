@@ -1,7 +1,7 @@
 package typings.circularDashDependencyDashPlugin
 
 import typings.webpack.webpackMod.Module
-import typings.webpack.webpackMod.compilationNs.Compilation
+import typings.webpack.webpackMod.compilation.Compilation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

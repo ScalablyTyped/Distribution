@@ -1,6 +1,6 @@
 package typings.applicationinsightsDashJs
 
-import typings.applicationinsightsDashJs.MicrosoftNs.ApplicationInsightsNs.FieldType
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

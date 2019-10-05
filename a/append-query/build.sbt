@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "append-query"
-version := "2.0-dt-20190608Z-922e4c"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20190608Z-a7ed06"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

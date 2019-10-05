@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriSupportActionsActionToggleMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.ActionToggle
+import typings.arcgisDashJsDashApi.__esri.ActionToggle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

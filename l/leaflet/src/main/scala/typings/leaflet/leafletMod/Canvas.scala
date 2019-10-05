@@ -8,3 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Canvas () extends Renderer
 
+@JSImport("leaflet", "canvas")
+@js.native
+object canvas extends js.Object {
+  def apply(): Canvas = js.native
+  def apply(options: RendererOptions): Canvas = js.native
+}
+

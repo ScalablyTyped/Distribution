@@ -1,6 +1,6 @@
 package typings.linqsharp.linqsharpMod
 
-import typings.linqsharp.linqsharpMod.LinqSharpNs.IEqualityComparer
+import typings.linqsharp.linqsharpMod.LinqSharp.IEqualityComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

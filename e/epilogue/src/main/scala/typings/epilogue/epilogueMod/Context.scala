@@ -1,6 +1,6 @@
 package typings.epilogue.epilogueMod
 
-import typings.epilogue.epilogueMod.ErrorsNs.EpilogueError
+import typings.epilogue.epilogueMod.Errors.EpilogueError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

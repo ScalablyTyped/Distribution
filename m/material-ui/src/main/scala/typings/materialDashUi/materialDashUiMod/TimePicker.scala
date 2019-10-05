@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "TimePicker")
 @js.native
 class TimePicker ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.TimePicker
+  extends typings.materialDashUi.__MaterialUI.TimePicker
 

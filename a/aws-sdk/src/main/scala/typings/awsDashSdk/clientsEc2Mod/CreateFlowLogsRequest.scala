@@ -55,7 +55,7 @@ object CreateFlowLogsRequest {
     TrafficType: TrafficType,
     ClientToken: String = null,
     DeliverLogsPermissionArn: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     LogDestination: String = null,
     LogDestinationType: LogDestinationType = null,
     LogFormat: String = null,

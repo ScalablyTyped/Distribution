@@ -1,5 +1,6 @@
 package typings.humane
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,4 +26,8 @@ trait Humane extends js.Object {
   def remove(x: js.Any): Unit = js.native
   def spawn(options: HumaneOptions): js.Function = js.native
 }
+
+@JSGlobal("humane")
+@js.native
+object humane extends TopLevel[Humane]
 

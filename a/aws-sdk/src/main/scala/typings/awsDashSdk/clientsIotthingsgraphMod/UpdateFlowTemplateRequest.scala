@@ -21,13 +21,9 @@ trait UpdateFlowTemplateRequest extends js.Object {
 
 object UpdateFlowTemplateRequest {
   @scala.inline
-  def apply(
-    definition: DefinitionDocument,
-    id: Urn,
-    compatibleNamespaceVersion: js.UndefOr[Version] = js.undefined
-  ): UpdateFlowTemplateRequest = {
+  def apply(definition: DefinitionDocument, id: Urn, compatibleNamespaceVersion: Int | Double = null): UpdateFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition, id = id)
-    if (!js.isUndefined(compatibleNamespaceVersion)) __obj.updateDynamic("compatibleNamespaceVersion")(compatibleNamespaceVersion)
+    if (compatibleNamespaceVersion != null) __obj.updateDynamic("compatibleNamespaceVersion")(compatibleNamespaceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowTemplateRequest]
   }
 }

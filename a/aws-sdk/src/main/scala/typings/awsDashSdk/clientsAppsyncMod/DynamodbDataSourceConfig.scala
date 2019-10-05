@@ -21,7 +21,11 @@ trait DynamodbDataSourceConfig extends js.Object {
 
 object DynamodbDataSourceConfig {
   @scala.inline
-  def apply(awsRegion: String, tableName: String, useCallerCredentials: js.UndefOr[Boolean] = js.undefined): DynamodbDataSourceConfig = {
+  def apply(
+    awsRegion: String,
+    tableName: String,
+    useCallerCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): DynamodbDataSourceConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion, tableName = tableName)
     if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials)
     __obj.asInstanceOf[DynamodbDataSourceConfig]

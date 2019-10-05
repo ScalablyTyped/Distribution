@@ -17,12 +17,13 @@ trait DevProviderProps extends js.Object {
 object DevProviderProps {
   @scala.inline
   def apply(
-    children: ReactNode,
     value: StandardEngine,
+    children: ReactNode = null,
     debug: DebugEngine = null,
     debugAfterHydration: js.UndefOr[Boolean] = js.undefined
   ): DevProviderProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(value = value)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(debugAfterHydration)) __obj.updateDynamic("debugAfterHydration")(debugAfterHydration)
     __obj.asInstanceOf[DevProviderProps]

@@ -1,6 +1,7 @@
 package typings.antd.esCalendarMod
 
 import typings.antd.esCalendarHeaderMod.HeaderRender
+import typings.antd.esCalendarHeaderMod.RenderHeader
 import typings.moment.momentMod.Moment
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
@@ -40,7 +41,7 @@ object CalendarProps {
     defaultValue: Moment = null,
     disabledDate: /* current */ Moment => Boolean = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: HeaderRender = null,
+    headerRender: /* headerRender */ RenderHeader => ReactNode = null,
     locale: js.Any = null,
     mode: CalendarMode = null,
     monthCellRender: /* date */ Moment => ReactNode = null,
@@ -60,7 +61,7 @@ object CalendarProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
-    if (headerRender != null) __obj.updateDynamic("headerRender")(headerRender)
+    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1(headerRender))
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction1(monthCellRender))

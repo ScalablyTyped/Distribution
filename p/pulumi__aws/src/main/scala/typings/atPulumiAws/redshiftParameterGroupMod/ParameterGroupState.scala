@@ -1,7 +1,7 @@
 package typings.atPulumiAws.redshiftParameterGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.redshiftNs.ParameterGroupParameter
+import typings.atPulumiAws.typesInputMod.redshift.ParameterGroupParameter
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

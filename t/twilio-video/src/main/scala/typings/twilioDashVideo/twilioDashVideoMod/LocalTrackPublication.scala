@@ -1,6 +1,6 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
-import typings.twilioDashVideo.twilioDashVideoMod.TrackNs.Kind
+import typings.twilioDashVideo.twilioDashVideoMod.Track.Kind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

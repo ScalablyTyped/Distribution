@@ -13,3 +13,10 @@ class AssertNotNull protected () extends Expression {
   var condition: Expression = js.native
 }
 
+@JSImport("@angular/compiler/src/output/output_ast", "assertNotNull")
+@js.native
+object assertNotNull extends js.Object {
+  def apply(expr: Expression): AssertNotNull = js.native
+  def apply(expr: Expression, sourceSpan: ParseSourceSpan): AssertNotNull = js.native
+}
+

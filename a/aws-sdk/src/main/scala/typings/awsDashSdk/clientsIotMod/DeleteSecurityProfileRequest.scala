@@ -17,12 +17,9 @@ trait DeleteSecurityProfileRequest extends js.Object {
 
 object DeleteSecurityProfileRequest {
   @scala.inline
-  def apply(
-    securityProfileName: SecurityProfileName,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
-  ): DeleteSecurityProfileRequest = {
+  def apply(securityProfileName: SecurityProfileName, expectedVersion: Int | Double = null): DeleteSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName)
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion)
+    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSecurityProfileRequest]
   }
 }

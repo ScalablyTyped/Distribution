@@ -3,7 +3,7 @@ package typings.mqttDashPacket.mqttDashPacketMod
 import typings.mqttDashPacket.mqttDashPacketStrings.error
 import typings.mqttDashPacket.mqttDashPacketStrings.packet
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,5 +16,12 @@ trait Parser extends EventEmitter {
   def on_packet(event: packet, callback: js.Function1[/* packet */ Packet, Unit]): this.type = js.native
   def parse(buffer: Buffer): Double = js.native
   def parse(buffer: Buffer, opts: js.Object): Double = js.native
+}
+
+@JSImport("mqtt-packet", "parser")
+@js.native
+object parser extends js.Object {
+  def apply(): Parser = js.native
+  def apply(opts: js.Object): Parser = js.native
 }
 

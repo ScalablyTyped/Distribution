@@ -1,7 +1,7 @@
 package typings.atPulumiAws.transferServerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.transferNs.ServerEndpointDetails
+import typings.atPulumiAws.typesInputMod.transfer.ServerEndpointDetails
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

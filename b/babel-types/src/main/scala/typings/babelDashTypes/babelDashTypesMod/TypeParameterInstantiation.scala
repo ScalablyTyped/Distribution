@@ -33,3 +33,10 @@ object TypeParameterInstantiation {
   }
 }
 
+@JSImport("babel-types", "typeParameterInstantiation")
+@js.native
+object typeParameterInstantiation extends js.Object {
+  def apply(): TypeParameterInstantiation = js.native
+  def apply(params: js.Array[FlowTypeAnnotation]): TypeParameterInstantiation = js.native
+}
+

@@ -1,11 +1,11 @@
 package typings.wegameDashApi
 
-import typings.wegameDashApi.wxNs.typesNs.AudioSourceType
-import typings.wegameDashApi.wxNs.typesNs.ButtonType
-import typings.wegameDashApi.wxNs.typesNs.FileContentEncoding
-import typings.wegameDashApi.wxNs.typesNs.GameClubButtonIcon
-import typings.wegameDashApi.wxNs.typesNs.NetworkType
-import typings.wegameDashApi.wxNs.typesNs.RequestMethod
+import typings.wegameDashApi.wx.types.AudioSourceType
+import typings.wegameDashApi.wx.types.ButtonType
+import typings.wegameDashApi.wx.types.FileContentEncoding
+import typings.wegameDashApi.wx.types.GameClubButtonIcon
+import typings.wegameDashApi.wx.types.NetworkType
+import typings.wegameDashApi.wx.types.RequestMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

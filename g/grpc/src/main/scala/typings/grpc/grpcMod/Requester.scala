@@ -15,18 +15,18 @@ trait Requester extends js.Object {
 object Requester {
   @scala.inline
   def apply(
-    cancel: CancelRequester = null,
-    getPeer: GetPeerRequester = null,
-    halfClose: CloseRequester = null,
-    sendMessage: MessageRequester = null,
-    start: MetadataRequester = null
+    cancel: /* next */ js.Function => Unit = null,
+    getPeer: /* next */ js.Function => String = null,
+    halfClose: /* next */ js.Function => Unit = null,
+    sendMessage: (/* message */ js.Any, /* next */ js.Function) => Unit = null,
+    start: (/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function) => Unit = null
   ): Requester = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (getPeer != null) __obj.updateDynamic("getPeer")(getPeer)
-    if (halfClose != null) __obj.updateDynamic("halfClose")(halfClose)
-    if (sendMessage != null) __obj.updateDynamic("sendMessage")(sendMessage)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
+    if (getPeer != null) __obj.updateDynamic("getPeer")(js.Any.fromFunction1(getPeer))
+    if (halfClose != null) __obj.updateDynamic("halfClose")(js.Any.fromFunction1(halfClose))
+    if (sendMessage != null) __obj.updateDynamic("sendMessage")(js.Any.fromFunction2(sendMessage))
+    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
     __obj.asInstanceOf[Requester]
   }
 }

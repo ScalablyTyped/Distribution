@@ -1,6 +1,6 @@
 package typings.arcgisDashJsDashApi.esriColorMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Color
+import typings.arcgisDashJsDashApi.__esri.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

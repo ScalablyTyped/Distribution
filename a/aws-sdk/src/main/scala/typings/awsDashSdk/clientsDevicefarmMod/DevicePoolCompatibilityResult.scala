@@ -22,7 +22,7 @@ trait DevicePoolCompatibilityResult extends js.Object {
 object DevicePoolCompatibilityResult {
   @scala.inline
   def apply(
-    compatible: js.UndefOr[Boolean] = js.undefined,
+    compatible: js.UndefOr[scala.Boolean] = js.undefined,
     device: Device = null,
     incompatibilityMessages: IncompatibilityMessages = null
   ): DevicePoolCompatibilityResult = {

@@ -19,6 +19,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.typedDashGithubDashApi.distApiDashInterfacesWebDashHooksMod.Event because Already inherited
 - typings.typedDashGithubDashApi.distApiDashInterfacesWebDashHooksMod.WebHookData because var conflicts: action. Inlined sender, organization, repository */ trait IssueWebHookData extends IssueEvent {
   var organization: js.UndefOr[OrganizationSummary] = js.undefined
   var repository: js.UndefOr[Repository] = js.undefined

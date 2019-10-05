@@ -1,7 +1,7 @@
 package typings.sipDotJs.sipDotJsMod
 
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
-import typings.sipDotJs.libSessionMod.InviteClientContextNs.Options
+import typings.sipDotJs.libSessionMod.InviteClientContext.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

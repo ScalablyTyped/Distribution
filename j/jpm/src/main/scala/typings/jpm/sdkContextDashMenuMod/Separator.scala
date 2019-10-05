@@ -9,12 +9,9 @@ trait Separator extends ItemMenuSeparator {
   def destroy(): Unit
 }
 
-object Separator {
-  @scala.inline
-  def apply(destroy: () => Unit, parentMenu: Menu): Separator = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), parentMenu = parentMenu)
-  
-    __obj.asInstanceOf[Separator]
-  }
+@JSImport("sdk/context-menu", "Separator")
+@js.native
+object Separator extends js.Object {
+  def apply(): Separator = js.native
 }
 

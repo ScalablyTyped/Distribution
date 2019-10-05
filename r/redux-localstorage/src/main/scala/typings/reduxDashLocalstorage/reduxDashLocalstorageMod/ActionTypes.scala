@@ -1,5 +1,6 @@
 package typings.reduxDashLocalstorage.reduxDashLocalstorageMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,4 +17,8 @@ object ActionTypes {
     __obj.asInstanceOf[ActionTypes]
   }
 }
+
+@JSImport("redux-localstorage", "actionTypes")
+@js.native
+object actionTypes extends TopLevel[ActionTypes]
 

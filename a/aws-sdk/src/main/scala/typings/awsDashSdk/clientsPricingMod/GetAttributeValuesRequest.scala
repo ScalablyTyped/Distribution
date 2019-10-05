@@ -28,11 +28,11 @@ object GetAttributeValuesRequest {
   def apply(
     AttributeName: String,
     ServiceCode: String,
-    MaxResults: js.UndefOr[BoxedInteger] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: String = null
   ): GetAttributeValuesRequest = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName, ServiceCode = ServiceCode)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[GetAttributeValuesRequest]
   }

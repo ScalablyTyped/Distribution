@@ -1,6 +1,6 @@
 package typings.activexDashWord
 
-import typings.activexDashStdole.stdoleNs.GUID
+import typings.activexDashStdole.stdole.GUID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

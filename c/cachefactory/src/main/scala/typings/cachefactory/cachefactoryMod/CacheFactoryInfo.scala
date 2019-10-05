@@ -20,7 +20,7 @@ object CacheFactoryInfo {
     deleteOnExpire: DeleteOnExpire = null,
     enable: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
-    onExpire: OnExpireCallback = null,
+    onExpire: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit = null,
     recycleFreq: Int | Double = null,
     storageImpl: StorageImpl = null,
     storageMode: StorageMode = null,
@@ -34,7 +34,7 @@ object CacheFactoryInfo {
     if (deleteOnExpire != null) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire)
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (onExpire != null) __obj.updateDynamic("onExpire")(onExpire)
+    if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
     if (recycleFreq != null) __obj.updateDynamic("recycleFreq")(recycleFreq.asInstanceOf[js.Any])
     if (storageImpl != null) __obj.updateDynamic("storageImpl")(storageImpl)
     if (storageMode != null) __obj.updateDynamic("storageMode")(storageMode)

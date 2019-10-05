@@ -27,12 +27,12 @@ object GetBotAliasesRequest {
   @scala.inline
   def apply(
     botName: BotName,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    maxResults: Int | Double = null,
     nameContains: AliasName = null,
     nextToken: NextToken = null
   ): GetBotAliasesRequest = {
     val __obj = js.Dynamic.literal(botName = botName)
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nameContains != null) __obj.updateDynamic("nameContains")(nameContains)
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
     __obj.asInstanceOf[GetBotAliasesRequest]

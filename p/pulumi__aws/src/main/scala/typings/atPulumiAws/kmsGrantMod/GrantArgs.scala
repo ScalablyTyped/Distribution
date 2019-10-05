@@ -1,6 +1,6 @@
 package typings.atPulumiAws.kmsGrantMod
 
-import typings.atPulumiAws.typesInputMod.kmsNs.GrantConstraint
+import typings.atPulumiAws.typesInputMod.kms.GrantConstraint
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

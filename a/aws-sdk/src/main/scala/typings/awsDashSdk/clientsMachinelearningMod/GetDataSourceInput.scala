@@ -17,7 +17,7 @@ trait GetDataSourceInput extends js.Object {
 
 object GetDataSourceInput {
   @scala.inline
-  def apply(DataSourceId: EntityId, Verbose: js.UndefOr[Verbose] = js.undefined): GetDataSourceInput = {
+  def apply(DataSourceId: EntityId, Verbose: js.UndefOr[Boolean] = js.undefined): GetDataSourceInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId)
     if (!js.isUndefined(Verbose)) __obj.updateDynamic("Verbose")(Verbose)
     __obj.asInstanceOf[GetDataSourceInput]

@@ -1,6 +1,7 @@
 package typings.miniprogramDashWxs
 
-import typings.miniprogramDashWxs.IntlNs.DateTimeFormatOptions
+import org.scalablytyped.runtime.TopLevel
+import typings.miniprogramDashWxs.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -183,4 +184,8 @@ trait Date extends js.Object {
   /** Returns a date converted to a string using Universal Coordinated Time (UTC). */
   def toUTCString(): java.lang.String = js.native
 }
+
+@JSGlobal("Date")
+@js.native
+object Date extends TopLevel[DateConstructor]
 

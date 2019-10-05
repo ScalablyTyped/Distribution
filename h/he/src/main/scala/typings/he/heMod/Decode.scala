@@ -1,5 +1,6 @@
 package typings.he.heMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,4 +18,8 @@ trait Decode extends js.Object {
   def apply(html: String): String = js.native
   def apply(html: String, options: DecodeOptions): String = js.native
 }
+
+@JSImport("he", "decode")
+@js.native
+object decode extends TopLevel[Decode]
 

@@ -1,6 +1,8 @@
 package typings.atNivoLegends.atNivoLegendsMod
 
 import typings.atNivoLegends.Anon_Color
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,9 +48,9 @@ object LegendProps {
     itemTextColor: String = null,
     itemsSpacing: Int | Double = null,
     justify: js.UndefOr[Boolean] = js.undefined,
-    onClick: LegendMouseHandler = null,
-    onMouseEnter: LegendMouseHandler = null,
-    onMouseLeave: LegendMouseHandler = null,
+    onClick: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseEnter: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
+    onMouseLeave: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     padding: Double | Box = null,
     symbolBorderColor: String = null,
     symbolShape: LegendSymbolShape | js.Any = null,
@@ -67,9 +69,9 @@ object LegendProps {
     if (itemTextColor != null) __obj.updateDynamic("itemTextColor")(itemTextColor)
     if (itemsSpacing != null) __obj.updateDynamic("itemsSpacing")(itemsSpacing.asInstanceOf[js.Any])
     if (!js.isUndefined(justify)) __obj.updateDynamic("justify")(justify)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (symbolBorderColor != null) __obj.updateDynamic("symbolBorderColor")(symbolBorderColor)
     if (symbolShape != null) __obj.updateDynamic("symbolShape")(symbolShape.asInstanceOf[js.Any])

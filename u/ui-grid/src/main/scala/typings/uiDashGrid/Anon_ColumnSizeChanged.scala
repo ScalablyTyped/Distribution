@@ -1,7 +1,7 @@
 package typings.uiDashGrid
 
 import typings.angular.angularMod.IScope
-import typings.uiDashGrid.uiDashGridMod.resizeColumnsNs.columnSizeChangedHandler
+import typings.uiDashGrid.uiDashGridMod.resizeColumns.columnSizeChangedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

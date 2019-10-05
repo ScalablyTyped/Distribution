@@ -1,6 +1,6 @@
 package typings.rangyinputs
 
-import typings.rangyinputs.RangyInputsNs.Selection
+import typings.rangyinputs.RangyInputs.Selection
 import typings.rangyinputs.rangyinputsStrings.collapseToEnd
 import typings.rangyinputs.rangyinputsStrings.collapseToStart
 import typings.rangyinputs.rangyinputsStrings.select

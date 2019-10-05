@@ -37,3 +37,9 @@ object TSNamespaceExportDeclaration {
   }
 }
 
+@JSImport("@babel/types", "tsNamespaceExportDeclaration")
+@js.native
+object tsNamespaceExportDeclaration extends js.Object {
+  def apply(id: Identifier): TSNamespaceExportDeclaration = js.native
+}
+

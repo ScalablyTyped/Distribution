@@ -1,6 +1,6 @@
 package typings.wxDashJsDashSdkDashDt
 
-import typings.wxDashJsDashSdkDashDt.wxNs.Card
+import typings.wxDashJsDashSdkDashDt.wx.Card
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

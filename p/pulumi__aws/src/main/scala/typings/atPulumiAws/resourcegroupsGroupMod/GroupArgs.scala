@@ -1,6 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
-import typings.atPulumiAws.typesInputMod.resourcegroupsNs.GroupResourceQuery
+import typings.atPulumiAws.typesInputMod.resourcegroups.GroupResourceQuery
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

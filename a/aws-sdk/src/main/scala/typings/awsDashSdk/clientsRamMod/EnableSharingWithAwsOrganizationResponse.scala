@@ -13,7 +13,7 @@ trait EnableSharingWithAwsOrganizationResponse extends js.Object {
 
 object EnableSharingWithAwsOrganizationResponse {
   @scala.inline
-  def apply(returnValue: js.UndefOr[Boolean] = js.undefined): EnableSharingWithAwsOrganizationResponse = {
+  def apply(returnValue: js.UndefOr[scala.Boolean] = js.undefined): EnableSharingWithAwsOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue)
     __obj.asInstanceOf[EnableSharingWithAwsOrganizationResponse]

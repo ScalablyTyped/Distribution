@@ -20,3 +20,38 @@ class LokiConstructor protected () extends Loki {
   ) = this()
 }
 
+@JSGlobal("LokiConstructor")
+@js.native
+object LokiConstructor extends js.Object {
+  @js.native
+  class Collection[E /* <: js.Object */] () extends _Collection[E]
+  
+  @js.native
+  class KeyValueStore () extends _KeyValueStore
+  
+  @js.native
+  class LokiFsAdapter () extends _LokiFsAdapter
+  
+  @js.native
+  class LokiLocalStorageAdapter () extends _LokiLocalStorageAdapter
+  
+  @js.native
+  class LokiMemoryAdapter () extends _LokiMemoryAdapter
+  
+  @js.native
+  class LokiPartitioningAdapter () extends _LokiPartitioningAdapter
+  
+  var LokiOps: typings.lokijs.LokiOps = js.native
+  def aeq(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  def gt(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
+  def lt(prop1: js.Any, prop2: js.Any): Boolean = js.native
+  def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = js.native
+  @js.native
+  object persistenceAdapters extends js.Object {
+    var fs: _LokiFsAdapter = js.native
+    var localStorage: _LokiLocalStorageAdapter = js.native
+  }
+  
+}
+

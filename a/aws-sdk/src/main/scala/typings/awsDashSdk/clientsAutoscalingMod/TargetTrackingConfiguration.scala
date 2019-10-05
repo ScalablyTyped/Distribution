@@ -28,7 +28,7 @@ object TargetTrackingConfiguration {
   def apply(
     TargetValue: MetricScale,
     CustomizedMetricSpecification: CustomizedMetricSpecification = null,
-    DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined,
+    DisableScaleIn: js.UndefOr[Boolean] = js.undefined,
     PredefinedMetricSpecification: PredefinedMetricSpecification = null
   ): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue)

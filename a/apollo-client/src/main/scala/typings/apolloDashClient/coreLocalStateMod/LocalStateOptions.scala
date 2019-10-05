@@ -19,12 +19,12 @@ object LocalStateOptions {
   def apply[TCacheShape](
     cache: ApolloCache[TCacheShape],
     client: default[TCacheShape] = null,
-    fragmentMatcher: FragmentMatcher = null,
+    fragmentMatcher: (/* rootValue */ js.Any, /* typeCondition */ String, /* context */ js.Any) => Boolean = null,
     resolvers: Resolvers | js.Array[Resolvers] = null
   ): LocalStateOptions[TCacheShape] = {
     val __obj = js.Dynamic.literal(cache = cache)
     if (client != null) __obj.updateDynamic("client")(client)
-    if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(fragmentMatcher)
+    if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(js.Any.fromFunction3(fragmentMatcher))
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalStateOptions[TCacheShape]]
   }

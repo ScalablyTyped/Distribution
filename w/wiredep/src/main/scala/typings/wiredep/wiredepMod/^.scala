@@ -1,6 +1,5 @@
 package typings.wiredep.wiredepMod
 
-import typings.node.NodeJSNs.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +22,5 @@ object ^ extends js.Object {
     *   }
     */
   def apply(config: WiredepParams): PathFiles = js.native
-  def stream(config: WiredepParams): ReadWriteStream = js.native
 }
 

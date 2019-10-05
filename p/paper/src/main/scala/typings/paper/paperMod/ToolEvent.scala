@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("paper", "ToolEvent")
 @js.native
 class ToolEvent ()
-  extends typings.paper.paperNs.ToolEvent
+  extends typings.paper.paper.ToolEvent
 

@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(words: String*): StringDictionary[String] = js.native
   def apply(words: Array[String]): StringDictionary[String] = js.native
-  def monkeyPatch(): Unit = js.native
 }
 

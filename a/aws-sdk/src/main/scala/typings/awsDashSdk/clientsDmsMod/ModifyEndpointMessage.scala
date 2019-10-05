@@ -105,7 +105,7 @@ object ModifyEndpointMessage {
     KinesisSettings: KinesisSettings = null,
     MongoDbSettings: MongoDbSettings = null,
     Password: SecretString = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: Int | Double = null,
     RedshiftSettings: RedshiftSettings = null,
     S3Settings: S3Settings = null,
     ServerName: String = null,
@@ -127,7 +127,7 @@ object ModifyEndpointMessage {
     if (KinesisSettings != null) __obj.updateDynamic("KinesisSettings")(KinesisSettings)
     if (MongoDbSettings != null) __obj.updateDynamic("MongoDbSettings")(MongoDbSettings)
     if (Password != null) __obj.updateDynamic("Password")(Password)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (RedshiftSettings != null) __obj.updateDynamic("RedshiftSettings")(RedshiftSettings)
     if (S3Settings != null) __obj.updateDynamic("S3Settings")(S3Settings)
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName)

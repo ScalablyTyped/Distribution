@@ -1,9 +1,9 @@
 package typings.atPulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesOutputMod.eksNs.ClusterCertificateAuthority
-import typings.atPulumiAws.typesOutputMod.eksNs.ClusterIdentity
-import typings.atPulumiAws.typesOutputMod.eksNs.ClusterVpcConfig
+import typings.atPulumiAws.typesOutputMod.eks.ClusterCertificateAuthority
+import typings.atPulumiAws.typesOutputMod.eks.ClusterIdentity
+import typings.atPulumiAws.typesOutputMod.eks.ClusterVpcConfig
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output

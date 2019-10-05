@@ -17,10 +17,10 @@ trait ComplianceContributorCount extends js.Object {
 
 object ComplianceContributorCount {
   @scala.inline
-  def apply(CapExceeded: js.UndefOr[Boolean] = js.undefined, CappedCount: js.UndefOr[Integer] = js.undefined): ComplianceContributorCount = {
+  def apply(CapExceeded: js.UndefOr[scala.Boolean] = js.undefined, CappedCount: Int | Double = null): ComplianceContributorCount = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(CapExceeded)) __obj.updateDynamic("CapExceeded")(CapExceeded)
-    if (!js.isUndefined(CappedCount)) __obj.updateDynamic("CappedCount")(CappedCount)
+    if (CappedCount != null) __obj.updateDynamic("CappedCount")(CappedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceContributorCount]
   }
 }

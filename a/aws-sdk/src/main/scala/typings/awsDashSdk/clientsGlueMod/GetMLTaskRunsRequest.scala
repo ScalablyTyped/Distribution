@@ -32,13 +32,13 @@ object GetMLTaskRunsRequest {
   def apply(
     TransformId: HashString,
     Filter: TaskRunFilterCriteria = null,
-    MaxResults: js.UndefOr[PageSize] = js.undefined,
+    MaxResults: Int | Double = null,
     NextToken: PaginationToken = null,
     Sort: TaskRunSortCriteria = null
   ): GetMLTaskRunsRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId)
     if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (Sort != null) __obj.updateDynamic("Sort")(Sort)
     __obj.asInstanceOf[GetMLTaskRunsRequest]

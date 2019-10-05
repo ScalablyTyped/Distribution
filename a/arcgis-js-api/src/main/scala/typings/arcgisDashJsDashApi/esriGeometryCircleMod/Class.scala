@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriGeometryCircleMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.Circle
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.CircleProperties
+import typings.arcgisDashJsDashApi.__esri.Circle
+import typings.arcgisDashJsDashApi.__esri.CircleProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

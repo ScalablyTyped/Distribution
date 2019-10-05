@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriTasksSupportTrimExtendParametersMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrimExtendParameters
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.TrimExtendParametersProperties
+import typings.arcgisDashJsDashApi.__esri.TrimExtendParameters
+import typings.arcgisDashJsDashApi.__esri.TrimExtendParametersProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

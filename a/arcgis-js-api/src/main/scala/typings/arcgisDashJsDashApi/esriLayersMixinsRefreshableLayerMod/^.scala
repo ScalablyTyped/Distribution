@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriLayersMixinsRefreshableLayerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.RefreshableLayerConstructor
+import typings.arcgisDashJsDashApi.__esri.RefreshableLayerConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,5 +19,6 @@ object Clone extends js.Object {
   def clone(url: String, localPath: String): js.Promise[typings.nodegit.repositoryMod.Repository] = js.native
   def clone(url: String, localPath: String, options: typings.nodegit.cloneDashOptionsMod.CloneOptions): js.Promise[typings.nodegit.repositoryMod.Repository] = js.native
   def initOptions(opts: typings.nodegit.cloneDashOptionsMod.CloneOptions, version: Double): Double = js.native
+  type LOCAL = typings.nodegit.cloneMod.Clone.LOCAL
 }
 

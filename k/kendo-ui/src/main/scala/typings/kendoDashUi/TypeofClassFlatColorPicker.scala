@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.FlatColorPicker
-import typings.kendoDashUi.kendoNs.uiNs.FlatColorPickerOptions
+import typings.kendoDashUi.kendo.ui.FlatColorPicker
+import typings.kendoDashUi.kendo.ui.FlatColorPickerOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -27,7 +27,7 @@ object UpdateSecurityGroupRuleDescriptionsIngressRequest {
   @scala.inline
   def apply(
     IpPermissions: IpPermissionList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     GroupId: String = null,
     GroupName: String = null
   ): UpdateSecurityGroupRuleDescriptionsIngressRequest = {

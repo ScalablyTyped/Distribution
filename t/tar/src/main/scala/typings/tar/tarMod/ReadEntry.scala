@@ -1,12 +1,13 @@
 package typings.tar.tarMod
 
+import typings.minipass.minipassMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait ReadEntry
-  extends typings.minipass.minipassMod.^
+  extends ^
      with HeaderProperties {
   /** The number of 512-byte blocks remaining to be written into the stream. */
   var blockRemain: Double = js.native

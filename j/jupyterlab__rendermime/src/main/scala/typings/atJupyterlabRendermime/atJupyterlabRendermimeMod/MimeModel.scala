@@ -1,6 +1,6 @@
 package typings.atJupyterlabRendermime.atJupyterlabRendermimeMod
 
-import typings.atJupyterlabRendermime.libMimemodelMod.MimeModelNs.IOptions
+import typings.atJupyterlabRendermime.libMimemodelMod.MimeModel.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

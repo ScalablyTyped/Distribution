@@ -105,7 +105,7 @@ object CreateCacheClusterMessage {
     CacheClusterId: String,
     AZMode: AZMode = null,
     AuthToken: String = null,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
     CacheNodeType: String = null,
     CacheParameterGroupName: String = null,
     CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
@@ -113,8 +113,8 @@ object CreateCacheClusterMessage {
     Engine: String = null,
     EngineVersion: String = null,
     NotificationTopicArn: String = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    NumCacheNodes: Int | scala.Double = null,
+    Port: Int | scala.Double = null,
     PreferredAvailabilityZone: String = null,
     PreferredAvailabilityZones: PreferredAvailabilityZoneList = null,
     PreferredMaintenanceWindow: String = null,
@@ -122,7 +122,7 @@ object CreateCacheClusterMessage {
     SecurityGroupIds: SecurityGroupIdsList = null,
     SnapshotArns: SnapshotArnsList = null,
     SnapshotName: String = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    SnapshotRetentionLimit: Int | scala.Double = null,
     SnapshotWindow: String = null,
     Tags: TagList = null
   ): CreateCacheClusterMessage = {
@@ -137,8 +137,8 @@ object CreateCacheClusterMessage {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn)
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes)
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone)
     if (PreferredAvailabilityZones != null) __obj.updateDynamic("PreferredAvailabilityZones")(PreferredAvailabilityZones)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)
@@ -146,7 +146,7 @@ object CreateCacheClusterMessage {
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
     if (SnapshotArns != null) __obj.updateDynamic("SnapshotArns")(SnapshotArns)
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName)
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit)
+    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateCacheClusterMessage]

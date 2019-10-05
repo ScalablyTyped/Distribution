@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "graphql-deduplicator"
-version := "2.0-dt-20180425Z-89aef3"
-scalaVersion := "2.12.9"
+version := "2.0-dt-20180425Z-b69523"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

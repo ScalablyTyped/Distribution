@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotBlogger
 
-import typings.gapiDotClientDotBlogger.gapiNs.clientNs.bloggerNs.Comment
+import typings.gapiDotClientDotBlogger.gapi.client.blogger.Comment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

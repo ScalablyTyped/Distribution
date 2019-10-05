@@ -22,13 +22,13 @@ trait RuntimeConfiguration extends js.Object {
 object RuntimeConfiguration {
   @scala.inline
   def apply(
-    GameSessionActivationTimeoutSeconds: js.UndefOr[GameSessionActivationTimeoutSeconds] = js.undefined,
-    MaxConcurrentGameSessionActivations: js.UndefOr[MaxConcurrentGameSessionActivations] = js.undefined,
+    GameSessionActivationTimeoutSeconds: Int | scala.Double = null,
+    MaxConcurrentGameSessionActivations: Int | scala.Double = null,
     ServerProcesses: ServerProcessList = null
   ): RuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(GameSessionActivationTimeoutSeconds)) __obj.updateDynamic("GameSessionActivationTimeoutSeconds")(GameSessionActivationTimeoutSeconds)
-    if (!js.isUndefined(MaxConcurrentGameSessionActivations)) __obj.updateDynamic("MaxConcurrentGameSessionActivations")(MaxConcurrentGameSessionActivations)
+    if (GameSessionActivationTimeoutSeconds != null) __obj.updateDynamic("GameSessionActivationTimeoutSeconds")(GameSessionActivationTimeoutSeconds.asInstanceOf[js.Any])
+    if (MaxConcurrentGameSessionActivations != null) __obj.updateDynamic("MaxConcurrentGameSessionActivations")(MaxConcurrentGameSessionActivations.asInstanceOf[js.Any])
     if (ServerProcesses != null) __obj.updateDynamic("ServerProcesses")(ServerProcesses)
     __obj.asInstanceOf[RuntimeConfiguration]
   }

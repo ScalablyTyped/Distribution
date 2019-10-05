@@ -1,7 +1,7 @@
 package typings.atPulumiAws.ebsGetSnapshotMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiAws.typesInputMod.ebsNs.GetSnapshotFilter
+import typings.atPulumiAws.typesInputMod.ebs.GetSnapshotFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "Relation")
 @js.native
-class Relation[S /* <: typings.parse.ParseNs.Object */, T /* <: typings.parse.ParseNs.Object */] ()
+class Relation[S /* <: typings.parse.Parse.Object */, T /* <: typings.parse.Parse.Object */] ()
   extends typings.parse.nodeMod.Relation[S, T] {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()

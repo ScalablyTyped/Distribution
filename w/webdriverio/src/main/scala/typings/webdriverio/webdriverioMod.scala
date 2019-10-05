@@ -1,7 +1,7 @@
 package typings.webdriverio
 
-import typings.webdriver.WebDriverNs.AttachSessionOptions
-import typings.webdriverio.WebdriverIOAsyncNs.BrowserObject
+import typings.webdriver.WebDriver.AttachSessionOptions
+import typings.webdriverio.WebdriverIOAsync.BrowserObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -52,7 +52,7 @@ object CreateCachediSCSIVolumeInput {
     NetworkInterfaceId: NetworkInterfaceId,
     TargetName: TargetName,
     VolumeSizeInBytes: long,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     SnapshotId: SnapshotId = null,
     SourceVolumeARN: VolumeARN = null,

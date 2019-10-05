@@ -7,7 +7,7 @@ import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
-import typings.reactDashNative.reactDashNativeMod.AnimatedNs.Value
+import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.FlatListProps
 import typings.reactDashNative.reactDashNativeMod.ImageErrorEventData
 import typings.reactDashNative.reactDashNativeMod.ImageLoadEventData

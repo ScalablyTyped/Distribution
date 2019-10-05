@@ -1,7 +1,7 @@
 package typings.sjcl.sjclMod
 
-import typings.sjcl.sjclMod.TypeHelpersNs.BigNumberBinaryOperator
-import typings.sjcl.sjclMod.TypeHelpersNs.BigNumberTrinaryOperator
+import typings.sjcl.sjclMod.TypeHelpers.BigNumberBinaryOperator
+import typings.sjcl.sjclMod.TypeHelpers.BigNumberTrinaryOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

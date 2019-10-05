@@ -66,7 +66,7 @@ object CreateApiResponse {
     ApiKeySelectionExpression: SelectionExpression = null,
     CreatedDate: __timestampIso8601 = null,
     Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    DisableSchemaValidation: js.UndefOr[Boolean] = js.undefined,
     Name: StringWithLengthBetween1And128 = null,
     ProtocolType: ProtocolType = null,
     RouteSelectionExpression: SelectionExpression = null,

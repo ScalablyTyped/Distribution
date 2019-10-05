@@ -57,3 +57,43 @@ object FunctionExpression {
   }
 }
 
+@JSImport("@babel/types", "functionExpression")
+@js.native
+object functionExpression extends js.Object {
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement
+  ): FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean
+  ): FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean
+  ): FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop
+  ): FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[Identifier | Null],
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    body: BlockStatement,
+    generator: Boolean,
+    async: Boolean,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop
+  ): FunctionExpression = js.native
+}
+

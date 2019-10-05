@@ -41,7 +41,7 @@ object DefaultPushNotificationMessage {
     Action: Action = null,
     Body: __string = null,
     Data: MapOf__string = null,
-    SilentPush: js.UndefOr[__boolean] = js.undefined,
+    SilentPush: js.UndefOr[Boolean] = js.undefined,
     Substitutions: MapOfListOf__string = null,
     Title: __string = null,
     Url: __string = null

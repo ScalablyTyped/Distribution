@@ -1,12 +1,12 @@
 package typings.swag
 
-import typings.handlebars.hbsNs.ASTNs.helpers
+import typings.handlebars.hbs.AST.helpers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofAST extends js.Object {
-  val helpers: typings.handlebars.hbsNs.ASTNs.helpers
+  val helpers: typings.handlebars.hbs.AST.helpers
 }
 
 object TypeofAST {

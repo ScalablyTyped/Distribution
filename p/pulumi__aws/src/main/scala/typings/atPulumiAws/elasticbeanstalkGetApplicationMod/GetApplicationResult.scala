@@ -1,6 +1,6 @@
 package typings.atPulumiAws.elasticbeanstalkGetApplicationMod
 
-import typings.atPulumiAws.typesOutputMod.elasticbeanstalkNs.GetApplicationAppversionLifecycle
+import typings.atPulumiAws.typesOutputMod.elasticbeanstalk.GetApplicationAppversionLifecycle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

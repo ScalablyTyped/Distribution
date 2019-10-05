@@ -1,12 +1,12 @@
 package typings.raygun.raygunMod
 
-import typings.raygun.raygunMod.raygunNs.GroupingKey
-import typings.raygun.raygunMod.raygunNs.KeyValueObject
-import typings.raygun.raygunMod.raygunNs.OnBeforeSend
-import typings.raygun.raygunMod.raygunNs.RaygunOptions
-import typings.raygun.raygunMod.raygunNs.RaygunPayload
-import typings.raygun.raygunMod.raygunNs.RaygunRequest
-import typings.raygun.raygunMod.raygunNs.RaygunUser
+import typings.raygun.raygunMod.raygun.GroupingKey
+import typings.raygun.raygunMod.raygun.KeyValueObject
+import typings.raygun.raygunMod.raygun.OnBeforeSend
+import typings.raygun.raygunMod.raygun.RaygunOptions
+import typings.raygun.raygunMod.raygun.RaygunPayload
+import typings.raygun.raygunMod.raygun.RaygunRequest
+import typings.raygun.raygunMod.raygun.RaygunUser
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

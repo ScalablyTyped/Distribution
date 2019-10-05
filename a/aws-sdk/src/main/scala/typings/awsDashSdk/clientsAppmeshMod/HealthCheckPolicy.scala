@@ -49,11 +49,11 @@ object HealthCheckPolicy {
     timeoutMillis: HealthCheckTimeoutMillis,
     unhealthyThreshold: HealthCheckThreshold,
     path: String = null,
-    port: js.UndefOr[PortNumber] = js.undefined
+    port: Int | Double = null
   ): HealthCheckPolicy = {
     val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold, intervalMillis = intervalMillis, protocol = protocol.asInstanceOf[js.Any], timeoutMillis = timeoutMillis, unhealthyThreshold = unhealthyThreshold)
     if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckPolicy]
   }
 }

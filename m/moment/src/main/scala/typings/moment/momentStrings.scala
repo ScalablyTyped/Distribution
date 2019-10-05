@@ -3,11 +3,11 @@ package typings.moment
 import typings.moment.momentMod.LongDateFormatKey
 import typings.moment.momentMod.RelativeTimeKey
 import typings.moment.momentMod._CalendarKey
-import typings.moment.momentMod.unitOfTimeNs.All
-import typings.moment.momentMod.unitOfTimeNs.Base
-import typings.moment.momentMod.unitOfTimeNs._date
-import typings.moment.momentMod.unitOfTimeNs._isoWeek
-import typings.moment.momentMod.unitOfTimeNs._quarter
+import typings.moment.momentMod.unitOfTime.All
+import typings.moment.momentMod.unitOfTime.Base
+import typings.moment.momentMod.unitOfTime._date
+import typings.moment.momentMod.unitOfTime._isoWeek
+import typings.moment.momentMod.unitOfTime._quarter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

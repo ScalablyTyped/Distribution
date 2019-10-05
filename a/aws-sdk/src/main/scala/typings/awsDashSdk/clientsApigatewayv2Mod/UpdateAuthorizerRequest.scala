@@ -85,7 +85,7 @@ object UpdateAuthorizerRequest {
     ApiId: __string,
     AuthorizerId: __string,
     AuthorizerCredentialsArn: Arn = null,
-    AuthorizerResultTtlInSeconds: js.UndefOr[IntegerWithLengthBetween0And3600] = js.undefined,
+    AuthorizerResultTtlInSeconds: Int | Double = null,
     AuthorizerType: AuthorizerType = null,
     AuthorizerUri: UriWithLengthBetween1And2048 = null,
     IdentitySource: IdentitySourceList = null,
@@ -95,7 +95,7 @@ object UpdateAuthorizerRequest {
   ): UpdateAuthorizerRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId, AuthorizerId = AuthorizerId)
     if (AuthorizerCredentialsArn != null) __obj.updateDynamic("AuthorizerCredentialsArn")(AuthorizerCredentialsArn)
-    if (!js.isUndefined(AuthorizerResultTtlInSeconds)) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds)
+    if (AuthorizerResultTtlInSeconds != null) __obj.updateDynamic("AuthorizerResultTtlInSeconds")(AuthorizerResultTtlInSeconds.asInstanceOf[js.Any])
     if (AuthorizerType != null) __obj.updateDynamic("AuthorizerType")(AuthorizerType.asInstanceOf[js.Any])
     if (AuthorizerUri != null) __obj.updateDynamic("AuthorizerUri")(AuthorizerUri)
     if (IdentitySource != null) __obj.updateDynamic("IdentitySource")(IdentitySource)

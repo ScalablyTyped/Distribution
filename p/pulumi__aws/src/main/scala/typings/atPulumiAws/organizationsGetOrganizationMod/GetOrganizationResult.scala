@@ -1,8 +1,8 @@
 package typings.atPulumiAws.organizationsGetOrganizationMod
 
-import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationAccount
-import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationNonMasterAccount
-import typings.atPulumiAws.typesOutputMod.organizationsNs.GetOrganizationRoot
+import typings.atPulumiAws.typesOutputMod.organizations.GetOrganizationAccount
+import typings.atPulumiAws.typesOutputMod.organizations.GetOrganizationNonMasterAccount
+import typings.atPulumiAws.typesOutputMod.organizations.GetOrganizationRoot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

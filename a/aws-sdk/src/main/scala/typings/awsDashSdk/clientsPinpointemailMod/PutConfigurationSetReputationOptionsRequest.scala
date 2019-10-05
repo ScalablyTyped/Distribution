@@ -19,7 +19,7 @@ object PutConfigurationSetReputationOptionsRequest {
   @scala.inline
   def apply(
     ConfigurationSetName: ConfigurationSetName,
-    ReputationMetricsEnabled: js.UndefOr[Enabled] = js.undefined
+    ReputationMetricsEnabled: js.UndefOr[Boolean] = js.undefined
   ): PutConfigurationSetReputationOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName)
     if (!js.isUndefined(ReputationMetricsEnabled)) __obj.updateDynamic("ReputationMetricsEnabled")(ReputationMetricsEnabled)

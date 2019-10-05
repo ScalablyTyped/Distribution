@@ -1,6 +1,6 @@
 package typings.promDashClient.promDashClientMod
 
-import typings.promDashClient.promDashClientMod.CounterNs.Internal
+import typings.promDashClient.promDashClientMod.Counter.Internal
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prom-client", "Counter")
 @js.native
-class Counter protected () extends Metric {
+class Counter protected () extends _Metric {
   /**
   	 * @param configuration Configuration when creating a Counter metric. Name and Help is required.
   	 */
@@ -55,5 +55,23 @@ class Counter protected () extends Metric {
   	 * Reset counter values
   	 */
   def reset(): Unit = js.native
+}
+
+@JSImport("prom-client", "Counter")
+@js.native
+object Counter extends js.Object {
+  @js.native
+  trait Internal extends js.Object {
+    /**
+    		 * Increment with value
+    		 * @param value The value to increment with
+    		 * @param timestamp Timestamp to associate the time series with
+    		 */
+    def inc(): Unit = js.native
+    def inc(value: Double): Unit = js.native
+    def inc(value: Double, timestamp: Double): Unit = js.native
+    def inc(value: Double, timestamp: Date): Unit = js.native
+  }
+  
 }
 

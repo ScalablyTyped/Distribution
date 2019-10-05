@@ -1,6 +1,6 @@
 package typings.electron.electronMod
 
-import typings.electron.ElectronNs.NotificationConstructorOptions
+import typings.electron.Electron.NotificationConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron", "Notification")
 @js.native
 class Notification protected ()
-  extends typings.electron.ElectronNs.Notification {
+  extends typings.electron.Electron.Notification {
   def this(options: NotificationConstructorOptions) = this()
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "Rectangle")
 @js.native
 class Rectangle ()
-  extends typings.pixiDotJs.PIXINs.Rectangle {
+  extends typings.pixiDotJs.PIXI.Rectangle {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, width: Double) = this()
@@ -22,6 +22,6 @@ class Rectangle ()
 @JSImport("pixi.js", "Rectangle")
 @js.native
 object Rectangle extends js.Object {
-  var EMPTY: typings.pixiDotJs.PIXINs.Rectangle = js.native
+  var EMPTY: typings.pixiDotJs.PIXI.Rectangle = js.native
 }
 

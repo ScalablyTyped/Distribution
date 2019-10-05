@@ -31,7 +31,7 @@ object Tag {
   @scala.inline
   def apply(
     Key: TagKey,
-    PropagateAtLaunch: js.UndefOr[PropagateAtLaunch] = js.undefined,
+    PropagateAtLaunch: js.UndefOr[Boolean] = js.undefined,
     ResourceId: XmlString = null,
     ResourceType: XmlString = null,
     Value: TagValue = null

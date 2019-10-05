@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("playcanvas", "StencilParameters")
 @js.native
 class StencilParameters protected ()
-  extends typings.playcanvas.pcNs.StencilParameters {
+  extends typings.playcanvas.pc.StencilParameters {
   def this(options: js.Any) = this()
 }
 

@@ -1,6 +1,7 @@
 package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,9 +72,9 @@ object IgGridResizing {
   	 */
   /* optionName */ StringDictionary[js.Any] = null,
     allowDoubleClickToResize: js.UndefOr[Boolean] = js.undefined,
-    columnResized: ColumnResizedEvent = null,
-    columnResizing: ColumnResizingEvent = null,
-    columnResizingRefused: ColumnResizingRefusedEvent = null,
+    columnResized: (/* event */ Event, /* ui */ ColumnResizedEventUIParam) => Unit = null,
+    columnResizing: (/* event */ Event, /* ui */ ColumnResizingEventUIParam) => Unit = null,
+    columnResizingRefused: (/* event */ Event, /* ui */ ColumnResizingRefusedEventUIParam) => Unit = null,
     columnSettings: js.Array[IgGridResizingColumnSetting] = null,
     deferredResizing: js.UndefOr[Boolean] = js.undefined,
     handleThreshold: Int | Double = null,
@@ -85,9 +86,9 @@ object IgGridResizing {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize)
-    if (columnResized != null) __obj.updateDynamic("columnResized")(columnResized)
-    if (columnResizing != null) __obj.updateDynamic("columnResizing")(columnResizing)
-    if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(columnResizingRefused)
+    if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction2(columnResized))
+    if (columnResizing != null) __obj.updateDynamic("columnResizing")(js.Any.fromFunction2(columnResizing))
+    if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(js.Any.fromFunction2(columnResizingRefused))
     if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
     if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing)
     if (handleThreshold != null) __obj.updateDynamic("handleThreshold")(handleThreshold.asInstanceOf[js.Any])

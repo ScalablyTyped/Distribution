@@ -24,7 +24,7 @@ object PurchaseScheduledInstancesRequest {
   def apply(
     PurchaseRequests: PurchaseRequestSet,
     ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): PurchaseScheduledInstancesRequest = {
     val __obj = js.Dynamic.literal(PurchaseRequests = PurchaseRequests)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)

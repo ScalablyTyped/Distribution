@@ -2,6 +2,7 @@ package typings.igniteDashUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -299,18 +300,18 @@ object IgValidator {
     date: Boolean | js.Object = null,
     email: Boolean | js.Object = null,
     equalTo: String | js.Object = null,
-    error: ErrorEvent = null,
-    errorHidden: ErrorHiddenEvent = null,
-    errorHiding: ErrorHidingEvent = null,
+    error: (/* event */ Event, /* ui */ ErrorEventUIParam) => Unit = null,
+    errorHidden: (/* event */ Event, /* ui */ ErrorHiddenEventUIParam) => Unit = null,
+    errorHiding: (/* event */ Event, /* ui */ ErrorHidingEventUIParam) => Unit = null,
     errorMessage: String = null,
-    errorShowing: ErrorShowingEvent = null,
-    errorShown: ErrorShownEvent = null,
+    errorShowing: (/* event */ Event, /* ui */ ErrorShowingEventUIParam) => Unit = null,
+    errorShown: (/* event */ Event, /* ui */ ErrorShownEventUIParam) => Unit = null,
     executeAllRules: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[IgValidatorField] = null,
-    formError: FormErrorEvent = null,
-    formSuccess: FormSuccessEvent = null,
-    formValidated: FormValidatedEvent = null,
-    formValidating: FormValidatingEvent = null,
+    formError: (/* event */ Event, /* ui */ FormErrorEventUIParam) => Unit = null,
+    formSuccess: (/* event */ Event, /* ui */ FormSuccessEventUIParam) => Unit = null,
+    formValidated: (/* event */ Event, /* ui */ FormValidatedEventUIParam) => Unit = null,
+    formValidating: (/* event */ Event, /* ui */ FormValidatingEventUIParam) => Unit = null,
     language: String = null,
     lengthRange: js.Array[_] | js.Object = null,
     locale: js.Any = null,
@@ -325,15 +326,15 @@ object IgValidator {
     regional: String | js.Object = null,
     required: Boolean | js.Object = null,
     requiredIndication: js.UndefOr[Boolean] = js.undefined,
-    success: SuccessEvent = null,
-    successHidden: SuccessHiddenEvent = null,
-    successHiding: SuccessHidingEvent = null,
+    success: (/* event */ Event, /* ui */ SuccessEventUIParam) => Unit = null,
+    successHidden: (/* event */ Event, /* ui */ SuccessHiddenEventUIParam) => Unit = null,
+    successHiding: (/* event */ Event, /* ui */ SuccessHidingEventUIParam) => Unit = null,
     successMessage: String = null,
-    successShowing: SuccessShowingEvent = null,
-    successShown: SuccessShownEvent = null,
+    successShowing: (/* event */ Event, /* ui */ SuccessShowingEventUIParam) => Unit = null,
+    successShown: (/* event */ Event, /* ui */ SuccessShownEventUIParam) => Unit = null,
     threshold: Int | Double = null,
-    validated: ValidatedEvent = null,
-    validating: ValidatingEvent = null,
+    validated: (/* event */ Event, /* ui */ ValidatedEventUIParam) => Unit = null,
+    validating: (/* event */ Event, /* ui */ ValidatingEventUIParam) => Unit = null,
     valueRange: js.Array[_] | js.Object = null
   ): IgValidator = {
     val __obj = js.Dynamic.literal()
@@ -343,18 +344,18 @@ object IgValidator {
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (equalTo != null) __obj.updateDynamic("equalTo")(equalTo.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errorHidden != null) __obj.updateDynamic("errorHidden")(errorHidden)
-    if (errorHiding != null) __obj.updateDynamic("errorHiding")(errorHiding)
+    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
+    if (errorHidden != null) __obj.updateDynamic("errorHidden")(js.Any.fromFunction2(errorHidden))
+    if (errorHiding != null) __obj.updateDynamic("errorHiding")(js.Any.fromFunction2(errorHiding))
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (errorShowing != null) __obj.updateDynamic("errorShowing")(errorShowing)
-    if (errorShown != null) __obj.updateDynamic("errorShown")(errorShown)
+    if (errorShowing != null) __obj.updateDynamic("errorShowing")(js.Any.fromFunction2(errorShowing))
+    if (errorShown != null) __obj.updateDynamic("errorShown")(js.Any.fromFunction2(errorShown))
     if (!js.isUndefined(executeAllRules)) __obj.updateDynamic("executeAllRules")(executeAllRules)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (formError != null) __obj.updateDynamic("formError")(formError)
-    if (formSuccess != null) __obj.updateDynamic("formSuccess")(formSuccess)
-    if (formValidated != null) __obj.updateDynamic("formValidated")(formValidated)
-    if (formValidating != null) __obj.updateDynamic("formValidating")(formValidating)
+    if (formError != null) __obj.updateDynamic("formError")(js.Any.fromFunction2(formError))
+    if (formSuccess != null) __obj.updateDynamic("formSuccess")(js.Any.fromFunction2(formSuccess))
+    if (formValidated != null) __obj.updateDynamic("formValidated")(js.Any.fromFunction2(formValidated))
+    if (formValidating != null) __obj.updateDynamic("formValidating")(js.Any.fromFunction2(formValidating))
     if (language != null) __obj.updateDynamic("language")(language)
     if (lengthRange != null) __obj.updateDynamic("lengthRange")(lengthRange.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
@@ -369,15 +370,15 @@ object IgValidator {
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (!js.isUndefined(requiredIndication)) __obj.updateDynamic("requiredIndication")(requiredIndication)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (successHidden != null) __obj.updateDynamic("successHidden")(successHidden)
-    if (successHiding != null) __obj.updateDynamic("successHiding")(successHiding)
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction2(success))
+    if (successHidden != null) __obj.updateDynamic("successHidden")(js.Any.fromFunction2(successHidden))
+    if (successHiding != null) __obj.updateDynamic("successHiding")(js.Any.fromFunction2(successHiding))
     if (successMessage != null) __obj.updateDynamic("successMessage")(successMessage)
-    if (successShowing != null) __obj.updateDynamic("successShowing")(successShowing)
-    if (successShown != null) __obj.updateDynamic("successShown")(successShown)
+    if (successShowing != null) __obj.updateDynamic("successShowing")(js.Any.fromFunction2(successShowing))
+    if (successShown != null) __obj.updateDynamic("successShown")(js.Any.fromFunction2(successShown))
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (validated != null) __obj.updateDynamic("validated")(validated)
-    if (validating != null) __obj.updateDynamic("validating")(validating)
+    if (validated != null) __obj.updateDynamic("validated")(js.Any.fromFunction2(validated))
+    if (validating != null) __obj.updateDynamic("validating")(js.Any.fromFunction2(validating))
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgValidator]
   }

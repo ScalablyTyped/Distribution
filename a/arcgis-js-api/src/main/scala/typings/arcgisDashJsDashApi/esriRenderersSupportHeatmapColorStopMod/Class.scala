@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriRenderersSupportHeatmapColorStopMod
 
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapColorStop
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.HeatmapColorStopProperties
+import typings.arcgisDashJsDashApi.__esri.HeatmapColorStop
+import typings.arcgisDashJsDashApi.__esri.HeatmapColorStopProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

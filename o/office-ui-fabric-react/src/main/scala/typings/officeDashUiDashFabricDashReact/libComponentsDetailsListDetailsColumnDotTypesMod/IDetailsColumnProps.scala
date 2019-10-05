@@ -11,6 +11,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDo
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod.IDragDropHelper
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
+import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
@@ -107,7 +108,7 @@ object IDetailsColumnProps {
     key: Key = null,
     onColumnClick: (/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn) => Unit = null,
     onColumnContextMenu: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onRenderColumnHeaderTooltip: IRenderFunction[ITooltipHostProps] = null,
+    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[ITooltipHostProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipHostProps], Element | Null]]) => Element | Null = null,
     parentId: String = null,
     ref: LegacyRef[DetailsColumnBase] = null,
     setDraggedItemIndex: /* itemIndex */ Double => Unit = null,
@@ -125,7 +126,7 @@ object IDetailsColumnProps {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onColumnClick != null) __obj.updateDynamic("onColumnClick")(js.Any.fromFunction2(onColumnClick))
     if (onColumnContextMenu != null) __obj.updateDynamic("onColumnContextMenu")(js.Any.fromFunction2(onColumnContextMenu))
-    if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(onRenderColumnHeaderTooltip)
+    if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(js.Any.fromFunction2(onRenderColumnHeaderTooltip))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (setDraggedItemIndex != null) __obj.updateDynamic("setDraggedItemIndex")(js.Any.fromFunction1(setDraggedItemIndex))

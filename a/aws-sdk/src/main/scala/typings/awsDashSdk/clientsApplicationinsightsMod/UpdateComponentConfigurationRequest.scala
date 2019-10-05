@@ -33,7 +33,7 @@ object UpdateComponentConfigurationRequest {
     ComponentName: ComponentName,
     ResourceGroupName: ResourceGroupName,
     ComponentConfiguration: ComponentConfiguration = null,
-    Monitor: js.UndefOr[Monitor] = js.undefined,
+    Monitor: js.UndefOr[Boolean] = js.undefined,
     Tier: Tier = null
   ): UpdateComponentConfigurationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName, ResourceGroupName = ResourceGroupName)

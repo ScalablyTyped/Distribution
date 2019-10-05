@@ -1,6 +1,6 @@
 package typings.firebase
 
-import typings.firebase.firebaseMod.firestoreNs.DocumentSnapshot
+import typings.firebase.firebaseMod.firestore.DocumentSnapshot
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

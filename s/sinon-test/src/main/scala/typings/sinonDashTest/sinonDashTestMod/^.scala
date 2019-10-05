@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(sinon: SinonStatic): js.Any = js.native
   def apply(sinon: SinonStatic, config: Configuration): js.Any = js.native
-  def configureTest(sinon: SinonStatic): js.Any = js.native
-  def configureTest(sinon: SinonStatic, config: Configuration): js.Any = js.native
 }
 

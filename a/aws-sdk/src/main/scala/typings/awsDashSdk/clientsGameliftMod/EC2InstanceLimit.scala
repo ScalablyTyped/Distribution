@@ -22,14 +22,14 @@ trait EC2InstanceLimit extends js.Object {
 object EC2InstanceLimit {
   @scala.inline
   def apply(
-    CurrentInstances: js.UndefOr[WholeNumber] = js.undefined,
+    CurrentInstances: Int | scala.Double = null,
     EC2InstanceType: EC2InstanceType = null,
-    InstanceLimit: js.UndefOr[WholeNumber] = js.undefined
+    InstanceLimit: Int | scala.Double = null
   ): EC2InstanceLimit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentInstances)) __obj.updateDynamic("CurrentInstances")(CurrentInstances)
+    if (CurrentInstances != null) __obj.updateDynamic("CurrentInstances")(CurrentInstances.asInstanceOf[js.Any])
     if (EC2InstanceType != null) __obj.updateDynamic("EC2InstanceType")(EC2InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceLimit)) __obj.updateDynamic("InstanceLimit")(InstanceLimit)
+    if (InstanceLimit != null) __obj.updateDynamic("InstanceLimit")(InstanceLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2InstanceLimit]
   }
 }

@@ -26,14 +26,14 @@ trait UploadDocumentsResponse extends js.Object {
 object UploadDocumentsResponse {
   @scala.inline
   def apply(
-    adds: js.UndefOr[Adds] = js.undefined,
-    deletes: js.UndefOr[Deletes] = js.undefined,
+    adds: Int | scala.Double = null,
+    deletes: Int | scala.Double = null,
     status: String = null,
     warnings: DocumentServiceWarnings = null
   ): UploadDocumentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adds)) __obj.updateDynamic("adds")(adds)
-    if (!js.isUndefined(deletes)) __obj.updateDynamic("deletes")(deletes)
+    if (adds != null) __obj.updateDynamic("adds")(adds.asInstanceOf[js.Any])
+    if (deletes != null) __obj.updateDynamic("deletes")(deletes.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (warnings != null) __obj.updateDynamic("warnings")(warnings)
     __obj.asInstanceOf[UploadDocumentsResponse]

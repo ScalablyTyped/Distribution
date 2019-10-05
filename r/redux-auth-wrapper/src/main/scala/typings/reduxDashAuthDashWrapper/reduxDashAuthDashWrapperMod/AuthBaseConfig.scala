@@ -13,14 +13,14 @@ trait AuthBaseConfig[OwnProps, State] extends AuthConfig {
 object AuthBaseConfig {
   @scala.inline
   def apply[OwnProps, State](
-    authenticatedSelector: StateSelector[State, OwnProps, Boolean],
+    authenticatedSelector: (State, OwnProps) => Boolean,
     AuthenticatingComponent: ReactType[_] = null,
-    authenticatingSelector: StateSelector[State, OwnProps, Boolean] = null,
+    authenticatingSelector: (State, OwnProps) => Boolean = null,
     wrapperDisplayName: String = null
   ): AuthBaseConfig[OwnProps, State] = {
-    val __obj = js.Dynamic.literal(authenticatedSelector = authenticatedSelector)
+    val __obj = js.Dynamic.literal(authenticatedSelector = js.Any.fromFunction2(authenticatedSelector))
     if (AuthenticatingComponent != null) __obj.updateDynamic("AuthenticatingComponent")(AuthenticatingComponent.asInstanceOf[js.Any])
-    if (authenticatingSelector != null) __obj.updateDynamic("authenticatingSelector")(authenticatingSelector)
+    if (authenticatingSelector != null) __obj.updateDynamic("authenticatingSelector")(js.Any.fromFunction2(authenticatingSelector))
     if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName)
     __obj.asInstanceOf[AuthBaseConfig[OwnProps, State]]
   }

@@ -25,7 +25,12 @@ trait AttachVolumeRequest extends js.Object {
 
 object AttachVolumeRequest {
   @scala.inline
-  def apply(Device: String, InstanceId: String, VolumeId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AttachVolumeRequest = {
+  def apply(
+    Device: String,
+    InstanceId: String,
+    VolumeId: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): AttachVolumeRequest = {
     val __obj = js.Dynamic.literal(Device = Device, InstanceId = InstanceId, VolumeId = VolumeId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AttachVolumeRequest]

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("breeze", "EntityStateSymbol")
 @js.native
 class EntityStateSymbol ()
-  extends typings.breeze.breezeNs.EntityStateSymbol
+  extends typings.breeze.breeze.EntityStateSymbol
 

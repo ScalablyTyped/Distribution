@@ -1,6 +1,6 @@
 package typings.stripe
 
-import typings.stripe.stripeMod.customerTaxIdsNs.TaxIdType
+import typings.stripe.stripeMod.customerTaxIds.TaxIdType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

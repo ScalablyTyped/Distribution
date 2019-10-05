@@ -2,8 +2,8 @@ package typings.kendoDashUi
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.kendoDashUi.kendoNs.uiNs.Validator
-import typings.kendoDashUi.kendoNs.uiNs.ValidatorOptions
+import typings.kendoDashUi.kendo.ui.Validator
+import typings.kendoDashUi.kendo.ui.ValidatorOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

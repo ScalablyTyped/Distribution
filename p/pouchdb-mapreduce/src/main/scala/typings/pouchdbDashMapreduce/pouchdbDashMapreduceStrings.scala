@@ -1,6 +1,6 @@
 package typings.pouchdbDashMapreduce
 
-import typings.pouchdbDashMapreduce.PouchDBNs.BuiltInReducers
+import typings.pouchdbDashMapreduce.PouchDB.BuiltInReducers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

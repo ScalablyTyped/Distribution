@@ -1,5 +1,6 @@
 package typings.swDashToolbox.swDashToolboxMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,4 +22,8 @@ trait Router extends js.Object {
   def put(urlPattern: URLPattern, handler: Handler): Unit = js.native
   def put(urlPattern: URLPattern, handler: Handler, options: Options): Unit = js.native
 }
+
+@JSImport("sw-toolbox", "router")
+@js.native
+object router extends TopLevel[Router]
 

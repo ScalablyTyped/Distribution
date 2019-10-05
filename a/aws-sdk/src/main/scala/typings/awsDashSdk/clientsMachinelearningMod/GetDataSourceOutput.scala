@@ -81,13 +81,13 @@ trait GetDataSourceOutput extends js.Object {
 object GetDataSourceOutput {
   @scala.inline
   def apply(
-    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
+    ComputeStatistics: js.UndefOr[Boolean] = js.undefined,
+    ComputeTime: Int | Double = null,
     CreatedAt: EpochTime = null,
     CreatedByIamUser: AwsUserArn = null,
     DataLocationS3: S3Url = null,
     DataRearrangement: DataRearrangement = null,
-    DataSizeInBytes: js.UndefOr[LongType] = js.undefined,
+    DataSizeInBytes: Int | Double = null,
     DataSourceId: EntityId = null,
     DataSourceSchema: DataSchema = null,
     FinishedAt: EpochTime = null,
@@ -95,7 +95,7 @@ object GetDataSourceOutput {
     LogUri: PresignedS3Url = null,
     Message: Message = null,
     Name: EntityName = null,
-    NumberOfFiles: js.UndefOr[LongType] = js.undefined,
+    NumberOfFiles: Int | Double = null,
     RDSMetadata: RDSMetadata = null,
     RedshiftMetadata: RedshiftMetadata = null,
     RoleARN: RoleARN = null,
@@ -104,12 +104,12 @@ object GetDataSourceOutput {
   ): GetDataSourceOutput = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics)
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime)
+    if (ComputeTime != null) __obj.updateDynamic("ComputeTime")(ComputeTime.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
     if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser)
     if (DataLocationS3 != null) __obj.updateDynamic("DataLocationS3")(DataLocationS3)
     if (DataRearrangement != null) __obj.updateDynamic("DataRearrangement")(DataRearrangement)
-    if (!js.isUndefined(DataSizeInBytes)) __obj.updateDynamic("DataSizeInBytes")(DataSizeInBytes)
+    if (DataSizeInBytes != null) __obj.updateDynamic("DataSizeInBytes")(DataSizeInBytes.asInstanceOf[js.Any])
     if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId)
     if (DataSourceSchema != null) __obj.updateDynamic("DataSourceSchema")(DataSourceSchema)
     if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt)
@@ -117,7 +117,7 @@ object GetDataSourceOutput {
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri)
     if (Message != null) __obj.updateDynamic("Message")(Message)
     if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (!js.isUndefined(NumberOfFiles)) __obj.updateDynamic("NumberOfFiles")(NumberOfFiles)
+    if (NumberOfFiles != null) __obj.updateDynamic("NumberOfFiles")(NumberOfFiles.asInstanceOf[js.Any])
     if (RDSMetadata != null) __obj.updateDynamic("RDSMetadata")(RDSMetadata)
     if (RedshiftMetadata != null) __obj.updateDynamic("RedshiftMetadata")(RedshiftMetadata)
     if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN)

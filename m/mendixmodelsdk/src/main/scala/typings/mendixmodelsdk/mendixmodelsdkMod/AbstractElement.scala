@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod
 
-import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliasesNs.IContainer
+import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

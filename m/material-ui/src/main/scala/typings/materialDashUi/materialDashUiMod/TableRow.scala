@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("material-ui", "TableRow")
 @js.native
 class TableRow ()
-  extends typings.materialDashUi.underscoreUnderscoreMaterialUINs.TableNs.TableRow
+  extends typings.materialDashUi.__MaterialUI.Table.TableRow
 

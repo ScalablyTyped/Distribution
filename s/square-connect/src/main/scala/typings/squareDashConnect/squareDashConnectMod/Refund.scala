@@ -1,6 +1,6 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.RefundNs.StatusEnum
+import typings.squareDashConnect.squareDashConnectMod.Refund.StatusEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,5 +50,35 @@ class Refund () extends js.Object {
     * The ID of the transaction that the refunded tender is part of.
     */
   var transaction_id: String = js.native
+}
+
+@JSImport("square-connect", "Refund")
+@js.native
+object Refund extends js.Object {
+  @js.native
+  sealed trait StatusEnum extends js.Object
+  
+  @js.native
+  object StatusEnum extends js.Object {
+    @js.native
+    sealed trait APPROVED extends StatusEnum
+    
+    @js.native
+    sealed trait FAILED extends StatusEnum
+    
+    @js.native
+    sealed trait PENDING extends StatusEnum
+    
+    @js.native
+    sealed trait REJECTED extends StatusEnum
+    
+    /* "APPROVED" */ val APPROVED: typings.squareDashConnect.squareDashConnectMod.Refund.StatusEnum.APPROVED with String = js.native
+    /* "FAILED" */ val FAILED: typings.squareDashConnect.squareDashConnectMod.Refund.StatusEnum.FAILED with String = js.native
+    /* "PENDING" */ val PENDING: typings.squareDashConnect.squareDashConnectMod.Refund.StatusEnum.PENDING with String = js.native
+    /* "REJECTED" */ val REJECTED: typings.squareDashConnect.squareDashConnectMod.Refund.StatusEnum.REJECTED with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[StatusEnum with String] = js.native
+  }
+  
 }
 

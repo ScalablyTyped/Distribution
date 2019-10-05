@@ -118,18 +118,18 @@ object HlsGroupSettings {
     Encryption: HlsEncryptionSettings = null,
     ManifestCompression: HlsManifestCompression = null,
     ManifestDurationFormat: HlsManifestDurationFormat = null,
-    MinFinalSegmentLength: js.UndefOr[__doubleMin0Max2147483647] = js.undefined,
-    MinSegmentLength: js.UndefOr[__integerMin0Max2147483647] = js.undefined,
+    MinFinalSegmentLength: Int | Double = null,
+    MinSegmentLength: Int | Double = null,
     OutputSelection: HlsOutputSelection = null,
     ProgramDateTime: HlsProgramDateTime = null,
-    ProgramDateTimePeriod: js.UndefOr[__integerMin0Max3600] = js.undefined,
+    ProgramDateTimePeriod: Int | Double = null,
     SegmentControl: HlsSegmentControl = null,
-    SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
-    SegmentsPerSubdirectory: js.UndefOr[__integerMin1Max2147483647] = js.undefined,
+    SegmentLength: Int | Double = null,
+    SegmentsPerSubdirectory: Int | Double = null,
     StreamInfResolution: HlsStreamInfResolution = null,
     TimedMetadataId3Frame: HlsTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined,
-    TimestampDeltaMilliseconds: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    TimedMetadataId3Period: Int | Double = null,
+    TimestampDeltaMilliseconds: Int | Double = null
   ): HlsGroupSettings = {
     val __obj = js.Dynamic.literal()
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers)
@@ -144,18 +144,18 @@ object HlsGroupSettings {
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (ManifestCompression != null) __obj.updateDynamic("ManifestCompression")(ManifestCompression.asInstanceOf[js.Any])
     if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinFinalSegmentLength)) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength)
-    if (!js.isUndefined(MinSegmentLength)) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength)
+    if (MinFinalSegmentLength != null) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength.asInstanceOf[js.Any])
+    if (MinSegmentLength != null) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength.asInstanceOf[js.Any])
     if (OutputSelection != null) __obj.updateDynamic("OutputSelection")(OutputSelection.asInstanceOf[js.Any])
     if (ProgramDateTime != null) __obj.updateDynamic("ProgramDateTime")(ProgramDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimePeriod)) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod)
+    if (ProgramDateTimePeriod != null) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength)
-    if (!js.isUndefined(SegmentsPerSubdirectory)) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory)
+    if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
+    if (SegmentsPerSubdirectory != null) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory.asInstanceOf[js.Any])
     if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])
     if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period)
-    if (!js.isUndefined(TimestampDeltaMilliseconds)) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds)
+    if (TimedMetadataId3Period != null) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.asInstanceOf[js.Any])
+    if (TimestampDeltaMilliseconds != null) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsGroupSettings]
   }
 }

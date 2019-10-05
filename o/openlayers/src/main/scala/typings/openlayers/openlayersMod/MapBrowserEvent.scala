@@ -1,6 +1,6 @@
 package typings.openlayers.openlayersMod
 
-import typings.openlayers.openlayersMod.olxNs.FrameState
+import typings.openlayers.openlayersMod.olx.FrameState
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

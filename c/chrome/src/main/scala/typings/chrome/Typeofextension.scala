@@ -1,8 +1,8 @@
 package typings.chrome
 
-import typings.chrome.chromeNs.extensionNs.FetchProperties
-import typings.chrome.chromeNs.extensionNs.LastError
-import typings.chrome.chromeNs.extensionNs.OnRequestEvent
+import typings.chrome.chrome.extension.FetchProperties
+import typings.chrome.chrome.extension.LastError
+import typings.chrome.chrome.extension.OnRequestEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

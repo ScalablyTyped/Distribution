@@ -1,8 +1,8 @@
 package typings.smartwizard
 
-import typings.smartwizard.JQuerySmartwizardNs.ToolbarButtonPosition
-import typings.smartwizard.JQuerySmartwizardNs.ToolbarPosition
-import typings.smartwizard.JQuerySmartwizardNs.TransitionEffect
+import typings.smartwizard.JQuerySmartwizard.ToolbarButtonPosition
+import typings.smartwizard.JQuerySmartwizard.ToolbarPosition
+import typings.smartwizard.JQuerySmartwizard.TransitionEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

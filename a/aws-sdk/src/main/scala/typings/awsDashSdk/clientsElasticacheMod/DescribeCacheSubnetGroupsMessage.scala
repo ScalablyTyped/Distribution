@@ -21,15 +21,11 @@ trait DescribeCacheSubnetGroupsMessage extends js.Object {
 
 object DescribeCacheSubnetGroupsMessage {
   @scala.inline
-  def apply(
-    CacheSubnetGroupName: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
-  ): DescribeCacheSubnetGroupsMessage = {
+  def apply(CacheSubnetGroupName: String = null, Marker: String = null, MaxRecords: Int | scala.Double = null): DescribeCacheSubnetGroupsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheSubnetGroupsMessage]
   }
 }

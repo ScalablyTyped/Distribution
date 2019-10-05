@@ -17,10 +17,10 @@ trait AccountUsage extends js.Object {
 
 object AccountUsage {
   @scala.inline
-  def apply(FunctionCount: js.UndefOr[Long] = js.undefined, TotalCodeSize: js.UndefOr[Long] = js.undefined): AccountUsage = {
+  def apply(FunctionCount: Int | Double = null, TotalCodeSize: Int | Double = null): AccountUsage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FunctionCount)) __obj.updateDynamic("FunctionCount")(FunctionCount)
-    if (!js.isUndefined(TotalCodeSize)) __obj.updateDynamic("TotalCodeSize")(TotalCodeSize)
+    if (FunctionCount != null) __obj.updateDynamic("FunctionCount")(FunctionCount.asInstanceOf[js.Any])
+    if (TotalCodeSize != null) __obj.updateDynamic("TotalCodeSize")(TotalCodeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountUsage]
   }
 }

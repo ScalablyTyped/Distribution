@@ -28,13 +28,13 @@ object OfferingStatus {
   def apply(
     effectiveOn: DateTime = null,
     offering: Offering = null,
-    quantity: js.UndefOr[Integer] = js.undefined,
+    quantity: Int | scala.Double = null,
     `type`: OfferingTransactionType = null
   ): OfferingStatus = {
     val __obj = js.Dynamic.literal()
     if (effectiveOn != null) __obj.updateDynamic("effectiveOn")(effectiveOn)
     if (offering != null) __obj.updateDynamic("offering")(offering)
-    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfferingStatus]
   }

@@ -60,7 +60,7 @@ object CreateJobRequest {
     BillingTagsSource: BillingTagsSource = null,
     ClientRequestToken: __string = null,
     JobTemplate: __string = null,
-    Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined,
+    Priority: Int | Double = null,
     Queue: __string = null,
     SimulateReservedQueue: SimulateReservedQueue = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
@@ -71,7 +71,7 @@ object CreateJobRequest {
     if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority)
+    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])

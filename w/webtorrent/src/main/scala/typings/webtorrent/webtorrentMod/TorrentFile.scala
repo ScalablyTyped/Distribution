@@ -1,8 +1,8 @@
 package typings.webtorrent.webtorrentMod
 
 import typings.node.Buffer
-import typings.node.NodeJSNs.EventEmitter
-import typings.node.NodeJSNs.ReadableStream
+import typings.node.NodeJS.EventEmitter
+import typings.node.NodeJS.ReadableStream
 import typings.std.Blob
 import typings.std.Error
 import typings.std.HTMLElement

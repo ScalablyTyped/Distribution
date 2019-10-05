@@ -1,6 +1,7 @@
 package typings.reactDashRte.reactDashRteMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
 import typings.std.HTMLBodyElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,14 +17,16 @@ trait ImportOptions extends js.Object {
 object ImportOptions {
   @scala.inline
   def apply(
-    customBlockFn: CustomBlockFn = null,
-    customInlineFn: CustomInlineFn = null,
+    customBlockFn: /* element */ Element => js.UndefOr[Null | CustomBlockObject] = null,
+    customInlineFn: (/* element */ Element, /* inlineCreators */ InlineCreators) => js.UndefOr[
+      Null | Style | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ js.Any)
+    ] = null,
     elementStyles: StringDictionary[String] = null,
     parser: /* html */ String => HTMLBodyElement = null
   ): ImportOptions = {
     val __obj = js.Dynamic.literal()
-    if (customBlockFn != null) __obj.updateDynamic("customBlockFn")(customBlockFn)
-    if (customInlineFn != null) __obj.updateDynamic("customInlineFn")(customInlineFn)
+    if (customBlockFn != null) __obj.updateDynamic("customBlockFn")(js.Any.fromFunction1(customBlockFn))
+    if (customInlineFn != null) __obj.updateDynamic("customInlineFn")(js.Any.fromFunction2(customInlineFn))
     if (elementStyles != null) __obj.updateDynamic("elementStyles")(elementStyles)
     if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction1(parser))
     __obj.asInstanceOf[ImportOptions]

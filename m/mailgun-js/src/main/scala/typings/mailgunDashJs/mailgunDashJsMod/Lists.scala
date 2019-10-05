@@ -1,7 +1,7 @@
 package typings.mailgunDashJs.mailgunDashJsMod
 
-import typings.mailgunDashJs.mailgunDashJsMod.listsNs.Member
-import typings.mailgunDashJs.mailgunDashJsMod.listsNs.Members
+import typings.mailgunDashJs.mailgunDashJsMod.lists.Member
+import typings.mailgunDashJs.mailgunDashJsMod.lists.Members
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

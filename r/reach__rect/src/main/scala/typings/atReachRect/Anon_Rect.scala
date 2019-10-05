@@ -13,9 +13,9 @@ trait Anon_Rect extends js.Object {
 
 object Anon_Rect {
   @scala.inline
-  def apply(rect: DOMRect, ref: Ref[_]): Anon_Rect = {
-    val __obj = js.Dynamic.literal(rect = rect, ref = ref.asInstanceOf[js.Any])
-  
+  def apply(rect: DOMRect, ref: Ref[_] = null): Anon_Rect = {
+    val __obj = js.Dynamic.literal(rect = rect)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Rect]
   }
 }

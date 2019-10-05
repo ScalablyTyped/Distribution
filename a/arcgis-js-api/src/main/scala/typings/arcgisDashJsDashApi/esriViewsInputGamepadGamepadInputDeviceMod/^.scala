@@ -1,7 +1,7 @@
 package typings.arcgisDashJsDashApi.esriViewsInputGamepadGamepadInputDeviceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.underscoreUnderscoreEsriNs.GamepadInputDeviceConstructor
+import typings.arcgisDashJsDashApi.__esri.GamepadInputDeviceConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

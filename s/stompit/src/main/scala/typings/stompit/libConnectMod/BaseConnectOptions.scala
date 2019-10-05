@@ -1,6 +1,7 @@
 package typings.stompit.libConnectMod
 
 import typings.node.netMod.Socket
+import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
 import typings.stompit.libSocketMod.SocketOptions
@@ -29,7 +30,7 @@ object BaseConnectOptions {
     heartbeat: Heartbeat = null,
     heartbeatDelayMargin: Int | Double = null,
     heartbeatOutputMargin: Int | Double = null,
-    outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
+    outgoingFrameStream: ^ = null,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
     ssl: js.UndefOr[Boolean] = js.undefined,
     unknownCommand: () => Unit = null

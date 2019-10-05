@@ -1,6 +1,6 @@
 package typings.ably.ablyMod
 
-import typings.ably.ablyMod.TypesNs.RestCallbacks
+import typings.ably.ablyMod.Types.RestCallbacks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

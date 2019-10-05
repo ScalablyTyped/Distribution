@@ -15,12 +15,14 @@ trait DocumentHighlight extends js.Object {
   var range: Range
 }
 
-object DocumentHighlight {
-  @scala.inline
-  def apply(range: Range, kind: DocumentHighlightKind = null): DocumentHighlight = {
-    val __obj = js.Dynamic.literal(range = range)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    __obj.asInstanceOf[DocumentHighlight]
-  }
+@JSImport("vscode-languageserver-types", "DocumentHighlight")
+@js.native
+object DocumentHighlight extends js.Object {
+  /**
+    * Create a DocumentHighlight object.
+    * @param range The range the highlight applies to.
+    */
+  def create(range: Range): DocumentHighlight = js.native
+  def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = js.native
 }
 

@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUtilsMod extends js.Object {
   def createChainedFunction(funcs: js.Function*): js.Function = js.native
-  @JSName("bootstrapUtils")
   @js.native
-  object bootstrapUtilsNs extends js.Object {
+  object bootstrapUtils extends js.Object {
     def addStyle(Component: js.Any, styleVariant: js.Any*): js.Any = js.native
     def bsClass(defaultClass: js.Any, Component: js.Any): js.Any = js.native
     def bsSizes(sizes: js.Any, defaultSize: js.Any, Component: js.Any): js.Any = js.native

@@ -20,9 +20,5 @@ trait SpeechGrammarList extends /* index */ NumberDictionary[SpeechGrammar] {
 
 @JSGlobal("SpeechGrammarList")
 @js.native
-class SpeechGrammarListCls () extends SpeechGrammarList
-
-@JSGlobal("SpeechGrammarList")
-@js.native
 object SpeechGrammarList extends Instantiable0[SpeechGrammarList]
 
