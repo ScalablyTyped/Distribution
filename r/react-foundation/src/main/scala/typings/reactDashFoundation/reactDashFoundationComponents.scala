@@ -62,7 +62,7 @@ object reactDashFoundationComponents extends reactDashFoundationProps {
   @scala.inline
   def MenuItem: ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps] = typings.reactDashFoundation.componentsMenuMod.MenuItem.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps]]
   @scala.inline
-  def MenuText: ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps] = typings.reactDashFoundation.reactDashFoundationMod.asInstanceOf[js.Dynamic].selectDynamic("MenuText").asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps]]
+  def MenuText: ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps] = typings.reactDashFoundation.componentsMenuMod.MenuText.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFoundation.componentsMenuMod.MenuItemProps]]
   @scala.inline
   def NativeProgress: ComponentType[typings.reactDashFoundation.componentsProgressDashBarMod.NativeProgressProps] = typings.reactDashFoundation.reactDashFoundationMod.NativeProgress.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFoundation.componentsProgressDashBarMod.NativeProgressProps]]
   @scala.inline

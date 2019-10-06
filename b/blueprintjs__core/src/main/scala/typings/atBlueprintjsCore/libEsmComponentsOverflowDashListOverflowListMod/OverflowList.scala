@@ -20,9 +20,7 @@ class OverflowList[T] ()
   @JSName("componentDidMount")
   def componentDidMount_MOverflowList(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MOverflowList(_prevProps: IOverflowListProps[T], prevState: IOverflowListState[T]): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MOverflowList(nextProps: IOverflowListProps[T]): Unit = js.native
+  def componentDidUpdate_MOverflowList(prevProps: IOverflowListProps[T], prevState: IOverflowListState[T]): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MOverflowList(_nextProps: IOverflowListProps[T], nextState: IOverflowListState[T]): Boolean = js.native
 }

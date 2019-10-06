@@ -1420,6 +1420,18 @@ object atBlueprintjsIconsStrings {
   sealed trait BACKSLASHuE900 extends js.Object
   
   @js.native
+  sealed trait BACKSLASHuE901 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE902 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE903 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE904 extends js.Object
+  
+  @js.native
   sealed trait DOLLAR extends js.Object
   
   @js.native
@@ -2197,6 +2209,9 @@ object atBlueprintjsIconsStrings {
   sealed trait `layout-sorted-clusters` extends IconName
   
   @js.native
+  sealed trait learning extends IconName
+  
+  @js.native
   sealed trait `left-join` extends IconName
   
   @js.native
@@ -2306,6 +2321,12 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait `new-grid-item` extends IconName
+  
+  @js.native
+  sealed trait `new-layer` extends IconName
+  
+  @js.native
+  sealed trait `new-layers` extends IconName
   
   @js.native
   sealed trait `new-link` extends IconName
@@ -2639,6 +2660,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait stop extends IconName
+  
+  @js.native
+  sealed trait stopwatch extends IconName
   
   @js.native
   sealed trait strikethrough extends IconName
@@ -3781,6 +3805,14 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def BACKSLASHuE900: BACKSLASHuE900 = "\uE900".asInstanceOf[BACKSLASHuE900]
   @scala.inline
+  def BACKSLASHuE901: BACKSLASHuE901 = "\uE901".asInstanceOf[BACKSLASHuE901]
+  @scala.inline
+  def BACKSLASHuE902: BACKSLASHuE902 = "\uE902".asInstanceOf[BACKSLASHuE902]
+  @scala.inline
+  def BACKSLASHuE903: BACKSLASHuE903 = "\uE903".asInstanceOf[BACKSLASHuE903]
+  @scala.inline
+  def BACKSLASHuE904: BACKSLASHuE904 = "\uE904".asInstanceOf[BACKSLASHuE904]
+  @scala.inline
   def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
@@ -4299,6 +4331,8 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def `layout-sorted-clusters`: `layout-sorted-clusters` = "layout-sorted-clusters".asInstanceOf[`layout-sorted-clusters`]
   @scala.inline
+  def learning: learning = "learning".asInstanceOf[learning]
+  @scala.inline
   def `left-join`: `left-join` = "left-join".asInstanceOf[`left-join`]
   @scala.inline
   def `less-than`: `less-than` = "less-than".asInstanceOf[`less-than`]
@@ -4372,6 +4406,10 @@ object atBlueprintjsIconsStrings {
   def music: music = "music".asInstanceOf[music]
   @scala.inline
   def `new-grid-item`: `new-grid-item` = "new-grid-item".asInstanceOf[`new-grid-item`]
+  @scala.inline
+  def `new-layer`: `new-layer` = "new-layer".asInstanceOf[`new-layer`]
+  @scala.inline
+  def `new-layers`: `new-layers` = "new-layers".asInstanceOf[`new-layers`]
   @scala.inline
   def `new-link`: `new-link` = "new-link".asInstanceOf[`new-link`]
   @scala.inline
@@ -4594,6 +4632,8 @@ object atBlueprintjsIconsStrings {
   def `step-forward`: `step-forward` = "step-forward".asInstanceOf[`step-forward`]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def stopwatch: stopwatch = "stopwatch".asInstanceOf[stopwatch]
   @scala.inline
   def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   @scala.inline

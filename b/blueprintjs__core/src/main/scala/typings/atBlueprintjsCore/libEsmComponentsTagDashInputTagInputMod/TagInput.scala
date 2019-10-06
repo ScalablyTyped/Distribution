@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTagDashInputTagInputMod
 
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
-import typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput")
 @js.native
-class TagInput () extends AbstractPureComponent[ITagInputProps, ITagInputState] {
+class TagInput () extends AbstractPureComponent2[ITagInputProps, ITagInputState, ITagInputSnapshot] {
   var addTags: js.Any = js.native
   var findNextIndex: js.Any = js.native
   var getNextActiveIndex: js.Any = js.native
@@ -36,8 +35,10 @@ class TagInput () extends AbstractPureComponent[ITagInputProps, ITagInputState] 
   var refHandlers: js.Any = js.native
   /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
   var removeIndexFromValues: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTagInput(nextProps: HTMLInputProps with ITagInputProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MTagInput(`_`: ITagInputProps, __ : ITagInputState, snapshot: ITagInputSnapshot): Unit = js.native
+  @JSName("getSnapshotBeforeUpdate")
+  def getSnapshotBeforeUpdate_MTagInput(prevProps: ITagInputProps): ITagInputSnapshot = js.native
 }
 
 /* static members */

@@ -1,5 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsMod
 
+import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.ICheckboxProps
+import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.ICheckboxState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,5 +16,6 @@ class Checkbox ()
 @js.native
 object Checkbox extends js.Object {
   var displayName: String = js.native
+  def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = js.native
 }
 

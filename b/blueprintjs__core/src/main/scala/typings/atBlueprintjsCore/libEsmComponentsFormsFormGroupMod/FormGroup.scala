@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsFormGroupMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/forms/formGroup", "FormGroup")
 @js.native
 class FormGroup ()
-  extends PureComponent[IFormGroupProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[IFormGroupProps, js.Object, js.Object] {
   var getClassName: js.Any = js.native
 }
 

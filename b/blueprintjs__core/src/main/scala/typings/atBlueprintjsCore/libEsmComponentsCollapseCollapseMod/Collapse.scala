@@ -1,14 +1,14 @@
 package typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod
 
 import typings.atBlueprintjsCore.Anon_AnimationState
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse")
 @js.native
-class Collapse () extends AbstractPureComponent[ICollapseProps, ICollapseState] {
+class Collapse () extends AbstractPureComponent2[ICollapseProps, ICollapseState, ICollapseSnapshot] {
   var contents: js.Any = js.native
   var contentsRefHandler: js.Any = js.native
   var height: js.Any = js.native
@@ -18,9 +18,9 @@ class Collapse () extends AbstractPureComponent[ICollapseProps, ICollapseState] 
   @JSName("componentDidMount")
   def componentDidMount_MCollapse(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MCollapse(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MCollapse(nextProps: ICollapseProps): Unit = js.native
+  def componentDidUpdate_MCollapse(`_`: ICollapseProps, __ : ICollapseState, snapshot: ICollapseSnapshot): Unit = js.native
+  @JSName("getSnapshotBeforeUpdate")
+  def getSnapshotBeforeUpdate_MCollapse(prevProps: ICollapseProps): ICollapseSnapshot = js.native
 }
 
 /* static members */

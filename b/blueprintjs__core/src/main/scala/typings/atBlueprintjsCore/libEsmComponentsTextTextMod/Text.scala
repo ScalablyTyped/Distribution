@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTextTextMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/text/text", "Text")
 @js.native
 class Text ()
-  extends PureComponent[ITextProps, ITextState, js.Any] {
+  extends AbstractPureComponent2[ITextProps, ITextState, js.Object] {
   var textRef: js.Any = js.native
   var update: js.Any = js.native
   @JSName("componentDidMount")

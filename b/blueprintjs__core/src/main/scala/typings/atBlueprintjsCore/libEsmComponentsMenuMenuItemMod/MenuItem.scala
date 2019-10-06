@@ -1,7 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsMenuMenuItemMod
 
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.react.reactMod.AnchorHTMLAttributes
-import typings.react.reactMod.PureComponent
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem")
 @js.native
 class MenuItem ()
-  extends PureComponent[IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Any] {
+  extends AbstractPureComponent2[IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Object] {
   var maybeRenderLabel: js.Any = js.native
   var maybeRenderPopover: js.Any = js.native
 }

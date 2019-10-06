@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmHeadersColumnHeaderCellMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent2
 import typings.atBlueprintjsTable.Anon_IsActive
 import typings.atBlueprintjsTable.libEsmCommonContextMod.IColumnInteractionBarContextTypes
 import typings.react.reactMod.ValidationMap
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell")
 @js.native
-class ColumnHeaderCell () extends AbstractPureComponent[IColumnHeaderCellProps, IColumnHeaderCellState] {
+class ColumnHeaderCell ()
+  extends AbstractPureComponent2[IColumnHeaderCellProps, IColumnHeaderCellState, js.Object] {
   @JSName("context")
   var context_ColumnHeaderCell: IColumnInteractionBarContextTypes = js.native
   var handlePopoverClosing: js.Any = js.native

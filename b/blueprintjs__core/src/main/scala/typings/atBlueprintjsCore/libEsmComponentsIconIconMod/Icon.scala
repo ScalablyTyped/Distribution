@@ -2,8 +2,8 @@ package typings.atBlueprintjsCore.libEsmComponentsIconIconMod
 
 import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`16`
 import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`20`
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.PureComponent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/icon/icon", "Icon")
 @js.native
 class Icon ()
-  extends PureComponent[IIconProps with DOMAttributes[HTMLElement], js.Object, js.Any] {
+  extends AbstractPureComponent2[IIconProps with DOMAttributes[HTMLElement], js.Object, js.Object] {
   /** Render `<path>` elements for the given icon name. Returns `null` if name is unknown. */
   var renderSvgPaths: js.Any = js.native
 }

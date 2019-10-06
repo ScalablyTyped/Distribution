@@ -28,6 +28,7 @@ trait Anon_CallBackCallback extends js.Object {
       Unit
     ]
   ] = js.native
+  var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ js.Any, Unit]] = js.native
   var componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ js.Any, Unit]
@@ -35,9 +36,9 @@ trait Anon_CallBackCallback extends js.Object {
   var context: js.Any = js.native
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _]] = js.native
   /** @internal */
-  var globalHotkeysEvents: js.UndefOr[HotkeysEvents] = js.native
+  var globalHotkeysEvents: HotkeysEvents = js.native
   /** @internal */
-  var localHotkeysEvents: js.UndefOr[HotkeysEvents] = js.native
+  var localHotkeysEvents: HotkeysEvents = js.native
   val props: js.Object with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
@@ -50,7 +51,6 @@ trait Anon_CallBackCallback extends js.Object {
   ] = js.native
   var state: js.Object = js.native
   def componentDidMount(): Unit = js.native
-  def componentWillMount(): Unit = js.native
   def componentWillUnmount(): Unit = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native

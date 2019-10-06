@@ -9,22 +9,22 @@ object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
   @scala.inline
   def Rating: ComponentType[typings.atMaterialDashUiLab.ratingRatingMod.RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.ratingRatingMod.RatingProps]]
   @scala.inline
-  def SpeedDial: ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps] = typings.atMaterialDashUiLab.speedDialMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps]]
+  def SpeedDial: ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDial").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps]]
   @scala.inline
   def SpeedDialAction: ComponentType[
     typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
-  ] = typings.atMaterialDashUiLab.speedDialActionMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialAction").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps]]
   @scala.inline
-  def SpeedDialIcon: ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = typings.atMaterialDashUiLab.speedDialIconMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps]]
+  def SpeedDialIcon: ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialIcon").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps]]
   @scala.inline
   def ToggleButtonGroup: ComponentType[
     typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
-  ] = typings.atMaterialDashUiLab.toggleButtonGroupMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("ToggleButtonGroup").asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps]]
   @scala.inline
-  def TreeItem: ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps] = typings.atMaterialDashUiLab.treeItemMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps]]
+  def TreeItem: ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeItem").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps]]
   @scala.inline
-  def TreeView: ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps] = typings.atMaterialDashUiLab.treeViewMod.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps]]
+  def TreeView: ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeView").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps]]
 }
 

@@ -7,7 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITabProps extends IProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @blueprintjs/core.@blueprintjs/core/lib/esm/common/props.HTMLDivProps, 'id' | 'title' | 'onClick'> ]: @blueprintjs/core.@blueprintjs/core/lib/esm/common/props.HTMLDivProps[P]} */ trait ITabProps extends IProps {
   /**
     * Content of tab title, rendered in a list above the active panel.
     * Can also be set via the `title` prop.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/icons" : "3.10.0"
+      "@blueprintjs/icons" : "3.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/icons" : "3.10.0"
+      "@blueprintjs/icons" : "3.11.0"
     }
   ],
   "compile-devDependencies" : [

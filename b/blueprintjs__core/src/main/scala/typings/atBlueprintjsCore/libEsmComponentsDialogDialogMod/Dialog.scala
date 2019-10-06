@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsDialogDialogMod
 
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/dialog/dialog", "Dialog")
 @js.native
 class Dialog ()
-  extends AbstractPureComponent[IDialogProps, js.Object] {
+  extends AbstractPureComponent2[IDialogProps, js.Object, js.Object] {
   var maybeRenderCloseButton: js.Any = js.native
   var maybeRenderHeader: js.Any = js.native
 }

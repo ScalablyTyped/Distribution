@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object atEntriaRelayDashExperimentalComponents extends atEntriaRelayDashExperimentalProps {
   @scala.inline
-  def RelayEnvironmentProvider: ComponentType[Props] = typings.atEntriaRelayDashExperimental.atEntriaRelayDashExperimentalMod.asInstanceOf[js.Dynamic].selectDynamic("RelayEnvironmentProvider").asInstanceOf[typings.react.reactMod.ComponentType[typings.atEntriaRelayDashExperimental.libRelayEnvironmentProviderMod.Props]]
+  def RelayEnvironmentProvider: ComponentType[Props] = typings.atEntriaRelayDashExperimental.libRelayEnvironmentProviderMod.RelayEnvironmentProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.atEntriaRelayDashExperimental.libRelayEnvironmentProviderMod.Props]]
 }
 

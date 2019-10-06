@@ -1,7 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsToastToasterMod
 
 import typings.atBlueprintjsCore.Anon_Toasts
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster")
 @js.native
 class Toaster ()
-  extends AbstractPureComponent[IToasterProps, IToasterState]
+  extends AbstractPureComponent2[IToasterProps, IToasterState, js.Object]
      with IToaster {
   var createToastOptions: js.Any = js.native
   var getDismissHandler: js.Any = js.native

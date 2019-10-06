@@ -1,7 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsInputGroupMod
 
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
-import typings.react.reactMod.PureComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/forms/inputGroup", "InputGroup")
 @js.native
 class InputGroup ()
-  extends PureComponent[IInputGroupProps with HTMLInputProps, IInputGroupState, js.Any] {
+  extends AbstractPureComponent2[IInputGroupProps with HTMLInputProps, IInputGroupState, js.Object] {
   var maybeRenderRightElement: js.Any = js.native
   var refHandlers: js.Any = js.native
   var rightElement: js.Any = js.native

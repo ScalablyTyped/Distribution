@@ -1,6 +1,5 @@
 package typings.reactDashNative
 
-import typings.react.reactMod.ReactType
 import typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
 import typings.reactDashNative.reactDashNativeMod.ARTGroupProps
 import typings.reactDashNative.reactDashNativeMod.ARTShapeProps
@@ -40,7 +39,6 @@ trait reactDashNativeProps {
   @scala.inline
   def ClippingRectangleProps: ARTClippingRectangleProps.type = typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
   type ClippingRectangleProps = ARTClippingRectangleProps
-  type CreateElementProps[P] = ReactType[P]
   @scala.inline
   def DatePickerIOSProps: typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps.type = typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps
   type DatePickerIOSProps = typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps

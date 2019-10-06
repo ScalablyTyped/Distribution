@@ -48,17 +48,13 @@ object atBlueprintjsTableComponents extends atBlueprintjsTableProps {
   @scala.inline
   def EditableName: ComponentType[IEditableNameProps] = js.constructorOf[typings.atBlueprintjsTable.atBlueprintjsTableMod.EditableName].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmHeadersEditableNameMod.IEditableNameProps]]
   @scala.inline
-  def EmptyCellRenderer: ComponentType[js.Object] = typings.atBlueprintjsTable.libEsmCellCellMod.emptyCellRenderer.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
-  @scala.inline
   def Header: ComponentType[IInternalHeaderProps] = js.constructorOf[typings.atBlueprintjsTable.libEsmHeadersHeaderMod.Header].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmHeadersHeaderMod.IInternalHeaderProps]]
   @scala.inline
   def HeaderCell: ComponentType[IInternalHeaderCellProps] = js.constructorOf[typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.HeaderCell].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.IInternalHeaderCellProps]]
   @scala.inline
-  def HorizontalCellDivider: ComponentType[js.Object] = typings.atBlueprintjsTable.atBlueprintjsTableMod.HorizontalCellDivider.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def HorizontalCellDivider: ComponentType[js.Object] = typings.atBlueprintjsTable.atBlueprintjsTableMod.HorizontalCellDivider.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def JSONFormat: ComponentType[IJSONFormatProps] = js.constructorOf[typings.atBlueprintjsTable.atBlueprintjsTableMod.JSONFormat].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmCellFormatsJsonFormatMod.IJSONFormatProps]]
-  @scala.inline
-  def RenderDefaultRowHeader: ComponentType[Double] = typings.atBlueprintjsTable.libEsmHeadersRowHeaderMod.renderDefaultRowHeader.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[scala.Double]]
   @scala.inline
   def Resizable: ComponentType[IResizableProps] = js.constructorOf[typings.atBlueprintjsTable.libEsmInteractionsResizableMod.Resizable].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsTable.libEsmInteractionsResizableMod.IResizableProps]]
   @scala.inline

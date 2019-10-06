@@ -9,11 +9,9 @@ import typings.antd.esListItemMod.ListItemProps
 import typings.antd.esStepsMod.StepProps
 import typings.antd.esTabsMod.TabPaneProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
-import typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.esTreeTreeMod.AntTreeNodeProps
 import typings.antd.esTypographyBaseMod.InternalBlockProps
-import typings.antd.esTypographyTypographyMod.InternalTypographyProps
 import typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -282,9 +280,6 @@ trait antdProps {
   def RateProps: typings.antd.esRateMod.RateProps.type = typings.antd.esRateMod.RateProps
   type RateProps = typings.antd.esRateMod.RateProps
   @scala.inline
-  def RenderListBodyProps: TransferListBodyProps.type = typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
-  type RenderListBodyProps = TransferListBodyProps
-  @scala.inline
   def ResultProps: typings.antd.esResultMod.ResultProps.type = typings.antd.esResultMod.ResultProps
   type ResultProps = typings.antd.esResultMod.ResultProps
   @scala.inline
@@ -382,8 +377,8 @@ trait antdProps {
   def TreeTreeNodeProps: AntTreeNodeProps.type = typings.antd.esTreeTreeMod.AntTreeNodeProps
   type TreeTreeNodeProps = AntTreeNodeProps
   @scala.inline
-  def TypographyProps: InternalTypographyProps.type = typings.antd.esTypographyTypographyMod.InternalTypographyProps
-  type TypographyProps = InternalTypographyProps
+  def TypographyProps: typings.antd.esTypographyTypographyMod.TypographyProps.type = typings.antd.esTypographyTypographyMod.TypographyProps
+  type TypographyProps = typings.antd.esTypographyTypographyMod.TypographyProps
   @scala.inline
   def UploadProps: typings.antd.esUploadInterfaceMod.UploadProps.type = typings.antd.esUploadInterfaceMod.UploadProps
   type UploadProps = typings.antd.esUploadInterfaceMod.UploadProps

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmTableMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
 import typings.atBlueprintjsTable.libEsmCommonContextMod.IColumnInteractionBarContextTypes
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmCommonGridMod.ICellMapper
@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/table/lib/esm/table", "Table")
 @js.native
-class Table protected () extends AbstractComponent[ITableProps, ITableState] {
+class Table protected ()
+  extends AbstractComponent2[ITableProps, ITableState, js.Object] {
   def this(props: ITableProps) = this()
   def this(props: ITableProps, context: js.Any) = this()
   var bodyCellRenderer: js.Any = js.native
@@ -129,9 +130,9 @@ class Table protected () extends AbstractComponent[ITableProps, ITableState] {
   @JSName("componentDidMount")
   def componentDidMount_MTable(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MTable(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTable(nextProps: ITableProps): Unit = js.native
+  def componentDidUpdate_MTable(prevProps: ITableProps, prevState: ITableState): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MTable(prevProps: ITableProps, prevState: ITableState, snapshot: js.Object): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTable(): Unit = js.native
   def getChildContext(): IColumnInteractionBarContextTypes = js.native

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Checkbox")
 @js.native
 class Checkbox ()
-  extends PureComponent[ICheckboxProps, ICheckboxState, js.Any] {
+  extends AbstractPureComponent2[ICheckboxProps, ICheckboxState, js.Object] {
   var handleChange: js.Any = js.native
   var handleInputRef: js.Any = js.native
   var input: js.Any = js.native
@@ -17,8 +17,6 @@ class Checkbox ()
   def componentDidMount_MCheckbox(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MCheckbox(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MCheckbox(hasIndeterminate: ICheckboxProps): Unit = js.native
 }
 
 /* static members */
@@ -26,5 +24,6 @@ class Checkbox ()
 @js.native
 object Checkbox extends js.Object {
   var displayName: String = js.native
+  def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = js.native
 }
 

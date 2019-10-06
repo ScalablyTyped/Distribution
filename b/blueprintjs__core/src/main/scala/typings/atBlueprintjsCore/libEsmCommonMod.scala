@@ -68,8 +68,22 @@ object libEsmCommonMod extends js.Object {
   }
   
   @js.native
+  abstract class AbstractComponent2[P, S, SS] ()
+    extends typings.atBlueprintjsCore.libEsmCommonAbstractComponent2Mod.AbstractComponent2[P, S, SS] {
+    def this(props: P) = this()
+    def this(props: P, context: js.Any) = this()
+  }
+  
+  @js.native
   abstract class AbstractPureComponent[P, S] ()
     extends typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent[P, S] {
+    def this(props: P) = this()
+    def this(props: P, context: js.Any) = this()
+  }
+  
+  @js.native
+  abstract class AbstractPureComponent2[P, S, SS] ()
+    extends typings.atBlueprintjsCore.libEsmCommonAbstractPureComponent2Mod.AbstractPureComponent2[P, S, SS] {
     def this(props: P) = this()
     def this(props: P, context: js.Any) = this()
   }

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTooltipTooltipMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/tooltip/tooltip", "Tooltip")
 @js.native
 class Tooltip ()
-  extends PureComponent[ITooltipProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[ITooltipProps, js.Object, js.Object] {
   var popover: js.Any = js.native
   def reposition(): Unit = js.native
 }

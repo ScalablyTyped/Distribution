@@ -1,7 +1,6 @@
 package typings.reactDashNative
 
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ReactType
 import typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
 import typings.reactDashNative.reactDashNativeMod.ARTGroupProps
 import typings.reactDashNative.reactDashNativeMod.ARTShapeProps
@@ -31,8 +30,6 @@ object reactDashNativeComponents extends reactDashNativeProps {
   def CheckBox: ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.CheckBox].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps]]
   @scala.inline
   def ClippingRectangle: ComponentType[ARTClippingRectangleProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ClippingRectangle].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps]]
-  @scala.inline
-  def CreateElement[P]: ComponentType[ReactType[_]] = typings.reactDashNative.reactDashNativeMod.createElement.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.react.reactMod.ReactType[_]]]
   @scala.inline
   def DatePickerIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.DatePickerIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps]]
   @scala.inline

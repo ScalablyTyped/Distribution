@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsHotkeysKeyComboMod
 
-import typings.react.reactMod.Component
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/keyCombo", "KeyCombo")
 @js.native
 class KeyCombo ()
-  extends Component[IKeyComboProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[IKeyComboProps, js.Object, js.Object] {
   var renderKey: js.Any = js.native
   var renderMinimalKey: js.Any = js.native
 }

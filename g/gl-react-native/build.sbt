@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gl-react-native"
-version := "3.15-dt-20190212Z-dd4c55"
+version := "3.15-dt-20190212Z-500bdb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
-  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-ea7d94",
+  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-b7b422",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-cca292",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

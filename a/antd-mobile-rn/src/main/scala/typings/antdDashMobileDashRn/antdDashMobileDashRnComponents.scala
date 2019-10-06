@@ -156,7 +156,7 @@ object antdDashMobileDashRnComponents extends antdDashMobileDashRnProps {
   ] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.SwipeAction].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.antdDashMobileDashRn.libSwipeDashActionIndexDotNativeMod.SwipeActionProps]]
   @scala.inline
-  def Switch: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.antdDashMobileDashRnMod.Switch.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
+  def Switch: ComponentType[AntmSwitchProps] = typings.antdDashMobileDashRn.antdDashMobileDashRnMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps]]
   @scala.inline
   def TabBar: ComponentType[typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps] = js.constructorOf[typings.antdDashMobileDashRn.antdDashMobileDashRnMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps]]
   @scala.inline

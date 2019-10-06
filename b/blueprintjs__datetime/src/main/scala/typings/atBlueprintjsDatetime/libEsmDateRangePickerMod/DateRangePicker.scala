@@ -1,13 +1,14 @@
 package typings.atBlueprintjsDatetime.libEsmDateRangePickerMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/datetime/lib/esm/dateRangePicker", "DateRangePicker")
 @js.native
-class DateRangePicker protected () extends AbstractPureComponent[IDateRangePickerProps, IDateRangePickerState] {
+class DateRangePicker protected ()
+  extends AbstractPureComponent2[IDateRangePickerProps, IDateRangePickerState, js.Object] {
   def this(props: IDateRangePickerProps) = this()
   def this(props: IDateRangePickerProps, context: js.Any) = this()
   var disabledDays: js.Any = js.native
@@ -39,8 +40,10 @@ class DateRangePicker protected () extends AbstractPureComponent[IDateRangePicke
   var setViews: js.Any = js.native
   var updateLeftView: js.Any = js.native
   var updateRightView: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDateRangePicker(nextProps: IDateRangePickerProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDateRangePicker(prevProps: IDateRangePickerProps, prevState: IDateRangePickerState): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDateRangePicker(prevProps: IDateRangePickerProps, prevState: IDateRangePickerState, snapshot: js.Object): Unit = js.native
 }
 
 /* static members */

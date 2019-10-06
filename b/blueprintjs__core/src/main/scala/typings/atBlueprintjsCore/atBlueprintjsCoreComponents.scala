@@ -124,8 +124,6 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def EditableText: ComponentType[IEditableTextProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.EditableText].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atBlueprintjsCore.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps]]
   @scala.inline
-  def EnsureElement: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmCommonUtilsMod.ensureElement.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
-  @scala.inline
   def Expander: ComponentType[js.Object] = typings.atBlueprintjsCore.libEsmComponentsMod.Expander.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def FileInput: ComponentType[IFileInputProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.FileInput].asInstanceOf[typings.react.reactMod.ComponentType[typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod.IFileInputProps]]

@@ -1427,7 +1427,6 @@
 | 128 | [reflux](./r/reflux) | A simple library for uni-directional dataflow appl
 | 128 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack
 | 128 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables
-| 127 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c
 | 127 | [gulp-angular-templatecach](./g/gulp-angular-templatecache) | Concatenates and registers AngularJS templates in 
 | 127 | [gulp-csso](./g/gulp-csso) | Minify CSS with CSSO.
 | 127 | [gulp-pug](./g/gulp-pug) | Gulp plugin for compiling Pug templates
@@ -3696,7 +3695,6 @@
 | 18 | [robust-point-in-polygon](./r/robust-point-in-polygon) | Exactly test if a point is inside, outside or on t
 | 18 | [sqs-producer](./s/sqs-producer) | Enqueues messages onto a given SQS queue
 | 18 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG 
-| 18 | [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des
 | 18 | [thepiratebay](./t/thepiratebay) | The pirate bay client
 | 18 | [unique-random](./u/unique-random) | Generate random numbers that are consecutively uni
 | 18 | [upng-js](./u/upng-js) | Small, fast and advanced PNG / APNG encoder and de
@@ -4745,7 +4743,6 @@
 | 7 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
 | 7 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model
 | 7 | [re2](./r/re2) | Bindings for RE2: fast, safe alternative to backtr
-| 7 | [react-async](./r/react-async) | React component for declarative promise resolution
 | 7 | [react-devtools](./r/react-devtools) | Use react-devtools outside of the browser
 | 7 | [react-dnd-test-backend](./r/react-dnd-test-backend) | A mock backend for testing React DnD apps
 | 7 | [react-flex](./r/react-flex) | -
@@ -4897,7 +4894,6 @@
 | 6 | [popmotion__popcorn](./p/popmotion__popcorn) | Utility functions for animation and interactions.
 | 6 | [postlight__mercury-parser](./p/postlight__mercury-parser) | Mercury transforms web pages into clean text. Publ
 | 6 | [raspi](./r/raspi) | Provides access to Raspberry Pi peripherals from N
-| 6 | [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu.
 | 6 | [react-body-classname](./r/react-body-classname) | A declarative, nested way to manipulate your body'
 | 6 | [react-currency-formatter](./r/react-currency-formatter) | react currency formatter Component
 | 6 | [react-hamburger-menu](./r/react-hamburger-menu) | Dead simple Hamburger Menu to use as a mobile nav,

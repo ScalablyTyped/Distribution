@@ -1,6 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.Anon_HasEverOpened
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay")
 @js.native
 class Overlay ()
-  extends PureComponent[IOverlayProps, IOverlayState, js.Any] {
+  extends AbstractPureComponent2[IOverlayProps, IOverlayState, js.Object] {
   def this(props: IOverlayProps) = this()
   def this(props: IOverlayProps, context: js.Any) = this()
   var containerElement: HTMLElement = js.native
@@ -26,8 +27,6 @@ class Overlay ()
   def componentDidMount_MOverlay(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MOverlay(prevProps: IOverlayProps): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MOverlay(nextProps: IOverlayProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MOverlay(): Unit = js.native
 }
@@ -40,5 +39,6 @@ object Overlay extends js.Object {
   var displayName: String = js.native
   var getLastOpened: js.Any = js.native
   var openStack: js.Any = js.native
+  def getDerivedStateFromProps(hasIsOpen: IOverlayProps): Anon_HasEverOpened = js.native
 }
 

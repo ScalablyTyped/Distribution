@@ -3,7 +3,7 @@ package typings.atBlueprintjsCore.libEsmComponentsDrawerDrawerMod
 import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`360px`
 import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`50%`
 import typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`90%`
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer")
 @js.native
 class Drawer ()
-  extends AbstractPureComponent[IDrawerProps, js.Object] {
+  extends AbstractPureComponent2[IDrawerProps, js.Object, js.Object] {
   var maybeRenderCloseButton: js.Any = js.native
   var maybeRenderHeader: js.Any = js.native
 }

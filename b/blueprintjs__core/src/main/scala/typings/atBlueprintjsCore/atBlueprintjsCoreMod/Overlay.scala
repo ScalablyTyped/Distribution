@@ -1,5 +1,6 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
+import typings.atBlueprintjsCore.Anon_HasEverOpened
 import typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,5 +22,6 @@ object Overlay extends js.Object {
   var displayName: String = js.native
   var getLastOpened: js.Any = js.native
   var openStack: js.Any = js.native
+  def getDerivedStateFromProps(hasIsOpen: IOverlayProps): Anon_HasEverOpened = js.native
 }
 

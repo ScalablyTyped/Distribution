@@ -464,6 +464,10 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E2
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E3
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E4
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE900
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE901
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE902
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE903
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE904
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`+`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`?`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`BACKSLASHu2191 `
@@ -735,6 +739,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val LAYOUT_LINEAR: BACKSLASHuE6C3 = js.native
   val LAYOUT_SKEW_GRID: BACKSLASHuE612 = js.native
   val LAYOUT_SORTED_CLUSTERS: BACKSLASHuE6D4 = js.native
+  val LEARNING: BACKSLASHuE904 = js.native
   val LEFT_JOIN: BACKSLASHuE7A4 = js.native
   val LESS_THAN: BACKSLASHuE7E3 = js.native
   val LESS_THAN_OR_EQUAL_TO: BACKSLASHuE7E4 = js.native
@@ -772,6 +777,8 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val MULTI_SELECT: BACKSLASHuE680 = js.native
   val MUSIC: BACKSLASHuE6A6 = js.native
   val NEW_GRID_ITEM: BACKSLASHuE747 = js.native
+  val NEW_LAYER: BACKSLASHuE902 = js.native
+  val NEW_LAYERS: BACKSLASHuE903 = js.native
   val NEW_LINK: BACKSLASHuE65C = js.native
   val NEW_OBJECT: BACKSLASHuE65D = js.native
   val NEW_PERSON: BACKSLASHuE6E9 = js.native
@@ -883,6 +890,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val STEP_CHART: BACKSLASHuE70F = js.native
   val STEP_FORWARD: BACKSLASHuE6AD = js.native
   val STOP: BACKSLASHuE6AA = js.native
+  val STOPWATCH: BACKSLASHuE901 = js.native
   val STRIKETHROUGH: BACKSLASHuE7A6 = js.native
   val STYLE: BACKSLASHuE601 = js.native
   val SWAP_HORIZONTAL: BACKSLASHuE745 = js.native

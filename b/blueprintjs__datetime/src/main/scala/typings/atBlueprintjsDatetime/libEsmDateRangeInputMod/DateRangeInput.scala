@@ -1,6 +1,6 @@
 package typings.atBlueprintjsDatetime.libEsmDateRangeInputMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent2
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput")
 @js.native
-class DateRangeInput protected () extends AbstractPureComponent[IDateRangeInputProps, IDateRangeInputState] {
+class DateRangeInput protected ()
+  extends AbstractPureComponent2[IDateRangeInputProps, IDateRangeInputState, js.Object] {
   def this(props: IDateRangeInputProps) = this()
   def this(props: IDateRangeInputProps, context: js.Any) = this()
   var doBoundaryDatesOverlap: js.Any = js.native
@@ -56,9 +57,9 @@ class DateRangeInput protected () extends AbstractPureComponent[IDateRangeInputP
   var shouldFocusInputRef: js.Any = js.native
   var startInputRef: js.Any = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MDateRangeInput(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDateRangeInput(nextProps: IDateRangeInputProps): Unit = js.native
+  def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState, snapshot: js.Object): Unit = js.native
   /**
     * Public method intended for unit testing only. Do not use in feature work!
     */

@@ -20,9 +20,6 @@ trait IToasterProps extends IProps {
   var canEscapeKeyClear: js.UndefOr[Boolean] = js.undefined
   /**
     * Position of `Toaster` within its container.
-    *
-    * Note that only `TOP` and `BOTTOM` are supported because Toaster only
-    * supports the top and bottom edge positioning.
     * @default Position.TOP
     */
   var position: js.UndefOr[ToasterPosition] = js.undefined

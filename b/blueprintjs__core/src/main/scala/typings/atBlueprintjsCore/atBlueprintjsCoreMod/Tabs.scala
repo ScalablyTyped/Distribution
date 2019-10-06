@@ -1,5 +1,6 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
+import typings.atBlueprintjsCore.Anon_SelectedTabId
 import typings.atBlueprintjsCore.TypeofClassTab
 import typings.atBlueprintjsCore.libEsmComponentsTabsTabsMod.ITabsProps
 import typings.react.reactMod.FunctionComponent
@@ -24,5 +25,6 @@ object Tabs extends js.Object {
   var Tab: TypeofClassTab = js.native
   var defaultProps: Partial[ITabsProps] = js.native
   var displayName: String = js.native
+  def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): Anon_SelectedTabId = js.native
 }
 

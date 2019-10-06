@@ -176,7 +176,7 @@ object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDash
   @scala.inline
   def SwipeDashAction: ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps]]
   @scala.inline
-  def Switch: ComponentType[AntmSwitchProps] = typings.atAntDashDesignReactDashNative.esMod.Switch.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps]]
+  def Switch: ComponentType[AntmSwitchProps] = typings.atAntDashDesignReactDashNative.esMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps]]
   @scala.inline
   def TabBar: ComponentType[TabBarNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabDashBarMod.TabBarNativeProps]]
   @scala.inline
@@ -192,7 +192,7 @@ object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDash
   @scala.inline
   def TextareaItem: ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TextareaItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps]]
   @scala.inline
-  def ThemeProvider: ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps] = typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProvider.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps]]
+  def ThemeProvider: ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps] = typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps]]
   @scala.inline
   def WhiteDashSpace: ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps]]
   @scala.inline

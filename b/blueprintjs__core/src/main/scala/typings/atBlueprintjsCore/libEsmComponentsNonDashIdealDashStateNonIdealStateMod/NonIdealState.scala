@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsNonDashIdealDashStateNonIdealStateMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/non-ideal-state/nonIdealState", "NonIdealState")
 @js.native
 class NonIdealState ()
-  extends PureComponent[INonIdealStateProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[INonIdealStateProps, js.Object, js.Object] {
   var maybeRenderVisual: js.Any = js.native
 }
 

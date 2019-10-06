@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTagTagMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/tag/tag", "Tag")
 @js.native
 class Tag ()
-  extends PureComponent[ITagProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[ITagProps, js.Object, js.Object] {
   var onRemoveClick: js.Any = js.native
 }
 

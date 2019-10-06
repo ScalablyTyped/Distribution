@@ -9,11 +9,9 @@ import typings.antd.esListItemMod.ListItemProps
 import typings.antd.esStepsMod.StepProps
 import typings.antd.esTabsMod.TabPaneProps
 import typings.antd.esTimelineTimelineItemMod.TimeLineItemProps
-import typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.esTreeTreeMod.AntTreeNodeProps
 import typings.antd.esTypographyBaseMod.InternalBlockProps
-import typings.antd.esTypographyTypographyMod.InternalTypographyProps
 import typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
@@ -203,8 +201,6 @@ object antdComponents extends antdProps {
   @scala.inline
   def Rate: ComponentType[typings.antd.esRateMod.RateProps] = js.constructorOf[typings.antd.esRateMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esRateMod.RateProps]]
   @scala.inline
-  def RenderListBody: ComponentType[TransferListBodyProps] = typings.antd.esTransferRenderListBodyMod.default.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTransferRenderListBodyMod.TransferListBodyProps]]
-  @scala.inline
   def Result: ComponentType[typings.antd.esResultMod.ResultProps] = typings.antd.esResultMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esResultMod.ResultProps]]
   @scala.inline
   def Row: ComponentType[typings.antd.esGridRowMod.RowProps] = js.constructorOf[typings.antd.esRowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esGridRowMod.RowProps]]
@@ -273,7 +269,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def TreeTreeNode: ComponentType[AntTreeNodeProps] = typings.antd.esMod.Tree.TreeNode.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTreeTreeMod.AntTreeNodeProps]]
   @scala.inline
-  def Typography: ComponentType[InternalTypographyProps] = typings.antd.esTypographyTypographyMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTypographyTypographyMod.InternalTypographyProps]]
+  def Typography: ComponentType[typings.antd.esTypographyTypographyMod.TypographyProps] = typings.antd.esTypographyTypographyMod.default.asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esTypographyTypographyMod.TypographyProps]]
   @scala.inline
   def Upload: ComponentType[typings.antd.esUploadInterfaceMod.UploadProps] = js.constructorOf[typings.antd.esUploadMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.antd.esUploadInterfaceMod.UploadProps]]
 }

@@ -567,7 +567,6 @@
 | 0.8038732979262541 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 0.8037992489077195 | [react-apollo](./r/react-apollo) | React data container for Apollo Client
 | 0.8035657170021379 | [node-emoji](./n/node-emoji) | simple emoji support for node.js projects
-| 0.8035355572711975 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c
 | 0.803504223244759 | [json-parse-better-errors](./j/json-parse-better-errors) | JSON.parse with context information on error
 | 0.8033415955995176 | [lodash_dot_intersection](./l/lodash_dot_intersection) | The lodash method _.intersection exported as a mod
 | 0.8033164458457742 | [builtin-modules](./b/builtin-modules) | List of the Node.js builtin modules
@@ -2511,7 +2510,6 @@
 | 0.693555245048789 | [resize-observer-polyfill](./r/resize-observer-polyfill) | A polyfill for the Resize Observer API
 | 0.6934963297338981 | [checkstyle-formatter](./c/checkstyle-formatter) | Simple Checkstyle data formatter
 | 0.6934824475138802 | [format-number](./f/format-number) | Formats numbers with separators every 3 digits and
-| 0.6934499594434018 | [react-async](./r/react-async) | React component for declarative promise resolution
 | 0.6934099909608104 | [gulp-strip-debug](./g/gulp-strip-debug) | Strip console and debugger statements from JavaScr
 | 0.6932915793026317 | [idyll-ast](./i/idyll-ast) | Utilities for manipulating Idyll's AST
 | 0.6932898126162995 | [pure-render-decorator](./p/pure-render-decorator) | Makes React components pure.
@@ -3871,7 +3869,6 @@
 | 0.6326667378784236 | [sitemap2](./s/sitemap2) | Sitemap-generating framework
 | 0.6325980191863104 | [react-native-view-shot](./r/react-native-view-shot) | Capture a React Native view to an image
 | 0.6325319869074447 | [pg-large-object](./p/pg-large-object) | Large object support for PostgreSQL clients (node-
-| 0.6325267243971521 | [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des
 | 0.6323187764430291 | [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation
 | 0.6322792420630108 | [micro-events](./m/micro-events) | A very, very simple event emitter implementation.
 | 0.6322737220077181 | [decode-uri-component](./d/decode-uri-component) | A better decodeURIComponent
@@ -6675,7 +6672,6 @@
 | 0.25026689807248026 | [reach__window-size](./r/reach__window-size) | Measure the window size in React
 | 0.25016096079191413 | [langmap](./l/langmap) | List of all the known languages in their English a
 | 0.24988564728852566 | [tinder](./t/tinder) | Programmatically access the Tinder dating service 
-| 0.24966519183907 | [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu.
 | 0.249547156748934 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion.
 | 0.24928470318201168 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables
 | 0.24845831491339465 | [lodash_dot_isstring](./l/lodash_dot_isstring) | The lodash method _.isString exported as a module.

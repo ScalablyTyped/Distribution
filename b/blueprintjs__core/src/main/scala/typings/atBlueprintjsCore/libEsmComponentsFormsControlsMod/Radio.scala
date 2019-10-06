@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Radio")
 @js.native
 class Radio ()
-  extends PureComponent[IRadioProps, js.Object, js.Any]
+  extends AbstractPureComponent2[IRadioProps, js.Object, js.Object]
 
 /* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Radio")

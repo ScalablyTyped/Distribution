@@ -27,8 +27,6 @@ class Suggest[T] ()
   var selectText: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSuggest(_prevProps: ISuggestProps[T], prevState: ISuggestState[T]): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MSuggest(nextProps: ISuggestProps[T]): Unit = js.native
 }
 
 /* static members */

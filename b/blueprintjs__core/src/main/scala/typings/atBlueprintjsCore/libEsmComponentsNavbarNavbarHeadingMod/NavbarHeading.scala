@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsNavbarNavbarHeadingMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarHeading", "NavbarHeading")
 @js.native
 class NavbarHeading ()
-  extends PureComponent[INavbarHeadingProps, js.Object, js.Any]
+  extends AbstractPureComponent2[INavbarHeadingProps, js.Object, js.Object]
 
 /* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarHeading", "NavbarHeading")

@@ -1,7 +1,8 @@
 package typings.atBlueprintjsCore.libEsmComponentsTabsTabsMod
 
+import typings.atBlueprintjsCore.Anon_SelectedTabId
 import typings.atBlueprintjsCore.TypeofClassTab
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.react.reactMod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
@@ -10,7 +11,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs")
 @js.native
-class Tabs () extends AbstractPureComponent[ITabsProps, ITabsState] {
+class Tabs ()
+  extends AbstractPureComponent2[ITabsProps, ITabsState, js.Object] {
   def this(props: ITabsProps) = this()
   var getInitialSelectedTabId: js.Any = js.native
   var getKeyCodeDirection: js.Any = js.native
@@ -35,8 +37,6 @@ class Tabs () extends AbstractPureComponent[ITabsProps, ITabsState] {
   def componentDidMount_MTabs(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTabs(prevProps: ITabsProps, prevState: ITabsState): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTabs(hasSelectedTabId: ITabsProps): Unit = js.native
 }
 
 /* static members */
@@ -48,5 +48,6 @@ object Tabs extends js.Object {
   var Tab: TypeofClassTab = js.native
   var defaultProps: Partial[ITabsProps] = js.native
   var displayName: String = js.native
+  def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): Anon_SelectedTabId = js.native
 }
 

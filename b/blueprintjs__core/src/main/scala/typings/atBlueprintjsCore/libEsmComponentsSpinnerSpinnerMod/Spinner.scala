@@ -3,7 +3,7 @@ package typings.atBlueprintjsCore.libEsmComponentsSpinnerSpinnerMod
 import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`100`
 import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`20`
 import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`50`
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner")
 @js.native
 class Spinner ()
-  extends AbstractPureComponent[ISpinnerProps, js.Object] {
+  extends AbstractPureComponent2[ISpinnerProps, js.Object, js.Object] {
   /**
     * Resolve size to a pixel value.
     * Size can be set by className, props, default, or minimum constant.

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsProgressDashBarProgressBarMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/progress-bar/progressBar", "ProgressBar")
 @js.native
 class ProgressBar ()
-  extends PureComponent[IProgressBarProps, js.Object, js.Any]
+  extends AbstractPureComponent2[IProgressBarProps, js.Object, js.Object]
 
 /* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/progress-bar/progressBar", "ProgressBar")

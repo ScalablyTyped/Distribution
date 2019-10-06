@@ -1,13 +1,14 @@
 package typings.atBlueprintjsCore.libEsmComponentsEditableDashTextEditableTextMod
 
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText")
 @js.native
-class EditableText () extends AbstractPureComponent[IEditableTextProps, IEditableTextState] {
+class EditableText ()
+  extends AbstractPureComponent2[IEditableTextProps, IEditableTextState, js.Object] {
   def this(props: IEditableTextProps) = this()
   def this(props: IEditableTextProps, context: js.Any) = this()
   var handleFocus: js.Any = js.native
@@ -21,9 +22,7 @@ class EditableText () extends AbstractPureComponent[IEditableTextProps, IEditabl
   @JSName("componentDidMount")
   def componentDidMount_MEditableText(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MEditableText(`_`: IEditableTextProps, prevState: IEditableTextState): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MEditableText(nextProps: IEditableTextProps): Unit = js.native
+  def componentDidUpdate_MEditableText(prevProps: IEditableTextProps, prevState: IEditableTextState): Unit = js.native
   def toggleEditing(): Unit = js.native
 }
 

@@ -2,7 +2,7 @@ package typings.atBlueprintjsCore.libEsmComponentsMenuMenuMod
 
 import typings.atBlueprintjsCore.TypeofClassMenuDivider
 import typings.atBlueprintjsCore.TypeofClassMenuItem
-import typings.react.reactMod.Component
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu")
 @js.native
 class Menu ()
-  extends Component[IMenuProps, js.Object, js.Any]
+  extends AbstractPureComponent2[IMenuProps, js.Object, js.Object]
 
 /* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu")

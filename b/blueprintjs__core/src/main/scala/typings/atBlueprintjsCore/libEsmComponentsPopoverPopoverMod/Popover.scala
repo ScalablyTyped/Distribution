@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod
 
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "Popover")
 @js.native
-class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
+class Popover ()
+  extends AbstractPureComponent2[IPopoverProps, IPopoverState, js.Object] {
   var cancelOpenTimeout: js.Any = js.native
   var getIsOpen: js.Any = js.native
   var getPopperModifiers: js.Any = js.native
@@ -45,9 +46,7 @@ class Popover () extends AbstractPureComponent[IPopoverProps, IPopoverState] {
   @JSName("componentDidMount")
   def componentDidMount_MPopover(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MPopover(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MPopover(nextProps: IPopoverProps): Unit = js.native
+  def componentDidUpdate_MPopover(`_`: IPopoverProps, __ : IPopoverState, snapshot: js.Object): Unit = js.native
   /**
     * Instance method to instruct the `Popover` to recompute its position.
     *

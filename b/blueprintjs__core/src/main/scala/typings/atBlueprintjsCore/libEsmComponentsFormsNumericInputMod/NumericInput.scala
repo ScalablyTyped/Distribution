@@ -1,6 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsNumericInputMod
 
-import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent
+import typings.atBlueprintjsCore.Anon_StepMaxPrecision
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,14 +9,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput")
 @js.native
-class NumericInput () extends AbstractPureComponent[HTMLInputProps with INumericInputProps, INumericInputState] {
+class NumericInput () extends AbstractPureComponent2[HTMLInputProps with INumericInputProps, INumericInputState, INumericInputSnapshot] {
   var decrementButtonHandlers: js.Any = js.native
   var delta: js.Any = js.native
   var didPasteEventJustOccur: js.Any = js.native
   var getButtonEventHandlers: js.Any = js.native
   var getIncrementDelta: js.Any = js.native
   var getSanitizedValue: js.Any = js.native
-  var getStepMaxPrecision: js.Any = js.native
   var handleButtonClick: js.Any = js.native
   var handleContinuousChange: js.Any = js.native
   var handleInputBlur: js.Any = js.native
@@ -36,9 +36,9 @@ class NumericInput () extends AbstractPureComponent[HTMLInputProps with INumeric
   var stopContinuousChange: js.Any = js.native
   var updateDelta: js.Any = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MNumericInput(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MNumericInput(nextProps: HTMLInputProps with INumericInputProps): Unit = js.native
+  def componentDidUpdate_MNumericInput(prevProps: INumericInputProps, prevState: INumericInputState, snapshot: INumericInputSnapshot): Unit = js.native
+  @JSName("getSnapshotBeforeUpdate")
+  def getSnapshotBeforeUpdate_MNumericInput(prevProps: INumericInputProps): INumericInputSnapshot = js.native
 }
 
 /* static members */
@@ -51,5 +51,7 @@ object NumericInput extends js.Object {
   var VALUE_ZERO: String = js.native
   var defaultProps: INumericInputProps = js.native
   var displayName: String = js.native
+  var getStepMaxPrecision: js.Any = js.native
+  def getDerivedStateFromProps(props: INumericInputProps): Anon_StepMaxPrecision = js.native
 }
 

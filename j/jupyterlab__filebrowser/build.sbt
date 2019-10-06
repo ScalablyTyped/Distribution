@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__filebrowser"
-version := "1.1.3-e98b93"
+version := "1.1.3-543834"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.3-833f2e",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.3-8c65cc",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.1.0-88d074",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.1.0-c62250",
-  "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.1.3-28a2c6",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.3-eb771a",
+  "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.1.3-688e28",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.3-61ee0d",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.3.0-f095c5",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.3-df9a0b",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.3-96b8b0",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.4.0-d95662",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.1.1-a188ca",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.1.2-4837fa",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.1.2-d57423",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-01d0da",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.1-f2c38b",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-f8973d",
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-ddfa64",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.2-1caab7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-cca292",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3",
   "org.scalablytyped" %%% "typestyle" % "2.0.4-93529a")
 publishArtifact in packageDoc := false

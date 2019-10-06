@@ -38,7 +38,7 @@ object libEsmCommonAbstractPureComponentMod extends js.Object {
       * [propTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) feature.
       * Like propTypes, these runtime checks run only in development mode.
       */
-    /* protected */ def validateProps(`_`: P with Anon_Children): Unit = js.native
+    /* protected */ def validateProps(_props: P with Anon_Children): Unit = js.native
   }
   
 }

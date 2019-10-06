@@ -1,5 +1,6 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
+import typings.atBlueprintjsCore.Anon_StepMaxPrecision
 import typings.atBlueprintjsCore.libEsmComponentsFormsNumericInputMod.INumericInputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,5 +21,7 @@ object NumericInput extends js.Object {
   var VALUE_ZERO: String = js.native
   var defaultProps: INumericInputProps = js.native
   var displayName: String = js.native
+  var getStepMaxPrecision: js.Any = js.native
+  def getDerivedStateFromProps(props: INumericInputProps): Anon_StepMaxPrecision = js.native
 }
 

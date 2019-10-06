@@ -1675,7 +1675,6 @@
 | [emoji-regex](./e/emoji-regex) | A regular expression to match all Emoji-only symbo | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for  | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
 | [emotion](./e/emotion) | The Next Generation of CSS-in-JS. | styles, emotion, react, css, css-in-js |
-| [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c | react, theme, theming, emotion, cssinjs, css-in-js |
 | [emotion__cache](./e/emotion__cache) | emotion's cache | - |
 | [emotion__css](./e/emotion__css) | a function to serialize css and object styless | - |
 | [emotion__hash](./e/emotion__hash) | A MurmurHash2 implementation | - |
@@ -5495,7 +5494,6 @@
 | [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server | - |
 | [reach__combobox](./r/reach__combobox) | Accessible React Combobox (Autocomplete). | - |
 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog. | - |
-| [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu. | - |
 | [reach__rect](./r/reach__rect) | Measure React elements position in the DOM | - |
 | [reach__router](./r/reach__router) | Next generation Routing for React. | react, react router |
 | [reach__skip-nav](./r/reach__skip-nav) | Skip navigation links for screen reader and keyboa | - |
@@ -5527,7 +5525,6 @@
 | [react-aria-live](./r/react-aria-live) | Add aria-live messaging to your React app | react-component |
 | [react-aria-menubutton](./r/react-aria-menubutton) | A fully accessible and flexible React-powered menu | react, reactjs, react-component, aria, accessibility, menu, dropdown, widget |
 | [react-aria-modal](./r/react-aria-modal) | A fully accessible and flexible React modal built  | react, react-component, modal, accessibility, accessible, dialog |
-| [react-async](./r/react-async) | React component for declarative promise resolution | react, async, promise, fetch, hook |
 | [react-autocomplete](./r/react-autocomplete) | Accessible, extensible, Autocomplete for React.js | - |
 | [react-autosuggest](./r/react-autosuggest) | WAI-ARIA compliant React autosuggest component | autosuggest, autocomplete, auto-suggest, auto-complete, auto suggest, auto complete, react autosuggest, react autocomplete, react auto-suggest, react auto-complete, react auto suggest, react auto complete, react-autosuggest, react-autocomplete, react-auto-suggest, react-auto-complete, react-component |
 | [react-avatar-editor](./r/react-avatar-editor) | Avatar / profile picture component. Resize and cro | react-component, reactjs, react, canvas, avatar, editor, profile, image |
@@ -7037,7 +7034,6 @@
 | [textversionjs](./t/textversionjs) | A tool for generating the text version of an html  | email, html, text, version, plaintext |
 | [texzilla](./t/texzilla) | A LALR Javascript LaTeX-to-MathML converter compat | mathml,tex,latex,unicode |
 | [tgfancy](./t/tgfancy) | A Fancy, Higher-Level Wrapper for Telegram Bot API | telegram, bot, api |
-| [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des | - |
 | [theming](./t/theming) | Unified CSSinJS theming solution for React | react, theme, theming, styled-components, jss, cssinjs, css-in-js |
 | [then-eos](./t/then-eos) | Promise-based end-of-stream. | end, eos, promise, stream |
 | [theo](./t/theo) | Design Tokens formatter | css, design, properties, tokens, sass, scss, stylus, less, iOS, Android, aura |

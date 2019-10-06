@@ -1,13 +1,14 @@
 package typings.atBlueprintjsDatetime.libEsmDatePickerMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker")
 @js.native
-class DatePicker protected () extends AbstractPureComponent[IDatePickerProps, IDatePickerState] {
+class DatePicker protected ()
+  extends AbstractPureComponent2[IDatePickerProps, IDatePickerState, js.Object] {
   def this(props: IDatePickerProps) = this()
   def this(props: IDatePickerProps, context: js.Any) = this()
   var computeValidDateInSpecifiedMonthYear: js.Any = js.native
@@ -31,8 +32,10 @@ class DatePicker protected () extends AbstractPureComponent[IDatePickerProps, ID
     * Update `value` by invoking `onChange` (always) and setting state (if uncontrolled).
     */
   var updateValue: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDatePicker(nextProps: IDatePickerProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState, snapshot: js.Object): Unit = js.native
 }
 
 /* static members */

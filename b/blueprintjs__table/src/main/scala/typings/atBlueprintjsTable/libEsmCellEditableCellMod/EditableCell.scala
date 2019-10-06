@@ -27,9 +27,7 @@ class EditableCell protected ()
   @JSName("componentDidMount")
   def componentDidMount_MEditableCell(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MEditableCell(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MEditableCell(nextProps: IEditableCellProps): Unit = js.native
+  def componentDidUpdate_MEditableCell(prevProps: IEditableCellProps): Unit = js.native
   def renderHotkeys(): Element = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MEditableCell(nextProps: IEditableCellProps, nextState: IEditableCellState): Boolean = js.native

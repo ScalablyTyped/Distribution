@@ -174,6 +174,8 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-phone`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-video`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`multi-select`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-grid-item`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layer`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layers`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-link`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-object`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-person`
@@ -376,6 +378,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.label
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layer
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layers
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layout
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.learning
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.lifesaver
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.lightbulb
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.link
@@ -446,6 +449,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.sort
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.square
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.star
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.stop
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.stopwatch
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.strikethrough
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.style
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tag
@@ -737,6 +741,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val LAYOUT_LINEAR: `layout-linear` = js.native
   val LAYOUT_SKEW_GRID: `layout-skew-grid` = js.native
   val LAYOUT_SORTED_CLUSTERS: `layout-sorted-clusters` = js.native
+  val LEARNING: learning = js.native
   val LEFT_JOIN: `left-join` = js.native
   val LESS_THAN: `less-than` = js.native
   val LESS_THAN_OR_EQUAL_TO: `less-than-or-equal-to` = js.native
@@ -774,6 +779,8 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val MULTI_SELECT: `multi-select` = js.native
   val MUSIC: music = js.native
   val NEW_GRID_ITEM: `new-grid-item` = js.native
+  val NEW_LAYER: `new-layer` = js.native
+  val NEW_LAYERS: `new-layers` = js.native
   val NEW_LINK: `new-link` = js.native
   val NEW_OBJECT: `new-object` = js.native
   val NEW_PERSON: `new-person` = js.native
@@ -885,6 +892,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val STEP_CHART: `step-chart` = js.native
   val STEP_FORWARD: `step-forward` = js.native
   val STOP: stop = js.native
+  val STOPWATCH: stopwatch = js.native
   val STRIKETHROUGH: strikethrough = js.native
   val STYLE: style = js.native
   val SWAP_HORIZONTAL: `swap-horizontal` = js.native

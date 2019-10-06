@@ -2,6 +2,7 @@ package typings.pgDashPromise.pgDashPromiseMod
 
 import typings.pgDashPromise.Anon_CapSQL
 import typings.pgDashPromise.Anon_RawType
+import typings.std.BigInt
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,8 +49,9 @@ trait IFormatting extends js.Object {
   def json(data: js.Function0[_], raw: Boolean): String = js.native
   def name(name: js.Any): String = js.native
   def name(name: js.Function0[_]): String = js.native
-  def number(value: js.Function0[Double]): String = js.native
+  def number(value: js.Function0[Double | BigInt]): String = js.native
   def number(value: Double): String = js.native
+  def number(value: BigInt): String = js.native
   def text(value: js.Any): String = js.native
   def text(value: js.Any, raw: Boolean): String = js.native
   def text(value: js.Function0[_]): String = js.native

@@ -28,6 +28,7 @@ class QueryList[T] protected ()
     * Get the next enabled item, moving in the given direction from the start
     * index. A `null` return value means no suitable item was found.
     * @param direction amount to move in each iteration, typically +/-1
+    * @param startIndex item to start iteration
     */
   var getNextActiveItem: js.Any = js.native
   var handleItemCreate: js.Any = js.native
@@ -54,8 +55,6 @@ class QueryList[T] protected ()
   var wouldCreatedItemMatchSomeExistingItem: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MQueryList(prevProps: IQueryListProps[T]): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MQueryList(nextProps: IQueryListProps[T]): Unit = js.native
   def scrollActiveItemIntoView(): Unit = js.native
   def setQuery(query: String): Unit = js.native
   def setQuery(

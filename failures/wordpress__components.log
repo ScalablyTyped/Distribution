@@ -699,11 +699,36 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(atWordpressComponents) / Name(atWordpressComponentsMod) / Name(withFilters) [id => @wordpress/components, phase => scala.js, this => Name(typings) / Name(atWordpressComponents) / Name(atWordpressComponentsMod) / Name(withFilters)] 
 [debug] PhaseRunner.scala:84 Success [id => @wordpress/components, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building wordpress__components... [id => @wordpress/components, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/atWordpressComponents/iconMod/Icon/package.scala:11:41
+[error] Phase3Compile.scala:240 [E] [E5] src/main/scala/typings/atWordpressComponents/atWordpressComponentsComponents.scala:26:219
+[E]      missing argument list for method apply in object SelectControl
+[E]      Unapplied methods are only converted to functions when a function type is expected.
+[E]      You can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.
+[E]      L26:   def SelectControl[T /* <: String | js.Array[String] */]: ComponentType[typings.atWordpressComponents.selectDashControlMod.SelectControl.Props[T]] = typings.atWordpressComponents.atWordpressComponentsMod.SelectControl[T].asInstanceOf[typings.react.reactMod.ComponentType[typings.atWordpressComponents.selectDashControlMod.SelectControl.Props[T]]]
+[E]                                                                                                                                                                                                                                     ^
+[E] [E4] src/main/scala/typings/atWordpressComponents/atWordpressComponentsComponents.scala:24:180
+[E]      missing argument list for method apply in object RadioControl
+[E]      Unapplied methods are only converted to functions when a function type is expected.
+[E]      You can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.
+[E]      L24:   def RadioControl[T]: ComponentType[typings.atWordpressComponents.radioDashControlMod.RadioControl.Props[T]] = typings.atWordpressComponents.atWordpressComponentsMod.RadioControl[T].asInstanceOf[typings.react.reactMod.ComponentType[typings.atWordpressComponents.radioDashControlMod.RadioControl.Props[T]]]
+[E]                                                                                                                                                                                              ^
+[E] [E3] src/main/scala/typings/atWordpressComponents/atWordpressComponentsComponents.scala:22:144
+[E]      missing argument list for method apply in object Icon
+[E]      Unapplied methods are only converted to functions when a function type is expected.
+[E]      You can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.
+[E]      L22:   def Icon[P]: ComponentType[typings.atWordpressComponents.iconMod.Icon.Props[P]] = typings.atWordpressComponents.atWordpressComponentsMod.Icon[P].asInstanceOf[typings.react.reactMod.ComponentType[typings.atWordpressComponents.iconMod.Icon.Props[P]]]
+[E]                                                                                                                                                          ^
+[E] [E2] src/main/scala/typings/atWordpressComponents/iconMod/Icon/package.scala:11:41
 [E]      not found: type U
 [E]      L11:   type AdditionalProps[T] = js.Object | U
 [E]                                                   ^
-[E] src/main/scala/typings/atWordpressComponents/iconMod/Icon/package.scala: L11 [E1]
+[E] [E1] src/main/scala/typings/atWordpressComponents/atWordpressComponentsComponents.scala:12:117
+[E]      missing argument list for method apply in object Autocomplete
+[E]      Unapplied methods are only converted to functions when a function type is expected.
+[E]      You can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.
+[E]      L12:   def Autocomplete[T]: ComponentType[Props[T]] = typings.atWordpressComponents.atWordpressComponentsMod.Autocomplete[T].asInstanceOf[typings.react.reactMod.ComponentType[typings.atWordpressComponents.autocompleteMod.Autocomplete.Props[T]]]
+[E]                                                                                                                               ^
+[E] src/main/scala/typings/atWordpressComponents/iconMod/Icon/package.scala: L11 [E2]
+[E] src/main/scala/typings/atWordpressComponents/atWordpressComponentsComponents.scala: L12 [E1], L22 [E3], L24 [E4], L26 [E5]
 [E] Failed to compile 'wordpress__components'
  [id => @wordpress/components, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@wordpress/components => Compilation failed] [id => @wordpress/components, phase => build] 

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsSliderSliderMod
 
-import typings.atBlueprintjsCore.libEsmCommonAbstractPureComponentMod.AbstractPureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/slider/slider", "Slider")
 @js.native
 class Slider ()
-  extends AbstractPureComponent[ISliderProps, js.Object]
+  extends AbstractPureComponent2[ISliderProps, js.Object, js.Object]
 
 /* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/slider/slider", "Slider")

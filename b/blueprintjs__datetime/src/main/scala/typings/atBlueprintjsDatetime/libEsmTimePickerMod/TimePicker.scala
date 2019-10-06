@@ -29,8 +29,8 @@ class TimePicker ()
   var shiftTime: js.Any = js.native
   var updateState: js.Any = js.native
   var updateTime: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTimePicker(nextProps: ITimePickerProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MTimePicker(prevProps: ITimePickerProps): Unit = js.native
 }
 
 /* static members */

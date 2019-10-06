@@ -12,7 +12,7 @@ object atJupyterlabExtensionmanagerComponents extends atJupyterlabExtensionmanag
   @scala.inline
   def CollapsibleSection_ : ComponentType[IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection_].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection.IProperties]]
   @scala.inline
-  def ListView: ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties] = typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.^.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties]]
+  def ListView: ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties] = typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.ListView.asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties]]
   @scala.inline
   def SearchBar: ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties]]
   @scala.inline

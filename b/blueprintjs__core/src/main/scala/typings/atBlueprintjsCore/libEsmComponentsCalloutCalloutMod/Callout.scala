@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsCalloutCalloutMod
 
-import typings.react.reactMod.PureComponent
+import typings.atBlueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/callout/callout", "Callout")
 @js.native
 class Callout ()
-  extends PureComponent[ICalloutProps, js.Object, js.Any] {
+  extends AbstractPureComponent2[ICalloutProps, js.Object, js.Object] {
   var getIconName: js.Any = js.native
 }
 

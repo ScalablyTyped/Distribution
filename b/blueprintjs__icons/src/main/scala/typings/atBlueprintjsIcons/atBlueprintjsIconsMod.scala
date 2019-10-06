@@ -464,6 +464,10 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E2
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E3
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE7E4
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE900
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE901
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE902
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE903
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE904
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`+`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`?`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`BACKSLASHu2191 `
@@ -644,6 +648,8 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-phone`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-video`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`multi-select`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-grid-item`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layer`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layers`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-link`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-object`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-person`
@@ -846,6 +852,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.label
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layer
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layers
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.layout
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.learning
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.lifesaver
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.lightbulb
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.link
@@ -916,6 +923,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.sort
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.square
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.star
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.stop
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.stopwatch
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.strikethrough
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.style
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tag
@@ -1213,6 +1221,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val LAYOUT_LINEAR: BACKSLASHuE6C3 = js.native
     val LAYOUT_SKEW_GRID: BACKSLASHuE612 = js.native
     val LAYOUT_SORTED_CLUSTERS: BACKSLASHuE6D4 = js.native
+    val LEARNING: BACKSLASHuE904 = js.native
     val LEFT_JOIN: BACKSLASHuE7A4 = js.native
     val LESS_THAN: BACKSLASHuE7E3 = js.native
     val LESS_THAN_OR_EQUAL_TO: BACKSLASHuE7E4 = js.native
@@ -1250,6 +1259,8 @@ object atBlueprintjsIconsMod extends js.Object {
     val MULTI_SELECT: BACKSLASHuE680 = js.native
     val MUSIC: BACKSLASHuE6A6 = js.native
     val NEW_GRID_ITEM: BACKSLASHuE747 = js.native
+    val NEW_LAYER: BACKSLASHuE902 = js.native
+    val NEW_LAYERS: BACKSLASHuE903 = js.native
     val NEW_LINK: BACKSLASHuE65C = js.native
     val NEW_OBJECT: BACKSLASHuE65D = js.native
     val NEW_PERSON: BACKSLASHuE6E9 = js.native
@@ -1361,6 +1372,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val STEP_CHART: BACKSLASHuE70F = js.native
     val STEP_FORWARD: BACKSLASHuE6AD = js.native
     val STOP: BACKSLASHuE6AA = js.native
+    val STOPWATCH: BACKSLASHuE901 = js.native
     val STRIKETHROUGH: BACKSLASHuE7A6 = js.native
     val STYLE: BACKSLASHuE601 = js.native
     val SWAP_HORIZONTAL: BACKSLASHuE745 = js.native
@@ -1689,6 +1701,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val LAYOUT_LINEAR: `layout-linear` = js.native
     val LAYOUT_SKEW_GRID: `layout-skew-grid` = js.native
     val LAYOUT_SORTED_CLUSTERS: `layout-sorted-clusters` = js.native
+    val LEARNING: learning = js.native
     val LEFT_JOIN: `left-join` = js.native
     val LESS_THAN: `less-than` = js.native
     val LESS_THAN_OR_EQUAL_TO: `less-than-or-equal-to` = js.native
@@ -1726,6 +1739,8 @@ object atBlueprintjsIconsMod extends js.Object {
     val MULTI_SELECT: `multi-select` = js.native
     val MUSIC: music = js.native
     val NEW_GRID_ITEM: `new-grid-item` = js.native
+    val NEW_LAYER: `new-layer` = js.native
+    val NEW_LAYERS: `new-layers` = js.native
     val NEW_LINK: `new-link` = js.native
     val NEW_OBJECT: `new-object` = js.native
     val NEW_PERSON: `new-person` = js.native
@@ -1837,6 +1852,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val STEP_CHART: `step-chart` = js.native
     val STEP_FORWARD: `step-forward` = js.native
     val STOP: stop = js.native
+    val STOPWATCH: stopwatch = js.native
     val STRIKETHROUGH: strikethrough = js.native
     val STYLE: style = js.native
     val SWAP_HORIZONTAL: `swap-horizontal` = js.native

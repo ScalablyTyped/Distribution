@@ -54,6 +54,8 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-link`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.train
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.redo
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layer`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.stopwatch
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.menu
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.trash
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`git-commit`
@@ -287,6 +289,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.hand
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`arrow-top-left`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.pause
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layers`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.phone
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`hand-up`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`git-branch`
@@ -370,6 +373,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`shopping-cart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`align-justify`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.slash
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.learning
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`timeline-line-chart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.clean
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.database

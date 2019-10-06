@@ -153,7 +153,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT23DOT5` extends js.Object
+  sealed trait `3DOT23DOT6` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -340,6 +340,9 @@ object antdStrings {
   
   @js.native
   sealed trait `break-all` extends js.Object
+  
+  @js.native
+  sealed trait `break-spaces` extends js.Object
   
   @js.native
   sealed trait `break-word` extends js.Object
@@ -2090,7 +2093,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT23DOT5`: `3DOT23DOT5` = "3.23.5".asInstanceOf[`3DOT23DOT5`]
+  def `3DOT23DOT6`: `3DOT23DOT6` = "3.23.6".asInstanceOf[`3DOT23DOT6`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2195,6 +2198,8 @@ object antdStrings {
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   @scala.inline
   def `break-all`: `break-all` = "break-all".asInstanceOf[`break-all`]
+  @scala.inline
+  def `break-spaces`: `break-spaces` = "break-spaces".asInstanceOf[`break-spaces`]
   @scala.inline
   def `break-word`: `break-word` = "break-word".asInstanceOf[`break-word`]
   @scala.inline

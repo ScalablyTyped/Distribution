@@ -10,6 +10,7 @@ trait CompressOptions extends js.Object {
   var arguments: js.UndefOr[Boolean] = js.undefined
   var arrows: js.UndefOr[Boolean] = js.undefined
   var booleans: js.UndefOr[Boolean] = js.undefined
+  var booleans_as_integers: js.UndefOr[Boolean] = js.undefined
   var collapse_vars: js.UndefOr[Boolean] = js.undefined
   var comparisons: js.UndefOr[Boolean] = js.undefined
   var computed_props: js.UndefOr[Boolean] = js.undefined
@@ -26,6 +27,7 @@ trait CompressOptions extends js.Object {
   var hoist_funs: js.UndefOr[Boolean] = js.undefined
   var hoist_props: js.UndefOr[Boolean] = js.undefined
   var hoist_vars: js.UndefOr[Boolean] = js.undefined
+  var ie8: js.UndefOr[Boolean] = js.undefined
   var if_return: js.UndefOr[Boolean] = js.undefined
   var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.undefined
   var join_vars: js.UndefOr[Boolean] = js.undefined
@@ -67,6 +69,7 @@ object CompressOptions {
     arguments: js.UndefOr[Boolean] = js.undefined,
     arrows: js.UndefOr[Boolean] = js.undefined,
     booleans: js.UndefOr[Boolean] = js.undefined,
+    booleans_as_integers: js.UndefOr[Boolean] = js.undefined,
     collapse_vars: js.UndefOr[Boolean] = js.undefined,
     comparisons: js.UndefOr[Boolean] = js.undefined,
     computed_props: js.UndefOr[Boolean] = js.undefined,
@@ -83,6 +86,7 @@ object CompressOptions {
     hoist_funs: js.UndefOr[Boolean] = js.undefined,
     hoist_props: js.UndefOr[Boolean] = js.undefined,
     hoist_vars: js.UndefOr[Boolean] = js.undefined,
+    ie8: js.UndefOr[Boolean] = js.undefined,
     if_return: js.UndefOr[Boolean] = js.undefined,
     `inline`: Boolean | InlineFunctions = null,
     join_vars: js.UndefOr[Boolean] = js.undefined,
@@ -121,6 +125,7 @@ object CompressOptions {
     if (!js.isUndefined(arguments)) __obj.updateDynamic("arguments")(arguments)
     if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
     if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans)
+    if (!js.isUndefined(booleans_as_integers)) __obj.updateDynamic("booleans_as_integers")(booleans_as_integers)
     if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars)
     if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons)
     if (!js.isUndefined(computed_props)) __obj.updateDynamic("computed_props")(computed_props)
@@ -137,6 +142,7 @@ object CompressOptions {
     if (!js.isUndefined(hoist_funs)) __obj.updateDynamic("hoist_funs")(hoist_funs)
     if (!js.isUndefined(hoist_props)) __obj.updateDynamic("hoist_props")(hoist_props)
     if (!js.isUndefined(hoist_vars)) __obj.updateDynamic("hoist_vars")(hoist_vars)
+    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8)
     if (!js.isUndefined(if_return)) __obj.updateDynamic("if_return")(if_return)
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (!js.isUndefined(join_vars)) __obj.updateDynamic("join_vars")(join_vars)

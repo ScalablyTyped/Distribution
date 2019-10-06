@@ -427,8 +427,6 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   def FontIcon: ComponentType[IFontIconProps] = typings.officeDashUiDashFabricDashReact.libIconMod.FontIcon.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IFontIconProps]]
   @scala.inline
-  def GetCheck: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod.getCheck.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
-  @scala.inline
   def Grid: ComponentType[IGridProps] = typings.officeDashUiDashFabricDashReact.libGridMod.Grid.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod.IGridProps]]
   @scala.inline

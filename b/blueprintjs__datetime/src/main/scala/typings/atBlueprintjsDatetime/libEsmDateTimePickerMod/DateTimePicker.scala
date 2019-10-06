@@ -1,6 +1,6 @@
 package typings.atBlueprintjsDatetime.libEsmDateTimePickerMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractPureComponent2
 import typings.atBlueprintjsDatetime.libEsmDatePickerMod.IDatePickerProps
 import typings.std.Date
 import scala.scalajs.js
@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/datetime/lib/esm/dateTimePicker", "DateTimePicker")
 @js.native
-class DateTimePicker () extends AbstractPureComponent[IDateTimePickerProps, IDateTimePickerState] {
+class DateTimePicker ()
+  extends AbstractPureComponent2[IDateTimePickerProps, IDateTimePickerState, js.Object] {
   def this(props: IDateTimePickerProps) = this()
   def this(props: IDateTimePickerProps, context: js.Any) = this()
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDateTimePicker(nextProps: IDatePickerProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDateTimePicker(prevProps: IDatePickerProps): Unit = js.native
   def handleDateChange(dateValue: Date, isUserChange: Boolean): Unit = js.native
   def handleTimeChange(timeValue: Date): Unit = js.native
 }
