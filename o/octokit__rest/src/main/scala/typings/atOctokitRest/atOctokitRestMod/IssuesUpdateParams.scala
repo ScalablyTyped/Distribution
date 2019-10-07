@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IssuesUpdateParams extends js.Object {
   /**
-    * Login for the user that this issue should be assigned to. **This field is deprecated.**
-    */
-  var assignee: js.UndefOr[String] = js.undefined
-  /**
     * Logins for Users to assign to this issue. Pass one or more user logins to _replace_ the set of assignees on this Issue. Send an empty array (`[]`) to clear all assignees from the Issue. _NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise._
     */
   var assignees: js.UndefOr[js.Array[String]] = js.undefined
@@ -46,7 +42,6 @@ object IssuesUpdateParams {
     issue_number: Double,
     owner: String,
     repo: String,
-    assignee: String = null,
     assignees: js.Array[String] = null,
     body: String = null,
     labels: js.Array[String] = null,
@@ -55,7 +50,6 @@ object IssuesUpdateParams {
     title: String = null
   ): IssuesUpdateParams = {
     val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (assignees != null) __obj.updateDynamic("assignees")(assignees)
     if (body != null) __obj.updateDynamic("body")(body)
     if (labels != null) __obj.updateDynamic("labels")(labels)

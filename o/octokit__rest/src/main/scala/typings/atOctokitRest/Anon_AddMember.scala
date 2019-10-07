@@ -17,6 +17,7 @@ import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionCommentRespon
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsCreateParamsDeprecatedPermission
 import typings.atOctokitRest.atOctokitRestMod.TeamsCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionCommentParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsDeleteDiscussionParams
@@ -61,6 +62,7 @@ import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateDiscussionCommentRespon
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateDiscussionParams
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateDiscussionResponse
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateParamsDeprecatedPermission
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,6 +82,7 @@ trait Anon_AddMember extends js.Object {
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * @deprecated octokit.teams.addMember() is deprecated, see https://developer.github.com/v3/teams/members/#add-team-member
     */
   @JSName("addMember")
   var addMember_Original: Anon_EndpointParamsPromiseRequestOptionsResponseTeamsAddMemberParams = js.native
@@ -174,6 +177,7 @@ trait Anon_AddMember extends js.Object {
     * We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.
     *
     * To list members in a team, the team must be visible to the authenticated user.
+    * @deprecated octokit.teams.getMember() is deprecated, see https://developer.github.com/v3/teams/members/#get-team-member
     */
   @JSName("getMember")
   var getMember_Original: Anon_EndpointParamsAnyResponsePromiseRequestOptionsTeamsGetMemberParams = js.native
@@ -240,6 +244,7 @@ trait Anon_AddMember extends js.Object {
     * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
     *
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member
     */
   @JSName("removeMember")
   var removeMember_Original: Anon_EndpointParamsAnyResponsePromiseRequestOptionsTeamsRemoveMemberParams = js.native
@@ -296,6 +301,7 @@ trait Anon_AddMember extends js.Object {
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * @deprecated octokit.teams.addMember() is deprecated, see https://developer.github.com/v3/teams/members/#add-team-member
     */
   def addMember(): js.Promise[Response[TeamsAddMemberResponse]] = js.native
   def addMember(params: RequestOptions with TeamsAddMemberParams): js.Promise[Response[TeamsAddMemberResponse]] = js.native
@@ -337,7 +343,7 @@ trait Anon_AddMember extends js.Object {
     * To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
     */
   def create(): js.Promise[Response[TeamsCreateResponse]] = js.native
-  def create(params: RequestOptions with TeamsCreateParams): js.Promise[Response[TeamsCreateResponse]] = js.native
+  def create(params: RequestOptions with (TeamsCreateParams | TeamsCreateParamsDeprecatedPermission)): js.Promise[Response[TeamsCreateResponse]] = js.native
   /**
     * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
@@ -392,6 +398,7 @@ trait Anon_AddMember extends js.Object {
     * We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.
     *
     * To list members in a team, the team must be visible to the authenticated user.
+    * @deprecated octokit.teams.getMember() is deprecated, see https://developer.github.com/v3/teams/members/#get-team-member
     */
   def getMember(): js.Promise[AnyResponse] = js.native
   def getMember(params: RequestOptions with TeamsGetMemberParams): js.Promise[AnyResponse] = js.native
@@ -456,6 +463,7 @@ trait Anon_AddMember extends js.Object {
     * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
     *
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member
     */
   def removeMember(): js.Promise[AnyResponse] = js.native
   def removeMember(params: RequestOptions with TeamsRemoveMemberParams): js.Promise[AnyResponse] = js.native
@@ -489,7 +497,7 @@ trait Anon_AddMember extends js.Object {
     * **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
     */
   def update(): js.Promise[Response[TeamsUpdateResponse]] = js.native
-  def update(params: RequestOptions with TeamsUpdateParams): js.Promise[Response[TeamsUpdateResponse]] = js.native
+  def update(params: RequestOptions with (TeamsUpdateParams | TeamsUpdateParamsDeprecatedPermission)): js.Promise[Response[TeamsUpdateResponse]] = js.native
   /**
     * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */

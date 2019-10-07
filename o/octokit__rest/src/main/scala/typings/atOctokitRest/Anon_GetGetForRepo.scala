@@ -26,6 +26,9 @@ trait Anon_GetGetForRepo extends js.Object {
   var get_Original: Anon_EndpointParamsLicensesGetParams = js.native
   @JSName("listCommonlyUsed")
   var listCommonlyUsed_Original: Anon_EndpointParamsEmptyParamsLicensesListCommonlyUsedResponse = js.native
+  /**
+    * @deprecated octokit.licenses.list() has been renamed to octokit.licenses.listCommonlyUsed() (2019-03-05)
+    */
   @JSName("list")
   var list_Original: Anon_EndpointParamsEmptyParamsLicensesListResponse = js.native
   def get(): js.Promise[Response[LicensesGetResponse]] = js.native
@@ -37,6 +40,9 @@ trait Anon_GetGetForRepo extends js.Object {
     */
   def getForRepo(): js.Promise[Response[LicensesGetForRepoResponse]] = js.native
   def getForRepo(params: RequestOptions with LicensesGetForRepoParams): js.Promise[Response[LicensesGetForRepoResponse]] = js.native
+  /**
+    * @deprecated octokit.licenses.list() has been renamed to octokit.licenses.listCommonlyUsed() (2019-03-05)
+    */
   def list(): js.Promise[Response[LicensesListResponse]] = js.native
   def list(params: RequestOptions with EmptyParams): js.Promise[Response[LicensesListResponse]] = js.native
   def listCommonlyUsed(): js.Promise[Response[LicensesListCommonlyUsedResponse]] = js.native

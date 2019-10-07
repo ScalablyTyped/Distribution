@@ -23,6 +23,7 @@ import typings.atOctokitRest.atOctokitRestMod.ReposCheckVulnerabilityAlertsParam
 import typings.atOctokitRest.atOctokitRestMod.ReposCompareCommitsParams
 import typings.atOctokitRest.atOctokitRestMod.ReposCompareCommitsResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParams
+import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedLine
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedSha
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateDeploymentParams
@@ -459,6 +460,7 @@ trait Anon_AcceptInvitation extends js.Object {
   var createDispatchEvent_Original: Anon_EndpointParamsAnyResponsePromiseReposCreateDispatchEventParams = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
+    * @deprecated octokit.repos.createFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)
     */
   @JSName("createFile")
   var createFile_Original: Anon_EndpointParamsPromiseReposCreateFileParams = js.native
@@ -656,6 +658,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * application/vnd.github.VERSION.sha
     * ```
     * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
+    * @deprecated "Get the SHA-1 of a commit reference" will be removed. Use "Get a single commit" instead with media type format set to "sha" instead.
     */
   @JSName("getCommitRefSha")
   var getCommitRefSha_Original: Anon_EndpointParamsAnyResponsePromiseReposGetCommitRefShaParams = js.native
@@ -864,6 +867,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    * @deprecated octokit.repos.listAppsWithAccessToProtectedBranch() has been renamed to octokit.repos.getAppsWithAccessToProtectedBranch() (2019-09-13)
     */
   @JSName("listAppsWithAccessToProtectedBranch")
   var listAppsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListAppsWithAccessToProtectedBranchParams = js.native
@@ -983,6 +987,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * @deprecated octokit.repos.listProtectedBranchTeamRestrictions() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-09)
     */
   @JSName("listProtectedBranchTeamRestrictions")
   var listProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposListProtectedBranchTeamRestrictionsParams = js.native
@@ -990,6 +995,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the people who have push access to this branch.
+    * @deprecated octokit.repos.listProtectedBranchUserRestrictions() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-09)
     */
   @JSName("listProtectedBranchUserRestrictions")
   var listProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposListProtectedBranchUserRestrictionsParams = js.native
@@ -1025,6 +1031,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * @deprecated octokit.repos.listTeamsWithAccessToProtectedBranch() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-13)
     */
   @JSName("listTeamsWithAccessToProtectedBranch")
   var listTeamsWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListTeamsWithAccessToProtectedBranchParams = js.native
@@ -1036,6 +1043,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the people who have push access to this branch.
+    * @deprecated octokit.repos.listUsersWithAccessToProtectedBranch() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-13)
     */
   @JSName("listUsersWithAccessToProtectedBranch")
   var listUsersWithAccessToProtectedBranch_Original: Anon_EndpointParamsPromiseReposListUsersWithAccessToProtectedBranchParams = js.native
@@ -1210,6 +1218,7 @@ trait Anon_AcceptInvitation extends js.Object {
   var updateCommitComment_Original: Anon_EndpointParamsPromiseReposUpdateCommitCommentParams = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
+    * @deprecated octokit.repos.updateFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)
     */
   @JSName("updateFile")
   var updateFile_Original: Anon_EndpointParamsPromiseReposUpdateFileParams = js.native
@@ -1391,7 +1400,7 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def createCommitComment(): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   def createCommitComment(
-    params: RequestOptions with (ReposCreateCommitCommentParams | ReposCreateCommitCommentParamsDeprecatedSha)
+    params: RequestOptions with (ReposCreateCommitCommentParams | ReposCreateCommitCommentParamsDeprecatedLine | ReposCreateCommitCommentParamsDeprecatedSha)
   ): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   /**
     * Deployments offer a few configurable parameters with sane defaults.
@@ -1444,6 +1453,7 @@ trait Anon_AcceptInvitation extends js.Object {
   def createDispatchEvent(params: RequestOptions with ReposCreateDispatchEventParams): js.Promise[AnyResponse] = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
+    * @deprecated octokit.repos.createFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)
     */
   def createFile(): js.Promise[Response[ReposCreateFileResponse]] = js.native
   def createFile(params: RequestOptions with ReposCreateFileParams): js.Promise[Response[ReposCreateFileResponse]] = js.native
@@ -1679,6 +1689,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * application/vnd.github.VERSION.sha
     * ```
     * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
+    * @deprecated "Get the SHA-1 of a commit reference" will be removed. Use "Get a single commit" instead with media type format set to "sha" instead.
     */
   def getCommitRefSha(): js.Promise[AnyResponse] = js.native
   def getCommitRefSha(params: RequestOptions with ReposGetCommitRefShaParams): js.Promise[AnyResponse] = js.native
@@ -1858,6 +1869,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+    * @deprecated octokit.repos.listAppsWithAccessToProtectedBranch() has been renamed to octokit.repos.getAppsWithAccessToProtectedBranch() (2019-09-13)
     */
   def listAppsWithAccessToProtectedBranch(): js.Promise[Response[ReposListAppsWithAccessToProtectedBranchResponse]] = js.native
   def listAppsWithAccessToProtectedBranch(params: RequestOptions with ReposListAppsWithAccessToProtectedBranchParams): js.Promise[Response[ReposListAppsWithAccessToProtectedBranchResponse]] = js.native
@@ -1979,6 +1991,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * @deprecated octokit.repos.listProtectedBranchTeamRestrictions() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-09)
     */
   def listProtectedBranchTeamRestrictions(): js.Promise[Response[ReposListProtectedBranchTeamRestrictionsResponse]] = js.native
   def listProtectedBranchTeamRestrictions(params: RequestOptions with ReposListProtectedBranchTeamRestrictionsParams): js.Promise[Response[ReposListProtectedBranchTeamRestrictionsResponse]] = js.native
@@ -1986,6 +1999,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the people who have push access to this branch.
+    * @deprecated octokit.repos.listProtectedBranchUserRestrictions() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-09)
     */
   def listProtectedBranchUserRestrictions(): js.Promise[Response[ReposListProtectedBranchUserRestrictionsResponse]] = js.native
   def listProtectedBranchUserRestrictions(params: RequestOptions with ReposListProtectedBranchUserRestrictionsParams): js.Promise[Response[ReposListProtectedBranchUserRestrictionsResponse]] = js.native
@@ -2023,6 +2037,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * @deprecated octokit.repos.listTeamsWithAccessToProtectedBranch() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-13)
     */
   def listTeamsWithAccessToProtectedBranch(): js.Promise[Response[ReposListTeamsWithAccessToProtectedBranchResponse]] = js.native
   def listTeamsWithAccessToProtectedBranch(params: RequestOptions with ReposListTeamsWithAccessToProtectedBranchParams): js.Promise[Response[ReposListTeamsWithAccessToProtectedBranchResponse]] = js.native
@@ -2032,6 +2047,7 @@ trait Anon_AcceptInvitation extends js.Object {
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * Lists the people who have push access to this branch.
+    * @deprecated octokit.repos.listUsersWithAccessToProtectedBranch() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-13)
     */
   def listUsersWithAccessToProtectedBranch(): js.Promise[Response[ReposListUsersWithAccessToProtectedBranchResponse]] = js.native
   def listUsersWithAccessToProtectedBranch(params: RequestOptions with ReposListUsersWithAccessToProtectedBranchParams): js.Promise[Response[ReposListUsersWithAccessToProtectedBranchResponse]] = js.native
@@ -2204,6 +2220,7 @@ trait Anon_AcceptInvitation extends js.Object {
   def updateCommitComment(params: RequestOptions with ReposUpdateCommitCommentParams): js.Promise[Response[ReposUpdateCommitCommentResponse]] = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
+    * @deprecated octokit.repos.updateFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)
     */
   def updateFile(): js.Promise[Response[ReposUpdateFileResponse]] = js.native
   def updateFile(params: RequestOptions with ReposUpdateFileParams): js.Promise[Response[ReposUpdateFileResponse]] = js.native

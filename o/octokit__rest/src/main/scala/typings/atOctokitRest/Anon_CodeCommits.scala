@@ -77,6 +77,7 @@ trait Anon_CodeCommits extends js.Object {
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
+    * @deprecated octokit.search.issues() has been renamed to octokit.search.issuesAndPullRequests() (2018-12-27)
     */
   @JSName("issues")
   var issues_Original: Anon_EndpointParamsPromiseRequestOptionsResponseSearchIssuesParams = js.native
@@ -172,6 +173,7 @@ trait Anon_CodeCommits extends js.Object {
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
+    * @deprecated octokit.search.issues() has been renamed to octokit.search.issuesAndPullRequests() (2018-12-27)
     */
   def issues(): js.Promise[Response[SearchIssuesResponse]] = js.native
   def issues(params: RequestOptions with SearchIssuesParams): js.Promise[Response[SearchIssuesResponse]] = js.native

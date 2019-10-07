@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gitlab"
-version := "11.2.1-47d7c2"
+version := "11.2.2-6f9153"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

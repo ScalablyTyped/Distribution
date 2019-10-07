@@ -4,7 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IssuesCreateParams extends js.Object {
+trait IssuesCreateParamsDeprecatedAssignee extends js.Object {
+  /**
+    * Login for the user that this issue should be assigned to. _NOTE: Only users with push access can set the assignee for new issues. The assignee is silently dropped otherwise. **This field is deprecated.**_
+    * @deprecated "assignee" parameter has been deprecated and will be removed in future
+    */
+  var assignee: js.UndefOr[String] = js.undefined
   /**
     * Logins for Users to assign to this issue. _NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise._
     */
@@ -29,23 +34,25 @@ trait IssuesCreateParams extends js.Object {
   var title: String
 }
 
-object IssuesCreateParams {
+object IssuesCreateParamsDeprecatedAssignee {
   @scala.inline
   def apply(
     owner: String,
     repo: String,
     title: String,
+    assignee: String = null,
     assignees: js.Array[String] = null,
     body: String = null,
     labels: js.Array[String] = null,
     milestone: Int | Double = null
-  ): IssuesCreateParams = {
+  ): IssuesCreateParamsDeprecatedAssignee = {
     val __obj = js.Dynamic.literal(owner = owner, repo = repo, title = title)
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (assignees != null) __obj.updateDynamic("assignees")(assignees)
     if (body != null) __obj.updateDynamic("body")(body)
     if (labels != null) __obj.updateDynamic("labels")(labels)
     if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IssuesCreateParams]
+    __obj.asInstanceOf[IssuesCreateParamsDeprecatedAssignee]
   }
 }
 

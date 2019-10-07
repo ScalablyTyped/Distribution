@@ -5,6 +5,7 @@ import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateParams
+import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateParamsDeprecatedPermission
 import typings.atOctokitRest.atOctokitRestMod.TeamsUpdateResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait Anon_EndpointParamsPromiseRequestOptionsResponseTeamsUpdateParams extends 
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[TeamsUpdateResponse]] = js.native
-  def apply(params: RequestOptions with TeamsUpdateParams): js.Promise[Response[TeamsUpdateResponse]] = js.native
+  def apply(params: RequestOptions with (TeamsUpdateParams | TeamsUpdateParamsDeprecatedPermission)): js.Promise[Response[TeamsUpdateResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

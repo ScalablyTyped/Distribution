@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-promise
 
-Typings are for version 9.3.2
+Typings are for version 9.3.3
 
 ## Library description:
 Promises interface for PostgreSQL

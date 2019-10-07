@@ -3,6 +3,7 @@ package typings.atOctokitRest
 import typings.atOctokitRest.atOctokitRestMod.Endpoint
 import typings.atOctokitRest.atOctokitRestMod.EndpointOptions
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParams
+import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedLine
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedSha
 import typings.atOctokitRest.atOctokitRestMod.ReposCreateCommitCommentResponse
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
@@ -17,7 +18,7 @@ trait Anon_EndpointParamsPromiseReposCreateCommitCommentParams extends js.Object
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   def apply(
-    params: RequestOptions with (ReposCreateCommitCommentParams | ReposCreateCommitCommentParamsDeprecatedSha)
+    params: RequestOptions with (ReposCreateCommitCommentParams | ReposCreateCommitCommentParamsDeprecatedLine | ReposCreateCommitCommentParamsDeprecatedSha)
   ): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

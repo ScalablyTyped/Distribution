@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TeamsCreateParams extends js.Object {
+trait TeamsCreateParamsDeprecatedPermission extends js.Object {
   /**
     * The description of the team.
     */
@@ -25,6 +25,14 @@ trait TeamsCreateParams extends js.Object {
     */
   var parent_team_id: js.UndefOr[Double] = js.undefined
   /**
+    * **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:
+    * \* `pull` - team members can pull, but not push to or administer newly-added repositories.
+    * \* `push` - team members can pull and push, but not administer newly-added repositories.
+    * \* `admin` - team members can pull, push and administer newly-added repositories.
+    * @deprecated "permission" parameter has been deprecated and will be removed in future
+    */
+  var permission: js.UndefOr[String] = js.undefined
+  /**
     * The level of privacy this team should have. The options are:
     * **For a non-nested team:**
     * \* `secret` - only visible to organization owners and members of this team.
@@ -42,7 +50,7 @@ trait TeamsCreateParams extends js.Object {
   var repo_names: js.UndefOr[js.Array[String]] = js.undefined
 }
 
-object TeamsCreateParams {
+object TeamsCreateParamsDeprecatedPermission {
   @scala.inline
   def apply(
     name: String,
@@ -50,16 +58,18 @@ object TeamsCreateParams {
     description: String = null,
     maintainers: js.Array[String] = null,
     parent_team_id: Int | Double = null,
+    permission: String = null,
     privacy: secret | closed = null,
     repo_names: js.Array[String] = null
-  ): TeamsCreateParams = {
+  ): TeamsCreateParamsDeprecatedPermission = {
     val __obj = js.Dynamic.literal(name = name, org = org)
     if (description != null) __obj.updateDynamic("description")(description)
     if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers)
     if (parent_team_id != null) __obj.updateDynamic("parent_team_id")(parent_team_id.asInstanceOf[js.Any])
+    if (permission != null) __obj.updateDynamic("permission")(permission)
     if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     if (repo_names != null) __obj.updateDynamic("repo_names")(repo_names)
-    __obj.asInstanceOf[TeamsCreateParams]
+    __obj.asInstanceOf[TeamsCreateParamsDeprecatedPermission]
   }
 }
 

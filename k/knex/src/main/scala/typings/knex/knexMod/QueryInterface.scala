@@ -378,12 +378,24 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def decrement(columnName: String): QueryBuilder[TRecord, Double] = js.native
   def decrement(columnName: String, amount: Double): QueryBuilder[TRecord, Double] = js.native
+  def del(returning: typings.knex.knexStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[TRecord, scala.Nothing, `false`, js.Object, `false`, js.Object, scala.Nothing]
+    ]
+  ] = js.native
   def del[TResult2](): QueryBuilder[TRecord, TResult2] = js.native
   def del[TResult2](returning: String): QueryBuilder[TRecord, TResult2] = js.native
   def del[TResult2](returning: js.Array[String]): QueryBuilder[TRecord, TResult2] = js.native
   def del[TKey /* <: StrKey[TRecord] */, TResult2](returning: TKey): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("del")
   def del_TKey_StrKeyTRecordTResult2[TKey /* <: StrKey[TRecord] */, TResult2](returning: js.Array[TKey]): QueryBuilder[TRecord, js.Array[TResult2]] = js.native
+  def delete(returning: typings.knex.knexStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[TRecord, scala.Nothing, `false`, js.Object, `false`, js.Object, scala.Nothing]
+    ]
+  ] = js.native
   def delete[TResult2](): QueryBuilder[TRecord, TResult2] = js.native
   def delete[TResult2](returning: String): QueryBuilder[TRecord, TResult2] = js.native
   def delete[TResult2](returning: js.Array[String]): QueryBuilder[TRecord, TResult2] = js.native
@@ -601,6 +613,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def innerJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, column1: String, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def innerJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, columns: StringDictionary[String | Double | Boolean | Raw[_]]): QueryBuilder[TRecord2, TResult2] = js.native
   def innerJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
+  def insert(data: MaybeArray[SafePartial[TRecord]], returning: typings.knex.knexStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[TRecord, scala.Nothing, `false`, js.Object, `false`, js.Object, scala.Nothing]
+    ]
+  ] = js.native
   def insert[TResult2](data: MaybeArray[SafePartial[TRecord]]): QueryBuilder[TRecord, TResult2] = js.native
   def insert[TKey /* <: StrKey[TRecord] */, TResult2](data: MaybeArray[SafePartial[TRecord]], returning: TKey): QueryBuilder[TRecord, TResult2] = js.native
   def insert[TKey /* <: StrKey[TRecord] */, TResult2](data: MaybeArray[SafePartial[TRecord]], returning: js.Array[TKey]): QueryBuilder[TRecord, TResult2] = js.native
@@ -925,6 +943,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
   ] = js.native
   def pluck[TResult2 /* <: js.Object */](column: String): QueryBuilder[TRecord, TResult2] = js.native
+  def returning(column: typings.knex.knexStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[TRecord, scala.Nothing, `false`, js.Object, `false`, js.Object, scala.Nothing]
+    ]
+  ] = js.native
   def returning[TResult2](column: String): QueryBuilder[TRecord, TResult2] = js.native
   def returning[TResult2](column: js.Array[String]): QueryBuilder[TRecord, TResult2] = js.native
   def returning[TKey /* <: StrKey[TRecord] */, TResult2](column: TKey): QueryBuilder[TRecord, TResult2] = js.native
@@ -1029,6 +1053,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     callback: MaybeArray[(QueryCallback[_, js.Array[_]]) | (QueryBuilder[TRecord, _]) | Raw[_]],
     wrap: Boolean
   ): QueryBuilder[TRecord, TResult] = js.native
+  def update(data: MaybeArray[SafePartial[TRecord]], returning: typings.knex.knexStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[TRecord, scala.Nothing, `false`, js.Object, `false`, js.Object, scala.Nothing]
+    ]
+  ] = js.native
   def update[K /* <: String */](
     columnName: K,
     value: /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any

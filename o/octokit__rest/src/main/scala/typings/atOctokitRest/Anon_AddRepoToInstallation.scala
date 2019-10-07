@@ -119,6 +119,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findOrgInstallation() has been renamed to octokit.apps.getOrgInstallation() (2019-04-10)
     */
   @JSName("findOrgInstallation")
   var findOrgInstallation_Original: Anon_EndpointParamsAppsFindOrgInstallationParams = js.native
@@ -126,6 +127,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findRepoInstallation() has been renamed to octokit.apps.getRepoInstallation() (2019-04-10)
     */
   @JSName("findRepoInstallation")
   var findRepoInstallation_Original: Anon_EndpointParamsAppsFindRepoInstallationParams = js.native
@@ -133,6 +135,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the user’s installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findUserInstallation() has been renamed to octokit.apps.getUserInstallation() (2019-04-10)
     */
   @JSName("findUserInstallation")
   var findUserInstallation_Original: Anon_EndpointParamsAppsFindUserInstallationParams = js.native
@@ -312,6 +315,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findOrgInstallation() has been renamed to octokit.apps.getOrgInstallation() (2019-04-10)
     */
   def findOrgInstallation(): js.Promise[Response[AppsFindOrgInstallationResponse]] = js.native
   def findOrgInstallation(params: RequestOptions with AppsFindOrgInstallationParams): js.Promise[Response[AppsFindOrgInstallationResponse]] = js.native
@@ -319,6 +323,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findRepoInstallation() has been renamed to octokit.apps.getRepoInstallation() (2019-04-10)
     */
   def findRepoInstallation(): js.Promise[Response[AppsFindRepoInstallationResponse]] = js.native
   def findRepoInstallation(params: RequestOptions with AppsFindRepoInstallationParams): js.Promise[Response[AppsFindRepoInstallationResponse]] = js.native
@@ -326,6 +331,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     * Enables an authenticated GitHub App to find the user’s installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    * @deprecated octokit.apps.findUserInstallation() has been renamed to octokit.apps.getUserInstallation() (2019-04-10)
     */
   def findUserInstallation(): js.Promise[Response[AppsFindUserInstallationResponse]] = js.native
   def findUserInstallation(params: RequestOptions with AppsFindUserInstallationParams): js.Promise[Response[AppsFindUserInstallationResponse]] = js.native

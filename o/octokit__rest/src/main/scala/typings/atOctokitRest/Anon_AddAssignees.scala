@@ -16,6 +16,7 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesCreateLabelResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateMilestoneParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateMilestoneResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateParams
+import typings.atOctokitRest.atOctokitRestMod.IssuesCreateParamsDeprecatedAssignee
 import typings.atOctokitRest.atOctokitRestMod.IssuesCreateResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteCommentParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesDeleteLabelParams
@@ -89,6 +90,7 @@ import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateMilestoneParams
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateMilestoneParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateMilestoneResponse
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateParams
+import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateParamsDeprecatedAssignee
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateParamsDeprecatedNumber
 import typings.atOctokitRest.atOctokitRestMod.IssuesUpdateResponse
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
@@ -276,7 +278,7 @@ trait Anon_AddAssignees extends js.Object {
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def create(): js.Promise[Response[IssuesCreateResponse]] = js.native
-  def create(params: RequestOptions with IssuesCreateParams): js.Promise[Response[IssuesCreateResponse]] = js.native
+  def create(params: RequestOptions with (IssuesCreateParams | IssuesCreateParamsDeprecatedAssignee)): js.Promise[Response[IssuesCreateResponse]] = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
@@ -412,7 +414,9 @@ trait Anon_AddAssignees extends js.Object {
     * Issue owners and users with push access can edit an issue.
     */
   def update(): js.Promise[Response[IssuesUpdateResponse]] = js.native
-  def update(params: RequestOptions with (IssuesUpdateParams | IssuesUpdateParamsDeprecatedNumber)): js.Promise[Response[IssuesUpdateResponse]] = js.native
+  def update(
+    params: RequestOptions with (IssuesUpdateParams | IssuesUpdateParamsDeprecatedAssignee | IssuesUpdateParamsDeprecatedNumber)
+  ): js.Promise[Response[IssuesUpdateResponse]] = js.native
   def updateComment(): js.Promise[Response[IssuesUpdateCommentResponse]] = js.native
   def updateComment(params: RequestOptions with IssuesUpdateCommentParams): js.Promise[Response[IssuesUpdateCommentResponse]] = js.native
   def updateLabel(): js.Promise[Response[IssuesUpdateLabelResponse]] = js.native

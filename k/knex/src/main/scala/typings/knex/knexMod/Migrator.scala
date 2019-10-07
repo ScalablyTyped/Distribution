@@ -12,6 +12,8 @@ trait Migrator extends js.Object {
   def down(config: MigratorConfig): js.Promise[_] = js.native
   def latest(): js.Promise[_] = js.native
   def latest(config: MigratorConfig): js.Promise[_] = js.native
+  def list(): js.Promise[_] = js.native
+  def list(config: MigratorConfig): js.Promise[_] = js.native
   def make(name: String): js.Promise[String] = js.native
   def make(name: String, config: MigratorConfig): js.Promise[String] = js.native
   def rollback(): js.Promise[_] = js.native

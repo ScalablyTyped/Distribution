@@ -24,6 +24,7 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
   def on(event: String, callback: js.Function): QueryBuilder[TRecord, TResult] = js.native
   def queryContext(context: js.Any): QueryBuilder[TRecord, TResult] = js.native
   def skipLocked(): QueryBuilder[TRecord, TResult] = js.native
+  def timeout(ms: Double): QueryBuilder[TRecord, TResult] = js.native
   def timeout(ms: Double, options: Anon_Cancel): QueryBuilder[TRecord, TResult] = js.native
   def toSQL(): Sql = js.native
 }
